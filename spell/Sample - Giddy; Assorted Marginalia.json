@@ -39,7 +39,8 @@
 	},
 	"spell": [
 		{
-			"name": "Collapse Astronomical Body",
+			"ENG_name": "Collapse Astronomical Body",
+			"name": "坍缩天体",
 			"source": "GiddySpell",
 			"level": 10,
 			"school": "AH",
@@ -69,12 +70,13 @@
 				}
 			],
 			"entries": [
-				"You point at one astronomical body you can see within range. It collapses into a black hole."
+				"你指向一个你在射程内能看见的天体。它坍缩成一个黑洞。"
 			],
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Wizard",
+						"ENG_name": "Wizard",
+						"name": "法师",
 						"source": "PHB"
 					}
 				]
@@ -85,7 +87,8 @@
 			"foundryImg": "icons/magic/sonic/explosion-shock-sound-wave.webp"
 		},
 		{
-			"name": "Create Void",
+			"ENG_name": "Create Void",
+			"name": "创造虚空",
 			"source": "GiddySpell",
 			"level": 1,
 			"school": "AH",
@@ -112,35 +115,38 @@
 				}
 			],
 			"entries": [
-				"You point a finger at one target that you can see within range, and a tiny localised point of annihilation appears inside that target.",
-				"A creature targeted by this spell must make a Dexterity saving throw. On a failed save, the target takes {@damage 1d6 + 10} bludgeoning damage. On a successful save, the target takes half as much damage."
+				"你向射程内一个你能看见的单一目标伸出一根手指，一个微型的局部湮灭点出现在该目标体内。",
+				"一个被此法术指定的生物必须进行一次敏捷豁免检定。豁免失败时，目标受到{@damage 1d6 + 10}钝击伤害。豁免成功时，目标只受到一半伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "At Higher Levels",
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "升环施法效应",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 1d6 + 10|1-9|1d6} for each slot level above 1st."
+						"当你使用2环或更高法术位施放该法术时，法术造成的伤害对1环以上的每个法术位环阶增加{@scaledamage 1d6 + 10|1-9|1d6}。"
 					]
 				}
 			],
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Sorcerer",
+						"ENG_name": "Sorcerer",
+						"name": "术士",
 						"source": "PHB"
 					},
 					{
-						"name": "Wizard",
+						"ENG_name": "Wizard",
+						"name": "法师",
 						"source": "PHB"
 					}
 				]
 			},
 			"damageInflict": [
-				"bludgeoning"
+				"钝击"
 			],
 			"savingThrow": [
-				"dexterity"
+				"敏捷"
 			],
 			"miscTags": [
 				"SGT"
@@ -150,13 +156,14 @@
 	],
 	"roll20Spell": [
 		{
-			"name": "Create Void",
+			"ENG_name": "Create Void",
+			"name": null,
 			"source": "GiddySpell",
 			"data": {
-				"Save": "Dexterity",
+				"Save": "敏捷",
 				"Damage": "1d6 + 10",
-				"Damage Type": "Bludgeoning",
-				"Save Success": "Half damage",
+				"Damage Type": "钝击",
+				"Save Success": "伤害减半",
 				"Higher Spell Slot Die": "d6",
 				"Higher Spell Slot Dice": "1"
 			}

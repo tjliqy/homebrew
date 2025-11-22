@@ -24,33 +24,36 @@
 	},
 	"magicvariant": [
 		{
-			"name": "Ice-Forged Weapon",
+			"ENG_name": "Ice-Forged Weapon",
+			"name": "冰铸武器",
 			"source": "GiddyVariant",
 			"_copy": {
-				"name": "+1 Weapon",
+				"ENG_name": "+1 Weapon",
+				"name": "+1 武器",
 				"source": "DMG",
 				"_mod": {
 					"inherits.entries": [
 						{
 							"mode": "appendArr",
 							"items": [
-								"This weapon loses its magical properties in warm environments (≥ 10°C)."
+								"此武器在暖和环境（≥ 10°C）中会失去其魔法词条。"
 							]
 						}
 					],
 					"inherits.namePrefix": {
 						"mode": "setProp",
-						"value": "Ice-Forged +1 "
+						"value": "冰铸+1 "
 					},
 					"inherits.source": {
 						"mode": "setProp",
-						"value": "GiddyVariant"
+						"value": "眩晕变体"
 					}
 				}
 			}
 		},
 		{
-			"name": "Weapon +4",
+			"ENG_name": "Weapon +4",
+			"name": "武器 +4",
 			"type": "GV|DMG",
 			"requires": [
 				{
@@ -58,7 +61,8 @@
 				}
 			],
 			"excludes": {
-				"name": "Net"
+				"ENG_name": "Net",
+				"name": "捕网"
 			},
 			"inherits": {
 				"nameSuffix": " +4",
@@ -67,7 +71,7 @@
 				"rarity": "legendary",
 				"bonusWeapon": "+4",
 				"entries": [
-					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this weapon."
+					"使用这把武器进行攻击和伤害判定时，你有{=bonusWeapon}的加值。"
 				]
 			}
 		}

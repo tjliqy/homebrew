@@ -19,7 +19,8 @@
 	},
 	"monster": [
 		{
-			"name": "Oaken Bolter",
+			"ENG_name": "Oaken Bolter",
+			"name": "橡木投射机",
 			"source": "GiddyCreature",
 			"page": 0,
 			"size": [
@@ -33,7 +34,7 @@
 				{
 					"ac": 16,
 					"from": [
-						"{@item breastplate|phb}"
+						"{@item 胸甲|phb}"
 					]
 				}
 			],
@@ -51,75 +52,82 @@
 			"wis": 10,
 			"cha": 1,
 			"senses": [
-				"darkvision 60 ft."
+				"黑暗视觉 60 尺"
 			],
 			"passive": 10,
 			"immune": [
-				"poison",
+				"毒素",
 				{
 					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+						"钝击",
+						"穿刺",
+						"斩击"
 					],
-					"note": "from nonmagical attacks that aren't adamantine",
+					"note": "非精金武器且非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
 			],
 			"languages": [
-				"understands Gnomish but can't speak"
+				"理解侏儒语但无法说话"
 			],
 			"cr": "1",
 			"trait": [
 				{
-					"name": "Immutable Form",
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
 					"entries": [
-						"The oaken bolter is immune to any spell or effect that would alter its form."
+						"橡木投射机免疫任何会改变其形态的法术或效果。"
 					]
 				},
 				{
-					"name": "Magic Resistance",
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
 					"entries": [
-						"The oaken bolter has advantage on saving throws against spells and other magical effects."
+						"橡木弩车对法术和其他魔法效果的豁免检定有优势。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Fleshcutter",
+					"ENG_name": "Fleshcutter",
+					"name": "血肉切割机",
 					"entries": [
-						"{@atk rw} {@hit +6} to hit, range 100/400 ft., one creature. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+						"{@atk rw} {@hit +6} 命中，射程 100/400 尺，一个生物。{@h}15（{@damage 2d10 + 4}）穿刺伤害。"
 					]
 				},
 				{
-					"name": "Armor-piercing Bolt",
+					"ENG_name": "Armor-piercing Bolt",
+					"name": "护甲穿刺弩失",
 					"entries": [
-						"The oaken bolter launches a heavy missile at a target within 100 feet. The target must succeed on a {@dc 14} Dexterity saving throw or take 9 ({@damage 1d10 + 4}) piercing damage."
+						"橡木投射机向100尺内的一个目标发射一枚重型飞弹。目标必须成功通过{@dc 14}的敏捷豁免检定否则受到9（{@damage 1d10 + 4}）穿刺伤害。"
 					]
 				},
 				{
-					"name": "Harpoon",
+					"ENG_name": "Harpoon",
+					"name": "鱼叉",
 					"entries": [
-						"{@atk rw} {@hit +6} to hit, range 50/200 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage and the target is {@condition grappled} (escape {@dc 11}). While {@condition grappled} this way, a creature's speed is not reduced, but it can move only in directions that bring it closer to the oaken bolter. A creature that tries to escape from the grapple takes an additional 5 ({@damage 1d10}) slashing damage, regardless of whether the attempt succeeds or fails. As a bonus action, the oaken bolter can pull a {@condition grappled} creature 20 feet closer to itself. The oaken bolter can grapple only one creature at a time."
+						"{@atk rw} {@hit +6} 命中，射程 50/200 尺，单一目标。{@h}9（{@damage 1d10 + 4}）穿刺伤害且目标陷入{@condition 受擒}（逃脱{@dc 11}）。以此方式{@condition 受擒}时，生物的速度不会缩小，但只能朝靠近橡木投射机的方向移动。尝试从擒抱中逃脱的生物会受到额外 5（{@damage 1d10}）挥砍伤害，无论逃脱尝试成功与否。橡木投射机可用附赠动作将{@condition 受擒}生物拉近 20 尺。橡木投射机一次只能擒抱一个生物。"
 					]
 				},
 				{
-					"name": "Explosive Bolt {@recharge 5}",
+					"ENG_name": "Explosive Bolt {@recharge 5}",
+					"name": "爆炸箭矢 {@recharge 5}",
 					"entries": [
-						"The oaken bolter launches an explosive charge at a point within 100 feet of itself. Every creature within 20 feet of the target point takes 14 ({@damage 4d6}) fire damage plus 14 ({@damage 4d6}) force damage. Both damages are halved with a successful {@dc 14} Dexterity saving throw."
+						"橡木投射机向自身100尺内的一个点发射爆炸物。目标点20尺内的每个生物受到14（{@damage 4d6}）火焰伤害加上14（{@damage 4d6}）力场伤害。若成功通过{@dc 14}的敏捷豁免检定，则两种伤害均减半。"
 					]
 				}
 			],
 			"legendaryGroup": {
-				"name": "Example",
+				"ENG_name": "Example",
+				"name": "范例",
 				"source": "GiddyCreature"
 			},
 			"tokenHref": {
@@ -127,8 +135,8 @@
 				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GiddyCreature/w9nTza9.png"
 			},
 			"traitTags": [
-				"Immutable Form",
-				"Magic Resistance"
+				"不变形态",
+				"魔法抗性"
 			],
 			"senseTags": [
 				"D"
@@ -147,10 +155,10 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"grappled"
+				"受擒"
 			],
 			"savingThrowForced": [
-				"dexterity"
+				"敏捷"
 			],
 			"fluff": {
 				"images": [
@@ -165,24 +173,27 @@
 					}
 				],
 				"entries": [
-					"This is no ordinary ballista but a semi-intelligent construct capable of striking at long distances. The bolts it launches can rend flesh, destroy armor, drag enemies toward traps or melee-oriented clockwork."
+					"这不是普通的弩炮，而是一个半智能构装体，能够进行远程打击。它发射的弩失可以撕裂血肉、摧毁护甲、将敌人拖向陷阱或近战时械。"
 				]
 			}
 		},
 		{
-			"name": "Oaken Stub, Type 1",
+			"ENG_name": "Oaken Stub, Type 1",
+			"name": "橡木残桩，类型1",
 			"source": "GiddyCreature",
 			"size": [
 				"T"
 			],
 			"type": "construct",
 			"token": {
-				"name": "Oaken Bolter",
+				"ENG_name": "Oaken Bolter",
+				"name": "橡木投射机",
 				"source": "MTF"
 			}
 		},
 		{
-			"name": "Oaken Stub, Type 2",
+			"ENG_name": "Oaken Stub, Type 2",
+			"name": "橡木残桩，类型2",
 			"source": "GiddyCreature",
 			"size": [
 				"T"
@@ -196,26 +207,27 @@
 	],
 	"legendaryGroup": [
 		{
-			"name": "Example",
+			"ENG_name": "Example",
+			"name": "范例",
 			"source": "GiddyCreature",
 			"lairActions": [
-				"On Initiative count 20 (losing initiative ties), The Oaken Bolter can take a lair action to cause one of the following effects: it can't use the same effect two rounds in a row:",
+				"在先攻值20（先攻数值相同则后手）时，橡木投射机可以执行一个巢穴动作来造成以下效应之一：它不能连续两回合使用相同的效应：",
 				{
 					"type": "list",
 					"items": [
-						"A lair action"
+						"一个巢穴动作"
 					]
 				}
 			],
 			"regionalEffects": [
-				"The region containing The Oaken Bolter's lair is warped by its magic, creating one or more of the following effects:",
+				"包含橡木投射机巢穴的区域被其魔法扭曲，产生以下一个或多个效应：",
 				{
 					"type": "list",
 					"items": [
-						"A regional effect"
+						"区域效应"
 					]
 				},
-				"If the Oaken Bolter is destroyed, these effects fade over the course of 1d10 days."
+				"如果橡木投射机被摧毁，这些效应会在1d10天内逐渐消失。"
 			]
 		}
 	]

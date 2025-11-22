@@ -32,38 +32,40 @@
 	},
 	"item": [
 		{
-			"name": "Hook of Butchery",
+			"ENG_name": "Hook of Butchery",
+			"name": "钩爪屠戮",
 			"source": "GiddyItem",
 			"type": "M",
-			"tier": "major",
+			"tier": "主要",
 			"rarity": "very rare",
 			"weight": 2,
 			"value": 2000,
-			"currencyConversion": "GiddyCurrency",
-			"weaponCategory": "martial",
+			"currencyConversion": "眩晕货币",
+			"weaponCategory": "军用",
 			"property": [
 				"T",
-				"Cust"
+				"保管"
 			],
 			"range": "40/40",
 			"dmg1": "1d8",
 			"dmgType": "P",
 			"bonusWeapon": "+1",
 			"entries": [
-				"An enchanted butcher's hook forged from adamantine, you gain a +1 bonus to attack and damage rolls made with this magic weapon.",
-				"As part of a ranged attack made with the hook, you may choose to grab a chain which begins to magically extend from the hilt. If you choose to grab the chain, it continues to extend behind the thrown weapon, to a maximum length of 40 ft. When the chain has fully extended or if the attack hits, the chain becomes taught. While taught, the chain will not extend further, and magically shortens to remove any slack. If you let go of the chain, it retracts into the hook.",
-				"The chain can be broken with a successful DC 30 Strength check. It has 23 AC, and each 5-foot section has 5HP. It is immune to damage, except from adamantine weapons.",
-				"As a bonus action while the chain is extended and the hook is not magically attached to a creature, you can reel the hook in along the path of the chain, returning it to the hand you threw it with.",
-				"Whenever you hit a creature with a ranged attack using the hook, the hook magically attaches itself to the target. As an action, a creature may attempt to detach the hook by succeeding on a DC 20 Strength (Athletics) check. On a success, the creature take {@dice 2d6} Necrotic damage as the hook is torn free.",
-				"While you are holding the chain and the hook is magically attached to a creature, you may attempt to reel the creature in. Make a Strength (Athletics) check contest by the creature's Strength (Athletics) check. On a success, the target is knocked prone and pulled up to 40 ft. directly towards you, stopping if they come within 5 ft. of you. The hook then detaches from the creature and returns to your hand."
+				"一把由精金锻造的附魔屠夫钩爪，你用这把魔法武器进行攻击和伤害掷骰时获得+1加值。",
+				"作为使用钩爪进行远程攻击的一部分，你可以选择抓住一把从刀柄开始魔法延伸的锁链。如果你选择抓住锁链，它会在投掷武器后方继续延伸，最大长度为40尺。当锁链完全延伸或攻击命中时，锁链会变得紧绷。在紧绷状态下，锁链不会进一步延伸，并会魔法般地缩短以移除任何松弛部分。如果你松开锁链，它会缩回钩爪中。",
+				"该链击可以通过一次成功的DC 30力量检定来破碎。它拥有23AC，每5尺长的部分有5HP。它对伤害免疫，除了来自精金武器的伤害。",
+				"当链击延伸且钩爪未魔法附着于生物时，你可以用一个附赠动作沿着链击的路径拖曳钩爪，使其返回你投掷时使用的手中。",
+				"每当你使用钩爪进行一次远程攻击命中一个生物时，钩爪会魔法般地附着在目标身上。作为一个动作，一个生物可以尝试通过成功进行一次DC 20力量（运动）检定来卸下钩爪。成功时，该生物受到{@dice 2d6}黯蚀伤害，因为钩爪被强行撕下。",
+				"当你持握链条且钩爪魔法性地附着于一个生物时，你可以尝试将该生物拖曳过来。进行一次力量（运动）检定，与该生物的力量（运动）检定进行对抗。若成功，目标倒地并被直接向你拉近最多40尺，若其进入你5尺范围内则停止。随后钩爪从该生物身上脱离并返回你手中。"
 			]
 		},
 		{
-			"name": "Psiblade",
+			"ENG_name": "Psiblade",
+			"name": "灵能刃",
 			"source": "GiddyItem",
 			"type": "PSIW",
 			"rarity": "legendary",
-			"weaponCategory": "martial",
+			"weaponCategory": "军用",
 			"property": [
 				"F"
 			],
@@ -73,22 +75,25 @@
 	],
 	"magicvariant": [
 		{
-			"name": "Bow of Power",
+			"ENG_name": "Bow of Power",
+			"name": "法力之弓",
 			"requires": [
 				{
-					"name": "Shortbow"
+					"ENG_name": "Shortbow",
+					"name": "短弓"
 				},
 				{
-					"name": "Longbow"
+					"ENG_name": "Longbow",
+					"name": "长弓"
 				}
 			],
 			"inherits": {
-				"namePrefix": "Powerful ",
+				"namePrefix": "强大的",
 				"source": "GiddyItem",
 				"page": 0,
 				"rarity": "very rare",
 				"entries": [
-					"An extremely powerful bow."
+					"一把极其强大的弓。"
 				]
 			}
 		}
@@ -100,10 +105,11 @@
 			"page": 0,
 			"entries": [
 				{
+					"ENG_name": "Entangle",
 					"type": "entries",
-					"name": "Entangle",
+					"name": "纠缠术",
 					"entries": [
-						"When hit by a weapon with the entangle property the target gains the Grappled condition until the weapon is removed."
+						"当被具有纠缠属性的武器命中时，目标获得受擒状态直到武器被移除。"
 					]
 				}
 			]
@@ -111,16 +117,18 @@
 	],
 	"itemType": [
 		{
-			"name": "psionic weapon",
+			"ENG_name": "psionic weapon",
+			"name": "灵能武器",
 			"abbreviation": "PSIW",
 			"source": "GiddyItem",
 			"page": 0,
 			"entries": [
 				{
+					"ENG_name": "Psionic",
 					"type": "entries",
-					"name": "Psionic",
+					"name": "灵能",
 					"entries": [
-						"This weapon has no physical form, and appears as a faint shimmer (comparable to heat haze) in the air."
+						"该武器没有物理形态，在空气中呈现为微弱的闪光（类似于高温热浪）。"
 					]
 				}
 			]
@@ -128,16 +136,17 @@
 	],
 	"itemTypeAdditionalEntries": [
 		{
-			"name": "Psionic Weapon",
+			"ENG_name": "Psionic Weapon",
+			"name": "灵能武器",
 			"source": "GiddyItem",
-			"appliesTo": "PSIW",
+			"appliesTo": "灵能武器",
 			"entries": [
 				{
 					"type": "quote",
 					"entries": [
-						"The masters gave me this blade. They expect me to use it."
+						"大师们给了我这把刃之魔契。他们希望我使用它。"
 					],
-					"by": "Hemlock, Order of the Black Lily"
+					"by": "铁杉，黑百合秩序"
 				}
 			]
 		}
