@@ -1357,7 +1357,9 @@
 			"savingThrowForcedSpell": [
 				"感知"
 			],
-			"ENG_name": "Dread Doppelganger"
+			"ENG_name": "Dread Doppelganger",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "吉布林",
@@ -1452,7 +1454,8 @@
 				"MLW",
 				"MW"
 			],
-			"ENG_name": "Gibberling"
+			"ENG_name": "Gibberling",
+			"hasFluff": true
 		},
 		{
 			"name": "扭曲树精",
@@ -1571,7 +1574,9 @@
 			"savingThrowForcedSpell": [
 				"力量"
 			],
-			"ENG_name": ""
+			"ENG_name": "Hamadryad",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "塞壬",
@@ -1690,7 +1695,9 @@
 			"savingThrowForcedSpell": [
 				"感知"
 			],
-			"ENG_name": "Sirene"
+			"ENG_name": "Sirene",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "骷髅领主",
@@ -1813,7 +1820,9 @@
 			"savingThrowForced": [
 				"感知"
 			],
-			"ENG_name": "SKELETON LORD"
+			"ENG_name": "Skeleton Lord",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "骷髅战士",
@@ -1926,7 +1935,9 @@
 				"MLW",
 				"MW"
 			],
-			"ENG_name": "Skeleton Warrior"
+			"ENG_name": "Skeleton Warrior",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "雄剑蛛",
@@ -2021,7 +2032,9 @@
 			"savingThrowForced": [
 				"体质"
 			],
-			"ENG_name": "Male Sword Spider"
+			"ENG_name": "Male Sword Spider",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "雌剑蛛",
@@ -2116,7 +2129,9 @@
 			"savingThrowForced": [
 				"体质"
 			],
-			"ENG_name": "Female Sword Spider"
+			"ENG_name": "Female Sword Spider",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "塔斯怪",
@@ -2213,7 +2228,9 @@
 				"RW",
 				"THW"
 			],
-			"ENG_name": "Tasloi"
+			"ENG_name": "Tasloi",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "塔斯怪狙击手",
@@ -2296,7 +2313,9 @@
 			"savingThrowForced": [
 				"体质"
 			],
-			"ENG_name": "Tasloi Sniper"
+			"ENG_name": "Tasloi Sniper",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "人狼首领",
@@ -2430,13 +2449,146 @@
 				"力量",
 				"感知"
 			],
-			"ENG_name": "WOLFWERE ALPHA"
+			"ENG_name": "Wolfwere Alpha",
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "人狼",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"type": "中形类人生物（野兽，变形生物）",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "类人形态下",
+					"braces": true
+				},
+				{
+					"ac": 13,
+					"condition": "狼与半人形态下",
+					"braces": true,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "55（10d8 +10）"
+			},
+			"speed": {
+				"UNPARSED_SPEED": "30尺（恐狼形态下40尺）"
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 8,
+			"cha": 15,
+			"passive": 13,
+			"immune": [
+				{
+					"immune": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"preNote": "非铁质武器且非魔法攻击的"
+				}
+			],
+			"languages": [
+				"通用语（不能在狼形态下说话）"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "变形生物",
+					"entries": [
+						"人狼可以用一个动作变身成狼与类人生物半人的形态或人类、精灵形态，或者以同样的动作变回其真实形态即恐狼形态。其资料除AC外各个形态均相同。其着装及携带的装备也不会随之转化。死亡时它将恢复其真实形态。"
+					],
+					"ENG_name": "Shapechanger"
+				},
+				{
+					"name": "敏锐嗅听觉",
+					"entries": [
+						"人狼依赖听觉或嗅觉进行的感知（{@skill 察觉}）检定具有优势。"
+					],
+					"ENG_name": "Keen Hearing and Smell"
+				},
+				{
+					"name": "集群战术",
+					"entries": [
+						"人狼至少有一个未处于{@condition 失能}的盟友在目标生物5尺内时，他对该生物发动的攻击检定具有优势。"
+					],
+					"ENG_name": "Pack Tactics"
+				}
+			],
+			"action": [
+				{
+					"name": "多重攻击（仅半人形态）",
+					"entries": [
+						"人狼发动两次攻击：一次啃咬攻击与一次爪击攻击。"
+					],
+					"ENG_name": "Multiattack"
+				},
+				{
+					"name": "长剑(仅类人形态)",
+					"entries": [
+						"{@atk mw}命中{@hit 7},触及5尺,一个目标。{@h}9 ({@dice 1d8 + 4})挥砍伤害或者以双手发动时造成10 ({@dice 1d10 + 5})挥砍伤害。"
+					],
+					"ENG_name": "Longsword"
+				},
+				{
+					"name": "啃咬（仅狼与半人形态）",
+					"entries": [
+						"{@atk mw}命中{@hit 7}，触及5尺，单一目标。{@h}11（{@dice 2d6 + 4}）点穿刺伤害。如果目标是生物，则目标必须成功通过一次{@dc 14}的力量豁免，否则陷入{@condition 倒地|XPHB}。"
+					],
+					"ENG_name": "Bite"
+				},
+				{
+					"name": "爪击（仅半人形态）",
+					"entries": [
+						"{@atk mw}命中{@hit 7}，触及5尺，单一目标。{@h}9（{@dice 2d4 + 4}）点挥砍伤害。"
+					],
+					"ENG_name": "Claw"
+				},
+				{
+					"name": "倦怠之歌（仅类人形态）",
+					"entries": [
+						"人狼使用一种魔法旋律演奏乐器。200 英尺内能听到旋律的每个类人生物必须进行一次 {@dc 13} 的感知豁免，豁免失败者将在接下来的 10 分钟如同受到缓慢术影响。可以在其自己回合结束时再进行一次该豁免，豁免成功则终止效应。豁免成功的生物，将在接下来的24小时内免疫该人狼的旋律。"
+					],
+					"ENG_name": "Lethargic Song"
+				}
+			],
+			"attachedItems": [
+				"长剑|phb"
+			],
+			"traitTags": [
+				"敏锐感官"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForced": [
+				"力量",
+				"感知"
+			],
+			"ENG_name": "Wolfwere",
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "科朗",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（精灵）",
 			"alignment": [
 				"C",
@@ -2546,15 +2698,18 @@
 			"ENG_name": "Coran",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Coran.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Coran.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "戴娜黑",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（人类）",
 			"alignment": [
 				"L",
@@ -2705,15 +2860,18 @@
 			"ENG_name": "Dynaheir",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Dynaheir.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Dynaheir.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "爱蒙",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（人类）",
 			"alignment": [
 				"N",
@@ -2844,15 +3002,18 @@
 			"ENG_name": "Imoen",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Imoen.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Imoen.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "贾希拉",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（半精灵）",
 			"alignment": [
 				"N"
@@ -2989,13 +3150,21 @@
 				"感知",
 				"敏捷"
 			],
-			"ENG_name": "JAHEIRA"
+			"ENG_name": "Jahira",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Jahira.webp"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "卡立德",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（半精灵）",
 			"alignment": [
 				"N",
@@ -3089,15 +3258,18 @@
 			"ENG_name": "Khalid",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Khalid.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Khalid.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "明斯克",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（人类）",
 			"alignment": [
 				"N",
@@ -3191,15 +3363,18 @@
 			"ENG_name": "Minsc",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Minsc.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Minsc.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "撒恩",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（精灵）",
 			"alignment": [
 				"L",
@@ -3349,14 +3524,17 @@
 			"ENG_name": "Xan",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Xan.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Xan.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "艾德温",
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "类人生物（人类）",
 			"alignment": [
 				"L",
@@ -3507,15 +3685,18 @@
 			"ENG_name": "Edwin",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Edwin.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Edwin.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "法多",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（人类）",
 			"alignment": [
 				"N",
@@ -3672,14 +3853,17 @@
 			"ENG_name": "Faldorn",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Faldorn.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Faldorn.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "凯根",
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（矮人）",
 			"alignment": [
 				"L",
@@ -3766,15 +3950,18 @@
 			"ENG_name": "Kagin",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Kagin.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Kagin.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "齐冯",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（精灵）",
 			"alignment": [
 				"C",
@@ -3881,15 +4068,18 @@
 			"ENG_name": "Kivan",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Kivan.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Kivan.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "蒙塔罗",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（半身人）",
 			"alignment": [
 				"N",
@@ -3991,15 +4181,18 @@
 			"ENG_name": "Montaron",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Montaron.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Montaron.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "维康妮娅",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（精灵）",
 			"alignment": [
 				"N",
@@ -4177,15 +4370,18 @@
 			"ENG_name": "Viconia",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Viconia.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Viconia.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "萨尔",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（人类）",
 			"alignment": [
 				"C",
@@ -4333,15 +4529,18 @@
 			"ENG_name": "Xzar",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Xzar.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Xzar.webp"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "屠戮者",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型邪魔",
 			"alignment": [
 				"A"
@@ -4428,13 +4627,15 @@
 			"miscTags": [
 				"MW"
 			],
-			"ENG_name": "Slayer"
+			"ENG_name": "Slayer",
+			"hasFluff": true
 		},
 		{
 			"name": "士兵",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（任意种族）",
 			"alignment": [
 				"A"
@@ -4526,13 +4727,15 @@
 			"savingThrowForced": [
 				"力量"
 			],
-			"ENG_name": "Soldier"
+			"ENG_name": "Soldier",
+			"hasFluff": true
 		},
 		{
 			"name": "队长",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "中型类人生物（任意种族）",
 			"alignment": [
 				"A"
@@ -4633,13 +4836,15 @@
 			"savingThrowForced": [
 				"力量"
 			],
-			"ENG_name": "CAPTAIN"
+			"ENG_name": "Captain",
+			"hasFluff": true
 		},
 		{
 			"name": "仓鼠",
 			"isNamedCreature": true,
 			"source": "HoBG",
 			"page": 0,
+			"isNpc": true,
 			"type": "微型野兽",
 			"alignment": [
 				"N",
@@ -4691,6 +4896,977 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"ENG_name": "Hamster",
+			"hasFluff": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "可怖变形怪",
+			"source": "HoBG",
+			"entries": [
+				"可怖变形怪是变形怪族群的古老成员，已经活了几个世纪。它们伪装成过成百上千种不同的生物。长时间冒充他人已经让这些古老的存在丧失了任何形式的共情能力。大多数可怖变形怪独来独往，但有时它们也会带领一群年轻的同类。",
+				"{@b 无情无欲Emotionless。} 可怖变形怪模仿他人感情和情绪已经太久，以至于它们自己难以感知任何情感。正因如此，它们成为了出色的间谍和刺客。它们毫无悔意，唯一能感觉到的只有无尽的乏味\u2014\u2014当它们被迫保持一个固定形态时，这种无聊感尤为强烈。为了激发任何情感，可怖变形怪往往会寻求越来越冒险、怪异的行为，这常常意味着它们会接受可能导致自身死亡的危险任务。",
+				"{@b 不自然的步态Unnatural Gait。} 在它们的原本形态中，可怖变形怪的移动方式令人不安。它们已经习惯于模仿他人的动作，以至于自己的移动方式显得支离破碎、混乱无序。虽然它们的动作可能显得笨拙和迟缓，但它们能以惊人的速度发动攻击，迅速击倒受害者。",
+				{
+					"type": "inset",
+					"entries": [
+						"让我借下你的脸。",
+						"你再也用不上它了。",
+						"\u2014变形怪"
+					]
+				},
+				{
+					"type": "inset",
+					"entries": [
+						"我必须承认，在接触变形怪时我感到有些不安。很难知道究竟是什么驱使着它们，而且他们远比外表看起来的要聪明得多。当它们伪装得当的时候，他们会是愉快的谈话者，但如果对其放松警惕，那将是愚蠢的行为。你永远不知道它们什么时候会再度厌烦。最好的做法是保持距离。",
+						"艾德温"
+					]
+				}
+			],
+			"ENG_name": "Dread Doppelganger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Dread%20Doppelganger.webp"
+					},
+					"title": "可怖变形怪"
+				}
+			]
+		},
+		{
+			"name": "吉布林",
+			"source": "HoBG",
+			"entries": [
+				"吉布林是小型的野性类人生物，被认为最初来自遥远国度，这是一个充满混沌和疯狂的遥远位面。然而，这些生物是如何到达主物质位面和费伦的却不得而知。无论如何，这些野性且致命的生物已成为剑湾不幸旅者常见的遭遇，尤其是对于那些在夜晚偏离主要道路的旅人。幸运的是，吉布林对所有光源，包括火光，有着强烈的恐惧，这使得保护营地和定居点变得相对简单。",
+				"{@b 疯狂具象 Madness Made Flesh}吉布林是一种短小、矮胖的生物，身高大致与普通侏儒相当，尽管它们的驼背姿势让它们看起来比实际更小。它们的强壮身体大部分被厚厚的黑色毛发覆盖，然而在面部、手臂和腿部可以看到病态灰色的裸露皮肤。吉布林的野兽面孔上有漆黑的眼睛和永久性的疯狂笑容，耳朵尖尖，顶部有毛发丛生。",
+				"{@b 喧嚣饿鬼 Chattering Hunger}吉布林通常集体行动，偏好待在茂密的森林和洞穴中。它们是典型的食肉动物，毫不犹豫地食用倒下同类的肉体。吉布林很难成功突袭猎物，因为它们总是尖叫、嚎叫和喋喋不休。尽管这些声音看起来像是某种沟通方式，但少数研究这些生物的语言学家认为这些声音并非语言。",
+				"{@b 难测斗者 Unpredictable Combatants}即使是新手冒险者，也能轻松击败单个吉布林，但它们总是成群结队行动。如果不加以制止，这些群体会迅速膨胀成庞大的大军，吞噬一切。尽管它们表现出野兽般的行为，但实际上吉布林足够聪明，能使用武器。然而，它们使用的任何武器都是偷来的，因为它们显然没有能力制造或锻造任何东西。当没有武器时，吉布林会用石头、骨头和大棒临时应对。吉布林没有自我保护意识；它们没有撤退的概念，总是战斗到死。",
+				{
+					"type": "inset",
+					"entries": [
+						"SKREEEEEEEEGLURKLGLURKL!",
+						"blarkblarkblarkblark.",
+						"JagAjaGaJaGaJagAjAga!?",
+						"\u2014吉布林"
+					]
+				},
+				{
+					"type": "inset",
+					"entries": [
+						"如果吉布林不是那么让人恼火、难以预测的话，它们本可以派上用场。我试着给它们装上控制装置，但结果适得其反\u2014\u2014它们开始互相啃噬对方的脸。而且，天哪，那不停的吵闹简直把我逼疯了！当然，大多数智力较低的生物总是喋喋不休，但这些愚蠢的小怪物似乎乐在其中，一遍又一遍地讲着那些毫无意义的废话。想想看，它们简直和我在塞尔学院的那些学生如出一辙。",
+						"艾德温"
+					]
+				}
+			],
+			"ENG_name": "Gibberling",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Gibberling.webp"
+					},
+					"title": "吉布林"
+				}
+			]
+		},
+		{
+			"name": "扭曲树精",
+			"source": "HoBG",
+			"entries": [
+				"这些精类生物在一位树精的栖息之树被摧毁或被邪恶魔法污染时诞生。如果树精没有因此死去，她会逐渐衰弱，经过数月的时间，她最终会变成扭曲树精。扭曲树精是疯狂的生物，寻求对任何闯入她们曾经栖息的森林深处的非精类生物进行复仇。",
+				"{@b  美丽不再Beauty Lost。}扭曲树精不再保有她们曾经的美丽。在遭遇悲剧后，她们就此失去了嘴巴，其笑声也永远沉寂。曾因树精的美丽而闻名的女性形态变得扭曲，变为锋利且致命的存在。她们的翠绿色皮肤也变为灰色，显得病态而虚弱，她们的触碰本身也变为腐化且具有毒性。",
+				"{@b  陷入疯狂Madness。}",
+				"扭曲树精很少以理性方式表现自己。她们可能会凶猛地攻击入侵者，然后消失不见，却又在其后出于心血来潮而返回。有时，她们可能会协助一群冒险者驱逐在森林中闯入的邪恶入侵者，但一旦共同的敌人被消灭，她们又会转身对冒险者发动攻击。",
+				{
+					"type": "inset",
+					"entries": [
+						"我无法饮用这水。",
+						"我的根已腐烂发黑。",
+						"我无法饮用这水。",
+						"我的叶已枯萎凋零。",
+						"我无法饮用......",
+						"\u2014扭曲树精"
+					]
+				},
+				{
+					"type": "inset",
+					"entries": [
+						"当然，除非绝对必要，否则我们绝不愿意伤害一棵树。不幸的是，树精在它们的自然形态下，对于我们这些负责保护森林的人来说几乎没有用处。然而，扭曲树精则可以成为对抗被文明宠坏的群体的有效武器。也许有一天，当森林重新繁茂时，她们能得到治愈，但目前，她们将作为腐朽与衰败的浪潮，为新生命的生长提供土壤。毕竟，死亡只是橡木之父为我们设计的计划的一部分。",
+						"法多"
+					]
+				}
+			],
+			"ENG_name": "Hamadryad",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Hamadryad.webp"
+					},
+					"title": "扭曲树精"
+				}
+			]
+		},
+		{
+			"name": "塞壬",
+			"source": "HoBG",
+			"entries": [
+				"塞壬是生活在剑湾沿岸悬崖和嶙峋岩石上的精类生物。它们在陆地和水下都能游刃有余，但更喜欢靠近海岸，很少进入深水区域。塞壬因其美妙的歌声而闻名，这种歌声常常引诱水手走向毁灭\u2014\u2014让他们将船驶向致命的暗礁，或撞上悬崖。",
+				"{@b  领地意识 Territorial.}塞壬通常成小群居住，极其具有领地意识。它们会试图驱逐任何闯入它们领域的类人生物。起初，它们会采取非致命的方式试图说服入侵者离开，但如果无效，它们也不介意用杀戮解决。",
+				"{@b  动人歌声 Beautiful Song.}塞壬热爱歌唱，并通过音乐彼此交流。它们的歌声美丽又令人心碎，但通常并不带有魔法性质。只有在面临危险时，它们才会将魔法编织进自己的歌声中。",
+				"{@b  高超战士 Skilled Warriors.}塞壬是致命的战士，它们利用自己的战斗技能捕猎食物，或杀死那些闯入它们领地的入侵者。它们的利刃由骨头制成，是它们在水下旅行时的主要武器。它们会将弓箭储存在靠近岸边的地方，必要时可以随时取回使用。",
+				{
+					"type": "inset",
+					"entries": [
+						"勿再靠近，凡人。",
+						"我们为姐妹而歌唱，",
+						"我们为海洋而歌唱，",
+						"我们并非为你歌唱。",
+						"\u2014塞壬"
+					]
+				},
+				{
+					"type": "inset",
+					"entries": [
+						"那些在\"挥霍鲟鱼旅馆\"的水手们总是谈论着塞壬的歌声。我还记得当我以前在烛堡外的悬崖附近探险时，曾在海风中听到过它们的声音。我很好奇它们从哪里来的？人们都说沉船海岸上的那些漂流物和残骸全是塞壬造成的，但我猜这不过是那些醉醺醺的水手为自己糟糕的航行技术找的借口。在我看来，如果你在剑湾航行时听到塞壬的歌声，那只意味着你该离远点。这不就跟灯塔的信号一样吗？",
+						"\u2014爱蒙"
+					]
+				}
+			],
+			"ENG_name": "Sirene",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Sirene.webp"
+					},
+					"title": "塞壬"
+				}
+			]
+		},
+		{
+			"name": "骷髅战士",
+			"source": "HoBG",
+			"entries": [
+				"由死灵能量支撑，骷髅战士以其高智力和出色的战斗能力而闻名。与冒险者通常遇到的无意识、普通的复活骷髅形成鲜明对比，骷髅战士保留了生前掌握的语言能力，大多数还能够说话。只有最精于技艺的死灵法师才能复活骷髅战士，而骷髅战士因其作为保镖和哨兵的价值而备受珍视。",
+				"死灵法师必须使用强大战士的遗骸才能创造骷髅战士。然而，即便法师成功复活了骷髅战士，这些生物也很难控制，除非法师持有封存亡灵战士灵魂的黄金冕环。像其他骷髅一样，骷髅战士对大多数形式的伤害具有抗性，但对钝击伤害有易伤\u2014\u2014需要钝器冲击才能使其干枯的骨头错位。此外，骷髅战士对魔法效果也有极高的抗性。",
+				"{@b  超越死亡的战斗Battle Beyond Death}骷髅战士由伟大战士的遗骸创造而成，并在不死状态下保留了它们的战斗技能。许多骷髅战士曾是冒险者或在战斗中阵亡的显赫领主。骷髅战士挥舞着可怕的双手巨剑，身披沉重且往往装饰华丽的铠甲，这些铠甲因年代久远而失去了光泽。",
+				"{@b  亡灵指挥官Undead Commanders}骷髅战士通常是孤独的守护者，除非他们受到死灵法师的主动指使，否则通常不会与其他亡灵交往。在这种情况下，骷髅战士可能会指挥一群愚笨的普通骷髅，运用这些骷髅通常无法理解的战术。",
+				"{@b  骷髅领主Skeleton Lords}一些骷髅战士是由强大的领主遗骸与灵魂创造的，比如国王或其他贵族。这类骷髅战士比同类更为强大，并散发出一种寒冷与恐惧的灵光，甚至能让最勇敢的战士为之胆寒。",
+				"{@b  灵魂冕环Soul Circlets}骷髅战士被创造时，它的灵魂被封印在一个魔法黄金冕环中，这个冕环用于控制生物。灵魂冕环是将骷髅战士束缚在主物质位面的关键物品。骷髅战士渴望找回它们的冕环，大多数成功找到冕环的骷髅战士会选择摧毁它，从而结束它们阴森恐怖的存在。",
+				{
+					"type": "inset",
+					"entries": [
+						"这些行尸走髅绝对是某个邪恶法师在搞鬼的明确标志！明斯克确信，骷髅应该安静地躺在坟墓里，而不是四处游荡，好像在寻找夜宵点心一样！现在你又说它们戴着皇冠，穿着板甲，还拿着魔法剑？！邪恶难道没有极限吗？",
+						"话说回来，恶棍们到底在这些深渊中发现了什么？布想知道！"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "控制骷髅战士",
+					"entries": [
+						"佩戴骷髅战士的黄金冕环的人可以使用一个动作来控制100英尺内的亡灵。此控制无需进行豁免检定。这种控制是绝对的，佩戴者可以通过心灵感应与骷髅战士建立联系并下达命令。骷髅战士会尽力执行简单的命令，如\"攻击那个生物\"或\"移到那里\"。如果骷髅战士没有收到任何命令，它将保持防御自身。这些规则同样适用于骷髅领主。"
+					],
+					"ENG_name": ""
+				}
+			],
+			"ENG_name": "Skeleton Warrior",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Skeleton%20Warrior.webp"
+					},
+					"title": "骷髅战士"
+				}
+			]
+		},
+		{
+			"name": "剑蜘蛛",
+			"source": "HoBG",
+			"entries": [
+				"剑蜘蛛是一种巨型蜘蛛，游荡在费伦的森林和洞穴中，依靠宛如锋利刀刃的腿移动。这些独行的捕食者以惊人的速度移动，并且在体型庞大的情况下仍然有着出色的隐匿能力。剑蜘蛛光滑的身体长度可达12英尺，覆盖着坚硬的黑色外骨骼，外骨骼表面有细密的黑色毛发。尽管它们的视力很差，但剑蜘蛛可以通过颤动感知来探测地面上的微小震动，从而定位猎物。",
+				"{@b  天生武器 Natural Weapons}剑蜘蛛的八条肢体末端覆盖着厚实的几丁质板，其上带有锯齿状的棱，但它的主要武器是两条前肢，它们看起来就像一对巨大的弯刀。剑蜘蛛用这些肢体刺穿猎物，将猎物拉近到足够接近的位置，再用毒牙撕咬猎物。一旦猎物被杀死，剑蜘蛛会将其切割成适合吞咽的小块，喂入它那布满多排尖牙的巨大嘴中。",
+				"{@b  死从天降 Death From Above}剑蜘蛛不像普通蜘蛛那样依靠事先建造的网捕捉猎物，而是更喜欢在树枝高处或洞穴墙壁上等待猎物。尽管体型巨大，剑蜘蛛仍是非常熟练的攀爬者，能攀附在大多数表面上。一旦发现猎物，剑蜘蛛会喷射束缚网困住目标，并以八条致命的刃肢完全展开的姿势从高处俯冲而下，将猎物刺穿。如果狩猎区域不适合这种策略，剑蜘蛛会像大型猫科动物一样跟踪并追逐猎物，甚至能够向前跃出多达30英尺，用前肢发动猛击。",
+				"{@b  新来访者 New Arrivals}剑蜘蛛原生地是费伦西南部的楚尔特半岛上的梅海尔丛林。卓尔商人将它们带到了幽暗地域，在那里，它们被作为战斗生物，由萝丝的女祭司们控制。后来，许多剑蜘蛛逃离了它们的圈养地，并凭借其适应广泛气候的能力，很快适应了新的地下家园。这些生物迅速扩散到整个幽暗地域，其中不少还找到了通往地表的道路。"
+			],
+			"ENG_name": "Sword Spider",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Sword%20Spider.webp"
+					},
+					"title": "剑蜘蛛"
+				}
+			]
+		},
+		{
+			"name": "雄剑蛛",
+			"source": "HoBG",
+			"_copy": {
+				"name": "剑蜘蛛",
+				"source": "HoBG",
+				"ENG_name": "Sword Spider"
+			},
+			"ENG_name": "Male Sword Spider"
+		},
+		{
+			"name": "雌剑蛛",
+			"source": "HoBG",
+			"_copy": {
+				"name": "剑蜘蛛",
+				"source": "HoBG",
+				"ENG_name": "Sword Spider"
+			},
+			"ENG_name": "Female Sword Spider"
+		},
+		{
+			"name": "塔斯怪",
+			"source": "HoBG",
+			"entries": [
+				"瘦长但体型矮小的塔斯怪是一种类地精生物，主要栖息在费伦南部茂密的热带森林中。然而，一些塔斯怪群体已经北迁至剑湾地区，其中最著名的是斗篷森林的一个聚居地。塔斯怪拥有鲜艳的绿色皮肤，覆盖着薄薄一层粗糙的黑色毛发，它们能够完美地与环境融为一体，只有金黄色、如同猫科动物的眼睛微微发光，暴露出它们的存在。虽然通常不如人类复杂，但塔斯怪相当聪明，懂得利用数量优势和群体战术，使它们成为了意外强大的敌人。",
+				"{@b 树栖动物Tree Dwellers}。塔斯怪喜欢丛林树冠下的弱光环境，完全避开直射的阳光。在树木稀疏的温带地区，如剑湾的森林，它们大多将活动时间限制在黎明和黄昏时分。作为爬树高手，塔斯怪的长臂使它们能够快速地在树顶间移动，借助树枝跳跃或攀爬藤蔓。在地面上，它们则显得不那么灵活，通常采用类似猿类的蹲伏姿势以双拳行走。",
+				"{@b 社会生物Social Creatures}。塔斯怪生活在结构松散的部落社会中，组成由多个家庭联合而成的小团体。它们的社区通常建在树上，高悬远离地面之上，由相互连接的平台环绕。塔斯怪对孤独有着深深的恐惧，这种恐惧也被它们文化中的诸多迷信所强化。它们进行某种形式的畜牧，饲养巨鼠和其他大型害虫作为牲畜，既可供食用，也可用作坐骑。塔斯怪主要说一种独特的语言，但一些个体能说带有缺陷的通用语。尽管性情凶狠，但这些机会主义者在特定情况下是可以被说服的。",
+				"{@b 伏击猎手Ambush Predators}。虽然塔斯怪几乎什么都吃，但它们尤其偏好新鲜的肉类，特别是人类、精灵及其他类人生物的肉。它们以利用更可怕的怪物为闻名，监视怪物巢穴的逃生路线，并引诱受伤的冒险者进入陷阱。塔斯怪还善于使用游击战术，以及其他充分利用它们对森林熟悉程度的技巧。"
+			],
+			"ENG_name": "Tasloi",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Tasloi.webp"
+					},
+					"title": "塔斯怪"
+				}
+			]
+		},
+		{
+			"name": "塔斯怪狙击手",
+			"source": "HoBG",
+			"_copy": {
+				"name": "塔斯怪",
+				"source": "HoBG",
+				"ENG_name": "Tasloi"
+			},
+			"ENG_name": "Tasloi Sniper"
+		},
+		{
+			"name": "人狼",
+			"source": "HoBG",
+			"entries": [
+				"人狼是一种变形生物，其自然形态为恐狼，但能够随意变形为类人生物或双足的混合形态。这些充满憎恨的生物远比普通狼聪明，它们运用这种超自然的狡猾本能猎杀最爱的猎物：人类。虽然有些人认为人狼是狼人和普通狼的后代\u2014\u2014这可能确实是它们的起源\u2014\u2014但人狼是独立的物种，它们的兽化症并非可传播的诅咒或疾病。与狼人相似，人狼害怕附子草wolfsbane；另外，它们对铁制武器而非银制武器具有易伤性。",
+				"{@b  奇异种群 Strange Packs}虽然有些人狼独居，而另一些选择生活在家庭群体中。然而，它们更常与普通野狼或座狼组成群体。人狼能够影响并指挥这些野兽，使它们变得更加凶猛和大胆。极少情况下，人狼可能选择融入人类社会。人狼绝不会与狼人为伍，因为二者之间存在深深的相互憎恨，见面便会毫无缘由地互相攻击。",
+				"{@b  多样形态 Myriad Forms}人狼的自然形态与恐狼在大小和外观上相似。在战斗中，它们通常会转变为半人形态，既可以用狼牙撕咬，也可以用类人生物般的双手操控武器。为了欺骗更强大的猎物，人狼会变成魅力四射的类人形态。与狼人不同，人狼并没有一个固定的人类形态可恢复，而是可以变形为任何它们想要的类人形态，并且几乎总是选择极具吸引力的外表。人狼能感知猎物偏爱的特征，并伪装成诱人的形象。当它们在新月之下被迫变形时，对外观的控制力会有所减弱，但通常会变成它们最近使用过的形态。",
+				"{@b  催眠旋律 A Sedating Melody}在类人形态下，人狼能够演奏一首能使猎物产生类似于缓慢术效果的倦怠之歌。许多人狼擅长弹奏弦乐器，并伪装成吟游诗人，以此掩饰它们施展魅力的真实意图，避免引起怀疑。",
+				{
+					"type": "inset",
+					"entries": [
+						"嘘......闭上你的眼睛。",
+						"梦见星光闪耀 ~ 梦见未曾见过的",
+						"景象 ~ 我很快就会加入你们。",
+						"\u2014人狼"
+					]
+				},
+				{
+					"type": "inset",
+					"entries": [
+						"人狼是橡木之父最完美的猎食者之一。着实可怕，但它们的野性并不比那些居住在城市中、自诩文明的怪物更甚。",
+						"法多"
+					]
+				}
+			],
+			"ENG_name": "Wolfwere",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Wolfwere.webp"
+					},
+					"title": "人狼"
+				}
+			]
+		},
+		{
+			"name": "人狼首领",
+			"source": "HoBG",
+			"_copy": {
+				"ENG_name": "Wolfwere",
+				"name": "人狼",
+				"source": "HoBG"
+			},
+			"ENG_name": "Wolfwere Alpha"
+		},
+		{
+			"name": "科朗",
+			"source": "HoBG",
+			"entries": [
+				"科朗是一名年轻的精灵战士兼游荡者，以其精湛的射箭技艺而闻名。他与大多数精灵不同，更加偏爱博德之门等以人类为主的都市生活，而非纯净的森林。另外，科朗的适应力极强，使他几乎能在任何地方感到自在\u2014\u2014至少暂时如此。",
+				"科朗原本来自维尔达斯森林\u2014\u2014非精灵族裔通常称之为泰西尔森林Forest of Tethir。但在那里，他觉得田园生活枯燥无趣。为了摆脱单调，他来到博德之门，寻求财富与权力。然而，不久后，科朗发现在剑湾谋生并不容易，不得不转向盗窃来维持生计。一开始，他是出于生存的需要，打算用非法所得开创自己的事业。但实际上，他沉迷于劫掠的刺激感。如果有一个既能带来丰厚报酬又足够有趣的冒险任务，他或许会选择一条稍微诚实一点的生活道路。",
+				"科朗以自利和随性著称，但他并非恶意之人。尽管偏好恶作剧，但他本性善良，乐于帮助有需要的人，并会在遇到残暴行为时挺身而出。最重要的是，科朗认为自己是一个浪漫主义者，在追求各个种族和阶层的男女方面颇有成就。很快，他就在博德之门及周边地区因其花花公子的声名远扬。自从到来后，他至少与一名已婚的人类女子生下了一个半精灵孩子。",
+				"目前，他的大部分时间都与一名名叫撒恩Xan的精灵法师一起度过。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"科朗是一个厚颜无耻的调情高手，擅长用他的魅力让自己摆脱（或陷入）困境。",
+								"如果被迫闲着太久，科朗会很快感到厌烦。",
+								"科朗热衷于冒险，也并不排斥追求荣耀。凡是能带来名声与财富的任务，他都会迫不及待地主动请缨。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"宁择风暴之险，",
+								"不取静寂之宁。",
+								"\u2014科朗"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Coran",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Coran.webp"
+					},
+					"title": "科朗"
+				}
+			]
+		},
+		{
+			"name": "戴娜黑",
+			"source": "HoBG",
+			"entries": [
+				"戴娜黑是女巫议会Wychlaran的成员，这个由强大女性施法者组成的组织统治着莱瑟曼。她对外宣称自己从费伦大陆东部旅行至剑湾的原因，是为了陪伴忠实护卫明斯克完成其\"达吉玛\"dajemma仪式。这种成年礼要求年轻的莱瑟曼男子探索异域土地并克服途中遭遇的挑战。此外，女巫议会的高阶成员还秘密委派戴娜黑调查阿兰多的预言并寻找巴尔之子，但她对这些深层动机始终讳莫如深。",
+				"女巫议会\u2014\u2014被外界称为\"莱瑟曼女巫\"\u2014\u2014是这个东北方小国的绝对权威。除极特殊情况外，违抗她们命令者皆会被处死，不过行刑者通常是其他莱瑟曼人而非女巫本人。同理，任何非议会成员擅自闯入幽林之森都会命丧于森林守护者之手。这片与妖精荒野有着深厚联系的茂密林区，正是女巫们举行仪式和召开会议的神圣场所。",
+				"多数女巫居住在森林边缘的幽林镇。尽管外邦人常视其统治为暴政，但女巫议会成员普遍心怀善意且忠于人民。当然也存在例外，某些女巫将个人权力置于一切之上。",
+				"莱瑟曼所有儿童幼年时都会接受魔法天赋检测，包括非本土出生的孩子。戴娜黑正是如此\u2014\u2014她本是自穆尔霍兰德被解放的塞尔奴隶之女。具有天赋的女孩会被培养成女巫议会成员，肩负起抵御外敌（如塞尔红袍巫师）的重任；而具备资质的男孩则会加入长老会vremyonni (\"Old Ones\")，通过研习制造魔法物品和创造法术的技艺来辅佐女巫。",
+				"女巫议会以佩戴长老会打造的面具闻名，她们在战斗和国内出行时都会佩戴面具。但像戴娜黑这样罕见出国执行任务的女巫，往往会选择低调行事以规避关注\u2014\u2014毕竟在国境之外她们更为脆弱，而塞尔早已将密探和刺客遍布费伦各地。",
+				"戴娜黑专精塑能学派法术。尽管无论以何种标准衡量她都堪称强大的法师，但在莱瑟曼境内她会获得更惊人的力量\u2014\u2014女巫们能汲取这片土地与自然精魂的原始魔力。不过这位年轻女巫虽地位崇高且法力强横，对外界事务仍缺乏经验。她真心关怀并敬重明斯克，却对其过度保护欲倍感无奈；她对战士盔甲中永远在四处爬行的仓鼠小布Boo更是深恶痛绝。此外她担忧明斯克的精神状态：随着每次头部受伤，这位战士与仓鼠的对话似乎越发频繁了。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"戴娜黑个性自信从容且行事果断，对自身能力抱有强烈信念。",
+								"除了她的莱瑟曼口音外，她习得的通用语版本略显古旧且过于正式，惯用\"汝thy,\" \"尔thee,\"以及\"尔等thou。\"",
+								"虽无恶意，但她表达观点时直截了当、近乎冷酷的坦诚常被他人视为无礼。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"尔之善意欲施护佑，",
+								"然吾无需此物，盖因吾之法力不",
+								"逊尔分毫。",
+								"\u2014戴娜黑"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Dynaheir",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Dynaheir.webp"
+					},
+					"title": "戴娜黑"
+				}
+			]
+		},
+		{
+			"name": "爱蒙",
+			"source": "HoBG",
+			"entries": [
+				"爱蒙是土生土长的剑湾人，一位活泼乐观的年轻游荡者。尽管总显得无忧无虑，她的人生却始于悲剧\u2014\u2014母亲因难产去世。失去亲人的她被养父温斯罗普收养，爱蒙昵称其为\"老酒桶Old Puffguts\"。十岁那年，父女俩迁居至烛堡这座图书馆要塞，温斯罗普成为这座知识圣殿中唯一旅店兼商铺的店主，爱蒙则协助其经营。养父的幽默诙谐深深影响了少女，他们轻松欢快的生活态度与管理图书馆的严肃修士形成鲜明对比。",
+				"爱蒙的冒险始于暗中追随导师葛立安离开烛堡。当时葛立安正竭力保护他的监护对象\u2014\u2014一位遭刺客追杀的巴尔之子。然而葛立安最终被另一位巴尔之子沙洛佛克杀害。目睹老贤者遇害后，爱蒙决定陪伴葛立安的养子，这位她在烛堡童年时期的挚友踏上旅程。",
+				"天赋异禀的爱蒙在旅途中展现出非凡才能。生性好奇的她曾自学开锁与潜行，得以在烛堡禁区内自由探索，任何秘密都难逃其手。就连她戏弄修士的扒窃游戏，后来也在博德之门的拥挤街巷中派上大用场。",
+				"尽管离开烛堡后危机四伏，爱蒙始终保持着阳光般的心态。她待人友善、随性洒脱，甚至愿为行方便偶尔游走法律边缘。唯有遭遇毫无底线的恶行或自私之举时，她才会显露愤怒与不耐。这种秉性使她能轻松与各类人物相处\u2014\u2014无论对方是人类或其他种族。",
+				"受葛立安、贾希拉与卡立德影响，爱蒙对竖琴手同盟充满敬意，曾考虑加入该组织。近期她将旺盛好奇心转向奥术研习，如今已成为掌握多种实用法术的法师学徒。",
+				"鲜为人知的是，爱蒙与葛立安的养子同为巴尔之子。或许正是她天真烂漫的性情，压制了那位恶神血脉的腐蚀性影响。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"爱蒙生性极度友善，往往更倾向通过交涉而非武力解决问题。",
+								"爱蒙习惯以顽皮举动来活跃气氛，尤其喜欢调侃最亲近之人。",
+								"爱蒙怀揣无止境的好奇心。她总是抓住一切机会提问，尤其是在初次与人见面时。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"从小我就梦想",
+								"变成温斯罗普故事里那些邪气",
+								"女巫\u2014\u2014美得惊心，又凶得带",
+								"感！快看快看！我现在甩下头",
+								"发再凶巴巴瞪你...像模像样",
+								"吧？",
+								"\u2014爱蒙"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Imoen",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Imoen.webp"
+					},
+					"title": "爱蒙"
+				}
+			]
+		},
+		{
+			"name": "贾希拉",
+			"source": "HoBG",
+			"entries": [
+				"贾希拉是一名半精灵德鲁伊兼战士，兼具强大的自然魔法与凶悍战技。她最初与丈夫兼竖琴手同僚卡立德前往剑湾，代表这个神秘组织调查1368DR年的钢铁危机。尽管作风强硬甚至略显尖刻，贾希拉对少数敬重之人始终保持着炽烈的忠诚。",
+				"贾希拉出生于效忠阿莱曼德国王King Alemander的泰瑟尔贵族家庭，幼年时父母在王国血腥内乱中被暴民杀害。若非仆人将她偷运出城堡，她也将遭遇同样命运。机缘巧合下，二人在附近森林遇到一群德鲁伊，后者收养并抚育了贾希拉。",
+				"与性情温和的伴侣卡立德不同，贾希拉是真正的绝对中立阵营。她最关切的是维系所有极端之间的平衡，促进费伦的和谐。这种理念绝非置身事外\u2014\u2014她坚信唯有通过果决行动才能实现真正的平衡与自然保护。但若无其他选择，她会坚定地扶持善而非恶。这常使她与动机有害或自私者对立，其竖琴手身份也迫使她频繁与散塔林会特工冲突。",
+				"当被问及对善恶的看法时，贾希拉的回应极尽务实：极端自私者或许偶尔能促进平衡，但多数只是搅局者；而无私之举鲜少引发混乱。事实上，她可能在合理化自身偏好\u2014\u2014毕竟，她对卡立德这类善良怯懦者总有恻隐之心，即便认为他的理想主义软弱不切实际。",
+				"这对半精灵竖琴手夫妇堪称互补的极端。贾希拉的强势与行动力推动着怯懦的卡立德前行，而后者细腻的共情能力则缓和着她的暴烈脾性。卡立德圆融的处世之道，常能化解贾希拉莽直作风引发的争端。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"贾希拉性格固执倔强。一旦下定决心，除非有极其充分的理由，否则绝不会改变主意。",
+								"贾希拉言辞犀利，常能为社交场合增添喜剧色彩或紧张氛围。但进行外交时，她更可能激化而非化解冲突。",
+								"虽然钟爱自然、厌弃都市，但贾希拉同时处世老练，必要时也能在城市中游刃有余。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"我们必须保护自然的平衡，因为自然会根据其需要给予和夺走生命。换句话说，要坚强，不要抱怨！",
+								"\u2014贾希拉"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Jaheira",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Jaheira.webp"
+					},
+					"title": "贾希拉"
+				}
+			]
+		},
+		{
+			"name": "卡立德",
+			"source": "HoBG",
+			"entries": [
+				"卡立德是一名半精灵战士兼竖琴手成员，对妻子贾希拉忠贞不渝。与妻子一样，他代表竖琴手同盟前往剑湾调查钢铁危机。夫妇二人本计划在友善之臂旅店与竖琴手同僚\u2014\u2014贤者葛立安会合。不幸的是，葛立安在雄狮之路遭巴尔之子沙洛佛克·安基夫伏击身亡。二人的至交好友之死对这对夫妇而言犹如晴天霹雳。此后他们协助葛立安的养子踏上了击败沙洛佛克的征程。",
+				"加入竖琴手之前，卡立德的大半人生都居于卡林珊。作为富商的私生子，怯懦的少年因父亲公开偏袒其异母兄弟而投身武技训练，加入城邦民兵。军旅生涯铸就了他强烈的忠诚与荣誉感。",
+				"卡林珊与安姆、泰瑟尔并称费伦西南海岸的\"阴谋之地\"。三国皆以贸易立国，并承袭远古文明余荫。毗邻闪耀之海的地理使卡林珊与楚尔特、夏尔等异域进行蓬勃的贸易往来。",
+				"卡林珊社会珍视的并非财富本身，而是财富带来的舒适生活。因此，富裕的冒险者和行商在卡林珊上流阶层眼中与乞丐无异。因此，卡立德选择成为风餐露宿的竖琴手外勤特工，正彰显他对善良事业的极致奉献。",
+				"卡立德腼腆寡言且易焦虑，在社交中格外注重言辞分寸。他竭力回避冲突，但面对道德败坏者会极度不适。他的寡言与自卑常使人误判其愚钝，然而实际上，他的智慧与强健体魄同样出众，只是缺乏那份能驱使他将才智化为武器的自信心。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"卡立德有明显的口吃，在紧张情况下会变得尤为严重。",
+								"卡立德秉持着坚定不移的善良，即便遭受最严重的侮辱也保持礼节。只有在妻子被冒犯时才会提出抗议\u2014\u2014且仅以骑士礼节所要求的最委婉言辞表达。",
+								"尽管全心投身于正义事业，卡立德亦存有怯懦的一面，在面对看似必死的绝境时可能会选择逃离。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"请...请别诉诸武力！诸、诸位总能找到共识的对吧？您瞧天色已晚，况且我...呃...有夜盲症。",
+								"\u2014卡立德"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Khalid",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Khalid.webp"
+					},
+					"title": "卡立德"
+				}
+			]
+		},
+		{
+			"name": "明斯克",
+			"source": "HoBG",
+			"entries": [
+				"明斯克是来自东方国度莱瑟曼的狂战士，兼具猎人与追踪者技艺，尤其喜爱动物。他最初为参与\"达吉玛dajemma\"\u2014\u2014莱瑟曼男子成年仪式\u2014\u2014而以护卫身份随年轻女巫戴娜黑前往剑湾，期盼完成试炼后能获准加入荣耀的冰龙狂战士殿堂。",
+				"明斯克对现实世界的认知并不牢固，这体现于他对动物伙伴\"小布Boo\"的深度依赖\u2014\u2014他坚称这只仓鼠是一只\"迷你巨型太空仓鼠\"。尽管传闻此类生物确实存在于国度的遥远角落，但明斯克对小布的痴迷，多半源于他头部遭受的过多重击。",
+				"明斯克的故乡莱瑟曼被群山、冰河与巨湖环绕。名义上由铁王统治，实权却掌握在女巫议会手中。这些强大的女巫不仅能任免君王，更是抵御塞尔红袍巫师的主力。在此环境成长的明斯克对经验尚浅的女巫戴娜黑绝对服从，并对任何与红袍巫师相关的事物怀有炽烈仇恨。",
+				"明斯克的世界观极其单纯，常凭直觉瞬间判定他人善恶、是否该受到攻击。所幸他天性良善，且不惜一切代价立志成为英雄。但他也有此不稳定，容易因感受到轻蔑或遭遇微小挫折而暴怒。",
+				"冒险生涯是明斯克最自在的归宿。无论是捣毁恶棍盘踞的酒馆，还是深入幽暗地牢斩杀畸变怪物，他都能从践踏邪恶中获得纯粹欢愉。这份天真而极具感染力的英雄气概，恰是他最耀眼的特质。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"明斯克对戴娜黑极其忠诚，凡事皆以她为主导，同时对她表现出过度保护。",
+								"明斯克会对遇到的每个人做出瞬间的性格判断，尽管智力不高，但他的判断往往极为精准。",
+								"明斯克一触即怒，对任何形式的邪恶绝不容忍。",
+								"明斯克经常向他的仓鼠\"小布\"寻求建议，并鼓励他人也这样做。他的许多绝妙点子似乎都来自这位啮齿动物伙伴。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"勇气、友谊和金铁交击之声！",
+								"这就是所有伟大冒险应有的内容。为正义而战是一份艰苦的工作，但当艰难时刻降临，坚强者也会得到仓鼠伙伴！对吧，小布！",
+								"\u2014明斯克"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Minsc",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Minsc.webp"
+					},
+					"title": "明斯克"
+				}
+			]
+		},
+		{
+			"name": "撒恩",
+			"source": "HoBG",
+			"entries": [
+				"撒恩是一位专精附魔学派的精灵法师，同时也是埃弗瑞斯卡的灰袍卫成员\u2014\u2014这个组织负责守护这座隐秘精灵城邦的律法与秩序。尽管秉持正义信条，但他恒常的冷漠神态与悲观论调总令人误解其本心。他对多数奥术施法者怀有深切敬意，尤其是以自身力量行善者，虽其始终质疑此类善举的实际成效。",
+				"撒恩近期被派往剑湾调查钢铁危机及其引发的政局动荡。因埃弗瑞斯卡毗邻博德之门，灰袍卫担忧危机将波及故土。在纳西凯调查期间，他被希瑞克信徒穆拉赫囚禁\u2014\u2014此人正是矿镇铁矿腐化的元凶。后经葛立安的养子率领的冒险小队解救，遂暂时同行。",
+				"撒恩挥舞着一把由迷斯·卓诺匠人锻造的月刃。每一把月刃都独一无二，撒恩选取了一把长剑的样式，剑身萦绕魔法蓝焰。此类武器通常需精灵血脉唤醒，但这柄长剑似乎与他缔结了独特羁绊。",
+				"撒恩的故乡埃弗瑞斯卡是费伦仅存的最大的精灵飞地之一，其规模仅次于永聚岛。它的名字在精灵语中意为\"要塞家园\"。数千年来，埃弗瑞斯卡一直隐于西央土的中心地带，正是这份隐秘使其免于外族侵扰，而其余大多数精灵家园已经沦落外族之手的原因。因此，埃弗瑞斯卡有时也被称作\"最后之城Last City\"。埃弗瑞斯卡的精灵们常与竖琴手同盟合作，故此极少数进入过这座城市\u2014\u2014甚至知晓该城存在\u2014\u2014的人类大多属该组织。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"撒恩始终维持消沉悲观的气场，几乎从不流露积极情绪。",
+								"撒恩虽总是神态阴郁，却极具说服力，并乐于调解队伍内部的冲突。",
+								"撒恩有着干涩的讽刺式幽默。虽然他通常避免正面冲突，但其尖酸刻薄的言辞常常会为自己招来麻烦。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"难道你看不见我们的追求皆是徒劳吗？",
+								"也许我应该列举我们注定失败的所有原因。放松，接受真相可能需要一段时间。",
+								"\u2014撒恩"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Xan",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Xan.webp"
+					},
+					"title": "撒恩"
+				}
+			]
+		},
+		{
+			"name": "艾德温",
+			"source": "HoBG",
+			"entries": [
+				"在诸多方面都作为一名典型红袍法师，艾德温·奥德赛隆是一个来自东方国度塞尔、极度傲慢的咒法学派法师。他最初受其红袍法师上级指示，前往大陆西部的剑湾执行刺杀莱瑟曼女巫戴娜黑的任务\u2014\u2014他们恰好憎恨彼此。",
+				"尽管艾德温的聪明才智无可争议，但他似乎缺乏常识。因此，他的宏伟计划和权力攫取往往被自身的傲慢与短视所破坏。",
+				"艾德温几乎总是以轻蔑态度对待他人，并会公开羞辱他眼中的\"低等存在\"。虽然他对自认的劣等者充满厌恶，但与更强者相处时同样糟糕（他对传奇法师伊尔明斯特·奥玛的妒忌尤为恶毒）。因此，即使在那些艾德温竭力讨好红袍法师上级与强大潜在盟友的罕见时刻，他仍会在言辞中掺杂\u2014\u2014相对而言\u2014\u2014更隐晦的尖刺。",
+				"艾德温当前的阴谋涉及著名的魔法商店\"巫术杂货店\"。他已绑架店主哈尔巴泽·德林，并与可怖变形怪合作\u2014\u2014后者假扮哈尔巴泽以维持店铺表象。艾德温持续研究光顾巫术杂货店的权贵人士，通过预言魔法追踪这些未来的潜在受害者，同时监控散塔林会与竖琴手的动向。他对可能从铁王座废墟掠夺的魔法秘宝同样感兴趣。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"艾德温常常将内心阴险的盘算大声说出，似乎完全没意识到旁人能听见。",
+								"艾德温完全受傲慢、私利与权力欲驱动。他夸耀自满的模样活脱脱像个超级反派。",
+								"因为他的自负，艾德温惯于严重低估对手的实力。"
+							]
+						}
+					],
+					"ENG_name": "ROLEPLAYING TIPS"
+				}
+			],
+			"ENG_name": "Edwin",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Edwin.webp"
+					},
+					"title": "艾德温"
+				}
+			]
+		},
+		{
+			"name": "法多",
+			"source": "HoBG",
+			"entries": [
+				"法多是一名人类德鲁伊，目前栖居于斗篷森林。她的冒险生涯始于不久前\u2014\u2014为终结铁王座在其森林中的采矿活动而战。法多隶属于一个被称为\"暗影德鲁伊\"的激进教派，该教派信奉通过暴力与其他极端手段保护自然。尽管如此，她与大多数主流德鲁伊同样崇拜自然之神西凡纳斯，她尊称祂为\"橡树之父\"。她对森林所有生灵怀有亲和力，尤其与狼群存在特殊羁绊。",
+				"法多出生于北地的黑鸦乌斯伽部落。虽不确定具体起源，但推测其部族原居于世界之脊\u2014\u2014费伦大陆西北端的冰川山脉。尚在襁褓时，她就被献给暗影德鲁伊结社，并最终成为其狂热成员。因从未知晓其他亲族，她成长为严守暗影德鲁伊教义的自然崇拜者。近期，暗影德鲁伊长老派遣她驻守剑湾，既为考验其信仰，亦为阻止博德之门向荒野扩张。",
+				"作为暗影德鲁伊，法多坚信需以暴力手段从文明中夺回自然。这与多数主张维持现存平衡的德鲁伊形成鲜明对比，导致她常与贾希拉等理念相左者爆发冲突。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"法多甘愿为侍奉与守护自然而献出生命。",
+								"虽为狂热信徒，法多的言谈却出奇地温和且克制，更倾向于用行动而非言语来践行自己的信念。",
+								"法多并不憎恨全体人类，对于那些也愿意依照她人与自然和谐共存的愿景而生活的人，她毫无恶意。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"自然必将猎杀甘为猎物者。",
+								"此即橡树之父之正义。",
+								"\u2014法多"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Faldorn",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Faldorn.webp"
+					},
+					"title": "法多"
+				}
+			]
+		},
+		{
+			"name": "凯根",
+			"source": "HoBG",
+			"entries": [
+				"凯根是个脾气乖戾的矮人战士，在贝尔苟斯特经营着一家小商铺。这间商铺实则是其雇佣兵公司的幌子\u2014\u2014该组织接受几乎所有契约，包括信誉不佳的雇主委托。尽管如此，凯根也承接相当数量的正当工作。毕竟在他眼中，生意就是生意。",
+				"凯根最近的冒险始于1368DR，当时其公司护送的商队在海岸大道神秘失踪。尽管该地区盗匪横行，但整支配备精锐护卫的大型商队完全消失仍属异常。更因失踪者中包含安塔银盾大公之子，凯根唯恐遭权贵报复。为挽回声誉，他亲自展开调查。发现商队全员遇害后，凯根加入冒险者队伍追剿盗匪，试图挽救他可靠佣兵的形象。",
+				"尽管凯根认为利他主义者都是蠢货，但他的佣兵本性使他愿为正义事业挥斧\u2014\u2014只要有利可图。他对他人苦难漠不关心，嘲笑一切无利益的善行。黄金是凯根从事此业的唯一动机，若有朝一日积累足够财富，他显然更愿远离冒险。寡言的凯根鲜少谈论自身过往，却总直言对精灵的厌恶。除财富外，他独爱气味浓郁、酿造精良的麦芽酒。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"凯根性情乖戾，但不会主动显露威胁或敌意。不过他的耐心有限，尤其当有人浪费他时间时。",
+								"凯根行事完全遵循务实利己的原则。除非有重金酬劳，否则他既不会特意帮助谁，也不会无故伤害谁。",
+								"凯根体魄强健，能硬扛一次（甚至十次）重击，对多数伤势都面不改色。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"金子才是这世道的王法。",
+								"赚不来钱的活计？不过是",
+								"多道催命符。",
+								"\u2014凯根"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Kagain",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Kagain.webp"
+					},
+					"title": "凯根"
+				}
+			]
+		},
+		{
+			"name": "齐冯",
+			"source": "HoBG",
+			"entries": [
+				"齐冯是位技艺精湛的精灵游侠，同时精于弓箭与近战。他成为冒险者的动机源于为亡妻黛赫丽安娜Deheriana复仇。虽在葛立安的养子的协助下终诛凶手，对亡妻的记忆仍驱使他继续对抗费伦的邪恶势力。这位直率寡言的战士恪守荣誉，视战场英勇与武艺为至高美德。",
+				"作为游侠，齐冯的宿敌是巨人，但他对食人魔怀有特殊仇恨。这份恨意源自杀妻凶手的身份\u2014\u2014一个名为塔佐克Tazok的残暴半食人魔。数年前，这对精灵夫妇旅途中遭塔佐克率帮派伏击，经受数日折磨，黛赫丽安娜最终遇害，而齐冯得以在遭受相同命运前逃脱。从那时起，他不断磨练追踪与战斗技艺。他甚至一路跟踪塔佐克来到了剑湾，那个半食人魔在此充当一群为铁王座效力的土匪的首领。",
+				"夫妻二人早年居于西尔明斯塔Shilmista，又名幽影森林，是一个由野精灵建立的与世隔绝的小王国。此地毗邻雪片山脉，位于安姆与泰瑟尔交界争议区。齐冯毕生多数时光栖居森林，离开故土后亦然。因此，他对森林茂密地区以外的地方很不适应，尤其是城市和洞穴。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"齐冯寡言少语，不喜健谈者的\"聒噪\"。",
+								"齐冯虽然本性善良，但戒备心重，难以结交朋友。",
+								"如多数地表精灵一样，齐冯极度憎恨卓尔，且对此族群的敌意永不妥协。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"复仇或将蚕食寻求复仇者，",
+								"但是，未经他人苦，莫劝他人善。",
+								"\u2014齐冯"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Kivan",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Kivan.webp"
+					},
+					"title": "齐冯"
+				}
+			]
+		},
+		{
+			"name": "蒙塔罗",
+			"source": "HoBG",
+			"entries": [
+				"这位可能是托瑞尔最卑劣的半身人\u2014\u2014蒙塔罗暴躁易怒、嗜血成性且冷酷无情。作为一名为散塔林会效力的战士兼游荡者，他将种族天赋的灵巧发挥得淋漓尽致。虽厌恶自己的搭档萨尔，但他更憎恶所谓的\"老好人\"。在蒙塔罗最深恶痛绝的敌人中，竖琴手探员位列前茅，他们时常阻碍散塔林会的阴谋。蒙塔罗对他的个人过往极度保密，若被问及，往往会作出极其激烈的反应。",
+				"驱策蒙塔罗的无非两件事：敛财与泄愤。他偏爱城市环境，因为那里充斥着易得手的猎物与无助的牺牲品；相对的，他痛恨荒野，每当冒险生活需要风餐露宿时必会抱怨\u2014\u2014而这种时候实在频繁。他对动物也毫无好感，除了肉质滋味外根本不在意它们的存在。",
+				"蒙塔罗是其种族中的极端异类。费伦的半身人素以友善著称，即便最不善交际者也多选择亲和而非对抗，更少显露轻蔑。半身人通常低调行事，悄然融入所处社会，其文化亦极度重视家族与社群。蒙塔罗却对多数同族深感厌恶，这种明显违背半身人特质的性情，或许正是驱使他加入散塔林会的原因。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"蒙塔罗行事毫不掩饰。若是足够厌恶某人，他会公然盘算是否要取其性命。",
+								"蒙塔罗公开唾弃善行与利他主义，仁慈之举令他恶心。",
+								"蒙塔罗从不敬重或赞美任何人。他所谓的\"正面肯定\"，就是暂且留你活命。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"老子的刀必须每天见血，",
+								"省的我脑袋生锈，变得和那些善心",
+								"蠢货一个德行！",
+								"\u2014蒙塔罗"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Montaron",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Montaron.webp"
+					},
+					"title": "蒙塔罗"
+				}
+			]
+		},
+		{
+			"name": "维康妮娅",
+			"source": "HoBG",
+			"entries": [
+				"维康妮娅·迪佛是一名侍奉黑暗与失落女神莎尔的流亡卓尔牧师。尽管已在表层世界生活数十年，她仍对大部分人类文化感到陌生。这种知识隔阂部分源于她的孤立\u2014\u2014强烈的反卓尔情绪迫使维康妮娅远离人口稠密地区以保全性命。然而，她最近在博德之门的冒险行为稍微缓解了这种危险，至少在偏见较轻的市民中如此。",
+				"维康妮娅曾长期被追猎，这使她极度多疑，甚至达到偏执程度。她曾是魔索布莱城 Menzoberranzan\u2014\u2014卓尔的伟大城市\u2014\u2014中罗丝的忠诚祭司。当维康妮娅与迪佛家族因拒绝献祭婴儿，因她认为此行为毫无意义，而首次失去蛛后恩宠时，为安抚罗丝，维康妮娅的母亲策划将自己女儿献祭。维康妮娅被忠心耿耿的兄长瓦拉斯解救，后者在过程中杀死她们的母亲。",
+				"为此罪行，瓦拉斯被转化为蛛化精灵\u2014\u2014一种可怕的类似半人马的生物，由卓尔躯干与巨型蜘蛛身体拼接而成。这些事件导致一度强盛的迪佛家族在大约一世纪前被杜垩登家族摧毁。",
+				"维康妮娅逃离魔索布莱城并很快彻底离开幽暗地域，以躲避罗丝爪牙的报复。被剥夺大部分施法能力后，她最终在崇拜莎尔\u2014\u2014一位古老的黑暗女神\u2014\u2014中找到慰藉与新力量。与罗丝相似，莎尔是重视力量与欺诈的残酷神祇，而维康妮娅也珍视这些特质。但与罗丝不同，莎尔不属于卓尔万神殿。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"尽管通常能保持流利，维康妮娅的通用语偶尔会掺杂卓尔方言。",
+								"在卓尔严苛的母系社会中度过大半生的经历，塑造了维康妮娅对男性的固有认知。",
+								"仁慈对维康妮娅而言是全然陌生的概念，唯有力量与权势才能赢得她的尊重。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"莎尔赋予我们信念与目标。",
+								"行于至暗影中，方承祂之伟力。",
+								"\u2014维康妮娅"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Viconia",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Viconia.webp"
+					},
+					"title": "维康妮娅"
+				}
+			]
+		},
+		{
+			"name": "萨尔",
+			"source": "HoBG",
+			"entries": [
+				"萨尔是个才华横溢的死灵法师，以其反复无常且常常古怪的行为而臭名昭著。尽管他确实患有心智失常，但他远比表现出的更清醒得多，不过是故意装疯卖傻好让他人低估自己。然而，几乎无法分辨哪些发作是伪装，哪些是疯癫的真实流露。当被问及过往时他闪烁其词，但这类询问并不会让他不安或激怒\u2014\u2014他只是转移话题。",
+				"萨尔与其半身人搭档蒙塔罗\u2014\u2014萨尔称他为\"蒙蒂\"\u2014\u2014皆为散塔林会特工，不久前奉上级之命来到剑湾地区。这对搭档被派往纳西凯调查矿场，因散塔林会与众多组织一样被指控引发钢铁危机。不过后来证实他们是被铁王座构陷的。",
+				"尽管本性混乱邪恶，萨尔却足够务实与狡诈，能在评估潜在盟友（或受害者）时表现得和蔼可亲。同样，他极度蔑视竖琴手，但除非个别竖琴手特工会干扰他的计划，否则他不会公开与之敌对。萨尔虽不主动挑衅，却总以致命武力支持蒙塔罗，而后者常会煽动暴力。",
+				"萨尔最显著的外貌特征是他脸上众多奇怪的刺青。这些刺青对散塔林会或死灵学派是否有意义尚不明确。这些标记可能毫无意义，但就萨尔而言，谁也不能确定。",
+				{
+					"type": "entries",
+					"name": "角色扮演要点",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"萨尔多数的日常言论听起来像胡言乱语，尽管它们可能带有隐晦的含义。",
+								"尽管看似彼此憎恶，蒙塔罗与萨尔形影不离。萨尔反对任何会导致他俩长期分离的计划或提议。",
+								"虽患有精神疾病，萨尔仍能保持优雅与圆滑。他可能邀你共进晚餐，并在谋杀你之前进行礼貌交谈。",
+								"萨尔在发出尤其荒谬的呓语中偶尔会切换到尖细的、孩子般的嗓音。"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"真高兴见到你，亲爱的。",
+								"请原谅这一地狼藉。",
+								"我不小心弄坏了我的小玩具，",
+								"而且还该死的拼不回去！",
+								"\u2014萨尔"
+							]
+						}
+					],
+					"ENG_name": "Roleplaying Tips"
+				}
+			],
+			"ENG_name": "Xzar",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Arts/Xzar.webp"
+					},
+					"title": "萨尔"
+				}
+			]
+		},
+		{
+			"name": "屠戮者",
+			"source": "HoBG",
+			"entries": [
+				"屠戮者是掌握相应仪式的巴尔之子可变化的形态。该恶魔形态近似谋杀之神巴尔穿行无底深渊与九狱时使用的某个化身。这是一种具有四臂的人形生物，带有恶魔特征，通过阴影移动并以突袭方式杀死受害者。",
+				"能够变身为屠戮者的巴尔之子每24小时可进行一次变身。巴尔之子必须至少有1点生命值才能进行转化。转化持续10轮，或直至巴尔之子生命值降至0点或死亡。巴尔之子的游戏数据，包括智力值、感知值、魅力值将被屠戮者的数据取代。巴尔之子保留其阵营与个性。",
+				"巴尔之子采用屠戮者形态的生命值。当其恢复常态时，生命值回归转化前的数值。若因生命值归零而解除形态，过量伤害会转移到其正常形态。只要过量伤害未使正常形态生命值归零，则不会陷入昏迷。",
+				"屠戮者仅考虑制造尽可能多的死亡。在此形态下，巴尔之子无法说话、施法或执行任何需要手部动作或语言的行为，彻底成为嗜血的恶魔。",
+				"巴尔之子的装备融入屠戮者形态。巴尔之子无法激活、使用、挥舞或以任何方式从其装备中获益。"
+			],
+			"ENG_name": "The Slayer"
+		},
+		{
+			"name": "士兵",
+			"source": "HoBG",
+			"entries": [
+				"士兵是受主权国家训练并武装的职业军人。"
+			],
+			"ENG_name": "Soldier"
+		},
+		{
+			"name": "队长",
+			"source": "HoBG",
+			"entries": [
+				"军队是统合士兵的组织，这群士兵需要一个指挥。一名队长必须能赢得部下的尊敬，同时具备身先士卒的战斗技艺。"
+			],
+			"ENG_name": "Captain"
+		},
+		{
+			"name": "仓鼠",
+			"source": "HoBG",
+			"entries": [
+				"仓鼠是一种小型驯化啮齿动物，剑湾各地的孩童常将其作为宠物饲养。关于仓鼠的棘手之处在于，其中一些实际上是迷你巨型太空仓鼠，唯有真正见多识广之人才能分辨其差异。",
+				{
+					"type": "inset",
+					"entries": [
+						"小布很失望你把他和普通的啮齿动物混为一谈。要当心！诚然所有仓鼠皆为正义阵营而战，但小布远不止表面上看上去那么简单。也许有一天，他会带我们去往他的母星。但现在，该是他小睡一会的时候了。"
+					]
+				}
 			],
 			"ENG_name": "Hamster"
 		}
