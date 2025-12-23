@@ -5288,7 +5288,7 @@
 											"type": "entries",
 											"name": "宝藏",
 											"entries": [
-												"箱子内共有22颗宝石，包括碧玉、月光石、玛瑙和橄榄石，每颗价值50 gp。衣柜是上锁的，需使用盗贼工具进行成功的{@{@dc 20}}敏捷检定才能将其打开，它也可以被武器直接砸开，衣柜里有一件精灵斗篷，而砸开衣柜有50%的概率将其摧毁。",
+												"箱子内共有22颗宝石，包括碧玉、月光石、玛瑙和橄榄石，每颗价值50 gp。衣柜是上锁的，需使用盗贼工具进行成功的{@dc 20}敏捷检定才能将其打开，它也可以被武器直接砸开，衣柜里有一件精灵斗篷，而砸开衣柜有50%的概率将其摧毁。",
 												{
 													"type": "inset",
 													"entries": [
@@ -7225,13 +7225,18 @@
 									"type": "entries",
 									"name": "Y11.盗贼公会",
 									"entries": [
-										"》》 乍看之下，眼前的建筑似乎是一排亟需修缮的独立民宅。然而仔细观察会发现这只是掩盖这座住宅区内异常庞大的建筑的伪装。可疑人物频繁通过其众多门廊进出流动，其中一些人警惕地打量着你们。",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"乍看之下，眼前的建筑似乎是一排亟需修缮的独立民宅。然而仔细观察会发现这只是掩盖这座住宅区内异常庞大的建筑的伪装。可疑人物频繁通过其众多门廊进出流动，其中一些人警惕地打量着你们。"
+											]
+										},
 										"博德之门盗贼公会总部设于城东一栋伪装成连排房屋的破败建筑内。四道入口各有一名{@creature 暴徒}把守。若发现队伍行踪，他们将要求提供口令。若答错口令则触发警报，强行闯入将遭全员敌对。",
 										"若以正确口令(\"fafhrd\")回应，那他们可以不经历冲突安然入内。",
 										"一旦进入公会，队伍可以与遇到的任何人交谈。",
 										{
 											"type": "entries",
-											"name": "著名",
+											"name": "著名NPC",
 											"entries": [
 												{
 													"type": "list",
@@ -7256,7 +7261,7 @@
 													],
 													"rows": [
 														[
-															"{@filter《玩家手册》中的所有工具|items|type=phb|type=工具}",
+															"《玩家手册》中的{@filter 所有工具|items|type=phb|type=工具}",
 															"见《玩家手册》"
 														],
 														[
@@ -9836,8 +9841,7 @@
 				"感知"
 			],
 			"ENG_name": "Skeleton Lord",
-			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluff": true
 		},
 		{
 			"name": "骷髅战士",
@@ -9951,8 +9955,7 @@
 				"MW"
 			],
 			"ENG_name": "Skeleton Warrior",
-			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluff": true
 		},
 		{
 			"name": "雄剑蛛",
@@ -10465,8 +10468,7 @@
 				"感知"
 			],
 			"ENG_name": "Wolfwere Alpha",
-			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluff": true
 		},
 		{
 			"name": "人狼",
@@ -10595,8 +10597,7 @@
 				"感知"
 			],
 			"ENG_name": "Wolfwere",
-			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluff": true
 		},
 		{
 			"name": "科朗",
@@ -11962,10 +11963,10 @@
 				"MLW",
 				"RNG"
 			],
-			"ENG_name": "Kagin",
+			"ENG_name": "Kagain",
 			"tokenHref": {
 				"type": "external",
-				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Kagin.webp"
+				"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/NPCs/Tokens/Kagain.webp"
 			},
 			"hasToken": true,
 			"hasFluff": true,
@@ -13092,17 +13093,7 @@
 					"ENG_name": ""
 				}
 			],
-			"ENG_name": "Skeleton Warrior",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Skeleton%20Warrior.webp"
-					},
-					"title": "骷髅战士"
-				}
-			]
+			"ENG_name": "Skeleton Warrior"
 		},
 		{
 			"name": "剑蜘蛛",
@@ -13201,17 +13192,7 @@
 					]
 				}
 			],
-			"ENG_name": "Wolfwere",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/tjliqy/homebrew-img/refs/heads/cn/img/HoBG/Creatures/Arts/Wolfwere.webp"
-					},
-					"title": "人狼"
-				}
-			]
+			"ENG_name": "Wolfwere"
 		},
 		{
 			"name": "人狼首领",
