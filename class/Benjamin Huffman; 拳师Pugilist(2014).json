@@ -1,0 +1,4237 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SterlingVermin",
+				"abbreviation": "SVM",
+				"full": "拳师职业",
+				"authors": [
+					"Benjamin Huffman"
+				],
+				"convertedBy": [
+					"MrVauxs",
+					"dmsguild",
+					"foreveryone",
+					"hakr14",
+					"riesun28"
+				],
+				"version": "4.0.0",
+				"url": "http://www.dmsguild.com/product/184921/the-Pugilist-Class",
+				"color": "cc6600"
+			},
+			{
+				"json": "SterlingVermin:Patreon",
+				"abbreviation": "SVMP",
+				"full": "Patreon拳师子职",
+				"authors": [
+					"Benjamin Huffman"
+				],
+				"convertedBy": [
+					"cam443",
+					"hakr14"
+				],
+				"version": "1.0.0",
+				"url": "https://www.patreon.com/m/272280/posts?filters[tag]=the%20Pugilist",
+				"color": "cc6600"
+			}
+		],
+		"dateAdded": 1516994880,
+		"dateLastModified": 1769500829,
+		"_dateLastModifiedHash": "a89fe549a7",
+		"edition": "classic"
+	},
+	"class": [
+		{
+			"ENG_name": "Pugilist",
+			"name": "拳师",
+			"source": "SterlingVermin",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"徒手格斗",
+						"锐气点"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							12
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"简易",
+					"临时武器",
+					"{@item 鞭子|phb}",
+					"{@item 手弩|phb}"
+				],
+				"tools": [
+					"你选择一种工匠工具、赌具或盗贼工具"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"deception",
+								"intimidation",
+								"perception",
+								"sleight of hand",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 皮甲|phb} 或 (b) 任意 {@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) 一个{@item 地城套组|phb}或(b) 一个{@item 探索套组|phb}",
+					"(a) 一套{@item 工匠工具|phb}或 (b) 一套{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}或 (c) {@item 盗贼工具|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"皮甲|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "简易武器"
+							}
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"a": [
+							"工匠工具|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "游戏设置"
+							}
+						],
+						"c": [
+							"盗贼工具|phb"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				"徒手格斗|拳师|SterlingVermin|1",
+				"铁下巴|拳师|SterlingVermin|1",
+				"锐气|拳师|SterlingVermin|2",
+				"街头智慧|拳师|SterlingVermin|2",
+				"浴血不屈|拳师|SterlingVermin|3",
+				{
+					"classFeature": "搏击俱乐部|拳师|SterlingVermin|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|拳师|SterlingVermin|4",
+				"深掘潜能|拳师|SterlingVermin|4",
+				"额外攻击|拳师|SterlingVermin|5",
+				"强力一击|拳师|SterlingVermin|5",
+				"锐燃铁拳|拳师|SterlingVermin|6",
+				{
+					"classFeature": "搏击俱乐部特性|拳师|SterlingVermin|6",
+					"gainSubclassFeature": true
+				},
+				"梦幻舞步|拳师|SterlingVermin|7",
+				"摆脱困境|拳师|SterlingVermin|7",
+				"属性值提升|拳师|SterlingVermin|8",
+				"倒而不溃|拳师|SterlingVermin|9",
+				"硬磕学堂|拳师|SterlingVermin|10",
+				{
+					"classFeature": "搏击俱乐部特性|拳师|SterlingVermin|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|拳师|SterlingVermin|12",
+				"煽众造势|拳师|SterlingVermin|13",
+				"不破|拳师|SterlingVermin|14",
+				"赫拉克勒斯神力|拳师|SterlingVermin|15",
+				"属性值提升|拳师|SterlingVermin|16",
+				{
+					"classFeature": "搏击俱乐部特性|拳师|SterlingVermin|17",
+					"gainSubclassFeature": true
+				},
+				"战意|拳师|SterlingVermin|18",
+				"属性值提升|拳师|SterlingVermin|19",
+				"体魄臻峰|拳师|SterlingVermin|20"
+			],
+			"multiclassing": {
+				"requirements": {
+					"str": 13,
+					"con": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"临时武器"
+					]
+				}
+			},
+			"subclassTitle": "搏击俱乐部",
+			"hasFluff": true,
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "徒手格斗伤害骰",
+					"configuration": {
+						"identifier": "fisticuffs",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"n": 1,
+								"die": 6
+							},
+							"5": {
+								"n": 1,
+								"die": 8
+							},
+							"11": {
+								"n": 1,
+								"die": 10
+							},
+							"17": {
+								"n": 1,
+								"die": 12
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "锐气点",
+					"configuration": {
+						"identifier": "moxie",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 2
+							},
+							"4": {
+								"value": 3
+							},
+							"6": {
+								"value": 4
+							},
+							"8": {
+								"value": 5
+							},
+							"10": {
+								"value": 6
+							},
+							"12": {
+								"value": 7
+							},
+							"14": {
+								"value": 8
+							},
+							"16": {
+								"value": 9
+							},
+							"18": {
+								"value": 10
+							},
+							"20": {
+								"value": 12
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "UN",
+			"source": "SterlingVermin",
+			"page": 0,
+			"entries": [
+				{
+					"ENG_name": "Unarmed",
+					"name": "徒手",
+					"type": "entries",
+					"entries": [
+						"当你进行徒手攻击时，你可以选择造成该武器的伤害而非正常的徒手攻击伤害。"
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Enchanted Inks (1st Level)",
+			"name": "附魔墨水（1环）",
+			"type": "P",
+			"rarity": "common",
+			"entries": [
+				"这套墨水可用于制作一个刺青，制作时会消耗墨水。当一个生物被附魔墨水刺青时，选择一项{@filter 法术|spells|level=1}。该法术的等级不能超过由附魔墨水稀有度决定的等级。",
+				"被刺青的生物可以施放该法术，使用刺青作为法器。体质是该法术的施法属性。使用刺青施放该法术后，该生物在完成一次长休前无法再次以这种方式施放该法术。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Enchanted Inks (2nd Level)",
+			"name": "附魔墨水（2环）",
+			"type": "P",
+			"rarity": "uncommon",
+			"entries": [
+				"这套墨水可用于制作一个刺青，制作时会消耗墨水。当一个生物被附魔墨水刺青时，选择一项{@filter 法术|spells|level=2}。该法术的等级不能超过2环。",
+				"被刺青的生物可以施放该法术，使用刺青作为法器。体质是该法术的施法属性。使用刺青施放该法术后，该生物在完成一次长休前无法再次以这种方式施放该法术。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Enchanted Inks (3rd Level)",
+			"name": "附魔墨水（3环）",
+			"type": "P",
+			"rarity": "rare",
+			"entries": [
+				"这套墨水可用于制作一个刺青，制作时会消耗墨水。当一个生物被附魔墨水刺青时，选择一项{@filter 法术|spells|level=3}。该法术的等级不能超过3环。",
+				"被刺青的生物可以施放该法术，使用刺青作为法器。体质是该法术的施法属性。使用刺青施放该法术后，该生物在完成一次长休前无法再次以这种方式施放该法术。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Enchanted Inks (4th Level)",
+			"name": "附魔墨水（4环）",
+			"type": "P",
+			"rarity": "very rare",
+			"entries": [
+				"这套墨水可用于制作一个刺青，制作时会消耗墨水。当一个生物被附魔墨水刺青时，选择一项{@filter 法术|spells|level=4}。该法术的等级不能超过4环。",
+				"被刺青的生物可以施放该法术，使用刺青作为法器。体质是该法术的施法属性。使用刺青施放该法术后，该生物在完成一次长休前无法再次以这种方式施放该法术。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Enchanted Inks (5th Level)",
+			"name": "附魔墨水（5环）",
+			"type": "P",
+			"rarity": "legendary",
+			"entries": [
+				"这套墨水可用于制作一个刺青，制作时会消耗墨水。当一个生物被附魔墨水刺青时，选择一项{@filter 法术|spells|level=5}。该法术的等级不能超过5环。",
+				"被刺青的生物可以施放该法术，使用刺青作为法器。体质是该法术的施法属性。使用刺青施放该法术后，该生物在完成一次长休前无法再次以这种方式施放该法术。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Bonebreakers",
+			"name": "碎骨者",
+			"type": "M",
+			"weaponCategory": "简易",
+			"rarity": "legendary",
+			"baseItem": "黄铜指虎|SterlingVermin",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"L",
+				"UN"
+			],
+			"reqAttune": "由拳师",
+			"entries": [
+				"这副黄铜指虎没啥特别的，虽说瞧着没人精心护着，却实打实被用得贼多。身上坑坑洼洼的全是磕碰印和划痕，还沾着些说不清的污渍。",
+				"你使用这把魔化武器进行攻击和伤害掷骰时获得+3加值。当你用这把武器命中一个生物时，你可以使用你的反应尝试致残它们。当你这样做时，该生物必须成功通过一次DC 16的体质豁免检定，否则会以你选择的以下方式之一被致残：",
+				{
+					"type": "list",
+					"items": [
+						"{@b {@i 破碎手臂。}} 该生物在武器攻击检定上具有劣势。",
+						"{@b {@i 破碎腿。}} 该生物的行进速度减半。",
+						"{@b {@i 肋骨断裂。}} 该生物在力量和敏捷属性检定及豁免检定上具有劣势。",
+						"{@b {@i 破碎骷髅。}} 针对该生物的攻击检定在判断结果是否为重击时视为高1点。"
+					]
+				},
+				"致残状态仅在生物接受过训练专家的急救处理并休息一个月或被{@spell 高等复原术}法术或相似魔法影响后才会结束。",
+				"在你使用此属性尝试致残一个生物后，你必须完成一次短休或长休才能再次使用它。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+3"
+		},
+		{
+			"ENG_name": "Bottle of Brew Tasting",
+			"name": "品酿之瓶",
+			"wondrous": true,
+			"rarity": "rare",
+			"entries": [
+				"这个魔法物品是一个带有空白标签的玻璃瓶。",
+				"当药水或其他液体倒入瓶子时，液体的内容和效应会以通用语出现在标签上。当瓶子清空内容物时，这些文字会消失。",
+				"如果这个瓶子破碎了，它将失去鉴定液体的能力，但会作为一把临时武器，在攻击检定和伤害掷骰上获得+2加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+2"
+		},
+		{
+			"ENG_name": "Club of Unconsciousness",
+			"name": "致昏短棒",
+			"type": "M",
+			"weaponCategory": "简易",
+			"baseItem": "短棒|phb",
+			"rarity": "rare",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"L"
+			],
+			"reqAttune": true,
+			"entries": [
+				"你使用这把魔化武器进行攻击和伤害掷骰时获得+1加值",
+				"此外，这根短棒有5充能。当你用此武器造成伤害时，你可以消耗一个或多个充能以尝试使该生物陷入{@condition 昏迷}。当你这样做时，掷{@dice 5d8}（+{@dice ((#$prompt_number:min=1,max=5,default=123$#)*2)d8|2d8}，每超出第一个消耗的充能）。如果该生物剩余的生命值等于或小于你掷骰的总和，该生物会忘记它在过去一分钟内看到和听到的一切，并陷入{@condition 昏迷}1小时或直到另一个人用一个动作摇晃或拍打睡眠者使其醒来。",
+				"致昏短棒每天拂晓时恢复{@dice 1d3 + 1}已消耗的充能。"
+			],
+			"source": "SterlingVermin",
+			"charges": 5,
+			"recharge": "拂晓",
+			"bonusWeapon": "+1",
+			"rechargeAmount": "{@dice 1d3 + 1}"
+		},
+		{
+			"ENG_name": "Coin of Easy Living",
+			"name": "舒逸之币",
+			"wondrous": true,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"entries": [
+				"这枚金币在平凡的感官下看起来完全正常，但当{@coinflip 翻转|舒逸之币|正面|正面}时，总是正面朝上。当你与该物品调谐时，你可以随意将其召唤到掌心。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Everfull Stein",
+			"name": "永满酒杯",
+			"wondrous": true,
+			"rarity": "uncommon",
+			"entries": [
+				"这个大型陶瓷酒杯装饰有矮人文符，顶部有一个可以用拇指拉杆打开的黄铜金属盖子。当盖子关闭且酒杯是空的时，主人只需说出他曾经喝过的非魔法麦芽酒、啤酒或蜂蜜酒名称，酒杯就会自动装满那种酒。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Leather Jerkin, +1",
+			"name": "短皮衣, +1",
+			"wondrous": true,
+			"rarity": "rare",
+			"entries": [
+				"当你未着甲并穿着这件衣物时，AC获得+1加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusAc": "+1"
+		},
+		{
+			"ENG_name": "Leather Jerkin, +2",
+			"name": "短皮衣, +2",
+			"wondrous": true,
+			"rarity": "very rare",
+			"entries": [
+				"当你未着甲并穿着这件衣物时，AC获得+2加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusAc": "+2"
+		},
+		{
+			"ENG_name": "Leather Jerkin, +3",
+			"name": "短皮衣, +3",
+			"wondrous": true,
+			"rarity": "legendary",
+			"entries": [
+				"当你未着甲并穿着这件衣物时，AC获得+3加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusAc": "+3"
+		},
+		{
+			"ENG_name": "Loaded Dice",
+			"name": "灌铅骰子",
+			"wondrous": true,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "拂晓",
+			"charges": 7,
+			"entries": [
+				"这套六面骰子看起来与平凡的骰子无异，但被赋予了好运的祝福。当你进行属性检定、攻击检定或豁免检定时，在DM宣布成功或失败之前，你可以消耗1次充能来重掷{@dice d20}。灌铅骰子最多可拥有7次充能，每周恢复{@dice 1d6+1}次充能。",
+				"此外，如果用于玩一个{@item 骰子组|phb|骰子游戏}，骰子的拥有者在决定游戏获胜者的任何属性检定上具有优势。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Mage Mashers",
+			"name": "魔法师粉碎者",
+			"type": "M",
+			"weaponCategory": "简易",
+			"baseItem": "黄铜指虎|SterlingVermin",
+			"rarity": "very rare",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"L",
+				"UN"
+			],
+			"reqAttune": true,
+			"entries": [
+				"这些黄铜指虎由一种暗黑色矿石锻造而成，在光线下会闪烁出棱镜般的色彩。它们比看起来要重，尤其是对能够施展法术的生物而言。",
+				"你用这把魔法武器进行攻击和伤害掷骰时获得+2加值。当你用此武器命中具有施法或契约魔法特质的生物时，该生物会受到额外{@dice 1d6}力场伤害。此外，任何生物因你用这些武器造成的伤害而进行专注法术的豁免检定时，该豁免检定具有劣势。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+2"
+		},
+		{
+			"ENG_name": "Medallion of Mettle",
+			"name": "毅勇之徽",
+			"wondrous": true,
+			"rarity": "rare",
+			"reqAttune": true,
+			"entries": [
+				"这个显眼的圆形坠饰会吸引路人的目光。每当你获得临时生命值时，你会额外获得{@dice 1d6}点临时生命值。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Mugfist Knuckles",
+			"name": "猛殴指虎",
+			"type": "M",
+			"baseItem": "黄铜指虎|SterlingVermin",
+			"weaponCategory": "简易",
+			"rarity": "uncommon",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"L",
+				"UN"
+			],
+			"reqAttune": true,
+			"entries": [
+				"这副铜指虎就镀了层便宜的假黄金，就算是最不留意的外行人也骗不过。",
+				"你使用这把魔化武器进行攻击和伤害掷骰时获得+1加值。当你用这把魔化武器攻击一个生物并掷出20时，{@dice 1d6}金币会掉落在该生物所在的空间地面上。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+1"
+		},
+		{
+			"ENG_name": "Poundwise Porter",
+			"name": "锤谙波特酒",
+			"type": "P",
+			"rarity": "very rare",
+			"entries": [
+				"这种药水十分浓稠且呈近乎黑色的深棕色。饮用此药水后一分钟内，你的徒手攻击伤害获得+3加值。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Prehensile Whip",
+			"name": "灵缠鞭",
+			"type": "M",
+			"weaponCategory": "军用",
+			"rarity": "rare",
+			"baseItem": "鞭子|phb",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"property": [
+				"F",
+				"R"
+			],
+			"reqAttune": true,
+			"entries": [
+				"当不使用时，这根鞭子看起来和其他鞭子无异，但当与其调谐的生物挥舞时，这件武器会以违背其魔法本质的目的性和灵活性移动。你用这件魔化武器进行攻击和伤害掷骰时获得+1加值。当你用这件武器命中一个生物或物件时，你可以使用你的反应以鞭子代替空手对其发动擒抱攻击。以此方式擒抱时，你的触及范围视为10尺。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+1"
+		},
+		{
+			"ENG_name": "Ramuh's Katar",
+			"name": "拉姆的卡塔拳刃",
+			"type": "M",
+			"weaponCategory": "简易",
+			"rarity": "very rare",
+			"dmg1": "1d4",
+			"baseItem": "卡塔拳刃|SterlingVermin",
+			"dmgType": "P",
+			"property": [
+				"L",
+				"UN"
+			],
+			"reqAttune": true,
+			"entries": [
+				"这把拳击匕首风格的武器由一整块超导的深紫色金属雕刻而成，并用黑色皮甲绑带固定在拳头和前臂上。",
+				"当你调谐并佩戴这件魔法武器时，你在先攻掷骰上具有优势且你的跳跃距离变为三倍。你用这件魔化武器进行攻击检定和伤害掷骰时获得+2加值。当你用这件魔化武器攻击一个生物并在攻击检定中掷出20时，该生物额外受到8点闪电伤害。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+2"
+		},
+		{
+			"ENG_name": "Ratbite",
+			"name": "鼠咬",
+			"type": "M",
+			"weaponCategory": "简易",
+			"rarity": "legendary",
+			"baseItem": "指虎刀|SterlingVermin",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"property": [
+				"L",
+				"UN"
+			],
+			"reqAttune": true,
+			"entries": [
+				"这些刺鼻的武器由来源可疑的皮革制成，上面还附着成簇的毛发。皮制握把紧密贴合指关节，老鼠牙齿和骨头碎片从朝外的侧面突出。它散发出令人不快的气味。",
+				"你使用这些魔法武器进行攻击和伤害掷骰时获得+3加值。当你与这些武器同调时，你对疾病免疫。任何生物受到此武器伤害时必须成功通过DC 11的体质豁免检定否则感染{@disease 下水道瘟疫}（详见地下城主指南第八章）。当你用此魔法武器攻击一个生物并掷出20时，他们将受到额外8点暗蚀伤害并在接下来一周内对抗疾病的豁免检定具有劣势。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+3",
+			"conditionImmune": [
+				"疾病"
+			]
+		},
+		{
+			"ENG_name": "Salamander Sauce",
+			"name": "火蜥蜴酱",
+			"type": "P",
+			"rarity": "uncommon",
+			"entries": [
+				"这瓶药水呈鲜红色，散发着辣椒和香料的气味。它通常在被消耗前淋在食物上，但也可以直接饮用。一小瓶火蜥蜴酱通常有两份剂量。",
+				"当你消耗这瓶药水时，你可以选择消耗多少剂量。如果你消耗一剂，你将获得8小时的寒冷伤害抗性。如果你消耗两剂，你将获得8小时的寒冷伤害免疫和火焰伤害易伤。对于你消耗的超过前两剂的每一剂，你必须成功通过一次体质豁免检定（DC 14）否则获得一级{@condition 力竭}。"
+			],
+			"source": "SterlingVermin",
+			"resist": [
+				"寒冷"
+			],
+			"immune": [
+				"寒冷",
+				"火焰"
+			]
+		},
+		{
+			"ENG_name": "Scyboo Snack",
+			"name": "赛布小食",
+			"type": "P",
+			"rarity": "uncommon",
+			"entries": [
+				"这药水必须被烘焙成饼干形态才能发挥其魔法效应。它的气味对类人生物来说有些不适，但对野兽却极具吸引力。当野兽食用由该药水制成的饼干时，其体型会增大一个类别（例如从中等变为大型）持续10分钟。当野兽体型增大时，它在力量检定和豁免检定上具有优势，并且其武器攻击会造成{@dice 1d4}额外伤害。"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Spiked Collar +1",
+			"name": "刺钉项圈 +1",
+			"wondrous": true,
+			"rarity": "uncommon",
+			"entries": [
+				"这个项圈有多种颜色和尺寸，所有款式都在项圈外侧突出金属长铁钉。一只野兽佩戴这件奇物时，在佩戴此项圈期间，其徒手打击攻击和伤害掷骰获得+1加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+1"
+		},
+		{
+			"ENG_name": "Spiked Collar +2",
+			"name": "刺钉项圈 +2",
+			"wondrous": true,
+			"rarity": "rare",
+			"entries": [
+				"这个项圈有多种颜色和尺寸，所有款式都在项圈外侧突出金属长铁钉。一只野兽佩戴这件奇物时，在佩戴这项圈期间获得+2加值于徒手打击攻击和伤害掷骰。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+2"
+		},
+		{
+			"ENG_name": "Spiked Collar +3",
+			"name": "刺钉项圈 +3",
+			"wondrous": true,
+			"rarity": "very rare",
+			"entries": [
+				"这个项圈有多种颜色和尺寸，所有项圈的外侧都突出着金属长铁钉。一只野兽佩戴这件奇物时，在佩戴这项圈期间，其徒手打击攻击和伤害掷骰获得+3加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+3"
+		},
+		{
+			"ENG_name": "Studded Collar +1",
+			"name": "饰钉项圈  +1",
+			"wondrous": true,
+			"rarity": "uncommon",
+			"entries": [
+				"这个项圈有多种颜色和尺寸，所有款式都在项圈外部装饰有水晶饰钉。一只野兽佩戴这件奇物时，在佩戴期间AC和豁免检定获得+1加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusAc": "+1",
+			"bonusSavingThrow": "+1"
+		},
+		{
+			"ENG_name": "Studded Collar +2",
+			"name": "饰钉项圈   +2",
+			"wondrous": true,
+			"rarity": "rare",
+			"entries": [
+				"这个项圈有多种颜色和尺寸，所有款式都在项圈外部装饰有水晶饰钉。一只野兽佩戴这件奇物时，在佩戴期间AC和豁免检定获得+2加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusAc": "+2",
+			"bonusSavingThrow": "+2"
+		},
+		{
+			"ENG_name": "Studded Collar +3",
+			"name": "饰钉项圈   +3",
+			"wondrous": true,
+			"rarity": "very rare",
+			"entries": [
+				"这个项圈有多种颜色和尺寸，所有款式都在项圈外部装饰有水晶饰钉。一只野兽佩戴这件奇物时，在佩戴期间AC和豁免检定获得+3加值。"
+			],
+			"source": "SterlingVermin",
+			"bonusAc": "+3",
+			"bonusSavingThrow": "+3"
+		},
+		{
+			"ENG_name": "Thunder Knuckles",
+			"name": "雷鸣指虎",
+			"type": "M",
+			"weaponCategory": "简易",
+			"rarity": "very rare",
+			"baseItem": "黄铜指虎|SterlingVermin",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"L",
+				"UN"
+			],
+			"reqAttune": true,
+			"entries": [
+				"这些黄铜指虎由蓝色钴环制成，带有银色的指节护板，形状如云层。一旦同调，云层会变暗并在佩戴者的指节上不断移动，偶尔会短暂发光，如同微型闪电束在云层中无害地闪烁。",
+				"你使用这把魔化武器进行攻击和伤害掷骰时获得+2加值。当你用这把魔化武器攻击一个生物并在攻击检定中掷出20时，该生物将受到额外的8点雷鸣伤害并被击{@condition 倒地}。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+2"
+		},
+		{
+			"ENG_name": "Whistle of Dog Calling",
+			"name": "唤犬之哨",
+			"wondrous": true,
+			"rarity": "rare",
+			"entries": [
+				"你可以用一个动作吹响这个不起眼的哨子，哨声对所有非犬类生物都不可闻。当你这样做时，施放{@spell 咒唤兽群}法术但只能选择召唤二只恐狼或八只狼。你不需要维持专注，但持续时间变为10分钟而非1小时。一旦使用，此魔法在次日拂晓前无法再次使用。"
+			],
+			"source": "SterlingVermin",
+			"attachedSpells": [
+				"咒唤兽群"
+			]
+		},
+		{
+			"ENG_name": "Winter's Bite",
+			"name": "凛冬之咬",
+			"type": "M",
+			"baseItem": "卡塔拳刃|SterlingVermin",
+			"weaponCategory": "简易",
+			"rarity": "uncommon",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"property": [
+				"L",
+				"UN"
+			],
+			"reqAttune": true,
+			"entries": [
+				"这副羊毛衬里的米白色皮甲手套触感冰冷，但穿戴时却很舒适。一旦与这件魔法物品建立联系，你可以让一根冰锥从手套上生长出来，使其像卡塔拳刃一样运作。或者，你可以从手套上发射冰锥，像手弩一样行动。在这两种情况下，这些武器造成寒冷伤害而非穿刺伤害。",
+				"你使用这把魔化武器进行攻击和伤害掷骰时获得+1加值。当你用这把魔化武器攻击一个生物并掷出20时，其速度减半直到它的下个回合结束。这不会影响免疫寒冷伤害的生物。"
+			],
+			"source": "SterlingVermin",
+			"bonusWeapon": "+1"
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Boxer",
+			"name": "拳击手",
+			"source": "SterlingVermin",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d8 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 18,
+			"int": 10,
+			"wis": 11,
+			"cha": 14,
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"拳击手可以进行四次徒手格斗攻击或两次徒手格斗攻击并摆起架势。"
+					]
+				},
+				{
+					"ENG_name": "Fisticuffs",
+					"name": "徒手格斗",
+					"entries": [
+						"{@atk mw} {@hit +8} 命中，触及5尺，单一目标。{@h}10（{@damage 1d10 + 5}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Brace Up",
+					"name": "摆起架势",
+					"entries": [
+						"打手获得14（{@dice 1d10 + 9}）临时生命值。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Cross Counter",
+					"name": "交叉反击",
+					"entries": [
+						"当被近战攻击命中时，拳击手可以使用这个反应来将受到的攻击伤害减少14（{@dice 1d10 + 9}）。如果这将攻击的伤害减少到0或更低，拳击手可以对发动攻击的生物进行一次徒手格斗攻击，前提是他们在范围内。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"ENG_name": "Brawler",
+			"name": "打手",
+			"source": "SterlingVermin",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 9,
+			"cha": 12,
+			"passive": 9,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Iron Chin",
+					"name": "铁下巴",
+					"entries": [
+						"当打手穿着轻型护甲或不穿护甲且不使用盾牌时，它使用其体质调整值代替敏捷调整值来确定其护甲等级。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"打手进行两次徒手格斗攻击或一次徒手格斗攻击并使用摆起架势。"
+					]
+				},
+				{
+					"ENG_name": "Fisticuffs",
+					"name": "徒手格斗",
+					"entries": [
+						"{@atk mw} {@hit +4} 命中，触及范围5尺，单一目标。{@h}5（{@damage 1d6 + 2}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Brace Up",
+					"name": "摆起架势",
+					"entries": [
+						"打手获得7（{@dice 1d6 + 4}）临时生命值。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"ENG_name": "Hound",
+			"name": "猎犬",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "SterlingVermin",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "12 + PB"
+				}
+			],
+			"hp": {
+				"special": "3 + 五倍你的拳师等级"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 13,
+			"passive": 13,
+			"page": 9,
+			"pbNote": "等于你的熟练加值",
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"理解你所说的语言"
+			],
+			"save": {
+				"str": "+4",
+				"dex": "+4",
+				"con": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"perception": "+3",
+				"survival": "+3"
+			},
+			"conditionImmune": [
+				"魅惑",
+				"恐慌"
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} {@hit PB x 2} 命中，触及5尺，单一目标。{@h} {@damage 2d4 +  PB} 穿刺伤害。如果目标是生物，它必须成功通过力量豁免检定（{@dc 8 + PB} x 2）否则被猎犬{@condition 受擒}或击倒{@condition 倒地}（由猎犬选择）。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"trait": [
+				{
+					"ENG_name": "Keen Hearing and Sight",
+					"name": "敏锐视听觉",
+					"entries": [
+						"猎犬在依赖听觉或预见的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"猎犬在攻击检定时具有优势，如果你在该生物5尺范围内且你未处于{@condition 失能}状态。"
+					]
+				},
+				{
+					"ENG_name": "Arcanine Bite",
+					"name": "风速啃咬",
+					"entries": [
+						"当你在此职业中达到6级时，猎犬的攻击在克服对非魔法攻击和伤害的抗性或免疫时视为魔法攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"敏锐感官",
+				"集群战术"
+			],
+			"token": {
+				"ENG_name": "Wolf",
+				"name": "狼",
+				"source": "MM"
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"ENG_name": "Wrestler",
+			"name": "摔跤手",
+			"source": "SterlingVermin",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 17,
+			"int": 12,
+			"wis": 11,
+			"cha": 13,
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"摔跤手可以进行三次徒手攻击和一次摔跤攻击，或者两次徒手攻击，摆起架势，再进行一次摔跤攻击。"
+					]
+				},
+				{
+					"ENG_name": "Fisticuffs",
+					"name": "徒手格斗",
+					"entries": [
+						"{@atk mw} {@hit +6} 命中，触及范围5尺，单一目标。{@h}8（{@damage 1d8 + 4}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Wrestling",
+					"name": "摔跤",
+					"entries": [
+						"{@atk mw} {@hit +6} 命中，触及5尺，单一目标。{@h}生物被{@condition 受擒}或击倒{@condition 倒地}，由摔跤手选择。"
+					]
+				},
+				{
+					"ENG_name": "Brace Up",
+					"name": "摆起架势",
+					"entries": [
+						"打手获得10（{@dice 1d8 + 6}）临时生命值。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Quick Pin",
+					"name": "快速压制",
+					"entries": [
+						"当一个生物引发摔跤手的借机攻击时，摔跤手可以使用其反应对该生物进行两次摔跤攻击。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Iron Chin",
+			"name": "铁下巴",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 1,
+			"entries": [
+				"从1级开始，当你穿着轻型护甲或不穿护甲且未持用{@item 盾牌|phb}时，你的AC等于12 + 你的体质调整值。"
+			]
+		},
+		{
+			"ENG_name": "Fisticuffs",
+			"name": "徒手格斗",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 1,
+			"entries": [
+				"在1级时，你在后巷和酒馆中的战斗经验使你精通使用徒手打击和拳师武器的战斗风格，这些武器包括无双手属性的简易近战武器、鞭子和临时武器。当你将武器作为拳师武器使用时，不能使用其灵巧属性。",
+				"当你徒手或仅使用拳师武器，且穿着轻型护甲或无护甲，并且不使用{@item 盾牌|PHB}时，获得以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"你可以掷一枚{@dice d6}来替代你徒手打击或拳师武器的正常伤害。这个骰子会随着你拳师等级的提高而变化，如拳师表格中的徒手格斗栏所示。",
+						"当你在你的回合使用{@action 攻击}动作进行徒手打击或使用拳师武器时，你可以进行一次徒手打击或{@action 擒抱}作为附赠动作。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Moxie",
+			"name": "锐气",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 2,
+			"entries": [
+				"从2级开始，你在战斗中痛击他人的经验赋予了你一种可以在战斗过程中引导的锐气。这种自信表现为一定数量的锐气点。你的拳师等级决定了你拥有的最大点数，如拳师表格中的锐气点列所示。",
+				"你可以消耗这些点数来为各种锐气特性提供燃料。你开始时知晓三个此类特性：摆起架势、传统两连击和缠打移步。随着你在该职业中提升等级，你将学会更多锐气特性。当你完成一次短休或长休时，你将恢复所有消耗的锐气点。",
+				{
+					"ENG_name": "Brace Up",
+					"name": "摆起架势",
+					"type": "entries",
+					"entries": [
+						"你可以使用一个附赠动作并消耗1点锐气来摆起架势以应对攻击。你获得等同于徒手格斗骰的掷骰结果+你的拳师等级+你的体质调整值的临时生命值。以此方式获得的剩余临时生命值将在1分钟后消失。"
+					]
+				},
+				{
+					"ENG_name": "The Old One-Two",
+					"name": "传统两连击",
+					"type": "entries",
+					"entries": [
+						"在你的回合中，当你使用{@action 攻击}动作后，你可以消耗1点锐气值以附赠动作进行两次徒手打击。"
+					]
+				},
+				{
+					"ENG_name": "Stick and Move",
+					"name": "缠打移步",
+					"type": "entries",
+					"entries": [
+						"你可以使用一个附赠动作并消耗1点锐气来尝试{@action 推撞}一个生物或执行{@action 疾走}动作。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Street Smart",
+			"name": "街头智慧",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 2,
+			"entries": [
+				"从2级开始，狂欢、打空拳和切磋对你来说都算作休息时的轻度活动。此外，一旦你在一个聚居地狂欢了8小时或更长时间，你就会像在那里土生土长一样了解该城市的所有公共地点，并且在该城市内不会被非魔法手段迷失方向。"
+			]
+		},
+		{
+			"ENG_name": "Bloodied but Unbowed",
+			"name": "浴血不屈",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"从3级开始，当你受到伤害导致生命值降至最大值的一半或更低时，你可以使用反应获得等于拳师等级三倍的临时生命值，并恢复所有消耗的锐气点。使用此特性后，直到完成一次短休或长休前，你无法再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Fight Club",
+			"name": "搏击俱乐部",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"从3级开始，你选择一个最能体现你风格的搏击俱乐部：戏擂斗尊、血嗅重拳、犬与猎、恐惧之手、尿与醋、拳台御域或甜蜜科学，所有这些都在职业描述的最后详细说明。你的搏击俱乐部会在3级、6级、11级和17级时赋予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 4,
+			"entries": [
+				"当你达到4级、8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Dig Deep",
+			"name": "深掘潜能",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 4,
+			"entries": [
+				"从4级开始，你会发现体内有一股无法被击垮的力量。以一个附赠动作，你获得对钝击、穿刺和挥砍伤害的抗性，持续1分钟。1分钟结束时，你获得一级{@condition 力竭}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 5,
+			"entries": [
+				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Haymaker",
+			"name": "强力一击",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 5,
+			"entries": [
+				"从5级开始，当你进行攻击时，你可以声明你正在挥出一记狂野强力一击。当你这样做时，你在攻击检定上具有劣势，并且如果你用拳师武器或徒手打击命中，你将造成武器伤害骰的最大结果而非掷骰。"
+			]
+		},
+		{
+			"ENG_name": "Moxie-Fueled Fists",
+			"name": "锐燃铁拳",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 6,
+			"entries": [
+				"从6级开始，你的徒手打击被视为具有魔法特性，用于克服对非魔法攻击和伤害的抗性与免疫。"
+			]
+		},
+		{
+			"ENG_name": "Fight Club feature",
+			"name": "搏击俱乐部特性",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的搏击俱乐部授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Fancy Footwork",
+			"name": "梦幻舞步",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得敏捷豁免的熟练。"
+			]
+		},
+		{
+			"ENG_name": "Shake it Off",
+			"name": "摆脱困境",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 7,
+			"entries": [
+				"第7级起，你可以用你的动作结束一个正影响你的{@condition 魅惑}或{@condition 恐慌}状态。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Down but Not Out",
+			"name": "倒而不溃",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 9,
+			"entries": [
+				"在9级时，当你使用浴血不屈特性时，你可以选择同时使用此特性。若你如此做，你在接下来1分钟内为徒手打击和拳师武器伤害添加熟练加值。一旦你使用此特性，直到完成一次长休前不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "School of Hard Knocks",
+			"name": "硬磕学堂",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 10,
+			"entries": [
+				"在10级时，你以优异成绩从硬磕学堂毕业，并且你大部分都打在它们的头部。你获得对心灵伤害的抗性，并且在对抗会使你陷入{@condition 震慑}或{@condition 昏迷}状态的效应时，豁免检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Fight Club feature",
+			"name": "搏击俱乐部特性",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 11,
+			"entries": [
+				"在11级时，你获得由你的搏击俱乐部授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将一个自选的属性值提升2点，或者将两个自选的属性值各提升1点。正常来说，你不能通过此特性将属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Rabble Rouser",
+			"name": "煽众造势",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 13,
+			"entries": [
+				"从13级开始，你的事迹在城市和其他聚居地中迅速传播。一旦你在聚居地通过狂欢完成长休，你对当地居民的所有魅力（{@skill 游说}）和魅力（{@skill 威吓}）检定获得优势。"
+			]
+		},
+		{
+			"ENG_name": "Unbreakable",
+			"name": "不破",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 14,
+			"entries": [
+				"从14级开始，你在力量、敏捷和体质豁免检定上获得优势。此外，每当你进行豁免检定并失败时，你可以消耗1点锐气来重掷并采用第二次结果。"
+			]
+		},
+		{
+			"ENG_name": "Herculean",
+			"name": "赫拉克勒斯神力",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 15,
+			"entries": [
+				"在15级时，你的载重翻倍，并且当你用近战武器或徒手打击对无生命物件造成伤害时，该伤害翻倍。你的立定跳跃距离与助跑跳跃距离相同。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将一个自选的属性值提升2点，或者将两个自选的属性值各提升1点。正常来说，你不能通过此特性将属性值提升至20以上。",
+				"若你的DM允许使用专长，你可以替代选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Fight Club feature",
+			"name": "搏击俱乐部特性",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 17,
+			"entries": [
+				"在17级时，你获得由你的搏击俱乐部授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Spirit",
+			"name": "战意",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 18,
+			"entries": [
+				"18级起，当你生命值降至0时，你可以引导战意。当你这样做时，你恢复一半的最大生命值，一半的最大锐气点，并且在接下来的10分钟内不会受到你所拥有的任何{@condition 力竭}等级的影响。在那10分钟结束时，你将获得一个{@condition 力竭}等级。",
+				"必须完成一次长休才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将一个自选的属性值提升2点，或者将两个自选的属性值各提升1点。正常情况下，你无法通过此特性将属性值提升至20以上。",
+				"若你的DM允许使用专长，你可以替代选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Peak Physical Condition",
+			"name": "体魄臻峰",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 20,
+			"entries": [
+				"在20级时，你的力量和体质属性值各增加2点，最高不超过22点。此外，当你进行长休时，你恢复2层{@condition 力竭}状态而非1层，并且你恢复所有消耗的生命骰而非仅一半。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Arena Royale",
+			"name": "戏擂斗尊",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"戏擂斗尊搏击俱乐部的拳师们周游世界，他们既是演艺者也是角斗士，并以此谋生。无论是在编排好的体能竞技赛中登台献技，还是在无剧本的近身混战中拼杀到底，这社的拳师对格斗的舞台表现力，向来与对胜负结果同等看重。此外，该俱乐部的拳师还极度珍视自身的名声，会拼尽全力打造自己的人设，在乡野坊间与各片地域打造口耳相传的传奇佳话。（译者注：WWE你懂吗？约翰·塞纳你懂吗？）",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练项|拳师|SterlingVermin|戏擂斗尊|SterlingVermin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "自在人格|拳师|SterlingVermin|戏擂斗尊|SterlingVermin|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiency",
+			"name": "附赠熟练项",
+			"entries": [
+				"从你在3级选择这个搏击俱乐部时开始，你获得{@skill 表演}技能的熟练项，如果你还没有的话。如果你已经有了，你可以选择获得{@skill 威吓}或{@skill 游说}技能的熟练项。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Persona Libre",
+			"name": "自在人格",
+			"entries": [
+				"同样在3级时，你可以创建一个可随时通过附赠动作采用或抛弃的替代人格。当你创建替代人格时，你应当为其赋予一个引人注目的名称以及某种物理标志（例如面具、彩色斗篷或其他突出的独特特性）。除非你告知一个生物，或者该生物看到你采用该人格，否则他们不会知道你与被采用的人格是同一个人。",
+				"此外，你有一个等于3+你的魅力调整值（最低3点）的人物点池。当你使用一个消耗锐气点的能力时，你可以改为消耗人物点。此外，在你进行一次魅力属性检定前，你可以消耗一个人物点来将你的力量调整值添加到结果中。你只能在采用人物时使用人物点。当你完成一次长休后，你将恢复所有消耗的人物点。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Work the Crowd",
+			"name": "拢众控场",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，当你采用你的替身人格时，你可以用一个动作激励你选择的恐惧或崇拜给附近的生物。当你这样做时，你选择的30尺内能看见你的生物必须成功通过一个感知豁免检定（DC=8+你的熟练加值+你的力量调整值），否则如果你选择崇拜则陷入{@condition 魅惑}状态，如果你选择恐惧则陷入{@condition 恐慌}状态。此效应持续1分钟。每当一个生物受到你或你盟友的伤害时，它可以重复豁免检定，成功则终止效应。",
+				"你必须完成一次长休或短休后才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "High Flyer",
+			"name": "腾空飞步",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，你的基础步行速度增加10尺，跳跃距离翻倍，并且你可以在每个回合使用一个附赠动作来执行{@action 疾走}动作。"
+			]
+		},
+		{
+			"ENG_name": "Signature Move",
+			"name": "招牌移动",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你可以创建一个招牌移动，在你采用替代人格时使用。给你的招牌移动起一个名称和描述。你可以在你的回合中用这个招牌移动替换一次攻击。",
+				"当你使用招牌移动时，你可以朝任意方向跳跃至多你的移动力距离，对触及范围内的一个生物进行一次具有优势的攻击检定。命中时，该攻击将造成重击并使该生物陷入{@condition 震慑}状态直到你的下个回合结束。",
+				"如果你用招牌移动命中，你必须完成一次长休才能再次使用它。如果你用招牌移动未命中，你在1分钟后可以重新使用它。"
+			]
+		},
+		{
+			"ENG_name": "Bloodhound Bruisers",
+			"name": "血嗅重拳",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "血嗅重拳",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"血嗅重拳搏击俱乐部的拳师们向来以爱挑事、且每次都能如愿惹上麻烦而声名狼藉。该搏击俱乐部的成员对人的脾气秉性以及各类物证具有极强的观察力，并能与他们所居住的城市形成近乎超然的联系。绝大多数人会凭借这些能力，成为守护城市底层民众的都市卫士；但也有一部分人，会将自身本领为那些不入流的地下势力所用。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "永远警觉|拳师|SterlingVermin|血嗅重拳|SterlingVermin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "侦查工作|拳师|SterlingVermin|血嗅重拳|SterlingVermin|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ever Vigilant",
+			"name": "永远警觉",
+			"entries": [
+				"同样从3级开始，你在先攻检定上具有优势。在战斗的第一轮，你对尚未行动的生物的攻击检定具有优势。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "血嗅重拳",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Detective Work",
+			"name": "侦查工作",
+			"entries": [
+				"当你在3级选择这个搏击俱乐部时，你获得以下两项自选技能的熟练项：{@skill 洞悉}、{@skill 调查}或{@skill 察觉}。此外，当你进行智力（{@skill 调查}）、感知（{@skill 洞悉}）或感知（{@skill 察觉}）检定时，你可以消耗1点锐气来获得该检定的优势。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "血嗅重拳",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Scrap Like a Sleuth",
+			"name": "侦隙破敌",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "血嗅重拳",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你可以使用一个附赠动作并消耗2点锐气点来锁定一个你能看见的30尺内敌人的特质和坏习惯。当你这样做时，你对那个生物进行的武器攻击具有优势，并且你对该生物的攻击进行的AC检定添加你的熟练加值。这些效应持续1分钟或直到你再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Heart of the City",
+			"name": "城市之心",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "血嗅重拳",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，当你在一个聚居地长休时，你可以选择熟悉该聚居地。当你再次使用此特性时，你会用当前的聚居地替换之前熟悉的聚居地。当你在熟悉的聚居地时，你获得以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"你无法被突袭，并且你可以将熟练加值添加到先攻上。",
+						"你拥有120尺范围的黑暗视觉。",
+						"当你使用洞悉、调查或察觉技能进行属性检定并添加熟练加值时，改为添加两倍熟练加值。",
+						"你无论如何都不会迷失。",
+						"当你不在战斗中时，你可以用两倍的正常速度在聚居地内的任意两点间快速旅行。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Eyes Wide Open",
+			"name": "睁目察敌",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "血嗅重拳",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你可以使用一个附赠动作并消耗1点锐气来开放你的感官以感知周边环境，持续1分钟。在此期间，你在对抗{@condition 目盲}或{@condition 耳聋}的豁免检定上具有优势，并获得30尺范围内的真实视觉。"
+			]
+		},
+		{
+			"ENG_name": "Dog & Hound",
+			"name": "犬与猎",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "犬与猎",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"你从未拥有过一位值得托付的两脚朋友，所幸，你觅得了世间最称心的四足挚友 \u2014\u2014 这是旁人求之不得的陪伴。犬与猎搏击俱乐部的拳师们，对自己的犬伴倾尽赤诚，而犬伴也以全然的忠心相报，这份忠诚，从来都是双向的。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "斗者挚友|拳师|SterlingVermin|犬与猎|SterlingVermin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "野犬携锐|拳师|SterlingVermin|犬与猎|SterlingVermin|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Brawler's Best Friend",
+			"name": "斗者挚友",
+			"entries": [
+				"从你在3级选择这个搏击俱乐部开始，你将获得一只猎犬陪伴你冒险并与你并肩作战。它对你和你的同伴都很友好，并服从你的命令。其游戏数据见猎犬资料卡，该资料卡在多处使用你的熟练加值（PB）。你可以决定你的猎犬是什么品种的狗或相似的犬类生物；你的选择不会影响其游戏数据。",
+				"在战斗中，猎犬共享你的先攻值，但它在你的回合后立即行动。它可以自行移动和使用反应，但在它的回合中唯一能执行的动作是{@action 回避}动作，除非你在你的回合中使用一个附赠动作命令它执行另一个动作。该动作可以是其资料卡中的一个动作或其他动作。如果你处于失能状态，猎犬可以选择执行任何动作，而不仅仅是{@action 回避}。",
+				"如果你花费1分钟给予你的猎犬关注和零食，它将恢复2d6生命值。如果你的猎犬在过去1小时内死亡，你可以通过赞美和宠物将它从死亡边缘唤回。你可以使用一个动作接触猎犬并消耗等同于你拳师等级一半数值的生命骰来复活它，前提是你必须在它5尺范围内。1分钟后猎犬将以全部生命值复活。如果你的猎犬死亡或因其他原因无法使用，你可以花费8小时与一只狗建立牵挂成为你的新猎犬，这将终结你与前一只的联系。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "犬与猎",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Mutt With Moxie",
+			"name": "野犬携锐",
+			"entries": [
+				"在3级时，你与你的忠犬分享一切：食物、住所，甚至是锐气。当你使用某些锐气属性时，你的猎犬也会获得增益。",
+				{
+					"ENG_name": "Brace Up",
+					"name": "摆起架势",
+					"type": "entries",
+					"entries": [
+						"当你因使用摆起架势锐气属性而获得临时生命值时，你的猎犬也会获得相同数值的临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "The Old One-Two",
+					"name": "传统两连击",
+					"type": "entries",
+					"entries": [
+						"当你使用你的传统两连击锐气属性时，你的猎犬可以代替你进行一次或两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Stick and Move",
+					"name": "缠打移步",
+					"type": "entries",
+					"entries": [
+						"当你使用你的缠打移步锐气属性时，你的猎犬可以采取{@action 疾走}动作。"
+					]
+				}
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "犬与猎",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Coordinated Attack",
+			"name": "协同攻击",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "犬与猎",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你和你的犬类同伴形成更强大的战斗团队。当你在你的回合使用攻击动作时，如果你的猎犬能看见你，它可以用它的反应进行一次啃咬攻击。"
+			]
+		},
+		{
+			"ENG_name": "Hound's Best Friend",
+			"name": "猎犬挚友",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "犬与猎",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当一个生物用攻击对你的猎犬造成伤害时，你可以使用你的反应对该生物进行一次借机攻击，前提是你处于攻击范围内。"
+			]
+		},
+		{
+			"ENG_name": "Off the Chain",
+			"name": "脱缰暴走",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "犬与猎",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你的猎犬精魄和你一样不破。当你的猎犬受到伤害使其当前生命值降至最大生命值的一半或更低时，你可以使用反应让你的猎犬脱缰暴走。当你这样做时，它立即获得相当于你拳师等级四倍的临时生命值，并且在接下来的1分钟内，它的速度增加15尺，并且在你没有对它使用命令术的每个回合，它可以进行啃咬或{@action 回避}动作（由你选择）。一旦你使用了这个特性，直到完成一次长休前你都不能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Hand of Dread",
+			"name": "恐惧之手",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "恐惧之手",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"在你人生的至暗时刻，你曾苦苦祈求一股力量，能让你从这世间夺尽心中所欲 \u2014\u2014于是一股恐惧之力注意到了你。起初，你或许还沉醉于那份宣泄式的极致快意：催动这股恐惧之力，将自认为本就该属于你的一切尽数攫取，这份酣畅曾让你沉沦。可这份契约，从来都带着挣脱不开的枷锁。每当你陷入困顿窘迫、心绪纷乱之际，那股神秘存在便会在你脑海深处低语蛊惑，一味怂恿你肆意纵容自己最粗野的原始本能。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "黑暗魔法|拳师|SterlingVermin|恐惧之手|SterlingVermin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "恐惧之手|拳师|SterlingVermin|恐惧之手|SterlingVermin|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Black Magic",
+			"name": "黑暗魔法",
+			"entries": [
+				"当你在3级选择这个搏击俱乐部时，你将学会戏法{@spell 魔能爆}和{@spell 魔法伎俩}。体质是你施放这些法术的施法调整值，因为当你施放它们时，你是通过身体引导恐惧之力的魔法。",
+				"此外，你学会说、读和写以下一种你选择的语言：{@language 深渊语}、{@language 炼狱语}或{@language 木族语}。在DM的裁量下，你可以选择另一种更适合你恐惧之力的语言。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "恐惧之手",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Dread Hand",
+			"name": "恐惧之手",
+			"entries": [
+				"同样在3级时，你可以在你的回合使用一个附赠动作来显现你污秽誓约的证据。当你这样做时，你的一个肢体（通常是手臂）会变形为一种可怖的外貌，让人联想到你的恐惧法力，持续1分钟，并赋予你以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"当你为你进行的徒手打击攻击掷出伤害骰为1时，你可以重掷该骰子且必须使用新的结果，即使新的结果是1。",
+						"你在每个回合中第一次徒手打击攻击未命中时，可以作为同一动作的一部分进行一次额外的徒手打击攻击。",
+						"在你的回合中执行攻击动作后，你可以立即花费2点锐气点以附赠动作进行三次徒手打击。"
+					]
+				},
+				"你必须完成一次短休或长休后才能再次使用此特性",
+				{
+					"ENG_name": "Dread Powers",
+					"name": "恐惧之力",
+					"type": "inset",
+					"entries": [
+						"恐惧之力可以是任何能够将其部分力量赐予凡人的强大恶意实体。大恶魔、皇族妖精、远古巫妖以及超越时空的难以理解的智慧存在都是可能的选择"
+					]
+				}
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "恐惧之手",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Deal with the Devil",
+			"name": "与魔鬼交易",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "恐惧之手",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你可以从魔契师职业可用的魔能祈唤中选择两个{@filter 魔能祈唤|optionalfeatures|feature type=ei}。你在此职业中每提升两个等级，为满足魔能祈唤先决条件的目的，你将被视为拥有一个魔契师等级。对于你通过这些魔能祈唤获得的任何法术，体质是你的施法属性，并且任何以这种方式获得的魔能祈唤若提及你的魅力调整值，则将改为使用你的力量调整值。",
+				"当你在此职业升级时，你可以选择一项已知的祈唤并将其替换为另一个满足先决条件的祈唤。"
+			]
+		},
+		{
+			"ENG_name": "Grotesque Growth",
+			"name": "繁花滋长",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "恐惧之手",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你使用恐惧之手特性时，你可以选择变形成一个高耸的畸形形态，持续1分钟。当你这样做时，你的体型增大一级\u2014\u2014例如从中等变为大型。如果没有足够的空间让你增长到该体型，你将增长到空间允许的最大可能体型。当你以这种方式变巨时，你在力量检定和力量豁免上具有优势，你的触及范围变为10尺，并且你的近战武器攻击造成{@dice 1d4}额外伤害。当1分钟结束时，你承受一级{@condition 力竭}。"
+			]
+		},
+		{
+			"ENG_name": "Fountain of Viscera",
+			"name": "脏腑泉涌",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "恐惧之手",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你可以使用一个动作并消耗6点锐气点来尝试处决一个你选择的触及范围内的生物，方法是将你的手魔法般地钻入其身体并取出其内脏。该生物必须进行一次敏捷豁免检定（DC等于8 + 你的熟练加值 + 你的力量调整值）。若失败，该生物受到100点穿刺伤害。若成功，该生物改为受到50点穿刺伤害。",
+				"如果此伤害将目标的生命值降至0或更低，它会立即死亡，因为你撕开了一个洞，形成了一个令人作呕的脏腑泉涌。当这种情况发生时，每个在你30尺内能看见你的生物必须成功通过一个感知豁免检定（DC等于8 + 你的熟练加值 + 你的力量调整值），否则会对你处于{@condition 恐慌}状态1分钟。未能通过豁免检定的生物可以在每个回合结束时再次进行感知豁免检定，成功则提前结束{@condition 恐慌}状态。",
+				"一旦你使用了这个特性，你必须完成一次长休后才能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Piss & Vinegar",
+			"name": "尿与醋",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "尿与醋",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"尿与醋搏击俱乐部的拳师们以恶名昭彰为乐。他们因下流的诅咒和卑鄙手段而广受鄙视，这些拳师以挑衅和不顾一切代价取胜的能力为傲。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练项|拳师|SterlingVermin|尿与醋|SterlingVermin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "咸嘲致意|拳师|SterlingVermin|尿与醋|SterlingVermin|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiency",
+			"name": "附赠熟练项",
+			"entries": [
+				"当你在3级选择这个搏击俱乐部时，如果你尚未拥有{@skill 威吓}技能熟练项，则获得该熟练项。如果已有，则可以选择获得{@skill 欺瞒}或{@skill 巧手}技能的熟练项。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "尿与醋",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1,
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			]
+		},
+		{
+			"ENG_name": "Salty Salute",
+			"name": "咸嘲致意",
+			"entries": [
+				"同样在3级时，你已精通激怒侮辱的艺术。你可以在你的回合使用一个附赠动作来激怒60尺内能看见或听见你的一个生物。该生物必须进行一次感知豁免检定。若失败，该生物受到等同于你徒手攻击伤害骰的掷骰结果加上你的魅力调整值的心灵伤害，并在你下一回合开始前对你以外的目标进行的任何攻击检定中具有劣势。对于任何需要对手进行豁免检定的你的尿与醋特性，豁免DC计算如下：",
+				{
+					"ENG_name": "Piss & Vinegar",
+					"name": "尿与醋",
+					"type": "abilityDc",
+					"attributes": [
+						"cha"
+					]
+				}
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "尿与醋",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Dirty Tricks",
+			"name": "卑鄙手段",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "尿与醋",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你袖中藏有几招卑鄙手段，能在局势艰难时扭转局面。你可以使用每种卑鄙手段一次，并在完成短休或长休后恢复使用次数。",
+				{
+					"ENG_name": "Heelstomper",
+					"name": "猛踩鞋跟",
+					"type": "entries",
+					"entries": [
+						"当你用徒手打击造成伤害时，你可以尝试使被你命中的生物陷入缓慢术。该生物必须进行一次敏捷豁免检定。若失败，你恢复1点已消耗的锐气点，且该生物的移动速度减半，持续1分钟。"
+					]
+				},
+				{
+					"ENG_name": "Low Blow",
+					"name": "狠袭下路",
+					"type": "entries",
+					"entries": [
+						"当你用徒手打击造成伤害时，你可以选择狠袭下路。该生物必须进行一次力量豁免检定。若失败，你恢复1点消耗的锐气值且该生物被击{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Pocket Sand",
+					"name": "口袋藏沙",
+					"type": "entries",
+					"entries": [
+						"你可以使用一个附赠动作尝试使5尺内的一个生物目盲。该生物必须进行一次体质豁免检定。若失败，你恢复1点消耗的锐气点且该生物陷入{@condition 目盲}状态直到其下个回合结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mean Old Cuss",
+			"name": "老辣狠茬",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "尿与醋",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，你的威胁和恶意的唬人把戏更具威力。当你进行魅力（{@skill 威吓}）检定时，你可以使用你的反应并消耗1点锐气来使该掷骰获得优势。当一个生物对抗你的尿与醋特性进行豁免检定时，你可以使用你的反应并消耗1点锐气来使该掷骰获得劣势。"
+			]
+		},
+		{
+			"ENG_name": "The Uncouth Art",
+			"name": "粗俗艺术",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "尿与醋",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你获得以最小努力冒犯房间内每个生物的能力。当你使用咸嘲致意特性时，可以选择以该职业等级为上限，目标改为60尺内能看见或听见你的若干生物，而非单一目标。每个以此方式指定的生物在你下个回合开始前首次用攻击命中你时，你恢复1点消耗的锐气点。",
+				"必须完成一次长休才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "The Sweet Science",
+			"name": "甜蜜科学",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "甜蜜科学",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"练习甜蜜科学的拳师命中困难、快速且频繁。这种风格有时被为上层阶级娱乐而战的战士使用，但同样经常在后巷和酒吧中由那些下一口气取决于击倒的人练习。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "赤手拳手|拳师|SterlingVermin|甜蜜科学|SterlingVermin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "交叉反击|拳师|SterlingVermin|甜蜜科学|SterlingVermin|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bare Knuckle Boxer",
+			"name": "赤手拳手",
+			"entries": [
+				"从你在3级选择这个搏击俱乐部开始，你的徒手打击在d20掷出19或20时会造成重击。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "甜蜜科学",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Cross Counter",
+			"name": "交叉反击",
+			"entries": [
+				"同样从3级开始，你可以格挡攻击的主要力量并以同样流畅的动作发动自己的攻击。你可以使用你的反应并消耗2点锐气点来减少对你发动的近战武器攻击的伤害，减少量为{@dice 1d10} + 你的力量调整值 + 你的拳师等级。",
+				"如果你将伤害降低至0，你可以作为同一反应的一部分，对范围内的生物进行一次徒手打击或拳师武器攻击。"
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "甜蜜科学",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "One, Two, Three, Floor",
+			"name": "一、二、三、倒地",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "甜蜜科学",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你使用附赠动作施展传统两连击并用两次攻击命中同一生物时，你可以立即消耗1点锐气值作为该附赠动作的一部分进行一次额外的徒手打击攻击。如果命中，除了正常徒手打击造成的伤害外，该生物还会陷入{@condition 倒地}状态。"
+			]
+		},
+		{
+			"ENG_name": "Float Like a Butterfly, Sting Like a Bee",
+			"name": "蝶舞蜂刺",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "甜蜜科学",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你使用交叉反击特性将攻击伤害缩小至0并成功命中一个敌人生物时，你恢复1点消耗的锐气点。"
+			]
+		},
+		{
+			"ENG_name": "Knock Out",
+			"name": "击昏",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "甜蜜科学",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，当你用徒手打击或拳师武器命中时，你可以消耗1点或更多锐气点来尝试击昏对手而非造成伤害。掷{@dice 3d12}，每额外消耗1点锐气点再掷{@dice 2d12}，并将你的拳师等级加到结果上。如果总数等于或大于该生物的剩余生命值，则其生命值降至0。"
+			]
+		},
+		{
+			"ENG_name": "The Squared Circle",
+			"name": "拳台御域",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "拳台",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"entries": [
+				"在拳台御域战斗的拳师们知道，你不必将对手打昏也能让他们屈服。当然，拳台的成员们确实会把对手打昏，他们只是知道不必如此。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "地面技|拳师|SterlingVermin|拳台|SterlingVermin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "虬肌盈身|拳师|SterlingVermin|拳台|SterlingVermin|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Groundwork",
+			"name": "地面技",
+			"entries": [
+				"从3级选择此搏击俱乐部时开始，你获得以下额外的锐气特性。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Compression Lock",
+							"name": "压劲锁技",
+							"type": "entries",
+							"entries": [
+								"当一个生物尝试{@action 逃脱擒抱|phb|挣脱你的擒抱}并成功时，你可以使用你的反应并消耗1点锐气来迫使该生物重新掷骰。该生物必须使用第二结果。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Quick Pin",
+							"name": "快速压制",
+							"type": "entries",
+							"entries": [
+								"当一个敌对生物的移动力引发你的借机攻击时，你可以使用你的反应并消耗1点锐气来尝试{@action 擒抱}该生物，而非进行一次借机攻击。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "To the Mat",
+							"name": "缠战至地",
+							"type": "entries",
+							"entries": [
+								"你可以使用一个附赠动作并消耗1点锐气，进行一次力量（{@skill 运动}）检定，DC等于你5尺内一个生物的AC。检定成功时，你擒抱该生物并将其击倒{@condition 倒地}。"
+							]
+						}
+					]
+				}
+			],
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "拳台",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Muscle Mass",
+			"name": "虬肌盈身",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "拳台",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在3级时，如果你尚未获得{@skill 运动}的熟练，你将获得它。如果你已经拥有{@skill 运动}的熟练，则在使用该熟练进行任何属性检定时，你的熟练加值将翻倍。"
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true
+				}
+			]
+		},
+		{
+			"ENG_name": "Meat Shield",
+			"name": "肉盾",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "拳台",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，当你{@condition 受擒}一个敌人生物时，你获得半身掩护对抗所有非你擒抱的生物对你发动的攻击。当一个非你擒抱的生物用武器攻击未命中你时，你可以使用你的反应并消耗1点锐气，使该生物对你擒抱的一个敌人生物用新的掷骰发动相同的攻击。"
+			]
+		},
+		{
+			"ENG_name": "Heavyweight",
+			"name": "重量级",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "拳台",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的体型在擒抱时视为比实际大一级。此外，当你拖拽或携带一个与你体型相同或更小的{@condition 受擒}生物时，你可以以全速移动。"
+			]
+		},
+		{
+			"ENG_name": "Clean Finish",
+			"name": "利落终结",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "拳台",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，你的擒抱精通达到巅峰。当你使一个生物处于{@condition 受擒}状态时，你对它的所有攻击具有优势。此外，当你对处于{@condition 受擒}状态的生物进行徒手打击或拳师武器攻击时，你在掷骰19或20时造成重击。"
+			]
+		},
+		{
+			"ENG_name": "Whiskey Fist",
+			"name": "威士忌之拳",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "威士忌之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"entries": [
+				"威士忌之拳搏击俱乐部的拳击手们是这片大陆上所有酒馆老板们的噩梦。威士忌之拳的拳击手最喜欢的就是喝上几杯，然后与任何敢对他侧目的人大打出手。即使在探索古代遗迹或穿越荒野时，这些拳击手也总是随身携带几瓶酒\"以防万一\"。（译者注：俄罗斯人在东北，\"你瞅啥？\"）",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "如魔狂饮|拳师|SterlingVermin|威士忌之拳|SterlingVermin:Patreon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "如鱼得水|拳师|SterlingVermin|威士忌之拳|SterlingVermin:Patreon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "自制酒酿|拳师|SterlingVermin|威士忌之拳|SterlingVermin:Patreon|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Drink Like a Demon",
+			"name": "如魔狂饮",
+			"entries": [
+				"从你在3级选择这个搏击俱乐部时开始，你可以在每个回合使用一个附赠动作来消耗一瓶药水或其他饮料。",
+				"此外，当你饮用酒精饮品时，你可以使用你的反应来触发你的{@classFeature 浴血不屈|拳师|SterlingVermin|3}特性。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "威士忌之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Fish In Water",
+			"name": "如鱼得水",
+			"entries": [
+				"同样在3级时，当你饮用酒精饮品时，你可以使用你的反应来获得1点锐气值。你可以使用此特性的次数等于你的体质调整值，并在完成一次长休后恢复所有已消耗的使用次数。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "威士忌之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Homebrewer",
+			"name": "自制酒酿",
+			"entries": [
+				"同样在3级时，你获得{@item 酿酒工具|PHB}的熟练。当你完成一次休息时，你可以使用手边的植物材质和饮水以及酿酒工具来制作酒精饮料。你在完成短休时制作{@dice 1d3}，在完成长休时制作{@dice 2d6}。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "威士忌之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Hair of the Dog",
+			"name": "以酒解酒",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "威士忌之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，当你饮用酒精饮品时，你可以使用你的反应来消除一个{@condition 力竭}等级。一旦你使用了这个特性，在完成一次长休前不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Mean Drunk",
+			"name": "醉后狠茬",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "威士忌之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，当你消耗酒精饮料时，你可以使用你的反应并花费5点锐气点进入醉熏狂怒状态1分钟。在醉熏狂怒状态下，你获得以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"当你使用你的{@classFeature 强力一击|拳师|SterlingVermin|5}特性时，你的武器攻击检定不会获得劣势。",
+						"你获得一个特殊反应，可以在每个回合使用一次来发动借机攻击。你不能在同一个回合内同时使用你的特殊反应和普通反应。",
+						"你无视{@condition 力竭}的效果。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Minotaur in a Glassworker's Shop",
+			"name": "蛮牛入璃坊",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "威士忌之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，将以下增益添加到你的醉熏狂怒中。",
+				{
+					"type": "list",
+					"items": [
+						"你拥有钝击，穿刺和挥砍伤害的抗性。",
+						"你在添加力量调整值的属性检定上具有优势。",
+						"你可以穿过其他生物。当你穿过一个体型比你大一级或更小的生物时，可以使用你的反应对该生物进行一次{@action 推撞}攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mailed Fist",
+			"name": "钢铁之拳",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "钢铁之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"entries": [
+				"绝大多数拳师的护甲重量与武器的别无二致\u2014\u2014说白了，基本上都用不上。但出身特定背景，或是来自矮人这类精于锻冶造艺的种族的拳师，却发现自己披甲格斗时，反倒能打出更凌厉的拳脚。这个搏击俱乐部的拳师，便将自身的锻冶技艺与天生的拳斗天赋相融相合，这般独特的结合，让他们练出了灼烈逼人的拳锋，更拥有了铜墙铁壁般的坚韧体魄。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|拳师|SterlingVermin|钢铁之拳|SterlingVermin:Patreon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "余烬拳击|拳师|SterlingVermin|钢铁之拳|SterlingVermin:Patreon|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"entries": [
+				"当你在3级选择这个搏击俱乐部时，你获得{@item 铁匠工具|PHB}和中等及重甲的熟练。此外，穿着中等和重甲不会阻止你获得你的{@classFeature 徒手格斗|拳师|SterlingVermin|1}特性的增益。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "钢铁之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Fist of Embers",
+			"name": "余烬拳击",
+			"entries": [
+				"同样在3级时，你可以使用一个附赠动作并消耗2点锐气点来点燃你的拳头，持续1分钟。当你的拳头被点燃时，你会在每个回合开始时受到{@dice 1d6}火焰伤害，并且你的徒手打击会造成额外的{@dice 1d6}火焰伤害。你可以选择提前结束此特性，无需任何动作。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "钢铁之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Adamant Will",
+			"name": "坚定意志",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "钢铁之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你穿着中等或重甲时受到重击，你可以使用你的反应来获得对该攻击伤害的抗性。"
+			]
+		},
+		{
+			"ENG_name": "Forged in Fire",
+			"name": "火中锻造",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "钢铁之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，你获得火焰伤害抗性。",
+				"此外，当你受到火焰伤害时，你可以使用你的反应获得等于所受伤害的临时生命值。你在下个回合结束时失去所有通过此特性获得的临时生命值。"
+			]
+		},
+		{
+			"ENG_name": "Adamant Body",
+			"name": "金刚之躯",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "钢铁之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，当你被缩小至0生命值但未被直接杀死时，你可以使用你的反应改为降至1生命值。当你这样做时，你获得等于你拳师等级两倍加上你体质值的临时生命值，并且你恢复所有消耗的锐气点。直到你完成一次长休前，你无法再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Dragonheart",
+			"name": "龙心",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"entries": [
+				"很久以前，一位半龙训练了一群武者来协助她为自己建立一个帝国。尽管她失败了，但她传授给这些士兵的秘传技巧从此便以师徒相授的形式流传后世。与其他搏击俱乐部不同，拳师们并非仅因自身的性情或志向而发现或领悟。相反，这些被称为龙心的拳师们致力于钻研那位半龙准征服者所传授的远古战斗技法。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙威悍相|拳师|SterlingVermin|龙心|SterlingVermin:Patreon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战争流言|拳师|SterlingVermin|龙心|SterlingVermin:Patreon|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Draconic Mien",
+			"name": "龙威悍相",
+			"entries": [
+				"当你在3级选择这个搏击俱乐部时，你会带着龙的凶恶自信行事。如果你尚未拥有，你将获得{@skill 威吓}技能的熟练。对于任何使用此熟练度的属性检定，你的熟练加值将翻倍。",
+				"此外，你能够阅读、说和书写{@language 龙语}。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Scales of War",
+			"name": "战争流言",
+			"entries": [
+				"同样在3级时，你可以在你的回合使用一个附赠动作使你的皮肤脱落，暂时露出下面坚硬的鳞片。当你这样做时，你在1分钟内获得对钝击、穿刺和挥砍伤害的抗性。",
+				"你必须完成一次短休或长休才能再次使用该特性。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Elemental Rebuke",
+			"name": "元素叱喝",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你使用你的{@classFeature 浴血不屈|拳师|SterlingVermin|3}特性时，你可以选择作为同一反应的一部分吐出一片30英尺锥状的元素能量。当你这样做时，你可以选择吐息武器的性质，这将决定造成的伤害类型：强酸、寒冷、火焰或闪电。",
+				"吐息区域内的每个生物必须进行一次敏捷豁免检定，DC等于8 + 你的体质调整值 + 你的熟练加值。未能通过豁免检定的生物受到{@dice 1d12 + #$prompt_number:min=1,title=输入你的拳师等级!,default=1$#|1d12 + 你的拳师等级}伤害，成功则只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Wings of War",
+			"name": "战争飞翼",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你使用你的{@subclassFeature 战争流言|拳师|SterlingVermin|龙心|SterlingVermin:Patreon|3}特性时，你还会长出飞翼，获得60尺的飞行速度，持续1分钟。"
+			]
+		},
+		{
+			"ENG_name": "Frightful Presence",
+			"name": "骇人威仪",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，你可以用一个动作向60尺内你选择的每个生物散发恐惧。选民生物必须进行一次感知豁免检定，DC等于8 + 你的体质调整值 + 你的熟练加值。豁免检定失败时，该生物会陷入{@condition 恐慌}状态1分钟。生物可以在其每回合结束时重复豁免检定，成功则终止效应。",
+				"一旦你使用了这个特性，你必须完成一次长休后才能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "King of Beasts",
+			"name": "野兽之王",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "野兽之王",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"entries": [
+				"绝大多数拳师的修行之路始于熙攘的城市，却并非所有人都会留在这里。野兽之王搏击俱乐部的拳师以荒野为家，他们发现荒野与大城市的街巷，比自己想象中更为相似 \u2014\u2014 二者奉行的皆是强者为尊的准则。在世间野兽群落中生活的这段时光改变了拳师，让他们能唤醒自身强悍的韧性，甚至学会化作自己遇见过的各类野兽形态。这些拳师还常与德鲁伊结盟，守护自然世界，抵御那些妄图肆意破坏它的人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "野兽活力|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "荒野形态|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bestial Vigor",
+			"name": "野兽活力",
+			"entries": [
+				"当你在3级选择这个搏击俱乐部时，你的生命值上限增加6。每当你在该职业升级时，你的生命值上限增加2。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "野兽之王",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Wild Shape",
+			"name": "荒野形态",
+			"entries": [
+				"同样在3级时，你可以使用你的动作魔法般地变形成一个你曾见过的野兽。一旦你使用了这个特性，直到你完成一次短休或长休前都无法再次使用它。",
+				"你的拳师等级决定了你可以变形的野兽，如野兽形态表格所示。例如在3级时，你可以变形为挑战等级1/4或更低且没有飞行或游泳速度的任何野兽。",
+				{
+					"type": "table",
+					"caption": "荒野形态表格",
+					"colLabels": [
+						"等级",
+						"最高CR",
+						"限制",
+						"范例"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-5",
+						"col-3"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+							"无飞行或游泳速度",
+							"狼"
+						],
+						[
+							"6th",
+							"{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+							"无飞行速度",
+							"鳄鱼"
+						],
+						[
+							"11th",
+							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+							"\u2014",
+							"巨鹰"
+						]
+					]
+				},
+				"你可以保持野兽形态的小时数等于你拳师等级的一半（向下取整）。你可以通过在你的回合使用一个附赠动作提前恢复你的正常形态。如果你昏迷、生命值降至0或死亡，你将自动恢复。",
+				"你变形时必须遵从以下规则：",
+				{
+					"type": "list",
+					"items": [
+						"你的游戏数据替换为新形态的数值，但你仍保持你的阵营、个性，以及智力值、感知值、魅力值。你保留技能与豁免的熟练项，并且获得新形态的技能和豁免熟练项。如果新形态有你已具有的熟练项且该熟练项的加值高于你的熟练加值，则使用新形态的熟练加值。你不能使用新形态可能拥有的传奇动作或巢穴动作。",
+						"变形后，你使用新形态的生命值和生命骰。变回原形时，你的生命值恢复变形之前的数值。而任何让你的生命值降至0的伤害，都可以使你变回原形并承受该伤害的溢出伤害量。例如，你在动物形态下受到了10点伤害而你只剩1点生命值，则你变回原形并受到9点伤害。只要超过的伤害没有将你原形的生命值降至0，你就不会因此陷入 {@condition 昏迷}。",
+						"你无法施放法术，且你说话或执行任何需要手的动作的能力仅限于野兽形态的能力。然而，变形不会打断你已经施放的法术的专注，也不会阻止你执行法术的动作部分，例如你已经施放的{@spell 召雷术}。",
+						"你保持从职业、种族或其它来源特性的收益，并且可以在新形态身体能力允许下使用这些特性。不过，你无法使用任何原有的特殊感官（例如{@sense 黑暗视觉}），除非你的新形态也具有这种感官。",
+						"变形时，你可以选择将你的装备丢在所处空间，或者将其融入新形态，又或者直接着装在身上。新形态直接着装的装备可以如常起作用，但DM有权基于新形态的体型和身姿作出判断，并最终决定新形态使用该装备是否合理。装备不会改变大小来适应新形态，新形态无法着装某装备时，该装备会掉落你所处空间或融入新形态中。融入新形态的装备失去其效应，且在你变回原形时才能恢复。"
+					]
+				}
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "野兽之王",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "War Shape",
+			"name": "战争形态",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "野兽之王",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你可以使用一个附赠动作并消耗一次你的{@subclassFeature 荒野形态|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|3}来进入战争形态1分钟。当你这样做时，选择一项你可以使用荒野形态特性变身的野兽。",
+				"当你处于战争形态时，你的外貌会结合正常形态与选民野兽的特征，并在持续时间内获得以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"你获得该野兽拥有的任何特殊感官和移动力。",
+						"如果该野兽有任何造成穿刺或挥砍伤害的天生武器攻击，你可以在用徒手打击造成伤害时选择该伤害类型。",
+						"你的徒手打击造成额外{@dice 1d4}伤害。",
+						"如果野兽的体型类别比你小，你可以选择将自己的体型缩小一个类别（例如从中等缩小到小型），直到你的战争形态结束。",
+						"如果野兽的体型类别比你大，你可以选择将自己的体型增大一个类别（例如从中等变为大型），直到你的战争形态结束。",
+						"你在魅力（{@skill 威吓}）属性检定上具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cornered but Not Caught",
+			"name": "困隅未擒",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "野兽之王",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你使用你的{@classFeature 浴血不屈|拳师|SterlingVermin|3}特性时，你可以选择同时使用此特性。若你如此做，在接下来1分钟内你每回合开始时恢复等于你体质调整值的生命值。若你的生命值降至0，此效应提前结束。完成一次长休后你可以再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Beast at Heart",
+			"name": "野兽之心",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "野兽之王",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你可以使用你的{@subclassFeature 荒野形态|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|3}特性两次，在完成短休或长休时恢复所有使用次数。",
+				"当你使用你的{@subclassFeature 荒野形态|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|3}特性时，你可以选择消耗两次使用次数。当你这样做时，你可以选择一个挑战等级不超过5的野兽。",
+				"当你使用你的{@subclassFeature 战争形态|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|6}特性时，你可以选择消耗两次使用次数。当你这样做时，你选择最多三只野兽并获得每只野兽的特殊感官和移动速度（如果多只选择的野兽拥有相同类型的移动速度，则使用每种移动速度中最高的）。此外，你的徒手打击造成的额外伤害增加到{@dice 1d6}。"
+			]
+		},
+		{
+			"ENG_name": "Street Saint",
+			"name": "街头圣徒",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"entries": [
+				"拳师向来能于逆境中奋起，而这群被称作街头圣徒的拳师，这份坚韧更有对诸神矢志不渝的虔诚信仰为其加持。他们的信念曾历经万般考验，却于风雨过后愈发坚定，心中的正义之志，唯有被淬炼得更为炽烈。他们挥拳，为让这世间变得更美好；他们奋战，因坚信诸神已向自己发出召唤；他们搏杀，因深知但凡有腐恶滋生之地，正义便无由绽放。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "引导神力|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "引导神力：信仰之拳|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "引导神力：诸神恩典|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "圣疗|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Channel Divinity",
+			"name": "引导神力",
+			"entries": [
+				"当你在3级选择这个搏击俱乐部时，你获得直接从你的神引导神力能量的能力，使用该能量来为魔法效应提供燃料。你开始时拥有两种这样的效应：{@subclassFeature 引导神力：信仰之拳|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3}和{@subclassFeature 引导神力：诸神恩典|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3}。",
+				"当你使用引导神力时，你可以选择创造何种效应。你必须完成一次短休或长休才能再次使用引导神力。某些引导神力效应需要豁免检定。当你使用本职业的此类效应时，DC等于8 + 你的熟练加值 + 你的感知调整值。",
+				"从11级开始，你可以在两次休息之间使用两次引导神力。当你完成一次短休或长休时，你将恢复已消耗的使用次数。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Channel Divinity: Fists of Faith",
+			"name": "引导神力：信仰之拳",
+			"entries": [
+				"你使用一个附赠动作并将双手奉献给神力。在接下来的1分钟内，你的徒手打击在19或20的结果时造成重击。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Channel Divinity: Grace of the Gods",
+			"name": "引导神力：诸神恩典",
+			"entries": [
+				"作为附赠动作，你向诸神献上祈祷，他们的神力守护将环绕着你。你获得{@dice 1d10} + 你的拳师等级的临时生命值。当你拥有来自此属性的任何临时生命值时，你对所有伤害具有抗性。1分钟后，你将失去由此属性赋予的所有临时生命值。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Lay on Hands",
+			"name": "圣疗",
+			"entries": [
+				"同样在3级时，你受祝福的接触可以治愈伤口。你拥有一个治疗法力池，在你进行长休时会补充。使用这个法力池，你可以复原总计数值等于你拳师等级×5的生命值。",
+				"你可以用一个动作触碰一个生物，并抽取治疗能量池中的能量恢复该生物的生命值，其恢复量最多等于你治疗能量池中剩余的治疗量。",
+				"或者，你可以从你的治愈水池中消耗5点生命值来治愈目标的一种疾病或中和影响它的一种毒素。你可以通过一次圣疗来治愈多种疾病和中和多种毒药，为每一种分别消耗生命值。",
+				"该职业特性对不死生物和构装生物无效。"
+			],
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"ENG_name": "Hallowed Hands",
+			"name": "神圣之手",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你用徒手打击对一个生物造成伤害时，你可以从你的{@subclassFeature 圣疗|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3}特性中消耗最多等于你在此职业中等级的生命值数值，以造成等同于所消耗生命值的额外光耀伤害。如果目标是邪魔或亡灵，此伤害翻倍。一旦你使用此特性，直到你的下个回合开始前不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Ravaged but Resolute",
+			"name": "体摧志坚",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你使用你的{@classFeature 浴血不屈|拳师|SterlingVermin|3}特性时，你可以选择同时使用此特性。若你如此做，你的{@subclassFeature 圣疗|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3}特性赋予你的生命值水池将恢复至最大值。你可以在完成一次长休后再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Aura of Resilience",
+			"name": "韧性灵光",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你可以在你的回合使用一个附赠动作将你的精神力量借给你的盟友。在接下来的1分钟内，你和30尺内的每个友好生物获得所有伤害的抗性。一旦你使用了这个特性，你必须完成一次长休才能再次使用它。"
+			]
+		}
+	],
+	"baseitem": [
+		{
+			"ENG_name": "Brass Knuckles",
+			"name": "黄铜指虎",
+			"page": 0,
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "简易",
+			"rarity": "none",
+			"value": 100,
+			"weight": 1,
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"L",
+				"UN"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Katar",
+			"name": "卡塔拳刃",
+			"page": 0,
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "简易",
+			"rarity": "none",
+			"value": 300,
+			"weight": 3,
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"property": [
+				"L",
+				"UN"
+			],
+			"source": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Knuckle Knives",
+			"name": "指虎刀",
+			"page": 0,
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "简易",
+			"rarity": "none",
+			"value": 300,
+			"weight": 2,
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"property": [
+				"L",
+				"UN"
+			],
+			"source": "SterlingVermin"
+		}
+	],
+	"magicvariant": [
+		{
+			"ENG_name": "Punchdrunk Punters",
+			"name": "致懵拳套",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Knuckle Knives",
+					"name": "指虎刀"
+				},
+				{
+					"ENG_name": "Katar",
+					"name": "卡塔拳刃"
+				},
+				{
+					"ENG_name": "Brass Knuckles",
+					"name": "黄铜指虎"
+				}
+			],
+			"inherits": {
+				"namePrefix": ")",
+				"source": "SterlingVermin",
+				"page": 0,
+				"rarity": "rare",
+				"bonusWeapon": "+1",
+				"entries": [
+					"这堆破武器磨得全是痕迹，味儿冲得很，就跟在闹哄哄的酒馆里，被扔在没人管的酒桶底待了一星期似的。",
+					"你使用这把魔化武器进行攻击和伤害掷骰时获得+1加值。每当你对一个生物造成伤害时，该生物获得一个毒素点。毒素点会保留一小时。你可以用一个动作使你可见的一个生物受到等同于其毒素点数量的{@dice 1d8}毒素伤害，然后失去所有毒素点。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Penitent Pummelers",
+			"name": "忏击拳套",
+			"type": "GV|DMG",
+			"entries": [
+				"这些武器由黄金制成，每个指节上都刻有一面圣徽。你用这把魔化武器进行攻击和伤害掷骰时获得+1加值。当你命中一个邪魔或亡灵生物时，该生物会受到额外{@dice 1d6}光耀伤害。"
+			],
+			"requires": [
+				{
+					"ENG_name": "Knuckle Knives",
+					"name": "指虎刀"
+				},
+				{
+					"ENG_name": "Katar",
+					"name": "卡塔拳刃"
+				},
+				{
+					"ENG_name": "Brass Knuckles",
+					"name": "黄铜指虎"
+				}
+			],
+			"inherits": {
+				"namePrefix": ")",
+				"source": "SterlingVermin",
+				"page": 0,
+				"rarity": "rare",
+				"bonusWeapon": "+1",
+				"entries": [
+					"这些武器由黄金制成，每个指节上都刻有一面圣徽。你用这把魔化武器进行攻击和伤害掷骰时获得+1加值。当你命中一个邪魔或亡灵生物时，该生物会受到额外{@dice 1d6}光耀伤害。"
+				]
+			}
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Iron Chin",
+			"name": "铁下巴",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 1,
+			"effects": [
+				{
+					"changes": [
+						{
+							"key": "data.attributes.ac.value",
+							"mode": "OVERRIDE",
+							"value": "12 + @abilities.con.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fisticuffs",
+			"name": "徒手格斗",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 1,
+			"subEntities": {
+				"item": [
+					{
+						"ENG_name": "Unarmed Strike (Pugilist)",
+						"name": "徒手打击（拳师）",
+						"source": "SterlingVermin",
+						"page": 1,
+						"type": "M",
+						"rarity": "none",
+						"entries": [
+							{
+								"type": "quote",
+								"entries": [
+									"需要帮忙吗？"
+								]
+							}
+						],
+						"weaponCategory": "简易",
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"@scale.pugilist.fisticuffs + @mod",
+									"bludgeoning"
+								]
+							],
+							"ability": "str"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Bloodied but Unbowed",
+			"name": "浴血不屈",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 3,
+			"system": {
+				"ability": "con",
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"3 * @classes.pugilist.levels",
+						"temphp"
+					]
+				],
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "sr"
+				}
+			}
+		},
+		{
+			"ENG_name": "Moxie",
+			"name": "锐气",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 2,
+			"system": {
+				"ability": "con",
+				"uses": {
+					"value": 1,
+					"max": "@scale.pugilist.moxie",
+					"per": "sr"
+				},
+				"damage.parts": [
+					[
+						"@scale.pugilist.fisticuffs + @classes.pugilist.levels + @mod",
+						"temphp"
+					]
+				]
+			}
+		},
+		{
+			"ENG_name": "School of Hard Knocks",
+			"name": "硬磕学堂",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"level": 10,
+			"entryData": {
+				"resist": [
+					"心灵"
+				]
+			}
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Persona Libre",
+			"name": "自在人格",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": "3 + @abilities.cha.mod",
+					"per": "lr"
+				}
+			}
+		},
+		{
+			"ENG_name": "Aura of Resilience",
+			"name": "韧性灵光",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
+				},
+				"activation": {
+					"type": "bonus",
+					"cost": 1
+				},
+				"duration": {
+					"value": 1,
+					"units": "minute"
+				}
+			}
+		},
+		{
+			"ENG_name": "Scales of War",
+			"name": "战争流言",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "sr"
+				}
+			}
+		},
+		{
+			"ENG_name": "The Uncouth Art",
+			"name": "粗俗艺术",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "尿与醋",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
+				}
+			}
+		},
+		{
+			"ENG_name": "Wild Shape",
+			"name": "荒野形态",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "野兽之王",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "sr"
+				}
+			}
+		},
+		{
+			"ENG_name": "Channel Divinity",
+			"name": "引导神力",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": "@scale.street-saint.channel-divinity",
+					"per": "sr"
+				}
+			}
+		},
+		{
+			"ENG_name": "Fish In Water",
+			"name": "如鱼得水",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "威士忌之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": "(@abilities.con.mod)",
+					"per": "lr"
+				}
+			}
+		},
+		{
+			"ENG_name": "Adamant Body",
+			"name": "金刚之躯",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "钢铁之拳",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
+				},
+				"actionType": "heal",
+				"ability": "con",
+				"damage.parts": [
+					[
+						"@mod + @classes.pugilist.levels",
+						"temphp"
+					]
+				]
+			}
+		},
+		{
+			"ENG_name": "Lay on Hands",
+			"name": "圣疗",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"system": {
+				"uses": {
+					"value": 5,
+					"max": "(@classes.pugilist.levels * 5)",
+					"per": "charges"
+				}
+			}
+		},
+		{
+			"ENG_name": "Channel Divinity: Grace of the Gods",
+			"name": "引导神力：诸神恩典",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "街头圣徒",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 3,
+			"system": {
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"1d10 + @classes.pugilist.levels",
+						"temphp"
+					]
+				],
+				"formula": "1d10 + @classes.pugilist.levels"
+			}
+		},
+		{
+			"ENG_name": "Elemental Rebuke",
+			"name": "元素叱喝",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 6,
+			"system": {
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d12 + @classes.pugilist.levels",
+						""
+					]
+				],
+				"save": {
+					"ability": "dex",
+					"scaling": "con"
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "cone"
+				},
+				"activation": {
+					"type": "none",
+					"cost": 1
+				}
+			}
+		},
+		{
+			"ENG_name": "Cornered but Not Caught",
+			"name": "困隅未擒",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "野兽之王",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
+				},
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"@classes.pugilist.levels",
+						"healing"
+					]
+				],
+				"duration": {
+					"value": 1,
+					"units": "minute"
+				}
+			}
+		},
+		{
+			"ENG_name": "Frightful Presence",
+			"name": "骇人威仪",
+			"source": "SterlingVermin:Patreon",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "龙心",
+			"subclassSource": "SterlingVermin:Patreon",
+			"level": 17,
+			"system": {
+				"actionType": "save",
+				"save": {
+					"ability": "wis",
+					"scaling": "con"
+				},
+				"target": {
+					"value": 60,
+					"units": "ft",
+					"type": "radius"
+				},
+				"activation": {
+					"type": "action",
+					"cost": 1
+				},
+				"duration": {
+					"value": 1,
+					"units": "minute"
+				},
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
+				}
+			}
+		},
+		{
+			"ENG_name": "Salty Salute",
+			"name": "咸嘲致意",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "尿与醋",
+			"subclassSource": "SterlingVermin",
+			"level": 3,
+			"system": {
+				"ability": "cha",
+				"damage.parts": [
+					[
+						"@scale.pugilist.fisticuffs + @mod",
+						"psychic"
+					]
+				],
+				"save": {
+					"ability": "wis",
+					"scaling": "cha"
+				},
+				"range": {
+					"value": 60,
+					"units": "ft"
+				},
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			}
+		},
+		{
+			"ENG_name": "Work the Crowd",
+			"name": "拢众控场",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"system": {
+				"activation": {
+					"type": "action",
+					"cost": 1
+				},
+				"save": {
+					"ability": "wis",
+					"scaling": "str"
+				},
+				"actionType": "save",
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			}
+		},
+		{
+			"ENG_name": "High Flyer",
+			"name": "腾空飞步",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "戏擂斗尊",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"effects": [
+				{
+					"changes": [
+						{
+							"key": "data.attributes.movement.walk",
+							"mode": "ADD",
+							"value": 10
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Scrap like a Sleuth",
+			"name": "侦隙破敌",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "血嗅重拳",
+			"subclassSource": "SterlingVermin",
+			"level": 6,
+			"system": {
+				"activation": {
+					"type": "action",
+					"cost": 1
+				},
+				"target": {
+					"value": 30,
+					"units": "ft"
+				},
+				"duration": {
+					"value": 1,
+					"units": "minute"
+				}
+			}
+		},
+		{
+			"ENG_name": "Grotesque Growth",
+			"name": "繁花滋长",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "恐惧之手",
+			"subclassSource": "SterlingVermin",
+			"level": 11,
+			"system": {
+				"activation": {
+					"type": "bonus",
+					"cost": 1
+				},
+				"duration": {
+					"value": 1,
+					"units": "minute"
+				}
+			}
+		},
+		{
+			"ENG_name": "Fountain of Viscera",
+			"name": "脏腑泉涌",
+			"source": "SterlingVermin",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"subclassShortName": "恐惧之手",
+			"subclassSource": "SterlingVermin",
+			"level": 17,
+			"system": {
+				"activation": {
+					"type": "action",
+					"cost": 1
+				},
+				"save": {
+					"ability": "dex",
+					"scaling": "str"
+				},
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"100",
+						"piercing"
+					]
+				],
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
+				}
+			}
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Arena Royale",
+			"name": "戏擂斗尊",
+			"subclassFeatures": [
+				"戏擂斗尊|拳师|SterlingVermin|戏擂斗尊|SterlingVermin|3",
+				"拢众控场|拳师|SterlingVermin|戏擂斗尊|SterlingVermin|6",
+				"腾空飞步|拳师|SterlingVermin|戏擂斗尊|SterlingVermin|11",
+				"招牌移动|拳师|SterlingVermin|戏擂斗尊|SterlingVermin|17"
+			],
+			"source": "SterlingVermin",
+			"shortName": "戏擂斗尊",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Bloodhound Bruisers",
+			"name": "血嗅重拳",
+			"subclassFeatures": [
+				"血嗅重拳|拳师|SterlingVermin|血嗅重拳|SterlingVermin|3",
+				"侦隙破敌|拳师|SterlingVermin|血嗅重拳|SterlingVermin|6",
+				"城市之心|拳师|SterlingVermin|血嗅重拳|SterlingVermin|11",
+				"睁目察敌|拳师|SterlingVermin|血嗅重拳|SterlingVermin|17"
+			],
+			"source": "SterlingVermin",
+			"shortName": "血嗅重拳",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Dog & Hound",
+			"name": "犬与猎",
+			"subclassFeatures": [
+				"犬与猎|拳师|SterlingVermin|犬与猎|SterlingVermin|3",
+				"协同攻击|拳师|SterlingVermin|犬与猎|SterlingVermin|6",
+				"猎犬挚友|拳师|SterlingVermin|犬与猎|SterlingVermin|11",
+				"脱缰暴走|拳师|SterlingVermin|犬与猎|SterlingVermin|17"
+			],
+			"source": "SterlingVermin",
+			"shortName": "犬与猎",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Hand of Dread",
+			"name": "恐惧之手",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"魔能爆#c",
+							"魔法伎俩#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"恐惧之手|拳师|SterlingVermin|恐惧之手|SterlingVermin|3",
+				"与魔鬼交易|拳师|SterlingVermin|恐惧之手|SterlingVermin|6",
+				"繁花滋长|拳师|SterlingVermin|恐惧之手|SterlingVermin|11",
+				"脏腑泉涌|拳师|SterlingVermin|恐惧之手|SterlingVermin|17"
+			],
+			"source": "SterlingVermin",
+			"shortName": "恐惧之手",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Piss & Vinegar",
+			"name": "尿与醋",
+			"subclassFeatures": [
+				"尿与醋|拳师|SterlingVermin|尿与醋|SterlingVermin|3",
+				"卑鄙手段|拳师|SterlingVermin|尿与醋|SterlingVermin|6",
+				"老辣狠茬|拳师|SterlingVermin|尿与醋|SterlingVermin|11",
+				"粗俗艺术|拳师|SterlingVermin|尿与醋|SterlingVermin|17"
+			],
+			"source": "SterlingVermin",
+			"shortName": "尿与醋",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "The Sweet Science",
+			"name": "甜蜜科学",
+			"subclassFeatures": [
+				"甜蜜科学|拳师|SterlingVermin|甜蜜科学|SterlingVermin|3",
+				"一、二、三、倒地|拳师|SterlingVermin|甜蜜科学|SterlingVermin|6",
+				"蝶舞蜂刺|拳师|SterlingVermin|甜蜜科学|SterlingVermin|11",
+				"击昏|拳师|SterlingVermin|甜蜜科学|SterlingVermin|17"
+			],
+			"source": "SterlingVermin",
+			"shortName": "甜蜜科学",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "The Squared Circle",
+			"name": "拳台御域",
+			"subclassFeatures": [
+				"拳台御域|拳师|SterlingVermin|拳台|SterlingVermin|3",
+				"肉盾|拳师|SterlingVermin|拳台|SterlingVermin|6",
+				"重量级|拳师|SterlingVermin|拳台|SterlingVermin|11",
+				"利落终结|拳师|SterlingVermin|拳台|SterlingVermin|17"
+			],
+			"source": "SterlingVermin",
+			"shortName": "拳台",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Whiskey Fist",
+			"name": "威士忌之拳",
+			"subclassFeatures": [
+				"威士忌之拳|拳师|SterlingVermin|威士忌之拳|SterlingVermin:Patreon|3",
+				"以酒解酒|拳师|SterlingVermin|威士忌之拳|SterlingVermin:Patreon|6",
+				"醉后狠茬|拳师|SterlingVermin|威士忌之拳|SterlingVermin:Patreon|11",
+				"蛮牛入璃坊|拳师|SterlingVermin|威士忌之拳|SterlingVermin:Patreon|17"
+			],
+			"source": "SterlingVermin:Patreon",
+			"shortName": "威士忌之拳",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Mailed Fist",
+			"name": "钢铁之拳",
+			"subclassFeatures": [
+				"钢铁之拳|拳师|SterlingVermin|钢铁之拳|SterlingVermin:Patreon|3",
+				"坚定意志|拳师|SterlingVermin|钢铁之拳|SterlingVermin:Patreon|6",
+				"火中锻造|拳师|SterlingVermin|钢铁之拳|SterlingVermin:Patreon|11",
+				"金刚之躯|拳师|SterlingVermin|钢铁之拳|SterlingVermin:Patreon|17"
+			],
+			"source": "SterlingVermin:Patreon",
+			"shortName": "钢铁之拳",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Dragonheart",
+			"name": "龙心",
+			"subclassFeatures": [
+				"龙心|拳师|SterlingVermin|龙心|SterlingVermin:Patreon|3",
+				"元素叱喝|拳师|SterlingVermin|龙心|SterlingVermin:Patreon|6",
+				"战争飞翼|拳师|SterlingVermin|龙心|SterlingVermin:Patreon|11",
+				"骇人威仪|拳师|SterlingVermin|龙心|SterlingVermin:Patreon|17"
+			],
+			"source": "SterlingVermin:Patreon",
+			"shortName": "龙心",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "King of Beasts",
+			"name": "野兽之王",
+			"subclassFeatures": [
+				"野兽之王|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|3",
+				"战争形态|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|6",
+				"困隅未擒|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|11",
+				"野兽之心|拳师|SterlingVermin|野兽之王|SterlingVermin:Patreon|17"
+			],
+			"source": "SterlingVermin:Patreon",
+			"shortName": "野兽之王",
+			"className": "拳师",
+			"classSource": "SterlingVermin"
+		},
+		{
+			"ENG_name": "Street Saint",
+			"name": "街头圣徒",
+			"subclassFeatures": [
+				"街头圣徒|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|3",
+				"神圣之手|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|6",
+				"体摧志坚|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|11",
+				"韧性灵光|拳师|SterlingVermin|街头圣徒|SterlingVermin:Patreon|17"
+			],
+			"source": "SterlingVermin:Patreon",
+			"shortName": "街头圣徒",
+			"className": "拳师",
+			"classSource": "SterlingVermin",
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "使用神导能力",
+					"configuration": {
+						"identifier": "channel-divinity",
+						"type": "numeric",
+						"scale": {
+							"3": {
+								"value": 1
+							},
+							"11": {
+								"value": 2
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Pugilist",
+			"name": "拳师",
+			"source": "SterlingVermin",
+			"entries": [
+				{
+					"ENG_name": "Pugilist",
+					"name": "拳师",
+					"source": "SterlingVermin",
+					"type": "section",
+					"page": 1,
+					"entries": [
+						"箭矢如雨般在她周围落下，一心想要拉近身位的半兽人强忍十余道伤口的灼痛猛地冲向敌人。痛苦只会让她越战越勇。她扑向咆哮的大地精，疯狂地挥舞着拳头，将数名敌人被直接抡翻在地，其余的见状吓得四散奔逃，无人敢与她正面抗衡。",
+						"兽人猛冲过来，人类当即绷紧身躯，为即将到来的冲击做好准备。谁知这魔物一时失手，提前暴露了后续的招式 \u2014\u2014 这正是人类苦苦等待的战机。他矮身躲开兽人势大力沉的横扫，随即双手高举过顶，狠狠朝兽人后背劈砸而下，将这头蛮兽硬生生砍翻在地。",
+						"那小贵族因矮人这句无礼的话扬手就要打，矮人反倒咧嘴一笑，桀桀桀的笑出了声。电光火石间，他将手里的酒瓶往吧台狠狠一磕砸得粉碎，攥着碎瓶朝那贵族扬了过去。这年轻的花花公子吓得猛地瑟缩，踉跄着后退几步，转头就逃。而矮人只是回身朝吧台再添了一轮酒。",
+						"拳师们无论出身何处，都过着漂泊粗砺、搏命拼杀的日子。这般人生磨就了他们骨子里的执拗与孤勇，那份无所顾忌的拼劲，或是源于过人的自信，或是出于绝境中的迫不得已。在战斗中，他们能将这份刻入骨髓的品性之力凝于一身，掘取自身深层的力量奋勇迎敌；哪怕对手在人数、武器、甲胄上都占据绝对优势，他们也能将其击退 \u2014\u2014 这份胜机，在旁人看来本是绝无可能。",
+						{
+							"ENG_name": "Swagger for Days",
+							"name": "狂傲之日",
+							"type": "entries",
+							"entries": [
+								"拳师总会在无意间，将自身的内在力量化作一股锐气，悄然激发。这股锐气，并非流淌于诸界的玄妙秘术或神秘能量，而是拳师在一生的苦难磨砺中，凭那股不死不休的劲头，炼就的坚定本心。你可以教一个人如何出招格斗，却永远教不会一个人如何成为真正的拳师。而练就这股锐气的秘诀，从不在循规蹈矩的研习或严苛的制式训练中，只藏在经年累月的渴望与万般需求里。"
+							]
+						},
+						{
+							"ENG_name": "Life on the Street",
+							"name": "街头生活",
+							"type": "entries",
+							"entries": [
+								"D&D 世界的每一座城市，都藏着幽深曲折的后巷、暗流涌动的地下格斗赌局，还有破败潦倒的贫民区。栖身于这些地方的拳师，根本没闲心去琢磨那些玄虚的哲学宏愿，更无暇探究宇宙的万千奥秘。这群在社会底层摸爬滚打长大的拳师，所有的时间都用来为下一顿饭奔忙；若是侥幸能混上口饱饭，便只求再得一杯浊酒、一个相伴之人，或是一处能蜷身将就的廉价床板。",
+								"对拳师而言，成为冒险者，或许是摆脱自襁褓起便深陷的种种窘迫境遇的唯一出路。而另一些拳师，浪迹天涯不过是为了逃离自己亲手酿成的、缠结难解的债务网与仇敌圈。还有些拳师始终挥拳向前，只因这是他们唯一的生存本能。无论踏上冒险之路的缘由为何，拳师们对即将挥拳拼杀的期待，与花光自己挣来的每一枚金币时的畅快，向来是不相上下的。"
+							]
+						},
+						{
+							"ENG_name": "Hardship",
+							"name": "困苦",
+							"type": "entries",
+							"entries": [
+								"没人能不经受极致的苦难、咬牙坚持，就变得和拳师一样强悍。对拳师而言，苦难是催化剂，能彰显他们坚不可摧的意志与力量。这些磨难也会在其他方面影响拳师。若你在街头长大，或许会格外留心照料穷苦无依的人；若你曾因莫须有的罪名入狱，你与城镇守卫的关系，可能会比普通冒险者更敌对。和其他众多拳师一样，你的意志在逆境的烈火中淬炼而成。闯过这些磨难后，你对自己有了怎样的认知？那段经历，至今仍在以何种方式影响着你？",
+								{
+									"type": "table",
+									"caption": "困苦",
+									"colLabels": [
+										"{@dice d6}",
+										"困苦"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"一场瘟疫在你小时候夺走了你的家人，你在孤儿院中度过了余下的年少时光。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你被城镇警卫骚扰，然后被诬陷犯下了你并未犯下的罪行。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"当你被一个信任的朋友背叛时，你失去了一切。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你的父母以不到一个金碎片的价格把你卖给了窃贼公会。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你将生命挥霍殆尽，直到跌入谷底才幡然醒悟。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你拒绝按照帮派老大的要求打假赛，你的家庭为此付出了代价。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Favorite Dive",
+							"name": "本命酒馆",
+							"type": "entries",
+							"entries": [
+								"每个浴血拼杀的英雄，都需要一处能歇脚放松、疗愈身心的归处。而对拳师而言，这般安身的净土，向来都算不上什么体面地界。你大可以窝进本命酒馆，放纵享受自己的恶习，或是和市井百姓热热闹闹地打成一片；有些拳师觉得，能让自己彻底松快下来的法子，唯有打上一架，哪怕挂彩见血也无妨；也有些拳师藏着不为人知的安静模样，这份温柔只会展露给最亲近的同伴。",
+								"你的本命酒馆成为你的常去地点有多久了？你有任何经常光顾同一地点的朋友或对手吗？",
+								{
+									"type": "table",
+									"caption": "潜水",
+									"colLabels": [
+										"{@dice d6}",
+										"本命酒馆"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"一个每晚都会爆发斗殴的破旧酒馆。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"一个地下搏击场，大伙来这押钱赌输赢的地方。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"一家理发店，他们特别爱听你的冒险故事。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"一个高注码的赌窝，里面的赌局既靠手法也看运气。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你长大的孤儿院已在多年前关闭并被废弃。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"一个安静的图书馆。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Rumor",
+							"name": "流言",
+							"type": "entries",
+							"entries": [
+								"拳师是流言和猜测的常见对象。他们的恢复力、力量和潇洒气质的结合使他们成为当地酒馆里一品脱啤酒时的热门话题。再加上大多数拳师出身卑微，很容易理解为什么公众会编造出如此丰富多彩的故事来谈论它们。",
+								"无论传闻真假，总有一则流言如影随形。你对自己的声誉作何感想？是纵容那些传谣之人肆意揣测，还是会因旁人对自己身世的种种臆测而心生厌烦？",
+								{
+									"type": "table",
+									"caption": "流言",
+									"colLabels": [
+										"{@dice d6}",
+										"流言"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你这一身的惊人力气，是靠着打小喝女巨人的奶才练就的。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你在喝酒比赛中赢了一个矮人...然后在黑夜结束前又赢了三个。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"城镇守卫对你恨得多切，他们的枕边人就对你爱得多真。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你是地下黑道一位头号人物麾下的双花红棍。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你轻松地将一只{@creature 枭熊}摔倒在地，甚至在扭打过程中睡着了。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你父亲是一个{@creature 土元素}，这就是为什么你有一副钢筋铁骨。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Creating a Pugilist",
+							"name": "创建拳师",
+							"type": "entries",
+							"entries": [
+								"当你创建你的拳师时，考虑一下你是如何成为一名赤手空拳的打手的。你是为了保护自己而学会战斗的吗？惹麻烦是你天生的结果吗？还是你学会了战斗作为一种恐吓和控制他人的方式？你是为了娱乐而战斗，还是因为你不得不战斗？你是否尝试过成为一名更传统的军用艺人，但就是做不到？拳师是一群喜欢吹嘘他们如何学会战斗的吵闹家伙，所以你最好有一个好故事要讲。",
+								"你生命中的哪些事件给了你拳师们所依赖的那种纯粹决心和意志？你是否每天都在街头奔波以维持生计？你是否被家人遗忘和忽视？你是否是你团队中的局外人，不得不与人们对你的无知刻板印象作斗争？拳师最重要的元素是他们的动机。一旦你确定了是什么事件造就了今天的你，便能根据这件事决定它如何影响你未来采取的行动。",
+								{
+									"ENG_name": "Quick Build",
+									"name": "快速建卡",
+									"type": "entries",
+									"entries": [
+										"你可以按照以下建议快速创建一个拳师。第一步，将最高的两个属性值设给力量和体质。第二步，选择{@background 罪犯}或{@background 流浪儿}背景。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
