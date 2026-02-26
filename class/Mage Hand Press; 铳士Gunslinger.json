@@ -1,0 +1,5662 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ValdaGunslinger",
+				"abbreviation": "GC:VSS'24",
+				"full": "铳士职业：瓦尔达的秘密尖塔",
+				"authors": [
+					"Mage Hand Press"
+				],
+				"convertedBy": [
+					"Unknown"
+				],
+				"version": "1.0",
+				"color": "CA8464",
+				"url": "https://marketplace.dndbeyond.com/category/DBGYLCFKE?icid_medium=organic&icid_source=bluebanner&icid_campaign=2025_3p_&icid_content=2025_hype",
+				"partnered": true,
+				"dateReleased": "2025-06-10"
+			}
+		],
+		"optionalFeatureTypes": {
+			"MV:G": "战技, 铳士"
+		},
+		"edition": "one",
+		"dateAdded": 1749673328,
+		"dateLastModified": 1772091371,
+		"_dateLastModifiedHash": "d86a8e65cf",
+		"translators": [
+			"博麗鈴谷",
+			"刺猬永念",
+			"鳄梨布丁",
+			"机关人会跑AI团吗？",
+			"是锡白不是惜败",
+			"天龙",
+			"辛拉面刺身"
+		]
+	},
+	"class": [
+		{
+			"ENG_name": "Gunslinger",
+			"name": "铳士",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"primaryAbility": [
+				{
+					"dex": true
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"featProgression": [
+				{
+					"ENG_name": "Fighting Style",
+					"name": "战斗风格",
+					"category": [
+						"FS"
+					],
+					"progression": {
+						"1": 1
+					}
+				},
+				{
+					"ENG_name": "Epic Boon",
+					"name": "传奇恩惠",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
+					}
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"{@filter 军用远程武器|items|type=远程武器}"
+				],
+				"weaponProficiencies": [
+					{
+						"simple": true,
+						"all": {
+							"fromFilter": "type=远程武器"
+						}
+					}
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"deception",
+								"insight",
+								"intimidation",
+								"perception",
+								"persuasion",
+								"sleight of hand",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"defaultData": [
+					{
+						"A": [
+							{
+								"item": "皮甲|xphb"
+							},
+							{
+								"item": "匕首|xphb",
+								"quantity": 2
+							},
+							{
+								"item": "左轮枪|ValdaGunslinger"
+							},
+							{
+								"item": "弹丸|ValdaGunslinger",
+								"quantity": 50
+							},
+							{
+								"item": "探索套组|xphb"
+							},
+							{
+								"value": 1100
+							}
+						],
+						"B": [
+							{
+								"value": 17500
+							}
+						]
+					}
+				],
+				"entries": [
+					"{@i 选择A或B：} (A) {@item 皮甲|XPHB}, 2 {@item 匕首|XPHB|匕首}, {@item 左轮枪|ValdaGunslinger}, 50 {@item 弹丸|ValdaGunslinger}, {@item 探索套组|XPHB}, 以及11 GP；或者(B) 175 GP"
+				]
+			},
+			"multiclassing": {
+				"proficienciesGained": {
+					"weapons": [
+						"{@filter 军用远程武器|items|type=远程武器}"
+					],
+					"weaponProficiencies": [
+						{
+							"all": {
+								"fromFilter": "type=远程武器"
+							}
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"风险骰",
+						"武器精通"
+					],
+					"rows": [
+						[
+							"-",
+							"2"
+						],
+						[
+							"{@dice 4d8}",
+							"2"
+						],
+						[
+							"{@dice 4d8}",
+							"2"
+						],
+						[
+							"{@dice 4d8}",
+							"3"
+						],
+						[
+							"{@dice 4d8}",
+							"3"
+						],
+						[
+							"{@dice 5d8}",
+							"3"
+						],
+						[
+							"{@dice 5d8}",
+							"3"
+						],
+						[
+							"{@dice 5d8}",
+							"3"
+						],
+						[
+							"{@dice 5d8}",
+							"3"
+						],
+						[
+							"{@dice 5d10}",
+							"4"
+						],
+						[
+							"{@dice 5d10}",
+							"4"
+						],
+						[
+							"{@dice 5d10}",
+							"4"
+						],
+						[
+							"{@dice 5d10}",
+							"4"
+						],
+						[
+							"{@dice 6d10}",
+							"4"
+						],
+						[
+							"{@dice 6d10}",
+							"4"
+						],
+						[
+							"{@dice 6d10}",
+							"4"
+						],
+						[
+							"{@dice 6d10}",
+							"4"
+						],
+						[
+							"{@dice 6d12}",
+							"4"
+						],
+						[
+							"{@dice 6d12}",
+							"4"
+						],
+						[
+							"{@dice 6d12}",
+							"4"
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"战斗风格|铳士|ValdaGunslinger|1",
+				"快速拔刀|铳士|ValdaGunslinger|1",
+				"武器精通|铳士|ValdaGunslinger|1",
+				"夺命重弹|铳士|ValdaGunslinger|2",
+				"风险|铳士|ValdaGunslinger|2",
+				{
+					"classFeature": "铳士子职|铳士|ValdaGunslinger|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|铳士|ValdaGunslinger|4",
+				"额外攻击|铳士|ValdaGunslinger|5",
+				"破脏弹|铳士|ValdaGunslinger|5",
+				{
+					"classFeature": "子职特性|铳士|ValdaGunslinger|6",
+					"gainSubclassFeature": true
+				},
+				"反射闪避|铳士|ValdaGunslinger|7",
+				"属性值提升|铳士|ValdaGunslinger|8",
+				"夺命重弹|铳士|ValdaGunslinger|9",
+				{
+					"classFeature": "子职特性|铳士|ValdaGunslinger|10",
+					"gainSubclassFeature": true
+				},
+				"斩尽杀绝|铳士|ValdaGunslinger|11",
+				"属性值提升|铳士|ValdaGunslinger|12",
+				"幸免于难|铳士|ValdaGunslinger|13",
+				{
+					"classFeature": "子职特性|铳士|ValdaGunslinger|14",
+					"gainSubclassFeature": true
+				},
+				"极险决策|铳士|ValdaGunslinger|15",
+				"属性值提升|铳士|ValdaGunslinger|16",
+				"夺命重弹|铳士|ValdaGunslinger|17",
+				"灵巧战技|铳士|ValdaGunslinger|18",
+				"传奇恩惠|铳士|ValdaGunslinger|19",
+				"爆头|铳士|ValdaGunslinger|20"
+			],
+			"subclassTitle": "子职特性",
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "critical-shot",
+						"type": "number",
+						"scale": {
+							"3": {
+								"value": 19
+							},
+							"9": {
+								"value": 18
+							},
+							"17": {
+								"value": 17
+							}
+						}
+					},
+					"title": "夺命重弹"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "risk-dice",
+						"type": "dice",
+						"scale": {
+							"2": {
+								"number": 4,
+								"faces": 8
+							},
+							"6": {
+								"number": 5,
+								"faces": 8
+							},
+							"10": {
+								"number": 5,
+								"faces": 10
+							},
+							"14": {
+								"number": 6,
+								"faces": 10
+							},
+							"18": {
+								"number": 6,
+								"faces": 12
+							}
+						}
+					},
+					"title": "风险骰"
+				}
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ValdaGunslinger/Gunslinger-icon.webp"
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Gunslinger",
+			"name": "铳士",
+			"source": "ValdaGunslinger",
+			"entries": [
+				{
+					"ENG_name": "Gunslinger",
+					"type": "section",
+					"name": "铳士",
+					"source": "ValdaGunslinger",
+					"entries": [
+						"风险流淌在铳士的血液中。他们是大胆的叛逆者，打破传统，用危险而粗犷的枪械开辟新道路。铳士以凭借机智生存而闻名，依靠瞬间的判断和大量的运气来幸存。",
+						{
+							"ENG_name": "Guts and Gunpowder",
+							"name": "勇气与火药",
+							"type": "entries",
+							"entries": [
+								"黑火药不适合胆小之人。它雷鸣般的掌声既不稳定也不精确\u2014\u2014那是对仇敌的勉强可控的爆炸。只有真正无畏者才会试图掌控它。但铳士有着锻钢般的意志，在喧嚣杂音中用火铳猛投死亡。为枪战而生的铳士行动灵活大胆，深知生死取决于瞬间的决策和自身的刚毅。"
+							]
+						},
+						{
+							"ENG_name": "Dangerous Outsiders",
+							"name": "危险的外乡人",
+							"type": "entries",
+							"entries": [
+								"铳士爆炸性的生活方式极其适合流浪与冒险。他们通常先开枪，后问问题，这种态度让他们朋友甚少而树敌众多。在旅途中，铳士通常隐秘行事，竭力不被注意，唯恐被那些老对手算旧账。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp"
+					},
+					"width": 850,
+					"height": 1336
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-004.gunshot-holes.webp"
+					},
+					"width": 850,
+					"height": 610
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-003.revolver.webp"
+					},
+					"width": 850,
+					"height": 385
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Deadeye",
+			"name": "死瞳客",
+			"shortName": "死瞳客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassFeatures": [
+				"死瞳客|铳士|ValdaGunslinger|死瞳客|ValdaGunslinger|3",
+				"无人知处|铳士|ValdaGunslinger|死瞳客|ValdaGunslinger|6",
+				"转移位置|铳士|ValdaGunslinger|死瞳客|ValdaGunslinger|10",
+				"射杀百头|铳士|ValdaGunslinger|死瞳客|ValdaGunslinger|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "High Roller",
+			"name": "豪赌客",
+			"shortName": "豪赌客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassFeatures": [
+				"豪赌客|铳士|ValdaGunslinger|豪赌客|ValdaGunslinger|3",
+				"暴虎冯河|铳士|ValdaGunslinger|豪赌客|ValdaGunslinger|6",
+				"行险狂徒|铳士|ValdaGunslinger|豪赌客|ValdaGunslinger|10",
+				"所有，或一无所有|铳士|ValdaGunslinger|豪赌客|ValdaGunslinger|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Secret Agent",
+			"name": "特务",
+			"shortName": "特务",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"3": [
+							"隐蔽射击|ValdaGunslinger#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"特务|铳士|ValdaGunslinger|特务|ValdaGunslinger|3",
+				"战场记忆|铳士|ValdaGunslinger|特务|ValdaGunslinger|6",
+				"撤退计划|铳士|ValdaGunslinger|特务|ValdaGunslinger|10",
+				"杀戮许可|铳士|ValdaGunslinger|特务|ValdaGunslinger|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Spellslinger",
+			"name": "魔弹客",
+			"shortName": "魔弹客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"preparedSpellsProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"preparedSpellsChange": "level",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"手指枪|ValdaGunslinger#c"
+						]
+					},
+					"expanded": {
+						"3": [
+							{
+								"all": "level=0|class=法师"
+							},
+							{
+								"all": "level=1|class=法师"
+							}
+						],
+						"7": [
+							{
+								"all": "level=2|class=法师"
+							}
+						],
+						"13": [
+							{
+								"all": "level=3|class=法师"
+							}
+						],
+						"19": [
+							{
+								"all": "level=4|class=法师"
+							}
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"手指枪|ValdaGunslinger",
+				{
+					"className": "法师",
+					"classSource": "XPHB"
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Spellslinger",
+							"name": "魔弹客",
+							"source": "ValdaGunslinger"
+						}
+					],
+					"colLabels": [
+						"{@filter 法术准备|spells|subclass=铳士：魔弹客（GC:VSS'24）}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"subclasses": [
+						{
+							"ENG_name": "Spellslinger",
+							"name": "魔弹客",
+							"source": "ValdaGunslinger"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=铳士：魔弹客（GC:VSS'24）}",
+						"{@filter 2nd|spells|level=2|subclass=铳士：魔弹客（GC:VSS'24）}",
+						"{@filter 3rd|spells|level=3|subclass=铳士：魔弹客（GC:VSS'24）}",
+						"{@filter 4th|spells|level=4|subclass=铳士：魔弹客（GC:VSS'24）}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"魔弹客|铳士|ValdaGunslinger|魔弹客|ValdaGunslinger|3",
+				"法术射击|铳士|ValdaGunslinger|魔弹客|ValdaGunslinger|6",
+				"施法反制|铳士|ValdaGunslinger|魔弹客|ValdaGunslinger|10",
+				"魔弹 [战技]|铳士|ValdaGunslinger|魔弹客|ValdaGunslinger|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Trick Shot",
+			"name": "花枪客",
+			"shortName": "花枪客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassFeatures": [
+				"花枪客|铳士|ValdaGunslinger|花枪客|ValdaGunslinger|3",
+				"花式枪法|铳士|ValdaGunslinger|花枪客|ValdaGunslinger|6",
+				"凌弹飞截 [战技]|铳士|ValdaGunslinger|花枪客|ValdaGunslinger|10",
+				"连珠弹射|铳士|ValdaGunslinger|花枪客|ValdaGunslinger|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "White Hat",
+			"name": "白帽客",
+			"shortName": "白帽客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassFeatures": [
+				"白帽客|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|3",
+				"举起手来|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|6",
+				"天网恢恢|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|10",
+				"金星英杰|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|14"
+			],
+			"hasFluffImages": true
+		}
+	],
+	"subclassFluff": [
+		{
+			"ENG_name": "Deadeye",
+			"name": "死瞳客",
+			"shortName": "死瞳客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-005.deadeye.webp"
+					},
+					"width": 850,
+					"height": 559
+				}
+			]
+		},
+		{
+			"ENG_name": "High Roller",
+			"name": "豪赌客",
+			"shortName": "豪赌客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-006.high-roller.webp"
+					},
+					"width": 850,
+					"height": 1008
+				}
+			]
+		},
+		{
+			"ENG_name": "Secret Agent",
+			"name": "特务",
+			"shortName": "特务",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-008.secret-agent.webp"
+					},
+					"width": 850,
+					"height": 1409
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellslinger",
+			"name": "魔弹客",
+			"shortName": "魔弹客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-009.spellslinger.webp"
+					},
+					"width": 850,
+					"height": 1072
+				}
+			]
+		},
+		{
+			"ENG_name": "Trick Shot",
+			"name": "花枪客",
+			"shortName": "花枪客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-010.trick-shot.webp"
+					},
+					"width": 850,
+					"height": 1014
+				}
+			]
+		},
+		{
+			"ENG_name": "White Hat",
+			"name": "白帽客",
+			"shortName": "白帽客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-011.white-hat.webp"
+					},
+					"width": 1700,
+					"height": 1162
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 1,
+			"entries": [
+				"你获得一项你选择的{@filter 战斗风格专长|feats|category=FS}。若你选择了一项要求你单手或双手持握近战武器的专长（如{@feat 巨武器战斗|XPHB}），你可以在持握远程武器时使用该专长。",
+				"每当你获得一个铳士等级时，你可以将所选的专长替换为不同的{@filter 战斗风格专长|feats|category=FS}。"
+			]
+		},
+		{
+			"ENG_name": "Quick Draw",
+			"name": "快速拔刀",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 1,
+			"entries": [
+				"你善于在他人反应前就拔枪射击，获得以下增益。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Initiative",
+							"name": "先攻",
+							"type": "entries",
+							"entries": [
+								"你能够进行有{@variantrule 优势|XPHB}的{@variantrule 先攻|XPHB}掷骰。"
+							]
+						},
+						{
+							"ENG_name": "Double Draw",
+							"name": "双重拔枪",
+							"type": "entries",
+							"entries": [
+								"拔出或入鞘武器时，你可以同时拔出或入鞘两把不具有{@itemProperty 2H|XPHB|双手}词条的武器，而非通常情况下的一把。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Weapon Mastery",
+			"name": "武器精通",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 1,
+			"entries": [
+				"你对武器的训练使你能够运用两种自选的{@filter 简易|items|type=简易武器}或{@filter 军用远程武器|items|type=远程武器}的精通词条。每当你完成一次{@variantrule 长休|XPHB}时，你可以演练武器技巧来改变你所选择的其中一个武器类型。",
+				"当你到达特定的铳士等级时，你还可以使用更多种类武器的精通词条，详见铳士特性表中武器精通一栏。"
+			]
+		},
+		{
+			"ENG_name": "Critical Shot",
+			"name": "夺命重弹",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 2,
+			"entries": [
+				"你使用远程武器的攻击检定可以在{@dice d20}掷出19或20时触发{@variantrule 重击|XPHB}。",
+				"在铳士9级时，你的远程武器攻击检定掷骰18-20时触发{@variantrule 重击|XPHB}。在铳士17级时，他们掷骰17-20时触发{@variantrule 重击|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Risk",
+			"name": "风险",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 2,
+			"entries": [
+				"你可以借助名为风险骰的特殊骰子，施展令人难以置信的大胆壮举。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Risk Dice",
+							"name": "风险骰",
+							"type": "entries",
+							"entries": [
+								"你具有四枚d8风险骰。每当你使用风险骰时，其被消耗。当你完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，重获所有已消耗的风险骰。你的风险骰将变动，且其可用数量会增多，如铳士特性表中风险骰一列所示。"
+							]
+						},
+						{
+							"ENG_name": "Maneuvers",
+							"name": "战技",
+							"type": "entries",
+							"entries": [
+								"你可以消耗风险骰来施展战技。你的战技选项详见后文的职业描述。"
+							]
+						},
+						{
+							"ENG_name": "Saving Throws",
+							"name": "豁免检定",
+							"type": "entries",
+							"entries": [
+								"若某个战技要求豁免检定，其DC等于8加你的敏捷调整值和{@variantrule 熟练|XPHB|熟练加值}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Maneuver Options",
+					"name": "战技选项",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "options",
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "咬紧牙关|ValdaGunslinger"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "盲射|ValdaGunslinger"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "翻滚闪避|ValdaGunslinger"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "擦掠弹|ValdaGunslinger"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "牛仔精神|ValdaGunslinger"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "千钧一发|ValdaGunslinger"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gunslinger Subclass",
+			"name": "铳士子职",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 3,
+			"entries": [
+				"你获得一项你选择的铳士子职。子职是一种特化，在特定的铳士等级给予你对应的独特能力。此后你将获得你所选的子职所有能力\u2014\u2014只要其所需等级不超过你的铳士等级。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 4,
+			"entries": [
+				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 5,
+			"entries": [
+				"当你在自己的回合执行{@action 攻击|XPHB}动作时，你可以发动两次攻击而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Gut Shot",
+			"name": "破脏弹",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 5,
+			"entries": [
+				"每当你使用武器的远程攻击对一名不超过大型的生物造成{@variantrule 重击|XPHB}时，枪弹将嵌入目标的体内。1分钟内或在其以剥离枪弹替换其的其中一次攻击时提前结束，目标的{@variantrule 速度|XPHB}减半且其攻击检定具有{@variantrule 劣势|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Subclass Feature",
+			"name": "子职特性",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 6,
+			"entries": [
+				"你获得一个铳士子职特性。"
+			]
+		},
+		{
+			"ENG_name": "Evasion",
+			"name": "反射闪避",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 7,
+			"entries": [
+				"当你受到一个允许你进行敏捷豁免来只承受一半伤害的效应影响时，你在豁免成功时不受伤害，豁免失败时只承受一半伤害。",
+				"如果你处于{@condition 失能|XPHB}状态，则你无法从此特性中受益。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 8,
+			"entries": [
+				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Critical Shot",
+			"name": "夺命重弹",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 9,
+			"entries": [
+				"你使用远程武器的攻击检定可以在{@dice d20}掷出18、19或20时触发{@variantrule 重击|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Subclass Feature",
+			"name": "子职特性",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 10,
+			"entries": [
+				"你获得一个铳士子职特性。"
+			]
+		},
+		{
+			"ENG_name": "Overkill",
+			"name": "斩尽杀绝",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 11,
+			"entries": [
+				"当你使用远程武器造成伤害，且掷骰中未加入你的属性调整值时，你将你的属性调整值加入伤害掷骰。若你已将属性调整值加入伤害掷骰，目标额外受到{@damage 1d8}伤害，伤害类型为武器的伤害类型。",
+				"请注意，具有{@itemProperty GC:VSS-F|ValdaGunslinger|枪械}词条的武器不会将你的属性调整值加入伤害掷骰。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 12,
+			"entries": [
+				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Cheat Death",
+			"name": "幸免于难",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 13,
+			"entries": [
+				"当你的{@variantrule 生命值|XPHB}降至0且未立即死亡时，你可以改为降至1{@variantrule 生命值|XPHB|生命值}，并恢复等于你铳士等级的数值的{@variantrule 生命值|XPHB}。",
+				"此特性一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Subclass Feature",
+			"name": "子职特性",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 14,
+			"entries": [
+				"你获得一个铳士子职特性。"
+			]
+		},
+		{
+			"ENG_name": "Dire Gambit",
+			"name": "极险决策",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 15,
+			"entries": [
+				"每当你投掷{@variantrule 先攻|XPHB}或造成{@variantrule 重击|XPHB}时，你重获一枚消耗的{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 16,
+			"entries": [
+				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Critical Shot",
+			"name": "夺命重弹",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 17,
+			"entries": [
+				"你使用远程武器的攻击检定在{@dice d20}中掷出17-20时即可造成{@variantrule 重击|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Deft Maneuver",
+			"name": "灵巧战技",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 18,
+			"entries": [
+				"你获得一个特殊的额外{@variantrule 附赠动作|XPHB}，每个你的回合可以使用一次。你只能使用这个特殊的{@variantrule 附赠动作|XPHB}来施展战技。"
+			]
+		},
+		{
+			"ENG_name": "Epic Boon",
+			"name": "传奇恩惠",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 19,
+			"entries": [
+				"你获得一项{@filter 传奇恩惠专长|feats|category=EB}或其他一项你选择的适用的专长。推荐选择{@feat 无敌攻势之恩惠|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Headshot",
+			"name": "爆头",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 20,
+			"entries": [
+				"当你使用远程武器对一名生物造成{@variantrule 重击|XPHB}时，你可以选择将其爆头。若该生物的生命值不高于100{@variantrule 生命值|XPHB}，其死亡。否则其额外受到{@damage 10d10}伤害，伤害类型为武器的伤害类型。",
+				"此特性一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗三枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}（无需动作）来重置此特性的使用权。"
+			]
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Quick Draw",
+			"name": "快速拔刀",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 1,
+			"effects": [
+				{
+					"ENG_name": "Quick Draw: Initiative",
+					"name": "快速拔枪：先攻",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.initiativeAdv",
+							"mode": 5,
+							"value": "true",
+							"priority": 20
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Critical Shot",
+			"name": "夺命重弹",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 2,
+			"effects": [
+				{
+					"ENG_name": "Critical Shot",
+					"name": "夺命重弹",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.weaponCriticalThreshold",
+							"mode": 3,
+							"value": "@scale.gunslinger.critical-shot",
+							"priority": 20
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Risk",
+			"name": "风险",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 2,
+			"system": {
+				"uses": {
+					"max": "@scale.gunslinger.risk-dice.number"
+				}
+			}
+		},
+		{
+			"ENG_name": "Gut Shot",
+			"name": "破脏弹",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 5,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你使用武器对大型或更小的生物发动远程攻击并造成重击时"
+					},
+					"effects": [
+						{
+							"foundryId": "XJZaOTPuJtRH5qAG"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Gut Shot",
+					"name": "破脏弹",
+					"foundryId": "XJZaOTPuJtRH5qAG",
+					"duration": {
+						"seconds": 60
+					},
+					"changes": []
+				}
+			]
+		},
+		{
+			"ENG_name": "Critical Shot",
+			"name": "夺命重弹",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 9,
+			"isIgnored": true
+		},
+		{
+			"ENG_name": "Overkill",
+			"name": "斩尽杀绝",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 11,
+			"activities": [
+				{
+					"ENG_name": "Enchant (Firearm)",
+					"name": "附魔（枪械）",
+					"type": "enchant",
+					"activation": {
+						"type": "special"
+					},
+					"duration": {
+						"units": "永续",
+						"concentration": false,
+						"override": false
+					},
+					"restrictions": {
+						"categories": [
+							"simpleR",
+							"martialR"
+						],
+						"type": "weapon"
+					},
+					"effects": [
+						{
+							"foundryId": "QD9d1gE6zl6wsy96"
+						}
+					]
+				},
+				{
+					"ENG_name": "Enchant (Non-Firearm)",
+					"name": "附魔（非枪械）",
+					"type": "enchant",
+					"activation": {
+						"type": "special"
+					},
+					"duration": {
+						"units": "永续",
+						"concentration": false,
+						"override": false
+					},
+					"restrictions": {
+						"categories": [
+							"simpleR",
+							"martialR"
+						],
+						"type": "weapon"
+					},
+					"effects": [
+						{
+							"foundryId": "jtcPhE5HSLpbxj9V"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Overkill",
+					"name": "斩尽杀绝",
+					"foundryId": "QD9d1gE6zl6wsy96",
+					"type": "enchantment",
+					"changes": [
+						{
+							"key": "system.damage.base.bonus",
+							"mode": 2,
+							"value": "@abilities.dex.mod"
+						}
+					]
+				},
+				{
+					"ENG_name": "Overkill",
+					"name": "斩尽杀绝",
+					"foundryId": "jtcPhE5HSLpbxj9V",
+					"type": "enchantment",
+					"changes": [
+						{
+							"key": "system.damage.base.bonus",
+							"mode": 2,
+							"value": "1d8"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cheat Death",
+			"name": "幸免于难",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 13,
+			"activities": [
+				{
+					"type": "heal",
+					"activation": {
+						"type": "special"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Cheat Death",
+										"name": "幸免于难"
+									}
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"choice": false,
+							"type": "self",
+							"special": ""
+						}
+					},
+					"range": {
+						"units": "self",
+						"override": false,
+						"special": ""
+					},
+					"healing": {
+						"denomination": 0,
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "@classes.gunslinger.levels + 1"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Dire Gambit",
+			"name": "极险决策",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 15,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "每当你掷先攻或获得重击时"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": false
+						},
+						"spellSlot": true,
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "-1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Critical Shot",
+			"name": "夺命重弹",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 17,
+			"isIgnored": true
+		},
+		{
+			"ENG_name": "Headshot",
+			"name": "爆头",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"level": 20,
+			"activities": [
+				{
+					"type": "damage",
+					"activation": {
+						"type": "special",
+						"condition": "当你使用远程武器对一名生物造成重击时，你可以选择将其爆头"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Headshot",
+										"name": "爆头"
+									}
+								}
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 10,
+								"denomination": 10
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Restore Use",
+					"name": "恢复使用",
+					"type": "utility",
+					"activation": {
+						"type": "special"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "-1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Headshot",
+										"name": "爆头"
+									}
+								}
+							},
+							{
+								"type": "itemUses",
+								"value": "3",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Deadeye",
+			"name": "死瞳客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"entries": [
+				"{@i 以靶心精准射击}",
+				"一枚精准的弹丸比剑、箭或法术更强大。事实上，你相信每一场激烈的冲突听上去都是一声巨响后长久的沉默术。这样的射击需要极致的完美，且不受范围的拘束。当射击达成时，对目标而言是致命的终结，对接见室则是震撼的奇迹。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "鹰眼 [战技]|铳士|ValdaGunslinger|死瞳客|ValdaGunslinger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神射之姿|铳士|ValdaGunslinger|死瞳客|ValdaGunslinger|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Eagle Eye [Maneuver]",
+			"name": "鹰眼 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"每回合一次，当你的远程攻击检定未命中时，你可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}并将其加入攻击检定，这可能令本次攻击改为命中。"
+			]
+		},
+		{
+			"ENG_name": "Sharpshooter's Stance",
+			"name": "神射之姿",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你接受了训练，能够稳定以{@condition 倒地|XPHB}姿势射击，并获得以下状态。",
+				{
+					"ENG_name": "Fire While Prone",
+					"name": "卧姿射击",
+					"type": "entries",
+					"entries": [
+						"你进行远程攻击检定时，不会因{@condition 倒地|XPHB}状态具有{@variantrule 劣势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Quick Stand",
+					"name": "快速起立",
+					"type": "entries",
+					"entries": [
+						"当你具有{@condition 倒地|XPHB}状态时，你可以调整姿势并仅以5尺移动力结束该状态。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Concealed Position",
+			"name": "无人知处",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你善于在隐蔽之处进行射击，获得以下增益。",
+				{
+					"ENG_name": "Camouflage",
+					"name": "伪装",
+					"type": "entries",
+					"entries": [
+						"即使你并未身处{@variantrule 重度遮蔽|XPHB}、{@variantrule 掩护|XPHB|四分之三掩护}或{@variantrule 掩护|XPHB|全身掩护}，只要你具有{@condition 倒地|XPHB}状态，你就可以执行{@action 躲藏|XPHB}动作。此次{@action 躲藏|XPHB}动作的{@condition 隐形|XPHB}状态将在你不再具有{@condition 倒地|XPHB}状态时提前结束。"
+					]
+				},
+				{
+					"ENG_name": "Sniper's Nest",
+					"name": "狙巢",
+					"type": "entries",
+					"entries": [
+						"如果你在躲藏中进行了攻击检定，但该次攻击未命中时，这次攻击将不会暴露你的位置。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Reposition",
+			"name": "转移位置",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"每当一名生物对你进行攻击检定失手时，你能够以{@variantrule 反应|XPHB}结束自身的{@condition 倒地|XPHB}状态并移动至多等于你{@variantrule 速度|XPHB}一半的距离。"
+			]
+		},
+		{
+			"ENG_name": "Focused Shot",
+			"name": "射杀百头",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"当你采取{@action 攻击|XPHB}动作时，你可以选择仅使用武器进行一次远程攻击检定以发动射杀百头。你在该攻击检定上具有{@variantrule 优势|XPHB}且命中时造成{@variantrule 重击|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "High Roller",
+			"name": "豪赌客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"entries": [
+				"{@i 生死为筹}",
+				"命运变幻莫测\u2014\u2014除非你是一名豪赌客。这些铳士是牌技大师、掷骰高手，他们将对风险的热爱与枪战的天赋完美结合。豪赌客会将自己的运气梭哈直至其消耗殆尽，然后他们将押上更多。既然能来一发大的，那何必满足于一时的胜利？",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "扑克脸|铳士|ValdaGunslinger|豪赌客|ValdaGunslinger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "欺天骰 [战技]|铳士|ValdaGunslinger|豪赌客|ValdaGunslinger|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Liar's Dice [Maneuver]",
+			"name": "欺天骰 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你使用远程武器进行伤害掷骰时，你能够以{@variantrule 附赠动作|XPHB}消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}并声明进行隐秘掷骰。你秘密地进行掷骰并宣言任何你期望的总值。然后DM可以选择揭穿你的虚张声势，此时你需要公布你的掷骰结果。这会根据你是否说谎产生不同后果。",
+				{
+					"ENG_name": "The GM Calls Your Bluff; You Lied",
+					"name": "DM揭穿你且你撒了谎",
+					"type": "entries",
+					"entries": [
+						"你造成的伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "The GM Calls Your Bluff; You Told the Truth",
+					"name": "DM揭穿你但你未撒谎",
+					"type": "entries",
+					"entries": [
+						"你造成的伤害翻倍。"
+					]
+				},
+				{
+					"ENG_name": "The GM Doesn't Call Your Bluff",
+					"name": "DM未揭穿你",
+					"type": "entries",
+					"entries": [
+						"使用你宣言的全部伤害，即使你的掷骰结果并非如此。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Poker Face",
+			"name": "扑克脸",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"欺瞒",
+							"洞悉",
+							"察觉"
+						],
+						"count": 1
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"gaming set": true,
+					"dice set": true,
+					"dragonchess set": true,
+					"playing card set": true,
+					"three-dragon ante set": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你获得所有{@item 赌具|XPHB|赌具}的熟练，并自选以下一项技能获得熟练：{@skill 欺瞒|XPHB}、{@skill 洞悉|XPHB}或{@skill 察觉|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Risky Business",
+			"name": "暴虎冯河",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"每回合一次，当你对敌人进行一次不具有{@variantrule 劣势|XPHB}的攻击检定时，你可以选择获得{@variantrule 劣势|XPHB}。若如此做，你重获一枚消耗的{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}。"
+			]
+		},
+		{
+			"ENG_name": "Risk Taker",
+			"name": "行险狂徒",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你使用你的{@optfeature 牛仔精神|ValdaGunslinger}和{@optfeature 千钧一发|ValdaGunslinger}战技时可以不消耗{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}。若如此做，你投掷{@dice d6}以替代{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}。"
+			]
+		},
+		{
+			"ENG_name": "Double or Nothing",
+			"name": "所有，或一无所有",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"当你使用远程武器造成{@variantrule 重击|XPHB}命中时，你可以赌一个更高的结果。掷一枚{@dice d20}，若结果为10或更高，则你伤害掷骰时投掷所有的伤害骰四次而非常规{@variantrule 重击|XPHB}的两次，并将结果相加。若{@dice d20}的结果为9或更低，则此次{@variantrule 重击|XPHB}被视为普通命中。"
+			]
+		},
+		{
+			"ENG_name": "Secret Agent",
+			"name": "特务",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"entries": [
+				"{@i 从事刺探与暗杀}",
+				"情报就是力量。击败敌人的最佳方法是窃取他们的情报，并替换为虚假信息。为此，你接受了隐蔽作战的训练以掌握多种技能，好辅助你令人生畏的枪法。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "特工训练|铳士|ValdaGunslinger|特务|ValdaGunslinger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "抛下凶弹 [战技]|铳士|ValdaGunslinger|特务|ValdaGunslinger|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Operative Training",
+			"name": "特工训练",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"欺瞒",
+							"调查",
+							"游说",
+							"巧手",
+							"隐匿"
+						],
+						"count": 2
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true,
+					"thieves' tools": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你的隐蔽训练赋予你以下增益：",
+				{
+					"ENG_name": "Concealed Shot",
+					"name": "隐蔽射击",
+					"type": "entries",
+					"entries": [
+						"你习得{@spell 隐蔽射击|ValdaGunslinger}戏法。智力、感知或魅力是你此戏法的施法属性（在选取该子职时选择）。"
+					]
+				},
+				{
+					"ENG_name": "Operative Tools",
+					"name": "特工工具",
+					"type": "entries",
+					"entries": [
+						"你获得一个{@item 易容工具|XPHB}和{@item 盗贼工具|XPHB}，并获得它们的熟练。"
+					]
+				},
+				{
+					"ENG_name": "Skill Proficiencies",
+					"name": "技能熟练",
+					"type": "entries",
+					"entries": [
+						"你自以下技能中选择两项获得熟练：{@skill 欺瞒|XPHB}、{@skill 调查|XPHB}、{@skill 游说|XPHB}、{@skill 巧手|XPHB}或{@skill 隐匿|XPHB}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Parting Shot [Maneuver]",
+			"name": "抛下凶弹 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在你的回合内执行{@action 疾走|XPHB}、{@action 撤离|XPHB}或{@action 回避|XPHB}动作时，你可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}以{@variantrule 附赠动作|XPHB}使用武器发动一次远程攻击。命中时，将{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}加入伤害掷骰中。"
+			]
+		},
+		{
+			"ENG_name": "Fieldcraft",
+			"name": "战场记忆",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的战场记忆赋予你以下增益。",
+				{
+					"ENG_name": "Quick Change",
+					"name": "快速变装",
+					"type": "entries",
+					"entries": [
+						"使用一个{@item 易容工具|XPHB}，你可以制作一套戏服并装着它作为一个{@variantrule 附赠动作|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Slick Talker",
+					"name": "巧舌如簧",
+					"type": "entries",
+					"entries": [
+						"每当你进行魅力（{@skill 欺瞒|XPHB}）或魅力（{@skill 游说|XPHB}）检定时，你可以将{@dice d20}掷骰小于等于9的结果视为10。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Exit Strategy",
+			"name": "撤退计划",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"当你受到伤害时，你可以采取{@variantrule 反应|XPHB}来避免进一步的损害。你将处于{@condition 隐形|XPHB}状态直至你的下个回合开始，并且可以立即移动至多10尺。",
+				"此特性一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}（无需动作）来复原此特性的使用权。"
+			]
+		},
+		{
+			"ENG_name": "License to Kill",
+			"name": "杀戮许可",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"每当你使用远程武器造成伤害时，你可以消耗一或两枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}并将其加入伤害掷骰中。若你在{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}上掷出最高数值，你可以无消耗地再次掷骰并将其加入伤害中，若仍掷出最高数值，则再次掷骰，以此类推。你可以加入伤害中的{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}数最多等于你的{@variantrule 熟练|XPHB|熟练加值}。"
+			]
+		},
+		{
+			"ENG_name": "Spellslinger",
+			"name": "魔弹客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"entries": [
+				"{@i 以奥秘补足你的魔枪掌控}",
+				"魔法和枪械并无太大区别\u2014\u2014奥术能量如同火药，法术如同子弹，而你则如同枪械，精准的将法术射向那些倒霉目标。魔弹客将枪法与施法灵术融合，有时在你的射击中装填奥术充能，发射带有光照、寒霜或火焰的强化弹丸。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "施法|铳士|ValdaGunslinger|魔弹客|ValdaGunslinger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "砰！你已经死了|铳士|ValdaGunslinger|魔弹客|ValdaGunslinger|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bang, You're Dead!",
+			"name": "砰！你已经死了",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以使用魔法来替代枪械。",
+				{
+					"ENG_name": "Finger Guns",
+					"type": "entries",
+					"name": "手指枪",
+					"entries": [
+						"你习得{@spell 手指枪|ValdaGunslinger}戏法。"
+					]
+				},
+				{
+					"ENG_name": "Arcane Shot",
+					"name": "奥术射击",
+					"type": "entries",
+					"entries": [
+						"当你以{@spell 手指枪|ValdaGunslinger}攻击命中目标时，你能够以{@variantrule 附赠动作|XPHB}消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}并加入伤害掷骰中。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你获得以施法能力辅助你的子弹的能力。",
+				{
+					"ENG_name": "Cantrips",
+					"name": "戏法",
+					"type": "entries",
+					"entries": [
+						"你从法师法术列表中选择两道戏法（参见该职业部分的法术列表）。推荐选择{@spell 火焰箭|XPHB}和{@spell 传讯术|XPHB}。每当你获得一个铳士等级时，你可以将其中一道戏法替换为你从法师法术列表中选择的另一道戏法。",
+						"当你的铳士等级到达10级时，你能另选一道法师戏法并习得。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"name": "法术位",
+					"type": "entries",
+					"entries": [
+						"魔弹客施法表显示了你可用于施放1环及以上法术的法术位数量。你在完成一次{@variantrule 长休|XPHB}时恢复所有已消耗的法术位。"
+					]
+				},
+				{
+					"ENG_name": "Prepared Spells of Level 1+",
+					"name": "1环及以上的准备法术",
+					"type": "entries",
+					"entries": [
+						"你准备可供你以此特性施展的一环及更高环阶的法术列表。为此，选择三道来自法师法术列表的一环法术。推荐选择{@spell 繁彩球|XPHB}、{@spell 跳跃术|XPHB}和{@spell 护盾术|XPHB}。",
+						"你列表中的法术数量会随你铳士等级的提升而增加，如魔弹客施法表中的准备法术一列所示。每当这一列的数字增加时，从法师法术列表中选择额外法术准备，直至列表中的法术数量与表格中的数字一致。所选法术的环阶必须是你所拥有法术位对应的环阶。例如，如果你是一名7级铳士，你的准备法术列表可以包含五个1环和2环的法师法术，且这些法术可以任意组合。"
+					]
+				},
+				{
+					"ENG_name": "Changing your Prepared Spells",
+					"name": "更换你的准备法术",
+					"type": "entries",
+					"entries": [
+						"每当你获得一个铳士等级，就可以将你准备列表上的一道法术替换为另一道法师法术，你必须拥有替换后法术对应环阶的法术位才可以替换。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"name": "施法属性",
+					"type": "entries",
+					"entries": [
+						"你法师法术的施法属性是智力。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"name": "法器",
+					"type": "entries",
+					"entries": [
+						"你可以使用一件{@item 奥术法器|XPHB}或一件远程武器作为你法师法术的{@variantrule 法器|XPHB}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellshot",
+			"name": "法术射击",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你在自己回合执行{@action 攻击|XPHB}动作时，你可以将该动作攻击中的一次攻击替换为施展一道施法时间为动作的你的法师戏法。"
+			]
+		},
+		{
+			"ENG_name": "Counter-Mage",
+			"name": "施法反制",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你对抗施法者的经验赋予你以下增益。",
+				{
+					"ENG_name": "Abjuration-Breaker",
+					"name": "破除防护",
+					"type": "entries",
+					"entries": [
+						"每当你进行远程攻击检定时，你暂时扰乱目标身上的防护魔法效应。攻击期间，以该生物为目标的法术效应（如{@spell 法师护甲|XPHB}），以及目标正着装或持用的魔法物品的词条及力量将被抑制且无法生效。此次攻击的目标也无法以{@variantrule 反应|XPHB}施展{@spell 护盾术|XPHB}等法术来应对攻击或伤害。"
+					]
+				},
+				{
+					"ENG_name": "Antimagic Shot",
+					"name": "反魔法射击",
+					"type": "entries",
+					"entries": [
+						"当你造成{@variantrule 重击|XPHB}且目标受到你的{@classFeature 破脏弹|铳士|ValdaGunslinger|5}特性影响时，枪弹还会阻碍目标施法。枪弹嵌在目标体内期间，目标无法施展法术或执行{@action 魔法|XPHB}动作。此外，目标为维持{@status 专注|XPHB}进行的体质豁免具有{@variantrule 劣势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Inured to Magic",
+					"name": "魔法适性",
+					"type": "entries",
+					"entries": [
+						"当你对抗法术或魔法效应时进行的豁免检定失败时，你能够以{@variantrule 反应|XPHB}掷{@dice 1d6}并加入检定，这可能令此次检定改为成功。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Magic Bullet [Maneuver]",
+			"name": "魔弹 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"当你进行法术攻击检定时，你能够以{@variantrule 附赠动作|XPHB}消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}，将法术攻击替换为使用武器的远程攻击。将{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}加入检定中。若命中，除法术攻击的效应外，此次攻击还会造成武器的正常伤害。"
+			]
+		},
+		{
+			"ENG_name": "Trick Shot",
+			"name": "花枪客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"entries": [
+				"{@i 八方弹射}",
+				"准确度对不同的人有着不同的含义。对你而言，真正的精准并不一定意味着首发即中，也可能包括子弹弹跳十几次后仍然命中目标。你的攻击即使未命中，甚至命中目标后，也如同悬空之矢一般危险。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "诡变弹道|铳士|ValdaGunslinger|花枪客|ValdaGunslinger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "跳弹 [战技]|铳士|ValdaGunslinger|花枪客|ValdaGunslinger|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Creative Trajectory",
+			"name": "诡变弹道",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以让你的射弹沿着难以想象的轨迹飞行。你使用武器的远程攻击忽视{@variantrule 掩护|XPHB|半身掩护}和{@variantrule 掩护|XPHB|四分之三掩护}。"
+			]
+		},
+		{
+			"ENG_name": "Ricochet [Maneuver]",
+			"name": "跳弹 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你使用武器发动的远程攻击未命中时，你能够以{@variantrule 附赠动作|XPHB}消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}重骰此次攻击并将{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}加入检定。你必须使用新的结果。"
+			]
+		},
+		{
+			"ENG_name": "Fancy Gunplay",
+			"name": "花式枪法",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你华丽的武器技巧赋予你以下增益。",
+				{
+					"ENG_name": "Gun Spinning",
+					"name": "沙鹰回旋",
+					"type": "entries",
+					"entries": [
+						"每回合一次，当你使用一把远程武器进行魅力（{@skill 表演|XPHB}）检定或敏捷（{@skill 巧手|XPHB}）检定时，你可以掷一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}并将其加入属性检定中且不消耗它。"
+					]
+				},
+				{
+					"ENG_name": "Speed Loader",
+					"name": "快速填装",
+					"type": "entries",
+					"entries": [
+						"在你的回合中，你可以不消耗动作或{@variantrule 附赠动作|XPHB}来为一把具有{@itemProperty RLD|XDMG|弹容}词条的武器装弹。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Deft Deflection [Maneuver]",
+			"name": "凌弹飞截 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你能够击落凌空的射弹。当位于你30尺的盟友内被一次攻击命中时，你能够以{@variantrule 反应|XPHB}消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}，令盟友获得战技{@optfeature 千钧一发|ValdaGunslinger}的增益来对抗那次攻击。你必须持握远程武器以使用该战技。"
+			]
+		},
+		{
+			"ENG_name": "Pinball Shot",
+			"name": "连珠弹射",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"每个你的回合一次，当你使用武器发动远程攻击命中一名生物时，你能够将射弹偏转弹射至额外的目标。选择一个位于首个目标30尺内的不同目标，对其进行一次攻击检定。命中则你可以对30尺内的新目标重复此攻击，直至你未命中或共发动了五次攻击。每次使用此特性时，你无法重复指定某生物为目标。",
+				"此特性一经使用，直至你完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}都无法再次使用。你也可以消耗两枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}（无需动作）来重置此特性的使用权。"
+			]
+		},
+		{
+			"ENG_name": "White Hat",
+			"name": "白帽客",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "白帽客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"entries": [
+				"{@i 维护盟友，恪守律法}",
+				"有些铳士恪守信条，亦以信条律人。这些被称作白帽客的铳士有时会担任执法人员，然当法律有悖正道时，他们也不会为执行正义踟蹰。尽管白帽客对致命武器有着亲和力，但他们更倾向保护盟友、并兵不血刃的降服敌人\u2014\u2014可惜敌人鲜少成全此愿。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "布法制律 [战技]|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "冷目灵光|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Lay Down the Law [Maneuver]",
+			"name": "布法制律 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "白帽客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你能够以一个{@variantrule 附赠动作|XPHB}并消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}来警戒威胁你同伴的危险。选择一名位于你60尺内的你可见的盟友。该盟友获得等于{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}骰值的{@variantrule 临时生命值|XPHB}。直至你的下个回合开始，若该盟友被一次攻击命中，你能够以一个{@variantrule 反应|XPHB}使用武器对攻击者发动一次远程攻击。"
+			]
+		},
+		{
+			"ENG_name": "Steely-Eyed Aura",
+			"name": "冷目灵光",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "白帽客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你身上散发出坚韧意志的灵光，覆盖源自你的10尺{@variantrule 光环 [效应区域]|XPHB|光环}。你和身处{@variantrule 光环 [效应区域]|XPHB|光环}内的盟友为避免或结束{@condition 恐慌|XPHB}状态时进行的豁免检定具有{@variantrule 优势|XPHB}。在你陷入{@condition 失能|XPHB}状态期间，此灵光失效。"
+			]
+		},
+		{
+			"ENG_name": "Reach for the Skies",
+			"name": "举起手来",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "白帽客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你对一名生物造成{@variantrule 重击|XPHB}时，你要求目标投降以替代对其发射射弹。目标必须成功进行一次感知豁免对抗你的战技豁免DC，否则陷入{@condition 恐慌|XPHB}与{@condition 失能|XPHB}状态，持续1分钟。若该生物受到任意伤害、你陷入{@condition 失能|XPHB}状态或你死亡，这些状态提前结束。该生物在其每个回合结束时重复感知豁免，成功则终止其身上的这些状态。"
+			]
+		},
+		{
+			"ENG_name": "Long Arm of the Law",
+			"name": "天网恢恢",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "白帽客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"每回合一次，当你使用武器发动远程攻击命中不超过大型的生物时，你能够令目标蹒跚。该生物在其下个回合内在执行{@action 撤离|XPHB}动作前无法进行移动。"
+			]
+		},
+		{
+			"ENG_name": "Gold Star Hero",
+			"name": "金星英杰",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "白帽客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"凭借你英勇的枪法，你获得以下增益。",
+				{
+					"ENG_name": "Improved Aura",
+					"name": "灵光提升",
+					"type": "entries",
+					"entries": [
+						"你的{@subclassFeature 冷目灵光|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|3}特性的范围提升至30尺。"
+					]
+				},
+				{
+					"ENG_name": "Iron-Clad Law",
+					"name": "铁律",
+					"type": "entries",
+					"entries": [
+						"当你使用你的{@subclassFeature 布法制律 [战技]|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|3|ValdaGunslinger|布法制律}战技时，该盟友具有{@variantrule 抗性|XPHB}对抗钝击、穿刺和挥砍伤害，直至你的下个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "Stunned Surrender",
+					"name": "慑降",
+					"type": "entries",
+					"entries": [
+						"当一名生物对抗你{@subclassFeature 举起手来|铳士|ValdaGunslinger|白帽客|ValdaGunslinger|6}特性的豁免检定失败时，其陷入{@condition 震慑|XPHB}状态替代{@condition 失能|XPHB}状态。"
+					]
+				}
+			]
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Eagle Eye [Maneuver]",
+			"name": "鹰眼 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你远程攻击掷骰未命中时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"roll": {
+						"ENG_name": "Add to Attack Roll",
+						"name": "添加到攻击检定",
+						"formula": "1@scale.gunslinger.risk-dice.die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Liar's Dice [Maneuver]",
+			"name": "欺天骰 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"value": 1,
+						"condition": "当你使用远程武器进行伤害掷骰时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Risky Business",
+			"name": "暴虎冯河",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Regain Risk Die",
+					"name": "重获风险骰",
+					"type": "utility",
+					"activation": {
+						"type": "special"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "-1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Double or Nothing",
+			"name": "所有，或一无所有",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "豪赌客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你使用远程武器造成重击命中时"
+					},
+					"roll": {
+						"formula": "1d20"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Parting Shot [Maneuver]",
+			"name": "抛下凶弹 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"activities": [
+				{
+					"type": "damage",
+					"activation": {
+						"type": "bonus",
+						"condition": "当你在自己的回合执行{@action 疾走|XPHB}、{@action 撤离|XPHB}或{@action 回避|XPHB}动作时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "1@scale.gunslinger.risk-dice.die"
+								},
+								"denomination": 0,
+								"types": [
+									"穿刺"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Exit Strategy",
+			"name": "撤退计划",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"value": 1,
+						"condition": "当你受到伤害时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Exit Strategy",
+										"name": "撤退计划"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Restore Use",
+					"name": "恢复使用",
+					"type": "utility",
+					"activation": {
+						"type": "special"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "-1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Exit Strategy",
+										"name": "撤退计划"
+									}
+								}
+							},
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "License to Kill",
+			"name": "杀戮许可",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "特务",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"activities": [
+				{
+					"type": "damage",
+					"activation": {
+						"type": "special",
+						"condition": "当你使用远程武器造成伤害时"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": true,
+							"max": "2"
+						},
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "@scaling",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scaling@scale.gunslinger.risk-dice.die"
+								},
+								"denomination": 0,
+								"types": [
+									"穿刺"
+								],
+								"scaling": {
+									"number": 1
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Bang, You're Dead!",
+			"name": "砰！你已经死了",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Arcane Shot",
+					"name": "奥术射击",
+					"type": "damage",
+					"activation": {
+						"type": "bonus",
+						"condition": "当你用手指枪攻击命中一个目标时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "1@scale.gunslinger.risk-dice.die"
+								},
+								"denomination": 0,
+								"types": [
+									"穿刺"
+								],
+								"scaling": {
+									"number": 1
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Counter-Mage",
+			"name": "施法反制",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"value": 1,
+						"condition": "当你对抗法术或魔法效应时进行的豁免检定失败时"
+					},
+					"roll": {
+						"formula": "1d6"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Magic Bullet [Maneuver]",
+			"name": "魔弹 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "魔弹客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"roll": {
+						"formula": "1@scale.gunslinger.risk-dice.die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Ricochet [Maneuver]",
+			"name": "跳弹 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"roll": {
+						"formula": "1@scale.gunslinger.risk-dice.die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Fancy Gunplay",
+			"name": "花式枪法",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Gun Spinning",
+					"name": "沙鹰回旋",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"value": 1
+					},
+					"roll": {
+						"formula": "1@scale.gunslinger.risk-dice.die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Deft Deflection [Maneuver]",
+			"name": "凌弹飞截 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 10,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"value": 1,
+						"condition": "当位于你30尺的盟友内被一次攻击命中时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "ally"
+						},
+						"prompt": true
+					},
+					"range": {
+						"units": "ft",
+						"value": "30"
+					},
+					"roll": {
+						"formula": "1@scale.gunslinger.risk-dice.die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Pinball Shot",
+			"name": "连珠弹射",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "花枪客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 14,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "special"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Pinball Shot",
+										"name": "连珠弹射"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Restore Use",
+					"name": "恢复使用",
+					"type": "utility",
+					"activation": {
+						"type": "",
+						"value": null
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							},
+							{
+								"type": "itemUses",
+								"value": "-1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Pinball Shot",
+										"name": "连珠弹射"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Lay Down the Law [Maneuver]",
+			"name": "布法制律 [战技]",
+			"source": "ValdaGunslinger",
+			"className": "铳士",
+			"classSource": "ValdaGunslinger",
+			"subclassShortName": "白帽客",
+			"subclassSource": "ValdaGunslinger",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "heal",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "ally"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					},
+					"healing": {
+						"denomination": 0,
+						"types": [
+							"temphp"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "1@scale.gunslinger.risk-dice.die"
+						}
+					}
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Bite the Bullet",
+			"name": "咬紧牙关",
+			"source": "ValdaGunslinger",
+			"featureType": [
+				"MV:G"
+			],
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}获得{@variantrule 临时生命值|XPHB}，数值等于风险骰骰值加你的铳士等级。"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp"
+		},
+		{
+			"ENG_name": "Blindfire",
+			"name": "盲射",
+			"source": "ValdaGunslinger",
+			"featureType": [
+				"MV:G"
+			],
+			"entries": [
+				"你可以采取一个{@variantrule 附赠动作|XPHB}并消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}来获得30尺{@sense 盲视|XPHB}，持续至当前回合结束。"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp"
+		},
+		{
+			"ENG_name": "Dodge Roll",
+			"name": "翻滚闪避",
+			"source": "ValdaGunslinger",
+			"featureType": [
+				"MV:G"
+			],
+			"entries": [
+				"你可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}作为{@variantrule 附赠动作|XPHB}来移动至多15尺并为你正持握的远程武器换弹。此次移动不会引发{@action 借机攻击|XPHB|借机攻击}且不受{@variantrule 困难地形|XPHB}影响。"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp"
+		},
+		{
+			"ENG_name": "Grazing Shot",
+			"name": "擦掠弹",
+			"source": "ValdaGunslinger",
+			"featureType": [
+				"MV:G"
+			],
+			"entries": [
+				"当你使用武器进行的远程攻击检定失手时，你可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}（无需动作）对该生物造成等于风险骰骰值加你的敏捷调整值（至少为1）的伤害，伤害类型为武器伤害类型，此伤害仅可通过提升属性调整值提高。每回合你仅可使用一次该战技。"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp"
+		},
+		{
+			"ENG_name": "Maverick Spirit",
+			"name": "牛仔精神",
+			"source": "ValdaGunslinger",
+			"featureType": [
+				"MV:G"
+			],
+			"entries": [
+				"当你在智力、感知或魅力属性检定或豁免检定中失败时，你可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}并将其加入检定结果中，这可能使检定改为成功。每回合你仅可使用一次该战技。"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp"
+		},
+		{
+			"ENG_name": "Skin of Your Teeth",
+			"name": "千钧一发",
+			"source": "ValdaGunslinger",
+			"featureType": [
+				"MV:G"
+			],
+			"entries": [
+				"当你可见的生物以攻击检定命中你时，你能够以{@variantrule 反应|XPHB}消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}来躲避危害。掷骰并将结果加入对抗那次攻击的AC，这可能令那次攻击改为失手。"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp"
+		}
+	],
+	"foundryOptionalfeature": [
+		{
+			"ENG_name": "Bite the Bullet",
+			"name": "咬紧牙关",
+			"source": "ValdaGunslinger",
+			"activities": [
+				{
+					"type": "heal",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"choice": false,
+							"type": "self",
+							"special": ""
+						}
+					},
+					"range": {
+						"units": "self"
+					},
+					"healing": {
+						"denomination": 0,
+						"types": [
+							"temphp"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "@scale.gunslinger.risk-dice.die + @classes.gunslinger.levels"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Blindfire",
+			"name": "盲射",
+			"source": "ValdaGunslinger",
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Dodge Roll",
+			"name": "翻滚闪避",
+			"source": "ValdaGunslinger",
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Grazing Shot",
+			"name": "擦掠弹",
+			"source": "ValdaGunslinger",
+			"activities": [
+				{
+					"type": "damage",
+					"activation": {
+						"type": "special",
+						"condition": "当你使用武器进行远程攻击掷骰未命中时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.gunslinger.risk-dice.die + @abilities.dex.mod"
+								},
+								"denomination": 0
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Maverick Spirit",
+			"name": "牛仔精神",
+			"source": "ValdaGunslinger",
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你在智力、感知或魅力属性检定或豁免检定中失败时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					},
+					"roll": {
+						"formula": "@scale.gunslinger.risk-dice.die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Skin of Your Teeth",
+			"name": "千钧一发",
+			"source": "ValdaGunslinger",
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"value": 1,
+						"condition": "当你看见的生物以攻击检定命中你时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Risk",
+										"name": "风险"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"feat": [
+		{
+			"ENG_name": "Gun-Mage Adept",
+			"name": "魔枪掌控",
+			"source": "ValdaGunslinger",
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4,
+					"spellcasting2020": true
+				}
+			],
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Ranged Weapon Proficiency",
+					"name": "远程武器熟练",
+					"type": "entries",
+					"entries": [
+						"你获得远程军用武器的熟练。"
+					]
+				},
+				{
+					"ENG_name": "Cantrip",
+					"name": "戏法",
+					"type": "entries",
+					"entries": [
+						"你习得{@spell 手指枪|ValdaGunslinger}戏法。"
+					]
+				},
+				{
+					"ENG_name": "Expanded Spell List",
+					"name": "扩展法术列表",
+					"type": "entries",
+					"entries": [
+						"以下法术被加入你的法术列表中：{@spell 防弹力场|ValdaGunslinger}、{@spell 斩击弹|ValdaGunslinger}、{@spell 加农炮击|ValdaGunslinger}、{@spell 咒唤掩体|ValdaGunslinger}、{@spell 卡你武器|ValdaGunslinger}、{@spell 杰斯罗的瞬填术|ValdaGunslinger}和{@spell 贯星一条|ValdaGunslinger}。"
+					]
+				},
+				{
+					"ENG_name": "Spells Prepared",
+					"name": "法术准备",
+					"type": "entries",
+					"entries": [
+						"从扩展法术列表增益中选择数量等于你{@variantrule 熟练|XPHB|熟练加值}的法术。你始终准备着这些法术。每当你提升等级时，你可以将其中一道法术替换为扩展法术列表中的另一道法术。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Iron Hero",
+			"name": "铁血英雄",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaPlayerPack"
+				}
+			],
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Underdog's Resolve",
+					"name": "弱者决心",
+					"type": "entries",
+					"entries": [
+						"当你被挑战等级高于你角色等级的生物攻击时，你对抗此次攻击的{@variantrule 护甲等级|XPHB}会获得+2加值。"
+					]
+				},
+				{
+					"ENG_name": "Vengeful Strike",
+					"name": "报复打击",
+					"type": "entries",
+					"entries": [
+						"若任何生物在你的上个回合结束后将你盟友的{@variantrule 生命值|XPHB}降为0，则你对该生物进行的攻击检定具有{@variantrule 优势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Heroic Intervention",
+					"name": "英雄干预",
+					"type": "entries",
+					"entries": [
+						"当一名你可见的敌人执行传奇动作时，你能够以{@variantrule 反应|XPHB}进行干预，阻止该传奇动作发生。你可以执行该{@variantrule 反应|XPHB}的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，并在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Marksman's Luck",
+			"name": "神射鸿运",
+			"source": "ValdaGunslinger",
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4,
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Flip Die",
+					"name": "翻转骰面",
+					"type": "entries",
+					"entries": [
+						"每回合一次，当你使用远程武器进行伤害掷骰时，你可以翻转其中的一枚伤害骰，并使用其底面的骰值。你不能将此能力用于d4骰。注：对于一枚平衡的骰子，其任一顶面与对应底面的数字之和比该骰的最大值大1。"
+					]
+				},
+				{
+					"ENG_name": "Enhanced Critical",
+					"name": "强化重击",
+					"type": "entries",
+					"entries": [
+						"当你使用远程武器{@variantrule 重击|XPHB}命中时，目标的{@variantrule 速度|XPHB}变为0，直至其下个回合结束。"
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"ENG_name": "Antiballistics Field",
+			"name": "防弹力场",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "动作"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一掐捏湿火药"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一个40尺的{@variantrule 光环 [效应区域]|XPHB|光环}以你为中心展开，干扰所有飞弹并使所有远程武器故障。处于{@variantrule 光环 [效应区域]|XPHB|光环}内，任何远程武器被用于攻击时都会故障，该次攻击被浪费。武器故障后将无法被使用，直至有生物用利用{@action 操作|XPHB}动作将武器的故障修理完毕为止。任何武器发动的攻击中，若其飞弹会穿过{@variantrule 光环 [效应区域]|XPHB|光环}区域，本次攻击就将具有{@variantrule 劣势|XPHB}，命中后造成的伤害也将减半。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Cleric",
+						"name": "牧师",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Ballistic Smite",
+			"name": "斩击弹",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "附赠动作",
+					"condition": "在你使用远程武器命中一个生物时紧接可用"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择强酸、寒冷、火焰、闪电、毒素或雷鸣伤害。此次攻击命中的目标额外受到{@damage 2d6}所选类型的伤害。触发攻击可以造成所选伤害类型或其正常伤害类型（由你选择）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"伤害对每个高于1环的法术位环阶增加{@dice 1d6}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Paladin",
+						"name": "圣武士",
+						"source": "XPHB"
+					}
+				]
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-015.explosion.webp"
+						},
+						"width": 850,
+						"height": 591
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Concealed Shot",
+			"name": "隐蔽射击",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 0,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "动作"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "远程武器"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你触碰的远程武器获得超自然般的精妙结构。法术持续时间内，当你用这把武器发动远程攻击时，武器或你使用的弹药在飞行过程中变为{@condition 隐形}且武器被消音。如果武器会产生烟雾或光亮，法术会抑制这些效应。在本次攻击命中或失手后，你使用的武器或飞弹将重新显形。如果你处于隐蔽状态且目标距离你80尺或更远，此次攻击不会暴露你的位置。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Bard",
+						"name": "吟游诗人",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Conjure Cannonball",
+			"name": "加农炮击",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 3,
+			"school": "C",
+			"subschools": [
+				"枪械"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "动作"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 600
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一门小型复制火炮"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在空中召唤出一颗加农炮弹，以全速飞出，并在碰撞后爆炸。对法术施法距离内的一个你可见的目标发动一次远程法术攻击。命中时，目标受到{@damage 5d10}钝击伤害，而且爆炸将覆盖以其为源头的5尺{@variantrule 光环 [效应区域]|XPHB|光环}。{@variantrule 光环 [效应区域]|XPHB|光环}区域内除目标外的所有生物都需要进行一次敏捷豁免，豁免失败者将受到上述伤害的一半。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"使用的法术位每比三环高1环，炮弹的伤害就增加{@dice 1d10}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+		{
+			"ENG_name": "Conjure Cover",
+			"name": "咒唤掩体",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "附赠动作"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一个鸭鸭的模型"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在地面上咒唤出一道低矮的圆石墙壁。矮墙厚18寸，由三个5尺长3尺高的墙段组成。每个墙段都必须与至少一个别的墙段有所连接。",
+				"躲在矮墙后的中型生物具有{@variantrule 掩护|XPHB|半身掩护}，躲在矮墙后的小型生物具有{@variantrule 掩护|XPHB|四分之三掩护}。这堵矮墙可以被翻越过去，且不需要额外消耗移动力。",
+				"每个墙段具有10的AC与30{@variantrule 生命值|XPHB}。将墙段的生命值降至0{@variantrule 生命值|XPHB}会导致其坍塌并被摧毁。当所有墙段都被摧毁时，或是法术结束时，这堵矮墙将消失。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Paladin",
+						"name": "圣武士",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"ENG_name": "Finger Guns",
+			"name": "手指枪",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaPlayerPack"
+				},
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "附赠动作"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你伸出你的大拇指与食指，摆出一个极具危险性的枪型手势。法术持续时间内，你的手被视为一件简易远程武器，具有60/240尺的范围与精通词条{@itemMastery 缓速|XPHB}。你使用施法属性（而非敏捷）进行这把武器的攻击检定，在命中时这把武器将造成{@damage 2d6}力场伤害（伤害中不加入你的属性调整值）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Cantrip Upgrade",
+					"name": "戏法强化",
+					"type": "entries",
+					"entries": [
+						"该武器的常规射程增加30尺，最大射程增加120尺，当你达到5级（90/360尺）、11级（120/480尺）和17级（150/600尺）时生效。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Bard",
+						"name": "吟游诗人",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"ENG_name": "Jam Weapon",
+			"name": "卡你武器",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "反应",
+					"condition": "当你看到范围内的一名生物使用远程武器进行攻击时触发"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一掐捏湿火药"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你所指定的武器将发生故障，本次攻击失手。故障的武器将无法被用于攻击，直至有生物利用{@action 操作|XPHB}动作将武器的故障修理完毕为止。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Bard",
+						"name": "吟游诗人",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"ENG_name": "Jethro's Instant Reload",
+			"name": "杰斯罗的瞬填术",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "动作"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一枚使用过的弹丸"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"附魔你触碰的那把远程武器，令它能够自动为自己换弹。如果武器具有{@itemProperty LD|XPHB|装填}或{@itemProperty RLD|XDMG|弹容}属性，法术持续时间内你将无视它们。当这把武器的弹药被击发后，新的弹药会从你的携带物品中自动传送到武器中。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Bard",
+						"name": "吟游诗人",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Ranger",
+						"name": "游侠",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Perforating Shot",
+			"name": "贯星一条",
+			"source": "ValdaGunslinger",
+			"otherSources": [
+				{
+					"source": "ValdaSpire24"
+				}
+			],
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "附赠动作",
+					"condition": "当你用武器发动的远程攻击命中或失手后立刻执行"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你的攻击命中或失手目标时，该武器或弹药转化为一道5尺宽的{@variantrule 线状 [效应区域]|XPHB|线状}魔法能量，延伸至武器的常规范围为止。该{@variantrule 线状 [效应区域]|XPHB|线状}需包括此次攻击的原目标。{@variantrule 线状 [效应区域]|XPHB|线状}内的每名生物需进行一次敏捷豁免检定，豁免失败则受到等同于武器正常伤害的力场伤害，豁免成功则受到一半伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"武器的伤害增加{@dice 1d8}（使用的法术位每比一环高1环）。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Paladin",
+						"name": "圣武士",
+						"source": "XPHB"
+					},
+					{
+						"ENG_name": "Ranger",
+						"name": "游侠",
+						"source": "XPHB"
+					}
+				]
+			},
+			"savingThrow": [
+				"dexterity"
+			]
+		}
+	],
+	"baseitem": [
+		{
+			"ENG_name": "Assault Rifle",
+			"name": "突击步枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 7,
+			"value": 30000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"2H|XPHB",
+				"RLD|XDMG",
+				"GC:VSS-M|ValdaGunslinger"
+			],
+			"mastery": [
+				"自动|ValdaGunslinger"
+			],
+			"range": "80/320",
+			"reload": 20,
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"高射速与步枪级弹道的结合，突击步枪是所有现代军队的标准武器。此类武器存在数十种通用设计的变体，但不变的是它灵活与强大的特质。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Blunderbuss",
+			"name": "喇叭铳",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 15,
+			"value": 75000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"H|XPHB",
+				"LD|XPHB",
+				"2H|XPHB",
+				"GC:VSS-Ren|ValdaGunslinger"
+			],
+			"mastery": [
+				"散射|ValdaGunslinger"
+			],
+			"range": "20/60",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"这把与众不同的短程枪械最大的特点就是如喇叭般的枪口，可用于大范围散射子弹。这种武器在近距离战斗中十分有效，可以被视为现代霰弹枪的先驱者。"
+			],
+			"ammoType": "射弹|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Bullet",
+			"name": "弹丸",
+			"source": "ValdaGunslinger",
+			"type": "A|XPHB",
+			"rarity": "none",
+			"weight": 0.15,
+			"value": 30,
+			"bulletFirearm": true,
+			"entries": [
+				"具有{@itemProperty AF|XDMG|弹药}词条的武器需要弹药。武器描述会指定其使用的弹药类型。",
+				"枪械弹药被使用后即摧毁。"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-014.firearm-ammunition.webp"
+		},
+		{
+			"ENG_name": "Cannon",
+			"name": "火炮",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 225,
+			"value": 150000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"H|XPHB",
+				"LD|XPHB",
+				"2H|XPHB",
+				"GC:VSS-I|ValdaGunslinger"
+			],
+			"mastery": [
+				"爆炸|ValdaGunslinger"
+			],
+			"range": "100/400",
+			"dmg1": "2d8",
+			"dmgType": "F",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"滑膛、前装的火炮是海盗船与防御要塞的常见固定装置，在一声轰鸣下能将木料炸得四分五裂，石材瞬间化为瓦砾。这种武器也存在攻城用的大型版本，那将需要一整个队伍的操作者来瞄准、装填、开炮。"
+			],
+			"ammoType": "加农炮弹|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Cannonball",
+			"name": "加农炮弹",
+			"source": "ValdaGunslinger",
+			"type": "A|XPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"bulletFirearm": true,
+			"entries": [
+				"具有{@itemProperty AF|XDMG|弹药}词条的武器需要弹药。武器描述会指定其使用的弹药类型。",
+				"枪械弹药被使用后即摧毁。"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-014.firearm-ammunition.webp"
+		},
+		{
+			"ENG_name": "Double-Barrel Shotgun",
+			"name": "双管霰弹枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 8,
+			"value": 17500,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"GC:VSS-R",
+				"RLD|XDMG",
+				"2H|XPHB",
+				"GC:VSS-I|ValdaGunslinger"
+			],
+			"mastery": [
+				"散射|ValdaGunslinger"
+			],
+			"range": "20/60",
+			"reload": 2,
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"双管霰弹枪有着双发膛室的经典设计，以载弹量与有效射程换取可靠与火力。"
+			],
+			"ammoType": "壳|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Flare",
+			"name": "耀斑",
+			"source": "ValdaGunslinger",
+			"type": "A|XPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 100,
+			"bulletFirearm": true,
+			"entries": [
+				"具有{@itemProperty AF|XDMG|弹药}词条的武器需要弹药。武器描述会指定其使用的弹药类型。",
+				"枪械弹药被使用后即摧毁。"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-014.firearm-ammunition.webp"
+		},
+		{
+			"ENG_name": "Flare Gun",
+			"name": "信号枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 10000,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"LD|XPHB",
+				"GC:VSS-M|ValdaGunslinger"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "30/120",
+			"dmg1": "2d6",
+			"dmgType": "F",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"信号枪不像是一把枪械，更像是一把求生工具。它能发射出一发白热的耀斑，可用以发送求救信号，也可用于孤注一掷的自保武器。"
+			],
+			"ammoType": "耀斑|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Gatling Gun",
+			"name": "加特林机枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 125,
+			"value": 75000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"H|XPHB",
+				"RLD|XDMG",
+				"2H|XPHB",
+				"GC:VSS-I|ValdaGunslinger"
+			],
+			"mastery": [
+				"自动|ValdaGunslinger"
+			],
+			"range": "60/240",
+			"reload": 40,
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"加特林机枪以其射速闻名，它有六个（或更多）枪膛旋转、轮换射击。这种武器笨重，但易于辨认且非常骇人。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Handgun",
+			"name": "手枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 12500,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"L|XPHB",
+				"RLD|XDMG",
+				"GC:VSS-M|ValdaGunslinger"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "30/120",
+			"reload": 10,
+			"dmg1": "2d4",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"便携、可靠且弹匣容量大，手枪是自卫与执法的首选枪械。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Hunting Rifle",
+			"name": "狩猎步枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 8,
+			"value": 15000,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"RLD|XDMG",
+				"2H|XPHB",
+				"GC:VSS-I|ValdaGunslinger"
+			],
+			"mastery": [
+				"开镜|ValdaGunslinger"
+			],
+			"range": "80/320",
+			"reload": 4,
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"为大型狩猎游戏所设计的狩猎步枪，精准但缓慢，每次射击之间还需要拉大栓操作。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Magnum",
+			"name": "马格南",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 6,
+			"value": 60000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"GC:VSS-R",
+				"H|XPHB",
+				"RLD|XDMG",
+				"GC:VSS-I|ValdaGunslinger"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "30/120",
+			"reload": 6,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"马格南转轮手枪的枪膛可以装在大口径子弹，以最大威力的单发射击解决战斗。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Musket",
+			"name": "滑膛枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 10,
+			"value": 50000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"LD|XPHB",
+				"2H|XPHB",
+				"GC:VSS-Ren|ValdaGunslinger"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "40/120",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "弹丸|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Parlor Gun",
+			"name": "袖珍手枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 7500,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"L|XPHB",
+				"RLD|XDMG",
+				"GC:VSS-I|ValdaGunslinger"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "30/120",
+			"reload": 2,
+			"dmg1": "2d4",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"最小但仍可用的枪械，袖珍手枪可以被塞进袜子里或是藏放在袖子下，其双管可用于近距离的射击。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Pistol",
+			"name": "手枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 25000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"LD|XPHB",
+				"GC:VSS-Ren|ValdaGunslinger"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "30/90",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"手铳是最简易的单手枪械，它就像一把微缩版的滑膛枪，能装载、发射单发重型子弹\u2014\u2014往往能一击毙命。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Pump Shotgun",
+			"name": "泵动式霰弹枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 7,
+			"value": 55000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"GC:VSS-R",
+				"2H|XPHB",
+				"RLD|XDMG",
+				"H|XPHB",
+				"GC:VSS-M|ValdaGunslinger"
+			],
+			"mastery": [
+				"散射|ValdaGunslinger"
+			],
+			"range": "20/60",
+			"reload": 8,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"泵动式霰弹枪的名字来自于其枪管上的一个特殊可滑动护木，拉动护木即可将新的子弹\"泵入\"密阁。"
+			],
+			"ammoType": "壳|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Revolver",
+			"name": "左轮枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 12500,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"GC:VSS-R",
+				"RLD|XDMG",
+				"GC:VSS-I|ValdaGunslinger"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "30/120",
+			"reload": 6,
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"左轮枪是一种标志性的手枪，它的转轮上能装载六发弹丸。这种武器因其可靠性与强大到足以形成威慑的力量而受到铳士的青睐。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shell",
+			"name": "壳",
+			"source": "ValdaGunslinger",
+			"type": "A|XPHB",
+			"rarity": "none",
+			"weight": 0.15,
+			"value": 50,
+			"bulletFirearm": true,
+			"entries": [
+				"具有{@itemProperty AF|XDMG|弹药}词条的武器需要弹药。武器描述会指定其使用的弹药类型。",
+				"枪械弹药被使用后即摧毁。"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-014.firearm-ammunition.webp"
+		},
+		{
+			"ENG_name": "Shot",
+			"name": "射弹",
+			"source": "ValdaGunslinger",
+			"type": "A|XPHB",
+			"rarity": "none",
+			"weight": 0.2,
+			"value": 10,
+			"bulletFirearm": true,
+			"entries": [
+				"具有{@itemProperty AF|XDMG|弹药}词条的武器需要弹药。武器描述会指定其使用的弹药类型。",
+				"枪械弹药被使用后即摧毁。"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-014.firearm-ammunition.webp"
+		},
+		{
+			"ENG_name": "Sniper Rifle",
+			"name": "狙击步枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 8,
+			"value": 45000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"2H|XPHB",
+				"LD|XPHB",
+				"H|XPHB",
+				"GC:VSS-M|ValdaGunslinger"
+			],
+			"mastery": [
+				"开镜|ValdaGunslinger"
+			],
+			"range": "100/400",
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"狙击步枪是适用于远距精准射击的专家，它能从遥远到几乎无法被发现的距离发动射击。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Submachine Gun",
+			"name": "冲锋枪",
+			"source": "ValdaGunslinger",
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 6,
+			"value": 25000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"GC:VSS-F",
+				"L|XPHB",
+				"RLD|XDMG",
+				"GC:VSS-M|ValdaGunslinger"
+			],
+			"mastery": [
+				"自动|ValdaGunslinger"
+			],
+			"range": "20/60",
+			"reload": 16,
+			"dmg1": "2d4",
+			"dmgType": "P",
+			"bonusWeaponDamage": "-@abilities.dex.mod",
+			"firearm": true,
+			"weapon": true,
+			"entries": [
+				"冲锋枪发射的子弹更轻、更易于控制，它们是大型全自动武器的有效替代品。"
+			],
+			"ammoType": "弹丸|ValdaGunslinger"
+		}
+	],
+	"itemFluff": [
+		{
+			"ENG_name": "Assault Rifle",
+			"name": "突击步枪",
+			"source": "ValdaGunslinger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-012.assault-rifle.webp"
+					},
+					"width": 850,
+					"height": 307
+				}
+			]
+		},
+		{
+			"ENG_name": "Revolver",
+			"name": "左轮枪",
+			"source": "ValdaGunslinger",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-003.revolver.webp"
+					},
+					"width": 850,
+					"height": 385
+				}
+			]
+		}
+	],
+	"itemProperty": [
+		{
+			"ENG_name": "Firearm",
+			"name": "枪械",
+			"abbreviation": "GC:VSS-F",
+			"source": "ValdaGunslinger",
+			"entries": [
+				{
+					"ENG_name": "Firearm",
+					"type": "entries",
+					"name": "枪械",
+					"entries": [
+						"除非另有说明，否则你无法将你的属性调整值添加到武器的伤害中。枪械的弹药在使用后即摧毁。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Industrial Era",
+			"name": "工业时代",
+			"abbreviation": "GC:VSS-I",
+			"source": "ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Modern Era",
+			"name": "现代",
+			"abbreviation": "GC:VSS-M",
+			"source": "ValdaGunslinger"
+		},
+		{
+			"ENG_name": "Recoil",
+			"name": "后坐",
+			"abbreviation": "GC:VSS-R",
+			"source": "ValdaGunslinger",
+			"entries": [
+				{
+					"ENG_name": "Recoil",
+					"name": "后坐",
+					"type": "entries",
+					"entries": [
+						"在你使用此武器发动攻击后，直至当前回合结束，你都无法发动超出武器常规射程的远程攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Renaissance Era",
+			"name": "文艺复兴",
+			"abbreviation": "GC:VSS-Ren",
+			"source": "ValdaGunslinger"
+		}
+	],
+	"itemMastery": [
+		{
+			"ENG_name": "Automatic",
+			"name": "自动",
+			"source": "ValdaGunslinger",
+			"entries": [
+				"当你使用此武器发动一次攻击时，你可以选择改为发动两次攻击。无论如何，这些攻击始终具有{@variantrule 劣势|XPHB}，无论境况如何。你无法替换这些攻击。如果此武器具有{@itemProperty AF|XDMG|弹药}，则这些攻击将消耗两倍于正常数量的弹药。"
+			]
+		},
+		{
+			"ENG_name": "Explode",
+			"name": "爆炸",
+			"source": "ValdaGunslinger",
+			"entries": [
+				"当你执行{@action 攻击|XPHB}动作时，你可以令此武器射弹爆裂以替换其中一次攻击。此次爆裂发生于半径5尺的{@variantrule 球状 [效应区域]|XPHB|球状}区域，以你在武器常规射程内选择的一点为中心。{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物进行一次敏捷豁免检定（DC为8加你的力量或敏捷调整值加你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败则该生物受到该武器的伤害，除非调整值为负数，否则该伤害不会加入你的属性调整值。豁免成功则该生物受到的伤害减半。每回合你只能制造一次爆裂。"
+			]
+		},
+		{
+			"ENG_name": "Scatter",
+			"name": "散射",
+			"source": "ValdaGunslinger",
+			"entries": [
+				"位于敌人5尺内不会令你使用此武器进行的远程攻击检定具有{@variantrule 劣势|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Sighted",
+			"name": "开镜",
+			"source": "ValdaGunslinger",
+			"entries": [
+				"使用此武器攻击最大射程的目标不会令你的攻击检定具有{@variantrule 劣势|XPHB}。当你使用此武器攻击一名常规射程外最大射程内的生物并命中时，你可以重掷任意伤害骰，但必须使用新的结果。"
+			]
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "The Gunslinger Class: Valda's Spire of Secrets",
+			"name": "铳士职业：瓦尔达的秘密尖塔",
+			"id": "ValdaGunslinger",
+			"source": "ValdaGunslinger",
+			"group": "supplement-alt",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/cover.webp"
+			},
+			"published": "2025-06-10",
+			"author": "法师之手出版社",
+			"contents": [
+				{
+					"ENG_name": "Cover",
+					"name": "掩护"
+				},
+				{
+					"ENG_name": "Gunslinger",
+					"name": "铳士"
+				},
+				{
+					"ENG_name": "Gunslinger Subclasses",
+					"name": "铳士子职"
+				},
+				{
+					"ENG_name": "Firearms",
+					"name": "枪械",
+					"headers": [
+						"枪械时代",
+						"武器词条",
+						"精通词条",
+						"武器描述",
+						"枪械弹药"
+					]
+				},
+				{
+					"ENG_name": "New Feats",
+					"name": "新专长"
+				},
+				{
+					"ENG_name": "New Spells",
+					"name": "新法术"
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "制作组"
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "ValdaGunslinger",
+			"source": "ValdaGunslinger",
+			"data": [
+				{
+					"ENG_name": "Cover",
+					"name": "掩护",
+					"type": "section",
+					"id": "000",
+					"entries": [
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-001.gunslinger-cover.webp"
+									},
+									"credit": "Martin Kirby-Jackson",
+									"width": 1700,
+									"height": 2211
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Gunslinger",
+					"type": "section",
+					"name": "铳士",
+					"id": "001",
+					"entries": [
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp"
+									},
+									"title": "{@class 铳士|ValdaGunslinger}",
+									"width": 850,
+									"height": 1336
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Gunslinger Subclasses",
+					"name": "铳士子职",
+					"type": "section",
+					"id": "002",
+					"entries": [
+						"铳士子职是一种专精，它会根据子职描述在特定等级授予你特性。",
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-005.deadeye.webp"
+									},
+									"title": "{@subclass 死瞳客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"width": 850,
+									"height": 559
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-006.high-roller.webp"
+									},
+									"title": "{@subclass 豪赌客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"width": 850,
+									"height": 1008
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-008.secret-agent.webp"
+									},
+									"title": "{@subclass 特务|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"width": 850,
+									"height": 1409
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-009.spellslinger.webp"
+									},
+									"title": "{@subclass 魔弹客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"width": 850,
+									"height": 1072
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-010.trick-shot.webp"
+									},
+									"title": "{@subclass 花枪客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"width": 850,
+									"height": 1014
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-011.white-hat.webp"
+									},
+									"title": "{@subclass 白帽客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"width": 1700,
+									"height": 1162
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-007.hand-of-cards.webp"
+							},
+							"maxHeight": 200,
+							"width": 850,
+							"height": 544
+						},
+						{
+							"type": "table",
+							"caption": "铳士子职",
+							"colLabels": [
+								"名称",
+								"描述"
+							],
+							"colStyles": [
+								"col-2",
+								"col-10"
+							],
+							"rows": [
+								[
+									"{@subclass 死瞳客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"一名精准、鹰眼神射手"
+								],
+								[
+									"{@subclass 豪赌客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"豪赌客以生命与命运为赌注；没有风险能称得上过高"
+								],
+								[
+									"{@subclass 特务|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"拥有杀戮许可的密间客"
+								],
+								[
+									"{@subclass 魔弹客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"以法术和弹丸发动致命轰炸"
+								],
+								[
+									"{@subclass 花枪客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"弹丸可从任意角度命中目标"
+								],
+								[
+									"{@subclass 白帽客|铳士|ValdaGunslinger|ValdaGunslinger}",
+									"一位守序的虚弱保护者，面对危险从不眨眼"
+								]
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Firearms",
+					"name": "枪械",
+					"type": "section",
+					"id": "003",
+					"entries": [
+						"黑火药代表着战争艺术形式的转变，为从威力强大的攻城武器到隐蔽的手持枪械等各种武器提供燃料。在许多战役场景中，枪械取代了传统的武器体系，迫使箭矢、宝剑和战斧等被逐渐淘汰。它们甚至可能成为狩猎和防御的日用工具。",
+						{
+							"ENG_name": "Firearm Eras",
+							"type": "entries",
+							"name": "枪械时代",
+							"entries": [
+								"枪械在历史中经历了翻天覆地的变化，并将持续演变至遥远的未来。因此，除了分类为简易与军用武器外，以下枪械还被划分出不同的时代，即这些枪械可能出现的时间段。某些枪械可能在多个时代出现，尤其在某些故事需要使用特殊武器的情形，但大多数枪械更适合与其科技水平相符的战役设定。",
+								"GM决定战役中处于哪个或哪些枪械时代。",
+								{
+									"ENG_name": "Renaissance Firearms",
+									"name": "文艺复兴枪械",
+									"type": "entries",
+									"entries": [
+										"文艺复兴时代的枪械，例如{@item 手枪|ValdaGunslinger|手铳}和{@item 滑膛枪|ValdaGunslinger|火铳}，是武器首次从火炮的形式发展成为便携式的步枪，亦是所有现代枪械的鼻祖。这个时代的武器使用滑膛枪球弹和散装的黑火药，因此换弹速度较慢。重要的是，这些武器在许多奇幻设定中与弓箭、宝剑和斧头并存，尤其在一些海盗出没的设定更是如此。",
+										{
+											"type": "table",
+											"colLabels": [
+												"名称",
+												"伤害",
+												"词条",
+												"精通",
+												"重量",
+												"花费"
+											],
+											"colStyles": [
+												"col-4",
+												"col-1",
+												"col-6",
+												"col-1 text-center",
+												"col-1 text-center",
+												"col-4 text-center"
+											],
+											"rows": [
+												[
+													"{@i 军用远程武器}",
+													"",
+													"",
+													"",
+													"",
+													""
+												],
+												[
+													"{@item 喇叭铳|ValdaGunslinger}",
+													"{@damage 1d12} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 20/60; {@item 射弹|ValdaGunslinger}), {@itemProperty H|XPHB|重型}, {@itemProperty LD|XPHB|装填}, {@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 散射|ValdaGunslinger}",
+													"15磅",
+													"750 GP"
+												],
+												[
+													"{@item 滑膛枪|ValdaGunslinger}",
+													"{@damage 1d12} 穿刺",
+													"{@itemProperty A|XPHB|弹药}（范围 40/120；{@item 弹丸|ValdaGunslinger}），{@itemProperty LD|XPHB|装填}，{@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 缓速|XPHB}",
+													"10 磅",
+													"500GP"
+												],
+												[
+													"{@item 手枪|ValdaGunslinger}",
+													"{@damage 1d10} 穿刺",
+													"{@itemProperty A|XPHB|弹药}（范围 30/90；{@item 弹丸|ValdaGunslinger}），{@itemProperty LD|XPHB|装填}",
+													"{@itemMastery 侵扰|XPHB}",
+													"3 磅",
+													"250 GP"
+												]
+											]
+										}
+									],
+									"id": "008"
+								},
+								{
+									"ENG_name": "Industrial Firearms",
+									"name": "工业时代枪械",
+									"type": "entries",
+									"entries": [
+										"工业时代的枪械，例如{@item 左轮枪|ValdaGunslinger|左轮枪}和{@item 双管霰弹枪|ValdaGunslinger|双管霰弹枪}，诞生于机械与流水线的进步，赋予它们更多可互换的零件和基于弹药筒的子弹。这些枪械虽然缺乏现代流水线的一致性，但却奠定了此后几未改变的设计基石：经典的六弹容{@item 左轮枪|ValdaGunslinger}经久不衰又威力十足。工业时代枪械的鼎盛时期在狂野的西部背景，但其简单可靠的构造意味着即使是现代依旧有它们的一席之地。",
+										{
+											"type": "table",
+											"colLabels": [
+												"名称",
+												"伤害",
+												"词条",
+												"精通",
+												"重量",
+												"花费"
+											],
+											"colStyles": [
+												"col-4",
+												"col-1",
+												"col-6",
+												"col-1 text-center",
+												"col-1 text-center",
+												"col-4 text-center"
+											],
+											"rows": [
+												[
+													"{@i 简易远程武器}",
+													"",
+													"",
+													"",
+													"",
+													""
+												],
+												[
+													"{@item 双管霰弹枪|ValdaGunslinger}",
+													"{@damage 2d6} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 20/60; {@item 壳|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty GC:VSS-R|ValdaGunslinger|后坐}, {@itemProperty RLD|XDMG|弹容} (2), {@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 散射|ValdaGunslinger}",
+													"8 磅",
+													"175 GP"
+												],
+												[
+													"{@item 狩猎步枪|ValdaGunslinger}",
+													"{@damage 2d6} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 80/320; {@item 弹丸|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty RLD|XDMG|弹容} (4), {@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 开镜|ValdaGunslinger}",
+													"8 磅",
+													"150 GP"
+												],
+												[
+													"{@item 袖珍手枪|ValdaGunslinger}",
+													"{@damage 2d4} 穿刺",
+													"{@itemProperty A|XPHB|弹药}（范围30/120；{@item 弹丸|ValdaGunslinger}），{@itemProperty GC:VSS-F|ValdaGunslinger|枪械}，{@itemProperty L|XPHB|光亮术}，{@itemProperty RLD|XDMG|弹容}（2）",
+													"{@itemMastery 侵扰|XPHB}",
+													"1 磅",
+													"75 GP"
+												],
+												[
+													"{@item 左轮枪|ValdaGunslinger}",
+													"{@damage 2d6} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 30/120; {@item 弹丸|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty GC:VSS-R|ValdaGunslinger|后坐}, {@itemProperty RLD|XDMG|弹容} (6)",
+													"{@itemMastery 缓速|XPHB}",
+													"3 磅",
+													"125 GP"
+												],
+												[
+													"{@i 军用远程武器}",
+													"",
+													"",
+													"",
+													"",
+													""
+												],
+												[
+													"{@item 火炮|ValdaGunslinger}",
+													"{@damage 2d8} 火焰",
+													"{@itemProperty A|XPHB|弹药}（范围 100/400；{@item 加农炮弹|ValdaGunslinger}），{@itemProperty GC:VSS-F|ValdaGunslinger|枪械}，{@itemProperty H|XPHB|重型}，{@itemProperty LD|XPHB|装填}，{@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 爆炸|ValdaGunslinger}",
+													"225 磅",
+													"1,,500 GP"
+												],
+												[
+													"{@item 加特林机枪|ValdaGunslinger}",
+													"{@damage 2d6} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 60/240; {@item 弹丸|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty H|XPHB|重型}, {@itemProperty RLD|XDMG|弹容} (40), {@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 自动|ValdaGunslinger}",
+													"125 磅",
+													"750 GP"
+												],
+												[
+													"{@item 马格南|ValdaGunslinger}",
+													"{@damage 2d8} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 30/120, {@item 弹丸|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty H|XPHB|重型}, {@itemProperty GC:VSS-R|ValdaGunslinger|后坐}, {@itemProperty RLD|XDMG|弹容} (6)",
+													"{@itemMastery 缓速|XPHB}",
+													"6 磅",
+													"600 GP"
+												]
+											]
+										}
+									],
+									"id": "009"
+								},
+								{
+									"ENG_name": "Modern Firearms",
+									"name": "现代枪械",
+									"type": "entries",
+									"entries": [
+										"现代枪械意味着自动化、弹夹和小口径的高速子弹。对这些枪械而言，其样式就决定了功能：武器被设计了特定的用途，例如{@item 狙击步枪|ValdaGunslinger|狙击步枪}用于远距离狙击；{@item 泵动式霰弹枪|ValdaGunslinger|泵动式霰弹枪}用于近距离缠斗。此外，一些在西部时期广受欢迎的武器（比如{@item 双管霰弹枪|ValdaGunslinger}），在现代仍大放光彩。",
+										{
+											"type": "table",
+											"colLabels": [
+												"名称",
+												"伤害",
+												"词条",
+												"精通",
+												"重量",
+												"花费"
+											],
+											"colStyles": [
+												"col-4",
+												"col-1",
+												"col-6",
+												"col-1 text-center",
+												"col-1 text-center",
+												"col-4 text-center"
+											],
+											"rows": [
+												[
+													"{@i 简易远程武器}",
+													"",
+													"",
+													"",
+													"",
+													""
+												],
+												[
+													"{@item 信号枪|ValdaGunslinger}",
+													"{@damage 2d6} 火焰",
+													"{@itemProperty A|XPHB|弹药}（范围 30/120；{@item 耀斑|ValdaGunslinger}），{@itemProperty GC:VSS-F|ValdaGunslinger|枪械}，{@itemProperty LD|XPHB|装填}",
+													"{@itemMastery 缓速|XPHB}",
+													"1 磅",
+													"100GP"
+												],
+												[
+													"{@item 手枪|ValdaGunslinger}",
+													"{@damage 2d4} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 30/120; {@item 弹丸|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty L|XPHB|光亮术}, {@itemProperty RLD|XDMG|弹容} (10)",
+													"{@itemMastery 侵扰|XPHB}",
+													"3 磅",
+													"125 GP"
+												],
+												[
+													"{@i 军用远程武器}",
+													"",
+													"",
+													"",
+													"",
+													""
+												],
+												[
+													"{@item 突击步枪|ValdaGunslinger}",
+													"{@damage 2d6} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 80/320; {@item 弹丸|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty RLD|XDMG|弹容} (20), {@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 自动|ValdaGunslinger}",
+													"7 磅",
+													"300 GP"
+												],
+												[
+													"{@item 泵动式霰弹枪|ValdaGunslinger}",
+													"{@damage 2d8} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (范围 20/60, {@item 壳|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty H|XPHB|重型}, {@itemProperty GC:VSS-R|ValdaGunslinger|后坐}, {@itemProperty RLD|XDMG|弹容} (8), {@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 散射|ValdaGunslinger}",
+													"7 磅",
+													"550 GP"
+												],
+												[
+													"{@item 狙击步枪|ValdaGunslinger}",
+													"{@damage 2d8} 穿刺",
+													"{@itemProperty A|XPHB|弹药}（范围 100/400，{@item 弹丸|ValdaGunslinger}），{@itemProperty GC:VSS-F|ValdaGunslinger|枪械}，{@itemProperty H|XPHB|重型}，{@itemProperty LD|XPHB|装填}，{@itemProperty 2H|XPHB|双手}",
+													"{@itemMastery 开镜|ValdaGunslinger}",
+													"8 磅",
+													"450 GP"
+												],
+												[
+													"{@item 冲锋枪|ValdaGunslinger}",
+													"{@damage 2d4} 穿刺",
+													"{@itemProperty A|XPHB|弹药} (20/60; {@item 弹丸|ValdaGunslinger}), {@itemProperty GC:VSS-F|ValdaGunslinger|枪械}, {@itemProperty L|XPHB|光亮术}, {@itemProperty RLD|XDMG|弹容} (16)",
+													"{@itemMastery 自动|ValdaGunslinger}",
+													"6 磅",
+													"250 GP"
+												]
+											]
+										}
+									],
+									"id": "00a"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-016.shooting-large-gun.webp"
+									},
+									"width": 850,
+									"height": 861
+								}
+							],
+							"id": "007"
+						},
+						{
+							"ENG_name": "Weapon Properties",
+							"type": "entries",
+							"name": "武器词条",
+							"entries": [
+								"这里是枪械表格中词条列的词条定义。新词条标有星号(*)。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@itemProperty A|XPHB|弹药}",
+										"{@itemProperty F|XPHB|灵巧}",
+										"{@itemProperty GC:VSS-F|ValdaGunslinger|枪械*}",
+										"{@itemProperty H|XPHB|重型}",
+										"{@itemProperty L|XPHB|光亮术}",
+										"{@itemProperty F|XPHB|灵巧}",
+										"{@itemProperty GC:VSS-R|ValdaGunslinger|后坐*}",
+										"{@itemProperty RLD|XDMG|弹容}",
+										"{@itemProperty 2H|XPHB|双手}"
+									]
+								}
+							],
+							"id": "00b"
+						},
+						{
+							"ENG_name": "Mastery Properties",
+							"type": "entries",
+							"name": "精通词条",
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@itemMastery 自动|ValdaGunslinger|自动*}",
+										"{@itemMastery 爆炸|ValdaGunslinger|爆炸*}",
+										"{@itemMastery 推离|XPHB}",
+										"{@itemMastery 削弱|XPHB}",
+										"{@itemMastery 散射|ValdaGunslinger|散射*}",
+										"{@itemMastery 开镜|ValdaGunslinger|开镜*}",
+										"{@itemMastery 缓速|XPHB}",
+										"{@itemMastery 侵扰|XPHB}"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-012.assault-rifle.webp"
+									},
+									"maxHeight": 250,
+									"width": 850,
+									"height": 307
+								}
+							],
+							"id": "00c"
+						},
+						{
+							"ENG_name": "Weapon Descriptions",
+							"type": "entries",
+							"name": "武器描述",
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@item 突击步枪|ValdaGunslinger}",
+										"{@item 喇叭铳|ValdaGunslinger}",
+										"{@item 火炮|ValdaGunslinger}",
+										"{@item 双管霰弹枪|ValdaGunslinger}",
+										"{@item 信号枪|ValdaGunslinger}",
+										"{@item 加特林机枪|ValdaGunslinger}",
+										"{@item 手枪|ValdaGunslinger}",
+										"{@item 狩猎步枪|ValdaGunslinger}",
+										"{@item 马格南|ValdaGunslinger}",
+										"{@item 滑膛枪|ValdaGunslinger}",
+										"{@item 袖珍手枪|ValdaGunslinger}",
+										"{@item 手枪|ValdaGunslinger}",
+										"{@item 泵动式霰弹枪|ValdaGunslinger}",
+										"{@item 左轮枪|ValdaGunslinger}",
+										"{@item 狙击步枪|ValdaGunslinger}",
+										"{@item 冲锋枪|ValdaGunslinger}"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-014.firearm-ammunition.webp"
+									},
+									"maxHeight": 250,
+									"width": 850,
+									"height": 767
+								}
+							],
+							"id": "00d"
+						},
+						{
+							"ENG_name": "Firearm Ammunition",
+							"type": "entries",
+							"name": "枪械弹药",
+							"entries": [
+								"具有{@itemProperty A|XPHB|弹药}属性的武器需要弹药。武器的描述会指定其使用的弹药类型。以下弹药表格列出了枪械使用的新弹药类型以及购买时可获得的数量。",
+								"枪械弹药被使用后即摧毁。",
+								{
+									"type": "table",
+									"colLabels": [
+										"类型",
+										"数量",
+										"重量",
+										"花费"
+									],
+									"colStyles": [
+										"col-2",
+										"col-2",
+										"col-2",
+										"col-2"
+									],
+									"rows": [
+										[
+											"{@item 弹丸|ValdaGunslinger|子弹}",
+											"10",
+											"1.5 磅",
+											"3GP"
+										],
+										[
+											"{@item 加农炮弹|ValdaGunslinger|加农炮弹}",
+											"5",
+											"10 磅",
+											"25GP"
+										],
+										[
+											"{@item 耀斑|ValdaGunslinger|信号弹}",
+											"5",
+											"5 磅",
+											"5GP"
+										],
+										[
+											"{@item 壳|ValdaGunslinger|散弹}",
+											"10",
+											"1.5 磅",
+											"5GP"
+										],
+										[
+											"{@item 射弹|ValdaGunslinger}",
+											"10",
+											"2 磅",
+											"1GP"
+										]
+									]
+								}
+							],
+							"id": "00e"
+						}
+					]
+				},
+				{
+					"ENG_name": "New Feats",
+					"name": "新专长",
+					"type": "section",
+					"id": "004",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-013.gear-table.webp"
+							},
+							"width": 1700,
+							"height": 555
+						},
+						"本节提供了一系列新专长，这些特殊特性不与角色职业绑定。一个专长代表一种天赋或专精领域，赋予角色特殊能力。它体现了超越职业提供的训练、体验和属性。",
+						"不管你是以什么样的方式获得了专长，你都不能重复选择相同的专长，除非其详述部分有特别允许的说明。",
+						{
+							"type": "list",
+							"columns": 3,
+							"items": [
+								"{@feat 铁血英雄|ValdaGunslinger}",
+								"{@feat 神射鸿运|ValdaGunslinger}",
+								"{@feat 魔枪掌控|ValdaGunslinger}"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "New Spells",
+					"name": "新法术",
+					"type": "section",
+					"id": "005",
+					"entries": [
+						"本节包含所有职业均可使用的新法术的描述。",
+						{
+							"type": "list",
+							"columns": 3,
+							"items": [
+								"{@spell 防弹力场|ValdaGunslinger}",
+								"{@spell 斩击弹|ValdaGunslinger}",
+								"{@spell 隐蔽射击|ValdaGunslinger}",
+								"{@spell 加农炮击|ValdaGunslinger}",
+								"{@spell 咒唤掩体|ValdaGunslinger}",
+								"{@spell 手指枪|ValdaGunslinger}",
+								"{@spell 卡你武器|ValdaGunslinger}",
+								"{@spell 杰斯罗的瞬填术|ValdaGunslinger}",
+								"{@spell 贯星一条|ValdaGunslinger}"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "006",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Designers:",
+									"name": "设计师：",
+									"type": "item",
+									"entries": [
+										"迈克尔·霍利克，本杰明·吉塔"
+									]
+								},
+								{
+									"ENG_name": "Cover Illustrator:",
+									"name": "封面插画师：",
+									"type": "item",
+									"entries": [
+										"Martin Kirby-Jackson"
+									]
+								},
+								{
+									"ENG_name": "Graphic Design:",
+									"name": "平面设计：",
+									"type": "item",
+									"entries": [
+										"迈克尔·霍利克"
+									]
+								},
+								{
+									"ENG_name": "Interior Illustrations:",
+									"name": "内页插图：",
+									"type": "item",
+									"entries": [
+										"马丁·柯比-杰克逊, 莫尼克·席尔德, 卢卡斯·费雷拉 CM"
+									]
+								},
+								{
+									"ENG_name": "Producers:",
+									"name": "制作人：",
+									"type": "item",
+									"entries": [
+										"Donelloth, Mkscorpio89, 星星, Laura Chrismon, Tyler Kohlman, Chase Harris, Blayne Wilson, Kabe-kun, Austin Kavanagh, Shaun Sullivan, Zeke DeLeon, Rude Velez, Suzuki, 锻砧, Hayley Nichols, Trey Steele, MorphManDude, GayCowboy, Jesse Smith, Sean Daugherty, Kevin Reynolds, Liam Jones, BillOneEye, Jesse Rosen, NecroJester, Jacob Otwell, Treix Nyte, lungfishwarrior, 石鼎兽, Trivik, 琼 Mulberry, Darion Nutter, D Miranda, Joel Grote, Patrick Rooney, PucThePlayful, Mike Litkewitsch, George Tolley, 迈克尔 Davis, Kura Tenshi, Alexander Garcia, Joseph Blanc, Ryan MacDonald, Pandric, Kat Woehlert, 马修 Atkins, Eike Schultz, Marc-Antoine Côté"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "ON THE COVER",
+							"name": "封面",
+							"type": "inset",
+							"entries": [
+								"Martin Kirby-Jackson 描绘了一位铳士正在享受他们最爱的消遣：一杯烈性威士忌、一支刚卷好的香烟和一场枪战后的余韵。"
+							],
+							"id": "00f"
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"法师之手出版社及其相关标志是法师之手出版社有限责任公司的商标® 2020 法师之手出版社有限责任公司。保留所有权利。",
+								"产品身份：以下项目根据开放游戏许可证1.0a版第1(e)节的定义被认定为产品身份，不属于开放内容：所有商标、注册商标、专有名称（角色、神祇等）、对话、情节、故事线、地点、角色、艺术作品和商业外观。（先前被指定为开放游戏内容或属于公共领域的元素不包括在本声明中。）",
+								"开放内容：除被指定为身份（见上文）的材质外，本法师之手出版社游戏产品的游戏机械均为开放游戏内容，如开放游戏许可版本1.0a第1(d)节所定义。除被指定为开放游戏内容的材质外，本作品的其他部分不得以任何形态复制，除非获得书面许可。",
+								"完整铳士由法师之手出版社有限责任公司根据开放游戏许可版本1.0a发布。版权所有2020法师之手出版社有限责任公司。保留所有权利"
+							],
+							"id": "010"
+						},
+						{
+							"type": "hr"
+						},
+						"{@i 免责声明：掷出重击与以下状态有关：自负膨胀、赌博成瘾、头部爆炸症和DM发热。}"
+					]
+				}
+			]
+		}
+	]
+}
