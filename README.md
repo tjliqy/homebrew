@@ -45,3 +45,38 @@ There are a few conventions used which should be followed when creating homebrew
  - https://5e.tools/converter.html (a tool to convert text to stat blocks)
  - https://jsonlint.com/ (error-check your JSON)
  - https://code.visualstudio.com (top-notch editor)
+
+#### Deploying a Small CN Snapshot
+
+If your deployment platform can only run a plain `git clone`, cloning this repository may still download the full Git history and large objects from other branches. In that case, create a deployment-only repository which contains a fresh snapshot of the `cn` branch and no old history:
+
+```bash
+bash scripts/export-deploy-snapshot.sh
+cd ../homebrew-cn-deploy
+git remote add origin <your-deploy-repo-url>
+git push -u origin main
+```
+
+You can also choose a different source branch or output directory:
+
+```bash
+bash scripts/export-deploy-snapshot.sh cn ../my-deploy-repo
+```
+
+If your environment cannot write to the parent directory, export to another writable path such as `/tmp`:
+
+```bash
+bash scripts/export-deploy-snapshot.sh cn /tmp/homebrew-cn-deploy
+```
+
+This keeps the current repository unchanged while producing a much smaller repository for cloud deployment.
+
+For later updates, keep a dedicated deployment repository at `/data/homebrew-cn-deploy` and sync new commits from `cn` into it:
+
+```bash
+bash scripts/sync-deploy-repo.sh
+cd /data/homebrew-cn-deploy
+git push origin main
+```
+
+The sync script preserves the deployment repository's `.git` directory and remote configuration, replaces the working tree with the latest `cn` snapshot, and creates a normal commit only when there are actual changes.
