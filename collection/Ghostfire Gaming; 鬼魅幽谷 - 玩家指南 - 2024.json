@@ -5,6 +5,8 @@
 				"json": "GrimHollowPG24",
 				"abbreviation": "GH:PG'24",
 				"full": "鬼魅幽谷：玩家指南（2024）",
+				"url": "https://marketplace.dndbeyond.com/category/DBCMZU4R2",
+				"version": "1.0",
 				"authors": [
 					"Ghostfire Gaming"
 				],
@@ -12,9 +14,7 @@
 					"Unknown"
 				],
 				"partnered": true,
-				"version": "1.0",
-				"color": "F77B07",
-				"url": "https://marketplace.dndbeyond.com/category/DBCMZU4R2"
+				"color": "F77B07"
 			}
 		],
 		"internalCopies": [
@@ -55,13 +55,15 @@
 			"Spec:TF": "恶灵；变形缺点",
 			"V:TB": "吸血鬼；变形恩惠",
 			"V:TF": "吸血鬼；变形缺点",
-			"GoD": "诅咒赠礼"
+			"GoD": "诅咒赠礼",
+			"DG:M": "囚魂魔公会：异变",
+			"MGS": "怪物法术书专精"
 		},
 		"edition": "one",
 		"status": "ready",
 		"dateAdded": 1755277200,
-		"dateLastModified": 1768877335,
-		"_dateLastModifiedHash": "2f7d6afc6a"
+		"dateLastModified": 1776931047,
+		"_dateLastModifiedHash": "ae5b841a8b"
 	},
 	"class": [
 		{
@@ -90,6 +92,16 @@
 			],
 			"featProgression": [
 				{
+					"ENG_name": "Fighting Style",
+					"name": "战斗风格",
+					"category": [
+						"FS"
+					],
+					"progression": {
+						"2": 1
+					}
+				},
+				{
 					"ENG_name": "Epic Boon",
 					"name": "传奇恩惠",
 					"category": [
@@ -97,6 +109,20 @@
 					],
 					"progression": {
 						"19": 1
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Monster Grimoire Specialization",
+					"name": "怪物法术书专精",
+					"featureType": [
+						"MGS"
+					],
+					"progression": {
+						"1": 2,
+						"6": 3,
+						"13": 4
 					}
 				}
 			],
@@ -640,18 +666,77 @@
 			"classSource": "XPHB",
 			"page": 102,
 			"edition": "one",
-			"subclassSpells": [
-				"灾祸术|XPHB",
-				"亡者丧钟|XPHB",
-				"恐惧术|XPHB",
-				"黑暗圣礼|GrimHollowPG24",
-				"指使术|XPHB",
-				"援助术|XPHB",
-				"祝福术|XPHB",
-				"光耀祷词|XPHB",
-				"回生术|XPHB",
-				"信仰守卫|XPHB",
-				"高等复原术|XPHB"
+			"additionalSpells": [
+				{
+					"ENG_name": "Arch Daemon",
+					"name": "大恶魔",
+					"prepared": {
+						"3": [
+							"灾祸术|XPHB",
+							"亡者丧钟|XPHB"
+						],
+						"5": [
+							"恐惧术|XPHB"
+						],
+						"7": [
+							"黑暗圣礼|GrimHollowPG24"
+						],
+						"9": [
+							"指使术|XPHB"
+						]
+					}
+				},
+				{
+					"ENG_name": "Arch Seraph",
+					"name": "大炽天使",
+					"prepared": {
+						"3": [
+							"援助术|XPHB",
+							"祝福术|XPHB",
+							"光耀祷词|XPHB"
+						],
+						"5": [
+							"回生术|XPHB"
+						],
+						"7": [
+							"信仰守卫|XPHB"
+						],
+						"9": [
+							"高等复原术|XPHB"
+						]
+					}
+				}
+			],
+			"subSubclassSpells": {
+				"Arch Daemon": [
+					"灾祸术|XPHB",
+					"亡者丧钟|XPHB",
+					"恐惧术|XPHB",
+					"黑暗圣礼|GrimHollowPG24",
+					"指使术|XPHB"
+				],
+				"Arch Seraph": [
+					"援助术|XPHB",
+					"祝福术|XPHB",
+					"光耀祷词|XPHB",
+					"回生术|XPHB",
+					"信仰守卫|XPHB",
+					"高等复原术|XPHB"
+				]
+			},
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Eldritch Invocation",
+					"name": "魔能祈唤",
+					"featureType": [
+						"EI"
+					],
+					"progression": {
+						"3": 1,
+						"6": 2,
+						"14": 3
+					}
+				}
 			],
 			"subclassFeatures": [
 				"恶魔学家|法师|XPHB|恶魔学家|GrimHollowPG24|3",
@@ -840,7 +925,7 @@
 			],
 			"subclassFeatures": [
 				"附魔邪术|术士|XPHB|饱受困扰|GrimHollowPG24|3",
-				"精魄之力|术士|XPHB|饱受困扰|GrimHollowPG24|6",
+				"精神力量|术士|XPHB|饱受困扰|GrimHollowPG24|6",
 				"致命苍白|术士|XPHB|饱受困扰|GrimHollowPG24|6",
 				"鬼魅附身|术士|XPHB|饱受困扰|GrimHollowPG24|14",
 				"成为死亡|术士|XPHB|饱受困扰|GrimHollowPG24|18"
@@ -982,6 +1067,21 @@
 				"偷窃幸运|游荡者|XPHB|厄运使者|GrimHollowPG24|9",
 				"诅咒使者|游荡者|XPHB|厄运使者|GrimHollowPG24|13",
 				"强化窃取幸运|游荡者|XPHB|厄运使者|GrimHollowPG24|17"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Misfortune",
+					"name": "厄运",
+					"featureType": [
+						"MB:M"
+					],
+					"progression": {
+						"3": 2,
+						"9": 3,
+						"13": 4,
+						"17": 5
+					}
+				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1697,10 +1797,90 @@
 			"classSource": "XPHB",
 			"page": 105,
 			"edition": "one",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							{
+								"choose": "level=0;1;2|subschool=血魔法"
+							},
+							{
+								"choose": "level=0;1;2|subschool=血魔法"
+							}
+						],
+						"5": [
+							{
+								"choose": "level=0;1;2;3|subschool=血魔法"
+							}
+						],
+						"7": [
+							{
+								"choose": "level=0;1;2;3;4|subschool=血魔法"
+							}
+						],
+						"9": [
+							{
+								"choose": "level=0;1;2;3;4;5|subschool=血魔法"
+							}
+						],
+						"11": [
+							{
+								"choose": "level=0;1;2;3;4;5;6|subschool=血魔法"
+							}
+						],
+						"13": [
+							{
+								"choose": "level=0;1;2;3;4;5;6;7|subschool=血魔法"
+							}
+						],
+						"15": [
+							{
+								"choose": "level=0;1;2;3;4;5;6;7;8|subschool=血魔法"
+							}
+						],
+						"17": [
+							{
+								"choose": "level=0;1;2;3;4;5;6;7;8;9|subschool=血魔法"
+							}
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"鲜血牵挂|GrimHollowPG24",
+				"鲜血突进|GrimHollowPG24",
+				"鲜血潮汐|GrimHollowPG24",
+				"鲜血精魄|GrimHollowPG24",
+				"血祸符文|GrimHollowPG24",
+				"鲜血沸腾|GrimHollowPG24",
+				"爆发|GrimHollowPG24",
+				"猩红结社|GrimHollowPG24",
+				"耗竭术|GrimHollowPG24",
+				"步步沦亡|GrimHollowPG24",
+				"猩红鞭笞|GrimHollowPG24",
+				"黑暗圣礼|GrimHollowPG24",
+				"提取铁|GrimHollowPG24",
+				"钻心血刺|GrimHollowPG24",
+				"凡人终有一死|GrimHollowPG24",
+				"再活化|GrimHollowPG24",
+				"苍天泣血|GrimHollowPG24",
+				"血色连射|GrimHollowPG24",
+				"血色人偶|GrimHollowPG24",
+				"血色盾牌|GrimHollowPG24",
+				"感知生命能量|GrimHollowPG24",
+				"环绕鲜血|GrimHollowPG24",
+				"嗜睡|GrimHollowPG24",
+				"飞溅圣裁|GrimHollowPG24",
+				"窃取不朽|GrimHollowPG24",
+				"生命盗窃|GrimHollowPG24",
+				"振动体液|GrimHollowPG24",
+				"粘性鞘膜|GrimHollowPG24",
+				"凋零圣裁|GrimHollowPG24"
+			],
 			"subclassFeatures": [
 				"血法师|法师|XPHB|血法师|GrimHollowPG24|3",
 				"血色活力|法师|XPHB|血法师|GrimHollowPG24|6",
-				"鲜血换鲜血|法师|XPHB|血法师|GrimHollowPG24|10",
+				"血债血偿|法师|XPHB|血法师|GrimHollowPG24|10",
 				"红之新生|法师|XPHB|血法师|GrimHollowPG24|14"
 			],
 			"hasFluff": true,
@@ -1771,21 +1951,33 @@
 							},
 							{
 								"all": "level=1|class=法师"
+							},
+							{
+								"all": "level=1|subschool=血魔法"
 							}
 						],
 						"7": [
 							{
 								"all": "level=2|class=法师"
+							},
+							{
+								"all": "level=2|subschool=血魔法"
 							}
 						],
 						"13": [
 							{
 								"all": "level=3|class=法师"
+							},
+							{
+								"all": "level=3|subschool=血魔法"
 							}
 						],
 						"19": [
 							{
 								"all": "level=4|class=法师"
+							},
+							{
+								"all": "level=4|subschool=血魔法"
 							}
 						]
 					}
@@ -1795,22 +1987,21 @@
 				{
 					"className": "法师",
 					"classSource": "XPHB"
-				}
-			],
-			"optionalfeatureProgression": [
-				{
-					"ENG_name": "Misfortune",
-					"name": "厄运",
-					"featureType": [
-						"MB:M"
-					],
-					"progression": {
-						"3": 2,
-						"9": 3,
-						"13": 4,
-						"17": 5
-					}
-				}
+				},
+				"鲜血牵挂|GrimHollowPG24",
+				"鲜血突进|GrimHollowPG24",
+				"血祸符文|GrimHollowPG24",
+				"鲜血沸腾|GrimHollowPG24",
+				"猩红结社|GrimHollowPG24",
+				"凡人终有一死|GrimHollowPG24",
+				"再活化|GrimHollowPG24",
+				"苍天泣血|GrimHollowPG24",
+				"血色人偶|GrimHollowPG24",
+				"感知生命能量|GrimHollowPG24",
+				"嗜睡|GrimHollowPG24",
+				"飞溅圣裁|GrimHollowPG24",
+				"窃取不朽|GrimHollowPG24",
+				"凋零圣裁|GrimHollowPG24"
 			],
 			"subclassTableGroups": [
 				{
@@ -3342,9 +3533,9 @@
 			"classSource": "GrimHollowPG24",
 			"level": 6,
 			"entries": [
-				"你通过体验和知识扩展了你的怪物法术书。",
-				"你可以从以下列表中选择第三种生物类型添加到你的怪物法术书中：异怪、野兽、天族、构装、龙、元素生物、妖精、邪魔、巨人、怪兽、泥怪、植物或亡灵。你不能选择之前已经选择过的生物类型。你现在从怪物法术书中获得的所有增益也适用于这个新类型。",
-				"此外，你对怪物法术书中生物类型的武器攻击检定和{@variantrule 徒手打击|XPHB|徒手打击}可以在{@dice d20}掷出19或20时造成{@variantrule 重击|XPHB}。"
+				"你已通过你的经验和知识扩展了你的{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}。",
+				"你可以从以下列表中选择第三个生物类型添加到你的{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中：异怪、野兽、天族、构装、龙类、元素生物、妖精、邪魔、巨人、怪兽、泥怪、植物或亡灵。你不能选择之前已选过的生物类型。你从{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中获得的所有增益现在也适用于这个新类型。",
+				"此外，你使用武器和{@variantrule 徒手打击|XPHB|徒手打击}对你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中生物类型进行的攻击检定，在{@dice d20}掷出19或20时即可造成{@variantrule 重击|XPHB}。"
 			]
 		},
 		{
@@ -3381,7 +3572,7 @@
 			"level": 9,
 			"entries": [
 				"你可以依靠你的知识来预判怪物的动作并召唤你最佳的防御。",
-				"每当你的怪物法术书中的生物类型迫使你进行豁免检定时，你可以进行一次智力豁免检定来代替该豁免检定。"
+				"每当你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中的生物类型迫使你进行一次豁免检定时，你可以进行一次智力豁免检定来代替该豁免检定。"
 			]
 		},
 		{
@@ -3429,8 +3620,8 @@
 			"classSource": "GrimHollowPG24",
 			"level": 13,
 			"entries": [
-				"你的怪物法术书通过你的遭遇和研究进一步扩展。",
-				"你可以从以下列表中选择第四种生物类型添加到你的怪物法术书中：异怪、野兽、构装、天族、龙、元素生物、妖精、邪魔、巨人、怪兽、泥怪、植物或亡灵。你不能选择之前已经选择过的生物类型。你现在从怪物法术书中获得的所有增益也将适用于这种新的生物类型。"
+				"你的{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}因你的遭遇和研究而进一步扩展。",
+				"你可以从以下列表中选择第四种生物类型添加到你的{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中：异怪、野兽、构装、天族、龙类、元素生物、妖精、邪魔、巨人、怪兽、泥怪、植物或亡灵。你不能选择之前已选过的生物类型。你从{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中获得的所有增益现在也适用于这个新的生物类型。"
 			]
 		},
 		{
@@ -3442,7 +3633,7 @@
 			"classSource": "GrimHollowPG24",
 			"level": 14,
 			"entries": [
-				"你擅长应对怪物巢穴附近的威胁。你对巢穴动作和生物引起的区域效应造成的伤害具有{@variantrule 优势|XPHB}豁免检定和{@variantrule 抗性|XPHB}。此外，你对怪物法术书中生物类型的传奇动作造成的伤害具有{@variantrule 优势|XPHB}豁免检定和{@variantrule 抗性|XPHB}。"
+				"你擅长应对怪物巢穴附近出现的威胁。你在对抗生物造成的巢穴动作和区域效应的伤害时，豁免检定具有{@variantrule 优势|XPHB}，并且对这些伤害具有{@variantrule 抗性|XPHB}。此外，你在对抗你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中生物类型的传奇动作的伤害时，豁免检定具有{@variantrule 优势|XPHB}，并且对这些伤害具有{@variantrule 抗性|XPHB}。"
 			]
 		},
 		{
@@ -3479,7 +3670,7 @@
 			"level": 17,
 			"entries": [
 				"你能够与盟友协调快速剿灭危险的怪物。",
-				"当你使用研习反应时，选择一个能看见或听见你的{@variantrule 友好【态度】|XPHB|友好}生物。该生物可以使用其{@variantrule 反应|XPHB}对触发你研习反应的生物进行一次武器或{@variantrule 徒手打击|XPHB}攻击。如果该盟友没有其{@variantrule 反应|XPHB}，则他们恢复该反应但随后必须使用它进行攻击。你盟友的攻击发生在你的攻击之后，但在目标生物投掷其自身攻击之前。此能力在你的回合开始时刷新。"
+				"当你使用{@classFeature 研习反应|怪物猎人|GrimHollowPG24|2}时，选择一个能看见或听见你的{@variantrule 友好【态度】|XPHB|友好}生物。该生物可以使用其{@variantrule 反应|XPHB}，对触发你{@classFeature 研习反应|怪物猎人|GrimHollowPG24|2}的生物发动一次武器或{@variantrule 徒手打击|XPHB}攻击。如果该盟友没有{@variantrule 反应|XPHB}，则其恢复该反应，但随后必须使用它来发动攻击。你盟友的攻击发生在你的攻击之后，但在目标生物进行其攻击检定之前。此能力在你的回合开始时刷新。"
 			]
 		},
 		{
@@ -3516,7 +3707,7 @@
 			"level": 20,
 			"entries": [
 				"你获得对已研究的生物发动致命打击的属性。",
-				"你对怪物法术书中生物类型的武器和{@variantrule 徒手打击|XPHB|徒手打击}的攻击检定现在可以在{@dice d20}掷出18到20时造成{@variantrule 重击|XPHB}。当你对怪物法术书中的生物类型造成{@variantrule 重击|XPHB}时，该生物必须进行体质豁免检定。DC等于所受伤害，最高DC为30。豁免失败时，该生物的生命值降至0{@variantrule 生命值|XPHB}。豁免成功时，该生物受到攻击的正常伤害。",
+				"你使用武器和{@variantrule 徒手打击|XPHB|徒手打击}对你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中的生物类型进行的攻击检定，现在可以在{@dice d20}掷出18至20时造成{@variantrule 重击|XPHB}。当你对你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中的生物类型造成{@variantrule 重击|XPHB}时，该生物必须进行一次体质豁免检定。DC等于所受伤害，最高DC为30。豁免失败，该生物的生命值降至0{@variantrule 生命值|XPHB}。豁免成功，该生物受到攻击的正常伤害。",
 				"你可以使用此特性的次数等于你的智力调整值（至少一次），并且你在完成一次{@variantrule 长休|XPHB}后恢复所有已使用的次数。"
 			]
 		}
@@ -3593,7 +3784,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你在避免或结束{@condition 恐慌|XPHB}状态的豁免检定上具有{@variantrule 优势|XPHB}，并且你对怪物法术书中生物类型造成的{@condition 恐慌|XPHB}状态具有{@variantrule 免疫|XPHB|免疫}。",
+				"你在为避免或结束{@condition 恐慌|XPHB}状态而进行的豁免检定上具有{@variantrule 优势|XPHB}，并且你对由你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中生物类型造成的{@condition 恐慌|XPHB}状态{@variantrule 免疫|XPHB|免疫}。",
 				"此外，当你以{@variantrule 反应|XPHB}的一部分命中一个生物时，你可以选择一个能看到你的{@condition 恐慌|XPHB}状态的生物（包括你自己）。该状态在该生物身上结束。"
 			]
 		},
@@ -3717,51 +3908,67 @@
 						"你可以同时从多个消耗部分中获益，但同一时间不能获得相同的异变超过一次。"
 					]
 				},
-				"{@style 突变|大型}",
-				"这些异变在这里按字母顺序排列，异变名称后的括号中显示了所需的生物类型。",
 				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "强酸鲜血（异怪，泥怪，植物）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "敏锐（天族，邪魔，妖精）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "警觉（所有）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "飞行（天族、龙、元素）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "灌注（龙，元素生物，泥怪）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "隐形术（妖精，邪魔，亡灵）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "力量（野兽，构装体，巨人）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "天生武器（野兽，龙，怪兽）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "再生（野兽，巨人，怪兽）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "抵抗术（构装体、元素生物、亡灵）|GrimHollowPG24"
-				},
-				{
-					"type": "refOptionalfeature",
-					"optionalfeature": "心灵感应（异怪，邪魔，植物）|GrimHollowPG24"
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Mutations",
+									"name": "突变",
+									"type": "entries",
+									"entries": [
+										"这些异变在这里按字母顺序排列，异变名称后的括号中显示了所需的生物类型。",
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "强酸鲜血（异怪，泥怪，植物）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "敏锐（天族，邪魔，妖精）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "警觉（所有）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "飞行（天族、龙、元素）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "灌注（龙，元素生物，泥怪）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "隐形术（妖精，邪魔，亡灵）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "力量（野兽，构装体，巨人）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "天生武器（野兽，龙，怪兽）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "再生（野兽，巨人，怪兽）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "抵抗术（构装体、元素生物、亡灵）|GrimHollowPG24"
+										},
+										{
+											"type": "refOptionalfeature",
+											"optionalfeature": "心灵感应（异怪，邪魔，植物）|GrimHollowPG24"
+										}
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -3792,7 +3999,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"你对敌人的饥渴让你能在战斗中汲取其精华。当你使用武器或{@variantrule 徒手打击|XPHB}对生物造成近战攻击伤害时，你获得等于造成伤害一半的{@variantrule 临时生命值|XPHB}。若目标是你的怪物法术书中记载的生物类型，则你改为获得等于造成伤害的{@variantrule 临时生命值|XPHB}。",
+				"你对敌人的饥渴让你能在战斗中汲取其精华。当你使用武器或{@variantrule 徒手打击|XPHB}以近战攻击对一个生物造成伤害时，你获得等于所造成伤害一半的{@variantrule 临时生命值|XPHB}。如果目标是你的{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中的一种生物类型，则你改为获得等于所造成伤害的{@variantrule 临时生命值|XPHB}。",
 				"你可以使用此特性的次数等于你的智力调整值（至少一次）。当你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，恢复所有已消耗的使用次数。"
 			]
 		},
@@ -3824,7 +4031,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"你对怪物部分的饥渴已经增长到了无法满足的地步。你现在可以安全地消耗1个额外的部分。此外，当你消耗一个部分时，在1分钟内，你在作为{@variantrule 优势|XPHB}一部分进行的攻击检定上具有{@variantrule 反应|XPHB}。"
+				"你对怪物部分的饥渴已经增长到了无法满足的地步。你现在可以安全地消耗1个额外的部分。此外，当你消耗一个部分时，在1分钟内，你在作为{@variantrule 反应|XPHB}一部分进行的攻击检定上具有{@variantrule 优势|XPHB}。"
 			]
 		},
 		{
@@ -3886,7 +4093,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"你对怪物法术书中生物类型施放的法术进行的豁免检定具有{@variantrule 优势|XPHB}。此外，当你60尺内能看见的生物施放法术或进行法术攻击时，你可以在法术施放前对该生物使用研习反应。"
+				"你对抗在你的{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中记录的生物类型所施放的法术时，豁免检定具有{@variantrule 优势|XPHB}。此外，当你60尺内一个你能看见的生物施放一个法术或进行一次法术攻击时，你可以在该法术被施放前，对该生物使用{@classFeature 研习反应|怪物猎人|GrimHollowPG24|2}。"
 			]
 		},
 		{
@@ -3949,7 +4156,7 @@
 					"name": "法器",
 					"type": "entries",
 					"entries": [
-						"你可以使用奥术法器作为你法师法术的{@variantrule 法器|XPHB}。"
+						"你可以使用一件{@item 奥术法器|XPHB}作为你法师法术的{@variantrule 法器|XPHB}。"
 					]
 				}
 			]
@@ -3966,8 +4173,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你将能够施法的类人生物视为怪物法术书中的一种生物类型。",
-				"此外，当你伤害怪物法术书中生物类型且处于{@status 专注|XPHB|专注于}状态的目标时，它在进行豁免检定以维持其{@status 专注|XPHB}状态时具有{@variantrule 劣势|XPHB}。"
+				"你将能够施法的类人生物视为你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中的一种生物类型。",
+				"此外，当你伤害一个在你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中的生物类型，且该生物正处于{@status 专注|XPHB|专注于}状态时，它在为维持其{@status 专注|XPHB}状态而进行的豁免检定上具有{@variantrule 劣势|XPHB}。"
 			]
 		},
 		{
@@ -3999,7 +4206,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"你获得延伸一种安全感魅惑的能力。你散发出一个20尺的不可见{@variantrule 光环 [效应区域]|XPHB|光环}，源自于你。当你处于{@condition 失能|XPHB}状态时，该光环无法行动。你和光环内的盟友对怪物法术书中生物类型施放的法术的豁免检定具有{@variantrule 优势|XPHB}。",
+				"你获得扩展一种保护性魅惑的能力。你散发出一个以你为源头的20尺{@variantrule 光环 [效应区域]|XPHB|光环}无形光环。当你处于{@condition 失能|XPHB}状态时，此光环无法行动。你和处于你光环内的盟友，对由你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中生物类型施放的法术进行豁免检定时具有{@variantrule 优势|XPHB}。",
 				"此外，你总是准备有{@spell 法术反制|XPHB}法术。你可以不消耗法术位施放{@spell 法术反制|XPHB}一次。当你使用此特性施放该法术后，直到完成一次{@variantrule 长休|XPHB}前，你无法再次以此方式施放该法术。"
 			]
 		},
@@ -4015,7 +4222,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"你已经学会足够好地预判敌人的行动，从而能够快速施法以应对他们的攻击。当你使用研习反应时，你可以施放一个法术。该法术的施法时间必须是一个动作，且必须仅以该生物为目标。"
+				"你已学会充分预判敌人的行动，从而能迅速施法以应对其攻击。当你使用{@classFeature 研习反应|怪物猎人|GrimHollowPG24|2}时，你可以施展一个法术。该法术的施法时间必须是一个动作，且必须仅以该生物为目标。"
 			]
 		},
 		{
@@ -4080,7 +4287,7 @@
 			"header": 1,
 			"entries": [
 				"你学会了制造在搜寻过程中协助你的装置和机械。",
-				"作为{@variantrule 长休|XPHB}的一部分，如果你手头有材料和{@item 修补工具|XPHB}，你可以制造二个{@filter 诱陷者装置|optionalfeatures|source=|特性 type=tg:tg}。此外，使用这样的工具包工作1小时并消耗价值20 GP的材料（如装备或怪物剩余价值），你可以从下方列表中创建一个诱陷者装置。",
+				"作为{@variantrule 长休|XPHB}的一部分，如果你手头有材料和{@item 修补工具|XPHB}，你可以制造二个{@filter 诱陷者装置|optionalfeatures|source=|feature type=TG:TG}。此外，使用这样的工具包工作1小时并消耗价值20 GP的材料（如装备或怪物剩余价值），你可以从下方列表中创建一个诱陷者装置。",
 				"某些诱陷者装置允许你的目标进行一次属性检定或豁免检定以抵抗该装置的效应。豁免检定的DC计算如下：",
 				{
 					"ENG_name": "Trapper Gadgets",
@@ -4104,7 +4311,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你已成为一名凶猛的伏击者。当你掷{@variantrule 先攻|XPHB}时，你可以将你的智力调整值添加到掷骰中。此外，你不会被包含你怪物法术书中生物类型的敌人{@status 突袭|XPHB}。"
+				"你已成为一名凶猛的伏击者。当你进行{@variantrule 先攻|XPHB}检定时，你可以将你的智力调整值添加到该检定中。此外，你不会被包含在你{@classFeature 怪物法术书|怪物猎人|GrimHollowPG24|1}中生物类型的敌人{@status 突袭|XPHB}。"
 			]
 		},
 		{
@@ -4119,7 +4326,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"你可以侧跃躲闪以避免冲向你的敌人。当一个生物对你进行一次近战攻击掷骰时，你可以消耗一个{@variantrule 反应|XPHB}来使该掷骰获得{@variantrule 劣势|XPHB}，并在同一个{@variantrule 反应|XPHB}中使用你的研习反应。无论攻击命中与否，你都可以随后移动至多一半的{@variantrule 速度|XPHB}。此移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
+				"你可以侧跃躲闪以避开冲向你的敌人。当一个生物对你进行一次近战攻击掷骰时，你可以使用一个{@variantrule 反应|XPHB}来使该掷骰获得{@variantrule 劣势|XPHB}，并在同一个{@variantrule 反应|XPHB}中使用你的{@classFeature 研习反应|怪物猎人|GrimHollowPG24|2}。无论攻击命中与否，你随后都可以移动至多一半的{@variantrule 速度|XPHB}。此移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
 			]
 		},
 		{
@@ -4135,7 +4342,7 @@
 			"header": 2,
 			"entries": [
 				"你学会了使用龙鳞、狼人表皮、巨魔皮甲或类似的怪物成分来制造一套轻型或中甲。护甲会呈现出你选择的外貌，反映出其制造所用的成分。",
-				"该护甲具有与轻型或中甲相同的词条（制作护甲时选择）并从{@filter 装甲改造列表|optionalfeatures|source=grimhollowpg24|特性 type=tg:am}中获得两个改造。每当你获得一个怪物猎人等级时，你可以将其中一个改造替换为另一个改造。",
+				"该护甲具有与轻型或中甲相同的词条（制作护甲时选择）并从{@filter 装甲改造列表|optionalfeatures|source=grimhollowpg24|feature type=TG:AM}中获得两个改造。每当你获得一个怪物猎人等级时，你可以将其中一个改造替换为另一个改造。",
 				"改装需要装备护甲才能生效。"
 			]
 		},
@@ -4279,7 +4486,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"当你被缩小到0{@variantrule 生命值|XPHB}且未被直接杀死时，你可以放下到1{@variantrule 生命值|XPHB|生命值}，并获得等于你最大{@variantrule 临时生命值|XPHB}一半的{@variantrule 生命值|XPHB|生命值}。此外，如果你的狂暴处于激活状态，你的狂暴结束。如果你的狂暴未激活，你立即激活你的狂暴（即使你没有剩余的狂暴使用次数）。如果这些{@variantrule 临时生命值|XPHB}在1分钟后仍有剩余，它们消隐。",
+				"当你被缩小到0{@variantrule 生命值|XPHB}且未被直接杀死时，你可以放下到1{@variantrule 生命值|XPHB|生命值}，并获得等于你最大{@variantrule 生命值|XPHB|生命值}一半的{@variantrule 临时生命值|XPHB}。此外，如果你的狂暴处于激活状态，你的狂暴结束。如果你的狂暴未激活，你立即激活你的狂暴（即使你没有剩余的狂暴使用次数）。如果这些{@variantrule 临时生命值|XPHB}在1分钟后仍有剩余，它们消隐。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
 			]
 		},
@@ -4668,7 +4875,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"你从该子职描述后文的{@filter \"冒险者的天赋选项\"|optionalfeatures|特性 type=冒险者学院:冒险者天赋}部分中选择一个冒险者天赋。当你达到吟游诗人等级6和14时，你将学习一个额外的自选冒险者天赋。",
+				"你从该子职描述后文的{@filter \"冒险者的天赋选项\"|optionalfeatures|feature type=CA:AT}部分中选择一个冒险者天赋。当你达到吟游诗人等级6和14时，你将学习一个额外的自选冒险者天赋。",
 				{
 					"type": "options",
 					"count": 1,
@@ -6159,7 +6366,7 @@
 					"name": "化合物",
 					"type": "entries",
 					"entries": [
-						"你从{@filter 复合选项|optionalfeatures|source=grimhollowpg24|特性 type=lc:co}下方的章节中选择学习三种化合物。当你达到战士7级、10级和15级时，你可以额外选择学习两种化合物。每次学习新化合物时，你还可以将一个已知的化合物替换为不同的化合物。"
+						"你从{@filter 复合选项|optionalfeatures|source=grimhollowpg24|feature type=LC:CO}下方的章节中选择学习三种化合物。当你达到战士7级、10级和15级时，你可以额外选择学习两种化合物。每次学习新化合物时，你还可以将一个已知的化合物替换为不同的化合物。"
 					]
 				},
 				{
@@ -6250,7 +6457,7 @@
 			"header": 2,
 			"entries": [
 				"你对毒素伤害具有{@variantrule 抗性|XPHB}。此外，作为一个{@variantrule 附赠动作|XPHB}，你可以结束自身的{@condition 中毒|XPHB}状态。",
-				"当你以这种方式结束自身的{@condition 中毒|XPHB}状态时，你可以选择获得等于你战士等级的{@variantrule 临时生命值|XPHB}。完成一次{@variantrule 临时生命值|XPHB}后，你将重新获得获得这些{@variantrule 长休|XPHB}的能力。"
+				"当你以这种方式结束自身的{@condition 中毒|XPHB}状态时，你可以选择获得等于你战士等级的{@variantrule 临时生命值|XPHB}。完成一次{@variantrule 长休|XPHB}后，你将重新获得获得这些{@variantrule 临时生命值|XPHB}的能力。"
 			]
 		},
 		{
@@ -6317,7 +6524,7 @@
 					"name": "敏锐感官",
 					"type": "entries",
 					"entries": [
-						"你在{@variantrule 优势|XPHB}检定和感知（{@skill 察觉|XPHB}）检定上具有{@variantrule 先攻|XPHB}。"
+						"你在{@variantrule 先攻|XPHB}检定和感知（{@skill 察觉|XPHB}）检定上具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
@@ -6325,7 +6532,7 @@
 					"name": "警告咆哮",
 					"type": "entries",
 					"entries": [
-						"当你进行{@variantrule 先攻|XPHB}先攻掷骰时，你可以使用一个{@variantrule 反应|XPHB}反应来警告30尺内能看见或听见你的自选生物。每个生物随后可以使用一个{@variantrule 反应|XPHB}反应来在其{@variantrule 优势|XPHB}先攻掷骰上获得{@variantrule 先攻|XPHB}优势，并移动至多一半{@variantrule 速度|XPHB}速度而不引发{@action 借机攻击|XPHB|借机攻击}借机攻击。"
+						"当你进行{@variantrule 先攻|XPHB}先攻掷骰时，你可以使用一个{@variantrule 反应|XPHB}反应来警告30尺内能看见或听见你的自选生物。每个生物随后可以使用一个{@variantrule 反应|XPHB}反应来在其{@variantrule 先攻|XPHB}先攻掷骰上获得{@variantrule 优势|XPHB}优势，并移动至多一半{@variantrule 速度|XPHB}速度而不引发{@action 借机攻击|XPHB|借机攻击}借机攻击。"
 					]
 				},
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
@@ -6614,7 +6821,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"你的自我在你为证明自身价值而战时使你更加强大。当你消耗一个功力点时，你还可以获得等于你感知调整值（至少1{@variantrule 临时生命值|XPHB}）的{@variantrule 临时生命值|XPHB|临时生命值}。当你处于{@condition 浴血|XPHB}状态时，你改为获得两倍该数量的临时生命值。"
+				"你的自我在你为证明自身价值而战时使你更加强大。当你消耗一个功力点时，你还可以获得等于你感知调整值（至少1{@variantrule 临时生命值|XPHB|临时生命值}）的{@variantrule 临时生命值|XPHB}。当你处于{@condition 浴血|XPHB}状态时，你改为获得两倍该数量的临时生命值。"
 			]
 		},
 		{
@@ -7159,7 +7366,7 @@
 			"header": 2,
 			"entries": [
 				"你对鲜血的渴望感染了你周围的人。当一个处于你守护灵光范围内且处于{@condition 浴血|XPHB}状态的盟友使用武器或{@variantrule 徒手打击|XPHB}进行攻击时，它会获得伤害加值。加值等于你的魅力调整值。",
-				"此外，当守护灵光范围内处于{@condition 浴血|XPHB}状态的生物对抗血魔法法术进行豁免检定时，你可以使用一个{@variantrule 反应|XPHB}来使该豁免检定获得{@variantrule 劣势|XPHB}。"
+				"此外，当你的守护灵光范围内一个{@condition 浴血|XPHB}状态的生物进行对抗{@filter 血魔法法术|spells|subschool=血魔法}法术的豁免检定时，你可以使用一个{@variantrule 反应|XPHB}反应来使该次豁免检定获得{@variantrule 劣势|XPHB}劣势。"
 			]
 		},
 		{
@@ -8225,7 +8432,7 @@
 					"name": "厄运",
 					"type": "entries",
 					"entries": [
-						"你学习两个自选的厄运，详情见{@filter \"厄运\"|optionalfeatures|source=GrimHollowPG24|特性 type=mb:m}下方。",
+						"你学习两个自选的厄运，详情见{@filter \"厄运\"|optionalfeatures|source=GrimHollowPG24|feature type=MB:M}下方。",
 						"当你达到游荡者9级、13级和17级时，你可以选择一个额外的厄运。当你完成一次{@variantrule 长休|XPHB}时，你可以将一个已知的厄运替换为另一个不同的厄运。"
 					]
 				},
@@ -8334,7 +8541,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"你已学会施放法师法术，以及血魔法学派的法术。所有血魔法法术和戏法在此子职中均视为法师法术。",
+				"你已学会施放{@filter 法师法术|spells|class=法师}，以及血魔法学派的法术。所有{@filter 血魔法法术|spells|subschool=血魔法}和戏法，对于此子职而言，均被视为法师法术。",
 				{
 					"ENG_name": "Cantrips",
 					"name": "戏法",
@@ -8382,7 +8589,7 @@
 					"name": "法器",
 					"type": "entries",
 					"entries": [
-						"你可以使用奥术法器作为法师法术的{@variantrule 法器|XPHB}。"
+						"你可以使用{@item 奥术法器|XPHB}作为你法师法术的{@variantrule 法器|XPHB}。"
 					]
 				}
 			]
@@ -8422,7 +8629,7 @@
 					"name": "血魔法",
 					"type": "entries",
 					"entries": [
-						"当你施放血魔法法术时，可以花费血魔法骰子而非{@variantrule 生命值骰|XPHB|生命骰}。"
+						"当你施放{@filter 血魔法法术|spells|subschool=血魔法}时，你可以花费血魔法骰子来代替{@variantrule 生命值骰|XPHB|生命骰}。"
 					]
 				},
 				"当你完成一次{@variantrule 长休|XPHB}时，你的治疗池重获所有已消耗的骰子。"
@@ -8457,7 +8664,7 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"作为一个{@action 魔法|XPHB}动作，你可以消耗3个{@variantrule 生命值骰|XPHB|生命骰}或血魔法骰来抛掷一波针状的鲜血碎片。当你这样做时，你选择的每个在你30尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的生物必须进行一次对抗你法术豁免DC的敏捷豁免检定，豁免失败则受到{@damage 3d8}暗蚀伤害，豁免成功则受到一半伤害。每有一个生物被此特性缩小到0{@variantrule 生命值骰|XPHB|生命骰}，你就能恢复1个{@variantrule 生命值|XPHB}或血魔法骰（由你选择）。",
+				"作为一个{@action 魔法|XPHB}动作，你可以消耗3个{@variantrule 生命值骰|XPHB|生命骰}或血魔法骰来抛掷一波针状的鲜血碎片。当你这样做时，你选择的每个在你30尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的生物必须进行一次对抗你法术豁免DC的敏捷豁免检定，豁免失败则受到{@damage 3d8}暗蚀伤害，豁免成功则受到一半伤害。每有一个生物被此特性缩小到0{@variantrule 生命值|XPHB}，你就能恢复1个{@variantrule 生命值骰|XPHB|生命骰}或血魔法骰（由你选择）。",
 				"一旦你使用此特性，则直至完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}，你都无法再次使用。"
 			]
 		},
@@ -8639,7 +8846,7 @@
 				},
 				{
 					"ENG_name": "Inexorable",
-					"name": "不可阻挡",
+					"name": "无阻",
 					"type": "entries",
 					"entries": [
 						"受到伤害不会打断你对法术的{@status 专注|XPHB}。当法术结束时，你将获得1个{@condition 力竭|XPHB}等级。"
@@ -8795,7 +9002,7 @@
 		},
 		{
 			"ENG_name": "Strength of Spirit",
-			"name": "精魄之力",
+			"name": "精神力量",
 			"source": "GrimHollowPG24",
 			"page": 95,
 			"className": "术士",
@@ -8848,7 +9055,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"当接近死亡时，你可以将自己的物理形态转化为灵体形态。当你被缩小到0{@variantrule 生命值|XPHB}但未被直接杀死时，你可以改为降至1{@variantrule 生命值|XPHB|生命值}并获得等于你最大{@variantrule 临时生命值|XPHB}一半的{@variantrule 生命值|XPHB|生命值}。在你的每个回合开始时，你失去10{@variantrule 临时生命值|XPHB}，你选择的30尺内的生物受到10点暗蚀伤害。当你拥有此特性赋予的{@variantrule 临时生命值|XPHB}时，你对所有伤害具有{@variantrule 抗性|XPHB}，拥有30尺的{@variantrule 飞行速度|XPHB}，可以{@variantrule 悬浮|XPHB}，并且可以穿过被占据的空间如同它们是{@variantrule 困难地形|XPHB}。如果你在这样的空间结束回合，你将被传送到你最后所在的未占据空间。",
+				"当接近死亡时，你可以将自己的物理形态转化为灵体形态。当你被缩小到0{@variantrule 生命值|XPHB}但未被直接杀死时，你可以改为降至1{@variantrule 生命值|XPHB|生命值}并获得等于你最大{@variantrule 生命值|XPHB|生命值}一半的{@variantrule 临时生命值|XPHB}。在你的每个回合开始时，你失去10{@variantrule 临时生命值|XPHB}，你选择的30尺内的生物受到10点暗蚀伤害。当你拥有此特性赋予的{@variantrule 临时生命值|XPHB}时，你对所有伤害具有{@variantrule 抗性|XPHB}，拥有30尺的{@variantrule 飞行速度|XPHB}，可以{@variantrule 悬浮|XPHB}，并且可以穿过被占据的空间如同它们是{@variantrule 困难地形|XPHB}。如果你在这样的空间结束回合，你将被传送到你最后所在的未占据空间。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
 			]
 		},
@@ -9426,7 +9633,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"你的雇主始终对所有针对其宿主的威胁保持警觉。你不会陷入{@status 突袭|XPHB}状态，并且在{@variantrule 优势|XPHB}检定上具有{@variantrule 先攻|XPHB}。你在避免或结束{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态的豁免检定上也具有{@variantrule 优势|XPHB}。"
+				"你的雇主始终对所有针对其宿主的威胁保持警觉。你不会陷入{@status 突袭|XPHB}状态，并且在{@variantrule 先攻|XPHB}检定上具有{@variantrule 优势|XPHB}。你在避免或结束{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态的豁免检定上也具有{@variantrule 优势|XPHB}。"
 			]
 		},
 		{
@@ -9508,7 +9715,7 @@
 			"header": 1,
 			"entries": [
 				"下方列出的法术可以在你达到相应等级时免费添加到你的法术书中。",
-				"每当你完成一次长休时，选择是从大恶魔还是大炽天使处汲取法力。你可以准备对应你法师等级及以下的法术列表中的法术，但不能准备对立派系的法术。",
+				"每当你完成一次{@variantrule 长休|XPHB}时，选择你是从大恶魔还是大炽天使处汲取法力。你可以准备对应你法师等级及下位所列的法术，但不能准备对立派系的法术。",
 				{
 					"type": "table",
 					"caption": "大恶魔",
@@ -9583,7 +9790,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"你已揭露或窃取了大恶魔和大炽天使代理人的秘密法力。你获得一个自选的魔能祈唤。",
+				"你已从大恶魔与大炽天使的代理人处发掘或窃取了诡秘法力。你获得一个你选择的{@filter 魔能祈唤|optionalfeatures|feature type=EI}。",
 				{
 					"ENG_name": "Prerequisites",
 					"name": "先决",
@@ -9883,8 +10090,24 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"你从鲜血中汲取魔法。它由你的血魔法骰子代表，这些骰子为你从该子职获得的能力提供燃料。你拥有一个d12水池，可以在施放血魔法法术时消耗这些骰子来代替{@variantrule 生命值骰|XPHB|生命骰}。水池中的骰子数量等于1加上你的法师等级。当你完成一次{@variantrule 短休|XPHB}时恢复一个消耗的血魔法骰子，当你完成一次{@variantrule 长休|XPHB}时恢复所有消耗的血魔法骰子。"
-			]
+				"你从鲜血中汲取魔法。它由你的血魔法骰子所代表，这些骰子为你从此子职获得的能力提供燃料。你拥有一个d12骰池，当你施放{@filter 血魔法法术|spells|subschool=血魔法}时，可以消耗其中的骰子来代替{@variantrule 生命值骰|XPHB|生命骰}。池中的骰子数量等于1加上你的法师等级。当你完成一次{@variantrule 短休|XPHB}时，你恢复一个已消耗的血魔法骰子；当你完成一次{@variantrule 长休|XPHB}时，你恢复所有已消耗的血魔法骰子。"
+			],
+			"foundrySystem": {
+				"uses": {
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "formula",
+							"formula": "1"
+						},
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					],
+					"max": "1 + @classes.wizard.levels"
+				}
+			}
 		},
 		{
 			"ENG_name": "Sangromancy Savant",
@@ -9914,12 +10137,12 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"你的{@variantrule 生命值|XPHB|生命值}上限增加6点，并且每当你获得另一个法师等级时，它增加1点。此外，每当你使用法术位施放一个血魔法法术时，你将恢复{@variantrule 生命值|XPHB}等于该法术位的等级。"
+				"你的{@variantrule 生命值|XPHB|生命值}上限增加6点，并且每当你获得另一个法师等级时，它再增加1点。此外，每当你使用一个法术位施放一个{@filter 血魔法法术|spells|source=grimhollowpg24|subschool=血魔法}时，你恢复等同于该法术位等级的{@variantrule 生命值|XPHB}。"
 			]
 		},
 		{
 			"ENG_name": "Blood for Blood",
-			"name": "鲜血换鲜血",
+			"name": "血债血偿",
 			"source": "GrimHollowPG24",
 			"page": 105,
 			"className": "法师",
@@ -9946,10 +10169,124 @@
 			"entries": [
 				"当你完成一次{@variantrule 短休|XPHB}时，你恢复消耗的{@variantrule 生命值骰|XPHB}和血魔法骰子，数量等于你法师等级的一半。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Expert Strike",
+			"name": "专家打击",
+			"source": "GrimHollowPG24",
+			"className": "怪物猎人",
+			"classSource": "GrimHollowPG24",
+			"level": 5,
+			"effects": [
+				{
+					"ENG_name": "Expert Strike",
+					"name": "专家打击",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.bonuses.mwak.attack",
+							"mode": 2,
+							"value": "@abilities.int.mod",
+							"priority": 20
+						},
+						{
+							"key": "system.bonuses.mwak.damage",
+							"mode": 2,
+							"value": "@abilities.int.mod",
+							"priority": 20
+						}
+					]
+				}
 			]
 		}
 	],
 	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Sanguine Vigor",
+			"name": "血色活力",
+			"source": "GrimHollowPG24",
+			"className": "法师",
+			"classSource": "XPHB",
+			"subclassShortName": "血法师",
+			"subclassSource": "GrimHollowPG24",
+			"level": 6,
+			"effects": [
+				{
+					"ENG_name": "Sanguine Vigor",
+					"name": "血色活力",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.bonuses.overall",
+							"mode": 2,
+							"value": "@classes.wizard.levels",
+							"priority": 20
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Red Renewal",
+			"name": "红之新生",
+			"source": "GrimHollowPG24",
+			"className": "法师",
+			"classSource": "XPHB",
+			"subclassShortName": "血法师",
+			"subclassSource": "GrimHollowPG24",
+			"level": 14,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "shortRest"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": false
+						},
+						"spellSlot": true,
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": "",
+								"scaling": {}
+							},
+							{
+								"type": "hitDice",
+								"value": "-@classes.wizard.levels/2",
+								"target": "最小"
+							},
+							{
+								"type": "itemUses",
+								"value": "-@classes.wizard.levels/2",
+								"target": {
+									"consumes": {
+										"ENG_name": "Full-Blooded",
+										"name": "纯血统"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
 		{
 			"ENG_name": "Primal Companion",
 			"name": "原初伴侣",
@@ -9974,7 +10311,8 @@
 								"value": "1",
 								"target": {
 									"consumes": {
-										"name": "Rage"
+										"ENG_name": "Rage",
+										"name": "狂暴"
 									}
 								}
 							}
@@ -9984,17 +10322,17 @@
 						{
 							"ENG_name": "Land",
 							"name": "大地",
-							"uuid": "{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						},
 						{
 							"ENG_name": "Sea",
 							"name": "海洋",
-							"uuid": "{!@ $.foundrySubclassFeature[0].activities[0].profiles[1].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySubclassFeature[2].activities[0].profiles[1].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						},
 						{
 							"ENG_name": "Sky",
 							"name": "天空",
-							"uuid": "{!@ $.foundrySubclassFeature[0].activities[0].profiles[2].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySubclassFeature[2].activities[0].profiles[2].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						}
 					],
 					"bonuses": {
@@ -10022,7 +10360,8 @@
 								"value": "1",
 								"target": {
 									"consumes": {
-										"name": "Rage"
+										"ENG_name": "Rage",
+										"name": "狂暴"
 									}
 								}
 							}
@@ -10032,17 +10371,17 @@
 						{
 							"ENG_name": "Land",
 							"name": "大地",
-							"uuid": "{!@ $.foundrySubclassFeature[0].activities[1].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySubclassFeature[2].activities[1].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						},
 						{
 							"ENG_name": "Sea",
 							"name": "海洋",
-							"uuid": "{!@ $.foundrySubclassFeature[0].activities[1].profiles[1].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySubclassFeature[2].activities[1].profiles[1].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						},
 						{
 							"ENG_name": "Sky",
 							"name": "天空",
-							"uuid": "{!@ $.foundrySubclassFeature[0].activities[1].profiles[2].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySubclassFeature[2].activities[1].profiles[2].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						}
 					],
 					"bonuses": {
@@ -10102,7 +10441,7 @@
 					"profiles": [
 						{
 							"count": "@scaling",
-							"uuid": "{!@ $.foundrySubclassFeature[1].activities[0].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySubclassFeature[3].activities[0].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						}
 					],
 					"bonuses": {
@@ -10120,6 +10459,264 @@
 		}
 	],
 	"optionalfeature": [
+		{
+			"ENG_name": "Aberration",
+			"name": "异怪",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"深潜语",
+							"地底通用语"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				"你在进行与异怪生物类型相关的智力与感知检定时，可加上你的{@variantrule 熟练|XPHB|熟练加值}。若你在被要求进行与异怪相关的智力或感知属性检定时，已在该技能上拥有熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 深潜语}或{@language 地底通用语}。"
+			]
+		},
+		{
+			"ENG_name": "Beast",
+			"name": "野兽",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"sylvan": true
+				}
+			],
+			"entries": [
+				"你在进行与野兽生物类型相关的智力与感知检定时，可以加上你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行与野兽相关的智力或感知属性检定时，已经拥有该技能的熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 木族语}。"
+			]
+		},
+		{
+			"ENG_name": "Celestial",
+			"name": "天界语",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"celestial": true
+				}
+			],
+			"entries": [
+				"你在进行与天族生物类型相关的智力与感知检定时，可以加上你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行与天族相关的智力或感知属性检定时，已经拥有该技能的熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 天界语}。"
+			]
+		},
+		{
+			"ENG_name": "Construct",
+			"name": "构装",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			],
+			"entries": [
+				"你在进行与构装体生物类型相关的智力与感知检定时，可加上你的{@variantrule 熟练|XPHB|熟练加值}。若你在被要求进行与构装相关的智力或感知属性检定时，已拥有该技能的熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 龙语}。"
+			]
+		},
+		{
+			"ENG_name": "Dragon",
+			"name": "龙",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"draconic": true
+				}
+			],
+			"entries": [
+				"你在进行与龙类生物类型相关的智力与感知检定时，可加上你的{@variantrule 熟练|XPHB|熟练加值}。若你在被要求进行与龙类相关的智力或感知属性检定时，已在该技能上拥有熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 龙语}。"
+			]
+		},
+		{
+			"ENG_name": "Elemental",
+			"name": "元素",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"primordial": true
+				}
+			],
+			"entries": [
+				"你在进行与元素生物类型相关的智力与感知检定时，可加上你的{@variantrule 熟练|XPHB|熟练加值}。若你在被要求进行与元素生物相关的智力或感知属性检定时，已在该技能上拥有熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 原初语}。"
+			]
+		},
+		{
+			"ENG_name": "Fey",
+			"name": "妖精",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"sylvan": true
+				}
+			],
+			"entries": [
+				"你在进行与妖精生物类型相关的智力与感知检定时，可以加上你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行与妖精相关的智力或感知属性检定时，所使用的技能已具备熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 木族语}。"
+			]
+		},
+		{
+			"ENG_name": "Fiend",
+			"name": "邪魔",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"深渊语",
+							"炼狱语"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				"你在进行与邪魔生物类型相关的智力与感知检定时，添加你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行与邪魔相关的智力或感知属性检定时，已熟练于该技能，则改为添加双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 深渊语}或{@language 炼狱语}。"
+			]
+		},
+		{
+			"ENG_name": "Giant",
+			"name": "巨人语",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"giant": true
+				}
+			],
+			"entries": [
+				"你在进行与巨人生物类型相关的智力与感知检定时，可加上你的{@variantrule 熟练|XPHB|熟练加值}。若你在被要求进行与巨人相关的智力或感知属性检定时，已在该技能上拥有熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 巨人语}。"
+			]
+		},
+		{
+			"ENG_name": "Monstrosity",
+			"name": "怪兽",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"deep speech": true
+				}
+			],
+			"entries": [
+				"你在进行与怪兽生物类型相关的智力与感知检定时，可以加上你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行与怪兽相关的智力或感知属性检定时，已经熟练于该技能，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 深潜语}。"
+			]
+		},
+		{
+			"ENG_name": "Ooze",
+			"name": "泥怪",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"深潜语",
+							"地底通用语"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				"你在进行与泥怪生物类型相关的智力与感知检定时，添加你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行与泥怪相关的智力或感知属性检定时，已拥有该技能的熟练项，则改为添加双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 深潜语}或{@language 地底通用语}。"
+			]
+		},
+		{
+			"ENG_name": "Plant",
+			"name": "植物",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"sylvan": true
+				}
+			],
+			"entries": [
+				"你在进行与植物生物类型相关的智力与感知检定时，可加上你的{@variantrule 熟练|XPHB|熟练加值}。若你在被要求进行与植物相关的智力或感知属性检定时，已拥有该技能的熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 木族语}。"
+			]
+		},
+		{
+			"ENG_name": "Undead",
+			"name": "亡灵",
+			"source": "GrimHollowPG24",
+			"page": 52,
+			"featureType": [
+				"MGS"
+			],
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"深渊语",
+							"炼狱语"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				"你在进行与亡灵生物类型相关的智力与感知检定时，可加上你的{@variantrule 熟练|XPHB|熟练加值}。若你在被要求进行与亡灵相关的智力或感知属性检定时，已拥有该技能的熟练项，则改为加上双倍的{@variantrule 熟练|XPHB|熟练加值}。",
+				"当你获得此特性时，你同时学会{@language 深渊语}或{@language 炼狱语}。"
+			]
+		},
 		{
 			"ENG_name": "Aberrant Form",
 			"name": "畸变形态",
@@ -10197,7 +10794,7 @@
 				}
 			],
 			"entries": [
-				"你获得对{@optfeature 邪魔灵魂|GrimHollowPG24}所选伤害类型的{@variantrule 免疫|XPHB}，并对其他两种伤害类型获得{@variantrule 徒手打击|XPHB}。此外，你对非魔法武器攻击或{@variantrule 抗性|XPHB}造成的伤害具有{@variantrule 抗性|XPHB}。"
+				"你获得对{@optfeature 邪魔灵魂|GrimHollowPG24}所选伤害类型的{@variantrule 免疫|XPHB}，并对其他两种伤害类型获得{@variantrule 抗性|XPHB}。此外，你对非魔法武器攻击或{@variantrule 徒手打击|XPHB}造成的伤害具有{@variantrule 抗性|XPHB}。"
 			]
 		},
 		{
@@ -10515,8 +11112,8 @@
 				"E"
 			],
 			"entries": [
-				"你被制造而非诞生，你的非自然起源永远使你与众不同。你是一个构装体，但你附魔的形态仍然能从治疗法术中获益。你也可以通过在{@variantrule 生命值骰|XPHB|生命骰}和{@variantrule 短休|XPHB|短休}期间花费{@variantrule 长休|XPHB|长休}来治疗自己，如常。",
-				"你不需要进食、饮用饮品、施放睡眠术或呼吸。你仍然必须在{@variantrule 长休|XPHB}期间保持8小时的无法行动状态以获得其增益。",
+				"你被制造而非诞生，你的非自然起源永远使你与众不同。你是一个构装体，但你附魔的形态仍然能从治疗法术中获益。你也可以通过在{@variantrule 短休|XPHB|短休}和{@variantrule 长休|XPHB|长休}期间花费{@variantrule 生命值骰|XPHB|生命骰}来治疗自己，如常。",
+				"你不需要进食、饮用饮品、睡眠或呼吸。你仍然必须在{@variantrule 长休|XPHB}期间保持8小时的无法行动状态以获得其增益。",
 				{
 					"ENG_name": "Self-Repair",
 					"name": "自我修复",
@@ -10606,7 +11203,7 @@
 					"name": "岩石心脏",
 					"type": "entries",
 					"entries": [
-						"你可以选择在任何{@variantrule 劣势|XPHB}检定上获得{@variantrule 先攻|XPHB}。如果这样做，作为一个{@variantrule 反应|XPHB}，你和30尺内你选择的每个生物获得等于你的{@dice 1d10}加上体质调整值的{@variantrule 临时生命值|XPHB}。当一个生物以这种方式获得{@variantrule 临时生命值|XPHB}时，他们不能处于{@condition 倒地|XPHB}状态，除非这是{@condition 昏迷|XPHB}状态的一部分。"
+						"你可以选择在任何{@variantrule 先攻|XPHB}检定上获得{@variantrule 劣势|XPHB}。如果这样做，作为一个{@variantrule 反应|XPHB}，你和30尺内你选择的每个生物获得等于你的{@dice 1d10}加上体质调整值的{@variantrule 临时生命值|XPHB}。当一个生物以这种方式获得{@variantrule 临时生命值|XPHB}时，他们不能处于{@condition 倒地|XPHB}状态，除非这是{@condition 昏迷|XPHB}状态的一部分。"
 					]
 				},
 				{
@@ -10797,7 +11394,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 3 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 3 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -10986,7 +11583,7 @@
 			],
 			"entries": [
 				"与龙族血脉或元素之怒的联系让你能够释放一股毁灭能量。当你选择此特质时，选择一种伤害类型：强酸、寒冷、火焰、闪电、毒素或雷鸣。然后选择一个效应区域：一条5尺宽30尺长的{@variantrule 线状 [效应区域]|XPHB|线状}，或一个15尺的{@variantrule 锥状 [效应区域]|XPHB|锥状}。",
-				"当你使用一个{@action 魔法|XPHB}动作来释放你的吐息武器时，效应区域内的每个生物必须进行一次敏捷豁免检定（DC = 8 + 你的体质调整值 + 你的{@variantrule 熟练|XPHB|熟练加值}）。目标生物在豁免失败时受到所选生物类型的{@damage 1d8}伤害，豁免成功则只受到一半伤害。当你达到角色等级5（{@dice 4d8}）、11（{@dice 2d8}）和17（{@dice 3d8}）时，此伤害增加{@dice 1d8}。",
+				"当你使用一个{@action 魔法|XPHB}动作来释放你的吐息武器时，效应区域内的每个生物必须进行一次敏捷豁免检定（DC = 8 + 你的体质调整值 + 你的{@variantrule 熟练|XPHB|熟练加值}）。目标生物在豁免失败时受到所选生物类型的{@damage 1d8}伤害，豁免成功则只受到一半伤害。当你达到角色等级5（{@dice 2d8}）、11（{@dice 3d8}）和17（{@dice 4d8}）时，此伤害增加{@dice 1d8}。",
 				"你可以使用此特性的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。",
 				{
 					"ENG_name": "Potent Breath",
@@ -11011,7 +11608,7 @@
 				"无常者想要杀死你的诸多事物必须先捕获你。在你的回合，你可以将你的{@variantrule 速度|XPHB}提升30尺直到你的回合结束。你可以使用此特性的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。",
 				{
 					"ENG_name": "Furious Speed",
-					"name": "狂怒速度",
+					"name": "狂怒之速",
 					"type": "entries",
 					"entries": [
 						"如果你选择此特质两次，在你使用速度爆发的回合，你不会引发{@action 借机攻击|XPHB|借机攻击}。"
@@ -11140,7 +11737,7 @@
 				{
 					"type": "list",
 					"items": [
-						"他们获得等于{@variantrule 临时生命值|XPHB}圣言治愈伤害数量的{@variantrule 治疗|XPHB}。",
+						"他们获得等于{@variantrule 治疗|XPHB}圣言治愈伤害数量的{@variantrule 临时生命值|XPHB}。",
 						"他们在接下来的1分钟内进行的下一次{@variantrule D20 检定|XPHB}具有{@variantrule 优势|XPHB}。",
 						"你结束目标身上的下列状态之一：{@condition 目盲|XPHB}、{@condition 耳聋|XPHB}、{@condition 麻痹|XPHB}或{@condition 中毒|XPHB}。"
 					]
@@ -11156,7 +11753,7 @@
 				"CA:AT"
 			],
 			"entries": [
-				"你获得了直接从诸神引导神圣能量的能力，激励盟友并圣化他们的攻击。作为一个{@variantrule 附赠动作|XPHB}，选择30尺内的一个生物。在10分钟内，目标获得等于你吟游诗人等级的一半加上你的魅力调整值的{@variantrule 徒手打击|XPHB}。当一个生物拥有由该天赋授予的{@variantrule 临时生命值|XPHB}时，它可以选择在用一个武器或{@variantrule 临时生命值|XPHB}击中一个生物时失去所有剩余的{@variantrule 临时生命值|XPHB}，造成等于失去的{@variantrule 临时生命值|XPHB}数值的额外光耀伤害。",
+				"你获得了直接从诸神引导神圣能量的能力，激励盟友并圣化他们的攻击。作为一个{@variantrule 附赠动作|XPHB}，选择30尺内的一个生物。在10分钟内，目标获得等于你吟游诗人等级的一半加上你的魅力调整值的{@variantrule 临时生命值|XPHB}。当一个生物拥有由该天赋授予的{@variantrule 临时生命值|XPHB}时，它可以选择在用一个武器或{@variantrule 徒手打击|XPHB}击中一个生物时失去所有剩余的{@variantrule 临时生命值|XPHB}，造成等于失去的{@variantrule 临时生命值|XPHB}数值的额外光耀伤害。",
 				"一旦你使用了这个天赋，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}之前无法再次使用。"
 			]
 		},
@@ -11242,7 +11839,7 @@
 			],
 			"entries": [
 				"你为你的绞缠卷须异变获得一个额外选项。",
-				"当扭动触须激活时，你可以用一个{@variantrule 附赠动作|XPHB}尝试用你的卷须束缚5尺内的一个生物。该生物必须成功通过一个力量或敏捷豁免检定否则获得{@condition 失能|XPHB}状态。DC为8加上你的{@variantrule 熟练|XPHB|熟练加值}再加上你的变形阶段。一个{@condition 束缚|XPHB}的生物可以用一个动作进行一次力量（{@skill 运动|XPHB}）检定对抗该DC，成功时结束自身的该状态。如果你{@condition 束缚|XPHB}、从当前位置移动、收回卷须或用卷须执行另一个能力，{@condition 束缚|XPHB}状态结束。"
+				"当扭动触须激活时，你可以用一个{@variantrule 附赠动作|XPHB}尝试用你的卷须束缚5尺内的一个生物。该生物必须成功通过一个力量或敏捷豁免检定否则获得{@condition 束缚|XPHB}状态。DC为8加上你的{@variantrule 熟练|XPHB|熟练加值}再加上你的变形阶段。一个{@condition 束缚|XPHB}的生物可以用一个动作进行一次力量（{@skill 运动|XPHB}）检定对抗该DC，成功时结束自身的该状态。如果你{@condition 失能|XPHB}、从当前位置移动、收回卷须或用卷须执行另一个能力，{@condition 束缚|XPHB}状态结束。"
 			]
 		},
 		{
@@ -11358,7 +11955,17 @@
 			],
 			"prerequisite": [
 				{
-					"level": 10
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Druid",
+							"name": "德鲁伊"
+						},
+						"subclass": {
+							"ENG_name": "Mutation",
+							"name": "异变"
+						}
+					}
 				}
 			],
 			"entries": [
@@ -11627,7 +12234,7 @@
 					"name": "伤害免疫",
 					"type": "entries",
 					"entries": [
-						"如果你选择此特质两次，作为对所选{@variantrule 反应|XPHB}{@variantrule 伤害|XPHB}伤害类型的{@variantrule 抗性|XPHB}，你将获得对该伤害类型的{@variantrule 免疫|XPHB}，直到你的下一个回合结束。当你完成一次{@variantrule 短休|XPHB}后，你可以重新使用此特性。"
+						"如果你选择此特质两次，作为对所选{@variantrule 伤害|XPHB}{@variantrule 抗性|XPHB}伤害类型的{@variantrule 反应|XPHB}，你将获得对该伤害类型的{@variantrule 免疫|XPHB}，直到你的下一个回合结束。当你完成一次{@variantrule 短休|XPHB}后，你可以重新使用此特性。"
 					]
 				}
 			]
@@ -11915,7 +12522,7 @@
 				}
 			],
 			"entries": [
-				"你的身体和灵魂与死亡国度的寒冷黑暗连接在一起。由于你的生命力量被拉向湮灭，你在{@variantrule 劣势|XPHB}上具有{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}。"
+				"你的身体和灵魂与死亡国度的寒冷黑暗连接在一起。由于你的生命力量被拉向湮灭，你在{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}上具有{@variantrule 劣势|XPHB}。"
 			]
 		},
 		{
@@ -11927,7 +12534,7 @@
 				"TG:TG"
 			],
 			"entries": [
-				"一种散发恶臭的刀刃燃油，会导致伤口流血不止并拒绝治疗。恐惧毒液可以涂抹在一把挥砍或穿刺武器上，或最多10枚挥砍或穿刺弹药上。涂抹该毒素需要1分钟，涂抹后效果持续8小时。当生物因该{@condition 中毒}物品受到伤害时，在完成一次{@variantrule 生命值|XPHB}或{@variantrule 短休|XPHB|短}前无法恢复{@variantrule 长休|XPHB}。"
+				"一种恶臭的刃油，能使伤口流血不止并拒绝愈合。恐惧毒液可以涂抹在一把挥砍或穿刺武器上，或最多10件挥砍或穿刺弹药上。涂抹油需要1分钟，涂抹后效果持续8小时。当一个生物因被涂抹此油的物品受到伤害时，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}之前，它无法恢复{@variantrule 生命值|XPHB}。"
 			]
 		},
 		{
@@ -12142,7 +12749,17 @@
 			],
 			"prerequisite": [
 				{
-					"level": 10
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Druid",
+							"name": "德鲁伊"
+						},
+						"subclass": {
+							"ENG_name": "Mutation",
+							"name": "异变"
+						}
+					}
 				}
 			],
 			"entries": [
@@ -12173,7 +12790,7 @@
 			],
 			"entries": [
 				"你与魔法的超然能力以新的方式显现。当你施放一个需要{@status 专注|XPHB}的法术时，如果你已经在{@status 专注|XPHB|专注于}专注于一个这样的法术，你可以消耗你的灵魂器皿的冲锋。如果你这样做，你不会失去{@status 专注|XPHB}对原法术的专注。相反，你会获得1个{@condition 力竭|XPHB}力竭等级。",
-				"如果你在此期间施放第三个{@status 专注|XPHB}法术，或因任何其他原因失去{@status 专注|XPHB}，你将失去当前正在{@status 专注|XPHB}的两个法术的{@status 专注|XPHB|专注于}。",
+				"如果你在此期间施放第三个{@status 专注|XPHB}法术，或因任何其他原因失去{@status 专注|XPHB}，你将失去当前正在{@status 专注|XPHB|专注于}的两个法术的{@status 专注|XPHB}。",
 				"一旦你使用了此特性，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前无法再次使用。"
 			]
 		},
@@ -12252,14 +12869,14 @@
 		},
 		{
 			"ENG_name": "Elemental Ammunition",
-			"name": "元素弹药",
+			"name": "元素箭矢",
 			"source": "GrimHollowPG24",
 			"page": 58,
 			"featureType": [
 				"TG:TG"
 			],
 			"entries": [
-				"一支箭或弩矢的头部涂有毒药、装有强酸瓶、浸过易燃油或涂有其他材质。作为{@variantrule 附赠动作|XPHB}，你可以为单发能从长弓、短弓或弩发射的弹药注入元素法力，作为{@action 攻击|XPHB}动作的一部分。当元素弹药被注入时，选择一个伤害类型：强酸、寒冷、火焰、闪电、毒素或雷鸣。当一个生物受到元素弹药的伤害时，它将额外受到{@damage 2d6}点所选类型的伤害。",
+				"一支箭或弩矢的头部被涂上毒素、灌入强酸瓶、浸入易燃的燃油或涂上其他材质。以一个{@variantrule 附赠动作|XPHB}，你可以为一件可从{@item 长弓|XPHB}、{@item 短弓|XPHB}或弩上发射的弹药灌注元素法力，作为{@action 攻击|XPHB}动作的一部分。当一件元素箭矢被灌注时，选择一种伤害类型：强酸、寒冷、火焰、闪电、毒素或雷鸣。当一个生物受到该元素箭矢的伤害时，它将额外受到{@damage 2d6}点所选类型的伤害。",
 				"元素弹药命中时会释放其能量，且无法被回收。若攻击未命中，元素弹药可被回收并再次使用。元素弹药的法力效果持续48小时。"
 			]
 		},
@@ -12309,7 +12926,17 @@
 			],
 			"prerequisite": [
 				{
-					"level": 10
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Druid",
+							"name": "德鲁伊"
+						},
+						"subclass": {
+							"ENG_name": "Mutation",
+							"name": "异变"
+						}
+					}
 				}
 			],
 			"entries": [
@@ -12620,12 +13247,12 @@
 			],
 			"entries": [
 				"你可以不消耗法术位施放{@spell 闪现术|XPHB}法术。你可以使用此恩惠施放该法术的次数等同于你的变形阶段等级，并在完成一次{@variantrule 长休|XPHB}后恢复所有使用次数。",
-				"当你以这种方式施放闪现术并获得其效应时，你还会在每个回合开始时获得等于你的{@variantrule 临时生命值|XPHB}加上你的变形阶段的{@variantrule 熟练|XPHB|熟练加值}。"
+				"当你以这种方式施放闪现术并获得其效应时，你还会在每个回合开始时获得等于你的{@variantrule 熟练|XPHB|熟练加值}加上你的变形阶段的{@variantrule 临时生命值|XPHB}。"
 			]
 		},
 		{
 			"ENG_name": "Even in Sleep",
-			"name": "即使在睡眠术中",
+			"name": "即使在睡眠中",
 			"source": "GrimHollowPG24",
 			"page": 36,
 			"featureType": [
@@ -12918,7 +13545,7 @@
 					"type": "list",
 					"items": [
 						"你的敏捷值增加2点，最高不超过20。",
-						"你可以以一个{@variantrule 附赠动作|XPHB}召唤{@dice 2d4}{@creature 狼|XMM|狼}、{@creature 蝙蝠群|XMM}或{@creature 老鼠群|XMM}。它们会在你的下一个回合开始时出现在你60尺范围内。它们会遵循你的口头或精神命令。它们会在1小时后消散，当你被缩小到0{@variantrule 生命值|XPHB}时，或者当你用一个{@variantrule 附赠动作|XPHB}解散它们时。你在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复此能力。",
+						"你可以以一个{@variantrule 附赠动作|XPHB}召唤{@dice 2d4}{@creature 老鼠群|XMM}、{@creature 蝙蝠群|XMM}或{@creature 狼|XMM|狼}。它们会在你的下一个回合开始时出现在你60尺范围内。它们会遵循你的口头或精神命令。它们会在1小时后消散，当你被缩小到0{@variantrule 生命值|XPHB}时，或者当你用一个{@variantrule 附赠动作|XPHB}解散它们时。你在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复此能力。",
 						"你可以不消耗法术位施放{@spell 迷踪步|XPHB}法术最多四次。你也可以在被武器攻击瞄准时以{@variantrule 反应|XPHB}的方式施放该法术。你会在受到伤害前施放该法术。完成一次{@variantrule 长休|XPHB}后你将恢复此能力。"
 					]
 				}
@@ -12997,7 +13624,7 @@
 				"LC:CO"
 			],
 			"entries": [
-				"在1分钟内，如果你至少有1{@variantrule 生命值|XPHB}，你会在每个回合开始时恢复等于你{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 生命值|XPHB|生命值}。"
+				"在1分钟内，如果你至少有1{@variantrule 生命值|XPHB|生命值}，你会在每个回合开始时恢复等于你{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 生命值|XPHB}。"
 			]
 		},
 		{
@@ -13009,7 +13636,7 @@
 				"DG:M"
 			],
 			"entries": [
-				"在10分钟内，你的背部会长出羽毛状、羽毛状或灵体间谍般的飞翼。你获得一个等于你{@variantrule 飞行速度|XPHB}的{@variantrule 速度|XPHB}。穿着重甲时你不能从此异变中获得增益。"
+				"在10分钟内，你的背部会长出羽毛状、羽毛状或灵体间谍般的飞翼。你获得一个等于你{@variantrule 速度|XPHB}的{@variantrule 飞行速度|XPHB}。穿着重甲时你不能从此异变中获得增益。"
 			]
 		},
 		{
@@ -13064,7 +13691,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 3 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 3 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -13249,7 +13876,7 @@
 			],
 			"entries": [
 				"每当你用近战攻击、{@variantrule 徒手打击|XPHB}或戏法对一个生物造成伤害时，你可以根据变形阶段额外造成2点力场伤害。",
-				"每次你在{@variantrule 生命值骰|XPHB|生命值骰}期间掷{@variantrule 短休|XPHB}来恢复{@variantrule 生命值|XPHB}时，每个生命骰少恢复2点{@variantrule 生命值|XPHB}。"
+				"每次你在{@variantrule 短休|XPHB}期间掷{@variantrule 生命值骰|XPHB|生命值骰}来恢复{@variantrule 生命值|XPHB}时，每个生命骰少恢复2点{@variantrule 生命值|XPHB}。"
 			]
 		},
 		{
@@ -13439,7 +14066,7 @@
 				}
 			],
 			"entries": [
-				"你获得等于你的{@variantrule 飞行速度|XPHB}的{@variantrule 速度|XPHB}。",
+				"你获得等于你的{@variantrule 速度|XPHB}的{@variantrule 飞行速度|XPHB}。",
 				"此外，当你处于飞行状态时，你可以使用一个{@variantrule 附赠动作|XPHB}将你的骇惧威仪集中于30尺内一个你能看见的生物。该生物必须成功通过一次感知豁免检定，否则将陷入{@condition 恐慌|XPHB}状态1分钟。感知豁免检定的DC为8加上你的{@variantrule 熟练|XPHB|熟练加值}再加上你的变形阶段。一旦你使用了此特性，你必须完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}才能再次使用它。"
 			]
 		},
@@ -13457,7 +14084,7 @@
 				}
 			],
 			"entries": [
-				"你的治愈速度比正常情况要慢，无论是魔法治疗还是自然治疗。每当你恢复{@variantrule 长休|XPHB}时，你只能恢复应得{@variantrule 生命值|XPHB}的一半。在{@variantrule 生命值|XPHB}结束时你仍然会恢复所有{@variantrule 生命值|XPHB}。"
+				"你的治愈速度比正常情况要慢，无论是魔法治疗还是自然治疗。每当你恢复{@variantrule 生命值|XPHB}时，你只能恢复应得{@variantrule 生命值|XPHB}的一半。在{@variantrule 长休|XPHB}结束时你仍然会恢复所有{@variantrule 生命值|XPHB}。"
 			]
 		},
 		{
@@ -13685,7 +14312,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 2 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 2 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -13710,7 +14337,7 @@
 				"C"
 			],
 			"entries": [
-				"你在猎物最不设防时召唤出一股狂怒浪涌。在每次{@variantrule 长休|XPHB}结束时，你获得等同于{@variantrule 熟练|XPHB|熟练加值}数量的d8骰。当你用武器或{@variantrule 徒手打击|XPHB}进行攻击时，你可以掷一枚{@dice d20}并将其添加到攻击检定或伤害掷骰中。如果你将其添加到{@dice d8}掷骰中，你可以在{@dice d20}掷骰完成后决定是否掷{@dice d8}，但必须在知道掷骰结果前完成。",
+				"你在猎物最不设防时召唤出一股狂怒浪涌。在每次{@variantrule 长休|XPHB}结束时，你获得等同于{@variantrule 熟练|XPHB|熟练加值}数量的d8骰。当你用武器或{@variantrule 徒手打击|XPHB}进行攻击时，你可以掷一枚{@dice d8}并将其添加到攻击检定或伤害掷骰中。如果你将其添加到{@dice d20}掷骰中，你可以在{@dice d20}掷骰完成后决定是否掷{@dice d8}，但必须在知道掷骰结果前完成。",
 				{
 					"ENG_name": "Relentless Instinct",
 					"name": "坚韧本能",
@@ -13731,7 +14358,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 1 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 1 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -13748,7 +14375,7 @@
 						"在用爪击命中目标后，你可以立即消耗一个{@variantrule 附赠动作|XPHB}来用该手擒拿该生物，只要它的体型不超过你一个类别。被擒拿的目标获得{@condition 受擒|XPHB}状态。逃脱DC为8加上你的力量调整值加上你的{@variantrule 熟练|XPHB|熟练加值}。"
 					]
 				},
-				"你的混合熊形态每个变形阶段持续1小时。如果你自愿进入混合形态，可以在你的回合使用一个{@action 魔法|XPHB}动作恢复为正常形态。（{@filter 缺陷列于下方|optionalfeatures|source=grimhollowpg24|特性 type=ly:tf|miscellaneous=}可能覆盖此规则。）"
+				"你的混合熊形态每个变形阶段持续1小时。如果你自愿进入混合形态，可以在你的回合使用一个{@action 魔法|XPHB}动作恢复为正常形态。（{@filter 缺陷列于下方|optionalfeatures|source=grimhollowpg24|feature type=Ly:TF|miscellaneous=}可能覆盖此规则。）"
 			]
 		},
 		{
@@ -13761,7 +14388,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "第四阶段的{@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "第四阶段的{@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -13786,7 +14413,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 1 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 1 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -13805,7 +14432,7 @@
 						"如果你以5尺内存在其敌人的生物为目标，你对目标进行的爪抓或啃咬攻击具有{@variantrule 优势|XPHB}。"
 					]
 				},
-				"你的老鼠混合形态持续每变形阶段1小时。如果你自愿进入混合形态，你可以在你的回合使用一个{@action 魔法|XPHB}动作恢复到正常形态。（{@filter 缺陷列于下方|optionalfeatures|source=grimhollowpg24|特性 type=ly:tf|miscellaneous=}可能覆盖此规则。）"
+				"你的老鼠混合形态持续每变形阶段1小时。如果你自愿进入混合形态，你可以在你的回合使用一个{@action 魔法|XPHB}动作恢复到正常形态。（{@filter 缺陷列于下方|optionalfeatures|source=grimhollowpg24|feature type=Ly:TF|miscellaneous=}可能覆盖此规则。）"
 			]
 		},
 		{
@@ -13818,7 +14445,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 1 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 1 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -13835,7 +14462,7 @@
 						"在采取一个{@action 攻击|XPHB}攻击动作后，你可以在该回合后文中采取一个{@variantrule 附赠动作|XPHB}附赠动作，用你的爪抓或啃咬进行一次攻击。"
 					]
 				},
-				"你的混合狼形态每变形阶段持续1小时。如果你自愿进入混合形态，可以在你的回合使用一个{@action 魔法|XPHB}动作恢复到正常形态。（{@filter 缺陷列于下方|optionalfeatures|source=grimhollowpg24|特性 type=ly:tf|miscellaneous=}可能覆盖此规则。）"
+				"你的混合狼形态每变形阶段持续1小时。如果你自愿进入混合形态，可以在你的回合使用一个{@action 魔法|XPHB}动作恢复到正常形态。（{@filter 缺陷列于下方|optionalfeatures|source=grimhollowpg24|feature type=Ly:TF|miscellaneous=}可能覆盖此规则。）"
 			]
 		},
 		{
@@ -14164,7 +14791,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 2 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 2 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -14252,7 +14879,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 2 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 2 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -14447,7 +15074,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 1 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 1 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -14787,7 +15414,7 @@
 				"E"
 			],
 			"entries": [
-				"睡眠术是一种你从未需要负担的奢华。当你休息时，你会深度冥想4小时，做梦但保持清醒。以这种方式休息后，你将获得与其他类人生物8小时睡眠相同的增益。",
+				"睡眠是一种你从未需要负担的奢华。当你休息时，你会深度冥想4小时，做梦但保持清醒。以这种方式休息后，你将获得与其他类人生物8小时睡眠相同的增益。",
 				{
 					"ENG_name": "Restorative Rest",
 					"name": "恢复性休息",
@@ -14811,7 +15438,7 @@
 				"你在战斗中经常遭受的打击需要一个强大的防御位层。你拥有中甲和盾牌的训练。",
 				{
 					"ENG_name": "Heavy Armor Training",
-					"name": "重甲训练",
+					"name": "重甲受训",
 					"type": "entries",
 					"entries": [
 						"如果你选择此特质两次，你将获得重甲训练。"
@@ -14983,7 +15610,7 @@
 				"CA:AT"
 			],
 			"entries": [
-				"当你未穿戴护甲或未持用{@item 盾牌|XPHB}时，你的基础{@variantrule 护甲等级|XPHB}等于10加上你的敏捷和魅力调整值。你可以使用敏捷调整值代替力量调整值来进行{@variantrule 徒手打击|XPHB|徒手打击}的攻击和伤害掷骰，并且你可以掷{@dice 1d6}来代替{@variantrule 徒手打击|XPHB}的正常伤害。此外，在你施放一个施法时间为动作的法术或采取{@action 攻击|XPHB}动作后，你可以用一个{@variantrule 徒手打击|XPHB}进行一次{@variantrule 附赠动作|XPHB}攻击。"
+				"当你未穿戴护甲或未持用{@item 盾牌|XPHB}时，你的基础{@variantrule 护甲等级|XPHB}等于10加上你的敏捷和魅力调整值。你可以使用敏捷调整值代替力量调整值来进行{@variantrule 徒手打击|XPHB|徒手打击}的攻击和伤害掷骰，并且你可以掷{@dice 1d6}来代替{@variantrule 徒手打击|XPHB}的正常伤害。此外，在你施放一个施法时间为动作的法术或采取{@action 攻击|XPHB}动作后，你可以用一个{@variantrule 附赠动作|XPHB}进行一次{@variantrule 徒手打击|XPHB}攻击。"
 			]
 		},
 		{
@@ -15055,7 +15682,17 @@
 			],
 			"prerequisite": [
 				{
-					"level": 10
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Druid",
+							"name": "德鲁伊"
+						},
+						"subclass": {
+							"ENG_name": "Mutation",
+							"name": "异变"
+						}
+					}
 				}
 			],
 			"entries": [
@@ -15526,7 +16163,7 @@
 				}
 			],
 			"entries": [
-				"你的身体和灵魂与善良的高等位面相连。由于位面试图将你的灵魂拉入其最终奖励之地，你在{@variantrule 劣势|XPHB}上具有{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}。"
+				"你的身体和灵魂与善良的高等位面相连。由于位面试图将你的灵魂拉入其最终奖励之地，你在{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}上具有{@variantrule 劣势|XPHB}。"
 			]
 		},
 		{
@@ -15622,7 +16259,7 @@
 				"E"
 			],
 			"entries": [
-				"当你不知道下一次完整的回春会在何时到来时，你学会了充分利用任何可以获得的休息。在进行{@variantrule 生命值骰|XPHB|生命值骰}时，你可以选择睡眠1小时。如果这样做，你将{@condition 力竭|XPHB}状态降低一级，并在{@variantrule 短休|XPHB}的其他增益之外恢复一个{@variantrule 短休|XPHB}。",
+				"当你不知道下一次完整的回春会在何时到来时，你学会了充分利用任何可以获得的休息。在进行{@variantrule 短休|XPHB}时，你可以选择睡眠1小时。如果这样做，你将{@condition 力竭|XPHB}状态降低一级，并在{@variantrule 短休|XPHB}的其他增益之外恢复一个{@variantrule 生命值骰|XPHB|生命值骰}。",
 				{
 					"ENG_name": "Extreme Resilience",
 					"name": "极限恢复力",
@@ -15926,7 +16563,17 @@
 			],
 			"prerequisite": [
 				{
-					"level": 10
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Druid",
+							"name": "德鲁伊"
+						},
+						"subclass": {
+							"ENG_name": "Mutation",
+							"name": "异变"
+						}
+					}
 				}
 			],
 			"entries": [
@@ -16141,7 +16788,7 @@
 				"TG:TG"
 			],
 			"entries": [
-				"符文炸弹用于搜寻对寻常武器有强健身心的生物。作为一个{@variantrule 附赠动作|XPHB}，你可以将符文炸弹投掷到你能看见的60尺内的一个点上，创造一个以该点为中心的20尺半径{@variantrule 球状 [效应区域]|XPHB|球状}。该{@variantrule 球状 [效应区域]|XPHB|球状}会绕过转角，其区域为{@variantrule 轻度遮蔽|XPHB}。它持续1分钟或被强风（如造风术所创造的）驱散。当球体内的生物受到钝击、穿刺或挥砍伤害时，该伤害变为力场伤害而非其正常伤害类型。",
+				"符文炸弹用于搜寻对平凡武器有抗性的生物。以一个{@variantrule 附赠动作|XPHB}，你可以将这枚符文炸弹投掷到你能看见的60尺内的一个点上，创造一个以该点为中心的半径20尺{@variantrule 球状 [效应区域]|XPHB|球状}。该{@variantrule 球状 [效应区域]|XPHB|球状}会绕过转角扩散，其区域为{@variantrule 轻度遮蔽|XPHB}。它持续1分钟，或直到强风（例如由{@spell 造风术|XPHB}创造的强风）将其驱散。每当有生物在球体内部受到钝击、穿刺或挥砍伤害时，该伤害变为力场伤害，而非其正常的伤害类型。",
 				"符文炸弹在使用一次后会被摧毁。"
 			]
 		},
@@ -16201,7 +16848,7 @@
 				{
 					"type": "list",
 					"items": [
-						"你每完成一次吸血鬼变形可获得额外的{@dice 1d12}血魔法{@variantrule 生命值骰|XPHB}。你可以在血魔法法术上使用这些骰子。完成一次{@variantrule 长休|XPHB}后，你将恢复所有已消耗的血魔法骰子。",
+						"你每拥有一个吸血鬼变形，就获得一枚额外的{@dice 1d12}血魔法{@variantrule 生命值骰|XPHB}。你可以在{@filter 血魔法法术|spells|subschool=血魔法}上使用这些骰子。当你完成一次{@variantrule 长休|XPHB}时，你恢复所有已消耗的血魔法骰。",
 						"当你成功使用{@optfeature 尖牙啃咬|GrimHollowPG24}复原{@variantrule 生命值|XPHB}时，你恢复一个已消耗的血魔法骰。",
 						"你施放的任何造成暗蚀伤害的戏法都可以被你的血魔法骰子强化。你可以消耗最多2个{@variantrule 生命值骰|XPHB}（包括你的血魔法骰子）来为这些戏法造成额外的暗蚀伤害。你可以在知道戏法是否影响目标后决定是否消耗这些{@variantrule 生命值骰|XPHB}。"
 					]
@@ -16218,7 +16865,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "第四阶段的{@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "第四阶段的{@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -16234,7 +16881,7 @@
 				"TG:TG"
 			],
 			"entries": [
-				"这件武器旨在将飞行中的敌人固定在地面或阻止怪物逃跑。蝎子锚可以作为{@action 攻击|XPHB}动作的一部分从长弓、短弓或弩发射。当你用蝎子锚的攻击检定命中一个生物时，它会陷入{@condition 束缚|XPHB}状态。被蝎子锚{@condition 束缚|XPHB}的生物可以花费一个动作进行一次力量（{@skill 运动|XPHB}）检定对抗你的诱陷者装置豁免DC。如果成功，它将不再处于{@condition 束缚|XPHB}状态。",
+				"这件武器旨在将飞行的敌人锚定在地面或阻止怪物逃离。蝎子锚可以作为{@action 攻击|XPHB}动作的一部分，从一把{@item 长弓|XPHB}、{@item 短弓|XPHB}或弩上发射。当你使用蝎子锚的攻击检定命中一个生物时，该生物获得{@condition 束缚|XPHB}状态。被蝎子锚{@condition 束缚|XPHB}的生物可以消耗一个动作，进行一次力量（{@skill 运动|XPHB}）检定来对抗你的诱陷者装置豁免DC。如果检定成功，它将不再被{@condition 束缚|XPHB}。",
 				"蝎子锚在被{@condition 束缚|XPHB}的生物逃脱或死亡后被摧毁。"
 			]
 		},
@@ -16353,7 +17000,7 @@
 		},
 		{
 			"ENG_name": "Servant of the Summer Court",
-			"name": "夏之王庭的仆役",
+			"name": "仲夏王庭的仆役",
 			"source": "GrimHollowPG24",
 			"page": 139,
 			"featureType": [
@@ -16365,7 +17012,7 @@
 				}
 			],
 			"entries": [
-				"夏之王庭体现了生长季节的繁茂温暖与狂热庆典。夏的精类生物倾向于欢乐、放纵与虚荣。这是最常与树精和皮克精们相关联的王庭。夏之王庭的生物常常将他们的自恋与残虐隐藏在美丽的表象之下。",
+				"仲夏王庭体现了生长季节的繁茂温暖与狂热庆典。夏的精类生物倾向于欢乐、放纵与虚荣。这是最常与树精和皮克精们相关联的王庭。仲夏王庭的生物常常将他们的自恋与残虐隐藏在美丽的表象之下。",
 				"作为{@variantrule 附赠动作|XPHB}，你可以魔法传送至多30尺到一个你能看见的未占据空间。你选择的你能看见的一个生物，在你起始或结局空间5尺内，受到{@damage 1d6}火焰伤害。你可以使用此能力的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且你在完成一次{@variantrule 长休|XPHB}后恢复所有使用次数。"
 			]
 		},
@@ -16550,7 +17197,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 3 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 3 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -16595,7 +17242,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "阶段 2 的 {@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "阶段 2 的 {@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -16801,7 +17448,7 @@
 						"当灵魂储存在你的灵魂器皿中时，灵魂器皿被视为已充能。灵魂器皿中所含的灵魂必须来自一个{@variantrule 挑战等级|XPHB}等于或高于你角色等级一半的生物。灵魂器皿一次只能容纳一个灵魂。",
 						"你可以为每个变形阶段向灵魂器皿添加2个灵魂。当你完成一次{@variantrule 长休|XPHB}时，你将恢复此属性。",
 						"要将一个灵魂储存在灵魂器皿中，巫妖必须在生物死亡1分钟内使用一个{@action 魔法|XPHB}动作，或在生物死亡时触发的{@variantrule 反应|XPHB}反应，同时持有器皿以捕获灵魂，且死亡生物的尸体在捕获发生时必须在器皿60尺范围内。该生物的灵魂从你的灵魂器皿中移除前无法回归生命。",
-						"如果你的灵魂器皿缩小到0生命值，你必须创建一个新的。这样做需要一个{@variantrule 短休|XPHB|短}。在此之前，你不会获得任何拥有灵魂器皿的增益。此外，在你拥有灵魂器皿之前，你在完成一次{@variantrule 长休|XPHB}或{@variantrule 长休|XPHB}后进行的第一次{@variantrule D20 检定|XPHB}上具有{@variantrule 劣势|XPHB}。",
+						"如果你的灵魂器皿缩小到0生命值，你必须创建一个新的。这样做需要一个{@variantrule 长休|XPHB}。在此之前，你不会获得任何拥有灵魂器皿的增益。此外，在你拥有灵魂器皿之前，你在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后进行的第一次{@variantrule D20 检定|XPHB}上具有{@variantrule 劣势|XPHB}。",
 						"如果你在控制一个充能的灵魂器皿时被杀且灵魂器皿位于同一存在平面上，灵魂器皿的充能会被消耗。你将如同{@spell 复生术|XPHB}法术的效果一般在1天后于灵魂器皿5尺范围内复生。如果你被杀时灵魂器皿未充能，则改为7天后复生。"
 					]
 				}
@@ -16981,7 +17628,17 @@
 			],
 			"prerequisite": [
 				{
-					"level": 10
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Druid",
+							"name": "德鲁伊"
+						},
+						"subclass": {
+							"ENG_name": "Mutation",
+							"name": "异变"
+						}
+					}
 				}
 			],
 			"entries": [
@@ -17115,13 +17772,13 @@
 				"C"
 			],
 			"entries": [
-				"你的敌人可能会打倒你，但你不会倒下太久。你在{@variantrule 优势|XPHB}上具有{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}。",
+				"你的敌人可能会打倒你，但你不会倒下太久。你在{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}上具有{@variantrule 优势|XPHB}。",
 				{
 					"ENG_name": "Hard to Kill",
 					"name": "难以杀死",
 					"type": "entries",
 					"entries": [
-						"如果你使用该特质两次，当你{@variantrule 生命值|XPHB}降至0点但未立即死亡时，你将保持清醒。你必须像正常掉至0点{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}时那样进行{@variantrule 生命值|XPHB}，且每次受到任何伤害时都会视为一次{@variantrule 死亡豁免检定|XPHB}失败，但除此之外你可以自由行动。当你以此方式保持0点{@variantrule 伤势稳定|XPHB}时，你无法进入{@variantrule 生命值|XPHB}状态。"
+						"如果你使用该特质两次，当你{@variantrule 生命值|XPHB}降至0点但未立即死亡时，你将保持清醒。你必须像正常掉至0点{@variantrule 生命值|XPHB}时那样进行{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}，且每次受到任何伤害时都会视为一次{@variantrule 死亡豁免检定|XPHB}失败，但除此之外你可以自由行动。当你以此方式保持0点{@variantrule 生命值|XPHB}时，你无法进入{@variantrule 伤势稳定|XPHB}状态。"
 					]
 				}
 			]
@@ -17274,7 +17931,7 @@
 					"type": "list",
 					"items": [
 						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。",
-						"你获得水陆两栖能力，可以呼吸空气和饮水。你获得一个等于你{@variantrule 游泳速度|XPHB}的{@variantrule 速度|XPHB}。如果你已有{@variantrule 游泳速度|XPHB}，则增加10尺。",
+						"你获得水陆两栖能力，可以呼吸空气和饮水。你获得一个等于你{@variantrule 速度|XPHB}的{@variantrule 游泳速度|XPHB}。如果你已有{@variantrule 游泳速度|XPHB}，则增加10尺。",
 						"以一个{@action 魔法|XPHB}动作，你可以凝视一个你能看见的30尺内的生物。如果该生物未能通过DC等于8加上你的魅力调整值加上你的变形阶段的感知豁免检定，它将受到等同于你变形阶段数量的{@damage 1d8}心灵伤害。"
 					]
 				}
@@ -17517,7 +18174,7 @@
 			],
 			"prerequisite": [
 				{
-					"other": "第四阶段的{@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "第四阶段的{@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"entries": [
@@ -17593,7 +18250,7 @@
 			],
 			"entries": [
 				"你成为亡灵以及其他任何生物类型。你不能被排除在驱散亡灵之外。",
-				"你也停止衰老。你对任何会使你衰老的效应免疫，并且你不会因年老而死亡。你不需要空气、进食、饮品或睡眠术。"
+				"你也停止衰老。你对任何会使你衰老的效应免疫，并且你不会因年老而死亡。你不需要空气、进食、饮品或睡眠。"
 			]
 		},
 		{
@@ -17641,7 +18298,7 @@
 				"R"
 			],
 			"entries": [
-				"你天生的治疗能力让你能从最严重的伤势中恢复。在{@variantrule 长休|XPHB}期间，你可以自动逆转重伤。此外，你可以重新接上任何被切断的身体部位（手指、腿、背面等），这些部位会在{@variantrule 长休|XPHB}结束时自动恢复。如果你的被切断的身体部位不可用，你可以用与你解剖结构相同的其他生物的相同身体部位替换。如果你想有意用替换物交换身体部位，你可以无痛苦或不适地切断自己的身体部位。",
+				"你的天生治愈能力让你能从最严重的创伤中恢复。在一次{@variantrule 长休|XPHB}期间，你可以自动逆转{@variantrule 极恶创伤|GrimHollowCG24}。此外，你可以重新接上任何被切断的身体部位（手指、腿、尾巴等），这些部位会在{@variantrule 长休|XPHB}结束时自动恢复。如果你的被切断的身体部位无法获得，你可以用与你具有大体解剖结构的另一个生物的相同身体部位来替换。如果你希望有意地用替代品替换掉身体部位，你可以毫无痛苦或不适地切断你自己的身体部位。",
 				"利用不寻常的身体部位（例如，如果你失去一只手，给自己一只狮子的利爪）的能力由GM自行决定。在任何情况下，用不寻常的身体部位替换被切断的身体部位不会给予你未被其他特性覆盖的机械优势（参见第11页的\"特性与特质\"）。",
 				{
 					"ENG_name": "Regenerative Healer",
@@ -17753,7 +18410,7 @@
 			],
 			"entries": [
 				"{@b 花费:} {@i 1点异变点数}",
-				"你获得等于你速度的{@variantrule 速度|XPHB}。额外消耗1点异变点数，你获得等于两倍你{@variantrule 攀爬速度|XPHB}的{@variantrule 攀爬速度|XPHB}。"
+				"你获得等于你速度的{@variantrule 攀爬速度|XPHB}。额外消耗1点异变点数，你获得等于两倍你{@variantrule 速度|XPHB}的{@variantrule 攀爬速度|XPHB}。"
 			]
 		},
 		{
@@ -17765,7 +18422,7 @@
 				"CA:AT"
 			],
 			"entries": [
-				"你习得一个自选的{@filter 魔能祈唤|optionalfeatures|Feature Type=EI}。若祈唤有等级要求，则使用你的吟游诗人等级。",
+				"你习得一个自选的{@filter 魔能祈唤|optionalfeatures|feature type=EI}。若祈唤有等级要求，则使用你的吟游诗人等级。",
 				"当你在此职业升级时，可以选择一项已知的祈唤并将其替换为另一个符合要求的祈唤。"
 			]
 		},
@@ -17827,7 +18484,7 @@
 		},
 		{
 			"ENG_name": "Well Protected",
-			"name": "被保护的水井",
+			"name": "良好防护",
 			"source": "GrimHollowPG24",
 			"page": 47,
 			"featureType": [
@@ -17857,7 +18514,7 @@
 			"entries": [
 				"狼陷阱在其易碎的外壳破碎时会爆炸。你可以采取一个{@action 操作|XPHB}动作将狼陷阱设置在你5尺内的一个未占据空间。30尺内的生物必须进行一次感知（{@skill 察觉|XPHB}）检定对抗你的诱陷者装置DC以发现陷阱。生物在此检定上具有{@variantrule 劣势|XPHB}。",
 				"一个生物踏入包含狼陷阱的空间时会触发陷阱并进行一次敏捷豁免检定。豁免失败时，该生物受到{@damage 3d10}钝击伤害并获得{@condition 倒地|XPHB}状态。豁免成功时，该生物仅受到一半伤害。",
-				"狼陷阱也可以作为具有灵巧和投掷属性的轻型远程武器使用。它的正常范围为20尺，最大范围为60尺。命中时，狼陷阱造成{@damage 3d10}钝击伤害并使目标获得{@condition 倒地|XPHB}状态。",
+				"狼陷阱也可以作为一把具有{@itemProperty L|XPHB|光亮术}和{@itemProperty T|XPHB|投掷}属性的{@itemProperty F|XPHB|灵巧}远程武器使用。它的正常射程为20尺，长射程为60尺。命中时，狼陷阱造成{@damage 3d10}钝击伤害，并且目标获得{@condition 倒地|XPHB}状态。",
 				"狼陷阱在被触发或投掷后会被摧毁，无论是否命中目标。"
 			]
 		},
@@ -18035,7 +18692,7 @@
 		},
 		{
 			"ENG_name": "Antiquarian",
-			"name": "古董商",
+			"name": "古物学者",
 			"source": "GrimHollowPG24",
 			"page": 107,
 			"edition": "one",
@@ -19164,7 +19821,7 @@
 		},
 		{
 			"ENG_name": "Exterminator",
-			"name": "灭虫者",
+			"name": "驱魔人",
 			"source": "GrimHollowPG24",
 			"page": 109,
 			"edition": "one",
@@ -20538,7 +21195,7 @@
 			],
 			"fluff": {
 				"entries": [
-					"当你染上泣疫症时，你以为自己会像之前的许多人一样死于这种疾病。你的邻居们避开了你，害怕你会把疾病传染给他们和他们的家人。然后奇迹发生了。一个陌生人来到你身边并提供协助。陌生人带来了奇怪的医药，为你提供了治疗药水和灵药。就在疾病达到最严重的等级时，症状开始消隐。不久之后，你被治愈了这种疾病。",
+					"当你感染上{@disease 哭泣瘟疫|灰烬圣殿CG24}时，你曾以为自己会像之前的许多人一样因此而死。你的邻居们避之不及，唯恐你将疾病传染给他们和他们的家人。然后，奇迹发生了。一位陌生人来到你身边，主动提出要帮助你。这位陌生人带来了奇异的药物，为你提供了治疗药水和灵药。就在疾病发展到最严重的阶段时，症状开始消隐。不久之后，你便被治愈了。",
 					"然而，疾病的疮疤仍在你身体上显露\u2014\u2014这是你所幸存的可怕天罚的明显提醒。陌生人在治疗结束后离开了你，但你保留了一些医疗师在照顾你时使用的知识。那些对你的康复感到惊奇的人也畏惧你：他们怀疑你与黑暗力量达成了交易来驱散疾病。"
 				]
 			}
@@ -21104,7 +21761,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -21218,7 +21875,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -21288,7 +21945,7 @@
 									"items": [
 										"{@optfeature 汲能攻击|GrimHollowPG24}",
 										"{@optfeature 天生攻击|GrimHollowPG24}（獠牙）",
-										"{@optfeature 被保护的水井|GrimHollowPG24}"
+										"{@optfeature 良好防护|GrimHollowPG24}"
 									]
 								}
 							]
@@ -21332,7 +21989,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -21446,7 +22103,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -21551,7 +22208,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -21660,7 +22317,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=grimhollowpg24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=grimhollowpg24|feature type=ht}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -21714,7 +22371,7 @@
 					"name": "传统梦想家特质",
 					"type": "inset",
 					"entries": [
-						"他们漫长的睡眠术和随之而来的残留梦境塑造了许多梦想家的思想和本能。",
+						"他们漫长的睡眠和随之而来的残留梦境塑造了许多梦想家的思想和本能。",
 						{
 							"ENG_name": "Combat Traits:",
 							"name": "战斗特质：",
@@ -21769,7 +22426,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -21886,7 +22543,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -21995,7 +22652,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -22112,7 +22769,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -22221,7 +22878,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -22338,7 +22995,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -22447,7 +23104,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -22559,7 +23216,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -22668,7 +23325,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -22781,7 +23438,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -22895,7 +23552,7 @@
 							"name": "特质选择",
 							"type": "entries",
 							"entries": [
-								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+								"选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|feature type=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
 							]
 						}
 					]
@@ -23198,7 +23855,7 @@
 					"name": "诡秘传承",
 					"type": "entries",
 					"entries": [
-						"埃萨里斯珍稀传承的居民长期在孤独中生活，或在人口更密集族群的土地与文化边缘徘徊。这些传承的角色面临着与所有人相同的挑战，但往往拥有他人难以理解的独特世界观。"
+						"鬼魅幽谷的诡秘传承涵盖了那些被魔法意图、非自然力量或远古诅咒接触所塑造的族群。几乎无一例外，这些传承的族群注定要独自在一个动荡而危险的世界中前行。"
 					]
 				}
 			]
@@ -23384,7 +24041,7 @@
 						"mode": "prependArr",
 						"items": [
 							"在埃萨里斯东部海岸的深海波涛之下，隐藏着拉尼希帝国，这里是地表居民称为拉尼希的神秘族群的家园。这些苍白的类人生物长着海藻般的毛发，对其他普通人来说显得极其异域。他们是海洋生物，能够与深海的动植物交流。拉尼希生活在一种将世界视为绝对和对立的文化中。白昼或黑夜。接纳或拒绝。友谊或敌对。他们的文化也交织在生与死的界限上。他们与精魂交流以寻求指引，并不畏惧面对凡人的死亡。在拉尼希社会中，所有事物都必须有其位置，这是建立在反映这种观念的严格种姓制度上的。",
-							"秘术师阶层包含所有拉尼希双胞胎，这在他们的族人中很常见。第一胎的双胞胎总是被引入秘术师阶层，而另一个则被献祭为其兄弟姐妹的精魄向导。通过一个强大的死灵仪式，第二胎的双胞胎被牺牲，其灵魂连接到另一个的身体中。因此，秘术师阶层的每个成员都拥有两个灵魂\u2014\u2014一个活体和一个死亡\u2014\u2014这赋予他们洞察灵界的能力并增强了他们的死灵属性。秘术师负责葬礼仪式、手作、建筑、记录保存和菜园预备。这个阶层成员的繁重工作甚至是在亡灵劳工的援助术下完成的\u2014\u2014这对地表居民来说是一个噩梦般的景象。",
+							"秘术师阶层包含所有拉尼希双胞胎，这在他们的族人中很常见。第一胎的双胞胎总是被引入秘术师阶层，而另一个则被献祭为其兄弟姐妹的精魄向导。通过一个强大的死灵仪式，第二胎的双胞胎被牺牲，其灵魂连接到另一个的身体中。因此，秘术师阶层的每个成员都拥有两个灵魂\u2014\u2014一个活体和一个死亡\u2014\u2014这赋予他们洞察灵界的能力并增强了他们的死灵属性。秘术师负责葬礼仪式、手作、建筑、记录保存和食物预备。这个阶层成员的繁重工作甚至是在亡灵劳工的援助术下完成的\u2014\u2014这对地表居民来说是一个噩梦般的景象。",
 							"拉尼希的武者阶层不仅负责战争，还负责交涉、农耕以及儿童的抚养和教育。武者阶层的规模大约是秘术师阶层的双倍，采用精英管理制，伟大的功绩会带来更高的状态。",
 							"拉尼希武者不断与他们深地的邻居发生小规模冲突。但与此同时，拉尼希帝国的统治者们开始因未知原因将注意力转向地表世界。或许海洋的黑暗深处正酝酿着某种新的超级威胁，拉尼希正寻求他们呼吸空气的表亲们的援助。又或许那些恐惧的低语确有实据\u2014\u2014这些水生访客已与远古邪恶缔结了亵渎的契约，而拉尼希正在搜索新的土地来征服，以安抚某个不可名状大师的饥渴。"
 						]
@@ -23446,7 +24103,7 @@
 					"name": "珍稀传承",
 					"type": "entries",
 					"entries": [
-						"鬼魅幽谷的诡秘传承涵盖了那些被魔法意图、非自然力量或远古诅咒接触所塑造的族群。几乎无一例外，这些传承的族群注定要独自在一个动荡而危险的世界中前行。"
+						"埃萨里斯珍稀传承的居民长期在孤独中生活，或在人口更密集族群的土地与文化边缘徘徊。这些传承的角色面临着与所有人相同的挑战，但往往拥有他人难以理解的独特世界观。"
 					]
 				}
 			]
@@ -23466,7 +24123,7 @@
 							"一位母亲在黑夜中听到一个声音，忧心忡忡地检查她沉睡的幼童。一切似乎安然无恙。但数周后，一道无形的迷惑消散，惊恐的真相显露：孩子已被仙灵窃取，而一个枉替之子被留在原地。因为仙灵是冷酷不变的生物，没有什么比一个青年类人生物孩子那可塑而明亮的灵魂更能激起他们的迷恋\u2014\u2014以及嫉妒。",
 							"枉替之子是一种由木头、粘土和陶瓷制成的小型儿童形态构装体，由仙灵魔法活化并通过幻术隐蔽，使它们看起来与被窃取的凡人婴儿一模一样。一旦这种迷惑消失，谎言被揭穿，枉替之子通常会被窃取孩子的家庭驱逐，甚至被摧毁。不过偶尔也会有家庭怜悯这个可怜的生物并试图抚养它们，结果却发现虽然它们的思维发展正常，但枉替之子永远被束缚在不变的儿童玩偶形态中。",
 							"无论被养育还是被排斥，大多数枉替之子最终都会发现自己作为边缘弃儿生活，并学会尽己所能地自食其力。他们残留的仙灵迷惑魔法允许枉替之子在短时间内隐藏自己，无论是伪装成他们取代的孩子还是成年半身人、侏儒或其他体型相似的人。由于几乎没有生理需求，枉替之子可以轻松地在聚居地之间漫游，用羡慕的目光注视着他们遭遇的人，并希望找到一个最终适合的地方。",
-							"随着泣疫症的传播，许多枉替之子从躲藏中现身。凭借他们对疾病的免疫，他们能够援助疫区的治疗者，从而获得一些尊重\u2014\u2014甚至是钦佩\u2014\u2014来自那些能够看透他们悲惨起源的人。然而，即使是那些被其他种族接受的枉替之子，也常常保持警觉，担心一旦他们的用处结束，他们可能会再次被驱逐。"
+							"随着{@disease 哭泣瘟疫|灰烬圣殿CG24}的蔓延，许多枉替之子从躲藏中现身。凭借他们对疾病的免疫，他们能够援助瘟疫肆虐区域的医者，从而获得那些能够超越他们悲惨起源看待他们的人的些许尊重\u2014\u2014甚至是钦佩。然而，即使是那些被其他人们所接受的枉替之子，也常常保持警觉，害怕一旦他们的用处结束，他们可能会再次被驱逐。"
 						]
 					}
 				}
@@ -23520,8 +24177,8 @@
 	],
 	"feat": [
 		{
-			"ENG_name": "Advanced Weapon Proficiency",
-			"name": "高级武器熟练",
+			"ENG_name": "Advanced Weapon Proficiency (FS)",
+			"name": "高级武器熟练 (FS)",
 			"source": "GrimHollowPG24",
 			"page": 118,
 			"category": "FS",
@@ -23529,8 +24186,7 @@
 				{
 					"feature": [
 						"战斗风格"
-					],
-					"other": "特殊"
+					]
 				}
 			],
 			"entries": [
@@ -23540,15 +24196,30 @@
 					"name": "武器熟练",
 					"type": "entries",
 					"entries": [
-						"你熟练使用进阶武器，并且你的训练允许你使用这些武器的精通词条。"
+						"你熟练于{@filter 进阶武器|items|type=进阶武器}，并且你的训练允许你使用这些武器的精通词条。"
 					]
-				},
+				}
+			]
+		},
+		{
+			"ENG_name": "Advanced Weapon Proficiency (G)",
+			"name": "进阶武器熟练（G）",
+			"source": "GrimHollowPG24",
+			"page": 118,
+			"category": "G",
+			"prerequisite": [
 				{
-					"ENG_name": "Special",
+					"level": 8
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Weapon Proficiency",
+					"name": "武器熟练",
 					"type": "entries",
-					"name": "特殊",
 					"entries": [
-						"此专长可作为通用专长被8级或更高等级的角色选择。"
+						"你熟练于{@filter 进阶武器|items|type=进阶武器}，并且你的训练允许你使用这些武器的精通词条。"
 					]
 				}
 			]
@@ -23576,13 +24247,13 @@
 				}
 			],
 			"entries": [
-				"你已熟练使用黑火药手枪。你获得以下增益。",
+				"你已熟练使用{@item 黑火药手枪|GrimHollowPG24|黑火药手枪}。你获得以下增益。",
 				{
 					"ENG_name": "Deadeye",
 					"name": "死瞳客",
 					"type": "entries",
 					"entries": [
-						"使用黑火药手枪进行远程攻击时，不会在攻击检定上施加{@variantrule 劣势|XPHB}。"
+						"使用{@item 黑火药手枪|GrimHollowPG24}进行远程攻击时，在长射程范围内进行攻击检定不会承受{@variantrule 劣势|XPHB}。"
 					]
 				},
 				{
@@ -23590,15 +24261,15 @@
 					"name": "快速装填",
 					"type": "entries",
 					"entries": [
-						"你忽略黑火药手枪的{@itemProperty LD|XPHB|装填}属性。"
+						"你忽略{@item 黑火药手枪|GrimHollowPG24}的{@itemProperty LD|XPHB|装填}属性。"
 					]
 				},
 				{
 					"ENG_name": "Trick Shot",
-					"name": "花式射击",
+					"name": "花枪客",
 					"type": "entries",
 					"entries": [
-						"当一个生物在你5尺范围内移动后，你可以消耗一个{@variantrule 反应|XPHB}来用黑火药手枪对该生物进行一次远程攻击。"
+						"立即在一个距你5尺内的生物移动后，你可以消耗一个{@variantrule 反应|XPHB}，使用一把{@item 黑火药手枪|GrimHollowPG24}对该生物进行一次远程攻击。"
 					]
 				}
 			]
@@ -23864,7 +24535,7 @@
 					"name": "繁花滋长",
 					"type": "entries",
 					"entries": [
-						"选择任意一个你尚未获得但满足先决条件的{@filter 恶灵变形恩惠|optionalfeatures|source=grimhollowpg24|特性 type=spec:tb|miscellaneous=}。你将获得该恩惠。"
+						"选择任意一个你尚未获得但满足先决条件的{@filter 恶灵变形恩惠|optionalfeatures|source=grimhollowpg24|feature type=Spec:TB|miscellaneous=}。你将获得该恩惠。"
 					]
 				}
 			]
@@ -23911,7 +24582,7 @@
 					"name": "繁花滋长",
 					"type": "entries",
 					"entries": [
-						"选择任意一个你尚未拥有但满足先决条件的{@filter 妖精变形恩惠|optionalfeatures|source=grimhollowpg24|特性 type=f:tb|miscellaneous=}。你将获得该恩惠。"
+						"选择任意一个你尚未拥有但满足先决条件的{@filter 妖精变形恩惠|optionalfeatures|source=grimhollowpg24|feature type=F:TB|miscellaneous=}。你将获得该恩惠。"
 					]
 				}
 			]
@@ -23957,7 +24628,7 @@
 					"name": "繁花滋长",
 					"type": "entries",
 					"entries": [
-						"选择任意一个你尚未获得但满足先决条件的{@filter 邪魔变形恩惠|optionalfeatures|source=grimhollowpg24|特性 type=fi:tb|miscellaneous=}。你获得该恩惠。"
+						"选择任意一个你尚未获得但满足先决条件的{@filter 邪魔变形恩惠|optionalfeatures|source=grimhollowpg24|feature type=Fi:TB|miscellaneous=}。你获得该恩惠。"
 					]
 				}
 			]
@@ -24004,7 +24675,7 @@
 					"name": "繁花滋长",
 					"type": "entries",
 					"entries": [
-						"选择任意一个你尚未获得但满足先决条件的{@filter 畸变惊恐变形恩惠|optionalfeatures|source=grimhollowpg24|特性 type=ah:tb|miscellaneous=}。你将获得该恩惠。"
+						"选择任意一个你尚未获得但满足先决条件的{@filter 畸变惊恐变形恩惠|optionalfeatures|source=grimhollowpg24|feature type=AH:TB|miscellaneous=}。你将获得该恩惠。"
 					]
 				}
 			]
@@ -24090,7 +24761,7 @@
 					"name": "繁花滋长",
 					"type": "entries",
 					"entries": [
-						"选择任意一个你尚未获得但满足先决条件的{@filter 炽天使变形恩惠|optionalfeatures|source=grimhollowpg24|特性 type=ser:tb|miscellaneous=}。你将获得该恩惠。"
+						"选择任意一个你尚未获得但满足先决条件的{@filter 炽天使变形恩惠|optionalfeatures|source=grimhollowpg24|feature type=Ser:TB|miscellaneous=}。你将获得该恩惠。"
 					]
 				}
 			]
@@ -24104,7 +24775,7 @@
 			"prerequisite": [
 				{
 					"level": 19,
-					"other": "{@charoption 狼人|GrimHollowPG24|狼人变形}"
+					"other": "{@charoption 兽化人|GrimHollowPG24|狼人变形}"
 				}
 			],
 			"ability": [
@@ -24180,7 +24851,7 @@
 					"name": "诱惑显现",
 					"type": "entries",
 					"entries": [
-						"当你采取{@action 影响|XPHB}动作时，你在影响{@variantrule 劣势|XPHB}生物时不会受到{@variantrule 敌对【态度】|XPHB|敌对}影响，且在影响{@variantrule 优势|XPHB}生物时获得{@variantrule 冷漠【态度】|XPHB|冷漠}。"
+						"当你采取{@action 影响|XPHB}动作时，你在影响{@variantrule 敌对【态度】|XPHB|敌对}生物时不会受到{@variantrule 劣势|XPHB}影响，且在影响{@variantrule 冷漠【态度】|XPHB|冷漠}生物时获得{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
@@ -24196,7 +24867,7 @@
 					"name": "热情洞悉",
 					"type": "entries",
 					"entries": [
-						"当你成功通过一个{@action 搜索|XPHB}动作的感知（{@skill 洞悉|XPHB}）检定来侦查谎言或反射躲闪的回答时，你在1小时内对该生物的战斗相关{@variantrule 优势|XPHB}先攻掷骰上具有{@variantrule 先攻|XPHB}优势。"
+						"当你成功通过一个{@action 搜索|XPHB}动作的感知（{@skill 洞悉|XPHB}）检定来侦查谎言或反射躲闪的回答时，你在1小时内对该生物的战斗相关{@variantrule 先攻|XPHB}先攻掷骰上具有{@variantrule 优势|XPHB}优势。"
 					]
 				}
 			]
@@ -24214,7 +24885,7 @@
 					"name": "临终绝息",
 					"type": "entries",
 					"entries": [
-						"如果你有两次{@variantrule 死亡豁免检定|XPHB}失败，你在{@variantrule 优势|XPHB}上具有{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}，直到你的{@variantrule 生命值|XPHB}不再为0。"
+						"如果你有两次{@variantrule 死亡豁免检定|XPHB}失败，你在{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}上具有{@variantrule 优势|XPHB}，直到你的{@variantrule 生命值|XPHB}不再为0。"
 					]
 				},
 				{
@@ -24222,7 +24893,7 @@
 					"name": "恢复",
 					"type": "entries",
 					"entries": [
-						"当你在一次{@variantrule 生命值骰|XPHB|生命值骰}期间花费{@variantrule 短休|XPHB}来恢复{@variantrule 生命值|XPHB}时，你可以掷{@variantrule 生命值骰|XPHB|生命值骰}两次并取较高结果。"
+						"当你在一次{@variantrule 短休|XPHB}期间花费{@variantrule 生命值骰|XPHB|生命值骰}来恢复{@variantrule 生命值|XPHB}时，你可以掷{@variantrule 生命值骰|XPHB|生命值骰}两次并取较高结果。"
 					]
 				}
 			]
@@ -24286,7 +24957,7 @@
 					"name": "单手握持",
 					"type": "entries",
 					"entries": [
-						"当你单手握持一把多用武器时，该武器在用于进行近战攻击时造成括号内的伤害。"
+						"当你单手持用一把{@itemProperty V|XPHB|多用}武器时，该武器在用于进行近战攻击时造成括号内的伤害。"
 					]
 				},
 				{
@@ -24407,7 +25078,7 @@
 				"无论是通过大量训练还是天生体格，你的种族体型都显得宽阔而强大。你获得以下增益。",
 				{
 					"ENG_name": "Brutal",
-					"name": "野蛮",
+					"name": "蛮横",
 					"type": "entries",
 					"entries": [
 						"每回合一次，你可以对通过{@variantrule 徒手打击|XPHB}命中的目标额外造成{@damage 1d4}钝击伤害。"
@@ -24585,7 +25256,7 @@
 					"type": "entries",
 					"entries": [
 						"当你使用伤患鉴别法专家专长的鲜血与骨增益时，该生物可以消耗三个{@variantrule 生命值骰|XPHB}来结束自身以下一个状态而非恢复{@variantrule 生命值|XPHB}：{@condition 目盲|XPHB}、{@condition 耳聋|XPHB}、{@condition 麻痹|XPHB}、{@condition 中毒|XPHB}或{@condition 震慑|XPHB}。",
-						"或者，你可以治愈该生物身上的一个{@variantrule 重伤|GrimHollowPG24}（参见《鬼魅幽谷》{@variantrule 战役|XPHB}指南）。"
+						"或者，你可以治愈该生物身上一个{@variantrule 极恶创伤|GrimHollowCG24|重伤}。"
 					]
 				}
 			]
@@ -24686,7 +25357,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Exploit Weakness",
-					"name": "利用虚弱",
+					"name": "弱点剖析",
 					"type": "entries",
 					"entries": [
 						"每当你以{@variantrule 反应|XPHB}的一部分发动攻击时，你在攻击和伤害掷骰上获得+2加值。"
@@ -24714,7 +25385,7 @@
 					"name": "防御",
 					"type": "entries",
 					"entries": [
-						"当你处于{@condition 倒地|XPHB}状态时，你的攻击检定不会受到{@variantrule 劣势|XPHB}。对你进行的{@action 攻击|XPHB}掷骰不会因为{@condition 倒地|XPHB}状态而获得{@variantrule 优势|XPHB}。"
+						"当你处于{@condition 倒地|XPHB}状态时，你的攻击检定不会具有{@variantrule 劣势|XPHB}。针对你的{@action 攻击|XPHB}检定不会因为{@condition 倒地|XPHB}状态而具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
@@ -24772,7 +25443,7 @@
 					"name": "血魔法",
 					"type": "entries",
 					"entries": [
-						"从任意法术列表中选择一个你拥有法术位对应等级的血魔法法术。你总是准备着该法术。你可以无需法术位施放它一次，并在完成一次{@variantrule 长休|XPHB}后恢复以此方式施放该法术的能力。你也可以使用你拥有的任何法术位来施放该法术。"
+						"从任意法术列表中选择一个你拥有法术位对应等级的{@filter 血魔法法术|spells|subschool=血魔法}。你总是准备着该法术。你可以无需法术位施放它一次，并且当你完成一次{@variantrule 长休|XPHB}后，你恢复以此方式施放它的能力。你也可以使用你拥有的任何法术位来施放该法术。"
 					]
 				},
 				{
@@ -24780,7 +25451,7 @@
 					"name": "血色潜能",
 					"type": "entries",
 					"entries": [
-						"你拥有一个由两个d12骰子组成的水池，可以在施放血魔法法术时代替{@variantrule 生命值骰|XPHB}使用。当你完成一次{@variantrule 长休|XPHB}时，水池中所有消耗的骰子都会恢复。"
+						"你拥有一个包含两个d12骰子的池，当你施放{@filter 血魔法法术|spells|subschool=血魔法}时，可以消耗池中的骰子来替代{@variantrule 生命值骰|XPHB}。当你完成一次{@variantrule 长休|XPHB}后，你的池将恢复所有已消耗的骰子。"
 					]
 				}
 			]
@@ -24808,6 +25479,24 @@
 					}
 				}
 			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"_": [
+							"自负执念诅咒|GrimHollowPG24",
+							"粉碎感知诅咒|GrimHollowPG24",
+							"诅咒之衰老|GrimHollowPG24",
+							"挑剔者骄傲的诅咒|GrimHollowPG24",
+							"污秽枯萎术诅咒|GrimHollowPG24",
+							"厄运诅咒|GrimHollowPG24",
+							"无厌贪婪诅咒|GrimHollowPG24",
+							"迷失情感的诅咒|GrimHollowPG24",
+							"饿鸦号的饥渴诅咒|GrimHollowPG24",
+							"不可控愤怒诅咒|GrimHollowPG24"
+						]
+					}
+				}
+			],
 			"entries": [
 				"你已学会利用危险但强大的影钢施法技艺。你获得以下增益。",
 				{
@@ -24815,7 +25504,7 @@
 					"type": "entries",
 					"name": "诅咒使者",
 					"entries": [
-						"你总是准备着影钢诅咒，并且可以用你拥有的任何法术位施放它们。"
+						"你总是准备着{@filter 影钢诅咒|spells|subschool=影钢诅咒}，并且你可以用你拥有的任何法术位施放它们。"
 					]
 				},
 				{
@@ -24907,7 +25596,7 @@
 				},
 				{
 					"ENG_name": "Shake It Off",
-					"name": "摆脱困境",
+					"name": "甩脱重担",
 					"type": "entries",
 					"entries": [
 						"每当你完成一次{@variantrule 短休|XPHB}，你的{@condition 力竭|XPHB}等级（如果有）减少1。此外，当你完成一次{@variantrule 长休|XPHB}时，你的{@condition 力竭|XPHB}等级减少2。"
@@ -24928,9 +25617,15 @@
 						{
 							"ENG_name": "Syndicate Smuggler",
 							"name": "集团走私犯",
-							"displayEntry": "{@background 集团走私犯}"
+							"displayEntry": "{@background 集团走私犯|GrimHollowPG24}"
 						}
 					]
+				}
+			],
+			"toolProficiencies": [
+				{
+					"thieves' tools": true,
+					"disguise kit": true
 				}
 			],
 			"entries": [
@@ -25023,10 +25718,10 @@
 				},
 				{
 					"ENG_name": "Returning",
-					"name": "回旋",
+					"name": "回力",
 					"type": "entries",
 					"entries": [
-						"你熟练的具有{@itemProperty T|XPHB|投掷}属性的简易武器也具有回旋属性（见第八章：高级武器与装备）。"
+						"你熟练的、具有{@itemProperty T|XPHB|投掷}词条的简易武器也拥有{@itemMastery 回力|GrimHollowPG24}精通词条。"
 					]
 				}
 			]
@@ -25332,7 +26027,7 @@
 											"items": [
 												"{@optfeature 妖精形态|GrimHollowPG24}",
 												"{@optfeature 春之庭院的仆役|GrimHollowPG24}",
-												"{@optfeature 夏之王庭的仆役|GrimHollowPG24}",
+												"{@optfeature 仲夏王庭的仆役|GrimHollowPG24}",
 												"{@optfeature 秋之庭院的仆役|GrimHollowPG24}",
 												"{@optfeature 冬之庭院的仆役|GrimHollowPG24}",
 												"{@optfeature 异界誓缚（妖精）|GrimHollowPG24|异界誓缚}"
@@ -25960,7 +26655,7 @@
 		},
 		{
 			"ENG_name": "Lycanthrope",
-			"name": "狼人",
+			"name": "兽化人",
 			"source": "GrimHollowPG24",
 			"page": 154,
 			"optionType": [
@@ -26125,7 +26820,7 @@
 						{
 							"type": "inset",
 							"entries": [
-								"{@i 泣疫症侵蚀着受害者的血肉，他们的生命力量日复一日、痛苦小时接痛苦小时地缓慢流失。然后，当所有希望都消失时，受害者的家人注意到逐渐好转，直到他们重新站起来。然而一天后，这个刚被治愈的人发现自己的身体以奇怪的方式弯曲，令其亲人惊恐不已。}",
+								"{@i 这种{@disease 哭泣瘟疫|灰烬圣殿CG24}会侵蚀受害者的血肉，他们的生命力量日复一日、痛苦地小时复小时地缓慢流失。然后，当所有希望都消失时，受害者的家人会注意到他们逐渐好转，直到他们重新站起来。然而，一天后，这位新近被治愈的人发现自己的身体以奇怪的方式弯曲，这让他们的亲人感到惊恐。}",
 								"{@i 一个戴着瘟疫面具的驼背身影一边蹒跚地绕着被绑在桌子上的人影走动，一边自言自语。医师将几种不同的药膏涂抹在人影的血肉上，无视每次涂抹时伴随的痛苦尖叫。最后，当病人的血肉变得透明时，医生满意地叹了口气。}"
 							]
 						},
@@ -26138,7 +26833,7 @@
 							"entries": [
 								"泥怪可能看起来像是只出现在最深、最潮湿的地下城和洞穴群中从未见过光亮术的怪物。虽然它们确实经常出没于那些地方，但埃萨里斯的泥怪从未远离。卫生条件差的城市区域是泥怪的滋生地，靠近妖精领域的田园地点也是如此。",
 								"虽然一些泥怪生物可能只会吞食和破坏，但也有许多\u2014\u2014尤其是那些被好奇和病态者创造或实验过的\u2014\u2014试图将它们的泥怪本质传播给他人。",
-								"智者和农民都谣传，污秽擦掠者\u2014\u2014据说是泣疫症的创造和传播背后的力量\u2014\u2014通过将有机生命首先转化为腐烂的污泥来吞噬它们。凡人在以太惊惧兽眼中不过是食物，而污秽擦掠者更喜欢他们咕噜作响、黏糊糊且污秽的样子。",
+								"贤者与农夫间流传着这样的谣言：据称是创造并传播了{@disease 哭泣瘟疫|灰烬圣殿CG24}的幕后力量\u2014\u2014污秽擦掠者，通过将有机生命首先还原为腐败的污泥来吞噬它们。凡人在以太惊惧兽眼中不过是食物，而污秽擦掠者尤其偏爱他们那汩汩作响、黏糊糊且污秽的形态。",
 								"真正疯狂的人可能会寻求获得成为泥怪的增益，认为无形将提供力量。无论它是如何发生的，成为泥怪的人会发现自己陷入一场可怕的种族：他们会先失去什么，他们的身体还是他们的思想？",
 								{
 									"ENG_name": "Reversing Ooze Traits",
@@ -26167,7 +26862,7 @@
 											"items": [
 												"因泥怪的攻击而陷入{@condition 浴血|XPHB}或{@condition 昏迷|XPHB}状态",
 												"接受奥术师或恶魔学者的实验",
-												"承受泣疫症或其他疾病",
+												"苦痛于{@disease 哭泣瘟疫|灰烬圣殿CG24}或其他疾病",
 												"{@action 研究|XPHB}一本关于泥怪首次来到埃萨里斯的远古书之魔契",
 												"消耗一个最近被击杀的泥怪"
 											]
@@ -26428,7 +27123,7 @@
 						{
 							"type": "inset",
 							"entries": [
-								"{@i 香燃烧得昏暗，压抑的咳嗽声在发霉的房间中回响。亲人们相互依偎，一位卧床的女人呼出了临终诅咒，她疤痕累累的面容上带着泣疫症的可怕病变。她的家人啜泣着，沉浸在忧伤中，没有注意到焖燃的余烬散发出光耀。一位身着飘逸长袍、铂金发色的女人从阴影中现身，折叠的天使飞翼散发出光耀能量。\"再坚持一会儿，我的孩子，\"她低语道。\"命流已被赐予。\"}",
+								"{@i 熏香黯淡地燃烧着，沉闷的咳嗽声在霉味弥漫的房间里回响。亲人们相互依偎，一位卧床不起的女人呼出了最后一口气，她布满疤痕的脸上带着{@disease 哭泣瘟疫|灰烬圣殿CG24}那令人痛苦的病变。她的家人在啜泣，沉浸在忧伤中，没有注意到闷燃的余烬正在辐射并闪耀。一位身着飘逸长袍、有着铂金色头发的女人从阴影中走近，光耀的能量从她收拢的天使飞翼上散发出来。\"再坚持片刻，我的孩子，\"她低语道。\"命流已被赐予。\"}",
 								"{@i 随着一声雷鸣般的巨响，炽天使的锤子击中了一团扭动的尸体。骨头碎片和内脏散落在破败的圣堂地板上，痛苦的哀嚎声此起彼伏。天使咬紧牙关宣告道：\"你们这些污秽的精魂已经死亡。消失吧！我判你们的尸体化为粉尘！\"金色的火焰从她的锤子中爆发，她准备再次发动打击。}"
 							]
 						},
@@ -26578,7 +27273,7 @@
 						{
 							"type": "inset",
 							"entries": [
-								"{@i 披着斗篷的身影俯身在一本布满灰尘的书之魔契上，吟诵着法力之言。每隔一段时间，身影就会抚摸一根带有尖端的黑暗权杖，然后刺向自己，发出一声尖锐的苦痛喘息。身影诅咒的受害者，沉睡在城镇的另一边，在睡眠术中翻了个身。他很快就会承受影钢诅咒的摧残。但诅咒者还有更糟糕的命运等待着它们。}"
+								"{@i 披着斗篷的身影俯身在一本布满灰尘的书之魔契上，吟诵着法力之言。每隔一段时间，身影就会抚摸一根带有尖端的黑暗权杖，然后刺向自己，发出一声尖锐的苦痛喘息。身影诅咒的受害者，沉睡在城镇的另一边，在睡眠中翻了个身。他很快就会承受影钢诅咒的摧残。但诅咒者还有更糟糕的命运等待着它们。}"
 							]
 						},
 						"在埃萨里斯，有时大地本身的金属会携带一种巨大而邪恶的法力。影钢就是这样的材质，它吸收了腐败的法力。这种材质非常适合扭曲通过它的魔法，使其成为诅咒或增强法术的完美选择。",
@@ -26779,7 +27474,7 @@
 												"击败一个强大的幽体亡灵并吸收它的法力。",
 												"击败一个拥有操控空间、时间或死亡力量的异怪。",
 												"使用一个仪式，将你的身体注入死亡或原初混沌的力量。",
-												"在由幽体亡灵生物或异怪造成的濒死体验中幸存，尤其是那些你的{@variantrule 生命值|XPHB|生命值}上限被缩小的情况，例如邪灵的吸取生命，或者你降至0{@variantrule 生命值|XPHB}的情况。",
+												"在一次由幽体亡灵生物或异怪造成的濒死体验中幸存，特别是那些导致你的{@variantrule 生命值|XPHB|生命值}上限被缩小的情况，例如被{@creature 狂怒|XMM|邪灵的}的生命抽取所伤，或者你的{@variantrule 生命值|XPHB}降至0点。",
 												"使用暗蚀或心灵伤害杀死一个重要敌人，或通过使用死灵法术。",
 												"将腐化你的法力注入其他愿意的人。",
 												"与幽魂和相似的精魂或其他现实的生物互动，或许作为它们与其他凡人之间的媒介。",
@@ -27100,7 +27795,7 @@
 				"束缚"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"PRM",
@@ -27379,10 +28074,10 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT"
@@ -27585,7 +28280,7 @@
 				"倒地"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"miscTags": [
 				"FMV"
@@ -27793,10 +28488,10 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"HL"
@@ -27936,7 +28631,7 @@
 				]
 			},
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT",
@@ -28027,7 +28722,7 @@
 				]
 			},
 			"savingThrow": [
-				"感知"
+				"wisdom"
 			],
 			"miscTags": [
 				"THP",
@@ -28171,14 +28866,14 @@
 				]
 			},
 			"damageInflict": [
-				"钝击",
-				"穿刺"
+				"bludgeoning",
+				"piercing"
 			],
 			"conditionInflict": [
 				"束缚"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"miscTags": [
 				"SGT"
@@ -28238,7 +28933,7 @@
 				]
 			},
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"THP"
@@ -28314,10 +29009,10 @@
 				]
 			},
 			"damageInflict": [
-				"挥砍"
+				"slashing"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"miscTags": [
 				"OBS",
@@ -28455,7 +29150,7 @@
 				]
 			},
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SCT"
@@ -28517,7 +29212,7 @@
 				]
 			},
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"UBA"
@@ -28586,7 +29281,7 @@
 				]
 			},
 			"damageInflict": [
-				"心灵"
+				"psychic"
 			],
 			"miscTags": [
 				"SGT",
@@ -28634,7 +29329,7 @@
 					"type": "list",
 					"items": [
 						"它被视为一把你熟练的简易武器。",
-						"它具有光亮术、灵巧和触及范围词条。",
+						"它具有{@itemProperty L|XPHB|光亮术}、{@itemProperty F|XPHB|灵巧}和{@itemProperty R|XPHB|触及}词条。",
 						"你可以使用施法属性调整值代替力量或敏捷调整值来进行此武器的攻击和伤害掷骰。",
 						"它的伤害骰与施放该法术时消耗的{@variantrule 生命值骰|XPHB|生命值骰}相同，造成的伤害为暗蚀。",
 						"每当一个生物受到此武器的伤害时，其{@variantrule 生命值|XPHB|生命值}上限会减少等同于所受伤害的数量。"
@@ -28723,7 +29418,7 @@
 				]
 			},
 			"damageInflict": [
-				"光耀"
+				"radiant"
 			],
 			"miscTags": [
 				"LGT"
@@ -28813,15 +29508,15 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象，并变成一棵垂柳。"
+						"被诅咒的生物扭曲成一个畸形形体，并变为一个{@creature 哭泣的柳树|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"心灵"
+				"psychic"
 			],
 			"savingThrow": [
-				"魅力"
+				"charisma"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Conceited%20Obsession.webp"
 		},
@@ -28900,7 +29595,7 @@
 					"name": "阶段 2",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物无法忍受粗糙或重型衣物接触皮肤的感觉。它无法穿戴护甲。由于过度敏感，它对雷鸣伤害具有{@variantrule 易伤|XPHB}。此外，如果它或目标处于{@variantrule 劣势|XPHB}区域，它在攻击检定上具有{@variantrule 明亮光照|XPHB}。"
+						"被诅咒的生物无法忍受粗糙或重型衣物接触皮肤的感觉。它无法穿戴护甲。由于过度敏感，它对雷鸣伤害具有{@variantrule 易伤|XPHB}。此外，如果它或目标处于{@variantrule 明亮光照|XPHB}区域，它在攻击检定上具有{@variantrule 劣势|XPHB}。"
 					]
 				},
 				{
@@ -28916,15 +29611,15 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象，并成为一个无目苦刑者。"
+						"被诅咒的生物扭曲成一个畸形的形体，并变成一个{@creature 失明苦刑|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"雷鸣"
+				"thunder"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Crushing%20Sensation.webp"
 		},
@@ -29019,16 +29714,16 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象并成为一个身体窃取者。"
+						"被诅咒的生物扭曲成一个畸形形体，并变成一个{@creature 身体窃取者|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"savingThrow": [
-				"体质",
-				"力量"
+				"constitution",
+				"strength"
 			],
 			"miscTags": [
 				"HL"
@@ -29119,18 +29814,18 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形形象并成为一个心灵虹吸者。"
+						"被诅咒的生物扭曲成一个畸形形体，并变为一个{@creature 心灵虹吸|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"心灵"
+				"psychic"
 			],
 			"conditionInflict": [
 				"目盲"
 			],
 			"savingThrow": [
-				"智力"
+				"intelligence"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Fastidious%20Pride.webp"
 		},
@@ -29217,19 +29912,15 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象，并变为一个瘟疫腐血。"
+						"被诅咒的生物扭曲成一个畸形形体，并变为一个{@creature 瘟疫腐血|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"savingThrow": [
-				"魅力"
-			],
-			"miscTags": [
-				"HL",
-				"THP"
+				"charisma"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Foul%20Blight.webp"
 		},
@@ -29324,18 +30015,18 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象，并成为灾祸之战的先驱魔斧。"
+						"被诅咒的生物扭曲成一个畸形形体，并变成一个{@creature 灾祸先驱魔斧|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"雷鸣"
+				"thunder"
 			],
 			"conditionInflict": [
 				"倒地"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Ill-Fated%20Fortune.webp"
 		},
@@ -29422,15 +30113,15 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象，并成为一个虫形憎恶体。"
+						"被诅咒的生物扭曲成一个畸形的形体，并变为一个{@creature 虫群畸变体|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"寒冷"
+				"cold"
 			],
 			"savingThrow": [
-				"感知"
+				"wisdom"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Insatiable%20Greed.webp"
 		},
@@ -29525,19 +30216,19 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象并成为托梦术低语者。"
+						"被诅咒的生物扭曲成一个畸形形体，并变为一个{@creature 梦语者|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"力场"
+				"force"
 			],
 			"conditionInflict": [
 				"失能",
 				"震慑"
 			],
 			"savingThrow": [
-				"智力"
+				"intelligence"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Lost%20Sentiment.webp"
 		},
@@ -29632,18 +30323,18 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象，并变成一个肿胀的胃形怪。"
+						"被诅咒的生物扭曲成一个畸形形体，并变为一个{@creature 肿胀胃形怪|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"毒素"
+				"poison"
 			],
 			"conditionInflict": [
 				"中毒"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Ravenous%20Hunger.webp"
 		},
@@ -29690,7 +30381,7 @@
 					"name": "成功豁免检定",
 					"type": "entries",
 					"entries": [
-						"成功豁免时，目标受到{@damage 4d10}心灵伤害并意识到自己被诅咒了。此外，在1分钟内，目标使用{@variantrule 劣势|XPHB}发动的攻击具有{@variantrule 反应|XPHB|反应}。"
+						"成功豁免时，目标受到{@damage 4d10}心灵伤害并意识到自己被诅咒了。此外，在1分钟内，目标使用{@variantrule 反应|XPHB|反应}发动的攻击具有{@variantrule 劣势|XPHB}。"
 					]
 				},
 				{
@@ -29738,15 +30429,15 @@
 					"name": "巅峰",
 					"type": "entries",
 					"entries": [
-						"被诅咒的生物扭曲成一个畸形的形象，并成为屠杀的化身。"
+						"被诅咒的生物扭曲成一个畸形的形体，并成为一个{@creature 屠杀化身|GrimHollowCG24}。"
 					]
 				}
 			],
 			"damageInflict": [
-				"心灵"
+				"psychic"
 			],
 			"savingThrow": [
-				"感知"
+				"wisdom"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Uncontrollable%20Wrath.webp"
 		},
@@ -29838,7 +30529,7 @@
 				]
 			},
 			"damageInflict": [
-				"光耀"
+				"radiant"
 			],
 			"spellAttack": [
 				"M"
@@ -29912,13 +30603,13 @@
 				]
 			},
 			"damageInflict": [
-				"力场"
+				"force"
 			],
 			"conditionInflict": [
 				"震慑"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Dazing%20Blast.webp"
 		},
@@ -29976,7 +30667,8 @@
 				]
 			},
 			"damageInflict": [
-				"钝击"
+				"piercing",
+				"bludgeoning"
 			],
 			"conditionInflict": [
 				"倒地"
@@ -29985,7 +30677,7 @@
 				"M"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"miscTags": [
 				"UBA"
@@ -30094,14 +30786,14 @@
 				]
 			},
 			"damageInflict": [
-				"火焰"
+				"fire"
 			],
 			"conditionInflict": [
 				"恐慌",
 				"倒地"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"miscTags": [
 				"FMV"
@@ -30195,10 +30887,10 @@
 				]
 			},
 			"damageInflict": [
-				"力场",
-				"暗蚀",
-				"心灵",
-				"光耀"
+				"force",
+				"necrotic",
+				"psychic",
+				"radiant"
 			],
 			"miscTags": [
 				"ADV",
@@ -30472,10 +31164,10 @@
 				]
 			},
 			"damageInflict": [
-				"火焰"
+				"fire"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT"
@@ -30535,13 +31227,13 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"spellAttack": [
 				"R"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT"
@@ -30612,10 +31304,10 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT",
@@ -30686,7 +31378,7 @@
 				]
 			},
 			"savingThrow": [
-				"感知"
+				"wisdom"
 			],
 			"miscTags": [
 				"SGT"
@@ -30889,13 +31581,13 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"spellAttack": [
 				"R"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Heartseeker.webp"
 		},
@@ -30960,7 +31652,7 @@
 				]
 			},
 			"damageInflict": [
-				"光耀"
+				"radiant"
 			],
 			"spellAttack": [
 				"R"
@@ -31149,7 +31841,7 @@
 				"魅惑"
 			],
 			"savingThrow": [
-				"感知"
+				"wisdom"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Incite%20Riot.webp"
 		},
@@ -31279,13 +31971,13 @@
 				]
 			},
 			"damageInflict": [
-				"毒素"
+				"poison"
 			],
 			"conditionInflict": [
 				"中毒"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT",
@@ -31365,7 +32057,7 @@
 				]
 			},
 			"savingThrow": [
-				"感知"
+				"wisdom"
 			],
 			"miscTags": [
 				"SGT",
@@ -31435,7 +32127,7 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"miscTags": [
 				"HL"
@@ -31481,7 +32173,7 @@
 			"entries": [
 				"当你施放这个法术时，你将降至0{@variantrule 生命值|XPHB}并死亡。在你的下一个回合开始时，你将变成一个占据你尸体所在空间的{@creature 幽魂|XMM}。你的游戏数据将被替换为{@creature 幽魂|XMM|幽魂的}资料卡，但你保留你的{@variantrule 生命值|XPHB}；{@variantrule 生命值骰|XPHB}；智力、感知和魅力值；以及语言。",
 				"当你是一个{@creature 幽魂|XMM}时，你只能使用{@creature 幽魂|XMM|幽魂的}资料卡中详述的属性。此外，你将你的{@variantrule 熟练|XPHB|熟练加值}添加到你的攻击检定和{@creature 幽魂|XMM}属性的DC上。",
-				"当你施放该法术时，你的GM会秘密投掷{@dice 1d8}。经过等同于骰出数值的小时数后，法术结束。如果你作为{@creature 幽魂|XMM}被缩小到0{@variantrule 生命值|XPHB|生命值}，或者你采取{@action 魔法|XPHB}动作来结束法术，则法术提前结束。如果用于施放该法术的材料成分仍留在你的尸体上，你将带着等同于你{@variantrule 生命值|XPHB}最大值一半的{@variantrule 生命值|XPHB}回归生命。如果用于施放该法术的材料成分不再留在你的尸体上，你将死亡。",
+				"当你施放该法术时，你的GM会秘密投掷{@dice 1d8}。经过等同于骰出数值的小时数后，法术结束。如果你作为{@creature 幽魂|XMM}被缩小到0{@variantrule 生命值|XPHB}，或者你采取{@action 魔法|XPHB}动作来结束法术，则法术提前结束。如果用于施放该法术的材料成分仍留在你的尸体上，你将带着等同于你{@variantrule 生命值|XPHB|生命值}最大值一半的{@variantrule 生命值|XPHB}回归生命。如果用于施放该法术的材料成分不再留在你的尸体上，你将死亡。",
 				"如果你的身体被摧毁或在受到此法术效应影响时受损超过生存容量，其持续时间将变为永久。你将成为一个{@creature 幽魂|XMM}，直到你的身体受到一个将活体回归死亡的效应影响，例如{@spell 死者复活|XPHB}或{@spell 复生术|XPHB}。"
 			],
 			"classes": {
@@ -31682,10 +32374,10 @@
 				]
 			},
 			"damageInflict": [
-				"火焰"
+				"fire"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"miscTags": [
 				"ADV",
@@ -31807,7 +32499,7 @@
 			"entries": [
 				"作为施放该法术的一部分，你必须消耗五个{@variantrule 生命值骰|XPHB}否则法术自动失败。掷出消耗的{@variantrule 生命值骰|XPHB}，然后选择一个范围内的异怪、天界生物、元素生物、妖精或邪魔，使其体验凡人终有一死的滋味。该生物必须成功通过魅力豁免检定，否则其{@variantrule 生命值|XPHB|生命值}上限和当前{@variantrule 生命值|XPHB}将被缩小消耗的{@variantrule 生命值骰|XPHB}掷出的数量。",
 				"法术持续时间内，未能通过豁免检定的生物将失去所有伤害免疫和抗性，其生物类型变为类人生物，并且每次受到伤害时额外受到{@damage 1d4}暗蚀伤害。",
-				"如果一个受此法术影响的生物被缩小到0{@variantrule 生命值|XPHB}，这些变化将变为永久性且该生物死亡。此法术的最终效应只能通过将该生物复活并对其施放移除{@variantrule 诅咒|XPHB|诅咒}法术或相似魔法来逆转。"
+				"如果一个受此法术影响的生物被缩小至0{@variantrule 生命值|XPHB}，这些变化将变为永久性且该生物死亡。此法术的最终效应只有在生物被复活并成为{@spell 移除诅咒|XPHB}法术或相似魔法的目标时才能被逆转。"
 			],
 			"classes": {
 				"fromClassList": [
@@ -31819,10 +32511,10 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"savingThrow": [
-				"魅力"
+				"charisma"
 			],
 			"miscTags": [
 				"HL"
@@ -31971,7 +32663,7 @@
 				]
 			},
 			"savingThrow": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"OBJ"
@@ -32076,7 +32768,7 @@
 				]
 			},
 			"damageInflict": [
-				"力场"
+				"force"
 			],
 			"miscTags": [
 				"HL",
@@ -32138,13 +32830,13 @@
 				]
 			},
 			"damageInflict": [
-				"光耀"
+				"radiant"
 			],
 			"conditionInflict": [
 				"力竭"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Phoenix%20Flames.webp"
 		},
@@ -32204,13 +32896,13 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"conditionInflict": [
 				"倒地"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Power%20Word%20Maim.webp"
 		},
@@ -32493,10 +33185,10 @@
 				]
 			},
 			"damageInflict": [
-				"暗蚀"
+				"necrotic"
 			],
 			"savingThrow": [
-				"感知"
+				"wisdom"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Red%20Rain.webp"
 		},
@@ -32562,10 +33254,10 @@
 				]
 			},
 			"damageInflict": [
-				"闪电"
+				"lightning"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasFluffImages": true,
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Ride%20the%20Lightning.webp"
@@ -32714,7 +33406,7 @@
 				]
 			},
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"miscTags": [
 				"SGT",
@@ -32759,7 +33451,7 @@
 				}
 			],
 			"entries": [
-				"作为施放该法术的一部分，你必须消耗两个{@variantrule 生命值骰|XPHB}否则法术自动失败。你从周围受伤的生物身上汲取生命力，形成一个旋转的血色盾牌。你为30尺内每个{@variantrule 临时生命值|XPHB}未达最大值（包括你自己）的生物获得5{@variantrule 生命值|XPHB|生命值}，最多15{@variantrule 临时生命值|XPHB}。当你拥有该法术提供的{@variantrule 临时生命值|XPHB}时，你获得{@variantrule 掩护|XPHB|半身掩护}。当法术结束时，所有由此获得的{@variantrule 临时生命值|XPHB}都将消失。"
+				"作为施放该法术的一部分，你必须消耗两个{@variantrule 生命值骰|XPHB}否则法术自动失败。你从周围受伤的生物身上汲取生命力，形成一个旋转的血色盾牌。你为30尺内每个{@variantrule 生命值|XPHB|生命值}未达最大值（包括你自己）的生物获得5{@variantrule 临时生命值|XPHB}，最多15{@variantrule 临时生命值|XPHB}。当你拥有该法术提供的{@variantrule 临时生命值|XPHB}时，你获得{@variantrule 掩护|XPHB|半身掩护}。当法术结束时，所有由此获得的{@variantrule 临时生命值|XPHB}都将消失。"
 			],
 			"entriesHigherLevel": [
 				{
@@ -32849,10 +33541,10 @@
 				]
 			},
 			"damageInflict": [
-				"力场"
+				"force"
 			],
 			"savingThrow": [
-				"魅力"
+				"charisma"
 			],
 			"miscTags": [
 				"SGT"
@@ -32992,7 +33684,7 @@
 				]
 			},
 			"damageInflict": [
-				"穿刺"
+				"piercing"
 			],
 			"conditionInflict": [
 				"中毒"
@@ -33060,7 +33752,7 @@
 				]
 			},
 			"damageInflict": [
-				"光耀"
+				"radiant"
 			],
 			"miscTags": [
 				"SGT"
@@ -33270,13 +33962,13 @@
 				]
 			},
 			"damageInflict": [
-				"心灵"
+				"psychic"
 			],
 			"conditionInflict": [
 				"恐慌"
 			],
 			"savingThrow": [
-				"魅力"
+				"charisma"
 			],
 			"miscTags": [
 				"SGT"
@@ -33697,7 +34389,7 @@
 				]
 			},
 			"damageInflict": [
-				"力场"
+				"force"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Supernal%20Smite.webp"
 		},
@@ -33909,13 +34601,13 @@
 				]
 			},
 			"damageInflict": [
-				"钝击"
+				"bludgeoning"
 			],
 			"conditionInflict": [
 				"倒地"
 			],
 			"savingThrow": [
-				"敏捷"
+				"dexterity"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Tremor.webp"
 		},
@@ -34039,7 +34731,7 @@
 				]
 			},
 			"damageInflict": [
-				"挥砍"
+				"slashing"
 			],
 			"miscTags": [
 				"THP"
@@ -34118,7 +34810,7 @@
 				]
 			},
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT"
@@ -34199,7 +34891,7 @@
 				"受擒"
 			],
 			"savingThrow": [
-				"力量"
+				"strength"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Viscous%20Sheath.webp"
 		},
@@ -34257,7 +34949,7 @@
 				]
 			},
 			"savingThrow": [
-				"魅力"
+				"charisma"
 			],
 			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Wall%20of%20Gloom.webp"
 		},
@@ -34451,10 +35143,10 @@
 				]
 			},
 			"damageInflict": [
-				"挥砍"
+				"slashing"
 			],
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT"
@@ -34509,7 +35201,7 @@
 				]
 			},
 			"savingThrow": [
-				"体质"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT"
@@ -34696,7 +35388,7 @@
 							"con"
 						],
 						"dc": {
-							"calculation": "施法"
+							"calculation": "spellcasting"
 						}
 					}
 				},
@@ -34716,7 +35408,7 @@
 					},
 					"profiles": [
 						{
-							"uuid": "{!@ $.foundrySpell[0].activities[1].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySpell[0].activities[1].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						}
 					],
 					"bonuses": {
@@ -34746,17 +35438,17 @@
 						{
 							"ENG_name": "Blooming",
 							"name": "绽放",
-							"uuid": "{!@ $.foundrySpell[1].activities[0].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySpell[1].activities[0].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						},
 						{
 							"ENG_name": "Oaken",
 							"name": "橡木",
-							"uuid": "{!@ $.foundrySpell[1].activities[0].profiles[1].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySpell[1].activities[0].profiles[1].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						},
 						{
 							"ENG_name": "Thorny",
 							"name": "荆棘兽",
-							"uuid": "{!@ $.foundrySpell[1].activities[0].profiles[2].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySpell[1].activities[0].profiles[2].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						}
 					],
 					"bonuses": {
@@ -34786,17 +35478,17 @@
 						{
 							"ENG_name": "Enormous Mouth",
 							"name": "巨大之口",
-							"uuid": "{!@ $.foundrySpell[2].activities[0].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySpell[2].activities[0].profiles[0].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						},
 						{
 							"ENG_name": "Glowing Lantern",
 							"name": "发光灯笼",
-							"uuid": "{!@ $.foundrySpell[2].activities[0].profiles[1].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySpell[2].activities[0].profiles[1].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						},
 						{
 							"ENG_name": "Scaled Wings",
 							"name": "鳞状飞翼",
-							"uuid": "{!@ $.foundrySpell[2].activities[0].profiles[2].uuid.0}|{!@ $.foundrySubclassFeature[0].activities[0].profiles[0].uuid.1}"
+							"uuid": "{!@ $.foundrySpell[2].activities[0].profiles[2].uuid.0}|{!@ $.foundrySubclassFeature[2].activities[0].profiles[0].uuid.1}"
 						}
 					],
 					"bonuses": {
@@ -34813,6 +35505,36 @@
 			]
 		}
 	],
+	"magicvariant": [
+		{
+			"ENG_name": "Hunter's Armor",
+			"name": "猎人的护甲",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"type": "LA|XPHB"
+				},
+				{
+					"type": "MA|XPHB"
+				},
+				{
+					"type": "HA|XPHB"
+				}
+			],
+			"inherits": {
+				"namePrefix": "猎人的",
+				"source": "GrimHollowPG24",
+				"rarity": "none",
+				"type": "AdvEq",
+				"page": 126,
+				"valueExpression": "[[baseItem.value]] + 50000",
+				"entries": [
+					"猎人的护甲是埃萨里斯各地怪物猎人的最爱。任何类型的护甲都可以通过支付列出的额外花费来制作成猎人的护甲。这会用精金和秘银线加固最关键的范围，将毁灭性的打击转化为正常的伤口。",
+					"如果一次攻击将造成一个{@variantrule 极恶创伤|GrimHollowCG24|重伤}，则掷一个{@dice d20}。若结果为11或更高，该攻击不会造成{@variantrule 极恶创伤|GrimHollowCG24|重伤}。"
+				]
+			}
+		}
+	],
 	"baseitem": [
 		{
 			"ENG_name": "Arbalest",
@@ -34823,7 +35545,7 @@
 			"rarity": "none",
 			"weight": 20,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"H|XPHB",
@@ -34861,7 +35583,7 @@
 			"rarity": "none",
 			"weight": 4,
 			"value": 20000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"BP|GrimHollowPG24",
@@ -34886,7 +35608,7 @@
 			"rarity": "none",
 			"weight": 10,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"BP|GrimHollowPG24",
@@ -34911,7 +35633,7 @@
 			"rarity": "none",
 			"weight": 10,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"BP|GrimHollowPG24",
@@ -34920,7 +35642,7 @@
 				"2H|XPHB"
 			],
 			"mastery": [
-				"散射术|GrimHollowPG24|散射术（10尺）"
+				"散射术|GrimHollowPG24|散射（10尺）"
 			],
 			"range": "30/90",
 			"dmg1": "2d6",
@@ -34937,14 +35659,14 @@
 			"rarity": "none",
 			"weight": 4,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"BP|GrimHollowPG24",
 				"LD|XPHB"
 			],
 			"mastery": [
-				"散射术|GrimHollowPG24|散射术（5尺）"
+				"散射术|GrimHollowPG24|散射（5尺）"
 			],
 			"range": "15/60",
 			"dmg1": "2d4",
@@ -34954,14 +35676,14 @@
 		},
 		{
 			"ENG_name": "Catchpole",
-			"name": "捕手",
+			"name": "擒人叉",
 			"source": "GrimHollowPG24",
 			"page": 128,
 			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 5,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Haft|GrimHollowPG24",
 				"R|XPHB",
@@ -34983,7 +35705,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Mom|GrimHollowPG24"
 			],
@@ -35006,7 +35728,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"AP|GrimHollowPG24",
 				"Mom|GrimHollowPG24"
@@ -35030,7 +35752,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"AP|GrimHollowPG24",
 				"Mom|GrimHollowPG24"
@@ -35047,21 +35769,21 @@
 		},
 		{
 			"ENG_name": "Chakram",
-			"name": "查克拉姆",
+			"name": "飞轮",
 			"source": "GrimHollowPG24",
 			"page": 128,
 			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 1,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"F|XPHB",
 				"L|XPHB",
 				"T|XPHB"
 			],
 			"mastery": [
-				"回旋|GrimHollowPG24"
+				"回力|GrimHollowPG24"
 			],
 			"range": "30/120",
 			"dmg1": "1d6",
@@ -35077,13 +35799,13 @@
 			"rarity": "none",
 			"weight": 7,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"H|XPHB",
 				"2H|XPHB"
 			],
 			"mastery": [
-				"野蛮|GrimHollowPG24"
+				"蛮横|GrimHollowPG24"
 			],
 			"dmg1": "2d6",
 			"dmgType": "S",
@@ -35098,7 +35820,7 @@
 			"rarity": "none",
 			"weight": 2,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"H|XPHB",
@@ -35122,7 +35844,7 @@
 			"rarity": "none",
 			"weight": 2,
 			"value": 40000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"2H|XPHB"
@@ -35145,7 +35867,7 @@
 			"rarity": "none",
 			"weight": 5,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"D|GrimHollowPG24",
 				"Mom|GrimHollowPG24",
@@ -35170,7 +35892,7 @@
 			"rarity": "none",
 			"weight": 4,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"D|GrimHollowPG24",
 				"Mom|GrimHollowPG24",
@@ -35195,14 +35917,14 @@
 			"rarity": "none",
 			"weight": 4,
 			"value": 35000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"BP|GrimHollowPG24",
 				"LD|XPHB"
 			],
 			"mastery": [
-				"散射术|GrimHollowPG24|散射术（5尺）"
+				"散射术|GrimHollowPG24|散射（5尺）"
 			],
 			"range": "20",
 			"dmg1": "2d4",
@@ -35212,21 +35934,21 @@
 		},
 		{
 			"ENG_name": "Dragon Rifle",
-			"name": "龙步枪",
+			"name": "龙息步枪",
 			"source": "GrimHollowPG24",
 			"page": 129,
 			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 4,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"BP|GrimHollowPG24",
 				"LD|XPHB"
 			],
 			"mastery": [
-				"散射术|GrimHollowPG24|散射术（10尺）"
+				"散射术|GrimHollowPG24|散射（10尺）"
 			],
 			"range": "30",
 			"dmg1": "2d6",
@@ -35257,7 +35979,7 @@
 			"rarity": "none",
 			"weight": 2,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"F|XPHB"
 			],
@@ -35277,7 +35999,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"D|GrimHollowPG24",
 				"F|XPHB",
@@ -35300,7 +36022,7 @@
 			"rarity": "none",
 			"weight": 6,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"D|GrimHollowPG24",
 				"F|XPHB",
@@ -35308,7 +36030,7 @@
 				"2H|XPHB"
 			],
 			"mastery": [
-				"野蛮|GrimHollowPG24"
+				"蛮横|GrimHollowPG24"
 			],
 			"dmg1": "1d6",
 			"dmgType": "S",
@@ -35323,7 +36045,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Dam|GrimHollowPG24",
 				"D|GrimHollowPG24",
@@ -35350,7 +36072,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Dam|GrimHollowPG24",
 				"D|GrimHollowPG24",
@@ -35377,7 +36099,7 @@
 			"rarity": "none",
 			"weight": 11,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"CS|GrimHollowPG24",
@@ -35386,7 +36108,7 @@
 				"2H|XPHB"
 			],
 			"mastery": [
-				"散射术|GrimHollowPG24|散射术（10尺）"
+				"散射术|GrimHollowPG24|散射（10尺）"
 			],
 			"range": "15",
 			"dmg1": "2d6",
@@ -35406,7 +36128,7 @@
 			"rarity": "none",
 			"weight": 5,
 			"value": 35000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"T|XPHB"
 			],
@@ -35427,7 +36149,7 @@
 			"rarity": "none",
 			"weight": 9,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Dam|GrimHollowPG24",
 				"Haft|GrimHollowPG24",
@@ -35454,7 +36176,7 @@
 			"rarity": "none",
 			"weight": 6,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Mom|GrimHollowPG24",
 				"R|XPHB",
@@ -35479,7 +36201,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"V|XPHB"
 			],
@@ -35500,7 +36222,7 @@
 			"rarity": "none",
 			"weight": 8,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Haft|GrimHollowPG24",
 				"H|XPHB",
@@ -35530,14 +36252,14 @@
 		},
 		{
 			"ENG_name": "Parrying Dagger",
-			"name": "招架匕首",
+			"name": "格挡匕首",
 			"source": "GrimHollowPG24",
 			"page": 128,
 			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 1,
 			"value": 35000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"F|XPHB",
 				"L|XPHB",
@@ -35560,7 +36282,7 @@
 			"rarity": "none",
 			"weight": 12,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Haft|GrimHollowPG24",
 				"H|XPHB",
@@ -35576,14 +36298,14 @@
 		},
 		{
 			"ENG_name": "Punching Dagger",
-			"name": "拳匕",
+			"name": "拳刺",
 			"source": "GrimHollowPG24",
 			"page": 128,
 			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 1,
 			"value": 30000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"AP|GrimHollowPG24",
 				"F|XPHB",
@@ -35605,7 +36327,7 @@
 			"rarity": "none",
 			"weight": 7,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"Mag|GrimHollowPG24",
@@ -35633,7 +36355,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"L|XPHB",
@@ -35661,7 +36383,7 @@
 			"rarity": "none",
 			"weight": 20,
 			"value": 100000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"H|XPHB",
@@ -35690,7 +36412,7 @@
 			"rarity": "none",
 			"weight": 3,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"L|XPHB",
@@ -35718,7 +36440,7 @@
 			"rarity": "none",
 			"weight": 9,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"A|XPHB",
 				"Mag|GrimHollowPG24",
@@ -35746,13 +36468,13 @@
 			"rarity": "none",
 			"weight": 2,
 			"value": 30000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"L|XPHB",
 				"T|XPHB"
 			],
 			"mastery": [
-				"回旋|GrimHollowPG24"
+				"回力|GrimHollowPG24"
 			],
 			"range": "20/60",
 			"dmg1": "1d4",
@@ -35768,7 +36490,7 @@
 			"rarity": "none",
 			"weight": 2,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"F|XPHB"
 			],
@@ -35788,7 +36510,7 @@
 			"rarity": "none",
 			"weight": 6,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"D|GrimHollowPG24"
 			],
@@ -35808,7 +36530,7 @@
 			"rarity": "none",
 			"weight": 2,
 			"value": 50000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"F|XPHB",
 				"L|XPHB"
@@ -35829,7 +36551,7 @@
 			"rarity": "none",
 			"weight": 12,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Haft|GrimHollowPG24",
 				"H|XPHB",
@@ -35837,7 +36559,7 @@
 				"2H|XPHB"
 			],
 			"mastery": [
-				"野蛮|GrimHollowPG24"
+				"蛮横|GrimHollowPG24"
 			],
 			"dmg1": "2d6",
 			"dmgType": "S",
@@ -35855,7 +36577,7 @@
 			"rarity": "none",
 			"weight": 15,
 			"value": 75000,
-			"weaponCategory": "进阶",
+			"weaponCategory": "advanced",
 			"property": [
 				"Haft|GrimHollowPG24",
 				"H|XPHB",
@@ -35863,7 +36585,7 @@
 				"2H|XPHB"
 			],
 			"mastery": [
-				"野蛮|GrimHollowPG24"
+				"蛮横|GrimHollowPG24"
 			],
 			"dmg1": "2d6",
 			"dmgType": "B",
@@ -35874,6 +36596,19 @@
 		}
 	],
 	"item": [
+		{
+			"ENG_name": "Mastercraft Instrument",
+			"name": "大师级乐器",
+			"source": "GrimHollowPG24",
+			"page": 127,
+			"type": "AdvEq",
+			"rarity": "none",
+			"value": 25000,
+			"entries": [
+				"这些乐器不仅仅是埃萨里斯最优秀的制琴师和工匠的作品，它们还拥有可以增添音乐表演效果的秘密装饰和创新。",
+				"如果你对该乐器熟练且拥有至少+4的{@variantrule 熟练|XPHB|熟练加值}，所有使用大师级乐器进行的魅力（{@skill 表演|XPHB}）检定具有{@variantrule 优势|XPHB}优势。"
+			]
+		},
 		{
 			"ENG_name": "Arrow, Acid",
 			"name": "箭，强酸",
@@ -35934,7 +36669,7 @@
 			"weight": 0.05,
 			"value": 2000,
 			"entries": [
-				"这种弹药的作用类似于{@itemProperty AP|GrimHollowPG24|护甲-穿刺}近战武器，但你可以将弹药作为远程武器的投射物发射。"
+				"这种弹药的作用类似于{@itemProperty AP|GrimHollowPG24|穿甲}近战武器，但你可以将弹药作为远程武器的投射物发射。"
 			],
 			"miscTags": [
 				"CNS"
@@ -35982,7 +36717,7 @@
 			"weight": 0.05,
 			"value": 2000,
 			"entries": [
-				"设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 野蛮|GrimHollowPG24}近战武器。"
+				"设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 蛮横|GrimHollowPG24}近战武器。"
 			],
 			"miscTags": [
 				"CNS"
@@ -36196,7 +36931,7 @@
 			"weight": 0.1,
 			"value": 2000,
 			"entries": [
-				"这种弹药的作用类似于{@itemProperty AP|GrimHollowPG24|护甲-穿刺}近战武器，但你可以将弹药作为远程武器的投射物发射。"
+				"这种弹药的作用类似于{@itemProperty AP|GrimHollowPG24|穿甲}近战武器，但你可以将弹药作为远程武器的投射物发射。"
 			],
 			"miscTags": [
 				"CNS"
@@ -36244,7 +36979,7 @@
 			"weight": 0.1,
 			"value": 2000,
 			"entries": [
-				"设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 野蛮|GrimHollowPG24}近战武器。"
+				"设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 蛮横|GrimHollowPG24}近战武器。"
 			],
 			"miscTags": [
 				"CNS"
@@ -36460,19 +37195,6 @@
 			]
 		},
 		{
-			"ENG_name": "Hunter's Armor",
-			"name": "猎人的护甲",
-			"source": "GrimHollowPG24",
-			"page": 126,
-			"type": "AdvEq",
-			"rarity": "none",
-			"value": 50000,
-			"entries": [
-				"猎人的护甲是埃萨里斯各地怪物猎人的最爱。任何类型的护甲都可以通过支付列出的额外花费来制作成猎人的护甲。这会用精金和秘银线加固最关键的范围，将毁灭性的打击转化为正常的伤口。",
-				"如果一次攻击会造成{@variantrule 重伤|GrimHollowPG24}，掷一个{@dice d20}。结果为11或更高时，该攻击不会造成{@variantrule 重伤|GrimHollowPG24}。"
-			]
-		},
-		{
 			"ENG_name": "Iron Net",
 			"name": "铁捕网",
 			"source": "GrimHollowPG24",
@@ -36495,26 +37217,13 @@
 		},
 		{
 			"ENG_name": "Magazine",
-			"name": "杂志",
+			"name": "弹匣",
 			"source": "GrimHollowPG24",
 			"page": 129,
 			"type": "G|XPHB",
 			"rarity": "none",
 			"weight": 1,
 			"value": 500
-		},
-		{
-			"ENG_name": "Mastercraft Instrument",
-			"name": "大师级乐器",
-			"source": "GrimHollowPG24",
-			"page": 127,
-			"type": "AdvEq",
-			"rarity": "none",
-			"value": 25000,
-			"entries": [
-				"这些乐器不仅仅是埃萨里斯最优秀的制琴师和工匠的作品，它们还拥有可以增添音乐表演效果的秘密装饰和创新。",
-				"如果你对该乐器熟练且拥有至少+4的{@variantrule 熟练|XPHB|熟练加值}，所有使用大师级乐器进行的魅力（{@skill 表演|XPHB}）检定具有{@variantrule 优势|XPHB}优势。"
-			]
 		},
 		{
 			"ENG_name": "Noisemaker",
@@ -36540,7 +37249,7 @@
 			"weight": 0.1,
 			"value": 5000,
 			"entries": [
-				"这种弹药的作用类似于{@itemProperty AP|GrimHollowPG24|护甲-穿刺}近战武器，但你可以将弹药作为远程武器的投射物发射。"
+				"这种弹药的作用类似于{@itemProperty AP|GrimHollowPG24|穿甲}近战武器，但你可以将弹药作为远程武器的投射物发射。"
 			],
 			"miscTags": [
 				"CNS"
@@ -36572,7 +37281,7 @@
 			"weight": 0.1,
 			"value": 5000,
 			"entries": [
-				"设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 野蛮|GrimHollowPG24}近战武器。"
+				"设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 蛮横|GrimHollowPG24}近战武器。"
 			],
 			"miscTags": [
 				"CNS"
@@ -36620,8 +37329,8 @@
 			"weight": 10,
 			"value": 50000,
 			"entries": [
-				"埃萨里斯盛行的野蛮战争和恶毒怪物让许多人遭受{@variantrule 重伤|GrimHollowPG24|极恶创伤}，包括肢体缺失和其他潜在的衰弱伤患。世界各地的工程师和工匠通过义肢在协助这些人应对这些伤患方面取得了巨大进步。",
-				"当一个生物带有{@variantrule 重伤|GrimHollowPG24}时使用义肢，他们会在佩戴替换失落或受伤身体部分的义肢时忽略{@variantrule 重伤|GrimHollowPG24}施加的惩罚。",
+				"埃萨里斯各地盛行的蛮横战争与恶毒怪物让许多人遭受了{@variantrule 极恶创伤|GrimHollowCG24}，包括肢体缺失和其他可能致残的伤患。世界各地的工程师和工匠们通过义肢，在帮助这些人应对这些伤患方面取得了巨大进步。",
+				"当一个拥有{@variantrule 极恶创伤|GrimHollowCG24|重伤}的生物使用义肢时，若该义肢替换了其失落或受伤的身体部位，则穿戴该义肢期间他们忽略由{@variantrule 极恶创伤|GrimHollowCG24|重伤}施加的惩罚。",
 				"一些义肢可以被附魔，赋予它们更强大的力量。魔法义肢的规则可以在{@i 鬼魅幽谷战役向导}中找到。"
 			]
 		},
@@ -36634,6 +37343,7 @@
 			"rarity": "none",
 			"weight": 6,
 			"value": 30000,
+			"bonusAc": "+2",
 			"entries": [
 				"这种机械化护盾可以缩回前臂佩戴的护腕中。当对手以为他们成功偷袭时，只需一个快速动作就能展开护盾。",
 				"你可以将可伸缩护盾作为护腕佩戴在前臂上，当护盾处于收缩状态时不算作占用那只手。作为对一次命中你的攻击的{@variantrule 反应|XPHB}，你可以展开护盾，使你的{@variantrule 护甲等级|XPHB}获得等同于你的{@variantrule 熟练|XPHB|熟练加值}的加值来对抗该攻击。如果这使得攻击从命中变为未命中，你可以对触发此效果的生物进行一次武器近战攻击或{@variantrule 徒手打击|XPHB}（若该生物处于你的触及范围内）。护盾将保持展开状态直到你的下一个回合开始。",
@@ -36727,7 +37437,7 @@
 			"weight": 0.1,
 			"value": 2000,
 			"entries": [
-				"这种弹药的作用类似于{@itemProperty AP|GrimHollowPG24|护甲-穿刺}近战武器，但你可以将弹药作为远程武器的投射物发射。"
+				"这种弹药的作用类似于{@itemProperty AP|GrimHollowPG24|穿甲}近战武器，但你可以将弹药作为远程武器的投射物发射。"
 			],
 			"miscTags": [
 				"CNS"
@@ -36759,7 +37469,7 @@
 			"weight": 0.1,
 			"value": 2000,
 			"entries": [
-				"设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 野蛮|GrimHollowPG24}近战武器。"
+				"设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 蛮横|GrimHollowPG24}近战武器。"
 			],
 			"miscTags": [
 				"CNS"
@@ -36927,13 +37637,15 @@
 		},
 		{
 			"ENG_name": "Tower Shield",
-			"name": "塔楼盾牌",
+			"name": "塔盾",
 			"source": "GrimHollowPG24",
 			"page": 127,
 			"type": "AdvEq",
 			"rarity": "none",
 			"weight": 50,
 			"value": 20000,
+			"strength": "15",
+			"bonusAc": "+3",
 			"entries": [
 				"这面大型盾牌比普通盾牌提供更多的防护。当你持用塔楼盾牌时，你的{@variantrule 护甲等级|XPHB}获得+3加值。如果你用一个动作架设塔楼盾牌，你将获得{@variantrule 掩护|XPHB|四分之三掩护}直到你的下个回合开始。此外，你的{@variantrule 速度|XPHB}在此期间变为0且无法提升。",
 				"要使用塔楼盾牌，你必须至少有15点力量，并且在装备盾牌时你的{@variantrule 速度|XPHB}会缩小10尺。"
@@ -36953,17 +37665,73 @@
 			]
 		}
 	],
+	"language": [
+		{
+			"ENG_name": "Castinellan",
+			"name": "卡斯提内拉",
+			"source": "GrimHollowPG24",
+			"page": 217,
+			"entries": [
+				"卡斯提兰诸省的主要语言{@sup ({@book PG|GrimHollowPG24|8|卡斯提兰诸省}/{@book CG|灰烬圣杯CG24|6})}。这种语言也用于埃萨里斯的大部分宗教典籍。直到最近，将炽天使众的教义翻译成卡斯提内拉语以外的语言仍被视为犯罪。卡斯提内拉语也是莫伦西亚{@sup ({@book PG|GrimHollowPG24|8|莫伦西亚城}/{@book CG|灰烬圣杯CG24|9})}的主要口语，使其成为贸易中最常用的语言。"
+			]
+		},
+		{
+			"ENG_name": "Charneault",
+			"name": "夏诺",
+			"source": "GrimHollowPG24",
+			"page": 217,
+			"entries": [
+				"夏诺王国的主要语言{@sup ({@book PG|GrimHollowPG24|8|夏诺王国}/{@book CG|灰烬圣杯CG24|5})}。"
+			]
+		},
+		{
+			"ENG_name": "Valiki",
+			"name": "瓦利基",
+			"source": "GrimHollowPG24",
+			"page": 217,
+			"entries": [
+				"瓦利坎氏族的主要语言{@sup ({@book PG|GrimHollowPG24|8|瓦利坎氏族}/{@book CG|灰烬圣杯CG24|7})}。每个氏族所说的瓦利基语方言略有不同，但每种方言都足够相似，足以让他们相互理解。"
+			]
+		},
+		{
+			"ENG_name": "Ostoy",
+			"name": "奥斯特伊",
+			"source": "GrimHollowPG24",
+			"page": 217,
+			"entries": [
+				"奥斯特伊的主要语言{@sup ({@book PG|GrimHollowPG24|8|奥斯托扬帝国}/{@book CG|灰烬圣杯CG24|4})}。"
+			]
+		},
+		{
+			"ENG_name": "Low Büräch",
+			"name": "低比拉赫",
+			"source": "GrimHollowPG24",
+			"page": 217,
+			"entries": [
+				"比拉赫帝国平民的方言{@sup ({@book PG|GrimHollowPG24|8|比拉赫帝国}/{@book CG|灰烬圣杯CG24|3})}。它比高等比拉赫语的口音更重，使得该国的普通民众对外国人来说更难理解。"
+			]
+		},
+		{
+			"ENG_name": "Higher Büräch",
+			"name": "上比拉赫",
+			"source": "GrimHollowPG24",
+			"page": 217,
+			"entries": [
+				"比拉赫帝国中的贵族方言{@sup ({@book PG|GrimHollowPG24|8|比拉赫帝国}/{@book CG|灰烬圣杯CG24|3})}。大多数正式文书也使用这种方言，例如宗教典籍、法律、皇家法令、戏剧和诗歌等。如果一个外国人学习比拉赫语，他们学的就是这种方言。"
+			]
+		}
+	],
 	"itemProperty": [
 		{
 			"ENG_name": "Armor-Piercing",
-			"name": "护甲-穿刺",
+			"name": "穿甲",
 			"abbreviation": "AP",
 			"source": "GrimHollowPG24",
 			"page": 122,
 			"entries": [
 				{
 					"ENG_name": "Armor-Piercing",
-					"name": "护甲-穿刺",
+					"name": "穿甲",
 					"type": "entries",
 					"entries": [
 						"护甲-穿刺武器是一种设计用来穿透护甲或厚表皮的近战武器。当你使用护甲-穿刺武器进行攻击检定时，若你的目标穿着护甲或具有18或更高的{@variantrule 护甲等级|XPHB}，则你在攻击检定中获得+1附赠动作。"
@@ -37017,7 +37785,7 @@
 					"name": "双倍",
 					"type": "entries",
 					"entries": [
-						"双倍武器在双武器战斗时视为两把轻型武器，每只手各持一把。如果双倍武器具有{@itemProperty R|XPHB|触及}词条，你每回合只能使用其中一个词条。"
+						"一把双倍武器在双武器战斗时，视为两把{@item L|XPHB|光亮术}武器，每只手各持一把。如果一把双倍武器具有{@itemProperty R|XPHB|触及}词条，你每回合只能使用其中一种词条。"
 					]
 				}
 			]
@@ -37059,7 +37827,7 @@
 		},
 		{
 			"ENG_name": "Magazine",
-			"name": "杂志",
+			"name": "弹匣",
 			"abbreviation": "Mag",
 			"source": "GrimHollowPG24",
 			"page": 123,
@@ -37067,10 +37835,10 @@
 			"entries": [
 				{
 					"ENG_name": "Magazine",
-					"name": "杂志",
+					"name": "弹匣",
 					"type": "entries",
 					"entries": [
-						"具有杂志属性的武器还具有一个数值和一个弹药类型。该武器持有该数量和类型的弹药，你可以在需要重新装填武器之前消耗它们。作为一个{@variantrule 附赠动作|XPHB}，你可以移除一个{@item 杂志|GrimHollowPG24}，然后用一个新的{@item 杂志|GrimHollowPG24}重新装填。一个{@item 杂志|GrimHollowPG24}武器附带两个空杂志，包含在武器的成本和重量中。为杂志武器额外购买一个空杂志需要花费25GP。为一个空杂志装填弹药需要1分钟。"
+						"具有杂志属性的武器还具有一个数值和一个弹药类型。该武器持有该数量和类型的弹药，你可以在需要重新装填武器之前消耗它们。作为一个{@variantrule 附赠动作|XPHB}，你可以移除一个{@item 弹匣|GrimHollowPG24}，然后用一个新的{@item 弹匣|GrimHollowPG24}重新装填。一个{@item 弹匣|GrimHollowPG24}武器附带两个空杂志，包含在武器的成本和重量中。为杂志武器额外购买一个空杂志需要花费25GP。为一个空杂志装填弹药需要1分钟。"
 					]
 				}
 			]
@@ -37136,7 +37904,7 @@
 							"type": "entries",
 							"entries": [
 								"设计并制造埃萨里斯高度进阶武器和弹药的杰出工程师和工匠们并未止步于此。其他战争发明\u2014\u2014以及和平发明\u2014\u2014对埃萨里斯的士兵、警卫和冒险者来说变得无比珍贵。",
-								"一些高级装备，例如腐蚀的{@item 影钢专注|GrimHollowPG24}，需要特殊训练才能完全使用。其他物品，如{@item 可伸缩护盾|GrimHollowPG24}，任何精通盾牌的人都可以使用。还有许多其他装备任何人都可以使用\u2014\u2014尽管很少有人能够负担和维护这些机械、炼金甚至魔法的奇迹。",
+								"一些高级装备，例如腐蚀性的{@item 影钢专注|GrimHollowPG24}，需要特殊训练才能完全运用。其他物品，如{@item 可伸缩护盾|GrimHollowPG24}，任何熟练使用{@item 盾牌|XPHB|盾牌}的人都可以使用。还有许多其他装备任何人都可以使用\u2014\u2014尽管很少有人能够负担得起并维护这些机械、炼金甚至魔法的奇物。",
 								"由于它们昂贵且难以制造，高级装备的获取途径有限\u2014\u2014甚至可能像某些魔法物品一样有限。最大的城市或拥有大师工匠的地点，可能只有几件高级装备。"
 							]
 						}
@@ -37148,11 +37916,11 @@
 	"itemMastery": [
 		{
 			"ENG_name": "Brutal",
-			"name": "野蛮",
+			"name": "蛮横",
 			"source": "GrimHollowPG24",
 			"page": 123,
 			"entries": [
-				"野蛮武器是为最大化伤害而设计的。野蛮武器在自然掷骰19或20时造成重击。如果你的重击范围已经增加，则改为将其增加1点（例如从19-20增加到18-20）。",
+				"一把蛮横武器被设计用于造成最大伤害。蛮横武器在自然掷骰结果为19或20时造成{@variantrule 重击|XPHB|重击}。如果你的重击范围已经增加，则改为将其增加1点（例如从19-20增加到18-20）。",
 				"当你用一把野蛮武器对一个生物造成{@variantrule 重击|XPHB}时，该武器额外造成一个伤害骰的伤害。"
 			]
 		},
@@ -37187,7 +37955,7 @@
 		},
 		{
 			"ENG_name": "Returning",
-			"name": "回旋",
+			"name": "回力",
 			"source": "GrimHollowPG24",
 			"page": 123,
 			"entries": [
@@ -37200,7 +37968,7 @@
 			"source": "GrimHollowPG24",
 			"page": 123,
 			"entries": [
-				"散射术武器可以同时重创多个敌人。当你采取{@action 攻击|XPHB}动作并用散射术武器命中一个生物时，从目标的空间（或该生物占据的一个方格，如果它是大型或更大）测量武器的散射范围。除原始目标外，落入武器散射范围内的其他生物会受到等同于1 + 你的敏捷调整值（最低2）的伤害。此伤害类型与你对原始目标造成的伤害类型相同。"
+				"散射武器可以同时重创多个敌人。当你采取{@action 攻击|XPHB}动作并用散射术武器命中一个生物时，从目标的空间（或该生物占据的一个方格，如果它是大型或更大）测量武器的散射范围。除原始目标外，落入武器散射范围内的其他生物会受到等同于1 + 你的敏捷调整值（最低2）的伤害。此伤害类型与你对原始目标造成的伤害类型相同。"
 			]
 		},
 		{
@@ -37841,7 +38609,7 @@
 					"ENG_name": "Aquatic Assault (Sea Only)",
 					"name": "水生攻击（仅限海洋）",
 					"entries": [
-						"当野兽浸入水中时，它对没有{@variantrule 优势|XPHB}且浸入水中的生物进行攻击检定时具有{@variantrule 游泳速度|XPHB}。"
+						"当野兽浸入水中时，它对没有{@variantrule 游泳速度|XPHB}且浸入水中的生物进行攻击检定时具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
@@ -38419,34 +39187,6 @@
 			]
 		}
 	],
-	"variantrule": [
-		{
-			"ENG_name": "Grievous Wound",
-			"name": "重伤",
-			"source": "GrimHollowPG24",
-			"page": 47,
-			"ruleType": "O",
-			"entries": [
-				{
-					"ENG_name": "Wounds in Grim Hollow",
-					"name": "鬼魅幽谷的伤口",
-					"type": "entries",
-					"entries": [
-						"重伤会施加于那些生命值将降至0{@variantrule 生命值|XPHB}的角色，但他们选择获得一个缠留伤口。这些伤口会一直存在，直到角色进行{@variantrule 长休|XPHB}（见下方休息）并由医师或受过{@skill 医药|XPHB}训练的人进行治疗。",
-						"永久创伤发生在生物遭受多次重伤时，或当角色死亡并被复活时。永久创伤的挑战可以通过某些魔法物品或义肢来抵消。"
-					]
-				},
-				{
-					"ENG_name": "Rests in Grim Hollow",
-					"name": "鬼魅幽谷中的休息",
-					"type": "entries",
-					"entries": [
-						"鬼魅幽谷的黑暗奇幻氛围需要对{@variantrule 短休|XPHB|短}和{@variantrule 长休|XPHB|长休}的效应进行变化。重伤可以通过进行一次{@variantrule 长休|XPHB}来治愈，但在鬼魅幽谷中的休息需要在完全安全的环境中休息32小时。"
-					]
-				}
-			]
-		}
-	],
 	"table": [
 		{
 			"ENG_name": "Unstable Form",
@@ -38578,7 +39318,7 @@
 					"",
 					"",
 					"",
-					"你的身体系统被强化。你在{@variantrule 优势|XPHB}上具有{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}。"
+					"你的身体系统被强化。你在{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}上具有{@variantrule 优势|XPHB}。"
 				]
 			]
 		}
@@ -38755,7 +39495,7 @@
 						"邪魔",
 						"鬼婆",
 						"巫妖",
-						"狼人",
+						"兽化人",
 						"泥怪",
 						"原初语",
 						"炽天使",
@@ -39062,7 +39802,7 @@
 											"page": 11,
 											"id": "00e",
 											"entries": [
-												"你身体物理特性的唯一限制是，如果没有选择相应的特质，特性不能复制任何传承特质的效果，并且如果没有特质来涵盖这些增益，物理特性也不能创造增益。例如，你可以轻松地将你的格鲁吉尔人角色描述为肌肉异常发达，或者创造一个全身覆盖着浓密体毛的沃尔文角色，这些体毛暴露了他们的熊人传承。但这些外观效应不会影响你的护甲等级，除非你也选择了{@optfeature 被保护的水井|GrimHollowPG24}特质。（本节的其余部分将更多讨论{@book 传承特质|GrimHollowPG24|2|传承特质}，这些特质将在本章末尾详细说明。）",
+												"你身体物理特性的唯一限制是，如果没有选择相应的特质，特性不能复制任何传承特质的效果，并且如果没有特质来涵盖这些增益，物理特性也不能创造增益。例如，你可以轻松地将你的格鲁吉尔人角色描述为肌肉异常发达，或者创造一个全身覆盖着浓密体毛的沃尔文角色，这些体毛暴露了他们的熊人传承。但这些外观效应不会影响你的护甲等级，除非你也选择了{@optfeature 良好防护|GrimHollowPG24}特质。（本节的其余部分将更多讨论{@book 传承特质|GrimHollowPG24|2|传承特质}，这些特质将在本章末尾详细说明。）",
 												"如果你从诡秘传承中创造一个角色，某些传承的独特性质让你可以更自由地塑造角色的物理特性和形态。你可以询问GM关于创造一个拥有额外护甲的被诅咒角色，或一条你可以像使用护甲和手一样使用的尾击。但额外的附肢不会让你更容易攀爬或载重更多装备，除非你还选择了{@optfeature 攀爬工具|GrimHollowPG24}或{@optfeature 强力构筑|GrimHollowPG24}特质，并将这些特质的效应描述为来自你的额外护甲或尾击。",
 												"同样，无论有多少额外的附肢都不会赋予你进行额外攻击的先天能力，因为没有传承特质提供这种增益。不过，你可以随意将你从职业特性中获得的多次攻击描述为以任何你喜欢的方式利用你的额外护甲或尾击。",
 												{
@@ -39269,7 +40009,7 @@
 									"id": "086",
 									"entries": [
 										"除了赋予你施放戏法或法术能力的特质外，大多数传承特质不会具体说明某个特质是自然的还是魔法的。这给了你自由决定该特质如何塑造你的角色的权利。",
-										"拥有{@optfeature 伤害抗性|GrimHollowPG24}特质的矮人可能具备天生的坚韧，使它们能够抵抗毒素伤害，而拥有该特质的龙裔则继承了龙族血脉先祖的遗赠，保护它们免受火焰伤害。一个诅咒使身体异常强壮的半血裔角色，其{@optfeature 被保护的水井|GrimHollowPG24}特质有完美的物理解释。但一个看似体格正常的半身人可能会选择同样的特质来代表某种超自然的恢复力。",
+										"拥有{@optfeature 伤害抗性|GrimHollowPG24}特质的矮人可能具备天生的坚韧，使它们能够抵抗毒素伤害，而拥有该特质的龙裔则继承了龙族血脉先祖的遗赠，保护它们免受火焰伤害。一个诅咒使身体异常强壮的半血裔角色，其{@optfeature 良好防护|GrimHollowPG24}特质有完美的物理解释。但一个看似体格正常的半身人可能会选择同样的特质来代表某种超自然的恢复力。",
 										"即便是那些专门专注于防御魔法效应的特质，例如{@optfeature 唤醒心灵|GrimHollowPG24}或{@optfeature 魔法要塞|GrimHollowPG24}，也可能源自寻常，代表一种天生坚韧或足够强大以与魔法互动的天赋。",
 										"即使你决定角色的部分或所有特质是魔法起源，这些特质仍是你内在且自然的一部分，由你的身体、精神和灵性力量驱动。因此，你赋予魔法起源的特质无法被{@spell 解除魔法|XPHB}及类似效应解除，也不受魔法死区、狂野魔法区、{@spell 反魔法场|XPHB}法术等影响。"
 									]
@@ -39339,7 +40079,7 @@
 												"{@optfeature 刚毅|GrimHollowPG24} → 额外刚毅",
 												"{@optfeature 未受抑制|GrimHollowPG24} → 自由脱身",
 												"{@optfeature 武器熟练|GrimHollowPG24} → 武器专家",
-												"{@optfeature 被保护的水井|GrimHollowPG24} → 安全感掩护"
+												"{@optfeature 良好防护|GrimHollowPG24} → 安全感掩护"
 											]
 										}
 									]
@@ -39364,7 +40104,7 @@
 												"{@optfeature 司机|GrimHollowPG24} → 非凡司机",
 												"{@optfeature 环境警觉|GrimHollowPG24} → 自适应警觉",
 												"{@optfeature 以太消逝|GrimHollowPG24} → 以太专注",
-												"{@optfeature 即使在睡眠术中|GrimHollowPG24} → 沉睡守卫",
+												"{@optfeature 即使在睡眠中|GrimHollowPG24} → 沉睡守卫",
 												"{@optfeature 匿影无踪|GrimHollowPG24} → 长隐",
 												"{@optfeature 轻捷步伐|GrimHollowPG24} → 共享迅捷",
 												"{@optfeature 援手|GrimHollowPG24} → 乐于助人战术†",
@@ -40628,7 +41368,7 @@
 									"columns": 3,
 									"items": [
 										"{@background 奥古斯丁的特工|GrimHollowPG24}",
-										"{@background 古董商|GrimHollowPG24}",
+										"{@background 古物学者|GrimHollowPG24}",
 										"{@background 野兽猎人|GrimHollowPG24}",
 										"{@background 乞丐|GrimHollowPG24}",
 										"{@background 章节骑士|GrimHollowPG24}",
@@ -40637,7 +41377,7 @@
 										"{@background 特使|GrimHollowPG24}",
 										"{@background 刽子手|GrimHollowPG24}",
 										"{@background 探险家|GrimHollowPG24}",
-										"{@background 灭虫者|GrimHollowPG24}",
+										"{@background 驱魔人|GrimHollowPG24}",
 										"{@background 妖精-受祝福|GrimHollowPG24}",
 										"{@background 自由剑舞佣兵|GrimHollowPG24}",
 										"{@background 异端|GrimHollowPG24}",
@@ -40862,7 +41602,7 @@
 											"entries": [
 												{
 													"ENG_name": "Armor-Piercing",
-													"name": "护甲-穿刺",
+													"name": "穿甲",
 													"type": "entries",
 													"id": "4c6",
 													"entries": [
@@ -40916,11 +41656,11 @@
 												},
 												{
 													"ENG_name": "Magazine",
-													"name": "杂志",
+													"name": "弹匣",
 													"type": "entries",
 													"id": "4cc",
 													"entries": [
-														"具有杂志属性的武器还具有一个数值和一个弹药类型。该武器持有该数量和类型的弹药，你可以在需要重新装填武器之前消耗它们。作为一个{@variantrule 附赠动作|XPHB}，你可以移除一个{@item 杂志|GrimHollowPG24}，然后用一个新的{@item 杂志|GrimHollowPG24}重新装填。一个杂志武器附带两个空的杂志，包含在武器的成本和重量中。一个额外的空杂志对于一个杂志武器的成本是25GP。{@itemProperty LD|XPHB|装填}一个空的杂志需要1分钟。"
+														"具有杂志属性的武器还具有一个数值和一个弹药类型。该武器持有该数量和类型的弹药，你可以在需要重新装填武器之前消耗它们。作为一个{@variantrule 附赠动作|XPHB}，你可以移除一个{@item 弹匣|GrimHollowPG24}，然后用一个新的{@item 弹匣|GrimHollowPG24}重新装填。一个杂志武器附带两个空的杂志，包含在武器的成本和重量中。一个额外的空杂志对于一个杂志武器的成本是25GP。{@itemProperty LD|XPHB|装填}一个空的杂志需要1分钟。"
 													]
 												},
 												{
@@ -40959,7 +41699,7 @@
 											"entries": [
 												{
 													"ENG_name": "Brutal",
-													"name": "野蛮",
+													"name": "蛮横",
 													"type": "entries",
 													"id": "4d0",
 													"entries": [
@@ -40997,7 +41737,7 @@
 												},
 												{
 													"ENG_name": "Returning",
-													"name": "回旋",
+													"name": "回力",
 													"type": "entries",
 													"id": "4d4",
 													"entries": [
@@ -41010,7 +41750,7 @@
 													"type": "entries",
 													"id": "4d5",
 													"entries": [
-														"散射术武器可以同时重创多个敌人。当你使用攻击动作并以散射术武器命中一个生物时，从目标的空间（如果该生物是大型或更大体型，则从其占据的一个方格）测量武器的散射范围。除原始目标外，落入武器散射范围内的其他生物会受到等同于1+你的敏捷调整值（最低为2）的伤害。此伤害类型与你对原始目标造成的伤害类型相同。"
+														"散射武器可以同时重创多个敌人。当你使用攻击动作并以散射武器命中一个生物时，从目标的空间（如果该生物是大型或更大体型，则从其占据的一个方格）测量武器的散射范围。除原始目标外，落入武器散射范围内的其他生物会受到等同于1+你的敏捷调整值（最低为2）的伤害。此伤害类型与你对原始目标造成的伤害类型相同。"
 													]
 												},
 												{
@@ -41119,7 +41859,7 @@
 											"entries": [
 												{
 													"ENG_name": "Armor-Piercing",
-													"name": "护甲-穿刺",
+													"name": "穿甲",
 													"type": "entries",
 													"id": "4df",
 													"entries": [
@@ -41137,7 +41877,7 @@
 												},
 												{
 													"ENG_name": "Brutal",
-													"name": "野蛮",
+													"name": "蛮横",
 													"type": "entries",
 													"id": "4e1",
 													"entries": [
@@ -41294,7 +42034,7 @@
 											"1/20 磅"
 										],
 										[
-											"{@item 塔楼盾牌|GrimHollowPG24}",
+											"{@item 塔盾|GrimHollowPG24}",
 											"200 GP",
 											"50 磅。"
 										],
@@ -41339,25 +42079,25 @@
 									],
 									"rows": [
 										[
-											"{@item 捕手|GrimHollowPG24}",
+											"{@item 擒人叉|GrimHollowPG24}",
 											"{@dice 1d6} 穿刺",
-											"长柄*，{@itemProperty R|XPHB|触及}，{@itemProperty 2H|XPHB|双手}",
-											"纠缠",
+											"{@itemProperty Haft|GrimHollowPG24|长柄}*, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 纠缠|GrimHollowPG24}",
 											"5 磅",
 											"500GP"
 										],
 										[
 											"{@item 骑兵链枷|GrimHollowPG24}",
 											"{@dice 1d8} 钝击",
-											"动量*（{@dice 1d12}）",
-											"迅捷",
+											"{@itemProperty Mom|GrimHollowPG24|动量}* ({@dice 1d12})",
+											"{@itemMastery 迅捷|GrimHollowPG24}",
 											"3 磅",
 											"500GP"
 										],
 										[
 											"{@item 骑兵锤|GrimHollowPG24}",
 											"{@dice 1d8} 钝击",
-											"护甲-穿刺*, 动量* ({@dice 1d12})",
+											"{@itemProperty AP|GrimHollowPG24|穿甲}*, {@itemProperty Mom|GrimHollowPG24|动量}* ({@dice 1d12})",
 											"{@itemMastery 缓速}",
 											"3 磅",
 											"500GP"
@@ -41365,16 +42105,16 @@
 										[
 											"{@item 骑兵精选|GrimHollowPG24}",
 											"{@dice 1d8} 穿刺",
-											"护甲-穿刺*, 动量* ({@dice 1d12})",
+											"{@itemProperty AP|GrimHollowPG24|穿甲}*, {@itemProperty Mom|GrimHollowPG24|动量}* ({@dice 1d12})",
 											"{@itemMastery 削弱}",
 											"3 磅",
 											"500GP"
 										],
 										[
-											"{@item 查克拉姆|GrimHollowPG24}",
+											"{@item 飞轮|GrimHollowPG24}",
 											"{@dice 1d6} 挥砍",
 											"{@itemProperty F|XPHB|灵巧}, {@itemProperty L|XPHB|光亮术}, {@itemProperty T|XPHB|投掷} (范围 30/120)",
-											"回旋",
+											"{@itemMastery 回力|GrimHollowPG24}",
 											"1 磅",
 											"500GP"
 										],
@@ -41382,23 +42122,23 @@
 											"{@item 克莱莫|GrimHollowPG24}",
 											"{@dice 2d6} 挥砍",
 											"{@itemProperty H|XPHB|重型}, {@itemProperty 2H|XPHB|双手}",
-											"野蛮",
+											"{@itemMastery 蛮横|GrimHollowPG24}",
 											"7 磅",
 											"500GP"
 										],
 										[
 											"{@item 双倍刀锋|GrimHollowPG24}",
 											"{@dice 1d6} 挥砍",
-											"双倍*, 动量* ({@dice 1d10}), {@itemProperty 2H|XPHB|双手}",
-											"赛特",
+											"{@itemProperty D|GrimHollowPG24|双倍}*, {@itemProperty Mom|GrimHollowPG24|动量}* ({@dice 1d10}), {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 赛特|GrimHollowPG24}",
 											"5 磅",
 											"500GP"
 										],
 										[
 											"{@item 双倍矛|GrimHollowPG24}",
 											"{@dice 1d6} 穿刺",
-											"双倍*, 动量* ({@dice 1d10}), {@itemProperty 2H|XPHB|双手}",
-											"赛特",
+											"{@itemProperty D|GrimHollowPG24|双倍}*, {@itemProperty Mom|GrimHollowPG24|动量}* ({@dice 1d10}), {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 赛特|GrimHollowPG24}",
 											"4 磅",
 											"500GP"
 										],
@@ -41406,39 +42146,39 @@
 											"{@item 精英刺剑|GrimHollowPG24}",
 											"{@dice 1d8} 穿刺",
 											"{@itemProperty F|XPHB|灵巧}",
-											"迅捷",
+											"{@itemMastery 迅捷|GrimHollowPG24}",
 											"2 磅",
 											"500GP"
 										],
 										[
 											"{@item 战斗链击|GrimHollowPG24}",
 											"{@dice 1d4} 钝击",
-											"双倍*, {@itemProperty F|XPHB|灵巧}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
-											"缴械",
+											"{@itemProperty D|GrimHollowPG24|双倍}*, {@itemProperty F|XPHB|灵巧}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 缴械|GrimHollowPG24}",
 											"3 磅",
 											"500GP"
 										],
 										[
 											"{@item 战斗链击，野蛮|GrimHollowPG24}",
 											"{@dice 1d6} 挥砍",
-											"双倍*, {@itemProperty F|XPHB|灵巧}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
-											"野蛮",
+											"{@itemProperty D|GrimHollowPG24|双倍}*, {@itemProperty F|XPHB|灵巧}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 蛮横|GrimHollowPG24}",
 											"6 磅",
 											"750 GP"
 										],
 										[
 											"{@item 战斗链击，钩爪|GrimHollowPG24}",
 											"{@dice 1d4} 钝击",
-											"伤害（穿刺）*，双倍*，{@itemProperty F|XPHB|灵巧}，{@itemProperty R|XPHB|触及}，{@itemProperty 2H|XPHB|双手}",
-											"纠缠",
+											"{@itemProperty Dam|GrimHollowPG24|伤害}（穿刺）*，{@itemProperty D|GrimHollowPG24|双倍}*，{@itemProperty F|XPHB|灵巧}，{@itemProperty R|XPHB|触及}，{@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 纠缠|GrimHollowPG24}",
 											"3 磅",
 											"500GP"
 										],
 										[
 											"{@item 战斗链击，镰刀|GrimHollowPG24}",
 											"{@dice 1d4} 钝击",
-											"伤害（挥砍）*，双倍*，{@itemProperty F|XPHB|灵巧}，{@itemProperty R|XPHB|触及}，{@itemProperty 2H|XPHB|双手}",
-											"纠缠",
+											"{@itemProperty Dam|GrimHollowPG24|伤害}（挥砍）*，{@itemProperty D|GrimHollowPG24|双倍}*，{@itemProperty F|XPHB|灵巧}，{@itemProperty R|XPHB|触及}，{@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 纠缠|GrimHollowPG24}",
 											"3 磅",
 											"500GP"
 										],
@@ -41446,23 +42186,23 @@
 											"{@item 角斗士捕网|GrimHollowPG24}",
 											"{@dice 1d6} 钝击",
 											"{@itemProperty T|XPHB|投掷} (范围 10/30)",
-											"纠缠",
+											"{@itemMastery 纠缠|GrimHollowPG24}",
 											"5 磅",
 											"350 gp"
 										],
 										[
 											"{@item 守护者长戟|GrimHollowPG24}",
 											"{@dice 1d10} 挥砍",
-											"伤害（穿刺）*，长柄*，{@itemProperty H|XPHB|重型}，{@itemProperty R|XPHB|触及}，{@itemProperty 2H|XPHB|双手}",
-											"赛特",
+											"{@itemProperty Dam|GrimHollowPG24|伤害}（穿刺）*, {@itemProperty Haft|GrimHollowPG24|长柄}*, {@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 赛特|GrimHollowPG24}",
 											"9 磅",
 											"750 GP"
 										],
 										[
 											"{@item 骑士骑枪|GrimHollowPG24}",
 											"{@dice 2d6} 穿刺",
-											"动量*（{@dice 2d10}），{@itemProperty R|XPHB|触及}，{@itemProperty 2H|XPHB|双手}（非骑乘状态）",
-											"赛特",
+											"{@itemProperty Mom|GrimHollowPG24|动量}* ({@dice 2d10}), {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手} (非骑乘状态)",
+											"{@itemMastery 赛特|GrimHollowPG24}",
 											"6 磅",
 											"500GP"
 										],
@@ -41470,39 +42210,39 @@
 											"{@item 骑士剑|GrimHollowPG24}",
 											"{@dice 1d8} 挥砍",
 											"{@itemProperty V|XPHB|多用} ({@dice 1d10})",
-											"防御",
+											"{@itemMastery 防御|GrimHollowPG24}",
 											"3 磅",
 											"750 GP"
 										],
 										[
 											"{@item 军用叉刺|GrimHollowPG24}",
 											"{@dice 2d6} 穿刺",
-											"长柄*, {@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
-											"缴械",
+											"{@itemProperty Haft|GrimHollowPG24|长柄}*, {@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 缴械|GrimHollowPG24}",
 											"8 磅",
 											"500GP"
 										],
 										[
-											"{@item 招架匕首|GrimHollowPG24}",
+											"{@item 格挡匕首|GrimHollowPG24}",
 											"{@dice 1d4} 穿刺",
 											"{@itemProperty F|XPHB|灵巧}, {@itemProperty L|XPHB|光亮术}, {@itemProperty T|XPHB|投掷} (射程 20/60)",
-											"缴械",
+											"{@itemMastery 缴械|GrimHollowPG24}",
 											"1 磅",
 											"350 gp"
 										],
 										[
 											"{@item 长柄武器|GrimHollowPG24}",
 											"{@dice 1d12} 穿刺",
-											"长柄*, {@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
-											"赛特",
+											"{@itemProperty Haft|GrimHollowPG24|长柄}*, {@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 赛特|GrimHollowPG24}",
 											"12 磅",
 											"500GP"
 										],
 										[
-											"{@item 拳匕|GrimHollowPG24}",
+											"{@item 拳刺|GrimHollowPG24}",
 											"{@dice 1d4} 穿刺",
-											"护甲-穿刺*, {@itemProperty F|XPHB|灵巧}, {@itemProperty L|XPHB|光亮术}",
-											"防御",
+											"{@itemProperty AP|GrimHollowPG24|穿甲}*, {@itemProperty F|XPHB|灵巧}, {@itemProperty L|XPHB|光亮术}",
+											"{@itemMastery 防御|GrimHollowPG24}",
 											"1 磅",
 											"300 GP"
 										],
@@ -41510,7 +42250,7 @@
 											"{@item 回旋木短棒|GrimHollowPG24}",
 											"{@dice 1d4} 钝击",
 											"{@itemProperty L|XPHB|光亮术}, {@itemProperty T|XPHB|投掷} (射程 20/60)",
-											"回旋",
+											"{@itemMastery 回力|GrimHollowPG24}",
 											"2 磅",
 											"300 GP"
 										],
@@ -41518,14 +42258,14 @@
 											"{@item 军刀|GrimHollowPG24}",
 											"{@dice 1d8} 挥砍",
 											"{@itemProperty F|XPHB|灵巧}",
-											"迅捷",
+											"{@itemMastery 迅捷|GrimHollowPG24}",
 											"2 磅",
 											"500GP"
 										],
 										[
 											"{@item 鞘装法杖|GrimHollowPG24}",
 											"{@dice 1d6} 钝击",
-											"双倍*, {@itemProperty V|XPHB|多用} ({@dice 1d8})",
+											"{@itemProperty D|GrimHollowPG24|双倍}*, {@itemProperty V|XPHB|多用} ({@dice 1d8})",
 											"{@itemMastery 失衡}",
 											"6 磅",
 											"500GP"
@@ -41534,23 +42274,23 @@
 											"{@item 侧柄警棍|GrimHollowPG24}",
 											"{@dice 1d4} 钝击",
 											"{@itemProperty F|XPHB|灵巧}, {@itemProperty L|XPHB|光亮术}",
-											"迅捷",
+											"{@itemMastery 迅捷|GrimHollowPG24}",
 											"2 磅",
 											"500GP"
 										],
 										[
 											"{@item 狂怒之斧|GrimHollowPG24}",
 											"{@dice 2d6} 挥砍",
-											"长柄*, {@itemProperty H|XPHB|重型}, 动量* ({@dice 2d8}), {@itemProperty 2H|XPHB|双手}",
-											"野蛮",
+											"{@itemProperty Haft|GrimHollowPG24|长柄}*, {@itemProperty H|XPHB|重型}, {@itemProperty Mom|GrimHollowPG24|动量}* ({@dice 2d8}), {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 蛮横|GrimHollowPG24}",
 											"12 磅",
 											"750 GP"
 										],
 										[
 											"{@item 愤怒巨锤|GrimHollowPG24}",
 											"{@dice 2d6} 钝击",
-											"长柄*, {@itemProperty H|XPHB|重型}, 动量* ({@dice 2d8}), {@itemProperty 2H|XPHB|双手}",
-											"野蛮",
+											"{@itemProperty Haft|GrimHollowPG24|长柄}*, {@itemProperty H|XPHB|重型}, {@itemProperty Mom|GrimHollowPG24|动量}* ({@dice 2d8}), {@itemProperty 2H|XPHB|双手}",
+											"{@itemMastery 蛮横|GrimHollowPG24}",
 											"15磅",
 											"750 GP"
 										]
@@ -41607,7 +42347,7 @@
 											"{@item 喇叭铳|GrimHollowPG24}",
 											"{@dice 2d6} 穿刺",
 											"{@itemProperty AF|XDMG|弹药} (范围 30/90; 纸张子弹), 黑火药, 笨重, {@itemProperty LD|XPHB|装填}, {@itemProperty 2H|XPHB|双手}",
-											"散射术（10尺）",
+											"散射（10尺）",
 											"10 磅",
 											"750 GP"
 										],
@@ -41615,7 +42355,7 @@
 											"{@item 喇叭铳，手持|GrimHollowPG24}",
 											"{@dice 2d4} 穿刺",
 											"{@itemProperty AF|XDMG|弹药} (范围 15/60; 纸张子弹), 黑火药, {@itemProperty LD|XPHB|装填}",
-											"散射术（5尺）",
+											"散射（5尺）",
 											"4 磅",
 											"500GP"
 										],
@@ -41639,15 +42379,15 @@
 											"{@item 龙手枪|GrimHollowPG24}",
 											"{@dice 2d4} 穿刺",
 											"{@itemProperty AF|XDMG|弹药} (范围 20; 龙之射击), 黑火药, {@itemProperty LD|XPHB|装填}",
-											"散射术（5尺）",
+											"散射（5尺）",
 											"4 磅",
 											"350 gp"
 										],
 										[
-											"{@item 龙步枪|GrimHollowPG24}",
+											"{@item 龙息步枪|GrimHollowPG24}",
 											"{@dice 2d6} 穿刺",
 											"{@itemProperty AF|XDMG|弹药} (范围 30; 龙之射击), 黑火药, {@itemProperty LD|XPHB|装填}",
-											"散射术（10尺）",
+											"散射（10尺）",
 											"4 磅",
 											"750 GP"
 										],
@@ -41655,7 +42395,7 @@
 											"{@item 火焰风箱|GrimHollowPG24}",
 											"{@dice 2d6} 火焰",
 											"{@itemProperty AF|XDMG|弹药} (范围 15; 风箱罐), 笨重, {@itemProperty LD|XPHB|装填}, 杂志 (20), {@itemProperty 2H|XPHB|双手}",
-											"散射术（10尺）",
+											"散射（10尺）",
 											"11 磅",
 											"750 GP"
 										],
@@ -41824,7 +42564,7 @@
 											"2 磅"
 										],
 										[
-											"{@item 杂志|GrimHollowPG24}",
+											"{@item 弹匣|GrimHollowPG24}",
 											"5GP",
 											"1 磅"
 										],
@@ -42087,7 +42827,7 @@
 										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GrimHollowPG24/Transformation/Lycanthrope.webp"
 									},
 									"credit": "Mikhail Palamarchuck",
-									"title": "{@charoption 狼人|GrimHollowPG24}",
+									"title": "{@charoption 兽化人|GrimHollowPG24}",
 									"maxHeight": 375,
 									"width": 850,
 									"height": 1044
@@ -45861,7 +46601,7 @@
 									"id": "7d4",
 									"entries": [
 										"自时间开始以来一直忍受着{@book 戈玛德劳格|GrimHollowPG24|8|戈玛德劳格与七英雄}的暴政，每个原初者都渴望摆脱他们的创造者。他们从一个意想不到的来源找到了机会：一个名叫肯提格恩的人和他的六个同伴。",
-										"{@book 伊尔哈拉|GrimHollowPG24|9|伊尔哈拉}说服了她的兄弟姊妹背叛他们的主人并将冒险者纳入庇护。莫拉克什和{@book 西特罗拉克|GrimHollowPG24|9|西特罗拉克}打造了能穿透戈玛德劳格血肉的强大魔法武器。{@book 伊尔哈拉|GrimHollowPG24|9|伊尔哈拉}为它们谱写了一首能让虹彩巨龙陷入睡眠术的歌曲。{@book 阿隆多|GrimHollowPG24|9|阿隆多}教授了它们能保住性命的魔艺，并告诉了它们如何打击戈玛德劳格的心脏。",
+										"{@book 伊尔哈拉|GrimHollowPG24|9|伊尔哈拉}说服了她的兄弟姊妹背叛他们的主人并将冒险者纳入庇护。莫拉克什和{@book 西特罗拉克|GrimHollowPG24|9|西特罗拉克}打造了能穿透戈玛德劳格血肉的强大魔法武器。{@book 伊尔哈拉|GrimHollowPG24|9|伊尔哈拉}为它们谱写了一首能让虹彩巨龙陷入睡眠的歌曲。{@book 阿隆多|GrimHollowPG24|9|阿隆多}教授了它们能保住性命的魔艺，并告诉了它们如何打击戈玛德劳格的心脏。",
 										"因此，肯提根和他的同伴们杀死了戈玛德劳格，并用他巨大的身体塑造了凡界。他的血肉化为大地，脊椎成为分隔埃萨里斯中心的山脉。他的鲜血化为冻结的海洋，心脏被投掷其中形成一座岛屿。至今仍能找到戈玛德劳格的鳞片碎片，它们已成为珍贵的宝石。世界便是如此形成的。",
 										"然而所有四名原初者都知道它们的始祖并未真正被摧毁，而只是处于冬眠术的沉睡状态。即便是现在，凡人们仍能从虹彩射线巨龙那里获得对元素的命令术。戈玛德劳格苏醒并在埃萨里斯制造复仇的那一天可能终将到来。原初者和凡人们不断寻求阻止此事发生。但随着冷焰的出现，虹彩射线巨龙的复生术似乎正日益临近。"
 									]
