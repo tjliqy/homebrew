@@ -1,0 +1,1963 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TotBC",
+				"abbreviation": "TotBC",
+				"full": "石化蜥蜴邪教神殿",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"version": "1.0.0",
+				"authors": [
+					"Kelsey Dionne"
+				],
+				"convertedBy": [
+					"Surge"
+				],
+				"targetSchema": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1600868694,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "03e14aa7f8"
+	},
+	"monster": [
+		{
+			"ENG_name": "Basilisk Hatchling",
+			"name": "石化蜥蜴幼蜥",
+			"source": "TotBC",
+			"page": 18,
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d6 + 10"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 12,
+			"dex": 8,
+			"con": 14,
+			"int": 2,
+			"wis": 8,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Petrifying Gaze",
+					"name": "石化凝视",
+					"entries": [
+						"如果一个生物在其回合开始时位于石化蜥蜴幼蜥30尺内，且双方都能看见彼此，若石化蜥蜴幼蜥未处于{@condition 失能}状态，它可以迫使该生物进行一次{@dc 12}的体质豁免。豁免失败，该生物的一条肢体将魔法般地化为石头（掷14来决定是哪条肢体，若该效应指定作用于已{@condition 石化}的肢体则重新掷骰）。若有一条或多条腿化为石头，该生物将陷入{@condition 倒地}状态，但仍可爬行。若有一条或多条手臂化为石头，该生物的攻击检定将具有劣势。",
+						"该生物必须在其下一回合结束时重复进行该豁免。豁免成功，此效应结束。豁免失败，此效应变为永久，持续24小时。",
+						"未被突袭的生物可以在其回合开始时移开视线，以免除该豁免。此时，该生物视为不能看见石化蜥蜴幼蜥，直至其下一回合开始时再选择是否移开视线。该生物在此期间看向石化蜥蜴幼蜥时，必须立即进行该豁免。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害，外加2（144）点毒素伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"entries": [
+					"石化蜥蜴幼蜥是一种蜿蜒爬行的铁锈红色怪物，长着锐利的黄眼睛和八条腿。它们尚未长到完全的体型与力量，但依然令人深感畏惧。",
+					"缓慢生长。石化蜥蜴幼蜥生长缓慢，以富含矿物的石头为食，约十年后才能达到成熟。它们的毒素与石化能力虽然依旧致命，却不如成年的石化蜥蜴那般强大。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/474x/b7/e2/0b/b7e20b5950899f9dfef9b8e401bff6c1--fantasy-beasts-basilisk.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Stone Shaman",
+			"name": "石萨满",
+			"source": "TotBC",
+			"page": 17,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 兽皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 11,
+			"con": 10,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"skill": {
+				"medicine": "+4",
+				"religion": "+4",
+				"stealth": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"原初语"
+			],
+			"cr": "1/4",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"石萨满是一名1级施法者。",
+						"其施法属性为感知（法术豁免DC {@dc 12}，法术攻击{@hit 4}命中）。石萨满准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell 灾祸术}",
+								"{@spell 致伤术}",
+								"{@spell 虔诚护盾}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Blessed By The Basilisk",
+					"name": "石化蜥蜴的祝福",
+					"entries": [
+						"石萨满可以选择在对抗任何石化蜥蜴的\"石化凝视\"特殊特质的豁免中直接视为成功。"
+					]
+				},
+				{
+					"ENG_name": "Mud Camouflage",
+					"name": "泥浆伪装",
+					"entries": [
+						"石萨满在石头、泥浆或森林地带中隐藏时，其敏捷（隐匿）检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 2}，触及5尺或射程20/60尺，单一目标。{@h}3（{@damage 1d6}）点穿刺伤害，或以双手进行近战攻击时造成4（{@damage 1d8}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"languageTags": [
+				"P"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"石化蜥蜴邪教徒，也被称为石战士和石萨满，会用白垩状的丛林泥浆涂抹全身，泥浆干涸后使他们呈现出石头般的样貌。",
+					"敬奉石化蜥蜴。石化蜥蜴邪教徒自幼被培养着将石化蜥蜴奉为神明。每年，石萨满都会从附近部落中选出一名新的孩童，该孩童将被交予石化蜥蜴神殿，终生作为石战士效力。",
+					"石化蜥蜴邪教徒将他们的一切资源都投入到照料、保护和饲养生活在神殿中的、体型矮小的石化蜥蜴上。一座神殿的实力，是以它拥有多少石化蜥蜴、能在部落间的战斗中动用多少石化蜥蜴来衡量的。",
+					"喂养石化蜥蜴。石战士每年会参与数次仪式性的战斗，胜者将成为石化蜥蜴的下一顿美餐。一些尤为受尊崇的战士在为邪教赢得大胜后会被化为石像。他们被陈列在神殿中，并在特别重要的仪式上被喂给石化蜥蜴。",
+					"石之信众。作为对神殿与神明奉献的回报，石化蜥蜴萨满获得了黑暗魔法的祝福以及对石化蜥蜴石化凝视的免疫。萨满光荣死去后，下葬时会怀抱着部落最伟大的圣物之一\u2014\u2014一枚石质石化蜥蜴蛋。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Stone Warrior",
+			"name": "石战士",
+			"source": "TotBC",
+			"page": 17,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 兽皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 11,
+			"con": 12,
+			"int": 8,
+			"wis": 11,
+			"cha": 8,
+			"skill": {
+				"stealth": "+3"
+			},
+			"passive": 10,
+			"languages": [
+				"原初语"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"ENG_name": "Mud Camouflage",
+					"name": "泥浆伪装",
+					"entries": [
+						"石战士在石头、泥浆或森林地带中隐藏时，其敏捷（隐匿）检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"如果石战士的至少一名盟友距离某生物5尺内，且该盟友未处于{@condition 失能}状态，则石战士对该生物的攻击检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 3}，触及5尺或射程20/60尺，单一目标。{@h}4（{@damage 1d6 + 1}）点穿刺伤害，或以双手进行近战攻击时造成5（{@damage 1d8 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"P"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"fluff": {
+				"entries": [
+					"石化蜥蜴邪教徒，也被称为石战士和石萨满，会用白垩状的丛林泥浆涂抹全身，泥浆干涸后使他们呈现出石头般的样貌。",
+					"敬奉石化蜥蜴。石化蜥蜴邪教徒自幼被培养着将石化蜥蜴奉为神明。每年，石萨满都会从附近部落中选出一名新的孩童，该孩童将被交予石化蜥蜴神殿，终生作为石战士效力。",
+					"石化蜥蜴邪教徒将他们的一切资源都投入到照料、保护和饲养生活在神殿中的、体型矮小的石化蜥蜴上。一座神殿的实力，是以它拥有多少石化蜥蜴、能在部落间的战斗中动用多少石化蜥蜴来衡量的。",
+					"喂养石化蜥蜴。石战士每年会参与数次仪式性的战斗，胜者将成为石化蜥蜴的下一顿美餐。一些尤为受尊崇的战士在为邪教赢得大胜后会被化为石像。他们被陈列在神殿中，并在特别重要的仪式上被喂给石化蜥蜴。",
+					"石之信众。作为对神殿与神明奉献的回报，石化蜥蜴萨满获得了黑暗魔法的祝福以及对石化蜥蜴石化凝视的免疫。萨满光荣死去后，下葬时会怀抱着部落最伟大的圣物之一\u2014\u2014一枚石质石化蜥蜴蛋。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Swarm of Fire Wasps",
+			"name": "火黄蜂群",
+			"source": "TotBC",
+			"page": 18,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20,
+				"fly": 20
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"senses": [
+				"盲视 10 尺"
+			],
+			"passive": 8,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing",
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Illumination",
+					"name": "照明",
+					"entries": [
+						"火黄蜂群发出明亮光芒，覆盖10尺半径，其外再延伸10尺的微光光照。"
+					]
+				},
+				{
+					"ENG_name": "Swarm",
+					"name": "集群",
+					"entries": [
+						"集群可以进驻另一生物身处的空间位置，反之亦然。而且集群可以通过任何足够一只微型昆虫通过的孔洞。集群无法恢复生命值或获得临时生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及0尺，集群空间内单一目标。{@h}9（244）点穿刺伤害外加9（244）点火焰伤害，若集群生命值等于或低于一半，则改为4（144）点穿刺伤害外加4（144）点火焰伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Illumination"
+			],
+			"senseTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"火黄蜂半透明的腹腔内闪烁着微小的火光。飞行时，它们如同一团移动的、愤怒的火花之云。",
+					"树中巢穴。火黄蜂会向树皮喷吐小幅爆燃的火焰，迅速在茂密的丛林树木中灼出蜿蜒的巢穴。在潮湿气候下，这些火花足以将湿润的木头烤熔，却不至于将其点燃。",
+					"领地意识。火黄蜂会成群攻击任何被其视为威胁其隐秘树巢的对象，无论该威胁是否出于故意。"
+				]
+			}
+		}
+	],
+	"adventure": [
+		{
+			"ENG_name": "Temple of the Basilisk Cult",
+			"name": "石化蜥蜴邪教神殿",
+			"id": "TotBC",
+			"source": "TotBC",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TotBC/TotBC-cover.webp"
+			},
+			"published": "2017-09-11",
+			"storyline": "",
+			"level": {
+				"start": 1,
+				"end": 1
+			},
+			"contents": [
+				{
+					"ENG_name": "Introduction",
+					"name": "简介",
+					"headers": [
+						"概要",
+						"背景",
+						"给GM的话",
+						"节奏/过渡"
+					]
+				},
+				{
+					"ENG_name": "Mivvin's Rest",
+					"name": "米文休憩地",
+					"headers": [
+						"营地",
+						"区域1：主营地",
+						"区域2：格蕾妮的帐篷",
+						"区域3：挖掘现场",
+						"区域4：深坑",
+						"区域5：石棺",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Campsite Overrun",
+					"name": "营地陷落",
+					"headers": [
+						"风中烟息",
+						"战后余波",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Recruitment",
+					"name": "招募",
+					"headers": [
+						"候选人一：杰里亚姆·格雷尔",
+						"候选人二：伊克珊德拉·韦尔南",
+						"候选人三：乌罗什的塔尔洪"
+					]
+				},
+				{
+					"ENG_name": "Into the Darkness",
+					"name": "深入黑暗",
+					"headers": [
+						"丛林",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Raging River",
+					"name": "湍急河流",
+					"headers": [
+						"接近神殿",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Crumbling Temple",
+					"name": "残破神殿",
+					"headers": [
+						"进入神殿",
+						"区域1：储藏室",
+						"区域2：雕像厅",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Bronze Arches",
+					"name": "青铜拱门",
+					"headers": [
+						"区域3：石化蜥蜴雕像",
+						"区域4：寝舍",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Rising Waters",
+					"name": "水位上涨",
+					"headers": [
+						"区域5：墓室",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Hatchling Grounds",
+					"name": "幼蜥孵化地",
+					"headers": [
+						"区域6：孵化场",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Betrayal",
+					"name": "背叛",
+					"headers": [
+						"熟悉的面孔",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Aftermath",
+					"name": "后续",
+					"headers": [
+						"追赶",
+						"返回营地",
+						"多余的石化蜥蜴蛋",
+						"未来的冒险引子"
+					]
+				},
+				{
+					"ENG_name": "Appendix A: Maps",
+					"name": "附录A：地图",
+					"headers": [
+						"米文休憩地",
+						"石化蜥蜴邪教神殿",
+						"VTT地图"
+					]
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "TotBC",
+			"source": "TotBC",
+			"data": [
+				{
+					"ENG_name": "Introduction",
+					"type": "section",
+					"name": "简介",
+					"id": "Introduction",
+					"entries": [
+						"{@i 石化蜥蜴邪教神殿}是一部入门冒险，适合四到五名玩家使用1级角色，以\"世界最伟大的角色扮演游戏\"第五版规则进行。",
+						{
+							"ENG_name": "Synopsis",
+							"type": "section",
+							"name": "概要",
+							"id": "Synopsis",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"队伍的起点是丛林中一处考古挖掘场兼营地，名为米文休憩地。",
+										"当一群邪教徒袭击米文休憩地、试图偷走一枚新近出土的石化蜥蜴蛋时，冒险正式开始。",
+										"通过其中一个冒险引子，PC们得知附近传闻有一座收容着这些邪教徒的神殿。这支石化蜥蜴邪教对营地构成了迫在眉睫的威胁。",
+										"角色可以选择一名NPC向导来帮助寻找通往神殿的道路。队伍途中可能迷路，并遭遇当地生物与险境。",
+										"在神殿内部，队伍发现邪教徒正在饲养石化蜥蜴幼蜥\u2014\u2014若不加以阻止，它们将长成成体！",
+										"其中一名NPC向导会在队伍离开神殿后与角色对峙，索要他们发现的财宝。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Background",
+							"type": "section",
+							"name": "背景",
+							"id": "Background",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"米文休憩地的考古学家们在遗址处发现了一座石化蜥蜴邪教神殿的废墟，目前正对其进行发掘。在冒险开始的那天早晨，学者们挖出了一具棺椁，里面装着一位衣着华贵者的遗骸，怀中紧抱着一枚已石化的石化蜥蜴蛋。",
+										"一群石化蜥蜴邪教徒一直在暗中监视这些考古学家。他们计划偷走这枚重见天日的蛋，将其带到附近的神殿中孵化。随后，他们会回来杀死这些亵渎了其圣地的学者。",
+										"数个阵营与个人出于各自的缘由想要这枚蛋。是否支持、支持谁的理由，由PC们自己决定。在游戏开始前，请每名角色确定自己为何身处米文休憩地。也许角色们正往来于文明世界、正逃避当局追捕，或正在寻找某个人、某件物品或某个秘密。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "A Word To The GM",
+							"type": "section",
+							"name": "给GM的话",
+							"id": "A Word To The GM",
+							"entries": [
+								"本冒险旨在做到{@b 少量准备}即可上手、{@b 自然讲述}即可主持。为此，我们对常规的冒险呈现方式做了一些重新思考。以下是你会看到的内容：",
+								{
+									"type": "list",
+									"items": [
+										"每次遭遇浓缩在一页内。使用项目符号列表。{@b 加粗}的关键词。",
+										"怪物与规则的在线超链接，便于快速查阅。",
+										"每只怪物和每名PC的可打印卡片，让你可以用一副卡组来主持遭遇。此方法的简短视频演示见{@link 这里|https://www.youtube.com/watch?v=wLmSUEbmk3w}",
+										"简短的房间与区域描述。没有冗长乏味的背景文字段落\u2014\u2014请自然地铺陈场景并按需润色。非遭遇房间仅作简要说明。再次强调：尽可按你所愿加以润色！",
+										"GM地图与不泄露关键信息的玩家版数字地图，供虚拟桌面使用。",
+										"特殊财宝发放物的可打印卡片。本冒险的简短视频演示见{@link 这里|https://www.youtube.com/watch?v=Jg1tL2iRuzI}。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Pacing/Transitions",
+							"type": "section",
+							"name": "节奏/过渡",
+							"id": "Pacing/Transitions",
+							"entries": [
+								"大多数场景都会给出一个戏剧性问题。一旦该问题得到解答，场景的张力便告消解。这就是你的提示：向场景末尾给出的{@b 过渡}推进\u2014\u2014即便那意味着概括叙述一场胜负已定的战斗的收尾，或者在玩家足智多谋的情况下干脆跳过战斗。让游戏不断迈向下一个挑战！",
+								"本冒险中，通常为长篇文学性朗读文本的房间描述被写得简短而信息明确。许多游戏主持人更喜欢用自己的话转述朗读文本，并依据其团队喜好的基调与细节程度来铺陈场景。{@b 发展}小节之前列出的任何内容，都可以按你喜欢的方式安全地展示给玩家。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mivvin's Rest",
+					"type": "section",
+					"name": "米文休憩地",
+					"id": "Mivvin's Rest",
+					"entries": [
+						"米文休憩地是丛林中的一处考古营地，距文明世界有数日路程。营地中住有约40名学者、探险者与商人。附近一条清澈的河流提供饮用水。近几年，它已成为深入丛林的探险者们青睐的前进基地。",
+						{
+							"ENG_name": "",
+							"type": "inset",
+							"name": "",
+							"entries": [
+								"请每名PC在米文休憩地地图（{@area 附录A|附录A：地图|x}）上标明自己所在的位置。"
+							]
+						},
+						{
+							"ENG_name": "The Campsite",
+							"type": "section",
+							"name": "营地",
+							"id": "The Campsite",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"{@b 丛林}从四面八方紧紧压迫而来。灼热的阳光与湿气令人难以忍受。",
+										"属于旅人、士兵与学者的{@b 帐篷}和营火散布在各处空地上。",
+										"古老的废墟与倾倒的石柱标示出曾矗立于此地的一座大型{@b 建筑群}的遗存。",
+										"三名被蚊虫叮咬的{@creature 警卫||警卫们}在营地中巡逻。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"八名{@creature 石战士|TotBC|石战士}（其中一人携带着一只{@creature 石化蜥蜴幼蜥|TotBC}，见附录B：新怪物）藏身于森林中。他们即将袭击营地。详情见\"营地陷落\"一节。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 1: Main Camp",
+							"type": "section",
+							"name": "区域1：主营地",
+							"id": "Area 1",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"几顶风霜斑驳的{@b 帐篷}环绕着一处营火。"
+									]
+								},
+								{
+									"type": "list",
+									"items": [
+										"几名年轻的{@b 学者}（守序中立{@creature 平民||平民}）围坐在火边做饭、掷骰子，讲述着丛林中的恐怖故事。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 2: Grenne's Tent",
+							"type": "section",
+							"name": "区域2：格蕾妮的帐篷",
+							"id": "Area 2",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"首席考古学家{@b 格蕾妮·雷斯金}正在她的帐篷里就着烛光检视文献与陶器碎片。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"{@b 格蕾妮·雷斯金}，守序中立人类{@creature 贵族}",
+										"{@i \"学者必须在自己的头脑中挖掘答案。\"}",
+										"{@i 外观。}身穿宽松的亚麻衣物，膝盖和肘部沾有泥痕。她的眼镜将双眼放大得异乎寻常。",
+										"{@i 行为。}思考时轻敲鼻尖。喃喃自语。",
+										"{@i 秘密。}渴望因一项里程碑式的考古发现而名留青史。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 3: Dig Site",
+							"type": "section",
+							"name": "区域3：挖掘现场",
+							"id": "Area 3",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"几根破碎的{@b 石柱}倾倒在斑驳的石铺地面上。",
+										"两座氧化的青铜{@b 拱门}依然矗立，门上雕刻着体型庞大、口吐分叉舌头的怪物。",
+										"四名疲惫不堪的{@b 学者}正在绳索标出的区域内挖掘。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 4: The Pit",
+							"type": "section",
+							"name": "区域4：深坑",
+							"id": "Area 4",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"地面裂开一个黑色的20尺深{@b 陷坑}。四周地面朝它急剧倾斜。任何移动到距其5尺范围内的对象都必须通过DC 13的敏捷豁免，否则跌入其中，受到{@damage 2d6}点钝击伤害。",
+										"坑底有一具腐朽的骷髅，紧抓着一瓶{@item 治疗药水}。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 5: The Sarcophagus",
+							"type": "section",
+							"name": "区域5：石棺",
+							"id": "Area 5",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"一口敞开的{@b 石棺}安放在一个5尺深的坑内，里面有一具骷髅。它戴着玉质头冠，怀中紧抱着一枚巨大的{@b 石蛋}。",
+										"两名{@b 学者}正在匆匆记录，并轻柔地刷去遗骸上的碎屑。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition",
+							"entries": [
+								"在角色确定各自的行动后，进入{@i 营地陷落}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Campsite Overrun",
+					"type": "section",
+					"name": "营地陷落",
+					"id": "Campsite Overrun",
+					"entries": [
+						{
+							"ENG_name": "Smoke On The Wind",
+							"type": "section",
+							"name": "风中烟息",
+							"id": "Smoke On The Wind",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"PC们突然听到营地西侧传来尖叫声。风中随即飘来{@b 浓烟}的气味。",
+										"{@area 1|区域1|u}中最靠西的灰色帐篷被一支穿透帐篷掷入的燃烧标枪点燃。"
+									]
+								},
+								{
+									"ENG_name": "Dramatic Question",
+									"type": "inset",
+									"name": "戏剧性问题",
+									"entries": [
+										"角色们能阻止石战士的袭击吗？"
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"五名{@creature 石战士|TotBC|石战士}（地图上标记为S）从森林中冲出，出现在{@area 1|区域1|u}。其中一人背上绑着一只大{@b 篮子}。每人都拿着一支未点燃的火把，并在第一轮中在{@b 营火}处将其点燃，掷入帐篷。",
+												"与此同时，三名{@creature 石战士|TotBC|石战士}从{@area 5|区域5|u}的森林中跳出。他们试图杀死学者并带着{@b 石蛋}逃走。",
+												"在战斗的{@b 第二轮}，位于{@area 1|区域1|u}、携带篮子的那名石战士会打开篮子，放出他的{@creature 石化蜥蜴幼蜥|TotBC}盟友。",
+												"被{@b 燃烧的火把}击中的帐篷会在{@dice 1d4}轮内烧毁。任何身处火焰中的对象每轮受到{@damage 1d6}点火焰伤害。",
+												"两名营地{@creature 警卫||警卫}于{@b 第三轮}抵达{@area 1|区域1|u}，另一名抵达{@area 5|区域5|u}。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"石战士们佩戴着沾满泥浆的玉饰与紫水晶饰品，总价值{@b 30 gp}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Aftermath",
+							"type": "section",
+							"name": "战后余波",
+							"id": "The Aftermath",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"几名幸存者看到石战士试图从{@area 5|区域5|u}的石棺中取走{@b 石蛋}。如果邪教徒得手，幸存者看到他们向北逃入丛林。",
+										"会说原初语的角色可以尝试DC 15的魅力（威吓）检定来{@b 审讯}一名被俘的石战士。该战士颂扬{@b 石化蜥蜴}之神，并称神殿一天比一天强大，除此之外拒绝合作。",
+										"{@b 格蕾妮·雷斯金}找到参与战斗的角色们，恳求他们帮助保护挖掘现场免遭再次袭击。使用以下一个或多个冒险引子："
+									]
+								},
+								{
+									"ENG_name": "Appeal to Reward",
+									"type": "entries",
+									"name": "报酬劝说",
+									"id": "Appeal to Reward",
+									"entries": [
+										"格蕾妮提出，若PC们寻回被偷走的石蛋，她将每人支付{@b 50 gp}；若石蛋仍在营地，则请他们找到并消灭这些战士，以防其再次袭击。"
+									]
+								},
+								{
+									"ENG_name": "Appeal to Heroism",
+									"type": "entries",
+									"name": "英雄劝说",
+									"id": "Appeal to Heroism",
+									"entries": [
+										"格蕾妮请求队伍找出制造这起袭击的团伙并为死者复仇，从而拯救营地免遭更多袭击。"
+									]
+								},
+								{
+									"ENG_name": "Appeal to Discovery",
+									"type": "entries",
+									"name": "发现劝说",
+									"id": "Appeal to Discovery",
+									"entries": [
+										"格蕾妮透露，她怀疑这枚石蛋是一枚石化蜥蜴蛋，而且流传着一个\"鬼故事\"：丛林深处潜伏着嗜血、崇拜石化蜥蜴的{@b 邪教}。查明真相并阻止进一步袭击刻不容缓。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 2",
+							"entries": [
+								"前往{@i 招募}一节；如果PC们不想要向导，则直接进入{@i 深入黑暗}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Recruitment",
+					"type": "section",
+					"name": "招募",
+					"id": "Recruitment",
+					"entries": [
+						"挖掘现场几名从袭击中幸存下来的人自告奋勇担任丛林向导。除非有充分的理由，否则他们不会与角色们分享自己的秘密。",
+						{
+							"ENG_name": "Dramatic Question",
+							"type": "inset",
+							"name": "戏剧性问题",
+							"entries": [
+								"队伍会雇用一名向导吗？"
+							]
+						},
+						{
+							"ENG_name": "Candidate One: Jeriam Grell",
+							"type": "entries",
+							"name": "候选人一：杰里亚姆·格雷尔",
+							"id": "Candidate One: Jeriam Grell",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"杰里亚姆对这片丛林区域并不熟悉，但他是一名能干的斥候。他能为导航和觅食的感知（生存）检定提供{@b 优势}。",
+										"杰里亚姆提出以{@b 15 gp}的报酬担任向导。若要他参与战斗，需另付{@b 20 gp}。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"{@b 杰里亚姆·格雷尔}，混乱善良半精灵{@creature 斥候}",
+										"{@i \"这里可不是你想迷路的地方。\"}",
+										"{@i 外观。}锐利的绿眼睛。头发中编着苔藓，耳朵上有一处V形缺口。",
+										"{@i 行为。}长时间默默凝视丛林，甚至在交谈中途也是如此。",
+										"{@i 秘密。}他曾在酒馆斗殴中杀死一名贵族，因耻辱而被放逐。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Candidate Two: Ixandra Vaernan",
+							"type": "entries",
+							"name": "候选人二：伊克珊德拉·韦尔南",
+							"id": "Candidate Two: Ixandra Vaernan",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"伊克珊德拉曾瞥见丛林中一座破败的神殿，位于向北一天行程之处。她的知识为导航的感知（生存）检定提供{@b 优势}。",
+										"她提出以{@b 10 gp}的报酬担任斥候，并要求获得检视所发现的任何魔法财宝的权利。她拒绝参与战斗。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"{@b 伊克珊德拉·韦尔南}，中立邪恶提夫林{@creature 间谍}",
+										"{@i \"我追求的正是知识。而丛林里藏着数不清的秘密。\"}",
+										"{@i 外观。}纤细卷曲的犄角。涂油的黑色皮革，散发着淡淡的焦糊味。",
+										"{@i 行为。}对她认为幼稚的问题冷嘲热讽。",
+										"{@i 秘密。}打算让角色们干脏活，然后偷走他们找到的一切魔法财宝。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Candidate Three: Tarhun of Urosh",
+							"type": "entries",
+							"name": "候选人三：乌罗什的塔尔洪",
+							"id": "Candidate Three: Tarhun of Urosh",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"尽管熟悉周边地区，塔尔洪却在荒野中横冲直撞。他为导航的感知（生存）检定带来{@b 劣势}。",
+										"塔尔洪提出{@b 免费}提供他的侦察与战斗服务，并表示他反正需要探索周边地区，而且喜欢战斗。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"{@b 乌罗什的塔尔洪}，守序邪恶龙裔{@creature 暴徒}",
+										"{@i \"战斗能让我忘掉这该死的热。\"}",
+										"{@i 外观。}蓝色鳞片与长长的发须。永恒的怒容。",
+										"{@i 行为。}咬紧牙关，鼻孔中喷出细小的电火花。",
+										"{@i 秘密。}他的主人命令他在丛林中寻找（或窃取）一件强大的神器。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Into the Darkness",
+					"type": "section",
+					"name": "深入黑暗",
+					"id": "Into the Darkness",
+					"entries": [
+						{
+							"ENG_name": "The Jungle",
+							"type": "section",
+							"name": "丛林",
+							"id": "The Jungle",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"盘结的{@b 树木}有着粗壮的根系，如海蛇般扎入泥土。{@b 酷热}灼人，{@b 昆虫}成群。",
+										"角色们可以尝试循着石战士的踪迹进入丛林。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 2",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"石化蜥蜴邪教神殿位于米文休憩地以北约一天正常速度行程之外。",
+												"每旅行{@b 半天}，为队伍{@b 导航}的角色必须成功通过一次DC 13的感知（生存）检定。检定失败意味着队伍迷路，必须为旅行时间再增加半天。",
+												"由于酷热，角色们每天必须消耗两份{@b 水粮}。他们可以通过一次DC 12的感知（生存）检定觅食取水，灌满水袋。见边栏。",
+												"每天上午和下午各有一次{@b 40%}概率的遭遇。夜间的概率为{@b 60%}。",
+												"遭遇请掷\"丛林遭遇\"表。如果角色们正在旅行，可以选择再结合一次\"丛林地点\"表的掷骰。"
+											]
+										},
+										{
+											"ENG_name": "Sidebar: Water",
+											"type": "inset",
+											"name": "边栏：水",
+											"entries": [
+												{
+													"type": "list",
+													"items": [
+														"炎热天气下，一名角色每天需要2加仑水。只喝下一半的角色必须通过{@b DC 15体质}豁免，否则在当天结束时承受一级{@b 力竭}。用水不足此量的角色自动承受两级力竭。",
+														"如果角色已有一级力竭，则其承受两级。"
+													]
+												}
+											]
+										},
+										{
+											"type": "table",
+											"colLabels": [
+												"D8",
+												"细节"
+											],
+											"colStyles": [
+												"text-align-left",
+												"text-align-left"
+											],
+											"rows": [
+												[
+													"1",
+													"{@dice 1d4}名{@creature 石战士|TotBC|石战士}（敌对）"
+												],
+												[
+													"2",
+													"{@creature 火黄蜂群|TotBC}（敌对）"
+												],
+												[
+													"3",
+													"{@creature 三角龙}（冷漠）"
+												],
+												[
+													"4",
+													"{@dice 1d6}具{@creature 骷髅||骷髅}（敌对）"
+												],
+												[
+													"5",
+													"{@dice 1d4}只{@creature 猿||猿}（冷漠）"
+												],
+												[
+													"6",
+													"{@creature 巨蟒蛇}（敌对）"
+												],
+												[
+													"7",
+													"{@creature 羽蛇}（友好）"
+												],
+												[
+													"8",
+													"2株{@creature 紫腐菌}（冷漠）"
+												]
+											],
+											"caption": "丛林遭遇"
+										},
+										{
+											"type": "table",
+											"colLabels": [
+												"D8",
+												"细节"
+											],
+											"colStyles": [
+												"text-align-left",
+												"text-align-left"
+											],
+											"rows": [
+												[
+													"1",
+													"20尺半径的流沙地。被动感知（察觉）DC 12即可发现，逃脱需DC 13力量豁免。{@dice 1d4}轮后开始溺水"
+												],
+												[
+													"2",
+													"林中空地上被石化的巨型蝎子"
+												],
+												[
+													"3",
+													"石阵巨石环内的废弃营地"
+												],
+												[
+													"4",
+													"树木之间的巨型蜘蛛网"
+												],
+												[
+													"5",
+													"30尺半径的{@creature 尖叫菌}菌落。若尖叫菌被触发，则掷{@i 丛林遭遇}表；遭遇于{@dice 1d4}轮后到来"
+												],
+												[
+													"6",
+													"浅而宽的河流，有30%的概率出现水蛭（每轮{@damage 1d4}点穿刺伤害）"
+												],
+												[
+													"7",
+													"半埋土中、覆满苔藓的雕像"
+												],
+												[
+													"8",
+													"一口盛满污秽红水的古井"
+												]
+											],
+											"caption": "丛林地点"
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"角色们能找到石化蜥蜴邪教神殿吗？"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 3",
+							"entries": [
+								"进入{@i 湍急河流}一节；如果队伍返回米文休憩地，则回到{@i 米文休憩地}一节。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Raging River",
+					"type": "section",
+					"name": "湍急河流",
+					"id": "Raging River",
+					"entries": [
+						{
+							"ENG_name": "Approaching the Temple",
+							"type": "section",
+							"name": "接近神殿",
+							"id": "Approaching the Temple",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"一座{@b 神殿}在树木间巍然耸现。它残破的墙壁上覆满浅浮雕，浮雕几乎已被岁月磨平。"
+									]
+								},
+								{
+									"type": "list",
+									"items": [
+										"一条宽阔的{@b 河流}在神殿前奔涌而过。一座以腐朽兽皮缝合而成的{@b 桥}吱呀作响，悬荡在水面上方10尺处。",
+										"{@b 河流}视为困难地形。水深20尺。在河中游泳需要通过DC 13的力量（运动）检定，否则角色在水中原地不动。",
+										"搜索{@b 岸边}并通过DC 13智力（调查）检定的PC会发现一只以空心芦苇捆扎而成的废弃{@b 木筏}。它的一侧被咬掉了一大块。它能为游泳的力量（运动）检定提供优势。",
+										"尝试过{@b 桥}的角色必须通过DC 15的敏捷（体操）检定，否则坠落。角色必须通过DC 13的敏捷豁免才能抓住{@b 边缘}而不落入河中。",
+										"两条{@creature 鳄鱼||鳄鱼}（地图上标记为C）潜伏在桥附近，伺机扑咬任何落水者。被动察觉为12或更高的角色能发现它们。"
+									]
+								},
+								{
+									"ENG_name": "Dramatic Question",
+									"type": "inset",
+									"name": "戏剧性问题",
+									"entries": [
+										"角色们能安全渡河吗？"
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 2",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"鳄鱼从水中{@b 跃出}，对悬挂在桥上的角色发动啮咬攻击。",
+												"鳄鱼会攻击任何进入水中的角色，但它们不会离开河流。",
+												"鳄鱼的生命值降至一半或以下时会{@b 逃离}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 4",
+							"entries": [
+								"进入{@i 残破神殿}一节；如果PC们返回米文休憩地，则回到{@i 米文休憩地}一节。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Crumbling Temple",
+					"type": "section",
+					"name": "残破神殿",
+					"id": "Crumbling Temple",
+					"entries": [
+						{
+							"ENG_name": "Entering the Temple",
+							"type": "section",
+							"name": "进入神殿",
+							"id": "Entering the Temple",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"巨大的树根穿透这座高耸的雕饰建筑群腐朽的{@b 石墙}。",
+										"华丽的拱门点缀着建筑外侧，但看不到任何窗户。",
+										"{@b 正面}敞开的拱道与陡峭的台阶显露出其后一间光线昏暗的房间。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 3",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"如果PC们{@b 隐秘}接近{@area 2|区域2 2|u}，他们必须成功通过一次DC 12的团体敏捷（隐匿）检定，否则内部的石战士会察觉到他们的存在。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 1: Store House",
+							"type": "section",
+							"name": "区域1：储藏室",
+							"id": "Area 1 2",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"这座圆形低矮的雕石建筑有一扇锈蚀的铁{@b 门}。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 4",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"这扇门可以用DC 15的力量检定强行破开，或用DC 12的敏捷检定开锁。",
+												"如果PC们发出巨大的{@b 响动}，就会让{@area 2|区域2 2|u}中的邪教徒察觉到他们的存在。邪教徒会藏进区域2的雕像之间，准备伏击队伍。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"室内存有足够的口粮和成桶的淡水，可供十人食用三天。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 2: Statue Room",
+							"type": "section",
+							"name": "区域2：雕像厅",
+							"id": "Area 2 2",
+							"entries": [
+								"陡峭的台阶通向这间狭窄的房间，房中立满石{@b 雕像}，雕的是工艺精湛、身着仪式华服、手持长矛的战士。",
+								{
+									"type": "list",
+									"items": [
+										"四支摇曳的壁灯提供着{@b 微光光照}，投下雕像闪烁的影子。",
+										"入口对面有一扇可滚动的玉门。",
+										"墙上的雕刻描绘着战士们在一头八条腿、短口吻的鳄形巨兽面前持矛互相搏杀的场景。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 5",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"六名{@creature 石战士|TotBC|石战士}（地图上标记为S）立在玉门前。他们正在举行仪式。",
+												"如果邪教徒察觉了队伍并得以{@b 躲藏}在雕像之间，被动察觉为12或更高的角色会发现他们，因而不会被突袭。",
+												"邪教徒一旦注意到角色，便会立即扑上前来攻击。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"队伍能在石战士手中幸存吗？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 3",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@creature 石战士|TotBC|石战士}会战斗至死。他们会躲在雕像后向\"敌方萨满\"投掷长矛，然后转入近战。",
+												"雕像提供{@b 半身掩护}。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"每名石战士都携带几颗经过抛光的宝石，总价值{@b 30 gp}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Wall Carvings",
+									"type": "entries",
+									"name": "壁上雕刻",
+									"id": "The Wall Carvings",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"擅长智力（宗教）的角色认出墙上雕刻的是一场为赢取某种荣誉而进行的{@b 仪式性战斗}。",
+												"擅长智力（奥秘）的角色认出那只八足生物是一只石化蜥蜴。他们想起，若{@b 石化蜥蜴}与另一生物直视彼此，该生物可能会化为{@b 石头}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 5",
+							"entries": [
+								"前往{@area 3|区域3 2|u}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Bronze Arches",
+					"type": "section",
+					"name": "青铜拱门",
+					"id": "Bronze Arches",
+					"entries": [
+						{
+							"ENG_name": "Area 3: Basilisk Statue",
+							"type": "section",
+							"name": "区域3：石化蜥蜴雕像",
+							"id": "Area 3 2",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"台阶从雕像厅向上通到这里。",
+										"一尊青铜{@b 雕像}居于房间中央，雕的是一只口吐分叉舌头、八条腿的怪物。它的每只爪中都握着一枚蛋。",
+										"它的牙齿上挂着一面{@b 铜锣}和一支锣槌。",
+										"两道{@b 青铜拱门}分别通向相邻的房间。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 6",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"敲响铜锣没有任何特殊效果。",
+												"北墙上有一扇未上锁的{@b 暗门}，通向{@area 6|区域6|u}。角色可以通过搜索墙体并通过DC 20的智力（调查）检定来找到它。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"检查雕像并通过DC 15智力（调查）检定的PC会在其喉咙里发现一瓶{@item 治疗药水}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 4: Sleeping Quarters",
+							"type": "section",
+							"name": "区域4：寝舍",
+							"id": "Area 4 2",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"六张芦苇铺床沿地面排成一列。",
+										"房间后部的壁龛中嵌着一面大{@b 格栅}。栏条的间距有一掌宽。格栅中透出阵阵{@b 穿堂风}和{@b 秽物}的恶臭。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 7",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"格栅深10尺，下方有一个不见天日的{@b 坑室}，用来收集邪教徒和{@area 6|区域6 2|u}中石化蜥蜴的秽物。可以用DC 15的力量检定将其{@b 撬开}。通向区域6的格栅与此相同。",
+												"一只{@creature 凝胶方块}（地图上标记为G）栖息在秽物坑中。角色必须通过DC 15的感知（察觉）检定才能注意到它。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"角色们能穿过秽物坑吗？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 4",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@creature 凝胶方块}保持静止，直到有对象进入它的空间。它会对闯入的角色使用{@i 吞没}动作。",
+												"一旦被打扰，它便会追逐角色并发动攻击，直到被摧毁或被甩开。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"凝胶方块体内含有一本防腐蚀的日记，对学者或收藏家价值{@b 20 gp}，其中可辨认的条目如下：",
+												{
+													"type": "quote",
+													"entries": [
+														"..据说石化蜥蜴领地意识极强、难以驯服，但它们是致命的守卫。这些石战士为获得成为其食物的荣誉而战..."
+													]
+												},
+												{
+													"type": "quote",
+													"entries": [
+														"..我需要什么东西来转移它们的凝视，或者让它们失明。那是我逃脱自己命运的唯一办法..."
+													]
+												},
+												{
+													"type": "quote",
+													"entries": [
+														"它们真正的主人是萨满，是他们之中最受尊崇的人...他直视了那些野兽，而它们的凝视对他毫无作用！"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 6",
+							"entries": [
+								"如果角色们穿过秽物坑，前往{@area 6|区域6|u}；如果他们穿过东侧的青铜拱门，前往{@area 5|区域5 2|u}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Rising Waters",
+					"type": "section",
+					"name": "水位上涨",
+					"id": "Rising Waters",
+					"entries": [
+						{
+							"ENG_name": "Area 5: Burial Chamber",
+							"type": "section",
+							"name": "区域5：墓室",
+							"id": "Area 5 2",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"一道敞开的{@b 青铜拱门}通入此室。",
+										"室后部安放着一口封死的{@b 石棺}。石棺前有一座雕成石化蜥蜴面孔的浑浊{@b 水池}。",
+										"{@b 地板}上覆盖着碎石、河苇与淤泥。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 8",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"检查这扇门并通过DC 13智力（调查）检定的角色会注意到青铜拱门上的痕迹，这些痕迹表明曾有一扇门恰好能嵌入其中。",
+												"检查房间的PC们会在碎石中发现散落的人骨。",
+												"如果有角色打开石棺，会发现一具身着华服的干尸。它紧抱着一枚石质石化蜥蜴蛋。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Trap",
+									"type": "entries",
+									"name": "陷阱",
+									"id": "The Trap",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"石棺被{@b 打开}的一瞬间，一扇石{@b 门}会砸落在青铜拱门上，封死入口。成功通过DC 18力量检定即可将门{@b 抬起}，而抬着门的角色每轮都必须成功通过该检定才能让门保持抬起。",
+												"擅长盗贼工具者可通过DC 16的敏捷检定来{@b 拆除}门的机关，从而将{@b 抬起}门的DC降为13。",
+												"房间中央的{@b 水池}开始迅速漫水。它会在{@b 3轮}内将整个房间灌满。角色们可以屏息的轮数等于其体质调整值（至少为1），超过后便开始死亡。",
+												"石门每{@b 开启}一次，房间灌满所需的时间就增加一轮，因为水会向外涌出。",
+												"石门关闭后，四具{@creature 骷髅||骷髅}从碎石中站起并发动攻击。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"队伍能在陷阱中幸存吗？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 5",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@creature 骷髅||骷髅}会攻击最靠近石棺的对象。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"通过DC 13智力（调查）检定的角色会在地板的碎石中发现一枚价值{@b 25 gp}的{@b 蓝黄玉}。对收藏家或奥术师而言，这枚石化蜥蜴蛋价值{@b 100 gp}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 7",
+							"entries": [
+								"如果角色们穿过秽物坑，前往{@area 6|区域6|u}；否则返回{@area 3|区域3 2|u}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Hatchling Grounds",
+					"type": "section",
+					"name": "幼蜥孵化地",
+					"id": "Hatchling Grounds",
+					"entries": [
+						{
+							"ENG_name": "Area 6: The Hatchery",
+							"type": "section",
+							"name": "区域6：孵化场",
+							"id": "Area 6",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"{@b 树木}与巨大的树根破墙而出，穿透了此室的地板。",
+										"低矮台阶顶端的一座{@b 水池}占据着房间的中央。",
+										"房间后部安放着一座附魔的{@b 玉柜}，柜身中央有一处凹槽。",
+										"一名{@creature 石萨满|TotBC}（地图上标记为S）潜伏在树木之间。",
+										"三只嘶嘶作响的{@creature 石化蜥蜴幼蜥|TotBC|石化蜥蜴幼蜥}（地图上标记为B）在四处游荡。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 9",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"如果石战士带着从米文休憩地夺走的{@b 蛋}逃走了，它就被放在玉柜的凹槽中。它正摇晃着，蛋壳也开始开裂；若不将其从玉柜中取出，它将在{@dice 1d6}轮内{@b 孵化}，为战斗再添一只石化蜥蜴幼蜥。",
+												"这些石化蜥蜴幼蜥受过训练，不会对彼此使用石化凝视。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"角色们能击败萨满与石化蜥蜴吗？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 6",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@creature 石萨满|TotBC}待在树木间的半身掩护中，对与后方石化蜥蜴交战的参战者施放{@spell 灾祸术}。随后，他会以{@spell 致伤术}攻击任何靠近的人。",
+												"{@creature 石化蜥蜴幼蜥|TotBC|石化蜥蜴幼蜥}训练有素，会疾冲向PC们发起攻击。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"这座玉柜价值{@b 50 gp}。如果邪教徒从米文休憩地偷走了石化蜥蜴蛋，它就在玉柜中，对收藏家或奥术师价值{@b 100 gp}。石萨满的袋子里有一只小小的黄铜小瓶，那是一只{@item 无尽烟壶|dmg}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 8",
+							"entries": [
+								"队伍一旦走出神殿，即进入{@i 背叛}一节。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Betrayal",
+					"type": "section",
+					"name": "背叛",
+					"id": "Betrayal",
+					"entries": [
+						{
+							"ENG_name": "A Familiar Face",
+							"type": "section",
+							"name": "熟悉的面孔",
+							"id": "A Familiar Face",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"当角色们走出神殿时，一张{@b 熟悉的面孔}背叛了他们。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 10",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"从\"招募\"一节的邪恶NPC中选择一位（{@b 伊克珊德拉·韦尔南}或{@b 乌罗什的塔尔洪}任选其一）。如果该NPC没有随队伍同行，他或她正在距神殿入口20尺处等候。",
+												"该NPC拔出武器，要求PC们交出所有石化蜥蜴蛋和财宝。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"角色们能成功与背叛的NPC谈判，还是能将其击败？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Talk It Out",
+									"type": "entries",
+									"name": "谈判解决",
+									"id": "Talk It Out",
+									"entries": [
+										"{@i 冲突值降为0即成功。若升至5，则转入战斗一节。}",
+										{
+											"type": "list",
+											"items": [
+												"该NPC的初始{@b 冲突值为3}。",
+												"交出一件价值{@b 30 gp}或以上的物品，其冲突值降低1。",
+												"一次DC 16的魅力（{@b 游说}）检定使其冲突值降低1。检定失败则使其冲突值提高1。",
+												"对乌罗什的塔尔洪使用魅力（{@b 威吓}）会使他的冲突值提高1。",
+												"对伊克珊德拉任何失败的魅力（{@b 欺瞒}）检定都会使她的冲突值提高2。",
+												"DC 13的感知（{@b 洞悉}）可以揭示上述任一细节，或该NPC当前的冲突值。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 7",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"该NPC会攻击看起来携带财宝最多的角色，试图将其夺走，一旦抓到任何战利品便会逃走。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 9",
+							"entries": [
+								"进入{@i 后续}一节。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Aftermath",
+					"type": "section",
+					"name": "后续",
+					"id": "Aftermath",
+					"entries": [
+						{
+							"ENG_name": "Giving Chase",
+							"type": "section",
+							"name": "追赶",
+							"id": "Giving Chase",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"背叛的NPC一旦脱离视线，便以正常速度移动。如果角色们决定追赶并以{@b 快速}行进，或许能追上。",
+										"快速行进时敏捷（隐匿）检定具有劣势，感知（察觉）检定同样如此，因此如果该NPC听到队伍的动静，也许能{@b 躲藏}起来。",
+										"为所有在丛林中移动的队伍进行随机遭遇检定，规则与{@i 深入黑暗}一节相同。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Returning to Camp",
+							"type": "section",
+							"name": "返回营地",
+							"id": "Returning to Camp",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"角色们可能决定返回营地，归途与前往神殿的路途同样危险。使用与{@i 深入黑暗}一节相同的旅行规则。",
+										"如果PC们{@b 归还}被偷走的石化蜥蜴蛋，或提供邪教已被消灭的证据，格蕾妮会支付每人{@b 50 gp}。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Extra Basilisk Egg",
+							"type": "section",
+							"name": "多余的石化蜥蜴蛋",
+							"id": "The Extra Basilisk Egg",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"如果角色们成功带走了多余的石化蜥蜴蛋，他们可以选择将其卖掉（格蕾妮愿出100 gp购买）。他们甚至可以尝试将它孵化\u2014\u2014不过或许值得留意：石化蜥蜴幼蜥非常饥饿、难以控制，而且十分危险......"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Future Adventure Hooks",
+							"type": "section",
+							"name": "未来的冒险引子",
+							"id": "Future Adventure Hooks",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"一只{@creature 羽蛇}可能一直在观察着角色们，并认定他们有资格承担它手中的使命。",
+										"格蕾妮可能请求队伍带一封给大学的{@b 口信}返回文明世界，请求派遣一支新的守卫分队。",
+										"一位与格蕾妮共事的教授可能鉴于角色们的良好声誉而主动联系他们，请求他们协助应对一场日益壮大的{@b 威胁}......"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Appendix A: Maps",
+					"type": "section",
+					"name": "附录A：地图",
+					"id": "Appendix A: Maps",
+					"entries": [
+						{
+							"ENG_name": "Mivvin's Rest",
+							"type": "section",
+							"name": "米文休憩地",
+							"id": "Mivvin's Rest 2",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TotBC/Mivvins_Rest.webp"
+									},
+									"title": ""
+								}
+							]
+						},
+						{
+							"ENG_name": "The Temple of the Basilisk Cult",
+							"type": "section",
+							"name": "石化蜥蜴邪教神殿",
+							"id": "The Temple of the Basilisk Cult",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TotBC/The_Temple_of_the_Basilisk_Cult.webp"
+									},
+									"title": ""
+								}
+							]
+						},
+						{
+							"ENG_name": "VTT Maps",
+							"type": "section",
+							"name": "VTT地图",
+							"id": "VTT Maps",
+							"entries": [
+								{
+									"type": "homebrew",
+									"entries": [
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TotBC/Mivvins_Rest_VTT_24x40.webp"
+													},
+													"title": "米文休憩地"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TotBC/The_Temple_of_the_Basilisk_Cult_VTT_57x56.webp"
+													},
+													"title": "石化蜥蜴邪教神殿"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
