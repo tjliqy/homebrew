@@ -1,0 +1,2370 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KG",
+				"abbreviation": "KG",
+				"full": "海妖的赌局",
+				"url": "https://www.dmsguild.com/product/198297/Krakens-Gamble--a-Storm-Kings-Thunder-Adventure",
+				"version": "1",
+				"dateReleased": "2016-11-15",
+				"authors": [
+					"Eventyr Games"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"color": "e2f0d9"
+			}
+		],
+		"dependencies": {
+			"monster": [
+				"MM"
+			],
+			"monsterFluff": [
+				"MM"
+			]
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1680877195,
+		"dateLastModified": 1784405303,
+		"_dateLastModifiedHash": "b39fbf427a"
+	},
+	"item": [
+		{
+			"ENG_name": "Aboleth Mucous",
+			"name": "底栖魔鱼粘液",
+			"source": "KG",
+			"page": 13,
+			"rarity": "unknown (magic)",
+			"charges": 3,
+			"poison": true,
+			"entries": [
+				"一罐底栖魔鱼粘液含有三份剂量。当你摄入一份底栖魔鱼粘液时，必须通过{@dc 14}的体质豁免，否则染病{@dice 1d4}小时。染病期间，你只能在水下呼吸。自愿的生物可以选择豁免失败。"
+			],
+			"poisonTypes": [
+				"服用"
+			]
+		},
+		{
+			"ENG_name": "Golden Goose",
+			"name": "金鹅",
+			"source": "KG",
+			"page": 6,
+			"type": "$C",
+			"rarity": "none",
+			"value": 1000,
+			"entries": [
+				"大夫人赌场中用来下注的木制筹码。",
+				"一枚金鹅价值10金币。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "adventure/SKT/099-skt11-02.webp"
+						},
+						"title": "\"金鹅\"",
+						"width": 1000,
+						"height": 793
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Pincer Staff",
+			"name": "钳杖",
+			"source": "KG",
+			"page": 13,
+			"type": "M",
+			"rarity": "unknown",
+			"weight": 4,
+			"weaponCategory": "martial",
+			"property": [
+				"R",
+				"2H"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"entries": [
+				"这把钳杖需双手使用，触及10尺，造成{@damage 1d6}穿刺伤害。当你用钳杖命中中型或更小的生物时，你可以用附赠动作尝试{@action 擒抱}该生物。若你成功，该生物即被{@condition 受擒}，且在此{@action 擒抱}结束前，你无法用钳杖攻击另一个目标。"
+			]
+		},
+		{
+			"ENG_name": "Sticky Shield",
+			"name": "粘性盾牌",
+			"source": "KG",
+			"page": 13,
+			"type": "S",
+			"rarity": "unknown",
+			"weight": 6,
+			"ac": 2,
+			"entries": [
+				"这面盾牌似乎由生锈的金属、浮木和一些奇怪的黏藻制成。它如普通盾牌一样为AC提供+2加值，还可用来夹住敌人的武器。当生物的近战武器攻击未命中你时，你可以用反应以黏盾夹住该生物的武器。攻击者必须通过{@dc 11}的力量豁免，否则武器便粘在盾上。若武器持用者不能或不愿松手，在武器被粘住期间，其处于{@condition 受擒}状态。武器被粘住时无法使用。生物可以花费一个动作进行{@dc 11}的力量检定，成功即可将武器拔出。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Atalia Nimmeryn",
+			"name": "阿塔莉娅·尼梅琳",
+			"shortName": "阿塔莉娅",
+			"alias": [
+				"紫衣女士"
+			],
+			"source": "KG",
+			"page": 16,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"from": [
+						"配备法师护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 11",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 14,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"int": "+5",
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"deception": "+5",
+				"insight": "+3",
+				"sava|kg": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"地底通用语",
+				"心灵感应 30 尺"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"阿塔莉娅的固有施法能力为魅力（法术豁免{@dc 14}）。她可以固有施展以下法术，不需要任何成分："
+					],
+					"will": [
+						"{@spell 侦测思想}",
+						"{@spell 浮空术}",
+						"{@spell 法师护甲}（仅自身）"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 黯冰狱铠}",
+							"{@spell 疯狂冠冕}",
+							"{@spell 不谐低语}",
+							"{@spell 心灵遥控}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"阿塔莉娅射出三道魔能爆。"
+					]
+				},
+				{
+					"ENG_name": "Eldritch Blast",
+					"name": "魔能爆",
+					"entries": [
+						"{@atk rs} {@hit +6}命中，射程120尺，单一目标。{@h}8（{@damage 1d10+3}）力场伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"TP",
+				"U"
+			],
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			]
+		},
+		{
+			"ENG_name": "Dealer",
+			"name": "荷官",
+			"source": "KG",
+			"page": 6,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"insight": "+3",
+				"sava|kg": "+3"
+			},
+			"passive": 11,
+			"token": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			}
+		},
+		{
+			"ENG_name": "Hand of Yartar",
+			"name": "雅塔之手",
+			"source": "KG",
+			"page": 16,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 11,
+			"cha": 14,
+			"skill": {
+				"acrobatics": "+5",
+				"deception": "+4",
+				"perception": "+2",
+				"stealth": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"盗贼黑话"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"每回合一次，当雅塔之手成员用武器攻击命中目标且攻击检定具有优势，或目标位于雅塔之手成员的另一名未{@condition 失能}盟友5尺内且雅塔之手成员对此攻击检定没有劣势时，该攻击额外造成7（{@dice 2d6}）伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"雅塔之手成员用短剑发动一次攻击，并用匕首发动一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} {@hit +5}命中，触及5尺，单一目标。{@h}6（{@damage 1d6+3}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} {@hit +5}命中，触及5尺或射程20/60尺，单一目标。{@h}5（{@damage 1d4+3}）穿刺伤害。"
+					]
+				}
+			],
+			"token": {
+				"ENG_name": "Master Thief",
+				"name": "盗贼大师",
+				"source": "VGM"
+			},
+			"attachedItems": [
+				"匕首|phb",
+				"短剑|phb"
+			],
+			"traitTags": [
+				"偷袭"
+			],
+			"languageTags": [
+				"C",
+				"TC"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"ENG_name": "Khemed",
+			"name": "凯赫梅德",
+			"alias": [
+				"管家"
+			],
+			"isNpc": true,
+			"source": "KG",
+			"page": 3,
+			"_copy": {
+				"ENG_name": "Assassin",
+				"name": "刺客",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "刺客",
+						"with": "凯赫梅德",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "scalarAddHit",
+						"scalar": 1
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"save": {
+				"dex": "+7",
+				"int": "+5"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+4",
+				"perception": "+4",
+				"stealth": "+11"
+			},
+			"passive": 14,
+			"languages": [
+				"通用语、精灵语、盗贼黑话"
+			],
+			"token": {
+				"ENG_name": "Assassin",
+				"name": "刺客",
+				"source": "MM"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Lady Dezhia Rossolio",
+			"name": "黛琪雅·罗索里奥夫人",
+			"isNpc": true,
+			"source": "KG",
+			"page": 3,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "黛琪雅",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"token": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Lord Artan Rossolio",
+			"name": "阿尔坦·罗索里奥勋爵",
+			"isNpc": true,
+			"source": "KG",
+			"page": 2,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "阿尔坦",
+						"flags": "i"
+					}
+				}
+			},
+			"ac": [
+				10
+			],
+			"action": null,
+			"token": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Nelvin Storn",
+			"name": "内尔文·斯托恩",
+			"isNpc": true,
+			"source": "KG",
+			"page": 5,
+			"_copy": {
+				"ENG_name": "Bandit Captain",
+				"name": "匪帮队长",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "首领",
+						"with": "内尔文",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"token": {
+				"ENG_name": "Bandit Captain",
+				"name": "匪帮队长",
+				"source": "MM"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Oosith",
+			"name": "欧西思",
+			"isNpc": true,
+			"source": "KG",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Aboleth",
+				"name": "底栖魔鱼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "底栖魔鱼",
+						"with": "欧西思",
+						"flags": "i"
+					}
+				}
+			},
+			"token": {
+				"ENG_name": "Aboleth",
+				"name": "底栖魔鱼",
+				"source": "MM"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scimitar Sally",
+			"name": "弯刀萨莉",
+			"shortName": "萨利",
+			"source": "KG",
+			"page": 16,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 15,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"perception": "+3",
+				"stealth": "+5",
+				"acrobatics": "+5"
+			},
+			"passive": 13,
+			"languages": [
+				"通用语",
+				"矮人语",
+				"盗贼黑话"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"每回合一次，当萨莉用武器攻击命中目标且攻击检定具有优势，或目标位于萨莉的另一名未{@condition 失能}盟友5尺内且萨莉对此攻击检定没有劣势时，该攻击额外造成11（{@dice 3d6}）伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"萨莉用她的弯刀发动两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Scimitar",
+					"name": "弯刀",
+					"entries": [
+						"{@atk mw} {@hit +5}命中，触及5尺，单一目标。{@h}6（{@damage 1d6+3}）挥砍伤害，且目标必须进行{@dc 13}的体质豁免，豁免失败者受11（{@damage 3d6}）毒素伤害，成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Light Crossbow",
+					"name": "轻弩",
+					"entries": [
+						"{@atk rw} {@hit +5}命中，射程80/320尺，单一目标。{@h}7（{@damage 1d8 + 3}）穿刺伤害。"
+					]
+				}
+			],
+			"token": {
+				"ENG_name": "Master Thief",
+				"name": "盗贼大师",
+				"source": "VGM"
+			},
+			"attachedItems": [
+				"轻弩|phb",
+				"弯刀|phb"
+			],
+			"traitTags": [
+				"偷袭"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"TC"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Waterbaron Nestra Ruthiol",
+			"name": "水督奈丝特拉·鲁斯奥",
+			"isNpc": true,
+			"source": "KG",
+			"page": 4,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "奈丝特拉",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"token": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"ENG_name": "Khemed",
+			"name": "凯赫梅德",
+			"source": "KG",
+			"_copy": {
+				"ENG_name": "Assassin",
+				"name": "刺客",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Bring the Butler",
+									"type": "entries",
+									"name": "带上管家",
+									"page": 3,
+									"entries": [
+										"如果你觉得队伍在面对前方的挑战时可能需要帮手，或一路需要些指引，可以让{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}主动提出让{@creature 凯赫梅德|KG|凯赫梅德的}效劳。他可以充当向导并在战斗中出手相助。这位沉默的刺客不应在谋划或谈判中抛头露面，而应留在幕后，只在队伍快要招架不住时才出手。"
+									]
+								},
+								{
+									"type": "hr"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Lady Dezhia Rossolio",
+			"name": "黛琪雅·罗索里奥夫人",
+			"source": "KG",
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"罗索里奥家族的族长是一位约六十岁、轮廓分明的女性。她的白发挽成发髻，衣着时髦而实用。她思维敏锐、谈吐考究、举止严苛。{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}最厌恶愚蠢\u2014\u2014这正是{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}勉强被容忍的原因\u2014\u2014而敬重力量与狡黠。她的最终目标是牢牢守住家族的财富与传承。",
+								{
+									"ENG_name": "What Dezhia Knows",
+									"type": "entries",
+									"name": "黛琪雅知道的事",
+									"page": 3,
+									"entries": [
+										"{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}可以提供一些或许对队伍有帮助的信息：",
+										{
+											"type": "list",
+											"page": 3,
+											"items": [
+												"{@creature 水督奈丝特拉·鲁斯奥|KG}对{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦的}失踪非常关注，而{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}清楚地感觉到，{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}并不是最近几周唯一失踪的贵族。",
+												"如果角色们提到那位紫裙女子，{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅}会说那可能是\"雅塔之手\"\u2014\u2014那个全由女性组成的盗贼公会\u2014\u2014的成员。她不知道她们的据点在哪，但建议去\"藏污纳垢之处寻找凶悍的女子\"，或许能与之取得联系。",
+												"如果队伍不知怎么知道了{@adventure 大夫人|SKT|11|大夫人}，她可以告诉他们那里只接待富人（用{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}的话说，就是\"钱多脑子少的蠢货\"）。如有需要，可以说服{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}借给他们体面的衣服，帮队伍伪装成贵族。"
+											]
+										}
+									]
+								},
+								{
+									"type": "hr"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Lord Artan Rossolio",
+			"name": "阿尔坦·罗索里奥勋爵",
+			"source": "KG",
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"这位年轻勋爵金发蓝眼。二十出头、体态圆胖、被宠坏且向来要风得风的他，这辈子没吃过一天苦。他不算粗鲁傲慢，但对底层民众毫无概念，也几乎没有自理能力。他的数据为{@creature 阿尔坦·罗索里奥勋爵|KG|不持武器且不穿护甲的贵族数据}。",
+								{
+									"ENG_name": "Quick Background",
+									"type": "entries",
+									"name": "背景速览",
+									"page": 2,
+									"entries": [
+										{
+											"type": "list",
+											"page": 2,
+											"items": [
+												"罗索里奥家族靠建造驳船发家。",
+												"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦的}母亲、严厉的{@creature 黛琪雅·罗索里奥夫人|KG}是罗索里奥家族的族长。",
+												"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}有两个兄弟姐妹，马丁和乌尔扎莱斯，但他们通常在外出差。",
+												"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦的}父亲欧内斯特在{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}年幼时便已去世。",
+												"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}自认为是家族企业的\"财务主管\"，但实际上由于他反应迟钝，家族尽可能不让他参与生意。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "What Artan knows",
+									"type": "entries",
+									"name": "阿尔坦知道的事",
+									"page": 2,
+									"entries": [
+										"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦的}记忆十分模糊，但他还记得一些零碎的信息：",
+										{
+											"type": "list",
+											"page": 2,
+											"items": [
+												"他记得的最后一件事，是自己正在罗索里奥庄园里准备独自外出。遗憾的是，他不记得要去哪里。",
+												"他记得与金鹅有关的什么事，但怎么也想不起来。他不认为那是一只真的金鹅，尽管那也不会是这位年轻社交名流在雅塔派对上见过的最奇怪的东西。",
+												"当时肯定有一位美丽的女子在场。她有一头黑发，身穿华丽的紫色长裙。他不记得她的名字\u2014\u2014如果她说过的话。"
+											]
+										}
+									]
+								},
+								{
+									"type": "hr"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Nelvin Storn",
+			"name": "内尔文·斯托恩",
+			"source": "KG",
+			"_copy": {
+				"ENG_name": "Bandit Captain",
+				"name": "匪帮队长",
+				"source": "MM"
+			}
+		},
+		{
+			"ENG_name": "Oosith",
+			"name": "欧西思",
+			"source": "KG",
+			"_copy": {
+				"ENG_name": "Aboleth",
+				"name": "底栖魔鱼",
+				"source": "MM"
+			}
+		},
+		{
+			"ENG_name": "Scimitar Sally",
+			"name": "弯刀萨莉",
+			"source": "KG",
+			"entries": [
+				"这名老练的窃贼有一头暗金色头发、方方正正的下巴，以及一道从发际线划到上唇的可怕伤疤，让她的嘴角永远挂着怒容。",
+				{
+					"ENG_name": "What Sally Knows",
+					"type": "entries",
+					"name": "萨莉知道的事",
+					"page": 4,
+					"entries": [
+						"萨莉对眼下发生的事略知一二：",
+						{
+							"type": "list",
+							"page": 4,
+							"items": [
+								"雅塔之手与这些失踪事件无关，也不知道幕后主使是谁。他们怀疑有某个组织牵涉其中，但无法确定是散塔林会、竖琴手同盟还是第三方势力。",
+								"那位紫衣女子可能是{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}，一个身怀某种精神力量、经常出入{@adventure 大夫人|SKT|11|大夫人}的年轻女子。雅塔之手曾试图招募她，但没有成功。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Waterbaron Nestra Ruthiol",
+			"name": "水督奈丝特拉·鲁斯奥",
+			"source": "KG",
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM"
+			}
+		}
+	],
+	"variantrule": [
+		{
+			"ENG_name": "Kobold's Knuckles",
+			"name": "狗头人掷骰",
+			"source": "KG",
+			"page": 6,
+			"ruleType": "O",
+			"entries": [
+				"这个骰子游戏基本上是用骰子代替扑克牌的简化版二十一点。玩家与庄家对赌，而非互相对赌，而且可以多人同时游玩。",
+				{
+					"type": "list",
+					"page": 6,
+					"items": [
+						"每名玩家下注（最低下注额为1枚{@item 金鹅|KG}）。",
+						"每名玩家公开掷{@dice 1d6 + 1d4}。",
+						"荷官（你）公开掷{@dice 1d6}，并在屏风后掷{@dice 1d4}。",
+						"每名玩家可以依次选择继续加掷{@dice 1d4|d4}，直到不愿再掷为止。若总点数超过10，则输掉赌注。",
+						"所有玩家掷完各自的{@dice 1d4|d4}后，荷官亮出暗掷的{@dice d4}，并继续加掷{@dice 1d4|d4}，直到点数至少达到8。若结果超过10，所有仍在局中的玩家赢得其赌注的100%。",
+						"荷官掷完后，点数低于荷官的玩家输掉赌注，与荷官点数相同的玩家取回赌注，点数高于荷官的玩家赢得其赌注的100%。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sava",
+			"name": "萨瓦",
+			"source": "KG",
+			"page": 6,
+			"ruleType": "O",
+			"entries": [
+				"这种奇特的国际象棋变体是卓尔的发明。两名玩家使用形似卓尔战士、法师和女祭司的乌木棋子互相对弈。游戏的目标是摧毁对方的\"贵族家族\"。这是一场技巧、欺诈与洞察的较量。",
+				"一局萨瓦大约需要30分钟。每名玩家在开局前下注（最低下注额为5枚{@item 金鹅|KG|金鹅}）。为决定胜负，每名参与者进行三次掷骰：",
+				{
+					"type": "list",
+					"page": 6,
+					"items": [
+						"一次智力（{@skill 萨瓦|KG}）检定。",
+						"A Wisdom ({@skill 洞悉}) check.",
+						"A Charisma ({@skill 欺瞒}) check."
+					]
+				},
+				"比较这三次掷骰的总点数来决定胜负（点数相同则为平局）。赢家赢走输家的赌注。"
+			]
+		},
+		{
+			"ENG_name": "Underwater Combat",
+			"name": "水下战斗",
+			"source": "KG",
+			"page": 12,
+			"ruleType": "V",
+			"entries": [
+				"请注意，水 下战斗有特殊规则，见{@book 《玩家手册》第198页|PHB|9|水下战斗}。{@book 溺水规则见第183页|PHB|8|窒息}，但如果你想要更严苛的溺水规则，可以试试以下规则：",
+				{
+					"type": "list",
+					"page": 12,
+					"items": [
+						"你拥有等于你的体质调整值×10（最低为5）的\"呼吸点\"。",
+						"在你的回合开始时，如果你无法呼吸空气，则失去1点呼吸点；如果你能呼吸空气，则恢复等于5+你的体质调整值的呼吸点。",
+						"你每次采取动作、附赠动作或反应时，失去1点呼吸点。",
+						"当你受到重击时，你必须进行一次体质豁免以维持屏息。该DC等于10或你所受伤害的一半，取较高者。若豁免失败，你失去所有呼吸点。",
+						"当你要失去呼吸点却已没有呼吸点时，必须通过{@dc 10}的体质豁免，否则在你的下一回合开始时生命值降为0并开始死亡。每次在无法呼吸空气的情况下连续进行该豁免，其DC增加1。"
+					]
+				}
+			]
+		}
+	],
+	"skill": [
+		{
+			"ENG_name": "Sava",
+			"name": "萨瓦",
+			"source": "KG",
+			"page": 6,
+			"entries": [
+				"{@note 此技能代表你在萨瓦游戏中的熟练度，其规则见下文：}",
+				{
+					"ENG_name": "Sava",
+					"type": "statblock",
+					"tag": "variantrule",
+					"source": "KG",
+					"name": "萨瓦",
+					"page": 6
+				}
+			]
+		}
+	],
+	"adventure": [
+		{
+			"ENG_name": "Kraken's Gamble",
+			"name": "海妖的赌局",
+			"id": "KG",
+			"source": "KG",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/KG/Cover.webp"
+			},
+			"published": "2016-11-15",
+			"storyline": "风暴君王之雷霆",
+			"level": {
+				"start": 6,
+				"end": 8
+			},
+			"contents": [
+				{
+					"ENG_name": "Kraken's Gamble",
+					"name": "海妖的赌局",
+					"headers": [
+						"背景",
+						"概要",
+						"挂钩",
+						{
+							"header": "河流",
+							"depth": 1
+						},
+						{
+							"header": "旅店",
+							"depth": 1
+						},
+						"前往雅塔",
+						"雅塔",
+						{
+							"header": "简述",
+							"depth": 1
+						},
+						{
+							"header": "罗索里奥庄园",
+							"depth": 1
+						},
+						{
+							"header": "水督会堂",
+							"depth": 1
+						},
+						{
+							"header": "雅塔之手",
+							"depth": 1
+						},
+						{
+							"header": "大夫人",
+							"depth": 1
+						},
+						{
+							"header": "跟踪紫衣女士",
+							"depth": 1
+						},
+						"下水道",
+						{
+							"header": "S1. 控制室",
+							"depth": 1
+						},
+						{
+							"header": "S2. 食腐兽污水池",
+							"depth": 1
+						},
+						{
+							"header": "S3. 寇涛鱼人巢穴",
+							"depth": 1
+						},
+						{
+							"header": "S4. 应急泄水道",
+							"depth": 1
+						},
+						{
+							"header": "S5. 前往底栖魔鱼巢穴",
+							"depth": 1
+						},
+						{
+							"header": "底栖魔鱼巢穴",
+							"depth": 1
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Items",
+					"name": "物件",
+					"ordinal": {
+						"identifier": "A",
+						"type": "appendix"
+					}
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "KG",
+			"source": "KG",
+			"data": [
+				{
+					"ENG_name": "Cover & Introduction",
+					"type": "section",
+					"name": "封面与简介",
+					"page": 1,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/KG/Cover-Full.webp"
+							},
+							"title": "《海妖的赌局》封面",
+							"width": 900,
+							"height": 1273
+						},
+						{
+							"type": "hr"
+						},
+						"本冒险为{@adventure 风暴君王之雷霆|SKT}战役设计，旨在加强你的队伍与重要事件和NPC之间的联系。它适用于约6到8级的队伍，主要目的是让你的角色结识海妖会和{@adventure 大夫人赌场|SKT|11|大夫人}\u2014\u2014两者都在{@adventure 《风暴君王之雷霆》第11章|SKT|11}中占据重要地位。",
+						{
+							"ENG_name": "Background",
+							"type": "section",
+							"name": "背景",
+							"page": 1,
+							"entries": [
+								"海妖会一直企图用黏滑的触手攫住雅塔这座中等城市，如今采取大胆行动的时机已经成熟。几周前，海妖会派出了它最能干的特工之一\u2014\u2014{@creature 底栖魔鱼}{@creature 欧西思|KG}\u2014\u2014前来协助海妖会成员{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}夺取雅塔水督之位。",
+								"过去几周里，{@creature 欧西思|KG}、{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}和一位名叫{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}的年轻异能者绑架了多名年轻贵族。{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}邀请他们登上他的赌船，{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}在船上引诱他们，把他们带进{@creature 欧西思|KG|欧西思的}下水道巢穴。这只{@creature 底栖魔鱼}在这里让他们感染上一种阴险的疾病，把他们裹进防水的茧中，沿德萨林河顺流送往深水城。抵达目的地后，海妖会的其他成员会把这些贵族收集起来，公会以他们为人质要挟其家族，确保这些贵族家族背离现任{@creature 水督奈丝特拉·鲁斯奥|KG}。",
+								"当第三名遭绑架的贵族\u2014\u2014年轻的{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦勋爵}\u2014\u2014顺河漂向深水城途中被一群巨鸟截住时，我们的英雄们便卷入了海妖的黏滑触须之中。"
+							],
+							"id": "001"
+						},
+						{
+							"ENG_name": "Synopsis",
+							"type": "section",
+							"name": "概要",
+							"page": 1,
+							"entries": [
+								"在旅途中，队伍遇到一位被囚在茧中、从雅塔家中沿德萨林河顺流而下的年轻贵族。他们护送他回到雅塔，他的母亲雇佣他们查明是谁企图绑架他。",
+								"队伍的调查可能会把他们带进雅塔的后巷和酒馆，甚至带到水督会堂。最终，线索指向赌船{@adventure 大夫人|SKT|11|大夫人}。在那里，他们将见到一位愿意背叛同伙{@creature 欧西思|KG}的海妖会特工。她会带队伍深入下水道，他们必须闯过鱼人、软泥怪和重重陷阱，才能在天然栖息地中与一只奸诈的{@creature 底栖魔鱼|MM}正面交锋。"
+							],
+							"id": "002"
+						},
+						{
+							"ENG_name": "Hooks",
+							"type": "section",
+							"name": "挂钩",
+							"page": 1,
+							"entries": [
+								"这里我们将介绍两种开启本冒险的方式，两者都要求队伍位于德萨林谷附近某处。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "The River",
+											"type": "entries",
+											"name": "河流",
+											"page": 1,
+											"entries": [
+												"这个引子只在队伍途经雅塔以南的德萨林河附近时才适用。如果他们正在往返三布镇、金野或深水城的路上，或在沃姆福德、贝利亚德停留过，就可能来到这里。",
+												"在水边行进时，队伍可以看到一大群巨鸟在河面上空盘旋，反复俯冲而下，试图叼起什么东西。当队伍靠近那四只{@b 巨型海鸥}{@homebrew （使用{@creature 巨型天鹅|WBtW}的数据。）}时，他们能看清鸟儿们想从水里捞起的究竟是什么：一个6尺长、白色不透明的茧状容器。",
+												"鸟儿们大声尖叫着，一边把猎物拖出水面一边互相争夺，猎物落到河岸上。海鸥落下身来，啄击茧壳和彼此，都想第一个破壳。如果队伍攻击海鸥，鸟群会反击，但一旦受到严重威胁就会迅速飞走。",
+												"茧已被撕开，队伍可以清楚看到里面的东西：一个赤裸昏迷的男子，皮肤半透明而黏滑，身上覆着几英寸深的污水。{@dc 10}的智力（{@skill 自然}）检定可以揭示这个茧并非任何天然野兽的产物。它似乎由柔软的膜状组织构成，既不是网也不是织物。{@dc 20}的感知（{@skill 医药}）检定可以判断，这名男子奇怪的皮肤状况很可能是某种扭曲魔法或非自然疾病的产物。",
+												"年轻人很快恢复了意识，随着一阵颤动的呼吸苏醒过来，清澈的蓝眼睛扑闪着睁开。{@i \"我......我在哪儿？\"}他用沙哑破碎的声音喃喃道。他抬头望向队伍，年轻的脸上写满困惑。{@i \"你们......你们是谁？你们对我做了什么？\"}",
+												"如果队伍向他解释情况，年轻的{@creature 阿尔坦·罗索里奥勋爵|KG}显得更加困惑。{@i \"我记得的最后一件事......我还在雅塔......我不明白。\"}{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}接着把自己知道的事告诉了队伍（见\"{@adventure 阿尔坦·罗索里奥勋爵|KG|0|阿尔坦·罗索里奥勋爵}\"文本框），然后恳求他们借他一套衣服并帮他回家。前往\"{@adventure 前往雅塔|KG|0|前往雅塔}\"。"
+											],
+											"id": "005"
+										},
+										{
+											"ENG_name": "The Inn",
+											"type": "entries",
+											"name": "旅店",
+											"page": 2,
+											"entries": [
+												"另一种不同但类似的冒险开场方式适用于更广泛的情形：让冒险从一间旅店或类似的场所开始。地点可以是德萨林河一百英里范围内的任何地方。",
+												"当队伍正在休息或悠闲地消磨时光时，场所的大门被猛然推开。一个赤身裸体的男人大步走入，双手捂着私处。他的皮肤半透明而黏滑，湿漉漉的金发贴在额头上。年轻人踉跄着走向吧台，几乎倒在上面，嘶哑地喊道：{@i \"水......水......好心的先生，我必须......我必须喝水！\"}",
+												"目瞪口呆的酒保赶紧从酒桶里舀满一大杯水递给年轻人。酒杯几乎从这位赤裸男子黏滑的手中滑落，但他勉强接住，接着把水浇在自己头上。当水流过他赤裸的皮肤时，他长长地舒了一口气。",
+												"{@creature 阿尔坦·罗索里奥勋爵|KG}在队伍附近找了把椅子坐下，认出他们是冒险者后，立刻恳求他们帮忙。他说自己醒来时被困在某种茧里，巨鸟们正为他争斗。趁鸟群争夺猎物时他设法脱身，走了一英里才找到这里。这一路上他的皮肤灼烧发痒，他知道自己需要水。他不知道自己在哪儿，也不知道自己怎么会被困在茧里。{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}只记得很少的事情（见\"{@adventure 阿尔坦·罗索里奥勋爵|KG|0|阿尔坦·罗索里奥勋爵}\"文本框）。",
+												"与队伍交谈时，他每隔10分钟就往自己身上浇一次水，抱怨皮肤灼烧、离不开水。他绝望地恳求队伍帮他回家。前往\"{@adventure 前往雅塔|KG|0|前往雅塔}\"。"
+											],
+											"id": "006"
+										}
+									],
+									"id": "004"
+								},
+								{
+									"ENG_name": "Optional Hook",
+									"type": "inset",
+									"page": 2,
+									"name": "可选引子",
+									"entries": [
+										"如果你的队伍远在雅塔之外，但你仍想运行这个冒险，也还有办法。任何诸领主联盟的成员都可以联系队伍，代表雅塔的{@creature 水督奈丝特拉·鲁斯奥|KG}向他们求助\u2014\u2014水督需要一队干练的外乡人来调查一些离奇的失踪案。"
+									],
+									"id": "007"
+								},
+								{
+									"ENG_name": "Lord Artan Rossolio",
+									"type": "inset",
+									"page": 2,
+									"name": "阿尔坦·罗索里奥勋爵",
+									"entries": [
+										"这位年轻勋爵金发蓝眼。二十出头、体态圆胖、被宠坏且向来要风得风的他，这辈子没吃过一天苦。他不算粗鲁傲慢，但对底层民众毫无概念，也几乎没有自理能力。他的数据为{@creature 阿尔坦·罗索里奥勋爵|KG|不持武器且不穿护甲的贵族数据}。",
+										{
+											"ENG_name": "Quick Background",
+											"type": "entries",
+											"name": "背景速览",
+											"page": 2,
+											"entries": [
+												{
+													"type": "list",
+													"page": 2,
+													"items": [
+														"罗索里奥家族靠建造驳船发家。",
+														"阿尔坦的母亲、严厉的{@creature 黛琪雅·罗索里奥夫人|KG}是罗索里奥家族的族长。",
+														"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}有两个兄弟姐妹，马丁和乌尔扎莱斯，但他们通常在外出差。",
+														"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦的}父亲欧内斯特在{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}年幼时便已去世。",
+														"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}自认为是家族企业的\"财务主管\"，但实际上由于他反应迟钝，家族尽可能不让他参与生意。"
+													]
+												}
+											],
+											"id": "009"
+										},
+										{
+											"ENG_name": "What Artan knows",
+											"type": "entries",
+											"name": "阿尔坦知道的事",
+											"page": 2,
+											"entries": [
+												"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦的}记忆十分模糊，但他还记得一些零碎的信息：",
+												{
+													"type": "list",
+													"page": 2,
+													"items": [
+														"他记得的最后一件事，是自己正在罗索里奥庄园里准备独自外出。遗憾的是，他不记得要去哪里。",
+														"他记得与{@item 金鹅|KG}有关的什么事，但怎么也想不起来。他不认为那是一只真的金鹅，尽管那也不会是这位年轻社交名流在雅塔派对上见过的最奇怪的东西。",
+														"当时肯定有一位美丽的女子在场。她有一头黑发，身穿华丽的紫色长裙。他不记得她的名字\u2014\u2014如果她说过的话。"
+													]
+												}
+											],
+											"id": "00a"
+										}
+									],
+									"id": "008"
+								}
+							],
+							"id": "003"
+						},
+						{
+							"ENG_name": "Getting to Yartar",
+							"type": "section",
+							"name": "前往雅塔",
+							"page": 2,
+							"entries": [
+								"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}迫切希望得到队伍的帮助，因为他完全无法照顾自己，尤其是在眼下这副虚弱的状态下。他对队伍说道：",
+								"{@i \"你们必须尽快送我回雅塔。等我回到母亲身边，她会给你们这辈子都没见过的金子，\"}他的声音里满是绝望与恳切。{@i \"哦，天哪，她一定担心坏了！\"}",
+								"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}会接受队伍提出的任何要求，向他们保证母亲会支付报酬，只要他们肯带他回雅塔（他无法想象母亲可能不认这笔账）。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Aboleth's Touch",
+													"type": "entries",
+													"name": "底栖魔鱼之触",
+													"page": 2,
+													"entries": [
+														"事实证明，这位年轻贵族非常需要队伍的帮助：他被底栖魔鱼的触手所感染，必须每10分钟浇一次水，否则将受到{@damage 1d12}酸伤害。队伍必须在前往雅塔的路上想办法缓解这一问题，比如携带一个能装下{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}的大水容器，或灌满额外的{@item 水袋|PHB|水袋}（持续为{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}浇水每24小时要耗尽六只{@item 水袋|PHB|水袋}，且必须日夜不停地进行）。{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}乐观地认为他的家族能够出钱治好他的病。"
+													],
+													"id": "00e"
+												}
+											],
+											"id": "00d"
+										}
+									],
+									"id": "00c"
+								}
+							],
+							"id": "00b"
+						},
+						{
+							"ENG_name": "Yartar",
+							"type": "section",
+							"name": "雅塔",
+							"page": 3,
+							"entries": [
+								"雅塔城的描述见{@adventure 《风暴君王之雷霆》战役书第115页|SKT|3|雅塔}以及{@book 《剑湾冒险者指南》第57页|SCAG|2|雅塔}。在运行本冒险之前，建议尽可能多读一些关于雅塔的资料。其中一部分信息已在下节中概述，一些与本冒险特别相关的地点也将在后文中详细描述。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Brief Description",
+											"type": "entries",
+											"name": "简述",
+											"page": 3,
+											"entries": [
+												"简而言之，雅塔是一座坐落在德萨林河畔、设有城防的渔业与驳船建造小镇。它分为西岸的城堡区和东岸的城区，两者之间横跨一座坚固的石桥。这座繁荣拥挤的城镇是诸领主联盟的成员，民选领袖是{@creature 水督奈丝特拉·鲁斯奥|KG}。其他势力也活跃于雅塔：散塔林会、竖琴手同盟、本地全由女性组成的盗贼公会雅塔之手，以及城卫队雅塔之盾。"
+											],
+											"id": "011"
+										}
+									],
+									"id": "010"
+								},
+								{
+									"ENG_name": "The Rossolio Manor",
+									"type": "entries",
+									"name": "罗索里奥庄园",
+									"page": 3,
+									"entries": [
+										"{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦的}家是城郊的一栋两层建筑。罗索里奥庄园宏大而古老，围墙高耸、气势逼人，处处透着财富与权势。庄园内部装饰着华丽的画作、挂毯、半身像和雕像，没有铺地毯的地方是打磨光亮的红木地板，高高的天花板上垂挂着俗艳的枝形吊灯。",
+										"罗索里奥庄园由12名精英卫兵（LN和N 男性及女性{@creature 老兵|MM|老兵}）守卫，他们听命于那位不起眼的\"管家\"{@creature 凯赫梅德|KG}（N 男性刺客）。家族的主人是{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}（LN 女性贵族），一位严厉、高傲而强硬的老妇人，她精于经商，却容不下无能之辈。",
+										"当队伍带着{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}抵达时，{@creature 凯赫梅德|KG}以冷淡的礼貌迎接少主和队伍，然后领他们前往{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人的}办公室。这位忙碌的老主妇对儿子的归来似乎并不怎么欣喜，立刻开始对他破口大骂：",
+										"{@i \"你这傻小子跑哪儿去了？不，别回答。你穿着这身可怕的衣裳，我不许你待在这里。你看起来糟透了。去洗个澡换身干净衣服，然后我们再谈！\"}",
+										"当{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}低头退回自己的房间后，{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅}把注意力转向队伍。她要求他们解释{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}遭遇了什么、他们如何找到他、又如何把他带回雅塔。无论{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}许下过什么承诺，为送回{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}这件事，她最多只会支付100金币。不过，她会用一份工作邀请来打动队伍：",
+										"{@i \"我们家的牧师会来看看他的状况。与此同时，我必须知道我们的敌人是谁，好加以处置。我还注意到这孩子粗心弄丢了家族坠饰。那是一件不可替代的传家宝，必须归还家族。\"}",
+										"{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}开出的报酬是：查明{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}的遭遇赏500金币，取回坠饰（一枚黑玉圆盘上以祖母绿镶嵌的大写字母R）再赏500金币。如果队伍坚持，她会同意预付一半报酬。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Bring the Butler",
+													"type": "entries",
+													"name": "带上管家",
+													"page": 3,
+													"entries": [
+														"如果你觉得队伍在面对前方的挑战时可能需要帮手，或一路需要些指引，可以让{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}主动提出让{@creature 凯赫梅德|KG|凯赫梅德的}效劳。他可以充当向导并在战斗中出手相助。这位沉默的刺客不应在谋划或谈判中抛头露面，而应留在幕后，只在队伍快要招架不住时才出手。"
+													],
+													"id": "014"
+												}
+											],
+											"id": "013"
+										},
+										{
+											"ENG_name": "Lady Dezhia Rossolio",
+											"type": "inset",
+											"page": 3,
+											"name": "黛琪雅·罗索里奥夫人",
+											"entries": [
+												"罗索里奥家族的族长是一位约六十岁、轮廓分明的女性。她的白发挽成发髻，衣着时髦而实用。她思维敏锐、谈吐考究、举止严苛。{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}最厌恶愚蠢\u2014\u2014这正是{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}勉强被容忍的原因\u2014\u2014而敬重力量与狡黠。她的最终目标是牢牢守住家族的财富与传承。",
+												{
+													"ENG_name": "What Dezhia Knows",
+													"type": "entries",
+													"name": "黛琪雅知道的事",
+													"page": 3,
+													"entries": [
+														"{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}可以提供一些或许对队伍有帮助的信息：",
+														{
+															"type": "list",
+															"page": 3,
+															"items": [
+																"{@creature 水督奈丝特拉·鲁斯奥|KG}对{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦的}失踪非常关注，而{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}清楚地感觉到，{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}并不是最近几周唯一失踪的贵族。",
+																"如果角色们提到那位紫裙女子，{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅}会说那可能是\"雅塔之手\"\u2014\u2014那个全由女性组成的盗贼公会\u2014\u2014的成员。她不知道她们的据点在哪，但建议去\"藏污纳垢之处寻找凶悍的女子\"，或许能与之取得联系。",
+																"如果队伍不知怎么知道了{@adventure 大夫人|SKT|11|大夫人}，她可以告诉他们那里只接待富人（用{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}的话说，就是\"钱多脑子少的蠢货\"）。如有需要，可以说服{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}借给他们体面的衣服，帮队伍伪装成贵族。"
+															]
+														}
+													],
+													"id": "016"
+												}
+											],
+											"id": "015"
+										}
+									],
+									"id": "012"
+								},
+								{
+									"ENG_name": "Waterbaron's Hall",
+									"type": "entries",
+									"name": "水督会堂",
+									"page": 4,
+									"entries": [
+										"雅塔的水督{@creature 水督奈丝特拉·鲁斯奥|KG|奈丝特拉·鲁斯奥}（LE 女性人类贵族）居住在位于雅塔中心的水督会堂。这是一座低矮宽阔、带有拱顶的大型建筑。里面有各式会议室、一座宽敞的宴会厅，以及水督的豪华居室。会堂以大理石建成，每间高顶厅室里都挂满华丽的挂毯、立着精美的雕像。",
+										"进入会堂的访客必须向守门外的雅塔之盾卫兵通报。如果队伍求见水督，身披重甲的{@creature 老兵|MM}卫兵会护送队伍前往{@creature 水督奈丝特拉·鲁斯奥|KG|水督奈丝特拉·鲁斯奥的}豪华居室。",
+										"如果队伍问起失踪贵族的事，{@creature 水督奈丝特拉·鲁斯奥|KG|奈丝特拉}立刻显得很感兴趣。她已忧虑地注意到多名贵族失踪，并怀疑{@adventure 大夫人|SKT|11|大夫人}的船主{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}与此事有某种牵连。她认为这位勋爵正在觊觎她的席位，而且令她起疑的是，目前失踪的贵族全部来自支持她担任水督的家族。然而她无法根据这些怀疑采取行动，因为没有足够的证据来对{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}立案彻查。任何鲁莽举动都可能暴露她的底牌，使更多贵族倒向对立面。",
+										"当然，她不会把这些全盘告诉队伍，而是装成一位关心治下民众安危的仁慈领袖。她可以提供以下信息：",
+										{
+											"type": "list",
+											"page": 4,
+											"items": [
+												"过去几周里有三名贵族失踪：{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦·罗索里奥}、雅各布·晨花和蒂莫西·萨尔茨伯格。他们都是年轻人。",
+												"蒂莫西是{@adventure 大夫人|SKT|11|大夫人}的常客，而雅各布可能与雅塔之手有往来\u2014\u2014至少传闻是这么说的。",
+												"目前没有发现任何关于他们下落的线索，而且他们似乎都是在夜间失踪的。"
+											]
+										},
+										"如果队伍对调查犹豫不决，或问起她为何不派雅塔之盾处理此事，{@creature 水督奈丝特拉·鲁斯奥|KG|奈丝特拉}会说现有实证太少，她无法名正言顺地对{@adventure 大夫人|SKT|11|大夫人}展开调查，并请队伍替她查个水落石出。她愿意为此预付100金币作为酬劳，但警告队伍：他们并非正式为她或本城效力，一旦他们因非法行为被捕，或对雅塔之盾及雅塔任何市民动武，她将否认与他们见过面，并按严苛的雅塔法律惩处他们。"
+									],
+									"id": "017"
+								},
+								{
+									"ENG_name": "Hand of Yartar",
+									"type": "entries",
+									"name": "雅塔之手",
+									"page": 4,
+									"entries": [
+										"如果队伍想与那个全由女性组成的盗贼公会交谈，首先得找到一名代表。他们可以选择去几个地方：雅塔集市（当地人称之为\"鱼市\"）、城中为数众多的巷子，或某家藏污纳垢的酒馆，比如\"掷币酒馆\"或\"白翼狮鹫\"。",
+										"逐一描述这些地点超出了本文档的范围，但充分的调查最终应能让队伍找到一名雅塔之手成员。在巷子里，是那个看起来吃得太好、眼神过于锐利的女乞丐；在酒馆里，是那个人人都敬而远之的冷面女人；在集市上，是那个只顾观察过路人、不像在买东西的独身女子。",
+										"如果你更倾向于蒙太奇式的调查，可以让参与搜寻的每名队员每小时进行一次{@dc 15}的智力（{@skill 调查}）检定，以决定他们需要多久才能找到一名雅塔之手成员。",
+										"无论队伍在哪里找到她，{@creature 弯刀萨莉|KG}都不愿与全副武装的陌生人多费口舌。对任何公开指责她是雅塔之手成员的说法，她都会否认，但可能承认自己\"认识些人\"。如果队伍肯掏出足够的钱\u2014\u2014至少几枚白金币\u2014\u2014并成功进行一两次魅力检定，萨莉就会酌情把他们所知的部分或全部告诉他们（见\"{@adventure 弯刀萨莉|KG|0|弯刀萨莉}\"文本框）。如果队伍试图恐吓她或动粗，她会走到一条巷子里（如果还不在巷子里的话），三名{@creature 雅塔之手|KG|雅塔之手成员}会赶来与她并肩对抗队伍。如果她眼看要被击败，她宁愿交出情报，也不愿丢掉性命。",
+										{
+											"ENG_name": "Scimitar Sally",
+											"type": "inset",
+											"page": 4,
+											"name": "弯刀萨莉",
+											"entries": [
+												"这名老练的窃贼有一头暗金色头发、方方正正的下巴，以及一道从发际线划到上唇的可怕伤疤，让她的嘴角永远挂着怒容。",
+												{
+													"ENG_name": "What Sally Knows",
+													"type": "entries",
+													"name": "萨莉知道的事",
+													"page": 4,
+													"entries": [
+														"萨莉对眼下发生的事略知一二：",
+														{
+															"type": "list",
+															"page": 4,
+															"items": [
+																"雅塔之手与这些失踪事件无关，也不知道幕后主使是谁。他们怀疑有某个组织牵涉其中，但无法确定是散塔林会、竖琴手同盟还是第三方势力。",
+																"那位紫衣女子可能是{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}，一个身怀某种精神力量、经常出入{@adventure 大夫人|SKT|11|大夫人}的年轻女子。雅塔之手曾试图招募她，但没有成功。"
+															]
+														}
+													],
+													"id": "01a"
+												}
+											],
+											"id": "019"
+										}
+									],
+									"id": "018"
+								},
+								{
+									"ENG_name": "Grand Dame",
+									"type": "entries",
+									"name": "大夫人",
+									"page": 5,
+									"entries": [
+										"{@adventure 大夫人|SKT|11|大夫人}及其重要居民在{@adventure 《风暴君王之雷霆》战役书第215至219页|SKT|11|大夫人}中有详细描述，因此我们不再在此详述其内部构造。",
+										"简而言之，{@adventure 大夫人|SKT|11|大夫人}是一艘装饰华丽的赌船，船主是海妖会成员{@creature 卡斯比尔·德莱伦德|SKT|卡斯比尔·德莱伦德}。本质上，{@adventure 大夫人|SKT|11|大夫人}是一艘夜夜营业的水上赌场，专门招待富裕的贵族。",
+										"这艘船的船长是{@creature 内尔文·斯托恩|KG|内尔文·斯托恩（LE 男性匪徒首领}），他雇有八名船工（NE 男性及女性{@creature 匪徒|MM|匪徒们}），赌场则由{@creature 鲍明|SKT}（N 女性法师）主管。约80人在{@adventure 大夫人|SKT|11|大夫人}上工作（船工、桨手、厨师、侍者、荷官、陪侍和乐师），每晚有{@dice 2d6 + 5}名富裕的贵族或行会成员在那里挥金如土。",
+										"本冒险与书中描述唯一真正不同的地方，是{@creature 卡斯比尔·德莱伦德|SKT|卡斯比尔·德莱伦德}此时正好外出办事。没人知道他去了哪里，连他最信任的雇员{@creature 鲍明|SKT}也不知道。他应该一两周后回来，在此期间由她全权负责。这一改动是为了避免队伍失手杀死{@creature 卡斯比尔·德莱伦德|SKT|卡斯比尔·德莱伦德}，或严重搅乱{@adventure 《风暴君王之雷霆》第11章|SKT|11}。",
+										{
+											"ENG_name": "Getting on the Boat",
+											"type": "entries",
+											"name": "登上赌船",
+											"page": 5,
+											"entries": [
+												"正如{@adventure 《风暴君王之雷霆》第216页|SKT|11|大夫人}所述，登上这艘赌船有四种显而易见的方式：强行登船、伪装成船工、伪装成阔绰的宾客，或潜上船去。记住，队伍不必全员上船，也不必都用同一种方式。任何公然携带武器护甲的角色，在任何情况下都不允许登船。",
+												"我们将在下文逐一介绍这些方案，并补充战役书中的信息，让你对队伍可能尝试的做法有所准备。请注意，伪装成宾客大概是能维持最久、也最容易得手的方案。",
+												{
+													"ENG_name": "Enter by Force",
+													"type": "entries",
+													"name": "强行登船",
+													"page": 5,
+													"entries": [
+														"说真的，你应该想尽办法让玩家们别选这个方案。抛出诸如\"船长和船员们似乎早有防备\"之类的提示，甚至可以提醒玩家\"码头尽头就有一个卫兵岗站\"。",
+														"如果你的队伍最终还是与{@creature 内尔文·斯托恩|KG|内尔文}及其船工、甚至{@creature 鲍明|SKT}动起手来，你可以让某名角色在战斗中发现{@creature 阿塔莉娅·尼梅琳|KG|紫衣女士}：她站在一百尺开外\u2014\u2014也许就在码头尽头。她察觉到那名角色注意到了自己，立刻转身离去。这带来两个结果：队伍不再有必要登上{@adventure 大夫人|SKT|11|大夫人}，而且他们有了借口迅速脱身，而不必继续打一场不该打的仗。这不算最理想的结果，但聊胜于无。如果队伍追上了她，你可以直接跳转到\"{@adventure 跟踪紫衣女士|KG|0|跟踪紫衣女士}\"。"
+													],
+													"id": "01d"
+												},
+												{
+													"ENG_name": "Posing as a Worker",
+													"type": "entries",
+													"name": "伪装成船工",
+													"page": 5,
+													"entries": [
+														"船工们通常在傍晚早些时候、比宾客早几个小时到达。{@creature 内尔文·斯托恩|KG|内尔文}让船工们排成一列，然后逐个上前打量他们。对每名角色，掷一次魅力（{@skill 欺瞒}）检定，对抗{@creature 内尔文·斯托恩|KG|内尔文的}感知（{@skill 洞悉}）检定（他的调整为{@skillCheck 洞悉0}）。如果有角色检定失败，{@creature 内尔文·斯托恩|KG|内尔文}会停下脚步，盯着该角色。{@i \"你们又是谁？小偷吗？\"}",
+														"随后该角色有机会作出解释，或干脆予以否认，并可以再掷一次对抗的魅力（{@skill 欺瞒}）检定。检定成功时，{@creature 内尔文·斯托恩|KG|内尔文}会简短地评论一句，比如{@i \"整一整你的帽子\"}或{@i \"理一理你的上衣\"}，然后继续沿队列查看。检定失败时，{@creature 内尔文·斯托恩|KG|内尔文}会带着怀疑的目光把该角色打发走，甚至可能出言威胁。"
+													],
+													"id": "01e"
+												},
+												{
+													"ENG_name": "Posing as a Guest",
+													"type": "entries",
+													"name": "伪装成宾客",
+													"page": 5,
+													"entries": [
+														"角色们也可以尝试伪装成阔绰的宾客，以进入{@adventure 大夫人|SKT|11|大夫人}。{@creature 内尔文·斯托恩|KG|内尔文}手里有一份宾客名单，但他知道把有钱的访客拒之门外有损生意，所以并不总是严格遵守。如果有角色通过了{@dc 13}的魅力检定（依说辞不同，用{@skill 欺瞒}、{@skill 威吓}或{@skill 游说}），他们就能说服船长放他们上船。拥有{@background 贵族|PHB|贵族背景}背景的角色在此检定中具有优势，而衣着不得体（如未穿贵族服饰）的角色则具有劣势。",
+														"如果角色们检定失败，但没有过分侮辱或威胁{@creature 内尔文·斯托恩|KG|内尔文}，他可能会要求他们证明自己有钱可花。这是{@creature 内尔文·斯托恩|KG|内尔文的}并不含蓄的索贿方式。如果他们给他50金币或更多，他会假笑一下，放他们上船。"
+													],
+													"id": "01f"
+												},
+												{
+													"ENG_name": "Sneaking onto the Boat",
+													"type": "entries",
+													"name": "潜上赌船",
+													"page": 5,
+													"entries": [
+														"潜上船最简单的办法是使用{@spell 隐形术}法术或类似手段。若无隐形，从码头悄然上船非常困难，因为每个出口都有船工把守。不过，如果队伍能制造一场足够大的混乱，他们或许能趁船工和{@creature 内尔文·斯托恩|KG|内尔文}分神时溜上船去。",
+														"也可以从水里通过主甲板的一扇窗户潜入。要从河面攀上船壳，需要合适的装备（如{@item 麻绳(50尺)|PHB|绳索}和{@item 爪钩|PHB}）并通过{@dc 15}的力量（{@skill 运动}）检定，或借助{@spell 飞行术}、{@spell 蛛行术}等 helpful 法术。角色（或多个角色）找到窗户所需的时间越长，被发现的风险就越大。如果你愿意，可以每轮掷一次{@dice 1d6}：掷出6时，一名船工发现队伍正在潜入，并开始盘问。"
+													],
+													"id": "020"
+												}
+											],
+											"id": "01c"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/KG/Kraken.webp"
+											},
+											"altText": "一幅带吸盘的触手线稿图。",
+											"width": 800,
+											"height": 246
+										},
+										{
+											"ENG_name": "The Casino",
+											"type": "entries",
+											"name": "赌场",
+											"page": 6,
+											"entries": [
+												"大夫人赌场的详细说明见{@adventure 《风暴君王之雷霆》战役书第218页|SKT|11|大夫人}（即其{@adventure 区域9|SKT|11|9. 金鹅赌场}）。",
+												"伪装成宾客的角色第一次走进赌场时，会迎面遇上那位冷面的{@creature 鲍明|SKT}，她言简意赅地提出可以用宝石或金币兑换{@item 金鹅|KG|金鹅}\u2014\u2014赌场中用来下注的木制筹码。一枚{@item 金鹅|KG}价值10金币。",
+												"在赌场里，宾客们（各种族、各族裔的贵族）玩着游戏，畅饮免费酒水。坐在赌桌旁的魅力{@creature 荷官|KG|荷官}是做了以下调整的平民：",
+												{
+													"type": "list",
+													"page": 6,
+													"items": [
+														"{@creature 荷官|KG}的智力、魅力和感知为12（+1）。",
+														"荷官熟练于智力（{@skill 萨瓦|KG}）和感知（{@skill 洞悉}）检定。"
+													]
+												},
+												{
+													"ENG_name": "The Purple Lady",
+													"type": "entries",
+													"name": "紫衣女士",
+													"page": 6,
+													"entries": [
+														"任何走进赌场的角色都会很快注意到一位身穿华丽紫色长裙的美貌女子。她的黑发两侧剪短，纤细的脖颈上戴着一条镶有黑色宝石的耀眼项链。",
+														"她正和一位衣着浮华的年长男子玩着{@variantrule 萨瓦|KG}，一有角色走近，那局便正好结束。白发贵族把一摞{@item 金鹅|KG}筹码推过赌桌，从柔软的座位上站起身来。{@i \"我真不知道您是怎么做到的，阿塔莉娅女士。您似乎在我自己察觉之前就知道我的每一步棋。感谢您陪我玩这一局，\"}他彬彬有礼地说道，随后俯身吻了吻女子伸出的手。{@i \"现在我想我该换个桌子了，免得把一辈子攒下的钱都输光。\"}年轻女子对老者报以温暖的微笑。{@i \"您慢走，于贝尔勋爵。后会有期。\"}",
+														"如果有角色请求与{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}同桌玩一局{@variantrule 萨瓦|KG}，她会微笑着答应，并询问他们的身份、来历和在雅塔的打算，同时不断用{@spell 侦测思想}法术读取该角色的表层思绪。除非万不得已，她不会深入探查，因为她知道深窥会让角色察觉自己的思想正被读取。这个法术还帮助她赢下{@variantrule 萨瓦|KG}游戏（她对此熟练），使她的感知（{@skill 洞悉}）检定具有优势。",
+														"如果有角色向{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}问起{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}或其他失踪案，她会保持镇定，声称自己对失踪案一无所知，只是不久前与一位名叫{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}的年轻贵族玩过几局{@variantrule 萨瓦|KG}。她表面上一切如常，暗地里却用心灵感应在该角色心中说道：{@i \"装作若无其事。我们需要谈谈。不是在这里。等船回到码头后跟着我。听懂了就点点头。\"}如果队伍同意，就在{@adventure 大夫人|SKT|11|大夫人}返回雅塔时转入\"{@adventure 跟踪紫衣女士|KG|0|跟踪紫衣女士}\"。"
+													],
+													"id": "022"
+												},
+												{
+													"ENG_name": "Developments",
+													"type": "entries",
+													"name": "发展",
+													"page": 7,
+													"entries": [
+														"队伍待在赌船期间还会发生什么由你决定。船从傍晚一直航行到次日凌晨，所以有充裕的时间四处打探和玩赌场游戏。当船返回雅塔时，队伍可以把{@item 金鹅|KG}筹码兑换成金币\u2014\u2014如果还有剩的话。"
+													],
+													"id": "023"
+												},
+												{
+													"ENG_name": "Casino Games",
+													"type": "inset",
+													"page": 6,
+													"name": "赌场游戏",
+													"entries": [
+														"如果你的队伍部分或全部伪装成赌场宾客，他们可能想真的玩上几局。以下规则应当能让全桌人都乐在其中。记住，如果队里有些人没参与这些游戏，或有些玩家本来就不喜欢这类小游戏，就不要拖太久。",
+														{
+															"ENG_name": "Kobold's Knuckles",
+															"type": "statblock",
+															"tag": "variantrule",
+															"source": "KG",
+															"name": "狗头人掷骰",
+															"page": 6
+														},
+														{
+															"ENG_name": "Sava",
+															"type": "statblock",
+															"tag": "variantrule",
+															"source": "KG",
+															"name": "萨瓦",
+															"page": 6
+														}
+													],
+													"id": "024"
+												},
+												{
+													"ENG_name": "Troubleshooting",
+													"type": "entries",
+													"name": "解决问题",
+													"page": 7,
+													"entries": [
+														"出于种种原因，你的队伍可能没机会在{@adventure 大夫人|SKT|11|大夫人}上与{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}同桌而坐。",
+														{
+															"ENG_name": "No meet and greet",
+															"type": "entries",
+															"name": "不设会面",
+															"page": 7,
+															"entries": [
+																"如果队伍伪装成船工或已潜上船，他们多半无法坐下来友好地玩一局{@variantrule 萨瓦|KG}。此时可以让他们趁{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}回舱、去洗手间或到船栏边透气时与她当面对质。如果队伍在傍晚之前登船，{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}正在餐厅（{@adventure 区域7|SKT|11|7. 餐厅}）用便餐。她随身带着一副{@variantrule 萨瓦|KG}，如果队伍中有人想玩，可以陪她来一局。"
+															],
+															"id": "026"
+														},
+														{
+															"ENG_name": "Failure to board",
+															"type": "entries",
+															"name": "未能登船",
+															"page": 7,
+															"entries": [
+																"你的队伍也可能因主动选择或意外而始终没能上船，只能在码头附近徘徊，寻找紫衣女士。如果是这样，他们永远不会看到{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}登上{@adventure 大夫人|SKT|11|大夫人}（队伍到达之前她早已在船上），但船在午夜过后数小时靠岸时，她会挽着一位年轻贵族离船。队伍可以在那时与她当面对质，她会与贵族道别，你可以从\"{@adventure 跟踪紫衣女士|KG|0|跟踪紫衣女士}\"接着进行；或者他们可以悄悄尾随她，跟着她深入下水道\u2014\u2014她正带着最新的\"猎物\"前往{@creature 底栖魔鱼|MM|底栖魔鱼的}巢室。"
+															],
+															"id": "027"
+														}
+													],
+													"id": "025"
+												}
+											],
+											"id": "021"
+										}
+									],
+									"id": "01b"
+								},
+								{
+									"ENG_name": "Following the Purple Lady",
+									"type": "entries",
+									"name": "跟踪紫衣女士",
+									"page": 8,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/KG/PurpleLady.webp"
+											},
+											"altText": "一幅身穿紫色晚礼服与同色手套的女人的剪影插图。",
+											"width": 796,
+											"height": 1280
+										},
+										"船在午夜过后数小时靠岸，{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}既不与队伍打招呼，也不暗示他们跟上。她只是认定他们会跟着，便快步走下码头，朝雅塔空荡荡的街道走去。她走了几分钟，始终试图与队伍保持至少一百尺的距离，然后闪进一条巷子，在那里等候队伍到来。",
+										{
+											"ENG_name": "Damsel in Distress",
+											"type": "entries",
+											"name": "遇险的少女",
+											"page": 8,
+											"entries": [
+												"{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}是一名干练而危险的海妖会特工，但她不会向队伍暴露这一点。相反，她希望让他们相信自己与{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}一样是受害者，自己不是敌人而是盟友。她向队伍讲述了以下半真半假的说辞与谎言：",
+												{
+													"type": "list",
+													"page": 8,
+													"items": [
+														"是的，她参与了绑架{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦}的行动，但这并非她自愿。她是被邪恶的术士{@creature 欧西思|KG}胁迫的，若不服从便会被杀。［实情是：{@creature 欧西思|KG}是海妖会派来协助{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}夺取水督之位的，而{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}是奉海妖之命辅助他。］",
+														"{@creature 欧西思|KG}几周前来到雅塔，起初颇有魅力，但骨子里是个邪恶无情的人。他身材高大、相貌英俊，留着黑色的小胡子。［实情是：{@creature 欧西思|KG}从来就没有魅力，{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}只是奉命服从他。她并不知道{@creature 欧西思|KG}其实是一只{@creature 底栖魔鱼|MM}，因为那生物用魅影之力在她眼中幻化成了一位人类贵族的模样。］",
+														"{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}和{@adventure 大夫人|SKT|11|大夫人}上的其他人都与此事无关，她只是借用这艘赌船，因为那是物色落单贵族的好地方，而这正是{@creature 欧西思|KG}对她的要求。［实情是：{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}正是这场阴谋的核心，但{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}想保守这个秘密\u2014\u2014我们也不希望队伍在{@adventure 《风暴君王之雷霆》第11章|SKT|11}之前对{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}起疑。］",
+														"她不知道自己带给{@creature 欧西思|KG}的贵族会遭遇什么，但担心那不是好事。［{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}确实不知道，但她相当确定那些人被活捉而非被杀，因为换成她自己也能轻易下杀手］。",
+														"{@creature 欧西思|KG}居住在下水道里，尽量避开雅塔之盾和雅塔之手的耳目。他由一小群像敬神一样崇敬他的鱼人所护卫。她通常会把\"猎物\"送到下水道不深处的鱼人手中，所以她不清楚内部的完整布局，也不知道那里有哪些陷阱或其他守卫。［以上全部属实］。",
+														"{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅的}心灵感应（以及她的其他力量，如果队伍见过的话）是{@creature 欧西思|KG}教给她的小法术。［实情是：那些其实是她的庇护主\u2014\u2014远古海妖{@creature 斯拉克雷特|SKT}\u2014\u2014赐予的力量。］",
+														"她帮助队伍是因为渴望摆脱折磨她的人，却不敢亲自出手，并恳求他们不要把她的参与告诉{@creature 欧西思|KG}。［{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}其实是出于对怪异的{@creature 欧西思|KG}的厌恶才帮助队伍，并想取而代其在海妖会中的位置］。"
+													]
+												},
+												"把这些信息都告诉队伍之后，{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}说自己会在这里等候，而他们则从巷子里的下水道格栅下去。",
+												{
+													"ENG_name": "Treasure",
+													"type": "entries",
+													"name": "宝藏",
+													"page": 8,
+													"entries": [
+														"{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}戴着一条镶有黑玉宝石的项链，价值1,000金币。她还有{@dice 2d10}枚{@item 金鹅|KG}筹码。"
+													],
+													"id": "02a"
+												}
+											],
+											"id": "029"
+										},
+										{
+											"ENG_name": "Troubleshooting",
+											"type": "entries",
+											"name": "解决问题",
+											"page": 8,
+											"entries": [
+												"此时可能出现一些问题。下面我们将讨论其中最显著的几个：",
+												{
+													"ENG_name": "Violence",
+													"type": "entries",
+													"name": "暴力",
+													"page": 8,
+													"entries": [
+														"队伍也可能选择与{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}开战。没关系，她有自己的数据块，对冒险其余部分乃至{@adventure 风暴君王之雷霆|SKT}中的其他内容都无足轻重。自卫时，她会试图平息事态、改为谈判，所以除非你的队伍当真嗜血成性，她应该仍有机会讲述自己的故事。如果他们在她提到{@creature 欧西思|KG}之前就杀了她，你可以提示：在她原本前进的方向上，有一个下水道格栅敞开着。"
+													],
+													"id": "02c"
+												},
+												{
+													"ENG_name": "Interrogation",
+													"type": "entries",
+													"name": "审讯",
+													"page": 8,
+													"entries": [
+														"如果队伍设法逼{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}说出{@creature 卡斯比尔·德莱伦德|SKT|卡斯比尔·德莱伦德}在阴谋中的角色，或海妖会的存在，海妖{@creature 斯拉克雷特|SKT}就会通过与她的心灵链接造成足以立刻杀死她的心灵伤害，不让她吐露比{@i \"海妖......\"}更多的东西。"
+													],
+													"id": "02d"
+												},
+												{
+													"ENG_name": "Come with us",
+													"type": "entries",
+													"name": "跟我们走",
+													"page": 8,
+													"entries": [
+														"如果队伍邀请{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}同行，她会以自己与{@creature 欧西思|KG}的联系可能被他利用来倒戈相向为由拒绝。如果他们坚持，她会勉强同行，但一有机会就会悄悄溜走。"
+													],
+													"id": "02e"
+												},
+												{
+													"ENG_name": "Calling for backup",
+													"type": "entries",
+													"name": "呼叫支援",
+													"page": 8,
+													"entries": [
+														"队伍可能觉得已经仁至义尽，转而向{@creature 黛琪雅·罗索里奥夫人|KG|罗索里奥夫人}或水督的雅塔之盾求助。{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅}会告诉队伍，雅塔之盾不过是些莽夫，很可能把{@creature 欧西思|KG}吓跑。如果队伍回头去找{@creature 黛琪雅·罗索里奥夫人|KG|罗索里奥夫人}，她会要求他们为她复仇并取回坠饰；如果他们仍不认为这是分内之事，她也许会加码金币，或让{@creature 凯赫梅德|KG}出手相助。"
+													],
+													"id": "02f"
+												}
+											],
+											"id": "02b"
+										}
+									],
+									"id": "028"
+								}
+							],
+							"id": "00f"
+						},
+						{
+							"ENG_name": "The Sewers",
+							"type": "section",
+							"name": "下水道",
+							"page": 9,
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "General Statistics",
+											"type": "entries",
+											"name": "通用数据",
+											"page": 9,
+											"entries": [
+												"除非另有说明，下水道具有以下通用数据。",
+												{
+													"ENG_name": "Floors",
+													"type": "entries",
+													"name": "地板",
+													"page": 9,
+													"entries": [
+														"所有垂直表面都污秽而湿滑。在这些表面上移动的生物必须通过{@dc 10}的敏捷豁免，否则在移动结束时倒地，除非它以一半速度移动。"
+													],
+													"id": "033"
+												},
+												{
+													"ENG_name": "Illumination",
+													"type": "entries",
+													"name": "照明",
+													"page": 9,
+													"entries": [
+														"雅塔的下水道中一片漆黑。"
+													],
+													"id": "034"
+												},
+												{
+													"ENG_name": "Sewer Water",
+													"type": "entries",
+													"name": "下水道污水",
+													"page": 9,
+													"entries": [
+														"下水道污水中满是污物和垃圾。除非另有说明，水道深5尺。污水会{@quickref 视野与光照|PHB|2|0|重度遮蔽}10尺以外的任何东西。首次进入水中的生物必须通过{@dc 11}的体质豁免，否则感染{@disease 下水道瘟疫|DMG}{@homebrew |（见《城主指南》第257页）}。"
+													],
+													"id": "035"
+												},
+												{
+													"ENG_name": "Wall and Ceilings",
+													"type": "entries",
+													"name": "墙壁与天花板",
+													"page": 9,
+													"entries": [
+														"构成下水道的隧道与房间都是古老的石造结构。天花板很低，距通道地面只有8尺。"
+													],
+													"id": "036"
+												}
+											],
+											"id": "032"
+										},
+										{
+											"ENG_name": "Entering the Sewers",
+											"type": "entries",
+											"name": "进入下水道",
+											"page": 9,
+											"entries": [
+												"队伍从上方的下水道格栅进入，顺着金属爬梯下到一条隧道中。隧道向西封闭，向东延伸。他们从地图西缘出现。"
+											],
+											"id": "037"
+										}
+									],
+									"id": "031"
+								},
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/KG/Sewer(DM).webp"
+											},
+											"id": "SewerDM",
+											"title": "下水道",
+											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 72
+											},
+											"mapRegions": [
+												{
+													"area": "038",
+													"points": [
+														[
+															202,
+															418
+														],
+														[
+															202,
+															802
+														],
+														[
+															516,
+															802
+														],
+														[
+															516,
+															418
+														]
+													]
+												},
+												{
+													"area": "03d",
+													"points": [
+														[
+															1213,
+															949
+														],
+														[
+															1142,
+															765
+														],
+														[
+															1145,
+															715
+														],
+														[
+															1280,
+															585
+														],
+														[
+															1427,
+															562
+														],
+														[
+															1676,
+															485
+														],
+														[
+															1869,
+															413
+														],
+														[
+															1969,
+															424
+														],
+														[
+															2033,
+															522
+														],
+														[
+															2031,
+															949
+														]
+													]
+												},
+												{
+													"area": "040",
+													"points": [
+														[
+															969,
+															1260
+														],
+														[
+															969,
+															1707
+														],
+														[
+															1564,
+															1707
+														],
+														[
+															1564,
+															1260
+														]
+													]
+												},
+												{
+													"area": "043",
+													"points": [
+														[
+															1847,
+															1275
+														],
+														[
+															1847,
+															1896
+														],
+														[
+															2040,
+															1896
+														],
+														[
+															2040,
+															1275
+														]
+													]
+												},
+												{
+													"area": "044",
+													"points": [
+														[
+															2645,
+															911
+														],
+														[
+															2645,
+															1244
+														],
+														[
+															2851,
+															1244
+														],
+														[
+															2851,
+															911
+														]
+													]
+												}
+											],
+											"width": 2880,
+											"height": 2160
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/KG/Sewer.webp"
+											},
+											"title": "玩家版本",
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "square",
+												"size": 72
+											},
+											"mapParent": {
+												"id": "SewerDM"
+											},
+											"id": "Sewer",
+											"width": 2880,
+											"height": 2160
+										}
+									]
+								},
+								{
+									"ENG_name": "S1. Control Office",
+									"type": "entries",
+									"name": "S1. 控制室",
+									"page": 9,
+									"entries": [
+										"这个房间里有用于开关流入和流出此区域下水道的水管的手轮和操纵杆。办公室中央有一张书桌和两把椅子。一具倒霉下水道工人的骸骨赤裸地躺在地上，已被占据此房的软泥怪啃食得半融（见下文）。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Control Mechanisms",
+													"type": "entries",
+													"name": "控制机关",
+													"page": 9,
+													"entries": [
+														"手轮和操纵杆上挂着半腐烂的标签，握柄以颜色区分，对专业人士来说大概一目了然，对外行来说则需要动一番脑筋。",
+														"任何花一分钟研究这些机关的角色，必须通过{@dc 13}的智力（{@skill 调查}）检定才能弄清它们的运作方式。四个手轮向这部分下水道放水（每个手轮使水位每分钟上升1尺），但应急泄水道（见{@area S4|043}）可防止下水道漫溢。四根操纵杆打开水下排水口，排空这段下水道（每根操纵杆每分钟排水1尺）。检定失败的角色会搞反，以为手轮是排水的、操纵杆是注水的。",
+														"如果角色用动作转动手轮或扳动操纵杆，开始注水或排水过程，会立刻惊动{@area S3|040}中的寇涛鱼人。两只{@creature 寇涛|MM}和一只{@creature 寇涛驱策者|MM}会游来查看，并于三轮后抵达。"
+													],
+													"id": "03a"
+												},
+												{
+													"ENG_name": "Psionic Oozes",
+													"type": "entries",
+													"name": "灵能软泥怪",
+													"page": 9,
+													"entries": [
+														"{@creature 底栖魔鱼|MM}的异怪存在使下水道的部分污物垃圾萌生了知觉。四只{@creature 灰泥怪（灵能）|MM|灰泥怪（灵能）}贴着房间的天花板和墙壁蜿蜒爬行，看上去与普通的烂泥无异。当队伍开始操作下水道机关，或在最后一名角色离开房间之前，它们就会发起攻击。"
+													],
+													"id": "03b"
+												},
+												{
+													"ENG_name": "Treasure",
+													"type": "entries",
+													"name": "宝藏",
+													"page": 9,
+													"entries": [
+														"桌上的袋子里有一套{@item 石匠工具|PHB}，还有4金币和11银币。"
+													],
+													"id": "03c"
+												}
+											],
+											"id": "039"
+										}
+									],
+									"id": "038"
+								},
+								{
+									"ENG_name": "S2. Otyugh's Pools",
+									"type": "entries",
+									"name": "S2. 食腐兽污水池",
+									"page": 9,
+									"entries": [
+										"{@creature 欧西思|KG|欧西思的}最爱宠物\u2014\u2014一只{@creature 食腐兽|MM}\u2014\u2014在这段塌陷的下水道里3尺深的臭污物池中筑巢。它对散落四周的财宝和杂物毫不在意。寇涛鱼人用老鼠和不留作心灵奴隶的俘虏把它喂得饱饱的。如果队伍开始在它的巢穴附近捡拾物品，它就会从其中一个池子里扑出来，试图把一名角色拖入池中吃掉。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Treasure",
+													"type": "entries",
+													"name": "宝藏",
+													"page": 9,
+													"entries": [
+														"食腐兽巢穴四周散落着它的猎物们留下的物品：14金币、17银币、一把{@item 长剑|PHB}、一把{@item 手弩|PHB}、一捆五支{@item 火把|PHB|火把}和两瓶{@item 水下呼吸药水|DMG|水下呼吸药水}。"
+													],
+													"id": "03f"
+												}
+											],
+											"id": "03e"
+										}
+									],
+									"id": "03d"
+								},
+								{
+									"ENG_name": "S3. Kuo-Toa Lair",
+									"type": "entries",
+									"name": "S3. 寇涛鱼人巢穴",
+									"page": 9,
+									"entries": [
+										"这片围起来的区域是本段下水道过滤流程的第一步。水流经方形水池南北两侧通道下的细目网时，固体物便与水分离。这一过程使该区域内的水略微干净，不含{@disease 下水道瘟疫|DMG}。水池深20尺。",
+										"四只{@creature 寇涛|MM}和两只{@creature 寇涛驱策者|MM|寇涛驱策者}居住在此。他们把{@creature 底栖魔鱼|MM}{@creature 欧西思|KG}当作神明崇敬，以无法遏制的狂热崇拜它。聪明的角色或许能说服寇涛鱼人相信自己无意伤害他们的神，从而安然通过，甚至打听到关于{@creature 欧西思|KG}的信息。",
+										"寇涛鱼人平时潜在水池中，除非有人发出很大声响或把光源带到水池附近，否则不会注意过路者。如果{@area S2|03d}附近爆发战斗，寇涛鱼人会等到战斗全面展开后才加入，因为他们害怕成为那只永远饥饿的{@creature 食腐兽|MM}的猎物。届时一只{@creature 寇涛驱策者|MM}会游去警告{@creature 欧西思|KG}，并留在{@creature 底栖魔鱼|MM|底栖魔鱼的}巢穴中，协助应对在那里爆发的任何战斗。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Treasure",
+													"type": "entries",
+													"name": "宝藏",
+													"page": 9,
+													"entries": [
+														"寇涛鱼人携带着四支{@item 矛|PHB|三叉枪}、四张{@item 捕网|PHB|捕网}、四把{@item 钳杖|KG|钳杖}和四面{@item 粘性盾牌|KG|黏盾}。寇涛鱼人的水池里没什么财宝，因为他们把收集到的大部分东西都献给{@creature 底栖魔鱼|MM}，但他们在池底存放着两罐密封的{@item 底栖魔鱼粘液|KG}，那是他们眼中十分珍贵的致醉之物。"
+													],
+													"id": "042"
+												}
+											],
+											"id": "041"
+										}
+									],
+									"id": "040"
+								},
+								{
+									"ENG_name": "S4. Emergency Drainage",
+									"type": "entries",
+									"name": "S4. 应急泄水道",
+									"page": 10,
+									"entries": [
+										"这两根巨大的泄水管是防止下水道漫溢的保险装置。如果有生物被推入其中一根泄水管，它会坠入30尺下的水中，坠落时受到{@damage 3d6}伤害。管壁湿滑，只能借助{@spell 蛛行术}之类的魔法，或用上方固定好的绳索（{@dc 10}力量（{@skill 运动}）检定）攀爬。",
+										"也可以通过向下水道灌水（见{@area S1|038}）把生物从泄水管中抬升出来，这会使下方水位上升，直到生物能够到边缘并爬出来。"
+									],
+									"id": "043"
+								},
+								{
+									"ENG_name": "S5. To the Aboleth's Lair",
+									"type": "entries",
+									"name": "S5. 前往底栖魔鱼巢穴",
+									"page": 10,
+									"entries": [
+										"一块下水道格栅遮住了{@creature 欧西思|KG|欧西思的}巢穴入口。掀开格栅需要进行{@dc 10}的力量（{@skill 运动}）检定。格栅下方是一段铁梯，向下爬10尺便抵达{@creature 欧西思|KG|欧西思的}巢穴天花板。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Glyph of Warding",
+													"type": "entries",
+													"name": "守卫刻文",
+													"page": 10,
+													"entries": [
+														"{@creature 欧西思|KG}在格栅上刻了一枚{@spell 守卫刻文}，一旦非寇涛鱼人掀开格栅便会触发。这只{@creature 底栖魔鱼|MM}为其灌注了{@spell 雷鸣波}法术。刻文被触发时，格栅15尺内的每个生物都必须进行{@dc 14}的体质豁免。豁免失败者受到{@damage 2d8}雷鸣伤害并被向后推10尺；成功则伤害减半且不被推动。法术引发的巨响会惊动下方的{@creature 欧西思|KG}和{@creature 迈罗人鱼|MM}，以及所有还活着的寇涛鱼人。",
+														"任何通过{@dc 10}智力（{@skill 调查}）检定的角色都可以注意到这枚刻文，而通过{@dc 15}智力（{@skill 奥秘}）检定的角色则能认出它是{@spell 守卫刻文}。使用{@spell 侦测魔法}的角色还会看到下水道格栅上散发出防护系和塑能系的魔法灵光。"
+													],
+													"id": "046"
+												}
+											],
+											"id": "045"
+										}
+									],
+									"id": "044"
+								},
+								{
+									"ENG_name": "Aboleth's Lair",
+									"type": "entries",
+									"name": "底栖魔鱼巢穴",
+									"page": 11,
+									"entries": [
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/KG/AbolethLair(DM).webp"
+													},
+													"title": "底栖魔鱼巢穴",
+													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 72
+													},
+													"id": "LairDM",
+													"width": 1440,
+													"height": 1440
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/KG/AbolethLair.webp"
+													},
+													"title": "玩家版本",
+													"imageType": "mapPlayer",
+													"grid": {
+														"type": "square",
+														"size": 72
+													},
+													"mapParent": {
+														"id": "LairDM"
+													},
+													"id": "Lair",
+													"width": 1440,
+													"height": 1440
+												}
+											]
+										},
+										"这个大房间里的通道高于地面15尺，距天花板也有15尺。队伍第一次进入巢室时，水面恰好没过通道边缘。巢室两侧的水管（e）和水面之下的泄水道（c）都是关闭的。{@creature 底栖魔鱼|MM}用泄水道运送它绑架来的贵族\u2014\u2014先让他们染上阴险的疾病，再裹进茧中。泄水道一路通到德萨林河，再从那里流向西南方的剑海。",
+										"巢室两侧的手轮（d）旁各站着一名{@creature 迈罗人鱼|MM}心灵奴隶，随时准备听候{@creature 底栖魔鱼|MM|底栖魔鱼的}无声号令。在远离格栅入口（a）的房间另一侧，有一座直抵天花板的石建筑（f）。它的铁门关闭着，但没有上锁。里面有几把椅子和一张桌子，还有装着{@creature 欧西思|KG|欧西思的}赃物（见下文{@adventure 财宝部分|KG|0|宝藏|4}）的板条箱和袋子。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Deception",
+													"type": "entries",
+													"name": "欺瞒",
+													"page": 11,
+													"entries": [
+														"当队伍经由下水道格栅抵达{@creature 底栖魔鱼|MM|底栖魔鱼的}巢穴时，{@creature 欧西思|KG}允许他们全部爬进巢室，自己则藏在幽暗的深水中。等队伍全员下来后，它以心灵感应对每人开口，用一副迷人而高贵的贵族心声称谓。",
+														"{@i \"欢迎，朋友们。抱歉这个地方不太体面。请到我的办公室来，那里更适合私下交谈。\"}",
+														"{@creature 底栖魔鱼|MM}想让队伍离出口越远越好，然后才命令心灵奴隶们用下水道污水灌入巢室。它用尽一切谎言把他们引向巢室深处，比如说：",
+														{
+															"type": "list",
+															"page": 11,
+															"items": [
+																"办公室里有财宝（{@creature 底栖魔鱼|MM}知道每个与它心灵交谈的生物内心最深的渴望）。",
+																"两名失踪的贵族（雅各布和蒂莫西）就在里面，你们可以来带走他们。",
+																"{@creature 迈罗人鱼|MM}是一个更强大、更黑暗的势力的爪牙\u2014\u2014我们在它们面前不能多说。"
+															]
+														},
+														"当{@creature 底栖魔鱼|MM}判断谈话已无利可图，或队伍对它本身或其仆从做出危险举动时，{@creature 底栖魔鱼|MM}便会命令{@creature 迈罗人鱼|MM}心灵奴隶开始灌水。它还会命令上方幸存的寇涛鱼人心灵奴隶把下水道格栅放回原位并加以看守，断绝队伍的退路。"
+													],
+													"id": "049"
+												}
+											],
+											"id": "048"
+										},
+										{
+											"ENG_name": "Running the Encounter",
+											"type": "entries",
+											"name": "运行本遭遇",
+											"page": 12,
+											"entries": [
+												"战斗第一轮，两只{@creature 迈罗人鱼|MM}会用它们的动作打开水管，开始向巢室灌水。下一回合，它们会采取{@action 预备|PHB}动作，准备{@action 擒抱}任何试图靠近手轮的人。",
+												{
+													"ENG_name": "Free the slaves",
+													"type": "entries",
+													"name": "解救奴隶",
+													"page": 12,
+													"entries": [
+														"每当一只{@creature 迈罗人鱼|MM}受到伤害，它都可以进行一次{@dc 14}的感知豁免，以摆脱{@creature 底栖魔鱼|MM|底栖魔鱼的}奴役。豁免成功时，它恢复自由意志，你可以描述突如其来的神智如何充盈它的双眼，它把充满恨意的目光投向幽暗的水域。如果队伍不再攻击它，这只迈罗人鱼便会扑向它昔日的主人，与队伍并肩作战，直到{@creature 底栖魔鱼|MM}被消灭（此后它很可能再度倒戈攻击队伍）。"
+													],
+													"id": "04b"
+												},
+												{
+													"ENG_name": "Oosith",
+													"type": "entries",
+													"name": "欧西思",
+													"page": 12,
+													"entries": [
+														"{@creature 底栖魔鱼|MM}喜欢远离危险。它尽可能待在水下，使用奴役能力，或用长长的触手攻击后迅速潜走。它是否用传奇动作进行尾部攻击和心灵抽取，或用巢穴动作施展魅影之力、驱使室内之水助战，都由你决定。为了保持这场本已复杂的遭遇的可控性，不滥用这些能力也完全没问题\u2014\u2014如果队伍不足8级，甚至建议这么做。"
+													],
+													"id": "04c"
+												},
+												{
+													"ENG_name": "Escape",
+													"type": "entries",
+													"name": "逃脱",
+													"page": 12,
+													"entries": [
+														"当生命值降到一半以下、战局对它不利时，{@creature 欧西思|KG}会命令其余的心灵奴隶打开一条泄水道。它顺着泄水道游出，一路游向德萨林河，再返回深水城和剑海的方向。其余的{@creature 迈罗人鱼|MM}心灵奴隶会紧随其后。",
+														"试图通过泄水道的角色\u2014\u2014无论是追逐{@creature 底栖魔鱼|MM}还是想逃离它的触手\u2014\u2014都会被水流卷入水下五轮，随后出现在雅塔码头旁的水面上，而{@creature 底栖魔鱼|MM}早已不见踪影。"
+													],
+													"id": "04d"
+												}
+											],
+											"id": "04a"
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"page": 12,
+											"entries": [
+												"在{@creature 底栖魔鱼|MM|底栖魔鱼的}巢穴西端的办公楼里，堆放着它从贵族猎物们那里搜集来的财宝：三套叠放整齐的贵族服饰，每套都俗艳而昂贵（各值15金币）；若袋装有合计92白金币、108金币、45银币、两颗碧玺（各值100金币）和一颗翡翠（1,000金币）。这里还有一顶魔法{@item 易容帽|DMG}（或从{@table 魔法物品表F|DMG}另掷一件魔法物品），以及{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦·罗索里奥的}丢失的坠饰\u2014\u2014黑玉圆盘上以祖母绿镶嵌着大写字母R，华彩夺目（500金币）。最后，还有十枚{@item 金鹅|KG}筹码，每枚价值10金币。"
+											],
+											"id": "04e"
+										},
+										{
+											"ENG_name": "Developments",
+											"type": "entries",
+											"name": "发展",
+											"page": 12,
+											"entries": [
+												{
+													"ENG_name": "Victory",
+													"type": "entries",
+													"name": "胜利",
+													"page": 12,
+													"entries": [
+														"但愿队伍能杀死{@creature 底栖魔鱼|MM}或迫使它逃离巢穴。如果它死了，{@creature 迈罗人鱼|MM}便不再是心灵奴隶，它们要么试图从泄水道逃走，要么战斗到死。上方残余的寇涛鱼人如果看到他们的\"神\"已死的证据，可以被说服离开，否则会在队伍从{@creature 底栖魔鱼|MM|底栖魔鱼的}巢穴上来时发起攻击。"
+													],
+													"id": "050"
+												},
+												{
+													"ENG_name": "Defeat",
+													"type": "entries",
+													"name": "失败",
+													"page": 13,
+													"entries": [
+														"与{@creature 底栖魔鱼|MM}的最后这场遭遇战非常危险，队伍很容易惨遭不测。所幸{@creature 底栖魔鱼|MM}更倾向于奴役生物而非杀死他们。它会稳定濒死的角色，把他们安置在上方的下水道里。这需要你花些功夫，但请给队伍一个逃脱的机会，比如{@creature 食腐兽|MM}咬了一名被奴役的角色，打破了魅惑；或雅塔之盾进入下水道，因为{@creature 水督奈丝特拉·鲁斯奥|KG|奈丝特拉·鲁斯奥}派人跟踪了队伍。"
+													],
+													"id": "051"
+												}
+											],
+											"id": "04f"
+										},
+										{
+											"ENG_name": "Flooding the Chamber",
+											"type": "inset",
+											"page": 12,
+											"name": "淹没巢室",
+											"entries": [
+												"以下规则用于营造紧张的局势：队伍与{@creature 底栖魔鱼|MM}争夺巢穴水位的控制权：",
+												{
+													"type": "list",
+													"page": 12,
+													"items": [
+														"巢室两侧各有一个手轮（d），用于开关让水流入巢室的水管（e）。每根打开的水管使水位每轮上升5尺。",
+														"巢室中央的四个手轮（b）控制着四条泄水道（c），每条都可以打开或关闭。每条打开的泄水道使水位每轮下降3尺。",
+														"生物可以用一个动作把手轮从开转为关，或反之。生物也可以尝试用动作进行{@dc 15}的力量（{@skill 运动}）检定，成功即可扳断手轮。",
+														"在每次先攻20时，检查每个手轮的开闭状态，并相应调整水位。若水位降到0，巢室完全无水。若水位达到30，房间被完全灌满。"
+													]
+												},
+												{
+													"ENG_name": "Underwater Combat",
+													"type": "statblock",
+													"tag": "variantrule",
+													"source": "KG",
+													"name": "水下战斗",
+													"page": 12
+												}
+											],
+											"id": "052"
+										}
+									],
+									"id": "047"
+								}
+							],
+							"id": "030"
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "section",
+							"name": "结局",
+							"page": 13,
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "The Purple Lady",
+											"type": "entries",
+											"name": "紫衣女士",
+											"page": 13,
+											"entries": [
+												"如果{@creature 阿塔莉娅·尼梅琳|KG|阿塔莉娅女士}觉得队伍相信了她的说辞、不会向官府出卖她，她会在上方等候他们，并为他们的胜利连声道谢。否则，她会暂时彻底逃离雅塔，等风头过去。一两周后她会回来，接手{@creature 欧西思|KG}留下的局面，继续绑架贵族，好让她的主人\u2014\u2014海妖{@creature 斯拉克雷特|SKT}\u2014\u2014把{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}扶上雅塔水督之位。"
+											],
+											"id": "055"
+										},
+										{
+											"ENG_name": "The Waterbaron",
+											"type": "entries",
+											"name": "水督",
+											"page": 13,
+											"entries": [
+												"如果队伍带着成果回去见{@creature 水督奈丝特拉·鲁斯奥|KG|奈丝特拉·鲁斯奥}，这位精明的水督会感谢他们的相助并支付酬劳。她是真心感激这份援助。如果他们对{@adventure 大夫人|SKT|11|大夫人}和{@creature 卡斯比尔·德莱伦德|SKT|德里伦德勋爵}提出任何疑虑，或已推断出其他贵族可能被送去了深水城，她会记下这些情报，但让他们暂时不要再深究，因为她害怕惹恼贵族们。"
+											],
+											"id": "056"
+										},
+										{
+											"ENG_name": "The Rossolios",
+											"type": "entries",
+											"name": "罗索里奥一家",
+											"page": 13,
+											"entries": [
+												"即使队伍不折不扣地完成了她的委托，{@creature 黛琪雅·罗索里奥夫人|KG}也不会对队伍大加赞赏。她让{@creature 凯赫梅德|KG}把报酬交给队伍，却没有一句好话。如果队伍没能带回坠饰，且/或让{@creature 底栖魔鱼|MM}逃走了，他们甚至可能因无能而遭到她的讥讽。"
+											],
+											"id": "057"
+										},
+										{
+											"ENG_name": "Aboleth's Curse",
+											"type": "entries",
+											"name": "底栖魔鱼的诅咒",
+											"page": 13,
+											"entries": [
+												"罗索里奥家的{@creature 祭司|MM}\u2014\u2014一个崇拜提玛拉的瘦高个子，名叫伊伯恩\u2014\u2014用一道{@spell 医疗术}治好了{@creature 阿尔坦·罗索里奥勋爵|KG|阿尔坦·罗索里奥}的异怪疾病。如果有队伍成员也被感染，只要他们肯掏1000金币，或想办法说动{@creature 黛琪雅·罗索里奥夫人|KG|黛琪雅夫人}承担费用，他也可以治好他们。"
+											],
+											"id": "058"
+										}
+									],
+									"id": "054"
+								}
+							],
+							"id": "053"
+						}
+					],
+					"id": "000"
+				},
+				{
+					"ENG_name": "Appendix A: Items",
+					"type": "section",
+					"name": "附录A：物品",
+					"page": 13,
+					"entries": [
+						"本冒险引入了三件新奇的物品，详述如下。",
+						{
+							"ENG_name": "Aboleth Mucous",
+							"type": "statblock",
+							"tag": "item",
+							"source": "KG",
+							"name": "底栖魔鱼粘液",
+							"page": 13
+						},
+						{
+							"ENG_name": "Pincer Staff",
+							"type": "statblock",
+							"tag": "item",
+							"source": "KG",
+							"name": "钳杖",
+							"page": 13
+						},
+						{
+							"ENG_name": "Sticky Shield",
+							"type": "statblock",
+							"tag": "item",
+							"source": "KG",
+							"name": "粘性盾牌",
+							"page": 13
+						},
+						"{@note 此外，为方便在虚拟桌面（VTT）中使用，还创建了一件物品：}",
+						{
+							"ENG_name": "Golden Goose",
+							"type": "statblock",
+							"tag": "item",
+							"source": "KG",
+							"name": "金鹅",
+							"page": 13
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/SKT/099-skt11-02.webp"
+							},
+							"title": "\"金鹅\"",
+							"width": 1000,
+							"height": 793
+						}
+					],
+					"id": "059"
+				}
+			]
+		}
+	]
+}
