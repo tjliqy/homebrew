@@ -1,0 +1,8009 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BloodSS",
+				"abbreviation": "BSS",
+				"full": "日与影之血",
+				"url": "https://loottavern.com/product-category/blood-of-sun-and-shadow/",
+				"version": "1.0",
+				"dateReleased": "2025-09-01",
+				"authors": [
+					"Max Wartelle",
+					"Mohammed Bellafquih"
+				],
+				"convertedBy": [
+					"Giddy"
+				],
+				"color": "a0d2f1",
+				"colorNight": "a0d2f1"
+			}
+		],
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"includes": {
+			"item": [
+				"HelianasGuidetoMonsterHunting",
+				"LALoTT",
+				"MotesDivine"
+			],
+			"class": [
+				"HelianasGuidetoMonsterHunting"
+			],
+			"monster": [
+				"HelianasGuidetoMonsterHunting",
+				"MotesDivine",
+				"LALoTT"
+			]
+		},
+		"internalCopies": [
+			"monsterFluff",
+			"monster",
+			"itemFluff",
+			"item"
+		],
+		"spellSchools": {
+			"BM": {
+				"full": "Biomancy",
+				"short": "Bio.",
+				"color": "93c572"
+			}
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1782136957,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "9ca1f30772"
+	},
+	"spell": [
+		{
+			"ENG_name": "Enrage",
+			"name": "激怒",
+			"source": "BloodSS",
+			"page": 343,
+			"otherSources": [
+				{
+					"source": "HelianasGuidetoMonsterHunting"
+				},
+				{
+					"source": "LALoTT"
+				}
+			],
+			"level": 3,
+			"school": "EN",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一条红手帕"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图在一群人中煽起激烈的情感。以施法距离内你指定的一点为中心、半径20尺的球状范围内的每个人形生物都必须进行一次魅力豁免检定；生物若愿意，可以自愿放弃此次豁免检定。豁免检定失败的生物会在法术持续时间内陷入激怒状态。",
+				"处于激怒状态时，目标会对所有生物抱持敌意。正在专注某个法术的被激怒生物必须在其每个回合开始时通过一次DC 10的体质豁免检定，否则失去对该法术的专注。",
+				"你可以用一个动作强迫一个被激怒的生物使用其反应，对处于该生物触及范围内的一个随机确定的生物进行一次近战武器攻击。如果在此法术施放之前，该被激怒生物对其攻击的目标原本抱持友善态度，则它可以在进行该次攻击后立即重复豁免检定，成功则结束其身上的这一效应。",
+				"被激怒的生物每当受到伤害时都可以重复豁免检定，成功则结束其身上的这一效应。法术结束时，该生物会恢复原先的态度，除非GM另有裁定。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用4环或更高环阶的法术位施放此法术，并用一个动作强迫一个被激怒的生物进行近战武器攻击时，法术位每比3环高一级，你就可以再强迫一个额外的被激怒生物进行一次近战武器攻击。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Bard",
+						"name": "吟游诗人",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					}
+				]
+			},
+			"savingThrow": [
+				"charisma",
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+		{
+			"ENG_name": "Freezing Beam",
+			"name": "冰冻射线",
+			"source": "BloodSS",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一颗冰川卵石"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一道看不见的零下侵蚀寒流自你身上朝你选择的方向喷涌而出，形成一条5尺宽、100尺长的直线。直线中的每个生物都必须进行一次敏捷豁免检定。豁免失败的生物受到{@damage 6d6}点寒冷伤害，且其速度减半，直至其下个回合结束。豁免成功的生物只受一半伤害，且速度不会降低。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用4环或更高法术位施放该法术时，法术位每比3环高一级，伤害就增加{@dice 1d6}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"ENG_name": "Mortiferous Pulse",
+			"name": "致死脉动",
+			"source": "BloodSS",
+			"level": 2,
+			"school": "N",
+			"subschools": [
+				"生物法"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 50
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一只死去的动物"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召来一道负能量，将坏死病原体激发并传入立于你面前的生物体内，使其内脏衰败。以你为起点、5尺宽、50尺长的直线范围内的每个生物都必须进行一次敏捷豁免检定，豁免失败者受到{@damage 3d8}点坏死伤害，成功则只受一半伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用3环或更高环阶的法术位施放此法术时，伤害每高于2环增加{@dice 1d8}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"ENG_name": "Pins & Needles",
+			"name": "麻刺感",
+			"source": "BloodSS",
+			"page": 346,
+			"otherSources": [
+				{
+					"source": "HelianasGuidetoMonsterHunting"
+				},
+				{
+					"source": "RyokoGuideToYokaiRealms"
+				},
+				{
+					"source": "LALoTT"
+				}
+			],
+			"level": 0,
+			"school": "V",
+			"subschools": [
+				"生物法"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你先短暂关闭施法距离内一个可见生物神经系统的一小部分，随即对其进行过度刺激，引发令人残弱的剧痛。该生物必须成功通过一次体质豁免检定，否则受到{@damage 1d8}点心灵伤害。如果目标的豁免检定失败值达到5点或更多，它在下个回合结束前进行的下一次攻击检定将具有劣势，因为它暂时无法完全控制自己身体的一部分。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Cantrip Upgrade",
+					"type": "entries",
+					"name": "戏法强化",
+					"entries": [
+						"当你达到5级（{@dice 2d8}）、11级（{@dice 3d8}）和17级（{@dice 4d8}）时，此法术的伤害增加{@dice 1d8}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"ENG_name": "Soul Rend",
+			"name": "裂魂",
+			"source": "BloodSS",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一滴蓝橙利口酒"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你试图将施法距离内一个可见生物的灵魂从其血肉之躯中撕扯出来，迫使该生物进行一次魅力豁免检定。豁免失败的生物受到{@damage 4d6}点心灵伤害和{@damage 4d6}点坏死伤害，并陷入恍惚状态，直至其下个回合结束。豁免成功的生物只受一半伤害，且不会陷入恍惚。处于恍惚状态期间，生物无法进行反应，在其回合内只能采取一个动作或一个附赠动作（不可两者兼得），且速度减半。",
+				"一个生物若以这种方式被降至0生命值，即告死亡，且无法被{@spell 回生术}法术复活。没有灵魂的生物不受此法术影响。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用5环或更高环阶的法术位施放此法术时，法术位每比4环高一级，两种伤害类型都增加{@dice 1d6}点。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Cleric",
+						"name": "牧师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic",
+				"psychic"
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"ENG_name": "Teeth of Ice",
+			"name": "冰之利齿",
+			"source": "BloodSS",
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 500
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"闪亮的冰矛自高处坠落，砸向施法距离内你可见的3个不同地点。以每个地点为中心、半径10尺范围内的每个生物都必须进行一次敏捷豁免检定。豁免失败的生物受到{@damage 6d6}点寒冷伤害和{@damage 6d6}点穿刺伤害，成功则只受一半伤害。此外，直至你的下个回合结束，每个区域都布满参差的冰刺，成为困难地形；当有生物进入该区域或在其中移动时，其每移动5尺就会受到{@damage 3d6}点穿刺伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用8环或更高环阶的法术位施放此法术时，每比7环高一环，伤害增加{@dice 1d6}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"cold",
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"S"
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Bramble Boar",
+			"name": "荆棘野猪",
+			"group": [
+				"荆棘士兵"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Mammoth",
+				"name": "猛犸",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "象",
+						"with": "荆棘仔",
+						"flags": "i"
+					},
+					"immune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"poison"
+						]
+					},
+					"conditionImmune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"charmed",
+							"poisoned"
+						]
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Thorny Defence",
+								"name": "棘刺防御",
+								"entries": [
+									"触碰荆棘仔、或在距其5尺内以近战攻击命中它的生物，受到相当于{@damage 2d4;3d6;4d6|可变伤害}一半的穿刺伤害。"
+								]
+							},
+							{
+								"ENG_name": "Ferrous Weakness",
+								"name": "铁质弱点",
+								"entries": [
+									"当荆棘仔在单次事件中受到来自铁质非魔法武器的{@damage 2d4;3d6;4d6|可变伤害}点或更多的钝击、穿刺或挥砍伤害时，它在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": "plant",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Bramble Knight",
+			"name": "荆棘骑士",
+			"group": [
+				"荆棘士兵"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "荆棘仔",
+						"flags": "i"
+					},
+					"immune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"poison"
+						]
+					},
+					"conditionImmune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"charmed",
+							"poisoned"
+						]
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Thorny Defence",
+								"name": "棘刺防御",
+								"entries": [
+									"触碰荆棘仔、或在距其5尺内以近战攻击命中它的生物，受到相当于{@damage 2d4;3d6;4d6|可变伤害}一半的穿刺伤害。"
+								]
+							},
+							{
+								"ENG_name": "Ferrous Weakness",
+								"name": "铁质弱点",
+								"entries": [
+									"当荆棘仔在单次事件中受到来自铁质非魔法武器的{@damage 2d4;3d6;4d6|可变伤害}点或更多的钝击、穿刺或挥砍伤害时，它在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": "plant",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Bramble Mound",
+			"name": "荆棘丘",
+			"group": [
+				"荆棘士兵"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Shambling Mound",
+				"name": "蔓生怪",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "蔓生怪",
+							"with": "荆棘仔",
+							"flags": "i"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "蔓生怪",
+							"with": "荆棘仔",
+							"flags": "i"
+						}
+					],
+					"immune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"poison"
+						]
+					},
+					"conditionImmune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"charmed",
+							"poisoned"
+						]
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Thorny Defence",
+								"name": "棘刺防御",
+								"entries": [
+									"触碰荆棘仔、或在距其5尺内以近战攻击命中它的生物，受到相当于{@damage 2d4;3d6;4d6|可变伤害}一半的穿刺伤害。"
+								]
+							},
+							{
+								"ENG_name": "Ferrous Weakness",
+								"name": "铁质弱点",
+								"entries": [
+									"当荆棘仔在单次事件中受到来自铁质非魔法武器的{@damage 2d4;3d6;4d6|可变伤害}点或更多的钝击、穿刺或挥砍伤害时，它在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": "plant",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Bramble Treant",
+			"name": "荆棘树人",
+			"group": [
+				"荆棘士兵"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Treant",
+				"name": "树人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "树人",
+						"with": "荆棘仔",
+						"flags": "i"
+					},
+					"immune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"poison"
+						]
+					},
+					"conditionImmune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"charmed",
+							"poisoned"
+						]
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Thorny Defence",
+								"name": "棘刺防御",
+								"entries": [
+									"触碰荆棘仔、或在距其5尺内以近战攻击命中它的生物，受到相当于{@damage 2d4;3d6;4d6|可变伤害}一半的穿刺伤害。"
+								]
+							},
+							{
+								"ENG_name": "Ferrous Weakness",
+								"name": "铁质弱点",
+								"entries": [
+									"当荆棘仔在单次事件中受到来自铁质非魔法武器的{@damage 2d4;3d6;4d6|可变伤害}点或更多的钝击、穿刺或挥砍伤害时，它在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": "plant",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Bramble Tree",
+			"name": "荆棘树",
+			"group": [
+				"荆棘士兵"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Awakened Tree",
+				"name": "启蒙树木",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "静止的树木",
+							"with": "静止的荆棘仔",
+							"flags": "i"
+						}
+					],
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Thorny Defence",
+								"name": "棘刺防御",
+								"entries": [
+									"触碰荆棘仔、或在距其5尺内以近战攻击命中它的生物，受到相当于{@damage 2d4;3d6;4d6|可变伤害}一半的穿刺伤害。"
+								]
+							},
+							{
+								"ENG_name": "Ferrous Weakness",
+								"name": "铁质弱点",
+								"entries": [
+									"当荆棘仔在单次事件中受到来自铁质非魔法武器的{@damage 2d4;3d6;4d6|可变伤害}点或更多的钝击、穿刺或挥砍伤害时，它在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": "plant",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Emperor Jorfraust",
+			"name": "约弗劳斯特皇帝",
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"page": 23,
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 171,
+				"formula": "18d10 + 72"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 16,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 19,
+			"save": {
+				"dex": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+8"
+			},
+			"senses": [
+				"盲视 10 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"通用语",
+				"精灵语",
+				"巨人语",
+				"木族语"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当约弗劳斯特在单次事件中受到来自铁质非魔法武器的12点或更多钝击、穿刺或挥砍伤害时，他在其下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Ice Walk",
+					"name": "冰上行走",
+					"entries": [
+						"约弗劳斯特可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗他额外移动力。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"如果约弗劳斯特豁免检定失败，他可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"约弗劳斯特的武器攻击视为魔法攻击，并造成额外的7（{@damage 2d6}）点寒冷伤害（已计入攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Melancholic Presence",
+					"name": "忧郁威压",
+					"entries": [
+						"在约弗劳斯特30尺内开始其回合的生物必须成功通过一次{@dc 17}感知豁免检定，否则其速度降低10尺，且直至其下个回合开始，其进行的检定和攻击检定均具有劣势。非冬妖精进行此豁免检定时具有劣势，且一旦失败，其速度改为降低30尺，并无法使用动作或附赠动作。"
+					]
+				},
+				{
+					"ENG_name": "Winter's Heart (Recharges after a Short or Long Rest)",
+					"name": "凛冬之心（短休或长休后充能）",
+					"entries": [
+						"当约弗劳斯特将要被降至0生命值时，其当前生命值改为重置为171点，他的\"寒流\"重新充能，并恢复1次已消耗的\"传奇抗性\"使用次数。约弗劳斯特1英里内的天空中开始酝酿一场猛烈的暴风雪。受影响区域为轻度遮蔽，狂风使区域内其他生物的速度减半。此外，约弗劳斯特现在可以在1小时内使用\"神话动作\"栏中的选项。在\"凛冬之心\"触发后击败约弗劳斯特，队伍额外获得13,000点经验值（总计26,000点经验值）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"约弗劳斯特以爪击和冰锥的任意组合发动两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit +10}，触及10尺，单一目标。{@h}12（{@damage 2d6 + 5}）点挥砍伤害，外加7（{@damage 2d6}）点寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Icicle",
+					"name": "冰锥",
+					"entries": [
+						"{@atk rw} 命中{@hit +10}，射程120/360尺，单一目标。{@h}12（{@damage 2d6 + 5}）点穿刺伤害，外加7（{@damage 2d6}）点寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Endoleech",
+					"name": "内噬蛭",
+					"entries": [
+						"{@atk ms} 命中{@hit +9}，触及10尺，单一生物。{@h}24（{@damage 7d6}）点寒冷伤害，且直至目标下个回合结束，其速度降低15尺，而约弗劳斯特的速度提高15尺。"
+					]
+				},
+				{
+					"ENG_name": "Freezing Ray {@recharge 4}",
+					"name": "冰冻射线 {@recharge 4}",
+					"entries": [
+						"目标必须进行一次{@dc 17}敏捷豁免检定。豁免失败者受到21（{@damage 6d6}）点寒冷伤害，且该生物的速度减半，直至约弗劳斯特的下个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "Cold Snap {@recharge 5}",
+					"name": "寒流 {@recharge 5}",
+					"entries": [
+						"约弗劳斯特打个响指，一股冻结能量以他为中心在一个30尺球状区域内炸开。该区域内的生物必须进行一次{@dc 17}体质豁免检定。豁免失败的生物开始化为冰并被{@condition 束缚}。被{@condition 束缚}的生物必须在其下个回合结束时重复此豁免检定，失败则陷入{@condition 石化}，成功则结束此效应。以此方式陷入{@condition 石化}的生物获得14点临时生命值，并免疫火焰伤害以外的所有伤害。当这些临时生命值耗尽时，该生物便脱离冰牢，不再处于{@condition 石化}状态。豁免检定成功的生物在24小时内免疫约弗劳斯特的\"寒流\"。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"约弗劳斯特进行一次爪击或冰锥攻击。"
+					]
+				},
+				{
+					"ENG_name": "Ice Skate",
+					"name": "冰上疾驰",
+					"entries": [
+						"约弗劳斯特扬起一阵冰雪后疾掠而去；他移动至多其速度的一半，且不会引发借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Melancholy",
+					"name": "忧郁",
+					"entries": [
+						"约弗劳斯特向60尺内一个他能看见的生物倾泻一股悲伤洪流。该生物必须成功通过一次{@dc 17}感知豁免检定，否则陷入{@condition 魅惑}状态，直至约弗劳斯特的下个回合结束。妖精生物进行此豁免检定时具有劣势。以此方式陷入{@condition 魅惑}的生物速度减半、AC承受-2减值、敏捷豁免检定具有劣势、无法使用反应，且在其回合内只能使用一个动作或一个附赠动作（不可两者兼得）。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果约弗劳斯特的\"凛冬之心\"特质在过去一小时内触发过，他就可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Lunging Strike",
+					"name": "突进打击",
+					"entries": [
+						"约弗劳斯特移动至多其速度的一半且不引发借机攻击，并进行一次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Winter's Charge",
+					"name": "凛冬冲锋",
+					"entries": [
+						"约弗劳斯特引导冰之碎片掠过全身，如骤然爆发的冲刺般猛冲向前。他沿直线移动至多其速度的距离，并能穿过大型或更小生物的空间。在此次移动中，凡是被他穿过所占空间的生物都必须成功通过一次{@dc 18}敏捷豁免检定，否则受到10（{@damage 3d6}）点挥砍伤害外加7（{@damage 2d6}）点寒冷伤害，并被击{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Ice Mirage (Costs 2 Actions)",
+					"name": "冰之幻影（消耗2个动作）",
+					"entries": [
+						"约弗劳斯特施放{@spell 镜影术}。当一个分身被降至0生命值时，它会碎裂成参差的冰碎片，散布在10尺半径范围内。该区域内的其他每个生物都必须进行一次{@dc 17}敏捷豁免检定，失败者受到14（{@damage 4d6}）点寒冷伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Winter Fey",
+				"name": "冬之妖精",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Jorfraust.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"petrified",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Frostfall Bear",
+			"name": "霜落熊",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Brown Bear",
+				"name": "棕熊",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "熊",
+						"with": "霜落熊",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frostfall Boar",
+			"name": "霜落野猪人",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Wereboar",
+				"name": "野猪人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "野猪人",
+						"with": "霜落野猪人",
+						"flags": "i"
+					},
+					"immune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"cold"
+						]
+					},
+					"trait": [
+						{
+							"mode": "removeArr",
+							"names": [
+								"变形生物"
+							]
+						},
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Fey Heritage",
+									"name": "妖精血统",
+									"entries": [
+										"魔法无法使该生物入睡。"
+									]
+								},
+								{
+									"ENG_name": "Ice Walk",
+									"name": "冰上行走",
+									"entries": [
+										"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frostfall Chimera",
+			"name": "霜落奇美拉",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Chimera",
+				"name": "奇美拉",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "奇美拉",
+							"with": "霜落奇美拉",
+							"flags": "i"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "火焰",
+							"with": "寒冷",
+							"flags": "i"
+						}
+					],
+					"trait": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Fey Heritage",
+									"name": "妖精血统",
+									"entries": [
+										"魔法无法使该生物入睡。"
+									]
+								},
+								{
+									"ENG_name": "Ice Walk",
+									"name": "冰上行走",
+									"entries": [
+										"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+									]
+								}
+							]
+						}
+					],
+					"action": [
+						{
+							"mode": "renameArr",
+							"renames": {
+								"rename": "火焰吐息 {@recharge 5}",
+								"with": "寒冷吐息 {@recharge 5}"
+							}
+						}
+					]
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frostfall Giant",
+			"name": "霜落巨人",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Hill Giant",
+				"name": "山丘巨人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "巨人",
+						"with": "霜落巨人",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frostfall Horse",
+			"name": "霜落马",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Draft Horse",
+				"name": "驮用马",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "驮用马",
+						"with": "霜落马",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frostfall Wolf",
+			"name": "霜落狼",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Dire Wolf",
+				"name": "恐狼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狼",
+						"with": "霜落狼",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frostfall Wyrmling",
+			"name": "霜落雏龙",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Red Dragon Wyrmling",
+				"name": "红龙雏龙",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "龙",
+							"with": "霜落雏龙",
+							"flags": "i"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "火焰",
+							"with": "寒冷",
+							"flags": "i"
+						}
+					],
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					},
+					"action": [
+						{
+							"mode": "renameArr",
+							"renames": {
+								"rename": "火焰吐息 {@recharge 5}",
+								"with": "寒冷吐息 {@recharge 5}"
+							}
+						}
+					]
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frostfire Phoenix",
+			"name": "霜火菲涅克斯",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Hawk",
+				"name": "隼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鹰",
+						"with": "霜火菲涅克斯",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Icy Rebirth",
+								"name": "寒冰重生",
+								"entries": [
+									"如果霜火菲涅克斯死亡，它会在{@dice 1d4}天后复生并恢复所有生命值。只有{@spell 祈愿术}法术能阻止此特质生效。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"immune": [
+				"cold"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frosty",
+			"name": "霜霜",
+			"source": "BloodSS",
+			"page": 24,
+			"summonedByClass": "驯兽师|HelianasGuidetoMonsterHunting",
+			"size": [
+				"T"
+			],
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"Bespoke Companion",
+					"Crafted Familiar"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d4 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 15,
+			"int": 8,
+			"wis": 10,
+			"cha": 14,
+			"passive": 10,
+			"resist": [
+				"cold"
+			],
+			"cr": "1/8",
+			"pbNote": "等于你的加值",
+			"trait": [
+				{
+					"ENG_name": "Fire Susceptibility",
+					"name": "火焰易伤",
+					"entries": [
+						"当霜霜受到火焰伤害时，它会部分融化直至其下个回合结束，动作变得迟缓。处于融化状态时，霜霜的速度减半。"
+					]
+				},
+				{
+					"ENG_name": "Jolly Disposition",
+					"name": "愉快性情",
+					"entries": [
+						"霜霜为抵抗{@condition 恐慌}而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Horns",
+					"name": "角击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Infectious Joy (1/Day)",
+					"name": "感染喜悦（1/日）",
+					"entries": [
+						"当霜霜30尺内一个能看见或听见它的生物进行抵抗{@condition 恐慌}的豁免检定时，霜霜使该生物在此豁免检定中具有优势。"
+					]
+				}
+			],
+			"familiar": true,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Frosty.webp"
+			},
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant Frostfall Bear",
+			"name": "巨型霜落熊",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Polar Bear",
+				"name": "北极熊",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "熊",
+						"with": "巨型霜落熊",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Heir of Brambles",
+			"name": "荆棘继承人",
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"page": 19,
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "{@spell 树肤术}时为16",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 15,
+			"int": 15,
+			"wis": 13,
+			"cha": 17,
+			"save": {
+				"int": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"deception": "+6",
+				"insight": "+4",
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"cold",
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"深渊语",
+				"通用语",
+				"原初语",
+				"木族语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Combat Spellcasting",
+					"name": "先天战斗施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"女王的先天施法属性为魅力（法术豁免{@dc 14}，法术攻击{@hit +6}命中）。戏法以8级施法者的身份施展。她可以先天施展下列法术，且不需要任何材料组件："
+					],
+					"will": [
+						"{@spell 麻刺感|BloodSS}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 纠缠术}"
+						],
+						"2e": [
+							"{@spell 树肤术}（女王会在战斗前对自己施展此法术）",
+							"{@spell 镜影术}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当女王被铁质非魔法武器的命中造成4点或更多钝击、穿刺或挥砍伤害时，她在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (2/Day)",
+					"name": "传奇抗性（2/日）",
+					"entries": [
+						"如果女王豁免检定失败，她可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Soul (Recharges after a Short or Long Rest)",
+					"name": "暗影之魂（短休或长休后充能）",
+					"entries": [
+						"当女王将要被降至0生命值时，其当前生命值改为重置为58点，并且她的\"棘刺弹幕\"重新充能。一个由无法穿透的棘刺和荆棘构成的茧短暂地包裹住女王，随后在一道光影交织的闪光中裂开。一对蝙蝠般的暗影之翼从女王背后生出，她获得60尺飞行速度。在\"暗影之魂\"触发后击败女王，队伍额外获得1,800点经验值（总计3,600点经验值）。"
+					]
+				},
+				{
+					"ENG_name": "Soul Shield",
+					"name": "灵魂护盾",
+					"entries": [
+						"当荆棘女王处于谢尔10尺内时，她被一层坏死光环环绕。触碰女王、或在距其10尺内以近战攻击命中她的生物，受到3（{@damage 1d6}）点坏死伤害。"
+					]
+				},
+				{
+					"ENG_name": "Toxic Weapons",
+					"name": "毒性武器",
+					"entries": [
+						"女王的武器攻击视为魔法攻击，并在命中时造成额外的2（{@damage 1d4}）点坏死伤害（已计入攻击中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"女王施展一个法术，或使用妖精魅惑。她还会进行两次镰刀攻击。"
+					]
+				},
+				{
+					"ENG_name": "Sickle",
+					"name": "镰刀",
+					"entries": [
+						"{@atk mw} 命中{@hit +3}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点挥砍伤害，外加2（{@damage 1d4}）点坏死伤害。目标必须成功通过一次{@dc 14}体质豁免检定，否则陷入{@condition 中毒}状态1分钟。"
+					]
+				},
+				{
+					"ENG_name": "Fey Charm",
+					"name": "妖精魅惑",
+					"entries": [
+						"女王以30尺内一个她能看见的人形生物或野兽为目标。如果目标能看见女王，它就必须成功通过一次{@dc 14}感知豁免检定，否则将被女王魔法性地{@condition 魅惑}。被{@condition 魅惑}的生物视女王为值得听从和保护的可信朋友。虽然目标不受女王控制，但它会以尽可能有利的方式理解女王的请求和行动。",
+						"每当女王或其盟友对目标做出任何有害之事，目标都可以重复豁免检定，成功则结束其身上的这一效应。否则，该效应持续24小时，直至女王死亡、使用其神话特质、与目标处于不同位面，或以一个附赠动作结束该效应。如果目标豁免检定成功，则在接下来的24小时内免疫女王的妖精魅惑。",
+						"女王同一时间最多只能{@condition 魅惑}一个人形生物和最多三只野兽。"
+					]
+				},
+				{
+					"ENG_name": "Thorn Barrage {@recharge 5}",
+					"name": "棘刺弹幕 {@recharge 5}",
+					"entries": [
+						"女王沿一条60尺长、5尺宽的直线射出一波带毒的棘刺。该直线上的每个生物都必须进行一次{@dc 14}敏捷豁免检定，失败者受到7（{@damage 2d6}）点穿刺伤害和7（{@damage 2d6}）点坏死伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"女王进行一次镰刀攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bramble Dominion (Costs 2 Actions)",
+					"name": "荆棘领域（消耗2个动作）",
+					"entries": [
+						"女王以60尺内她能看见的一点为中心，召出一片半径20尺的荆棘。该区域内的每个生物都必须成功通过一次{@dc 14}敏捷豁免检定，否则受到7（{@damage 2d6}）点穿刺伤害，且其移动速度降至0尺，直至其下个回合结束。直至女王的下个回合结束，该区域如{@spell 荆棘丛生}法术般肆虐。谢尔和女王免疫这些效应。"
+					]
+				},
+				{
+					"ENG_name": "Soul Nova (Costs 2 Actions)",
+					"name": "灵魂新星（消耗2个动作）",
+					"entries": [
+						"当女王处于谢尔10尺内时，她可以开启一场灵魂仪式，散发出邪恶的红黑色光环，直至她移动或采取其他动作为止。女王和谢尔各恢复10（{@damage 2d6 + 3}）点生命值，且女王或谢尔10尺内的每个生物都必须进行一次{@dc 14}体质豁免检定，失败者受到3（{@damage 1d6}）点坏死伤害和3（{@damage 1d6}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果女王的神话特质处于激活状态，她在使用\"暗影汲魂\"后的1小时内，可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Reign of Darkness",
+					"name": "黑暗统治",
+					"entries": [
+						"女王振翅，释放出一团暗影尘雾。她10尺内的每个生物都必须成功通过一次{@dc 14}敏捷豁免检定，否则陷入{@condition 目盲}状态，直至其下个回合开始。随后女王可以飞行至多其飞行速度的一半。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Soul Drain",
+					"name": "暗影汲魂",
+					"entries": [
+						"女王以60尺内一个她能看见的生物为目标，试图汲取其灵魂。目标必须成功通过一次{@dc 14}魅力豁免检定，否则受到7（{@damage 2d6}）点坏死伤害，且直至其下个回合开始无法恢复生命值。女王恢复相当于所造成伤害一半的生命值。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "The Split Souls",
+				"name": "裂魂众",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/HeirOfBrambles.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Iris Clearwind",
+			"name": "艾瑞丝·清风",
+			"shortName": "艾瑞丝",
+			"isNpc": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "艾瑞丝",
+						"flags": "i"
+					}
+				}
+			},
+			"type": "fey",
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "King Jorfraust",
+			"name": "约弗劳斯特国王",
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"page": 22,
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d10 + 45"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 17,
+			"int": 13,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"dex": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+6"
+			},
+			"senses": [
+				"盲视 10 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"通用语",
+				"精灵语",
+				"巨人语",
+				"木族语"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当约弗劳斯特在单次事件中受到来自铁质非魔法武器的8点或更多钝击、穿刺或挥砍伤害时，他在其下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Ice Walk",
+					"name": "冰上行走",
+					"entries": [
+						"约弗劳斯特可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗他额外移动力。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"如果约弗劳斯特豁免检定失败，他可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"约弗劳斯特的武器攻击视为魔法攻击，并造成额外的4（{@damage 1d8}）点寒冷伤害（已计入攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Melancholic Presence",
+					"name": "忧郁威压",
+					"entries": [
+						"在约弗劳斯特20尺内开始其回合的生物必须成功通过一次{@dc 15}感知豁免检定，否则其速度降低10尺，且直至其下个回合开始，其进行的检定和攻击检定均具有劣势。非冬妖精进行此豁免检定时具有劣势，且一旦失败，其速度改为降低30尺，并无法使用动作或附赠动作。"
+					]
+				},
+				{
+					"ENG_name": "Winter's Heart (Recharges after a Short or Long Rest)",
+					"name": "凛冬之心（短休或长休后充能）",
+					"entries": [
+						"当约弗劳斯特将要被降至0生命值时，其当前生命值改为重置为127点，他的\"寒流\"重新充能，并恢复1次已消耗的\"传奇抗性\"使用次数。约弗劳斯特1英里内的天空中开始酝酿一场猛烈的暴风雪。受影响区域为轻度遮蔽，狂风使区域内其他生物的速度减半。此外，约弗劳斯特现在可以在1小时内使用\"神话动作\"栏中的选项。在\"凛冬之心\"触发后击败约弗劳斯特，队伍额外获得5,000点经验值（总计10,000点经验值）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"约弗劳斯特以爪击和冰锥的任意组合发动两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit +8}，触及10尺，单一目标。{@h}9（{@damage 2d4 + 4}）点挥砍伤害，外加4（{@damage 1d8}）点寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Icicle",
+					"name": "冰锥",
+					"entries": [
+						"{@atk rw} 命中{@hit +8}，射程120/360尺，单一目标。{@h}8（{@damage 1d8 + 4}）点穿刺伤害，外加4（{@damage 1d8}）点寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Endoleech",
+					"name": "内噬蛭",
+					"entries": [
+						"{@atk ms} 命中{@hit +7}，触及10尺，单一生物。{@h}17（{@damage 5d6}）点寒冷伤害，且直至目标下个回合结束，其速度降低15尺，而约弗劳斯特的速度提高15尺。"
+					]
+				},
+				{
+					"ENG_name": "Freezing Ray {@recharge 4}",
+					"name": "冰冻射线 {@recharge 4}",
+					"entries": [
+						"目标必须进行一次{@dc 15}敏捷豁免检定。豁免失败者受到14（{@damage 4d6}）点寒冷伤害，且该生物的速度减半，直至约弗劳斯特的下个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "Cold Snap {@recharge 5}",
+					"name": "寒流 {@recharge 5}",
+					"entries": [
+						"约弗劳斯特打个响指，一股冻结能量以他为中心在一个20尺球状区域内炸开。该区域内的生物必须进行一次{@dc 15}体质豁免检定。豁免失败的生物开始化为冰并被{@condition 束缚}。被{@condition 束缚}的生物必须在其下个回合结束时重复此豁免检定，失败则陷入{@condition 石化}，成功则结束此效应。以此方式陷入{@condition 石化}的生物获得7点临时生命值，并免疫火焰伤害以外的所有伤害。当这些临时生命值耗尽时，该生物便脱离冰牢，不再处于{@condition 石化}状态。豁免检定成功的生物在24小时内免疫约弗劳斯特的\"寒流\"。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"约弗劳斯特进行一次爪击或冰锥攻击。"
+					]
+				},
+				{
+					"ENG_name": "Ice Skate",
+					"name": "冰上疾驰",
+					"entries": [
+						"约弗劳斯特扬起一阵冰雪后疾掠而去；他移动至多其速度的一半，且不会引发借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Melancholy",
+					"name": "忧郁",
+					"entries": [
+						"约弗劳斯特向60尺内一个他能看见的生物倾泻一股悲伤洪流。该生物必须成功通过一次{@dc 15}感知豁免检定，否则陷入{@condition 魅惑}状态，直至约弗劳斯特的下个回合结束。妖精生物进行此豁免检定时具有劣势。以此方式陷入{@condition 魅惑}的生物速度减半、AC承受-2减值、敏捷豁免检定具有劣势、无法使用反应，且在其回合内只能使用一个动作或一个附赠动作（不可两者兼得）。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果约弗劳斯特的\"凛冬之心\"特质在过去一小时内触发过，他就可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Lunging Strike",
+					"name": "突进打击",
+					"entries": [
+						"约弗劳斯特移动至多其速度的一半且不引发借机攻击，并进行一次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Winter's Charge",
+					"name": "凛冬冲锋",
+					"entries": [
+						"约弗劳斯特引导冰之碎片掠过全身，如骤然爆发的冲刺般猛冲向前。他沿直线移动至多其速度的距离，并能穿过大型或更小生物的空间。在此次移动中，凡是被他穿过所占空间的生物都必须成功通过一次{@dc 16}敏捷豁免检定，否则受到7（{@damage 2d6}）点挥砍伤害外加3（{@damage 1d8}）点寒冷伤害，并被击{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Ice Mirage (Costs 2 Actions)",
+					"name": "冰之幻影（消耗2个动作）",
+					"entries": [
+						"约弗劳斯特施放{@spell 镜影术}。当一个分身被降至0生命值时，它会碎裂成参差的冰碎片，散布在10尺半径范围内。该区域内的其他每个生物都必须进行一次{@dc 15}敏捷豁免检定，失败者受到7（{@damage 2d6}）点寒冷伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Winter Fey",
+				"name": "冬之妖精",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Jorfraust.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"petrified",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lady Elspeth of the Silver Stream",
+			"name": "银溪的艾尔丝佩丝女士",
+			"shortName": "艾尔丝佩丝女士",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Sprite",
+				"name": "小仙灵",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "小妖精",
+						"with": "艾尔丝佩丝女士",
+						"flags": "i"
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Lady Mabalynne of the Starlight",
+			"name": "星光的玛芭琳女士",
+			"shortName": "玛芭琳女士",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Unicorn",
+				"name": "独角兽",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "独角兽",
+						"with": "玛芭琳女士",
+						"flags": "i"
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Lady of Brambles",
+			"name": "荆棘女士",
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"page": 20,
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "{@spell 树肤术}时为16",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 97,
+				"formula": "13d8 + 39"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 17,
+			"int": 16,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"int": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"insight": "+5",
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 15,
+			"resist": [
+				"cold",
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"深渊语",
+				"通用语",
+				"原初语",
+				"木族语"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Combat Spellcasting",
+					"name": "先天战斗施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"女王的先天施法属性为魅力（法术豁免{@dc 15}，法术攻击{@hit +7}命中）。戏法以8级施法者的身份施展。她可以先天施展下列法术，且不需要任何材料组件："
+					],
+					"will": [
+						"{@spell 麻刺感|BloodSS}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 纠缠术}",
+							"{@spell 镜影术}"
+						],
+						"2e": [
+							"{@spell 树肤术}（女王会在战斗前对自己施展此法术）",
+							"{@spell 激怒|BloodSS}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当女王被铁质非魔法武器的命中造成8点或更多钝击、穿刺或挥砍伤害时，她在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"如果女王豁免检定失败，她可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Soul (Recharges after a Short or Long Rest)",
+					"name": "暗影之魂（短休或长休后充能）",
+					"entries": [
+						"当女王将要被降至0生命值时，其当前生命值改为重置为97点，并且她的\"棘刺弹幕\"重新充能。一个由无法穿透的棘刺和荆棘构成的茧短暂地包裹住女王，随后在一道光影交织的闪光中裂开。一对蝙蝠般的暗影之翼从女王背后生出，她获得60尺飞行速度。在\"暗影之魂\"触发后击败女王，队伍额外获得3,900点经验值（总计7,800点经验值）。"
+					]
+				},
+				{
+					"ENG_name": "Soul Shield",
+					"name": "灵魂护盾",
+					"entries": [
+						"当荆棘女王处于谢尔10尺内时，她被一层坏死光环环绕。触碰女王、或在距其10尺内以近战攻击命中她的生物，受到5（{@damage 2d4}）点坏死伤害。"
+					]
+				},
+				{
+					"ENG_name": "Toxic Weapons",
+					"name": "毒性武器",
+					"entries": [
+						"女王的武器攻击视为魔法攻击，并在命中时造成额外的3（{@damage 1d6}）点坏死伤害（已计入攻击中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"女王施展一个法术，或使用妖精魅惑。她还会进行两次镰刀攻击。"
+					]
+				},
+				{
+					"ENG_name": "Sickle",
+					"name": "镰刀",
+					"entries": [
+						"{@atk mw} 命中{@hit +6}，触及5尺，单一目标。{@h}5（{@damage 1d4 + 3}）点挥砍伤害，外加3（{@damage 1d6}）点坏死伤害。目标必须成功通过一次{@dc 15}体质豁免检定，否则陷入{@condition 中毒}状态1分钟。"
+					]
+				},
+				{
+					"ENG_name": "Fey Charm",
+					"name": "妖精魅惑",
+					"entries": [
+						"女王以30尺内一个她能看见的人形生物或野兽为目标。如果目标能看见女王，它就必须成功通过一次{@dc 15}感知豁免检定，否则将被女王魔法性地{@condition 魅惑}。被{@condition 魅惑}的生物视女王为值得听从和保护的可信朋友。虽然目标不受女王控制，但它会以尽可能有利的方式理解女王的请求和行动。",
+						"每当女王或其盟友对目标做出任何有害之事，目标都可以重复豁免检定，成功则结束其身上的这一效应。否则，该效应持续24小时，直至女王死亡、使用其神话特质、与目标处于不同位面，或以一个附赠动作结束该效应。如果目标豁免检定成功，则在接下来的24小时内免疫女王的妖精魅惑。",
+						"女王同一时间最多只能{@condition 魅惑}一个人形生物和最多三只野兽。"
+					]
+				},
+				{
+					"ENG_name": "Thorn Barrage {@recharge 5}",
+					"name": "棘刺弹幕 {@recharge 5}",
+					"entries": [
+						"女王沿一条60尺长、5尺宽的直线射出一波带毒的棘刺。该直线上的每个生物都必须进行一次{@dc 15}敏捷豁免检定，失败者受到14（{@damage 4d6}）点穿刺伤害和14（{@damage 4d6}）点坏死伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"女王进行一次镰刀攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bramble Dominion (Costs 2 Actions)",
+					"name": "荆棘领域（消耗2个动作）",
+					"entries": [
+						"女王以60尺内她能看见的一点为中心，召出一片半径20尺的荆棘。该区域内的每个生物都必须成功通过一次{@dc 15}敏捷豁免检定，否则受到10（{@damage 3d6}）点穿刺伤害，且其移动速度降至0尺，直至其下个回合结束。直至女王的下个回合结束，该区域如{@spell 荆棘丛生}法术般肆虐。谢尔和女王免疫这些效应。"
+					]
+				},
+				{
+					"ENG_name": "Soul Nova (Costs 2 Actions)",
+					"name": "灵魂新星（消耗2个动作）",
+					"entries": [
+						"当女王处于谢尔10尺内时，她可以开启一场灵魂仪式，散发出邪恶的红黑色光环，直至她移动或采取其他动作为止。女王和谢尔各恢复16（{@damage 3d6 + 6}）点生命值，且女王或谢尔10尺内的每个生物都必须进行一次{@dc 15}体质豁免检定，失败者受到5（{@damage 2d4}）点坏死伤害和5（{@damage 2d4}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果女王的神话特质处于激活状态，她在使用\"暗影汲魂\"后的1小时内，可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Reign of Darkness",
+					"name": "黑暗统治",
+					"entries": [
+						"女王振翅，释放出一团暗影尘雾。她10尺内的每个生物都必须成功通过一次{@dc 15}敏捷豁免检定，否则陷入{@condition 目盲}状态，直至其下个回合开始。随后女王可以飞行至多其飞行速度的一半。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Soul Drain",
+					"name": "暗影汲魂",
+					"entries": [
+						"女王以60尺内一个她能看见的生物为目标，试图汲取其灵魂。目标必须成功通过一次{@dc 15}魅力豁免检定，否则受到10（{@damage 3d6}）点坏死伤害，且直至其下个回合开始无法恢复生命值。女王恢复相当于所造成伤害一半的生命值。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "The Split Souls",
+				"name": "裂魂众",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/HeirOfBrambles.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lady Rowan of the Red Leaves",
+			"name": "红叶的罗雯女士",
+			"shortName": "罗雯女士",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Dryad",
+				"name": "树精",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "树精",
+						"with": "罗雯女士",
+						"flags": "i"
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Lord Finlay of the Sapphire Sea",
+			"name": "蓝宝石海的芬利勋爵",
+			"shortName": "芬利勋爵",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Merfolk",
+				"name": "人鱼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "人鱼",
+						"with": "芬利勋爵",
+						"flags": "i"
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Lord Gavan of the Storm",
+			"name": "风暴的加文勋爵",
+			"shortName": "加文勋爵",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Air Elemental",
+				"name": "气元素",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "元素",
+							"with": "加文勋爵",
+							"flags": "i"
+						}
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Lord Thorne of the Ironwood",
+			"name": "铁木林的索恩勋爵",
+			"shortName": "索恩勋爵",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Satyr",
+				"name": "半羊人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "半羊人",
+						"with": "索恩勋爵",
+						"flags": "i"
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Mildred Magpie",
+			"name": "米尔德丽德·喜鹊",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Green Hag",
+				"name": "绿鬼婆",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鬼婆",
+						"with": "米尔德丽德",
+						"flags": "i"
+					}
+				}
+			},
+			"type": "fey",
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Pandora the White (Frostfall Frost Giant)",
+			"name": "白色的潘多拉（霜落霜巨人）",
+			"shortName": "潘多拉",
+			"group": [
+				"霜落守卫"
+			],
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frost Giant",
+				"name": "霜巨人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "巨人",
+						"with": "潘多拉",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Pandora the White (Frostfall Werebear)",
+			"name": "白色的潘多拉（霜落熊人）",
+			"shortName": "潘多拉",
+			"group": [
+				"霜落守卫"
+			],
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Werebear",
+				"name": "熊人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "熊人",
+						"with": "潘多拉",
+						"flags": "i"
+					},
+					"immune": {
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"cold"
+						]
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					},
+					"action": [
+						{
+							"mode": "renameArr",
+							"renames": {
+								"rename": "啃咬（仅熊与半人形态）",
+								"with": "啃咬"
+							}
+						},
+						{
+							"mode": "renameArr",
+							"renames": {
+								"rename": "爪击（仅熊与半人形态）",
+								"with": "爪击"
+							}
+						},
+						{
+							"mode": "renameArr",
+							"renames": {
+								"rename": "巨斧（仅类人与半人形态）",
+								"with": "巨斧"
+							}
+						}
+					]
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"ac": [
+				11
+			],
+			"speed": {
+				"walk": 30
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Pandora the White (Frostfall Winter Wolf)",
+			"name": "白色的潘多拉（霜落冬狼）",
+			"shortName": "潘多拉",
+			"group": [
+				"霜落守卫"
+			],
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Winter Wolf",
+				"name": "冬狼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狼",
+						"with": "潘多拉",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Prince Jorfraust",
+			"name": "约弗劳斯特王子",
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"page": 21,
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 97,
+				"formula": "13d10 + 26"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 12,
+			"wis": 13,
+			"cha": 15,
+			"save": {
+				"dex": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"通用语",
+				"精灵语",
+				"巨人语",
+				"木族语"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当约弗劳斯特在单次事件中受到来自铁质非魔法武器的4点或更多钝击、穿刺或挥砍伤害时，他在其下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Ice Walk",
+					"name": "冰上行走",
+					"entries": [
+						"约弗劳斯特可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗他额外移动力。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (2/Day)",
+					"name": "传奇抗性（2/日）",
+					"entries": [
+						"如果约弗劳斯特豁免检定失败，他可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"约弗劳斯特的武器攻击视为魔法攻击，并造成额外的2（{@damage 1d4}）点寒冷伤害（已计入攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Winter's Heart (Recharges after a Short or Long Rest)",
+					"name": "凛冬之心（短休或长休后充能）",
+					"entries": [
+						"当约弗劳斯特将要被降至0生命值时，其当前生命值改为重置为97点，他的\"寒流\"重新充能，并恢复1次已消耗的\"传奇抗性\"使用次数。约弗劳斯特1英里内的天空中开始酝酿一场猛烈的暴风雪。受影响区域为轻度遮蔽，狂风使区域内其他生物的速度减半。此外，约弗劳斯特现在可以在1小时内使用\"神话动作\"栏中的选项。在\"凛冬之心\"触发后击败约弗劳斯特，队伍额外获得1,100点经验值（总计2,200点经验值）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"约弗劳斯特以爪击和冰锥的任意组合发动两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit +5}，触及10尺，单一目标。{@h}7（{@damage 1d8 + 3}）点挥砍伤害，外加2（{@damage 1d4}）点寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Icicle",
+					"name": "冰锥",
+					"entries": [
+						"{@atk rw} 命中{@hit +5}，射程120尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害，外加2（{@damage 1d4}）点寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Endoleech",
+					"name": "内噬蛭",
+					"entries": [
+						"{@atk ms} 命中{@hit +4}，触及10尺，单一目标。{@h}10（{@damage 3d6}）点寒冷伤害，且直至目标下个回合结束，其速度降低15尺，而约弗劳斯特的速度提高15尺。"
+					]
+				},
+				{
+					"ENG_name": "Cold Snap {@recharge 5}",
+					"name": "寒流 {@recharge 5}",
+					"entries": [
+						"约弗劳斯特打个响指，一股冻结能量以他为中心在一个10尺球状区域内炸开。该区域内的生物必须进行一次{@dc 12}体质豁免检定。豁免失败的生物开始化为冰并被{@condition 束缚}。被{@condition 束缚}的生物必须在其下个回合结束时重复此豁免检定，失败则陷入{@condition 石化}，成功则结束此效应。以此方式陷入{@condition 石化}的生物获得3点临时生命值，并免疫火焰伤害以外的所有伤害。当这些临时生命值耗尽时，该生物便脱离冰牢，不再处于{@condition 石化}状态。豁免检定成功的生物在24小时内免疫约弗劳斯特的\"寒流\"。"
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"约弗劳斯特进行一次爪击或冰锥攻击。"
+					]
+				},
+				{
+					"ENG_name": "Ice Skate",
+					"name": "冰上疾驰",
+					"entries": [
+						"约弗劳斯特扬起一阵冰雪后疾掠而去；他移动至多其速度的一半，且不会引发借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Melancholy",
+					"name": "忧郁",
+					"entries": [
+						"约弗劳斯特向60尺内一个他能看见的生物倾泻一股悲伤洪流。该生物必须成功通过一次{@dc 12}感知豁免检定，否则陷入{@condition 魅惑}状态，直至约弗劳斯特的下个回合结束。妖精类型的生物进行此豁免检定时具有劣势。以此方式陷入{@condition 魅惑}的生物速度减半、AC承受-2减值、敏捷豁免检定具有劣势、无法使用反应，且在其回合内只能使用一个动作或一个附赠动作（不可两者兼得）。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果约弗劳斯特的\"凛冬之心\"特质在过去一小时内触发过，他就可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Lunging Strike",
+					"name": "突进打击",
+					"entries": [
+						"约弗劳斯特移动至多其速度的一半且不引发借机攻击，并进行一次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Winter's Charge",
+					"name": "凛冬冲锋",
+					"entries": [
+						"约弗劳斯特引导冰之碎片掠过全身，如骤然爆发的冲刺般猛冲向前。他沿直线移动至多其移动速度的距离。在此次移动中，凡是被他穿过所占空间的生物都必须成功通过一次{@dc 13}敏捷豁免检定，否则受到3（{@damage 1d6}）点挥砍伤害外加3（{@damage 1d6}）点寒冷伤害，并被击{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Ice Mirage (Costs 2 Actions)",
+					"name": "冰之幻影（消耗2个动作）",
+					"entries": [
+						"约弗劳斯特施放{@spell 镜影术}。当一个分身被降至0生命值时，它会碎裂成参差的冰碎片，散布在10尺半径范围内。受影响区域内的生物必须进行一次{@dc 12}敏捷豁免检定，失败者受到3（{@damage 1d6}）点寒冷伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Winter Fey",
+				"name": "冬之妖精",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Jorfraust.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"petrified",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Queen of Brambles",
+			"name": "荆棘女王",
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"page": 20,
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"condition": "{@spell 树肤术}时为16",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 17,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"int": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"deception": "+14",
+				"insight": "+7",
+				"perception": "+7",
+				"stealth": "+8"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"深渊语",
+				"通用语",
+				"原初语",
+				"木族语"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Combat Spellcasting",
+					"name": "先天战斗施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"女王的先天施法属性为魅力（法术豁免{@dc 17}，法术攻击{@hit +9}命中）。戏法以13级施法者的身份施展。她可以先天施展下列法术，且不需要任何材料组件："
+					],
+					"will": [
+						"{@spell 致死脉动|BloodSS}",
+						"{@spell 麻刺感|BloodSS}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 纠缠术}",
+							"{@spell 镜影术}"
+						],
+						"2e": [
+							"{@spell 树肤术}（女王会在战斗前对自己施展此法术）",
+							"{@spell 激怒|BloodSS}",
+							"{@spell 裂魂|BloodSS}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当女王被铁质非魔法武器的命中造成12点或更多钝击、穿刺或挥砍伤害时，她在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"如果女王豁免检定失败，她可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Soul (Recharges after a Short or Long Rest)",
+					"name": "暗影之魂（短休或长休后充能）",
+					"entries": [
+						"当女王将要被降至0生命值时，其当前生命值改为重置为136点，并且她的\"棘刺弹幕\"重新充能。一个由无法穿透的棘刺和荆棘构成的茧短暂地包裹住女王，随后在一道光影交织的闪光中裂开。一对蝙蝠般的暗影之翼从女王背后生出，她获得60尺飞行速度。在\"暗影之魂\"触发后击败女王，队伍额外获得10,000点经验值（总计20,000点经验值）。"
+					]
+				},
+				{
+					"ENG_name": "Soul Shield",
+					"name": "灵魂护盾",
+					"entries": [
+						"当荆棘女王处于谢尔10尺内时，她被一层坏死光环环绕。触碰女王、或在距其10尺内以近战攻击命中她的生物，受到7（{@damage 2d6}）点坏死伤害。"
+					]
+				},
+				{
+					"ENG_name": "Toxic Weapons",
+					"name": "毒性武器",
+					"entries": [
+						"女王的武器攻击视为魔法攻击，并在命中时造成额外的5（{@damage 2d4}）点坏死伤害（已计入攻击中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"女王施展一个法术，或使用妖精魅惑。她还会进行两次镰刀攻击。"
+					]
+				},
+				{
+					"ENG_name": "Sickle",
+					"name": "镰刀",
+					"entries": [
+						"{@atk mw} 命中{@hit +9}，触及5尺，单一目标。{@h}6（{@damage 1d4 + 4}）点挥砍伤害，外加5（{@damage 2d4}）点坏死伤害。目标必须成功通过一次{@dc 17}体质豁免检定，否则陷入{@condition 中毒}状态1分钟。"
+					]
+				},
+				{
+					"ENG_name": "Fey Charm",
+					"name": "妖精魅惑",
+					"entries": [
+						"女王以30尺内一个她能看见的人形生物或野兽为目标。如果目标能看见女王，它就必须成功通过一次{@dc 17}感知豁免检定，否则将被女王魔法性地{@condition 魅惑}。被{@condition 魅惑}的生物视女王为值得听从和保护的可信朋友。虽然目标不受女王控制，但它会以尽可能有利的方式理解女王的请求和行动。",
+						"每当女王或其盟友对目标做出任何有害之事，目标都可以重复豁免检定，成功则结束其身上的这一效应。否则，该效应持续24小时，直至女王死亡、使用其神话特质、与目标处于不同位面，或以一个附赠动作结束该效应。如果目标豁免检定成功，则在接下来的24小时内免疫女王的妖精魅惑。",
+						"女王同一时间最多只能{@condition 魅惑}一个人形生物和最多三只野兽。"
+					]
+				},
+				{
+					"ENG_name": "Thorn Barrage {@recharge 5}",
+					"name": "棘刺弹幕 {@recharge 5}",
+					"entries": [
+						"女王沿一条60尺长、5尺宽的直线射出一波带毒的棘刺。该直线上的每个生物都必须进行一次{@dc 17}敏捷豁免检定，失败者受到21（{@damage 6d6}）点穿刺伤害和21（{@damage 6d6}）点坏死伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"女王进行一次镰刀攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bramble Dominion (Costs 2 Actions)",
+					"name": "荆棘领域（消耗2个动作）",
+					"entries": [
+						"女王以60尺内她能看见的一点为中心，召出一片半径20尺的荆棘。该区域内的每个生物都必须成功通过一次{@dc 17}敏捷豁免检定，否则受到14（{@damage 4d6}）点穿刺伤害，且其移动速度降至0尺，直至其下个回合结束。直至女王的下个回合结束，该区域如{@spell 荆棘丛生}法术般肆虐。谢尔和女王免疫这些效应。"
+					]
+				},
+				{
+					"ENG_name": "Soul Nova (Costs 2 Actions)",
+					"name": "灵魂新星（消耗2个动作）",
+					"entries": [
+						"当女王处于谢尔10尺内时，她可以开启一场灵魂仪式，散发出邪恶的红黑色光环，直至她移动或采取其他动作为止。女王和谢尔各恢复24（{@damage 4d6 + 10}）点生命值，且女王或谢尔10尺内的每个生物都必须进行一次{@dc 17}体质豁免检定，失败者受到7（{@damage 2d6}）点坏死伤害和7（{@damage 2d6}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果女王的神话特质处于激活状态，她在使用\"暗影汲魂\"后的1小时内，可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Reign of Darkness",
+					"name": "黑暗统治",
+					"entries": [
+						"女王振翅，释放出一团暗影尘雾。她10尺内的每个生物都必须成功通过一次{@dc 17}敏捷豁免检定，否则陷入{@condition 目盲}状态，直至其下个回合开始。随后女王可以飞行至多其飞行速度的一半。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Soul Drain",
+					"name": "暗影汲魂",
+					"entries": [
+						"女王以60尺内一个她能看见的生物为目标，试图汲取其灵魂。目标必须成功通过一次{@dc 17}魅力豁免检定，否则受到18（{@damage 4d8}）点坏死伤害，且直至其下个回合开始无法恢复生命值。女王恢复相当于所造成伤害一半的生命值。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "The Split Souls",
+				"name": "裂魂众",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/HeirOfBrambles.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shadowstalker",
+			"name": "暗影潜猎兽",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Cat",
+				"name": "猫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "猫",
+						"with": "暗影潜猎兽",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Invisibility",
+								"name": "隐形术",
+								"entries": [
+									"暗影潜猎兽魔法性地进入{@condition 隐形}状态，直至它进行攻击或其{@status 专注}结束（如同专注一个法术）。暗影潜猎兽穿戴或携带的任何装备也随之隐形。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"speed": {
+				"walk": 40,
+				"climb": 30,
+				"fly": 40
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sunsworn Heir",
+			"name": "誓日者继承人",
+			"source": "BloodSS",
+			"page": 24,
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"皮甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 15,
+			"con": 14,
+			"int": 13,
+			"wis": 13,
+			"cha": 17,
+			"save": {
+				"dex": "+5",
+				"int": "+4",
+				"wis": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"arcana": "+4",
+				"insight": "+4",
+				"nature": "+4",
+				"perception": "+4"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"通用语",
+				"精灵语",
+				"木族语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Blessed Weapons",
+					"name": "受祝武器",
+					"entries": [
+						"谢尔的武器攻击视为魔法攻击，并在命中时造成额外的2（{@damage 1d4}）点光耀伤害（已计入攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当谢尔被铁质非魔法武器的命中造成4点或更多钝击、穿刺或挥砍伤害时，她在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"如果谢尔豁免检定失败，她可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Nimble Escape",
+					"name": "迅捷逃逸",
+					"entries": [
+						"谢尔可以在其每个回合用附赠动作进行撤离或躲藏动作。"
+					]
+				},
+				{
+					"ENG_name": "Solar Soul (Recharges after a Short or Long Rest)",
+					"name": "烈阳之魂（短休或长休后充能）",
+					"entries": [
+						"当谢尔将要被降至0生命值时，其当前生命值改为重置为65点，并且她的\"日焰\"重新充能。一个由无法穿透的藤蔓与花朵构成的茧短暂地包裹住谢尔，随后在一道流光溢彩的闪光中裂开。一对蝴蝶般的翅膀从谢尔背后生出，她获得60尺飞行速度。在\"烈阳之魂\"触发后击败谢尔，队伍额外获得1,800点经验值（总计3,600点经验值）。"
+					]
+				},
+				{
+					"ENG_name": "Soul Shield",
+					"name": "灵魂护盾",
+					"entries": [
+						"当谢尔处于荆棘女王10尺内时，她被一层光耀光环环绕。触碰女王、或在距其10尺内以近战攻击命中她的生物，受到3（{@damage 1d6}）点光耀伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"谢尔使用她的王者命令，并进行三次徒手打击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit +5}，触及10尺，单一目标。{@h}4（{@damage 1d4 + 2}）点钝击伤害和2（{@damage 1d4}）点光耀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Royal Command",
+					"name": "皇室指令",
+					"entries": [
+						"谢尔向施法距离内一个她能看见的生物说出一词命令。目标必须成功通过一次{@dc 14}感知豁免检定，否则须在其下个回合执行该命令。如果目标是不死生物、无法理解谢尔的语言，或该命令对它有直接危害，则此法术无效。"
+					]
+				},
+				{
+					"ENG_name": "Solar Flare {@recharge 5}",
+					"name": "太阳耀斑 {@recharge 5}",
+					"entries": [
+						"谢尔从双拳喷涌出一道神圣能量，覆盖60尺锥状区域。该区域内的每个生物都必须进行一次{@dc 14}敏捷豁免检定，失败者受到7（{@damage 2d6}）点火焰伤害和7（{@damage 2d6}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"谢尔进行一次徒手打击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Soul Nova (Costs 2 Actions)",
+					"name": "灵魂新星（消耗2个动作）",
+					"entries": [
+						"当谢尔处于荆棘女王10尺内时，可以开启一场灵魂仪式，散发出金银色的光环，直至她移动或采取其他动作为止。谢尔和荆棘女王各移除一项正困扰自己的状态（自选），且女王或谢尔10尺内的每个生物都必须进行一次{@dc 14}体质豁免检定，失败者受到3（{@damage 1d6}）点坏死伤害和3（{@damage 1d6}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果谢尔的神话特质处于激活状态，她在使用\"暗影之魂\"后的1小时内，可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Faerie Wing Attack",
+					"name": "妖精振翅攻击",
+					"entries": [
+						"谢尔振翅，洒下一片闪烁的尘雾。谢尔10尺内的每个生物都必须成功通过一次{@dc 14}感知豁免检定，否则陷入昏沉状态，直至其下个回合结束。昏沉的生物在属性检定和攻击检定上具有劣势，且速度减半。"
+					]
+				},
+				{
+					"ENG_name": "Sunsworn Soul (Costs 2 Actions)",
+					"name": "誓日者之魂（消耗2个动作）",
+					"entries": [
+						"谢尔在30尺半径范围内释放一阵光耀能量的爆发。该区域内的生物必须进行一次{@dc 14}体质豁免检定，失败者受到14（{@damage 4d6}）点光耀伤害并陷入{@condition 目盲}状态，直至其下个回合开始；成功则只受一半伤害，且不会{@condition 目盲}。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "The Split Souls",
+				"name": "裂魂众",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/SunswornPrincess.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sunsworn Lady",
+			"name": "誓日者女士",
+			"source": "BloodSS",
+			"page": 24,
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"皮甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 97,
+				"formula": "13d8 + 26"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 15,
+			"int": 14,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+6",
+				"int": "+5",
+				"wis": "+5",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+5",
+				"insight": "+5",
+				"nature": "+5",
+				"perception": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 15,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"通用语",
+				"精灵语",
+				"木族语"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Blessed Weapons",
+					"name": "受祝武器",
+					"entries": [
+						"谢尔的武器攻击视为魔法攻击，并在命中时造成额外的3（{@damage 1d6}）点光耀伤害（已计入攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当谢尔被铁质非魔法武器的命中造成8点或更多钝击、穿刺或挥砍伤害时，她在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"如果谢尔豁免检定失败，她可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Nimble Escape",
+					"name": "迅捷逃逸",
+					"entries": [
+						"谢尔可以在其每个回合用附赠动作进行撤离或躲藏动作。"
+					]
+				},
+				{
+					"ENG_name": "Solar Soul (Recharges after a Short or Long Rest)",
+					"name": "烈阳之魂（短休或长休后充能）",
+					"entries": [
+						"当谢尔将要被降至0生命值时，其当前生命值改为重置为97点，并且她的\"日焰\"重新充能。一个由无法穿透的藤蔓与花朵构成的茧短暂地包裹住谢尔，随后在一道流光溢彩的闪光中裂开。一对蝴蝶般的翅膀从谢尔背后生出，她获得60尺飞行速度。在\"烈阳之魂\"触发后击败谢尔，队伍额外获得3,900点经验值（总计7,800点经验值）。"
+					]
+				},
+				{
+					"ENG_name": "Soul Shield",
+					"name": "灵魂护盾",
+					"entries": [
+						"当谢尔处于荆棘女王10尺内时，她被一层光耀光环环绕。触碰女王、或在距其10尺内以近战攻击命中她的生物，受到5（{@damage 2d4}）点光耀伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"谢尔使用她的王者命令，并进行三次徒手打击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit +6}，触及10尺，单一目标。{@h}5（{@damage 1d4 + 3}）点钝击伤害和3（{@damage 1d6}）点光耀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Royal Command",
+					"name": "皇室指令",
+					"entries": [
+						"谢尔向施法距离内一个她能看见的生物说出一词命令。目标必须成功通过一次{@dc 15}感知豁免检定，否则须在其下个回合执行该命令。如果目标是不死生物、无法理解谢尔的语言，或该命令对它有直接危害，则此法术无效。"
+					]
+				},
+				{
+					"ENG_name": "Solar Flare {@recharge 5}",
+					"name": "太阳耀斑 {@recharge 5}",
+					"entries": [
+						"谢尔从双拳喷涌出一道神圣能量，覆盖60尺锥状区域。该区域内的每个生物都必须进行一次{@dc 15}敏捷豁免检定，失败者受到10（{@damage 3d6}）点火焰伤害和10（{@damage 3d6}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"谢尔进行一次徒手打击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Soul Nova (Costs 2 Actions)",
+					"name": "灵魂新星（消耗2个动作）",
+					"entries": [
+						"当谢尔处于荆棘女王10尺内时，可以开启一场灵魂仪式，散发出金银色的光环，直至她移动或采取其他动作为止。谢尔和荆棘女王各移除一项正困扰自己的状态（自选），且女王或谢尔10尺内的每个生物都必须进行一次{@dc 15}体质豁免检定，失败者受到5（{@damage 2d4}）点坏死伤害和5（{@damage 2d4}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果谢尔的神话特质处于激活状态，她在使用\"暗影之魂\"后的1小时内，可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Faerie Wing Attack",
+					"name": "妖精振翅攻击",
+					"entries": [
+						"谢尔振翅，洒下一片闪烁的尘雾。谢尔10尺内的每个生物都必须成功通过一次{@dc 15}感知豁免检定，否则陷入昏沉状态，直至其下个回合结束。昏沉的生物在属性检定和攻击检定上具有劣势，且速度减半。"
+					]
+				},
+				{
+					"ENG_name": "Sunsworn Soul (Costs 2 Actions)",
+					"name": "誓日者之魂（消耗2个动作）",
+					"entries": [
+						"谢尔在30尺半径范围内释放一阵光耀能量的爆发。该区域内的生物必须进行一次{@dc 15}体质豁免检定，失败者受到20（{@damage 6d6}）点光耀伤害并陷入{@condition 目盲}状态，直至其下个回合开始；成功则只受一半伤害，且不会{@condition 目盲}。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "The Split Souls",
+				"name": "裂魂众",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/SunswornPrincess.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sunsworn Princess",
+			"name": "誓日者公主",
+			"source": "BloodSS",
+			"page": 24,
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"皮甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 127,
+				"formula": "17d8 + 51"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 16,
+			"int": 15,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"int": "+7",
+				"wis": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+7",
+				"insight": "+8",
+				"nature": "+7",
+				"perception": "+8"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 18,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"通用语",
+				"精灵语",
+				"木族语"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"ENG_name": "Blessed Weapons",
+					"name": "受祝武器",
+					"entries": [
+						"谢尔的武器攻击视为魔法攻击，并在命中时造成额外的5（{@damage 2d4}）点光耀伤害（已计入攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Ferrous Weakness",
+					"name": "铁质弱点",
+					"entries": [
+						"当谢尔被铁质非魔法武器的命中造成12点或更多钝击、穿刺或挥砍伤害时，她在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"如果谢尔豁免检定失败，她可以改为判定成功。"
+					]
+				},
+				{
+					"ENG_name": "Nimble Escape",
+					"name": "迅捷逃逸",
+					"entries": [
+						"谢尔可以在其每个回合用附赠动作进行撤离或躲藏动作。"
+					]
+				},
+				{
+					"ENG_name": "Solar Soul (Recharges after a Short or Long Rest)",
+					"name": "烈阳之魂（短休或长休后充能）",
+					"entries": [
+						"当谢尔将要被降至0生命值时，其当前生命值改为重置为127点，并且她的\"日焰\"重新充能。一个由无法穿透的藤蔓与花朵构成的茧短暂地包裹住谢尔，随后在一道流光溢彩的闪光中裂开。一对蝴蝶般的翅膀从谢尔背后生出，她获得60尺飞行速度。在\"烈阳之魂\"触发后击败谢尔，队伍额外获得10,000点经验值（总计20,000点经验值）。"
+					]
+				},
+				{
+					"ENG_name": "Soul Shield",
+					"name": "灵魂护盾",
+					"entries": [
+						"当谢尔处于荆棘女王10尺内时，她被一层光耀光环环绕。触碰女王、或在距其10尺内以近战攻击命中她的生物，受到7（{@damage 2d6}）点光耀伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"谢尔使用她的王者命令，并进行三次徒手打击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit +9}，触及10尺，单一目标。{@h}6（{@damage 1d4 + 4}）点钝击伤害和5（{@damage 2d4}）点光耀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Royal Command",
+					"name": "皇室指令",
+					"entries": [
+						"谢尔向施法距离内一个她能看见的生物说出一词命令。目标必须成功通过一次{@dc 17}感知豁免检定，否则须在其下个回合执行该命令。如果目标是不死生物、无法理解谢尔的语言，或该命令对它有直接危害，则此法术无效。"
+					]
+				},
+				{
+					"ENG_name": "Solar Flare {@recharge 5}",
+					"name": "太阳耀斑 {@recharge 5}",
+					"entries": [
+						"谢尔从双拳喷涌出一道神圣能量，覆盖60尺锥状区域。该区域内的每个生物都必须进行一次{@dc 17}敏捷豁免检定，失败者受到14（{@damage 4d6}）点火焰伤害和14（{@damage 4d6}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Dodge",
+					"name": "回避",
+					"entries": [
+						"面对一次将要命中谢尔的近战攻击，她的AC获得+2加值。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"谢尔进行一次徒手打击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Soul Nova (Costs 2 Actions)",
+					"name": "灵魂新星（消耗2个动作）",
+					"entries": [
+						"当谢尔处于荆棘女王10尺内时，可以开启一场灵魂仪式，散发出金银色的光环，直至她移动或采取其他动作为止。谢尔和荆棘女王各移除一项正困扰自己的状态（自选），且女王或谢尔10尺内的每个生物都必须进行一次{@dc 17}体质豁免检定，失败者受到7（{@damage 2d6}）点坏死伤害和7（{@damage 2d6}）点光耀伤害，成功则只受一半伤害。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"如果谢尔的神话特质处于激活状态，她在使用\"暗影之魂\"后的1小时内，可以使用以下选项作为传奇动作。"
+			],
+			"mythic": [
+				{
+					"ENG_name": "Faerie Wing Attack",
+					"name": "妖精振翅攻击",
+					"entries": [
+						"谢尔振翅，洒下一片闪烁的尘雾。谢尔10尺内的每个生物都必须成功通过一次{@dc 17}感知豁免检定，否则陷入昏沉状态，直至其下个回合结束。昏沉的生物在属性检定和攻击检定上具有劣势，且速度减半。"
+					]
+				},
+				{
+					"ENG_name": "Sunsworn Soul (Costs 2 Actions)",
+					"name": "誓日者之魂（消耗2个动作）",
+					"entries": [
+						"谢尔在30尺半径范围内释放一阵光耀能量的爆发。该区域内的生物必须进行一次{@dc 17}体质豁免检定，失败者受到27（{@damage 8d6}）点光耀伤害并陷入{@condition 目盲}状态，直至其下个回合开始；成功则只受一半伤害，且不会{@condition 目盲}。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "The Split Souls",
+				"name": "裂魂众",
+				"source": "BloodSS"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/SunswornPrincess.webp"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Wrabit",
+			"name": "拉比特",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Imp",
+				"name": "小魔鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "小魔鬼",
+						"with": "拉比特",
+						"flags": "i"
+					}
+				}
+			},
+			"speed": {
+				"walk": 20
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Young Frostfall Dragon",
+			"name": "幼年霜落龙",
+			"group": [
+				"霜落守卫"
+			],
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Young Bronze Dragon",
+				"name": "青年青铜龙",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "龙",
+							"with": "幼年霜落龙",
+							"flags": "i"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "闪电",
+							"with": "寒冷",
+							"flags": "i"
+						}
+					],
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Heritage",
+								"name": "妖精血统",
+								"entries": [
+									"魔法无法使该生物入睡。"
+								]
+							},
+							{
+								"ENG_name": "Ice Walk",
+								"name": "冰上行走",
+								"entries": [
+									"该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "fey",
+				"tags": [
+					"冬"
+				]
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"hasFluff": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"ENG_name": "Bramble Boar",
+			"name": "荆棘野猪",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Bramble Tree",
+				"name": "荆棘树",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Bramble Knight",
+			"name": "荆棘骑士",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Bramble Tree",
+				"name": "荆棘树",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Bramble Mound",
+			"name": "荆棘丘",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Bramble Tree",
+				"name": "荆棘树",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Bramble Treant",
+			"name": "荆棘树人",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Bramble Tree",
+				"name": "荆棘树",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Bramble Tree",
+			"name": "荆棘树",
+			"source": "BloodSS",
+			"entries": [
+				{
+					"ENG_name": "Bramble Soldiers",
+					"type": "entries",
+					"name": "荆棘士兵",
+					"entries": [
+						"荆棘士兵使用各波战斗中引用的数据，并作以下调整：",
+						{
+							"type": "list",
+							"items": [
+								"它属于植物。",
+								"它免疫毒素伤害。",
+								"它免疫{@condition 魅惑}和{@condition 中毒}状态。",
+								"它拥有\"棘刺防御\"和\"铁质弱点\"特质。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Emperor Jorfraust",
+			"name": "约弗劳斯特皇帝",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Prince Jorfraust",
+				"name": "约弗劳斯特王子",
+				"source": "BloodSS"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Jorfraust.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Frostfall Bear",
+			"name": "霜落熊",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Frostfall Boar",
+			"name": "霜落野猪人",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Frostfall Chimera",
+			"name": "霜落奇美拉",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Frostfall Giant",
+			"name": "霜落巨人",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Frostfall Horse",
+			"name": "霜落马",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Frostfall Wolf",
+			"name": "霜落狼",
+			"source": "BloodSS",
+			"entries": [
+				{
+					"ENG_name": "Frostfall Defenders",
+					"type": "entries",
+					"name": "霜落守卫",
+					"entries": [
+						"各种适应严寒的生物纷纷聚集到约弗劳斯特的旗帜之下，如今以霜落王国为家。它们中有许多在针叶林中游荡、猎杀昔日居民，另一些则聚集在誓日者庭院中保卫它们的国王。这些生物通常不会比邻而居，唯有这个新王国的许诺让它们为了一个共同目标结成同盟\u2014\u2014它们会战斗至死来保卫自己的新家园。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Frostfall Wyrmling",
+			"name": "霜落雏龙",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Frostfire Phoenix",
+			"name": "霜火菲涅克斯",
+			"source": "BloodSS",
+			"entries": [
+				"霜火菲涅克斯是一种威严的猛禽，3尺长的翼展由冻结火焰构成、闪烁微光的羽毛铺就。这些精致的生物拥有锐利的蓝宝石色双眼，以及一种凶猛而高贵的仪态。霜火菲涅克斯以死亡时化身为烈焰的能力著称\u2014\u2014它会熔化当前的形骸，并从由此形成的融雪水洼中重生。"
+			]
+		},
+		{
+			"ENG_name": "Frosty",
+			"name": "霜霜",
+			"source": "BloodSS",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"如果你真想把一只霜霜带进酒馆，至少要懂得谨慎一点。露特西娅还在气恼阿尔塞纳更喜欢雪人的黄油朗姆酒而不是她调的，我可没法再忍受一场为此而起的雪球大战了。我还没从上一次缓过来......"
+					],
+					"by": "汉珀丁克（轻微脑震荡）"
+				},
+				"当一个冬妖精的精魂被魔法注入一堆雪中，便诞生了霜霜：一只充满独特小癖好的快乐小元素生物。与冬日的严寒形成鲜明对比的是，霜霜体现了这个季节更美好的一面，它们试图用欢乐的态度、社群精神，当然还有热气腾腾的饮品来传递温暖。",
+				"霜霜常见的怪癖包括热衷于装扮自己\u2014\u2014尤其是戴上不同的帽子、围巾和烟斗\u2014\u2014以及对狗的一种莫名其妙的戒备。",
+				"如果霜霜的任何特质或动作要求进行豁免检定，其豁免DC始终按以下方式计算。",
+				{
+					"ENG_name": "Save DC",
+					"type": "abilityGeneric",
+					"name": "豁免DC",
+					"text": "8 + 驯兽师的熟练加值 + 霜霜的魅力调整值"
+				},
+				{
+					"ENG_name": "Monster Trainer",
+					"type": "entries",
+					"name": "魔物训练",
+					"entries": [
+						"除了你通常可以给予伙伴的强化之外，你还可以使用你的\"魔物训练\"特性，选择赋予红翅鸫以下强化：",
+						{
+							"ENG_name": "Growth I",
+							"type": "entries",
+							"name": "成长I",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"成为一名驯兽师的伙伴。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"被动（伙伴）。"
+									]
+								},
+								"霜霜的体型增至小型，其生命骰增至d6（其生命值上限因此每个生命骰增加1），其角的攻击伤害骰增至d6。"
+							]
+						},
+						{
+							"ENG_name": "Snowballs",
+							"type": "entries",
+							"name": "雪球",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"3级驯兽师。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（动作）。"
+									]
+								},
+								"霜霜获得一项远程武器攻击：雪球。雪球攻击的伤害骰随霜霜\"成长II\"强化中指定的骰型提升。",
+								"{@b 雪球。}远程武器攻击：力量调整值+熟练加值命中，射程20/60尺，单一目标。命中：1d6+力量调整值点寒冷伤害。"
+							]
+						},
+						{
+							"ENG_name": "Winter Drinks",
+							"type": "entries",
+							"name": "冬饮",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"3级驯兽师。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（动作）。"
+									]
+								},
+								"霜霜随身带着一个小酒桶，里面装满各式美妙的饮品。它可以用一个动作将下列选项之一（由驯兽师选择）倒入杯中，并立即喂给其5尺内一个自愿的生物，该生物获得其效应1分钟。",
+								{
+									"type": "list",
+									"items": [
+										"{@b 安神香料茶。}该生物免疫陷入{@condition 恐慌}。",
+										"{@b 热可可。}该生物对寒冷伤害具有抗性。",
+										"{@b 热苹果酒。}该生物免疫陷入{@condition 中毒}。"
+									]
+								},
+								"霜霜一旦采取此动作，在驯兽师完成一次短休或长休前无法再次使用。"
+							]
+						},
+						{
+							"ENG_name": "Growth II",
+							"type": "entries",
+							"name": "成长II",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"5级驯兽师，且已获得成长I。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"被动（伙伴）。"
+									]
+								},
+								"霜霜的体型增至中型，其生命骰增至d8（其生命值上限因此每个生命骰增加1），其攻击的伤害骰增至d8。"
+							]
+						},
+						{
+							"ENG_name": "Liquefaction",
+							"type": "entries",
+							"name": "液化",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"5级驯兽师。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（反应）。"
+									]
+								},
+								"当霜霜被一次不造成火焰伤害的攻击命中时，它可以用其反应选择性地融化身体的一部分来卸力，使该攻击对它造成的伤害减半，并如同受到火焰伤害一般承受其\"火焰易伤\"特质的影响。",
+								"霜霜一旦使用此反应，在驯兽师完成一次短休或长休前无法再次使用。当霜霜的驯兽师达到驯兽师职业13级时，霜霜可以使用此反应两次，并在驯兽师完成一次短休或长休后恢复所有已消耗的使用次数。"
+							]
+						},
+						{
+							"ENG_name": "Multiattack",
+							"type": "entries",
+							"name": "多重攻击",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"5级驯兽师。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（动作）。"
+									]
+								},
+								"霜霜可以用一个动作发动两次攻击。"
+							]
+						},
+						{
+							"ENG_name": "Holiday Spirits",
+							"type": "entries",
+							"name": "节日烈酒",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"9级驯兽师，且已获得冬饮。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（动作）。"
+									]
+								},
+								"霜霜在它的选单中添加了几种酒精饮品。当它以\"冬饮\"强化喂一个生物喝饮品时，其驯兽师还可以从以下额外选项中选择：",
+								{
+									"type": "list",
+									"items": [
+										"{@b 黄油朗姆酒。}该生物的速度提高10尺。",
+										"{@b 奶香蛋奶酒。}该生物在其每个回合开始时获得7（{@damage 2d6}）点临时生命值。",
+										"{@b 香料热红酒。}该生物的攻击在命中时造成额外的3（{@damage 1d6}）点火焰伤害。"
+									]
+								},
+								"此外，霜霜可以使用其\"冬饮\"特性两次，并在驯兽师完成一次短休或长休后恢复所有使用次数。"
+							]
+						},
+						{
+							"ENG_name": "Iceballs",
+							"type": "entries",
+							"name": "冰球",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"9级驯兽师，且已获得雪球。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（附赠动作）。"
+									]
+								},
+								"霜霜可以用一个附赠动作把几个雪球压得格外紧实，并将其冻成坚硬的冰。直至其回合结束，其雪球攻击在命中时造成额外的7（{@damage 2d6}）点钝击伤害。",
+								"霜霜一旦使用此附赠动作，在驯兽师完成一次短休或长休前无法再次使用。当霜霜的驯兽师达到驯兽师职业13级时，额外伤害提升为9（{@damage 2d8}）点。"
+							]
+						},
+						{
+							"ENG_name": "Brewbomb",
+							"type": "entries",
+							"name": "酿造炸弹",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"13级驯兽师，且已获得节日烈酒。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（动作）。"
+									]
+								},
+								"霜霜可以用一个动作消耗其\"冬饮\"特性的两次使用次数，调制出一剂不稳定的混合饮品，并投掷到它30尺内的一点，在那里炸开成一个20尺半径的滚烫液体球体。该区域内的每个生物都必须进行一次敏捷豁免检定。豁免失败的生物受到27（{@damage 6d8}）点火焰伤害，并被击{@condition 倒地}。豁免成功的生物只受一半伤害，且不会被击{@condition 倒地}。"
+							]
+						},
+						{
+							"ENG_name": "Cold Blooded",
+							"type": "entries",
+							"name": "冷血",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"13级驯兽师。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"被动（伙伴）。"
+									]
+								},
+								"霜霜获得寒冷伤害免疫。当它受到寒冷伤害时，它获得等同于所受寒冷伤害数值的临时生命值，持续1分钟。"
+							]
+						},
+						{
+							"ENG_name": "Mixology",
+							"type": "entries",
+							"name": "调酒术",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"13级驯兽师，且已获得节日烈酒。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（动作）。"
+									]
+								},
+								"当霜霜使用其\"冬饮\"特性时，它可以消耗该特性的两次使用次数将两种饮品混合在一起。从\"冬饮\"和\"节日烈酒\"的选项中各选一种饮品。喝下这杯鸡尾酒的生物同时获得两种选择的效果，持续1小时而非1分钟。"
+							]
+						},
+						{
+							"ENG_name": "Snow Fort",
+							"type": "entries",
+							"name": "雪堡",
+							"entries": [
+								{
+									"ENG_name": "Prerequisite:",
+									"type": "entries",
+									"name": "先决条件：",
+									"entries": [
+										"17级驯兽师。"
+									]
+								},
+								{
+									"ENG_name": "Type",
+									"type": "entries",
+									"name": "类型",
+									"entries": [
+										"主动（动作）。"
+									]
+								},
+								"霜霜可以用一个动作施展{@spell 冰墙术}法术。霜霜一旦使用此动作，在驯兽师完成一次长休前无法再次使用。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Frosty.webp"
+					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Frosty_Overview.webp"
+					},
+					"title": "霜霜总览"
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Frostfall Bear",
+			"name": "巨型霜落熊",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Heir of Brambles",
+			"name": "荆棘继承人",
+			"source": "BloodSS",
+			"entries": [
+				{
+					"ENG_name": "The Queen of Brambles",
+					"type": "entries",
+					"name": "荆棘女王",
+					"entries": [
+						"荆棘女王本是天生的誓日者公主，她的灵魂却从年幼的躯体中被切离，放逐至暗影界。与所有进入暗影界的生物一样，她的肉身开始改变。她的肌肤褪色至如月亮般毫无血色，她的卷发变得平直，毫无形状地垂落背后，她丰盈的春之形骸日渐消瘦，只剩一个修长瘦削的生物。",
+						"荆棘女王被一个夜鬼婆收留，学会了灵魂魔法，并豢养了一大群多刺生物组成她的荆棘王庭。她是一位狡猾而强大的领袖，令许多人心生畏惧，也深受她的子民爱戴。与灵魂另一半重聚的渴望驱使她不择手段，她会不惜一切代价达成目标。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/HeirOfBrambles.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Iris Clearwind",
+			"name": "艾瑞丝·清风",
+			"source": "BloodSS",
+			"entries": [
+				"艾瑞丝·清风是一位夏日妖精，体格健硕又不失优雅。从她稳健的站姿，以及那双凶悍的红宝石色眼眸迅速打量新来者、评估威胁的方式，可以看出她长年累月持剑训练的功底。她一直在与谢尔公主秘密相恋，对她而言，即便是拯救王国，也比不上救出心上人的渴望。",
+				{
+					"ENG_name": "Iris Clearwind",
+					"type": "inset",
+					"name": "艾瑞丝·清风",
+					"entries": [
+						"{@i 妖精，骑士，她/她}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"{@b 性格。}火爆、冲动、极度忠诚。她犯错时会坦率承认，并迅速弥补。",
+								"{@b 外貌。}身形修长，一头红色长发，双眼呈红宝石色。她的衣着通常为绯红与金色。",
+								"{@b 愿望。}在誓日者王庭安全的春日里养育幼童。",
+								"{@b 恐惧。}担心自己终将失去主上、失去人生的意义。"
+							]
+						},
+						{
+							"type": "quote",
+							"entries": [
+								"为了保护我所爱之人，无论付出什么代价，我都甘愿冒一切风险。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "King Jorfraust",
+			"name": "约弗劳斯特国王",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Prince Jorfraust",
+				"name": "约弗劳斯特王子",
+				"source": "BloodSS"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Jorfraust.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Lady of Brambles",
+			"name": "荆棘女士",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Heir of Brambles",
+				"name": "荆棘继承人",
+				"source": "BloodSS"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/HeirOfBrambles.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Mildred Magpie",
+			"name": "米尔德丽德·喜鹊",
+			"source": "BloodSS",
+			"entries": [
+				"米尔德丽德·喜鹊是一位佝偻的秋日鬼婆，一头狂野的卷发宛如鸟巢，仿佛自有生命般蠕动。她的淡绿色皮肤紧绷在老朽的骨骼上，双眼的色调随她的心情在秋色之间变换。尽管米尔德丽德外表邋遢，她却是一位附魔大师，能轻松编织强大的法术与诅咒。她担任苏莉安娜女王的右臂顾问，始终为誓日者王庭的最大利益着想。",
+				{
+					"ENG_name": "Mildred Magpie",
+					"type": "inset",
+					"name": "米尔德丽德·喜鹊",
+					"entries": [
+						"{@i 妖精，秋日鬼婆（使用绿鬼婆数据），她/她}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"{@b 性格。}言语尖刻，但心地善良、极为聪慧。对女王和王庭忠心耿耿。",
+								"{@b 外貌。}轮廓分明，身形佝偻，一头狂野的长发。身穿秋色的朴素长袍。",
+								"{@b 愿望。}证明并非所有鬼婆都该被猜忌与唾弃。",
+								"{@b 恐惧。}担心自己会像那些化作夜鬼婆的姐妹一样，迷失于暗影。"
+							]
+						},
+						{
+							"type": "quote",
+							"entries": [
+								"真相或许刺耳，但它关乎我们的存亡。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Pandora the White (Frostfall Frost Giant)",
+			"name": "白色的潘多拉（霜落霜巨人）",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Pandora the White (Frostfall Werebear)",
+			"name": "白色的潘多拉（霜落熊人）",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Pandora the White (Frostfall Winter Wolf)",
+			"name": "白色的潘多拉（霜落冬狼）",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		},
+		{
+			"ENG_name": "Prince Jorfraust",
+			"name": "约弗劳斯特王子",
+			"source": "BloodSS",
+			"entries": [
+				{
+					"ENG_name": "Winter Fey",
+					"type": "entries",
+					"name": "冬之妖精",
+					"entries": [
+						"尽管冬妖精是忧郁的生物，它们既不迟钝也不死气沉沉。它们以更敏锐的洞察感知世间的悲苦，并寻找能与之分忧的同伴。鲜少有人能长时间待在这样的生物身边，而这种孤独感又只会加深冬妖精的哀愁。",
+						{
+							"ENG_name": "Empathic Fey",
+							"type": "entries",
+							"name": "共情妖精",
+							"entries": [
+								"一个妖精生物越强大，它的情绪对周围世界的影响就越大。对于非冬系的妖精生物而言，冬妖精的凄凉足以令人窒息，诱发一种昏沉般的怠惰。不习惯这种压抑悲伤的妖精可能会发现自己连进食的动力都没有，日渐消瘦殆尽，因此冬妖精常常被更广阔的社群边缘化。"
+							]
+						},
+						{
+							"ENG_name": "Base Iron",
+							"type": "entries",
+							"name": "粗铁",
+							"entries": [
+								"根据奥法磁力学的定律，同种之力相斥。有些冬妖精的魔法造诣之高，以至于能先天排斥魔法武器发动的攻击，正如同极相斥的磁石一般。不幸的是，这种强大的抗性伴随着对应的弱点；接触粗铁与凡钢可能引发类似中毒的效应，在短时间内严重削弱这些强大的生物。这也在某种程度上解释了为何只有低阶妖精倾向于冒险进入物质位面；它们之中更强大的存在，可能会被自己喝汤用的勺子轻易制住。"
+							]
+						}
+					]
+				},
+				"随着约弗劳斯特日渐强大，他消沉的发作让暴风雪在誓日者王庭的大厅中游荡。由于无法辨明他的来历，苏莉安娜女王无从想象他的力量会成长到何种高度。女王不愿把这个孩子丢给毫无防备的邻邦，只好艰难地决定让最亲近的顾问米尔德丽德附魔一件容器，用来封存这位年轻的王子及其情绪。数十年来，王子一直在他的冰封城堡中消磨时光，以在城堡阴湿缝隙里魔法孕育的霜螈为食。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Jorfraust.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Queen of Brambles",
+			"name": "荆棘女王",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Heir of Brambles",
+				"name": "荆棘继承人",
+				"source": "BloodSS"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/HeirOfBrambles.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadowstalker",
+			"name": "暗影潜猎兽",
+			"source": "BloodSS",
+			"entries": [
+				"暗影潜猎兽是长着蝙蝠般翅膀和银色小角的微型猫科生物。虽然它们出了名的难以捕捉，但还是可以被驯化为魔宠。它们的飞行和隐形能力使它们深受居民的重视，常被用于狩猎与侦察。"
+			]
+		},
+		{
+			"ENG_name": "Sunsworn Heir",
+			"name": "誓日者继承人",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Sunsworn Princess",
+				"name": "誓日者公主",
+				"source": "BloodSS"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/SunswornPrincess.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Sunsworn Lady",
+			"name": "誓日者女士",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Sunsworn Princess",
+				"name": "誓日者公主",
+				"source": "BloodSS"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/SunswornPrincess.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Sunsworn Princess",
+			"name": "誓日者公主",
+			"source": "BloodSS",
+			"entries": [
+				{
+					"ENG_name": "Shael, the Sunsworn Princess",
+					"type": "entries",
+					"name": "谢尔，誓日者公主",
+					"entries": [
+						"谢尔，誓日者王庭的公主，是妖精之美的璀璨化身，她曲线曼妙的身姿仿佛散发着太阳的力量。她的长发如金色的光波般流淌，锐利的蓝眼睛似乎能直视人的灵魂。谢尔外表善良而慷慨，内心却拥有堪比最坚毅老兵的强大意志。",
+						"公主在妖精王庭过着奢华的生活，成长于母亲苏莉安娜女王的悉心看护之下，依偎在恋人\u2014\u2014性情火爆的夏日妖精艾瑞丝·清风的怀抱中。谢尔作为誓日者王庭的继承人长大，却不知道自己灵魂的一半被亲生母亲切离，放逐到了暗影界。当这个秘密被揭开之后，她选择追随荆棘女王进入暗影之域，试图让二人的灵魂重新合一。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/SunswornPrincess.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Wrabit",
+			"name": "拉比特",
+			"source": "BloodSS",
+			"entries": [
+				"拉比特受命通知荆棘仔居民前往王庭参加一场王室庆典。拉比特知道庆典将在明天举行，内容是荆棘女王与誓日者公主的结合。成功通过一次{@dc 15}魅力（{@skill 说服}或{@skill 威吓}）检定可以说服拉比特分享这一消息。若检定失败，它会隐形逃走。"
+			]
+		},
+		{
+			"ENG_name": "Young Frostfall Dragon",
+			"name": "幼年霜落龙",
+			"source": "BloodSS",
+			"_copy": {
+				"ENG_name": "Frostfall Wolf",
+				"name": "霜落狼",
+				"source": "BloodSS"
+			}
+		}
+	],
+	"legendaryGroup": [
+		{
+			"ENG_name": "The Split Souls",
+			"name": "裂魂众",
+			"source": "BloodSS",
+			"page": 19,
+			"lairActions": [
+				"荆棘女王的魔法渗入了王庭，成为她意志的延伸。这种环境魔法产生的效应可以在庭院内作为巢穴动作使用。巢穴动作的豁免DC和伤害取决于狩猎等级，详见\"巢穴动作可变数据\"表。",
+				{
+					"type": "table",
+					"caption": "巢穴动作可变数据",
+					"colLabels": [
+						"狩猎等级",
+						"可变DC",
+						"可变伤害"
+					],
+					"colStyles": [
+						"col-4 text-center",
+						"col-4 text-center",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"5环",
+							"13",
+							"5 ({@damage 2d4})"
+						],
+						[
+							"9th",
+							"15",
+							"10（{@damage 3d6}）"
+						],
+						[
+							"13th",
+							"16",
+							"14 ({@damage 4d6})"
+						]
+					]
+				},
+				"在先攻值20时（先攻平局时视为后手），荆棘女王使用一个巢穴动作；同一种效应不能连续两轮使用：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Thorny Barrage",
+							"type": "item",
+							"name": "棘刺弹幕",
+							"entries": [
+								"一阵棘刺如雨点般从巢穴内一个半径15尺的圆形区域上方落下。该区域内的生物必须成功通过{@footnote 可变DC|13/15/16}敏捷豁免检定，否则受到{@damage 2d4;3d6;4d6|可变伤害}点穿刺伤害，并陷入{@condition 中毒}状态，直至其下个回合结束。"
+							]
+						},
+						{
+							"ENG_name": "Ensnaring Roots",
+							"type": "item",
+							"name": "缠困根须",
+							"entries": [
+								"擒抓根须从地面窜出，覆盖以荆棘女王60尺内指定的一点为中心、半径15尺的圆形区域。该区域内的生物必须进行{@footnote 可变DC|13/15/16}敏捷豁免检定，失败则陷入{@condition 束缚}状态，直至其下个回合结束。"
+							]
+						},
+						{
+							"ENG_name": "Bramble Wall",
+							"type": "item",
+							"name": "荆棘之墙",
+							"entries": [
+								"多刺的荆棘从地面长出，形成一道长20尺、高10尺、厚5尺的墙。这道墙持续1分钟，为其后方的生物提供完全掩蔽。穿过这道墙的生物必须进行{@footnote 可变DC|13/15/16}敏捷豁免检定，失败者受到相当于2倍可变伤害的穿刺伤害，成功则只受一半伤害。墙体任意5尺立方部分若暴露于火焰，会在2轮内燃尽，并对任何在其回合开始时身处火中的生物造成{@damage 2d4;3d6;4d6|可变伤害}点火焰伤害。"
+							]
+						}
+					]
+				}
+			],
+			"regionalEffects": [
+				"荆棘女王的魔法延伸至其王庭周围数英里的区域，产生下列一项或多项效应：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"ENG_name": "Darkening",
+							"type": "item",
+							"name": "骤暗",
+							"entries": [
+								"荆棘王庭周围1英里半径范围内的黑暗如此浓重，以致拥有黑暗视觉的生物视觉范围减半。"
+							]
+						},
+						{
+							"ENG_name": "Soul Drain",
+							"type": "item",
+							"name": "灵魂汲取",
+							"entries": [
+								"荆棘王庭周围5英里半径范围内的负能量会榨取在此停留过久的生物的生命力。生物在此区域内每度过1小时，就必须成功通过{@footnote 可变DC|13/15/16}体质豁免检定，否则增加1级{@condition 力竭}。不死生物和已适应暗影界的生物自动通过此豁免检定。"
+							]
+						},
+						{
+							"ENG_name": "Awakened Plantlife",
+							"type": "item",
+							"name": "觉醒植物",
+							"entries": [
+								"虬结的树木和布满棘刺的藤蔓在荆棘王庭周围10英里半径范围内疯长。这些植物中有许多具有意识并忠于荆棘女王，在整个地区充当她的眼线与耳目。"
+							]
+						}
+					]
+				},
+				"如果荆棘女王被击败，这些效应会在接下来的{@dice 1d10}天内逐渐消散。"
+			]
+		},
+		{
+			"ENG_name": "Winter Fey",
+			"name": "冬之妖精",
+			"source": "BloodSS",
+			"page": 19,
+			"lairActions": [
+				"约弗劳斯特的存在制造了一个妖精魔法的寒冬漩涡，不断消长起伏。这种环境魔法产生的效应可以在庭院内作为巢穴动作使用。巢穴动作的豁免DC和伤害取决于狩猎等级，详见\"巢穴动作可变数据\"表。",
+				{
+					"type": "table",
+					"caption": "巢穴动作可变数据",
+					"colLabels": [
+						"狩猎等级",
+						"可变DC",
+						"可变伤害"
+					],
+					"colStyles": [
+						"col-4 text-center",
+						"col-4 text-center",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"4环",
+							"12",
+							"3 ({@damage 1d6})"
+						],
+						[
+							"8th",
+							"14",
+							"7 ({@damage 2d6})"
+						],
+						[
+							"12th",
+							"16",
+							"14 ({@damage 4d6})"
+						]
+					]
+				},
+				"在先攻值20时（先攻平局时视为后手），使用一个巢穴动作；同一种效应不能连续两轮使用：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Hoarfrost",
+							"type": "item",
+							"name": "白霜",
+							"entries": [
+								"温度骤降，凛冽的寒风席卷巢穴。巢穴中的每个生物都必须成功通过{@footnote 可变DC|12/14/16}体质豁免检定，失败者受到{@damage 1d6;2d6;4d6|可变伤害}点寒冷伤害，成功则只受一半伤害。豁免检定失败值达到5点或更多的生物增加1级{@condition 力竭}。对寒冷伤害免疫的生物自动通过此豁免检定。"
+							]
+						},
+						{
+							"ENG_name": "Melancholic Breeze",
+							"type": "item",
+							"name": "忧郁之风",
+							"entries": [
+								"一阵忧郁的能量浪潮充满整个巢穴。巢穴中每个非冬妖精的生物都必须成功通过{@footnote 可变DC|12/14/16}感知豁免检定，否则在下一轮先攻值20之前，其进行的属性检定、豁免检定和攻击检定都会承受{@dice 1d4}点减值。妖精生物进行此豁免检定时具有劣势。"
+							]
+						}
+					]
+				}
+			],
+			"regionalEffects": [
+				"约弗劳斯特的凛冬之力延伸至誓日者王庭周围数英里的区域，在霜落王国产生下列一项或多项效应：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"ENG_name": "Eternal Winter",
+							"type": "item",
+							"name": "永冬",
+							"entries": [
+								"誓日者王庭周围10英里范围内的气温已降至远低于冰点。在该区域旅行的生物每在严寒中度过1小时，就必须成功通过{@footnote 可变DC|12/14/16}体质豁免检定，否则承受1级{@condition 力竭}。对寒冷伤害具有抗性或免疫的生物自动通过此豁免检定，穿戴御寒装备的生物和适应寒冷气候的生物亦然。此外，由于深雪和暗冰，誓日者宫殿以外的整个区域的户外地带都是困难地形。"
+							]
+						},
+						{
+							"ENG_name": "Sinkholes",
+							"type": "item",
+							"name": "裂砂陷坑",
+							"entries": [
+								"大雪在誓日者王庭周围5英里范围内堆积成不稳定的雪堆。任何穿过雪堆的生物都必须成功通过{@footnote 可变DC|12/14/16}敏捷豁免检定，否则会跌入雪坑，在雪中陷入{@condition 束缚}状态。生物可以用一个动作进行{@footnote 可变DC|12/14/16}力量（{@skill 运动}）检定，成功则解救自身或其触及范围内另一个陷入{@condition 束缚}状态的生物。"
+							]
+						},
+						{
+							"ENG_name": "Flash-freeze",
+							"type": "item",
+							"name": "骤冻",
+							"entries": [
+								"誓日者王庭周围1英里范围内寒冷至极，液体暴露在空气中几乎瞬间冻结成冰。"
+							]
+						}
+					]
+				},
+				"如果约弗劳斯特被击败，这些效应会在接下来的{@b 24小时}内逐渐消散。"
+			]
+		}
+	],
+	"adventure": [
+		{
+			"ENG_name": "Bloodfrost of the Fey",
+			"name": "妖精的血霜",
+			"id": "BSS-BotF",
+			"source": "BloodSS",
+			"parentSource": "BloodSS",
+			"group": "supplement",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Cover.webp"
+			},
+			"published": "2026-09-01",
+			"author": "Loot Tavern出版社",
+			"storyline": "日与影之血",
+			"level": {
+				"start": 4,
+				"end": 12
+			},
+			"contents": [
+				{
+					"ENG_name": "Introduction",
+					"name": "简介",
+					"headers": [
+						"背景",
+						{
+							"header": "概述",
+							"depth": 1
+						},
+						{
+							"header": "冒险引子",
+							"depth": 1
+						},
+						{
+							"header": "艾瑞丝·清风",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"ENG_name": "The Frostfall Kingdom",
+					"name": "霜落王国",
+					"headers": [
+						"区域效应",
+						"追踪",
+						"独特动植物"
+					]
+				},
+				{
+					"ENG_name": "Know Thy Enemy",
+					"name": "了解你的敌人",
+					"headers": [
+						{
+							"header": "线索1：为茶讨价",
+							"depth": 1
+						},
+						{
+							"header": "线索2：刺果莓",
+							"depth": 1
+						},
+						{
+							"header": "线索3：点亮微光",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"ENG_name": "The Battle Ahead",
+					"name": "前路之战",
+					"headers": [
+						"誓日者庭院",
+						"第1波：兽群",
+						"第2波：霜之子",
+						"第3波：凛冬之心"
+					]
+				},
+				{
+					"ENG_name": "Aftermath",
+					"name": "后续"
+				},
+				{
+					"ENG_name": "Treasure",
+					"name": "宝藏",
+					"headers": [
+						"采割",
+						"手作"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Queen of Shadow and Thorn",
+			"name": "暗影与荆棘女王",
+			"id": "BSS-QoST",
+			"source": "BloodSS",
+			"parentSource": "BloodSS",
+			"group": "supplement",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/Cover.webp"
+			},
+			"published": "2026-09-01",
+			"author": "Loot Tavern出版社",
+			"storyline": "日与影之血",
+			"level": {
+				"start": 5,
+				"end": 13
+			},
+			"contents": [
+				{
+					"ENG_name": "Introduction",
+					"name": "简介",
+					"headers": [
+						"背景",
+						{
+							"header": "概述",
+							"depth": 1
+						},
+						{
+							"header": "冒险引子",
+							"depth": 1
+						},
+						{
+							"header": "可变数据",
+							"depth": 1
+						},
+						{
+							"header": "米尔德丽德·喜鹊",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"ENG_name": "The Plane of Shadow",
+					"name": "阴影位面",
+					"headers": [
+						"区域效应",
+						"追踪",
+						"独特动植物"
+					]
+				},
+				{
+					"ENG_name": "Know Thy Enemy",
+					"name": "了解你的敌人",
+					"headers": [
+						{
+							"header": "线索1：日与影",
+							"depth": 1
+						},
+						{
+							"header": "线索2：厌铁",
+							"depth": 1
+						},
+						{
+							"header": "线索3：一场重要的枣约",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"ENG_name": "The Battle Ahead",
+					"name": "前路之战",
+					"headers": [
+						"荆棘王庭",
+						"第1波：荆棘王庭",
+						"第2波：整体之两半",
+						"第3波：女王万岁",
+						"可选结局：亡命营救"
+					]
+				},
+				{
+					"ENG_name": "Aftermath",
+					"name": "后续"
+				},
+				{
+					"ENG_name": "Treasure",
+					"name": "宝藏",
+					"headers": [
+						"采割",
+						"手作"
+					]
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "BSS-BotF",
+			"source": "BloodSS",
+			"data": [
+				{
+					"ENG_name": "Introduction",
+					"type": "section",
+					"name": "简介",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Palace.webp"
+									},
+									"credit": "Sam Jumisko"
+								},
+								"{@i 妖精的血霜}是一场为四名角色准备的第五版狩猎冒险，平均队伍等级（APL）为4、8或12级。完成本次狩猎的角色应获得足够的经验，分别升到5级、9级或13级进度的四分之一、三分之一或一半。这是三部曲《{@i 日与影之血}》的第二部。队伍必须击败一位强大的冬妖精，他的忧郁已冻结了誓日者王庭的廷臣们。",
+								"誓日者王庭的女王与公主被一位可怕的冬妖精冻结了。此外，这位妖精那令人窒息的忧郁弥漫于整个女王国，引发了一场无休无止的严冬。御寒衣物、造成火焰伤害的能力以及追踪技艺，都将是完成这场狩猎的助力。"
+							]
+						},
+						{
+							"ENG_name": "Background",
+							"type": "section",
+							"name": "背景",
+							"entries": [
+								"从妖精之域归来的人们常常谈起时间在这个位面上的无力；时、日、月的流逝改变不了任何东西，既改变不了天上的太阳，也改变不了草木的季相。在这里，情绪才至高无上；一位路人的怒火可能激起一丛灌木疯长成骇人的夏日繁茂，而感恩与疗愈之举则可能让一树的枝头挂满沉甸甸的秋收。当高阶妖精的王庭不忙于权术与炫耀时，它们便会出面稳定这些变化，以免这个国度坠入无尽的中夏之战或永远的忧郁寒冬。",
+								"数个世纪前，苏莉安娜女王在年轻时创立了誓日者王庭。她以狡黠与仁慈著称，在她统治的粼粼河流与茂密森林中，生活着数千妖精，她力求维持他们之间的平衡。当一个妖精婴孩被襁褓裹着遗弃在她的宫殿门前时，她怜悯这个生物，为他取名约弗劳斯特，并当作自己的孩子抚养。然而，随着小约弗劳斯特长大，他情绪的强大日益显现；仅仅是他的存在就会冻结他周遭的土地，他的消沉发作更是威胁着整个国度。苏莉安娜想尽办法也无法帮助约弗劳斯特，最终只能将他囚禁于一个被施了魔法的雪花玻璃球中，那里面封存着属于他自己的、孤寂与寒冬的半位面。",
+								"当苏莉安娜女王的女儿谢尔公主在正式觐见王庭的那天被一条被施了魔法的裙子困住时（见{@adventure 暗悦花园|MD-GoDD}，本狩猎三部曲的第一部），女王做出了一个仓促的决定。为了救女儿，她将约弗劳斯特从雪花玻璃球监狱中释放出来，指望这位冬妖精能阻止被惑的谢尔踏入通往暗影界的传送门。然而，约弗劳斯特的所作所为远超她的意图：他将公主与女王冻成了雕像，并逼得整个誓日者王庭仓皇出逃。",
+								"誓日者王庭的总管、谢尔公主的恋人艾瑞丝·清风，正是逃往物质位面的难民之一。她设法寻求凡人冒险者的帮助，希望他们敢于直面霜寒，将森林从永冬的桎梏中解救出来。当她返回时，才发现自己离开的这段时间里发生了多么翻天覆地的变化\u2014\u2014约弗劳斯特已将誓日者王庭化作了一片冰封的荒原。如今，这位冬妖精自封为霜落王国的国王，慵懒地高踞于他冰冷的王庭之中，他的凛冬统治威胁着妖精位面上脆弱的季节平衡。",
+								{
+									"ENG_name": "Summary",
+									"type": "entries",
+									"name": "概述",
+									"entries": [
+										"以下是这场狩猎关键信息的快速摘要：",
+										{
+											"type": "list",
+											"items": [
+												{
+													"ENG_name": "Which Monster?",
+													"type": "item",
+													"name": "猎物是哪只怪物？",
+													"entries": [
+														"约弗劳斯特，一位强大的冬妖精。"
+													]
+												},
+												{
+													"ENG_name": "Monster's Motivation",
+													"type": "item",
+													"name": "怪物的动机",
+													"entries": [
+														"约弗劳斯特要不惜一切代价保住他的自由，哪怕这意味着冻结整个国度。"
+													]
+												},
+												{
+													"ENG_name": "Monster's Previous Actions",
+													"type": "item",
+													"name": "怪物的既往行径",
+													"entries": [
+														"约弗劳斯特冻结了女王、公主以及誓日者王庭的众多贵族，随后将这片区域变成了严寒的针叶林。"
+													]
+												},
+												{
+													"ENG_name": "Where's the Monster?",
+													"type": "item",
+													"name": "怪物在哪里？",
+													"entries": [
+														"誓日者宫殿的庭院。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adventure Hooks",
+									"type": "entries",
+									"name": "冒险引子",
+									"entries": [
+										"每个角色都有促使他们参与冒险的个人动机与目标。以下是一些示例灵感，可让你的角色同意艾瑞丝·清风的求助，并投身于这场狩猎：",
+										{
+											"type": "list",
+											"items": [
+												{
+													"ENG_name": "Curiosity: Seasonal Dissonance",
+													"type": "item",
+													"name": "好奇：季节错乱",
+													"entries": [
+														"季节随强烈情绪而变化的景象，必定蔚为壮观。更何况，一位能将整个女王国化为永不消融的冰封荒原的强大妖精，无疑值得研究。阿尔塞纳（或其他任何能工巧匠）遐想着能从这样一只魔法生物身上锻造出的无数魔法物品，而汉珀丁克则相信，用这生物的血液孕育出的冰寒魔宠或许能让他的鸡尾酒保持冰凉。"
+													]
+												},
+												{
+													"ENG_name": "Morality: A Land Torn",
+													"type": "item",
+													"name": "道义：撕裂的土地",
+													"entries": [
+														"誓日者王庭的难民已逃往物质位面，他们的到来打破了春林镇生态的平衡。而那些无法逃往物质位面的妖精则被困在霜落王国，在无尽的阴郁中日渐凋零。这片土地和它的子民正在缓缓死去，需要外界的援手。"
+													]
+												},
+												{
+													"ENG_name": "Compensation: Heroes for Hire",
+													"type": "item",
+													"name": "报酬：受雇的英雄",
+													"entries": [
+														"{@creature 艾瑞丝·清风|BloodSS}承诺，只要能让她的家园恢复如初、救回女王与公主，她愿付出丰厚的报酬。艾瑞丝对冻结她家乡的冬妖精所知甚少，但她对谢尔公主以及誓日者王庭众人的爱，驱使她不惜任何代价寻求角色们的帮助。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Iris Clearwind",
+											"type": "entries",
+											"name": "艾瑞丝·清风",
+											"entries": [
+												"{@creature 艾瑞丝·清风|BloodSS}是一位夏日妖精，体格健硕又不失优雅。从她稳健的站姿，以及那双凶悍的红宝石色眼眸迅速打量新来者、评估威胁的方式，可以看出她长年累月持剑训练的功底。她一直在与谢尔公主秘密相恋，对她而言，即便是拯救王国，也比不上救出心上人的渴望。作为这场狩猎的主要联络人，艾瑞丝会分享她所知关于誓日者王庭现状的一切。她知晓以下有用的信息：",
+												{
+													"type": "list",
+													"items": [
+														"谢尔公主与妖精王庭正庆祝公主正式觐见王庭时，她的裙子上开始涌动暗影魔法。",
+														"公主身旁的空气中裂开一道裂隙，她开始走向另一侧那片幽暗的暗影之地。",
+														"苏莉安娜女王从腰间的袋子里取出某物，将其摔碎在地，炸开一团刺目的冰雪。冰霜迅速蔓延过视野中的一切，包括公主、女王，以及所有逃得不够快的贵族。",
+														"艾瑞丝设法救下了如今藏身于物质位面的少数难民。",
+														"约弗劳斯特的魔法扭曲了誓日者王庭本来的欢乐天性，艾瑞丝已经能感到厚重的忧郁正扼住这个国度。"
+													]
+												},
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"columns": 2,
+													"items": [
+														{
+															"ENG_name": "Iris Clearwind",
+															"type": "inset",
+															"name": "艾瑞丝·清风",
+															"entries": [
+																"{@i 妖精，骑士，她/她}",
+																{
+																	"ENG_name": "Personality",
+																	"type": "item",
+																	"name": "个性",
+																	"entries": [
+																		"火爆、冲动、极度忠诚。她犯错时会坦率承认，并迅速弥补。"
+																	]
+																},
+																{
+																	"ENG_name": "Appearance",
+																	"type": "item",
+																	"name": "外貌",
+																	"entries": [
+																		"身形修长，一头红色长发，双眼呈红宝石色。她的衣着通常为绯红与金色。"
+																	]
+																},
+																{
+																	"ENG_name": "Desire",
+																	"type": "item",
+																	"name": "渴望",
+																	"entries": [
+																		"在誓日者王庭安全的春日里养育幼童。"
+																	]
+																},
+																{
+																	"ENG_name": "Fear",
+																	"type": "item",
+																	"name": "恐惧",
+																	"entries": [
+																		"担心自己终将失去主上、失去人生的意义。"
+																	]
+																},
+																{
+																	"type": "quote",
+																	"entries": [
+																		"为了保护我所爱之人，无论付出什么代价，我都甘愿冒一切风险。"
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "table",
+									"caption": "每位玩家角色的狩猎奖励",
+									"colLabels": [
+										"狩猎等级",
+										"金",
+										"经验值{@sup *}"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-3 text-center",
+										"col-2 text-center"
+									],
+									"rows": [
+										[
+											"4环",
+											"535 gp",
+											"325"
+										],
+										[
+											"8th",
+											"1,800 gp",
+											"875"
+										],
+										[
+											"12th",
+											"4,250 gp",
+											"1,625"
+										]
+									],
+									"footnotes": [
+										"{@sup *}包含所有遭遇、怪物与谜题，按4名玩家角色平均计算。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Frostfall Kingdom",
+					"type": "section",
+					"name": "霜落王国",
+					"entries": [
+						"誓日者王庭曾是一个生机盎然、美得炫目的家园，如今却被一层忧郁与乌云笼罩，为这垂死的国度蒙上灰色的阴影。曾经繁茂的森林被层层坚冰封裹，开满鲜花的原野隐没于深深的雪堆之下。少数侥幸逃脱约弗劳斯特之力的幸存者挤作一团取暖，囤积着捡拾来的微薄食物。这个国度早已不复往日的欢乐\u2014\u2014苦难与绝望如今统治着霜落王国。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Regional Effects",
+									"type": "entries",
+									"name": "区域效应",
+									"entries": [
+										"约弗劳斯特的凛冬之力延伸至誓日者王庭周围数英里的区域，在霜落王国产生下列一项或多项效应：",
+										{
+											"ENG_name": "Eternal Winter",
+											"type": "entries",
+											"name": "永冬",
+											"entries": [
+												"誓日者王庭周围10英里范围内的气温已降至远低于冰点。在该区域旅行的生物每在严寒中度过1小时，就必须成功通过{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}体质豁免检定，否则承受1级力竭。对寒冷伤害具有抗性或免疫的生物自动通过此豁免检定，穿戴御寒装备的生物和适应寒冷气候的生物亦然。此外，由于深雪和暗冰，誓日者宫殿以外的整个区域的户外地带都是困难地形。"
+											]
+										},
+										{
+											"ENG_name": "Sinkholes",
+											"type": "entries",
+											"name": "裂砂陷坑",
+											"entries": [
+												"大雪在誓日者王庭周围5英里范围内堆积成不稳定的雪堆。任何穿过雪堆的生物都必须成功通过{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}敏捷豁免检定，否则会跌入雪坑，在雪中陷入{@condition 束缚}状态。生物可以用一个动作进行{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}力量（{@skill 运动}）检定，成功则解救自身或其触及范围内另一个陷入{@condition 束缚}状态的生物。"
+											]
+										},
+										{
+											"ENG_name": "Flash-freeze",
+											"type": "entries",
+											"name": "骤冻",
+											"entries": [
+												"誓日者王庭周围1英里范围内寒冷至极，液体暴露在空气中几乎瞬间冻结成冰。"
+											]
+										},
+										"如果约弗劳斯特被击败，这些效应会在接下来的{@b 24小时}内逐渐消散。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tracking",
+							"type": "entries",
+							"name": "追踪",
+							"entries": [
+								"约弗劳斯特的力量撕裂了这个国度，将该区域化为一片致命的针叶林。当队伍在这片冰封地带中前行时，他们需要进行两次追踪检定并成功一次，才能保持朝誓日者王庭前进的路线。每次检定耗时1小时，并引发一次线索遭遇（见{@adventure 了解你的敌人|BSS-BotF|2|了解你的敌人}）。若检定失败，队伍还会遭遇一场敌对遭遇（见《{@i 海莲娜的怪物狩猎指南}》中的{@table 极地敌对遭遇|HelianasGuidetoMonsterHunting|极地}或{@table 森林敌对遭遇|HelianasGuidetoMonsterHunting|森林}遭遇表）。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Safe Haven",
+											"type": "entries",
+											"name": "安全归处",
+											"entries": [
+												"就在队伍抵达誓日者宫殿之前，艾瑞丝会带领角色们来到一座藏于一棵挂满冰凌的大树枝干下的小屋。这处僻静之地是艾瑞丝当年避开王庭耳目、与谢尔公主幽会的地方。这个隐蔽的所在为队伍提供了休整和备战的空间。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Unique Flora & Fauna",
+									"type": "entries",
+									"name": "独特动植物",
+									"entries": [
+										"珍稀的动植物在霜落王国这片冰封的森林之国中繁衍生息。以下是角色们在旅途中可能遇到的几种较为非凡的生物与植被：",
+										{
+											"ENG_name": "Icefern",
+											"type": "entries",
+											"name": "冰蕨",
+											"entries": [
+												"这种魔法性的霜寒灌木有着纤细多刺的枝条和精致的晶体叶片。冰蕨的叶子宛如娇嫩的蕨叶，泛着半透明的冰样光泽。冰蕨不仅因美丽而受珍视，还因其作为外用麻醉剂的药用价值而闻名。这种魔法植物会开出状似雪花的小白花，散发淡淡的薄荷香气，花朵可以被碾碎并调成药膏。"
+											]
+										},
+										{
+											"ENG_name": "Frostamander",
+											"type": "entries",
+											"name": "霜螈",
+											"entries": [
+												"这种微小的生物形似一只四足蝾螈，长着紫蓝相间的革质皮肤。它的双眼如红色的余烬般发光，背上覆满冰锥状的棘刺，尾巴尖上摇曳着一簇小小的紫蓝色火焰。这簇火焰在{@b 1尺半径}内发出微光，却不产生热量。这些冰寒蜥蜴的寿命为1到2年，从吻端到尾尖可长到6到8寸长。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Frostamander.webp"
+													},
+													"title": "霜螈",
+													"credit": "Chaouki \"Ciao\" Titouthi"
+												}
+											]
+										},
+										{
+											"ENG_name": "Frostfire Phoenix",
+											"type": "entries",
+											"name": "霜火菲涅克斯",
+											"entries": [
+												"{@creature 霜火菲涅克斯|BloodSS}是一种威严的猛禽，3尺长的翼展由冻结火焰构成、闪烁微光的羽毛铺就。这些精致的生物拥有锐利的蓝宝石色双眼，以及一种凶猛而高贵的仪态。霜火菲涅克斯以死亡时化身为烈焰的能力著称\u2014\u2014它会熔化当前的形骸，并从由此形成的融雪水洼中重生。霜火菲涅克斯使用{@creature 隼}的数据，免疫寒冷伤害，并拥有以下额外特质：{@b 寒冰重生}。如果霜火菲涅克斯死亡，它会在{@dice 1d4}天后复生并恢复所有生命值。只有{@spell 祈愿术}法术能阻止此特质生效。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Know Thy Enemy",
+					"type": "section",
+					"name": "了解你的敌人",
+					"entries": [
+						"在霜落王国中旅行时，角色们会发现各种线索，加深他们对当前局势的了解。这些线索在即将到来与约弗劳斯特的战斗中可能大有用处：",
+						{
+							"type": "list",
+							"items": [
+								"可以用一颗被施了魔法的晶体球来捕捉约弗劳斯特，这颗球还能提供对其冻结之力的抗性。",
+								"约弗劳斯特是冬妖精，造成寒冷伤害。",
+								"魔法火焰伤害可以解冻被冻结的生物。"
+							]
+						},
+						"这些线索由环境（此地满是冬意）以及三场独立的遭遇揭示：一位鬼婆、一群乌鸦，以及一位被冻结的半羊人。\"为茶讨价\"应当是第一场遭遇，作为首次追踪检定的结果。另外两场遭遇可以发生在狩猎霜螈尾巴的途中，或在前往誓日者庭院的第二次追踪检定期间。",
+						{
+							"ENG_name": "Clue 1: Haggling Over Tea",
+							"type": "entries",
+							"name": "线索1：为茶讨价",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "",
+											"type": "item",
+											"name": "",
+											"entries": [
+												"{@creature 米尔德丽德·喜鹊|BloodSS|米尔德丽德}（中立善良妖精{@creature 绿鬼婆}）知晓约弗劳斯特的过往（见{@adventure 背景|BSS-BotF|0|背景}），并亲手打造了囚禁他的那座原始监狱，直到绝望的苏莉安娜女王将他释放。在霜落王国建立之前，这位秋日鬼婆是苏莉安娜女王的廷臣与顾问，也是参与将公主灵魂一分为二的法师之一（见{@adventure 暗悦花园|MD-GoDD}）。",
+												{
+													"type": "insetReadaloud",
+													"entries": [
+														"当你们穿行于冰雪覆盖的树林时，只见一座茅草小屋依偎在冻僵的树木之间。烟囱里升起袅袅炊烟，在寒冬的空气中格外令人心安。当你们走近时，前门猛地打开，一位老妇人走了出来。她吃力地拄着木杖支撑佝偻的身躯，一大蓬蓬乱的头发披挂肩头，映衬着一张扭曲斑驳的脸。尽管外表狂放，她轻声轻笑时笑容却很和善：\"哎呀，我还以为只有我逃出来了呢。很高兴见到你，'热风'小姐！\"",
+														"艾瑞丝惊得下巴都要掉了。\"米尔德丽德？！你是怎么逃出来的？\"她语气里满是难以置信。\"哦，你了解我的，\"米尔德丽德眨眨眼答道，\"我滑得像春天的泥鳅。\"她上下打量了你们一番，随即示意众人进屋：\"最好进屋喝杯茶，顺便给我讲讲，你带着一群凡人东奔西跑是在搞什么，小宝贝。\""
+													]
+												},
+												"这位秋日鬼婆认为没有任何妖精能抗衡冬王之力\u2014\u2014还没等拔出刀剑，约弗劳斯特的忧郁就会夺走他们全部的斗志。讲述队伍先前的英雄事迹可以说服米尔德丽德取出一颗晶体球，她解释说这颗球还不完整。",
+												{
+													"ENG_name": "Using the Clue: Snow Globetrotting",
+													"type": "entries",
+													"name": "运用线索：雪花玻璃环游",
+													"entries": [
+														"这颗晶体是一颗毫无瑕疵、完全透明的球体。米尔德丽德告诉队伍，配方还缺最后一种材料\u2014\u2014一条霜螈的尾巴\u2014\u2014才能为球体附魔，使其成为约弗劳斯特的新监狱。角色们可以通过搜索森林并成功通过两次{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}追踪检定来找到霜螈（若你未使用《{@i 海莲娜指南}》中的追踪系统，则改用感知（{@skill 求生}）检定）。队伍必须把尾巴带回给米尔德丽德，她将在一小时内完成这座晶体球监狱。",
+														{
+															"ENG_name": "Using the Sphere",
+															"type": "entries",
+															"name": "使用宝珠",
+															"entries": [
+																"米尔德丽德告诉队伍，要捕捉约弗劳斯特的灵魂、阻止他凝聚新的躯体，就必须在他的肉身被击败后，将球体放进约弗劳斯特的口中。球体中会浮现出描绘约弗劳斯特私人半位面的景象。"
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Clue1.webp"
+											},
+											"title": "手稿1：晶体球",
+											"credit": "Jesse Jackdaw Burns"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Clue 2: Burrberries",
+							"type": "entries",
+							"name": "线索2：刺果莓",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Clue2.webp"
+											},
+											"title": "手稿2：刺果莓布丁",
+											"credit": "Jesse Jackdaw Burns"
+										},
+										{
+											"type": "item",
+											"entries": [
+												"森林中已有许多生物死于严寒。下文的描述与整体冬日的环境应当能加深这样的认识：约弗劳斯特是凛冬的造物，造成寒冷伤害。",
+												{
+													"type": "insetReadaloud",
+													"entries": [
+														"在冰冷的森林中艰难跋涉，寒风掠过深深的雪堆，发出轻柔的呼啸。这份寂静被一阵鸦鸣打破\u2014\u2014声音来自一棵巨大的紫蓝色叶片的树。它的枝干覆着厚厚一层霜，冻僵的松鼠攀附在树干上，小小的身躯被封在坚冰之中。与之形成对照的是，一群白羽乌鸦欢快地聒噪着，无忧无虑地在枝头间跳跃。"
+													]
+												},
+												"乌鸦不惧严寒的能力与冻在树上的松鼠形成了对比。成功通过一次{@dc 15}感知（{@skill 察觉}）检定的角色能注意到这一差异，同时发现成年乌鸦正在给雏鸟喂食浆果。",
+												{
+													"type": "entries",
+													"entries": [
+														{
+															"ENG_name": "Using the Clue: Burrberry Pudding",
+															"type": "entries",
+															"name": "运用线索：刺果莓布丁",
+															"entries": [
+																"这些乌鸦一直在啄食附近的一丛刺果莓。精通自然技能、或成功通过一次{@dc 15}感知（{@skill 自然}）检定的角色能辨认出刺果莓具有隔热特性，可提供寒冷伤害抗性。对于小型或更大的生物，用一个动作吃下一枚或多枚刺果莓，可获得寒冷伤害抗性直至其下个回合结束；而浆果本身在摘下1小时后便会失效。不过，艾瑞丝知道一道刺果莓布丁的食谱，角色们可以下厨烹制（见《{@i 海莲娜指南}》中的{@book 烹饪|HelianasGuidetoMonsterHunting|2|烹饪}），用料是采割得到的野兽（乌鸦）脂肪（见《{@i 海莲娜指南}》中的{@book 采割|HelianasGuidetoMonsterHunting|2|采割}规则）和一把刺果莓。食用一份刺果莓布丁可获得8小时的寒冷伤害抗性。"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Clue 3: Shine a Little Light",
+							"type": "entries",
+							"name": "线索3：点亮微光",
+							"entries": [
+								"队伍最终面对约弗劳斯特的庭院中，满是陷入低温休克的廷臣。这些生物可以被解冻，为队伍的行动提供一些小小的助益。与被冻结的兹希·柔缪思（CN女性{@creature 半羊人}）的一席交谈，可以帮助队伍了解这一机制。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"一名半羊人被封在冰中，脸上带着惊恐的表情。她一只伸出的手奇怪地未被冻结，紧握着一盏明灭闪动的提灯。那只手猛地一动，灯光来回晃动，在树梢间投下骇人的影子。"
+									]
+								},
+								"兹希在约弗劳斯特于庭院发动的最初攻势中侥幸逃脱，但数小时后仍被冻结\u2014\u2014这位冬妖精一路追杀逃亡的幸存者，他们被深深的雪堆困在了半路。他的一击让她瞬间冻入冰块，但她的提灯\u2014\u2014被附魔了永燃之焰\u2014\u2014仍在持续散热。火焰可以化解这种冻结魔法，但提灯的火力太弱，只够解冻她的一只手。兹希能透过冰看到模糊的形影，便用那只自由的手向队伍打手势；成功通过一次{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}感知（{@skill 洞悉}）检定的角色可以明白，她是想让他们用提灯的火焰解救自己。",
+								{
+									"ENG_name": "Using the Clue: Light My Fire",
+									"type": "entries",
+									"name": "运用线索：点亮我心中之火",
+									"entries": [
+										"角色们可以使用任何能造成火焰伤害的法术或特性来安全地解冻兹希。冰牢的AC为10，生命值{@damage 1d6;2d6;4d6|可变伤害}点，并免疫火焰伤害以外的所有伤害。半羊人获救后感激地解释说，约弗劳斯特追捕并冻结了像她这样逃亡的廷臣。王庭中的许多人死于约弗劳斯特最初的攻势而被冻结，如果他们也同样被火焰魔法解冻，或许能为队伍提供助益。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Clue3.webp"
+									},
+									"title": "手稿3：点亮微光",
+									"credit": "Jesse Jackdaw Burns"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Battle Ahead",
+					"type": "section",
+					"name": "前路之战",
+					"entries": [
+						"抵达誓日者庭院后，队伍发现曾经苍翠的花园已被约弗劳斯特的凛冬之力盖上了冰雪。阳光透过积雪的云层丝丝渗下，在廷臣们的冰雕上闪烁\u2014\u2014他们曾在这里度过无数时光。厚厚的积雪压在树梢，风在扭曲的冰枝间穿行扭动，呻吟着一曲忧郁的歌。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Waves",
+											"type": "entries",
+											"name": "波浪",
+											"entries": [
+												"与约弗劳斯特及其守卫的战斗分为三个连续的阶段，称为\"波\"。每一波的章节都详述了该波中要面对的敌人与战术，并说明各波开始与结束的条件。"
+											]
+										},
+										{
+											"ENG_name": "Crystal Sphere",
+											"type": "entries",
+											"name": "水晶球",
+											"entries": [
+												"角色们必须使用那颗在米尔德丽德帮助下完成附魔的晶体球（见{@adventure 为茶讨价|BSS-BotF|2|线索1：为茶讨价}）来困住约弗劳斯特，终结他的统治。当约弗劳斯特被降至0生命值时，一名角色可以用其动作将晶体球放入他口中，把他的灵魂吸入这颗魔法晶体的半位面之中。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Sunsworn Courtyard",
+							"type": "entries",
+							"name": "誓日者庭院",
+							"entries": [
+								"誓日者庭院是一片被雪毯覆盖的花园，遍布冻结的雕像、倾颓的凉亭与危险的生物。冬妖精们云集于约弗劳斯特新立的霜落王国，守卫着通往宫殿的道路，约弗劳斯特就端坐在他的冰之王座上。誓日者湖温暖的湖水如今已冻结，困住了以湖底为家的温柔妖精。此地没有欢迎，没有欢乐\u2014\u2014闯入者只会迎来冰冷的死亡。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/SunswornCourtyard01.webp"
+									},
+									"credit": "Sam Jumisko"
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Hazard: Frozen Lake",
+											"type": "entries",
+											"name": "危害：冻湖",
+											"entries": [
+												"冻结的湖面是困难地形。进入该区域或在其中结束回合的生物还必须成功通过一次{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}敏捷豁免检定，否则会跌{@condition 倒地}。穿戴钉鞋或平头钉靴的生物自动通过此豁免检定。"
+											]
+										},
+										{
+											"ENG_name": "Courtiers",
+											"type": "entries",
+											"name": "侍臣",
+											"entries": [
+												"少数未能逃脱约弗劳斯特的廷臣被冻成了雕像，散落在庭院各处。这些雕像（AC 10，生命值{@damage 1d6;2d6;4d6|可变伤害}点，免疫火焰伤害以外的所有伤害）在地图1：誓日者庭院上以C标注。生命值被降至0的雕像会立即解冻，使廷臣重获自由。解冻的廷臣会感激涕零，在当前轮先攻值0时给予角色们一份助益，随后逃往安全之处。",
+												"每当一尊雕像被熔化，就掷一次下表（重复结果则重掷），决定被解救的是谁。",
+												{
+													"type": "table",
+													"caption": "被冻结的廷臣及其助益",
+													"colLabels": [
+														"d6",
+														"朝臣",
+														"恩惠"
+													],
+													"colStyles": [
+														"col-1 text-center",
+														"col-3",
+														"col-8"
+													],
+													"rows": [
+														[
+															"1",
+															"{@creature 银溪的艾尔丝佩丝女士|BloodSS}",
+															"给予一名角色{@b 1小时}的寒冷伤害抗性。"
+														],
+														[
+															"2",
+															"{@creature 铁木林的索恩勋爵|BloodSS}",
+															"给予一名角色{@b 1小时}的AC +1加值。"
+														],
+														[
+															"3",
+															"{@creature 风暴的加文勋爵|BloodSS}",
+															"在{@b 1小时}内，一名角色的武器攻击命中时造成额外的{@damage 1d4}点闪电伤害。"
+														],
+														[
+															"4",
+															"{@creature 红叶的罗雯女士|BloodSS}",
+															"给予一名角色等同于其等级两倍的临时生命值。"
+														],
+														[
+															"5",
+															"{@creature 蓝宝石海的芬利勋爵|BloodSS}",
+															"给予一名角色{@b 1小时}的非魔法穿刺与挥砍伤害抗性。"
+														],
+														[
+															"6",
+															"{@creature 星光的玛芭琳女士|BloodSS}",
+															"在{@b 1小时}内，一名角色为抵抗{@condition 恐慌}而作的豁免检定具有优势。"
+														]
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Helping Hand",
+											"type": "entries",
+											"name": "援手",
+											"entries": [
+												"尽管被庭院中难以承受的忧郁压得无精打采，艾瑞丝仍不愿置身战局之外。战斗中一次，如果队伍陷入苦战，她可以冲上前去进行协助动作，或喂下一瓶{@item 治疗药水}（狩猎等级4、8、12级时分别为普通、{@item 高等治疗药水||高等}、{@item 强效治疗药水||强效}）。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Frostfall Defenders",
+									"type": "inset",
+									"name": "霜落守卫",
+									"entries": [
+										"各种适应严寒的生物纷纷聚集到约弗劳斯特的旗帜之下，如今以霜落王国为家。它们中有许多在针叶林中游荡、猎杀昔日居民，另一些则聚集在誓日者庭院中保卫它们的国王。这些生物通常不会比邻而居，唯有这个新王国的许诺让它们为了一个共同目标结成同盟\u2014\u2014它们会战斗至死来保卫自己的新家园。",
+										"霜落守卫使用各波战斗中引用的数据，并作以下调整：",
+										{
+											"type": "list",
+											"items": [
+												"其类型为妖精（冬）。",
+												"它免疫寒冷伤害。",
+												"它免疫{@condition 魅惑}状态。",
+												{
+													"type": "item",
+													"entries": [
+														"它拥有以下额外特质：",
+														{
+															"type": "list",
+															"items": [
+																"{@b 妖精血统。}魔法无法使该生物入睡。",
+																"{@b 冰上行走。}该生物可以在冰面上移动和攀爬而无需进行属性检定，并自动通过为避免因冰面而{@condition 倒地}所作的豁免检定。此外，由冰或雪构成的困难地形不会消耗它额外移动力。"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/SunswornCourtyard02.webp"
+									},
+									"credit": "Chaouki \"Ciao\" Titouthi"
+								},
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/SunswornCourtyardDM.webp"
+											},
+											"id": "0h9",
+											"imageType": "map",
+											"mapName": "誓日者庭院：GM版",
+											"credit": "Cze & Peku"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/Compass.webp"
+											}
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/BotF/SunswornCourtyardPlayer.webp"
+											},
+											"mapParent": {
+												"id": "0h9",
+												"autoScale": true
+											},
+											"imageType": "mapPlayer",
+											"mapName": "誓日者庭院：玩家版",
+											"credit": "Cze & Peku"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Wave 1: The Pack",
+							"type": "entries",
+							"name": "第1波：兽群",
+							"entries": [
+								"队伍从地图1：誓日者庭院上标记为A1的区域进入庭院。在这一波中，队伍将面对聚集在宽广庭院中的霜落王国守卫。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"凛冬之手重重压在这座庭院上，刺骨的寒风掠过荒凉的景象。坚冰覆盖着静谧的湖水，平滑的冰面完好无缺，只有被冻结的妖精廷臣偶尔探出的抓握之手打破了这份平静。缤纷的凉亭已成废墟，摇摇欲坠，仿佛还要把残骸再添进那越堆越高的碎柱之中。"
+									]
+								},
+								"白色的潘多拉，这支守卫兽群的自封首领，位于地图1：誓日者庭院上标记为A2的洞穴中。当有角色进入她的视野时，她会高声呼喊，命令守卫们列阵，然后要求队伍离开。潘多拉根据狩猎等级选择一具肉身（见下方敌人），她会说通用语和木族语。",
+								"成功通过一次{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}魅力（{@skill 威吓}或{@skill 游说}）检定，可以说服潘多拉在她最后一次要求队伍离开之前回答一个问题。如果队伍拒绝，或拖延超过6秒，她便会以迅雷不及掩耳的狠辣攻势发动进攻。",
+								{
+									"ENG_name": "Enemies",
+									"type": "entries",
+									"name": "敌人",
+									"entries": [
+										"这一波的所有敌人都是霜落守卫（见侧栏），包括他们的首领白色的潘多拉。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Level 4",
+													"type": "item",
+													"name": "4环",
+													"entries": [
+														"4级时，第1波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"2只{@creature 霜落狼|BloodSS|霜落狼}",
+																"1只{@creature 白色的潘多拉（霜落冬狼）|BloodSS|白色的潘多拉}"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 8",
+													"type": "item",
+													"name": "8环",
+													"entries": [
+														"8级时，第1波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"2只{@creature 霜落野猪人|BloodSS|霜落野猪人}",
+																"1只{@creature 白色的潘多拉（霜落熊人）|BloodSS|白色的潘多拉}"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 12",
+													"type": "item",
+													"name": "第12层",
+													"entries": [
+														"12级时，第1波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"2只{@creature 霜落奇美拉|BloodSS|霜落奇美拉}",
+																"1只{@creature 白色的潘多拉（霜落霜巨人）|BloodSS|白色的潘多拉}"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Tactics",
+									"type": "entries",
+									"name": "战术",
+									"entries": [
+										"守卫兽群试图对角色们发动闪电战，又快又狠地发起猛击。潘多拉会缠住她认为威胁最大的角色，同时命令同伴将攻击集中在另一名单独目标身上。它们会利用移动将角色们引到或推入不利地形。"
+									]
+								},
+								{
+									"ENG_name": "End of Wave",
+									"type": "entries",
+									"name": "波次结束",
+									"entries": [
+										"当所有敌人被击败时，这一波结束。队伍有1分钟喘息，随后约弗劳斯特将从宫殿现身，开启第2波。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Wave 2: Child of Frost",
+							"type": "entries",
+							"name": "第2波：霜之子",
+							"entries": [
+								"在这一波中，约弗劳斯特和他的伙伴从地图1：誓日者庭院上A3处的宫殿里冲出，进入庭院与角色们对峙。约弗劳斯特的伙伴\u2014\u2014一头完全由冰构成、受他控制的生物\u2014\u2014扑向队伍，而这位冬妖精则一边妙语连珠，一边用魔法轰击他们。",
+								"第二波开始后，朗读以下文字：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"霜落之王发出一声野性的咆哮，踏进庭院。他修长的四肢与野兽般的身形，构成一种空灵而致命的优雅。他雪白的皮毛如冰般闪光，双眼燃烧着智慧与怒火。他抱起粗壮多筋的双臂，透过锋利如剃刀的獠牙低吼道：\"你们擅闯我的国土，惊扰我的安宁，凡人。你们将为这份狂妄用血来偿还。\"他的双眼紧紧锁定着你们。"
+									]
+								},
+								{
+									"ENG_name": "Enemies",
+									"type": "entries",
+									"name": "敌人",
+									"entries": [
+										"第二波由约弗劳斯特与他的伙伴\u2014\u2014一名霜落守卫\u2014\u2014组成。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Level 4",
+													"type": "item",
+													"name": "4环",
+													"entries": [
+														"4级时，第2波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1只{@creature 霜落熊|BloodSS}",
+																"1名{@creature 约弗劳斯特王子|BloodSS}（CR 4）"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 8",
+													"type": "item",
+													"name": "8环",
+													"entries": [
+														"8级时，第2波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1只{@creature 霜落雏龙|BloodSS}",
+																"1名{@creature 约弗劳斯特国王|BloodSS}（CR 9）"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 12",
+													"type": "item",
+													"name": "第12层",
+													"entries": [
+														"12级时，第2波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1只{@creature 幼年霜落龙|BloodSS}",
+																"1名{@creature 约弗劳斯特皇帝|BloodSS}（CR 15）"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Tactics",
+									"type": "entries",
+									"name": "战术",
+									"entries": [
+										{
+											"ENG_name": "Jorfraust",
+											"type": "entries",
+											"name": "约弗劳斯特",
+											"entries": [
+												"约弗劳斯特保持距离，用他的冰寒魔法冻结队伍成员，使他们更容易受到他和伙伴的攻击。整场战斗中，他反复念叨着自己\"绝不再回到那个球里去！\"此外，他可以用权杖召出暴风雪或冰墙，把队伍成员彼此隔开。"
+											]
+										},
+										{
+											"ENG_name": "Companion",
+											"type": "entries",
+											"name": "同伴",
+											"entries": [
+												"霜落伙伴会插到队伍与国王之间。这只生物攻击离它最近的目标，只有当有生物逼近约弗劳斯特时才会转移目标。它从不撤离，只倾向于选择攻击或疾走动作。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "End of Wave",
+									"type": "entries",
+									"name": "波次结束",
+									"entries": [
+										"当约弗劳斯特被降至0生命值且其神话特质触发时，这一波结束。特质一旦触发，立即进入第3波。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Wave 3: Winter's Heart",
+							"type": "entries",
+							"name": "第3波：凛冬之心",
+							"entries": [
+								"在这一波中，约弗劳斯特进入神话状态，倾尽全力要碾碎队伍。他唤来一场冬季风暴，威胁要摧毁整座宫殿\u2014\u2014若不能及时阻止的话。这位冬妖精对再次孤身一人怕得要死。",
+								"第三波开始后，朗读以下文字：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"冬王跌倒在双手双膝上，皮毛被一道道血痕浸得斑驳，鲜血滴落在这纯白的雪地上。他的身体蜷缩下去，发出一声发自胸腔的沮丧嘶吼。\"不！\"他咆哮道，\"我不要回去！我不要再孤零零一个人！\"",
+										"他那充满痛楚的呼喊回荡在庭院之中，雪地上他周围的血液化作触须，缠上附近的物体。他起身时，一股旋风在他周身成形。一道道冻结的血流缠绕他的躯体，一套由断裂的树枝、碎裂的獠牙和瓦砾拼凑成的粗陋甲胄逐渐附着其上。",
+										"气温骤降，狂风呼啸而起，闪电在头顶漆黑的天空中交错穿梭，照亮了红白相间的雪地。随着风势渐强卷开积雪，一只冰构成的生物从冻湖之中缓缓升起。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Hazard: Blizzard",
+											"type": "entries",
+											"name": "危害：暴风雪",
+											"entries": [
+												"一场猛烈的暴风雪席卷该区域，降低了整个庭院的能见度。刺骨的狂风使移动中的生物速度减半，因为它要与变幻的气流搏斗。开始飞行或在飞行中开始回合的生物必须成功通过一次{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}力量豁免检定，否则其飞行速度降至0尺，直至其下个回合开始。暴风雪持续{@b 1小时}，或直至约弗劳斯特被击败。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Enemies",
+									"type": "entries",
+									"name": "敌人",
+									"entries": [
+										"第三波的敌人由处于神话状态的约弗劳斯特与一名由他召来的冰暴凝成的霜落守卫组成。这只生物的外观与下面引用的数据一致，只是它完全由冰构成。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Level 4",
+													"type": "item",
+													"name": "4环",
+													"entries": [
+														"4级时，第3波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1只{@creature 霜落马|BloodSS}",
+																"1名{@creature 约弗劳斯特王子|BloodSS}（CR 4；神话状态）"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 8",
+													"type": "item",
+													"name": "8环",
+													"entries": [
+														"8级时，第3波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1只{@creature 巨型霜落熊|BloodSS}",
+																"1名{@creature 约弗劳斯特国王|BloodSS}（CR 9；神话状态）"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 12",
+													"type": "item",
+													"name": "第12层",
+													"entries": [
+														"12级时，第3波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1只{@creature 霜落巨人|BloodSS}",
+																"1名{@creature 约弗劳斯特皇帝|BloodSS}（CR 15；神话状态）"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Tactics",
+									"type": "entries",
+									"name": "战术",
+									"entries": [
+										{
+											"ENG_name": "Jorfraust",
+											"type": "entries",
+											"name": "约弗劳斯特",
+											"entries": [
+												"在他的第一个回合，约弗劳斯特使用内噬蛭提高自己的速度。如果他没有镜影分身，他的第一个传奇动作就是使用冰之幻影。否则，他以突进打击作为第一个传奇动作调整站位，以便在随后的两个传奇动作中利用凛冬冲锋命中尽可能多的目标。他还会见机使用远程攻击，收割那些超出他近战攻击范围的低生命值生物。"
+											]
+										},
+										{
+											"ENG_name": "Frostfall Defender",
+											"type": "entries",
+											"name": "霜落守卫",
+											"entries": [
+												"霜落守卫会盯上那些试图游离约弗劳斯特近战攻击范围之外的生物（通常是施法者），将他们擒抱并拖到他的身边。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "End of Wave",
+									"type": "entries",
+									"name": "波次结束",
+									"entries": [
+										"当约弗劳斯特被降至0生命值、即将被吸入米尔德丽德的魔法晶体球时，这一波结束。如果还有霜落守卫存活，它们会四散而逃。",
+										"约弗劳斯特被击败后，朗读以下文字：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"约弗劳斯特残破的身躯轰然倒地，他血染的口鼻因怨毒的愤怒而扭曲，用恶狠狠的目光仰望你们。\"我想要的不过是自由，是朋友。这难道也奢求了吗？你们......全都一个样。\"他闭上双眼，呼出最后一口化作白雾的气息。"
+											]
+										},
+										"将魔法晶体球放入约弗劳斯特口中后，朗读以下文字：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"晶体球滑过国王的双唇，随即闪起一团旋动的金光。雪花开始在球体内部凝结，直到一场微型的暴风雪在玻璃壁内咆哮。光芒褪去后，球中显出一座微缩的冬日森林，森林正中央是一座城堡。",
+												"就在球中光芒消散之际，太阳破云而出。艾瑞丝飞奔而过，直冲宫殿大门，口中喊道：\"公主和女王！\""
+											]
+										},
+										"誓日者宫殿的内部覆盖着正在迅速消融的冰雪。如果角色们跟随艾瑞丝进入宫殿，他们将恰好目睹苏莉安娜女王与谢尔公主从冻结状态中解冻苏醒。公主仍受着荆棘女王赠她的晚礼服的魅惑，对艾瑞丝的呼喊置若罔闻，匆匆穿过传送门，前往暗影界。",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"宫殿的主厅中，两尊冻结的雕像立在荡漾着暗影的传送门旁。短短数秒之内，冰层开始龟裂消融。一尊雕像从融化的冰中踉跄走出：一位身材矮小的年轻女子，双腿结实，浓密的绿藤为发，头上的鹿角缀满春日繁花。这位妖精身着一袭耀眼的靛蓝晚礼服，裙上装饰的午夜蓝羽毛随之脉动，与她身旁暗色裂隙的搏动遥相呼应。",
+												"第二尊雕像挣扎着脱身而出，她的礼服与头发正进行一场绚烂的比拼，争夺最浓郁的黄金光泽。这位金色身影的脸上写满惊恐，与她华贵的仪容形成刺眼的反差。\"不，谢尔！别过去！\"苏莉安娜惊呼。",
+												"无人理会。身着靛蓝礼服的公主滑入传送门，传送门在她身后闭合消融。女王浑身因无声的愤怒而颤抖，她那双锐利的钻石般眼眸失焦地望着虚空\u2014\u2014女儿方才伫立的地方。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Aftermath",
+					"type": "section",
+					"name": "余波",
+					"entries": [
+						"公主逃走之后，女王的怒火变得和约弗劳斯特的魔法一样冰冷。她因失去女儿而心神大乱，痛斥艾瑞丝办事不力，竟让她的女儿逃走。队伍也未能幸免于她的尖刻言辞，随后她大步走上了一段楼梯。目瞪口呆的艾瑞丝结结巴巴地请队伍照看一下众廷臣，解释说自己稍后就取来酬金。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "The Royal Secret",
+											"type": "entries",
+											"name": "王室秘辛",
+											"entries": [
+												"稍后，女王要求角色们将功赎罪，寻回公主。她告诉他们，荆棘女王\u2014\u2014一位被苏莉安娜女王放逐到暗影界的黑暗妖精\u2014\u2014为了复仇而魅惑了谢尔公主。女王不愿向队伍透露事情的全貌（如{@adventure 暗悦花园|MD-GoDD}所述），除非他们成功通过一次{@footnote 可变DC|{@dc 12}/{@dc 14}/{@dc 16}}魅力（{@skill 说服}）检定。如果队伍曾让米尔德丽德信服他们的实力（见{@adventure 为茶讨价|BSS-BotF|2|线索1：为茶讨价}）\u2014\u2014因为她会建议女王信任这些角色\u2014\u2014此检定可以具有{@b 优势}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						"以下是这场狩猎结束后可能发生的一些后续进展：",
+						{
+							"type": "list",
+							"items": [
+								"冰雪消融，显露出葱郁的植被与粉嫩的春日新芽。随着宫殿各处被冻结的生物逐一解冻，欢庆与喜悦之声回荡在王庭之中。",
+								"当女王对女儿\"被掳\"的怒意公之于众时，花蕾迅速绽放为鲜亮的夏日繁花。",
+								"米尔德丽德重新回到女王的右首之位，并主动提出将她关于暗影界\u2014\u2014公主被带往的地方\u2014\u2014的所知倾囊相授。尽管她的知识有限，但角色们学到的一切（由GM裁定）都可能派上用场。",
+								"艾瑞丝一边着手组织治疗者照顾伤者，一边等待角色们休整、治疗，为前往暗影界拯救她心爱的公主做准备。",
+								"接下来的几周里，逃往物质位面的妖精难民陆续返回誓日者王庭，回到他们周围森林中的家园。",
+								"受约弗劳斯特魔法吸引、在宫殿附近安家的生物与怪物\u2014\u2014例如霜螈和霜火菲涅克斯\u2014\u2014纷纷逃离王庭，返回它们的来处。"
+							]
+						},
+						{
+							"ENG_name": "Continuing this Story",
+							"type": "inset",
+							"name": "故事续章",
+							"entries": [
+								"如果角色们同意协助苏莉安娜女王救回她任性的女儿，妖精王庭会在他们准备就绪时，为他们开启一道通往暗影界的传送门。故事将在《{@i 日与影之血}》三部曲的第三部、也是最后一部{@adventure 暗影与荆棘女王|BSS-QoST}中继续。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Treasure",
+					"type": "section",
+					"name": "财宝",
+					"entries": [
+						"苏莉安娜女王以艾瑞丝许诺的金币酬谢队伍。每一枚金币上都印着一位早已被遗忘的凡人女王的侧脸\u2014\u2014数千年前，她将这些金币作为礼物赠予了这位妖精女王。如果队伍接受女王的请求去救她的女儿，她会赠予他们一柄{@item 垂柳弓|LALoTT|垂柳弓}，一把魔法弓（类型由GM根据队伍需要决定），能够标记一个目标，让他人得以精准无误地发起打击。",
+						{
+							"type": "table",
+							"caption": "宝藏",
+							"colLabels": [
+								"狩猎等级",
+								"垂柳弓稀有度"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-3 text-center"
+							],
+							"rows": [
+								[
+									"4环",
+									"{@item 垂柳弓（非普通）|LALoTT|非普通}"
+								],
+								[
+									"8th",
+									"{@item 垂柳弓（珍稀）|LALoTT|珍稀}"
+								],
+								[
+									"12th",
+									"{@item 垂柳弓（极珍稀）|LALoTT|极珍稀}"
+								]
+							]
+						},
+						{
+							"ENG_name": "Harvesting",
+							"type": "entries",
+							"name": "采割",
+							"entries": [
+								"除了妖精通常拥有的部件之外，还可以从约弗劳斯特的遗骸上采割到以下部件，用于制作独有物品。",
+								{
+									"type": "table",
+									"caption": "约弗劳斯特采割表",
+									"colLabels": [
+										"部件DC",
+										"成分"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-4 text-center"
+									],
+									"rows": [
+										[
+											"5",
+											"鬃毛（1）"
+										],
+										[
+											"10",
+											"一包爪子（4）"
+										],
+										[
+											"15",
+											"心脏（1）"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Crafting",
+							"type": "entries",
+							"name": "手作",
+							"entries": [
+								"以下独有物品可以用从约弗劳斯特身上采割的部件制作而成。",
+								{
+									"type": "table",
+									"caption": "约弗劳斯特可制作物品",
+									"colLabels": [
+										"物品名称",
+										"物品类型",
+										"稀有度",
+										"同调",
+										"成分",
+										"精华",
+										"价值{@sup *}"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-3 text-center",
+										"col-2 text-center",
+										"col-2 text-center",
+										"col-5 text-center",
+										"col-1 text-center",
+										"col-2 text-center"
+									],
+									"rows": [
+										[
+											"{@item 极寒猎手|LALoTT|极寒猎手}",
+											"武器（任意弩）",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"{@item 极寒猎手（非普通）|LALoTT|非普通}",
+													"{@item 极寒猎手（珍稀）|LALoTT|珍稀}",
+													"{@item 极寒猎手（极珍稀）|LALoTT|极珍稀}"
+												]
+											},
+											"\u2014",
+											"一包妖精（{@i 约弗劳斯特}）的爪子",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"瘦弱",
+													"强韧",
+													"强效"
+												]
+											},
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"460 gp",
+													"1,430 gp",
+													"7,190 gp"
+												]
+											}
+										],
+										[
+											"{@item 猎人护目镜|LALoTT|猎人护目镜}",
+											"奇物",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"{@item 猎人护目镜（非普通）|LALoTT|非普通}",
+													"{@item 猎人护目镜（珍稀）|LALoTT|珍稀}",
+													"{@item 猎人护目镜（极珍稀）|LALoTT|极珍稀}"
+												]
+											},
+											"必需的",
+											"妖精（{@i 约弗劳斯特}）的心脏",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"瘦弱",
+													"强韧",
+													"强效"
+												]
+											},
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"730 gp",
+													"4,100 gp",
+													"11,200 gp"
+												]
+											}
+										],
+										[
+											"{@item 凛冬围巾|LALoTT|凛冬围巾}",
+											"奇物",
+											"通用语",
+											"\u2014",
+											"妖精（{@i 约弗劳斯特}）的鬃毛",
+											"\u2014",
+											"40 gp"
+										]
+									],
+									"footnotes": [
+										"{@sup *}此为\"现货\"购入价格，可能与制作成本存在显著差异。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "BSS-QoST",
+			"source": "BloodSS",
+			"data": [
+				{
+					"ENG_name": "Introduction",
+					"type": "section",
+					"name": "简介",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/Param.webp"
+									},
+									"credit": "Sam Jumisko"
+								},
+								"{@i 暗影与荆棘女王}是一场为四名角色准备的第五版狩猎冒险，平均队伍等级（APL）为5、9或13级。完成本次狩猎的角色应获得足够的经验，分别升到6级或10级进度的三分之一，或14级进度的三分之二。冒险者必须横穿暗影位面，赶在荆棘女王将二人的灵魂融合为一之前，救回被掳走的妖精公主。"
+							]
+						},
+						{
+							"ENG_name": "Background",
+							"type": "section",
+							"name": "背景",
+							"entries": [
+								"暗影位面是一片神秘的单色之域，是物质位面的扭曲倒影。与歌颂情感与光明的妖精位面不同，这个暗影之域是一片崎岖的黑暗与绝望。这里的居民通常是温和植物与生物的致命版本\u2014\u2014若你停下脚步去嗅这些花朵，它们可能会吸干你骨头里的骨髓。",
+								"当妖精位面誓日者王庭的统治者苏莉安娜·誓日女王发现自己的女儿谢尔公主身怀黑暗时，她采取了极端的手段。她秘密地将谢尔的灵魂切为两半，把黑暗的那一半放逐到暗影界（见{@adventure 暗悦花园|MD-GoDD}），任其可能孤独而无闻地死去。",
+								"一位夜鬼婆在暗影位面中游荡、寻找致麻痹的棘草时，感知到了这个年幼的灵魂，便把孩子带回去当自己的亲眷抚养。鬼婆夸赞这孩子的野心与残忍，传授她黑暗魔法，盼她有朝一日夺回本属于她的位置。虽然这孩子一年年强大起来，却始终被无以排遣的孤独折磨着，一种鬼婆无法满足的、对陪伴的渴望。这份噬心的感觉引她钻研起灵魂魔法，并用它创造了荆棘仔\u2014\u2014一个由扭曲藤蔓与棘刺构成的凶恶种族。然而，即便以荆棘女王之尊统治着一个荆棘仔的王庭，她内心深处的渴望仍未消减。",
+								"直到审视自己的灵魂，荆棘女王才发现那道造成她忧郁的参差裂痕：她只是完整的一半。在夜鬼婆养母的帮助下，荆棘女王找到了她的另一半\u2014\u2014谢尔公主\u2014\u2014并缝制了一件华美的礼服，能将谢尔的灵魂呼唤向她这个暗影中的另一半。荆棘女王把这件魔法礼服伪装成公主成年礼的礼物\u2014\u2014那是谢尔将脱离母亲守护结界的时刻。当一群冒失的凡人冒险者击败一位冬妖精、救出公主之后（见{@adventure 妖精的血霜|BSS-BotF}），谢尔进入了暗影界，寻到了荆棘女王。",
+								"如今，这两个半身已在暗影与荆棘筑起的护墙之内重聚。女王召集她的荆棘仔子民前来参加结合庆典。刚刚解冻的誓日者王庭还未恢复到足以远征暗影界，于是苏莉安娜女王向那些有胆量以身犯险的人寻求援助。虽然苏莉安娜没有透露公主灵魂被切分的真相，但谁都看得出来，要赶在荆棘女王的图得逞之前救人，分秒必争。",
+								{
+									"ENG_name": "Summary",
+									"type": "entries",
+									"name": "概述",
+									"entries": [
+										"以下是这场狩猎关键信息的快速摘要：",
+										{
+											"type": "list",
+											"items": [
+												{
+													"ENG_name": "Which Monster?",
+													"type": "item",
+													"name": "猎物是哪只怪物？",
+													"entries": [
+														"荆棘女王，一位暗影妖精，以及誓日者公主，一位春日妖精。"
+													]
+												},
+												{
+													"ENG_name": "Monster's Motivation",
+													"type": "item",
+													"name": "怪物的动机",
+													"entries": [
+														"荆棘女王想吸收公主那一半的灵魂。"
+													]
+												},
+												{
+													"ENG_name": "Monster's Previous Actions",
+													"type": "item",
+													"name": "怪物的既往行径",
+													"entries": [
+														"荆棘女王掳走了誓日者公主，并魅惑了她的心智。"
+													]
+												},
+												{
+													"ENG_name": "Where's the Monster?",
+													"type": "item",
+													"name": "怪物在哪里？",
+													"entries": [
+														"暗影界中的荆棘王庭。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adventure Hooks",
+									"type": "entries",
+									"name": "冒险引子",
+									"entries": [
+										"每个角色都有促使他们参与冒险的个人目标。以下钩子代表了一些可能的动机，可吸引角色们同意前去营救谢尔公主。",
+										{
+											"type": "list",
+											"items": [
+												{
+													"ENG_name": "Curiosity: Avoiding Regicide",
+													"type": "item",
+													"name": "好奇：避免弑君",
+													"entries": [
+														"秋日鬼婆{@creature 米尔德丽德·喜鹊|BloodSS|米尔德丽德}有一颗熟悉的晶体球（见{@adventure 妖精的血霜|BSS-BotF}），其频率正适于囚禁荆棘女王。米尔德丽德想让女王被囚禁起来，以便研究灵魂能否修复、两人能否安全地合而为一。如果角色们尚不知晓谢尔灵魂被切分之事，鬼婆则会解释说，囚禁女王或许可以避免一场位面之间的战争。"
+													]
+												},
+												{
+													"ENG_name": "Morality: A Lover's Heart",
+													"type": "item",
+													"name": "道义：恋人之心",
+													"entries": [
+														"{@creature 艾瑞丝·清风|BloodSS}，誓日者王庭的总管、谢尔公主的秘密恋人，咽下了她那出了名的傲气，再次向队伍求助。这位热情的妖精坦白了她与公主的秘密恋情，以强调这场营救对她何等重要。艾瑞丝恳求队伍有始有终，把她的爱人带回家里。"
+													]
+												},
+												{
+													"ENG_name": "Compensation: A Queen's Ransom",
+													"type": "item",
+													"name": "报酬：女王之赎",
+													"entries": [
+														"苏莉安娜女王认为谢尔逃入暗影界，角色们要负一部分责任，但她明白自己需要他们的帮助。由于角色们并非她的臣民、无权差遣，她提出以金币和私库中的物品作为酬劳。成功通过一次{@dc 20}魅力（{@skill 游说}）检定，还可以说服她在酬劳之外加封\"誓日者王庭廷臣\"的荣誉头衔。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/Vines.webp"
+											},
+											"credit": "Chaouki \"Ciao\" Titouthi"
+										},
+										{
+											"ENG_name": "Variable Statistics",
+											"type": "entries",
+											"name": "可变数据",
+											"entries": [
+												"为确保不同等级的游戏都能保持挑战性，你会看到对可变DC（VDC）、可变调整值（Vmod）和可变伤害（Vdam）的引用。这些变量会根据你队伍的APL而变化：",
+												{
+													"type": "table",
+													"caption": "可变数据摘要",
+													"colLabels": [
+														"平均队伍等级",
+														"可变DC",
+														"可变调整值",
+														"可变伤害"
+													],
+													"colStyles": [
+														"col-3 text-center",
+														"col-3 text-center",
+														"col-3 text-center",
+														"col-3 text-center"
+													],
+													"rows": [
+														[
+															"1-2",
+															"11",
+															"+3",
+															"2 ({@damage 1d4})"
+														],
+														[
+															"3-4",
+															"12",
+															"+4",
+															"3 ({@damage 1d6})"
+														],
+														[
+															"5-6",
+															"13",
+															"+5",
+															"5 ({@damage 2d4})"
+														],
+														[
+															"7-8",
+															"14",
+															"+6",
+															"7 ({@damage 2d6})"
+														],
+														[
+															"9-11",
+															"15",
+															"+7",
+															"10（{@damage 3d6}）"
+														],
+														[
+															"12-14",
+															"16",
+															"+8",
+															"14 ({@damage 4d6})"
+														],
+														[
+															"15-17",
+															"17",
+															"+9",
+															"42 ({@damage 6d6})"
+														],
+														[
+															"18-20",
+															"18",
+															"+10",
+															"28 ({@damage 8d6})"
+														]
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Mildred Magpie",
+									"type": "entries",
+									"name": "米尔德丽德·喜鹊",
+									"entries": [
+										"{@creature 米尔德丽德·喜鹊|BloodSS}是一位佝偻的秋日鬼婆，一头狂野的卷发宛如鸟巢，仿佛自有生命般蠕动。她的淡绿色皮肤紧绷在老朽的骨骼上，双眼的色调随她的心情在秋色之间变换。尽管米尔德丽德外表邋遢，她却是一位附魔大师，能轻松编织强大的法术与诅咒。她担任苏莉安娜女王的右臂顾问，始终为誓日者王庭的最大利益着想。",
+										"米尔德丽德分享了以下关于荆棘王庭的信息：",
+										{
+											"type": "list",
+											"items": [
+												"荆棘女王在一座险峻山丘之巅的暗影堡垒中发号施令。",
+												"传闻她堡垒的脚下有一座名为暮丘的废墟小镇。",
+												"暗影位面以光为食，会缓慢榨取不适应其负能量的生物的生命力。",
+												"米尔德丽德认为，最好用一颗被施了魔法的晶体球囚禁荆棘女王，正如当年困住约弗劳斯特那样（见{@adventure 妖精的血霜|BSS-BotF}）。她会在这支队伍动身前往暗影界之前，把晶体球交给角色们。"
+											]
+										},
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Planar Travel & Communication",
+													"type": "entries",
+													"name": "位面旅行与通讯",
+													"entries": [
+														"米尔德丽德交给队伍一条银蓝宝石护符，它与米尔德丽德自己手中的一条魔法同调。佩戴护符的角色可以用一个动作施展{@spell 短讯术}法术，但只能与米尔德丽德通话。该角色也可以用一个动作捏碎护符中的蓝宝石，启动一道{@spell 瞬间召唤}法术（见{@adventure 援手|BSS-QoST|3|援手}一节）。",
+														"当角色们准备进入暗影界时，米尔德丽德会施展法术，将队伍送往该位面\u2014\u2014他们将抵达荆棘王庭周围那片贫瘠的荒原。"
+													]
+												}
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"columns": 2,
+											"items": [
+												{
+													"ENG_name": "Mildred Magpie",
+													"type": "inset",
+													"name": "米尔德丽德·喜鹊",
+													"entries": [
+														"{@i 妖精，秋日鬼婆（使用{@creature 绿鬼婆}数据），她/她}",
+														{
+															"ENG_name": "Personality",
+															"type": "item",
+															"name": "个性",
+															"entries": [
+																"言语尖刻，但心地善良、极为聪慧。对女王和王庭忠心耿耿。"
+															]
+														},
+														{
+															"ENG_name": "Appearance",
+															"type": "item",
+															"name": "外貌",
+															"entries": [
+																"轮廓分明，身形佝偻，一头狂野的长发。身穿秋色的朴素长袍。"
+															]
+														},
+														{
+															"ENG_name": "Desire",
+															"type": "item",
+															"name": "渴望",
+															"entries": [
+																"证明并非所有鬼婆都该被猜忌与唾弃。"
+															]
+														},
+														{
+															"ENG_name": "Fear",
+															"type": "item",
+															"name": "恐惧",
+															"entries": [
+																"担心自己会像那些化作夜鬼婆的姐妹一样，迷失于暗影。"
+															]
+														},
+														{
+															"type": "quote",
+															"entries": [
+																"真相或许刺耳，但它关乎我们的存亡。"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "table",
+									"caption": "每位玩家角色的狩猎奖励",
+									"colLabels": [
+										"狩猎等级",
+										"金",
+										"经验值{@sup *}"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-3 text-center",
+										"col-2 text-center"
+									],
+									"rows": [
+										[
+											"6th",
+											"1,050 gp",
+											"2,500"
+										],
+										[
+											"11th",
+											"3,500 gp",
+											"四千八百"
+										],
+										[
+											"16th",
+											"7,750 gp",
+											"10,000"
+										]
+									],
+									"footnotes": [
+										"{@sup *}包含所有遭遇、怪物与谜题，按4名玩家角色平均计算。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Plane of Shadow",
+					"type": "section",
+					"name": "暗影位面",
+					"entries": [
+						"暗影位面是一片永恒黑暗之地，吞噬一切敢于燃起的火光。此地的地貌是物质位面的扭曲倒影，物理与现实的法则在这里变幻莫测且危险重重。天空永远阴云密布，头顶上永远见不到太阳与星辰。大地贫瘠多岩，扭曲的树木与多刺的灌木投下深深的阴影，阴影中藏着伺机掳掠疏忽者的生物。死者的灵魂在此位面徘徊，空气中弥漫着浓浓的悲恸与绝望。河流与湖泊幽暗浑浊，深处常藏着梦魇般的生物。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Gloom",
+											"type": "entries",
+											"name": "幽暗",
+											"entries": [
+												"暗影位面会削弱凡俗光源，使其照明半径缩短50%。魔法光源不受影响。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Regional Effects",
+									"type": "entries",
+									"name": "区域效应",
+									"entries": [
+										"荆棘女王的魔法延伸至其王庭周围数英里的区域，产生下列一项或多项效应：",
+										{
+											"type": "list",
+											"items": [
+												{
+													"ENG_name": "Darkening",
+													"type": "item",
+													"name": "骤暗",
+													"entries": [
+														"荆棘王庭周围1英里半径范围内的黑暗如此浓重，以致拥有黑暗视觉的生物视觉范围减半。"
+													]
+												},
+												{
+													"ENG_name": "Soul Drain",
+													"type": "item",
+													"name": "灵魂汲取",
+													"entries": [
+														"荆棘王庭周围5英里半径范围内的负能量会榨取在此停留过久的生物的生命力。生物在此区域内每度过1小时，就必须成功通过{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}体质豁免检定，否则增加1级力竭。不死生物和已适应暗影界的生物自动通过此豁免检定。"
+													]
+												},
+												{
+													"ENG_name": "Awakened Plantlife",
+													"type": "item",
+													"name": "觉醒植物",
+													"entries": [
+														"虬结的树木和布满棘刺的藤蔓在荆棘王庭周围10英里半径范围内疯长。这些植物中有许多具有意识并忠于荆棘女王，在整个地区充当她的眼线与耳目。"
+													]
+												}
+											]
+										},
+										"如果荆棘女王被击败，这些效应会在接下来的{@dice 1d10}天内逐渐消散。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tracking",
+							"type": "entries",
+							"name": "追踪",
+							"entries": [
+								"当队伍在暗影位面崎岖的沟壑与盘曲的荒原中前行时，需要成功完成三次检定中的两次，才能找到通往荆棘王庭与暮丘镇的路。每次检定耗时1天，并引发一次线索遭遇（见{@adventure 了解你的敌人|BSS-QoST|2|了解你的敌人}）。若检定失败，队伍会遭遇一场敌对遭遇（见《{@i 海莲娜的怪物狩猎指南}》中的{@book 追踪章节|HelianasGuidetoMonsterHunting|2|追踪}）。掷一次{@dice 1d3}并查阅\"暗影位面遭遇\"表，依据狩猎等级决定这场敌对遭遇。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Shadow Creatures",
+											"type": "entries",
+											"name": "暗影生物",
+											"entries": [
+												"暗影位面中满是物质位面生物的暗影变种。如下表所注，暗影生物以括号中标注生物的单色暗影版本出现。"
+											]
+										}
+									]
+								},
+								{
+									"type": "table",
+									"caption": "暗影位面遭遇",
+									"colLabels": [
+										"d3",
+										"5级狩猎",
+										"9级狩猎",
+										"13级狩猎"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-3",
+										"col-4",
+										"col-4"
+									],
+									"rows": [
+										[
+											"1",
+											"6 {@creature 幽影||幽影}",
+											"2只食人魔僵尸（{@creature 食人魔僵尸||食人魔僵尸}）与2只暗影鹰（{@creature 巨鹰||巨鹰}）",
+											"1名暗影妖精{@creature 角斗士}，以及1名暗影妖精豹人（{@creature 虎人}）"
+										],
+										[
+											"2",
+											"2只{@creature 妖鬼||妖鬼们}和2只{@creature 食尸鬼||食尸鬼们}",
+											"2 {@creature 邪灵||邪灵}",
+											"2只暗影巨人（{@creature 霜巨人||霜巨人}）"
+										],
+										[
+											"3",
+											"1只暗影元素（{@creature 气元素}）",
+											"3只{@creature 石化蜥蜴||石化蜥蜴}和1名暗影妖精{@creature 间谍}",
+											"3 {@creature 夜鬼婆||夜鬼婆}"
+										]
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Safe Haven",
+											"type": "entries",
+											"name": "安全归处",
+											"entries": [
+												"队伍必须穿过通往荆棘王庭的废墟小镇暮丘。整座小镇都被扭曲的藤蔓与纠结的枝干覆盖，只有一间铁匠铺寸草不生。覆满墙壁的铁粉尘是荆棘女王妖精魔法的克星，当地生物都避之不及。这座受保护的锻炉为队伍提供了休整、备战与修理铁制武器的场所（见{@adventure 线索2：厌铁|BSS-QoST|2|线索2：厌铁}）。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/Wood.webp"
+							},
+							"credit": "Jesse Jackdaw Burns"
+						},
+						{
+							"ENG_name": "Unique Flora & Fauna",
+							"type": "entries",
+							"name": "独特动植物",
+							"entries": [
+								"暗影位面栖居着许多致命的植物与生物。荆棘女王以灵魂魔法在她的王庭周遭创造出广泛而独特的种类，其中包括以下几个显著的例子",
+								{
+									"ENG_name": "Bramblekin",
+									"type": "entries",
+									"name": "荆棘仔",
+									"entries": [
+										"荆棘仔是荆棘女王的魔法所创造的有感知植物的独特种族。他们对女王死心塌地，担任她最主要的子民与士兵。他们的体型从小如觉醒的灌木到大如树人不等，外形是扭曲藤蔓与多刺荆棘的混合体。尽管外表骇人，荆棘仔的智力却与普通人类相当。他们还能通过遍布荆棘王庭、相互连通的荆棘根系进行远距离交流。这一能力使他们成为荆棘女王的优秀斥候，随时向她警报领地中的入侵者。"
+									]
+								},
+								{
+									"ENG_name": "Shadowstalker",
+									"type": "entries",
+									"name": "暗影潜猎兽",
+									"entries": [
+										"暗影潜猎兽是长着蝙蝠般翅膀和银色小角的微型猫科生物。虽然它们出了名的难以捕捉，但还是可以被驯化为魔宠。它们的飞行和隐形能力使它们深受居民的重视，常被用于狩猎与侦察。暗影潜猎兽使用{@creature 猫}的数据，并作以下调整：",
+										{
+											"type": "list",
+											"items": [
+												"它拥有40尺飞行速度。",
+												"{@b 隐形。}暗影潜猎兽魔法性地进入{@condition 隐形}状态，直至它进行攻击或其专注结束（如同专注一个{@spell 隐形术||法术}）。暗影潜猎兽穿戴或携带的任何装备也随之隐形。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Spikeweed",
+									"type": "entries",
+									"name": "棘草",
+									"entries": [
+										"棘草是一种矮小多刺的野草，常见于较大植物的荫蔽处和地面边缘。它细小的针状棘刺中含有强效的麻痹毒素，可以采割下来炼制炼金化合物。这种植物拥有迅速蔓延的独特能力，在熟练使用者手中可以成为可怕的屏障或武器。接触到棘刺的生物必须成功通过一次{@dc 11}体质豁免检定，否则陷入{@condition 麻痹}状态{@b 1分钟}。"
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/ShadowPlane.webp"
+							},
+							"credit": "Sam Jumisko"
+						}
+					]
+				},
+				{
+					"ENG_name": "Know Thy Enemy",
+					"type": "section",
+					"name": "了解你的敌人",
+					"entries": [
+						"穿越暗影位面的途中，队伍会发现一些线索，指引他们前往荆棘王庭，并预示即将到来的战斗中将要面对的东西。以下有用信息可以被发掘：",
+						{
+							"type": "list",
+							"items": [
+								"荆棘女王造成坏死伤害，而誓日者公主造成光耀伤害。",
+								"铁是荆棘女王造物的克星。",
+								"荆棘王庭的主要国民是有感知的植物。"
+							]
+						},
+						"建议按下面给出的顺序引入这些线索。",
+						{
+							"ENG_name": "Clue 1: Sun & Shadow",
+							"type": "entries",
+							"name": "线索1：日与影",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
+										{
+											"type": "item",
+											"entries": [
+												"荆棘女王的攻击造成坏死伤害，而谢尔公主的攻击造成光耀伤害。两人彼此靠得越近，这些攻击就越强大。队伍可以通过观察这两个生物的脚印，辨识出这些伤害类型以及距离的影响。",
+												{
+													"ENG_name": "Footprints",
+													"type": "entries",
+													"name": "脚印",
+													"entries": [
+														"两行蜿蜒的脚印并排沿小径延伸。随着两组脚印逐渐靠近，脚印周遭的破坏痕迹也愈发明显。你可以朗读以下文字：",
+														{
+															"type": "insetReadaloud",
+															"entries": [
+																"两行鞋印蜿蜒穿过小径上潮湿的泥泞。随着道路收窄，两行鞋印渐渐并拢，泥地也显出变化。左边那行鞋印\u2014\u2014沉甸甸的浅钉靴\u2014\u2014所过之处地面焦干皲裂，周遭的杂草与虫豸只剩下枯萎的空壳。右边那行鞋印\u2014\u2014纤窄精致的高跟鞋\u2014\u2014周围的地面平整如镜，仿佛被熔成了玻璃。"
+															]
+														},
+														"调查这些脚印的角色会注意到，两组脚印靠得越近，变化就越明显：一行焦干枯萎，另一行则灼印进地面。精通{@skill 奥秘}、或成功通过{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}智力（{@skill 奥秘}）检定的角色能辨认出，其中一行浸透了坏死能量，另一行则浸透着光耀能量。两组脚印越近，这股能量越强；相隔越远，能量便随之消散。"
+													]
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/Clue1.webp"
+											},
+											"title": "线索1：日与影",
+											"credit": "Jesse Jackdaw Burns"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Clue 2: Iron Aversion",
+							"type": "entries",
+							"name": "线索2：厌铁",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/Clue2.webp"
+									},
+									"title": "线索2：厌铁",
+									"credit": "Jesse Jackdaw Burns"
+								},
+								"荆棘女王和她的造物惧怕非魔法铁制武器的攻击。一片遍布骸骨与锈蚀兵器的古战场上，竟没有蔓延到此的那种多刺荆棘。凡铁对这里植物的影响一目了然：靠近锈蚀兵器的植物都枯萎干焦。你可以朗读以下文字：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"一片平坦的旷野上散落着许多披甲武士的尸骸，他们的甲胄与兵器的锈迹把地面染成了橙红色。多刺的藤蔓淹没了这片林间空地，缓缓蠕动着，偶尔伸出一条卷须探向某具武士的遗骸。时而有一根藤蔓触到它那覆满铁锈的目标，随即猛地缩回，倒在地上化作一段干枯的褐色空壳。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Iron Weakness",
+											"type": "entries",
+											"name": "铁质弱点",
+											"entries": [
+												"通过一次{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}智力（{@skill 自然}或{@skill 奥秘}）检定，可以忆起妖精生物惧怕非魔法铁质。或许此地环境中的生物也不例外。在前一场狩猎中已经发现过此线索的生物自动通过此检定。"
+											]
+										},
+										{
+											"ENG_name": "Ancient Loot",
+											"type": "entries",
+											"name": "古老战利品",
+											"entries": [
+												"角色若花费{@b 10分钟}搜寻某件特定的铁制武器，并成功通过{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}} - 5的感知（{@skill 察觉}）检定，就能找到一件钝化的同类武器。修理这件武器需要在铁匠铺（见{@adventure 安全归处|BSS-QoST|1|安全归处}）用铁匠工具加工{@b 1小时}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Clue 3: A Very Important Date",
+							"type": "entries",
+							"name": "线索3：一场重要的枣约",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/Clue3.webp"
+									},
+									"title": "线索3：一场重要的枣约",
+									"credit": "Jesse Jackdaw Burns"
+								},
+								"荆棘王庭的国民由魔法唤醒的灌木、丛树和其他多刺植物组成，统称荆棘仔。这些生物受召前往王庭参加一场仪式，正排成一支易于跟踪的行进队伍，径直朝那里赶去。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"一阵轻柔、如乐音般的铃声传遍灌丛，随着你们的脚步愈发清晰。一只灰色皮毛、耷拉着大耳朵的小生物身穿黑色束腰外衣，正摇着一只手铃。\"荆棘王庭的全体国民，请于12小时后前往王庭，参加女王陛下的庆典，\"它用鼻音浓重、尖细的嗓音高声喊道。灌木与荆棘闻声纷纷拔根而起，缓慢而坚定地远去。"
+									]
+								},
+								"{@creature 拉比特|BloodSS}（使用{@creature 小魔鬼}的数据，但不能飞行）受命通知荆棘仔居民前往王庭参加一场王室庆典。拉比特知道庆典将在明天举行，内容是荆棘女王与誓日者公主的结合。成功通过一次{@dc 15}魅力（{@skill 说服}或{@skill 威吓}）检定可以说服拉比特分享这一消息。若检定失败，它会转入{@condition 隐形}状态逃走。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Battle Ahead",
+					"type": "section",
+					"name": "前路之战",
+					"entries": [
+						"抵达荆棘王庭后，队伍发现一座险峻的山丘，丘顶是一座笼罩在能量漩涡之下的残破堡垒。与荆棘女王和誓日者公主的战斗分为三个连续的阶段，称为\"波\"。每一波的章节都详述了该波中要面对的敌人与战术，并说明各波开始与结束的条件。",
+						"当队伍望见小镇废墟时，朗读以下文字：",
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"荒凉的大地尽头，一座险峻的山丘刺破天空。荆棘生物缓缓走过，朝着丘顶那座黑暗堡垒而去。山脚处坐落着一座废墟小镇，多刺的藤蔓蛇行于残破的建筑之间，荆棘纠缠在瓦砾堆里。然而，在这片混沌之中，镇子正中一间孤零零的铁匠铺，竟奇怪地未被荆棘侵扰。"
+							]
+						},
+						"废墟小镇暮丘坐落在堡垒山丘的脚下，队伍可以在铁匠铺中休整（见{@adventure 安全归处|BSS-QoST|1|安全归处}），为即将到来的对决做准备。荆棘女王与谢尔公主正在王座厅中协作，聚集的荆棘仔为他们提供保护。队伍一旦休整完毕，登上山丘便很快就能抵达王庭。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Helping Hand",
+									"type": "entries",
+									"name": "援手",
+									"entries": [
+										"{@creature 米尔德丽德·喜鹊|BloodSS|米尔德丽德}无法随队进入暗影位面，但她没有让队伍空手上阵。她交给队伍的通讯护符（见{@adventure 位面旅行与通讯|BSS-QoST|0|位面旅行与通讯}）中的蓝宝石，已被刻上了{@spell 卓姆吉瞬间召唤||瞬间召唤}法术。米尔德丽德会在角色们进入荆棘王庭之前告知这一能力。角色可以用一个动作取下并捏碎蓝宝石，立刻召来一瓶{@item 治疗药水}（狩猎等级5、9、13级时分别为普通、{@item 高等治疗药水||高等}、{@item 强效治疗药水||强效}），并在同一动作中喝下或喂下这瓶药水。用于通讯时，护符仍照常生效。"
+									]
+								},
+								{
+									"ENG_name": "Princess Shael",
+									"type": "entries",
+									"name": "谢尔公主",
+									"entries": [
+										"誓日者公主认同荆棘女王，并愿意参加修复她们被切分灵魂的仪式。这位春日妖精对苏莉安娜女王的所作所为怒不可遏，并乐于把这股怒火发泄到角色们身上。"
+									]
+								},
+								{
+									"ENG_name": "Lair Actions",
+									"type": "entries",
+									"name": "巢穴动作",
+									"entries": [
+										"在第2波和第3波中，荆棘女王在每轮先攻值20时使用巢穴动作（先攻平局时视为后手）。可用巢穴动作列表见{@legroup 荆棘女王|BloodSS|荆棘女王巢穴动作}。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Court of Brambles",
+							"type": "entries",
+							"name": "荆棘王庭",
+							"entries": [
+								"荆棘王庭是一座早已被风雨侵蚀的残破堡垒，远在荆棘女王与她的荆棘仔建立王庭之前便已荒废。虽然景致几乎没有变化，但荆棘女王如今在她崩坏的墙垣之内进行着大多数灵魂魔法的实验。女王正在一道强大的以太能量漩涡中进行一场灵魂魔法仪式，希望借此将她与谢尔公主的灵魂合而为一。王庭的荆棘士兵守卫在旁，荆棘仔子民攀附在附近的墙壁上，等待女王的蜕变。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Ceiling & Floors",
+											"type": "entries",
+											"name": "天花板与地面",
+											"entries": [
+												"王座厅的天花板高40尺，且日渐崩坏。石制地面凹凸不平、断裂破碎，试图在此地面上以快于正常步伐的速度移动的生物（例如采取疾走动作），必须成功通过一次{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}敏捷豁免检定，否则会跌{@condition 倒地}。"
+											]
+										},
+										{
+											"ENG_name": "Lights",
+											"type": "entries",
+											"name": "灯光",
+											"entries": [
+												"一团旋转的以太能量漩涡，昏暗地照亮着整座王座厅。"
+											]
+										},
+										{
+											"ENG_name": "Hazard: Bramblekin Walls",
+											"type": "entries",
+											"name": "危害：荆棘仔之墙",
+											"entries": [
+												"进入距墙壁5尺范围内的生物必须成功通过一次{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}敏捷豁免检定，否则受到{@damage 2d4;3d6;4d6|可变伤害}点穿刺伤害，并被墙上的荆棘仔{@condition 受擒}（逃脱DC为{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}）。以此方式被{@condition 受擒}期间，该生物在其每个回合开始时受到{@damage 2d4;3d6;4d6|可变伤害}点穿刺伤害。"
+											]
+										},
+										{
+											"ENG_name": "Hazard: Ethereal Vortex",
+											"type": "entries",
+											"name": "危害：以太漩涡",
+											"entries": [
+												"在距能量漩涡20尺内停止移动的生物必须成功通过一次{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}魅力豁免检定，否则在灵魂被从躯体中撕离时受到{@damage 2d4;3d6;4d6|可变伤害}点心灵伤害和{@damage 2d4;3d6;4d6|可变伤害}点坏死伤害。以此方式被降至0生命值的生物即告死亡。女王与公主免疫此效应。"
+											]
+										}
+									]
+								},
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/CourtBrambles.webp"
+											},
+											"id": "0h10",
+											"imageType": "map",
+											"mapName": "荆棘王庭：GM版",
+											"credit": "Cze & Peku"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/Compass.webp"
+											}
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/CourtBrambles.webp"
+											},
+											"mapParent": {
+												"id": "0h10",
+												"autoScale": true
+											},
+											"imageType": "mapPlayer",
+											"mapName": "荆棘王庭：玩家版",
+											"credit": "Cze & Peku"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Wave 1: The Court of Brambles",
+							"type": "entries",
+							"name": "第1波：荆棘王庭",
+							"entries": [
+								"队伍从地图1：荆棘王庭的南缘进入王座厅。在这一波中，队伍将面对守卫着囚系女王与公主的能量漩涡的荆棘仔士兵。荆棘仔子民攀附在墙上，构成一层蠕动的割裂藤蔓（见上文危害：擒抓之墙）。",
+								"当队伍进入王座厅时，朗读以下文字：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"残破的堡垒之内，成千上万的多刺荆棘生物聚成一团蠕动的群体，覆盖了墙壁与天花板。空气弥漫着臭氧的气味，因远墙中央被以太卷须托举在半空的能量漩涡而噼啪作响。漩涡之下的高台上立着两道暗影般的剪影，漩涡的卷须正轻抚着她们。台前耸立着数株由荆棘构成的巨型植物，它们剃刀般锋利的棘刺在昏暗中泛着寒光。"
+									]
+								},
+								"如果队伍被发现或主动现身，可以朗读以下文字：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"伴着一声岩石相互碾压般低沉的轰鸣，最庞大的那株荆棘生物笨重地朝你们逼近，并发出警告：\"凡人！趁你们的血还没浸湿我们的根须，赶紧滚！\""
+									]
+								},
+								{
+									"ENG_name": "Bramble Soldiers",
+									"type": "inset",
+									"name": "荆棘士兵",
+									"entries": [
+										"大多数荆棘仔子民不过是觉醒的灌木，其余则是担任荆棘女王士兵的强大生物。这些生物忠于他们的女王，誓死捍卫。荆棘士兵的外形近似物质位面生物的轮廓，只是它们由覆满棘刺的粗壮虬结藤蔓构成。",
+										"荆棘士兵使用各波战斗中引用的数据，并作以下调整：",
+										{
+											"type": "list",
+											"items": [
+												"它属于植物。",
+												"它免疫毒素伤害。",
+												"它免疫{@condition 魅惑}和{@condition 中毒}状态。",
+												{
+													"type": "item",
+													"entries": [
+														"它拥有以下额外特质：",
+														{
+															"type": "list",
+															"items": [
+																"{@b 棘刺防御。}触碰荆棘仔、或在距其5尺内以近战攻击命中它的生物，受到相当于{@damage 2d4;3d6;4d6|可变伤害}一半的穿刺伤害。",
+																"{@b 铁质弱点。}当荆棘仔在单次事件中受到来自铁质非魔法武器的{@damage 2d4;3d6;4d6|可变伤害}点或更多的钝击、穿刺或挥砍伤害时，它在下个回合结束前进行的下一次属性检定、豁免检定或攻击检定都会具有{@b 劣势}。"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Enemies",
+									"type": "entries",
+									"name": "敌人",
+									"entries": [
+										"王座厅中第一波的敌人是一队荆棘士兵。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Level 5",
+													"type": "item",
+													"name": "5环",
+													"entries": [
+														"5级时，第1波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"2棵{@creature 荆棘树|BloodSS|荆棘树}",
+																"1座{@creature 荆棘丘|BloodSS}"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 9",
+													"type": "item",
+													"name": "9环",
+													"entries": [
+														"9级时，第1波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"4名{@creature 荆棘骑士|BloodSS|荆棘骑士}",
+																"1头{@creature 荆棘野猪|BloodSS}"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 13",
+													"type": "item",
+													"name": "第13层",
+													"entries": [
+														"13级时，第1波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"4名{@creature 荆棘骑士|BloodSS|荆棘骑士}",
+																"2座{@creature 荆棘丘|BloodSS|荆棘丘}",
+																"1名{@creature 荆棘树人|BloodSS}"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Tactics",
+									"type": "entries",
+									"name": "战术",
+									"entries": [
+										"荆棘士兵试图把角色们推撞到墙上，让他们保持{@condition 受擒}状态。虽然它们打得狂热且全然不顾自身安危，但这些士兵只会攻击离自己最近的人，并不会协同进攻。不过，若有生物触发了能量漩涡（见{@adventure 危害：以太漩涡|BSS-QoST|3|危害：以太漩涡}），士兵们便会集火攻击该生物。"
+									]
+								},
+								{
+									"ENG_name": "End of Wave",
+									"type": "entries",
+									"name": "波次结束",
+									"entries": [
+										"当所有敌人被击败时，这一波结束。届时，荆棘女王与誓日者公主将走出漩涡，开启第2波。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Wave 2: Halves of a Whole",
+							"type": "entries",
+							"name": "第2波：整体之两半",
+							"entries": [
+								"在这一波中，荆棘女王与誓日者公主离开能量漩涡，直面队伍。她们无意与队伍多费唇舌，只想完成她们的仪式。",
+								"第二波开始后，朗读以下文字：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"能量漩涡剧烈翻涌，卷须疯狂抽打，两道身影自它的怀抱中现身。一位带着女王的风仪，苍白的肌肤与乌黑的长发相映，发间束着一顶焦黑的荆棘之冠。她纤细的身躯裹着一袭流光礼服，锐利的目光紧紧锁住你们。她身旁站着一位曲线曼妙的身影，身披一件由阳光亲吻的树叶缀成的闪亮甲胄，金色鬈发上戴着一顶银色环冠。两人虽如昼夜般迥异，却有着一种难以言喻的相似。",
+										"\"你们竟敢把凡人的臭气带进我的王庭？\"女王用树叶摩挲般的声音嘶声道。公主的双眼闪着金光，厉声道：\"我要把你们一块一块地送回我母亲那里！\""
+									]
+								},
+								{
+									"ENG_name": "Enemies",
+									"type": "entries",
+									"name": "敌人",
+									"entries": [
+										"第二波由荆棘女王与誓日者公主组成。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Level 5",
+													"type": "item",
+													"name": "5环",
+													"entries": [
+														"5级时，第2波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1名{@creature 荆棘继承人|BloodSS}",
+																"1名{@creature 誓日者继承人|BloodSS}"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 9",
+													"type": "item",
+													"name": "9环",
+													"entries": [
+														"9级时，第2波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1名{@creature 荆棘女士|BloodSS}",
+																"1名{@creature 誓日者女士|BloodSS}"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 13",
+													"type": "item",
+													"name": "第13层",
+													"entries": [
+														"13级时，第2波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1名{@creature 荆棘女王|BloodSS}",
+																"1名{@creature 誓日者公主|BloodSS}"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Tactics",
+									"type": "entries",
+									"name": "战术",
+									"entries": [
+										"荆棘女王在战斗开始前已施展了{@spell 树肤术}。二人协同作战，并尽量彼此保持在可用\"灵魂新星\"的距离内。荆棘女王使用她的群体控制法术与能力\u2014\u2014例如{@spell 纠缠术}和荆棘领域\u2014\u2014限制队伍的移动，为誓日者公主创造打了就跑的近战术机。女王还会一有机会就用妖精魅惑把角色拉到自己一边。公主则是个斗殴好手，跃入战团攻击她认为最弱的角色，随后又迅速撤出，以保持与女王的距离。"
+									]
+								},
+								{
+									"ENG_name": "End of Wave",
+									"type": "entries",
+									"name": "波次结束",
+									"entries": [
+										"当荆棘女王与誓日者公主都被降至0生命值时，这一波结束。两人各自被击败时，她们的躯体分别会被一层无法穿透的棘刺之茧（女王）与藤叶之茧（公主）保护起来。二人都结茧后一轮，进入第3波。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Wave 3: Long Live the Queen",
+							"type": "entries",
+							"name": "第3波：女王万岁",
+							"entries": [
+								"在二人中后一个被降至0生命值的那一轮的先攻值0时，荆棘女王与誓日者激活各自的神话特质，同时从保护她们的茧中现身。",
+								"保护之茧破碎后，朗读以下文字：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"包裹着女王与公主的茧的硬化外壳上开始出现裂纹。茧即将破碎之际，光束与缕缕暗影交织着透出，随后茧壳炸裂，二人凭借新生的双翼直冲天空。公主的一对翅膀宛如精致的蝴蝶，闪烁着斑斓色彩；女王则张着一对皮革质地的蝙蝠状翅膀。两人在房间中央的上空相遇，再度编织起光与暗的魔法。\"我们将再次完整！没有什么能阻止我们！\"两人以完全一致的声调高喊。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Trapping the Queen",
+											"type": "entries",
+											"name": "囚禁女王",
+											"entries": [
+												"一旦荆棘女王被降至0生命值，角色们必须将魔法晶体球（见{@creature 米尔德丽德|BloodSS|米尔德丽德·喜鹊}，第2页）放入她口中，以囚禁她的灵魂。她的遗骸会硬化成虬结的荆棘，可供采割（见{@adventure 采割|BSS-QoST|5|采割}；完整的采割与制作机制请参阅《{@i 海莲娜的怪物狩猎指南}》）。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Enemies",
+									"type": "entries",
+									"name": "敌人",
+									"entries": [
+										"第三波的敌人由激活神话特质后的荆棘女王与誓日者公主组成。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Level 5",
+													"type": "item",
+													"name": "5环",
+													"entries": [
+														"5级时，第3波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1名{@creature 荆棘继承人|BloodSS}（神话状态）",
+																"1名{@creature 誓日者继承人|BloodSS}（神话状态）"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 9",
+													"type": "item",
+													"name": "9环",
+													"entries": [
+														"9级时，第3波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1名{@creature 荆棘女士|BloodSS}（神话状态）",
+																"1名{@creature 誓日者女士|BloodSS}（神话状态）"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Level 13",
+													"type": "item",
+													"name": "第13层",
+													"entries": [
+														"13级时，第3波的参战者为：",
+														{
+															"type": "list",
+															"items": [
+																"1名{@creature 荆棘女王|BloodSS}（神话状态）",
+																"1名{@creature 誓日者公主|BloodSS}（神话状态）"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Tactics",
+									"type": "entries",
+									"name": "战术",
+									"entries": [
+										"荆棘女王与誓日者公主利用新生的双翼在战场上空机动，同时彼此保持在可用\"灵魂新星\"的距离内。她们先用翅膀洒下的尘雾致盲、迟滞队伍，再使用范围效应能力\u2014\u2014例如棘刺弹幕与日焰\u2014\u2014尽可能同时命中最多的角色。"
+									]
+								},
+								{
+									"ENG_name": "End of Wave",
+									"type": "entries",
+									"name": "波次结束",
+									"entries": [
+										"当荆棘女王被降至0生命值并被收入球中时，这一波结束。或者，女王与公主都被降至0生命值时，这一波也会结束。",
+										"如果荆棘女王被吸入球中，朗读以下文字：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"随着米尔德丽德的晶体球吸收荆棘女王的灵魂，球中渐渐布满扭曲的藤蔓与黑玫瑰，女王的躯体只剩下一具枯瘦的木质空壳。公主颓然跪倒，脸上写满挫败。\"我投降！\"她悲声哭喊，爬过去握住倒下女王的手。\"我想要的只是完整，是重新变得完整。你们夺走了它，我永远不会原谅你们！\"泪水顺着她的脸颊滚滚而下，无声地溅落在女王虬结的木躯上。",
+												"能量漩涡消散，沉闷的坠响开始在房间各处响起。荆棘生物一只接一只地从栖身处跌落，尚未落地便已死去。石墙一段段垮塌，残破的堡垒发出不甘的呻吟。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Optional Ending: Rescue on the Run",
+							"type": "entries",
+							"name": "可选结局：亡命营救",
+							"entries": [
+								"如果你将本冒险作为单次团来跑，或许希望在击败荆棘女王之后抬高角色们面临的赌注，为他们的故事在\"击败怪物\"之外画上一个句点。方法之一，是在女王被击败时制造一场极富戏剧性的事件。例如，荆棘王庭中的能量漩涡没有无害地消散，反而开始变得狂暴。能量卷须抽打在堡垒上，加速着本已摇摇欲坠的墙壁的崩塌，逼得队伍奔向出口。在漩涡不断扩张、蚕食暮丘直至一切化为乌有之际，队伍能带着挣扎不休的公主逃出生天吗？还是说营救功亏一篑，两手空空地回到誓日者王庭，直面苏莉安娜女王的雷霆之怒？",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Mechanics",
+											"type": "entries",
+											"name": "机械",
+											"entries": [
+												"玩家角色有3轮时间带着公主逃出堡垒。在女王灵魂被吸收后的各轮先攻值0时，危害接连发生。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Round 1: Eruption",
+															"type": "item",
+															"name": "第1轮：喷发",
+															"entries": [
+																"漩涡喷发。堡垒内的每个生物都必须进行一次{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}感知豁免检定，失败者受到{@damage 2d4;3d6;4d6|可变伤害}点心灵伤害，成功则只受一半伤害。"
+															]
+														},
+														{
+															"ENG_name": "Round 2: Rockfall",
+															"type": "item",
+															"name": "第2轮：落石",
+															"entries": [
+																"石块与荆棘仔从天花板上坠落。堡垒内的每个生物都必须进行一次{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}敏捷豁免检定，失败者受到{@damage 2d4;3d6;4d6|可变伤害}点钝击伤害，成功则只受一半伤害。堡垒的地面受等同于{@spell 荆棘丛生}法术的非魔法效应影响（豁免DC为{@footnote 可变DC|{@dc 13}/{@dc 15}/{@dc 16}}）。"
+															]
+														},
+														{
+															"ENG_name": "Round 3: Collapse",
+															"type": "item",
+															"name": "第3轮：崩塌",
+															"entries": [
+																"整座堡垒轰然崩塌。堡垒内的每个生物都必须进行一次{@footnote 可变DC|{@dc 23}/{@dc 25}/{@dc 26}}力量豁免检定，失败者受到{@b {@damage 2d4*5;3d6*5;4d6*5|5×可变伤害}}点钝击伤害并陷入{@condition 束缚}状态，成功则受到{@b {@damage 2d4*3;3d6*3;4d6*3|3×可变伤害}}点钝击伤害，且不会{@condition 束缚}。"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Aftermath",
+					"type": "section",
+					"name": "余波",
+					"entries": [
+						"队伍可以用米尔德丽德的魔法护符告诉这位秋日鬼婆他们准备回家了。在誓日者王庭其他法师的协助下，米尔德丽德在荆棘王庭中央开启一道传送门，通往妖精之域与誓日者王庭。",
+						"以下是这场狩猎结束后可能发生的一些后续进展。",
+						{
+							"type": "list",
+							"items": [
+								"虽然谢尔公主的模样令她震惊，苏莉安娜女王仍对女儿的归来心怀感激。她以一场正式的典礼公开答谢队伍，为角色们颁奖，并设宴为他们庆功。",
+								"谢尔公主退回自己的居室，拒绝出席王庭。她开始了一项长达数个世纪的灵魂魔法研究，一如当年的荆棘女王。",
+								"失去了女王维系一切的魔法棘刺，暮丘与荆棘王庭在瓦砾之下崩塌湮灭，从此不见天日。",
+								"如果角色们选择捕捉荆棘女王的灵魂，米尔德丽德将用余生秘密寻找净化她黑暗的方法。不幸的是，这位鬼婆始终未能找到解法，荆棘女王只能永困于球中。",
+								"许多年后，谢尔找到并偷走了囚禁荆棘女王灵魂的晶体球，完成了当年被队伍打断的仪式。",
+								"如果队伍未能阻止仪式，合而为一的谢尔公主-荆棘女王将回到誓日者王庭，废黜苏莉安娜女王，并将这片土地腐化成昔日表象的邪恶妖精赝品。自然的复仇，可在荆棘女王的尸体上找到"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Treasure",
+					"type": "section",
+					"name": "财宝",
+					"entries": [
+						"在荆棘女王的尸体上可以找到一把魔法镰刀{@item 自然复仇|LALoTT|自然复仇}；其稀有度随狩猎等级提升。苏莉安娜·誓日女王会把她承诺的所有金币付给队伍（见{@adventure 每位玩家角色的狩猎奖励|BSS-QoST|0|每位玩家角色的狩猎奖励}表，第3页）。",
+						{
+							"type": "table",
+							"caption": "宝藏",
+							"colLabels": [
+								"狩猎等级",
+								"自然复仇稀有度"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-3 text-center"
+							],
+							"rows": [
+								[
+									"5环",
+									"{@item 自然复仇（非普通）|LALoTT|非普通}"
+								],
+								[
+									"9th",
+									"{@item 自然复仇（珍稀）|LALoTT|珍稀}"
+								],
+								[
+									"13th",
+									"{@item 自然复仇（极珍稀）|LALoTT|极珍稀}"
+								]
+							]
+						},
+						{
+							"ENG_name": "Harvesting",
+							"type": "entries",
+							"name": "采割",
+							"entries": [
+								"除了妖精通常拥有的部件之外，还可以从荆棘女王的遗骸上采割到以下独有部件。",
+								{
+									"type": "table",
+									"caption": "荆棘女王采割表",
+									"colLabels": [
+										"部件DC",
+										"成分"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-4 text-center"
+									],
+									"rows": [
+										[
+											"10",
+											"一包棘刺（最多10）"
+										],
+										[
+											"20",
+											"心脏"
+										],
+										[
+											"25",
+											"灵魂"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Crafting",
+							"type": "entries",
+							"name": "手作",
+							"entries": [
+								"以下独有物品可以用从荆棘女王身上采割的部件制作而成。",
+								{
+									"type": "table",
+									"caption": "荆棘女王可制作物品",
+									"colLabels": [
+										"物品名称",
+										"物品类型",
+										"稀有度",
+										"同调",
+										"成分",
+										"精华",
+										"价值{@sup *}"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-3 text-center",
+										"col-2 text-center",
+										"col-2 text-center",
+										"col-5 text-center",
+										"col-1 text-center",
+										"col-2 text-center"
+									],
+									"rows": [
+										[
+											"{@item 荆棘蕾丝手套|LALoTT|荆棘蕾丝手套}",
+											"奇物",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"{@item 荆棘蕾丝手套（非普通）|LALoTT|非普通}",
+													"{@item 荆棘蕾丝手套（珍稀）|LALoTT|珍稀}",
+													"{@item 荆棘蕾丝手套（极珍稀）|LALoTT|极珍稀}"
+												]
+											},
+											"必需的",
+											"妖精（{@i 荆棘女王}）的一包棘刺",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"瘦弱",
+													"强韧",
+													"强效"
+												]
+											},
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"590 gp",
+													"3,200 gp",
+													"11,800 gp"
+												]
+											}
+										],
+										[
+											"{@item 青翠|LALoTT|青翠}",
+											"武器（任意战斧）",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"{@item 青翠（珍稀）|LALoTT|珍稀}",
+													"{@item 青翠（极珍稀）|LALoTT|极珍稀}"
+												]
+											},
+											"必需的",
+											"妖精（{@i 荆棘女王}）的心脏",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"强韧",
+													"强效"
+												]
+											},
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"3,230 gp",
+													"11,880 gp"
+												]
+											}
+										],
+										[
+											"{@item 黑花|LALoTT|黑花}",
+											"权杖、法杖或魔杖",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"{@item 黑花（非普通）|LALoTT|非普通}",
+													"{@item 黑花（珍稀）|LALoTT|珍稀}",
+													"{@item 黑花（极珍稀）|LALoTT|极珍稀}"
+												]
+											},
+											"必需的",
+											"妖精（{@i 荆棘女王}）的灵魂",
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"瘦弱",
+													"强韧",
+													"强效"
+												]
+											},
+											{
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													"600 gp",
+													"2,650 gp",
+													"10,900 gp"
+												]
+											}
+										]
+									],
+									"footnotes": [
+										"{@sup *}此为\"现货\"购入价格，可能与制作成本存在显著差异。"
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BloodSS/QoST/NatureVengeance.webp"
+							},
+							"title": "自然复仇",
+							"credit": "Michelle Mueller"
+						}
+					]
+				}
+			]
+		}
+	]
+}
