@@ -1,0 +1,1944 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TSSL",
+				"abbreviation": "TSSL",
+				"full": "斯凯霍恩灯塔的秘密",
+				"url": "https://www.dmsguild.com/product/215629/The-Secrets-of-Skyhorn-Lighthouse",
+				"version": "7",
+				"authors": [
+					"Kelsey Dionne"
+				],
+				"convertedBy": [
+					"Surge"
+				],
+				"targetSchema": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1603210180,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "c61178b12e"
+	},
+	"monster": [
+		{
+			"ENG_name": "Eelfolk",
+			"name": "鳗人",
+			"source": "TSSL",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鳗人"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 兽皮甲|PHB}",
+						"{@item 盾牌|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d8 + 6"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 14,
+			"int": 6,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"stealth": "+3"
+			},
+			"senses": [
+				"盲视 60 尺，"
+			],
+			"passive": 10,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"鳗人语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"鳗人死亡时，它会爆发出一股积聚的电流。其周围10尺范围内的每个生物都必须进行一次{@dc 12}的敏捷豁免，豁免失败者将受到7（{@damage 2d6}）点闪电伤害，豁免成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"鳗人可以屏息长达1小时"
+					]
+				},
+				{
+					"ENG_name": "Lunge",
+					"name": "猛冲",
+					"entries": [
+						"如果鳗人向一个目标直线移动至少20尺，并在同一回合内以长刀攻击命中该目标，则该目标额外受到7（{@damage 2d6}）点穿刺伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Long Knife",
+					"name": "长刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）点挥砍伤害。"
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"swamp",
+				"underwater"
+			],
+			"traitTags": [
+				"Death Burst",
+				"Hold Breath"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"L",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"鳗人是一种鱼形种族，长着橡胶般的皮肤和斑斓的体色，以便在水下变幻的光线中隐蔽身形。",
+					"它们在洞穴与浅滩间潜行捕猎，以一阵阵凶猛的扩张开拓领地。鳗人常在海岸线和被水淹没的洞窟中筑巢，从不远离水面\u2014\u2014它们必须不时浮上水面，大口吞吸空气。",
+					"伏击者。鳗人栖居在海域的边缘，伏击任何闯入其领地的生物。狩猎时，它们喜欢潜伏静候，待猎物靠近后再猛扑出击。它们颈部后方的两个囊袋能产生电荷，即便在最浑浊的深处，也能借此感知猎物的所在。",
+					"风暴崇拜者。鳗人将海上的风暴奉若神明，认为一切风暴皆是神意所感。曾有出海的水手报告说，在暴风雨期间目睹数十条鳗人在水中嬉戏翻腾。",
+					"成长的烦恼。鳗人随着年龄增长而愈发庞大强力，从隐秘潜行的猎手转变为凶残暴烈的莽兽。完全成熟的鳗人会长出额外的电器囊，令周身覆盖着噼啪作响的能量。这些\"灾虐者\"比年幼的同类更狡猾、更好斗。它们对沿岸聚落发动突袭，以满足自身对暴力和食物日益膨胀的渴望。",
+					"风暴之怒。在怒海狂涛之中，最强壮也最狡猾的鳗人会相互争斗，抢着将自己送入闪电的落点。偶尔会有一个幸运儿被一团巨大的能量吞噬。闪电烧尽鳗人臃肿的身躯，代之以一具蕴藏着惊人力量的瘦削形骸。这些鳗人风暴召唤者由此获得了引导暴风之威的能力，能够召唤闪电与狂风痛击仇敌。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Eelfolk Hunter",
+			"name": "鳗人猎手",
+			"source": "TSSL",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鳗人"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 兽皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 14,
+			"int": 6,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+5"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 12,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"鳗人语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Ambusher",
+					"name": "伏击",
+					"entries": [
+						"猎手对任何被它突袭的生物进行攻击检定时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"鳗人死亡时，它会爆发出一股积聚的电流。其周围10尺范围内的每个生物都必须进行一次{@dc 12}的敏捷豁免，豁免失败者将受到7（{@damage 2d6}）点闪电伤害，豁免成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"鳗人可以屏息长达1小时。"
+					]
+				},
+				{
+					"ENG_name": "Lunge",
+					"name": "猛冲",
+					"entries": [
+						"如果鳗人向一个目标直线移动至少20尺，并在同一回合内以矛攻击命中该目标，则该目标额外受到7（{@damage 2d6}）点穿刺伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"猎手发动两次矛攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程20/60尺，单一目标。{@h}近战命中时造成6（{@damage 1d8 + 2}）点穿刺伤害，远程命中时造成5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"swamp",
+				"underwater"
+			],
+			"attachedItems": [
+				"spear|phb"
+			],
+			"traitTags": [
+				"Ambusher",
+				"Death Burst",
+				"Hold Breath"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"鳗人是一种鱼形种族，长着橡胶般的皮肤和斑斓的体色，以便在水下变幻的光线中隐蔽身形。",
+					"它们在洞穴与浅滩间潜行捕猎，以一阵阵凶猛的扩张开拓领地。鳗人常在海岸线和被水淹没的洞窟中筑巢，从不远离水面\u2014\u2014它们必须不时浮上水面，大口吞吸空气。",
+					"伏击者。鳗人栖居在海域的边缘，伏击任何闯入其领地的生物。狩猎时，它们喜欢潜伏静候，待猎物靠近后再猛扑出击。它们颈部后方的两个囊袋能产生电荷，即便在最浑浊的深处，也能借此感知猎物的所在。",
+					"风暴崇拜者。鳗人将海上的风暴奉若神明，认为一切风暴皆是神意所感。曾有出海的水手报告说，在暴风雨期间目睹数十条鳗人在水中嬉戏翻腾。",
+					"成长的烦恼。鳗人随着年龄增长而愈发庞大强力，从隐秘潜行的猎手转变为凶残暴烈的莽兽。完全成熟的鳗人会长出额外的电器囊，令周身覆盖着噼啪作响的能量。这些\"灾虐者\"比年幼的同类更狡猾、更好斗。它们对沿岸聚落发动突袭，以满足自身对暴力和食物日益膨胀的渴望。",
+					"风暴之怒。在怒海狂涛之中，最强壮也最狡猾的鳗人会相互争斗，抢着将自己送入闪电的落点。偶尔会有一个幸运儿被一团巨大的能量吞噬。闪电烧尽鳗人臃肿的身躯，代之以一具蕴藏着惊人力量的瘦削形骸。这些鳗人风暴召唤者由此获得了引导暴风之威的能力，能够召唤闪电与狂风痛击仇敌。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Eelfolk Scourge",
+			"name": "鳗人灾虐者",
+			"source": "TSSL",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鳗人"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 兽皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d10 + 30"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 16,
+			"int": 7,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"盲视 60 尺，"
+			],
+			"passive": 13,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"鳗人语"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"鳗人死亡时，它会爆发出一股积聚的电流。其周围10尺范围内的每个生物都必须进行一次{@dc 13}的敏捷豁免，豁免失败者将受到7（{@damage 2d6}）点闪电伤害，豁免成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Electrified Body",
+					"name": "电化形体",
+					"entries": [
+						"触及灾虐者、或在距其5尺内以近战攻击命中它的生物，将受到5（{@damage 1d10}）点闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"鳗人可以屏息长达1小时"
+					]
+				},
+				{
+					"ENG_name": "Lunge",
+					"name": "猛冲",
+					"entries": [
+						"如果鳗人向一个目标直线移动至少20尺，并在同一回合内以爪击或啃咬攻击命中该目标，则该目标额外受到7（{@damage 2d6}）点穿刺伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"灾虐者发动三次近战攻击：一次啃咬，两次爪击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}9（{@damage 2d4 + 4}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}11（{@damage 2d6 + 4}）点挥砍伤害。"
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"swamp",
+				"underwater"
+			],
+			"traitTags": [
+				"Death Burst",
+				"Hold Breath"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"L",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"鳗人是一种鱼形种族，长着橡胶般的皮肤和斑斓的体色，以便在水下变幻的光线中隐蔽身形。",
+					"它们在洞穴与浅滩间潜行捕猎，以一阵阵凶猛的扩张开拓领地。鳗人常在海岸线和被水淹没的洞窟中筑巢，从不远离水面\u2014\u2014它们必须不时浮上水面，大口吞吸空气。",
+					"伏击者。鳗人栖居在海域的边缘，伏击任何闯入其领地的生物。狩猎时，它们喜欢潜伏静候，待猎物靠近后再猛扑出击。它们颈部后方的两个囊袋能产生电荷，即便在最浑浊的深处，也能借此感知猎物的所在。",
+					"风暴崇拜者。鳗人将海上的风暴奉若神明，认为一切风暴皆是神意所感。曾有出海的水手报告说，在暴风雨期间目睹数十条鳗人在水中嬉戏翻腾。",
+					"成长的烦恼。鳗人随着年龄增长而愈发庞大强力，从隐秘潜行的猎手转变为凶残暴烈的莽兽。完全成熟的鳗人会长出额外的电器囊，令周身覆盖着噼啪作响的能量。这些\"灾虐者\"比年幼的同类更狡猾、更好斗。它们对沿岸聚落发动突袭，以满足自身对暴力和食物日益膨胀的渴望。",
+					"风暴之怒。在怒海狂涛之中，最强壮也最狡猾的鳗人会相互争斗，抢着将自己送入闪电的落点。偶尔会有一个幸运儿被一团巨大的能量吞噬。闪电烧尽鳗人臃肿的身躯，代之以一具蕴藏着惊人力量的瘦削形骸。这些鳗人风暴召唤者由此获得了引导暴风之威的能力，能够召唤闪电与狂风痛击仇敌。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Eelfolk Stormcaller",
+			"name": "鳗人风暴召唤者",
+			"source": "TSSL",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鳗人"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 兽皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 117,
+				"formula": "18d8 + 36"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 8,
+			"wis": 14,
+			"cha": 18,
+			"skill": {
+				"intimidation": "+7",
+				"perception": "+5",
+				"stealth": "+8"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 15,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"鳗人语"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"风暴召唤者的天生施法属性为魅力（法术豁免DC {@dc 15}）。它可以天生施放下列法术，不需要任何材料组件："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 雷鸣波}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell 召雷术}",
+							"{@spell 云雾术}",
+							"{@spell 闪电束}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"鳗人死亡时，它会爆发出一股积聚的电流。其周围10尺范围内的每个生物都必须进行一次{@dc 13}的敏捷豁免，豁免失败者将受到7（{@damage 2d6}）点闪电伤害，豁免成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"鳗人可以屏息长达1小时。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"风暴召唤者发动两次爪击。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点挥砍伤害，外加7（{@damage 2d6}）点闪电伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Lighting Reflexes",
+					"name": "闪电反射",
+					"entries": [
+						"面对一次将要命中风暴召唤者的近战攻击，其AC增加3。如此做时，风暴召唤者必须能看见攻击者。"
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"swamp",
+				"underwater"
+			],
+			"traitTags": [
+				"Death Burst",
+				"Hold Breath"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"L",
+				"S"
+			],
+			"damageTagsSpell": [
+				"L",
+				"T"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"鳗人是一种鱼形种族，长着橡胶般的皮肤和斑斓的体色，以便在水下变幻的光线中隐蔽身形。",
+					"它们在洞穴与浅滩间潜行捕猎，以一阵阵凶猛的扩张开拓领地。鳗人常在海岸线和被水淹没的洞窟中筑巢，从不远离水面\u2014\u2014它们必须不时浮上水面，大口吞吸空气。",
+					"伏击者。鳗人栖居在海域的边缘，伏击任何闯入其领地的生物。狩猎时，它们喜欢潜伏静候，待猎物靠近后再猛扑出击。它们颈部后方的两个囊袋能产生电荷，即便在最浑浊的深处，也能借此感知猎物的所在。",
+					"风暴崇拜者。鳗人将海上的风暴奉若神明，认为一切风暴皆是神意所感。曾有出海的水手报告说，在暴风雨期间目睹数十条鳗人在水中嬉戏翻腾。",
+					"成长的烦恼。鳗人随着年龄增长而愈发庞大强力，从隐秘潜行的猎手转变为凶残暴烈的莽兽。完全成熟的鳗人会长出额外的电器囊，令周身覆盖着噼啪作响的能量。这些\"灾虐者\"比年幼的同类更狡猾、更好斗。它们对沿岸聚落发动突袭，以满足自身对暴力和食物日益膨胀的渴望。",
+					"风暴之怒。在怒海狂涛之中，最强壮也最狡猾的鳗人会相互争斗，抢着将自己送入闪电的落点。偶尔会有一个幸运儿被一团巨大的能量吞噬。闪电烧尽鳗人臃肿的身躯，代之以一具蕴藏着惊人力量的瘦削形骸。这些鳗人风暴召唤者由此获得了引导暴风之威的能力，能够召唤闪电与狂风痛击仇敌。"
+				]
+			}
+		}
+	],
+	"adventure": [
+		{
+			"ENG_name": "The Secrets of Skyhorn Lighthouse",
+			"name": "斯凯霍恩灯塔的秘密",
+			"id": "TSSL",
+			"source": "TSSL",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/TSSL-cover.webp"
+			},
+			"published": "2017-07-04",
+			"storyline": "斯凯霍恩灯塔",
+			"level": {
+				"start": 5,
+				"end": 5
+			},
+			"contents": [
+				{
+					"ENG_name": "Introduction",
+					"name": "简介",
+					"headers": [
+						"概要",
+						"背景",
+						"给GM的话",
+						"节奏/场景过渡"
+					]
+				},
+				{
+					"ENG_name": "Rumors in the Harbor",
+					"name": "港口谣言",
+					"headers": [
+						"报酬的感召",
+						"英雄的感召",
+						"探索的感召",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Scurvy Dogfight",
+					"name": "无赖狗斗",
+					"headers": [
+						"码头",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Sea Monster Attacks",
+					"name": "海怪袭击",
+					"headers": [
+						"接近码头",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Under Siege",
+					"name": "围困之中",
+					"headers": [
+						"接近灯塔",
+						"区域1：主厅",
+						"区域2：营房",
+						"区域3：储藏室",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "The Light in the Tower",
+					"name": "塔中之光",
+					"headers": [
+						"区域4：灯室",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "The Caverns Below",
+					"name": "地下洞窟",
+					"headers": [
+						"区域5：深渊之物",
+						"区域6：船坞",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Wounded Lion",
+					"name": "受伤的狮子",
+					"headers": [
+						"区域7：商船。",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Hostages",
+					"name": "人质",
+					"headers": [
+						"区域8：船员",
+						"区域8A：掠得财物",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Summoning Room",
+					"name": "召唤室",
+					"headers": [
+						"区域9：石笋洞窟",
+						"过渡"
+					]
+				},
+				{
+					"ENG_name": "Aftermath",
+					"name": "后续",
+					"headers": [
+						"命令水元素水钵",
+						"玉狮号的航行",
+						"踏上归途",
+						"未来的冒险引子"
+					]
+				},
+				{
+					"ENG_name": "Appendix A: Maps",
+					"name": "附录A：地图",
+					"headers": [
+						"码头",
+						"安娜贝尔·李号",
+						"斯凯霍恩灯塔",
+						"斯凯霍恩灯塔洞窟",
+						"VTT地图"
+					]
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "TSSL",
+			"source": "TSSL",
+			"data": [
+				{
+					"ENG_name": "Introduction",
+					"type": "section",
+					"name": "简介",
+					"id": "Introduction",
+					"entries": [
+						"《{@i 斯凯霍恩灯塔的秘密}》是一款《龙与地下城》冒险，为四到五名玩家、角色等级5级的队伍而设计。",
+						"本冒险可以直接置入任何一个临近海港或港口城镇的《龙与地下城》设定中。",
+						{
+							"ENG_name": "Synopsis",
+							"type": "section",
+							"name": "概要",
+							"id": "Synopsis",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"在冒险开始时，队伍通过其中一个引子得知：由于惧怕\"海怪\"，船只已停止进出港口。他们还得知附近的斯凯霍恩灯塔正处于危难之中。队伍可以找到一位愿意冒险前往灯塔的船长\u2014\u2014希拉·科珀特里。",
+										"在前往灯塔的途中，一只水元素袭击了队伍。当冒险者们抵达灯塔时，发现它已被鳗人团团围困。",
+										"队伍会通过亲自探索，或从据守在灯室中的灯塔看守人卢西恩·斯凯霍恩那里，得知灯塔下方有一片被水淹没的洞窟。",
+										"在洞窟之中，众人发现鳗人正强迫被俘的水手使用{@item 命令水元素水钵}召唤水元素，在周边海域的航道和港口大肆破坏。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Background",
+							"type": "section",
+							"name": "背景",
+							"id": "Background",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"卢西恩·斯凯霍恩立誓守护那件秘密的{@i 命令水元素水钵}，它就隐藏在家族祖传灯塔下方的水中洞窟里。",
+										"就在冒险开始的前几天，一队鳗人劫掠者经由一处隐蔽的湾洞进入了灯塔下方的洞窟，并在那里发现了水钵。从那时起，他们便利用它俘获了一艘正在进出港口的商船。鳗人（以惨痛的教训）认识到：被召唤出的元素有时会反噬其召唤者，因此他们现在强迫被俘的船员来执行召唤仪式。",
+										"鳗人正试图除掉据守在灯塔顶层房间里的卢西恩。他们计划完全控制这座小岛，以便继续驱使更多水元素来俘获过往船只。在他们看来，卢西恩的顽强存在是对其计划的威胁。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "A Word To The GM",
+							"type": "section",
+							"name": "给GM的话",
+							"id": "A Word To The GM",
+							"entries": [
+								"本冒险旨在让GM稍作准备、凭直觉即可开跑，因此对常见的冒险呈现方式做了一些重新设计。你会在其中看到以下内容：",
+								{
+									"type": "list",
+									"items": [
+										"每场遭遇都集中在单页之内。",
+										"条目式列表。加粗的关键词。",
+										"指向线上怪物与规则的超链接，便于快速查阅。",
+										"每个怪物和玩家角色都有可打印的卡片，让你可以用一叠卡片来主持遭遇。此方法的简短视频演示可在此处查看。",
+										"简短的房间与区域描述。没有大段催眠般的风味文本\u2014\u2014请自然地铺陈场景，并按需要自由发挥。",
+										"非遭遇房间仅作简要说明。同样，请随心润色！",
+										"GM地图与对玩家安全的数字地图，可供虚拟桌面使用。",
+										"特殊宝藏发放物的可打印卡片。",
+										"本冒险的简短视频演示可在此处查看。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Pacing/Transitions",
+							"type": "section",
+							"name": "节奏/场景过渡",
+							"id": "Pacing/Transitions",
+							"entries": [
+								"大多数场景都会给出一个戏剧性问题。一旦该问题得到解答，场景的张力便告消解。这就是你的信号：开始向场景末尾给出的{@b 过渡}推进\u2014\u2014即使那意味着把一场胜负已定的战斗收尾带过，或者在玩家足智多谋的情况下干脆跳过战斗。让游戏不断迈向下一个挑战！",
+								"在本冒险中，通常作为大段文学化朗读文本的房间描述都被写得简短而信息明确。许多GM更喜欢用自己的话转述朗读文本，并按照自己团队喜欢的基调与细节程度来铺陈场景。\"发展\"小节之前的任何内容，都可以按你喜欢的方式向玩家展示。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Rumors in the Harbor",
+					"type": "section",
+					"name": "港口谣言",
+					"id": "Rumors in the Harbor",
+					"entries": [
+						"角色们从任意一座海港或沿海城镇开始冒险。该城镇应能提供住所、基本补给以及一座货运码头。",
+						"镇上流传着一个说法：有一头海怪正在斯凯霍恩灯塔附近袭击船只。在这则谣言之中，港口的航运已陷入停顿。",
+						"{@i 在玩家角色停留在镇上的任意时刻，使用以下部分或全部引子将他们引入冒险：}",
+						{
+							"ENG_name": "Appeal to Reward",
+							"type": "entries",
+							"name": "报酬的感召",
+							"id": "Appeal to Reward",
+							"entries": [
+								"一位忧心忡忡的商人{@b 本吉·弗罗格沃特}（守序善良的半身人{@creature 贵族}）慕名前来接触玩家角色。他名下有一艘商船{@i 玉狮号}，最后出现在斯凯霍恩灯塔附近海域。他提出，若众人愿意前去调查，每人可获{@b 200 gp}报酬。由于担忧海怪传闻，他还承诺：若队伍能安全送回船员（包括他年幼的儿子{@b 拉夫}）和货物，每人再追加{@b 200 gp}。"
+							]
+						},
+						{
+							"ENG_name": "Appeal to Heroism",
+							"type": "entries",
+							"name": "英雄的感召",
+							"id": "Appeal  to Heroism",
+							"entries": [
+								"{@b 希拉·科珀特里船长}主动找到了队伍。她说自己亲眼目睹一道巨浪卷住商船{@i 玉狮号}，逆着潮水将它拖向斯凯霍恩灯塔。她的朋友{@b 阿林·赫斯特船长}当时正在船上（或者，也可以将其替换为玩家角色也认识的一位共同朋友）。她提出，如果队伍愿意随她一同前往相助，冒险结束后她将把他们{@b 免费运送}到任意一座他们指定的港口。"
+							]
+						},
+						{
+							"ENG_name": "Appeal to Discovery",
+							"type": "entries",
+							"name": "探索的感召",
+							"id": "Appeal to Discovery",
+							"entries": [
+								"一只{@b 海鸥}落在其中一名角色身上。它张开喙说道：\"这是来自灯塔的卢西恩·斯凯霍恩的口信。我们遭到了海中生物的袭击！拜托，趁还来得及快派援手，我恳求任何听到这条讯息的人......\"随后海鸥嘎地叫了一声，振翅飞走。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"{@b 希拉·科珀特里船长}，混乱善良的半精灵{@creature 间谍}",
+										"{@i \"想在一场黑焦油骰子局中输给我吗？\"}",
+										"- {@i 外貌。}小麦色皮肤，体格健壮。金发编成辫子。偏爱三角帽。",
+										"- {@i 举止。}爱唱关于人鱼的粗俗船歌。",
+										"- {@i 秘密。}她纵横四海，寻找此生挚爱与最大宿敌\u2014\u2014海盗船长安娜贝尔·李，她的船正以此人命名。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition",
+							"entries": [
+								"玩家角色前往港口，寻找前往斯凯霍恩灯塔的搭载或相关消息。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Scurvy Dogfight",
+					"type": "section",
+					"name": "无赖狗斗",
+					"id": "Scurvy Dogfight",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/TSSL-dogfight.webp"
+							},
+							"title": ""
+						},
+						{
+							"ENG_name": "The Docks",
+							"type": "section",
+							"name": "码头",
+							"id": "The Docks",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"在几英里外的海面上，一座小岛中斯凯霍恩灯塔的微弱光芒隐约可见。",
+										"码头上挤满了船只。与平日熙攘忙乱的景象相比，此刻显得格外安静。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"码头上的水手们反复念叨着海怪的谣言，有些人谎称亲眼见过它（他们会编造一段描述）。他们拒绝载玩家角色出海。",
+												"如果被问及谁可能愿意载他们去灯塔，水手们会指向{@b 希拉·科珀特里}的帆船{@i 安娜贝尔·李号}（地图见{@area 附录A|Appendix A:  Maps|x}）。",
+												"当角色们走近希拉·科珀特里的船时，她荡下船来，到码头相迎。她知道些什么，请参阅冒险引子{@area 英雄的感召|Appeal  to Heroism|x}。",
+												"与希拉交谈片刻后，两名在一场公平骰局中输给她的{@b 海盗}打断了谈话，要求她交出船只抵账。他们已经策划了一场突袭。"
+											]
+										},
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"{@b 加斯帕尔}，中立邪恶的人类{@creature 匪帮队长}",
+												"{@i \"你欠我们的，希拉！你的船归我们了！\"}",
+												"- {@i 外貌。}高个子，佝偻着背。鼻梁上横着一道疤。",
+												"- {@i 举止。}常磨牙，动辄吐口水。",
+												"- {@i 秘密。}曾是某位领主麾下的船长，因背叛领主而失势堕落。"
+											]
+										},
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"{@b 尼诺}，中立邪恶的半兽人{@creature 匪帮队长}",
+												"{@i \"我们知道你用了灌铅骰子。我们当场抓到你了，臭婆娘。\"}",
+												"- {@i 外貌。}干净得出奇。头发抹油向后梳拢。",
+												"- {@i 举止。}说话时盯着并修整自己的指甲。",
+												"- {@i 秘密。}计划不久后暗杀加斯帕尔，夺下他的船。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"角色们能安抚还是击败这些海盗的威胁？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Talk It Out",
+									"type": "entries",
+									"name": "言语化解",
+									"id": "Talk It Out",
+									"entries": [
+										"{@i 若冲突值降为}{@b 0.}{@i 则交涉成功；若冲突值升至}{@b 5.}{@i 则进入战斗部分。}",
+										{
+											"type": "list",
+											"items": [
+												"加斯帕尔和尼诺的初始{@b 冲突值合计为3}。",
+												"一笔数额可观的{@b 贿赂}使冲突值降低1。",
+												"一次DC 15的魅力（{@b 游说}）或魅力（{@b 欺瞒}）检定使冲突值降低1。检定失败则冲突值提高1。",
+												"使用魅力（{@b 威吓}）会使冲突值提高1。",
+												"DC 15的感知（{@b 洞悉}）检定{@b 可揭示}上述其中一条细节，或他们当前的冲突值。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"加斯帕尔（G）和尼诺（N）一有机会就把角色推入水中。",
+												"第二轮时，尼诺手下的四名{@creature 暴徒}（T）从附近的船上冒出来，发射他们的弩。",
+												"生命值低于三分之一的敌人会逃走。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 2",
+							"entries": [
+								"玩家角色收拾好所需之物，乘{@i 安娜贝尔·李号}朝灯塔进发。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Sea Monster Attacks",
+					"type": "section",
+					"name": "海怪袭击",
+					"id": "Sea Monster Attacks",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/TSSL-sea-monster.webp"
+							},
+							"title": ""
+						},
+						{
+							"ENG_name": "Approaching the Docks",
+							"type": "section",
+							"name": "接近码头",
+							"id": "Approaching the Docks",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"{@i 安娜贝尔·李号}以一道迅疾而果敢的航线劈开海面。船上有20名忠诚的水手（使用{@creature 匪徒}的数据块）。{@b 三小时}后，它抵达灯塔岛前方的海湾。",
+										"{@b 灯塔}坐落在一座陡峭多岩的小岛上，岛顶围着一道低矮的{@b 石墙}。小岛直径100尺。",
+										"一道{@b 石阶}从40尺长的木制{@b 码头}沿陡峭的小径通向灯塔。",
+										"阶梯顶端的{@b 大门}像一只折翼的海鸥般开开合合地拍动。",
+										"{@i 玉狮号}{@b 商船}并没有停靠在小岛边\u2014\u2014码头上空空如也。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 2",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@i 玉狮号}藏在岛屿背面一条狭窄的湾洞中，通往{@area 7|Area 7|u}（见{@area 附录A：地图|Appendix A:  Maps|x}）。",
+												"海湾中的一只{@creature 水元素}会袭击任何进入码头80尺范围内的来船。",
+												"被动察觉为12或更高的角色，会注意到一道诡异的波浪正逆着潮水朝船只切来。",
+												"{@b 水元素}带着一声令人作呕的闷响撞上船身，从海里翻涌而出。被突袭的玩家角色必须通过一次DC 15的敏捷豁免，否则应声倒地。注意到元素并做好准备的角色在该豁免上具有优势。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"角色们能保护船只免遭水元素的袭击吗？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 2",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@creature 水元素}的身材足以在不离开水面的情况下攻击船上边缘的生物。",
+												"它会在第一回合尝试对两名玩家角色同时使用{@i 淹没}动作。",
+												"它在召唤者的强迫下战斗到底，直至被消灭。",
+												"希拉将船驶向码头避险。需要{@b 三轮}才能抵达。在能检查船体之前，她不会再移动她的船。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"被击败时，水元素咳出一只小袋，里面装着六颗{@item 力场珠}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 3",
+							"entries": [
+								"众人沿石阶向灯塔走去。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Under Siege",
+					"type": "section",
+					"name": "围困之中",
+					"id": "Under Siege",
+					"entries": [
+						{
+							"ENG_name": "Approaching the Lighthouse",
+							"type": "section",
+							"name": "接近灯塔",
+							"id": "Approaching the Lighthouse",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"湿滑的{@b 石阶}之字形攀升40尺，通往岛上平坦的100尺直径顶部。",
+										"环绕岛顶的{@b 石墙}已然崩碎，高10尺，可以DC 10的力量（运动）检定攀爬。{@b 大门}已被砸开。",
+										"石砌的{@b 灯塔}高60尺，炽亮的光柱映亮天空。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 3",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@b 灯塔大门}被障碍物封堵，需DC 18的力量检定才能打开。门外没有岗哨。",
+												"玩家角色可以DC 20的力量（运动）检定攀爬潮湿的灯塔{@b 外墙}。",
+												"灯塔离地40尺处有两扇{@b 窗户}，通向{@area 1|Area 1|x}与{@area 4|Area 4|x}之间的楼梯间。玻璃可以DC 12的力量检定砸碎，或以DC 15的敏捷检定打开。{@area 4|Area 4|u}在60尺高处的两侧也有窗户，可用相同检定打开。",
+												"{@b 卢西恩·斯凯霍恩}就在{@area 4|Area 4|u}。他执拗地让灯火持续明亮地燃烧了数日。他可以从里面打开窗户。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 1: The Main Hall",
+							"type": "section",
+							"name": "区域1：主厅",
+							"id": "Area 1",
+							"entries": [
+								"撞开大门对交战双方而言都不构成突袭。",
+								{
+									"type": "list",
+									"items": [
+										"{@b 主厅}的地板上散落着被砸碎的木桶和椅子。绣有鹦鹉螺壳纹章（斯凯霍恩家徽）的挂毯被从墙上扯下、撕成碎片。",
+										"六名长着利齿的{@creature 鳗人|TSSL}坐在长桌旁，用鳗人语喋喋不休。他们正怒气冲冲地商量如何进入{@area 4|Area 4|u}杀死卢西恩。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 4",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"每当角色在鳗人听力所及的范围内移动或发出声响，都可以进行一次团队敏捷（隐匿）检定，若高于鳗人猎手的{@b 被动察觉12}，即可避开耳目。鳗人一旦察觉玩家角色，便会发起攻击。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"众人会避开还是击败这些鳗人？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 3",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"四名{@creature 鳗人|TSSL}（标记为E）冲上来与角色近战。两名{@creature 鳗人猎手|TSSL}（标记为H）掀翻长桌作为半身掩护，投掷标枪。",
+												"战斗进入第二轮时（不含可能的突袭轮），又有四名{@b 鳗人}和两名{@b 鳗人猎手}从{@area 2|Area 2|u}加入战斗。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"鳗人共有24 gp，还有一堆珊瑚和贝壳小玩意儿。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 2: Barracks",
+							"type": "section",
+							"name": "区域2：营房",
+							"id": "Area 2",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"这间房里放着老旧的双层床铺，床单破损。东墙边立着一个空武器架。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 3: Store Room",
+							"type": "section",
+							"name": "区域3：储藏室",
+							"id": "Area 3",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"发霉的食物和被抓挠拆散的木桶散落一室。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 5",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"一道{@b 隐藏的地板格栅}通向{@area 5|Area 5|u}。成功通过DC 20的智力（调查）检定即可找到它。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 4",
+							"entries": [
+								"角色们继续前往{@area 4|Area 4|u}或{@area 5|Area 5|u}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Light in the Tower",
+					"type": "section",
+					"name": "塔中之光",
+					"id": "The Light in the Tower",
+					"entries": [
+						{
+							"ENG_name": "Area 4: The Lantern Room",
+							"type": "section",
+							"name": "区域4：灯室",
+							"id": "Area 4",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"楼梯顶端的{@b 铁门}被障碍物封死（需DC 25的力量检定才能打开）。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 6",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"若有人试图撞开房门，卢西恩·斯凯霍恩就会对门施放{@spell 灼热金属}。",
+												"过去几天里，卢西恩一直靠变出来的莓果和水维生，急需援助。",
+												"{@b 灯室}内的空气里弥漫着浓重的燃油味。一盏巨大的灯笼立在金属柱上，将一道光束射向天空。两扇玻璃窗提供了俯瞰小岛与大海的高处视野。"
+											]
+										},
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"{@b 卢西恩·斯凯霍恩}，中立善良的人类{@creature 德鲁伊}",
+												"{@i \"斯凯霍恩家的人永远是良善的灯塔。\"}",
+												"- {@i 外貌。}身材矮小。一头狂乱的白发，一双灰色的眼睛。",
+												"- {@i 举止。}强调重点时总在抖动浓密的眉毛。动不动就滔滔不绝地讲述大海的科学奇观与神秘奥妙。",
+												"- {@i 秘密。}多年来他始终对妻子的死心怀负疚，尽管那根本不是他能阻止的事。",
+												"- 卢西恩准备了以下法术：戏法（随意）：{@spell 德鲁伊伎俩}、{@spell 毒气喷涌}、{@spell 燃火术}；1环（4个法术位）：{@spell 造水术/枯水术}、{@spell 疗伤术}、{@spell 神莓术}、{@spell 动物交谈}；2环（3个法术位）：{@spell 动物信使}、{@spell 灼热金属}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "A Plea For Help",
+									"type": "entries",
+									"name": "求救",
+									"id": "A Plea For Help",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"如果角色们能隔着房门让卢西恩相信他们是{@b 盟友}，他就会把门开条缝，放他们进去。",
+												"卢西恩盼望队伍能{@b 协助}他把鳗人逐出灯塔。"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"角色们会帮助卢西恩击败鳗人、拯救{@i 命令水元素水钵}吗？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Discussion With Lucien",
+									"type": "entries",
+									"name": "与卢西恩交谈",
+									"id": "Discussion With Lucien",
+									"entries": [
+										"卢西恩可以透露以下信息：",
+										{
+											"type": "list",
+											"items": [
+												"鳗人发现了命令水元素水钵\u2014\u2014他的家族把这件秘密藏在灯塔下方的{@b 洞穴}中，已有六代之久。这只{@b 水钵}非同寻常：由于它被固定在原地，能够汲取海水，每天召唤两次元素。",
+												"{@b 鳗人}是凶残的劫掠者，潜伏在海岸线和水下洞窟附近。斯凯霍恩家族历来用水钵召唤水元素，{@b 协助}遇险的船只驶入港口。很久以前，岛上还住着许多斯凯霍恩家的人。",
+												"卢西恩是家族的{@b 最后一人}。他立誓守护水钵，绝不让它落入邪恶之徒手中。",
+												"若召唤者的意志不够强大、无法驾驭，被召唤的{@b 水元素}就可能挣脱强制约束。卢西恩怀疑已有数条鳗人因此丧命，并推测他们如今改让{@b 人质}来召唤元素。",
+												"卢西恩曾目睹一只元素袭击了一艘{@b 商船}，并把它拖向岛屿背面一处隐蔽的湾洞（{@area 7|Area 7|u}）。",
+												"通向洞窟的{@b 活板门}藏在一楼{@b 储藏室}（{@area 3|Area 3|u}）角落里一只沉重的木桶下方。",
+												"洞窟中许多区域都被水淹没。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 7",
+									"entries": [
+										"如果玩家角色同意拯救{@i 命令水元素水钵}，卢西恩就给每人一瓶{@item 水下呼吸药水}。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 5",
+							"entries": [
+								"玩家角色设法前往{@area 1|Area 1|u}或{@area 5|Area 5|u}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Caverns Below",
+					"type": "section",
+					"name": "地下洞窟",
+					"id": "The Caverns Below",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/TSSL-hunter-shark.webp"
+							},
+							"title": ""
+						},
+						{
+							"ENG_name": "Area 5: Something In The Deep",
+							"type": "section",
+							"name": "区域5：深渊之物",
+							"id": "Area 5",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"一把锈迹斑斑的梯子从{@area 3|Area 3|u}的活板门向下延伸10尺，没入咸涩的水中。",
+										"潮起潮落的涛声在这些波光粼粼的洞窟中回荡。",
+										"水深{@b 50尺}。洞顶高出水面{@b 40尺}。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 8",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"三条{@creature 寻猎鲨}潜伏在地图上标记为S的区域，会前去查探水中的声响。鳗人一直用被元素杀死的人类人质喂它们。任何水中的东西一旦进入其{@b 30尺}范围内，鲨鱼就会发起攻击。",
+												"鳗人把从商船上掳来的四只{@b 宝箱}堆在洞窟地面上标记为T的区域。携带沉重宝箱的角色移动速度减半。"
+											]
+										},
+										{
+											"ENG_name": "Sidebar: Swimming In The Caves",
+											"type": "inset",
+											"name": "边栏：在洞窟中游泳",
+											"entries": [
+												"- 由于洞口光线的折射，水中的{@b 能见度}在30尺范围内昏暗不清。角色可能携带水下光源，以改善能见度。",
+												"- 没有游泳速度的生物每移动1尺需额外消耗1尺移动力。",
+												"- 生物可以闭气的分钟数等于1+其体质调整值（最少30秒）。",
+												"- {@book 窒息规则请见此处。|phb|8|窒息}",
+												"- {@book 水下战斗规则请见此处。|phb|9|水下战斗}"
+											]
+										},
+										{
+											"ENG_name": "Dramatic Question",
+											"type": "inset",
+											"name": "戏剧性问题",
+											"entries": [
+												"玩家角色能避开或击败这些鲨鱼吗？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 4",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@creature 寻猎鲨}会盯上已经受伤的角色，以便发动它们的{@i 血腥狂怒}特性。生命值降至{@b 15}以下时，它们会经{@area 7|Area 7|u}逃向大海。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"宝箱里装着价值{@b 400 gp}的精美货物：瓶装香水、银器、雕像、珠宝和其他小玩意儿。一柄磨损的黑柄匕首其实是{@item 淬毒匕首}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 6: The Dock",
+							"type": "section",
+							"name": "区域6：船坞",
+							"id": "Area 6",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"一小片沙洲露出水面。两艘{@b 小划艇}系在沙洲旁一座摇摇晃晃的木码头上。",
+										"一座古老沉塔崩碎的20尺高墙从洞壁间探出。成功通过DC 13的力量（运动）检定即可攀爬。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 6",
+							"entries": [
+								"角色们继续前往洞窟的下一部分。如果鲨鱼尚未被解决，它们可能仍是威胁。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Wounded Lion",
+					"type": "section",
+					"name": "受伤的狮子",
+					"id": "Wounded Lion",
+					"entries": [
+						{
+							"ENG_name": "Area 7: The Merchant Ship.",
+							"type": "section",
+							"name": "区域7：商船。",
+							"id": "Area 7",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"从湾口望出去便是开阔的大海。",
+										"{@b 商人的帆船}{@i 玉狮号}停泊在湾口。船身在水中倾斜着，恰好避开嶙峋的崖壁。船上的一根{@b 桅杆}折断缺失。",
+										"船上还系着两艘小划艇，与{@area 5|Area 5|u}里的那两艘一模一样。"
+									]
+								},
+								{
+									"ENG_name": "Development",
+									"type": "entries",
+									"name": "发展",
+									"id": "Development 9",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"通向大船的10尺宽水道里{@b 潮流}十分强劲，游泳需通过DC 13的力量（运动）检定。检定差5点或更多的角色会被撞上岩壁，受到7（{@damage 2d6}）点钝击伤害。",
+												"由于桅杆折断，{@i 玉狮号}在至少10名水手操船时，需通过DC 15的感知（求生）检定才能以半速{@b 航行}。",
+												"这艘船已遭大肆{@b 洗劫}。成箱的异域水果和成匹的细布被抛得满地狼藉、毁坏殆尽。船上已没有船员。",
+												"{@b 藏匿者：拉夫·弗罗格沃特}，商人本吉·弗罗格沃特八岁的儿子兼学徒。拉夫躲在船长室的一间暗柜里，成功通过DC 14的智力（调查）检定即可找到他。一听到有人说他听得懂的语言，他就会主动接触玩家角色。他浑身湿漉漉的，又怕又饿。"
+											]
+										},
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"{@b 拉夫·弗罗格沃特}，混乱善良的半身人{@creature 平民}",
+												"{@i \"那些可怕的鳗人，他们抓走了我的朋友们！我老爸会找他们算账的！\"}",
+												"- {@i 外貌。}大大的绿眼睛，脸上带着雀斑。",
+												"- {@i 举止。}装作自己不怕鳗人。",
+												"- {@i 秘密。}有朝一日想成为纵横四海的冒险水手，而不是商人。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Discussion With Raf",
+									"type": "entries",
+									"name": "与拉夫交谈",
+									"id": "Discussion With Raf",
+									"entries": [
+										"拉夫可以透露以下信息：",
+										{
+											"type": "list",
+											"items": [
+												"一道巨浪抓住了大船，把它拖进了湾洞。",
+												"\"鳗人\"洗劫了大船，把船员押进了洞窟，其中包括希拉·科珀特里的朋友{@b 阿林·赫斯特船长}。",
+												"其中一个\"鳗人\"比其他同伴更高大、更暴躁。他对其他人颐指气使。",
+												"\"鳗人\"大约有10个，不过从他藏身的地方很难数清。",
+												"每天都有一两道巨浪经过。浪头把大船颠得像玩具一样上下颠簸、打转。",
+												"拉夫有时会听见洞窟中回荡着人类的惨叫和可怕的撞击声。",
+												"他没有进过洞窟，不知道里面的布局。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"鳗人劫掠者漏掉了一只价值25 gp的银烛台，还有桃花心木锁箱里一枚价值50 gp的金戒指。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 7",
+							"entries": [
+								"众人返回洞窟，继续探索。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Hostages",
+					"type": "section",
+					"name": "人质",
+					"id": "Hostages",
+					"entries": [
+						{
+							"ENG_name": "Area 8: The Crew",
+							"type": "section",
+							"name": "区域8：船员",
+							"id": "Area 8",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"通往和离开这间房间的{@b 门}都未上锁。",
+										"地砖上刻着一个巨大的、已然褪色的鹦鹉螺壳（斯凯霍恩家族的纹记）。",
+										"十二名人类{@creature 平民}被每四人一组捆在一起（地图上标记为P）。他们是{@i 玉狮号}幸存的船员，遭到毒打、饥饿与恐吓。",
+										"{@b 阿林·赫斯特}是{@i 玉狮号}的船长，也在幸存的俘虏之中。他的双手和手臂上留有锯齿状的电灼伤痕。",
+										"两名{@creature 鳗人|TSSL}（标记为E）坐在门边，玩着一种用到珊瑚棘刺钉的粗暴游戏。一发现角色们，他们就朝{@area 9|Area 9|u}的门夺路狂奔。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"{@b 阿林·赫斯特船长}，混乱善良的人类老兵",
+										"{@i \"要是让一条该死的会走路的鳗鱼夺走我的船，就让我烂在沼泽里！\"}",
+										"- {@i 外貌。}修剪齐整的尖胡须，一颗金牙。",
+										"- {@i 举止。}哈哈大笑时声如洪钟，震得窗户格格作响。",
+										"- {@i 秘密。}当年一条人鱼救了他的命、偷走了他的心，他由此当上了水手。"
+									]
+								},
+								{
+									"ENG_name": "Dramatic Question",
+									"type": "inset",
+									"name": "戏剧性问题",
+									"entries": [
+										"队伍能阻止鳗人惊动{@area 9|Area 9|u}里的同伙吗？"
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 5",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"两名{@b 鳗人}都试图打开通往{@area 9|Area 9|u}的门，向其余鳗人报信。",
+												"{@b 阿林·赫斯特}会试图绊倒从他身旁跑过的鳗人。他手无寸铁。",
+												"阿林警告角色们：鳗人正强迫他的一名船员在隔壁房间{@b 召唤}另一只水元素。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Eelfolk Alert The Others",
+									"type": "entries",
+									"name": "鳗人惊动了同伙",
+									"id": "The Eelfolk Alert The Others",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"所有鳗人都躲到钟乳石或碎石后掩蔽，并准备好动作，等玩家角色一进房间就发动攻击。",
+												"如果角色们耽搁超过{@b 两分钟}，{@area 9|Area 9|u}里的那名水手就会被强迫召唤一只{@creature 水元素}。元素会撞进{@area 8|Area 8|u}攻击玩家角色。",
+												"水手召唤水元素后，每轮有30%的几率{@b 失去专注}。一旦如此，元素便会转而与他为敌。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Eelfolk Don't Alert The Others",
+									"type": "entries",
+									"name": "鳗人未惊动同伙",
+									"id": "The Eelfolk Don't Alert The Others",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"阿林敦促玩家角色去阻止{@area 9|Area 9|u}中正在进行的{@b 召唤仪式}。",
+												"{@area 9|Area 9|u}的{@b 鳗人}正全神贯注于召唤仪式，听不见{@area 8|Area 8|u}中的战斗（除非发生爆炸之类的大动静）。",
+												"角色们进入{@area 9|Area 9|u}时，鳗人们正处于地图上标记的位置。",
+												"如果玩家角色的检定高过鳗人灾虐者13的被动察觉，或许能在{@area 9|Area 9|u}争取到一个突袭轮。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Area 8A: Plunder",
+							"type": "section",
+							"name": "区域8A：掠得财物",
+							"id": "Area 8A",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"鳗人把从{@i 玉狮号}上掳掠来的成箱成桶财物堆在这里。这些货物价值5,000 gp。",
+										"通往区域8的{@b 门}未上锁。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 8",
+							"entries": [
+								"在{@area 9|Area 9|u}的变故展开之前，角色们只有片刻准备时间。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Summoning Room",
+					"type": "section",
+					"name": "召唤室",
+					"id": "Summoning Room",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/TSSL-grigor.webp"
+							},
+							"title": "格里戈尔"
+						},
+						{
+							"ENG_name": "Area 9: Stalagmite Cave",
+							"type": "section",
+							"name": "区域9：石笋洞窟",
+							"id": "Area 9",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"一丛丛石笋在这座潮湿的洞窟中簇拥成群。",
+										"东侧岩壁旁有一间坍圮的圆形{@b 石室}。",
+										"洞窟后方，一只波光荡漾、盛满水的{@b 钵}嵌在破裂的雪花石膏地砖中。它就是{@item 命令水元素水钵}。",
+										"一名{@creature 鳗人灾虐者|TSSL}正对着钵前一名吓坏了的跪地水手嘶吼（用鳗人语）。",
+										"其他种类的{@creature 鳗人|TSSL}散布在洞窟各处，观看着这场仪式。"
+									]
+								},
+								{
+									"ENG_name": "Dramatic Question",
+									"type": "inset",
+									"name": "戏剧性问题",
+									"entries": [
+										"角色们能及时阻止召唤仪式并击败鳗人吗？"
+									]
+								},
+								{
+									"ENG_name": "Combat",
+									"type": "entries",
+									"name": "战斗",
+									"id": "Combat 6",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@creature 鳗人灾虐者|TSSL}（标记为ES）冲向一名看上去虚弱的角色展开近战。",
+												"{@creature 鳗人|TSSL}（标记为E）成群围攻较强壮的角色，试图将他们团团围住。",
+												"{@creature 鳗人猎手|TSSL}（标记为H）从圆形石室内的掩体后投掷标枪。他们投掷三轮标枪后便加入近战。",
+												"残塔的垛口和钟乳石提供{@b 半身掩护}。",
+												"那名被吓得服服帖帖的{@b 水手}（标记为S）名叫格里戈尔（混乱中立的{@creature 匪徒}，没有武器），他会一心一意地继续召唤水元素，直到被打断为止。他害怕一旦停下就会遭到酷刑。若专注始终未被打断，他将在自己{@b 第4轮}结束时完成仪式。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Transition",
+							"type": "section",
+							"name": "过渡",
+							"id": "Transition 9",
+							"entries": [
+								"众人进入{@i 后续}部分。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Aftermath",
+					"type": "section",
+					"name": "后续",
+					"id": "Aftermath",
+					"entries": [
+						{
+							"ENG_name": "The Bowl Of Commanding Water Elementals",
+							"type": "section",
+							"name": "命令水元素水钵",
+							"id": "The Bowl Of Commanding Water Elementals",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"卢西恩绝不会善待试图带走水钵的角色。如果他们企图这么做，他只会生硬地回一句\"多谢，再见\"，不会给他们任何报偿。",
+										"一旦被人从地里撬出，水钵便会失去所有魔法属性。",
+										"只要玩家角色不试图带走水钵，卢西恩就会送给每人一枚{@b 水手硬币}，以感谢他们的帮助。这枚硬币是一枚锤制铜币，压印着一座闪耀的灯塔。向一名非敌对的水手出示此币，便可在一次影响他的魅力检定上获得优势。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Sailing The Jade Lion",
+							"type": "section",
+							"name": "玉狮号的航行",
+							"id": "Sailing The Jade Lion",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"如果{@b 阿林·赫斯特}还活着，他会感激角色们，并利用船上的备用小划艇，把货物和精疲力竭的船员们送回{@i 玉狮号}。他能驾驶{@i 玉狮号}返回港口修理。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Returning Home",
+							"type": "section",
+							"name": "踏上归途",
+							"id": "Returning Home",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"{@i 安娜贝尔·李号}在元素的袭击中受了轻微损伤，但仍能正常航行。",
+										"如果角色们把拉夫送回本吉·弗罗格沃特身边，他会奖励每人{@b 200 gp}。如果角色们还送回了幸存的船员和成箱的货物，他会再奖励每人{@b 200 gp}。",
+										"本吉会派出一支四名士兵加一名队长的小队，从此负责修缮并守卫灯塔。",
+										"正如承诺的那样，希拉·科珀特里会把角色们送往他们选择的任何港口。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Future Adventure Hooks",
+							"type": "section",
+							"name": "未来的冒险引子",
+							"id": "Future Adventure Hooks",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"希拉船长或许会对玩家角色的勇毅印象深刻，交予他们一项新任务。",
+										"如果希拉载着众人驶向某处，公海之上也许会随之展开新的冒险。",
+										"当一位奇怪的水手造访灯塔时，卢西恩可能会再次找上玩家角色。",
+										"角色们也许想追查并铲除附近的一支鳗人部族\u2014\u2014据传它刚刚由一名新晋的{@creature 鳗人风暴召唤者|TSSL}统领......"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Appendix A: Maps",
+					"type": "section",
+					"name": "附录A：地图",
+					"id": "Appendix A:  Maps",
+					"entries": [
+						{
+							"ENG_name": "The Docks",
+							"type": "section",
+							"name": "码头",
+							"id": "The Docks 2",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/Docks.webp"
+									},
+									"imageType": "map",
+									"title": ""
+								}
+							]
+						},
+						{
+							"ENG_name": "The Annabel Lee",
+							"type": "section",
+							"name": "安娜贝尔·李号",
+							"id": "The Annabel Lee",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/The_Annabel_Lee.webp"
+									},
+									"imageType": "map",
+									"title": ""
+								}
+							]
+						},
+						{
+							"ENG_name": "Skyhorn Lighthouse",
+							"type": "section",
+							"name": "斯凯霍恩灯塔",
+							"id": "Skyhorn Lighthouse",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/Skyhorn_Lighthouse.webp"
+									},
+									"imageType": "map",
+									"title": ""
+								}
+							]
+						},
+						{
+							"ENG_name": "Skyhorn Lighthouse Caves",
+							"type": "section",
+							"name": "斯凯霍恩灯塔洞窟",
+							"id": "Skyhorn Lighthouse Caves",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/Skyhorn_Lighthouse_Caves.webp"
+									},
+									"imageType": "map",
+									"title": ""
+								}
+							]
+						},
+						{
+							"ENG_name": "VTT Maps",
+							"type": "section",
+							"name": "VTT地图",
+							"id": "VTT Maps",
+							"entries": [
+								{
+									"type": "homebrew",
+									"entries": [
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/Docks_VTT_23_x_31.webp"
+													},
+													"imageType": "map",
+													"title": "码头"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/The_Annabel_Lee_VTT_14_x_23.webp"
+													},
+													"imageType": "map",
+													"title": "安娜贝尔·李号"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/Skyhorn_Lighthouse_VTT_14_x_23.webp"
+													},
+													"imageType": "map",
+													"title": "斯凯霍恩灯塔"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TSSL/Skyhorn_Lighthouse_Caves_VTT_41_x_31.webp"
+													},
+													"imageType": "map",
+													"title": "斯凯霍恩灯塔洞窟"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
