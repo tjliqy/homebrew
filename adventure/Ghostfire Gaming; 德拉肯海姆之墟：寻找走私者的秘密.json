@@ -1,0 +1,3024 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DoDkSearchSmugglersSecrets",
+				"abbreviation": "ISotSS",
+				"full": "德拉肯海姆之墟：寻找走私者的秘密",
+				"url": "https://marketplace.dndbeyond.com/category/DBVGPMH5P",
+				"version": "1.0.0",
+				"dateReleased": "2025-02-26",
+				"authors": [
+					"Ghostfire Gaming"
+				],
+				"convertedBy": [
+					"Giddy"
+				],
+				"partnered": true,
+				"color": "8a3ea8"
+			}
+		],
+		"edition": "one",
+		"dateAdded": 1740608604,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "bb48b3e45c"
+	},
+	"_test": {
+		"references": [
+			"DungeonsDrakkenheim"
+		]
+	},
+	"monster": [
+		{
+			"name": "点灯人",
+			"source": "DoDkSearchSmugglersSecrets",
+			"page": 36,
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d10 + 30"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 19,
+			"dex": 17,
+			"con": 16,
+			"int": 13,
+			"wis": 15,
+			"cha": 10,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"fire",
+				"radiant"
+			],
+			"languages": [
+				"理解通用语但不说话"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "灯笼之光",
+					"entries": [
+						"提灯人散发半径 20 尺的{@variantrule 明亮光照|XPHB}以及额外 10 尺的{@variantrule 微光光照|XPHB}。若提灯人死亡，此光照随之熄灭。"
+					],
+					"ENG_name": "Lantern Light"
+				}
+			],
+			"action": [
+				{
+					"name": "啃咬",
+					"entries": [
+						"{@atkr m}：{@hit 6}，触及 5 尺，单一目标。{@h}22（{@damage 4d8 + 4}）暗蚀伤害。"
+					],
+					"ENG_name": "Bite"
+				},
+				{
+					"name": "灯笼光束",
+					"entries": [
+						"提灯人从其灯笼中射出两道不同的魔法光束，选择其 60 尺内可见的两个目标。",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "爆破之光",
+									"entry": "{@actSave str} {@dc 13}，60 尺内可见提灯人的单一生物。{@actSaveFail} 10（{@damage 3d6}）力场伤害，且目标陷入{@condition 倒地|XPHB}状态。{@actSaveSuccess} 半伤。",
+									"ENG_name": "Blasting Light"
+								},
+								{
+									"type": "item",
+									"name": "炫目之光",
+									"entry": "{@actSave con} {@dc 13}，60 尺内可见提灯人的单一生物。{@actSaveFail} 10（{@damage 3d6}）光耀伤害，且目标陷入{@condition 目盲|XPHB}状态，直至提灯人的下个回合开始。{@actSaveSuccess} 半伤。",
+									"ENG_name": "Blinding Light"
+								},
+								{
+									"type": "item",
+									"name": "灼燃之光",
+									"entry": "{@actSave dex} {@dc 13}，60 尺内可见提灯人的单一生物。{@actSaveFail} 10（{@damage 3d6}）火焰伤害，且目标开始燃烧。{@actSaveSuccess} 半伤。",
+									"ENG_name": "Burning Light"
+								},
+								{
+									"type": "item",
+									"name": "巫光",
+									"entry": "{@actSave wis} {@dc 13}，60 尺内可见提灯人的单一生物。{@actSaveFail} 目标陷入{@condition 魅惑|XPHB}状态。以此方式陷入{@condition 魅惑|XPHB}期间，目标须在其回合内将所有移动力用于向提灯人移动。在目标每个回合结束时，其重复豁免，成功则终止其身上的该效应。若目标曾受到提灯人的伤害，其在为终止此效应而进行的豁免中具有优势。1 分钟后，目标不再被提灯人{@condition 魅惑|XPHB}。",
+									"ENG_name": "Witch Light"
+								}
+							]
+						}
+					],
+					"ENG_name": "Lantern Beams"
+				}
+			],
+			"reaction": [
+				{
+					"name": "守御闪光",
+					"entries": [
+						"{@actTrigger} 一名生物以攻击指定提灯人。{@actResponse} 提灯人的灯笼骤然变亮，该目标在本回合内对提灯人的攻击掷骰具有劣势。"
+					],
+					"ENG_name": "Warding Flare"
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/bestiary/tokens/Lamplighter.webp"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"O",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MA"
+			],
+			"conditionInflict": [
+				"目盲",
+				"魅惑",
+				"倒地"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"ENG_name": "Lamplighter"
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "点灯人",
+			"source": "DoDkSearchSmugglersSecrets",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这生物披着从佝偻身躯上垂下的暗色破布，两盏巨大的灯笼从其背部的肉突上垂吊而下。它的手臂和腿细长瘦长，四肢着地蹒跚前行时仿佛踩着高跷。它的面孔苍白而无表情，双眼是两口深陷的黑潭。它张口时，下颌脱臼般敞开，露出布满尖刺弯钩利齿的血盆大口。这生物的尖啸令人胆寒，同时灯光愈发明亮，奥术能量的微粒在其周围飞舞。",
+						"在吞噬德拉肯海姆的大灾变之前，提灯人会在黄昏时分巡行城中街道，确保主干道沿线的所有灯笼都被点亮。这些灯笼曾是人们在一天结束时归家路上的引路明灯。如今，蔓延于德拉肯海姆的污染已将昔日的提灯人扭曲成了畸异的憎物。他们的形体与曾经照看的灯笼融为一体，让他们得以用那抚慰人心的光芒引诱废墟中的生物靠近\u2014\u2014然后在那些生物沐浴于光辉中时将其吞噬。",
+						"在污染导致的癫狂之中，提灯人将其他生物视为企图熄灭其灯笼的害虫，因此决意先把这些生物扼杀。人们有时能听到提灯人喃喃自语、哀号着呼喊这些妄想，诸如\"守住灯火！\"或\"绝不能让黑暗进来......\"",
+						{
+							"type": "entries",
+							"name": "战斗策略",
+							"entries": [
+								"白天，提灯人躲藏在黑暗的废墟建筑或简陋的窝棚里，只在黄昏时分现身。它们整夜巡逻，用魔法点亮城中残破的灯笼，确保主干道灯火通明。",
+								"从远处看，提灯人就像一团柔和发光的光晕，在废墟间移动时上下起伏。这生物会用其\"灯笼光束\"动作远距离击退生物，或引诱毫无戒心的猎物靠近。一旦有生物靠得足够近，提灯人便用它那贪婪的血盆大口发起攻击并将其吞食。",
+								"生命值{@variantrule 生命值|XPHB}降至四分之一以下的提灯人通常会试图逃入废墟中休养。这些生物对生前值守的街道怀有领地意识，一旦伤愈便会返回那片领地，继续保护它们珍贵的灯火免受闯入者侵扰。",
+								"由于提灯人天生被德拉肯海姆的黑暗角落吸引，角色只要待在已被灯笼照亮的区域，往往就能避开它们。同时，熄灭主干道沿线的灯火也可以把它们引到特定地点，迫使这些生物前来重新点燃它们的灯笼。"
+							],
+							"ENG_name": "Combat Tactics"
+						},
+						{
+							"type": "entries",
+							"name": "研究敌人",
+							"entries": [
+								"精通{@skill 自然|XPHB}或{@skill 生存|XPHB}的角色在采取{@action 学习|XPHB}动作检视提灯人时，其智力（{@skill 奥秘|XPHB}）检定具有优势。他们依据检定结果获知以下信息：",
+								{
+									"type": "list",
+									"items": [
+										{
+											"type": "item",
+											"name": "10 或更高",
+											"entry": "此检定结果揭示提灯人的伤害抗性。",
+											"ENG_name": "10 or higher"
+										},
+										{
+											"type": "item",
+											"name": "15 或更高",
+											"entry": "此检定结果揭示该生物的\"灯笼光束\"特性及其多种选项。",
+											"ENG_name": "15 or higher"
+										},
+										{
+											"type": "item",
+											"name": "20或更高",
+											"entry": "此检定结果揭示该生物最高（力量、敏捷）与最低（智力、魅力）的能力值以及豁免。",
+											"ENG_name": "20 or higher"
+										}
+									],
+									"style": "list-hang-notitle"
+								}
+							],
+							"ENG_name": "Study the Foe"
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/bestiary/Lamplighter.webp"
+					},
+					"width": 596,
+					"height": 1000
+				}
+			],
+			"ENG_name": "Lamplighter"
+		}
+	],
+	"adventure": [
+		{
+			"name": "德拉肯海姆之墟：寻找走私者的秘密",
+			"id": "DoDkSearchSmugglersSecrets",
+			"source": "DoDkSearchSmugglersSecrets",
+			"group": "supplement-alt",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/covers/DoDkSearchSmugglersSecrets.webp"
+			},
+			"published": "2025-02-26",
+			"author": "幽灵火焰游戏",
+			"storyline": "德拉肯海姆",
+			"level": {
+				"start": 3,
+				"end": 3
+			},
+			"contents": [
+				{
+					"name": "德拉肯海姆之墟：寻找走私者的秘密",
+					"headers": [
+						"冒险概述",
+						"序幕：艾伯伍德村",
+						"第一部分：会见朗船长",
+						"第二部分：前往德拉肯海姆",
+						"第三部分：进入下水道",
+						{
+							"depth": 1,
+							"header": "1a. 德兰河码头"
+						},
+						{
+							"depth": 1,
+							"header": "1b. 下水道入口"
+						},
+						{
+							"depth": 1,
+							"header": "1c. 下水道通道"
+						},
+						{
+							"depth": 1,
+							"header": "1d. 壁龛"
+						},
+						"第四部分：探索地下通道",
+						{
+							"depth": 1,
+							"header": "2a. 闸门走廊"
+						},
+						{
+							"depth": 1,
+							"header": "2b. 维护更衣室"
+						},
+						{
+							"depth": 1,
+							"header": "2c. 闸门控制室"
+						},
+						{
+							"depth": 1,
+							"header": "2d. 下水道维护室"
+						},
+						{
+							"depth": 1,
+							"header": "2e. 淹水走廊"
+						},
+						{
+							"depth": 1,
+							"header": "3a. 外城下水道交汇处"
+						},
+						{
+							"depth": 1,
+							"header": "3b. 隧道入口"
+						},
+						{
+							"depth": 1,
+							"header": "3c. 下坡路段"
+						},
+						{
+							"depth": 1,
+							"header": "3d. 挖掘现场"
+						},
+						{
+							"depth": 1,
+							"header": "3e. 深壕秽民营地"
+						},
+						{
+							"depth": 1,
+							"header": "3f. 内城下水道"
+						},
+						"第五部分：逃脱",
+						"附录 A：新怪物",
+						"附录 B：污染规则",
+						"附录C：资料",
+						"制作组"
+					],
+					"ENG_name": "Dungeons of Drakkenheim: In Search of the Smuggler's Secrets"
+				}
+			],
+			"ENG_name": "Dungeons of Drakkenheim: In Search of the Smuggler's Secrets"
+		}
+	],
+	"adventureData": [
+		{
+			"id": "DoDkSearchSmugglersSecrets",
+			"source": "DoDkSearchSmugglersSecrets",
+			"data": [
+				{
+					"type": "section",
+					"name": "德拉肯海姆之墟：寻找走私者的秘密",
+					"id": "000",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/000-00-001.cover.webp"
+							},
+							"width": 1700,
+							"height": 2229
+						},
+						{
+							"type": "section",
+							"name": "冒险概述",
+							"id": "001",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/001-00-002.entering-the-sewers.webp"
+									},
+									"title": "进入下水道",
+									"width": 1700,
+									"height": 1057
+								},
+								"德拉肯海姆已不复存在。这座沦陷之城如今是一片被污染的废墟，变异怪物栖息其中，邪异魔法肆虐蔓延。德拉肯海姆古老的帝国城墙仍然屹立，将内城与外城分隔开来。然而，这些城墙及其城门已然成为无数充满敌意的石像鬼的巢穴，它们会从栖身处俯冲而下，攻击任何胆敢擅闯城内之徒。这使得旨在掠夺德拉肯海姆宝藏的远征既艰难又危险。",
+								"派系特工与冒险者们长期以来一直猜测，在城市街道之下延伸的污浊下水道中存在着许多替代路线。尽管这样的路线或许能提供更安全地进入德拉肯海姆的途径，但迄今为止无人知晓有谁找到过一条。然而，一份最近发现的走私者旧地图显示出三条连接外城与内城下水道系统的秘密通道。不幸的是，这张地图是否真实尚无从判断，更不用说自地图绘制以来，是否有坍塌、怪物肆虐或其他灾祸堵塞了那些隐秘的隧道。无论是出于自愿还是受人所托，验证地图的真伪并查明其中哪些路线可以通行，都落在了角色们的肩上\u2014\u2014他们将迎接城市之下的致命挑战。",
+								{
+									"type": "entries",
+									"name": "运作冒险",
+									"id": "002",
+									"entries": [
+										"本冒险为四名 3 级角色而设计。冒险始于{@area 艾伯伍德村|018|x}这座小型聚居地\u2014\u2014它位于德拉肯海姆以南数里，是冒险者与派系特工的避风港和会面之所。角色们来到德拉肯海姆的原因可能多种多样，但他们都需要更深入城市以实现各自的目标。此外，任何角色都可能希望提升自己在五大派系中的声望。由于进入德拉肯海姆的安全路线寥寥无几，一条走私者隧道或许是某个派系在城市中获得急需立足点的理想通道。",
+										"本冒险采用《龙与地下城》2024 年规则。要进行游戏，你需要 2024 年核心规则书、{@book D&D 免费规则|XPHB|1}，或免费的第五版{@link 系统参考文档（SRD）|https://www.dndbeyond.com/resources/1781-systems-reference-document-srd}。",
+										"《寻找走私者的秘密》是一个以德拉肯海姆城为背景的独立冒险。如果你喜欢这个德拉肯海姆冒险的设定与主题，可以在冒险书{@adventure 德拉肯海姆之墟|DungeonsDrakkenheim}中找到适合 1 到 13 级角色的完整冒险。如果你已拥有《{@i 德拉肯海姆之墟}》，《寻找走私者的秘密》可以作为外城地点中的可选任务插入，用于寻找另一条进入内城的道路，并加深角色与某个派系的联系。",
+										"运行本冒险无需使用《{@i 德拉肯海姆之墟}》冒险书中的任何附加规则。但如果你和你的玩家想要原汁原味的德拉肯海姆体验，本冒险已包含该设定的一些关键特色。",
+										"阅读本冒险时，你会偶尔看到{@b 粗体}文字。这是本冒险用来标示场景或地点中随时准备战斗的怪物或 NPC 的方式。一只新怪物\u2014\u2014{@creature 提灯人|DoDkSearchSmugglersSecrets}\u2014\u2014收录于冒险册末尾的{@area 附录 A|06d|x}。如果某个怪物的名字以粗体显示但后面没有跟着\"（见{@area 附录 A|06d|x}）\"，则该怪物的游戏数据位于第五版核心规则中。",
+										"当你看到{@i 斜体}文字时，那是本冒险在标示法术（如{@spell 泰莎狂笑术|XPHB|狂笑术}）或魔法物品（如{@item 飞行靴|XDMG}）。法术与魔法物品见于 2024 年第五版核心规则。",
+										{
+											"type": "insetReadaloud",
+											"id": "003",
+											"entries": [
+												"当你看到这样的框内文字时，角色们多半是进入了新区域或触发了某个事件，例如某位 NPC 登场。这些文字供你朗读或改述给玩家，用以描绘场景。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "冒险流程图",
+											"id": "004",
+											"entries": [
+												"冒险流程图概述了角色们在本冒险中的预期进程。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/002-00-025.adventure-flow-chart.webp"
+													},
+													"title": "冒险流程图",
+													"width": 1700,
+													"height": 2036
+												}
+											],
+											"ENG_name": "Adventure Flowchart"
+										},
+										{
+											"type": "entries",
+											"name": "第一部分：会见朗船长",
+											"id": "005",
+											"entries": [
+												"角色们抵达德拉肯海姆以南数里的{@area 艾伯伍德村|018|x}，在那里与\"戴兜帽的灯笼\"派系的安瑟姆·朗船长会面\u2014\u2014这个军事修会成员致力于对抗如今盘踞德拉肯海姆的怪物与匪徒。朗船长雇佣角色们深入城市下方的下水道，并向他们提供走私者的地图（见\"{@area 手持材料 1|022|x}\"）和走私者的笔记（见\"{@area 手持材料 2|023|x}\"）。"
+											],
+											"ENG_name": "Part 1: Meeting Captain Lang"
+										},
+										{
+											"type": "entries",
+											"name": "第二部分：前往德拉肯海姆",
+											"id": "006",
+											"entries": [
+												"在前往城中的途中，角色们被{@area 罗丝·卡弗|028|x}及其匪帮拦下。卡弗企图诱使角色背叛\"戴兜帽的灯笼\"：先收集朗船长想要的情报，然后转交给她和\"女王的人\"派系\u2014\u2014那是城中盗匪与法外之徒组成的松散联盟，追随一位人称\"盗贼女王\"的神秘人物。"
+											],
+											"ENG_name": "Part 2: Journey to Drakkenheim"
+										},
+										{
+											"type": "entries",
+											"name": "第三部分：进入下水道",
+											"id": "007",
+											"entries": [
+												"走私者的地图指出了一个可能进入德拉肯海姆下水道系统的入口，它通往角色们要评估的三条路线最为直接。德兰河排水管（{@area 区域 1|031|x}）建于德兰河码头沿岸，通向连接地图上所有三个目标区域的通道。在这里，角色们将初次体验下水道中的种种危险。"
+											],
+											"ENG_name": "Part 3: Entering the Sewers"
+										},
+										{
+											"type": "entries",
+											"name": "第四部分：探索地下通道",
+											"id": "008",
+											"entries": [
+												"角色们进入下水道系统后，可以借助走私者的地图找到三条可能通往城墙之下的通道：闸门（{@area 区域 2|03d|x}）、走私者隧道（{@area 区域 3|049|x}）和暗道（{@area 区域 4|059|x}）。要完成任务，角色需要调查每个地点，看看哪一条是进入内城的最佳路线，但他们可以按任意顺序调查这些地点。"
+											],
+											"ENG_name": "Part 4: Exploring the Underground Passages"
+										},
+										{
+											"type": "entries",
+											"name": "第五部分：逃脱",
+											"id": "009",
+											"entries": [
+												"角色们完成地下探索后，可以根据自己究竟是忠于\"戴兜帽的灯笼\"还是决定与{@area 罗丝·卡弗|028|x}合作，选择从内城的{@area 灯笼街|065|x}或外城的{@area 湿石大道|067|x}离开下水道。无论从哪里出来，在与派系联络人会合之前，他们都要面对一头在城市废墟中潜行的致命怪物。"
+											],
+											"ENG_name": "Part 5: Escape"
+										},
+										{
+											"type": "entries",
+											"name": "以玩家为主导的游戏支柱",
+											"id": "00a",
+											"entries": [
+												"虽然战斗随时可能发生，但本冒险中的大多数遭遇都可以通过巧妙的探索、谨慎的潜行、解谜或机智的社交互动来避开或绕过。让角色自行决定如何应对每个遭遇，并在描述情境时坦诚直白，以便玩家评估如何处理。对于成功在不诉诸暴力的情况下解决遭遇的角色，你应当给予全额经验值。",
+												"在本冒险中，好斗的角色若选择一路战个痛快，可能会发现自己力不从心、资源枯竭。弥漫于德拉肯海姆废墟中的污染性{@area 阴霾|00e|x}（见下文描述）使城内无法进行长休。因此，肆意消耗法术、职业特性和{@variantrule 生命值|XPHB}的角色将需要完全撤出城市进行休整。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/003-00-003.mutated-monstrosities.webp"
+													},
+													"title": "德拉肯海姆的变异怪物",
+													"width": 1700,
+													"height": 1057
+												}
+											],
+											"ENG_name": "Player-Driven Pillars of Play"
+										}
+									],
+									"ENG_name": "Running the Adventure"
+								},
+								{
+									"type": "entries",
+									"name": "冒险背景",
+									"id": "00b",
+									"entries": [
+										"德拉肯海姆曾是威斯特马尔的帝国首都。这座由冯·凯塞尔王室统治的国际大都会曾是工业、贸易、魔法与艺术的中心。但十五年前，一场陨星坠落的那异风暴预示着一颗巨大流星轰然砸中德拉肯海姆，释放出这个世界前所未见的毁灭之力。",
+										"异怪恐怖与狂野魔法从那场浩劫留下的翻腾陨石坑中喷涌而出，席卷全城。其后果引发了一场毁灭王室的血腥内战，如今威斯特马尔正在缓慢滑向无政府状态。与此同时，德拉肯海姆已成为一片阴郁的城市荒原，被污染的魔法侵蚀，被可怕的怪物纠缠。重建城市、光复王国的微弱希望仍然存在。与此同时，奇异的宝藏、失落的财富与黑暗的秘密埋藏在废墟之中，引得敌对派系与大胆的冒险者竞相追寻。",
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/004-map-00.01-drakkenheim-city.webp"
+													},
+													"imageType": "map",
+													"title": "地图 1：德拉肯海姆城",
+													"width": 3910,
+													"height": 4096,
+													"id": "06e",
+													"grid": {
+														"type": "none",
+														"size": 207,
+														"distance": 1000
+													}
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/005-map-00.01-drakkenheim-city-player.webp"
+													},
+													"imageType": "mapPlayer",
+													"title": "玩家版本",
+													"width": 3910,
+													"height": 4096,
+													"mapParent": {
+														"id": "06e"
+													},
+													"grid": {
+														"type": "none",
+														"size": 207,
+														"distance": 1000
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "德拉肯海姆废墟",
+											"id": "00c",
+											"entries": [
+												"曾经，超过十万人以德拉肯海姆为家，还有数千人居住在距城数日行程内的村庄与聚落。但只有几百人在那场毁灭德拉肯海姆的大灾变中幸存，如今附近大多数聚落都已被遗弃。",
+												"废墟各处散布着许多名胜与冒险地点，但以下几处在本次冒险中尤为重要：",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "外城",
+															"entry": "这片庄园区、近郊与贫民窟环绕着城墙。本冒险的大部分情节发生在城市西侧名为\"杂蔓区\"的破败街区地下。",
+															"ENG_name": "The Outer City"
+														},
+														{
+															"type": "item",
+															"name": "内城",
+															"entry": "德拉肯海姆的中心地带遍布拥挤的鹅卵石街道、恢弘的广场，以及谜之塔、宇宙钟楼、圣维特鲁维奥大教堂和屠石广场等宏伟建筑地标。",
+															"ENG_name": "The Inner City"
+														},
+														{
+															"type": "item",
+															"name": "德兰河",
+															"entry": "这条河流经城市流向西南处宽约四百尺。河水幽深、流速缓慢，并被如今充斥德拉肯海姆的邪异魔法彻底污染。",
+															"ENG_name": "Drann River"
+														},
+														{
+															"type": "item",
+															"name": "城墙",
+															"entry": "高四十尺、厚五到十尺的砖石城墙将内城与外城分隔开来，并设有五座城门。这些防御工事是探索城市时的主要障碍，因为五座城门均被派系武装或怪物占据。此外，充满敌意的{@creature 石像鬼|XMM|石像鬼}会攻击任何试图攀爬城墙的生物。这些挑战使得深入城心的远征令人望而却步。",
+															"ENG_name": "City Walls"
+														}
+													]
+												}
+											],
+											"ENG_name": "Ruins of Drakkenheim"
+										},
+										{
+											"type": "entries",
+											"name": "妄质",
+											"id": "00d",
+											"entries": [
+												"德拉肯海姆各处都能找到当年陨星留下的蕴含巨大魔法潜力的虹彩晶体。这种被称为幻惑石的闪光材料会散发引发疯狂与怪物化变异的不自然能量。尽管有这些危险，幻惑石却是制作魔法物品和驱动强大新法术的绝佳材料。术士、邪术师、巫师以及各路神秘术士都渴求其超自然力量，因此幻惑石在奥术圈和地下市场中身价高昂。许多淘矿者甘冒一切风险去采集这种奇异矿物的碎片，而其真正起源至今不明。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/006-00-004.delerium-crystal.webp"
+													},
+													"title": "妄质水晶",
+													"width": 850,
+													"height": 617
+												},
+												"如今在德拉肯海姆活动的敌对派系在如何对待这些晶体的问题上分歧严重\u2014\u2014是将其摧毁、加以利用还是奉为神明\u2014\u2014他们之间暗流涌动的分歧随时可能升级为全面战争。"
+											],
+											"ENG_name": "Delerium"
+										},
+										{
+											"type": "entries",
+											"name": "污霭",
+											"id": "00e",
+											"entries": [
+												"一层翻腾的雾气笼罩着德拉肯海姆，其中闪烁着五彩微粒，冒险者们称之为\"阴霾\"。在许多人看来，那感觉就像陨石坠落时扬起的尘埃从未散去过。",
+												"{@b 角色在阴霾之内进行长休得不到任何收益。}冒险者在进入废墟前应当充分休息，因为他们必须撤出城市才能恢复{@variantrule 生命值|XPHB}、法术位和其他资源。此效应无法被任何普通装备规避，也不能用{@spell 绳技|XPHB}、{@spell 李蒙德的小屋||小屋}等法术或任何类似的魔法或特性绕过。"
+											],
+											"ENG_name": "The Haze"
+										},
+										{
+											"type": "entries",
+											"name": "怪物",
+											"id": "00f",
+											"entries": [
+												"幻惑石散发的魔法辐射会污染附近的生物与物体，使有机生物产生紊乱而骇人的变异，并扭曲无机物。所有生物\u2014\u2014包括构装体、元素和亡灵\u2014\u2014都会受这些混乱力量影响。足够的暴露会表现为一场怪物化变异，使生物扭曲成昔日自我的怪诞嘲弄\u2014\u2014这一过程会让该生物陷入无可挽回的疯狂。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/007-00-005.eldritch-hand.webp"
+													},
+													"title": "邪异污染之手",
+													"width": 850,
+													"height": 1289
+												},
+												"虽然本冒险中遇到的怪物使用经典 D&D 生物的数据块，它们的起源与背景传说却有所不同。德拉肯海姆的怪物是邪异污染作用于城市昔日居民的产物。这些怪物中有许多曾是流星来袭时居住在城中的人或动物，或是为了收复城市、寻找亲人或搜寻财宝而进入废墟的冒险者。完全污染的生物会变成可怕的变异怪物，注定在废墟中游荡，唯有{@spell 愿望术|XPHB}才能让其恢复原形。这类怪物往往丧失了从前的自我意识，心智被来自异界的疯狂侵蚀吞噬。"
+											],
+											"ENG_name": "Monsters"
+										},
+										{
+											"type": "entries",
+											"name": "古怪污染",
+											"id": "010",
+											"entries": [
+												"探索德拉肯海姆的角色可能遭遇由生物、幻惑石及其他魔法现象造成的致命邪异污染。防御诅咒、疾病、魔法或毒素的能力、装备与法术对污染无效，污染会施加{@area 污染|072|x}状态。污染无法自然痊愈，也难以用低环法术移除。完整的污染规则见{@area 附录 B|071|x}。"
+											],
+											"ENG_name": "Eldritch Contamination"
+										},
+										{
+											"type": "entries",
+											"name": "五大敌对派系",
+											"id": "011",
+											"entries": [
+												"自城市毁灭以来的岁月里，五个敌对派系已在德拉肯海姆站稳脚跟，各自试图夺取废墟的控制权。他们的意识形态、手段与目标各不相同。每个团体都有独特且相互冲突的目标，对{@area 幻惑石|00d|x}持不同看法，并各自怀抱重塑德拉肯海姆的信念。归根结底，每个派系都出于自身缘由想要控制这座城市\u2014\u2014无论是恢复冯·凯塞尔王室的旧日统治，还是在这座逝去之城的灰烬上建立新秩序。",
+												"德拉肯海姆五大派系包括：",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "紫晶学院",
+															"entry": "紫晶学院是一个行事隐秘的法师行会兼奥术施法者学府，致力于研究城市废墟中的奥术奥秘与魔法现象。",
+															"ENG_name": "The Amethyst Academy"
+														},
+														{
+															"type": "item",
+															"name": "银之秩序",
+															"entry": "这个由立誓圣武士与虔诚战士组成的组织，其成员誓要对抗超自然邪恶、黑暗魔法与异界入侵。该修会的使命是先控制、再封锁从德拉肯海姆蔓延而出的堕落魔法。",
+															"ENG_name": "The Silver Order"
+														}
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/008-00-006.queen-of-thieves.webp"
+													},
+													"title": "盗贼女王",
+													"width": 850,
+													"height": 1498
+												},
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "戴兜帽的灯笼",
+															"entry": "\"戴兜帽的灯笼\"是一支由内战老兵和旧德拉肯海姆城市守卫残部组成的非正规军，向盘踞在其故国首都的怪物、匪徒和拾荒者发动游击战争。",
+															"ENG_name": "The Hooded Lanterns"
+														},
+														{
+															"type": "item",
+															"name": "女王的部下",
+															"entry": "这个松散的犯罪同盟由上百个盗匪、法外之徒与恶棍帮派组成，所有成员都效忠于神秘的盗贼女王。",
+															"ENG_name": "The Queen's Men"
+														},
+														{
+															"type": "item",
+															"name": "坠落之火的追随者",
+															"entry": "这个新兴教派由卢克蕾西娅·马蒂亚斯的预言之识引领。她布道称幻惑石是神圣的馈赠而非灾祸，这些圣晶能为对抗尚未降临的更大黑暗提供救赎。",
+															"ENG_name": "The Followers of the Falling Fire"
+														}
+													]
+												},
+												"在本冒险中，角色可以与\"戴兜帽的灯笼\"和\"女王的人\"的代表互动。如果你计划将本冒险纳入更宏大的德拉肯海姆战役，你可以向玩家和角色介绍其他派系，甚至提供来自不同派系的替代冒险引子，以契合你团体的倾向。"
+											],
+											"ENG_name": "Five Rival Factions"
+										}
+									],
+									"ENG_name": "Adventure Background"
+								},
+								{
+									"type": "entries",
+									"name": "德拉肯海姆的世界",
+									"id": "012",
+									"entries": [
+										"德拉肯海姆在诸多方面不同于 D&D 的许多核心设定。它是一个黑暗奇幻设定，不仅用艰难的战斗遭遇考验角色，还用政治阴谋和穿行于邪异能量污染之城的需要来挑战他们。德拉肯海姆战役的核心概念包括：",
+										"{@b 诸神沉默而遥远。}神祇不会显现形体，也不与崇拜者交谈或干预世俗事务。各宗教对诸神起源的说法相互矛盾。位面宇宙学鲜为人知，尽管贤者们已提出若干理论（往往大错特错）。",
+										"{@b 神术力量并非由神明赐予。}牧师、德鲁伊和圣武士转而通过奉献、冥想与意志汲取神圣能量。违反宗教信条不会导致施法能力丧失，但信仰危机可能会。",
+										"{@b 个人无法仅凭学习成为巫师。}术士与巫师的奥术魔法皆与生俱来、流淌于血脉，而这股力量可以通过练习与研究加以驾驭。世上的人们通常不区分各类奥术施法者，而是将他们统称为\"法师\"。",
+										"{@b 国家法律禁止奥术施法者持有贵族头衔。}虽然使用奥术魔法合法，但大陆诸国共同缔结了一项名为《卢明敕令》的条约，剥夺奥术施法者的一切贵族或王室继承权。在任何土地上无视敕令都是开战的理由。",
+										"{@b 在更广阔的世界中，高等级 NPC 和施法者极为罕见。}尽管人数稀少，高等级 NPC 对社会有着深远影响。然而，德拉肯海姆吸引了异乎寻常多的此类人物。"
+									],
+									"ENG_name": "The World of Drakkenheim"
+								},
+								{
+									"type": "entries",
+									"name": "走私者的故事",
+									"id": "013",
+									"entries": [
+										"德拉肯海姆还是一座活着的城市时，它是贸易与商业的繁华枢纽\u2014\u2014这自然也使它成为犯罪、走私、诈骗与盗窃的枢纽。由于凡经城门通行之物都要接受检查与课税，走私长期以来都是把违禁与稀有货物运入城中的手段。单个罪犯与走私者不断寻找躲避城市守卫的新法子，而下水道系统常被视为运送违禁品的潜在通道。尽管城市的设计者出于安全考虑刻意让内城与外城的下水道系统保持分离，狡黠的罪犯还是在漫长岁月中找到了两套系统之间的几处连接点。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/009-00-007.smugglers-maps.webp"
+											},
+											"title": "走私者的地图",
+											"width": 850,
+											"height": 633,
+											"id": "06f"
+										},
+										"本冒险核心的走私者地图及随附笔记，出自一位无名走私者之手，绘于陨石撞击德拉肯海姆前不久。地图与笔记似乎标出了三条穿过城墙之下的不同路线，失落多年后才被\"女王的人\"成员寻获。此后这些笔记几经易手，在冒险者与派系特工之间辗转，最终落入\"戴兜帽的灯笼\"特工之手\u2014\u2014或角色们手中。"
+									],
+									"ENG_name": "The Smuggler's Story"
+								},
+								{
+									"type": "entries",
+									"name": "冒险引子",
+									"id": "014",
+									"entries": [
+										"可以考虑使用以下任意冒险引子，将角色与冒险联系起来。",
+										"随后，角色可以在冒险的{@area 第一部分|01d|x}与朗船长会面。",
+										{
+											"type": "entries",
+											"name": "勘察任务",
+											"id": "015",
+											"entries": [
+												"在{@area 艾伯伍德村|018|x}，人类{@creature 斥候|XMM}格蕾塔·布劳恩\u2014\u2014\"戴兜帽的灯笼\"成员\u2014\u2014主动接触角色，询问他们是否有意承接灯笼会的自由委托。",
+												"\"我们需要几名能干的佣兵，协助我们执行一项进入废墟的勘察任务。这对我们收复这座城市十分重要，我们会为你们的协助提供报酬。请到镇郊瞭望塔向{@area 安瑟姆·朗|01e|x}船长报到，他会向你们说明详情。\"",
+												"随后，角色可以在冒险的{@area 第一部分|01d|x}与朗船长会面。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/010-00-008.hooded-lantern-scout.webp"
+													},
+													"title": "提灯斥候",
+													"width": 850,
+													"height": 1235
+												}
+											],
+											"ENG_name": "Survey Mission"
+										},
+										{
+											"type": "entries",
+											"name": "私人远征",
+											"id": "016",
+											"entries": [
+												"让走私者的地图在冒险一开始就落入角色手中，他们便可以选择凭自己的意愿去探究其秘密。角色们可能是在前往德拉肯海姆的路上，从一个被弃尸路旁等死的匪首口袋里发现了这份折起的旧地图及随附笔记；也可能是在先前远征德拉肯海姆城外废墟时将它挖出，或是在一场赌局中赢来。又或者，某位角色与老走私者是亲属，从导师、朋友或家人那里继承了这张地图。",
+												"由于从未踏足这座城市，角色们需要一位能读懂地图并理解其所绘内容的本地人相助。{@area 艾伯伍德村|018|x}的村民指点角色去与\"戴兜帽的灯笼\"的安瑟姆·朗谈一谈。朗是该派系的前锋船长之一，对城市布局的了解胜过大多数人。",
+												"或者，角色也可以选择自行调查，通过充分的时间和地图研究找出进入下水道的方法。若他们这样做，冒险结束时无需向任何派系汇报，但仍会面对第五部分详述的两个可能怪物遭遇之一。"
+											],
+											"ENG_name": "Personal Expedition"
+										},
+										{
+											"type": "entries",
+											"name": "只要价钱合适",
+											"id": "017",
+											"entries": [
+												"\"女王的人\"或其他派系的代表找到角色，开出的报酬是\"戴兜帽的灯笼\"愿意支付的两倍，条件是勘察地图上的地点并将结果报告给他们。各敌对派系都觊觎一条绕过灯笼会所控城门、又瞒过敌人耳目的内城通道。"
+											],
+											"ENG_name": "For The Right Price"
+										}
+									],
+									"ENG_name": "Adventure Hooks"
+								}
+							],
+							"ENG_name": "Adventure Overview"
+						},
+						{
+							"type": "section",
+							"name": "序幕：艾伯伍德村",
+							"id": "018",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/011-00-009.emberwood-village.webp"
+									},
+									"title": "艾伯伍德村",
+									"width": 1700,
+									"height": 1029
+								},
+								{
+									"type": "insetReadaloud",
+									"id": "019",
+									"entries": [
+										"德拉肯海姆以南数里处便是艾伯伍德村，这是一座位于勇士之路沿线的朴素十字路口村落，四周是被遗弃的农庄与幽暗的松林。许多住宅人去楼空，门窗钉死，在岁月中缓缓朽坏。然而村中心却生机勃勃。主干道沿线的几家酒馆里，谈笑与音乐此起彼伏。熙熙攘攘的集市广场上，一小群冒险者、商人与淘矿者忙着交易各式武器、装备、钱币、寻回的珍宝，以及一些闪烁微光的奇异晶体。就连艾伯伍德村中心那座朴素石头小教堂里，圣焰之光依然闪耀。"
+									]
+								},
+								"艾伯伍德村是德拉肯海姆城周围污染荒原中仅存的堡垒。选择栖身这座小村的人，大多是为了服务那些为各自目标前往德拉肯海姆、络绎不绝的冒险者、骑士与虔诚信徒。这座城市是贸易与欢宴的枢纽，也为在废墟中劳碌一天的人们提供些许喘息。",
+								"在艾伯伍德村里，玩家可以与数位 NPC 互动。如果他们的下水道之行未能按计划进行，也可能返回小村休整。玩家可以在村里的众多旅店中长休，甚至到郊外某座废弃房屋里长休。他们可以在各家酒馆打探消息，或在集市广场的商队店铺购物。也可以前往小教堂接受治疗，或寻求帮助以对付德拉肯海姆加诸在废墟中滞留过久者身上的致命污染。",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/012-map-00.02-emberwood-village.webp"
+											},
+											"imageType": "map",
+											"title": "地图 2：余烬木村庄",
+											"width": 4096,
+											"height": 3018,
+											"id": "070",
+											"grid": {
+												"type": "square",
+												"size": 80,
+												"offsetX": -16,
+												"offsetY": -45
+											}
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/013-map-00.02-emberwood-village-player.webp"
+											},
+											"imageType": "mapPlayer",
+											"title": "玩家版本",
+											"width": 4096,
+											"height": 3018,
+											"mapParent": {
+												"id": "070"
+											},
+											"grid": {
+												"type": "square",
+												"size": 80,
+												"offsetX": -16,
+												"offsetY": -45
+											}
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "《酒馆和旅馆》",
+									"id": "01a",
+									"entries": [
+										"艾伯伍德村主干道沿线坐落着几家本地场所，是冒险小队休息、打听当地传闻，或与其他冒险者及本地人共度舒适欢愉之夜的绝佳去处。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "树皮与秃鹫酒馆",
+													"entry": "这家酒馆有着温馨的家常气息，以牛肉炖菜和价格实惠的余烬麦酒闻名。门上悬挂的招牌画着一只卡通风格的秃鹫正享用血猎犬的内脏，两者都笑得和善可亲。酒馆由卡琳与霍尔加·阿尔斯贝格夫妇经营，是冒险者在废墟中度过一天后歇脚放松的常去之处。",
+													"ENG_name": "The Bark & Buzzard"
+												},
+												{
+													"type": "item",
+													"name": "骷髅与剑酒馆",
+													"entry": "这家昏暗的酒馆由一座旧农庄改建而成。正门旁嵌着一颗被锈剑贯穿的无颌骷髅，酒馆便因此得名。它由名叫弗丽达·隆霍恩的半兽人经营，是个藏污纳垢的贼窝：人们可以在这里销赃、找零活，也是\"女王的人\"盗匪与打手的常见聚点。",
+													"ENG_name": "The Skull & Sword Taphouse"
+												},
+												{
+													"type": "item",
+													"name": "镀金百合",
+													"entry": "这座奢华的两层建筑环绕着一条绘成紫色、饰有旋涡百合纹样的游廊。廊拱之间与垂帘窗内悬挂着华丽的金色灯笼。室内，四盏巨大的金灯照亮着一座小舞台，台下是一排排烛光摇曳的桌席。这里每晚都有现场表演，任何人都可以登台，迎接人群的喝彩或嘘声。",
+													"ENG_name": "The Gilded Lilly"
+												}
+											]
+										}
+									],
+									"ENG_name": "Taverns and Inns"
+								},
+								{
+									"type": "entries",
+									"name": "商队苑",
+									"id": "01b",
+									"entries": [
+										"村中广场那口被封死的井周围兴起了一处集市。这批五彩缤纷的马车、货车、帆布帐篷与临时摊位，是来德拉肯海姆淘金的冒险者、拾荒者与淘矿者的商业枢纽。数十名精明商人在此设摊，为各派系与探索者供应所需。其中包括：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "克劳父子铁匠铺",
+													"entry": "技艺精湛的铁匠托比亚斯·克劳出售各式军备，包括军用武器与重型护甲。",
+													"ENG_name": "Crowe and Sons Smithy"
+												},
+												{
+													"type": "item",
+													"name": "马洛的补给品",
+													"entry": "埃伦·马洛收购和出售冒险装备、口粮与普通用品，也出售{@item 治疗药水|XDMG|治疗药水}，每瓶 50 gp。",
+													"ENG_name": "Marlowe's Provisions"
+												},
+												{
+													"type": "item",
+													"name": "盖恩斯伯里探险用品公司",
+													"entry": "由阿敏·盖恩斯伯里经营，出售各式常用工具、冒险装备，以及对探索者与冒险者有用的设备。",
+													"ENG_name": "Gainsbury Expeditionary Supply Company"
+												},
+												{
+													"type": "item",
+													"name": "费尔韦瑟贸易与出口行",
+													"entry": "前走私者奥尔森·费尔韦瑟在此收购废墟中寻获的打捞品与幻惑石，再转售给他远在异港与异城的线人。",
+													"ENG_name": "Fairweather Trades and Exports"
+												},
+												{
+													"type": "item",
+													"name": "伟岸的奥尔多",
+													"entry": "这位古怪的大块头商人经营魔法物品，其中不少是从阵亡冒险者的尸体上取下的。他通常有{@dice 2d4}件普通或非普通魔法物品出售。",
+													"ENG_name": "Aldor the Immense"
+												}
+											]
+										}
+									],
+									"ENG_name": "Caravan Court"
+								},
+								{
+									"type": "entries",
+									"name": "圣阿登纳礼拜堂",
+									"id": "01c",
+									"entries": [
+										"这座小巧雅致的教堂坐落在商队庭院旁的一小片林间空地上。它是一栋小小的圆顶建筑，内部一只大火盆的光芒摇曳，供奉着圣焰信仰\u2014\u2014大陆多数民众信奉的主要宗教。教堂由火焰守护者汉娜照料，她是一位中年女子，身穿白金相间的长袍，黑发编成辫子。她言语温和、心地善良，对需要帮助的人满怀同情。她能照料伤者、施展治疗魔法、移除疾病与诅咒，甚至可以通过施放{@spell 净化污染|DungeonsDrakkenheim}法术（详见本冒险末尾）为有需要者移除所有污染与变异。她请冒险者为这些服务捐献钱物，并将其用于帮助社区。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/014-00-010.sacred-flame-banner.webp"
+											},
+											"title": "圣焰信仰",
+											"width": 850,
+											"height": 1115
+										}
+									],
+									"ENG_name": "Chapel of Saint Ardenna"
+								}
+							],
+							"ENG_name": "Prelude: Emberwood Village"
+						},
+						{
+							"type": "section",
+							"name": "第一部分：会见朗船长",
+							"id": "01d",
+							"entries": [
+								"如果玩家角色决定与\"戴兜帽的灯笼\"接洽，他们应前往{@area 艾伯伍德村|018|x}郊外的旧瞭望塔，那里是该派系的本地前哨。他们将在那里见到前锋船长安瑟姆·朗。",
+								"\"戴兜帽的灯笼\"的领导层不愿公开承认，但他们的兵力已捉襟见肘。自从夺回城市守卫兵营、在城中取得立足点以来，他们不得不投入更多资源与部队守卫和补给新基地。因此，他们几乎抽不出自家士兵去执行调查或危险的探索任务。无可奈何之下，他们转而雇佣佣兵与冒险者补充人手。",
+								{
+									"type": "entries",
+									"name": "安森·朗",
+									"id": "01e",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "01f",
+											"entries": [
+												"前锋船长安瑟姆·朗年轻而矫健，留着黑色长发与修剪整齐的短须，下颌线条分明，面容粗犷。他身披\"戴兜帽的灯笼\"的绿色兜帽斗篷与轻链甲，肩上醒目地佩着船长徽记。"
+											]
+										},
+										"安瑟姆·朗是一名人类{@creature 老兵}。他统领\"戴兜帽的灯笼\"的前锋部队，负责领导新的远征并在废墟中开辟新据点。他在内战期间幼年丧亲，与妹妹佩特拉一起被\"戴兜帽的灯笼\"总指挥伊莱亚斯·德雷克塞尔勋爵收养。他热忱投身养父的事业，尽管年轻却晋升迅速。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/015-00-011.ansom-lang.webp"
+											},
+											"title": "安森·朗",
+											"width": 850,
+											"height": 989
+										},
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "特点：",
+													"entry": "\"我崇尚行动胜于言辞，举止严厉而正经。\"",
+													"ENG_name": "Personality Trait:"
+												},
+												{
+													"type": "item",
+													"name": "理想：",
+													"entry": "\"尊重不是凭空给予的；必须用功绩与忠诚赢取。\"",
+													"ENG_name": "Ideal:"
+												},
+												{
+													"type": "item",
+													"name": "牵挂：",
+													"entry": "\"佩特拉和我从小相依为命。这一点永远不会改变。\"",
+													"ENG_name": "Bond:"
+												},
+												{
+													"type": "item",
+													"name": "缺陷：",
+													"entry": "\"我对遇到的许多人都心存戒备、多有怀疑，因为这座城市吸引着太多出于自私贪婪之心而来的人。在对方证明并非如此之前，我一律如此看待。\"",
+													"ENG_name": "Flaw:"
+												}
+											]
+										},
+										"角色抵达瞭望塔后，被迎入一层的会议室，朗船长在那里自我介绍道：",
+										{
+											"type": "insetReadaloud",
+											"id": "020",
+											"entries": [
+												"\"多谢各位肯来见我，佣兵们。我们的斥候和士兵在城市街道周边的巡逻排得满满当当，眼下抽不出多余的人手。我们需要几双额外的手，替我们查证一条有意思的线索。这是你们援助我们的事业、赚点正派钱的机会。有兴趣吗？\""
+											]
+										},
+										"他向角色们开价 300 金币，作为成功完成任务的酬金。此外他还指出，\"戴兜帽的灯笼\"的青睐本身就是宝贵的资产\u2014\u2014与他们交好的人日后可以指望灯笼会提供工作、补给与援助。如果角色们愿意接下任务，朗船长便将走私者的地图与笔记呈给玩家角色，继续说道：",
+										{
+											"type": "insetReadaloud",
+											"id": "021",
+											"entries": [
+												"\"最近，我们弄到一张德拉肯海姆下水道系统的旧地图。它由从前在城中活动的走私团伙绘制。走私者的笔记详细记载了三个可以潜入城墙之下进入内城的地点。如果'戴兜帽的灯笼'能控制这些地点，我们的斥候穿行内城就会高效得多、也安全得多......同时还能确保我们的对手谁也别想利用它们。\""
+											]
+										},
+										"安瑟姆交给小队的任务是：经由河边的一根排水管进入城市废墟，调查那三处入口。他们必须清除发现的任何危险，并为\"戴兜帽的灯笼\"打通隧道以供安全通行。安瑟姆在地图上指出一处出口位置\u2014\u2014位于灯笼会兵营以南一个街区外的检修舱口。玩家角色一旦抵达内城并勘察完三处地点，便可以从那里离开下水道，由灯笼会巡逻队接应。",
+										"如果他们同意接下任务，安瑟姆会把{@area 走私者的地图|022|x}和{@area 笔记|023|x}交给玩家角色，外加一把只装一发信号弹的信号枪。他说明地图与笔记并非原件：\"戴兜帽的灯笼\"已以防万一自留了一份副本。尽管如此，他还是希望角色不要与任何人分享这些信息。他们受命在走出下水道时发射信号弹，会有灯笼会巡逻队前来护送他们回去汇报。",
+										"若被问及，朗船长对风险直言不讳。下水道危险重重、污染严重，充斥着怀有敌意的怪物。而且，地图很可能是赝品，或者路线已被水淹、被瓦砾堵塞或已经坍塌。正因如此，\"戴兜帽的灯笼\"才选择雇佣玩家角色，而不是派自己的士兵去执行这项危险且可能徒劳的调查。",
+										"如果角色请求额外的帮助或资源，或想讨价还价要预付款或额外报酬，他们可以采取游说动作并进行难度 {@dc 15} 的魅力（{@skill 说服|XPHB}）检定。检定成功后，安瑟姆会向他们提供价值 100 金币的武器、护甲或冒险装备（取自\"戴兜帽的灯笼\"的军械库），或者两瓶{@item 治疗药水|XDMG|治疗药水}。",
+										"朗船长希望任务尽快完成，要求角色最迟于次日拂晓出发。",
+										{
+											"type": "entries",
+											"name": "手持材料：走私者的地图",
+											"id": "022",
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/016-00-022.handout-map.webp"
+													},
+													"title": "手持材料：走私者的地图",
+													"width": 1700,
+													"height": 1996,
+													"imageType": "map",
+													"id": "07d",
+													"grid": {
+														"type": "none",
+														"size": 261,
+														"distance": 2850
+													}
+												}
+											],
+											"ENG_name": "Handout: Smuggler's Map"
+										},
+										{
+											"type": "entries",
+											"name": "手持材料：走私者的笔记",
+											"id": "023",
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/017-00-023.handout-note.webp"
+													},
+													"width": 1700,
+													"height": 1894
+												},
+												{
+													"type": "insetReadaloud",
+													"id": "024",
+													"entries": [
+														{
+															"type": "entries",
+															"name": "地下暗道",
+															"entries": [
+																"位于圣殿门地下。为围城时供突击队反击而建。从这一侧本不该能打开\u2014\u2014既没有钥匙也没有锁可撬\u2014\u2014但凡是能出去的地方，就能进去。我们可以试试炸开一条路，但想想那会闹出多大动静！据说有人看守。贿赂他们放我们过去？"
+															],
+															"id": "07e",
+															"ENG_name": "Underground Sally Port"
+														},
+														{
+															"type": "entries",
+															"name": "闸门",
+															"entries": [
+																"位于城北、集市门以东。连接内城与外城的排水系统。只在暴雨时为排涝开启。想走这条道最好会游泳。对易碎货品可不是好主意。闸门控制装置在城里，但我们也许可以从城外挖一条隧道进控制室。"
+															],
+															"id": "07f",
+															"ENG_name": "Sluice Gate"
+														},
+														{
+															"type": "entries",
+															"name": "走私者隧道",
+															"entries": [
+																"位于城墙西段，牧羊门以南、圣殿门以北。弟兄们当年（1099 年）挖的这条道，正好从城墙底下穿过！费了大工夫，但值了！直到城市守卫听到风声。不过他们还没封掉它，只是紧紧盯着各个出入口，抓到用隧道的人就逮捕。如今只有不懂行情的跑腿小贼还走这条路。"
+															],
+															"id": "080",
+															"ENG_name": "Smugglers Tunnel"
+														}
+													]
+												}
+											],
+											"ENG_name": "Handout: Smuggler's Notes"
+										}
+									],
+									"ENG_name": "Ansom Lang"
+								}
+							],
+							"ENG_name": "Part 1: Meeting Captain Lang"
+						},
+						{
+							"type": "section",
+							"name": "第二部分：前往德拉肯海姆",
+							"id": "025",
+							"entries": [
+								"当角色决定从{@area 艾伯伍德村|018|x}出发执行任务时，冒险的这一部分便开始了。在他们动身之前，务必询问是否想从商队庭院的商贩那里购买些临时补给，或以防御性法术与仪式壮行。",
+								{
+									"type": "entries",
+									"name": "接近德拉肯海姆",
+									"id": "026",
+									"entries": [
+										"当小队向德拉肯海姆废墟城进发时，朗读以下文字以描绘场景：",
+										{
+											"type": "insetReadaloud",
+											"id": "027",
+											"entries": [
+												"德拉肯海姆坐落在一个松树覆盖的山谷中，是一个有城墙的大都市，横跨宽阔而缓慢的德拉恩河。一座高耸的岩石山丘高出于城市之上，其上矗立着德拉肯城堡。在这座雄伟的堡垒下方，鹅卵石街道围绕着密集的石制建筑和石板尖塔蜿蜒。城市从外墙溢出，延伸到一片废墟般的城市扩张区域。",
+												"圣维特鲁维奥大教堂的巨大穹顶巍然耸立于城堡西南。城市中心是集市广场的宇宙钟楼，西北方则是紫晶学院的谜之塔。那座高耸的黑曜石玻璃建筑从中部拦腰折断，但上半截仍违逆重力悬浮于空。",
+												"四座桥梁像绝望的肢体一样横跨德拉恩河；其中一座覆盖着古老英雄的巨大石雕像，另一座则在搭建在其长度上的破旧房屋和其他建筑物的重压下摇摇欲坠。",
+												"午夜紫罗兰和暮色紫罗兰的巨大云团遮蔽了天空，给这座城市投下了阴郁的阴霾。在云层偶尔散开的罕见时刻，零散的阳光轻蔑地照射在城市上。在德拉肯海姆，十五年来没有出现过一个晴朗的日子。",
+												"你在阴沉多云的一天启程前往德拉肯海姆废墟。临近城市时，一层薄雾悄然降临。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "会见罗丝·卡弗",
+											"id": "028",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "029",
+													"entries": [
+														"你们来到杂蔓区边缘\u2014\u2014城墙之外那片破败的居民区。遗弃的农庄渐次让位于鳞次栉比的居所、摇摇欲坠的建筑与残破的店铺。你们走进废墟，沿着侧街向德兰河行进。"
+													]
+												},
+												"德拉肯海姆城是一片黑暗而危险的地带。建筑仍矗立着，但许多已是摇摇欲坠的废墟，或古老朽坏的废弃住宅、店铺与塔楼。阴霾使这些建筑在废墟中只余剪影，如远方矗立的黑暗巨碑。当小队沿着德兰河穿过残破的街道时，他们注意到几个披斗篷的身影栖在附近屋顶上注视着他们。一名女子现身，从废墟中走向角色。罗丝·卡弗双手高举以示无意加害，主动与角色攀谈。"
+											],
+											"ENG_name": "Meeting Rose Carver"
+										},
+										{
+											"type": "entries",
+											"name": "罗丝·卡弗",
+											"id": "02a",
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/018-00-012.rose-carver.webp"
+													},
+													"title": "罗丝·卡弗",
+													"width": 850,
+													"height": 1030
+												},
+												{
+													"type": "insetReadaloud",
+													"id": "02b",
+													"entries": [
+														"一位红发锐目、容貌夺目的人类女子从瓦砾中走出，四名武装随从分列两侧。她身穿镶嵌皮甲，红色披风垂挂在单片皮护肩上。她系着插满匕首的腰带，脚踩带钉钢头靴。她的皮护肩上绘有一朵巨刺玫瑰的纹章，玫瑰的红沿着花茎滴落、顺着尖刺流淌，宛如一缕鲜血。"
+													]
+												},
+												"罗丝·卡弗是一名人类{@creature 匪首|XMM}。她身边跟着四名人类{@creature 盗匪|XMM|盗匪}。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "特点：",
+															"entry": "罗丝永远自信满满。她语调冷静而有威严，在这座诡异的废墟之城中显得出奇地从容。哪怕实际并非如此，她也总给人胜券在握的感觉。",
+															"ENG_name": "Personality Trait:"
+														},
+														{
+															"type": "item",
+															"name": "理想：",
+															"entry": "\"只要屋里所有人都以为你比他们懂得多、以为你是最危险的人，那这事是不是真的就无所谓了。\"",
+															"ENG_name": "Ideal:"
+														},
+														{
+															"type": "item",
+															"name": "牵挂：",
+															"entry": "\"我忠于盗贼女王，我知道假以时日，她无法忽视我的价值，会让我坐上她左右手的位置。\"",
+															"ENG_name": "Bond:"
+														},
+														{
+															"type": "item",
+															"name": "缺陷：",
+															"entry": "\"女王会保护我，有她做后盾，我立于不败之地。\"",
+															"ENG_name": "Flaw:"
+														}
+													]
+												},
+												"罗丝向玩家角色开口：",
+												{
+													"type": "insetReadaloud",
+													"id": "02c",
+													"entries": [
+														"\"你们好啊，我叫罗丝。长话短说：你们身上带着件不属于你们的东西。别装傻，艾伯伍德到处都有我们的眼线。不过嘛，只要你们帮我们办件小事，这事就算揭过去了。我们会让你们得不亏......不然的话，我们也能给你们制造一大堆麻烦。\""
+													]
+												},
+												"如果玩家角色愿意听她说下去，她继续道：",
+												{
+													"type": "insetReadaloud",
+													"id": "02d",
+													"entries": [
+														"\"我的雇主也想知道那张旧地图是真是假。更要紧的是，我们不想让那群讨厌的'戴兜帽的灯笼'再打听到它的任何消息，我们要让他们别再来烦我们。所以，你们只要照原计划继续任务......等一进内城就折返，到外城与我们碰头，然后回艾伯伍德告诉灯笼会你们一无所获。他们绝不会起疑，这样灯笼会付你们的钱照拿，我们还会额外再给你们一笔封口费。\""
+													]
+												},
+												"罗丝想打开一条通道，把{@area 幻惑石|00d|x}从内城走私出去，又不让\"戴兜帽的灯笼\"盯上她的买卖。她觉得一条就从灯笼会眼皮底下穿过的隧道，恰恰是实现这一点的诗意手法。她还没蠢到把自己的人派进德拉肯海姆的下水道，但她拿的酬劳足以雇几个佣兵替她干这脏活。",
+												"罗丝向角色额外开价 200 金币，要他们履行约定，并强调只要角色够聪明，灯笼会的赏照领不误\u2014\u2014只需在那件事上撒个谎。",
+												"如果角色问罗丝，凭什么他们不能反过来骗她，她答道：\"谎言这东西有意思的地方就在于？它们总会找上你。糊弄'戴兜帽的灯笼'易如反掌，但想骗'女王的人'，那就是个坏主意了。\"",
+												"她指出外城{@area 湿石大道|067|x}上的一处检修舱口，玩家完成任务后可以从那里离开下水道，并说明她会在日落时分于湿石广场的井边等他们。",
+												"若被问及盗贼女王，她坦然相告她们在城中不断扩张的生意，甚至邀请角色改日来扣带巷，参与斗技场的下注。她表示，如果角色与她合作，她可以在上面替他们说几句好话，说不定还能弄到女王私人竞技场的门票，或者让他们入伙她的帮派。但她想先看看他们的成色，看看他们是不是\"玫瑰与荆棘\"的料。",
+												{
+													"type": "list",
+													"items": [
+														"如果小队对\"女王的人\"动武，他们会逃入废墟重整旗鼓，并可能在日后伏击小队。",
+														"罗丝·卡弗身上带有一瓶{@item 隐形药水|XDMG}，若遭攻击便会使用，随即尽快脱身。"
+													]
+												}
+											],
+											"ENG_name": "Rose Carver"
+										}
+									],
+									"ENG_name": "Approaching Drakkenheim"
+								}
+							],
+							"ENG_name": "Part 2: Journey to Drakkenheim"
+						},
+						{
+							"type": "section",
+							"name": "第三部分：进入下水道",
+							"id": "02e",
+							"entries": [
+								"{@area 走私者的地图|022|x}显示，三处地点都可以从同一个主要下水道入口抵达：德兰河上的一处排污口。",
+								{
+									"type": "entries",
+									"name": "区域地点",
+									"id": "02f",
+									"entries": [
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/019-map-00.03-drann-river-drainage-pipe.webp"
+													},
+													"imageType": "map",
+													"title": "地图 3：德兰河排水管道",
+													"width": 4096,
+													"height": 2816,
+													"id": "081",
+													"grid": {
+														"type": "square",
+														"size": 128
+													}
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/020-map-00.03-drann-river-drainage-pipe-player.webp"
+													},
+													"imageType": "mapPlayer",
+													"title": "玩家版本",
+													"width": 4096,
+													"height": 2816,
+													"mapParent": {
+														"id": "081"
+													},
+													"grid": {
+														"type": "square",
+														"size": 128
+													}
+												}
+											]
+										},
+										"当角色接近此地时，朗读：",
+										{
+											"type": "insetReadaloud",
+											"id": "030",
+											"entries": [
+												"你们终于来到城市与德兰河交汇的滨水地带。河面近四百尺宽，河水向南流淌。前方远处，可以看见城墙与河流交会处修建的巍峨堡楼。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "1a. 德兰河码头",
+											"id": "031",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "032",
+													"entries": [
+														"沿河岸建有一道石砌码头，点缀着摇摇欲坠的木栈桥。旧船随着腐朽的缆绳系泊，起伏吱呀。石阶与锈蚀的铁梯四处可供下到水边。你们可以看见栈桥沿线有一处开口，似乎通往地下。"
+													]
+												},
+												"地图从水线的角度描绘了地下下水道。城市街道高于水面约二十尺。角色可以走台阶或梯子下到高出水线数尺的码头步道。"
+											],
+											"ENG_name": "1a. Drann River Quay"
+										},
+										{
+											"type": "entries",
+											"name": "1b. 下水道入口",
+											"id": "033",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "034",
+													"entries": [
+														"这里，石砌栈桥裂开一道豁然洞口，通往地下。一根巨大的圆管向外突出，涓涓细流夹裹着漂浮的垃圾污物从中汇入河中。陈年秽物、死鱼与死水的气味弥漫空气。曾经封锁管道入口的铁栏大多已被砸断，只剩下锈迹斑斑的锯齿状残桩。"
+													]
+												},
+												"污水从一根约五尺宽的排水管内的巨大格栅中向外流出。竖直的铁栅栏曾封锁入口，但它们已被砸碎锈蚀，管道向外城下水道系统敞开。排水口仍不断向德兰河涓涓排水。管道两侧的台沿位置并不便于爬入。进入管道需要攀爬或巧妙的解法。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "检视入口",
+															"entry": "以 {@dc 10} 的智力（{@skill 调查|XPHB}）检定可以判定，走私者多半是把货物从下水道格栅卸到管道下方的小船上，再顺流运出城外。",
+															"ENG_name": "Examining the Entrance"
+														},
+														{
+															"type": "item",
+															"name": "爬下",
+															"entry": "角色可以尝试从德兰河边攀下排水管，需通过 {@dc 12} 的力量（{@skill 运动|XPHB}）检定。若检定失败，他们会跌入排水管下方的德兰河中。",
+															"ENG_name": "Climbing Down"
+														}
+													]
+												}
+											],
+											"ENG_name": "1b. Sewer Entrance"
+										},
+										{
+											"type": "entries",
+											"name": "1c. 下水道通道",
+											"id": "035",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "036",
+													"entries": [
+														"下水道通道里的浊气灌满你的鼻腔，散发着淤泥、死水、秽物与腐朽的气味。你需要片刻才能适应这沉重的空气、喘匀呼吸。德拉肯海姆古老的下水道系统在黑暗中铺展于你们面前。滴水声、管道渗漏声、偶尔的泼溅、汩汩与冒泡声充满通道。远处传来的金属声、窸窣爬行声与偶发的兽性尖啸，让黑暗更显不祥。湿漉漉的走廊溜滑难行，一股污水沿中央水道流淌，两侧是古老的石砌步道，头顶为拱形窟顶。各条岔道与大管道从被锈蚀铁栏封堵的源头将水排入中央水道。没有光源的话，你连眼前几尺之外都看不清，而且离入口越远，似乎就越黑。"
+													]
+												},
+												"下水道通道阴冷黑暗。水道两侧的步道湿滑，空气中弥漫着苔藓、淤泥、藻类与陈年死水的气味。滴水的管道与源源的水流轻微地压过其他声响。这一带几乎不见污物堆积与残骸。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "湿滑路面",
+															"entry": "在此段下水道中采取{@action 疾走|XPHB}动作的角色必须通过 {@dc 10} 的敏捷豁免，否则会在湿滑的步道上滑倒，陷入{@condition 倒地|XPHB}状态。若豁免结果差 5 点或更多，他们会跌入满是污水的中央水道。",
+															"ENG_name": "Unsafe Footing"
+														}
+													]
+												}
+											],
+											"ENG_name": "1c. Sewer Passage"
+										},
+										{
+											"type": "entries",
+											"name": "1d. 壁龛",
+											"id": "037",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "038",
+													"entries": [
+														"一条小型支线水道与主线相连，尽头是一根汩汩冒水的管道。这一带异常干净，不见污物与淤泥，似乎比通道其他地段冷清得多。隧道尽头有什么东西微微闪光，映着入口处最后一线黯淡天光。"
+													]
+												},
+												"这里有一条小型污水支道，通向一个死路。一只{@creature 凝胶立方|XMM}把这处壁龛当作休憩之所，只有当迷路的鼠辈或鱼人不慎闯入它的下水道时才会出来。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "隐藏的威胁",
+															"entry": "凝胶立方静静潜伏着，不主动寻找就难以察觉。除非具有黑暗视觉或携带光源，生物为发现凝胶立方而进行的检定具有劣势。",
+															"ENG_name": "Hidden Threat"
+														}
+													]
+												},
+												"以 {@dc 14} 的感知（{@skill 察觉|XPHB}）或智力（{@skill 调查|XPHB}）检定可以发现，这处壁龛及紧邻的下水道通道干净得反常。步道上本应堆积的尘土、苔藓与藻类都不见了\u2014\u2014有什么东西最近把整条通道清理了一遍。",
+												{
+													"type": "list",
+													"items": [
+														"{@b 宝藏}。凝胶立方体内有一根正在缓慢消融的金属短杖，能捕捉任何光线，还有一具戴着护目镜、穿棕色风衣的半溶骨骸。乍看之下，那具骨骸仿佛倚靠在走廊尽端，手中紧握着那根短杖。此杖为一根{@item 魔法探测魔杖|XDMG}。"
+													],
+													"style": "list-hang-notitle"
+												}
+											],
+											"ENG_name": "1d. Alcove"
+										},
+										{
+											"type": "entries",
+											"name": "下水道通用特征",
+											"id": "039",
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/021-map-00.04-sewer-cross-section.webp"
+													},
+													"imageType": "map",
+													"title": "地图 4: 下水道横截面",
+													"width": 4096,
+													"height": 2844,
+													"id": "082",
+													"grid": {
+														"type": "none",
+														"size": 229,
+														"distance": 2.5
+													}
+												},
+												"除非另有说明，下水道具有以下特征：",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "照明",
+															"entry": "下水道通道完全黑暗。角色在这些通道中行进时必须自备光源。",
+															"ENG_name": "Illumination"
+														}
+													]
+												},
+												"通道。下水道隧道修建于城市街道下方约 5 到 10 尺处，大多数主隧道宽二十尺。它们以砂浆砌石砖建成，大致呈圆筒形，拱顶高 15 尺，墙体略呈弧形。下方的下水道剖面图展示了一条典型下水道的结构。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "步道与水道",
+															"entry": "一条 10 尺宽的水渠两侧各有一条 5 尺宽的石砌步道。水渠深 5 尺，但弧形渠底使中心处深达 10 尺。下水道依靠重力自然输水，因此通道略带坡度。视周边隧道状况而定，水渠可能部分充水或满溢外泄。大多数时候，水渠半满，水深约 5 尺。由于上游堵塞，另一些地段可能只有一股泥浆细流淌过。",
+															"ENG_name": "Walkways and Canals"
+														},
+														{
+															"type": "item",
+															"name": "饮水",
+															"entry": "下水道中的水全部受到污染。回合结束时浸在水中的角色必须进行 {@dc 10} 的体质豁免。豁免失败者受到 5（{@dice 2d4}）暗蚀伤害。完全没入水中的角色在此豁免中具有{@variantrule 劣势|XPHB}。",
+															"ENG_name": "Water"
+														},
+														{
+															"type": "item",
+															"name": "气味",
+															"entry": "德拉肯海姆已有十五年不是一座活着的城市；下水道里大多已排空了人们印象中活态大都市应有的污物与恶臭。取而代之的是更近乎自然的腐朽、陈土与死水的气息。灌满水道的淤泥主要是泥浆与黏液，而非人类制造的腌臜之物。",
+															"ENG_name": "Smells"
+														},
+														{
+															"type": "item",
+															"name": "桥",
+															"entry": "临时的木桥与木平台横跨水道、连接两侧步道。它们大多由泡得发胀的木板搭成，早已风光不再。在一座桥上结束移动的生物必须掷一颗 {@dice d6}。掷出 1 或 2 时，桥梁在其重量下坍塌，该生物跌入水中。该生物可以用其反应进行 {@dc 10} 的敏捷豁免。豁免成功，它可以跃出 10 尺落至最近的步道，陷入{@condition 倒地|XPHB}状态。",
+															"ENG_name": "Bridges"
+														},
+														{
+															"type": "item",
+															"name": "排水竖槽",
+															"entry": "下水道穹顶上遍布无数细小孔道，雨水与废水从上方街道的檐口排水槽渗流而下。它们大多只有六寸到一尺宽，连接下水道隧道与地表街道。只有微型或更小的生物才能挤过这些竖槽。多数情况下，地表出口被封死的格栅或舱口封堵（见下文）。",
+															"ENG_name": "Drain Chutes"
+														},
+														{
+															"type": "item",
+															"name": "管道",
+															"entry": "较细的连接管道把集水道的水排入主水道。大多数管道宽三到五尺。这些管道中塞满污物、淤泥与积水，通常与地表建筑的管道系统相连。",
+															"ENG_name": "Pipes"
+														},
+														{
+															"type": "item",
+															"name": "格栅",
+															"entry": "格栅盖已被砸开，角色可以自由进入下水道。格栅的 AC 为 18，生命值 15。可以用 {@dc 15} 的力量检定将其撬开。",
+															"ENG_name": "Grates"
+														},
+														{
+															"type": "item",
+															"name": "废水与雨水渠",
+															"entry": "这些隧道用于输送城市的脏水、废水与污物，并将其排入德兰河下游。这些隧道中的水流向德兰河。下水道通道沿途遍布较细的隧道与排水管，把上方建筑与街道的雨水或废水引入其中。",
+															"ENG_name": "Wastewater and Storm Drains"
+														},
+														{
+															"type": "item",
+															"name": "引水道",
+															"entry": "这些通道用于把干净淡水从德兰河引入城中，供饮用、洗浴或其他用途。这类通道中可能没有排水口，而是设有把水压向地表建筑的管道或螺旋泵。这些隧道中的水流背离德兰河，取水管位于城市上游。",
+															"ENG_name": "Aquifer"
+														}
+													]
+												}
+											],
+											"ENG_name": "Sewer General Features"
+										}
+									],
+									"ENG_name": "Area Locations"
+								}
+							],
+							"ENG_name": "Part 3: Entering the Sewers"
+						},
+						{
+							"type": "section",
+							"name": "第四部分：探索地下通道",
+							"id": "03a",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/022-00-013.sewer-threat.webp"
+									},
+									"title": "下水道中的可怖威胁",
+									"width": 1700,
+									"height": 1120
+								},
+								"有关德拉肯海姆下水道系统的共同特征，请参阅\"第三部分：进入下水道\"中的\"{@area 下水道通用特征|039|x}\"。",
+								{
+									"type": "entries",
+									"name": "导航下水道",
+									"id": "03b",
+									"entries": [
+										"只要手握{@area 走私者的地图|022|x}，玩家角色就能轻松穿行下水道通道而不致迷路。由于部分通道被瓦砾堵塞或遭水淹，在各地点之间移动通常需要约一小时。",
+										{
+											"type": "entries",
+											"name": "下水道随机遭遇",
+											"id": "03c",
+											"entries": [
+												"如果你想给冒险增添几分挑战、充分展现德拉肯海姆下水道的凶险，可以选择在角色每次从下水道一处地点前往另一处时检定随机遭遇。检定方式为让每名玩家角色掷 {@dice 1d20}。若有任意玩家掷出天然 1，即发生随机遭遇。",
+												"若触发随机遭遇，从以下选项中选择一项，或掷 {@dice d4} 决定。",
+												{
+													"type": "table",
+													"caption": "下水道随机遭遇",
+													"colLabels": [
+														"d4",
+														"遭遇"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-10"
+													],
+													"rows": [
+														[
+															"1",
+															"三只饥肠辘辘、形销骨立的{@creature 食尸鬼|XMM|食尸鬼}跌跌撞撞地走过前方通道。它们急于觅食，会攻击引起其注意的角色。其中一只食尸鬼穿着德拉肯海姆市政养护制服，口袋里皱着一张湿透的旧纸条，上面写着\"闸门：C 上 I 上 B 下\"。"
+														],
+														[
+															"2",
+															"一支由四名深壕秽民组成的狩猎巡逻队（使用{@creature 鲨华武者|XMM|鲨华武者}的游戏数据）正潜伏在下水道中。如果他们听见角色靠近，会试图藏进水中，在小队经过时发动伏击。若角色对其无敌意，也可以劝他们罢手。深壕秽民还可以护送角色前往{@area 区域 3：走私者隧道|049|x}。"
+														],
+														[
+															"3",
+															"一只{@creature 灰色软泥怪|XMM}盘踞在下水道隧道交汇口中央的垃圾堆里。它会攻击任何试图通行的生物。"
+														],
+														[
+															"4",
+															"一对{@creature 呓语之囿|XMM|呓语之囿}在前方下水道通道里蠕动爬行，咕哝呻吟着语无伦次的胡话。"
+														]
+													]
+												}
+											],
+											"ENG_name": "Sewer Random Encounters"
+										}
+									],
+									"ENG_name": "Navigating the Sewers"
+								},
+								{
+									"type": "entries",
+									"name": "区域 2：闸门",
+									"id": "03d",
+									"entries": [
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/023-map-00.05-sluice-gate.webp"
+													},
+													"imageType": "map",
+													"title": "地图 5: 水闸门",
+													"width": 4096,
+													"height": 2816,
+													"id": "083",
+													"grid": {
+														"type": "square",
+														"size": 128
+													}
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/024-map-00.05-sluice-gate-player.webp"
+													},
+													"imageType": "mapPlayer",
+													"title": "玩家版本",
+													"width": 4096,
+													"height": 2816,
+													"mapParent": {
+														"id": "083"
+													},
+													"grid": {
+														"type": "square",
+														"size": 128
+													}
+												}
+											]
+										},
+										"此处是连接外城与内城下水道系统的少数管道之一。闸门作为应付暴雨积水的紧急泄洪道而建，原本始终紧闭，只能从城内一间维护室中打开。不过，{@area 走私者的地图笔记|023|x}提到有一面墙可以破开，轻易进入那间维护室。",
+										{
+											"type": "entries",
+											"name": "闸门概况",
+											"id": "03e",
+											"entries": [
+												"角色抵达时会发现，一只{@creature 废墟伏击怪|XMM}已经把墙撞破了（{@area 区域 2a|03f|x}）。不幸的是，从维护室（{@area 区域 2b|041|x}）通往地面的通道已经坍塌。唯一的出路是想办法打开闸门（{@area 区域 2e|048|x}）。",
+												"下水道维护室（{@area 区域 2d|045|x}里有一个由最初养护队成员的断头所讲述的谜语。如果角色解开谜语，断头会揭示他们拉动三根控制杆以排水并开启内城闸门的正确顺序。"
+											],
+											"ENG_name": "Sluice Gate Overview"
+										},
+										{
+											"type": "entries",
+											"name": "2a. 闸门走廊",
+											"id": "03f",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "040",
+													"entries": [
+														"这里的中央水道已经干涸，只余几处周期性的水洼。水道的底部与两侧长满苔藓与藻类。前方，一道老旧的铁闸阻碍着水流，如今又因多年闲置与堆积抵闸的瓦砾而愈发壅塞。侧旁有一段下水道墙体破开，碎石与泥土散落四周。透过墙上的破洞，你能听到拖沓的挪动声，以及低沉的咔嗒与嘶嘶声。"
+													]
+												},
+												"此处的积水远少于下水道多数地段，步道因而干燥许多。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "建造",
+															"entry": "闸门由实心铁制成，底部有一道曾经过水的小缝，如今已被瓦砾堵死，水流细若游丝。这道厚重的铁闸 AC 为 21，生命值 100。",
+															"ENG_name": "Construction"
+														},
+														{
+															"type": "item",
+															"name": "弄出声响",
+															"entry": "如果角色发出任何巨大的声响，比如喊叫、施法或攻击闸门，{@area 区域 2c|043|x}的废墟伏击怪就会听见并向他们发起攻击。",
+															"ENG_name": "Making Noise"
+														}
+													]
+												}
+											],
+											"ENG_name": "2a. Sluice Gate Corridor"
+										},
+										{
+											"type": "entries",
+											"name": "2b. 维护更衣室",
+											"id": "041",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "042",
+													"entries": [
+														"这个房间里有几张旧长凳和几个工人用来存放装备与私人物品的储物柜。东侧那道曾经通往城墙的楼梯如今已经塌陷，完全无法通行。从下水道通到此室的墙洞又大又新，像是刚挖开不久。碎屑散落一地，附近一张长凳被拦腰砸断。最近有什么东西从这里经过。"
+													]
+												},
+												"这个房间的远墙边立着数个储物柜和一对长凳。这里能找到的只有几片破旧的工人衣衫残片、锈蚀的普通工具和几堆碎屑。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "旧装备",
+															"entry": "储物柜里有旧工具，包括一套可用的{@item 石匠工具|XPHB}、一盏旧{@item 带罩提灯|XPHB}并附一{@item 灯油（瓶）|PHB|瓶灯油}，所有柜子里的铜币加起来共 10 枚。",
+															"ENG_name": "Old Equipment"
+														},
+														{
+															"type": "item",
+															"name": "弄出声响",
+															"entry": "{@area 区域 2c|043|x}的废墟伏击怪能听见此室中任何高于耳语的声音，并会前来攻击任何被它察觉的人。",
+															"ENG_name": "Making Noise"
+														},
+														{
+															"type": "item",
+															"name": "宝藏",
+															"entry": "私人物品中藏着一件质地极为精美的红色{@item 江湖郎中之斗篷|XDMG}。",
+															"ENG_name": "Treasure"
+														}
+													]
+												}
+											],
+											"ENG_name": "2b. Maintenance Locker Room"
+										},
+										{
+											"type": "entries",
+											"name": "2c. 闸门控制室",
+											"id": "043",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "044",
+													"entries": [
+														"房间的墙上装着数块金属面板，一组滑轮、链条与齿轮显然在操纵下水道内的机械闸门与水道。三根巨大的控制杆从远墙探出，与室内的许多机械装置相连。",
+														"房间中央，一团臃肿鼓胀的怪物正弓身伏在一具长着类似人类手脚的巨大死鱼上。几只朦胧而不眨的眼睛排列在一根藤蔓状的肉柄上，肉柄从它浮肿的躯顶升起。一对橡胶般的触手正翻检尸体，用带刺的尖端刮擦着腐肉。三条象鼻般的腿勉强把它那令人作呕的庞然躯体撑离地面。它把注意力从那条鱼人身上转向你们，发出一串刺耳的喉音咕噜。"
+													]
+												},
+												"此室是外侧闸门及下水道他处水道的机械操作室。大部分机械仍可运转，但相当老旧锈蚀，一些不常使用的机器已经失修。三根控制杆是此室的关键，必须按正确顺序扳动才能打开闸门。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "旧笔记",
+															"entry": "远处角落书桌上的一本手册早已陈旧泡水。一翻开，内页便化作湿烂的纸浆散落。扉页内侧潦草地写着一句简单的话：\"只要记住那首老歌谣。\"",
+															"ENG_name": "Old Note"
+														},
+														{
+															"type": "item",
+															"name": "惊扰废墟伏击怪",
+															"entry": "{@creature 废墟伏击怪|XMM}会攻击任何进入此室的人，除非给它一具更新鲜的尸体啃食。它尤其爱吃鱼人，如果角色肯奉上一具，它会欣然无视他们。",
+															"ENG_name": "Disturbing the Otyugh"
+														},
+														{
+															"type": "item",
+															"name": "杠杆",
+															"entry": "任何仔细检视控制杆的角色都能看出，每根杆由不同的金属制成：第一根是铁，第二根是黄铜，第三根是铜。铁杆处于下拉位置，而铜杆与黄铜杆都停在中间位。",
+															"ENG_name": "Levers"
+														}
+													]
+												}
+											],
+											"ENG_name": "2c. Sluice Gate Control Room"
+										},
+										{
+											"type": "entries",
+											"name": "2d. 下水道维护室",
+											"id": "045",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "046",
+													"entries": [
+														"这间旧维护室四壁布满锈蚀的管道与破损的阀门。架子上摆满工具与普通物件\u2014\u2014仿佛用来疏通管道的旧扫帚柄、水桶、梯子等简单器材\u2014\u2014都还在原位。房间中央，一根扫帚柄插在地上，上面插着一颗矮人的断头。断头的双眼纯白，戴着一顶简单的头盔，上面烙印着德拉肯海姆的徽记，其下是一对交叉的铁锤，一望即知是市政养护工人的标志。你能听到微弱沙哑的喃喃声，似乎正是来自那颗断头。"
+													]
+												},
+												"这颗断头如今已成亡灵，由于德拉肯海姆的阴霾，它并未腐烂。它不停地反复念叨着自己仅存的记忆\u2014\u2014一首它似乎烂熟于心的老歌谣：\"举起你的铜杆，再埋下你的黄铜，铁杆千万别留到最后扳。\"",
+												{
+													"type": "insetReadaloud",
+													"id": "047",
+													"entries": [
+														"这首歌谣是开启闸门的操作口诀：铜杆须扳向上，黄铜杆扳向下，铁杆则必须从底位一路扳到顶。"
+													]
+												},
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "正确使用控制杆",
+															"entry": "如果在扳动铜杆与黄铜杆之间扳动铁杆，且三杆都到位，闸门便会伴随雷鸣般的水声轰然开启，水流沿中央水道奔涌而下，通道随之敞开通行。",
+															"ENG_name": "Correctly Using the Levers"
+														},
+														{
+															"type": "item",
+															"name": "错误操作：",
+															"entry": "先扳铁杆。若先扳铁杆，或未将其完全推至上位，闸门会发出可怕的摩擦噪声却不会开启，远处能听到流水之声，但近处一切如故。",
+															"ENG_name": "Incorrect Use:"
+														},
+														{
+															"type": "item",
+															"name": "错误操作：",
+															"entry": "最后扳铁杆。若最后才扳铁杆，墙壁震颤，闸门在摩擦中断裂崩坏，机械装置随之开裂。必须修复开启装置才能重新运作。此外，室内一根管道会爆裂，以惊人的速度向{@area 维护室|041|x}倾泻污水。",
+															"ENG_name": "Incorrect Use:"
+														},
+														{
+															"type": "item",
+															"name": "污染水源",
+															"entry": "任何在污水中开始回合、或因管道爆裂而身处喷溅污水之室内的角色，必须通过 DC 10 的体质豁免，否则获得一级污染（见{@area 附录 B|071|x}）。",
+															"ENG_name": "Contaminated Water"
+														},
+														{
+															"type": "item",
+															"name": "维修",
+															"entry": "精通{@item 修补匠工具|XPHB}或{@item 石匠工具|XPHB}的角色可以用{@action 利用|XPHB}动作修复爆裂的管道或损坏的控制装置，无需检定即告成功。也可以用{@spell 修复术|XPHB}法术进行修理。我们建议允许其他有创意的修复方案。",
+															"ENG_name": "Repairs"
+														}
+													]
+												}
+											],
+											"ENG_name": "2d. Sewer Maintenance Room"
+										},
+										{
+											"type": "entries",
+											"name": "2e. 淹水走廊",
+											"id": "048",
+											"entries": [
+												"此厅通往内城下水道。其状况视{@area 闸门|03d|x}是否已开启而定。",
+												"如果角色已打开闸门，隧道中的水已经排空。",
+												"如果角色没有打开闸门，而是用魔法或其他方式抵达此处，通道从顶到底完全被水淹没。"
+											],
+											"ENG_name": "2e. Flooded Corridor"
+										}
+									],
+									"ENG_name": "Area 2: Sluice Gate"
+								},
+								{
+									"type": "entries",
+									"name": "区域 3：走私者隧道",
+									"id": "049",
+									"entries": [
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/025-map-00.06-smugglers-tunnel.webp"
+													},
+													"imageType": "map",
+													"title": "地图 6：走私者隧道",
+													"width": 3012,
+													"height": 4096,
+													"id": "084",
+													"grid": {
+														"type": "square",
+														"size": 241,
+														"offsetX": 120,
+														"offsetY": -85,
+														"scale": 2
+													}
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/026-map-00.06-smugglers-tunnel-player.webp"
+													},
+													"imageType": "mapPlayer",
+													"title": "玩家版本",
+													"width": 3012,
+													"height": 4096,
+													"mapParent": {
+														"id": "084"
+													},
+													"grid": {
+														"type": "square",
+														"size": 241,
+														"offsetX": 120,
+														"offsetY": -85,
+														"scale": 2
+													}
+												}
+											]
+										},
+										"此处是一条挖在城墙之下的古老走私隧道，如今已成一伙变异前人类的营地\u2014\u2014他们被称为深壕秽民（使用{@creature 鲨华武者|XMM|鲨华武者}或{@creature 水巨魔|XMM}的游戏数据）。因接触污水而异变为怪物的深壕秽民，大多已成为栖居德拉肯海姆下水道更深处的一位邪异实体\u2014\u2014\"公爵夫人\"的仆从。公爵夫人的力量与影响正在缓慢增长，她希望建立一支属于自己的污染仆从大军。",
+										{
+											"type": "entries",
+											"name": "走私者隧道概况",
+											"id": "04a",
+											"entries": [
+												"深壕秽民起初对角色漠不关心，但拒绝让他们径直穿过自己的地盘。他们的首领布利普·布洛普（见{@area 区域 3e|055|x}）提出：只要角色参与他们的仪式就放行\u2014\u2014但这是个圈套：仪式以饮用一种污染药剂收尾，会把角色变成深壕秽民！",
+												"这一区域既可作为社交遭遇，也可作为以战斗为主的遭遇，因为角色可以选择与深壕秽民讨价还价、与之开战，或另寻他法欺瞒、潜行绕过这些怪物。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/027-00-014.blip-bloop.webp"
+													},
+													"title": "布利普·布洛普",
+													"width": 850,
+													"height": 871
+												}
+											],
+											"ENG_name": "Smuggler's Tunnel Overview"
+										},
+										{
+											"type": "entries",
+											"name": "与深壕秽民的遭遇",
+											"id": "04b",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "战斗",
+															"entry": "想一路杀过去的角色若谨慎接近会有回报（三伙秽民各自都是低难度遭遇）。但深壕秽民会相互配合、呼朋引类，可能让角色不得不一次面对全部秽民（所有秽民合计构成高难度遭遇）。",
+															"ENG_name": "Combat"
+														},
+														{
+															"type": "item",
+															"name": "社交",
+															"entry": "角色可以尝试与深壕秽民进行社交。秽民对外来者并非立刻敌对。他们谨慎行事，不会在盘问来意、自行判断对方是否值得一谈之前放人进入营地（{@area 区域 3e|055|x}）。这往往涉及衡量来者对公爵夫人的兴趣，以及是否愿意加入他们对这位伟大道实的崇奉。只要玩家角色流露出一丝兴趣，深壕秽民就会把他们护送到首领布利普·布洛普所在的区域 3e。",
+															"ENG_name": "Social"
+														}
+													]
+												}
+											],
+											"ENG_name": "Encounters with the Deep Dregs"
+										},
+										{
+											"type": "entries",
+											"name": "布利普·布洛普",
+											"id": "04c",
+											"entries": [
+												"布利普·布洛普是一名深壕秽民（使用{@creature 水巨魔|XMM}的游戏数据），是居于走私者隧道中这伙人的头目。他是一只蓝白相间的深壕秽民，背上散布着深蓝色斑点。他双眼暴突泛蓝，咧着大大的笑容。他手拄一根覆满苔藓与盐渍的浮木粗制法杖，身穿湿透的破旧衣衫，黏着藻类与泥浆。他身上散发着浓重的死水与海盐气味。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "特点",
+															"entry": "\"我对外来者友好热情，最爱向他们讲述我们伟大的公爵夫人。每个人都应当有机会瞻仰她的荣光。\"",
+															"ENG_name": "Personality Trait"
+														},
+														{
+															"type": "item",
+															"name": "理念",
+															"entry": "\"只要你饮下德拉肯海姆之水，一切都会豁然清明。下水道里的生活幸福美满，人人都该享受。\"",
+															"ENG_name": "Ideal"
+														},
+														{
+															"type": "item",
+															"name": "牵挂",
+															"entry": "\"公爵夫人是我们的君主，我们无条件地侍奉她。她通晓德拉肯海姆的真正道路，并赐予了我们许多恩惠。\"",
+															"ENG_name": "Bond"
+														},
+														{
+															"type": "item",
+															"name": "缺陷",
+															"entry": "\"我惧怕上面的世界，也惧怕那些质疑公爵夫人动机的人。谁敢质疑公爵夫人的动机，我就会迅速对其发怒、动粗。\"",
+															"ENG_name": "Flaw"
+														}
+													]
+												}
+											],
+											"ENG_name": "Blip Bloop"
+										},
+										{
+											"type": "entries",
+											"name": "3a. 外城下水道交汇处",
+											"id": "04d",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "04e",
+													"entries": [
+														"沿黑暗下水道中湿滑的通道前行，一段焦裂的墙体豁开成一条泥泞隧道，再往前数尺，下水道抵达一处交叉口。一个佝偻的身影从交口拐角探出头来，两只暴突的眼睛在黑暗中闪光。那生物身着湿透的破衣，用含混咕噜的嗓音喊道：\"你们来下水道有何贵干？是来寻求我们尊贵的公爵夫人指引的吗？\"他好奇地上下打量你们，等待回应。奇怪的是，这生物看似并未携带武器。"
+													]
+												},
+												"格鲁普是看守走私者隧道入口的深壕秽民卫兵\u2014\u2014那里如今已改建成深壕秽民营地。他对关注公爵夫人的人来者不拒，但对外来者心存戒备。玩家角色需要让格鲁普相信他们来意正当，否则潜伏在附近水中的哨兵随时准备保卫营地。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/028-00-015.deep-dreg.webp"
+													},
+													"title": "深地渣滓",
+													"width": 850,
+													"height": 1112
+												},
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "与格鲁普周旋",
+															"entry": "格鲁普（使用{@creature 鲨华武者|XMM|鲨华武者}的游戏数据）是独自站在隧道入口旁执勤的卫兵。他其貌不扬，却是块难啃的硬骨头，而且他知道浑浊的下水道污水里还埋伏着自己的同伙，一旦有失他们随时会现身保卫。格鲁普会与角色交谈，但不会轻易放他们进入隧道，除非角色在累计三次失败之前，通过至少三次难度 {@dc 13} 的魅力检定（{@skill 说服|XPHB}、{@skill 欺瞒|XPHB}或{@skill 威吓|XPHB}）。",
+															"ENG_name": "Interacting with Gloop"
+														}
+													]
+												},
+												"格鲁普有如下动机。",
+												{
+													"type": "list",
+													"items": [
+														"他热切欢迎任何愿意致敬、献礼或加入崇奉公爵夫人的人。",
+														"他不得放任何人进入营地，除非对方同意与祭司布利普·布洛普交谈，并通过参加一场特殊仪式\"净化\"他们的\"诅咒\"、以示对公爵夫人的虔敬。",
+														"他会拒绝任何婉拒邀请或拒不参加仪式者入内，也绝不容忍对公爵夫人的任何不敬。",
+														"一旦开战，格鲁普会吹哨唤来卫兵，并跑进隧道向其他人报信。"
+													]
+												},
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "暗藏的卫兵",
+															"entry": "深壕秽民（使用{@creature 鲨华武者|XMM|鲨华武者}的游戏数据）在附近水面之下警戒。他们保持隐蔽，观察接近并同格鲁普交谈的生物；一旦局面转为敌对，他们会等对方进入隧道，再从背后发起攻击。",
+															"ENG_name": "Hidden Guards"
+														}
+													]
+												}
+											],
+											"ENG_name": "3a. Outer City Sewer Junction"
+										},
+										{
+											"type": "entries",
+											"name": "3b. 隧道入口",
+											"id": "04f",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "050",
+													"entries": [
+														"下水道通道平整的墙壁被小心地拆改成一道拱门。门后是一条在泥土与磐石中开凿出的约 10 尺宽的粗糙隧道。每隔数尺便架设着粗大的木制支撑梁，托住上方的生土与顽石。未点燃的旧提灯从铁链上垂挂，泥土与浮土间散落着断裂的铁锹、镐头和其他开凿隧道的工具。两辆用来运土的破旧独轮车分置拱门两侧。"
+													]
+												},
+												"隧道这一段相当不起眼。深壕秽民占据着隧道更深处，只把这里当作进出通道。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "查看",
+															"entry": "使用{@action 搜索|XPHB}动作并通过 {@dc 15} 的感知（{@skill 生存|XPHB}或{@skill 察觉|XPHB}）检定的角色，可以判定这条隧道近期有人使用过\u2014\u2014隧道内留有泥泞的脚印。脚印似乎源自水道，且显然非人类所留。",
+															"ENG_name": "Inspection"
+														},
+														{
+															"type": "item",
+															"name": "格鲁普护送",
+															"entry": "如果由格鲁普护送角色，他会解释说这些旧工具和隧道本身都比他年长得多，但他的人民很高兴能找到一个安家的安全处所。",
+															"ENG_name": "Gloop Escort"
+														}
+													]
+												}
+											],
+											"ENG_name": "3b. Tunnel Entrance"
+										},
+										{
+											"type": "entries",
+											"name": "3c. 下坡路段",
+											"id": "051",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "052",
+													"entries": [
+														"隧道笔直前行，又戛然而止。看来开凿者在此时撞上了城墙本身密实的石质地基。他们没有尝试凿穿地基，而是让隧道折向左方，陡然向下倾斜，试图从城墙下方寻路。隧道深处隐约传来遥远的吟诵与含混的咕哝声。"
+													]
+												},
+												"坡道继续向下延伸二十尺，止于区域 3c。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "危险路面",
+															"entry": "角色可以全速冲下坡道，但冒着摔滚的风险。不选择以半速移动的角色必须通过 {@dc 10} 的敏捷豁免，否则会滚下坡道，受到 {@damage 1d6} 点钝击伤害并倒{@condition 倒地|XPHB}在坡底。摔倒的角色可能撞上他人，后者可以要么进行 {@dc 10} 的敏捷豁免跃向一旁，要么进行 {@dc 15} 的力量豁免稳住身形、挡住摔倒的角色。力量豁免成功者可阻止对方跌落，使其免受任何伤害。",
+															"ENG_name": "Dangerous Footing"
+														},
+														{
+															"type": "item",
+															"name": "下坡",
+															"entry": "坡道陡峭，角色下行时必须以半速移动才能站稳。用{@item 绳索|XPHB|绳索}或攀登装备固定自身的角色在这些豁免中具有{@variantrule 优势|XPHB}。",
+															"ENG_name": "Moving Down the Slope"
+														},
+														{
+															"type": "item",
+															"name": "上坡",
+															"entry": "角色上坡时视同在{@variantrule 困难地形|XPHB}中移动。",
+															"ENG_name": "Moving Up the Slope"
+														},
+														{
+															"type": "item",
+															"name": "格鲁普护送",
+															"entry": "如果由格鲁普护送角色，他会叮嘱他们慢行并留意脚下。",
+															"ENG_name": "Gloop Escort"
+														}
+													]
+												}
+											],
+											"ENG_name": "3c. Downward Slope"
+										},
+										{
+											"type": "entries",
+											"name": "3d. 挖掘现场",
+											"id": "053",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "054",
+													"entries": [
+														"倾斜的通道终于钻到了城墙之下。为避免凿穿时引起坍塌，开凿者在这里挖出了一间更大的厅室，后来似乎被走私者用作储藏室或守卫室。然而如今，占据这间厅室的是别的东西。",
+														"厅室顶端，一条狭窄的通道从城墙地基之下穿过。通道只有五尺宽，勉强够一个人类直起身来。包铁的木梁被一丝不苟地架设起来，托住上方墙基的重量。厅室四周是一洼洼泥塘，缀满下水道里捞来的废品与垃圾；它们看起来是巢穴、床铺，或仅仅是那些占据厅室的怪异鱼形生物的栖身之处。"
+													]
+												},
+												"六名深壕秽民（使用{@creature 鲨华武者|XMM|鲨华武者}的游戏数据）占据着这间厅室。他们在此充当守卫。",
+												"若非格鲁普护送，会有一名深壕秽民沿隧道跑上去向区域 3e 的同伙示警。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "宝藏",
+															"entry": "南侧一条清出的窄通道里堆放着走私者留下的一摞旧板条箱、工具、木梁和其他物件。一口旧箱子藏在走私者遗留的杂物后面。角色若肯花时间翻检，或通过 {@dc 15} 的感知（{@skill 察觉|XPHB}）或智力（{@skill 调查|XPHB}）检定，便能找到一瓶{@item 气态形体药水|XDMG}、一卷{@spell 水下呼吸|XPHB}的{@item 法术卷轴|XDMG}，以及 25 gp。",
+															"ENG_name": "Treasure"
+														}
+													]
+												}
+											],
+											"ENG_name": "3d. Dig Site"
+										},
+										{
+											"type": "entries",
+											"name": "3e. 深壕秽民营地",
+											"id": "055",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "056",
+													"entries": [
+														"这间大厅看起来或许是从某座古老建筑的地下室里挖出来的\u2014\u2014那座建筑曾矗立于地表，却早在下水道与城墙修筑之前很久便已倾颓。厅室只被部分发掘。昔日存放走私货物的储藏室，如今成了一个破破烂烂的聚落：陋棚、泥塘与一堆噼啪作响的篝火。",
+														"篝火旁立着一座巨大的雕像，由下水道秽物、鱼骨和残破的甲胄武器拼成。雕像形似一头生有无数触须、躯体细长如鳗的巨大海怪。立在像前的那个身影手握一根骨制旧杖，头戴鱼骨王冠，正领着火堆旁众人的吟诵。海水、鱼腥与盐渍的气味充满厅室，含混不清的吟诵声与深壕秽民的喃喃低语充斥其间。"
+													]
+												},
+												"这里是下水道深壕秽民的主营地。中央的祭坛便是布利普·布洛普主持崇奉公爵夫人仪式之所。许多深壕秽民在忙活日常事务，有的坐着交谈进食，有的在做杂务。厅室中央，几名秽民正在诵念崇拜的祷文。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "深壕秽民头目",
+															"entry": "布利普·布洛普（使用{@creature 水巨魔|XMM}的游戏数据）在此主持仪式。如果角色是被护送进来的，他会兴奋地迎接他们；否则他会保卫自己的族人。生命值降至一半或以下时，布利普·布洛普会逃入下水道，回归公爵夫人身边。",
+															"ENG_name": "Deep Dreg Leader"
+														},
+														{
+															"type": "item",
+															"name": "与布利普·布洛普会面",
+															"entry": "如果角色与布利普·布洛普交谈，他掌握以下信息。",
+															"ENG_name": "Audience with Blip Bloop"
+														}
+													]
+												},
+												{
+													"type": "list",
+													"items": [
+														"公爵夫人是深壕秽民的神明，他们崇拜她，并相信她正在筹划一场滔天风暴，将淹没德拉肯海姆城、涤净城中的一切污秽。",
+														"他面前摆着一锅咕嘟冒泡的黏液状液体，并示意角色必须饮下它，作为迎宾仪式的一部分，以洗净他们的污染物，使他们得以与公爵夫人交谈。任何饮下液体者必须通过 DC 13 的体质豁免，否则获得一级污染（见{@area 附录 B|071|x}）。",
+														"他解释说，只要他们自愿参加仪式，就能获准使用走私者隧道，来去自如。所有深壕秽民都会把他们当作盟友。",
+														"他提议角色放弃任务、背弃任何派系联盟。作为交换，秽民将继续占据这条隧道，而他则允许角色长期使用。",
+														"如果角色不参加仪式，但饶过深壕秽民，并起誓对各派系保密、谎报一无所获，布利普·布洛普会被说服，暂时允许他们穿过隧道。不过，此后每次通行，布利普·布洛普都会再度劝诱角色参加他们的仪式。"
+													]
+												},
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "营地防卫",
+															"entry": "除布利普·布洛普外，还有五名深壕秽民（其中四名使用{@creature 鲨华武者|XMM|鲨华武者}的游戏数据，一名使用{@creature 水巨魔|XMM}）占据此厅，必要时会奋起守卫。这一带还有十余名深壕秽民属于非战斗人员，一旦开战便逃入下水道。",
+															"ENG_name": "Encampment Defense"
+														}
+													]
+												}
+											],
+											"ENG_name": "3e. Deep Dreg Encampment"
+										},
+										{
+											"type": "entries",
+											"name": "公爵夫人祭坛。",
+											"id": "057",
+											"entries": [
+												"营地中央的祭坛让秽民得以与公爵夫人沟通，角色也可以借它与这位道实互动。如果角色取悦了布利普·布洛普、向深壕秽民证明了自己，或者击败了这些生物，他们便可以把手放在祭坛顶端的骨骸上与公爵夫人对话。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "触碰骨骸",
+															"entry": "触碰骨骸的角色会与公爵夫人建立起连接，必须通过 {@dc 15} 的智力豁免，否则受到 10（{@dice 3d6}）点心灵伤害。",
+															"ENG_name": "Touching the Skull"
+														},
+														{
+															"type": "item",
+															"name": "连接失败",
+															"entry": "若角色触碰骨骸后豁免失败，他们会看见滔天巨浪席卷德拉肯海姆城的幻象：成千上万的鱼形生物吞噬着建筑，海怪的触须拖拽着城市沉入浪涛深处。角色听到某种幽深邪异之物抓挠其心智的呓语。虽然听不懂内容，他们却被彻底的恐惧攫住，在接下来 {@dice 1d4} 天里不断做溺水与触须将其拖入风暴之海的噩梦。",
+															"ENG_name": "Failed Connection"
+														},
+														{
+															"type": "item",
+															"name": "连接成功",
+															"entry": "若角色触碰骨骸后豁免成功，他们会看到自己坠入风暴之海的深处，直到阳光尽逝、悬浮于一片漆黑冰冷的虚空。片刻空无之后，一点远光闪烁而现，缓缓逼近。黑暗中，浮现出一张巨鳗般的脸，獠牙森然，双眼呈八彩之色。它生有一鬃触须，末端是较小的鳗首或带吸盘的触腕，随节律蠕动不止。",
+															"ENG_name": "Successful Connection"
+														}
+													]
+												},
+												"那生物便是公爵夫人，她向触碰骨骸的生物开口。她不会透露自己的真实本性或动机，却会兴致盎然地戏弄与她对话的角色。公爵夫人自认是德拉肯海姆真正的统治者，她的追随者将是吞噬这座城市的涨潮先兆。她劝说来者痛饮釜中之液，以获深渊的馈赠，如此便可毫无碍难地行走于城市废墟之间。她继续说道：他们残缺可憎的血肉之躯将不再受城中污染侵蚀，能够扛过将至的风暴，而公爵夫人将赐予他们在其领地内通行的安宁。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "宝藏",
+															"entry": "仔细搜查营地的角色可以找到总计价值 100 gp 的{@area 幻惑石|00d|x}晶体碎片、一卷{@spell 缠绕术|XPHB}的{@item 法术卷轴|XDMG}、一卷{@spell 隐形仆役|XPHB}的{@item 法术卷轴|XDMG}，以及一瓶{@item 治疗药水|XDMG}。",
+															"ENG_name": "Treasure"
+														}
+													]
+												}
+											],
+											"ENG_name": "Altar of The Duchess."
+										},
+										{
+											"type": "entries",
+											"name": "3f. 内城下水道",
+											"id": "058",
+											"entries": [
+												"若角色想现在就离开下水道，这里有一处检修舱口可以直接通往内城地表。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/029-00-016.deep-dreg-knight.webp"
+													},
+													"title": "深壕秽民骑士",
+													"width": 850,
+													"height": 1244
+												}
+											],
+											"ENG_name": "3f. Inner City Sewer"
+										}
+									],
+									"ENG_name": "Area 3: Smuggler's Tunnel"
+								},
+								{
+									"type": "entries",
+									"name": "区域 4：暗道",
+									"id": "059",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/030-map-00.07-sally-port.webp"
+											},
+											"imageType": "map",
+											"title": "地图 7: 出击口",
+											"width": 2816,
+											"height": 4096,
+											"id": "085",
+											"grid": {
+												"type": "square",
+												"size": 128
+											}
+										},
+										"此地正位于圣殿门\u2014\u2014通往内城的五座门楼之一\u2014\u2014的正下方。城市的建造者在此修建了一处隐秘的地下暗道：围城之时，守城者可以从这里潜出，必要的话从背后打击敌军。不幸的是，它被一道魔法强化的门扉封死。",
+										"在地表，门楼被致命的怪物占据，对胆敢靠近的冒险者满怀敌意。暗道的另一侧则经由城内各处岗哨的地下室进入。",
+										{
+											"type": "entries",
+											"name": "接近暗道",
+											"id": "05a",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "05b",
+													"entries": [
+														"你们穿行下水道时，来到一处交叉口，下水道干线与一条宽阔的石砌走廊在此相接。这条通道与下水道其余部分截然不同\u2014\u2014它由宽大的石板铺成，墙体石工棱角分明，由拱顶支撑。墙上钉着一座座未点燃的火炬架。"
+													]
+												},
+												"这条通道约 20 尺宽、一百尺长，连接下水道干线与{@area 暗道前厅|05c|x}。",
+												"这条走廊没有任何近人通行的痕迹，也没有陷阱或险患。此地曾设有{@spell 警报术|XPHB}法术，一旦有人接近暗道便向驻守圣殿门的城市守卫队长示警。然而魔法早已消散，守卫也无一存留。"
+											],
+											"ENG_name": "Approaching the Sally Port"
+										},
+										{
+											"type": "entries",
+											"name": "暗道前厅",
+											"id": "05c",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "05d",
+													"entries": [
+														"通道尽头是一间巨大的药丸形厅室，由粗大的石柱支撑。六座狞笑的雕像装饰其间，雕成龙翼蝙蝠、面目可怖的怪物模样。入口走廊的正对面是一道气势逼人的大门。"
+													]
+												},
+												"此厅的六座雕像实际上都是{@creature 石像鬼|XMM|石像鬼}，为守护暗道而造。它们由守城者施加的古老魔法所成，同一时间只有两座可以活化。若某座石像鬼遭到直接攻击或伤害，它会活化自卫，其最近的邻座也随之苏醒。否则，如下文所述，只有角色对暗道大门下手时石像鬼才会攻击。"
+											],
+											"ENG_name": "Sally Port Antechamber"
+										},
+										{
+											"type": "entries",
+											"name": "暗道大门",
+											"id": "05e",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "05f",
+													"entries": [
+														"暗道大门是一整扇令人生畏的实心金属门，以铁钢箍带加固。门上饰有德拉肯海姆繁复的徽记：双龙对立，拱卫一座三塔耸峙的城堡。门两侧各有一座巨大的石像鬼雕像不祥地俯视，狰狞的面目雕刻得纤毫毕现。值得注意的是，门的这一侧没有任何可见的机关或把手，门板与四周石壁严丝合缝。"
+													]
+												},
+												"大门由藏于另一侧的绞盘与铁链操纵开启，将门垂直吊起。落下时，门板滑入地面的小槽，形成紧密的封合。",
+												"这道门不仅坚固异常、难以摧毁，还受到{@b 奥术符文}陷阱的守护，并有石像鬼雕像护卫，详见下文。",
+												"尽管如此，角色若能小心解除奥术符文陷阱、再成功掀起大门，也能不与石像鬼交手便打开暗道。机敏的角色若在下水道他处寻得魔法宝物，或许也能创造性地利用那些工具绕过此门。"
+											],
+											"ENG_name": "Sally Port Gate"
+										},
+										{
+											"type": "entries",
+											"name": "石像鬼",
+											"id": "060",
+											"entries": [
+												"若满足以下任一条件，此厅中的两座{@creature 石像鬼|XMM}便会活化并发起攻击：",
+												{
+													"type": "list",
+													"items": [
+														"雕像遭到直接攻击或伤害。",
+														"暗道大门受损，或在奥术符文仍然有效时有人试图破门或抬门。",
+														"门上的奥术符文陷阱被启动或触发。"
+													]
+												},
+												"当一座石像鬼的生命值降为零时，它会魔法般地崩解成尘，尘土在空中盘旋飞回原位，24 小时后重新凝成。若大门仍在遭袭，另一座石像鬼会活化补上倒下者的位置。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/031-00-017.gargoyle.webp"
+													},
+													"title": "石像鬼来袭",
+													"width": 850,
+													"height": 634
+												},
+												"石像鬼不会追出这间厅室，自己也不会穿过暗道大门。"
+											],
+											"ENG_name": "Gargoyles"
+										},
+										{
+											"type": "entries",
+											"name": "大门",
+											"id": "061",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "开门",
+															"entry": "开启大门的绞盘位于另一侧，从外城接近{@area 暗道|059|x}的人通常无法企及。尽管如此，成功抵达另一侧的角色可以用{@action 利用|XPHB}动作操纵绞盘打开大门。绞盘带有机械定时装置，1 分钟后自动关门。角色也可以用\"利用\"动作把门关上。",
+															"ENG_name": "Opening the Gate"
+														},
+														{
+															"type": "item",
+															"name": "破坏大门",
+															"entry": "暗道大门是一扇强化金属门，可以攻击并摧毁。它的 AC 为 19，生命值 72，免疫毒素和心灵伤害，并抗除强酸、力场和雷鸣外的所有其他伤害类型。",
+															"ENG_name": "Damaging the Gate"
+														},
+														{
+															"type": "item",
+															"name": "破门",
+															"entry": "把门撞开几乎不可能。角色可以用一个动作尝试 {@dc 30} 的力量（{@skill 运动|XPHB}）检定。成功则门粉碎。无论成败，守护符文都会激活，两座石像鬼活化攻击。",
+															"ENG_name": "Breaking the Gate"
+														},
+														{
+															"type": "item",
+															"name": "绕过大门",
+															"entry": "角色若去过其他地点，可能已在下水道他处找到过{@item 气态形体药水|XDMG}或{@item 江湖郎中之斗篷|XDMG}。他们可以用那些物品（或相关法术，如{@spell 气态形体|XPHB}、{@spell 任意门|XPHB}或{@spell 穿墙术|XPHB}）越过大门。注意，{@spell 迷踪步|XPHB}等法术需要看见目的地，因此不能用来绕过此门。",
+															"ENG_name": "Bypassing the Gate"
+														},
+														{
+															"type": "item",
+															"name": "抬门",
+															"entry": "角色可以用{@action 利用|XPHB}动作尝试 {@dc 20} 的力量（{@skill 运动|XPHB}）检定，将门抬起并撑到其下个回合开始，届时必须再用一个动作并通过力量检定才能继续撑住。若检定失败或不再重复动作，他们会放下门。放下时，他们可以尝试以 {@dc 15} 的敏捷豁免跃向另一侧。豁免成功，可自选落在门的哪一侧；失败则留在抬门时所在的一侧。若检定差 5 点或更多，他们会被压在门下（见下文）。",
+															"ENG_name": "Lifting the Gate"
+														}
+													]
+												},
+												{
+													"type": "list",
+													"items": [
+														"{@b 付出代价的成功。}力量检定仅差 1 或 2 点的角色可以将门部分抬起，但只能撑住片刻。这足以让距他 10 尺内的另一名角色用其反应进行 {@dc 15} 的敏捷（{@skill 杂技|XPHB}）检定，从开口鱼跃而过。但若该检定差五点或更多，这名角色会被落下的门压住（见下文）。"
+													],
+													"style": "list-hang-notitle"
+												},
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "被压门下",
+															"entry": "大门落下时处于门下的角色受到 22（{@dice 4d10}）点钝击伤害，并被困在门下。被困期间，其处于{@condition 束缚|XPHB}和{@condition 倒地|XPHB}状态，并在其每个回合结束时额外受到 11（{@dice 2d10}）点钝击伤害。被困生物可以用{@action 利用|XPHB}动作，通过 {@dc 15} 的力量（{@skill 运动|XPHB}）或敏捷（{@skill 杂技|XPHB}）检定尝试自行脱身。",
+															"ENG_name": "Crushed Under the Gate"
+														}
+													]
+												}
+											],
+											"ENG_name": "The Gate"
+										},
+										{
+											"type": "entries",
+											"name": "奥术符文",
+											"id": "062",
+											"entries": [
+												"每轮大门首次受到伤害时，蚀刻其上的奥术符文会释放一道魔法闪电。触发者必须通过 {@dc 15} 的敏捷豁免，失败者受到 11（{@dice 2d10}）点闪电伤害，成功则减半。",
+												"{@spell 侦测魔法|XPHB}法术可以显现门上的塑能系魔法灵光。大门 5 尺内的生物可以用{@action 搜索|XPHB}动作检视，进行 {@dc 10} 的感知（{@skill 察觉|XPHB}）检定，成功即可发现蚀刻在门上的细小奥术符文。符文被发现后，角色可以用{@action 学习|XPHB}动作进行 {@dc 15} 的智力（{@skill 奥秘|XPHB}）检定，成功即可判明符文之意为\"闪电\"。",
+												"符文被识别后，角色可以用{@action 利用|XPHB}动作，以锐器、{@item 匕首|XPHB}或类似物品进行 {@dc 15} 的敏捷（{@skill 巧手|XPHB}）检定来刮毁符文。成功则在不触发陷阱的情况下将其解除。检定失败时陷阱虽仍被解除，但会最后一次触发，且尝试解除陷阱的角色进行敏捷豁免时具有{@variantrule 劣势|XPHB}。"
+											],
+											"ENG_name": "Arcane Glyphs"
+										},
+										{
+											"type": "entries",
+											"name": "暗道出口",
+											"id": "063",
+											"entries": [
+												"门另一侧便是操纵大门的绞盘（见上文）。通道再延伸五十尺，尽头是一道旋梯，通往内城地表，开口在城市守卫曾用的另一处岗哨废墟中。"
+											],
+											"ENG_name": "Sally Port Exit"
+										}
+									],
+									"ENG_name": "Area 4: Sally Port"
+								}
+							],
+							"ENG_name": "Part 4: Exploring the Underground Passages"
+						},
+						{
+							"type": "section",
+							"name": "第五部分：逃脱",
+							"id": "064",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/032-00-018.facing-danger.webp"
+									},
+									"title": "直面城中危险",
+									"width": 1700,
+									"height": 2237
+								},
+								"视玩家选择合作的派系而定，他们会在两处地点之一离开下水道。两处地点使用同一张城市街道地图，但代表城中两个不同位置：内城的{@area 灯笼街|065|x}，或外城的{@area 湿石大道|067|x}。",
+								"玩家角色恰在暮色四合时走出下水道。附近游荡着一种名为{@creature 提灯人|DoDkSearchSmugglersSecrets}的怪异生物：幻惑石的邪异能量让昔日点亮街灯之人与灯柱融合，造就了这种变异异怪。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/033-map-00.08-drakkenheim-city-street.webp"
+									},
+									"imageType": "map",
+									"title": "地图 8：德拉肯海姆城市街道",
+									"width": 4096,
+									"height": 4096,
+									"id": "086",
+									"grid": {
+										"type": "square",
+										"size": 128
+									}
+								},
+								{
+									"type": "entries",
+									"name": "内城：灯笼街",
+									"id": "065",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "066",
+											"entries": [
+												"你们从黑暗的下水道钻出，置身于内城鹅卵石街道与鳞次栉比的楼宇之间。几个街区之外，巍然压抑的城墙隐约可辨。你们钻出的这条街一片漆黑。没有灯火，没有任何照亮点明返回兵营的路。暮色正降临德拉肯海姆，离入夜已没有多少时间。附近街角处透出提灯的柔光。也许是\"戴兜帽的灯笼\"正在附近巡逻？"
+											]
+										},
+										"这处地点位于内城城市守卫兵营以南。角色从城市街道旁几座废墟建筑之间一道毫不起眼的检修舱口钻出下水道。",
+										"虽然此处邻近\"戴兜帽的灯笼\"的主堡垒，却仍偏僻得有一只危险的怪物在附近游荡。",
+										"一只{@creature 提灯人|DoDkSearchSmugglersSecrets}（见{@area 附录 A|06d|x}）在附近街道潜行，除非角色想办法避开，否则会被它发现。",
+										"谨慎的角色或许能潜行绕过或躲开提灯人，悄无声息地抵达\"戴兜帽的灯笼\"兵营。这需要每名角色通过 {@dc 15} 的敏捷（{@skill 隐匿|XPHB}）检定。若能好好利用城市环境，或用其他技能或法术制造声东击西之效，这些检定可以获得优势。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "向\"戴兜帽的灯笼\"发信号",
+													"entry": "如果小队按指示发射信号弹，提灯人会立刻发现他们并发起攻击。但三轮之后，三名\"戴兜帽的灯笼\"{@creature 斥候|XMM|斥候}会赶到，协助角色击败怪物。",
+													"ENG_name": "Signaling the Hooded Lanterns"
+												}
+											]
+										}
+									],
+									"ENG_name": "Inner City: Lantern's Way"
+								},
+								{
+									"type": "entries",
+									"name": "外城：湿石大道",
+									"id": "067",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "068",
+											"entries": [
+												"你从检修舱口向外窥望，眼前是一条穿过黑暗废弃住宅的旧碎石路。你们似乎钻进了一条通往小广场的侧巷，广场中央有一口老井。废墟与弃屋之间立着一排未点燃的路灯，暮色降临，街道一片昏暗。罗丝应该很快就到；你只需在德拉肯海姆漆黑的街道上熬着等待。远处一团提灯的光晕引起你的注意\u2014\u2014有什么人，或什么东西，正朝你们走来。"
+											]
+										},
+										{
+											"type": "list",
+											"items": [
+												"这处地点位于外城辐辏路段的北端。破败的房屋之间有一处小小的检修舱口。"
+											]
+										},
+										"如果角色约定在此与{@area 罗丝·卡弗|028|x}碰头，她会在日落后不久抵达。角色必须在广场的老井旁等她到来。",
+										"一只{@creature 提灯人|DoDkSearchSmugglersSecrets}（见{@area 附录 A|06d|x}）正朝广场走来要点亮城中灯笼，一旦看见角色便会发起攻击。",
+										"机灵的角色或许能在保持隐蔽的同时驱走或引开提灯人。",
+										"罗丝·卡弗（人类{@creature 匪首|XMM}）和两名{@creature 暴徒||暴徒}会在三轮后赶到，助小队击退提灯人。"
+									],
+									"ENG_name": "Outer City: Dampstone Avenue"
+								},
+								{
+									"type": "entries",
+									"name": "结局",
+									"id": "069",
+									"entries": [
+										"成功穿行德拉肯海姆下水道与失落水道的角色，可能触发以下后续发展。",
+										{
+											"type": "entries",
+											"name": "斥候之信",
+											"id": "06a",
+											"entries": [
+												"如果玩家角色发射信号弹，并把情报交予{@area 安瑟姆·朗|01e|x}与\"戴兜帽的灯笼\"，安瑟姆会信守承诺。他交给他们一袋 300 金币，并授予他们一份由灯笼会总指挥伊莱亚斯·德雷克塞尔勋爵盖印的通行文书。这份文书允许玩家角色此后经牧羊门自由通行，以便在城中行事。",
+												"如果你将本冒险纳入更宏大的德拉肯海姆战役，达成此节会让角色与\"戴兜帽的灯笼\"关系良好，并让他们得以扩大在城中的立足点。但这也会触怒\"女王的人\"。视任务完成时你与他们的关系而定，他们可能派出突击队或设下计谋对付小队，以图夺取{@area 走私者隧道|049|x}的情报，或在小队仍持有{@area 地图|022|x}时将其夺走。"
+											],
+											"ENG_name": "Scout's Honor"
+										},
+										{
+											"type": "entries",
+											"name": "双重交叉",
+											"id": "06b",
+											"entries": [
+												"如果玩家角色选择背叛灯笼会，把情报交给\"女王的人\"，{@area 罗丝·卡弗|028|x}只会兑现承诺酬金的一半，先付 100 gp，并表示等她和帮派核实情报后再付另外承诺的 100 gp。她声称，若情报对帮派在城中的行动举足轻重，或许还有额外赏钱\u2014\u2014她甚至会在盗贼女王面前替他们美言几句。",
+												"如果你将本冒险纳入更宏大的德拉肯海姆战役，达成此节会让小队与\"女王的人\"关系良好，罗丝·卡弗也会履约。她让玩家角色两天后到扣带巷找她。会面时，她付给每人 75 gp 作为酬劳，感谢他们为帮派开辟了一条就在\"戴兜帽的灯笼\"眼皮底下出口{@area 幻惑石|00d|x}的通道。盗贼女王未必会让角色直入她的巢穴，但罗丝解释说，女王对他们的能力很感兴趣，准许他们参加她的斗技场以\"证明自己的价值\"。",
+												"如果玩家角色选择向\"戴兜帽的灯笼\"谎报所见，灯笼会是否相信由 DM 决定。他们在派系中的声望取决于灯笼会是否识破这场背叛。一旦识破，\"戴兜帽的灯笼\"会成为玩家角色的仇敌，并立即派出突击队将其铲除。"
+											],
+											"ENG_name": "Double Cross"
+										},
+										{
+											"type": "entries",
+											"name": "尊奉公爵夫人",
+											"id": "06c",
+											"entries": [
+												"如果玩家角色对两个派系都撒了谎，让隧道免于被发现，他们在两派中的声望均不受影响。布利普·布洛普会允许玩家随时使用隧道，并留下长期邀请，欢迎他们回来由他引见公爵夫人。",
+												"如果你将本冒险纳入更宏大的德拉肯海姆战役，布利普·布洛普会如约带玩家角色觐见公爵夫人，并试图强迫他们侍奉她。这可能酿成灾祸\u2014\u2014布利普·布洛普一心想把角色变成深壕秽民，以侍奉其主。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/034-00-019.the-duchess.webp"
+													},
+													"title": "公爵夫人",
+													"width": 1700,
+													"height": 611
+												}
+											],
+											"ENG_name": "Honoring The Duchess"
+										}
+									],
+									"ENG_name": "Conclusion"
+								}
+							],
+							"ENG_name": "Part 5: Escape"
+						},
+						{
+							"type": "section",
+							"name": "附录 A：新怪物",
+							"id": "06d",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "点灯人",
+									"entries": [
+										{
+											"type": "statblock",
+											"name": "点灯人",
+											"prop": "monsterFluff",
+											"source": "DoDkSearchSmugglersSecrets",
+											"ENG_name": "Lamplighter"
+										},
+										{
+											"type": "statblock",
+											"name": "点灯人",
+											"tag": "creature",
+											"source": "DoDkSearchSmugglersSecrets",
+											"style": "narrow",
+											"ENG_name": "Lamplighter"
+										}
+									],
+									"id": "087",
+									"ENG_name": "Lamplighter"
+								}
+							],
+							"ENG_name": "Appendix A: New Monster"
+						},
+						{
+							"type": "section",
+							"name": "附录 B：污染规则",
+							"id": "071",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "污染",
+									"id": "072",
+									"entries": [
+										"探索德拉肯海姆的角色可能接触到阴霾中的邪异污染物，或幻惑石散发的奥术辐射。这些危害会导致一种名为\"污染\"的新状态，带来衰弱症状与异界变异。",
+										"污染以六个等级计量。某效应可给予生物 1 级或更多污染等级，具体见该效应描述。若已受污染的生物再承受施加更多污染的效应，其当前污染等级按该效应描述的数值增加。",
+										"此外，生物在有 1 级或更多污染等级的状态下每次结束长休时，掷 {@dice 1d20}。掷出 1 时，该生物获得一级污染。",
+										"污染等级达到 6 级或更高时，该生物如\"怪物化变异！\"一节所述发生转化。",
+										{
+											"type": "entries",
+											"name": "污染症状",
+											"id": "073",
+											"entries": [
+												"带有污染状态的生物承受其当前等级以及所有更低等级的症状：",
+												"1. 无效应。2. 消耗{@variantrule 生命骰|XPHB|生命骰}恢复的生命值减半。3. 长休结束时无法恢复{@variantrule 生命值|XPHB}。4. 该生物的武器攻击与法术造成的伤害减半。5. 该生物处于{@condition 失能|XPHB}状态。6. 该生物发生怪物化变异。"
+											],
+											"ENG_name": "Contamination Symptoms"
+										},
+										{
+											"type": "entries",
+											"name": "突变",
+											"id": "074",
+											"entries": [
+												"除症状之外，生物每次获得污染等级时，掷 {@dice 1d6}。若结果小于或等于该生物当前的污染等级，其获得一项变异。GM 可以直接指定变异，或掷变异表随机决定。若结果与已影响该生物的变异相同，GM 另选一项变异或重掷。",
+												{
+													"type": "table",
+													"caption": "突变",
+													"colStyles": [
+														"col-2 text-center",
+														"col-10"
+													],
+													"rows": [
+														[
+															"1",
+															"恶性变异。掷两次，后续掷骰中忽略此结果。"
+														],
+														[
+															"2",
+															"气音嘶鸣。你的声带扭曲，只能以断续的咕噜声说话。若你的污染等级达到 4 级或更高，你的舌头腐烂脱落，再也无法说话。"
+														],
+														[
+															"3",
+															"消耗。你的手指甲、牙齿和脚趾甲开始脱落。每增加一个污染等级，就有{@dice 2d6}个脱落。"
+														],
+														[
+															"4",
+															"腐烂。你的嘴唇、鼻子和耳朵变黑并枯萎。如果你达到4个或更多的污染等级，它们会腐烂并脱落。然而，你仍然可以说话和听见。"
+														],
+														[
+															"5",
+															"蜕皮。你的皮肤上遍布疼痛的水疱、条痕与五颜六色的皮损，破裂后剧痛地剥落，露出底下鲜红的筋肉。一旦污染等级达到 4 级，你的皮肤将整层脱落。"
+														],
+														[
+															"6",
+															"脱皮。每次你增加污染等级时，你的一些头发会成片脱落。一旦你达到4级或更多的污染等级，你身上所有的头发都会完全脱落。"
+														],
+														[
+															"7",
+															"荧光。你发出一种暗淡的八色光，范围达到10尺。如果你有4级或更多的污染等级，你反而发出明亮的光，范围达到30尺。"
+														],
+														[
+															"8",
+															"眼部肿瘤。你每增加一个污染等级，你的身体某处就会打开一个眼球。如果你有4级或更多的污染等级，你可以全方位视物。"
+														],
+														[
+															"9",
+															"棘刺增生。你的每个回合开始时，对你{@variantrule 擒抱|XPHB}中的生物造成 5（{@dice 1d10}）点穿刺伤害。"
+														],
+														[
+															"10",
+															"水生适应。你长出类似鱼的鳍和鳃。你获得等同于陆地速度的游泳速度，并能在水下呼吸。如果你有4个或更多的污染等级，你只能在水下呼吸；但在水外可以屏息长达1小时。"
+														],
+														[
+															"11",
+															"不定形形态。你的骨骼和器官变得像凝胶一样。你可以不受阻地通过宽度仅为6英寸的空间。"
+														],
+														[
+															"12",
+															"甲壳质皮肤。你的全身出现了类似壳的增生，这使你的护甲等级获得+1的加值。如果你有四个或更多的污染等级，这个加值增加到+2。"
+														],
+														[
+															"13",
+															"独眼视觉。你的双眼融合为正中的一只巨眼，可以发射能量光束，作为使用你智力调整值的远程法术攻击。命中时造成 {@damage 2d6} 点光耀伤害。"
+														],
+														[
+															"14",
+															"空间错位。你每获得一级污染等级，便可以施放一次{@spell 迷踪步|XPHB}。结束{@variantrule 长休|XPHB}后，你重新获得这些使用次数。"
+														],
+														[
+															"15",
+															"触手肢体。你的一只手臂变成了肉质触手。当你在你的回合进行近战攻击时，你的攻击范围增加5尺。"
+														],
+														[
+															"16",
+															"蜘蛛攀爬。你获得了等同于你行走速度的攀爬速度。你可以攀爬困难的表面，包括在天花板上倒挂着，而无需进行属性检定。"
+														],
+														[
+															"17",
+															"低语之声。你获得 10 尺范围的{@variantrule 心灵感应|XPHB}，但他人听到的声音是他们自己的嗓音。若你的污染等级达到 4 级或更高，范围扩展至 60 尺。"
+														],
+														[
+															"18",
+															"腹部大口。你的肚子上出现了一个长有牙齿的嘴巴，你可以用它进行徒手攻击。如果你用它命中，你造成等于{@dice 1d6}加上你的力量调整值的穿刺伤害。"
+														],
+														[
+															"19",
+															"无目之视。你的双眼化为乳白的眼球，你获得 10 尺范围的{@sense 震颤感|XPHB}。若你的污染等级达到 4 级或更高，你的眼睛腐烂脱落，眼窝中燃起暗淡的八彩之光。你的震颤感提升至 30 尺，但超出此半径你即目盲。"
+														],
+														[
+															"20",
+															"奥术之血。你额外获得一个你所能施展的最高环阶（至高 5 环）的法术位。若你没有法术位，你的生命值上限增加等同于你等级的数值。若你的污染等级达到 4 级或更高，你改为获得两个法术位，或生命值上限增加两倍于你等级的数值。"
+														]
+													]
+												}
+											],
+											"ENG_name": "Mutations"
+										},
+										{
+											"type": "entries",
+											"name": "移除污染",
+											"id": "075",
+											"entries": [
+												"只有特定的魔法才能移除污染等级。生物不会自然复原。{@spell 净化污染|DungeonsDrakkenheim}法术（详见下文）可以移除污染，但会让受影响的角色陷入{@condition 力竭|XPHB}状态。{@spell 治疗术|XPHB}法术可以移除受污染生物的所有污染等级与变异。",
+												"移除一级污染的效应同时移除一项随机决定的变异。生物的污染等级降到 1 以下时，所有污染症状结束、所有变异被移除。因变异失去的皮肤、头发、指甲与趾甲在所有污染等级移除后正常再生。但若要恢复因污染等级而失去的其他身体部分（如牙齿、四肢或眼睛），则需要{@spell 再生术|XPHB}法术或类似魔法。因变异而长出的附肢或肢体在污染等级移除时枯萎脱落，其他扭曲的身体部分则恢复原形。"
+											],
+											"ENG_name": "Removing Contamination"
+										},
+										{
+											"type": "entries",
+											"name": "受污染的死亡和临终",
+											"id": "076",
+											"entries": [
+												"带有任意污染等级的人形生物死亡后，会在 24 小时后作为{@creature 阴霾空壳|DungeonsDrakkenheim}复苏（使用{@creature 丧尸|XMM}数据块）。拥有六个或更多职业等级或{@variantrule 生命骰|XPHB|生命骰}的生物则会变为{@creature 维特|XMM}。",
+												"从死亡状态复活会使生物的污染层数减少1。"
+											],
+											"ENG_name": "Death and Dying while Contaminated"
+										},
+										{
+											"type": "entries",
+											"name": "怪物变形！",
+											"id": "077",
+											"entries": [
+												"污染等级达到 6 级或更高的生物会触发转化，变成由游戏主持者操控的骇人怪物。一旦触发，转化在 1 轮内完成，且此后永久不变。我们鼓励 GM 为这场转化配上恰如其分的血腥描述。新形态由 GM 决定，通常是某种异怪或怪物，例如呓语之囿。新形态的{@variantrule 挑战等级|XPHB}通常与原生物或其职业等级相近，但在合适的情况下，你也可以选择高得多或低得多的挑战等级。",
+												"该生物的游戏数据完全被所选怪物的数据取代。该生物获得新形态的{@variantrule 生命值|XPHB}与{@variantrule 生命骰|XPHB|生命骰}。其所有污染等级被移除，不过 GM 可以依照污染等级所带来的有益变异，为新形态追加类似的额外特性。",
+												"原生物的人格与记忆还剩下什么（如果还有）由 GM 决定。无论如何，该生物都会因这场转化而陷入疯狂，并始终由 GM 操控。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/036-00-021.victim.webp"
+													},
+													"title": "变异受害者",
+													"width": 1700,
+													"height": 1057
+												}
+											],
+											"ENG_name": "Monstrous Transformation!"
+										},
+										{
+											"type": "entries",
+											"name": "祛除污染",
+											"id": "078",
+											"entries": [
+												"由 GM 酌情决定，任何施法者都可以为本冒险学会以下法术。若想让冒险更具挑战，角色们并不知晓{@spell 净化污染|DungeonsDrakkenheim}法术，只有{@area 艾伯伍德村|018|x}的火焰守护者汉娜能够施展。"
+											],
+											"ENG_name": "Purge Contamination"
+										}
+									],
+									"ENG_name": "Contamination"
+								}
+							],
+							"ENG_name": "Appendix B: Rules for Contamination"
+						},
+						{
+							"type": "section",
+							"name": "附录C：资料",
+							"id": "079",
+							"entries": [
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/037-00-022.handout-map.webp"
+											},
+											"width": 1700,
+											"height": 1996
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DoDkSearchSmugglersSecrets/adventure/038-00-023.handout-note.webp"
+											},
+											"width": 1700,
+											"height": 1894
+										}
+									]
+								}
+							],
+							"ENG_name": "Appendix C: Handouts"
+						},
+						{
+							"type": "section",
+							"name": "制作组",
+							"id": "07a",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
+										{
+											"type": "item",
+											"name": "首席设计：",
+											"entry": "蒙提·马丁、凯莉·麦克劳林",
+											"ENG_name": "Lead Design:"
+										},
+										{
+											"type": "item",
+											"name": "撰写与规则开发：",
+											"entry": "蒙提·马丁、凯莉·麦克劳林",
+											"ENG_name": "Writing and Rules Development:"
+										},
+										{
+											"type": "item",
+											"name": "编辑：",
+											"entry": "克里斯·沃尔兹、乔·拉索、斯科特·菲茨杰拉德·格雷",
+											"ENG_name": "Editing:"
+										},
+										{
+											"type": "item",
+											"name": "艺术指导：",
+											"entry": "马里乌斯·博塔",
+											"ENG_name": "Art Direction:"
+										},
+										{
+											"type": "item",
+											"name": "平面设计：",
+											"entry": "马丁·休斯",
+											"ENG_name": "Graphic Design:"
+										},
+										{
+											"type": "item",
+											"name": "封面插画师：",
+											"entry": "马里乌斯·博塔",
+											"ENG_name": "Cover Illustrator:"
+										},
+										{
+											"type": "item",
+											"name": "内页插画师：",
+											"entry": "阿尔贝托·达尔·拉戈、安德烈娅·乌格拉伊、乍得·刘易斯、克莱芒·布吕姆、费利佩·佩雷斯、Foeh、加加·图尔马尼什维利、马留斯·博塔、玛尔泽娜·奈瑞达·皮沃瓦尔、托尼·蒙泰亚努",
+											"ENG_name": "Interior Illustrators:"
+										},
+										{
+											"type": "item",
+											"name": "战术地图：",
+											"entry": "乔希·奥切德",
+											"ENG_name": "Tactical Maps:"
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "幽灵之火游戏运营",
+									"id": "07b",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"columns": 2,
+											"items": [
+												{
+													"type": "item",
+													"name": "首席执行官：",
+													"entry": "马特·维特布鲁克",
+													"ENG_name": "Chief Executive Officer:"
+												},
+												{
+													"type": "item",
+													"name": "财务总监：",
+													"entry": "詹姆斯·阿特金斯",
+													"ENG_name": "Financial Controller:"
+												},
+												{
+													"type": "item",
+													"name": "首席运营官：",
+													"entry": "尼克·英格姆斯",
+													"ENG_name": "Chief Operations Officer:"
+												},
+												{
+													"type": "item",
+													"name": "创意内容总监：",
+													"entry": "本·伯恩",
+													"ENG_name": "Creative Content Director:"
+												},
+												{
+													"type": "item",
+													"name": "数字媒体专员：",
+													"entry": "但丁·萨博",
+													"ENG_name": "Digital Media Specialist:"
+												},
+												{
+													"type": "item",
+													"name": "客户支持与社区专员：",
+													"entry": "杰西卡·伯塞尔森-默里",
+													"ENG_name": "Customer Support & Community Associate:"
+												},
+												{
+													"type": "item",
+													"name": "Ghostfire Gaming Discord 社区经理：",
+													"entry": "伊恩\"黄油\"格拉顿、纳尔逊\"亡毒\"迪卡洛、汤姆\"维京海象\"加兰、凯莱布\"科嫩达夫\"恩格尔哈特、卡梅伦\"C4汉堡\"布雷钦",
+													"ENG_name": "Ghostfire Gaming Discord Community Managers:"
+												}
+											]
+										}
+									],
+									"ENG_name": "Ghostfire Gaming Operations"
+								},
+								{
+									"type": "entries",
+									"name": "Ghostfire制作工作室",
+									"id": "07c",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"columns": 2,
+											"items": [
+												{
+													"type": "item",
+													"name": "制作主管：",
+													"entry": "西蒙·谢里",
+													"ENG_name": "Head of Production:"
+												},
+												{
+													"type": "item",
+													"name": "首席制作人：",
+													"entry": "乔·拉索",
+													"ENG_name": "Lead Producer:"
+												},
+												{
+													"type": "item",
+													"name": "首席设计师：",
+													"entry": "马丁·休斯",
+													"ENG_name": "Principal Designer:"
+												},
+												{
+													"type": "item",
+													"name": "平面设计师：",
+													"entry": "乔希·奥切德",
+													"ENG_name": "Graphic Designer:"
+												},
+												{
+													"type": "item",
+													"name": "首席开发员：",
+													"entry": "马克·麦金太尔",
+													"ENG_name": "Lead Developer:"
+												},
+												{
+													"type": "item",
+													"name": "首席游戏设计师：",
+													"entry": "肖恩·默温",
+													"ENG_name": "Lead Game Designer:"
+												},
+												{
+													"type": "item",
+													"name": "美术指导团队：",
+													"entry": "马留斯·博塔、马特·德米诺",
+													"ENG_name": "Art Direction Team:"
+												},
+												{
+													"type": "item",
+													"name": "项目支持：",
+													"entry": "伊森·严",
+													"ENG_name": "Project Support:"
+												}
+											]
+										}
+									],
+									"ENG_name": "Ghostfire Production Studio"
+								}
+							],
+							"ENG_name": "Credits"
+						}
+					],
+					"ENG_name": "Dungeons of Drakkenheim: In Search of the Smuggler's Secrets"
+				}
+			]
+		}
+	]
+}
