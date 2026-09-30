@@ -1,0 +1,2925 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MaladyOfMinarrh",
+				"abbreviation": "TMoM",
+				"full": "米纳尔之疾",
+				"url": "https://marketplace.dndbeyond.com/category/DBWZNXVB5",
+				"version": "1.0.0",
+				"dateReleased": "2025-03-26",
+				"authors": [
+					"Road to Ithaka Press"
+				],
+				"convertedBy": [
+					"Giddy"
+				],
+				"partnered": true,
+				"color": "347752"
+			}
+		],
+		"edition": "one",
+		"dateAdded": 1748178456,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "2ff4323dd9"
+	},
+	"monster": [
+		{
+			"ENG_name": "Anaya",
+			"name": "阿纳亚",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "MaladyOfMinarrh",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"牧师"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 38,
+				"formula": "7d8 + 7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 12,
+			"int": 13,
+			"wis": 18,
+			"cha": 13,
+			"skill": {
+				"medicine": "+8",
+				"perception": "+6",
+				"religion": "+5"
+			},
+			"passive": 16,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"深渊语",
+				"通用语",
+				"炼狱"
+			],
+			"cr": "2",
+			"gear": [
+				"圣徽|xphb"
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"阿纳亚施放下列法术之一，以感知为施法属性（法术豁免{@dc 14}）："
+					],
+					"will": [
+						"{@spell 光亮术|XPHB}",
+						"{@spell 奇术|XPHB}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 驱逐善恶|XPHB}",
+							"{@spell 短讯术|XPHB}",
+							"{@spell 灵体卫士|XPHB}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				},
+				{
+					"ENG_name": "Divine Aid (3/Day)",
+					"name": "至圣援护（3/日）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"阿纳亚施放{@spell 祝福术|XPHB}、{@spell 解除魔法|XPHB}、{@spell 治愈真言|XPHB}或{@spell 次等复原术|XPHB}，施法属性与\"施法\"相同。"
+					],
+					"daily": {
+						"3": [
+							"{@spell 祝福术|XPHB}",
+							"{@spell 解除魔法|XPHB}",
+							"{@spell 治愈真言|XPHB}",
+							"{@spell 次等复原术|XPHB}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "bonus",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Radiant Flame",
+					"name": "光焰",
+					"entries": [
+						"{@atkr r} {@hit 6} 命中，射程60尺。{@h}11（{@damage 2d10}）光耀伤害。"
+					]
+				}
+			],
+			"environment": [
+				"任意"
+			],
+			"treasure": [
+				"个体",
+				"圣物"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/bestiary/tokens/Anaya.webp"
+			},
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"R"
+			],
+			"damageTagsSpell": [
+				"N",
+				"R"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tharian (Possessed)",
+			"name": "塔里安（被附身）",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "MaladyOfMinarrh",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 127,
+				"formula": "17d8 + 51"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 19,
+			"dex": 15,
+			"con": 16,
+			"int": 12,
+			"wis": 18,
+			"cha": 10,
+			"save": {
+				"con": "+6",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"religion": "+4"
+			},
+			"senses": [
+				"黑暗视觉90尺（无视魔法{@variantrule 黑暗|XPHB}）"
+			],
+			"passive": 17,
+			"resist": [
+				"necrotic",
+				"poison"
+			],
+			"languages": [
+				"深渊语",
+				"通用语",
+				"炼狱"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"塔里安施放下列法术之一，以感知为施法属性（法术豁免{@dc 15}，法术攻击命中{@hit 7}）："
+					],
+					"will": [
+						"{@spell 灼热射线|XPHB}（五环版本）",
+						"{@spell 奇术|XPHB}"
+					],
+					"daily": {
+						"2": [
+							"{@spell 火球术|XPHB}（六环版本）"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				},
+				{
+					"ENG_name": "Hellish Rebuke",
+					"name": "炼狱叱喝",
+					"type": "spellcasting",
+					"headerEntries": [
+						"塔里安响应该法术的触发条件施放{@spell 炼狱叱喝|XPHB}，施法属性与\"施法\"相同。"
+					],
+					"will": [
+						"{@spell 炼狱叱喝|XPHB}"
+					],
+					"ability": "wis",
+					"displayAs": "reaction",
+					"hidden": [
+						"will"
+					]
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Fiendish Infusion",
+					"name": "邪魔灌注",
+					"entries": [
+						"原本造成火焰伤害的攻击和法术改为造成死灵伤害或毒素伤害（由他选择）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"塔里安进行三次契约之斧攻击。"
+					]
+				},
+				{
+					"ENG_name": "Pact Axe",
+					"name": "契约魔斧",
+					"entries": [
+						"{@atkr m} {@hit 7} 命中，触及5尺。{@h}10（{@damage 1d12 + 4}）挥砍伤害，外加13（{@dice 3d8}）死灵伤害或毒素伤害。"
+					]
+				}
+			],
+			"environment": [
+				"任意"
+			],
+			"treasure": [
+				"个体",
+				"圣物"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/bestiary/tokens/Tharian (Possessed).webp"
+			},
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Xarashtar",
+			"name": "扎拉什塔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "MaladyOfMinarrh",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"恶魔"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 189,
+				"formula": "18d10 + 90"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 21,
+			"int": 19,
+			"wis": 17,
+			"cha": 16,
+			"save": {
+				"str": "+9",
+				"con": "+9",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"perception": "+7"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"深渊语; 心灵感应 120 尺"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"扎拉什塔施放下列法术之一，无需材料成分，以智力为施法属性（法术豁免{@dc 16}）："
+					],
+					"will": [
+						"{@spell 黑暗术|XPHB}",
+						"{@spell 侦测魔法|XPHB}",
+						"{@spell 解除魔法|XPHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 困惑术|XPHB}",
+							"{@spell 飞行术|XPHB}",
+							"{@spell 群体暗示术|XPHB}",
+							"{@spell 律令震慑|XPHB}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Demonic Restoration",
+					"name": "恶魔复苏",
+					"entries": [
+						"如果扎拉什塔在深渊之外死亡，他的躯体化为脓液，并立即获得一具新的身体，在深渊中的某处以全部{@variantrule 生命值|XPHB}复生。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"扎拉什塔对抗法术和其他魔法效应的豁免检定具有{@variantrule 优势|XPHB}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"扎拉什塔进行两次钳爪攻击，并使用\"捶击\"或\"施法\"。"
+					]
+				},
+				{
+					"ENG_name": "Pincer",
+					"name": "钳击",
+					"entries": [
+						"{@atkr m} {@hit 9}，触及10尺。{@h}16（{@damage 2d10 + 5}）挥砍伤害。若目标生物体型不超过中型，则其将被双钳之一擒抱，陷入{@condition 受擒|XPHB}状态（逃脱{@dc 15}）。"
+					]
+				},
+				{
+					"ENG_name": "Pummel",
+					"name": "猛砸",
+					"entries": [
+						"{@actSave dex} {@dc 17}，一名被扎拉什塔{@condition 受擒|XPHB}的生物。{@actSaveFail} 15（{@damage 3d6 + 5}）钝击伤害。{@actSaveSuccess} 一半伤害。"
+					]
+				}
+			],
+			"environment": [
+				"位面, 无底深渊"
+			],
+			"treasure": [
+				"圣物"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/bestiary/tokens/Xarashtar.webp"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"conditionInflictSpell": [
+				"魅惑",
+				"震慑"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"ENG_name": "Anaya",
+			"name": "阿纳亚",
+			"source": "MaladyOfMinarrh",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/bestiary/Anaya.webp"
+					},
+					"width": 465,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Tharian (Possessed)",
+			"name": "塔里安（被附身）",
+			"source": "MaladyOfMinarrh",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i 塔里安比从前更加高大，肩膀变宽，曾经温暖的棕色眼睛变得漆黑。他向你们伸手探来，指尖伸出长长的利爪，嘴角弯出一个非人的狞笑。}"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/bestiary/Tharian (Possessed).webp"
+					},
+					"width": 562,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Xarashtar",
+			"name": "扎拉什塔",
+			"source": "MaladyOfMinarrh",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i 当脓液滴落、烟雾散去，你们看见一只15尺高的怪物，犬形的头颅生满獠牙，头顶探出两支参差不齐的角。}"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/bestiary/Xarashtar.webp"
+					},
+					"width": 1000,
+					"height": 949
+				}
+			]
+		}
+	],
+	"adventure": [
+		{
+			"ENG_name": "The Malady of Minarrh",
+			"name": "米纳尔之疾",
+			"id": "MaladyOfMinarrh",
+			"source": "MaladyOfMinarrh",
+			"group": "supplement",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/covers/MaladyOfMinarrh.webp"
+			},
+			"published": "2025-03-26",
+			"author": "通向伊萨卡出版社",
+			"storyline": "独立冒险",
+			"level": {
+				"start": 5,
+				"end": 5
+			},
+			"contents": [
+				{
+					"ENG_name": "The Malady of Minarrh",
+					"name": "米纳尔之疾",
+					"headers": [
+						"冒险概述",
+						"恶魔所致的疾病",
+						"冒险引子",
+						"神秘的怪病",
+						"米纳尔各处",
+						{
+							"depth": 1,
+							"header": "1：主圣所"
+						},
+						{
+							"depth": 1,
+							"header": "2：图书馆"
+						},
+						{
+							"depth": 1,
+							"header": "3：医疗所"
+						},
+						{
+							"depth": 1,
+							"header": "6：侍僧居所"
+						},
+						{
+							"depth": 1,
+							"header": "7：冥想花园"
+						},
+						{
+							"depth": 1,
+							"header": "8：阿莎的房间"
+						},
+						{
+							"depth": 1,
+							"header": "9：阿纳亚的房间"
+						},
+						{
+							"depth": 1,
+							"header": "10：塔里安的房间"
+						},
+						{
+							"depth": 1,
+							"header": "11：走廊与暗门"
+						},
+						{
+							"depth": 1,
+							"header": "12：地下墓穴"
+						},
+						"公会之眼",
+						{
+							"depth": 1,
+							"header": "1：藏身处入口"
+						},
+						{
+							"depth": 1,
+							"header": "2：陷阱走廊"
+						},
+						{
+							"depth": 1,
+							"header": "3：集会室"
+						},
+						"恋人的藏身之处",
+						"恶魔对峙",
+						"结束冒险",
+						"制作组"
+					]
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "MaladyOfMinarrh",
+			"source": "MaladyOfMinarrh",
+			"data": [
+				{
+					"ENG_name": "The Malady of Minarrh",
+					"type": "section",
+					"name": "米纳尔之疾",
+					"id": "000",
+					"entries": [
+						"{@i 一场为四到六名5级角色设计的冒险，预计需2到3次团进行。}",
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/000-00-01.cover.webp"
+							},
+							"width": 1700,
+							"height": 2201
+						},
+						{
+							"ENG_name": "Adventure Overview",
+							"type": "section",
+							"name": "冒险概述",
+							"id": "001",
+							"entries": [
+								"一封神秘的信函将角色们召往乡间村庄米纳尔，他们发现这座小镇正被一场奇异而骇人的疾病扼住咽喉。许多未染病的市民闭门不出，而染病者与他们的亲人则向神殿的医师们求助。神殿领袖{@creature 塔里安（被附身）|MaladyOfMinarrh|塔里安}透露，他的女儿{@creature 阿纳亚|MaladyOfMinarrh}\u2014\u2014一位天赋异禀的医师\u2014\u2014最近被当地盗贼公会绑架。",
+								"塔里安请求角色们在疾病吞噬镇民之前救回阿纳亚。然而，这座小镇隐藏着许多秘密：从一对暗中相恋的恋人，到这场疾病的真正起因\u2014\u2014一件从神殿地下掘出的古老圣物，其中封印着一头被囚禁的恶魔。恶魔一直用精神控制驱使塔里安为它效力，让小镇染上这场疾病。很快，它就要利用塔里安和镇民的生命精粹脱出牢笼，进犯米纳尔以及物质位面的其他地方。",
+								{
+									"ENG_name": "Content Warnings",
+									"type": "inset",
+									"name": "内容预警",
+									"entries": [
+										"在开跑这场冒险之前，请与你的玩家讨论以下主题，并确认每位玩家都能接受这些内容出现在游戏中。你也可以调整疾病的症状，以及／或确保没有任何NPC\"当场\"死亡，以保证玩家玩得舒适尽兴。",
+										{
+											"ENG_name": "Horror and Disease",
+											"type": "entries",
+											"name": "恐怖与疾病",
+											"entries": [
+												"这场冒险包含围绕恶魔诅咒所引起之疾病的恐怖主题。疾病的后果包括幻觉、不由自主的身体异变，并最终迎来凄惨的死亡。按原文运行时，疾病可能影响玩家角色，但受冒险时间线所限，他们不会因此死亡。"
+											],
+											"id": "05e"
+										},
+										{
+											"ENG_name": "NPC Possession and Mind Control",
+											"type": "entries",
+											"name": "NPC附身与精神控制",
+											"entries": [
+												"冒险的主要NPC之一塔里安受到恶魔的精神影响\u2014\u2014并最终被其附身\u2014\u2014这头恶魔还以魔法影响了几位镇上首领的心智。"
+											],
+											"id": "05f"
+										},
+										{
+											"ENG_name": "Familial Conflict",
+											"type": "entries",
+											"name": "家庭冲突",
+											"entries": [
+												"这场冒险还包含一段因恶魔干涉而变得复杂的父女关系，这可能令部分玩家感到不适。其中并不直接涉及父母忽视或虐待的主题。"
+											],
+											"id": "060"
+										}
+									],
+									"id": "05d"
+								},
+								{
+									"ENG_name": "Adventure Summary",
+									"type": "entries",
+									"name": "冒险摘要",
+									"id": "002",
+									"entries": [
+										"冒险分为三幕推进，最后是一场决战：",
+										"{@area 神秘的怪病。|00e|x} 小队抵达米纳尔，目睹疾病造成的混乱与苦难。他们与塔里安交谈，并有机会探索{@area 米纳尔|015|x}，向其他当地人收集情报。",
+										"{@area 公会之眼。|02f|x} 小队深入当地盗贼公会的藏身处，在那里遇见一位意想不到的盟友，并发现阿纳亚并非被人从神殿绑走，而是在他人协助下出逃。她被行为反常的父亲囚禁在神殿中后逃离。阿纳亚和她的恋人曼南投奔了曼南的姨母\u2014\u2014一位强大的德鲁伊。",
+										"{@area 恋人的藏身之处。|040|x} 小队寻找恋人藏身的德鲁伊树林。阿纳亚道出疾病背后的真相，以及要击败引发疾病的恶魔，他们必须做些什么。",
+										"{@area 恶魔对峙。|04b|x} 在阿纳亚和曼南的陪同下，小队及时返回镇上，亲眼目睹塔里安将恶魔吸入自己的身体。他们必须将二者分离，杀死或放逐恶魔，以拯救米纳尔和所有相关之人。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Demon-Caused Malady",
+							"type": "section",
+							"name": "恶魔所致的疾病",
+							"id": "003",
+							"entries": [
+								"肆虐米纳尔的恶魔恶疾不分老幼，似乎随机降临。其真正起因很简单：被囚于神殿内一只瓮中的恶魔引发这场疾病，以扭曲并最终吞噬受害者的生命力，从而让自己脱离囚笼。在神殿内连续停留24小时的人形生物必须通过一次{@dc 15}的体质豁免检定，否则便会染病。",
+								{
+									"ENG_name": "Stages of Malady",
+									"type": "entries",
+									"name": "疾病的阶段",
+									"id": "004",
+									"entries": [
+										"这场疾病会在数日内经历若干阶段。{@spell 侦测毒性和疾病|XPHB|侦测毒性和疾病}可以揭示疾病本质上是魔法所致，但无法指出具体来源，因为那口瓮藏在法术探测范围之外。",
+										"处于第1阶段{@dice 1d4}天后，生物必须通过一次{@dc 15}的体质豁免检定，否则进入第2阶段。无论成败，染病生物每天都必须在黄昏时重复该豁免检定，一旦失败便进入疾病的下一阶段。",
+										"疾病的影响是累积的，且因这场疾病获得的{@condition 力竭|XPHB}等级不会因完成{@variantrule 长休|XPHB}而消除。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Stage 1",
+													"type": "item",
+													"name": "阶段 1",
+													"entry": "染病生物的皮肤上出现一连串疼痛的鞭痕状肿块。"
+												},
+												{
+													"ENG_name": "Stage 2",
+													"type": "item",
+													"name": "阶段 2",
+													"entry": "染病生物出现畏寒、眼睛充血与方向感迷失。它的感知（{@skill 察觉|XPHB}）检定具有{@variantrule 劣势|XPHB}，并获得1级{@condition 力竭|XPHB}。"
+												},
+												{
+													"ENG_name": "Stage 3",
+													"type": "item",
+													"name": "阶段 3",
+													"entry": "染病生物体力衰弱并出现幻觉。它再获得1级{@condition 力竭|XPHB}，且当另一名人形生物距其10尺以内时，陷入{@condition 恐慌|XPHB}状态。"
+												},
+												{
+													"ENG_name": "Stage 4",
+													"type": "item",
+													"name": "第四阶段",
+													"entry": "染病生物的巩膜变黑。它陷入{@condition 失能|XPHB}状态，并再获得1级{@condition 力竭|XPHB}。"
+												}
+											]
+										},
+										"当处于第4阶段的生物未能通过阻止疾病恶化的体质豁免检定时，其颅腔内的物质会熔化为黑色脓液，随即蔓延至全身，生物立即死亡。这些脓液会暂时以一只软泥怪的形态存续（使用{@creature 黑布丁|XMM}数据块），并试图抵达神殿地下隐藏的瓮\u2014\u2014恶魔{@creature 扎拉什塔|MaladyOfMinarrh}就被囚于其中。如果软泥怪不能迅速抵达瓮边，便会渗入地面消散。只有当其他生物攻击它、或阻挡它前往瓮时，它才会主动攻击。",
+										{
+											"ENG_name": "Curing the Malady",
+											"type": "entries",
+											"name": "治愈疾病",
+											"id": "005",
+											"entries": [
+												"{@spell 次等复原术|XPHB}可以暂时消除这场疾病的全部症状与状态，但染病生物下次未能通过延缓疾病恶化的体质豁免检定时，症状便会复发。除非以{@spell 高等复原术|XPHB}或类似魔法治愈，否则疾病将持续肆虐。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adventure Background",
+									"type": "entries",
+									"name": "冒险背景",
+									"id": "006",
+									"entries": [
+										"米纳尔的神殿领袖塔里安，实际上受恶魔领主扎拉什塔的操控。塔里安初到神殿时发现了一只瓮，并在不知情的情况下与恶魔立下契约\u2014\u2014恶魔让他相信，那便是他自己信奉的神明、受苦者与患病者之神达马瑟。在扎拉什塔的阴谋操纵下，塔里安在不知不觉中酿成了这场疾病：他鼓励镇民花越来越多的时间在神殿祈祷，参加通宵仪式和虔敬庆典。",
+										"如今，扎拉什塔以欺瞒与精神控制腐蚀塔里安、使他的同胞染病，只为脱离囚笼、在物质位面站稳脚跟\u2014\u2014它计划在那里建立起一个苦难与恐怖的统治。",
+										{
+											"ENG_name": "Good Intentions",
+											"type": "entries",
+											"name": "善意初衷",
+											"id": "007",
+											"entries": [
+												"塔里安并非邪恶之人\u2014\u2014他只是一个被邪恶存在控制的善良人，那个存在让他相信自己的所作所为是为了镇民的利益。在最后的对决中，为塔里安灵魂而战的战斗，应当清楚地表现为他与全体角色并肩作战。"
+											]
+										},
+										{
+											"ENG_name": "Malignant Plans",
+											"type": "entries",
+											"name": "邪恶计划",
+											"id": "008",
+											"entries": [
+												"这场疾病对恶魔领主而言远不止是折磨凡人的手段。扎拉什塔要脱离此瓮，塔里安必须先摄入一定量由病死者留下的脓液软泥，让恶魔获得足够的力量实体化地附身塔里安的凡人躯体，随后摧毁此瓮，令自己再不可能被囚于其中。当塔里安降至0生命值或被杀时，扎拉什塔便可离开这具人类宿主，现出完整的恶魔形态。"
+											]
+										},
+										{
+											"ENG_name": "Discovering the Demon",
+											"type": "entries",
+											"name": "发现恶魔",
+											"id": "009",
+											"entries": [
+												"几个月前，塔里安和女儿阿纳亚以传教医师的身份来到米纳尔，加入了当地神殿。当他们搬入神殿内的居所后，塔里安走在走廊间时开始听见脑海中的低语。那神秘的声音告诉他神殿里有一扇暗门，通往一处隐秘的地下墓穴。他在那里找到一只黑曜石瓮，镶嵌着红金两色，刻着奇怪的如尼文。那声音对塔里安说，它将指引他涤净镇上的邪恶，并通过虔诚的祈祷保护真正的信徒。",
+												"当他将手按在瓮上时，那声音愈发强大，开始诱使他做出越来越多的\"虔敬\"之举，包括把瓮从地下墓穴移到主圣所圣坛下方的暗格、在深夜诵读深渊语咒文，以及鼓励村民花更多时间待在神殿以加深他们的虔敬。",
+												"借助恶魔的影响力，塔里安说服当地长老议会的大多数人与他在神殿会面，把他们带到足够接近扎拉什塔之瓮的地方，让恶魔得以用类似{@spell 群体暗示术|XPHB}的法术控制他们。议会把神殿典礼与仪式的全权交给塔里安\u2014\u2014取代了那位拒绝与会长老的位置\u2014\u2014从而使塔里安得以用狂热的布道与频繁的信仰示范进一步动摇村民。"
+											]
+										},
+										{
+											"ENG_name": "The Daughter and the Demon",
+											"type": "entries",
+											"name": "女儿与恶魔",
+											"id": "00a",
+											"entries": [
+												"与此同时，塔里安的女儿阿纳亚更多时间待在神殿之外，深受镇民的了解与喜爱，并与一位名叫曼南的年轻德鲁伊萌生恋情。两人对这段关系保密，因为他们认为阿纳亚的父亲\u2014\u2014尤其是随着他愈发强调向达马瑟忏悔与祈祷\u2014\u2014不会认可她与崇奉森林诸神之人相恋。",
+												"当第一批染病的镇民前来神殿求助时，阿纳亚注意到父亲行为反常：他不愿离开神殿地界，命令染病者及其家人留在神殿内，还狂热地坚称信仰与对达马瑟的虔敬是解救米纳尔困境的唯一办法。",
+												"一天深夜，阿纳亚发现父亲深夜在神殿主圣所的达马瑟雕像下进行某种邪魔仪式。当他察觉到她的存在，受扎拉什塔控制的塔里安将阿纳亚囚禁在她的房间里\u2014\u2014恶魔知道，只要把她关在那里超过24小时，她就会染上疾病，在道出真相之前便死去。",
+												"阿纳亚向曼南发出魔法讯息，说明了自己的困境。曼南立刻找到当地盗贼公会，许以重金，请他们协助救出她，并保障二人前往他森林中家园的通路\u2014\u2014他与姨母丽丝克西娅同住在那里。丽丝克西娅是一位大德鲁伊，效忠于一位森林女神，并被束缚于她在那处的树林。盗贼公会悄悄将这对年轻的恋人送走，丽丝克西娅治好了阿纳亚，将他们藏在自己的树林中，以强大的自然魔法护佑。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Cast of Characters",
+									"type": "entries",
+									"name": "角色阵容",
+									"id": "00b",
+									"entries": [
+										"\"关键角色\"表格描述了米纳尔镇中最重要的角色，并附有发音指南和他们的人称代词。",
+										{
+											"type": "table",
+											"caption": "关键角色与神祇",
+											"colLabels": [
+												"名称",
+												"代词",
+												"描述与人际关系"
+											],
+											"colStyles": [
+												"col-4",
+												"col-1",
+												"col-7"
+											],
+											"rows": [
+												[
+													"{@creature 阿纳亚|MaladyOfMinarrh}",
+													"她",
+													"天赋异禀的人类医师；塔里安之女；曼南的恋人"
+												],
+												[
+													"{@creature 侍祭僧侣|XMM|阿莎}",
+													"她",
+													"达马瑟神殿的人类侍僧"
+												],
+												[
+													"{@area 达马瑟|016|x}",
+													"他",
+													"受苦、医治与黑暗中之光的神"
+												],
+												[
+													"{@area 因哈特拉娅妮|047|x}",
+													"她",
+													"自然、森林、爱与重生女神"
+												],
+												[
+													"{@creature 间谍大师|XMM|基娜}",
+													"她/TA",
+													"当地盗贼公会的提夫林队长；罗斯坦的被监护人"
+												],
+												[
+													"{@creature 大德鲁伊|MPMM|丽丝克西娅}",
+													"她",
+													"守护米纳尔附近土地的强大阿斯莫德鲁伊；曼南的姨母"
+												],
+												[
+													"{@creature 德鲁伊|XMM|曼南}",
+													"他",
+													"人类德鲁伊学徒；阿纳亚的恋人；丽丝克西娅的外甥"
+												],
+												[
+													"{@area 罗斯坦|02f|x}",
+													"他",
+													"人类村镇长老；基娜的监护人"
+												],
+												[
+													"{@area 莎伊|029|x}",
+													"她",
+													"\"阳光之臂\"酒馆的老板娘，半身人与兽人混血"
+												],
+												[
+													"{@creature 塔里安（被附身）|MaladyOfMinarrh}",
+													"他",
+													"达马瑟神殿的人类领袖；阿纳亚之父；受扎拉什塔控制"
+												],
+												[
+													"{@creature 扎拉什塔|MaladyOfMinarrh}",
+													"他",
+													"企图入侵物质位面的恶魔领主"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Setting the Adventure",
+									"type": "entries",
+									"name": "设置冒险",
+									"id": "00c",
+									"entries": [
+										"无论你是在已出版的战役设定还是自己的世界中运行这场冒险，都可以按需调整背景设定以契合你的战役。例如，若你的游戏设定在遗忘国度，达马瑟神对应伊尔梅特，因哈特拉娅妮女神对应淑妮；在艾桑椎亚，达马瑟可以是黎明之父的一个面向，而因哈特拉娅妮则是荒野之母。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "section",
+							"name": "冒险引子",
+							"id": "00d",
+							"entries": [
+								"你可以使用以下引子来给角色一个前往米纳尔的理由，也可以与玩家合作，为他们的角色与这座村庄之间建立另一种联系。",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Call for Aid",
+											"type": "item",
+											"name": "请求援助",
+											"entry": "一名玩家角色在米纳尔长大，收到儿时朋友或亲人的消息，说镇民正接连染上一场莫名的疾病。"
+										},
+										{
+											"ENG_name": "Rescue and Reward",
+											"type": "item",
+											"name": "营救与报酬",
+											"entry": "小队得知一位名叫塔里安的祭司悬赏500金币，寻找他被绑架的女儿。"
+										},
+										{
+											"ENG_name": "Town Under Siege",
+											"type": "item",
+											"name": "小镇危困",
+											"entry": "有传言传到小队耳中：米纳尔的一伙盗贼偷窃圣物、绑架了一位德高望重的祭司之女，但镇上没有人敢当面追究他们的罪行，也不知道如何找到他们。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "A Mysterious Malady",
+							"type": "section",
+							"name": "神秘的怪病",
+							"id": "00e",
+							"entries": [
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/001-map-00.01-minarrh.webp"
+											},
+											"imageType": "map",
+											"title": "地图0.01：米纳尔",
+											"width": 3175,
+											"height": 4096,
+											"grid": {
+												"type": "none"
+											},
+											"id": "058",
+											"hrefThumbnail": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/thumbnail/001-map-00.01-minarrh.webp"
+											}
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/002-map-00.01-minarrh-player.webp"
+											},
+											"imageType": "mapPlayer",
+											"title": "玩家版本",
+											"width": 3175,
+											"height": 4096,
+											"grid": {
+												"type": "none"
+											},
+											"mapParent": {
+												"id": "058"
+											}
+										}
+									]
+								},
+								"冒险从角色抵达米纳尔开始。朗读或转述以下内容以铺陈场景：",
+								{
+									"type": "insetReadaloud",
+									"id": "00f",
+									"entries": [
+										"你们听闻这座小镇虽小却生机勃勃、如今麻烦缠身，于是来到米纳尔。抵达时，显然有什么地方不对劲：尽管天气暖和，许多房屋的窗户却关着窗板或钉了木板；街上最先见到的几个镇民要么避开你们的目光，要么向后退开，在你们经过时躲进小巷。前方的大街上有一小群人\u2014\u2014有的搀扶着行走艰难的他人，有的用临时担架抬着呻吟的躯体。其中一人大喊：\"别过来！我们不知道谁染上了它！只有神殿才安全！\""
+									]
+								},
+								"如果角色接近某位未染病的镇民，并通过一次{@dc 15}的魅力（{@skill 游说|XPHB}或{@skill 威吓|XPHB}）检定，那位镇民会在匆匆离开前分享以下信息：",
+								{
+									"type": "list",
+									"items": [
+										"他们的城镇被一场可怕的疾病诅咒，已有数十人沦为病患\u2014\u2014首批染病者前几天刚刚死去，还有更多人命悬一线。",
+										"据米纳尔的神殿领袖所言，拯救城镇的唯一途径就是祈祷与虔敬，因此才会有这么多本地人带着患病的亲人前往达马瑟神殿。"
+									]
+								},
+								"如果角色接近某位染病者或其同伴，他们的症状（见上文\"{@area 疾病的阶段|004|x}\"）清晰可见，而且在抵达镇中心的神殿之前，他们拒绝开口说话。",
+								{
+									"ENG_name": "Temple Under Threat",
+									"type": "entries",
+									"name": "神殿之危",
+									"id": "010",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/003-00-02.temple-scene.webp"
+											},
+											"width": 1700,
+											"height": 1008
+										},
+										"当角色接近神殿时，朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "011",
+											"entries": [
+												"达马瑟神殿巍然耸立，大理石镶宝石的柱子、地板与墙壁熠熠生辉，与镇上其余那些小巧朴素的建筑形成鲜明对比。"
+											]
+										},
+										"一位名叫阿莎的神殿侍从（中立善良，人类{@creature 侍祭僧侣|XMM}）正低声祈祷、温言宽慰，迎接新来的人们。她把角色们引入殿内，解释说神殿领袖正在主持祈祷仪式，结束后便可与他们交谈。阿莎还告诉角色们不要靠近临时医疗所\u2014\u2014那片区域刚从主圣所匆忙隔开。如果角色有问题，她可以分享以下信息：",
+										{
+											"type": "list",
+											"items": [
+												"神殿领袖塔里安一直在拼命帮助镇民治愈这场疾病。他鼓励大家不要失去信心，继续相信达马瑟的怜悯与光明。",
+												"自从塔里安之女、镇上最好的医师阿纳亚被趁乱行窃的盗贼绑走后，来医疗所的染病者越来越多。患病的镇民多到祭司们照看不过来，而且每小时还有更多人到来。",
+												"绑匪必定与正在发生的事有某种关联，但全镇都在为疾病恐慌，没有人自告奋勇去寻找他们、与他们对抗。"
+											]
+										},
+										"当小队走进神殿时，朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "012",
+											"entries": [
+												"这间开阔的大厅中香气缭绕，你们一进门便被一片忙乱淹没。大厅一侧，神殿牧师照料着病患，将他们引往旁边的走廊；另一侧，信众沉浸在祈祷中，重复着神殿领袖的诵词\u2014\u2014他站在众人面前的圣坛上，神情温暖而热切，却显然疲惫不堪。殿内挤满了绝望的镇民，正对着亲人的信物祈祷。"
+											]
+										},
+										"突然，一阵骚动打断了仪式。朗读或转述：",
+										{
+											"type": "insetReadaloud",
+											"id": "013",
+											"entries": [
+												"诵词结束、祭司开始向人群讲话时，两名镇民惊恐地跑进主殿，抓挠着自己的皮肤，痛苦尖叫。神殿侍僧试图拦住他们，而他们的巩膜正逐渐变黑，眼眶渗出黑色的脓液。祭司徒劳地高喊让大家冷静，一些镇民尖叫着争相逃离，另一些则跪倒在地狂乱祈祷。",
+												"祭司冲上前去，触碰其中一名染病者，低声念起治疗法术。魔法光芒黯然消散\u2014\u2014那人的头颅内部已然溶解，从眼眶中淌出，继而蔓延至全身，只留下一滩嗞嗞作响的黑色脓液。他惊恐地后退，那脓液却蜿蜒着朝他爬来，渗入下方石地板的裂缝之中。"
+											]
+										},
+										"死者化成的两只软泥怪（{@creature 黑布丁|XMM|黑布丁们}）似乎目标明确地朝塔里安（使用{@creature 祭司|XMM}数据块）移动，仿佛要吞噬他。若一只软泥怪的生命值降至最大值的一半，或在战斗三轮结束时，它便会消失，渗入神殿地板的裂缝。"
+									]
+								},
+								{
+									"ENG_name": "A Father's Plea",
+									"type": "entries",
+									"name": "父亲的恳求",
+									"id": "014",
+									"entries": [
+										"神殿内的混乱平息后，塔里安请求与角色们私下谈谈。他让阿莎确保在他的书房里不受打扰，随后说出了以下内容：",
+										{
+											"type": "list",
+											"items": [
+												"他的女儿阿纳亚是一位强大的医师，但两天前的夜里，她从自己在神殿的房间里消失了。",
+												"他相信阿纳亚被当地盗贼公会绑架，对方企图利用小镇的悲剧勒索10,000金币赎金。（后半部分并非事实，尽管塔里安信以为真\u2014\u2014是扎拉什塔把赎金的念头植入他的脑海，令他痛苦不安，并在镇内播下分歧。）",
+												"他无力支付这天价赎金，但如果小队能救回阿纳亚，他可以付给他们500金币。塔里安强调阿纳亚的善良、无私，以及她作为社区中深受爱戴的一员的角色。他深切担忧她的安危\u2014\u2014同时也担心没有她的帮助，镇民将不敌这场可怕的疾病。"
+											]
+										},
+										"如果小队询问赎金要求的细节，塔里安解释说，他收到过一封信（随后被他烧掉），让他把钱丢进那口老井（见下文\"{@area 公会之眼|02f|x}\"），之后阿纳亚就会被平安送回。通过一次{@dc 15}的{@skill 洞悉|XPHB}检定，角色们可以看出：尽管塔里安显得心神不宁，但他相信这就是事实。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Minarrh Locations",
+							"type": "section",
+							"name": "米纳尔各处",
+							"id": "015",
+							"entries": [
+								"米纳尔是一座浸润着历史与传统的城镇，虽算不上富裕，许多房屋历经岁月考验，庇护了一代又一代米纳尔人。显然，宗教是这座小镇的重心，神权统治已是延续多年的传统。在调查疾病起因的过程中，小队可以探索米纳尔的以下关键地点。",
+								{
+									"ENG_name": "Temple of Damathur",
+									"type": "entries",
+									"name": "达马瑟神殿",
+									"id": "016",
+									"entries": [
+										"达马瑟神殿是镇上最大的建筑，挤满了染病的镇民，以及为亲人寻求奇迹疗愈的信徒。神殿的医师们正竭尽全力救助有需要的人。",
+										"要搜索生活区（{@area 区域6\u201311|01d|x}），小队必须通过一次{@dc 15}的团体敏捷（{@skill 隐匿|XPHB}）检定。检定失败时，一名侍僧会发现他们并请他们离开这片私人区域，不过他们可以稍后再来尝试。",
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/004-map-00.02-temple-of-damathur.webp"
+													},
+													"imageType": "map",
+													"title": "地图 0.02：达玛瑟尔庙宇",
+													"width": 3212,
+													"height": 4096,
+													"grid": {
+														"type": "square",
+														"size": 167,
+														"offsetX": -65,
+														"scale": 2
+													},
+													"id": "059",
+													"mapRegions": [
+														{
+															"area": "024",
+															"points": [
+																[
+																	561,
+																	496
+																],
+																[
+																	798,
+																	496
+																],
+																[
+																	798,
+																	1659
+																],
+																[
+																	641,
+																	1816
+																],
+																[
+																	641,
+																	664
+																],
+																[
+																	561,
+																	664
+																]
+															]
+														},
+														{
+															"area": "023",
+															"points": [
+																[
+																	812,
+																	500
+																],
+																[
+																	812,
+																	820
+																],
+																[
+																	1140,
+																	820
+																],
+																[
+																	1140,
+																	500
+																]
+															]
+														},
+														{
+															"area": "020",
+															"points": [
+																[
+																	812,
+																	837
+																],
+																[
+																	812,
+																	1162
+																],
+																[
+																	1137,
+																	1162
+																],
+																[
+																	1137,
+																	837
+																]
+															]
+														},
+														{
+															"area": "01f",
+															"points": [
+																[
+																	811,
+																	1170
+																],
+																[
+																	811,
+																	1505
+																],
+																[
+																	1139,
+																	1505
+																],
+																[
+																	1139,
+																	1170
+																]
+															]
+														},
+														{
+															"area": "01e",
+															"points": [
+																[
+																	1181,
+																	501
+																],
+																[
+																	1181,
+																	1574
+																],
+																[
+																	1836,
+																	1574
+																],
+																[
+																	1836,
+																	501
+																]
+															]
+														},
+														{
+															"area": "01d",
+															"points": [
+																[
+																	1887,
+																	751
+																],
+																[
+																	2389,
+																	751
+																],
+																[
+																	2389,
+																	920
+																],
+																[
+																	2562,
+																	920
+																],
+																[
+																	2562,
+																	1417
+																],
+																[
+																	1887,
+																	1417
+																]
+															]
+														},
+														{
+															"area": "01b",
+															"points": [
+																[
+																	2141,
+																	1753
+																],
+																[
+																	2141,
+																	2513
+																],
+																[
+																	2978,
+																	2513
+																],
+																[
+																	2978,
+																	1753
+																]
+															]
+														},
+														{
+															"area": "01a",
+															"points": [
+																[
+																	801,
+																	2091
+																],
+																[
+																	801,
+																	2424
+																],
+																[
+																	1302,
+																	2424
+																],
+																[
+																	1302,
+																	2091
+																]
+															]
+														},
+														{
+															"area": "01c",
+															"points": [
+																[
+																	1810,
+																	2265
+																],
+																[
+																	1810,
+																	2578
+																],
+																[
+																	2130,
+																	2578
+																],
+																[
+																	2130,
+																	2265
+																]
+															]
+														},
+														{
+															"area": "01c",
+															"points": [
+																[
+																	1987,
+																	2587
+																],
+																[
+																	1987,
+																	2750
+																],
+																[
+																	2133,
+																	2750
+																],
+																[
+																	2133,
+																	2587
+																]
+															]
+														},
+														{
+															"area": "017",
+															"points": [
+																[
+																	894,
+																	2595
+																],
+																[
+																	1976,
+																	2595
+																],
+																[
+																	1976,
+																	2757
+																],
+																[
+																	2058,
+																	2757
+																],
+																[
+																	2058,
+																	3679
+																],
+																[
+																	894,
+																	3679
+																]
+															]
+														},
+														{
+															"area": "025",
+															"points": [
+																[
+																	2538,
+																	3515
+																],
+																[
+																	2571,
+																	3515
+																],
+																[
+																	2571,
+																	3465
+																],
+																[
+																	2648,
+																	3465
+																],
+																[
+																	2648,
+																	3432
+																],
+																[
+																	2722,
+																	3432
+																],
+																[
+																	2722,
+																	3464
+																],
+																[
+																	2794,
+																	3464
+																],
+																[
+																	2794,
+																	3508
+																],
+																[
+																	2937,
+																	3508
+																],
+																[
+																	2937,
+																	3679
+																],
+																[
+																	2794,
+																	3679
+																],
+																[
+																	2794,
+																	3718
+																],
+																[
+																	2719,
+																	3718
+																],
+																[
+																	2719,
+																	3754
+																],
+																[
+																	2647,
+																	3754
+																],
+																[
+																	2647,
+																	3718
+																],
+																[
+																	2573,
+																	3718
+																],
+																[
+																	2573,
+																	3666
+																],
+																[
+																	2538,
+																	3666
+																]
+															]
+														}
+													],
+													"hrefThumbnail": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/thumbnail/004-map-00.02-temple-of-damathur.webp"
+													}
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/005-map-00.02-temple-of-damathur-player.webp"
+													},
+													"imageType": "mapPlayer",
+													"title": "玩家版本",
+													"width": 3212,
+													"height": 4096,
+													"grid": {
+														"type": "square",
+														"size": 167,
+														"offsetX": -65,
+														"scale": 2
+													},
+													"mapParent": {
+														"id": "059"
+													}
+												}
+											]
+										},
+										{
+											"ENG_name": "1: Main Sanctum",
+											"type": "entries",
+											"name": "1：主圣所",
+											"id": "017",
+											"entries": [
+												"这座高大的拱顶厅堂是神殿的主殿，信徒们在此祈祷，也在此聆听祭司主持仪式或布道时的教诲。大厅装饰着香炉、蜡烛，以及种种展示达马瑟与其信徒之仁慈与美德的圣物和艺术品。",
+												{
+													"ENG_name": "Statue of Damathur",
+													"type": "entries",
+													"name": "达马瑟雕像",
+													"id": "018",
+													"entries": [
+														"这尊大理石雕像刻画了一名身着长袍的男子，一只手张开手掌向前伸出，另一只手握着一根多刺的枝条。他面容带着隐痛的怜悯，尽管双手和手臂伤痕累累，仍坚定伫立。这便是达马瑟，怜悯与坚忍之神，受苦者与患病者之主。"
+													]
+												},
+												{
+													"ENG_name": "Hidden Urn",
+													"type": "entries",
+													"name": "隐藏的瓮",
+													"id": "019",
+													"entries": [
+														"达马瑟雕像所在的圣坛后方，一块可滑动的石板遮蔽着{@creature 扎拉什塔|MaladyOfMinarrh|扎拉什塔的}瓮。找到地板上的凹槽需要通过一次{@dc 25}的智力（{@skill 调查|XPHB}）检定，启动隐藏机关需要通过一次{@dc 15}的敏捷（{@skill 巧手|XPHB}）检定。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "2: Library",
+											"type": "entries",
+											"name": "2：图书馆",
+											"id": "01a",
+											"entries": [
+												"这间小小的图书室与学习区收藏着医术、药剂制作、宗教及其他虔敬主题的典籍。通过一次{@dc 20}的智力（{@skill 调查|XPHB}）检定的角色，会在其中一本书里发现一卷{@item 法术卷轴|XDMG}的{@spell 放逐术|XPHB}（见冒险后文\"{@area 恶魔对峙|04b|x}\"）。"
+											]
+										},
+										{
+											"ENG_name": "3: Infirmary",
+											"type": "entries",
+											"name": "3：医疗所",
+											"id": "01b",
+											"entries": [
+												"在医疗所照料染病者的侍僧们（如果阿莎在附近，也包括她）竭力劝阻小队进入医疗所。所内有数名处于疾病不同阶段的染病者，有些人的亲人正在照看他们或在旁祈祷。侍僧们说，在角色们于内殿亲眼目睹的事件之前，没有人见过任何染病者化为软泥。只有阿莎\u2014\u2014若以一次成功的{@dc 18}魅力（{@skill 游说|XPHB}）检定追问\u2014\u2014能告诉小队：她本周早些时候曾目睹一例死亡，但塔里安坚持让她不要告诉任何人，以免在镇民中引发大范围恐慌。"
+											]
+										},
+										{
+											"ENG_name": "4-5: Closets",
+											"type": "entries",
+											"name": "4-5：储物间",
+											"id": "01c",
+											"entries": [
+												"这几个房间中，一间是堆满神殿用具的储藏室，另一间是简陋但尚可使用的盥洗室。"
+											]
+										},
+										{
+											"ENG_name": "6: Acolytes' Quarters",
+											"type": "entries",
+											"name": "6：侍僧居所",
+											"id": "01d",
+											"entries": [
+												"这些简朴而舒适的房间供神殿侍僧居住。"
+											]
+										},
+										{
+											"ENG_name": "7: Meditation Garden",
+											"type": "entries",
+											"name": "7：冥想花园",
+											"id": "01e",
+											"entries": [
+												"花园里有几株略显疯长的修剪造型灌木，以及一方倒影池。"
+											]
+										},
+										{
+											"ENG_name": "8: Asha's Room",
+											"type": "entries",
+											"name": "8：阿莎的房间",
+											"id": "01f",
+											"entries": [
+												"这个房间属于阿莎。书桌上的小杯子里插着干花，床上放着一本经书。"
+											]
+										},
+										{
+											"ENG_name": "9: Anaya's Room",
+											"type": "entries",
+											"name": "9：阿纳亚的房间",
+											"id": "020",
+											"entries": [
+												"这个房间大多整洁有序，只有床铺未整理。被动察觉为15或更高的角色，或通过一次{@dc 15}的智力（{@skill 调查|XPHB}）检定的角色，会注意到微微敞开的窗户透进一股穿堂风。",
+												{
+													"ENG_name": "Anaya's Desk",
+													"type": "entries",
+													"name": "阿纳亚的书桌",
+													"id": "021",
+													"entries": [
+														"书桌上整齐地码放着宗教与医术典籍。书页间夹着干枯的野花，以及曼南写来的一封封情书，其中一封写道：",
+														{
+															"type": "insetReadaloud",
+															"id": "022",
+															"entries": [
+																"吾爱：",
+																"你的恐惧让我难以承受，几乎与和你分离一样难以忍受。当你准备好来找我时，只需告诉我，我便带你离开此地，但你必须把性命托付给我。记住这些符号，把它们铭刻于心，如同铭记我的名字，我便会带你离开这片威胁着要抽干你光明的黑暗。"
+															]
+														},
+														{
+															"type": "quote",
+															"entries": [
+																"{@link 下载信件|https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/pdf/MaladyOfMinarrh/000-mannan-letter-handout.pdf}"
+															],
+															"skipMarks": true,
+															"skipItalics": true,
+															"style": "quote-pull"
+														},
+														"与信件放在一起的，还有一块磨旧的鞣制兽皮，上面似乎是一套如尼密文，兽皮之下压着几张纸，看来她一直在练习这种文字。这些如尼文是丽丝克西娅树林附近森林中那些如尼文的抄本（见冒险后文\"{@area 恋人的藏身之处|040|x}\"）。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "10: Tharians Room",
+											"type": "entries",
+											"name": "10：塔里安的房间",
+											"id": "023",
+											"entries": [
+												"以一次成功的{@dc 20}智力（{@skill 调查|XPHB}）检定搜索塔里安房间的角色，会在书桌中发现一个上锁的暗格，需要使用盗贼工具通过一次{@dc 22}的敏捷检定才能打开。里面是数卷以晦涩深渊语写成的卷轴，描述了一场古老的仪式，但小队无法解读出更多内容。"
+											]
+										},
+										{
+											"ENG_name": "11: Hallway & Secret Door",
+											"type": "entries",
+											"name": "11：走廊与暗门",
+											"id": "024",
+											"entries": [
+												"走廊尽头有一处壁龛，摆着一张桌子和一座小雕像。桌子后面是一通往地下墓穴的暗门；发现这扇门与隐藏的开门机关需要通过一次{@dc 18}的智力（{@skill 调查|XPHB}）检定。"
+											]
+										},
+										{
+											"ENG_name": "12: Crypt",
+											"type": "entries",
+											"name": "12：地下墓穴",
+											"id": "025",
+											"entries": [
+												"这间满是尘土的地下墓穴安放着米纳尔历代宗教领袖的石棺，棺上刻着他们的容貌。通过一次18的智力（{@skill 调查|XPHB}）检定的角色，会注意到一处尘土被扰动、石板被移开的地方，露出其中一座石棺后的一个小暗格。囚禁扎拉什塔的瓮原本就藏在这里，直到塔里安找到它，把它移到了楼上的主圣所（{@area 区域1|017|x}）。",
+												"打开任何一座石棺都需要通过一次{@dc 20}的力量（{@skill 运动|XPHB}）检定。棺内的火化遗骸大半已是灰烬尘土，但仍留有一些随身之物，包括一本大半朽坏的日记\u2014\u2014里面画着一只刻有华丽纹饰的瓮的素描\u2014\u2014以及一条{@item 念珠项链|XDMG}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Sanctum of the Wise",
+									"type": "entries",
+									"name": "智者圣所",
+									"id": "026",
+									"entries": [
+										"米纳尔的长老们居住在智者圣所\u2014\u2014镇上最古老的建筑，曾是一处具有重大文化与宗教意义的所在。当角色接近时，朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "027",
+											"entries": [
+												"通往圣所的道路两旁立着风化的石柱，饰以繁复的雕刻，每一根都诉说着村庄悠久过往中的一段故事。拱门框住入口，召唤来客走入历史与传统的怀抱。"
+											]
+										},
+										"任何来自米纳尔的角色都知道以下内容：",
+										{
+											"type": "list",
+											"items": [
+												"长老们在社区中备受尊崇，以智慧、阅历以及与小镇历史传统的深厚联结而闻名。",
+												"长老们是村庄文化遗产的守护者，受托保存并传承古老的仪式、信仰与习俗。"
+											]
+										},
+										"所内有几位长老正在会面，他们可以就塔里安和阿纳亚分享以下情况：",
+										{
+											"type": "list",
+											"items": [
+												"这对父女大约两个月前来到米纳尔，以游方医师和达马瑟信徒的身份工作。",
+												"随着阿纳亚和塔里安在镇上越来越受爱戴与信任，神殿的领袖们给予塔里安更多主持神殿内仪式与典礼的权限。",
+												"几周后，他们深受塔里安热情与虔敬的打动，请他接替前任大祭司罗斯坦\u2014\u2014他们觉得罗斯坦的信仰不够坚定。",
+												"自从罗斯坦被免去职务后，这位前任大祭司再未露面，其他长老都认为他是羞愧地逃离了小镇。",
+												"米纳尔是一个神权社会，通过一次{@dc 15}的感知（{@skill 洞悉|XPHB}）检定的角色可以了解到，这座小镇总体上并不欢迎不同信仰的人。异教徒会被容忍，却不会被完全平等地接纳。"
+											]
+										},
+										{
+											"ENG_name": "Fiendish Influence",
+											"type": "entries",
+											"name": "邪魔影响",
+											"id": "028",
+											"entries": [
+												"镇上的长老们受恶魔操控，恶魔用类似{@spell 群体暗示术|XPHB}的魔法阻止他们出言反对塔里安。小队可以发现罗斯坦藏身在水井旁的一处小居所里\u2014\u2014那口井正是盗贼公会的入口（见冒险后文\"{@area 公会之眼|02f|x}\"）。通过一次{@dc 17}的感知（{@skill 洞悉|XPHB}）检定，角色可以察觉有些地方可疑，但长老们似乎既没有说谎，也没有隐瞒什么。来自米纳尔的角色在此检定上具有{@variantrule 优势|XPHB}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Sunlit Arms",
+									"type": "entries",
+									"name": "阳光之臂酒馆",
+									"id": "029",
+									"entries": [
+										"镇上唯一的酒馆空得出奇。当角色进门时，朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "02a",
+											"entries": [
+												"你们穿过正门，看见肮脏的桌椅，以及一张长吧台，吧台后不远处是一道楼梯。阴影里，一个橄榄绿皮肤的矮小身影趴在吧台上，双手间夹着一只大酒杯，头垂得低低的。察觉到你们的到来时，她期待地抬起头......随即黯然神伤，转身回到自己的酒里。\"要是想要房间，楼上去。想要吃的或补给，你们来错地方了。她走了，我也失去了一切。\""
+											]
+										},
+										"\"阳光之臂\"的老板娘莎伊约有4尺半高，手臂健壮，方下巴，下垂的下唇上方露出小小的獠牙。她沮丧地告诉小队，虽然酒馆的门还开着，但她已提供不了什么饮食或舒适享受。她的伴侣奇塔妮曾是酒馆的门面，莎伊则是厨子；但奇塔妮在染上疾病后跑了，不愿让莎伊眼睁睁看着自己受苦......至少莎伊是这么以为的。事实上，作为镇上神权统治的坚定不信者，莎伊不愿奇塔妮去神殿；而奇塔妮在夜里被疾病缠身，趁莎伊熟睡时消失了。尽管来镇上的旅人寥寥无几，莎伊仍让酒馆的大门敞开着，盼着奇塔妮有朝一日归来。",
+										{
+											"ENG_name": "Lovers Meeting",
+											"type": "entries",
+											"name": "恋人相会",
+											"id": "02b",
+											"entries": [
+												"如果被追问，莎伊还能告诉冒险者：几天前，在疾病尚未完全席卷小镇时，一个名叫曼南的年轻人来过酒馆，付了双倍的房费订了一间房住两晚，但要求莎伊对他的来去不必在意。莎伊注意到，他离开后那张床一直没人碰过。"
+											]
+										},
+										{
+											"ENG_name": "Further Clues",
+											"type": "entries",
+											"name": "更多线索",
+											"id": "02c",
+											"entries": [
+												"如果小队请求用饭，莎伊会用她仅剩的一点新鲜食物招待他们\u2014\u2014一些简单的汤和面包；如果他们需要基本补给，她可以为旅程提供干{@item 口粮|XPHB}。如果小队留宿，他们住宿的房间中有一间正是曼南住过的。在这间房间里，通过一次{@dc 15}的智力（{@skill 调查|XPHB}）检定的角色会在地板下找到一封信，以及一张石雕地图的拓片（把{@adventure 盗贼巢穴地图|MaladyOfMinarrh|0|盗贼巢穴地图手颁}手颁发给玩家）。这封信是阿纳亚被囚前寄给曼南的，上面写道：",
+												{
+													"type": "insetReadaloud",
+													"id": "02d",
+													"entries": [
+														"最亲爱的曼南：",
+														"恐怕笼罩我父亲的这片黑暗，比我想象的更加险恶。我虽渴望来到你身边，却担心一旦离开他，会有可怕的事情发生。我打算今夜保持清醒守着他，看看能否弄清楚究竟是什么在折磨他的心。"
+													]
+												},
+												{
+													"type": "quote",
+													"entries": [
+														"{@link 下载信件|https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/pdf/MaladyOfMinarrh/001-anaya-letter-handout.pdf}"
+													],
+													"skipMarks": true,
+													"skipItalics": true,
+													"style": "quote-pull"
+												}
+											]
+										},
+										{
+											"ENG_name": "Thief In the Night",
+											"type": "entries",
+											"name": "黑夜中的盗贼",
+											"id": "02e",
+											"entries": [
+												"如果小队在酒馆过夜（莎伊不收钱，但如果角色坚持付费，她会说每人5银币），一名当地的窃贼（数据块{@creature 间谍|XMM}）会来造访他们。",
+												"如果无人守夜，让一名玩家掷一次{@dice d20}。若结果为10或更低，小队醒来时会发现武器少了一半（如果角色尚未找到地图，地图也一并丢失），原处只留下一枚小硬币，上面刻着一只眼睛、眼中漩涡状波纹的图案，作为被偷走物品的替代。",
+												"如果有角色守夜，他们可以试图拦截闯入者，后者会试图从窗户逃走。如果角色追击，可以跟着那窃贼一路来到井边（见下文\"{@area 公会之眼|02f|x}\"）。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Eyes of the Guild",
+							"type": "section",
+							"name": "公会之眼",
+							"id": "02f",
+							"entries": [
+								"盗贼公会是村内一股不容小觑的势力，对一切都有眼线\u2014\u2014这也是他们\"众眼\"诨名的由来。这几个星期以来，他们看着这位神殿领袖的狂热行径愈演愈烈，早已对其动机生疑。公会的一位队长基娜，是长老罗斯坦的被监护人\u2014\u2014罗斯坦被塔里安赶下职位后正藏匿不出，唯恐出言反对会遭报复。当众人同基娜交谈时，这位提夫林解释说，根本没有绑架这回事\u2014\u2014实际上是他们在塔里安把女儿囚禁于神殿、导致她染上疾病之后，协助阿纳亚逃出了米纳尔。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/006-00-03.thieves-den-handout.webp"
+									},
+									"title": "盗贼巢穴地图手颁",
+									"width": 850,
+									"height": 2382,
+									"grid": {
+										"type": "none",
+										"size": 736,
+										"scale": 3,
+										"distance": 25
+									},
+									"imageType": "map",
+									"id": "05a",
+									"mapRegions": [
+										{
+											"area": "031",
+											"points": [
+												[
+													313,
+													320
+												],
+												[
+													313,
+													550
+												],
+												[
+													553,
+													550
+												],
+												[
+													553,
+													320
+												]
+											]
+										},
+										{
+											"area": "033",
+											"points": [
+												[
+													399,
+													754
+												],
+												[
+													399,
+													1051
+												],
+												[
+													467,
+													1051
+												],
+												[
+													467,
+													754
+												]
+											]
+										},
+										{
+											"area": "037",
+											"points": [
+												[
+													496,
+													685
+												],
+												[
+													496,
+													748
+												],
+												[
+													556,
+													748
+												],
+												[
+													556,
+													685
+												]
+											]
+										},
+										{
+											"area": "039",
+											"points": [
+												[
+													314,
+													873
+												],
+												[
+													314,
+													935
+												],
+												[
+													360,
+													935
+												],
+												[
+													360,
+													873
+												]
+											]
+										},
+										{
+											"area": "038",
+											"points": [
+												[
+													456,
+													1073
+												],
+												[
+													456,
+													1120
+												],
+												[
+													504,
+													1120
+												],
+												[
+													504,
+													1073
+												]
+											]
+										},
+										{
+											"area": "03a",
+											"points": [
+												[
+													360,
+													1255
+												],
+												[
+													360,
+													1312
+												],
+												[
+													404,
+													1312
+												],
+												[
+													404,
+													1255
+												]
+											]
+										},
+										{
+											"area": "03b",
+											"points": [
+												[
+													501,
+													1444
+												],
+												[
+													501,
+													1500
+												],
+												[
+													553,
+													1500
+												],
+												[
+													553,
+													1444
+												]
+											]
+										},
+										{
+											"area": "03d",
+											"points": [
+												[
+													165,
+													1717
+												],
+												[
+													303,
+													1579
+												],
+												[
+													548,
+													1579
+												],
+												[
+													691,
+													1722
+												],
+												[
+													691,
+													1957
+												],
+												[
+													548,
+													2100
+												],
+												[
+													333,
+													2100
+												],
+												[
+													165,
+													1964
+												]
+											]
+										}
+									],
+									"hrefThumbnail": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/thumbnail/006-00-03.thieves-den-handout.webp"
+									}
+								},
+								"\"众眼\"以一口废弃的水井为据点，小队可以通过与莎伊、酒馆里的那个窃贼或罗斯坦交谈来发现这一点（见上文\"{@area 智者圣所|026|x}\"）。",
+								{
+									"type": "insetReadaloud",
+									"id": "030",
+									"entries": [
+										"这条小巷的尽头是一口破旧的老井，显然已许久无人使用。井口覆着发霉的木板，本应连在井口的绳桶装置早已朽烂。井边立着一块小牌子，上面是奇怪的手写符号。"
+									]
+								},
+								"如果小队中有人通晓盗贼黑话，就能读懂井底的牌子，上面写着\"前行之路，寻得盟友\u2014\u2014或临险境\"。一次成功的{@dc 16}智力（{@skill 调查|XPHB}）检定还能发现空井后方的暗门，门后是一间小屋，唯一未被影响的村庄长老罗斯坦正藏身于此。",
+								"在最初的警惕之后，他告诉小队，他一直担忧长老们对神殿领袖日益狂热的态度，并开始为自身安危感到恐惧。他来到这里\u2014\u2014一个由他的被监护人基娜带他来的藏身之处；他形容基娜是\"一个误入歧途的孩子，学会了用非常规的手段在世上谋生\"。罗斯坦不相信盗贼公会绑架了阿纳亚\u2014\u2014自那对父女来到米纳尔起，阿纳亚一直善待基娜，尽管两人在这座小镇的社会中角色迥异。他敦促众人去找基娜谈谈，因为她是盗贼公会的队长，公会入口就在外面那口井里。",
+								"通过一次{@dc 18}的魅力（{@skill 游说|XPHB}）检定\u2014\u2014或者只要角色们真诚地表达出帮助阿纳亚的意愿\u2014\u2014罗斯坦便会与小队分享一张标出压力板位置的地图（与他们在{@area 阳光之臂酒馆|029|x}曼南房间里能找到的那张相同）。把盗贼巢穴地图手颁发给玩家。",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/007-map-00.03-thieves-den.webp"
+											},
+											"imageType": "map",
+											"title": "地图 0.03：窃贼巢穴",
+											"width": 1471,
+											"height": 4096,
+											"grid": {
+												"type": "square",
+												"size": 80,
+												"offsetX": 48,
+												"offsetY": 56
+											},
+											"id": "05b",
+											"mapRegions": [
+												{
+													"area": "031",
+													"points": [
+														[
+															525,
+															309
+														],
+														[
+															525,
+															708
+														],
+														[
+															927,
+															708
+														],
+														[
+															927,
+															309
+														]
+													]
+												},
+												{
+													"area": "037",
+													"points": [
+														[
+															848,
+															946
+														],
+														[
+															848,
+															1023
+														],
+														[
+															927,
+															1023
+														],
+														[
+															927,
+															946
+														]
+													]
+												},
+												{
+													"area": "039",
+													"points": [
+														[
+															525,
+															1265
+														],
+														[
+															525,
+															1340
+														],
+														[
+															602,
+															1340
+														],
+														[
+															602,
+															1265
+														]
+													]
+												},
+												{
+													"area": "038",
+													"points": [
+														[
+															763,
+															1572
+														],
+														[
+															763,
+															1663
+														],
+														[
+															847,
+															1663
+														],
+														[
+															847,
+															1572
+														]
+													]
+												},
+												{
+													"area": "03a",
+													"points": [
+														[
+															608,
+															1902
+														],
+														[
+															608,
+															1978
+														],
+														[
+															688,
+															1978
+														],
+														[
+															688,
+															1902
+														]
+													]
+												},
+												{
+													"area": "03b",
+													"points": [
+														[
+															842,
+															2213
+														],
+														[
+															842,
+															2298
+														],
+														[
+															930,
+															2298
+														],
+														[
+															930,
+															2213
+														]
+													]
+												},
+												{
+													"area": "033",
+													"points": [
+														[
+															660,
+															1261
+														],
+														[
+															660,
+															1546
+														],
+														[
+															795,
+															1546
+														],
+														[
+															795,
+															1261
+														]
+													]
+												},
+												{
+													"area": "03d",
+													"points": [
+														[
+															283,
+															3093
+														],
+														[
+															544,
+															3335
+														],
+														[
+															914,
+															3335
+														],
+														[
+															1178,
+															3096
+														],
+														[
+															1178,
+															2702
+														],
+														[
+															933,
+															2458
+														],
+														[
+															531,
+															2458
+														],
+														[
+															283,
+															2700
+														]
+													]
+												}
+											],
+											"hrefThumbnail": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/thumbnail/007-map-00.03-thieves-den.webp"
+											}
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/008-map-00.03-thieves-den-player.webp"
+											},
+											"imageType": "mapPlayer",
+											"title": "玩家版本",
+											"width": 1471,
+											"height": 4096,
+											"grid": {
+												"type": "square",
+												"size": 80,
+												"offsetX": 48,
+												"offsetY": 56
+											},
+											"mapParent": {
+												"id": "05b"
+											}
+										}
+									]
+								},
+								{
+									"ENG_name": "1: Hideout Entrance",
+									"type": "entries",
+									"name": "1：藏身处入口",
+									"id": "031",
+									"entries": [
+										"要抵达藏身处，角色必须下到老井底部，沿着下方湿滑的石制走廊前行。井深40尺；不借助工具攀爬而下需要通过一次{@dc 15}的力量（{@skill 运动|XPHB}）检定才能安全降底。",
+										{
+											"type": "insetReadaloud",
+											"id": "032",
+											"entries": [
+												"你们到达老井底部，踏进几寸深的泥泞污水。在你们前方，看到的不是井壁，而是一条走廊。内部的石墙被一支小火把勉强照亮，但那点光亮不足以看清身前几尺之外。奇怪的是，你们听到更前方传来滴水声，而那处显然并非井水源头的合理所在。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2: Trapped Corridor",
+									"type": "entries",
+									"name": "2：陷阱走廊",
+									"id": "033",
+									"entries": [
+										"通往盗贼公会主体区域的长廊受数个陷阱和两只亲善公会的{@creature 水元素|XMM|水元素}保护。地上有五块压力板，以略微凸起的石砖标记。要不触发陷阱走到走廊尽头，角色必须要么找到并拆除它们，要么完全避开地面，例如借助{@spell 蛛行术|XPHB}或飞行。",
+										{
+											"type": "entries",
+											"id": "034",
+											"entries": [
+												{
+													"ENG_name": "Prepared in Advance",
+													"type": "entries",
+													"name": "提前准备",
+													"id": "035",
+													"entries": [
+														"如果小队见过罗斯坦并说服他交出前往会见基娜的路线图，或者他们拿到了曼南在酒馆房间里的石雕拓片，他们手中便有一张标明落足点的地图，可避免触发陷阱。在每一排设有陷阱的地砖中，地图上标有\"X\"的位置是能暂时解除该陷阱的压力板；踩中同一排的其他任何位置都会触发陷阱。看过地图的角色通过一次{@dc 12}的感知（{@skill 洞悉|XPHB}）检定，就能在进入走廊时拼合出地图与走廊形状相符的结论。"
+													]
+												},
+												{
+													"ENG_name": "Detect and Disarm",
+													"type": "entries",
+													"name": "侦测与解除",
+													"id": "036",
+													"entries": [
+														"这条走廊的所有陷阱在侦测与拆除上都基于相同的机制：以一个{@action 搜索|XPHB}动作，处于陷阱区域5尺内的生物可以检视它并进行一次{@dc 18}的感知（{@skill 察觉|XPHB}）检定，成功即可发现陷阱（陷阱门的铰链、毒镖或毒气的孔洞，或井中水元素陷阱的地板凹槽）。",
+														"陷阱被发现后，角色可以用一个{@action 研究|XPHB}动作检视它，并进行一次{@dc 18}的智力（{@skill 调查|XPHB}）检定，从而辨明踩中地图上某块特定的压力板即可在不触发陷阱的情况下通过。踩上该压力板还会使陷阱解除6秒。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Trap 1: Silent Alarm",
+											"type": "entries",
+											"name": "陷阱1：无声警报",
+											"id": "037",
+											"entries": [
+												"{@i 骚扰陷阱}",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Trigger:",
+															"type": "item",
+															"name": "触发条件：",
+															"entry": "一只生物移动到1号压力板所在那一排地砖中的任意一块上"
+														},
+														{
+															"ENG_name": "Duration:",
+															"type": "item",
+															"name": "持续时间：",
+															"entry": "立即"
+														}
+													]
+												},
+												"踩中这个陷阱会发出一声轻微的闷响，此外没有其他明显效果。然而它同时会在盗贼们的议事室（见下文\"{@area 集会室|03d|x}\"）触发警报，提醒后室的公会成员，让他们在小队穿过这条走廊进入房间时抢占先机。"
+											]
+										},
+										{
+											"ENG_name": "Trap 2: Spiked Pit",
+											"type": "entries",
+											"name": "陷阱2：尖刺深坑",
+											"id": "038",
+											"entries": [
+												"{@i 致命陷阱}",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Trigger:",
+															"type": "item",
+															"name": "触发条件：",
+															"entry": "一只生物移动到2号压力板所在那一排地砖中的任意一块上"
+														},
+														{
+															"ENG_name": "Duration:",
+															"type": "item",
+															"name": "持续时间：",
+															"entry": "立即"
+														}
+													]
+												},
+												"这段地板上暗藏的陷阱门通向一个10尺深、布满尖刺的深坑。坠入坑中的生物跌落坑底，受到3（{@dice 1d6}）点坠落钝击伤害，外加9（{@dice 2d8}）点尖刺穿刺伤害。此后陷阱门保持敞开。"
+											]
+										},
+										{
+											"ENG_name": "Trap 3: Poisoned Darts",
+											"type": "entries",
+											"name": "陷阱3：毒镖",
+											"id": "039",
+											"entries": [
+												"{@i 致命陷阱}",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Trigger:",
+															"type": "item",
+															"name": "触发条件：",
+															"entry": "一只生物移动到3号压力板所在那一排地砖中的任意一块上"
+														},
+														{
+															"ENG_name": "Duration:",
+															"type": "item",
+															"name": "持续时间：",
+															"entry": "瞬间生效；若该陷阱此前触发次数少于三次，则在下回合开始时复位"
+														}
+													]
+												},
+												"未按顺序踩中第二块压力板会触发墙内暗龛射出的一阵毒镖。这一排地砖上的每只生物必须通过一次{@dc 14}的敏捷豁免检定，否则被{@dice 1d4}支镖击中，每支镖造成3（{@dice 1d6}）点毒素伤害。"
+											]
+										},
+										{
+											"ENG_name": "Trap 4: Poison Gas",
+											"type": "entries",
+											"name": "陷阱4：毒气",
+											"id": "03a",
+											"entries": [
+												"{@i 骚扰陷阱}",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Trigger:",
+															"type": "item",
+															"name": "触发条件：",
+															"entry": "一只生物移动到4号压力板所在那一排地砖中的任意一块上"
+														},
+														{
+															"ENG_name": "Duration:",
+															"type": "item",
+															"name": "持续时间：",
+															"entry": "立即"
+														}
+													]
+												},
+												"这套机关会释放有毒气体，对陷入云雾中的人造成伤害，并可能使其中毒。",
+												"要解除这个陷阱，需要找到并封死通气孔，或使气源失效。"
+											]
+										},
+										{
+											"ENG_name": "Trap 5: Well Water Elementals",
+											"type": "entries",
+											"name": "陷阱5：井中水元素",
+											"id": "03b",
+											"entries": [
+												"{@i 致命陷阱}",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Trigger:",
+															"type": "item",
+															"name": "触发条件：",
+															"entry": "一只生物移动到5号压力板所在那一排地砖中的任意一块上"
+														},
+														{
+															"ENG_name": "Duration:",
+															"type": "item",
+															"name": "持续时间：",
+															"entry": "立即"
+														}
+													]
+												},
+												"如果角色触发了最后一块陷阱地砖，两堵墙会相距15尺升起，封死走廊，两只{@creature 水元素|XMM|水元素}则从走廊两侧渗过墙壁，袭击小队。",
+												"水元素被消灭后，房间里的水渐渐沉入地面，堵住走廊的墙也随之降下，露出前方的一扇门。"
+											]
+										},
+										{
+											"ENG_name": "Beyond the Traps",
+											"type": "entries",
+											"name": "越过陷阱",
+											"id": "03c",
+											"entries": [
+												"这扇门关着，但未上锁（也没有陷阱）。门后是一间简朴的议事室，盗贼公会的成员们\u2014\u2014包括基娜\u2014\u2014正在里面讨论米纳尔的局势。",
+												"如果角色成功避开了所有陷阱，里面的盗贼仍在开会。通过一次{@dc 12}的感知（{@skill 察觉|XPHB}）检定，角色能察觉门后房间内传来压低的谈话声。否则，盗贼们已得知小队的到来，正无声地埋伏着，只等闯入者一开门便发动攻击。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/009-00-04.water-elemental-battle.webp"
+													},
+													"width": 1700,
+													"height": 866
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3: Gathering Room",
+									"type": "entries",
+									"name": "3：集会室",
+									"id": "03d",
+									"entries": [
+										"这间宽敞的议事室里摆着几张简朴的桌凳，没有繁复的陷阱或防御。房间深处立着一座坚固的保险库，金属门紧锁密封。四名公会成员（两名{@creature 历战武者|XMM|历战武者}和两名{@creature 间谍|XMM|间谍们}）正与他们的一位队长\u2014\u2014一位名叫基娜的{@creature 间谍大师|XMM}\u2014\u2014在此议事。",
+										{
+											"ENG_name": "Encounter with the Guild",
+											"type": "entries",
+											"name": "与公会相遇",
+											"id": "03e",
+											"entries": [
+												"公会对生人来者不善，起初会把小队当作敌对者\u2014\u2014如果他们在小队到来之前就已收到风声，便会抢得先机，先动手后问话。然而，等看清来者是谁后，一个身影命令其他人停手。这便是基娜（混乱中立，提夫林{@creature 间谍大师|XMM}），盗贼公会的队长，罗斯坦的被监护人。她当时就藏在神殿祈祷仪式的人群中，认出小队是镇上新来的人，于是命令公会众人停手，伸出手做出和平的姿态。一旦确认小队并无恶意，她便会透露自己的怀疑：阿纳亚的失踪背后，另有隐情。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/010-00-05.kynah.webp"
+													},
+													"width": 850,
+													"height": 1173,
+													"maxWidth": 360
+												}
+											]
+										},
+										{
+											"ENG_name": "Kynah's Assistance",
+											"type": "entries",
+											"name": "基娜的协助",
+											"id": "03f",
+											"entries": [
+												"基娜是个孤儿，年幼时来到米纳尔。因为头上的角，她遭到大多数镇民的恐惧与讥嘲。遇见罗斯坦后，老人将她收于羽翼之下，让她避开戒备的镇民，给了她栖身之所、食物与陪伴。她喜欢上这位老人，老人也喜欢她，但她始终不确定自己能否被镇民接纳。少年时，她结识了盗贼公会，公会随后将她纳入行列。",
+												"在阿纳亚生活在米纳尔人中间的日子里，她开放的态度与善良让她和基娜成了挚友。基娜告诉小队，那对恋人是在阿纳亚被关进神殿、出现疾病初期症状后逃出小镇的。曼南联系了基娜，这对恋人在公会的保护下一同逃离了这座城镇。基娜确信，小队必须找到阿纳亚，了解事情的全部经过。",
+												"通过一次{@dc 18}的魅力（{@skill 游说|XPHB}）检定\u2014\u2014或者只要角色们真诚地表达出帮助阿纳亚的意愿\u2014\u2014基娜便会主动协助小队，亲自带他们前往她护送那对恋人前往的区域。检定失败时，基娜只会口头指路；她提醒他们要留心四周，因为那对恋人是投奔一位强大的守护者而去寻求安全，而那位守护者未必欢迎访客。",
+												"无论哪种情况，基娜都敦促小队去找那对恋人。她不仅担心朋友的安危，也确信阿纳亚是唯一真正了解神殿中正在发生什么的人。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Lover's Hideaway",
+							"type": "section",
+							"name": "恋人的藏身之处",
+							"id": "040",
+							"entries": [
+								"当角色离开米纳尔时，朗读或转述：",
+								{
+									"type": "insetReadaloud",
+									"id": "041",
+									"entries": [
+										"离开米纳尔的道路两旁原本是翠绿的田野，但你们走得越远，景色越是荒芜。一处巨大的石嶙标志着地貌的骤变\u2014\u2014曾经草木生长之处，如今只见覆盖着湿滑恶臭苔藓的板岩。自米纳尔以来一路相伴的宜人微风，此刻挟着霉腐刺鼻的气味。龟裂的地面上毫无旅人的踪迹，没有脚印，也没有小径，只有荒芜嶙峋的乱石。"
+									]
+								},
+								"如果由基娜引路，小队会顺利无碍地抵达树林入口，基娜还会告诉他们不要相信自己双眼所见的地形。否则，他们可以按照基娜的指引，通过一次{@dc 13}的感知（{@skill 求生|XPHB}）检定找到路。检定失败时，他们会在抵达树林前获得一级{@condition 力竭|XPHB}。",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/011-map-00.04-the-lovers-hideaway.webp"
+											},
+											"imageType": "map",
+											"title": "地图0.04：恋人的藏身之处",
+											"width": 3175,
+											"height": 4096,
+											"grid": {
+												"type": "square",
+												"size": 141,
+												"offsetX": 31,
+												"offsetY": 52
+											},
+											"id": "05c"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/012-map-00.04-the-lovers-hideaway-player.webp"
+											},
+											"imageType": "mapPlayer",
+											"title": "玩家版本",
+											"width": 3175,
+											"height": 4096,
+											"grid": {
+												"type": "square",
+												"size": 141,
+												"offsetX": 31,
+												"offsetY": 52
+											},
+											"mapParent": {
+												"id": "05c"
+											}
+										}
+									]
+								},
+								{
+									"ENG_name": "Approaching the Grove",
+									"type": "entries",
+									"name": "接近林地",
+									"id": "042",
+									"entries": [
+										"事实上，保护那对恋人的大德鲁伊在这片区域施放了{@spell 海市蜃楼|XPHB}，把藏身之处半英里内的苍翠景色变成了覆盖着湿滑恶臭真菌与苔藓的嶙峋乱石。此为{@variantrule 困难地形|XPHB}。",
+										"在此区域旅行的生物必须通过一次{@dc 10}的体质豁免检定，否则陷入{@condition 中毒|XPHB}状态1小时。",
+										{
+											"ENG_name": "Runic Riddle",
+											"type": "entries",
+											"name": "如尼谜题",
+											"id": "043",
+											"entries": [
+												"被动察觉为15或更高的角色，或在此区域通过一次{@dc 15}的智力（{@skill 调查|XPHB}）检定的角色，会注意到岩石与树木上的如尼文。读过阿纳亚房间里曼南信件的角色（见冒险前文\"{@area 达马瑟神殿|016|x}\"）在此检定上具有{@variantrule 优势|XPHB}。",
+												{
+													"type": "insetReadaloud",
+													"id": "044",
+													"entries": [
+														"你们注意到石头与枯树上刻着如尼文。除了你们的脚步声和那阵轻柔恶臭的微风外，四下无声，但显然这片区域并非无人踏足\u2014\u2014分明有什么人或什么东西栖息于此，他们留下印记以昭示此事。这片土地随着某种奇异之物搏动，仿佛充盈着能量或魔法的生机。",
+														"前方矗立着另一块刻满如尼文的巨石，高高地以一种不自然的角度倾斜，仿佛刻意为之。巨石之后是一层浓雾，将前路完全遮蔽。"
+													]
+												},
+												"懂得德鲁伊语的角色可以读到刻在岩石上的如下讯息：",
+												{
+													"type": "insetReadaloud",
+													"id": "045",
+													"entries": [
+														"这片圣地唯信爱之名。真友当知通行之语。光之言语，真挚动听。你可堪受此信托？穿越险途，我们寻得归路，若能道出真爱之本性。"
+													]
+												},
+												"下方以通用语写着：",
+												{
+													"type": "insetReadaloud",
+													"id": "046",
+													"entries": [
+														"大声说出：爱的本质是什么？",
+														"_ _ _ _ _ _ _"
+													]
+												},
+												"被动洞悉为20的角色，或通过一次{@dc 20}的感知（{@skill 洞悉|XPHB}）或智力（{@skill 宗教|XPHB}）检定的角色，可以察觉应当向这片土地的神祇献上祭品。角色每做出一项恰当的祭献或祈祷，空白处便会显现两个随机字母。谜底为ETERNAL（永恒）。小队无需解开这个谜题也能继续前进，但解谜会让前方的挑战变得容易。",
+												"前方地面上覆盖着一系列障碍（见{@adventure 恋人的藏身之处地图|MaladyOfMinarrh|0|地图：恋人的藏身之处}）。每个已说出正确谜底作为通行口令的角色，都不受下述效应影响。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Solid Fog",
+															"type": "item",
+															"name": "重雾",
+															"entry": "一层10尺高的浓雾充满整个区域，使其{@variantrule 轻度遮蔽|XPHB}。此外，在雾中每移动1尺需额外消耗2尺移动力。对免疫此效应的生物而言，这雾毫无遮蔽，看上去如同柔和的薄雾，空气中漂浮着点点绿光。"
+														},
+														{
+															"ENG_name": "Grasping Undergrowth",
+															"type": "item",
+															"name": "纠缠灌木",
+															"entry": "这片30尺×90尺的区域长满了抓扯的杂草与藤蔓，效果如同{@spell 纠缠术|XPHB}法术。对免疫此效应的生物而言，这些杂草与藤蔓触感柔软，会自行变形充当临时的座椅或床铺。"
+														},
+														{
+															"ENG_name": "Spike Growth",
+															"type": "item",
+															"name": "荆棘丛生",
+															"entry": "这片30尺×90尺的区域是{@variantrule 困难地形|XPHB}。生物进入该区域或在其中移动时，每移动5尺受到{@damage 2d4}点穿刺伤害。对免疫此效应的生物而言，荆棘会自行让开，任其通行。"
+														}
+													]
+												},
+												"区域内还有四棵光秃秃的巨树（任何熟练掌握{@skill 自然|XPHB}技能的角色都知道，一年中的这个时候树木无叶十分反常。）"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Lysxia's Grove",
+									"type": "entries",
+									"name": "丽丝克西娅的树林",
+									"id": "047",
+									"entries": [
+										"当角色来到距入口40尺内时，一个声音出言警示：",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/013-00-06.lysxia.webp"
+											},
+											"width": 850,
+											"height": 920,
+											"maxWidth": 360
+										},
+										{
+											"type": "insetReadaloud",
+											"id": "048",
+											"entries": [
+												"\"外来者，除非你们说出通行之语，否则不得再进一步！若不听我劝，踏上这些台阶的可能就是你们的末日。\"",
+												"一个高挑的身影走上前来，身着飘逸的长裙和一件及腰的罩衫。她缀满叶与花，藤蔓交织成繁茂的饰物，肌肤泛着古铜色的光泽，与她温暖的金色眼眸相得益彰。她走近时，这片空地上的四棵树在并无明显微风的情况下摇曳起来。她的话语温暖、平静而坚定。",
+												"\"我与你们无怨无仇，但自然本身会保护它的信徒、它的孩子\u2014\u2014而世间没有什么比爱更自然。\""
+											]
+										},
+										"这便是丽丝克西娅，一位中立阵营的阿斯莫{@creature 大德鲁伊|MPMM}。",
+										"如果小队发动攻击，那四棵{@creature 启蒙树木|XMM|启蒙树木}会移动保护丽丝克西娅，而她会警告角色们住手。",
+										"如果角色说明来意\u2014\u2014或说出\"通行之语\"（即上述谜题的答案），或通过一次{@dc 18}的魅力（{@skill 游说|XPHB}）检定\u2014\u2014区域内的障碍便会平息，丽丝克西娅唤来年轻的德鲁伊曼南。他或许缄默而戒备，但交谈之后，众人便会发现他是与神殿领袖之女阿纳亚一同出逃，两人一直在这位强大德鲁伊\u2014\u2014曼南的姨母\u2014\u2014的帮助下藏身于此。她是因哈特拉娅妮\u2014\u2014自然与爱之女神\u2014\u2014的信徒，而丽丝克西娅并不认同达马瑟信徒所奉行的更有组织、更排他的宗教。她对他们的困境漠然置之，认为他们的神圣虚伪不实\u2014\u2014她深知他们如何对待不同信仰与背景的人。",
+										{
+											"ENG_name": "Anaya's Story",
+											"type": "entries",
+											"name": "阿纳亚的故事",
+											"id": "049",
+											"entries": [
+												"阿纳亚含泪向小队讲述了她的经历：她发现父亲被某个邪恶存在控制后，与父亲决裂。她早已察觉他行为怪异的迹象\u2014\u2014独自低声咕哝、无缘无故地对她恶言相向、夜不成眠、愈发偏执地谈论他们的神明以及即将降于米纳尔的赦罪。一天夜里，阿纳亚跟踪父亲，看到他从神殿圣所圣坛下方取出那件恶魔器皿，并发现他正往里面灌入一名染病者留下的脓液软泥；他发现了她，把她囚禁在她的房间里。24小时后，她开始出现疾病症状，于是向曼南施放了{@spell 短讯术|XPHB}。曼南立刻找到基娜，与她做成一笔交易，在夜色掩护下迅速把阿纳亚送到他的姨母丽丝克西娅那里；丽丝克西娅对她施放了{@spell 高等复原术|XPHB}，治好了她的疾病，随后为她们提供庇护，以防有人前来追捕。",
+												"丽丝克西娅被束缚于她守护的树林，无法前往镇上协助治疗（而且鉴于那里排外的传统，她也无意前往）。阿纳亚恳求小队协助她，把父亲从恶魔的掌控中解救出来。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/014-00-07.the-lovers.webp"
+													},
+													"width": 1700,
+													"height": 1204
+												}
+											]
+										},
+										{
+											"ENG_name": "Making Plans",
+											"type": "entries",
+											"name": "制定计划",
+											"id": "04a",
+											"entries": [
+												"阿纳亚不顾一切地想要救出父亲，希望与小队一同返回米纳尔，而曼南不会让她独自前往。阿纳亚提出，如果小队能让她接近父亲到足以触碰的距离，她就可以对他施放{@spell 驱逐善恶|XPHB|驱逐邪恶}，破除缠住他的附魔，并希望在她施法之时，众人能击败那股一直控制他的力量。谁也无法阻止她救父的决心。",
+												"遗憾的是，丽丝克西娅身为这片土地的守护者而被其束缚，但她让这对恋人带回了几件魔法物品，用于保护他们、并帮助小队。",
+												"由你（DM）酌情决定，丽丝克西娅可以向小队提供以下物品中的几件：一把{@item 瓦解之锤|XDMG}、一件{@item 法术抗性斗篷|XDMG}、一条{@item 念珠项链|XDMG}、一枚{@item 隐身戒指|XDMG}、一卷{@spell 防护善恶|XPHB|防护善恶}的{@item 法术卷轴|XDMG}、一卷{@spell 群体疗伤术|XPHB}的{@item 法术卷轴|XDMG}，以及一卷{@spell 驱逐善恶|XPHB}的{@item 法术卷轴|XDMG}。",
+												"角色可以在此进行{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}。阿纳亚牵挂着镇民与父亲的命运，但她也告诫小队：要战胜控制父亲的恶魔，他们需要全力以赴。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Demonic Confrontation",
+							"type": "section",
+							"name": "恶魔对峙",
+							"id": "04b",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/MaladyOfMinarrh/adventure/015-00-08.demon-battle.webp"
+									},
+									"width": 1700,
+									"height": 1158
+								},
+								"当角色回到米纳尔时，发现小镇弥漫着淡淡的腐烂与霉味，不见任何镇民的踪影。他们还看到神殿入口透出微弱的红光。如果基娜此前与小队同行，她会离开众人去寻找罗斯坦，确认他的安全。",
+								"小队遇见年轻的侍僧阿莎惊恐地从神殿跑出，只见她浑身肿块\u2014\u2014她也染上了疾病。她告诉冒险者，塔里安已经疯了，长老们不知所踪，她担心若没有人去直面他，整座小镇都会陷落。",
+								{
+									"ENG_name": "Return to the Temple",
+									"type": "entries",
+									"name": "重返神殿",
+									"id": "04c",
+									"entries": [
+										"当角色抵达神殿时，朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "04d",
+											"entries": [
+												"曾经洁净的大理石处，石中如今布满滴淌的黑色脉络。空气中弥漫着淡淡的硫磺恶臭，一个男人的暗影轮廓就立在神殿入口内侧。阿纳亚作势要冲上前去，曼南却把她拦住\u2014\u2014塔里安正把一只刻着闪烁红金纹饰的黑曜石大瓮举向唇边。黑色脓液从瓮中流入他口中，顺着他的脸颊两侧淌下。",
+												"塔里安比从前更加高大，肩膀变宽，曾经温暖的棕色眼睛变得漆黑。他向你们伸手探来，指尖伸出长长的利爪，嘴角弯出一个非人的狞笑。",
+												"\"你们如约带回了我的爱女。而现在，正如我所承诺的，我将给你们应得的报偿。上前吧，领受你们新主人的祝福\u2014\u2014伟大的扎拉什塔，万物借他得以涤净与重生。\""
+											]
+										},
+										"塔里安几乎已被恶魔领主扎拉什塔完全附身（见下文\"{@area 与塔里安战斗|04f|x}\"）。他现在使用{@creature 邪魔邪教徒|XMM}数据块，并做以下调整：",
+										{
+											"type": "list",
+											"items": [
+												"他没有胸甲；他的AC为12。",
+												"他抵抗死灵伤害和毒素伤害。",
+												"他原本造成火焰伤害的攻击和法术改为造成死灵伤害或毒素伤害（由他选择）。"
+											]
+										},
+										{
+											"ENG_name": "Tharian (Possessed)",
+											"type": "statblock",
+											"name": "塔里安（被附身）",
+											"tag": "creature",
+											"source": "MaladyOfMinarrh",
+											"style": "narrow"
+										},
+										{
+											"ENG_name": "Anaya and Mannan",
+											"type": "entries",
+											"name": "阿纳亚与曼南",
+											"id": "04e",
+											"entries": [
+												"在这场遭遇中，阿纳亚的唯一目标是用{@spell 驱逐善恶|XPHB}的破除附魔功能终结恶魔对父亲的附身。由于阿纳亚必须触碰到他才能终结附身，她会尽力贴近父亲，并不断恳求他反抗恶魔的控制。阿纳亚使用{@creature 祭司|XMM}数据块，并做以下调整：",
+												{
+													"type": "list",
+													"items": [
+														"她没有锁子甲和硬头锤，但她的敏捷为16（+3），因此AC为13，先攻+3（13）。",
+														"除数据块中的法术外，她还可以用她的施法动作施放{@spell 驱逐善恶|XPHB}（1/日）和{@spell 短讯术|XPHB}（1/日）。",
+														"她{@variantrule 免疫|XPHB}于{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态。"
+													]
+												},
+												{
+													"ENG_name": "Anaya",
+													"type": "statblock",
+													"name": "阿纳亚",
+													"tag": "creature",
+													"source": "MaladyOfMinarrh",
+													"style": "narrow"
+												},
+												"曼南使用{@creature 德鲁伊|XMM}数据块。他一心保护阿纳亚。如果她在战斗中倒下，他会立刻转为设法将她带往安全之处。",
+												{
+													"ENG_name": "Druid",
+													"type": "statblock",
+													"name": "德鲁伊",
+													"tag": "creature",
+													"source": "XMM",
+													"style": "narrow"
+												}
+											]
+										},
+										{
+											"ENG_name": "Fighting Tharian",
+											"type": "entries",
+											"name": "与塔里安战斗",
+											"id": "04f",
+											"entries": [
+												"扎拉什塔首先以阿纳亚为目标，认为她是威胁最大之人。但与此同时，塔里安仍在反抗附身\u2014\u2014他终于直面了自己的所作所为酿成的恐怖。",
+												"在塔里安每个回合开始时，他进行一次{@dc 20}的感知豁免检定。只要阿纳亚在场且未{@condition 失能|XPHB}，他在此次豁免上具有{@variantrule 优势|XPHB}。豁免失败时，扎拉什塔维持对塔里安身体的控制，继续与小队、阿纳亚和曼南战斗。豁免成功时，塔里安可以正常移动和说话直到他的回合结束，但不能采取其他动作。他对阿纳亚和小队说，只要在神殿藏书室里找到一卷{@spell 放逐术|XPHB}的{@item 法术卷轴|XDMG}，就能放逐这头恶魔（见冒险前文\"{@area 达马瑟神殿|016|x}\"）。"
+											]
+										},
+										{
+											"ENG_name": "Demonic Transformation",
+											"type": "entries",
+											"name": "恶魔变身",
+											"id": "050",
+											"entries": [
+												"如果塔里安的生命值降至0，或阿纳亚成功驱散邪恶，恶魔便会脱离他的身体，以其真身现形\u2014\u2014一头{@creature 迷诱魔|XMM}。除数据块中的法术外，扎拉什塔还可以用它的施法动作施放{@spell 群体暗示术|XPHB}（1/日）。",
+												{
+													"ENG_name": "Xarashtar",
+													"type": "statblock",
+													"name": "扎拉什塔",
+													"tag": "creature",
+													"source": "MaladyOfMinarrh",
+													"style": "narrow"
+												},
+												"当扎拉什塔现身时，朗读或转述：",
+												{
+													"type": "insetReadaloud",
+													"id": "051",
+													"entries": [
+														"塔里安孱弱的身躯瘫倒在地，不省人事。阿纳亚向他跑去，却猛然僵在原地\u2014\u2014一股脓液与黑烟的洪流正从塔里安一动不动的躯体中向上涌出。它不断变大成形，如同一团臃肿流淌的乌云，显露出其中的形体\u2014\u2014先是一对末端生着巨钳的粗壮手臂，其下另有一对较小却肌肉虬结的人形双手，紧握成充满力量的拳头。",
+														"当脓液滴落、烟雾散去，你们看见一只15尺高的怪物，犬形的头颅生满獠牙，头顶探出两支参差不齐的角。它指了指躺在它利爪之下的塔里安躯体。",
+														"\"可悲的渺小人类。我早知道这具枯萎的躯壳撑不了多久......但也足够把我带到这个位面了。\"它抓起塔里安方才饮用的黑曜石瓮，摔在地上砸得粉碎。\"我，扎拉什塔，宣告占有此地、此镇、这片土地。很快，我的爪牙也将如我这般，以你们凡人的灵魂为盛宴。\""
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Fighting Xarashtar",
+											"type": "entries",
+											"name": "对抗扎拉什塔",
+											"id": "052",
+											"entries": [
+												"小队可以对恶魔施放放逐术，或将其生命值降至0，从而把它放逐回它的存在位面，以此击败它。",
+												"如果玩家想出其他击败或重新囚禁扎拉什塔的办法，由你（GM）酌情判定那些方法的效果，并奖励玩家的创造力。同样地，如果阿纳亚仍处于{@spell 驱逐善恶|XPHB}的效果之下，她或许能用该法术的驱逐异界生物功能放逐扎拉什塔；若确有这种可能，请务必注意不要让玩家角色黯然失色，要让他们自己的行动最终促成这位恶魔领主的败亡。",
+												"当恶魔被击败时，朗读或转述：",
+												{
+													"type": "insetReadaloud",
+													"id": "053",
+													"entries": [
+														"扎拉什塔庞大的身躯消散，回归深渊；那些仿佛渗入墙体的脓液脉络也随之越来越淡，直至彻底散去，污秽从这座圣殿中排空。连空气都仿佛轻快起来，硫磺的气味让位于熟悉的香气与近旁花园的草木气息。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Concluding the Adventure",
+							"type": "section",
+							"name": "结束冒险",
+							"id": "054",
+							"entries": [
+								"塔里安苏醒后，心中满是羞愧、悔恨，以及对小队所做一切的感激。",
+								{
+									"type": "insetReadaloud",
+									"id": "055",
+									"entries": [
+										"阿纳亚和曼南扶起她倒下的父亲，他向小队开口\u2014\u2014因虚弱与羞愧而低着头。\"我甚至无从感谢你们所做的一切。你们救下的不仅是我们的城镇，还有我的灵魂，使它免于永恒的诅咒。我不知道镇上的人们能否原谅我，也不知道我能否原谅自己......但这都比不上我欠你们所有人的恩情。\"",
+										"\"我将放弃我在这处圣地拥有的一切权柄\u2014\u2014它们本就不该交到我手中\u2014\u2014把它交还到长老与侍僧们手中，希望他们不仅能修复这座神殿的创伤，也能修复在此礼拜的信徒们心中的创伤。而在那之前，我会确保你们因面对如此邪恶时的勇敢与坚韧而获得报偿。\""
+									]
+								},
+								"塔里安感谢曼南，并乞求他与阿纳亚的原谅。他请曼南向丽丝克西娅转达谢意，并请求她允许众人把其余染病者带到她的树林接受治疗。曼南答应了，并表示只要镇民们承诺向各类信徒敞开大门、而非只接纳他们神明的追随者，他会尽力说服她与镇民合作。塔里安同意了，祝福了这对恋人，并给了小队1,000金币的报酬。此外，小队还可能获得以下物品：",
+								{
+									"type": "list",
+									"items": [
+										"丽丝克西娅与曼南赠送的{@item 念珠项链|XDMG|因哈特拉娅妮的念珠项链}（或冒险前文\"{@area 制定计划|04a|x}\"一节中建议的另一件魔法物品）",
+										"基娜或阿纳亚赠送的友谊信物（如果小队与她们结下了友谊）。"
+									]
+								},
+								"为冒险收尾，朗读或转述：",
+								{
+									"type": "insetReadaloud",
+									"id": "056",
+									"entries": [
+										"在接下来的几天里，你们休养生息、照料伤势。阿纳亚和曼南迅速行动起来\u2014\u2014在基娜及其公会同伴的协助下\u2014\u2014把染病的镇民一批批送往森林中的树林，交到丽丝克西娅妙手之下。塔里安仍深陷悔恨，一边静养一边恢复气力；罗斯坦重新担起神殿祭司的职责。塔里安康复后，他与阿纳亚继续在镇上行医，如今又有曼南相助\u2014\u2014罗斯坦还邀请曼南向米纳尔人分享他女神的教诲，以表明尽管信仰不同，爱、宽恕与救赎的核心信念是一致的。"
+									]
+								},
+								"阿纳亚、曼南、塔里安、长老们与米纳尔的其他人一同疗愈与重建\u2014\u2014而角色们也为下一次冒险养精蓄锐。"
+							]
+						},
+						{
+							"ENG_name": "Credits",
+							"type": "section",
+							"name": "制作组",
+							"id": "057",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Writing and Design:",
+											"type": "item",
+											"name": "撰写与设计：",
+											"entry": "安贾莉·比玛尼"
+										},
+										{
+											"ENG_name": "Additional Writing:",
+											"type": "item",
+											"name": "补充内容：",
+											"entry": "麦迪根·亨特"
+										},
+										{
+											"ENG_name": "Editing:",
+											"type": "item",
+											"name": "编辑：",
+											"entry": "汉娜·罗斯"
+										},
+										{
+											"ENG_name": "Layout:",
+											"type": "item",
+											"name": "排版:",
+											"entry": "鲁比·拉文"
+										},
+										{
+											"ENG_name": "Cover and Internal Art:",
+											"type": "item",
+											"name": "封面与内页插画：",
+											"entry": "茱莉亚·马达莉娜"
+										},
+										{
+											"ENG_name": "Cartography:",
+											"type": "item",
+											"name": "地图绘图师：",
+											"entry": "布莱恩·帕特森"
+										},
+										{
+											"ENG_name": "Mental Health Sensitivity Reader:",
+											"type": "item",
+											"name": "心理健康敏感内容审读：",
+											"entry": "埃姆·卡尔森"
+										},
+										{
+											"ENG_name": "Special Thanks:",
+											"type": "item",
+											"name": "特别感谢：",
+											"entry": "诺姆·安妮、路易斯·卡拉佐、卡洛斯·西斯可、埃姆·卡尔森、金妮·迪、罗温·霍尔、萨迪·洛瑞、亚当·卢卡斯、伊莉斯·雷森德斯、吉娜·苏珊娜、斯宾塞·斯塔克、扬尼斯·韦塞尔斯、黛博拉·安·沃尔"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
