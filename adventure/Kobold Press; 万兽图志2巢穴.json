@@ -1,0 +1,5715 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ToB2-Lairs",
+				"abbreviation": "ToB2",
+				"full": "万兽图志2巢穴",
+				"url": "https://koboldpress.com/kpstore/product/tome-of-beasts-2-lairs-for-5th-edition/",
+				"version": "1.0.0",
+				"authors": [
+					"Jeff Lee",
+					"Kobold Press",
+					"Philip Larwood"
+				],
+				"convertedBy": [
+					"Spappz"
+				],
+				"color": "89181A",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1616030766,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "ad921e6548"
+	},
+	"item": [
+		{
+			"ENG_name": "Rod of Construct Command",
+			"name": "构装体支配权杖",
+			"source": "ToB2-Lairs",
+			"page": 64,
+			"type": "RD|DMG",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 2,
+			"weaponCategory": "simple",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"bonusWeapon": "+1",
+			"recharge": "dawn",
+			"charges": 1,
+			"entries": [
+				"这根{@variantrule 精金武器|xge|精金}权杖带有凸缘头，可作为魔法{@item 硬头锤|phb}使用，用它进行的攻击检定和伤害检定获得+1加值。",
+				{
+					"ENG_name": "Command Construct",
+					"type": "entries",
+					"name": "支配构装体",
+					"entries": [
+						"以一个动作，你可以念出权杖的命令语，并控制30尺内一个你能看见的构装体。目标必须通过一次DC 15的感知豁免，否则将如同受到{@spell 支配怪物}法术影响般受你控制1小时。此特性在次日黎明前无法再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Rod of the Regent",
+			"name": "摄政王权杖",
+			"source": "ToB2-Lairs",
+			"page": 77,
+			"type": "RD|DMG",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 2,
+			"weaponCategory": "simple",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"bonusWeapon": "+3",
+			"recharge": "dawn",
+			"entries": [
+				"这根权杖由抛光乌木制成，两端镶金。它带有凸缘头，可作为魔法{@item 硬头锤|phb}使用，用它进行的攻击检定和伤害检定获得+3加值。另一端嵌着一颗琥珀球，里面困着一只蝴蝶。权杖具有以下特性：",
+				{
+					"ENG_name": "Fey Resistance",
+					"type": "entries",
+					"name": "精类抗性",
+					"entries": [
+						"持握此权杖时，你在对抗精类生物施放的法术及其他魔法效应的豁免检定中具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Sending",
+					"type": "entries",
+					"name": "短讯术",
+					"entries": [
+						"持握此权杖时，你可以用一个动作施展{@spell 短讯术}法术。施展时，权杖末端的琥珀中的蝴蝶会泛起金光，飞出琥珀球，化作一道流光飞向讯息的接收者。蝴蝶落在接收者的头上，传达讯息，然后最多等待10分钟以接收回复，再将回复带回给你。此特性在次日黎明前无法再次使用。"
+					]
+				},
+				{
+					"ENG_name": "Tree Stride",
+					"type": "entries",
+					"name": "树跃术",
+					"entries": [
+						"持握此权杖时，你可以用一个动作在树木之间穿行。此特性的运作如同{@spell 树跃术}法术，不同之处在于：你还知晓500里内任何曾被此权杖触碰过的树木的位置，并可以选择其中一棵作为目的地树木。此特性在次日黎明前无法再次使用。"
+					]
+				},
+				{
+					"ENG_name": "Rod of the Regent in Midgard",
+					"type": "inset",
+					"name": "米德加德中的摄政王权杖",
+					"entries": [
+						"如果你在米德加德战役设定中进行游戏，权杖的树跃术特性可以替换为以下特性。",
+						{
+							"ENG_name": "Know the Roads",
+							"type": "entries",
+							"name": "知晓道路",
+							"entries": [
+								"持握此权杖时，你可以用一个动作侦测300尺内所有精类道路与暗影道路，持续10分钟。当你处于以此特性侦测到的道路60尺范围内时，你可以用一个动作打开一条通入该道路的通道，并携带至多六名其他生物与你同行。一旦你打开过一条通道，在次日黎明前你无法再次使用此特性。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Kezai Brood",
+			"name": "柯仔集群",
+			"source": "ToB2-Lairs",
+			"page": 40,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20,
+				"fly": 20
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"senses": [
+				"盲视 10 尺"
+			],
+			"passive": 8,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Swarm",
+					"name": "集群",
+					"entries": [
+						"集群可以进驻另一生物身处的空间位置，反之亦然。而且集群可以通过任何足够一只微型昆虫通过的通道。集群不能恢复生命值也不能获得临时生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bites",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及0尺，单一身处集群内的目标。{@h}10 ({@damage 4d4}) 点穿刺伤害，或者集群生命值等于或低于一半时5（{@damage 2d4}）点穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"ENG_name": "Water Scorpion Brood",
+			"name": "水蝎集群",
+			"source": "ToB2-Lairs",
+			"page": 40,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20,
+				"swim": 20
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"senses": [
+				"盲视 10 尺"
+			],
+			"passive": 8,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Swarm",
+					"name": "集群",
+					"entries": [
+						"集群可以进驻另一生物身处的空间位置，反之亦然。而且集群可以通过任何足够一只微型昆虫通过的通道。集群不能恢复生命值也不能获得临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"水蝎集群可以闭气30分钟。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bites",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及0尺，单一身处集群内的目标。{@h}10 ({@damage 4d4}) 点穿刺伤害，或者集群生命值等于或低于一半时5（{@damage 2d4}）点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Hold Breath"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	],
+	"adventure": [
+		{
+			"ENG_name": "Tome of Beasts 2 Lairs",
+			"name": "万兽图志2巢穴",
+			"id": "ToB2-Lairs",
+			"source": "ToB2-Lairs",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/cover.webp"
+			},
+			"published": "2020-11-17",
+			"storyline": "无",
+			"level": {
+				"start": 1,
+				"end": 15
+			},
+			"contents": [
+				{
+					"ENG_name": "New Monsters and New Challenges",
+					"name": "新怪物与新挑战",
+					"headers": [
+						"追踪窃贼（1级角色）",
+						"被弃要塞（3级角色）",
+						"扭曲花环（3级角色）",
+						"饥饿亡者神殿（4级角色）",
+						"瑟尔丹前哨的悲剧（4级角色）",
+						"水晶巨碑洞窟（5级角色）",
+						"马蹄岩绿洲争夺战（5级角色）",
+						"河流古墓（6级角色）",
+						"蠕虫之神居所（7级角色）",
+						"山莲寺惊魂（8级角色）",
+						"骷髅顶丘下的隧道（9级角色）",
+						"魔像熔炉（10级角色）",
+						"烈火与怒焰（13级角色）",
+						"三摄政王之塔（15级角色）"
+					]
+				},
+				{
+					"ENG_name": "To Track a Thief",
+					"name": "追踪窃贼",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"寻找窃贼",
+						"科尔查克银行与保管库",
+						{
+							"depth": 1,
+							"header": "1. 门厅"
+						},
+						{
+							"depth": 1,
+							"header": "2. 职员区"
+						},
+						{
+							"depth": 1,
+							"header": "3. 通行大厅"
+						},
+						{
+							"depth": 1,
+							"header": "4. 通行大厅"
+						},
+						{
+							"depth": 1,
+							"header": "5. 银行金库"
+						},
+						{
+							"depth": 1,
+							"header": "6. 行长办公室"
+						},
+						{
+							"depth": 1,
+							"header": "7. 上层大厅"
+						},
+						{
+							"depth": 1,
+							"header": "8. 塌陷的办公室"
+						},
+						{
+							"depth": 1,
+							"header": "9. 残破的办公室"
+						},
+						{
+							"depth": 1,
+							"header": "10. 会议室"
+						},
+						{
+							"depth": 1,
+							"header": "11. 地下室"
+						},
+						{
+							"depth": 1,
+							"header": "12. 下层金库"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "The Forsaken Fort",
+					"name": "被弃要塞",
+					"headers": [
+						"冒险背景",
+						"开始冒险",
+						"疫病降临",
+						"冒险引子",
+						"鳞伏突击",
+						"被弃要塞",
+						{
+							"depth": 1,
+							"header": "1. 庭院"
+						},
+						{
+							"depth": 1,
+							"header": "2. 马厩"
+						},
+						{
+							"depth": 1,
+							"header": "3. 军士小屋"
+						},
+						{
+							"depth": 1,
+							"header": "4. 厨房与储藏室"
+						},
+						{
+							"depth": 1,
+							"header": "5. 食堂"
+						},
+						{
+							"depth": 1,
+							"header": "6. 瞭望塔一层"
+						},
+						{
+							"depth": 1,
+							"header": "7. 兵营"
+						},
+						{
+							"depth": 1,
+							"header": "8. 瞭望塔二层"
+						},
+						{
+							"depth": 1,
+							"header": "9. 厨师与军需官住所"
+						},
+						{
+							"depth": 1,
+							"header": "10. 军械库"
+						},
+						{
+							"depth": 1,
+							"header": "11. 瞭望塔三层"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "The Twisted Wreath",
+					"name": "扭曲花环",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"扭曲花环",
+						{
+							"depth": 1,
+							"header": "1. 入口"
+						},
+						{
+							"depth": 1,
+							"header": "2. 幽静林间空地"
+						},
+						{
+							"depth": 1,
+							"header": "3. 病态之树"
+						},
+						{
+							"depth": 1,
+							"header": "4. 废弃小屋"
+						},
+						{
+							"depth": 1,
+							"header": "5. 方尖碑"
+						},
+						{
+							"depth": 1,
+							"header": "6. 魔像林地"
+						},
+						{
+							"depth": 1,
+							"header": "7. 伊卡莱达的堕落林地"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Shrine of the Hungry Dead",
+					"name": "饥饿亡者神殿",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"神殿外围",
+						{
+							"depth": 1,
+							"header": "1. 前厅"
+						},
+						{
+							"depth": 1,
+							"header": "2. 下层神殿"
+						},
+						{
+							"depth": 1,
+							"header": "3. 候祭室"
+						},
+						{
+							"depth": 1,
+							"header": "4. 祭衣室"
+						},
+						{
+							"depth": 1,
+							"header": "5. 储藏室"
+						},
+						{
+							"depth": 1,
+							"header": "6. 前廊"
+						},
+						{
+							"depth": 1,
+							"header": "7. 桥道网络"
+						},
+						{
+							"depth": 1,
+							"header": "8. 上层神殿"
+						},
+						{
+							"depth": 1,
+							"header": "9. 仆役走廊"
+						},
+						{
+							"depth": 1,
+							"header": "10. 教区废墟"
+						},
+						{
+							"depth": 1,
+							"header": "11. 死亡编织者之巢"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Tragedy at Thyrdun Outpost",
+					"name": "瑟尔丹前哨的悲剧",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"抵达：地表",
+						{
+							"depth": 1,
+							"header": "1. 入口大厅"
+						},
+						{
+							"depth": 1,
+							"header": "2. 食腐隧道"
+						},
+						{
+							"depth": 1,
+							"header": "3. 投机的劫掠者"
+						},
+						{
+							"depth": 1,
+							"header": "4. 办公室"
+						},
+						{
+							"depth": 1,
+							"header": "5. 医疗室"
+						},
+						{
+							"depth": 1,
+							"header": "6. 街垒"
+						},
+						{
+							"depth": 1,
+							"header": "7. 储物间"
+						},
+						{
+							"depth": 1,
+							"header": "8. 废弃的洞室"
+						},
+						{
+							"depth": 1,
+							"header": "9. 出土的黑暗"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Caverns of the Crystalline Monolith",
+					"name": "水晶巨碑洞窟",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"洞穴特征",
+						{
+							"depth": 1,
+							"header": "1. 入口大厅"
+						},
+						{
+							"depth": 1,
+							"header": "2. 星辰洞窟"
+						},
+						{
+							"depth": 1,
+							"header": "3. 白瀑洞窟"
+						},
+						{
+							"depth": 1,
+							"header": "4. 水晶急流"
+						},
+						{
+							"depth": 1,
+							"header": "5. 洪水洞窟"
+						},
+						{
+							"depth": 1,
+							"header": "6. 巨碑之巢"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Fight for Horseshoe Rock Oasis",
+					"name": "马蹄岩绿洲争夺战",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						{
+							"depth": 1,
+							"header": "1. 下层水潭"
+						},
+						{
+							"depth": 1,
+							"header": "2. 废弃的帐篷"
+						},
+						{
+							"depth": 1,
+							"header": "3. 西侧水潭"
+						},
+						{
+							"depth": 1,
+							"header": "4. 东侧水潭"
+						},
+						{
+							"depth": 1,
+							"header": "5. 干尸"
+						},
+						{
+							"depth": 1,
+							"header": "6. 棕榈树林"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "The River Tomb",
+					"name": "河流古墓",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"岛屿",
+						{
+							"depth": 1,
+							"header": "1. 墓穴入口"
+						},
+						{
+							"depth": 1,
+							"header": "2. 前厅"
+						},
+						{
+							"depth": 1,
+							"header": "3. 陷阱走廊"
+						},
+						{
+							"depth": 1,
+							"header": "4. 祭品室"
+						},
+						{
+							"depth": 1,
+							"header": "5. 马匹墓室"
+						},
+						{
+							"depth": 1,
+							"header": "6. 被洗劫的墓室"
+						},
+						{
+							"depth": 1,
+							"header": "7. 蒙羞的亡者"
+						},
+						{
+							"depth": 1,
+							"header": "8. 神龛"
+						},
+						{
+							"depth": 1,
+							"header": "9. 宝库"
+						},
+						{
+							"depth": 1,
+							"header": "10. 斯加瓦迪尔之墓"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "House of the Worm God",
+					"name": "蠕虫之神居所",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"寻找西尔维娅",
+						"破败之屋",
+						{
+							"depth": 1,
+							"header": "1. 入口大厅"
+						},
+						{
+							"depth": 1,
+							"header": "2. 衣帽间"
+						},
+						{
+							"depth": 1,
+							"header": "3. 客厅"
+						},
+						{
+							"depth": 1,
+							"header": "4. 餐厅"
+						},
+						{
+							"depth": 1,
+							"header": "5. 厨房"
+						},
+						{
+							"depth": 1,
+							"header": "6. 上层走廊"
+						},
+						{
+							"depth": 1,
+							"header": "7. 客房"
+						},
+						{
+							"depth": 1,
+							"header": "8. 盥洗室"
+						},
+						{
+							"depth": 1,
+							"header": "9. 卧室"
+						},
+						{
+							"depth": 1,
+							"header": "10. 酒窖"
+						},
+						{
+							"depth": 1,
+							"header": "11. 拷问室"
+						},
+						{
+							"depth": 1,
+							"header": "12. 赫里加拉神殿"
+						},
+						{
+							"depth": 1,
+							"header": "13. 泥浆坑"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Terror at Mountain Lotus Temple",
+					"name": "山莲寺惊魂",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"索拉坎师太",
+						"寺院外围",
+						{
+							"depth": 1,
+							"header": "1. 莲花池"
+						},
+						{
+							"depth": 1,
+							"header": "2. 马厩"
+						},
+						{
+							"depth": 1,
+							"header": "3. 客房"
+						},
+						{
+							"depth": 1,
+							"header": "4. 柱廊大厅"
+						},
+						{
+							"depth": 1,
+							"header": "5. 外圣所"
+						},
+						{
+							"depth": 1,
+							"header": "6. 南翼廊"
+						},
+						{
+							"depth": 1,
+							"header": "7. 北翼廊"
+						},
+						{
+							"depth": 1,
+							"header": "8. 内圣所"
+						},
+						{
+							"depth": 1,
+							"header": "9. 至圣所"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Tunnels Below Skulltop Tor",
+					"name": "骷髅顶丘下的隧道",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"骷髅顶丘下的隧道",
+						{
+							"depth": 1,
+							"header": "1. 入口"
+						},
+						{
+							"depth": 1,
+							"header": "2. 守卫洞穴"
+						},
+						{
+							"depth": 1,
+							"header": "3. 垃圾洞穴"
+						},
+						{
+							"depth": 1,
+							"header": "4. 睡眠洞穴"
+						},
+						{
+							"depth": 1,
+							"header": "5. 塌陷的隧道"
+						},
+						{
+							"depth": 1,
+							"header": "6. 深坑洞穴"
+						},
+						{
+							"depth": 1,
+							"header": "7. 连接隧道"
+						},
+						{
+							"depth": 1,
+							"header": "8. 真菌洞穴"
+						},
+						{
+							"depth": 1,
+							"header": "9. 温泉水池"
+						},
+						{
+							"depth": 1,
+							"header": "10. 矮人神殿"
+						},
+						{
+							"depth": 1,
+							"header": "11. 瘦巨人洞穴"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Crucible of Golems",
+					"name": "魔像熔炉",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"金库",
+						{
+							"depth": 1,
+							"header": "1. 入口"
+						},
+						{
+							"depth": 1,
+							"header": "2. 门厅"
+						},
+						{
+							"depth": 1,
+							"header": "3. 营房"
+						},
+						{
+							"depth": 1,
+							"header": "4. 大铸造厂"
+						},
+						{
+							"depth": 1,
+							"header": "5. 储藏室"
+						},
+						{
+							"depth": 1,
+							"header": "6. 工作室"
+						},
+						{
+							"depth": 1,
+							"header": "7. 临时卧室"
+						},
+						{
+							"depth": 1,
+							"header": "8. 附魔室"
+						},
+						{
+							"depth": 1,
+							"header": "9. D-064976的房间"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Fire and Fury",
+					"name": "烈火与怒焰",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"奥洛夫·尤拉克的特点",
+						{
+							"depth": 1,
+							"header": "1. 警卫室"
+						},
+						{
+							"depth": 1,
+							"header": "2. 岩浆瀑布"
+						},
+						{
+							"depth": 1,
+							"header": "3. 火蜥蜴涉水池"
+						},
+						{
+							"depth": 1,
+							"header": "4. 水池洞窟"
+						},
+						{
+							"depth": 1,
+							"header": "5. 先驱者之洞"
+						},
+						{
+							"depth": 1,
+							"header": "6. 彻鲁菲之室"
+						},
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Towers of the Three Regents",
+					"name": "三摄政王之塔",
+					"headers": [
+						"冒险背景",
+						"冒险引子",
+						"三摄政王之塔的特点",
+						{
+							"depth": 1,
+							"header": "1. 愤怒的老板娘"
+						},
+						{
+							"depth": 1,
+							"header": "2. 班组营地"
+						},
+						{
+							"depth": 1,
+							"header": "3. 致命诱饵"
+						},
+						{
+							"depth": 1,
+							"header": "4. 门卫"
+						},
+						{
+							"depth": 1,
+							"header": "5. 第一道桥"
+						},
+						{
+							"depth": 1,
+							"header": "6. 残破之塔"
+						},
+						{
+							"depth": 1,
+							"header": "7. 第二道桥"
+						},
+						{
+							"depth": 1,
+							"header": "8. 镜中魔法"
+						},
+						{
+							"depth": 1,
+							"header": "9. 严厉的守卫者"
+						},
+						{
+							"depth": 1,
+							"header": "10. 塔顶之巢"
+						},
+						"结局"
+					]
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "ToB2-Lairs",
+			"source": "ToB2-Lairs",
+			"data": [
+				{
+					"ENG_name": "New Monsters and New Challenges",
+					"type": "section",
+					"name": "新怪物与新挑战",
+					"page": 2,
+					"entries": [
+						"{@i 万兽图志2巢穴}收录了十四篇短篇冒险，其中的新怪物均来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}。每篇冒险预计一到两次团即可完成，并附有地图、冒险引子和供冒险者获取的财宝。",
+						"要运行这些冒险，你需要世界上第一款角色扮演游戏第5版的{@5etools 核心规则书|books.html}或{@book {@i 系统参考文档 5.1}|phb}。以{@b 粗体}出现且未标注页码或书目出处的生物名称，可在{@book {@i 系统参考文档 5.1}|mm}或上述规则书中找到。同样，以{@i 斜体}出现且未标注页码或书目出处的法术和魔法物品名称，可在上述规则书或{@book {@i 系统参考文档 5.1}|dmg}中找到。此外，你还需要{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}才能运行这些冒险中的所有遭遇。",
+						"《{@i 万兽图志2巢穴}》包含以下冒险，按角色等级排列：",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "To Track a Thief (1st-level Characters)",
+									"type": "entries",
+									"name": "追踪窃贼（1级角色）",
+									"page": 2,
+									"entries": [
+										"最近一连串的劫案让某座城市的当局疲于奔命地追查窃贼。起初劫案杂乱无章，大多数失窃物品价值低微。但劫案很快升级为越来越贵重的财物，而就在本周，已有三人在一次劫案中丧生。由于无法追踪到窃贼，当地当局转而求助外部援助。",
+										"{@adventure 本冒险|ToB2-Lairs|1}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 贪婪集群|ToB2}、{@creature 石爬者|ToB2}和{@creature 瓦尔克鲁恩|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "The Forsaken Fort (3rd-level Characters)",
+									"type": "entries",
+									"name": "被弃要塞（3级角色）",
+									"page": 2,
+									"entries": [
+										"数周前，草原上的一座要塞被一种致命的疫病彻底摧毁。在最后一名受害者病死之后不久，一群鬣狗从墙下掘洞进入了要塞。它们的挖掘惊扰了一群昆虫，昆虫飞往附近的村庄袭击村民。村民们向刚抵达镇上的冒险者求助，请他们解决虫患。当地当局注意到昆虫来自要塞的方向，而那座要塞已经沉寂了数周，于是他们请求冒险者前往调查。",
+										"{@adventure 本冒险|ToB2-Lairs|2}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 克罗克塔|ToB2}、{@creature 疫病集群|ToB2}和{@creature 美颌龙集群|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "The Twisted Wreath (3rd-level Characters)",
+									"type": "entries",
+									"name": "扭曲花环（3级角色）",
+									"page": 2,
+									"entries": [
+										"扭曲花环是森林深处一片由荆棘与藤蔓构成的宁静迷宫，其中坐落着一座魔法方尖碑。方尖碑每年都吸引德鲁伊和自然神祇的信徒前来祈祷与献祭。在其中一次朝圣中，一些信徒主持了一场酿成大祸的仪式，杀死了迷宫的树精看守者，并腐化了该地区的大部分精类、植物和动物。一位年轻的德鲁伊正在寻求冒险者，希望他们净化迷宫中的腐化，抚平森林的伤痛。",
+										"{@adventure 本冒险|ToB2-Lairs|3}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 肉食草皮|ToB2}、{@creature 腐化小妖精|ToB2}、{@creature 树皮剥取者|ToB2}和{@creature 藤蔓魔像|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Shrine of the Hungry Dead (4th-level Characters)",
+									"type": "entries",
+									"name": "饥饿亡者神殿（4级角色）",
+									"page": 3,
+									"entries": [
+										"在人烟稀少的海岸附近，坐落着一座献给一位几乎被遗忘的海神的偏远废弃神殿。一只邪恶而聪慧的蜘蛛占据了神殿，并最终招来了企图在地表建立据点的食尸鬼盟友。蜘蛛要求以类人生物为祭品，驱使食尸鬼不断向外搜捕受害者。如今已有多人失踪，当地当局悬赏给任何能解开失踪之谜的人。",
+										"{@adventure 本冒险|ToB2-Lairs|4}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 死亡编织者|ToB2}、{@creature 食尸鬼蝙蝠|ToB2}、{@creature 无餍之神的仆从|ToB2}和{@creature 蛛网僵尸|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Tragedy at Thyrdun Outpost (4th-level Characters)",
+									"type": "entries",
+									"name": "瑟尔丹前哨的悲剧（4级角色）",
+									"page": 3,
+									"entries": [
+										"瑟尔丹曾是矮人领地边缘的一座矮人采矿前哨。建成数年后，一场事故冲垮了矿场的尾矿坝，矿井被淹没，大多数矿工被困其中。那场悲剧之后，矿场沉寂废弃了十多年。最近，矮人领袖们试图重新开放矿井。一支工程队排干并清挖了矿井，但他们已有一周多没有汇报进展。忧心忡忡的矮人领袖们正在寻找能够前往调查这座沉默前哨的冒险者。",
+										"{@adventure 本冒险|ToB2-Lairs|5}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 黯然失色|ToB2}和{@creature 掷石蟑螂|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Caverns of the Crystalline Monolith (5th-level Characters)",
+									"type": "entries",
+									"name": "水晶巨碑洞窟（5级角色）",
+									"page": 3,
+									"entries": [
+										"这一系列洞穴位于地热活动剧烈的区域，洞内覆满水晶。一些水晶如树木般高耸，另一些则如易碎的尖刺般铺满地面与洞壁。这里虽是一处奇观胜景，却也出产种类繁多的水晶，可用作法术或魔法物品的材料。传闻这里藏有巨大的宝藏，还栖息着一个如照料珍贵花园般照看水晶的异界存在。",
+										"{@adventure 本冒险|ToB2-Lairs|6}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 水晶巨碑|ToB2}和{@creature 火融水元素|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Fight for Horseshoe Rock Oasis (5th-level Characters)",
+									"type": "entries",
+									"name": "马蹄岩绿洲争夺战（5级角色）",
+									"page": 3,
+									"entries": [
+										"马蹄岩绿洲是一处宝贵的绿洲，距一条穿越沙漠的繁忙商路不远。最近的传闻说，绿洲如今被匪徒或怪物占据，因为去过的人无一归还。绿洲对沙漠中的商队而言是莫大的福祉，失去一处绿洲意味着商路改道，或为了多带水而丢下贵重的货物。当地商人行会无力承担这样的改变，于是寻求冒险者赶走如今盘踞绿洲的东西。",
+										"{@adventure 本冒险|ToB2-Lairs|7}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 沼泽气泡|ToB2}和{@creature 布默|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "The River Tomb (6th-level Characters)",
+									"type": "entries",
+									"name": "河流古墓（6级角色）",
+									"page": 4,
+									"entries": [
+										"当地一条河流被筑坝截流后，一座被遗忘的军阀的古墓重见天日。已有两支探险队未能劫掠墓穴深处，还在此过程中释放了古老的恐怖。最新一支探险队唯一的幸存者正在寻找英雄，希望能寻回她阵亡同伴的遗体，让他们入土为安。",
+										"{@adventure 本冒险|ToB2-Lairs|8}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 腐化异怪|ToB2}、{@creature 黯然失色|ToB2}和{@creature 沼泽气泡|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "House of the Worm God (7th-level Characters)",
+									"type": "entries",
+									"name": "蠕虫之神居所（7级角色）",
+									"page": 4,
+									"entries": [
+										"一个大城市贫民窟中以赫里加拉为信仰的邪教，数月来不断绑架、折磨并吞食各种人等。当其中一名受害者以强大的不死生物之姿归来时，他们的杀戮狂欢戛然而止。赫里加拉对这一变故颇感有趣，将倒下的邪教徒复活为不死生物。这些不死邪教徒在新首领的麾下集结，准备走出他们那破败的宅邸，去吞噬城中毫无防备的市民。",
+										"{@adventure 本冒险|ToB2-Lairs|9}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 剥皮怨灵|ToB2}、{@creature 血肉遗弃者|ToB2}、{@creature 水蛭集群|ToB2}和{@creature 无餍之神的仆从|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Terror at the Mountain Lotus Temple (8th-level Characters)",
+									"type": "entries",
+									"name": "山莲寺惊魂（8级角色）",
+									"page": 4,
+									"entries": [
+										"山莲寺建于一条偏远山隘旁的小山谷中，曾是一处朝圣者的圣地，也是过路旅人安宁的栖身之所。不久前，一位大限将至的寺院女祭司转向恶魔之力，企图延长自己的生命。她最终对这一决定追悔莫及，试图斥退那头恶魔。她的尝试失败了，恶魔将她变成了一头怪物。这位前女祭司随后杀死了寺中的其他住众，使此地闹鬼至今\u2014\u2014但它仍是群山中为数不多的可以躲避风霜的容身之处。",
+										"{@adventure 本冒险|ToB2-Lairs|10}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 飞头鬼|ToB2}、{@creature 躯壳|ToB2}和{@creature 墙怖怪|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Tunnels Below Skulltop Tor (9th-level Characters)",
+									"type": "entries",
+									"name": "骷髅顶丘下的隧道（9级角色）",
+									"page": 4,
+									"entries": [
+										"骷髅顶丘是一座顶部矗立着巨大巨人头骨的高耸山丘，自其矮人建造者被一头巨龙屠戮以来，数代人中一直沉寂无声。然而最近，运送粮食和麦酒的商队接连失踪，一切线索都指向这座山丘。在一支运送机密文件的商队失踪后，当地当局开始寻找可靠的人手，能够从山丘上取回文件\u2014\u2014并且在此过程中守口如瓶。",
+										"{@adventure 本冒险|ToB2-Lairs|11}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 阿巴尼斯巨人|ToB2}、{@creature 腐化异怪|ToB2}、{@creature 墓地龙|ToB2}、{@creature 频闪真菌|ToB2}和{@creature 瘦巨人|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Crucible of Golems (10th-level Characters)",
+									"type": "entries",
+									"name": "魔像熔炉（10级角色）",
+									"page": 4,
+									"entries": [
+										"数百年前，一个如今已被遗忘的法师统治政权曾用一座魔法坩埚制造战争魔像。自那以后，它一直沉眠隐匿。最近，一位野心勃勃、诡计多端的法师找到了这座坩埚，并将其改用于制造他个人的魔像军团。当地一位构装体史学者认为，这座坩埚应当被研究，而不是用来制造军队，于是委托PC们去阻止这位法师。",
+										"{@adventure 本冒险|ToB2-Lairs|12}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 轴承魔像|ToB2}、{@creature 发条虎|ToB2}和{@creature 制造者|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Fire and Fury (13th-level Characters)",
+									"type": "entries",
+									"name": "烈火与怒焰（13级角色）",
+									"page": 4,
+									"entries": [
+										"数百年前，一只火山生物在奥洛夫·尤拉克火山的火山口中定居。自那以后，它一直要求火山脚下的定居点定期献祭，对不从者便让岩浆流吞没其聚落。最近一位来到此地的旅人对这些献祭感到震惊，坚称这些定居点一定能有更好的活法。这位旅人正在寻找有能力击败潜伏在火山中的强大邪恶的冒险者。",
+										"{@adventure 本冒险|ToB2-Lairs|13}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 彻鲁菲|ToB2}、{@creature 火蜥蜴君主|ToB2}和{@creature 火蜥蜴|ToB2}。"
+									]
+								},
+								{
+									"ENG_name": "Towers of the Three Regents (15th-level Characters)",
+									"type": "entries",
+									"name": "三摄政王之塔（15级角色）",
+									"page": 4,
+									"entries": [
+										"这三座塔曾分别献给不同的精类领主。当精类国王与王后不在时，这些领主以摄政王的身份从塔中施行统治。在精类内乱期间，一场对三塔的攻击使它们化为废墟。低语的流言提到摄政王们的一件古老圣物，它在三塔遇袭时失落。最近，邪恶的精类王后派遣密探前往三塔寻找这件圣物。她的宿敌们不想让这件强大的物品落入她手中，于是寻求既不畏王后之怒、又有实力对抗她爪牙的冒险者。",
+										"{@adventure 本冒险|ToB2-Lairs|14}的特色怪物包括来自{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}的{@creature 法尔·多罗查|ToB2}、{@creature 精魂复仇者|ToB2}、{@creature 异常骑士|ToB2}和{@creature 运气汲取者|ToB2}。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "To Track a Thief",
+					"type": "section",
+					"name": "追踪窃贼",
+					"page": 5,
+					"entries": [
+						"{@b 一场供四到五名1级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 5,
+							"entries": [
+								"科尔查克银行与保管库曾是一家受人尊敬的老牌银行，多年来一直是城中商人富贾的常来之地。它同时也是一个玛门邪教的门面，邪教借助银行进行的合法金融交易清洗自己的不义之财。银行行长马克西姆·科尔查克同时也是该邪教的大祭司。十年前的一场大火烧毁了建筑上层的大部分区域。这场大火也掩护了一支冒险队伍对邪教发动的突袭，杀死了科尔查克和许多邪教徒。",
+								"幸存的邪教徒带着能带走的财物逃之夭夭，冒险者们则掳走了其余的赃物。双方都没能取回贪婪集群的主硬币（见{@area 区域12|ttat12|x}）\u2014\u2014那是邪教秘密金库的守护者，十年来一直蛰伏在地下金库中。与此同时，这座受损的建筑无人使用、无人认领，被木板封死\u2014\u2014直到最近。",
+								"几周前，一只落单的瓦尔克鲁恩在与族群失散后进入城中，寻找新家。在探索新居时，它发现了地下室中隐藏的玛门神殿。地下金库里藏着一枚贪婪集群的主硬币，被邪教徒遗忘，也被当年突袭神殿的冒险者们忽略。这枚硬币一直毫无力量，长期没有任何可供集群成形的财宝\u2014\u2014直到瓦尔克鲁恩开始把偷来的赃物存放在附近。有了新的硬币和财宝供给，贪婪集群重新凝聚成形。瓦尔克鲁恩对新伙伴欣喜不已，把它当成一只闪闪发亮、叮当作响的宠物。贪婪集群和瓦尔克鲁恩在夜间外出，两者在黎明来临前从当地居民处偷得所能偷到的一切，然后撤回科尔查克银行。",
+								"与同类一样，瓦尔克鲁恩潜伏在屋顶上，下来从居民处行窃。它凡是看上眼的东西都拿。由于这生物干的多是些小偷小摸，偷的常是没什么价值的东西，它的行径并未引起当地守卫的太多注意。然而，在贪婪集群重新凝聚后，劫案的频率和价值都有所提升，引来了更多关注。",
+								"瓦尔克鲁恩的侵扰虽然持续不断，但鉴于这生物无论有无价值、凡是引起它兴趣的东西都偷，倒也不算太让人担忧。贪婪集群则挑剔得多，到目前为止已杀死三人\u2014\u2014趁他们落单时下手，卷走他们携带的财物。由于至今毫无线索，城镇守卫愿意引入外部援助。",
+								{
+									"ENG_name": "To Track a Thief in Midgard",
+									"type": "inset",
+									"name": "米德加德中的追踪窃贼",
+									"entries": [
+										"在米德加德战役设定中，从大城镇到小城市的几乎任何城市环境都可以作为投放本冒险的地点\u2014\u2014只要当地经济繁荣、有开设银行的合理性。最合适的地点包括佐贝克、马罗蒂帝国的德罗伊沙、努里亚纳塔尔的珀库什，或七城之地的瓦莱拉。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 6,
+							"entries": [
+								"以下引子可用于引诱PC去调查这些劫案：",
+								{
+									"type": "list",
+									"items": [
+										"PC在社区公告板上或当地守卫岗亭外看到一则告示，宣布市政官员悬赏50 gp，征集能将近期劫案的窃贼（一或多名）缉拿归案的线索。",
+										"一位PC认识的守卫军官主动找上他们，请求协助追查窃贼。",
+										"当地盗贼行会对这些不专业的外行窃贼造成的治安动荡颇为不满。一名游荡者PC，或有犯罪门路的PC，被行会的密使找上门。密使请PC协助，并许诺日后行会必回报一份人情。",
+										"一位商人或小贵族是近期劫案的受害者。他们希望能取回一件传家之物（图章戒指、护符、婚戒或其他有意义的物品），并愿意为物品的归还支付50 gp的酬金。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Finding the Thieves",
+							"type": "entries",
+							"name": "寻找窃贼",
+							"page": 6,
+							"entries": [
+								"PC可以采用多种策略来寻找窃贼的踪迹。最直接的方式是在夜间巡行劫案发生地区的街道，指望撞见猎物。这种方式成效不定。由于贪婪集群并不在意潜行，也不在意留活口，巡逻的PC可能听到受害者的尖叫，或是撞上贪婪集群正在制服一名受害者。PC的及时赶到可能吓得贪婪集群和瓦尔克鲁恩带着受害者的财物逃走，从而让PC有机会一路尾随这对搭档回到科尔查克银行。",
+								"PC可以调查劫案发生的地点，或询问受害者和目击者。他们也可以与城市守卫的成员交谈（或与盗贼行会的成员交谈\u2014\u2014如果他们是受该组织所托）。成功通过DC 12的智力（{@skill 调查}）或魅力（{@skill 游说}）检定可以获得情报。每次检定成功给出一条情报（或者，PC的检定结果每超出DC 2点，就额外提供一条情报）。",
+								{
+									"type": "list",
+									"items": [
+										"劫案杂乱无章。窃贼偷走的物品种类和价值差异极大，从硬币、珠宝到儿童玩具和厨房用具都有。",
+										"劫案总是发生在夜间。",
+										"几周之后，劫案的频率有所增加。同时，被偷的物品更值钱了，不过廉价无用的东西仍在照偷不误。（如果这一情报来自守卫军官或盗贼行会成员，他们还会提到，这种变化很可能意味着凶手不止一人。）",
+										"三名受害者遇害，财物被洗劫一空，钱袋和口袋被撕开，不值钱的物品散落在尸体附近。尸体上布满细小的瘀伤，像是被反复殴打，或被大量小件物品投掷击打所致，但现场并没有找到此类物品。",
+										"一些目击者报告说，在劫案发生地区见过一只猴子，在街道上、屋顶上或遮阳篷上窜行。还有人报告听到响亮的咔嗒声或金属碰撞声，像是金属物件被拖行或抛到街上。"
+									]
+								},
+								"如果PC拿到一张城市地图，并把上报的劫案标注出来，他们会发现标记区域构成一个直径约半英里的粗略圆形。废弃的银行正位于活动区域的正中央。成功通过DC 12的智力（{@skill 调查}）或感知（{@skill 洞悉}）检定，便足以让PC以这种方式定位瓦尔克鲁恩的巢穴。"
+							]
+						},
+						{
+							"ENG_name": "Kolchak's Counting House and Repository",
+							"type": "entries",
+							"name": "科尔查克银行与保管库",
+							"page": 6,
+							"entries": [
+								"这座两层建筑由石头和木料建成，风格相当沉稳朴素，唯有正门台阶两侧的一对石狮雕像别具一格。建筑上层曾遭火灾损毁，部分屋顶已有塌陷迹象。正门被铁链锁死。使用盗贼工具成功通过DC 13的敏捷检定可以撬开锁，而成功通过DC 18的力量检定则可以挣断铁链。",
+								"另外，为城镇守卫办事的PC如果能证明窃贼可能藏匿于建筑中，也可以获准进入。一楼的窗户都被木板封死。成功通过DC 12的感知（{@skill 察觉}）检定可以注意到西墙一扇窗户上的木板松动，该窗通向{@area 区域1|ttat1|u}。否则，成功通过DC 12的力量检定可以撬开任意一扇窗的木板，但这会发出相当大的声响。二楼的窗户已破碎敞开，想爬上去从那里进入也并非不可。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map1.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Lobby",
+									"type": "entries",
+									"page": 8,
+									"name": "1. 门厅",
+									"id": "ttat1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"木块、灰泥、烟灰和碎石散落在这一区域龟裂的大理石地面上。几把破损的软垫椅、一张旧长沙发和几张桌子，曾是供顾客等候之用的等候区。东北侧一座雕花木制柜台上装有铁栅，构成银行职员的工作区。北墙上有两扇门。房间里弥漫着烟味和潮气。"
+											]
+										},
+										"地上散落着楼上坠落的碎砾，天花板上敞开的破洞通向{@area 区域9|ttat9|x}和{@area 区域10|ttat10|x}。出纳柜台两端的柜面设有可开合的活板，可供进入{@area 区域2|ttat2|u}。东北侧的门通向{@area 区域4|ttat1|u}。",
+										{
+											"ENG_name": "Hazard",
+											"type": "entries",
+											"name": "危害",
+											"entries": [
+												"天花板并不稳固，这里的任何巨大声响或激烈动作（战斗、{@spell 雷鸣波}之类的法术以及类似行为）都可能导致部分天花板塌落。当{@spell 雷鸣波}这类巨大声响出现时，有{@chance 25}的几率会有大块碎砾从天花板坠落。距声源5尺内的每个生物必须通过DC 10的敏捷豁免，否则受到5（{@damage 1d10}）点钝击伤害。即使没有大块碎砾坠落，头顶支架也会发出明显的呻吟声，灰尘簌簌落下，警告区域内的人在此处最好保持安静。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Clerks' Area",
+									"type": "entries",
+									"page": 8,
+									"name": "2. 职员区",
+									"id": "ttat2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"柜台后方，一排排装有锈蚀铜件的抽屉旁边是堆满霉烂纸张的架子。一些纸张被撕碎，堆成小山散落在区域角落。一幅装框的肖像挂在防护铁笼后的墙上，画中人物因污垢而无法辨认。"
+											]
+										},
+										"老鼠曾用这些纸在架子之间和周围筑巢，但它们并无危害。",
+										{
+											"ENG_name": "Portrait",
+											"type": "entries",
+											"name": "肖像",
+											"entries": [
+												"这幅肖像画的是银行创始人马克西姆·科尔查克的模样，但若不仔细清理画面，很难辨认出画中人。成功通过DC 12的感知（{@skill 察觉}）检定可以注意到肖像画框背面夹着的一张纸条。手写的字条上写着：\"明日。午夜。金库。\"字条没有署名，但纸上有三滴呈三角形排列的黄色蜡迹。成功通过DC 13的智力（{@skill 宗教}）检定可以想起，以这种构造摆放的三枚金币是玛门\u2014\u2014魔鬼君王、贪婪之主\u2014\u2014的象征。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Access Hall",
+									"type": "entries",
+									"page": 8,
+									"name": "3. 通行大厅",
+									"id": "ttat3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这条短廊尽头是一扇门。一道楼梯通往二楼。"
+											]
+										},
+										"通向{@area 区域6|ttat3|u}的门从另一侧上了门闩，需要成功通过DC 15的力量检定才能强行打开。门底部被砸出了一个小洞。其大小足以让一只微型生物正常通过，或让一只小型生物挤身穿过。"
+									]
+								},
+								{
+									"ENG_name": "4. Access Hall",
+									"type": "entries",
+									"page": 8,
+									"name": "4. 通行大厅",
+									"id": "ttat4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这条短廊两端各有一扇木门。西墙被一扇巨大的铁门占据，铁门微微敞开。一只骷髅手紧抓着门中央手轮的一根辐条。"
+											]
+										},
+										"通向{@area 区域6|ttat6|u}的门锁着。使用{@item 盗贼工具|phb}成功通过DC 13的敏捷检定可以开锁。通向{@area 区域5|ttat5|u}的门上那只手是人的手，是从一名试图逃离当年突袭银行的冒险者的邪教徒身上斩下来的。"
+									]
+								},
+								{
+									"ENG_name": "5. Bank Vault",
+									"type": "entries",
+									"page": 8,
+									"name": "5. 银行金库",
+									"id": "ttat5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间加固房间的内部排列着架子。一些架子上仍有铁皮箱，但大多数都敞开着，空空如也。铁锈色的污渍溅洒在地板上，一路延伸到金库深处。"
+											]
+										},
+										"这些污渍是被肢解的那名邪教徒留下的干涸血迹，他当年逃进了这里。血迹的尽头是地板上一扇通往{@area 区域11|ttat11|u}的暗门。玛门的邪教徒曾利用这条通道前往地下室的秘密神殿，并暗中把财物从上层金库转移到下层金库。这扇门只能从另一侧打开，但成功通过DC 18的感知（{@skill 察觉}）检定可以找到它。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"金库早已被洗劫一空，但仍有一只铁皮箱里装着财物。使用{@item 盗贼工具|phb}成功通过DC 13的敏捷检定可以打开箱子，里面有三根各值25 gp的银条和一枚价值25 gp的金猫眼石戒指。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Director's Office",
+									"type": "entries",
+									"page": 9,
+									"name": "6. 行长办公室",
+									"id": "ttat6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间大房间曾颇为豪华。一张厚实的流苏地毯铺在地上，如今已被虫蛀且污渍斑斑。北墙边一座大壁炉塞满了灰烬。东侧一株枯死的蕨类植物栽在釉盆中，立在大木桌旁，桌子的软垫皮椅被撕裂，破洞中露出丝丝填料。"
+											]
+										},
+										"这间房间早已被洗劫一空，没有任何值钱之物。成功通过DC 15的智力（{@skill 调查}）检定可以发现书桌附近地板上一扇隐藏的暗门。蕨类植物后方墙上的一个秘密开关能打开暗门，露出一条通往{@area 区域11|ttat11|u}的梯子。成功通过DC 15的感知（{@skill 察觉}）检定可以找到这个开关。"
+									]
+								},
+								{
+									"ENG_name": "7. Upper Hall",
+									"type": "entries",
+									"page": 9,
+									"name": "7. 上层大厅",
+									"id": "ttat7",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这一区域弥漫着浓重的烟味、潮气和腐朽气味。天花板上破洞可见，窗户尽碎，只留下墙上的空框。大厅两侧排列着数个房间，但一些门乃至部分墙体已经不存，使这里成为残墙与碎砾构成的迷宫。"
+											]
+										},
+										"南北向的主大厅是困难地形。"
+									]
+								},
+								{
+									"ENG_name": "8. Collapsed Office",
+									"type": "entries",
+									"name": "8. 塌陷的办公室",
+									"id": "ttat8",
+									"page": 9,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间房间的天花板大部分已经塌落，大量烧焦的木料、石块和其他碎砾堆积在屋内。一片可能是书桌的碎裂残骸从塌落碎砾下露出。"
+											]
+										},
+										"一只{@creature 石爬者|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）在此扎根，以粘合建筑的灰泥为食。石爬者的取食加上火灾的损伤，导致这一区域的屋顶坍塌。石爬者会攻击进入该区域的生物，但如果它们逃走，它不会追击。"
+									]
+								},
+								{
+									"ENG_name": "9. Ruined Offices",
+									"type": "entries",
+									"name": "9. 残破的办公室",
+									"page": 9,
+									"id": "ttat9",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这一区域似乎受了火灾最严重的摧残，墙体焦黑且部分坍塌。这里的成套办公室已化为一大片相连的区域，被碎砾、半塌的墙壁和地板上的大洞分割开来。"
+											]
+										},
+										{
+											"ENG_name": "Unsafe Floor",
+											"type": "entries",
+											"name": "不安全的地板",
+											"entries": [
+												"地板破洞周围10尺内的空间并不安全。移动到这些区域且体重超过100磅的生物会踩穿地板，在10尺下的一楼{@condition 倒地}着地，并如常受到{@damage 2d6|跌落伤害}伤害。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "10. Meeting Room",
+									"type": "entries",
+									"name": "10. 会议室",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一张曾经雕工精美、打磨光亮的橡木桌塌落在房间地板上，满是灰烬和烟垢。曾环绕桌子的椅子早已不知去向。房间一角立着一个柜子。柜门丢了一扇，另一扇挂在唯一的铰链上摇摇欲坠。柜中的搁板弯曲变形，堆满破烂。"
+											]
+										},
+										"这个柜子是瓦尔克鲁恩展示它偷来的、觉得有趣的物品的地方。在一片杂乱中有诸如鸡毛掸子、玻璃义眼、一副假牙、马刷、儿童布娃娃和一把园艺剪之类的东西。",
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"这里有{@chance 50}的几率会遇到{@creature 瓦尔克鲁恩|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）正在整理柜中它的藏品。否则，它可以在{@area 区域11|ttat11|u}找到。若在此处，瓦尔克鲁恩不会以寡敌众硬拼。它会试图逃走（先以一次{@skill 巧手}检定从攻击者身上摸走一件有趣的物品），穿过破损的地板，从破洞下到一楼，再前往{@area 区域12|ttat12|u}向贪婪集群报信。逃走时，它会让{@area 区域6|ttat6|u}的暗门在身后敞开。"
+											]
+										}
+									],
+									"page": 9,
+									"id": "ttat10"
+								},
+								{
+									"ENG_name": "11. Basement",
+									"type": "entries",
+									"name": "11. 地下室",
+									"id": "ttat11",
+									"page": 10,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间房间的地面被几寸深的冰冷脏水淹没。一角有一道锈蚀的铁梯向上延伸，近中央处一道石坡直抵天花板。角落里立着一尊金制神像，形似手持权杖的有角邪魔。这尊大腹便便的形象蹲踞在分蹄之上，俯瞰着面前一对锈铁火盆之间那座打磨光亮的石制祭坛。通向另一座金库的厚重铁门在房间东南角敞开着。"
+											]
+										},
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"如果没有在{@area 区域10|ttat10|u}遇到，{@creature 瓦尔克鲁恩|ToB2}就在这里，欣赏着祭坛上它的宝藏。它会呼唤{@area 区域12|ttat12|u}的贪婪集群前来协助击退入侵者。如果集群的生命值降至一半或以下，瓦尔克鲁恩便会逃走，顺铁梯而上，或藏身于建筑中的其他地方，或经屋顶逃往城中别处。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"瓦尔克鲁恩偷来的闪亮物品堆满了祭坛。在众多金属配件、纽扣、玻璃珠和人造首饰之间，藏着几件值钱货：10 cp、29 sp、7 gp，以及一枚价值25 gp的铜质胸针。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "12. Lower Vault",
+									"type": "entries",
+									"name": "12. 下层金库",
+									"id": "ttat12",
+									"page": 10,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间房间内部有若干桌子和架子，但除了灰尘和蛛网外空无一物。一堆闪亮的硬币、宝石和珠宝堆放在地上。"
+											]
+										},
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"地上的财宝是一只{@creature 贪婪集群|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）。它会攻击任何进入其巢穴的生物（瓦尔克鲁恩除外），并且战斗至死。若被摧毁，构成其身体的财宝便会失去活力、散落在地。能够感知魔法存在的法术或其他效应（如{@spell 侦测魔法}）可以显露出那堆失去活力的硬币中的主硬币。摧毁这枚主硬币可阻止贪婪集群重新凝聚。过去几周里，主硬币积攒下了巨额财富：1,900 cp、800 sp、90 gp，以及7颗各值10 gp的各式宝石。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 10,
+							"entries": [
+								"如果PC查明了劫案的源头，他们将获得情报所应得的酬金。如果他们解决了瓦尔克鲁恩和贪婪集群，将额外获得50 gp的酬金。如果PC还归还了被盗财物，总酬金再加250 gp。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Forsaken Fort",
+					"type": "section",
+					"page": 11,
+					"name": "被弃要塞",
+					"entries": [
+						"{@b 一场供四到五名3级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 11,
+							"entries": [
+								"数周前，草原上的一座要塞被一种致命的疫病彻底摧毁。在最后一名居住者病死后不久，一群由一只克罗克塔带领的流浪鬣狗（见{@area 区域5|tff5|u}）发现了这座要塞，决定在此安家。克罗克塔认为这座要塞是理想的居所，但大门仍被门闩死死封住。它铁了心，开始在栅栏下掘洞，并怂恿鬣狗们帮忙。挖掘掏空了一栋建筑下方的一段墙基，导致部分坍塌，并惊扰了一群疫病集群\u2014\u2014正是杀死要塞居住者的疫病的最初携带者。这群集群温暖舒适的藏身处暴露在天光之下，于是飞走了。疫病集群最终袭击了附近的村庄（见{@area 疫病降临|tffpd|x}）。与此同时，克罗克塔和它的鬣狗盟友住进了新家。",
+								"由于无法使用要塞里的门，鬣狗和克罗克塔在各栋建筑下掘出了通道。这让它们可以相对轻松地在各区域之间移动，而入侵者要么得想办法穿过常常上锁的门，要么就得冒着劣势使用鬣狗的出入口。克罗克塔还设计了其他一些花招，帮助它和它的鬣狗守卫新巢穴。"
+							]
+						},
+						{
+							"ENG_name": "Starting the Adventure",
+							"type": "entries",
+							"name": "开始冒险",
+							"page": 11,
+							"entries": [
+								"PC应当身处一个小村庄、农场或其他有人居住的农业地区。无论是路过、补充补给，还是寻找过夜之处，他们都恰逢其时，因为这里的人们正需要他们的帮助。"
+							]
+						},
+						{
+							"ENG_name": "Pestilence Descends",
+							"type": "entries",
+							"name": "疫病降临",
+							"id": "tffpd",
+							"page": 11,
+							"entries": [
+								"当PC在附近时，突然响起的惊呼让他们警觉到危险。一只{@creature 疫病集群|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）从东面的天空俯冲而下。集群落在附近任何作物上\u2014\u2014无论田间还是集市摊位\u2014\u2014并将其啃食殆尽。如果PC想得到这里人们的任何配合，就必须先解决集群，因为附近所有人的头等大事都是在那集群毁掉庄稼之前杀死或赶走它。对PC和当地人而言幸运的是，疫病集群已不再携带它带到要塞的那种疾病\u2014\u2014集群漫长的蛰伏期让疫病失去了宿主。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 12,
+							"entries": [
+								"集群被消灭后，当地居民对PC提供的任何援助都感激不已，甚至愿意提供免费食宿并请他们喝上一轮。从这时起，以下任何一条都可以用来促使PC前往调查要塞。",
+								{
+									"type": "list",
+									"items": [
+										"一位当地权威人物（村长、治安官或议员）担心集群来自要塞的方向，主动来找PC。他解释说，已经数周没有要塞的音讯了。通常他们会见到巡逻队或骑手前来领取补给。PC受托前往调查要塞并回报情况。",
+										"一位当地医者或牧师认出这种集群是一种传播疾病的昆虫。医者担心要塞的安危，请PC去查看要塞中是否有人因虫咬而染病。",
+										"一位村民或农夫有一封口信要捎给要塞里当兵的亲戚。要塞正好在PC前进的方向上。",
+										"PC出于自己的原因计划在要塞停留。他们可能认识某位士兵，可能想向要塞的巡逻骑手打听这一地区的情况，或者可能有东西要递送。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Scaly Ambush",
+							"type": "entries",
+							"name": "鳞伏突击",
+							"page": 12,
+							"entries": [
+								"在疫病集群袭击地与要塞之间的某处，PC遭到掠食者的跟踪。美颌龙是微型生物，但当它们以优势数量出现时，对大得多的猎物也很危险。要塞的巡逻队通常会见到这些生物就杀。随着要塞陷于瘫痪，这一带的小恐龙数量已经增长。",
+								"PC遭到一只{@creature 美颌龙集群|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）的袭击。这些生物饥饿难耐，愿意攻击一整群类人生物，指望放倒其中之一或一只随行动物充当食物。如果可能，集群会借着潜行从高大的平原草丛中扑向PC。"
+							]
+						},
+						{
+							"ENG_name": "The Forsaken Fort",
+							"type": "entries",
+							"name": "被弃要塞",
+							"page": 12,
+							"entries": [
+								"要塞被一道12尺高的木栅栏环绕。大门从里面上了闩。成功通过DC 20的力量检定可以强行打开。建筑本身为木制，窗户上钉着厚重的护窗板，板上开有十字形射孔，供士兵从屋内向外射击。",
+								"由于资源匮乏，除一栋外，所有建筑的底层都是夯土地面。大门东侧的一段栅栏已经坍塌，连同附近一栋建筑的一部分。北面栅栏也有一段下方被掘出了入口。成功通过DC 10的敏捷（{@skill 杂技}）检定可以从倒木和碎砾之间挤过去进入马厩（{@area 区域2|tff2|u}）。检定失败则生物无法在这一团乱麻中前进。如果检定失败5点或更多，会引发进一步的坍塌。该生物陷入{@condition 束缚}状态，直到它或另一生物成功通过DC 12的力量检定，移开部分碎砾将被困生物释放出来。",
+								"成功通过DC 12的感知（{@skill 求生}）检定可以注意到坍塌区域周围有挖掘的痕迹，还能辨认出属于鬣狗的足迹。成功通过DC 15的感知（{@skill 求生}）检定可以发现其中一组足迹的爪印比其他的要长得多。在要塞北侧的掘洞口也有这些足迹，进出要塞的都有。",
+								"大门上挂着一块绘有印记的黄色布片。成功通过DC 10的智力（{@skill 历史}）或感知（{@skill 医药}）检定可以认出这是疫病的标志，是对靠近要塞之人的警告。",
+								{
+									"ENG_name": "The Forsaken Fort in Midgard",
+									"type": "inset",
+									"name": "米德加德中的被弃要塞",
+									"entries": [
+										"这座位于广阔草原上的木制要塞可以轻松地放入罗森尼亚平原，或其任一邻国（如佩鲁纳利亚、奈姆海姆或维迪姆）的边境地带。"
+									]
+								},
+								{
+									"ENG_name": "Disease",
+									"type": "entries",
+									"name": "疾病",
+									"page": 12,
+									"entries": [
+										"席卷要塞的疫病对所有感染者都是致命的。由于已没有活的感染者传播它，PC可以放心穿越这一地区。不过，依你裁定，长时间接触要塞中的类人生物遗骸可能使PC染上某种疾病。{@disease 疯笑病}和{@disease 下水道瘟疫}都是合适的疾病选择。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map2.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Courtyard",
+									"type": "entries",
+									"page": 14,
+									"name": "1. 庭院",
+									"id": "tff1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"栅栏内部主要是夯实的土地，间或有几片草地。院子中央立着一口带顶的石井。北侧矗立着一栋三层建筑，连着一座塔楼。东侧有三栋独立建筑，其中一栋受损，屋顶敞着一个大洞。"
+											]
+										},
+										"井中的水可以饮用。所有建筑的门窗都关得严严实实，没有生命迹象。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"如果PC设法潜行进入院子，院里有五只{@creature 鬣狗|mm|鬣狗}正四处趴卧。它们会攻击PC，它们发出的动静会惊动周围建筑中的其他生物，使其进入戒备。如果它们中至少有两只被杀，其余的会试图逃进周围的建筑。如果PC在接近时就被发现，这些鬣狗会溜走与他会合；将其他遭遇中的鬣狗数量增加一只。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Stable",
+									"type": "entries",
+									"name": "2. 马厩",
+									"id": "tff2",
+									"page": 14,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"尽管南侧墙体因栅栏坍塌而受损\u2014\u2014一根支撑梁和部分天花板被砸毁\u2014\u2014这栋建筑依然立着。尽管破洞通风，腐肉的恶臭仍久久不散。北侧沿墙有五个畜栏。一个架子和一张桌子上放着马具和骑具。"
+											]
+										},
+										"曾厩养于此的马匹在士兵病重无力照料后被疏于照管而死，鬣狗们啃食了残骸。架子和桌子上放着供五匹马使用的{@item 乘用鞍座|phb|鞍座}和马具。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"三只{@creature 鬣狗|mm|鬣狗}潜伏于此。如果它们发现有生物试图从坍塌处进入，便会伏击入侵者。如果有生物被坍塌困住，它们会毫不留情地攻击该生物。可能的话，鬣狗们会专注于单一对手。如果它们中两只被杀，剩下的鬣狗会逃跑，到别处与其他鬣狗会合。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Sergeant's Cabin",
+									"type": "entries",
+									"name": "3. 军士小屋",
+									"id": "tff3",
+									"page": 14,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这座木屋背靠要塞东墙。前门上方钉着一枚抛光黄铜纹章。东南角附近有挖掘的痕迹。屋内的恶臭与它整洁的外观格格不入。一张小桌靠南墙放着，一个书架靠北墙立着。东墙处有一张床和一个衣柜。一具腐烂的尸体安卧在床上。"
+											]
+										},
+										"屋内铺设的木地板使鬣狗和克罗克塔无法掘入，因此这里未遭它们的侵扰。要塞的指挥军士生前住在这栋建筑里；死后他的尸体仍留在此处。书桌上放着各类命令和报告，以及军士的日志。后期的条目提到了疫病的蔓延、要塞对外人封闭，以及少数昆虫的出现\u2014\u2014其特征与PC抵达前消灭的昆虫相符。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"衣柜里有一件{@item 胸甲|phb}、一面{@item 盾牌|phb}和一把{@item 长剑|phb}。衣柜底部的一个抽屉里放着一只装有810 gp的箱子；这些钱是驻守要塞士兵的月饷。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Kitchen and Stores",
+									"type": "entries",
+									"name": "4. 厨房与储藏室",
+									"id": "tff4",
+									"page": 14,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这栋建筑内部一片狼藉。碎布片、干豆和面粉散落一地。壁炉里的灰烬被刨出，撒得满屋都是。中央桌子上方的吊架已经坠落，锅碗瓢盆四处飞散。建筑后部的几个挂钩上仍挂着腐烂的碎肉和半截香肠。附近一个倒下的架子让罐子摔了一地。大多数完好无损，但有些已经破碎，里面东西不翼而飞，玻璃碎片干净得出奇。"
+											]
+										},
+										"鬣狗掘入后把厨房洗劫一空，饱餐了储存的肉食和能找到的其他任何东西。如今它们偶尔进来捕猎可能溜进来偷食的害虫。",
+										{
+											"ENG_name": "Trapdoor",
+											"type": "entries",
+											"name": "活板门",
+											"entries": [
+												"天花板上有一扇显眼的活板门，动物们够不到。拉开它便会放下一架木梯，可供登上二楼（{@area 区域9|tff9|u}）。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"三只{@creature 鬣狗|mm|鬣狗}在这里翻找东西。如果入侵者从门进来，一只会站在桌上坚守，另外两只则从南墙下的洞离开，绕到PC侧翼，从敞开的门或西墙下的洞发起攻击。这些战术是克罗克塔教的，成功通过DC 13的智力（{@skill 自然}）检定可以意识到这不是鬣狗的正常行为。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Mess Hall",
+									"type": "entries",
+									"name": "5. 食堂",
+									"id": "tff5",
+									"page": 15,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这里摆着两张粗木桌，两侧配有长凳。一张桌上放着扑克牌和散落的硬币。空气中弥漫着麝香般的兽味和腐臭。北墙上有一道楼梯通往二楼。正门西侧的墙下被掘出一个洞。东墙另一扇门的南侧还有一个。"
+											]
+										},
+										"这里是要塞士兵用餐和闲暇时休息的地方。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"{@creature 克罗克塔|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）与五只{@creature 鬣狗|mm}栖息于此。如果提前得知PC的到来，克罗克塔会指挥鬣狗经由掘出的通道躲进{@area 区域6|tff6|u}，自己则从区域5的楼梯退上{@area 区域7|tff7|u}，与那里的鬣狗会合。当PC进入区域5时，克罗克塔会用拟声特性发出微弱的呼救声，引诱PC上楼，自己潜伏在床铺附近。当PC抵达{@area 区域7|tff7|u}时，它向鬣狗发出进攻信号，并用预先约好的信号声召唤藏在{@area 区域6|tff6|u}的鬣狗上来从背后夹击PC。随后它逃往{@area 区域11|tff11|u}，从一扇敞开的窗户跳上阳台，在那里与PC做最后的顽抗。",
+												"如果来不及防备PC，克罗克塔会守在通往二楼的楼梯附近。它依赖麻痹凝视特性，由鬣狗们猛攻。鬣狗们专注于仍在移动的对手，习惯把{@condition 麻痹}的目标留给首领。当至少三只鬣狗被杀后，克罗克塔会带着余下的鬣狗退往楼上。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"桌上散落着硬币，是士兵们那场再也无法回来打完的牌局留下的。硬币共计37 cp、28 sp和6 gp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Watchtower, First Floor",
+									"type": "entries",
+									"name": "6. 瞭望塔一层",
+									"id": "tff6",
+									"page": 15,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个小房间里有一对板条箱和一道通往塔楼上一层的楼梯。"
+											]
+										},
+										{
+											"ENG_name": "Supply Chests",
+											"type": "entries",
+											"name": "补给箱",
+											"entries": [
+												"其中一只板条箱里放着四张{@item 轻弩|phb|轻弩}和四十支{@item 弩矢|phb|弩箭}。另一只里有两盏{@item 牛眼提灯|phb|牛眼提灯}（都已加满油）和六瓶{@item 燃油 (扁瓶)|phb|油瓶}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "7. Barracks",
+									"type": "entries",
+									"name": "7. 兵营",
+									"id": "tff7",
+									"page": 16,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"房间里有六张双层床，每张下层床下都有一对脚箱。下层床铺的寝具堆在地上，旁边还有被啃咬过的碎骨。腐臭味充满了整个房间。"
+											]
+										},
+										"鬣狗们饱餐了死于此处的士兵尸体后，把这里当成了自己的巢穴。还剩下几块骨头，包括一颗被啃得干干净净的狗头骨。它属于克罗克塔，是要塞吉祥物仅存的一切。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四只{@creature 鬣狗|mm|鬣狗}眼下正在这个房间里。如果走投无路它们会凶猛作战，但在至少两只被杀后，只要有可能就会往楼上或楼下逃跑。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"脚箱里共有十二把{@item 短剑|phb|短剑}、十二把{@item 匕首|phb|匕首}、24 gp、36 sp和48 cp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "8. Watchtower, Second Floor",
+									"type": "entries",
+									"name": "8. 瞭望塔二层",
+									"id": "tff8",
+									"page": 16,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个小房间空无一物，只有下到一层的楼梯和通往上一层的另一道楼梯。南北两侧的墙上开着装有护窗板的小窗。"
+											]
+										},
+										"窗户上开着十字形射孔，能清晰地控制南侧院子的大部分区域以及要塞北侧的外部地带。"
+									]
+								},
+								{
+									"ENG_name": "9. Cook and Quartermaster's Quarters",
+									"type": "entries",
+									"name": "9. 厨师与军需官住所",
+									"id": "tff9",
+									"page": 16,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个房间里有两张床，分立于从楼下地面直通天花板的烟囱两侧。每张床尾各放着一个脚箱。房间里其余空间堆满了成摞的板条箱和木桶。"
+											]
+										},
+										"这间房至今未受克罗克塔及其鬣狗的侵扰，因为它们无法进入。床上空无一人\u2014\u2014军需官死在了兵营，厨师死在了楼下的厨房，因此这里没有他处弥漫的腐臭。",
+										"这个房间兼作住所和储藏室。这里有几箱耐储食品\u2014\u2014足够六个人吃一周的{@item 口粮(1天份)|phb|口粮}\u2014\u2014还有几{@item 木桶|phb|木桶}啤酒以及几桶盐和猪油。",
+										{
+											"ENG_name": "Equipment",
+											"type": "entries",
+											"name": "装备",
+											"entries": [
+												"除了衣物和少量私人物品外，脚箱里还有两把{@item 短剑|phb|短剑}、两把{@item 匕首|phb|匕首}、一个{@item 火绒盒|phb}、两块{@item 磨刀石|phb|磨刀石}、一小瓶{@item 圣水 (扁瓶)|phb|圣水}和一小瓶{@item 抗毒剂 (小瓶)|phb|抗毒剂}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "10. Armory",
+									"type": "entries",
+									"name": "10. 军械库",
+									"id": "tff10",
+									"page": 16,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个房间位于建筑陡峭的屋顶之下。椽子上挂着装满稻草的麻布吊袋，上有不少刺孔和割痕。木箱沿北墙排开，东墙边立着一对柜子。房间中央的一张桌子上放着刀具、针线、皮革、磨刀石和其他材料。东墙上一扇破窗通向一座木制阳台。"
+											]
+										},
+										"要塞的士兵曾在这个房间里训练和保养武器。要塞的新住客很少光顾这里，因为里面没有任何让它们感兴趣的东西。克罗克塔偶尔会进来，经由窗户前往{@area 区域11|ttf11|u}周围的阳台。",
+										{
+											"ENG_name": "Equipment",
+											"type": "entries",
+											"name": "装备",
+											"entries": [
+												"房间里共有六支{@item 骑枪|phb|骑枪}、十二面{@item 盾牌|phb|盾牌}、十二套{@item 镶钉皮甲|phb|镶钉皮甲}、两件{@item 链甲衫|phb|链甲衫}和一把重型{@item 硬头锤|phb|硬头锤}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "11. Watchtower, Third Floor",
+									"type": "entries",
+									"name": "11. 瞭望塔三层",
+									"id": "tff11",
+									"page": 16,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"小房间空无一物。南北两侧的墙上装有带护窗板的窗户。东墙上有一扇木门。"
+											]
+										},
+										"这扇门通向一座围栏阳台，阳台环绕塔顶三面，为其上的人提供半身掩护和俯瞰四周的绝佳视野。克罗克塔偶尔会上来，环顾要塞周围的土地。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 16,
+							"entries": [
+								"克罗克塔和它的鬣狗群被杀或被赶走后，PC便可自由行动。如果他们回到疫病集群袭击之地，告知居民要塞的命运，村民们会惊骇悲痛，但很高兴PC清除了要塞里的鬣狗。他们会以朴素而满怀感激的方式酬谢PC：农夫们为他们的旅途提供食物；一位旅店老板许诺他们日后路过时可免费住宿；一位医者或牧师为他们治疗在要塞所受的创伤，或赠送补给品，如{@item 医疗包|phb}、{@item 抗毒剂 (小瓶)|phb|抗毒剂}或一瓶{@item 治疗药水}；村长会给他们一封嘉奖信，这可能让他们日后求见其他政府官员时更为顺利（赋予他们魅力检定优势）。",
+								"如果PC把要塞失陷的消息报告给另一座要塞或沿途更远处的城防驻军，那里的指挥官会为他们的辛劳支付250 gp的酬金。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Twisted Wreath",
+					"type": "section",
+					"name": "扭曲花环",
+					"page": 17,
+					"entries": [
+						"{@b 一场供四到五名3级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 17,
+							"entries": [
+								"扭曲花环是一座由纠结多刺的藤蔓构成的迷宫，潜藏在远离任何大城市的密林深处。一座雕刻着被遗忘的德鲁伊符文、充盈着魔法能量的巨大方尖碑耸立在迷宫中央。各路自然神祇的信徒每年都会到方尖碑朝圣，献上祈祷与祭品。",
+								"过去几年里，一位名叫伊卡莱达的树精以扭曲花环为家，热情欢迎旅人前来方尖碑敬拜。一个月前，一群牧师来到方尖碑，主持了一场企图将方尖碑的魔法屈从于他们意志的仪式，以图联络一位强大的精类领主。令他们沮丧的是，仪式反噬，迫使他们撤退，并腐化了周围的自然资源。伊卡莱达死于反噬之中，这激怒了与她缔结联结的藤蔓魔像（见{@area 区域6|ttw6|u}）。魔像随即发动攻击，赶走了余下的朝圣者。从那时起，扭曲花环变成了一座充满怪物般生物的危险花园。",
+								"仪式失败造成的裂隙腐化了扭曲花环中的精类、植物和动物，使它们变得狂躁、暴戾而邪恶。一周前，一股死灵力量从裂隙中喷涌而出，将坠落的伊卡莱达变成了一只树皮剥取者（见{@area 区域7|ttw7|u}），并引来当地一个德鲁伊环圈的注意。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hook",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 17,
+							"entries": [
+								"PC们穿越森林时，一位名叫塔莉娅·霍恩西姆的年轻德鲁伊找上他们\u2014\u2014她险些丧命于伊卡莱达的魔像之手。塔莉娅担心其他前往扭曲花环的朝圣者可能不知道它如今的危险，一直在寻找愿意进入迷宫的冒险者。她恳求PC进入这片纠结的迷宫，净化她能感知到的从中渗出的腐化。塔莉娅并不知道仪式失败所造成腐化的范围，除了伊卡莱达的藤蔓魔像外，她无法警告他们任何危险。如果PC要求报酬，她承认自己拿不出钱，但若PC成功净化扭曲花环，她愿意交出自己的保健护符。"
+							]
+						},
+						{
+							"ENG_name": "The Twisted Wreath",
+							"type": "entries",
+							"name": "扭曲花环",
+							"page": 17,
+							"entries": [
+								"扭曲花环坐落在一片古老森林的深处，是一座由山楂树、蔓生桧柏、火棘丛和其他多刺植物疯长而成的迷宫。这片枝干、树身与藤蔓交织的屏障在森林中构成数条蜿蜒曲折的通道，整体呈大致的环形，这一地区也因此得名。就移动和伤害而言，迷宫的墙体的作用如同{@spell 棘墙术}法术，但该效应无法被解除。方尖碑的魔法会在1轮内用新的藤蔓和枝条补上被砍断或烧毁的墙体，因此离开开阔小径移动十分困难。",
+								"迷宫中的小径在白天光线昏暗，夜间一片漆黑。开阔区域白天明亮，夜间昏暗，不过天气状况可能对此有所影响。通出地图边缘的小径即离开迷宫。",
+								"PC在迷宫中穿行时，可能会遭遇其中的住户，也可能被扭曲的植被所阻。可以使用下表来为PC的迷宫之行增添变化。",
+								{
+									"type": "table",
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"colLabels": [
+										"{@dice d6}",
+										"遭遇"
+									],
+									"rows": [
+										[
+											"1",
+											"无遭遇"
+										],
+										[
+											"2",
+											"{@dice 1d3}只{@creature 食肉草皮|ToB2|食肉草皮}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）藏在沿路各处。它们会攻击任何从它们身上走过的生物。"
+										],
+										[
+											"3",
+											"{@dice 1d2}棵{@creature 启蒙树木|mm|启蒙树木}夹道而立。它们会攻击任何从它们之间穿行的生物。"
+										],
+										[
+											"4",
+											"附近树木的叶子发出不祥的沙沙声。这声音令人不安，但并无其他危害。"
+										],
+										[
+											"5",
+											"一根树枝轰然砸落在一条10尺长、5尺宽的直线上。该区域内的每个生物必须通过DC 12的敏捷豁免，否则受到4（{@damage 1d8}）点钝击伤害并被击{@condition 倒地}。"
+										],
+										[
+											"6",
+											"PC前方一条20尺长的小径受到{@spell 荆棘丛生}法术的影响，荆棘破土而出。10分钟后小径恢复正常。"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map3.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Entrance",
+									"type": "entries",
+									"name": "1. 入口",
+									"id": "ttw1",
+									"page": 18,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"森林小径在此变作一条由多刺藤蔓和山楂树构成的通道，标志着扭曲花环的入口。前方的路径异常安静，惯常的虫鸣鸟叫被一片令人生畏的寂静所取代。"
+											]
+										},
+										"曾有数只小妖精栖息在扭曲花环中，与伊卡莱达一同照料这里。当失败的仪式腐化迷宫时，小妖精们是最早屈服于其影响的生物之一。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"两只{@creature 腐化小妖精|ToB2|腐化小妖精}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）隐形绕着入口飞来飞去，它们无法离开裂隙的影响范围，又百无聊赖，便试图引诱路人进入。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Quiet Glade",
+									"type": "entries",
+									"name": "2. 幽静林间空地",
+									"id": "ttw2",
+									"page": 18,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"封闭的林间小径豁然开朗，露出一片开满野花、绿草如茵的美丽空地。"
+											]
+										},
+										"这片空地看似宁静，实际上却是两只{@creature 食肉草皮|ToB2|食肉草皮}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）的猎场，它们潜伏在此等待毫无戒心的旅人。这两块草皮原本只是普通的草皮，被失败的仪式赋予了生命，极具攻击性。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"空地上散落着数具动物骨骸和一具不完整的人类骸骨。检视人类遗骸时成功通过DC 15的智力（{@skill 调查}）检定可以发现它脚上穿着{@item 精灵之靴}。这具骸骨属于一名人类牧师，在仪式失败后不久便成了某块食肉草皮的猎物。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Sickly Tree",
+									"type": "entries",
+									"name": "3. 病态之树",
+									"id": "ttw3",
+									"page": 18,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这片林间空地的中央矗立着一棵巨大的病态橡树。一个人影瘫靠在树干底部，四周散落着焦黑的树叶。"
+											]
+										},
+										"树下的人影是一名男性精灵{@creature 斥候}，名叫玛勒斯利尔。玛勒斯利尔处于{@condition 无意识}状态，只剩2点生命值。他是伊卡莱达转变后遇到的第一个类人生物，她本能地从栖身的橡树中出手袭击。尚未被失败的仪式完全腐化的她，无法对他下杀手，于是逃到了{@area 区域7|ttw7|u}。",
+										{
+											"ENG_name": "Fallen Scout",
+											"type": "entries",
+											"name": "倒下的斥候",
+											"entries": [
+												"如果为他处理伤口，玛勒斯利尔会醒来并感谢PC的援手。他告诉PC，自己受当地一个德鲁伊环圈派遣而来\u2014\u2014他们最近感到一股黑暗能量从扭曲花环中喷涌而出。他计划继续调查这股力量的源头，并请求与PC同行；若遭拒绝，他便会独自前往。如果PC问起袭击者，他说自己记得的最后一幕，是一个神情惊恐、浑身缠满藤蔓的女子俯视着他，随后勒着他的藤蔓松开了他。"
+											]
+										},
+										{
+											"ENG_name": "Blackened Leaves",
+											"type": "entries",
+											"name": "焦黑的树叶",
+											"entries": [
+												"病态的橡树和树根处焦黑的树叶暗示了伊卡莱达的命运。成功通过DC 13的智力（{@skill 自然}）检定可以发现这棵树正从内部腐烂，正缓慢死去。成功通过DC 15的智力（{@skill 自然}）检定可以认出，这棵树的厄运是树皮剥取者栖身其中的副作用。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Abandoned Huts",
+									"type": "entries",
+									"name": "4. 废弃小屋",
+									"page": 20,
+									"id": "ttw4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这片宽阔的林间空地上散布着数座泥屋，围成圆圈环绕着一座巨大的方尖碑。小屋看起来破败程度不一，大多已被开花的藤蔓和其他蔓生植物覆盖。"
+											]
+										},
+										"这些小屋曾是前来方尖碑祈祷的牧师和德鲁伊使用的居所。每座居所里有两张床、一张桌子、一个小火塘、一组木架和各式日常用具。其中许多物品如今已破损或肮脏不堪，小屋里没有任何真正值钱的东西。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"两只{@creature 球茎紫罗兰|tob2|球茎紫罗兰}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）栖息在这一带，最初是被失败仪式造成的大规模死亡和藤蔓魔像的狂暴所引来。过去一个月里它们吃光了所有尸体，如今又饥肠辘辘。如果它们察觉到PC，便会发起攻击。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Obelisk",
+									"type": "entries",
+									"name": "5. 方尖碑",
+									"page": 20,
+									"id": "ttw5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一块巨大的圆形石碑坐落在一片草地上。风化的德鲁伊符文布满方尖碑光滑的灰色表面。一种奇异的压迫感从碑中散发而出，碑身周围的空气闪烁着点点光斑。"
+											]
+										},
+										"方尖碑是一根原始魔法能量的导管，能量浸透着它周围的区域。不幸的是，裂隙泄漏的死灵能量因方尖碑对扭曲花环的影响而增强，腐化着其中的精类、动物和植物。检视方尖碑时成功通过DC 15的智力（{@skill 奥秘}或{@skill 自然}）检定可以发现，方尖碑天然的魔法本性正像光透过棱镜一般散射着附近的死灵能量。此次检定成功还会揭示死灵能量来自西北方。",
+										{
+											"ENG_name": "Magical Conduit",
+											"type": "entries",
+											"name": "魔法导管",
+											"entries": [
+												"以一个动作，触碰方尖碑的施法者可以使用其施法属性调整值进行一次DC 13的施法能力检定。检定成功，施法者恢复1个随机的已消耗法术位。检定失败，施法者失去1个随机的未消耗法术位，如同用该法术位施展了法术一般。如果施法者检定失败且没有未消耗的法术位，则改为承受一级{@condition 力竭}。施法者一旦进行过此检定，在完成一次长休前无法再次进行。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Golem's Glade",
+									"type": "entries",
+									"name": "6. 魔像林地",
+									"page": 20,
+									"id": "ttw6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一棵苍老枯萎的山楂树立在这片小空地的中央。光秃的枝桠间放着一捆藤蔓。"
+											]
+										},
+										"伊卡莱达曾栖居于这片空地。她死于仪式反噬的死灵力量的那一刻，与她联结的树木\u2014\u2014空地中央的那棵山楂树\u2014\u2014也随之枯萎。她的死还斩断了她与自己{@creature 藤蔓魔像|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）之间的联结。魔像因失去联结而陷入疯狂，向幸存的德鲁伊和牧师们发起攻击，杀死了一些人，赶走了其余的人。",
+										"以新形态复起后，伊卡莱达曾试图安抚魔像，但魔像认不出她并发动了攻击。伊卡莱达无法忍受目睹自己逝去的树木，也无法承受魔像的第二次排斥，从此再没有回到这片空地。",
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"伊卡莱达的{@creature 藤蔓魔像|ToB2}栖息在她那棵枯萎山楂树的枝桠间，在昔日主人之树的近旁寻求慰藉。它会攻击任何进入空地的生物。"
+											]
+										},
+										{
+											"ENG_name": "Development",
+											"type": "entries",
+											"name": "发展",
+											"entries": [
+												"如果PC进入空地时伊卡莱达同行，成功通过DC 15的魅力（{@skill 游说}）检定可以制止魔像的第一波攻击，不过它仍心怀敌意，会打手势让他们离开。如果魔像被{@condition 束缚}，或某名PC成功通过DC 20的魅力（{@skill 游说}）检定，伊卡莱达可以用一个动作触碰魔像，重新建立两者之间的联结，抚平这只疯癫的魔像。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"树根处的树洞里藏着一小堆私物。这些物品包括300 cp、132 sp、3颗各值10 gp的虎眼石、一只猫头鹰造型、价值50 gp的绿石杯、一瓶价值5 gp的香水、一瓶{@item 成长药水}，以及一卷装在抛光红木与钢制匣中的{@spell 解除魔法}{@item 法术卷轴(3环)|dmg|法术卷轴}，匣子价值25 gp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "7. Ilkarayda's Corrupted Glade",
+									"type": "entries",
+									"name": "7. 伊卡莱达的堕落林地",
+									"page": 21,
+									"id": "ttw7",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这片空地空气中弥漫着腐叶和死虫的恶臭。地面覆着枯萎发黄的草，边缘的树木病恹恹的。一团黑暗的能量污迹在空地中央盘旋，数具尸体松散地环绕在它周围。"
+											]
+										},
+										"这就是牧师们举行仪式的空地。他们试图打开一扇通往精类领域的传送门，却误开了一扇通往暗影位面的裂隙。裂隙释放出一波瘟疫般的狂野魔法与死灵能量。这股浪潮杀死了数名牧师，也夺去了空地中大部分植物的生命。",
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"如今已是{@creature 树皮剥取者|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）的伊卡莱达以这片空地为家。她明白自己栖身树木之中会使其由内而外腐烂，但失去自己树木的剧痛驱使她在树中栖息。为了尽量减轻影响，她轮换着栖居不同的树木。即便在攻击PC时，伊卡莱达也在不断与内心的邪恶抗争。成功通过DC 12的感知（{@skill 洞悉}）检定可以注意到她脸上的痛苦，成功通过DC 15的魅力（{@skill 游说}）检定可以说服她停手。伊卡莱达只能停止攻击1分钟，随后内心的黑暗便会再次迫使她出手。在此期间，她会恳求PC在她失控前离开。如果PC摧毁了裂隙，伊卡莱达将完全掌控自己，并保持混乱善良阵营，但她仍是一只树皮剥取者。"
+											]
+										},
+										{
+											"ENG_name": "The Rift",
+											"type": "entries",
+											"name": "《裂缝》",
+											"entries": [
+												"空地中央的裂隙不断喷出少量死灵能量和狂野魔法。在距其10尺内开始其回合的生物受到3（{@damage 1d6}）点死灵伤害，且必须通过DC 13的感知豁免，否则{@condition 失能}至其下回合结束。触碰裂隙的生物受到14（{@damage 4d6}）点死灵伤害，且必须通过DC 16的感知豁免，否则{@condition 失能}1分钟。该生物在其每回合结束时可以重复豁免，成功则终止自身的这一效应。"
+											]
+										},
+										{
+											"ENG_name": "Destroying the Rift",
+											"type": "entries",
+											"name": "摧毁裂隙",
+											"entries": [
+												"只要向裂隙注入足够的神圣魔法或生命魔法，或者将其解除，裂隙便可被摧毁。在距裂隙30尺内使用驱散不死生物的效应可以摧毁裂隙。对裂隙造成10点光耀伤害可以将其摧毁。对裂隙施展{@spell 纠缠术}、{@spell 植物滋长}、{@spell 荆棘丛生}或类似的植物生长相关法术可以将其摧毁。或者，对裂隙成功施展{@spell 解除魔法}（DC 13）也可将其摧毁。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 21,
+							"entries": [
+								"当PC成功摧毁裂隙后，冒险结束。裂隙被摧毁后，扭曲花环中的腐化缓缓消退。方尖碑的力量治愈了裂隙开启对树木和植物造成的伤害；而且，如果伊卡莱达在冒险中幸存，它还会持续治愈她栖身的任何树木，让她得以栖居并照料扭曲花环而不将其毁坏。为感谢PC拯救了她和扭曲花环，伊卡莱达会让他们取走{@area 区域6|ttw6|u}中的财宝\u2014\u2014如果他们尚未拿走的话。",
+								"塔莉娅也会感谢PC的援手，交付承诺的报酬。一个月内，德鲁伊和牧师们重新回到扭曲花环朝圣。如果伊卡莱达幸存下来，她会禁止在迷宫中举行仪式，并把自己的经历当作警示，讲给那些来扭曲花环并非为了赞美自然与自然神祇、而是另有所图的人。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Shrine of the ungry Dead",
+					"type": "section",
+					"name": "饥饿亡者神殿",
+					"page": 17,
+					"entries": [
+						"{@b 一场供四到五名4级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 22,
+							"entries": [
+								"一年前，名叫纳芙蕾西的死亡编织者（见{@area 区域11|sothd11|u}）被一群冒险者逐出了巢穴。战败负伤的她一路奔逃，直到再也跑不动，来到陡峭的海边悬崖前。就在近海处，她发现了一对小岛\u2014\u2014不过是浪涛中突起的几块礁石\u2014\u2014上面矗立着黑暗空荡的建筑。纳芙蕾西用蛛网搭桥上了岛，不久之后大风撕走了网桥，抹去了她来此的所有痕迹。",
+								"这些建筑原是一座古老的庙宇群，曾献给一位几乎被遗忘的海神。纳芙蕾西在偏远处安全地藏身，栖居于庙宇群中养伤。她勉强维持着朝不保夕的日子，缓慢恢复，主要靠海鸟、害虫和任何能抓到的东西果腹。数月的孤寂之后，访客来了。",
+								"一小群食尸鬼在一名无餍之神祭司的带领下来到了岛上。他们想在地表找一处偏远之地建立礼拜场所，传播他们神祇的影响。遇到死亡编织者后，祭司与她订下了契约。纳芙蕾西允许他们建立神殿，以换取定期的进贡\u2014\u2014最好是类人生物。死亡编织者乐得附近有盟友充当抵御入侵者的缓冲，而且只要贡品不断，她就恪守约定，派出蛛网僵尸协助食尸鬼。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 22,
+							"entries": [
+								"以下方式可以吸引PC去注意饥饿亡者神殿：",
+								{
+									"type": "list",
+									"items": [
+										"当地开始有人接连失踪。渔夫、水手、幽会的情侣等，一次一两个地失去踪影。当地当局悬赏任何能解开这一谜团的人。PC得到关于这座废弃神殿的线索，听说那里窗户中透出灯光，夜间有神秘的身影划船往来。",
+										"PC正沿海岸航行，试图抢在风暴前脱身。附近没有来得及赶到的安全港口或港湾，但一座古老神殿的码头或许足以避过这场狂风。",
+										"一名NPC失踪了，而PC必须找到此人\u2014\u2014此人掌握着关键情报，或是重要的朋友盟友，又或者只是欠了PC一笔他们急需要的巨款。NPC的踪迹把PC引向偏远海岸外的一座废弃庙宇。",
+										"一位海神的虔诚信徒\u2014\u2014某NPC，也可能是PC中的一员\u2014\u2014近来反复做同一个梦。梦中，海岸外可见一座岩岛上的庙宇群。鲜血开始从它的门窗流出，注入海中，直到海水变红，鱼群翻着白肚浮上水面。做梦者确信这是一场感召，他们要找到梦中之所，匡正那里的一切，平息海神的愤怒。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Shrine Exterior",
+							"type": "entries",
+							"name": "神殿外围",
+							"page": 23,
+							"entries": [
+								"构成庙宇群的建筑矗立在两座小岛上。南侧神殿是独栋建筑，坐落在一座刚好露出水面的岛上。建筑占据了岛上大部分土地；其余部分怪石嶙峋，散生着一丛丛粗硬的野草和芦苇。海浪不断冲击侵蚀着岩石嶙峋的海岸。一座小码头从建筑入口旁伸入海中。一条划艇牢牢拴在码头下方。",
+								"北面的第二座岛比另一座高出海面更多，两岛之间由一系列绳板桥相连，桥架在海峡中耸立的礁石之间。除非生物会飞或能攀上绝壁，否则通往北侧建筑的唯一明路就是经由南侧神殿再过桥。",
+								{
+									"ENG_name": "Shrine of the Hungry Dead in Midgard",
+									"type": "inset",
+									"name": "米德加德中的饥饿亡者神殿",
+									"entries": [
+										"这两座小岛及其神殿可以放在米德加德沿岸的任何地方，不过最好设在远离大型文明中心之处。这座庙宇是某位海神的旧圣地，很可能是塞戈坦，或依所在位置的不同，是他的一副面具、一位仆从或宿敌\u2014\u2014北方是埃吉尔或尼奥尔德，南方之地是泰芙努特，七城之地附近则是奈瑟斯。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map4.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Foyer",
+									"type": "entries",
+									"name": "1. 前厅",
+									"page": 23,
+									"id": "sothd1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"四根布满疤痕、开裂的石柱在此撑起天花板。房间中央一座宽大的圣水盆前铺着一张破烂的祈祷毯。一层黄褐色的藻类覆在圣水盆上，顺着边缘垂挂下来。几株巨大的蘑菇\u2014\u2014有些高达三四尺\u2014\u2014簇拥在圣水盆周围，从盆底堆积的腐殖物中长出。"
+											]
+										},
+										"圣水盆曾盛过圣水，如今已被玷污，覆满了一层藻类。通往区域2的门锁着，需要使用{@item 盗贼工具|phb}成功通过DC 15的敏捷检定才能打开。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"三株{@creature 布默|ToB2|布默}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）生长在圣水盆周围的真菌丛中。它们一暴露在光下，或有生物进入其30尺内，就会开始尖啸。声响会惊动{@area 区域2|sothd2|u}的住户，后者会相应做出反应。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Lower Shrine",
+									"type": "entries",
+									"name": "2. 下层神殿",
+									"id": "sothd2",
+									"page": 23,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"虫蛀的挂毯垂挂墙上，过于污秽破烂，已看不出上面的图案。门的对面，一座砂岩雕成的祭坛立在高台之前。祭坛上摆着一只盛满血的碗，两侧立着烛台。高台顶端的雕像已无法辨认，罩在染血的漂白亚麻布下。"
+											]
+										},
+										"这一区域曾是供水手和其他信众祈祷的低阶神祠，供奉着庙宇所属的海神。神的雕像依然立着，只是已被毁容，披上血布，充作无餍之神的临时偶像。",
+										{
+											"ENG_name": "Locked Doors",
+											"type": "entries",
+											"name": "锁住的门",
+											"entries": [
+												"通向{@area 区域3|sothd3|u}的门和通向{@area 区域6|sothd6|u}的门都锁着。使用{@item 盗贼工具|phb}成功通过DC 15的敏捷检定可以打开一扇门，除非带着钥匙圈的那只食尸鬼刚好用它离开房间。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四只{@creature 食尸鬼|mm|食尸鬼们}为他们主人打理着这座神祠。如果警觉到入侵者的存在，其中三只会试图躲藏起来伏击擅入者，第四只则前往{@area 区域8|sothd8|u}向主人报信。一旦过了桥，它会先设好陷阱（见{@area 区域7|sothd7|u}），再前往上层神殿。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"祭坛上的碗由黑玛瑙制成，价值100 gp。旁边的两支银烛台各值25 gp。一只食尸鬼的腰带上挂着一串钥匙。这些钥匙能开庙宇群里所有的门。如果食尸鬼们察觉了入侵者，出去报警的就是这只食尸鬼。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Waiting Room",
+									"type": "entries",
+									"name": "3. 候祭室",
+									"id": "sothd3",
+									"page": 24,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"破旧的家具靠墙放着，下面是撕破的地毯。房间中央的低桌上摆着三个头骨。"
+											]
+										},
+										"这个房间曾用于接待想参观上层神祠的信众。如今它成了临时牢房，关押献给无餍之神的祭品或留给死亡编织者的猎物。两名{@creature 平民|mm|平民}被囚于此。他们感激获救，并把对这里仅有的一点了解告诉PC。他们知道有些囚犯是要献给食尸鬼邪神的祭品；而按照捕捉他们的人的说法，另一些则被带去了\"我们朋友的食品储藏室\"。",
+										"如果PC来此寻找某位特定的NPC，并向囚犯描述那人的样子，他们会被告知确有这样一个人被关在这里，但不久前被带走，去了食尸鬼们所说的\"储藏室\"（{@area 区域11|sothd11|u}）。"
+									]
+								},
+								{
+									"ENG_name": "4. Vestry",
+									"type": "entries",
+									"name": "4. 祭衣室",
+									"id": "sothd4",
+									"page": 24,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个房间灰尘遍布，看来早已废弃。两个衣柜分立着靠西墙的一只箱子两侧。三件家具都很陈旧，木面布满划痕和缺口。东门两侧的墙上伸出锈蚀的铁钩，其中一只还挂着一件发霉的斗篷。"
+											]
+										},
+										"自神殿废弃以来，这个房间就很少被使用。衣柜里挂着适合海神牧师穿着的祭服，如今满是灰尘和虫蛀。箱子曾用来存放祭坛饰布和器物。如今只剩旧祭布和一些酥脆的蜡烛；值钱的东西都被食尸鬼搜刮一空。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"钩子上那件旧斗篷的衬里有个暗袋，里面装着两小瓶{@item 圣水 (扁瓶)|phb|圣水}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Storage",
+									"type": "entries",
+									"name": "5. 储藏室",
+									"id": "sothd5",
+									"page": 24,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个小房间空空荡荡，只有两只破旧的皮箱分立在两侧的门旁。"
+											]
+										},
+										"通向{@area 区域6|sothd6|u}的门锁着，需要使用{@item 盗贼工具|phb}成功通过DC 15的敏捷检定才能打开。",
+										{
+											"ENG_name": "Trap",
+											"type": "entries",
+											"name": "陷阱",
+											"entries": [
+												"两只皮箱之间的地板上绷着一根绊线。一旦触发，两只皮箱会弹开，向房间内以及（若门开着）门外5尺释放毒气。区域内的每个生物必须进行DC 13的体质豁免。豁免失败者受到11（{@damage 2d10}）点毒素伤害并{@condition 中毒}1分钟。豁免成功者伤害减半，且不会{@condition 中毒}。打开任何一只皮箱也会释放毒气，但若一次只打开一只，DC降为11。",
+												{
+													"type": "list",
+													"style": "list-hang",
+													"items": [
+														{
+															"ENG_name": "Prevention.",
+															"type": "item",
+															"name": "预防。",
+															"entry": "成功通过DC 13的智力（{@skill 调查}）或感知（{@skill 察觉}）检定可以注意到绊线。使用{@item 盗贼工具|phb}成功通过DC 15的敏捷检定可以无害地拆除绊线。没有{@item 盗贼工具|phb}的PC可以用任何带刃武器或带刃工具尝试此检定，但具有劣势。检定失败则触发陷阱。若两只箱盖上各压有至少20磅的重物，绊线便不会触发陷阱。"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Vestibule",
+									"type": "entries",
+									"name": "6. 前廊",
+									"id": "sothd6",
+									"page": 24,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这条长长的拱形走廊似乎贯穿建筑北侧的全长。北墙上一排窄窗透进海面的空气。"
+											]
+										},
+										"在光线和天气允许的情况下，从窗户可以望见{@area 区域7|sothd7|u}和第二座岛。通往外面的门没有上锁。"
+									]
+								},
+								{
+									"ENG_name": "7. Bridge Network",
+									"type": "entries",
+									"name": "7. 桥道网络",
+									"id": "sothd7",
+									"page": 24,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一系列绳板桥从岛背延伸而出，跨越翻腾海面中耸立的两块礁石，接到另一座小岛的崖壁上。最后一座桥连着一段岩棚，一条窄径从那里沿陡峭岩壁蜿蜒而上，通向高处建筑。"
+											]
+										},
+										"这些桥吱嘎作响、摇晃得吓人，但十分坚固，只是长期的海浪飞沫使桥面湿滑。生物每通过蜿蜒桥面的一段，都必须成功通过DC 10的敏捷（{@skill 特技}）检定。检定失败则生物滑倒，该轮无法继续移动，因为它必须抓紧绳索以免坠落。如果检定失败5点或更多，生物未能及时抓稳，必须通过DC 13的敏捷豁免，否则从桥上坠入下方海中。进入{@area 区域8|sothd8|u}的门锁着，需要使用{@item 盗贼工具|phb}成功通过DC 15的敏捷检定才能打开。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"无餍之神神殿的存在引来了周围海域越来越多的掠食者。四群{@creature 食人鱼群|mm|食人鱼群}在附近水域游弋。生物在水中的每一轮，都有{@chance 25}的几率引起其中一群的注意。如果水中的生物生命值不满，那么在水中的每一轮都必然引来一群的注意。"
+											]
+										},
+										{
+											"ENG_name": "Falling Bridge Trap",
+											"type": "entries",
+											"name": "坠桥陷阱",
+											"entries": [
+												"如果{@area 区域2|sothd2|u}的食尸鬼经过这里，它会动手脚弄松把第三座桥系在第二块礁石上的绳结，使桥上一有足够重量便松脱。当中型或更大的生物走过桥的一半以上时，桥会滑脱坠落，把桥上的生物统统甩进水中。通过DC 13敏捷豁免的生物可以抓稳，悬吊在摇晃的桥上。坠落的生物不会受到坠落伤害，但可能引来{@creature 食人鱼群|mm|食人鱼群}的注意。",
+												{
+													"type": "list",
+													"style": "list-hang",
+													"items": [
+														{
+															"ENG_name": "Prevention.",
+															"type": "itemSub",
+															"name": "预防。",
+															"entry": "在第二块礁石上时，成功通过DC 15的感知（{@skill 察觉}）检定可以发现桥近端绳结的异样。桥上尚未触发陷阱的生物进行此检定具有优势。重新系紧桥在礁石一侧的绳结可防止陷阱触发。"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "8. Upper Shrine",
+									"type": "entries",
+									"name": "8. 上层神殿",
+									"id": "sothd8",
+									"page": 26,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一座平台贯穿这座立柱大厅的中央，台下是一汪如今半为污泥淤塞的浅池。台阶顶端、平台尽头立着一座祭坛，祭坛后方矗立着一尊巨大雕像。雕像刻画着一个臃肿的身形，爪形双手搭在肚腹上，大嘴咧开，露出獠牙咆哮\u2014\u2014或许是打哈欠。"
+											]
+										},
+										"池中的黏滑污水和淤泥是困难地形。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"这个房间的主人是一位名叫达内克的{@creature 无餍之神的仆从|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}），以及他的{@creature 食尸鬼}仆从（若{@area 区域2|sothd2|u}的食尸鬼赶到了这里，则有两只食尸鬼）。达内克自信但不鲁莽。如果他的生命值降至一半或以下，或他的食尸鬼被消灭，达内克会试图经{@area 区域9|sothd9|u}逃往{@area 区域11|sothd11|u}，并锁上身后的门。一旦得到喘息，他会打开通往{@area 区域10|sothd10|u}的门，呼唤那里的住户前来支援，守卫走廊抵挡攻击者。达内克会在{@area 区域11|sothd11|u}与那里的盟友做最后的顽抗。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"成功通过DC 15的智力（{@skill 调查}）或感知（{@skill 察觉}）检定可以发现雕像底座上一块隐藏的暗板。里面放着一只上锁的箱子，装有500 cp、278 sp、110 gp、两支各值25 gp的银烛台、一只价值10 gp的银碗、一把价值20 gp的银水壶，以及一卷{@spell 目盲术/耳聋术}的{@item 法术卷轴(2环)|dmg|法术卷轴}。使用{@item 盗贼工具|phb}成功通过DC 15的敏捷检定可以打开箱子。达内克随身带着箱子唯一的钥匙。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "9. Service Corridor",
+									"type": "entries",
+									"name": "9. 仆役走廊",
+									"id": "sothd9",
+									"page": 26,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这条走廊两端都有门，南墙半途还有第三扇。蛛网布满拱形天花板的全程，数具茧壳包裹的干瘪类人躯体沿走廊躺在地上。"
+											]
+										},
+										"走廊尽头通往{@area 区域11|sothd11|u}的那扇门上，离门底五尺处有一个小孔，嵌着装饰性铁栅。门周围5尺内的蛛网连着穿过铁栅延伸到隔壁房间的丝线，把两个房间里的蛛网连成一体。成功通过DC 15的敏捷（{@skill 特技}）检定可以避免碰到通往{@area 区域11|sothd11|u}的门周围的蛛网。否则，触网会惊动{@area 区域11|sothd11|u}里的纳芙蕾西，让她知道走廊里来了不速之客。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"这里的四具尸体是{@creature 蛛网僵尸|ToB2|蛛网僵尸}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）。它们会攻击走廊里任何没有食尸鬼同行的活物。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "10. Parish Ruins",
+									"type": "entries",
+									"name": "10. 教区废墟",
+									"id": "sothd10",
+									"page": 26,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这里岛上两座建筑之间的一片平整地上，坐落着几栋建筑的废墟。一片疯长的花园把它们与两座较大完好建筑之间的廊道隔开。门窗早已不存，只余敞开的黑洞，黑暗在坍塌的墙壁之间和下垂的屋面之下积聚。"
+											]
+										},
+										"这些建筑的材料不如主体建筑坚固，曾是照料神殿的祭司们的住所和附属用房。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四只{@creature 食尸鬼蝙蝠|ToB2|食尸鬼蝙蝠}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）\u2014\u2014达内克的宠儿\u2014\u2014潜伏在这片废墟中。他偶尔会用这些蝙蝠与其教会其他隐秘分支传递消息。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "11. Lair of the Deathweaver",
+									"type": "entries",
+									"name": "11. 死亡编织者之巢",
+									"id": "sothd11",
+									"page": 27,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这座高大的拱顶大厅里，原本存放的东西早已被清空。如今，大片的蛛网张在天花板的拱券和支撑拱券的立柱之间。怪异的裹尸布般的网在穿堂而过的气流中飘动摇曳，气流从老建筑的裂缝和孔洞中吹入。几具包裹着的类人躯体悬在蛛网之间。穿网而过的风使尸体上下晃动、缓缓旋转，宛如一场骇人的舞蹈。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"{@creature 死亡编织者|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）纳芙蕾西就住在她网中此处。她智慧不低，会利用自己的感官、机动性和法术来对付PC。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"纳芙蕾西的财宝放在椽木间的一只网袋里：1,000 cp、325 sp、180 gp、六颗各值50 gp的珍珠、一瓶{@item 攀爬药水}，以及一卷{@spell 谭森浮碟术|phb|浮碟术}的{@item 法术卷轴(1环)|dmg|法术卷轴}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 27,
+							"entries": [
+								"神殿中的邪恶住户被消灭后，PC可以自由离开，并带走所有获救的囚犯。如果他们受雇调查失踪人口，多半能领到一笔酬金。如果他们在寻找某位特定的NPC，那人或许会以私人方式答谢他们的帮助\u2014\u2014甚至可能是宝贵的情报，或一张能引出下一场冒险的地图。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Tragedy at Thyrdun Outpost",
+					"type": "section",
+					"name": "瑟尔丹前哨的悲剧",
+					"page": 28,
+					"entries": [
+						"{@b 一场供四到五名4级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"page": 28,
+							"name": "冒险背景",
+							"entries": [
+								"二十年前，矮人在领地边疆开设了一处采矿场与殖民地，名为瑟尔丹。数年后，尾矿坝意外溃决，泥水灌满矿井，引发多处坍塌，困住了从洪灾中幸存的人。余下的殖民者最终耗尽了空气，在矿井深处的黑暗中缓慢死去。这场惨烈的群体死亡催生了一只黯然失色（见{@area 区域9|tato9|u}）\u2014\u2014由事故中丧生的恐惧绝望的灵魂构成的可怕不死怪物。自那以后，这生物一直栖居于黑暗、积水、坍塌的矿井之中。",
+								"最近，矮人领袖们决定重开瑟尔丹，派了一批新殖民者去挖掘重开矿井。殖民者修好了水坝，随后建造并翻修设备，把矿井里的水抽回蓄水池。之后，他们辛勤挖掘，清挖沉积物和坍塌的岩石。最终，他们打开了黯然失色等候已久的洞室。它饥肠辘辘，却想让新猎物撑得久一些。它起初慢慢地捕食他们，先催生他们的恐惧与恐慌，再了结余下的幸存者。如今瑟尔丹再度陷入沉寂。派往前哨的信使一去不返，矮人统治者们急切地想要答案。",
+								{
+									"ENG_name": "Thyrdun Outpost in Midgard",
+									"type": "inset",
+									"name": "米德加德中的瑟尔丹前哨",
+									"entries": [
+										"如果你在米德加德中运行本冒险，铁岭诸州外缘的任何地方都合适。与多尼格接壤的西北边境或与哥布林荒原接壤的西部边境的山地最为理想。一个贴合设定的引子可以让PC作为矿井所属州的奴隶：他们受命调查此地，只要接受任务并查明矿井和殖民地的命运，就许诺还他们自由。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 28,
+							"entries": [
+								"以下引子可用于吸引PC去调查瑟尔丹前哨。",
+								{
+									"type": "list",
+									"items": [
+										"统治瑟尔丹前哨所在土地的矮人领袖雇用PC前往调查，查明前哨沉寂的原因，并尽力援助殖民者。",
+										"旅途中，恶劣天气迫使PC寻找庇护所。他们发现了这座前哨，却发现它已被遗弃，于是决定进一步探查\u2014\u2014无论是出于关切，还是受潜在利益的驱使。",
+										"PC的一位朋友逾期未与他们碰面或联系（可能是位行商、吟游诗人或类似NPC）。这位朋友最后已知的行踪是小采矿前哨瑟尔丹，PC动身前往。这位NPC的境况由GM裁定：可能又成了黯然失色的受害者，也可能活着躲在前哨某处，甚至可能根本不在那里\u2014\u2014已经离开或从未抵达。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Arrival: The Surface",
+							"type": "entries",
+							"name": "抵达：地表",
+							"page": 29,
+							"entries": [
+								"地表上的瑟尔丹由一片建筑和设备构成。大多数\u2014\u2014储料棚、熔炉、碎矿机\u2014\u2014早已闲置，因为殖民地的首要任务是把矿井里的水抽出去、挖开坍塌区域并评估稳定性。附近是刚修好的尾矿池土堤。管道从矿井竖井通向尾矿池。",
+								"一圈帐篷和附近几座永久性木屋构成了当前殖民地的营地。然而，搜遍营地也空无一人。留下的口粮和私人物品表明，幸存者们走得仓促，连收拾行装的时间都没有。成功通过DC 12的智力（{@skill 调查}）或感知（{@skill 察觉}或{@skill 求生}）检定可以看出营地里有过骚乱的迹象。一些床铺看上去像是有人被人从床上拖走。此类检定成功还会注意到大量营火的遗迹\u2014\u2014数量远超此地所需\u2014\u2014以及许多挂在建筑上或放在帐篷旁的提灯，全都油耗尽了，像是燃到最后才被丢弃，还有一堆堆干涸的蜡油和烧尽的烛头。这些都是殖民者试图用光线阻挡黯然失色却归于失败的痕迹。",
+								"矿井入口有一台升降机，靠一组滑轮升降。旁边的人力转轮装有适合役兽（如挽马或牛）使用的挽具，却不见牲口的踪影。PC必须手动把升降机摇上来，这一过程需要5轮。成功通过DC 15的力量（{@skill 运动}）检定可让时间减半。要下井，必须有人留在地表操作转轮，否则就得用升降机内的手摇曲柄把它放下去。曲柄更慢，需要10轮才能把升降机降到{@area 区域1|tato1|u}。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map5.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Entry Hall",
+									"type": "entries",
+									"page": 29,
+									"name": "1. 入口大厅",
+									"id": "tato1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"升降机通向一间开凿粗糙的房间。地面仍覆着几寸正在变干的发臭泥浆。几辆裹满泥土的矿车靠墙停着。两条隧道从房间向北延伸。"
+											]
+										},
+										"入口大厅无人，只有从坍塌中清挖出来、留待矿井重开后使用的矿车。成功通过DC 12的智力（{@skill 调查}）或感知（{@skill 察觉}或{@skill 求生}）检定可以发现泥中的痕迹，仿佛一件或多件重物被拖入了西侧隧道，不过拖痕掩盖了任何足迹。这些痕迹是{@area 区域2|tato2|u}的住户觅食时留下的。"
+									]
+								},
+								{
+									"ENG_name": "2. Scavenger Tunnels",
+									"type": "entries",
+									"page": 29,
+									"name": "2. 食腐隧道",
+									"id": "tato2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这里的地面仍积着厚厚的泥浆和尾矿，不过中央已被清出，露出矿车的轨道。矿工们顺着矿脉掘进，隧道在这处弯道分岔。丢弃的锈蚀工具是曾在此劳作者仅存的痕迹。"
+											]
+										},
+										{
+											"ENG_name": "Difficult Terrain",
+											"type": "entries",
+											"name": "困难地形",
+											"entries": [
+												"PC可以沿着隧道中央的轨道畅通移动，但泥浆和黏液使这些隧道的其他区域都算作困难地形。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四只{@creature 巨黄蜂|mm|巨黄蜂}在此筑巢。它们收集了上面营地中最近被杀的矮人殖民者的尸体，把尸体拖进了这些隧道。它们在西侧隧道筑了巢，把卵产在没吃掉的尸体里。黄蜂会凶猛攻击任何入侵者，但不会追出{@area 区域1|tato2|u}。成功通过DC 13的感知（{@skill 医药}或{@skill 求生}）检定可以找到并毁掉尸体中的黄蜂卵。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"在这里发现的十几具矮人尸体身上仍有财物。共计38 cp、42 sp和18 gp，以及一条价值10 gp的银项链和一枚价值25 gp的金戒指。其中一具尸体的腰包里装着两瓶治疗药水。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Opportunistic Looters",
+									"type": "entries",
+									"page": 29,
+									"name": "3. 投机的劫掠者",
+									"id": "tato3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"更多隧道从主巷道在此分岔，凿入泥土与岩石。主巷道的尽头是一片散发着恶臭、由泥浆和坍塌岩石构成的沼泽般的地带。"
+											]
+										},
+										{
+											"ENG_name": "Difficult Terrain",
+											"type": "entries",
+											"name": "困难地形",
+											"entries": [
+												"PC可以沿着隧道中央的轨道畅通移动，但泥浆和黏液使这些隧道的其他区域都算作困难地形。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一对{@creature 掷石蟑螂|tob2|掷石蟑螂}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）被裸露岩石的气味引来。找到了丰盛的食物来源，它们便大嚼岩石，为产卵做准备。它们会攻击任何入侵者，捍卫自己对矿井中美味岩石的所有权。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Office",
+									"type": "entries",
+									"page": 30,
+									"name": "4. 办公室",
+									"id": "tato4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"曾挂在房间入口的门扇躺在地上，肮脏而受潮肿胀。几张桌子、书桌和椅子散落在房间里。有些翻倒在地，另一些却似近期还在使用。一角倒塌的书架下堆着霉烂的纸张。"
+											]
+										},
+										"这里找不到什么值钱的东西，长期暴露在泥浆和潮气中早已毁掉了房间的内含物\u2014\u2014那原本是日常运作的记录。如今除了腐朽与残破，所剩无几。"
+									]
+								},
+								{
+									"ENG_name": "5. Medical Rooms",
+									"type": "entries",
+									"page": 30,
+									"name": "5. 医疗室",
+									"id": "tato5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这些小房间里放着破损的床和成箱补给，但一切都覆着厚泥，让人难以辨认它们原本的用途。"
+											]
+										},
+										"这些房间曾是矿井的医疗站，受伤和患病的矿工可来此求医。隧道坍塌和随后的水淹毁掉了大部分医疗物资，但仍有部分留存。花10分钟，一名生物可以收集到足够的材料，制成一个{@item 医疗包|phb}。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"八具矮人{@creature 骷髅|mm|骷髅们}躺在南侧的房间里。它们是死于水难的殖民者遗骸，会从淤泥中爬起，拔出武器发动攻击。新来的殖民者忙于清理其他房间和矿井，全然不知这些骷髅的存在。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Barricade",
+									"type": "entries",
+									"page": 30,
+									"name": "6. 街垒",
+									"id": "tato6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这里的走廊在东北方被一道由矿车、木料和其他重物拼成的临时街垒堵住。大厅里，两张架好的弩对着街垒另一侧。四具矮人的尸体倒在附近。三具在弩旁，第四具看上去是在试图沿走廊向西移动时倒下的。"
+											]
+										},
+										"这些武器和街垒是殖民者们为抵御黯然失色所做的最后一搏。黯然失色从{@area 区域9|tato9|u}穿过封锁滑行而来、趁他们守哨时从背后偷袭时，这些矮人正在操作弩炮。",
+										{
+											"ENG_name": "Mounted Crossbows",
+											"type": "entries",
+											"name": "架设的弩炮",
+											"entries": [
+												"两张架好的弩是仍可使用的{@item 重弩|phb|重弩}。架设状态下，弩失去\"重型\"属性，固定不动，每轮只能攻击一条100尺长、10尺宽直线内的单一目标，并让使用者以它进行攻击检定时具有优势。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"四具矮人尸体身上仍带着财物：32 cp、18 sp、4 gp、两把{@item 战斧|phb|战斧}和两支{@item 矛|phb|长矛}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "7. Storage Rooms",
+									"type": "entries",
+									"page": 30,
+									"name": "7. 储物间",
+									"id": "tato7",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个大房间和小凹室里堆满了箱子、板条箱、木桶、成堆的木材、成卷的绳索和其他寻常补给。存放的物品都很干净，只有落在仍覆着薄泥地面上的部分除外。"
+											]
+										},
+										{
+											"ENG_name": "Equipment",
+											"type": "entries",
+											"name": "装备",
+											"entries": [
+												"这个房间存放着殖民者复垦清理工作所需的补给。在其他物资中可以找到三百尺绳子（六卷各50尺）、四桶各1加仑的燃油、一套滑轮组和两个月的口粮。"
+											]
+										},
+										{
+											"ENG_name": "Hidden Body",
+											"type": "entries",
+											"name": "隐藏的尸体",
+											"entries": [
+												"又一具矮人的尸体坐在口粮箱和两只水桶后面。蜷缩的遗体身着牧师祭服，双手紧紧合握着一枚护符。这枚护符是一枚献给锻造之神的{@item 圣徽|phb}。其上承载着一份祝福\u2014\u2014她在生命最后时刻炽热祈祷换来的一丝守护。护符散发的微弱光芒暗示着它的力量。成功通过DC 12的智力（{@skill 宗教}）检定可以察觉它具有有限的防护性质，但不知详情。持握护符的生物第一次被黯然失色击中时，其力量值不会被黯然失色的力量汲取所降低。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "8. Abandoned Chamber",
+									"type": "entries",
+									"page": 30,
+									"name": "8. 废弃的洞室",
+									"id": "tato8",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"有人花了功夫把这间洞室擦洗得干干净净，地面整洁，泥腥味也远比矿井其他地方轻。房间近中央的地面上有一堆熄灭的篝火灰烬。铺盖、背包和其他栖居痕迹散在火堆周围的地面上，被曾在此扎营的人遗弃。东侧的门洞被箱子和木桶高高堆堵，无法通行。"
+											]
+										},
+										"挖掘矿井期间，工人们轮班之余在这里休息用餐。黯然失色被发现后，这里便被遗弃了。",
+										{
+											"ENG_name": "Equipment",
+											"type": "entries",
+											"name": "装备",
+											"entries": [
+												"一只{@item 铺盖|phb|铺盖卷}旁的麻袋里放着两瓶{@item 炽火胶(扁瓶装)|phb|炽火胶}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "9. Unearthed Darkness",
+									"type": "entries",
+									"page": 32,
+									"name": "9. 出土的黑暗",
+									"id": "tato9",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"通道向下倾斜，进入一个大房间的外缘。地面仍积着厚泥。几具骷髅躺在淤泥中。房间大部分区域仍堆满泥浆和碎砾，深处阴影浓重。"
+											]
+										},
+										{
+											"ENG_name": "Mud and Bones",
+											"type": "entries",
+											"name": "泥浆与骸骨",
+											"entries": [
+												"泥浆和碎砾使房间地面算作困难地形。此外，依赖腿部移动的生物在其回合内于房间中移动超过10尺时，必须通过DC 12的敏捷检定，否则会陷进泥里，失去该回合剩余的移动距离。如果检定失败5点或更多，它会绊在泥中的骸骨上，摔倒{@condition 倒地}。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"{@creature 黯然失色|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）就潜伏在这里\u2014\u2014它诞生于首批殖民者的惨死。它急切地现身，吞噬任何在此逗留的人。它喜欢玩弄猎物，可能在一段时间内尾随PC，发动一次攻击后隐入黑暗，稍后再跟踪偷袭。黯然失色会追猎矿井中任何地方的生物，夜间甚至会追到地表。白天它不会离开矿井。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 32,
+							"entries": [
+								"黯然失色被消灭后，矿井终于安全了。死者可以入土为安，矿井可以恢复使用。如果PC是为矮人效力，返回时他们会得到约定好的任务酬金。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Caverns of the Crystal Monolith",
+					"type": "section",
+					"page": 33,
+					"name": "水晶巨碑洞窟",
+					"entries": [
+						"{@b 一场供四到五名5级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 33,
+							"entries": [
+								"水晶巨碑洞窟是一系列位于地热活动剧烈区域的洞穴。洞中曾灌满富含矿物质的水，洞穴表面由此生出了水晶。一些水晶体型巨大，如树木般高耸；另一些较小，铺满洞穴的洞壁、洞顶和地面的大片区域。这些洞窟既是一处奇观胜景，也出产许多独特的法术材料和魔法物品材料。传闻洞窟深处有一个异界存在，像照料珍贵花园一般照看着这些水晶。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 33,
+							"entries": [
+								"以下方式可以把PC引向水晶巨碑洞窟：",
+								{
+									"type": "list",
+									"items": [
+										"一位法师、贤者或强大的生物想获取洞中的水晶，用于实验、法术材料、魔法物品制作，甚至可能只是当作食物。雇主许诺给PC的努力以丰厚的报酬。",
+										"PC得到一张地图\u2014\u2014或是在宝藏中发现，或是作为昔日冒险的酬劳。地图标出了一条穿过地下洞穴群的路径，通往一处标注为\"水晶洞穴\"的地方。图上的批注可由GM酌情补充信息，但应暗示这些洞穴是一位稀有而强大的魔法生物的巢穴，又不可透露太多。",
+										"PC或其雇主想从一种被称为水晶巨碑的稀有存在那里求取秘传知识。PC被告知了这样一只生物的位置，必须设法\u2014\u2014通过胁迫、说服或其他手段\u2014\u2014取得巨碑的知识。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Cavern Features",
+							"type": "entries",
+							"name": "洞穴特征",
+							"id": "cotcm",
+							"page": 33,
+							"entries": [
+								"这些洞窟的环境对大多数类人生物都很危险。这里的温度极高。水晶占据了洞窟内的大部分空间，阻碍移动，使穿越变得困难而有时危险。最后，水流仍穿行其间，给试图穿越洞穴的人平添阻碍。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Geothermal Activity",
+											"type": "entries",
+											"name": "地热活动",
+											"entries": [
+												"整个洞穴系统都极其炎热，温度高达130华氏度。短时间活动不受太大影响，但要在洞窟中久留，就必须持续补充饮用水。具有火焰抗性或免疫的生物不受影响。"
+											]
+										},
+										{
+											"ENG_name": "Monolith's Lair",
+											"type": "entries",
+											"name": "巨碑之巢",
+											"entries": [
+												"整片洞窟群都算作水晶巨碑的巢穴。它可以在地图上任何房间使用巢穴动作，而不限于{@area 区域6|cotcm6|u}。"
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map6.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Entry Chamber",
+									"type": "entries",
+									"page": 34,
+									"name": "1. 入口大厅",
+									"id": "cotcm1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"天坑下方是一个不规则的洞穴。巨大的水晶遍布其间\u2014\u2014许多从地面长到洞顶，姿态各异\u2014\u2014让人难以估量洞穴的轮廓。地热在整个洞窟中辐射。"
+											]
+										},
+										{
+											"ENG_name": "Choked with Crystals",
+											"type": "entries",
+											"name": "水晶壅塞",
+											"entries": [
+												"整间洞室都算作困难地形。北侧的水晶间露出一条狭窄通道。这里的水晶大多虽然美观，却极易破损，因而价值不高。不过，花30分钟仔细搜寻并成功通过DC 13的智力（{@skill 调查}）检定，可以找出至多30磅便于携带的半宝石级水晶，价值300 gp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Star Chamber",
+									"type": "entries",
+									"page": 34,
+									"name": "2. 星辰洞窟",
+									"id": "cotcm2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"与前一洞室不同，这里的水晶聚集成特定的区域，一些从地面、墙壁和洞顶呈螺旋状生长，仿佛有人刻意栽培。而且它们色彩、色调与透明度各异，从晶体中透出的柔光轻轻脉动，让这片色彩的调色盘更显奇幻。地面似乎随着持续的震动而颤动，某处不断传来回荡的轰鸣。"
+											]
+										},
+										{
+											"ENG_name": "Enchanting Crystals",
+											"type": "entries",
+											"name": "魅惑水晶",
+											"entries": [
+												"这里水晶的色彩与图样对类人生物的心智有强烈影响。在房间中停留超过1分钟的类人生物必须通过DC 12的感知豁免，否则被{@condition 魅惑}。被{@condition 魅惑}的生物沉醉于水晶之美，想留在此处欣赏胜景。它不忍见到水晶受损，会主动保护水晶，对抗任何试图采集、破坏或以其他方式扰乱洞室中水晶的生物，必要时诉诸暴力。豁免成功的生物不受影响，但在房间中每过一小时后必须重复豁免。生物在洞室中每过一小时，豁免DC提高1。被{@condition 魅惑}的生物若{@condition 目盲}1分钟，可摆脱魅惑；但若它在房间中停留超过1小时，仍须重复豁免，如同在最初的豁免中成功一般。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四名{@creature 火矮人|mm|火矮人们}栖居于此。他们受其国王派遣，前来寻找新的宝石矿源。火矮人们虽不受水晶魅惑的影响，却对发现的矿物财富垂涎不已。如果PC听不懂{@language 原初语|phb|火族语}，他们会用手势和姿态生硬地示意PC离开他们圈占的地盘，另寻他处。如果能够沟通，成功通过DC 18的魅力（{@skill 威吓}或{@skill 游说}）检定可以让火矮人相信PC不会威胁他们的地盘，火矮人便会放PC穿过洞穴。如果PC用价值至少500 gp的宝石贿赂，此检定具有优势。一旦外交失败，火矮人便会为地盘而战，但若半数被杀或失去战斗能力，他们便放弃主张。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"水晶发出的光是房间内魔法的效果，并非水晶自身的性质。不过，成功通过DC 15的智力（{@skill 调查}）检定并花一小时搜寻采集，可以收获50磅便于运输的水晶，价值1,000 gp。如果PC与火矮人谈妥了通行，这种采集会激怒他们并发动攻击。同样，任何被水晶{@condition 魅惑}的类人生物也会对这种采集行为做出激烈反应。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Cataract Cavern",
+									"type": "entries",
+									"page": 34,
+									"name": "3. 白瀑洞窟",
+									"id": "cotcm3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"震耳欲聋的轰鸣在这座洞穴中回荡。一帘翻涌起沫的大瀑布从洞顶的天坑倾泻而下，水雾和蒸汽弥漫洞窟东端。水流从洞窟东南侧越过激流排出。"
+											]
+										},
+										"滚烫的激流主宰着这座洞穴。试图从区域3移动到{@area 区域4|cotcm4|u}的生物必须涉过滚烫的水流（见\"滚烫激流\"）。涉过之后，它必须通过DC 18的力量豁免，否则被激流击{@condition 倒地}，并顺着急流冲进{@area 区域4|cotcm4|u}的湍流。",
+										{
+											"ENG_name": "Difficult Terrain",
+											"type": "entries",
+											"name": "困难地形",
+											"entries": [
+												"室内的水晶让所有地面都成为困难地形，只有一条蜿蜒穿过房间、通往水流激流的小径除外。"
+											]
+										},
+										{
+											"ENG_name": "Scalding Torrent",
+											"type": "entries",
+											"name": "滚烫激流",
+											"entries": [
+												"这股水流不仅奔涌强劲，还被附近的火山活动加热到接近沸腾。触碰激流或在激流中开始其回合的生物受到5（{@damage 1d10}）点火焰伤害。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Crystal Rapids",
+									"type": "entries",
+									"page": 34,
+									"name": "4. 水晶急流",
+									"id": "cotcm4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"水流沿着这座蜿蜒陡降的洞窟中央奔腾而下。水在洞窟中央冲出一条光滑的路径，而墙壁、地面和洞顶则覆满了小水晶组成的森林，大多约一两尺长。"
+											]
+										},
+										"如果没有穿越这座蜿蜒下行洞窟的特殊手段，唯一畅通的路径就是急流本身。进入湍流的生物会迅速被冲往下游，速度为每轮60尺。",
+										{
+											"ENG_name": "Sharp Turns",
+											"type": "entries",
+											"name": "急弯险道",
+											"entries": [
+												"地图上标注的各处有艰难的急弯。生物抵达这些地点时，必须通过DC 15的敏捷豁免，否则被卷向洞窟锋利的水晶，受到5（{@damage 1d10}）点挥砍伤害。"
+											]
+										},
+										{
+											"ENG_name": "Warm Water",
+											"type": "entries",
+											"name": "温热之水",
+											"entries": [
+												"尽管这一带的水由{@area 区域3|cotcm3|u}的激流补给，但区域4的水晶吸收了水中的一部分热量，使水温热得难受，却不算危险。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Flooded Cave",
+									"type": "entries",
+									"page": 36,
+									"name": "5. 洪水洞窟",
+									"id": "cotcm5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"上方急流湍急的水流在此洞室归于平缓。大块的水晶从覆盖本洞窟大部分区域的水中探出。水流缓缓继续沿一条通道流向西北。"
+											]
+										},
+										"水在此汇聚成池，然后沿西北的通道缓缓流去。西北通道中的水足够浅，中型或更大的生物可以步行通过，视该水域为困难地形。",
+										{
+											"ENG_name": "Steaming Pool",
+											"type": "entries",
+											"name": "蒸腾水池",
+											"entries": [
+												"这一带的水深20尺，温热得难受，但足够平静，生物可以游泳通过。没有火焰抗性或其他耐极端高温适应的生物，在水中每小时受到11（{@damage 2d10}）点火焰伤害。蒸汽从水池升起，轻度遮蔽该区域。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一段时间以前，一只{@creature 火融水元素|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）从{@area 区域3|cotcm3|u}的激流中跌入这些洞窟，此后便一直居于此处。水晶巨碑虽然知道这元素的存在，却很少与它互动，因为它并不妨碍水晶及其生长。在这元素眼中，巨碑不过是它领地中另一块古怪的水晶罢了。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Lair of the Monolith",
+									"type": "entries",
+									"page": 36,
+									"name": "6. 巨碑之巢",
+									"id": "cotcm6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"上方的水沿一条水道流进这座大洞穴的中央。巨大的水晶簇遮蔽了洞穴的全部轮廓\u2014\u2014有些比人还宽，从地面、墙壁和洞顶伸展而出。水晶五彩斑斓，发出柔光，把洞穴化作光与色的奇境。水晶间回荡着深沉柔和的嗡鸣，宛如一首异界的歌。"
+											]
+										},
+										{
+											"ENG_name": "Crystal Forest",
+											"type": "entries",
+											"name": "水晶森林",
+											"entries": [
+												"对任何不会飞的生物，这个房间都是困难地形。"
+											]
+										},
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"把这片洞窟当作家园和私人花园的{@creature 水晶巨碑|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）就住在这里。除非受到攻击，它起初并无敌意，而且对访客颇感好奇\u2014\u2014这种情况实属罕见。如果PC想与巨碑交流而非战斗，它也愿意为之。这场对话如何展开，主要取决于PC想谈什么、为何而来。如果他们是来向水晶巨碑求取知识的，巨碑很快会意识到自己在任何谈判中都占上风，多半要与PC讨价还价、换取服务。可能的情形是巨碑要求PC离开它的巢穴，替它办一件事。可能的服务包括：",
+												{
+													"type": "list",
+													"items": [
+														"找到并击败威胁巨碑或其巢穴的其他生物，比如{@area 区域2|cotcm2|u}火矮人们的老巢，或是一只对巨碑水晶花园情有独钟、四处劫掠的{@creature 石鼎兽}。",
+														"取回巨碑想\"种\"在花园里的稀有矿物或宝石。",
+														"说服（或强迫）某个特定生物或NPC来拜访水晶巨碑，与它交谈并分享知识。"
+													]
+												},
+												"如果谈崩动武，水晶巨碑会保持距离，利用移动优势拉开与PC的距离，进行远程攻击。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"花上2小时，PC可以找到并采集价值2,000 gp的稀有珍贵水晶。中央巨型水晶簇中嵌着十二颗各值100 gp的紫水晶和一枚价值250 gp的蔷薇水晶晶洞。晶洞里安放着一枚{@item 艾恩石, 防护|dmg|守护艾恩石}。这枚艾恩石运作如常，只是使用时会不断开裂、崩屑、剥落。久而久之，它会显得破败不堪、仿佛一碰即碎，却始终不碎。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 37,
+							"entries": [
+								"PC与水晶巨碑的互动结束后，冒险的主体部分便告一段落。PC为何而来、如何与巨碑相处，决定了冒险如何收尾......或者收不了尾。为寻找法术材料而来的PC能在水晶巨碑的洞室中找到所需，带着材料复命时获得酬劳。为财宝或知识而来的PC则未必能如愿\u2014\u2014或者必须为水晶巨碑完成一项任务才能得到。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Fight for Horseshoe Rock Oasis",
+					"type": "section",
+					"name": "马蹄岩绿洲争夺战",
+					"page": 38,
+					"entries": [
+						"{@b 一场供四到五名5级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 38,
+							"entries": [
+								"马蹄岩绿洲得名于泉水涌出的那块巨大岩层。地下暗河的一条小支流在岩顶附近涌出，穿过岩缝飞泻而下，注入绿洲的各个水潭。沙漠草、芦苇、灌木和枣椰树生长在水域周围。这里的许多植物都是过路旅人栽种培育的，用来维系和庇护绿洲。马蹄岩的位置也有助于掩护绿洲，因为它正处在盛行风的路径上。",
+								"最近，马蹄岩绿洲被怪物占领了。起初，一对水蝎（见{@area 区域3|ffhro3|u}）从补给绿洲的地下河进入地表水潭。这对水蝎不久前产下了第一窝幼体。随后，一只怀孕的柯仔（见{@area 区域6|ffhro6|u}）到来。它在绿洲边缘的枣椰树上筑巢，也产下了一窝。这些怪物死守着新家园，彼此则敬而远之。所有入侵者要么被赶走，要么被杀死，成为这些怪物及其后代的口粮。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "entries",
+							"name": "冒险引子",
+							"entries": [
+								"以下方式可以让PC前往马蹄岩绿洲：",
+								{
+									"type": "list",
+									"items": [
+										"PC随商队旅行，受命前往下一个绿洲侦察，因为袭掠者常借绿洲设伏。",
+										"当地商人行会雇用PC前往绿洲，清除盘踞在那里、袭击过往商队的袭掠者或怪物。",
+										"PC在沙漠中迷了路，侥幸望见远处一片绿意。那不是海市蜃楼，但要痛饮一番，先得解决潜伏的危险。",
+										"一个当地部族曾拥有这片绿洲，后来把使用权卖给了商人行会供其商队使用。酋长得到消息，商人们不再光顾这片绿洲。按照部族律法，若绿洲一个月无人使用，部族便可重新圈占。酋长许诺：只要PC替他前往绿洲圈占此地，便有酬谢。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Horseshoe Rock Oasis in Midgard",
+									"type": "inset",
+									"name": "米德加德中的马蹄岩绿洲",
+									"entries": [
+										"南方之地的沙漠是放置这片绿洲的绝佳地点\u2014\u2014无论新月沙漠、萨克兰沙漠，还是穿越西瓦尔的无数商路沿线。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map7.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Lower Pool",
+									"type": "entries",
+									"page": 40,
+									"name": "1. 下层水潭",
+									"id": "ffhro1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"清澈平静的水注满这方水潭。潭岸绿草如茵，灌木和芦苇环绕。几株枣椰树在水边几处投下荫凉。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"这方水潭看似平静无波，却藏着水蝎们最近产下的一窝后代。这窝幼体使用两只{@creature 水蝎集群|tob2-lairs|昆虫集群}的数据，但集群具有20尺游泳速度，并可以闭气30分钟。饥饿的集群会在水中追猎猎物，但不会冒险登上陆地。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Abandoned Tent",
+									"type": "entries",
+									"page": 40,
+									"name": "2. 废弃的帐篷",
+									"id": "ffhro2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一条陆地伸入水潭之间。这里草最深，半岛上长着两株枣椰树和几丛开花的灌木。树荫下立着一顶帐篷。篷布风渍斑驳、破旧不堪，但还算完好。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"帐篷里是柯仔眼下的一窝幼体，以及两具沦为它们食物的倒霉旅人的尸体。这窝幼体使用两只{@creature 柯仔集群|tob2-lairs|昆虫集群}的数据，但集群具有20尺飞行速度，并免疫火焰伤害。饥饿的集群会随处追击对手，唯独不入水。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"两具遇害旅人的尸体旁放着两个背包。除了寻常的旅行装备，包里还有一盒价值50 gp的靛蓝染料粉、一个装着36 gp和40 sp的小袋，以及一条{@item 攀爬绳}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Western Pool",
+									"type": "entries",
+									"page": 40,
+									"name": "3. 西侧水潭",
+									"id": "ffhro3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"绿洲的这一带长满了芦苇和灌木。一大块凸出的岩石打破了潭底沙地的单调。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"雄性{@creature 巨型水蝎|ToB2|巨型水蝎}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）此刻正在这方水潭底部歇息。一旦发现有生物入水或靠近潭边，它便会跃起攻击，想速战速决填饱肚子。如果水蝎的生命值降至一半或以下，它会退往{@area 区域4|ffhro4|u}与配偶会合。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Eastern Pool",
+									"type": "entries",
+									"page": 40,
+									"name": "4. 东侧水潭",
+									"id": "ffhro4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这方平静的大水潭边植被茂密。潭底沙中散落着大小不一的深色石块。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"雌性{@creature 巨型水蝎|ToB2|巨型水蝎}伏在潭底。它饥饿难耐，会扑向任何入水或在岸边逗留的生物。如果水蝎的生命值降至一半或以下，它会逃往{@area 区域3|ffhro3|u}与配偶会合。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Desiccated Body",
+									"type": "entries",
+									"page": 40,
+									"name": "5. 干尸",
+									"id": "ffhro5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"东北侧一片椰树丛不远处，一具身着长袍的尸体面朝下倒在沙中。"
+											]
+										},
+										"这具尸体属于一名独行的游牧民，她误入了柯仔巢穴的领地范围。她逃出这么远，终究没扛过螫刺的毒液。检视尸体可见长袍焦灼烧灼，裸露的皮肤也一样。成功通过DC 15的感知（{@skill 医药}）检定可以辨认出螫伤及其引发的中毒。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"尸体的一根手指上戴着一枚价值50 gp的银月长石戒指。一个小袋里装有16 gp和20 sp。尸体腰间束带里别着一把带有华丽银与黑玛瑙柄、价值25 gp的{@item 匕首|phb}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Palm Grove",
+									"type": "entries",
+									"page": 40,
+									"name": "6. 棕榈树林",
+									"id": "ffhro6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"岩层东南尖端附近长着一丛密集的枣椰树。大量枯死的枝叶在活枝叶间构成一座巢。"
+											]
+										},
+										"这些树既为绿洲提供荫凉，也充当防风屏障。它们还是另一只盘踞绿洲的生物的巢穴。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一只{@creature 柯仔|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）潜伏在树冠间。柯仔领地意识极强，会攻击过于靠近树木的生物。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 40,
+							"entries": [
+								"如果PC是受命清剿绿洲，派他们来的人会为此支付500 gp，日后或许还会请PC协助其他事务。如果PC是偶然发现这片绿洲，他们便在这片无情的沙漠中有了一处可以长期使用的避风港。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The River Tomb",
+					"type": "section",
+					"name": "河流古墓",
+					"page": 41,
+					"entries": [
+						"{@b 一场供四到五名6级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 41,
+							"entries": [
+								"斯加瓦迪尔是一个强盛蛮族部落的首领，那个部落繁荣于世界尚且年轻的年代。他是一位崇敬古老的毒疫女神的伟大战士，最终死于刺客之手\u2014\u2014那是他连年征伐刺客族人的报应。他死后，遗体被安葬在大河中央的一座小岛上，随后部落的德鲁伊们施展魔法抬高水位，古墓被河水吞没。数百年来，古墓一直沉于水下，未遭盗扰，直到最近河流被筑坝截流，古墓才重见天日。",
+								"一伙匪徒率先闯入了古墓，但很快就被墓中的陷阱和守卫消灭。第二支是一支由著名佣兵克雷塞尔率领的冒险队伍。这支队伍收获更丰，但最终因意外放出一头被封在石棺中的红客（见{@area 区域10|trt10|u}）而全军覆没。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hook",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 41,
+							"entries": [
+								"布里尔文·阳猎\u2014\u2014克雷塞尔那支注定覆灭的远征队中唯一的幸存者、矮人佣兵\u2014\u2014正独自坐在朗姆鱼酒馆里，哀悼逝去的同伴。她寻求能从古墓中取回队长遗体的冒险者，并愿意付酬。成功通过DC 13的魅力（{@skill 游说}）检定可以说服布里尔文向PC提供{@area 区域1|trt1|x}至{@area 7|trt7|x}的基本信息，包括{@area 3|trt3|u}中陷阱的存在。她对{@area 区域8|trt8|x}至{@area 10|trt10|x}一无所知，因为她的队伍还没到那些洞室就逃了出来；队伍离开之后发生的事\u2014\u2014比如同伴们化为丧尸\u2014\u2014她也不知情。如果PC能把克雷塞尔的遗体带回给她妥善安葬，她愿意出500 gp，并告诉他们，可以凭他手上戴的魔法戒指辨认遗体。其他同伴都是她几乎不认识的新雇员，她对取回他们的遗体并不那么在意。"
+							]
+						},
+						{
+							"ENG_name": "The Island",
+							"type": "entries",
+							"name": "岛屿",
+							"page": 41,
+							"entries": [
+								"古墓所在的小岛坐落在附近河流中央一块狭长的陆地上。岛上大部分地面光秃秃的，只有几丛零星的香蒲。由于半个多世纪以来岛的大半被水淹没，几代人以来岛上几乎寸草不生。河流筑坝后，更多土地露出水面，随着小岛日渐干涸，植物正慢慢萌发。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map8.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Tomb Entrance",
+									"type": "entries",
+									"page": 42,
+									"name": "1. 墓穴入口",
+									"id": "trt1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"古墓看上去只是一座不起眼的石堆，突起的石块上覆着病态的黄色苔藓。墓口是一道简单的垂直裂隙，通往黑暗深处，从中渗出的空气阴冷，带着死水的气味。"
+											]
+										},
+										"直到最近，这个入口还几乎完全没于水下\u2014\u2014细心的PC检视石块上的水线时，成功通过DC 15的智力（{@skill 调查}）或感知（{@skill 察觉}）检定便可发现这一点。",
+										{
+											"ENG_name": "Stone Walls",
+											"type": "entries",
+											"name": "石墙",
+											"entries": [
+												"古墓的墙壁由从河中捞起的石块砌成，以原始水泥粘合。大多数走廊高8尺，大多数洞室高12尺。由于墓中积着浅水，古墓对小型或更小的生物而言是困难地形。"
+											]
+										},
+										{
+											"ENG_name": "Sturdy Doors",
+											"type": "entries",
+											"name": "坚固的门扉",
+											"entries": [
+												"墓门由1尺厚的琢石制成。大部分墓门敞开着，而那些关着的门，因如今堵塞墓道的积水，需要成功通过DC 15的力量检定才能强行推开。除非另有说明，所有洞室都一片漆黑。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Antechamber",
+									"type": "entries",
+									"page": 42,
+									"name": "2. 前厅",
+									"id": "trt2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"通道向下通向一间低矮的石室。地面覆着一层浑浊的水膜，墙壁因黏滑的霉菌而湿滑。北墙上有一扇敞开的石门。"
+											]
+										},
+										"两具肿胀的匪徒尸体泡在这间洞室数寸深的积水中。匪徒的武器\u2014\u2014一把{@item 弯刀|phb}和一根{@item 短棒|phb}\u2014\u2014倒在旁边。尸体穿着发霉的{@item 兽皮甲|phb}，身上共有15 cp和10 sp。这两名匪徒被曾守卫此室的一只土元素所杀，幸存的匪徒们消灭了元素后继续深入古墓。"
+									]
+								},
+								{
+									"ENG_name": "3. Trapped Corridor",
+									"type": "entries",
+									"page": 42,
+									"name": "3. 陷阱走廊",
+									"id": "trt3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"几具类人生物的尸体躺在走廊的浑水中，走廊一直延伸进黑暗。"
+											]
+										},
+										"这些尸体属于四名被走廊陷阱杀死的匪徒。匪徒们穿着发霉的{@item 兽皮甲|phb}，身上共有26 sp和18 gp。三根{@item 短棒|phb|短棒}和一把{@item 弯刀|phb}躺在尸体旁的水中。检视尸体时成功通过DC 12的感知（{@skill 医药}）检定可以发现尸体上的细小刺孔。如果检定超出DC 5点或更多，还能意识到这些匪徒是被毒死的。这些匪徒死于走廊陷阱，而克雷塞尔一行则多亏布里尔文的锐利目光躲过了它。",
+										{
+											"ENG_name": "Magical Poison Trap",
+											"type": "entries",
+											"name": "魔法毒陷阱",
+											"entries": [
+												"这条走廊由一个魔法陷阱守卫。当隐藏的压力板上放置超过20磅的重量时，陷阱便会启动，从天花板洒下一阵针状的魔法毒雨。压力板上及距其10尺内的每个生物必须进行DC 15的敏捷豁免，失败者受到11（{@damage 2d10}）点毒素伤害，成功者伤害减半。豁免失败的生物在其下回合开始时必须通过DC 13的体质豁免，否则{@condition 中毒}1分钟。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Prevention.",
+															"type": "itemSub",
+															"name": "预防。",
+															"entry": "成功通过DC 15的智力（{@skill 调查}）或感知（{@skill 察觉}）检定可以找到隐藏的压力板。在压力板下楔入一枚{@item 铁钉|phb}或其他物体可阻止陷阱启动。对天花板成功施展{@spell 解除魔法}（DC 13）可摧毁陷阱。"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Offering Chamber",
+									"type": "entries",
+									"page": 42,
+									"name": "4. 祭品室",
+									"id": "trt4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"光线从这间方形洞室天花板的裂缝中漏入。红色的藻片覆满室内的水面，厚厚的河泥涂满墙壁。墙上分布着仪式用的壁龛，北墙的走廊通向古墓更深处。大团泛蓝的气泡在洞室中无规律地漂浮。"
+											]
+										},
+										"这间洞室曾存放着异域美食、名贵香料、丝绸和陶器等祭品，供斯加瓦迪尔带往来世。食物和其他物件早已朽坏，壁龛中如今只剩下无用的陶片。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"水位下降后进入古墓的并不只有匪徒和克雷塞尔一行\u2014\u2014三只{@creature 沼泽气泡|ToB2|沼泽气泡}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）从外面飘进来，如今在这间洞室中游荡。气泡会试图吸附随机PC并发动攻击，直到被消灭。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Horse Tomb",
+									"type": "entries",
+									"page": 44,
+									"name": "5. 马匹墓室",
+									"id": "trt5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间昏暗洞室的地面覆着一层冷水。洞室大半被一座敞开的巨大石棺占据，棺中是一头大型动物的骸骨。"
+											]
+										},
+										"斯加瓦迪尔下葬时，他心爱的战马也被陪葬在一座大石棺中。成功通过DC 13的智力（{@skill 自然}）检定可以辨认出这些骸骨属于一匹战马。这是克雷塞尔一行闯入古墓后洗劫的第一间洞室，但他们很快意识到这里没有财宝，便离开了。"
+									]
+								},
+								{
+									"ENG_name": "6. Ransacked Burial Chamber",
+									"type": "entries",
+									"page": 44,
+									"name": "6. 被洗劫的墓室",
+									"id": "trt6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间洞室的地面覆着死水。一座破损的石棺躺在洞室中央，棺盖被随手丢在一旁。"
+											]
+										},
+										"这间墓室曾被克雷塞尔一行洗劫。它属于斯加瓦迪尔最宠爱的姬妾\u2014\u2014她被毒死后放入墓中，好在来世服侍这位蛮族首领。她下葬后不久，水就渗入了石棺，毁掉了她所有的陪葬品，只留下一具朽坏的骸骨。"
+									]
+								},
+								{
+									"ENG_name": "7. Dishonored Dead",
+									"type": "entries",
+									"page": 44,
+									"name": "7. 蒙羞的亡者",
+									"id": "trt7",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间洞室的地面也覆着积水，但这里的水泛着油光，气味格外恶臭。一座石棺立在洞室中央，棺盖被移开了一半。三具类人生物的尸体躺在石棺周围的水中。"
+											]
+										},
+										"这座墓属于斯加瓦迪尔最信任的家臣之一，他被活埋于此，好在来世继续侍奉其王。木乃伊化的尸体仍安卧在石棺中，身上已无值钱之物。除尸体外，这座石棺中曾封着一头致命的红客（见{@area 区域10|trt10|u}），但克雷塞尔一行放出了它，招致了自己的灭亡。",
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"布里尔文同伴们的骤然集体死亡催生了一只{@creature 黯然失色|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}），它至今仍栖身于此。它会攻击任何进入洞室的生物。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"两具尸体穿着发霉的{@item 板条甲|phb|板甲}，第三具穿着发霉的长袍。两把{@item 长剑|phb|长剑}、一把{@item 精金手斧|xge|精金手斧}和一本损毁的法术书躺在尸体旁的水中。其中一具着甲尸体的手上戴着一枚{@item 公羊戒指}，表明那是克雷塞尔的遗体。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "8. Shrine",
+									"type": "entries",
+									"page": 44,
+									"name": "8. 神龛",
+									"id": "trt8",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"通道向下通入一间八角形洞室，室中有一座布满蛇形浮雕的祭坛。蛇头形石制烛台嵌在洞室墙上。洞室部分被水淹没。一只小石匣放在祭坛上。"
+											]
+										},
+										"这间洞室的门关着。这座神祠属于斯加瓦迪尔生前崇敬的古代女神。神力已完全离开此处，但洞室中仍有一个与蛇头相关的陷阱。",
+										{
+											"ENG_name": "Snake Head Trap",
+											"type": "entries",
+											"name": "蛇头陷阱",
+											"entries": [
+												"如果石匣被移动或被移出祭坛，守卫洞室的陷阱便会启动。陷阱启动时，蛇头会向洞室中喷满令人作呕的绿色毒气。在毒气中开始其回合的生物必须通过DC 15的体质豁免，否则受到11（{@damage 2d10}）点毒素伤害。毒气将持续10分钟才会消散。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Prevention.",
+															"type": "itemSub",
+															"name": "预防。",
+															"entry": "检视祭坛时成功通过DC 16的智力（{@skill 调查}）检定可以注意到石匣周围的石头上刻着细小的魔法符文。能够感知魔法存在的法术或效应（如{@spell 侦测魔法}）可以显出祭坛和蛇头烛台上的咒法光环。对祭坛成功施展{@spell 解除魔法}（DC 13）可摧毁陷阱。用泥或类似物质堵住所有蛇嘴可阻止毒气喷入洞室，但陷阱触发后无法清除室内的毒气。或者，在每个蛇头烛台上插一支{@item 火把|phb|火把}可以防止陷阱触发。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"石匣上了锁，需要使用{@item 盗贼工具|phb}成功通过DC 15的敏捷检定才能打开。匣中装着一枚刻有魔法符文的铜栓，以及价值450 gp的古钱币。铜栓是{@area 区域9|trt9|u}谜题的一部分。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "9. Treasury",
+									"type": "entries",
+									"page": 44,
+									"name": "9. 宝库",
+									"id": "trt9",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一束光从天花板锯齿状的破洞照进这间空荡荡的洞室，大半地面覆着一层泥水。北墙上有三个孔。"
+											]
+										},
+										"这间洞室的门关着。洞室尽头的墙上有三个孔。其中两个空着，第三个孔里插着一枚铁栓。与{@area 区域8|trt8|u}的铜栓一样，铁栓上也刻着魔法符文。如果把铜栓（{@area 区域8|trt8|u}）插入左孔、铁栓插入中孔、银栓（{@area 区域10|trt10|u}）插入右孔，墙上便会魔法般显现出一个凹腔。",
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"每天第一次有人以错误顺序把三枚栓插入墙孔时，一只{@creature 腐化异怪|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）便会出现在洞室中央，攻击室内的所有生物。在腐化异怪存续期间把栓插入正确的孔中可将其摧毁。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"凹腔中有一尊蓝电气石眼的银鹰像（价值250 gp）、10颗各值50 gp的血石、一瓶{@item 英勇药水}，以及一条{@item 折叠船}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "10. Sgavaldyr's Tomb",
+									"type": "entries",
+									"page": 45,
+									"name": "10. 斯加瓦迪尔之墓",
+									"id": "trt10",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间洞室未受惊扰，地面覆着一层薄水。一座气派的石棺立于洞室中央，其后的小壁龛中立着一张高起的石座。室中的空气格外恶臭潮湿。"
+											]
+										},
+										"这间洞室的门关着。克雷塞尔一行从{@area 区域7|trt7|u}石棺中放出的{@creature 红客|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）从门上方的缝隙挤进了这间洞室，并在此安家。漫长的囚禁让它满怀仇恨，会毫不留情地攻击PC。",
+										{
+											"ENG_name": "Sarcophagus",
+											"type": "entries",
+											"name": "石棺",
+											"entries": [
+												"成功通过DC 18的力量检定可以打开石棺。若PC打开它，会发现斯加瓦迪尔木乃伊化的遗体裹着一张朽烂的丝绸殓布。他戴着一串价值500 gp的粗金项链，以及一顶由玉和象牙盘蛇编成的王冠，价值1,000 gp。"
+											]
+										},
+										{
+											"ENG_name": "Throne",
+											"type": "entries",
+											"name": "王座",
+											"entries": [
+												"检视石座时成功通过DC 15的智力（{@skill 调查}）检定，可以发现{@area 区域9|trt9|u}谜题的最后一枚栓整齐地插在扶手上。与其他栓一样，这枚银栓上也刻着魔法符文。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 45,
+							"entries": [
+								"PC清空古墓并把克雷塞尔的遗体交还布里尔文后，冒险结束。古墓如今再无威胁，其他生物可能开始以此为巢，从而危及附近的聚落。或许斯加瓦迪尔会因坟墓被亵渎而化为不死生物复起，又或许那位被遗忘的毒疫女神会开始重申她的权能。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "House of the Worm God",
+					"type": "section",
+					"name": "蠕虫之神居所",
+					"page": 46,
+					"entries": [
+						"{@b 一场供四到五名7级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 46,
+							"entries": [
+								"这座破败的建筑坐落在大都市的贫民窟中，曾是一个小犯罪头目的宅邸，后来他被竞争者谋杀。头目死后，建筑便荒废下来，直到一个侍奉恶魔领主{@creature 赫里加拉，不餍之神之颚|ToB2|赫里加拉，不餍之神之颚}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）的食人邪教开始用它举行邪恶仪式。起初邪教满足于从当地墓园偷尸体，但很快胆子变大，开始把人诱进屋里，下药后吃掉。残余的尸块则被喂给困在地下室里的软泥怪。",
+								"邪教的杀戮狂欢本可能无限延续下去，若非他们的所作所为让最后一名受害者以强大不死生物之姿归来，在邪教徒们结束最后一次仪式回到建筑时将他们屠戮殆尽。这离奇的转折让赫里加拉大悦，这位恶魔领主施展力量，把宅邸中被杀的邪教徒变成了更多可怕的不死生物。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hook",
+							"type": "entries",
+							"page": 46,
+							"name": "冒险引子",
+							"entries": [
+								"受人敬重的当地商人奥斯德克·坦纳请求PC追查他失踪的妻子西尔维娅，他担心她被奴隶贩子或当地某个犯罪团伙绑架了。他出500 gp悬赏她的平安归来，并指点他们去城中藏污纳垢的一侧寻找。"
+							]
+						},
+						{
+							"ENG_name": "Finding Sylvia",
+							"type": "entries",
+							"name": "寻找西尔维娅",
+							"page": 46,
+							"entries": [
+								"PC四处寻找线索时，一个名叫基罗的当地街头流浪儿找上他们，说几天前他看到一个与西尔维娅相貌相符的女子和其他几个人一起进了一座废弃的房子。基罗愿意带路，只要一枚金币。如果PC接受，基罗会带他们来到那座破败的宅邸\u2014\u2014此时赫里加拉的不死爪牙正齐聚宅中，只等夜幕降临便扑向人群。",
+								"如果PC不接受基罗的提议，他们可以通过DC 15的智力（{@skill 调查}）或感知（{@skill 求生}）检定，循着蛛丝马迹找到那座房子。"
+							]
+						},
+						{
+							"ENG_name": "The Dilapidated House",
+							"type": "entries",
+							"name": "破败之屋",
+							"page": 46,
+							"entries": [
+								"邪教徒的聚会所是一座朽败的两层小楼，爬满常春藤，坐落在城市贫民窟边缘一条死巷的尽头。因其过往，当地人避之不及；直到最近，这里的住户只有老鼠和偶尔的乞丐。唯一的入口是一扇简陋的木门，门上蓝漆斑驳。黄铜门环在犯罪头目死后不久便被盗走，只在门上留下一个凹痕。所有的门都没有上锁。窗户蒙着厚厚的污垢，大多数被木板封死。",
+								"建筑内部比外部稍加打理。光线几乎照不进污浊的窗户，白天多数区域光线昏暗，夜间一片漆黑。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map9.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Entrance Hall",
+									"type": "entries",
+									"page": 47,
+									"name": "1. 入口大厅",
+									"id": "wg1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"褪色的挂毯装饰着这间门厅的墙壁，灰尘从天花板垂下长长的流痕。一道宽阔的楼梯和多扇门通出此室。楼梯上铺着虫蛀的褐红色长毯，木门上装有铁艺把手。房子发出怪异的吱嘎声。"
+											]
+										},
+										"门厅空无一人，但如果PC在此停留过久，就会惊动潜伏在衣帽间和上层走廊里的剥皮怨灵。成功通过DC 14的感知（{@skill 察觉}）检定可以听到{@area 区域6|wg6|u}传来轻微的刮擦声。那是剥皮怨灵沿走廊飘行时，残破的双足擦过裸露地板的声音。"
+									]
+								},
+								{
+									"ENG_name": "2. Cloakroom",
+									"type": "entries",
+									"page": 47,
+									"name": "2. 衣帽间",
+									"id": "wg2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个不见天光的房间里，挂着各式帽子、斗篷和长袍，都吊在简陋的金属挂钩上。"
+											]
+										},
+										"这里的衣物大多是寻常的外衣，但有些长袍看似仪式用袍，上面还有干涸的血渍。成功通过DC 17的感知（{@skill 察觉}）检定可以注意到袍上的血迹。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"两名邪教徒逃到门厅便被逼入绝境，杀死他们的是他们无意中造出的怪物（见{@area 区域12|wg12|u}）。他们的尸体随后被赫里加拉化为{@creature 剥皮怨灵|ToB2|剥皮怨灵}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}），如今藏身于这间屋子的厚大衣和斗篷之间。剥皮怨灵会攻击任何查看衣物的人。它们会在整座宅邸中追击逃跑的角色，但不会进入{@area 区域12|wg12|x}和{@area 区域13|wg13|x}。白天它们不会离开宅邸。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Drawing Room",
+									"type": "entries",
+									"page": 47,
+									"name": "3. 客厅",
+									"id": "wg3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个房间里有一张木桌、一个空书架、一个破损的柜子和一座未生火的砖砌壁炉。屋里的一切都覆着厚厚的油垢和灰尘。"
+											]
+										},
+										"这间屋子曾用于待客，邪教徒们很少光顾。屋里曾经值钱的东西几乎都早已被窃贼和流浪汉搜刮一空。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"探查壁炉时成功通过DC 15的智力（{@skill 调查}）检定，可以发现一枚镶着大颗血石、价值150 gp的银戒指。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Dining Room",
+									"type": "entries",
+									"page": 47,
+									"name": "4. 餐厅",
+									"id": "wg4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一张长方形餐桌主宰着这间屋子。餐桌新近摆好，汤匙、刀叉和餐盘一应俱全，仿佛在等候宾客。一具人的尸体躺在桌子中央，腹部被剖开，内脏摊在餐具上。苍蝇在每一处表面上兴奋地嗡嗡盘旋。"
+											]
+										},
+										"躺在桌上的是剥皮怨灵们最近的受害者\u2014\u2014一名被西尔维娅·坦纳（见{@area 区域12|wg12|u}）诱入宅邸、随后被她杀害的城市卫兵。尸体腰间别着一把{@item 长剑|phb}而非{@item 矛|phb}，身上的{@item 链甲衫|phb}已经损毁。"
+									]
+								},
+								{
+									"ENG_name": "5. Kitchen",
+									"type": "entries",
+									"page": 47,
+									"name": "5. 厨房",
+									"id": "wg5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间屋子里有一座红色大砖炉和一个铁制吊架。几口锅和平底锅吊在架上。一张木桌贯穿房间中央，桌上放着一只绿色布袋。一道血迹蜿蜒绕过桌子，通向房间角落的另一扇门。"
+											]
+										},
+										"邪教徒们很少使用这间屋子，里面大多是空的。血迹已有几天，属于邪教最后一名受害者\u2014\u2014他被拖下去喂了地下室里的软泥怪。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"袋子里装着从邪教近期受害者身上取来的各种物品，包括57 sp、26 gp、一条嵌着绿碧玉、价值100 gp的铜项链、一对各值50 gp的金镯，以及一根{@item 蛛网魔杖}。邪教徒们本打算分掉这些财物，却还没来得及便遭了袭。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Upper Hallway",
+									"type": "entries",
+									"page": 48,
+									"name": "6. 上层走廊",
+									"id": "wg6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这条霉味扑鼻的上层走廊有几扇门通向其他房间。曾经气派的窗户如今蒙满尘垢，在朽坏的墙框中凹陷下垂。"
+											]
+										},
+										"这条走廊连接着宅邸上层的所有房间。一只{@creature 剥皮怨灵|ToB2}在走廊游荡\u2014\u2014它是{@area 区域12|wg12|u}血肉遗弃者的又一受害者。剥皮怨灵会攻击任何探查此地的人。"
+									]
+								},
+								{
+									"ENG_name": "7. Guest Bedroom",
+									"type": "entries",
+									"page": 48,
+									"name": "7. 客房",
+									"id": "wg7",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间屋子沉寂而阴郁，摆着一张看着就不舒服的床和一个敞开的衣柜。蛛网几乎覆满每一处表面。"
+											]
+										},
+										"邪教徒们习惯在地下室行完仪式后不久就离开，从未使用过这间卧室。这里的蛛网虽然可能让PC紧张，但大多是空网，屋里那几只蜘蛛也无害。"
+									]
+								},
+								{
+									"ENG_name": "8. Water Closet",
+									"type": "entries",
+									"page": 48,
+									"name": "8. 盥洗室",
+									"id": "wg8",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个小房间隐约有排泄物的气味。屋里只有一个脏兮兮的洗脸盆、一面挂在墙上的裂镜和一个带盖的便桶。"
+											]
+										},
+										"这个房间无人居住。检查便桶的PC会发现它直接通向建筑外的外面。"
+									]
+								},
+								{
+									"ENG_name": "9. Bedrooms",
+									"type": "entries",
+									"page": 48,
+									"name": "9. 卧室",
+									"id": "wg9",
+									"entries": [
+										"这些房间与{@area 区域7|wg7|u}一模一样，只是没有蛛网覆盖。房里没有任何值钱的东西。"
+									]
+								},
+								{
+									"ENG_name": "10. Wine Cellar",
+									"type": "entries",
+									"page": 48,
+									"name": "10. 酒窖",
+									"id": "wg10",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"楼梯底部是一间未点灯的房间，土地面，立着木支撑柱。几只大酒桶靠墙堆放，空气中弥漫着醋味。一条走廊通出此室。"
+											]
+										},
+										"这间屋子的酒桶都已被开过，大部分酒流到了地上，桶中余酒也变成了醋。"
+									]
+								},
+								{
+									"ENG_name": "11. Torture Chamber",
+									"type": "entries",
+									"page": 48,
+									"name": "11. 拷问室",
+									"id": "wg11",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间梦魇般的屋子里摆着各式刑具\u2014\u2014锯子、刀具、鞭子和指枷，摊在一张小木桌上。一副空手铐吊在后墙上，干涸的血迹溅满几乎每一处表面。"
+											]
+										},
+										"邪教徒们有时会在杀死受害者前先施加折磨，他们发现这间屋子是完美的场所，因为外面听不到受害者的惨叫。屋里没有尸体，也没什么值钱的东西，不过那些刑具都完好可用，遇到对的买主或许能卖到25 gp。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"邪教徒们养着水蛭，用来给受害者放血和施刑。水蛭住在木桌下的玻璃容器里，一旦察觉到非不死、非构装体的生物便会饥饿难耐。生物进入房间后{@dice 1d4}轮内，水蛭便会破容器而出，聚成四群{@creature 水蛭集群|ToB2|水蛭集群}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "12. Shrine to Hriggala",
+									"type": "entries",
+									"page": 48,
+									"name": "12. 赫里加拉神殿",
+									"id": "wg12",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"墙上的小壁龛里点着数十滴淌蜡的蜡烛，橘黄的光照亮这座神殿。光线大多汇聚在一座粗雕的小石祭坛上。一尊蠕虫状生物的雕像虎视眈眈地俯临祭坛，巨口中露出层层叠叠的利齿。洞室南墙上凿开了一个洞，其后是一条光滑的圆形隧道。"
+											]
+										},
+										"邪教徒们从事邪恶活动之前，会聚集在这里向赫里加拉祈祷。祭坛和雕像并无魔法，但在\"侦测善恶\"法术眼中算作被亵渎之物。",
+										{
+											"ENG_name": "Altar and Statue",
+											"type": "entries",
+											"name": "祭坛与雕像",
+											"entries": [
+												"祭坛和雕像都可以被摧毁（各自AC 17；生命值20；易受光耀伤害；免疫穿刺、挥砍、毒素和心灵伤害），但这样做会激怒赫里加拉。每名参与摧毁祭坛或雕像的生物必须通过DC 15的感知豁免，否则受到11（{@damage 2d10}）点心灵伤害\u2014\u2014恶魔领主用被食尸鬼和其他不死生物活活吞食的恐怖景象轰炸它的心智。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"奥斯德克·坦纳的妻子西尔维娅就潜伏在这间洞室。西尔维娅曾是邪教的女大祭司。血肉遗弃者死而复生袭击邪教徒时，西尔维娅逃跑，却在奔出地下室的楼梯上遇袭，摔下楼梯折断了脖颈。不久之后，赫里加拉用邪魔之力把她复活成了一名{@creature 无餍之神的仆从|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）。西尔维娅的样貌与生前大体相同，只是断了的脖颈让她的头微微前垂，稀疏的头发遮住了脸。她忠于黑暗的神祇，深信神会让她再度复生，因此会为守卫赫里加拉的神殿战至死亡。",
+												"屠杀邪教徒的那只{@creature 血肉遗弃者|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）在区域12和{@area 区域13|wg13|x}之间漂浮，若西尔维娅遇袭便会赶来相助。血肉遗弃者是邪教徒们无心插柳造出的\u2014\u2014一名佣兵被西尔维娅诱入宅邸，麻醉后被活活吃掉。如今，赫里加拉的力量驱使这怪物听命于西尔维娅。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "13. Ooze Pit",
+									"type": "entries",
+									"page": 50,
+									"name": "13. 泥浆坑",
+									"id": "wg13",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"隧道向下倾斜，通入一个开阔的圆形洞穴。洞穴大半被一个深坑占据，坑里两大团黑色的物体发出咕噜声，骇人地颤动着。北面坑壁的凹龛里放着一只木箱。"
+											]
+										},
+										"邪教徒们用这个深坑处理受害者的残骸，以此进一步颂扬赫里加拉。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"坑里有两只{@creature 黑布丁|mm|黑布丁们}。这些软泥怪是赫里加拉的圣兽，恶魔领主的力量使它们不吞食邪教徒\u2014\u2014只要邪教徒持续投喂。如今邪教徒已死，软泥怪们躁动而饥饿。它们会爬上坑壁，攻击洞中所有非不死、非构装体的生物。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"洞穴北侧的木箱上了锁，装着邪教的全部资财。使用{@item 盗贼工具|phb}成功通过DC 15的敏捷检定可以开锁。箱中装有710 cp、103 sp、89 gp、一颗剩27次充能的{@item 光彩夺目宝石}、一套{@item 板甲|phb}，以及一卷{@spell 活化死尸}的{@item 法术卷轴(3环)|dmg|法术卷轴}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 50,
+							"entries": [
+								"PC清空宅邸，并把西尔维娅的遗体交还奥斯德克安葬，或告知商人他妻子的死讯（如果他们烧毁或以其他方式毁掉了遗体）之后，冒险结束。但这未必是终局\u2014\u2014赫里加拉邪教可能在城中别处再起，掀起下一轮腥风血雨。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Terror at Mountain Lotus Temple",
+					"type": "section",
+					"page": 51,
+					"name": "山莲寺惊魂",
+					"entries": [
+						"{@b 一场供四到五名8级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 51,
+							"entries": [
+								"这座寺院建于偏远山隘旁的小山谷中，曾是朝圣者的圣地，也是过路旅人安宁的栖身之所。大限将至时，寺中一位女祭司堕出正道，与一头恶魔勾结，以求延寿。女祭司最终悔恨自己的决定，试图斥退恶魔，背弃契约。她为这份反叛付出了代价：灵魂沦入地狱，肉身沦为魔器。这可憎的怪物开始缓慢杀死照料寺院的祭司，以及仆役和寺中的客人。当它的存在终于败露时，活人已太少，无力组织有效的抵抗。怪物把幸存者打得屈服，然后把他们砌进寺院后墙，封死了他们的命运。",
+								"如今的山莲寺是一处闹鬼之地，仍是那只狡诈残忍的怪物的家。它白天藏身于从前的人类伪装\u2014\u2014一位年迈和善的女祭司\u2014\u2014之中，麻痹来访者，等到夜幕降临，便毫不留情地出手。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hook",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 51,
+							"entries": [
+								"以下情景可以用来把PC带到山莲寺：",
+								{
+									"type": "list",
+									"items": [
+										"PC正翻山越岭赶路。恶劣天气、山体滑坡或其他阻碍迫使他们绕行。新的路线恰好经过这座寺院。",
+										"一位当地女祭司找到PC，讲述她做的一个梦：梦中有一座落入阴影的山中宝刹。她相信这是神明的感召，但她年事已高，无法成行。她请PC代她前往，查明其中潜藏的黑暗。",
+										"在偏远的山区，一名PC需要得到队伍无力提供的救助。有人想起这片区域有一座寺院，是方圆数里内唯一可能提供所需救助的地方。",
+										"一名或多名PC寻求为过往的罪愆赎罪。他们受命进行一场神圣的朝圣，前往一座偏远寺院祈祷冥想。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Sister Sorakan",
+							"type": "entries",
+							"name": "索拉坎师太",
+							"page": 51,
+							"entries": [
+								"寺中的怪物\u2014\u2014一只{@creature 飞头鬼|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）\u2014\u2014白天以人形示人。它借用\"索拉坎师太\"这个前世凡人的名字，把自己扮成一名在俗祭司、山莲寺最后的信徒。她看上去是一位年老的人类女性，身材矮小瘦弱，白发盘成发髻，穿着祭司袍处理寺务。这只飞头鬼过去也曾遭遇英雄挑战，但每次都大获全胜。不过它的躯体已被摧毁过数次，一有机会便从受害者身上夺取新的躯壳。如今，它的头颅虽是老妪模样，身上的躯壳却属于一名年轻男子\u2014\u2014一个因在寺中过夜而遭难的商人学徒。披在瘦小骨架上的祭司袍恰好帮它在访客面前掩去这一破绽。",
+								"索拉坎师太温顺、恭谨、有求必应得过了头。她尽力照顾访客的需要，若对方想留宿，便领他们去客房（{@area 区域3|mlt3|u}）。她奉茶，也允许访客入寺祈祷冥想。即使受到挑衅，她也不会撕破伪装；面对任何敌意，她都表现得恐惧可怜，一有机会便逃回寺中避难。若被问及为何独自在此，她便称管理寺院的僧众一年多前相继过世；此地太偏远，还没有其他信徒路过，好让她告知寺院需要新的看守者。她说自己托过往旅人捎过口信，却至今没有回音。眼下，她只能尽力恪守职责，维持寺院，静候援手。",
+								"她的惯用伎俩是先让访客放松警惕，然后在夜里从容猎食。惯用手法包括：以帮忙做某事为名，把落单的受害者诱入寺中；或盯上离群之人，伺机下手。一旦诡计败露，索拉坎师太便退往{@area 区域2|mlt2|u}或{@area 区域5|mlt5|x}中较近的一处，并呼唤盟友协助她对付PC。",
+								{
+									"ENG_name": "Mountain Lotus Temple in Midgard",
+									"type": "inset",
+									"name": "米德加德中的山莲寺",
+									"entries": [
+										"卡波尔斯坦东部、库尔塔丹森林以北的山区是一处理所当然的绝佳地点。贝德尔斯坦天梯下端沿线或附近也很合适。最后，伊沙迪亚境内舒鲁帕克以东的群山也可以安放这座寺院。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Temple Exterior",
+							"type": "entries",
+							"name": "寺院外围",
+							"page": 52,
+							"entries": [
+								"寺院庭园曾是雅致的花园，如今因无人照料而蔓草疯长。一座人造池塘植满粉色莲花，就在山道旁。雕凿的石阶沿坡而上，经过池塘通向寺院\u2014\u2014那是一座精巧的建筑，几座高耸的尖塔由同一道花岗岩山脊雕出，从山坡上探出。外墙上刻满精美的浮雕，描绘神圣仆从与邪魔战斗、救助困苦、充当神之信使的场景。这些浮雕曾施彩并极尽精细，如今失修的颜料褪色剥落，有些地方甚至已荡然无存。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map10.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Lotus Pond",
+									"type": "entries",
+									"page": 52,
+									"name": "1. 莲花池",
+									"id": "mlt1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"池塘边砌着浑圆的河石。水面几乎被莲叶和莲花盖满。一棵柳树立在池边，枝条长得足以探入池水，在水面上拖曳。"
+											]
+										},
+										"这片如画的景致看似安宁平和。粉色的花朵铺满水面，柳枝在微风中轻轻摇曳。在池边逗留过久的生物会开始感到不断加深的绝望与颓丧。不离开此地，这种感觉便挥之不去。这是束缚于池中的怨灵的显现。",
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一只{@creature 幽魂}栖居于此\u2014\u2014它是索拉坎师太作为凡人留下的最后残余。她潜伏在池边垂柳的枝条下。降临在她身上的可怕命运令她心智崩坏，这幽魂已无法以任何理智的方式交流。如果PC问起她的死因或她何以至此，她会试图用手势比划那飞头鬼：把自己的头从肩上扯下，高高举起，再指向上山通往寺院的路。不幸的是，这一动作正等同于幽魂的\"恐怖面容\"，会对PC相应地产生影响。",
+												"让索拉坎师太的灵魂安息的唯一办法，是消灭飞头鬼和墙怖怪（见{@area 区域9|mlt9|u}），从而把寺院从她那可怕决定所酿成的邪恶中解放出来。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Stable",
+									"type": "entries",
+									"page": 52,
+									"name": "2. 马厩",
+									"id": "mlt2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这座敞棚建筑的檐下有一个小阁，堆满陈年干草。棚内六个马厩厩门紧闭，料槽早已空空如也。墙上挂着几件锈迹斑斑、结满蛛网的马具。"
+											]
+										},
+										"阁楼里老鼠窜动，把干草弄得沙沙作响，虽不祥却无害。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"前两个马厩是空的。其余四个各关着两只{@creature 丧尸|mm|丧尸}，共八只。这些生物听命于飞头鬼，战斗时她有时会召唤它们充当额外的战力。不过它们的首要用途，是在飞头鬼当前躯壳被毁时为它提供新躯壳。奉她之命，一只丧尸会用动作撕下自己的头颅，好让魔头的头取而代之。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Guest Quarters",
+									"type": "entries",
+									"page": 54,
+									"name": "3. 客房",
+									"id": "mlt3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这座建筑的墙壁为木制，雕满曼陀罗和天使像。画像曾施彩鲜亮，如今斑驳剥落。墙上开着小窗，罩着精致的铁格栅。一组对开门供人出入。"
+											]
+										},
+										"成功通过DC 15的感知（{@skill 察觉}）检定可以注意到，门两侧各有一尊雕像，其手从墙壁探出，形如托架，正好可以安放门闩。",
+										"这里有六间单人客房，各有一张睡垫、一张桌子、一个洗脸盆和一个水壶。前堂有一个围绕小火塘的炊事区和储物区，存放着一些简单的干粮和茶叶。",
+										{
+											"ENG_name": "Secret Door",
+											"type": "entries",
+											"name": "暗门",
+											"entries": [
+												"成功通过DC 20的感知（{@skill 察觉}）检定可以发现建筑背面藏着一道拉门。如果PC在客房过夜，飞头鬼的手段之一便是封死正门把大家困在屋内，然后从暗门潜入，趁某人睡在单间时下手袭击。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Pillared Hall",
+									"type": "entries",
+									"page": 54,
+									"name": "4. 柱廊大厅",
+									"id": "mlt4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"雕着娜迦的纤细立柱撑起这座高顶大厅。柱上蛇形的娜迦盘旋而上，庄重的面容自高处俯视。对开门对面的拱门垂着一条藏红金色的帷幕，遮住了后面的房间。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"这道帷幕是一只{@creature 闷人毯}。如果有生物试图在没有索拉坎师太陪同下穿过它进入{@area 区域5|mlt5|u}，帷幕便会发动攻击。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Outer Sanctum",
+									"type": "entries",
+									"page": 54,
+									"name": "5. 外圣所",
+									"id": "mlt5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间方形房间的天花板绘满色彩缤纷的曼陀罗法轮和莲花。中央矗立着一座石雕凉亭，四面台阶通向挂满藏红金色帷幕的拱门。北墙和南墙上开着无遮的拱门，另一道挂幕的拱门向西通出。"
+											]
+										},
+										"中央凉亭供着寺院主神的圣像。寺院尚在运转时，为朝圣者和旅人举行常规礼拜便在此处。如今这里藏着更丑陋的东西，被帷幕遮掩着。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四只{@creature 躯壳|ToB2|干枯躯壳}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）在此设伏，堆伏在凉亭的角落里。这些可怕的不死生物是飞头鬼旧躯壳的残余，听它号令。如果它以索拉坎师太的伪装被说动揭开凉亭的帷幕，它会要求独自行事，坚持让PC在{@area 区域4|mlt4|u}等候。这样它就能悄悄把躯壳们赶到别处\u2014\u2014比如藏进{@area 区域6|mlt6|x}和{@area 区域7|mlt7|x}香炉的沙中，或把它们送进内圣所躲藏。飞头鬼不在时闯入此地的入侵者，会遭到躯壳们无情的攻击。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Southern Transept",
+									"type": "entries",
+									"page": 54,
+									"name": "6. 南翼廊",
+									"id": "mlt6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间洞室中央摆着一只盛满沙的大陶盆。末端烧焦的细签插在沙中。盆底放着一只装着线香的小木盒。沿墙排着一系列小神龛，各供着一尊代表圣徒、天使或神祇的圣像。每个神龛前的地上都放着一张猩红色的祈祷垫。"
+											]
+										},
+										"寺院的这一区域可供人向各路神圣使者、半神和神祇祈祷。尽管寺院笼罩着不洁的阴霾，这一众天界圣物中仍残留着些许善念。",
+										{
+											"ENG_name": "Divine Auspice",
+											"type": "entries",
+											"name": "神圣吉兆",
+											"entries": [
+												"如果一名生物花时间点燃一炷香，在其中一座神龛前祈祷并完成一次短休，它将在下一次属性检定中获得{@spell 神导术}法术的效果。一旦获得过此项恩惠，在完成一次长休前无法再次获得。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "7. Northern Transept",
+									"type": "entries",
+									"page": 54,
+									"name": "7. 北翼廊",
+									"id": "mlt7",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间洞室中央也摆着一只盛满沙的大陶盆。盆身的一道裂缝让沙洒落在盆底，堆成一小丘，半掩着一只装线香的小木盒。沿墙排着一系列小神龛，各供着一尊代表圣徒、天使或神祇的圣像。每个神龛前的地上都放着一张宝蓝色的祈祷垫。"
+											]
+										},
+										"与另一侧翼廊一样，此地供奉的善神数量之多，使它们的影响力得以穿透寺中的邪恶，向配得者降下小小的祝福。",
+										{
+											"ENG_name": "Divine Aegis",
+											"type": "entries",
+											"name": "神圣庇护",
+											"entries": [
+												"如果一名生物花时间点燃一炷香，在其中一座神龛前祈祷并完成一次短休，它将在下一次豁免检定中获得{@spell 抵抗术}法术的效果。一旦获得过此项恩惠，在完成一次长休前无法再次获得。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "8. Inner Sanctum",
+									"type": "entries",
+									"page": 55,
+									"name": "8. 内圣所",
+									"id": "mlt8",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"连接地面与高顶的立柱主宰着这间大洞室。猩红与金色的饰带缠绕着立柱，悬垂其间，不过有些已经扯断，落在地上。石地上的瓷砖镶嵌画构成涡纹、波浪和其他曲线图案，色彩鲜明的黄、橙、绿、蓝交相辉映。房间尽头，一道大型拱门被砖砌封死，那灰暗的砖石与室内别处明亮的图案色彩相比，沉闷而丑陋。"
+											]
+										},
+										"寺院尚在运转时，这间屋子用于举行重要的正式仪式。如果被问及房间尽头的墙，索拉坎师太便说，寺院的这一部分早已不牢，在她独自看守之前很久，就被砌墙封死，等石匠前来修缮。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"砖石墙中封着一只{@creature 墙怖怪|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）。这只不死生物由残余祭司和仆役的被集体谋杀催生，会攻击区域8中的任何入侵者。虽然它憎恶索拉坎师太，但构成它的灵魂对她怕得太厉害，不敢向她出手。",
+												"墙怖怪可以用其\"跃墙\"特性移动到区域8的任何墙壁或立柱上，但无法离开这间洞室。墙怖怪被消灭后，砌死的砖墙便会崩塌，露出通往{@area 区域9|mlt9|u}的入口。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "9. Sanctum Sanctorum",
+									"type": "entries",
+									"page": 55,
+									"name": "9. 至圣所",
+									"id": "mlt9",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间八角形洞室弥漫着污物与腐朽的恶臭。墙上布满各种几何图案和曼陀罗，都贴着金箔，嵌着彩色石片。一尊石像的碎块散落在地上。六具身穿朽烂长袍的类人骸骨躺在碎砾之间。"
+											]
+										},
+										"这里安息着寺院的祭司和侍僧的遗骸\u2014\u2014他们被飞头鬼活活砌进墙中杀死。要重新圣化寺院，PC必须让这些遗体入土为安。如此一来，PC将得到诸神的酬答（见{@area 结局|mltc|x}）。而要让索拉坎师太的灵安息，PC必须杀死飞头鬼和墙怖怪。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"房间里有一些值钱物品，原属被葬于此地的可怜人：60 sp、25 gp、一只价值50 gp的金手镯、一卷{@spell 次等复原术}的{@item 法术卷轴(2环)|dmg|法术卷轴}、一枚{@item 保健护符}，以及一根{@item 巨蟒法杖}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 55,
+							"id": "mltc",
+							"entries": [
+								"怪物被消灭、索拉坎师太的魂灵得到安息、祭司们的遗体被从至圣所迁出妥善安葬之后，诸神便会眷顾PC，赐下礼物酬谢他们的功绩。寺院所属的教团或许还会提供额外的报酬\u2014\u2014或是财宝，或是PC日后可向教会请求的特别恩惠。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "{@reward Blessing of Protection}",
+											"type": "entries",
+											"name": "{@reward 护佑祝福}",
+											"entries": [
+												"诸神赐予每名PC永久的+1 AC和豁免加值。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Tunnels Below Skulltop Tor",
+					"type": "section",
+					"name": "骷髅顶丘下的隧道",
+					"page": 56,
+					"entries": [
+						"{@b 一场供四到五名9级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 56,
+							"entries": [
+								"骷髅顶丘是一座声名狼藉的山丘，高耸于四周的景物之上，把大地笼罩在阴影中。一颗巨人的巨大头骨半埋在丘顶，其张开的巨口之下便是通往深挖进基岩的一连串洞窟的入口。一个矮人氏族曾把这些洞窟当作礼拜之所，但自从矮人被一头强大的红龙屠灭后，其他生物开始在此安家。目前占据骷髅顶丘的是一对凶残的瘦巨人（见{@area 区域6|tbst6|u}）\u2014\u2014萨尔戈兹和瓦尔戈\u2014\u2014他们惯于伏击附近商队，获取新鲜的肉食。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hook",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 56,
+							"entries": [
+								"一支载有重要且可能敏感的法律文书的商队失踪了，当地当局担心这些文件可能落入不该落的人手中。一队奉命取回文件的士兵也有去无回，于是精明狡黠的外交官哈勒米尔开始寻找既能取回文件又能守口如瓶的人。哈勒米尔向PC出价1,000 gp，悬赏箱柜及其货物的安全归还。"
+							]
+						},
+						{
+							"ENG_name": "The Tunnels Below Skulltop Tor",
+							"type": "entries",
+							"name": "骷髅顶丘下的隧道",
+							"page": 56,
+							"entries": [
+								"骷髅顶丘之下是一串由狭窄隧道相连的洞穴。虽然这些洞穴和隧道本是天然形成，但前来礼拜的矮人曾为己所用加以扩建。此地如今的住户善用这狭窄的地形，使与它们的战斗颇为棘手。除非另有说明，隧道内一片漆黑。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map11.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Entrance",
+									"type": "entries",
+									"page": 56,
+									"name": "1. 入口",
+									"id": "tbst1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一颗巨人的巨大头骨被漂得惨白，半埋在这座山丘顶上的泥土碎石之间。头骨的巨口大张，露出一条深入地下的隧道。数辆货车的残骸散落在洞口四周，货物早已被劫掠或朽坏。一股恶臭从隧道中飘出。"
+											]
+										},
+										"破损的货车属于失踪的商队，残骸中已没有任何值钱的东西。成功通过DC 15的感知（{@skill 求生}）检定可以发现几组巨人尺寸的脚印进出隧道。如果PC的检定超出DC 5点或更多，还能断定这些脚印属于两种不同的巨人。"
+									]
+								},
+								{
+									"ENG_name": "2. Guard Cave",
+									"type": "entries",
+									"page": 56,
+									"name": "2. 守卫洞穴",
+									"id": "tbst2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"隧道通向一个大致圆形的洞穴，东面和南面各有一个出口。三名巨人立在洞中守望，身上布满无数抓痕和肿块。"
+											]
+										},
+										"三名{@creature 阿巴尼斯巨人|tob2|阿巴尼斯巨人}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}把守着去路。这些巨人几乎无时无刻不惧怕着他们那些更庞大的瘦巨人表亲，因此攻击起来毫不留情，指望战斗的声响把{@area 区域4|tbst4|u}余下的巨人引过来。"
+									]
+								},
+								{
+									"ENG_name": "3. Refuse Cave",
+									"type": "entries",
+									"page": 57,
+									"name": "3. 垃圾洞穴",
+									"id": "tbst3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个小洞穴散发着刺鼻的恶臭。地上堆满腐烂的尸体、骸骨和排泄物。"
+											]
+										},
+										"这个洞穴堆放着巨人们的垃圾。",
+										{
+											"ENG_name": "Unbearable Stench",
+											"type": "entries",
+											"name": "难以忍受的恶臭",
+											"entries": [
+												"在这个恶臭洞穴中结束其回合的生物必须通过DC 12的体质豁免，否则{@condition 中毒}1分钟。该生物在其每回合结束时可以重复豁免，成功则终止自身的这一效应。离开洞穴自动终止此状态。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"翻检垃圾时成功通过DC 15的智力（{@skill 调查}）检定可以找到一个布袋，内装四颗各值500 gp的海蓝宝石，但该生物会{@condition 中毒}1小时。以该方式{@condition 中毒}的生物可以在每分钟结束时重复豁免，成功则终止自身的这一效应。如果该生物离开骷髅顶丘，此豁免具有优势。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Sleeping Cave",
+									"type": "entries",
+									"page": 57,
+									"name": "4. 睡眠洞穴",
+									"id": "tbst4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"洞中躺着几块平整的大石，充当各种粗陋的凳子和床铺。石块和洞壁上涂满油脂与各种体液的混合物。洞穴东墙附近的地面上有一个大坑。"
+											]
+										},
+										"不担任守卫或伏击商队时，共有六名{@creature 阿巴尼斯巨人|ToB2|阿巴尼斯巨人}住在这个洞穴里。巨人们在此休息进食，一心想消灭PC来博取萨尔戈兹和瓦尔戈的欢心。如果PC没有发出任何声响就解决了{@area 区域2|tbst2|u}的三名阿巴尼斯巨人，则洞中有三名阿巴尼斯巨人在睡觉。否则，这里的三名阿巴尼斯巨人会加入{@area 区域2|tbst2|u}的战斗。熟睡的阿巴尼斯巨人不会被在洞底行走的PC惊扰，但当行走的PC进入洞穴时便会醒来。",
+										{
+											"ENG_name": "Pit",
+											"type": "entries",
+											"name": "坑陷",
+											"entries": [
+												"至少一名阿巴尼斯巨人会试图{@action 擒抱}一名PC，把它扔进室内的坑中。坑深40尺，通往{@area 区域6|tbst6|u}。坠入坑中的生物如常受到坠落伤害，并以倒地状态落地。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"虽然劫掠来的财宝大多被瘦巨人拿走，阿巴尼斯巨人们也给自己搜刮了一点。翻检巨人们微薄的家当时成功通过DC 15的感知（{@skill 察觉}）检定，可以发现一瓶{@item 火焰抗性药水}、220 sp、70 gp，以及一只镶有半宝石、价值350 gp的金杯。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Collapsed Tunnel",
+									"type": "entries",
+									"page": 57,
+									"name": "5. 塌陷的隧道",
+									"id": "tbst5",
+									"entries": [
+										"这条隧道曾通向一系列由如今已死的矮人开凿的洞室。氏族被红龙屠灭后不久隧道便坍塌了，瘦巨人们对另一头有什么毫无兴趣。不过他们会定期查看阿巴尼斯巨人的动静，确保这些较小的巨人没有给自己挖出任何形式的出路。",
+										"清除塌方需要整整三天的挖掘，或者使用{@spell 地动术}之类的法术。PC在坍塌隧道尽头的洞室里可能发现什么，不在本冒险范围内，但可以包括古代矮人圣物、魔像守卫或受诅咒的不死生物。"
+									]
+								},
+								{
+									"ENG_name": "6. Pit Cave",
+									"type": "entries",
+									"page": 58,
+									"name": "6. 深坑洞穴",
+									"id": "tbst6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"深坑通向一个未点灯的洞穴，里面散落着碎石和碎骨。洞穴顶部大半被坑口占据，使其呈现出奇特的圆锥形。数条隧道从洞穴伸入黑暗。"
+											]
+										},
+										"这一区域连接着洞穴群的上层和下层。瘦巨人在两片区域间定期往来，但除非狩猎或骚扰阿巴尼斯巨人，他们一般待在下层洞窟中。",
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"如果PC被上方的阿巴尼斯巨人丢进这个洞穴，{@creature 瘦巨人|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）萨尔戈兹会毫不留情地攻击该PC。否则，萨尔戈兹会悄悄穿过连接隧道，在PC经过{@area 区域7|tbst7|u}时与瓦尔戈一同伏击。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "7. Connecting Tunnels",
+									"type": "entries",
+									"page": 58,
+									"name": "7. 连接隧道",
+									"id": "tbst7",
+									"entries": [
+										"连接底层各洞室的隧道，其尺寸只适合豺狼人大小或更小的生物，但瘦巨人独特的身体构造使他们可以轻松穿行。瘦巨人们记熟了隧道的布局，利用这一点潜近PC。他们趁PC穿过岔路口或拐角时用长臂攻击，却避免缠斗。如果一名巨人的生命值降至其上限一半或以下，它会退往{@area 区域11|tbst11|u}\u2014\u2014巨人们将在那里与PC做最后的顽抗。"
+									]
+								},
+								{
+									"ENG_name": "8. Fungal Cave",
+									"type": "entries",
+									"page": 58,
+									"name": "8. 真菌洞穴",
+									"id": "tbst8",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"腐臭弥漫这条狭长的洞穴，散落着各种动物和类人生物的骸骨与残余。淡蓝色的微光充满洞窟大半，来自几片从腐肉堆中长出的真菌。"
+											]
+										},
+										"两只{@creature 频闪真菌|ToB2|频闪真菌}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beast 2.json}）栖息在隧道这一段。瘦巨人们一段时间前与这对真菌结下交情，把它们当作奇宠。搬进骷髅顶丘时，巨人们把真菌也带了来，把每餐最上等的残余喂给它们。真菌忠于巨人，攻击其他所有人。"
+									]
+								},
+								{
+									"ENG_name": "9. The Warm Pool",
+									"type": "entries",
+									"page": 58,
+									"name": "9. 温泉水池",
+									"id": "tbst9",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一池清水主宰着这座岩洞，池边生长的真菌发出的光令水面熠熠生辉。池水的热力温暖着洞室，驱走了邻近隧道的寒气。一把半埋的斧头躺在池底的淤泥中。"
+											]
+										},
+										"这个水池是一座深20尺的温泉，由几处地面裂缝中涌出的水补给。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"水池是两只{@creature 腐化异怪|ToB2|腐化异怪}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）的家。异怪们守护着水池，但不会离开这间洞室。瘦巨人们与异怪达成了某种休战，很少进入岩洞，宁可走{@area 区域11|tbst11|u}的东北入口。异怪会攻击进入该区域或水池的所有其他生物。"
+											]
+										},
+										{
+											"ENG_name": "Warm Pool",
+											"type": "entries",
+											"name": "温泉水池",
+											"entries": [
+												"池水温暖宜人，却滋生了与腐化异怪体内相同的阿米巴虫。在池中开始其回合的生物必须通过DC 13的体质豁免，否则按腐化异怪\"寄生阿米巴\"特性的描述感染寄生阿米巴虫。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"池底的斧头是一把{@item 巨人屠杀者巨斧}，由洞窟从前的一位住户失手落入池中。两名瘦巨人都没有尝试取回它\u2014\u2014比起水池里一把来历不明的斧头，他们更在乎与异怪维持休战。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "10. Dwarven Shrine",
+									"type": "entries",
+									"page": 58,
+									"name": "10. 矮人神殿",
+									"id": "tbst10",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"隧道的尽头是一间仿佛由数十把镐凿出的洞室。一尊身着托加袍、双臂前伸捧着一部巨著的矮人雕像立在洞室中央。墙壁上排列着壁龛，龙骨散落在雕像脚下。"
+											]
+										},
+										"这间洞室是矮人在天然洞系基础上最早增建的洞室之一，并非天然形成。瘦巨人们出于迷信从不踏足此处。洞室中央的雕像是一位几乎被遗忘的矮人知识与魔法之神。雕像工艺精湛，高逾20尺，头顶距洞顶仅数寸。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"屠灭骷髅顶丘旧主的那头巨龙就死在这间洞室\u2014\u2014一名矮人祭司为保护氏族余众，以一场死灵能量爆发与之同归于尽。这场牺牲让少数幸存的矮人得以诛杀巨龙逃生，但不久之后，巨龙的遗骸化成了一头红色{@creature 墓地龙|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）。此后巨龙便一直沉睡在这间洞室，不知道自己其实能够离开。瘦巨人的迷信让他们远离此室，也因此在不知不觉中免于被巨龙察觉。巨龙化作雕像基座周围的一堆骸骨，一旦有入侵者进入洞室便会跃起攻击。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"墙上的壁龛大多空置，但少数几个放着石板，以{@language 矮人语|phb|矮人文}整齐地记述着本地区矮人的历史。检视石板时成功通过DC 18的智力（{@skill 奥秘}）检定，可以发现其中两块上刻着{@spell 马友夫强酸箭|phb|强酸箭}和{@spell 石肤术}。这些石板功能如同{@item 法术卷轴|dmg|法术卷轴}，但以石头制成，每块重15磅。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "11. Thin Giant Cave",
+									"type": "entries",
+									"page": 60,
+									"name": "11. 瘦巨人洞穴",
+									"id": "tbst11",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"四张石制工作台立在洞室四周，旁边是盛着一丛丛生物发光真菌的大陶瓮。箱匣、木桶和其他容器堆成的一座小山靠在南墙上。"
+											]
+										},
+										"矮人氏族曾把这一带用作工坊，在此雕凿打造氏族其他成员使用的石作。他们的工具早已被毁或被搬走，如今瘦巨人萨尔戈兹和瓦尔戈把这间洞室当作他们的私人巢穴。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"等PC抵达这间洞室时，他们应当已在隧道中与瘦巨人交过手\u2014\u2014后者的生命值降至上限一半或以下后，最终都会逃回这里。不过，如果PC一路潜行到此未被发觉，会看到这对巨人正安静地交谈。无论哪种情况，{@creature 瘦巨人|ToB2|瘦巨人}都将在此做最后的顽抗。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"堆靠南墙的各种容器装满了酒、食品、上等丝绸和各式艺术品。货物总值5,000 gp，但若不借助魔法或役兽，要把它们全部运走将是一项浩大的工程。PC受命取回的那只木箱\u2014\u2014带着磕碰划痕却完好无损\u2014\u2014就堆在这些杂物中间。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 60,
+							"entries": [
+								"PC取回法律文书并返回后，哈勒米尔如约支付1,000 gp。当地当局视PC为能干可靠之人，日后或许还有其他事务相托。PC的成功还可能引起精灵印记者历史学家萨雷连的注意\u2014\u2014他正需要具有这般才能的人。萨雷连及其困境详见{@adventure 魔像熔炉|ToB2-Lairs|12}。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Crucible of Golems",
+					"type": "section",
+					"name": "魔像熔炉",
+					"page": 61,
+					"entries": [
+						"{@b 一场供四到五名10级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 61,
+							"entries": [
+								"数百年前，一个强大的法师统治政权让制造者D-064976负责一座用于制造战争魔像的魔法坩埚。坩埚安放在一座地下库房中，数年间源源不断地产出构装体，直到这个法师政权在与其一个邻邦的长期战争中被击败。再无指令可循的D-064976关闭了坩埚，让自己陷入魔法停滞。",
+								"两周前，一位野心勃勃、诡计多端的法师阿扎丁发现了这座库房，试图让坩埚重新运转。这使D-064976重新启动，它与阿扎丁及其护卫对峙。得益于对坩埚的研究，阿扎丁早有应对此等变故的准备，成功唬住了这个构装体，让它相信自己是旧法师政权的代表。如今阿扎丁企图用坩埚打造自己的魔像军团，征服周边诸地。"
+							]
+						},
+						{
+							"ENG_name": "Adventure Hook",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 61,
+							"entries": [
+								"研究古代构装体传说的精灵印记者法师兼历史学家萨雷连找到PC。他相信一处失落已久的魔像制造设施\u2014\u2014仅以\"魔像熔炉\"之名为人所知\u2014\u2014已被发现并以某种方式重启，这可能给附近的城市带来危险。萨雷连根据该地区近期的动静查明了坩埚的位置，却没有力量亲自追查。他请PC代为调查，并阻止重启坩埚的人。他向PC提供1,500 gp，或等值的卷轴和药水。"
+							]
+						},
+						{
+							"ENG_name": "The Vault",
+							"type": "entries",
+							"name": "金库",
+							"page": 61,
+							"entries": [
+								"藏有坩埚的库房位于一条地下隧道的尽头，已隐匿数百年。库房的具体位置由各位GM自行决定，不过本冒险很适合作为{@adventure 骷髅顶丘下的隧道|ToB2-Lairs|11}的续篇\u2014\u2014把坩埚库房设在那场冒险{@area 区域5|tbst5|u}坍塌隧道的另一头即可。",
+								"库房的墙壁、地面和天花板都包覆着铅、银和铁的混合层，以防探知魔法渗透内部。内部房门大多是圆形厚铁门，但都没有上锁。除非另有说明，库房由嵌在天花板上的发光玻璃球照亮，灯光明亮。这些玻璃球一旦取出灯座或受损，魔法便会失效。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map12.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Entrance",
+									"type": "entries",
+									"page": 61,
+									"name": "1. 入口",
+									"id": "cog1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"长隧道的尽头是一个洞穴，一扇敞开的精金大门立在洞中。光从门后洒出。"
+											]
+										},
+										"精金门斜靠在墙上，仅靠一扇铰链挂在门框上。阿扎丁本打算把门投进坩埚熔掉，只是还没腾出手来。这扇门的原材料精金价值10,000 gp，但重逾2,000磅，搬运十分困难。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"阿扎丁雇来守卫库房的四名人类老兵占据着这个房间。如果至少两名{@creature 老兵|mm|老兵}被杀，余下的老兵会逃往{@area 区域3|cog3|u}向同伴报警。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Foyer",
+									"type": "entries",
+									"page": 62,
+									"name": "2. 门厅",
+									"id": "cog2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间长方形洞室的墙壁、地面和天花板覆着深色而有光泽的金属。两颗水晶球以苍白的白光照亮洞室。两扇门通出此室，一东一北。"
+											]
+										},
+										"两只{@creature 发条虎|ToB2|发条虎}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）在这间洞室巡弋。它们奉命攻击任何进入前厅的人\u2014\u2014阿扎丁的护卫、构装体和阿扎丁本人除外。"
+									]
+								},
+								{
+									"ENG_name": "3. Barracks",
+									"type": "entries",
+									"page": 62,
+									"name": "3. 营房",
+									"id": "cog3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间方形洞室里摆着几张军营式的双层床和一张圆木桌。一颗水晶球照亮洞室。"
+											]
+										},
+										"阿扎丁雇来的老兵们把这间屋子改成了兵营，在D-064976的帮助下打造了床铺和桌子。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四名{@creature 老兵|mm|老兵}眼下正在这里，不过屋里的床铺足够十二人使用。老兵们正在休息，不是在玩牌就是在睡觉。一有战斗警讯，他们便会抓起{@item 巨剑|phb|巨剑}，但不会费时间穿甲。如果PC撤离战斗，日后在此遭遇的老兵都会全副武装、严阵以待。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"房间角落里一只未上锁的木箱装着老兵们的钱款，包括700 cp、4,780 sp、2,300 gp和96 pp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Great Foundry",
+									"type": "entries",
+									"page": 62,
+									"name": "4. 大铸造厂",
+									"id": "cog4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间巨大的洞室里有各种尺寸的金属模具、三座盛满莹莹水光的石盆，以及一口巨大的精金坩埚。坩埚中盛着沸腾的熔融金属，表面的符文发着明亮的银光。数十枚金属弹丸散落在地上。"
+											]
+										},
+										"阿扎丁和D-064976在库房中的大部分工作都在这间洞室完成。洞室由嵌在天花板上的数颗玻璃球照亮。室内热得令人窒息，任何在铸造厂中停留超过10分钟的非不死、非构装体生物必须通过DC 10的体质豁免，否则承受一级{@condition 力竭}。",
+										{
+											"ENG_name": "Crucible",
+											"type": "entries",
+											"name": "坩埚",
+											"entries": [
+												"这口坩埚是一件魔法物品，几乎能熔化投入其中的一切，包括精金之类的金属和魔法器物。银色符文排布在坩埚外侧，只要有金属物件投入其中，符文便会亮起，物件顷刻熔化。坩埚坚不可摧，也无法从此地移动。只有通过特殊仪式与坩埚建立魔法联结的生物才能操作它。目前，D-064976是唯一与坩埚联结的生物，也是唯一知晓该仪式的生物。它尚未与阿扎丁分享这一知识，而阿扎丁根本不知道仪式的存在。"
+											]
+										},
+										{
+											"ENG_name": "Molds and Fonts",
+											"type": "entries",
+											"name": "模具与水盆",
+											"entries": [
+												"室内四周的模具是各种魔像和其他构装体的造型。每个模具都架在大轮子上，便于移动。水盆是固定的魔法物品，每天黎明自动补充水量。盆中的水可以安全饮用，却有一股独特的金属味。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"两只散布各处的{@creature 轴承魔像|ToB2|轴承魔像}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）守卫着这间洞室。不担任守卫时，它们帮阿扎丁挪动模具、把较重的物件抬进坩埚。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. Storage Room",
+									"type": "entries",
+									"page": 62,
+									"name": "5. 储藏室",
+									"id": "cog5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"敞口木箱沿这间洞室的墙壁排开，每只都堆满了金属条。一颗玻璃球照亮此地。"
+											]
+										},
+										"这处储藏区存放着5,000磅{@item 铁|phb|铁}、2,500磅{@item 银|phb|银}、2,500磅{@item 赤铜|phb|赤铜}、1,500磅铅，以及1,000磅其他贱金属（锌、{@item 金|phb|金}、镍等）。这里的原料金属总值远超10,000 gp，但要把它们全部运走是一项浩大工程，多半超出了本冒险的范围。"
+									]
+								},
+								{
+									"ENG_name": "6. Workshop",
+									"type": "entries",
+									"page": 62,
+									"name": "6. 工作室",
+									"id": "cog6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"宽大的平铁台在洞室中排成两列，几座木制和玻璃柜沿墙而立。最北面的台上躺着一具发条虎的躯体，青铜齿轮和齿片散落在它一动不动的机体四周。几名类人生物手拿工具围在虎旁。"
+											]
+										},
+										"这间洞室用于制造和安装某些构装体的内部机件，发条构装体尤其如此。阿扎丁很少亲自监督这里的工作，而是交给助手们打理。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"阿扎丁的六名{@creature 邪教狂信者}助手在这间洞室组装和改装阿扎丁的构装体。如果他们遇袭，首领邪教狂信者\u2014\u2014阿扎丁的学徒莉莉安\u2014\u2014会在战斗第一轮启动那只{@creature 发条虎|ToB2}。未完工的老虎只有其生命值上限的一半，爪击具有劣势，但仍会竭尽所能保护莉莉安。如果莉莉安先于其他邪教狂信者被杀，余下的狂信者会逃往{@area 区域7|cog7|u}向阿扎丁求援。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"除了狂信者们正在发条虎上使用的两套{@item 修补工具|phb}，柜中还各有两套{@item 木匠工具|phb}和{@item 铁匠工具|phb}。工作台上放着制作发条生物的零碎物件，青铜、铁和其他金属合计价值750 gp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "7. Makeshift Bedroom",
+									"type": "entries",
+									"page": 64,
+									"name": "7. 临时卧室",
+									"id": "cog7",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间洞室里有一张床，以及铸铁打造的衣柜和桌子。桌上摊着一部厚重的书卷。一个身着长袍、面带讥诮的男子俯在书卷上，身边跟着一只发条虎。"
+											]
+										},
+										"在阿扎丁命D-064976为他打造了床、桌和衣柜后，这间储藏室最近被改成了卧室。桌上的书卷详尽记载着魔像熔炉与法师战争的信息，对收藏家而言价值1,000 gp。",
+										"不监督魔像建造时，阿扎丁就在桌边休憩。他忍受不了{@area 区域4|cog4|u}的酷热，又因屡屡无法激活{@area 区域8|cog8|u}的铁魔像而懊恼。阿扎丁是一名{@creature 魔法师}，持有一把{@item 闪电束魔杖}和一根{@item 构装体支配权杖|ToB2-Lairs}。",
+										"一旦听到战斗声响或得到助手或护卫的警报，阿扎丁便给自己施展{@spell 法师护甲}备战。战斗中，他会命令{@creature 发条虎|ToB2}攻击任何试图施法或直接攻击他的人。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"除了{@item 闪电束魔杖|dmg|魔杖}、{@item 构装体支配权杖|ToB2-Lairs|权杖}和库房的古卷，阿扎丁仅有的另一件财物是他的{@item 法术书|phb}\u2014\u2014这部皮面册子收录了他法术列表中的全部法术，以及{@spell 变身术}、{@spell 鬼斧神工}、{@spell 虚假生命}、{@spell 羽落术}、{@spell 鉴定术}、{@spell 敲击术}、{@spell 防护法阵}、{@spell 变形术}、{@spell 探知术}和{@spell 隐形仆役}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "8. Enchanting Tower",
+									"type": "entries",
+									"page": 64,
+									"name": "8. 附魔塔",
+									"id": "cog8",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"轻微的噼啪声和盛夏雷雨日的清冽气味充满这间巨大的圆形洞室。洞室中央的地板上以金墨绘着一座法阵。一尊纯铁打造的巨大魔像立于法阵中央。"
+											]
+										},
+										"构装体在被赋予生命之前，要在这间洞室接受最后的法术灌注。法阵用于汇集为此目的施展的法术之力，并防止元素或其他被召唤的生物逃脱。",
+										{
+											"ENG_name": "Crackling Statue",
+											"type": "entries",
+											"name": "噼啪作响的雕像",
+											"entries": [
+												"法阵中央立着一尊未激活的铁魔像\u2014\u2014古代法师战争的遗物。它为战争而新造，却从未被激活，几个世纪以来不过是一尊立于室中的巨大铁像。阿扎丁希望能唤醒魔像，让它统领自己的佣兵大军，但他目前还没有这样的力量。",
+												"不幸的是，虽然魔像尚未激活，但阿扎丁用魔杖的{@spell 闪电束|phb|闪电束}一次次尝试激活它，使魔像蓄满了魔法闪电。PC可以通过DC 20的智力（{@skill 调查}）检定或DC 15的智力（{@skill 奥秘}）检定察觉这股魔法闪电。触碰魔像的生物必须进行DC 16的体质豁免，失败者受到28（{@damage 8d6}）点闪电伤害，成功者伤害减半。这会释放魔像中积蓄的电荷，此后再触碰它便安全无虞。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "9. D-064976's Chamber",
+									"type": "entries",
+									"page": 64,
+									"name": "9. D-064976的房间",
+									"id": "cog9",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间光线昏暗的圆形洞室里有一大滩长方形的绿色软泥。软泥中闪动着奇异的微光和金属脉络，旁边立着一叠铜板。一条绿色伪足从软泥中伸向一块铜板，将它举到身前。\"你是谁？\"的字样在软泥的触碰下蚀刻到铜板上。"
+											]
+										},
+										"不与阿扎丁一起重启库房时，D-064976就在这里休息。D-064976是一只{@creature 制造者|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）\u2014\u2014一种由亿万微型构装体经蜂群意识联结而成的智慧软泥状构装体。D-064976的职责是守护{@area 区域4|cog4|u}中的坩埚，并在坩埚运转时监督魔像制造流程。坩埚一旦遭袭或受损它都会立刻知晓，并前去消灭袭击者。若发生这种事，与D-064976谈判的任何机会都将失去。",
+										"阿扎丁打开库房的精金门时，D-064976从停滞状态中苏醒，上前阻拦。凭借勤勉的研究，阿扎丁早知库房有一位智慧守卫，并带着所能搜罗到的关于库房旧主法师政权的一切知识有备而来。他成功让制造者相信自己是盟友，库房正被重新开放供法师们使用。这彻头彻尾是谎言，但制造者不知人类惯于说谎，相信了阿扎丁，从此对这位法师言听计从。",
+										"D-064976是危险的敌人，但如果PC不攻击它，它也愿意交谈。PC可以通过DC 15的魅力（{@skill 欺瞒}或{@skill 游说}）检定，让制造者相信他们没有威胁，或与阿扎丁有某种关联。或者，PC也可以通过DC 20的魅力（{@skill 游说}）检定，让制造者明白自己被阿扎丁骗了。如果PC持有阿扎丁的{@item 构装体支配权杖|ToB2-Lairs}，与制造者交互时的魅力检定具有优势。",
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"洞室中共有十二块铜板，各值5 gp。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 65,
+							"entries": [
+								"PC阻止阿扎丁继续制造魔像后，冒险结束。萨雷连如约酬谢。如果PC把在阿扎丁房间找到的那部关于坩埚与法师战争的书卷带给萨雷连，他会以书卷价值双倍的金币或等值的卷轴和药水收购。",
+								"如果PC与D-064976结盟且制造者活到冒险结束，他们便得到了一位奇特而强大的盟友。如果PC把萨雷连带到坩埚前，把他引荐给制造者，两人会一见如故，很快共同创办一所专门研究构装体的学园。两人都会感激PC，日后尽力相助。",
+								"如果PC决定利用库房打造自己的魔像大军，他们很可能招来某个强大法师行会、巫妖或军事王国的忌恨\u2014\u2014这些势力或许会亲自前来夺取坩埚之力。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Fire and Fury",
+					"type": "section",
+					"name": "烈火与怒焰",
+					"page": 66,
+					"entries": [
+						"{@b 一场供四到五名13级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 66,
+							"entries": [
+								"生活在奥洛夫·尤拉克阴影下的人们从无安稳。这座火山已活跃了三个世纪。它的喷发送下一条条岩浆河，摧毁家园与农田，迫使当地人逃离。然而，山坡和周边土地是肥沃的火山土，庄稼丰收。耕耘这片土地的回报，足以让坚定的定居者不顾火山迫近的威胁留下来。",
+								"这座火山是一只彻鲁菲（见{@area 区域6|faf6|u}）\u2014\u2014一种强大而暴戾的元素生物\u2014\u2014的家。为安抚这怪物、避免火山更猛烈的动静，当地聚落定期把自己的族人献祭给它。",
+								"最近，一位来自数百里外聚落的旅人拜访了奥洛夫·尤拉克山脚下的人们。目睹村民的血祭，旅人震骇不已，坚称必有别的出路。村民渴望摆脱彻鲁菲，却又害怕献祭停止后它的怒火。要让村民真正摆脱这怪物，必须有英雄挺身而出将它斩杀。彻鲁菲不是有耐心的生物。献祭必须尽快送到，否则火山将再度喷发，让大地遍布烈火与浓烟，彻鲁菲则会带着它的火蜥蜴爪牙索取它认为属于自己的东西。",
+								{
+									"ENG_name": "Olov Yurak in Midgard",
+									"type": "inset",
+									"name": "米德加德中的奥洛夫·尤拉克",
+									"entries": [
+										"在米德加德战役设定中，卡马伊神权国的赫斯普科火山是本冒险的合适地点。这种情况下，PC进入火山口的理由可以只是探险\u2014\u2014冒险队伍常深入此地，然后一去不返。马罗蒂帝国的彭科罗山脉或龙卷山脉也可以轻松容纳这座火山。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Hook",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 66,
+							"entries": [
+								"以下方式可以说动PC深入奥洛夫·尤拉克：",
+								{
+									"type": "list",
+									"items": [
+										"PC是本地声名显赫的实力人物。他们希望解除族人数百年来的枷锁，也就是直面并消灭彻鲁菲，让族人得以安宁生活。",
+										"要带来真正的改变，就必须击败彻鲁菲，使它无法借火山夷平乡野。当地领袖们广发英雄帖，请求强大冒险者的援助。",
+										"PC是那位旅人的盟友\u2014\u2014旅人想援助奥洛夫·尤拉克山脚下的聚落。旅人召唤他们，助自己击败潜伏在火山中的邪恶。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Olov Yurak Features",
+							"type": "entries",
+							"name": "奥洛夫·尤拉克的特点",
+							"page": 66,
+							"entries": [
+								"火山口和彻鲁菲巢穴的入口位于奥洛夫·尤拉克山顶。",
+								{
+									"type": "entries",
+									"id": "fafoyf",
+									"entries": [
+										{
+											"ENG_name": "Caldera",
+											"type": "entries",
+											"name": "火山口",
+											"id": "fafc",
+											"entries": [
+												"火山口约两千尺长、一千尺宽。除炽热和偶发的毒气外，破火山口弧形的内壁提供了一条虽崎岖却相对不危险的下行路。相对稳固的岩壳环绕着破火山口的北侧和西侧，其余部分翻腾的岩浆托着一块块硬化的岩浆\"岛屿\"，浮在其不稳定的表面上。位于破火山口北缘或底部岩壳上的观察者，有机会发现东南侧通入岩体的隧道。成功通过DC 20的感知（{@skill 察觉}）检定可以注意到隧道入口。若观察者下到破火山口底部，检定DC降为15。熔岩隧道蜿蜒而下，通往{@area 区域1|faf1|u}。"
+											]
+										},
+										{
+											"ENG_name": "Extreme Heat",
+											"type": "entries",
+											"name": "{@hazard 极度高温}",
+											"id": "fafeh",
+											"entries": [
+												"破火山口和彻鲁菲巢穴各隧道中的岩浆产生极端高温。没有火焰伤害抗性或免疫的生物，在此区域每停留10分钟必须通过DC 15的体质豁免，否则承受一级{@condition 力竭}。"
+											]
+										},
+										{
+											"ENG_name": "Magma",
+											"type": "entries",
+											"name": "岩浆",
+											"id": "fafm",
+											"entries": [
+												"破火山口和彻鲁菲的隧道中遍布岩浆区域。生物一旦接触岩浆或在岩浆中开始其回合，受到55（{@damage 10d10}）点火焰伤害。在岩浆中完全浸没地开始其回合的生物，改为受到99（{@damage 18d10}）点火焰伤害。"
+											]
+										},
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一只{@creature 岩浆章鱼|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）受近期加剧的火山活动吸引，在破火山口安了家。它喜欢这个新家，领地意识很强，会攻击过于靠近岩浆的生物。"
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map13.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. Guard Chamber",
+									"type": "entries",
+									"page": 67,
+									"name": "1. 警卫室",
+									"id": "faf1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这间洞顶如拱窟的洞室由凝固的岩浆构成。洞穴另一端另有一条隧道向东延伸。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四条{@creature 火蜥蜴|mm|火蜥蜴们}把守着这个入口抵御入侵者。它们战斗至死。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Magma Falls",
+									"type": "entries",
+									"page": 67,
+									"name": "2. 岩浆瀑布",
+									"id": "faf2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"隧道扩开为一间狭长的高顶洞室。三根咆哮的岩浆柱从天花板开口倾泻而下，消失在石地面上对应的孔洞中。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一对{@creature 火蜥蜴|mm|火蜥蜴们}看守着这间洞室。战斗中，如果火蜥蜴用尾巴{@condition 受擒}了目标，它会把目标的一部分按进岩浆流，指望把猎物熔掉。在岩浆中被{@condition 受擒}的生物在避免{@condition 倒地}的敏捷豁免中自动成功。"
+											]
+										},
+										{
+											"ENG_name": "Magma Falls",
+											"type": "entries",
+											"name": "岩浆瀑布",
+											"entries": [
+												"岩浆流从天花板落入地面。这些液态岩石之流对靠得太近者十分危险。触碰坠落岩浆的生物受到火焰伤害（如{@area 奥洛夫·尤拉克的特点|fafm|x}一节所述），且必须通过DC 18的敏捷豁免，否则失去平衡，摔倒{@condition 倒地}在岩浆流旁。如果豁免失败5点或更多，它会被卷入岩浆流，浸没在岩浆中，被冲进洞室下方流走的岩浆里。这股岩浆流三轮后最终汇入破火山口。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Salamander Wading Pool",
+									"type": "entries",
+									"page": 68,
+									"name": "3. 火蜥蜴涉水池",
+									"id": "faf3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一池翻泡的岩浆主宰着这个洞穴，地狱般的光照亮洞中，也照出池后向西南通出的另一条隧道。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四条{@creature 火蜥蜴|mm|火蜥蜴们}泡在约四尺深的岩浆中。它们会与任何入侵者战斗至死。用尾巴擒住对手的火蜥蜴会把目标按在岩浆池中，指望把猎物熔掉。"
+											]
+										},
+										{
+											"ENG_name": "Magma Pool",
+											"type": "entries",
+											"name": "岩浆池",
+											"entries": [
+												"对除火蜥蜴和彻鲁菲以外的所有生物，{@area 岩浆池|fafm|x}都是困难地形\u2014\u2014它们可是这里的常客。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Cavern of Pools",
+									"type": "entries",
+									"page": 68,
+									"name": "4. 水池洞窟",
+									"id": "faf4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个洞穴中有三个岩浆池。一条小径在池间蜿蜒，通向朝北离开洞穴的隧道。"
+											]
+										},
+										{
+											"ENG_name": "Spewing Lava",
+											"type": "entries",
+											"name": "喷涌岩浆",
+											"entries": [
+												"这里翻腾的岩浆池因火山活动加剧而汹涌。PC穿过房间经过每个池子时，掷一次{@dice d6}。掷出5\u20136时发生一次小喷发，岩浆溅满洞室。距喷发池10尺内的每个生物必须进行DC 18的敏捷豁免，失败者受到22（{@damage 4d10}）点火焰伤害，成功者伤害减半。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. The Herald's Cave",
+									"type": "entries",
+									"page": 68,
+									"name": "5. 先驱者之洞",
+									"id": "faf5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一池岩浆占据了这个洞穴的大半。一块岩石岛屿露出岩浆表面，岛上立着一块形似大王座的火山岩。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一位{@creature 火蜥蜴君主|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}端坐王座，两侧各有一名{@creature 火蜥蜴}护卫。这生物是彻鲁菲爪牙的统帅，彻鲁菲需要向山脚下的类人生物传话时，便由它充当先驱。因此，它懂得并能说{@language 通用语}。火蜥蜴君主及其护卫为保护主上战斗至死。这里的{@area 岩浆池|fafm|x}深三尺。与{@area 区域3|faf3|u}的火蜥蜴一样，这一带的火蜥蜴会试图擒住PC，把他们按进岩浆里。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Chamber of the Cherufe",
+									"type": "entries",
+									"page": 70,
+									"name": "6. 彻鲁菲之室",
+									"id": "faf6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这座巨大的洞穴地面呈阶梯状，向洞穴西端渐渐升高。洞室尽头，巨大的岩浆瀑布轰鸣着落入一池翻滚的岩浆。"
+											]
+										},
+										{
+											"ENG_name": "Creature",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"{@creature 彻鲁菲|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）就住在这间洞室。数百年与山脚下的类人生物打交道，彻鲁菲听得懂{@language 通用语}，还能说上几句。任何闯入都会激怒它，但入侵者的韧性也令它印象深刻，于是它给对方一次逃命的机会。彻鲁菲要求PC献上他们中的一员供它吞食。如果照办，它便放他们离开。如果PC拒绝，彻鲁菲会试图消灭所有入侵者，不留活口，必要时甚至追出破火山口。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"彻鲁菲数百年间积攒了一宝藏库的财物，取自陨落的敌人，也收自献祭。宝藏包括13,500 gp、1,800 pp、十二颗各值1,000 gp的红宝石、一套{@item 火焰抗性链甲|dmg|火焰抗性链甲}、一只{@item 命令水元素水钵}、一把{@item 焰舌长剑}，以及一支{@item 闪电标枪}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 70,
+							"entries": [
+								"彻鲁菲被消灭后，奥洛夫·尤拉克的火山活动大幅减弱。它仍是一座活火山，但喷发更可预测，也温和得多。当地人摆脱了纠缠数世纪的魔头，感激不已，为PC设宴庆功，提供免费食宿酒水，奉他们为英雄。",
+								"如果PC中有人在奥洛夫·尤拉克之役中牺牲，当地人和那位旅人（若与PC相熟）会凑集资财，免费帮PC复活逝者。当地人的其他恩惠或答谢，可由PC开口或由你酌情安排。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Towers of the Three Regents",
+					"type": "section",
+					"name": "三摄政王之塔",
+					"page": 71,
+					"entries": [
+						"{@b 一场供四到五名15级角色进行的冒险}",
+						{
+							"ENG_name": "Adventure Background",
+							"type": "entries",
+							"name": "冒险背景",
+							"page": 71,
+							"entries": [
+								"这三座塔曾是精类的显赫堡垒，以强大的魔法建成。塔分别献给不同的精类领主，是摄政王们的居所\u2014\u2014精类国王与王后不在时，便由他们代理行事。在精类内乱期间，一场对三塔的大举进攻使其沦为废墟。最近，三塔再度成为精类活动的中心。邪恶的精类王后觊觎传说沉眠于废墟中的一件古老圣物，派出了仆从前来寻找。",
+								{
+									"ENG_name": "Towers of the Three Regents in Midgard",
+									"type": "inset",
+									"name": "米德加德中的三摄政王之塔",
+									"entries": [
+										"这些塔可以放在精类曾掌权（或仍掌权）的任何地方。它们很适合作为一个被废弃精类宫廷的失落堡垒。就后者而言，把它们放在根内卡森林边缘的弗尔科夫丘陵，正好提供了这样的背景\u2014\u2014那片森林曾是夏日花园的所在地。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 71,
+							"entries": [
+								"以下方式可以用来把PC引到三摄政王之塔：",
+								{
+									"type": "list",
+									"items": [
+										"精类王后的宿敌的密使代表其主上联络PC。PC受雇找到三塔，深入其中，赶在王后的爪牙之前取得那件强大的魔法物品。",
+										"PC在探索该地区时偶然发现这片奇异的废墟，决定一探其中隐藏的奥秘。",
+										"在先前的一场冒险中，PC得到过一位贤者、法师或其他冒险者的日志。日志中藏着一件强大精类圣物的位置线索\u2014\u2014那件圣物在一场毁灭性战争中被藏起，以防落入敌手。PC终于解开了书中的线索，破译了书写所用的密码，找到了圣物的所在。",
+										"一位魔法古物收藏家相信她已找到一件稀有精类圣物的所在。她雇用PC搜索三塔，取回那件物品，以换取丰厚的报酬。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Towers of the Three Regents Features",
+							"type": "entries",
+							"name": "三摄政王之塔的特点",
+							"page": 71,
+							"entries": [
+								"三座高耸的尖塔并排而立，由绳桥相连。塔身皆有损毁。第一座塔顶已缺失。第二座大体完好，但塔顶大半开裂坍塌。最后一座塔只剩一半\u2014\u2014不可思议的是，留下的是上半截。底层已然坍塌，塔的其余部分悬在半空。试图从敞开的底部进入半塔的人，会发现那里有一股魔法之力固定着一切，并阻止人从塔的破损处进入（视作{@spell 力场墙}）。",
+								"第一座塔的塔基有一扇上锁的门。使用{@item 盗贼工具|phb}成功通过DC 20的敏捷检定可以开锁。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2-Lairs/map14.webp"
+									},
+									"imageType": "map"
+								},
+								{
+									"ENG_name": "1. The Angry Matron",
+									"type": "entries",
+									"page": 72,
+									"name": "1. 愤怒的老板娘",
+									"id": "totr1",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"房间中央立着一尊黑大理石雕像，刻画一位身披飘垂长裙的高挑女子。她精类的面容扭曲成怒容。右手握着一柄剑，裸露的剑刃由清澈的棱光水晶雕成。雕像把剑指向门口，仿佛在指责来者擅闯，并挑衅他们进入。楼梯沿塔的远侧盘旋通向上一层。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"这个房间由一队四名{@creature 法尔·多罗查|ToB2|法尔·多罗查}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）把守。作为王后的耳目，法尔·多罗查负责吓退好事者，而王后的精魂复仇者（见{@area 区域2|totr2|u}）则去探索残塔中更难到达的角落。如果战局不利，法尔·多罗查会且战且退，撤往{@area 区域2|totr2|u}。"
+											]
+										},
+										{
+											"ENG_name": "Statue of the Matron",
+											"type": "entries",
+											"name": "主母雕像",
+											"entries": [
+												"室内发生战斗时，雕像会移动着保护区域内的精类和精灵。它无法离开基座，但在先攻计数1时（先攻相同则后手），它会朝室内一名随机的非精类、非精灵生物挥剑。目标必须通过DC 17的敏捷豁免，否则受到11（{@damage 2d10}）点力场伤害。雕像可以被攻击和摧毁（AC 15；生命值45；免疫挥砍、毒素和心灵伤害）。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2. Squad Bivouac",
+									"type": "entries",
+									"page": 72,
+									"name": "2. 班组营地",
+									"id": "totr2",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个房间没有家具。唯一的出口是下到一层的楼梯和另一道通往塔上层的楼梯。墙上附着一些奇怪的有机构造，看似蜂巢或巢穴。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四名{@creature 精魂复仇者|ToB2|精魂复仇者}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）在此休整，轮换塔内更深处的精魂复仇者。这几名复仇者的躯体形似甲虫，黑亮的外壳泛着油润的虹彩。它们自信而高傲，战斗至死。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"精魂复仇者们的私财藏在蜂巢里，共计210 sp、105 ep、140 gp和10 pp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3. Deadly Lure",
+									"type": "entries",
+									"page": 72,
+									"name": "3. 致命诱饵",
+									"id": "totr3",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个空荡荡的房间中央立着一座底座。底座上摆着一只敞开的嵌珠宝匣，露出贵金属的熠熠光辉和宝石的璀璨光芒。天花板上装饰着金属尖刺，如铁冰锥般垂悬。"
+											]
+										},
+										"底座和它上面的奖品是一个魔法陷阱的扳机。底座上的宝匣散发着附魔，在生物心中灌输靠近并取走宝物的冲动。室内每个能看见宝匣的生物必须通过DC 18的感知豁免，否则必须用其每回合的移动接近宝匣并取走宝物。精灵和精类在此豁免中具有优势。附魔在该生物触碰宝匣或其内容物时终止。对受附魔生物成功施展{@spell 解除魔法}（DC 18）可移除附魔。",
+										{
+											"ENG_name": "Gravity Shift Trap",
+											"type": "entries",
+											"name": "重力反转陷阱",
+											"entries": [
+												"一旦有生物触碰宝匣或其内容物，陷阱便会触发，反转室内的重力。陷阱启动时，室内每个没有固定在地面上的生物向上坠落20尺，受到坠落伤害，并被尖刺造成11（{@damage 2d10}）点穿刺伤害。在下一轮先攻计数20时，效应终止，受影响的生物摔回房间地面，受到{@damage 1d6|跌落伤害}。陷阱在1分钟后重置。底座、宝匣和匣中物品不受此陷阱影响。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Prevention.",
+															"type": "itemSub",
+															"name": "预防。",
+															"entry": "能够感知魔法存在的法术或其他效应（如{@spell 侦测魔法}）可以显出底座周围惑控系和变化系魔法的光环。成功通过DC 18的感知（{@skill 察觉}）检定可以注意到天花板尖刺上的布屑和血迹，暗示着危险。对底座成功施展{@spell 解除魔法}（DC 17）可摧毁底座的强迫附魔和重力反转陷阱。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Falling Spikes Trap",
+											"type": "entries",
+											"name": "坠刺陷阱",
+											"entries": [
+												"如果宝匣被移离底座，底座内压力板上重量的消失会触发这个陷阱，数十根尖刺从天花板落下。室内每个5尺方格各落下一根尖刺，底座所在除外。每根尖刺对随机目标进行一次{@hit +8}的远程攻击（此次攻击检定不受视觉影响）。（若该格内没有目标，尖刺便不会命中任何东西。）被命中的目标受到11（{@damage 2d10}）点穿刺伤害。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Prevention.",
+															"type": "itemSub",
+															"name": "预防。",
+															"entry": "成功通过DC 18的智力（{@skill 调查}）或感知（{@skill 察觉}）检定可以注意到宝匣下方凹陷的板。距底座5尺内的生物进行此检定具有优势。使用{@item 盗贼工具|phb}成功通过DC 20的敏捷检定可以把压力板楔死，防止陷阱触发。或者，成功通过DC 17的敏捷（{@skill 巧手}）检定可以用等重（10磅）的物件换走宝匣，同样防止陷阱触发。任一检定失败都会触发陷阱。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"宝匣中装有100 gp、25 pp、六颗各值500 gp的海蓝宝石，以及一条坠着玉佩、价值250 gp的银链。宝匣本身镶满珠宝，价值75 gp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "4. Door Guard",
+									"type": "entries",
+									"page": 74,
+									"name": "4. 门卫",
+									"id": "totr4",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"风扫过这个房间，卷起灰尘与碎砾。塔的上层已荡然无存，此地露天向天。房间远侧的楼梯升向第一段平台，便止步于残壁边缘。北侧有一扇孤门。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一对{@creature 异常骑士|ToB2|异常骑士}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）在此守望\u2014\u2014他们是受精类王后\"祝福\"的人类\u2014\u2014受精类主人之命，阻挡任何试图穿过那扇门前往第一道桥和第二座塔的入侵者。这份独特的祝福还赋予他们60尺范围的{@sense 黑暗视觉}。这两个凶悍的家伙会死守岗位。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "5. First Crossing",
+									"type": "entries",
+									"page": 74,
+									"name": "5. 第一道桥",
+									"id": "totr5",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"门外，一道绳板桥横跨沟隙，尽头是第二座塔塔壁上的另一扇门。绳索在风中吱嘎摇曳。"
+											]
+										},
+										"绳索虽然吱嘎摇曳，桥却很结实。通往{@area 区域6|totr6|u}的门锁着，需要使用{@item 盗贼工具|phb}成功通过DC 20的敏捷检定才能打开。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一对躯体如蜻蜓的{@creature 精魂复仇者|ToB2|精魂复仇者}在第二座塔残破的塔顶上守望。如果它们发现有生物正在下方过桥，便会飞起攻击，保持空中姿态，用远程攻击对付对手。它们不会追进任何一座塔中。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "6. Ruined Tower",
+									"type": "entries",
+									"page": 74,
+									"name": "6. 残破之塔",
+									"id": "totr6",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"塔的内部大半坍塌，在塔基堆成巨大的碎砾堆。残破的岩沿附着在墙上，是四层楼板仅存的一切。部分楼梯也幸存下来，但没有一段能贯通整层。高处，北墙上嵌着一扇门。下方，巨大的蛛网在碎砾上方张开，横跨塔底。奇怪的是，破碎雕像的碎块在虚空中漂浮游移。"
+											]
+										},
+										"这座60尺高的塔内部经多次坍塌，楼板尽毁，只剩一个巨大的开放空间，以及坍塌楼层残存的破楼梯和岩沿。通往高处那扇门没有明确的路径，下方只有一大堆碎砾。飞行、攀爬或魔法似乎是仅有的上行手段。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"三只躯体如蜘蛛的{@creature 精魂复仇者|ToB2|精魂复仇者}潜伏在高处的岩沿上。战斗中，它们用移动与对手保持距离，以远程攻击打击入侵者，并指望魔法雕像碎块成为抵御敌人的额外屏障。这些精魂复仇者战斗至死。"
+											]
+										},
+										{
+											"ENG_name": "The Broken Statue",
+											"type": "entries",
+											"name": "破碎的雕像",
+											"entries": [
+												"曾立于此塔的魔法雕像已随塔内大部分结构一同被毁。残余的魔法让雕像的碎块漂浮在空中。室内一旦发生战斗，碎块便会加速，呼啸着穿过空中，在墙壁间弹射。在先攻计数1时（先攻相同则后手），两块雕像碎块飞向区域6中两名随机的非精类、非精灵生物。每个目标必须通过DC 17的敏捷豁免，否则受到11（{@damage 2d10}）点钝击伤害。如果目标豁免失败5点或更多，它会被撞下所站的岩沿、楼梯或墙面，坠到塔底。豁免失败5点或更多的飞行生物不会坠落。"
+											]
+										},
+										{
+											"ENG_name": "Web Nets",
+											"type": "entries",
+											"name": "蛛网",
+											"entries": [
+												"栖息此塔的精魂复仇者能吐丝结网，只是产丝太慢，无法像其他蜘蛛那样用作攻击。它们在通往{@area 区域5|totr5|u}的门下方织了网，用来接住并困住坠落的敌人。从下方爬过蛛网或从网上走过的生物，必须以半速移动，否则被蛛网{@condition 束缚}。被{@condition 束缚}的目标可以用一个动作进行DC 14的力量检定，成功便挣破蛛网。每5尺立方的蛛网也可以被攻击和摧毁（AC 5；生命值15；易受火焰伤害；免疫钝击、毒素和心灵伤害）。",
+												"当生物从上方坠入蛛网时，由于蛛网分担了部分冲击，其受到的坠落伤害至多减少15点。如果蛛网受到的损伤少于15点，坠落生物被蛛网{@condition 束缚}。如果蛛网受到15点或更多伤害，坠落生物会破网而出，再坠落20尺到塔底，受到更多坠落伤害。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "7. Second Crossing",
+									"type": "entries",
+									"page": 75,
+									"name": "7. 第二道桥",
+									"id": "totr7",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"另一道绳桥横跨虚空，尽头是第三座塔南墙上的一扇门。塔底本应在的位置只有一大堆碎砾，而塔的上半截却仿佛仍浮在原处，对失去下半截浑然不觉。"
+											]
+										},
+										"与{@area 区域5|totr5|u}的桥一样，这座桥吱嘎摇曳却很结实。通往{@area 区域8|totr8|u}的门锁着，需要使用{@item 盗贼工具|phb}成功通过DC 20的敏捷检定才能打开。",
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"如果{@area 区域5|totr5|u}的{@creature 精魂复仇者|ToB2|精魂复仇者}还活着，它们会再次袭扰任何试图过桥的入侵者。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "8. Mirror Magic",
+									"type": "entries",
+									"page": 75,
+									"name": "8. 镜中魔法",
+									"id": "totr8",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个房间的楼梯通向上一层。另一道楼梯向下延伸，却戛然而止，探入塔身悬浮残段下方令人目眩的虚空。房间中央立着四面装在华丽乌木框中的镜子。镜面全部朝向室内正中央的一点。"
+											]
+										},
+										{
+											"ENG_name": "Mirror Prison",
+											"type": "entries",
+											"name": "镜狱",
+											"entries": [
+												"进入四镜之间且同时被四面镜子映照的生物，必须通过DC 16的魅力豁免，否则被困入镜中，其存在被割裂在诸镜之间。被困期间，该生物{@condition 失能}，无限个它的倒影出现在镜面上，层层远去。镜子一次只能困住一个生物，且在困住生物期间无法移动。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "The Hidden Key.",
+															"type": "itemSub",
+															"name": "隐藏的钥匙。",
+															"entry": "被困生物无法被镜子外的攻击和其他效应选为目标，但它能感知困有其本质的那些倒影中的四周环境。感知这些环境时成功通过DC 15的感知（{@skill 察觉}）检定可以注意到所有倒影完全相同\u2014\u2014只有一面例外。那面倒影里，一把黑铁镶银、工艺华美的钥匙躺在镜间地面上。虽然被困生物的倒影在镜外可见，那把钥匙却不可见。成功通过DC 15的敏捷或智力检定，可以判明被困生物该如何移动，才能让那个特定倒影拾起钥匙。钥匙与生物一样被困镜中；但生物一旦获释，钥匙便归其所有。"
+														},
+														{
+															"ENG_name": "Freeing the Trapped Creature.",
+															"type": "itemSub",
+															"name": "解救被困者。",
+															"entry": "成功施展{@spell 解除魔法}（DC 19）可以解救被困生物，但只能让镜子的魔法失效一轮。镜子可以被攻击和摧毁（AC 13；生命值20；易受钝击伤害；免疫挥砍、毒素和心灵伤害）。一面镜子被摧毁时，被困生物受到11（{@damage 2d10}）点心灵伤害，但会部分复原。至少两面镜子被摧毁时，被困生物便获自由。"
+														},
+														{
+															"ENG_name": "The Key.",
+															"type": "itemSub",
+															"name": "钥匙。",
+															"entry": "若从镜牢中取回，这把钥匙可以打开{@area 区域10|totr10|u}的铁匣，并避开其魔法陷阱。"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "9. Stern Warden",
+									"type": "entries",
+									"page": 76,
+									"name": "9. 严厉的守卫者",
+									"id": "totr9",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"房间中央的高台上立着一尊白大理石雕像，刻画一位身着王袍、神情阴郁的精类男子。他右手握着一柄雕花法杖，姿态像在警告任何人不得靠近。房间远侧的楼梯升向塔顶。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"一只{@creature 运气汲取者|ToB2}（{@loader 万兽图志2|creature/Kobold Press; Tome of Beasts 2.json}）在此守卫。它近来触怒了精类王后，被派来协助王后在塔中的爪牙将功赎罪。运气汲取者试图以哀叹自身处境来让入侵者放松警惕，同时悄悄挪到有利位置，准备它的命运盛宴。它利用每一个可乘之机，包括攻击那些被雕像魔法{@condition 束缚}的人。",
+												"运气汲取者对精类王后怕得要死，宁可战死也不愿面对她的怒火。"
+											]
+										},
+										{
+											"ENG_name": "Statue of the Warden",
+											"type": "entries",
+											"name": "守卫者雕像",
+											"entries": [
+												"室内发生战斗时，雕像会移动着阻止他人接近{@area 区域10|totr10|u}。它无法离开基座，但在先攻计数1时（先攻相同则后手），它会朝距离通往{@area 区域10|totr10|u}的楼梯最近的生物举起法杖。雕像不会以精类或精灵为目标。目标必须通过DC 17的力量豁免，否则被推离{@area 区域10|totr10|u}的楼梯至多15尺，并被{@condition 束缚}1分钟。目标可以在其每回合结束时重复豁免，成功则终止自身的这一效应。雕像一次只能束缚一个生物，但每轮结束时仍可推拒其他目标。雕像可以被攻击和摧毁（AC 15；生命值45；免疫挥砍、毒素和心灵伤害）。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"运气汲取者随身带着两个钱袋，共有200 sp、150 gp和60 pp。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "10. Nest in the Pinnacle",
+									"type": "entries",
+									"page": 77,
+									"name": "10. 塔顶之巢",
+									"id": "totr10",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"塔顶的尖塔依然耸立，八角形屋顶远远高出地面。西半边房间里，扭曲的蜡质有机构造排成一道粗陋的新月。黑暗的孔洞星星点点地布满这种奇怪的物质。"
+											]
+										},
+										{
+											"ENG_name": "Creatures",
+											"type": "entries",
+											"name": "生物",
+											"entries": [
+												"四名{@creature 精魂复仇者|ToB2|精魂复仇者}眼下正居于此处，为首的是卡利里尔。这位躯体如蝎的精魂复仇者已经找到了王后命他取回的物品，却因打不开它而懊恼。如果有PC 明显携带钥匙，或让他察觉到钥匙在PC手中，他会发出最后通牒：交出钥匙，便可带着性命离开三塔。PC只有一次机会接受卡利里尔的提议。过了这村，卡利里尔便再不留情。他和他的精魂复仇者将为保护王后的珍宝战斗至死。另外三名复仇者中，一名躯体如蜘蛛，另两名躯体如黄蜂，可以飞行。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"type": "entries",
+											"name": "宝藏",
+											"entries": [
+												"卡利里尔和他的部下在搜索塔时收集了各式财宝，都放进了巨大的蜂巢。这批财富包括4,000 gp、600 pp、一对各值250 gp的黄金狮鹫书立、一只镶金天青石雕花瓶（价值750 gp），以及一口镶银黑铁匣。"
+											]
+										},
+										{
+											"ENG_name": "The Iron Casket",
+											"type": "entries",
+											"name": "铁匣",
+											"entries": [
+												"这只匣子长3尺、宽1尺、深6寸，由一道精巧的锁锁着。使用{@item 盗贼工具|phb}成功通过DC 25的敏捷检定可以开锁。若有人以{@area 区域8|totr8|u}的钥匙以外的任何方法尝试打开匣子，无论成败，匣子都会释放出一股阴影能量爆发。距匣10尺内的每个生物必须进行DC 18的体质豁免，失败者受到27（{@damage 5d10}）点冷冻伤害和27（{@damage 5d10}）点死灵伤害，成功者伤害减半。匣内衬垫中放着{@item 摄政王权杖|ToB2-Lairs}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"type": "entries",
+							"name": "结局",
+							"page": 77,
+							"entries": [
+								"如果PC把钥匙交给了卡利里尔，这位精类带着{@item 摄政王权杖|ToB2-Lairs}返回复命时，会把PC的所作所为禀报王后。PC赢得了邪恶精类王后的极大恩宠，代价却是让一件强大的魔法物品落入她手中。",
+								"反过来，如果PC杀了卡利里尔并取得{@item 摄政王权杖|ToB2-Lairs}，他们将招来精类王后的忌恨，她的爪牙可能对他们穷追不舍。如果PC是为王后的宿敌取回物品，他们便多了宿敌这些新盟友，日后宿敌或许还会召PC执行对抗王后的新任务。",
+								"无论PC作何抉择，他们都已卷入精类的政治漩涡，落入了邪恶精类王后直接的注视之中\u2014\u2014是福是祸，尚未可知。"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
