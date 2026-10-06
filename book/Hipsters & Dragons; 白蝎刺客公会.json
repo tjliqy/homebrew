@@ -1,0 +1,2455 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TWSAGU",
+				"abbreviation": "TWSAGU",
+				"full": "白蝎刺客公会",
+				"url": "https://www.dmsguild.com/product/224166/The-White-Scorpions-Assassins-Guild",
+				"version": "2024.07.02",
+				"authors": [
+					"Hipster & Dragon"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"color": "16c0dd"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1594364848,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "71f1490038"
+	},
+	"background": [
+		{
+			"ENG_name": "Trainee Assassin",
+			"name": "见习刺客",
+			"source": "TWSAGU",
+			"page": 9,
+			"skillProficiencies": [
+				{
+					"stealth": true,
+					"choose": {
+						"from": [
+							"athletics",
+							"acrobatics",
+							"history",
+							"religion",
+							"nature"
+						],
+						"count": 1
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true,
+					"poisoner's kit": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"短剑|phb",
+						{
+							"item": "匕首|phb",
+							"quantity": 2
+						},
+						{
+							"special": "木炭"
+						},
+						"爪钩|phb",
+						{
+							"item": "小包|phb",
+							"containsValue": 1000
+						},
+						"铁蒺藜(一包20个)|phb",
+						"普通服装|phb",
+						{
+							"item": "小包|phb",
+							"containsValue": 1000
+						},
+						{
+							"item": "夺命蝎毒（小瓶）|TWSAGU",
+							"quantity": 5
+						},
+						"钢之螫刺|TWSAGU"
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Skill Proficiencies:",
+							"type": "item",
+							"name": "技能熟练项：",
+							"entry": "{@skill 隐匿}，以及{@skill 运动}、{@skill 特技}、{@skill 历史}、{@skill 宗教}或{@skill 自然}其中之一。"
+						},
+						{
+							"ENG_name": "Tool Proficiencies:",
+							"type": "item",
+							"name": "工具熟练项：",
+							"entry": "{@item 易容工具|phb}、{@item 毒药工具|phb}"
+						},
+						{
+							"ENG_name": "Equipment:",
+							"type": "item",
+							"name": "装备：",
+							"entry": "武器黑漆（足够涂抹一把{@item 短剑|PHB}或两把{@item 匕首|PHB|匕首}）、面部黑漆（炭）、一个{@item 爪钩|PHB|爪钩}、{@item 铁蒺藜(一包20个)|PHB|铁蒺藜}（《玩家手册》第151页）、一套{@item 普通服装|phb}和一个装有10 gp的{@item 小包|phb}。此外还有一小瓶{@item 夺命蝎毒（小瓶）|TWSAGU|夺命蝎毒（5份剂量）}，以及一把带毒仓的\"{@item 钢之螫刺|TWSAGU}\"匕首（第6页）。"
+						}
+					]
+				},
+				{
+					"ENG_name": "Feature: Mentor",
+					"name": "特性：导师",
+					"type": "entries",
+					"entries": [
+						"白蝎成员往往与训练自己的师父之间有着特殊的羁绊，尤其因为师父是他们唯一直接且定期接触的教团成员之一。遇到困难时，他们可以向这位导师寻求建议。"
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"ENG_name": "Feature: Guild Membership",
+					"name": "特性：公会成员",
+					"type": "entries",
+					"entries": [
+						"招募和训练成员是一个缓慢而昂贵的过程，因此白蝎会竭尽全力保护自己的成员，尤其因为每名成员也是教团诸多机密的守护者。除非绝对必要，否则成员身份不会公开，因此寻找其他公会成员可能相当困难（见第3页\"秘密暗号\"一节）；但一旦找到另一位成员，就可以依赖对方获得庇护、食物甚至小额借款。建有正义之神提尔神殿的城镇往往是安全的避难所，因为这些神殿的祭司有时本身就是蝎爪的成员。",
+						"公会成员身份也伴随着义务：正如你可以寻求庇护或帮助，当其他成员求助时，你也必须随时准备伸出援手。此外，成员应将收入的20%捐献给公会（通常是把钱留在提尔神殿）。他们还必须随时准备执行死亡敕令，并在接到通知后立刻赶赴大密会（见第7页\"职责、规则与规章\"）。"
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"ENG_name": "Feature: Animal Poison Resistance",
+					"name": "特性：动物毒素抗性",
+					"type": "inset",
+					"entries": [
+						"除对夺命蝎毒免疫外，多年服食这种毒素的经历，也使白蝎成员在对抗天然动物与野兽（包括巨型野兽）之毒素的豁免检定中具有优势。",
+						"（他们仍需如常对抗所有魔法毒素，例如卓尔毒、双足飞龙毒和紫虫毒，以及天然植物毒素。）"
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"ENG_name": "Suggested Characteristics",
+					"name": "建议人物特征",
+					"type": "entries",
+					"entries": [
+						"大多数白蝎侍从都是严肃认真之人，其人生观很大程度上由教团的戒律所决定。但也有些人始终无法完全压制自己的怒火、激情与欲望，在虔心侍奉教团与追随天性冲动之间苦苦挣扎。有些人则相信自己可以兼顾二者。",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"特点"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"训练就是我的生命。我全身心投入于实现自己的使命。"
+								],
+								[
+									"2",
+									"我怨恨训练的种种要求，并畏惧即将到来的入门仪式。"
+								],
+								[
+									"3",
+									"训练赋予了我钢铁般的纪律。无论情况如何，我都能保持冷静。"
+								],
+								[
+									"4",
+									"不公之事令我怒火中烧。而我一旦发怒，就会动手。"
+								],
+								[
+									"5",
+									"我时刻警惕危险。我会不断观察周围环境，并且总是背靠墙壁而坐。"
+								],
+								[
+									"6",
+									"我很难与人建立联系。迄今为止，我遇到的每个人都占过我的便宜。"
+								],
+								[
+									"7",
+									"有人毁掉了我的人生。我的心被炽烈的复仇之梦吞噬。"
+								],
+								[
+									"8",
+									"言语毫无意义。我是个行动派。"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"理念"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"{@b 正义。}我痛恨看到不义之事逍遥法外。（善良）"
+								],
+								[
+									"2",
+									"{@b 复仇。}为了个人复仇，我不惜一切代价。（守序）"
+								],
+								[
+									"3",
+									"{@b 至善。}我献出自己的人生，只为让社会变得更美好。（混乱）"
+								],
+								[
+									"4",
+									"{@b 秩序。}我的职责是击倒那些给人类国度带来混乱与无政府状态之人。（邪恶）"
+								],
+								[
+									"5",
+									"{@b 命运。}诸神赋予了我使命，我绝不会退缩。（中立）"
+								],
+								[
+									"6",
+									"{@b 死亡。}死亡令我着迷，身为死亡使者让我得到阴沉的满足。（任意）"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"牵挂"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"教团把我从街头救出，给了我人生的目标。我欠他们一切。"
+								],
+								[
+									"2",
+									"我的导师就像我从未拥有过的母亲/父亲。"
+								],
+								[
+									"3",
+									"我唯一的牵挂是那个伤害过我的人。不把对方送进坟墓，我绝不会停歇。"
+								],
+								[
+									"4",
+									"我有一个年幼的手足，当初不得不将之留在可怕的处境中。我一定会找到并拯救对方。"
+								],
+								[
+									"5",
+									"正义之神是我的守护神。我已献出一生侍奉他。"
+								],
+								[
+									"6",
+									"我有一段隐秘的爱情，尽管教团明令禁止。"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"缺陷"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"我曾遭受如此恶劣的对待，以至于不知如何信任与沟通。"
+								],
+								[
+									"2",
+									"我太执着于自己的目标，无法专注于其他任何事情。"
+								],
+								[
+									"3",
+									"我不相信怜悯或仁慈，只相信正义。"
+								],
+								[
+									"4",
+									"我缺乏耐心，自认为已经准备就绪，哪怕导师并非这么说。"
+								],
+								[
+									"5",
+									"杀戮这一行不是胆小鬼能干的。难怪事后我得来上一杯，或者五杯。"
+								],
+								[
+									"6",
+									"我恐惧多疑。每晚都会在冷汗中惊醒。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"ENG_name": "Trainee Assassin",
+						"name": "见习刺客",
+						"type": "entries",
+						"entries": [
+							"白蝎成员出身各异，有贵族、士兵、街头孤儿，甚至还有罪犯\u2014\u2014他们被招募进来，是为了一个更崇高的目标而改过自新。在游戏规则上，这些角色通常以普通1级游荡者开局，直到冒险生涯的后期才加入公会，开始接受刺客训练（通常需要积累足够经验值达到3级，因为这是可以选择刺客范型的等级\u2014\u2014见《玩家手册》第97页）。",
+							"不过，如果玩家提前知道自己想选择游荡者的刺客范型，也可以从1级起就选择这个特制的白蝎见习刺客背景。",
+							"选择此背景的角色被视为正在白蝎公会中接受训练，并已从导师那里学到了隐匿与杀戮之术的一些重要技能。他们很可能年少时就被教团招募，如今必须以冒险者的身份闯荡世界，积累宝贵的经验，才能完成最后的训练。"
+						]
+					},
+					{
+						"ENG_name": "White Scorpion Trainee Assassin",
+						"name": "白蝎见习刺客",
+						"type": "entries",
+						"entries": [
+							"你在年幼时便被招募为潜在的白蝎刺客，迄今为止的人生都致力于训练，以成为教团的正式成员（即便这个教团的名号与详情至今仍对你保密）。",
+							"在你眼中，这个世界丑陋不堪，充斥着混乱与不义；在为教团生活做准备之前，它带给你的只有苦难与折磨。然而教团给了你目标、纪律、自信与力量。你决心完成训练，在入门仪式中幸存下来，并成长为正义的武器，实现自己的使命。"
+						]
+					},
+					{
+						"ENG_name": "Credits",
+						"name": "制作组",
+						"type": "inset",
+						"entries": [
+							"参考{@link 嬉皮士与龙|https://www.dmsguild.com/product/224166/The-White-Scorpions-Assassins-Guild}。转载至他处请注明出处。"
+						]
+					}
+				]
+			}
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Deathstalker Scorpion Venom (vial)",
+			"name": "夺命蝎毒（小瓶）",
+			"source": "TWSAGU",
+			"type": "GV|DMG",
+			"rarity": "uncommon",
+			"reqAttune": false,
+			"wondrous": false,
+			"weight": 1,
+			"value": 3000,
+			"poison": true,
+			"entries": [
+				"{@b 注：这是一种毒药，可经摄入、接触或创伤方式施用}",
+				"夺命蝎毒采自一种同名的高攻击性蝎子。这种蝎子的强力螫刺甚至能麻痹中等体型的哺乳动物，并能在大约数秒内杀死它们体型较小的猎物（昆虫、小鼠和两栖动物）。",
+				"这种常见蝎子通常呈浅色或沙色。它们栖息于沙漠、灌木丛和温带森林中；在这些地形搜索{@dice 1d6}小时后，可通过DC 15的智力（自然）或感知（求生）检定找到它们。检定成功即可找到{@dice 1d4}只{@monster 蝎子|MM}。从一只活蝎身上提炼一份高浓度剂量需要一天时间，且必须驱使活蝎在24小时内排毒四次。刚死不久的蝎子则可提炼半份剂量。要成功执行此项操作，请遵循《城主指南》第258页的采毒规则，每份剂量进行一次检定。",
+				"夺命蝎毒是一种创伤毒药，必须进入血液才能生效，通常通过涂抹在挥砍或穿刺武器上来实现。受夺命蝎毒影响的生物必须进行DC 13的体质豁免检定。豁免失败者将麻痹至多1分钟，并受到1d6点毒素伤害。受影响的生物可以在其每个回合结束时重复豁免，成功则不再麻痹。若受害者初次豁免成功，则只受一半伤害，且无其他不良效应。",
+				"由于为入门仪式所做的准备（见第7页），白蝎的密探对夺命蝎毒的效应免疫。",
+				{
+					"ENG_name": "Optional Poison Rule",
+					"type": "inset",
+					"name": "可选用毒规则",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								"{@b 剂量加倍}：一分钟内第二次被同一毒药击中的生物，此后对抗该毒药效应的豁免检定具有劣势。",
+								"{@b 体型事关紧要}：大型生物对抗任何非魔法毒药的豁免检定具有优势（考虑到大型生物的体重可能是中型生物的3到5倍，仅凭更高体质带来的益处，不足以体现这方面的真实感）；而在DM的裁定下，巨型与超巨型生物对正常剂量的非魔法毒药免疫。微型生物的毒素豁免检定则具有劣势。"
+							]
+						}
+					]
+				}
+			],
+			"poisonTypes": [
+				"伤害",
+				"服用",
+				"接触"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/TWSAGU/sHrjK7V.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"ENG_name": "Credits",
+						"name": "制作组",
+						"type": "inset",
+						"entries": [
+							"参考{@link 嬉皮士与龙的规则|https://www.dmsguild.com/product/224166/The-White-Scorpions-Assassins-Guild}。转载至他处请注明出处。",
+							"美术与物品设计来自{@link 更多投掷物|https://www.reddit.com/r/UnearthedArcana/comments/cz6208/more_throwables_four_new_throwable_items_akin_to/}。转载至他处请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Sting of Steel",
+			"name": "钢之螫刺",
+			"source": "TWSAGU",
+			"page": 9,
+			"baseItem": "匕首|PHB",
+			"type": "M",
+			"tier": "主要",
+			"rarity": "uncommon",
+			"weight": 1,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"entries": [
+				"如果侍从在群蝎之棺仪式中幸存下来，便会获赠一把特制的匕首，称为其\"螫刺\"。这把匕首的柄内藏有毒仓，刀身中央有一道从柄底延伸至刀尖的血槽，刀尖处细密的切口网络有助于在命中后将毒液散布开来。",
+				"用拇指按下柄身内侧的按钮，便会将一份毒药释放到刀刃上（在游戏规则中这属于自由动作，因为完成它只需一瞬）。刀刃上的毒液会在一分钟后干涸，或持续到持用者成功命中一次攻击为止。毒仓一次可容纳五份毒药，并且可以轻松补充。",
+				"有些螫刺以宝石或蝎形雕刻华丽装饰，另一些则完全朴素。许多螫刺多年来在刺客之间代代相传，因此不少已有数百年历史。",
+				"遗失自己的刀刃既被视为奇耻大辱，也是对教团保密工作的威胁。任何此类事件都必须立即上报正义内阁，并应不惜一切代价寻回武器。",
+				{
+					"type": "list",
+					"style": "list-no-bullets",
+					"items": [
+						"{@b 注}：使用\"螫刺\"命中时，夺命蝎毒的豁免DC从13提升到15，因为这把特制刀刃能最大程度地让毒液进入受害者的血液。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/TWSAGU/t6ohnrB.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"ENG_name": "Credits",
+						"name": "制作组",
+						"type": "inset",
+						"entries": [
+							"参考{@link 嬉皮士与龙的规则|https://www.dmsguild.com/product/224166/The-White-Scorpions-Assassins-Guild}。转载至他处请注明出处。",
+							"美术与物品设计来自{@link 更多投掷物|https://www.reddit.com/r/UnearthedArcana/comments/cz6208/more_throwables_four_new_throwable_items_akin_to/}。转载至他处请注明出处。"
+						]
+					}
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Granit The Pious",
+			"name": "虔诚者格拉尼特",
+			"shortName": "虔诚者格拉尼特",
+			"source": "TWSAGU",
+			"page": 14,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half orc"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item +1 链甲衫}"
+					]
+				}
+			],
+			"hp": {
+				"special": "101"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 12,
+			"wis": 17,
+			"cha": 8,
+			"save": {
+				"wis": "+8",
+				"cha": "+4"
+			},
+			"skill": {
+				"religion": "+11",
+				"insight": "+13",
+				"stealth": "+11",
+				"athletics": "+13",
+				"intimidation": "+9",
+				"survival": "+8",
+				"medicine": "+8",
+				"nature": "+13"
+			},
+			"passive": 13,
+			"languages": [
+				"通用语",
+				"兽人语",
+				"矮人语",
+				"蝎语"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"格拉尼特是6级施法者。他的施法属性是感知（法术豁免{@dc 16}，法术攻击命中+8）。格拉尼特准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 修复术}",
+								"{@spell 抵抗术}",
+								"{@spell 维生术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell 命令术}",
+								"{@spell 侦测善恶}",
+								"{@spell 光导箭}",
+								"{@spell 鉴定术}",
+								"{@spell 虔诚护盾}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell 卜筮术}",
+								"{@spell 定身类人}",
+								"{@spell 沉默术}",
+								"{@spell 暗示术}",
+								"{@spell 诚实之域}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell 解除魔法}",
+								"{@spell 回避侦测}",
+								"{@spell 回生术}",
+								"{@spell 死者交谈}",
+								"{@spell 灵体卫士}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"你懂得如何敏锐打击并利用敌人的疏忽。每回合一次，如果你的攻击检定具有优势，你就可以在以攻击命中一个生物时，对其造成额外的{@damage 4d6}伤害。此次攻击必须使用灵巧武器或远程武器。",
+						"如果目标的另一敌人距其5尺内、该敌人未处于失能状态、且你的攻击检定没有劣势，你便无须具有优势也能发动偷袭。"
+					]
+				},
+				{
+					"ENG_name": "Cunning Action",
+					"name": "灵巧动作",
+					"entries": [
+						"你的机敏与敏捷让你能够快速移动和行动。在战斗中，你的每个回合都可以采取一个附赠动作。该动作只能用于疾行、脱离或躲藏。"
+					]
+				},
+				{
+					"ENG_name": "Assassinate",
+					"name": "暗杀",
+					"entries": [
+						"当你抢得敌人先机时最为致命。对战斗中尚未轮到行动的生物，你的攻击检定具有优势。此外，你对处于{@status 突袭}状态的生物的任何命中都是重击。"
+					]
+				},
+				{
+					"ENG_name": "Uncanny Dodge",
+					"name": "直觉闪避",
+					"entries": [
+						"当一个你能看见的攻击者以攻击命中你时，你可以用你的反应使该攻击对你的伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Evasion",
+					"name": "反射闪避",
+					"entries": [
+						"你可以灵巧地躲开某些范围效应，例如红龙的炽烈吐息或冰风暴法术。当你受到一个允许进行敏捷豁免以将伤害减半的效应影响时，若你豁免成功则不受任何伤害，失败则只受一半伤害。"
+					]
+				},
+				{
+					"ENG_name": "Channel Divinity: Knowledge of the Ages",
+					"name": "引导神力：岁月知识",
+					"entries": [
+						"你可以使用引导神力来汲取神圣的知识之泉。用一个动作，你选择一项技能或工具。在接下来的10分钟内，你获得所选技能或工具的熟练项。"
+					]
+				},
+				{
+					"ENG_name": "Channel Divinity: Destroy Undead",
+					"name": "引导神力：摧毁不死生物",
+					"entries": [
+						"当一个挑战等级1/2或更低的不死生物在你的驱散亡灵特性豁免中失败时，该生物将被立刻摧毁。"
+					]
+				},
+				{
+					"ENG_name": "Channel Divinity: Read Thoughts",
+					"name": "引导神力：读心",
+					"entries": [
+						"你可以使用引导神力来读取一个生物的思想，并借助对其心灵的访问来命令它。",
+						"用一个动作，你指定60尺内一个你能看见的生物。该生物必须进行一次感知豁免。若该生物豁免成功，你在完成一次长休前不能再次对它使用此特性。",
+						"若该生物豁免失败，则当它处于你60尺内时，你可以阅读其表层思想（即其心中最突出的念头、当前情绪的反映以及正在积极思考的内容）。此效应持续1分钟。",
+						"在此期间，你可以用你的动作终止此效应，并对该生物施放暗示术而不消耗法术位。目标对该法术的豁免检定自动失败。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"格拉尼特进行两次攻击：一次使用他的+2钉头锤，另一次（附赠动作）使用他的{@condition 中毒}匕首。"
+					]
+				},
+				{
+					"ENG_name": "+2 Morning Star",
+					"name": "+2 钉头锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及5尺，单一目标。{@h}9（{@damage 1d8 + 5}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Poisoned dagger",
+					"name": "淬毒匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}2（{@damage 1d4}）穿刺伤害。目标生物必须进行{@dc 15}体质豁免，失败则麻痹{@dice 1d4}轮并受到{@damage 1d6}毒素伤害（豁免成功则减半）。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
+			"fluff": {
+				"entries": [
+					"格拉尼特身高近7尺，鼻梁断过、皮肤深灰、剃着光头，形象令人生畏。他出生于宝剑山脉山麓中的一座村庄，母亲是人类\u2014\u2014他是一支劫掠村庄的兽人战团暴行的产物。母亲的丈夫在她眼前被杀，而格拉尼特则孕育于该氏族战争酋长的暴行。",
+					{
+						"ENG_name": "Granit's Traits",
+						"name": "格拉尼特的特征",
+						"type": "entries",
+						"entries": [
+							"{@b 理念。}我将竭尽所能惩罚邪恶。",
+							"{@b 牵挂。}我是提尔的仆人，奉行他的意志。",
+							"{@b 缺陷。}犯下重罪之人绝无第二次机会。"
+						]
+					},
+					{
+						"ENG_name": "A Cleric First",
+						"name": "首先是牧师",
+						"type": "entries",
+						"entries": [
+							"尽管如此，他仍是在同一个村子里被慈爱地抚养长大。后来，尚且年幼的他前往深水城，想成为正义之神提尔的祭司。尽管他研习多年，并展现出与神明沟通的罕见天赋，神殿的大祭司却认定他的兽人之怒会阻碍牧师生涯，于是将他推荐给了白蝎。白蝎派来一位导师，以教团之道训练他。"
+						]
+					},
+					{
+						"ENG_name": "Family Business",
+						"name": "家族旧业",
+						"type": "entries",
+						"entries": [
+							"格拉尼特并非教团中天资最高的成员，但钢铁般的意志与决心让他完成了训练，并无畏地通过了长夜。不过，他的初螫花费了一年多才完成\u2014\u2014他跨越诸多森林与山脉，追踪到了父亲的氏族。他等待父亲落单之时，将一支浸满夺命蝎毒的箭射入其大腿，然后面对面地割开了他的喉咙。"
+						]
+					},
+					{
+						"ENG_name": "Guided by God",
+						"name": "神之引导",
+						"type": "entries",
+						"entries": [
+							"格拉尼特与提尔有着特殊的羁绊（他每日向提尔祈祷），加上对教团的奉献，使他成为白蝎无价的栋梁：他堪称湮灭的左膀右臂。心魔已被驯服的他内心平和，人生使命便是以阿尔提尔之名尽可能纠正世间的错事。"
+						]
+					},
+					{
+						"ENG_name": "Resentment",
+						"name": "积怨",
+						"type": "entries",
+						"entries": [
+							"格拉尼特的兽人血统使他遭到教团中一些人的怨恨，他们认为他既是怪物又是私生子；而许多人相信他将是候任的大宗主，这种怨恨因此愈发深重。"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Oblivion",
+			"name": "湮灭",
+			"shortName": "湮灭",
+			"source": "TWSAGU",
+			"page": 12,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half drow"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +2 镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"special": "100"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 10,
+			"int": 16,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"dex": "+11",
+				"int": "+9",
+				"wis": "+8"
+			},
+			"skill": {
+				"sleight of hand": "+17",
+				"deception": "+14",
+				"insight": "+14",
+				"perception": "+8",
+				"religion": "+9",
+				"stealth": "+17",
+				"history": "+9",
+				"athletics": "+7"
+			},
+			"senses": [
+				"黑暗视觉 90 尺"
+			],
+			"passive": 18,
+			"languages": [
+				"通用语",
+				"精灵语",
+				"卓尔语",
+				"蝎语"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"湮灭是3级施法者。他的施法属性是智力（法术豁免{@dc 17}，法术攻击命中+9）。湮灭准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 舞光术}",
+								"{@spell 法师之手}",
+								"{@spell 传讯术}",
+								"{@spell 次级幻象}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell 通晓语言}",
+								"{@spell 侦测魔法}",
+								"{@spell 易容术}",
+								"{@spell 护盾术}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell 隐形术}",
+								"{@spell 迷踪步}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Alert",
+					"name": "警觉",
+					"entries": [
+						"湮灭的先攻获得+10加值。他在意识清醒时不会处于{@status 突袭}状态，且生物不会因对他隐藏而在攻击检定上获得优势。"
+					]
+				},
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"你懂得如何敏锐打击并利用敌人的疏忽。每回合一次，如果你的攻击检定具有优势，你就可以在以攻击命中一个生物时，对其造成额外的{@damage 9d6}伤害。此次攻击必须使用灵巧武器或远程武器。",
+						"如果目标的另一敌人距其5尺内、该敌人未处于失能状态、且你的攻击检定没有劣势，你便无须具有优势也能发动偷袭。"
+					]
+				},
+				{
+					"ENG_name": "Cunning Action",
+					"name": "灵巧动作",
+					"entries": [
+						"你的机敏与敏捷让你能够快速移动和行动。在战斗中，你的每个回合都可以采取一个附赠动作。该动作只能用于疾行、脱离或躲藏。"
+					]
+				},
+				{
+					"ENG_name": "Assassinate",
+					"name": "暗杀",
+					"entries": [
+						"当你抢得敌人先机时最为致命。对战斗中尚未轮到行动的生物，你的攻击检定具有优势。此外，你对处于{@status 突袭}状态的生物的任何命中都是重击。"
+					]
+				},
+				{
+					"ENG_name": "Uncanny Dodge",
+					"name": "直觉闪避",
+					"entries": [
+						"当一个你能看见的攻击者以攻击命中你时，你可以用你的反应使该攻击对你的伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Evasion",
+					"name": "反射闪避",
+					"entries": [
+						"你可以灵巧地躲开某些范围效应，例如红龙的炽烈吐息或冰风暴法术。当你受到一个允许进行敏捷豁免以将伤害减半的效应影响时，若你豁免成功则不受任何伤害，失败则只受一半伤害。"
+					]
+				},
+				{
+					"ENG_name": "Infiltration Expertise",
+					"name": "专业渗透",
+					"entries": [
+						"你能够万无一失地为自己编造虚假身份。你需要花费七天时间和25 gp来为某个身份建立其经历、职业与人际背景。你不能冒用属于他人的身份。例如，你可以获取合适的衣物、介绍信和看似官方的证明，把自己塑造成某座遥远城市商会成员的身份，从而打入其他富商的圈子。",
+						"此后，如果你将这个新身份当作伪装加以采用，其他生物便会相信你就是那个人，直到出现显而易见的理由否定这一点。"
+					]
+				},
+				{
+					"ENG_name": "Reliable Talent",
+					"name": "可靠才能",
+					"entries": [
+						"你已经将自己擅长的技能锤炼至近乎完美。每当你进行一次可以加上熟练加值的属性检定时，都可以把{@dice d20}掷出的9或更低结果视为10。"
+					]
+				},
+				{
+					"ENG_name": "Impostor",
+					"name": "冒充者",
+					"entries": [
+						"你获得了惟妙惟肖地模仿他人言语、笔迹与举止的能力。你必须花费至少三个小时研究此人行为的这三个方面：聆听其言语、查验其笔迹、观察其习惯动作。",
+						"寻常的观察者无法识破你的伪装。如果警觉的生物起了疑心，你为避免暴露而进行的任何魅力（欺瞒）检定都具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Blindsense",
+					"name": "听声辨位",
+					"entries": [
+						"只要你能听见，你就能察觉10尺内任何隐藏或{@condition 隐形}生物的位置。"
+					]
+				},
+				{
+					"ENG_name": "Death Strike",
+					"name": "致命一击",
+					"entries": [
+						"你已成为速死之术的大师。当你攻击一个处于{@status 突袭}状态的生物并命中时，它必须进行一次体质豁免（{@dc 19}）。豁免失败者，你对该生物的攻击伤害加倍。"
+					]
+				},
+				{
+					"ENG_name": "Equipment: Magical Items",
+					"name": "装备：魔法物品",
+					"entries": [
+						"湮灭装备了以下魔法物品：",
+						{
+							"type": "list",
+							"items": [
+								"{@item 心灵护盾戒指|DMG}",
+								"{@item 水上行走戒指|DMG}",
+								"{@item 杂货法袍|DMG}",
+								"{@item 气化形体药水|DMG}"
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"湮灭进行两次攻击：一次使用他的+3短剑，另一次（附赠动作）使用他的{@condition 中毒}匕首。或者用他的手弩进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "+3 Shortsword",
+					"name": "+3 短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及5尺，单一目标。{@h}11（{@damage 1d6 + 8}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Poisoned Dagger",
+					"name": "淬毒匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及5尺，单一目标。{@h}2（{@damage 1d4}）穿刺伤害。目标生物必须进行{@dc 15}体质豁免，失败则麻痹1分钟并受到{@damage 1d6}毒素伤害。该生物可以在其下个回合结束时重复豁免。"
+					]
+				},
+				{
+					"ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 11}，射程30/120尺，单一目标。{@h}8（{@damage 1d6 + 5}）穿刺伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"attachedItems": [
+				"+3 短剑|dmg",
+				"手弩|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"entries": [
+					"白蝎的大宗主也是教团中身世最成谜的成员。湮灭担任大宗主已近一个世纪（有人说实际上已超过一个世纪！），许多成员私下议论他必有精灵血统\u2014\u2014一些老成员甚至相信他是从幽暗地域叛逃而来的卓尔。即便主持正义内阁时，湮灭也从不摘下兜帽，面孔永远隐在阴影之中。而且，偶一闪现的光亮所照出的他的五官，似乎每一刻都不尽相同。尽管略有跛足，他行动起来却有着盛年男子的从容与优雅。",
+					{
+						"ENG_name": "Oblivion's Traits",
+						"name": "湮灭的特征",
+						"type": "entries",
+						"entries": [
+							"{@b 理念。}来世的正义交给诸神，人间的正义必须由人执行。",
+							"{@b 牵挂。}我将竭尽所能侍奉教团，直到咽下最后一口气。",
+							"{@b 缺陷。}为了教团，必须做出艰难的牺牲。"
+						]
+					},
+					{
+						"ENG_name": "Dangers of Success",
+						"name": "成功的隐患",
+						"type": "entries",
+						"entries": [
+							"湮灭不知疲倦地工作，力图让教团重现昔日荣光。如今在役受训刺客的数量达到了几个世纪以来的最高点，他们每年执行的正义敕令数量也是如此。然而这份成功引来了犯罪集团的注意，例如散塔林会\u2014\u2014其部分成员已成为死亡敕令的牺牲品。虽然白蝎日渐显赫的名声让许多为非作歹者在私自动用私刑前三思，却也让教团近来树敌无数。"
+						]
+					},
+					{
+						"ENG_name": "Rumoured Legacy",
+						"name": "传闻中的往事",
+						"type": "entries",
+						"entries": [
+							"关于湮灭的早年经历，人们几乎一无所知，但据传他曾诛杀塔林\u2014\u2014一个约60多年前率领雇佣军团肆虐卡林珊的堕落圣武士。那位圣武士在自己的堡垒中、在部下的环绕下，死于单单一处匕首伤。当夜没有一个士兵声称见过哪怕一道影子。据传湮灭还刺杀过一名吸血鬼和一只夺心魔。"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Ralf Foxal (The Whistler)",
+			"name": "拉尔夫·福克萨尔（哨客）",
+			"shortName": "拉尔夫·福克萨尔（哨客）",
+			"source": "TWSAGU",
+			"page": 13,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Halfling Stout"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +2 镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"special": "101"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 10,
+			"dex": 20,
+			"con": 14,
+			"int": 14,
+			"wis": 8,
+			"cha": 16,
+			"save": {
+				"dex": "+10",
+				"int": "+7"
+			},
+			"skill": {
+				"acrobatics": "+15",
+				"sleight of hand": "+10",
+				"perception": "+9",
+				"stealth": "+15",
+				"history": "+7",
+				"persuasion": "+13"
+			},
+			"passive": 19,
+			"languages": [
+				"通用语",
+				"半身人语",
+				"矮人语",
+				"蝎语"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Alert",
+					"name": "警觉",
+					"entries": [
+						"拉尔夫的先攻获得+10加值。他在意识清醒时不会处于{@status 突袭}状态，且生物不会因对他隐藏而在攻击检定上获得优势。"
+					]
+				},
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"你懂得如何敏锐打击并利用敌人的疏忽。每回合一次，如果你的攻击检定具有优势，你就可以在以攻击命中一个生物时，对其造成额外的{@damage 7d6}伤害。此次攻击必须使用灵巧武器或远程武器。",
+						"如果目标的另一敌人距其5尺内、该敌人未处于失能状态、且你的攻击检定没有劣势，你便无须具有优势也能发动偷袭。"
+					]
+				},
+				{
+					"ENG_name": "Cunning Action",
+					"name": "灵巧动作",
+					"entries": [
+						"你的机敏与敏捷让你能够快速移动和行动。在战斗中，你的每个回合都可以采取一个附赠动作。该动作只能用于疾行、脱离或躲藏。"
+					]
+				},
+				{
+					"ENG_name": "Assassinate",
+					"name": "暗杀",
+					"entries": [
+						"当你抢得敌人先机时最为致命。对战斗中尚未轮到行动的生物，你的攻击检定具有优势。此外，你对处于{@status 突袭}状态的生物的任何命中都是重击。"
+					]
+				},
+				{
+					"ENG_name": "Uncanny Dodge",
+					"name": "直觉闪避",
+					"entries": [
+						"当一个你能看见的攻击者以攻击命中你时，你可以用你的反应使该攻击对你的伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Evasion",
+					"name": "反射闪避",
+					"entries": [
+						"你可以灵巧地躲开某些范围效应，例如红龙的炽烈吐息或冰风暴法术。当你受到一个允许进行敏捷豁免以将伤害减半的效应影响时，若你豁免成功则不受任何伤害，失败则只受一半伤害。"
+					]
+				},
+				{
+					"ENG_name": "Infiltration Expertise",
+					"name": "专业渗透",
+					"entries": [
+						"你能够万无一失地为自己编造虚假身份。你需要花费七天时间和25 gp来为某个身份建立其经历、职业与人际背景。你不能冒用属于他人的身份。例如，你可以获取合适的衣物、介绍信和看似官方的证明，把自己塑造成某座遥远城市商会成员的身份，从而打入其他富商的圈子。",
+						"此后，如果你将这个新身份当作伪装加以采用，其他生物便会相信你就是那个人，直到出现显而易见的理由否定这一点。"
+					]
+				},
+				{
+					"ENG_name": "Reliable Talent",
+					"name": "可靠才能",
+					"entries": [
+						"你已经将自己擅长的技能锤炼至近乎完美。每当你进行一次可以加上熟练加值的属性检定时，都可以把{@dice d20}掷出的9或更低结果视为10。"
+					]
+				},
+				{
+					"ENG_name": "Impostor",
+					"name": "冒充者",
+					"entries": [
+						"你获得了惟妙惟肖地模仿他人言语、笔迹与举止的能力。你必须花费至少三个小时研究此人行为的这三个方面：聆听其言语、查验其笔迹、观察其习惯动作。",
+						"寻常的观察者无法识破你的伪装。如果警觉的生物起了疑心，你为避免暴露而进行的任何魅力（欺瞒）检定都具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Blindsense",
+					"name": "听声辨位",
+					"entries": [
+						"只要你能听见，你就能察觉10尺内任何隐藏或{@condition 隐形}生物的位置。"
+					]
+				},
+				{
+					"ENG_name": "Poison Resistance",
+					"name": "毒素抗性",
+					"entries": [
+						"作为敦实半身人，哨客对抗毒素的豁免检定具有优势，且对毒素伤害具有抗性。"
+					]
+				},
+				{
+					"ENG_name": "Equipment: Magical Items",
+					"name": "装备：魔法物品",
+					"entries": [
+						"拉尔夫装备了以下魔法物品：",
+						"{@item 攀爬绳|DMG}",
+						"{@item 虹光法袍|DMG}",
+						"{@item 隐形药水|DMG}"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"哨客进行两次攻击：一次使用他的+2刺剑，另一次（附赠动作）使用他的{@condition 中毒}匕首。或者用他的吹箭筒进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "+2 Rapier",
+					"name": "+2 刺剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及5尺，单一目标。{@h}11（{@damage 1d8 + 7}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Poisoned Dagger",
+					"name": "淬毒匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及5尺，单一目标。{@h}2（{@damage 1d4}）穿刺伤害。目标生物必须进行{@dc 15}体质豁免，失败则麻痹{@dice 1d4}轮并受到{@damage 1d6}伤害。"
+					]
+				},
+				{
+					"ENG_name": "Blowgun",
+					"name": "吹箭筒",
+					"entries": [
+						"{@atk rw} 命中{@hit 10}，射程25/100尺，单一目标。{@h}8（{@damage 1d6 + 5}）穿刺伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"attachedItems": [
+				"+2 刺剑|dmg",
+				"吹箭筒|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"H"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"entries": [
+					"拉尔夫出身于匕首滩的半身人贵族家庭，从小生活优渥、鲜有责任，他也借此放纵成了个浪荡子。尽管按自己的价值观行事尚算体面，他却在一场晚宴上醉酒之后，勾引了一位已与他人订婚的当地贵族女子。不久之后，那位准新郎提出决斗；拉尔夫别无选择只能杀死对手\u2014\u2014因为对方宁死也不肯忍受败给一个半身人的耻辱，宁愿死亡也不愿向对手屈服。",
+					{
+						"ENG_name": "Ralf's Traits",
+						"name": "拉尔夫的特征",
+						"type": "entries",
+						"entries": [
+							"{@b 理念。}我们无法为每一桩不义复仇......但我们能为其中许多复仇。",
+							"{@b 牵挂。}是湮灭下达了营救我的命令。我欠他一条命。",
+							"{@b 缺陷。}享受美酒与某种女子的陪伴，都是我伪装的一部分。"
+						]
+					},
+					{
+						"ENG_name": "A Plot is Foiled",
+						"name": "阴谋败露",
+						"type": "entries",
+						"entries": [
+							"死者的兄长\u2014\u2014决斗仅有的两名见证人之一\u2014\u2014动用政治影响力，以谋杀罪名逮捕了拉尔夫，同时安排杀害另一名证人，即拉尔夫的朋友、决斗副手。事情的真相传到了白蝎耳中。经过商议与向阿尔提尔的祈祷，他们决定在行刑当日派出人手营救拉尔夫，并邀请这位半身人开始受训。"
+						]
+					},
+					{
+						"ENG_name": "A New Beginning",
+						"name": "新的开始",
+						"type": "entries",
+						"entries": [
+							"尽管对加入这样一个苦修教团心存疑虑，拉尔夫仍觉得有义务侍奉这些给了他第二次生命的人。他的天分使他以创纪录的速度完成了训练；虽然长夜仍萦绕在他的梦境中，但半身人的体质让他撑过了仪式。他的初螫是为朋友、也为自己复仇，杀死了那位贵族的兄长。此后，福克萨尔获得了新身份：一名定居深水城的商人。他在那里建立了一家极为成功的贸易公司，至今仍是教团最大的收入来源之一。"
+						]
+					},
+					{
+						"ENG_name": "Nickname",
+						"name": "绰号",
+						"type": "entries",
+						"entries": [
+							"只有教团的老成员还记得拉尔夫的真名，其余同门都称他为哨客。据说当年他从牢房被押往刑场途中，一路吹着口哨，随后获救。如今，他会为受害者吹响同样缓慢而忧郁的口哨，作为对方听到的最后一段旋律，然后将浸有夺命蝎毒的吹箭对准他们的脖颈。"
+						]
+					},
+					{
+						"ENG_name": "Controversy",
+						"name": "争议",
+						"type": "entries",
+						"entries": [
+							"他富有人格魅力，深受教团大多数成员的喜爱，众人也敬重他的商业头脑；但仍有一些人认为，他在公众生活中频频流连于酒色，本不该被纳入宗师的考量之列。"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Xenia Zanetti (Nightsting)",
+			"name": "克塞妮娅·扎内蒂（夜螫）",
+			"shortName": "克塞妮娅·扎内蒂（夜螫）",
+			"source": "TWSAGU",
+			"page": 11,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half elf"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item +2 镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"special": "48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 12,
+			"int": 15,
+			"wis": 8,
+			"cha": 15,
+			"save": {
+				"dex": "+7",
+				"int": "+5"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+3",
+				"insight": "+2",
+				"intimidation": "+5",
+				"perception": "+5",
+				"persuasion": "+5",
+				"sleight of hand": "+7",
+				"stealth": "+10"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"通用语",
+				"精灵语",
+				"桑比亚语",
+				"蝎语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"克塞妮娅是3级施法者。她的施法属性是智力（法术豁免{@dc 13}，法术攻击命中+5）。克塞妮娅准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 火焰箭}",
+								"{@spell 传讯术}",
+								"{@spell 次级幻象}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell 魅惑类人}",
+								"{@spell 羽落术}",
+								"{@spell 护盾术}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell 隐形术}",
+								"{@spell 迷踪步}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Alert",
+					"name": "警觉",
+					"entries": [
+						"克塞妮娅的先攻获得+5加值。她在意识清醒时不会处于{@status 突袭}状态，且生物不会因对她隐藏而在攻击检定上获得优势。"
+					]
+				},
+				{
+					"ENG_name": "Cunning Action",
+					"name": "灵巧动作",
+					"entries": [
+						"你的机敏与敏捷让你能够快速移动和行动。在战斗中，你的每个回合都可以采取一个附赠动作。该动作只能用于疾行、脱离或躲藏。"
+					]
+				},
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"你懂得如何敏锐打击并利用敌人的疏忽。每回合一次，如果你的攻击检定具有优势，你就可以在以攻击命中一个生物时，对其造成额外的{@damage 3d6}伤害。此次攻击必须使用灵巧武器或远程武器。",
+						"如果目标的另一敌人距其5尺内、该敌人未处于失能状态、且你的攻击检定没有劣势，你便无须具有优势也能发动偷袭。"
+					]
+				},
+				{
+					"ENG_name": "Assassinate",
+					"name": "暗杀",
+					"entries": [
+						"当你抢得敌人先机时最为致命。对战斗中尚未轮到行动的生物，你的攻击检定具有优势。此外，你对处于{@status 突袭}状态的生物的任何命中都是重击。"
+					]
+				},
+				{
+					"ENG_name": "Uncanny Dodge",
+					"name": "直觉闪避",
+					"entries": [
+						"当一个你能看见的攻击者以攻击命中你时，你可以用你的反应使该攻击对你的伤害减半。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"克塞妮娅进行两次攻击：一次使用她的+2短剑，另一次（附赠动作）使用她的{@condition 中毒}匕首或\"螫刺\"。或者用她的弓进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "+2 Shortsword",
+					"name": "+2 短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}9（{@damage 1d6 + 6}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Poisoned dagger",
+					"name": "淬毒匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}2（{@damage 1d4}）穿刺伤害。目标生物必须进行{@dc 15}体质豁免，失败则麻痹1分钟并受到{@damage 1d6}毒素伤害。该生物可以在其下个回合结束时重复豁免。"
+					]
+				},
+				{
+					"ENG_name": "Longbow",
+					"name": "长弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 7}，射程150/600尺，单一目标。{@h}8（{@damage 1d8 + 4}）穿刺伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+			},
+			"attachedItems": [
+				"+2 短剑|dmg",
+				"长弓|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"fluff": {
+				"entries": [
+					"克塞妮娅是教团中相对新进的成员。她对训练的投入、敏捷的思维与身手，加上冷静的性情，使她得以承担白蝎最重要的某些任务。凭借天生的精灵视觉与敏捷，她偏爱在黑暗中悄然出击，这为她赢得了代号：{@i 夜螫}。",
+					{
+						"ENG_name": "Xenia Zanetti's Traits",
+						"name": "克塞妮娅·扎内蒂的特征",
+						"type": "entries",
+						"entries": [
+							"{@b 理念。}诸神之法高于人间之法。",
+							"{@b 牵挂。}教团给了我自由和人生目标。我欠他们一切。",
+							"{@b 缺陷。}我宁可孤独死去，也不愿让男人碰我。"
+						]
+					},
+					{
+						"ENG_name": "Harsh Childhood",
+						"name": "残酷的童年",
+						"type": "entries",
+						"entries": [
+							"克塞妮娅被精灵母亲送人收养，在桑比亚的一所孤儿院长大。孤儿院的经营者贪图她的美貌与精灵血统，在她年幼时便把她卖给一个好色的地主，后者很快就对她施以虐待。某天，当她鼓起勇气拒绝对方的侵犯时，主人用铁制烛台砸中她的脸，打碎了她的颧骨，在她右脸留下一道参差的伤疤。克塞妮娅出逃了（作为奴隶，这是可处死刑的罪过），开始在叶弘的街头露宿。"
+						]
+					},
+					{
+						"ENG_name": "Kind Benefactor",
+						"name": "仁善的恩人",
+						"type": "entries",
+						"entries": [
+							"一位年迈的鳏夫在巷子里发现了奄奄一息的她，心生怜悯，把她接回家中。看到她精神中的坚韧，他把她引荐给一位男子\u2014\u2014此人后来成为她的导师，以白蝎之道训练她。"
+						]
+					},
+					{
+						"ENG_name": "Free At Last",
+						"name": "终获自由",
+						"type": "entries",
+						"entries": [
+							"尽管训练严酷，克塞妮娅却平生第一次感到自由。在此之前，她是不被疼爱的孤儿，后来又沦为虐待她的主人的私有物。如今她有了目标\u2014\u2014以及实现目标的力量。在入门仪式中幸存后，她杀死了昔日的主人\u2014\u2014这是她的初螫\u2014\u2014正式成为白蝎的一员。"
+						]
+					},
+					{
+						"ENG_name": "Undercover Agent",
+						"name": "卧底密探",
+						"type": "entries",
+						"entries": [
+							"一场席卷桑比亚的奴隶起义给了三宗师安插克塞妮娅的机会。她进入紫龙军团，成为一支弓箭手分队的队长。她的军功使她受雇于科米尔国王，担任特别密探\u2014\u2014而后来，白蝎正是派她以贪腐之罪刺杀了此人。"
+						]
+					},
+					{
+						"ENG_name": "Arcane Advantage",
+						"name": "奥术优势",
+						"type": "entries",
+						"entries": [
+							"克塞妮娅在公会之外的冒险使她频繁接触奥术。她看到奥术能让自己成为更致命的正义之手的潜力，便开始研习。{@spell 隐形术|PHB}、{@spell 次级幻象|PHB}和{@spell 魅惑类人|PHB}等法术增强了她在行动中的多面能力。"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/5etools-mirror-2/5etools-img/raw/main/blank.webp"
+						}
+					}
+				]
+			}
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "The White Scorpions Assassins Guild",
+			"name": "白蝎刺客公会",
+			"id": "TWSAGU",
+			"source": "TWSAGU",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/TWSAGU/6l0lm6k.jpg"
+			},
+			"published": "2017-10-01",
+			"contents": [
+				{
+					"ENG_name": "Chapter 1: The White Scorpions",
+					"name": "第1章：白蝎",
+					"headers": [
+						"世人所知",
+						"内部消息",
+						"历史",
+						"使命宣言",
+						{
+							"depth": 1,
+							"header": "三条箴言"
+						},
+						{
+							"depth": 1,
+							"header": "格言"
+						},
+						"组织架构",
+						{
+							"depth": 1,
+							"header": "体系"
+						},
+						{
+							"depth": 2,
+							"header": "蝎首（正义内阁）"
+						},
+						{
+							"depth": 2,
+							"header": "蝎尾（刺客）"
+						},
+						{
+							"depth": 2,
+							"header": "蝎爪（文书）"
+						},
+						{
+							"depth": 1,
+							"header": "资金与报酬"
+						},
+						{
+							"depth": 1,
+							"header": "大密会"
+						},
+						"惯用杀戮手法",
+						{
+							"depth": 1,
+							"header": "夺命蝎毒"
+						},
+						"成为白蝎",
+						{
+							"depth": 1,
+							"header": "训练"
+						},
+						{
+							"depth": 1,
+							"header": "群蝎之棺"
+						},
+						{
+							"depth": 1,
+							"header": "初螫"
+						},
+						{
+							"depth": 1,
+							"header": "职责、规则与规章"
+						},
+						"宗教",
+						"冒险"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					}
+				},
+				{
+					"ENG_name": "Chapter 2: Trainee Assassin (Background)",
+					"name": "第2章：见习刺客（背景）",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					}
+				},
+				{
+					"ENG_name": "Chapter 3: Prominent Guild Members",
+					"name": "第3章：公会重要成员",
+					"headers": [
+						"克塞妮娅·扎内蒂（夜螫）",
+						{
+							"depth": 1,
+							"header": "克塞妮娅的特征"
+						},
+						"湮灭",
+						{
+							"depth": 1,
+							"header": "湮灭的特征"
+						},
+						"拉尔夫·福克萨尔（哨客）",
+						{
+							"depth": 1,
+							"header": "拉尔夫的特征"
+						},
+						"虔诚者格拉尼特",
+						{
+							"depth": 1,
+							"header": "格拉尼特的特征"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					}
+				},
+				{
+					"ENG_name": "Chapter 4: Dungeon Master's Class",
+					"name": "第4章：地下城主课堂",
+					"headers": [
+						"冒险引子",
+						"DM的挑战"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					}
+				},
+				{
+					"ENG_name": "Chapter 5: Author's Note, Credits & Thanks",
+					"name": "第5章：作者的话、致谢与版权",
+					"headers": [
+						"关于作者",
+						"特别感谢",
+						"特别鸣谢",
+						"请求",
+						"版权"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					}
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "TWSAGU",
+			"source": "TWSAGU",
+			"data": [
+				{
+					"ENG_name": "Chapter 1: The White Scorpions",
+					"type": "section",
+					"name": "第1章：白蝎",
+					"page": 3,
+					"entries": [
+						"小心了，冒险者！你即将窥知费伦最隐秘、最致命的组织之一的秘密......如果你想安享天年，就该守好这些秘密。以下将简要介绍你在白蝎刺客公会中立足所需了解的一切。",
+						"听好了：这绝不是一伙没有道德底线、拿钱卖命的杀手。这个教团中训练有素的私刑执法者自视为神意在人间的代理人，他们的使命是在人类律法与政治失效之处伸张正义。在庇护神提尔的庇佑下，他们追查各行各业中的作恶者，毫不留情地将其送入坟墓。至于这些不幸的灵魂在来世会遭遇什么......",
+						"{@i 蝎之所葬，诸神审判。}",
+						{
+							"ENG_name": "What The World Knows",
+							"type": "entries",
+							"name": "世人所知",
+							"page": 3,
+							"entries": [
+								"关于这个神秘的刺客团体，人们掌握的确切事实寥寥无几，但费伦几乎无人怀疑它的存在。太多杀人犯与强奸犯、太多腐败政客、太多贪婪的神职人员与性变态者死去\u2014\u2014喉咙被割开、嘴角泛着白沫、嘴里被塞进一只干瘪的蝎子\u2014\u2014让人们无法视而不见。",
+								"平民百姓称之为\"螫刺割喉客\"或\"正义幽灵\"。白蝎从未向公众表明身份，也从未提出任何要求。他们出击迅疾、撤退迅速，目击事件极为罕见；而在数百年运作中被擒的少数刺客，都在开口之前、或被公开审判之前自尽身亡。",
+								"这个组织凌驾于法律之上、运作于法律之外。有人称颂这个神秘组织是普通虔诚信民抵御腐败官僚与统治者的保护者，也有人视其为傲慢、无法无天且彻头彻尾的阴险之徒\u2014\u2014后者往往是因为害怕自己成为下一个受害者。"
+							]
+						},
+						{
+							"ENG_name": "Inside Information",
+							"type": "entries",
+							"name": "内部消息",
+							"page": 3,
+							"entries": [
+								"知情者知道，白蝎是一个古老的高度专业化刺客教团；在扭转数百年的衰落之后，他们正缓慢地将影响力扩展到费伦的每个角落。他们侍奉神明提尔\u2014\u2014尊其为\"阿尔提尔，众裁者\"\u2014\u2014向穷苦无告者提供复仇，向腐败而未受惩罚者施加正义。",
+								"为完成使命，教团依靠庞大的文书与间谍网络，从信件、传闻、目击者以及提尔神殿中的祈求里搜集不义之举与未惩之罪的信息，再由教团的宗师们裁定谁必须死去。一旦作出决定，教团便派出一名致命密探去执行。",
+								"新刺客由现有成员招募和训练\u2014\u2014如果他们能在群蝎之棺中熬过那一夜（第6页）\u2014\u2014随后便以普通公民的身份重回世间。他们应当在社会中尽力攀升，并为公会提供情报与金钱。",
+								"白蝎成员以人类为主，但也有少数矮人和半身人为此事业所招募。许多成员出身于艰辛的底层，这也解释了他们行列中半精灵和半兽人比例之高。"
+							]
+						},
+						{
+							"ENG_name": "History",
+							"type": "entries",
+							"name": "历史",
+							"page": 3,
+							"entries": [
+								"据教团自己的传说与传奇记载，白蝎教团由一位来自琼达斯、名叫泰·叶海亚的男子于大约500 DR创立。教团的史家在事件发生多年后写道：叶海亚是一名出身不明的奴隶，年轻时便以巴拉格尔家族账房的身份崭露头角。他深得主人的器重，经过近二十年的忠诚效力，叶海亚终于攒够赎金获得了自由。成为自由民后，他开办了一家成功的商行，并娶了琼达斯商人的漂亮女儿为妻。然而，新婚妻子的美貌激起了一位名叫奥里奥尔的傲慢当地领主的嫉妒。奥里奥尔先是勾引了叶海亚的妻子，随后又以捏造的罪名逮捕并放逐了叶海亚本人。",
+								"叶海亚害怕放逐之后便是死亡，先逃往夏尔，继而逃到埃斯塔贡德。他在那里拜访了一座早已倾颓的阿尔提尔圣祠，祈求复仇。正义之神指示他远赴托瑞尔另一端的受龙，寻找黑蝎纹章。他搜寻数月，无数线索尽成死路，终于在试图穿越科卡哈草原时偶然遇到的一座修道院大门上找到了这样的纹章。这座供奉着一位垂死异域神祇的修道院里只有一位年迈的隐修士；老僧从未对他说过一个字，却传授了他隐匿、毒药与兵器之术。五年修习之后老僧圆寂，叶海亚由此踏上漫长的归乡之旅。",
+								"当他重返琼达斯时，离家已近十年。他发现妻子流产了（他相信那是他的孩子），又在五年后为篡夺者生下孩子时死于难产。叶海亚用在受龙草原上锤炼完美的技艺复仇杀死了奥里奥尔，并掳走了其子杰登。随后他创立了白蝎，将教团的三条箴言凿刻在一块石板上流传后世，并训练杰登继承自己的事业。",
+								"杰登在继父的教导下成为教团的狂信徒及其下一任领袖。他取名\"正义之手\"，开始招募一众学徒，目标是在发现腐败与邪恶之处散布恐怖。据说他至死都不知道自己的真实身世。",
+								"数个世纪以来，公会的使命连同其秘密与技艺都顺利地传承给新成员\u2014\u2014直到1014 DR，大宗主白爪刺杀了一个名为金友会的强大犯罪派系的首领。金友会的新首领是一个名叫夏坎、拥有术士之力的冷酷军阀；为震慑人心、立威扬名，他无情地搜捕并杀害了教团所有他能找到的成员。白爪在夏坎倾尽全力的攻势下陨落之后，所剩无几的白蝎群龙无首、死伤惨重，被迫转入潜藏。",
+								"这些幸存者惶恐而孤立，却毫不屈服。他们继续坚守信仰，让教团存续下去，尽管实际上停止了行动，也没有统一的指挥。约1250 DR，教团在大宗主月光信条的领导下真正开始复兴；而今天，久任大宗主湮灭的不懈耕耘终于结出硕果。年复一年，越来越多的恶徒尝到教团的钢铁与毒液；如今的白蝎比以往任何时候都更加强大。",
+								{
+									"ENG_name": "Secret Signs",
+									"type": "inset",
+									"name": "秘密暗号",
+									"entries": [
+										"完成训练后，大多数白蝎成员独自行动，需要时通过密码信件与教团同门联络。在执行任务时，白蝎的密探有两种非言语方式来辨认彼此、确认同门身份。",
+										{
+											"type": "list",
+											"style": "list-no-bullets",
+											"items": [
+												"{@b 秘密问候}：与任何疑似公会成员握手时，白蝎成员会用另一只手（通常是左手）悄然摆出双螯与蝎尾的手形\u2014\u2014食指与小指为双螯，拇指为蝎尾。若对方真是教团同门，便应回应同样的手势。",
+												"{@b 白墨刺青}：完成初螫（第7页）、成为教团正式成员后，每名刺客都会在左腕内侧得到一个白墨绘成的蝎形小刺青。若非刻意寻找，这个刺青几乎不可见；但若以火把凑近照射，墨迹便会发出明亮的光。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Mission Statement",
+							"type": "entries",
+							"name": "使命宣言",
+							"page": 4,
+							"entries": [
+								"教团的目标，是在法律失效或法律缺席之处伸张正义。",
+								"他们不是政治团体，也不区分身份高低；只要经过组织文书（即蝎爪）收集的证据提交正义内阁审议后被判有罪，无论农夫还是国王，一律诛杀。（关于公会结构与等级的详情见第4页。）",
+								"除了主动收集不义之举的信息外，白蝎也重视留在诸神祭坛前的祈愿，尤其是他们的庇护神阿尔提尔\u2014\u2014\"众裁者\"、提尔的古老化身\u2014\u2014祭坛前的祈求。",
+								"在每一桩案件中，都要经过彻查，正义内阁才会作出判决。若被告被判有罪，其名字便会被移交教团的一名密探；密探必将执行判决，否则以自己的性命抵罪。",
+								{
+									"ENG_name": "The Three Maxims",
+									"type": "entries",
+									"name": "三条箴言",
+									"page": 4,
+									"entries": [
+										"这三条箴言由教团创始人泰·叶海亚的传奇之手凿刻于石，每一位白蝎成员都奉若珍宝。",
+										{
+											"type": "list",
+											"items": [
+												"宁死，也不容忍不义。",
+												"宁杀，也不容忍不义。",
+												"宁侍奉，不统治。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Motto(s)",
+									"type": "entries",
+									"name": "格言",
+									"page": 4,
+									"entries": [
+										"教团的官方格言往往是受害者死前听到的最后一句话，由杀手低声耳语。非官方格言则偶尔能在密探间罕见的会面中听到。",
+										{
+											"type": "list",
+											"items": [
+												"蝎之所葬，诸神审判（官方）。",
+												"正义始于螫刺（非官方）。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Organisation",
+							"type": "entries",
+							"name": "组织架构",
+							"page": 5,
+							"entries": [
+								"虽然白蝎的许多内部运作即便对其成员也是谜，但关于公会的结构、等级与资金，人们还是知道一些大概。",
+								{
+									"ENG_name": "Structure",
+									"type": "entries",
+									"name": "体系",
+									"page": 5,
+									"entries": [
+										"在结构上，白蝎教团分为三个部分：蝎首、蝎尾与蝎爪。",
+										{
+											"ENG_name": "The Head (Cabinet of Justice)",
+											"type": "entries",
+											"name": "蝎首（正义内阁）",
+											"page": 5,
+											"entries": [
+												"蝎首由教团位阶最高的十一名同门组成，他们构成正义内阁，裁定诸如死亡敕令（即死刑判决）及其指派、密探招募与惩戒事务等事项。蝎首中许多人本身仍是在役刺客；由于他们的技艺与实战经验，更精细的任务或特殊使命常交由他们执行。内阁通常每两个朔望月召开一次会议。",
+												"一个由三宗师组成的执行机构既隶属于正义内阁，又统辖内阁。这一议事会由一位大宗主和两位宗师组成，同时负责公会的战略决策与维护教团的神圣性。如今的三宗师是湮灭（大宗主）、虔诚者格拉尼特和哨客（见第10页起的\"公会重要成员\"一章）。"
+											]
+										},
+										{
+											"ENG_name": "The Tail (Assassins)",
+											"type": "entries",
+											"name": "蝎尾（刺客）",
+											"page": 5,
+											"entries": [
+												"蝎尾是教团在役刺客组成的网络，零星分布于整个费伦。大多数人与教团其他成员隔绝行动，在死亡敕令（即死刑判决，见第5页）送达时执行之。其余时间他们过着正常的生活，狂热地守护着自己作为公会成员的身份。目前共有67名同门在蝎尾服役。"
+											]
+										},
+										{
+											"ENG_name": "The Claws (Clerks)",
+											"type": "entries",
+											"name": "蝎爪（文书）",
+											"page": 5,
+											"entries": [
+												"蝎爪是教团的文书与研究员。许多人是蝎尾的退役成员，因年迈无法再担任刺客；也有相当一部分人忠于教团的理想，却未能通过体能训练，从未被授职为密探。另一些人从未被列入刺客人选，但因表现出对教团的同情，且品性、技能与可信度受到认可而被招募。在职责上，蝎爪负责收集潜在目标的信息并呈报蝎首、向蝎尾的密探送达死亡敕令，以及执行其他行政事务。",
+												"与蝎首和蝎尾的成员一样，蝎爪成员也立誓守密；但除此之外，他们不受同门所遵守的严格规条（见第7页）约束；他们也不佩戴白墨刺青，除非曾是蝎尾成员。他们无须经历群蝎之棺的入门仪式。",
+												"除蝎首之外，所有公会成员一律平等，无论其在公众生活中的地位如何。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Funding & Payments",
+									"type": "entries",
+									"name": "资金与报酬",
+									"page": 5,
+									"entries": [
+										"白蝎不会为任何价钱执行合约杀人\u2014\u2014这明确违反他们的行为准则。相反，组织的资金依靠成员在私人生活中积累的财富，以及认同教团理念的富有赞助人的捐赠。",
+										"在公会的培养与资助下，大多数白蝎密探都足够富裕，资金上可以自给自足；较富有的成员则应将年收入的约五分之一捐给公会。较贫困的成员会领取津贴，以便履行职责。众所周知，公会在成员遇到困难、退休或患病时会加以照料；大多数成员也甘愿为自己选择奉献一生的事业尽其所能地出力。",
+										"任何以杀戮牟利的白蝎成员，一经查获，将被教团判处死刑。",
+										{
+											"ENG_name": "Scorpion Tongue",
+											"type": "inset",
+											"name": "蝎语",
+											"entries": [
+												"正式加入白蝎后，教团新成员会学习一种白蝎专用的黑话，让他们能通过特定的措辞互相辨认\u2014\u2014在不熟悉的人听来平平无奇，但在熟悉这套行话的人耳中便表明了公会成员身份。这种黑话还为他们工作中的许多常用词准备了暗语，并且可以像盗贼黑话那样用来传递隐晦的信息和进行基本的指令沟通。关于两名说者之间如何使用这种黑话，详见《玩家手册》第96页。",
+												{
+													"type": "list",
+													"style": "list-no-bullets",
+													"items": [
+														"{@b 规则}：在游戏规则上，若PC选择了第8页的见习刺客背景，便自动以蝎语取代游荡者的盗贼黑话。否则，你可以询问DM能否替换；或者，若你的职业或背景允许你额外选择一门语言，也可以直接选择蝎语。"
+													]
+												},
+												"如果你的PC无法或不愿照做，则视为其在训练中只掌握了蝎语最基础的部分：若要用这套黑话表明身份而不引起怀疑，或理解另一名成员的简单信息（口头或书面，例如一次会面），必须进行DC 10的智力检定。理解稍难一些的内容\u2014\u2014例如附带条件的会面（\"在大教堂碰头，带一把斧头\"）\u2014\u2014DC提升到15；更复杂的内容则为DC 20。他们无法写出连贯的密码信。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": " The Great Confab",
+									"type": "entries",
+									"name": "大密会",
+									"page": 6,
+									"entries": [
+										"每隔三年，讯息便会发往费伦各地，召集全体蝎尾成员向正义内阁述职。大密会每次在不同城市举行，具体地点通常在开始前几个小时才公布。会场总是隐蔽周密，公会采取一切预防措施避免被公众察觉；会议期间，所有与会者都必须全程佩戴厚重的兜帽。这场通常持续24至36小时的会议中，每名蝎尾成员都要喝下一杯掺了吐真剂的酒，然后被召到戴着兜帽的正义内阁面前，汇报自上次大密会以来的活动。汇报完毕后，他们须待命再次被召见，接受有关未来职责的新指示。",
+										"蝎尾成员一经召集，必须出席大密会。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Favoured Killing Method",
+							"type": "entries",
+							"name": "惯用杀戮手法",
+							"page": 6,
+							"entries": [
+								"每个白蝎的作案手法，都是先以夺命蝎毒攻击受害者（见下文）。这种强力毒素会引发痛苦的痉挛、呼吸困难与心脏问题，逐步摧毁受害者的要害器官。其效果是使目标麻痹，却保持清醒。这一麻痹效应除了让目标无法反抗、任人宰割外，还能让白蝎密探向受害者高声宣读其罪状清单，使其清楚意识到自己正因危害正义之罪而被处决。受害者最后听到的话，多半是公会的格言：{@i 蝎之所葬，诸神审判}。在受害者知晓对自己的判决后，白蝎便割开其喉咙。通常，他们会在受害者口中留下一只干瘪的蝎子，以儆效尤。",
+								{
+									"ENG_name": "Necrodicta",
+									"type": "inset",
+									"name": "死亡敕令",
+									"entries": [
+										"当正义内阁作出死刑判决时，受害者的名字连同其罪状清单会被写在一小张莎草纸上\u2014\u2014按传统以判决人（即内阁成员）之血书写\u2014\u2014并以蝎形蜡印封缄。随后，这张纸会被送达获选执行任务的蝎尾成员手中。这样的信函称为\"死亡敕令\"，有时也称\"正义敕令\"。死亡敕令一经送达，密探便必须无条件执行，否则以自己的性命抵罪。"
+									]
+								},
+								{
+									"ENG_name": "Deathstalker Poison",
+									"type": "entries",
+									"name": "夺命蝎毒",
+									"page": 6,
+									"entries": [
+										"夺命蝎毒采自一种同名的高攻击性蝎子。这种蝎子的强力螫刺甚至能麻痹中等体型的哺乳动物，并能在大约数秒内杀死它们体型较小的猎物（昆虫、小鼠和两栖动物）。",
+										"这种常见蝎子通常呈浅色或沙色。它们栖息于沙漠、灌木丛和温带森林中；在这些地形搜索1d6小时后，可通过DC 15的智力（自然）或感知（求生）检定找到它们。检定成功即可找到1d4只蝎子。从一只活蝎身上提炼一份高浓度剂量需要一天时间，且必须驱使活蝎在24小时内排毒四次。刚死不久的蝎子则可提炼半份剂量。要成功执行此项操作，请遵循《城主指南》第258页的采毒规则，每份剂量进行一次检定。",
+										"夺命蝎毒是一种创伤毒药，必须进入血液才能生效，通常通过涂抹在挥砍或穿刺武器上来实现。受夺命蝎毒影响的生物必须进行DC 13的体质豁免检定。豁免失败者将麻痹至多1分钟，并受到1d6点毒素伤害。受影响的生物可以在其每个回合结束时重复豁免，成功则不再麻痹。若受害者初次豁免成功，则只受一半伤害，且无其他不良效应。",
+										"由于为入门仪式所做的准备（见第7页），白蝎的密探对夺命蝎毒的效应免疫。",
+										{
+											"ENG_name": "Optional Poison Rule",
+											"type": "inset",
+											"name": "可选用毒规则",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-no-bullets",
+													"items": [
+														"{@b 剂量加倍}：一分钟内第二次被同一毒药击中的生物，此后对抗该毒药效应的豁免检定具有劣势。",
+														"{@b 体型事关紧要}：大型生物对抗任何非魔法毒药的豁免检定具有优势（考虑到大型生物的体重可能是中型生物的3到5倍，仅凭更高体质带来的益处，不足以体现这方面的真实感）；而在DM的裁定下，巨型与超巨型生物对正常剂量的非魔法毒药免疫。微型生物的毒素豁免检定则具有劣势。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Becoming A Scorpion",
+							"type": "entries",
+							"name": "成为白蝎",
+							"page": 7,
+							"entries": [
+								"教团中极少有人是一开始就立志成为白蝎的。他们只是在恰当的时间出现在恰当的地点，有意无意地向观察者展现了合适的技能与品性。识别潜在新人的职责主要落在{@i 蝎爪}身上，而训练本身总是由蝎尾成员执行。最后，由蝎首决定一名侍从是否已准备好接受入门仪式。",
+								{
+									"ENG_name": "Training",
+									"type": "entries",
+									"name": "训练",
+									"page": 7,
+									"entries": [
+										"白蝎的训练严酷异常，可能需要多年才能完成，这不仅取决于学员自身的天资，也取决于导师的水平。这段漫长的准备不仅包括灵巧武器与远程武器的战斗训练、对分心或失能之敌施以致命打击的技艺，还包括毒药的使用与采制训练，以及高强度的学业训练。若学员尚不识字，则会学习通用语的读写，并接受历史、宗教与自然知识的良好基础教育，以便融入社会的任何阶层。除武艺与学业外，训练极其强调隐匿，耐力与体能也通过高强度、重复性的锻炼加以磨砺。有些导师还会训练学员特技。",
+										"训练期间，侍从过着苦行的生活，而其中最艰苦的莫过于每日的\"净化仪式\"：他们被教导通过腕上的切口给自己施用剂量递增的夺命蝎毒，为群蝎之棺仪式做准备（见下文）。这些剂量必然引发痛彻骨髓的抽筋与痉挛，以及呼吸困难，但由此产生的免疫能让入会者在仪式中免受螫刺最严重的伤害，从而保护他们。",
+										"虽然导师常会暗示学员正在为一个更崇高的目标做准备、将成为正义的执行者，但在学员准备好接受入会之前，训练过程中绝不直接提及白蝎之名，也不透露教团的任何信息。"
+									]
+								},
+								{
+									"ENG_name": "Tomb of the Scorpions",
+									"type": "entries",
+									"name": "群蝎之棺",
+									"page": 7,
+									"entries": [
+										"当新手刺客被导师认为准备就绪时，还须先在一场往往致命的仪式中获得神明阿尔提尔的认可。这场仪式称为\"群蝎之棺\"，又称\"长夜\"。",
+										"在至少一名正义内阁成员和两名见证人的监督下，于约定之日的黄昏，入会者被放进一口石棺，与十一只凶悍的夺命蝎同处一棺，随后棺盖被封死。在场者吟诵完献给阿尔提尔的圣歌后，便将棺木弃置不顾，直到黎明才回来揭开棺盖。",
+										"如果入会者在清晨仍然存活，便被视为蒙阿尔提尔拣选，可以完成入会手续；而这就必须通过完成初螫来实现（见第7页）。初螫通常是在公会与其神明的庇佑之下，诛杀自己的宿敌。",
+										"{@b 游戏规则}：如果你的PC在游戏中经历这场入门仪式，先让他们进行一次智力或感知检定（可运用求生、自然或医药熟练项之一），以确定其为这场试炼调整身体状态的程度。每通过一个难度等级，其后的体质豁免便获得+2调整值。也就是说：掷出5或以上得+2，10或以上+4，15或以上+6，20或以上+8，依此类推。",
+										"接下来掷3d6，随机决定他们在仪式中被螫的严重程度。其结果即为他们要活过这一夜所必须通过的体质豁免DC。",
+										"在接受仪式之前，角色们最好确认自己持有激励（见《玩家手册》第125页）！",
+										{
+											"ENG_name": "Sting of Steel",
+											"type": "inset",
+											"name": "钢之螫刺",
+											"entries": [
+												"如果侍从在群蝎之棺仪式中幸存下来，便会获赠一把特制的匕首，称为其\"螫刺\"。这把匕首的柄内藏有毒仓，刀身中央有一道从柄底延伸至刀尖的血槽，刀尖处细密的切口网络有助于在命中后将毒液散布开来。",
+												"用拇指按下柄身内侧的按钮，便会将一份毒药释放到刀刃上（在游戏规则中这属于自由动作，因为完成它只需一瞬）。刀刃上的毒液会在一分钟后干涸，或持续到持用者成功命中一次攻击为止。毒仓一次可容纳五份毒药，并且可以轻松补充。",
+												"有些螫刺以宝石或蝎形雕刻华丽装饰，另一些则完全朴素。许多螫刺多年来在刺客之间代代相传，因此不少已有数百年历史。",
+												"遗失自己的刀刃既被视为奇耻大辱，也是对教团保密工作的威胁。任何此类事件都必须立即上报正义内阁，并应不惜一切代价寻回武器。",
+												{
+													"type": "list",
+													"style": "list-no-bullets",
+													"items": [
+														"{@b 注}：使用\"螫刺\"命中时，夺命蝎毒的豁免DC从13提升到15，因为这把特制刀刃能最大程度地让毒液进入受害者的血液。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The First Sting",
+									"type": "entries",
+									"name": "初螫",
+									"page": 8,
+									"entries": [
+										"在长夜中幸存之后，要成为正式的白蝎私刑执法者还差最后一步。当事密探必须证明自己的胆识，成功完成第一份任务。这份任务对当事刺客而言往往是私人性质的\u2014\u2014事实上，他们对正义复仇的追求，可能正是有意无意间把他们引向公会的原因。经过数月乃至数年的训练，密探必须展示对事业的信念，以及以阿尔提尔之名杀戮的意愿。一旦证明这一点，他们便被视为已准备好执行教团的日常工作。"
+									]
+								},
+								{
+									"ENG_name": "Duties, Rules and Regulations",
+									"type": "entries",
+									"name": "职责、规则与规章",
+									"page": 8,
+									"entries": [
+										"一系列法令约束着教团所有正式成员的行为，其中所谓的\"绝对法令\"被视为神圣而不可违背。任何已知触犯这些法令者都应上报正义内阁，由内阁决定是否传召被告当面对质，或是缺席判决。触犯绝对法令者几乎必被判死刑，绝少宽宥；但近年来，蝎首对轻微法令的违犯偶尔表现出些许宽容，尤其是当事密探过去既能力强又忠诚的情况。",
+										{
+											"type": "table",
+											"colLabels": [
+												"法令",
+												"惩罚"
+											],
+											"colStyles": [
+												"col-8",
+												"col-4"
+											],
+											"rows": [
+												[
+													"立誓同门不得向外人提及我教团（绝对）",
+													"割舌或死刑"
+												],
+												[
+													"死亡敕令为绝对命令，应尽早执行（绝对）",
+													"死刑"
+												],
+												[
+													"一切杀戮必须得到神圣阿尔提尔的核准",
+													"赎罪或逐出教门"
+												],
+												[
+													"不得为物质利益而杀人（绝对）",
+													"死刑"
+												],
+												[
+													"大密会的召集必须服从（绝对）",
+													"断手并逐出教门"
+												],
+												[
+													"立誓同门须随时报告自己的行踪",
+													"赎罪或逐出教门"
+												],
+												[
+													"教团弟兄姐妹不得娶妻嫁夫，亦不得生育子女",
+													"逐出教门"
+												],
+												[
+													"成员身份终身有效，不得试图脱离我神圣教团（绝对）",
+													"逐出教门或死刑"
+												],
+												[
+													"立誓同门不得沉溺酒色",
+													"赎罪或逐出教门"
+												],
+												[
+													"立誓同门须时刻保管好自己的\"螫刺\"",
+													"赎罪或逐出教门"
+												],
+												[
+													"立誓同门应将收入的五分之一上缴我教团",
+													"赎罪或逐出教门"
+												],
+												[
+													"任何已知的法令违犯都必须毫无偏袒地上报蝎首",
+													"死刑"
+												]
+											]
+										},
+										"若被判死刑，主动认罪的密探可能获准体面赴死\u2014\u2014自行以剑贯心；若是缺席判决，则通常会有两名经验丰富的蝎尾成员被派去处决并掩埋这名叛逃的密探。",
+										"逐出教门被视为奇耻大辱。若被判此刑，罪者首先要被除去刺青（剥皮或烧灼），然后通常会被迁往遥远的修道院或社群，在那里终身受人监视。",
+										"赎罪的形式可以是祈祷、鞭笞、执行一项危险任务，或蝎首认为合适的任何其他方式。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Religion",
+							"type": "entries",
+							"name": "宗教",
+							"page": 8,
+							"entries": [
+								"白蝎教团是一个宗教团体，敬奉诸神，但首先自视为{@link 提尔|https://forgottenrealms.fandom.com/wiki/Tyr}\u2014\u2014正义之神（被遗忘的国度）\u2014\u2014的仆人。他们以提尔的古老名字\"阿尔提尔，众裁者\"崇拜他。因此，大多数成员的阵营为守序善良。公会中的一些弟兄姐妹（通常是蝎爪）也研习神学，成为提尔的祭司。",
+								{
+									"ENG_name": "The White Purge: A Prophecy",
+									"type": "inset",
+									"name": "白色清洗：一则预言",
+									"entries": [
+										"公会内部流传的一则古老预言称：将有这样一夜，白蝎教团受命清洗国内所有人类国王与统帅，以终结腐败的时代，为人类开创崭新的未来。据说大宗主知晓这则预言的日期，若它在自己有生之年到来，便会下达命令。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventuring",
+							"type": "entries",
+							"name": "冒险",
+							"page": 8,
+							"entries": [
+								"虽然并不常见，但没有规则禁止白蝎成员冒险。不过默认至少20%的冒险所得将捐献给公会（通常可以存放在任意一座提尔神殿，或任何有蝎爪成员活动的地方）。",
+								"任何外出冒险的白蝎成员，都被期望在所到之处贯彻公会的价值观\u2014\u2014伸张正义、打击邪恶与腐败\u2014\u2014同时保持隐姓埋名，此事优先于其他一切目标。",
+								"在某些情况下，冒险本身可能就是侍从训练的一部分（针对选择白蝎为背景的人\u2014\u2014第8页），让他们锤炼重要的战斗、隐匿与杀戮技能，日后奉献于公会的事业。",
+								"依照\"职责、规则与规章\"，白蝎成员冒险期间必须向公会报告行踪；当然，一旦任务降临，也必须立即放下手头之事。诛杀怪物、野兽或已知的邪恶生物，无须以死亡敕令的形式获得阿尔提尔的核准。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 2: Trainee Assassin (Background)",
+					"type": "section",
+					"name": "第2章：见习刺客（背景）",
+					"page": 9,
+					"entries": [
+						{
+							"ENG_name": "Trainee Assassin",
+							"type": "statblock",
+							"tag": "background",
+							"source": "TWSAGUF",
+							"name": "见习刺客",
+							"page": 9
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 3: Prominent Guild Members",
+					"type": "section",
+					"name": "第3章：公会重要成员",
+					"page": 11,
+					"entries": [
+						{
+							"ENG_name": "Xenia Zanetti (Nightsting)",
+							"name": "克塞妮娅·扎内蒂（夜螫）",
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Xenia Zanetti (Nightsting)",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "TWSAGUF",
+									"name": "克塞妮娅·扎内蒂（夜螫）"
+								}
+							]
+						},
+						{
+							"ENG_name": "Oblivion",
+							"name": "湮灭",
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Oblivion",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "TWSAGUF",
+									"name": "湮灭"
+								}
+							]
+						},
+						{
+							"ENG_name": "Ralf Foxal (The Whistler)",
+							"name": "拉尔夫·福克萨尔（哨客）",
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Ralf Foxal (The Whistler)",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "TWSAGUF",
+									"name": "拉尔夫·福克萨尔（哨客）"
+								}
+							]
+						},
+						{
+							"ENG_name": "Granit The Pious",
+							"name": "虔诚者格拉尼特",
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Granit The Pious",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "TWSAGUF",
+									"name": "虔诚者格拉尼特"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 4: Dungeon Master's Class",
+					"type": "section",
+					"name": "第4章：地下城主课堂",
+					"page": 15,
+					"entries": [
+						"到目前为止，本册讨论的都是玩家如何为5e D&D刺客的神秘生涯增添深度与细节。但桌上那位博学的仲裁者\u2014\u2014地下城主\u2014\u2014又该如何？优秀的地下城主懂得利用PC的背景故事，让角色成为游戏的绝对核心：或将关键细节织入剧情，或更进一步，围绕角色独有的经历展开整个冒险乃至战役。如果你的桌上有白蝎玩家，下面这些冒险引子应当能为你提供充足的灵感，让戏剧性事件构成战役的主线，或成为引人入胜的支线。白蝎的活儿永远干不完......",
+						"至于玩家们\u2014\u2014把这本书交给你们的DM，然后别偷看！",
+						{
+							"ENG_name": "Adventure Hooks",
+							"type": "entries",
+							"name": "冒险引子",
+							"page": 15,
+							"entries": [
+								{
+									"ENG_name": "A Necrodictum Arrives",
+									"name": "死亡敕令降临",
+									"type": "entries",
+									"entries": [
+										"冒险进行到一半，一纸死亡敕令送到，角色必须放下一切去执行一次棘手的刺杀。也许他们能说服朋友（也就是其他PC）帮忙？当然，绝不能透露半个字关于白蝎的事。"
+									]
+								},
+								{
+									"ENG_name": "A Shocking Necrodictum Arrives",
+									"name": "骇人的死亡敕令",
+									"type": "entries",
+									"entries": [
+										"一纸写着意外名字的死亡敕令送到，残酷地考验着角色对教团的忠诚。上面的名字可能是一位朋友、一位恩主，甚至可能是角色自己的导师。也可能是一名同伴PC的名字（尤其是如果他的一名同伴PC近来表现恶劣的话！）。"
+									]
+								},
+								{
+									"ENG_name": "The Order Has Been Infiltrated",
+									"name": "教团遭渗透",
+									"type": "entries",
+									"entries": [
+										"一位同门弟兄、蝎爪的成员，在深水城的夜市上说了几句蝎语。他携带着一纸写有德里克勋爵大名的死亡敕令\u2014\u2014人人都说德里克是个好人\u2014\u2014并说他将协助PC潜入德里克的城堡。任务结束后，蝎爪与蝎尾在酒馆会合，这位\"同伴\"递给刺客一杯庆功酒。几口下肚，PC开始觉得头晕目眩......"
+									]
+								},
+								{
+									"ENG_name": "The Order Are Being Hunted Down",
+									"name": "教团遭追猎",
+									"type": "entries",
+									"entries": [
+										"一队身披绯红板甲、骑着黑色战马的骑士包围了队伍下榻的旅店，要求交出那个被称为\"苍白之螫\"的人\u2014\u2014他因谋杀罪被通缉。你的PC及其教团同僚的行动引来了不想要的注意，如今当地领主们正追捕他们，决意执行他们自己版本的正义。（又或者，更阴暗的势力\u2014\u2014某个卓尔刺客团、一伙邪恶法师佣兵，或散塔林会的密探\u2014\u2014正受雇追杀他们所能找到的每一个白蝎。）"
+									]
+								},
+								{
+									"ENG_name": "The Grand Confab is Called",
+									"name": "大密会召集",
+									"type": "entries",
+									"entries": [
+										"你的PC必须前往费伦的某座大城市参加大密会（第5页），在正义内阁面前述职。",
+										"宗师们对他的工作满意吗？他们有什么新指示？这一幕很适合放在冒险之间进行角色扮演；或者，你也可以给队伍其他人一个各自的理由前往同一座城镇，好让PC们待在一起。"
+									]
+								},
+								{
+									"ENG_name": "The PC Stands Accused",
+									"name": "PC遭指控",
+									"type": "entries",
+									"entries": [
+										"在违反了一条或数条公会规章之后，PC被传召到正义内阁面前自辩。又或者\u2014\u2014他早已被缺席判处死刑？若是如此，该掷一次察觉检定了，看看PC有没有注意到远处尾随的那两个披斗篷的身影。"
+									]
+								},
+								{
+									"ENG_name": "A Corrupt Scorpion Must Be Eliminated",
+									"name": "腐败的白蝎必须清除",
+									"type": "entries",
+									"entries": [
+										"教团中一位显赫的刺客被正义内阁判定犯下为钱杀人之罪。你的PC受命前去清除这一腐败。"
+									]
+								},
+								{
+									"ENG_name": "A Clean Up Job is Required",
+									"name": "善后工作",
+									"type": "entries",
+									"entries": [
+										"一位公众形象显赫的白蝎成员不久前成功执行了一桩死亡敕令，但在撤离时遗失了一件私人物品。你的PC必须在其被查证到该成员身上、暴露其秘密身份之前，寻回或销毁它。"
+									]
+								},
+								{
+									"ENG_name": "Tongues Must Be Silenced",
+									"name": "必须封口",
+									"type": "entries",
+									"entries": [
+										"某人知道太多关于白蝎的事。无论如何，必须让他闭嘴。"
+									]
+								},
+								{
+									"ENG_name": "A Scorpion Has Been Captured...",
+									"name": "白蝎被捕......",
+									"type": "entries",
+									"entries": [
+										"一名白蝎被当地官府（或者更阴暗的势力？）抓获，正遭受拷问。他撑不了多久，便会危及教团的存亡。你的PC的任务是营救这名白蝎......或者，若其认为合适，杀了他。"
+									]
+								},
+								{
+									"ENG_name": "The Guild's Gold Reserves Have Been Plundered",
+									"name": "公会金库遭劫",
+									"type": "entries",
+									"entries": [
+										"有人盗走了公会绝密金库中的巨款，一切迹象都指向内部作案。大宗主亲自找到了你的PC，因为他已无法确信能否信任另外两位宗师，乃至正义内阁的任何成员。PC必须扮演侦探，揭开这桩丑闻的真相。"
+									]
+								},
+								{
+									"ENG_name": "A Special Mission is Required",
+									"name": "特别任务",
+									"type": "entries",
+									"entries": [
+										"刺客并非只会杀人。他们的隐匿与求生本能，使其成为传递绝密信件（深入敌后）、偷取物品、寻回赃物、谍报、反谍报、担任卧底护卫等任务的不二人选。无论是正义内阁本身还是第三方，都有一项需要PC这套独特技能的任务。此外，PC还可以酌情招募三四名帮手（也就是其他PC！）来共同完成任务。"
+									]
+								},
+								{
+									"ENG_name": "The White Purge is Called",
+									"name": "白色清洗发动",
+									"type": "entries",
+									"entries": [
+										"消息传来：白色清洗（第7页）即将降临。下一个新月之夜，教团的每一名密探都要诛杀一名当地摄政者或军事统帅，你的PC也不例外。新的时代即将开启。"
+									]
+								},
+								{
+									"ENG_name": "Who Is Oblivion?",
+									"name": "湮灭是谁？",
+									"type": "entries",
+									"entries": [
+										"关于湮灭的流言会是真的吗？他真是卓尔吗？如果是，他的目的何在？总不至于是在发动白色清洗、让人类群龙无首之际，再引卓尔大军自幽暗地域倾巢而出，趁文明世界领袖尽失、不堪一击之时发动攻击吧。千万别信卓尔！"
+									]
+								},
+								{
+									"ENG_name": "Oblivion Dies",
+									"name": "湮灭之死",
+									"type": "entries",
+									"entries": [
+										"或寿终正寝，或死因可疑，湮灭被发现死亡。虔诚者格拉尼特显然是下一任大宗主的热门人选\u2014\u2014但按照惯例，他是否被湮灭正式指名为继承人？无论如何，格拉尼特的人缘不佳，一场血腥的权力斗争就此展开，可能在教团内部造成无法弥合的裂痕。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The DM's Challenge",
+							"type": "entries",
+							"name": "DM的挑战",
+							"page": 16,
+							"entries": [
+								"对任何桌上有游荡者刺客玩家的DM来说，最大的挑战都是如何引入这条PC的剧情线，同时不让队伍其他成员被晾在一边。这绝非易事；DM与刺客最理想的相遇场合，也许是一场单人战役\u2014\u2014只有在那里，这个职业的阴谋与暗算才能得到淋漓尽致的发挥。不过，我们也不必悲观......",
+								"视团队氛围而定，有一个办法是放任PC与队伍其余成员之间的张力逐步升级。大家很快就会发觉，这名刺客的动机与忠诚超出了队伍共同的范围\u2014\u2014这可能带来一些令人难忘的对峙与信任危机。",
+								"否则，就设法让上面的冒险引子牵动所有人。受雇刺杀队伍中白蝎的佣兵，也许会发现干脆一锅端更容易：先放火烧了酒馆，再趁队伍成员四散奔逃时各个击破。特别任务可能需要一支精锐小队而非孤胆密探；而队伍的第二或第三名成员，甚至可能选择加入教团，必要时兼职游荡者。",
+								"当你采用某个似乎需要某名PC单独行动的冒险引子时，何不让这名PC提前一小时到场上，在其他人都到之前先开一场迷你团？这样就不会有人只能无聊地干看着\"杰夫\"在夜里溜出去暗杀邪恶王子。等到其他人入场、团体游戏开始时，他们也许会奇怪：为什么杰夫的PC一脸力竭，手上还沾着血迹。",
+								"最后，你不可能每次都让每个PC的背景故事获得同等分量的戏份。何不轮流让不同的PC在每个冒险中担任主角？这一次，队伍被卷入营救被捕白蝎密探的行动，并因目睹一切而被迫立下缄默誓言；下一次，就该去追查术士的提夫林身世、寻找游侠失踪的叔叔，或是保护野蛮人的村庄了。只要不是每次都是同几个PC，没人会介意另一名PC在故事线中风光一阵。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 5: Author's Note, Credits & Thanks",
+					"type": "section",
+					"name": "第5章：作者的话、致谢与版权",
+					"page": 17,
+					"entries": [
+						"这本5版《龙与地下城》补充册的目的，是通过为你的PC添加背景故事、风味与个性化选项，来提升扮演游荡者刺客的体验。刺客是游戏中最具标志性的范型之一，却也是最难令人信服地融入冒险队伍的范型之一。在设计白蝎时，我想解决的挑战之一，便是构想一个善良阵营的刺客公会，让他们能更自然地参与你典型的D&D冒险（也就是从邪恶势力手中拯救宇宙！）。",
+						"有了关于这个私刑执法教团的内幕，希望你已能从容做到这一点。即便你确实从把浸满蝎毒的\"螫刺\"送进对手肋间、割开他的喉咙、看着他的躯体失去生气瘫倒在地的过程中获得某种扭曲的快感，你也可以说服自己：这一切都是以正义之名。好了，失陪一下\u2014\u2014大宗主似乎来信了......",
+						{
+							"ENG_name": "About the Author",
+							"name": "关于作者",
+							"type": "entries",
+							"entries": [
+								"邓肯·罗兹在20世纪80年代末掷出了他人生第一颗d20，并在放倒第一只兽人的那一刻爱上了这个游戏。此后他中断角色扮演游戏二十年，期间假装自己还算酷；2015年他重新点燃了这份热情，从此忙于补课所有新规则与新玩法。他目前居住在巴塞罗那，经营着一份当地旅行指南和一个国际旅行博客......不过这些都比不上他更新新开的角色扮演博客时的乐趣：{@link 嬉皮士与龙博客|https://www.hipstersanddragons.com/}"
+							]
+						},
+						{
+							"ENG_name": "Special Thanks",
+							"name": "特别感谢",
+							"type": "entries",
+							"entries": [
+								"特别感谢迈克尔·贝利，他耐心阅读了本指南的早期版本并指出了错误；感谢科内尔-彼得·罗登布施为本书贡献了诸多点子；最感谢胡安·何塞·费尔南德斯，是他引领我踏上了刺客之路，重回多元宇宙最黑暗的角落。同样感谢朱莉娅·罗兹文斯、菲利普·维希涅夫斯基和马克·梅德维吉，他们与我的PC\u2014\u2014克塞妮娅·\"夜螫\"·扎内蒂\u2014\u2014在无数精彩的冒险中同台出演。",
+								"书中一切错误皆归作者本人。"
+							]
+						},
+						{
+							"ENG_name": "Special Credit",
+							"name": "特别鸣谢",
+							"type": "entries",
+							"entries": [
+								"本电子书专业的内页版式，得益于The Homebrewery的技术魔法。",
+								"封面艺术由Createforu完成。",
+								"其余插图来自图库素材、知识共享以及我认为已无版权的图片。如有差错，请通过duncan@hipstersanddragons.com与我联系。"
+							]
+						},
+						{
+							"ENG_name": "Request",
+							"name": "请求",
+							"type": "entries",
+							"entries": [
+								"本内容的设计、撰写与制作耗费了大量时间与心力，恳请各位读者不要将其免费发布到网上。",
+								"获取本内容的唯一合法渠道是DMs Guild。在那里，一杯咖啡的价格就能让你读到书中的全部内容。如果你未曾付费便获取并喜爱上了这份指南，请考虑前往该平台向作者支付应得的报酬，好让他能投入更多时间创作这样的内容。多谢。"
+							]
+						},
+						{
+							"ENG_name": "Copyright",
+							"name": "版权",
+							"type": "entries",
+							"entries": [
+								"DUNGEONS & DRAGONS、D&D、Wizards of the Coast、Forgotten Realms、Ravenloft、龙形&符号，以及Wizards of the Coast的所有其他产品名称及其各自徽标，均为Wizards of the Coast在美国及其他国家的商标。本作品包含Wizards of the Coast的版权材料。这些材料依据《Dungeon Masters Guild社区内容协议》获授权使用。",
+								"本作品中所有其他原创材料的版权归邓肯·罗兹所有（2017），并依据《Dungeon Masters Guild社区内容协议》出版。",
+								"未经Wizards of the Coast与邓肯·罗兹明确的书面许可，禁止以任何形式散布、复制或擅自使用本书所含材料。",
+								"©2017."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
