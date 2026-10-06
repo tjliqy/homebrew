@@ -1,0 +1,73 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Generic Oversized Longbow",
+				"abbreviation": "WDH-GOL",
+				"full": "通用超大长弓",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"version": "1",
+				"dateReleased": "2023-12-12",
+				"authors": [
+					"enders"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"color": "d4af37"
+			}
+		],
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1702410358,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "f973b63106"
+	},
+	"baseitem": [
+		{
+			"ENG_name": "Oversized Longbow",
+			"name": "超大长弓",
+			"source": "Generic Oversized Longbow",
+			"page": 201,
+			"type": "R",
+			"rarity": "unknown",
+			"weight": 2,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"H",
+				"2H"
+			],
+			"range": "150/600",
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"bow": true,
+			"weapon": true,
+			"entries": [
+				"这把独特的武器只能由中型或更大体型，且力量不低于18的生物使用。长弓射出超大号箭矢，造成{@dice 2d6}+使用者力量调整值的穿刺伤害。"
+			],
+			"ammoType": "箭|phb",
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/WDH/Ziraj the Hunter.webp"
+						},
+						"title": "猎人兹拉吉",
+						"width": 830,
+						"height": 1000
+					}
+				]
+			},
+			"foundrySystem": {
+				"damage.parts": [
+					"2d6 + @abilities.str.mod",
+					"piercing"
+				]
+			}
+		}
+	]
+}
