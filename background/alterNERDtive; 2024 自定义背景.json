@@ -1,0 +1,175 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "2024CustomBackground",
+				"abbreviation": "CB'24",
+				"full": "自定义背景（2024规则）",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"version": "1.0",
+				"dateReleased": "2025-03-30",
+				"authors": [
+					"alterNERDtive"
+				],
+				"convertedBy": [
+					"alterNERDtive"
+				],
+				"color": "ff00ff"
+			}
+		],
+		"edition": "one",
+		"status": "ready",
+		"dateAdded": 1743362603,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "d4eb451e22"
+	},
+	"background": [
+		{
+			"ENG_name": "Custom Background",
+			"name": "自定义背景",
+			"source": "2024CustomBackground",
+			"edition": "one",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"feats": [
+				{
+					"anyFromCategory": {
+						"category": [
+							"O"
+						],
+						"count": 1
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"toolProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"value": 5000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Choose Abilties",
+					"name": "选择属性",
+					"type": "entries",
+					"entries": [
+						"选择三个和背景相符的属性：",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"items": [
+								{
+									"ENG_name": "Strength or Dexterity",
+									"type": "item",
+									"name": "力量或敏捷",
+									"entry": "这些属性适合涉及了体力活动的背景。"
+								},
+								{
+									"ENG_name": "Constitution",
+									"type": "item",
+									"name": "体质",
+									"entry": "这个属性适合需要耐力和长时间工作的背景。"
+								},
+								{
+									"ENG_name": "Intelligence or Wisdom",
+									"type": "item",
+									"name": "智力或感知",
+									"entry": "这些属性适合侧重于脑力运动或宗教心灵方面的背景。"
+								},
+								{
+									"ENG_name": "Charisma",
+									"type": "item",
+									"name": "魅力",
+									"entry": "这个属性适合在涉及到表演或社交的背景中出现。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Choose a Feat",
+					"name": "选择一个专长",
+					"type": "entries",
+					"entries": [
+						"从{@filter 起源|feats|category=O}专长中选择一项专长。参考{@book 玩家手册|XPHB}中有关于{@book 起源专长|XPHB|5|起源专长}的范例。"
+					]
+				},
+				{
+					"ENG_name": "Choose Skill Proficiencies",
+					"name": "选择技能熟练",
+					"type": "entries",
+					"entries": [
+						"选择两个适合背景的技能。背景所提供的技能熟练和背景提供的属性值并非要有必然关系。"
+					]
+				},
+				{
+					"ENG_name": "Choose a Tool Proficiency",
+					"name": "选择一个工具熟练",
+					"type": "entries",
+					"entries": [
+						"选择一个工具，它与该背景有关，或是经常被该背景的人使用。"
+					]
+				},
+				{
+					"ENG_name": "Choose Equipment",
+					"name": "选择装备",
+					"type": "entries",
+					"entries": [
+						"组合一套价值 50GP 的装备（购买完毕后多余的钱也会包含在其内）。不要将军用武器和护甲包含在背景给予的装备中，角色会从其职业中获得这两样装备。"
+					]
+				},
+				"{@note 更多信息请参阅{@book 城主指南|XDMG}中的{@book 创建背景|XDMG|2|创建背景}部分。}"
+			]
+		}
+	]
+}
