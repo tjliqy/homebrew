@@ -1,0 +1,5505 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Ar7",
+				"abbreviation": "Ar7",
+				"full": "阿卡迪亚 第7期",
+				"url": "https://shop.mcdmproductions.com/collections/arcadia/products/arcadia-complete-bundle-issues-1-30",
+				"version": "1.0",
+				"dateReleased": "2021-08-01",
+				"authors": [
+					"Hannah Rose",
+					"MCDM Productions",
+					"Sara Thompson",
+					"Sharang Biswas"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"color": "476748"
+			}
+		],
+		"dependencies": {
+			"monster": [
+				"MM"
+			],
+			"monsterFluff": [
+				"MM"
+			]
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1678274581,
+		"dateLastModified": 1777136208,
+		"_dateLastModifiedHash": "1be07512f4"
+	},
+	"_test": {
+		"references": [
+			"SaF"
+		]
+	},
+	"reward": [
+		{
+			"ENG_name": "Friend of the Forest",
+			"name": "森林之友",
+			"source": "Ar7",
+			"page": 24,
+			"type": "Boon",
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"innate": {
+						"_": {
+							"daily": {
+								"2": [
+									"荆棘丛生|PHB"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"在森林中穿行非魔法{@quickref 困难地形|PHB|3}时不需消耗额外移动力。在森林中时，你可以施放{@spell 荆棘丛生}法术，且不需要材料成分。感知是你的该法术施法关键属性。你可以以此方式施放该法术两次而不消耗法术位，并在完成一次长休后恢复所有已耗用的次数。"
+			]
+		}
+	],
+	"spell": [
+		{
+			"ENG_name": "Dust Cloud",
+			"name": "尘云",
+			"source": "Ar7",
+			"page": 21,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一撮泥土"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在射程内自己可见的一点创造一团半径20尺的旋转尘土球体。尘云会绕过墙角扩散，其区域为轻度遮蔽。它持续至法术持续时间结束，或直至中等或更快的风速（至少每小时10英里）将其吹散。",
+				"在云中开始回合、或在一回合内首次进入云中的生物（包括云刚刚出现时进入），必须通过一次体质豁免，否则陷入{@condition 目盲}状态，直至其下个回合开始。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用4环或更高的法术位施放此法术时，法术位每比3环高一环，尘云的半径就增加20尺。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Ranger",
+						"name": "游侠",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					}
+				]
+			},
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"OBS",
+				"SCL",
+				"SGT"
+			]
+		},
+		{
+			"ENG_name": "Flurry of Icicles",
+			"name": "冰凌齐射",
+			"source": "Ar7",
+			"page": 21,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一滴水"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你创造出一阵挟着寒气的锐利冰凌齐射。施放此法术时，你选择效应呈现的形状：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"ENG_name": "Cone",
+							"type": "item",
+							"name": "锥形",
+							"entries": [
+								"冰凌从你手中飞出，形成15尺锥形。"
+							]
+						},
+						{
+							"ENG_name": "Line",
+							"type": "item",
+							"name": "线形",
+							"entries": [
+								"冰凌从你手中射出，形成一条30尺长、5尺宽的直线。"
+							]
+						},
+						{
+							"ENG_name": "Cube",
+							"type": "item",
+							"name": "立方",
+							"entries": [
+								"冰凌从上方落下，形成一个以你30尺内可见一点为中心的10尺立方体。"
+							]
+						}
+					]
+				},
+				"所选区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 2d6}点穿刺伤害和{@damage 2d6}点寒冷伤害，成功则伤害减半。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用3环或更高的法术位施放此法术时，法术位每比2环高一环，寒冷伤害就增加{@damage 1d6}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"cold",
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"ENG_name": "Ice Sheet",
+			"name": "冰面",
+			"source": "Ar7",
+			"page": 21,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一层闪亮的冰面在你射程内所选的地点铺展而开。冰面的区域由至多十个10尺方格组成，你可随意排布，但每个方格至少要有一边与另一方格的边相邻。冰面出现时，区域内的每个生物必须通过一次敏捷豁免，否则应声{@condition 倒地}并受到{@damage 2d6}点寒冷伤害。",
+				"此外，在区域内于一回合中移动超过5尺的生物，在停止移动时必须通过一次敏捷豁免，否则应声{@condition 倒地}并受到{@damage 2d6}点寒冷伤害。",
+				"冰面每个10尺方格的部位护甲等级为12，生命值15，易受火焰伤害，免疫寒冷、毒素和心灵伤害。将冰面的一个10尺部位生命值降至0即可将其摧毁，留下一洼积水，在干涸前视为{@quickref 困难地形|PHB|3}。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"DFT"
+			]
+		},
+		{
+			"ENG_name": "Instant Freeze",
+			"name": "瞬间冻结",
+			"source": "Ar7",
+			"page": 21,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一小块硝石"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将射程内自己可见的一团5尺立方的水冻结。水中的任何生物必须通过一次敏捷豁免，否则陷入{@condition 束缚}状态。被{@condition 束缚}的生物可以用其动作对你的法术豁免DC进行一次力量检定，成功即可破开周身坚冰、重获自由。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用2环或更高的法术位施放此法术时，法术位每比1环高一环，立方体的边长就增加5尺。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					}
+				]
+			},
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			]
+		},
+		{
+			"ENG_name": "Jet of Water",
+			"name": "喷射水柱",
+			"source": "Ar7",
+			"page": 22,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一支小空心管"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你短暂开启一条通往水元素位面的通道。一道盐水喷流沿你选择的方向从你处喷薄而出，形成一条60尺长、5尺宽的直线，并在法术持续时间内保持喷发。在直线上开始回合、或在一回合内首次进入直线的生物必须进行一次力量豁免。豁免失败的生物受到{@damage 4d6}点钝击伤害并被击{@condition 倒地}；豁免成功的生物伤害减半，且不会被击{@condition 倒地}。",
+				"此外，直线上的任何生物朝你移动时，每移动1尺须消耗2尺移动力。",
+				"水柱会熄灭区域内的火焰。直线上未固定于任何物体、也未被任何人穿戴或携带的中型或更小的物件会被冲倒，或被推至多远离你15尺处。",
+				"在法术结束前的每个回合，你都可以用一个附赠动作改变这条水柱直线从你处喷射的方向。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "随级提升",
+					"entries": [
+						"当你使用4环或更高环阶的法术位施放此法术时，伤害每超过3环一环就增加{@damage 1d6}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"DFT",
+				"FMV",
+				"UBA"
+			]
+		},
+		{
+			"ENG_name": "Maelstrom Avatar",
+			"name": "大漩涡化身",
+			"source": "Ar7",
+			"page": 22,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你呼唤风与波浪之灵，以它们奔涌的力量转化自身。在法术结束前，暴风环绕你旋转，细浪在你脚边拍击地面，你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"针对你的攻击检定具有劣势。",
+						"你进行的力量和敏捷豁免具有优势。",
+						"穿行非魔法{@quickref 困难地形|PHB|3}时不需消耗额外移动力。"
+					]
+				},
+				"当你以近战攻击命中一个生物时，你可以选择引导最后一股暴烈之力的涌动，造成额外的{@damage 2d8}点闪电或雷鸣伤害（由你选择）。随后法术结束。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Ranger",
+						"name": "游侠",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"lightning",
+				"thunder"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"AAD"
+			]
+		},
+		{
+			"ENG_name": "Sandstorm",
+			"name": "沙暴",
+			"source": "Ar7",
+			"page": 22,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一撮沙子"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你以射程内自己可见的一点为中心，创造一场半径30尺的沙暴。未固定于任何物体、也未被任何人穿戴或携带的中型或更小的物件会被卷入呼啸的狂风中。",
+				"该区域为重度遮蔽。",
+				"在沙暴中开始回合、或在一回合内首次进入沙暴的生物（包括沙暴刚刚出现时进入），必须通过一次敏捷豁免，否则受到{@damage 5d8}点钝击伤害并陷入{@condition 目盲}状态，直至其下个回合开始。此外，豁免失败的中型或更小的生物会被向随机方向推移10尺。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Ranger",
+						"name": "游侠",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"FMV",
+				"OBJ",
+				"OBS",
+				"SGT"
+			]
+		},
+		{
+			"ENG_name": "Tremorsense",
+			"name": "震颤感知",
+			"source": "Ar7",
+			"page": 22,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "一个微型钟摆"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"{@note {@sense 震颤感知|MM}}",
+				"你触碰一个自愿生物，赋予其感知大地震动的能力。在法术持续期间，该生物能侦测并精确定位120尺内震动的源头，前提是该生物与震动源接触的是同一地面或物质。此感知无法用来侦测飞行或无实体的生物，也无法用来\"看见\"{@condition 隐形}生物（不过，若一个{@condition 隐形}生物在地上或地下移动，它能精确定位其位置）。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Ranger",
+						"name": "游侠",
+						"source": "PHB"
+					}
+				]
+			},
+			"conditionInflict": [
+				"invisible"
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Amulet of Woodland Speech",
+			"name": "林地言语护符",
+			"source": "Ar7",
+			"page": 13,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"这枚小小的石制坠饰被雕成橡果的模样，摸起来微微发暖。",
+				"护符有3点充能，每日黎明恢复所有已耗充能。佩戴此坠饰时，你能听懂并说{@language 木族语|PHB}，且你与非敌对动物互动的感知（{@skill 驯兽}）检定具有优势。此外，你可以用一个动作消耗1点充能，从中施放{@spell 动物交谈}法术。"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"动物交谈"
+					]
+				}
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"ENG_name": "Story Hook: Amulet of Woodland Speech",
+								"type": "entries",
+								"name": "故事钩子：林地言语护符",
+								"page": 13,
+								"entries": [
+									"类人伐木者正在毁掉许多林地居民的栖息地。当伐木者把锯刃对准一片茂盛的树林时，森林中的动物们派觉醒松鼠快爪前来请求角色们的帮助。如果他们能吓走伐木者，或说服他们到别处伐木，快爪就会从自己的过冬储备中取出一枚林地言语护符送给他们。 \"这玩意儿不能啃，但摸着暖和！\""
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Bag of Saplings",
+			"name": "树苗袋",
+			"source": "Ar7",
+			"page": 13,
+			"rarity": "rare",
+			"wondrous": true,
+			"weight": 0.5,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"这个粗糙的手织布袋看似空空如也，但把手伸进去就能摸到许多小小的种子。",
+				"布袋重半磅。",
+				"你可以用一个动作从袋中取出一颗种子并掷出至多20尺远。种子落地时，它会长成一棵{@creature 启蒙树木|MM}{@homebrew |（其数据卡见核心规则）}。除非它死亡或你再从袋中取出另一颗种子，这棵树将保持活化直至下一个日落，届时它会尽可能扎根。",
+				"处于活化状态时，这棵树对你和你的盟友保持友善。战斗中，这棵树与你共享先攻值，但它的回合紧随你的回合之后。你可以用一个附赠动作命令这棵树如何移动、在它的下个回合采取什么动作，或下达笼统的命令，比如攻击你的敌人。若无此类命令，除非遭到攻击，这棵树不会行动，只会保护自己。",
+				"一旦从袋中取出三颗种子，此袋在下一个黎明前无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Belt of Vines",
+			"name": "藤蔓腰带",
+			"source": "Ar7",
+			"page": 13,
+			"rarity": "very rare",
+			"reqAttune": "由德鲁伊",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"这条由藤蔓精巧编织而成的腰带在你围上腰际时会扭动收紧，让卷须缠附其上，稳稳地贴住你。佩戴此腰带时，你可以使用你的{@classFeature 荒野形态|德鲁伊|PHB|2}变为植物形态，可从{@note {@creature 克拉肯藤|Ar7}与{@creature 荆棘丛|Ar7}中}选择{@homebrew |（形态见第14页）}。"
+			]
+		},
+		{
+			"ENG_name": "Charm of Communication",
+			"name": "沟通护符",
+			"source": "Ar7",
+			"page": 13,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"这枚陶制坠饰上印有一个猫爪印的凹痕。当你因{@classFeature 荒野形态|德鲁伊|PHB|2}特性、{@spell 变形术}法术或类似魔法而变为野兽形态时，你能与你30尺内可见的任何野兽或类人生物进行心灵感应交流。"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"ENG_name": "Story Hook: Charm of Communication",
+								"type": "entries",
+								"name": "故事钩子：沟通护符",
+								"page": 13,
+								"entries": [
+									"一位名叫伊苏瓦尔的德鲁伊被困在猞猁形态中，需要角色们的帮助才能恢复类人形态。所幸，挂在他脖子上皮绳间的沟通护符让他能与冒险小队心灵感应交流。他承诺一旦恢复类人形态，就为角色们再制作一枚同样的护符。"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Cloak of the Grove Guardian",
+			"name": "圣林守卫斗篷",
+			"source": "Ar7",
+			"page": 13,
+			"rarity": "legendary",
+			"reqAttune": "由德鲁伊",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				}
+			],
+			"wondrous": true,
+			"acSpecial": "未穿护甲时为11+敏捷+感知",
+			"bonusSpellAttack": "+3",
+			"bonusSpellSaveDc": "+3",
+			"recharge": "dawn",
+			"entries": [
+				"这件华美的斗篷由鲜活的叶片织成，呈现出令人目眩的层层绿意。佩戴此斗篷时，你永远处于{@spell 动物交谈}法术的效果之下，且你的法术攻击检定与德鲁伊法术的法术豁免DC获得+3加值。此外，若你未穿护甲，你的基础护甲等级为11+你的敏捷调整值+你的感知调整值。",
+				"你可以用一个动作以魔法活化你60尺内可见的至多两棵树木。{@creature 活化树|Ar7}的数据与{@creature 树人|MM}{@homebrew |（其数据卡见核心规则）}相同，但其智力和魅力为1，不能说话，且只有猛击这一个动作选项。",
+				"活化树作为你的盟友行动。这棵树保持活化1天，或直到它死亡；直到你陷入{@condition 昏迷}状态或与它的距离超过120尺；或直到你用一个附赠动作把它变回普通树木。此后这棵树会尽可能重新扎根。一旦你使用了此特性，在下一个黎明前你无法再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Copper Guild Badge",
+			"name": "铜制公会徽章",
+			"source": "Ar7",
+			"page": 4,
+			"rarity": "unknown (magic)",
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": 1,
+			"charges": 1,
+			"entries": [
+				"徽章与持有者的灵魂绑定，因此只有本人可以使用。徽章有1点充能，每日黎明时恢复。",
+				"发酵师佩戴徽章时，可以用一个动作消耗1点充能，从中施放以下法术之一，且不需要材料成分：{@spell 侦测毒性和疾病}和{@spell 净化饮食}。"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"侦测毒性和疾病",
+						"净化饮食"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Gold Guild Badge",
+			"name": "金制公会徽章",
+			"source": "Ar7",
+			"page": 4,
+			"rarity": "unknown (magic)",
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"徽章与持有者的灵魂绑定，因此只有本人可以使用。这枚魔法徽章使理事在对抗疾病的豁免检定中具有优势。徽章有3点充能，每日黎明时恢复。",
+				"理事佩戴徽章时，可以用一个动作消耗1点或更多充能，从中施放以下法术之一，且不需要材料成分：{@spell 侦测毒性和疾病}（1点充能）、{@spell 净化饮食}（1点充能）、{@spell 防护毒素}（1点充能）、{@spell 次等复原术}（2点充能）、{@spell 死者交谈}（2点充能）和{@spell 植物交谈}（2点充能）。"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"侦测毒性和疾病",
+						"防护毒素",
+						"净化饮食"
+					],
+					"2": [
+						"次等复原术",
+						"死者交谈",
+						"植物交谈"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Guild Artisan's Scythe",
+			"name": "公会匠人战镰",
+			"source": "Ar7",
+			"page": 5,
+			"baseItem": "长柄刀|PHB",
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"bonusWeapon": "+2",
+			"entries": [
+				"这柄工艺精湛的战镰以石化木为柄，柄上缠绕着黄铜镶嵌的环箍。它的镰刃宽阔扁平，刻有公会的珐琅纹章。你用这把魔法武器进行的攻击检定和伤害掷骰获得+2加值。",
+				{
+					"ENG_name": "Festering Wounds",
+					"type": "entries",
+					"name": "溃烂伤口",
+					"entries": [
+						"被此战镰伤害的生物必须进行一次{@dc 15}的体质豁免。豁免失败者在它的下个回合结束前无法恢复生命值。"
+					]
+				},
+				{
+					"ENG_name": "Slime Form",
+					"type": "entries",
+					"name": "黏液形态",
+					"entries": [
+						"每天一次，你可以用一个动作舔舐战镰的镰刃，将自己变为{@creature 黑布丁|MM}，持续至多1小时。你的装备会融入新形态，你无法启动、使用、持有装备，或以其他方式从任何装备中获益。",
+						"你的游戏数据被黑布丁的数据取代，但你保留你的阵营、个性、生命值、熟练加值，以及你的智力、感知和魅力值。你还保留你所有的技能和豁免熟练项，同时获得黑布丁的熟练项。在布丁形态下，你不能施法、说话，或采取任何需要双手或言语的其他动作。",
+						"如果你使用了分裂反应，你将操控所有新生的{@creature 黑布丁|MM|黑布丁们}。当你的某个{@creature 黑布丁|MM|黑布丁}与其他黑布丁的距离超过30尺，或在还有其他{@creature 黑布丁|MM|黑布丁}存在时生命值降至0，它就会溶解并销毁。如果你的某个{@creature 黑布丁|MM|黑布丁}生命值降至0且没有其他黑布丁存留，你就恢复正常形态，生命值为0，并须如常进行死亡豁免检定。",
+						"你可以用一个附赠动作恢复正常形态。此时，你操控的所有{@creature 黑布丁|MM|黑布丁}会在其中一体所占的空间里合而为一，你的生命值等于结束变身时你所有黑布丁生命值的总和。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Guild Fermenter's Sickle",
+			"name": "公会发酵师镰刀",
+			"source": "Ar7",
+			"page": 5,
+			"baseItem": "镰刀|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 2,
+			"weaponCategory": "simple",
+			"property": [
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"entries": [
+				"这把锻造精美的镰刀完全由白银制成。柄上蚀刻着枝杈状的纹样，令人联想到真菌菌落的地下网络。",
+				"当你用这把镰刀采集原料时，你可以将熟练加值加到采集的属性检定，以及对抗采集原料时释放的毒素、酶或有害物质的豁免检定上。如果你已经熟练于这些检定或豁免，则改为将双倍熟练加值加到检定或豁免上，而非你正常的熟练加值。",
+				"你可以用一个附赠动作将公会发酵师镰刀化为一把绿黏液制成的武器。处于此形态时，这把武器造成的所有伤害均为毒素伤害，且它给予属性检定和豁免检定的加值失效。你可以再用一个附赠动作将武器变回金属形态。"
+			]
+		},
+		{
+			"ENG_name": "Guild Healer's Kit",
+			"name": "公会医疗包",
+			"source": "Ar7",
+			"page": 4,
+			"type": "G",
+			"rarity": "unknown",
+			"entries": [
+				"这个工具包装有{@item 医疗包|PHB}的全部用品，另有醋味的药膏和带着浓烈香料气味的药绷带。",
+				"此工具包有十次使用次数。一个生物可以用一个动作消耗一次使用次数，进行一次{@dc 15}的智力（{@skill 医药}）检定，以此尝试稳定一个生命值为0的生物。检定成功，该生物恢复1点生命值；检定失败，该生物仍会被稳定伤势，但会带着一股浓烈的醋味。",
+				"公会医疗包会在成员晋升到特定等级时颁发，也会发放给代表公会执行危险任务的成员。通常即使对公会成员也不出售，以免失窃外流，向外界暴露公会的真正目的。"
+			]
+		},
+		{
+			"ENG_name": "Halo of the Heavens",
+			"name": "天穹光环",
+			"source": "Ar7",
+			"page": 15,
+			"rarity": "very rare",
+			"reqAttune": "由德鲁伊",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"这圈微光闪烁的光环悬浮于佩戴者头顶上方一点，以金色的光辉照亮其面容。佩戴此光环时，你可以消耗一次你的{@classFeature 荒野形态|德鲁伊|PHB|2}特性，变为{@creature 天马|MM}，或消耗两次{@classFeature 荒野形态|德鲁伊|PHB|2}特性，变为{@creature 独角兽|MM}{@homebrew |（这些数据卡见核心规则）}。此外，佩戴此光环时，你与天界生物互动的魅力检定具有优势。"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"ENG_name": "Story Hook: Halo of the Heavens",
+								"type": "entries",
+								"name": "故事钩子：天穹光环",
+								"page": 15,
+								"entries": [
+									"一头名叫希艾拉的受伤{@creature 独角兽|MM}踉跄着穿过灌木丛，向冒险小队发出紧急恳求：帮助她拯救她的伴侣艾丝黛儿\u2014\u2014后者被一{@creature 夜鬼婆（鬼婆集会）|MM|夜鬼婆集会}掳走，它们打算慢慢抽干她的血来制作新的心石。如果角色们击败了鬼婆，独角兽们会以一枚天穹光环作为酬谢。又或者，如果角色们本来就有意帮助独角兽，希艾拉会预先把天穹光环交给他们，助他们完成使命。"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/HalooftheHeavens.webp"
+						},
+						"altText": "一顶焕发黄光的冠冕，蜿蜒弯曲，正中嵌着一只绿眼。",
+						"width": 732,
+						"height": 477
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/HalooftheHeaveansElf.webp"
+						},
+						"altText": "一顶散发金光、饰有一只竖瞳绿眼的冠冕，悬浮于一位被叶片环绕的精灵头顶。",
+						"width": 516,
+						"height": 624
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Memory Chocolate",
+			"name": "记忆巧克力",
+			"source": "Ar7",
+			"page": 6,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"如果让可可豆在新月的影响下发酵，并在制成巧克力之前举行特定的妖精仪式，所得的甜点就会成为记忆巧克力\u2014\u2014一种格外紧实、香气怡人的食物。",
+				"当你把巧克力含在舌上融化1分钟后，你可以用一个动作亲吻或舔舐一个自愿的生物，将其带入你过去的一段记忆。（舔舐被认为比亲吻更失礼。）此效应持续到下一个黎明。",
+				"你和目标在精神上被送入这段记忆，你们的肉体则相拥不动，陷入一种恍惚状态。在体验记忆期间，你们不能移动或采取任何动作，也无法以自己的感官感知任何事物。",
+				"由你选择这段记忆，你以现在的模样出现在其中，但只是一名无法被察觉的旁观者，不能对记忆产生任何影响。目标则以你过去的身份进入记忆，完全依照你当年的经历体验这段记忆，但无法改变它。记忆结束后、效应结束前，你可以选择开启一段新的记忆、重复同一段记忆，或结束这出神状态。",
+				"记忆共享持续至下一个黎明，或直至你将其终结。目标可以随时选择离开记忆（无需动作）并醒来。"
+			]
+		},
+		{
+			"ENG_name": "Scarlet Sausage",
+			"name": "绯红香肠",
+			"source": "Ar7",
+			"page": 7,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"{@creature 红帽子|MPMM}是一种邪恶的妖精生物，染红其同名帽子的血液拥有魔法特性。将血液从帽子中挤出、提纯并腌制后，便可制成香肠。绯红香肠的口味见仁见智，但它是目前所知唯一能缓解\u2014\u2014某种意义上\u2014\u2014吸血鬼症的东西。",
+				"一个{@creature 初生吸血鬼|MM}可以用一个动作吃下一根绯红香肠。或者，另一个生物也可以用一个动作，把一根绯红香肠喂给一个{@condition 失能}的{@creature 初生吸血鬼|MM}。",
+				"在8小时内，该{@creature 初生吸血鬼|MM}会恢复昔日的人格与记忆。{@creature 吸血鬼|MM|真吸血鬼}不受绯红香肠的影响。",
+				"{@creature 初生吸血鬼|MM}会逐渐习惯绯红香肠的效果。如果一个{@creature 初生吸血鬼|MM}已经吃过一根绯红香肠，那么它之后每多吃一根，效果都会再缩短1小时，直至绯红香肠对它完全失效。"
+			]
+		},
+		{
+			"ENG_name": "Sepulcheese",
+			"name": "墓穴奶酪",
+			"source": "Ar7",
+			"page": 6,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"当山羊奶与牛奶的混合物在一具活化的丧尸体腔内以特殊技法发酵时，一种奇特的真菌会在数月间将其转化为墓穴奶酪\u2014\u2014一种橙色带紫色纹路、泥土气息浓郁、质地酥脆的奶酪。",
+				"你可以用一个动作吃下这种奶酪，获得以下特性：你可以用一个动作以奥术之力呼喝。你30尺内每个能看到或听到你的不死生物都必须进行一次{@dc 17}的感知豁免。豁免失败的生物会被驱退1分钟，或直到它受到任何伤害。",
+				"被驱退的生物必须在其回合中竭力远离你移动，且不能自愿移动到你30尺内的空间。它也不能进行反应。",
+				"在其动作中，它只能采取{@action 疾走}动作，或尝试摆脱阻止其移动的效应。若无路可走，该生物可以采取{@action 回避}动作。",
+				"吃完奶酪后，你只能使用此特性一次。如果你在吃完奶酪后的下一次长休前没有使用它，你就会失去此特性。",
+				"在使用此特性前吃下不止一块奶酪，并不会增强效果的强度或频次。事实上，短时间内吃太多反而会令人的皮肤枯萎，仿佛受了可怕的死灵能量侵蚀。"
+			]
+		},
+		{
+			"ENG_name": "Silver Guild Badge",
+			"name": "银制公会徽章",
+			"source": "Ar7",
+			"page": 4,
+			"rarity": "unknown (magic)",
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": 2,
+			"charges": 2,
+			"entries": [
+				"徽章与持有者的灵魂绑定，因此只有本人可以使用。这枚魔法徽章使匠人在对抗疾病的豁免检定中具有优势。徽章有2点充能，每日黎明时恢复。",
+				"匠人佩戴徽章时，可以用一个动作消耗1点或更多充能，从中施放以下法术之一，且不需要材料成分：{@spell 侦测毒性和疾病}（1点充能）、{@spell 防护毒素}（1点充能）、{@spell 净化饮食}（1点充能）和{@spell 次等复原术}（2点充能）。"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"侦测毒性和疾病",
+						"防护毒素",
+						"净化饮食"
+					],
+					"2": [
+						"次等复原术"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Staff of the Desert Sands",
+			"name": "沙漠之沙法杖",
+			"source": "Ar7",
+			"page": 15,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": "由德鲁伊或游侠",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				},
+				{
+					"class": "游侠"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"这根法杖可以当作魔法长棍挥舞，用其进行的攻击检定和伤害掷骰获得+2加值。手持此杖时，你的法术攻击检定获得+2加值。此外，你不会因极端高温或极端寒冷的影响而获得{@condition 力竭}等级。",
+				"此法杖有10点充能用于以下特性。它每日黎明恢复{@dice 1d6 + 4}点已耗充能。如果你耗尽了最后一点充能，则掷一次{@dice d20}。掷出1时，法杖失去所有特性，成为一根非魔法的长棍。",
+				{
+					"ENG_name": "Spells",
+					"type": "entries",
+					"name": "法术",
+					"entries": [
+						"你可以用一个动作消耗法杖的1点或更多充能，使用你的法术豁免DC和施法关键属性调整值从中施放以下法术之一：{@spell 朦胧术}（2点充能）{@spell 尘云|Ar7}*（3点充能）{@spell 妖火}（1点充能）{@spell 造风术}（2点充能）{@spell 融身入石}（3点充能）{@spell 动物交谈}（1点充能）{@spell 石肤术}（4点充能）",
+						"你也可以用一个动作从法杖施放{@spell 造水术/枯水术}法术，而不消耗任何充能。"
+					]
+				},
+				{
+					"ENG_name": "Spirit of the Sand",
+					"type": "entries",
+					"name": "沙之精魂",
+					"entries": [
+						"你可以用一个动作将法杖一端插入沙中并消耗1点充能，以法杖为中心施放{@spell 沙暴|Ar7}*。你和你可见的至多六个由你选择的生物免疫此沙暴的效果。一旦使用此特性，在下一个黎明前无法再次使用。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"will": [
+					"造水术/枯水术"
+				],
+				"charges": {
+					"1": [
+						"妖火",
+						"沙暴|Ar7",
+						"动物交谈"
+					],
+					"2": [
+						"朦胧术",
+						"造风术"
+					],
+					"3": [
+						"尘云|Ar7",
+						"融身入石"
+					],
+					"4": [
+						"石肤术"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Staff of the Endless Plains",
+			"name": "无垠平原法杖",
+			"source": "Ar7",
+			"page": 16,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": "由德鲁伊或游侠",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				},
+				{
+					"class": "游侠"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"这根法杖可以当作魔法长棍挥舞，用其进行的攻击检定和伤害掷骰获得+2加值。手持此杖时，你的法术攻击检定获得+2加值。此外，你在高草中躲藏的敏捷（{@skill 隐匿}）检定，以及穿越草地追踪生物的感知（{@skill 求生}）检定具有优势。",
+				"此法杖有10点充能用于以下特性。它每日黎明恢复{@dice 1d6 + 4}点已耗充能。如果你耗尽了最后一点充能，则掷一次{@dice d20}。掷出1时，法杖失去所有特性，成为一根非魔法的长棍。",
+				{
+					"ENG_name": "Spells",
+					"type": "entries",
+					"name": "法术",
+					"entries": [
+						"你可以用一个动作消耗法杖的1点或更多充能，使用你的法术豁免DC和施法关键属性调整值从中施放以下法术之一：{@spell 生物定位术}（4点充能）{@spell 物件定位术}（2点充能）{@spell 大步奔行}（每法术环阶1点充能，至多4环）{@spell 行动无踪}（2点充能）{@spell 植物滋长}（3点充能）{@spell 探知术}（5点充能）{@spell 御风而行}（6点充能）",
+						"你也可以用一个动作从法杖施放{@spell 动植物定位术}法术，而不消耗任何充能。"
+					]
+				},
+				{
+					"ENG_name": "Traveler's Blessing",
+					"type": "entries",
+					"name": "旅者祝福",
+					"entries": [
+						"你可以用一个动作消耗1点充能，并选择你30尺内可见的至多六个生物。在接下来的八小时内，每个生物的旅速翻倍，忽略其已有{@condition 力竭}等级的影响，且不会因环境危害或劳累旅行而获得新的{@condition 力竭}等级。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"will": [
+					"动植物定位术"
+				],
+				"charges": {
+					"1": [
+						"大步奔行"
+					],
+					"2": [
+						"物件定位术",
+						"行动无踪"
+					],
+					"3": [
+						"植物滋长"
+					],
+					"4": [
+						"生物定位术"
+					],
+					"5": [
+						"探知术"
+					],
+					"6": [
+						"御风而行"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Staff of the Frozen Tundra",
+			"name": "冰冻苔原法杖",
+			"source": "Ar7",
+			"page": 16,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": "由德鲁伊或游侠",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				},
+				{
+					"class": "游侠"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"这根法杖可以当作魔法长棍挥舞，用其进行的攻击检定和伤害掷骰获得+2加值。手持此杖时，你的法术攻击检定获得+2加值。此外，你不会因极端寒冷的影响而获得{@condition 力竭}等级，且你在穿越冰封地带追踪生物的感知（{@skill 求生}）检定具有优势。",
+				"此法杖有10点充能用于以下特性。它每日黎明恢复{@dice 1d6 + 4}点已耗充能。如果你耗尽了最后一点充能，则掷一次{@dice d20}。掷出1时，法杖失去所有特性，成为一根非魔法的长棍。",
+				{
+					"ENG_name": "Spells",
+					"type": "entries",
+					"name": "法术",
+					"entries": [
+						"你可以用一个动作消耗法杖的1点或更多充能，使用你的法术豁免DC和施法关键属性调整值从中施放以下法术之一：{@spell 造水术/枯水术}（每法术环阶1点充能，至多4环）{@spell 冰凌齐射|Ar7}*（2点充能）{@spell 定身怪物}（5点充能）{@spell 冰面|Ar7}*（4点充能）{@spell 瞬间冻结|Ar7}*（每法术环阶1点充能，至多4环）{@spell 冰墙术}（6点充能）{@spell 水上行走}（3点充能）",
+						"你也可以用一个动作从法杖施放{@spell 防护能量}（仅寒冷）法术，而不消耗任何充能。"
+					]
+				},
+				{
+					"ENG_name": "Igloo Form",
+					"type": "entries",
+					"name": "冰屋形态",
+					"entries": [
+						"你可以用一个动作将法杖一端插入雪或冰中并消耗1点充能，将其变为一座冰屋，持续8小时。冰屋是一座以法杖为中心、半径10尺的穹顶，护甲等级14，生命值30。它可供十个中型或更小的生物栖身，无论屋外天气如何，冰屋内部始终保持舒适的温度。",
+						"冰屋看似寻常，但若被侦测魔法指向，会散发微弱的变化系魔法灵光。你可以一边触碰冰屋，一边用另一个动作说出指令词，提前解除冰屋。如果冰屋的生命值降至0，法杖会恢复常态。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"will": [
+					"防护能量"
+				],
+				"charges": {
+					"1": [
+						"造水术/枯水术",
+						"瞬间冻结|Ar7"
+					],
+					"2": [
+						"冰凌齐射|Ar7"
+					],
+					"3": [
+						"水上行走"
+					],
+					"4": [
+						"冰面|Ar7"
+					],
+					"5": [
+						"定身怪物"
+					],
+					"6": [
+						"冰墙术"
+					]
+				}
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"ENG_name": "Story Hook: Staff of the Frozen Tundra",
+								"type": "entries",
+								"name": "故事钩子：冰冻苔原法杖",
+								"page": 16,
+								"entries": [
+									"在穿越雪原的旅途中，角色们发现了一个躲避严寒极夜的完美庇护所：一座冰屋！如果小队在冰屋里过夜，一位德鲁伊或游侠角色会梦见一只目光锐利的白狐，它化为一位矮人老妇，在其耳边低语指令词{@i 哈里布尔}。此指令词能将冰屋变回冰冻苔原法杖。"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Staff of the Granite Peaks",
+			"name": "花岗岩峰法杖",
+			"source": "Ar7",
+			"page": 17,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "由德鲁伊或游侠",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				},
+				{
+					"class": "游侠"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"这根法杖可以当作魔法长棍挥舞，用其进行的攻击检定和伤害掷骰获得+2加值。手持此杖时，你的法术攻击检定获得+2加值。此外，你和你在30尺内选择的生物会被视为已适应在海拔20,000尺以下的高度呼吸。",
+				"此法杖有10点充能用于以下特性。",
+				"它每日黎明恢复{@dice 1d6 + 4}点已耗充能。如果你耗尽了最后一点充能，则掷一次{@dice d20}。掷出1时，法杖失去所有特性，成为一根非魔法的长棍。",
+				{
+					"ENG_name": "Spells",
+					"type": "entries",
+					"name": "法术",
+					"entries": [
+						"你可以用一个动作消耗法杖的1点或更多充能，使用你的法术豁免DC和施法关键属性调整值从中施放以下法术之一：{@spell 召雷术}（3点充能）{@spell 跳跃术}（1点充能）{@spell 融身入石}（3点充能）{@spell 地动术}（6点充能）{@spell 塑石术}（4点充能）{@spell 雷鸣波}（每法术环阶1点充能，至多4环）{@spell 震颤感知|Ar7}*（2点充能）",
+						"你也可以用一个反应从法杖施放{@spell 羽落术}法术，而不消耗任何充能。"
+					]
+				},
+				{
+					"ENG_name": "Bridge Form",
+					"type": "entries",
+					"name": "桥梁形态",
+					"entries": [
+						"你可以用一个动作将法杖一端插入深壑或其他裂隙5尺内的地面，并消耗1点充能，创造一座坚固的木索桥，最长50尺、宽5尺、护甲等级15、每5尺一段各20点生命值。桥看起来平平无奇，但若被侦测魔法指向，会散发微弱的变化系魔法灵光。你可以一边触碰桥，一边用另一个动作说出其指令词，让法杖恢复常态。法杖复原时，桥上任何生物都会坠落。如果桥的任意5尺段生命值降至0，法杖也会恢复常态。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"will": [
+					"羽落术"
+				],
+				"charges": {
+					"1": [
+						"跳跃术",
+						"雷鸣波"
+					],
+					"2": [
+						"震颤感知|Ar7"
+					],
+					"3": [
+						"召雷术",
+						"融身入石"
+					],
+					"4": [
+						"塑石术"
+					],
+					"6": [
+						"地动术"
+					]
+				}
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"ENG_name": "Story Hook: Staff of the Granite Peaks",
+								"type": "entries",
+								"name": "故事钩子：花岗岩峰法杖",
+								"page": 17,
+								"entries": [
+									"在山中旅行时，角色们遇到一道由一座简易桥梁跨越的险峻深壑。过桥时，一位把手放在绳索扶手上的德鲁伊或游侠角色会听见指令词{@i 哈库阿尔}在脑海中回响。此指令词能将桥变回花岗岩峰法杖。"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/TheGranitePeaks.webp"
+						},
+						"altText": "四名旅人正跨过一道横亘于两座石峰之间的宽阔木桥。明亮的落日映照着远方群山间奔流的江河。",
+						"width": 1069,
+						"height": 678
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Staff of the Seasons",
+			"name": "季节法杖",
+			"source": "Ar7",
+			"page": 19,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "由施法者",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"一位远古雅灵德鲁伊的灵魂栖居于这根长长的木杖之中，法杖会随灵魂当下的心境变换形态。每当你完成一次长休，掷一次{@dice 1d4}来决定法杖呈现的形态：1（秋）、2（冬）、3（春）或4（夏）。",
+				"此法杖有10点充能。法杖每日黎明恢复{@dice 1d6 + 4}点已耗充能。如果你耗尽了最后一点充能，则掷一次{@dice d20}。掷出1时，法杖会化为枯叶，永远消失。手持此杖时，你可以用一个动作消耗1点或更多充能，使用你的法术豁免DC和施法关键属性调整值从中施放特定法术。",
+				{
+					"ENG_name": "Autumn Form",
+					"type": "entries",
+					"name": "秋之形态",
+					"entries": [
+						"红金二色的小叶片环绕杖首，织成一片夺目的秋日华盖。法杖处于此形态时，你可以从中施放以下法术：{@spell 援助术}（2点充能）、{@spell 祝福术}（每法术环阶1点充能，至多4环）、{@spell 造粮术}（3点充能）和{@spell 疗伤术}（每法术环阶1点充能，至多4环）。"
+					]
+				},
+				{
+					"ENG_name": "Winter Form",
+					"type": "entries",
+					"name": "冬之形态",
+					"entries": [
+						"杖身摸起来冰凉，顶端抽出一簇簇小小的冬青。法杖处于此形态时，你可以从中施放以下法术：{@spell 灾祸术}（每法术环阶1点充能，至多4环）、{@spell 目盲术/耳聋术}（2点充能）、{@spell 造风术}（2点充能）和{@spell 睡眠术}（每法术环阶1点充能，至多4环）。"
+					]
+				},
+				{
+					"ENG_name": "Spring Form",
+					"type": "entries",
+					"name": "春之形态",
+					"entries": [
+						"多节的杖首缀满新叶与含苞的花朵。法杖处于此形态时，你可以从中施放以下法术：{@spell 希望信标}（3点充能）、{@spell 咒唤兽群}（3点充能）、{@spell 强化属性}（2点充能）和{@spell 神莓术}（1点充能）。"
+					]
+				},
+				{
+					"ENG_name": "Summer Form",
+					"type": "entries",
+					"name": "夏之形态",
+					"entries": [
+						"深绿的叶片掩映着杖首，在无形微风中轻轻沙沙作响。法杖处于此形态时，你可以从中施放以下法术：{@spell 不灭明焰}（2点充能）、{@spell 昼明术}（3点充能）、{@spell 加速术}（3点充能）和{@spell 英雄气概}（每法术环阶1点充能，至多4环）。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"灾祸术",
+						"祝福术",
+						"疗伤术",
+						"神莓术",
+						"英雄气概",
+						"睡眠术"
+					],
+					"2": [
+						"援助术",
+						"目盲术/耳聋术",
+						"不灭明焰",
+						"强化属性",
+						"造风术"
+					],
+					"3": [
+						"希望信标",
+						"咒唤兽群",
+						"造粮术",
+						"昼明术",
+						"加速术"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Staff of the Swamplands",
+			"name": "沼泽地法杖",
+			"source": "Ar7",
+			"page": 18,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": "由德鲁伊或游侠",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				},
+				{
+					"class": "游侠"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"这根法杖可以当作魔法长棍挥舞，用其进行的攻击检定和伤害掷骰获得+2加值。手持此杖时，你的法术攻击检定获得+2加值。此外，你在沼泽中悄声移动的敏捷（{@skill 隐匿}）检定，以及穿越泥泞沼地追踪生物的感知（{@skill 求生}）检定具有优势。",
+				"此法杖有10点充能用于以下特性。它每日黎明恢复{@dice 1d6 + 4}点已耗充能。如果你耗尽了最后一点充能，则掷一次{@dice d20}。掷出1时，法杖失去所有特性，成为一根非魔法的长棍。",
+				{
+					"ENG_name": "Spells",
+					"type": "entries",
+					"name": "法术",
+					"entries": [
+						"你可以用一个动作消耗法杖的1点或更多充能，使用你的法术豁免DC和施法关键属性调整值从中施放以下法术之一：{@spell 纠缠术}（1点充能）{@spell 云雾术}（每法术环阶1点充能，至多4环）{@spell 巨虫术}（4点充能）{@spell 疫病虫群}（5点充能）{@spell 植物滋长}（3点充能）{@spell 荆棘丛生}（2点充能）{@spell 水上行走}（3点充能）",
+						"你也可以用一个动作从法杖施放{@spell 植物交谈}法术，而不消耗任何充能。"
+					]
+				},
+				{
+					"ENG_name": "Bog",
+					"type": "entries",
+					"name": "泥沼",
+					"entries": [
+						"你可以用一个动作将法杖一端插入地面并消耗1点充能，在法杖周围创造一片半径60尺的泥沼。此区域对除你之外的生物而言是{@quickref 困难地形|PHB|3}。在泥沼中开始回合的其他生物必须对你的法术豁免DC进行一次力量豁免，失败则其速度降为0，直至其下个回合开始。泥沼持续{@dice 1d4 + 2}轮，或直至你将法杖拔出地面，此时泥沼会被吸入地底并消失。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"will": [
+					"植物交谈"
+				],
+				"charges": {
+					"1": [
+						"纠缠术",
+						"云雾术"
+					],
+					"2": [
+						"荆棘丛生"
+					],
+					"3": [
+						"植物滋长",
+						"水上行走"
+					],
+					"4": [
+						"巨虫术"
+					],
+					"5": [
+						"疫病虫群"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Staff of the Tides",
+			"name": "潮汐法杖",
+			"source": "Ar7",
+			"page": 18,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": "由德鲁伊或游侠",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				},
+				{
+					"class": "游侠"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"modifySpeed": {
+				"equal": {
+					"swim": "walk"
+				}
+			},
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"这根法杖可以当作魔法长棍挥舞，用其进行的攻击检定和伤害掷骰获得+2加值。手持此杖时，你的法术攻击检定获得+2加值。此外，你获得等于你步行速度的游泳速度，且当你处于有潮汐的水域10英里内时，你始终知道下一次涨潮和退潮的时机。",
+				"此法杖有10点充能用于以下特性。它每日黎明恢复{@dice 1d6 + 4}点已耗充能。如果你耗尽了最后一点充能，则掷一次{@dice d20}。掷出1时，法杖失去所有特性，成为一根非魔法的长棍。",
+				{
+					"ENG_name": "Spells",
+					"type": "entries",
+					"name": "法术",
+					"entries": [
+						"你可以用一个动作消耗法杖的1点或更多充能，使用你的法术豁免DC和施法关键属性调整值从中施放以下法术之一：{@spell 操控水体}（4点充能）{@spell 造水术/枯水术}（每法术环阶1点充能，至多4环）{@spell 云雾术}（每法术环阶1点充能，至多4环）{@spell 造风术}（2点充能）{@spell 喷射水柱|Ar7}*（3点充能）{@spell 大漩涡化身|Ar7}*（4点充能）{@spell 水上行走}（3点充能）",
+						"你也可以用一个动作从法杖施放{@spell 水下呼吸}法术，而不消耗任何充能。"
+					]
+				},
+				{
+					"ENG_name": "Kayak Form",
+					"type": "entries",
+					"name": "皮艇形态",
+					"entries": [
+						"你可以用一个动作将法杖一端没入水中并消耗1点充能，将法杖变为一支船桨和一条至多容纳两个中型生物的皮艇。只有你能划动这条皮艇。皮艇看似寻常，但若被侦测魔法指向，会散发微弱的变化系魔法灵光。手持船桨时，你可以用一个动作说出其指令词，让法杖恢复常态。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"will": [
+					"水下呼吸"
+				],
+				"charges": {
+					"1": [
+						"造水术/枯水术",
+						"云雾术"
+					],
+					"2": [
+						"造风术"
+					],
+					"3": [
+						"喷射水柱|Ar7",
+						"水上行走"
+					],
+					"4": [
+						"操控水体",
+						"大漩涡化身|Ar7"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Subterranean Staff",
+			"name": "地下法杖",
+			"source": "Ar7",
+			"page": 19,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "由德鲁伊或游侠",
+			"reqAttuneTags": [
+				{
+					"class": "德鲁伊"
+				},
+				{
+					"class": "游侠"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"这根法杖可以当作魔法长棍挥舞，用其进行的攻击检定和伤害掷骰获得+2加值。手持此杖时，你的法术攻击检定获得+2加值。此外，你在地下时不会被{@quickref 突袭|PHB|3|0|突袭}。",
+				"此法杖有10点充能用于以下特性。它每日黎明恢复{@dice 1d6 + 4}点已耗充能。如果你耗尽了最后一点充能，则掷一次{@dice d20}。掷出1时，法杖失去所有特性，成为一根非魔法的长棍。",
+				{
+					"ENG_name": "Spells",
+					"type": "entries",
+					"name": "法术",
+					"entries": [
+						"你可以用一个动作消耗法杖的1点或更多充能，使用你的法术豁免DC和施法关键属性调整值从中施放以下法术之一：{@spell 妖火}（1点充能）{@spell 融身入石}（3点充能）{@spell 行动无踪}（2点充能）{@spell 防护毒素}（2点充能）{@spell 石肤术}（4点充能）{@spell 震颤感知|Ar7}*（2点充能）{@spell 石墙术}（5点充能）",
+						"你也可以用一个动作从法杖施放{@spell 黑暗视觉}法术，而不消耗任何充能。"
+					]
+				},
+				{
+					"ENG_name": "Web Spinner",
+					"type": "entries",
+					"name": "织网者",
+					"entries": [
+						"你可以用一个动作消耗1点充能，从法杖中射出一股粗厚的黏性蛛网。你使用你的施法关键属性，对你30尺内可见的一个生物进行一次远程法术攻击。",
+						"命中时，目标被{@condition 束缚}。被{@condition 束缚}的目标可以用其动作对你的法术豁免DC进行一次力量检定，成功即可挣脱蛛网。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"will": [
+					"黑暗视觉"
+				],
+				"charges": {
+					"1": [
+						"妖火"
+					],
+					"2": [
+						"行动无踪",
+						"防护毒素",
+						"震颤感知|Ar7"
+					],
+					"3": [
+						"融身入石"
+					],
+					"4": [
+						"石肤术"
+					],
+					"5": [
+						"石墙术"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Wildflower Wand",
+			"name": "野花魔杖",
+			"source": "Ar7",
+			"page": 19,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"这根纤细的木杖上刻着缠绕杖身的小小野花。手持此杖时，你可以随意施放{@spell 德鲁伊伎俩}法术。"
+			],
+			"attachedSpells": {
+				"will": [
+					"德鲁伊伎俩#c"
+				]
+			}
+		}
+	],
+	"itemGroup": [
+		{
+			"ENG_name": "Guild Badge",
+			"name": "公会徽章",
+			"source": "Ar7",
+			"page": 4,
+			"rarity": "unknown (magic)",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"徽章有三种颜色：金色（理事）、银色（匠人）、铜色（发酵师）。金徽章持有者也可以同时佩戴较低等级的徽章，以保密自己的理事身份。",
+				"徽章与持有者的灵魂绑定，因此只有本人可以使用。"
+			],
+			"items": [
+				"铜制公会徽章|Ar7",
+				"银制公会徽章|Ar7",
+				"金制公会徽章|Ar7"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"侦测毒性和疾病",
+						"净化饮食"
+					]
+				}
+			}
+		}
+	],
+	"language": [
+		{
+			"ENG_name": "Common Signs",
+			"name": "通用手语",
+			"source": "Ar7",
+			"entries": [
+				"与由多种语言借来的手势、口语词汇和符号混杂而成的{@language 盗贼黑话}不同，通用手语是一门完整的手语，借用了{@language 矮人语}、{@language 精灵语}和{@language 地底通用语}的元素。它被视为一门通用语言，被残障人士群体采用，尤其是在城市之中。因此，国度各地的大多数人都能用它交流。",
+				"通用手语的设计易于学习，施法者也可以借助它来施放法术。阻止施放含言语成分法术的效应\u2014\u2014例如{@spell 沉默术}法术创造的寂静区域\u2014\u2014对使用通用手语的施法者依然有效。受此类法术或效应影响时，施法者会忘记施放含言语成分法术所需的重要手势。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Aethelfaer",
+			"name": "艾瑟尔法尔",
+			"isNamedCreature": true,
+			"source": "Ar7",
+			"page": 26,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "精灵",
+						"prefix": "木"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item +2 胸甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": {
+					"number": 35,
+					"condition": "（穿戴假足时40尺）"
+				}
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"dex": "+7",
+				"wis": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"animal handling": "+6",
+				"insight": "+6",
+				"nature": "+4",
+				"perception": "+6",
+				"stealth": "+7",
+				"survival": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"通用语",
+				"{@language 通用手语|Ar7}",
+				"精灵语",
+				"木族语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"艾瑟尔法尔是7级施法者。其施法关键属性为感知（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。他掌握了以下游侠法术："
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 疗伤术}",
+								"{@spell 猎人印记}",
+								"{@spell 大步奔行}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 行动无踪}",
+								"{@spell 诚实之域}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Archery Fighting Style",
+					"name": "射击战斗风格",
+					"entries": [
+						"艾瑟尔法尔使用远程武器进行的攻击检定获得+2加值（已计入攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Athletic Advantage",
+					"name": "运动优势",
+					"entries": [
+						"穿戴假足时，艾瑟尔法尔进行攀爬和跳跃的力量（{@skill 运动}）检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Cunning Action",
+					"name": "灵巧动作",
+					"entries": [
+						"在自己的每个回合，艾瑟尔法尔可以用一个附赠动作采取{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+					]
+				},
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"艾瑟尔法尔对抗{@condition 魅惑}的豁免检定具有优势，且魔法无法使其入睡。"
+					]
+				},
+				{
+					"ENG_name": "Poison Application",
+					"name": "涂毒",
+					"entries": [
+						"艾瑟尔法尔的假肢里藏着一小罐毒药。他可以用一个附赠动作将毒药涂在一件武器或一发弹药上。毒药在1小时内保持有效，或直到该武器或弹药对目标造成伤害为止。被{@condition 中毒}的武器或弹药击中的目标必须进行一次{@dc 11}的体质豁免，豁免失败者受到10（{@damage 3d6}）点毒素伤害，成功则伤害减半。艾瑟尔法尔备有二十份毒药。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"艾瑟尔法尔用长弓攻击两次，或用短剑攻击三次。"
+					]
+				},
+				{
+					"ENG_name": "Longbow",
+					"name": "长弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 9}，射程150/600尺，单一目标。{@h}8（{@damage 1d8 + 4}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Primeval Awareness",
+					"name": "原初意识",
+					"entries": [
+						"艾瑟尔法尔消耗一个法术位，将他的感知聚焦于周遭环境。他所消耗法术位每有一环，就能在1分钟内感知以下类型的生物是否存在于1英里内：异怪、天界生物、巨龙、元素、妖精、邪魔和不死生物。他无法感知这些生物的位置或数量。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Deflect (1/Day)",
+					"name": "偏转（1/日）",
+					"entries": [
+						"当艾瑟尔法尔被远程武器攻击命中且佩戴假肢时，他可以尝试偏转该攻击所用的投射物。他所受的该攻击伤害减少12（{@dice 1d10 + 7}）。如果伤害被减至0，艾瑟尔法尔将接住投射物，并可在同一反应中用它进行一次远程攻击，攻击检定获得{@hit 9}加值。此攻击使用投射物原本的射程。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/AethelfaerToken.webp"
+			},
+			"attachedItems": [
+				"长弓|phb",
+				"短剑|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			]
+		},
+		{
+			"ENG_name": "Aethelfaer Retainer",
+			"name": "艾瑟尔法尔（侍从）",
+			"source": "Ar7",
+			"page": 30,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "精灵",
+						"prefix": "木"
+					}
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"中甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "生命值层级等同于其等级"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "（视血统而定）"
+				}
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 14,
+			"int": 14,
+			"wis": 18,
+			"cha": 14,
+			"save": {
+				"str": "+6",
+				"dex": "+3",
+				"con": "+3",
+				"int": "+3",
+				"wis": "+6",
+				"cha": "+3"
+			},
+			"senses": [
+				"视血统而定"
+			],
+			"passive": null,
+			"languages": [
+				"通用语",
+				"{@language 通用手语|Ar7}",
+				"精灵语",
+				"木族语"
+			],
+			"cr": "未知",
+			"trait": [
+				{
+					"ENG_name": "Retainer",
+					"name": "侍从",
+					"entries": [
+						"此生物是一名侍从（Retainer），如{@book Strongholds and Followers|SaF|8|Retainers}所述"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Signature Attack",
+					"name": "招牌攻击",
+					"entries": [
+						"{@atk rw} 命中{@hit 9}，射程150/600尺，单一目标。{@h}12（{@damage 2d8 + 3}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Poison Arrow (3/Day)",
+					"name": "毒箭（3/日）",
+					"entries": [
+						"{@i 先决条件：3级侍从}",
+						"艾瑟尔法尔进行一次招牌攻击。如果他命中一个生物，目标必须进行一次{@dc 11}的体质豁免，豁免失败者受到10（{@damage 3d6}）点毒素伤害，成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Multiattack (1/Day)",
+					"name": "多重攻击（1/日）",
+					"entries": [
+						"{@i 先决条件：7级侍从}",
+						"艾瑟尔法尔进行三次招牌攻击，然后采取{@action 疾走}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Cunning Action (3/Day)",
+					"name": "灵巧动作（3/日）",
+					"entries": [
+						"{@i 先决条件：5级侍从}",
+						"艾瑟尔法尔采取{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/AethelfaerToken.webp"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"ENG_name": "Akangsha Sundarbandar",
+			"name": "阿坎莎·孙达尔班达尔",
+			"isNpc": true,
+			"source": "Ar7",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "^魔法师",
+						"with": "阿坎莎",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半身人"
+				]
+			},
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"阿坎莎是9级施法者。其施法关键属性为智力（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。阿坎莎准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 修复术}",
+								"{@spell 毒气喷涌}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 侦测魔法}",
+								"{@spell 虚假生命}",
+								"{@spell 油腻术}",
+								"{@spell 隐形仆役}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 马友夫强酸箭|PHB|强酸箭}",
+								"{@spell 遗体防腐}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 活化死尸}",
+								"{@spell 守卫刻文}",
+								"{@spell 吸血鬼之触}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 枯萎术}",
+								"{@spell 魔邓肯私人密室|PHB|私人密室}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 定身怪物}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"token": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM"
+			},
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Animated Tree",
+			"name": "活化树",
+			"source": "Ar7",
+			"page": 13,
+			"_copy": {
+				"ENG_name": "Treant",
+				"name": "树人",
+				"source": "MM"
+			},
+			"int": 1,
+			"cha": 1,
+			"languages": null,
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及5尺，单一目标。{@h}16（{@damage 3d6 + 6}）点钝击伤害。"
+					]
+				}
+			],
+			"token": {
+				"ENG_name": "Treant",
+				"name": "树人",
+				"source": "MM"
+			}
+		},
+		{
+			"ENG_name": "Glorian the Secretariat",
+			"name": "书记格洛里安",
+			"alias": [
+				"特奇林法洛什"
+			],
+			"isNpc": true,
+			"source": "Ar7",
+			"page": 9,
+			"_copy": {
+				"ENG_name": "Doppelganger",
+				"name": "变形怪",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "变形怪",
+						"with": "格洛里安",
+						"flags": "i"
+					}
+				}
+			},
+			"token": {
+				"ENG_name": "Doppelganger",
+				"name": "变形怪",
+				"source": "MM"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Granny Roachhand",
+			"name": "蟑螂手婆婆",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Ar7",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Night Hag",
+				"name": "夜鬼婆",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "夜鬼婆|该?鬼婆(?!集会|之眼)",
+						"with": "蟑螂手婆婆",
+						"flags": "i"
+					},
+					"_": {
+						"mode": "addSpells",
+						"daily": {
+							"1e": [
+								"{@spell 巨虫术}"
+							]
+						}
+					}
+				},
+				"_preserve": {
+					"legendaryGroup": true
+				}
+			},
+			"token": {
+				"ENG_name": "Night Hag",
+				"name": "夜鬼婆",
+				"source": "MM"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ivmal Alef",
+			"name": "伊夫马尔·阿莱夫",
+			"isNpc": true,
+			"source": "Ar7",
+			"page": 9,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "平民",
+						"with": "伊夫马尔",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"token": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Krakenvine",
+			"name": "克拉肯藤",
+			"source": "Ar7",
+			"page": 14,
+			"size": [
+				"L"
+			],
+			"type": "plant",
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "+ PB",
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "30 + 10 × PB"
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 2,
+			"passive": 11,
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"ENG_name": "Plant Camouflage",
+					"name": "植被伪装",
+					"entries": [
+						"克拉肯藤在植物繁茂的区域中进行的躲藏敏捷（{@skill 隐匿}）检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Power of Nature",
+					"name": "自然之力",
+					"entries": [
+						"克拉肯藤的武器攻击视为魔法攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"克拉肯藤进行两次藤鞭抽击攻击，其中每次攻击都可以替换为一次抛掷的使用。"
+					]
+				},
+				{
+					"ENG_name": "Vine Lash",
+					"name": "藤鞭抽击",
+					"entries": [
+						"{@atk mw} 命中{@hit 3 + PB}，触及10尺，单一目标。{@h}{@damage 1d8 + 3 + PB}点钝击伤害，且目标陷入{@condition 受擒}状态（逃脱{@dc 11 + PB}）。此擒抱结束前，目标处于{@condition 束缚}状态。克拉肯藤最多能以此方式同时{@action 擒抱}两个目标。"
+					]
+				},
+				{
+					"ENG_name": "Fling",
+					"name": "抛掷",
+					"entries": [
+						"被克拉肯藤{@condition 受擒}的一件中型或更小物件或一个生物，被朝克拉肯藤选择的方向掷出至多30尺并被击{@condition 倒地}。被掷出的目标若撞上坚实表面，每被掷出10尺就受到3（{@damage 1d6}）点钝击伤害。若目标被掷向另一个生物，该生物必须通过一次{@dc 11 + PB}的敏捷豁免，否则受到同等伤害并被击{@condition 倒地}。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"ENG_name": "Nuhara Mfala",
+			"name": "努哈拉·姆法拉",
+			"isNpc": true,
+			"source": "Ar7",
+			"page": 10,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "平民",
+						"with": "努哈拉",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"龙裔"
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Nuhara.webp"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Nupita Mfala",
+			"name": "努皮塔·姆法拉",
+			"isNpc": true,
+			"source": "Ar7",
+			"page": 10,
+			"_copy": {
+				"ENG_name": "Druid",
+				"name": "德鲁伊",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "^德鲁伊(?!语)",
+						"with": "努皮塔",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"龙裔"
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Nupita.webp"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Onriel",
+			"name": "翁丽尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Ar7",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Unicorn",
+				"name": "独角兽",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "独角兽",
+						"with": "翁丽尔",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/OnrielToken.webp"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thornbush",
+			"name": "荆棘丛",
+			"source": "Ar7",
+			"page": 14,
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"ac": [
+				{
+					"ac": 13,
+					"condition": "+ PB",
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "20 + 10 × PB"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 14,
+			"int": 3,
+			"wis": 13,
+			"cha": 2,
+			"passive": 11,
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"trait": [
+				{
+					"ENG_name": "Plant Camouflage",
+					"name": "植被伪装",
+					"entries": [
+						"荆棘丛在植物繁茂的区域中进行的躲藏敏捷（{@skill 隐匿}）检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Power of Nature",
+					"name": "自然之力",
+					"entries": [
+						"荆棘丛的武器攻击视为魔法攻击。"
+					]
+				},
+				{
+					"ENG_name": "Stickler",
+					"name": "纠缠棘刺",
+					"entries": [
+						"当荆棘丛以{@action 借机攻击}命中一个生物时，该生物的速度在该回合剩余时间内变为0。即使生物在离开荆棘丛的触及范围前采取了{@action 撤离}动作，仍会引发荆棘丛的{@action 借机攻击|PHB|借机攻击}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"荆棘丛进行相当于你熟练加值一半（向下取整）次数的棘刺打击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Thorny Strike",
+					"name": "棘刺打击",
+					"entries": [
+						"{@atk mw} 命中{@hit 3 + PB}，触及10尺，单一目标。{@h}{@damage 2d4 + 3 + PB}点穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		}
+	],
+	"monsterFluff": [
+		{
+			"ENG_name": "Akangsha Sundarbandar",
+			"name": "阿坎莎·孙达尔班达尔",
+			"source": "Ar7",
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"{@note 代词：TA}",
+								{
+									"type": "quote",
+									"entries": [
+										"腐烂：它是一团冷火，能把卑微的尸骸炼成奇妙之物。一旦我们克服对它的恐惧，拥抱死亡赋予一具躯体\u2014\u2014任何躯体、所有躯体\u2014\u2014的独特力量，死亡便不过是另一只工具箱！"
+									],
+									"by": "阿坎莎·孙达尔班达尔"
+								},
+								"阿坎莎是一位身材敦实的年长魔法师，身为发酵师，以其强大的疗法在腌制公会中享有盛名。然而，这位祖母般的半身人藏着一个秘密：他们的疗法本质上全是死灵术。他们饲养了一整地下室的不死生物，用以提炼药物。",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"page": 8,
+									"items": [
+										{
+											"ENG_name": "Signature Look:",
+											"type": "item",
+											"name": "标志性造型：",
+											"entries": [
+												"阿坎莎身边总带着一只宠物蟾蜍，它背上长着一朵巨大的蘑菇。阿坎莎视这朵蘑菇为自己的宠物，蟾蜍不过是它的载具。他们给它起名叫毒菌。（蟾蜍没有名字。）"
+											]
+										},
+										{
+											"ENG_name": "Personality:",
+											"type": "item",
+											"name": "性格：",
+											"entries": [
+												"阿坎莎理性、慈爱且富有同理心。"
+											]
+										}
+									]
+								},
+								{
+									"type": "hr"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Glorian the Secretariat",
+			"name": "书记格洛里安",
+			"source": "Ar7",
+			"_copy": {
+				"ENG_name": "Doppelganger",
+				"name": "变形怪",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"{@note 代词：TA}",
+								{
+									"type": "quote",
+									"entries": [
+										"你以为组织是靠人运转的？错！组织是靠纸运转的！备忘录、仓促写就的指示、政策通告、账目与交易记录......亲爱的，真正权力的形态，是挺括、洁白而扁平的！"
+									],
+									"by": "书记格洛里安"
+								},
+								"格洛里安是腌制公会最有影响力的匠人之一，负责公会大量的行政事务，无论日常的还是机密的。这个身份只是个幌子：格洛里安其实是一个名叫特奇林法洛什的变形怪，他要向几十年前\"放任\"其精灵恋人西里尔·特温露病死的那个不知名理事复仇。他对腌制公会的使命毫无兴趣。",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"page": 8,
+									"items": [
+										{
+											"ENG_name": "Signature Look:",
+											"type": "item",
+											"name": "标志性造型：",
+											"entries": [
+												"无论格洛里安以什么形态出现，他的双手总是沾着墨迹。他通常以精灵的形象示人。"
+											]
+										},
+										{
+											"ENG_name": "Personality:",
+											"type": "item",
+											"name": "性格：",
+											"entries": [
+												"格洛里安看似一丝不苟甚至有些偏执，但这只是掩饰其精明算计本性的伪装。"
+											]
+										},
+										{
+											"ENG_name": "Statistics:",
+											"type": "item",
+											"name": "数据：",
+											"entries": [
+												"格洛里安使用{@creature 变形怪|MM}的数据。"
+											]
+										}
+									]
+								},
+								{
+									"type": "hr"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Granny Roachhand",
+			"name": "蟑螂手婆婆",
+			"source": "Ar7",
+			"_copy": {
+				"ENG_name": "Night Hag",
+				"name": "夜鬼婆",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Granny Roachhand",
+									"type": "entries",
+									"name": "蟑螂手婆婆",
+									"page": 30,
+									"entries": [
+										"蟑螂手婆婆曾因暗算其他姐妹而被下位面的夜鬼婆集会放逐。她最近来到艾瑟尔法尔的森林，密谋腐化林中的野兽与草木，以打造一支忠仆大军。她的目标是将这片森林据为自己的领地，并以此取乐地折磨那些毫无防备、踏入林中的旅人，但{@creature 艾瑟尔法尔|Ar7}和{@creature 翁丽尔|Ar7}总在破坏她的计划。"
+									]
+								},
+								{
+									"type": "hr"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Ivmal Alef",
+			"name": "伊夫马尔·阿莱夫",
+			"source": "Ar7",
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"{@note 代词：他}",
+								{
+									"type": "quote",
+									"entries": [
+										"我为什么要发酵？想想看：你我各自照着同一张蛋糕配方，烤出两份一模一样的甜点并不难。可若你我照着一模一样的配方腌制发酵白菜，天底下没有任何力量能让这两棵白菜尝起来一个味。发酵即创作艺术。发酵即成为自己。"
+									],
+									"by": "伊夫马尔·阿莱夫"
+								},
+								"伊夫马尔身材瘦削、一头红发，刚过完少年时代。这位炼金学徒是腌制公会的热心年度会员，却对其真正目的一无所知。他在一间公会旗下的小店里做志愿店员，时刻留意着新会员的人选。",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"page": 9,
+									"items": [
+										{
+											"ENG_name": "Signature Look:",
+											"type": "item",
+											"name": "标志性造型：",
+											"entries": [
+												"伊夫马尔身上总穿戴一件带蔬菜纹样的衣物或首饰。"
+											]
+										},
+										{
+											"ENG_name": "Personality:",
+											"type": "item",
+											"name": "性格：",
+											"entries": [
+												"伊夫马尔热情洋溢、干劲十足且颇有艺术气质。"
+											]
+										},
+										{
+											"ENG_name": "Statistics:",
+											"type": "item",
+											"name": "数据：",
+											"entries": [
+												"伊夫马尔·阿莱夫使用{@creature 平民|MM}的数据。"
+											]
+										}
+									]
+								},
+								{
+									"type": "hr"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Nuhara Mfala",
+			"name": "努哈拉·姆法拉",
+			"source": "Ar7",
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							"{@note 代词：她}",
+							{
+								"type": "quote",
+								"entries": [
+									"既然真正的奇迹就在我们身边，为什么还要浪费时间祈求神迹？诸神不需要我们在积灰的礼拜堂里背诵祷文，他们指望我们撸起袖子钻进泥土，亲手挖出那株能治好我们的红花草药！"
+								],
+								"by": "努皮塔与努哈拉·姆法拉"
+							},
+							"蓝鳞的{@creature 努皮塔·姆法拉|Ar7|努皮塔}和她紫鳞的少女女儿{@creature 努哈拉·姆法拉|Ar7|努哈拉}都是发酵师，在偏远的拉达之恩村经营着一间小型酿造坊\u2014\u2014那座村庄以繁盛的奇虫异兽而闻名。母女俩秘密采集当地野生物的样本用于研制新药，尤其是那些栖息于此的珍稀昆虫的卵、蜕下的外骨骼和褪下的蝶蛹。两人虽然深爱彼此，却常为{@creature 努哈拉·姆法拉|Ar7|努哈拉的}独立性争执不休。",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"page": 10,
+								"items": [
+									{
+										"ENG_name": "Signature Look:",
+										"type": "item",
+										"name": "标志性造型：",
+										"entries": [
+											"她们的利爪上绘着精美的花卉图样。"
+										]
+									},
+									{
+										"ENG_name": "Personality:",
+										"type": "item",
+										"name": "性格：",
+										"entries": [
+											"她们都是务实的女性，专注于自己的事业。{@creature 努皮塔·姆法拉|Ar7|努皮塔}有些容易焦虑，而{@creature 努哈拉·姆法拉|Ar7|努哈拉}则天性好奇。"
+										]
+									},
+									{
+										"ENG_name": "Statistics:",
+										"type": "item",
+										"name": "数据：",
+										"entries": [
+											"{@creature 努皮塔·姆法拉|Ar7|努皮塔}使用{@creature 德鲁伊|MM}的数据，{@creature 努哈拉·姆法拉|Ar7|努哈拉}使用{@creature 平民|MM}的数据。"
+										]
+									}
+								]
+							},
+							{
+								"type": "hr"
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/NupitaAndNuhara.webp"
+					},
+					"altText": "一名蓝鳞龙裔从树上摘下一片叶子，她下方一名紫鳞龙裔抱着一捆树枝。",
+					"width": 1069,
+					"height": 693,
+					"credit": "Gustavo Pelissari"
+				}
+			]
+		},
+		{
+			"ENG_name": "Nupita Mfala",
+			"name": "努皮塔·姆法拉",
+			"source": "Ar7",
+			"_copy": {
+				"ENG_name": "Druid",
+				"name": "德鲁伊",
+				"source": "MM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							"{@note 代词：她}",
+							{
+								"type": "quote",
+								"entries": [
+									"既然真正的奇迹就在我们身边，为什么还要浪费时间祈求神迹？诸神不需要我们在积灰的礼拜堂里背诵祷文，他们指望我们撸起袖子钻进泥土，亲手挖出那株能治好我们的红花草药！"
+								],
+								"by": "努皮塔与努哈拉·姆法拉"
+							},
+							"蓝鳞的{@creature 努皮塔·姆法拉|Ar7|努皮塔}和她紫鳞的少女女儿{@creature 努哈拉·姆法拉|Ar7|努哈拉}都是发酵师，在偏远的拉达之恩村经营着一间小型酿造坊\u2014\u2014那座村庄以繁盛的奇虫异兽而闻名。母女俩秘密采集当地野生物的样本用于研制新药，尤其是那些栖息于此的珍稀昆虫的卵、蜕下的外骨骼和褪下的蝶蛹。两人虽然深爱彼此，却常为{@creature 努哈拉·姆法拉|Ar7|努哈拉的}独立性争执不休。",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"page": 10,
+								"items": [
+									{
+										"ENG_name": "Signature Look:",
+										"type": "item",
+										"name": "标志性造型：",
+										"entries": [
+											"她们的利爪上绘着精美的花卉图样。"
+										]
+									},
+									{
+										"ENG_name": "Personality:",
+										"type": "item",
+										"name": "性格：",
+										"entries": [
+											"她们都是务实的女性，专注于自己的事业。{@creature 努皮塔·姆法拉|Ar7|努皮塔}有些容易焦虑，而{@creature 努哈拉·姆法拉|Ar7|努哈拉}则天性好奇。"
+										]
+									},
+									{
+										"ENG_name": "Statistics:",
+										"type": "item",
+										"name": "数据：",
+										"entries": [
+											"{@creature 努皮塔·姆法拉|Ar7|努皮塔}使用{@creature 德鲁伊|MM}的数据，{@creature 努哈拉·姆法拉|Ar7|努哈拉}使用{@creature 平民|MM}的数据。"
+										]
+									}
+								]
+							},
+							{
+								"type": "hr"
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/NupitaAndNuhara.webp"
+					},
+					"altText": "一名蓝鳞龙裔从树上摘下一片叶子，她下方一名紫鳞龙裔抱着一捆树枝。",
+					"width": 1069,
+					"height": 693,
+					"credit": "Gustavo Pelissari"
+				}
+			]
+		},
+		{
+			"ENG_name": "Onriel",
+			"name": "翁丽尔",
+			"source": "Ar7",
+			"_copy": {
+				"ENG_name": "Unicorn",
+				"name": "独角兽",
+				"source": "MM"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Onriel.webp"
+					},
+					"altText": "一头伫立在林间空地上的独角兽。",
+					"width": 1069,
+					"height": 748
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/OnrielCombat.webp"
+					},
+					"altText": "一头独角兽用后腿人立而起，准备攻击艾瑟尔法尔。",
+					"width": 921,
+					"height": 832
+				}
+			]
+		}
+	],
+	"table": [
+		{
+			"ENG_name": "Aethelfaer Plot Hooks",
+			"name": "艾瑟尔法尔情节钩子",
+			"source": "Ar7",
+			"page": 25,
+			"colLabels": [
+				"d12",
+				"情节钩子"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-11"
+			],
+			"rows": [
+				[
+					"1",
+					"艾瑟尔法尔发现角色们在森林中迷了路。他承诺，如果角色们帮他解决一个正在制造野兽与草木丧尸版本的当地死灵法师，就为他们带路前往目的地。"
+				],
+				[
+					"2",
+					"一支冒险者竞争队伍向角色们发起挑战，要在艾瑟尔法尔的森林中进行一场狩猎。谁能取下传奇白银雄鹿的头颅，谁就赢得一箱金币。但这是个陷阱！对手们根本不打算参赛，而且他们知道林中有一位猎人，专门猎杀胆敢伤害那头雄鹿的人。"
+				],
+				[
+					"3",
+					"角色们不知不觉闯入了森林深处的神圣领地。艾瑟尔法尔现身，声称他们惊扰了森林的远古诸神，神明们要求补偿。补偿必须在次日日落前，以祭品的形式献于一座地下墓穴中的祭坛上。如果他们拒绝或未能做到，艾瑟尔法尔便宣告他们将为余生所诅咒。"
+				],
+				[
+					"4",
+					"角色们扎营时，艾瑟尔法尔前来求助，请他们协助诛杀他所说的盘踞森林中一棵远古红杉里的黑暗精魂。那东西的存在毒害了周围的林地，使生物沦为丧尸般的行尸，令树木变得凶暴。其中一棵树袭击了艾瑟尔法尔，他侥幸逃生。他相信这股黑暗之力并非他一人所能应付。他愿以森林诸神的一件魔法物品（如{@item 丛林法杖|DMG}，或本期\"{@book 荒野奇观|Ar7|3|物品}\"中的一件物品）作为酬劳，请角色们助他终结这一威胁。"
+				],
+				[
+					"5",
+					"森林中到处矗立着古旧森林诸神的古老雕像，造型皆为兽形。不知为何，这些雕像活了过来，袭击行走于小径上的旅人。角色们穿越森林时会遭到其中一尊雕像的攻击。艾瑟尔法尔会在战斗结束后或战斗中途现身相助，并解释来龙去脉。"
+				],
+				[
+					"6",
+					"附近一处聚落因农场牲畜遭袭而开始捕杀狼群。艾瑟尔法尔坚称袭击并非狼所为，并为定居者的决定感到痛心。他想证明这些野兽的清白，并怀疑另有隐情。这位游侠向角色们求助。"
+				],
+				[
+					"7",
+					"一队逃兵在森林中建起设防营地，寻求庇护，也想远离战争的恐怖，与家人爱人平静度日。然而，一位藏匿的猎人（艾瑟尔法尔）潜伏在他们周围的林中，每当他们试图猎捕附近的麋鹿群时就放箭驱赶。食物日渐短缺，猎人却毫不松懈；难民们愈发绝望，向角色们乞求帮助。难民们不知道的是，这群麋鹿是极其珍稀、几乎灭绝的品种。艾瑟尔法尔自任鹿群守护者，保护它们免受一切威胁。"
+				],
+				[
+					"8",
+					"一位好心却缺乏经验的女巫近来迁入森林，想从令人生畏的城市生活中觅得喘息。种植香草园时，她用魔法护佑种子免受鸟儿啄食，不料法术适得其反。种子安然无恙、茁壮生长，鸟儿的胃口却变成了食肉。如今这些长羽生物攻击其他动物以及任何进入森林的人。艾瑟尔法尔承诺帮女巫找一个受过足够奥术训练、能设法逆转法术的人。角色们或许能主持一场仪式，或许认识有能力的人，可以护送其穿过这片食肉鸟盘踞的森林。"
+				],
+				[
+					"9",
+					"一位娇生惯养的富庶贵族执意要在森林中修建他的\"避暑山庄\"，全然不顾这将毁掉一处诸神与木精灵的圣地。艾瑟尔法尔发现其工人惊扰了古老建筑，怒不可遏，上前对质。双方兵刃相向，贵族拔出一把手枪，侥幸击中艾瑟尔法尔的肩膀，逼他退走。负伤的艾瑟尔法尔决意阻止这项工程，向路过的角色们求助。"
+				],
+				[
+					"10",
+					"一群撒野的萨提在森林中抢劫露营的旅人，掠走一切值钱之物。角色们是他们的下一批受害者，醒来时发现部分财物不翼而飞，而一脸不悦的艾瑟尔法尔正询问他们夜里是否看见了什么。"
+				],
+				[
+					"11",
+					"角色们穿行森林时，艾瑟尔法尔从树上跃下，现身在他们面前。他警告他们夜里不要离开营地或走得太远，并要忽略任何呼唤之声，哪怕自认为听出了是谁的声音。树丛间有某种邪恶之物正在引人入彀，而进去的人再无音讯。"
+				],
+				[
+					"12",
+					"树上不断出现雕刻的奥术符号与护符，造型皆似糖果与糕点，标出了被当地人称作\"甜点小径\"的路径。周围聚落把养不起的孩子送上这条小径，孩子们走进森林深处，从此杳无音讯。游牧游侠艾瑟尔法尔察觉到森林深处潜伏着某种黑暗。"
+				]
+			]
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "Arcadia Issue 7",
+			"name": "阿卡迪亚 第7期",
+			"id": "Ar7",
+			"source": "Ar7",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Cover.webp"
+			},
+			"published": "2021-08-01",
+			"author": "沙朗·比斯瓦斯、汉娜·罗丝、萨拉·汤普森",
+			"contents": [
+				{
+					"ENG_name": "Cover Page & Credits",
+					"name": "封面与致谢"
+				},
+				{
+					"ENG_name": "Letter from the Editor",
+					"name": "主编来信"
+				},
+				{
+					"ENG_name": "The Pickling Guild",
+					"name": "腌制公会",
+					"headers": [
+						"公会结构",
+						"腌制公会会员制度",
+						"腌制公会的纪念性武器工具",
+						"食物示例",
+						"认识腌制公会",
+						"公会的麻烦",
+						"重要角色",
+						"领地数据"
+					]
+				},
+				{
+					"ENG_name": "Wonders of the Wilds",
+					"name": "荒野奇观",
+					"headers": [
+						"荒野法术"
+					]
+				},
+				{
+					"ENG_name": "Aethelfaer",
+					"name": "艾瑟尔法尔",
+					"headers": [
+						"在你的游戏中运用艾瑟尔法尔",
+						"艾瑟尔法尔情节钩子",
+						"艾瑟尔法尔的战斗方式",
+						"遭遇艾瑟尔法尔",
+						"艾瑟尔法尔作为侍从",
+						"艾瑟尔法尔的残障"
+					]
+				},
+				{
+					"ENG_name": "Author Profiles",
+					"name": "作者简介"
+				},
+				{
+					"ENG_name": "License",
+					"name": "许可证"
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "Ar7",
+			"source": "Ar7",
+			"data": [
+				{
+					"ENG_name": "Cover Page & Credits",
+					"type": "section",
+					"name": "封面与致谢",
+					"page": "C1",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Cover-Full.webp"
+							},
+							"title": "《阿卡迪亚》第7期 封面",
+							"altText": "《阿卡迪亚》第7期封面。一群仙灵与昆虫聚集在一颗覆满苔藓的头骨周围。",
+							"width": 1275,
+							"height": 1655,
+							"credit": "Ian Ameling"
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"columns": 2,
+							"page": "C2",
+							"items": [
+								{
+									"ENG_name": "Managing Editor:",
+									"type": "item",
+									"name": "主编：",
+									"entries": [
+										"詹姆斯·因特罗卡索"
+									]
+								},
+								{
+									"ENG_name": "Production and Playtest Director:",
+									"type": "item",
+									"name": "制作与试玩总监：",
+									"entries": [
+										"拉斯·巴克"
+									]
+								},
+								{
+									"ENG_name": "Editors:",
+									"type": "item",
+									"name": "编辑：",
+									"entries": [
+										"赛迪·劳里、汉娜·罗丝"
+									]
+								},
+								{
+									"ENG_name": "Authors:",
+									"type": "item",
+									"name": "作者：",
+									"entries": [
+										"沙朗·比斯瓦斯、汉娜·罗丝、萨拉·汤普森"
+									]
+								},
+								{
+									"ENG_name": "Graphic Design/Layout",
+									"type": "item",
+									"name": "平面设计/排版",
+									"entries": [
+										"珍·麦克利里"
+									]
+								},
+								{
+									"ENG_name": "Cover Art:",
+									"type": "item",
+									"name": "封面绘画：",
+									"entries": [
+										"伊恩·阿梅林"
+									]
+								},
+								{
+									"ENG_name": "Title Logo:",
+									"type": "item",
+									"name": "刊名标志：",
+									"entries": [
+										"托姆·施穆克"
+									]
+								},
+								{
+									"ENG_name": "MCDM Contract QA Senior Tester:",
+									"type": "item",
+									"name": "MCDM合约QA高级测试员：",
+									"entries": [
+										"斯宾塞·希布尼克"
+									]
+								},
+								{
+									"ENG_name": "Testers:",
+									"type": "item",
+									"name": "测试员：",
+									"entries": [
+										"欧文·\"迪格\"·克拉里、内森·克拉克、阿莱克森·德利马·儒尼奥尔、詹姆斯·杜瓦"
+									]
+								},
+								{
+									"ENG_name": "Accessibility Consultant:",
+									"type": "item",
+									"name": "无障碍环境顾问：",
+									"entries": [
+										"克里斯·霍珀"
+									]
+								},
+								{
+									"ENG_name": "Interior Illustrations:",
+									"type": "item",
+									"name": "内页插图：",
+									"entries": [
+										{
+											"ENG_name": "Aethelfaer:",
+											"type": "itemSub",
+											"name": "《艾瑟尔法尔》：",
+											"entries": [
+												"格蕾丝·张"
+											]
+										},
+										{
+											"ENG_name": "Aethelfaer Unicorn:",
+											"type": "itemSub",
+											"name": "《艾瑟尔法尔》独角兽：",
+											"entries": [
+												"格蕾丝·张"
+											]
+										},
+										{
+											"ENG_name": "Aethelfaer and Unicorn:",
+											"type": "itemSub",
+											"name": "艾瑟尔法尔与独角兽：",
+											"entries": [
+												"格蕾丝·张"
+											]
+										},
+										{
+											"ENG_name": "Pickling Guild Symbol:",
+											"type": "itemSub",
+											"name": "腌制公会标志：",
+											"entries": [
+												"格蕾丝·张"
+											]
+										},
+										{
+											"ENG_name": "Pickling Guild Dwarf Alchemist:",
+											"type": "itemSub",
+											"name": "腌制公会矮人炼金师：",
+											"entries": [
+												"古斯塔沃·佩利萨里"
+											]
+										},
+										{
+											"ENG_name": "Pickling Guild Nupita & Muhara Mfala:",
+											"type": "itemSub",
+											"name": "腌制公会努皮塔与努哈拉·姆法拉：",
+											"entries": [
+												"古斯塔沃·佩利萨里"
+											]
+										},
+										{
+											"ENG_name": "Wonders of the Wilds Vista illustration:",
+											"type": "itemSub",
+											"name": "《荒野奇观》远景插图：",
+											"entries": [
+												"小肯特·戴维斯"
+											]
+										},
+										{
+											"ENG_name": "Wonders of the Wilds Halo of the Heavens:",
+											"type": "itemSub",
+											"name": "《荒野奇观》天穹光环：",
+											"entries": [
+												"奈费洛曼瑟"
+											]
+										},
+										{
+											"ENG_name": "Wonders of the Wilds Celestial Druid:",
+											"type": "itemSub",
+											"name": "《荒野奇观》天界德鲁伊：",
+											"entries": [
+												"奈费洛曼瑟"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "MCDM is:",
+									"type": "item",
+									"name": "MCDM成员：",
+									"entries": [
+										{
+											"ENG_name": "Lars Bakke: Development &",
+											"type": "item",
+											"name": "拉斯·巴克：开发与",
+											"entries": [
+												"制作"
+											]
+										},
+										{
+											"ENG_name": "Jerod Bennett:",
+											"type": "item",
+											"name": "杰罗德·贝内特：",
+											"entries": [
+												"技术"
+											]
+										},
+										{
+											"ENG_name": "Grace Cheung:",
+											"type": "item",
+											"name": "格蕾丝·张：",
+											"entries": [
+												"美术"
+											]
+										},
+										{
+											"ENG_name": "Matt Colville: Writing &",
+											"type": "item",
+											"name": "马特·科尔维尔：撰写与",
+											"entries": [
+												"设计"
+											]
+										},
+										{
+											"ENG_name": "Anna Coulter: Production &",
+											"type": "item",
+											"name": "安娜·库尔特：制作与",
+											"entries": [
+												"运营"
+											]
+										},
+										{
+											"ENG_name": "Nick De Spain: Art & Art Outsource",
+											"type": "item",
+											"name": "尼克·德·斯佩恩：美术与美术外包",
+											"entries": [
+												"管理"
+											]
+										},
+										{
+											"ENG_name": "Jason Hasenauer: Art & Art",
+											"type": "item",
+											"name": "杰森·哈泽瑙尔：美术与美术",
+											"entries": [
+												"指导"
+											]
+										},
+										{
+											"ENG_name": "James Introcaso: RPG Line",
+											"type": "item",
+											"name": "詹姆斯·因特罗卡索：RPG产品线",
+											"entries": [
+												"开发"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Playtest Coordinators:",
+									"type": "item",
+									"name": "测试协调员：",
+									"entries": [
+										"",
+										"alex_august/亚历克斯·亨辛斯基",
+										"Conjure Clay/克莱顿·萨拉蒙",
+										"DMcCool/大卫·莱克",
+										"Elias Ravyn/约翰·布莱恩特",
+										"F1zz3r/亚伦·弗拉维乌斯·韦斯特",
+										"Kelvan1138/理查德·怀特",
+										"Lucritius/亚内克·达尔科夫斯基",
+										"MeAndUnique/谢恩·帕克",
+										"Nuehado/菲尔·多纳休",
+										"Templars Bane/尼克·皮尔森",
+										"TheDeadlyFly/哈雷·哈里斯"
+									]
+								},
+								{
+									"ENG_name": "Playtesters:",
+									"type": "item",
+									"name": "参与测试者：",
+									"entries": [
+										"",
+										"亚伦·乌伊永",
+										"AJ·梅茨格",
+										"亚历克斯·阿德基森",
+										"安德鲁·\"无尽之夜\"·麦克唐纳",
+										"安娜·吉马良斯",
+										"艾琳·J·比尔",
+										"艾斯杰",
+										"约书亚·特平",
+										"凯茜·兰德尔·布莱恩特",
+										"卢克·Z",
+										"马库斯·罗森",
+										"皮特·戈斯登",
+										"威廉·法伊弗",
+										"怀亚特·M/Goatslinger"
+									]
+								}
+							]
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"page": "C2",
+							"style": "text-center",
+							"entries": [
+								"来MCDM的Discord服务器加入我们，你可以在那里和大家畅聊《阿卡迪亚》以及更多内容！",
+								"{@link discord.gg/mcdm|https://discord.com/invite/mcdm}"
+							],
+							"id": "001"
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"page": "C2",
+							"style": "text-center",
+							"entries": [
+								"产品身份：以下内容依据开放游戏许可1.0a版第1(e)节的定义被认定为产品身份，且不属于开放内容：所有未收录于系统参考文档5.1版或未被明确指定为开放游戏内容的内容，包括艾瑟尔法尔、腌制公会、荒野奇观，以及所有商标、注册商标、专有名称（包括角色名、地名、怪物名、组织名、新法术、新能力等）、对话、情节、故事要素、地点、角色、插画、图像、边栏内容与商业外观。"
+							],
+							"id": "002"
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/TableofContents.webp"
+							},
+							"title": "《阿卡迪亚》第7期 目录",
+							"altText": "《阿卡迪亚》第7期以华丽的字体呈现，黄色花朵从页面边缘探出。",
+							"width": 1280,
+							"height": 1655,
+							"credit": "Tom Schmuck"
+						}
+					],
+					"id": "000"
+				},
+				{
+					"ENG_name": "Letter from the Editor",
+					"type": "section",
+					"name": "主编来信",
+					"page": 1,
+					"entries": [
+						"我上大学时，神话学教授给我们布置了一个不走寻常路的作业：独自带着一个本子走进树林，在那里待上一个小时，然后不管想到什么都要写下来，直到写满三页纸。考虑到我如今主编的这本杂志，我的论文写的是怪物，应该不会让人意外。具体来说，我写的是自己如何理解为什么不久之前生活在这个世界上的人还相信怪物游荡于荒野。即使在今天，仍有许多人相信大脚怪、雪人、鹿角兔、泽西恶魔或其他神秘生物，就藏在人迹罕至的荒野深处。哪怕你和我一样是个怀疑论者，对奇幻故事的热爱也会让你忍不住发问：\"可万一这里真有巨龙呢？\"",
+						"自然不只是奇幻的一个组成部分。是的，它是引人入胜的冒险舞台，但自然远不止于此。它创造故事与神话。这颗星球上的广袤荒野激励我们、震慑我们、令我们屏息。提起奇幻中的荒野，我们脑中浮现的或许是妖精的圣林和独角兽的森林，但浩瀚沙漠、凶险沼泽、桀骜海洋与神秘地底隧道，同样都是奇幻设定的一部分。我们现实中的星球与高等奇幻的世界，本就携手同行。",
+						"事实上，它们契合得如此之好，以至于直到MCDM见解独到的首席测试员{@link 斯宾塞·希布尼克|https://twitter.com/PestoEnthusiast}向我指出，我才意识到这期《阿卡迪亚》是以自然为主题。我只当我们又刊发了三篇出自优秀创作者之手的扎实文章。但命运的安排就是如此，《阿卡迪亚》第7期，通篇皆是自然。",
+						"{@link 沙朗·比斯瓦斯|https://twitter.com/SharangBiswas}的《腌制公会》呈现了一个在荒野中寻找美味食材与顽疾解药的秘密组织；{@link 萨拉·汤普森|https://twitter.com/mustangsart}在《艾瑟尔法尔》中为我们展现了一位守护树林无人能及的游侠；而参与了至今每一期《阿卡迪亚》编辑工作的{@link 汉娜·罗丝|https://twitter.com/wildrosemage}，则在《荒野奇观》中终于给德鲁伊与游侠带来了他们应得的魔法物品。",
+						"这一期恰如其分地提醒我们：现实世界中有的是能启发我们游戏与角色的灵感。虽然我个人认为，寻找灵感的最佳方式就是动身走进荒野，但这并不总有机会。就算你确实住在一处绝佳的户外环境附近，也有条件和时间去探索它，这颗星球上仍有许多地方值得一看，保准让你满脑子迸发出游戏的妙点子。",
+						"所幸书籍、杂志、电视、电影和互联网让这些地方触手可及。作为《国家地理》的前员工，我可以告诉你：深海中生活着寿逾数百年、血肉含毒的{@link 格陵兰睡鲨|https://www.nytimes.com/2016/08/12/science/greenland-shark-longest-living.html}；土库曼斯坦一片名为\"{@link 地狱之门|https://www.youtube.com/watch?v=YICzXLAtQ58}\"的天然气田已经燃烧了五十年；而在马达加斯加的{@link 贝马拉哈石林国家公园|https://en.wikipedia.org/wiki/Tsingy_de_Bemaraha_Strict_Nature_Reserve}，构成这片石林的石灰岩锋利得能割开皮肉和绝大多数装备，令此地难以勘探。如果这些还点不燃你的游戏脑洞，外面还有整个世界等着你去探索。再不济，走出地球、迈入太空的蛮荒\u2014\u2014{@link 木星大红斑|https://en.wikipedia.org/wiki/Great_Red_Spot}准能启发出一两场冒险。",
+						{
+							"type": "entries",
+							"style": "text-right",
+							"entries": [
+								"{@i 发自内心，}"
+							],
+							"id": "004"
+						},
+						{
+							"type": "quote",
+							"entries": [
+								""
+							],
+							"by": "詹姆斯·因特罗卡索",
+							"from": "主编"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/BugPen.webp"
+							},
+							"altText": "一幅风格化的页脚图，画着一支漏墨的钢笔和一只绿色大虫。",
+							"width": 970,
+							"height": 393
+						}
+					],
+					"id": "003"
+				},
+				{
+					"ENG_name": "The Pickling Guild",
+					"type": "section",
+					"name": "腌制公会",
+					"page": 2,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Footer.webp"
+							},
+							"altText": "一幅静物画，一张摆满农产品和陶器的桌子。",
+							"width": 1280,
+							"height": 537
+						},
+						{
+							"type": "entries",
+							"page": 2,
+							"style": "text-center",
+							"entries": [
+								"{@style 一个由美食家与英雄组成的组织|dnd-font;large}",
+								"文：沙朗·比斯瓦斯"
+							],
+							"id": "006"
+						},
+						{
+							"type": "inset",
+							"page": 2,
+							"style": "text-center",
+							"entries": [
+								"{@style 座右铭：保藏乃吾辈之责|dnd-font;large}",
+								"{@style 纹章描述：纵向二分，紫与绿，一蛇打结其间，间色互换|dnd-font;large}",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/PicklingGuild.webp"
+									},
+									"altText": "纹章描述：纵向二分，紫与绿，一蛇打结其间，间色互换",
+									"width": 602,
+									"height": 552,
+									"credit": "Grace Cheung"
+								}
+							],
+							"id": "007"
+						},
+						"{@i 本文描述的是一个暗中推行利善事业的社会组织，以及相关的会员权益、魔法物品、任务、NPC和领地数据。腌制公会最适合至少拥有一座大城市的战役设定，但公会的各种元素也可以拆取出来，改编用于其他设定。}",
+						"腌制、发酵与食品保存公会，俗称\"腌制公会\"，表面上看是一个由古怪美食爱好者组成的网络，这些人热衷于在炼金术与烹饪术的交汇处做实验。任何人都可以入会\u2014\u2014缴一笔适中的年费，即可获得一些特殊优待，并使用全世界主要城市中十余座分会会所中的任意一座。在这些城市里，会员们定期享受品鉴会\u2014\u2014一种交换配方、食材与技艺的聚会\u2014\u2014还能光顾一家专卖专用设备、稀有发酵原料以及公会大师级成员制作的食品的商店。更富裕的分会会所还会发行一份图文并茂、信息丰富的简报。",
+						"资深会员随身佩戴一枚标识会员身份的徽章，以此赢得公会众多偏远地区独行会员的款待。然而，仅仅是大城市之外也有会员存在这件事，就足以让好奇的旁观者百思不得其解：一个明摆着的社交俱乐部，能给这些会员带来什么好处？",
+						"实际上，腌制公会是一个追踪魔法恶疾与瘟疫传播的秘密社团，在幕后致力于治愈并遏制此类灾祸。他们面向公众的活动只是幌子，意在打消怀疑、培植有用的人脉，并为其更重要的工作充实公会的金库。除了酿造上等麦酒和腌制火辣酱汁之外，资深成员还会派出密探去查明一场恶性感染的源头、处理一场格外凶猛的真菌爆发，或照拂染上怪病的权贵要人。偏远地区的独行密探是公会的资深代表，负责调查和研究离奇而致命的疾病。公会成员中只有一小部分人知晓这一更大的真相。",
+						"这些秘密行动的手段让密探们得以安全行事，避开强大敌人的耳目。公会不得不防备一个信奉瘟疫与真菌魔王邪魔领主的邪教团的步步试探，一个决意散播疾病以\"恢复腐朽平衡\"的邪恶德鲁伊秘团，还有一位很久以前不知怎么与公会纠缠不清、名叫努姆哈的木乃伊领主。这些只是想摧毁公会的反派中的几例\u2014\u2014对腌制公会而言，任何腐朽与恶疾的爪牙都是致命大敌。",
+						"凡被认定品性兼优、又对公会更大使命有用的成员，都可获准逐级晋升，得窥更深层的奥秘，但他们都必须宣誓保密。违反此誓者会被逐出公会，其记忆还可能被魔法篡改，抹去对公会的一切印象。",
+						{
+							"ENG_name": "Guild Structure",
+							"type": "entries",
+							"name": "公会结构",
+							"page": 3,
+							"entries": [
+								"当人们谈起腌制公会的意图、目标或行动时，他们所指的（通常是不自知地）其实是\"理事们\"\u2014\u2014这个组织神秘的领导者。理事们散布于国度各地，秘密集会，有时亲身与会，有时借助魔法通讯器。他们决定哪些任务必须执行、会中何人应当晋升，以及公会必须采取的其他一切重大行动。作为一个整体，他们通常不过问分会事务（尽管个别理事可能对此颇有兴趣）。作为公会中最有能力的成员，一旦公会职权范围内出现特别危险或严重的威胁，他们便会亲自参与特别任务。理事的人数极少：大约六人，个个都伪装成公会中较低等级的成员。",
+								"公会等级的另一端是年度会员，他们构成了会员的大多数。这些人是缴纳会费的业余爱好者，享受着社交圈子和会员身份带来的微末好处。他们对公会的秘密使命一无所知。",
+								"介于这两个等级之间的，是作为初级成员的发酵师和作为资深成员的匠人。发酵师与匠人属于公会的核心圈层。他们知晓公会的使命，并为此承担任务与委托。他们可能进行图书馆或实验室研究、探视病患、调查病情报告，或采集稀有原料。不执行公会秘密工作时，发酵师们也可能从事酿酒师、奶酪商、厨子之类的普通营生。",
+								"若其他会员认为某位年度会员能为公会使命出力，且背景调查无虞，此人便会被选中晋升为发酵师。资深会员可能会让候选人替公会办几件\"简单差事\"\u2014\u2014这些差事最终会考验他们直面危险时的能耐。从发酵师晋升为匠人，是为表彰对公会的卓越而可靠的贡献，并让密探得以承担更危险的任务。一旦某位匠人向理事们证明自己才华出众、忠于事业，其本人也可能荣升理事，尽管这极为罕见。",
+								"公会另有一些志愿职务，如书记、司库和分会会长，由发酵师、匠人甚至理事担任。这些职务多为行政性质，由各分会成员每年在本地选举产生（所有会员皆有投票权）。这些代表处理分会的日常事务，而涉及公会秘密使命的重大命令，则由理事们经由匠人们下达。"
+							],
+							"id": "008"
+						},
+						{
+							"ENG_name": "Membership in the Pickling Guild",
+							"type": "entries",
+							"name": "腌制公会会员制度",
+							"page": 3,
+							"entries": [
+								"任何人只需走访一处分会、填写些许简单的文书、缴付10 gp，就能成为腌制公会的年度会员。要想在公会中晋升等级，那就是另一回事了（见\"公会结构\"）。",
+								{
+									"ENG_name": "Annual Member",
+									"type": "entries",
+									"name": "年度会员",
+									"page": 3,
+									"entries": [
+										"缴付10 gp年费后，会员除有用的人脉之外，还可获得以下权益：",
+										{
+											"type": "list",
+											"page": 3,
+											"items": [
+												"一份盖有到期日戳记的羊皮纸会员证书",
+												"向任何会员购买任何商品或服务均可享折扣（这是一项非正式权益，不同会员给彼此的折扣或特别优惠各不相同）",
+												"一份季度简报，刊载会员动态、求助启事、食谱，以及关于植物和真菌的趣闻。据闻曾有冒险者在看似无害的书页间发现过关于真菌或黏液怪物的情报。",
+												"若简报未曾脱期，则在进行涉及食物备制和辨别可食、药用、有毒植物的属性检定时具有优势。（\"未曾脱期\"如何界定，由GM决定！）",
+												"可参加任意分会会所的年度会员会议，并免费参加任意分会组织的特别活动。视各会所的条件，年度会员还可获准使用会所的住宿、图书馆、厨房和实验室。"
+											]
+										}
+									],
+									"id": "00a"
+								},
+								{
+									"ENG_name": "Fermenter",
+									"type": "entries",
+									"name": "发酵师",
+									"page": 4,
+									"entries": [
+										"发酵师享有年度会员的全部权益，且无需额外年费即可获得以下追加权益：",
+										{
+											"type": "list",
+											"page": 4,
+											"items": [
+												"一把{@item 公会发酵师镰刀|Ar7}和一套{@item 公会医疗包|Ar7}{@homebrew |（见侧栏）}",
+												"发酵师会获颁一枚与自身灵魂绑定的{@item 铜制公会徽章|Ar7}，因此只有本人可以使用。徽章有1点充能，每日黎明时恢复。发酵师佩戴徽章时，可以用一个动作消耗1点充能，从中施放以下法术之一，且不需要材料成分：{@spell 侦测毒性和疾病}和{@spell 净化饮食}。"
+											]
+										}
+									],
+									"id": "00b"
+								},
+								{
+									"ENG_name": "Artisan",
+									"type": "entries",
+									"name": "匠人",
+									"page": 4,
+									"entries": [
+										"匠人享有年度会员和发酵师的全部权益，且无需额外年费即可获得以下追加权益：",
+										{
+											"type": "list",
+											"page": 4,
+											"items": [
+												"一柄{@item 公会匠人战镰|Ar7}{@homebrew |（见侧栏）}和一套新的{@item 公会医疗包|Ar7}",
+												"匠人大约每月一次，可以索要一件普通或非普通稀有度的药水或其他消耗性魔法物品、关于某一主题的秘密情报，或一名NPC发酵师的支援服务（使用{@creature 侍僧|MM}、{@creature 斥候|MM}或{@creature 间谍|MM}的数据卡），而不会有人多问半句。",
+												"匠人会获颁一枚{@item 银制公会徽章|Ar7}，替换其{@item 铜制公会徽章|Ar7|铜徽章}。新徽章与持有者的灵魂绑定，因此只有本人可以使用。这枚魔法徽章使匠人在对抗疾病的豁免检定中具有优势。徽章有2点充能，每日黎明时恢复。匠人佩戴徽章时，可以用一个动作消耗1点或更多充能，从中施放以下法术之一，且不需要材料成分：{@spell 侦测毒性和疾病}（1点充能）、{@spell 防护毒素}（1点充能）、{@spell 净化饮食}（1点充能）和{@spell 次等复原术}（2点充能）。"
+											]
+										}
+									],
+									"id": "00c"
+								},
+								{
+									"ENG_name": "Director",
+									"type": "entries",
+									"name": "理事",
+									"page": 4,
+									"entries": [
+										"理事享有年度会员、发酵师和匠人的全部权益，且无需额外年费即可获得以下追加权益：",
+										{
+											"type": "list",
+											"page": 4,
+											"items": [
+												"一套新的{@item 公会医疗包|Ar7}，且大约每月可应求免费更换一次",
+												"理事大约每月一次，可以申请至多三件普通或非普通稀有度的药水或消耗性魔法物品、临时使用公会少量库存中的一件非普通或稀有奇物，以及一名发酵师（使用{@creature 侍僧|MM}、{@creature 斥候|MM}或{@creature 间谍|MM}的数据卡）和一名匠人（使用{@creature 匪帮队长|MM}、{@creature 德鲁伊|MM}或{@creature 祭司|MM}的数据卡）的协助。",
+												"理事个人往往都是举足轻重的人物，彼此之间常有请托。由GM裁量，理事还可以从其他理事那里获得恩惠、护符或魔法物品等特殊好处。不过，这类好处或许要以一个人情为代价！",
+												"理事则会获颁一枚{@item 金制公会徽章|Ar7}，替换其{@item 银制公会徽章|Ar7|银徽章}（不过他们也可以领一枚较低等级的假徽章，以保密自己的理事身份）。新徽章与持有者的灵魂绑定，因此只有本人可以使用。这枚魔法徽章使理事在对抗疾病的豁免检定中具有优势。徽章有3点充能，每日黎明时恢复。理事佩戴徽章时，可以用一个动作消耗1点或更多充能，从中施放以下法术之一，且不需要材料成分：{@spell 侦测毒性和疾病}（1点充能）、{@spell 净化饮食}（1点充能）、{@spell 防护毒素}（1点充能）、{@spell 次等复原术}（2点充能）、{@spell 死者交谈}（2点充能）和{@spell 植物交谈}（2点充能）。"
+											]
+										}
+									],
+									"id": "00d"
+								}
+							],
+							"id": "009"
+						},
+						{
+							"ENG_name": "The Pickling Guild's Commemorative {@s Weapons} Tools",
+							"type": "entries",
+							"name": "腌制公会的纪念性{@s 武器}工具",
+							"page": 5,
+							"entries": [
+								"发酵师和匠人会获颁公会的特殊纪念工具。这些不仅是大师级作品，更是装饰华美的徽记，象征着持有人在公会中的权威。即便对公会知之甚少的人也看得出，这些工具意味着某种重要的东西。",
+								"至于这些工具既附有魔法、又为战斗完美配重这一事实，公会一般秘而不宣。",
+								{
+									"ENG_name": "Guild Healer's Kit",
+									"type": "statblock",
+									"tag": "item",
+									"source": "Ar7",
+									"name": "公会医疗包",
+									"page": 4,
+									"style": "inset"
+								},
+								{
+									"ENG_name": "Guild Fermenter's Sickle",
+									"type": "statblock",
+									"tag": "item",
+									"source": "Ar7",
+									"name": "公会发酵师镰刀",
+									"page": 5,
+									"style": "inset"
+								},
+								{
+									"ENG_name": "Guild Artisan's Scythe",
+									"type": "statblock",
+									"tag": "item",
+									"source": "Ar7",
+									"name": "公会匠人战镰",
+									"page": 5,
+									"style": "inset"
+								},
+								"{@note 此外，{@item 公会徽章|Ar7}另有金、银、铜三种版本。}"
+							],
+							"id": "00e"
+						},
+						{
+							"ENG_name": "Sample Foods",
+							"type": "entries",
+							"name": "食物示例",
+							"page": 6,
+							"entries": [
+								"腌制公会的成员以炼金术与烹饪术创造奇妙菜肴。以下食物是公会成员或其关联店铺可能出品的一些示例。",
+								{
+									"ENG_name": "Ordinary",
+									"type": "entries",
+									"name": "寻常食物",
+									"page": 6,
+									"entries": [
+										"腌制公会的关联商店出售这些作品，公会简报也会刊载其配方。它们是十分珍稀、价格高昂的美味；单单一客就可能要价75 gp到150 gp，视原料品质而定。",
+										{
+											"type": "list",
+											"page": 6,
+											"items": [
+												{
+													"ENG_name": "Adrook",
+													"type": "item",
+													"name": "阿杜克",
+													"entries": [
+														"一种以捣碎发酵的根茎类蔬菜和香料制成的咸香饮品"
+													]
+												},
+												{
+													"ENG_name": "Sposs",
+													"type": "item",
+													"name": "斯波斯",
+													"entries": [
+														"一根牛骨，经发酵与腌制直至变得绵软多孔，再以糖浆熬煮"
+													]
+												},
+												{
+													"ENG_name": "Velure Sauce",
+													"type": "item",
+													"name": "韦吕尔酱",
+													"entries": [
+														"将特定组合的动物毛发与指甲腌入其中制成的一款辛辣酸爽的酱料"
+													]
+												}
+											]
+										}
+									],
+									"id": "010"
+								},
+								{
+									"ENG_name": "Magical",
+									"type": "entries",
+									"name": "魔法食物",
+									"page": 6,
+									"entries": [
+										"这些魔法食物的配方只有匠人和理事知晓（见\"腌制公会会员制度\"）。高档商店从公会手中收购这些食物，再以离谱的价格售出。执行危险任务的公会成员也可能随身携带它们。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Sepulcheese.webp"
+											},
+											"altText": "一间四壁摆满烹饪与奥术器具的房间里，一名矮人美食家高举起一块散发恶臭的墓穴奶酪。他身旁的台子上躺着一具被开膛的尸体。",
+											"width": 684,
+											"height": 884,
+											"credit": "Gustavo Pelissari"
+										},
+										{
+											"ENG_name": "Sepulcheese",
+											"type": "statblock",
+											"tag": "item",
+											"source": "Ar7",
+											"name": "墓穴奶酪",
+											"page": 6
+										},
+										{
+											"ENG_name": "Scarlet Sausage",
+											"type": "statblock",
+											"tag": "item",
+											"source": "Ar7",
+											"name": "绯红香肠",
+											"page": 7
+										},
+										{
+											"ENG_name": "Memory Chocolate",
+											"type": "statblock",
+											"tag": "item",
+											"source": "Ar7",
+											"name": "记忆巧克力",
+											"page": 7
+										}
+									],
+									"id": "011"
+								},
+								{
+									"ENG_name": "Other Goods and Services",
+									"type": "entries",
+									"name": "其他商品与服务",
+									"page": 7,
+									"entries": [
+										"分会会所或公会旗下的商店可能提供以下商品或服务：",
+										{
+											"type": "list",
+											"page": 7,
+											"items": [
+												"代客发酵或腌制指定果蔬\u2014\u2014每磅食物1 gp",
+												"一杯珍稀的茶、咖啡或巧克力\u2014\u20145 sp",
+												"一瓶异域葡萄酒、啤酒或烈酒\u2014\u2014每瓶10 gp",
+												"一套专精腌制与发酵的{@item 炼金工具|PHB}\u2014\u201450 gp",
+												"腌制与发酵书籍\u2014\u2014每本20 gp",
+												"腌制技艺私教课，至多10人一组\u2014\u2014每小时100 gp"
+											]
+										}
+									],
+									"id": "012"
+								}
+							],
+							"id": "00f"
+						},
+						{
+							"ENG_name": "Introducing the Pickling Guild",
+							"type": "entries",
+							"name": "认识腌制公会",
+							"page": 7,
+							"entries": [
+								"角色们可能通过以下情形之一结识腌制公会：",
+								{
+									"type": "list",
+									"page": 7,
+									"items": [
+										"角色们遇到一位古怪的发酵师，他售卖着有趣的腌菜，并向他们吹嘘自己所属的了不起的公会。",
+										"角色们偶然走进一家陈列着公会招牌食品的商店。店主认出这一行人是冒险者，便向他们展示一件在售的魔法物品，并向他们讲起公会的事。",
+										"角色们造访的城镇里贴着一张品鉴会的宣传海报。",
+										"角色们听到四处流传的谣言：一户病恹恹的人家吃了巷子口公会小店里卖的\"神奇腌洋葱\"之后便痊愈了。"
+									]
+								}
+							],
+							"id": "013"
+						},
+						{
+							"ENG_name": "The Guild's Troubles",
+							"type": "entries",
+							"name": "公会的麻烦",
+							"page": 7,
+							"entries": [
+								"公会时刻留意胜任的新会员，而精于战斗与魔法的冒险者正是上佳人选。一旦公会注意到角色们，领导层可能会请他们帮忙处理一些与公会门面相关的小事，以此试探他们的才能与品性。",
+								"你可以用这里列出的任务，或与某位NPC相关的小任务（见\"重要角色\"），把角色们进一步牵入公会的故事。作为酬劳，公会可能会奉上非普通或稀有的药水，或公会出品的魔法食物之一。若是印象格外深刻，公会还可能让整个冒险小队免费入会一年，并提供分会会所的短期食宿。",
+								{
+									"type": "list",
+									"page": 8,
+									"items": [
+										"当地分会会所请角色们去附近一处洞穴采集可用于占卜药水的珍稀羽纹菇。不巧的是，一头{@creature 蔓生怪|MM}近来把洞穴据为己有。这头{@creature 蔓生怪|MM}显露出不同寻常的智慧迹象：它一直在洞口摆放美丽的插花。",
+										"卫兵玛希拉是一位行商，也是公会年度会员。她请角色们随行护送一趟卖啤酒的买卖。她计划的路线要穿越众父林\u2014\u2014古怪德鲁伊萨米拉的居所。萨米拉会拦路打劫旅人，把他们随身携带的液体变成{@creature 水元素|MM|水元素}（在本例中即啤酒元素），还宣称自己\"受够了擅自闯入者糟蹋森林\"。",
+										"卢玛是一位侏儒年度会员，以卖肉干为生。她请角色们帮她挡开一群欺负她的泼皮。这些霸凌者其实是卢玛的前任罗兰达暗中派来的\u2014\u2014罗兰达想让卢玛过得足够凄惨，好哭着重投前女友的怀抱寻求慰藉。如果卢玛真回头了，罗兰达打算把泼皮撤走，但这帮恶霸未必肯善罢甘休。"
+									]
+								},
+								"冒险者一旦向公会证明了自己，就会被邀入核心，并被告知公会的终极目标。即使冒险者不选择入会，公会也素有与强势局外人合作的传统。角色们可能会受邀协助公会执行真正的任务。",
+								{
+									"type": "list",
+									"page": 8,
+									"items": [
+										"附近一座村庄的世袭村长阿图尔·帕维尔死了。当地人说是心力衰竭，公会却知道那是毒杀。他们请角色们揪出真凶。调查揭示，杀死帕维尔的是一种以地狱生物分泌物制成的稀有毒素，而住在附近林中的{@creature 绿鬼婆|MM}黄脓婆婆是唯一知晓其制法的人。帕维尔那位看似悲痛欲绝的儿子\u2014\u2014一个看似憨傻天真的年轻人雨果\u2014\u2014正是从她那里买来毒药，想让镇子摆脱这位愈发偏执残暴的村长。",
+										"一段古老预言中关于真菌魔入侵的征兆，终于一一应验。公会中鲜有人能为这场战斗做好准备，于是向角色们求助，望其阻止这场灾祸。预言暗示，将有一位\"活体容器\"为魔物\"开启门扉\"。线索指向一小群疫病缠身的难民，他们栖身于一片狂风肆虐、远离文明的高原。殖民地受一位强大却日渐衰老的牧师佩尔维兹庇护，他一直压制着疫病，却无力根治。他那身染重病、梦想成为圣武士的17岁儿子马兹达克，命定就是那个活体容器。",
+										"一个崇拜魔鬼的邪教团\"堕果之母\"伪装成助产士联合会四处活动。他们试图拉拢前途无量的女巫希玛入教，而公会也同时向她抛出了橄榄枝。她正左右为难，不知该加入哪一边，更不知道这两个组织的真实目的。角色们的任务，就是说服她加入腌制公会。不幸的是，邪教团已失去耐心，悍然掳人。希玛是{@creature 绿鬼婆|MM}黄脓婆婆的后裔，即便她不肯配合，她的血与器官也威力惊人......"
+									]
+								}
+							],
+							"id": "014"
+						},
+						{
+							"ENG_name": "Notable Characters",
+							"type": "entries",
+							"name": "重要角色",
+							"page": 8,
+							"entries": [
+								"形形色色的人都在关心食品保藏与公共卫生！以下是几位知名的公会成员，他们各自都有需要应付的麻烦或秘密。",
+								{
+									"ENG_name": "Akangsha Sundarbandar (Halfling, they/them)",
+									"type": "entries",
+									"name": "阿坎莎·孙达尔班达尔（半身人，代词TA）",
+									"page": 8,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"腐烂：它是一团冷火，能把卑微的尸骸炼成奇妙之物。一旦我们克服对它的恐惧，拥抱死亡赋予一具躯体\u2014\u2014任何躯体、所有躯体\u2014\u2014的独特力量，死亡便不过是另一只工具箱！"
+											],
+											"by": "阿坎莎·孙达尔班达尔"
+										},
+										"{@creature 阿坎莎·孙达尔班达尔|Ar7|阿坎莎}是一位身材敦实的年长魔法师，身为发酵师，以其强大的疗法在腌制公会中享有盛名。然而，这位祖母般的半身人藏着一个秘密：他们的疗法本质上全是死灵术。他们饲养了一整地下室的不死生物，用以提炼药物。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"page": 8,
+											"items": [
+												{
+													"ENG_name": "Signature Look:",
+													"type": "item",
+													"name": "标志性造型：",
+													"entries": [
+														"{@creature 阿坎莎·孙达尔班达尔|Ar7|阿坎莎}身边总带着一只宠物蟾蜍，它背上长着一朵巨大的蘑菇。{@creature 阿坎莎·孙达尔班达尔|Ar7|阿坎莎}视这朵蘑菇为自己的宠物，蟾蜍不过是它的载具。他们给它起名叫毒菌。（蟾蜍没有名字。）"
+													]
+												},
+												{
+													"ENG_name": "Personality:",
+													"type": "item",
+													"name": "性格：",
+													"entries": [
+														"{@creature 阿坎莎·孙达尔班达尔|Ar7|阿坎莎}理性、慈爱且富有同理心。"
+													]
+												},
+												{
+													"ENG_name": "Statistics:",
+													"type": "item",
+													"name": "数据：",
+													"entries": [
+														{
+															"ENG_name": "Statistics:",
+															"type": "homebrew",
+															"name": "数据：",
+															"entries": [
+																"{@creature 阿坎莎·孙达尔班达尔|Ar7|阿坎莎}使用{@creature 阿坎莎·孙达尔班达尔|Ar7|法师的数据，但准备的法术不同}。"
+															],
+															"oldEntries": [
+																"阿坎莎使用{@creature 魔法师|MM}的数据，但准备的法术如下：",
+																{
+																	"ENG_name": "Spellcasting",
+																	"type": "spellcasting",
+																	"name": "施法",
+																	"spells": {
+																		"0": {
+																			"spells": [
+																				"{@spell 光亮术}",
+																				"{@spell 法师之手}",
+																				"{@spell 修复术}",
+																				"{@spell 毒气喷涌}"
+																			]
+																		},
+																		"1": {
+																			"slots": 4,
+																			"spells": [
+																				"{@spell 侦测魔法}",
+																				"{@spell 虚假生命}",
+																				"{@spell 油腻术}",
+																				"{@spell 隐形仆役}"
+																			]
+																		},
+																		"2": {
+																			"slots": 3,
+																			"spells": [
+																				"{@spell 马友夫强酸箭|PHB|强酸箭}",
+																				"{@spell 遗体防腐}"
+																			]
+																		},
+																		"3": {
+																			"slots": 3,
+																			"spells": [
+																				"{@spell 活化死尸}",
+																				"{@spell 守卫刻文}",
+																				"{@spell 吸血鬼之触}"
+																			]
+																		},
+																		"4": {
+																			"slots": 3,
+																			"spells": [
+																				"{@spell 枯萎术}",
+																				"{@spell 魔邓肯私人密室|PHB|私人密室}"
+																			]
+																		},
+																		"5": {
+																			"slots": 1,
+																			"spells": [
+																				"{@spell 定身怪物}"
+																			]
+																		}
+																	}
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									],
+									"id": "016"
+								},
+								{
+									"ENG_name": "Involving Akangsha",
+									"type": "entries",
+									"name": "让阿坎莎卷入",
+									"page": 9,
+									"entries": [
+										"好心却爱行险的阿坎莎，可能通过以下故事钩子卷入角色们的故事：",
+										{
+											"type": "list",
+											"page": 9,
+											"items": [
+												"公会的一个不明仇敌放出了阿坎莎的不死生物，企图借刀杀人。这位年迈的魔法师如今被困在自家一间设有结界的房间里，而不死生物正在街上游荡。如果角色们查明了真相，就必须选择是否向公会揭穿阿坎莎的秘密。",
+												"狂热的发酵师智者利米埃尔发现了阿坎莎的秘密，认定其为恶徒。他派角色们去调查这个死灵法师，并将其活捉或诛杀（哪个省事选哪个）。阿坎莎并不认识角色们，端着牛奶和饼干笑脸相迎。地下室的呻吟声却可能搅了这场茶会。",
+												"悲痛的面包师拉伊请角色们寻找他姑婆贾亚特里的遗体\u2014\u2014遗体在葬礼前不翼而飞。哎呀，原来是被阿坎莎拿去发酵了！角色们能在遗体变得面目全非之前把它要回来吗？还是能想出别出心裁的法子安抚拉伊？"
+											]
+										}
+									],
+									"id": "017"
+								},
+								{
+									"ENG_name": "Glorian the Secretariat (Doppelganger, they/them)",
+									"type": "entries",
+									"name": "书记格洛里安（变形怪，代词TA）",
+									"page": 9,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"你以为组织是靠人运转的？错！组织是靠纸运转的！备忘录、仓促写就的指示、政策通告、账目与交易记录......亲爱的，真正权力的形态，是挺括、洁白而扁平的！"
+											],
+											"by": "书记格洛里安"
+										},
+										"{@creature 书记格洛里安|Ar7|格洛里安}是腌制公会最有影响力的匠人之一，负责公会大量的行政事务，无论日常的还是机密的。这个身份只是个幌子：{@creature 书记格洛里安|Ar7|格洛里安}其实是一个名叫特奇林法洛什的变形怪，他要向几十年前\"放任\"其精灵恋人西里尔·特温露病死的那个不知名理事复仇。他对腌制公会的使命毫无兴趣。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"page": 9,
+											"items": [
+												{
+													"ENG_name": "Signature Look:",
+													"type": "item",
+													"name": "标志性造型：",
+													"entries": [
+														"{@creature 书记格洛里安|Ar7|格洛里安}无论以什么形态出现，双手总是沾着墨迹。他通常以精灵的形象示人。"
+													]
+												},
+												{
+													"ENG_name": "Personality:",
+													"type": "item",
+													"name": "性格：",
+													"entries": [
+														"{@creature 书记格洛里安|Ar7|格洛里安}看似一丝不苟甚至有些偏执，但这只是掩饰其精明算计本性的伪装。"
+													]
+												},
+												{
+													"ENG_name": "Statistics:",
+													"type": "item",
+													"name": "数据：",
+													"entries": [
+														"{@creature 书记格洛里安|Ar7|格洛里安}使用{@creature 变形怪|MM}的数据。"
+													]
+												}
+											]
+										}
+									],
+									"id": "018"
+								},
+								{
+									"ENG_name": "Involving Glorian",
+									"type": "entries",
+									"name": "让格洛里安卷入",
+									"page": 9,
+									"entries": [
+										"工于心计的{@creature 书记格洛里安|Ar7|格洛里安}可能通过以下故事钩子卷入角色们的故事：",
+										{
+											"type": "list",
+											"page": 9,
+											"items": [
+												"{@creature 书记格洛里安|Ar7|格洛里安}担心另一位匠人知晓了自己的秘密，便告诉角色们，某位公会成员（选一个角色们认识的）在暗中破坏公会，并付钱让角色们去\"处理\"此人。{@creature 书记格洛里安|Ar7|格洛里安}还在此人的住处栽赃了来自一个子虚乌有的魔鬼邪教的假信件。",
+												"真正的格洛里安\u2014\u2014那个对腌制公会一无所知、被变形怪以为早已死去的人\u2014\u2014来到了镇上。{@creature 书记格洛里安|Ar7|特奇林法洛什}告诉角色们，此人是个潜入公会的邪恶间谍，必须在他作乱之前除掉。而真格洛里安听闻角色们是受雇冒险者，便找上门来，请他们寻回他在前来本城的路上被土匪劫走的几件珍贵物品。",
+												"{@creature 书记格洛里安|Ar7|格洛里安}认定角色之一是自己恋人的转世，试图将其活捉，以\"逼出那缕魂魄\"。"
+											]
+										}
+									],
+									"id": "019"
+								},
+								{
+									"ENG_name": "Ivmal Alef (Human, he/him)",
+									"type": "entries",
+									"name": "伊夫马尔·阿莱夫（人类，代词他）",
+									"page": 9,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"我为什么要发酵？想想看：你我各自照着同一张蛋糕配方，烤出两份一模一样的甜点并不难。可若你我照着一模一样的配方腌制发酵白菜，天底下没有任何力量能让这两棵白菜尝起来一个味。发酵即创作艺术。发酵即成为自己。"
+											],
+											"by": "伊夫马尔·阿莱夫"
+										},
+										"瘦削、红发、刚过完少年时代的炼金学徒{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}，是腌制公会的热心年度会员，却对其真正目的一无所知。他在一间公会旗下的小店里做志愿店员，时刻留意着新会员的人选。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"page": 9,
+											"items": [
+												{
+													"ENG_name": "Signature Look:",
+													"type": "item",
+													"name": "标志性造型：",
+													"entries": [
+														"{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}身上总穿戴一件带蔬菜纹样的衣物或首饰。"
+													]
+												},
+												{
+													"ENG_name": "Personality:",
+													"type": "item",
+													"name": "性格：",
+													"entries": [
+														"{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}热情洋溢、干劲十足且颇有艺术气质。"
+													]
+												},
+												{
+													"ENG_name": "Statistics:",
+													"type": "item",
+													"name": "数据：",
+													"entries": [
+														"{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}使用{@creature 平民|MM}的数据。"
+													]
+												}
+											]
+										}
+									],
+									"id": "01a"
+								},
+								{
+									"ENG_name": "Involving Ivmal",
+									"type": "entries",
+									"name": "让伊夫马尔卷入",
+									"page": 9,
+									"entries": [
+										"天真烂漫的{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}可能通过以下故事钩子卷入角色们的故事：",
+										{
+											"type": "list",
+											"page": 9,
+											"items": [
+												"腌制公会领导层想评估{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}能否晋升为发酵师。他们请角色们调查他的炼金师父乌玛·蒂洛特玛是否惹上了麻烦。不巧的是，蒂洛特玛成了当地一个绰号\"食尸鬼客\"的死灵法师的目标\u2014\u2014后者误以为这位老炼金师发现了让丧尸和骷髅重获智性的秘密。倘若蒂洛特玛有个三长两短，{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}会伤心欲绝。",
+												"{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}需要珍稀的天蛛卵，而唯一已知的天蛛饲养者，是一位格外不好惹的同行炼金师\u2014\u2014\"大猩猩\"格蕾塔。他请角色们代为取卵，心里清楚她恨透了{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}，绝不可能明知故给任何有用的原料。格蕾塔正在为自己研发的实验性抗毒血清寻找试药人，只要角色们愿意充当志愿者，她便肯以卵相易。",
+												"作为学业的一部分，{@creature 伊夫马尔·阿莱夫|Ar7|伊夫马尔}一直在试验新型食品防腐剂。他不小心毒倒了自己的师父乌玛·蒂洛特玛，于是向{@creature 书记格洛里安|Ar7}求助，后者便派角色们去寻找解药。{@creature 书记格洛里安|Ar7|格洛里安}可能借机考验角色们，看他们是否是入会的候选之才\u2014\u2014尤其是当{@creature 书记格洛里安|Ar7|格洛里安}觉得能为一己之图操纵他们时。"
+											]
+										}
+									],
+									"id": "01b"
+								},
+								{
+									"ENG_name": "Nupita & Nuhara Mfala (Dragonborn, she/her)",
+									"type": "entries",
+									"name": "努皮塔与努哈拉·姆法拉（龙裔，代词她）",
+									"page": 10,
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"既然真正的奇迹就在我们身边，为什么还要浪费时间祈求神迹？诸神不需要我们在积灰的礼拜堂里背诵祷文，他们指望我们撸起袖子钻进泥土，亲手挖出那株能治好我们的红花草药！"
+											],
+											"by": "努皮塔与努哈拉·姆法拉"
+										},
+										"蓝鳞的{@creature 努皮塔·姆法拉|Ar7|努皮塔}和她紫鳞的少女女儿{@creature 努哈拉·姆法拉|Ar7|努哈拉}都是发酵师，在偏远的拉达之恩村经营着一间小型酿造坊\u2014\u2014那座村庄以繁盛的奇虫异兽而闻名。母女俩秘密采集当地野生物的样本用于研制新药，尤其是那些栖息于此的珍稀昆虫的卵、蜕下的外骨骼和褪下的蝶蛹。两人虽然深爱彼此，却常为{@creature 努哈拉·姆法拉|Ar7|努哈拉的}独立性争执不休。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"page": 10,
+											"items": [
+												{
+													"ENG_name": "Signature Look:",
+													"type": "item",
+													"name": "标志性造型：",
+													"entries": [
+														"她们的利爪上绘着精美的花卉图样。"
+													]
+												},
+												{
+													"ENG_name": "Personality:",
+													"type": "item",
+													"name": "性格：",
+													"entries": [
+														"她们都是务实的女性，专注于自己的事业。{@creature 努皮塔·姆法拉|Ar7|努皮塔}有些容易焦虑，而{@creature 努哈拉·姆法拉|Ar7|努哈拉}则天性好奇。"
+													]
+												},
+												{
+													"ENG_name": "Statistics:",
+													"type": "item",
+													"name": "数据：",
+													"entries": [
+														"{@creature 努皮塔·姆法拉|Ar7|努皮塔}使用{@creature 德鲁伊|MM}的数据，{@creature 努哈拉·姆法拉|Ar7|努哈拉}使用{@creature 平民|MM}的数据。"
+													]
+												}
+											]
+										}
+									],
+									"id": "01c"
+								},
+								{
+									"ENG_name": "Involving Nupita & Nuhara",
+									"type": "entries",
+									"name": "让努皮塔与努哈拉卷入",
+									"page": 10,
+									"entries": [
+										"这对爱冒险的母女组合，可能通过以下钩子卷入角色们的故事：",
+										{
+											"type": "list",
+											"page": 10,
+											"items": [
+												"角色们刚一进村，就撞见一场公开指控：一位名叫奥娜的祭司宣称\"龙巫婆\"们毒害了村里的啤酒。实际上，是奥娜自己动了手脚（下了药力强劲但不致命的泻药）\u2014\u2014在他看来，这两位女子的影响力对自己构成了挑战。",
+												"{@creature 努哈拉·姆法拉|Ar7|努哈拉}在林中与情人幽会时，被一个鬼婆拦路劫走。这对野鸳鸯被{@creature 努皮塔·姆法拉|Ar7|努皮塔}撞见，她以自己的性命为价，换回了女儿的自由。如今{@creature 努哈拉·姆法拉|Ar7|努哈拉}回到了村里，满怀负罪与悲痛，四处寻求将母亲从鬼婆魔掌中解救出来的办法。",
+												"{@creature 努哈拉·姆法拉|Ar7|努哈拉}被一个{@creature 幽魂|MM}附身，她对母亲的怨恨与叛逆被激化到了极点。她带着一套编造的说辞找到角色们，哭诉自己在家中遭受残酷非人的对待，并提出了一个刺杀母亲的计划。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/NupitaAndNuhara.webp"
+											},
+											"altText": "一名蓝鳞龙裔从树上摘下一片叶子，她下方一名紫鳞龙裔抱着一捆树枝。",
+											"width": 1069,
+											"height": 693,
+											"credit": "Gustavo Pelissari"
+										}
+									],
+									"id": "01d"
+								},
+								{
+									"ENG_name": "Pickling vs. Fermenting",
+									"type": "inset",
+									"page": 11,
+									"name": "腌制与发酵",
+									"entries": [
+										"腌制是将食物浸泡于醋或其他酸性液体中加以改变和保存。发酵同样会改变食物，但依靠的是天然存在的细菌、真菌和其他微生物。两种工艺虽有重叠，却绝不是一回事（腌制公会的任何会员都会这么告诉你）！"
+									],
+									"id": "01e"
+								}
+							],
+							"id": "015"
+						},
+						{
+							"ENG_name": "Domain Statistics",
+							"type": "entries",
+							"name": "领地数据",
+							"page": 11,
+							"entries": [
+								"如果你在游戏中使用{@loader 《王国与战争》|book/MCDM Productions; Kingdoms & Warfare.json}中的领地规则，腌制公会可以作为你游戏中的一个NPC国度或反派国度，数据如下。",
+								{
+									"ENG_name": "Title",
+									"type": "entries",
+									"name": "头衔",
+									"page": 11,
+									"entries": [
+										"腌制公会的领袖获得以下特性：",
+										{
+											"ENG_name": "Poultice Master",
+											"type": "entries",
+											"name": "药膏大师",
+											"page": 11,
+											"entries": [
+												"药膏大师免疫疾病。此外，在一次长休期间，药膏大师可以制作一张{@spell 次等复原术|PHB}的{@item 法术卷轴(2环)|DMG|法术卷轴}，或从以下列表中选择制作两件物品：{@item 抗毒剂 (小瓶)|PHB|抗毒剂}、{@item 基础毒药(小瓶装)|PHB|基础毒药}、{@item 治疗药水|DMG}。这些物品会在24小时后失去效力，不再起作用。"
+											],
+											"id": "021"
+										}
+									],
+									"id": "020"
+								},
+								{
+									"ENG_name": "The Pickling Guild",
+									"type": "entries",
+									"name": "腌制公会",
+									"page": 11,
+									"entries": [
+										"{@i 神秘结社（秘密党团）}",
+										{
+											"type": "list",
+											"page": 11,
+											"style": "list-hang",
+											"items": [
+												{
+													"ENG_name": "Skills:",
+													"type": "item",
+													"name": "技能：",
+													"entries": [
+														"外交{@skillCheck diplomacy 0}、谍报{@skillCheck espionage 3}、学识{@skillCheck lore 4}、运作{@skillCheck operations 2}"
+													]
+												},
+												{
+													"ENG_name": "Defenses:",
+													"type": "item",
+													"name": "防御：",
+													"entries": [
+														"通讯14、决心13、资源13"
+													]
+												},
+												{
+													"ENG_name": "Size:",
+													"type": "item",
+													"name": "规模：",
+													"entries": [
+														"2（{@dice d6}权力骰，阴谋阶段中共6个领地回合）"
+													]
+												}
+											]
+										}
+									],
+									"id": "022"
+								},
+								{
+									"ENG_name": "Powers",
+									"type": "entries",
+									"name": "权力",
+									"page": 11,
+									"entries": [
+										"此国度的所有军官均获得以下组织权力。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"page": 11,
+											"items": [
+												{
+													"ENG_name": "Universal Energy Field",
+													"type": "item",
+													"name": "通用能量场",
+													"page": 11,
+													"entries": [
+														"军官可以用一个动作从其领地的骰池中取一枚权力骰，并恢复若干法术位，其总环阶等于权力骰上的点数。军官恢复的法术位均不可为6环或更高。",
+														"或者，军官可以用一个附赠动作从其领地的骰池中取一枚权力骰，以魔法能量为其手持的一件武器充能。军官从以下伤害类型中选择一种：强酸、寒冷、火焰或闪电。直到该军官下个回合开始前，该武器额外造成等同于权力骰点数的所选类型伤害。"
+													]
+												},
+												{
+													"ENG_name": "Verdant Summons",
+													"type": "item",
+													"name": "苍翠召唤",
+													"page": 11,
+													"entries": [
+														"军官可以用一个动作从其领地的骰池中取一枚权力骰，召唤一只挑战等级不高于骰面点数的植物。植物出现于军官30尺内其可见的一处未被占据空间。军官以精神操控植物的行动。植物在被召唤时立即行动，随后在同一先攻值上紧随该军官之后行动。",
+														"以此权力召唤的植物，会在生命值降至0或3轮后消失，以先到者为准。"
+													]
+												}
+											]
+										}
+									],
+									"id": "023"
+								},
+								{
+									"ENG_name": "Features",
+									"type": "entries",
+									"name": "特性",
+									"page": 11,
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"page": 11,
+											"items": [
+												{
+													"ENG_name": "Curse of Vitiation",
+													"type": "item",
+													"name": "损毁诅咒",
+													"entries": [
+														"若在与敌对领地军官的战斗开始时，腌制公会的通讯等级为2或更高，腌制公会便从敌方领地中选择一名副官。该副官在这场战斗中的豁免检定具有劣势。"
+													]
+												},
+												{
+													"ENG_name": "Swamp Mother (Special Unit)",
+													"type": "item",
+													"name": "沼泽之母（特殊单位）",
+													"entries": [
+														"军官可以用一个领地动作进行一次{@dc 13}的学识检定。检定成功时，腌制公会征召\"沼泽之母\"\u2014\u2014一支由蔓生怪组成的特殊单位。（见{@loader 《王国与战争》|book/MCDM Productions; Kingdoms & Warfare.json}的\"领地与阴谋\"一章。）"
+													]
+												},
+												{
+													"ENG_name": "Unravel Sorcery (1/Intrigue)",
+													"type": "item",
+													"name": "拆解法术（1/阴谋阶段）",
+													"entries": [
+														"军官可以用一个领地附赠动作，对敌对领地的通讯进行一次学识对抗检定，以探知该领地某位军官的魔法能力。检定成功时，腌制公会得知目标所知晓和准备的法术，且直到本次阴谋阶段结束前，对该军官使用的法术及其他魔法效应的豁免检定具有优势。"
+													]
+												},
+												{
+													"ENG_name": "We Were Never Here",
+													"type": "item",
+													"name": "我们从未在此",
+													"entries": [
+														"军官可以用一个领地动作，对敌对领地的通讯进行一次学识对抗检定。检定成功时，腌制公会的通讯等级提升1级，而敌对领地的通讯等级下降1级。"
+													]
+												}
+											]
+										}
+									],
+									"id": "024"
+								}
+							],
+							"id": "01f"
+						}
+					],
+					"id": "005"
+				},
+				{
+					"ENG_name": "Wonders of the Wilds",
+					"type": "section",
+					"name": "荒野奇观",
+					"page": 12,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Wonders.webp"
+							},
+							"altText": "一幅水彩画，夜空被树冠遮蔽。",
+							"width": 1280,
+							"height": 539
+						},
+						{
+							"type": "entries",
+							"page": 12,
+							"style": "text-center",
+							"entries": [
+								"{@style 自然主题的魔法物品与法术|dnd-font;large}",
+								"文：汉娜·罗丝",
+								{
+									"type": "inset",
+									"page": 12,
+									"entries": [
+										{
+											"type": "quote",
+											"style": "quote-pull",
+											"skipMarks": true,
+											"skipItalics": true,
+											"entries": [
+												"一个身披叶片斗篷的年轻人在丛林中飞奔，于腾跃之间化为一头黑豹。",
+												"一名古铜色皮肤的提夫林蹲伏在高耸沙丘的阴影里，正与一只长耳狐狸深谈。",
+												"一位身姿挺拔的精灵张开双臂迎接春日阵雨，七彩的野花在她身边绽放。"
+											]
+										}
+									],
+									"id": "027"
+								}
+							],
+							"id": "026"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/HalooftheHeaveansElf.webp"
+							},
+							"altText": "一顶散发金光、饰有一只竖瞳绿眼的冠冕，悬浮于一位被叶片环绕的精灵头顶。",
+							"width": 516,
+							"height": 624,
+							"credit": "Nephelomancer"
+						},
+						"与自然有着深厚联结的角色保护、滋养并探索着身边的世界。他们在无垠的风景中漫游冒险，寻获或有幸撞见能助他们完成使命的魔法物品。",
+						"本文呈现的魔法物品专为德鲁伊、游侠及其他亲近自然世界的角色设计。由游戏主持人裁量，对于以其他方式与自然结下深缘的角色，物品的职业专属同调要求可以豁免。",
+						"虽然这些物品或许可以在商店\u2014\u2014或沼泽女巫的小屋\u2014\u2014里买到，但对角色们而言，在其汲取力量的荒野中寻得它们，或许才是最合适的安排。",
+						{
+							"ENG_name": "New Spells",
+							"type": "inset",
+							"page": 12,
+							"name": "新法术",
+							"entries": [
+								"以下魔法物品描述中的大多数法术均见于五版核心规则，但带星号（*）的法术为本文末尾呈现的新法术。"
+							],
+							"id": "028"
+						},
+						{
+							"ENG_name": "Amulet of Woodland Speech",
+							"type": "statblock",
+							"tag": "item",
+							"name": "林地言语护符",
+							"source": "Ar7",
+							"page": 13
+						},
+						{
+							"ENG_name": "Bag of Saplings",
+							"type": "statblock",
+							"tag": "item",
+							"name": "树苗袋",
+							"source": "Ar7",
+							"page": 13
+						},
+						{
+							"ENG_name": "Belt of Vines",
+							"type": "statblock",
+							"tag": "item",
+							"name": "藤蔓腰带",
+							"source": "Ar7",
+							"page": 13
+						},
+						{
+							"ENG_name": "Charm of Communication",
+							"type": "statblock",
+							"tag": "item",
+							"name": "沟通护符",
+							"source": "Ar7",
+							"page": 13
+						},
+						{
+							"ENG_name": "Cloak of the Grove Guardian",
+							"type": "statblock",
+							"tag": "item",
+							"name": "圣林守卫斗篷",
+							"source": "Ar7",
+							"page": 13
+						},
+						{
+							"ENG_name": "Krakenvine",
+							"type": "statblock",
+							"tag": "creature",
+							"source": "Ar7",
+							"name": "克拉肯藤",
+							"page": 14
+						},
+						{
+							"ENG_name": "Thornbush",
+							"type": "statblock",
+							"tag": "creature",
+							"source": "Ar7",
+							"name": "荆棘丛",
+							"page": 14
+						},
+						{
+							"ENG_name": "Halo of the Heavens",
+							"type": "statblock",
+							"tag": "item",
+							"name": "天穹光环",
+							"source": "Ar7",
+							"page": 15
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/HalooftheHeavens.webp"
+							},
+							"altText": "一顶焕发黄光的冠冕，蜿蜒弯曲，正中嵌着一只绿眼。",
+							"width": 732,
+							"height": 477,
+							"credit": "Nephelomancer"
+						},
+						{
+							"ENG_name": "Staff of the Desert Sands",
+							"type": "statblock",
+							"tag": "item",
+							"name": "沙漠之沙法杖",
+							"source": "Ar7",
+							"page": 15
+						},
+						{
+							"ENG_name": "Staff of the Endless Plains",
+							"type": "statblock",
+							"tag": "item",
+							"name": "无垠平原法杖",
+							"source": "Ar7",
+							"page": 16
+						},
+						{
+							"ENG_name": "Staff of the Frozen Tundra",
+							"type": "statblock",
+							"tag": "item",
+							"name": "冰冻苔原法杖",
+							"source": "Ar7",
+							"page": 16
+						},
+						{
+							"ENG_name": "Staff of the Granite Peaks",
+							"type": "statblock",
+							"tag": "item",
+							"name": "花岗岩峰法杖",
+							"source": "Ar7",
+							"page": 17
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/TheGranitePeaks.webp"
+							},
+							"altText": "四名旅人正跨过一道横亘于两座石峰之间的宽阔木桥。明亮的落日映照着远方群山间奔流的江河。",
+							"width": 1069,
+							"height": 678,
+							"credit": "Kent Davis Jr."
+						},
+						{
+							"ENG_name": "Staff of the Swamplands",
+							"type": "statblock",
+							"tag": "item",
+							"name": "沼泽地法杖",
+							"source": "Ar7",
+							"page": 18
+						},
+						{
+							"ENG_name": "Staff of the Tides",
+							"type": "statblock",
+							"tag": "item",
+							"name": "潮汐法杖",
+							"source": "Ar7",
+							"page": 18
+						},
+						{
+							"ENG_name": "Subterranean Staff",
+							"type": "statblock",
+							"tag": "item",
+							"name": "地下法杖",
+							"source": "Ar7",
+							"page": 19
+						},
+						{
+							"ENG_name": "Staff of the Seasons",
+							"type": "statblock",
+							"tag": "item",
+							"name": "季节法杖",
+							"source": "Ar7",
+							"page": 19
+						},
+						{
+							"ENG_name": "Wildflower Wand",
+							"type": "statblock",
+							"tag": "item",
+							"name": "野花魔杖",
+							"source": "Ar7",
+							"page": 19
+						},
+						{
+							"ENG_name": "Spells of the Wilds",
+							"type": "entries",
+							"name": "荒野法术",
+							"page": 20,
+							"entries": [
+								"由GM裁量，任何法术都可以开放给下列未列出的其他职业或子职业。",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"page": 20,
+									"items": [
+										{
+											"ENG_name": "Druid Spells",
+											"type": "entries",
+											"name": "德鲁伊法术",
+											"page": 20,
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"page": 20,
+													"items": [
+														{
+															"ENG_name": "1st Level",
+															"type": "item",
+															"name": "1环",
+															"entries": [
+																"",
+																"{@spell 瞬间冻结|Ar7}（塑能系）"
+															]
+														},
+														{
+															"ENG_name": "2nd Level",
+															"type": "item",
+															"name": "2环",
+															"entries": [
+																"",
+																"{@spell 冰凌齐射|Ar7}（塑能系）",
+																"{@spell 震颤感知|Ar7}（变化系）"
+															]
+														},
+														{
+															"ENG_name": "3rd Level",
+															"type": "item",
+															"name": "3环",
+															"entries": [
+																"",
+																"{@spell 尘云|Ar7}（咒法系）",
+																"{@spell 喷射水柱|Ar7}（咒法系）"
+															]
+														},
+														{
+															"ENG_name": "4th Level",
+															"type": "item",
+															"name": "4环",
+															"entries": [
+																"",
+																"{@spell 冰面|Ar7}（咒法系）",
+																"{@spell 大漩涡化身|Ar7}（变化系）"
+															]
+														},
+														{
+															"ENG_name": "5th Level",
+															"type": "item",
+															"name": "5环",
+															"entries": [
+																"",
+																"{@spell 沙暴|Ar7}（塑能系）"
+															]
+														}
+													]
+												}
+											],
+											"id": "02a"
+										},
+										{
+											"ENG_name": "Ranger Spells",
+											"type": "entries",
+											"name": "游侠法术",
+											"page": 20,
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"page": 20,
+													"items": [
+														{
+															"ENG_name": "2nd Level",
+															"type": "item",
+															"name": "2环",
+															"entries": [
+																"",
+																"{@spell 震颤感知|Ar7}（变化系）"
+															]
+														},
+														{
+															"ENG_name": "3rd Level",
+															"type": "item",
+															"name": "3环",
+															"entries": [
+																"",
+																"{@spell 尘云|Ar7}（咒法系）"
+															]
+														},
+														{
+															"ENG_name": "4th Level",
+															"type": "item",
+															"name": "4环",
+															"entries": [
+																"",
+																"{@spell 大漩涡化身|Ar7}（变化系）"
+															]
+														},
+														{
+															"ENG_name": "5th Level",
+															"type": "item",
+															"name": "5环",
+															"entries": [
+																"",
+																"{@spell 沙暴|Ar7}（塑能系）"
+															]
+														}
+													]
+												}
+											],
+											"id": "02b"
+										},
+										{
+											"ENG_name": "Sorcerer Spells",
+											"type": "entries",
+											"name": "术士法术",
+											"page": 20,
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"page": 20,
+													"items": [
+														{
+															"ENG_name": "1st Level",
+															"type": "item",
+															"name": "1环",
+															"entries": [
+																"",
+																"{@spell 瞬间冻结|Ar7}（塑能系）"
+															]
+														},
+														{
+															"ENG_name": "2nd Level",
+															"type": "item",
+															"name": "2环",
+															"entries": [
+																"",
+																"{@spell 冰凌齐射|Ar7}（塑能系）"
+															]
+														},
+														{
+															"ENG_name": "3rd Level",
+															"type": "item",
+															"name": "3环",
+															"entries": [
+																"",
+																"{@spell 尘云|Ar7}（咒法系）"
+															]
+														},
+														{
+															"ENG_name": "4th Level",
+															"type": "item",
+															"name": "4环",
+															"entries": [
+																"",
+																"{@spell 冰面|Ar7}（咒法系）"
+															]
+														}
+													]
+												}
+											],
+											"id": "02c"
+										},
+										{
+											"ENG_name": "Warlock Spells",
+											"type": "entries",
+											"name": "魔契师法术",
+											"page": 20,
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"page": 20,
+													"items": [
+														{
+															"ENG_name": "3rd Level",
+															"type": "item",
+															"name": "3环",
+															"entries": [
+																"",
+																"{@spell 尘云|Ar7}（咒法系）"
+															]
+														},
+														{
+															"ENG_name": "4th Level",
+															"type": "item",
+															"name": "4环",
+															"entries": [
+																"",
+																"{@spell 大漩涡化身|Ar7}（变化系）"
+															]
+														},
+														{
+															"ENG_name": "5th Level",
+															"type": "item",
+															"name": "5环",
+															"entries": [
+																"",
+																"{@spell 沙暴|Ar7}（塑能系）"
+															]
+														}
+													]
+												}
+											],
+											"id": "02d"
+										},
+										{
+											"ENG_name": "Wizard Spells",
+											"type": "entries",
+											"name": "法师法术",
+											"page": 20,
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"page": 20,
+													"items": [
+														{
+															"ENG_name": "1st Level",
+															"type": "item",
+															"name": "1环",
+															"entries": [
+																"",
+																"{@spell 瞬间冻结|Ar7}（塑能系）"
+															]
+														},
+														{
+															"ENG_name": "2nd Level",
+															"type": "item",
+															"name": "2环",
+															"entries": [
+																"",
+																"{@spell 冰凌齐射|Ar7}（塑能系）"
+															]
+														},
+														{
+															"ENG_name": "3rd Level",
+															"type": "item",
+															"name": "3环",
+															"entries": [
+																"",
+																"{@spell 尘云|Ar7}（咒法系）",
+																"{@spell 喷射水柱|Ar7}（咒法系）"
+															]
+														},
+														{
+															"ENG_name": "4th Level",
+															"type": "item",
+															"name": "4环",
+															"entries": [
+																"",
+																"{@spell 冰面|Ar7}（咒法系）"
+															]
+														}
+													]
+												}
+											],
+											"id": "02e"
+										}
+									]
+								},
+								{
+									"ENG_name": "Dust Cloud",
+									"type": "statblock",
+									"tag": "spell",
+									"name": "尘云",
+									"source": "Ar7",
+									"page": 21
+								},
+								{
+									"ENG_name": "Flurry of Icicles",
+									"type": "statblock",
+									"tag": "spell",
+									"name": "冰凌齐射",
+									"source": "Ar7",
+									"page": 21
+								},
+								{
+									"ENG_name": "Ice Sheet",
+									"type": "statblock",
+									"tag": "spell",
+									"name": "冰面",
+									"source": "Ar7",
+									"page": 21
+								},
+								{
+									"ENG_name": "Instant Freeze",
+									"type": "statblock",
+									"tag": "spell",
+									"name": "瞬间冻结",
+									"source": "Ar7",
+									"page": 21
+								},
+								{
+									"ENG_name": "Jet of Water",
+									"type": "statblock",
+									"tag": "spell",
+									"name": "喷射水柱",
+									"source": "Ar7",
+									"page": 22
+								},
+								{
+									"ENG_name": "Maelstrom Avatar",
+									"type": "statblock",
+									"tag": "spell",
+									"name": "大漩涡化身",
+									"source": "Ar7",
+									"page": 22
+								},
+								{
+									"ENG_name": "Sandstorm",
+									"type": "statblock",
+									"tag": "spell",
+									"name": "沙暴",
+									"source": "Ar7",
+									"page": 22
+								},
+								{
+									"ENG_name": "Tremorsense",
+									"type": "statblock",
+									"tag": "spell",
+									"name": "震颤感知",
+									"source": "Ar7",
+									"page": 22
+								}
+							],
+							"id": "029"
+						}
+					],
+					"id": "025"
+				},
+				{
+					"ENG_name": "Aethelfaer",
+					"type": "section",
+					"name": "艾瑟尔法尔",
+					"page": 23,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/LeafSplash.webp"
+							},
+							"altText": "一幅风格化的标题图，画着一片缀着雨滴的叶子。",
+							"width": 1280,
+							"height": 539
+						},
+						{
+							"type": "entries",
+							"page": 12,
+							"style": "text-center",
+							"entries": [
+								"{@style 一位自然的守望者与一场森林主题的遭遇|dnd-font;large}",
+								"文：萨拉·汤普森"
+							],
+							"id": "030"
+						},
+						{
+							"type": "inset",
+							"page": 23,
+							"style": "italic",
+							"entries": [
+								"一道身影潜行于森林之中，与枝叶和灌木融为一体，目光紧锁猎物。母鹿浑然不觉地咀嚼着青草与苔藓，对潜伏于树间的猎手毫无察觉。以榆木与枭熊之齿造就的灵巧手指扣住一支箭，勾上弓弦的腱索，缓缓后拉。渡鸦羽箭羽轻吻猎手的脸颊\u2014\u2014如温柔的爱抚。他沉肩、正脊，缓缓深吸一口气。森林屏住了呼吸。万籁俱寂。整个世界归于此刻。",
+								"箭在弦。鹿在侧。",
+								"放。",
+								"箭矢破空，母鹿一颤。它双眼圆睁，关节因惊惧而僵直。干净利落的一箭，正穿咽喉。母鹿踉跄几步，哀鸣戛然而止，随即栽倒在地，没了声息。如其所愿，它的痛苦短暂。猎手走上前去，右臂榆木假肢的手指屈伸着，抽出一柄猎刀\u2014\u2014刀刃带锯齿，尖端有倒钩。他向森林之灵致谢，因为这份猎获将让他受益匪浅。他跪下身来，开始干活。这一切都不会被浪费。"
+							],
+							"id": "031"
+						},
+						"{@creature 艾瑟尔法尔|Ar7}［读音 eθəɫfeə:，近似\"EH-thell-fair\"］是一位男性木精灵，恪守游牧的生活方式，漫游于森林与草原，保护野生动物，援助危困之人。他耐心而沉静，多年狩猎与追踪的历练铸就了处变不惊的沉稳气质。",
+						"{@creature 艾瑟尔法尔|Ar7}遗传了一种名为\"半肢畸形\"的先天疾病\u2014\u2014一种导致肢体部分缺失的综合征。因此，{@creature 艾瑟尔法尔|Ar7}的右臂自肘部以上缺失下段，且天生没有右脚。尽管他完全能够自理生活，他还是选择佩戴并使用假肢。",
+						"他的右臂以红榆木和枭熊之齿制成，手腕内藏一个暗格，存放着一小罐应急毒药。他的假足以紫杉木制成，经过了与他那把长弓相同的魔法强化与柔化处理。",
+						"作为一名令人生畏的战士和致命的弓手，{@creature 艾瑟尔法尔|Ar7}视亵渎与轻慢森林为大罪，若有必要，他会追猎仇敌至天涯海角。作为盟友，他忠诚、公正，是真正的朋友。然而，他的敬意一旦失去，便永不再来。",
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Aethelfaer.webp"
+							},
+							"altText": "一名装备着华丽假肢右臂与右腿的精灵战士，跨过一根倒木时张弓搭箭。",
+							"width": 698,
+							"height": 970,
+							"credit": "Grace Cheung"
+						},
+						{
+							"ENG_name": "Aethelfaer in Your Game",
+							"type": "entries",
+							"name": "在你的游戏中运用艾瑟尔法尔",
+							"page": 24,
+							"entries": [
+								"虽然{@creature 艾瑟尔法尔|Ar7}是善良阵营的角色，但他与角色们的互动可以有多种面貌。他可以引领角色们穿越茂密狂野的森林，帮他们在林间隐匿的古代神庙遗迹中辨明方向，也可以在林中致命遭遇的危急关头现身相助。他也可以主动找上角色们，请求他们协助终结威胁其森林的祸患。但他同样可以扮演反派的身份\u2014\u2014一位冷酷无情的猎手，向那些哪怕出于无心、却冒犯或玷辱了森林之灵的角色们展开复仇。",
+								"如果某位角色赢得了{@creature 艾瑟尔法尔|Ar7}的赏识\u2014\u2014例如救过他的性命，或对森林表现出由衷的敬慕与尊重\u2014\u2014他会举行一场魔法仪式，赐予其一份恩惠。他将圣林泉水洒在角色身上，并请其饮用以苔藓、花朵和古树之根泡制的草药茶。参与仪式的角色将获得以下恩惠：",
+								{
+									"ENG_name": "Friend of the Forest",
+									"type": "statblock",
+									"tag": "reward",
+									"source": "Ar7",
+									"name": "森林之友",
+									"page": 24
+								}
+							],
+							"id": "032"
+						},
+						{
+							"ENG_name": "Aethelfaer Plot Hooks",
+							"type": "entries",
+							"name": "艾瑟尔法尔情节钩子",
+							"page": 25,
+							"entries": [
+								"你可以掷第25页的表格，或自行选择一个情节钩子，将{@creature 艾瑟尔法尔|Ar7}引入你的战役。",
+								{
+									"ENG_name": "Aethelfaer Plot Hooks",
+									"type": "statblock",
+									"tag": "table",
+									"source": "Ar7",
+									"name": "艾瑟尔法尔情节钩子",
+									"page": 25
+								}
+							],
+							"id": "033"
+						},
+						{
+							"ENG_name": "Aethelfaer in Combat",
+							"type": "entries",
+							"name": "艾瑟尔法尔的战斗方式",
+							"page": 26,
+							"entries": [
+								{
+									"ENG_name": "Aethelfaer",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "Ar7",
+									"name": "艾瑟尔法尔",
+									"page": 26
+								},
+								"战斗中，{@creature 艾瑟尔法尔|Ar7}力求远距离作战。若与角色们并肩，{@creature 艾瑟尔法尔|Ar7}会潜入阴影，从侧翼提供远程支援。若与角色们为敌，他会将{@spell 猎人印记}施在擅长施法的对手身上，再凭借过人的身法边撤边不停放箭。对于逼近至其40尺内的敌人，或需要尽快坠地的敌人，这位游侠会使用毒箭。他的法术偏重辅助，于盟友于己皆有益处，可用于潜行、治疗和强化战斗技艺。",
+								{
+									"ENG_name": "Common Signs",
+									"type": "statblock",
+									"tag": "language",
+									"source": "Ar7",
+									"name": "通用手语",
+									"page": 27,
+									"style": "inset"
+								}
+							],
+							"id": "034"
+						},
+						{
+							"ENG_name": "Encountering Aethelfaer",
+							"type": "entries",
+							"name": "遭遇艾瑟尔法尔",
+							"page": 27,
+							"entries": [
+								"当角色们大约4级时，你可以使用以下遭遇让他们结识{@creature 艾瑟尔法尔|Ar7}。",
+								"当角色们行经一条林间小径时，撞见了奇怪的一幕：一名狼狈不堪的木精灵正与一头狂怒的独角兽纠缠。",
+								{
+									"type": "insetReadaloud",
+									"page": 27,
+									"entries": [
+										"你们走出树林，来到一小片林间空地。一名高挑的精灵双手高举站在那里，正试图安抚一头独角兽\u2014\u2014没错，独角兽。它嘶鸣尖啸，双眼翻白，口吐白沫，一群恶臭的魔怪围着二者磨牙咧嘴。精灵一肩挎着弓，胯畔悬着剑，却一样也不去碰。独角兽人立而起，挥出前蹄，他向后跃开，堪堪避开那记直取头颅的沉重蹄击。小魔怪们咆哮着逼近，要向精灵发起攻击。"
+									],
+									"id": "036"
+								},
+								"{@creature 艾瑟尔法尔|Ar7}面对的是{@creature 翁丽尔|Ar7}\u2014\u2014一头独角兽\u2014\u2014以及八只{@creature 怯魔|MM|怯魔们}。角色们和{@creature 艾瑟尔法尔|Ar7}都不知道，这头独角兽中了{@creature 蟑螂手婆婆|Ar7}以魔法芒刺施下的魅惑。这位{@creature 夜鬼婆}还召唤了那些{@creature 怯魔|MM|怯魔们}。她可以凭借天生施法特性每日施放一次{@spell 巨虫术}法术（为此她还随身带着一只活{@creature 蝎子|MM}）。",
+								"她想统治这片森林，指望以这一道诅咒除掉林中的守望者\u2014\u2014{@creature 翁丽尔|Ar7}和{@creature 艾瑟尔法尔|Ar7}。{@creature 蟑螂手婆婆|Ar7}喝下了一瓶{@item 隐形药水|DMG}，好亲眼观战。她悄无声息地立在近旁。",
+								"{@creature 艾瑟尔法尔|Ar7}绝非懦夫，也完全有能力还手，但除非认为绝对必要，他避免伤害生物。独角兽是美丽而高傲的天界生物，性情大多温驯。{@creature 艾瑟尔法尔|Ar7}敬它们为森林古神造物。他拒绝伤害{@creature 翁丽尔|Ar7}，也无法容忍任何人杀死这头独角兽。至于那些{@creature 怯魔|MM|怯魔们}，他杀起来毫无心理负担。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/Onriel.webp"
+									},
+									"altText": "一头伫立在林间空地上的独角兽。",
+									"width": 1069,
+									"height": 748,
+									"credit": "Grace Cheung"
+								},
+								{
+									"ENG_name": "Onriel's Curse",
+									"type": "entries",
+									"name": "翁丽尔的诅咒",
+									"page": 28,
+									"entries": [
+										"蟑螂手婆婆的诅咒使{@creature 翁丽尔|Ar7}想要杀死{@creature 艾瑟尔法尔|Ar7}以及任何挡道的生物。这头独角兽把{@creature 怯魔|MM|怯魔们}视为盟友。",
+										"施放{@spell 侦测魔法}法术或在一次{@dc 15}的智力（{@skill 奥秘}）检定中成功的角色，可知晓{@creature 翁丽尔|Ar7}正处于一道魅惑效应的影响之下，其源头是卡在独角兽鬃毛里的一根带刺芒刺。在一次{@dc 15}的感知（{@skill 察觉}）检定中成功的角色，会注意到那根芒刺泛着微弱红光。{@spell 次等复原术}、{@spell 解除魔法}、{@spell 防护善恶}或{@spell 移除诅咒}法术，或类似魔法，均可终结此魅惑。角色以一个动作进行一次{@dc 17}的力量（{@skill 运动}）或敏捷（{@skill 巧手}）检定，成功即可从独角兽身上取下芒刺，终结魅惑。将{@creature 翁丽尔|Ar7}生命值降至0再将其稳定伤势同样会终结魅惑\u2014\u2014不过，除非角色们在一次{@dc 15}的魅力（{@skill 游说}）检定中成功，说服这位游侠那是拯救{@creature 翁丽尔|Ar7}的正当之举，否则{@creature 艾瑟尔法尔|Ar7}的反应会如同他们杀死了独角兽一般（见\"余波\"）。诅咒结束时，魔法离开独角兽的身体，{@creature 翁丽尔|Ar7}陷入沉睡，{@condition 昏迷}1小时。",
+										{
+											"ENG_name": "Aethelfaer's Hint",
+											"type": "entries",
+											"name": "艾瑟尔法尔的提点",
+											"page": 28,
+											"entries": [
+												"如果角色们对如何处理{@creature 翁丽尔|Ar7}的局面举棋不定，{@creature 艾瑟尔法尔|Ar7}会注意到那根发光的芒刺，并在他牵制独角兽的同时，请他们将其取下。"
+											],
+											"id": "038"
+										}
+									],
+									"id": "037"
+								},
+								{
+									"ENG_name": "Getting Involved",
+									"type": "entries",
+									"name": "介入其中",
+									"page": 28,
+									"entries": [
+										"当角色们抵达时，半数{@creature 怯魔|MM|怯魔们}冲上前缠住他们，好让独角兽去杀{@creature 艾瑟尔法尔|Ar7}。这些魔怪会血战至灰飞烟灭。",
+										"{@creature 艾瑟尔法尔|Ar7}惊讶于在森林深处见到陌生的面孔，但他不会拒绝援手。他把话说得再明白不过：独角兽一根毫毛都不许碰，并断言{@creature 翁丽尔|Ar7}如此行事必是出了岔子。如果角色们一拥而上攻击独角兽，他们就把{@creature 艾瑟尔法尔|Ar7}变成了敌人\u2014\u2014他会为保卫{@creature 翁丽尔|Ar7}而与任何威胁血战到底。",
+										"制服或杀死独角兽，会让恼羞成怒的{@creature 蟑螂手婆婆|Ar7}现出真身，因角色们坏了她的计划而向其发起攻击。她一现身，{@creature 艾瑟尔法尔|Ar7}便咒骂一声，高声喊道：",
+										{
+											"type": "insetReadaloud",
+											"page": 28,
+											"entries": [
+												{
+													"type": "quote",
+													"entries": [
+														"有本事亲自面对我，懦夫！别再耍花样。你们这种东西，这里不欢迎。"
+													],
+													"by": "艾瑟尔法尔"
+												}
+											],
+											"id": "03a"
+										},
+										"{@creature 艾瑟尔法尔|Ar7}加入对抗鬼婆的战斗。她施放{@spell 巨虫术}变出一只{@creature 巨蝎|MM|巨型蝎子}，随后骑上它的背，朝敌人施放{@spell 魔法飞弹}；若角色们胆敢近身，她便以利爪相向。剩余的{@creature 怯魔|MM|怯魔们}会攻击{@condition 昏迷}的{@creature 翁丽尔|Ar7}，或在独角兽死后转而攻击角色们。由你裁量：如果角色们在鬼婆现身前已歼灭全部或大部分魔怪，可能还会有四只{@creature 怯魔|MM|怯魔们}从下位面爬出来。蟑螂手婆婆会与角色们缠斗至生命值降至30点或更低，届时她施放{@spell 位面转移}逃之夭夭。消失之际，她尖声叫道：",
+										{
+											"type": "insetReadaloud",
+											"page": 29,
+											"entries": [
+												{
+													"type": "quote",
+													"entries": [
+														"咱们后会有期，游侠。趁还来得及，滚出我的林子。"
+													],
+													"by": "蟑螂手婆婆"
+												}
+											],
+											"id": "03b"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/OnrielCombat.webp"
+											},
+											"altText": "一头独角兽用后腿人立而起，准备攻击艾瑟尔法尔。",
+											"width": 921,
+											"height": 832,
+											"credit": "Grace Cheung"
+										}
+									],
+									"id": "039"
+								},
+								{
+									"ENG_name": "Aftermath",
+									"type": "entries",
+									"name": "余波",
+									"page": 29,
+									"entries": [
+										"如果角色们救下了{@creature 翁丽尔|Ar7}，{@creature 艾瑟尔法尔|Ar7}便欠下他们一份人情。他可以请角色们再施援手（见\"{@table 艾瑟尔法尔情节钩子|Ar7}\"），提议与他们同行前往鬼婆在附近的巢穴，一举根除她对森林的威胁，甚至可以作为侍从陪伴他们踏上冒险旅程（见\"艾瑟尔法尔作为侍从\"）。",
+										"如果角色们未能救下{@creature 翁丽尔|Ar7}，{@creature 艾瑟尔法尔|Ar7}会在战斗结束后转身离去，隐入林中。他从此与角色们为敌：每当他们踏入森林便如影随形，一旦他们犯下哪怕最轻微的过犯，便会出手干预，随时准备取其性命。",
+										{
+											"ENG_name": "Granny Roachhand",
+											"type": "inset",
+											"name": "蟑螂手婆婆",
+											"page": 30,
+											"entries": [
+												"蟑螂手婆婆曾因暗算其他姐妹而被下位面的夜鬼婆集会放逐。她最近来到艾瑟尔法尔的森林，密谋腐化林中的野兽与草木，以打造一支忠仆大军。她的目标是将这片森林据为自己的领地，并以此取乐地折磨那些毫无防备、踏入林中的旅人，但{@creature 艾瑟尔法尔|Ar7}和{@creature 翁丽尔|Ar7}总在破坏她的计划。"
+											],
+											"id": "03d"
+										}
+									],
+									"id": "03c"
+								}
+							],
+							"id": "035"
+						},
+						{
+							"ENG_name": "Aethelfaer as a Retainer",
+							"type": "entries",
+							"name": "艾瑟尔法尔作为侍从",
+							"page": 30,
+							"entries": [
+								"侍从最早出现于{@book Strongholds & Followers|SaF|8|Retainers}，是与角色们结盟的独特NPC追随者。这些冒险者是易于上手的次要角色，由玩家操控。以下是艾瑟尔法尔的侍从数据卡。",
+								"侍从的完整规则见{@book Strongholds & Followers|SaF|8|Retainers}。",
+								{
+									"ENG_name": "Aethelfaer Retainer",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "Ar7",
+									"name": "艾瑟尔法尔（侍从）",
+									"page": 30,
+									"style": "inset"
+								}
+							],
+							"id": "03e"
+						},
+						{
+							"ENG_name": "Aethelfaer's Disability",
+							"type": "entries",
+							"name": "艾瑟尔法尔的残障",
+							"page": 30,
+							"entries": [
+								"{@creature 艾瑟尔法尔|Ar7}生而带有他的残障，并自行选择佩戴假肢，以帮助他在冒险中完成某些任务。与那些因伤病或截肢而失去肢体的人不同，{@creature 艾瑟尔法尔|Ar7}从未体验过幻肢综合征，因为他的右臂和右脚从一开始就不存在。这也意味着，唯有祈愿术才能让这些肢体重新长出，但{@creature 艾瑟尔法尔|Ar7}并不寻求\"治愈\"自己。事实上，若有人向他提出、或强使他在某种场合讨论以这类法术\"修好\"他，他会视之为莫大的羞辱。他不需要被\"修复\"或\"治愈\"，对无知到不这么想的人，他也没什么耐心。",
+								"这位游侠对自己的残障坦然相告，也乐于解答他人的疑问，但他容不得蠢货。{@creature 艾瑟尔法尔|Ar7}精于分辨谁是真心实意，谁是有意装傻或无礼。",
+								{
+									"ENG_name": "Prosthetics",
+									"type": "entries",
+									"name": "假肢",
+									"page": 30,
+									"entries": [
+										"艾瑟尔法尔的假肢臂和假足分别套在各肢的残端上，并以皮质系带进一步固定：一条绕于他的胫部与小腿，另一条绕于他的胸膛、贴在护甲之下。{@creature 艾瑟尔法尔|Ar7}固定每条系带需时2分钟，解开则约需30秒。",
+										"为防止擦伤或瘀伤\u2014\u2014尤其在长时间佩戴假肢时\u2014\u2014艾瑟尔法尔的残端以\"袜套\"保护。这些布料卷起后翻折下来覆盖皮肤，护住残端与假肢杯口相接的部位。每日晨起与就寝时，{@creature 艾瑟尔法尔|Ar7}都会使用滑石粉保持皮肤干爽，远离皮疹、不适的摩擦和水泡，在温暖的天气或湿度高时尤其如此。",
+										"旅行或身处陌生之地时，{@creature 艾瑟尔法尔|Ar7}会戴着假肢入睡，以防遇袭或需要逃离。而若身处他确知安全无虞的地方，{@creature 艾瑟尔法尔|Ar7}会卸下假肢就寝，行动时则在左腋下拄一支腋杖支撑。",
+										{
+											"ENG_name": "Hidden Compartment",
+											"type": "entries",
+											"name": "暗格",
+											"page": 30,
+											"entries": [
+												"{@creature 艾瑟尔法尔|Ar7}的假肢中有一个暗格，沿手腕内侧延伸。只需按下拇指根部（无需动作），暗格便会弹开，露出一条填满奇特膏体的金属凹槽。这枚炼金材料是{@creature 艾瑟尔法尔|Ar7}自制的私人毒药，打开暗格，他便能为抽出的任何箭矢或刀刃迅速敷上毒衣，造成额外伤害。"
+											],
+											"id": "041"
+										},
+										{
+											"ENG_name": "Natural Grip",
+											"type": "entries",
+											"name": "天然抓地",
+											"page": 31,
+											"entries": [
+												"艾瑟尔法尔的假足被塑成鹿蹄的大致形状。这使踝关节的活动范围更大，令那只脚在奔跑、攀爬或进行运动与灵巧技艺时能承受相当的冲击。假足的楔形部位在山地与岩石环境中抓地更稳，在森林常见的灌木丛和草原泥土上亦是如此。每当{@creature 艾瑟尔法尔|Ar7}奔跑，或以脚掌前部轻轻颠动\u2014\u2014他紧张或烦乱时常有此小动作\u2014\u2014这具假肢的灵活性便展露无遗。"
+											],
+											"id": "042"
+										}
+									],
+									"id": "040"
+								},
+								{
+									"ENG_name": "Aethelfaer's Craftsmanship",
+									"type": "entries",
+									"name": "艾瑟尔法尔的手艺",
+									"page": 31,
+									"entries": [
+										"只要角色们没有与{@creature 艾瑟尔法尔|Ar7}为敌，他很乐意为自己需要的人打造假肢。不过，角色们得自行寻得并提供所需材料。打造假臂或假手，{@creature 艾瑟尔法尔|Ar7}需要木材（任何种类均可）、皮质绑带、{@creature 枭熊|MM}之齿、腱索和树脂。打造假腿或假足，他需要紫杉木、皮质绑带、鹿角（以合乎道义的方式取得）、腱索和树脂。{@creature 艾瑟尔法尔|Ar7}掌握一种魔法强化与柔化木材的技艺，那是木精灵制弓工艺的标志性手法，也用于他的假肢制作。",
+										"如果有角色为{@creature 艾瑟尔法尔|Ar7}备齐材料，他分文不取。",
+										{
+											"ENG_name": "Prosthetic Stats",
+											"type": "entries",
+											"name": "假肢数据",
+											"page": 31,
+											"entries": [
+												"佩戴假肢既不带来益处，也不造成妨害，你可以完成从日常到精细的一切典型运动技能。假肢无需同调，以一条贴于护甲之下的系带固定在身体上。系好系带需2分钟，解开需30秒。除非系带以某种方式被毁，假肢不会脱落。",
+												"定制假肢，例如{@creature 艾瑟尔法尔|Ar7}所佩戴的那些，可以为你提供益处。可参考\"暗格\"与\"天然抓地\"获取灵感。",
+												"{@b 对游戏主持人和其他玩家而言，务必牢记：残障不是一种惩罚，不应被拿来苛责角色。}"
+											],
+											"id": "044"
+										},
+										{
+											"ENG_name": "Missing Arm",
+											"type": "entries",
+											"name": "缺失手臂",
+											"page": 31,
+											"entries": [
+												"若你未佩戴假臂/假手，你在挥舞双手武器时具有劣势；若仅使用该臂/手，你在进行精细运动技能的属性检定时也具有劣势。"
+											],
+											"id": "045"
+										},
+										{
+											"ENG_name": "Missing Leg",
+											"type": "entries",
+											"name": "缺失腿足",
+											"page": 31,
+											"entries": [
+												"若你未佩戴假腿/假足，你的步行速度减少5尺，除非你正在使用拐杖或轮椅等行动辅具。"
+											],
+											"id": "046"
+										}
+									],
+									"id": "043"
+								},
+								{
+									"ENG_name": "More than a Disability",
+									"type": "entries",
+									"name": "残障之外",
+									"page": 31,
+									"entries": [
+										"残障是我们生活中真真切切的一部分，却绝非定义一个人的全部。作为一个血肉丰满的角色，{@creature 艾瑟尔法尔|Ar7}自有其兴趣爱好，残障只是他的一部分。因此，有必要一提：{@creature 艾瑟尔法尔|Ar7}喜好狩猎、用木料雕刻动物，也喜欢采集植物与药草，酿制药剂与酊剂，再售出或换补给养。他深谙森林与草原的园艺之学，且极其喜爱渡鸦等鸦科鸟类。"
+									],
+									"id": "047"
+								}
+							],
+							"id": "03f"
+						}
+					],
+					"id": "02f"
+				},
+				{
+					"ENG_name": "Author Profiles",
+					"type": "section",
+					"name": "作者简介",
+					"page": 32,
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"page": 32,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/SharangBiswas.webp"
+											},
+											"altText": "沙朗·比斯瓦斯的照片。",
+											"maxWidth": 250,
+											"width": 300,
+											"height": 300
+										},
+										"{@b 沙朗·比斯瓦斯}曾获IndieCade与IGDN的角色扮演游戏奖项，其互动作品曾在费城当代艺术学院、布鲁克林Pioneer Works、皇后区动态影像博物馆等机构展出。他曾为{@i 《Spire》《Sea of Legends》《Jiangshi: Blood on the Banquet Hall》《Into the Motherlands》}与{@i 《龙与地下城直播》}等游戏撰稿，其随笔与小说见载或即将刊于Dicebreaker、Eurogamer、《Lightspeed Magazine》《Fantasy Magazine》等。他是《Honey & Hot Wax: An Anthology of Erotic Art Games》（Pelgrane Press，2020）与《Strange Lusts / Strange Loves: An Anthology of Erotic Interactive Fiction》（Strange Horizons，2021）的联合主编。"
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"page": 32,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/HannahRose.webp"
+											},
+											"altText": "汉娜·罗丝的照片。",
+											"maxWidth": 250,
+											"width": 300,
+											"height": 300
+										},
+										"{@b 汉娜·罗丝}是一名自由职业游戏设计师、编辑与职业宅。知名作品包括{@book 荒洲探险家指南|EGW}与{@book 巫光之外的荒野|WBtW}（威世智）、{@book 塔尔多雷战役设定集：重生（关键角色/达林顿出版社）|TDCSR}以及《阿卡迪亚》（MCDM）。她喜爱长篇小说和大杯茶，并有两只猫魔宠\u2014\u2014视日子好坏，或帮忙或帮倒忙。"
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"page": 32,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Ar7/SaraThompson.webp"
+											},
+											"altText": "萨拉·汤普森的照片。",
+											"maxWidth": 250,
+											"width": 300,
+											"height": 300
+										},
+										"{@b 萨拉·汤普森}是一位身有残障的桌面角色扮演游戏作家与游戏设计师，专注于残障形象的正向呈现与无障碍设计。作为{@loader 《战斗轮椅》|collection/Sara Thompson; The Combat Wheelchair.json}的创作者，其作品见于《Critical Role》《Idle Champions of the Forgotten Realms》，以及R. Talsorian Games、Paizo、SteamForged等知名出版商的游戏之中。"
+									]
+								}
+							],
+							"id": "049"
+						}
+					],
+					"id": "048"
+				},
+				{
+					"ENG_name": "License",
+					"type": "section",
+					"name": "许可证",
+					"page": 33,
+					"entries": [
+						"开放游戏许可（OPEN GAME LICENSE）1.0a版　以下文本为威世智（Wizards of the Coast, LLC.）所有，版权所有©2000 Wizards of the Coast, Inc.（\"威世智\"）。保留所有权利。",
+						{
+							"type": "list",
+							"style": "list-decimal",
+							"columns": 2,
+							"page": 33,
+							"items": [
+								"定义：（a）\"贡献者\"指贡献了开放游戏内容的版权和/或商标所有者；（b）\"衍生材料\"指包括演绎作品与翻译（包括翻译为其他计算机语言）、移植、修改、更正、增补、扩展、升级、改进、汇编、节选，或其他以重构、转换、改编既有作品的形式在内的受版权保护的材料；（c）\"分发\"指复制、许可、出租、出借、出售、广播、公开展示、传播或以其他方式分发；（d）\"开放游戏内容\"指游戏机制，包括此类内容中不体现产品身份的方法、程序、流程与常规、对在先技术的改进，以及贡献者明确指定为开放游戏内容的任何附加内容，并指本许可所涵盖的任何作品，包括依据版权法产生的翻译与演绎作品，但明确排除产品身份；（e）\"产品身份\"指产品及产品线名称、标志与识别性标记（包括商业外观）；人造物品；生物与角色；故事、故事线、情节、主题要素、对话、事件、语言、插画、符号、设计、描绘、肖像、格式、姿势、概念、题材，以及图像、摄影或其他视觉或听觉呈现；角色、法术、附魔、人物、团队、人设、肖像与特殊能力的名称和描述；地点、场所、环境、生物、装备、魔法或超自然能力或效应、标志、符号或平面设计；以及产品身份所有者明确认定为产品身份的任何其他商标或注册商标，且明确排除开放游戏内容；（f）\"商标\"指贡献者用以标识自身、其产品、或其贡献给开放游戏许可的关联产品的标志、名称、标记、符号、格言与设计；（g）\"使用\"、\"已使用\"或\"正在使用\"指使用、分发、复制、编辑、格式化、修改、翻译及以其他方式创作开放游戏内容的衍生材料；（h）\"你\"或\"你的\"指本协议项下的被许可人。",
+								"许可：本许可适用于任何包含声明、表明该开放游戏内容只能在本许可及其条款下使用的开放游戏内容。你必须在你使用的任何开放游戏内容上附加此类声明。除本许可自身所述外，不得向本许可增删任何条款。不得对使用本许可分发的任何开放游戏内容附加任何其他条款或条件。",
+								"要约与承诺：使用开放游戏内容即表示你接受本许可的条款。",
+								"授权与对价：作为同意使用本许可的对价，贡献者授予你一项永久性、全球性、免版税、非独占的许可，其条款与本许可完全一致，供你使用该开放游戏内容。",
+								"贡献权利之声明：如果你将原创材料作为开放游戏内容贡献，即表示你声明你的贡献系你的原创创作，且/或你拥有授予本许可所转让权利的充分权限。",
+								"许可版权通知：你必须更新本许可的\"版权通知\"部分，以纳入你复制、修改或分发的任何开放游戏内容的\"版权通知\"的确切文本；并且对你分发的任何原创开放游戏内容，你必须将标题、版权日期和版权所有者名称加入\"版权通知\"。",
+								"产品身份的使用：你同意不使用任何产品身份，包括作为兼容性指示，除非与该产品身份各要素所有者另行签订的独立协议有明确许可。你同意不将含有开放游戏内容的作品与任何商标或注册商标共同表示兼容或共同适配，除非与该商标或注册商标所有者另行签订的独立协议有明确许可。在开放游戏内容中使用任何产品身份，不构成对该产品身份所有权的挑战。任何在开放游戏内容中使用的产品身份，其所有者应保留对该产品身份的全部权利、权属与利益。",
+								"标识：如果你分发开放游戏内容，你必须清楚标明你所分发作品中哪些部分是开放游戏内容。",
+								"许可更新：威世智或其指定代理人可发布本许可的更新版本。你可以使用本许可的任何授权版本来复制、修改和分发最初依本许可任意版本分发的任何开放游戏内容。",
+								"许可副本：你分发的每份开放游戏内容必须附有一份本许可副本。",
+								"贡献者署名的使用：除非获得贡献者的书面许可，否则你不得以任何贡献者的名义对开放游戏内容进行营销或广告宣传。",
+								"无法遵从：如因法律、司法命令或政府法规致使你无法就部分或全部开放游戏内容遵守本许可的任何条款，则你不得使用受影响的任何开放游戏材料。",
+								"终止：如果你未能遵守本许可的所有条款，且在知悉违约后30天内未能补救，本许可将自动终止。所有再许可在本许可终止后继续有效。",
+								"修正：如果本许可的任何条款被认定不可执行，该条款仅在使其可执行所需的最低限度内进行修正。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "COPYRIGHT NOTICE",
+													"type": "entries",
+													"name": "版权通知",
+													"page": 33,
+													"entries": [
+														"",
+														"开放游戏许可（OPEN GAME LICENSE）v 1.0a 版权所有©2000，Wizards of the Coast, LLC.",
+														"系统参考文档5.1（System Reference Document 5.1）版权所有©2016，Wizards of the Coast, LLC.；作者Mike Mearls、Jeremy Crawford、Chris Perkins、Rodney Thompson、Peter Lee、James Wyatt、Robert J. Schwalb、Bruce R. Cordell、Chris Sims与Steve Townshend，基于E. Gary Gygax与Dave Arneson的原始材料。",
+														"《阿卡迪亚》（ARCADIA）第7期。版权所有©2021，MCDM Productions, LLC.。作者：Sharang Biswas、Hannah Rose、Sara Thompson与James Introcaso。"
+													],
+													"id": "04d"
+												}
+											],
+											"id": "04c"
+										}
+									],
+									"id": "04b"
+								}
+							]
+						}
+					],
+					"id": "04a"
+				}
+			]
+		}
+	]
+}
