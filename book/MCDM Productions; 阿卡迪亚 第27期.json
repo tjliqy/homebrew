@@ -1,0 +1,4794 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Arcadia27",
+				"abbreviation": "Ar27",
+				"full": "阿卡迪亚 第27期",
+				"url": "https://shop.mcdmproductions.com/collections/arcadia/products/arcadia-complete-bundle-issues-1-30",
+				"version": "04/2023",
+				"authors": [
+					"MCDM Productions",
+					"Gwendolyn Marshall",
+					"Hannah Rose",
+					"James Introcaso",
+					"Willy Abeel"
+				],
+				"convertedBy": [
+					"ForeverAlwaysGM (Billiam94)"
+				],
+				"color": "006994"
+			}
+		],
+		"dependencies": {
+			"monster": [
+				"MM",
+				"FleeMortals"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		],
+		"optionalFeatureTypes": {
+			"BST:MC": "神秘联结"
+		},
+		"edition": "classic",
+		"dateAdded": 1720971490,
+		"dateLastModified": 1772754260,
+		"_dateLastModifiedHash": "ea6f44c9b2"
+	},
+	"optionalfeature": [
+		{
+			"ENG_name": "Mystic Connection: Hound Shark",
+			"name": "神秘联结：猎犬鲨",
+			"source": "Arcadia27",
+			"page": 7,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "Beastheart",
+							"source": "BST"
+						}
+					},
+					"other": "{@creature 猎犬鲨同伴|Arcadia27}"
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Blood Scent",
+					"type": "entries",
+					"name": "血腥感知",
+					"entries": [
+						"你获得等同于你步行速度的游泳速度。",
+						"此外，你可以用一个动作进入血腥狂怒，持续1分钟。狂怒期间，你对任何生命值未满的生物进行的攻击检定具有优势。在完成一次长休之前，你不能再次使用此效能。"
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Amulet of Shark Teeth",
+			"name": "鲨牙护符",
+			"source": "Arcadia27",
+			"page": 13,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"当你佩戴这串缀有鲨鱼牙齿的麻绳时，你为察觉和追踪生命值未满的生物而进行的感知（{@skill 察觉}或{@skill 求生}）检定具有优势。",
+				"此外，你可以用一个附赠动作获得60尺范围的{@sense 盲视}，持续1分钟。此特性一经使用，在次日黎明前不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Belt of Blood Frenzy",
+			"name": "血腥狂怒腰带",
+			"source": "Arcadia27",
+			"page": 13,
+			"rarity": "rare",
+			"reqAttune": "由野蛮人",
+			"reqAttuneTags": [
+				{
+					"class": "野蛮人"
+				}
+			],
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d8 + 1}",
+			"charges": 9,
+			"entries": [
+				"这条皮带缀有九枚已成化石的巨齿鲨牙齿，拥有9点充能。当你狂暴期间以攻击命中一个生命值未满的生物时，你可以消耗至多3点充能，每消耗1点充能便造成额外的{@damage 1d6}伤害。每消耗1点充能，腰带便脱落一颗牙齿。每天黎明时，腰带恢复{@dice 1d8 + 1}点已消耗的充能，并长出同等数量的牙齿。"
+			]
+		},
+		{
+			"ENG_name": "Sharkboat",
+			"name": "鲨艇",
+			"source": "Arcadia27",
+			"page": 13,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusWeaponAttack": "+9",
+			"entries": [
+				"这件物品看起来像一个鲨鱼皮腰带袋，可以打开，且能漂浮于水面。你可以用一个动作念出袋子的命令语，使其展开为一艘长100尺、宽20尺、深16尺的船，前提是它拥有足够空间，不会撞到任何生物或物体。这艘船以鲨鱼皮制成，由左右两舷的鲨鳍与船尾的尾鳍推进，船首则是一具鲨鱼雕像。船首一门用巨大鲨齿雕成的火炮安放在旋转平台上。主甲板中央有一个10尺见方的舱口，一条白骨制成的梯子由此通向深8尺的货舱。",
+				"当你触碰这艘船且它漂浮于水域中时，你可以采取以下动作：",
+				{
+					"ENG_name": "Set Course",
+					"type": "entries",
+					"name": "设定航线",
+					"entries": [
+						"你可以用一个动作让船起航，前往与船所在水域相连的一处目的地。你必须知道前往该地点的航线，船会沿你设定的路线航行。你可以用动作设定新航线来改变路线或目的地。这艘船的最高航速为每小时5英里。"
+					]
+				},
+				{
+					"ENG_name": "Precise Movement",
+					"type": "entries",
+					"name": "精确移动",
+					"entries": [
+						"你可以用一个动作或附赠动作让船向任意水平方向移动至多45尺。若此次移动发生在船沿既定航线航行期间，船将停止沿该航线航行。"
+					]
+				},
+				{
+					"ENG_name": "Stop",
+					"type": "entries",
+					"name": "停船",
+					"entries": [
+						"你可以命令船停止移动，并用鱼鳍在水面原地保持位置（无需动作）。"
+					]
+				},
+				{
+					"ENG_name": "Shark Bite",
+					"type": "entries",
+					"name": "鲨咬",
+					"entries": [
+						"你可以用一个动作让船首的鲨鱼雕像活过来，伸展躯体攻击船只船首15尺内一个你指定的目标。该攻击的攻击加值为+9，命中时造成{@damage 5d10}穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tooth Cannon",
+					"type": "entries",
+					"name": "牙齿火炮",
+					"entries": [
+						"你可以用一个动作从鲨鱼火炮中发射一枚巨齿鲨牙齿，对一个你指定的目标进行攻击。该火炮的常规射程为120尺，最大射程为480尺。攻击的攻击加值为+9，命中时造成{@damage 3d10}穿刺伤害。牙齿火炮的弹药永远不会耗尽。"
+					]
+				},
+				"你可以用一个动作再次念出命令语，让船折回收成一个袋子，前提是船上没有任何生物。船折叠时，船上留有的任何物体都会留在其中，直到船再次展开前都无法取回。"
+			]
+		},
+		{
+			"ENG_name": "Slashpoint",
+			"name": "割锋",
+			"source": "Arcadia27",
+			"page": 14,
+			"baseItem": "弯刀|PHB",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"bonusWeapon": "+1",
+			"entries": [
+				"这把弯刀的弧形刀刃上压印着各种鲨鱼的图样，且始终锋利如剃。",
+				"你在用该魔法武器发动攻击检定和伤害掷骰时获得+1加值。",
+				"手持这把弯刀时，你可以用一个动作从武器中施展{@spell 咒唤兽群}法术。",
+				"以此方式施法所能咒唤的兽类只能是鲨鱼。此特性一经使用，在次日黎明前不能再次使用。"
+			],
+			"attachedSpells": [
+				"咒唤兽群"
+			]
+		},
+		{
+			"ENG_name": "Wishes 99",
+			"name": "许愿99",
+			"source": "Arcadia27",
+			"page": 38,
+			"rarity": "legendary",
+			"wondrous": true,
+			"entries": [
+				"{@note 该物品的名称样式为\"许愿{@s 100}99\"。}",
+				"这个缠满藤壶的木制船舵扭曲粗糙，总会在持用者手中留下木刺。手持船轮时，你可以用你的动作许下你的愿望。由GM判定该愿望是自私的、无私的，还是介于两者之间。",
+				{
+					"ENG_name": "Selfish",
+					"type": "entries",
+					"name": "自私",
+					"entries": [
+						"愿望成真，但会被扭曲成措辞最恶意的解读。"
+					]
+				},
+				{
+					"ENG_name": "Selfless",
+					"type": "entries",
+					"name": "无私",
+					"entries": [
+						"愿望成真，并严格遵循许愿措辞的本意。"
+					]
+				},
+				{
+					"ENG_name": "In Between",
+					"type": "entries",
+					"name": "两者之间",
+					"entries": [
+						"愿望越是宏大，就越有可能伴随无法预见的后果或只被部分实现，具体取决于措辞方式。"
+					]
+				},
+				"许愿99的最终效力由GM掌控，并且可能不会达到足以毁灭世界（或严重妨害世界存续）的程度。愿望实现后，船轮随之消失，而许愿98会在海上另一处现身。"
+			],
+			"hasFluff": true
+		}
+	],
+	"itemFluff": [
+		{
+			"ENG_name": "Wishes 99",
+			"name": "许愿99",
+			"source": "Arcadia27",
+			"entries": [
+				"每隔几个世纪，关于这具传奇船轮的传闻便随潮汐起落。有人说它曾名为{@i 许愿1121}，但其真正的来历早已湮没于深渊。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Angler Shark",
+			"name": "鮟鱇鲨",
+			"source": "Arcadia27",
+			"page": 19,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d10 + 50"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 60
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 21,
+			"int": 3,
+			"wis": 12,
+			"cha": 3,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+7"
+			},
+			"senses": [
+				"盲视 120 尺"
+			],
+			"passive": 14,
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Ambusher",
+					"name": "伏击",
+					"entries": [
+						"在战斗的第一轮中，该鲨鱼对任何尚未行动的生物进行的攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Light Lure",
+					"name": "灯光诱饵",
+					"entries": [
+						"该鲨鱼的发光触角在5尺半径内散发出昏暗光照，并延伸至鲨鱼前方10尺，使鲨鱼自身不被光照触及。该鲨鱼可随意开启或关闭这光（无需动作）。"
+					]
+				},
+				{
+					"ENG_name": "Light Devourer",
+					"name": "噬光者",
+					"entries": [
+						"当该鲨鱼的\"灯光诱饵\"特性产生的光亮开启时，鲨鱼120尺内的区域被魔法黑暗笼罩，唯有该特性创造的昏暗光照区域除外。"
+					]
+				},
+				{
+					"ENG_name": "Light Lure",
+					"name": "灯光诱饵",
+					"entries": [
+						"非魔法的光亮无法穿透这片黑暗，黑暗中的生物即使拥有黑暗视觉，也只能看见该鲨鱼的光。若这片黑暗与一个3环或更低法术创造的光亮区域重叠，创造该光亮的法术即被驱散。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该鲨鱼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及10尺，单一目标。{@h}22（{@damage 3d10 + 6}）穿刺伤害；若该鲨鱼在此次攻击检定中具有优势，则额外造成14（{@damage 4d6}）穿刺伤害。被此攻击命中的中型或更小的生物陷入{@condition 受擒}状态（逃脱{@dc 16}）。擒抱结束前，该生物处于{@condition 束缚}状态，且该鲨鱼无法对另一个目标发动啃咬攻击"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Strobe",
+					"name": "频闪",
+					"entries": [
+						"当该鲨鱼10尺内的一个生物对他们发动攻击时，该鲨鱼急速闪动\"灯光诱饵\"特性产生的光亮。若攻击者依赖视觉，其攻击检定具有劣势。"
+					]
+				}
+			],
+			"traitTags": [
+				"Ambusher",
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Aranoth",
+			"name": "阿拉诺斯",
+			"source": "Arcadia27",
+			"page": 4,
+			"size": [
+				"G"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 350,
+				"formula": "20d20 + 140"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 40
+			},
+			"str": 25,
+			"dex": 8,
+			"con": 25,
+			"int": 21,
+			"wis": 20,
+			"cha": 16,
+			"save": {
+				"con": "+12",
+				"int": "+10",
+				"wis": "+10",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+10",
+				"history": "+10",
+				"insight": "+10",
+				"perception": "+10",
+				"religion": "+10"
+			},
+			"senses": [
+				"盲视 120 尺"
+			],
+			"passive": 20,
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"stunned"
+			],
+			"languages": [
+				"所有",
+				"心灵感应 120 尺"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"ENG_name": "Detect Sentience",
+					"name": "侦测知性",
+					"entries": [
+						"该阿拉诺斯能感知5英里内任何智力为3或更高的生物的位置，除非该生物受{@spell 心灵屏障}法术保护。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该阿拉诺斯只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该阿拉诺斯进行一次啃咬攻击和一次尾击攻击，或在可用时进行一次尾击攻击并使用\"吞咽\"或\"吸入\"。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及5尺，单一目标。{@h}21（{@damage 4d6 + 7}）穿刺伤害，外加22（{@damage 4d10}）寒冷伤害。若目标为生物，其陷入{@condition 受擒}状态（逃脱{@dc 17}）。擒抱结束前，目标处于{@condition 束缚}状态，且该阿拉诺斯无法啃咬另一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Tail",
+					"name": "尾击",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及15尺，单一目标。{@h}18（{@damage 2d10 + 7}）钝击伤害，外加22（{@damage 4d10}）寒冷伤害，且该阿拉诺斯将目标向任意方向移动至多30尺。"
+					]
+				},
+				{
+					"ENG_name": "Swallow",
+					"name": "吞咽",
+					"entries": [
+						"该阿拉诺斯对其擒抱着的一个大型或更小的生物进行一次啃咬攻击。若攻击命中，目标受到该啃咬的伤害并被吞下，擒抱结束。被吞期间，该生物处于{@condition 目盲}和{@condition 束缚}状态，对来自该阿拉诺斯之外的攻击及其他效应具有完全掩护，且必须在其每个回合开始时进行{@dc 18}体质豁免。该生物在被吞期间累计三次豁免失败，即化为石头陷入{@condition 石化}状态，而该阿拉诺斯获得该生物的全部记忆。失败无须连续，但生物一旦不再被吞，失败次数归零。",
+						"若该阿拉诺斯在单个回合内受到其体内生物造成的35点或更多伤害，须在该回合结束时通过{@dc 18}体质豁免，否则吐出所有被吞生物；这些生物在该阿拉诺斯10尺内的一处空间{@condition 倒地}落下。此外，该阿拉诺斯可以用一个动作主动吐出所有被吞生物。若该阿拉诺斯死亡，被吞生物不再受其{@condition 束缚}，可以用20尺移动从尸体中脱出，脱出时{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Inhale {@recharge}",
+					"name": "吸入{@recharge}",
+					"entries": [
+						"该阿拉诺斯在一个60尺锥形区域内猛然吸气。该区域内的每个生物必须通过{@dc 20}力量豁免，否则被该阿拉诺斯吞下（见\"吞咽\"）。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Cold Flash",
+					"name": "寒冷闪光",
+					"entries": [
+						"该阿拉诺斯释放出一股冰水爆发。该阿拉诺斯30尺内的每个生物必须进行{@dc 20}体质豁免。豁免失败的生物无法进行反应，并陷入{@condition 束缚}状态直到其下个回合开始。对寒冷伤害有抗性或免疫的生物自动通过此豁免。"
+					]
+				},
+				{
+					"ENG_name": "Restore the Flesh",
+					"name": "复还血肉",
+					"entries": [
+						"该阿拉诺斯选择120尺内一个被其\"吞咽\"动作{@condition 石化}的生物。{@condition 石化}状态在该目标身上结束。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Thousands of Memories",
+					"name": "千般记忆",
+					"entries": [
+						"当该阿拉诺斯进行豁免检定时，其调动曾吸收的记忆。其掷一枚{@dice d8}并将结果加到豁免检定上。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Arcane Remora",
+			"name": "奥术䲟鱼",
+			"source": "Arcadia27",
+			"page": 5,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 40
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"acid",
+				"lightning",
+				"thunder"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"理解通用语，但不会说"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Magic Sense",
+					"name": "魔法感知",
+					"entries": [
+						"该䲟鱼知晓120尺内每个生效中的法术与魔法物品的位置。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该䲟鱼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该䲟鱼进行一次吸附攻击和一次锋利鱼鳍攻击。"
+					]
+				},
+				{
+					"ENG_name": "Attach",
+					"name": "吸附",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}14（{@damage 3d6 + 4}）暗蚀伤害。若目标为中型或更小的生物，其陷入{@condition 受擒}状态（逃脱{@dc 14}）。若目标是一件未被穿着或携带的中型或更小的魔法物品，该䲟鱼可以拾起该物品。该䲟鱼携带物品期间，其触及范围内的另一个生物可以用一个动作进行{@dc 14}力量（{@skill 运动}）检定，成功即可把物品从䲟鱼那里夺走。该䲟鱼同一时间只能吸附一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Razor Fins",
+					"name": "锋利鱼鳍",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}11（{@damage 2d6 + 4}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Drain Magic",
+					"name": "汲取魔法",
+					"entries": [
+						"该䲟鱼尝试汲取一件魔法物品的魔力，该物品须非神器，且正由该䲟鱼本身或其{@condition 受擒}的生物穿着或携带。若该物品正由一个非自愿的生物穿着或携带，该生物可进行{@dc 14}敏捷豁免；豁免成功则物品不被汲取。豁免失败，或物品并非由非自愿生物穿着或携带时，物品的魔力被汲干，该䲟鱼恢复18（{@dice 4d8}）生命值。",
+						"若被汲取的是消耗型魔法物品（如药水或卷轴），该物品被摧毁。否则，该物品的魔法被压制24小时，且在此期间该䲟鱼不能再次汲取该物品。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Drink Spells {@recharge}",
+					"name": "豪饮法术{@recharge}",
+					"entries": [
+						"该䲟鱼选择5尺内的一个生物、物体或魔法效应。目标上每个2环或更低的法术随之结束。对目标上每个3环或更高的法术，该䲟鱼进行一次体质检定，其DC等于10+该法术的环阶。检定成功则该法术结束。若此附赠动作至少结束了一个法术，该䲟鱼在其下个回合结束前进行的下一次伤害掷骰获得加值，加值等于其所结束法术中最高环阶的环数。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Captain Shivershank",
+			"name": "希弗尚克船长",
+			"source": "Arcadia27",
+			"page": 27,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"拉肖姆",
+					"Leader"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生鳞甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 161,
+				"formula": "19d10 + 57"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 90
+			},
+			"str": 22,
+			"dex": 18,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 19,
+			"save": {
+				"dex": "+9",
+				"wis": "+8"
+			},
+			"skill": {
+				"athletics": "+11",
+				"insight": "+8",
+				"intimidation": "+9",
+				"stealth": "+9"
+			},
+			"passive": 13,
+			"immune": [
+				"cold",
+				{
+					"immune": [
+						"piercing"
+					],
+					"note": "来自{@cite 寻常且超自然|Arcadia27|寻常}来源",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"深渊语",
+				"水族语",
+				"通用语",
+				"拉尚帕涅语"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"希弗尚克可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Captain of Legend (1/Turn)",
+					"name": "传奇船长（1/回合）",
+					"entries": [
+						"若希弗尚克豁免检定失败，她可以选择改为成功。直到她的下个回合开始，她的AC累计降低5，速度累计降低10尺，并且无法使用其\"表面冲浪\"特性。"
+					]
+				},
+				{
+					"ENG_name": "Natural Scales",
+					"name": "天生鳞甲",
+					"entries": [
+						"希弗尚克的粗糙皮肤使其AC为20。每当一个生物对希弗尚克的近战攻击失手，或希弗尚克成功以近战攻击命中一个生物时，该生物受到7（{@damage 3d4}）挥砍伤害（已计入她的攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Surfacesurf",
+					"name": "表面冲浪",
+					"entries": [
+						"希弗尚克可以超自然地在固体表面（如地面或墙面）中游动，仿佛那是水一般。以此方式移动时，希弗尚克不会引发借机攻击，但在进入一片水域之前不能改变方向。在她的回合结束时，若希弗尚克尚未脱离固体表面，她将从固体表面中钻出。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"希弗尚克进行两次弯刀攻击和一次靴踢或燧发枪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Scimitar",
+					"name": "弯刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}20（{@damage 2d6 + 3d4 + 6}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Boot",
+					"name": "靴踢",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及5尺，单一目标。{@h}11（{@damage 2d4 + 6}）钝击伤害，外加7（{@damage 3d4}）挥砍伤害，且目标被击倒{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Flintlock",
+					"name": "燧发枪",
+					"entries": [
+						"{@atk rw} 命中{@hit 9}，射程80/320尺，单一目标。{@h}9（{@damage 1d10 + 4}）穿刺伤害，且目标被推离希弗尚克5尺；若目标正处半空，则改为被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Fight or Die!",
+					"name": "战或死！",
+					"entries": [
+						"希弗尚克命令她30尺内一个自愿的生物用其反应进行一次具有优势的武器攻击。若该攻击命中，则额外造成7（{@damage 3d4}）该武器类型的伤害。若该攻击失手，攻击者生命值立即降为0。"
+					]
+				},
+				{
+					"ENG_name": "Stunt",
+					"name": "绝技",
+					"entries": [
+						"希弗尚克可以借助一个生物、物体或结构，将自己弹射到她30尺内一个她能看见的无人占据的空间。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Flex",
+					"name": "绷紧",
+					"entries": [
+						"希弗尚克将受到的攻击伤害减半。"
+					]
+				}
+			],
+			"legendaryHeader": [
+				"希弗尚克有三个反派动作。5她可以在遭遇中每个敌人的回合后各使用一次这些动作。她可以以任意顺序使用这些动作，但每轮只能使用一个。"
+			],
+			"legendary": [
+				{
+					"ENG_name": "Action 1: Fire!",
+					"name": "动作1：开火！",
+					"entries": [
+						"希弗尚克用燧发枪向射程内她能看见的三个不同目标开火。她60尺内每个持有远程武器且由她选择的生物可以用该武器进行一次具有优势的攻击（无需动作）。"
+					]
+				},
+				{
+					"ENG_name": "Action 2: Surf the Turf",
+					"name": "动作2：冲上陆地",
+					"entries": [
+						"希弗尚克沿地面或水面以直线游泳，距离至多为其速度。此次移动不会引发借机攻击，穿过生物和物体也不会消耗额外移动。她可以对该连线5尺内的每个生物各进行一次弯刀攻击。她经过的每个空间都变为困难地形。该区域的每个5尺见方部分，若为坚实地面，需至少1分钟人工清理；若为水，则在其下个回合结束时恢复正常地形。"
+					]
+				},
+				{
+					"ENG_name": "Action 3: Chomp",
+					"name": "动作3：大嚼",
+					"entries": [
+						"希弗尚克咬下她5尺内一个自愿生物的头颅。该目标立即死亡，希弗尚克恢复其生命值上限一半的生命值，且直到她完成一次长休前，她的攻击额外造成{@damage 1d6}挥砍伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia27/Creatures/Tokens/Shivershank.webp"
+			},
+			"foundryTokenScale": 1.2,
+			"attachedItems": [
+				"弯刀|phb"
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dire Jelly",
+			"name": "恐水母",
+			"source": "Arcadia27",
+			"page": 20,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d10 + 16"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 30
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 14,
+			"int": 1,
+			"wis": 11,
+			"cha": 3,
+			"save": {
+				"dex": "+5",
+				"con": "+4"
+			},
+			"skill": {
+				"perception": "+2",
+				"stealth": "+5"
+			},
+			"passive": 12,
+			"resist": [
+				"bludgeoning",
+				"cold",
+				"poison"
+			],
+			"immune": [
+				"psychic"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Translucent",
+					"name": "半透明",
+					"entries": [
+						"即使恐水母就在眼前，要发现一只既未移动也未攻击的水母，也需要通过一次{@dc 13}感知（{@skill 察觉}）检定。未察觉水母而试图进入其空间的生物会被恐水母突袭。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该恐水母只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该恐水母进行两次攻击，使用其抓握臂或螫刺触须。"
+					]
+				},
+				{
+					"ENG_name": "Grasping Arms",
+					"name": "抓握臂",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及15尺，单一生物。{@h}1点钝击伤害，外加9（{@damage 2d8}）强酸伤害，且目标陷入{@condition 受擒}状态（逃脱{@dc 13}）。若目标为中型或更小，其在擒抱结束前还陷入{@condition 束缚}状态。擒抱目标期间，该恐水母对目标的攻击检定具有优势，且无法对其他目标使用此攻击。该恐水母移动时，其擒抱着的中型或更小目标随之移动。"
+					]
+				},
+				{
+					"ENG_name": "Stinging Tentacles",
+					"name": "螫刺触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及15尺，单一生物。{@h}1点钝击伤害，外加18（{@damage 4d8}）强酸伤害。若此攻击为重击，目标陷入{@condition 麻痹}状态直到该恐水母的下个回合开始。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Contract",
+					"name": "蜷缩",
+					"entries": [
+						"每当恐水母受到一个允许其进行敏捷豁免以将伤害减半的效应影响时，它会将身体收缩以避开伤害的正面冲击，豁免成功则不受伤害，失败也只受一半伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"paralyzed"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Dragon Turtle Skeleton",
+			"name": "龙龟骷髅",
+			"source": "Arcadia27",
+			"page": 18,
+			"_copy": {
+				"ENG_name": "Dragon Turtle",
+				"name": "龙龟",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "replaceTxt",
+						"replace": "龙龟",
+						"with": "龙龟骷髅"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "蒸汽吐息{@recharge 5}",
+						"items": [
+							{
+								"ENG_name": "Steam Breath {@recharge 5}",
+								"name": "蒸汽吐息{@recharge 5}",
+								"entries": [
+									"该龙龟骷髅在一个60尺锥形区域内呼出灼热蒸汽。该区域内的每个生物必须进行{@dc 18}体质豁免，失败者受到52（{@damage 15d6}）暗蚀伤害，成功者伤害减半。身处水下不能为此伤害提供抗性。"
+								]
+							}
+						]
+					},
+					"damageTags": {
+						"mode": "replaceArr",
+						"replace": "F",
+						"items": [
+							"N"
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"亡灵"
+				]
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			]
+		},
+		{
+			"ENG_name": "Eldritch Anemone",
+			"name": "诡异海葵",
+			"source": "Arcadia27",
+			"page": 21,
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 133,
+				"formula": "14d10 + 56"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 20
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 19,
+			"int": 3,
+			"wis": 13,
+			"cha": 6,
+			"senses": [
+				"盲视60尺（范围外视为目盲）"
+			],
+			"passive": 11,
+			"resist": [
+				"cold",
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Fetid Miasma",
+					"name": "秽恶瘴气",
+					"entries": [
+						"该诡异海葵会污染其60尺内的水域。任何能水下呼吸的生物首次于回合内进入该区域或在该区域开始其回合时，必须屏住呼吸或进行{@dc 15}体质豁免。豁免失败的生物陷入{@condition 中毒}状态直到其下个回合开始。诡异海葵免疫此效应。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该诡异海葵只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该诡异海葵进行三次攻击：一次啃咬和两次触须攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}12（{@damage 2d8 + 3}）穿刺伤害，且目标必须通过{@dc 14}体质豁免，否则陷入{@condition 晕眩|走开}状态1分钟。目标可以在其每个回合结束时重复豁免，成功则结束自身的该效应。"
+					]
+				},
+				{
+					"ENG_name": "Tentacles",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及10尺，单一目标。{@h}7（{@damage 1d8 + 3}）钝击伤害，外加4（{@damage 1d8}）毒素伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Turbid Vortex",
+					"name": "浑浊漩涡",
+					"entries": [
+						"该诡异海葵搅动其60尺内的水。该区域内每个大型或更小的生物必须通过{@dc 14}力量豁免，否则被向该诡异海葵拉近30尺。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Giant Spider Crab",
+			"name": "巨型蜘蛛蟹",
+			"source": "Arcadia27",
+			"page": 22,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "3d10 + 6"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 15,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"skill": {
+				"athletics": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺",
+				"盲视 30 尺"
+			],
+			"passive": 10,
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"该蟹可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Camouflage",
+					"name": "伪装",
+					"entries": [
+						"该蟹在礁石与洋底中隐藏的敏捷（{@skill 隐匿}）检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Ocean Scuttler",
+					"name": "洋底疾行",
+					"entries": [
+						"该蟹不会因处于水下而使移动或攻击受到任何减值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及10尺，单一目标。{@h}8（{@damage 1d10 + 3}）钝击伤害，且目标陷入{@condition 受擒}状态（逃脱{@dc 13}）。该蟹有两只钳，每只只能擒抱一个目标。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Shed Limb",
+					"name": "断肢",
+					"entries": [
+						"当该蟹受到一个其可见来源的伤害时，它用一条肢体护住自己，将伤害减半并脱落那条保护它的肢体。该蟹可以使用此反应至多四次，此后必须花30天重新长出失去的肢体。当该蟹缺失两条或更多肢体时，其基于力量或敏捷的攻击检定、属性检定和豁免检定具有劣势。"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Hound Shark",
+			"name": "猎犬鲨",
+			"source": "Arcadia27",
+			"page": 6,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 5,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 3,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+2",
+				"survival": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Aquatic Tremorsense",
+					"name": "水体震颤感知",
+					"entries": [
+						"当该鲨鱼接触一片水域时，它能侦测并精确定位同一水域内60尺范围内震动的来源。"
+					]
+				},
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"该鲨鱼对任何生命值未满的生物进行的近战攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该鲨鱼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）穿刺伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Hound Sense",
+					"name": "猎犬感知",
+					"entries": [
+						"该鲨鱼通过嗅闻其40尺内一个它能看见的生物或物体来锁定一个猎物。",
+						"若该鲨鱼嗅到的是一个物体，其猎物为过去10天内最后曾连续持拿该物体至少5分钟的生物。否则，其猎物即它嗅到的那个生物。在接下来的24小时内，或直到该鲨鱼再次使用此附赠动作前，该鲨鱼可以用嗅觉追踪其猎物。只要猎物与其处于同一位面，它便知晓通往猎物所在位置的方向。"
+					]
+				},
+				{
+					"ENG_name": "Unstoppable Hunt {@recharge}",
+					"name": "不可阻挡的狩猎{@recharge}",
+					"entries": [
+						"该鲨鱼朝其猎物（见\"猎犬感知\"）移动至多其速度的距离，且不引发借机攻击，前提是它能看见其猎物"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Hound Shark Companion",
+			"name": "猎犬鲨同伴",
+			"source": "Arcadia27",
+			"page": 7,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 5,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 5,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"str": "+3 加 PB",
+				"dex": "+1 加 PB"
+			},
+			"skill": {
+				"perception": "+0 加 PB",
+				"survival": "+0 加 PB"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": "10 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Aquatic Tremorsense",
+					"name": "水体震颤感知",
+					"entries": [
+						"当该鲨鱼接触一片水域时，它能侦测并精确定位同一水域内60尺范围内震动的来源。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该鲨鱼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Signature Attack (Bite)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit 3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Overwhelming Attack (2 Ferocity)",
+					"name": "1环：压溃攻势（2狂怒）",
+					"entries": [
+						"该鲨鱼进行一次招牌攻击。命中时，该攻击额外造成PB伤害，且目标直到该鲨鱼下个回合开始前无法进行反应。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Circling Strike (5 Ferocity)",
+					"name": "3环：环游打击（5狂怒）",
+					"entries": [
+						"该鲨鱼选择其5尺内的一个生物。该目标必须进行一次{@dc 10 加熟练加值}感知（{@skill 察觉}）检定。检定失败时，该鲨鱼对目标进行一次具有优势的招牌攻击，且命中时额外造成{@damage PBd4}伤害。检定成功时，该鲨鱼对目标进行一次招牌攻击。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Chompfest (8 Ferocity)",
+					"name": "5环：大快朵颐（8狂怒）",
+					"entries": [
+						"该鲨鱼移动至多其速度的距离，且不引发借机攻击。在此移动之前、期间或之后，该鲨鱼可以对至多PB个生物各进行一次招牌攻击。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Hound Sense (1/Day)",
+					"name": "猎犬感知（1/日）",
+					"entries": [
+						"该鲨鱼通过嗅闻其40尺内一个它能看见的生物或物体来锁定一个猎物。若该鲨鱼嗅到的是一个物体，其猎物为过去10天内最后曾连续持拿该物体至少5分钟的生物。否则，其猎物即它嗅到的那个生物。在接下来的24小时内，或直到该鲨鱼再次使用此附赠动作前，该鲨鱼可以用嗅觉追踪其猎物。只要猎物与其处于同一位面，它便知晓通往猎物所在位置的方向。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"ENG_name": "Hound Shark",
+				"name": "猎犬鲨",
+				"source": "Arcadia27",
+				"entries": [
+					"作为寻猎鲨中体型较小的一支，猎犬鲨会不知疲倦地横跨大洋追踪猎物。一旦闻到你的气味，它们能一连几个小时尾随不放。噢，虽然它们也吃小鱼，但这些猎犬更爱能撑上几天的大餐，好支撑它们寻访下一场盛宴。要是被其中一条嗅到了你，赶紧上岸，别再回头！",
+					{
+						"ENG_name": "Hunting Companions",
+						"type": "entries",
+						"name": "狩猎伙伴",
+						"entries": [
+							"并非所有猎犬鲨都对你的血肉虎视眈眈。它们可以\u2014\u2014小心地\u2014\u2014被训练来与老练的水手并肩狩猎。这些忠实的朋友既与冒险者合作，也受雇于赏金猎人，用它们鬼灵精怪的嗅觉横跨四海追踪猎物。我有切身体会：全船上下，没有谁比我更信得过我的雷吉娜。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Icebreaker Shark",
+			"name": "破冰鲨",
+			"source": "Arcadia27",
+			"page": 8,
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 150,
+				"formula": "12d12 + 72"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 50
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 22,
+			"int": 1,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 13,
+			"immune": [
+				"cold"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"该鲨鱼对任何生命值未满的生物进行的近战攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Ice Tremorsense",
+					"name": "冰面震颤感知",
+					"entries": [
+						"该鲨鱼能侦测并精确定位60尺内冰面上震动的来源，前提是该冰与该鲨鱼所在的水域相接触。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"该鲨鱼对物体和结构造成双倍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该鲨鱼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该鲨鱼进行一次啃咬攻击，并进行一次骨尾攻击或使用\"破冰\"。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}22（{@damage 3d10 + 6}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bone Tail",
+					"name": "骨尾",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及10尺，单一目标。{@h}22（{@damage 3d10 + 6}）钝击伤害。若目标为生物，其速度减半直到其下个回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Smash Ice",
+					"name": "破冰",
+					"entries": [
+						"该鲨鱼摧毁其10尺内一15尺立方的非魔法冰块。冰块区域上的每个生物必须进行{@dc 17}敏捷豁免。豁免成功的生物移入立方体外由其选择的最近无人占据空间。豁免失败的生物跌落并{@condition 倒地}。"
+					]
+				}
+			],
+			"traitTags": [
+				"Siege Monster",
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Maelstrom Hammerhead",
+			"name": "大漩涡双髻鲨",
+			"source": "Arcadia27",
+			"page": 9,
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 95,
+				"formula": "10d10 + 40"
+			},
+			"speed": {
+				"walk": 10,
+				"swim": 40
+			},
+			"str": 19,
+			"dex": 11,
+			"con": 18,
+			"int": 12,
+			"wis": 14,
+			"cha": 15,
+			"skill": {
+				"perception": "+5",
+				"religion": "+4"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 15,
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"languages": [
+				"天界语",
+				"通用语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"该双髻鲨可以呼吸空气和水。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}8（{@damage 1d8 + 4}）穿刺伤害，外加7（{@damage 2d6}）闪电伤害。若目标为生物，其直到下个回合开始前无法进行反应。"
+					]
+				},
+				{
+					"ENG_name": "Destructive Storm (1/Day)",
+					"name": "毁灭风暴（1/日）",
+					"entries": [
+						"该双髻鲨在其120尺内一个它能看见的点上召唤一场风暴，呈20尺半径的球体。风暴会绕过转角蔓延，其区域为轻度遮蔽。当生物于回合内首次进入风暴或在其中开始其回合时，必须进行{@dc 15}敏捷豁免，失败者受到9（{@damage 2d8}）闪电伤害和4（{@damage 1d8}）雷鸣伤害，成功者伤害减半。每轮先攻计数20开始时，风暴中的载具与结构受到4（{@damage 1d8}）闪电伤害和9（{@damage 2d8}）雷鸣伤害。风暴持续1分钟，直到该双髻鲨死亡、离开风暴超过240尺，或选择结束风暴（无需动作）。",
+						"或者，该双髻鲨可以使用此动作将其力量加入240尺内另一个双髻鲨的\"毁灭风暴\"中。每有一个双髻鲨加入力量，风暴的效应便获得以下累积变化：",
+						{
+							"type": "list",
+							"items": [
+								"球体的半径增加5尺。",
+								"风暴额外造成4（{@damage 1d8}）闪电伤害和4（{@damage 1d8}）雷鸣伤害。"
+							]
+						},
+						"若一个将其力量加入风暴的双髻鲨死亡或退出风暴（无需动作），风暴的效应按比例减弱。当没有任何双髻鲨再为风暴供力时，风暴结束。"
+					]
+				},
+				{
+					"ENG_name": "Maelstrom Fury (1/Day)",
+					"name": "大漩涡之怒（1/日）",
+					"entries": [
+						"当该双髻鲨没入水中时，它将身体急速旋转成紧密的圆，制造出一个回旋的漩涡。该双髻鲨30尺内的每个生物必须通过{@dc 15}力量豁免，否则被朝该双髻鲨拉近至多25尺。随后该双髻鲨对其5尺内由其选择的每个生物各进行一次啃咬攻击。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Move Storm",
+					"name": "移动风暴",
+					"entries": [
+						"该双髻鲨可以将其以\"毁灭风暴\"动作创造或加入力量的风暴向任意方向移动至多30尺。"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"C",
+				"CE"
+			],
+			"damageTags": [
+				"L",
+				"P",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Megalodon",
+			"name": "巨齿鲨",
+			"source": "Arcadia27",
+			"page": 10,
+			"size": [
+				"G"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 297,
+				"formula": "17d20 + 119"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 90
+			},
+			"str": 28,
+			"dex": 8,
+			"con": 25,
+			"int": 1,
+			"wis": 10,
+			"cha": 5,
+			"save": {
+				"str": "+14",
+				"dex": "+4",
+				"con": "+12"
+			},
+			"skill": {
+				"perception": "+10"
+			},
+			"senses": [
+				"盲视 120 尺"
+			],
+			"passive": 20,
+			"cr": "14",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"该巨齿鲨对任何生命值未满的生物进行的近战攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Breech",
+					"name": "跃身击浪",
+					"entries": [
+						"若该巨齿鲨在其回合内沿直线朝水面移动至少30尺，它可以在不消耗额外移动的情况下将自己弹出水面至多60尺高，随后落下。在此次移动或坠落期间，该巨齿鲨可以（在可用时）使用一个动作。若该巨齿鲨落入至少30尺深的水中，则不受坠落伤害。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"该巨齿鲨对物体和结构造成双倍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该巨齿鲨只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该巨齿鲨进行一次啃咬攻击和一次尾击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及5尺，单一目标。{@h}23（{@damage 4d6 + 9}）穿刺伤害。若目标为生物，其陷入{@condition 受擒}状态（逃脱{@dc 19}）。擒抱结束前，目标处于{@condition 束缚}状态，且该巨齿鲨无法啃咬另一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Tail",
+					"name": "尾击",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及15尺，单一目标。{@h}20（{@damage 2d10 + 9}）钝击伤害。若目标为生物，其必须通过{@dc 20}体质豁免，否则陷入{@condition 晕眩|走开}状态直到其下个回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Bone Crunch",
+					"name": "咬骨碎噬",
+					"entries": [
+						"该巨齿鲨对其擒抱着的一个生物进行一次啃咬攻击。若攻击命中，目标额外受到14（{@damage 4d6}）穿刺伤害，且其速度减半。此外，若目标并非构装生物或不死生物，其开始流血。流血期间，该生物在其每个回合开始时失去14（{@dice 4d6}）生命值。目标或其触及范围内的一个生物可以用一个动作进行{@dc 17}感知（{@skill 医药}）检定，成功则解除减速与流血。若目标受到魔法治疗，减速与流血同样结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Siege Monster",
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Quartermaster Crollenoak",
+			"name": "克罗伦诺克军需官",
+			"isNamedCreature": true,
+			"source": "Arcadia27",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM"
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"侏儒"
+				]
+			},
+			"languages": [
+				"通用语",
+				"侏儒语"
+			]
+		},
+		{
+			"ENG_name": "Rime Elemental",
+			"name": "白霜元素",
+			"source": "Arcadia27",
+			"page": 18,
+			"_copy": {
+				"ENG_name": "Ice Mephit",
+				"name": "冰魔蝠",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Water Breathing",
+								"name": "水下呼吸",
+								"entries": [
+									"该白霜元素可以在水下呼吸"
+								]
+							}
+						]
+					}
+				}
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"swim": 30
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Aboleth",
+			"name": "海洋恐怖底栖魔鱼",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Aboleth",
+				"name": "底栖魔鱼",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"该底栖魔鱼对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"G"
+			],
+			"hp": {
+				"average": 235,
+				"formula": "18d10 + 36 + 100"
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Bone Devil",
+			"name": "海洋恐怖骨魔",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Bone Devil",
+				"name": "骨魔",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"该骨魔对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"G"
+			],
+			"hp": {
+				"average": 242,
+				"formula": "15d10 + 60 + 100"
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Giant Crab",
+			"name": "海洋恐怖巨蟹",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Giant Crab",
+				"name": "巨蟹",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"该巨蟹对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"H"
+			],
+			"hp": {
+				"average": 63,
+				"formula": "3d8 + 50"
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Hydra",
+			"name": "海洋恐怖多头蛇",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Hydra",
+				"name": "多头蛇",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"该多头蛇对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"G"
+			],
+			"hp": {
+				"average": 272,
+				"formula": "15d12 + 75 + 100"
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Kraken",
+			"name": "海洋恐怖克拉肯",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Kraken",
+				"name": "克拉肯",
+				"source": "FleeMortals",
+				"_mod": {
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "攻城怪物",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"该克拉肯对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"hp": {
+				"average": 599,
+				"formula": "27d20 + 216 + 100"
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Planetar",
+			"name": "海洋恐怖异界神侍",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Planetar",
+				"name": "异界神侍",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"该异界神侍对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"G"
+			],
+			"hp": {
+				"average": 300,
+				"formula": "16d10 + 112 + 100"
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Sea Hag",
+			"name": "海洋恐怖海鬼婆",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Sea Hag",
+				"name": "海鬼婆",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"该海鬼婆对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"H"
+			],
+			"hp": {
+				"average": 102,
+				"formula": "7d8 + 21 + 50"
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Shivershank",
+			"name": "海洋恐怖希弗尚克",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Captain Shivershank",
+				"name": "希弗尚克船长",
+				"source": "Arcadia27",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"希弗尚克对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"G"
+			],
+			"hp": {
+				"average": 261,
+				"formula": "19d10 + 57 + 100"
+			}
+		},
+		{
+			"ENG_name": "Sea Terror Storm Giant",
+			"name": "海洋恐怖风暴巨人",
+			"source": "Arcadia27",
+			"_copy": {
+				"ENG_name": "Storm Giant",
+				"name": "风暴巨人",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Siege Monster",
+								"name": "攻城怪物",
+								"entries": [
+									"该巨人对物体和结构造成双倍伤害。若使用新的{@cite 船舰|Arcadia27|船舰规则}，一次成功的攻击对船只算作2次受创。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"size": [
+				"G"
+			],
+			"hp": {
+				"average": 330,
+				"formula": "20d12 + 100 + 100"
+			}
+		},
+		{
+			"ENG_name": "Shipwreck Skeleton",
+			"name": "沉船骷髅",
+			"source": "Arcadia27",
+			"page": 18,
+			"_copy": {
+				"ENG_name": "Skeleton",
+				"name": "骷髅",
+				"source": "MM"
+			},
+			"action": [
+				{
+					"ENG_name": "Barnacle-Encrusted Oar",
+					"name": "藤壶缠附的船桨",
+					"entries": [
+						"{@atk mw} 命中{@hit 2}，触及10尺，单一目标。{@h}5（{@damage 1d10}）钝击伤害和3（{@damage 1d6}）穿刺伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Surgeon Stitches",
+			"name": "缝缝医生",
+			"isNamedCreature": true,
+			"source": "Arcadia27",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Zombie",
+				"name": "丧尸",
+				"source": "FleeMortals",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Stitch",
+								"name": "缝合",
+								"entries": [
+									"缝缝医生可以缝补一个生物并将其救活，前提是其躯体尚存（由你裁量，此举会将其生物类型改为不死生物）。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"type": {
+				"type": "undead",
+				"tags": [
+					"精灵"
+				]
+			},
+			"int": 15,
+			"wis": 15,
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"缝缝医生每天可以施展6次1环的{@spell 疗伤术}。"
+					],
+					"daily": {
+						"6e": [
+							"{@spell 疗伤术}"
+						]
+					},
+					"ability": "wis"
+				}
+			]
+		},
+		{
+			"ENG_name": "Swarm of Zombie Worms",
+			"name": "丧尸蠕虫群",
+			"source": "Arcadia27",
+			"page": 23,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "T"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 8,
+			"dex": 17,
+			"con": 11,
+			"int": 1,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"盲视 10 尺（范围外视为目盲）"
+			],
+			"passive": 10,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"psychic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Bone Sense",
+					"name": "骨骼感知",
+					"entries": [
+						"该虫群知晓其30尺内每个有骨骼的生物的位置，即使那些生物处于隐藏状态。"
+					]
+				},
+				{
+					"ENG_name": "Shrink",
+					"name": "缩小",
+					"entries": [
+						"当该虫群的生命值降至一半以下时，其体型变为小型。"
+					]
+				},
+				{
+					"ENG_name": "Swarm",
+					"name": "集群",
+					"entries": [
+						"该虫群可以进入其他生物的空间，反之亦然，且该虫群可以穿过任何足以让一只微型蠕虫通过的孔洞。该虫群无法恢复生命值或获得临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Undead Nature",
+					"name": "不死本质",
+					"entries": [
+						"该虫群由微型不死生物组成，不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"若该虫群的生命值超过一半，它进行两次啃咬攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及0尺，虫群所在空间中的一个生物。{@h}5（{@damage 2d4}）穿刺伤害，且有骨骼的目标必须进行{@dc 13}体质豁免。豁免失败时，蠕虫开始钻透目标的血肉寻找其骨骼，目标陷入侵体状态。侵体期间，该生物在其每个回合开始时受到5（{@damage 2d4}）暗蚀伤害。该生物受到此伤害后可重复豁免，成功则结束自身的侵体效应。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"ENG_name": "Zombie Worms",
+				"name": "丧尸蠕虫",
+				"source": "Arcadia27",
+				"entries": [
+					"丧尸蠕虫是一寸来长、蠕蠕而动的亡灵血肉管，渴求并吞食生者与死者的骸骨。它们最常见于大洋之底\u2014\u2014巨大生物死去并留下骸骨之处\u2014\u2014袭击一切有骨骼的东西。它们常藏身于大型生物被掏空的骨架之中，静候潜在猎物靠近时蜂拥而出。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Warp Shark",
+			"name": "跃迁鲨",
+			"source": "Arcadia27",
+			"page": 11,
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d10 + 45"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 40
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 16,
+			"int": 5,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"理解水族语与通用语，但不能说"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"该鲨鱼对任何生命值未满的生物进行的近战攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"该鲨鱼只能在水下呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Water Sense",
+					"name": "水感",
+					"entries": [
+						"该鲨鱼知晓其500尺内每一片足以让它没入的水域的位置，也知晓每一个正接触此类水域的生物的位置。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该鲨鱼进行一次啃咬攻击和一次尾击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}14（{@damage 3d6 + 4}）穿刺伤害。若目标为中型或更小的生物，其陷入{@condition 受擒}状态（逃脱{@dc 14}）。擒抱结束前，目标处于{@condition 束缚}状态，且该鲨鱼无法啃咬另一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Tail",
+					"name": "尾击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及10尺，单一目标。{@h}20（{@damage 3d10 + 4}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Splish Slash",
+					"name": "哗啦挥斩",
+					"entries": [
+						"该鲨鱼的尾巴斩开一道通往妖精荒野水域的短暂裂隙，激起一阵高压水流的爆发冲击。该鲨鱼10尺内的每个生物必须进行{@dc 15}力量豁免。豁免失败的生物受到16（{@damage 3d10}）钝击伤害，并被推离该鲨鱼10尺，除非它已被该鲨鱼{@condition 受擒}。豁免成功的生物伤害减半，且不会被推动。"
+					]
+				},
+				{
+					"ENG_name": "Teleport {@recharge 5}",
+					"name": "传送 {@recharge 5}",
+					"entries": [
+						"该鲨鱼传送至多500尺，到达一片它能感知的水域中的无人占据空间。或者，该鲨鱼可以与其{@condition 受擒}的一个生物一同传送至多30尺，到达一片它能感知的水域中的无人占据空间。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Wereshark",
+			"name": "鲨人",
+			"source": "Arcadia27",
+			"page": 12,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"变形生物"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"condition": "类人形态下"
+				},
+				{
+					"ac": 12,
+					"condition": "鲨鱼或混合形态下",
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "（鲨鱼形态下步行0尺、游泳40尺；混合形态下步行30尺、游泳40尺）"
+				}
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 15,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+3"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 12,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "非银质武器且非魔法攻击的",
+					"cond": true
+				}
+			],
+			"languages": [
+				"通用语（在鲨鱼形态下无法说话）"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"该鲨人可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"该鲨人对任何生命值未满的生物进行的近战攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "From the Deep",
+					"name": "来自深处",
+					"entries": [
+						"该鲨人命中任何一个没入水中且看不见或听不见它的生物的攻击皆为重击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该鲨人进行两次三叉戟攻击，或一次啃咬攻击和一次三叉戟攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite (Shark or Hybrid Form Only)",
+					"name": "啃咬（仅限鲨鱼或混合形态）",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）穿刺伤害。若目标是非兽化人的类人生物，该鲨人可以传递其诅咒，目标必须通过{@dc 12}体质豁免，否则染上鲨人兽化症。"
+					]
+				},
+				{
+					"ENG_name": "Trident (Humanoid or Hybrid Form Only)",
+					"name": "三叉戟（仅限类人或混合形态）",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d6 + 3}）穿刺伤害；若以双手进行近战攻击，则为7（{@damage 1d8 + 3}）穿刺伤害。若此攻击命中的是一个处于小型或更大物体5尺内的中型或更小生物，该鲨人可将三叉戟穿过该生物钉入物体。目标陷入{@condition 束缚}状态，且该鲨人无法再用该三叉戟进行另一次攻击。触及三叉戟的生物可以用一个动作将其拔出，使被{@condition 束缚}的生物受到7（{@damage 2d6}）穿刺伤害，并结束其身上的{@condition 束缚}状态。"
+					]
+				},
+				{
+					"ENG_name": "Retreat to the Dark",
+					"name": "退入黑暗",
+					"entries": [
+						"该鲨人移动至多其速度的距离，且不引发借机攻击，随后采取躲藏动作。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Change Shape",
+					"name": "变形",
+					"entries": [
+						"该鲨人变形为鲨鱼与类人生物的混合形态，或变形为一只大型寻猎鲨，或变回其类人形态。除体型和速度外，其数据在每个形态下都相同。它穿着或携带的任何装备不会随之变形。该鲨人死亡时变回其类人形态。"
+					]
+				}
+			],
+			"attachedItems": [
+				"三叉戟|phb"
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasFluff": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"ENG_name": "Angler Shark",
+			"name": "鮟鱇鲨",
+			"source": "Arcadia27",
+			"entries": [
+				"鮟鱇鲨是深海的伏击掠食者，它潜伏于黑暗中，在身前垂着一根发光的触角引诱猎物分神。当某个愚蠢的生物冒险趋光而来，鲨鱼便从幽暗中猛扑而出，张开骇人的巨口，将区域内的一切吞吃殆尽。"
+			]
+		},
+		{
+			"ENG_name": "Aranoth",
+			"name": "阿拉诺斯",
+			"source": "Arcadia27",
+			"entries": [
+				{
+					"ENG_name": "Aranoth",
+					"type": "entries",
+					"name": "阿拉诺斯",
+					"entries": [
+						"海中凶兽无数，但唯有霜寒灌注的阿拉诺斯，最让我想跪地求饶。它们是最古老的鲨鱼：头颅中燃烧着五只红眼，皮肤冰蓝，躯体足有最大大帆船的两倍长，血盆大口里满是参差利齿\u2014\u2014活像一条哥布林鲨，只不过每颗珍珠白的牙齿都有一个成年人类那么大。"
+					]
+				},
+				{
+					"ENG_name": "Ancient as the Sea",
+					"type": "entries",
+					"name": "与海同寿",
+					"entries": [
+						"每一条阿拉诺斯都比浪尖上的盐还要老。它们不会衰老，但也没法生小鱼鲨。感谢诸神。深渊中的其他恐怖\u2014\u2014比如该死的龙龟和丑陋的克拉肯\u2014\u2014都视阿拉诺斯为威胁。这对阿瑞来说是个坏消息，对水手却是福音。如今只有寥寥几条阿拉诺斯还在深渊游弋。它们藏在大蓝之底，像鳐鱼吃虾一样吞吐着寒气。只有当阿瑞感知到上方有食物时\u2014\u2014也就是我们\u2014\u2014才会冒险游向水面。呃，至少是我们的记忆。"
+					]
+				},
+				{
+					"ENG_name": "Devourers of Knowledge",
+					"type": "entries",
+					"name": "知识吞噬者",
+					"entries": [
+						"码头上最老的老盐工说，阿拉诺斯一直是个大块头，却不是一直这么聪明。那些鱼脑袋是在大快朵颐猎物的思维时，才从米诺鱼一路吃成了神明。你越聪明，阿瑞就越馋你。这贪得无厌的家伙把猎物吞进喉咙，吃掉受害者的记忆，再把那些可怜虫吐成雕像！海底铺满它们变态的石头花园，这几乎是板上钉钉的事。"
+					]
+				},
+				{
+					"ENG_name": "Deals for Memories",
+					"type": "entries",
+					"name": "记忆交易",
+					"entries": [
+						"话说回来，阿拉诺斯看着邪门透顶，但大多数都愿意跟自己的食物讨价还价。鉴于它们稳操全局，这可真是慷慨到家了。不少阿拉诺斯愿意放一艘船跨过它们的领海，代价只是吃掉船上最聪明的那名水手。石化安息吧，聪明汤姆。一些走投无路的冒险者\u2014\u2014我是说那些负担深重、别无选择的人\u2014\u2014甚至会主动寻访阿拉诺斯，献出记忆来换取这头巨怪浩瀚心智中的情报。你若敢信，这些鱼里最仁慈的，吸完记忆后还会把受害者变回血肉之躯。尽管如此，就算拿碎船者满口的牙齿来换，我也不会把自己献给阿瑞。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Arcane Remora",
+			"name": "奥术䲟鱼",
+			"source": "Arcadia27",
+			"entries": [
+				"比寻常吸盘鱼大上一圈的奥术䲟鱼，专门清理海中的魔法烂摊子。噢，你从没想过一船药水撞上礁石会怎样，也没想过一个法师的狂野魔法失控、在海里变出一大摊油脂会怎样？那我告诉你，那场面可一点也不好看。于是某些\"天才\"魔法师培育了一种特殊的鲨鱼来收拾自己的烂摊子......可你猜结果如何？往自然里添魔法从来不是好买卖。这些鱼变得更聪明、更结实，还有一些逃出育种者之手，在蔚蓝汪洋里结成了鱼群。我的老天。",
+				{
+					"ENG_name": "Drawn to Magic",
+					"type": "entries",
+					"name": "为魔法所引",
+					"entries": [
+						"海上哪里有魔法，哪里就有䲟鱼出没。有时当地社群会雇一位育种者带几条鱼去清理污染，但也完全可能由五六条野生小䲟把烂摊子吸个干净。噢，它们吃的可不只是炼金产物和法术。下水游泳的冒险者可得当心\u2014\u2014这些吸盘鱼最爱吸附魔法物品、汲干其力量......据说是暂时的。不过你要是个走运的海狗，也许能撞见一条吸盘里叼着魔法剑四处游荡的小䲟。我那把{@item 割锋|Arcadia27}\u2014\u2014正是从恐怖莉安德拉头上削下马尾辫的那柄弯刀\u2014\u2014就是从一条大䲟身上取回来的。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Captain Shivershank",
+			"name": "希弗尚克船长",
+			"source": "Arcadia27",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia27/Creatures/Images/Shivershank.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Dire Jelly",
+			"name": "恐水母",
+			"source": "Arcadia27",
+			"entries": [
+				"恐水母是一种体型惊人的水母。它们随波漂浮、藏于眼前，半透明的躯体难以察觉。不止一条鱼\u2014\u2014或一个泳者\u2014\u2014曾突然发现自己已落入恐水母的掌握，麻痹无助、挣扎求生。恐水母来者不拒，浮游生物、鱼类、哺乳动物一律吞吃\u2014\u2014把一片区域内的猎物吃干抹净后，再游上数百英里寻找下一片猎场。"
+			]
+		},
+		{
+			"ENG_name": "Eldritch Anemone",
+			"name": "诡异海葵",
+			"source": "Arcadia27",
+			"entries": [
+				"栖息在魔法力量与异界影响之地附近的海中生物，有时会被来自这个现实之外的能量扭曲。诡异海葵便是这样一员\u2014\u2014一种定居一地、渴求血肉的掠食者。"
+			]
+		},
+		{
+			"ENG_name": "Giant Spider Crab",
+			"name": "巨型蜘蛛蟹",
+			"source": "Arcadia27",
+			"entries": [
+				"巨型蜘蛛蟹在海洋礁盘间巡游，等待较大的鱼类和哺乳动物游入其利钳的触及范围。这种蟹红橙色的甲壳仅五尺宽，十条多节的腿（其中两条末端为带钳的螯）却各有六尺长。蜘蛛蟹并不擅长游泳，但凭借繁多的肢体，它们能轻松地掠过洋底或攀上船舷。"
+			]
+		},
+		{
+			"ENG_name": "Hound Shark",
+			"name": "猎犬鲨",
+			"source": "Arcadia27",
+			"entries": [
+				"作为寻猎鲨中体型较小的一支，猎犬鲨会不知疲倦地横跨大洋追踪猎物。一旦闻到你的气味，它们能一连几个小时尾随不放。噢，虽然它们也吃小鱼，但这些猎犬更爱能撑上几天的大餐，好支撑它们寻访下一场盛宴。要是被其中一条嗅到了你，赶紧上岸，别再回头！",
+				{
+					"ENG_name": "Hunting Companions",
+					"type": "entries",
+					"name": "狩猎伙伴",
+					"entries": [
+						"并非所有猎犬鲨都对你的血肉虎视眈眈。它们可以\u2014\u2014小心地\u2014\u2014被训练来与老练的水手并肩狩猎。这些忠实的朋友既与冒险者合作，也受雇于赏金猎人，用它们鬼灵精怪的嗅觉横跨四海追踪猎物。我有切身体会：全船上下，没有谁比我更信得过我的雷吉娜。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Icebreaker Shark",
+			"name": "破冰鲨",
+			"source": "Arcadia27",
+			"entries": [
+				"如果你看见一道背鳍划破冰川岛屿的寒冷水域，快逃。逃到双腿稳稳踩上铁一般坚硬的地面为止。要知道，破冰鲨在严寒水域狩猎，它们潜伏在冰山与冰川上方窥伺猎物，静候受害者踏上冰层最薄之处。一旦猎物露出破绽，这些灰皮鲨鱼便用巨尾砸穿冰面，把食物惨叫着拖入令人战栗的深渊。你的船也未必安全\u2014\u2014这些冰脑袋碎起木头来不输任何冰川。"
+			]
+		},
+		{
+			"ENG_name": "Maelstrom Hammerhead",
+			"name": "大漩涡双髻鲨",
+			"source": "Arcadia27",
+			"entries": [
+				"大漩涡双髻鲨。它们看上去像金色的双髻鲨，可一旦大漩锤张开嘴索要贡品，水手就知道自己面对的是什么了......一位众神的仆从！",
+				{
+					"ENG_name": "Divine Messengers",
+					"type": "entries",
+					"name": "神圣信使",
+					"entries": [
+						"当水手冲撞了喜怒无常的海神\u2014\u2014也许是杀了信天翁，也许是在风暴中咒骂神明，又也许是未向深海倾注朗姆酒便贸然驶过圣化之海\u2014\u2014大漩涡双髻鲨便会现身。有些罪过尚可宽恕。若你走运，这些神圣的掠食者只是索要贡品\u2014\u2014通常是财宝，但罪孽更深重时，它们也可能索命。照给便是。拒绝的下场，是狂风暴雨般的雷霆之怒。"
+					]
+				},
+				{
+					"ENG_name": "Storm Creators",
+					"type": "entries",
+					"name": "风暴制造者",
+					"entries": [
+						"当大漩涡双髻鲨替震怒的神明施展报复时，它们唤起的风暴能让最有经验的老水手都翻胃呕吐。参与掀起风暴的鲨鱼越多，云层越浩大，雷击也越猛烈。把那该死的贡品交了就是。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Megalodon",
+			"name": "巨齿鲨",
+			"source": "Arcadia27",
+			"entries": [
+				"你知道那恶名昭著的大白鲨。把那可怕的鱼拉到大帆船那么长，给它一口比匕首还长的牙齿和一副嗜鲸的胃口，你就得到了有史以来在海上横行的最凶悍的掠食者之一。当无鲸可食时，这些怪物便冲破海面、腾空跃起，把船只像礼品纸一样撕开，去够里面的碎肉。唉，第一艘{@i 宴鳍号}便落得如此下场。我们来了，碎牙。"
+			]
+		},
+		{
+			"ENG_name": "Warp Shark",
+			"name": "跃迁鲨",
+			"source": "Arcadia27",
+			"entries": [
+				"跃迁鲨生来便带着妖精魔法，能从一处消失、在另一处现身。无论是咸涩的大洋、清澈见底的河流，还是某位倒霉君主的巨大浴缸，都无所谓。只要是湿的，就当心跃迁者。它会钻进去，吞掉哪条倒霉的狗，然后在你唱完一句船歌之前溜之大吉。这些强壮的长尾鲨有着深紫色的皮肤，斑驳着红、黑、蓝三色，更别提那能把现实切开裂口的骨刃之尾。",
+				{
+					"ENG_name": "Wicked Pets",
+					"type": "entries",
+					"name": "邪恶宠物",
+					"entries": [
+						"虽然{@creature 海鬼婆|走开|海鬼婆们}是把跃迁鲨当宠物养的头号人群，但许多反派也会驯养这些鱼来听候差遣、在浪上执行他们的意志。这些鲨鱼是绝佳的绑匪，因为它们能衔着颚中的受害者短距离传送。军需官达里乌斯·莫洛尔到底遭遇了什么，我们永远不会知道了。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wereshark",
+			"name": "鲨人",
+			"source": "Arcadia27",
+			"entries": [
+				"是哒，他们是真的。虽然罕见，但鲨人的诅咒确实存在于偏远的海滨聚落。这些鲨腥乡民最贪食生肉，但大多数并无伤害他人的心思。可惜的是，鲨人中的败类会以嗜食生肉为借口，行凶残暴虐之实。这些骇人听闻的故事，再加上半鲨半人的可怖尊容，让许多人先动手后问话。这可是个坏主意\u2014\u2014那场架，鲨人很少输。",
+				"有些传说称，鲨人其实不在月圆之夜变身，而是在每月潮水最高之时。我可从没敢停留到能记录清楚的那天。",
+				{
+					"ENG_name": "Gift Rarely Given",
+					"type": "entries",
+					"name": "难得馈赠",
+					"entries": [
+						"大多数鲨人并不把兽化症视为诅咒，反而当作天赋。当这些鲨人传递祝福时，双方鲨人会立誓彼此守护\u2014\u2014这誓约堪比婚约。鲨人几乎从不把天赋传给匆匆过境的冒险者或水手，因为那誓约要么要求兽化人背井离乡，要么要求旅人落地生根。这就是为什么在下至今没长出鳍和尾。我还有条巨齿鲨要猎。",
+						"如今还有些卑鄙狗崽认为，鲨人兽化症是所有类人生物都该收到的礼物。这些肮脏货色哄骗鲨人向他们降下诅咒。一旦得手，这些恶棍便四处大开鲨戒，制造出更多鲨人，还要对方为这份强塞的\"礼物\"感恩戴德、俯首听命。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Zombie Worms",
+			"name": "丧尸蠕虫",
+			"source": "Arcadia27",
+			"entries": [
+				"丧尸蠕虫是一寸来长、蠕蠕而动的亡灵血肉管，渴求并吞食生者与死者的骸骨。它们最常见于大洋之底\u2014\u2014巨大生物死去并留下骸骨之处\u2014\u2014袭击一切有骨骼的东西。它们常藏身于大型生物被掏空的骨架之中，静候潜在猎物靠近时蜂拥而出。"
+			]
+		}
+	],
+	"table": [
+		{
+			"ENG_name": "Perils of the Deeps; Random Shipwreck Encounters",
+			"name": "深海危局；随机船骸遭遇",
+			"source": "Arcadia27",
+			"page": 18,
+			"caption": "随机船骸遭遇",
+			"colLabels": [
+				"{@dice d12}",
+				"遭遇"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-9 text-left"
+			],
+			"rows": [
+				[
+					"1",
+					"一个{@creature 海鬼婆|走开|海鬼婆们}集会与其宠物{@creature 跃迁鲨|Arcadia27}盘踞在这艘朽烂的大帆船中，船身如今缀满了溺亡水手的骸骨。"
+				],
+				[
+					"2",
+					"这艘商船载有药水或魔法物品，如今成了{@creature 奥术䲟鱼|Arcadia27|奥术䲟鱼}的巢穴，它们正在慢慢汲干货舱中物品的魔力。"
+				],
+				[
+					"3",
+					"这艘水下船只建在一只活龙龟的背甲上，如今已成为一具被{@creature 丧尸蠕虫群|Arcadia27|丧尸蠕虫群}侵占的龙龟骷髅。若角色为12级或更高，这只{@creature 龙龟骷髅|Arcadia27|龙龟}是不死生物，免疫毒素伤害、力竭和中毒状态，且其\"蒸汽吐息\"攻击造成暗蚀伤害而非火焰伤害。"
+				],
+				[
+					"4",
+					"一条年幼的{@creature 猎犬鲨|Arcadia27}栖身于这艘卡拉维尔帆船的残骸中。对任何喂它肉食并通过DC 12感知（{@skill 驯兽}）检定的生物，这条鲨鱼都抱有善意；若所喂的肉是鲜鱼，该检定具有优势。"
+				],
+				[
+					"5",
+					"这艘古老的护卫舰看上去毫无生机，但一条{@creature 阿拉诺斯|Arcadia27}正潜伏在附近，饥渴地渴望新的记忆。"
+				],
+				[
+					"6",
+					"这艘{@item 彩虹鳞船|Arcadia27}在水面上下起伏，被封在一块永不融化的冰中。在1分钟内对其造成200点火焰伤害可将冰融化，或者以3环施展一次{@spell 造水术/枯水术}的枯水术选项，或以1环施展该法术三次，亦可化冰。"
+				],
+				[
+					"7",
+					"这艘单桅帆船的每一寸都覆着一层闪烁的白霜。船内搁浅的{@creature 白霜元素|Arcadia27|白霜元素}（使用{@creature 冰魔蝠}数据块，但拥有30尺游泳速度且能水下呼吸）使其周围30尺内的水异常清澈、寒气彻骨。在此水域或船内开始回合的生物，或于回合内首次进入任一区域的生物，受到3（{@damage 1d6}）寒冷伤害。"
+				],
+				[
+					"8",
+					"这艘曾经美丽的纵帆船，船壳与栏杆上雕饰着鱼鳍纹样，船首仍铭刻着{@i 宴鳍号}之名，却已被某种庞然巨力撕成两截锯齿状的残骸。船长室里有浸水的卷轴，一只密封箱中装有三卷{@spell 水下呼吸}的{@item 法术卷轴||法术卷轴}，以及六瓶上等朗姆酒。"
+				],
+				[
+					"9",
+					"这艘缠满藤壶的三列桨战船上，成群游荡着同样缠满藤壶的骷髅。船上的{@creature 沉船骷髅|Arcadia27|昔日船员}各自使用{@creature 骷髅}数据块，但拥有30尺游泳速度以及以下动作选项：{@b {@i 藤壶缠附的船桨。}}{@atk mw} 命中{@hit 2}，触及10尺，单一目标。{@h}5（{@damage 1d10}）钝击伤害和3（{@damage 1d6}）穿刺伤害。"
+				],
+				[
+					"10",
+					"一只{@creature 巨型蜘蛛蟹|Arcadia27}和一只{@creature 巨海马}在这艘沉没的长艇上方缠斗不休。"
+				],
+				[
+					"11",
+					"这艘{@item 鲨艇|Arcadia27}完好如新，却被一具巨大的{@creature 巨齿鲨|Arcadia27}尸骸压住。"
+				],
+				[
+					"12",
+					"这艘怪船周围的水污浊浑暗，其前半截以陡峭的角度埋在海底。它原是一艘位面飞船，在穿越位面时发生故障坠海，它的存在孕育出了一只{@creature 诡异海葵|Arcadia27}，栖居于倾侧船身的阴影之中。"
+				]
+			]
+		}
+	],
+	"action": [
+		{
+			"ENG_name": "Cannon",
+			"name": "火炮",
+			"source": "Arcadia27",
+			"page": 35,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"{@recharge 5}",
+				"船只朝其150尺内的一点发射一枚炮弹。以该点为中心20尺半径球体内的每个生物必须进行敏捷豁免，失败者受到21（{@damage 6d6}）火焰伤害和13（{@damage 2d12}）钝击伤害，成功者伤害减半。该区域充满火焰，火焰会绕过转角蔓延，并点燃区域内未被穿着或携带的易燃物体。"
+			]
+		},
+		{
+			"ENG_name": "Stunt",
+			"name": "绝技",
+			"source": "Arcadia27",
+			"page": 37,
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"entries": [
+				"你可以进行一次DC 10的力量（{@skill 运动}）或敏捷（{@skill 特技}）检定，尝试借助你5尺内的一个生物、物体或结构，将自己弹射到30尺内一个你能看见的无人占据的空间。检定成功，你落入该空间。检定失败，你留在原地并耗尽剩余移动速度。若你能以附赠动作采取疾走动作，则此检定具有优势。当你处于{@condition 受擒}、{@condition 束缚}状态或速度为0时，无法表演绝技。"
+			]
+		}
+	],
+	"citation": [
+		{
+			"ENG_name": "Alternate Stats",
+			"name": "替代数据",
+			"source": "Arcadia27",
+			"entries": [
+				"本文提及的部分核心规则生物（包括{@creature 夜鬼婆|走开|夜鬼婆们}、{@creature 鸟妖|走开|鸟妖们}、{@creature 底栖魔鱼||底栖魔鱼们}和{@creature 吸血鬼|走开|吸血鬼们}）在即将出版的{@book 凡人，快逃！MCDM怪物书|走开}中拥有全新数据块。这些数据块现已通过预览包向已众筹或预订该书的读者开放。"
+			]
+		},
+		{
+			"ENG_name": "Aquatic Mounts",
+			"name": "水生坐骑",
+			"source": "Arcadia27",
+			"entries": [
+				"任何解剖结构合适的水生生物都可以充当坐骑。《阿卡迪亚》第4期的\"{@book 游过沙海|Ar4|0}\"还依照《阿卡迪亚》骑乘战斗规则提供了数种水生坐骑，以及帮助坐骑在其他环境中冒险的魔法物品。"
+			]
+		},
+		{
+			"ENG_name": "Careen",
+			"name": "泻修船底",
+			"source": "Arcadia27",
+			"entries": [
+				"泻修船底（careen）：将船拖上岸，以便检修船底。"
+			]
+		},
+		{
+			"ENG_name": "Coalders",
+			"name": "科尔德人",
+			"source": "Arcadia27",
+			"entries": [
+				"{@race 科尔德人|Arcadia14|科尔德人}是身材高大、岩石般的类人生物，皮肤纹理如大理石，头发油腻，以粗壮的指关节拄地行走。扮演卡尔科洛所需的一切资料尽在本期，你还可以在《阿卡迪亚》第14期的\"{@book 大的与小的|Arcadia14|1}\"中进一步了解科尔德人。"
+			]
+		},
+		{
+			"ENG_name": "Companion Creatures",
+			"name": "行侣生物",
+			"source": "Arcadia27",
+			"page": 39,
+			"entries": [
+				"同伴是与角色一同冒险的野生盟友。每个同伴都拥有独特的特性和动作，使它们成为出色的战友。每个同伴都有一名指挥它的玩家角色{@b 照料者}。游戏中的大部分时间由照料者的玩家操控同伴，但当同伴与照料者分离，或照料者以某种方式虐待同伴时，GM可以介入接管。",
+				"行侣生物的完整规则载于{@book 怪兽伙伴|BST|1}，以及向{@book 凡人，快逃！|走开|0|行侣生物}众筹者开放的资料包中"
+			]
+		},
+		{
+			"ENG_name": "Gibbet",
+			"name": "绞刑笼",
+			"source": "Arcadia27",
+			"entries": [
+				"绞刑笼（gibbet）：此处指吊挂在高处、用于示众罪犯的铁笼。"
+			]
+		},
+		{
+			"ENG_name": "Go on the Account",
+			"name": "入伙当海盗",
+			"source": "Arcadia27",
+			"entries": [
+				"一种\"专业\"的说法，意为\"成为一名海盗\"。"
+			]
+		},
+		{
+			"ENG_name": "Keelhaul",
+			"name": "拖船刑",
+			"source": "Arcadia27",
+			"entries": [
+				"拖船刑（keelhaul）：将人从船底水下拖行而过，通常作为一种极其痛苦（且往往致命）的惩罚。"
+			]
+		},
+		{
+			"ENG_name": "Lander",
+			"name": "岸上接货人",
+			"source": "Arcadia27",
+			"entries": [
+				"岸上接货人（lander）：在岸上接应走私货物的一名联络人。"
+			]
+		},
+		{
+			"ENG_name": "Mundane and Supernatural",
+			"name": "寻常且超自然",
+			"source": "Arcadia27",
+			"page": 39,
+			"entries": [
+				"{@b 寻常}一词指并非魔法、异能或其他超自然来源的攻击、物品和效应。",
+				"另一方面，{@b 超自然}一词描述属于魔法或异能的效应或物品。例如，一个生物的数据块可能写着它\"对来自非超自然攻击的钝击、穿刺和挥砍伤害具有抗性\"。这意味着当你以法术、威能、魔法武器或异能武器对其造成钝击、穿刺或挥砍伤害时，该伤害属于超自然伤害，因此该生物对其没有抗性。"
+			]
+		},
+		{
+			"ENG_name": "Saltpeter",
+			"name": "硝石",
+			"source": "Arcadia27",
+			"entries": [
+				"硝石（saltpeter）：一种可转化为爆炸物的矿物。"
+			]
+		},
+		{
+			"ENG_name": "Ship Categories",
+			"name": "船舰类别",
+			"source": "Arcadia27",
+			"page": 35,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "船舰类别",
+					"colLabels": [
+						"类别",
+						"典型船员规模",
+						"AC",
+						"最大受创数",
+						"力量豁免",
+						"敏捷豁免",
+						"速度",
+						"特殊动作"
+					],
+					"colStyles": [
+						"col-3 text-left",
+						"col-2 text-left",
+						"col-1 text-left",
+						"col-1 text-left",
+						"col-1 text-left",
+						"col-1 text-left",
+						"col-1 text-left",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"{@u 小艇}（划艇、小帆船）",
+							"1\u20133",
+							"12",
+							"6",
+							"+0",
+							"+4",
+							"15尺",
+							"{@action 疾走}、{@action 回避}"
+						],
+						[
+							"{@u 中艇}（单桅帆船、纵帆船）",
+							"10\u201320",
+							"14",
+							"12",
+							"+2",
+							"+4",
+							"40尺",
+							"{@action 火炮|Arcadia27}（DC 10）"
+						],
+						[
+							"{@u 大船}（三桅帆船、大帆船）",
+							"30\u2013100",
+							"16",
+							"18",
+							"+4",
+							"+2",
+							"60尺",
+							"{@action 火炮|Arcadia27}（DC 14）"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ships",
+			"name": "船舰",
+			"source": "Arcadia27",
+			"page": 35,
+			"entries": [
+				"船战可简可繁，悉听尊便。这套船只规则节奏轻快，让戏份始终落在冒险者身上：",
+				{
+					"type": "list",
+					"items": [
+						"船只在先攻20行动，并掷一枚d20决定彼此间的顺序。先攻相同时，船只先于角色和巢穴动作行动。",
+						"在船的回合，有舵手（或有人掌舵）的船只可以移动并使用一个特殊动作，详见\"船舰类别\"表。",
+						"中艇与大船可使用{@action 火炮|Arcadia27}特殊动作。豁免DC列于\"船舰类别\"表中该动作旁。小艇在其回合可以采取疾走或回避动作，但二者不可兼得。",
+						"每当船只受到攻城武器（包括他舰火炮）或非心灵、非毒素伤害法术的任何伤害时，便承受一次受创。船只在沉没前能承受的受创次数上限列于\"船舰类别\"表中。",
+						"一个生物可以用其动作帮助修缮船只受创之处，使受创数临时减少1，持续1小时。在长休期间修缮船只的生物则使受创数减少2（最低为0）。",
+						"当船只在单次受创中受到20点或更多伤害时，它朝GM选择的方向倾斜45度。直到该船只的下个回合开始前，其表面视为困难地形。"
+					]
+				},
+				{
+					"ENG_name": "Rainbow Scale Boat",
+					"type": "entries",
+					"name": "彩虹鳞船",
+					"page": 35,
+					"entries": [
+						"这些美丽的、泛着珍珠光泽的{@u {@cite 船舰类别|Arcadia27|中艇}}速度为60尺，并免疫雷鸣和闪电伤害。它们的{@action 火炮|Arcadia27|火炮}造成44（{@damage 8d10}）力场伤害，以取代火焰和钝击伤害。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "船舰类别",
+					"page": 35,
+					"colLabels": [
+						"类别",
+						"典型船员规模",
+						"AC",
+						"最大受创数",
+						"力量豁免",
+						"敏捷豁免",
+						"速度",
+						"特殊动作"
+					],
+					"colStyles": [
+						"col-3 text-left",
+						"col-2 text-left",
+						"col-1 text-left",
+						"col-1 text-left",
+						"col-1 text-left",
+						"col-1 text-left",
+						"col-1 text-left",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"{@u 小艇}（划艇、小帆船）",
+							"1\u20133",
+							"12",
+							"6",
+							"+0",
+							"+4",
+							"15尺",
+							"{@action 疾走}、{@action 回避}"
+						],
+						[
+							"{@u 中艇}（单桅帆船、纵帆船）",
+							"10\u201320",
+							"14",
+							"12",
+							"+2",
+							"+4",
+							"40尺",
+							"{@action 火炮|Arcadia27}（DC 10）"
+						],
+						[
+							"{@u 大船}（三桅帆船、大帆船）",
+							"30\u2013100",
+							"16",
+							"18",
+							"+4",
+							"+2",
+							"60尺",
+							"{@action 火炮|Arcadia27}（DC 14）"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Villain Actions",
+			"name": "反派动作",
+			"source": "Arcadia27",
+			"entries": [
+				"有些生物被设计为首领：能够独自或率领几名喽啰对抗整支队伍的敌人。这些生物拥有三个{@b 反派动作}，可在敌方生物的回合后使用。反派动作与传奇动作类似，但有以下区别：",
+				{
+					"type": "list",
+					"items": [
+						"一个生物每轮只能使用一个反派动作（因此反派动作往往比传奇动作更强大）。",
+						"每个反派动作在一场战斗遭遇中只能使用一次。"
+					]
+				},
+				"与传奇动作一样，生物若处于{@condition 失能}状态或因故无法行动，便不能使用反派动作。",
+				{
+					"ENG_name": "Choosing Villain Actions",
+					"type": "entries",
+					"name": "选择反派动作",
+					"entries": [
+						"每组三连反派动作都有建议的轮次顺序。这些能力赋予战斗以合乎逻辑的推进和电影般的叙事弧线：",
+						{
+							"type": "list",
+							"items": [
+								"第一个反派动作是开场招，它让角色们明白自己面对的不是寻常生物。开场招通常会造成一些伤害、召唤一两个喽啰、强化首领、削弱角色，或将生物移至有利位置。这只是随后好戏的一碟开胃小菜。",
+								"第二个反派动作提供人群控制。它通常在英雄们有一两次应对机会、各就各位并包围反派之后发动。这第二击帮助反派夺回上风。与开场招一样，此招形式多样，但比开场招更为强力。",
+								"第三个也是最后一个反派动作是终极技，即\"大招\"\u2014\u2014反派可以在战斗结束前用它给角色们造成毁灭性打击的压轴绝招。"
+							]
+						},
+						"尽管每个生物都有建议的动作顺序，但只要能让战斗更具戏剧性，你可以以任意顺序使用反派动作。如果某个生物被震慑、或可能撑过三轮以上，你可以推迟某个反派动作；若开局便接连爆出几次意外重击，你也可以在第二轮就打出建议的第三招！"
+					]
+				}
+			]
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "Arcadia Issue 27",
+			"name": "阿卡迪亚 第27期",
+			"id": "Arcadia27",
+			"source": "Arcadia27",
+			"group": "homebrew",
+			"published": "2023-04-26",
+			"author": "MCDM Productions",
+			"contents": [
+				{
+					"ENG_name": "Letter from the Editor",
+					"name": "主编来信"
+				},
+				{
+					"ENG_name": "Captain Ralazar's Guide to Sea Monsters",
+					"name": "拉拉扎尔船长的海怪指南",
+					"headers": [
+						"深海之颚",
+						"沉没宝藏"
+					]
+				},
+				{
+					"ENG_name": "Perils of the Deeps",
+					"name": "深海危局",
+					"headers": [
+						"环境状况",
+						"危害",
+						"深海生物"
+					]
+				},
+				{
+					"ENG_name": "The Ballad of Captain Shivershank",
+					"name": "希弗尚克船长之歌谣",
+					"headers": [
+						"背景",
+						"开始冒险",
+						"谱写歌谣",
+						"新规则",
+						"新魔法物品",
+						"前路汪洋"
+					]
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "Arcadia27",
+			"source": "Arcadia27",
+			"data": [
+				{
+					"ENG_name": "Letter from the Editor",
+					"type": "section",
+					"name": "主编来信",
+					"page": 1,
+					"entries": [
+						"很久很久以前（也就是2022年1月，但感觉要久远得多），我和詹姆斯·因特罗卡索聊起我们各自的旧业\u2014\u2014我曾是一名软件开发者，他则为《国家地理》撰写剧本，作品之一是{@link 一些关于鲨鱼的歌|https://vimeo.com/102545202}。我开玩笑说，应该请他为{@i 《阿卡迪亚》}写一篇以鲨鱼为主题的文章......他答道：\"我的毕生杰作。{@i 《鲨卡迪亚》}。\"",
+						"就这样，{@i 《鲨卡迪亚》}诞生了\u2014\u2014一个我们并不怎么掩饰、一心想弄假成真的玩笑。MCDM团队全票赞成，作者们贡献了许多惊人的点子，詹姆斯则被彻底放开手脚，写起了凶猛的鲨鱼、友善的鲨鱼、狂饮魔法的鲨鱼、鲨人，还有更多。鲨鱼大满贯！",
+						"身为TTRPG设计师，有时候\"把梗玩到底\"意味着创作出适合轻松单次团或梗图角色的逗趣内容。但在{@i 《阿卡迪亚》}，我们承诺每月带来三篇出色且经过充分测试、能让你反复使用的文章，我们也想在{@i 《鲨卡迪亚》}中兑现这份承诺。轻松乐趣自然有，但对我们而言，把梗玩到底的另一半，是围绕游戏之外的宅学识倾尽全力做干货。这一次，我们深潜进了鲨鱼传说、海盗史与深海动植物的世界\u2014\u2014全都加上了我们自己的奇幻转折！现实世界广袤又奇异，美妙地、源源不断地给予灵感。",
+						"以主题专刊的形式做水生内容也正合适。通常{@i 《阿卡迪亚》}每期奉上三篇完全独立的文章，让每场战役都能各取所需，但除非队伍有充分的出海理由、你的冒险转向海洋航线，否则往游戏里加鲨鱼并不容易。{@i 一}篇水生文章，可比不上{@i 三}篇水生文章好用\u2014\u2014后者给你一整套怪物、同伴、魔法物品、环境、任务、简便船战规则、随机遭遇等等，让你把航海冒险纳入游戏所需的一切一应俱全。",
+						"詹姆斯·因特罗卡索亲笔的《拉拉扎尔船长的海怪指南》，是一场由传奇水手记录的生物与魔法物品的盛宴\u2014\u2014从吞吸记忆的阿拉诺斯，到尾刃能斩开现实的跃迁鲨。格温多琳·马歇尔带来的《深海危局》呈现了各种环境状况与挑战，让深海冒险名副其实地险象环生，另有五只潜伏深渊的新怪物，包括鮟鱇鲨与恐水母。最后但同样重要的是，威利·阿比尔为我们献上《希弗尚克船长之歌谣》\u2014\u2014一座由任务引子、叙事种子和一位令人难忘的盟友（或反派）组成的史诗宝库。有了这套海盗工具箱，你能打造出独一无二的劈波斩浪战役、故事线或单次团。",
+						"{@i 《鲨卡迪亚》}是一项倾注热爱的工程：把梗玩到底还更上层楼，彼此成就、共同攀上鲨鱼灵感的新高峰。我们已经迫不及待想听到你在怒海之上、深渊之下的冒险故事了。",
+						"{@i de somnio ad itinere},",
+						"汉娜·罗斯",
+						"主编"
+					]
+				},
+				{
+					"ENG_name": "Captain Ralazar's Guide to Sea Monsters",
+					"type": "section",
+					"name": "拉拉扎尔船长的海怪指南",
+					"page": 2,
+					"entries": [
+						"{@note 蔚蓝汪洋中的恐怖与奇观，作者：詹姆斯·因特罗卡索}",
+						"我，塔隆·拉拉扎尔船长，在{@i 宴鳍二号}上写下这份文献。对碎船者的追猎已进入第三个年头\u2014\u2014就是那头疤痕累累、吞没了第一艘{@i 宴鳍号}及其大半船员的巨齿鲨。这场复仇之旅殊为不易。我与船员们直面过连坏血病疯魔的水手都梦不到的恐怖，也起获过超乎你想象边际的宝藏。如此奇观需要记录在案，因为碎船者还饿着，而我不知道我们能否活着回港讲述这段故事。",
+						"趁船员们往水里抛饵、等候迟迟未现身的老碎牙之际，我定下心来编目这些光怪陆离的怪物与奇珍异宝。若你正在读这段文字，愿它是因为我们的胜利使这份手记得以刊行，而不是因为碎船者再度胜我一筹，害你这双倒霉的手从深渊之底捞起了这卷书......或者，从那头鲨鱼该死的肚肠里！",
+						{
+							"ENG_name": "Jaws from Below",
+							"type": "entries",
+							"name": "深海之颚",
+							"page": 2,
+							"entries": [
+								"对那头庞然巨物的追猎，让我们见识了形形色色的怪物\u2014\u2014有的可怖，有的友善，但无一不值得礼敬三分。",
+								{
+									"type": "table",
+									"caption": "拉拉扎尔的鲨鱼（按挑战等级）",
+									"page": 2,
+									"colLabels": [
+										"挑战等级",
+										"生物"
+									],
+									"colStyles": [
+										"col-4 text-left",
+										"col-6 text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"{@creature 猎犬鲨|Arcadia27}"
+										],
+										[
+											"3",
+											"{@creature 鲨人|Arcadia27}"
+										],
+										[
+											"4",
+											"{@creature 奥术䲟鱼|Arcadia27}"
+										],
+										[
+											"5",
+											"{@creature 大漩涡双髻鲨|Arcadia27}"
+										],
+										[
+											"6",
+											"{@creature 跃迁鲨|Arcadia27}"
+										],
+										[
+											"8",
+											"{@creature 破冰鲨|Arcadia27}"
+										],
+										[
+											"14",
+											"{@creature 巨齿鲨|Arcadia27}"
+										],
+										[
+											"16",
+											"{@creature 阿拉诺斯|Arcadia27}"
+										]
+									]
+								},
+								{
+									"ENG_name": "Hound Shark Companion",
+									"type": "inset",
+									"page": 7,
+									"name": "猎犬鲨同伴",
+									"entries": [
+										"{@creature 猎犬鲨同伴|Arcadia27}数据块采用{@book 怪兽伙伴|BST}中的{@cite 行侣生物|Arcadia27|规则}。当携带猎犬鲨同伴的{@class beastheart|BST}使用一项提及同伴步行速度的招式（exploit）时\u2014\u2014例如{@optfeature 拖走他们（4狂怒）|BST|拖走他们}\u2014\u2014改用猎犬鲨的游泳速度。",
+										"猎犬鲨同伴非常适合水下战役，而大方的GM也可以把{@book 游过沙海：更多骑乘冒险|Ar4|0}（《阿卡迪亚》第4期，威利·阿比尔著）中的部分魔法物品交给携带鲨鱼同伴的角色，让它们的鲨鱼朋友也能随行陆地。"
+									]
+								},
+								{
+									"ENG_name": "Mystic Connection: Hound Shark",
+									"type": "inset",
+									"page": 7,
+									"name": "神秘联结：猎犬鲨",
+									"entries": [
+										"若你扮演{@class beastheart|BST}并拥有一只{@creature 猎犬鲨同伴|Arcadia27}，则当你于9级获得兽心者的{@classFeature Mystic Connection|Beastheart|BST|9|BST}特性时，获得以下收益：",
+										"{@optfeature 神秘联结：猎犬鲨|Arcadia27}"
+									]
+								},
+								{
+									"ENG_name": "Wereshark Template",
+									"type": "inset",
+									"page": 13,
+									"name": "鲨人模板",
+									"entries": [
+										"变为鲨人的类人生物，其数据发生以下变化：",
+										{
+											"type": "list",
+											"items": [
+												"其力量变为16（+3），除非原本已更高。",
+												"其免疫来自非魔法且非银质攻击的钝击、穿刺和挥砍伤害。",
+												"其拥有60尺范围的{@sense 盲视}。",
+												"其获得{@creature 鲨人|Arcadia27|鲨人的}速度、\"血腥狂怒\"特性和\"变形\"附赠动作。",
+												"其在混合或鲨鱼形态下因天生护甲而AC获得+1加值。",
+												"其获得{@creature 鲨人|Arcadia27|鲨人的}啃咬攻击，该攻击使用力量进行攻击和伤害掷骰。豁免DC等于8+鲨人的熟练加值+鲨人的体质调整值。生物可以选择在此豁免中失败。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Sunken Treasures",
+							"type": "entries",
+							"name": "沉没宝藏",
+							"page": 13,
+							"entries": [
+								"在深渊探险期间，我的船员发现了四件灌注着鲨鱼精粹的魔法物品。虽说我并不赞成把鲨鱼牙当穿搭首选，可一旦这些牙里灌了魔法，你至少得试戴一下。当然，等老碎牙见到{@i 宴鳍二号}比她老妈还更\"鲨\"气冲天时，有他好受的。",
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										"{@item 鲨牙护符|Arcadia27}",
+										"{@item 血腥狂怒腰带|Arcadia27}",
+										"{@item 鲨艇|Arcadia27}",
+										"{@item 割锋|Arcadia27}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Perils of the Deeps",
+					"type": "section",
+					"name": "深海危局",
+					"page": 15,
+					"entries": [
+						"{@note 波涛之下的环境危害与怪物，作者：格温多琳·马歇尔}",
+						"{@b 内容警示：本文包含溺水、黑暗与深海压强等主题，以及一种会钻入血肉与骨骼的蠕虫。我们建议使用{@link MCDM安全工具包与检查清单|https://mcdm.gg/SafetyToolkit}，并按需调整，以确保每个人都能尽兴。}",
+						{
+							"type": "quote",
+							"entries": [
+								"海洋最深之处对我们而言全然未知。探测锤无法企及。那些遥远的深渊里究竟发生着什么？有怎样的生物栖息于、或可能栖息于水面下十二或十五英里的区域？这些动物的身体构造又是如何？这几乎无从揣想。"
+							],
+							"by": "儒勒·凡尔纳",
+							"from": "《海底两万里》{@i （弗雷德里克·保罗·沃尔特 译）}"
+						},
+						"水生冒险伴随着独特的危险：既有异界怪兽，也有独有的环境危害。潜入波涛之下的勇者，可能要苦苦抵御湍急的水流、足以压碎躯体的压强与幽暗的深渊，还要面对与地表生物迥然不同的异类。",
+						"本文为运行海底冒险的GM提供工具，包括地形效应\u2014\u2014例如在海藻林中被缠身、在浑浊水域中迷失方向而分不清哪边是上\u2014\u2014以及穿越水流、离岸流与下层逆流的挑战，它们随时可能把生物卷入外海。",
+						"此外，怪异而致命的水下敌人正威胁着胆敢深潜的勇者：恐水母、巨型蜘蛛蟹、鮟鱇鲨、诡异海葵，以及丧尸蠕虫群。",
+						{
+							"ENG_name": "Environmental Conditions",
+							"type": "section",
+							"name": "环境状况",
+							"page": 15,
+							"entries": [
+								"正如深入地底一般，潜入波涛之下也会带来一整套特殊的环境挑战。光线难以抵达深处水域，在浑浊或半咸水环境中尤甚；而冒险者四周的水压，足以轻易将他们压毙。即便没有潜伏其下的可怖生物，深海本身也是一处致命之地。",
+								"本文规则旨在帮助身为GM的你，将这些挑战纳入你自己的任何水下游戏中，并专门为本期末尾的生物以及本期{@i 《鲨卡迪亚》}特刊的其他文章量身设计。核心规则与其他官方补包含有其中部分规则的替代版本，但我们仍想提供MCDM自己的诠释\u2014\u2014既为贴合本期的怪兽，也因为许多读者未必购齐每一本官方书。",
+								"你不必将这些可选规则一并启用。尤其对低等级队伍而言，一两种环境挑战就足以营造紧张感，又不至于让水下冒险沦为苦役。此外，尽管放心给角色提供克服或缓解这些挑战的工具。{@spell 光亮术}这类戏法和其他魔法能在水下提供有效的光源，但深海的黑暗依旧危机四伏\u2014\u2014正因如此，角色才懂得让魔法之光不离左右，并当心那庇护光辉之外潜藏的东西。",
+								{
+									"ENG_name": "Light",
+									"type": "entries",
+									"name": "光照",
+									"page": 16,
+									"entries": [
+										"虽然近海面的水域与水面之上一样昼夜更替，深渊却被黑暗永久笼罩。阳光可穿透海面至约650尺深处，白昼时可以正常视物。再往下，日光便逐渐黯淡。海面下650至1,000尺的区域只有昏暗光照抵达。1,000尺以下，一切沉入黑暗。",
+										{
+											"ENG_name": "Visibility",
+											"type": "entries",
+											"name": "能见度",
+											"page": 16,
+											"entries": [
+												"所有天然水域都含有泥沙、淤泥及其他物质的细小微粒。距离一远，即便在明亮光照下也会妨碍视觉。在清澈的水中，拥有{@sense 黑暗视觉}的生物或处于明亮光照下的生物可以看到120尺远。在湍流或半咸水中，最大能见度降至30尺。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Pressure",
+									"type": "entries",
+									"name": "压强",
+									"page": 16,
+									"entries": [
+										"水的物理压强足以压碎那些潜得太深的地表世界生物。如核心规则所述，没有游泳速度的生物每游泳1小时，便获得一级力竭，除非其通过DC 10体质豁免。在深水中游泳更为艰辛：没有游泳速度的生物在深于100尺处须每半小时进行一次对抗力竭的豁免，深于200尺处则须每15分钟一次。",
+										"未能天然适应深海压强的生物，在深达650尺或更深的水域停留15分钟后受到钝击伤害，此后每15分钟一次，如\"按深度的环境效应\"表所示。",
+										{
+											"type": "table",
+											"caption": "按深度的环境效应",
+											"page": 16,
+											"colLabels": [
+												"深度",
+												"光照",
+												"压强伤害"
+											],
+											"colStyles": [
+												"col-3 text-left",
+												"col-3 text-left",
+												"col-3 text-left"
+											],
+											"rows": [
+												[
+													"0\u2013650尺",
+													"明亮光照（白天）",
+													"\u2014"
+												],
+												[
+													"650\u20131,000尺",
+													"昏暗光照（白天）",
+													"10（{@damage 3d6}）"
+												],
+												[
+													"1,000尺以上",
+													"黑暗",
+													"17（{@damage 5d6}）"
+												]
+											]
+										},
+										{
+											"ENG_name": "Overcoming Pressure",
+											"type": "entries",
+											"name": "克服压强",
+											"page": 16,
+											"entries": [
+												"能够减免或免疫钝击伤害的角色，可以克服深海压强的效应。默认情况下，赋予生物游泳速度或水下呼吸能力的魔法物品和法术，并不能自动保护生物免受此压强。但会施展{@spell 水下呼吸}的角色，可以在短休或长休期间花时间试验该法术。只要通过DC 15施法属性检定，该角色便学会如何以4环或更高的法术位施展{@spell 水下呼吸}，在赋予水下呼吸能力之余，同时让生物适应深海压强。",
+												{
+													"ENG_name": "Other Effects of Pressure",
+													"type": "inset",
+													"page": 17,
+													"name": "压强的其他效应",
+													"entries": [
+														"我们选择不在本文中加入氮醉与减压病等现实顾虑的规则。英雄奇幻RPG的角色，大可不必为了科学精确性而承受气压伤。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Hazards",
+							"type": "section",
+							"name": "危害",
+							"page": 17,
+							"entries": [
+								"水生环境自有一套危险与挑战，寻常与魔法兼备。作为GM，你可以在冒险中运用这些危害来制造张力，让遭遇显得有趣而独特。也别忘了，在英雄奇幻游戏中，角色完全可能反将危害化为己用。",
+								{
+									"ENG_name": "Current",
+									"type": "entries",
+									"name": "水流",
+									"page": 17,
+									"entries": [
+										"海洋、河流、乃至湖泊都有水流，以不同速度推动大量的水\u2014\u2014以及水中的一切。在流水中游泳可能带来特殊的挑战。当一片水域存在水流时，由你这个GM来决定它是弱流还是强流，以及流向何方。河流的水流将生物带往下游，可弱可强。潮汐在退潮时将生物推离岸边，涨潮时又推向岸边，通常为弱流。离岸流是个例外，它会形成一股把生物拽离海岸的强流。下层逆流则把生物往水下拖拽，同样可弱可强。",
+										"当游泳中的生物在某回合于水流中开始其回合，或于回合内首次进入水流时，它可以选择随流而行或尝试抵抗。想抵抗水流留在原地、或想逆流或横流的生物，弱流须通过DC 10力量（{@skill 运动}）检定，强流则为DC 15。拥有游泳速度的生物在此检定中具有优势。选择随流而行或抵抗检定失败的生物，弱流中被拖动10尺，强流中被拖动20尺，方向为水流流向。"
+									]
+								},
+								{
+									"ENG_name": "Disorientation",
+									"type": "entries",
+									"name": "方向迷失",
+									"page": 17,
+									"entries": [
+										"当水下的生物无法感知上方水面或下方水底的方向时，便有迷失方向、上下不分的危险。当处于{@condition 目盲}、{@condition 晕眩|走开}或{@condition 耳聋}状态的生物在水下开始其回合时，必须进行DC 10感知豁免。豁免失败则该生物陷入方向迷失，直到其下个回合开始，或{@condition 目盲}、{@condition 晕眩|走开}或{@condition 耳聋}状态结束，以先到者为准。方向迷失的生物移动时必须掷一枚d6，并对照\"方向迷失方向表\"决定其移动方向。",
+										{
+											"type": "table",
+											"caption": "方向迷失方向表",
+											"page": 17,
+											"colLabels": [
+												"{@dice d6}",
+												"方向"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-9 text-left"
+											],
+											"rows": [
+												[
+													"1",
+													"向更深处"
+												],
+												[
+													"2",
+													"北"
+												],
+												[
+													"3",
+													"南"
+												],
+												[
+													"4",
+													"东"
+												],
+												[
+													"5",
+													"西"
+												],
+												[
+													"6",
+													"向上朝海面"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Kelp Forest",
+									"type": "entries",
+									"name": "海藻林",
+									"page": 17,
+									"entries": [
+										"许多水域中都生长着由巨藻、海草及其他植物构成的水下\"森林\"，对穿行其中的生物构成特殊挑战。当海藻林布满一片水域时，该区域为困难地形，明亮光照或{@sense 黑暗视觉}下的最大能见度降至30尺。",
+										"在茂密的海藻林中，相距超过15尺的生物和物体获得半身掩护，穿行该区域的生物还可能被缠住。在这类生长稠密的区域，生物在其回合内首次移动时必须进行DC 10力量（{@skill 运动}）或敏捷（{@skill 特技}）检定。检定失败则被巨藻缠身、无法移动。被缠身的生物可以消耗15尺移动速度重复该属性检定，成功即自行脱身。",
+										"每个5尺立方的巨藻AC为9，生命值10，并免疫心灵伤害。摧毁巨藻可解救被困其中的生物。"
+									]
+								},
+								{
+									"ENG_name": "Devouring Kelp Forest",
+									"type": "entries",
+									"name": "吞噬海藻林",
+									"page": 18,
+									"entries": [
+										"被恶意魔法腐化的海藻林\u2014\u2014例如海鬼婆集会巢穴附近或亡灵出没之地\u2014\u2014可能变成肉食性，甚至拥有半截意识。这类海藻林不如普通海藻林长得稠密，因为缺少血肉可食的吞噬海藻很快就会把邻居吃掉。",
+										"一旦有鲜活猎物靠近，吞噬海藻便伸展枝蔓将其缠缚。在吞噬海藻林中于回合内首次移动的生物，必须通过DC 13敏捷豁免，否则陷入{@condition 受擒}状态（逃脱DC 13）。被吞噬海藻{@condition 受擒}的生物，在其被擒后的首个回合开始时受到5（{@damage 2d4}）暗蚀伤害。生物每被擒一轮，海藻便缠得愈紧：逃脱DC提高1，并在该生物每轮回合开始时额外造成{@damage 1d4}暗蚀伤害\u2014\u2014伤害依次升至7（{@damage 3d4}）、10（{@damage 4d4}），依此类推。",
+										"每个5尺立方的吞噬海藻AC为11，生命值10，并免疫暗蚀和心灵伤害。摧毁海藻可解救被其擒住的生物。"
+									]
+								},
+								{
+									"ENG_name": "Shipwreck",
+									"type": "entries",
+									"name": "船骸",
+									"page": 18,
+									"entries": [
+										"沉船的水下墓穴成了海洋生物的乐园；纵使船只与水手日渐腐朽，生灵却愈发繁盛。冒险者可能会为一笔沉没的宝藏、一件遗失的物品，或为揭开一场\"并不那么意外\"的海难之谜而探访船骸。",
+										"{@table 深海危局；随机船骸遭遇|Arcadia27|随机船骸遭遇}表详列了若干可用于海底冒险的潜在遭遇，也可作为你自创遭遇的灵感。若某次遭遇包含数量不定的生物，请依据队伍等级与期望的遭遇难度选择合适的数量。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Creatures of the Deeps",
+							"type": "section",
+							"name": "深海生物",
+							"page": 19,
+							"entries": [
+								"潜藏于大海幽暗深渊的生灵，繁多而怪奇。",
+								{
+									"type": "table",
+									"caption": "深海生物",
+									"page": 19,
+									"colLabels": [
+										"挑战等级",
+										"生物"
+									],
+									"colStyles": [
+										"col-4 text-center",
+										"col-6 text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"{@creature 巨型蜘蛛蟹|Arcadia27}"
+										],
+										[
+											"2",
+											"{@creature 丧尸蠕虫群|Arcadia27}"
+										],
+										[
+											"4",
+											"{@creature 恐水母|Arcadia27}"
+										],
+										[
+											"6",
+											"{@creature 鮟鱇鲨|Arcadia27}"
+										],
+										[
+											"8",
+											"{@creature 诡异海葵|Arcadia27}"
+										]
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Ballad of Captain Shivershank",
+					"type": "section",
+					"name": "希弗尚克船长之歌谣",
+					"page": 24,
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"♪ ♪ 她一举而下，",
+								"让我的船沉啦，",
+								"如今我扬她旌旗，",
+								"希-弗-尚-克船长！♪ ♪"
+							],
+							"from": "{@i 节选自}{@link 希弗尚克船长之歌谣|https://mcdm.gg/Sharkadia/Shivershank.mp3}"
+						},
+						"此处藏有战役宝藏！",
+						"本文是一座建造海盗战役的工具宝库，任务引子、遭遇点子、规则与团体赞助人一应俱全。你的玩家角色可以成为劈波斩浪的海盗，效忠于一位传奇色彩十足的海盗船长；你也可以只撷取激发灵感的部分，扬帆驶向其他的航海冒险。",
+						"若你使用本文的框架来运营战役，其设计约从3级开始，至12级或更高迎来高潮。不过，正如海盗战役应有之义，它刻意保持灵活，好让你自绘航图：角色可以从任意等级开始，你也可以把一段航海篇插入现有的故事线中（见下文\"战役中途入局\"边栏）。",
+						"但正事要紧\u2014\u2014一切都要从希弗尚克船长说起。",
+						{
+							"ENG_name": "Background",
+							"type": "section",
+							"name": "背景",
+							"page": 24,
+							"entries": [
+								"曾经人人知晓拉肖姆人（la-SHAUMF）\u2014\u2014一个吃苦耐劳的航海民族，牙齿几乎和皮肤一样锋利。他们的皮肤能切开现实，让他们得以在任意表面\"游动\"。然而在过去400年间，他们几乎从公众记忆中消失无踪。关于拉肖姆人及其社会的记载尚存寥寥，但连许多数百岁的老寿星都从未听过他们的名字。",
+								"希弗尚克是最后一位在世的拉肖姆人，也是当今最令人生畏的航海者之一。她的故事始于数百年前：她的第一艘船被一个残忍的水手所毁\u2014\u2014其名已湮没于时光\u2014\u2014那人给她两个选择：自行赴死，或入伙他的船员。不出一年，她便杀了那位船长，夺下了他的船。如今她把同样的选择给予所有手下败将，并笃信同样的命运绝不会降临己身。",
+								"身为海盗，希弗尚克一心要成为史上最伟大、最举足轻重的拉肖姆人。航海途中，她得知了{@i 许愿100}\u2014\u2014一台据说能让持用者最狂野的梦想成真的传奇许愿轮，而她的航海本领足以亲手夺取它。当它实现了她的愿望后，许愿轮消失了\u2014\u2014连同所有其他拉肖姆人一起。希弗尚克孑然一身，独自背负起所作所为的重量。",
+								"数百年过去，才有新的传言浮出水面：一台{@i 许愿99}藏于唯有最强船只才敢驰骋的海域。如今坐拥七艘船的希弗尚克继续扩充她的舰队与资源，为再度夺取那台魔法许愿轮蓄力。用不了多久，她就能把愿望重新措辞成她当初真正想说的话，找回她无意间毁掉的族民，奠定自己的不朽传奇。",
+								{
+									"ENG_name": "Setting the Campaign",
+									"type": "entries",
+									"name": "设定战役",
+									"page": 25,
+									"entries": [
+										"本文素材适用于任何拥有海洋、豪富贵族与航海社会的既有设定。诸处地点营造出一片亲切又有个性的活动地盘，而各个组织则提供人际网络，让玩家在设定中站稳脚跟。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Porta Ricchezze",
+													"type": "entries",
+													"name": "波尔塔·里凯泽",
+													"entries": [
+														"这座中型商埠聚居着许多爱吹昔日冒险牛皮的老水手。镇上满是特色小店、行会工匠，还有一座小牧场。"
+													]
+												},
+												{
+													"ENG_name": "Calcolo's",
+													"type": "entries",
+													"name": "卡尔科洛酒馆",
+													"entries": [
+														"这家乌烟瘴气的酒馆是三教九流的安身之处，也是镇上海盗谈买卖、找活计的最佳去处之一，店里的赏金公告板格外热闹。卡尔科洛\u2014\u2014一位满臂刺青、拖着油腻长马尾辫的粗豪科尔德人{@sup {@cite 科尔德人|Arcadia27|1}}\u2014\u2014确保没有卫兵敢来搅和酒馆的生意。"
+													]
+												},
+												{
+													"ENG_name": "The Oroboriosos",
+													"type": "entries",
+													"name": "奥罗博里奥索家族",
+													"entries": [
+														"奥罗博里奥索贵族家族掌控着波尔塔·里凯泽的大半贸易。他们拥有自己的船队与私掠船，把财富囤积在一座偏远岛屿的城堡中，而其终极目标是把每种珍稀或更高稀有度的魔法物品各收入一件，陈列进家族博物馆。他们与希弗尚克有些旧账\u2014\u2014或者更准确地说，是血仇。"
+													]
+												},
+												{
+													"ENG_name": "The Navigallant",
+													"type": "entries",
+													"name": "纳维加兰特",
+													"entries": [
+														"众人谈起纳维加兰特时总是压低嗓音。这是一个由水手与海盗组成的松散网络，成员互通宝藏与高薪差事的情报，以此换取彼此掩护、共抗劫掠者与怪物。希弗尚克并不属于纳维加兰特，但她手下少数身在此网络的船员捞到的情报，她也从不放过。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Ships, Sharks, Terrors, and Hazards",
+									"type": "entries",
+									"name": "船舰、鲨鱼、恐怖与危害",
+									"page": 25,
+									"entries": [
+										"本文余下部分会提及特定的{@u {@book 船只尺寸|Arcadia27|3|船舰}}以及被称为{@u {@book 海洋恐怖|Arcadia27|3|海洋恐怖}}的巨型版生物。这些是可在本文末尾（见\"{@book 新规则|Arcadia27|3|新规则}\"）查到的可选规则与附加内容，凡其出现之处均{@u 以下划线标出}。",
+										"此外，某些怪物、载具与水下危害出自本期《阿卡迪亚》的姊妹篇：詹姆斯·因特罗卡索的\"{@book 拉拉扎尔船长的海怪指南|Arcadia27|1}\"与格温多琳·马歇尔的\"{@book 深海危局|Arcadia27|2}\"。它们在文中出现时都会加粗（并附引注），所以请把那两篇文章放在手边！若某数据块未引注这两篇文章，则它出自核心规则。{@sup {@cite 替代数据|Arcadia27|2}}"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Starting an Adventure",
+							"type": "section",
+							"name": "开始冒险",
+							"page": 25,
+							"entries": [
+								"以下剧情引子为冒险者提供了以希弗尚克船员身份\"入伙当海盗\"{@sup {@cite 入伙当海盗|Arcadia27|3}}的机会：",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Fishing Boat",
+													"type": "entries",
+													"name": "渔船",
+													"entries": [
+														"冒险者们各自签下了一份报酬好得可疑的渔工（一天渔获10金币）。这本是安静的一天：在一艘{@u {@cite 船舰类别|Arcadia27|中艇}}上撒网、吹牛。突然，炮火袭来，{@creature 希弗尚克船长|Arcadia27}率{@creature 匪徒||匪徒们}围上了这艘船。原来渔船的船长是一名卷走她部分财宝的逃兵，而她打算让这船沉入海底。",
+														"希弗尚克看出了冒险者与那逃兵毫无干系，便给了他们入伙的机会\u2014\u2014一条远比打鱼来钱的财路。若冒险者拒绝，海盗们会把他们丢在最近的港口，并剥走他们身上价值超过10金币的装备（算作\"船费\"）。"
+													]
+												},
+												{
+													"ENG_name": "Gnome Alone",
+													"type": "entries",
+													"name": "侏儒独行",
+													"entries": [
+														"冒险者们身处一家挤得水泄不通的酒馆，满屋都是{@creature 暴徒||暴徒们}和{@creature 匪徒||匪徒们}，还有一个衣着整洁、只顾自斟自饮的侏儒（{@creature 克罗伦诺克军需官|Arcadia27}）。几名自称是致命海盗{@creature 约翰尼·琼斯|Arcadia27}船员的匪徒，因克罗伦诺克曾为希弗尚克效力而纠缠不休，推搡嘲弄，几近动手。除非冒险者出手相助，其他酒客都会看热闹不嫌事大地起哄。而无论冒险者是否插手，这场骚乱都会撞上邻桌，升级为全武行。与匪徒交战期间，每个生物在其回合结束时必须通过DC 8的力量或敏捷豁免（自选），否则会在混乱中被打得{@condition 倒地}。",
+														"若冒险者们扛住了这场暴乱，侏儒便会认可他们的身手，邀请他们加入他船长的船员队伍。他还会补上一句：冒险者现在多半已上了琼斯的黑名单，不过他能提供些装备让琼斯不敢近身......前提是预算允许。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Starting Mid-Campaign",
+									"type": "inset",
+									"page": 26,
+									"name": "战役中途入局",
+									"entries": [
+										"只要盐水够多、藏宝图够旧，任何冒险都能变成海盗冒险。如果你正在运营一场既有战役、又想使用本文素材，就让冒险者们结识克罗伦诺克军需官吧。他正在远征途中，要取回一张几个世纪前被陆地封锁的古老藏宝图，但他的船员都被老水手们应付不来的怪物杀光了。他愿意向船长进言，只要冒险者肯帮忙，就分他们一份宝藏。",
+										"又或者，附近任何一片水域都可能成为通往镜域（详见\"{@book 随机海上遭遇|Arcadia27|3|随机海上遭遇}\"）的短暂传送门。一个无助的平民跌入其中，或是传送门把冒险者们卷了进去，将他们抛到希弗尚克的船员正奋力抵御吸血鬼的战场中央。"
+									]
+								},
+								{
+									"ENG_name": "Meeting Shivershank",
+									"type": "entries",
+									"name": "会见希弗尚克",
+									"page": 26,
+									"entries": [
+										"当队伍首次遇见{@creature 希弗尚克船长|Arcadia27}时，朗读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一个十尺高的魁梧身影笔直而立，无唇的脸上咧开一副森然的齿相。她那遍布伤疤的蔚蓝皮肤紧绷而富有光泽，远远望去，仅能隐约窥见其下无穷无尽的锐利鳞片。她的深色长外套浸满盐渍、缀满锁链，却依旧衬着她威严的体格，透出几分庄重。"
+											]
+										},
+										"若角色们都不足400岁：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"你从未见过{@i 任何人}像她这般。"
+											]
+										},
+										"否则：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这就像在注视一个从久被遗忘的往昔中走出的人。"
+											]
+										},
+										{
+											"ENG_name": "Pirate Leader",
+											"type": "inset",
+											"page": 26,
+											"name": "海盗首领",
+											"entries": [
+												"希弗尚克船长拥有首领定位，即她是一种与部下并肩作战的行动导向生物，其数据块中拥有三个{@cite 反派动作|Arcadia27}。你也可以在{@book 凡人，快逃！MCDM怪物书|走开}的免费预览包中进一步了解生物定位。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Roleplaying Shivershank",
+									"type": "entries",
+									"name": "扮演希弗尚克",
+									"page": 28,
+									"entries": [
+										"{@creature 希弗尚克船长|Arcadia27|希弗尚克船长的}所作所为{@b 永远}有理。她从不为任何闪失担责\u2014\u2014即便是{@i 许愿100}那桩事，在她看来也全然不在她的掌控之内。",
+										"希弗尚克嗓门洪亮、豪气干云，人生阅历足以撑起她的每一道号令。她狂放到任由船员自便，唯独不许让她丢脸。这份魅力，让她的许多对手最终都成了她船上的忠实干将。",
+										"这位船长不易与人亲近，却敬重那些雷厉风行追逐野心的可靠角色或狠人。假以时日、相处融洽，她终会开始护着她看重的家伙，分享故事，乃至展露脆弱。",
+										"但希弗尚克的话总带几分刺。人们在她面前说过的任何话，终有一日会被她拿来反将一军。作为GM，拿这股犀利幽默对付玩家角色时要拿捏分寸；但用于奚落贵族或约翰尼·琼斯（见本文后文\"对手船团\"）时，大可放开了用。"
+									]
+								},
+								{
+									"ENG_name": "Shivershank as a Patron",
+									"type": "entries",
+									"name": "作为赞助人的希弗尚克",
+									"page": 28,
+									"entries": [
+										"希弗尚克船长统帅七艘船，按需分配时间轮流坐镇，在每个船队中维持存在感。在角色们刚起步时，她或许会在他们的船\u2014\u2014{@i 斯夸洛号}上停留一两个航程，看看冒险者的成色。在那之后，见到船长便成了稀罕事。",
+										"在她的赞助期间，队伍可以使用以下资源：",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "The Squalo",
+													"type": "entries",
+													"name": "斯夸洛号",
+													"entries": [
+														"这艘{@u {@cite 船舰类别|Arcadia27|中艇}}是希弗尚克舰队中最老的船。脚下地板吱呀作响，但她划开水面的劲头仍像一头饥饿的鲨鱼。当然，这艘老船骨仍需一支像样的船员才能浮在水上：船上由7名（{@creature 暴徒||暴徒们}）形形色色、各怀心思的船员维护，他们专注操船，好让冒险者们去忙自己的事。"
+													]
+												},
+												{
+													"ENG_name": "Quartermaster Crollenoak",
+													"type": "entries",
+													"name": "克罗伦诺克军需官",
+													"entries": [
+														"这位戴着瓶底眼镜、一丝不苟的侏儒（{@creature 间谍}）是与希弗尚克往来的主要联络线。冒险者的任务、酬金与补给（收费的）都经{@creature 克罗伦诺克军需官|Arcadia27|克罗伦诺克}之手，他与角色们同乘{@i 斯夸洛号}。"
+													]
+												},
+												{
+													"ENG_name": "Surgeon Stitches",
+													"type": "entries",
+													"name": "缝缝医生",
+													"entries": [
+														"斯夸洛号的船员中有一位{@creature 缝缝医生|Arcadia27|活泼的精灵亡灵}（使用{@creature 丧尸}数据块，但其智力和感知为15（+2），且会说通用语和精灵语），她满身美丽的刺青掩住了成排的缝线。除了每天最多施展六次{@spell 疗伤术}（1环）外，她还能缝补一个生物并将其救活，前提是其躯体尚存（由你裁量，此举会将其生物类型改为不死生物）。"
+													]
+												},
+												{
+													"ENG_name": "Bail",
+													"type": "entries",
+													"name": "保释营救",
+													"entries": [
+														"凡希弗尚克船长麾下船员被囚、被吊上绞刑笼或被判死刑，必有营救行动。冒险者也可能被要求为他们的同伙提供同样的保障。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Shivershank's Fleet",
+											"type": "entries",
+											"name": "希弗尚克的舰队",
+											"page": 28,
+											"entries": [
+												"希弗尚克舰队的七艘船如下所列。每艘船都由一群与船脾性相投的杂牌海盗执掌：",
+												{
+													"type": "list",
+													"items": [
+														"{@i 斯夸洛号}（{@u 中艇}），冒险者的船",
+														"{@i 泽菲尔号}（{@u 中艇}），最快的船员",
+														"{@i 奥罗博里奥萨号}（{@u 中艇}），最鬼祟的船员",
+														"{@i 卡利科号}（{@u 大船}），最聒噪的船员",
+														"{@i 阿拉克号}（{@u 大船}），永不沉没的船员",
+														"{@i 舍尔·雷克斯号}（{@u 大船}），最莽的船员",
+														"{@i 托尔图加号}（一头{@creature 龙龟}），最硬的船员，亦见本文后文\"对手船团\""
+													]
+												},
+												"完成数个任务后，角色们或受邀成为{@i 斯夸洛号}（或另一艘船）上的军官，获得更高的薪酬与权威。又或者，若他们在冒险中找到了属于自己的船，也可以指挥那艘船，作为希弗尚克舰队的新成员。"
+											]
+										},
+										{
+											"ENG_name": "A Share of the Booty",
+											"type": "entries",
+											"name": "分赃",
+											"page": 28,
+											"entries": [
+												"每完成一个任务（见下文\"{@book 任务引子|Arcadia27|3|任务引子}\"），只要其船员与船只幸存，每名冒险者通常获得{@dice 2d10} × 角色等级金币。若身为军官，此数额翻倍。他们自行寻获的任何宝藏也归其所有\u2014\u2014但船对船战斗缴获的战利品，须由全船船员均分。",
+												"作为舰队之主，希弗尚克从每一笔斩获中抽取一成。若角色们最终执掌了自己的船，克罗伦诺克军需官会代为打理船员薪酬，并确保希弗尚克拿到她那份。",
+												"值得注意的是，执行希弗尚克任务期间，船上船员（包括角色们）照常领薪，哪怕任务分文未获。希弗尚克那份厚抽成，正是在为搜索{@i 许愿99}筹资\u2014\u2014其中也包括让船员们心甘情愿地执行她挑中的差事。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Composing the Ballad",
+							"type": "section",
+							"name": "谱写歌谣",
+							"page": 29,
+							"entries": [
+								"这场战役遵循\"执行任务\u2014提升等级\"的节奏，直至冒险者准备好迎接重大事件。希弗尚克通过克罗伦诺克向冒险者派发任务，如走私货物、击败海盗竞争者、袭扰王侯（他们也可以在港口自行接下这类机会，或在加入纳维加兰特后经其网络获得）。随着冒险者声名与财富俱增，他们将面临抉择：亲手挑战希弗尚克，或与她联手夺取{@i 许愿99}。",
+								"下文\"{@book 重大事件|Arcadia27|3|重大事件}\"\"{@book 任务引子|Arcadia27|3|任务引子}\"与\"{@book 对手船团|Arcadia27|3|对手船团}\"各节充满可供你在整场战役中取用的遭遇、角色与事件，而\"{@book 随机海上遭遇|Arcadia27|3|随机海上遭遇}\"一节则为每个任务准备了变数。即便你遵循所述框架，也不妨放手混搭最合你桌面节奏的要素。航图自定，顺风而行。",
+								"如\"{@book 航程时序与准备|Arcadia27|3|航程时序与准备}\"一节所述，这些任务各含一整段航程；若你想要节奏更快的战役，让角色快速升级并无不可。用三四个场次完成前往一地、达成目标、返回港口，大可对应海上数周的时光。",
+								{
+									"ENG_name": "With Her or Against Her?",
+									"type": "entries",
+									"name": "助她还是敌她？",
+									"page": 29,
+									"entries": [
+										"冒险者的行动将决定最终目标是辅佐希弗尚克船长夺取许愿99，还是亲手击败希弗尚克。甚至可以两者兼有，或干脆出自你自己的独创！",
+										"若玩家们想辅佐希弗尚克，就必须领悟为盗之道，一边变强一边赢得她的信任，直到她向他们吐露许愿轮的往事。与她同行冒险时，他们将要直面海盗生涯的严酷现实\u2014\u2014例如{@book 同花顺|Arcadia27|3|同花顺}这一重大事件\u2014\u2014并与来自四海的宿敌和心魔周旋。",
+										"若队伍的目标是击败希弗尚克船长，请给角色们充分的机会，去联结她麾下其他船上不再愿意侍奉她的海盗，尤其是强大的{@i 托尔图加号}船员。你可以参考{@book 叛变低语|Arcadia27|3|叛变低语}这一重大事件\u2014\u2014切记，希弗尚克的赞助会一直持续到她视冒险者为威胁的那一刻，而且克罗伦诺克军需官告诉她的每一句话，她都了然于胸。",
+										"你对希弗尚克定下的基调，就是整场战役的基调。当她现身时，玩家应当能判断自己在她心中的位置\u2014\u2014她究竟是亲和依旧，还是天边隐现的无声威胁。在{@book 变革之风|Arcadia27|3|变革之风}重大事件之后，战役的终局目标将昭然若揭。",
+										{
+											"ENG_name": "A Neutral Campaign",
+											"type": "inset",
+											"page": 29,
+											"name": "中立战役",
+											"entries": [
+												"海盗向来按自己的规矩行事。他们可以为私利伤人，想杀鸡儆猴时更可冷酷到极致。",
+												"这怎么算中立？关键在于战役的叙事框架与动机。希弗尚克的海盗只伤害挡在他们与{@i 许愿99}之间的人。他们更多是让贵族破财消灾，而非劫掠渔船。她的所作所为限制贵族权势、猎杀平民的凶险威胁，说不定还能改善社会。",
+												"而在邪恶战役中，希弗尚克的目标也许是征服陆地、成为独一无二的统治者，或是毁灭陆地与其上的一切生灵，以海之女王的身份开启一个船的世界。残暴本身就是目的，而非自私行径的副产品。",
+												"无论中立还是邪恶，社会都不会善待海盗冒险者。海盗会令平民闻风丧胆、遭贵族悬赏追猎，恶名与通缉令将如影随形。他们的栖身之所，或许只有其他海盗（这本身就是步险棋）、来路不明的黑店，以及盐味最重的酒馆。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Major Events",
+									"type": "entries",
+									"name": "重大事件",
+									"page": 29,
+									"entries": [
+										"以下任务与遭遇对希弗尚克与冒险者之间的关系至关重要，每场战役各发生一次。部分事件附有建议的最低队伍等级，以五人队伍校准；但队伍的资源与盟友足以改变天平\u2014\u2014说到底，你最了解你的团队。",
+										{
+											"ENG_name": "How Much?",
+											"type": "entries",
+											"name": "多少？",
+											"page": 29,
+											"entries": [
+												"希弗尚克将总计价值50万金币的黄金与财宝交给冒险者，埋藏于一座海图未载的岛屿。这么大一笔钱必然引来其他海盗的觊觎，可若冒险者自己顺手牵羊，希弗尚克会察觉吗？（会，她一定会。）清点这批财物时会发现一只怪异的平凡箱子，里面盛着一枚锋利如刃的蛋\u2014\u2014想必是拉肖姆蛋\u2014\u2014而这希弗尚克{@b 并不}知情。"
+											]
+										},
+										{
+											"ENG_name": "Whispers of Mutiny",
+											"type": "entries",
+											"name": "叛变低语",
+											"page": 29,
+											"entries": [
+												"希弗尚克七艘船的所有船员，竟凑出了一个全员空闲的夜晚，齐聚卡尔科洛酒馆联络感情。喧嚣狂欢之际，两名船员（多半来自{@i 托尔图加号}）把冒险者拉到一旁，请他们从内部协助扳倒希弗尚克。他们觉得，若换掉船长，这么庞大的船队本可以富贵得多；他们也想不通她为何神秘兮兮地囤积如此多财宝，还频频派船执行无利可图的任务。",
+												"若冒险者答应帮忙，叛变者提议每周在酒馆秘密碰头，商量如何策反其他船只的船员，同时瞒过希弗尚克与克罗伦诺克双方。待冒险者强到足以与她一战，便是发动叛变之时。",
+												"若冒险者转而把此事告诉希弗尚克，船长会高声叫破叛变者，邀他们\"{@b 有种就试，不然去死！}\"。当{@i 托尔图加号}的船员日后成为对手船团（见本文后文\"{@book 对手船团|Arcadia27|3|对手船团}\"）时，便会翻出这一刻来奚落希弗尚克。"
+											]
+										},
+										{
+											"ENG_name": "Royal Flush",
+											"type": "entries",
+											"name": "同花顺",
+											"page": 30,
+											"entries": [
+												"{@i 适用于8级或更高的角色}",
+												"一个贵族家族以一枝蘸血的黑羽向希弗尚克船队下战书，装在红木匣中送抵希弗尚克船长手中。一周之内，希弗尚克将倾尽所有船只在近海一点与贵族舰队会战。贵族拥有10艘{@u {@cite 船舰类别|Arcadia27|大船}}（包括那艘气派的\"王室之冠号\"）和一头{@creature 青年金龙}。船员的目标是击溃或逼退贵族，并将\"王室之冠号\"据为己有。"
+											]
+										},
+										{
+											"ENG_name": "Winds of Change",
+											"type": "entries",
+											"name": "变革之风",
+											"page": 30,
+											"entries": [
+												"希弗尚克船长将冒险者召入与她和克罗伦诺克的密谈。军需官把冒险者至今的种种事迹如数家珍般倒出，包括每一次相助与每一次冒犯。在此之前，他们尽可随心所欲、无需担责；但如今，希弗尚克再也无法不把他们视为不容小觑的对手。",
+												"若希弗尚克青眼有加，她会向他们讲述自己与{@i 许愿100}的过往，以及如今追寻{@i 许愿99}的缘由。她终于发现了它的所在，出海夺取在即，只需他们助她一臂之力抵达彼处。若获得支持，克罗伦诺克会向每名冒险者发放一枚自选的珍稀魔法戒指（GM决定可供挑选的戒指种类）。",
+												"若希弗尚克心存猜忌，她会正式将冒险者逐出船员之列，并挑明：下次海上相见，即为敌非友。如有需要，冒险者可被安全送返陆地，此后她的赞助就此终结。"
+											]
+										},
+										{
+											"ENG_name": "Finale: Wishes 99",
+											"type": "entries",
+											"name": "终章：许愿99",
+											"page": 31,
+											"entries": [
+												"{@i 适用于12级或更高的角色}",
+												"若冒险者与希弗尚克同进退，她将亲自执掌{@i 斯夸洛号}、{@i 奥罗博里奥萨号}或{@i 舍尔·雷克斯号}的舵轮，与冒险者一同驶向{@item 许愿99|Arcadia27}的所在。它安卧于一座被无尽飓风之眼笼罩、遍布拉肖姆废墟的宁静岛屿上，由一头{@creature 海洋恐怖克拉肯|Arcadia27}拼死守护。途中，船只将被希弗尚克的心魔与余下的对手纠缠清算（见本文后文\"对手船团\"）。",
+												"若她幸存下来，希弗尚克终将许下她的愿望：让所有被{@i 许愿100}抹去的拉肖姆人归来，且每一位都知晓，希弗尚克船长是有史以来最传奇的水手。",
+												"{@item 许愿99|Arcadia27}消失了。天地为之一震，仿佛陡然承受了更重的分量。一名孤独的拉肖姆人走上岸来，一脸{@b 大写的}茫然。回到港口，随处可见拉肖姆人装船、购物、纵酒作乐，仿佛一切从未发生。",
+												"希弗尚克与船员们分掉了剩余的积攒财富，随即开始筹划下一个目标：向世上{@i 其余所有人}证明，她是当今存在的最重要的人物。"
+											]
+										},
+										{
+											"ENG_name": "Finale: Abandoned Wish",
+											"type": "entries",
+											"name": "终章：被弃的愿望",
+											"page": 31,
+											"entries": [
+												"{@i 适用于12级或更高的角色}",
+												"若冒险者与希弗尚克决裂，这会对她产生深远的影响。她对所有人愈发封闭。与她舰队狭路相逢、殒命海上的消息日渐频仍，其他船只畏于被击沉而纷纷停航。希弗尚克船长陷入了无法穿透的狂怒。",
+												"不久便有消息传来：她只身起航，前往{@item 许愿99|Arcadia27}。冒险者有机会打探其下落，抢先一步夺得许愿轮。",
+												"若希弗尚克抢先得到{@item 许愿99|Arcadia27}，她会轻率地许愿成为\"世人所见最庞大、最强大的拉肖姆人\"，蜕变为{@creature 海洋恐怖希弗尚克|Arcadia27|{@u 海洋恐怖}版的她自己}。",
+												"她将找上冒险者及其盟友，无论船上还有没有旧部，都抱着死战到底的决心。胜者将以有史以来最硬核海盗之名载入史册。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Quest Hooks",
+									"type": "entries",
+									"name": "任务引子",
+									"page": 31,
+									"entries": [
+										"这些五花八门的差事由希弗尚克下达给她所有的船队，要么让船员捞到刚够解馋的财宝，要么\u2014\u2014他们并不知情\u2014\u2014推进对{@i 许愿99}的搜索。这些引子每场战役可多次运行，更换关键NPC、对手与时间限制以保持新鲜感。部分任务可由冒险者自行发起，例如赏金狩猎。角色们执行这些任务的酬劳，见本文前文\"{@book 分赃|Arcadia27|3|分赃}\"一节。",
+										{
+											"ENG_name": "Aquatic Alliance",
+											"type": "entries",
+											"name": "水中同盟",
+											"page": 31,
+											"entries": [
+												"一名{@creature 人鱼}联络员同意在洋上一处偏远地点与希弗尚克船队的代表会面，再引他们前往其海底文明。旅途将角色们带向大洋深处，他们要么应付湍急水流，要么穿越茂密海藻林，要么击退{@creature 鮟鱇鲨|Arcadia27|鮟鱇鲨们}，或者三者兼有。",
+												"在那里，冒险者可以代表希弗尚克谈成资源交换：以50磅陆地物产与食物换取一队人鱼在下个航程的护航；护送一支人鱼商队横渡大洋、使其免遭渔民毒手，以换取三只水生坐骑{@sup {@cite 水生坐骑|Arcadia27|6}}；或以一名角色的魔法物品换取一张藏宝图。"
+											]
+										},
+										{
+											"ENG_name": "Bounty Hunt",
+											"type": "entries",
+											"name": "赏金狩猎",
+											"page": 31,
+											"entries": [
+												"卡尔科洛酒馆的赏金公告板（见本文前文\"{@book 设定战役|Arcadia27|3|设定战役}\"）每周轮换两桩新的通缉悬赏与一份{@u 海洋恐怖}悬红。逃犯通常在镇上有个同伙，知道其下次作案的时间地点，或其在海上的巢穴位置。海洋恐怖的巢穴通常远隔人烟，但若角色不先找到它，它终会自己找上门来。",
+												"领取悬赏须持有击杀凭证，或将被束缚的目标押送到当地酒馆。"
+											]
+										},
+										{
+											"ENG_name": "Gibbet Break",
+											"type": "entries",
+											"name": "劫绞刑笼",
+											"page": 31,
+											"entries": [
+												"希弗尚克的一位旧盟友，或一个欠她人情的人，正被困在海岸边吊着的绞刑笼{@sup {@cite 绞刑笼|Arcadia27|7}}里，被判给当地一头{@u 海洋恐怖}当晚餐。角色们的任务是救人脱困并送往安全屋。若角色们姗姗来迟，受刑者早已葬身腹中。若他们搅了晚餐，那头海洋恐怖会穷追猛打，直到受刑者逃离该区域。而若救人成功，官府则会追杀他们到四海尽头。"
+											]
+										},
+										{
+											"ENG_name": "Ransom Paid",
+											"type": "entries",
+											"name": "赎金已付",
+											"page": 31,
+											"entries": [
+												"奥罗博里奥索家族（或另一贵族家族）已成功支付赎金，赎回年幼的继承人。这位继承人被交由角色们照看，须安全护送回家族的私人岛屿。这类继承人往往要么傲气十足，要么少年老成，并不容易被吓倒。有些甚至会更向往海盗生涯。"
+											]
+										},
+										{
+											"ENG_name": "Ship Raid",
+											"type": "entries",
+											"name": "劫船",
+											"page": 32,
+											"entries": [
+												"一艘{@item 彩虹鳞船|Arcadia27}\u2014\u2014昂贵的{@u {@cite 船舰类别|Arcadia27|中艇}}，能扛住风暴天气\u2014\u2014被人目击于海上。这类华美的船只通常属于阔绰的{@creature 老兵||老兵们}或位面外的渔夫。角色们的任务是迫使其船员投降，并把船完好无损地带回来。"
+											]
+										},
+										{
+											"ENG_name": "Smuggler's Run",
+											"type": "entries",
+											"name": "走私航程",
+											"page": 32,
+											"entries": [
+												"斯夸洛号已装满下列货物之一：茶砖、华服、施法材料、黑市魔法物品、烈酒或硝石{@sup {@cite 硝石|Arcadia27|8}}。角色们必须把私货躲过港口官吏，送到在远方码头接应的岸上接货人{@sup {@cite 岸上接货人|Arcadia27|9}}手中。"
+											]
+										},
+										{
+											"ENG_name": "Treasure Trove",
+											"type": "entries",
+											"name": "藏宝库",
+											"page": 32,
+											"entries": [
+												"数箱属于某贵族家族、早已作古的水手或一头幼龙的黄金珍宝，藏于一座守卫森严的岛上。这批宝藏要么藏在一座仅退潮时可入的水淹洞窟迷宫中，要么分埋于数处，位置标在希弗尚克某位心腹手持的地图上。角色们必须四处打探情报，但问得越多，须与之竞逐的船队也就越多。"
+											]
+										},
+										{
+											"ENG_name": "War Crimes",
+											"type": "entries",
+											"name": "战争罪行",
+											"page": 32,
+											"entries": [
+												"两大王国正互相交战，这让走私生意利润可观。下一场战役将在一座中立岛屿打响。角色们的目标是破坏战场或两军，使双方两败俱伤、被迫退兵。若任一王国察觉此项任务的风声，他们可能结盟对付角色们。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Rival Crews",
+									"type": "entries",
+									"name": "对手船团",
+									"page": 32,
+									"entries": [
+										"随着冒险者等级提升，他们的对手也在更迭并愈发棘手。这些对头会以变数的姿态现身：或在赶赴目标的途中横插一手，或抢先抵达以逸待劳。",
+										{
+											"type": "table",
+											"caption": "按等级划分的对手",
+											"page": 32,
+											"colLabels": [
+												"角色等级",
+												"建议对手"
+											],
+											"colStyles": [
+												"col-3 text-left",
+												"col-7 text-left"
+											],
+											"rows": [
+												[
+													"1\u20135",
+													"匪徒与贵族"
+												],
+												[
+													"6\u20138",
+													"约翰尼·琼斯"
+												],
+												[
+													"9\u201311",
+													"韦勒姐妹与贵族"
+												],
+												[
+													"12\u201314",
+													"{@i 托尔图加号}"
+												],
+												[
+													"15\u201317",
+													"希弗尚克的心魔或希弗尚克船长"
+												]
+											]
+										},
+										{
+											"ENG_name": "Bandits",
+											"type": "entries",
+											"name": "匪徒",
+											"page": 32,
+											"entries": [
+												"{@i 建议：{@creature 匪徒||匪徒们}、{@creature 暴徒||暴徒们}、{@creature 斥候||斥候们}、{@creature 恐水母|Arcadia27|恐水母们}、{@creature 巨型蜘蛛蟹|Arcadia27|巨型蜘蛛蟹们}，以及大型怪物}",
+												"小打小闹的海盗与劫掠者乃是投机客和秃鹫。他们专挑替他们干完苦活的船只下手，用从深渊里捞出的家伙抢占别人的积攒。"
+											]
+										},
+										{
+											"ENG_name": "Nobles",
+											"type": "entries",
+											"name": "贵族",
+											"page": 32,
+											"entries": [
+												"{@i 建议：{@creature 贵族||贵族们}、{@creature 警卫||警卫们}、{@creature 暴徒||暴徒们}、{@creature 骑士||骑士们}、{@creature 老兵||老兵们}、{@creature 魔法师||魔法师们}，以及宠物龙}",
+												"这些受雇于贵族的私掠船（其中常混着追逐虚名的贵族本人）为炫耀之资铲除海盗、吞占其财宝。若冒险者屡屡遭遇贵族，贵族便会雇来更加难缠的威胁。",
+												"奥罗博里奥索家族的长女奥瑟丝女士，在贵族中是个不怕亲自动手干脏活的异数。这位{@creature 老兵}统领着一支七拼八凑的船员，一心只想夺回希弗尚克从她家族手中抢走的船\u2014\u2014{@i 奥罗博里奥萨号}。"
+											]
+										},
+										{
+											"ENG_name": "Johnny Jones",
+											"type": "entries",
+											"name": "约翰尼·琼斯",
+											"page": 32,
+											"entries": [
+												"{@i 建议：{@creature 老兵||老兵们}、{@creature 角斗士||角斗士们}、其他{@creature 鲨人|Arcadia27|鲨人们}、真正的鲨鱼}",
+												"这位老水手是希弗尚克船长多年的\"自封\"宿敌。琼斯船长是一名鲁莽的矮人{@creature 鲨人|Arcadia27}，双目尽失却毫无畏惧。数十年来，他带着船员对希弗尚克穷追不舍、处处抢风头，却一次次被击沉。如今，他把矛头对准了她手下资历较浅的船员。",
+												"无论约翰尼·琼斯被炸上天、击沉海底，还是被施以拖船刑{@sup {@cite 拖船刑|Arcadia27|10}}多少次，他总能驾着新船、带着新船员，挑最不凑巧的时机卷土重来。"
+											]
+										},
+										{
+											"ENG_name": "Johnny Jones",
+											"type": "entries",
+											"name": "约翰尼·琼斯",
+											"page": 32,
+											"entries": [
+												"{@i 建议：{@creature 鸟妖|走开|鸟妖们}、{@creature 邪灵|走开|邪灵们}、{@creature 德鲁伊||德鲁伊们}、{@creature 报丧妖||报丧妖们}，以及{@u 海洋恐怖}怪兽}",
+												"韦勒姐妹是一支由夜鬼婆组成的可怕海盗船队，她们随心所欲地摆布海洋，击沉船只以收割轻而易举到手的灵魂。她们航行于一头受其操控的海洋恐怖抹香鲸口中的牙齿舱室里（使用{@creature 虎鲸}数据块，但生命值为300）。若失去鲸鱼，她们将转乘一艘幽灵船继续肆虐大洋（见下文\"{@book 参与者|Arcadia27|3|参与者}\"）。"
+											]
+										},
+										{
+											"ENG_name": "The {@i Tortuga}",
+											"type": "entries",
+											"name": "{@i 托尔图加号}",
+											"page": 33,
+											"entries": [
+												"建议：{@creature 刺客||刺客们}、{@creature 大法师||大法师们}、{@creature 罪魔}，以及一头{@creature 龙龟}",
+												"希弗尚克最精锐的船发动了叛变。与她的大多数船员一样，{@i 托尔图加号}的海盗们最初效忠于另一位船长，直到希弗尚克杀之夺船。他们隐忍至今，从猎杀海洋恐怖的收益中私吞了足够的财宝，终于脱队自立，向希弗尚克宣战。"
+											]
+										},
+										{
+											"ENG_name": "Shivershank's Demons",
+											"type": "entries",
+											"name": "希弗尚克的心魔",
+											"page": 33,
+											"entries": [
+												"{@i 建议：{@creature 海洋恐怖风暴巨人|Arcadia27|风暴巨人们}、{@creature 海洋恐怖骨魔|Arcadia27|骨魔们}、{@creature 海洋恐怖底栖魔鱼|Arcadia27|底栖魔鱼们}与{@creature 海洋恐怖异界神侍|Arcadia27|异界神侍们}的{@u 海洋恐怖}版本}",
+												"若希弗尚克开始信任冒险者，他们便会逐渐看见她所面对的怪物\u2014\u2014悔恨、孤独与傲慢的具象化身。它们会追猎队伍，直到{@i 许愿99}终被夺得。"
+											]
+										},
+										{
+											"ENG_name": "Shivershank",
+											"type": "entries",
+											"name": "希弗尚克",
+											"page": 33,
+											"entries": [
+												"{@i 建议：{@creature 希弗尚克船长|Arcadia27}与一队{@creature 角斗士||角斗士们}、{@creature 刺客||刺客们}和{@creature 罪魔}。对15级或更高的队伍，将{@creature 克罗伦诺克军需官|Arcadia27|克罗伦诺克的}数据块替换为{@creature 深狱炼魔}（但其体型类别为小型）。}",
+												"若希弗尚克视冒险者为威胁，她会倾船队之全力扑向他们。她的心神全在夺取{@i 许愿99}之上，挡路者，格杀勿论。",
+												{
+													"ENG_name": "Speak Naught Of It",
+													"type": "inset",
+													"page": 33,
+													"name": "切勿声张",
+													"entries": [
+														"若你的海洋恐怖或约翰尼·琼斯遭遇对冒险者来说过于凶险，不必焦虑。他们的船只第一次濒临沉没时，希弗尚克可以游上来解除威胁，放他们一条生路。而这场战役余下的时间里，她都会矢口否认此事。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Random Sea Encounters",
+									"type": "entries",
+									"name": "随机海上遭遇",
+									"page": 33,
+									"entries": [
+										"每当你在航程中要求进行一次遭遇时，请分别为环境与参与者掷骰。",
+										{
+											"type": "table",
+											"caption": "海上遭遇表",
+											"page": 33,
+											"colLabels": [
+												"{@dice d10}",
+												"环境",
+												"{@dice d10}",
+												"参与者"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-4 text-left",
+												"col-1 text-center",
+												"col-4 text-left"
+											],
+											"rows": [
+												[
+													"1",
+													"风暴",
+													"1",
+													"对手"
+												],
+												[
+													"2",
+													"岛屿",
+													"2\u20133",
+													"洋域栖居者"
+												],
+												[
+													"3",
+													"妖精荒野",
+													"4",
+													"船员"
+												],
+												[
+													"4",
+													"残骸",
+													"5",
+													"海洋恐怖"
+												],
+												[
+													"5",
+													"镜域",
+													"6",
+													"贵族"
+												],
+												[
+													"6\u201310",
+													"\u2014\u2014（海面平静）",
+													"7",
+													"船员"
+												],
+												[
+													"",
+													"",
+													"8",
+													"商人"
+												],
+												[
+													"",
+													"",
+													"9\u201310",
+													"\u2014"
+												]
+											]
+										},
+										{
+											"ENG_name": "Environments",
+											"type": "entries",
+											"name": "环境",
+											"page": 33,
+											"entries": [
+												"遭遇发生于以下环境之一：",
+												{
+													"ENG_name": "Storm",
+													"type": "entries",
+													"name": "风暴",
+													"entries": [
+														"雷暴、飓风或漩涡过后，大海翻腾，浪头高涌。",
+														"持续1分钟，船只每次倾斜时，任何不在舱内或未固定的人和物，都必须通过DC 15力量豁免，否则被抛入海中。若无人掌舵，船只在先攻20承受2次受创并倾斜（见本文后文\"{@book 新规则|Arcadia27|3|新规则}\"）。掌舵的生物可以用其动作进行DC 10力量或智力检定来操舵。检定成功，船只不受伤害、不会倾斜；失败则倾斜。"
+													]
+												},
+												{
+													"ENG_name": "Island",
+													"type": "entries",
+													"name": "岛屿",
+													"entries": [
+														"附近的一座岛屿是野兽、密林与自然资源的家园。作为短休的一部分，船只可在岛上泻修船底{@sup {@cite 泻修船底|Arcadia27|11}}进行维修。若对该岛不加以探查，则下一次遭遇掷出1、2、9或10时，参与者为对手船团。"
+													]
+												},
+												{
+													"ENG_name": "Feywild",
+													"type": "entries",
+													"name": "妖精荒野",
+													"entries": [
+														"此处的海域悄然滑入妖精荒野。船只漂行于空中（游泳速度换为飞行速度），时而闪烁、若有若无，妖精生物则一路骚扰来犯者。在先攻20，船只及其乘员一同向随机方向传送{@dice 5 × 1d6}尺。"
+													]
+												},
+												{
+													"ENG_name": "Wreckage",
+													"type": "entries",
+													"name": "残骸",
+													"entries": [
+														"一艘{@u {@cite 船舰类别|Arcadia27|大船}}残骸的余烬在此滞留，缓缓沉入深渊。通过DC 15智力（{@skill 调查}）或感知（{@skill 求生}）检定，可从残骸中搜出装备、小物件与补给。若搜出魔法物品，亡灵水手便会现身攻击来犯者。若对该残骸不加以探查，则下一次遭遇掷出6、9或10时，参与者为一艘幽灵船。"
+													]
+												},
+												{
+													"ENG_name": "Mirror",
+													"type": "entries",
+													"name": "镜域",
+													"entries": [
+														"一面浑然的镜之穹顶悬于80尺高处，下方海面雾气渐浓。生物可以立于水面之上，巨大的水柱在地平线上翻涌。除对手、船员或商人之外的任何掷出参与者，皆不会在此现身。",
+														"这是{@creature 吸血鬼|走开|吸血鬼们}的领域，他们处于{@condition 隐形}状态，唯有镜中的倒影可见。生物若在其回合用附赠动作借助反光面追踪吸血鬼，便可无视其隐形效应。冒险者若向捕获者供应足够的血液（{@damage 2d10}挥砍或穿刺伤害，由1\u20132名生物分担），或至少半数吸血鬼被降至0生命值而被迫撤退，即可脱身。冒险者每落到此处一次，吸血鬼索要的血量便增加一档，在其份额上追加{@damage 2d10}伤害。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Participants",
+											"type": "entries",
+											"name": "参与者",
+											"page": 34,
+											"entries": [
+												"遭遇的参与者来自以下团体之一：",
+												{
+													"ENG_name": "Rivals",
+													"type": "entries",
+													"name": "对手",
+													"entries": [
+														"冒险者当前的对手介入其中，或是抢在他们之前完成任务，或是加害于他们（见本文前文\"{@book 对手船团|Arcadia27|3|对手船团}\"）。"
+													]
+												},
+												{
+													"ENG_name": "Oceanic Denizens",
+													"type": "entries",
+													"name": "洋域栖居者",
+													"entries": [
+														"{@creature 人鱼}、{@creature 鲨华鱼人}、{@creature 迈罗人鱼}、{@creature 鸟妖|走开|鸟妖们}、{@creature 多头蛇||多头蛇们}、{@creature 跃迁鲨|Arcadia27|跃迁鲨们}与死亡藤壶（{@creature 锈蚀怪||锈蚀怪们}）在海面或海底安家。它们或对冒险者好奇，或感威胁，或需要帮助......或饥肠辘辘（藤壶尤其如此）。"
+													]
+												},
+												{
+													"ENG_name": "Crew",
+													"type": "entries",
+													"name": "船员",
+													"entries": [
+														"冒险者的船员格外活跃。他们或直接参与战斗与探索，或在冒险者大显身手时饮酒作乐。任何人在此次遭遇中唱起船歌，都将获得鼓舞。"
+													]
+												},
+												{
+													"ENG_name": "Sea Terror",
+													"type": "entries",
+													"name": "海洋恐怖",
+													"entries": [
+														"一头{@u 海洋恐怖}版本的野兽、怪兽或异怪潜藏于此，或是为了猎食冒险者，或是正在逃避别的什么东西。"
+													]
+												},
+												{
+													"ENG_name": "Nobles",
+													"type": "entries",
+													"name": "贵族",
+													"entries": [
+														"受雇于贵族的私掠者与佣兵永远在追猎海盗，即便他们并非冒险者当前的对手。"
+													]
+												},
+												{
+													"ENG_name": "Ghost Ship",
+													"type": "entries",
+													"name": "幽灵船",
+													"entries": [
+														"一艘由{@creature 食尸鬼|走开|食尸鬼们}、{@creature 幽魂||幽魂们}和{@creature 骷髅|走开|骷髅们}驾驶的{@u {@cite 船舰类别|Arcadia27|大船}}锲而不舍地追猎冒险者，直至被摧毁；或经谈判许以冒险者当前任务酬劳的一份；或直至冒险者找到他们船上使其滞留人世的受诅宝藏。"
+													]
+												},
+												{
+													"ENG_name": "Merchants",
+													"type": "entries",
+													"name": "商人",
+													"entries": [
+														"一艘由友善商人执掌的{@u {@cite 船舰类别|Arcadia27|中艇}}载着昂贵的魔法物品，以及廉价\u2014\u2014但受诅\u2014\u2014的魔法物品。一旦区域内无即时危险，他们便乐意谈生意。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "As a One-Shot",
+									"type": "inset",
+									"page": 35,
+									"name": "作为单次团",
+									"entries": [
+										"这些任务引子任意搭配2\u20133场海上遭遇，便是一场精彩的单次团。冒险者可以与约翰尼·琼斯或希弗尚克本人竞逐目标！",
+										"若想打造一场理想的剑客冒险，可使用\"藏宝库\"引子配以贵族家族的黄金，在风平浪静的海面上与冒险者的对手来一场遭遇，再安排一次涉及幽灵船的残骸遭遇，最后在宝藏处，让冒险者、对手与贵族三方大决战收官。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "New Rules",
+							"type": "section",
+							"name": "新规则",
+							"page": 35,
+							"entries": [
+								"这些海洋规则可以加入任何游戏，为剑客冒险增色提味。",
+								{
+									"ENG_name": "Ships",
+									"type": "entries",
+									"name": "船舰",
+									"page": 35,
+									"entries": [
+										"船战可简可繁，悉听尊便。这套船只规则节奏轻快，让戏份始终落在冒险者身上：",
+										{
+											"type": "list",
+											"items": [
+												"船只在先攻20行动，并掷一枚d20决定彼此间的顺序。先攻相同时，船只先于角色和巢穴动作行动。",
+												"在船的回合，有舵手（或有人掌舵）的船只可以移动并使用一个特殊动作，详见\"船舰类别\"表。",
+												"中艇与大船可使用{@action 火炮|Arcadia27}特殊动作。豁免DC列于\"船舰类别\"表中该动作旁。小艇在其回合可以采取疾走或回避动作，但二者不可兼得。",
+												"每当船只受到攻城武器（包括他舰火炮）或非心灵、非毒素伤害法术的任何伤害时，便承受一次受创。船只在沉没前能承受的受创次数上限列于\"船舰类别\"表中。",
+												"一个生物可以用其动作帮助修缮船只受创之处，使受创数临时减少1，持续1小时。在长休期间修缮船只的生物则使受创数减少2（最低为0）。",
+												"当船只在单次受创中受到20点或更多伤害时，它朝GM选择的方向倾斜45度。直到该船只的下个回合开始前，其表面视为困难地形。"
+											]
+										},
+										{
+											"ENG_name": "Rainbow Scale Boat",
+											"type": "entries",
+											"name": "彩虹鳞船",
+											"page": 35,
+											"entries": [
+												"这些美丽的、泛着珍珠光泽的{@u {@cite 船舰类别|Arcadia27|中艇}}速度为60尺，并免疫雷鸣和闪电伤害。它们的{@action 火炮|Arcadia27|火炮}造成44（{@damage 8d10}）力场伤害，以取代火焰和钝击伤害。"
+											]
+										},
+										{
+											"type": "table",
+											"caption": "船舰类别",
+											"page": 35,
+											"colLabels": [
+												"类别",
+												"典型船员规模",
+												"AC",
+												"最大受创数",
+												"力量豁免",
+												"敏捷豁免",
+												"速度",
+												"特殊动作"
+											],
+											"colStyles": [
+												"col-3 text-left",
+												"col-2 text-left",
+												"col-1 text-left",
+												"col-1 text-left",
+												"col-1 text-left",
+												"col-1 text-left",
+												"col-1 text-left",
+												"col-2 text-left"
+											],
+											"rows": [
+												[
+													"{@u 小艇}（划艇、小帆船）",
+													"1\u20133",
+													"12",
+													"6",
+													"+0",
+													"+4",
+													"15尺",
+													"{@action 疾走}、{@action 回避}"
+												],
+												[
+													"{@u 中艇}（单桅帆船、纵帆船）",
+													"10\u201320",
+													"14",
+													"12",
+													"+2",
+													"+4",
+													"40尺",
+													"{@action 火炮|Arcadia27}（DC 10）"
+												],
+												[
+													"{@u 大船}（三桅帆船、大帆船）",
+													"30\u2013100",
+													"16",
+													"18",
+													"+4",
+													"+2",
+													"60尺",
+													"{@action 火炮|Arcadia27}（DC 14）"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Sea Terrors",
+									"type": "entries",
+									"name": "海洋恐怖",
+									"page": 36,
+									"entries": [
+										"大海是传奇巨物的家园。使用这些规则，你可以基于既有生物随手打造可怕的海怪，例如{@creature 海洋恐怖多头蛇|Arcadia27|多头蛇}、{@creature 海洋恐怖巨蟹|Arcadia27|巨蟹}，甚至{@creature 海洋恐怖海鬼婆|Arcadia27|海鬼婆}：",
+										{
+											"type": "list",
+											"items": [
+												"该生物的游泳速度等同于其最高移动速度。",
+												"该生物的体型提升两级，最低为巨型。若该生物本就是巨型或超巨型，其所占据的空间还要加倍（若原本占据20尺×20尺，现在则是40尺×40尺）。",
+												"若该生物现在占据的空间至少为20尺×20尺，它获得100点额外生命值；否则获得50点额外生命值。这通常使其CR提高1\u20133。",
+												"该生物可以以其视线所及、相邻船只甲板上的任何人为目标。详见\"{@book 在船上对抗海洋恐怖|Arcadia27|3|在船上对抗海洋恐怖}\"。",
+												"该生物获得以下特性：{@b {@i 攻城怪物。}}该生物对物体和结构造成双倍伤害。若使用新船规，一次成功的攻击对船只算作2次受创。"
+											]
+										},
+										{
+											"ENG_name": "Fighting Sea Terrors from a Ship",
+											"type": "entries",
+											"name": "在船上对抗海洋恐怖",
+											"page": 36,
+											"entries": [
+												"海洋恐怖几乎能触及甲板上的一切（包括船只本身），但甲板上的人却未必够得着海洋恐怖。这可以用船战区域来理清：确定角色在甲板上的位置，即可判断其能否对怪物发动近战攻击。"
+											]
+										},
+										{
+											"ENG_name": "Ship Combat Zones",
+											"type": "entries",
+											"name": "船战区域",
+											"page": 36,
+											"entries": [
+												"位于左舷（船身左侧）的海洋恐怖，与左舷和中部的生物处于近战范围。",
+												"位于右舷（船身右侧）的海洋恐怖，与右舷和中部的生物处于近战范围。",
+												"位于船尾（后方）的海洋恐怖，与船尾的生物处于近战范围。在大船上，它们与船头的生物彼此没有视线。",
+												"位于船头（前方）的海洋恐怖，与船头的生物处于近战范围。在大船上，它们与船尾的生物彼此没有视线。",
+												"位于船身任何一侧的海洋恐怖，与桅杆与索具上的生物不处于近战范围（由你裁量，某头海洋恐怖或许有超常的触及或跳跃能力）。桅杆与索具上的生物可以以一次空中近战攻击触及任意区域的海洋恐怖，但必须落在海洋恐怖的空间之内或其身上。若其在本回合成功表演了绝技（见\"剑客绝技\"），本应受到的坠落伤害一并取消。",
+												{
+													"type": "gallery",
+													"images": [
+														{
+															"type": "image",
+															"href": {
+																"type": "external",
+																"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia27/Ship%20Maps/Ship-50ft.webp"
+															},
+															"title": "船只（50尺）"
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "external",
+																"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia27/Ship%20Maps/Ship-100ft.webp"
+															},
+															"title": "船只（100尺）"
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "external",
+																"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia27/Ship%20Maps/Ship-150ft.webp"
+															},
+															"title": "船只（150尺）"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "GM Tip: Sea Terror Attacks",
+											"type": "inset",
+											"page": 37,
+											"name": "GM提示：海洋恐怖的攻击",
+											"entries": [
+												"与海洋恐怖交战的第三轮结束时，若其额外生命值尚未耗尽、或队伍正苦于无法将其击倒，你可以选择让海洋恐怖在下一次受到伤害时游走\u2014\u2014让队伍以为是自己赶跑了它，而它会在最意想不到的时刻再度现身。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Swashbuckling Stunts",
+									"type": "entries",
+									"name": "剑客绝技",
+									"page": 37,
+									"entries": [
+										"在船上腾挪穿梭、攀住船舷、上下桅杆，皆是剑客风范的一部分。身处船上或在船只之间移动时，冒险者可使用以下附赠动作：{@action 绝技|Arcadia27}"
+									]
+								},
+								{
+									"ENG_name": "Voyage Timing and Preparations",
+									"type": "entries",
+									"name": "航程时序与准备",
+									"page": 38,
+									"entries": [
+										"以任何一艘船的视角看去，大洋浩瀚无边、绵延不尽。时间与距离模糊成一片，唯海上遭遇才是航程长短的真正量度。",
+										"这些规则对冒险日做了抽象处理，休整并非总能唾手可得。冒险者可能会连续数日无法在遭遇或船上劳作之间进行长休。遇到这种情况，建议对力竭规则从宽处理、一笔带过。否则，便由GM酌情节制地使用这些超长时段，留给那些需要额外{@b {@i 气势}}的遭遇。",
+										"平均而言，在毫无线索或头绪的情况下出航的冒险队伍，在两地之间会遭遇5次遭遇，返港途中（如适用）另有2次。若冒险者被恶劣风暴吹偏航线，或在一场格外艰险的对峙中受挫，遭遇次数增加1。",
+										"停泊于有人聚居的文明之地时，队伍可以为下一段航程做准备、收集情报，例如打听传闻、以物易图、请同路船只护航，以及向其他水手请教他们心中的最佳航线。在两段航程之间，一名冒险者只要通过DC 12智力或魅力（{@skill 调查}）检定，或感知（{@skill 求生}）检定，便可使其下段航程的遭遇次数减少2（最低为2）。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "New Magic Item",
+							"type": "section",
+							"name": "新魔法物品",
+							"page": 38,
+							"entries": [
+								"{@item 许愿99|Arcadia27|许愿{@s 100}99}"
+							]
+						},
+						{
+							"ENG_name": "The Ocean Ahead",
+							"type": "section",
+							"name": "前路汪洋",
+							"page": 38,
+							"entries": [
+								"公海战役不必随希弗尚克船长的歌谣一同落幕。冒险者们可以去寻访{@i 许愿98}。无数受贵族与君主雇佣的赏金猎手可能正威胁海盗业的未来（一如现实历史）。海底文明可能进攻地表居民，密谋把所有大洋纳入一个隐秘位面。一头沉睡深海的海洋恐怖泰拉斯奎，也许会突然睁开双眼。",
+								"新的海盗冒险可以取材于你最爱的海盗故事，无论真实还是奇幻。看中什么尽管原样搬走\u2014\u2014毕竟，你就是海盗。"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
