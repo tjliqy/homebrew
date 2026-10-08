@@ -1,0 +1,3364 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ATBOH",
+				"abbreviation": "ATBOH",
+				"full": "《部落之书》是一部为简化大规模战斗而设计的怪物与军事补充书。",
+				"url": "https://www.gmbinder.com/share/-LZWXq83Rk2jZNs7spok",
+				"version": "2022.08.27",
+				"authors": [
+					"aeyana"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"color": "771717",
+				"targetSchema": "1.9.2"
+			}
+		],
+		"optionalFeatureTypes": {
+			"OF:ATBOH": "部落特性"
+		},
+		"edition": "classic",
+		"dateAdded": 1604991176,
+		"dateLastModified": 1786039815,
+		"_dateLastModifiedHash": "562bae802f"
+	},
+	"item": [
+		{
+			"ENG_name": "Commander's Banner",
+			"name": "指挥官军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 指挥官军旗|ATBOH|军旗}并使用传奇动作指挥部落时，你获得以下益处：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						"当你命令部落攻击时，其武器攻击造成额外{@damage 1d8}点伤害。",
+						"当你命令部落移动时，掷一枚{@dice 1d8}。在部落停止移动前，其护甲等级（AC）获得等同于掷骰结果的加值。",
+						"当你集结部落时，其获得的临时生命值增加{@dice 1d8}点。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Commanders_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Conquerer's Banner",
+			"name": "征服者军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 征服者军旗|ATBOH|军旗}时，你可以用一个附赠动作，向周身散发征服者的威仪。直到你的下回合开始，你周围30尺内由你选择的每个生物武器攻击命中时，均造成{@b 等同于你魅力调整值的额外伤害}，且该区域内的每个敌对生物进行避免恐慌的豁免检定时具有劣势。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Conquerers_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Demonic Banner",
+			"name": "恶魔军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": "由邪恶阵营的生物)",
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 恶魔军旗|ATBOH|军旗}时，你可以用一个附赠动作，将一位恶魔领主的恩惠赐予你周围30尺内由你选择的每个生物，恩惠持续到你的下回合开始。此军旗的各变体及恩惠的效果详见\"恶魔恩惠\"表。",
+				{
+					"caption": "恶魔恩惠",
+					"type": "table",
+					"colLabels": [
+						"恶魔领主",
+						"恩惠"
+					],
+					"colStyles": [
+						"col-2",
+						"col-10"
+					],
+					"rows": [
+						[
+							"狄摩高根",
+							"{@b 疯狂双念。}受此恩惠影响的生物，进行智力、感知和魅力的豁免检定时具有优势。"
+						],
+						[
+							"弗拉兹厄鲁",
+							"{@b 谎者之眼。}受此恩惠影响的生物，进行感知（洞悉或察觉）检定时具有优势。它还可以用一个附赠动作，自动探知自己15尺内所有幻象和隐藏生物的位置。"
+						],
+						[
+							"格拉兹特",
+							"{@b 痛中之乐。}每当受此恩惠影响的生物遭受重击时，它可以用一个反应进行一次近战武器攻击。"
+						],
+						[
+							"朱庇莱克斯",
+							"{@b 流体移动。}受此恩惠影响的生物可以用一个动作，穿过直径不超过一寸的空间移动至多20尺。它必须在一个能容纳其完整体型的空间中结束此移动，否则将受到5点力场伤害，并回到此次移动起点的空间。"
+						],
+						[
+							"奥喀斯",
+							"{@b 不灭之魂。}若受此恩惠影响的生物生命值降至0，它立即进行一次DC 10的体质豁免。豁免成功，则其生命值改为降至1点。一旦如此做，它在完成一次短休或长休前无法再次使用此能力。"
+						],
+						[
+							"耶诺古",
+							"{@b 横行。}当受此恩惠影响的生物在自己的回合内以近战攻击将一个生物的生命值降至0时，它可以用一个附赠动作移动至多其速度一半的距离，并进行一次近战攻击。"
+						],
+						[
+							"祖格莫伊",
+							"{@b 孢子之吻。}受此恩惠影响的生物免疫毒素，也免疫魅惑和恐慌状态。此外，若其生命值降至0，其10尺内的每个生物受到1d6点毒素伤害。"
+						]
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Demonic_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Gruumsh's Banner",
+			"name": "格乌什军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": "由半兽人或兽人)",
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 格乌什军旗|ATBOH|军旗}时，你可以用一个附赠动作，呼唤盟友向前猛冲。你周围30尺内由你选择的每个生物，都可以用其反应向一个你所见的敌对生物移动至多其速度的距离，且直到你的下回合开始，其武器攻击命中时造成额外{@damage 1d8}点伤害。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Gruumshs_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Rallying Banner",
+			"name": "集结军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 集结军旗|ATBOH|军旗}时，你可以用一个附赠动作，召唤盟友向你集结。你周围30尺内由你选择的每个生物，都可以立即用其反应向你移动至多其速度一半的距离，且不会引发借机攻击。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Rallying_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Righteous Banner",
+			"name": "正义军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": "由牧师或圣武士",
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 正义军旗|ATBOH|军旗}时，你可以用一个附赠动作，向周围的不洁生物灌输虚弱。直到你的下回合开始，你30尺内的每个邪魔或亡灵生物进行属性检定和豁免检定时具有劣势。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Righteous_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Spellguard Banner",
+			"name": "法卫军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": "由吟游诗人、术士、邪术师或法师",
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 法卫军旗|ATBOH|军旗}时，你可以用一个附赠动作，创造一道排斥奥术能量的魔法屏障。直到你的下回合开始，你周围30尺内由你选择的每个生物，进行抵抗法术或其他魔法效应的豁免检定时具有优势，并对来自法术的伤害具有抗性。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Spellguard_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Stalwart Banner",
+			"name": "坚毅军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 坚毅军旗|ATBOH|军旗}时，你可以用一个附赠动作，激励周身众人坚定心志。你周围30尺内由你选择的每个生物，获得等同于你魅力调整值的临时生命值，且在你的下回合开始前，进行避免魅惑或恐慌的豁免检定时具有优势。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Stalwart_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Storm King's Banner",
+			"name": "风暴君王军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你30尺内的一个生物将要受到闪电伤害时，电流会转而被引向这面魔法{@creature 风暴君王军旗|ATBOH|军旗}。该生物不受伤害，改由军旗承受闪电伤害。",
+				"当你持握{@creature 风暴君王军旗|ATBOH|军旗}时，你可以用一个附赠动作将旗插进地面。只要军旗插在泥土或土地中，它便免疫闪电伤害。你在之后的回合中，可以用一个附赠动作将旗从地上拔出。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Storm_Kings_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Warding Banner",
+			"name": "防护军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 防护军旗|ATBOH|军旗}时，你可以用一个附赠动作，召集盟友进行防守。直到你的下回合开始，你周围30尺内由你选择的每个生物，对源自你30尺之外的效应获得半身掩护。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Warding_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Weathering Banner",
+			"name": "天候军旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"当你持握{@creature 天候军旗|ATBOH|军旗}时，你周围30尺内由你选择的生物不会遭受极端天气的影响，并忽略非魔法的困难地形。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Weathering_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "White Flag",
+			"name": "白旗",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"这面纯白旗帜几乎是普世公认的和平象征，行走于旗下者受到庇护、免遭伤害",
+				"当你持握{@creature 白旗|ATBOH|军旗}时，你可以用一个附赠动作，庇护你30尺内的每个生物。每个生物都会处于{@spell 庇护术|PHB}法术的影响之下（豁免DC 15），该法术持续到旗帜降下为止（法术仍可如常提前结束）。若任一生物因进行攻击、施放影响敌人的法术或对另一个生物造成伤害，而使其自身的该法术结束，则该法术对所有受影响的生物一同结束，且直到次日黎明都无法再次使用。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/White_Flag_Avatar.webp"
+						}
+					}
+				]
+			}
+		}
+	],
+	"itemGroup": [
+		{
+			"ENG_name": "War Banner Variant",
+			"name": "战旗变体",
+			"source": "ATBOH",
+			"page": 15,
+			"rarity": "rare",
+			"reqAttune": false,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+				"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。",
+				"下列军旗具有额外特性。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"ENG_name": "Commander's Banner",
+							"type": "entries",
+							"name": "指挥官军旗",
+							"entries": [
+								"当你持握军旗并使用传奇动作指挥部落时，你获得以下益处：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										"当你命令部落攻击时，其武器攻击造成额外{@damage 1d8}点伤害。",
+										"当你命令部落移动时，掷一枚{@dice 1d8}。在部落停止移动前，其护甲等级（AC）获得等同于掷骰结果的加值。",
+										"当你集结部落时，其获得的临时生命值增加{@dice 1d8}点。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conquerer's Banner",
+							"type": "entries",
+							"name": "征服者军旗",
+							"entries": [
+								"当你持握军旗时，你可以用一个附赠动作，向周身散发征服者的威仪。直到你的下回合开始，你周围30尺内由你选择的每个生物武器攻击命中时，均造成{@b 等同于你魅力调整值的额外伤害}，且该区域内的每个敌对生物进行避免恐慌的豁免检定时具有劣势。"
+							]
+						},
+						{
+							"ENG_name": "Demonic Banner",
+							"type": "entries",
+							"name": "恶魔军旗",
+							"entries": [
+								"当你持握军旗时，你可以用一个附赠动作，将一位恶魔领主的恩惠赐予你周围30尺内由你选择的每个生物，恩惠持续到你的下回合开始。此军旗的各变体及恩惠的效果详见\"恶魔恩惠\"表。",
+								{
+									"caption": "恶魔恩惠",
+									"type": "table",
+									"colLabels": [
+										"恶魔领主",
+										"恩惠"
+									],
+									"colStyles": [
+										"col-2",
+										"col-10"
+									],
+									"rows": [
+										[
+											"狄摩高根",
+											"{@b 疯狂双念。}受此恩惠影响的生物，进行智力、感知和魅力的豁免检定时具有优势。"
+										],
+										[
+											"弗拉兹厄鲁",
+											"{@b 谎者之眼。}受此恩惠影响的生物，进行感知（洞悉或察觉）检定时具有优势。它还可以用一个附赠动作，自动探知自己15尺内所有幻象和隐藏生物的位置。"
+										],
+										[
+											"格拉兹特",
+											"{@b 痛中之乐。}每当受此恩惠影响的生物遭受重击时，它可以用一个反应进行一次近战武器攻击。"
+										],
+										[
+											"朱庇莱克斯",
+											"{@b 流体移动。}受此恩惠影响的生物可以用一个动作，穿过直径不超过一寸的空间移动至多20尺。它必须在一个能容纳其完整体型的空间中结束此移动，否则将受到5点力场伤害，并回到此次移动起点的空间。"
+										],
+										[
+											"奥喀斯",
+											"{@b 不灭之魂。}若受此恩惠影响的生物生命值降至0，它立即进行一次DC 10的体质豁免。豁免成功，则其生命值改为降至1点。一旦如此做，它在完成一次短休或长休前无法再次使用此能力。"
+										],
+										[
+											"耶诺古",
+											"{@b 横行。}当受此恩惠影响的生物在自己的回合内以近战攻击将一个生物的生命值降至0时，它可以用一个附赠动作移动至多其速度一半的距离，并进行一次近战攻击。"
+										],
+										[
+											"祖格莫伊",
+											"{@b 孢子之吻。}受此恩惠影响的生物免疫毒素，也免疫魅惑和恐慌状态。此外，若其生命值降至0，其10尺内的每个生物受到1d6点毒素伤害。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Gruumsh's Banner",
+							"type": "entries",
+							"name": "格乌什军旗",
+							"entries": [
+								"当你持握军旗时，你可以用一个附赠动作，呼唤盟友向前猛冲。你周围30尺内由你选择的每个生物，都可以用其反应向一个你所见的敌对生物移动至多其速度的距离，且直到你的下回合开始，其武器攻击命中时造成额外{@damage 1d8}点伤害。"
+							]
+						},
+						{
+							"ENG_name": "Rallying Banner",
+							"type": "entries",
+							"name": "集结军旗",
+							"entries": [
+								"当你持握军旗时，你可以用一个附赠动作，召唤盟友向你集结。你周围30尺内由你选择的每个生物，都可以立即用其反应向你移动至多其速度一半的距离，且不会引发借机攻击。"
+							]
+						},
+						{
+							"ENG_name": "Righteous Banner",
+							"type": "entries",
+							"name": "正义军旗",
+							"entries": [
+								"当你持握军旗时，你可以用一个附赠动作，向周围的不洁生物灌输虚弱。直到你的下回合开始，你30尺内的每个邪魔或亡灵生物进行属性检定和豁免检定时具有劣势。"
+							]
+						},
+						{
+							"ENG_name": "Spellguard Banner",
+							"type": "entries",
+							"name": "法卫军旗",
+							"entries": [
+								"当你持握军旗时，你可以用一个附赠动作，创造一道排斥奥术能量的魔法屏障。直到你的下回合开始，你周围30尺内由你选择的每个生物，进行抵抗法术或其他魔法效应的豁免检定时具有优势，并对来自法术的伤害具有抗性。"
+							]
+						},
+						{
+							"ENG_name": "Stalwart Banner",
+							"type": "entries",
+							"name": "坚毅军旗",
+							"entries": [
+								"当你持握军旗时，你可以用一个附赠动作，激励周身众人坚定心志。你周围30尺内由你选择的每个生物，获得等同于你魅力调整值的临时生命值，且在你的下回合开始前，进行避免魅惑或恐慌的豁免检定时具有优势。"
+							]
+						},
+						{
+							"ENG_name": "Storm King's Banner",
+							"type": "entries",
+							"name": "风暴君王军旗",
+							"entries": [
+								"当你30尺内的一个生物将要受到闪电伤害时，电流会转而被引向这面魔法军旗。该生物不受伤害，改由军旗承受闪电伤害。当你持握军旗时，你可以用一个附赠动作将旗插进地面。只要军旗插在泥土或土地中，它便免疫闪电伤害。你在之后的回合中，可以用一个附赠动作将旗从地上拔出。"
+							]
+						},
+						{
+							"ENG_name": "Warding Banner",
+							"type": "entries",
+							"name": "防护军旗",
+							"entries": [
+								"当你持握军旗时，你可以用一个附赠动作，召集盟友进行防守。直到你的下回合开始，你周围30尺内由你选择的每个生物，对源自你30尺之外的效应获得半身掩护。"
+							]
+						},
+						{
+							"ENG_name": "Weathering Banner",
+							"type": "entries",
+							"name": "天候军旗",
+							"entries": [
+								"当你持握军旗时，你周围30尺内由你选择的生物不会遭受极端天气的影响，并忽略非魔法的困难地形。"
+							]
+						},
+						{
+							"ENG_name": "White Flag",
+							"type": "entries",
+							"name": "白旗",
+							"entries": [
+								"这面纯白旗帜几乎是普世公认的和平象征，行走于旗下者受到庇护、免遭伤害。当你持握军旗时，你可以用一个附赠动作，庇护你30尺内的每个生物。每个生物都会处于{@spell 庇护术|PHB}法术的影响之下（豁免DC 15），该法术持续到旗帜降下为止（法术仍可如常提前结束）。若任一生物因进行攻击、施放影响敌人的法术或对另一个生物造成伤害，而使其自身的该法术结束，则该法术对所有受影响的生物一同结束，且直到次日黎明都无法再次使用。"
+							]
+						}
+					]
+				}
+			],
+			"items": [
+				"指挥官军旗|ATBOH",
+				"征服者军旗|ATBOH",
+				"恶魔军旗|ATBOH",
+				"格乌什军旗|ATBOH",
+				"集结军旗|ATBOH",
+				"正义军旗|ATBOH",
+				"法卫军旗|ATBOH",
+				"坚毅军旗|ATBOH",
+				"风暴君王军旗|ATBOH",
+				"防护军旗|ATBOH",
+				"天候军旗|ATBOH",
+				"白旗|ATBOH"
+			],
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/War_Banner_Variant_Avatar.webp"
+						}
+					}
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Commander's Banner",
+			"name": "指挥官军旗",
+			"shortName": "指挥官军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗并使用传奇动作指挥部落时，你获得以下益处：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"当你命令部落攻击时，其武器攻击造成额外{@damage 1d8}点伤害。",
+								"当你命令部落移动时，掷一枚{@dice 1d8}。在部落停止移动前，其护甲等级（AC）获得等同于掷骰结果的加值。",
+								"当你集结部落时，其获得的临时生命值增加{@dice 1d8}点。"
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Commanders_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Commanders_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Conquerer's Banner",
+			"name": "征服者军旗",
+			"shortName": "征服者军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你可以用一个附赠动作，向周身散发征服者的威仪。直到你的下回合开始，你周围30尺内由你选择的每个生物武器攻击命中时，均造成{@b 等同于你魅力调整值的额外伤害}，且该区域内的每个敌对生物进行避免恐慌的豁免检定时具有劣势。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Conquerers_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Conquerers_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Demonic Banner",
+			"name": "恶魔军旗",
+			"shortName": "恶魔军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你可以用一个附赠动作，将一位恶魔领主的恩惠赐予你周围30尺内由你选择的每个生物，恩惠持续到你的下回合开始。此军旗的各变体及恩惠的效果详见\"恶魔恩惠\"表。",
+						{
+							"caption": "恶魔恩惠",
+							"type": "table",
+							"colLabels": [
+								"恶魔领主",
+								"恩惠"
+							],
+							"colStyles": [
+								"col-2",
+								"col-10"
+							],
+							"rows": [
+								[
+									"狄摩高根",
+									"{@b 疯狂双念。}受此恩惠影响的生物，进行智力、感知和魅力的豁免检定时具有优势。"
+								],
+								[
+									"弗拉兹厄鲁",
+									"{@b 谎者之眼。}受此恩惠影响的生物，进行感知（洞悉或察觉）检定时具有优势。它还可以用一个附赠动作，自动探知自己15尺内所有幻象和隐藏生物的位置。"
+								],
+								[
+									"格拉兹特",
+									"{@b 痛中之乐。}每当受此恩惠影响的生物遭受重击时，它可以用一个反应进行一次近战武器攻击。"
+								],
+								[
+									"朱庇莱克斯",
+									"{@b 流体移动。}受此恩惠影响的生物可以用一个动作，穿过直径不超过一寸的空间移动至多20尺。它必须在一个能容纳其完整体型的空间中结束此移动，否则将受到5点力场伤害，并回到此次移动起点的空间。"
+								],
+								[
+									"奥喀斯",
+									"{@b 不灭之魂。}若受此恩惠影响的生物生命值降至0，它立即进行一次DC 10的体质豁免。豁免成功，则其生命值改为降至1点。一旦如此做，它在完成一次短休或长休前无法再次使用此能力。"
+								],
+								[
+									"耶诺古",
+									"{@b 横行。}当受此恩惠影响的生物在自己的回合内以近战攻击将一个生物的生命值降至0时，它可以用一个附赠动作移动至多其速度一半的距离，并进行一次近战攻击。"
+								],
+								[
+									"祖格莫伊",
+									"{@b 孢子之吻。}受此恩惠影响的生物免疫毒素，也免疫魅惑和恐慌状态。此外，若其生命值降至0，其10尺内的每个生物受到1d6点毒素伤害。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Demonic_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Demonic_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Gruumsh's Banner",
+			"name": "格乌什军旗",
+			"shortName": "格乌什军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你可以用一个附赠动作，呼唤盟友向前猛冲。你周围30尺内由你选择的每个生物，都可以用其反应向一个你所见的敌对生物移动至多其速度的距离，且直到你的下回合开始，其武器攻击命中时造成额外{@damage 1d8}点伤害。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Gruumshs_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Gruumshs_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Horde of Orcs",
+			"name": "兽人部落",
+			"shortName": "兽人部落",
+			"source": "ATBOH",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 兽皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 42",
+				"average": 189
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 16,
+			"int": 7,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"intimidation": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"通用语",
+				"兽人语"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Aggressive",
+					"name": "好斗",
+					"entries": [
+						"部落可以用一个附赠动作，向一个它能看见的敌对生物移动至多其速度的距离。"
+					]
+				},
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一只中型兽人通过的开口。此外，部落免疫任何会改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				},
+				{
+					"ENG_name": "Stampede",
+					"name": "践踏",
+					"entries": [
+						"当部落穿过一个大型或更小生物的空间时，部落可以强迫该生物进行一次{@dc 17}的力量豁免。豁免失败的生物被击倒至{@condition 倒地}状态。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次巨斧攻击；若部落的生命值等于或低于一半，则改为两次巨斧攻击。"
+					]
+				},
+				{
+					"ENG_name": "Greataxe",
+					"name": "巨斧",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}12（{@damage 1d12 + 6}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bloodbath",
+					"name": "血洗",
+					"entries": [
+						"部落空间内由部落选择的每个生物，必须进行一次{@dc 17}的敏捷豁免。豁免失败的生物受到52（{@dice 8d12}）点挥砍伤害；若部落的生命值等于或低于一半，则改为26（{@damage 4d12}）点挥砍伤害。豁免成功者伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Volley",
+					"name": "齐射",
+					"entries": [
+						"部落向其60尺内的一点齐射标枪。以该点为中心、半径10尺的球状区域内的、由部落选择的每个生物，必须进行一次{@dc 17}的敏捷豁免。豁免失败的生物受到28（{@damage 8d6}）点穿刺伤害；若部落的生命值等于或低于一半，则改为14（{@dice 4d6}）点穿刺伤害。豁免成功者伤害减半。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Aggressive",
+					"name": "好斗",
+					"entries": [
+						"部落可以用一个附赠动作，向一个它能看见的敌对生物移动至多其速度的距离。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Horde_of_Orcs_Token.webp",
+			"attachedItems": [
+				"巨斧|phb"
+			],
+			"traitTags": [
+				"Aggressive"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					"兽人",
+					"残酷而高效的兽人常常聚集",
+					"在兽人军官或其他具有宗教重要性的兽人\u2014\u2014例如依那伏之刃或格乌什之眼\u2014\u2014的指挥下，以团体形式进行劫掠"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Horde_of_Orcs_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Horde of Skeletons",
+			"name": "骷髅部落",
+			"shortName": "骷髅部落",
+			"source": "ATBOH",
+			"page": 9,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"残破护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 28",
+				"average": 175
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"能理解它生前所说的所有语言，但不能说话"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一具中型骷髅通过的开口。此外，部落免疫任何会改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Horde Turn Resistance",
+					"name": "部落驱散抗性",
+					"entries": [
+						"部落进行对抗任何驱散亡灵效应的豁免检定时具有优势。此外，无论CR限制如何，部落都会受到\"摧毁不死生物\"职业特性的影响，但它在对抗该特性的豁免检定上具有优势，且豁免失败也不会被摧毁；改为在豁免失败时受到等同于10×牧师等级的光耀伤害，豁免成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次攻击；若部落的生命值等于或低于一半，则改为两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shortbow",
+					"name": "短弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程80/320尺，单一目标。{@h}5（{@damage 1d6 + 2}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Volley",
+					"name": "齐射",
+					"entries": [
+						"部落向其120尺内的一点齐射箭矢。以该点为中心、半径10尺的球状区域内的、由部落选择的每个生物，必须进行一次{@dc 13}的敏捷豁免。豁免失败的生物受到28（{@damage 8d6}）点穿刺伤害；若部落的生命值等于或低于一半，则改为14（{@dice 4d6}）点穿刺伤害。豁免成功者伤害减半。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Horde_of_Skeletons_Token.webp",
+			"attachedItems": [
+				"短弓|phb",
+				"短剑|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"亡灵",
+					"亡灵部落通常由强大的亡灵（例如尸妖）或由创造它们的死灵法师所指挥。",
+					"虽然单个个体通常不被视为巨大威胁，但亡灵部落却能极快地蹂躏聚落与不设防的城镇，并在指挥官的率领下展现出极高的协作能力。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Horde_of_Skeletons_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Horde of Zombies",
+			"name": "僵尸部落",
+			"shortName": "僵尸部落",
+			"source": "ATBOH",
+			"page": 8,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "20d20 + 60",
+				"average": 270
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 18,
+			"dex": 6,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"save": {
+				"wis": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"能理解它生前所说的所有语言，但不能说话"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一只中型僵尸通过的开口。此外，部落免疫任何会改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Horde Turn Resistance",
+					"name": "部落驱散抗性",
+					"entries": [
+						"部落进行对抗任何驱散亡灵效应的豁免检定时具有优势。此外，无论CR限制如何，部落都会受到\"摧毁不死生物\"职业特性的影响，但它在对抗该特性的豁免检定上具有优势，且豁免失败也不会被摧毁；改为在豁免失败时受到等同于10×牧师等级的光耀伤害，豁免成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				},
+				{
+					"ENG_name": "Stampede",
+					"name": "践踏",
+					"entries": [
+						"当部落穿过一个大型或更小生物的空间时，部落可以强迫该生物进行一次{@dc 14}的力量豁免。豁免失败的生物被击倒至{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"部落对非光耀且非来自重击的所有伤害具有抗性。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次猛击攻击；若部落的生命值等于或低于一半，则改为两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）钝击伤害。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Horde_of_Zombies_Token.webp",
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					"亡灵",
+					"亡灵部落通常由强大的亡灵（例如尸妖）或由创造它们的死灵法师所指挥。",
+					"虽然单个个体通常不被视为巨大威胁，但亡灵部落却能极快地蹂躏聚落与不设防的城镇，并在指挥官的率领下展现出极高的协作能力。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Horde_of_Zombies_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Mob",
+			"name": "暴民",
+			"shortName": "暴民",
+			"source": "ATBOH",
+			"page": 7,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "5d20",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一名中型平民通过的开口。此外，部落免疫任何会改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				},
+				{
+					"ENG_name": "Stampede",
+					"name": "践踏",
+					"entries": [
+						"当部落穿过一个大型或更小生物的空间时，部落可以强迫该生物进行一次{@dc 13}的力量豁免。豁免失败的生物被击倒至{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Torches",
+					"name": "火把",
+					"entries": [
+						"暴民在20尺半径内发出明亮光照，其外20尺发出微光。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次攻击；若部落的生命值等于或低于一半，则改为两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Pitchfork",
+					"name": "草叉",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Torch",
+					"name": "火把",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}5（{@damage 1d4 + 3}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rock",
+					"name": "掷石",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程20/60尺，单一目标。{@h}5（{@damage 1d4 + 3}）钝击伤害。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Mob_Token.webp",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					"暴民",
+					"当时局艰难、群情激愤时，普通民众可能会抄起火把与草叉，来一场老式的暴动。他们通常由骗子或平民英雄带领。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Mob_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Pack of Gnolls",
+			"name": "鬣狗人猎群",
+			"shortName": "鬣狗人猎群",
+			"source": "ATBOH",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 兽皮甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d20",
+				"average": 262
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 11,
+			"int": 6,
+			"wis": 10,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"通用语",
+				"鬣狗语"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Rampage",
+					"name": "横行",
+					"entries": [
+						"当部落在自己的回合内以近战攻击将一个生物的生命值降至0时，它可以用一个附赠动作移动至多其速度一半的距离，并使用其\"狂怒\"。"
+					]
+				},
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一名中型鬣狗人通过的开口。此外，部落免疫任何会改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				},
+				{
+					"ENG_name": "Stampede",
+					"name": "践踏",
+					"entries": [
+						"当部落穿过一个大型或更小生物的空间时，部落可以强迫该生物进行一次{@dc 16}的力量豁免。豁免失败的生物被击倒至{@condition 倒地}状态。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次矛攻击；若部落的生命值等于或低于一半，则改为两次矛攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 8}，触及5尺或射程20/60尺，单一目标。{@h}8（{@damage 1d6 + 5}）近战穿刺伤害，或8（{@damage 1d6 + 5}）远程穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Frenzy",
+					"name": "狂怒",
+					"entries": [
+						"部落空间内由部落选择的每个生物，必须进行一次{@dc 16}的敏捷豁免。豁免失败的生物受到28（{@damage 8d6}）点穿刺伤害；若部落的生命值等于或低于一半，则改为14（{@damage 4d6}）点穿刺伤害。豁免成功者伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Volley",
+					"name": "齐射",
+					"entries": [
+						"部落向其60尺内的一点齐射长矛。以该点为中心、半径10尺的球状区域内的、由部落选择的每个生物，必须进行一次{@dc 16}的敏捷豁免。豁免失败的生物受到28（{@damage 8d6}）点穿刺伤害；若部落的生命值等于或低于一半，则改为14（{@dice 4d6}）点穿刺伤害。豁免成功者伤害减半。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Pack_of_Gnolls_Token.webp",
+			"attachedItems": [
+				"矛|phb"
+			],
+			"traitTags": [
+				"Rampage"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					"鬣狗人",
+					"嗜血成性的掠夺者\u2014\u2014鬣狗人会在战争或饥荒时节结成猎群，扫荡大地搜寻猎物。这些猎群常由鬣狗人头领率领，有时还会有可怕的耶诺古毒牙随行。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Pack_of_Gnolls_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Pack of Wolves",
+			"name": "狼群",
+			"shortName": "狼群",
+			"source": "ATBOH",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d20 + 12",
+				"average": 138
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 12,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"stealth": "+4",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一只中型狼通过的开口。此外，部落免疫任何会改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"部落对处于其空间内的生物进行攻击检定时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次啃咬攻击；若部落的生命值等于或低于一半，则改为两次啃咬攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}9（{@damage 2d4 + 4}）穿刺伤害。若目标为生物，它必须通过一次{@dc 14}的力量豁免，否则被击倒至{@condition 倒地}状态。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Pack_of_Wolfes_Token.webp",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					"野兽",
+					"狼是群居动物，极少单独狩猎。当灾祸降临时，狼会集结成群、协同作战。这些狼群常由恐狼带领。",
+					"有时，德鲁伊或荒野武士也能与狼群达成协议，转而率领它们。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Pack_of_Wolfes_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Rallying Banner",
+			"name": "集结军旗",
+			"shortName": "集结军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你可以用一个附赠动作，召唤盟友向你集结。你周围30尺内由你选择的每个生物，都可以立即用其反应向你移动至多其速度一半的距离，且不会引发借机攻击。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Rallying_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Rallying_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Righteous Banner",
+			"name": "正义军旗",
+			"shortName": "正义军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你可以用一个附赠动作，召唤盟友向你集结。你周围30尺内由你选择的每个生物，都可以立即用其反应向你移动至多其速度一半的距离，且不会引发借机攻击。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Righteous_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Righteous_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Spellguard Banner",
+			"name": "法卫军旗",
+			"shortName": "法卫军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你可以用一个附赠动作，创造一道排斥奥术能量的魔法屏障。直到你的下回合开始，你周围30尺内由你选择的每个生物，进行抵抗法术或其他魔法效应的豁免检定时具有优势，并对来自法术的伤害具有抗性。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Spellguard_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Spellguard_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Squad of Bowmen",
+			"name": "弓手小队",
+			"shortName": "弓手小队",
+			"source": "ATBOH",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d20 + 10",
+				"average": 115
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"任何一种语言（通常是通用语）"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一名中型步兵通过的开口。此外，部落免疫任何会改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次长弓攻击；若部落的生命值等于或低于一半，则改为两次长弓攻击。"
+					]
+				},
+				{
+					"ENG_name": "Longbow",
+					"name": "长弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程150/600尺，单一目标。{@h}6（{@damage 1d8 + 2}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Volley",
+					"name": "齐射",
+					"entries": [
+						"部落向其150尺内的一点齐射箭矢。以该点为中心、半径10尺的球状区域内的、由部落选择的每个生物，必须进行一次{@dc 12}的敏捷豁免。豁免失败的生物受到36（{@damage 8d8}）点穿刺伤害；若部落的生命值等于或低于一半，则改为18（{@dice 4d8}）点穿刺伤害。豁免成功者伤害减半。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Squad_of_Bowmen_Token.webp",
+			"attachedItems": [
+				"长弓|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"军队",
+					"有些国家保有常备军，也有些国家只在战时仓促征召士兵。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Squad_of_Bowmen_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Squad of Hobgoblins",
+			"name": "大地精小队",
+			"shortName": "大地精小队",
+			"source": "ATBOH",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 链甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d20 + 13",
+				"average": 149
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 9,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"通用语",
+				"地精语"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Martial Advantage",
+					"name": "成军优势",
+					"entries": [
+						"当部落用一件近战武器攻击时，该武器造成额外一枚伤害骰的伤害（已计入攻击）。"
+					]
+				},
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一名中型大地精通过的开口。此外，部落免疫任何法术",
+						"或会改变其形态的效应。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				},
+				{
+					"ENG_name": "Stampede",
+					"name": "践踏",
+					"entries": [
+						"当部落穿过一个大型或更小生物的空间时，部落可以强迫该生物进行一次{@dc 15}的力量豁免。豁免失败的生物被击倒至{@condition 倒地}状态。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次矛攻击；若部落的生命值等于或低于一半，则改为两次矛攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}11（{@damage 2d6 + 4}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Coordinated Offensive",
+					"name": "协同攻势",
+					"entries": [
+						"部落空间内由部落选择的每个生物，必须进行一次{@dc 15}的敏捷豁免。豁免失败的生物受到56（{@damage 16d6}）点穿刺伤害；若部落的生命值等于或低于一半，则改为28（{@dice 8d6}）点穿刺伤害。豁免成功者伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Volley",
+					"name": "齐射",
+					"entries": [
+						"部落向其150尺内的一点齐射箭矢。以该点为中心、半径10尺的球状区域内的、由部落选择的每个生物，必须进行一次{@dc 15}的敏捷豁免。豁免失败的生物受到36（{@damage 8d8}）点穿刺伤害；若部落的生命值等于或低于一半，则改为18（{@dice 4d8}）点穿刺伤害。豁免成功者伤害减半。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Squad_of_Hobgoblins_Token.webp",
+			"attachedItems": [
+				"矛|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					"大地精",
+					"大地精军阀的军队可以划分为多个小队，以便于层层指挥。小队通常由大地精长官率领，而大地精军阀往往同时统率多个小队。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Squad_of_Hobgoblins_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Squad of Infantrymen",
+			"name": "步兵小队",
+			"shortName": "步兵小队",
+			"source": "ATBOH",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 链甲衫|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d20 + 12",
+				"average": 138
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+7"
+			},
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"任何一种语言（通常是通用语）"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Horde",
+					"name": "部落",
+					"entries": [
+						"部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让一名中型步兵通过的开口。此外，部落免疫任何会改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Reactive",
+					"name": "机敏反应",
+					"entries": [
+						"部落可以在战斗中的每个回合进行一次反应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"部落进行四次长矛攻击；若部落的生命值等于或低于一半，则改为两次长矛攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Spear Wall",
+					"name": "矛墙",
+					"entries": [
+						"部落5尺内由部落选择的每个生物，必须进行一次{@dc 15}的敏捷豁免。豁免失败的生物受到28（{@dice 8d6}）点穿刺伤害；若部落的生命值等于或低于一半，则改为14（{@damage 4d6}）点穿刺伤害。豁免成功者伤害减半。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Squad_of_Infantrymen_Token.webp",
+			"attachedItems": [
+				"矛|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"军队",
+					"有些国家保有常备军，也有些国家只在战时仓促征召士兵。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Squad_of_Infantrymen_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Stalwart Banner",
+			"name": "坚毅军旗",
+			"shortName": "坚毅军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你可以用一个附赠动作，激励周身众人坚定心志。你周围30尺内由你选择的每个生物，获得等同于你魅力调整值的临时生命值，且在你的下回合开始前，进行避免魅惑或恐慌的豁免检定时具有优势。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Stalwart_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Stalwart_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Storm King's Banner",
+			"name": "风暴君王军旗",
+			"shortName": "风暴君王军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你30尺内的一个生物将要受到闪电伤害时，电流会转而被引向这面魔法军旗。该生物不受伤害，改由军旗承受闪电伤害。当你持握军旗时，你可以用一个附赠动作将旗插进地面。只要军旗插在泥土或土地中，它便免疫闪电伤害。你在之后的回合中，可以用一个附赠动作将旗从地上拔出。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Storm_Kings_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Storm_Kings_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "War Banner",
+			"name": "战旗",
+			"shortName": "战旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/War_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/War_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Warding Banner",
+			"name": "防护军旗",
+			"shortName": "防护军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你可以用一个附赠动作，召集盟友进行防守。直到你的下回合开始，你周围30尺内由你选择的每个生物，对源自你30尺之外的效应获得半身掩护。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Warding_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Warding_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Weathering Banner",
+			"name": "天候军旗",
+			"shortName": "天候军旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"当你持握军旗时，你周围30尺内由你选择的生物不会遭受极端天气的影响，并忽略非魔法的困难地形。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Weathering_Banner_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/Weathering_Banner_Avatar.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "White Flag",
+			"name": "白旗",
+			"shortName": "白旗",
+			"source": "ATBOH",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Banner Effects",
+					"name": "军旗效应",
+					"entries": [
+						"这面纯白旗帜几乎是普世公认的和平象征，行走于旗下者受到庇护、免遭伤害。当你持握军旗时，你可以用一个附赠动作，庇护你30尺内的每个生物。每个生物都会处于{@spell 庇护术|PHB}法术的影响之下（豁免DC 15），该法术持续到旗帜降下为止（法术仍可如常提前结束）。若任一生物因进行攻击、施放影响敌人的法术或对另一个生物造成伤害，而使其自身的该法术结束，则该法术对所有受影响的生物一同结束，且直到次日黎明都无法再次使用。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/White_Flag_Token.webp",
+			"fluff": {
+				"entries": [
+					"军旗是一面绘有符号或徽记的旗帜或布帛，用于集结士兵、协调军事行动。用一个动作，即可将旗面系上长柄刀、长戟、长矛、长棍或矛，或将其取下。",
+					"军旗是一个AC 15、20生命值的物体。若其生命值降至0，则被摧毁。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/White_Flag_Avatar.webp"
+						}
+					}
+				]
+			}
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "The Book of Hordes is a monster and military supplement created to streamline large-scale battles.",
+			"name": "《部落之书》是一部为简化大规模战斗而设计的怪物与军事补充书。",
+			"id": "ATBOH",
+			"source": "ATBOH",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ATBOH/The_Book_of_Hordes_Cover.webp"
+			},
+			"published": "2022-08-27",
+			"contents": [
+				{
+					"ENG_name": "Preface",
+					"name": "前言",
+					"headers": [
+						"使用本书",
+						"指挥官",
+						"部落"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					}
+				},
+				{
+					"ENG_name": "Commanders",
+					"name": "指挥官",
+					"headers": [
+						"指挥官资格",
+						"指挥官特性"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					}
+				},
+				{
+					"ENG_name": "Hordes",
+					"name": "部落",
+					"headers": [
+						"部落资格",
+						{
+							"depth": 1,
+							"header": "同质性"
+						},
+						{
+							"depth": 1,
+							"header": "心态"
+						},
+						{
+							"depth": 1,
+							"header": "体型"
+						},
+						{
+							"depth": 1,
+							"header": "施法"
+						},
+						"部落特性",
+						{
+							"depth": 1,
+							"header": "可选特性"
+						},
+						{
+							"depth": 1,
+							"header": "改造特殊能力"
+						},
+						"可选规则",
+						{
+							"depth": 1,
+							"header": "范围效应与多重目标"
+						},
+						{
+							"depth": 1,
+							"header": "强大的指挥官"
+						},
+						{
+							"depth": 1,
+							"header": "部落作为生物生成器"
+						},
+						{
+							"depth": 1,
+							"header": "擒抱部落"
+						},
+						{
+							"depth": 1,
+							"header": "生还者"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					}
+				},
+				{
+					"ENG_name": "Mobs",
+					"name": "暴民",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					}
+				},
+				{
+					"ENG_name": "Player Options",
+					"name": "玩家选项",
+					"headers": [
+						"魔法物品",
+						{
+							"depth": 1,
+							"header": "战旗"
+						},
+						"训练部落",
+						"训练选项",
+						{
+							"depth": 1,
+							"header": "属性值训练"
+						},
+						{
+							"depth": 1,
+							"header": "坚守战线"
+						},
+						{
+							"depth": 1,
+							"header": "威吓"
+						},
+						{
+							"depth": 1,
+							"header": "警戒"
+						},
+						{
+							"depth": 1,
+							"header": "束缚"
+						},
+						{
+							"depth": 1,
+							"header": "掩护"
+						},
+						{
+							"depth": 1,
+							"header": "践踏"
+						},
+						{
+							"depth": 1,
+							"header": "技能训练"
+						},
+						{
+							"depth": 1,
+							"header": "照料伤员"
+						},
+						{
+							"depth": 1,
+							"header": "武器训练"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					}
+				},
+				{
+					"ENG_name": "Art Credits",
+					"name": "艺术致谢",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					}
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "ATBOH",
+			"source": "ATBOH",
+			"data": [
+				{
+					"ENG_name": "Preface",
+					"type": "section",
+					"name": "前言",
+					"page": 3,
+					"entries": [
+						"《{@i 部落之书}》是一部为简化大规模战斗而设计的怪物与军事补充书。",
+						"本合集的内容，旨在为常规《龙与地下城》第五版团队的游戏进行平衡设计。",
+						{
+							"ENG_name": "Using this Book",
+							"type": "entries",
+							"name": "使用本书",
+							"page": 3,
+							"entries": [
+								"本书提供的机制与怪物，供希望引入更大规模的宏大战斗、又不想为追踪几十条生命值和回合而烦恼的地下城主使用。以部落的形式运作怪物，可以让回合更快、更简洁，免去与大群独立怪物战斗时所需的微观管理。",
+								"这从两方面简化了战斗。其一，地下城主需要追踪的内容更少，可以将注意力集中在叙事与世界构建上。",
+								"其二，玩家不再需要微观管理对敌人的目标选择，面对的将是一个灵动而有趣的敌人，同时也不会因行动经济上的悬殊数量而被彻底压垮。"
+							]
+						},
+						{
+							"ENG_name": "Commanders",
+							"type": "entries",
+							"name": "指挥官",
+							"page": 3,
+							"entries": [
+								"本书的\"指挥官\"章节提供了一套可以附加到普通怪物身上的机制，供那些虽不适合编入部落、但地下城主仍希望其以某种方式影响部落的怪物使用。这些机制简单且大体通用，可以适配各种不同的怪物。\"部落\"章节的每个部落还推荐了几种通常担任该部落指挥官的生物。",
+								"书中还列出了多种推翻指挥官的方法，以便在玩家决定不想正面迎击部落时，为地下城主提供灵感与指导。"
+							]
+						},
+						{
+							"ENG_name": "Hordes",
+							"type": "entries",
+							"name": "部落",
+							"page": 3,
+							"entries": [
+								"\"部落\"章节给出了将一群怪物转化为单一部落的规则，并提供了九个示例部落。这些示例可直接用于战斗，同时也可作为范例，帮助地下城主用其他生物创造自己独一无二的部落。"
+							]
+						},
+						{
+							"ENG_name": "Other Formats",
+							"type": "inset",
+							"name": "其他格式",
+							"page": 3,
+							"entries": [
+								"本书可在{@link PDF 版本。|https://drive.google.com/file/d/1m-fZ6jr9KXj8WJ2xEuIufy-yN5EpTJ54/view?usp=sharing}中获取。关于本书的讨论与反馈可见于{@link Reddit 论坛|https://www.reddit.com/r/UnearthedArcana/comments/b5c7px/monster_the_book_of_hordes_rules_for_mass_warfare/}。本书内容还可与多种系统整合，详见下文。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Commanders",
+					"type": "section",
+					"name": "指挥官",
+					"page": 4,
+					"entries": [
+						"在战斗中，部落身边常有强大的个体随行，它们以指挥官的身份引导并强化部落。这些生物应当以个体身份进行先攻检定。",
+						{
+							"ENG_name": "Commander Eligibility",
+							"type": "entries",
+							"name": "指挥官资格",
+							"entries": [
+								"指挥官的角色，通常由与所统率部落相似、却在某一方面出类拔萃的生物担任。这一方面因所指挥的部落而异：有些生物会团结在最强的勇士旗下，有些则会追随最睿智的谋士。一般而言，战斗实力与魅力是衡量指挥官资格的标准。",
+								"此类生物包括兽人军官、大地精长官、大地精军阀和骑士等等。这些生物通常具备\"领导\"动作，或拥有其他能鼓舞、集结部落的方法。"
+							]
+						},
+						{
+							"ENG_name": "Commander Features",
+							"type": "entries",
+							"name": "指挥官特性",
+							"entries": [
+								"当指挥官处于其统率部落的60尺内时，指挥官可以在其他生物的回合结束时，从下列选项中采取1项传奇动作。指挥官会在其回合开始时恢复已消耗的传奇动作。",
+								{
+									"type": "list",
+									"items": [
+										"{@b 攻击。}指挥官与部落各进行一次武器攻击。",
+										"{@b 冲锋。}指挥官与部落各移动至多其速度的距离。",
+										"{@b 集结。}部落获得等同于指挥官CR＋指挥官魅力调整值的临时生命值（至少为1）。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Optional Rule: Coup D'état",
+							"type": "inset",
+							"name": "可选规则：政变",
+							"entries": [
+								"要想维持统率，指挥官必须保持对部落的权威。反之，失去部落信任或敬重的指挥官，会发现其掌控力日渐流失。与部落及其指挥官对峙时，有许多方法可以让指挥官垮台。",
+								"{@b 奥术干预。}有些指挥官依靠奥术手段维持对部落的控制，或凭借强大的魅惑法术，或通过召唤出的仆从。要动摇此类指挥官的掌控，可以使用破除魔法的法术，或对部落施加更为强大的魅惑。另外，也可以对指挥官本人施加魅惑，借指挥官的影响力间接控制部落。",
+								"{@b 贿赂。}靠金钱控制部落的指挥官，同样容易被人出更高的价。足够分量的钱财展示或财富许诺，足以动摇部落的效忠对象。",
+								"{@b 人格暗杀。}对凭借魅力树立权威的指挥官，抹黑与贬损其人格可以削弱它对部落的权威。诋毁指挥官名誉的举动自然不会无人阻拦，并可能演变为指挥官与诽谤者之间以某项魅力技能进行的对抗技能检定。视部落对指挥官的初始看法，此次检定中指挥官可具优势、诽谤者可具劣势，或两者兼有。",
+								"{@b 决斗。}对凭借战斗实力树立权威的指挥官，一场决斗的挑战或许就足以动摇部落对它的敬重。要取代指挥官、夺取部落的控制权，必须在决斗中将其击败。某些部落可能会规定必须遵守的规则，并对任何违犯深恶痛绝。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Hordes",
+					"type": "section",
+					"name": "部落",
+					"page": 5,
+					"entries": [
+						"大量战斗单位参与的战斗，往往会变得混乱、耗时，且难以主持与追踪。这里建立的部落规则通过将相似的生物编为单一单位来缓解这些问题，让地下城主需要追踪的回合与生命值池更少。",
+						"当一场遭遇本会涉及大量相似或相同的生物时，可以用单一部落取代它们。",
+						{
+							"ENG_name": "Horde Eligibility",
+							"type": "entries",
+							"name": "部落资格",
+							"page": 5,
+							"entries": [
+								"部落系统对组成部落的生物有若干要求，以便其最佳运作。这些生物的条件按字母顺序列出。",
+								{
+									"ENG_name": "Homogeneity",
+									"type": "entries",
+									"name": "同质性",
+									"entries": [
+										"本文所述的部落，旨在代表协同共事的相同生物群体。因此，让单一部落代表一群混杂的生物，可能引发复杂问题。这是为了保持部落机制上的简洁，也便于地下城主使用。",
+										"只要能维持部落的机制简洁，经过审慎考量后，可以解除此规则。"
+									]
+								},
+								{
+									"ENG_name": "Mindset",
+									"type": "entries",
+									"name": "心态",
+									"entries": [
+										"并非所有生物都适合群体协作。狂战士组成的部落或许能一同痛快肆虐，而一群间谍若以部落形式行动，多半不如各自为战来得有效。因此，部落应由那些能从集体协作中获益、且具备协作能力的生物组成。"
+									]
+								},
+								{
+									"ENG_name": "Size",
+									"type": "entries",
+									"name": "体型",
+									"entries": [
+										"本文所述的部落，旨在代表大量协同共事的生物。",
+										"由小型或中型生物组成的部落体型为巨型，在地图上占据20尺×20尺的区域。此面积最多可容纳16只中型生物而不重叠。因此，小型或中型生物组成的部落，所代表的个体生物不应超过16个。",
+										"大型或更大的生物难以编入部落，应作为独立战斗单位对待。微型生物的群体应视为集群而非部落。此类集群包括鼠群、食人鱼群和昆虫集群等等。"
+									]
+								},
+								{
+									"ENG_name": "Spellcasting",
+									"type": "entries",
+									"name": "施法",
+									"entries": [
+										"能够施法的生物\u2014\u2014无论是天赋施法，还是拥有施法职业的等级\u2014\u2014都应作为独立战斗单位对待。这是为了维持法术位限制，因为法术可能是扭转战局的极为强大的工具。",
+										"只要审慎选择施法者部落可用的法术与法术位，经过审慎考量后，可以解除此规则。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Horde Features",
+							"type": "entries",
+							"name": "部落特性",
+							"page": 5,
+							"entries": [
+								"生物部落保留其个体生物的大部分能力，并获得以下能力：",
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"items": [
+										"{@b 生命值。}部落的生命值，应大致等于单个怪物生命值的12倍。",
+										"{@b 属性值提升。}部落的力量值提高6点。",
+										"{@b 挑战等级。}部落的挑战等级由其伤害输出与生命值决定。计算怪物挑战等级的更多信息，请参阅《城主指南》（第273页）。",
+										"{@b 状态免疫。}部落获得对以下状态的免疫：魅惑、恐慌、受擒、麻痹、中毒、石化、倒地、束缚、震慑和昏迷。",
+										"{@b 部落。}部落可以占据其他生物的空间，反之亦然；部落还能穿过任何大到足以让部落中单个生物通过的开口。此外，部落免疫任何会改变其形态的法术或效应。",
+										"{@b 机敏反应。}部落可以在战斗中的每个回合进行一次反应。",
+										"{@b 多重攻击。}部落进行四次攻击；若部落的生命值等于或低于一半，则改为两次攻击。若部落中的个体生物原本拥有\"多重攻击\"动作，部落不会获得该个体的\"多重攻击\"动作。"
+									]
+								},
+								{
+									"ENG_name": "Optional Features",
+									"type": "entries",
+									"name": "可选特性",
+									"entries": [
+										"有些部落还能获得以下特性。",
+										{
+											"type": "list",
+											"style": "list-no-bullets",
+											"items": [
+												"{@b 践踏。}当部落穿过一个体型不大于其个体成员一级的生物的空间时，该生物必须通过一次力量豁免，否则被击倒至倒地状态。此豁免的DC等于8＋部落的熟练加值＋部落的力量调整值。例如，中型兽人组成的部落可以踩踏一只大型的恐狼。",
+												"{@b 范围攻击。}部落空间内、或以远程武器射程内一点为中心、半径10尺的球状范围内的、由部落选择的每个生物，必须进行一次敏捷豁免。豁免失败的生物，受到等同于个体生物武器伤害骰8倍的伤害；若部落的生命值等于或低于一半，则改为4倍。豁免成功者伤害减半。此豁免的DC等于8＋部落的武器攻击加值。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adapting Special Abilities",
+									"type": "entries",
+									"name": "改造特殊能力",
+									"entries": [
+										"单个怪物可能具备的某些能力，若原样照搬进部落会难以处理。以下是一些个体能力经过改造、以适配部落的示例。",
+										{
+											"type": "list",
+											"style": "list-no-bullets",
+											"items": [
+												"{@b 集群战术。}部落对处于其空间内的生物进行攻击检定时具有优势。",
+												"{@b 不死坚韧。}部落对非光耀且非来自重击的所有伤害具有抗性。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Optional Rules",
+							"type": "entries",
+							"name": "可选规则",
+							"page": 6,
+							"entries": [
+								"本节详述了一些地下城主可用于部落的可选规则。它们涵盖多种情形，从与能影响众多生物的效应的互动，到部落覆灭后幸存的个体生物。",
+								{
+									"ENG_name": "Area of Effects and Many Targets",
+									"type": "entries",
+									"name": "范围效应与多重目标",
+									"entries": [
+										"虽然部落作为整体对许多状态免疫，但能够指定部落整个空间、或能指定大量生物的效应，可以暂停这些免疫。若效应指定大量生物（10个或更多），则部落必须是该效应的唯一目标。部落失去对这一特定效应的免疫，但进行任何与之相关的豁免检定时具有优势。",
+										"此外，若某个伤害效应的区域覆盖了部落的整个空间，部落便对该效应的伤害具有易伤。",
+										"会与此规则互动的法术示例，包括{@spell 火球术}、{@spell 恐惧术}、{@spell 群体暗示术}、{@spell 怪影杀手}和{@spell 群体变形术}，{@spell 等}。"
+									]
+								},
+								{
+									"ENG_name": "Powerful Commanders",
+									"type": "entries",
+									"name": "强大的指挥官",
+									"entries": [
+										"若一个强大的生物被任命为多个部落的指挥官，地下城主可以选择作为其\"指挥官特性\"的一部分，授予它额外的传奇动作。指挥官每统率一个部落，便获得一项传奇动作，最多不超过三项。",
+										"此规则一般适用于挑战等级5或更高的强大生物担任指挥官的情况。"
+									]
+								},
+								{
+									"ENG_name": "Horde as a Creature Generator",
+									"type": "entries",
+									"name": "部落作为生物生成器",
+									"entries": [
+										"有时，部落会发现派出一个个体生物去执行特定任务（如侦察或外交）更为划算。在部落回合开始时，它可以分离出一个个体生物。部落失去等同于该生物生命值的生命值。",
+										"该生物在部落的先攻轮到时行动。"
+									]
+								},
+								{
+									"ENG_name": "Grappling a Horde",
+									"type": "entries",
+									"name": "擒抱部落",
+									"entries": [
+										"若一个生物试图擒抱部落，地下城主可以让部落进行对抗检定，而非直接动用其状态免疫。对抗检定失败时，部落失去等同于单个成员生命值的生命值，并产生一个个体生物。该生物在部落的先攻轮到时行动，且处于被擒抱状态。"
+									]
+								},
+								{
+									"ENG_name": "Survivors",
+									"type": "entries",
+									"name": "生还者",
+									"entries": [
+										"当一个指定大范围效应的效应将部落生命值降至0时，地下城主可以让它进行一次体质豁免，以决定是否有幸存者。豁免DC等于5＋所受伤害。豁免成功时，地下城主可以额外加入1d4个来自该部落的个体生物，它们在部落的先攻轮到时行动。",
+										"若部落是被一次攻击将生命值降至0，则不应使用此规则。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mobs",
+					"type": "section",
+					"name": "暴民",
+					"page": 7,
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								"{@creature 暴民|ATBOH}",
+								"{@creature 僵尸部落|ATBOH}",
+								"{@creature 骷髅部落|ATBOH}",
+								"{@creature 兽人部落|ATBOH}",
+								"{@creature 大地精小队|ATBOH}",
+								"{@creature 鬣狗人猎群|ATBOH}",
+								"{@creature 步兵小队|ATBOH}",
+								"{@creature 弓手小队|ATBOH}",
+								"{@creature 狼群|ATBOH}"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Player Options",
+					"type": "section",
+					"name": "玩家选项",
+					"page": 15,
+					"entries": [
+						"有时会出现玩家角色受命统率部落的情况。本节介绍了为指挥官设计的魔法物品，以及训练部落的规则。",
+						{
+							"ENG_name": "Magic Items",
+							"type": "entries",
+							"name": "魔法物品",
+							"entries": [
+								"这些物品按字母顺序排列。",
+								{
+									"ENG_name": "{@item War Banner Variant|ATBOH|War Banners}",
+									"type": "entries",
+									"name": "{@item 战旗变体|ATBOH|战旗}",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-no-bullets",
+											"items": [
+												"{@item 指挥官军旗|ATBOH}",
+												"{@item 征服者军旗|ATBOH}",
+												"{@item 恶魔军旗|ATBOH}",
+												"{@item 格乌什军旗|ATBOH}",
+												"{@item 集结军旗|ATBOH}",
+												"{@item 正义军旗|ATBOH}",
+												"{@item 法卫军旗|ATBOH}",
+												"{@item 坚毅军旗|ATBOH}",
+												"{@item 风暴君王军旗|ATBOH}",
+												"{@item 防护军旗|ATBOH}",
+												"{@item 天候军旗|ATBOH}",
+												"{@item 白旗|ATBOH}"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Training Hordes",
+							"type": "entries",
+							"name": "训练部落",
+							"entries": [
+								"当玩家角色受命指挥一个部落时，他或她可以利用休整期来训练部落：强化它、为它配备装备，或教会它新的能力。",
+								"{@b 资源。}依照《珊娜萨的万事指南》中的范例，训练一个部落通常需要至少十个工作周；这一时间会减少等同于指挥官智力调整值的工作周数（智力减值不会增加所需时间）。训练期间，必须每个工作周向部落支付薪饷，建议开销为每工作周250 gp。训练完成后，部落获得\"训练选项\"一节中详述的选项之一。",
+								"{@b 困境。}训练期间出现的困境，可能与部落的士气或能力有关。每花费十个工作周训练，就有10%的几率出现一次困境，示例见\"部落训练困境\"表。",
+								{
+									"caption": "部落训练困境",
+									"type": "table",
+									"colLabels": [
+										"d6",
+										"困境"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"1",
+											"部落滋生叛意，开始另寻新指挥官。"
+										],
+										[
+											"2",
+											"{@dice 1d6}名部落成员忍无可忍，叛离部落。部落的生命值减少等同于这些个体生物生命值上限总和的点数，且在找到替补成员前，无法恢复这些失去的生命值。"
+										],
+										[
+											"3",
+											"疾病、低落士气或类似的挫折侵袭部落，使训练进度延后{@dice 1d6}周。"
+										],
+										[
+											"4",
+											"部落的装备受损，或部落损坏了公共设施，需花费{@dice 10d10} gp进行修理。"
+										],
+										[
+											"5",
+											"部落成员之间产生激烈分歧，在冲突解决之前，部落不愿继续训练。"
+										],
+										[
+											"6",
+											"部落中有一名成员是间谍，被派来刺探部落的计划与弱点。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Training Options",
+							"type": "entries",
+							"name": "训练选项",
+							"entries": [
+								"这些训练选项按字母顺序排列。",
+								{
+									"ENG_name": "Ability Score Training",
+									"type": "entries",
+									"name": "属性值训练",
+									"entries": [
+										"部落的一项属性值提高1点。更新部落的数据，以反映属性值的变化。"
+									]
+								},
+								"部落获得以下能力／动作：",
+								{
+									"ENG_name": "Hold the Line",
+									"type": "entries",
+									"name": "坚守战线",
+									"entries": [
+										"当一个生物进入部落的空间时，部落可以用其反应对该生物进行一次借机攻击。此外，对由部落选择的生物而言，部落的空间视为困难地形。"
+									]
+								},
+								{
+									"ENG_name": "Intimidate",
+									"type": "entries",
+									"name": "威吓",
+									"entries": [
+										"当部落的指挥官处于其30尺内时，部落可以用一个动作发出战斗咆哮，向周身灌输恐惧。部落60尺内由部落选择的、能听见它的每个生物，必须通过一次感知豁免，否则对部落恐慌1分钟。该生物可以在其每个回合结束时重复此豁免，成功则结束自身的该效应。若生物豁免成功或该效应对其结束，该生物在接下来的24小时内，免疫该部落的\"威吓\"。",
+										"此豁免的DC等于8＋部落的熟练加值＋指挥官的魅力调整值。"
+									]
+								},
+								{
+									"ENG_name": "Overwatch",
+									"type": "entries",
+									"name": "警戒",
+									"entries": [
+										"当部落使用其\"多重攻击\"动作时，它可以放弃一次攻击，改为进行一次感知（察觉）检定。此外，若部落在其下回合开始前，发现有生物从躲藏中现身，它可以用一个反应对该生物进行一次武器攻击。"
+									]
+								},
+								{
+									"ENG_name": "Restrain",
+									"type": "entries",
+									"name": "束缚",
+									"entries": [
+										"当部落擒抱一个大型或更小的生物时，该生物陷入束缚状态，直到擒抱结束。"
+									]
+								},
+								{
+									"ENG_name": "Shelter",
+									"type": "entries",
+									"name": "掩护",
+									"entries": [
+										"当部落采取闪避动作时，部落空间内的生物，对源自部落空间之外的效应获得半身掩护。"
+									]
+								},
+								{
+									"ENG_name": "Stampede",
+									"type": "entries",
+									"name": "践踏",
+									"entries": [
+										"若部落尚未拥有\"践踏\"能力，则当部落穿过一个大型或更小生物的空间时，部落可以强迫该生物进行一次力量豁免。豁免失败的生物被击倒至倒地状态。",
+										"此豁免的DC等于{@b 8＋部落的熟练加值＋部落的力量调整值}。"
+									]
+								},
+								{
+									"ENG_name": "Skill Training",
+									"type": "entries",
+									"name": "技能训练",
+									"entries": [
+										"部落获得一项由指挥官选择的技能的熟练项。指挥官必须熟练该技能，才能完成此训练。更新部落的数据，以反映新的熟练项。"
+									]
+								},
+								{
+									"ENG_name": "Tend the Wounded",
+									"type": "entries",
+									"name": "照料伤员",
+									"entries": [
+										"当部落使用其\"多重攻击\"动作时，它可以放弃一次攻击，改为尝试稳定其空间内的一个生物。部落也可以用此能力照料自己的一名成员。"
+									]
+								},
+								{
+									"ENG_name": "Weapon Training",
+									"type": "entries",
+									"name": "武器训练",
+									"entries": [
+										"部落获得一项由你选择的武器的熟练项。指挥官必须熟练所选武器，且部落的每个个体成员都必须装备该武器，才能完成此训练。更新部落的数据，以反映新武器。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Art Credits",
+					"type": "section",
+					"name": "艺术致谢",
+					"page": 17,
+					"entries": [
+						"{@link 陨落之城：Jaromir Hrivnac|https://www.artstation.com/artwork/8OxqG}",
+						"{@link 决斗：QuintusCassius|https://www.deviantart.com/quintuscassius/art/Duel-731562720}",
+						"{@link 震后之风：Eedenartwork|https://www.deviantart.com/eedenartwork/art/After-Shock-Wind-Event-623825276}",
+						"{@link 愤怒暴民：Odinoir|https://www.deviantart.com/odinoir/art/The-angry-Mob-198793576}",
+						"{@link 人类僵尸部落：texahol|https://www.deviantart.com/texahol/art/human-zombie-horde-593889896}",
+						"{@link 亡者大军：T-RexJones|https://www.deviantart.com/t-rexjones/art/Army-of-the-Dead-379245327}",
+						"{@link 萨努克部落的崛起：Stanton Feng|https://www.artstation.com/artwork/rR5Ra}",
+						"{@link 大地精，4E怪物图鉴：Steve Prescott|https://www.gmbinder.com/images/MfsJhGx.png}",
+						"{@link 耶诺古的部落：Chris Campbell（Skeeziks）|https://www.artstation.com/artwork/2xqZ1K}",
+						"{@link 军队：WhoAmI01|https://www.deviantart.com/whoami01/art/army-411769969}",
+						"{@link 狼与树：Donovan Valdes|https://www.artstation.com/artwork/rJxQ2}",
+						"{@link 巨旗：Timothée MATHON|https://www.artstation.com/artwork/3JyeE}",
+						"{@link 毛茸茸：Dominik Mayer|https://www.artstation.com/404}"
+					]
+				}
+			]
+		}
+	]
+}
