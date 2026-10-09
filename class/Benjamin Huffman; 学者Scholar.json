@@ -1,0 +1,2834 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "BH:SC",
+				"abbreviation": "BH:SC",
+				"full": "学者职业",
+				"url": "https://www.dmsguild.com/product/270890/the-scholar-class",
+				"version": "1.0",
+				"authors": [
+					"Benjamin Huffman"
+				],
+				"convertedBy": [
+					"SasquatchBrah"
+				]
+			}
+		],
+		"dependencies": {
+			"optionalfeature": [
+				"UALightDarkUnderdark",
+				"UAWaterborneAdventures"
+			],
+			"spell": [
+				"UltimateAdventurer"
+			]
+		},
+		"optionalFeatureTypes": {
+			"BHEA": "博学应用"
+		},
+		"edition": "classic",
+		"dateAdded": 1603793256,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "6ac8451e10"
+	},
+	"class": [
+		{
+			"ENG_name": "Scholar",
+			"name": "学者",
+			"source": "BH:SC",
+			"page": 3,
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"arcana",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"performance",
+								"persuasion",
+								"religion",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 手弩|PHB}",
+					"{@item 重弩|PHB}"
+				],
+				"tools": [
+					"一种你自选的{@item 工匠工具|PHB}"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一件{@item 皮甲|PHB}和一把{@filter 简易武器|items|source=PHB|category=基础|type=简易武器}，或 (b) 一件{@item 皮甲|PHB}、一把{@item 手弩|PHB}和{@item 弩矢(20)|PHB|20支弩矢}，或 (c) 一把{@item 重弩|PHB}和{@item 弩矢(20)|PHB|20支弩矢} ",
+					"(a) 一个{@item 外交套组|PHB}或 (b) 一个{@item 探索套组|PHB}",
+					"一本主题自选的书",
+					"一个{@item 学者套组|PHB}以及任意两种{@item 工匠工具|PHB|工具或工具包}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"皮甲",
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 1
+							}
+						],
+						"b": [
+							"皮甲|phb",
+							"手弩|phb",
+							"弩矢(20)|phb"
+						],
+						"c": [
+							"重弩|phb",
+							"弩矢(20)|phb"
+						]
+					},
+					{
+						"a": [
+							"外交套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"_": [
+							"书籍|phb"
+						]
+					},
+					{
+						"_": [
+							"学者套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"arcana",
+									"history",
+									"insight",
+									"investigation",
+									"medicine",
+									"nature",
+									"perception",
+									"performance",
+									"persuasion",
+									"religion",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 博学应用|optionalfeatures|feature type=BHEA}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"学术话语|学者|BH:SC|1",
+				{
+					"classFeature": "研究领域|学者|BH:SC|1",
+					"gainSubclassFeature": true
+				},
+				"智者建议|学者|BH:SC|1",
+				"解析敌人|学者|BH:SC|2",
+				"博学应用|学者|BH:SC|2",
+				{
+					"classFeature": "研究领域特性|学者|BH:SC|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|学者|BH:SC|4",
+				"解析敌人改进|学者|BH:SC|5",
+				"睿智源泉|学者|BH:SC|5",
+				"快速研究|学者|BH:SC|6",
+				"钢铁意志|学者|BH:SC|7",
+				"属性值提升|学者|BH:SC|8",
+				"秘传应用|学者|BH:SC|8",
+				{
+					"classFeature": "研究领域特性|学者|BH:SC|9",
+					"gainSubclassFeature": true
+				},
+				"卓越心智|学者|BH:SC|10",
+				"解析敌人改进|学者|BH:SC|11",
+				"可靠才能|学者|BH:SC|11",
+				"属性值提升|学者|BH:SC|12",
+				{
+					"classFeature": "研究领域特性|学者|BH:SC|13",
+					"gainSubclassFeature": true
+				},
+				"秘传应用改进|学者|BH:SC|14",
+				"智识扩展|学者|BH:SC|15",
+				"属性值提升|学者|BH:SC|16",
+				"解析敌人改进|学者|BH:SC|17",
+				"灵光一闪|学者|BH:SC|18",
+				"属性值提升|学者|BH:SC|19",
+				{
+					"classFeature": "研究领域特性|学者|BH:SC|20",
+					"gainSubclassFeature": true
+				},
+				"智识扩展改进|学者|BH:SC|20"
+			],
+			"subclassTitle": "研究领域",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Scholar",
+			"name": "学者",
+			"source": "BH:SC",
+			"entries": [
+				{
+					"ENG_name": "Scholar",
+					"name": "学者",
+					"type": "section",
+					"entries": [
+						"一名背负着书籍与典册的矮人手指抚过干枯的羊皮纸，无声地译读着其上的文字。当他找到苦苦寻觅的答案时，脸上泛起满意的笑容。他走向古老神庙的石制守卫，开始朗声念出那些词句。",
+						"一名人类全神贯注地握着手术刀，将其切开生物的表层血肉，在其胸腔上划开一道切口。看到这只生物的毒囊并未在与她小队的战斗中破裂，她不由得喜出望外。这东西迟早派得上用场。",
+						"一名侏儒迅速移动，将盾牌架在自己与呼啸而来的连枷之间。当攻击徒劳地砸在他的防御上铿锵作响时，他向同伴厉声下令，而他们立即赶来驰援，完美无缺地执行了他精妙的计划。",
+						"界定学者的，是他们无尽的求知欲，以及将智力运用于一切任务的能力。学者并非武器或法术的大师\u2014\u2014他们以浩瀚的知识储备来化解横亘眼前的种种挑战。尽管一身书卷气，这些英雄仍乐于有机会施展过人的才干，去应对冒险小队频繁面临的种种危险。",
+						{
+							"ENG_name": "Studious and Disciplined",
+							"type": "entries",
+							"name": "勤学自律",
+							"entries": [
+								"仅在一个学科上成为专家便需要专注与毅力，遑论大多数学者所精通的五花八门的课题。单凭智力并不能界定这些冒险者。学者依靠的是井然有序的方法、知识的实际运用，以及以出人意料的方案迎难而上的能力。",
+								"当学者投入战斗时，他们会以强大的观察与推理能力对付敌人。学者能在激战中提供敏锐的建议，确保盟友的攻击命中，并推演出敌人的特异之处与行动规律，从而凭借天才压过更强壮、更迅捷的对手。"
+							]
+						},
+						{
+							"ENG_name": "Adventurous Academics",
+							"type": "entries",
+							"name": "冒险学人",
+							"entries": [
+								"学者并非天生的冒险家。许多人更愿意安坐于扶手椅中，对自己学术追求的精妙之处夸夸其谈。但也有些人明白，真正的知识无法从积灰的旧书中习得，而必须亲身求索。正是这些学者最可能踏上冒险生涯。",
+								"在冒险小队中，学者的高深学识使他们能用冷僻的细节帮助同伴扫清障碍，为队伍提供宝贵的建议，并利用敌人的弱点。独身一人时，学者面对冒险者常遇的重重危险往往难以自保；但只要有一支愿意听取其谋略的冒险同伴队伍，学者便能从败局边缘夺取胜利。随着学者在自身研究领域中日渐精进，他们还能以战术洞见、治疗技艺或其他专长进一步支援盟友。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Scholar",
+							"type": "entries",
+							"name": "创造学者",
+							"entries": [
+								"在创造你的学者时，请考量这个角色的过去与未来。考量其过去时，想想你的角色是如何获得学识的：他们是自学成才？曾就读于某所大学？还是拜另一位博学之士为师学徒？考量其未来时，想想未来如何影响当下：你的学者有哪些兴趣领域？在冒险过程中他们可能采取何种专精方向，又将如何展现这些兴趣？",
+								"学者并不常投身冒险。你为何选择了这样一种人生？许多将毕生献给学问的人，宁愿在相对安全的图书馆或实验室中治学。你在追寻失落的古代知识？是个人悲剧迫使你告别久坐的书斋生活？还是你一直就想将才智倾注于冒险的追求？",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"按照以下建议，你可以快速打造一名学者。首先，智力应是你的最高属性值。若你想擅长远程战斗，可将敏捷作为次高属性值；若你专精于运用感知或魅力的技能，则可将感知或魅力作为次高属性值。其次，选择{@background 隐士}或{@background 智者}背景。"
+									]
+								}
+							]
+						}
+					],
+					"source": "BH:SC",
+					"page": 3
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Culinarian",
+			"name": "烹饪学家",
+			"shortName": "烹饪学家",
+			"source": "BH:SC",
+			"className": "学者",
+			"classSource": "BH:SC",
+			"page": 6,
+			"subclassFeatures": [
+				"烹饪学家|学者|BH:SC|烹饪学家|BH:SC|1",
+				"物尽其用|学者|BH:SC|烹饪学家|BH:SC|3",
+				"烹饪技艺|学者|BH:SC|烹饪学家|BH:SC|3",
+				"高级食材|学者|BH:SC|烹饪学家|BH:SC|9",
+				"即兴料理|学者|BH:SC|烹饪学家|BH:SC|9",
+				"腹饱心暖|学者|BH:SC|烹饪学家|BH:SC|13",
+				"满盘丰盛|学者|BH:SC|烹饪学家|BH:SC|20"
+			]
+		},
+		{
+			"ENG_name": "Diplomat",
+			"name": "外交官",
+			"shortName": "外交官",
+			"source": "BH:SC",
+			"className": "学者",
+			"classSource": "BH:SC",
+			"page": 7,
+			"subclassFeatures": [
+				"外交官|学者|BH:SC|外交官|BH:SC|1",
+				"呼吁停火|学者|BH:SC|外交官|BH:SC|3",
+				"巧舌如簧|学者|BH:SC|外交官|BH:SC|3",
+				"周游列国|学者|BH:SC|外交官|BH:SC|9",
+				"见多识广|学者|BH:SC|外交官|BH:SC|9",
+				"资深大使|学者|BH:SC|外交官|BH:SC|13",
+				"外交豁免权|学者|BH:SC|外交官|BH:SC|20"
+			]
+		},
+		{
+			"ENG_name": "Physician",
+			"name": "医师",
+			"shortName": "医师",
+			"source": "BH:SC",
+			"className": "学者",
+			"classSource": "BH:SC",
+			"page": 8,
+			"subclassFeatures": [
+				"医师|学者|BH:SC|医师|BH:SC|1",
+				"医嘱|学者|BH:SC|医师|BH:SC|3",
+				"主治医师|学者|BH:SC|医师|BH:SC|3",
+				"复苏术式|学者|BH:SC|医师|BH:SC|9",
+				"康复治疗|学者|BH:SC|医师|BH:SC|9",
+				"回春技艺|学者|BH:SC|医师|BH:SC|13",
+				"预防医学|学者|BH:SC|医师|BH:SC|20"
+			]
+		},
+		{
+			"ENG_name": "Ritualist",
+			"name": "秘仪师",
+			"shortName": "秘仪师",
+			"source": "BH:SC",
+			"className": "学者",
+			"classSource": "BH:SC",
+			"page": 8,
+			"spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Ritualist",
+							"name": "秘仪师",
+							"source": "BH:SC"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0}",
+						"{@filter 已知法术|spells}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"subclasses": [
+						{
+							"ENG_name": "Ritualist",
+							"name": "秘仪师",
+							"source": "BH:SC"
+						}
+					],
+					"colLabels": [
+						"{@filter 1环|spells|level=1}",
+						"{@filter 2环|spells|level=2}",
+						"{@filter 3环|spells|level=3}",
+						"{@filter 4环|spells|level=4}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"秘仪师|学者|BH:SC|秘仪师|BH:SC|1",
+				"施法|学者|BH:SC|秘仪师|BH:SC|3",
+				"法术誊写|学者|BH:SC|秘仪师|BH:SC|3",
+				"异界守护|学者|BH:SC|秘仪师|BH:SC|9",
+				"强力施法|学者|BH:SC|秘仪师|BH:SC|9",
+				"仪式精简|学者|BH:SC|秘仪师|BH:SC|13",
+				"统一法术理论|学者|BH:SC|秘仪师|BH:SC|20"
+			]
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"shortName": "战术家",
+			"source": "BH:SC",
+			"className": "学者",
+			"classSource": "BH:SC",
+			"page": 10,
+			"subclassFeatures": [
+				"战术家|学者|BH:SC|战术家|BH:SC|1",
+				"战斗风格|学者|BH:SC|战术家|BH:SC|3",
+				"战略优势|学者|BH:SC|战术家|BH:SC|3",
+				"指挥打击|学者|BH:SC|战术家|BH:SC|9",
+				"战魁冲锋|学者|BH:SC|战术家|BH:SC|9",
+				"身先士卒|学者|BH:SC|战术家|BH:SC|13",
+				"集结如潮|学者|BH:SC|战术家|BH:SC|20"
+			]
+		},
+		{
+			"ENG_name": "Theologian",
+			"name": "神学家",
+			"shortName": "神学家",
+			"source": "BH:SC",
+			"className": "学者",
+			"classSource": "BH:SC",
+			"page": 10,
+			"spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Theologian",
+							"name": "神学家",
+							"source": "BH:SC"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|class=牧师}",
+						"{@filter 已知法术|spells|class=牧师}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"subclasses": [
+						{
+							"ENG_name": "Theologian",
+							"name": "神学家",
+							"source": "BH:SC"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=牧师}",
+						"{@filter 2nd|spells|level=2|class=牧师}",
+						"{@filter 3rd|spells|level=3|class=牧师}",
+						"{@filter 4th|spells|level=4|class=牧师}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"神学家|学者|BH:SC|神学家|BH:SC|1",
+				"每日敬奉|学者|BH:SC|神学家|BH:SC|3",
+				"施法|学者|BH:SC|神学家|BH:SC|3",
+				"行于光辉|学者|BH:SC|神学家|BH:SC|9",
+				"防护祈祷|学者|BH:SC|神学家|BH:SC|9",
+				"削弱不洁者|学者|BH:SC|神学家|BH:SC|13",
+				"奇迹行者|学者|BH:SC|神学家|BH:SC|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Academic Discourse",
+			"name": "学术话语",
+			"source": "BH:SC",
+			"page": 4,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"你已经掌握了用一个词足以表达时偏要用十个词的艺术。这种学术话语由专业术语、晦涩措辞与过度的迂腐细节混合而成。只有同样通晓学术话语的生物，才能理解以此语言说出或写下的信息。其他生物也许会觉得无聊或稍感厌烦。用学术话语传达一条信息所需的时间，是用平实语言表达同一想法的十倍。",
+				"你对这种语言的掌握提升了整体的阅读理解能力。阅读你通晓的语言时，你每分钟可以读完十页文本。"
+			]
+		},
+		{
+			"ENG_name": "Field of Study",
+			"name": "研究领域",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"从1级开始，你投身于一项自选的研究领域。你的研究领域会在1级以及其后的3级、9级、14级和20级给予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Sage Advice",
+			"name": "智者建议",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"学者分析周遭形势，就最佳行动方案提出假说，并以经过精心计算的方案为盟友出谋划策。当距你60尺内、能听见你声音的生物进行属性检定、攻击检定或豁免检定时，你可以用你的反应为该次检定的结果加上一个加值，加值等于你的熟练加值。你可以等到该生物掷骰之后再作决定，但必须在DM宣告检定成功或失败之前宣布使用此特性。你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Analyze Enemy",
+			"name": "解析敌人",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 2,
+			"entries": [
+				"在2级，你只需一眼便能估量敌人。你在自己的每个回合可以用一个附赠动作观察一个距你60尺内、你能看见的生物。在接下来的1分钟内，当你攻击该生物时，你可以在使用你熟练的武器进行的攻击检定和伤害掷骰中，用你的智力属性调整值代替你的力量或敏捷属性调整值。",
+				"在5级，当你从解析中获益时，你对该生物造成额外伤害。每回合中，你首次以武器攻击命中该生物时，造成额外的{@damage 1d10}伤害。此额外伤害在11级（{@damage 2d10}）和17级（{@damage 3d10}）时再次提高{@damage 1d10}。"
+			]
+		},
+		{
+			"ENG_name": "Erudite Applications",
+			"name": "博学应用",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 2,
+			"entries": [
+				"同样在2级，你学会将广博的学术才能运用于实际事务。你获得两项自选的{@filter 博学应用|optionalfeatures|feature type=BHEA}，其详述见本职业描述的末尾。当你达到特定的学者等级时，你会获得额外的自选应用，如\"学者表\"中\"已知应用\"一栏所示。"
+			]
+		},
+		{
+			"ENG_name": "Field of Study feature",
+			"name": "研究领域特性",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 3,
+			"entries": [
+				"在3级，你从你的学者研究领域中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Analyze Enemy improvement",
+			"name": "解析敌人改进",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 5,
+			"entries": [
+				"在5级，当你从解析中获益时，你对该生物造成额外伤害。每回合中，你首次以武器攻击命中该生物时，造成额外的{@damage 1d10}伤害。"
+			]
+		},
+		{
+			"ENG_name": "Sagacious Font",
+			"name": "睿智源泉",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 5,
+			"entries": [
+				"从5级开始，当你完成一次短休或长休时，你恢复\"智者建议\"的所有已耗用次数。"
+			]
+		},
+		{
+			"ENG_name": "Quick Study",
+			"name": "快速研究",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 6,
+			"entries": [
+				"从6级开始，你可以在休整的轻度活动期间研习一项技能或工具。当你完成一次长休时，选择一项你不熟练的技能或工具。在你再次使用此特性之前，你视为熟练该技能或该工具。"
+			]
+		},
+		{
+			"ENG_name": "Iron Will",
+			"name": "钢铁意志",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 7,
+			"entries": [
+				"到7级时，你已获得更强大的精神力量。你在魅力豁免检定上获得熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH:SC",
+			"page": 4,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Esoteric Application",
+			"name": "秘传应用",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 8,
+			"entries": [
+				"在8级，你无需满足在本等级获得的{@filter 博学应用|optionalfeatures|feature type=BHEA}的前提条件。在14级时，你还可以再选择一项不满足其前提条件的{@filter 博学应用|optionalfeatures|feature type=BHEA}。"
+			]
+		},
+		{
+			"ENG_name": "Field of Study feature",
+			"name": "研究领域特性",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 9,
+			"entries": [
+				"在9级，你从你的学者研究领域中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Brilliant Mind",
+			"name": "卓越心智",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 10,
+			"entries": [
+				"在10级，你可以重新掷骰一次失败的智力、感知或魅力豁免检定。若你如此做，则必须使用新掷骰的结果。在完成一次短休或长休之前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Analyze Enemy improvement",
+			"name": "解析敌人改进",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 11,
+			"entries": [
+				"在11级，当你从解析中获益时，你对该生物造成额外伤害。每回合中，你首次以武器攻击命中该生物时，造成额外的{@damage 2d10}伤害。"
+			]
+		},
+		{
+			"ENG_name": "Reliable Talent",
+			"name": "可靠才能",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 11,
+			"entries": [
+				"在11级，涉及个人兴趣所在的主题时你鲜有差错。每当你进行一次可以加上熟练加值的属性检定时，你d20掷出9或更低时可视为10。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH:SC",
+			"page": 4,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Field of Study feature",
+			"name": "研究领域特性",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 13,
+			"entries": [
+				"在13级，你从你的学者研究领域中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Esoteric Application improvement",
+			"name": "秘传应用改进",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 14,
+			"entries": [
+				"在14级时，你还可以再选择一项不满足其前提条件的{@filter 博学应用|optionalfeatures|feature type=BHEA}。"
+			]
+		},
+		{
+			"ENG_name": "Expansive Intellect",
+			"name": "智识扩展",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 15,
+			"entries": [
+				"从15级开始，你的智力值提升2点，上限为22。此外，你现在可以借属性值提升特性将智力值提升至最高22，而非20。",
+				"在20级，你的智力值提升2点，上限为24。此外，你现在可以借属性值提升特性将智力值提升至最高24。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH:SC",
+			"page": 4,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Analyze Enemy improvement",
+			"name": "解析敌人改进",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 17,
+			"entries": [
+				"在17级，当你从解析中获益时，你对该生物造成额外伤害。每回合中，你首次以武器攻击命中该生物时，造成额外的{@damage 3d10}伤害。"
+			]
+		},
+		{
+			"ENG_name": "Flash of Genius",
+			"name": "灵光一闪",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 18,
+			"entries": [
+				"在18级，在你进行一次加上熟练加值的属性检定、攻击检定或豁免检定之后，你可以用你的反应将该次掷骰的结果视为20。完成一次长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH:SC",
+			"page": 4,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Expansive Intellect improvement",
+			"name": "智识扩展改进",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 20,
+			"entries": [
+				"在20级，你的智力值提升2点，上限为24。此外，你现在可以借属性值提升特性将智力值提升至最高24。"
+			]
+		},
+		{
+			"ENG_name": "Field of Study feature",
+			"name": "研究领域特性",
+			"source": "BH:SC",
+			"page": 5,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"level": 20,
+			"entries": [
+				"在20级，你从你的学者研究领域中获得一项特性。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Culinarian",
+			"name": "烹饪学家",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"对真正的学者而言，没有任何学术课题会冷僻到不值得研究。有些学者不愿钻研人体的复杂机理或军事谋略的完整历史，而是选择专精于平民的炼金术\u2014\u2014烹饪。这些烹饪学家采集珍稀而美味的食材，将其烹制成能强化自己与盟友的佳肴。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "烹饪学家专精|学者|BH:SC|烹饪学家|BH:SC|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战地厨师|学者|BH:SC|烹饪学家|BH:SC|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Combat Cook",
+			"name": "战地厨师",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"同样在1级，你可以将厨师工具的组件当作造成{@damage 1d6}伤害的简易武器使用。用作武器的器具决定伤害类型，并提供一项额外武器属性：锅碗瓢盆造成钝击伤害，具有多用（{@damage 1d8}）属性；餐叉与烤签造成穿刺伤害，具有轻型属性；刀具则造成挥砍伤害，具有投掷（射程20/60）属性。"
+			]
+		},
+		{
+			"ENG_name": "Culinarian's Expertise",
+			"name": "烹饪学家专精",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级选择此研究领域时，你获得{@item 酿酒工具|PHB}和{@item 厨师工具|PHB}的熟练项。你进行任何使用这些熟练项的属性检定时，你的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Culinary Craft",
+			"name": "烹饪技艺",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级，烹饪对你而言视为轻度活动。当你花1小时烹饪（可作为完成短休或长休的一部分进行）时，你可以使用自选的食材烹制\"1 + 你的智力调整值\"（至少1）份餐食。每份餐食需花10分钟食用，此后该生物的生命值上限与当前生命值提高{@dice 2d8} + 你的学者等级，并根据烹制餐食所用的食材获得一项由你选择的益处。",
+				{
+					"type": "list",
+					"items": [
+						"对一项自选伤害类型的抗性，该食材的来源生物须曾对该伤害类型具有抗性或免疫。",
+						"在加上你自选某项属性调整值的属性检定、攻击检定和豁免检定上获得+1加值。选择此选项要求食材来源生物的该项属性值须为16或更高。",
+						"由你的DM决定的一项隐秘属性。并非所有食材都有隐秘属性，某些食材可能有多于一项隐秘属性。"
+					]
+				},
+				"一旦生物以此特性吃下一份餐食，其益处将持续到它吃下另一份以此特性制作的餐食或完成一次长休为止。制成后8小时内未食用的餐食，在此时间之后不再提供任何益处。"
+			]
+		},
+		{
+			"ENG_name": "Waste Not, Want Not",
+			"name": "物尽其用",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，你可以从死亡不超过24小时的非类人生物尸体上采集烹饪食材。你从小型或中型生物身上可采集1份食材，从大型生物身上可采集2份，从巨型或更大的生物身上可采集3份。采集一份食材需花1分钟。你腌制、腌渍及以其他方式保存食物的能力，能防止你采集的食材随时间腐坏。"
+			]
+		},
+		{
+			"ENG_name": "Advanced Ingredients",
+			"name": "高级食材",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在9级，将以下选项加入你在使用\"烹饪技艺\"特性时可以选择的益处列表。",
+				{
+					"type": "list",
+					"items": [
+						"对一项自选伤害类型或状态的免疫，该食材的来源生物须曾对该伤害类型或状态免疫。",
+						"在加上你自选某项属性调整值的属性检定、攻击检定和豁免检定上获得+2加值。选择此选项要求食材来源生物的该项属性值须为20或更高。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Edible Improv",
+			"name": "即兴料理",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"同样在9级，你已学会如何用手边现成的任何东西将就。当你使用\"烹饪技艺\"特性时，可以选择即兴发挥而不提供食材。此时，视为你使用了一份来自某生物的食材，该生物具有所有伤害类型的抗性、所有属性值均为20，且挑战等级等于你的学者等级。一旦使用此特性，在完成一次长休之前你不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Full Bellies, Full Hearts",
+			"name": "腹饱心暖",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在13级，当生物因吃下你以\"烹饪技艺\"特性烹制的餐食而提高生命值上限与当前生命值时，其生命值上限与当前生命值再额外提高，数值等于食材来源生物的挑战等级。"
+			]
+		},
+		{
+			"ENG_name": "Heaping Helping",
+			"name": "满盘丰盛",
+			"source": "BH:SC",
+			"page": 6,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "烹饪学家",
+			"subclassSource": "BH:SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级，当你使用\"烹饪技艺\"特性烹制餐食时，可以选择使用两份食材而非一份。此时你可以选择两项益处而非一项，但同一项益处不能选择两次。在计算你的\"腹饱心暖\"特性所给予的额外生命值上限与当前生命值时，将两份食材来源生物的挑战等级相加。"
+			]
+		},
+		{
+			"ENG_name": "Diplomat",
+			"name": "外交官",
+			"source": "BH:SC",
+			"page": 7,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "外交官",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"有些学者将他们的才智奉献给契约的起草、同盟的缔造与多种语言的掌握。怀着漫游四方的渴望与为人间缔结和平的心愿，外交官运用其在语言学、心理学与治国方略上的学识达成目标。凭借广博的实践阅历与多元的兴趣，许多外交官都是博学多才的全才。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "外交官专精|学者|BH:SC|外交官|BH:SC|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Diplomat's Expertise",
+			"name": "外交官专精",
+			"source": "BH:SC",
+			"page": 7,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "外交官",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级选择此研究领域时，你获得{@skill 游说}技能，以及自选的陆运载具或水运载具的熟练项。你进行任何使用这些熟练项的属性检定时，你的熟练加值翻倍。",
+				"此外，你学会说、读、写一门自选语言。"
+			]
+		},
+		{
+			"ENG_name": "Call Detente",
+			"name": "呼吁停火",
+			"source": "BH:SC",
+			"page": 7,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "外交官",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，当你进行先攻检定时，你可以用你的反应呼吁停战。此时，由你选择、每个能听见你且与你共享语言的生物必须进行一次魅力豁免检定（DC = 8 + 你的熟练加值 + 你的智力调整值）。豁免失败的目标对你所选生物的态度由敌对转为冷漠。若目标遭到攻击、被法术伤害，或目睹其任何同伴受到伤害，则此冷漠态度终止。一分钟后，目标重新转为敌对，除非DM判定你的行动足以使其继续保持冷漠，或以其他态度更为合适。完成一次短休或长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Silver Tongue",
+			"name": "巧舌如簧",
+			"source": "BH:SC",
+			"page": 7,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "外交官",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级，当你与共享语言的生物交谈一分钟或更久后，你可以让其进行一次感知豁免检定（DC = 8 + 你的熟练加值 + 你的智力调整值）。若该生物豁免失败，则它被你魅惑一小时，或直到你或你的一名盟友对它造成伤害、或对它施放一个需要豁免检定的法术为止，以先发生者为准。一小时后，若你的言行值得维持这段友谊，该生物仍对你保持友善。",
+				"你也可以用一个动作使用此能力，并无视需交谈一分钟的要求。若你如此做，在完成一次短休或长休之前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Well Traveled",
+			"name": "见多识广",
+			"source": "BH:SC",
+			"page": 7,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "外交官",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"同样在9级，你获得一项自选的{@filter 博学应用|optionalfeatures|feature type=BHEA}。你无需满足这项{@filter 博学应用|optionalfeatures|feature type=BHEA}的前提条件，且它不计入你已知的{@filter 博学应用|optionalfeatures|feature type=BHEA}数量。",
+				"在13级时，你再获得一项自选的{@filter 博学应用|optionalfeatures|feature type=BHEA}，同样无需满足其前提条件，且不计入你已知的博学应用数量。"
+			]
+		},
+		{
+			"ENG_name": "World Wanderer",
+			"name": "周游列国",
+			"source": "BH:SC",
+			"page": 7,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "外交官",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在9级，你的速度提升10尺。此外，当你们旅行一小时或更久时，困难地形不会拖慢你队伍的旅速，且除非借助魔法手段，你的队伍不会迷路。"
+			]
+		},
+		{
+			"ENG_name": "Master Ambassador",
+			"name": "资深大使",
+			"source": "BH:SC",
+			"page": 7,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "外交官",
+			"subclassSource": "BH:SC",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在13级，任何效果都无法使你在感知（洞悉）或魅力属性检定上具有劣势。此外，你的心灵不会在违背你意愿的情况下被读取，而任何欲判断你是否说真话的魔法，总会显示你所言属实。"
+			]
+		},
+		{
+			"ENG_name": "Diplomatic Immunity",
+			"name": "外交豁免权",
+			"source": "BH:SC",
+			"page": 7,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "外交官",
+			"subclassSource": "BH:SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"从20级开始，你的心志不会被推向极端。你免疫魅惑和恐慌。你可以用一个动作，解除距你30尺内、与你共享语言的一名生物身上的一项魅惑或恐慌效应。"
+			]
+		},
+		{
+			"ENG_name": "Physician",
+			"name": "医师",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "医师",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"成为医师的学者致力于促进健康与福祉。冒险医师热衷于将先进的医学知识带到一线，让英雄们保持最佳战态，并为受苦受难者施以救死扶伤的照护。医师们为自己能不借助魔法愈合伤口、治愈疾病而自豪，并乐于与他人分享其药物与疗法的奥秘。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "医师专精|学者|BH:SC|医师|BH:SC|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Physician's Expertise",
+			"name": "医师专精",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "医师",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级选择此研究领域时，你获得{@skill 医药}技能和{@item 草药工具|PHB}的熟练项。你进行任何使用这些熟练项的属性检定时，你的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Doctor's Orders",
+			"name": "医嘱",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "医师",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，你可以用你的附赠动作为一名邻近生物实施急救。该生物可以消耗并掷骰一枚生命骰，回复等于\"生命骰结果 + 其体质调整值 + 你的智力调整值\"的生命值。"
+			]
+		},
+		{
+			"ENG_name": "Treating Physician",
+			"name": "主治医师",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "医师",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级，你获得一个医师点池。该池包含的医师点数量等于你在此职业的等级。在一次短休期间，你可以花费任意数量的医师点，使一名你正在诊治的生物恢复等量已消耗的生命骰（不超过其上限）。你也可以花一小时和一点医师点，移除一名你正在诊治的生物身上的一种自选疾病或毒素。完成一次长休后，你恢复所有已耗用的医师点。"
+			]
+		},
+		{
+			"ENG_name": "Restorative Treatment",
+			"name": "康复治疗",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "医师",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"同样在9级，你可以运用先进的医疗技术终结某种虚弱状态。你可以用一个动作为一名你触碰的生物提供以下一项益处：",
+				{
+					"type": "list",
+					"items": [
+						"结束一项使该生物{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 失能}、{@condition 麻痹}、{@condition 中毒}、{@condition 震慑}或{@condition 昏迷}的效应。",
+						"结束一项对目标某项属性值的减值。",
+						"结束一项降低目标生命值上限的效应。",
+						"使该生物的力竭等级降低一级。"
+					]
+				},
+				"完成一次短休或长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Resuscitating Procedure",
+			"name": "复苏术式",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "医师",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在9级，你的医术已精进到能让新近亡故者起死回生的地步。此术式需花1分钟完成，并需消耗价值100金币的医疗用品。此术式只能影响死亡不超过10分钟的生物。该生物以1点生命值复活。此术式无法复活因衰老而死的生物，也无法恢复任何缺失的身体部位。完成一次长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Rejuvenating Technique",
+			"name": "回春技艺",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "医师",
+			"subclassSource": "BH:SC",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在13级，当你花5分钟为一名生物提供焕发活力的临床照护时，该生物可以选择其一项特性，若完成短休或长休本可让其恢复该特性的使用，则其立即恢复之。完成一次短休或长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Preventative Medicine",
+			"name": "预防医学",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "医师",
+			"subclassSource": "BH:SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级，你可以花10分钟为数量至多等于你智力调整值的生物（包括你自己）施行预防性医疗照护。每名受照护的生物获得临时生命值，数值等于其生命值上限的一半。只要生物拥有此特性给予的临时生命值，它便对非魔法的钝击、穿刺、毒素和挥砍伤害具有抗性。完成一次长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Ritualist",
+			"name": "秘仪师",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "秘仪师",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"尽管学者因其钻研世俗课题而与其他知识分子区别开来，仍有一些人将他们非凡的头脑投向秘奥的课题。秘仪师以学者对待万事万物的同样条理而科学的方法研究魔法。虽然这些学者在魔法造诣上不及更专门的施法者，但他们对魔网的敏锐观察使他们得以施展种类无可匹敌的法术。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "秘仪师专精|学者|BH:SC|秘仪师|BH:SC|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ritualist's Expertise",
+			"name": "秘仪师专精",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "秘仪师",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级选择此研究领域时，你获得{@skill 奥秘}技能和{@item 书法工具|PHB}的熟练项。你进行任何使用这些熟练项的属性检定时，你的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "BH:SC",
+			"page": 8,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "秘仪师",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到3级时，你对多元宇宙奥术法则与冷僻神话的深入研习使你得以施展法术并举行仪式。施法的一般规则见{@i 玩家手册}{@book 第十章|PHB|10}，而{@filter 完整法术列表|spells}见{@book 第十一章|PHB|11}。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"在3级，你知晓两项自选戏法，可取自任意{@filter 法术列表|spells}。你在更高等级时学会额外的自选戏法，如\"秘仪师表\"中\"已知戏法\"一栏所示。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"\"秘仪师施法表\"展示了你用于施展1环及更高环阶法术的法术位数量。施展其中某个法术时，你必须消耗一个不低于该法术环阶的法术位。完成一次长休后，你恢复所有已消耗的法术位。",
+						"例如，若你知晓1环法术{@spell 魔法飞弹}，且有一个1环法术位和一个2环法术位可用，你可以用其中任一法术位施展{@spell 魔法飞弹}。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"你知晓三个自选的1环法术，可取自任意{@filter 法术列表|spells}，其中两个必须带有{@filter 仪式标签|spells|miscellaneous=仪式}。",
+						"\"秘仪师施法表\"的\"已知法术\"一栏展示了你何时学会更多1环或更高的法术。这些法术均须带有{@filter 仪式标签|spells|miscellaneous=仪式}，且环阶须是你拥有对应法术位的环阶。例如，当你在本职业达到7级时，你可以学会一个新的1环或2环法术。",
+						"你在7级、10级、16级和20级学会的法术不必带有仪式标签。",
+						"每当你在本职业获得一个等级，你都可以用一个自选法术替换一个你已知晓的法术。新法术的环阶须是你拥有对应法术位的环阶，且必须带有{@filter 仪式标签|spells|miscellaneous=仪式}，除非你替换的是你在3级、7级、10级、16级或20级学会的不带仪式标签的法术。"
+					]
+				},
+				{
+					"ENG_name": "Ritual Casting",
+					"type": "entries",
+					"name": "仪式施法",
+					"entries": [
+						"如果你知晓的法术带有仪式标签，你可以将其作为仪式施展。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"智力是你秘仪师法术的施法属性，因为你魔法的力量源于对默记手势与咒文的严格遵循。每当法术提及你的施法属性时，你使用智力。此外，当你决定所施展秘仪师法术的豁免DC以及以其进行攻击检定时，你也使用你的智力调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellscribe",
+			"name": "法术誊写",
+			"source": "BH:SC",
+			"page": 9,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "秘仪师",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级，你学会以一半的时间和一半的消耗制作法术卷轴。誊写法术卷轴的规则见{@book 《珊娜萨的万事指南》第2章|XGE|2}。"
+			]
+		},
+		{
+			"ENG_name": "Otherworldly Ward",
+			"name": "异界守护",
+			"source": "BH:SC",
+			"page": 9,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "秘仪师",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在9级，你可以施展{@spell 防护善恶}法术而不消耗法术位，也无需提供材料成分。"
+			]
+		},
+		{
+			"ENG_name": "Potent Spellcasting",
+			"name": "强力施法",
+			"source": "BH:SC",
+			"page": 9,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "秘仪师",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在9级，你将你的智力调整值加到你以戏法造成的伤害上。"
+			]
+		},
+		{
+			"ENG_name": "Ritual Reduction",
+			"name": "仪式精简",
+			"source": "BH:SC",
+			"page": 9,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "秘仪师",
+			"subclassSource": "BH:SC",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在13级，你可以施展任意一个你知晓的法术而不消耗法术位，也无需提供材料成分。在完成一次长休之前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Unified Spell Theory",
+			"name": "统一法术理论",
+			"source": "BH:SC",
+			"page": 9,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "秘仪师",
+			"subclassSource": "BH:SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级，你可以消耗一个不低于某法术环阶的法术位，施展任意一个你并不知晓的法术。在完成一次长休之前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "战术家",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"成为战术家的学者运用他们的才智掌控战场。凭借权威的口吻与灵活多变的战略，战术家能将一支冒险小队变成一台运转精密的机器。战术家是罕见的能在战斗中如鱼得水的学者，在率领盟友作战时表现卓越。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|学者|BH:SC|战术家|BH:SC|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "战术家",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级选择此研究领域时，你获得军用武器、中甲和盾牌的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "战术家",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级，你采用一种特定的战斗风格作为专精。从以下选项中选择一项。即使你日后能再次选择，同一个战斗风格选项也不能选取多次。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "箭术"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "近距离射手|UALightDarkUnderdark"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "盲斗|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "防御"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "对决"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拦截|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "水手|UAWaterborneAdventures"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "守护"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "卓越技巧|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "投掷武器战斗|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "隧道战士|UALightDarkUnderdark"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "徒手战斗|TCE"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Strategic Advantage",
+			"name": "战略优势",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "战术家",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级，当某生物的攻击命中且该攻击受益于你的\"智者建议\"时，该生物将你的熟练加值加到该次攻击造成的伤害上。"
+			]
+		},
+		{
+			"ENG_name": "Direct The Strike",
+			"name": "指挥打击",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "战术家",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"从9级开始，你可以用你的附赠动作指挥一名距你60尺内、能听见你声音的生物发动攻击。若你如此做，该生物可以用它的反应，对范围内一个由你选择的敌人进行一次武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Warlord's Rush",
+			"name": "战魁冲锋",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "战术家",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在9级，你可以在你的回合用一个附赠动作命令盟友重新布位。由你选择、距你60尺内且能听见你声音的每个友方生物，可以移动至多其移动速度的距离。此移动不会引发借机攻击。完成一次短休或长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Lead From the Front",
+			"name": "身先士卒",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "战术家",
+			"subclassSource": "BH:SC",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在13级，当你以一次攻击命中某生物时，你能为盟友创造破绽。此时，由你选择、距你60尺内且能听见你声音的每个友方生物，在你下个回合开始之前对该敌人进行的第一次攻击检定具有优势。一旦使用此特性，你必须完成一次短休或长休才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Rallying Surge",
+			"name": "集结如潮",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "战术家",
+			"subclassSource": "BH:SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级，你可以在你的回合用一个动作发出鼓舞斗志的呐喊。由你选择、距你60尺内、能听见你声音且数量至多等于你智力调整值的每个友方生物，在其下个回合获得一个额外动作。该动作只能用于进行攻击（仅限一次武器攻击）、疾走、撤离、躲藏或使用物件动作。完成一次长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Theologian",
+			"name": "神学家",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "神学家",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"entries": [
+				"神学家研究神圣存在的教义与神话。与大多数学者不同，对多元宇宙诸宗教祷词与仪轨的广泛熟稔，赋予了神学家施展法术的能力。与牧师和圣武士不同，神学家并不献身于单一神祇或某种意识形态。相反，神学家礼敬并承认所有神祇，每日向诸多神圣存在奉行敬拜，并引导他们的力量。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神学家专精|学者|BH:SC|神学家|BH:SC|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Theologian's Expertise",
+			"name": "神学家专精",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "神学家",
+			"subclassSource": "BH:SC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级选择此研究领域时，你获得{@skill 宗教}技能的熟练项。你进行任何使用此熟练项的属性检定时，你的熟练加值翻倍。",
+				"此外，你学会说、读、写天界语。"
+			]
+		},
+		{
+			"ENG_name": "Daily Devotion",
+			"name": "每日敬奉",
+			"source": "BH:SC",
+			"page": 10,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "神学家",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，作为完成长休的一部分，你可以选择一个神圣领域（见《玩家手册》{@book 第三章|PHB|3}），并向一位与该领域相关的神祇奉上敬拜。在你再次使用此特性之前，你所选神圣领域相关的领域法术均视为已准备，前提是你拥有一个不低于该法术环阶的法术位。",
+				"此外，你可以用任何价值1金币及以上、主题为神学的书籍，作为牧师法术的施法法器。"
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "BH:SC",
+			"page": 11,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "神学家",
+			"subclassSource": "BH:SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级，你对诸神及其崇拜传统的潜心研习使你得以施展法术。施法的一般规则见{@i 玩家手册}{@book 第十章|PHB|10}，而{@filter 完整法术列表|spells}见{@book 第十一章|PHB|11}。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"在3级，你知晓两项自选戏法，可取自牧师{@filter 法术列表|spells|level=0|class=牧师}。你在更高等级时学会额外的自选戏法，如\"神学家表\"中\"已知戏法\"一栏所示。"
+					]
+				},
+				{
+					"ENG_name": "Preparing and Casting Spells",
+					"type": "entries",
+					"name": "法术的准备与施展",
+					"entries": [
+						"\"神学家表\"展示了你用于施展1环及更高环阶法术的法术位数量。施展其中某个法术时，你必须消耗一个不低于该法术环阶的法术位。完成一次长休后，你恢复所有已消耗的法术位。",
+						"你准备一份可供自己施展的牧师法术列表，从牧师法术列表中选择。此时，依照你在本职业的等级，按\"神学家表\"中\"已准备法术\"一栏选择相应数量的牧师法术。这些法术的环阶须是你拥有对应法术位的环阶。",
+						"例如，若你是一名3级神学家，你拥有一个已准备的法术，外加两个来自你以\"每日敬奉\"特性所选神圣领域的法术。若你准备了疗伤术，你可以用1环或2环法术位施展它。施展法术不会将它从你的已准备法术列表中移除。",
+						"你可以在完成长休后改变你的准备法术列表。准备新的牧师法术列表时，你要再花时间进行祈祷和冥想。准备时，你要为你列表上每个法术的每个环阶都花费至少1分钟时间。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"智力是你牧师法术的施法属性，因为你以严格恪守诸神的习俗与传统，来促使神圣力量借力于你。每当法术提及你的施法属性时，你使用智力。此外，当你决定所施展牧师法术的豁免DC以及以其进行攻击检定时，你也使用你的智力调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Prayer of Protection",
+			"name": "防护祈祷",
+			"source": "BH:SC",
+			"page": 11,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "神学家",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在9级，每当你消耗法术位施展一个牧师法术时，距你15尺内一个由你选择的生物获得临时生命值，数值等于你的智力调整值 + 所耗法术位的环阶。"
+			]
+		},
+		{
+			"ENG_name": "Walk in Radiance",
+			"name": "行于光辉",
+			"source": "BH:SC",
+			"page": 11,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "神学家",
+			"subclassSource": "BH:SC",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在9级，你获得光耀伤害抗性。"
+			]
+		},
+		{
+			"ENG_name": "Enfeeble the Unholy",
+			"name": "削弱不洁者",
+			"source": "BH:SC",
+			"page": 11,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "神学家",
+			"subclassSource": "BH:SC",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"从13级开始，当精类、邪魔或不死生物进行一次对抗你所施展法术的豁免检定时，你可以用你的反应使该次豁免检定具有劣势。一旦使用此特性，你必须完成一次短休或长休才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Miracle Worker",
+			"name": "奇迹行者",
+			"source": "BH:SC",
+			"page": 11,
+			"className": "学者",
+			"classSource": "BH:SC",
+			"subclassShortName": "神学家",
+			"subclassSource": "BH:SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级，你可以施展{@spell 通神术}、{@spell 驱逐善恶}或{@spell 死者复活}法术而不消耗法术位。一旦使用此特性，你必须完成一次短休或长休才能再次使用。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Academic Expertise",
+			"name": "学术专精",
+			"source": "BH:SC",
+			"page": 11,
+			"featureType": [
+				"BHEA"
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"history": true,
+					"investigation": true,
+					"medicine": true,
+					"nature": true,
+					"religion": true
+				}
+			],
+			"entries": [
+				"从以下你已熟练的技能中选择两项：{@skill 奥秘}、{@skill 历史}、{@skill 调查}、{@skill 医药}、{@skill 自然}或{@skill 宗教}。你进行任何使用所选熟练项之一的属性检定时，你的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Adventurous Appetizers",
+			"name": "冒险开胃菜",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "烹饪学家研究领域",
+						"entrySummary": "烹饪学家"
+					}
+				}
+			],
+			"entries": [
+				"你可以花10分钟为同伴们准备便于取食的开胃菜。此时，你准备\"1 + 你的智力调整值\"（至少1）份开胃菜。生物可以用\"使用物件\"动作吃下一份，回复{@dice 1d8}点生命值，并获得等于{@dice 1d8} + 你学者等级一半的临时生命值。这些开胃菜在24小时后变质，此后不再提供任何益处。完成一次长休后，你才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Alert to Danger",
+			"name": "危机警觉",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "战术家研究领域",
+						"entrySummary": "战术家"
+					}
+				}
+			],
+			"entries": [
+				"你将你的智力调整值加到先攻检定上。此外，你在自己的每个回合都可以用一个附赠动作进行撤离动作。"
+			]
+		},
+		{
+			"ENG_name": "Applied Intelligence",
+			"name": "智力运用",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"你懂得如何将过人的才智运用于几乎任何场合。当你进行一次属性检定、攻击检定或豁免检定时，你可以选择以你的智力调整值代替原本加到检定上的属性调整值。你可以在掷骰之后、DM宣告成功或失败之前作出此改变。完成一次短休或长休后，你才能再次使用此应用。"
+			]
+		},
+		{
+			"ENG_name": "Beast Whisperer",
+			"name": "兽语者",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "秘仪师研究领域",
+						"entrySummary": "秘仪师"
+					}
+				}
+			],
+			"entries": [
+				"你可以与野兽交流，如同处于{@spell 动物交谈}法术的影响下。"
+			]
+		},
+		{
+			"ENG_name": "Bonus Cantrips",
+			"name": "额外戏法",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "秘仪师研究领域",
+						"entrySummary": "秘仪师"
+					}
+				}
+			],
+			"entries": [
+				"选择并学会任意两个戏法。智力是你施展这些戏法的施法属性。"
+			]
+		},
+		{
+			"ENG_name": "Bonus Languages",
+			"name": "额外语言",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"选择任意三门语言。你能说、读、写这些语言。"
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"选择任意两项技能并获得其熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Clean Plate Practice",
+			"name": "净盘修行",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "烹饪学家研究领域",
+						"entrySummary": "烹饪学家"
+					}
+				}
+			],
+			"entries": [
+				"你可以花1分钟检视一份食物或饮品，判断其是否有毒或带病。若有，你知晓具体的毒素或疾病。你也可以花10分钟，净化你周围5尺内的所有食物与饮品，除去其中的毒素与疾病。"
+			]
+		},
+		{
+			"ENG_name": "Collector's Capacity",
+			"name": "收藏家行囊",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "烹饪学家研究领域",
+						"entrySummary": "烹饪学家"
+					}
+				}
+			],
+			"entries": [
+				"你最多可携带总重\"100 + 5 × 你的学者等级\"磅的冒险装备、书籍、工具包和食材，并视其总重仅为10磅。"
+			]
+		},
+		{
+			"ENG_name": "Counterattacker",
+			"name": "反击者",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "战术家研究领域",
+						"entrySummary": "战术家"
+					}
+				}
+			],
+			"entries": [
+				"当某生物在你触及范围内进行借机攻击时，你可以用你的反应对该生物进行一次武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Critical Analysis",
+			"name": "重击分析",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"当你对某生物使用\"解析敌人\"特性时，在接下来的1分钟内，你对该生物进行的任何攻击检定，在d20掷出19或20时即为重击。在11级，你对该生物的攻击检定在掷出18、19或20时即为重击。"
+			]
+		},
+		{
+			"ENG_name": "Cunning Linguist",
+			"name": "机敏语言学家",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "外交官研究领域",
+						"entrySummary": "外交官"
+					}
+				}
+			],
+			"entries": [
+				"当你有机会研习某门语言的书面或口语实例达8小时，你可以选择学会该语言。在你再次使用此博学应用之前，你能说、读、写该语言。"
+			]
+		},
+		{
+			"ENG_name": "Diehard",
+			"name": "坚韧不屈",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "战术家研究领域",
+						"entrySummary": "战术家"
+					}
+				}
+			],
+			"entries": [
+				"你在学者职业的每个等级都获得1点生命值上限。此后每当你在学者职业获得一个新等级，你的生命值上限便提高1点。此外，你将你的熟练加值加到死亡豁免检定上。"
+			]
+		},
+		{
+			"ENG_name": "Eldritch Lore",
+			"name": "魔能学识",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "秘仪师研究领域",
+						"entrySummary": "秘仪师"
+					}
+				}
+			],
+			"entries": [
+				"当你花10分钟冥想，你可以在接下来的1小时内感知魔法的存在，如同处于{@spell 侦测魔法}法术的影响下。此外，你可以花1分钟用放大镜检视一件物品，探知其具有何种魔法属性（若有），如同你施展了{@spell 鉴定术}法术。"
+			]
+		},
+		{
+			"ENG_name": "Expertise",
+			"name": "专精",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"选择你任意两项技能熟练项。你进行任何使用所选熟练项之一的属性检定时，你的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "First Aid",
+			"name": "急救",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "医师研究领域",
+						"entrySummary": "医师"
+					}
+				}
+			],
+			"entries": [
+				"你可以用一个动作医治一名距你5尺内、正受{@condition 目盲||目盲}、{@condition 耳聋||耳聋}或{@condition 中毒}状态折磨的生物，终止该状态。"
+			]
+		},
+		{
+			"ENG_name": "Heal Thyself",
+			"name": "医者自医",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "医师研究领域",
+						"entrySummary": "医师"
+					}
+				}
+			],
+			"entries": [
+				"你可以用一个动作终止影响你的{@condition 中毒}状态或一种疾病。此时，你回复等于{@dice 3d6} + 你的学者等级的生命值。完成一次短休或长休后，你才能再次使用此应用。"
+			]
+		},
+		{
+			"ENG_name": "Herbal Cleanse",
+			"name": "草药净化",
+			"source": "BH:SC",
+			"page": 12,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "医师研究领域",
+						"entrySummary": "医师"
+					}
+				}
+			],
+			"entries": [
+				"在10分钟内，你可以为你自己和数量至多等于你智力调整值的生物施用有益的草药。此时，你和每个你选择的生物在接下来的8小时内获得毒素伤害抗性，并在对抗毒素和疾病的豁免检定上具有优势。完成一次长休后，你才能再次使用此应用。"
+			]
+		},
+		{
+			"ENG_name": "Intellect Fortress",
+			"name": "智能壁垒",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"你具有心灵伤害抗性。在11级，你免疫心灵伤害。"
+			]
+		},
+		{
+			"ENG_name": "Jack of All Trades",
+			"name": "万事通",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "外交官研究领域",
+						"entrySummary": "外交官"
+					}
+				}
+			],
+			"entries": [
+				"对于任何尚未加上你熟练加值的属性检定，你可以加上你熟练加值的一半（向下取整）。"
+			]
+		},
+		{
+			"ENG_name": "Libra",
+			"name": "天秤",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"当你使用\"解析敌人\"特性时，你获知该生物的强弱情报。若该生物正处于原生形态且并非变形生物，你还获知该生物具有免疫、抗性和易伤的伤害类型。在11级，此应用对变形生物以及未处于原生形态的生物同样生效。"
+			]
+		},
+		{
+			"ENG_name": "Martyr's Magic",
+			"name": "殉道者魔法",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "神学家研究领域",
+						"entrySummary": "神学家"
+					}
+				}
+			],
+			"entries": [
+				"你学会{@spell 赐予生命|BH:SC}戏法。智力是你施展此法术的施法属性。当你对某生物施展此法术且其因此获得生命值时，你终止折磨该生物的{@condition 中毒}状态或一种疾病。"
+			]
+		},
+		{
+			"ENG_name": "Seal Agreement",
+			"name": "缔结誓约",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "外交官研究领域",
+						"entrySummary": "外交官"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"oath-sealing covenant|bh:sc"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell 誓约封印|BH:SC}法术，而不消耗法术位，也无需所需材料。你以智力作为此法术的施法属性。"
+			]
+		},
+		{
+			"ENG_name": "Signs of the Supernatural",
+			"name": "超自然之兆",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "神学家研究领域",
+						"entrySummary": "神学家"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"rest": {
+								"1e": [
+									"侦测善恶"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 侦测善恶}法术而不消耗法术位。完成一次短休或长休后，你才能再次以此博学应用施展此法术。",
+				"此外，你知晓超自然生物的秘密弱点，并能以此知识对抗它们。当你对异怪、天界生物、元素、精类、邪魔或不死生物进行武器攻击时，为计算伤害抗性与免疫，该伤害视为魔法伤害。"
+			]
+		},
+		{
+			"ENG_name": "Studied Defense",
+			"name": "精研防御",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"当你穿着轻甲或未穿甲时，你的AC等于12 + 你的智力调整值。你可以使用盾牌并获得此收益。"
+			]
+		},
+		{
+			"ENG_name": "Tool Expert",
+			"name": "工具专家",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"你获得以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"选择三种工具并获得其熟练项。",
+						"选择你拥有的一项工具熟练项。你进行任何使用该熟练项的属性检定时，你的熟练加值翻倍。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Verbum Dei",
+			"name": "圣言",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "神学家研究领域",
+						"entrySummary": "神学家"
+					}
+				}
+			],
+			"entries": [
+				"你可以用一个动作诵出凡人本不该说的圣言。此时，距你30尺内每个能听见你的生物（包括你自己）必须成功通过一次感知豁免检定，否则受到{@damage 3d6}点光耀伤害。此伤害在5级（{@damage 5d6}）、11级（{@damage 7d6}）和17级（{@damage 9d6}）时提高2d6。此豁免的DC等于8 + 你的熟练加值 + 你的智力调整值。此博学应用造成的伤害对异怪、天界生物、元素、精类、邪魔和不死生物翻倍。",
+				"一旦使用此博学应用，你必须完成一次短休或长休才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Well Educated",
+			"name": "学有所成",
+			"source": "BH:SC",
+			"page": 13,
+			"featureType": [
+				"BHEA"
+			],
+			"entries": [
+				"选择一项技能、一种工具和一门语言。你获得该技能和该工具的熟练项，并能说、读、写该语言。"
+			]
+		}
+	]
+}
