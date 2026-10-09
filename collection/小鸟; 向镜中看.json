@@ -2,8 +2,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Litm",
-				"abbreviation": "Litm",
+				"json": "LitmCN",
+				"abbreviation": "LitmCN",
 				"full": "向镜中看",
 				"authors": [
 					"小鸟"
@@ -22,15 +22,15 @@
 		],
 		"edition": "classic",
 		"dateAdded": 1766249720,
-		"dateLastModified": 1766901789,
-		"_dateLastModifiedHash": "14f93d0baf"
+		"dateLastModified": 1791528302,
+		"_dateLastModifiedHash": "3a15e015c3"
 	},
 	"adventure": [
 		{
 			"ENG_name": "Look into the mirror",
 			"name": "向镜中看",
-			"id": "Litm",
-			"source": "Litm",
+			"id": "LitmCN",
+			"source": "LitmCN",
 			"group": "other",
 			"translator": "原创模组",
 			"published": "2019-10-01",
@@ -116,8 +116,8 @@
 	],
 	"adventureData": [
 		{
-			"id": "Litm",
-			"source": "Litm",
+			"id": "LitmCN",
+			"source": "LitmCN",
 			"data": [
 				{
 					"type": "section",
@@ -355,7 +355,7 @@
 										"15-17：获得一项短暂性疯狂。",
 										"18-19：获得一项短暂性疯狂，智力+2。",
 										"大于等于20：智力+2，并且在接下来24小时内所有豁免检定具有优势。",
-										"黑色苹果带来的智力增长可以使冒险者的智力属性超过20。{{@variantrule 疯狂|DMG}的相关规则见《{@book 城主指南|DMG}》。",
+										"黑色苹果带来的智力增长可以使冒险者的智力属性超过20。{@variantrule 疯狂|DMG}的相关规则见《{@book 城主指南|DMG}》。",
 										"若食用黑色苹果时，冒险者还未找到哭墙，向豁免检定结果最高的冒险者朗读以下文本：",
 										{
 											"type": "insetReadaloud",
@@ -397,7 +397,7 @@
 									"type": "statblock",
 									"tag": "item",
 									"style": "inset",
-									"source": "Litm"
+									"source": "LitmCN"
 								}
 							],
 							"ENG_name": ""
@@ -569,7 +569,7 @@
 										"{@creature 卡罗尔|Litm}浑身一震，脸上流露出复杂的神情：羞惭、释然、疲惫与某种难以言说的悲悯交织在一起。她低声叹息道：\"现在......我全知道了。\""
 									]
 								},
-								"{@creature 卡罗尔|Litm}会将冒险者和其他恢复意识的伊甸居民送回原本的世界，并且赋予每个冒险者一项{{@book 黑暗赠礼|VRGR|1}（见《范·里希滕的鸦阁魔域指南》）。至于那些本就出生在伊甸城中的居民以及不愿离开的人，可以留在伊甸继续生活。",
+								"{@creature 卡罗尔|Litm}会将冒险者和其他恢复意识的伊甸居民送回原本的世界，并且赋予每个冒险者一项{@book 黑暗赠礼|VRGR|1}（见《范·里希滕的鸦阁魔域指南》）。至于那些本就出生在伊甸城中的居民以及不愿离开的人，可以留在伊甸继续生活。",
 								"荒野之上，曾经肆虐的怪物已经彻底消散，伊甸城也不再是囚笼，它将作为一座普通而真实的城市延续下去。"
 							],
 							"ENG_name": ""
@@ -624,7 +624,7 @@
 							"type": "statblock",
 							"tag": "creature",
 							"style": "inset",
-							"source": "Litm"
+							"source": "LitmCN"
 						},
 						{
 							"ENG_name": "",
@@ -632,7 +632,7 @@
 							"type": "statblock",
 							"tag": "creature",
 							"style": "inset",
-							"source": "Litm"
+							"source": "LitmCN"
 						},
 						{
 							"ENG_name": "",
@@ -640,7 +640,7 @@
 							"type": "statblock",
 							"tag": "creature",
 							"style": "inset",
-							"source": "Litm"
+							"source": "LitmCN"
 						}
 					],
 					"ENG_name": ""
@@ -691,9 +691,9 @@
 	"item": [
 		{
 			"name": "双面镜",
-			"source": "Litm",
+			"source": "LitmCN",
 			"page": 0,
-			"rarity": "珍稀",
+			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
 				"一个蛇形镜子，两面都可以清晰地照出人影。",
@@ -705,10 +705,13 @@
 	],
 	"monster": [
 		{
+			"size": [
+				"M"
+			],
 			"name": "海伦",
-			"source": "Litm",
+			"source": "LitmCN",
 			"page": 0,
-			"type": "中型类人生物",
+			"type": "humanoid",
 			"translator": "原创",
 			"alignment": [
 				"C",
@@ -739,7 +742,7 @@
 			],
 			"passive": 12,
 			"immune": [
-				"毒素",
+				"poison",
 				{
 					"special": "中毒"
 				}
@@ -777,6 +780,7 @@
 			"spellcasting": [
 				{
 					"name": "施法",
+					"type": "spellcasting",
 					"headerEntries": [
 						"法术豁免 {@dc 15}，法术命中 +7。只需言语成分。"
 					],
@@ -832,11 +836,14 @@
 			"ENG_name": "Helen"
 		},
 		{
+			"size": [
+				"M"
+			],
 			"name": "卡罗尔",
-			"source": "Litm",
+			"source": "LitmCN",
 			"translator": "原创",
 			"page": 0,
-			"type": "中型类人生物",
+			"type": "humanoid",
 			"alignment": [
 				"L",
 				"G"
@@ -862,7 +869,7 @@
 			"wis": 18,
 			"cha": 16,
 			"immune": [
-				"毒素",
+				"poison",
 				{
 					"special": "中毒"
 				}
@@ -904,6 +911,7 @@
 				{
 					"ENG_name": "Spellcasting",
 					"name": "施法",
+					"type": "spellcasting",
 					"headerEntries": [
 						"法术豁免 {@dc 15}，法术命中 +7。只需言语成分。"
 					],
@@ -951,7 +959,7 @@
 				}
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"tokenHref": {
 				"type": "external",
@@ -961,12 +969,15 @@
 			"ENG_name": "Carol"
 		},
 		{
+			"size": [
+				"L"
+			],
 			"name": "恐惧之蛇",
 			"isNamedCreature": true,
 			"translator": "原创",
-			"source": "Litm",
+			"source": "LitmCN",
 			"page": 0,
-			"type": "大型怪兽",
+			"type": "monstrosity",
 			"alignment": [
 				"U"
 			],
@@ -1035,7 +1046,7 @@
 					]
 				},
 				{
-					"name": "恐惧显现{{@recharge 5}",
+					"name": "恐惧显现{@recharge 5}",
 					"entries": [
 						"恐惧之蛇选择一个在它30尺以内可见的生物。该目标必须进行一次{@dc 15}的感知豁免。如果失败，目标受到{@dice 3d12}心灵伤害并且陷入{@condition 震慑}状态，目标可以在每回合开始前进行一次豁免。同时，目标迸发出恐惧之情涌向被恐惧之蛇选中离目标30尺内的另外至多三个生物，每个生物受到{@dice 3d8}心灵伤害。"
 					]
@@ -1045,8 +1056,8 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"ENG_name": "The Snake of Fear"
 		}

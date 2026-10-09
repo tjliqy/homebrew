@@ -67,6 +67,8 @@ const _ALLOWLIST_DIRS = new Set([
 	"KPSC",
 	"KTVSCO",
 	"Lera",
+	"Likoko",
+	"LitmCN",
 	"LLAF",
 	"LM",
 	"LoRDToB",
