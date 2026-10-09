@@ -1,0 +1,6216 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "PlaneShiftTarkir",
+				"abbreviation": "PS-Tk",
+				"full": "鞑契异界传送指南",
+				"url": "https://www.gmbinder.com/share/-MgjjdYSKpqvwBbBgd-_",
+				"version": "1.1",
+				"authors": [
+					"grzart"
+				],
+				"convertedBy": [
+					"Eulum"
+				],
+				"color": "8249eb"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 0,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "cd4e77a08c"
+	},
+	"race": [
+		{
+			"ENG_name": "Ainok",
+			"name": "犬人",
+			"source": "PlaneShiftTarkir",
+			"page": 7,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Natural Weapon",
+				"Skill Proficiency"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"count": 2,
+						"from": [
+							"acrobatics",
+							"athletics",
+							"intimidation",
+							"perception",
+							"survival"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Bite",
+					"type": "entries",
+					"name": "啃咬",
+					"entries": [
+						"你可以用你细长的尖牙进行徒手打击。如果你以此命中，你造成等于{@damage 1d6}+你的力量调整值的穿刺伤害，而非徒手打击通常造成的钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Canine Talents",
+					"type": "entries",
+					"name": "犬类天赋",
+					"entries": [
+						"你从以下技能中自选两项获得熟练项：{@skill 特技}、{@skill 运动}、{@skill 威吓}、{@skill 察觉}或{@skill 求生}。"
+					]
+				},
+				{
+					"ENG_name": "Pack Tactics",
+					"type": "entries",
+					"name": "集群战术",
+					"entries": [
+						"当至少一个你的盟友在生物5尺内且该盟友未处于{@condition 失能}状态时，你对该生物进行的攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Throat Clamp",
+					"type": "entries",
+					"name": "锁喉",
+					"entries": [
+						"在你的回合中，以{@action 攻击}动作的\"啃咬\"命中一个生物后，如果该目标与你相距不超过5尺、且体型至多比你大一级，你可以用一个附赠动作尝试将其摔掷在地。目标必须通过DC为8+你的熟练加值+你的力量调整值的力量豁免，否则被你{@condition 受擒}。在擒抱结束前，你和目标都处于{@condition 倒地}状态。",
+						"你可以使用此特质的次数等于你的熟练加值，当你完成一次长休后，你重新获得所有消耗的次数。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Ainok.png"
+						}
+					}
+				],
+				"entries": [
+					"犬人是原生于黑山山脉的犬科人形生物。远古的犬人形似獒犬或熊，但因遭巨龙猎杀而几近灭绝。狼形与豺形的犬人更为常见，它们在远离幼龙之处觅食腐肉。除山区之外，犬人通常还能在龙王欧祝泰与卓茉卡的部族中见到。",
+					"沙漠中的犬人与沙漠有着深厚的联系。他们总能找到通往水源的路，也很少因地形而迷失方向。卓茉卡部族的\"送沙者\"传统便源自犬人萨满。",
+					"犬人在激战中容易陷入狂暴，回归祖先的本能，用强有力的双颚撕扯敌人。杀红了眼的犬人甚至会生吞倒下对手的血肉，尽管这种行为被视为令人难堪的失控。",
+					"犬人还有仪式性搏斗的传统，这既是战斗训练，也是淘汰那些过于孱弱、无法为族群有效效力的个体的方式。未通过考验者会被独自放逐至荒野，几乎必死无疑。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Aven",
+			"name": "艾文",
+			"source": "PlaneShiftTarkir",
+			"page": 8,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"fly": true,
+				"walk": 30
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Flight",
+					"type": "entries",
+					"name": "飞行",
+					"entries": [
+						"因为你的双翼，你拥有等同于你步行速度的飞行速度。如果你穿戴中甲和重甲，则你不能使用此飞行速度。"
+					]
+				},
+				{
+					"ENG_name": "Powerful Wings",
+					"type": "entries",
+					"name": "有力双翼",
+					"entries": [
+						"在你的回合采取{@action 攻击}动作时，你可以用双翼扇出的一股狂风替换其中一次攻击，形成一条5尺宽、30尺长的线状区域。该区域内的每个生物必须通过力量豁免（DC=8+你的敏捷调整值+你的熟练加值），否则被沿线方向推离你15尺。这股狂风会驱散气体或蒸汽，并熄灭该区域内的蜡烛、火把以及类似无遮蔽的火焰。",
+						"你可以使用此特质的次数等于你的熟练加值，当你完成一次长休后，你重新获得所有消耗的次数。"
+					]
+				},
+				{
+					"ENG_name": "Talons",
+					"type": "entries",
+					"name": "禽爪",
+					"entries": [
+						"你可以使用你的禽爪进行徒手打击。当你使用它们命中，这次打击会造成{@damage 1d6}+你力量调整值的挥砍伤害，代替徒手打击原本的钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Winged Body Language",
+					"type": "entries",
+					"name": "双翼肢体语言",
+					"entries": [
+						"你为影响巨龙而进行的基于魅力的属性检定具有优势。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Aven.png"
+						}
+					}
+				],
+				"entries": [
+					"艾文是遍布鞑契的鸟类人形生物。他们长有爪子与羽毛的前肢既是翅膀也是手臂，很像原始鸟类的前肢。许多艾文具有鹤与隼的特征，可以在欧祝泰与卓茉卡部族中见到。形似秃鹫的艾文则有时出现在席穆嘉部族中。",
+					"拥有双翼使艾文能更好地掌握龙语，尤其是传达复杂含义的肢体语言。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Djinn",
+			"name": "气巨灵",
+			"source": "PlaneShiftTarkir",
+			"page": 9,
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"元素生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"fly": true,
+				"walk": 30
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								"舞风术"
+							]
+						}
+					},
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"羽落术"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"造风术",
+									"龙卷尘暴|XGE",
+									"守护之风|XGE"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Creature Type",
+					"type": "entries",
+					"name": "生物类型",
+					"entries": [
+						"你是元素生物。"
+					]
+				},
+				{
+					"ENG_name": "Limited Flight",
+					"type": "entries",
+					"name": "有限飞行",
+					"entries": [
+						"你拥有等同于你步行速度的飞行速度。如果你穿戴中甲或重甲，则不能使用该飞行速度。如果你在空中结束回合且没有其他事物使你保持悬空，你将坠落。"
+					]
+				},
+				{
+					"ENG_name": "Mingle with the Wind",
+					"type": "entries",
+					"name": "融入清风",
+					"entries": [
+						"你掌握舞风术戏法。从第3级起，你可以用此特性施展{@spell 羽落术}，无须材料成分。从第5级起，你还可以用此特性施展{@spell 造风术}，无须材料成分。一旦你以此特性施展了{@spell 羽落术}或{@spell 造风术}，在完成长休前你不能再次以该特性施展同一法术。你也可以使用你拥有的任何相应环阶的法术位施展这两个法术。",
+						"当你使用此特质施展法术时，智力，感知或魅力是你的施法属性（当你选择该种族时进行决定）。"
+					]
+				},
+				{
+					"ENG_name": "Unending Breath",
+					"type": "entries",
+					"name": "无尽气息",
+					"entries": [
+						"当你未处于{@condition 失能}状态时，你可以无限屏住呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Variant Spells",
+					"type": "inset",
+					"name": "变体法术",
+					"entries": [
+						"在DM的许可下，你可以将你\"融入清风\"特质中的{@spell 造风术}替换为{@spell 龙卷尘暴|XGE}或{@spell 守护之风|XGE}，这两个法术出自{@book 珊娜萨的万事指南|XGE}与{@book 邪恶元素玩家扩展|EEPC}。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Djinn.png"
+						}
+					}
+				],
+				"entries": [
+					"与他们的火巨灵表亲一样，气巨灵故乡的详情是一个被严格保守的秘密。这些神秘的元素生物与气元素相契，因而能够飞行并驾驭风。他们看起来像是有着蓝灰色皮肤、黑色大眼睛和角的类人生物。气巨灵在欧祝泰部族中颇受欢迎，因为他们的天赋使其能够轻松修习部族的各项武学。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Efreet",
+			"name": "火巨灵",
+			"source": "PlaneShiftTarkir",
+			"page": 10,
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"元素生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"fly": true,
+				"walk": 30
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"fire"
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								"燃火术"
+							]
+						}
+					},
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"燃烧之手"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"火焰刀"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Creature Type",
+					"type": "entries",
+					"name": "生物类型",
+					"entries": [
+						"你是元素生物。"
+					]
+				},
+				{
+					"ENG_name": "Fire Resistance",
+					"type": "entries",
+					"name": "火焰抗性",
+					"entries": [
+						"你对火焰伤害具有抗性。"
+					]
+				},
+				{
+					"ENG_name": "Illumination",
+					"type": "entries",
+					"name": "照明",
+					"entries": [
+						"你发出5尺半径的明亮光照，并向外再延伸5尺的微光光照。"
+					]
+				},
+				{
+					"ENG_name": "Reach to the Blaze",
+					"type": "entries",
+					"name": "烈焰之触",
+					"entries": [
+						"你掌握燃火术戏法。从第3级起，你可以用此特性施展{@spell 燃烧之手}。从第5级起，你还可以用此特性施展{@spell 火焰刀}，无须材料成分。一旦你以此特性施展了{@spell 燃烧之手}或{@spell 火焰刀}，在完成长休前你不能再次以该特性施展同一法术。你也可以使用你拥有的任何相应环阶的法术位施展这两个法术。",
+						"当你使用此特质施展法术时，智力，感知或魅力是你的施法属性（当你选择该种族时进行决定）。"
+					]
+				},
+				{
+					"ENG_name": "Smolder",
+					"type": "entries",
+					"name": "闷燃",
+					"entries": [
+						"当5尺内的一个生物以近战攻击命中你时，该生物受到等同于你的熟练加值的火焰伤害。此外，被你擒抱或{@condition 受擒}于你的生物在你的每个回合开始时受到等同于你的熟练加值的火焰伤害。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Efreet.png"
+						}
+					}
+				],
+				"entries": [
+					"火巨灵与火元素相契，外表是有着深色岩石般皮肤、体内燃烧的火焰映亮周身的类人生物。火巨灵的故乡是一座名为\"火缘\"卡达特的难以抵达的山脉。选择离开卡达特的火巨灵会被同族放逐，不再为火缘所接纳。他们绝口不提昔日的生活，这也正是卡达特始终笼罩在神秘之中的原因。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Goblin",
+			"name": "地精",
+			"source": "PlaneShiftTarkir",
+			"page": 11,
+			"lineage": "VRGR",
+			"creatureTypeTags": [
+				"类地精"
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Creature Type",
+					"type": "entries",
+					"name": "生物类型",
+					"entries": [
+						"你是类人生物。如果有任何先决条件或效果需要你作为一个类地精生物，你也被视作类地精生物。"
+					]
+				},
+				{
+					"ENG_name": "Climb Attack",
+					"type": "entries",
+					"name": "攀爬攻击",
+					"entries": [
+						"在你的回合以{@action 攻击}动作的徒手打击命中一个中型或更大的生物时，你可以依{@action 爬到更大生物身上|DMG}规则，作为同一动作的一部分攀上该生物。"
+					]
+				},
+				{
+					"ENG_name": "Darkvision",
+					"type": "entries",
+					"name": "黑暗视觉",
+					"entries": [
+						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+					]
+				},
+				{
+					"ENG_name": "Goblin Nimbleness",
+					"type": "entries",
+					"name": "地精灵巧",
+					"entries": [
+						"你可以穿过体型比你大的生物的空间，而无须消耗额外移动力。"
+					]
+				},
+				{
+					"ENG_name": "Natural Scavenger",
+					"type": "entries",
+					"name": "天生食腐者",
+					"entries": [
+						"你拥有{@skill 察觉}和{@skill 求生}技能的熟练项。"
+					]
+				},
+				{
+					"ENG_name": "Nimble Escape",
+					"type": "entries",
+					"name": "迅捷逃逸",
+					"entries": [
+						"你在自己的每个回合都可以用一个附赠动作采取{@action 撤离}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Goblin.png"
+						}
+					}
+				],
+				"entries": [
+					"地精是鞑契常见的小型人形生物，原生于黑山山脉及周边高原。高原地精通常长着红色皮毛，而适应寒冷山地的地精则长着白色皮毛；他们的肤色从深橄榄色到棕色再到棕褐色不等。地精成群生活，主要凭本能行事，以食腐为生。战斗时，地精会扑到猎物身上蜂拥围攻，从一个目标跳向下一个。在族群之外，地精通常可以在寇安甘和安塔卡部族的成员中找到。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Goblin",
+			"name": "地精",
+			"source": "PlaneShiftTarkir",
+			"page": 13,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Natural Armor",
+				"Natural Weapon",
+				"Powerful Build",
+				"Skill Proficiency"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"count": 1,
+						"from": [
+							"history",
+							"investigation",
+							"perception",
+							"survival"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Elephantine Talents",
+					"type": "entries",
+					"name": "象类天赋",
+					"entries": [
+						"你从以下技能中自选一项获得熟练项：{@skill 历史}、{@skill 调查}、{@skill 察觉}或{@skill 求生}。"
+					]
+				},
+				{
+					"ENG_name": "Tusks",
+					"type": "entries",
+					"name": "獠牙",
+					"entries": [
+						"你长有獠牙，可以用它进行徒手打击。当你以此命中时，打击造成{@damage 1d6}+你的力量调整值的穿刺伤害，而非徒手打击通常造成的钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"你有着厚实的皮革状皮肤。当你未穿着护甲时，你的基础AC为13+你的敏捷调整值。"
+					]
+				},
+				{
+					"ENG_name": "Powerful Build",
+					"type": "entries",
+					"name": "强力构筑",
+					"entries": [
+						"在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
+					]
+				},
+				{
+					"ENG_name": "Trunk",
+					"type": "entries",
+					"name": "象鼻",
+					"entries": [
+						"你有一条可用于呼吸的象鼻。它能操作物件、开关门或容器、拿起或放下微型物件、持握具有轻型属性的武器，或擒抱生物。你也可以用象鼻进行徒手打击。象鼻能举起的重量不超过10磅。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Loxodon.png"
+						}
+					}
+				],
+				"entries": [
+					"象族是象形人形生物，原生于黑山山脉最寒冷的地带。与其他位面的象族不同，鞑契的象族外貌更像猛犸，长着修长的獠牙，覆盖着厚重的绒毛。他们以力量与武艺闻名，亦令人畏惧。山外的象族极为罕见，且不太会离开自己的小家庭单位活动。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Human",
+			"name": "人类",
+			"source": "PlaneShiftTarkir",
+			"page": 12,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Human Determination",
+					"type": "entries",
+					"name": "人类决心",
+					"entries": [
+						"当你进行攻击检定、属性检定或豁免检定时，在看到结果之后、检定效果结算之前，你可以重骰该骰并必须使用新的结果。你可以使用此特性的次数等于你的熟练加值，完成长休后恢复所有已耗用的次数。"
+					]
+				},
+				{
+					"ENG_name": "Versatility",
+					"type": "entries",
+					"name": "多才多艺",
+					"entries": [
+						"人类拥有广泛的天赋。你任选一项技能与一件工具并获得熟练项。"
+					]
+				},
+				{
+					"ENG_name": "Variant Traits",
+					"type": "inset",
+					"name": "变体特性",
+					"entries": [
+						"如果你的战役使用{@book 玩家手册|PHB}中的可选专长规则，你的地下城主可以允许使用这些变体特性，它们会替换你的\"人类决心\"与\"多才多艺\"特性。",
+						{
+							"ENG_name": "Resourceful",
+							"type": "entries",
+							"name": "适应力",
+							"entries": [
+								"每当你完成一次长休后，你会获得{@variantrule 激励|PHB}。"
+							]
+						},
+						{
+							"ENG_name": "Feat",
+							"type": "entries",
+							"name": "专长",
+							"entries": [
+								"你从{@book 玩家手册|PHB}中获得以下专长之一：{@feat 警觉}、{@feat 医疗师}、{@feat 幸运}、{@feat 魔法学徒}、{@feat 凶蛮打手}、{@feat 熟习}或{@feat 健壮}。"
+							]
+						}
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Human.png"
+						}
+					}
+				],
+				"entries": [
+					"人类是鞑契最占优势的智慧种族之一，外貌与其他世界的同类相似。他们以坚韧与创造力著称。人类构成了所有龙王部族的多数成员。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Naga",
+			"name": "纳迦",
+			"source": "PlaneShiftTarkir",
+			"page": 14,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"blindsight": 10,
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				{
+					"ENG_name": "Bite",
+					"type": "entries",
+					"name": "啃咬",
+					"entries": [
+						"你长有獠牙之口，可以用它进行徒手打击。当你以此命中时，打击造成{@damage 1d6}+你的力量调整值的穿刺伤害，而非徒手打击通常造成的钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Blindsight",
+					"type": "entries",
+					"name": "盲视",
+					"entries": [
+						"你可以在不依赖视觉的情况下感知你周围10尺内的环境。你无法以此方式侦测构装体或不死生物。"
+					]
+				},
+				{
+					"ENG_name": "Poison Spray",
+					"type": "entries",
+					"name": "毒气喷涌",
+					"entries": [
+						"你可以用一个动作向20尺内你可见的一个生物从獠牙喷出致盲毒液。该生物必须进行一次DC为8+你的熟练加值+你的敏捷调整值的敏捷豁免。豁免失败者受到{@damage 1d6}+你的体质调整值的毒素伤害并{@condition 目盲}至其下回合结束；豁免成功者伤害减半且不{@condition 目盲}。",
+						"你可以使用此特质的次数等于你的熟练加值，当你完成一次长休后，你重新获得所有消耗的次数。"
+					]
+				},
+				{
+					"ENG_name": "Poison Resilience",
+					"type": "entries",
+					"name": "毒素抗性",
+					"entries": [
+						"你在为自己避免或结束{@condition 中毒}状态的豁免检定时具有优势。你同样具有毒素伤害的抗性。"
+					]
+				},
+				{
+					"ENG_name": "Serpentine Build",
+					"type": "entries",
+					"name": "蛇形躯体",
+					"entries": [
+						"你拥有蛇形躯体，可以腾出双手来擒抱生物。你以此方式发起擒抱时进行的属性检定具有优势。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Naga.png"
+						}
+					}
+				],
+				"entries": [
+					"纳迦是鞑契的蛇形人形生物，其祖地为萨谷丛林。他们有双臂，但以蛇的躯干与尾巴代替双腿，全身覆盖着从绿色到蓝色与灰色的鳞片。大多数纳迦已成为龙王席穆嘉的奴仆。在部族中，他们谋求担任本土龙语翻译的职位，许多纳迦相信自己是巨龙的远亲。不少纳迦还展现出死灵法术方面的天赋\u2014\u2014那正是席穆嘉从罗刹恶魔处习得的法术。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Orc",
+			"name": "兽人",
+			"source": "PlaneShiftTarkir",
+			"page": 15,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Powerful Build"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"animal handling",
+							"insight",
+							"intimidation",
+							"medicine",
+							"nature",
+							"perception",
+							"survival"
+						],
+						"count": 2
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Aggressive",
+					"name": "好斗",
+					"entries": [
+						"以一个附赠动作，你可以向你能看到或者听到的任意一个敌对生物移动最多相当于你速度的距离。你必须比开始移动时距离该敌人更近地结束这次移动。"
+					],
+					"type": "entries"
+				},
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"entries": [
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
+					],
+					"type": "entries"
+				},
+				{
+					"ENG_name": "Primal Intuition",
+					"name": "原初直觉",
+					"entries": [
+						"你可以从以下技能中选择两项获得熟练项：{@skill 驯兽}、{@skill 洞悉}、{@skill 威吓}、{@skill 医药}、{@skill 自然}、{@skill 察觉}和{@skill 求生}。"
+					],
+					"type": "entries"
+				},
+				{
+					"ENG_name": "Powerful Build",
+					"name": "强力构筑",
+					"entries": [
+						"在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
+					],
+					"type": "entries"
+				},
+				{
+					"ENG_name": "Languages",
+					"name": "语言",
+					"entries": [
+						"你可以说、读、写通用语和兽人语。"
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Orc.png"
+						}
+					}
+				],
+				"entries": [
+					"兽人是长有獠牙的人形生物，耳朵尖细、鼻梁宽厚、皮肤灰白。据信他们原生于终嚎沼的泥沼与沼泽。他们历来在泥沼与草原间自己的村落中生活，但许多兽人家庭已融入寇安甘部族，在战场上与他人并肩作战。兽人以凶猛残暴著称。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Rakshasa",
+			"name": "罗刹",
+			"source": "PlaneShiftTarkir",
+			"page": 16,
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"邪魔"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Magic Resistance",
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								"次级幻象"
+							]
+						}
+					},
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"侦测思想"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"暗示术"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Creature Type",
+					"type": "entries",
+					"name": "生物类型",
+					"entries": [
+						"你是一个邪魔。"
+					]
+				},
+				{
+					"ENG_name": "Cursed Claws",
+					"type": "entries",
+					"name": "诅咒利爪",
+					"entries": [
+						"你能够以爪击进行徒手打击。当你使用它命中目标时，该打击造成{@damage 1d6}+你的力量调整值的挥砍伤害，代替通常徒手打击的钝击伤害。",
+						"如果你命中一个并非构装体或不死生物的生物，目标必须通过DC为8+你的熟练加值+你的力量调整值的力量豁免，否则将遭受罗刹之咒。"
+					]
+				},
+				{
+					"ENG_name": "Darkvision",
+					"type": "entries",
+					"name": "黑暗视觉",
+					"entries": [
+						"你在{@quickref 视野与光照||2||微光光照}下视物如同处于{@quickref 视野与光照||2||明亮光照}，而60尺范围内的黑暗中视物则如同处于{@quickref 视野与光照||2||微光光照}。你在黑暗中只能分辨出灰色的阴影。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"type": "entries",
+					"name": "魔法抗性",
+					"entries": [
+						"你对抗法术所做的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Rakshasa Magic",
+					"type": "entries",
+					"name": "罗刹魔法",
+					"entries": [
+						"你掌握次级幻象戏法。从第3级起，你可以用此特性施展{@spell 侦测思想}。从第5级起，你还可以用此特性施展{@spell 暗示术}。一旦你以此特性施展了{@spell 侦测思想}或{@spell 暗示术}，在完成长休前你不能再次以该特性施展同一法术。你也可以使用你拥有的任何相应环阶的法术位施展这两个法术。",
+						"当你使用此特质施展法术时，智力，感知或魅力是你的施法属性（当你选择该种族时进行决定）。"
+					]
+				},
+				{
+					"ENG_name": "Rakshasa Curse",
+					"type": "inset",
+					"name": "罗刹之咒",
+					"entries": [
+						"每当目标进行短休或长休时，该诅咒便会生效，使目标心中充满恐怖的景象与梦境。被诅咒的目标无法从短休或长休中获得任何益处。该诅咒持续存在，直到被移除诅咒法术或类似魔法解除。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Rakshasa.png"
+						}
+					}
+				],
+				"entries": [
+					"罗刹是外观如虎的人形恶魔，身披条纹、拖着尾巴。许多罗刹还长有巨大的尖牙、獠牙或角，常见他们佩戴精美的王冠、头饰与珠宝。他们掌握强大的死灵与幻术魔法，并知晓召唤其他西迪库尔恶魔的秘密。他们与席穆嘉立下古老的契约，与部族并肩效命。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Sibsig",
+			"name": "尸虏",
+			"source": "PlaneShiftTarkir",
+			"page": 17,
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"亡灵"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				{
+					"ENG_name": "Creature Type",
+					"type": "entries",
+					"name": "生物类型",
+					"entries": [
+						"你是一个不死生物。"
+					]
+				},
+				{
+					"ENG_name": "Deathless Nature",
+					"type": "entries",
+					"name": "不死本质",
+					"entries": [
+						"你对毒素伤害具有抗性并免疫疾病，且你为避免或结束自身{@condition 中毒}状态所做的豁免检定具有优势。你不需要进食、饮水或呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Relentless Endurance",
+					"type": "entries",
+					"name": "坚韧不屈",
+					"entries": [
+						"当你生命值降低到0但未被直接杀死时，你可以改为降至1点生命值。一旦你使用此特质，直到你完成一次长休前都不能再次使用。"
+					]
+				},
+				{
+					"ENG_name": "Sibsig Talent",
+					"type": "entries",
+					"name": "尸虏天赋",
+					"entries": [
+						"你拥有{@skill 察觉}技能的熟练项。"
+					]
+				},
+				{
+					"ENG_name": "Sleepless",
+					"type": "entries",
+					"name": "无眠",
+					"entries": [
+						"你不需要睡眠，魔法也无法使你入睡。长休期间你保持清醒，但仍须避免剧烈活动才能获得休息的益处。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Sibsig.jpg"
+						}
+					}
+				],
+				"entries": [
+					"被席穆嘉部族杀害的其他部族战士通常不会被处置掉，而是被转化为称为\"尸虏\"的丧尸。与寻常的活动尸体不同，席穆嘉祭司与亡灵宗师龙的黑暗魔法为尸虏注入了扭曲的暗黑能量，使他们比复生的尸体更为强大。这些不死战士最常出没于环绕席穆嘉领地的谷尔玛沼泽，四处游荡巡逻。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Vampire",
+			"name": "吸血鬼",
+			"source": "PlaneShiftTarkir",
+			"page": 18,
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"亡灵"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"climb": true,
+				"walk": 30
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"ENG_name": "Creature Type",
+					"type": "entries",
+					"name": "生物类型",
+					"entries": [
+						"你是一个不死生物。"
+					]
+				},
+				{
+					"ENG_name": "Darkvision",
+					"type": "entries",
+					"name": "黑暗视觉",
+					"entries": [
+						"你在{@quickref 视野与光照||2||微光光照}下视物如同处于{@quickref 视野与光照||2||明亮光照}，而60尺范围内的黑暗中视物则如同处于{@quickref 视野与光照||2||微光光照}。你在黑暗中只能看到灰色的阴影。"
+					]
+				},
+				{
+					"ENG_name": "Deathless Nature",
+					"type": "entries",
+					"name": "不死本质",
+					"entries": [
+						"你不需要进食、饮水或呼吸。你免疫疾病与衰老的影响，也无法被魔法催老。你不会映出倒影或影子。"
+					]
+				},
+				{
+					"ENG_name": "Spider Climb",
+					"type": "entries",
+					"name": "蛛行术",
+					"entries": [
+						"你可以在困难表面上使用攀爬速度，包括垂直表面与倒悬于天花板，且无须消耗额外移动力或进行属性检定。"
+					]
+				},
+				{
+					"ENG_name": "Tongue",
+					"type": "entries",
+					"name": "舌卷",
+					"entries": [
+						"你有一条长舌，可以用它进行徒手打击。你以长舌攻击的触及距离为10尺。当你以长舌命中一个大型或更小的生物时，你可以放弃造成伤害改为擒抱目标，即使你没有空出的手。在擒抱结束前，你不能用长舌攻击另一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Vampiric Drain",
+					"type": "entries",
+					"name": "吸血榨取",
+					"entries": [
+						"你可以用一个动作，以你的獠牙般的尖牙对一个并非构装体或不死生物、且被你{@condition 受擒}、处于{@condition 失能}或{@condition 束缚}状态的生物进行徒手打击。如果该攻击命中，它造成常规伤害外加{@damage 1d6}点暗蚀伤害，你获得等同于所造成暗蚀伤害的临时生命值。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/races/Vampire.png"
+						}
+					}
+				],
+				"entries": [
+					"赫鲁是席穆嘉部族秘法与学术研究的中心。众所周知，被称为吸血鬼的吸血食脑不死生物正源于这个可怕的地方。与尸虏丧尸战士不同，吸血鬼通常难以控制，且倾向于自行搜寻猎物。他们对其他生物的生命能量怀有饥渴。"
+				]
+			}
+		}
+	],
+	"spell": [
+		{
+			"ENG_name": "Anticipate",
+			"name": "预先考虑",
+			"source": "PlaneShiftTarkir",
+			"page": 20,
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你短暂冥想施法距离内你可见的一个自选目标可能采取的一切行动走向。目标必须通过魅力豁免，否则直到你的下一回合开始，其所有攻击检定、属性检定与豁免检定均带有劣势。法术结束前，你可以用你的反应指挥施法距离内的一名盟友移动至多其速度的距离。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Rogue",
+							"name": "浪客",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcane Trickster",
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Chronurgy Magic",
+							"name": "时间魔法",
+							"shortName": "时间",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Graviturgy Magic",
+							"name": "重力魔法",
+							"shortName": "重力",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"ENG_name": "Arcbond",
+			"name": "电弧连心",
+			"source": "PlaneShiftTarkir",
+			"page": 20,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一根避雷针"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你触碰的一名生物在持续时间内被无害的魔法闪电包裹。法术结束前，每当目标受到伤害，目标5尺内的其他每个生物必须通过敏捷豁免，否则受到{@damage 5d6}点闪电伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Rogue",
+							"name": "浪客",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcane Trickster",
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Chronurgy Magic",
+							"name": "时间魔法",
+							"shortName": "时间",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Graviturgy Magic",
+							"name": "重力魔法",
+							"shortName": "重力",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"ENG_name": "Adept of the Black Robes",
+					"name": "黑袍入道",
+					"source": "UA2022HeroesOfKrynn"
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"ENG_name": "Channel Harm",
+			"name": "转化险象",
+			"source": "PlaneShiftTarkir",
+			"page": 20,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "于施法距离内你可见的一个生物被攻击命中时采取"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在一个生物被攻击命中时于其周围唤出魔法护盾，将触发此反应的攻击伤害降低{@dice 2d4}。如果你将该伤害降为零，护盾会使攻击能量反噬，进行该攻击检定的生物受到等同于其原本将造成的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用3环或更高的法术位施放此法术时，触发攻击的伤害降低量每比2环高一环便增加{@dice 1d4}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Cleric",
+						"name": "牧师",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"ENG_name": "Crater's Claws",
+			"name": "山口龙爪",
+			"source": "PlaneShiftTarkir",
+			"page": 20,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一块晶洞石"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你从施法距离内你可见的一处由你选择的空置地面中唤出一只由岩浆构成的中型龙爪，其持续至法术结束。当你施放此法术时，以及法术结束前的每个回合，你都可以用一个附赠动作指挥龙爪劈砍其15尺内的一个生物。对目标进行一次近战法术攻击。命中时，目标受到等同于{@dice 2d6}+你的施法属性调整值的火焰伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用3环或更高的法术位施放此法术时，伤害每比2环高一环便增加{@dice 1d6}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Cleric",
+						"name": "牧师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Rogue",
+							"name": "浪客",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcane Trickster",
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Chronurgy Magic",
+							"name": "时间魔法",
+							"shortName": "时间",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Graviturgy Magic",
+							"name": "重力魔法",
+							"shortName": "重力",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"ENG_name": "Adept of the White Robes",
+					"name": "白袍入道",
+					"source": "UA2022HeroesOfKrynn"
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"ENG_name": "Draconic Roar",
+			"name": "龙语怒吼",
+			"source": "PlaneShiftTarkir",
+			"page": 21,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一瓣大蒜"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你触碰一个自愿生物，赋予其如威严巨龙般咆哮的力量。法术结束前，目标可以用一个动作发出咆哮。其30尺内由目标选择的每个生物必须通过感知豁免，否则在持续时间内对目标{@condition 恐慌}。处于{@condition 恐慌}的生物可以在其每个回合结束时重复该豁免，成功则对自己结束此效应。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Bard",
+						"name": "吟游诗人",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Cleric",
+						"name": "牧师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Rogue",
+							"name": "浪客",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcane Trickster",
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Chronurgy Magic",
+							"name": "时间魔法",
+							"shortName": "时间",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Graviturgy Magic",
+							"name": "重力魔法",
+							"shortName": "重力",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"ENG_name": "Adept of the Red Robes",
+					"name": "红袍入道",
+					"source": "DSotDQ"
+				},
+				{
+					"ENG_name": "Adept of the Red Robes",
+					"name": "红袍入道",
+					"source": "UA2022HeroesOfKrynn"
+				},
+				{
+					"ENG_name": "Adept of the Red Robes",
+					"name": "红袍入道",
+					"source": "UA2022HeroesOfKrynnRevisited"
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"ENG_name": "Dragonscale Boon",
+			"name": "龙鳞恩泽",
+			"source": "PlaneShiftTarkir",
+			"page": 21,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一片龙类生物的鳞片"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你为你触碰的一名生物唤出一副虚体的龙鳞甲，持续至法术结束。选择强酸、寒冷、火焰、闪电或毒素。法术结束前，该生物具有对所选伤害类型的抗性，AC获得+1加值，并且对抗巨龙的骇人威仪与吐息武器的豁免检定具有优势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Rogue",
+							"name": "浪客",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcane Trickster",
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Chronurgy Magic",
+							"name": "时间魔法",
+							"shortName": "时间",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Graviturgy Magic",
+							"name": "重力魔法",
+							"shortName": "重力",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"ADV",
+				"MAC"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"ENG_name": "Duneblast",
+			"name": "尘沙暴",
+			"source": "PlaneShiftTarkir",
+			"page": 21,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一撮沙子"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你使沙土从你所在的空间喷薄而出，形成一场沙暴。施放此法术时，你150尺内的每个生物必须进行一次敏捷豁免，豁免失败者受到{@damage 6d6}点钝击伤害，成功则伤害减半。",
+				"你周围150尺半径内出现一场沙暴并持续至法术结束。在法术区域内结束回合的生物受到{@damage 2d6}点钝击伤害。法术结束前，该区域为重度遮蔽。沙暴还会使依赖听觉的感知（{@skill 察觉}）检定带有劣势。沙暴的风会熄灭明火、驱散雾气，并抹去沙地或雪地上的足迹。以非魔法方式飞行且无法悬停的生物若在该区域内，须在其回合结束时降落，否则坠落。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Ranger",
+						"name": "游侠",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Rogue",
+							"name": "浪客",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcane Trickster",
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Chronurgy Magic",
+							"name": "时间魔法",
+							"shortName": "时间",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Graviturgy Magic",
+							"name": "重力魔法",
+							"shortName": "重力",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBS"
+			],
+			"areaTags": [
+				"R"
+			]
+		},
+		{
+			"ENG_name": "Gauntlets of Light",
+			"name": "澈光护手",
+			"source": "PlaneShiftTarkir",
+			"page": 21,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你触碰一个生物，使其拳头或其他天生武器在持续时间内散发光辉，发出5尺半径的明亮光照，并向外再延伸5尺的微光光照。法术结束前，目标的徒手打击与天生武器攻击视为魔法攻击，且攻击检定与伤害检定获得+1加值。此外，当目标以徒手打击命中一个生物时，其可以选择让该攻击造成{@damage 1d6}+其力量调整值的力场伤害，而非其徒手打击通常造成的伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Paladin",
+						"name": "圣武士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Cleric",
+						"name": "牧师",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"AAD"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"ENG_name": "Ojutai's Summons",
+			"name": "欧祝泰的召集",
+			"source": "PlaneShiftTarkir",
+			"page": 21,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "燃烧的香"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你唤出龙王欧祝泰的一名元素仆从。一名{@creature 气巨灵武僧|PlaneShiftTarkir}在施法距离内你可见的一处空置空间中显现。该生物在其生命值降至0或法术结束时消失。",
+				"该生物对你和你的同伴友善。在战斗中，该生物与你共享先攻，它在你的回合结束后行动。它听从你的口头命令（无需动作）。如果你不发出指令，该生物执行{@action 回避}动作，并用自己的移动力来回避危险。",
+				"如果你的{@status 专注}中断，该元素生物不会消失。相反，你会失去对它的控制。它知道你用魔法召唤并束缚了它，可能会发起攻击。它首先是龙王欧祝泰的仆从。失控的元素生物无法被你遣散，并会在被你召唤1小时后消失。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Cleric",
+							"name": "牧师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcana Domain",
+							"name": "奥秘领域",
+							"shortName": "奥秘",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Chronurgy Magic",
+							"name": "时间魔法",
+							"shortName": "时间",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Wizard",
+							"name": "法师",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Graviturgy Magic",
+							"name": "重力魔法",
+							"shortName": "重力",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"ENG_name": "Rally the Ancestors",
+			"name": "集结先祖",
+			"source": "PlaneShiftTarkir",
+			"page": 22,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一面战旗，以及与每个灵体生前相关的物品"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"你唤出三个与你存在羁绊的生物之灵（如先祖或阵亡的战友）。灵体以{@creature 恶灵|MM|恶灵}之形在施法距离内你可见的空置空间中显现。灵体在其生命值降至0或法术结束时消失。",
+				"每个灵体都是你和你同伴的盟友。在战斗中，灵体共享你的先攻值，但作为一个整体在你的回合之后立即行动。它们听从你的口头命令（你无须消耗动作）。如果你不下达命令，每个灵体都会采取{@action 回避}动作并移动以避开危险。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Bard",
+						"name": "吟游诗人",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Cleric",
+						"name": "牧师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Paladin",
+						"name": "圣武士",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"ENG_name": "Rite of the Serpent",
+			"name": "巨蛇仪式",
+			"source": "PlaneShiftTarkir",
+			"page": 22,
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一把价值500 gp的华丽仪式匕首",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"选择施法距离内的一具中型或小型类人生物尸体。一群受你控制的{@creature 毒蛇群}从尸体中钻出。当该蛇群的生命值降至一半时，它分裂为四条{@creature 毒蛇|MM|毒蛇}。法术结束时，每条蛇都消失。",
+				"每个生物都是你和你同伴的盟友。在战斗中，每个生物共享你的先攻值，但作为一个整体在你的回合之后立即行动。它们听从你的口头命令（你无须消耗动作）。如果你不下达命令，它们会采取{@action 回避}动作并移动以避开危险。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Bard",
+						"name": "吟游诗人",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Cleric",
+						"name": "牧师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Warlock",
+						"name": "魔契师",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Rogue",
+							"name": "浪客",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcane Trickster",
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"ENG_name": "Winds of Qal Sisma",
+			"name": "黑山狂风",
+			"source": "PlaneShiftTarkir",
+			"page": 22,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在自己40尺范围内唤出狂风，在持续时间内只影响你的敌人。狂风随你移动并以你为中心。法术结束前，你的敌人为侦测风中的你与你的盟友而进行的感知（{@skill 察觉}）检定带有劣势，针对风中你与你的盟友的远程武器攻击也带有劣势。此外，以非魔法方式飞行于风中的敌对生物必须在其回合结束时降落，否则坠落。",
+				"该风会熄灭法术区域内的明火并驱散雾气。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"ENG_name": "Wizard",
+						"name": "法师",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Sorcerer",
+						"name": "术士",
+						"source": "PHB"
+					},
+					{
+						"ENG_name": "Druid",
+						"name": "德鲁伊",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Rogue",
+							"name": "浪客",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Arcane Trickster",
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v2 (UA)",
+							"name": "受眷之魂 v2 (UA)",
+							"shortName": "受眷之魂 v2 (UA)",
+							"source": "UASorcerer"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Favored Soul v3 (UA)",
+							"name": "受眷之魂 v3 (UA)",
+							"shortName": "受眷之魂 v3 (UA)",
+							"source": "UARevisedSubclasses"
+						}
+					},
+					{
+						"class": {
+							"ENG_name": "Sorcerer",
+							"name": "术士",
+							"source": "PHB"
+						},
+						"subclass": {
+							"ENG_name": "Divine Soul",
+							"name": "神圣之魂",
+							"shortName": "神圣之魂",
+							"source": "XGE"
+						}
+					}
+				]
+			}
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Cranial Archive",
+			"name": "颅内档案",
+			"source": "PlaneShiftTarkir",
+			"page": 24,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"颅内档案由席穆嘉的纳迦死灵法师所创，用于提升麾下尸虏丧尸的作战效能。",
+				"佩戴这顶头盔时，你的智力值变为21。如果你不戴头盔时的智力值等于或高于21，则头盔对你无效。"
+			]
+		},
+		{
+			"ENG_name": "Ghostfire Blade",
+			"name": "灵火剑",
+			"source": "PlaneShiftTarkir",
+			"page": 24,
+			"baseItem": "长剑|PHB",
+			"type": "M",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4}",
+			"charges": 4,
+			"entries": [
+				"灵火剑以灵龙乌金的吐息锻成。剑身完全{@condition 隐形}，所触之物皆会燃烧。",
+				"此剑拥有4点充能，并在每天黎明恢复{@dice 1d4}点已耗用的充能。当你用此剑以近战攻击命中一个生物时，你可以消耗1点充能对目标施展{@spell 解离术}。"
+			],
+			"attachedSpells": [
+				"解离术"
+			]
+		},
+		{
+			"ENG_name": "Goblin Boom Keg",
+			"name": "鬼怪炸弹桶",
+			"source": "PlaneShiftTarkir",
+			"page": 24,
+			"type": "EXP|DMG",
+			"rarity": "none",
+			"weight": 20,
+			"value": 25000,
+			"entries": [
+				"侍奉安塔卡的地精们试图通过混合凡俗的反应材料来模仿她的龙焰\u2014\u2014这些材料遇火即爆。",
+				"点燃一桶火药会使其燃烧1轮，发出30尺半径的{@quickref 视野与光照||2||明亮光照}，并向外再延伸30尺的{@quickref 视野与光照||2||微光光照}。该轮结束后，火药桶爆炸。爆炸时处于火药桶10尺内的每个生物必须进行DC 12的敏捷豁免，豁免失败者受到{@damage 7d6}点火焰伤害，成功则伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Heart-piercer Bow",
+			"name": "穿心弓",
+			"source": "PlaneShiftTarkir",
+			"page": 24,
+			"baseItem": "短弓|PHB",
+			"type": "R",
+			"rarity": "rare",
+			"weight": 2,
+			"weaponCategory": "simple",
+			"property": [
+				"A",
+				"2H"
+			],
+			"range": "80/320",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"entries": [
+				"这些弓由一位远古锻造师设计，以龙骨雕成，以风本身为弦。",
+				"当你持用这把魔法弓时，以远距离进行攻击不会使你的远程武器攻击检定带有劣势，且你的远程武器攻击忽略半身掩护与四分之三掩护。当你以远程武器攻击命中一个生物时，目标额外受到{@damage 1d6}点闪电伤害。"
+			],
+			"ammoType": "箭|phb"
+		},
+		{
+			"ENG_name": "Spidersilk Net",
+			"name": "蛛丝网",
+			"source": "PlaneShiftTarkir",
+			"page": 24,
+			"type": "G",
+			"rarity": "none",
+			"weight": 15,
+			"value": 10000,
+			"entries": [
+				"蛛丝网被龙王的仆从们用于困缚并制服其他巨龙。它们以巨型蜘蛛的蛛丝而非更寻常的材料制成，并系有长绳，以便掷出很远的距离后回收。",
+				"你可以用一个动作将此网掷向你可见的一个超大型或更小的生物或物体。对目标进行一次远程武器攻击，将此网视为具有掷出（射程60/120）属性的简易远程武器。命中时，目标被{@condition 束缚}直至脱身。此网对无固定形体的生物或巨型生物无效。一个生物可以用其动作进行一次DC 15的力量检定，成功则使自己或其触及范围内的另一个生物脱身。对此网（AC 10）造成10点挥砍伤害也能使被困生物无损脱身，此效应结束且网被毁坏。"
+			]
+		},
+		{
+			"ENG_name": "Stormrider Rig",
+			"name": "驭霆械",
+			"source": "PlaneShiftTarkir",
+			"page": 24,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"驭霆械的外观是一副带有金属尖刺肩甲的挽具；这些尖刺不断传导着电弧。",
+				"当你佩戴此装备时，你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你的近战武器攻击命中时额外造成{@damage 1d6}点闪电伤害。",
+						"在你5尺内触碰你或以近战攻击命中你的生物受到{@damage 1d6}点闪电伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Vial of Dragonfire",
+			"name": "龙炎瓶",
+			"source": "PlaneShiftTarkir",
+			"page": 24,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"龙炎瓶是经锻造术魔法强化、用以承载龙王吐息的玻璃小瓶。你可以用一个动作将瓶子掷至20尺远处，使其撞击破碎。瓶子破碎时处于其15尺内的每个生物必须进行DC 15的敏捷豁免，豁免失败者受到{@damage 3d6}点火焰伤害，成功则伤害减半。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Ancient Carp",
+			"name": "远古锦鲤",
+			"shortName": "锦鲤",
+			"source": "PlaneShiftTarkir",
+			"page": 34,
+			"size": [
+				"G"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"庞然巨躯"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d20 + 25",
+				"average": 77
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 80
+			},
+			"str": 2,
+			"dex": 16,
+			"con": 20,
+			"int": 1,
+			"wis": 7,
+			"cha": 2,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 8,
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Immense",
+					"name": "庞然巨躯",
+					"entries": [
+						"锦鲤的AC包含其体质调整值。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"锦鲤只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Swallow",
+					"name": "吞咽",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一大型或更小的生物。{@h}该生物被吞下。被吞下的生物处于{@condition 目盲}且被{@condition 束缚}，对来自锦鲤体外的一切攻击与其他效应视为全身掩护，并在锦鲤的每个回合开始时受到10（{@damage 3d6}）点强酸伤害。如果锦鲤受到伤害，它必须在该回合结束时通过{@dc 10}的体质豁免，否则吐出所有被吞下的生物，这些生物在锦鲤10尺内的一处空间{@condition 倒地}。如果锦鲤死亡，它同样会吐出被吞下的生物。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/AncientCarp.png",
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"entries": [
+					"远古锦鲤是一种长得极其巨大的鱼。相传曾有一位渔夫把龙王欧祝泰的一句箴言铭记于心：\"如今便吃，何如养它一日，来日成席？\"于是渔夫等啊等，锦鲤越长越大。可当他终于前去收取自己的美餐时，锦鲤却把他变成了美餐。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/AncientCarp.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Arynx",
+			"name": "阿林克斯",
+			"source": "PlaneShiftTarkir",
+			"page": 33,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				{
+					"alignment": [
+						"U"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 14",
+				"average": 84
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"passive": 13,
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Keen Smell",
+					"name": "敏锐嗅觉",
+					"entries": [
+						"阿林克斯在依赖嗅觉的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中+6，触及5尺，单一目标。{@h}10（{@damage 1d10 + 5}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中+6，触及5尺，单一目标。{@h}12（{@damage 2d6 + 5}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Ram",
+					"name": "冲撞",
+					"entries": [
+						"{@atk mw} 命中+6，触及5尺，单一目标。{@h}12（{@damage 2d6 + 5}）点钝击伤害。如果阿林克斯在命中前立即向目标直线移动了至少20尺，目标必须通过{@dc 14}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Pounce",
+					"name": "猛扑",
+					"entries": [
+						"阿林克斯对一个{@condition 倒地}生物发动一次啃咬攻击。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/Arynx.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					"阿林克斯是原生于黑山山脉的长角猫科掠食者。一旦阿林克斯记住了某个生物的气味，它便会连续数里不断追猎该生物。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/Arynx.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Colossodon",
+			"name": "硕齿兽",
+			"source": "PlaneShiftTarkir",
+			"page": 35,
+			"size": [
+				"G"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				},
+				{
+					"ac": 22,
+					"condition": "缩入壳中时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "13d20 + 91",
+				"average": 227
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 28,
+			"dex": 3,
+			"con": 25,
+			"int": 4,
+			"wis": 10,
+			"cha": 5,
+			"save": {
+				"str": "+12",
+				"con": "+10"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Flipped",
+					"name": "翻转",
+					"entries": [
+						"一个超大型或更大的生物可以在硕齿兽处于{@condition 倒地}状态时，尝试以一次成功的擒抱检定将其彻底翻转。被翻转的硕齿兽受到的所有伤害均为易伤。想要站起，它必须在其回合内通过{@dc 10}的敏捷检定，然后用掉该回合的全部移动力。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Tusks",
+					"name": "獠牙",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}25（{@damage 3d10 + 9}）点穿刺伤害。如果目标是生物，它必须通过{@dc 18}的力量豁免，否则被推离硕齿兽至多10尺并陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Stomp",
+					"name": "践踏",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}28（{@damage 3d12 + 9}）点穿刺伤害，如果目标是大型或更小的生物，它会被{@condition 受擒}，直到硕齿兽移动或再次使用其践踏攻击。在擒抱结束前，目标处于{@condition 倒地}且被{@condition 束缚}。"
+					]
+				},
+				{
+					"ENG_name": "Shell Defense {@recharge 4}",
+					"name": "龟壳防御{@recharge 4}",
+					"entries": [
+						"硕齿兽缩入壳中，陷入{@condition 倒地}状态，AC获得+5加值。缩在壳中时，硕齿兽的速度为0且无法增加。硕齿兽可以用一个动作从壳中钻出，届时它不再处于{@condition 倒地}状态。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/Colossodon.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/Colossodon.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Djinn Monk",
+			"name": "气巨灵武僧",
+			"shortName": "武僧",
+			"source": "PlaneShiftTarkir",
+			"page": 41,
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"无甲防御"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 11,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+6",
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"通用语",
+				"原初语"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Ki-Empowered Strikes",
+					"name": "真气驻拳",
+					"entries": [
+						"武僧的武器攻击视为魔法攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmored Defense",
+					"name": "无甲防御",
+					"entries": [
+						"当武僧没有穿戴盔甲且没有持盾时，其AC包含了其感知调整值。"
+					]
+				},
+				{
+					"ENG_name": "Unarmored Movement",
+					"name": "无甲移动",
+					"entries": [
+						"当武僧未穿着护甲且未持用盾牌时，其步行速度增加10尺（已包含在其速度中）。武僧可以沿垂直表面和液面移动而不会跌落。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"武僧进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Force Strike",
+					"name": "力场冲击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）点力场伤害，且如果目标是生物，它必须通过{@dc 14}的敏捷豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Dart",
+					"name": "飞镖",
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程20/60尺，单一目标。{@h}5（{@damage 1d4 + 3}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Deflect Missiles",
+					"name": "拨挡飞弹",
+					"entries": [
+						"当武僧被远程武器攻击命中时，其受到的该攻击伤害减少14（{@dice 1d10 + 9}）。如果伤害被降至0，武僧接住该投掷物，并作为同一反应的一部分用它进行一次飞镖攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slow Fall",
+					"name": "轻身坠",
+					"entries": [
+						"当武僧坠落时，其受到的坠落伤害减少50。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/DjinnMonk.png",
+			"attachedItems": [
+				"飞镖|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"P"
+			],
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/DjinnMonk.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Gudul Lurker",
+			"name": "谷渡潜伏蜥",
+			"shortName": "潜伏蜥",
+			"source": "PlaneShiftTarkir",
+			"page": 45,
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "1d4 + 2",
+				"average": 4
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 20
+			},
+			"str": 1,
+			"dex": 13,
+			"con": 15,
+			"int": 1,
+			"wis": 8,
+			"cha": 3,
+			"skill": {
+				"perception": "+1",
+				"stealth": "+3"
+			},
+			"senses": [
+				"黑暗视觉 30 尺"
+			],
+			"passive": 11,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"潜伏蜥可以呼吸空气与水。"
+					]
+				},
+				{
+					"ENG_name": "Limb Regeneration",
+					"name": "断肢再生",
+					"entries": [
+						"如果潜伏蜥的生命值至少为1，则在其回合开始时恢复4点生命值。其断离的肢体（若有）也会重新长出。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 2}，触及范围5尺，单一目标。{@h}1点穿刺伤害。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/GudulLurker.png",
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"谷渡潜伏蜥是一种奇特的生物，与蝾螈几乎一模一样。它栖息于谷渡\u2014\u2014马兰河三角洲上星罗棋布的一系列岛屿。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/GudulLurker.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Gurmag Angler",
+			"name": "谷尔玛钓客",
+			"shortName": "钓客",
+			"source": "PlaneShiftTarkir",
+			"page": 46,
+			"size": [
+				"G"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"庞然巨躯"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d20 + 18",
+				"average": 81
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 80
+			},
+			"str": 2,
+			"dex": 16,
+			"con": 16,
+			"int": 1,
+			"wis": 7,
+			"cha": 2,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 8,
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Humanoid Lure",
+					"name": "类人诱饵",
+					"entries": [
+						"钓客长有一个形似类人生物的诱饵。检视该诱饵的生物可以通过{@dc 10}的智力（{@skill 调查}）检定辨明其真实本质。"
+					]
+				},
+				{
+					"ENG_name": "Immense",
+					"name": "庞然巨躯",
+					"entries": [
+						"钓客的AC包含其体质调整值。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"钓客只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 3d6}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Consume Dead {@recharge 5}",
+					"name": "吞噬死者{@recharge 5}",
+					"entries": [
+						"钓客用其动作吞食其5尺内大型或更小生物的尸体，恢复10（{@dice 1d20}）点生命值。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/GurmagAngler.png",
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"潜伏于谷尔玛沼泽中的钓客演化出了一种奇特的适应：由于沼泽中几乎所有生物都以类人生物为食，它便用一个大致呈类人形的肉质诱饵引诱毫无防备的猎物，包括尸虏丧尸、纳迦以及其他擅入者。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/GurmagAngler.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Highspire Mantis",
+			"name": "峰顶螳螂",
+			"shortName": "螳螂",
+			"source": "PlaneShiftTarkir",
+			"page": 47,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 1,
+			"wis": 10,
+			"cha": 3,
+			"skill": {
+				"stealth": "+4"
+			},
+			"passive": 10,
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Ambusher",
+					"name": "伏击",
+					"entries": [
+						"螳螂对任何被它{@quickref 突袭|PHB|3|0|突袭}的生物进行的攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Surprise Attack",
+					"name": "突袭攻击",
+					"entries": [
+						"如果螳螂在战斗首轮突袭了一个生物并以攻击命中它，该目标受到的该攻击伤害额外增加7（{@dice 2d6}）点。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一生物。{@h}16（{@damage 4d6 + 2}）点穿刺伤害。如果目标是中型或更小的生物，螳螂可以擒抱它。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/HighspireMantis.png",
+			"traitTags": [
+				"Ambusher"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"在与世隔绝的峰顶要塞，欧祝泰部族的武僧们接受训练，以骑乘并驾驭原生于山峰的野生螳螂。螳螂骑手们知道自己坐骑并不效忠于他们。哪怕是已被骑乘多年的螳螂，也会吃掉哪怕只有一瞬间失神的骑手。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/HighspireMantis.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Hooded Hydra",
+			"name": "顶盖多头龙",
+			"shortName": "多头龙",
+			"source": "PlaneShiftTarkir",
+			"page": 48,
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 75",
+				"average": 172
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 2,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Death Morph",
+					"name": "死亡蜕变",
+					"entries": [
+						"当多头龙死亡时，其每颗尚存的头颅都会在其所占空间中显现一条{@creature 巨毒蛇}。"
+					]
+				},
+				{
+					"ENG_name": "Multiple Heads",
+					"name": "多头",
+					"entries": [
+						"多头龙有五颗头颅。当它拥有不止一颗头颅时，多头龙对抗{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 震慑}和{@condition 昏迷}的豁免检定具有优势。",
+						"当多头龙在单回合内受到25点或更多伤害时，它的一颗头颅便会死去。当其所有头颅都死去时，多头龙也随之死亡。",
+						"在其回合结束时，多头龙每有一颗自其上个回合以来死去的头颅，就会长出两颗新头颅，除非它自上个回合以来曾受到火焰伤害。每有一颗头颅以该方式重生，多头龙便恢复10点生命值。"
+					]
+				},
+				{
+					"ENG_name": "Reactive Heads",
+					"name": "多头反应",
+					"entries": [
+						"多头龙每超出一颗头颅，便获得一次额外的反应，这些额外反应只能用于借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Wakeful",
+					"name": "警醒",
+					"entries": [
+						"当多头龙睡觉时，它至少有一颗头颅保持清醒。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"多头龙发动的啃咬攻击次数等同于其头颅数量。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}7（{@damage 1d4 + 5}）点穿刺伤害，并且目标必须通过{@dc 16}的体质豁免，豁免失败者受到7（{@damage 2d6}）点毒素伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/HoodedHydra.png",
+			"traitTags": [
+				"Death Burst"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/HoodedHydra.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Ice Elemental",
+			"name": "冰元素",
+			"shortName": "元素生物",
+			"source": "PlaneShiftTarkir",
+			"page": 42,
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 20,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"水族语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Ice Glide",
+					"name": "冰滑行",
+					"entries": [
+						"该元素生物可以挖洞穿过非魔法的冰与雪。在此过程中，它不会扰动所穿过的物质。"
+					]
+				},
+				{
+					"ENG_name": "Melt",
+					"name": "融化",
+					"entries": [
+						"处于酷热区域时，该元素生物在其每个回合开始时失去{@dice 1d6}点生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"这个元素发动两次猛击。"
+					]
+				},
+				{
+					"ENG_name": "Snowball",
+					"name": "雪球",
+					"entries": [
+						"{@atk rw} 命中{@hit 8}，射程60尺，单一目标。{@h}18（{@damage 3d8 + 5}）点寒冷伤害。如果目标是生物，它必须通过{@dc 13}的体质豁免，否则其速度减半，直到该元素生物的下个回合开始。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/IceElemental.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ"
+			],
+			"damageTags": [
+				"C"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"entries": [
+					"顾名思义，冰元素与处于最冷形态的水相契。这些元素生物可见于黑山山脉最寒冷的深处。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/IceElemental.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Ivorytusk Fortress",
+			"name": "要塞战象",
+			"shortName": "象",
+			"source": "PlaneShiftTarkir",
+			"page": 49,
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d12 + 24",
+				"average": 76
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 17,
+			"int": 3,
+			"wis": 11,
+			"cha": 6,
+			"passive": 10,
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Howdah",
+					"name": "轿舆",
+					"entries": [
+						"战象背上驮着一座紧凑的堡垒。至多四个小型生物可以不挤迫地乘坐于堡垒中。要对战象5尺内的目标进行近战攻击，他们必须使用长矛或具有触及属性的武器。堡垒中的生物对来自堡垒外的攻击与其他效应具有四分之三掩护。如果战象死亡，堡垒中的生物在战象5尺内的空置空间{@condition 倒地}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Gore",
+					"name": "顶撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}19（{@damage 3d8 + 6}）点穿刺伤害。如果战象在命中前向目标直线移动了至少20尺，目标必须通过{@dc 12}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Stomp",
+					"name": "践踏",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}22（{@damage 3d10 + 6}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Fling Passenger",
+					"name": "抛掷乘员",
+					"entries": [
+						"战象用象鼻将一名乘坐于其堡垒中的小型或更小的生物掷出至多60尺。该生物每被掷出10尺便受到3（{@damage 1d6}）点钝击伤害。如果该生物被掷向另一个生物，后者必须通过{@dc 16}的敏捷豁免，否则受到相同伤害并陷入{@condition 倒地}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Trample",
+					"name": "践踏",
+					"entries": [
+						"战象对一个{@condition 倒地}生物发动一次践踏攻击。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/IvorytuskFortress.png",
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/IvorytuskFortress.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Kheru Mindeater",
+			"name": "赫鲁食脑者",
+			"shortName": "吸血鬼",
+			"source": "PlaneShiftTarkir",
+			"page": 50,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"吸血鬼"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 33",
+				"average": 82
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 11,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"dex": "+6",
+				"wis": "+3"
+			},
+			"skill": {
+				"stealth": "+6",
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"necrotic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"它生前知晓的语言"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"如果该吸血鬼的生命值至少为1且不处于阳光或流水中，则在其回合开始时恢复10点生命值。如果该吸血鬼受到光耀伤害，此特性在其下个回合开始时失效。"
+					]
+				},
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
+					"entries": [
+						"吸血鬼无需进行属性检定就能攀爬于困难表面，包括倒挂在天花板上。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"吸血鬼发动两次攻击，其中只能有一次啃咬攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一自愿生物，或一个被该吸血鬼{@condition 受擒}、处于{@condition 失能}或{@condition 束缚}状态的生物。{@h}6（{@damage 1d6 + 3}）点穿刺伤害外加7（{@damage 2d6}）点心灵伤害。如果目标具有施法或契约魔法特性，目标失去其剩余法术位中环阶最低的一个法术位。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一生物。{@h}8（{@damage 2d4 + 3}）点挥砍伤害。该吸血鬼也可以不造成伤害，而是改为擒抱目标（逃脱{@dc 13}）。"
+					]
+				},
+				{
+					"ENG_name": "Tongue",
+					"name": "舌卷",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及10尺，单一大型或更小的生物。{@h}6（{@damage 1d6 + 3}）点钝击伤害，并且目标被{@condition 受擒}（逃脱{@dc 14}）。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/KheruMindeater.png",
+			"traitTags": [
+				"Regeneration",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/KheruMindeater.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Krotiq",
+			"name": "克罗提克",
+			"source": "PlaneShiftTarkir",
+			"page": 51,
+			"size": [
+				"G"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d20 + 40",
+				"average": 124
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 24,
+			"dex": 13,
+			"con": 21,
+			"int": 4,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"震颤感知 60 尺"
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"cr": "11",
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}51（{@damage 8d10 + 7}）点穿刺伤害。如果目标是生物，它被{@condition 受擒}（逃脱{@dc 17}）。在擒抱结束前，目标被{@condition 束缚}，且克罗提克不能啃咬另一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Swallow",
+					"name": "吞咽",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及5尺，单一被克罗提克{@condition 受擒}的生物。{@h}40（{@damage 6d10 + 7}）点穿刺伤害。目标还会被吞下，擒抱随之结束。被吞下的生物处于{@condition 目盲}且被{@condition 束缚}，对来自克罗提克体外的一切攻击与其他效应视为全身掩护，并在克罗提克的每个回合开始时受到21（{@damage 6d6}）点强酸伤害。",
+						"如果克罗提克在单个回合内受到来自其体内生物的30点或更多伤害，它必须在该回合结束时通过{@dc 15}的体质豁免，否则吐出所有被吞下的生物，这些生物在克罗提克10尺内的一处空间{@condition 倒地}。如果克罗提克死亡，它同样会吐出所有被吞下的生物。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/Krotiq.png",
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"entries": [
+					"克罗提克是形似蜈蚣的巨型昆虫。它们可长达八百余尺，长着上百条腿。它们厚重的甲壳颜色从深褐色到亮绿色不等。克罗提克是出色的掘地者，会潜伏于地下静候猎物。它们的庞大体型使其无所畏惧，甚至敢于猎捕巨龙。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/Krotiq.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Lammasu",
+			"name": "拉马苏",
+			"source": "PlaneShiftTarkir",
+			"page": 52,
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "12d10 + 48",
+				"average": 114
+			},
+			"speed": {
+				"walk": 60,
+				"fly": 60
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 6,
+			"wis": 14,
+			"cha": 5,
+			"passive": 12,
+			"cr": "4",
+			"action": [
+				{
+					"ENG_name": "Horns",
+					"name": "角击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}16（{@damage 2d10 + 5}）点穿刺伤害。如果拉马苏在命中前立即向目标直线移动了至少20尺，目标必须通过{@dc 14}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Hooves",
+					"name": "蹄击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}14（{@damage 2d8 + 5}）点钝击伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Trample",
+					"name": "践踏",
+					"entries": [
+						"拉马苏对一个{@condition 倒地}生物发动一次蹄击攻击。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/Lammasu.png",
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					"拉马苏是鞑契神秘的旅者，无论寒暑都翱翔于所有土地的高空。无人知晓其真正的目的，但它们常在大战或历史转折点的前夜现身。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/Lammasu.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Lightning Elemental",
+			"name": "闪电元素",
+			"shortName": "元素生物",
+			"source": "PlaneShiftTarkir",
+			"page": 43,
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "12d10 + 36",
+				"average": 102
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"fire",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"气族语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Lightning Form",
+					"name": "闪电形态",
+					"entries": [
+						"该元素生物可以穿过窄至1寸的空间而无须挤迫。在它5尺内触碰它或以近战攻击命中它的生物受到5（{@damage 1d10}）点闪电伤害。此外，该元素生物可以进入敌对生物的空间并停驻其中。它在单个回合内首次进入某个生物的空间时，该生物受到5（{@damage 1d10}）点闪电伤害，且必须通过{@dc 13}的体质豁免，否则{@condition 震慑}至其下回合开始。"
+					]
+				},
+				{
+					"ENG_name": "Illumination",
+					"name": "照明",
+					"entries": [
+						"该元素生物发出30尺半径的明亮光照，并向外再延伸30尺的微光光照。"
+					]
+				},
+				{
+					"ENG_name": "Water Susceptibility",
+					"name": "水体易感",
+					"entries": [
+						"该元素生物每在水中移动5尺，或每被泼上一加仑水，便受到1点寒冷伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"元素生物发动两次触击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Touch",
+					"name": "触碰",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）点闪电伤害。如果目标是生物，它必须通过{@dc 13}的体质豁免，否则{@condition 震慑}至其下回合开始。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/LightningElemental.png",
+			"traitTags": [
+				"Illumination"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU"
+			],
+			"damageTags": [
+				"C",
+				"L"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/LightningElemental.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Trove Custodian",
+			"name": "宝库看守者",
+			"shortName": "魔像",
+			"source": "PlaneShiftTarkir",
+			"page": 53,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 56",
+				"average": 133
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 3,
+			"wis": 8,
+			"cha": 1,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"immune": [
+				{
+					"immune": [
+						"acid",
+						"poison",
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"能理解其创造者的语言但无法说话"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Beserk",
+					"name": "狂暴",
+					"entries": [
+						"每当该魔像在回合开始时生命值不超过60，掷一颗{@dice d6}。掷出6时，魔像陷入狂暴。狂暴期间的每个回合，魔像都会攻击它能看见的最近生物。",
+						"如果没有生物近到可以移动过去攻击，魔像便会攻击一个物件，且优先选择比它小的物件。魔像一旦狂暴，就会持续狂暴直到被摧毁或恢复全部生命值。"
+					]
+				},
+				{
+					"ENG_name": "Gold Absorption",
+					"name": "吸金",
+					"entries": [
+						"每当该魔像接触到非魔法的黄金制品，它就会吸收该物品并恢复11（{@dice 2d10}）点生命值。"
+					]
+				},
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"魔像免疫任何可以改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"魔像抵抗法术和其它魔法效应时进行的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"魔像发动两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}16（{@damage 2d10 + 5}）点钝击伤害。此攻击视为魔法攻击。"
+					]
+				},
+				{
+					"ENG_name": "Liquid Gold {@recharge 5}",
+					"name": "熔金喷吐{@recharge 5}",
+					"entries": [
+						"该魔像喷出15尺锥形的熔融黄金。该区域内的每个生物必须进行{@dc 16}的敏捷豁免，豁免失败者受到27（{@damage 5d10}）点火焰伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/TroveCustodian.png",
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/TroveCustodian.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Wood Elemental",
+			"name": "木元素",
+			"shortName": "元素生物",
+			"source": "PlaneShiftTarkir",
+			"page": 44,
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 20,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"震颤感知 60 尺"
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"土族语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Timber Walk",
+					"name": "林木穿行",
+					"entries": [
+						"该元素生物可以穿过由植物或灌木丛构成的困难地形，而无须消耗额外移动力。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该元素生物发动两次藤蔓攻击。"
+					]
+				},
+				{
+					"ENG_name": "Vine",
+					"name": "藤蔓",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}14（{@damage 2d8 + 5}）点穿刺伤害。如果目标是超大型或更小的生物，该元素生物可以擒抱它（逃脱{@dc 13}）。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/WoodElemental.png",
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"T"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"entries": [
+					"木元素与植物生命和自然相谐。虽然它们通常出没于萨谷丛林或谷尔玛沼泽等地，但安塔卡在黑山山脉的存在使那里的冰川融化，迫使一些土元素或冰元素适应变化，化为木与植物的元素。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/WoodElemental.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Yearling Colossodon",
+			"name": "初年硕齿兽",
+			"shortName": "硕齿兽",
+			"source": "PlaneShiftTarkir",
+			"page": 35,
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d12 + 16",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 11,
+			"con": 15,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"passive": 11,
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Flipped",
+					"name": "翻转",
+					"entries": [
+						"一个大型或更大的生物可以尝试以一次成功的擒抱检定将硕齿兽翻个底朝天。被翻转的硕齿兽受到的所有伤害均为易伤。想要站起，它必须在其回合内通过{@dc 10}的敏捷检定，然后用掉该回合的全部移动力。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Tusks",
+					"name": "獠牙",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及10尺，单一目标。{@h}18（{@damage 4d6 + 4}）点穿刺伤害。如果目标是生物，它必须通过{@dc 14}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/YearlingColossodon.png",
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/Colossodon.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Zombie Mastodon",
+			"name": "丧尸乳齿象",
+			"shortName": "乳齿象",
+			"source": "PlaneShiftTarkir",
+			"page": 54,
+			"size": [
+				"H"
+			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d12 + 55",
+				"average": 126
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 9,
+			"con": 21,
+			"int": 3,
+			"wis": 11,
+			"cha": 6,
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"如果伤害将乳齿象的生命值降至0，它必须进行一次DC为5+所受伤害的体质豁免，除非该伤害为光耀伤害或来自重击。豁免成功时，乳齿象的生命值降为1而非0。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Gore",
+					"name": "顶撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一目标。{@h}25（{@damage 4d8 + 7}）点穿刺伤害。如果乳齿象在命中前向目标直线移动了至少20尺，目标必须通过{@dc 18}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Stomp",
+					"name": "践踏",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及5尺，单一{@condition 倒地}生物。{@h}29（{@damage 4d10 + 7}）点钝击伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Trample",
+					"name": "践踏",
+					"entries": [
+						"乳齿象对一个{@condition 倒地}生物发动一次践踏攻击。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/token/ZombieMastodon.png",
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/creature/ZombieMastodon.png"
+						}
+					}
+				]
+			}
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "A Planeshifted Guide to the Dragons of Tarkir",
+			"name": "鞑契巨龙异界传送指南",
+			"id": "PS-Tk",
+			"source": "PlaneShiftTarkir",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/cover.png"
+			},
+			"published": "2023-08-03",
+			"author": "格尔扎特",
+			"contents": [
+				{
+					"ENG_name": "Welcome to Tarkir",
+					"name": "欢迎来到鞑契"
+				},
+				{
+					"ENG_name": "Chapter 1: Character Options",
+					"name": "第一章：角色选项",
+					"headers": [
+						"种族"
+					]
+				},
+				{
+					"ENG_name": "Chapter 2: Spellcasting",
+					"name": "第二章：施法",
+					"headers": [
+						"法术"
+					]
+				},
+				{
+					"ENG_name": "Chapter 3: Treasures",
+					"name": "第三章：财宝",
+					"headers": [
+						"冒险用品",
+						"魔法物品"
+					]
+				},
+				{
+					"ENG_name": "Chapter 4: Dragon Clans",
+					"name": "第四章：龙族部族",
+					"headers": [
+						"安塔卡",
+						"卓茉卡",
+						"寇安甘",
+						"欧祝泰",
+						"席穆嘉"
+					]
+				},
+				{
+					"ENG_name": "Chapter 5: Friends & Foes",
+					"name": "第五章：朋友与敌人",
+					"headers": [
+						"怪物图鉴"
+					]
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "PS-Tk",
+			"source": "PlaneShiftTarkir",
+			"data": [
+				{
+					"ENG_name": "Welcome to Tarkir",
+					"name": "欢迎来到鞑契",
+					"type": "section",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/WelcometoTarkir.png"
+							}
+						},
+						"鞑契是一片饱受战火摧残的土地，由五个部族统治，而每个部族又由一头称为\"龙王\"的远古巨龙统御。巨龙是鞑契不可或缺的一部分，这里有着独一无二的\"龙驱气象\"生态系统。巨龙并不以传统方式繁衍，而是诞生于被称为\"龙风暴\"的元素风暴\u2014\u2014龙风暴依地形孕育出五支不同的龙裔血脉，每支血脉都有各自的性情与吐息武器。",
+						"起初，龙王们早已灭绝，鞑契的部族由人称\"可汗\"的人类军阀统治。但当巨龙鹏洛客乌金得以改变时间与这个世界的历史、将自己从死亡中拯救出来后，一切都改变了\u2014\u2014巨龙得以繁衍兴盛，延续至今。",
+						{
+							"ENG_name": "About this book",
+							"type": "entries",
+							"name": "关于本书",
+							"entries": [
+								"本文档是在{@style 万智牌|capitalize;dnd-font}的鞑契位面游玩{@i 龙与地下城}的深度指南。关于鞑契位面及其悠久历史的更多信息，可参阅《鞑契可汗鹏洛客指南》第{@link 1|https://magic.wizards.com/en/news/feature/planeswalkers-guide-khans-tarkir-part-1-2014-09-03}部分与第{@link 2|https://magic.wizards.com/en/news/feature/planeswalkers-guide-khans-tarkir-part-2-2014-09-10}部分，以及《鞑契巨龙鹏洛客指南》第{@link 1|https://magic.wizards.com/en/news/feature/planeswalkers-guide-dragons-tarkir-part-1-2015-03-11}部分与第{@link 2|https://magic.wizards.com/en/news/magic-story/planeswalkers-guide-dragons-tarkir-part-2-2015-03-18}部分。",
+								"{@b {@book 第一章|PS-Tk|1}}为在鞑契创建角色提供指引，介绍十二个新种族。",
+								"{@b 第{@book 2|PS-Tk|2}章与第{@book 3|PS-Tk|3}章}提供了十二个新法术、两件新冒险装备以及五件新魔法物品的合集。",
+								"{@b {@book 第四章|PS-Tk|4}}提供鞑契的背景传说、龙族部族与地点的信息。",
+								"{@b {@book 第五章|PS-Tk|5}}提供一套见于鞑契各处的各类生物数据块合集。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 1: Character Options",
+					"type": "section",
+					"name": "第一章：角色选项",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Chapter1.png"
+							}
+						},
+						{
+							"ENG_name": "Races",
+							"type": "section",
+							"name": "种族",
+							"entries": [
+								"在第1级，你选择角色的种族。本节呈现本设定的可玩种族，并提供帮助你理解角色在世界中所处位置的信息。",
+								"当你为鞑契设定创建角色时，在角色创建过程中遵循以下附加规则。",
+								{
+									"ENG_name": "Ability Score Increases",
+									"type": "entries",
+									"name": "属性值提升",
+									"entries": [
+										"当决定你的属性值时，你将一项属性值加2，另一项加1；或者你选择三项不同的属性值加1。无论你使用什么方法决定你的属性值，掷骰也好，购点也好，其他方式也好，你都要遵循这一规则。",
+										"你职业的\"快速建卡\"部分会对增加什么属性提供建议。你可以随意决定是遵循还是无视这些建议。无论你决定增加哪一项属性，任何属性都不能被提升至超过20。"
+									]
+								},
+								{
+									"ENG_name": "Languages",
+									"type": "entries",
+									"name": "语言",
+									"entries": [
+										"你的角色会说、会读、会写可汗语（通用语），以及另一门由你和你的DM商定适合该角色的语言。",
+										{
+											"type": "table",
+											"caption": "鞑契语言",
+											"colLabels": [
+												"语言",
+												"典型使用者"
+											],
+											"colStyles": [
+												"col-6 text-center",
+												"col-6 text-center"
+											],
+											"rows": [
+												[
+													"犬人语",
+													"犬人"
+												],
+												[
+													"艾文语",
+													"艾文"
+												],
+												[
+													"恶魔语",
+													"罗刹、恶魔"
+												],
+												[
+													"龙语",
+													"巨龙、纳迦"
+												],
+												[
+													"地精语",
+													"地精"
+												],
+												[
+													"可汗语（通用语）",
+													"任何人"
+												],
+												[
+													"象族语",
+													"象族"
+												],
+												[
+													"兽人语",
+													"兽人"
+												],
+												[
+													"原初语",
+													"气巨灵、火巨灵"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Creature Type",
+									"type": "entries",
+									"name": "生物类型",
+									"entries": [
+										"在龙与地下城中，每个生物\u2014\u2014包括每个玩家角色\u2014\u2014在规则中都有一个标识其生物类型的特殊标签。大多数玩家角色属于类人生物类型。本节的种族会告诉你你的生物类型是什么。",
+										"以下是游戏中生物类型的字母顺序列表：异怪、野兽、天界生物、构装体、巨龙、元素生物、精类、邪魔、巨人、类人生物、怪兽、软泥怪、植物、不死生物。这些类型本身没有规则，但游戏中的一些规则会以不同方式影响特定类型的生物。例如，{@spell 疗伤术}法术对构装体或不死生物无效。"
+									]
+								},
+								{
+									"ENG_name": "Age",
+									"type": "entries",
+									"name": "年龄",
+									"entries": [
+										"在《龙与地下城》多元宇宙中，一名玩家角色的典型寿命约为一个世纪，前提是该角色没有在冒险中遭遇暴力结局。"
+									]
+								},
+								{
+									"ENG_name": "Height and Weight",
+									"name": "身高与体重",
+									"type": "entries",
+									"entries": [
+										"无论种族为何，玩家角色的身高体重通常都落在现实世界人类的范围之内。如果你想随机决定角色的身高或体重，请查阅{@book 玩家手册|PHB}中的{@table 随机身高和体重|PHB}表，并选择最能体现你为角色所想象体型的那一行。"
+									]
+								},
+								{
+									"ENG_name": "Proficiencies",
+									"name": "熟练",
+									"type": "entries",
+									"entries": [
+										"某些种族和亚种族会给予熟练项。这些熟练项通常源于文化，而你的角色可能与相应文化毫无关联，或接受过不同的训练。你可以按照\"熟练项替换\"表格的限制，将每个此类熟练项替换为你自选的另一项。",
+										{
+											"type": "table",
+											"caption": "熟练项替换",
+											"page": 0,
+											"colLabels": [
+												"熟练项",
+												"替换熟练项"
+											],
+											"colStyles": [
+												"col-5 text-center",
+												"col-7 text-center"
+											],
+											"rows": [
+												[
+													"技能",
+													"技能"
+												],
+												[
+													"护甲",
+													"简易/军用武器或工具"
+												],
+												[
+													"军用武器",
+													"简易/军用武器或工具"
+												],
+												[
+													"简易武器",
+													"简易武器或工具"
+												],
+												[
+													"工具",
+													"简易武器或工具"
+												]
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Races.png"
+									}
+								},
+								{
+									"type": "list",
+									"columns": 4,
+									"items": [
+										"{@race 犬人|PlaneShiftTarkir}",
+										"{@race 艾文|PlaneShiftTarkir}",
+										"{@race 气巨灵|PlaneShiftTarkir}",
+										"{@race 火巨灵|PlaneShiftTarkir}",
+										"{@race 地精|PlaneShiftTarkir}",
+										"{@race 纳迦|PlaneShiftTarkir}",
+										"{@race 兽人|PlaneShiftTarkir}",
+										"{@race 罗刹|PlaneShiftTarkir}",
+										"{@race 尸虏|PlaneShiftTarkir}",
+										"{@race 吸血鬼|PlaneShiftTarkir}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 2: Spellcasting",
+					"type": "section",
+					"name": "第二章：施法",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Chapter2.png"
+							}
+						},
+						{
+							"ENG_name": "Spells",
+							"type": "section",
+							"name": "法术",
+							"entries": [
+								"以下章节呈现鞑契施法者可用的法术。\"法术\"表展示了各法术所属的职业法术列表，以及法术的环阶与学派。经你的DM许可，即使某个法术不在你的职业法术列表上，你也可能可以使用它。",
+								{
+									"type": "list",
+									"columns": 4,
+									"items": [
+										"{@spell 预先考虑|PlaneShiftTarkir}",
+										"{@spell 电弧连心|PlaneShiftTarkir}",
+										"{@spell 转化险象|PlaneShiftTarkir}",
+										"{@spell 山口龙爪|PlaneShiftTarkir}",
+										"{@spell 龙语怒吼|PlaneShiftTarkir}",
+										"{@spell 龙鳞恩泽|PlaneShiftTarkir}",
+										"{@spell 尘沙暴|PlaneShiftTarkir}",
+										"{@spell 澈光护手|PlaneShiftTarkir}",
+										"{@spell 欧祝泰的召集|PlaneShiftTarkir}",
+										"{@spell 集结先祖|PlaneShiftTarkir}",
+										"{@spell 巨蛇仪式|PlaneShiftTarkir}",
+										"{@spell 黑山狂风|PlaneShiftTarkir}"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Spells.png"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 3: Treasures",
+					"type": "section",
+					"name": "第三章：财宝",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Chapter3.png"
+							}
+						},
+						{
+							"ENG_name": "Adventuring Gear",
+							"type": "section",
+							"name": "冒险用品",
+							"entries": [
+								"本节呈现一批在鞑契冒险时可以找到或购买的非魔法物品。物品按字母顺序排列。",
+								{
+									"type": "list",
+									"columns": 2,
+									"items": [
+										"{@item 鬼怪炸弹桶|PlaneShiftTarkir}",
+										"{@item 蛛丝网|PlaneShiftTarkir}"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Magic Items",
+							"type": "section",
+							"name": "魔法物品",
+							"entries": [
+								"本节描述在鞑契冒险时可能发现的魔法物品。这些物品可能作为怪物宝藏的一部分或部族的战利品被发现，也可能是巨龙赠予的礼物。物品按字母顺序排列。",
+								{
+									"type": "list",
+									"columns": 5,
+									"items": [
+										"{@item 颅内档案|PlaneShiftTarkir}",
+										"{@item 灵火剑|PlaneShiftTarkir}",
+										"{@item 穿心弓|PlaneShiftTarkir}",
+										"{@item 驭霆械|PlaneShiftTarkir}",
+										"{@item 龙炎瓶|PlaneShiftTarkir}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 4: Dragon Clans",
+					"type": "section",
+					"name": "第四章：龙族部族",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Chapter4.png"
+							}
+						},
+						{
+							"ENG_name": "Atarka",
+							"type": "section",
+							"name": "安塔卡",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Atarka.png"
+									}
+								},
+								"与鞑契所有部族一样，安塔卡部族以其龙王命名\u2014\u2014灭世龙王安塔卡。在\"召猎人\"苏拉克（人类{@creature 狂战士}）的率领下，安塔卡部族的成员保持着相当的独立性\u2014\u2014只要巨龙们吃饱就好。野蛮与力量是本部族最大的资本。",
+								"部族中的人类与边疆犬人常有\"火缘\"卡达特的火巨灵加入\u2014\u2014他们被安塔卡将火焰荣光播撒全世的承诺所折服。",
+								"安塔卡在阿亚戈（\"龙碗\"）接受臣民的崇拜与供奉\u2014\u2014那是黑山山脉中一处冰雪完全消融的高浅山谷。巨龙们把大部分时间花在狩猎或互相争斗上。边疆最重要的力量是那些庞大而饥饿的安塔卡血脉巨龙，因此部族要想吃饱，就得先确保巨龙们吃饱。",
+								{
+									"ENG_name": "Dragonlord Atarka",
+									"type": "entries",
+									"name": "龙王安塔卡",
+									"entries": [
+										"安塔卡是一头长着鹿角、尖角与毛发的健硕巨兽。她吐息绿焰。作为终极掠食者，安塔卡把白天和大部分夜晚都用于狩猎与盛宴。安塔卡和她的血脉从乌金的龙风暴中完全成形而出，被鞑契的山坡所吸引。他们仅受饥饿驱使。与始祖一样，安塔卡的血脉吐息火焰。",
+										"安塔卡血脉可以由红龙的{@creature 红龙雏龙|MM|雏龙}、{@creature 青年红龙|MM|青年}与{@creature 成年红龙|MM|成年}等变化形态来呈现。你可以在第36页找到安塔卡本尊的数据块。",
+										"{@note 安塔卡的数据块\"即将推出\"，不包含在本版本的转换中。}"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Dromoka",
+							"type": "section",
+							"name": "卓茉卡",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Dromoka.png"
+									}
+								},
+								"在龙王的治下，卓茉卡部族是一个真正的共同体，巨龙与沙漠的幸存者因共同效忠于他们挚诚的领袖而凝聚在一起。龙族的鳞王在臣民中培养信任，而其他部族却必须花费时间镇压叛乱。这种信任通过将孩童与父母分开、集体抚养、自幼向其灌输对巨龙的服从来实现。巨龙高踞于按才能组织的扩张收养家族之首，为每个人提供一席之地。巨龙甚至会将自己的鳞片赠予杰出的类人生物作为护佑。唯一的例外是那些想恢复族树传统的人\u2014\u2014他们被视为异端而遭猎杀。",
+								"卓茉卡的领地是流沙荒漠，一片点缀着诸多龙巢的广袤沙漠。无拘者之巢是卓茉卡土地上唯一只居住着巨龙的聚居地。无拘者不效忠于任何人，也没有处于其保护之下的类人生物。卓茉卡本尊栖居于大龙巢\u2014\u2014一座延伸并加固了山丘天然防御位置的巨大建筑。这座堡垒几乎不怕地面强攻，而天空则有巨龙与艾文密集巡逻。",
+								{
+									"ENG_name": "Dragonlord Dromoka",
+									"type": "entries",
+									"name": "龙王卓茉卡",
+									"entries": [
+										"卓茉卡是一头形似甲龙的健硕巨兽，有鳞甲周密防护，能吐息灼目的光束。她是一位耐心而仁慈的领袖，但在战斗中，她会毫不犹豫地释放吐息武器，消灭胆敢与她对抗者。卓茉卡和她的血脉从乌金的龙风暴中诞生时便覆盖着坚韧的鳞片，足以抵御大多数部族的武器与魔法。他们被鞑契炎热向阳的沙漠所吸引。与始祖一样，卓茉卡的血脉吐息灼热的光芒。",
+										"卓茉卡血脉可以由蓝龙的{@creature 蓝龙雏龙|MM|雏龙}、{@creature 青年蓝龙|MM|青年}与{@creature 成年蓝龙|MM|成年}等变化形态来呈现，但其吐息武器造成光耀伤害而非闪电伤害。你可以在第37页找到卓茉卡本尊的数据块。",
+										"{@note 卓茉卡的数据块\"即将推出\"，不包含在本版本的转换中。}"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Kolaghan",
+							"type": "section",
+							"name": "寇安甘",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Kolaghan.png"
+									}
+								},
+								"寇安甘成为了昔日玛尔都部族的可畏领袖，她用暴力、残酷以及招牌式的难以捉摸来约束部族。由于这位龙王除了宣示支配权之外很少关心部族，寇安甘部众便追随她的血脉中诞生于风暴的其他巨龙。鲁莽的寇安甘部众想拿什么就拿什么，想什么时候拿就什么时候拿，包括部族内的权力与支配地位。最强的巨龙\u2014\u2014好斗的战筝龙\u2014\u2014体形巨大、强壮且遍体战疤。部族中非龙的成员则据说饱受一种名为\"渴欲\"的强烈嗜血冲动之苦。食人并不罕见，血颊部的兽人与人类会搜寻类人生物的血肉。寇安甘的秽言萨满则将乌金的龙语扭曲成险恶之物，以此施展黑暗魔法。",
+								"寇安甘的领地是终嚎沼，一片阴冷的泥沼与沼泽地带。",
+								{
+									"ENG_name": "Dragonlord Kolaghan",
+									"type": "entries",
+									"name": "龙王寇安甘",
+									"entries": [
+										"寇安甘体躯庞大，遍体尖刺，长有四只带羽的翅膀，能够吐息闪电。她野蛮而凶残，享受狩猎与杀戮更甚于随之而来的美餐。与其他巨龙不同，寇安甘似乎不会说龙语，只以闪电与暴力交流。寇安甘和她的血脉自乌金的龙风暴中诞生时便拥有闪电吐息与无与伦比的速度。他们被鞑契干旱的丘陵与草原所吸引。与始祖一样，寇安甘的血脉吐息闪电。",
+										"寇安甘血脉可以由蓝龙的{@creature 蓝龙雏龙|MM|雏龙}、{@creature 青年蓝龙|MM|青年}与{@creature 成年蓝龙|MM|成年}等变化形态来呈现。你可以在第38页找到寇安甘本尊的数据块。",
+										"{@note 寇安甘的数据块\"即将推出\"，不包含在本版本的转换中。}"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Ojutai",
+							"type": "section",
+							"name": "欧祝泰",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Ojutai.png"
+									}
+								},
+								"欧祝泰的类人生物尊巨龙为岁月、智慧与武力的化身，寻求其指引，并相信遵循欧祝泰的教令，来世便能转生为龙。部族的精英是长寿的穹慧龙。他们清高、独来独往而优雅。巨龙（尤其是欧祝泰本人）的教诲被视为可及智慧的巅峰，整个部族都围绕从\"大宗师\"本人那里获得启迪而构建。类人生物中的领导地位靠武艺与精神教导赢得，而非世袭。欧祝泰的每个类人生物成员都同时拥有武职与学职两种阶位。任何个体皆可任选其一或兼修二者，两轨并行。圣所中武职最高者统领圣所的战士，学职最高者在和平时期教导并领导圣所。巨龙很少介入臣民的生活，更喜欢专注于自身难以捉摸的事务。任何偏离欧祝泰教诲的尝试\u2014\u2014包括探寻往昔的记载\u2014\u2014都会导致当事人被定为异端并处决。",
+								"龙王本人居于山间圣所，关注的是启迪与教导，而非类人生物社会的琐碎细节。",
+								{
+									"ENG_name": "Dragonlord Ojutai",
+									"type": "entries",
+									"name": "龙王欧祝泰",
+									"entries": [
+										"欧祝泰是一只身姿轻盈、羽翼覆体的生物，吐息冰寒。他被视为睿智渊博，尽管他的若干举动出于怨怼。欧祝泰和他的血脉从乌金的龙风暴中完全成形而出，被鞑契的寒冷峰峦所吸引。与始祖一样，欧祝泰的血脉吐息冰流。",
+										"欧祝泰血脉可以由白龙的{@creature 白龙雏龙|MM|雏龙}、{@creature 青年白龙|MM|青年}与{@creature 成年白龙|MM|成年}等变化形态来呈现。你可以在第39页找到欧祝泰本尊的数据块。",
+										"{@note 欧祝泰的数据块\"即将推出\"，不包含在本版本的转换中。}"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Silumgar",
+							"type": "section",
+							"name": "席穆嘉",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Silumgar.png"
+									}
+								},
+								"在鞑契的五位龙王中，席穆嘉的活人追随者最少，但部族的不死生物数量无可匹敌。席穆嘉的下属事事效仿其龙王。他们小心邀宠、推诿责任。暗杀与敲诈司空见惯，核心圈中人为职位明争暗斗、互相残杀。纳迦翻译往往最先也最快得宠，他们也是最先滥用既得恩宠的人。当席穆嘉想要摧毁敌人时，他会召唤夺命龙。夺命龙吐息的毒气云团能令大军窒息，淌落的酸流能溶解途中的一切。与此同时，一些死灵法师龙能从死肉中抽取潜藏能量，以增强其可怕的法术。",
+								"龙王本人已变得偏执多疑，担心罗刹可能会背叛自己。在这种发作中，他常杀死自己的臣民。一旦发现有谁企图削弱或操纵他，他的回应往往迅疾而残暴，会连根拔起整张关系网以惩治谋逆。因此，部族中众多的节庆与仪式都是为了转移、安抚或取悦龙王，使他的思绪远离猜忌。",
+								{
+									"ENG_name": "Dragonlord Silumgar",
+									"type": "entries",
+									"name": "龙王席穆嘉",
+									"entries": [
+										"席穆嘉是一头臃肿的蛇首生物，吐息腐蚀剧毒，热衷囤积奇珍。他毁灭成性、残酷而嗜杀。席穆嘉和他的血脉从乌金的龙风暴中完全成形而出，被鞑契雾气弥漫的丛林与沼泽所吸引，四处窃取财宝、播撒死亡。与始祖一样，席穆嘉的血脉吐息剧毒的腐蚀气体。",
+										"席穆嘉血脉可以由绿龙的{@creature 绿龙雏龙|MM|雏龙}、{@creature 青年绿龙|MM|青年}与{@creature 成年绿龙|MM|成年}等变化形态来呈现。你可以在第40页找到席穆嘉本尊的数据块。",
+										"{@note 席穆嘉的数据块\"即将推出\"，不包含在本版本的转换中。}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 5: Friends & Foes",
+					"type": "section",
+					"name": "第五章：朋友与敌人",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Chapter5.png"
+							}
+						},
+						{
+							"ENG_name": "Bestiary",
+							"type": "section",
+							"name": "怪物图鉴",
+							"entries": [
+								"本章提供了一批可见于鞑契的怪物与NPC。本怪物图鉴中的生物按字母顺序排列。\"龙王\"一节以分组标题汇集了五位龙王的数据块，该节内的数据块同样按字母顺序呈现。",
+								{
+									"type": "table",
+									"caption": "鞑契生物",
+									"colLabels": [
+										"生物",
+										"生物类型",
+										"CR"
+									],
+									"colStyles": [
+										"col-6",
+										"col-5",
+										"col-1 text-center"
+									],
+									"rows": [
+										[
+											"{@creature 阿林克斯|PlaneShiftTarkir}",
+											"野兽",
+											"3"
+										],
+										[
+											"{@creature 远古锦鲤|PlaneShiftTarkir}",
+											"野兽",
+											"3"
+										],
+										[
+											"{@creature 硕齿兽|PlaneShiftTarkir}",
+											"野兽",
+											"8"
+										],
+										[
+											"{@creature 初年硕齿兽|PlaneShiftTarkir}",
+											"野兽",
+											"3"
+										],
+										[
+											"{@i 龙王}",
+											"",
+											""
+										],
+										[
+											"{@b 安塔卡}",
+											"巨龙",
+											"???"
+										],
+										[
+											"{@b 卓茉卡}",
+											"巨龙",
+											"???"
+										],
+										[
+											"{@b 寇安甘}",
+											"巨龙",
+											"???"
+										],
+										[
+											"{@b 欧祝泰}",
+											"巨龙",
+											"???"
+										],
+										[
+											"{@b 席穆嘉}",
+											"巨龙",
+											"???"
+										],
+										[
+											"{@i 元素生物}",
+											"",
+											""
+										],
+										[
+											"{@creature 气巨灵武僧|PlaneShiftTarkir}",
+											"元素生物",
+											"6"
+										],
+										[
+											"{@creature 冰元素|PlaneShiftTarkir}",
+											"元素生物",
+											"5"
+										],
+										[
+											"{@creature 闪电元素|PlaneShiftTarkir}",
+											"元素生物",
+											"5"
+										],
+										[
+											"{@creature 木元素|PlaneShiftTarkir}",
+											"元素生物",
+											"6"
+										],
+										[
+											"{@creature 谷渡潜伏蜥|PlaneShiftTarkir}",
+											"野兽",
+											"0"
+										],
+										[
+											"{@creature 谷尔玛钓客|PlaneShiftTarkir}",
+											"野兽",
+											"3"
+										],
+										[
+											"{@creature 峰顶螳螂|PlaneShiftTarkir}",
+											"野兽",
+											"1/2"
+										],
+										[
+											"{@creature 顶盖多头龙|PlaneShiftTarkir}",
+											"怪兽",
+											"8"
+										],
+										[
+											"{@creature 要塞战象|PlaneShiftTarkir}",
+											"野兽",
+											"4"
+										],
+										[
+											"{@creature 赫鲁食脑者|PlaneShiftTarkir}",
+											"不死生物",
+											"5"
+										],
+										[
+											"{@creature 克罗提克|PlaneShiftTarkir}",
+											"怪兽",
+											"11"
+										],
+										[
+											"{@creature 拉马苏|PlaneShiftTarkir}",
+											"天界生物",
+											"4"
+										],
+										[
+											"{@creature 宝库看守者|PlaneShiftTarkir}",
+											"构装体",
+											"9"
+										],
+										[
+											"{@creature 丧尸乳齿象|PlaneShiftTarkir}",
+											"野兽",
+											"6"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Using a Stat Block",
+							"type": "section",
+							"name": "使用数据块",
+							"entries": [
+								"本章是{@book 怪物图鉴|MM}的伴生章节，并采用相似的呈现方式。如果你不熟悉怪物数据块的格式，请先阅读{@book 怪物图鉴|MM}的导言再继续。那本书解释了数据块的术语，并给出了各类怪物特性的规则，这些信息不再于此重复。",
+								{
+									"ENG_name": "Unusual Attacks and Magic",
+									"type": "entries",
+									"name": "非寻常攻击和魔法",
+									"entries": [
+										"在本节中，你会发现一些以非典型方式运作的武器与施法。这些例外是数据块的特性，代表特定生物如何使用武器与施放法术；这些例外不会影响武器与法术对其他使用者的运作方式。"
+									]
+								},
+								{
+									"ENG_name": "Meeting Prerequisites",
+									"type": "entries",
+									"name": "满足先决条件",
+									"entries": [
+										"如果一个数据块在生物名称中或名称下方的括号内包含某个职业的名称，则就满足魔法物品先决条件而言，该生物被视为该职业的成员。"
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/art/Bestiary.png"
+							}
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/PlaneShiftTarkir/end.png"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
