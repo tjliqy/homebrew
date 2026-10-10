@@ -1,0 +1,1473 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SC",
+				"abbreviation": "SC",
+				"full": "剑客职业",
+				"version": "1.0",
+				"authors": [
+					"D&D Wiki"
+				],
+				"convertedBy": [
+					"Mothben"
+				]
+			}
+		],
+		"optionalFeatureTypes": {
+			"MFM": "大师战技",
+			"SM": "炫技战技",
+			"TB": "诡术炸弹"
+		},
+		"edition": "classic",
+		"dateAdded": 0,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "625ed92222"
+	},
+	"class": [
+		{
+			"ENG_name": "Swashbuckler",
+			"name": "剑客",
+			"source": "SC",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"deception",
+								"insight",
+								"intimidation",
+								"perception",
+								"performance",
+								"persuasion",
+								"sleight of hand",
+								"stealth"
+							],
+							"count": 4
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 手弩|PHB|手弩}",
+					"{@item 弯刀|PHB|弯刀}",
+					"{@item 短剑|PHB|短剑}",
+					"{@item 刺剑|PHB|刺剑}",
+					"单手火器"
+				],
+				"tools": [
+					"一套自选的{@item 赌具|PHB}",
+					"{@item 领航工具|PHB}"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）一把{@item 刺剑|PHB}，或（b）一把{@item 短剑|PHB}",
+					"（a）一把{@item 手弩|PHB}和{@item 弩矢(20)|PHB|20支弩矢}，或（b）一支小型手枪及10发子弹，或（c）两把{@item 手斧|PHB|手斧}",
+					"（a）一个{@item 窃贼套组|PHB}，或（b）一个{@item 探索套组|PHB}",
+					"{@item 皮甲|PHB}、两把{@item 匕首|PHB|匕首}和一套{@item 赌具|PHB}"
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"dex": 13,
+							"cha": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"{@item 刺剑|PHB|刺剑}",
+						"{@item 短剑|PHB|短剑}"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classFeatures": [
+				"潇洒防御|剑客|SC|1",
+				"炫技点|剑客|SC|1",
+				"炫技剑法|剑客|SC|1",
+				"步履稳健|剑客|SC|1",
+				"炫技战技|剑客|SC|2",
+				{
+					"classFeature": "炫技天命|剑客|SC|3",
+					"gainSubclassFeature": true
+				},
+				"傲慢|剑客|SC|3",
+				"属性值提升|剑客|SC|4",
+				"直觉闪避|剑客|SC|5",
+				"决斗家|剑客|SC|5",
+				"额外攻击|剑客|SC|5",
+				"准备战斗|剑客|SC|6",
+				"步履稳健进阶|剑客|SC|6",
+				{
+					"classFeature": "炫技天命特性|剑客|SC|7",
+					"gainSubclassFeature": true
+				},
+				"反射闪避|剑客|SC|7",
+				"属性值提升|剑客|SC|8",
+				"决斗家（+2）|剑客|SC|9",
+				"单手射击|剑客|SC|9",
+				{
+					"classFeature": "炫技天命特性|剑客|SC|10",
+					"gainSubclassFeature": true
+				},
+				"额外攻击（3）|剑客|SC|11",
+				"属性值提升|剑客|SC|12",
+				"妙语应答|剑客|SC|13",
+				"步履稳健进阶|剑客|SC|13",
+				"剑术精通|剑客|SC|14",
+				{
+					"classFeature": "炫技天命特性|剑客|SC|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|剑客|SC|16",
+				"决斗大师|剑客|SC|17",
+				"大师战技|剑客|SC|17",
+				"决斗家（+3）|剑客|SC|18",
+				"属性值提升|剑客|SC|19",
+				{
+					"classFeature": "炫技天命特性|剑客|SC|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Swashbuckler",
+			"name": "剑客",
+			"source": "SC",
+			"entries": [
+				{
+					"ENG_name": "Swashbuckler",
+					"name": "剑客",
+					"type": "section",
+					"source": "SC",
+					"entries": [
+						"一位蒙面精灵攀行于庄园高墙之上，去营救被卑鄙男爵囚禁在内的爱人。一位海盗立于鼓满的船帆之上，双脚稳踏桅杆，剑刃在空中呼呼作响。一位脚步轻快的矮人在酒馆斗殴中放声大笑，一手荡着木质吊灯，另一手举弩瞄准。",
+						"剑客们是胆大包天的冒险者，集过人的勇气、剑术技巧、随机应变、骑士精神以及独特的荣誉与正义感于一身。他们浑身骄傲与自负，爱吹嘘自己的成就与才华，并且随时乐于证明自己的牛皮并非虚言。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Creating a Swashbuckler",
+									"type": "entries",
+									"name": "创建剑客",
+									"entries": [
+										"当你创建一名剑客时，想想他为何要挥剑闯荡。他是为了纠正某种感知到的不公而战？是为了给他人留下深刻印象？是想证明自己？还是为了个人利益，或为了他人\u2014\u2014比如国王与国家、或家人\u2014\u2014而战？",
+										"剑客往往是守序的角色，或至少遵循某种信条、荣誉感或义务。问问自己：这名剑客恪守怎样的信条，什么情况才会让他打破信条。他是否只在遭受攻击后才还手？是否只与\"值得\"的对手交战？他是否发誓永不说谎、永不背叛同伴？"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Dread Pirate",
+			"name": "恐怖海盗",
+			"shortName": "恐怖海盗",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassFeatures": [
+				"恐怖海盗|剑客|SC|恐怖海盗|SC|3",
+				"下三滥打法|剑客|SC|恐怖海盗|SC|7",
+				"脚步轻快|剑客|SC|恐怖海盗|SC|10",
+				"凶名昭著|剑客|SC|恐怖海盗|SC|15",
+				"幸运转机|剑客|SC|恐怖海盗|SC|20"
+			]
+		},
+		{
+			"ENG_name": "Matador",
+			"name": "斗牛士",
+			"shortName": "斗牛士",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassFeatures": [
+				"斗牛士|剑客|SC|斗牛士|SC|3",
+				"优雅身法进阶|剑客|SC|斗牛士|SC|7",
+				"取悦观众|剑客|SC|斗牛士|SC|7",
+				"惊人闪避|剑客|SC|斗牛士|SC|10",
+				"嘲讽|剑客|SC|斗牛士|SC|15",
+				"压轴绝技|剑客|SC|斗牛士|SC|20"
+			]
+		},
+		{
+			"ENG_name": "Musketeer",
+			"name": "火枪手",
+			"shortName": "火枪手",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassFeatures": [
+				"火枪手|剑客|SC|火枪手|SC|3",
+				"神射手|剑客|SC|火枪手|SC|7",
+				"防御剑客|剑客|SC|火枪手|SC|10",
+				"人人为我|剑客|SC|火枪手|SC|15",
+				"我为人人|剑客|SC|火枪手|SC|20"
+			]
+		},
+		{
+			"ENG_name": "Pimpernel",
+			"name": "红花侠",
+			"shortName": "红花侠",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassFeatures": [
+				"红花侠|剑客|SC|红花侠|SC|3",
+				"梁上君子|剑客|SC|红花侠|SC|7",
+				"剑刃之盾|剑客|SC|红花侠|SC|10",
+				"剑刃之盾进阶|剑客|SC|红花侠|SC|15",
+				"飘忽不定|剑客|SC|红花侠|SC|20"
+			]
+		},
+		{
+			"ENG_name": "Trickster",
+			"name": "诡术师",
+			"shortName": "诡术师",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassFeatures": [
+				"诡术师|剑客|SC|诡术师|SC|3",
+				"卑鄙手段|剑客|SC|诡术师|SC|7",
+				"毒物行家|剑客|SC|诡术师|SC|10",
+				"爆破大师|剑客|SC|诡术师|SC|15",
+				"黄肚皮旱鸭子|剑客|SC|诡术师|SC|15",
+				"黑市常客|剑客|SC|诡术师|SC|20",
+				"致残打击|剑客|SC|诡术师|SC|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Suave Defense",
+			"name": "潇洒防御",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 1,
+			"entries": [
+				"你的魅力与敏捷让你能更轻松地躲开攻击。未穿中甲或重甲时，你可以将一半的魅力调整值（向上取整）加到你的护甲等级上。",
+				"在20级时，你改为加上完整的魅力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Sure-Footed",
+			"name": "步履稳健",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 1,
+			"entries": [
+				"人人都知道，良好身法的基础在于清楚自己的脚步落点，因此你格外擅长踮足而行。困难地形造成的任何移动惩罚都减半，向下取整。",
+				"此外，你可以消耗1点炫技点，以附赠动作执行{@action 撤离}动作并移动等同你移动速度的距离。",
+				"在6级时，你在避免被{@condition 倒地}、{@condition 受擒}或{@condition 失能}的敏捷豁免上具有优势。",
+				"在13级时，此优势扩展至所有敏捷豁免。"
+			]
+		},
+		{
+			"ENG_name": "Swashbuckling",
+			"name": "炫技剑法",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 1,
+			"entries": [
+				"剑绝不只是一柄剑，它是展示你风姿与才华的艺术器具！每当你使用一把轻型或灵巧近战武器、或一把你熟练的远程武器进行攻击时，可以消耗1点炫技点，将你的魅力调整值加到攻击检定和伤害掷骰上。"
+			]
+		},
+		{
+			"ENG_name": "Swashing Points",
+			"name": "炫技点",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 1,
+			"entries": [
+				"炫技点是你天生才华与本能的体现，可用于支付各类炫技能力。你拥有的炫技点数等于你的等级+魅力调整值（至少1）。完成长休后你恢复所有炫技点，完成短休则恢复一半。",
+				{
+					"ENG_name": "Swashbuckler",
+					"type": "abilityDc",
+					"name": "剑客",
+					"attributes": [
+						"cha"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Swashbuckling Maneuvers",
+			"name": "炫技战技",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 2,
+			"entries": [
+				"从2级起，你可以消耗炫技点，为你的战斗风格加入灵巧炫目的战技。各项战技的详情列于下方；每次攻击你只能使用一项战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "缴械|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "猛冲|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "格挡|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "反击|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "摔绊|SC"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Bravado",
+			"name": "傲慢",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 3,
+			"entries": [
+				"你对自己十足的自信溢于言表，呼之欲出。",
+				"从3级起，你可以消耗1点炫技点，使你在下一次魅力豁免、或你熟练的魅力技能检定上获得优势。"
+			]
+		},
+		{
+			"ENG_name": "Destiny of the Swash",
+			"name": "炫技天命",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 3,
+			"entries": [
+				"在3级时，你的阅历为你推开了一扇通往潇洒英姿之天命新境界的大门，使你获得一系列新的技能与力量。还等什么？你的天命正在召唤！"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Duelist",
+			"name": "决斗家",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 5,
+			"entries": [
+				"单打独斗才是真绅士的战斗方式，还有什么比这更能炫耀你的本事？",
+				"从5级起，当你独自迎战单一对手、且10尺内没有其他参战生物时，你的攻击检定、伤害掷骰和豁免检定获得+1加值。",
+				"此加值在9级提升为+2，在18级提升为+3。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 5,
+			"entries": [
+				"在5级时，每当你在自己回合采取{@action 攻击}动作，你可以攻击两次而非一次。攻击次数在11级提升为3次。"
+			]
+		},
+		{
+			"ENG_name": "Uncanny Dodge",
+			"name": "直觉闪避",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 5,
+			"entries": [
+				"第5级起，当一个你能看见的敌人攻击命中你时，你可以用反应让此次攻击的伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Ready to Fight",
+			"name": "准备战斗",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 6,
+			"entries": [
+				"真正的剑客永远在寻觅一场痛快的战斗。",
+				"在6级时，你可以将熟练加值加到先攻检定上。对战斗中尚未轮到行动的生物，你的攻击检定具有优势。此外，你命中遭突袭生物的任何攻击均为重击。"
+			]
+		},
+		{
+			"ENG_name": "Sure-Footed Improvement",
+			"name": "步履稳健进阶",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 6,
+			"entries": [
+				"在6级时，你在避免被{@condition 倒地}、{@condition 受擒}或{@condition 失能}的敏捷豁免上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Destiny of the Swash feature",
+			"name": "炫技天命特性",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得一项由你的炫技天命给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Evasion",
+			"name": "反射闪避",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 7,
+			"entries": [
+				"你脚步轻快，能闪过白龙的冰息或法师{@spell 火球术}之类的攻击。从7级起，每当你进行一次原本只受一半伤害的敏捷豁免，成功则不受伤害，失败也只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Duelist (+2)",
+			"name": "决斗家（+2）",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 9,
+			"entries": [
+				"在9级时，当你独自迎战单一对手、且10尺内没有其他参战生物时，你的攻击检定、伤害掷骰和豁免检定获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "One-Handed Shooting",
+			"name": "单手射击",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 9,
+			"entries": [
+				"在9级时，战斗中你每回合首次以单手远程武器进行远程攻击检定时具有优势。该单手武器不能具有重型属性，且目标须处于武器常规射程内才能受益于此特性。此外，你可以忽略你熟练武器的装填属性。"
+			]
+		},
+		{
+			"ENG_name": "Destiny of the Swash feature",
+			"name": "炫技天命特性",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 10,
+			"entries": [
+				"在10级时，你获得一项由你的炫技天命给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack (3)",
+			"name": "额外攻击（3）",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 11,
+			"entries": [
+				"在11级时，每当你在自己回合采取{@action 攻击}动作，你可以攻击三次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Sure-Footed Improvement",
+			"name": "步履稳健进阶",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 13,
+			"entries": [
+				"在13级时，你在所有敏捷豁免上具有优势"
+			]
+		},
+		{
+			"ENG_name": "Witty Repartee",
+			"name": "妙语应答",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 13,
+			"entries": [
+				"从13级起，每当与你交战的生物进行攻击检定或伤害掷骰，你可以消耗1点炫技点和你的反应，对其发起一次{@skill 威吓}或{@skill 游说}检定。该生物必须进行一次{@skill 洞悉}检定对抗你的检定结果，否则其攻击检定或伤害掷骰被减去{@dice 1d10}。若该生物无法听见你，或免疫{@condition 魅惑}与{@condition 恐慌}，则不受此影响。"
+			]
+		},
+		{
+			"ENG_name": "Blademastery",
+			"name": "剑术精通",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 14,
+			"entries": [
+				"在14级时，经年累月的训练与历练已使你成为剑术大师。你使用熟练近战武器进行的攻击检定不会具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Destiny of the Swash feature",
+			"name": "炫技天命特性",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得一项由你的炫技天命给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Master Duelist",
+			"name": "决斗大师",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 17,
+			"entries": [
+				"从17级起，你对剑刃的精通让你能在战斗中反败为胜。若你的一次攻击检定落空，可以消耗2点炫技点以优势重掷该检定。若命中，你造成等同于魅力调整值的额外伤害。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Maneuvers",
+			"name": "大师战技",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 17,
+			"entries": [
+				"到17级时，你的战斗技巧已磨砺得锋利无比，你的战斗战技也随之精进。你可以消耗2点炫技点来施展下列战技；每次攻击你只能使用一项战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "大师缴械|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "大师猛冲|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "大师战技|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "大师格挡|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "大师反击|SC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "大师摔绊|SC"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Duelist (+3)",
+			"name": "决斗家（+3）",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 18,
+			"entries": [
+				"在18级时，当你独自迎战单一对手、且10尺内没有其他参战生物时，你的攻击检定、伤害掷骰和豁免检定获得+3加值。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Destiny of the Swash feature",
+			"name": "炫技天命特性",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"level": 20,
+			"entries": [
+				"在20级时，你获得一项由你的炫技天命给予的特性。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Dread Pirate",
+			"name": "恐怖海盗",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "恐怖海盗",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你选择堂堂正正地公开作战\u2014\u2014无论是在远洋的甲板之上，还是在酒馆或城市街头，你都会持械傲立、严阵以待。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "天生海员|剑客|SC|恐怖海盗|SC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Seaborn",
+			"name": "天生海员",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "恐怖海盗",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此天命时，你获得水上载具与火器的熟练项。此外，你获得等同于步行速度的游泳速度和攀爬速度。"
+			]
+		},
+		{
+			"ENG_name": "Dirty Fighting",
+			"name": "下三滥打法",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "恐怖海盗",
+			"subclassSource": "SC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你可以消耗1点炫技点，在任何致盲、擒抱、震慑或击{@condition 倒地}某生物的尝试中获得优势。"
+			]
+		},
+		{
+			"ENG_name": "Light on your Feet",
+			"name": "脚步轻快",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "恐怖海盗",
+			"subclassSource": "SC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你感知危险与临变应敌的才能已更上层楼，你可以消耗1点炫技点，以附赠动作执行{@action 回避}动作。"
+			]
+		},
+		{
+			"ENG_name": "Fearsome Reputation",
+			"name": "凶名昭著",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "恐怖海盗",
+			"subclassSource": "SC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你已积攒下单凭气场便能慑人的凶名与风范。你可以消耗1点炫技点并进行一次{@skill 威吓}检定，所有与你敌对的生物必须通过对抗你剑客DC的魅力豁免，否则陷入{@condition 恐慌}。任何豁免失败的生物可在每轮开始时重复豁免以摆脱此效应。",
+				"在20级时，你的{@skill 威吓}检定值等同于你的掷骰结果。"
+			]
+		},
+		{
+			"ENG_name": "Lucky Break",
+			"name": "幸运转机",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "恐怖海盗",
+			"subclassSource": "SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"到20级时，成功对你而言似乎信手拈来。若你的攻击未能命中射程内的目标，可以消耗1点炫技点将落空转为命中。又或者，若你豁免检定或属性检定失败，也可以消耗1点炫技点重掷该豁免或检定。无论新结果如何，你都必须接受。"
+			]
+		},
+		{
+			"ENG_name": "Matador",
+			"name": "斗牛士",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "斗牛士",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"matador de toros（字面意为\"杀牛者\"，源自拉丁语 mactator，即杀手、屠宰者，又源自 mactare，宰杀之意）被视为兼具艺术家与运动员二重身份，拥有非凡的敏捷、优雅与协调性。斗牛士的风格与胆识，被认为至少与他能否真正杀死公牛同等重要。斗牛士以迅捷灵动的身法周旋决斗，智取并戏耍对手。他们的艺术表现能将其推向更高巅峰，也为取悦观众而甘冒奇险。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "优雅身法|剑客|SC|斗牛士|SC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Artful Grace",
+			"name": "优雅身法",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "斗牛士",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此天命时，你获得{@skill 表演}技能的熟练项。",
+				"同样在3级时，你可以将一半魅力调整值（向上取整）加到任何{@skill 特技}或{@skill 巧手}技能检定，以及对抗你可见效应（如陷阱和法术）的敏捷豁免上。",
+				"在7级时，你改为加上完整的魅力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Artful Grace Improvement",
+			"name": "优雅身法进阶",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "斗牛士",
+			"subclassSource": "SC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你可以将完整的魅力调整值加到任何{@skill 特技}或{@skill 巧手}技能检定，以及对抗你可见效应（如陷阱和法术）的敏捷豁免上。"
+			]
+		},
+		{
+			"ENG_name": "Play to the Crowd",
+			"name": "取悦观众",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "斗牛士",
+			"subclassSource": "SC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级起，你可以消耗1点炫技点并掷一枚{@dice d6}。在1分钟内，你将掷骰结果加到所有检定、攻击检定和豁免检定上。若你在该时段内任何一次掷骰失败，该加值翻倍并转为减值。"
+			]
+		},
+		{
+			"ENG_name": "Astounding Dodge",
+			"name": "惊人闪避",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "斗牛士",
+			"subclassSource": "SC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，当你可见的攻击者以攻击命中你时，你可以用你的反应消耗1点炫技点；若如此做，该攻击的伤害变为其伤害类型的{@dice 1d4}。",
+				"若你使用了此能力，可以再消耗1点炫技点，在该反应期间移动至多等同于你一半移动速度的距离。"
+			]
+		},
+		{
+			"ENG_name": "Taunt",
+			"name": "嘲讽",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "斗牛士",
+			"subclassSource": "SC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级起，你可以消耗1点炫技点嘲弄一名能看见或听见你的生物。该生物必须进行魅力豁免；豁免失败则必须攻击你，且在等同于你魅力调整值的轮数内无法攻击其他目标。",
+				"若该生物受到来自你以外来源的伤害，它可以重复豁免检定。"
+			]
+		},
+		{
+			"ENG_name": "Show Stopper",
+			"name": "压轴绝技",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "斗牛士",
+			"subclassSource": "SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你可以消耗2点炫技点并掷一枚{@dice d12}。在1分钟内，你将掷骰结果加到所有检定、攻击检定和豁免检定上。若你在该时段内任何一次掷骰失败，该加值翻倍并转为减值。"
+			]
+		},
+		{
+			"ENG_name": "Musketeer",
+			"name": "火枪手",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "火枪手",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"他们是训练有素的非正规步兵成员，担任龙骑兵与士兵，以在形形色色战场上的战斗本领而闻名。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "魅力铳士|剑客|SC|火枪手|SC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Charming Gunslinger",
+			"name": "魅力铳士",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "火枪手",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此天命时，你获得火器与爆炸物的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Sharpshooter",
+			"name": "神射手",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "火枪手",
+			"subclassSource": "SC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你使用火器对超出常规射程的目标进行远程攻击时不再具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Defensive Swordsman",
+			"name": "防御剑客",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "火枪手",
+			"subclassSource": "SC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，若你手持一把你熟练的轻型或灵巧武器，你可以将熟练加值加到你的护甲等级上。"
+			]
+		},
+		{
+			"ENG_name": "All for One",
+			"name": "人人为我",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "火枪手",
+			"subclassSource": "SC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级起，你可以消耗1点炫技点并选定一个目标；你命中该目标的所有攻击检定，以及对抗该生物的所有豁免检定，均具有优势。此效应在目标死亡时结束；在你陷入{@condition 魅惑}、{@condition 恐慌}、{@condition 麻痹}、{@condition 石化}、{@condition 震慑}或被击{@condition 昏迷}时结束；也在效应期间你攻击任何其他生物时结束。效应结束后，你必须等待两轮才能选定新目标。"
+			]
+		},
+		{
+			"ENG_name": "One for All",
+			"name": "我为人人",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "火枪手",
+			"subclassSource": "SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你能从同伴处汲取支援。你可以消耗1点炫技点，你每有一名位于你30尺内且未{@condition 失能}的盟友，你进行的所有掷骰便获得+1加值。"
+			]
+		},
+		{
+			"ENG_name": "Pimpernel",
+			"name": "红花侠",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "红花侠",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"戴上假面，以秘密身份在暗处对抗不公\u2014\u2014你{@i 正是}那位蒙面侠。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "正义斗士|剑客|SC|红花侠|SC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "秘密身份|剑客|SC|红花侠|SC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Justice Fighter",
+			"name": "正义斗士",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "红花侠",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此天命时，你获得{@item 易容工具|PHB}和{@item 盗贼工具|PHB}的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Secret Identity",
+			"name": "秘密身份",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "红花侠",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级时，你可以塑造一副变装化身。所有未识破这层伪装的生物，在任何试图辨明你真实身份的尝试上具有劣势并承受-5惩罚。",
+				"若有邻近生物识破了你的真实身份，你可以消耗1点炫技点，进行一次对抗该生物智力检定的魅力检定。若你成功，该目标便不再相信你与你的秘密身份是同一个人。"
+			]
+		},
+		{
+			"ENG_name": "Second-Story Work",
+			"name": "梁上君子",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "红花侠",
+			"subclassSource": "SC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你获得比常人更快的攀爬能力；攀爬不再消耗额外移动力。此外，当你助跑跳跃时，你跃过的距离增加等同于你敏捷调整值的尺数。"
+			]
+		},
+		{
+			"ENG_name": "Shield of Blades",
+			"name": "剑刃之盾",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "红花侠",
+			"subclassSource": "SC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你已精于以轻武器自卫。你可以消耗1点炫技点，你每手持一把具有轻型或灵巧属性的武器，你的护甲等级便获得+2加值（上限2把，某些种族可至上限为可用肢体数），持续1轮。",
+				"此加值在15级提升为+4。"
+			]
+		},
+		{
+			"ENG_name": "Shield of Blades Improvement",
+			"name": "剑刃之盾进阶",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "红花侠",
+			"subclassSource": "SC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在10级时，你可以消耗1点炫技点，你每手持一把具有轻型或灵巧属性的武器，你的护甲等级便获得+4加值（上限2把，某些种族可至上限为可用肢体数），持续1轮。"
+			]
+		},
+		{
+			"ENG_name": "Elusive",
+			"name": "飘忽不定",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "红花侠",
+			"subclassSource": "SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你已变得如此难以捉摸，攻击者很少能占你上风。只要你未{@condition 失能}，任何攻击检定都无法对你具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Trickster",
+			"name": "诡术师",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "诡术师",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"既然你早已明白世上没有公平的决斗，你便习得了几招\"下作\"的手段来占得先机。你还学会了制作爆炸物来助战。",
+				"你的部分特性要求目标进行豁免检定以抵抗特性效应。豁免检定DC计算如下：",
+				{
+					"ENG_name": "Trickster",
+					"type": "abilityDc",
+					"name": "诡术师",
+					"attributes": [
+						"dex"
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "爆破专家|剑客|SC|诡术师|SC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Explosives Expert",
+			"name": "爆破专家",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "诡术师",
+			"subclassSource": "SC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此天命时，狡诈的海盗学会了制作阴损炸弹来撂倒对手。每天一次，你可以在村庄、城镇或城市中花费2小时和25金币搜集材料，制作自选的{@filter 炸弹|optionalfeatures|Feature Type=TB}。你身上最多可携带6枚任意类型组合的炸弹，另外最多可储存12枚。你只能将炸弹交给智力为9或以上的其他角色，且对方智力每比9高出1点，你便只能多给1枚（智力10给1枚，智力11给2枚，依此类推）。掷一枚{@dice d4}并加2，决定你在这段时间内能制作多少枚炸弹；超出上限的炸弹会立即以每枚5金币的价格出售。掷骰后，你可自由决定制作哪些炸弹。持有炸弹者可以用动作将其掷向至多30尺外的区域，影响该区域周围15尺半径内的一切。其他玩家角色投掷你的炸弹时，必须通过DC 13的敏捷豁免，否则会将点燃的炸弹掉在自己脚下。"
+			]
+		},
+		{
+			"ENG_name": "Cheap Shot",
+			"name": "卑鄙手段",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "诡术师",
+			"subclassSource": "SC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你可以尝试致盲你决斗中的目标。作为附赠动作，只要现场可得，你就可以将碎石、泥土、草屑、泥浆或沙子掷向至多10尺外；若你携带{@item 鞭子|PHB}、锁链、头巾或绳索，也可以将其甩向目标的眼睛。目标必须进行一次对抗你豁免DC的敏捷豁免，否则在你下回合之前处于{@condition 目盲}状态。此特性仅可用于有实体眼睛的生物。眼睛多于2只的生物在此豁免上具有优势，仅有一只眼睛的生物则具有劣势。你可以使用此特性的次数等于你的敏捷调整值+1。完成短休或长休后，你恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Poison Savant",
+			"name": "毒物行家",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "诡术师",
+			"subclassSource": "SC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级起，每当你在城镇中花一小时搜集炸弹材料时，你也可以顺便采购几小瓶毒药。花费20金币并单独掷一枚{@dice d4}，决定你能买到多少小瓶毒药，上限为8瓶。你以此方式只能购得{@item 基础毒药(小瓶装)|PHB|基础毒药}。",
+				"此外，作为附赠动作，你可以将任何损伤式毒药涂在一件武器或五件弹药上。涂抹后，毒药在5分钟内保持效力，随后干涸。被击中的目标必须进行一次对抗你豁免DC的体质豁免，否则额外受到{@dice 1d6}点毒素伤害。"
+			]
+		},
+		{
+			"ENG_name": "Explosives Master",
+			"name": "爆破大师",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "诡术师",
+			"subclassSource": "SC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级起，你学会制作威力更强的{@filter 炸弹|optionalfeatures|Feature Type=TB}。要制作这些新炸弹，你必须花费50金币，并在村庄、城镇或城市中度过6小时。每种炸弹你同一时间只能持有一枚；它们过于危险，不宜交给他人，且出售难免惹人起疑。你以爆破专家所制炸弹的影响半径增加5尺，投掷距离提升至40尺。此外，制作爆破专家能力所列炸弹时，你改为掷{@dice d6}并加2来决定制作数量。"
+			]
+		},
+		{
+			"ENG_name": "Yellow Bellied Lubber",
+			"name": "黄肚皮旱鸭子",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "诡术师",
+			"subclassSource": "SC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从14级起，你可以花至少15分钟搜索周边区域寻找碎玻璃并将其碾碎。若该区域有玻璃，掷{@dice 1d4 + 2}决定你获得几小瓶玻璃粉。此举可在短休期间进行。你可以携带的玻璃粉瓶数等于你的熟练加值。使用卑鄙手段时，你可以消耗一小瓶碎玻璃粉。若目标豁免失败，将无限期处于{@condition 目盲}状态，且其眼睛每轮受到{@dice 1d6}点挥砍伤害。若目标得到治疗，或进行短休或长休，伤害停止。若目标受到魔法治疗，则不再{@condition 目盲|PHB|目盲}。若目标在两周内未受到魔法治疗，其一只眼睛将腐烂脱落。此后每隔两周重复一次，直至该生物双目尽失。"
+			]
+		},
+		{
+			"ENG_name": "Black Market Regular",
+			"name": "黑市常客",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "诡术师",
+			"subclassSource": "SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"从18级起，你被视为地下黑市的重要人物。每当你花一小时采购毒药，你可以获得任何种类的毒药。你必须花费100金币并掷一枚{@dice d6}决定收集到几小瓶。掷骰后，你可自由决定收集哪些毒药。对抗这些毒药的豁免使用你的豁免DC。"
+			]
+		},
+		{
+			"ENG_name": "Disabling Blow",
+			"name": "致残打击",
+			"source": "SC",
+			"className": "剑客",
+			"classSource": "SC",
+			"subclassShortName": "诡术师",
+			"subclassSource": "SC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，每当你以灵巧武器命中目标，你可以选择切断目标身上下列部位之一的肌肉。此能力仅限于野兽和类人生物。目标必须经过一次长休才能恢复对受损肌肉的控制。",
+				{
+					"ENG_name": "Arm",
+					"type": "entries",
+					"name": "手臂",
+					"entries": [
+						"你使其一条手臂中的肌肉失效。目标必须通过一次体质豁免，否则使用该手臂进行的后续攻击均具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Leg",
+					"type": "entries",
+					"name": "腿部",
+					"entries": [
+						"你使其一条腿中的肌肉失效。目标必须通过一次体质豁免，否则其移动速度减半。"
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Concussive Bomb",
+			"name": "震荡炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"产生一道震荡冲击波。60尺半径内所有能看见该区域的生物必须通过对抗你豁免DC的敏捷豁免，否则陷入{@condition 震慑}。所有生物必须在其每回合结束时进行一次感知豁免才能恢复清醒。"
+			]
+		},
+		{
+			"ENG_name": "Disarm",
+			"name": "缴械",
+			"source": "SC",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"每当你以武器攻击命中某生物，你可以选择消耗1点炫技点来尝试将其缴械。该生物必须进行一次对抗你攻击检定的力量豁免；豁免失败则必须掉落一件由你选择的其所持物品。若你命中该生物的攻击是重击，该生物自动掉落该物品。"
+			]
+		},
+		{
+			"ENG_name": "Fury Bomb",
+			"name": "狂怒炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"释放一团气体。20尺半径内的所有生物必须通过对抗你豁免DC的体质豁免，否则陷入与{@spell 困惑术}法术相似的效果。所有生物必须在其每回合结束时进行一次感知豁免以摆脱毒气。"
+			]
+		},
+		{
+			"ENG_name": "Incendiary Bomb",
+			"name": "燃烧炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"造成一场致命的爆炸。10尺半径内的所有生物必须通过对抗你豁免DC的敏捷豁免，否则受到{@dice 6d10}点火焰伤害，豁免成功则伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Lunge",
+			"name": "猛冲",
+			"source": "SC",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"当你以单手武器攻击时，可以消耗1点炫技点猛冲，使该次攻击的攻击距离增加5尺。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Disarm",
+			"name": "大师缴械",
+			"source": "SC",
+			"featureType": [
+				"MFM"
+			],
+			"entries": [
+				"每当你以武器攻击命中某生物，你可以消耗2点炫技点来尝试将其缴械，迫使其掉落一件由你选择的其所持物品。该目标必须进行一次对抗你攻击检定的力量豁免；豁免失败则真真切切地被\"缴了械\"\u2014\u2014你将其持物的那只手（或爪，或任何合适的附肢）斩落。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Lunge",
+			"name": "大师猛冲",
+			"source": "SC",
+			"featureType": [
+				"MFM"
+			],
+			"entries": [
+				"当你以单手武器攻击时，可以消耗2点炫技点猛冲。此突进使攻击距离延伸10尺。",
+				"此外，你在此次攻击检定上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Maneuver",
+			"name": "大师战技",
+			"source": "SC",
+			"featureType": [
+				"MFM"
+			],
+			"entries": [
+				"你对花式剑招的掌控更上一层楼。你可以消耗2点炫技点，以单次攻击使出两项普通战技。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Parry",
+			"name": "大师格挡",
+			"source": "SC",
+			"featureType": [
+				"MFM"
+			],
+			"entries": [
+				"当另一生物以近战攻击对你造成伤害时，你可以消耗2点炫技点。你受到的伤害减少等同你的敏捷调整值+两倍你的剑客等级的数值。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Riposte",
+			"name": "大师反击",
+			"source": "SC",
+			"featureType": [
+				"MFM"
+			],
+			"entries": [
+				"每当某生物以近战武器攻击你时，你可以消耗2点炫技点对该生物进行一次近战武器攻击。若命中，你可以将魅力调整值加到伤害上。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Trip",
+			"name": "大师摔绊",
+			"source": "SC",
+			"featureType": [
+				"MFM"
+			],
+			"entries": [
+				"每当你以武器攻击命中某生物，你可以消耗2点炫技点来尝试将其击倒。该生物必须进行一次对抗你攻击检定的力量豁免；豁免失败则被击{@condition 倒地}。"
+			]
+		},
+		{
+			"ENG_name": "Parry",
+			"name": "格挡",
+			"source": "SC",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"当另一生物以近战武器攻击对你造成伤害时，你可以使用你的反应并消耗1点炫技点，使伤害减少{@dice 1d8}+你的敏捷调整值+你的剑客等级。若这将伤害减至0，你将这一击格挡开。"
+			]
+		},
+		{
+			"ENG_name": "Poison Bomb",
+			"name": "毒气炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"释放一团毒云。区域内的所有生物必须通过对抗你豁免DC的体质豁免，否则受到{@dice 2d6}点毒素伤害，且必须在其每回合开始时重复豁免。每次豁免失败，该角色受到{@dice 1d6}点毒素伤害；豁免成功则毒效结束。持续时间至多1分钟。"
+			]
+		},
+		{
+			"ENG_name": "Powder Bomb",
+			"name": "火药炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"造成一场15尺半径的爆炸。区域内的所有生物必须通过对抗你豁免DC的敏捷豁免，否则受到{@dice 4d6}点火焰伤害，豁免成功则伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Riposte",
+			"name": "反击",
+			"source": "SC",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"当某生物以近战武器攻击你落空时，你可以使用你的反应并消耗1点炫技点对该生物进行一次近战武器攻击。若命中，你可以将魅力调整值加到伤害上。"
+			]
+		},
+		{
+			"ENG_name": "Scatter Bomb",
+			"name": "散弹炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"造成一场令小弹丸四散飞射的爆炸。由于弹丸动能衰减，这枚炸弹的爆炸半径仅有5尺。区域内的所有生物必须通过对抗你豁免DC的敏捷豁免，否则受到{@dice 5d6}点穿刺伤害，豁免成功则伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Sleep Bomb",
+			"name": "催眠炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"释放一团气体。30尺半径内的所有生物必须通过对抗你豁免DC的体质豁免，否则被击{@condition 昏迷}。所有生物必须在其每回合结束时进行一次感知豁免以摆脱毒气。沉睡中的生物在受到攻击时会醒来。"
+			]
+		},
+		{
+			"ENG_name": "Smoke Bomb",
+			"name": "烟雾炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"释放一团烟雾。该区域变为重度遮蔽，持续10分钟，直至被中等或更快的风速（至少每小时10英里）吹散。"
+			]
+		},
+		{
+			"ENG_name": "Sticky Bomb",
+			"name": "黏滞炸弹",
+			"source": "SC",
+			"featureType": [
+				"TB"
+			],
+			"entries": [
+				"泼洒一层覆盖地面的黏稠液体。区域内的所有生物必须通过对抗你豁免DC的敏捷豁免，否则陷入{@condition 束缚}。陷入{@condition 束缚}的生物可以在其每回合结束时进行一次力量豁免以挣脱。"
+			]
+		},
+		{
+			"ENG_name": "Trip",
+			"name": "摔绊",
+			"source": "SC",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"每当你以武器攻击命中某生物，你可以消耗1点炫技点来尝试将其击倒。若目标为大型或更小，它必须进行一次对抗你剑客豁免DC的力量豁免；豁免失败则被击{@condition 倒地}。"
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Buckler",
+			"name": "小圆盾",
+			"source": "SC",
+			"type": "S",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"ac": 1,
+			"entries": [
+				"小圆盾是一种以拳握方式持握的小型金属盾。由于无需绑缚，穿上或脱下它就像抽收武器一样便捷。持握小圆盾使你的护甲等级提升1。你同一时间只能受益于一面盾。",
+				"若你具有轻甲熟练项和{@item 刺剑|PHB}的熟练项，那么即使你原本没有盾牌熟练项，也可以熟练地使用这面小圆盾。"
+			]
+		}
+	]
+}
