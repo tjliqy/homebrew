@@ -1,0 +1,1635 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Casteliad",
+				"abbreviation": "Cld",
+				"full": "Casteliad 家酿",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"version": "1.0.0",
+				"authors": [
+					"Casteliad"
+				],
+				"targetSchema": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1571000711,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "0a51c8196d"
+	},
+	"class": [
+		{
+			"ENG_name": "Monk (MultiClass)",
+			"name": "武僧（兼职）",
+			"source": "Casteliad",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"wis"
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"history",
+								"insight",
+								"religion",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 短剑|phb|短剑}"
+				],
+				"tools": [
+					"选择一种{@item 工匠工具|PHB}或一种{@item 乐器|PHB}"
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把 {@item 短剑|phb} 或者 (b) 任意一把{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) 一个{@item 地城套组|phb}或(b) 一个{@item 探索套组|phb}",
+					"10 {@item 飞镖|phb|飞镖}"
+				],
+				"goldAlternative": "{@dice 5d4|5d4|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"短剑|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"item": "飞镖|phb",
+								"quantity": 10
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"athletics",
+									"insight",
+									"investigation",
+									"nature",
+									"perception",
+									"stealth",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"武艺",
+						"气点",
+						"无甲移动",
+						"{@filter 已知法术|spells|class=游侠}",
+						"法术位"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							0,
+							{
+								"type": "bonusSpeed",
+								"value": 0
+							},
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							3,
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							4,
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							5,
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							2,
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							7,
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							8,
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							9,
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							10,
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							11,
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							12,
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							13,
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							14,
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							15,
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							16,
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							3,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							17,
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							3,
+							3
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"无甲防御|武僧（兼职）|Casteliad|1",
+				"武艺|武僧（兼职）|Casteliad|1",
+				"Ki|武僧（兼职）|Casteliad|2",
+				"无甲移动|武僧（兼职）|Casteliad|2",
+				"拨挡飞弹|武僧（兼职）|Casteliad|3",
+				{
+					"classFeature": "修行宗派|武僧（兼职）|Casteliad|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|武僧（兼职）|Casteliad|4",
+				"轻身坠|武僧（兼职）|Casteliad|4",
+				"额外攻击|武僧（兼职）|Casteliad|5",
+				"震慑拳|武僧（兼职）|Casteliad|5",
+				"真气驻拳|武僧（兼职）|Casteliad|6",
+				{
+					"classFeature": "宗派特性|武僧（兼职）|Casteliad|6",
+					"gainSubclassFeature": true
+				},
+				"宿敌|武僧（兼职）|Casteliad|7",
+				"自然探索者|武僧（兼职）|Casteliad|7",
+				"施法|武僧（兼职）|Casteliad|8",
+				"战斗风格|武僧（兼职）|Casteliad|8",
+				"原初意识|武僧（兼职）|Casteliad|9",
+				{
+					"classFeature": "游侠范型|武僧（兼职）|Casteliad|9",
+					"gainSubclassFeature": true
+				},
+				"反射闪避|武僧（兼职）|Casteliad|10",
+				"心如止水|武僧（兼职）|Casteliad|10",
+				"属性值提升|武僧（兼职）|Casteliad|11",
+				"无甲移动增效|武僧（兼职）|Casteliad|12",
+				"百病不侵|武僧（兼职）|Casteliad|13",
+				{
+					"classFeature": "宗派特性|武僧（兼职）|Casteliad|14",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|武僧（兼职）|Casteliad|15",
+				"天语通|武僧（兼职）|Casteliad|16",
+				"金刚魂|武僧（兼职）|Casteliad|17",
+				"不朽身|武僧（兼职）|Casteliad|18",
+				"属性值提升|武僧（兼职）|Casteliad|19",
+				{
+					"classFeature": "宗派特性|武僧（兼职）|Casteliad|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"subclassTitle": "修行宗派",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Monk (MultiClass)",
+			"name": "武僧（兼职）",
+			"source": "Casteliad",
+			"entries": [
+				{
+					"ENG_name": "Monk (MultiClass)",
+					"entries": [
+						"她双掌如电，眨眼之间拍飞袭来的箭雨。半精灵冲出掩体，投身进入大群大地精的战团中。她游斗于敌人之中，一边猛烈出拳一边将对手抡倒在地，直至最后只剩她一人独自站在战场中央。",
+						"画满纹身的人类深吸一口气，并摆出一副临战架势。随着第一个兽人先锋冲到面前，他张口吐出一片咆哮的烈焰，瞬间吞没了眼前的敌人。",
+						"循寂静夜色行动的黑衣半身人悄然遁入拱门下的一抹暗影中，又瞬间现身阳台旁的墨色下。她从黑袍里滑出一柄短刀，随即拨开窗门潜入暴君的寝室，让他今夜之后沉入永眠。",
+						"经过各种训练后，武僧可以奇妙的运用流淌在身体中的能量。无论是引导其加强武斗技艺，还是精妙地将其用于防御和移动，这股能量都使武僧获得了全面的强化。",
+						{
+							"ENG_name": "The Magic of Ki",
+							"type": "entries",
+							"name": "气之魔法",
+							"entries": [
+								"武僧精研的这股魔法性质能量，在许多宗派中被称作气Ki。这种魔力元素弥漫在多元宇宙之中，更流淌于每个活物体内。武僧通过操控自己体内的气来创造各种魔法效应，或加强身体的各项机能。其某些特殊打击手法还可以妨碍敌人体内气的流动。武僧们运用这种力量大幅度提升其速度和徒手打击能力。而他们也随着日渐积累的修行，获得更精进的武艺与更精准的运气技巧，最后甚至可以令其获得超越自体与敌人的强大力量。"
+							]
+						},
+						{
+							"ENG_name": "Training and Asceticism",
+							"type": "entries",
+							"name": "修练和苦行",
+							"entries": [
+								"围墙圈成的小修道院在D&D世界中并不少见，这些立于生活波涛中的小小庇护所中，流淌着近乎静止的安宁时间。居于其中的武僧们通过冥想与戒律来寻求完善自身的道路。很多人还是孩子时就因父母双亡而被带到修道院中寻求庇护，还有人是饿殍遍野之时为寻一口吃粮而到此投奔，甚至有人到此是为了寻回自己失去已久的良知。芸芸众生各有烦恼，而在修道院中成为武僧，大家便同是出家人。",
+								"有的武僧彻底的离群索居，远离扰乱其灵魂清修的一切。另一些则是宣誓遁入隐秘生活中，只在出任间谍或刺杀任务时才短暂入世，他们听命于其领袖，贵族雇主，或是其他凡人或神灵势力。",
+								"武僧大多不拒绝邻里间的交流，他们时常拜访邻近的村镇，并以提供服务来换取食物和其他用品。而武僧作为才艺双全的武者，确实经常保护邻居们免受怪物和暴政的侵害。",
+								"在武僧眼中，成为冒险者即意味着离开修行地，结束集体的规律生活而成为一个漂泊者。这对武僧而言是相当严苛的变化，而并不容易接受。因而那些离开修行处踏上旅程的武僧都十分认真严肃的看待自己的决定，并将这一冒险视为自己灵与肉的考验。武僧们时刻严守戒律，他们对物质财富兴趣寥寥，而对达成丰功伟业的兴趣则更甚于击杀怪物探求财宝。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Monk",
+							"type": "entries",
+							"name": "创建武僧",
+							"entries": [
+								"创建一个武僧角色时，可以先思考角色与修道院之间的联系，即那个其修行成长，在其中度过了前半生的地方。你是个孤儿或从小就被遗弃在修道院门口吗？你的父母是否心怀感激的让你进入修道院侍奉某些武僧？你潜心修炼是否为了逃避早年所犯下的重罪？你选择这条路是出于本心吗？",
+								"然后，再考虑你离开的理由。是你修道院的主持挑选你结束修行前去完成一项重大任务吗？还是因为你违反了某些戒律而被驱逐出修道院。你是心怀不安的出走，还是兴高采烈的离开？离开宗派后你有什么目标吗？你是否想迫切想要回家？",
+								"在修道院中常年规律的生活，以及严苛的运气训练使得武僧们大都偏向于守序阵营。",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"你可以按以下建议快速创建一名武僧。首先，将你的最高属性分配给敏捷，次高属性分配给感知。然后选择{@background 隐士}背景。"
+									]
+								}
+							]
+						}
+					],
+					"source": "Casteliad",
+					"name": "武僧（兼职）",
+					"type": "section"
+				},
+				{
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"勿将吾之沉静看做对汝恶行之领受。汝咆哮威胁之刻，吾已计划好四种途径用吾之双手折断汝之颈脖"
+							],
+							"by": "烬，花卉宗师"
+						},
+						"武僧们走的是一条矛盾的道路。他们如同法师般研习他们的技艺，也如同法师般不着护具，通常不使用武器。但尽管如此，他们仍是致命的武士，他们的能力与狂暴的野蛮人或训练有素的战士不相上下。武僧们接受这种存于表象的矛盾，因为它是所有修道研究的核心。通过完全了解自身，从而去了解更加广阔的世界。",
+						"一名武僧专注于自我内心的掌控，这让他们大多脱离了社会，且更关心他们的个人经历而非其他地方发生的事情。参与到冒险当中的武僧在英雄中是稀有且罕见的，他们为了追求完美而越过了修道院的围墙，进入了俗世之中。",
+						"扮演一个僧侣角色提供了许多有趣的机会去尝试不同的东西。为了进一步区分你的僧侣角色，你可以考虑如下小节中的选项。",
+						{
+							"ENG_name": "Monastery",
+							"type": "entries",
+							"name": "修道院",
+							"entries": [
+								"一个在修道院学习的武僧通常是在为修道者的禁欲生活作出准备。大部分进入修道院的人都将其作为他们余生的家，除了那些冒险者和其他有理由离开的人。对于这些人来说，修道院可以成为旅行之间的避所，或在其需要的时候作为援助来源。",
+								"你的修道院是怎么样的，它位于哪里？参与它会让你的角色经历变得独特或与众不同吗？",
+								{
+									"type": "table",
+									"caption": "修道院",
+									"colLabels": [
+										"{@dice d6}",
+										"修道院"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你的修道院是从山腰上开凿而成的，高踞于一道险恶的山隘之上。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你的修道院位于妖精荒野，坐落在一棵参天巨树的枝桠高处。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你的修道院很早以前由一个云巨人建立，它位于一座只能通过飞行才能抵达的云城堡内。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你的修道院建在温泉、间歇泉和硫磺池等火山系统旁边。你会定期受到火矮人商贩的拜访。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你的修道院由侏儒建立，是一座布满隧道与房间的地下迷宫。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你的修道院是从世界极寒之域的一座冰山中雕凿而成的。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Icon",
+							"type": "entries",
+							"name": "徽记",
+							"entries": [
+								"尽管武僧的生活方式避开了物质主义和个人财产，但象征在确立教团身份上仍扮演着重要的角色。一些修道教团会对某些动物给予特殊的重视，这往往是因为该动物与教团的历史有所联系，或者因为它正是武僧们试图效仿的品质的典范。",
+								"如果你角色所在的修道院有一件特殊的徽记，你可能会在衣服上不显眼的地方佩戴其粗糙的图案，作为识别标记。又或者你教团的徽记并无实体形式，而是通过你所采用的一种手势或姿势来表现，而其他武僧或许知道如何解读它。",
+								{
+									"type": "table",
+									"caption": "徽记",
+									"colLabels": [
+										"{@dice d6}",
+										"徽记"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"猴子。敏捷的反应和在树冠间穿行的能力，是你的教团尊崇猴子的两个原因。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"龙龟。你的海滨修道院尊崇龙龟，通过背诵古老的祈祷并献上鲜花花环来礼敬这海洋中生活的精魂。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"麒麟。你的修道院认为他们存在的意义是如同麒麟一样守望和保护这片土地。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"枭熊。 你的修道院敬仰一群枭熊家族，并已与它们一起共存了好几个世代。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"九头蛇。你的教团特别推崇九头蛇同时发动多次攻击的能力。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"龙。一条龙曾存在于你的修道院中，它所带来的影响在它离开之后仍然长久。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Master",
+							"type": "entries",
+							"name": "大师",
+							"entries": [
+								"你的学习很有可能是在一位向你传授戒律的大师指导下进行的。大师塑造你对武术的理解和你对此世的态度。你的大师是位什么样的人？你和大师的关系又如何影响了你？",
+								{
+									"type": "table",
+									"caption": "大师",
+									"colLabels": [
+										"{@dice d6}",
+										"大师"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你的大师是一个专横的人，你必须在单人战斗中击败他才算是完成他对你的授业。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你的大师很和善，他教导你去追求和平的事业。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你的大师总是严厉地将你逼向极限。在一次极其残酷的试炼中你差点失去你的一只眼睛。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你的大师在教导你时看起来很善良，但最后却背叛了你的修道院。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你的大师总是对你冷漠而疏远。你怀疑你们两人或许有血缘关系。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你的大师是善良和慷慨的，从不挑剔你的进步。然而你觉得你从来没有满足他对你的期望。"
+										]
+									]
+								}
+							]
+						}
+					],
+					"source": "Casteliad",
+					"type": "section"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Way of the Astral Self (UA)",
+			"name": "星我宗（UA）",
+			"shortName": "星我（UA）",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassFeatures": [
+				"星我宗|武僧（兼职）|Casteliad|星我（UA）|Casteliad|3",
+				"星我之容|武僧（兼职）|Casteliad|星我（UA）|Casteliad|6",
+				"幽域追踪者|武僧（兼职）|Casteliad|星我（UA）|Casteliad|9",
+				"星我觉醒|武僧（兼职）|Casteliad|星我（UA）|Casteliad|14",
+				"星我之臂增效|武僧（兼职）|Casteliad|星我（UA）|Casteliad|14",
+				"完全星我|武僧（兼职）|Casteliad|星我（UA）|Casteliad|20",
+				"星我之臂增效|武僧（兼职）|Casteliad|星我（UA）|Casteliad|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Martial Arts",
+			"name": "武艺",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 1,
+			"entries": [
+				"你修行的武艺让你精通运用徒手打击和武僧武器的战斗风格。武僧武器指短剑，以及所有不具有双手或重型属性的简易近战武器。",
+				"当你徒手或只持用武僧武器，且未着装任何护甲也没持用盾牌时，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你使用徒手打击或武僧武器进行攻击时，可以用敏捷值代替力量值进行攻击检定和伤害掷骰。",
+						"你使用徒手打击或武僧武器进行攻击时，可以选择用{@dice d4}骰代替原本的伤害掷骰。该骰子将随武僧职业等级的提升而增大，具体数据见\"武僧职业表\"中\"武艺\"一栏。",
+						"你使用徒手打击或武僧武器执行{@action 攻击}动作时，可以在自己回合内以附赠动作发动一次徒手打击。例如，你执行{@action 攻击}动作并使用长棍发动攻击时，若你本轮没有执行任何附赠动作，则可以用附赠动作来发动一次徒手打击。"
+					]
+				},
+				"某些宗派的武僧会使用一些奇异的武僧武器，比如铁链连接的两根短棒（双截棍nunchaku），或者带直刃的镰刀（单镰kama）。"
+			]
+		},
+		{
+			"ENG_name": "Unarmored Defense",
+			"name": "无甲防御",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 1,
+			"entries": [
+				"第1级起，未着装任何护甲也没持用盾牌时，你的AC值等于10＋你的敏捷调整值＋你的感知调整值。"
+			]
+		},
+		{
+			"ENG_name": "Ki",
+			"name": "Ki",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 2,
+			"entries": [
+				"第2级起，你掌握一股名为气的神秘能量。此后你将拥有一定数量的气作为储备。而气的储备量由你的武僧等级决定，具体数值见\"武僧职业表\"中\"气点\"一栏。",
+				"你可以消耗气以行使各种特性。一开始你掌握三种特性：疾风连击、坚强防御和疾步如风。此后，随着此职业等级的提升你将习得更多的特性。",
+				"消耗掉的气在你完成一次短休或长休之前不可用，你必须在你短休或长休时完成至少30分钟的冥想，才能重获所有消耗掉的气值。",
+				"某些特性需要目标进行豁免检定来抵抗你特性造成的效应。其豁免DC如下：",
+				{
+					"ENG_name": "Ki",
+					"type": "abilityDc",
+					"name": "Ki",
+					"attributes": [
+						"wis"
+					]
+				},
+				{
+					"ENG_name": "Flurry of Blows",
+					"type": "entries",
+					"name": "疾风连击",
+					"entries": [
+						"你在自己回合内执行{@action 攻击}动作后，可立即消耗1点气并以一个附赠动作发动两次徒手打击。"
+					]
+				},
+				{
+					"ENG_name": "Patient Defense",
+					"type": "entries",
+					"name": "坚强防御",
+					"entries": [
+						"你在自己回合内，可以消耗1点气，并以一个附赠动作的形式来执行{@action 回避}动作。"
+					]
+				},
+				{
+					"ENG_name": "Step of the Wind",
+					"type": "entries",
+					"name": "疾步如风",
+					"entries": [
+						"你在自己回合内，可以消耗1点气，并以一个附赠动作的形式来执行{@action 撤离}动作或{@action 疾走}动作，同时使你该回合内的跳跃距离翻倍。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Unarmored Movement",
+			"name": "无甲移动",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 2,
+			"entries": [
+				"第2级起，当未穿着任何护甲也没持用盾牌时，你的移动速度增加10尺。该加值将随着武僧职业等级的提升而增加，具体数值见\"武僧职业表\"中\"无甲移动\"一栏。",
+				"第9级起，你在自己的回合内，可以在垂直平面或水面等地形移动，但移动结束时你必须处在不会坠落的地方。"
+			]
+		},
+		{
+			"ENG_name": "Deflect Missiles",
+			"name": "拨挡飞弹",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 3,
+			"entries": [
+				"第3级起，你可以用你的反应拨挡或抓取一个击中你的远程武器攻击。使用本特性后，该次攻击的伤害将被削弱，其减数值等于{@dice 1d10}＋你的敏捷调整值＋你的武僧职业等级。",
+				"当被拨挡攻击的伤害减少至0，且实施伤害的飞弹足够小，并且可以被你单手抓住时，你可以用此时空闲的手去抓取该飞弹。此时你可以消耗1点气以该\"飞弹\"进行一次远程攻击，而该攻击将视为本次反应的一部分。无论你是否具有被拨挡武器的熟练项，本次攻击中你都视为进行具有熟练项的攻击，所使用的飞弹也视为武僧武器，其射程为20/60尺。"
+			]
+		},
+		{
+			"ENG_name": "Monastic Tradition",
+			"name": "修行宗派",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 3,
+			"entries": [
+				"第3级时，你选择投入一个宗派精进你的技艺。你可以从可选宗派中选择其一。随后，你将在第3、第6、第11、第17级时获得相应宗派的特性传承。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Slow Fall",
+			"name": "轻身坠",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 4,
+			"entries": [
+				"第4级起，当你要承受坠地伤害时，你可以使用反应将伤害减少等同于五倍武僧职业等级的数值。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 5,
+			"entries": [
+				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Stunning Strike",
+			"name": "震慑拳",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 5,
+			"entries": [
+				"第5级起，你能够阻碍敌人体内的气的流动。你的近战武器攻击命中时，可以消耗1点气尝试发动震慑拳。被命中目标必须进行一次体质豁免，豁免失败则受到{@condition 震慑}，并持续至你的下一回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Ki-Empowered Strikes",
+			"name": "真气驻拳",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 6,
+			"entries": [
+				"第6级起，攻击对非魔法攻击或伤害具有抗性或免疫的目标时，你的徒手打击视为魔法攻击。"
+			]
+		},
+		{
+			"ENG_name": "Monastic Tradition feature",
+			"name": "宗派特性",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 6,
+			"entries": [
+				"第6级时，你将获得相应宗派的一项特性传承。"
+			]
+		},
+		{
+			"ENG_name": "Favored Enemy",
+			"name": "宿敌",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 7,
+			"entries": [
+				"第7级起，你对常在荒野中遭遇的某类敌人有着丰富的经验去研究、追踪、狩猎，乃至与之交流。",
+				"从下列种类中选择你的宿敌类型：{@filter 野兽|bestiary|type=beast}、{@filter 妖精|bestiary|type=fey}、{@filter 类人生物|bestiary|type=humanoid}、{@filter 怪兽|bestiary|type=monstrosity}或{@filter 亡灵|bestiary|type=undead}。你对所选种类生物发动的武器攻击，其伤害掷骰获得+2加值。此外，在追踪宿敌的感知（{@skill 求生}）检定，以及回忆与宿敌相关信息的智力检定上，你都享有优势。",
+				"当你获得此特性时，你还可以学习一门自选语言，通常是你宿敌或相关生物所说的语言。不过，你可以自由选择任何你想学习的语言。"
+			]
+		},
+		{
+			"ENG_name": "Natural Explorer",
+			"name": "自然探索者",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 7,
+			"entries": [
+				"你是穿行于自然界的大师，且在遭受攻击时能做出迅捷而果断的应对。这给予你以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你无视困难地形。",
+						"在先攻检定中具有优势。",
+						"在你的第一个战斗回合中，你对尚未行动的生物进行的攻击检定具有优势。"
+					]
+				},
+				"此外，你擅长在荒野中辨路前行。当你旅行一小时或更久时，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"困难地形不会拖慢你队伍的旅行。",
+						"除非借助魔法手段，否则你的队伍不会迷路。",
+						"旅行时，即使你进行另一项活动（如觅食、导航或追踪），仍能对危险保持警觉。",
+						"独自旅行时，你能以正常步调保持隐匿地移动。",
+						"觅食时，你会发现两倍的食物。",
+						"追踪其他生物时，你还能了解它们的准确数量、体型，以及它们多久前经过该区域。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 8,
+			"entries": [
+				"第8级时，你选定一种特定的战斗风格作为你的专长。从下列选项中选择其一。你不能重复选择同一个战斗风格选项，即使你之后能再次选择也是如此。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Archery",
+							"type": "entries",
+							"name": "箭术",
+							"entries": [
+								"你用远程武器进行的攻击检定获得+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Close Quarters Shooter",
+							"type": "entries",
+							"name": "近身射手",
+							"entries": [
+								"当你在一个敌对生物5尺范围内进行远程攻击时，你的攻击检定不会带有劣势。你的远程攻击无视30尺内目标的半身掩护和四分之三掩护。你的远程攻击检定获得+1加值。"
+							],
+							"source": "UALightDarkUnderdark"
+						},
+						{
+							"ENG_name": "Defense",
+							"type": "entries",
+							"name": "防御",
+							"entries": [
+								"当你着装护甲时，你的AC获得+1加值。"
+							]
+						},
+						{
+							"ENG_name": "Dueling",
+							"type": "entries",
+							"name": "对决",
+							"entries": [
+								"当你单手持用一把近战武器且未持用其他武器时，你用该武器发动的攻击的伤害掷骰获得+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Mariner",
+							"type": "entries",
+							"name": "水手",
+							"entries": [
+								"只要你不曾穿着重甲或使用盾牌，你便拥有等同于你正常速度的游泳速度和攀爬速度，且你的AC获得+1加值。"
+							],
+							"source": "UAWaterborneAdventures"
+						},
+						{
+							"ENG_name": "Tunnel Fighter",
+							"type": "entries",
+							"name": "坑道斗士",
+							"entries": [
+								"你可以用一个附赠动作进入一种防御姿态，该姿态持续到你下个回合开始。处于该防御姿态期间，你可以不消耗反应进行借机攻击，并且你可以用你的反应对一个在你触及范围内移动超过5尺的生物进行一次近战攻击。"
+							],
+							"source": "UALightDarkUnderdark"
+						},
+						{
+							"ENG_name": "Two-Weapon Fighting",
+							"type": "entries",
+							"name": "双武器战斗",
+							"entries": [
+								"当你进行双武器战斗时，你可以将你的属性调整值加在第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 8,
+			"entries": [
+				"当你到达第8级时，你已经学会像德鲁伊一样运用自然的魔法本质来施法。施法的一般规则请见{@book 第十章|PHB|10}，第十一章则是{@filter 游侠法术列表|spells|class=游侠}。",
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"\"游侠职业表\"记录了你可用来施展{@filter 游侠法术|spells|class=游侠}的1环和更高环阶法术的法术位数量。要施展其中一个法术，你必须消耗该法术环阶或更高的法术位。你在完成一次长休后恢复所有已耗的法术位。",
+						"例如，如果你已经习得一环法术{@spell 化兽为友}，并且有一个一环和二环法术位可用，你可以使用任一法术位来施放{@spell 化兽为友}。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"你从游侠法术列表里选两个1环法术作为自己的已知法术。",
+						"\"游侠职业表\"的\"已知法术\"一栏标明你何时习得更多自选的游侠法术。这些法术都必须是你持有对应环阶法术位的法术。例如，当你在此职业达到第5级时，你可以学习一个新的1环或2环法术。",
+						"此外，当你在此职业获得一个等级时，你可以选择一个你已知的游侠法术，用游侠法术列表中的另一个法术替换它，新法术同样必须是你持有对应环阶法术位的法术。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"你的魔法来自你与自然的同调，因此感知是你施展游侠法术的关键属性。每当你的游侠法术需要施法属性时均指向你的感知值。而你游侠法术的豁免DC和攻击检定，则使用你的感知调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Primeval Awareness",
+			"name": "原初意识",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 9,
+			"entries": [
+				"第9级起，你对游侠学识的掌握让你能与野兽以及周遭大地建立起强大的联结。",
+				"你天生便能与野兽沟通，它们视你为灵犀相通的同类。你可以用一个动作，通过声音和手势向一头野兽传达简单的意念，并读懂它基本的情绪与意图。你能了解它的情感状态、它是否受到任何魔法的影响、它的短期需求（如食物或安全），以及（如果有的话）你可以采取哪些行动来说服它不要发起攻击。",
+				"你无法对过去10分钟内曾被你攻击过的生物使用此能力。",
+				"此外，你可以调谐你的感官，探知是否有宿敌潜伏在附近。通过花费1分钟不中断的专注（如同专注于一个法术），你可以感知5英里范围内是否存在你的宿敌。此特性会揭示在场的是哪些宿敌、它们的数量，以及它们相对你的大致方位和距离（以英里计）。",
+				"如果范围内存在多组宿敌，你会分别获知每一组的信息。"
+			]
+		},
+		{
+			"ENG_name": "Ranger Conclave",
+			"name": "游侠范型",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 9,
+			"entries": [
+				"第9级时，你选择效仿可选范型列表中某一游侠范型的理念与训练。你的选择会在第3级以及第5、第7、第11和第15级赋予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Evasion",
+			"name": "反射闪避",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 10,
+			"entries": [
+				"第10级起，你敏锐的直觉让你可以躲过某些特定的区域效应，比如蓝龙的闪电吐息或是法术{@spell 火球术}。当你成为某一范围效应的影响对象时，若该效应允许你以敏捷豁免使伤害减半，则你豁免成功时完全不受伤害，豁免失败时也只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Stillness of Mind",
+			"name": "心如止水",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 10,
+			"entries": [
+				"第10级起，你可以用你的动作结束一个正影响你的{@condition 魅惑}或{@condition 恐慌}状态。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 11,
+			"entries": [
+				"当你达到第11级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Unarmored Movement improvement",
+			"name": "无甲移动增效",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 12,
+			"entries": [
+				"第12级起，你在自己的回合内，可以在垂直平面或水面等地形移动，但移动结束时你必须处在不会坠落的地方。"
+			]
+		},
+		{
+			"ENG_name": "Purity of Body",
+			"name": "百病不侵",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 13,
+			"entries": [
+				"第13级起，你浑身的气流动使你免疫疾病和毒素。"
+			]
+		},
+		{
+			"ENG_name": "Monastic Tradition feature",
+			"name": "宗派特性",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 14,
+			"entries": [
+				"第14级时，你将获得相应宗派的一项特性传承。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 15,
+			"entries": [
+				"当你达到第15级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Tongue of the Sun and Moon",
+			"name": "天语通",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 16,
+			"entries": [
+				"第16级起，你可以与其它生物进行心灵交流。此后，你能够听懂所有语言，同时，掌握至少一门语言的任何生物都能理解你说的话。"
+			]
+		},
+		{
+			"ENG_name": "Diamond Soul",
+			"name": "金刚魂",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 17,
+			"entries": [
+				"第17级起，你对气的掌控令你所有的豁免检定都成了熟练项。",
+				"另外，当豁免失败时，你可以消耗1点气重掷豁免并使用重掷的结果。"
+			]
+		},
+		{
+			"ENG_name": "Timeless Body",
+			"name": "不朽身",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 18,
+			"entries": [
+				"第18级起，你的气充盈身体让你不受衰老的减益，并且无法被魔法变老。尽管你依然会寿终正寝，但再不需要饮食。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Monastic Tradition feature",
+			"name": "宗派特性",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"level": 20,
+			"entries": [
+				"第20级时，你将获得相应宗派的一项特性传承。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Way of the Astral Self",
+			"name": "星我宗",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 3,
+			"entries": [
+				"星我宗的武僧与自身的气进行着一场内在的斗争。他们把这股神秘能量视为自己真实形态的体现，即星我。这一形态既可能成为良善之力，也可能成为毁灭之力，因此一些修道院训练弟子克制本性，另一些则教他们拥抱冲动。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "你的星我形态|武僧（兼职）|Casteliad|星我（UA）|Casteliad|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "星我之臂|武僧（兼职）|Casteliad|星我（UA）|Casteliad|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Arms of the Astral Self",
+			"name": "星我之臂",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级时，你对气的掌握让你能召唤出自己的一部分星我。在你的回合内，你可以用附赠动作消耗2点气，召唤星我之臂，持续10分钟。这些灵体手臂悬浮于你的双肩附近，其样貌由你依据自己角色的特质决定。",
+				"当你的星我之臂被召唤期间，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"当你进行力量检定或力量豁免时，你可以用你的感知调整值来代替力量调整值进行检定或豁免。",
+						"星我之臂是武僧武器且具有10尺触及范围。星我之臂造成光耀或暗蚀伤害（由你选择）。当你用星我之臂攻击时，你可以使用感知调整值代替力量或敏捷调整值来进行攻击和伤害掷骰。",
+						"在你的回合内，当你以星我之臂执行{@action 攻击}动作后，可以立即用附赠动作以星我之臂发动一次额外攻击。额外攻击的次数会随你在此职业的等级提升而增加：第11级增至两次，第17级增至三次。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Forms of Your Astral Self",
+			"name": "你的星我形态",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 3,
+			"header": 1,
+			"type": "inset",
+			"entries": [
+				"星我是武僧心灵与灵魂的半透明化身。因此，星我的形态反映了显现它的武僧的心智。你的星我可以是一位戴着头盔遮面、双臂魁梧的类人骑士，也可以是手臂如魔冢般纤细的金色金属形态。",
+				"当你选择这条路途时，不妨思考那些能定义你武僧的怪癖。他们是否痴迷于某事？驱使你的是正义，还是一己私欲？这些动机中的任何一种，都可能体现在你星我的形态上。"
+			]
+		},
+		{
+			"ENG_name": "Visage of the Astral Self",
+			"name": "星我之容",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，你可以召唤你的星我之容。在你的回合内，你可以用附赠动作消耗1点气（或作为召唤星我之臂的一部分），召唤此容，持续10分钟。这层灵体之容如头盔或面具般覆上你的脸，并以一层微弱但可察觉的能量灵光包裹你的全身。其样貌由你依据自己角色的特质决定。",
+				"当你的星我之容被召唤期间，你获得从一道暗影跨入另一道暗影的能力。当你处于微光或黑暗中时，你可以用附赠动作传送至60尺内一处你可见、且同样处于微光或黑暗中的未被占据空间。随后，你在该回合结束前发动的第一次近战攻击具有优势。如果你在一个回合中只召唤了星我之容，便可以在该回合进行这种传送。"
+			]
+		},
+		{
+			"ENG_name": "Gloom Stalker",
+			"name": "幽域追踪者",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"幽域追踪者居身于致暗之地：地表深处，暗巷之间，太古丛林，和其他任何光无法照亮的地方。很多人进入到这种地区都会有种强烈的不安，但是幽域追踪者却能在黑暗中大胆冒险，在敌人能够触及到更开阔的地区之前搜寻并袭击他们。这种游侠经常出现在幽暗地域，但是他们会前往任何邪恶势力蛰伏的地区。",
+				{
+					"ENG_name": "Gloom Stalker Magic",
+					"type": "entries",
+					"name": "幽域追踪者魔法",
+					"entries": [
+						"第9级起，你习得{@spell 易容术}法术，该法术不计入你已知的游侠法术数量。"
+					]
+				},
+				{
+					"ENG_name": "Dread Ambusher",
+					"type": "entries",
+					"name": "恐惧伏击",
+					"entries": [
+						"第9级时，你精通伏击的艺术。你的先攻检定获得等同于你感知调整值的加值。",
+						"在每场战斗中你的第一个回合开始时，你的步行速度增加10尺，持续到该回合结束。如果你在该回合执行{@action 攻击}动作，可以作为该动作的一部分发动一次额外的武器攻击。如果该攻击命中，目标将额外受到1d8点与该武器伤害类型相同的伤害。"
+					]
+				},
+				{
+					"ENG_name": "Umbral Sight",
+					"type": "entries",
+					"name": "阴影视野",
+					"entries": [
+						"第9级起，你获得60尺范围的{@sense 黑暗视觉}。如果你已从你的种族获得黑暗视觉，则其范围增加30尺。",
+						"你也擅长规避依赖黑暗视觉的生物。在黑暗中，对于任何依靠黑暗视觉来观察你的生物，你视为{@condition 隐形}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Awakening of the Astral Self",
+			"name": "星我觉醒",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"第14级起，你能汲取星我的更强力量。当你同时召唤出星我之臂与星我之容时，你获得以下好处。",
+				{
+					"ENG_name": "Deflect Energy",
+					"type": "entries",
+					"name": "拨挡能量",
+					"entries": [
+						"当你受到强酸、寒冷、火焰、闪电或力场伤害时，你可以用你的反应将其拨挡开。当你如此做时，你受到的伤害减少{@dice 1d10}＋你的感知调整值＋你的武僧等级。"
+					]
+				},
+				{
+					"ENG_name": "Empowered Arms",
+					"type": "entries",
+					"name": "猛力之臂",
+					"entries": [
+						"在你的每个回合中，当你用星我之臂命中一个目标时，你可以对其造成等同于你武艺骰的额外伤害，每回合限一次。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Arms of the Astral Self",
+			"name": "星我之臂增效",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"第14级时，当你以附赠动作用星我之臂攻击时，可以发动两次额外攻击，而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Complete Astral Self",
+			"name": "完全星我",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"第20级起，你与星我的联结臻于完满，让你能将它完整地召唤出来。在你的回合内，你可以用附赠动作消耗10点气，将星我的臂、容与躯完整召唤，持续10分钟。这具灵体之躯如同一副铠甲般覆裹你的肉身，并与星我之臂和星我之容相连。其样貌由你依据自己角色的特质决定。当你的星我被召唤期间，你获得以下好处。",
+				{
+					"ENG_name": "Armor of the Spirit",
+					"type": "entries",
+					"name": "精魂护甲",
+					"entries": [
+						"只要你未处于失能状态，你的AC便获得+2加值。"
+					]
+				},
+				{
+					"ENG_name": "Astral Barrage",
+					"type": "entries",
+					"name": "星之连击",
+					"entries": [
+						"每当你使用额外攻击特性攻击两次时，你可以改为用星我之臂攻击三次。"
+					]
+				},
+				{
+					"ENG_name": "Ki Consumption",
+					"type": "entries",
+					"name": "噬气",
+					"entries": [
+						"当一个处于你10尺范围内的生物生命值降至0时，你可以用你的反应恢复等同于你感知调整值的气点（最少1点）。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Arms of the Astral Self",
+			"name": "星我之臂增效",
+			"source": "Casteliad",
+			"className": "武僧（兼职）",
+			"classSource": "Casteliad",
+			"subclassShortName": "星我（UA）",
+			"subclassSource": "Casteliad",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"第20级时，当你以附赠动作用星我之臂攻击时，可以发动三次额外攻击，而非一次。"
+			]
+		}
+	]
+}
