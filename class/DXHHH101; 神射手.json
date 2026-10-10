@@ -1,0 +1,2017 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DXMarksman",
+				"abbreviation": "DXM",
+				"full": "神射手",
+				"url": "https://homebrewery.naturalcrit.com/share/1ez4_cZlRNYd_AYzmxbomFPkb8aprudx8GQWclmp9iliS",
+				"version": "0.2",
+				"authors": [
+					"DXHHH101"
+				],
+				"convertedBy": [
+					"DXHHH101"
+				],
+				"color": "00b4ff"
+			}
+		],
+		"optionalFeatureTypes": {
+			"TQ:M": "技艺，神射手",
+			"FS:M": "战斗风格：神射手"
+		},
+		"edition": "classic",
+		"dateAdded": 1643675458,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "7af134bbc8"
+	},
+	"class": [
+		{
+			"ENG_name": "Marksman",
+			"name": "神射手",
+			"source": "DXMarksman",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"cantripProgression": [
+				0,
+				0,
+				0,
+				0,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				0,
+				0,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11
+			],
+			"classSpells": [
+				"颤栗之触",
+				"创造篝火|xge",
+				"霜噬|xge",
+				"虫群孳生|xge",
+				"闪电牵引|tce",
+				"心灵之楔|tce",
+				"次级幻象",
+				"魔法伎俩",
+				"冷冻射线",
+				"圣火术",
+				"削弱芒刺|egw",
+				"鸣雷破|xge",
+				"亡者丧钟|xge",
+				"光耀祷词|xge",
+				"警报术",
+				"哈达之臂",
+				"兽之联结|xge",
+				"造成恐惧|xge",
+				"七彩喷射",
+				"不谐低语",
+				"地颤|xge",
+				"纠缠术",
+				"妖火",
+				"云雾术",
+				"油腻术",
+				"冰刃|xge",
+				"致伤术",
+				"扩大重力|egw",
+				"致病射线",
+				"无声幻影",
+				"塔莎狂笑术",
+				"雷鸣波",
+				"巫术箭",
+				"目盲术/耳聋术",
+				"安定心神",
+				"匕首之云",
+				"疯狂冠冕",
+				"黑暗术",
+				"地缚|xge",
+				"变巨/缩小术",
+				"炽焰法球",
+				"不动物件|egw",
+				"敲击术",
+				"浮空术",
+				"麦克斯米利安的地之攫|xge",
+				"马友夫强酸箭",
+				"心灵尖刺|xge",
+				"魅影之力",
+				"衰弱射线",
+				"粉碎音波",
+				"沉默术",
+				"史尼洛雪球群|xge",
+				"荆棘丛生",
+				"暗示术",
+				"守护之链",
+				"蛛网术",
+				"降咒",
+				"昼明术",
+				"解除魔法",
+				"敌群环绕|xge",
+				"土石喷发|xge",
+				"恐惧术",
+				"火球术",
+				"哈达之欲",
+				"催眠图纹",
+				"高等幻影",
+				"脉冲波动|egw",
+				"雪雨暴",
+				"臭云术",
+				"沙墙术|xge",
+				"水墙术|xge",
+				"放逐术",
+				"枯萎术",
+				"困惑术",
+				"元素灾厄|xge",
+				"艾伐黑触手",
+				"冰风暴",
+				"魅影杀手",
+				"变形术",
+				"致病辐射|xge",
+				"风暴法球|xge",
+				"浓酸球|xge",
+				"火墙术",
+				"死云术",
+				"寒冰锥",
+				"疫病术",
+				"拂晓|xge",
+				"湮灭波",
+				"汲能术|xge",
+				"焚烧术|xge",
+				"疫病虫群",
+				"大漩涡|xge",
+				"负能量洪流|xge",
+				"突触静止|xge",
+				"剑刃护壁",
+				"连锁闪电",
+				"死亡法阵",
+				"解离术",
+				"石化术",
+				"精神监狱|xge",
+				"奥图迷舞",
+				"散射术|xge"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"investigation",
+								"perception",
+								"sleight of hand",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"{@filter 具有投掷属性的武器|items|category=basic|property=thrown}"
+				],
+				"tools": [
+					"{@item 木雕工具|phb}"
+				],
+				"armor": [
+					"light",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"{@item 皮甲|phb}",
+					"(a) 20支{@item 飞镖|phb|飞镖} 或 (b) 四把{@item 匕首|phb|匕首}",
+					"两把{@item 手斧|phb|手斧}",
+					"10支{@item 训练飞镖|DXMarksman|训练飞镖}",
+					"一个{@item 探索套组|phb}"
+				],
+				"goldAlternative": "{@dice 2d4 x 10}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"int": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"{@filter 具有投掷属性的武器|items|category=basic|property=thrown}"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"技艺点",
+						"已知戏法",
+						"已知法术"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							0,
+							0
+						],
+						[
+							5,
+							4,
+							4
+						],
+						[
+							6,
+							4,
+							4
+						],
+						[
+							7,
+							4,
+							5
+						],
+						[
+							8,
+							4,
+							5
+						],
+						[
+							9,
+							4,
+							6
+						],
+						[
+							10,
+							5,
+							6
+						],
+						[
+							11,
+							5,
+							7
+						],
+						[
+							12,
+							5,
+							7
+						],
+						[
+							13,
+							5,
+							8
+						],
+						[
+							14,
+							5,
+							8
+						],
+						[
+							15,
+							5,
+							9
+						],
+						[
+							16,
+							5,
+							9
+						],
+						[
+							17,
+							5,
+							10
+						],
+						[
+							18,
+							5,
+							10
+						],
+						[
+							19,
+							5,
+							11
+						],
+						[
+							20,
+							5,
+							11
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=神射手 (DXM)}",
+						"{@filter 2nd|spells|level=2|class=神射手 (DXM)}",
+						"{@filter 3rd|spells|level=3|class=神射手 (DXM)}",
+						"{@filter 4th|spells|level=4|class=神射手 (DXM)}",
+						"{@filter 5th|spells|level=5|class=神射手 (DXM)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"娴熟之手|神射手|DXMarksman|1",
+				"技艺|神射手|DXMarksman|1",
+				"战斗风格|神射手|DXMarksman|2",
+				{
+					"classFeature": "神射手范型|神射手|DXMarksman|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|神射手|DXMarksman|4",
+				"替换武术|神射手|DXMarksman|4",
+				"动势施法|神射手|DXMarksman|5",
+				"咒射|神射手|DXMarksman|5",
+				{
+					"classFeature": "神射手范型特性|神射手|DXMarksman|6",
+					"gainSubclassFeature": true
+				},
+				"附魔投射物|神射手|DXMarksman|7",
+				"魔法技艺|神射手|DXMarksman|7",
+				"技艺|神射手|DXMarksman|7",
+				"属性值提升|神射手|DXMarksman|8",
+				"替换戏法|神射手|DXMarksman|8",
+				"召唤武器|神射手|DXMarksman|9",
+				"秘法指引|神射手|DXMarksman|9",
+				{
+					"classFeature": "神射手范型特性|神射手|DXMarksman|10",
+					"gainSubclassFeature": true
+				},
+				"额外攻击|神射手|DXMarksman|11",
+				"技艺：回响投掷|神射手|DXMarksman|11",
+				"属性值提升|神射手|DXMarksman|12",
+				"动势降环施法（5环）|神射手|DXMarksman|13",
+				"秘法预言|神射手|DXMarksman|14",
+				"技艺|神射手|DXMarksman|14",
+				{
+					"classFeature": "神射手范型特性|神射手|DXMarksman|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|神射手|DXMarksman|16",
+				"动势降环施法（6环）|神射手|DXMarksman|18",
+				"属性值提升|神射手|DXMarksman|19",
+				"魔法协同|神射手|DXMarksman|20"
+			],
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Marksman",
+			"name": "神射手",
+			"source": "DXMarksman",
+			"entries": [
+				{
+					"ENG_name": "Marksman",
+					"name": "神射手",
+					"source": "DXMarksman",
+					"type": "section",
+					"entries": [
+						"一支由光芒凝成的标枪在一名矮人伸出的手中成形，随即呼啸着射向一只狗头人。标枪化作一道闪电爆发，贯穿目标后随之消散，只留下那只狗头人周身闪烁着残余的能量。",
+						"烈焰从一支孤零零地嵌在骑士盔甲上的飞镖中喷涌而出，将整片战场化作炼狱般的火海。作为攻击源头的精灵转身离去，任凭敌人在他身后烧为焦炭。",
+						"当一支箭离开兽人的弓弦，直扑一名手无寸铁的平民时，一名兜帽虎人从阴影中跃出。她掷出一柄斧头，速度快得唯有她自己才能看清轨迹，那支箭骤然断成两截，无害地落在平民脚边。孤身的拯救者如今与兽人正面相对。她备好另一柄斧头，这一柄正闪烁着能量之光。",
+						"神射手是精准的大师，以注入魔法的投掷武器掌控战场。这些英雄凭借自己的钻研踏入魔法之门，掌握着一套乍看之下并不起眼的多样魔法。",
+						{
+							"ENG_name": "Precise Warriors",
+							"name": "精准斗士",
+							"type": "entries",
+							"entries": [
+								"作为投掷武器的大师，神射手擅长中距离作战。他们凭借自身的准确与精妙，时刻掌控着对手的站位。这一点让他们的技艺有别于使用弓这类远程武器的方式：箭飞得更远，但斧头分量更足，用途也更为多样。",
+								"真正让神射手有别于其他战士的，是他们对将法术注入武器之艺的钻研。旁人能够制造魔法物品，或将法术储存在物品中留待后用，而神射手则另辟蹊径：他们的武器充当法术的导管，让魔法从一点奔向另一点。正因如此，他们才如此多才多艺\u2014\u2014某些法术的施放方式，就连最强大的法师也难以企及。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Marksman",
+							"name": "创造神射手",
+							"type": "entries",
+							"entries": [
+								"在设计你的神射手时，想想他们是哪一类战士。你是会留意周遭环境的人吗？会在让队友收尾之前，先设法困住对手或限制他们的选择吗？又或者，你是想要造成尽可能多破坏的人？连珠炮般掷出火球术，直到对手化为灰烬？",
+								"同时也想想你的魔法师从何处。你是师从他人，还是自学成才？又或者，是一位看出你战斗技艺潜力的法师传授于你？",
+								{
+									"ENG_name": "Quick Build",
+									"name": "快速构建",
+									"type": "entries",
+									"entries": [
+										"你可以按照以下建议快速构建一名神射手。首先，敏捷应是你最高的属性值，其次是驱动你魔法的智力。其次，选择{@background 化外之民}或{@background 智者}背景。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Arsonist",
+			"name": "纵火犯",
+			"shortName": "纵火犯",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassSpells": [
+				"燃烧之手",
+				"灼热金属",
+				"火球术",
+				"哈达之欲",
+				"元素灾厄|xge",
+				"火墙术",
+				"焰击术",
+				"焚烧术|xge"
+			],
+			"subclassFeatures": [
+				"纵火犯|神射手|DXMarksman|纵火犯|DXMarksman|3",
+				"技艺：威力压倒精准|神射手|DXMarksman|纵火犯|DXMarksman|3",
+				"灼烧历练|神射手|DXMarksman|纵火犯|DXMarksman|3",
+				"纵火犯食谱|神射手|DXMarksman|纵火犯|DXMarksman|6",
+				"纵火魔法|神射手|DXMarksman|纵火犯|DXMarksman|6",
+				"爆炸射击|神射手|DXMarksman|纵火犯|DXMarksman|10",
+				"炼狱火海|神射手|DXMarksman|纵火犯|DXMarksman|15"
+			]
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"shortName": "战术家",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassSpells": [
+				"命令术",
+				"蛛网术",
+				"加速术",
+				"缓慢术",
+				"困惑术",
+				"防死结界",
+				"原力法阵",
+				"防活物护罩"
+			],
+			"subclassFeatures": [
+				"战术家|神射手|DXMarksman|战术家|DXMarksman|3",
+				"战术家法术书|神射手|DXMarksman|战术家|DXMarksman|6",
+				"跳弹|神射手|DXMarksman|战术家|DXMarksman|6",
+				"掌控战场|神射手|DXMarksman|战术家|DXMarksman|10",
+				"选择性干扰|神射手|DXMarksman|战术家|DXMarksman|15"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Practiced Hands",
+			"name": "娴熟之手",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 1,
+			"entries": [
+				"你在投掷武器之艺上的造诣难以撼动。经年累月打磨技艺的时光，让你发现了比单凭蛮力更高效的投掷之法。任何你拥有熟练项的、具有投掷属性的武器，同时视为具有灵巧属性。"
+			]
+		},
+		{
+			"ENG_name": "Techniques",
+			"name": "技艺",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 1,
+			"entries": [
+				"你的训练与实践让你掌握了应用于投掷武器的特殊技艺。你已找到让飞镖不止扎进敌人体内的种种法门。",
+				"从1级开始，你学习以下技艺中的两项。你在7级和14级时再各习得一项技艺。你对这些技艺的运用以技艺点表示。你的神射手等级决定你拥有的点数，见神射手表中\"技艺点\"一栏。你可以消耗这些点数来使用你掌握的各种技艺。完成一次短休或长休后，你恢复所有已消耗的技艺点。除非另有说明，每次攻击你只能使用一项技艺。",
+				"你的部分技艺需要目标进行豁免检定以抵抗技艺的效果。豁免DC计算如下：",
+				{
+					"ENG_name": "Technique",
+					"type": "abilityDc",
+					"name": "技艺",
+					"attributes": [
+						"dex"
+					]
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "钝击投掷|DXMarksman"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "精算投掷|DXMarksman"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "拨挡投射物|DXMarksman"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "缴械投掷|DXMarksman"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "迷向投掷|DXMarksman"
+				}
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 2,
+			"entries": [
+				"在2级时，你采用一种特定的战斗风格作为自己的专长。从以下选项中选择一项。即使你日后能再次选择，也不能多次选取同一项战斗风格选项。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "箭术|DXMarksman"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "防御|DXMarksman"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拦截|DXMarksman"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "投掷武器战斗|DXMarksman"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Marksman Archetype",
+			"name": "神射手范型",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 3,
+			"entries": [
+				"在3级时，你选择一个努力效仿的范型，融入你的远程战斗风格。你的选择会在3级以及随后的6级、10级和15级给予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@filter 专长|feats}。"
+			]
+		},
+		{
+			"ENG_name": "Martial Versatility",
+			"name": "替换武术",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 4,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"每当你到达本职业中给予属性值提升特性的等级时，你可以执行以下操作之一，以转变你投掷武器训练的方向：",
+				{
+					"type": "list",
+					"items": [
+						"将你已知的一项{@filter 战斗风格|optionalfeatures|feature type=fs:m}替换为另一项神射手可选的战斗风格。",
+						"将你已知的一项{@filter 技艺|optionalfeatures|feature type=tq:m}替换为另一项不同的技艺。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spell Slinger",
+			"name": "咒射",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 5,
+			"entries": [
+				"每回合一次，当你进行投掷武器攻击时，你可以施放一个法术并将其注入武器。法术在命中某物时激发，以被命中的物件或生物作为法术的目标。若法术影响其射程内的多个生物，则投射物视为法术的起始点。若法术指定一片锥形区域，则以武器行进的方向决定锥形的朝向。若法术需要进行远程法术攻击，则改为强迫目标进行一次敏捷豁免，豁免成功则不产生任何效果。如有必要，法术仍需专注。",
+				"若一个法术指定数个目标（包括以更高环阶施放时才如此的法术），你可以利用同一次施放的该法术进行多次攻击。在你使用咒射特性施放该法术并攻击一个生物后，你可以用你回合内的任何额外攻击为该法术再增加一个目标生物。你只能以不超过该法术上限数量的生物为目标，且不能以同一次施放的法术重复选定同一生物。若某法术要求所选目标彼此须在一定距离之内（如缓慢术），你可以无视该距离限制。",
+				"你只能将特定的法术注入武器，因此只能注入神射手法术列表中的法术。若你经由其他职业的施法或契约魔法特性获得了施法能力：只要该法术也在那个职业的法术列表上，你就可以正常施放你的任何法术。"
+			]
+		},
+		{
+			"ENG_name": "Velocity Spellcasting",
+			"name": "动势施法",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 5,
+			"entries": [
+				"从5级开始，你获得施放经改造法术的能力。在让武器用途更加多样的研究中，你发现可以将特定的法术与效应注入其中。武器静止不动时，法术几乎瞬间消散而不会激发；但你发现，武器被掷出后，其动量足以让法术维持活性，恰好撑到命中目标。",
+				"由于你的法术研究有其特殊性，你无法以传统方式施放法术，只能通过咒射特性来施放你的法术。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从{@filter 神射手法术列表|spells|class=神射手 (DXM)}中学习四个戏法。如神射手表中\"已知戏法\"一栏所示，你在10级时再额外学习一个自选的神射手戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"神射手表展示了你可用来施放1环及更高环阶{@filter 神射手法术|spells|class=神射手 (DXM)}的法术位数量。施放其中一个法术时，你必须消耗一个该法术环阶或更高环阶的法术位。完成一次长休后，你恢复所有已消耗的法术位。",
+						"举例来说，若你已知1环法术{@spell 油腻术|phb}，且有一个1环和一个2环法术位可用，你可以用其中任意一个法术位来施放它。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"你从神射手法术列表中自选已知四个1环法术和两个2环法术。",
+						"神射手表的\"已知法术\"一栏展示了你何时能再自选学习更多神射手法术。这些法术的环阶都必须是你拥有对应法术位的环阶。例如，当你到达本职业9级时，你可以学习一个新的2环或3环法术。",
+						"此外，每当你在本职业提升等级时，你可以选择一个已知的神射手法术，用神射手法术列表中的另一个法术替换之，新法术同样必须是你拥有对应法术位的环阶。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"智力是你神射手法术的施法属性，因为你的法术源自与武器反复试错的摸索。当法术提及你的施法属性时，使用你的智力。此外，当你设定所施放神射手法术的豁免DC时，使用你的智力调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"type": "entries",
+					"name": "法器",
+					"entries": [
+						"你可以使用{@item 奥术法器|phb}作为你神射手法术的施法法器。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Marksman Archetype Feature",
+			"name": "神射手范型特性",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的神射手范型给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Enchanted Projectiles",
+			"name": "附魔投射物",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 7,
+			"entries": [
+				"在7级时，你开始弥合寻常武器与新获魔法之间的鸿沟。你使用咒射或召唤武器特性进行的任何攻击，在克服对非魔法攻击和伤害的抗性与免疫时，视为魔法攻击。"
+			]
+		},
+		{
+			"ENG_name": "Magical Techniques",
+			"name": "魔法技艺",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 7,
+			"entries": [
+				"从7级开始，你发现了与魔法互动的全新方式，得以学习一些运用魔法的新技艺。",
+				"当你选择技艺时，你还可以选用以下额外的选项：",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "拨挡魔法|DXMarksman"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "力场法术|DXMarksman"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "偏移魔法|DXMarksman"
+				}
+			]
+		},
+		{
+			"ENG_name": "Techniques",
+			"name": "技艺",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 7,
+			"entries": [
+				"在7级时，你再习得一项技艺。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@filter 专长|feats}。"
+			]
+		},
+		{
+			"ENG_name": "Cantrip Versatility",
+			"name": "替换戏法",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 8,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"每当你到达本职业中给予属性值提升特性的等级时，你可以用一个来自{@filter 神射手法术列表|spells|level=0|class=神射手 (DXM)}的其他戏法，替换一个你从本职业动势施法特性习得的戏法。"
+			]
+		},
+		{
+			"ENG_name": "Conjure Weapons",
+			"name": "召唤武器",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 9,
+			"entries": [
+				"在9级时，你的法术研究让你找到了凭空召唤武器的方法。现在你即使空手也能做出投掷武器的动作来进行投掷武器攻击。就在武器将要离手的刹那，一件微光闪烁的半透明武器凭空浮现，仿佛你真的将它掷了出去。",
+				"该武器可以呈现为任何具有投掷属性的简易或军用武器形态。它造成{@dice 1d10}或0点（你选择）钝击、穿刺或挥砍伤害（你选择），并具有灵巧、轻型和投掷（射程30/120）属性。命中目标后，它碎裂为无害的光点并延续动量继续飞行，穿过生物与物件，几秒后才消散。",
+				"你可以将此特性与咒射特性配合使用。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Guidance",
+			"name": "秘法指引",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 9,
+			"entries": [
+				"从9级开始，你的魔法开始改变投掷的轨迹，有时甚至以近乎不可能的方式。你能命中平时几乎无法命中的目标。每当你进行投掷武器攻击时，你无视半身掩护和四分之三掩护。"
+			]
+		},
+		{
+			"ENG_name": "Marksman Archetype Feature",
+			"name": "神射手范型特性",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 10,
+			"entries": [
+				"在10级时，你获得一个由你的神射手范型给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 11,
+			"entries": [
+				"从11级开始，每当你在自己的回合采取{@action 攻击}动作时，你可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Techniques: Echo Sling",
+			"name": "技艺：回响投掷",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 11,
+			"entries": [
+				"在11级时，你能够一次注入更多魔法，因此可以重复法术的效果。你习得以下技艺：",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "回响投掷|DXMarksman"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@filter 专长|feats}。"
+			]
+		},
+		{
+			"ENG_name": "Velocity Downcasting (5th level)",
+			"name": "动势降环施法（5环）",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 13,
+			"entries": [
+				"从13级开始，你发现了一种以更快投掷武器来更高效施放特定法术的方法。你学习一个{@filter 来自神射手法术列表的5环法术|spells|level=5|class=神射手 (DXM)}。该法术对你而言视为神射手法术，但不计入你已知的法术数量。你可以用4环法术位施放该法术。",
+				"此外，选择一个你已知的{@filter 2环或3环神射手法术|spells|level=2;3|class=神射手 (DXM)}，你可以分别用1环或2环法术位施放该法术。",
+				"你只能通过咒射特性以更低环阶施放这些法术。在诸如{@spell 解除魔法}等法术生效判定时，这些法术仍保留其原本环阶。",
+				"在18级时，你再学习一个法术，并能让它与另一个法术以更低环阶施放。你学习一个6环法术，并可以用5环法术位施放它。你还可以选择一个已知的4环或5环法术，分别以3环或4环法术位施放。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Predictions",
+			"name": "秘法预言",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 14,
+			"entries": [
+				"在14级时，你能更充分地信任引导你投掷的魔法，从而命中视野之外的目标。每当一个你能看见的生物进入全身掩护或从你的视野中消失时，你都能知晓其位置，直到它离开你最后所见之处30尺为止。当你以此方式知晓生物位置时，该生物无法受益于掩护。以此方式攻击这类生物时，攻击会沿最短路径直取目标，途中不触及任何障碍。不过，若有障碍物（例如一扇门）完全挡住通路，你便无法以这种方式指定该生物为目标。"
+			]
+		},
+		{
+			"ENG_name": "Techniques",
+			"name": "技艺",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 14,
+			"entries": [
+				"在14级时，你再习得一项技艺。"
+			]
+		},
+		{
+			"ENG_name": "Marksman Archetype Feature",
+			"name": "神射手范型特性",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得一个由你的神射手范型给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@filter 专长|feats}。"
+			]
+		},
+		{
+			"ENG_name": "Velocity Downcasting (6th level)",
+			"name": "动势降环施法（6环）",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 18,
+			"entries": [
+				"你学习一个{@filter 来自神射手法术列表的6环法术|spells|level=6|class=神射手 (DXM)}。该法术对你而言视为神射手法术，但不计入你已知的法术数量。你可以用5环法术位施放该法术。",
+				"此外，选择一个你已知的{@filter 4环或5环神射手法术|spells|level=4;5|class=神射手 (DXM)}，你可以分别用4环或5环法术位施放该法术。",
+				"你只能通过咒射特性以更低环阶施放这些法术。在诸如{@spell 解除魔法}等法术生效判定时，这些法术仍保留其原本环阶。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@filter 专长|feats}。"
+			]
+		},
+		{
+			"ENG_name": "Magical Synergy",
+			"name": "魔法协同",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"level": 20,
+			"entries": [
+				"在20级时，你已将武器与魔法完全融为一体，得以将投掷的动量化为法术的威力。你的法术豁免DC获得等同于你敏捷调整值的加值。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Arsonist",
+			"name": "纵火犯",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "纵火犯",
+			"subclassSource": "DXMarksman",
+			"level": 3,
+			"entries": [
+				"正如其名，纵火犯专精于火焰。不过并非每个纵火犯都把火焰用到疯狂的地步\u2014\u2014也许只是火焰恰好是与他们亲和力最强的元素而已。但无论哪种情况，能从与纵火犯的战斗中全身而退，都是大多数人无法通过的考验。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "技艺：威力压倒精准|神射手|DXMarksman|纵火犯|DXMarksman|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "灼烧历练|神射手|DXMarksman|纵火犯|DXMarksman|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Scorched Experiences",
+			"name": "灼烧历练",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "纵火犯",
+			"subclassSource": "DXMarksman",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"常年在火焰中摸爬滚打，让你的身体在错误中吸取教训，天生形成了对火的抵抗力。你获得火焰伤害抗性。"
+			]
+		},
+		{
+			"ENG_name": "Techniques: Power Over Accuracy",
+			"name": "技艺：威力压倒精准",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "纵火犯",
+			"subclassSource": "DXMarksman",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时，你开始专精自己的战斗方式，能够以牺牲精准为代价，用大得多的力量投掷武器。你习得以下技艺：",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "威力压倒精准|DXMarksman"
+				}
+			]
+		},
+		{
+			"ENG_name": "Arsonist's Cookbook",
+			"name": "纵火犯食谱",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "纵火犯",
+			"subclassSource": "DXMarksman",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你在本职业到达表中所示等级时，你将习得额外的法术，见\"纵火犯法术\"表。这些法术对你而言均视为神射手法术，但不计入你已知的神射手法术数量。",
+				{
+					"type": "table",
+					"caption": "纵火犯法术",
+					"colLabels": [
+						"神射手等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"6th",
+							"{@spell 燃烧之手}, {@spell 灼热金属}"
+						],
+						[
+							"9th",
+							"{@spell 火球术}, {@spell 哈达之欲}"
+						],
+						[
+							"13th",
+							"{@spell 元素灾厄|XGE}（仅火焰）、{@spell 火墙术}"
+						],
+						[
+							"17th",
+							"{@spell 焰击术}, {@spell 焚烧术|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Incendiary Magic",
+			"name": "纵火魔法",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "纵火犯",
+			"subclassSource": "DXMarksman",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你对火焰的掌控开始影响你的其他魔法。每当你施放一个造成伤害的法术时，你可以选择将其伤害类型改为火焰。",
+				"此外，若一次攻击原本的伤害类型为火焰，它会烧得更加炽烈：对火焰伤害免疫的生物在你的攻击下改为具有抗性，具有抗性的生物则改为受到正常伤害。在15级时，生物对你的任何攻击都不再具有火焰伤害抗性或免疫。"
+			]
+		},
+		{
+			"ENG_name": "Explosive Shot",
+			"name": "爆炸射击",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "纵火犯",
+			"subclassSource": "DXMarksman",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以有意让自己施放的法术陷入不稳定，从而在命中时引发爆炸。每当你使用咒射特性进行投掷武器攻击时，你可以同时选择使该法术不稳定。一旦武器抵达目的地或撞上坚固表面，它就会爆炸。武器5尺范围内的每个生物必须对抗你的法术豁免DC进行一次敏捷豁免。豁免失败的生物受到{@dice 2d6}点火焰伤害，豁免成功则伤害减半。用于此特性的非魔法武器会在爆炸时损毁。",
+				"你可以使用此特性的次数等于你的智力调整值，并在完成一次短休或长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Hellish Inferno",
+			"name": "炼狱火海",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "纵火犯",
+			"subclassSource": "DXMarksman",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你的火焰魔法再无边界，足以吞没途中的一切。每当你施放的法术造成火焰伤害时，你可以多掷一个伤害骰。",
+				"此外，你施放的任何造成火焰伤害的法术，其法术豁免DC获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "战术家",
+			"subclassSource": "DXMarksman",
+			"level": 3,
+			"entries": [
+				"走上战术家之路的神射手，重谋略而轻蛮力。与其冒着生命危险把对手打到屈服，更清晰的道路是让其他生物的力量反噬其身。战场如同一局棋，而你正居高临下地俯瞰整个棋盘。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "技艺：扰乱机动|神射手|DXMarksman|战术家|DXMarksman|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "空间感知|神射手|DXMarksman|战术家|DXMarksman|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Spacial Awareness",
+			"name": "空间感知",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "战术家",
+			"subclassSource": "DXMarksman",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级开始，你对战场的掌控开始显露。附近的敌人不再能阻碍你的攻击，而敌人也会发现你远比想象中难以牵制。处于敌对生物5尺范围内不会使你的投掷攻击检定具有劣势。",
+				"此外，在你的回合，若你处于一个敌人5尺范围内，你可以用你的反应移动10尺。此移动不会引发借机攻击。你可以这样做的次数等于你的敏捷调整值，并在完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Techniques: Disrupt Mobility",
+			"name": "技艺：扰乱机动",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "战术家",
+			"subclassSource": "DXMarksman",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时，你开始专精自己的战斗方式，能够绊倒那些试图在你周遭变换位置的家伙。你习得以下技艺：",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "扰乱机动|DXMarksman"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ricochet",
+			"name": "跳弹",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "战术家",
+			"subclassSource": "DXMarksman",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，弹射般的投掷对你而言如儿戏一般。每回合一次，当你以投掷武器攻击命中一个生物时，你可以让武器从该生物身上弹开并飞向另一个目标。第二个目标必须位于以被命中生物为起点、武器正常射程的范围之内。若新目标是一个生物，它必须对抗你的技艺豁免DC进行一次敏捷豁免，否则被武器命中。",
+				"此攻击可以像咒射特性中所述的多次攻击那样，为一个合适的法术增加目标。",
+				"举例来说，若你在施放{@spell 造成恐惧|XGE}法术的同时用手斧命中一个生物，该生物即为法术的第一个目标。随后你可以让武器弹射到20尺内（手斧正常射程）的另一个生物处，命中时造成正常的武器伤害，并将该生物添为法术的第二个目标。"
+			]
+		},
+		{
+			"ENG_name": "Tactician's Spellbook",
+			"name": "战术家法术书",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "战术家",
+			"subclassSource": "DXMarksman",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你在本职业到达表中所示等级时，你将习得额外的法术，见\"战术家法术\"表。这些法术对你而言均视为神射手法术，但不计入你已知的神射手法术数量。",
+				{
+					"type": "table",
+					"caption": "战术家法术",
+					"colLabels": [
+						"神射手等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"6th",
+							"{@spell 命令术}, {@spell 蛛网术}"
+						],
+						[
+							"9th",
+							"{@spell 加速术}, {@spell 缓慢术}"
+						],
+						[
+							"13th",
+							"{@spell 困惑术}, {@spell 防死结界}"
+						],
+						[
+							"17th",
+							"{@spell 原力法阵}, {@spell 防活物护罩}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Own the Battlefield",
+			"name": "掌控战场",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "战术家",
+			"subclassSource": "DXMarksman",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你能更好地运用那些为将战场塑造成有利于你而设计的法术。每当你施放一个不直接造成伤害、且影响区域为圆形或立方体的法术时，你可以将区域尺寸加倍。当生物进入法术区域或在其中开始其回合时受到伤害的法术（如{@spell 匕首之云}），同样受此特性影响。",
+				"举例来说，{@spell 黑暗术}将影响一个半径30尺的球状区域，而{@spell 蛛网术}将影响一个40尺的立方体区域。"
+			]
+		},
+		{
+			"ENG_name": "Selective Interference",
+			"name": "选择性干扰",
+			"source": "DXMarksman",
+			"className": "神射手",
+			"classSource": "DXMarksman",
+			"subclassShortName": "战术家",
+			"subclassSource": "DXMarksman",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你对战场的掌控强大到足以调整自己的法术，使其不再妨碍盟友。每当你施放一个法术时，你可以指定数量等于你智力调整值的生物（至少1个）。被选中的生物免疫该法术除伤害外的所有效果。",
+				"举例来说，{@spell 土石喷发|XGE}仍会对被选中的生物造成伤害，但对他们而言不会化为困难地形。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Archery",
+			"name": "箭术",
+			"source": "DXMarksman",
+			"featureType": [
+				"FS:M"
+			],
+			"entries": [
+				"你使用远程武器进行攻击检定时具有+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Blunt Throw",
+			"name": "钝击投掷",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"entries": [
+				"当你以投掷武器攻击命中一个生物时，你可以消耗1点技艺点尝试推撞一个大型或更小的生物。此推撞使用你的技艺豁免DC，而非进行力量（运动）检定。",
+				"你也可以改为消耗2点技艺点，尝试推撞一个更大的生物。"
+			]
+		},
+		{
+			"ENG_name": "Calculated Throw",
+			"name": "精算投掷",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"entries": [
+				"当你在自己的回合进行投掷武器攻击时，你可以消耗1点技艺点瞄准更远的目标。你此次攻击的射程加倍。",
+				"即使在同一次攻击中已使用过其他技艺，你仍可以使用精算投掷。"
+			]
+		},
+		{
+			"ENG_name": "Defense",
+			"name": "防御",
+			"source": "DXMarksman",
+			"featureType": [
+				"FS:M"
+			],
+			"entries": [
+				"着装护甲时，你的AC获得 +1加值。"
+			]
+		},
+		{
+			"ENG_name": "Deflect Magic",
+			"name": "拨挡魔法",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Marksman",
+							"name": "神射手",
+							"source": "DXMarksman",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当一个你可见的生物以远程法术攻击命中你60尺范围内的单个生物时，你可以尝试在半途驱散该魔法。作为一个反应，你可以消耗2点技艺点并对该法术进行一次投掷武器攻击。其AC等同于原攻击检定值。命中即代表你成功拨挡了袭来的法术。"
+			]
+		},
+		{
+			"ENG_name": "Deflect Projectile",
+			"name": "拨挡投射物",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"entries": [
+				"当一个你可见的生物以远程武器攻击命中你60尺范围内的一个目标时，你可以尝试拨挡该投射物。作为一个反应，你可以消耗2点技艺点并对该投射物进行一次投掷武器攻击。其AC等同于原攻击检定值。命中即代表你成功拨挡了袭来的攻击。",
+				"作为同一反应的一部分，你可以再消耗2点技艺点，尝试让该投射物转向原目标5尺范围内的另一个生物。该生物必须进行一次敏捷豁免。豁免失败时，该生物被原投射物命中。"
+			]
+		},
+		{
+			"ENG_name": "Disarming Throw",
+			"name": "缴械投掷",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"entries": [
+				"当你以投掷武器攻击命中一个生物时，你可以消耗2点技艺点尝试缴械目标，迫使其掉落一件由你选择的、其持有的物品。目标必须进行一次力量豁免。豁免失败时，它掉落你选择的物件。该物件落其脚边。"
+			]
+		},
+		{
+			"ENG_name": "Disorienting Throw",
+			"name": "迷向投掷",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"entries": [
+				"当你以投掷武器攻击命中一个生物时，你可以消耗2点技艺点尝试迷乱目标的方向感。目标必须进行一次感知豁免。豁免失败时，该生物受困惑术影响，直到其下回合结束。",
+				"豁免成功的目标在接下来的24小时内，对抗此技艺的豁免具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Disrupt Mobility",
+			"name": "扰乱机动",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Marksman",
+							"name": "神射手",
+							"source": "DXMarksman"
+						},
+						"subclass": {
+							"ENG_name": "Tactician",
+							"name": "战术家",
+							"visible": true,
+							"source": "DXMarksman"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当一个你可见的、位于你30尺内的生物在地面移动时，你可以尝试将其绊倒。作为一个反应，你可以消耗2点技艺点，将一件武器掷入该生物前方的地面。该生物必须进行一次敏捷豁免。豁免失败时，该生物倒地，且其速度降低10尺，直到你的下回合结束。豁免成功时，该生物不会倒地，但在闪避障碍物的同时速度仍会降低。",
+				"不会引发借机攻击的生物自动通过此豁免检定。"
+			]
+		},
+		{
+			"ENG_name": "Echo Sling",
+			"name": "回响投掷",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Marksman",
+							"name": "神射手",
+							"source": "DXMarksman",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"在你使用咒射特性施放一个法术后，若你还能进行另一次攻击，你可以消耗3点技艺点再次使用该法术。再次施放的法术必须与第一次相同，但目标不必相同。1环或更高环阶的法术需要消耗第二个法术位。",
+				"若法术需要专注，你仍可以用此技艺施放它两次。但两份法术视为同一份专注。",
+				"你不能同时使用此技艺并为第一份法术增加目标。一旦使用此技艺，便不能再通过额外攻击为第一份法术增添生物。",
+				"每回合你只能使用一次回响投掷技艺。"
+			]
+		},
+		{
+			"ENG_name": "Forceful Spell",
+			"name": "力场法术",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Marksman",
+							"name": "神射手",
+							"source": "DXMarksman",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用咒射特性施放一个造成伤害的法术时，你可以消耗1点技艺点，将该法术的伤害类型改为力场伤害。",
+				"即使在同一次攻击中已使用过其他技艺，你仍可以使用力场法术。"
+			]
+		},
+		{
+			"ENG_name": "Interception",
+			"name": "拦截",
+			"source": "DXMarksman",
+			"featureType": [
+				"FS:M"
+			],
+			"entries": [
+				"当一个你可见的生物以攻击命中你5尺范围内、而非你自己的一个目标时，你可以用你的反应使目标受到的伤害减少{@dice 1d10} + 你的熟练加值（最低为0伤害）。你必须持握一面{@item 盾牌|phb}或一件简易或军用武器才能使用此反应。"
+			]
+		},
+		{
+			"ENG_name": "Offset Magic",
+			"name": "偏移魔法",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Marksman",
+							"name": "神射手",
+							"source": "DXMarksman",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用咒射特性以投掷武器攻击命中一个生物时，你可以让法术从目标处跃出一小段距离。你可以消耗2点技艺点，将法术的目标（或起始点）改为原目标10尺范围内的一个生物（或一处地点）。",
+				"即使在同一次攻击中已使用过其他技艺，你仍可以使用偏移魔法。"
+			]
+		},
+		{
+			"ENG_name": "Power Over Accuracy",
+			"name": "威力压倒精准",
+			"source": "DXMarksman",
+			"featureType": [
+				"TQ:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Marksman",
+							"name": "神射手",
+							"source": "DXMarksman"
+						},
+						"subclass": {
+							"ENG_name": "Arsonist",
+							"name": "纵火犯",
+							"visible": true,
+							"source": "DXMarksman"
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你进行投掷武器攻击时，你可以消耗1点技艺点，使此次攻击的攻击检定承受-3减值。命中时，你的武器造成等同于你熟练加值的额外伤害。在7级时，该额外伤害的伤害类型改为火焰。"
+			]
+		},
+		{
+			"ENG_name": "Thrown Weapon Fighting",
+			"name": "投掷武器战斗",
+			"source": "DXMarksman",
+			"featureType": [
+				"FS:M"
+			],
+			"entries": [
+				"你可以在使用一件带有投掷属性武器进行攻击时，将那件武器作为攻击的一部分而拔出。",
+				"另外，在你以一件投掷武器于远程攻击中命中对手时，你的伤害掷骰+2。"
+			]
+		},
+		{
+			"ENG_name": "Thrown Weapon Techniques",
+			"name": "投掷武器技艺",
+			"source": "DXMarksman",
+			"featureType": [
+				"FS:F",
+				"FS:R"
+			],
+			"entries": [
+				"你从神射手职业1级时可用的技艺中自选学习一项{@filter 技艺|optionalfeatures|feature type=tq:m}。若你使用的技艺需要目标进行豁免检定以抵抗其效果，则豁免DC等于8+你的熟练加值+你的敏捷调整值。",
+				"你获得3点可用于技艺的技艺点（这些点数与你从其他来源获得的技艺点相加）。完成一次长休后，你恢复所有已消耗的技艺点。"
+			]
+		}
+	],
+	"feat": [
+		{
+			"ENG_name": "Spell Slinger Initiate",
+			"name": "咒射学徒",
+			"source": "DXMarksman",
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "施法、契约魔法或动势施法特性",
+						"entrySummary": "施法"
+					}
+				}
+			],
+			"entries": [
+				"你从{@filter 神射手法术列表|spells|class=神射手 (DXM)}中自选学习两个戏法。",
+				"这些法术的施法属性为智力。若某法术同时位于你拥有其施法或契约魔法特性的职业的法术列表上，你可以改为使用那个职业的施法属性。",
+				"此外，你可以如同拥有神射手职业的{@classFeature 咒射|神射手|DXMarksman|5|DXMarksman|}特性一般，施放你已知的任何神射手法术列表中的法术。"
+			]
+		}
+	],
+	"baseitem": [
+		{
+			"ENG_name": "Training Dart",
+			"name": "训练飞镖",
+			"source": "DXMarksman",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 0.25,
+			"value": 2,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"S",
+				"T"
+			],
+			"range": "20/60",
+			"weapon": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"训练飞镖由一块布包裹的兽骨制成。它的尖端贴有一小片带有弱黏性的皮革，可以粘在大多数表面上，也很容易取下。使用几次后，需要洒水润湿黏面以保持其黏性。",
+							"训练飞镖是制造干扰的理想之选，也适合希望在不损伤目标的情况下传递法术的神射手。"
+						]
+					}
+				]
+			}
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Echoing Training Dart",
+			"name": "回响训练飞镖",
+			"source": "DXMarksman",
+			"type": "R",
+			"tier": "主要",
+			"rarity": "varies",
+			"reqAttune": "由施法者",
+			"weight": 0.25,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"S",
+				"T"
+			],
+			"range": "20/60",
+			"bonusWeaponAttack": "多类",
+			"entries": [
+				"回响武器的外表与其寻常的同类一般无二，只是其上某处刻有一枚小小的符文。该武器灌注了神射手法术列表中的一个法术。",
+				"你以此魔法武器进行的攻击检定获得加值，加值如下所示。用它攻击后，武器立即消失，并重新出现在你手中。",
+				"该武器拥有4发充能。持握它时，你可以消耗1发充能进行一次攻击，如同你正在使用神射手职业的咒射特性。你只能施放已灌注在武器中的法术。若你当回合还能进行另一次攻击，你可以再消耗2发充能进行攻击，如同你正在使用神射手职业的回响投掷技艺。以此方式使用技艺无需消耗技艺点。该武器每天黎明时恢复1d4+1发已消耗的充能。",
+				{
+					"type": "table",
+					"caption": "回响武器",
+					"colLabels": [
+						"法术环阶",
+						"稀有度",
+						"加值"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"戏法",
+							"非普通",
+							"\u2014"
+						],
+						[
+							"1环",
+							"非普通",
+							"+1"
+						],
+						[
+							"2环",
+							"珍稀",
+							"+2"
+						],
+						[
+							"3环",
+							"珍稀",
+							"+2"
+						],
+						[
+							"4环",
+							"极珍稀",
+							"+3"
+						],
+						[
+							"5环",
+							"极珍稀",
+							"+3"
+						],
+						[
+							"6环",
+							"传说",
+							"+3"
+						]
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DXMarksman/xngp1Cd.png"
+						}
+					}
+				]
+			}
+		}
+	],
+	"magicvariant": [
+		{
+			"ENG_name": "Echoing Weapon",
+			"name": "回响武器",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"firearm": true,
+				"name": [
+					"战斧",
+					"吹箭筒",
+					"短棒",
+					"双刃弯刀",
+					"链枷",
+					"长柄刀",
+					"巨斧",
+					"巨棒",
+					"巨剑",
+					"长戟",
+					"手弩",
+					"重弩",
+					"钩矛",
+					"骑枪",
+					"轻弩",
+					"轻型连弩",
+					"长弓",
+					"长剑",
+					"硬头锤",
+					"巨锤",
+					"钉头锤",
+					"捕网",
+					"长矛",
+					"长棍",
+					"刺剑",
+					"弯刀",
+					"短弓",
+					"短剑",
+					"镰刀",
+					"投石索",
+					"战镐",
+					"战锤",
+					"鞭子",
+					"训练飞镖"
+				]
+			},
+			"entries": [
+				"回响武器的外表与其寻常的同类一般无二，只是其上某处刻有一枚小小的符文。该武器灌注了神射手法术列表中的一个法术。",
+				"你以此魔法武器进行的攻击与伤害检定获得加值，加值如下所示。用它攻击后，武器立即消失，并重新出现在你手中。",
+				"该武器拥有4发充能。持握它时，你可以消耗1发充能进行一次攻击，如同你正在使用神射手职业的咒射特性。你只能施放已灌注在武器中的法术。若你当回合还能进行另一次攻击，你可以再消耗2发充能进行攻击，如同你正在使用神射手职业的回响投掷技艺。以此方式使用技艺无需消耗技艺点。该武器每天黎明时恢复1d4+1发已消耗的充能。",
+				{
+					"type": "table",
+					"caption": "回响武器",
+					"colLabels": [
+						"法术环阶",
+						"稀有度",
+						"加值"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"戏法",
+							"非普通",
+							"\u2014"
+						],
+						[
+							"1环",
+							"非普通",
+							"+1"
+						],
+						[
+							"2环",
+							"珍稀",
+							"+2"
+						],
+						[
+							"3环",
+							"珍稀",
+							"+2"
+						],
+						[
+							"4环",
+							"极珍稀",
+							"+3"
+						],
+						[
+							"5环",
+							"极珍稀",
+							"+3"
+						],
+						[
+							"6环",
+							"传说",
+							"+3"
+						]
+					]
+				}
+			],
+			"inherits": {
+				"namePrefix": "回响",
+				"source": "DXMarksman",
+				"page": 0,
+				"tier": "主要",
+				"rarity": "unknown (magic)",
+				"reqAttune": "由施法者",
+				"bonusWeapon": "多类",
+				"entries": [
+					"回响武器的外表与其寻常的同类一般无二，只是其上某处刻有一枚小小的符文。该武器灌注了神射手法术列表中的一个法术。",
+					"你以此魔法武器进行的攻击与伤害检定获得加值，加值如下所示。用它攻击后，武器立即消失，并重新出现在你手中。",
+					"该武器拥有4发充能。持握它时，你可以消耗1发充能进行一次攻击，如同你正在使用神射手职业的咒射特性。你只能施放已灌注在武器中的法术。若你当回合还能进行另一次攻击，你可以再消耗2发充能进行攻击，如同你正在使用神射手职业的回响投掷技艺。以此方式使用技艺无需消耗技艺点。该武器每天黎明时恢复1d4+1发已消耗的充能。",
+					{
+						"type": "table",
+						"caption": "回响武器",
+						"colLabels": [
+							"法术环阶",
+							"稀有度",
+							"加值"
+						],
+						"colStyles": [
+							"col-3 text-center",
+							"col-3 text-center",
+							"col-3 text-center"
+						],
+						"rows": [
+							[
+								"戏法",
+								"非普通",
+								"\u2014"
+							],
+							[
+								"1环",
+								"非普通",
+								"+1"
+							],
+							[
+								"2环",
+								"珍稀",
+								"+2"
+							],
+							[
+								"3环",
+								"珍稀",
+								"+2"
+							],
+							[
+								"4环",
+								"极珍稀",
+								"+3"
+							],
+							[
+								"5环",
+								"极珍稀",
+								"+3"
+							],
+							[
+								"6环",
+								"传说",
+								"+3"
+							]
+						]
+					}
+				],
+				"fluff": {
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DXMarksman/xngp1Cd.png"
+							}
+						}
+					]
+				}
+			},
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/DXMarksman/xngp1Cd.png"
+						}
+					}
+				]
+			}
+		}
+	]
+}
