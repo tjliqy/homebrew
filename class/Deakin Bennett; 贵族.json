@@ -1,0 +1,1485 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Noble",
+				"abbreviation": "Noble",
+				"full": "贵族（公主）职业",
+				"url": "https://drive.google.com/file/d/0B_fO9drMhlUealJLdFBXTHp2OG8/view?usp=sharing",
+				"version": "2017.08.17",
+				"authors": [
+					"Deakin Bennett"
+				]
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1546081374,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "f960ecb888"
+	},
+	"class": [
+		{
+			"ENG_name": "Noble",
+			"name": "贵族",
+			"source": "Noble",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"自选的一种简易武器"
+				],
+				"tools": [
+					"自选的两种乐器"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"history",
+								"insight",
+								"intimidation",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"performance",
+								"persuasion",
+								"religion"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）任意简易近战武器，或（b）任意简易远程武器和20发弹药",
+					"（a）一件自选的{@filter 乐器|items|rarity=none|type=乐器}，或（b）一本传说典籍",
+					"（a）一匹{@item 乘用马|PHB}、一副{@item 乘用鞍座|PHB}和一套{@item 辔具|PHB}，或（b）一头{@item 驴|PHB}、一副{@item 驮役鞍座|PHB}和一辆{@item 二轮货车|PHB}，或（c）{@item 獒犬|PHB|一对獒犬}",
+					"（a）一个{@item 外交套组|PHB}，或（b）一个{@item 学者套组|PHB}",
+					"一套{@item 高档服装|PHB}和一枚{@item 玺戒|PHB}。"
+				],
+				"defaultData": [
+					{
+						"a": [],
+						"b": []
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "instrumentMusical"
+							}
+						],
+						"b": []
+					},
+					{
+						"a": [
+							"乘用马|PHB",
+							"乘用鞍座|PHB"
+						],
+						"b": [
+							"驴|PHB",
+							"驮役鞍座|PHB",
+							"二轮货车|PHB"
+						],
+						"c": [
+							"獒犬|PHB"
+						]
+					},
+					{
+						"a": [
+							"外交套组|PHB"
+						],
+						"b": [
+							"学者套组|PHB"
+						]
+					},
+					{
+						"_": [
+							"高档服装|PHB",
+							"玺戒|PHB"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				"随从|贵族|Noble|1",
+				"鼓舞之言|贵族|Noble|1",
+				{
+					"classFeature": "贵族血统|贵族|Noble|1",
+					"gainSubclassFeature": true
+				},
+				"魅力护甲|贵族|Noble|2",
+				"威严值|贵族|Noble|2",
+				{
+					"classFeature": "贵族血统特性|贵族|Noble|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|贵族|Noble|4",
+				{
+					"classFeature": "贵族血统特性|贵族|Noble|5",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|贵族|Noble|6",
+				{
+					"classFeature": "贵族血统特性|贵族|Noble|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|贵族|Noble|8",
+				"崇高威严|贵族|Noble|9",
+				"威严值（最低10）|贵族|Noble|10",
+				{
+					"classFeature": "贵族血统特性|贵族|Noble|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|贵族|Noble|12",
+				"威严值（最低14）|贵族|Noble|13",
+				{
+					"classFeature": "贵族血统特性|贵族|Noble|14",
+					"gainSubclassFeature": true
+				},
+				"魅力值提升|贵族|Noble|15",
+				"属性值提升|贵族|Noble|16",
+				"威严值（最低16）|贵族|Noble|17",
+				{
+					"classFeature": "贵族血统特性|贵族|Noble|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|贵族|Noble|19",
+				"魅力值提升|贵族|Noble|20"
+			],
+			"subclassTitle": "贵族血统",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Noble",
+			"name": "贵族",
+			"source": "Noble",
+			"entries": [
+				{
+					"ENG_name": "Noble",
+					"source": "Noble",
+					"entries": [
+						"王国的王子拔剑而起，守护自己未来的国度免于动荡。历尽沧桑的公主决意踏上冒险之途。国王则穷尽一生磨砺自己作为领袖与贵族的才能。贵族千姿百态，而贵族身份可以不止是一种背景。希望全身心投入自己贵族背景、运用王室血脉与贵族门第之威严的角色，能够成为队伍中真正的领袖与助力。简而言之，贵族将自身角色发挥到极致，并把精力投入于发展自己作为贵族的地位与权势。贵族职业由此诞生。",
+						{
+							"ENG_name": "House of a Noble",
+							"type": "entries",
+							"name": "贵族之家",
+							"entries": [
+								"贵族生来便依附于自身的头衔与贵族血统。正因如此，弄清你所从属的家族至关重要。你们有怎样的传统？你的家族声名如何？与你的DM合作，不仅构建你角色本人的贵族身份，也构建你家族的贵族底蕴。同时想一想：你是家族刻板形象的翻版，还是与家族传统背道而驰。",
+								"弄清你是何地何物之贵族同样重要。一座城堡？一片辽阔领地？国王是谁？女王是谁？由谁治理？你是君主，却因年幼而由摄政者代为执政？不妨构思迫使你离开领地或城堡、投身冒险与权谋的故事线，好让你能在队伍中发挥作用。这个职业或许比其他职业更需要DM多加考量。世界设定必须在某些方面、某些地区重视封建或贵族社会的概念，否则谁又会在意某人自称为贵族呢？"
+							]
+						},
+						{
+							"ENG_name": "Majesty and Magic",
+							"type": "entries",
+							"name": "威严与魔法",
+							"entries": [
+								"威严是贵族的核心力量。它是魅力、影响力、社会权力以及临场威势的总和。威严的许多效果运作如同魔法。贵族可以命令一只生物下跪，而如同魔法强迫一般，只要该生物豁免检定失败，就必须服从命令。然而，迫使生物下跪的并非魔法强迫：而是贵族的威仪与强大魅力的慑人力量。",
+								"可若是一只对人类或精灵的贵族体制与封建社会毫不在意的兽人呢？一般来说，某些将混乱奉为极致的混乱生物，如兽人、地精等，可能并不在意贵族的威严。你的DM可以裁定某些生物对抗任何非魔法效果时具有优势，例如贵族以威严值施展暗示的所有能力。DM应当审慎考量该生物是否信奉混乱理念、其自身文化或族群背景中是否存在任何形式的等级制度，再决定是否给予其对贵族能力的这种抗性。此优势仅适用于直接源自法术的效果。"
+							]
+						}
+					],
+					"name": "贵族",
+					"type": "section"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Lineage of Diplomacy",
+			"name": "交涉血统",
+			"shortName": "交涉",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassFeatures": [
+				"交涉血统|贵族|Noble|交涉|Noble|1",
+				"强令行动|贵族|Noble|交涉|Noble|3",
+				"交涉气度|贵族|Noble|交涉|Noble|5",
+				"守护者额外攻击|贵族|Noble|交涉|Noble|5",
+				"巧设防御|贵族|Noble|交涉|Noble|7",
+				"大师级交涉|贵族|Noble|交涉|Noble|11",
+				"强化守护者|贵族|Noble|交涉|Noble|11",
+				"粉碎气度|贵族|Noble|交涉|Noble|14",
+				"超凡威严|贵族|Noble|交涉|Noble|18"
+			]
+		},
+		{
+			"ENG_name": "Lineage of Myth",
+			"name": "神话血统",
+			"shortName": "神话",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassFeatures": [
+				"神话血统|贵族|Noble|神话|Noble|1",
+				"神话印记（2）|贵族|Noble|神话|Noble|3",
+				"神话印记（3）|贵族|Noble|神话|Noble|5",
+				"神话印记（4）|贵族|Noble|神话|Noble|7",
+				"神话印记（5）|贵族|Noble|神话|Noble|14"
+			]
+		},
+		{
+			"ENG_name": "Lineage of Warfare",
+			"name": "战争血统",
+			"shortName": "战争",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassFeatures": [
+				"战争血统|贵族|Noble|战争|Noble|1",
+				"战争呐喊|贵族|Noble|战争|Noble|3",
+				"额外攻击|贵族|Noble|战争|Noble|5",
+				"神妙优雅|贵族|Noble|战争|Noble|7",
+				"威严打击|贵族|Noble|战争|Noble|11",
+				"传奇特技|贵族|Noble|战争|Noble|14",
+				"不屈不挠|贵族|Noble|战争|Noble|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Attendant",
+			"name": "随从",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 1,
+			"entries": [
+				"在1级时，总有一名随从陪伴在你身边，照料你希望其处理的一切事务。随从在你生活中的角色因人而异。依据你所选择的贵族血统，你的随从可能改变或执行某些特定行动。你的随从始终伴随你左右，尽其所能服从你的命令，但只有在与你的安危直接相关时才会让自己涉险。一旦你的随从死亡，只要你通过正当途径去请求、招募或强令，你的贵族家族或其他来源会在一个月内为你补上一名新随从。",
+				"你的随从与你同种族，性别由你选择，但不具备任何与其种族特性相称的出众特质。他们熟练轻甲和匕首。随从在你的先攻轮到其回合，但除非你下令，否则他们不会采取动作。在你的回合，你可以口头命令其移动（不需要你消耗动作）。你可以用一个动作口头命令其采取{@action 攻击}、{@action 疾走}、{@action 撤离}、{@action 回避}或{@action 协助}动作。",
+				{
+					"type": "statblockInline",
+					"dataType": "monster",
+					"data": {
+						"ENG_name": "Attendant",
+						"name": "随从",
+						"source": "Noble",
+						"size": [
+							"M"
+						],
+						"type": {
+							"type": "humanoid",
+							"tags": [
+								"任意种族"
+							]
+						},
+						"alignment": [
+							"A"
+						],
+						"ac": [
+							{
+								"ac": 14,
+								"from": [
+									"{@item 镶钉皮甲|PHB|皮革}"
+								]
+							}
+						],
+						"hp": {
+							"average": 12,
+							"formula": "2d8 + 2"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"cr": "0",
+						"str": 10,
+						"dex": 15,
+						"con": 12,
+						"int": 12,
+						"wis": 13,
+						"cha": 14,
+						"skill": {
+							"perception": "+2"
+						},
+						"passive": 13,
+						"languages": [
+							"通用语",
+							"一种你能说的语言"
+						],
+						"action": [
+							{
+								"ENG_name": "Dagger",
+								"name": "匕首",
+								"entries": [
+									"{@atk mw} {@hit 4}命中，触及5尺，单一目标。命中：5（{@damage 1d4 + 2}）点穿刺伤害。"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Encouraging Words",
+			"name": "鼓舞之言",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 1,
+			"entries": [
+				"同样在1级时，你可以用言语提振盟友的士气。你获得一个生命值池，可用于赋予盟友临时生命值，其数值等于你的贵族等级×5。你用一个动作鼓舞{@homebrew 10|5}尺内的一名盟友，并依你的选择灌输其中一部分或全部临时生命值。由于这些鼓舞之言需要亲近传递，你必须身处盟友10尺以内。若盟友当前生命值不足1点，你便无法以这种方式给予其临时生命值。你不能对自身使用鼓舞之言。鼓舞之言的生命值池会在长休后完全补充。"
+			]
+		},
+		{
+			"ENG_name": "Noble Lineage",
+			"name": "贵族血统",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 1,
+			"entries": [
+				"最后，在1级时，选择一个贵族血统，它决定你的贵族教养领域、专精方向或传承于你的传统。你的贵族血统，本质上就是使你成为独特一类贵族的东西。例如，战争血统专注于战斗、武器与战争中的领导。你可以从以下血统中选择：交涉血统、神话血统或战争血统。你在1级、3级、5级、7级、{@homebrew 11级、}14级和{@homebrew 18级|17级}时基于你的贵族血统获得职业特性。"
+			]
+		},
+		{
+			"ENG_name": "Charismatic Armor",
+			"name": "魅力护甲",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 2,
+			"entries": [
+				"在2级时，你纯粹的存在便散发出魅力的光环，令大多数生物难以击中你。你的护甲等级永远至少等于10 + 你的敏捷调整值 + 你的魅力调整值，即使你当前已通过其他途径拥有其他护甲等级也是如此。你的魅力护甲不会因佩戴盾牌或护甲而提升数值，但可以因佩戴魔法物品而提升。对魅惑状态免疫或对抗魅惑状态具有优势的生物，在你使用此护甲等级时对你的攻击检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Majesty Score",
+			"name": "威严值",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 2,
+			"entries": [
+				"在2级时，你获得一个威严值，用以表达你对他人的影响力。当你完成一次短休或长休时，根据你的魅力调整值掷1d4。将此结果结合下述威严值表的加值或减值，来构成你的威严值。在特定等级（见贵族职业表），无论你的威严值掷出多少，都不能低于某个数值。任何抵抗使用你威严值的职业特性的豁免检定{@homebrew 使用|等同于 8 + 你的熟练加值 +}你的魅力调整值。",
+				{
+					"ENG_name": "Majesty",
+					"type": "abilityDc",
+					"name": "威严",
+					"attributes": [
+						"cha"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "威严值表",
+					"colLabels": [
+						"加值/减值",
+						"情况"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"+4",
+							"你身处你的贵族家族或头衔具有影响力的地区。"
+						],
+						[
+							"+2",
+							"你身处贵族家族或贵族头衔普遍受到重视的地区。"
+						],
+						[
+							"+1",
+							"与你同行者（你的随从除外）将你的头衔或贵族身份视为具有影响力或值得敬重。"
+						],
+						[
+							"-3",
+							"你身处贵族家族或头衔不受尊重、不被重视或不获尊荣的地区。"
+						],
+						[
+							"-2",
+							"与你同行者（你的随从除外）认为你的头衔或贵族身份无甚影响力、不值得敬重。"
+						],
+						[
+							"+/-",
+							"DM可以依其认为必要的各种情况（类似上述情形）调整加值或减值。"
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"你可以用你的威严值做到以下几点：",
+						{
+							"type": "options",
+							"entries": [
+								{
+									"ENG_name": "Affecting Persona",
+									"type": "entries",
+									"name": "气度感化",
+									"entries": [
+										"你可以降低你的威严值，以类似以下任一法术的方式影响他人，但此效果并非魔法：{@spell 安定心神|PHB}（1点）、{@spell 命令术}（1点）和{@spell 暗示术}（2点）。因此，若你的威严值为12并使用了安定心神，则在你能重掷威严值之前，你的威严值为10。所需的唯一法术成分是言语成分。除此之外，将该法术照常处理，只是它是非魔法效果且无需专注。"
+									]
+								},
+								{
+									"ENG_name": "Bolstered Spirits",
+									"type": "entries",
+									"name": "振奋精神",
+									"entries": [
+										"你可以用你的鼓舞之言职业特性来治疗盟友，而非灌输临时生命值。只有当你的威严值等于或高于14时才能如此做。除非生物当前生命值至少为1点，否则你无法以这种方式治疗它。"
+									]
+								},
+								{
+									"ENG_name": "Persuasive Aristocrat",
+									"type": "entries",
+									"name": "雄辩贵族",
+									"entries": [
+										"每当你进行{@skill 游说}或{@skill 欺瞒}检定时，只要你的威严值等于或高于6，你的检定结果就永远不会低于你的威严值。"
+									]
+								},
+								{
+									"ENG_name": "Uncanny Presence",
+									"type": "entries",
+									"name": "神妙威仪",
+									"entries": [
+										"作为一个附赠动作，或作为对被攻击指定为目标时的反应，你可以将你的威严值降低4，使你的护甲等级等于你的魅力值 + 1d4。此护甲等级持续到你下一回合结束。对魅惑状态免疫或抵抗魅惑状态具有优势的生物，攻击此护甲等级时具有优势。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Noble Lineage Feature",
+			"name": "贵族血统特性",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 3,
+			"entries": [
+				"在3级时，你从你的贵族血统获得另一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 4,
+			"entries": [
+				"在4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Noble Lineage Feature",
+			"name": "贵族血统特性",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 5,
+			"entries": [
+				"在5级时，你从你的贵族血统获得另一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 6,
+			"entries": [
+				"在6级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Noble Lineage Feature",
+			"name": "贵族血统特性",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 7,
+			"entries": [
+				"在7级时，你从你的贵族血统获得另一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 8,
+			"entries": [
+				"在8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Sublime Majesty",
+			"name": "崇高威严",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 9,
+			"entries": [
+				"在9级时，若你感到自己的影响力动摇，可以重申你的贵族本色。若你的威严值低于你的魅力值，你可以用一个附赠动作掷1d4并加到你的威严值上。在你必须进行一次短休或长休才能再次如此做之前，你只能这样做一次。"
+			]
+		},
+		{
+			"ENG_name": "Majesty Score (minimum 10)",
+			"name": "威严值（最低10）",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 10,
+			"entries": [
+				"在10级时，当你掷威严值时，其最低为10。"
+			]
+		},
+		{
+			"ENG_name": "Noble Lineage Feature",
+			"name": "贵族血统特性",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 11,
+			"entries": [
+				"在11级时，你从你的贵族血统获得另一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 12,
+			"entries": [
+				"在12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Majesty Score (minimum 14)",
+			"name": "威严值（最低14）",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 13,
+			"entries": [
+				"在13级时，当你掷威严值时，其最低为14。"
+			]
+		},
+		{
+			"ENG_name": "Noble Lineage Feature",
+			"name": "贵族血统特性",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 14,
+			"entries": [
+				"在14级时，你从你的贵族血统获得另一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Charisma Score Increase",
+			"name": "魅力值提升",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 15,
+			"entries": [
+				"在15级时，你对魅力的运用已炉火纯青，能将其发挥到超越寻常生物的地步。你的魅力值提升2点，上限为22。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 16,
+			"entries": [
+				"在16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Majesty Score (minimum 16)",
+			"name": "威严值（最低16）",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 17,
+			"entries": [
+				"在17级时，当你掷威严值时，其最低为16。"
+			]
+		},
+		{
+			"ENG_name": "Noble Lineage Feature",
+			"name": "贵族血统特性",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 18,
+			"entries": [
+				"在18级时，你从你的贵族血统获得另一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 19,
+			"entries": [
+				"在19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Charisma Score Increase",
+			"name": "魅力值提升",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"level": 20,
+			"entries": [
+				"在20级时，你的魅力值再次提升2点，上限为24。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Lineage of Diplomacy",
+			"name": "交涉血统",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 1,
+			"entries": [
+				"在外交世家中，贵族自幼便受教于如何运用威严的仪态成为领袖、缔结羁绊，并驱使他人为己效力。他们以能言善辩与强大的说服天赋而闻名。此外，以外交之术著称的贵族还擅长以含蓄委婉的方式从他人那里探得洞见与真相。他们身边几乎总有守护者随行，以供武力保护。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "贵族守护者|贵族|Noble|交涉|Noble|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Noble Guardian",
+			"name": "贵族守护者",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在1级时，你额外获得一名随从，充当你的守护者。其可能是被指派来保护你的人，也可能是你或你的家族雇来的人。无论如何，他们对你忠心耿耿，竭尽所能地帮助你，甚至甘愿舍命保护你的安危。将你的守护者视同普通随从对待，不同之处在于他们熟练轻甲、中甲以及简易武器和军用武器。只要你身处守护者120尺内且其知晓你的存在，你便可以将你的熟练加值加到守护者的攻击、伤害掷骰和豁免检定上。",
+				"在{@homebrew 5级|6级}时，你的守护者获得额外攻击。",
+				"在11级时，你现在命令守护者执行动作时用附赠动作而非动作。",
+				{
+					"type": "statblockInline",
+					"dataType": "monster",
+					"data": {
+						"ENG_name": "Guardian",
+						"name": "守护者",
+						"source": "Noble",
+						"size": [
+							"M"
+						],
+						"type": {
+							"type": "humanoid",
+							"tags": [
+								"任意种族"
+							]
+						},
+						"alignment": [
+							"A"
+						],
+						"ac": [
+							{
+								"ac": 16,
+								"from": [
+									"{@item 胸甲|PHB}"
+								]
+							}
+						],
+						"hp": {
+							"average": 31,
+							"formula": "4d10 + 7"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"cr": "0",
+						"str": 15,
+						"dex": 14,
+						"con": 16,
+						"int": 10,
+						"wis": 10,
+						"cha": 10,
+						"passive": 10,
+						"languages": [
+							"通用语"
+						],
+						"trait": [
+							{
+								"ENG_name": "Noble Synergy",
+								"name": "贵族协同",
+								"entries": [
+									"每当守护者在其所侍奉贵族的身边完成一次长休，其获得等于该贵族的魅力调整值×该贵族的贵族等级的临时生命值。"
+								]
+							}
+						],
+						"action": [
+							{
+								"ENG_name": "Longsword",
+								"name": "长剑",
+								"entries": [
+									"{@atk mw} {@hit 4}命中，触及5尺，单一目标。命中：5（{@damage 1d10 + 2}）点挥砍伤害。"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Demand Action",
+			"name": "强令行动",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你能在情境中施展你的存在感，迫使盟友行动。你用一个动作，可以强迫一名盟友使用其反应来采取一个动作。使用此能力会使你的威严值降低1。"
+			]
+		},
+		{
+			"ENG_name": "Diplomatic Persona",
+			"name": "交涉气度",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"在5级时，你获得以下与你的威严值配合使用的能力：",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Destroy Morale",
+							"type": "entries",
+							"name": "摧毁士气",
+							"entries": [
+								"你借敌人落败之机宣告你与盟友的胜利，摧毁敌方的士气，以此扭转战局。作为对盟友击败一只敌对生物时的反应，并将你的威严值降低4点，你与该被击败生物周围30尺内、视该被击败生物为盟友的其他所有敌对生物必须进行一次感知豁免，失败则失去其当前生命值的一半（向下取整）。对魅惑状态具有优势的生物进行此豁免时具有优势。对魅惑免疫的生物不受此效果影响。你也可以改为指定你或该被击败生物30尺内、属于该被击败生物盟友的一只生物，其必须进行一次感知豁免，失败则承受相同效果。若你只为此能力指定一只生物，则你的威严值降低2。"
+							]
+						},
+						{
+							"ENG_name": "Assess Persona",
+							"type": "entries",
+							"name": "评估气度",
+							"entries": [
+								"稍加端详对手，你便能发现其弱点，日后再伺机加以利用。你用一个附赠动作以某种方式与其互动，以窥探其弱点。进行一次游说（魅力）或欺瞒（魅力）检定，对抗其洞悉（感知）掷骰。若你的结果等于或高于其检定，你获得以下信息：其豁免加值、所有基于魅力的技能熟练项、其对你的态度是友善、中立还是敌对，以及该生物当前的整体情绪状态。你必须拥有至少8的威严值才能使用此特性。"
+							]
+						},
+						{
+							"ENG_name": "Worthy to Save",
+							"type": "entries",
+							"name": "舍身护主",
+							"entries": [
+								"你的守护者甘愿舍命救你，而且时常用行动证明这一点。作为对被攻击指定为目标时的反应，且你的守护者身处你5尺内，你可以牺牲其在你下一回合移动和采取动作的能力，以获得+2护甲等级的盾牌加值。若你持有此加值时被一次命中掷骰在你护甲等级2点范围内的攻击命中，你的守护者将替你承受该伤害。例如，若你连同此加值的护甲等级为18，而掷出18或19的攻击命中了你，该攻击将改为命中你的守护者。使用此能力会使你的威严值降低2点。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Guardian Extra Attack",
+			"name": "守护者额外攻击",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"同样在5级时，每当你的守护者采取{@action 攻击}动作时，它可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Contrive Defense",
+			"name": "巧设防御",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你能让盟友或敌人做出有利于他们、或暴露其弱点的反应。作为对一只生物进行豁免检定时的反应，或作为你回合内的一个附赠动作，你可以让其用一种身体豁免换取另一种身体豁免，用一种精神豁免换取另一种精神豁免。",
+				"在本特性中，身体豁免指力量、敏捷和体质豁免，精神豁免指智力、感知和魅力豁免。因此，若一名敌人面对火球术而必须进行敏捷豁免，你可以尝试说服其改用体质豁免，仅凭气势原地不动、硬扛烈焰。",
+				"若生物要抵抗此效果，由目标生物进行一次洞悉（感知）检定，对抗你的游说（魅力）或欺瞒（魅力）检定，由你选择。若你在对抗中获胜，其必须使用由你选定的另一种身体或精神豁免。但你不能将身体豁免替换为精神豁免，反之亦然。一旦使用此特性，在完成一次短休或长休之前你不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Improved Guardian",
+			"name": "强化守护者",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你现在命令守护者执行动作时用附赠动作而非动作。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Diplomacy",
+			"name": "大师级交涉",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得以下与你的威严值配合使用的能力：",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Berating Words",
+							"type": "entries",
+							"name": "训斥之言",
+							"entries": [
+								"你意识到，你那鼓舞人心的存在感对敌人也能产生相反的效果。将你的威严值降低1，并作为对你或盟友被一名敌人的攻击掷骰指定为目标时的反应（该敌人须在你60尺内、你能看见它，且它能看见并听到你），你可以训斥该敌人，令其攻击落空。直到你的下一回合结束，你的盟友获得对抗该指定目标攻击的+2护甲等级。你还可以每额外降低1点威严值，即为你的或你盟友的护甲等级获得等额加值，护甲等级加值最高为+5，此时你的威严值共降低4。"
+							]
+						},
+						{
+							"ENG_name": "Exert the Self",
+							"type": "entries",
+							"name": "重掌自我",
+							"entries": [
+								"通过提醒自己你是谁，你可以重掌对自身的控制。你用一个动作并将威严值降低2，可以结束使你{@condition 魅惑}或{@condition 恐慌}的效果。即使这些效果通常不允许你使用动作，你仍能使用此能力将其克服。"
+							]
+						},
+						{
+							"ENG_name": "You Know Me",
+							"type": "entries",
+							"name": "你懂我",
+							"entries": [
+								"你可以与一定数量的生物建立羁绊，其表现为你几乎能以心灵感应般的方式，仅凭肢体语言便告诉他们该做什么。选择数量等于你的魅力调整值 + 你的贵族等级一半（向下取整）的生物，且你与其相处过至少一周。每当这些生物能看到你时，仅凭解读你的肢体语言，他们便能理解基本命令和你的无声语言。你可以告诉他们诸如\"不\"、\"是\"、\"那样不好\"、\"我不喜欢那个\"、\"这主意棒极了\"、\"做吧\"之类的事情。你无法以这种方式传达复杂信息。其他生物无法以这种方式解读你的讯息，即使其洞悉（感知）技能检定掷出惊人的结果也不例外。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Shatter Persona",
+			"name": "粉碎气度",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你可以对一只生物发起言语攻势，直至其或许再难复原。你用一个动作训斥60尺内一只能看到并听到你的生物，或以某种方式使其忆起你的威严，该生物必须成功通过一次魅力豁免，否则将承受重创性的后果。豁免失败时，该生物受到{@dice 14d6}点伤害（此伤害无法使其生命值降至1点以下），其生命值上限减半（向下取整），并且在24小时内基于魅力和感知的技能检定具有劣势，同时{@condition 震慑}直到其下一回合结束。",
+				"对魅惑状态具有优势的生物进行此豁免时具有优势。对魅惑免疫的生物不受此效果影响。",
+				"一旦使用此特性，在完成一次长休之前你不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Supernal Majesty",
+			"name": "超凡威严",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "交涉",
+			"subclassSource": "Noble",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你以威严左右他人的能力已近乎超自然。生物再不能因对魅惑状态或效果具有抗性或免疫而无视你的能力或对其占据优势，除非其能压过你的凛然威仪。当一只生物将要无视你的能力，或要对你的护甲等级或某项能力取得优势时，其必须进行一次感知豁免；若其成功，其免疫或抗性继续有效。若其失败，其便如常受你能力影响，视同其没有对魅惑效果或状态的免疫或抗性。一旦生物此豁免失败，在24小时过去之前其不能再进行一次。24小时后，其可以再次尝试压过你的威仪，重获其免疫或抗性的裨益。"
+			]
+		},
+		{
+			"ENG_name": "Lineage of Myth",
+			"name": "神话血统",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "神话",
+			"subclassSource": "Noble",
+			"level": 1,
+			"entries": [
+				"身负神秘力量的邪恶王后。让动物环绕身旁、毫不费力便与野生小兽结为友伴的童话公主。英勇护卫弱者、立志拯救落难少女的白马王子。这些原型无一不契合神话领域的贵族。他们是传说与童话中的贵族；他们是奇谈中的、魔法一般的存在。当一个人的贵族身份源自神话血统时，其身后往往伴随着一段铭刻过去的悲恸往事，或一场无可逃遁的宿命......又或两者兼有。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神话之殇|贵族|Noble|神话|Noble|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "威严之躯|贵族|Noble|神话|Noble|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Body of Majesty",
+			"name": "威严之躯",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "神话",
+			"subclassSource": "Noble",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"同样在1级时，你天生便在自身种族与性别中拥有超凡的吸引力。你常在人群中脱颖而出，连其他种族的成员也觉得你赏心悦目。你保持健美体态毫不费力，除非有意为之，否则很少显得肮脏或狼狈。你的五官还生得完美对称。当你掷威严值时，将你的魅力调整值加到结果上。此外，你获得{@skill 欺瞒}、{@skill 威吓}或{@skill 游说}其中一项的熟练项。",
+				"在2级时，你获得上述你已熟练的三项技能之一的专精。"
+			]
+		},
+		{
+			"ENG_name": "Mythic Woe",
+			"name": "神话之殇",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "神话",
+			"subclassSource": "Noble",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在1级时，神话之殇是定义你魔法或神话背景的某段往事。或许你曾被女巫诅咒，或许只是一桩怪异的灾殃无端降临而你对其缘由一无所知。无论如何，你可以与定义你的灾殃抗争、奋力克服它，或者坦然接受它。从下方选择至少一个神话之殇。",
+				{
+					"ENG_name": "Cursed",
+					"type": "entries",
+					"name": "受诅",
+					"entries": [
+						"你处于{@spell 降咒}法术的一项效果影响之下，不同之处在于其效果永久持续，只有祈愿术或诅咒你的生物死亡才能将其移除。"
+					]
+				},
+				{
+					"ENG_name": "Exiled",
+					"type": "entries",
+					"name": "流放",
+					"entries": [
+						"你甚至不知道自己的贵族身份。出于某种缘由，你被逐出了本应属于你的土地。尽管你可能魅力超凡、个性强大，你却不知这份力量从何而来。你的威严源自一种与生俱来的天命感\u2014\u2014它告诉你，你生来注定成就大事，哪怕你并不知那是何事。",
+						"流放的贵族始终处于至少一只生物的注视之下，贵族本人未必知晓其存在。从此列表中选择一只在你流放期间正在或曾经照看你的生物：{@creature 天神使徒|MM}、{@creature 坎比翁}、{@creature 人马|MM}、{@creature 树精|MM}、{@creature 妖精龙(绿)|MM|妖精龙}、{@creature 夜鬼婆|MM}、{@creature 皮克精|MM}、{@creature 半羊人|MM}或{@creature 小仙灵|MM}。",
+						"该生物或许在远处守望你，或许伪装身份将你当作亲眷抚养，或以其他方式留意着你。由于你的魅力，你的随从实际上是你的朋友或忠实的伙伴，而非仅仅出于权威敬重你的随从。此外，在你以某种方式知晓自己的贵族身份之前，掷威严值时你无法获得威严值表上的+4情况加值。"
+					]
+				},
+				{
+					"ENG_name": "Forever Sleepy",
+					"type": "entries",
+					"name": "永远嗜睡",
+					"entries": [
+						"你会受睡眠法术和效果影响，即使你拥有来自其他特性或能力的免疫也不例外。每当你成为睡眠法术的目标时，将你视为只具有你当前生命值一半的生命值。",
+						"此外，选择一只生物。该生物是你的真命之人或拯救者。每当你受魔法睡眠影响时，你将永久沉睡，在你的真命之人或拯救者亲吻你的前额或双唇之前无法醒来。若你的真命之人或拯救者死亡，下一个亲吻你前额或双唇的生物将把你唤醒。",
+						"一旦你曾永久处于睡眠法术或效果的影响之下，在你被唤醒后便不会再以永久方式如此。不过如上所述，你仍然容易受这些效果影响。"
+					]
+				},
+				{
+					"ENG_name": "Feyline",
+					"type": "entries",
+					"name": "精类血脉",
+					"entries": [
+						"在某个久远的时刻，你的先祖为你的血脉掺入了精类之血，而这正是你威严的源泉。精类生物会怀着好奇打量你，天生便能察觉你体内的精类血脉，或在你的身旁感到一种初萌的亲切感。这或许意味着你是注定的精类贵族，或属于某个精类宫廷或王国。"
+					]
+				},
+				{
+					"ENG_name": "Honesty",
+					"type": "entries",
+					"name": "诚实",
+					"entries": [
+						"当你被提问时，你会在魔法驱使下永远说真话。此真话相对于你自己对真相与现实的理解而定，但你无法蓄意撒谎或不诚。"
+					]
+				},
+				{
+					"ENG_name": "Midnight Form",
+					"type": "entries",
+					"name": "午夜形态",
+					"entries": [
+						"黄昏降临时，只要你身处能看见夜空之处1英里范围内，你就会变身为以下生物之一{@homebrew |（出自《怪物图鉴》，见相应页码）}：与你同性别的{@creature 兽人|MM}{@homebrew |（第246页）}、{@creature 青蛙|MM}{@homebrew |（第322页）}，或{@creature 隼|MM|天鹅}{@homebrew |（数据同隼，第330页）}。",
+						"你失去所有职业特性和能力，仅依所选形态的数据行动。黎明到来时，你变回正常形态，且无论你是否休息过，你都视同完成了一次长休。",
+						"此灾殃依附于某种因素、信条、教义或诅咒，且通常带有诗意色彩。与你的DM讨论你是否有朝一日能破除诅咒，或你必须遵行何种教义以避免午夜形态\u2014\u2014若你希望如此的话。",
+						"你也可以选择不同的生物{@homebrew 挑战等级1/2或更低者|须出自《怪物图鉴》，但所选生物的数据强度不应超过兽人（第246页）}。",
+						"若你在午夜形态中死亡，你会变回正常形态。"
+					]
+				},
+				{
+					"ENG_name": "Prince/Princess Charming",
+					"type": "entries",
+					"name": "白马王子/公主",
+					"entries": [
+						"你是王国的王子或公主，命中注定独自继承王国、肩负君主的重担。你天性善良，是一位只认同正义、真理、诚实与仁善的纯粹贵族。你多半是守序善良，也可能是中立善良，但不会是混乱善良或任何其他非善良阵营。然而，这一切特质与特权皆有代价。每当你做出背叛之举、违背自己的良知或道德准则、置无辜者于险境，或DM认定有违正义、真理、诚实、仁爱与善行的其他行为时，你便在善良之代价上累积一点，它压在你的良心上，影响你的状态。所有代价点数累加计算：若你持有4点代价点数，即表示你先后累积了1、2、3、4点代价。长休一次或做出一次重大的善举后，你失去1点代价点数。在失去1点后的24小时内，你不能再失去超过2点。若你没有代价点数，只要你知晓你的家族与王国的存在，便可每月以某种方式向他们求助一次。",
+						{
+							"type": "table",
+							"caption": "善良之代价",
+							"colLabels": [
+								"代价点数",
+								"代价"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									1,
+									"你意识到自己做错了事，并等待某种形式的惩罚。只要你在长休后仍持有至少1点代价点数，你的第一次豁免检定便具有劣势。"
+								],
+								[
+									2,
+									"更多恶行的重压沉在你心头。你拒绝进食、赴宴、寻欢，拒绝享受世间的种种乐事。"
+								],
+								[
+									3,
+									"此时，你认定自己罪孽深重、理应重罚。你持有至少3点代价点数的每一天，你的所作所为都会传回你家族耳中，你的声名因此受损。掷威严值后，你的威严值降低1。"
+								],
+								[
+									4,
+									"你的行径引来了宗教或贵族人士的注意，他们想要介入他们眼中的\"你的恩典之堕\"。"
+								],
+								[
+									5,
+									"你的行径引来了邪恶的宗教、贵族与魔法生物的注意，他们想利用你的处境。你的阵营有偏离善良之虞，你还可能被诱入某种交易\u2014\u2014以某物换取来自强大生物的财富、知识和/或力量。"
+								]
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Unique",
+					"type": "entries",
+					"name": "独特",
+					"entries": [
+						"不妨自创一段独有的神话，以定义你身为神话贵族的身份。它即便有机械效果也应当极少，主要用以积累背景传说。可参考既有的关于贵族、王子、国王与王后的童话与民间传说。你自撰的任何神话之殇都应经你的DM认可。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mythic Mark (2)",
+			"name": "神话印记（2）",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "神话",
+			"subclassSource": "Noble",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你开始定义属于你自己的神话。选择以下能力中的两项。在5级、7级和14级时，你可以再从此列表中选择一项。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Allure",
+							"name": "摄人魅力",
+							"type": "optfeature",
+							"entries": [
+								"你是耀眼夺目之人的极致典范。你可以用你的动作展露自身或做出某种戏剧性的举动\u2014\u2014如歌唱、演奏乐器或其他形式的自我展示\u2014\u2014来攫取所有目光。30尺内能看到你的{@dice 3d6}只由你选择的生物必须进行一次感知豁免，否则将{@condition 魅惑}于你直到你的下一回合开始。其受魅惑期间会心神大乱：对它们的攻击具有优势，而它们对他人的攻击具有劣势。你必须拥有至少6的威严值才能使用此特性，且每次使用会使你的威严值降低2。"
+							]
+						},
+						{
+							"ENG_name": "Animal Companion",
+							"name": "动物伙伴",
+							"type": "optfeature",
+							"entries": [
+								"你获得一只动物伙伴（或一群动物），你视其为挚友与忠实盟友。选择一只体型不大于大型、挑战等级1或更低的野兽。将你的熟练加值加到该野兽的护甲等级、攻击检定和伤害掷骰上，也加到其熟练的任何豁免和技能上。其生命值上限等于其常规上限或你的贵族等级×4，取较高者。",
+								"该野兽会尽力服从你的命令。它在你的先攻轮到其回合，但除非你下令，否则它不会采取动作。在你的回合，你可以口头命令其移动（不需要你消耗动作）。你可以用你的动作口头命令其采取{@action 攻击}、{@action 疾走}、{@action 撤离}、{@action 回避}或{@action 协助}动作。将你的威严值降低1，你便可以用附赠动作而非动作来口头命令你的动物伙伴。在11级时，你只需一个附赠动作即可口头命令你的动物伙伴采取攻击、疾走、撤离、回避或协助动作。",
+								"若该野兽死亡，你可以花8小时与另一只对你无敌意的野兽建立羁绊来获得新的伙伴，野兽种类可与之前相同或不同。"
+							]
+						},
+						{
+							"ENG_name": "Cruel Magic",
+							"name": "残酷魔法",
+							"type": "optfeature",
+							"entries": [
+								"你不知这力量从何而来（又或者你知道），但你显现出了某种旨在伤害的魔法之力。也许你想用它伤害他人，也许你用它保护无辜。无论如何，这些魔法之力能让你以神话般的方式从贵族同侪中脱颖而出。你从以下戏法中选择两项，并以魅力作为它们的施法属性：{@spell 酸液飞溅|PHB}、{@spell 颤栗之触|PHB}、{@spell 魔能爆|PHB}、{@spell 火焰箭|PHB}或{@spell 电爪|PHB}。",
+								"当你的威严值至少为10时，你可以通过降低威严值来用一个动作施放特定法术。从以下法术中选择三项，以魅力作为它们的施法属性：{@spell 目盲术/耳聋术}（2点）、{@spell 燃烧之手|PHB}（1点）、{@spell 闪电束|PHB}（3点）、{@spell 致病射线|PHB}（1点）、{@spell 雷鸣波|PHB}（1点）或{@spell 巫术箭}（2点）。你可以每提升一个法术环阶便额外降低1点威严值来升阶这些法术，但你的威严值不能降低10点后仍施放法术。",
+								"残酷魔法施放的法术以其常规环阶起始。例如，若你的威严值为18，且{@i 闪电束}是你的所选法术之一，你可以将威严值降至15，以3环法术施放它；你还可以进一步将威严值降至10，以8环法术施放{@i 闪电束}。",
+								"不过，你能将法术强化到何种环阶存在上限，取决于你的施法等级。将你的贵族职业等级视作一个完整施法职业，并查看你能使用何种环阶的法术位，见{@book 《玩家手册》第165页|PHB|6|Spellcasting|0}。你不能施放环阶高于你施法等级所拥有法术位的法术，也不能将法术升阶至此。因此，即使你在贵族3级时便选择了闪电束，在拥有5个完整施法职业等级之前（即贵族5级，或贵族3级兼诗人2级等），你仍无法施放该法术。"
+							]
+						},
+						{
+							"ENG_name": "Eyes as the Ocean",
+							"name": "海洋之眸",
+							"type": "optfeature",
+							"entries": [
+								"你的双眼是柔和的蓝色，柔得宛如远海起伏的波涛。你用一个动作注视一只生物，眼波流转间，其必须进行一次感知豁免。若豁免失败，其将{@condition 魅惑}于你1分钟，且只要你处于其视线之内，它便不能采取动作或移动。受影响的生物可以在持续时间内其每个回合结束时重掷豁免。",
+								"你必须拥有至少12的威严值才能使用此特性，且每次使用会使你的威严值降低3。"
+							]
+						},
+						{
+							"ENG_name": "Hair of Gold",
+							"name": "黄金长发",
+							"type": "optfeature",
+							"entries": [
+								"你的头发化为闪耀的美丽金色，其间交织着金色的细碎斑点。你的头发生长速度惊人。自选择此特性起，你每周可以剪下一绺头发而不影响其长度，其价值相当于500金币。你的头发还散发许多人渴求的魔法能量。每有一周未剪，你的金发便继续生长出等值的分量，因此四周之后将头发剪至齐肩可值2,000金币。一个月不剪，头发会长到脚边；此后头发仍会继续生长，但价值不会超过2,000金币\u2014\u2014因为那些斑点只是闪耀的颜色，并非真金。",
+								"然而，当头发完整生长满至少一个月后，其效果如同你佩戴着一面你熟练的盾牌。你的护甲等级+2，即使你拥有魅力护甲特性亦然。你附魔头发的传闻可能不胫而走，令盗匪与邪恶魔法生物之类对其垂涎。"
+							]
+						},
+						{
+							"ENG_name": "Lips of Rose Red",
+							"name": "玫瑰红唇",
+							"type": "optfeature",
+							"entries": [
+								"你的双唇始终呈深玫瑰红色，永不褪色晕染。你用一个动作亲吻任意生物，其效果如同你对它施放了{@spell 加速术|PHB}，持续1分钟且无需你专注。你必须拥有至少10的威严值才能使用此特性，且每次使用会使你的威严值降低2。"
+							]
+						},
+						{
+							"ENG_name": "Maidenshield",
+							"name": "少女之盾",
+							"type": "optfeature",
+							"entries": [
+								"无论你是保护无辜少女的人，还是保护自身的少女，你体内纯洁的力量都不容否认。只要你以远离性事、酒精和一般暴饮暴食来保持纯洁，你就保有此特性的裨益。将你自身视作始终处于{@spell 庇护术|PHB}的环绕之下。若你以攻击指定一只生物为目标，或使用一项会影响敌对生物的能力（而非单纯安抚或保护它的能力）而打破此效果，你便不再受{@i 庇护术}法术的保护。",
+								"你可以用一个附赠动作，将此效果赋予30尺内一只你认为纯洁的生物，但你自己失去此效果。只要你身处所选生物30尺内且其保持纯洁，你便可以用附赠动作维持此效果。",
+								"你必须专注1分钟才能为自己重获此能力的效果。若你故意做出被视为不洁的行为\u2014\u2014如性事、饮酒、进食超出基本温饱、或伤害无辜之人\u2014\u2014你必须花一整天祈祷或践行赎罪，才能重获此特性。"
+							]
+						},
+						{
+							"ENG_name": "Valiant Form",
+							"name": "英勇形态",
+							"type": "optfeature",
+							"entries": [
+								"你是战斗中英勇胆气的极致典范。你可以用一个附赠动作开启你的英勇形态。此时，60尺内所有能看到你的盟友都可以用其反应受到鼓舞，并获得等于你的贵族等级×2的临时生命值。此外，你的护甲等级+2（即使你拥有魅力护甲特性亦然），你的武器攻击检定和伤害掷骰获得等于你魅力调整值的加值，同时你选定60尺内的一只生物，与其缔结守护羁绊。",
+								"若你的羁绊生物被魔法或其他攻击指定为目标，你可以用你的反应向该羁绊生物或攻击者移动。在英勇形态期间，只要你生命值至少为1点，你还可以用一个附赠动作消耗鼓舞之言的生命值池来治疗自己。",
+								"你的英勇形态持续1分钟。你必须拥有至少12的威严值才能使用英勇形态。一旦使用后，在完成一次短休或长休之前你不能再次使用。"
+							]
+						},
+						{
+							"ENG_name": "Voice of Wonder",
+							"name": "奇迹之声",
+							"type": "optfeature",
+							"entries": [
+								"你歌唱时，你的歌喉连诸神也会艳羡。每当你使用鼓舞之言特性时，只要你在歌唱，受影响的生物还获得{@dice 1d12}点临时生命值。此特性一旦使用，在完成一次长休之前你不能再次使用。此外，只要你的威严值达到10，你便可以施放一次{@spell 指使术|PHB}，之后必须长休才能再次施放。"
+							]
+						},
+						{
+							"ENG_name": "Woodland Majesty",
+							"name": "林地威严",
+							"type": "optfeature",
+							"entries": [
+								"你获得支配生物与林地野兽的力量。你的力量随等级增长而壮大。若你在较高等级才选择此神话印记，你立即获得此印记此前的一切层面。你获得以下法术：{@spell 化兽为友|PHB}和{@spell 动物交谈|PHB}。只要你的威严值至少为8，你便可以施放这两个法术。以此方式施放的法术完全照其法术描述运作，只是它们并非法术：将其效果视作非魔法。因此，你可以在反魔法场中施展它们。每以此神话印记施放一次任何法术，你的威严值便降低1。",
+								"在5级时，只要你的威严值至少为10，你便可以施放{@spell 咒唤兽群|PHB}。",
+								"在7级时，只要你的威严值至少为14，你便可以施放{@spell 咒唤林地卫士|PHB}。",
+								"在11级时，只要你的威严值至少为16，你便可以施放{@spell 咒唤妖精|PHB}。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mythic Mark (3)",
+			"name": "神话印记（3）",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "神话",
+			"subclassSource": "Noble",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"在5级时，你可以选择第三个神话印记。"
+			]
+		},
+		{
+			"ENG_name": "Mythic Mark (4)",
+			"name": "神话印记（4）",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "神话",
+			"subclassSource": "Noble",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你可以选择第四个神话印记。"
+			]
+		},
+		{
+			"ENG_name": "Mythic Mark (5)",
+			"name": "神话印记（5）",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "神话",
+			"subclassSource": "Noble",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你可以选择第五个神话印记。"
+			]
+		},
+		{
+			"ENG_name": "Lineage of Warfare",
+			"name": "战争血统",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "战争",
+			"subclassSource": "Noble",
+			"level": 1,
+			"entries": [
+				"有些贵族将心力投入战斗与征战。为守护家族抵御外敌而执剑的战士公主。由父亲暗中传授剑术与统兵之道的领主幼子。这两类贵族都是贵族战士的典范\u2014\u2014兼具威严仪态与凌厉战技。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|贵族|Noble|战争|Noble|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "战争",
+			"subclassSource": "Noble",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				{
+					"type": "homebrew",
+					"entries": [
+						"在1级时，你获得附赠熟练。你熟练轻甲和中甲，并自选四件武器（可为简易或军用武器）获得熟练。此外，你还熟练一种{@filter 异种武器|items|type=异种武器}。"
+					],
+					"oldEntries": [
+						"在1级时，你获得附赠熟练。你熟练轻甲和中甲，并自选四件武器（可为简易或军用武器）获得熟练。此外，你还熟练下文招牌武器表中的一件武器，或一件经你DM认可的独特武器。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "War Cry",
+			"name": "战争呐喊",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "战争",
+			"subclassSource": "Noble",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你能以一声战吼释放你的存在感，扭转战局。你可以用一个附赠动作发出招牌战吼。此时，掷一枚{@dice 1d6}。你必须随即在同一回合用你的动作攻击一名敌人，并将骰结果作为你此次攻击的加值。若你的攻击命中，你在1分钟内的攻击检定和伤害掷骰都获得该数值一半（最低为1）的加值。此外，若你的初次攻击命中，60尺内所有能看到你命中对手的盟友，其下一次攻击检定都获得等于该1d6结果的加值，前提是其在等于你贵族等级数的轮数内发动攻击。你只能将此加值给予数量不超过你贵族等级的盟友。",
+				"每次你掷先攻后，只能使用此特性一次。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "战争",
+			"subclassSource": "Noble",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级起，每当你在你的回合采取攻击动作时，你可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Uncanny Grace",
+			"name": "神妙优雅",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "战争",
+			"subclassSource": "Noble",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你学会了在鏖战正酣时运用你的威严仪态。你可以将威严值降低1，以一个附赠动作采取{@action 疾走}、{@action 撤离}或{@action 回避}动作。你必须拥有至少6的威严值才能使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Majestic Strike",
+			"name": "威严打击",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "战争",
+			"subclassSource": "Noble",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你如今能以自己的威严打击激励自身。每当你命中一只目标生物，可以将威严值降低2，对目标造成额外{@dice 2d6}点伤害，伤害类型与你所用武器相同。你还可以进一步将威严值降低2，使额外伤害提高{@dice 1d6}，最高为{@dice 5d6}点额外伤害（此时你的威严值共降低8）。"
+			]
+		},
+		{
+			"ENG_name": "Legendary Acrobatics",
+			"name": "传奇特技",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "战争",
+			"subclassSource": "Noble",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你可以激励自己展现崭新的特技壮举。你用一个附赠动作并将威严值降低4，进入一种战技超凡的状态。你的移动速度提高10尺，现在每当你在你的回合采取{@action 攻击}动作时可以再进行一次额外攻击（总共3次），且你的敏捷豁免和敏捷技能检定具有优势。",
+				"此状态持续1分钟，直到你将其解除。状态结束时，你必须再降低4点威严值（若你能做到），否则获得一级{@condition 力竭}。"
+			]
+		},
+		{
+			"ENG_name": "Unrelenting",
+			"name": "不屈不挠",
+			"source": "Noble",
+			"className": "贵族",
+			"classSource": "Noble",
+			"subclassShortName": "战争",
+			"subclassSource": "Noble",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你的意志与仪态已能强烈自励，令你可承受连番战斗。每当你的生命值高于生命值上限的一半时，你可以用一个附赠动作并将威严值降低1，动用鼓舞之言的治疗池来重振士气并照常治疗自己。"
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Bola",
+			"name": "波拉",
+			"source": "Noble",
+			"type": "M",
+			"rarity": "none",
+			"weight": 0.25,
+			"value": 100,
+			"weaponCategory": "exotic",
+			"property": [
+				"S",
+				"F",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"entries": [
+				"由数枚重球以坚韧绳索相连而成的武器",
+				{
+					"ENG_name": "Special",
+					"type": "entries",
+					"name": "特殊",
+					"entries": [
+						"被波拉命中的大型或更小生物将{@condition 束缚}，直到其脱身为止。无形体的生物不受影响。生物可以用其动作进行一次DC 10的力量检定，成功则解放自身或另一只生物。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Chakram",
+			"name": "飞轮",
+			"source": "Noble",
+			"type": "M",
+			"rarity": "none",
+			"weight": 1,
+			"value": 5000,
+			"weaponCategory": "exotic",
+			"property": [
+				"S",
+				"F",
+				"T"
+			],
+			"range": "15/30",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"entries": [
+				{
+					"ENG_name": "Special",
+					"type": "entries",
+					"name": "特殊",
+					"entries": [
+						"飞轮是一种特殊武器，若掷法得当，可以回到掷出者手中。每当你掷出飞轮时，你可以让武器从一只生物身上弹开，转而攻击该生物10尺内的另一只生物，攻击的生物总数最多等于你的敏捷调整值，但你必须为每只生物分别进行攻击检定。",
+						"攻击结束后，进行一次敏捷能力检定，DC等于10 + 飞轮掷出距离每满10尺 +1 + 飞轮每命中一只生物 +1。你必须命中一只生物，或让飞轮从某个坚硬物体上弹开，它才能回到你手中。若你通过该DC，只要你有空着的手，你可以在你的回合结束后消耗你的反应，在你的回合开始时接住飞轮。若你失败，飞轮将落在掷出点30尺内的随机位置。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"飞轮是源自印度次大陆的投掷武器。它呈环形，外缘开刃，直径约12\u201330厘米。它又名chalikar，意为\"圆环\"，在英文著述中有时被称为\"战环\"（war-quoit）。飞轮主要作为投掷武器使用，但也可用于近身战斗。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Scourge",
+			"name": "刑鞭",
+			"source": "Noble",
+			"type": "M",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"weaponCategory": "exotic",
+			"property": [
+				"F"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"fluff": {
+				"entries": [
+					"刑鞭是一种鞭笞武器，尤指多尾鞭，用于施加严厉的体罚或苦修自笞。通常以皮革制成。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Warfan",
+			"name": "战扇",
+			"source": "Noble",
+			"type": "M",
+			"rarity": "none",
+			"weight": 2,
+			"value": 10000,
+			"weaponCategory": "exotic",
+			"property": [
+				"S",
+				"F"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"entries": [
+				{
+					"ENG_name": "Special",
+					"type": "entries",
+					"name": "特殊",
+					"entries": [
+						"作为一个附赠动作，你可以进行一次对抗的欺瞒（魅力）检定，对抗目标的洞悉（感知）检定。若你获胜，你在一轮内使用战扇进行的下一次攻击具有优势。之后对同一目标再次尝试使用此特殊性质时，目标生物的洞悉检定将具有优势。"
+					]
+				}
+			]
+		}
+	]
+}
