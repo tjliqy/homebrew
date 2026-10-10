@@ -1,0 +1,1392 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Luchador",
+				"abbreviation": "Luch",
+				"full": "蒙面摔角手",
+				"url": "https://www.dandwiki.com/wiki/Luchador_(5e_Class)",
+				"version": "1.0",
+				"authors": [
+					"DanDWiki"
+				],
+				"convertedBy": [
+					"Lxran"
+				],
+				"targetSchema": "1.2"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1629188158,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "0245dd04fd"
+	},
+	"class": [
+		{
+			"ENG_name": "Luchador",
+			"name": "蒙面摔角手",
+			"source": "Luchador",
+			"page": 0,
+			"hd": {
+				"faces": 10,
+				"number": 1
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"tools": [
+					"{@item 皮匠工具|phb}",
+					"{@item 厨师工具|phb}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics"
+							],
+							"count": 1
+						}
+					},
+					{
+						"choose": {
+							"from": [
+								"intimidation",
+								"performance",
+								"persuasion",
+								"religion"
+							],
+							"count": 1
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 皮匠工具|phb} 或 (b) {@item 厨师工具|phb}",
+					"(a) {@item 探索套组|phb} 或 (b) {@item 艺人套组|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"皮匠工具|phb"
+						],
+						"b": [
+							"厨师工具|phb"
+						]
+					},
+					{
+						"a": [
+							"探索套组|phb"
+						],
+						"b": [
+							"艺人套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13
+						},
+						{
+							"dex": 13
+						}
+					],
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"athletics": true
+						}
+					]
+				},
+				"entries": [
+					"若要兼职成为蒙面摔角手，你还需要具备{@feat 擒抱者}专长。"
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"徒手行家",
+						"无甲移动",
+						"终结技骰"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							0,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							0,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							0,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 5
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 5
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 5
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 5
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 12
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 12
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 12
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 12
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 12
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 12
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 12
+									}
+								]
+							}
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"DC 能力|蒙面摔角手|Luchador|1",
+				"徒手行家|蒙面摔角手|Luchador|1",
+				"夸耀防御|蒙面摔角手|Luchador|1",
+				"精通战斗擒抱|蒙面摔角手|Luchador|1",
+				"守护面具|蒙面摔角手|Luchador|1",
+				"终结技|蒙面摔角手|Luchador|2",
+				"灵感摔角手|蒙面摔角手|Luchador|2",
+				{
+					"classFeature": "摔角之道|蒙面摔角手|Luchador|3",
+					"gainSubclassFeature": true
+				},
+				"咆哮挑战|蒙面摔角手|Luchador|3",
+				"属性值提升|蒙面摔角手|Luchador|4",
+				"额外攻击|蒙面摔角手|Luchador|5",
+				"自由移动|蒙面摔角手|Luchador|5",
+				{
+					"classFeature": "摔角之道特性|蒙面摔角手|Luchador|6",
+					"gainSubclassFeature": true
+				},
+				"做戏打击|蒙面摔角手|Luchador|6",
+				"无畏|蒙面摔角手|Luchador|7",
+				"属性值提升|蒙面摔角手|Luchador|8",
+				"蒙面摔角手的羁绊|蒙面摔角手|Luchador|9",
+				"擂台斗士|蒙面摔角手|Luchador|10",
+				"亡者之握（Las Garras de los Muertos）|蒙面摔角手|Luchador|10",
+				{
+					"classFeature": "摔角之道特性|蒙面摔角手|Luchador|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|蒙面摔角手|Luchador|12",
+				"擒抱行家|蒙面摔角手|Luchador|13",
+				"人民冠军|蒙面摔角手|Luchador|15",
+				"属性值提升|蒙面摔角手|Luchador|16",
+				{
+					"classFeature": "摔角之道特性|蒙面摔角手|Luchador|17",
+					"gainSubclassFeature": true
+				},
+				"终极终结技|蒙面摔角手|Luchador|18",
+				"属性值提升|蒙面摔角手|Luchador|19",
+				"摔角之神（Dios de Lucha）|蒙面摔角手|Luchador|20"
+			],
+			"subclassTitle": "摔角之道",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Luchador",
+			"name": "蒙面摔角手",
+			"source": "Luchador",
+			"entries": [
+				{
+					"ENG_name": "Luchador",
+					"type": "section",
+					"name": "蒙面摔角手",
+					"page": 0,
+					"source": "Luchador",
+					"entries": [
+						"荣誉、家族、传统。这便是蒙面摔角手之道。对他们而言，世界不过是另一座宣告凯旋的擂台。从仅仅现身便能唤起一片欢腾与信心的正义英雄，到不择手段也要证明自己最强的摔角界邪路反派，无论选择哪条道路，对蒙面摔角手而言有一件事至高无上：一场痛快的战斗，以及成为擂台之王（El Rey del Ring）。",
+						{
+							"ENG_name": "Creating a Luchador",
+							"type": "entries",
+							"name": "创造一名蒙面摔角手",
+							"page": 0,
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Races",
+											"type": "entries",
+											"name": "种族",
+											"page": 0,
+											"entries": [
+												"普适。这是一种生活方式，因此任何形态的众生都曾出过蒙面摔角手。虽然人鱼这样偏水生的种族很少踏上此路，但也并非闻所未闻。蒙面摔角手通常出身于摔角世家，只是延续家族的传统，但也有青年为这场盛大表演所目眩神迷，舍弃寻常生活投身摔角生涯，甚至还有人因得见异象而同样适应了这条道路。 "
+											]
+										},
+										{
+											"ENG_name": "Group Dynamics",
+											"type": "entries",
+											"name": "团队互动",
+											"page": 0,
+											"entries": [
+												"蒙面摔角手可以属于任何阵营，也可以融入任何队伍。善良的蒙面摔角手，即正派，长于与任何人打交道，尽管他们不断博取关注、高呼荣誉战号的做派有时会磨光队友的耐性。然而，一旦大局已定、生死攸关，无论是他最好的朋友还是他厌恶的点头之交，这些蒙面摔角手都会第一个扑入战团保护他们。对正派而言，队伍就是他们的家族，没有什么比这更重要。另一面则是坏的蒙面摔角手，即反派。对他们来说，人人都是待推翻的挑战，他们与人结盟要么为了炫耀武力，要么把对方当作寻找下一位伟大挑战者的垫脚石。虽然还不至邪恶到彻底歹毒的地步，但为了证明自己是最强者、向擂台之王更近一步，他们会毫不犹豫地牺牲盟友。"
+											]
+										},
+										{
+											"ENG_name": "Alignment Restrictions",
+											"type": "entries",
+											"name": "阵营限制",
+											"page": 0,
+											"entries": [
+												"虽然蒙面摔角手可以选择任何阵营，但无论善恶，所有人都必须遵守摔角手准则。规则如下：",
+												{
+													"type": "list",
+													"style": "list-hang",
+													"items": [
+														"{@b {@i 荣誉高于一切。任何会被视为有损你的面具或头衔的不荣誉行为均被禁止。}}",
+														"{@b {@i 禁止掠夺弱者。}}",
+														"{@b {@i 禁止未先行下战书便发动攻击或冷血偷袭，除非对方先动手。}}"
+													]
+												},
+												"若违背任何一条信条，蒙面摔角手即沦为失格摔角手，直至其以自身荣誉认定必要的方式挽回荣誉为止；具体如何界定，请与你的DM确认。"
+											]
+										},
+										{
+											"ENG_name": "Ex Luchadore",
+											"type": "entries",
+											"name": "失格摔角手",
+											"page": 0,
+											"entries": [
+												"万一蒙面摔角手被摘下面具\u2014\u2014无论是被挑战者还是被自己的盟友所摘\u2014\u2014其立即沦为失格摔角手。你失去蒙面摔角手的全部招式与能力，仅保留蒙面摔角手的无甲移动、无甲防御、精通战斗擒抱与徒手行家，并变为同等级的武僧，且无法使用修行宗派、气点，以及武僧专属能力。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Way of Espíritu Luchador",
+			"name": "通灵摔角手之道",
+			"shortName": "通灵摔角手",
+			"source": "Luchador",
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"page": 0,
+			"subclassFeatures": [
+				"通灵摔角手之道|蒙面摔角手|Luchador|通灵摔角手|Luchador|3",
+				"先祖守护|蒙面摔角手|Luchador|通灵摔角手|Luchador|6",
+				"救世摔角手|蒙面摔角手|Luchador|通灵摔角手|Luchador|11",
+				"和谐汇聚|蒙面摔角手|Luchador|通灵摔角手|Luchador|17"
+			]
+		},
+		{
+			"ENG_name": "Way of Rudo",
+			"name": "反派之道",
+			"shortName": "反派",
+			"source": "Luchador",
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"page": 0,
+			"subclassFeatures": [
+				"反派之道|蒙面摔角手|Luchador|反派|Luchador|3",
+				"骇人面目|蒙面摔角手|Luchador|反派|Luchador|6",
+				"与神同在|蒙面摔角手|Luchador|反派|Luchador|11",
+				"背叛化身|蒙面摔角手|Luchador|反派|Luchador|17"
+			]
+		},
+		{
+			"ENG_name": "Way of Técnicos",
+			"name": "正派之道",
+			"shortName": "正派",
+			"source": "Luchador",
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"page": 0,
+			"subclassFeatures": [
+				"正派之道|蒙面摔角手|Luchador|正派|Luchador|3",
+				"观众宠儿|蒙面摔角手|Luchador|正派|Luchador|6",
+				"人民的决心|蒙面摔角手|Luchador|正派|Luchador|11",
+				"摔角双打|蒙面摔角手|Luchador|正派|Luchador|17"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Boasting Defense",
+			"name": "夸耀防御",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 1,
+			"entries": [
+				"对蒙面摔角手而言，荣耀与观众的欢呼与他们的体能和迅捷反应同为他们力量的源泉，因此其魅力也被计入护甲等级。当你未穿着护甲且未持用盾牌时，你的护甲等级等于 10 + 你的力量或敏捷调整值（自选）+ 你的魅力调整值。"
+			]
+		},
+		{
+			"ENG_name": "DC Ability",
+			"name": "DC 能力",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 1,
+			"entries": [
+				"你的能力豁免DC计算方式如下。若某能力另行说明了豁免DC，则不适用此计算。",
+				{
+					"ENG_name": "Luchador",
+					"type": "abilityDc",
+					"name": "蒙面摔角手",
+					"attributes": [
+						"cha"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Combat Grappler",
+			"name": "精通战斗擒抱",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 1,
+			"entries": [
+				"多年的训练让你明白：无论体型、重量或能力如何，摔角精神都强大无比，足以成就近乎超人的力量与灵巧。",
+				{
+					"type": "list",
+					"items": [
+						"在一次成功的{@action 擒抱|phb}后，你可以用附赠动作尝试压制对手，对其施加{@condition 束缚}状态，是否成功由另一次{@action 擒抱|phb}检定决定。压制对手时，你视为与对手互相{@condition 受擒}，但并未{@condition 束缚}。若你自己处于{@condition 束缚}状态，则无法进行压制。",
+						"你也可以用附赠动作转而对被你{@condition 受擒}、压制或{@condition 束缚}的对手进行一次徒手打击。",
+						"进行{@action 擒抱|phb}检定时，你可以使用敏捷（{@skill 特技}）或力量（{@skill 运动}）。",
+						"对所有比你大一个体型或更小的生物，尝试终结技、擒抱或压制时，其重量与体型不产生影响。",
+						"（若你的DM允许，也可以询问是否能同时以{@feat 擒抱者}专长开局。）"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Protect the Mask",
+			"name": "守护面具",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 1,
+			"entries": [
+				"对蒙面摔角手而言，面具不只是一种象征，更是其形态的具现，与灵魂同为自身的一部分。因此，当你戴着面具时，你的感官会为守护它而锐化至极致。你为发现威胁面具之物而进行的{@skill 察觉}检定具有优势，并加上你的蒙面摔角手等级。此加值不适用于你为察觉针对盟友或自身之威胁而进行的被动{@skill 察觉}，仅适用于伤害和/或偷取你面具的企图。"
+			]
+		},
+		{
+			"ENG_name": "Unarmed Savant",
+			"name": "徒手行家",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 1,
+			"entries": [
+				"蒙面摔角手是迅捷而强力的徒手打击大师。你的徒手攻击造成{@dice 1d4}伤害 + 力量或敏捷调整值；该伤害在第6级提升为{@dice 1d6}，第11级提升为{@dice 1d8}，第17级提升为{@dice 1d10}。"
+			]
+		},
+		{
+			"ENG_name": "Finishing Move",
+			"name": "终结技",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 2,
+			"entries": [
+				"在第2级，蒙面摔角手已能将连续攻势汇成强力终结技。你可以用一个攻击动作，对一名{@condition 受擒}、被压制、{@condition 束缚}或移动速度为0的敌人尝试终结技，造成{@dice 1d8}伤害 + 你的力量或敏捷调整值。你每回合只能使用一次终结技，使用次数等于你的蒙面摔角手等级的一半（向下取整）。",
+				{
+					"type": "list",
+					"items": [
+						"随着你在此职业中升级，终结技骰将依蒙面摔角手职业表的\"终结技骰\"一栏提升。你在完成一次短休或长休后恢复本特性的使用次数。",
+						"在第8级，此伤害在突破抗性时视为魔法伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Inspired Wrestler",
+			"name": "灵感摔角手",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 2,
+			"entries": [
+				"在激战正酣之时，蒙面摔角手能够引导灵感\u2014\u2014无论来自过往的胜利，还是与面具及同伴间的羁绊\u2014\u2014施展出超凡的技艺与力量。在第2级，你可以将一枚{@dice 1d4}灵感骰加入初次擒抱尝试，并在随后一次成功的压制中将其作为额外伤害，每回合一次。一枚灵感骰仅在同回合内先后进行擒抱与压制时才同时作用于两者。该骰在第13级变为{@dice d6}，第17级变为{@dice d8}。你的灵感骰数量等于你的魅力调整值（至少为1）。完成一次长休后，你恢复所有已耗的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Shouting Challenge",
+			"name": "咆哮挑战",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 3,
+			"entries": [
+				"从第3级起，你可以用附赠动作向一名能看见和/或听见你的敌人发出咆哮挑战，迫使其进行一次感知豁免。豁免失败者，在1分钟内只能以攻击检定、法术或技能对抗指定你为目标。其对所有非你目标发动的攻击均具有劣势；若法术本身可自然命中多个目标，则不适用此劣势。该敌人可在其每回合结束时重复该豁免。你在完成一次短休或长休后恢复本特性的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Way of Lucha",
+			"name": "摔角之道",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 3,
+			"entries": [
+				"在第3级，蒙面摔角手选择踏上一条摔角之路。你可以成为正派、反派或通灵者。正派较少依赖诡计与欺瞒，而是从与同伴共享的羁绊以及高飞杂技动作中汲取力量，以求在战斗中克敌制胜。反派则使用权谋与卑鄙战术，坚信擂台之上百无禁忌，为夺取胜利不择手段。虽然所有蒙面摔角手都与先祖及面具生灵相互调谐，但通灵者将其推向了另一个层次。通过修行与冥想，他们获得了引导面具之灵乃至先祖之灵助战的能力。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 5,
+			"entries": [
+				"在第5级，当你在自己的回合采取{@action 攻击}动作时，可以进行两次攻击，而非一次。你也可以改为进行两次{@action 擒抱|phb}尝试。蒙面摔角手此时可以同时擒抱其触及范围内的两只生物（体型比自身大一个体型或更小），但代价是失去所有额外攻击以及你的附赠动作。"
+			]
+		},
+		{
+			"ENG_name": "Movimiento Libre",
+			"name": "自由移动",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 5,
+			"entries": [
+				"为了抢先贴近对手，战斗中的蒙面摔角手能比同伴更迅捷地杀入战团。从第5级起，当你未穿着护甲且未持用盾牌时，你的速度提升5尺。该加值会在达到特定蒙面摔角手等级时提升，如蒙面摔角手职业表所示。"
+			]
+		},
+		{
+			"ENG_name": "Way of Lucha Feature",
+			"name": "摔角之道特性",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 6,
+			"entries": [
+				"在第6级，你获得一项由你的摔角之道赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Worked Strikes",
+			"name": "做戏打击",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 6,
+			"entries": [
+				"蒙面摔角手的打击经过千锤百炼，连最坚固的对手也能伤害。在第6级，你的徒手打击在克服非魔法攻击与伤害的抗性与免疫时视为魔法攻击与伤害。"
+			]
+		},
+		{
+			"ENG_name": "Fearless",
+			"name": "无畏",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 7,
+			"entries": [
+				"在第7级，蒙面摔角手的心志已经淬炼如钢。无论面对生物还是魔法，蒙面摔角手都不会再从任何挑战前退缩，并将每一位对手视为问鼎擂台之王头衔的又一途径。你在对抗所有引发{@condition 恐慌}状态的效应时具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Bonds of the Luchador",
+			"name": "蒙面摔角手的羁绊",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 9,
+			"entries": [
+				"无论是反派、正派还是通灵摔角手，蒙面摔角手都以各自的方式理解并尊崇家族传统。在第9级，依据其摔角之道的路线，他们在邻近盟友时获得以下三项恩惠之一：",
+				{
+					"type": "list",
+					"items": [
+						"若为正派，你对友谊与家族羁绊的理解无人能及，因此会为守护他们而战得更加拼命。当你5尺内的一名盟友遭到对手近战攻击，且你至少有一只手或双腿空闲时，你可以用反应尝试擒抱并压制该敌人以阻止此攻击。若你检定失败，则承受你的盟友本应受到的全部伤害。此擒抱或压制会在你的下一回合开始时自动结束。",
+						"若为反派，你的盟友长远而言或许只是消耗品，但此时此刻他们不可或缺。当你5尺内的一名盟友遭到5尺内某对手的近战攻击时，你可以用反应对该对手发动一次徒手打击，攻其不备。",
+						"若为通灵者，你曾目睹亡魂，深知其苦，尤其是那些不愿见挚爱之人过早踏入来世者。当你5尺内的一名盟友遭到5尺内某对手的近战攻击时，你可以用反应以摔角之灵护佑该盟友，使你选择的一名对手对其发动的攻击检定具有劣势，直至其下一回合开始。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Las Garras de los Muertos (The Grip of the Dead)",
+			"name": "亡者之握（Las Garras de los Muertos）",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 10,
+			"entries": [
+				"在第10级，无论经由异象还是灵界之旅，蒙面摔角手都获得了先祖授予的力量，得以在实体层面上与一切存在交锋。蒙面摔角手能够以魔法手段触碰并擒抱所有本无法触及的生物。被你擒抱的生物若要使用法术或效应\u2014\u2014如{@spell 星界投影}、{@spell 闪现术}、{@spell 任意门}、德劳米尔的瞬间脱身（参见）、{@spell 以太化}、{@spell 异界之门}、{@spell 迷宫术}、{@spell 迷踪步}、{@spell 位面转移}或{@spell 传送术}\u2014\u2014以挣脱擒抱，必须进行一次带熟练加值的施法属性检定，与蒙面摔角手的力量（{@skill 运动}）或敏捷（{@skill 特技}）检定对抗。此能力同样阻止生物使用天生能力，例如{@creature 闪现犬}或{@creature 巴洛炎魔}的传送。若该生物已处于以太或星界状态，则对其的擒抱尝试具有劣势，且此能力不妨碍跨位面的感知或攻击。此能力无法阻止被召唤的生物在召唤法术结束时消失。 "
+			]
+		},
+		{
+			"ENG_name": "Ring Fighter",
+			"name": "擂台斗士",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 10,
+			"entries": [
+				"在第10级，蒙面摔角手在擂台上如鱼得水。当蒙面摔角手身处任何形式的擂台\u2014\u2014无论人造还是天然（擂台的定义是拥有围绳和四角，藤蔓与蛛网若环绕一片封闭区域拉起亦可算数，竞技场同样可用作擂台）\u2014\u2014其力量都会大幅增强。这些加值仅在擂台内生效，并在离开擂台的一分钟后消散。",
+				{
+					"type": "list",
+					"items": [
+						"任何以魔法或其他方式瞬间制伏蒙面摔角手的手段都更可能失效。若你需战胜某个DC，你的掷骰具有优势；而任何以制伏你为目的施放的法术，其掷骰具有劣势。",
+						"若擂台外有任何盟友为你喝彩，你获得数量等于你魅力调整值的临时生命值。该效果随每位为你喝彩的盟友而叠加，但普通路人不会提供此增益；不过，NPC盟友与缔结羁绊的NPC同样可以贡献。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Way of Lucha Feature",
+			"name": "摔角之道特性",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 11,
+			"entries": [
+				"在第11级，你获得一项由你的摔角之道赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Grappling Savant",
+			"name": "擒抱行家",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 13,
+			"entries": [
+				"在第13级，蒙面摔角手已逐渐学会掌控自身体重，并在擒抱时识破对手架势中的破绽。蒙面摔角手获得擒抱任意体型对手的能力。此外，对体型比自身大一个体型或任意更小对手的擒抱尝试均具有优势。"
+			]
+		},
+		{
+			"ENG_name": "People's Champion",
+			"name": "人民冠军",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 15,
+			"entries": [
+				"在第15级，蒙面摔角手已成为大众的象征。无论身为人民的英雄还是恶人，其名望都实实在在地赋予了他力量。蒙面摔角手获得伤害抗性，得以在任何敌人面前支撑下去，让其统治永续。作为反应，你可以选定一名攻击你的敌人，在1分钟内对其攻击（包括需要豁免检定的效应）获得抗性。此能力每日可用一次，并在完成一次长休后恢复。此能力不与你已有的任何抗性叠加。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Way of Lucha Feature",
+			"name": "摔角之道特性",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 17,
+			"entries": [
+				"在第17级，你获得一项由你的摔角之道赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ultimate Finishing Move",
+			"name": "终极终结技",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 18,
+			"entries": [
+				"在第18级，蒙面摔角手能将一套声名远扬的招牌动作化为自己的终极终结技。你可以用附赠动作对处于{@condition 受擒}、{@condition 束缚}或{@condition 震慑}状态的敌人使用此技。对手必须进行一次豁免，DC等于 8 + 你的熟练加值 + 你的力量或敏捷调整值（自选）。豁免失败者受到{@dice 10d10}伤害，并自动陷入{@condition 受擒}、被压制且{@condition 束缚}的状态；豁免成功则伤害减半，且不被{@condition 受擒}、压制或{@condition 束缚}。此伤害无法被抗性或免疫减免或无效化。在完成一次长休之前，蒙面摔角手无法再次使用此能力。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Dios de Lucha (God of Lucha)",
+			"name": "摔角之神（Dios de Lucha）",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"level": 20,
+			"entries": [
+				"在第20级，蒙面摔角手已经赢得擂台之王的头衔，但这已不再足够。自然物质位面的存在再也无法满足蒙面摔角手内心的战斗渴望，他需要更多，以证明摔角之道才是真正的道路。蒙面摔角手的躯体不再衰老，也无须睡眠、进食或饮水，时刻保持巅峰状态，只为寻得更强的对手一战。只需一次短休即可恢复蒙面摔角手的全部能力与生命骰，即使是通常需要长休的能力。其面具与蒙面摔角手融为一体，再也无法摘下。至此，蒙面摔角手可以带优势擒抱任何体型、任何形态的生物。 "
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Way of Espíritu Luchador",
+			"name": "通灵摔角手之道",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "通灵摔角手",
+			"subclassSource": "Luchador",
+			"level": 3,
+			"entries": [
+				"正派凭高飞杂技制胜，反派以卑鄙手段横行，而通灵摔角手（Espíritu Luchador）则更多依靠先祖之灵与面具之灵来获取力量。所有蒙面摔角手都与灵界有着亲和，但无人能及通灵摔角手。他们可以召唤面具之灵以获得野兽般的力量，或请先祖之灵附身，施展自家秘藏的特殊招式。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "面具之灵|蒙面摔角手|Luchador|通灵摔角手|Luchador|3|Luchador"
+				}
+			]
+		},
+		{
+			"ENG_name": "Spirit of the Mask",
+			"name": "面具之灵",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "通灵摔角手",
+			"subclassSource": "Luchador",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在第3级，蒙面摔角手能够被动地引导一种动物兽相。你获得数量等于你体质调整值的额外灵感骰；且每场战斗一次，你可以在任何动作期间消耗一枚灵感骰，获得一种灵体形态的收益并持续1分钟，从以下兽相中选择其一：",
+				{
+					"type": "list",
+					"items": [
+						"若为水生动物，你的游泳速度等于你的移动速度，且在水中作战不会招致任何劣势。在水下时，不习水性的敌人发动的所有近战攻击均具有劣势。此外，你可以额外消耗一枚灵感骰，使一次针对你的攻击检定降低等于骰值的点数。这可以在攻击掷骰后使用，但不能在伤害结算后使用。",
+						"若为飞禽，你的跳远与跳高距离提升至15尺，且无须消耗移动距离即可完成。你不再承受从20尺高处坠落造成的坠落伤害，除非是被敌人强制所致。若你承受了任何坠落伤害，你可以消耗一枚灵感骰，使该伤害降低骰值的5倍。",
+						"若为敏捷陆生动物，你可以用附赠动作进行{@action 疾走}、{@action 撤离}或{@action 回避}，并在敏捷检定上具有优势。进行豁免检定时，你可以消耗一枚灵感骰加到掷骰结果上。若豁免成功则不承受伤害。",
+						"若为强壮陆生动物，你在所有力量检定与力量豁免上具有优势，且在擒抱、推撞、拖拽与举升方面视为大一个体型。你的徒手打击获得攻城特性，并造成额外的{@dice 1d4}伤害。压制对手时，你可以消耗一枚灵感骰，造成等于骰值两倍的伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ancestral Ward",
+			"name": "先祖守护",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "通灵摔角手",
+			"subclassSource": "Luchador",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"通过深入的冥想，通灵者已与先祖缔结羁绊，先祖们誓言守护其先驱，以确保其恪守摔角准则。在蒙面摔角手第6级，你在对抗{@condition 魅惑|phb|魅惑}、魔法性{@condition 目盲|phb|致盲}、{@condition 失能|phb|失能}、{@condition 麻痹|phb|麻痹}、{@condition 石化|phb|石化}、{@condition 中毒|phb|中毒}、{@condition 震慑|phb|震慑}以及魔法施加的{@condition 昏迷|phb|昏迷}的豁免检定上具有优势。此外，你获得心灵伤害抗性。"
+			]
+		},
+		{
+			"ENG_name": "Del Luchador Salvador",
+			"name": "救世摔角手",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "通灵摔角手",
+			"subclassSource": "Luchador",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在第11级，你先祖血脉的守护誓言甚至延伸至死亡的掌握。当你降至0生命值时，你可以耗尽所有剩余灵感骰，每消耗一枚便恢复10生命值。 "
+			]
+		},
+		{
+			"ENG_name": "Harmonic Convergence",
+			"name": "和谐汇聚",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "通灵摔角手",
+			"subclassSource": "Luchador",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在第17级，通灵者已达摔角开悟之境，与其先祖之灵融为一体。切换为面具之灵形态不再消耗灵感骰。你可以在任何动作期间转换灵体形态，代价为消耗一枚灵感骰。当你进入灵体形态或转换形态时，你可以融合两种兽相而非一种。此外，在任何战斗阶段开始时，你始终至少拥有数量等于你体质调整值的灵感骰。"
+			]
+		},
+		{
+			"ENG_name": "Way of Rudo",
+			"name": "反派之道",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "反派",
+			"subclassSource": "Luchador",
+			"level": 3,
+			"entries": [
+				"每枚硬币都有其体现另一面的阴暗一面。每一位正派背后，都有一名反派。他们对规则毫不在意，只是勉强留在规则之内以进行战斗并尊重摔角准则。他们看似随心所欲地变换立场，动用武器与恐吓战术迫使世人屈服于其意志与强权\u2014\u2014这一切，都为了成为擂台之王。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "脏招斗士|蒙面摔角手|Luchador|反派|Luchador|3|Luchador"
+				}
+			]
+		},
+		{
+			"ENG_name": "Dirty Brawler",
+			"name": "脏招斗士",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "反派",
+			"subclassSource": "Luchador",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"对反派而言，胜利可以不择手段\u2014\u2014无论靠诡诈舞弊，还是单纯地手脚不干净，在战斗中目的即为手段正名。在第3级，你获得将周遭一切物品当作武器使用的能力，无论是椅子、图钉、垃圾桶，甚至一袋盐。",
+				{
+					"type": "list",
+					"items": [
+						"你熟练使用所有临时武器，其伤害骰为：投掷武器{@dice 1d4}，单手近战武器{@dice 1d6}，双手近战武器{@dice 1d12}。以临时武器进行的任何近战攻击都可以改用你的徒手行家伤害骰。",
+						"当进行藏匿临时武器或将其栽到对手身上的属性检定时，你视为熟练{@skill 巧手}。",
+						"你可以用附赠动作辱骂30尺内的一名对手，扰乱其专注。受辱骂者必须通过一次智力豁免，否则在其回合内对你发动的第一次攻击检定具有劣势。此外，受辱骂的对手会更易受你的打击：在1分钟内，你对受辱骂者造成的临时武器伤害加上你的熟练加值。战斗中同时只有一名对手能处于你辱骂的效果之下。 "
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fearful Appearance",
+			"name": "骇人面目",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "反派",
+			"subclassSource": "Luchador",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"随着你的恶行传闻传遍世界，你的尊容本身便令世人与敌人胆寒。你的名字只敢被人低声耳语，生怕将其唤来。在第6级，你获得{@skill 威吓}技能熟练；若你已熟练该技能，则你的熟练加值加倍。每轮，你可以用一个动作尝试令30尺内一名不免疫恐惧的对手心生恐惧。该对手必须进行一次感知豁免，失败则{@condition 恐慌}1分钟。比你大一个体型的生物在其豁免DC中忽略你的熟练加值，而比你大两个体型的生物则无视此效果。被你{@condition 恐慌}的生物可以在其回合结束时再次尝试该豁免。"
+			]
+		},
+		{
+			"ENG_name": "Vaya con Dios",
+			"name": "与神同在",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "反派",
+			"subclassSource": "Luchador",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你的狠辣毫无底线，因此你的面具授你禁忌之识：以一记致命打击摧毁对手灵魂之法\u2014\u2014与神同在（Vaya con Dios）。在第11级，你可以用一个动作消耗3枚灵感骰，指定你近战触及范围内一名被你{@condition 恐慌}、{@condition 麻痹}、{@condition 震慑}或{@condition 昏迷}的对手为目标。处于{@condition 恐慌}状态的敌人还必须同时处于{@condition 束缚}状态。生命值为0的敌人无法避开此效果。处于{@condition 麻痹}、{@condition 震慑}、睡眠或{@condition 恐慌}状态的敌人进行一次体质豁免，DC等于 8 + 你的熟练加值 + 你的力量/敏捷调整值。豁免失败者当场死亡；被{@condition 恐慌}的目标则降至0生命值。你也可以改为消耗你的终极终结技，以再次尝试与神同在。一旦成功施展，在完成一次长休之前你无法再次使用与神同在。"
+			]
+		},
+		{
+			"ENG_name": "Avatar of Treachery",
+			"name": "背叛化身",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "反派",
+			"subclassSource": "Luchador",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在第17级，你被蒙面摔角手反派血脉的远古力量灌注，你与你的面具成为你之前历代反派的先驱。你可以用一个动作以阴影环绕自身，形成半径10尺的球形区域并持续1分钟，将其区域内所有明亮光线变为微光。阴影遮蔽除你之外的所有视觉，使{@sense 黑暗视觉}失去效用，但{@sense 真实视觉}不受影响。你在该球体内拥有四分之三掩护，针对你的远程攻击具有劣势。所有进入该灵气或在其中结束回合的生物必须进行一次感知豁免。豁免失败的敌人受到{@condition 2d10}心灵伤害并陷入{@condition 恐慌}，成功则伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Way of Técnicos",
+			"name": "正派之道",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "正派",
+			"subclassSource": "Luchador",
+			"level": 3,
+			"entries": [
+				"人民的英雄。这些蒙面摔角手不仅为自我而力求精进，更致力于向大众证明：只要勤勉与意志坚定，一切皆可实现。他们或许会自夸、会争斗，但从不忘本，努力提振所有人的信心。有时他们会成为民间英雄，驰入城镇，以摔角之力扫除腐败，然后在接受酬谢之前飘然离去\u2014\u2014一切只为正义。正派同样为擂台之王而战，但他们使用干净漂亮的高飞表演招式，并以自身的个人力量激励盟友走向成功。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "自由摔角|蒙面摔角手|Luchador|正派|Luchador|3|Luchador"
+				}
+			]
+		},
+		{
+			"ENG_name": "Lucha Libre",
+			"name": "自由摔角",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "正派",
+			"subclassSource": "Luchador",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在第3级，正派风格的摔角手以速度与敏捷为傲，极度偏爱空中而非地面。正派在此类空中的造诣使其在跳跃及进行跳跃尝试时可以以敏捷调整值代替力量调整值。当你未穿护甲时，你能在完成跳远或跳高后腾空而起，只需在起跳前至少移动5尺即可。进行跳高时，若你在起跳前立刻以步行至少移动5尺，你跃入空中的高度（尺数）等于 5 + 你的力量或敏捷调整值；进行原地跳高时，你可以跳出完整距离。进行跳远时，若你在起跳前立刻以步行至少移动5尺，你移动的尺数最高可达你的力量或敏捷属性值；进行原地跳远时，你可以跳出完整距离。无论哪种跳跃，你在跳跃中每越过的1尺都要消耗1尺移动距离。只有当你未穿着任何护甲时才能如此行动。若你的空中移动将落在一名体型与你相等或更大的对手身上，你不承受坠落伤害，并可以用附赠动作进行一次{@action 擒抱|phb}检定。此外，当你试图蹬踏一名被{@condition 受擒}的敌人、盟友或无生命物体腾空而起时，你可以进行一次具有优势的{@skill 特技}/{@skill 运动}检定，使你能移动等于你原地跳远距离的距离。以这种方式移动时，针对你的借机攻击具有劣势，除非攻击者恰从你的正下方发起攻击。"
+			]
+		},
+		{
+			"ENG_name": "Crowd Favorite",
+			"name": "观众宠儿",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "正派",
+			"subclassSource": "Luchador",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，正派已在队伍中赢得人望，能通过激发众人的信心来坚定其意志。你获得{@skill 表演}技能熟练；若你已熟练该技能，则你的熟练加值加倍。你可以用一个动作发表演说或进行表演，激励10尺内至多6名盟友，使其下一次攻击检定具有优势，持续至其下一回合结束。此能力每次短休只能使用一次。"
+			]
+		},
+		{
+			"ENG_name": "The People's Resolve",
+			"name": "人民的决心",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "正派",
+			"subclassSource": "Luchador",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在第11级，正派绝不辜负盟友的执念使其得以拒绝死亡。当你被降至0生命值时，你可以进行一次DC 10的体质豁免。成功则你改为降至1生命值，并无效化任何即死效应。该豁免的DC每重复一次便提高5，并在完成一次长休后重置。"
+			]
+		},
+		{
+			"ENG_name": "Lucha Tag Team",
+			"name": "摔角双打",
+			"source": "Luchador",
+			"page": 0,
+			"className": "蒙面摔角手",
+			"classSource": "Luchador",
+			"subclassShortName": "正派",
+			"subclassSource": "Luchador",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在第17级，正派可以招募一名NPC甚至一名盟友，将蒙面摔角手的技艺倾囊相授，使其成为自己的摔角双打搭档。当你们彼此处于10尺内时，你们二人在豁免检定与近战武器/徒手攻击检定上均具有优势。每轮一次，你们中的一人可以使一次针对你搭档的攻击检定具有劣势。你的双打搭档还能协助你施展终极终结技，用反应使对手的豁免检定具有劣势。只有当最初的搭档死亡和/或背叛你后，你才能更换搭档。（是否允许拥有更多盟友由DM裁量。）"
+			]
+		}
+	]
+}
