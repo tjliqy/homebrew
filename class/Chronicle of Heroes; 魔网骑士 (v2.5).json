@@ -1,0 +1,2793 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CoH-Weaveknight-v2-5",
+				"abbreviation": "Wvknght",
+				"full": "魔网骑士",
+				"url": "https://drive.google.com/file/d/1lVsBBTwrfcBtS9zphf4lSOdtCduNoBPC/view?usp=sharing",
+				"version": "2.5",
+				"authors": [
+					"ChronicleOfHeroes"
+				],
+				"convertedBy": [
+					"DXHHH101",
+					"Lxran"
+				],
+				"color": "59b2b8"
+			}
+		],
+		"optionalFeatureTypes": {
+			"FS:WK": "战斗风格；魔网骑士",
+			"SA": "秘术"
+		},
+		"edition": "classic",
+		"status": "deprecated",
+		"unlisted": true,
+		"dateAdded": 1599371925,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "807fbc0e95"
+	},
+	"class": [
+		{
+			"name": "魔网骑士",
+			"source": "CoH-Weaveknight-v2-5",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"con",
+				"int"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15
+			],
+			"classSpells": [
+				"吸收元素|xge",
+				"燃烧之手",
+				"繁彩球",
+				"侦测魔法",
+				"脚底抹油",
+				"妖火",
+				"羽落术",
+				"冰刃",
+				"鉴定术",
+				"跳跃术",
+				"大步奔行",
+				"法师护甲",
+				"魔法飞弹",
+				"防护善恶",
+				"护盾术",
+				"睡眠术",
+				"雷鸣波",
+				"西风打击|xge",
+				"目盲术/耳聋术",
+				"朦胧术",
+				"黑暗术",
+				"黑暗视觉",
+				"强化属性",
+				"变巨/缩小术",
+				"定身类人",
+				"隐形术",
+				"浮空术",
+				"物件定位术",
+				"魔化武器",
+				"马友夫强酸箭",
+				"镜影术",
+				"迷踪步",
+				"灼热射线",
+				"识破隐形",
+				"幽影刃|xge",
+				"蛛行术",
+				"蛛网术",
+				"法术反制",
+				"解除魔法",
+				"元素武器",
+				"火球术",
+				"飞行术",
+				"守卫刻文",
+				"加速术",
+				"闪电束",
+				"防护法阵",
+				"防护能量",
+				"短讯术",
+				"缓慢术",
+				"雷霆步|xge",
+				"吸血鬼之触",
+				"放逐术",
+				"任意门",
+				"元素灾厄|xge",
+				"火焰护盾",
+				"行动自如",
+				"高等隐形术",
+				"冰风暴",
+				"生物定位术",
+				"变形术",
+				"石肤术",
+				"浓酸球|xge",
+				"毕格比之手",
+				"寒冰锥",
+				"支配类人",
+				"渺远步|xge",
+				"指使术",
+				"定身怪物",
+				"焚烧术|xge",
+				"探知术",
+				"钢风斩|xge",
+				"传送法阵",
+				"力场墙"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"arcana",
+								"athletics",
+								"history",
+								"investigation",
+								"nature",
+								"perception",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 鳞甲|phb} 或 (b) {@item 皮甲|phb}",
+					"(a) 一件{@filter 军用武器|items|source=phb|category=基础|type=军用武器}加一面{@item 盾牌|phb}、(b) 两件{@filter 军用武器|items|source=phb|category=基础|type=军用武器}或 (c) 一把{@item 长弓|phb}和一个{@item 箭袋|phb}，内装{@item 箭矢 (20)|phb|20支箭}",
+					"(a) 一个{@item 学者套组|phb}或 (b) 一个{@item 探索套组|phb}",
+					"(a) 一个{@item 材料包|phb}或 (b) 一件{@item 奥术法器|phb}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|起始金币}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"int": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 秘术|optionalfeatures|feature type=sa}",
+						"已知法术"
+					],
+					"rows": [
+						[
+							0,
+							2
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							5
+						],
+						[
+							3,
+							6
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							10
+						],
+						[
+							5,
+							10
+						],
+						[
+							5,
+							11
+						],
+						[
+							5,
+							11
+						],
+						[
+							5,
+							12
+						],
+						[
+							6,
+							12
+						],
+						[
+							6,
+							13
+						],
+						[
+							6,
+							13
+						],
+						[
+							7,
+							14
+						],
+						[
+							7,
+							14
+						],
+						[
+							8,
+							15
+						],
+						[
+							8,
+							15
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1环|spells|level=1|class=魔网骑士 (CoHWK)}",
+						"{@filter 2环|spells|level=2|class=魔网骑士 (CoHWK)}",
+						"{@filter 3环|spells|level=3|class=魔网骑士 (CoHWK)}",
+						"{@filter 4环|spells|level=4|class=魔网骑士 (CoHWK)}",
+						"{@filter 5环|spells|level=5|class=魔网骑士 (CoHWK)}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"战斗施法者|魔网骑士|CoH-Weaveknight-v2-5|1",
+				"施法|魔网骑士|CoH-Weaveknight-v2-5|1",
+				"奥术打击|魔网骑士|CoH-Weaveknight-v2-5|2",
+				"战斗风格|魔网骑士|CoH-Weaveknight-v2-5|2",
+				"秘术|魔网骑士|CoH-Weaveknight-v2-5|2",
+				{
+					"classFeature": "魔网骑士武道|魔网骑士|CoH-Weaveknight-v2-5|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|魔网骑士|CoH-Weaveknight-v2-5|4",
+				"替换武术|魔网骑士|CoH-Weaveknight-v2-5|4",
+				"额外攻击|魔网骑士|CoH-Weaveknight-v2-5|5",
+				"迅捷施法（1/休息）|魔网骑士|CoH-Weaveknight-v2-5|6",
+				{
+					"classFeature": "魔网骑士武道特性|魔网骑士|CoH-Weaveknight-v2-5|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|魔网骑士|CoH-Weaveknight-v2-5|8",
+				"魔武学徒|魔网骑士|CoH-Weaveknight-v2-5|10",
+				{
+					"classFeature": "魔网骑士武道特性|魔网骑士|CoH-Weaveknight-v2-5|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|魔网骑士|CoH-Weaveknight-v2-5|12",
+				"迅捷施法（2/休息）|魔网骑士|CoH-Weaveknight-v2-5|14",
+				"灵活施法者|魔网骑士|CoH-Weaveknight-v2-5|14",
+				{
+					"classFeature": "魔网骑士武道特性|魔网骑士|CoH-Weaveknight-v2-5|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|魔网骑士|CoH-Weaveknight-v2-5|16",
+				"至高战争魔法|魔网骑士|CoH-Weaveknight-v2-5|18",
+				"属性值提升|魔网骑士|CoH-Weaveknight-v2-5|19",
+				{
+					"classFeature": "魔网骑士武道特性|魔网骑士|CoH-Weaveknight-v2-5|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"hasFluff": true,
+			"ENG_name": "Weaveknight"
+		}
+	],
+	"classFluff": [
+		{
+			"name": "魔网骑士",
+			"source": "CoH-Weaveknight-v2-5",
+			"entries": [
+				{
+					"name": "魔网骑士",
+					"source": "CoH-Weaveknight-v2-5",
+					"type": "section",
+					"entries": [
+						"一名精灵身披板甲，甲胄映照着这处邪秽圣所四壁的猩红火焰。她被亡灵造物团团围住，一面紧盯即将完成仪式的邪恶死灵法师，一面备好自己的巨刃。当造物们向她扑来时，她在一道蓝光中消失，再现于法师上方，武器浸润着奥术能量，伴随一声雄壮战吼斩落强敌。",
+						"一名龙裔身着银蓝相间的长袍，挥动火把，照亮废墟墙壁上镌刻的古老文字。当他开始破译其中讯息时，两头自阴影中现身的巨兽的低吼引起了他的注意。这位学者微微一笑，拔出长剑摆出临战架势，长剑高举过顶，噼啪作响地迸动着电光。",
+						"一名人类小心地张开弓弦，等待队友为她创造攻击恶魔的破绽。机会刚一出现，她便放箭离弦，口中低诵咒文，将力量注入箭矢。箭矢飞掠之际被璀璨光芒吞没，恶魔发出震天怒吼，随即在一片光耀的爆裂中炸得粉碎。",
+						"尽管风格各异，所有魔网骑士都能娴熟地将强大法术与凌厉打击交织为致命的组合。无论是守卫国度的独行武士、传道授业的师者学者，还是追寻新奇奇迹的冒险者，魔网骑士们都因对自身技艺的执着与对卓越的追求而团结一致。",
+						{
+							"name": "知识即力量",
+							"type": "entries",
+							"entries": [
+								"魔网骑士既懂得这个魔法与奇迹交织的世界里、出土秘辛中蕴藏的美，也明白这些力量可能被滥用于何等邪恶的途径。魔网骑士编织法术，运用各修会互异的秘传技艺\u2014\u2014他们是战争与魔法的双重学徒，在追求更高知识的道路上开创独特的战斗风格、磨砺自身技艺。自律是魔网骑士的核心特质，在经年累月的严苛修行中烙进心底；但仁慈与共情同样受到倡导，因为唯有如此，这些魔法骑士才能记得关怀他人的价值，坚守自己的使命。",
+								"尽管各有分歧，魔网骑士们都怀着对社会的责任感，保护无辜者免受失控施法者与魔法威胁的侵害。许多魔网骑士过着孤身治学的隐修生活，致力于发掘古代遗物与典籍；也有人选择与人联结、传道授业，因为他们认为真正的知识是应与世界共享的馈赠。"
+							],
+							"ENG_name": "Knowledge is Power"
+						},
+						{
+							"name": "创造一名魔网骑士",
+							"type": "entries",
+							"entries": [
+								"魔网骑士的一生几乎就是冒险的同义词。世上总有被遗忘已久的传说与知识，等待着魔网骑士去揭示。此外，魔网骑士的角色背景应当包含他决意修习这门技艺的缘由，以及支撑他熬过严苛修行的种种个人目标。你是如何初次察觉自己在奥术上的天赋？你曾是身负未显魔法潜能的士兵，被另一位魔网骑士发掘？抑或你的某位先祖正是某个魔网骑士修会的成员，而你寻得了他羁绊的武器与典籍？",
+								"你在哪个魔网骑士修会门下受训？你的导师是谁？你与其他骑士结下了怎样的联系，而你的修会又有何种具体目标？你被培养为对抗魔法滥用者的先锋、成为启迪后学的导师，还是受命执行夺回失落神物的秘密任务？在打磨自身独一无二的战斗之道时，你又决意专修哪些秘术与技艺？",
+								"经由修行，魔网骑士明白世间鲜有客观真理，唯有知识本身。因此，尽管其严于律己的作风往往偏向守序阵营，许多魔网骑士仍信奉中立。",
+								{
+									"name": "快速建卡",
+									"type": "entries",
+									"entries": [
+										"依照以下建议，你可以快速创建一名魔网骑士。首先，你的最高属性值应是力量或敏捷，这取决于你的战斗风格与战术。次高的属性值应是智力，因为它决定你施法与诸多魔法能力的强度。其次，选择{@background 智者}或{@background 士兵}背景。"
+									],
+									"ENG_name": "Quick Build"
+								}
+							],
+							"ENG_name": "Creating a Weaveknight"
+						}
+					],
+					"ENG_name": "Weaveknight"
+				}
+			],
+			"ENG_name": "Weaveknight"
+		}
+	],
+	"subclass": [
+		{
+			"name": "弑神者",
+			"shortName": "弑神者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassSpells": [
+				"灾祸术",
+				"魅影之力",
+				"恐惧术",
+				"放逐术",
+				"驱逐善恶"
+			],
+			"subclassFeatures": [
+				"弑神者|魔网骑士|CoH-Weaveknight-v2-5|弑神者|CoH-Weaveknight-v2-5|3",
+				"凡人哨卫|魔网骑士|CoH-Weaveknight-v2-5|弑神者|CoH-Weaveknight-v2-5|7",
+				"重创打击|魔网骑士|CoH-Weaveknight-v2-5|弑神者|CoH-Weaveknight-v2-5|11",
+				"不屈之魂|魔网骑士|CoH-Weaveknight-v2-5|弑神者|CoH-Weaveknight-v2-5|15",
+				"诛神者|魔网骑士|CoH-Weaveknight-v2-5|弑神者|CoH-Weaveknight-v2-5|20"
+			],
+			"ENG_name": "The Godsbane"
+		},
+		{
+			"name": "密斯塔拉奥秘门徒",
+			"shortName": "密斯塔拉奥秘",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassSpells": [
+				"通晓语言",
+				"涅斯图魔法灵光",
+				"巧言术",
+				"秘法眼",
+				"通晓传奇"
+			],
+			"subclassFeatures": [
+				"密斯塔拉奥秘门徒|魔网骑士|CoH-Weaveknight-v2-5|密斯塔拉奥秘|CoH-Weaveknight-v2-5|3",
+				"精算之心|魔网骑士|CoH-Weaveknight-v2-5|密斯塔拉奥秘|CoH-Weaveknight-v2-5|7",
+				"学者之识|魔网骑士|CoH-Weaveknight-v2-5|密斯塔拉奥秘|CoH-Weaveknight-v2-5|11",
+				"奥术反击|魔网骑士|CoH-Weaveknight-v2-5|密斯塔拉奥秘|CoH-Weaveknight-v2-5|15",
+				"大奥术秘传|魔网骑士|CoH-Weaveknight-v2-5|密斯塔拉奥秘|CoH-Weaveknight-v2-5|20"
+			],
+			"ENG_name": "The Initiate of Arcana Mystara"
+		},
+		{
+			"name": "猎法者",
+			"shortName": "猎法者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassSpells": [
+				"猎人印记",
+				"沉默术",
+				"法术反制",
+				"高等隐形术",
+				"探知术"
+			],
+			"subclassFeatures": [
+				"猎法者|魔网骑士|CoH-Weaveknight-v2-5|猎法者|CoH-Weaveknight-v2-5|3",
+				"法术坚毅|魔网骑士|CoH-Weaveknight-v2-5|猎法者|CoH-Weaveknight-v2-5|7",
+				"破法打击|魔网骑士|CoH-Weaveknight-v2-5|猎法者|CoH-Weaveknight-v2-5|11",
+				"虹吸魔法|魔网骑士|CoH-Weaveknight-v2-5|猎法者|CoH-Weaveknight-v2-5|15",
+				"反魔法灵光|魔网骑士|CoH-Weaveknight-v2-5|猎法者|CoH-Weaveknight-v2-5|20"
+			],
+			"ENG_name": "The Magehunter"
+		},
+		{
+			"name": "魔战士",
+			"shortName": "魔战士",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassSpells": [
+				"英雄气概",
+				"镜影术",
+				"闪现术",
+				"任意门",
+				"钢风斩|xge"
+			],
+			"subclassFeatures": [
+				"魔战士|魔网骑士|CoH-Weaveknight-v2-5|魔战士|CoH-Weaveknight-v2-5|3",
+				"劫掠打击|魔网骑士|CoH-Weaveknight-v2-5|魔战士|CoH-Weaveknight-v2-5|7",
+				"附咒打击|魔网骑士|CoH-Weaveknight-v2-5|魔战士|CoH-Weaveknight-v2-5|11",
+				"钢铁专注|魔网骑士|CoH-Weaveknight-v2-5|魔战士|CoH-Weaveknight-v2-5|15",
+				"奥术连击|魔网骑士|CoH-Weaveknight-v2-5|魔战士|CoH-Weaveknight-v2-5|20"
+			],
+			"ENG_name": "The Magus"
+		},
+		{
+			"name": "咒弓手",
+			"shortName": "咒弓手",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassSpells": [
+				"致病射线",
+				"马友夫强酸箭",
+				"箭如雨下",
+				"行动自如",
+				"迅捷箭袋"
+			],
+			"subclassFeatures": [
+				"咒弓手|魔网骑士|CoH-Weaveknight-v2-5|咒弓手|CoH-Weaveknight-v2-5|3",
+				"速射|魔网骑士|CoH-Weaveknight-v2-5|咒弓手|CoH-Weaveknight-v2-5|7",
+				"近身射击|魔网骑士|CoH-Weaveknight-v2-5|咒弓手|CoH-Weaveknight-v2-5|11",
+				"穿透射击|魔网骑士|CoH-Weaveknight-v2-5|咒弓手|CoH-Weaveknight-v2-5|15",
+				"毁灭射击|魔网骑士|CoH-Weaveknight-v2-5|咒弓手|CoH-Weaveknight-v2-5|20"
+			],
+			"ENG_name": "The Spellbow"
+		},
+		{
+			"name": "守咒者",
+			"shortName": "守咒者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassSpells": [
+				"防护善恶",
+				"援助术",
+				"解除魔法",
+				"防死结界",
+				"原力法阵"
+			],
+			"subclassFeatures": [
+				"守咒者|魔网骑士|CoH-Weaveknight-v2-5|守咒者|CoH-Weaveknight-v2-5|3",
+				"延伸防护|魔网骑士|CoH-Weaveknight-v2-5|守咒者|CoH-Weaveknight-v2-5|7",
+				"防护系打击|魔网骑士|CoH-Weaveknight-v2-5|守咒者|CoH-Weaveknight-v2-5|11",
+				"法术抗性|魔网骑士|CoH-Weaveknight-v2-5|守咒者|CoH-Weaveknight-v2-5|15",
+				"群体奥术强化|魔网骑士|CoH-Weaveknight-v2-5|守咒者|CoH-Weaveknight-v2-5|20"
+			],
+			"ENG_name": "The Spellwarden"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "战斗施法者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 1,
+			"entries": [
+				"刀剑与法术并重的训练使你积累了经验，即便在战斗白热之际也能娴熟地将两者合而为一。即使单手或双手持握武器或盾牌，你也可以完成法术的姿态成分。",
+				"此外，在长休开始时，你可以用一件武器举行一场10分钟的仪式。仪式完成后，你可以将该武器当作奥术法器使用。若它与你在同一位面，你可以在自己回合内以附赠动作召唤该武器，使其瞬间传送至你手中。",
+				"同一时间只有一件武器能受益于此特性。若你以第二件武器尝试此仪式，前一件将失去此特性的收益。"
+			],
+			"ENG_name": "Combat Caster"
+		},
+		{
+			"name": "施法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 1,
+			"entries": [
+				"你将时间分作两半，一面磨砺武艺，一面精进奥术。你对魔法的研习只专注于那些最适合强化你冲阵杀敌之能的法术。因此，你习得的法术数量相对较少，你将它们牢记于心，而非抄录于法术书。",
+				{
+					"type": "entries",
+					"name": "施法位",
+					"entries": [
+						"魔网骑士表中列出了你可用来施展1环及以上{@filter 魔网骑士法术|spells|class=魔网骑士 (CoHWK)}的法术位数量。施展其中一道法术时，你必须消耗一道等于或高于该法术环阶的法术位。完成一次长休后，你恢复所有已耗用的法术位。"
+					],
+					"ENG_name": "Spell Slots"
+				},
+				{
+					"type": "entries",
+					"name": "1环及以上的已知法术",
+					"entries": [
+						"你从魔网骑士法术列表中自选习得两道1环法术。",
+						"魔网骑士表中的\"已知法术\"栏标示了你何时习得更多1环及以上的魔网骑士法术。此外，每当你在本职业中获得等级时，你可以选择一道已知的魔网骑士法术，以魔网骑士法术列表中的另一道法术替换之；替换的法术同样必须是你拥有对应环阶法术位的法术。"
+					],
+					"ENG_name": "Spells Known of 1st Level and Higher"
+				},
+				{
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"智力是你施展魔网骑士法术的施法属性，因为你通过研习与记忆来掌握法术。凡有法术提及你的施法属性时，你均使用智力。此外，当你设定所施展的魔网骑士法术的豁免DC、或以其进行攻击检定时，也使用你的智力调整值。",
+						{
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"int"
+							],
+							"ENG_name": "Spell"
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"int"
+							],
+							"ENG_name": "Spell"
+						}
+					],
+					"ENG_name": "Spellcasting Ability"
+				},
+				{
+					"type": "entries",
+					"name": "施法法器",
+					"entries": [
+						"你可以使用{@item 奥术法器|phb}作为施展魔网骑士法术的法器。"
+					],
+					"ENG_name": "Spellcasting Focus"
+				}
+			],
+			"ENG_name": "Spellcasting"
+		},
+		{
+			"name": "奥术打击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 2,
+			"entries": [
+				"你学会了如何以奥术之力灌注武器。每回合一次，当你以武器攻击命中一个生物时，你可以消耗一个法术位，为你的攻击附加一项额外效应。选择以下效应之一，目标将受其影响。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "驱散法术打击",
+							"entries": [
+								"你斩断魔法。选择一道你所知、正影响目标生物的法术。若其环阶等于或低于你所耗法术位的环阶，该法术终止。"
+							],
+							"ENG_name": "Dispelling Spellstrike"
+						},
+						{
+							"type": "entries",
+							"name": "秘法打击",
+							"entries": [
+								"浩瀚的奥术之力包裹你的打击。目标额外受到力场伤害（在武器伤害之外），额外伤害量等于你的魔网骑士等级，外加每法术位环阶{@dice 1d6}点。"
+							],
+							"ENG_name": "Mystic Spellstrike"
+						}
+					]
+				}
+			],
+			"ENG_name": "Arcane Strike"
+		},
+		{
+			"name": "战斗风格",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 2,
+			"entries": [
+				"你采用一种战斗风格作为专长。从以下选项中选择其一。即使之后再次获得选择机会，同一战斗风格选项也不能重复选取。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "奥术战士|CoH-Weaveknight-v2-5"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "箭术|CoH-Weaveknight-v2-5"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "防御|CoH-Weaveknight-v2-5"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "对决|CoH-Weaveknight-v2-5"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "巨武器战斗|CoH-Weaveknight-v2-5"
+						}
+					]
+				}
+			],
+			"ENG_name": "Fighting Style"
+		},
+		{
+			"name": "秘术",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 2,
+			"entries": [
+				"由于你潜心钻研武斗与奥术传承，你发掘出了唯有经过魔网骑士严苛修习者才能使用的特殊技艺的相关知识。",
+				"获得此特性时，你习得三项自选秘术。可用选项列表见{@filter 可选特性|optionalfeatures|feature type=sa}页面。当你到达特定魔网骑士等级时，你将获得额外的自选秘术，如魔网骑士表中\"秘术\"栏所示。",
+				"此外，每当你在本职业中获得等级时，你可将一项已习得的秘术替换为该等级可学习的另一项秘术。",
+				"部分秘术是战斗姿态，能强化特定的战斗方式，并为你的奥术打击特性提供额外选项。你可以在掷先攻时或以附赠动作进入一项已知的姿态，获得其收益，持续1分钟。同一时间你只能维持一项姿态，且在你{@condition 失能}或进入新姿态时会失去其所有收益。进入一项姿态后，直到你完成一次短休或长休，才能再次进入同一姿态。"
+			],
+			"ENG_name": "Secret Arts"
+		},
+		{
+			"name": "魔网骑士武道",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"entries": [
+				"你从可用列表中选择一门力求臻至化境的武道。你所选的原型会在3级以及7级、11级、15级和20级给予你特性。"
+			],
+			"ENG_name": "Weaveknight Discipline"
+		},
+		{
+			"name": "属性值提升",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 4,
+			"entries": [
+				"当你到达4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以改为选取一项{@filter 专长|feats}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "替换武术",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 4,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"每当你到达本职业中给予属性值提升特性的等级时，你可以将一项已知的战斗风格替换为另一项魔网骑士可用的战斗风格。这一替换体现了你武学修习重心的转变。"
+			],
+			"ENG_name": "Martial Versatility"
+		},
+		{
+			"name": "额外攻击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 5,
+			"entries": [
+				"当你在自己回合执行{@action 攻击}动作时，你可以攻击两次而非一次。"
+			],
+			"ENG_name": "Extra Attack"
+		},
+		{
+			"name": "迅捷施法（1/休息）",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 6,
+			"entries": [
+				"你获得了加快编织法术速度的能力。当你施展一道施法时间为1动作的法术时，你可以使用迅捷施法，将此次施法的施法时间改为1附赠动作。此后你须完成一次短休或长休，才能再次使用迅捷施法。",
+				"从14级起，你可以在两次休息之间使用两次迅捷施法。"
+			],
+			"ENG_name": "Quick Cast (1/rest)"
+		},
+		{
+			"name": "魔网骑士武道特性",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 7,
+			"entries": [
+				"在7级，你获得一项由你的魔网骑士武道给予的特性。"
+			],
+			"ENG_name": "Weaveknight Discipline Feature"
+		},
+		{
+			"name": "属性值提升",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以改为选取一项{@filter 专长|feats}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "魔武学徒",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 10,
+			"entries": [
+				"你已磨砺出在最凶险的处境中仍能娴熟编织法术的技艺，令专注如钢。当你在受到伤害时为维持法术专注而进行的体质豁免检定失败时，你可以用反应重掷该豁免。若如此做，你必须使用新的结果。",
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Student of Magic and War"
+		},
+		{
+			"name": "魔网骑士武道特性",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 11,
+			"entries": [
+				"在11级，你获得一项由你的魔网骑士武道给予的特性。"
+			],
+			"ENG_name": "Weaveknight Discipline Feature"
+		},
+		{
+			"name": "属性值提升",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以改为选取一项{@filter 专长|feats}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "迅捷施法（2/休息）",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 14,
+			"entries": [
+				"从14级起，你可以在两次休息之间使用两次迅捷施法。"
+			],
+			"ENG_name": "Quick Cast (2/rest)"
+		},
+		{
+			"name": "灵活施法者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 14,
+			"entries": [
+				"你对魔法的掌控使你能按需随意操纵奥术能量。你可以用附赠动作消耗两个同环阶法术位，创造出1个比所耗法术位高一环的法术位。",
+				"例如，你可以消耗两个1环法术位来创造1个2环法术位。使用此特性创造或消耗的法术位环阶不得高于5环。",
+				"以此特性创造的任何法术位都会在你完成一次长休时消失。"
+			],
+			"ENG_name": "Versatile Spellcaster"
+		},
+		{
+			"name": "魔网骑士武道特性",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 15,
+			"entries": [
+				"在15级，你获得一项由你的魔网骑士武道给予的特性。"
+			],
+			"ENG_name": "Weaveknight Discipline Feature"
+		},
+		{
+			"name": "属性值提升",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以改为选取一项{@filter 专长|feats}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "至高战争魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 18,
+			"entries": [
+				"你已精通在施展致命武斗打击的同时编织法术的艺术。当你在自己回合执行{@action 攻击}动作时，你可以放弃其中一次攻击，改为施展一道施法时间为1动作的法术。"
+			],
+			"ENG_name": "True War Magic"
+		},
+		{
+			"name": "属性值提升",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以改为选取一项{@filter 专长|feats}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "魔网骑士武道特性",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"level": 20,
+			"entries": [
+				"在20级，你获得一项由你的魔网骑士武道给予的特性。"
+			],
+			"ENG_name": "Weaveknight Discipline Feature"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "密斯塔拉奥秘门徒",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "密斯塔拉奥秘",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"entries": [
+				"对知识与秘辛的求索是所有魔网骑士的天性，但密斯塔拉奥秘门徒唯重世间的真理，并因此获授对魔网非凡的掌控。这门武道需要超乎寻常的投入与钻研\u2014\u2014大师级的门徒在施法上足以与最强大的法师分庭抗礼，还能将魔法导入武器，在每一击中卜知敌人的弱点。作为备受尊崇的奥术侍僧，即便在最老练的魔网骑士中他们也备受敬重，常在黑暗年代里成为精神向导。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "密斯塔拉奥秘门徒魔法|魔网骑士|CoH-Weaveknight-v2-5|密斯塔拉奥秘|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "知识虔信|魔网骑士|CoH-Weaveknight-v2-5|密斯塔拉奥秘|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术秘传|魔网骑士|CoH-Weaveknight-v2-5|密斯塔拉奥秘|CoH-Weaveknight-v2-5|3"
+				}
+			],
+			"ENG_name": "The Initiate of Arcana Mystara"
+		},
+		{
+			"name": "奥术秘传",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "密斯塔拉奥秘",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你对\"剑与魔法\"中魔法一侧的专注，使你比其他魔网骑士多出一分优势。从任意职业（包括本职业）的法术列表中选择一道法术。所选法术必须是你能施展的环阶，如魔网骑士表所示。",
+				"你习得该法术，它对你而言视为魔网骑士法术，但不计入你已知的魔网骑士法术数量。",
+				"在5级、9级、13级和17级时，你各从任意职业的法术列表额外习得一道法术。"
+			],
+			"ENG_name": "Arcana Esoterica"
+		},
+		{
+			"name": "密斯塔拉奥秘门徒魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "密斯塔拉奥秘",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在本职业中到达特定等级时，你会习得一道额外法术，如密斯塔拉奥秘门徒法术表所示。该法术对你而言视为魔网骑士法术，但不计入你已知的魔网骑士法术数量。",
+				{
+					"type": "table",
+					"caption": "密斯塔拉奥秘门徒法术",
+					"colLabels": [
+						"魔网骑士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 通晓语言}"
+						],
+						[
+							"5级",
+							"{@spell 涅斯图魔法灵光}"
+						],
+						[
+							"9级",
+							"{@spell 巧言术}"
+						],
+						[
+							"13级",
+							"{@spell 秘法眼}"
+						],
+						[
+							"17级",
+							"{@spell 通晓传奇}"
+						]
+					]
+				}
+			],
+			"ENG_name": "Initiate of Arcana Mystara Magic"
+		},
+		{
+			"name": "知识虔信",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "密斯塔拉奥秘",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你虔诚的钻研赋予你精深的知识。你获得以下技能中两项自选技能的熟练项：{@skill 奥秘}、{@skill 历史}、{@skill 自然}或{@skill 宗教}。",
+				"你使用所选技能进行的任何属性检定，其熟练加值加倍。"
+			],
+			"ENG_name": "Knowledge Devotion"
+		},
+		{
+			"name": "精算之心",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "密斯塔拉奥秘",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你懂得以心智之力解决难题。你进行的任何魅力（{@skill 欺瞒}）检定、魅力（{@skill 游说}）检定、感知（{@skill 洞悉}）检定和感知（{@skill 察觉}）检定，都加上你智力调整值的一半（最低+1）。",
+				"此外，你为维持法术专注而进行的体质豁免检定获得加值，其数值等于你的智力调整值（最低+1）。"
+			],
+			"ENG_name": "Calculating Mind"
+		},
+		{
+			"name": "学者之识",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "密斯塔拉奥秘",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你学会了如何从每次打击中萃取知识。当一个生物受你奥术打击特性的效应影响时，你立即得知以下一项信息（自选）：",
+				{
+					"type": "list",
+					"items": [
+						"该生物某一项自选豁免的加值。",
+						"该生物所有的伤害抗性。",
+						"该生物所有的伤害免疫。",
+						"该生物所有的状态免疫。"
+					]
+				}
+			],
+			"ENG_name": "Knowledge of the Scholar"
+		},
+		{
+			"name": "奥术反击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "密斯塔拉奥秘",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你对魔网的操纵使你能够反射来袭的法术。当一个你能看见的生物施展一道只以你、或以你5尺内一名盟友为目标的法术时，你可以用反应进行一次智力（{@skill 奥秘}）检定，与该生物的智力（{@skill 奥秘}）检定对抗。若你的检定结果高于对方的检定结果，则该法术对你或你的盟友不生效应，转而指向施法者：环阶沿用施法者所用的法术位，但法术豁免DC、法术攻击加值与施法属性则采用你的魔网骑士数值。",
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Arcane Retaliation"
+		},
+		{
+			"name": "大奥术秘传",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "密斯塔拉奥秘",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你对奥术艺术的掌控已臻圆满。从{@filter 法师法术列表的6环、7环、8环和9环法术|spells|level=6;7;8;9|class=法师}中，每个环阶各选择一道法术。你可以不消耗法术位地施展这些法术各一次。再次使用前，你必须完成一次长休。"
+			],
+			"ENG_name": "Grand Arcana Esoterica"
+		},
+		{
+			"name": "弑神者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "弑神者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"entries": [
+				"史册虽未记载，但魔网骑士的传统并非始于对知识的求索。最初的魔网骑士中，有一些人将神祇的影响视为加诸凡人真正潜能之上的宇宙枷锁。于是他们踏上孤独之路，不懈修行，成为凡人国度的哨卫\u2014\u2014一如远古常态，凡有神魔妄加干涉，便格杀勿论。他们成为传奇，令上上下下诸位面闻风丧胆，正是那让\"不朽\"一词接受考验之人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "弑神者魔法|魔网骑士|CoH-Weaveknight-v2-5|弑神者|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "发掘神性|魔网骑士|CoH-Weaveknight-v2-5|弑神者|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "恐怖威仪|魔网骑士|CoH-Weaveknight-v2-5|弑神者|CoH-Weaveknight-v2-5|3"
+				}
+			],
+			"ENG_name": "The Godsbane"
+		},
+		{
+			"name": "弑神者魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "弑神者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在本职业中到达特定等级时，你会习得一道额外法术，如弑神者法术表所示。该法术对你而言视为魔网骑士法术，但不计入你已知的魔网骑士法术数量。",
+				{
+					"type": "table",
+					"caption": "弑神者法术",
+					"colLabels": [
+						"魔网骑士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 灾祸术}"
+						],
+						[
+							"5级",
+							"{@spell 魅影之力}"
+						],
+						[
+							"9级",
+							"{@spell 恐惧术}"
+						],
+						[
+							"13级",
+							"{@spell 放逐术}"
+						],
+						[
+							"17级",
+							"{@spell 驱逐善恶}"
+						]
+					]
+				}
+			],
+			"ENG_name": "Godsbane Magic"
+		},
+		{
+			"name": "恐怖威仪",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "弑神者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你能将恐惧植入敌人心中。你可以用附赠动作选择一个30尺内你能看见的生物。目标必须对你的魔网骑士法术豁免DC进行一次感知豁免。豁免失败者对你陷入{@condition 恐慌}状态，持续1分钟。以此方式恐慌期间，目标进行的任何豁免检定都必须减去你的智力调整值。目标可以在自己每个回合结束时重复此豁免，成功则自行终止此效应。",
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Terrifying Presence"
+		},
+		{
+			"name": "发掘神性",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "弑神者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你研习过神性的起源。你为回忆或辨识异怪、天界生物、元素、妖精和邪魔的传说、地位与目标而进行的智力（{@skill 历史}）检定具有优势。",
+				"此外，你对异怪、天界生物、元素、妖精和邪魔进行的感知（{@skill 洞悉}）检定具有优势。"
+			],
+			"ENG_name": "Unearthing Divinity"
+		},
+		{
+			"name": "凡人哨卫",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "弑神者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你已习惯了位面外生物的战斗方式，并学会如何加以防备。每当你完成一次长休时，你获得以下收益之一（自选），持续到你下次长休结束：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"name": "光之天罚",
+							"entries": [
+								"你获得光耀伤害抗性，且对抗{@condition 魅惑}的豁免检定具有优势。"
+							],
+							"ENG_name": "Light's Scourge"
+						},
+						{
+							"type": "entries",
+							"name": "屠影者",
+							"entries": [
+								"你获得暗蚀伤害抗性，且对抗{@condition 恐慌}的豁免检定具有优势。"
+							],
+							"ENG_name": "Shadowslayer"
+						}
+					]
+				}
+			],
+			"ENG_name": "Mortal Sentinel"
+		},
+		{
+			"name": "重创打击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "弑神者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你的魔法重创敌人、令其残废。当一个生物受你奥术打击特性的效应影响时，它无法恢复生命值，直到你的下回合结束。"
+			],
+			"ENG_name": "Grievous Strikes"
+		},
+		{
+			"name": "不屈之魂",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "弑神者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你已将身心锤炼成对抗位面外存在的武器，获得以下能力：",
+				{
+					"type": "list",
+					"items": [
+						"若你当前拥有\"光之天罚\"收益，你获得光耀伤害免疫与暗蚀伤害抗性；若你当前拥有\"屠影者\"收益，则改为获得暗蚀伤害免疫与光耀伤害抗性。",
+						"你30尺内的所有敌对生物失去其可能具有的{@condition 恐慌}状态免疫。"
+					]
+				}
+			],
+			"ENG_name": "Unyielding Spirit"
+		},
+		{
+			"name": "诛神者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "弑神者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以引导奥术能量与灵魂中的怒火来改变自身。你可以用附赠动作获得以下收益，持续1分钟：",
+				{
+					"type": "list",
+					"items": [
+						"若你豁免检定失败，你可以用反应重掷。你必须使用新的结果。",
+						"你对因你而{@condition 恐慌}的生物进行的攻击检定具有优势，且你对这些生物的近战武器攻击在d20掷出19或20时即为重击。",
+						"在你的每个回合开始时，你获得临时生命值，其数值等于你智力调整值的两倍。"
+					]
+				},
+				"一旦使用此特性，在完成一次长休之前你无法再次使用，除非你消耗1个5环法术位来再次使用它。"
+			],
+			"ENG_name": "Godslayer"
+		},
+		{
+			"name": "猎法者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "猎法者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"entries": [
+				"在所有魔网骑士中，猎法者最懂得制衡的意义。这门武道要求修习者忍受钻心的精神痛楚，因为学会如何撼动其他生物周身的奥术能量、部分切断其与魔网的联结，是令人胆寒的艰巨任务。许多猎法者曾痛失挚爱，或亲睹失控巫师带来的毁灭，自此立誓与之为永恒之敌。倘若最强大的施法者可称半神，那么猎法者便是提醒他们凡人终有一死的少数存在之一。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猎法者魔法|魔网骑士|CoH-Weaveknight-v2-5|猎法者|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猎手警戒|魔网骑士|CoH-Weaveknight-v2-5|猎法者|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猎法者烙印|魔网骑士|CoH-Weaveknight-v2-5|猎法者|CoH-Weaveknight-v2-5|3"
+				}
+			],
+			"ENG_name": "The Magehunter"
+		},
+		{
+			"name": "猎手警戒",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "猎法者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的研习教会你时刻准备出击。每当你掷先攻时，你将你的智力调整值加到该掷骰结果上。"
+			],
+			"ENG_name": "Hunter's Vigilance"
+		},
+		{
+			"name": "猎法者烙印",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "猎法者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你学会了如何更高效地追猎猎物。你可以用附赠动作选择一个30尺内你能看见的生物。该目标被标记1分钟。若目标死亡、你死亡、你使用此特性标记另一个生物、或你{@condition 失能}，标记提前消失。标记消失前，你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你为追踪或寻找被标记生物而进行的感知（{@skill 察觉}）与感知（{@skill 求生}）检定具有优势。",
+						"你对被标记生物的攻击造成额外心灵伤害。额外伤害等于你的熟练加值。",
+						"当你以武器攻击伤害被标记生物且其正维持一道法术的专注时，其为维持专注而进行的豁免检定结果必须减去你的智力调整值。"
+					]
+				},
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Magehunter's Brand"
+		},
+		{
+			"name": "猎法者魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "猎法者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你在本职业中到达特定等级时，你会习得一道额外法术，如猎法者法术表所示。该法术对你而言视为魔网骑士法术，但不计入你已知的魔网骑士法术数量。",
+				{
+					"type": "table",
+					"caption": "猎法者法术",
+					"colLabels": [
+						"魔网骑士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 猎人印记}"
+						],
+						[
+							"5级",
+							"{@spell 沉默术}"
+						],
+						[
+							"9级",
+							"{@spell 法术反制}"
+						],
+						[
+							"13级",
+							"{@spell 高等隐形术}"
+						],
+						[
+							"17级",
+							"{@spell 探知术}"
+						]
+					]
+				}
+			],
+			"ENG_name": "Magehunter Magic"
+		},
+		{
+			"name": "法术坚毅",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "猎法者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的训练使你能完全抵御本会影响你的法术。当你针对一道只以你为目标、且豁免成功后仍会影响你的法术豁免成功时，该法术转而对你不产生任何效应。"
+			],
+			"ENG_name": "Spell Mettle"
+		},
+		{
+			"name": "破法打击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "猎法者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你的打击刺穿敌人的魔法抗性。当一个生物受你奥术打击特性的效应影响时，它对你施展的任何法术的豁免检定均处于劣势，直到你的下回合结束。"
+			],
+			"ENG_name": "Spellbane Strikes"
+		},
+		{
+			"name": "虹吸魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "猎法者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你学会了在敌人最虚弱之时虹吸其魔法。当你以武器攻击造成一次重击时，目标失去其最高环阶的法术位，而你恢复1个已耗用的法术位，其环阶等于该生物所失法术位环阶的一半（最低1环）。若某生物没有法术位，此特性对其无效。"
+			],
+			"ENG_name": "Siphon Magic"
+		},
+		{
+			"name": "反魔法灵光",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "猎法者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你猎杀法师的本领已臻圆满。你可以用1个动作释放一道反魔法灵光，令狂暴的奥术能量以60尺半径环绕于你，获得以下收益，持续1分钟：",
+				{
+					"type": "list",
+					"items": [
+						"你对抗法术与魔法效应的豁免检定获得加值，其数值等于你的智力调整值（最低+1）。",
+						"你选定的生物在灵光半径内开始其回合时，必须对你的魔网骑士法术豁免DC进行一次感知豁免，失败则直到其下回合开始前无法施法。",
+						"当你施展一道要求你在施法过程中进行属性检定的防护系法术时（如{@spell 法术反制}和{@spell 解除魔法}），你为该属性检定加上你的熟练加值。"
+					]
+				},
+				"一旦使用此特性，在完成一次长休之前你无法再次使用。"
+			],
+			"ENG_name": "Anti-Magic Aura"
+		},
+		{
+			"name": "魔战士",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "魔战士",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"entries": [
+				"魔战士武道堪称魔网骑士中最具骑士精神的修会，是一条闪耀钢锋与奥术伟力之路。它适合渴望英勇奋战于前线之人\u2014\u2014这些魔网骑士在战场上往来传送，引导魔法摧灭敌军，以可畏的强势姿态慑服群敌。魔战士从不退缩于挑战，他以最直接的方式追逐目标：斩碎一切拦路之物。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "魔战士魔法|魔网骑士|CoH-Weaveknight-v2-5|魔战士|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "披甲法师|魔网骑士|CoH-Weaveknight-v2-5|魔战士|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术涌动|魔网骑士|CoH-Weaveknight-v2-5|魔战士|CoH-Weaveknight-v2-5|3"
+				}
+			],
+			"ENG_name": "The Magus"
+		},
+		{
+			"name": "奥术涌动",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "魔战士",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你学会了如何将魔法能量转化为战斗中的战术优势。你可以用附赠动作激发以下效应之一：",
+				{
+					"type": "list",
+					"items": [
+						"你传送至你周围特定半径内一个你能看见的未被占据空间。该半径等于你的智力调整值×5尺。",
+						"在你的回合结束前的一次近战武器攻击命中生物时，你可以对攻击目标5尺内至多两个其他生物造成额外力场伤害。额外伤害等于你的魔网骑士等级。",
+						"你5尺内的所有生物必须对你的魔网骑士法术豁免DC进行一次力量豁免，失败则被沿直线推离你一定距离。该距离等于你的智力调整值×5尺。你5尺内未被穿戴、持有或固定在位的物体，自动被沿直线推离你同样的距离。"
+					]
+				},
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Arcane Surge"
+		},
+		{
+			"name": "披甲法师",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "魔战士",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已学会如何在前线更有效率。你获得重甲熟练项。此外，你可以用1个动作以一枚特殊符文标记一套甲。标记之后，你随时可以呼唤它。若它在距你100尺内，你可以用1个动作召唤并穿上被标记的甲，使其瞬间传送着装于你身。",
+				"同一时间只有一套甲能受益于此特性。若你尝试标记第二套甲，第一套将失去此特性的收益。"
+			],
+			"ENG_name": "Armored Mage"
+		},
+		{
+			"name": "魔战士魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "魔战士",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在本职业中到达特定等级时，你会习得一道额外法术，如魔战士法术表所示。该法术对你而言视为魔网骑士法术，但不计入你已知的魔网骑士法术数量。",
+				{
+					"type": "table",
+					"caption": "魔战士法术",
+					"colLabels": [
+						"魔网骑士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 英雄气概}"
+						],
+						[
+							"5级",
+							"{@spell 镜影术}"
+						],
+						[
+							"9级",
+							"{@spell 闪现术}"
+						],
+						[
+							"13级",
+							"{@spell 任意门}"
+						],
+						[
+							"17级",
+							"{@spell 钢风斩|xge}"
+						]
+					]
+				}
+			],
+			"ENG_name": "Magus Magic"
+		},
+		{
+			"name": "劫掠打击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "魔战士",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你学会了利用对手防御中的任何破绽，更精准地送出法术。当你以武器攻击命中一个生物时，在你的下回合结束前，该生物对抗法术的下一次豁免检定处于劣势。"
+			],
+			"ENG_name": "Reaving Strike"
+		},
+		{
+			"name": "附咒打击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "魔战士",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你的魔法能量持续为你的打击灌注力量。每当你以武器攻击命中一个生物，该生物额外受到{@dice 1d6}点力场伤害。"
+			],
+			"ENG_name": "Enspelled Strikes"
+		},
+		{
+			"name": "钢铁专注",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "魔战士",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你已获得更强大的精神韧性。你获得感知豁免的熟练项。"
+			],
+			"ENG_name": "Steel Focus"
+		},
+		{
+			"name": "奥术连击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "魔战士",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你已精通将奥术之力化为身体迅捷的艺术。当你在自己回合执行{@action 攻击}动作时，你可以消耗1个法术位，作为该动作的一部分进行额外次数的攻击，次数等于该法术位环阶的一半（向下取整）。你每个回合只能使用一次此特性。"
+			],
+			"ENG_name": "Arcane Flurry"
+		},
+		{
+			"name": "咒弓手",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "咒弓手",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"entries": [
+				"咒弓手兼收古精灵技艺，以增幅自身的远程法术与箭矢，是魔网骑士中的战术家。他们冷静观察、战术性甄选目标\u2014\u2014据说曾有一支咒弓手大师小队射灭了一整支恶魔大军。这门武道讲究耐心、自省与急智。为了成就完美一射、为了箭无虚发、为了如他们立誓守护的魔网般流转不息，咒弓手绝不接受失败。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "咒弓手魔法|魔网骑士|CoH-Weaveknight-v2-5|咒弓手|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "心灵之眼|魔网骑士|CoH-Weaveknight-v2-5|咒弓手|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术精准|魔网骑士|CoH-Weaveknight-v2-5|咒弓手|CoH-Weaveknight-v2-5|3"
+				}
+			],
+			"ENG_name": "The Spellbow"
+		},
+		{
+			"name": "奥术精准",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "咒弓手",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你学会了如何以魔法强化射击。你可以用附赠动作，在你的回合结束前为你的下一次远程攻击附加以下收益之一：",
+				{
+					"type": "list",
+					"items": [
+						"你的该攻击检定具有优势。",
+						"该攻击无视一半和四分之三掩蔽。此外，被该攻击命中的生物直到其下回合开始前，AC承受-2减值。",
+						"当你为该攻击掷伤害时，你可以重掷至多等于你智力调整值数量的伤害骰，但必须使用新的结果。"
+					]
+				},
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Arcane Accuracy"
+		},
+		{
+			"name": "心灵之眼",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "咒弓手",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的训练使你能凭预判而非天生的准头发箭。当你以一件受益于你战斗施法者特性的远程武器攻击时，你可以用智力调整值代替力量或敏捷调整值来进行攻击检定与伤害掷骰。"
+			],
+			"ENG_name": "Mind's Eye"
+		},
+		{
+			"name": "咒弓手魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "咒弓手",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在本职业中到达特定等级时，你会习得一道额外法术，如咒弓手法术表所示。该法术对你而言视为魔网骑士法术，但不计入你已知的魔网骑士法术数量。",
+				{
+					"type": "table",
+					"caption": "咒弓手法术",
+					"colLabels": [
+						"魔网骑士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 致病射线}"
+						],
+						[
+							"5级",
+							"{@spell 马友夫强酸箭}"
+						],
+						[
+							"9级",
+							"{@spell 箭如雨下}"
+						],
+						[
+							"13级",
+							"{@spell 行动自如}"
+						],
+						[
+							"17级",
+							"{@spell 迅捷箭袋}"
+						]
+					]
+				}
+			],
+			"ENG_name": "Spellbow Magic"
+		},
+		{
+			"name": "速射",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "咒弓手",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你能在施法之余穿插迅捷的射击。当你用动作施展一道需要进行远程法术攻击的法术时，你可以用附赠动作进行一次远程武器攻击。"
+			],
+			"ENG_name": "Rapid Shot"
+		},
+		{
+			"name": "近身射击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "咒弓手",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你的训练揭示了在战斗中运用魔法的更多方式。你不再因处于一个能看见你且未{@condition 失能}的敌对生物5尺内而在远程攻击上承受劣势。你还将以下选项加入你的奥术打击特性：",
+				{
+					"name": "迸爆法术打击",
+					"type": "entries",
+					"entries": [
+						"你的打击随奥术能量爆裂。目标及其10尺内的所有生物必须对你的魔网骑士法术豁免DC进行一次敏捷豁免，失败者受到每法术位环阶{@dice 1d6}点的力场伤害，成功则伤害减半。"
+					],
+					"ENG_name": "Bursting Spellstrike"
+				},
+				{
+					"name": "钉缚法术打击",
+					"type": "entries",
+					"entries": [
+						"你以防护魔法灌注你的打击。目标额外受到力场伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，目标必须对你的魔网骑士法术豁免DC进行一次体质豁免，失败则陷入{@condition 束缚}状态，直到其下回合结束。"
+					],
+					"ENG_name": "Pinning Spellstrike"
+				}
+			],
+			"ENG_name": "Close Quarters Shot"
+		},
+		{
+			"name": "穿透射击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "咒弓手",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你的射击削弱敌人的防御。当你以远程攻击命中一个生物时，你可以用反应无视该生物的所有伤害抗性，直到你的回合结束。",
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Penetrating Shot"
+		},
+		{
+			"name": "毁灭射击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "咒弓手",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你的奥术造诣使你能为射击附加毁灭性的效果。你可以用附赠动作宣告一次毁灭射击。若你的下一次远程攻击命中，即自动造成一次重击。",
+				"你可以使用此特性两次。完成一次短休或长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Devastating Shot"
+		},
+		{
+			"name": "守咒者",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "守咒者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"entries": [
+				"守咒者是防护系专家。更进一步，这些魔网骑士能触及防护魔法的本质，学会以奥术能量强化自己的身心能力。守咒者武道要求修习者勇敢无畏，以信念直面世间的恐怖，并培养出对魔法的天生耐受力。守咒者是团队型战士，如磐石般引领战斗，永远是盟友可以信赖的依靠。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "守咒者魔法|魔网骑士|CoH-Weaveknight-v2-5|守咒者|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "防护系防御|魔网骑士|CoH-Weaveknight-v2-5|守咒者|CoH-Weaveknight-v2-5|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术强化|魔网骑士|CoH-Weaveknight-v2-5|守咒者|CoH-Weaveknight-v2-5|3"
+				}
+			],
+			"ENG_name": "The Spellwarden"
+		},
+		{
+			"name": "防护系防御",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "守咒者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你与防护魔法的亲和以环绕你的护障之形显现。当你未穿着任何护甲时，你的AC等于10+你的敏捷调整值+你的智力调整值。你可以使用盾牌并仍获得此收益。"
+			],
+			"ENG_name": "Abjurant Defense"
+		},
+		{
+			"name": "奥术强化",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "守咒者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你学会了如何燃耗奥术能量来强化武艺。你可以用附赠动作激发以下效应之一：",
+				{
+					"type": "list",
+					"items": [
+						"你所有的敏捷（{@skill 特技}）与力量（{@skill 运动}）检定具有优势。",
+						"你使用一项自选属性的豁免检定获得加值，其数值等于你的智力调整值。",
+						"你获得临时生命值，其数值等于你的魔网骑士等级。"
+					]
+				},
+				"这些效应持续1分钟。同一时间你只能保持一项奥术强化的效应生效。若你在已有一项效应生效时用附赠动作激发另一项奥术强化效应，前一项效应终止。",
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此特性所有已耗用的次数。"
+			],
+			"ENG_name": "Arcane Boost"
+		},
+		{
+			"name": "守咒者魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "守咒者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在本职业中到达特定等级时，你会习得一道额外法术，如守咒者法术表所示。该法术对你而言视为魔网骑士法术，但不计入你已知的魔网骑士法术数量。",
+				{
+					"type": "table",
+					"caption": "守咒者法术",
+					"colLabels": [
+						"魔网骑士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 防护善恶}"
+						],
+						[
+							"5级",
+							"{@spell 援助术}"
+						],
+						[
+							"9级",
+							"{@spell 解除魔法}"
+						],
+						[
+							"13级",
+							"{@spell 防死结界}"
+						],
+						[
+							"17级",
+							"{@spell 原力法阵}"
+						]
+					]
+				}
+			],
+			"ENG_name": "Spellwarden Magic"
+		},
+		{
+			"name": "延伸防护",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "守咒者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"当你施展一道只以你为目标的防护系法术时，你可以在施法的同时消耗一次奥术强化的使用次数，选择你30尺内的第二个生物。该法术也同时作用于被选中的生物。"
+			],
+			"ENG_name": "Extended Abjuration"
+		},
+		{
+			"name": "防护系打击",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "守咒者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你学会了在引导魔法的同时解读敌人。当一个生物受你奥术打击特性的效应影响时，该生物任何不以你为目标的攻击检定均处于劣势，直到你的下回合开始。"
+			],
+			"ENG_name": "Abjurant Strikes"
+		},
+		{
+			"name": "法术抗性",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "守咒者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你对抗法术的豁免检定具有优势，且对法术伤害具有抗性。"
+			],
+			"ENG_name": "Spell Resistance"
+		},
+		{
+			"name": "群体奥术强化",
+			"source": "CoH-Weaveknight-v2-5",
+			"className": "魔网骑士",
+			"classSource": "CoH-Weaveknight-v2-5",
+			"subclassShortName": "守咒者",
+			"subclassSource": "CoH-Weaveknight-v2-5",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你的防护系造诣已深，足以将自己的能力分享给他人。当你使用奥术强化时，你可以在你30尺内选择至多等于你智力调整值（至少一个）数量的其他生物，使它们同样获得你所激发效应的收益，将该效应延伸至它们。这些生物获得的收益持续1分钟，或直到你激发另一项奥术强化效应并选择相同的生物来延伸该效应。"
+			],
+			"ENG_name": "Mass Arcane Boost"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "奥术武装",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"一件受益于你战斗施法者特性的武器，在克服非魔法攻击与伤害的抗性和免疫时视为魔法武器。",
+				"此外，该武器的攻击检定与伤害掷骰获得+1加值；若它本身已是带有此类加值的魔法武器，则不获得此加值。在10级时，该加值提升为+2；17级时提升为+3。"
+			],
+			"ENG_name": "Arcane Armament"
+		},
+		{
+			"name": "奥术锁链",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						},
+						"subclass": {
+							"name": "弑神者",
+							"visible": true,
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Godsbane"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用附赠动作指定一个30尺内你能看见、且因你而{@condition 恐慌}的生物。目标必须对你的魔网骑士法术豁免DC进行一次力量豁免。豁免失败时，你唤出一条奥术能量锁链，用它将目标朝你拉近至多30尺，且目标受到心灵伤害，数值等于你的智力调整值（至少1点）。"
+			],
+			"ENG_name": "Arcane Chain"
+		},
+		{
+			"name": "奥术门徒",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"你从{@filter 魔网骑士法术列表|spells|class=魔网骑士 (CoHWK)}中自选习得一道法术。该法术必须是你拥有对应环阶法术位的法术。"
+			],
+			"ENG_name": "Arcane Disciple"
+		},
+		{
+			"name": "奥术视觉",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"你可以施放{@spell 侦测魔法}，无需消耗法术位或材料成分。",
+				"你可以使用此秘术的次数等于你的智力调整值（至少一次）。完成一次长休后，你恢复此秘术所有已耗用的次数。"
+			],
+			"ENG_name": "Arcane Sight"
+		},
+		{
+			"name": "奥术论题",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"选择一道你已知的1环魔网骑士法术。你可以不消耗法术位地施展它一次。完成一次长休后，你重新获得此能力。"
+			],
+			"ENG_name": "Arcane Thesis"
+		},
+		{
+			"name": "奥术战士",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"FS:WK"
+			],
+			"entries": [
+				"你从{@filter 法师法术列表|spells|level=0|class=法师}中自选习得两个戏法。它们对你而言视为魔网骑士法术，且智力是你施展它们的施法属性。每当你在本职业中获得等级时，你可以将其中一个戏法替换为法师法术列表中的另一道戏法。"
+			],
+			"ENG_name": "Arcane Warrior"
+		},
+		{
+			"name": "奥术师洞见",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"你可以不消耗法术位地施放{@spell 通晓语言}。完成一次长休后，你重新获得此能力。"
+			],
+			"ENG_name": "Arcanist's Insight"
+		},
+		{
+			"name": "箭术",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"FS:WK"
+			],
+			"entries": [
+				"你以远程武器进行的攻击检定获得+2加值。"
+			],
+			"ENG_name": "Archery"
+		},
+		{
+			"name": "战法师之盾",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"护盾术"
+					]
+				}
+			],
+			"entries": [
+				"当你施展护盾术时，你也获得触发该次攻击的某一种伤害类型（自选）的抗性，直到你的下回合开始。"
+			],
+			"ENG_name": "Battlemage's Shield"
+		},
+		{
+			"name": "战法师法衣",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用1个动作触碰一套无人穿着或携带、且你拥有熟练项的甲，并立即穿上它，前提是你当前未穿着护甲。你对这套甲的熟练项持续至其被脱下。或者，你可以用1个动作立即脱下一套你正穿着的甲，前提是你5尺内有一个未被占据的空间可供该甲出现。"
+			],
+			"ENG_name": "Battlemage's Vestment"
+		},
+		{
+			"name": "引导法术",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你用动作施展一道需要进行法术攻击的魔网骑士法术，且目标处于一件受益于你战斗施法者特性的武器的触及或射程内时，你可以用该武器进行一次攻击来取代该法术攻击。命中时，目标受该法术影响，并照常受到武器伤害。你必须在掷骰前选择以武器攻击取代法术攻击。",
+				"当你以此秘术用武器攻击命中一个生物时，你无法使用你的奥术打击特性。"
+			],
+			"ENG_name": "Channel Spell"
+		},
+		{
+			"name": "专注学者",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						},
+						"subclass": {
+							"name": "密斯塔拉奥秘门徒",
+							"visible": true,
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Initiate of Arcana Mystara"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你学会了如何制作灌注魔法的卷轴。你可以将一道你已知的魔网骑士法术转录为卷轴，方法是消耗1个等于该法术环阶的法术位，并耗费每法术环阶2小时和50金币，外加该法术本身所需的任何材料成分。",
+				"一旦你以此秘术制作了卷轴，它将在等于你智力调整值（至少一天）的天数内保持其魔力。此期限过后，随着法术消散，卷轴失去魔力而变为非魔法物品。"
+			],
+			"ENG_name": "Dedicated Scholar"
+		},
+		{
+			"name": "防御",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"FS:WK"
+			],
+			"entries": [
+				"当你穿着护甲时，你的AC获得+1加值。"
+			],
+			"ENG_name": "Defense"
+		},
+		{
+			"name": "对决",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"FS:WK"
+			],
+			"entries": [
+				"当你单手持用一把近战武器且未持用其他武器时，你以该武器进行的伤害掷骰获得+2加值。"
+			],
+			"ENG_name": "Dueling"
+		},
+		{
+			"name": "巨武器战斗",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"FS:WK"
+			],
+			"entries": [
+				"当你以双手持用的近战武器进行攻击的伤害骰掷出1或2时，你可以重掷该骰并必须使用新结果，即使新结果为1或2。该武器必须具有双手或多用属性，你才能获得此收益。"
+			],
+			"ENG_name": "Great Weapon Fighting"
+		},
+		{
+			"name": "坚韧战法师",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"凭纯粹的意志，即便身处最凶险的境地你也能守住自己的魔法。当你为维持法术专注而进行的体质豁免检定失败时，你可以改为直接成功。",
+				"一旦使用此秘术，在完成一次长休之前你无法再次使用。"
+			],
+			"ENG_name": "Hardened Battlemage"
+		},
+		{
+			"name": "强化奥术打击",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用奥术打击特性时，你为激发它所消耗的法术位视为比其原本环阶高一环。"
+			],
+			"ENG_name": "Improved Arcane Strike"
+		},
+		{
+			"name": "博学奥术师",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"你可以随意施放{@spell 鉴定术}而无需消耗法术位，但必须选择一件你拥有熟练项的武器或一套甲作为目标。除任何魔法属性外，你还会得知该目标的最初创造者、其设计用途，以及最后一位使用它之人的姓名。"
+			],
+			"ENG_name": "Loremaster Arcanist"
+		},
+		{
+			"name": "魔力储备",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"通过与流经世界的魔法能量调谐，你能找回自身的一部分魔力。每天一次，当你完成一次短休时，你可以选择恢复若干已耗用的法术位。这些法术位的环阶总和须等于或低于你的智力调整值，且任何一个法术位的环阶都不得为4环或更高。"
+			],
+			"ENG_name": "Magical Reserves"
+		},
+		{
+			"name": "投射防护",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						},
+						"subclass": {
+							"name": "守咒者",
+							"visible": true,
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Spellwarden"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你30尺内的一友方生物进行对抗法术或魔法效应的豁免检定时，你可以用反应给予该生物一次豁免检定加值，其数值等于你的智力调整值（最低+1）。你可以在掷骰之后、DM宣布成功或失败之前选择如此做。",
+				"使用此秘术会消耗一次你的奥术强化特性使用次数。"
+			],
+			"ENG_name": "Projected Abjuration"
+		},
+		{
+			"name": "惩戒打击",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						},
+						"subclass": {
+							"name": "魔战士",
+							"visible": true,
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Magus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当一个生物以近战攻击命中你时，若该生物在你的触及范围内，你可以用反应对该生物进行一次近战武器攻击。",
+				"使用此秘术会消耗一次你的奥术涌动特性使用次数。"
+			],
+			"ENG_name": "Rebuking Strike"
+		},
+		{
+			"name": "穷追不舍",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						},
+						"subclass": {
+							"name": "猎法者",
+							"visible": true,
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Magehunter"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你用动作施展一道只以一个被你猎法者烙印特性标记的生物为目标的法术时，你可以用附赠动作对该生物进行一次武器攻击。"
+			],
+			"ENG_name": "Relentless Pursuit"
+		},
+		{
+			"name": "感应魔法",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"你可以用1个动作凝聚心神、延展感官，搜寻其他能操纵魔法的生物。直到你的下回合结束，你知晓你60尺内能看见的每个生物是否具有施法、契约魔法或天生施法特性或特质。此外，若这些生物拥有施法属性，你也会得知各自的施法属性是什么。"
+			],
+			"ENG_name": "Sense Magic"
+		},
+		{
+			"name": "娴熟修习者",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"你从魔网骑士职业技能列表中自选两项技能获得熟练项。"
+			],
+			"ENG_name": "Skilled Practitioner"
+		},
+		{
+			"name": "净心姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"维持此姿态期间，你不会{@condition 魅惑}，且你的感知豁免检定具有优势。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "碎念法术打击",
+					"type": "entries",
+					"entries": [
+						"你以心灵能量包裹剑刃。目标额外受到心灵伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，目标必须对你的魔网骑士法术豁免DC进行一次感知豁免，失败则因你陷入{@condition 恐慌}状态，直到其下回合结束。"
+					],
+					"ENG_name": "Mindshattering Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Cleansed Mind"
+		},
+		{
+			"name": "盘蛇姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"维持此姿态期间，你的近战攻击触及增加5尺，且你的远程攻击射程加倍。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "淬毒法术打击",
+					"type": "entries",
+					"entries": [
+						"你以剧毒包裹剑刃。目标额外受到毒素伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，目标必须对你的魔网骑士法术豁免DC进行一次体质豁免，失败则陷入{@condition 中毒}状态，直到其下回合结束。"
+					],
+					"ENG_name": "Venomous Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Coiling Viper"
+		},
+		{
+			"name": "赤月姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"维持此姿态期间，魔法无法使你入睡，且你的生命值上限无法被降低。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "吸血法术打击",
+					"type": "entries",
+					"entries": [
+						"你以猩红能量包裹剑刃。目标额外受到暗蚀伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，你恢复生命值，数值等于所造成暗蚀伤害的一半。"
+					],
+					"ENG_name": "Vampiric Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Crimson Moon"
+		},
+		{
+			"name": "辉阳姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"维持此姿态期间，你和你10尺内的友方生物对抗{@condition 恐慌}的豁免检定具有优势。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "光耀法术打击",
+					"type": "entries",
+					"entries": [
+						"你以明亮光芒包裹剑刃。目标额外受到光耀伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，目标必须对你的魔网骑士法术豁免DC进行一次体质豁免，失败则陷入{@condition 目盲}状态，直到其下回合结束。"
+					],
+					"ENG_name": "Radiant Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Radiant Sun"
+		},
+		{
+			"name": "升凤姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"维持此姿态期间，你穿越困难地形不消耗额外移动力。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "燃焰法术打击",
+					"type": "entries",
+					"entries": [
+						"你以灼人热浪包裹剑刃。目标额外受到火焰伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，目标必须对你的魔网骑士法术豁免DC进行一次敏捷豁免，失败则着火，持续至你不再维持此姿态。在目标每个回合结束时，它受到等于你智力调整值的火焰伤害（至少1点），除非它或它5尺内的另一个生物用1个动作扑灭火焰。"
+					],
+					"ENG_name": "Ignited Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Rising Phoenix"
+		},
+		{
+			"name": "怒狮姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"维持此姿态期间，你的力量豁免检定具有优势。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "雷鸣法术打击",
+					"type": "entries",
+					"entries": [
+						"你以声波能量包裹剑刃。目标额外受到雷鸣伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，目标必须对你的魔网骑士法术豁免DC进行一次力量豁免，失败则被沿直线推离你10尺。若一个大型或更小的生物豁免失败，它还会被击{@condition 倒地}。此法术打击发出巨大声响，300尺内可闻。"
+					],
+					"ENG_name": "Thundering Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Roaring Lion"
+		},
+		{
+			"name": "天脉姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"维持此姿态期间，你在自己回合可以用附赠动作执行{@action 疾走}动作。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "电击法术打击",
+					"type": "entries",
+					"entries": [
+						"你以静电能量包裹剑刃。目标额外受到闪电伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，目标必须对你的魔网骑士法术豁免DC进行一次体质豁免，失败则无法进行反应，直到其下回合结束。"
+					],
+					"ENG_name": "Shocking Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Sky's Veins"
+		},
+		{
+			"name": "兵圣姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "魔网骑士",
+							"source": "CoH-Weaveknight-v2-5",
+							"ENG_name": "Weaveknight"
+						}
+					}
+				}
+			],
+			"entries": [
+				"维持此姿态期间，你为维持法术专注而进行的体质豁免检定具有优势。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "断魔法术打击",
+					"type": "entries",
+					"entries": [
+						"你削弱目标与魔法的联结。目标在1分钟内下一次施展法术时，必须通过一次专注检定，其DC等于你的魔网骑士法术豁免DC加上你所耗法术位的环阶，否则该法术失效并损耗。对同一目标多次使用断魔法术打击不会叠加。"
+					],
+					"ENG_name": "Disjuncting Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Warsage"
+		},
+		{
+			"name": "冬狼姿态",
+			"source": "CoH-Weaveknight-v2-5",
+			"featureType": [
+				"SA"
+			],
+			"entries": [
+				"维持此姿态期间，若至少一名并未{@condition 失能}的盟友处于某生物5尺内，则你在自己回合内对该生物进行的第一次近战攻击检定具有优势。",
+				"此外，维持此姿态期间，将以下选项加入你的奥术打击特性的效应：",
+				{
+					"name": "酷寒法术打击",
+					"type": "entries",
+					"entries": [
+						"你以寒霜包裹剑刃。目标额外受到寒冷伤害（在武器伤害之外），额外伤害等于每法术位环阶{@dice 1d6}点。此外，目标必须对你的魔网骑士法术豁免DC进行一次体质豁免，失败则速度降为0，直到其下回合结束。"
+					],
+					"ENG_name": "Frigid Spellstrike"
+				}
+			],
+			"ENG_name": "Stance of the Winter Wolf"
+		}
+	]
+}
