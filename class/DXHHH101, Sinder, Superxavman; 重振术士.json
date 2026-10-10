@@ -1,0 +1,1712 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SorcererRevitalized",
+				"abbreviation": "SRv",
+				"full": "重振术士",
+				"version": "0.2",
+				"authors": [
+					"DXHHH101",
+					"Sinder",
+					"Superxavman"
+				],
+				"convertedBy": [
+					"DXHHH101"
+				],
+				"color": "00b4ff"
+			},
+			{
+				"json": "SorcererRevitalized-TCE",
+				"abbreviation": "TCE",
+				"full": "重振术士 - 塔莎的万事坩埚",
+				"version": "1.0",
+				"authors": [
+					"Wizards of the Coast"
+				],
+				"targetSchema": "1.0.0"
+			},
+			{
+				"json": "SorcererRevitalized-XGE",
+				"abbreviation": "XGE",
+				"full": "重振术士 - 珊娜萨的万事指南",
+				"version": "1.0",
+				"authors": [
+					"Wizards of the Coast"
+				],
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dependencies": {
+			"subclass": [
+				"sorcerer",
+				"OrchardSorcReflourished"
+			]
+		},
+		"edition": "classic",
+		"dateAdded": 1667009734,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "b902abc71a"
+	},
+	"class": [
+		{
+			"ENG_name": "Sorcerer, Revitalized",
+			"name": "重振术士",
+			"source": "SorcererRevitalized",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"con",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"cantripProgression": [
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6
+			],
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15,
+				15,
+				15
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Metamagic",
+					"name": "超魔法",
+					"featureType": [
+						"MM"
+					],
+					"progression": {
+						"3": 2,
+						"10": 3,
+						"17": 4
+					}
+				}
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"{@item 匕首|phb|匕首}",
+					"{@item 飞镖|phb|飞镖}",
+					"{@item 投石索|phb|投石索}",
+					"{@item 长棍|phb|长棍}",
+					"{@item 轻弩|phb|轻弩}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"deception",
+								"insight",
+								"intimidation",
+								"persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 轻弩|phb}和{@item 弩矢(20)|phb|20支弩箭}或 (b) 任何{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) 一个{@item 地城套组|phb}或(b) 一个{@item 探索套组|phb}",
+					"两把{@item 匕首|phb|匕首}"
+				],
+				"goldAlternative": "{@dice 3d4 × 10|3d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"轻弩|phb",
+							"弩矢(20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"材料包|phb"
+						],
+						"b": [
+							"奥术法器|phb"
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"item": "匕首|phb",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"术法点"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							19
+						],
+						[
+							20
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|class=术士}",
+						"{@filter 已知法术|spells|class=术士}"
+					],
+					"rows": [
+						[
+							4,
+							2
+						],
+						[
+							4,
+							3
+						],
+						[
+							4,
+							4
+						],
+						[
+							5,
+							5
+						],
+						[
+							5,
+							6
+						],
+						[
+							5,
+							7
+						],
+						[
+							5,
+							8
+						],
+						[
+							5,
+							9
+						],
+						[
+							5,
+							10
+						],
+						[
+							6,
+							11
+						],
+						[
+							6,
+							12
+						],
+						[
+							6,
+							12
+						],
+						[
+							6,
+							13
+						],
+						[
+							6,
+							13
+						],
+						[
+							6,
+							14
+						],
+						[
+							6,
+							14
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1环|spells|level=1|class=术士}",
+						"{@filter 2环|spells|level=2|class=术士}",
+						"{@filter 3环|spells|level=3|class=术士}",
+						"{@filter 4环|spells|level=4|class=术士}",
+						"{@filter 5环|spells|level=5|class=术士}",
+						"{@filter 6环|spells|level=6|class=术士}",
+						"{@filter 7环|spells|level=7|class=术士}",
+						"{@filter 8环|spells|level=8|class=术士}",
+						"{@filter 9环|spells|level=9|class=术士}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"施法|重振术士|SorcererRevitalized|1",
+				{
+					"classFeature": "术法起源|术士|PHB|1",
+					"gainSubclassFeature": true
+				},
+				"Spell Versatility|Sorcerer|PHB|1|UAClassFeatureVariants",
+				"魔力泉涌|术士|PHB|2",
+				"Font of Magic Options|Sorcerer|PHB|2|UAClassFeatureVariants",
+				"超魔法|重振术士|SorcererRevitalized|3",
+				"Metamagic Options|Sorcerer|PHB|3|UAClassFeatureVariants",
+				"超魔法选项|术士|PHB|3|TCE",
+				"术法复苏|重振术士|SorcererRevitalized|3",
+				"属性值提升|术士|PHB|4",
+				"Proficiency Versatility|Sorcerer|PHB|4|UAClassFeatureVariants",
+				"替换戏法|重振术士|SorcererRevitalized|4",
+				"魔法指引|术士|PHB|5|TCE",
+				{
+					"classFeature": "术法起源特性|术士|PHB|6",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|术士|PHB|8",
+				"Proficiency Versatility|Sorcerer|PHB|8|UAClassFeatureVariants",
+				"超魔法|重振术士|SorcererRevitalized|10",
+				"属性值提升|术士|PHB|12",
+				"Proficiency Versatility|Sorcerer|PHB|12|UAClassFeatureVariants",
+				{
+					"classFeature": "术法起源特性|术士|PHB|14",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|术士|PHB|16",
+				"Proficiency Versatility|Sorcerer|PHB|16|UAClassFeatureVariants",
+				"超魔法|重振术士|SorcererRevitalized|17",
+				{
+					"classFeature": "术法起源特性|术士|PHB|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|术士|PHB|19",
+				"Proficiency Versatility|Sorcerer|PHB|19|UAClassFeatureVariants",
+				"超魔法精通|重振术士|SorcererRevitalized|20"
+			],
+			"subclassTitle": "术法起源"
+		}
+	],
+	"subclass": [
+		{
+			"source": "SorcererRevitalized-TCE",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"_copy": {
+				"ENG_name": "Aberrant Mind",
+				"name": "畸变心智",
+				"source": "TCE",
+				"shortName": "畸变心智",
+				"className": "术士",
+				"classSource": "PHB"
+			}
+		},
+		{
+			"source": "SorcererRevitalized-TCE",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"_copy": {
+				"ENG_name": "Clockwork Soul",
+				"name": "时械之魂",
+				"source": "TCE",
+				"shortName": "时械之魂",
+				"className": "术士",
+				"classSource": "PHB"
+			}
+		},
+		{
+			"source": "SorcererRevitalized-XGE",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"_copy": {
+				"ENG_name": "Divine Soul",
+				"name": "神圣之魂",
+				"source": "XGE",
+				"shortName": "神圣之魂",
+				"className": "术士",
+				"classSource": "PHB"
+			}
+		},
+		{
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"_copy": {
+				"ENG_name": "Draconic Bloodline",
+				"name": "龙族血脉",
+				"source": "PHB",
+				"shortName": "龙族血脉",
+				"className": "术士",
+				"classSource": "PHB"
+			},
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"吸收元素|XGE",
+							"繁彩球"
+						],
+						"3": [
+							"龙息术|XGE",
+							"识破隐形"
+						],
+						"5": [
+							"恐惧术",
+							"飞行术"
+						],
+						"7": [
+							"元素灾厄|XGE",
+							"行动自如"
+						],
+						"9": [
+							"操控风力|XGE",
+							"通晓传奇"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"识破隐形",
+				"恐惧术",
+				"通晓传奇",
+				"行动自如",
+				"吸收元素|xge",
+				"阿迦纳萨喷火术|xge",
+				"毕格比之手|phb",
+				"燃烧之手|phb",
+				"混乱箭|xge",
+				"繁彩球|phb",
+				"寒冰锥|phb",
+				"不灭明焰|phb",
+				"黑暗术|phb",
+				"拂晓|xge",
+				"昼明术|phb",
+				"地颤|xge",
+				"火焰护盾|phb",
+				"火球术|phb",
+				"火焰刀|phb",
+				"冰冷一指|idrotf",
+				"造风术|phb",
+				"炼狱叱喝|phb",
+				"冰风暴|phb",
+				"焚烧术|xge",
+				"吉姆的魔法飞弹|ai",
+				"李欧蒙小屋|phb",
+				"闪电束|phb",
+				"魔法飞弹|phb",
+				"马友夫强酸箭|phb",
+				"马友夫微流星|xge",
+				"欧提路克弹力法球|phb",
+				"雾凇霜缚|FTD",
+				"灼热射线|phb",
+				"短讯术|phb",
+				"粉碎音波|phb",
+				"致病辐射|xge",
+				"史尼洛雪球群|xge",
+				"风暴法球|xge",
+				"塔莎酸蚀酿|tce",
+				"雷鸣波|phb",
+				"浓酸球|xge",
+				"火墙术|phb",
+				"力场墙|phb",
+				"光墙术|xge",
+				"沙墙术|xge",
+				"石墙术|phb",
+				"水墙术|xge",
+				"守护之风|xge",
+				"巫术箭|phb",
+				"变身术|phb",
+				"活化物件|phb",
+				"阿莎德隆奔行|FTD",
+				"闪现术|phb",
+				"弹射术|xge",
+				"操控水体|phb",
+				"操控风力|xge",
+				"创造法驱魔舵|AAG",
+				"黑暗视觉|phb",
+				"龙息术|xge",
+				"地缚|xge",
+				"元素灾厄|xge",
+				"强化属性|phb",
+				"变巨/缩小术|phb",
+				"土石喷发|xge",
+				"脚底抹油|phb",
+				"鬼斧神工|phb",
+				"羽落术|phb",
+				"烈焰箭矢|xge",
+				"飞行术|phb",
+				"气化形体|phb",
+				"加速术|phb",
+				"跳跃术|phb",
+				"动力短行|scc",
+				"敲击术|phb",
+				"浮空术|phb",
+				"大步奔行|phb",
+				"魔化武器|phb",
+				"麦克斯米利安的地之攫|xge",
+				"穿墙术|phb",
+				"变形术|phb",
+				"烟火术|xge",
+				"魔绳术|phb",
+				"授予技能|xge",
+				"写入空中|xge",
+				"缓慢术|phb",
+				"蛛行术|phb",
+				"塑石术|phb",
+				"心灵遥控|phb",
+				"迷你仆役|xge",
+				"转化岩石|xge",
+				"水下呼吸|phb",
+				"水上行走|phb"
+			],
+			"subclassFeatures": [
+				"龙族血脉|重振术士|SorcererRevitalized|龙族血脉|SorcererRevitalized|1",
+				"元素亲和|术士||龙族血脉||6",
+				"龙翼|术士||龙族血脉||14",
+				"龙之威仪|术士||龙族血脉||18"
+			]
+		},
+		{
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"_copy": {
+				"ENG_name": "Shadow Magic",
+				"name": "暗影魔法",
+				"source": "XGE",
+				"shortName": "幽影",
+				"className": "术士",
+				"classSource": "PHB"
+			},
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"脆弱诅咒",
+							"致伤术"
+						],
+						"3": [
+							"行动无踪",
+							"幽影刃|XGE",
+							"黑暗术"
+						],
+						"5": [
+							"假死术",
+							"吸血鬼之触"
+						],
+						"7": [
+							"枯萎术",
+							"莫伊之影|XGE"
+						],
+						"9": [
+							"负能量洪流|XGE",
+							"伪装术"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"脆弱诅咒",
+				"行动无踪",
+				"黑暗术",
+				"朦胧术|phb",
+				"七彩喷射|phb",
+				"造物术|phb",
+				"易容术|phb",
+				"扭曲价值|ai",
+				"托梦术|phb",
+				"恐惧术|phb",
+				"高等隐形术|phb",
+				"幻景|phb",
+				"催眠图纹|phb",
+				"迷幻手稿|phb",
+				"隐形术|phb",
+				"魔嘴术|phb",
+				"高等幻影|phb",
+				"镜影术|phb",
+				"假象术|phb",
+				"纳撒尔恶作剧|FTD",
+				"涅斯图魔法灵光|phb",
+				"魅影之力|phb",
+				"魅影杀手|phb",
+				"魅影驹|phb",
+				"伪装术|phb",
+				"幽影刃|xge",
+				"无声幻影|phb",
+				"活化死尸|phb",
+				"降咒|phb",
+				"枯萎术|phb",
+				"目盲术/耳聋术|phb",
+				"造成恐惧|xge",
+				"骷髅之舞|xge",
+				"汲能术|xge",
+				"虚假生命|phb",
+				"假死术|phb",
+				"遗体防腐|phb",
+				"生命转换|xge",
+				"负能量洪流|xge",
+				"衰弱射线|phb",
+				"致病射线|phb",
+				"莫伊之影|xge",
+				"死者交谈|phb",
+				"魂灵环绕|tce",
+				"亡灵召唤术|tce",
+				"吸血鬼之触|phb",
+				"靡叶生华|scc"
+			],
+			"subclassFeatures": [
+				"暗影魔法|重振术士|SorcererRevitalized|幽影|SorcererRevitalized|1",
+				"凶兆猎犬|术士||幽影|XGE|6",
+				"幽影漫步|术士||幽影|XGE|14",
+				"影灵形态|术士||幽影|XGE|18"
+			]
+		},
+		{
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"_copy": {
+				"ENG_name": "Storm Sorcery",
+				"name": "风暴术法",
+				"source": "XGE",
+				"shortName": "风暴",
+				"className": "术士",
+				"classSource": "PHB"
+			},
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"云雾术",
+							"雷鸣波"
+						],
+						"3": [
+							"造风术",
+							"浮空术"
+						],
+						"5": [
+							"闪电束",
+							"雷霆步|XGE"
+						],
+						"7": [
+							"风暴法球|XGE",
+							"碧水法球|XGE"
+						],
+						"9": [
+							"操控风力|XGE",
+							"大漩涡|XGE"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"操控风力|xge",
+				"浮空术|phb",
+				"阿迦纳萨喷火术|xge",
+				"空气泡泡|AAG",
+				"哈达之臂|phb",
+				"毕格比之手|phb",
+				"燃烧之手|phb",
+				"混乱箭|xge",
+				"繁彩球|phb",
+				"匕首之云|phb",
+				"死云术|phb",
+				"寒冰锥|phb",
+				"咒唤元素|phb",
+				"咒唤微元素群|phb",
+				"不灭明焰|phb",
+				"黑暗术|phb",
+				"拂晓|xge",
+				"昼明术|phb",
+				"任意门|phb",
+				"龙卷尘暴|xge",
+				"地颤|xge",
+				"艾伐黑触手|phb",
+				"渺远步|xge",
+				"寻获魔宠|phb",
+				"火焰护盾|phb",
+				"火球术|phb",
+				"火焰刀|phb",
+				"炽焰法球|phb",
+				"云雾术|phb",
+				"冰冷一指|idrotf",
+				"油腻术|phb",
+				"造风术|phb",
+				"炼狱叱喝|phb",
+				"哈达之欲|phb",
+				"冰刃|xge",
+				"冰风暴|phb",
+				"焚烧术|xge",
+				"地狱呼唤|xge",
+				"疫病虫群|phb",
+				"吉姆的魔法飞弹|ai",
+				"李欧蒙秘藏箱|phb",
+				"李欧蒙小屋|phb",
+				"闪电束|phb",
+				"魔法飞弹|phb",
+				"马友夫强酸箭|phb",
+				"马友夫微流星|xge",
+				"迷踪步|phb",
+				"魔邓肯忠犬|phb",
+				"欧提路克弹力法球|phb",
+				"雾凇霜缚|FTD",
+				"灼热射线|phb",
+				"短讯术|phb",
+				"粉碎音波|phb",
+				"致病辐射|xge",
+				"雪雨暴|phb",
+				"史尼洛雪球群|xge",
+				"钢风斩|xge",
+				"臭云术|phb",
+				"风暴法球|xge",
+				"异怪召唤术|tce",
+				"构装召唤术|tce",
+				"龙类灵魄召唤术|FTD",
+				"元素召唤术|tce",
+				"妖精召唤术|tce",
+				"高阶恶魔召唤术|xge",
+				"召唤次级恶魔|xge",
+				"暗影衍体召唤术|tce",
+				"塔莎酸蚀酿|tce",
+				"传送法阵|phb",
+				"谭森浮碟术|phb",
+				"雷霆步|xge",
+				"雷鸣波|phb",
+				"潮涌|xge",
+				"隐形仆役|phb",
+				"浓酸球|xge",
+				"涡旋翘曲|scc",
+				"火墙术|phb",
+				"力场墙|phb",
+				"光墙术|xge",
+				"沙墙术|xge",
+				"石墙术|phb",
+				"水墙术|xge",
+				"守护之风|xge",
+				"碧水法球|xge",
+				"蛛网术|phb",
+				"巫术箭|phb"
+			],
+			"subclassFeatures": [
+				"风暴术法|重振术士|SorcererRevitalized|风暴|SorcererRevitalized|1",
+				"风暴之心|术士||风暴|XGE|6",
+				"风暴导向|术士||风暴|XGE|6",
+				"暴风狂怒|术士||风暴|XGE|14",
+				"清风之灵|术士||风暴|XGE|18"
+			]
+		},
+		{
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"_copy": {
+				"ENG_name": "Wild Magic",
+				"name": "狂野魔法",
+				"source": "PHB",
+				"shortName": "狂野魔法",
+				"className": "术士",
+				"classSource": "PHB"
+			},
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"混乱箭|XGE",
+							"七彩喷射"
+						],
+						"3": [
+							"变巨/缩小术",
+							"镜影术"
+						],
+						"5": [
+							"敌群环绕|XGE",
+							"催眠图纹"
+						],
+						"7": [
+							"困惑术",
+							"变形术"
+						],
+						"9": [
+							"活化物件",
+							"假象术"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"混乱箭|xge",
+				"七彩喷射",
+				"镜影术",
+				"催眠图纹",
+				"假象术",
+				"假寐术|xge",
+				"魅惑怪物|xge",
+				"魅惑类人|phb",
+				"困惑术|phb",
+				"疯狂冠冕|phb",
+				"支配野兽|phb",
+				"支配类人|phb",
+				"敌群环绕|xge",
+				"注目术|phb",
+				"快速交友|ai",
+				"指使术|phb",
+				"巧舌如簧|ai",
+				"脆弱诅咒|phb",
+				"定身怪物|phb",
+				"定身类人|phb",
+				"鼓动贪欲|ai",
+				"吉姆的发光硬币|ai",
+				"篡改记忆|phb",
+				"劳洛希姆心灵长枪|FTD",
+				"银光锐语|scc",
+				"睡眠术|phb",
+				"暗示术|phb",
+				"突触静止|xge",
+				"塔莎狂笑术|phb",
+				"塔莎心灵鞭|tce",
+				"变身术|phb",
+				"活化物件|phb",
+				"阿莎德隆奔行|FTD",
+				"闪现术|phb",
+				"弹射术|xge",
+				"操控水体|phb",
+				"操控风力|xge",
+				"创造法驱魔舵|AAG",
+				"黑暗视觉|phb",
+				"龙息术|xge",
+				"地缚|xge",
+				"元素灾厄|xge",
+				"强化属性|phb",
+				"变巨/缩小术|phb",
+				"土石喷发|xge",
+				"脚底抹油|phb",
+				"鬼斧神工|phb",
+				"羽落术|phb",
+				"烈焰箭矢|xge",
+				"飞行术|phb",
+				"气化形体|phb",
+				"加速术|phb",
+				"跳跃术|phb",
+				"动力短行|scc",
+				"敲击术|phb",
+				"浮空术|phb",
+				"大步奔行|phb",
+				"魔化武器|phb",
+				"麦克斯米利安的地之攫|xge",
+				"穿墙术|phb",
+				"变形术|phb",
+				"烟火术|xge",
+				"魔绳术|phb",
+				"授予技能|xge",
+				"写入空中|xge",
+				"缓慢术|phb",
+				"蛛行术|phb",
+				"塑石术|phb",
+				"心灵遥控|phb",
+				"迷你仆役|xge",
+				"转化岩石|xge",
+				"水下呼吸|phb",
+				"水上行走|phb"
+			],
+			"subclassFeatures": [
+				"狂野魔法|重振术士|SorcererRevitalized|狂野魔法|SorcererRevitalized|1",
+				"扭曲幸运|术士||狂野魔法||6",
+				"掌控混沌|术士||狂野魔法||14",
+				"法术轰击|术士||狂野魔法||18"
+			]
+		},
+		{
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"_copy": {
+				"ENG_name": "Orchard Origin",
+				"name": "果园起源",
+				"source": "OrchardSorcReflourished",
+				"shortName": "果园",
+				"className": "术士",
+				"classSource": "PHB"
+			}
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"level": 1,
+			"entries": [
+				"过去的一个事件激发了你体内先辈的血脉，为你烙上了奥法力量的坚固印记。这股起源于某种存在的魔力驱动着你的法术能力。详见 {@book 第十章|PHB|10}的施法规则及{@book 第十一章|PHB|11}的{@filter 术士法术列表|spells|class=术士}。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"第1级时，你从术士法术列表里选择四个戏法作为已知法术。在第4级和第10级时你还可以各习得一个戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"\"术士职业表\"中记录了你用以施展你{@filter 术士法术|spells|class=术士}的1环及更高环阶法术位数量。施展某个术士法术时，你必须同时消耗其对应环阶的法术位。已消耗的法术位可在完成长休后恢复。",
+						"例如，如果你已经习得1环法术{@spell 燃烧之手}，并且有一个1环和2环法术位可用，你可以使用任一法术位施放{@spell 燃烧之手}。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"你从术士法术列表里选择两个1环法术作为已知法术。",
+						"除了12级、14级、16级、18级、19级和20级之外，在每个等级你都可以学习一个额外的术士法术，这个法术由你自己选择。但是你只能获取已有相应环阶法术位的法术。比如，当你达到第3级时，你将获得一个1环或2环法术。",
+						"另外，你每提升一个术士等级，都可以从术士法术列表里选择一个新法术来代替一个已知法术列表中的旧法术。但是，你必须拥有新法术的相应环阶法术位。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"你的魔力来源于你意志的现实投影，因此魅力是你施展术士法术的关键属性。每当你的法术需要施法属性时均指向你的魅力值。而你术士法术的豁免DC和攻击检定，则使用你的魅力调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Ritual Casting",
+					"type": "entries",
+					"name": "仪式施法",
+					"entries": [
+						"如果你已知法术列表中的某术士法术带有仪式标签，则你可以用这些法术进行仪式施法。"
+					]
+				},
+				{
+					"ENG_name": "Self Focus",
+					"type": "entries",
+					"name": "自身法器",
+					"entries": [
+						"当你施放需要材料成分的术士法术时，你可以无视该材料成分，除非其具有价值（例如{@spell 繁彩球}法术所需的至少价值50 gp的钻石），或会被消耗。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Metamagic",
+			"name": "超魔法",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"level": 3,
+			"entries": [
+				"第3级起，你可以扭曲所施展的法术使其符合你的需求。你准备可供使用的超魔法选项。为此，从下述超魔法选项中选择其二。你可以在第10级和第17级各再选择一项。",
+				"你在完成一次长休后，可以更改你所准备的超魔法选项列表。准备一份新的超魔法选项列表需要花费时间进行冥想。",
+				"除非特别说明，否则对一个法术只能应用一种超魔法项。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "谨慎法术"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "远程法术"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强效法术"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "延效法术"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "升阶法术"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "瞬发法术"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "精妙法术"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "孪生法术"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sorcerous Restoration",
+			"name": "术法复苏",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"level": 3,
+			"entries": [
+				"第3级起，你可以通过专注于你内在的魔力源泉来恢复部分魔法能量。在一次短休期间，你恢复等同于你术士等级一半（向上取整）数量的已消耗术法点。在完成一次长休之前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Cantrip Versatility",
+			"name": "替换戏法",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"level": 4,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 4级术士{@variantrule 可选职业特性|tce|可选特性}}",
+				"当你在此职业获得了属性值提升时，你可以将一个你通过此职业的施法特性学会的术士戏法替换为{@filter 术士法术列表|spells|level=0|class=术士}中的另一个戏法。"
+			]
+		},
+		{
+			"ENG_name": "Metamagic",
+			"name": "超魔法",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"level": 10,
+			"entries": [
+				"第10级时，你可以额外准备一个超魔法选项。"
+			]
+		},
+		{
+			"ENG_name": "Metamagic",
+			"name": "超魔法",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"level": 17,
+			"entries": [
+				"第10级时，你可以额外准备一个超魔法选项。"
+			]
+		},
+		{
+			"ENG_name": "Metamagic Mastery",
+			"name": "超魔法精通",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"level": 20,
+			"entries": [
+				"第20级时，你已经精通了你的超魔法，并获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你所有的超魔法选项永远处于已准备状态。",
+						"每当你对法术使用超魔法时，你可以将消耗的术法点减少1点，最低为1点。",
+						"每当你对法术使用消耗1点术法点的超魔法时（包括因本特性而减少后的消耗），你可以改为免费使用它。你可以使用此能力的次数等同于你的熟练加值。你在完成一次长休后恢复已耗用的次数。"
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Draconic Bloodline",
+			"name": "龙族血脉",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"subclassShortName": "龙族血脉",
+			"subclassSource": "SorcererRevitalized",
+			"level": 1,
+			"entries": [
+				"你的天赋魔法源于龙族的魔力，其本质混杂在你的血液或是祖辈传承下来的血统当中。具有该起源的术士通常都可以将其血脉追溯至远古时代曾与巨龙定下契约的某位强大术士，或者甚至是某位巨龙的血亲。同类的血脉传承在世界上有些相当知名的例子，但绝大多数都相对隐蔽。每一位现世的术士都可能是一条新血脉的开创者，这可以来自一个契约，或来自某些特殊的环境因素影响。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙族法术|重振术士|SorcererRevitalized|龙族血脉|SorcererRevitalized|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "巨龙先祖|术士||龙族血脉||1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙族体魄|术士||龙族血脉||1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Draconic Spells",
+			"name": "龙族法术",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"subclassShortName": "龙族血脉",
+			"subclassSource": "SorcererRevitalized",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你达到相应的术士等级时，你习得下表中的额外法术，如下方龙族法术表所示的那样。这些法术对你是术士法术，但不计入你术士已知法术数量。",
+				"每当你提升术士等级时，你可以选择一个环数相同的新法术来替换你因此特性习得的一个法术。该法术必须为一个{@filter 来自术士、魔契师或法师法术列表中的塑能或变化法术|spells|class=术士;魔契师;法师|school=V;T|level=1;2;3;4;5}。",
+				{
+					"type": "table",
+					"caption": "龙族法术",
+					"colLabels": [
+						"术士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1环",
+							"{@spell 吸收元素|XGE}, {@spell 繁彩球}"
+						],
+						[
+							"3环",
+							"{@spell 龙息术|XGE}, {@spell 识破隐形}"
+						],
+						[
+							"5环",
+							"{@spell 恐惧术}, {@spell 飞行术}"
+						],
+						[
+							"7环",
+							"{@spell 元素灾厄|XGE}, {@spell 行动自如}"
+						],
+						[
+							"9环",
+							"{@spell 操控风力|XGE}, {@spell 通晓传奇}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadow Magic",
+			"name": "暗影魔法",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"subclassShortName": "幽影",
+			"subclassSource": "SorcererRevitalized",
+			"level": 1,
+			"entries": [
+				"你是一个身缠幽影的生物，你内在的魔力来自堕影冥界本身。你可以把你的世系追溯到那个地方实存的某处， 又或者你将自己暴露在了它的能量之下并被其所改变。",
+				"暗影魔法的力量给你的肉身蒙上了一层怪异的柩衣。维持你生命的火花被抑制，犹如它为了存留而挣扎着与灌输了你灵魂的黑暗力量对抗。在你的选择下，你可以从下列幽影术士怪癖表格中自选或投掷出属于自己角色的怪癖。",
+				{
+					"type": "table",
+					"caption": "幽影术士怪癖",
+					"colLabels": [
+						"d6",
+						"怪癖"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"你摸起来一直是冰冷的。"
+						],
+						[
+							"2",
+							"当你熟睡时看上去停止了呼吸（尽管你需要呼吸来维生） 。"
+						],
+						[
+							"3",
+							"你很少流血，即使身受重伤也不会见血。"
+						],
+						[
+							"4",
+							"你的心脏一分钟才脉动一下，有时候你自己都感到吃惊。"
+						],
+						[
+							"5",
+							"你难以记住生物和尸体应该被区别对待。"
+						],
+						[
+							"6",
+							"你上周只眨了一次眼。"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "幽影法术|重振术士|SorcererRevitalized|幽影|SorcererRevitalized|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "幽暗之瞳|术士||幽影|XGE|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "终焉之力|术士||幽影|XGE|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadow Spells",
+			"name": "幽影法术",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"subclassShortName": "幽影",
+			"subclassSource": "SorcererRevitalized",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你达到相应的术士等级时，你习得下表中的额外法术，如下方幽影法术表所示的那样。这些法术对你是术士法术，但不计入你术士已知法术数量。",
+				"每当你提升术士等级时，你可以选择一个环数相同的新法术来替换你因此特性习得的一个法术。该法术必须为一个{@filter 来自术士、魔契师或法师法术列表中的幻术或死灵法术|spells|class=术士;魔契师;法师|school=I;N|level=1;2;3;4;5}。",
+				{
+					"type": "table",
+					"caption": "幽影法术",
+					"colLabels": [
+						"术士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1环",
+							"{@spell 脆弱诅咒}, {@spell 致伤术}"
+						],
+						[
+							"3环",
+							"{@spell 行动无踪}, {@spell 幽影刃|XGE}"
+						],
+						[
+							"5环",
+							"{@spell 假死术}, {@spell 吸血鬼之触}"
+						],
+						[
+							"7环",
+							"{@spell 枯萎术}, {@spell 莫伊之影|XGE}"
+						],
+						[
+							"9环",
+							"{@spell 负能量洪流|XGE}, {@spell 伪装术}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Storm Sorcery",
+			"name": "风暴术法",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"subclassShortName": "风暴",
+			"subclassSource": "SorcererRevitalized",
+			"level": 1,
+			"entries": [
+				"你内在的魔法源于气元素之力量。许多拥有此力量的人都能将其魔法追溯至大暴雨Great Rain所引发的一场濒死体验，但也或许你出生于一场呼啸的狂风之中，其威力之强令人们至今仍传颂着它的故事，又或者你的血脉是受到强大气元素生物的影响而成的，例如风巨灵。不论情况如何，风暴之魔力早已浸透你的灵魂。",
+				"风暴术士是极具价值的海员。其魔法足以驾驭其周边的风与气象。且他们的能力亦可用于对抗鲨华鱼人、海盗、以及其他的水上威胁。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "风暴法术|重振术士|SorcererRevitalized|风暴|SorcererRevitalized|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "风语者|术士||风暴|XGE|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "暴风魔法|术士||风暴|XGE|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Storm Magic",
+			"name": "风暴法术",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"subclassShortName": "风暴",
+			"subclassSource": "SorcererRevitalized",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你达到相应的术士等级时，你习得下表中的额外法术，如下方风暴法术表所示的那样。这些法术对你是术士法术，但不计入你术士已知法术数量。",
+				"每当你提升术士等级时，你可以选择一个环数相同的新法术来替换你因此特性习得的一个法术。该法术必须为一个{@filter 来自术士、魔契师或法师法术列表中的咒法或塑能法术|spells|class=术士;魔契师;法师|school=C;E|level=1;2;3;4;5}。",
+				{
+					"type": "table",
+					"caption": "风暴法术",
+					"colLabels": [
+						"术士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1环",
+							"{@spell 云雾术}, {@spell 雷鸣波}"
+						],
+						[
+							"3环",
+							"{@spell 造风术}, {@spell 浮空术}"
+						],
+						[
+							"5环",
+							"{@spell 闪电束}, {@spell 雷霆步|XGE}"
+						],
+						[
+							"7环",
+							"{@spell 风暴法球|XGE}, {@spell 碧水法球|XGE}"
+						],
+						[
+							"9环",
+							"{@spell 操控风力|XGE}, {@spell 大漩涡|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wild Magic",
+			"name": "狂野魔法",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"subclassShortName": "狂野魔法",
+			"subclassSource": "SorcererRevitalized",
+			"level": 1,
+			"entries": [
+				"你天生的魔力来自于与创生之秩序相生相对的混沌之狂野力量。你也许曾经暴露于某种形式的原生魔力中；也许你穿越了一扇传送门到达了混沌海，元素位面，或者神秘的遥远国度。也许你受一名强大的精类生物祝福，或被一个恶魔选中；又或许你的魔力仅仅是天生如此，没有任何明确的原因。无论事情如何发生，这种混乱的魔力已经在你体内翻涌，随时等待着释放之时。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狂野法术|重振术士|SorcererRevitalized|狂野魔法|SorcererRevitalized|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狂野魔法浪涌|术士||狂野魔法||1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "混沌之潮|术士||狂野魔法||1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Wild Spells",
+			"name": "狂野法术",
+			"source": "SorcererRevitalized",
+			"className": "重振术士",
+			"classSource": "SorcererRevitalized",
+			"subclassShortName": "狂野魔法",
+			"subclassSource": "SorcererRevitalized",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你达到相应的术士等级时，你习得下表中的额外法术，如下方狂野法术表所示的那样。这些法术对你是术士法术，但不计入你术士已知法术数量。",
+				"每当你提升术士等级时，你可以选择一个环数相同的新法术来替换你因此特性习得的一个法术。该法术必须为一个{@filter 来自术士、魔契师或法师法术列表中的惑控或变化法术|spells|class=术士;魔契师;法师|school=E;T|level=1;2;3;4;5}。",
+				{
+					"type": "table",
+					"caption": "狂野法术",
+					"colLabels": [
+						"术士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1环",
+							"{@spell 混乱箭|XGE}, {@spell 七彩喷射}"
+						],
+						[
+							"3环",
+							"{@spell 变巨/缩小术}, {@spell 镜影术}"
+						],
+						[
+							"5环",
+							"{@spell 敌群环绕|XGE}, {@spell 催眠图纹}"
+						],
+						[
+							"7环",
+							"{@spell 困惑术}, {@spell 变形术}"
+						],
+						[
+							"9环",
+							"{@spell 活化物件}, {@spell 假象术}"
+						]
+					]
+				}
+			]
+		}
+	]
+}
