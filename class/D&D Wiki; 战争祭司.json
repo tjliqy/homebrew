@@ -1,0 +1,952 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DanDWikiWarpriest",
+				"abbreviation": "D&DW",
+				"full": "战争祭司",
+				"url": "https://www.dandwiki.com/wiki/Warpriest_(5e_Class)",
+				"version": "2021-11-10",
+				"authors": [
+					"D&D Wiki"
+				],
+				"convertedBy": [
+					"Spappz"
+				],
+				"color": "fdfad4"
+			}
+		],
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1684893869,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "b1e0b2e812"
+	},
+	"class": [
+		{
+			"ENG_name": "Warpriest",
+			"name": "战争祭司",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"wis",
+				"str"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
+			"classSpells": [
+				{
+					"className": "牧师",
+					"classSource": "PHB"
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"history",
+								"insight",
+								"investigation",
+								"nature",
+								"perception",
+								"persuasion",
+								"religion",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"tools": [
+					"{@item 医疗包|phb}或{@footnote 冒险者工具包|该工具并不存在。}"
+				],
+				"armor": [
+					"shield",
+					"medium",
+					"heavy"
+				],
+				"armorProficiencies": [
+					{
+						"shield": true,
+						"medium": true,
+						"heavy": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 骑枪|phb}或 (b) {@item 硬头锤|phb}",
+					"{@item 盾牌|phb}",
+					"{@footnote 铠甲|尚不清楚{@i 铠甲}所指为何。可能的物品包括{@item 鳞甲|phb}、{@item 环甲|phb}或{@item 链甲|phb}。}",
+					"(a) {@item 医疗包|phb}或 (b) {@footnote 冒险者工具包|该物品并不存在。}"
+				],
+				"goldAlternative": "{@dice 5d6 + 10|5d6 + 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"骑枪|phb"
+						],
+						"b": [
+							"硬头锤|phb"
+						]
+					},
+					{
+						"_": [
+							"盾牌|phb"
+						]
+					},
+					{
+						"a": [
+							"鳞甲|phb"
+						],
+						"b": [
+							"环甲|phb"
+						],
+						"c": [
+							"链甲|phb"
+						]
+					},
+					{
+						"_": [
+							"医疗包|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"wis": 13,
+							"str": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"medicine": true
+						}
+					],
+					"armor": [
+						"heavy"
+					],
+					"armorProficiencies": [
+						{
+							"heavy": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|class=牧师}"
+					],
+					"rows": [
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"狂热"
+					],
+					"rows": [
+						[
+							"{@damage 1d6}"
+						],
+						[
+							"{@damage 1d6}"
+						],
+						[
+							"{@damage 1d6}"
+						],
+						[
+							"{@damage 2d6}"
+						],
+						[
+							"{@damage 2d6}"
+						],
+						[
+							"{@damage 2d6}"
+						],
+						[
+							"{@damage 3d6}"
+						],
+						[
+							"{@damage 3d6}"
+						],
+						[
+							"{@damage 3d6}"
+						],
+						[
+							"{@damage 4d6}"
+						],
+						[
+							"{@damage 4d6}"
+						],
+						[
+							"{@damage 4d6}"
+						],
+						[
+							"{@damage 5d6}"
+						],
+						[
+							"{@damage 5d6}"
+						],
+						[
+							"{@damage 5d6}"
+						],
+						[
+							"{@damage 6d6}"
+						],
+						[
+							"{@damage 6d6}"
+						],
+						[
+							"{@damage 6d6}"
+						],
+						[
+							"{@damage 7d6}"
+						],
+						[
+							"{@damage 7d6}"
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=牧师}",
+						"{@filter 2nd|spells|level=2|class=牧师}",
+						"{@filter 3rd|spells|level=3|class=牧师}",
+						"{@filter 4th|spells|level=4|class=牧师}",
+						"{@filter 5th|spells|level=5|class=牧师}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"施法|战争祭司|DanDWikiWarpriest|1",
+				"狂热|战争祭司|DanDWikiWarpriest|1",
+				"神圣武器|战争祭司|DanDWikiWarpriest|2",
+				{
+					"classFeature": "战争祭司之形|战争祭司|DanDWikiWarpriest|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|战争祭司|DanDWikiWarpriest|4",
+				"额外攻击|战争祭司|DanDWikiWarpriest|5",
+				"神圣脉冲|战争祭司|DanDWikiWarpriest|6",
+				{
+					"gainSubclassFeature": true,
+					"classFeature": "战争祭司之形特性|战争祭司|DanDWikiWarpriest|7"
+				},
+				"属性值提升|战争祭司|DanDWikiWarpriest|8",
+				"神圣护甲|战争祭司|DanDWikiWarpriest|10",
+				"属性值提升|战争祭司|DanDWikiWarpriest|12",
+				{
+					"gainSubclassFeature": true,
+					"classFeature": "战争祭司之形特性|战争祭司|DanDWikiWarpriest|13"
+				},
+				"神圣回生|战争祭司|DanDWikiWarpriest|15",
+				"属性值提升|战争祭司|DanDWikiWarpriest|16",
+				{
+					"gainSubclassFeature": true,
+					"classFeature": "战争祭司之形特性|战争祭司|DanDWikiWarpriest|18"
+				},
+				"属性值提升|战争祭司|DanDWikiWarpriest|19",
+				"神圣化身|战争祭司|DanDWikiWarpriest|20"
+			],
+			"subclassTitle": "战争祭司之形",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Warpriest",
+			"name": "战争祭司",
+			"source": "DanDWikiWarpriest",
+			"entries": [
+				{
+					"ENG_name": "Warpriest",
+					"name": "战争祭司",
+					"type": "section",
+					"source": "DanDWikiWarpriest",
+					"entries": [
+						"一名凶悍的神圣战士，足以冲锋在前线，并能操纵融入正能量或负能量的光耀能量。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"你可以按照以下建议快速创建一个战争祭司角色。首先，感知应该是你最高的属性值，其次是力量。其次，选择{@background 平民英雄}背景。第三，选择{@spell 圣火术}戏法，以及{@skill 运动}、{@skill 游说}和{@skill 求生}技能。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Aspect of Light",
+			"name": "光明之形",
+			"shortName": "光明",
+			"source": "DanDWikiWarpriest",
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"page": 0,
+			"subclassFeatures": [
+				"光明之形|战争祭司|DanDWikiWarpriest|光明|DanDWikiWarpriest|3",
+				"强效狂热|战争祭司|DanDWikiWarpriest|光明|DanDWikiWarpriest|7",
+				"精通神圣脉冲|战争祭司|DanDWikiWarpriest|光明|DanDWikiWarpriest|13",
+				"神圣赋能|战争祭司|DanDWikiWarpriest|光明|DanDWikiWarpriest|18"
+			]
+		},
+		{
+			"ENG_name": "Aspect of War",
+			"name": "战争之形",
+			"shortName": "战争",
+			"source": "DanDWikiWarpriest",
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"page": 0,
+			"subclassFeatures": [
+				"战争之形|战争祭司|DanDWikiWarpriest|战争|DanDWikiWarpriest|3",
+				"神性武器|战争祭司|DanDWikiWarpriest|战争|DanDWikiWarpriest|7",
+				"神性护甲|战争祭司|DanDWikiWarpriest|战争|DanDWikiWarpriest|13",
+				"神性赋能|战争祭司|DanDWikiWarpriest|战争|DanDWikiWarpriest|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Fervor",
+			"name": "狂热",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 1,
+			"entries": [
+				"第1级时，战争祭司学会了一种操纵光耀能量的独特方式，将正能量或负能量汇聚于其上。战争祭司将这股能量塑成一支能量矢，掷向30尺内的一个目标。若能量矢蕴含正能量，目标受到治疗；若能量矢蕴含负能量，则对目标进行一次远程法术攻击，命中时目标受到伤害。此能力的伤害骰见战争祭司职业表。你可以使用此能力的次数等于你的感知调整值+你的等级。完成一次长休后你恢复所有充能，完成一次短休后恢复2点充能。",
+				"亡灵和恶魔额外受到{@damage 1d6}点伤害。"
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 1,
+			"entries": [
+				"第1级时，你知晓一个{@filter 牧师法术列表中自选的戏法|spells|level=0|class=牧师}。随着等级提升，你将学会更多自选的戏法，如职业表中\"已知戏法\"一栏所示。",
+				"到第2级时，你已学会汲取奥术魔法，并将其转化为神圣魔法来施展法术。",
+				{
+					"ENG_name": "Preparing and Casting Spells",
+					"type": "entries",
+					"name": "法术的准备与施展",
+					"page": 0,
+					"entries": [
+						"战争祭司职业表展示了你拥有的、用于施展1环或更高环法术的法术位数量。施展其中一个法术时，你必须消耗一个该法术环阶或更高环阶的法术位。完成一次长休后，你恢复所有已消耗的法术位。你准备可供自己施展的战争祭司法术，从{@filter 牧师法术列表|spells|class=牧师}中选择。准备时，选择数量等于你的感知调整值+你的熟练加值的战争祭司法术。这些法术的环阶必须是你拥有相应法术位的环阶。完成一次长休后，你可以更改已准备的法术列表。准备新的法术列表需要花时间冥想回顾你先前的训练：列表上每个法术每环阶至少一分钟。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"page": 0,
+					"entries": [
+						"感知是你法术的施法属性。你法术的力量源自你的严酷训练，以及将天生的奥术亲和转化为神圣魔法。每当法术提及你的施法属性时，你使用你的感知调整值。此外，当你设定所施展基础法术的DC以及用它进行攻击检定时，你也使用你的感知调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Ritual Casting",
+					"type": "entries",
+					"name": "仪式施法",
+					"page": 0,
+					"entries": [
+						"你可以将带有仪式标签的法术当作普通法术来施展，消耗相应的法术位。 "
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"type": "entries",
+					"name": "法器",
+					"page": 0,
+					"entries": [
+						"你可以用你的神圣武器作为你法术的施法法器。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sacred Weapon",
+			"name": "神圣武器",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 2,
+			"entries": [
+				"第2级时，你可以用一个附赠动作，以蕴含负能量的光耀能量灌注一把武器。被灌注的武器每次攻击命中时额外造成{@damage 1d8}点光耀伤害。",
+				"伤害在5级（{@damage 2d6}）、10级（{@damage 2d8}）、15级（{@damage 3d8}）和20级（{@damage 4d8}）时提升。"
+			]
+		},
+		{
+			"ENG_name": "Warpriest Aspects",
+			"name": "战争祭司之形",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 3,
+			"entries": [
+				"第3级时，你可以选择两种之形其一：战争之形或光明之形。你将在7级、13级和18级获得额外特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 4,
+			"entries": [
+				"当你达到4级、8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 5,
+			"entries": [
+				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Sacred Pulse",
+			"name": "神圣脉冲",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 6,
+			"entries": [
+				"第6级时，你学会以战争祭司为中心释放一波半径30尺的光耀能量。战争祭司必须选择该能量为正能量（半径内所有生物受到治疗）或负能量（半径内所有生物受到光耀伤害）。受此能力影响的生物可以进行一次对抗战争祭司法术豁免DC的敏捷豁免，豁免成功则只受一半伤害。此能力使用与战争祭司职业表中{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}相同的伤害骰。你每天可以使用此能力2次，完成一次长休后恢复这些使用次数。12级时，你每天可以使用此能力3次；18级时每天4次。"
+			]
+		},
+		{
+			"ENG_name": "Warpriest Aspect Feature",
+			"name": "战争祭司之形特性",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 7,
+			"entries": [
+				"第7级时，你获得一项额外的战争祭司之形特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 8,
+			"entries": [
+				"当你达到4级、8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Sacred Armor",
+			"name": "神圣护甲",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 10,
+			"entries": [
+				"第10级时，你可以以蕴含负能量的光耀能量灌注你的护甲。每当10尺内的一只生物命中你，护甲便作为对该攻击的反应，对该生物造成{@damage 1d4}点光耀伤害。15级时，伤害提升为{@damage 1d6}。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 12,
+			"entries": [
+				"当你达到4级、8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Warpriest Aspect Feature",
+			"name": "战争祭司之形特性",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 13,
+			"entries": [
+				"第13级时，你获得一项额外的战争祭司之形特性。"
+			]
+		},
+		{
+			"ENG_name": "Sacred Return",
+			"name": "神圣回生",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 15,
+			"entries": [
+				"第15级时，战争祭司学会在体内储存大量的正能量光耀能量。只要这股能量存于你体内，每当你的生命值降至0或更低，你就消耗此能力，自动以满生命值复活，并获得一道使你的AC提升5、持续1回合的守护灵光。你也可以使用此能力复活范围内的一只生物至一半生命值，前提是其死亡时间不超过24小时，而且你只需该生物的一小片躯体便可使用此能力。此能力拥有1点充能；要恢复充能，你必须完成一场15小时的引导仪式（不得中断）。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 16,
+			"entries": [
+				"当你达到4级、8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Warpriest Aspect Feature",
+			"name": "战争祭司之形特性",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 18,
+			"entries": [
+				"第18级时，你获得一项额外的战争祭司之形特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 19,
+			"entries": [
+				"当你达到4级、8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Sacred Avatar",
+			"name": "神圣化身",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"level": 20,
+			"entries": [
+				"第20级时，你学会以正能量与负能量混合的光耀能量覆盖自身，塑造出一具闪耀的天使化身，并自你身畔发射而出。这具天使形态宽35尺（以你为中心）、高15尺，沿直线自战争祭司处前进最远100尺。此攻击范围内的所有敌对生物自动被命中，受到{@damage 7d6}点光耀伤害并无视体型被击{@condition 倒地}；路径上的所有友方生物则被{@dice 7d6}治疗。你可以使用此能力一次，完成一次长休后恢复。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Aspect of Light",
+			"name": "光明之形",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "光明",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 3,
+			"entries": [
+				"选择此之形，战争祭司在战场后排的作战中更为擅长。",
+				"第3级时，战争祭司习得{@b 充能神圣武器}。它视同一个戏法（不影响也不改动\"已知戏法\"，而是作为一个额外的戏法）。通过过度充能你的{@classFeature 神圣武器|战争祭司|DanDWikiWarpriest|2}，你可以将其中的多余能量掷出。进行一次远程法术检定，命中时，60尺内的目标生物受到该武器的伤害以及{@classFeature 神圣武器|战争祭司|DanDWikiWarpriest|2}的伤害。此后直到战斗结束，你都无法再以光耀能量灌注它。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "光明之道|战争祭司|DanDWikiWarpriest|光明|DanDWikiWarpriest|3|DanDWikiWarpriest"
+				}
+			]
+		},
+		{
+			"ENG_name": "Way of Light",
+			"name": "光明之道",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "光明",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 3,
+			"entries": [
+				"此外，在第3级，治疗已成为你的天性，你现在可以用一个动作进行治疗，而无需消耗法术位。"
+			]
+		},
+		{
+			"ENG_name": "Empowered Fervor",
+			"name": "强效狂热",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "光明",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 7,
+			"entries": [
+				"第7级时，{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}变得更加致命。当你使用{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}对敌人进行法术攻击而未命中时，该生物仍会受到该攻击一半的伤害，而非毫发无伤。"
+			]
+		},
+		{
+			"ENG_name": "Improved Sacred Pulse",
+			"name": "精通神圣脉冲",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "光明",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 13,
+			"entries": [
+				"第13级时，{@classFeature 神圣脉冲|战争祭司|DanDWikiWarpriest|6}现在可以以战争祭司30尺内的一个目标为中心施放。{@classFeature 神圣脉冲|战争祭司|DanDWikiWarpriest|6}会在战争祭司的下个回合获得第二次脉冲，治疗或造成第一次脉冲一半的伤害。"
+			]
+		},
+		{
+			"ENG_name": "Sacred Empowerment",
+			"name": "神圣赋能",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "光明",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 18,
+			"entries": [
+				"第18级时，{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}获得3点额外充能；若你消耗2点充能而非1点，{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}将自动命中，并为法术的伤害或治疗额外追加{@damage 3d6}。{@classFeature 神圣脉冲|战争祭司|DanDWikiWarpriest|6}获得1点额外充能，且第二次脉冲现在造成全额伤害。"
+			]
+		},
+		{
+			"ENG_name": "Aspect of War",
+			"name": "战争之形",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "战争",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 3,
+			"entries": [
+				"选择此之形，战争祭司在战场前排的作战中更为擅长。",
+				"第3级时，战争祭司习得{@b 精通神圣武器}，使{@classFeature 神圣武器|战争祭司|DanDWikiWarpriest|2||其}的伤害提高{@damage 1d6}，5级时为{@damage 2d6}，10级时为{@damage 3d6}，15级时为{@damage 4d6}，20级时为{@damage 5d6}。它还使其攻击检定与伤害掷骰提高1，10级时该加值提高为2。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战争之道|战争祭司|DanDWikiWarpriest|战争|DanDWikiWarpriest|3|DanDWikiWarpriest"
+				}
+			]
+		},
+		{
+			"ENG_name": "Way of War",
+			"name": "战争之道",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "战争",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 3,
+			"entries": [
+				"此外，在第3级，战斗已融入你的血脉：若一次近战攻击未能命中你，你现在可以用你的反应进行一次具有劣势的反击。你也可以消耗1点{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}充能，进行一次没有劣势的反击。"
+			]
+		},
+		{
+			"ENG_name": "Divine Weapon",
+			"name": "神性武器",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "战争",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 7,
+			"entries": [
+				"第7级时，你学会以一个附赠动作消耗1点{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}充能来灌注你的武器。如果用该武器进行的下一次攻击命中，目标将受到该武器的伤害外加{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}的伤害。若未命中，该生物只受到{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}伤害的一半。此能力可与{@classFeature 神圣武器|战争祭司|DanDWikiWarpriest|2}以及{@subclassFeature 战争之形|战争祭司|DanDWikiWarpriest|战争|DanDWikiWarpriest|3||精通神圣武器}同时叠加。"
+			]
+		},
+		{
+			"ENG_name": "Divine Armor",
+			"name": "神性护甲",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "战争",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 13,
+			"entries": [
+				"第13级时，你的AC提升2，并且{@classFeature 神圣护甲|战争祭司|DanDWikiWarpriest|10}的伤害提高1。{@classFeature 神圣护甲|战争祭司|DanDWikiWarpriest|10||神圣护甲的}伤害现在同样作用于命中你的法术，并且不再有任何距离要求。"
+			]
+		},
+		{
+			"ENG_name": "Divine Empowerment",
+			"name": "神性赋能",
+			"source": "DanDWikiWarpriest",
+			"page": 0,
+			"className": "战争祭司",
+			"classSource": "DanDWikiWarpriest",
+			"subclassShortName": "战争",
+			"subclassSource": "DanDWikiWarpriest",
+			"level": 18,
+			"entries": [
+				"第18级时，使用{@subclassFeature 神性武器|战争祭司|DanDWikiWarpriest|战争|DanDWikiWarpriest|7}不再消耗{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}充能。此外，以一个附赠动作消耗1点{@classFeature 狂热|战争祭司|DanDWikiWarpriest|1}充能，将以{@classFeature 神圣脉冲|战争祭司|DanDWikiWarpriest|6}灌注武器：若该近战攻击命中，{@classFeature 神圣脉冲|战争祭司|DanDWikiWarpriest|6}造成伤害时视同其{@i 所有}目标均未通过豁免检定；若攻击未命中，范围内的敌人受到一半伤害。 "
+			]
+		}
+	]
+}
