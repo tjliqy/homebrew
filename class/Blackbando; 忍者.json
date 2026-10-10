@@ -1,0 +1,2786 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BBNinja",
+				"abbreviation": "Ninja",
+				"full": "忍者",
+				"url": "https://blackbandos-homebrew.fandom.com/wiki/Ninja_(5e_Class)",
+				"version": "2024-08-29",
+				"authors": [
+					"Blackbando"
+				],
+				"convertedBy": [
+					"Spappz"
+				],
+				"color": "474646"
+			}
+		],
+		"optionalFeatureTypes": {
+			"Con. Tools": "匿藏工具",
+			"FS:N": "战斗姿态，忍者"
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1724972106,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "fdd093316b"
+	},
+	"class": [
+		{
+			"ENG_name": "Ninja",
+			"name": "忍者",
+			"source": "BBNinja",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"con"
+			],
+			"spellcastingAbility": "int",
+			"spellsKnownProgressionFixed": [
+				0,
+				2,
+				2,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				12
+			],
+			"classSpells": [
+				"谭森变形术|XGE",
+				"闪现术",
+				"行动自如",
+				"高等隐形术",
+				"黑暗术",
+				"隐形术",
+				"气化形体",
+				"假象术",
+				"黑暗视觉",
+				"加速术",
+				"钢风斩|XGE",
+				"羽落术",
+				"猎人印记",
+				"易容术"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Fighting Stance",
+					"name": "战斗姿态",
+					"featureType": [
+						"FS:N"
+					],
+					"progression": {
+						"1": 1,
+						"5": 2,
+						"13": 3,
+						"17": 4
+					}
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"count": 4,
+							"from": [
+								"acrobatics",
+								"athletics",
+								"deception",
+								"investigation",
+								"perception",
+								"performance",
+								"persuasion",
+								"sleight of hand",
+								"stealth"
+							]
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用近战武器"
+				],
+				"tools": [
+					"{@item 毒药工具|PHB}",
+					"{@item 盗贼工具|PHB}"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}，或 (b) 两把{@item 短剑|PHB|短剑}",
+					"(a) 5把{@item 匕首|PHB|匕首}，或 (b) 一把{@item 短弓|PHB}与{@item 箭矢 (20)|PHB|20支箭}",
+					"{@item 皮甲|PHB}与一个{@item 怪物猎手套装|VRGR}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						],
+						"b": [
+							{
+								"item": "短剑|PHB",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "匕首|PHB",
+								"quantity": 5
+							}
+						],
+						"b": [
+							"短弓|PHB",
+							"箭矢 (20)|PHB"
+						]
+					},
+					{
+						"_": [
+							"皮甲|PHB",
+							"怪物猎手套装|VRGR"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"int": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"偷袭"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"查克拉"
+					],
+					"rows": [
+						[
+							"\u2014"
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							19
+						],
+						[
+							20
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"已知法术"
+					],
+					"rows": [
+						[
+							"\u2014"
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"最大法术环阶"
+					],
+					"rows": [
+						[
+							"\u2014"
+						],
+						[
+							"1环"
+						],
+						[
+							"1环"
+						],
+						[
+							"1环"
+						],
+						[
+							"2环"
+						],
+						[
+							"2环"
+						],
+						[
+							"2环"
+						],
+						[
+							"3环"
+						],
+						[
+							"3环"
+						],
+						[
+							"3环"
+						],
+						[
+							"4环"
+						],
+						[
+							"4环"
+						],
+						[
+							"4环"
+						],
+						[
+							"4环"
+						],
+						[
+							"4环"
+						],
+						[
+							"5环"
+						],
+						[
+							"5环"
+						],
+						[
+							"5环"
+						],
+						[
+							"6环"
+						],
+						[
+							"6环"
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"致命操持|忍者|BBNinja|1|BBNinja",
+				"战斗姿态|忍者|BBNinja|1|BBNinja",
+				"无甲防御|忍者|BBNinja|1|BBNinja",
+				"施法|忍者|BBNinja|2|BBNinja",
+				"匿藏工具|忍者|BBNinja|2|BBNinja",
+				{
+					"classFeature": "忍者之影|忍者|BBNinja|3|BBNinja",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|忍者|BBNinja|4|BBNinja",
+				"快速投掷|忍者|BBNinja|4|BBNinja",
+				"额外攻击|忍者|BBNinja|5|BBNinja",
+				"战斗姿态|忍者|BBNinja|5|BBNinja",
+				{
+					"classFeature": "影特性|忍者|BBNinja|6|BBNinja",
+					"gainSubclassFeature": true
+				},
+				"超常敏捷|忍者|BBNinja|6|BBNinja",
+				"反射闪避|忍者|BBNinja|7|BBNinja",
+				"属性值提升|忍者|BBNinja|8|BBNinja",
+				"影遁|忍者|BBNinja|9|BBNinja",
+				"燃烧之魂|忍者|BBNinja|10|BBNinja",
+				"属性值提升|忍者|BBNinja|10|BBNinja",
+				"无甲防御改进|忍者|BBNinja|10|BBNinja",
+				{
+					"classFeature": "影特性|忍者|BBNinja|11|BBNinja",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|忍者|BBNinja|12|BBNinja",
+				"战斗姿态|忍者|BBNinja|13|BBNinja",
+				"无人得见|忍者|BBNinja|14|BBNinja",
+				"夜行者|忍者|BBNinja|15|BBNinja",
+				"属性值提升|忍者|BBNinja|16|BBNinja",
+				"战斗姿态|忍者|BBNinja|17|BBNinja",
+				{
+					"classFeature": "影特性|忍者|BBNinja|18|BBNinja",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|忍者|BBNinja|19|BBNinja",
+				"忍者宗师|忍者|BBNinja|20|BBNinja"
+			],
+			"subclassTitle": "影",
+			"hasFluff": true,
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "偷袭",
+					"configuration": {
+						"identifier": "sneak-attack",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"n": 1,
+								"die": 6
+							},
+							"3": {
+								"n": 2,
+								"die": 6
+							},
+							"5": {
+								"n": 3,
+								"die": 6
+							},
+							"7": {
+								"n": 4,
+								"die": 6
+							},
+							"9": {
+								"n": 5,
+								"die": 6
+							},
+							"11": {
+								"n": 6,
+								"die": 6
+							},
+							"13": {
+								"n": 7,
+								"die": 6
+							},
+							"15": {
+								"n": 8,
+								"die": 6
+							},
+							"17": {
+								"n": 9,
+								"die": 6
+							},
+							"19": {
+								"n": 10,
+								"die": 6
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "铁蒺藜（伤害）",
+					"configuration": {
+						"identifier": "caltrops-damage",
+						"type": "dice",
+						"scale": {
+							"2": {
+								"n": 1,
+								"die": 4
+							},
+							"10": {
+								"n": 1,
+								"die": 6
+							},
+							"16": {
+								"n": 1,
+								"die": 8
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "铁蒺藜（半径）",
+					"configuration": {
+						"identifier": "caltrops-radius",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 10
+							},
+							"10": {
+								"value": 15
+							},
+							"16": {
+								"value": 20
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "燃烧弹",
+					"configuration": {
+						"identifier": "firebomb",
+						"type": "dice",
+						"scale": {
+							"2": {
+								"n": 2,
+								"die": 8
+							},
+							"10": {
+								"n": 3,
+								"die": 8
+							},
+							"16": {
+								"n": 4,
+								"die": 8
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "烟火",
+					"configuration": {
+						"identifier": "fireworks",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 100
+							},
+							"10": {
+								"value": 150
+							},
+							"16": {
+								"value": 200
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "简易火器（伤害）",
+					"configuration": {
+						"identifier": "improvised-firearm-damage",
+						"type": "dice",
+						"scale": {
+							"2": {
+								"n": 3,
+								"die": 8
+							},
+							"10": {
+								"n": 4,
+								"die": 8
+							},
+							"16": {
+								"n": 5,
+								"die": 8
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "简易火器（范围）",
+					"configuration": {
+						"identifier": "improvised-firearm-area",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 15
+							},
+							"10": {
+								"value": 20
+							},
+							"16": {
+								"value": 25
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "迷目粉",
+					"configuration": {
+						"identifier": "metsubishi",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 1
+							},
+							"10": {
+								"value": 2
+							},
+							"16": {
+								"value": 3
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "浮油（伤害）",
+					"configuration": {
+						"identifier": "oil-slick-damage",
+						"type": "dice",
+						"scale": {
+							"2": {
+								"n": 1,
+								"die": 10
+							},
+							"10": {
+								"n": 2,
+								"die": 10
+							},
+							"16": {
+								"n": 3,
+								"die": 10
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "浮油（半径）",
+					"configuration": {
+						"identifier": "oil-slick-radius",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 15
+							},
+							"16": {
+								"value": 20
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "毒镖（毒素伤害）",
+					"configuration": {
+						"identifier": "poison-darts-poison-damage",
+						"type": "dice",
+						"scale": {
+							"2": {
+								"n": 1,
+								"die": 8
+							},
+							"10": {
+								"n": 2,
+								"die": 8
+							},
+							"16": {
+								"n": 3,
+								"die": 8
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "毒镖（持续时间）",
+					"configuration": {
+						"identifier": "poison-darts-duration",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 3
+							},
+							"10": {
+								"value": 4
+							},
+							"16": {
+								"value": 5
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "手里剑射程",
+					"configuration": {
+						"identifier": "shuriken-range",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 30
+							},
+							"10": {
+								"value": 35
+							},
+							"16": {
+								"value": 40
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "烟雾弹（半径）",
+					"configuration": {
+						"identifier": "smoke-bomb-radius",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 7.5
+							},
+							"10": {
+								"value": 10
+							},
+							"16": {
+								"value": 12.5
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "烟雾弹（持续时间）",
+					"configuration": {
+						"identifier": "smoke-bomb-duration",
+						"type": "number",
+						"scale": {
+							"2": {
+								"value": 1
+							},
+							"10": {
+								"value": 2
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Ninja",
+			"name": "忍者",
+			"source": "BBNinja",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"无形之刃，最为致命。"
+					],
+					"by": "劫",
+					"from": "死亡之影最臭名昭著的追随者之一"
+				},
+				"深夜，成群的乌鸦掠过一座宏伟的宅邸庄园上空。庄园里布满骑士与弓箭手，全力守护着一位熟睡的贵族。一道黑衣身影自鸦群中跃下，落在一头骑士身上，将其头颅在撞击中砸碎，又把一柄匕首掷入旁边一名弓箭手的咽喉。当其他人闻声而来时，他已没入下方尸体的阴影之中；待众人离去，他潜入贵族的卧室，轻松割开了他的喉咙。随后此人背后展开黑色双翼，重新汇入鸦群，毫发无伤地扬长而去。",
+				"一名大笑着的男子留着浓密的络腮胡，左右两侧各有一位戴着面具的妖娆女子，他双臂环抱她们，将她们揽在身侧。其中一人向他耳语，他贪婪地笑了，微微掀起她的面具，将她拉入一个吻中。就在此时，他的生命被缓缓抽干，最终只剩一具空壳。那女子将尸体从身上推开，又迅速击晕了另一名女子。她改变自己的容貌，变得与方才判若两人，随后面带得意的浅笑离去。",
+				"忍者与强大的武学宗师\u2014\u2014武僧一脉相承，但武僧将武学知识专注于锤炼自身躯体，忍者则以其训练使自己成为潜行、名为\"忍术\"的魔法与暗杀的大师。他们以神秘莫测为业，凭训练而技艺精湛，且每一个忍者都精通多种致命手段。",
+				{
+					"ENG_name": "Creating a Ninja",
+					"type": "entries",
+					"name": "创建忍者",
+					"entries": [
+						"创建忍者角色时，想一想训练你角色的氏族。你的角色是生于氏族之中，还是在日后的人生中选择加入？他们是一直知道自己将为氏族流血，还是后来才明白这一点？问问你的DM，在你的战役世界中贵族世家与氏族有多大的势力，以及是否有你可以加入的特定氏族。",
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"entries": [
+								"你可以按照以下建议快速创建一名忍者。首先，将你最高的属性值分配给敏捷，其次是智力。其次，选择{@background 罪犯}或{@background 贵族}背景。最后，选择一把{@item 长剑|PHB}和5把{@item 匕首|PHB|匕首}。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BBNinja/ninja.webp"
+					},
+					"title": "\"我是你此生所见的最后一样东西。\""
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Shadow of Death",
+			"name": "死亡之影",
+			"shortName": "死亡",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassSpells": [
+				"湮灭波",
+				"魂灵环绕|TCE",
+				"解离术",
+				"西风打击|XGE",
+				"莫伊之影|XGE",
+				"迷踪步"
+			],
+			"subclassFeatures": [
+				"死亡之影|忍者|BBNinja|死亡|BBNinja|3|BBNinja",
+				"伪墓|忍者|BBNinja|死亡|BBNinja|6|BBNinja",
+				"直击弱点|忍者|BBNinja|死亡|BBNinja|11|BBNinja",
+				"致命性|忍者|BBNinja|死亡|BBNinja|18|BBNinja"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BBNinja/death.webp"
+						},
+						"title": "\"站好别动。你已经是个死人了，何必再挣扎。\""
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Shadow of Magic",
+			"name": "魔法之影",
+			"shortName": "魔法",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassSpells": [
+				"闪电束",
+				"枯萎术",
+				"操控水体",
+				"力场墙",
+				"冰风暴",
+				"变形术",
+				"毕格比之手",
+				"寒冰锥",
+				"万箭齐发",
+				"秘法门",
+				"定身怪物",
+				"火球术",
+				"雷鸣波",
+				"箭如雨下",
+				"七彩喷射",
+				"纠缠术",
+				"炼狱叱喝",
+				"冰刃|XGE",
+				"灵体武器",
+				"魔法飞弹",
+				"沉默术",
+				"灼热射线",
+				"护盾术",
+				"湮灭波",
+				"魂灵环绕|TCE",
+				"解离术",
+				"西风打击|XGE",
+				"莫伊之影|XGE",
+				"迷踪步",
+				"支配类人",
+				"塔莎狂笑术",
+				"群体暗示术",
+				"快速交友|AI",
+				"注目术",
+				"支配野兽",
+				"暗示术",
+				"吸血鬼之触",
+				"魅惑类人",
+				"动物交谈",
+				"浮空术",
+				"巨虫术",
+				"疫病虫群",
+				"暗影衍体召唤术|TCE",
+				"不谐低语",
+				"咒唤妖精",
+				"咒唤兽群",
+				"动物信使"
+			],
+			"subclassFeatures": [
+				"魔法之影|忍者|BBNinja|魔法|BBNinja|3|BBNinja",
+				"法力塑形|忍者|BBNinja|魔法|BBNinja|6|BBNinja",
+				"奥术知识|忍者|BBNinja|魔法|BBNinja|11|BBNinja",
+				"禁术|忍者|BBNinja|魔法|BBNinja|18|BBNinja"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BBNinja/magic.webp"
+						},
+						"title": "\"我不需要刀剑，因为将你击倒的将是魔法！\""
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Shadow of Seduction",
+			"name": "魅惑之影",
+			"shortName": "魅惑",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassSpells": [
+				"支配类人",
+				"塔莎狂笑术",
+				"群体暗示术",
+				"快速交友|AI",
+				"注目术",
+				"支配野兽",
+				"暗示术",
+				"吸血鬼之触",
+				"魅惑类人"
+			],
+			"subclassFeatures": [
+				"魅惑之影|忍者|BBNinja|魅惑|BBNinja|3|BBNinja",
+				"爱之真吻|忍者|BBNinja|魅惑|BBNinja|6|BBNinja",
+				"爱慕对象|忍者|BBNinja|魅惑|BBNinja|11|BBNinja",
+				"强制友谊|忍者|BBNinja|魅惑|BBNinja|18|BBNinja"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BBNinja/seduction.webp"
+						},
+						"title": "\"哎呀，拜托，我发誓我不咬人！\""
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Shadow of the Flock",
+			"name": "群鸟之影",
+			"shortName": "鸟群",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassSpells": [
+				"动物交谈",
+				"浮空术",
+				"巨虫术",
+				"疫病虫群",
+				"暗影衍体召唤术|TCE",
+				"不谐低语",
+				"咒唤妖精",
+				"咒唤兽群",
+				"动物信使"
+			],
+			"subclassFeatures": [
+				"群鸟之影|忍者|BBNinja|鸟群|BBNinja|3|BBNinja",
+				"暗影打击|忍者|BBNinja|鸟群|BBNinja|6|BBNinja",
+				"影中一员|忍者|BBNinja|鸟群|BBNinja|11|BBNinja",
+				"双翼之赠|忍者|BBNinja|鸟群|BBNinja|18|BBNinja"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BBNinja/flock.webp"
+						},
+						"title": "\"只有鸟儿懂我......这个世界放逐了我，可鸟儿们懂我。它们了解我。\""
+					}
+				]
+			}
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Deadly Handling",
+			"name": "致命操持",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 1,
+			"entries": [
+				"由于忍者的训练，你学会了以他人挥舞{@item 匕首|PHB|匕首}般的敏捷来使用大多数武器。当你进行徒手攻击，或单手持用一把你熟练的近战武器且该武器不具有{@i 重型}和{@i 双手}属性时，你在攻击时可以用你的敏捷调整值代替力量调整值。",
+				"此外，你可以以自由动作拔出和收起武器。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Stance",
+			"name": "战斗姿态",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 1,
+			"entries": [
+				"你的战斗方式与世间的一种强大野兽相关，你通过模仿它来增强自身的武艺。选择下列选项之一。你不能多次选择同一种战斗姿态选项，即使你之后可以再次选择。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "熊姿态|BBNinja"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "猎豹姿态|BBNinja"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "眼镜蛇姿态|BBNinja"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "鹰姿态|BBNinja"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "鳗姿态|BBNinja"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "螳螂姿态|BBNinja"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "龟姿态|BBNinja"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "海星姿态|BBNinja"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Unarmored Defense",
+			"name": "无甲防御",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 1,
+			"entries": [
+				"在第1级，你受过预判敌人行动的训练。自1级起，当你未穿戴任何护甲且未持用盾牌时，若你能看见你的敌人，你的AC等于10+你的敏捷调整值+你的智力调整值。在第10级，你不再需要看见敌人也能获得此加值。"
+			]
+		},
+		{
+			"ENG_name": "Concealed Tools",
+			"name": "匿藏工具",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 2,
+			"entries": [
+				"自2级起，你能够在身上完全彻底地匿藏数量等于你的等级减半向下取整+你的智力调整值种互不相同的小型工具与武器。如果你被剥得一丝不挂，你只能匿藏一半数量（最少1件）。你可以在任何杂货店购买{@item 匿藏工具组件|BBNinja|匿藏工具组件}来制作你的匿藏工具。下方每项{@filter 匿藏工具|optionalfeatures|type=匿藏工具}之后都列出了所需的组件数量。每个组件价值五枚铜币，重1/100磅。每件匿藏工具在制作完成后只能使用一次。除非另有说明，每件匿藏工具的使用都需要消耗一个动作。自5级起，当你使用{@classFeature 额外攻击|忍者|BBNinja|5|BBNinja}时，你可以同时使用任意组合的、需要{@action 攻击}动作的匿藏工具和/或武器攻击。短休期间，你可以制作数量等于你熟练加值的匿藏工具。长休期间，你可以完全补足你的匿藏工具储备。无论你在短休还是长休期间制作，你都需要至少花30分钟进行制作，在此期间你进入冥想状态，几乎无法察觉周围的情况。",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "铁蒺藜|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "氯仿|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "燃烧弹|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "烟火|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "防毒面具|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "简易火器|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "迷目粉|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "浮油|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "毒镖|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "手里剑|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "烟雾弹|BBNinja"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "通气管|BBNinja"
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 2,
+			"entries": [
+				"自2级起，你的训练使你能够驾驭名为查克拉的神秘能量来施展法术。你对这种能量的掌握以查克拉点数表示。你的忍者等级决定了你拥有的点数，如忍者职业表的查克拉一栏所示，此外还要加上你的智力调整值。你可以消耗这些点数来施展法术并驱动各种特性。当你在一次武器攻击中做出以下行为之一时，你回复1点查克拉：1）造成致命一击（将任意生物的生命值降至0）；或2）造成一次重击。长休后，你回复所有已消耗的查克拉。短休后，你可以如同回复生命值一样消耗生命骰来回复已消耗的查克拉。无论哪种情况，你都必须在休息中花费至少30分钟冥想，才能回复你的查克拉点数。当你穿戴非轻型护甲或持用盾牌时，你无法施展法术或使用查克拉特性。你的一些查克拉特性要求你的目标进行豁免检定以抗拒其效果，或要求你进行法术攻击。豁免DC和法术攻击调整值的计算方式如下：",
+				{
+					"ENG_name": "Spell save",
+					"type": "abilityDc",
+					"name": "法术豁免",
+					"attributes": [
+						"int"
+					]
+				},
+				{
+					"ENG_name": "Spell attack",
+					"type": "abilityAttackMod",
+					"name": "法术攻击",
+					"attributes": [
+						"int"
+					]
+				},
+				"你立即从下方{@filter 忍者法术列表|spells|class=忍者（BBNinja）}中习得两个自选的1环法术，并且随着你忍者职业等级的提升，你将按照忍者职业表\"已知法术\"一栏习得更多更高环阶的法术。{@action 施展法术}时，你消耗等于该法术环阶的查克拉，并且可以以更高环阶施放法术，最高不超过忍者职业表所示的你的最大法术环阶。当你在忍者职业中升级时，你可以用忍者法术列表中的另一个法术替换你已习得的一个法术。当你{@action 施展法术}时，无论花费多少，你都无需提供任何材料成分。此外，无论法术描述如何，你的法术都不需要言语成分。",
+				{
+					"ENG_name": "Converter's Note",
+					"type": "inset",
+					"name": "转换注记",
+					"entries": [
+						"以下法术只能以你自己为目标施放：{@spell 黑暗视觉}、{@spell 气化形体}、{@spell 加速术}、{@spell 隐形术}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Shinobi's Shadow",
+			"name": "忍者之影",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 3,
+			"entries": [
+				"在第3级，你将自己投身于忍者的一条特定道路，效仿初代忍者们的\"影\"。从死亡之影、魔法之影、魅惑之影和群鸟之影中进行选择，它们都位于本页底部。你的选择将在第3、6、11和18级赋予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Increase",
+			"name": "属性值提升",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Rapid Throw",
+			"name": "快速投掷",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 4,
+			"consumes": {
+				"ENG_name": "Spellcasting",
+				"name": "施法",
+				"amount": 1
+			},
+			"entries": [
+				"自4级起，你受过以闪电般的速度拔出并投掷手里剑的训练。你可以以一个附赠动作消耗1点查克拉，向射程内的一只生物投掷一枚手里剑。",
+				"到达第10级时，手里剑的数量增加至2枚。",
+				"到达第16级时，手里剑的数量增加至3枚。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus",
+				"activation.cost": 1
+			}
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 5,
+			"entries": [
+				"自5级起，当你在自己的回合采取{@action 攻击}动作时，你可以攻击两次而非一次。这包括需要{@action 攻击}动作的匿藏工具。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Stance",
+			"name": "战斗姿态",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 5,
+			"entries": [
+				"{@note {@b 转换注记。}该职业并未明确说明你会获得任何额外的{@classFeature 战斗姿态|忍者|BBNinja|1|BBNinja|战斗姿态}，但职业表中隐含了这一点。请自行斟酌使用。}"
+			]
+		},
+		{
+			"ENG_name": "Shadow Feature",
+			"name": "影特性",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 6,
+			"entries": [
+				"在第6级，你获得一项来自你的影的特性。"
+			]
+		},
+		{
+			"ENG_name": "Unnatural Agility",
+			"name": "超常敏捷",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 6,
+			"entries": [
+				"当你到达第6级时，由于严酷的训练和对身体超乎常人的掌控，你可以如同在地面一样沿墙壁奔跑，最多消耗你一半的移动力，且不受移动惩罚，也无需腾出双手或在墙上寻找攀爬着力点。",
+				"或者，如果你拥有天生的攀爬速度（例如由种族特性赋予，而非来自物品），你可以改为使你的移动速度和攀爬速度都提高10尺。"
+			]
+		},
+		{
+			"ENG_name": "Evasion",
+			"name": "反射闪避",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 7,
+			"entries": [
+				"到第7级时，你本能的敏捷让你能够闪避某些范围效果，例如蓝龙的闪电吐息或{@spell 火球术}法术。当你受到一个允许你进行敏捷豁免以只受一半伤害的效果影响时，若你豁免成功则不受任何伤害，豁免失败则只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Increase",
+			"name": "属性值提升",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Shadowmeld",
+			"name": "影遁",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 9,
+			"entries": [
+				"自9级起，你可以以一个动作尝试融入一只体型不小于你且拥有1点或更多生命值的生物的影子中，最长可达8小时。如果你对一只察觉到你的生物尝试此举，它可以进行一次具有优势的魅力豁免（DC=8+你的熟练加值），豁免成功则拒绝你进入它的影子。如果该生物未察觉到你，你自动成功。处于影子中时，你身处以太位面的边界以太。你能看见并听见你所依附影子的宿主所见所闻。若其影子移动，你随之移动，但你无法凭自己的意愿移动。你可以以一个附赠动作离开影子，出现在宿主5尺范围内。若其影子消失（例如在完全黑暗中），你将无法继续听见和看见你的宿主的动静。若宿主的生命值在任何时候降至0，你会立即被逐出其影子，无论其彼时是否真的拥有影子。你每次长休可以使用此能力的次数等于你的熟练加值。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.value": 1,
+				"duration.units": "hour",
+				"duration.value": 8,
+				"save.ability": "cha",
+				"save.scaling": "flat",
+				"target.type": "creature",
+				"target.value": 1
+			}
+		},
+		{
+			"ENG_name": "Ability Score Increase",
+			"name": "属性值提升",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 10,
+			"entries": [
+				"当你达到10级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Burning Soul",
+			"name": "燃烧之魂",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 10,
+			"consumes": {
+				"ENG_name": "Spellcasting",
+				"name": "施法",
+				"amount": 2
+			},
+			"entries": [
+				"自10级起，你可以调动查克拉为你的精神注入力量。你可以以一个附赠动作消耗2点查克拉，在接下来的30秒内，将你的熟练加值加到你进行的所有检定和掷骰上。你必须完成一次短休或长休才能再次使用此特性。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus",
+				"activation.cost": 1,
+				"duration.units": "second",
+				"duration.value": 30,
+				"uses.max": 1,
+				"users.per": "sr",
+				"target.type": "self"
+			}
+		},
+		{
+			"ENG_name": "Unarmored Defense Improvement",
+			"name": "无甲防御改进",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 10,
+			"entries": [
+				"在第10级，你不再需要看见敌人也能从你的{@classFeature 无甲防御|忍者|BBNinja|1|BBNinja}中获益。"
+			]
+		},
+		{
+			"ENG_name": "Shadow Feature",
+			"name": "影特性",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 11,
+			"entries": [
+				"在第11级，你获得一项来自你的影的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Increase",
+			"name": "属性值提升",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Stance",
+			"name": "战斗姿态",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 13,
+			"entries": [
+				"{@note {@b 转换注记。}该职业并未明确说明你会获得任何额外的{@classFeature 战斗姿态|忍者|BBNinja|1|BBNinja|战斗姿态}，但职业表中隐含了这一点。请自行斟酌使用。}"
+			]
+		},
+		{
+			"ENG_name": "Unseen By All",
+			"name": "无人得见",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 14,
+			"consumes": {
+				"ENG_name": "Spellcasting",
+				"name": "施法",
+				"amount": 1
+			},
+			"entries": [
+				"在第14级，你躲藏时几乎无法被察觉。当你的一次{@skill 隐匿}检定失败时，你可以消耗1点查克拉重新掷此次检定。你必须采用新的结果。此外，你再也无法被预言系魔法侦测到。"
+			],
+			"foundrySystem": {
+				"activation.type": "none",
+				"target.type": "self"
+			}
+		},
+		{
+			"ENG_name": "Nightcrawler",
+			"name": "夜行者",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 15,
+			"entries": [
+				"自15级起，黑夜仿佛任你驰骋。在夜间进行一小时或更长时间的旅行时，你队伍的移动速度翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Increase",
+			"name": "属性值提升",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Stance",
+			"name": "战斗姿态",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 17,
+			"entries": [
+				"{@note {@b 转换注记。}该职业并未明确说明你会获得任何额外的{@classFeature 战斗姿态|忍者|BBNinja|1|BBNinja|战斗姿态}，但职业表中隐含了这一点。请自行斟酌使用。}"
+			]
+		},
+		{
+			"ENG_name": "Shadow Feature",
+			"name": "影特性",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 18,
+			"entries": [
+				"在第18级，你获得一项来自你的影的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Increase",
+			"name": "属性值提升",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Master Shinobi",
+			"name": "忍者宗师",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 20,
+			"entries": [
+				"到第20级时，你已精通忍者之道。你所有消耗查克拉的忍者特性与忍术现在消耗的查克拉减少1点，最少仍需消耗1点查克拉。"
+			]
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Fighting Stance",
+			"name": "战斗姿态",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 1,
+			"isIgnored": true
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 2,
+			"system": {
+				"activation.type": "none",
+				"uses.per": "lr",
+				"uses.max": "@classes.ninja.levels"
+			}
+		},
+		{
+			"ENG_name": "Fighting Stance",
+			"name": "战斗姿态",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 5,
+			"isIgnored": true
+		},
+		{
+			"ENG_name": "Unarmored Defense Improvement",
+			"name": "无甲防御改进",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 10,
+			"isIgnored": true
+		},
+		{
+			"ENG_name": "Fighting Stance",
+			"name": "战斗姿态",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 13,
+			"isIgnored": true
+		},
+		{
+			"ENG_name": "Fighting Stance",
+			"name": "战斗姿态",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"level": 17,
+			"isIgnored": true
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Shadow of Death",
+			"name": "死亡之影",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "死亡",
+			"subclassSource": "BBNinja",
+			"level": 3,
+			"entries": [
+				"死亡之影是忍者可效仿的传统道路中最具代表性的一条，它较少关注查克拉的运用，而更侧重武术与暗杀。死亡之影忍者的身心被强化改造得近似死者，你也可以选择掷下方表格来决定一项独特的怪癖。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d6",
+						"怪癖"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"你的心跳稀少至极，以至于它真正响起时几乎会吓到你。"
+						],
+						[
+							"2",
+							"你身上的皮肤变得极薄，光线直射时能看见你的骨骼。"
+						],
+						[
+							"3",
+							"你的虹膜变成了墨黑色，令你的面容令人心悸。"
+						],
+						[
+							"4",
+							"当你一段时间不清洗自己时，你会散发出腐烂尸体的气味。"
+						],
+						[
+							"5",
+							"你的影子形似鬼灵，而非你真实的身体。"
+						],
+						[
+							"6",
+							"你对十字架和其他圣徽怀有非理性的恐惧。"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "暗杀|忍者|BBNinja|死亡|BBNinja|3|BBNinja"
+				}
+			]
+		},
+		{
+			"ENG_name": "Assassinate",
+			"name": "暗杀",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "死亡",
+			"subclassSource": "BBNinja",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"自你选择此影的第3级起，当你抢先于敌人下手时最为致命。你对战斗中尚未进行回合的任何生物的攻击检定具有优势。此外，你对该生物的任何命中都是重击。如果该生物处于突袭状态，你还可以加上偷袭伤害，如上方忍者职业表所列。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"@scale.ninja.sneak-attack",
+						""
+					]
+				]
+			}
+		},
+		{
+			"ENG_name": "False Grave",
+			"name": "伪墓",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "死亡",
+			"subclassSource": "BBNinja",
+			"level": 6,
+			"consumes": {
+				"ENG_name": "Spellcasting",
+				"name": "施法",
+				"amount": 2
+			},
+			"entries": [
+				"自6级起，你制造过的尸体多到足以让你惟妙惟肖地模仿死者，以此欺骗你的敌人。当你受到伤害时，你可以以一个反应消耗2点查克拉，将那次伤害减半，陷入{@condition 倒地}状态，并伪装成死亡状态，持续小时数等于你的等级。你一动不动、没有脉搏、停止呼吸，也没有任何生命迹象，但仍能如常视物、聆听和使用其他感官。以尸体为目标的法术（如{@spell 活化死尸}）不会将你视为尸体。你可以以一个自由动作随时结束此能力的效果。你也可以以一个动作随意使用此能力。你必须完成一次短休或长休才能再次使用此能力。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.cost": 1,
+				"duration.units": "hour",
+				"duration.value": "@classes.ninja.levels",
+				"uses.max": 1,
+				"users.per": "sr",
+				"target.type": "self"
+			}
+		},
+		{
+			"ENG_name": "Target Weakness",
+			"name": "直击弱点",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "死亡",
+			"subclassSource": "BBNinja",
+			"level": 11,
+			"entries": [
+				"自11级起，你深入研究了如何在近战中利用敌人的弱点。当你以非副手武器在近战中命中敌人时，你的武器攻击在掷出19或20时即为重击。"
+			]
+		},
+		{
+			"ENG_name": "Lethality",
+			"name": "致命性",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "死亡",
+			"subclassSource": "BBNinja",
+			"level": 18,
+			"entries": [
+				"自18级起，你成为了即刻死亡的大师。每轮一次，当你以非副手武器在近战中对敌人造成重击时，你可以强迫其进行一次对抗你法术豁免DC的体质豁免。豁免失败时，你对该生物的攻击的武器伤害骰按四倍（而非两倍）计算。",
+				"此外，当你以非副手武器在近战中命中敌人时，你的武器攻击在掷出18、19或20时即为重击。"
+			]
+		},
+		{
+			"ENG_name": "Shadow of the Flock",
+			"name": "群鸟之影",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "鸟群",
+			"subclassSource": "BBNinja",
+			"level": 3,
+			"entries": [
+				"忍者的许多成长与修行之道都源自自古相传、师徒相承的方法，但那些聆听世间禽鸟之人会习得另类的法门\u2014\u2014唯有鸟儿才能传授的法门。群鸟之影忍者的身心近似鸟类，你也可以选择掷下方表格来决定一项独特的怪癖。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d6",
+						"怪癖"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"当你愤怒时，你只能用尖叫声说话。"
+						],
+						[
+							"2",
+							"你身上似乎覆盖着一层薄薄的羽毛。"
+						],
+						[
+							"3",
+							"鸟儿似乎成群地围着你转，而昆虫似乎惧怕你。"
+						],
+						[
+							"4",
+							"醒来时，你喜欢对着太阳尖啸。"
+						],
+						[
+							"5",
+							"稻草人是你最可怕的梦魇。"
+						],
+						[
+							"6",
+							"不在地面上时你最自在。"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "飞行伙伴|忍者|BBNinja|鸟群|BBNinja|3|BBNinja"
+				}
+			]
+		},
+		{
+			"ENG_name": "Flying Friend",
+			"name": "飞行伙伴",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "鸟群",
+			"subclassSource": "BBNinja",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在此原型下的第3级，有一只特定的鸟儿选择将你当作它的印随对象。从下列野兽中选择：{@creature 蝙蝠}、{@creature 鹰}、{@creature 隼}、{@creature 猫头鹰}、{@creature 渡鸦}和{@creature 秃鹫}。一只由纯粹黑暗构成的该野兽复制体会始终跟随你，通常栖在你的肩上。该野兽在你的先攻轮行动，但它只能采取{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。你可以以一个附赠动作选择通过它的感官感知，或切换回自己的感官。通过它的感官感知时，你拥有60尺范围的{@sense 黑暗视觉}，并且依赖视觉的{@skill 察觉}检定具有优势，但无法察觉你自己身体的情况。如果你的野兽被杀死，你可以通过一个1小时的仪式使其复活：将毛皮（用于{@creature 蝙蝠}）或羽毛（用于任何其他鸟类）堆成一堆，为它重塑一具黑暗之躯。"
+			]
+		},
+		{
+			"ENG_name": "Dark Strike",
+			"name": "暗影打击",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "鸟群",
+			"subclassSource": "BBNinja",
+			"level": 6,
+			"entries": [
+				"自6级起，你的飞行伙伴可以如同武器一般行动，在战斗中协助你。当你的长羽伙伴处于你5尺范围内时，你可以以一个附赠动作强迫它对距你30尺内的一只生物进行一次远程武器攻击，该攻击使用你的敏捷调整值和熟练加值，而非它自己的。命中时，该生物受到等于{@damage 1d10}加你的敏捷调整值的暗蚀伤害。"
+			]
+		},
+		{
+			"ENG_name": "One of Shadows",
+			"name": "影中一员",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "鸟群",
+			"subclassSource": "BBNinja",
+			"level": 11,
+			"entries": [
+				"自11级起，你可以以一个附赠动作改变你的双眼，以感知暗影国度。在暗影国度中感知时，你看到暗影怪物显出原本的面貌，而野兽则呈现出暗影化的形态。你可以与暗影化的野兽交流，它们也能与你交流。然而，在暗影国度中感知时，你无法与任何非暗影怪物或野兽之物交流，也听不懂任何非暗影怪物所说的语言。"
+			]
+		},
+		{
+			"ENG_name": "Gift of Wings",
+			"name": "双翼之赠",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "鸟群",
+			"subclassSource": "BBNinja",
+			"level": 18,
+			"entries": [
+				"在第18级，你获得从背后生出一对黑色羽翼的能力，获得等同于你当前速度的飞行速度。你可以在自己的回合以一个附赠动作生成这对双翼。它们持续存在，直至你在自己的回合以一个附赠动作将其收起。你无法在穿着护甲时显现双翼，除非该护甲专为容纳双翼而改制；未为双翼改制的衣物可能会在双翼显现时被撑破。"
+			]
+		},
+		{
+			"ENG_name": "Shadow of Magic",
+			"name": "魔法之影",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魔法",
+			"subclassSource": "BBNinja",
+			"level": 3,
+			"entries": [
+				"踏上魔法之影之道的人自学如何将忍术凝聚得更集中、更强大，他们对忍术的驾驭远超对自身躯体的掌控。魔法之影忍者的身心变得更趋奥术，你也可以选择掷下方表格来决定一项独特的怪癖。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d6",
+						"怪癖"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"你的双眼变为彩虹七色中的某种颜色，且每小时变换一次。"
+						],
+						[
+							"2",
+							"奥术印记如纹身般浮现在你身上，且无法去除。"
+						],
+						[
+							"3",
+							"你的身体散发着非常微弱的深蓝色或紫色微光。"
+						],
+						[
+							"4",
+							"你的额头上长着第三只无法视物的眼睛。"
+						],
+						[
+							"5",
+							"每当你说话时，你的声音总带着一丝微弱的回响。"
+						],
+						[
+							"6",
+							"你发誓身处{@spell 反魔法场}中或受到{@spell 解除魔法}法术影响时，你真的会感到疼痛。"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "强大心灵|忍者|BBNinja|魔法|BBNinja|3|BBNinja"
+				}
+			]
+		},
+		{
+			"ENG_name": "Powerful Mind",
+			"name": "强大心灵",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魔法",
+			"subclassSource": "BBNinja",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你选择此原型的第3级，你心灵的广阔使你能容纳更多查克拉。你的查克拉点上限提高，数值等于你的智力调整值（至少+1）。这些额外的查克拉点只能在长休后回复。此外，你可以使用忍者法术列表中的所有法术，包括通常为其他影所独占的法术。"
+			]
+		},
+		{
+			"ENG_name": "Manabending",
+			"name": "法力塑形",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魔法",
+			"subclassSource": "BBNinja",
+			"level": 6,
+			"entries": [
+				"自6级起，你可以随心改变忍术召唤力量的方式。当你施展一个忍术且该忍术造成强酸、冷冻、火焰、闪电、暗蚀、毒素、光耀或雷鸣伤害时，你可以将该伤害类型替换为列表中的另一种类型（每次施展忍术只能改变一种伤害类型）。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Knowledge",
+			"name": "奥术知识",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魔法",
+			"subclassSource": "BBNinja",
+			"level": 11,
+			"skillProficiencies": [
+				{
+					"arcana": true
+				}
+			],
+			"entries": [
+				"自11级起，你的心灵赋予你唯有最古老的施法者才知晓的知识。若你原本不熟练{@skill 奥秘}技能，则获得其熟练项，并且你在涉及法术的{@skill 奥秘}检定中熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Forbidden Jutsu",
+			"name": "禁术",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魔法",
+			"subclassSource": "BBNinja",
+			"level": 18,
+			"entries": [
+				"在第18级，你涉足了忍者本不该施展的法术领域。你的最大法术环阶提升到8环，并且你从任意职业的法术列表中习得一个自选的7环法术和一个8环法术。你可以在升级时如更换其他法术一样更换它们，但必须以相同环阶的法术替换。"
+			]
+		},
+		{
+			"ENG_name": "Shadow of Seduction",
+			"name": "魅惑之影",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魅惑",
+			"subclassSource": "BBNinja",
+			"level": 3,
+			"entries": [
+				"尽管在历史长河中鲜为人知，魅惑之影的忍者之道却是一条极为强大的道路，因为它仰仗忍者的欺骗技艺与目标天生的欲望。魅惑之影忍者的身心往往会发展出更具\"吸引力\"的特质，你也可以选择掷下方表格来决定一项独特的怪癖。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d6",
+						"怪癖"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"任何时刻若身边没有至少一个人对你大献殷勤，你就会极度烦躁。"
+						],
+						[
+							"2",
+							"你的虹膜变成了心形。"
+						],
+						[
+							"3",
+							"你总是容易过分亲昵，会拥抱别人而不是与其握手。"
+						],
+						[
+							"4",
+							"你走起路来自然而然像T台上的模特。"
+						],
+						[
+							"5",
+							"只要有调情的机会，你一次都不会放过。"
+						],
+						[
+							"6",
+							"即使你浑身污秽不堪，你的头发也总是完美无瑕。"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "惑人之躯|忍者|BBNinja|魅惑|BBNinja|3|BBNinja"
+				}
+			]
+		},
+		{
+			"ENG_name": "Convincing Body",
+			"name": "惑人之躯",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魅惑",
+			"subclassSource": "BBNinja",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你选择此原型的第3级，你已习得一门魅惑与诱惑的艺术。你获得\"心之所欲\"忍术，它不计入你已习得的忍术。当你施展心之所欲时，你可以选择让该生物将你视为爱慕对象。一旦生物受到以此方式施展的心之所欲影响，你就无法再以此方式对其施展该忍术。"
+			]
+		},
+		{
+			"ENG_name": "Love's True Kiss",
+			"name": "爱之真吻",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魅惑",
+			"subclassSource": "BBNinja",
+			"level": 6,
+			"consumes": {
+				"ENG_name": "Spellcasting",
+				"name": "施法",
+				"amount": 3
+			},
+			"entries": [
+				"自6级起，魅魔的力量降临于你，使你能汲取你所亲吻之人的生命。你可以以一个动作消耗3点查克拉，亲吻一只被你{@condition 受擒}、被你{@condition 魅惑}、自愿或{@condition 失能}的生物。该生物必须进行一次体质豁免，豁免失败时受到{@damage 3d10}心灵伤害，成功则伤害减半。你获得临时生命值，数值等于所造成的心灵伤害。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"damage.parts": [
+					[
+						"3d10",
+						"psychic"
+					]
+				],
+				"save.ability": "con",
+				"save.scaling": "int",
+				"target.type": "creature",
+				"target.value": 1
+			}
+		},
+		{
+			"ENG_name": "Object of Affection",
+			"name": "爱慕对象",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魅惑",
+			"subclassSource": "BBNinja",
+			"level": 11,
+			"entries": [
+				"自11级起，你所掌握的技艺使你能以引诱对象所期望的形象出现。你可以以一个1分钟的仪式改变你的躯体，使其与某位曾与你交谈至少10分钟的类人生物心目中最具吸引力的形象完全一致。这将实际改变你的身体，效果类似{@spell 变身术}法术，并且可以以一个附赠动作结束。"
+			]
+		},
+		{
+			"ENG_name": "Forced Friendship",
+			"name": "强制友谊",
+			"source": "BBNinja",
+			"className": "忍者",
+			"classSource": "BBNinja",
+			"subclassShortName": "魅惑",
+			"subclassSource": "BBNinja",
+			"level": 18,
+			"entries": [
+				"到第18级，你魅惑他人的能力已凌驾于对方自身的意愿。你可以使用你的动作触碰一名{@condition 失能}的类人生物。该生物随即被你{@condition 魅惑}，直至有{@spell 移除诅咒}法术施放于它、其身上的{@condition 魅惑}状态被移除，或你再次使用此特性为止。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"range.units": "touch",
+				"target.type": "creature",
+				"target.value": 1
+			}
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Bear Stance",
+			"name": "熊姿态",
+			"source": "BBNinja",
+			"featureType": [
+				"FS:N"
+			],
+			"entries": [
+				"当你进行近战攻击且至少有一只手空闲时，你可以用附赠动作推撞你5尺范围内的一只生物。当你尝试推撞该生物时，你可以进行{@skill 特技}（敏捷）检定来代替{@skill 运动}（力量）检定。"
+			]
+		},
+		{
+			"ENG_name": "Caltrops",
+			"name": "铁蒺藜",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "1个组件",
+						"entrySummary": "1个组件"
+					}
+				}
+			],
+			"entries": [
+				"以一个{@action 攻击}动作，你可以将一把尖锐棱角的铁钉掷至最远30尺处，覆盖10尺半径的区域。该区域成为困难地形，区域内的任何生物每移动5尺就受到{@damage 1d4}穿刺伤害。",
+				"到达第10级时，每移动5尺所受的伤害提高为{@damage 1d6}，覆盖范围扩大为15尺半径。",
+				"到达第16级时，每移动5尺所受的伤害提高为{@damage 1d8}，覆盖范围扩大为20尺半径。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"damage.parts": [
+					[
+						"@scale.ninja.caltrops-damage",
+						"piercing"
+					]
+				],
+				"target.type": "radius",
+				"target.units": "ft",
+				"target.value": 10
+			}
+		},
+		{
+			"ENG_name": "Cheetah Stance",
+			"name": "猎豹姿态",
+			"source": "BBNinja",
+			"featureType": [
+				"FS:N"
+			],
+			"entries": [
+				"你的先攻检定具有优势，且不会陷入突袭状态。"
+			]
+		},
+		{
+			"ENG_name": "Chloroform",
+			"name": "氯仿",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "5个组件",
+						"entrySummary": "5个组件"
+					}
+				}
+			],
+			"entries": [
+				"你可以尝试使一只生物失去意识。如果你对某只生物处于隐藏状态，你可以接近它，用浸满氯仿的布巾捂住其至少一个呼吸孔。该生物必须通过一次体质豁免（DC 10+你的熟练加值），否则陷入{@condition 昏迷}状态，持续{@dice 1d4}小时。如果该生物正处于战斗中，其此次豁免具有优势。如果该生物察觉到你，你必须先在对抗它的擒抱检定中获胜才能施加氯仿（此次擒抱检定不消耗额外动作，但其余方面遵循擒抱的常规规则）。若目标在{@condition 昏迷}期间受到伤害，它再次进行该体质豁免，豁免成功则醒来。不需要呼吸的生物免疫此效果。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"duration.units": "hour",
+				"duration.value": 2.5,
+				"save.ability": "con",
+				"save.scaling": "flat",
+				"target.type": "creature",
+				"target.value": 1
+			}
+		},
+		{
+			"ENG_name": "Cobra Stance",
+			"name": "眼镜蛇姿态",
+			"source": "BBNinja",
+			"featureType": [
+				"FS:N"
+			],
+			"entries": [
+				"当你进行近战攻击且至少有一只手空闲时，你可以用附赠动作进行一次徒手攻击。若你命中，你的目标必须进行一次体质豁免（DC=8+你的智力调整值+你的熟练加值），否则受到额外的{@dice 1d4}×你的熟练加值点毒素伤害（豁免成功则伤害减半）。"
+			],
+			"foundrySystem": {
+				"actionType": "mwak",
+				"damage.parts": [
+					[
+						"(1d4) * @prof",
+						"poison"
+					]
+				],
+				"activation.type": "bonus",
+				"activation.value": 1,
+				"save.ability": "con",
+				"save.scaling": "int"
+			}
+		},
+		{
+			"ENG_name": "Eagle Stance",
+			"name": "鹰姿态",
+			"source": "BBNinja",
+			"featureType": [
+				"FS:N"
+			],
+			"weaponProficiencies": [
+				{
+					"martial": true
+				}
+			],
+			"entries": [
+				"你获得{@filter 军用远程武器|items|source=phb|category=基础|type=军用武器;远程武器}的熟练项，并且你使用所有远程武器进行的攻击检定获得+1加值。此加值不与{@optfeature 箭术|PHB}战斗风格叠加。"
+			]
+		},
+		{
+			"ENG_name": "Eel Stance",
+			"name": "鳗姿态",
+			"source": "BBNinja",
+			"featureType": [
+				"FS:N"
+			],
+			"entries": [
+				"针对你的{@action 借机攻击||借机攻击}具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Firebomb",
+			"name": "燃烧弹",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "2个组件",
+						"entrySummary": "2个组件"
+					}
+				}
+			],
+			"entries": [
+				"以一个{@action 攻击}动作，你将一个装满浓稠粘腻易燃液体的瓶子掷至最远30尺处。燃烧弹在被掷出或压碎时爆炸，将燃烧的粘胶喷洒在15尺直径的范围内，使该区域燃烧1分钟。进入火焰或在火焰中开始回合的每只生物必须通过一次敏捷豁免（DC 10+你的熟练加值），否则身体着火1分钟。豁免成功的生物不受伤害。豁免失败时，受影响的生物在其每个回合开始时受到{@damage 2d8}火焰伤害，直至该效果结束。该生物可以以一个动作重新进行豁免检定，尝试扑灭自己身上的火。",
+				"到达第10级时，火焰伤害提高为{@damage 3d8}。",
+				"到达第16级时，半径扩大为20尺，火焰伤害提高为{@damage 4d8}。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"damage.parts": [
+					[
+						"@scale.ninja.firebomb",
+						"fire"
+					]
+				],
+				"save.ability": "dex",
+				"save.scaling": "flat",
+				"target.type": "radius",
+				"target.units": "ft",
+				"target.value": 7.5,
+				"duration.units": "minute",
+				"duration.value": 1
+			}
+		},
+		{
+			"ENG_name": "Fireworks",
+			"name": "烟火",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "2个组件",
+						"entrySummary": "2个组件"
+					}
+				}
+			],
+			"entries": [
+				"你点燃一束装有硝石和各种化学物质的弹筒，它会悄无声息地朝你选择的任意方向自行发射，最远达100尺，随后迸散为一场无害的七彩声光之雨。烟花爆点400尺内的每只生物都能看见并听见它。",
+				"到达第10级时，射程提高为150尺。",
+				"到达第16级时，射程提高为200尺。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"range.units": "ft",
+				"range.value": 100,
+				"range.long": 100
+			}
+		},
+		{
+			"ENG_name": "Gas Mask",
+			"name": "防毒面具",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "3个组件",
+						"entrySummary": "3个组件"
+					}
+				}
+			],
+			"entries": [
+				"将此物品罩在脸上时，你可以正常呼吸，且不会受到有毒大气的伤害。此工具的有效时间为8小时，之后其内部的阀门会失效，必须制作新的。"
+			],
+			"foundrySystem": {
+				"activation.type": "none",
+				"duration.units": "hour",
+				"duration.value": 8
+			}
+		},
+		{
+			"ENG_name": "Improvised Firearm",
+			"name": "简易火器",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "5个组件",
+						"entrySummary": "5个组件"
+					}
+				}
+			],
+			"entries": [
+				"一根裹着皮革、塞满硝石、石块和铁钉的粗壮竹筒。以一个{@action 攻击}动作，你点燃竹筒后端的引线，使15尺锥形范围内的所有敌人受到{@damage 3d8}钝击伤害，被向后推离你5尺，并必须进行一次敏捷豁免（DC 10+你的熟练加值），否则被击倒为{@condition 倒地}状态。此外，你和距你20尺范围内的所有生物{@condition 耳聋}1分钟。最后，你（在火器发射之后）也会被向后推5尺，并且同样必须进行该敏捷豁免，否则陷入{@condition 倒地}。你不会因以此方式被推离而引发{@action 借机攻击||借机攻击}。你同一时间只能携带一门简易火器。",
+				"到达第10级时，伤害提高为{@damage 4d8}钝击伤害，范围扩大为20尺锥形。",
+				"到达第16级时，伤害提高为{@damage 5d8}钝击伤害，范围扩大为25尺锥形。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"damage.parts": [
+					[
+						"@scale.ninja.improvised-firearm-damage",
+						"bludgeoning"
+					]
+				],
+				"target.type": "cone",
+				"target.units": "ft",
+				"target.value": "@scale.ninja.improvised-firearm-area",
+				"save.ability": "dex",
+				"save.scaling": "flat"
+			}
+		},
+		{
+			"ENG_name": "Mantis Stance",
+			"name": "螳螂姿态",
+			"source": "BBNinja",
+			"featureType": [
+				"FS:N"
+			],
+			"entries": [
+				"当你进行{@action 双武器战斗}时，你可以将你的属性调整值加到伤害掷骰上。"
+			]
+		},
+		{
+			"ENG_name": "Metsubishi",
+			"name": "迷目粉",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "2个组件",
+						"entrySummary": "2个组件"
+					}
+				}
+			],
+			"entries": [
+				"以一个{@action 攻击}动作，你将一枚掏空并填满由灰烬、胡椒末、面粉和细碎玻璃粉调成的粉末的鸡蛋掷至最远30尺处。鸡蛋被压碎或掷出时，粉末会在20尺直径的范围内散开。效果区域内的所有生物必须立即进行一次智力豁免（DC 10+你的熟练加值），否则陷入{@condition 目盲}状态，直至其下回合结束。除非被强风吹散，粉末会在空中悬浮30秒。若有生物进入效果区域或在其中开始回合，它也必须通过此豁免；若它此前已受影响，则可能重置其目盲的持续时间。",
+				"到达第10级时，豁免失败的生物将{@condition 目盲}2轮。",
+				"到达第16级时，豁免失败的生物将{@condition 目盲}3轮。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"duration.units": "turn",
+				"duration.value": "@scale.ninja.metsubishi",
+				"save.ability": "int",
+				"save.scaling": "flat"
+			}
+		},
+		{
+			"ENG_name": "Oil Slick",
+			"name": "浮油",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "2个组件",
+						"entrySummary": "2个组件"
+					}
+				}
+			],
+			"entries": [
+				"以一个{@action 攻击}动作，你将一瓶油掷至最远30尺处，瓶子破碎后在15尺半径的区域布满油污。在受影响区域开始回合或进入该区域的所有生物必须进行一次敏捷豁免（DC 10+你的熟练加值）。豁免失败者会滑倒并陷入{@condition 倒地}状态；豁免成功者则避免滑倒。生物可以将其视为困难地形并无惩罚地步行穿过该油污区域，即把这片区域当作困难地形对待。它们也可以尝试以正常速度移动，但在油洼中每移动5尺，就需要再通过一次敏捷豁免，否则陷入{@condition 倒地}。疾走中的生物进行此敏捷豁免时具有劣势。这些油易燃，接触火焰即会燃烧，持续1分钟，之后火焰和油一同消散。若有生物在燃烧的油范围内开始回合或进入其中，它受到{@damage 1d10}火焰伤害。此伤害可与你的燃烧弹造成的伤害叠加。",
+				"到达第10级时，你可以以附赠动作掷出瓶子，且燃烧伤害提高为{@damage 2d10}。",
+				"到达第16级时，半径扩大为20尺，燃烧伤害提高为{@damage 3d10}。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"target.type": "radius",
+				"target.units": "ft",
+				"target.value": 15,
+				"damage.parts": [
+					[
+						"@scale.ninja.oil-slick-damage",
+						"fire"
+					]
+				],
+				"save.ability": "dex",
+				"save.scaling": "flat"
+			}
+		},
+		{
+			"ENG_name": "Poison Darts",
+			"name": "毒镖",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "3个组件",
+						"entrySummary": "3个组件"
+					}
+				}
+			],
+			"entries": [
+				"一束以树枝和绿色格龙蛙人毒素制成的3支飞镖。以一个{@action 攻击}动作，你可以投掷单支飞镖（射程20/60），或以普通远程攻击调整值用{@item 吹箭筒|PHB}将其射出（射程25/100）。命中时，目标生物受到等于{@damage 1d10}+你的敏捷调整值的穿刺伤害，并进行一次体质豁免（DC 10+你的熟练加值）。若目标豁免失败，它在其下回合开始时受到{@damage 1d8}毒素伤害，陷入{@condition 中毒}状态（攻击检定和属性检定具有劣势），并且只能进行攀爬或原地跳跃式的移动。若该生物拥有飞行能力，除非它降落，否则无法采取任何动作或反应。在其每个回合结束时，该生物可以以劣势重复此豁免，豁免成功则结束此效果。否则，此效果持续3轮。",
+				"到达第10级时，你已将橙色格龙蛙人毒素掺入飞镖；当生物处于你毒镖效果的影响下时，除毒镖的其他效果外，它还会惧怕自己的盟友。此外，毒素伤害提高为每轮{@damage 2d8}，效果持续时间增加为4轮。",
+				"到达第16级时，你已将白色格龙蛙人毒素掺入飞镖；当生物处于你毒镖效果的影响下时，除毒镖的其他效果外，它还无法采取反应。此外，毒素伤害提高为每轮{@damage 3d8}，效果持续时间增加为5轮。"
+			],
+			"foundrySystem": {
+				"activation.cost": 1,
+				"activation.type": "action",
+				"duration.type": "rounds",
+				"duration.value": "@scale.ninja.poison-darts-duration",
+				"range.long": 100,
+				"range.units": "ft",
+				"range.value": 25,
+				"save.ability": "con",
+				"save.scaling": "flat",
+				"damage.parts": [
+					[
+						"@scale.ninja.poison-darts-poison-damage + @abilities.dex.mod",
+						"poison"
+					]
+				]
+			}
+		},
+		{
+			"ENG_name": "Shuriken",
+			"name": "手里剑",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "1个组件",
+						"entrySummary": "1个组件"
+					}
+				}
+			],
+			"entries": [
+				"一组5枚扁平的流线型刃片。以一个{@action 攻击}动作，你可以以普通远程攻击调整值一次掷出至多2枚手里剑，攻击你选定的至多2只不同生物。为每枚手里剑分别进行一次攻击检定。每枚掷出的手里剑造成{@damage 1d8}+你的敏捷调整值的挥砍伤害，射程为30/120。",
+				"到达第10级时，掷出的手里剑数量增加至3枚，射程提高为35/125。",
+				"到达第16级时，掷出的手里剑数量增加至4枚，射程提高为40/130。此外，在克服对非魔法攻击和伤害的抗性与免疫时，你的手里剑视为魔法攻击和魔法伤害。"
+			],
+			"foundrySystem": {
+				"activation.cost": 1,
+				"activation.type": "action",
+				"damage.parts": [
+					[
+						"1d8 + @abilities.dex.mod",
+						"slashing"
+					]
+				],
+				"range.long": 120,
+				"range.units": "ft",
+				"range.value": 30
+			}
+		},
+		{
+			"ENG_name": "Smoke Bomb",
+			"name": "烟雾弹",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "2个组件",
+						"entrySummary": "2个组件"
+					}
+				}
+			],
+			"entries": [
+				"一根装有黑色易燃物质的小管，你可以将其压碎或掷至10尺远处，它会随即点燃，喷出一团无害的灰黑色浓烟，覆盖15尺直径的区域，并在你的下回合开始时消散。生物无法看进或看透烟雾，烟雾内的区域属于重度遮蔽，烟雾中的所有攻击均具有劣势。当你处于效果区域内时，生物无法对你发动{@action 借机攻击||借机攻击}（但对其他生物可以），且你可以以一个附赠动作尝试{@action 躲藏}，进行{@skill 隐匿}检定时具有优势。",
+				"到达第10级时，直径扩大为20尺，烟雾多持续1轮。",
+				"到达第16级时，直径扩大为25尺。"
+			],
+			"foundrySystem": {
+				"activation.cost": 1,
+				"activation.type": "action",
+				"duration.units": "turn",
+				"duration.value": "@scale.ninja.smoke-bomb-duration",
+				"range.units": "ft",
+				"range.value": 10,
+				"target.type": "radius",
+				"target.units": "ft",
+				"target.value": "@scale.ninja.smoke-bomb-radius"
+			}
+		},
+		{
+			"ENG_name": "Snorkel",
+			"name": "通气管",
+			"source": "BBNinja",
+			"featureType": [
+				"Con. Tools"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "3个组件",
+						"entrySummary": "3个组件"
+					}
+				}
+			],
+			"entries": [
+				"一根以空心芦苇制成的简易管子。将此物品衔在口中时，你可以在水下1尺深处潜游，无需浮上水面换气。"
+			],
+			"foundrySystem": {
+				"activation.type": "none"
+			}
+		},
+		{
+			"ENG_name": "Starfish Stance",
+			"name": "海星姿态",
+			"source": "BBNinja",
+			"featureType": [
+				"FS:N"
+			],
+			"consumes": {
+				"ENG_name": "Spellcasting",
+				"amount": 1,
+				"name": "施法"
+			},
+			"entries": [
+				"以一个动作，你可以消耗1点查克拉，掷出数量等于你熟练加值的{@dice 1d4}，并回复等量的生命值。"
+			],
+			"foundrySystem": {
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"(@prof)d4",
+						"healing"
+					]
+				],
+				"activation.type": "action",
+				"activation.cost": 1,
+				"target.type": "self"
+			}
+		},
+		{
+			"ENG_name": "Turtle Stance",
+			"name": "龟姿态",
+			"source": "BBNinja",
+			"featureType": [
+				"FS:N"
+			],
+			"consumes": {
+				"ENG_name": "Spellcasting",
+				"amount": 1,
+				"name": "施法"
+			},
+			"entries": [
+				"当你成为一次非{@action 借机攻击||借机攻击}的武器攻击的目标时，你可以以一个反应消耗1点查克拉，使你的护甲等级提高，数值等于你的熟练加值，持续至接下来的三次武器攻击或你的下回合开始为止，以先到者为准。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.cost": 1,
+				"target.type": "self"
+			}
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Concealed Tool Component",
+			"name": "匿藏工具组件",
+			"source": "BBNinja",
+			"rarity": "none",
+			"weight": 0.01,
+			"value": 5,
+			"entries": [
+				"{@note 此物品用于通过{@class 忍者|BBNinja|忍者}的{@classFeature 匿藏工具|忍者|BBNinja|2|BBninja}特性制作{@filter 匿藏工具|optionalfeatures|type=匿藏工具}。}"
+			]
+		}
+	]
+}
