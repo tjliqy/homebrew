@@ -1,0 +1,2432 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CC",
+				"abbreviation": "CC",
+				"full": "修炼者职业",
+				"url": "https://www.reddit.com/r/UnearthedArcana/comments/tmwiwv/cultivator_23_back_with_post_playtesting_updates/",
+				"version": "2.3",
+				"authors": [
+					"Fiddlestics"
+				],
+				"convertedBy": [
+					"Mothben"
+				]
+			}
+		],
+		"optionalFeatureTypes": {
+			"FS:C": "战斗风格，修炼者",
+			"KCC": "气术师构装",
+			"SAF": "魂兵形态"
+		},
+		"edition": "classic",
+		"dateAdded": 0,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "7558cda0f7"
+	},
+	"class": [
+		{
+			"ENG_name": "Cultivator",
+			"name": "修炼者",
+			"source": "CC",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"con"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"deception",
+								"history",
+								"intimidation",
+								"sleight of hand",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"tools": [
+					"{@item 书法工具|phb}"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一件{@filter 军用武器|items|source=phb|category=基础|type=军用武器}和一面{@item 盾牌|phb}，或 (b) 两件{@filter 军用武器|items|source=phb|category=基础|type=军用武器}",
+					"(a) 一把{@item 长弓|phb}和{@item 箭矢 (20)|phb|20支箭}，或 (b) 两把{@item 手斧|phb|手斧}",
+					"(a) 一个{@item 学者套组|phb}，或 (b) 一个{@item 探索套组|phb}"
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13,
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"气池"
+					],
+					"rows": [
+						[
+							1
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							19
+						],
+						[
+							20
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"修炼者灵光|修炼者|CC|1",
+				"气|修炼者|CC|1",
+				"无甲防御|修炼者|CC|1",
+				"战斗风格|修炼者|CC|2",
+				{
+					"classFeature": "功法|修炼者|CC|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|修炼者|CC|4",
+				"额外攻击|修炼者|CC|5",
+				"突破|修炼者|CC|5",
+				"灵光灌注|修炼者|CC|6",
+				{
+					"classFeature": "功法特性|修炼者|CC|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|修炼者|CC|8",
+				"身心健全|修炼者|CC|9",
+				"灵光感召|修炼者|CC|10",
+				{
+					"classFeature": "功法特性|修炼者|CC|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|修炼者|CC|12",
+				"重铸之躯|修炼者|CC|13",
+				"灵光掌握|修炼者|CC|14",
+				{
+					"classFeature": "功法特性|修炼者|CC|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|修炼者|CC|16",
+				"修炼强袭|修炼者|CC|17",
+				"加速灌注|修炼者|CC|18",
+				"属性值提升|修炼者|CC|19",
+				"气之化身|修炼者|CC|20"
+			],
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Cultivator",
+			"name": "修炼者",
+			"source": "CC",
+			"entries": [
+				{
+					"ENG_name": "Cultivator",
+					"name": "修炼者",
+					"source": "CC",
+					"page": 2,
+					"type": "section",
+					"entries": [
+						"一名矮人活动着手指，最新的武器没入他的丹田之中。为掌握这件新兵刃的前景而欣喜，他将武器唤出握于手中，起身冲向自己的陪练对手。战锤命中，将对手击退并破其平衡，转瞬间取代战锤的刀刃又即刻袭来。",
+						"当敌人涌入房间将她团团围住时，这名精灵从容地为下一手做准备，能量在她的双手间噼啪作响。时机一到，她在一道闪电中消失无踪。直到她自身后入口处将电浪反卷回房间，困惑的敌人们才惊觉她早已立于他们身后。",
+						"一名兽人从屋顶跃下，就势翻滚落地再度起身奔跑。他朝同伴们奔去，眼见他们对身后正酝酿着毁灭之术的法师浑然不觉。他将盾牌掷向那名法师并命中，为自己争取到绕至队伍身后布起一面巨大光盾的时间，将施法者喷薄而出的火海从中分开。",
+						"修炼者是那些修习强大功法以增进自身之力的人。他们将每一场战斗视为成长的契机，将每一个敌人视为待掘的经验宝库。修炼者往往追求自身与功法上的完美。",
+						{
+							"ENG_name": "A Foundation of Ki",
+							"type": "entries",
+							"name": "气之根基",
+							"entries": [
+								"气是栖于万物\u2014\u2014无论死活\u2014\u2014之中的一种根本力量。修炼者已掌握汇聚此力之法，将其蓄积于体内的一个容器之中，他们称之为\"根基\"。从此气之储备中汲取力量，他们便能施展秘传功法，造就超自然效应。",
+								"这些功法或许由师长传授给修炼者，或许习自某部古代秘籍；在少数情况下，甚至可能是他们自创的。习得功法对修炼者而言是意义重大的事件，因为他们多半将倾尽余生打磨和完善它。"
+							]
+						},
+						{
+							"ENG_name": "Pursuit of Perfection",
+							"type": "entries",
+							"name": "臻于至善",
+							"entries": [
+								"\"文明其精神，野蛮其体魄。\"修炼者力求将根基推上巅峰，并在修炼之途上尽快突破瓶颈。这种追求驱使他们投身战斗，因为战斗中获取的知识与经验对他们的精进至关重要。这种一心向道的追求使许多修炼者离群索居，避开城市生活的喧嚣与安逸。与此同时，修炼者也乐于加入冒险队伍，以满足自己对战斗、财富与物资的需求\u2014\u2014这一切皆为磨砺其道。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Cultivator",
+							"type": "entries",
+							"name": "创造修炼者",
+							"entries": [
+								"创造修炼者时，请思考角色的背景与动机。修炼者之路需要全心投入。你的角色为何如此执着于变强？是一场不幸的遭遇？还是一位楷模？你的角色是如何开始修习其功法的？是在道场中与他人同修，还是独自师从一位大师？甚至可能只是简单到，在废墟中寻得一部手稿。",
+								"你的修炼者所追寻之物\u2014\u2014无论近在眼前还是远在未来\u2014\u2014都可能至关重要。无论简单与否，总有某种事物驱使修炼者在这痛苦而艰辛的旅途上继续前行。",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"你可以依照以下建议快速建卡一名修炼者。首先，依据你的武器选择，将力量或敏捷设为最高属性值，其次是智力。第二，选择{@background 远行者|phb}背景。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Dark Thralls",
+			"name": "暗影奴仆",
+			"shortName": "暗影奴仆",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassFeatures": [
+				"暗影奴仆|修炼者|CC|暗影奴仆|CC|3",
+				"暗影滑行|修炼者|CC|暗影奴仆|CC|7",
+				"蚀|修炼者|CC|暗影奴仆|CC|7",
+				"阴影精通|修炼者|CC|暗影奴仆|CC|11",
+				"影群|修炼者|CC|暗影奴仆|CC|15"
+			]
+		},
+		{
+			"ENG_name": "Falling Phoenix",
+			"name": "落凤",
+			"shortName": "落凤",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassSpells": [
+				"创造篝火|XGE",
+				"燃烧之手",
+				"羽落术"
+			],
+			"subclassFeatures": [
+				"落凤|修炼者|CC|落凤|CC|3",
+				"凤落|修炼者|CC|落凤|CC|7",
+				"凤羽法衣|修炼者|CC|落凤|CC|11",
+				"翼焰燎原|修炼者|CC|落凤|CC|11",
+				"凤凰涅槃|修炼者|CC|落凤|CC|15"
+			]
+		},
+		{
+			"ENG_name": "Four Winds",
+			"name": "四风",
+			"shortName": "四风",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassSpells": [
+				"旋风术|XGE"
+			],
+			"subclassFeatures": [
+				"四风|修炼者|CC|四风|CC|3",
+				"朔风|修炼者|CC|四风|CC|7",
+				"熏风|修炼者|CC|四风|CC|11",
+				"谷风|修炼者|CC|四风|CC|15"
+			]
+		},
+		{
+			"ENG_name": "Fulminis Soul",
+			"name": "雷霆之魂",
+			"shortName": "雷霆之魂",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassFeatures": [
+				"雷霆之魂|修炼者|CC|雷霆之魂|CC|3",
+				"导电之躯|修炼者|CC|雷霆之魂|CC|7",
+				"雷霆迸发|修炼者|CC|雷霆之魂|CC|11",
+				"雷电回击|修炼者|CC|雷霆之魂|CC|15"
+			]
+		},
+		{
+			"ENG_name": "Iaijutsu",
+			"name": "居合",
+			"shortName": "居合",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassFeatures": [
+				"居合|修炼者|CC|居合|CC|3",
+				"居合腰|修炼者|CC|居合|CC|7",
+				"立合|修炼者|CC|居合|CC|11",
+				"剑之壁|修炼者|CC|居合|CC|15"
+			]
+		},
+		{
+			"ENG_name": "Ki Caster",
+			"name": "气术师",
+			"shortName": "气术师",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassFeatures": [
+				"气术师|修炼者|CC|气术师|CC|3",
+				"贴身射击|修炼者|CC|气术师|CC|7",
+				"精准射击|修炼者|CC|气术师|CC|11",
+				"压制射击|修炼者|CC|气术师|CC|15"
+			]
+		},
+		{
+			"ENG_name": "Ki Fortress",
+			"name": "气之堡垒",
+			"shortName": "气之堡垒",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassSpells": [
+				"剑刃防护",
+				"克敌先击",
+				"护盾术",
+				"虔诚护盾",
+				"谭森浮碟术",
+				"不动物件|EGW",
+				"守护之链",
+				"守护之风|XGE",
+				"智能壁垒|TCE",
+				"灵体卫士",
+				"沙墙术|XGE",
+				"火焰护盾",
+				"石肤术",
+				"火墙术"
+			],
+			"subclassFeatures": [
+				"气之堡垒|修炼者|CC|气之堡垒|CC|3",
+				"力场之盾|修炼者|CC|气之堡垒|CC|7",
+				"最后堡垒|修炼者|CC|气之堡垒|CC|11",
+				"毁灭盾击|修炼者|CC|气之堡垒|CC|15"
+			]
+		},
+		{
+			"ENG_name": "Soul Arms",
+			"name": "魂兵",
+			"shortName": "魂兵",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassFeatures": [
+				"魂兵|修炼者|CC|魂兵|CC|3",
+				"流派宗师|修炼者|CC|魂兵|CC|7",
+				"连击|修炼者|CC|魂兵|CC|11",
+				"百变形态|修炼者|CC|魂兵|CC|15"
+			]
+		},
+		{
+			"ENG_name": "Taiji",
+			"name": "太极",
+			"shortName": "太极",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassSpells": [
+				"吸收元素|XGE"
+			],
+			"subclassFeatures": [
+				"太极|修炼者|CC|太极|CC|3",
+				"两仪|修炼者|CC|太极|CC|7",
+				"元素飓风|修炼者|CC|太极|CC|7",
+				"自然之衡|修炼者|CC|太极|CC|11",
+				"无极|修炼者|CC|太极|CC|15"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Cultivator's Aura",
+			"name": "修炼者灵光",
+			"source": "CC",
+			"page": 4,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 1,
+			"entries": [
+				"高强度的锻炼与淬体让你能够将自身的技艺与力量外放于形，借此威压他人、甚至对其造成实质影响。只要你还有至少1点气，你的灵光便会一直生效，范围为10尺，并具有以下能力：",
+				{
+					"type": "list",
+					"items": [
+						"你可以使用你的智力调整值进行基于魅力的技能检定。",
+						"在你灵光范围内进行豁免检定的敌人在检定中承受减值，数值等于你智力调整值的一半（向下取整）。",
+						"你的移动速度提升5尺。"
+					]
+				},
+				"你可以用一个附赠动作收起并重新激活你的灵光；当你{@condition 昏迷}时，灵光会自动收起。"
+			]
+		},
+		{
+			"ENG_name": "Empowered Body",
+			"name": "强化肉身",
+			"source": "CC",
+			"page": 4,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你可以消耗1点气，在一次基于敏捷或力量的技能检定中加入你的熟练加值。若你已熟练于该技能，则改为将你的熟练加值加倍。"
+			]
+		},
+		{
+			"ENG_name": "Ki",
+			"name": "气",
+			"source": "CC",
+			"page": 4,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 1,
+			"entries": [
+				"你的修炼已开始让你得以触及凝聚形态的纯粹能量。你对这种能量的掌握由你的气池表示。你的修炼者等级决定了你拥有多少气，如修炼者职业表中\"气池\"一栏所示。你拥有的气不能超过此上限。",
+				"你可以消耗这些气点来驱动各种功法、姿态能力与特性。你起始便知晓其中三项特性：强化肉身、坚韧追击、突进攻击。",
+				"当你消耗气后，在完成一次短休或长休之前，这些气都无法使用；休息结束时，你将凝聚出新的气，重新填满丹田。",
+				"你的部分功法与姿态特性会要求目标进行豁免检定以抵抗其效应。豁免DC计算如下：",
+				{
+					"ENG_name": "Cultivator",
+					"type": "abilityDc",
+					"name": "修炼者",
+					"attributes": [
+						"int"
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "强化肉身|修炼者|CC|1"
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "坚韧追击|修炼者|CC|1"
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "突进攻击|修炼者|CC|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Relentless Pursuit",
+			"name": "坚韧追击",
+			"source": "CC",
+			"page": 4,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当与你相邻的敌人尝试移动时，你可以作为反应消耗1点气，跟随该敌人移动至多你的移动速度的距离。"
+			]
+		},
+		{
+			"ENG_name": "Spring Attack",
+			"name": "突进攻击",
+			"source": "CC",
+			"page": 4,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"每当你采取{@action 疾走}动作时，你可以消耗1点气，以一个附赠动作进行一次攻击。"
+			]
+		},
+		{
+			"ENG_name": "Unarmored Defense",
+			"name": "无甲防御",
+			"source": "CC",
+			"page": 4,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 1,
+			"entries": [
+				"当你未穿着任何护甲时，你的护甲等级等于10＋你的敏捷调整值＋你的智力调整值。你可以手持盾牌并同时获得此收益。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "CC",
+			"page": 4,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 2,
+			"entries": [
+				"在2级时，你采用一种特定的战斗风格作为专长。从可选特性列表中选择一项战斗风格。即使你再次获得选择机会，也不能重复选择同一战斗风格选项。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "箭术|CC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "近距离射手|CC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "防御|CC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "对决|CC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "巨武器战斗|CC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拦截|CC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "投掷武器战斗|CC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "双武器战斗|CC"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "徒手战斗|CC"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Techniques",
+			"name": "功法",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 3,
+			"entries": [
+				"你开始将毕生投入到众多功法之一的修炼与完善之中。选择一门功法。你的选择会在3级以及其后的7级、11级和15级赋予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 4,
+			"entries": [
+				"当你到达4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与通常规则相同，你无法借此特性将属性值提升至20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Breakthrough",
+			"name": "突破",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 5,
+			"entries": [
+				"在5级时，你的修炼更上一层楼，强化了身体的某些方面。获得此特性时，你可以从以下两个选项中选择其一：",
+				{
+					"type": "list",
+					"items": [
+						"你的速度增加5尺。",
+						"你的生命值上限提高5。"
+					]
+				},
+				"你可以在10级、15级和20级再次选择这些选项中的任意一个。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 5,
+			"entries": [
+				"从5级起，当你在自己回合采取{@action 攻击}动作时，你可以进行两次攻击而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Aura Infusion",
+			"name": "灵光灌注",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 6,
+			"entries": [
+				"到达6级时，你驾驭灵光中的滋养之力，加速身体的自然恢复。你可以用一个附赠动作消耗1点气，为自身恢复{@dice 2d4}点生命值。你也可以用一个动作消耗2点气，以触碰为另一名生物恢复{@dice 2d4}点生命值。",
+				"你可以使用此能力的次数等于你的智力调整值（至少一次）。"
+			]
+		},
+		{
+			"ENG_name": "Technique feature",
+			"name": "功法特性",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得一项由你的功法赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与通常规则相同，你无法借助此特性将属性值提升至20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Of Sound Mind and Body",
+			"name": "身心健全",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 9,
+			"entries": [
+				"在9级时，你对气的精通使你能更好地守护自己的身心。当你受到某个允许你进行体质或智力豁免检定以只受一半伤害的法术或效应影响时，你可以消耗1点气，改为在豁免成功时不受任何伤害。",
+				"当你{@condition 昏迷}时，你无法获得此能力的收益。"
+			]
+		},
+		{
+			"ENG_name": "Auric Influence",
+			"name": "灵光感召",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 10,
+			"entries": [
+				"从10级起，你对灵光的掌控已臻于无形，能持续影响你与之交流的对象。你可以再选择一项基于魅力的技能并获得熟练。",
+				"此外，每当你进行一次基于魅力的技能检定时，你可以消耗1点气重骰该检定，并采用第二次结果。"
+			]
+		},
+		{
+			"ENG_name": "Technique feature",
+			"name": "功法特性",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 11,
+			"entries": [
+				"在11级时，你获得一项由你的功法赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与通常规则相同，你无法借助此特性将属性值提升至20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Reforged Body",
+			"name": "重铸之躯",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 13,
+			"entries": [
+				"当你到达13级时，你开始在修炼中汲取材料之力以重铸肉身、以元素淬炼己身。你获得一种自选伤害类型的抗性。"
+			]
+		},
+		{
+			"ENG_name": "Aura Mastery",
+			"name": "灵光掌握",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 14,
+			"entries": [
+				"在14级时，你已能娴熟操弄灵光，从中获取海量情报、扩大其影响范围，或将效应聚焦于单一敌人。你可以用一个动作将你的灵光范围扩展至30尺，持续到你下回合结束。范围扩展期间，你能察觉灵光范围内的任何生物，无论其死活。此能力不会告诉你它们的位置，只会让你知道它们身处灵光之中。",
+				"你也可以改为用一个动作将灵光聚焦于一名生物以增强其效应。你可以在30尺内为你的\"修炼者灵光\"能力选择唯一一个目标并消耗1点气：豁免减值提高1，且你攻击该生物的攻击检定获得等同于减值总值的加值。此能力持续1分钟，且每次长休只能使用一次。"
+			]
+		},
+		{
+			"ENG_name": "Technique feature",
+			"name": "功法特性",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得一项由你的功法赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与通常规则相同，你无法借助此特性将属性值提升至20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Cultivation Assault",
+			"name": "修炼强袭",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 17,
+			"entries": [
+				"到达17级时，你学会了以修炼功法侵袭敌人的丹田，将其损伤乃至击碎。只要你还有至少1点气，当你以攻击对一名生物造成伤害时，你可以令该攻击附加额外伤害，数值等于你修炼者等级的一半。你每次长休可使用此能力的次数等于你的智力调整值（至少一次）。"
+			]
+		},
+		{
+			"ENG_name": "Accelerated Infusion",
+			"name": "加速灌注",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 18,
+			"entries": [
+				"在18级时，你的灵光治疗自身与他者的速度得到了提升。你的灵光灌注治疗量提高至{@dice 2d8}，并且你可以用一个附赠动作触碰其他生物以治疗它们。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "CC",
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与通常规则相同，你无法借助此特性将属性值提升至20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Ki Incarnate",
+			"name": "气之化身",
+			"source": "CC",
+			"page": 5,
+			"className": "修炼者",
+			"classSource": "CC",
+			"level": 20,
+			"entries": [
+				"从20级起，你便是气所化之身。即使没有气，你也可以使用气特性。每当你如此做时，你每以此避免消耗1点气，就要受到{@dice 1d4}点无法规避的力场伤害。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Dark Thralls",
+			"name": "暗影奴仆",
+			"source": "CC",
+			"page": 15,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "暗影奴仆",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"暗影奴仆功法由一位以体内之气操控他人阴影的修炼者所创。她的造诣之深，令受影响的敌人常常惨遭自己阴影的撕咬。此功法的修习者能胜任辅助与进攻定位，驱使受控阴影如臂使指，威力不逊任何兵器。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "慑服|修炼者|CC|暗影奴仆|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "姿态|修炼者|CC|暗影奴仆|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Stances",
+			"name": "姿态",
+			"source": "CC",
+			"page": 15,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "暗影奴仆",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"自3级起，你的功法使你知晓如何将气内用于防御能力、外用于攻击能力。",
+				"除非被突袭，你可以在为先攻掷骰前选择外功姿态或内功姿态。否则，进入或切换姿态需要一个附赠动作。除非另有说明，你只有在处于某一姿态时才能使用该姿态赋予的能力与收益。",
+				"你在{@condition 失能}状态下无法使用姿态。如果你在处于某一姿态时{@condition 失能}，可以用一个附赠动作重新获得任一姿态。",
+				{
+					"ENG_name": "Internal Stance",
+					"type": "list",
+					"name": "内功姿态",
+					"items": [
+						"你可以对30尺内的一名被标记盟友使用{@action 协助}动作。",
+						"你可以用一个动作消耗1点气，与30尺内的一名被标记盟友互换位置。",
+						"当被标记盟友将要攻击或受到攻击时，你可以额外消耗1点气，以反应使用上述任一姿态能力。"
+					]
+				},
+				{
+					"ENG_name": "External Stance",
+					"type": "list",
+					"name": "外功姿态",
+					"items": [
+						"被标记的敌人承受你与被标记盟友的近战及远程武器伤害掷骰的额外{@dice 1d4}点暗蚀伤害。此伤害在10级提升为{@dice 1d6}。",
+						"当一名敌人对你或30尺内一名被标记盟友的攻击落空时，你可以作为反应消耗1点气，使你或你的盟友对该生物的下一次攻击检定获得优势。你在采取该反应时作出选择。",
+						"只要你的灵光中存在至少一名被标记盟友，你和被标记的盟友便获得+1 AC。此加值在10级变为+2。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Subjugate",
+			"name": "慑服",
+			"source": "CC",
+			"page": 15,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "暗影奴仆",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此子职业时，你获得了操控被你触碰者之阴影的能力。你可以用一个动作标记一名盟友或一名敌人，持续1分钟。敌人以及不情愿的盟友必须通过敏捷豁免检定，否则将在持续时间内被标记。",
+				"你共可免费标记一名盟友与一名敌人。在采取标记动作时，你可以每额外消耗1点气多标记一名生物。"
+			]
+		},
+		{
+			"ENG_name": "Eclipse",
+			"name": "蚀",
+			"source": "CC",
+			"page": 15,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "暗影奴仆",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"到达7级时，你已精于以自身阴影蔽体。你可以消耗1点气，以一个附赠动作使用{@action 躲藏}动作。如果你的灵光中有一名被标记盟友，你可以无需掩护进行{@action 躲藏}。"
+			]
+		},
+		{
+			"ENG_name": "Umbral Slide",
+			"name": "暗影滑行",
+			"source": "CC",
+			"page": 15,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "暗影奴仆",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级起，你能借助黑暗如活影般贴地滑行。作为移动的一部分，你可以化作一道附于表面的阴影移动至多你的移动速度的距离。你可以水平或垂直移动，但如果移动结束时身处墙面或天花板上，你将坠落到地面。此移动不会引发借机攻击。",
+				"在明亮光照下你以半速移动；在微光光照或黑暗中，你作为阴影额外获得10尺移动距离。"
+			]
+		},
+		{
+			"ENG_name": "Shade Mastery",
+			"name": "阴影精通",
+			"source": "CC",
+			"page": 15,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "暗影奴仆",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级起，受你慑服的阴影将以骇人之力呼应你的意志。你可以用一个动作消耗2点气，迫使灵光中的一名被标记敌人进行感知豁免检定。豁免失败者的阴影将被撕裂，受到{@dice 4d6}点暗蚀伤害；豁免成功则伤害减半。此伤害无法被抗性减免，且你对同一生物每天只能使用一次此能力。",
+				"此外，你可以在攻击的同时标记生物。你可以选择让这些攻击不造成伤害。"
+			]
+		},
+		{
+			"ENG_name": "Swarm",
+			"name": "影群",
+			"source": "CC",
+			"page": 15,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "暗影奴仆",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你能号令所有受控阴影将敌人撕成碎片。当你使用阴影精通特性时，该生物改为在豁免失败时，依你灵光中每有一名被标记生物受到{@dice 4d6}点暗蚀伤害。"
+			]
+		},
+		{
+			"ENG_name": "Falling Phoenix",
+			"name": "落凤",
+			"source": "CC",
+			"page": 7,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "落凤",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"修习落凤功法的修炼者天性亲焰。其中一些尤好自九天倾泻火雨，且绝不放过任何如此施为的机会。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "召凰|修炼者|CC|落凤|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "姿态|修炼者|CC|落凤|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Conjured Phoenix",
+			"name": "召凰",
+			"source": "CC",
+			"page": 7,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "落凤",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级起，你能召唤一具微小而永燃的功法同名之鸟的化身。你获得戏法{@spell 创造篝火|XGE}，并在其造成的伤害中加入你的智力调整值。此加值在5级时改为两倍智力调整值，在11级时改为三倍。"
+			]
+		},
+		{
+			"ENG_name": "Stances",
+			"name": "姿态",
+			"source": "CC",
+			"page": 7,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "落凤",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"自3级起，你的功法使你知晓如何将气内用于防御能力、外用于攻击能力。",
+				"除非被突袭，你可以在为先攻掷骰前选择外功姿态或内功姿态。否则，进入或切换姿态需要一个附赠动作。除非另有说明，你只有在处于某一姿态时才能使用该姿态赋予的能力与收益。",
+				"你在{@condition 失能}状态下无法使用姿态。如果你在处于某一姿态时{@condition 失能}，可以用一个附赠动作重新获得任一姿态。",
+				{
+					"ENG_name": "Internal Stance",
+					"type": "list",
+					"name": "内功姿态",
+					"items": [
+						"只要处于此姿态，你便获得火焰伤害抗性。",
+						"你可以作为反应、依灵光内每名生物消耗1点气，赋予这些生物火焰抗性，条件是它们留在你的灵光中且你保持此姿态。"
+					]
+				},
+				{
+					"ENG_name": "External Stance",
+					"type": "list",
+					"name": "外功姿态",
+					"items": [
+						"处于此姿态时，每当你将造成火焰伤害，你每回合都要受到等同于熟练加值的火焰伤害。此伤害每回合只承受一次，且无视抗性与免疫。",
+						"当你以修炼者能力或特性造成火焰伤害时，你投掷的伤害骰数量加倍。例如{@spell 创造篝火|XGE}在3级时将造成{@dice 2d8}伤害而非{@dice 1d8}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Phoenix Fall",
+			"name": "凤落",
+			"source": "CC",
+			"page": 7,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "落凤",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级起，你学会了向成群敌军倾泻凰群之炎。你可以消耗3点气施展{@spell 燃烧之手}。",
+				"此外，每当你施展{@spell 创造篝火|XGE}时，可以用一个附赠动作进行一次攻击。"
+			]
+		},
+		{
+			"ENG_name": "Phoenix's Vestment",
+			"name": "凤羽法衣",
+			"source": "CC",
+			"page": 7,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "落凤",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"到达11级时，你获得火焰伤害抗性。当你处于内功姿态时，则改为获得火焰伤害免疫。",
+				"此外，你的能力无视火焰抗性，并将火焰免疫视为火焰抗性。"
+			]
+		},
+		{
+			"ENG_name": "Winged Wildfire",
+			"name": "翼焰燎原",
+			"source": "CC",
+			"page": 7,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "落凤",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，对火的掌控赋予了你凤凰最为强大与著名的特质。处于外功姿态时，你获得烈焰之翼与60尺飞行速度。",
+				"处于内功姿态时，你可以消耗1点气施展{@spell 羽落术}，每日次数等于你的智力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Phoenix Arisen",
+			"name": "凤凰涅槃",
+			"source": "CC",
+			"page": 7,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "落凤",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级起，你开始体现强大凤凰的一切特质。当一次攻击将使你的生命值降至0时，你可以改为退出当前姿态，将生命值降为1、剩余气降为0。攻击者受到{@dice 2d8}点火焰伤害，另加你降至0前每剩余1点气{@dice 1d8}点火焰伤害。",
+				"一旦使用此特性，你在完成一次长休前不能再次使用。在18级时，你造成的伤害提升为{@dice 2d10}点火焰伤害，另加每点气{@dice 1d10}点。此伤害不受外功姿态影响。"
+			]
+		},
+		{
+			"ENG_name": "Four Winds",
+			"name": "四风",
+			"source": "CC",
+			"page": 8,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "四风",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"此功法的大师操弄四方之风，肆虐并掌控周身战场。他们往往是战场上速度最快的斗士之一，修习者常借由以气生成或掌控的风来强化自身与周遭区域。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "姿态|修炼者|CC|四风|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Stances",
+			"name": "姿态",
+			"source": "CC",
+			"page": 8,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "四风",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"自3级起，你的功法使你知晓如何将气内用于防御能力、外用于攻击能力。",
+				"除非被突袭，你可以在为先攻掷骰前选择外功姿态或内功姿态。否则，进入或切换姿态需要一个附赠动作。除非另有说明，你只有在处于某一姿态时才能使用该姿态赋予的能力与收益。",
+				"你在{@condition 失能}状态下无法使用姿态。如果你在处于某一姿态时{@condition 失能}，可以用一个附赠动作重新获得任一姿态。",
+				{
+					"ENG_name": "Internal Stance",
+					"type": "list",
+					"name": "内功姿态",
+					"items": [
+						"你的移动速度与灵光中所有盟友的移动速度提升10尺。此加值在10级提升为20尺。穿过你灵光的盟友在离开后仍保留此加值的一半，直到回合结束。",
+						"你可以用{@skill 特技}以及敏捷来进行跳高与跳远，且不再需要助跑。",
+						"你可以消耗1点气，以一个附赠动作进行{@action 疾走}。如此做时，你的移动不会引发借机攻击。"
+					]
+				},
+				"{@b 外功姿态}",
+				"你可以在切换至此姿态时或以一个附赠动作消耗1点气，激活以下列出的效应之一：",
+				{
+					"type": "list",
+					"items": [
+						"{@b 风御\u2014\u2014}你灵光范围内的所有敌人必须进行力量豁免检定。豁免失败者受到{@dice 1d6}点钝击伤害并被推出你的灵光；成功者伤害减半且不被推动。此伤害在10级提升为{@dice 2d6}。",
+						"{@b 缚风\u2014\u2014}选择你灵光中的一名敌人。其必须进行力量豁免检定。豁免失败者受到{@dice 2d6}点钝击伤害，且其移动速度降为0，持续到其回合结束；成功者伤害减半且移动速度不受影响。此伤害在10级提升为{@dice 4d6}。",
+						"{@b 风暴脉冲\u2014\u2014}选择30尺内的一名敌人。其必须通过力量豁免检定，否则将被沿远离你的方向直线推移20尺。"
+					]
+				},
+				"未完全处于你灵光中的敌人（如巨型生物）在对抗风御与缚风的豁免检定中具有优势。"
+			]
+		},
+		{
+			"ENG_name": "North Wind",
+			"name": "朔风",
+			"source": "CC",
+			"page": 8,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "四风",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级起，你化身朔风本身。每当一名敌人结束其回合时，你可以作为反应获得一个额外回合。在此回合中，你的移动不会引发借机攻击，且你的移动速度加倍。",
+				"此外，一道守护之风护卫着你，吹散任何雾气与毒气，例如{@spell 臭云术}或{@spell 云雾术}。一旦使用了此特性，你在完成一次长休前不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "South Wind",
+			"name": "熏风",
+			"source": "CC",
+			"page": 8,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "四风",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你借炎热的南风托举自身翱翔天际。处于内功姿态时，你获得等同于你移动速度的飞行与悬停速度。"
+			]
+		},
+		{
+			"ENG_name": "East Winds",
+			"name": "谷风",
+			"source": "CC",
+			"page": 8,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "四风",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"到达15级时，你能即刻唤起东风的毁灭之力。你可以消耗5点气施展{@spell 旋风术|XGE}。你可以额外消耗2点气，使自身免疫该法术的效应。你每次长休可使用一次此能力。"
+			]
+		},
+		{
+			"ENG_name": "Fulminis Soul",
+			"name": "雷霆之魂",
+			"source": "CC",
+			"page": 16,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "雷霆之魂",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"此功法的修炼者选择了引导闪电之道。他们能电光般闪烁移形，操弄并体现着其惯用雷矢中更致命的特质。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "闪电袭击|修炼者|CC|雷霆之魂|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "姿态|修炼者|CC|雷霆之魂|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Lightning Strikes",
+			"name": "闪电袭击",
+			"source": "CC",
+			"page": 16,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "雷霆之魂",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此子职业时，你以迅雷般的连击所生之力驱动你的能力。当你命中一名敌人且你的上一次攻击同样命中时，你获得一枚电荷。你持有的电荷上限等于你的熟练加值，超出的电荷全部失去。若你连续一分钟未获得或消耗任何电荷，你将失去所有电荷。",
+				"当一项能力要求你消耗气点时，你可以改以一枚电荷代替1点气。若该能力的气消耗超过你持有的电荷数，则余额须以气支付。",
+				"此外，你可以将气点或电荷用于以下能力：",
+				{
+					"type": "list",
+					"items": [
+						"每回合一次，你可以消耗2点气和10尺移动，传送10尺，无需使用动作。",
+						"你可以消耗2点气，使你的攻击范围提升5尺，持续到你下回合结束，最大提升至10尺。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Stances",
+			"name": "姿态",
+			"source": "CC",
+			"page": 16,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "雷霆之魂",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"自3级起，你的功法使你知晓如何将气内用于防御能力、外用于攻击能力。",
+				"除非被突袭，你可以在为先攻掷骰前选择外功姿态或内功姿态。否则，进入或切换姿态需要一个附赠动作。除非另有说明，你只有在处于某一姿态时才能使用该姿态赋予的能力与收益。",
+				"你在{@condition 失能}状态下无法使用姿态。如果你在处于某一姿态时{@condition 失能}，可以用一个附赠动作重新获得任一姿态。",
+				{
+					"ENG_name": "Internal Stance",
+					"type": "list",
+					"name": "内功姿态",
+					"items": [
+						"每回合一次，在你进行攻击检定时，你可以改为掷骰两次并进行两次攻击。每次攻击造成一半伤害（向下取整）。",
+						"当你以劣势进行攻击时，你可以消耗2点气无视该劣势。",
+						"每回合一次，每当你将获得一枚电荷时，你可以对受攻击的敌人造成额外闪电伤害，数值等于你的熟练加值。"
+					]
+				},
+				{
+					"ENG_name": "External Stance",
+					"type": "list",
+					"name": "外功姿态",
+					"items": [
+						"当你采取{@action 攻击}动作时，你可以改为消耗3点气自双手轰出闪电。处于20尺锥形、以你为中心的10尺球状、或自你所在位置延伸的40尺直线（玩家选择）中的所有生物必须进行敏捷豁免检定。失败者受到{@dice 4d8}点闪电伤害，成功则伤害减半。此伤害在7级、11级和15级各提升{@dice 1d8}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Conductive",
+			"name": "导电之躯",
+			"source": "CC",
+			"page": 16,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "雷霆之魂",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级起，你的身体传导闪电的效率已臻极致。每回合一次，处于内功姿态时，当你连续命中且本回合已获得过电荷，你将获得2枚电荷而非1枚。",
+				"此外，当你获得一枚电荷时，可以立即将其消耗，造成1点闪电伤害、恢复1点生命值，并获得额外5尺移动速度，持续到你下回合开始。此移动加值可以叠加。"
+			]
+		},
+		{
+			"ENG_name": "Fulminant",
+			"name": "雷霆迸发",
+			"source": "CC",
+			"page": 16,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "雷霆之魂",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"到达11级时，你开始释放过剩的电流，伤害周遭之敌。处于外功姿态时，你可以用一个附赠动作进行一次攻击；且当你消耗气或电荷传送时，可以对传送目的地10尺内的敌人造成{@dice 2d4}点闪电伤害，作为该传送的一部分。"
+			]
+		},
+		{
+			"ENG_name": "Return Stroke",
+			"name": "雷电回击",
+			"source": "CC",
+			"page": 16,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "雷霆之魂",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，随着充沛的雷电之力满溢于身，你的出手开始如真正的闪电。当你以外功姿态、且持有4枚或以上电荷开始你的回合时，你可以消耗2枚电荷，在{@action 攻击}动作中额外进行一次攻击。只要你仍持有2枚或以上电荷，你可以在同一回合内继续支付并攻击。"
+			]
+		},
+		{
+			"ENG_name": "Iaijutsu",
+			"name": "居合",
+			"source": "CC",
+			"page": 6,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "居合",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"居合功法的大师将修习时光尽数投入拔刀与纳刀之中。这些修炼者能够瞬息拔兵施以惩戒之击或毁灭性的反击。真正心神合一的居合修习者可化身为刀剑之壁，斩落一切来犯之攻。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "电光拔刀|修炼者|CC|居合|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "居合骰|修炼者|CC|居合|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "姿态|修炼者|CC|居合|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Flash Draw",
+			"name": "电光拔刀",
+			"source": "CC",
+			"page": 6,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "居合",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"处于任一姿态时，你都可以在你的每次攻击中随手拔出并收纳一件武器。该武器必须造成挥砍伤害，且不能具有重型属性。即使你尚未拔出该武器，敌人也会引发你的借机攻击。"
+			]
+		},
+		{
+			"ENG_name": "Iai Dice",
+			"name": "居合骰",
+			"source": "CC",
+			"page": 6,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "居合",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你获得一枚与你的姿态和特性配合使用的骰子，称为居合骰。它起始为{@dice 1d4}，并随你的等级如下表所示提升。使用此骰的特性只能用于符合电光拔刀前提的武器。伤害掷骰中此骰至多计入两次。",
+				{
+					"type": "table",
+					"colLabels": [
+						"等级",
+						"骰子"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"3",
+							"{@dice 1d4}"
+						],
+						[
+							"5",
+							"{@dice 1d6}"
+						],
+						[
+							"9",
+							"{@dice 1d8}"
+						],
+						[
+							"11",
+							"{@dice 2d6}"
+						],
+						[
+							"13",
+							"{@dice 2d8}"
+						],
+						[
+							"17",
+							"{@dice 3d6}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Stances",
+			"name": "姿态",
+			"source": "CC",
+			"page": 6,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "居合",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"自3级起，你的功法使你知晓如何将气内用于防御能力、外用于攻击能力。",
+				"除非被突袭，你可以在为先攻掷骰前选择外功姿态或内功姿态。否则，进入或切换姿态需要一个附赠动作。除非另有说明，你只有在处于某一姿态时才能使用该姿态赋予的能力与收益。",
+				"你在{@condition 失能}状态下无法使用姿态。如果你在处于某一姿态时{@condition 失能}，可以用一个附赠动作重新获得任一姿态。",
+				{
+					"ENG_name": "Internal Stance",
+					"type": "list",
+					"name": "内功姿态",
+					"items": [
+						"如果你自上回合开始以来未曾移动，那么在你的回合开始时，你可以消耗1点气，获得{@sense 盲视}与等同于你灵光范围的触及，直到你移动或被移动为止。",
+						"只要你本回合未曾移动且不再移动，便可以用一个附赠动作采取{@action 回避}动作。",
+						"在你采取{@action 攻击}动作时，你可以消耗1点气，使AC与豁免获得等同于你熟练加值一半（向上取整）的加值，但你的攻击检定承受等量减值。此加值与减值持续到你下回合开始。"
+					]
+				},
+				{
+					"ENG_name": "External Stance",
+					"type": "list",
+					"name": "外功姿态",
+					"items": [
+						"你可以在掷先攻时消耗1点气，在先攻检定中获得优势。",
+						"处于此姿态时，你的AC降低你熟练加值的一半，但你的武器伤害掷骰加入你的居合骰。",
+						"若你攻击的是战斗中尚未行动的生物，则改为在伤害掷骰中两次计入你的居合骰。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Iai-goshi",
+			"name": "居合腰",
+			"source": "CC",
+			"page": 6,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "居合",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"到达7级时，你修成了此功法的第一个架式；以一击敌千军。每次短休两次，你可以用一个动作进行一次近战攻击检定，对你触及范围内的每名敌人生效。"
+			]
+		},
+		{
+			"ENG_name": "Tachi-ai",
+			"name": "立合",
+			"source": "CC",
+			"page": 6,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "居合",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"当你到达11级时，修行使你掌握了此功法的下一个架式，善用敌人的失误。处于内功姿态时，敌人一旦要离开你触及范围内的任何一格，便会引发你的借机攻击。",
+				"此外，你以反应进行的攻击在武器伤害掷骰中加入你的居合骰；而处于外功姿态时，则改为两次计入你的居合伤害骰。"
+			]
+		},
+		{
+			"ENG_name": "Kennokabe",
+			"name": "剑之壁",
+			"source": "CC",
+			"page": 6,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "居合",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你练就了一项集完美攻防于一身的技艺。只要反应时机被触发，你便可以随时消耗1点气获得并使用一个反应。你每次长休可如此做的次数等于你的智力调整值。",
+				"此外，当你将受到来自法术、近战或远程攻击检定的伤害时，你可以作为反应进行一次武器攻击。若你处于外功姿态，此攻击总是以劣势进行。若你的掷骰高于该攻击检定，你可以掷你的武器伤害并加入你的居合骰，再将结果从你将受到的伤害中扣除。若伤害被完全抵消，你可以将攻击反弹回其来源，以你的攻击检定迫使攻击者以该攻击转而以其自身为目标。"
+			]
+		},
+		{
+			"ENG_name": "Ki Caster",
+			"name": "气术师",
+			"source": "CC",
+			"page": 11,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气术师",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"气术师最为人称道的便是其无穷无尽的弹药、远程与近身作战的造诣。另一显著特色是其气铸构装之术：以周身灵光凝成的箭矢，附载着一整套多变的效能。这些构装使修炼者得以从容应对种种战局。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "灵光铸矢|修炼者|CC|气术师|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "构装|修炼者|CC|气术师|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Aura Cast",
+			"name": "灵光铸矢",
+			"source": "CC",
+			"page": 11,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气术师",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级起，你学会运用灵光凝成实体的弹药。作为你每次攻击的一部分，你可以唤出一支箭矢或弩矢用以攻击。此弹药在克服抗性时视为魔法弹药，造成{@dice 2d4}点力场伤害。此弹药需要一件远程双手武器来发射。其伤害骰在10级提升为{@dice 2d6}。弹药在命中或未中目标后即消散；除非另有说明，已有弹药存在时再凝新矢会使旧矢消失。",
+				"此外，当你准备好一次攻击时，该弹药造成额外{@dice 1d10}伤害。若它未在你下回合结束前射出即告失效，额外伤害也随之作废。"
+			]
+		},
+		{
+			"ENG_name": "Constructs",
+			"name": "构装",
+			"source": "CC",
+			"page": 11,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气术师",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级起，你能在凝成弹药时为其附加灵光构型。",
+				"当你以灵光铸矢特性对敌人进行远程攻击检定时，你可以为攻击注入额外的灵能。你获得名为构装的额外能力，可应用于远程攻击。",
+				"每回合一次，当你对敌人进行远程攻击检定时，你可以消耗1点气为该攻击附加一项构装。在9级时，你可以消耗2点气为单次攻击附加2项构装；在17级时，你可以消耗3点气为单次攻击附加3项构装。",
+				"在3级时你知晓3项{@filter 构装|optionalfeatures|Feature Type=KCC}，并在9级和17级各再多习得一项。"
+			]
+		},
+		{
+			"ENG_name": "Point-Blank Shot",
+			"name": "贴身射击",
+			"source": "CC",
+			"page": 11,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气术师",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你学会了让凝出的弹药在近身相搏中更为致命。每次短休一次，你可以用一个动作进行一次射程为5尺的远程攻击检定。一旦命中，该攻击视为重击。",
+				"此重击不会使构装带来的伤害加倍。"
+			]
+		},
+		{
+			"ENG_name": "Sharp Shooting",
+			"name": "精准射击",
+			"source": "CC",
+			"page": 11,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气术师",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级起，你的射术与天赋赋予你致命的准头。每当你为凝出的箭矢掷伤害时，可以在该掷骰中加入你的智力调整值。若你在未使用构装进行攻击时如此做，则在{@dice d20}掷出10或更高时恢复1点气。此额外伤害在重击时加倍。",
+				"你使用此能力的次数等于你的智力调整值。你在完成一次短休后重获所有使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Suppressing Fire",
+			"name": "压制射击",
+			"source": "CC",
+			"page": 11,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气术师",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级起，你已成为施法者的克星。作为反应，当你的武器常规射程内的一名敌人施放法术时，你可以对其进行一次远程攻击检定。此攻击不能以优势进行。若攻击命中，你不造成伤害，但该敌人必须进行一次专注豁免，如同其正专注于一个法术一般，DC等于你的修炼者豁免DC。豁免失败则该法术施放失败，法术位亦被浪费。你每次长休可如此做两次。"
+			]
+		},
+		{
+			"ENG_name": "Ki Fortress",
+			"name": "气之堡垒",
+			"source": "CC",
+			"page": 9,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气之堡垒",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"气之堡垒的修习者受教于\"最好的进攻即是完美的防御\"。他们深知：最先抄起的兵器应是盾，而非剑。此功法的门徒力求化作盟友与加害者之间一道不可逾越之壁。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "气盾|修炼者|CC|气之堡垒|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "盾术巧技|修炼者|CC|气之堡垒|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ki Shields",
+			"name": "气盾",
+			"source": "CC",
+			"page": 9,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气之堡垒",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"到达3级时，你将修炼转向用盾与铸盾之艺。盾牌对你而言此时是一件{@dice d6}轻型多用（{@dice d8}）钝击武器。你可以用与拔出武器相同的{@action 使用物件}动作着装盾牌。带有AC加值的魔法盾牌，也会将相同加值应用于你以该盾进行的攻击检定与伤害掷骰。",
+				"此外，你获得了施法能力，以你的盾牌作为法器。你现已知晓戏法{@spell 剑刃防护}与{@spell 克敌先击}，且每当你施展它们时，可以以灵光中数量等于你熟练加值的生物为目标。",
+				"最后，你可以消耗1点气，以智力作为你的施法属性，施展下表中列出的1环法术。你可以在9级时消耗2点气施展下表的2环法术、在13级时消耗3点气施展3环法术、在19级时消耗4点气施展4环法术。你可以用一个附赠动作施展下表中的任意法术。",
+				"当你获得施展更高环阶法术的能力后，你可以按每环1点气消耗，以你的最高环阶施展较低环阶的法术。",
+				{
+					"type": "table",
+					"colLabels": [
+						"法术环阶",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell 护盾术}, {@spell 虔诚护盾}, {@spell 谭森浮碟术}"
+						],
+						[
+							"2",
+							"{@spell 不动物件|EGW}, {@spell 守护之链}, {@spell 守护之风|XGE}"
+						],
+						[
+							"3",
+							"{@spell 智能壁垒|TCE}, {@spell 灵体卫士}, {@spell 沙墙术|XGE}"
+						],
+						[
+							"4",
+							"{@spell 火焰护盾}, {@spell 石肤术}, {@spell 火墙术}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Shield Legerdemain",
+			"name": "盾术巧技",
+			"source": "CC",
+			"page": 9,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气之堡垒",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级起，你掌握了硬化灵光局部之法，为自身或周遭之人提供庇护。当灵光中的一名盟友即将被一次攻击命中时，你可以作为反应施展{@spell 护盾术}。当你以此方式施展该法术时，可以以该盟友为目标。"
+			]
+		},
+		{
+			"ENG_name": "Force Shields",
+			"name": "力场之盾",
+			"source": "CC",
+			"page": 9,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气之堡垒",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你的造诣已从形而上延伸至实体之盾。你可以掷出灵能化的盾牌进行一次投掷武器攻击，射程15/30，攻击与伤害掷骰使用力量。它造成{@dice 1d6}点力场伤害，外加等同于该盾所赋予魔法AC加值的额外伤害。盾牌在撞击后碎裂。",
+				"此外，你可以将你身上单面盾牌所赋予的AC加值应用于你的豁免。此效应在你{@condition 昏迷}时终止。"
+			]
+		},
+		{
+			"ENG_name": "Last Bastion",
+			"name": "最后堡垒",
+			"source": "CC",
+			"page": 9,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气之堡垒",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"到达11级时，拯救盟友已成为你的天职。只要你还有1点气，便可以用一个附赠动作稳住身形。直到你下回合结束，你的移动速度变为0，你对身后15尺锥形区域内的中型或更小生物充当四分之三掩护，且你的AC与豁免检定获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Destructive Shielding",
+			"name": "毁灭盾击",
+			"source": "CC",
+			"page": 9,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "气之堡垒",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级起，你用盾的技艺已达致命的效率。当你以盾牌攻击命中一名敌人时，你可以至多消耗3点气，造成额外{@dice 1d8}伤害，且第一点之后每点气再追加{@dice 1d8}伤害。此外，当你对敌人造成重击时，可以在该{@action 攻击}动作中额外进行一次攻击。"
+			]
+		},
+		{
+			"ENG_name": "Soul Arms",
+			"name": "魂兵",
+			"source": "CC",
+			"page": 13,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "魂兵",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"此功法传授予擅长冥想内观之人。这是因为它要求修习者能够寻得一方灵魂空间，以容纳那些将成为你魂兵的武器。此功法的修习者终将发现自己化作刀剑的旋风、打击的风暴，且永不缺兵少刃。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "军械库|修炼者|CC|魂兵|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "武器形态|修炼者|CC|魂兵|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "姿态|修炼者|CC|魂兵|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Armory",
+			"name": "军械库",
+			"source": "CC",
+			"page": 13,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "魂兵",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此功法时，你获得一方容纳所选武器的灵魂空间，以及在战斗中瞬间换用它们的能力。你可以选择至多等同于熟练加值的魔法或非魔法武器，并在一次长休中与它们完成同调。这些武器不计入你总共三个同调栏位，无论其是否为魔法物品。",
+				"你可以通过进入任一姿态召唤一件武器。结束或切换姿态会使当前武器消失；若你进入另一姿态，则会唤出下一件武器。你凝出的武器若离你5尺以上达1分钟或更久便会消散。你主动解散这些武器（无需动作）或你死亡时，它们同样会消散。",
+				"你可以手持武器冥想，从而与魔法或非魔法武器同调。你必须在一次长休的过程中如此冥想。随后你可以解散该武器，将其收入你丹田中开辟的一方空间；此后每当你进入姿态，它便会出现。当你死亡、冥想另一件将取代原有武器的武器、或以一次长休终止同调时，武器会出现在你脚边。当羁绊断裂时武器若正处于你的空间中，它也会出现在你脚边。",
+				"此外，你以融合武器进行攻击与伤害掷骰时可以使用你的智力调整值。但使用任何未同调的武器攻击时，你承受劣势。"
+			]
+		},
+		{
+			"ENG_name": "Stances",
+			"name": "姿态",
+			"source": "CC",
+			"page": 13,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "魂兵",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"自3级起，你的功法使你知晓如何将气内用于防御能力、外用于攻击能力。",
+				"除非被突袭，你可以在为先攻掷骰前选择外功姿态或内功姿态。否则，进入或切换姿态需要一个附赠动作。除非另有说明，你只有在处于某一姿态时才能使用该姿态赋予的能力与收益。",
+				"你在{@condition 失能}状态下无法使用姿态。如果你在处于某一姿态时{@condition 失能}，可以用一个附赠动作重新获得任一姿态。",
+				{
+					"ENG_name": "Internal Stance",
+					"type": "list",
+					"name": "内功姿态",
+					"items": [
+						"在你进行攻击检定时，你可以换用任意一件已同调的武器并使用其弱式形态。",
+						"你可以用一个附赠动作消耗1点气；你本回合每换过一次武器，你的攻击便附加额外{@dice 1d4}武器伤害。"
+					]
+				},
+				{
+					"ENG_name": "External Stance",
+					"type": "list",
+					"name": "外功姿态",
+					"items": [
+						"处于此姿态时，你可以为军械库武器使用你所选形态的弱式与强式特性。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Weapon Forms",
+			"name": "武器形态",
+			"source": "CC",
+			"page": 13,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "魂兵",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级，你的武器造诣为任何军械库武器赋予了额外能力。当你以一件已同调武器进入姿态时，你将获得名为形态的额外能力。每当你换入、换出武器或以武器攻击时，你可以依武器属性选择一项{@filter 形态|optionalfeatures|Feature Type=SAF}。除非另有说明，即使所用武器具有多项属性，你一次也只能使用一项形态。"
+			]
+		},
+		{
+			"ENG_name": "Style Master",
+			"name": "流派宗师",
+			"source": "CC",
+			"page": 13,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "魂兵",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"到达7级时，你已为融合武器习得相称的流派。你额外选择一项战斗风格。每当你召唤或更换武器时，也可以将这项额外风格改换为一项你未知的风格。",
+				"此外，每当你到达此职业中赋予属性值提升的等级时，你可以将一项已知的战斗风格替换为另一项可用的战斗风格。"
+			]
+		},
+		{
+			"ENG_name": "Barrage",
+			"name": "连击",
+			"source": "CC",
+			"page": 13,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "魂兵",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级起，你的出手开始提速，攻击愈多，愈发迅疾。你可以消耗3点气，以一个附赠动作进行一次攻击。你本回合每换过一次武器，此消耗便减少1点气，最低为1点。"
+			]
+		},
+		{
+			"ENG_name": "Master of Many Forms",
+			"name": "百变形态",
+			"source": "CC",
+			"page": 13,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "魂兵",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你对形态的掌握已由刻意化为本能。若你将使用的武器具有多项属性，你可以同时多用一项形态，总计两项。"
+			]
+		},
+		{
+			"ENG_name": "Taiji",
+			"name": "太极",
+			"source": "CC",
+			"page": 10,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "太极",
+			"subclassSource": "CC",
+			"level": 3,
+			"entries": [
+				"此功法以追求万物归一之道著称\u2014\u2014一切状态的终极全体。太极门徒修习平衡相反之力，以求与宇宙达成完美和谐。这些门徒虽在缓慢而不懈的演炼中显得温良，却能以此道之精通借相反之力发挥危险的效用。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素回收|修炼者|CC|太极|CC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "姿态|修炼者|CC|太极|CC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Reclamation",
+			"name": "元素回收",
+			"source": "CC",
+			"page": 10,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "太极",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级起，你获得施展{@spell 吸收元素|XGE}的能力。你每次短休可如此做两次，并在10级获得第三次使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Stances",
+			"name": "姿态",
+			"source": "CC",
+			"page": 10,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "太极",
+			"subclassSource": "CC",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级，你的功法使你知晓如何将气内用于防御能力、外用于攻击能力。",
+				"除非被突袭，你可以在为先攻掷骰前选择外功姿态或内功姿态。否则，进入或切换姿态需要一个附赠动作。除非另有说明，你只有在处于某一姿态时才能使用该姿态赋予的能力与收益。",
+				"你在{@condition 失能}状态下无法使用姿态。如果你在处于某一姿态时{@condition 失能}，可以用一个附赠动作重新获得任一姿态。",
+				{
+					"ENG_name": "Internal Stance",
+					"type": "list",
+					"name": "内功姿态",
+					"items": [
+						"每回合一次，每当你以{@spell 吸收元素|XGE}减免伤害时，你恢复等同于熟练加值一半的气点。若你没有气点，则改为恢复等同于熟练加值的气点。",
+						"你灵光范围内的所有盟友在对抗造成火焰或寒冷伤害的法术与能力的豁免检定中获得优势。"
+					]
+				},
+				"{@b 外功姿态}",
+				"每当你采取{@action 攻击}动作时，你可以将下列一项能力应用于你的攻击。此外，你也可以改为消耗1点气，让你的所有攻击受下列所有能力的影响：",
+				{
+					"ENG_name": "While in this stance:",
+					"type": "list",
+					"name": "处于此姿态时：",
+					"items": [
+						"你的徒手攻击检定可以使用你的智力调整值。",
+						"你的徒手攻击掷骰加入你的智力调整值作为额外伤害。",
+						"你在灵光范围内的攻击无视半身掩护与四分之三掩护。",
+						"你的攻击范围扩展至你灵光的范围。",
+						"你的攻击可以使用火焰或寒冷伤害，以替代其原本的伤害类型。"
+					]
+				},
+				"在6级时，你处于此姿态时的所有攻击附加额外{@dice 1d4}点火焰或寒冷伤害。此伤害在12级提升为{@dice 1d6}。"
+			]
+		},
+		{
+			"ENG_name": "Duality",
+			"name": "两仪",
+			"source": "CC",
+			"page": 10,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "太极",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"到达7级时，你对生命万象之整体的认知日渐增长，使你得以驾驭世间诸般两仪。所有提及火焰与寒冷伤害的姿态能力，现在可以改为毒素与强酸，或闪电与雷鸣伤害。在10级时，这些能力还可以改为光耀与暗蚀，或心灵与力场伤害。",
+				"此外，你可以将{@spell 吸收元素|XGE}用于你可使用的任何元素伤害类型，无论你是否已选择该伤害类型。",
+				"你一次只能选择一组伤害类型，并可以在短休或长休后改选另一组。"
+			]
+		},
+		{
+			"ENG_name": "Elemental Hurricane",
+			"name": "元素飓风",
+			"source": "CC",
+			"page": 10,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "太极",
+			"subclassSource": "CC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你可以与元素合一。每次长休一次，你可以用一个附赠动作，在不消耗气点的情况下同时获得两种姿态的所有效应，持续1分钟。但在持续时间内，你获得你所选元素的易伤。",
+				"此特性使你可以不消耗气点地使用所有外功姿态能力。"
+			]
+		},
+		{
+			"ENG_name": "Balance in Nature",
+			"name": "自然之衡",
+			"source": "CC",
+			"page": 10,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "太极",
+			"subclassSource": "CC",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级起，你能将自身意志施加于周身的元素之力。当一名盟友将受到元素伤害时，你可以施展{@spell 吸收元素|XGE}。当你以此方式施展该法术时，{@spell 吸收元素|XGE}的效应将作用于你灵光范围内的所有生物。",
+				"而且，只要你本回合至少消耗了1点气，便可以用一个附赠动作进行一次额外的徒手攻击。"
+			]
+		},
+		{
+			"ENG_name": "Wuji",
+			"name": "无极",
+			"source": "CC",
+			"page": 10,
+			"className": "修炼者",
+			"classSource": "CC",
+			"subclassShortName": "太极",
+			"subclassSource": "CC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级起，你已臻平衡与掌控的巅峰。处于外功姿态时，你的攻击无视你所选元素的伤害抗性，并将对该元素的免疫视为抗性。",
+				"处于内功姿态时，作为反应，若一名盟友通过了某个本会令其受到一半伤害的法术或能力的豁免检定，你可以依灵光内每名盟友消耗1点气，改为令其在豁免成功时不受伤害。你每日可使用此能力的次数等于你的智力调整值。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Archery",
+			"name": "箭术",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"你使用远程武器进行的攻击检定获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Aura Burst",
+			"name": "灵光爆发",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"若被此箭命中的敌人处于你的灵光中，其额外受到{@dice 3d6}武器伤害。"
+			]
+		},
+		{
+			"ENG_name": "Aura Suspension",
+			"name": "灵光悬停",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"当你射出此矢时，可以改为令其悬停于你的灵光之中。在你每个回合开始时，此箭将自动射向最近的敌人。每次射击的气消耗与所附构装均与首射相同。你可以用一个附赠动作终止此能力。"
+			]
+		},
+		{
+			"ENG_name": "Brake Arrow",
+			"name": "制动箭",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"entries": [
+				"当一名敌人被此箭命中时，其移动速度降低15尺。此效应可叠加，并会在其下回合结束时消除。在10级时，若目标敏捷豁免失败，受影响的敌人便无法以传奇动作移动。"
+			]
+		},
+		{
+			"ENG_name": "Cannon Cast",
+			"name": "重炮轰击",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"entries": [
+				"当此箭命中生物或表面时，目标及10尺内的生物额外受到{@dice 1d6}点力场伤害并被击至{@condition 倒地}。力量豁免成功可免除{@condition 倒地}状态。此箭对建筑结构造成双倍伤害。在10级时，此伤害提升为{@dice 2d6}。"
+			]
+		},
+		{
+			"ENG_name": "Close Quarters Shooter",
+			"name": "近距离射手",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"当你处于一名敌对生物5尺内进行远程攻击时，该攻击检定不承受劣势。你的远程攻击对30尺内的目标无视半身掩护与四分之三掩护。你的远程攻击检定获得+1加值。"
+			]
+		},
+		{
+			"ENG_name": "Defense",
+			"name": "防御",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"穿着护甲时，你的AC获得+1加值。"
+			]
+		},
+		{
+			"ENG_name": "Drill Tip",
+			"name": "钻头箭",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"此箭可以射穿厚度不超过5尺的石头或木头。此外，当直接射向一名生物时，此箭可以再贯穿数量等同于你智力调整值的额外目标。每个额外目标都必须位于首个目标正后方。以此方式射击时，每名被命中的敌人额外受到{@dice 1d6}伤害。"
+			]
+		},
+		{
+			"ENG_name": "Dueling",
+			"name": "对决",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"当你单手持用一件近战武器且未持用其他武器时，你以该武器进行的伤害掷骰获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Echo Arrow",
+			"name": "回响箭",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"entries": [
+				"若你以此箭命中一名敌人，你可以再选择射程内的另一名敌人。在你下回合开始前，若被选中的敌人或原先的目标受到了伤害，另一名敌人便受到等同于你箭矢伤害骰的额外伤害。"
+			]
+		},
+		{
+			"ENG_name": "Fester Shot",
+			"name": "溃烂射击",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"entries": [
+				"当你以此远程攻击对一名敌人造成伤害时，该敌人的生命值上限也减少等量数值。此效应在长休后结束。在10级时，此攻击在敌人每个回合开始时造成额外{@dice 1d4}点暗蚀伤害，并等量减少其生命值上限。此额外伤害无视免疫与抗性，且若该敌人已连续1轮未被你的箭矢命中，则此效应终止。"
+			]
+		},
+		{
+			"ENG_name": "Finesse",
+			"name": "灵巧",
+			"source": "CC",
+			"page": 14,
+			"featureType": [
+				"SAF"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@b 弱式}\u2014\u2014攻击时，你可以无视盾牌本会提供的AC加值。",
+						"{@b 强式}\u2014\u2014以此武器成功攻击后，你以任意武器进行的下一次攻击的伤害获得等同于你熟练加值的加值。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Great Weapon Fighting",
+			"name": "巨武器战斗",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"当你以双手持用的近战武器进行攻击，其伤害骰掷出1或2时，你可以重骰该骰并必须使用新结果，即使新结果为1或2。该武器必须具有双手或多用属性，你才能获得此收益。"
+			]
+		},
+		{
+			"ENG_name": "Heavy",
+			"name": "重型",
+			"source": "CC",
+			"page": 14,
+			"featureType": [
+				"SAF"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@b 弱式}\u2014\u2014每当你将以重型武器造成伤害时，你可以将目标向任意方向移动5尺。",
+						"{@b 强式}\u2014\u2014若你成功命中你本回合已命中过的生物，可以强制其进行力量豁免，失败则被推退5尺×你的熟练加值。移动途中撞上障碍物的生物，每少移动5尺便额外受到{@dice 1d6}伤害，且须进行力量豁免，失败则{@condition 倒地}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Interception",
+			"name": "拦截",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"当你能看到的一名生物以攻击命中距你5尺内的一名目标时，你可以使用你的反应，令目标受到的伤害减少{@dice 1d10}＋你的熟练加值（伤害最低为0）。你必须持用一面盾牌或一件简易或军用武器才能使用此反应。"
+			]
+		},
+		{
+			"ENG_name": "Light",
+			"name": "轻型",
+			"source": "CC",
+			"page": 14,
+			"featureType": [
+				"SAF"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@b 弱式}\u2014\u2014若你此前已至少命中该生物一次，当你以此武器命中时，你的AC提升1，直到你下回合结束。",
+						"{@b 弱式}\u2014\u2014你可以在换用此武器时，额外召唤一件轻型武器或其非魔法复制品。",
+						"{@b 强式}\u2014\u2014副手持用武器时，你可以将额外的双武器战斗攻击并入{@action 攻击}动作，而非作为附赠动作。",
+						"{@b 强式}\u2014\u2014以轻型武器每次成功攻击，你的移动速度提升5尺，直到回合结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mesmer Arrow",
+			"name": "迷魂箭",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"entries": [
+				"若此箭命中一名生物，目标须进行一次带优势的感知豁免检定，失败则被你{@condition 魅惑}，直到你下回合开始。你可以选择让此箭不造成伤害。在此检定中成功的生物在24小时内免疫此效应。"
+			]
+		},
+		{
+			"ENG_name": "Named Arrow",
+			"name": "点名箭",
+			"source": "CC",
+			"page": 12,
+			"featureType": [
+				"KCC"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"你可以承受攻击检定减值，以此射击特定身体部位，并在命中时引发效应。",
+				{
+					"type": "list",
+					"items": [
+						"{@b 躯干 -2：}将目标击退10尺。",
+						"{@b 双腿 -3：}目标的移动速度降为0，直到其下回合结束。敏捷豁免成功则改为降至其移动速度的一半。",
+						"{@b 双臂 -4：}目标在1分钟内的所有攻击承受劣势。其在每回合结束时进行体质豁免，成功则终止此效应。",
+						"{@b 头部 -5：}目标须通过体质豁免，否则{@condition 震慑}2回合。目标可在每回合结束时再进行一次体质豁免以终止此效应。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ranged",
+			"name": "远程",
+			"source": "CC",
+			"page": 14,
+			"featureType": [
+				"SAF"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@b 弱式}\u2014\u2014{@condition 倒地}不会使你的攻击承受劣势。",
+						"{@b 弱式}\u2014\u2014召唤远程武器时，你可以使其处于已装填非魔法弹药的状态。装填仍须手动进行。",
+						"{@b 强式}\u2014\u2014若你处于{@condition 倒地}状态，可以用一个附赠动作，为一次远程武器伤害掷骰额外加入一枚骰。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Reach",
+			"name": "触及",
+			"source": "CC",
+			"page": 14,
+			"featureType": [
+				"SAF"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@b 弱式}\u2014\u2014以此武器伤害生物时，你可以用你的反应强制该生物进行力量豁免，失败则{@condition 倒地}。",
+						"{@b 强式}\u2014\u2014你可以用一个动作，对触及范围内的每名敌人进行一次攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Thrown",
+			"name": "投掷",
+			"source": "CC",
+			"page": 14,
+			"featureType": [
+				"SAF"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@b 弱式}\u2014\u2014你可以在任意攻击检定的同时召回这件投掷武器。",
+						"{@b 弱式}\u2014\u2014你的最大射程提升等同于你智力值的尺数。",
+						"{@b 强式}\u2014\u2014若你的攻击目标处于常规射程内，你可以将智力调整值加倍计入伤害，而非只计一次。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Thrown Weapon Fighting",
+			"name": "投掷武器战斗",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"你可以在以具有投掷属性的武器进行攻击时，顺势拔出该武器。此外，当你以投掷武器命中远程攻击时，该伤害掷骰获得+1加值。"
+			]
+		},
+		{
+			"ENG_name": "Two-Handed",
+			"name": "双手",
+			"source": "CC",
+			"page": 14,
+			"featureType": [
+				"SAF"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@b 弱式}\u2014\u2014以此武器伤害{@condition 倒地}的生物时，伤害额外计入一枚武器骰。",
+						"{@b 强式}\u2014\u2014攻击时，你可以令攻击检定承受最多等同于熟练加值的减值（每次1点）。每承受1点减值，该次攻击伤害提升2。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Two-Weapon Fighting",
+			"name": "双武器战斗",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"当你进行双武器战斗时，你可以将你的属性调整值加进第二次攻击的伤害中。"
+			]
+		},
+		{
+			"ENG_name": "Unarmed Fighting",
+			"name": "徒手战斗",
+			"source": "CC",
+			"page": 4,
+			"featureType": [
+				"FS:C"
+			],
+			"entries": [
+				"你的徒手打击可造成等于{@dice 1d6}＋你的力量调整值的钝击伤害。若你以两只空手出拳，{@dice d6}改为{@dice d8}。当你成功开始擒抱时，你可以对被{@condition 受擒}的生物造成{@dice 1d4}点钝击伤害。在擒抱结束前，每当你以近战攻击命中该生物时，同样可以对其造成此伤害。"
+			]
+		},
+		{
+			"ENG_name": "Versatile",
+			"name": "多用",
+			"source": "CC",
+			"page": 14,
+			"featureType": [
+				"SAF"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@b 弱式}\u2014\u2014复制此前所用近战武器的弱式形态。",
+						"{@b 强式}\u2014\u2014当你的攻击将落空时，你可以消耗1点气重骰一次。若命中，则额外计入一枚武器骰的伤害。"
+					]
+				}
+			]
+		}
+	]
+}
