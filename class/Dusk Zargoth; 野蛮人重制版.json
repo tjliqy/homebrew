@@ -1,0 +1,1580 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DZC:ANA:B",
+				"abbreviation": "DZC:ANA",
+				"full": "野蛮人重制版",
+				"url": "https://homebrewery.naturalcrit.com/share/yfAcMViuAcug",
+				"version": "1.0.1",
+				"authors": [
+					"Dusk Zargoth"
+				],
+				"convertedBy": [
+					"Dusk Zargoth"
+				],
+				"color": "DC3636"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1716658815,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "d0d82ada20"
+	},
+	"class": [
+		{
+			"ENG_name": "Barbarian Rework",
+			"name": "野蛮人",
+			"source": "DZC:ANA:B",
+			"page": 1,
+			"hd": {
+				"number": 1,
+				"faces": 12
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 巨斧|phb} 或 (b) 任意{@filter 军用近战武器|items|source=phb|category=基础|type=军用武器;近战武器}",
+					"(a) 两把{@item 手斧|phb|手斧}或 (b) 任意一把 {@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) 一个 {@item 探索套组|phb}和四支 {@item 标枪|phb|标枪}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"巨斧|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartialMelee",
+								"quantity": 1
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "手斧|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartialMelee",
+								"quantity": 1
+							}
+						]
+					},
+					{
+						"-": [
+							"探索套组|phb",
+							{
+								"item": "标枪|phb",
+								"quantity": 4
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"str": 13,
+					"con": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"simple",
+						"martial"
+					],
+					"armor": [
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"振奋加值"
+					],
+					"rows": [
+						[
+							{
+								"type": "bonus",
+								"value": 2
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 2
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 2
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 2
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 2
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 3
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 3
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 3
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 3
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 3
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 4
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 4
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 4
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 4
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 4
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 5
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 5
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 5
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 5
+							}
+						],
+						[
+							{
+								"type": "bonus",
+								"value": 5
+							}
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"振奋|野蛮人|DZC:ANA:B|1",
+				"喜怒无常|野蛮人|DZC:ANA:B|1",
+				"狂乱|野蛮人|DZC:ANA:B|2",
+				"原始尖啸|野蛮人|DZC:ANA:B|2",
+				{
+					"classFeature": "原初道途|野蛮人|DZC:ANA:B|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|野蛮人|DZC:ANA:B|4",
+				"额外攻击|野蛮人|DZC:ANA:B|5",
+				"坚韧|野蛮人|DZC:ANA:B|5",
+				"属性值提升|野蛮人|DZC:ANA:B|6",
+				{
+					"classFeature": "原初道途特性|野蛮人|DZC:ANA:B|6",
+					"gainSubclassFeature": true
+				},
+				"振奋提升|野蛮人|DZC:ANA:B|7",
+				"强烈气味|野蛮人|DZC:ANA:B|7",
+				"属性值提升|野蛮人|DZC:ANA:B|8",
+				{
+					"classFeature": "原初道途特性|野蛮人|DZC:ANA:B|9",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|野蛮人|DZC:ANA:B|10",
+				"迅猛生长|野蛮人|DZC:ANA:B|11",
+				"属性值提升|野蛮人|DZC:ANA:B|12",
+				"重归荒野|野蛮人|DZC:ANA:B|13",
+				{
+					"classFeature": "原初道途特性|野蛮人|DZC:ANA:B|14",
+					"gainSubclassFeature": true
+				},
+				"额外攻击（2）|野蛮人|DZC:ANA:B|15",
+				"属性值提升|野蛮人|DZC:ANA:B|16",
+				"野蛮爆发|野蛮人|DZC:ANA:B|17",
+				"迅猛生长提升|野蛮人|DZC:ANA:B|18",
+				"振奋提升|野蛮人|DZC:ANA:B|19",
+				"属性值提升|野蛮人|DZC:ANA:B|20",
+				"丛林之王|野蛮人|DZC:ANA:B|20"
+			],
+			"subclassTitle": "原初道途",
+			"hasFluff": true,
+			"foundryAdvancement": [
+				{
+					"title": "振奋",
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "adr",
+						"type": "numeric",
+						"scale": {
+							"1": {
+								"value": 2
+							},
+							"6": {
+								"value": 3
+							},
+							"11": {
+								"value": 4
+							},
+							"16": {
+								"value": 5
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Barbarian Rework",
+			"name": "野蛮人",
+			"source": "DZC:ANA:B",
+			"entries": [
+				{
+					"ENG_name": "Barbarian",
+					"type": "section",
+					"name": "野蛮人",
+					"page": 1,
+					"source": "DZC:ANA:B",
+					"entries": [
+						"矮人高举战锤冲入入侵村庄的哥布林大军之中。这群绿色祸害不得不分神应对这个蹂躏其部队却毫无减速迹象的家伙。他看上去伤得越重，就变得越发凶狠。当这名浑身浴血的战士到达极限之时，他会发出一声巨大的咆哮，以牺牲自保为代价让自己更进一步超越极限。",
+						"当队伍远离营地深入群山时，精灵将身体在众多巨石上蹭擦，留下一条气味浓重的踪迹以便回程循迹而行，这同时也可防备可能在附近游荡的掠食者。",
+						"巨蝎捕获哥利亚之后，准备用毒刺将她刺穿。她轻松挣脱束缚，试图逃离巨蝎，却在转身之际挨了致命一击。然而哥利亚依然屹立不倒，对加诸己身的任何病痛毫不在意。一旦重新获得行动机会，她便以雷霆般的重击结果了巨蝎的性命，随后趁机逃跑，直到找到一个可以藏身养伤的洞穴。",
+						"野蛮人有一个共同点：他们身上压倒一切的原初天性正是力量之源。他们与自身更具兽性的一面相契合，这使他们得以强化肉体，代价则是精神不稳定，极易情绪爆发。",
+						{
+							"ENG_name": "Primal Instinct",
+							"type": "entries",
+							"name": "原始直觉",
+							"page": 1,
+							"entries": [
+								"城市中的人们以其有别于动物的文明生活方式为傲，仿佛否认自身的天性是多么有优越感的事。但文明在野蛮人眼中不但不值得骄傲，更是一种贫弱的表现。强者全心全意接受自身的动物本能\u2014\u2014敏锐的直觉、原始的体魄，以及波动的情绪。野蛮人不喜被围墙和人群包围的生活。他们活跃在故乡的荒野之中：那正是其部族生活捕猎的苔原、丛林或草原。",
+								"野蛮人在混乱的战斗中如鱼得水，伤得越重就越危险。他们能进入一种丧失理性的野蛮状态，使身手更上一层楼。然而这会给身体带来巨大的负荷，因此在两次休息之间只能爆发寥寥数次，但这几次通常足以击败任何浮现的威胁。"
+							]
+						},
+						{
+							"ENG_name": "A Life of Danger",
+							"type": "entries",
+							"name": "危险的生活",
+							"page": 1,
+							"entries": [
+								"并非每个被文明社会子弟视为\"野蛮人\"的部族成员都拥有野蛮人职业。这些部族中真正的野蛮人就像城镇里的老练战士一样罕见，并同样扮演着人民守护者与战时领袖的角色。世界蛮荒之地的生活危机四伏：敌对的部族、致命的天气，还有可怕的怪物。野蛮人奋不顾身地冲向那些危险，好让族人无须面对。",
+								"他们在危险面前的勇气使野蛮人极为适合冒险。迁徙流浪本就是其原生部族的生活方式，因此居无定所的冒险生活对野蛮人来说算不上什么苦难。有些野蛮人会怀念部族中紧密的家族结构，但最终会发现冒险团队成员之间结下的羁绊已然取而代之。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Barbarian",
+							"type": "entries",
+							"name": "创建野蛮人",
+							"page": 2,
+							"entries": [
+								"创造一名野蛮人角色时，先思考其来历及其在这世界中的位置。与DM商议确定野蛮人的合适出身。你是来自远方、对战役所在地区十分陌生的异乡人？还是战役发生在野蛮人司空见惯的蛮荒边境？",
+								"你为何选择了冒险生活？你是被财富的许诺吸引到了定居之地，还是与那里的士兵联手对抗共同的威胁？也许怪物或入侵的蛮族把你赶出了故乡，让你成了流离失所的难民？或许你是战俘，被锁链押到\"文明\"地区，如今才终于赢得自由。又或者，你因犯下罪行、触犯禁忌，或是被政变剥夺了权位而遭到族人放逐。"
+							]
+						},
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"page": 2,
+							"entries": [
+								"你可以按以下建议快速创建一名野蛮人。首先，将你最高的属性分配给力量，次高的分配给体质。然后选择化外之民背景。",
+								{
+									"ENG_name": "Can I add this Bonus?",
+									"type": "inset",
+									"name": "我能加上这个加值吗？",
+									"entries": [
+										"有时，某项能力、特性或法术允许你向攻击检定、属性检定或豁免检定加上一个加值，例如吟游诗人的\"吟游诗人激励\"、战争牧师的\"引导神力：导引打击\"、*祝福术*法术、武技\"攻势强化\"等等，不一而足。另一些能力则允许你重骰上述掷骰，例如醉拳宗武僧的\"醉汉机运\"。还有一类更为罕见的能力，允许你为你的动作、反应、掷骰等附加特殊效果，例如武僧的\"反射闪避\"气特性。这些能力的共同点在于其触发不依赖命中、成功、失手或失败之类的关键词，正因如此，你可以选择在看到骰值之后、DM宣布检定成功或失败之前才使用它们。"
+									]
+								},
+								{
+									"ENG_name": "Changes to Unarmed Strikes and the Finesse Property",
+									"type": "inset",
+									"name": "关于徒手打击与灵巧属性的改动",
+									"entries": [
+										"在本合集中，徒手打击与灵巧属性发生了重要改动，以维持平衡。",
+										{
+											"ENG_name": "Finesse Property",
+											"type": "entries",
+											"name": "灵巧属性",
+											"entries": [
+												"该属性现在只允许在该武器的攻击检定中选择使用你的力量或敏捷调整值，伤害掷骰则不可。进行伤害掷骰时，近战武器攻击仍须使用你的力量调整值，远程武器攻击则使用你的敏捷调整值。"
+											]
+										},
+										{
+											"ENG_name": "Unarmed Strikes",
+											"type": "entries",
+											"name": "徒手打击",
+											"entries": [
+												"徒手打击现在视为具有灵巧与轻型属性。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Additional Actions",
+									"type": "inset",
+									"name": "额外动作",
+									"entries": [
+										"你可以将以下动作加入你的游戏：{@action 说服|DZC:ANA:B}、{@action 失能|DZC:ANA:B}、{@action 干扰|DZC:ANA:B}、{@action 威吓|DZC:ANA:B}和{@action 窃取|DZC:ANA:B}"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Barbarian.webp"
+					}
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Path of the Berserker",
+			"name": "狂战士道途",
+			"shortName": "狂战士",
+			"source": "DZC:ANA:B",
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"page": 4,
+			"subclassFeatures": [
+				"狂战士道途|野蛮人|DZC:ANA:B|狂战士|DZC:ANA:B|3",
+				"强化打击|野蛮人|DZC:ANA:B|狂战士|DZC:ANA:B|6",
+				"无我狂暴|野蛮人|DZC:ANA:B|狂战士|DZC:ANA:B|9",
+				"全力挥击|野蛮人|DZC:ANA:B|狂战士|DZC:ANA:B|14"
+			],
+			"foundryImg": ""
+		},
+		{
+			"ENG_name": "Path of the Spirit Animal",
+			"name": "灵兽道途",
+			"shortName": "灵兽",
+			"source": "DZC:ANA:B",
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"page": 5,
+			"subclassFeatures": [
+				"灵兽道途|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|3",
+				"兽之形|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|6",
+				"强化野兽|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|9",
+				"精魄同调|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|14"
+			],
+			"foundryImg": "icons/commodities/treasure/trinket-totem-bone-green.webp"
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Adrenaline",
+			"name": "振奋",
+			"source": "DZC:ANA:B",
+			"page": 2,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 1,
+			"entries": [
+				"同样在第1级，你的战斗身手随着你所受伤害的累积而提升。你拥有振奋加值，如野蛮人表中\"振奋加值\"栏所示。从以下选项中选择一项：",
+				{
+					"type": "list",
+					"items": [
+						"力量与体质豁免检定。",
+						"力量、敏捷与体质检定。",
+						"近战武器伤害掷骰。"
+					]
+				},
+				"若你的剩余生命值不多于生命值上限的四分之三，你的振奋状态即会启动，并给予你以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你受到的每次伤害都减少等同于你振奋加值的数值，心灵伤害除外。",
+						"你的移动速度提升10尺。",
+						"你将振奋加值加到上文所选的选项上。"
+					]
+				},
+				"只要你处于战斗之中，或有敌对生物、有害效应或敌方攻击处于你的视线之内，你的振奋状态便持续运作。若你未能察觉某个敌对生物、有害效应或敌方攻击，本特性不会立即启动，而是等到该效应生效或该生物的回合结束之后才启动。若你的生命值为0，本特性对你无效。",
+				"若你的剩余生命值不多于生命值上限的四分之一，你的所有振奋收益翻倍。",
+				"到第7级，在振奋状态生效期间，你不会陷入睡眠或被打至昏迷，并且在抵抗魅惑或恐慌的豁免检定上具有优势。",
+				"到第19级，只要你的生命值低于上限，振奋状态便会启动（不再是四分之三），且当你的剩余生命值不多于上限的二分之一时（不再是四分之一），其收益翻倍。"
+			],
+			"foundryImg": "icons/skills/social/intimidation-impressing.webp"
+		},
+		{
+			"ENG_name": "Temperamental",
+			"name": "喜怒无常",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 1,
+			"entries": [
+				"从第1级起，你的情绪比任何人都更为强烈，常使你行事失去理性且暴戾。当某种情境挑战到你的个性、缺陷、理念或羁绊时，你必须进行一次DC 15的魅力豁免检定以保持镇定。该检定承受等同于你振奋加值的减值。你可以主动选择豁免失败。"
+			],
+			"foundrySystem": {
+				"actionType": "saving throw",
+				"save.ability": "cha",
+				"save.DC": "15",
+				"save.scaling": "flat"
+			},
+			"foundryImg": "icons/skills/ranged/bomb-grenade-thrown-orange.webp"
+		},
+		{
+			"ENG_name": "Frantic",
+			"name": "狂乱",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 2,
+			"entries": [
+				"愤怒、悲伤、恐惧、喜悦。你的情绪极不稳定，很容易将你的心智完全吞没。在第2级，从以下收益中选择一项：",
+				{
+					"type": "list",
+					"items": [
+						"你的振奋收益翻倍。",
+						"若至少一名你的盟友距某生物5尺内且未{@condition 失能}，你对该生物的近战武器攻击具有优势。",
+						"你的振奋移动速度加值变为三倍，且你将振奋加值加到你的AC上。"
+					]
+				},
+				"在振奋状态生效期间，你可以用附赠动作进入狂乱状态，持续1分钟。若振奋状态提前结束，你的狂乱状态也随之提前结束。持续期间，你获得上文所选的收益，但不能施法或专注法术。此外，你无法说出音节数超过你智力调整值的词语；若你的智力调整值为0或更低，你便只能发出无法理解的声音。",
+				"你可以使用本特性两次。在完成一次短休或长休后，你恢复所有已耗用的次数。"
+			],
+			"foundrySystem": {
+				"uses.per": "sr",
+				"uses.max": "2",
+				"uses.value": 1
+			},
+			"foundryImg": "icons/skills/wounds/injury-face-impact-orange.webp"
+		},
+		{
+			"ENG_name": "Primitive Scream",
+			"name": "原始尖啸",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 2,
+			"entries": [
+				"同样在第2级，当你进入狂乱状态时，可以选择发出一声蕴含兽性之力的洪亮尖啸。你周围30尺内每只能听见你的生物都会承受尖啸的效果。你起始只知道一种这样的效果：恐怖咆哮。某些原初道途会额外赋予你一种。",
+				"部分原始尖啸效果要求目标进行豁免检定以抵抗该特性的效果。豁免DC计算如下：",
+				{
+					"ENG_name": "Primitive Scream",
+					"type": "abilityDc",
+					"name": "原始尖啸",
+					"attributes": [
+						"con"
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "原始尖啸：恐怖咆哮|野蛮人|DZC:ANA:B|2"
+				}
+			],
+			"foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp"
+		},
+		{
+			"ENG_name": "Primitive Scream: Fearsome Roar",
+			"name": "原始尖啸：恐怖咆哮",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"该效果启动时，你尖啸范围内的每只生物必须通过一次感知豁免检定，否则对你{@condition 恐慌}1分钟。以此方式{@condition 恐慌}的生物可以在其每个回合结束时重复该豁免检定。"
+			],
+			"foundrySystem": {
+				"actionType": "saving throw",
+				"save.ability": "wis",
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/control/fear-fright-monster-grin-red-orange.webp"
+		},
+		{
+			"ENG_name": "Primal Path",
+			"name": "原初道途",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"在第3级，你选择一条塑造你与原初自我之间羁绊的道途，所有道途详见职业描述末尾。你的道途在第3级赋予你特性，并在第6、9和14级再次赋予。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 4,
+			"entries": [
+				"当你到达第4级时，你可以将一项自选属性值提升2点，或者将两项自选属性值各提升1点。同往常一样，使用此特性不能将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 5,
+			"entries": [
+				"从第5级开始，当你在自己回合内采取{@action 攻击}动作时，你可以攻击两次而非一次。",
+				"当你在此职业到达第15级时，攻击次数增加为三次。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Relentless",
+			"name": "坚韧",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 5,
+			"entries": [
+				"在第5级，在你的回合内，若你正处于某个阻止你移动的效应或状态之下，你仍可移动最多等同于振奋状态所赋予的额外移动速度的尺数。但这并不会终结该效应或状态。"
+			],
+			"foundryImg": "icons/magic/control/debuff-energy-snare-brown.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"当你到达第6级时，你可以将一项自选属性值提升2点，或者将两项自选属性值各提升1点。同往常一样，使用此特性不能将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Primal Path feature",
+			"name": "原初道途特性",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"在第6级，你获得由你的原初道途赋予的一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Adrenaline improvement",
+			"name": "振奋提升",
+			"source": "DZC:ANA:B",
+			"page": 2,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 7,
+			"entries": [
+				"到第7级，在振奋状态生效期间，你不会陷入睡眠或被打至昏迷，并且在抵抗魅惑或恐慌的豁免检定上具有优势。"
+			],
+			"foundryImg": "icons/skills/social/intimidation-impressing.webp"
+		},
+		{
+			"ENG_name": "Attracting Secretions",
+			"name": "引诱分泌物",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 7,
+			"header": 3,
+			"entries": [
+				"你的气味变为一种唤起美好感受的芬芳。被你分泌物针对的生物必须通过一次魅力豁免检定，否则被你{@condition 魅惑}1分钟。"
+			],
+			"foundrySystem": {
+				"actionType": "saving throw",
+				"save.ability": "cha",
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/control/energy-stream-link-white.webp"
+		},
+		{
+			"ENG_name": "Hostile Secretions",
+			"name": "敌意分泌物",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 7,
+			"header": 3,
+			"entries": [
+				"你的气味变为危险之气，如同掠食者一般。被你分泌物针对的生物必须通过一次感知豁免检定，否则对你{@condition 恐慌}1分钟。"
+			],
+			"foundrySystem": {
+				"actionType": "saving throw",
+				"save.ability": "wis",
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/control/energy-stream-link-large-white.webp"
+		},
+		{
+			"ENG_name": "Strong Scent",
+			"name": "强烈气味",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 7,
+			"entries": [
+				"在第7级，你的腺体会散发强烈的体味，如同气味浓重的野兽。这股气味在10尺内都能闻到，大多数生物都会觉得它难闻甚至恶心，对不熟悉它的生物来说尤其如此。",
+				"你可以用附赠动作集中精神，从腺体中释放特殊分泌物，使其混入你散发的气味之中。此时，从下列选项中选择一项。你的分泌物持续1分钟，若你{@condition 失能}、死亡或再次使用本特性，它将提前结束。在自身回合开始时能闻到你气味的生物会成为你分泌物的目标。若某项分泌物选项需要豁免检定，其DC等于8 + 你的熟练加值 + 你的体质调整值。",
+				{
+					"type": "refClassFeature",
+					"classFeature": "敌意分泌物|野蛮人|DZC:ANA:B|7"
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "引诱分泌物|野蛮人|DZC:ANA:B|7"
+				},
+				"受你分泌物影响的生物可以在其每个回合结束时重复豁免检定。若它仍处于你气味的范围内，该检定具有劣势。熟悉你气味的生物（例如曾暴露于其中数周者）在该豁免检定上具有优势。若生物豁免成功，它在接下来的24小时内免疫你的分泌物。",
+				"若你被彻底清洗1小时，你的气味散发将消失24小时。彻底清洗指的是这样的过程：用肥皂和刷子擦洗你全身每一寸肌肤（次数不限），为你的毛发除油，随后以油润肤并喷洒香水。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action",
+				"duration.value": 1,
+				"duration.units": "minute"
+			},
+			"foundryImg": "icons/magic/control/encase-creature-humanoid-hold.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 8,
+			"entries": [
+				"当你到达第8级时，你可以将一项自选属性值提升2点，或者将两项自选属性值各提升1点。同往常一样，使用此特性不能将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Primal Path feature",
+			"name": "原初道途特性",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 9,
+			"entries": [
+				"在第9级，你获得由你的原初道途赋予的一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 10,
+			"entries": [
+				"当你到达第10级时，你可以将一项自选属性值提升2点，或者将两项自选属性值各提升1点。同往常一样，使用此特性不能将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Growth Spurt",
+			"name": "迅猛生长",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 11,
+			"entries": [
+				"在第11级，你的体型增大一倍，赢得\"重量级\"的头衔。你的角色体重翻倍，因此每天需要消耗双倍的食物和水，以避免承受力竭。你还获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你的负重上限以及你能推动、拖拽或举起的重量翻倍。",
+						"在推撞和擒抱方面，你视为大一个体型。"
+					]
+				},
+				"到第18级，你的生长到达顶峰，发展出更强的气味散发与能量节约。你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你的{@classFeature 强烈气味|野蛮人|DZC:ANA:B|7|DZC:ANA}范围扩大至15尺。",
+						"在你吃喝足量之后，你能不进饮食（才开始承受{@condition 力竭}效果）的天数增加5天。",
+						"你每天可以旅行10小时而不承受{@condition 力竭}的效果。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 12,
+			"entries": [
+				"当你到达第12级时，你可以将一项自选属性值提升2点，或者将两项自选属性值各提升1点。同往常一样，使用此特性不能将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Back to the Land",
+			"name": "重归荒野",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 13,
+			"entries": [
+				"从第13级起，文明生活对你而言已变得紧张而不适。你每在比村庄更大的地方待上一周，便承受一级{@condition 力竭}。相比之下，你在荒野中轻松谋生：一小时内，你就能找到供养一只大型生物一天所需的全部食物、饮水与栖身之所。此外，你免疫极端温度的效应。"
+			],
+			"foundryImg": "icons/magic/nature/plant-sproud-hands-dirt-green.webp"
+		},
+		{
+			"ENG_name": "Primal Path feature",
+			"name": "原初道途特性",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"在第14级，你获得由你的原初道途赋予的一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack (2)",
+			"name": "额外攻击（2）",
+			"source": "DZC:ANA:B",
+			"page": 3,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 15,
+			"entries": [
+				"在第15级，当你在自己回合内采取{@action 攻击}动作时，你可以攻击三次。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 16,
+			"entries": [
+				"当你到达第16级时，你可以将一项自选属性值提升2点，或者将两项自选属性值各提升1点。同往常一样，使用此特性不能将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Savage Outburst",
+			"name": "野蛮爆发",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 17,
+			"entries": [
+				"在第17级，当你的生命值降至0但未立即死亡时，你可以改为保留1点生命值。此时，你终结自身所受的所有状态（{@condition 力竭}除外），并在当前回合结束后获得一个额外回合。你在这个额外回合中还有一个额外动作。不过，在接下来的1分钟内，你会回归野蛮状态：唯有陷入{@condition 昏迷}才能终结你的振奋状态，你在所有豁免检定上具有优势，而你的主要目标是消灭附近的威胁，并逃到能安全休息的地方。",
+				"一旦使用了本特性，在完成一次长休之前你都无法再次使用。"
+			],
+			"foundrySystem": {
+				"uses.per": "lr",
+				"uses.max": 1,
+				"uses.value": 1
+			},
+			"foundryImg": "icons/skills/wounds/injury-eyes-blood-red-pink.webp"
+		},
+		{
+			"ENG_name": "Growth Spurt improvement",
+			"name": "迅猛生长提升",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 18,
+			"entries": [
+				"到第18级，你的生长到达顶峰，发展出更强的气味散发与能量节约。你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你的{@classFeature 强烈气味|野蛮人|DZC:ANA:B|7|DZC:ANA}范围扩大至15尺。",
+						"在你吃喝足量之后，你能不进饮食（才开始承受{@condition 力竭}效果）的天数增加5天。",
+						"你每天可以旅行10小时而不承受{@condition 力竭}的效果。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp"
+		},
+		{
+			"ENG_name": "Adrenaline improvement",
+			"name": "振奋提升",
+			"source": "DZC:ANA:B",
+			"page": 2,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 19,
+			"entries": [
+				"到第19级，只要你的生命值低于上限，振奋状态便会启动（不再是四分之三），且当你的剩余生命值不多于上限的二分之一时（不再是四分之一），其收益翻倍。"
+			],
+			"foundryImg": "icons/skills/social/intimidation-impressing.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 20,
+			"entries": [
+				"当你到达第20级时，你可以将一项自选属性值提升2点，或者将两项自选属性值各提升1点。同往常一样，使用此特性不能将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "King of the Jungle",
+			"name": "丛林之王",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 20,
+			"entries": [
+				"你高居食物链顶端，傲然挺立于众目仰望之巅。在第20级，你的近战武器攻击对挑战等级或等级等于或低于15的生物造成额外的3d6伤害。此外，这些生物对抗你的{@classFeature 原始尖啸|野蛮人|DZC:ANA:B|2|DZC:ANA}与{@classFeature 强烈气味|野蛮人|DZC:ANA:B|7|DZC:ANA:B}时具有劣势。"
+			],
+			"foundrySystem": {
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"3d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to the damage of your melee weapon attack"
+			},
+			"foundryImg": "icons/creatures/abilities/paw-print-yellow.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Reliable Partner",
+			"name": "可靠伙伴",
+			"source": "DZC:ANA:B",
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"level": 1,
+			"subEntities": {
+				"item": [
+					{
+						"name": "Unarmed Strike",
+						"source": "DZC:ANA:B",
+						"page": 1,
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1 + @abilities.str.mod",
+									"bludgeoning"
+								]
+							],
+							"ability": "",
+							"properties": [
+								"fin",
+								"lgt"
+							]
+						}
+					}
+				]
+			}
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Path of the Berserker",
+			"name": "狂战士道途",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "狂战士",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"受愤怒支配之人会任由狂怒夺去心智。追随狂战士道途者好斗而易怒，永远攻势不减，几乎不把自保放在心上。他们可以争强好斗、领地意识极强，以至于很难见到他们共同生活。这一切都由他们的蛮力来补偿\u2014\u2014他们能轻易碾平成群的小型敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "原始尖啸：激怒咆哮|野蛮人|DZC:ANA:B|狂战士|DZC:ANA:B|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "泼溅区域|野蛮人|DZC:ANA:B|狂战士|DZC:ANA:B|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Primitive Scream: Enraging Roar",
+			"name": "原始尖啸：激怒咆哮",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "狂战士",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从第3级起，你可以用原始尖啸来助长你的攻击倾向。此时，在狂乱状态持续期间，你对生物发动的近战武器攻击具有优势，但针对你的攻击检定同样具有优势。"
+			],
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp"
+		},
+		{
+			"ENG_name": "Splash Zone",
+			"name": "泼溅区域",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "狂战士",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你的挥击变得大开大合而难以捉摸。若你在一次近战武器攻击检定上具有优势，你可以尝试伤害距离原目标5尺内且在你触及范围内的另一个目标。若较低的攻击检定结果能命中第二个目标，它便受到等同于你的力量调整值 + 你的振奋加值的伤害。"
+			],
+			"foundrySystem": {
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"@abilities.str.mod + @scale.barbarian-rework.adr"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Same damage type as your original attack"
+			},
+			"foundryImg": "icons/skills/melee/strike-axe-blood-red.webp"
+		},
+		{
+			"ENG_name": "Improved Strike",
+			"name": "强化打击",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "狂战士",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，当你以近战武器攻击命中目标时，你的攻击检定每高出目标AC 5点，你就可以额外掷一次该武器的伤害骰并将其加入伤害掷骰。"
+			],
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-red.webp"
+		},
+		{
+			"ENG_name": "Mindless Rage",
+			"name": "无我狂暴",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "狂战士",
+			"subclassSource": "DZC:ANA:B",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"从第9级起，在振奋状态生效期间，你不能被{@condition 魅惑}或{@condition 恐慌}。你还会在该状态持续期间终结任何使你{@condition 魅惑}或{@condition 恐慌}的效应。"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-evil-horned-giant.webp"
+		},
+		{
+			"ENG_name": "Full Swing",
+			"name": "全力挥击",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "狂战士",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你的挥击有了足够的力量储备来弥补那难以捉摸的一击。你现在以较高的攻击检定来判断是否以\"泼溅区域\"命中第二个目标。此外，若被你在{@classFeature 泼溅区域|野蛮人|DZC:ANA:B|3|DZC:ANA:B}期间命中的生物死亡，你可以以它5尺内且在你触及范围内的另一只生物为目标，依照相同规则造成额外伤害。"
+			],
+			"foundryImg": "icons/skills/melee/strike-axe-red.webp"
+		},
+		{
+			"ENG_name": "Beasthide",
+			"name": "兽皮",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"你获得对钝击、穿刺和挥砍伤害的抗性。"
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Longtooth",
+			"name": "长牙",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"你的盟友对处于你5尺内、敌视你的任何生物发动的近战攻击检定具有优势。"
+			],
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp"
+		},
+		{
+			"ENG_name": "Swiftstride",
+			"name": "疾驰",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"你的步行速度提升10尺，且你不会引发借机攻击。"
+			],
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp"
+		},
+		{
+			"ENG_name": "Wildhunt",
+			"name": "狩猎",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"当你攻击一只5尺内没有其盟友的生物时，你对其发动的近战武器攻击的伤害掷骰加上你的熟练加值。"
+			],
+			"foundrySystem": {
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"@prof"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to the damage of your melee weapon attack"
+			},
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp"
+		},
+		{
+			"ENG_name": "Path of the Spirit Animal",
+			"name": "灵兽道途",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"一些野蛮人与动物王国深深相契：向其寻求引导人生的智慧，借其之力克服挑战，并保护它免遭威胁其微妙平衡的危险。图腾持有者道途的野蛮人拥有一种特殊感知，能与动物精魄沟通并引导其力量，从中获得指引与力量。",
+				"野蛮人拥有这种能力并不寻常，即便有此能力者通常也只与单一类型的动物相契，正因如此，他们会全身心投入其中。这体现在部族（或其家族）的行为上：他们往往崇敬与图腾持有者相同的动物。图腾持有者被推举为部族（或家族）之首也并不罕见。",
+				"动物精魄按其共有特质分为四支：兽皮，对应坚忍、顽固、皮糙肉厚的野兽（如熊、野猪或大象）；长牙，对应群居的凶猛野兽（如犬类、鬣狗或狮子）；疾驰，对应迅捷狡黠、有时掠食为生的野兽（如鹰、猫类或鼠类）；狩猎，对应敏锐犀利、精于追踪猎物的野兽（如犬类、猫类或海豚）。此道途的野蛮人常常佩戴图腾护符或类似的避邪物，以表现其灵兽的某一特征（如羽毛、爪子、獠牙等）。有些人甚至会长出让人联想到其灵兽的细微体貌特征。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "原始尖啸：呼唤野兽|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "灵兽|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Primitive Scream: Call Beast",
+			"name": "原始尖啸：呼唤野兽",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从第3级起，你可以用{@classFeature 原始尖啸|野蛮人|DZC:ANA|2|DZC:ANA}呼唤一只动物精魄来协助你战斗。此时，选择一只{@filter 体型不大于中型且挑战等级为1/8或更低的野兽|bestiary|challenge rating=[&0;&1/8]|type=beast|size=t;s;m|miscellaneous=!swarm}。该野兽出现于你10尺内一处由你选择的未被占据的空间。当你的狂乱状态结束、它生命值降至0，或你以这种方式召唤另一只野兽时，它便会消失。",
+				"该野兽的AC、攻击检定与伤害掷骰加上你的熟练加值。它的生命值上限等于其数据卡中的生命值，或你的野蛮人等级的四倍，取较高者。",
+				"该野兽与你共享先攻顺序，但它的回合紧随你的回合之后。它服从你的口头命令，但你必须用附赠动作才能命令它采取动作。若你不下达命令，它会采取{@action 回避}动作。"
+			],
+			"foundryImg": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp"
+		},
+		{
+			"ENG_name": "Spirit Animal",
+			"name": "灵兽",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你选择一种灵兽，并在你的振奋状态生效期间获得其特性。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "兽皮|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "长牙|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "疾驰|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "狩猎|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|3"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/nature/wolf-paw-glow-large-purple-teal.webp"
+		},
+		{
+			"ENG_name": "Beasthide",
+			"name": "兽皮",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"你获得强大的力量。你为推动、拉动、举起或破坏物品而进行的力量检定具有优势。若你的振奋状态已启动，你在所有力量（{@skill 运动}）检定上具有优势。"
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Longtooth",
+			"name": "长牙",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"你的队伍可以行进得更快。你和至多十只由你选择的生物的旅行步调翻倍，前提是它们距你60尺内且你未{@condition 失能}。若有生物骑乘于坐骑上，翻倍的则是坐骑的旅行步调。"
+			],
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp"
+		},
+		{
+			"ENG_name": "Swiftstride",
+			"name": "疾驰",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"你获得锐利的视力。你能毫无困难地看清远至1英里的景物，连细微之处也了如指掌，就如同在看距你不过100尺的东西。此外，微光光照不会使你的感知（{@skill 察觉}）检定承受劣势。"
+			],
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp"
+		},
+		{
+			"ENG_name": "Wildhunt",
+			"name": "狩猎",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"你可以在以快速步调旅行时追踪其他生物，也可以在以正常步调旅行时保持隐匿。"
+			],
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp"
+		},
+		{
+			"ENG_name": "Aspect of the Beast",
+			"name": "兽之形",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你依所选择的灵兽获得一项魔法收益。你可以选择与先前相同的动物，也可以另择其一。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "兽皮|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "长牙|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "疾驰|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "狩猎|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|6"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/claws/claws-bear-brown-white.webp"
+		},
+		{
+			"ENG_name": "Enhanced Beast",
+			"name": "强化野兽",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在第9级，当你使用{@subclassFeature 原始尖啸：呼唤野兽|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|3|DZC:ANA:B|呼唤野兽}时，可以选择以下灵兽之一来祝福被召唤的野兽。",
+				{
+					"type": "list",
+					"items": [
+						"{@b {@i 兽皮}}该野兽的AC获得+2加值，并获得所有豁免检定的熟练项。",
+						"{@b {@i 长牙}}若至少一只该野兽的盟友距该生物5尺内且该盟友未{@condition 失能}，该野兽对该生物的攻击检定具有优势。",
+						"{@b {@i 疾驰}}该野兽的移动速度提升10尺，且不会引发借机攻击。",
+						"{@b {@i 狩猎}}该野兽的{@skill 察觉}检定加上两倍于你的熟练加值的数值。此外，除非它{@condition 失能}，否则没有生物能以具有优势的攻击检定攻击它。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/nature/leaf-glow-maple-teal.webp"
+		},
+		{
+			"ENG_name": "Beasthide",
+			"name": "兽皮",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"在你的每个回合开始时，你获得5点临时生命值。"
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Longtooth",
+			"name": "长牙",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"你5尺内的敌方生物对你的盟友或另一名拥有此特性的生物发动的攻击检定承受劣势。若敌人无法看见或听见你，或无法被{@condition 恐慌}，则免疫此效果。"
+			],
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp"
+		},
+		{
+			"ENG_name": "Swiftstride",
+			"name": "疾驰",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"你拥有短暂的爆发移动。每当你进行远跳或高跳时，你可以朝该方向移动至多15尺而不消耗移动速度。你还可以用附赠动作采取{@action 疾走}动作。"
+			],
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp"
+		},
+		{
+			"ENG_name": "Wildhunt",
+			"name": "狩猎",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"若你在对一只大型或更小的生物发动近战武器攻击前，先朝它直线移动至少20尺，该生物必须通过一次敏捷豁免检定，否则被击{@condition 倒地}。该豁免DC等于8 + 你的熟练加值 + 你的力量调整值。"
+			],
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp"
+		},
+		{
+			"ENG_name": "Spiritual Attunement",
+			"name": "精魄同调",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"className": "野蛮人",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "灵兽",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你选择一种灵兽，并在你的振奋状态生效期间获得其特性。你可以选择与先前相同的动物，也可以另择其一。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "兽皮|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|14"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "长牙|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|14"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "疾驰|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|14"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "狩猎|野蛮人|DZC:ANA:B|灵兽|DZC:ANA:B|14"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/wands/wand-totem.webp"
+		}
+	],
+	"action": [
+		{
+			"ENG_name": "Convince",
+			"name": "说服",
+			"source": "DZC:ANA:B",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图诱导一只生物按你所愿思考。选择一只你30尺内、能看见或听见你的生物。进行一次魅力（{@skill 游说}）或魅力（{@skill 欺瞒}）检定（自选其一），与目标的感知（{@skill 洞悉}）检定对抗。若你在过去一分钟内对该生物做过任何有害之事，你的检定承受劣势。若你成功，该生物会在合理的程度上倒向你的观点。这也可能使该生物对某些生物转为友善、冷漠或敌对的态度，由你或DM选择。该生物会做什么、如何行事，由你的DM作最终裁决。"
+			]
+		},
+		{
+			"ENG_name": "Disable",
+			"name": "失能",
+			"source": "DZC:ANA:B",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图让一只生物的一种感官短暂失灵，无论是朝它的眼睛扔杂物、在它耳边发出震耳的声响，还是对它的眼睛或耳朵使出下三滥的攻击。选择一只在你触及范围内、体型至多大你一级的生物。你可以针对它的眼睛或耳朵（如果它有的话）。该生物必须通过一次DC 10的敏捷或体质豁免检定（自选其一），否则直到你的下个回合开始前陷入{@condition 目盲}或{@condition 耳聋}（分别对应你针对的是眼睛或耳朵）。"
+			]
+		},
+		{
+			"ENG_name": "Distract",
+			"name": "干扰",
+			"source": "DZC:ANA:B",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你使出浑身解数来干扰一只你能看见的生物。直到你的下个回合开始前，只要该生物距你5尺内且你未{@condition 失能}，你的目标对除你以外的目标发动的攻击检定便承受劣势，其{@skill 察觉}检定也承受劣势。"
+			]
+		},
+		{
+			"ENG_name": "Intimidate",
+			"name": "威吓",
+			"source": "DZC:ANA:B",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图威吓一只生物。选择一只你30尺内、能看见或听见你的生物。进行一次魅力（{@skill 威吓}）检定，与目标的感知（{@skill 洞悉}）检定对抗。若你成功，目标直到你的下个回合开始前对你{@condition 恐慌}。"
+			]
+		},
+		{
+			"ENG_name": "Steal",
+			"name": "窃取",
+			"source": "DZC:ANA:B",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图在不被察觉的情况下拿走一件小型物件，这通常至少需要一只空手。你想窃取的物件可以是未固定、被穿戴或被携带的，但重量不能超过半磅，且不得过于显眼或难以取下（如身穿的衣物或护甲，或被持握的物品）。",
+				"要窃取物件，你必须进行一次敏捷（{@skill 巧手}）检定，与该区域内所有观察者（若它们不在战斗或警戒状态，则使用被动察觉）的感知（{@skill 察觉}）检定对抗，包括你想行窃的对象在内（如果有的话）。观察者检定成功即看见你。若物件未被固定，无论结果如何你都能拿走它。若你在对抗行窃对象的检定中失败，你也无法取得该物件。若行窃对象处于战斗或警戒状态，你对其的检定自动失败。",
+				"若物件受到严密看管（如放在口袋里或已入鞘的武器），你的巧手检定承受减值，通常为-5。"
+			]
+		}
+	]
+}
