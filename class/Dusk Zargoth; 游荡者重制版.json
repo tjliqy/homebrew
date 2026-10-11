@@ -1,0 +1,2592 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DZC:ANA:Ro",
+				"abbreviation": "DZC:ANA",
+				"full": "游荡者重制版",
+				"url": "https://homebrewery.naturalcrit.com/share/n2tYW7RfrS6T",
+				"version": "1.0.1",
+				"authors": [
+					"Dusk Zargoth"
+				],
+				"convertedBy": [
+					"Dusk Zargoth"
+				],
+				"color": "DC3636"
+			}
+		],
+		"optionalFeatureTypes": {
+			"DZC:T": "游荡者重制版；天赋",
+			"DZC:T:AC": "游荡者重制版；天赋：属性检定",
+			"DZC:T:ST": "游荡者重制版；天赋：豁免检定",
+			"DZC:T:TnK": "游荡者重制版；天赋：工具与套件",
+			"DZC:T:C": "游荡者重制版；天赋：战斗",
+			"DZC:UT": "游荡者重制版；阴损招数"
+		},
+		"edition": "classic",
+		"dateAdded": 1716449458,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "7a4777b6fd"
+	},
+	"class": [
+		{
+			"ENG_name": "Rogue Rework",
+			"name": "游荡者",
+			"source": "DZC:ANA:Ro",
+			"page": 1,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Talents",
+					"name": "天赋",
+					"featureType": [
+						"DZC:T"
+					],
+					"progression": [
+						2,
+						3,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						8,
+						8,
+						9,
+						9,
+						9,
+						10,
+						10,
+						10
+					]
+				},
+				{
+					"ENG_name": "Underhanded Tactics",
+					"name": "阴损招数",
+					"featureType": [
+						"DZC:UT"
+					],
+					"progression": {
+						"1": 2,
+						"7": 3,
+						"14": 4
+					}
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"deception",
+								"insight",
+								"intimidation",
+								"investigation",
+								"perception",
+								"performance",
+								"persuasion",
+								"sleight of hand",
+								"stealth"
+							],
+							"count": 4
+						}
+					}
+				],
+				"weapons": [
+					"simple",
+					"{@item 手弩|phb|手弩}",
+					"{@item 刺剑|phb|刺剑}",
+					"{@item 弯刀|phb|弯刀}",
+					"{@item 短剑|phb|短剑}"
+				],
+				"tools": [
+					"从以下选择一种：{@item 炼金工具|phb}、{@item 易容工具|phb}、{@item 毒药工具|phb}、{@item 盗贼工具|phb}、一种自选的{@item 赌具|phb}，或一种自选的{@item 乐器|phb}"
+				],
+				"toolProficiencies": [
+					{
+						"choose": {
+							"from": [
+								"alchemist's supplies",
+								"disguise kit",
+								"poisoner's kit",
+								"thieves' tools",
+								"dice set",
+								"dragonchess set",
+								"playing card set"
+							],
+							"count": 1
+						}
+					},
+					{
+						"anyMusicalInstrument": 1
+					}
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 短弓}、一个{@item 箭袋}和{@item 箭矢 (20)|phb|20支箭}，或 (b) 两件{@filter 近战武器|items|source=phb|category=基础|type=近战武器}",
+					"(a) {@item 炼金工具|phb}、(b) {@item 易容工具|phb}，或 (c) {@item 盗贼工具|phb}",
+					"(a) 一件{@item 赌具|phb}或 (b) 一件{@item 乐器|phb}",
+					"(a) 一个{@item 窃贼套组|phb}、(b) 一个{@item 地城套组|phb}，或 (c) 一个{@item 探索套组|phb}",
+					"{@item 皮甲|phb}和两把{@item 匕首|phb|匕首}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"长弓|phb",
+							"箭袋|phb",
+							"箭矢 (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMelee",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"炼金工具|phb"
+						],
+						"b": [
+							"易容工具|phb"
+						],
+						"c": [
+							"盗贼工具|phb"
+						]
+					},
+					{
+						"a": [
+							"窃贼套组|phb"
+						],
+						"b": [
+							"地城套组|phb"
+						],
+						"c": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "赌具|phb",
+								"quantity": 1
+							}
+						],
+						"b": [
+							{
+								"item": "乐器|phb",
+								"quantity": 1
+							}
+						]
+					},
+					{
+						"_": [
+							"皮甲|phb",
+							{
+								"item": "匕首|phb",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"acrobatics",
+									"athletics",
+									"deception",
+									"insight",
+									"intimidation",
+									"investigation",
+									"perception",
+									"performance",
+									"persuasion",
+									"sleight of hand",
+									"stealth"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"从以下选择一种：{@item 炼金工具|phb}、{@item 易容工具|phb}、{@item 毒药工具|phb}、{@item 盗贼工具|phb}、一种自选的{@item 赌具|phb}，或一种自选的{@item 乐器|phb}"
+					],
+					"toolProficiencies": [
+						{
+							"choose": {
+								"from": [
+									"alchemist's supplies",
+									"disguise kit",
+									"poisoner's kit",
+									"thieves' tools",
+									"dice set",
+									"dragonchess set",
+									"playing card set"
+								],
+								"count": 1
+							}
+						},
+						{
+							"anyMusicalInstrument": 1
+						}
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"天赋骰池",
+						"已获天赋",
+						"已知招数"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 6
+									}
+								]
+							},
+							2,
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 6
+									}
+								]
+							},
+							4,
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 6
+									}
+								]
+							},
+							4,
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 6
+									}
+								]
+							},
+							5,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 6
+									}
+								]
+							},
+							5,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 6
+									}
+								]
+							},
+							7,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 6
+									}
+								]
+							},
+							7,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 6
+									}
+								]
+							},
+							8,
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 6
+									}
+								]
+							},
+							8,
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 6
+									}
+								]
+							},
+							9,
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 6
+									}
+								]
+							},
+							9,
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 11,
+										"faces": 6
+									}
+								]
+							},
+							9,
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 11,
+										"faces": 6
+									}
+								]
+							},
+							10,
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 12,
+										"faces": 6
+									}
+								]
+							},
+							10,
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 12,
+										"faces": 6
+									}
+								]
+							},
+							10,
+							4
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"可靠伙伴|游荡者|DZC:ANA:Ro|1",
+				"游荡者天赋|游荡者|DZC:ANA:Ro|1",
+				"阴损招数|游荡者|DZC:ANA:Ro|1",
+				"灵巧动作|游荡者|DZC:ANA:Ro|2",
+				"廉价工艺|游荡者|DZC:ANA:Ro|2",
+				{
+					"classFeature": "游荡者志业|游荡者|DZC:ANA:Ro|3",
+					"gainSubclassFeature": true
+				},
+				"专精|游荡者|DZC:ANA:Ro|3",
+				"属性值提升|游荡者|DZC:ANA:Ro|4",
+				"迅捷消耗|游荡者|DZC:ANA:Ro|5",
+				"快速学习|游荡者|DZC:ANA:Ro|5",
+				"属性值提升|游荡者|DZC:ANA:Ro|6",
+				"分摊厄运|游荡者|DZC:ANA:Ro|7",
+				"属性值提升|游荡者|DZC:ANA:Ro|8",
+				{
+					"classFeature": "志业特性|游荡者|DZC:ANA:Ro|9",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|游荡者|DZC:ANA:Ro|10",
+				"专精|游荡者|DZC:ANA:Ro|10",
+				"迅捷消耗提升|游荡者|DZC:ANA:Ro|11",
+				"属性值提升|游荡者|DZC:ANA:Ro|12",
+				{
+					"classFeature": "志业特性|游荡者|DZC:ANA:Ro|13",
+					"gainSubclassFeature": true
+				},
+				"改进契机|游荡者|DZC:ANA:Ro|14",
+				"可靠伙伴提升|游荡者|DZC:ANA:Ro|15",
+				"属性值提升|游荡者|DZC:ANA:Ro|16",
+				{
+					"classFeature": "志业特性|游荡者|DZC:ANA:Ro|17",
+					"gainSubclassFeature": true
+				},
+				"迅捷消耗提升|游荡者|DZC:ANA:Ro|18",
+				"精通|游荡者|DZC:ANA:Ro|19",
+				"属性值提升|游荡者|DZC:ANA:Ro|20",
+				"幸运一击|游荡者|DZC:ANA:Ro|20"
+			],
+			"subclassTitle": "游荡者志业",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Rogue Rework",
+			"name": "游荡者",
+			"source": "DZC:ANA:Ro",
+			"entries": [
+				{
+					"ENG_name": "Rogue",
+					"type": "section",
+					"name": "游荡者",
+					"page": 1,
+					"source": "DZC:ANA:Ro",
+					"entries": [
+						"半身人示意同伴稍候，随后独自侦察前方的地城，用盗贼工具解除了一个可能的陷阱，并打开了走廊尽头的门。在确认另一侧没有任何声响之后，她隐入黑暗藏身，并示意队友继续前进。",
+						"地精因在纸牌游戏中作弊而在酒馆里引起骚动，随即被一群暴躁的醉汉围住。然而，他早已深谙如何摆脱这种困境。他从裤兜里掏出一把口琴，吹起一段朗朗上口的曲调，不动声色地扭转了场中的气氛，引得众人或称赞乐音、或随之起舞，纷纷加入歌中。等到所有人都把这家伙的劣迹忘得一干二净时，他便携着装满冤大头钱财的钱袋逃之夭夭。",
+						"毫无戒心的队伍吃下了和善女士提供的食物。突然间，众人纷纷伏在餐盘上不省人事。女士随即不慌不忙地将他们一一关进笼子，却为时已晚地发现少了一人\u2014\u2014正是那名半精灵，她一直假装中毒，只等女士移开视线的刹那脱身而去。女士勃然大怒，试图追出，却落入一个令她动弹不得的陷阱。就在她挣扎逃脱之际，半精灵跃上前去，把她自己的毒药注入她体内，令她昏死过去。半精灵把她关进笼子，放出朋友们，等着他们醒来后一同离开。",
+						"游荡者利用自己的天分在任何局面中占据上风。他们擅长为几乎任何问题找到解决办法，其机敏多谋与多才多艺正是任何成功冒险队的基石。",
+						{
+							"ENG_name": "Skill and Precision",
+							"type": "entries",
+							"name": "技能和精准",
+							"page": 1,
+							"entries": [
+								"与打磨战斗能力相比，游荡者更倾注心力去掌握形形色色的技能，从而获得其他角色少有人能企及的广博专精。许多游荡者专注于潜行与欺诈，另一些则精进在地城环境里派得上用场的技能，例如攀爬、寻找并拆除陷阱，以及开锁。",
+								"说到战斗，游荡者崇尚机变而非蛮力。他们规避危险，让自己身处安全的位置，以敏捷为队伍创造攻击敌人的破绽，并留好万全的退路以最大程度提高胜算。不过，也有些游荡者习得了令他们成为可观对手的能力，比如精准而致命的打击，或是闪避致命一击。"
+							]
+						},
+						{
+							"ENG_name": "A Shady Living",
+							"type": "entries",
+							"name": "阴暗生活",
+							"page": 1,
+							"entries": [
+								"游荡者大多出身于城市与法外之地，往往是为了在敌对环境中求存：在那里，你必须为食物而争抢，在每个街角提防背后，靠谎言多活一天，甚至为了几枚铜币痛下杀手。因此，他们不得不学会一切能用的花招来求生。他们多半还会结成庞大的团体和组织以保护自己，例如盗贼公会、犯罪家族，或是一伙法外之徒。",
+								"另一些游荡者则源自那些需要高超技艺、且愿意弄脏双手的职业，比如间谍、刺客、调查员、寻宝人、灭虫师、锁匠，或是使节。",
+								"作为冒险者，游荡者游走在法律的两端。有些是铁了心要在宝藏堆里淘金的惯犯，有些则是为了逃避追缉而踏上冒险之路。还有一些人学习并精进技艺的目的再明确不过\u2014\u2014潜入古代遗迹与隐秘地穴搜寻财宝。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Rogue",
+							"type": "entries",
+							"name": "创建游荡者",
+							"page": 2,
+							"entries": [
+								"在创建游荡者角色时，不妨思考角色与法律的关系。你有犯罪的前科\u2014\u2014还是正在进行时？你是在逃避法网，还是某个立誓向你寻仇的组织？你离开先前的职业，是因为与雇主的纠葛，还是为了摆脱单调的日常、追寻更充实的生活？驱使你的是贪婪，还是别的什么欲望？",
+								"是什么契机让你告别了过去的生活？是一场搞砸得彻头彻尾的大窃案让你重新审视了自己的营生？也许一次成功的劫掠给了你逃离悲惨生活所需的金币。漫游的渴望终于把你从家乡唤走了？抑或你骤然失去了家人或导师的依靠，不得不另谋生计。又或者，你有一桩未了的心事令你夜不能寐？再不然，你就是交了一位新朋友\u2014\u2014冒险队里的另一位成员\u2014\u2014他为你展示了谋生与施展你独特才干的新可能。"
+							]
+						},
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"page": 2,
+							"entries": [
+								"你可以按照以下建议快速构建一名游荡者。首先，将敏捷设为你的最高属性值。如果你打算侧重社交互动，次高属性应为魅力；如果你想专注于探索发现并打算选择魔法系子职，则应为智力。其次，选择骗子背景。",
+								{
+									"ENG_name": "Can I add this Bonus?",
+									"type": "inset",
+									"name": "我能加上这个加值吗？",
+									"entries": [
+										"有时，某项能力、特性或法术允许你向攻击检定、属性检定或豁免检定加上一个加值，例如吟游诗人的\"吟游诗人激励\"、战争牧师的\"引导神力：导引打击\"、*祝福术*法术、武技\"攻势强化\"等等，不一而足。另一些能力则允许你重骰上述掷骰，例如醉拳宗武僧的\"醉汉机运\"。还有一类更为罕见的能力，允许你为你的动作、反应、掷骰等附加特殊效果，例如武僧的\"反射闪避\"气特性。这些能力的共同点在于其触发不依赖命中、成功、失手或失败之类的关键词，正因如此，你可以选择在看到骰值之后、DM宣布检定成功或失败之前才使用它们。"
+									]
+								},
+								{
+									"ENG_name": "Changes to Unarmed Strikes and the Finesse Property",
+									"type": "inset",
+									"name": "关于徒手打击与灵巧属性的改动",
+									"entries": [
+										"在本合集中，徒手打击与灵巧属性发生了重要改动，以维持平衡。",
+										{
+											"ENG_name": "Finesse Property",
+											"type": "entries",
+											"name": "灵巧属性",
+											"entries": [
+												"该属性现在只允许在该武器的攻击检定中选择使用你的力量或敏捷调整值，伤害掷骰则不可。进行伤害掷骰时，近战武器攻击仍须使用你的力量调整值，远程武器攻击则使用你的敏捷调整值。"
+											]
+										},
+										{
+											"ENG_name": "Unarmed Strikes",
+											"type": "entries",
+											"name": "徒手打击",
+											"entries": [
+												"徒手打击现在视为具有灵巧与轻型属性。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Additional Actions",
+									"type": "inset",
+									"name": "额外动作",
+									"entries": [
+										"你可以将以下动作加入你的游戏：{@action 说服|DZC:ANA:Ro}、{@action 失能|DZC:ANA:Ro}、{@action 干扰|DZC:ANA:Ro}、{@action 威吓|DZC:ANA:Ro}和{@action 窃取|DZC:ANA:Ro}"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Rogue.webp"
+					}
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Assassin",
+			"name": "刺客",
+			"shortName": "刺客",
+			"source": "DZC:ANA:Ro",
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"page": 5,
+			"subclassFeatures": [
+				"刺客|游荡者|DZC:ANA:Ro|刺客|DZC:ANA:Ro|3",
+				"失能重击|游荡者|DZC:ANA:Ro|刺客|DZC:ANA:Ro|9",
+				"强效毒药|游荡者|DZC:ANA:Ro|刺客|DZC:ANA:Ro|13",
+				"暗杀|游荡者|DZC:ANA:Ro|刺客|DZC:ANA:Ro|17"
+			],
+			"foundryImg": "icons/skills/melee/strike-dagger-skull-white.webp"
+		},
+		{
+			"ENG_name": "Thief",
+			"name": "盗贼",
+			"shortName": "盗贼",
+			"source": "DZC:ANA:Ro",
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"page": 5,
+			"subclassFeatures": [
+				"盗贼|游荡者|DZC:ANA:Ro|盗贼|DZC:ANA:Ro|3",
+				"鬼祟盗贼|游荡者|DZC:ANA:Ro|盗贼|DZC:ANA:Ro|9",
+				"行凶抢劫|游荡者|DZC:ANA:Ro|盗贼|DZC:ANA:Ro|13",
+				"传奇盗贼|游荡者|DZC:ANA:Ro|盗贼|DZC:ANA:Ro|17"
+			],
+			"foundryImg": "icons/magic/death/undead-ghosts-trio-blue.webp"
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Reliable Partner",
+			"name": "可靠伙伴",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 1,
+			"entries": [
+				"从第1级起，只要肯花时间把事情做好，你就能胜过任何人。如果你花费至少10分钟执行一项任务，你为该任务进行的属性检定获得+5加值。",
+				"从第15级起，你的技艺已精进到只需花费至少1分钟执行任务即可获得该加值的程度。如果你花费至少10分钟执行一项任务，该加值提升为+10。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp"
+		},
+		{
+			"ENG_name": "Roguish Talents",
+			"name": "游荡者天赋",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 1,
+			"entries": [
+				"无论是运气还是天赋使然，你总能在想做的事情上取得成功。在第1级，你拥有一个由若干d6构成的运气象征，数量见\"游荡者职业表\"中\"天赋骰池\"一栏。这些骰合称你的天赋骰。",
+				{
+					"ENG_name": "Talents",
+					"type": "entries",
+					"name": "天赋",
+					"page": 3,
+					"entries": [
+						"天赋是一种让你以特定方式消耗d6骰池的能力。你起始拥有两项自选的{@filter 天赋|optionalfeatures|feature type=DZC:T}。你的{@filter 天赋|optionalfeatures|feature type=DZC:T}详述于职业描述的末尾。当你在特定游荡者等级时，你会习得额外的自选天赋，如\"游荡者职业表\"中\"已获天赋\"一栏所示。",
+						"当你使用天赋时，你可以从骰池中消耗数量不超过你熟练加值一半（向上取整）的d6。掷出所消耗的骰，并将其加到与该天赋相关的掷骰上。当你完成一次短休或长休时，你恢复所有已消耗的骰子。",
+						"每当你在本职业获得一个等级时，你可以将你已有的一项天赋替换为另一项。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/social/peace-luck-insult.webp"
+		},
+		{
+			"ENG_name": "Underhanded Tactics",
+			"name": "阴损招数",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 1,
+			"entries": [
+				"为了在严酷而充满竞争的环境中生存，你磨练出了一身阴损招数，即{@filter 阴损招数|optionalfeatures|feature type=DZC:UT}。你已知的阴损招数数量见\"游荡者职业表\"中\"已知招数\"一栏。"
+			],
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp"
+		},
+		{
+			"ENG_name": "Cheaper Craft",
+			"name": "廉价工艺",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 2,
+			"entries": [
+				"学会用手头有限的物资将就行事十分重要。在第2级，你学会了如何用更廉价的材料制作某些物品。当你制作非魔法物品或消耗品时，你可以使其材料成本降低一定百分比，数值等于你的智力调整值×15（最低5%）。但如此一来，你牺牲了物品的品质。因此，以这种方式制作的任何物品只能维持24小时，且售价只能达到其正常售价的四分之一。时限一过，物品便会破损或失效，材料也无法回收。"
+			],
+			"foundryImg": "icons/skills/trades/construction-carpentry-hammer.webp"
+		},
+		{
+			"ENG_name": "Cunning Action",
+			"name": "灵巧动作",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 2,
+			"entries": [
+				"在第2级，你的机敏与敏捷让你得以迅速移动和行动。你可以以一个附赠动作采取{@action 疾走}、{@action 撤离}、{@action 协助}、{@action 躲藏}或{@action 使用物件}动作。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action"
+			},
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"ENG_name": "Expertise",
+			"name": "专精",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 3,
+			"expertise": [
+				{
+					"anyProficientSkill": 2
+				},
+				{
+					"anyProficientSkill": 1,
+					"anyProficientTool": 1
+				},
+				{
+					"anyProficientTool": 2
+				}
+			],
+			"entries": [
+				"在第3级，选择你的两项熟练项，技能或工具皆可。你使用所选熟练项进行的任何属性检定，其熟练加值翻倍。",
+				"在第10级，你可以再选择两项技能或工具熟练项来获得此收益。"
+			],
+			"foundryImg": "icons/sundries/books/book-red-exclamation.webp"
+		},
+		{
+			"ENG_name": "Roguish Vocation",
+			"name": "游荡者志业",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 3,
+			"entries": [
+				"在第3级，你投身于一项帮助你在市场上立足的志业，具体内容详述于职业描述的末尾。你的志业会在第3级给予你特性，并在第9、13和17级再次给予。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Quick Learner",
+			"name": "快速学习",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 5,
+			"entries": [
+				"同样在第5级，你可以为不久后可能遭遇的任何情况做准备。在一次长休期间，你可以花费1小时学习如何使用一项你不熟练的技能或工具。长休结束时，你使用所学技能或工具进行的检定加上你的熟练加值。该收益持续到你再次使用此特性，或你获得相应技能或工具的熟练项为止。",
+				{
+					"ENG_name": "The Quick Learner Effect",
+					"type": "inset",
+					"name": "快速学习效应",
+					"entries": [
+						"通过 Plutonium 导入时，该特性会在你的角色卡中创建一个效应，将此收益加到一项技能和一项工具上。其默认设置为在你的特技技能上加上熟练加值，而盗贼工具则不加值，你可以根据自己的选择手动修改。",
+						{
+							"ENG_name": "Skills' Abbreviations",
+							"type": "entries",
+							"name": "技能缩写",
+							"entries": [
+								"以下是 FoundryVTT 软件中全部技能缩写的列表，括号内为对应的技能：acr（特技）、ani（驯兽）、arc（特技）、ath（运动）、dec（欺瞒）、his（历史）、ins（洞悉）、itm（威吓）、inv（调查）、med（医药）、nat（自然）、prc（察觉）、prf（表演）、per（游说）、rel（宗教）、slt（巧手）、ste（隐匿）、sur（生存）。"
+							]
+						},
+						{
+							"ENG_name": "Tools' Abbreviations",
+							"type": "entries",
+							"name": "工具缩写",
+							"entries": [
+								"以下是 FoundryVTT 软件中全部工具缩写的列表，括号内为对应的工具：art（工匠工具）、alchemist（炼金）、brewer（酿酒）、calligrapher（书法）、carpenter（木工）、cartographer（制图）、coobler（制鞋）、cook（烹饪）、glassblower（玻璃吹制）、jeweler（珠宝）、leatherworker（皮革加工）、mason（砌筑）、painter（绘画）、potter（制陶）、smith（锻造）、tinker（修补）、weaver（纺织）、woodcarver（木雕）、disg（易容工具）、forg（文书伪造工具）、game（赌具）、chess（龙棋组）、dice（骰子组）、card（整副纸牌）、herb（草药工具）、music（乐器）、bagpipes（风笛）、drum（鼓）、dulcimer（扬琴）、flute（长笛）、horn（角号）、lute（鲁特琴）、lyre（里拉琴）、panflute（排箫）、shawm（芦笛）、viol（提琴）、navg（领航工具）、pois（毒药工具）、thief（盗贼工具）、vehicle（载具）、air（空中载具）、land（陆行载具）、space（太空载具）、water（水上载具）"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/documents/blueprint-helmet.webp"
+		},
+		{
+			"ENG_name": "Swift Consumption",
+			"name": "迅捷消耗",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 5,
+			"entries": [
+				"在第5级，你的快手能够迅速启用某些魔法物品。你可以通过你的灵巧动作，以一个附赠动作使用一件消耗性魔法物品，例如药水或法术卷轴。物品的稀有度不能超过非普通。你在11级时可以用此特性使用珍稀物品，在18级时可以使用极珍稀物品。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action"
+			},
+			"foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 6,
+			"entries": [
+				"当你达到第6级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Shared Misfortune",
+			"name": "分摊厄运",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 7,
+			"entries": [
+				"厄运总在最糟糕的时刻降临\u2014\u2014除非它落到别人头上。在第7级，每当一个你可见的、距你30尺内的生物进行属性检定、攻击检定或豁免检定时，你可以令该生物的该次掷骰承受劣势。当你如此做后，在你的下个回合开始前，你不能再次使用此特性。"
+			],
+			"foundryImg": "icons/skills/social/trading-injustice-scale-gray.webp"
+		},
+		{
+			"ENG_name": "Underhanded Tactics improvement",
+			"name": "阴损招数提升",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 7,
+			"entries": [
+				"在第7级，你额外习得一项自选的{@filter 阴损招数|optionalfeatures|feature type=DZC:UT}。"
+			],
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Roguish Vocation feature",
+			"name": "志业特性",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 9,
+			"entries": [
+				"在第9级，你获得一项由你的游荡者志业给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 10,
+			"entries": [
+				"当你达到10级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Expertise",
+			"name": "专精",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 10,
+			"expertise": [
+				{
+					"anyProficientSkill": 2
+				},
+				{
+					"anyProficientSkill": 1,
+					"anyProficientTool": 1
+				},
+				{
+					"anyProficientTool": 2
+				}
+			],
+			"entries": [
+				"在第10级，你可以再选择两项技能或工具熟练项来获得此收益。"
+			],
+			"foundryImg": "icons/sundries/books/book-red-exclamation.webp"
+		},
+		{
+			"ENG_name": "Swift Consumption improvement",
+			"name": "迅捷消耗提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 11,
+			"entries": [
+				"在第11级，你可以用此特性使用珍稀物品。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action"
+			},
+			"foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Roguish Vocation feature",
+			"name": "志业特性",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 13,
+			"entries": [
+				"在第13级，你获得一项由你的游荡者志业给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Opportunity for Improvement",
+			"name": "改进契机",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 14,
+			"entries": [
+				"无论局势多么危急，你总可以指望自己的天分力挽狂澜。从第14级起，当你掷先攻且已没有剩余天赋骰时，你恢复两枚天赋骰。在你的回合内，当你的属性检定、攻击检定或豁免检定失败时，你也会恢复一枚天赋骰。"
+			],
+			"foundryImg": "icons/sundries/gaming/dice-pair-white-green.webp"
+		},
+		{
+			"ENG_name": "Underhanded Tactics improvement",
+			"name": "阴损招数提升",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 14,
+			"entries": [
+				"在第14级，你额外习得一项自选的{@filter 阴损招数|optionalfeatures|feature type=DZC:CS}。"
+			],
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp"
+		},
+		{
+			"ENG_name": "Reliable Partner improvement",
+			"name": "可靠伙伴提升",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 15,
+			"entries": [
+				"在第15级，你只需花费至少1分钟执行任务即可获得该加值。如果你花费至少10分钟执行一项任务，该加值提升为+10。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Roguish Vocation feature",
+			"name": "志业特性",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 17,
+			"entries": [
+				"在第17级，你获得一项由你的游荡者志业给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Swift Consumption improvement",
+			"name": "迅捷消耗提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 18,
+			"entries": [
+				"在第11级，你可以用此特性使用极珍稀物品。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action"
+			},
+			"foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp"
+		},
+		{
+			"ENG_name": "Mastery",
+			"name": "精通",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 19,
+			"entries": [
+				"在第19级，选择你的两项熟练项，技能或工具皆可。你使用所选熟练项进行的任何属性检定，其熟练加值变为三倍。",
+				{
+					"ENG_name": "The Mastery Effect",
+					"type": "inset",
+					"name": "精通效应",
+					"entries": [
+						"通过 Plutonium 导入时，该特性会在你的角色卡中创建一个效应，将此收益加到一项技能和一项工具上。其默认设置为在你的特技技能和盗贼工具上加上两倍熟练加值，你可以根据自己的选择手动修改。",
+						{
+							"ENG_name": "Skills' Abbreviations",
+							"type": "entries",
+							"name": "技能缩写",
+							"entries": [
+								"以下是 FoundryVTT 软件中全部技能缩写的列表，括号内为对应的技能：acr（特技）、ani（驯兽）、arc（特技）、ath（运动）、dec（欺瞒）、his（历史）、ins（洞悉）、itm（威吓）、inv（调查）、med（医药）、nat（自然）、prc（察觉）、prf（表演）、per（游说）、rel（宗教）、slt（巧手）、ste（隐匿）、sur（生存）。"
+							]
+						},
+						{
+							"ENG_name": "Tools' Abbreviations",
+							"type": "entries",
+							"name": "工具缩写",
+							"entries": [
+								"以下是 FoundryVTT 软件中全部工具缩写的列表，括号内为对应的工具：art（工匠工具）、alchemist（炼金）、brewer（酿酒）、calligrapher（书法）、carpenter（木工）、cartographer（制图）、coobler（制鞋）、cook（烹饪）、glassblower（玻璃吹制）、jeweler（珠宝）、leatherworker（皮革加工）、mason（砌筑）、painter（绘画）、potter（制陶）、smith（锻造）、tinker（修补）、weaver（纺织）、woodcarver（木雕）、disg（易容工具）、forg（文书伪造工具）、game（赌具）、chess（龙棋组）、dice（骰子组）、card（整副纸牌）、herb（草药工具）、music（乐器）、bagpipes（风笛）、drum（鼓）、dulcimer（扬琴）、flute（长笛）、horn（角号）、lute（鲁特琴）、lyre（里拉琴）、panflute（排箫）、shawm（芦笛）、viol（提琴）、navg（领航工具）、pois（毒药工具）、thief（盗贼工具）、vehicle（载具）、air（空中载具）、land（陆行载具）、space（太空载具）、water（水上载具）"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-symbol-square-blue-green.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 20,
+			"entries": [
+				"当你达到第20级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Stroke of Luck",
+			"name": "幸运一击",
+			"source": "DZC:ANA:Ro",
+			"page": 4,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 20,
+			"entries": [
+				"在第20级，你有一种在关键时刻取得成功的神奇本领。在你进行属性检定、攻击检定或豁免检定之前，你可以将该次d20掷骰视为20。",
+				"你可以使用此特性三次，当你完成一次长休时，你恢复所有已耗用的次数。",
+				"此外，当你完成一次长休时，你可以选择一项已获得的天赋，并将其替换为另一项。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Before you make an ability check, attack roll, or saving throw",
+				"activation.cost": 1,
+				"uses.per": "lr",
+				"uses.max": 3,
+				"uses.value": 1
+			},
+			"foundryImg": "icons/commodities/flowers/clover.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Reliable Partner",
+			"name": "可靠伙伴",
+			"source": "DZC:ANA:Ro",
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 1,
+			"subEntities": {
+				"item": [
+					{
+						"ENG_name": "Unarmed Strike",
+						"name": "徒手打击",
+						"source": "DZC:ANA:Ro",
+						"page": 1,
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1 + @abilities.str.mod",
+									"bludgeoning"
+								]
+							],
+							"ability": "",
+							"properties": [
+								"fin",
+								"lgt"
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Roguish Talents",
+			"name": "游荡者天赋",
+			"source": "DZC:ANA:Ro",
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 1,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "ceil(@classes.rogue-rework.levels/2) + 2"
+			}
+		},
+		{
+			"ENG_name": "Quick Learner",
+			"name": "快速学习",
+			"source": "DZC:ANA:Ro",
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 5,
+			"effects": [
+				{
+					"ENG_name": "Quick Learner",
+					"name": "快速学习",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.acr.bonuses.check",
+							"mode": "ADD",
+							"value": "@prof"
+						},
+						{
+							"key": "system.tools.thief.bonuses.check",
+							"mode": "ADD",
+							"value": "0"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mastery",
+			"name": "精通",
+			"source": "DZC:ANA:Ro",
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"level": 19,
+			"effects": [
+				{
+					"ENG_name": "Mastery",
+					"name": "精通",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.acr.bonuses.check",
+							"mode": "ADD",
+							"value": "2*@prof"
+						},
+						{
+							"key": "system.tools.thief.bonuses.check",
+							"mode": "ADD",
+							"value": "2*@prof"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Assassin",
+			"name": "刺客",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "刺客",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"先下手为强，一击毙命。这是刺客们的信条\u2014\u2014一群在暗处行当的从业者。他们的战术讲究效率，在引来追捕之前便将目标解决。",
+				"这些游荡者出没于各种场合：上至担任国王私人刺客的政府要职，中至铲除教会之敌的祭司，下至来自黑社会的职业杀手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "用毒行家|游荡者|DZC:ANA:Ro|刺客|DZC:ANA:Ro|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "轻松了结|游荡者|DZC:ANA:Ro|刺客|DZC:ANA:Ro|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Easy Dispatch",
+			"name": "轻松了结",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "刺客",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你能轻松了结虚弱的敌人，若你比他们更快，则更是如此。在第3级，在你的战斗首个回合，你对尚未行动过的任何生物的攻击检定具有优势。",
+				"此外，当你以武器攻击命中一只{@condition 失能}、{@condition 中毒}、被突袭或无法看见你的生物时，你可以从天赋骰池中消耗至多三枚d6，并将其加到该次攻击的伤害掷骰上。"
+			],
+			"foundryImg": "icons/weapons/daggers/dagger-curved-black.webp"
+		},
+		{
+			"ENG_name": "Poison Adept",
+			"name": "用毒行家",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "刺客",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 3,
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"从第3级起，如果你原本不熟练{@item 毒药工具|phb}，则你获得其熟练项。你用毒药工具制作的任何毒药，其豁免DC和伤害获得等于你智力调整值的加值（最低为1），并无视毒素伤害抗性。"
+			],
+			"foundryImg": "icons/skills/toxins/poison-bottle-corked-fire-green.webp"
+		},
+		{
+			"ENG_name": "Incapacitate",
+			"name": "失能重击",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "刺客",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在第9级，你有了确保击杀的手段，以防第一击还不够致命。在你的战斗首个回合，如果你以武器攻击命中一只尚未行动过的生物，它必须通过一次体质豁免检定，否则陷入{@condition 失能}状态，直到你的下个回合结束为止。该DC等于10或该生物所受伤害的一半，取两者中较高者。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "On your first turn of combat, if you hit with a weapon attack a creature that hasn't taken a turn yet",
+				"activation.cost": 1,
+				"actionType": "save",
+				"save.ability": "con",
+				"save.dc": 10,
+				"save.scaling": "flat"
+			},
+			"foundryImg": "icons/magic/control/voodoo-doll-pain-damage-tan.webp"
+		},
+		{
+			"ENG_name": "Potent Poison",
+			"name": "强效毒药",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "刺客",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，生物对你所制毒药进行的第一次豁免检定承受劣势。",
+				"此外，被你{@condition 中毒}的生物在其每个回合结束时受到3d6毒素伤害。该伤害在其持续{@condition 中毒}的每个连续回合中提高1d6。"
+			],
+			"foundryImg": "icons/skills/toxins/symbol-poison-drop-skull-green.webp"
+		},
+		{
+			"ENG_name": "Assassinate",
+			"name": "暗杀",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "刺客",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从第17级起，你成为即死的大师。当你对一只生物使用你的{@subclassFeature 失能重击|游荡者|DZC:ANA:Ro|刺客|DZC:ANA:Ro|9|DZC:ANA:Ro}时，你可以运用此特性，令该次攻击更加致命。若你如此做，该生物若未通过对抗失能重击的豁免检定，其生命值降为0；豁免成功则陷入{@condition 失能}状态且易伤于所有伤害，直到你的下个回合结束为止。",
+				"一旦你使用了此特性，你在接下来的24小时内不能对同一生物再次使用它。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "On your first turn of combat, if you hit with a weapon attack a creature that hasn't taken a turn yet",
+				"activation.cost": 1,
+				"actionType": "save",
+				"save.ability": "con",
+				"save.dc": 10,
+				"save.scaling": "flat"
+			},
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp"
+		},
+		{
+			"ENG_name": "Fast Hands",
+			"name": "快手",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "盗贼",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 3,
+			"toolProficiencies": [
+				{
+					"thieves' tools": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"从第3级起，如果你原本不熟练{@item 盗贼工具|phb}，则你获得其熟练项。此外，你可以通过你的{@classFeature 灵巧动作|游荡者|DZC:ANA:Ro|2|DZC:ANA:Ro}，以一个附赠动作采取{@action 窃取|DZC:ANA:Ro}动作，或使用盗贼工具拆除陷阱。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action"
+			},
+			"foundryImg": "icons/skills/social/wave-halt-stop.webp"
+		},
+		{
+			"ENG_name": "Pickpocket Veteran",
+			"name": "资深扒手",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "盗贼",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你习得{@optfeature 扒窃|DZC:ANA:Ro}招数；若你已习得，则可改为习得另一项自选招数。该招数不计入你已知的招数数量。此外，你也可以尝试对处于战斗或警戒状态的生物行窃，但你的检定承受\u20135减值。",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "扒窃|DZC:ANA:Ro"
+				}
+			],
+			"foundryImg": "icons/skills/social/theft-pickpocket-bribery-brown.webp"
+		},
+		{
+			"ENG_name": "Thief",
+			"name": "盗贼",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "盗贼",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"等待者终有所得，而动手者得之更快！这就是所有盗贼的法则。有的是为了挑战高难度窃案带来的刺激，有的是受贪婪驱使，还有的则相信自己是在重新分配世间的财富。",
+				"这些游荡者常以夜盗、盗匪乃至扒手的身份活动。他们既能从钱袋里摸走硬币，也能从戒备森严的密室中取走珠宝，而且不留一丝痕迹。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "快手|游荡者|DZC:ANA:Ro|盗贼|DZC:ANA:Ro|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "资深扒手|游荡者|DZC:ANA:Ro|盗贼|DZC:ANA:Ro|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Sneaky Thief",
+			"name": "鬼祟盗贼",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "盗贼",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在第9级，当你尝试{@action 窃取|DZC:ANA:Ro|行窃}时，未察觉你藏身的生物对其{@skill 察觉}检定承受-5减值，除非该生物处于战斗或警戒状态。"
+			],
+			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp"
+		},
+		{
+			"ENG_name": "Mug",
+			"name": "行凶抢劫",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "盗贼",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，在你的回合内一次，当你以{@action 攻击}动作进行的武器攻击对一只你触及范围内的生物造成伤害时，你可以对同一目标采取{@action 窃取|DZC:ANA:Ro}动作，作为同一动作的一部分。直到你的回合结束为止，你尝试从该生物行窃的检定不承受任何减值。"
+			],
+			"foundrySystem": {
+				"activation.type": "action"
+			},
+			"foundryImg": "icons/skills/melee/strike-dagger-arcane-pink.webp"
+		},
+		{
+			"ENG_name": "Legendary Thief",
+			"name": "传奇盗贼",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"className": "游荡者",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "盗贼",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在第17级，你能够在众目睽睽之下窃走任何东西。你可以尝试{@action 窃取|DZC:ANA:Ro|行窃}一件正被持握的物件，或一件极其显眼、需要耗费大量时间才能取下的物件。不过，依取下物件的难易程度，这需要你花费一定时间才能完成，通常为1分钟（例如护甲就要久得多）。在此期间，你必须拥有某种保持隐藏的手段，例如身处重度遮蔽的区域之中。",
+				"当你如此做时，你的检定承受\u20135减值；如果物件极其显眼（如一整套板甲），观察者们在你窃走它之后立刻就会察觉它不见了。"
+			],
+			"foundryImg": "icons/magic/unholy/strike-hand-glow-pink.webp"
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Academical",
+			"name": "学术",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与学术研究或记忆相关的智力检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make an Intelligence check related to academical research or memory",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Aiming",
+			"name": "瞄准",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:C"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"如果你在你的回合内尚未移动并进行一次远程武器攻击，你可以消耗你的天赋骰并将其加到该攻击检定上。使用此天赋后，你的速度为0，且在你的回合结束前不能再次使用它。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to attack roll"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Alchemy",
+			"name": "炼金术",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:TnK"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用{@item 炼金工具|phb}制作一剂{@item 强酸 (小瓶)|phb|强酸}或{@item 炽火胶|phb}时，你可以消耗你的天赋骰，使该物品的初始伤害提高，数值等于掷出的总值。此额外伤害在物品制成后持续24小时。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to acid (vial) or alchemist's fire initial damage"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Athletic",
+			"name": "体能",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与攀爬、跳跃、奔跑或游泳相关的力量检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a Strength check related to climbing, jumping, running, or swimming",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Blocking",
+			"name": "格挡",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:C"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当你受到伤害时，你可以用你的反应消耗天赋骰，使所受伤害减少掷出的总值。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Reduced damage"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Body Balance",
+			"name": "身体平衡",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:ST"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于对抗被{@condition 受擒}、被推撞或被击{@condition 倒地}的豁免检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to saving throw"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Cutting",
+			"name": "割裂",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:C"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当你以武器攻击命中一只生物且该攻击检定具有优势时，你可以将你的天赋骰用于该次攻击的伤害掷骰。",
+				"如果有另一只生物正在牵制目标（例如使用了{@action 协助|phb}或{@action 干扰|DZC:ANA:Ro}动作），且你的该攻击检定不具有劣势，则你无需优势。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon attack damage"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Disguising",
+			"name": "易容",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:TnK"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当你穿着自己用{@item 易容工具|phb}制作的伪装，且有生物试图识破它时，你可以消耗你的天赋骰，使该检定的DC提高掷出的总值。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to disguise DC"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Dodging",
+			"name": "躲避",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:C"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当一只你可见的生物以攻击瞄准你时，你可以用你的反应消耗天赋骰，并将其加到你对抗该次攻击的AC上。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to AC"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Endurance",
+			"name": "忍耐",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与忍受不利环境相关的体质检定，例如不眠不休、缺乏食物或饮水求生、暴露于极端温度，或抵御中毒。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a Constitution check related to enduring adverse conditions",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Exploration",
+			"name": "探索",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与在荒野、地城或城市中寻路相关的检定，例如避免迷路、寻找资源或食物，或是了解当地的历史与居民。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a check related to navigating through an area of wilderness, dungeons, or cities",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Feline Grace",
+			"name": "猫之优雅",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与协调动作、避免跌落和藏匿相关的敏捷检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a Dexterity check related to coordinating your movements, avoid falling, and hiding",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Gaming",
+			"name": "博弈",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:TnK"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以使用一件{@item 赌具|phb}，花一天时间用它赌博或表演。消耗你的天赋骰，并在当天结束时掷一枚d20。如果你熟练该工具，则该掷骰加上你的熟练加值。若你掷出15或更高，你获得的银币数量等于你天赋骰掷出的总值。如果你在赌博，检定失败便失去该数量的银币；若掷出20或更高，你赢得的金额翻倍。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Amount of sp for this activity"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Ganging Up",
+			"name": "结伙围攻",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"featureType": [
+				"DZC:UT"
+			],
+			"entries": [
+				"有同伙撑腰，收拾别人就容易得多，被人收拾的可能性也更小。如果你和至少2个友方生物距同一只生物10尺内，且没有其他敌对生物距你和你同伴10尺内，那么你们对被围目标进行的{@skill 威吓}和{@skill 游说}检定具有优势，对抗被该目标{@condition 魅惑}或{@condition 恐慌}的豁免检定也具有优势。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Medical",
+			"name": "医疗",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与处理伤口或辨识常见疾病相关的感知检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a Wisdom check related to treating wounds or identifying common diseases",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Mental Resistance",
+			"name": "精神抗性",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:ST"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于对抗魔法的智力和感知豁免检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to saving throw"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Musical",
+			"name": "音乐",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:TnK"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当你在公共场所使用{@item 乐器|phb}进行演出，且你的表演成功俘获观众时，你可以消耗你的天赋骰。你获得的拥趸数量等于掷出的总值。",
+				{
+					"ENG_name": "What if a Fan?",
+					"type": "inset",
+					"name": "何谓拥趸",
+					"entries": [
+						"拥趸是对你友善的生物，可能会以几乎不求回报的方式向你提供一些商品或服务。拥趸会像通情达理之人帮助自己敬仰的对象那样尽力协助你。不过，如果拥趸被{@condition 魅惑}，他们或许会被说服做出更多的付出，哪怕代价惨重。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Amount of fans"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Parkour",
+			"name": "跑酷",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"featureType": [
+				"DZC:UT"
+			],
+			"entries": [
+				"你磨练出了攀爬和穿行于建筑之间以躲避当局与暴徒的本领。攀爬不消耗你的额外移动，你跳远能够跨越的距离增加10尺，且你从坠落中受到的伤害减少，数值等于你的游荡者等级。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Physical Fortitude",
+			"name": "体魄坚韧",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:ST"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于对抗魔法的力量和体质豁免检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to saving throw"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Pickpocketing",
+			"name": "扒窃",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"featureType": [
+				"DZC:UT"
+			],
+			"entries": [
+				"没有哪个钱袋能逃过你的手。只要你尝试{@action 窃取|DZC:ANA:Ro|行窃}的受严密看管物件不至于极其显眼或需要耗费大量时间才能取下（如脚上穿着的鞋或护甲，或被持握的物品），你为行窃所进行的检定就不承受减值。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Poisoning",
+			"name": "下毒",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:TnK"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当你用{@item 毒药工具|phb}制作{@item 基础毒药(小瓶装)|phb|小瓶装基础毒药}时，你可以消耗你的天赋骰来提升其效力。当你如此做时，第一只受该毒药影响的生物在接下来一分钟内进行的下一次属性检定、豁免检定或攻击检定承受减值，数值等于你天赋骰掷出的总值。该毒药在制成后24小时内都保有此额外效应。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Penalty to the die roll"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Resistant Body",
+			"name": "抗性之躯",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:ST"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于对抗毒素和疾病的豁免检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to saving throw"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Scamming",
+			"name": "行骗",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"featureType": [
+				"DZC:UT"
+			],
+			"entries": [
+				"你善用机智占易受骗者和天真者的便宜，让他们相信你的商品比任何同类都更优质。每当你试图以高于常价的价格卖出一件物品或你的服务时，你的魅力检定具有优势。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Searching",
+			"name": "搜索",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与搜寻生物、物品、陷阱或线索相关的属性检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make an ability check related to looking for creatures, objects, traps, or clues",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Seduction",
+			"name": "诱惑",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"featureType": [
+				"DZC:UT"
+			],
+			"entries": [
+				"无可否认，迷住你的听众总比诉诸武力更容易得到你想要的。诱惑是一门可以多种方式施展的艺术，最常见的手法包括调情、甜言蜜语、献殷勤，或干脆炫耀你的体貌魅力。如果你花费至少10分钟诱惑一只生物，你对它的下一次说服检定具有优势。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "See Through",
+			"name": "识破",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与查验幻象或识破他人欺骗相关的检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make an ability check related to examining for illusions or someone trying to deceive you",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Sneaking",
+			"name": "潜行",
+			"source": "DZC:ANA:Ro",
+			"page": 3,
+			"featureType": [
+				"DZC:UT"
+			],
+			"entries": [
+				"你的技巧是藏进不那么显眼的地方以摆脱困境，比如混入人群、闪身躲到货箱后，或踏进阴影之中。当你处于轻度遮蔽中，或处于相对某生物的四分之三掩护之后时，你可以尝试对它藏匿。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Striking",
+			"name": "打击",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:C"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"如果你以近战武器攻击瞄准一只生物，且没有其他生物距你或该目标5尺内，你可以消耗你的天赋骰并将其加到该攻击检定上。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to attack roll"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Tending Wounds",
+			"name": "包扎伤口",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:TnK"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当你对一只生物使用{@item 医疗包|phb}时，你可以消耗你的天赋骰，给予该生物等于掷出总值的临时生命值。这些临时生命值持续10分钟。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "healing",
+				"damage.parts": [
+					[
+						"1d6",
+						"temphp"
+					]
+				]
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Theatrics",
+			"name": "演技",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:AC"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于与说服、欺瞒生物或进行表演相关的魅力检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a Charisma check related to convincing or deceiving a creature, or performing an act",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to ability check"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Thievery",
+			"name": "盗窃",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:TnK"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"每当你使用{@item 盗贼工具|phb}成功开启宝箱、通往宝藏间的门或其他盛有战利品的容器时，你可以消耗你的天赋骰。若你如此做，你在那份宝藏中发现的金币数量等于你天赋骰掷出的总值。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Extra gp"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Trap Connoisseur",
+			"name": "陷阱行家",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:ST"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于对抗陷阱的豁免检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to saving throw"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Trapping",
+			"name": "设陷",
+			"source": "DZC:ANA:Ro",
+			"page": 8,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:C"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"当你设置一个被触发时造成伤害的陷阱时，你可以消耗你的天赋骰并将其加到该陷阱的伤害上。此效应在陷阱被触发前持续1小时。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to trap's initial damage"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Trickster",
+			"name": "诡诈",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:ST"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于对抗魔法的敏捷和魅力豁免检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to saving throw"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Unwavering Heart",
+			"name": "坚定之心",
+			"source": "DZC:ANA:Ro",
+			"page": 7,
+			"featureType": [
+				"DZC:T",
+				"DZC:T:ST"
+			],
+			"consumes": {
+				"ENG_name": "Roguish Talents",
+				"name": "游荡者天赋",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的天赋骰用于对抗被{@condition 魅惑}或{@condition 恐慌}的豁免检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d6"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to saving throw"
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		}
+	],
+	"action": [
+		{
+			"ENG_name": "Convince",
+			"name": "说服",
+			"source": "DZC:ANA:Ro",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图诱导一只生物按你所愿思考。选择一只你30尺内、能看见或听见你的生物。进行一次魅力（{@skill 游说}）或魅力（{@skill 欺瞒}）检定（自选其一），与目标的感知（{@skill 洞悉}）检定对抗。若你在过去一分钟内对该生物做过任何有害之事，你的检定承受劣势。若你成功，该生物会在合理的程度上倒向你的观点。这也可能使该生物对某些生物转为友善、冷漠或敌对的态度，由你或DM选择。该生物会做什么、如何行事，由你的DM作最终裁决。"
+			]
+		},
+		{
+			"ENG_name": "Disable",
+			"name": "失能",
+			"source": "DZC:ANA:Ro",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图让一只生物的一种感官短暂失灵，无论是朝它的眼睛扔杂物、在它耳边发出震耳的声响，还是对它的眼睛或耳朵使出下三滥的攻击。选择一只在你触及范围内、体型至多大你一级的生物。你可以针对它的眼睛或耳朵（如果它有的话）。该生物必须通过一次DC 10的敏捷或体质豁免检定（自选其一），否则直到你的下个回合开始前陷入{@condition 目盲}或{@condition 耳聋}（分别对应你针对的是眼睛或耳朵）。"
+			]
+		},
+		{
+			"ENG_name": "Distract",
+			"name": "干扰",
+			"source": "DZC:ANA:Ro",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你使出浑身解数来干扰一只你能看见的生物。直到你的下个回合开始前，只要该生物距你5尺内且你未{@condition 失能}，你的目标对除你以外的目标发动的攻击检定便承受劣势，其{@skill 察觉}检定也承受劣势。"
+			]
+		},
+		{
+			"ENG_name": "Intimidate",
+			"name": "威吓",
+			"source": "DZC:ANA:Ro",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图威吓一只生物。选择一只你30尺内、能看见或听见你的生物。进行一次魅力（{@skill 威吓}）检定，与目标的感知（{@skill 洞悉}）检定对抗。若你成功，目标直到你的下个回合开始前对你{@condition 恐慌}。"
+			]
+		},
+		{
+			"ENG_name": "Steal",
+			"name": "窃取",
+			"source": "DZC:ANA:Ro",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图在不被察觉的情况下拿走一件小型物件，这通常至少需要一只空手。你想窃取的物件可以是未固定、被穿戴或被携带的，但重量不能超过半磅，且不得过于显眼或难以取下（如身穿的衣物或护甲，或被持握的物品）。",
+				"要窃取物件，你必须进行一次敏捷（{@skill 巧手}）检定，与该区域内所有观察者（若它们不在战斗或警戒状态，则使用被动察觉）的感知（{@skill 察觉}）检定对抗，包括你想行窃的对象在内（如果有的话）。观察者检定成功即看见你。若物件未被固定，无论结果如何你都能拿走它。若你在对抗行窃对象的检定中失败，你也无法取得该物件。若行窃对象处于战斗或警戒状态，你对其的检定自动失败。",
+				"若物件受到严密看管（如放在口袋里或已入鞘的武器），你的巧手检定承受减值，通常为-5。"
+			]
+		}
+	]
+}
