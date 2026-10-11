@@ -1,0 +1,4602 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DZC:ANA:M",
+				"abbreviation": "DZC:ANA",
+				"full": "武僧重制版",
+				"url": "https://homebrewery.naturalcrit.com/share/HJys_qVgDJdo",
+				"version": "1.0.1",
+				"authors": [
+					"Dusk Zargoth"
+				],
+				"convertedBy": [
+					"Dusk Zargoth"
+				],
+				"color": "DC3636"
+			}
+		],
+		"optionalFeatureTypes": {
+			"DZC:MA": "武僧重制版；武艺",
+			"DZC:MA:MS": "武僧重制版；武艺：混合式",
+			"DZC:MA:GS": "武僧重制版；武艺：擒抱式",
+			"DZC:MA:US": "武僧重制版；武艺：徒手式",
+			"DZC:MA:WS": "武僧重制版；武艺：武器式",
+			"DZC:EA": "武僧重制版；元素武艺",
+			"DZC:EA:A": "武僧重制版；元素武艺：气",
+			"DZC:EA:E": "武僧重制版；元素武艺：土",
+			"DZC:EA:F": "武僧重制版；元素武艺：火",
+			"DZC:EA:W": "武僧重制版；元素武艺：水",
+			"DZC:EA:ES": "武僧重制版；元素武艺：元素打击",
+			"DZC:EA:EM": "武僧重制版；元素武艺：元素显化",
+			"DZC:EA:PS": "武僧重制版；元素武艺：原始姿态",
+			"DZC:EA:SS": "武僧重制版；元素武艺：步法转换",
+			"DZC:EA:EMa": "武僧重制版；元素武艺：元素精通",
+			"DZC:KF": "武僧重制版；气特性",
+			"DZC:KF:O": "武僧重制版；气特性：攻击",
+			"DZC:KF:D": "武僧重制版；气特性：防御",
+			"DZC:KF:U": "武僧重制版；气特性：通用"
+		},
+		"edition": "classic",
+		"dateAdded": 1714935701,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "c31adc9d7f"
+	},
+	"class": [
+		{
+			"ENG_name": "Monk Rework",
+			"name": "武僧",
+			"source": "DZC:ANA:M",
+			"page": 1,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Martial Arts",
+					"name": "武艺",
+					"featureType": [
+						"DZC:MA"
+					],
+					"progression": {
+						"1": 2,
+						"9": 3,
+						"18": 4
+					}
+				},
+				{
+					"ENG_name": "Ki Features",
+					"name": "气特性",
+					"featureType": [
+						"DZC:KF"
+					],
+					"progression": [
+						0,
+						3,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						8,
+						8,
+						9,
+						9,
+						9,
+						10,
+						10,
+						10
+					]
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"history",
+								"insight",
+								"religion",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 短剑|phb|短剑}"
+				],
+				"tools": [
+					"选择一种{@item 工匠工具|phb}或一种{@item 乐器|phb}"
+				],
+				"toolProficiencies": [
+					{
+						"anyArtisansTool": 1
+					},
+					{
+						"anyMusicalInstrument": 1
+					}
+				],
+				"armor": [
+					"light",
+					"medium"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 短剑|phb}或 (b) 任意一件{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) {@item 飞镖|phb|10支飞镖}或 (b) 一把{@item 短弓|phb}和{@item 箭矢 (20)|phb|20支箭}",
+					"(a) 一个{@item 地城套组|phb}或 (b) 一个{@item 探索套组|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"shortsword|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "dart|phb",
+								"quantity": 10
+							}
+						],
+						"b": [
+							"shortbow|phb",
+							"arrows (20)|phb"
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"{@item 短剑|phb|短剑}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"武艺",
+						"无甲移动",
+						"气特性"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 0
+							},
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 35
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 35
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 35
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								],
+								"rollable": true
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 35
+							},
+							10
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"武艺|武僧|DZC:ANA:M|1",
+				"冥想|武僧|DZC:ANA:M|1",
+				"无甲防御|武僧|DZC:ANA:M|1",
+				"Ki|武僧|DZC:ANA:M|2",
+				"无甲移动|武僧|DZC:ANA:M|2",
+				{
+					"classFeature": "修行宗派|武僧|DZC:ANA:M|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|武僧|DZC:ANA:M|4",
+				"额外攻击|武僧|DZC:ANA:M|5",
+				"真气驻拳|武僧|DZC:ANA:M|5",
+				"属性值提升|武僧|DZC:ANA:M|6",
+				{
+					"classFeature": "宗派特性|武僧|DZC:ANA:M|6",
+					"gainSubclassFeature": true
+				},
+				"冥想增效|武僧|DZC:ANA:M|7",
+				"属性值提升|武僧|DZC:ANA:M|8",
+				"武艺增效|武僧|DZC:ANA:M|9",
+				"属性值提升|武僧|DZC:ANA:M|10",
+				{
+					"classFeature": "宗派特性|武僧|DZC:ANA:M|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|武僧|DZC:ANA:M|12",
+				"不朽身|武僧|DZC:ANA:M|13",
+				"不屈之魂|武僧|DZC:ANA:M|14",
+				"额外攻击（2）|武僧|DZC:ANA:M|15",
+				"属性值提升|武僧|DZC:ANA:M|16",
+				{
+					"classFeature": "宗派特性|武僧|DZC:ANA:M|17",
+					"gainSubclassFeature": true
+				},
+				"武艺增效|武僧|DZC:ANA:M|18",
+				"加速恢复|武僧|DZC:ANA:M|19",
+				"属性值提升|武僧|DZC:ANA:M|20",
+				"超凡入圣|武僧|DZC:ANA:M|20"
+			],
+			"subclassTitle": "修行宗派",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Monk Rework",
+			"name": "武僧",
+			"source": "DZC:ANA:M",
+			"entries": [
+				{
+					"type": "section",
+					"ENG_name": "Monk",
+					"name": "武僧",
+					"page": 1,
+					"source": "DZC:ANA:M",
+					"entries": [
+						"她以无与伦比的速度跃过一座座屋顶，穿越整座城市追缉那名刺客，用一支支箭一点点将他耗尽，直至与他当面对峙。这名木精灵招架住他的攻势，直到他力竭倒下、无心再战。",
+						"半兽人与成年巨龙搏斗，仅凭血肉之躯守护着圣所的大门。这位小小的战士扼住对手的脖颈，将它压制在地，终结了这场猛攻。",
+						"当被精锐骑士们团团围住时，这名人类从容应战。他以能洞穿护甲的刚硬打击干净利落地解决众人，随后继续踏上追猎国王之路。",
+						"无论修行何种门派，武僧们都精研古老的战斗技艺，并能驾驭流转于体内的能量\u2014\u2014这能量浸透着武僧的一切作为。将两者结合，他们得以展现超凡的武技与超越常人的身手。",
+						{
+							"type": "entries",
+							"ENG_name": "The Magic of Ki",
+							"name": "气之魔法",
+							"page": 1,
+							"entries": [
+								"武僧们悉心钻研一种多数修行宗派称之为\"气\"的魔法能量。这种能量是浸透多元宇宙的魔法的一个要素\u2014\u2014具体而言，是流经活物躯体的那个要素。武僧在自己体内驾驭这股力量，以产生魔法效应、突破身体的极限，或通过操纵气来改变生物的状态。借助这种能量，武僧将神奇的速度与力量灌注进攻击之中。随着经验累积，武术训练与对气的掌握让他们更能掌控自己与敌人的躯体。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Training and Asceticism",
+							"name": "修练和苦行",
+							"page": 1,
+							"entries": [
+								"D&D 世界的各处点缀着一座座围墙高筑的小修道院，它们是逃离平凡生活之流的小小庇护所，时间在那里仿佛静止。居住其中的武僧通过沉思与严苛训练追求个人的圆满。许多人在孩童时期便进入了修道院\u2014\u2014或在父母去世后被送去，或因寻不到食物糊口而被送去，或为报答武僧们对其家庭施予的善举。",
+								"修道院欢迎任何寻求庇护的人，但所有居住者都必须遵守其共同规约。然而，要被认可为武僧，必须持之以恒地苦修肉身与精神，因为他们相信，唯有二者和谐运作、日日突破极限，才能臻至完美自我。这正是每一位武僧的目标。也正因如此，诸多修行宗派应运而生\u2014\u2014每个人的道路都是独一无二的。",
+								"一些武僧完全远离周边人群隐居，隔绝一切可能阻碍其灵性修行之物。另一些则立誓离群索居，仅为侍奉导师或神圣力量而现身\u2014\u2014往往是为完成一项灵性任务，或为执行一项重要使命。在某些情况下，他们会踏上一段意义非凡的自我发现之旅。",
+								"大多数武僧并不排斥邻里，而是经常走访附近的城镇或村庄，以自己的服务换取食物和其他物资。作为多面手战士，武僧常常最终挺身保护邻里，使他们免遭怪物或暴君之害。",
+								"对武僧而言，成为冒险者是一次艰难的转折。这意味着离开井然有序的集体生活，成为一名流浪者。因此，离开修道院之人绝不会轻率地做出这一改变。他们勤勉修行，将冒险视为对自身肉体与精神成长的个人试炼。武僧对物质财富看得极淡，驱动他们的是一种渴望\u2014\u2014去完成比斩杀怪物、掠夺财宝更宏大的使命。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Creating a Monk",
+							"name": "创建武僧",
+							"page": 2,
+							"entries": [
+								"创建武僧角色时，不妨思考你与那座修道院的联系\u2014\u2014你在那里习得技艺、度过成长岁月。你是孤儿，还是被遗弃在修道院门前的孩子？你的父母是否为报答武僧们的恩情而将你许给了修道院？你是为躲避自己犯下的罪行才遁入这隐居生活？还是你自己选择了修行之路？你又为何选择研习这门功法？",
+								"想一想你为何离开。是修道院首座选派你执行院墙之外某项特别重要的使命？还是你因违反共同体规约而被逐出？你畏惧离开，还是乐于远行？在修道院之外，你是否有想完成的事？你是否渴望回到家园？",
+								"由于修道团体规律的生活以及驾驭气所需的自律，武僧的阵营几乎总是守序。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Quick Build",
+							"name": "快速建卡",
+							"page": 2,
+							"entries": [
+								"你可以按以下建议快速创建一名武僧。首先，将你最高的属性分配给敏捷，次高的分配给感知。其次，选择{@background 隐士}背景。选择徒手式，并在习得气特性时选择{@optfeature 疾风连击|DZC:ANA:M}、{@optfeature 坚强防御|DZC:ANA:M}和{@optfeature 疾步如风|DZC:ANA:M}。",
+								{
+									"type": "inset",
+									"ENG_name": "Can I add this Bonus?",
+									"name": "我能加上这个加值吗？",
+									"entries": [
+										"有时，某项能力、特性或法术允许你向攻击检定、属性检定或豁免检定加上一个加值，例如吟游诗人的\"吟游诗人激励\"、战争牧师的\"引导神力：导引打击\"、*祝福术*法术、武技\"攻势强化\"等等，不一而足。另一些能力则允许你重骰上述掷骰，例如醉拳宗武僧的\"醉汉机运\"。还有一类更为罕见的能力，允许你为你的动作、反应、掷骰等附加特殊效果，例如武僧的\"反射闪避\"气特性。这些能力的共同点在于其触发不依赖命中、成功、失手或失败之类的关键词，正因如此，你可以选择在看到骰值之后、DM宣布检定成功或失败之前才使用它们。"
+									]
+								},
+								{
+									"type": "inset",
+									"ENG_name": "Changes to Unarmed Strikes and the Finesse Property",
+									"name": "关于徒手打击与灵巧属性的改动",
+									"entries": [
+										"在本合集中，徒手打击与灵巧属性发生了重要改动，以维持平衡。",
+										{
+											"type": "entries",
+											"ENG_name": "Finesse Property",
+											"name": "灵巧属性",
+											"entries": [
+												"该属性现在只允许在该武器的攻击检定中选择使用你的力量或敏捷调整值，伤害掷骰则不可。进行伤害掷骰时，近战武器攻击仍须使用你的力量调整值，远程武器攻击则使用你的敏捷调整值。"
+											]
+										},
+										{
+											"type": "entries",
+											"ENG_name": "Unarmed Strikes",
+											"name": "徒手打击",
+											"entries": [
+												"徒手打击现在视为具有灵巧与轻型属性。"
+											]
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"ENG_name": "Additional Actions",
+									"name": "额外动作",
+									"entries": [
+										"你可以将以下动作加入你的游戏：{@action 说服|DZC:ANA:M}、{@action 失能|DZC:ANA:M}、{@action 干扰|DZC:ANA:M}、{@action 威吓|DZC:ANA:M}和{@action 窃取|DZC:ANA:M}"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Monk.webp"
+					}
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Way of the Elements",
+			"name": "元素宗",
+			"shortName": "元素",
+			"source": "DZC:ANA:M",
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"page": 6,
+			"subclassFeatures": [
+				"元素宗|武僧|DZC:ANA:M|元素|DZC:ANA:M|3",
+				"原始姿态|武僧|DZC:ANA:M|元素|DZC:ANA:M|6",
+				"步法转换|武僧|DZC:ANA:M|元素|DZC:ANA:M|11",
+				"元素精通|武僧|DZC:ANA:M|元素|DZC:ANA:M|17"
+			],
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp"
+		},
+		{
+			"ENG_name": "Way of the Inner Strength",
+			"name": "内力宗",
+			"shortName": "内力",
+			"source": "DZC:ANA:M",
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"page": 4,
+			"subclassFeatures": [
+				"内力宗|武僧|DZC:ANA:M|内力|DZC:ANA:M|3",
+				"混元体|武僧|DZC:ANA:M|内力|DZC:ANA:M|6",
+				"空明心境|武僧|DZC:ANA:M|内力|DZC:ANA:M|11",
+				"开悟|武僧|DZC:ANA:M|内力|DZC:ANA:M|17"
+			],
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+		},
+		{
+			"ENG_name": "Way of the Shadows",
+			"name": "暗影宗",
+			"shortName": "幽影",
+			"source": "DZC:ANA:M",
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"page": 5,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"传讯术#c",
+							"次级幻象#c"
+						]
+					},
+					"innate": {
+						"3": {
+							"resource": {
+								"1": [
+									"云雾术",
+									"无声幻影",
+									"跳跃术"
+								],
+								"2": [
+									"黑暗术",
+									"黑暗视觉",
+									"行动无踪",
+									"沉默术"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"subclassFeatures": [
+				"暗影宗|武僧|DZC:ANA:M|幽影|DZC:ANA:M|3",
+				"暗影步|武僧|DZC:ANA:M|幽影|DZC:ANA:M|6",
+				"幽影斗篷|武僧|DZC:ANA:M|幽影|DZC:ANA:M|11",
+				"灵机一斩|武僧|DZC:ANA:M|幽影|DZC:ANA:M|17"
+			],
+			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp"
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Martial Arts",
+			"name": "武艺",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 1,
+			"entries": [
+				"在第1级，你精通一种专注于徒手格斗与运用武僧武器的战斗风格，以一枚名为武艺骰的特殊骰子表示，如武僧职业表\"武艺\"栏所示。",
+				"虽然所有武艺都遵循某些共同原则，但每位武僧都会将其调整以更贴合自身，从而专精于一种武艺风格，或将数种风格融会贯通自成一派。每种风格详述如下，并各自界定了哪些武器视为你的武僧武器。若你持用某风格描述之外的武器，便无法从该风格获益。",
+				"你习得两项自选的{@filter 武艺特性|optionalfeatures|feature type=DZC:MA}，可来自任意风格。当你在本职业到达第9级和第18级时，你再习得一项自选的武艺特性，同样可来自任意风格。若某项武艺特性有等级要求，你必须在本职业达到该等级才能习得它。",
+				"若你持用非武僧武器或身穿重甲，你便失去武艺的收益。",
+				{
+					"type": "entries",
+					"ENG_name": "Mixed Style",
+					"name": "混合式",
+					"page": 3,
+					"entries": [
+						"一种适应性强且均衡的风格。你的武僧武器是任意不具有重型、双手或特殊属性的近战武器。"
+					]
+				},
+				{
+					"type": "entries",
+					"ENG_name": "Grappling Style",
+					"name": "擒抱式",
+					"page": 3,
+					"entries": [
+						"你受过以自身体重压制对手的训练，并在压制过程中碾碎他们。你的武僧武器是任意不具有重型、触及、双手或特殊属性的近战武器。"
+					]
+				},
+				{
+					"type": "entries",
+					"ENG_name": "Unarmed Style",
+					"name": "徒手式",
+					"page": 3,
+					"entries": [
+						"你锻炼过身体，能打出迅捷而精准的徒手打击。你的武僧武器是短剑，以及任意不具有重型、双手或特殊属性的简易近战武器。"
+					]
+				},
+				{
+					"type": "entries",
+					"ENG_name": "Weapon Style",
+					"name": "武器式",
+					"page": 3,
+					"entries": [
+						"你能够使用种类更多的武器，尤其擅于以之进行防御动作。你的武僧武器是长弓，以及任意不具有重型、双手或特殊属性的武器。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp"
+		},
+		{
+			"ENG_name": "Meditation",
+			"name": "冥想",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 1,
+			"entries": [
+				"在第1级，你懂得如何隔绝感官与外部世界，进入一种称为\"冥想\"的绝对专注状态。处于该状态时，你保持不动并陷入{@condition 昏迷}，你唯一能进行的动作就是使自己从中醒来。若你受到伤害，或另一生物用其动作接触并唤醒你，你的冥想即告结束。",
+				"通过不间断的冥想，你可以用一半时间完成一次短休或长休，并在4小时内获得相当于8小时睡眠的收益。",
+				"从第7级起，你在冥想时不再陷入{@condition 昏迷}，并能如常视物与听见声音。"
+			],
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Unarmored Defense",
+			"name": "无甲防御",
+			"source": "DZC:ANA:M",
+			"page": 1,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 1,
+			"entries": [
+				"某些角色掌握一种称为\"无甲防御\"的特殊防御方式。若你的角色具有其熟练项，则在你未身穿护甲时，你的AC等于10 + 你的敏捷调整值 + 括号中列出的属性调整值。若你持用盾牌但不具有其熟练项，同样会失去此收益。",
+				"若你以不同属性获得此特性的熟练项，同一时间只能从其中一项获益。",
+				"每种属性都为此特性提供了一种不同的诠释。例如，感知让你得以预判攻击并提升对周遭环境的整体觉察；体质通过增强你的强韧程度来抵御伤害；而魅力使你的存在对他人变得切实可感，令对方在对你动手前思虑再三。"
+			],
+			"foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp"
+		},
+		{
+			"ENG_name": "Ki",
+			"name": "Ki",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 2,
+			"entries": [
+				"从第2级起，你已臻至能够驾驭气的神秘能量的境界，并可借助种种技法以此施展超乎常人的绝技。",
+				{
+					"type": "entries",
+					"ENG_name": "Ki Points",
+					"name": "气点",
+					"page": 3,
+					"entries": [
+						"你对这股能量的掌握以气点数表示。你拥有的气点数等于你的武僧等级 + 你的感知调整值（若该调整值为负则不计）。若你在冥想中完成一次短休，你恢复1 + 你的感知调整值（至少2点）气点；若在冥想中完成一次长休，则恢复全部气点。"
+					]
+				},
+				{
+					"type": "entries",
+					"ENG_name": "Ki Features",
+					"name": "气特性",
+					"page": 3,
+					"entries": [
+						"你的气驱动着称为{@filter 气特性|optionalfeatures|feature type=DZC:KF}的种种技法，每一项都详述于本职业的\"气特性\"部分。你已知的气特性数量如武僧职业表\"气特性\"栏所示。",
+						"若某项气特性有前置条件，你必须满足它们才能习得。你可以在满足前置条件的同一时间习得该气特性。等级前置条件指的是你在本职业的等级。",
+						"每当你在本职业提升一个等级，你都可以将一项已知的气特性替换为另一项在该等级可习得的气特性。"
+					]
+				},
+				{
+					"type": "entries",
+					"ENG_name": "Ki Saving Throws",
+					"name": "气豁免",
+					"page": 4,
+					"entries": [
+						"你的部分气特性要求目标进行豁免检定以抵抗其效果。该豁免检定DC计算如下：",
+						{
+							"type": "abilityDc",
+							"name": "Ki",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"ENG_name": "Ki Rules and Restrictions",
+					"name": "气之规则与限制",
+					"page": 4,
+					"entries": [
+						"部分子职特性会以气驱动某项能力，在本节的规则中，它们视同气特性。",
+						"当一项气特性的计算用到你的某项属性调整值时，你可使用的调整值下限为1。",
+						"若你持用非武僧武器或身穿重甲、陷入昏迷或死亡，你便无法使用气，并失去任何已激活的气特性的收益。",
+						"对同一效果，你既不能叠加多项施加豁免检定的气特性，也不能将此类特性与\"弱化打击\"同时施加。",
+						"你的部分气特性允许你施放法术。施放这些法术时，你遵循其施法时间及其他规则，但无须为其提供材料成分。以此方式施放的法术以感知为你的施法属性。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/symbols/runes-star-pentagon-blue.webp"
+		},
+		{
+			"ENG_name": "Unarmored Movement",
+			"name": "无甲移动",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 2,
+			"entries": [
+				"从第2级起，你的移动速度获得加值，如武僧职业表\"无甲移动\"栏所示。若你失去武艺的收益，你也同时失去此收益。"
+			],
+			"foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp"
+		},
+		{
+			"ENG_name": "Monastic Tradition",
+			"name": "修行宗派",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 3,
+			"entries": [
+				"当你到达第3级时，你投身于一种修行宗派，所有宗派均详述于职业描述末尾。你的宗派在第3级以及第6、11、17级授予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 4,
+			"entries": [
+				"当你到达第4级时，你可以将一项自选属性提升2点，或将两项自选属性各提升1点。如常，你无法以此特性将属性提升超过20。",
+				"若你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 5,
+			"entries": [
+				"从第5级起，每当你在自己的回合执行{@action 攻击}动作时，你可以发动两次攻击而非一次。",
+				"当你在本职业到达第15级时，攻击次数增加为三次。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Ki-Empowered Strikes",
+			"name": "真气驻拳",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 5,
+			"entries": [
+				"从第5级起，你的徒手打击与武僧武器攻击视为魔法攻击，你的擒抱与推撞造成的伤害同样视为魔法伤害。"
+			],
+			"foundryImg": "icons/magic/symbols/runes-star-pentagon-orange.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 6,
+			"entries": [
+				"当你到达第6级时，你可以将一项自选属性提升2点，或将两项自选属性各提升1点。如常，你无法以此特性将属性提升超过20。",
+				"若你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Monastic Tradition feature",
+			"name": "宗派特性",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 6,
+			"entries": [
+				"在第6级，你获得一项由你的修行宗派授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Meditation improvement",
+			"name": "冥想增效",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 7,
+			"entries": [
+				"在第7级，你冥想时不再陷入昏迷，并能如常视物与听见声音。"
+			],
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 8,
+			"entries": [
+				"当你到达第8级时，你可以将一项自选属性提升2点，或将两项自选属性各提升1点。如常，你无法以此特性将属性提升超过20。",
+				"若你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Martial Arts improvement",
+			"name": "武艺增效",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 9,
+			"entries": [
+				"在第9级，你再习得一项自选的{@filter 武艺特性|optionalfeatures|feature type=DZC:MA}，可来自任意风格。"
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 10,
+			"entries": [
+				"当你到达第10级时，你可以将一项自选属性提升2点，或将两项自选属性各提升1点。如常，你无法以此特性将属性提升超过20。",
+				"若你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Monastic Tradition feature",
+			"name": "宗派特性",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 11,
+			"entries": [
+				"在第11级，你获得一项由你的修行宗派授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 12,
+			"entries": [
+				"当你到达第12级时，你可以将一项自选属性提升2点，或将两项自选属性各提升1点。如常，你无法以此特性将属性提升超过20。",
+				"若你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Timeless Body",
+			"name": "不朽身",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 13,
+			"entries": [
+				"在第13级，你的气滋养着你，使你不受老龄的衰弱之苦，也无法被魔法催老。不过，你仍会寿终而亡。",
+				"此外，若你以不间断的冥想度过一整天，你可以无视该天的饮食需求。你这么做次数等于你的感知调整值，之后你必须摄入身体所需的饮食，以免承受力竭。"
+			],
+			"foundryImg": "icons/magic/unholy/orb-swirling-teal.webp"
+		},
+		{
+			"ENG_name": "Unrelenting Soul",
+			"name": "不屈之魂",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 14,
+			"entries": [
+				"从第14级起，当你先攻检定掷骰且已无气点时，你恢复2点气。在战斗中，除非你处于昏迷，否则在你的每个回合开始时，你还要恢复1点气。"
+			],
+			"foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp"
+		},
+		{
+			"ENG_name": "Extra Attack (2)",
+			"name": "额外攻击（2）",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 15,
+			"entries": [
+				"在第15级，每当你在自己的回合执行{@action 攻击}动作时，你可以发动三次攻击。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 16,
+			"entries": [
+				"当你到达第16级时，你可以将一项自选属性提升2点，或将两项自选属性各提升1点。如常，你无法以此特性将属性提升超过20。",
+				"若你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Monastic Tradition feature",
+			"name": "宗派特性",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 17,
+			"entries": [
+				"在第17级，你获得一项由你的修行宗派授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Martial Arts improvement",
+			"name": "武艺增效",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 18,
+			"entries": [
+				"在第18级，你再习得一项自选的{@filter 武艺特性|optionalfeatures|feature type=DZC:MA}，可来自任意风格。"
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp"
+		},
+		{
+			"ENG_name": "Quickened Recovery",
+			"name": "加速恢复",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 19,
+			"entries": [
+				"在第19级，你得以稍作喘息并几乎立即恢复。在你的回合开始时，你可以选择放弃你的回合与反应来恢复元气。若直到你的下个回合开始前，你未受任何伤害且未在任何豁免检定中失败，你获得一次短休的收益，并恢复至多10点已消耗的气点。",
+				"一旦使用了此特性，你必须完成一次长休后才能再次使用。"
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 20,
+			"entries": [
+				"当你到达第20级时，你可以将一项自选属性提升2点，或将两项自选属性各提升1点。如常，你无法以此特性将属性提升超过20。",
+				"若你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Perfect Self",
+			"name": "超凡入圣",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 20,
+			"entries": [
+				"在第20级，你的技法已臻化境，再不会流于平庸。从以下掷骰类型中选择一种：豁免检定、运动检定、徒手打击的攻击检定，或武僧武器的攻击检定。当你进行所选类型的掷骰时，违背你意愿的d20结果不会低于10。",
+				"此外，每当你完成一次长休，你可以将一项已知的气特性替换为另一项不同的气特性。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-blue.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Martial Arts",
+			"name": "武艺",
+			"source": "DZC:ANA:M",
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 1,
+			"subEntities": {
+				"item": [
+					{
+						"ENG_name": "Unarmed Strike (Monk)",
+						"name": "徒手打击（武僧）",
+						"source": "DZC:ANA:M",
+						"page": 1,
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1d(4 + ceil((@classes.monk-levels.levels + 2) / 6) * 2) + @abilities.str.mod",
+									"bludgeoning"
+								]
+							],
+							"ability": "",
+							"properties": [
+								"fin",
+								"lgt"
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Unarmored Defense",
+			"name": "无甲防御",
+			"source": "DZC:ANA:M",
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 1,
+			"effects": [
+				{
+					"ENG_name": "Unarmored Defense (Wisdom)",
+					"name": "无甲防御（感知）",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "CUSTOM",
+							"value": "10+@abilities.dex.mod+@abilities.wis.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ki",
+			"source": "DZC:ANA:M",
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 2,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "@classes.monk-rework.levels + @abilities.wis.mod"
+			}
+		},
+		{
+			"ENG_name": "Unarmored Movement",
+			"name": "无甲移动",
+			"source": "DZC:ANA:M",
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"level": 2,
+			"effects": [
+				{
+					"ENG_name": "Unarmored Movement",
+					"name": "无甲移动",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "+ (sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+						},
+						{
+							"key": "system.attributes.movement.burrow",
+							"mode": "ADD",
+							"value": "+ (sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+						},
+						{
+							"key": "system.attributes.movement.climb",
+							"mode": "ADD",
+							"value": "+ (sign(@attributes.movement.climb) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+						},
+						{
+							"key": "system.attributes.movement.fly",
+							"mode": "ADD",
+							"value": "+ (sign(@attributes.movement.fly) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+						},
+						{
+							"key": "system.attributes.movement.swim",
+							"mode": "ADD",
+							"value": "+ (sign(@attributes.movement.swim) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Elemental Arts",
+			"name": "元素武艺",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "元素",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"每种元素都归属于一门学问，合称{@filter 元素武艺|optionalfeatures|feature type=DZC:EA}。每门元素武艺都有自己的一套能力，体现为本子职特性中的选项。每当你从本子职获得一项特性时，你便习得其中一个选项，各选项对应一门元素武艺（{@filter 气|optionalfeatures|feature type=DZC:EA:A}、{@filter 土|optionalfeatures|feature type=DZC:EA:E}、{@filter 火|optionalfeatures|feature type=DZC:EA:F}与{@filter 水|optionalfeatures|feature type=DZC:EA:W}）。",
+				"这些武艺的另一特性是各自关联着特定伤害类型，如\"元素武艺伤害\"表所示。每当本子职的某项特性提到你的元素武艺的伤害时，指的就是表中所列类型。",
+				{
+					"type": "table",
+					"caption": "元素武艺伤害",
+					"colLabels": [
+						"元素武艺",
+						"法术的最大气点数"
+					],
+					"colStyles": [
+						"col-5 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"气",
+							"雷鸣"
+						],
+						[
+							"土",
+							"钝击、穿刺、挥砍"
+						],
+						[
+							"火",
+							"火"
+						],
+						[
+							"水",
+							"寒冷"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/nature/beam-hand-leaves-green.webp"
+		},
+		{
+			"ENG_name": "Elemental Manifestation",
+			"name": "元素显化",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "元素",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你学会将元素能量塑造成不同效果。每回合一次，你可以消耗1点气，以一项你已知的{@filter 元素显化|optionalfeature|feature type=DZC:EA:EM}选项替换攻击动作中的一次攻击。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "风爆|DZC:ANA:M",
+							"ENG_name": "Wind Blast (Air Art)",
+							"name": "风爆（气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "巨石投掷|DZC:ANA:M",
+							"ENG_name": "Stone Boulder (Earth Art)",
+							"name": "巨石投掷（土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "烈焰爆发|DZC:ANA:M",
+							"ENG_name": "Flaming Blast (Fire Art)",
+							"name": "烈焰爆发（火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "水旋涡|DZC:ANA:M",
+							"ENG_name": "Water Swirl (Water Art)",
+							"name": "水旋涡（水武艺）"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/earth/projectile-stone-boulder-brown.webp"
+		},
+		{
+			"ENG_name": "Elemental Strike",
+			"name": "元素打击",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "元素",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在你于第3级选择此宗派时，你学会从攻击中释放元素能量。每回合一次，当你以武器攻击命中目标时，你可以消耗1点气使用一项你已知的{@filter 元素打击|optionalfeature|feature type=DZC:EA:ES}选项，额外造成等于你武艺骰一次掷值的伤害，伤害类型从该选项关联武艺的伤害类型中选择。每个选项都带有可随之一并施加的额外效果。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "雷鸣打击|DZC:ANA:M",
+							"ENG_name": "Thunderous Strike (Air Art)",
+							"name": "雷鸣打击（气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "岩石打击|DZC:ANA:M",
+							"ENG_name": "Rocky Strike (Earth Art)",
+							"name": "岩石打击（土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "熔岩打击|DZC:ANA:M",
+							"ENG_name": "Igneous Strike (Fire Art)",
+							"name": "熔岩打击（火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "冰寒打击|DZC:ANA:M",
+							"ENG_name": "Gelid Strike (Water Art)",
+							"name": "冰寒打击（水武艺）"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp"
+		},
+		{
+			"ENG_name": "Way of the Elements",
+			"name": "元素宗",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "元素",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"此宗派教导你以种种提升战斗造诣的方式驾驭四元素能量。折服自然之力，向敌人降下灾害，或以此突破血肉之躯的凡人极限。此宗派的一些门人专精单一元素，另一些则探索不同元素的道路，还有少数人能将四元素交织为一。",
+				"每种元素往往都关联着个人性格或理念的一面。气关联着灵动、平和与从不同角度解决问题；土关联着坚韧、稳固与固执；火关联着愤怒、热忱与正面交锋；水关联着悲伤、仁慈与随遇而安。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素武艺|武僧|DZC:ANA:M|元素|DZC:ANA:M|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素打击|武僧|DZC:ANA:M|元素|DZC:ANA:M|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素显化|武僧|DZC:ANA:M|元素|DZC:ANA:M|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Primal Stances",
+			"name": "原始姿态",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "元素",
+			"subclassSource": "DZC:ANA:M",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你学会将元素能量灌注己身。以一个附赠动作，你可以消耗2点气进入一项你已知的{@filter 原始姿态|optionalfeature|feature type=DZC:EA:PS}选项，持续1分钟。持续时间内，你获得所选选项的收益。若你被打至昏迷、以附赠动作主动结束姿态，或再次使用此特性，你的原始姿态提前结束。",
+				"或者，你可以从你先前的某项特性中额外习得一个选项。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "疾风姿态|DZC:ANA:M",
+							"ENG_name": "Wind Stance (Air Art)",
+							"name": "疾风姿态（气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "山岳姿态|DZC:ANA:M",
+							"ENG_name": "Mountain Stance (Earth Art)",
+							"name": "山岳姿态（土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "烈焰姿态|DZC:ANA:M",
+							"ENG_name": "Flame Stance (Fire Art)",
+							"name": "烈焰姿态（火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "江河姿态|DZC:ANA:M",
+							"ENG_name": "River Stance (Water Art)",
+							"name": "江河姿态（水武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "风爆|DZC:ANA:M",
+							"ENG_name": "Wind Blast (Air Art)",
+							"name": "风爆（气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "巨石投掷|DZC:ANA:M",
+							"ENG_name": "Stone Boulder (Earth Art)",
+							"name": "巨石投掷（土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "烈焰爆发|DZC:ANA:M",
+							"ENG_name": "Flaming Blast (Fire Art)",
+							"name": "烈焰爆发（火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "水旋涡|DZC:ANA:M",
+							"ENG_name": "Water Swirl (Water Art)",
+							"name": "水旋涡（水武艺）"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/water/elemental-water.webp"
+		},
+		{
+			"ENG_name": "Step Shift",
+			"name": "步法转换",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "元素",
+			"subclassSource": "DZC:ANA:M",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在第11级，你学会与元素融为一体地移动。从{@filter 步法转换|optionalfeature|feature type=DZC:EA:SS}中选择一项",
+				"或者，你可以从你先前的某项特性中额外习得一个选项。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "凌空浮游|DZC:ANA:M",
+							"ENG_name": "Aerial Lift (Air Art)",
+							"name": "凌空浮游（气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "踏岩而行|DZC:ANA:M",
+							"ENG_name": "Rock Walk (Earth Art)",
+							"name": "踏岩而行（土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "喷射突进|DZC:ANA:M",
+							"ENG_name": "Jet Burst (Fire Art)",
+							"name": "喷射突进（火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "水下适应|DZC:ANA:M",
+							"ENG_name": "Underwater Adaptations (Water Art)",
+							"name": "水下适应（水武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "疾风姿态|DZC:ANA:M",
+							"ENG_name": "Wind Stance (Air Art)",
+							"name": "疾风姿态（气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "山岳姿态|DZC:ANA:M",
+							"ENG_name": "Mountain Stance (Earth Art)",
+							"name": "山岳姿态（土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "烈焰姿态|DZC:ANA:M",
+							"ENG_name": "Flame Stance (Fire Art)",
+							"name": "烈焰姿态（火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "江河姿态|DZC:ANA:M",
+							"ENG_name": "River Stance (Water Art)",
+							"name": "江河姿态（水武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "风爆|DZC:ANA:M",
+							"ENG_name": "Wind Blast (Air Art)",
+							"name": "风爆（气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "巨石投掷|DZC:ANA:M",
+							"ENG_name": "Stone Boulder (Earth Art)",
+							"name": "巨石投掷（土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "烈焰爆发|DZC:ANA:M",
+							"ENG_name": "Flaming Blast (Fire Art)",
+							"name": "烈焰爆发（火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "水旋涡|DZC:ANA:M",
+							"ENG_name": "Water Swirl (Water Art)",
+							"name": "水旋涡（水武艺）"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/abilities/wings-birdlike-blue.webp"
+		},
+		{
+			"ENG_name": "Elemental Mastery",
+			"name": "元素精通",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "元素",
+			"subclassSource": "DZC:ANA:M",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在第17级，你已将原始武艺修至圆满，学会以特殊方式塑造它们。你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"每回合一次，当你以武器攻击命中目标时，你可以额外造成等于你武艺骰一次掷值的伤害，伤害类型从你已知的某门元素武艺的伤害类型中选择。",
+						"你获得一项抗性，对应你已知的某门元素武艺的某种伤害类型。若你在单一元素下拥有四门武艺，你将无视对该伤害的抗性。"
+					]
+				},
+				"你还获得以下{@filter 元素精通|optionalfeatures|feature type=DZC:EA:EMa}选项中自选的一项。你必须已掌握括号中所示数量的元素武艺才能选取它。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "御气宗师|DZC:ANA:M",
+							"ENG_name": "Air Master (Four Air Arts)",
+							"name": "御气宗师（四门气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "御土宗师|DZC:ANA:M",
+							"ENG_name": "Earth Master (Four Earth Arts)",
+							"name": "御土宗师（四门土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "御火宗师|DZC:ANA:M",
+							"ENG_name": "Fire Master (Four Fire Arts)",
+							"name": "御火宗师（四门火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "御水宗师|DZC:ANA:M",
+							"ENG_name": "Water Master (Four Water Arts)",
+							"name": "御水宗师（四门水武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "雷电达人|DZC:ANA:M",
+							"ENG_name": "Lightning Adept (Two or more Air Arts)",
+							"name": "雷电达人（两门或更多气武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "酸蚀达人|DZC:ANA:M",
+							"ENG_name": "Acid Adept (Two or more Earth Arts)",
+							"name": "酸蚀达人（两门或更多土武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "光耀达人|DZC:ANA:M",
+							"ENG_name": "Light Adept (Two or more Fire Arts)",
+							"name": "光耀达人（两门或更多火武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "医疗达人|DZC:ANA:M",
+							"ENG_name": "Heal Adept (Two or more Water Arts)",
+							"name": "医疗达人（两门或更多水武艺）"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "自然之器|DZC:ANA:M",
+							"ENG_name": "Nature's Vessel (One Art in each Elemental)",
+							"name": "自然之器（每种元素各一门武艺）"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/nature/explosion-flame-blue.webp"
+		},
+		{
+			"ENG_name": "Ki Specialist",
+			"name": "气学专精",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "内力",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"随着灵性能量的解放，你运用气之能力时所受的束缚更少。从第3级起，选择两项你已知且没有等级限制的气特性，使其成为你的专精气特性。在你的每个回合开始前一次，你可以使用一项专精气特性而无须消耗气点。",
+				"通过冥想4小时，或当你在本职业提升一个等级时，你可以将一项专精气特性替换为另一项受相同限制的特性。"
+			],
+			"foundryImg": "icons/magic/light/hand-sparks-glow-yellow.webp"
+		},
+		{
+			"ENG_name": "Purity of Body",
+			"name": "百病不侵",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "内力",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，流转于你体内的气使你对疾病和毒素免疫。"
+			],
+			"foundryImg": "icons/magic/light/explosion-star-blue.webp"
+		},
+		{
+			"ENG_name": "Way of the Inner Strength",
+			"name": "内力宗",
+			"source": "DZC:ANA:M",
+			"page": 4,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "内力",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"内力宗的武僧致力于培育气的真正潜能。他们走上勤修冥想与自我发现之路，探寻深藏于己身之中的奥秘，而非身外宇宙的奥秘。",
+				"此宗派的修行者多半会长期与世隔绝，隔绝尘世感官以擦亮灵性之眼。能忍受这段旅程者寥寥无几，而能证得真正觉悟之境的武僧更是少之又少。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "气学专精|武僧|DZC:ANA:M|内力|DZC:ANA:M|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "百病不侵|武僧|DZC:ANA:M|内力|DZC:ANA:M|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Wholeness of Body",
+			"name": "混元体",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "内力",
+			"subclassSource": "DZC:ANA:M",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，每当你以冥想完成一次短休或长休并消耗至少一枚生命骰为自己治疗时，你额外恢复等于三倍你武僧等级的生命值。"
+			],
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp"
+		},
+		{
+			"ENG_name": "Blank Mind",
+			"name": "空明心境",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "内力",
+			"subclassSource": "DZC:ANA:M",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在第11级，你能达到绝对专注之境，通过不间断的冥想，在1分钟内完成短休，或1小时内完成长休。一旦你完成了上述任一项，24小时内不能再次如此做。"
+			],
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp"
+		},
+		{
+			"ENG_name": "Enlightenment",
+			"name": "开悟",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "内力",
+			"subclassSource": "DZC:ANA:M",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"通过深入探求内在，你的灵魂已绽放出最大潜能。在第17级，你现在可以将一项带第5级限制的气特性和一项带第9级限制的气特性加入你的专精气特性。"
+			],
+			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp"
+		},
+		{
+			"ENG_name": "Shadow Arts",
+			"name": "暗影技艺",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "幽影",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"凭借你的训练，你能够复现某些法术。在第3级，你习得{@spell 传讯术}和{@spell 次级幻象}戏法（若你尚未习得它们）。此外，你可以消耗1点气施放{@spell 云雾术}、{@spell 无声幻影}或{@spell 跳跃术}，也可以消耗2点气施放{@spell 黑暗术}、{@spell 黑暗视觉}、{@spell 行动无踪}或{@spell 沉默术}。",
+				"当你以此方式施放{@spell 无声幻影}时，只能用它创造出你自己的影像；以此方式施放的{@spell 跳跃术}也只能以你自身为目标。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp"
+		},
+		{
+			"ENG_name": "Way of the Shadows",
+			"name": "暗影宗",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "幽影",
+			"subclassSource": "DZC:ANA:M",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"暗影宗的武僧遵循一种推崇潜行与诡道的传统。这些武僧或许会被称作忍者或暗影舞者，他们充当间谍与刺客。",
+				"有时，忍者修道院的成员彼此是亲属，组成一个立誓对技艺与任务保密的氏族。另一些修道院则更像是盗贼公会，向贵族、豪商或任何付得起价钱之人出卖服务。",
+				"无论手段如何，这些修道院的首脑都要求弟子绝对服从、行事不择手段、使命必达。否则，他们会毫不迟疑地施以严惩。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "暗影技艺|武僧|DZC:ANA:M|幽影|DZC:ANA:M|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadow Step",
+			"name": "暗影步",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "幽影",
+			"subclassSource": "DZC:ANA:M",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你获得从一道暗影踏入另一道暗影的能力。当你处于微光或黑暗中时，你可以以一个附赠动作传送至多60尺，到达一处你能看见且同样处于微光或黑暗中的未被占据的空间。随后，你在该回合进行的第一次攻击检定具有优势。"
+			],
+			"foundryImg": "icons/magic/control/debuff-energy-hold-pink.webp"
+		},
+		{
+			"ENG_name": "Cloak of Shadows",
+			"name": "幽影斗篷",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "幽影",
+			"subclassSource": "DZC:ANA:M",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在第11级，你学会与暗影融为一体。你可以在使用暗影步时消耗2点气，使自己{@condition 隐形}。你保持{@condition 隐形}，直到你进行攻击、施放法术，或进入明亮光线的区域。"
+			],
+			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp"
+		},
+		{
+			"ENG_name": "Opportunist",
+			"name": "灵机一斩",
+			"source": "DZC:ANA:M",
+			"page": 5,
+			"className": "武僧",
+			"classSource": "DZC:ANA:M",
+			"subclassShortName": "幽影",
+			"subclassSource": "DZC:ANA:M",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在第17级，你能利用生物被攻击命中时的片刻失神。每当距你5尺内的一生物被你之外的其他生物的攻击命中时，你可以使用你的反应对该生物发动一次攻击。"
+			],
+			"foundryImg": "icons/magic/light/projectile-bolts-salvo-yellow.webp"
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Acid Adept",
+			"name": "酸蚀达人",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"两门或更多土武艺"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以在执行{@action 回避}动作时消耗1点气，以强酸护体。直到你的下个回合开始前，以近战武器攻击命中你的生物受到强酸伤害，数值等于5 + 你的感知调整值。"
+			],
+			"foundryImg": "icons/magic/acid/dissolve-drip-droplet-smoke.webp"
+		},
+		{
+			"ENG_name": "Aerial Lift",
+			"name": "凌空浮游",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:SS"
+			],
+			"entries": [
+				"轻柔的气流带你脱离险境。当你执行{@action 撤离}或{@action 回避}动作时，直到你的下个回合开始前，你对抗你能看见的攻击与效果的AC和敏捷豁免检定获得加值，数值等于你感知调整值的一半（向上取整）。当你的速度为0时，你无法从此姿态获益。"
+			],
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp"
+		},
+		{
+			"ENG_name": "After Image",
+			"name": "残影",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"镜影术"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"你可以消耗2点气施放{@spell 镜影术}。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Afterblast",
+			"name": "余爆",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"三项或更多徒手式特性"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"当你对生物的徒手打击攻击检定失手时，你可以消耗2点气，对目标造成等于你力量调整值的伤害。该伤害类型与你的徒手打击相同。对于在攻击检定之前就已附加于该攻击上的任何效果，此次攻击仍视同命中。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Agile Feet",
+			"name": "灵巧双足",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你获得在垂直表面上、液体上以及无法承载你重量的表面上移动的能力，且在你的回合中移动期间不会坠落。",
+				"每当你停止移动时，你可以消耗1点气，以免从垂直表面跌落、沉入液体或从无法承载你重量的表面坠落。此收益持续到你的下个回合结束，或直到你{@condition 失能}。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Air Master",
+			"name": "御气宗师",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"四门气武艺"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你使用雷鸣打击或风爆时，你可以为它追加消耗至多3点气，每消耗1点气，其伤害提高你武艺骰的一次掷值。"
+			],
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp"
+		},
+		{
+			"ENG_name": "Astral Sense",
+			"name": "星界感应",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"真知术"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 6
+			},
+			"entries": [
+				"你可以消耗6点气对自己施放{@spell 真知术}。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Blinding Speed",
+			"name": "炫目神速",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"\"疾步如风\"气特性"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你在自己的回合执行{@action 疾走}或{@action 撤离}动作时，你可以消耗1点气，使你的移动速度在本回合内翻倍。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Blocking Stance",
+			"name": "格挡姿态",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"武器式特性：回身格挡"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用{@optfeature 回身格挡|DZC:ANA:M}时，你可以消耗1点气，使其收益维持到对抗接下来两次攻击，而非一次。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Body Training",
+			"name": "体魄锻炼",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你进行运动、特技或隐匿检定时，你可以消耗1点气，将你武艺骰的一次掷值加进该检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make an Athletics, Acrobatics, or Stealth check",
+				"activation.cost": 1,
+				"actionType": "other",
+				"formula": [
+					"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Break Bindings",
+			"name": "挣脱束缚",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"在你的回合开始时，你可以消耗1点气，结束一项使你陷入{@condition 受擒}或{@condition 束缚}的效果。此时，你的移动速度减半，直到你的回合结束。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Chain Attack",
+			"name": "连锁攻击",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:MS"
+			],
+			"entries": [
+				"当你在自己的回合执行攻击动作时，你可以用附赠动作进行一次近战武器攻击，或尝试一次擒抱或推撞检定。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Combat Awareness",
+			"name": "战斗感知",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你进行先攻检定时，你可以消耗1点气，将你武艺骰的一次掷值加进该检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you roll initiative",
+				"activation.cost": 1,
+				"actionType": "other",
+				"formula": [
+					"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Concussive Strike",
+			"name": "震荡打击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能以强力一击令生物晕头转向。当你以近战武器攻击命中另一生物时，你可以消耗1点气施以一次震击。该生物的技能检定与攻击检定承受-2减值，直到你的下个回合开始。",
+				"同一生物同时只能受此气特性影响一次。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Corrected Attack",
+			"name": "修正攻击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你进行一次带劣势的攻击检定时，你可以消耗1点气，使该攻击不带劣势进行。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Deadly Precision",
+			"name": "致命精准",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"在进行一次攻击前，你可以消耗1点气，将你武艺骰的一次掷值加进该攻击检定或伤害掷骰。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"actionType": "other",
+				"formula": [
+					"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Deflect Magical Attacks",
+			"name": "拨挡魔法攻击",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"\"拨挡物理攻击\"气特性"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"当你被法术攻击命中时，你可以追加消耗1点气，以{@optfeature 拨挡物理攻击|DZC:ANA:M}应对该攻击。此时，适用以下变动：",
+				{
+					"type": "list",
+					"items": [
+						"你以感知而非敏捷来减少所受伤害。",
+						"对伤害元素体型的限制照常适用。",
+						"只要你满足条件，你可以如接住武器或弹药般接住魔法投射物。",
+						"若你以刚接住的魔法投射物使用回击，该攻击变为远程法术攻击，射程60尺。你视同具有其熟练项，并将你的感知调整值加进其攻击检定与伤害掷骰。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When you are hit by a weapon attack",
+				"activation.cost": 1,
+				"actionType": "healing",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod + @classes.monk-rework.levels",
+						"healing"
+					]
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Deflect Physical Attacks",
+			"name": "拨挡物理攻击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你被武器攻击命中时，只要该武器、弹药或其他伤害元素至少比你小一级，你就可以消耗1点气，用反应拨挡或截停该攻击。此时，你从该攻击受到的伤害减少，数值等于你武艺骰的一次掷值 + 你的敏捷调整值 + 你的武僧等级。",
+				"若你有一只空手，且你已将伤害减至0，你可以用它接住该武器或弹药。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When you are hit by a weapon attack",
+				"activation.cost": 1,
+				"actionType": "healing",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.dex.mod + @classes.monk-rework.levels",
+						"healing"
+					]
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Delaying Strike",
+			"name": "迟滞打击",
+			"source": "DZC:ANA:M",
+			"page": 11,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"一记有效打击便能夺走敌人的喘息之机。当你以近战武器攻击命中另一生物时，你可以消耗1点气尝试一次迟滞打击。目标必须通过一次感知豁免检定，否则直到你的下个回合开始前无法进行反应。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Diamond Soul",
+			"name": "金刚魂",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"当你进行豁免检定时，你可以消耗2点气，将你的感知调整值加进该检定，并将你从触发效果受到的伤害（若有）减半。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Double Parry",
+			"name": "双重招架",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"武器式特性：缠枝"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用缠枝时，你可以消耗1点气，在你的下个回合开始前无须反应再额外使用一次。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Dynamic Hold",
+			"name": "动态压制",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:GS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"被你擒抱的生物在为摆脱你的擒抱或推撞你而进行的技能检定上承受劣势。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Ear of the Ancients",
+			"name": "先祖之耳",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"通晓语言"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以消耗1点气施放{@spell 通晓语言}。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Earth Master",
+			"name": "御土宗师",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"四门土武艺"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你使用岩石打击或巨石投掷时，你可以为它追加消耗至多3点气，每消耗1点气，其伤害提高你武艺骰的一次掷值。"
+			],
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp"
+		},
+		{
+			"ENG_name": "Embracing Branch",
+			"name": "缠枝",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:WS"
+			],
+			"entries": [
+				"当一只你能看见的生物攻击距你5尺内的目标时，你可以使用你的反应，以你持用的一件武僧武器横亘其间，使该攻击检定承受劣势。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Empty Body",
+			"name": "空灵体",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"星界投影"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 8
+			},
+			"entries": [
+				"你可以消耗8点气对自己施放{@spell 星界投影}。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Extension of Self",
+			"name": "自我延展",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你在自己的回合进行第一次攻击时，你可以消耗1点气，直到你的回合结束延长你攻击的距离。持续时间内，你的近战武器攻击触及增加5尺，且远程武器攻击在长距离攻击时不承受劣势。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Extra Speed",
+			"name": "额外速度",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"在你的回合开始时，你可以消耗1点气，使{@optfeature 无甲移动|DZC:ANA:M}特性给予的移动速度加值翻倍，持续10分钟，且持续时间内你无视困难地形。若你{@condition 失能}，此收益提前结束。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Fake Strike",
+			"name": "佯攻",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:US"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每回合一次，若你以徒手打击进行的攻击检定失手，你可以重骰该检定。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Fire Master",
+			"name": "御火宗师",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"四门火武艺"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你使用熔岩打击或烈焰爆发时，你可以为它追加消耗至多3点气，每消耗1点气，其伤害提高你武艺骰的一次掷值。"
+			],
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		},
+		{
+			"ENG_name": "Flame Stance",
+			"name": "烈焰姿态",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:PS"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"你的四肢被烈焰缠绕。你的近战武器攻击检定以及擒抱和推撞检定获得加值，数值等于你感知调整值的一半（向上取整）。当你以近战武器攻击命中生物，或成功擒抱、推撞生物时，该生物受到火焰伤害，数值等于该加值。"
+			],
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		},
+		{
+			"ENG_name": "Flaming Blast",
+			"name": "烈焰爆发",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:EM"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你朝30尺内一处你能看见的选定地点射出火焰弹。火焰弹到达目的地或撞上固体表面时爆炸。爆点5尺内的每只生物必须进行一次敏捷豁免检定，检定失败者受到火焰伤害，数值等于你武艺骰的两次掷值。",
+				"爆炸也会伤害该区域内未被穿戴或携带的物体。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"2d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"fire"
+					]
+				],
+				"save.ability": "dex",
+				"save.scaling": "wis"
+			},
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		},
+		{
+			"ENG_name": "Flurry of Blows",
+			"name": "疾风连击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"徒手式特性：徒手精通"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你在自己的回合执行攻击动作时，你可以消耗1点气，以附赠动作进行两次徒手打击。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Footwork",
+			"name": "步法",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当一只生物的攻击没有命中你时，你可以消耗1点气作为反应，向远离该生物的方向移动至多15尺。此移动不会引发借机攻击。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Gelid Strike",
+			"name": "冰寒打击",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:ES"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你的攻击覆上冰水，阻滞敌人的行动。目标的移动速度降低15尺，直到你的下个回合开始。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Once on your turn, when you hit with a weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"cold"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp"
+		},
+		{
+			"ENG_name": "Ground Fighting",
+			"name": "地面缠斗",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:MS"
+			],
+			"entries": [
+				"生物不会因你倒地而在对抗你的攻击检定上具有优势。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Ground Hold",
+			"name": "地面压制",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:GS"
+			],
+			"entries": [
+				"你可以用双腿擒抱生物。为此，你或该生物必须处于倒地状态。若目标倒地，你还必须骑坐在其身上。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Hardened Body",
+			"name": "坚韧之躯",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"\"灵魂护盾\"气特性"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"当你受到伤害时，你可以消耗2点气作为反应，将你从触发效果受到的伤害减半。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Hardened Fists",
+			"name": "坚拳",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"徒手式特性：强力打击"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"以一个附赠动作，你可以消耗1点气，使你的双拳在10分钟内化作破坏性武器。持续时间内，你的徒手打击对物体造成双倍伤害，并无视一定量的钝击、穿刺和挥砍伤害减免，该数值等于你的武僧等级加上你的感知调整值。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Heal Adept",
+			"name": "医疗达人",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"两门或更多水武艺"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"在你在自己的回合执行{@action 协助}动作之后立即，你可以消耗1点气治疗一只你能触及的生物。该生物可以消耗至多等于你感知调整值数量的生命骰来治疗自身。"
+			],
+			"foundryImg": "icons/magic/life/heart-cross-blue.webp"
+		},
+		{
+			"ENG_name": "Healthy Body",
+			"name": "健壮之躯",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"每当你完成一次短休或长休，你可以消耗2点气，使你的{@condition 力竭}等级降低一级。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Heavy Strike",
+			"name": "沉重打击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能给生物以沉重一击，令其被自身重量压垮。当你以近战武器攻击命中另一生物时，你可以消耗1点气尝试一次沉重打击。目标必须通过一次敏捷豁免检定，否则摔倒在地。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Heavy Weight",
+			"name": "重压",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"三项或更多擒抱式特性"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"当你成功擒抱或推撞生物时，你可以消耗2点气，额外造成等于你武艺骰两次掷值的伤害，且生物每与你相差一级体型，再加一次掷值。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Igneous Strike",
+			"name": "熔岩打击",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:ES"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"一簇短暂的烈焰自你的攻击中迸出，灼热得足以烧穿血肉。你将你的感知调整值加进此打击的额外伤害中。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Once on your turn, when you hit with a weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod",
+						"fire"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		},
+		{
+			"ENG_name": "Jet Burst",
+			"name": "喷射突进",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:SS"
+			],
+			"entries": [
+				"你的火焰能将你推向新的高度。每回合一次，你可以朝自选方向沿直线移动至多30尺。若你被{@condition 受擒}或{@condition 束缚}，你可以改为放弃此移动，尝试挣脱造成该状态的效果或生物，前提是其挣脱需要通过力量检定或豁免检定。"
+			],
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		},
+		{
+			"ENG_name": "Keep the Distance",
+			"name": "保持距离",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"武器式特性：武僧武器精通"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"若一只生物试图进入你的触及范围，你可以消耗1点气，用一件武器以反应对它进行一次攻击。若该攻击命中，则不造成伤害，而是使该生物的移动速度降低15尺，直到其回合结束。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When a creature attempts to enter your reach",
+				"activation.cost": 1,
+				"actionType": "mwak"
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Ki Coat",
+			"name": "气护罩",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"法师护甲"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以消耗1点气对自己施放{@spell 法师护甲}。以此方式施放时，该法术持续1小时，且你可以用感知而非敏捷来计算你的AC。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Legendary Lifter",
+			"name": "传奇力士",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"擒抱式特性：动态压制"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"以一个附赠动作，你可以消耗1点气，在10分钟内获得擒抱和推撞至多比你大三级生物的能力。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Light Adept",
+			"name": "光耀达人",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"两门或更多火武艺"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以在执行攻击动作时消耗1点气，使双臂焕发光辉。直到你的回合结束，你的近战武器攻击额外造成光耀伤害，数值等于你的感知调整值。"
+			],
+			"foundryImg": "icons/magic/light/beam-rays-orange-large.webp"
+		},
+		{
+			"ENG_name": "Light Reflection",
+			"name": "光线折射",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 4
+			},
+			"entries": [
+				"你能扭曲周围光线来隐匿身形。以一个动作，你可以消耗4点气，使自己{@condition 隐形}1分钟。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Lightning Adept",
+			"name": "雷电达人",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"两门或更多气武艺"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以在执行{@action 疾走}或{@action 撤离}动作时消耗1点气，使周身充满电荷。直到你的回合结束，每当你第一次移动到距某生物5尺内，该生物受到闪电伤害，数值等于5 + 你的感知调整值。"
+			],
+			"foundryImg": "icons/magic/lightning/bolt-strike-sparks-blue.webp"
+		},
+		{
+			"ENG_name": "Lock",
+			"name": "锁技",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:GS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"被你擒抱的生物的攻击检定承受减值，减值等于你的力量调整值。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Mental Training",
+			"name": "心灵锻炼",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你进行洞悉、医药或察觉检定时，你可以消耗1点气，将你武艺骰的一次掷值加进该检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make an Insight, Medicine, or Perception check",
+				"activation.cost": 1,
+				"actionType": "other",
+				"formula": [
+					"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Mighty Fists",
+			"name": "强拳",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"徒手式特性：要害打击"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"以一个附赠动作，你可以消耗1点气，使你的徒手打击在10分钟内的攻击检定与伤害掷骰获得+1加值。若你{@condition 失能}，此收益提前结束。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Monk Weapon Mastery",
+			"name": "武僧武器精通",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:WS"
+			],
+			"entries": [
+				"你可以用武艺骰代替武僧武器的常规伤害掷骰。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Mountain Stance",
+			"name": "山岳姿态",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:PS"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"你的肌肤获得岩石般的坚固。你受到的钝击、穿刺和挥砍伤害减少，数值等于你感知调整值的两倍。"
+			],
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp"
+		},
+		{
+			"ENG_name": "Nature's Vessel",
+			"name": "自然之器",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:E",
+				"DZC:EA:F",
+				"DZC:EA:W",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"每种元素各一门武艺"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 3
+			},
+			"entries": [
+				"每当你完成一次长休，你可以将一门已知的元素武艺替换为同元素的另一门武艺。此外，你可以消耗3点气进入你的原始姿态。此时，你同时获得两项你已知的不同姿态选项的收益。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp"
+		},
+		{
+			"ENG_name": "Passive Blockade",
+			"name": "被动格挡",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:WS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你持着一件武僧武器时，在你的下个回合开始前对你进行的下一次攻击承受劣势。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Patient Defense",
+			"name": "坚强防御",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"以一个附赠动作，你可以消耗1点气执行{@action 回避}动作。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Perfect Defense",
+			"name": "完美防御",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"\"坚韧之躯\"气特性"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 5
+			},
+			"entries": [
+				"以一个动作，你可以消耗5点气，使自己在1分钟内对所有伤害具有抗性。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Potent Strike",
+			"name": "强力打击",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:US"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每回合一次，你可以使你以徒手打击进行的一次攻击检定获得优势。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Protective Tree",
+			"name": "守护之树",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"三项或更多武器式特性"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"以一个附赠动作，你可以消耗2点气，持用一件武僧武器进入防御姿态，直到你的下个回合开始。持续时间内，任何你能看见的敌对生物在其回合内第一次试图进入你的触及范围时，其移动速度降低15尺，直到其回合结束。此外，距你5尺内你能看见的任何友方生物（包括你）AC获得+2加值。但持续时间内，你的速度变为0。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Push Back",
+			"name": "推回",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:MS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"若一只生物的攻击没有命中你，你可以用反应尝试推开它。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Pushing Strike",
+			"name": "推击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"有风暴相伴，你能将生物轰至远处。当你以近战武器命中一只至多比你大一级的生物时，你可以消耗1点气尝试一次推击。目标必须通过一次力量豁免检定，否则被推离你至多15尺。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Resistive Force",
+			"name": "抗拒之力",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"每当你进行豁免检定并失败时，你可以消耗2点气重骰该检定，并采用第二次结果。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Restraining Hand",
+			"name": "束缚之手",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"擒抱式特性：地面压制"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你对生物的擒抱检定成功时，你可以消耗1点气锁住该生物。在擒抱持续期间，该生物陷入{@condition 束缚}。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Returning Attack",
+			"name": "回击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"\"拨挡物理攻击\"气特性"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"若你使用了拨挡物理攻击并将伤害减至0，你可以消耗1点气，作为同一反应的一部分进行反击。此时，若触发攻击为近战攻击，你进行一次近战武器攻击；若为远程攻击，你用刚接住的武器或弹药进行一次远程攻击。",
+				"无论你的武器熟练项为何，你进行该远程攻击时都视同具有熟练项，且该投射物在此攻击中视同武僧武器，射程为20/60尺。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Returning Guard",
+			"name": "回身格挡",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:WS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在自己的回合以一件武僧武器进行攻击时，你可以用你手持的一件武僧武器护住自身，防备你的下个回合开始前你能看见的下一次以你为目标的攻击。此时，掷你的武艺骰并将其加到你的AC上以对抗该攻击。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "River Stance",
+			"name": "江河姿态",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:PS"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"水蔓自你的四肢生出。你的近战武器攻击、擒抱与推撞的触及范围增加等于你感知调整值五倍的尺数。此外，当你以近战武器攻击命中生物时，目标的移动速度降低10尺，直到你的下个回合开始。"
+			],
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp"
+		},
+		{
+			"ENG_name": "Rock Walk",
+			"name": "踏岩而行",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:SS"
+			],
+			"entries": [
+				"凭借稳健的立足，你能穿行任何地形。你在固体表面上无视困难地形。你还获得等于你步行速度的攀爬速度。若垂直表面由泥土或岩石构成，你攀爬时无须用手。"
+			],
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp"
+		},
+		{
+			"ENG_name": "Rocky Strike",
+			"name": "岩石打击",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:ES"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"一层厚重的岩石裹上你的攻击，使其沉重得令敌人一时失神。目标在你的下个回合开始前的下一次攻击检定承受劣势。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Once on your turn, when you hit with a weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
+			},
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp"
+		},
+		{
+			"ENG_name": "Set Up",
+			"name": "蓄势",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:MS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在自己的回合执行{@action 疾走}、{@action 撤离}或{@action 回避}动作时，你可以作为同一动作的一部分，进行一次近战武器攻击，或尝试一次擒抱或推撞检定。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Slow Fall",
+			"name": "轻身坠",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你坠落时，你可以消耗1点气作为反应，使你受到的坠落伤害减少等于你武僧等级五倍的数值。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When you fall",
+				"activation.cost": 1,
+				"actionType": "other",
+				"formula": [
+					"5*@classes.monk-rework.levels"
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Spectacular Training",
+			"name": "炫目训练",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你进行威吓、表演或游说检定时，你可以消耗1点气，将你武艺骰的一次掷值加进该检定。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When you make an Intimidation, Performance, or Persuasion check",
+				"activation.cost": 1,
+				"actionType": "other",
+				"formula": [
+					"5*@classes.monk-rework.levels"
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Spiritual Shield",
+			"name": "灵魂护盾",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"武器式特性：武僧武器精通"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每当你完成一次短休或长休，你可以消耗1点气，获得一定数量的临时生命值，数值等于你武艺骰的一次掷值 + 你的感知调整值。这些临时生命值持续1小时。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you finish a short or long rest",
+				"activation.cost": 1,
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod",
+						"temphp"
+					]
+				]
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Step of the Wind",
+			"name": "疾步如风",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"以一个附赠动作，你可以消耗1点气执行{@action 疾走}或{@action 撤离}动作，并使你本回合的跳跃距离翻倍。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Stillness of Mind",
+			"name": "心如止水",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"在你的回合开始时，你可以消耗1点气，结束一项使你陷入{@condition 魅惑}或{@condition 恐慌}的效果。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Stone Boulder",
+			"name": "巨石投掷",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:EM"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你朝30尺内一只你能看见的生物掷出一块中型岩石。该生物必须通过一次力量豁免检定，否则受到钝击伤害（数值等于你武艺骰的一次掷值）并摔倒在地。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"bludgeoning"
+					]
+				],
+				"save.ability": "str",
+				"save.scaling": "wis"
+			},
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp"
+		},
+		{
+			"ENG_name": "Strong Arm",
+			"name": "强臂",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"擒抱式特性：摔跤精通"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当一只生物引发你的借机攻击时，你可以消耗1点气作为反应，尝试擒抱或推撞它。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Stunning Strike",
+			"name": "震慑拳",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能扰乱对手体内气的流转。当你以近战武器攻击命中另一生物时，你可以消耗1点气尝试一次震慑拳。目标必须通过一次体质豁免检定，否则陷入{@condition 震慑}，直到该生物的下个回合结束。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a melee weapon attack",
+				"actionType": "save",
+				"save.ability": "con",
+				"save.scaling": "wis"
+			},
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Taunting Strike",
+			"name": "嘲讽打击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能挑衅生物，使其视你为唯一威胁。当你以近战武器攻击命中另一生物时，你可以消耗1点气尝试一次嘲讽打击。目标必须进行一次感知豁免检定。检定失败者直到你的下个回合开始前，无法以攻击、法术或任何有害能力指定你之外的生物为目标。持续时间内，你以外的其他生物对该生物的攻击检定具有优势。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Third Sense",
+			"name": "第三感官",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"以一个附赠动作，你可以消耗2点气，使自身陷入{@condition 目盲}和{@condition 耳聋}状态。持续时间内，你获得120尺范围的震颤感知。你能以此特殊感官探知的生物和物体，对你而言视同完全可见。你可以在自己的回合以一个附赠动作提前结束此效果。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Thunderous Strike",
+			"name": "雷鸣打击",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:ES"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"一团压缩空气泡自你的攻击中爆开，将敌人轰飞出去。若目标是生物或未固定的物体，且体型至多大你一级，你可以将它推离你至多10尺。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Once on your turn, when you hit with a weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"thunder"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp"
+		},
+		{
+			"ENG_name": "Tongue of the Sun and Moon",
+			"name": "天语通",
+			"source": "DZC:ANA:M",
+			"page": 14,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					},
+					"feature": [
+						"\"先祖之耳\"气特性"
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"巧言术"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 3
+			},
+			"entries": [
+				"你可以消耗3点气施放{@spell 巧言术}。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Tranquility",
+			"name": "宁神境",
+			"source": "DZC:ANA:M",
+			"page": 13,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:D"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"庇护术"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以消耗1点气对自己施放{@spell 庇护术}。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Unarmed Mastery",
+			"name": "徒手精通",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:US"
+			],
+			"entries": [
+				"你可以用武艺骰代替徒手打击的常规伤害掷骰。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Underwater Adaptations",
+			"name": "水下适应",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:SS"
+			],
+			"entries": [
+				"你的身体与海洋融为一体。你获得等于你步行速度的游泳速度，并能在水下正常呼吸。"
+			],
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp"
+		},
+		{
+			"ENG_name": "Vital's Hit",
+			"name": "要害打击",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:US"
+			],
+			"entries": [
+				"在进行一次徒手打击前，你可以让攻击检定承受-5减值。若该攻击命中，你的伤害掷骰获得加值，数值等于你武艺骰的一次掷值 + 你的感知调整值。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Before making an unarmed strike",
+				"activation.cost": 1,
+				"actionType": "mwak",
+				"attack": {
+					"bonus": -5,
+					"flat": false
+				},
+				"damage.parts": [
+					[
+						"2d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.str.mod + @abilities.wis.mod",
+						"bludgeoning"
+					]
+				]
+			},
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		},
+		{
+			"ENG_name": "Water Master",
+			"name": "御水宗师",
+			"source": "DZC:ANA:M",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:EMa"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"四门水武艺"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你使用冰寒打击或水旋涡时，你可以为它追加消耗至多3点气，每消耗1点气，其伤害提高你武艺骰的一次掷值。"
+			],
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp"
+		},
+		{
+			"ENG_name": "Water Swirl",
+			"name": "水旋涡",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:EM"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"一根盘旋的水柱出现在30尺内一处你能看见的地点。以射程内一点为中心、半径10尺、高15尺的圆柱范围内的每只生物必须进行一次力量豁免检定。检定失败的生物受到寒冷伤害（数值等于你武艺骰的一次掷值），并被朝你自选的方向推离5尺。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"cold"
+					]
+				],
+				"save.ability": "con",
+				"save.scaling": "wis"
+			},
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp"
+		},
+		{
+			"ENG_name": "Weakening Strike",
+			"name": "弱化打击",
+			"source": "DZC:ANA:M",
+			"page": 12,
+			"featureType": [
+				"DZC:KF",
+				"DZC:KF:O"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "武僧",
+							"source": "DZC:ANA:M",
+							"visible": true
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能削弱生物对你气效果的抵抗力。当你以近战武器攻击命中生物时，你可以消耗1点气，使其在你下个回合结束前对你所使用之气特性的下一次豁免检定承受减值。该减值等于你的感知调整值。"
+			],
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg"
+		},
+		{
+			"ENG_name": "Wind Blast",
+			"name": "风爆",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:EM"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"一条30尺长、5尺宽的压缩气流自你体内朝自选方向轰出。该区域内的每只生物必须通过一次体质豁免检定，否则受到雷鸣伤害（数值等于你武艺骰的一次掷值），并沿该直线的方向被推离你至多10尺。",
+				"完全处于效果区域内的未固定物体会被此特性的效果自动推离你10尺。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"thunder"
+					]
+				],
+				"save.ability": "con",
+				"save.scaling": "wis"
+			},
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp"
+		},
+		{
+			"ENG_name": "Wind Stance",
+			"name": "疾风姿态",
+			"source": "DZC:ANA:M",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:PS"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"轻柔的气流带你脱离险境。当你执行{@action 撤离}或{@action 回避}动作时，直到你的下个回合开始前，你对抗你能看见的攻击与效果的AC和敏捷豁免检定获得加值，数值等于你感知调整值的一半（向上取整）。当你的速度为0时，你无法从此姿态获益。"
+			],
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp"
+		},
+		{
+			"ENG_name": "Wrestling Mastery",
+			"name": "摔跤精通",
+			"source": "DZC:ANA:M",
+			"page": 3,
+			"featureType": [
+				"DZC:MA",
+				"DZC:MA:GS"
+			],
+			"entries": [
+				"若你的擒抱或推撞检定成功，你可以对目标造成钝击伤害，数值等于你武艺骰的一次掷值 + 你的力量调整值。"
+			],
+			"foundryImg": "modules/plutonium/media/icon/skills.svg"
+		}
+	],
+	"feat": [
+		{
+			"ENG_name": "Martial Arts Beginner",
+			"name": "武艺初学者",
+			"source": "DZC:ANA:M",
+			"page": 15,
+			"entries": [
+				"你已掌握武艺最基础的门道，它们能在战斗中助你一臂之力。",
+				"你从武僧职业中自选一种武艺风格，并习得其中所有没有等级前置要求的特性。你用于此风格的武艺骰为d6。",
+				"每当你提升一个授予属性值提升特性的等级时，你可以将此专长的风格替换为武僧职业中的另一种。"
+			]
+		},
+		{
+			"ENG_name": "Minor Ki Control",
+			"name": "次级驭气",
+			"source": "DZC:ANA:M",
+			"page": 15,
+			"entries": [
+				"通过联结内在自我与周身能量之流，你成功触及了气之力量的表层。",
+				"你从武僧职业中获得两项自选的气特性，它们遵循该特性\"气之规则与限制\"部分所述的限制。你用于这些特性的武艺骰为d6。若你所用的气特性要求目标进行豁免检定以抵抗其效果，该豁免DC等于8 + 你的熟练加值 + 你的感知调整值。若某项气特性带有任何前置要求，只有身为满足这些要求的武僧才能选取它。",
+				"每当你提升一个等级，你可以将此专长的一项气特性替换为武僧职业中的另一项。",
+				"你获得2点可用于气特性的气点（这些气点加到你从其他来源获得的气点之上，但只能用于气特性）。每当你完成一次短休或长休，且在其中至少一半时间里保持不间断冥想，你恢复所有已消耗的气点。"
+			]
+		}
+	],
+	"action": [
+		{
+			"ENG_name": "Convince",
+			"name": "说服",
+			"source": "DZC:ANA:M",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图诱导一只生物按你所愿思考。选择一只你30尺内、能看见或听见你的生物。进行一次魅力（{@skill 游说}）或魅力（{@skill 欺瞒}）检定（自选其一），与目标的感知（{@skill 洞悉}）检定对抗。若你在过去一分钟内对该生物做过任何有害之事，你的检定承受劣势。若你成功，该生物会在合理的程度上倒向你的观点。这也可能使该生物对某些生物转为友善、冷漠或敌对的态度，由你或DM选择。该生物会做什么、如何行事，由你的DM作最终裁决。"
+			]
+		},
+		{
+			"ENG_name": "Disable",
+			"name": "失能",
+			"source": "DZC:ANA:M",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图让一只生物的一种感官短暂失灵，无论是朝它的眼睛扔杂物、在它耳边发出震耳的声响，还是对它的眼睛或耳朵使出下三滥的攻击。选择一只在你触及范围内、体型至多大你一级的生物。你可以针对它的眼睛或耳朵（如果它有的话）。该生物必须通过一次DC 10的敏捷或体质豁免检定（自选其一），否则直到你的下个回合开始前陷入{@condition 目盲}或{@condition 耳聋}（分别对应你针对的是眼睛或耳朵）。"
+			]
+		},
+		{
+			"ENG_name": "Distract",
+			"name": "干扰",
+			"source": "DZC:ANA:M",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你使出浑身解数来干扰一只你能看见的生物。直到你的下个回合开始前，只要该生物距你5尺内且你未{@condition 失能}，你的目标对除你以外的目标发动的攻击检定便承受劣势，其{@skill 察觉}检定也承受劣势。"
+			]
+		},
+		{
+			"ENG_name": "Intimidate",
+			"name": "威吓",
+			"source": "DZC:ANA:M",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图威吓一只生物。选择一只你30尺内、能看见或听见你的生物。进行一次魅力（{@skill 威吓}）检定，与目标的感知（{@skill 洞悉}）检定对抗。若你成功，目标直到你的下个回合开始前对你{@condition 恐慌}。"
+			]
+		},
+		{
+			"ENG_name": "Steal",
+			"name": "窃取",
+			"source": "DZC:ANA:M",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"以一个动作，你试图在不被察觉的情况下拿走一件小型物件，这通常至少需要一只空手。你想窃取的物件可以是未固定、被穿戴或被携带的，但重量不能超过半磅，且不得过于显眼或难以取下（如身穿的衣物或护甲，或被持握的物品）。",
+				"要窃取物件，你必须进行一次敏捷（{@skill 巧手}）检定，与该区域内所有观察者（若它们不在战斗或警戒状态，则使用被动察觉）的感知（{@skill 察觉}）检定对抗，包括你想行窃的对象在内（如果有的话）。观察者检定成功即看见你。若物件未被固定，无论结果如何你都能拿走它。若你在对抗行窃对象的检定中失败，你也无法取得该物件。若行窃对象处于战斗或警戒状态，你对其的检定自动失败。",
+				"若物件受到严密看管（如放在口袋里或已入鞘的武器），你的巧手检定承受减值，通常为-5。"
+			]
+		}
+	]
+}
