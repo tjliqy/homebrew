@@ -1,0 +1,2572 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "dragoon revisited",
+				"abbreviation": "DragR",
+				"full": "龙骑士修订版",
+				"url": "https://drive.google.com/file/d/0Bz74Lu7ft9sycGpYbi02UHk5RmM/view",
+				"version": "1.07",
+				"authors": [
+					"/u/Amellwind",
+					"/u/devikyn"
+				],
+				"convertedBy": [
+					"Celery",
+					"Modnar"
+				],
+				"targetSchema": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1545342498,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "e76e9cd375"
+	},
+	"class": [
+		{
+			"name": "龙骑士",
+			"ENG_name": "Dragoon (revisited)",
+			"source": "dragoon revisited",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"classSpells": [
+				"酸液飞溅",
+				"颤栗之触",
+				"霜噬",
+				"火焰箭",
+				"翠炎剑|scag",
+				"闪电牵引|scag",
+				"次级幻象",
+				"毒气喷涌",
+				"魔法伎俩",
+				"冷冻射线",
+				"电爪",
+				"克敌先击",
+				"吸收元素|scag",
+				"燃烧之手",
+				"繁彩球",
+				"易容术",
+				"龙皮术|dragoon revisited",
+				"地颤|xge",
+				"云雾术",
+				"跳跃术",
+				"大步奔行",
+				"致病射线",
+				"睡眠术",
+				"雷鸣波",
+				"阿迦纳萨喷火术",
+				"变身术",
+				"不灭明焰",
+				"黑暗术",
+				"黑暗视觉",
+				"龙息术|xge",
+				"炽焰法球",
+				"造风术",
+				"隐形术",
+				"马友夫强酸箭",
+				"识破隐形",
+				"暗示术",
+				"粉碎音波",
+				"法术反制",
+				"鹰眼术",
+				"解除魔法",
+				"恐惧术",
+				"火球术",
+				"飞行术",
+				"闪电束",
+				"雪雨暴",
+				"缓慢术",
+				"臭云术",
+				"秘法眼",
+				"枯萎术",
+				"龙鳞|dragoon revisited",
+				"元素灾厄",
+				"高等隐形术",
+				"幻景",
+				"冰风暴",
+				"变形术",
+				"火墙术"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"investigation",
+								"intimidation",
+								"nature",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"armor": [
+					"light",
+					"medium"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 长戟|phb} 或 (b) {@item 骑枪|phb|皮甲}，或 (c) {@item 长矛|phb}",
+					"(a) {@item 皮甲|phb|皮甲} 或 (b) {@item 链甲衫|phb}",
+					"(a) 一个{@item 地城套组|phb} 或 (b) 一个{@item 探索套组|phb}",
+					"一支{@item 矛|phb}和三（3）支{@item 标枪|phb|标枪}"
+				],
+				"goldAlternative": "{@dice 4d4×10|4d4 × 10|起始资金}",
+				"defaultData": [
+					{
+						"a": [
+							"halberd|phb"
+						],
+						"b": [
+							"lance|phb"
+						],
+						"c": [
+							"pike|phb"
+						]
+					},
+					{
+						"a": [
+							"leather armor|phb"
+						],
+						"b": [
+							"chain shirt|phb"
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"a {@item spear|phb} and three": []
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"con": 13
+						}
+					]
+				}
+			},
+			"classFeatures": [
+				"跳跃|龙骑士|dragoon revisited|1",
+				"长柄武器专家|龙骑士|dragoon revisited|1",
+				"龙类知识|龙骑士|dragoon revisited|2",
+				"空中突击|龙骑士|dragoon revisited|3",
+				{
+					"classFeature": "龙骑士之道|龙骑士|dragoon revisited|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|龙骑士|dragoon revisited|4",
+				{
+					"classFeature": "龙骑士特性|龙骑士|dragoon revisited|5",
+					"gainSubclassFeature": true
+				},
+				"远古之环|龙骑士|dragoon revisited|6",
+				{
+					"classFeature": "龙骑士之道特性|龙骑士|dragoon revisited|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|龙骑士|dragoon revisited|8",
+				"空中突击强化|龙骑士|dragoon revisited|9",
+				"跳跃强化|龙骑士|dragoon revisited|10",
+				{
+					"classFeature": "龙骑士之道特性|龙骑士|dragoon revisited|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|龙骑士|dragoon revisited|12",
+				"龙心|龙骑士|dragoon revisited|13",
+				"空中突击强化|龙骑士|dragoon revisited|14",
+				"远古之环（两次）|龙骑士|dragoon revisited|15",
+				"属性值提升|龙骑士|dragoon revisited|16",
+				{
+					"classFeature": "龙骑士特性|龙骑士|dragoon revisited|17",
+					"gainSubclassFeature": true
+				},
+				"坚韧战斗者|龙骑士|dragoon revisited|18",
+				"属性值提升|龙骑士|dragoon revisited|19",
+				"与天空合一|龙骑士|dragoon revisited|20"
+			],
+			"subclassTitle": "龙骑士之道",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"name": "龙骑士",
+			"ENG_name": "Dragoon (revisited)",
+			"source": "dragoon revisited",
+			"entries": [
+				{
+					"source": "dragoon revisited",
+					"entries": [
+						"龙骑士是一类精英骑士，专为对抗巨龙之患而受训。他们是持长柄武器作战的骑士，发展出了一套空战风格，以便更有效地刺穿宿敌的鳞甲。他们将苍穹视作大地的延伸，纵身其间，倾尽全身之力自高处扑向敌人。少数出类拔萃的龙骑士会将自己的灵魂与一枚孕育着雏龙的龙蛋绑定，彼此缔结牢不可破的羁绊。另一些龙骑士则将龙血融入自身血脉，从而获得古老的魔法与能力。"
+					],
+					"name": "龙骑士",
+					"type": "section",
+					"ENG_name": "Dragoon (revisited)"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "驭龙大师",
+			"ENG_name": "Dragon Master",
+			"shortName": "大师",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"page": 2,
+			"subclassFeatures": [
+				"驭龙大师|龙骑士|dragoon revisited|大师|dragoon revisited|3",
+				"伙伴吐息武器|龙骑士|dragoon revisited|大师|dragoon revisited|5",
+				"灵魂转移|龙骑士|dragoon revisited|大师|dragoon revisited|7",
+				"连结魔法|龙骑士|dragoon revisited|大师|dragoon revisited|11",
+				"成年巨龙|龙骑士|dragoon revisited|大师|dragoon revisited|17"
+			]
+		},
+		{
+			"name": "龙血",
+			"ENG_name": "Dragon's Blood",
+			"shortName": "鲜血",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"page": 4,
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|subclass=龙骑士：龙血（DragR）}",
+						"{@filter 已知法术|spells|subclass=龙骑士：龙血（DragR）}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "龙血施法",
+					"subclasses": [
+						{
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=龙骑士：龙血（DragR）}",
+						"{@filter 2nd|spells|level=2|subclass=龙骑士：龙血（DragR）}",
+						"{@filter 3rd|spells|level=3|subclass=龙骑士：龙血（DragR）}",
+						"{@filter 4th|spells|level=4|subclass=龙骑士：龙血（DragR）}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"龙血|龙骑士|dragoon revisited|鲜血|dragoon revisited|3",
+				"血脉亲和|龙骑士|dragoon revisited|鲜血|dragoon revisited|5",
+				"巨龙魔法|龙骑士|dragoon revisited|鲜血|dragoon revisited|7",
+				"血魔法恢复|龙骑士|dragoon revisited|鲜血|dragoon revisited|11",
+				"龙骑士翱翔|龙骑士|dragoon revisited|鲜血|dragoon revisited|17"
+			]
+		},
+		{
+			"name": "龙魂",
+			"ENG_name": "Dragon's Soul",
+			"shortName": "灵魂",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"page": 4,
+			"subclassFeatures": [
+				"龙魂|龙骑士|dragoon revisited|灵魂|dragoon revisited|3",
+				"额外攻击|龙骑士|dragoon revisited|灵魂|dragoon revisited|5",
+				"巨龙打击|龙骑士|dragoon revisited|灵魂|dragoon revisited|7",
+				"五连突刺|龙骑士|dragoon revisited|灵魂|dragoon revisited|11",
+				"天降死亡|龙骑士|dragoon revisited|灵魂|dragoon revisited|17"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "长柄武器专家",
+			"ENG_name": "Polearm Specialist",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 1,
+			"entries": [
+				"你对长柄武器进行过大量练习，长柄武器包括以下武器：标枪、矛、长矛、长柄刀、长戟、三叉戟和骑枪。持握长柄武器时，你使用它进行的伤害掷骰获得+2加值，且该武器获得触及属性（若其原本没有）。"
+			]
+		},
+		{
+			"name": "跳跃",
+			"ENG_name": "Vault",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 1,
+			"entries": [
+				"在1级时，当你未穿着重甲，你可以用附赠动作进行高跳或远跳，距离上限为你的跳跃距离。跳跃不消耗移动速度。高跳时，你可以选择跳跃距离范围内的一个未被占据的空间落地。如果你撞上物体，你的跳跃中止，并开始坠落。跳跃期间，针对你的借机攻击具有劣势。",
+				"你所能跳跃的最大距离随你在此职业中的等级提升而增加，如龙骑士表中所示。",
+				"此外，当你有意识时，对于坠落距离低于你跳跃距离的坠落，你只受一半伤害。10级起，你不再受到坠落伤害，而非只受一半。"
+			]
+		},
+		{
+			"name": "龙类知识",
+			"ENG_name": "Draconic Knowledge",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 2,
+			"entries": [
+				"从2级起，你在研究、追踪、猎杀乃至与龙类交谈方面拥有深厚的经验。",
+				"你为追踪龙类而进行的感知（求生）检定、为回想关于它们的情报而进行的智力检定，以及对抗龙类或其巢穴动作的所有豁免检定，均具有优势。",
+				"此外，你学会阅读、书写和讲龙语。"
+			]
+		},
+		{
+			"name": "空中突击",
+			"ENG_name": "Aerial Assault",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 3,
+			"entries": [
+				"从3级起，你学会了以毁灭性的力量扑向敌人的技巧。当你持握长柄武器时，你可以发动空中突击。你可以使用此特性的次数等于1+你的体质调整值（最低为1）。",
+				"当你完成一次短休或长休后，你恢复已耗用的次数。"
+			]
+		},
+		{
+			"name": "龙骑士之道",
+			"ENG_name": "Dragoon Path",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 3,
+			"entries": [
+				"在3级时，你选择一条你努力在战斗风格与技巧中效仿的道路。从驭龙大师、龙魂或龙血中选择其一，三者均详述于职业描述的末尾。你所选的道路会在3级以及之后的5级、7级、11级和17级给予你特性。",
+				"你的部分特性需要目标进行豁免检定来抵抗特性的效果。豁免DC计算如下：",
+				{
+					"type": "abilityDc",
+					"name": "法术",
+					"ENG_name": "Spell",
+					"attributes": [
+						"con"
+					]
+				},
+				{
+					"type": "abilityAttackMod",
+					"name": "法术",
+					"ENG_name": "Spell",
+					"attributes": [
+						"con"
+					]
+				}
+			]
+		},
+		{
+			"name": "属性值提升",
+			"ENG_name": "Ability Score Improvement",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 4,
+			"entries": [
+				"当你到达4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如同惯例，你不能借此特性将任何属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选取一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"name": "龙骑士特性",
+			"ENG_name": "Dargoon Feature",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 5,
+			"entries": [
+				"你从你的龙骑士之道中获得一项特性。"
+			]
+		},
+		{
+			"name": "远古之环",
+			"ENG_name": "Ancient Circle",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 6,
+			"entries": [
+				"从6级起，你习得了防御魔法，用以保护你自身与周围众人免遭范围效应攻击。",
+				"当你受某个允许你进行敏捷豁免以使伤害减半的效应影响时（例如红龙的烈焰吐息或闪电束法术），你可以用你的反应在你周围的地面上生成一个半径10尺的魔法法印。直至你的下回合结束，该区域内的目标受此类效应影响时只受一半伤害，且进行豁免检定时具有优势。15级起，半径扩大到30尺。",
+				"你可以使用此特性一次，在完成一次长休后恢复。15级起，你拥有两次使用次数。"
+			]
+		},
+		{
+			"name": "龙骑士之道特性",
+			"ENG_name": "Dargoon Path Feature",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 7,
+			"entries": [
+				"你从你的龙骑士之道中获得一项特性。"
+			]
+		},
+		{
+			"name": "属性值提升",
+			"ENG_name": "Ability Score Improvement",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如同惯例，你不能借此特性将任何属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选取一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"name": "空中突击强化",
+			"ENG_name": "Aerial Assult Improvement",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 9,
+			"entries": [
+				"在9级时，空中突击的额外伤害提升至1d6。"
+			]
+		},
+		{
+			"name": "跳跃强化",
+			"ENG_name": "Vault Improvement",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 10,
+			"entries": [
+				"在10级时，当你未穿着重甲，你不会受到坠落伤害。"
+			]
+		},
+		{
+			"name": "龙骑士之道特性",
+			"ENG_name": "Dargoon Path Feature",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 11,
+			"entries": [
+				"你从你的龙骑士之道中获得一项特性。"
+			]
+		},
+		{
+			"name": "属性值提升",
+			"ENG_name": "Ability Score Improvement",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如同惯例，你不能借此特性将任何属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选取一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"name": "龙心",
+			"ENG_name": "Dragon Heart",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 13,
+			"entries": [
+				"从13级起，你的身心对你所猎杀的龙类产生了耐受，从而获得它们的某些特质。",
+				"你免疫恐慌状态，并获得对你为龙骑士之道所选元素类型的抗性。"
+			]
+		},
+		{
+			"name": "空中突击强化",
+			"ENG_name": "Aerial Assault Improvement",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 14,
+			"entries": [
+				"当你到达14级时，空中突击的额外伤害提升至1d8。"
+			]
+		},
+		{
+			"name": "远古之环（两次）",
+			"ENG_name": "Ancient Circle (two uses)",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 15,
+			"entries": [
+				"在15级时，你每次长休可额外使用一次远古之环。"
+			]
+		},
+		{
+			"name": "属性值提升",
+			"ENG_name": "Ability Score Improvement",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如同惯例，你不能借此特性将任何属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选取一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"name": "龙骑士特性",
+			"ENG_name": "Dargoon Feature",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 17,
+			"entries": [
+				"在17级时，你从你的龙骑士之道中获得一项特性。"
+			]
+		},
+		{
+			"name": "坚韧战斗者",
+			"ENG_name": "Relentless Combatant",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 18,
+			"entries": [
+				"从18级起，每当你以一次空中突击造成重击，或以一次空中突击将一个生物的生命值降至0，你可以立即对触及范围内的每个敌方生物各进行一次近战武器攻击。",
+				"此外，你使用长柄武器进行的武器攻击，现在在掷出19或20时即造成重击。"
+			]
+		},
+		{
+			"name": "属性值提升",
+			"ENG_name": "Ability Score Improvement",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如同惯例，你不能借此特性将任何属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选取一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"name": "与天空合一",
+			"ENG_name": "ONE WITH THE SKY",
+			"source": "dragoon revisited",
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以无限次使用空中突击。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "龙血",
+			"ENG_name": "Dragon's Blood",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Blood",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"entries": [
+				"选择饮下龙血的龙骑士，对其将给自身带来的影响有着深刻的认知。这确实会赋予龙骑士强大的魔力。鳞片会成片地在其身体各处生出，双眼也变得酷似龙瞳，令目睹此景的旁人心生畏惧与敬畏。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙血灌注|龙骑士|dragoon revisited|鲜血|dragoon revisited|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "施法|龙骑士|dragoon revisited|鲜血|dragoon revisited|3"
+				}
+			]
+		},
+		{
+			"name": "龙血灌注",
+			"ENG_name": "Blood Infusion",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Blood",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时，你选择一种与自身血脉相融合的龙的颜色。你之后获得的特性将使用与每种龙相关联的伤害类型。",
+				{
+					"type": "table",
+					"caption": "龙血",
+					"colLabels": [
+						"龙",
+						"伤害类型"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"黑龙",
+							"强酸"
+						],
+						[
+							"蓝龙",
+							"闪电"
+						],
+						[
+							"黄铜龙",
+							"火焰"
+						],
+						[
+							"青铜龙",
+							"闪电"
+						],
+						[
+							"赤铜龙",
+							"强酸"
+						],
+						[
+							"金龙",
+							"火焰"
+						],
+						[
+							"绿龙",
+							"毒素"
+						],
+						[
+							"红龙",
+							"火焰"
+						],
+						[
+							"银龙",
+							"寒冷"
+						],
+						[
+							"白龙",
+							"寒冷"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "施法",
+			"ENG_name": "Spellcasting",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Blood",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时，你的巨龙伙伴因与你的灵魂链接而获得多种益处。",
+				{
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从龙血法术列表中选择两个戏法学习。10级时，你再额外学习一个自选的龙血戏法。"
+					],
+					"ENG_name": "Cantrips"
+				},
+				{
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"龙血施法表展示了你可用来施放1环及更高环阶法术的法术位数量。施放其中一个法术时，你必须消耗一个不低于该法术环阶的法术位。完成一次长休后，你恢复所有已耗用的法术位。",
+						"例如，若你已知1环法术护盾术，且有一个1环和一个2环法术位可用，你可以用其中任意一个法术位施放护盾术。"
+					],
+					"ENG_name": "Spell Slots"
+				},
+				{
+					"type": "entries",
+					"name": "准备和施放法术",
+					"entries": [
+						"法师表展示了你可用来施放1环及更高环阶法术的法术位数量。施放其中一个法术时，你必须消耗一个不低于该法术环阶的法术位。完成一次长休后，你恢复所有已耗用的法术位。",
+						"你准备可供你施放的法师法术列表。为此，从你的法术书中选择数量等于你的智力调整值+你的法师等级的法师法术（最少为一个法术）。这些法术的环阶必须是你拥有对应法术位的环阶。",
+						"例如，如果你是一名3级法师，你拥有四个1环法术位和两个2环法术位。在智力为16时，你的准备法术列表可以包含六个1环或2环法术，任意组合，均选自你的法术书。如果你准备了1环法术{@spell 魔法飞弹}，你可以用1环或2环法术位来施放它。施放法术并不会将它从你的准备法术列表中移除。",
+						"你可以在完成一次长休后更改你的准备法术列表。准备一份新的法师法术列表需要花费时间研读你的法术书，并熟记施放法术所需的咒语与手势：列表上每个法术每环阶至少1分钟。"
+					],
+					"ENG_name": "Preparing and Casting Spells"
+				},
+				{
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"智力是你龙骑士法术的施法属性，因为你通过对自身龙血魔法特性的理解来学习法术。当法术提及你的施法属性时，你使用智力。此外，当你确定所施放的龙骑士法术的豁免DC，或以其进行攻击检定时，你使用你的智力调整值。",
+						{
+							"type": "abilityDc",
+							"name": "法术",
+							"ENG_name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"ENG_name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					],
+					"ENG_name": "Spellcasting Ability"
+				},
+				{
+					"type": "entries",
+					"name": "学习1环及更高环阶法术",
+					"entries": [
+						"你已知三个自选的1环龙血法术。龙血施法表的\"已知法术\"栏展示了你何时可以学习更多1环或更高环阶的龙血法术。这些法术的环阶必须是你拥有对应法术位的环阶。例如，当你在此职业到达7级时，你可以学习一个新的1环或2环法术。",
+						"每当你在本职业提升等级时，你可以用龙血法术列表中的另一个自选法术替换你已知的龙血法术之一。新法术的环阶必须是你拥有对应法术位的环阶。"
+					],
+					"ENG_name": "Learning Spells of 1st Level and Higher"
+				}
+			]
+		},
+		{
+			"name": "血脉亲和",
+			"ENG_name": "Blood Affinity",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Blood",
+			"subclassSource": "dragoon revisited",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级起，当你施放一个造成与你龙血相关联的伤害类型的法术时，你可以将你的智力调整值加到其中一次伤害掷骰上"
+			]
+		},
+		{
+			"name": "巨龙魔法",
+			"ENG_name": "Dragon Magic",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Blood",
+			"subclassSource": "dragoon revisited",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级起，当你用你的动作施放一个戏法时，你可以用一个附赠动作进行一次武器攻击。"
+			]
+		},
+		{
+			"name": "血魔法恢复",
+			"ENG_name": "Blood Magic Recovery",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Blood",
+			"subclassSource": "dragoon revisited",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级起，你血脉中强大的魔力使你能比别人更频繁地使用法术。",
+				"每天一次，当你完成一次短休时，你可以选择恢复若干已耗用的法术位。这些法术位的环阶总和等于或低于1+你的智力调整值。"
+			]
+		},
+		{
+			"name": "龙骑士翱翔",
+			"ENG_name": "Flight of the Dragoon",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Blood",
+			"subclassSource": "dragoon revisited",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级起，你可以消耗两次可用的空中突击使用次数，对自己施放飞行术。此时，一对虚体的龙翼会从你背后展开。在此特性生效期间，当你使用空中突击时，你可以在攻击之后用你的反应移动至多等于你速度的距离，且不会引发借机攻击。"
+			]
+		},
+		{
+			"name": "驭龙大师",
+			"ENG_name": "Dragon Master",
+			"source": "dragoon revisited",
+			"page": 2,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Master",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"entries": [
+				"驭龙大师之道体现着世间巨龙与人类之间的力量。龙与龙骑士合为一体、并肩作战，共同对抗威胁文明及其边疆的怪物。效仿驭龙大师之道，意味着你将自己奉献于这一理念，与一头龙结为伙伴与挚友、携手合作。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "巨龙伙伴|龙骑士|dragoon revisited|大师|dragoon revisited|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "灵魂链接|龙骑士|dragoon revisited|大师|dragoon revisited|3"
+				}
+			]
+		},
+		{
+			"name": "巨龙伙伴",
+			"ENG_name": "Dragon Companion",
+			"source": "dragoon revisited",
+			"page": 2,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Master",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时，你运用魔法与一枚尚未孵化的龙蛋建立起强大的联结。经过一场精疲力竭的8小时仪式并耗去价值50金币的珍稀草药与矿物后，你将你的灵魂与蛋中的雏龙相连，令其成为你忠实的伙伴。你通常从以下位于附录A的雏龙中选择你的伙伴：黑、蓝、黄铜、青铜、赤铜、金、绿、红、银或白。不过，你的DM也可能依据周边地形以及该地区逻辑上会存在哪些龙种，替你选定其中一头。",
+				"8小时结束时，你的巨龙伙伴破壳而出，并获得你的灵魂链接特性的全部益处。你只能拥有一名巨龙伙伴。你的伙伴无法被骑乘，因为它的体格还不足以承受骑手的重量",
+				"由于你们的灵魂彼此以魔法交织在一起，如果你死亡，你的伙伴也会随你死去。这道魔法旨在保护龙骑士，并促使龙与其主人建立牢固的羁绊。",
+				"如果你的巨龙伙伴被杀，你们共享的魔法羁绊允许你使它复生。通过8小时的工作并耗去价值25金币的珍稀草药与矿物，你唤出伙伴的灵魂，并运用魔法为它塑造一具新的身体。即使你不持有它身体的任何部分，你也可以以此方式使你的巨龙伙伴复生。"
+			]
+		},
+		{
+			"name": "灵魂链接",
+			"ENG_name": "Soul Link",
+			"source": "dragoon revisited",
+			"page": 2,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Master",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时，你的巨龙伙伴因与你的灵魂链接而获得多种益处。",
+				"伙伴会尽力服从你的命令。它如同其他生物一样进行先攻检定，但由你决定它的动作、决策、态度等。如果你失能或不在场，你的伙伴将自行行动。",
+				"你的巨龙伙伴的能力与游戏数据列于本册的附录A。它的熟练加值等于你的熟练加值。除通常应用熟练加值之处外，你的巨龙伙伴还会将熟练加值加到它的AC和它的伤害掷骰上。",
+				"你的巨龙伙伴获得威吓、察觉以及两项自选技能的熟练项。它还会在所有豁免检定上获得熟练。你在3级之后每获得一个等级，你的巨龙伙伴便额外获得一颗生命骰，并相应提高其生命值。",
+				"每当你获得属性值提升职业特性时，你的伙伴的能力也随之提升。你的伙伴可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如同惯例，它不能借此特性将任何属性值提升到20以上。",
+				"你的伙伴拥有一项个性特质和一个缺点，你可以通过掷骰或从下表中选择来确定。你的伙伴与你有相同的理想，其羁绊中始终包含以下内容：\"与我相连的龙骑士是我最神圣的伙伴，我愿以生命守护他们。\"你的巨龙伙伴虽与你灵魂相连，但这并不意味着它必然喜欢你。你可以在你的羁绊中添加一句话，描述你的巨龙伙伴对你的态度。"
+			]
+		},
+		{
+			"name": "伙伴吐息武器",
+			"ENG_name": "Companion Breath Weapon",
+			"source": "dragoon revisited",
+			"page": 2,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Master",
+			"subclassSource": "dragoon revisited",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级起，你的巨龙伙伴获得龙的标志性吐息武器。",
+				"当你的巨龙伙伴使用其吐息武器时，吐息区域内的每个生物必须进行一次豁免检定，区域与类型由你的龙的颜色决定。该豁免检定的DC等于8+它的熟练加值+它的体质调整值。豁免失败的生物受到等于2d6+其体质调整值的伤害，豁免成功则伤害减半。伤害骰在6级提升为3d6，11级提升为4d6，16级提升为5d6。",
+				"充能（5-6）。在你的巨龙伙伴的每个回合开始时，掷一颗d6。若掷出5或6，它恢复吐息武器的使用。当你的巨龙伙伴完成一次短休或长休时，该能力同样会恢复。",
+				{
+					"type": "table",
+					"caption": "龙之吐息",
+					"colLabels": [
+						"龙",
+						"伤害类型",
+						"吐息武器"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-6"
+					],
+					"rows": [
+						[
+							"黑龙",
+							"强酸",
+							"5×30尺直线（敏捷豁免）"
+						],
+						[
+							"蓝龙",
+							"闪电",
+							"5×30尺直线（敏捷豁免）"
+						],
+						[
+							"黄铜龙",
+							"火焰",
+							"5×30尺直线（敏捷豁免）"
+						],
+						[
+							"青铜龙",
+							"闪电",
+							"5×30尺直线（敏捷豁免）"
+						],
+						[
+							"赤铜龙",
+							"强酸",
+							"5×30尺直线（敏捷豁免）"
+						],
+						[
+							"金龙",
+							"火焰",
+							"15尺锥形（敏捷豁免）"
+						],
+						[
+							"绿龙",
+							"毒素",
+							"15尺锥形（体质豁免）"
+						],
+						[
+							"红龙",
+							"火焰",
+							"15尺锥形（敏捷豁免）"
+						],
+						[
+							"银龙",
+							"寒冷",
+							"15尺锥形（体质豁免）"
+						],
+						[
+							"白龙",
+							"寒冷",
+							"15尺锥形（体质豁免）"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "灵魂转移",
+			"ENG_name": "Spirit Transfer",
+			"source": "dragoon revisited",
+			"page": 2,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Master",
+			"subclassSource": "dragoon revisited",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级起，你与你的龙的联结变得更强，使你得以将你的灵性精华转移至它体内。",
+				"你可以用你的附赠动作并消耗一颗生命骰，使你的巨龙伙伴恢复等于该生命骰+你的体质调整值+你的龙骑士等级的生命值。",
+				"一旦你使用了此特性，你必须完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"name": "连结魔法",
+			"ENG_name": "Linked Magic",
+			"source": "dragoon revisited",
+			"page": 2,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Master",
+			"subclassSource": "dragoon revisited",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的龙获得运用一种源自你们灵魂链接的特殊魔法的能力。你的巨龙伙伴将依据其种类获得一个法术，详见附录B。",
+				"它可以使用此法术一次，且必须完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"name": "成年巨龙",
+			"ENG_name": "Mature Dragon",
+			"source": "dragoon revisited",
+			"page": 2,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Master",
+			"subclassSource": "dragoon revisited",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，你的巨龙伙伴已经长大。它获得以下特性：",
+				"它可以使用此法术一次，且必须完成一次短休或长休后才能再次使用。",
+				{
+					"type": "list",
+					"items": [
+						"它的体型变为大型。因此，其生命骰增大为d10，且你的每个龙骑士等级都为它增加1点生命值。",
+						"它的身体现已完全成熟，足以承载骑手。它可以作为一头有智能的坐骑被骑乘。",
+						"它的啃咬伤害提高1d8。",
+						"它的AC提升至15。",
+						"它的所有速度翻倍。",
+						"它的各项属性值提升2点，最大为20。"
+					]
+				},
+				"此外，它获得以下动作：",
+				"{@b 骇人威仪}。由该龙指定的一只处于其60尺内且能察觉到它的生物，必须通过一次感知豁免检定（DC 8+它的熟练加值+它的魅力调整值），否则陷入恐慌状态1分钟。该生物可以在其每个回合结束时重复该豁免检定，成功则结束自身所受的此效应。若该生物豁免成功或此效应对其结束，该生物在接下来的24小时内免疫该龙的骇人威仪。"
+			]
+		},
+		{
+			"name": "龙魂",
+			"ENG_name": "Dragon's Soul",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Soul",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"entries": [
+				"选择这条道路的龙骑士，为了将战斗能力突破极限，在选择时会接受一部分龙的灵魂进入自己的躯体。这类龙骑士获得强化的身体素质，用以对抗敌人。他们的战斗能力围绕着提升打击的速度与毁灭性效果而进化，以压倒敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "灵魂融合|龙骑士|dragoon revisited|灵魂|dragoon revisited|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "强力跳跃|龙骑士|dragoon revisited|灵魂|dragoon revisited|3"
+				}
+			]
+		},
+		{
+			"name": "灵魂融合",
+			"ENG_name": "Merged Soul",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Soul",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时，你选择一种龙的颜色，并接受其一部分灵魂。你之后获得的特性将使用与每种龙相关联的伤害类型。",
+				{
+					"type": "table",
+					"caption": "龙血",
+					"colLabels": [
+						"龙",
+						"伤害类型"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"黑龙",
+							"强酸"
+						],
+						[
+							"蓝龙",
+							"闪电"
+						],
+						[
+							"黄铜龙",
+							"火焰"
+						],
+						[
+							"青铜龙",
+							"闪电"
+						],
+						[
+							"赤铜龙",
+							"强酸"
+						],
+						[
+							"金龙",
+							"火焰"
+						],
+						[
+							"绿龙",
+							"毒素"
+						],
+						[
+							"红龙",
+							"火焰"
+						],
+						[
+							"银龙",
+							"寒冷"
+						],
+						[
+							"白龙",
+							"寒冷"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "强力跳跃",
+			"ENG_name": "Power Vault",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Soul",
+			"subclassSource": "dragoon revisited",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级起，你对跳跃的专注使你能更高效地运用跳跃。",
+				"在你的每次跳跃中，你只有一次机会：当你撞上一件物体时，只要仍有可供跳跃的空间，你便可以蹬踏它再获得10尺高度。此外，你的空中突击用于伤害计算的最大高度提高10尺。"
+			]
+		},
+		{
+			"name": "额外攻击",
+			"ENG_name": "Extra Attack",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Soul",
+			"subclassSource": "dragoon revisited",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级起，每当你在你的回合采取攻击动作时，你可以攻击两次，而非一次。"
+			]
+		},
+		{
+			"name": "巨龙打击",
+			"ENG_name": "Dragon Strike",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Soul",
+			"subclassSource": "dragoon revisited",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级起，你的肌肉因龙魂而得到锤炼。",
+				"你的速度提高10尺。",
+				"当你使用空中突击时，你可以将其伤害类型改为你的灵魂融合类型，并在命中时选择以下一项额外效应：",
+				{
+					"type": "list",
+					"items": [
+						"目标必须通过一次力量豁免检定，否则倒地。",
+						"目标必须通过一次敏捷豁免检定，否则其所持的一件物品或武器会被打落，掉在其脚下。",
+						"目标必须通过一次体质豁免检定，否则下一次针对它的攻击检定具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "五连突刺",
+			"ENG_name": "Penta-Thrust",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Soul",
+			"subclassSource": "dragoon revisited",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级起，你可以对你面前的敌人发动五点连击。",
+				"你用你的动作打击你面前15尺锥形范围内的所有生物。该区域内的每个生物必须进行一次敏捷豁免检定，豁免失败者受到5d8点你的灵魂融合类型的伤害，豁免成功则伤害减半。该伤害在15级提升为5d10。",
+				"一旦你使用了此特性，你必须完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"name": "天降死亡",
+			"ENG_name": "Death from Above",
+			"source": "dragoon revisited",
+			"page": 4,
+			"className": "龙骑士",
+			"classSource": "dragoon revisited",
+			"subclassShortName": "Soul",
+			"subclassSource": "dragoon revisited",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级起，你已精通空中技艺与龙骑士的武器。攻击时，你将全身之力灌注于打击之中。",
+				"当你使用空中突击时，你的攻击总是被视为以最大距离坠落。",
+				"此外，你可以将你在跳跃后立即进行的攻击的掷骰结果替换为20。你可以在攻击检定掷骰之后、判定攻击是否命中之前这样做。在完成一次短休或长休之前，你不能再次这样做。"
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "深泥术",
+			"ENG_name": "Deep Mud",
+			"source": "dragoon revisited",
+			"page": 8,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你指定施法距离内一处你能看见的地面点。以该点为中心10尺半径的地面化为3尺深的泥沼。泥沼出现时位于该区域地面上的每个生物必须通过一次敏捷豁免检定，否则将陷入泥沼并陷入束缚状态。一个生物可以用一个动作尝试一次力量检定，成功则解脱自身或其触及范围内的另一个生物，并结束束缚状态。在你的下个回合开始时，泥沼硬化，力量检定的DC提高3。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "龙皮术",
+			"ENG_name": "Dragon Hide",
+			"source": "dragoon revisited",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一片鳞片"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"你触摸一名未穿着护甲的自愿生物，一层具保护性的魔法力场将环绕它，直至法术结束。目标的基础AC变为13+其敏捷调整值。若目标穿上护甲，或你用一个动作解除此法术，则法术结束。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"MAC"
+			]
+		},
+		{
+			"name": "龙鳞",
+			"ENG_name": "Dragon Scales",
+			"source": "dragoon revisited",
+			"page": 278,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "价值100金币的钻石尘，为法术所消耗",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"此法术使你触摸的一名自愿生物的血肉变得如石头般坚硬。直至法术结束，目标对非魔法的钝击、穿刺和挥砍伤害具有抗性。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			},
+			"damageResist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			]
+		},
+		{
+			"name": "尘暴术",
+			"ENG_name": "Dust Bowl",
+			"source": "dragoon revisited",
+			"page": 8,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一团沙云以龙骑士在60尺内可见的一点为中心，形成半径20尺的球体旋转盘绕。沙云会绕过墙角扩散。其中的每个生物必须通过一次体质豁免检定，否则目盲1分钟。该生物可以在其每个回合结束时重复该豁免检定，成功则结束自身所受的此效应。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "擒抱根须",
+			"ENG_name": "Grasping Roots",
+			"source": "dragoon revisited",
+			"page": 8,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"擒抱的根须与藤蔓以你60尺内可见的一处地面点为中心，在20尺半径内迸发而出。该区域变为困难地形，首次于某个回合内进入该区域，或在其回合结束时身处其中的每个生物，必须通过一次力量豁免检定，否则被根须与藤蔓束缚。任何处于受影响生物5尺内的生物可以用其动作进行一次力量检定，成功即将其解脱。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "冰牢术",
+			"ENG_name": "Ice Prison",
+			"source": "dragoon revisited",
+			"page": 8,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"你在施法距离内可见的一处坚实表面上创造一道不透明的冰墙或一座冰制穹顶。冰墙可至多30尺长、30尺高、1尺厚。穹顶的半径可至多10尺、高10尺、厚1尺。墙体出现时，位于其占据区域内的每个生物都会被推出墙体空间5尺，并出现在墙体的任意一侧。墙体每10尺一段，具有AC 5、30点生命值、火焰伤害易伤，以及寒冷、暗蚀、毒素和心灵伤害免疫。若你失能，墙体随之消失。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"FMV",
+				"SGT"
+			]
+		},
+		{
+			"name": "灵液迷雾",
+			"ENG_name": "Ichor Fog",
+			"source": "dragoon revisited",
+			"page": 7,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一团沙云以龙骑士在60尺内可见的一点为中心，形成半径20尺的球体旋转盘绕。沙云会绕过墙角扩散。其中的每个生物必须通过一次体质豁免检定，否则目盲1分钟。该生物可以在其每个回合结束时重复该豁免检定，成功则结束自身所受的此效应。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "闪电弧光",
+			"ENG_name": "Lightning Arc",
+			"source": "dragoon revisited",
+			"page": 7,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"闪电自你身上弧射而出，形成一条以你为起点的5尺×30尺直线。该区域内的每个生物必须通过一次体质豁免检定，否则震慑直至其下个回合结束。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "麻痹吐息",
+			"ENG_name": "Paralyzing Breath",
+			"source": "dragoon revisited",
+			"page": 8,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在15尺锥形范围内呼出麻痹性气体。该区域内的每个生物必须通过一次体质豁免检定，否则麻痹1分钟。该生物可以在其每个回合结束时重复该豁免检定，成功则结束自身所受的此效应。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "排斥吐息",
+			"ENG_name": "Repulsion Breath",
+			"source": "dragoon revisited",
+			"page": 8,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在30尺锥形范围内呼出排斥能量。该区域内的每个生物或物体必须进行一次力量豁免检定。豁免失败的目标将沿直线被推离你30尺。若被此效应推移的目标撞上另一个生物或物体，目标每被推移10尺，目标与其撞上的生物或物体便各受到{@damage 1d6}点钝击伤害。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "震颤术",
+			"ENG_name": "Tremors",
+			"source": "dragoon revisited",
+			"page": 8,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一阵震颤撼动你周围30尺半径的区域。区域内由你选择、正立于地面上的每个生物必须通过一次力量豁免检定，否则倒地。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "衰弱吐息",
+			"ENG_name": "Weakening Breath",
+			"source": "dragoon revisited",
+			"page": 8,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在15尺锥形范围内呼出衰弱气体。该区域内的每个生物必须通过一次力量豁免检定，否则在1分钟内，其基于力量的攻击检定、力量检定和力量豁免检定均具有劣势。该生物可以在其每个回合结束时重复该豁免检定，成功则结束自身所受的此效应。"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "龙骑士",
+							"ENG_name": "Dragoon (revisited)",
+							"source": "dragoon revisited"
+						},
+						"subclass": {
+							"name": "龙血",
+							"ENG_name": "Dragon's Blood",
+							"source": "dragoon revisited",
+							"shortName": "龙血"
+						}
+					}
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "黑龙伙伴",
+			"ENG_name": "Black Dragon Companion",
+			"source": "dragoon revisited",
+			"page": 5,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"companion"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 45,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 8,
+			"wis": 9,
+			"cha": 10,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"盲视 10 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"acid"
+			],
+			"languages": [
+				"龙语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "水陆两栖",
+					"entries": [
+						"该龙可以在空气和水中呼吸。"
+					],
+					"ENG_name": "Amphibious"
+				}
+			],
+			"action": [
+				{
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害。"
+					],
+					"ENG_name": "Bite"
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "蓝龙伙伴",
+			"ENG_name": "Blue Dragon Companion",
+			"source": "dragoon revisited",
+			"page": 5,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"companion"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 45,
+				"burrow": 15
+			},
+			"str": 15,
+			"dex": 8,
+			"con": 13,
+			"int": 10,
+			"wis": 9,
+			"cha": 11,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"盲视 10 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"龙语"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害。"
+					],
+					"ENG_name": "Bite"
+				}
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "黄铜龙伙伴",
+			"ENG_name": "Brass Dragon Companion",
+			"source": "dragoon revisited",
+			"page": 6,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"companion"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 45,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 9,
+			"con": 13,
+			"int": 9,
+			"wis": 10,
+			"cha": 12,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"盲视 10 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"龙语"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害。"
+					],
+					"ENG_name": "Bite"
+				}
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "青铜龙伙伴",
+			"ENG_name": "Bronze Dragon Companion",
+			"source": "dragoon revisited",
+			"page": 6,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"companion"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 45,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 8,
+			"con": 13,
+			"int": 10,
+			"wis": 9,
+			"cha": 13,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"盲视 10 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"acid"
+			],
+			"languages": [
+				"龙语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "水陆两栖",
+					"entries": [
+						"该龙可以在空气和水中呼吸。"
+					],
+					"ENG_name": "Amphibious"
+				}
+			],
+			"action": [
+				{
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害。"
+					],
+					"ENG_name": "Bite"
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "赤铜龙伙伴",
+			"ENG_name": "Copper Dragon Companion",
+			"source": "dragoon revisited",
+			"page": 6,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"companion"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 45,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 12,
+			"int": 13,
+			"wis": 8,
+			"cha": 11,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"盲视 10 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"acid"
+			],
+			"languages": [
+				"龙语"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害。"
+					],
+					"ENG_name": "Bite"
+				}
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "金龙伙伴",
+			"ENG_name": "Gold Dragon Companion",
+			"source": "dragoon revisited",
+			"page": 6,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"companion"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 45,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 9,
+			"con": 14,
+			"int": 9,
+			"wis": 7,
+			"cha": 12,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"盲视 10 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"龙语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "水陆两栖",
+					"entries": [
+						"该龙可以在空气和水中呼吸。"
+					],
+					"ENG_name": "Amphibious"
+				}
+			],
+			"action": [
+				{
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害。"
+					],
+					"ENG_name": "Bite"
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
