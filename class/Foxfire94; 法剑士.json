@@ -1,0 +1,1253 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FoxfireSpellblade",
+				"abbreviation": "FFSplBld",
+				"full": "法剑士",
+				"url": "https://www.dmsguild.com/product/321402/Spellblade-class-for-DD-5e",
+				"version": "2",
+				"authors": [
+					"Foxfire94"
+				],
+				"convertedBy": [
+					"Foxfire94"
+				],
+				"color": "bfeaf7"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1594524520,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "40b5c2e826"
+	},
+	"class": [
+		{
+			"ENG_name": "Spellblade",
+			"name": "法剑士",
+			"source": "FoxfireSpellblade",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15
+			],
+			"classSpells": [
+				{
+					"className": "术士",
+					"classSource": "PHB"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Fighting Style",
+					"name": "战斗风格",
+					"featureType": [
+						"FS:F"
+					],
+					"progression": {
+						"2": 1
+					}
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"arcana",
+								"athletics",
+								"history",
+								"investigation",
+								"medicine",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）一件{@filter 军用近战武器|items|source=phb|category=基础|type=军用武器;近战武器=u~u~sand}、（b）两件{@filter 简易近战武器|items|source=phb|category=基础|type=简易武器;近战武器=u~u~sand}、（c）一把{@item 短弓|phb}和20支箭矢，或（d）一把{@item 轻弩|phb}和20支弩矢",
+					"（a）{@item 皮甲|phb}，或（b）{@item 鳞甲|phb}",
+					"（a）一个{@item 材料包|phb}，或（b）一个{@item 奥术法器|phb}",
+					"（a）一个{@item 地城套组|phb}，或（b）一个{@item 探索套组|phb}",
+					"一把{@item 匕首|phb|匕首}"
+				],
+				"goldAlternative": "{@dice 4d4×10|5d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartialMelee"
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee",
+								"quantity": 2
+							}
+						],
+						"c": [
+							"短弓|phb",
+							"箭矢 (20)|phb"
+						],
+						"d": [
+							"轻弩|phb",
+							"弩矢(20)|phb"
+						]
+					},
+					{
+						"a": [
+							"皮甲|phb"
+						],
+						"b": [
+							"鳞甲|phb"
+						]
+					},
+					{
+						"a": [
+							"材料包|phb"
+						],
+						"b": [
+							"奥术法器|phb"
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"_": [
+							"匕首|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"int": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"秘法之刃",
+						"{@filter 已知戏法|spells|level=0|class=术士}",
+						"{@filter 已知法术|spells|class=术士}",
+						"法术位",
+						"法术位环阶"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							2,
+							1,
+							"{@filter 1st|spells|level=1|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							3,
+							2,
+							"{@filter 1st|spells|level=1|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							4,
+							2,
+							"{@filter 2nd|spells|level=2|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							3,
+							5,
+							2,
+							"{@filter 2nd|spells|level=2|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							6,
+							2,
+							"{@filter 3rd|spells|level=3|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							7,
+							2,
+							"{@filter 3rd|spells|level=3|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							8,
+							2,
+							"{@filter 4th|spells|level=4|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							9,
+							2,
+							"{@filter 4th|spells|level=4|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							10,
+							2,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							4,
+							10,
+							2,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							11,
+							3,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							11,
+							3,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							12,
+							3,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							12,
+							3,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							13,
+							3,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							13,
+							3,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4,
+							14,
+							4,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4,
+							14,
+							4,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4,
+							15,
+							4,
+							"{@filter 5th|spells|level=5|class=术士}"
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4,
+							15,
+							4,
+							"{@filter 5th|spells|level=5|class=术士}"
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"秘法之刃|法剑士|FoxfireSpellblade|1",
+				"施法|法剑士|FoxfireSpellblade|1",
+				{
+					"classFeature": "范型|法剑士|FoxfireSpellblade|2",
+					"gainSubclassFeature": true
+				},
+				"战斗风格|法剑士|FoxfireSpellblade|2",
+				"充能之刃|法剑士|FoxfireSpellblade|3",
+				"属性值提升|法剑士|FoxfireSpellblade|4",
+				"额外攻击|法剑士|FoxfireSpellblade|5",
+				{
+					"classFeature": "范型特性|法剑士|FoxfireSpellblade|6",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|法剑士|FoxfireSpellblade|8",
+				"元素精通|法剑士|FoxfireSpellblade|10",
+				{
+					"classFeature": "范型特性|法剑士|FoxfireSpellblade|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|法剑士|FoxfireSpellblade|12",
+				{
+					"classFeature": "范型特性|法剑士|FoxfireSpellblade|14",
+					"gainSubclassFeature": true
+				},
+				"秘法多变|法剑士|FoxfireSpellblade|15",
+				"属性值提升|法剑士|FoxfireSpellblade|16",
+				{
+					"classFeature": "范型特性|法剑士|FoxfireSpellblade|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|法剑士|FoxfireSpellblade|19",
+				{
+					"classFeature": "范型特性|法剑士|FoxfireSpellblade|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"subclassTitle": "范型",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Spellblade",
+			"name": "法剑士",
+			"source": "FoxfireSpellblade",
+			"entries": [
+				{
+					"ENG_name": "Spellblade",
+					"name": "法剑士",
+					"source": "FoxfireSpellblade",
+					"type": "section",
+					"entries": [
+						"如果你希望兼职成为法剑士，先决条件与获得的熟练项列于下文。",
+						{
+							"ENG_name": "Spellblade Multiclassing Prerequisites",
+							"type": "entries",
+							"name": "法剑士兼职先决条件",
+							"entries": [
+								{
+									"ENG_name": "Ability Score Minimum",
+									"type": "entries",
+									"name": "最低属性值",
+									"entries": [
+										"力量13或敏捷13，以及智力13"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Spellblade Multiclassing Proficiencies",
+							"type": "entries",
+							"name": "法剑士兼职熟练项",
+							"entries": [
+								{
+									"ENG_name": "Proficiencies Gained",
+									"type": "entries",
+									"name": "获得熟练项",
+									"entries": [
+										"轻型护甲、中型护甲、简易武器。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Blademaster",
+			"name": "剑术大师",
+			"shortName": "剑术大师",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Maneuvers",
+					"name": "战技",
+					"featureType": [
+						"MV:B"
+					],
+					"progression": {
+						"6": 2,
+						"11": 4,
+						"18": 6
+					}
+				}
+			],
+			"subclassFeatures": [
+				"剑术大师范型|法剑士|FoxfireSpellblade|剑术大师|FoxfireSpellblade|2",
+				"魔法力量|法剑士|FoxfireSpellblade|剑术大师|FoxfireSpellblade|2",
+				"武艺精通|法剑士|FoxfireSpellblade|剑术大师|FoxfireSpellblade|6",
+				"剑刃风暴|法剑士|FoxfireSpellblade|剑术大师|FoxfireSpellblade|11",
+				"额外战技|法剑士|FoxfireSpellblade|剑术大师|FoxfireSpellblade|11",
+				"三重威胁|法剑士|FoxfireSpellblade|剑术大师|FoxfireSpellblade|14",
+				"额外战技|法剑士|FoxfireSpellblade|剑术大师|FoxfireSpellblade|18",
+				"魔法疾风连击|法剑士|FoxfireSpellblade|剑术大师|FoxfireSpellblade|20"
+			]
+		},
+		{
+			"ENG_name": "Magister",
+			"name": "魔导师",
+			"shortName": "魔导师",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassFeatures": [
+				"魔导师范型|法剑士|FoxfireSpellblade|魔导师|FoxfireSpellblade|2",
+				"秘法之力|法剑士|FoxfireSpellblade|魔导师|FoxfireSpellblade|2",
+				"魔法学者|法剑士|FoxfireSpellblade|魔导师|FoxfireSpellblade|6",
+				"反射守护|法剑士|FoxfireSpellblade|魔导师|FoxfireSpellblade|11",
+				"强化秘法之力|法剑士|FoxfireSpellblade|魔导师|FoxfireSpellblade|14",
+				"魔法大师|法剑士|FoxfireSpellblade|魔导师|FoxfireSpellblade|18",
+				"极致秘法之力|法剑士|FoxfireSpellblade|魔导师|FoxfireSpellblade|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Arcane Blade",
+			"name": "秘法之刃",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 1,
+			"entries": [
+				"你曾受训以魔法能量强化你的武器。从1级起，你可以在一次长休期间花费一小时，对你持有的一件武器施行仪式，为其注入下列自选元素之一：强酸、寒冷、火焰、闪电或毒素。",
+				"每回合一次，当你使用该武器攻击命中时，将额外造成1d4所选元素的伤害。此伤害随你升级而提升，如法剑士职业表的\"秘法之刃\"栏所示。",
+				"从11级起，你每回合可以不止一次地造成此特性的额外伤害。",
+				"这件武器与你绑定，只要你心念一动，它便会收入一处口袋位面。你可以用一个附赠动作，将一件受秘法之刃影响的武器从该口袋位面中取出。",
+				"你只能将元素能量注入一件武器。你在10级时可以多注入一件武器，并在15级时再多注入一件。若你以此方式注入的武器数量超过上限，则由你选择哪件武器失去秘法之刃特性的益处。"
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 1,
+			"entries": [
+				"你的魔法直接汲取自以太，这也限制了你在休息之间所能引取的分量。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"在1级时，你知晓两个来自术士法术列表的自选戏法。你在更高等级会习得更多自选术士戏法，如法剑士表格的\"已知戏法\"栏所示。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"法剑士表格展示了你拥有多少法术位，可用于施展1环至5环的邪术师法术。该表格还展示了这些法术位的环阶；你所有的法术位环阶相同。要施展一个1环或更高的法术，你必须消耗一个法术位。你在完成一次短休或长休后恢复所有已消耗的法术位。",
+						"举例而言，当你5级时，你拥有两个3环法术位。要施展1环法术{@spell 雷鸣波|PHB}，你必须消耗其中一个法术位，且你将其以3环法术施展。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"在1级时，你知晓两个来自术士法术列表的自选1环法术。",
+						"法剑士表格的\"已知法术\"栏展示了你何时习得更多1环及更高环阶的自选术士法术。你选择的法术环阶不得高于该表\"法术位环阶\"栏中对应你等级所示的环阶。例如，当你到达6级时，你习得一个新的术士法术，它可以是1环、2环或3环。",
+						"此外，当你在此职业中提升等级时，你可以选择一个你已知的术士法术，并用术士法术列表中的另一个法术替换之，替换后的法术环阶也必须是你拥有相应法术位的环阶。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"智力是你术士法术的施法属性，因此每当法术提及你的施法属性时，你使用智力。此外，当你设定所施展术士法术的豁免DC，或以其进行攻击检定时，你使用你的智力调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"type": "entries",
+					"name": "法器",
+					"entries": [
+						"你可以使用奥术法器作为你法术的施法法器。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Archetype",
+			"name": "范型",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 2,
+			"entries": [
+				"在2级时，你选择一个范型：剑术大师或魔导师。你的选择会在2级以及6级、11级、14级、18级和20级赋予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 2,
+			"entries": [
+				"在2级时，你采用一种特定的战斗风格作为专长。从下列选项中选择一项。即使你之后可以再次选择，你也不能重复选取同一战斗风格选项。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Archery",
+							"type": "entries",
+							"name": "箭术",
+							"entries": [
+								"你使用远程武器进行攻击检定时具有+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Dueling",
+							"type": "entries",
+							"name": "对决",
+							"entries": [
+								"单手持用一把近战武器，且并未同时持用其他武器时，你用该武器攻击的伤害掷骰获得 +2加值。"
+							]
+						},
+						{
+							"ENG_name": "Great Weapon Fighting",
+							"type": "entries",
+							"name": "巨武器战斗",
+							"entries": [
+								"双手持用一把近战武器发动攻击时，若你的伤害掷骰掷出1或2，则可以选择重掷。不过哪怕其仍是1或2，你都必须接受重掷的数值。此外，该武器必须具有双手或两用属性。"
+							]
+						},
+						{
+							"ENG_name": "Two-Weapon Fighting",
+							"type": "entries",
+							"name": "双武器战斗",
+							"entries": [
+								"当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Charged Blade",
+			"name": "充能之刃",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 3,
+			"entries": [
+				"当你到达3级时，你在战斗内外的魔法训练使你掌握了经由武器引导法术的能力，从而能将武器用作施法法器。此外，即使你单手或双手持有武器或盾牌，你也能完成法术的姿势成分。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 4,
+			"entries": [
+				"当你到达4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以替代选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 5,
+			"entries": [
+				"从第5级起，每当你在自己的回合执行{@action 攻击}动作时，你可以发动两次攻击而非一次。此外，你可以用一个戏法替代其中一次攻击。"
+			]
+		},
+		{
+			"ENG_name": "Archetype Feature",
+			"name": "范型特性",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一项由你的法剑士范型赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以替代选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Elemental Mastery",
+			"name": "元素精通",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 10,
+			"entries": [
+				"从10级起，你的秘法之刃特性所造成的额外伤害无视目标对该伤害类型的抗性。"
+			]
+		},
+		{
+			"ENG_name": "Archetype Feature",
+			"name": "范型特性",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 11,
+			"entries": [
+				"在11级时，你获得一项由你的法剑士范型赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以替代选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Archetype Feature",
+			"name": "范型特性",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 14,
+			"entries": [
+				"在14级时，你获得一项由你的法剑士范型赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Versatility",
+			"name": "秘法多变",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 15,
+			"entries": [
+				"在15级时，你将魔法注入武器的技艺已经精进，现在你可以依照秘法之刃特性为你的武器注入暗蚀与光耀伤害。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以替代选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Archetype Feature",
+			"name": "范型特性",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 18,
+			"entries": [
+				"在18级时，你获得一项由你的法剑士范型赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性无法将任何属性值提升超过20。",
+				"若你的DM允许使用专长，你可以替代选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Archetype Feature",
+			"name": "范型特性",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"level": 20,
+			"entries": [
+				"在20级时，你获得一项由你的法剑士范型赋予的特性。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Blademaster Archetype",
+			"name": "剑术大师范型",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "剑术大师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 2,
+			"entries": [
+				"剑术大师在战斗中最专注于以秘法之刃武器发动攻击，向敌人倾泻疾风怒涛般的攻势。"
+			]
+		},
+		{
+			"ENG_name": "Magical Might",
+			"name": "魔法力量",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "剑术大师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"在2级时，当你使用一件受秘法之刃特性加益的武器攻击命中一只生物时，你可以消耗一个法术位，在伤害掷骰中额外加入三个秘法之刃伤害骰。此额外伤害的类型与你的秘法之刃特性相同。"
+			]
+		},
+		{
+			"ENG_name": "Martial Expertise",
+			"name": "武艺精通",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "剑术大师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你学会由名为卓越骰的特殊骰子驱动的战技。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Maneuvers",
+							"type": "entries",
+							"name": "战技",
+							"entries": [
+								"你学会两项自选{@filter 战技|optionalfeatures|feature type=mv:b}，它们选自战斗大师范型的战士可用的{@filter 战技|optionalfeatures|feature type=mv:b}列表。许多战技会以某种方式强化一次攻击。你每次攻击只能使用一项战技。",
+								"你在11级和18级时会额外学会两项自选{@filter 战技|optionalfeatures|feature type=mv:b}。当你习得一项新战技时，你也可以用另一项战技替换一项你已知的战技。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Superiority Dice",
+							"type": "entries",
+							"name": "卓越骰",
+							"entries": [
+								"你拥有四枚卓越骰，它们是d8。卓越骰在使用时即被消耗。你在完成一次短休或长休后恢复所有已消耗的卓越骰。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Saving Throws",
+							"type": "entries",
+							"name": "豁免检定",
+							"entries": [
+								"你的部分战技需要目标进行豁免检定以抗拒战技的效应。战技的豁免DC计算如下：",
+								{
+									"ENG_name": "Maneuver",
+									"type": "abilityDc",
+									"name": "战技",
+									"attributes": [
+										"str",
+										"dex"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Additional Maneuvers",
+			"name": "额外战技",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "剑术大师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你在11级和18级时会额外学会两项自选{@filter 战技|optionalfeatures|feature type=mv:b}。当你习得一项新战技时，你也可以用另一项战技替换一项你已知的战技。"
+			]
+		},
+		{
+			"ENG_name": "Storm of Swords",
+			"name": "剑刃风暴",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "剑术大师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级起，你可以催动自身，以无与伦比的凶猛出击。在你的回合开始时，你可以进入剑刃风暴；直到你的下个回合结束，每当你以一次武器攻击命中时，你就可以对同一生物进行一次额外的武器攻击。",
+				"以此特性的额外攻击命中不会使你再获得一次额外攻击。",
+				"你可以使用此特性一次，18级时为两次；你在完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Triple Threat",
+			"name": "三重威胁",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "剑术大师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级起，每当你在自己的回合采取攻击动作时，你可以用一个附赠动作进行一次额外攻击。"
+			]
+		},
+		{
+			"ENG_name": "Additional Maneuvers",
+			"name": "额外战技",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "剑术大师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你在18级时会额外学会两项自选{@filter 战技|optionalfeatures|feature type=mv:b}。当你习得一项新战技时，你也可以用另一项战技替换一项你已知的战技。"
+			]
+		},
+		{
+			"ENG_name": "Magical Flurry",
+			"name": "魔法疾风连击",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "剑术大师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你的秘法之刃特性造成的伤害由1d10提升为1d12。"
+			]
+		},
+		{
+			"ENG_name": "Magister Archetype",
+			"name": "魔导师范型",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "魔导师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 2,
+			"entries": [
+				"魔导师更专注于法术，不断增强自身的魔法能力，并以千锤百炼的技艺施展更多、更强的法术。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Power",
+			"name": "秘法之力",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "魔导师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"在2级时，你在职业表所列法术位之外获得一个额外法术位，使你的法术位总数为3。你还习得一个额外戏法，使你的戏法总数为3（在10级时最终达到5个）。"
+			]
+		},
+		{
+			"ENG_name": "Magical Scholar",
+			"name": "魔法学者",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "魔导师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你已经研习了多种多样的魔法学科。从以下职业的法术列表中选择两个非戏法法术：吟游诗人、牧师、德鲁伊、邪术师或法师。你选择的法术必须是你所能施展的环阶（如法剑士表格所示），且对你而言视为术士法术。",
+				"它们不计入你的数量上限。"
+			]
+		},
+		{
+			"ENG_name": "Reflecting Ward",
+			"name": "反射守护",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "魔导师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级起，当一只生物对你发动攻击时，你可以用一个反应施展反射守护。直到你的下个回合开始，任何只以你为目标的攻击若未命中，且该攻击者的攻击掷骰本可命中其自身AC，则该攻击的伤害改为作用于该攻击生物。",
+				"你可以使用此特性一次，18级时为两次；你在完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Increased Arcane Power",
+			"name": "强化秘法之力",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "魔导师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你在职业表与先前特性所给法术位之外再获得一个法术位，使你的法术位总数为5。"
+			]
+		},
+		{
+			"ENG_name": "Magical Savant",
+			"name": "魔法大师",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "魔导师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你又研习了更多其他魔法学科。从以下职业的法术列表中选择两个非戏法法术：吟游诗人、牧师、德鲁伊、邪术师或法师。你选择的法术必须是你所能施展的环阶（如法剑士表格所示），且对你而言视为术士法术。",
+				"它们不计入你的数量上限。"
+			]
+		},
+		{
+			"ENG_name": "Extreme Arcane Power",
+			"name": "极致秘法之力",
+			"source": "FoxfireSpellblade",
+			"className": "法剑士",
+			"classSource": "FoxfireSpellblade",
+			"subclassShortName": "魔导师",
+			"subclassSource": "FoxfireSpellblade",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你可以从术士法术列表中学会两个6环法术。你可以分别施展这些法术一次，并在完成一次长休后能够再次施展它们。",
+				"此外，你再获得一个法术位，使你的法术位总数为7。"
+			]
+		}
+	]
+}
