@@ -1,0 +1,4874 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FoxfireAstartesInitiate",
+				"abbreviation": "FFAstartes",
+				"full": "阿斯塔特新兵",
+				"url": "https://homebrewery.naturalcrit.com/share/JO8W-fqk",
+				"version": "0.5",
+				"authors": [
+					"Foxfire94"
+				],
+				"convertedBy": [
+					"Foxfire94"
+				],
+				"color": "d09b45",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1585472488,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "68060b7d61"
+	},
+	"class": [
+		{
+			"ENG_name": "Astartes Inititate",
+			"name": "阿斯塔特新兵",
+			"source": "FoxfireAstartesInitiate",
+			"hd": {
+				"number": 1,
+				"faces": 12
+			},
+			"proficiency": [
+				"con"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"insight",
+								"intimidation",
+								"investigation",
+								"nature",
+								"perception",
+								"survival",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 短剑|phb|短剑}"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 短剑|phb}，(b) 任意一件{@filter 简易近战武器|items|source=phb|category=基础|type=简易武器;近战武器=sand}，(c) 一把{@item 短弓|phb}和20支箭，或 (d) 一把{@item 轻弩|phb}和20支弩矢",
+					"一把{@item 匕首|phb}"
+				],
+				"goldAlternative": "{@dice 5d4|5d4|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"短剑|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee"
+							}
+						],
+						"c": [
+							"短弓|phb"
+						],
+						"d": [
+							"轻弩|phb"
+						]
+					},
+					{
+						"_": [
+							"匕首|phb"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"额外移动速度"
+					],
+					"rows": [
+						[
+							"+5尺"
+						],
+						[
+							"+5尺"
+						],
+						[
+							"+5尺"
+						],
+						[
+							"+5尺"
+						],
+						[
+							"+5尺"
+						],
+						[
+							"+10尺"
+						],
+						[
+							"+10尺"
+						],
+						[
+							"+10尺"
+						],
+						[
+							"+10尺"
+						],
+						[
+							"+10尺"
+						],
+						[
+							"+15尺"
+						],
+						[
+							"+15尺"
+						],
+						[
+							"+15尺"
+						],
+						[
+							"+15尺"
+						],
+						[
+							"+15尺"
+						],
+						[
+							"+20尺"
+						],
+						[
+							"+20尺"
+						],
+						[
+							"+20尺"
+						],
+						[
+							"+20尺"
+						],
+						[
+							"+25尺"
+						]
+					]
+				},
+				{
+					"title": "属性值加值",
+					"colLabels": [
+						"力量",
+						"敏捷",
+						"体质",
+						"智力",
+						"感知",
+						"魅力"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							"+1",
+							0,
+							"+1",
+							0,
+							0,
+							0
+						],
+						[
+							"+2",
+							"+1",
+							"+1",
+							0,
+							0,
+							0
+						],
+						[
+							"+2",
+							"+1",
+							"+1",
+							0,
+							"+1",
+							0
+						],
+						[
+							"+3",
+							"+2",
+							"+2",
+							0,
+							"+1",
+							0
+						],
+						[
+							"+3",
+							"+2",
+							"+2",
+							0,
+							"+2",
+							0
+						],
+						[
+							"+3",
+							"+2",
+							"+3",
+							0,
+							"+2",
+							"+1"
+						],
+						[
+							"+4",
+							"+2",
+							"+3",
+							"+1",
+							"+3",
+							"+1"
+						],
+						[
+							"+4",
+							"+2",
+							"+4",
+							"+1",
+							"+3",
+							"+1"
+						],
+						[
+							"+4",
+							"+4",
+							"+4",
+							"+1",
+							"+4",
+							"+1"
+						],
+						[
+							"+4",
+							"+4",
+							"+4",
+							"+1",
+							"+5",
+							"+1"
+						],
+						[
+							"+4",
+							"+4",
+							"+5",
+							"+2",
+							"+5",
+							"+1"
+						],
+						[
+							"+5",
+							"+4",
+							"+5",
+							"+2",
+							"+5",
+							"+2"
+						],
+						[
+							"+5",
+							"+4",
+							"+6",
+							"+2",
+							"+5",
+							"+2"
+						],
+						[
+							"+5",
+							"+4",
+							"+6",
+							"+3",
+							"+6",
+							"+2"
+						],
+						[
+							"+6",
+							"+4",
+							"+7",
+							"+3",
+							"+6",
+							"+2"
+						],
+						[
+							"+6",
+							"+4",
+							"+7",
+							"+3",
+							"+6",
+							"+3"
+						],
+						[
+							"+7",
+							"+5",
+							"+7",
+							"+3",
+							"+6",
+							"+3"
+						],
+						[
+							"+7",
+							"+5",
+							"+8",
+							"+3",
+							"+6",
+							"+3"
+						],
+						[
+							"+8",
+							"+6",
+							"+8",
+							"+4",
+							"+6",
+							"+4"
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"遗传血脉|阿斯塔特新兵|FoxfireAstartesInitiate|1",
+				{
+					"classFeature": "可选特性|阿斯塔特新兵|FoxfireAstartesInitiate|1",
+					"gainSubclassFeature": true
+				},
+				"第二心脏|阿斯塔特新兵|FoxfireAstartesInitiate|1",
+				"淬炼|阿斯塔特新兵|FoxfireAstartesInitiate|2",
+				"骨强化器官|阿斯塔特新兵|FoxfireAstartesInitiate|2",
+				"肌肉强化器官|阿斯塔特新兵|FoxfireAstartesInitiate|3",
+				"血液强化器官|阿斯塔特新兵|FoxfireAstartesInitiate|4",
+				"训练课程|阿斯塔特新兵|FoxfireAstartesInitiate|4",
+				{
+					"classFeature": "遗传血脉特性|阿斯塔特新兵|FoxfireAstartesInitiate|4",
+					"gainSubclassFeature": true
+				},
+				"拉拉曼器官|阿斯塔特新兵|FoxfireAstartesInitiate|5",
+				"卡塔普珊神经节|阿斯塔特新兵|FoxfireAstartesInitiate|6",
+				"预置胃|阿斯塔特新兵|FoxfireAstartesInitiate|7",
+				"食忆器官|阿斯塔特新兵|FoxfireAstartesInitiate|8",
+				{
+					"classFeature": "遗传血脉特性|阿斯塔特新兵|FoxfireAstartesInitiate|8",
+					"gainSubclassFeature": true
+				},
+				"多肺|阿斯塔特新兵|FoxfireAstartesInitiate|9",
+				{
+					"classFeature": "视觉控制器官|阿斯塔特新兵|FoxfireAstartesInitiate|10",
+					"gainSubclassFeature": true
+				},
+				"莱曼之耳|阿斯塔特新兵|FoxfireAstartesInitiate|11",
+				{
+					"classFeature": "休眠膜|阿斯塔特新兵|FoxfireAstartesInitiate|12",
+					"gainSubclassFeature": true
+				},
+				"黑色素器官|阿斯塔特新兵|FoxfireAstartesInitiate|13",
+				{
+					"classFeature": "遗传血脉特性|阿斯塔特新兵|FoxfireAstartesInitiate|13",
+					"gainSubclassFeature": true
+				},
+				"卵石肾|阿斯塔特新兵|FoxfireAstartesInitiate|14",
+				"神经味蕾|阿斯塔特新兵|FoxfireAstartesInitiate|15",
+				{
+					"classFeature": "遗传血脉特性|阿斯塔特新兵|FoxfireAstartesInitiate|15",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "粘液腺|阿斯塔特新兵|FoxfireAstartesInitiate|16",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "贝彻尔腺体|阿斯塔特新兵|FoxfireAstartesInitiate|17",
+					"gainSubclassFeature": true
+				},
+				"基因种子腺|阿斯塔特新兵|FoxfireAstartesInitiate|18",
+				{
+					"classFeature": "遗传血脉特性|阿斯塔特新兵|FoxfireAstartesInitiate|18",
+					"gainSubclassFeature": true
+				},
+				"黑色甲壳|阿斯塔特新兵|FoxfireAstartesInitiate|19",
+				"神化|阿斯塔特新兵|FoxfireAstartesInitiate|20"
+			],
+			"subclassTitle": "遗传血脉",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Astartes Inititate",
+			"name": "阿斯塔特新兵",
+			"source": "FoxfireAstartesInitiate",
+			"entries": [
+				{
+					"ENG_name": "Astartes Inititate",
+					"source": "FoxfireAstartesInitiate",
+					"entries": [
+						"{@i \"他们将成为我最精锐的战士，这些把自身奉献给我的人。我要像捏塑黏土般塑造他们，在战争的熔炉里锻造他们。他们将拥有钢铁般的意志与铁铸的筋腱。我将为他们披上厚重的战甲，以最强大的武器将他们武装。瘟疫与疾病无法侵扰他们；没有任何疾患能折磨他们。他们将掌握无人能在战斗中胜过他们的战术、战略与机械。他们是我抵御恐怖的壁垒。他们是人类的守护者。他们是我的阿斯塔特......他们无所畏惧。\"}\u2014\u2014闪电之主",
+						"由于成熟体的阿斯塔特拥有骇人的战斗能力\u2014\u2014以秘术与炼金术捏塑锻造而成，战斗起来宛如一股无可阻挡的洪流\u2014\u2014他们常被称为\"死亡天使\"。要成为这般存在，必须经历漫长的入列试炼之旅，走完从血肉凡人到不朽兵器的道路。",
+						"阿斯塔特新兵正体现了这一历程。它与大多数职业不同：它考验你的角色仅凭自身的智慧与力量生存，同时随着你在战斗与事迹中证明自己，逐渐获得更强大的赐福。",
+						"本职业最适宜从1级玩到20级的长期战役，不过你在任意等级游玩皆可，只是显然只能领略其全部潜力的一部分。此外，建议你使用购点法或标准数列来生成初始属性值，而非掷骰\u2014\u2014由于本职业的属性值加值，掷骰可能造出极为强大的角色。",
+						{
+							"ENG_name": "Creating an Astartes Inititate",
+							"type": "entries",
+							"name": "创建阿斯塔特新兵",
+							"entries": [
+								"阿斯塔特新兵只从最卓越的凡人中选拔\u2014\u2014那些已证明自己是伟大战士、伟大谋略家，或以其他方式在族人中超群出众之人。是什么让你被选为新兵？你参加过哪些伟大的战役？你建立过怎样的功勋？",
+								{
+									"ENG_name": "Restriction: Humans Only",
+									"type": "entries",
+									"name": "限制：仅限人类",
+									"entries": [
+										"只有人类可以选择此职业。你的DM可以解除此限制以更契合战役。这一限制体现了该职业背后的创作意图；虽然你完全可以用其他种族游玩，但可能出现某些异常，例如但不限于：体型为大型的玩家角色，以及六尺高的半身人。"
+									]
+								},
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"你可以按照以下建议快速构建一名阿斯塔特新兵。首先，让体质成为你的最高属性值，其次是力量。然后，选择化外之民背景。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Astartes Inititate Multiclassing",
+							"type": "entries",
+							"name": "阿斯塔特新兵的兼职",
+							"entries": [
+								"你不能兼职进入或离开此职业。"
+							]
+						}
+					],
+					"name": "阿斯塔特新兵",
+					"type": "section"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Sons of the Angel",
+			"name": "大天使之子",
+			"shortName": "大天使之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"大天使之子|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|1",
+				"疾风连击|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|1",
+				"斗战之魂|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|4",
+				"红渴|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|12",
+				"不休不悯|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|13",
+				"武艺精湛|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|17",
+				"锋锐|阿斯塔特新兵|FoxfireAstartesInitiate|大天使之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Crimson King",
+			"name": "猩红君王之子",
+			"shortName": "猩红君王之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"spellcastingAbility": "int",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				1,
+				1,
+				1,
+				2,
+				2,
+				2,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			],
+			"subclassSpells": [
+				{
+					"className": "法师",
+					"classSource": "PHB"
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Sons of the Crimson King",
+							"name": "猩红君王之子",
+							"source": "FoxfireAstartesInitiate"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|subclass=阿斯塔特新兵：猩红君王之子}",
+						"{@filter 已知法术|spells|subclass=阿斯塔特新兵：猩红君王之子}",
+						"法术位",
+						"法术位环阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							1,
+							1,
+							1,
+							"{@filter 1环|spells|level=1|subclass=阿斯塔特新兵：猩红君王之子}"
+						],
+						[
+							1,
+							2,
+							1,
+							"{@filter 1环|spells|level=1|subclass=阿斯塔特新兵：猩红君王之子}"
+						],
+						[
+							1,
+							3,
+							1,
+							"{@filter 2环|spells|level=2|subclass=阿斯塔特新兵：猩红君王之子}"
+						],
+						[
+							2,
+							4,
+							2,
+							"{@filter 2环|spells|level=2|subclass=阿斯塔特新兵：猩红君王之子}"
+						],
+						[
+							2,
+							5,
+							2,
+							"{@filter 3环|spells|level=3|subclass=阿斯塔特新兵：猩红君王之子}"
+						],
+						[
+							2,
+							6,
+							2,
+							"{@filter 3环|spells|level=3|subclass=阿斯塔特新兵：猩红君王之子}"
+						],
+						[
+							3,
+							7,
+							2,
+							"{@filter 4环|spells|level=4|subclass=阿斯塔特新兵：猩红君王之子}"
+						],
+						[
+							3,
+							8,
+							3,
+							"{@filter 4环|spells|level=4|subclass=阿斯塔特新兵：猩红君王之子}"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"猩红君王之子|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|1",
+				"奥术学者|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|1",
+				"引路守护灵|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|4",
+				"法术卷轴|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|12",
+				"奥术觉醒|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|13",
+				"灵能武器|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|15",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|17",
+				"奥术戒律|阿斯塔特新兵|FoxfireAstartesInitiate|猩红君王之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Drake",
+			"name": "火龙之子",
+			"shortName": "火龙之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"火龙之子|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|1",
+				"锻造奇才|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|1",
+				"龙族血脉|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|4",
+				"锤砧|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|8",
+				"可选特性：基因缺陷|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|12",
+				"援手|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|13",
+				"锻造大师|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|16",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|17",
+				"无拘之焰|阿斯塔特新兵|FoxfireAstartesInitiate|火龙之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Gorgon",
+			"name": "戈尔贡之子",
+			"shortName": "戈尔贡之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"戈尔贡之子|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|1",
+				"冶金大师|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|1",
+				"铁手执铁|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|4",
+				"屹立而战|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|12",
+				"报复打击|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|13",
+				"无缝之甲|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|17",
+				"铁手执铁|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|18",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|戈尔贡之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Hydra",
+			"name": "九头蛇之子",
+			"shortName": "九头蛇之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"九头蛇之子|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|1",
+				"九头蛇之众首|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|1",
+				"致命即兴|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|4",
+				"多变战术|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|12",
+				"多变战术|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|13",
+				"斩一首......|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|15",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|17",
+				"始祖之血|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|18",
+				"多变战术|阿斯塔特新兵|FoxfireAstartesInitiate|九头蛇之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Iron",
+			"name": "钢铁之子",
+			"shortName": "钢铁之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"钢铁之子|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|1",
+				"攻城专家|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|1",
+				"凶残兵器|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|4",
+				"钢铁之锤|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|12",
+				"铁于内，铁于外|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|13",
+				"铁于内，铁于外|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|15",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|17",
+				"炮火齐射|阿斯塔特新兵|FoxfireAstartesInitiate|钢铁之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Khan",
+			"name": "可汗之子",
+			"shortName": "可汗之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"可汗之子|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|1",
+				"老练骑手|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|1",
+				"生而为骑|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|4",
+				"迅捷行动|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|12",
+				"马上压制|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|13",
+				"警戒守卫|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|17",
+				"冲锋陷阵|阿斯塔特新兵|FoxfireAstartesInitiate|可汗之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Lion",
+			"name": "雄狮之子",
+			"shortName": "雄狮之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"雄狮之子|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|1",
+				"骑士猎手|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|1",
+				"审讯者|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|4",
+				"黑暗守望者|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|12",
+				"不折之剑|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|13",
+				"骑士剑术|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|17",
+				"精准剑锋|阿斯塔特新兵|FoxfireAstartesInitiate|雄狮之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Lupercal",
+			"name": "卢佩卡尔之子",
+			"shortName": "卢佩卡尔之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"卢佩卡尔之子|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|1",
+				"随机应变|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|1",
+				"缠斗上去！|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|4",
+				"冷酷斗士|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|12",
+				"近身缠斗|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|13",
+				"矛之锋尖|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|17",
+				"碎骨者|阿斯塔特新兵|FoxfireAstartesInitiate|卢佩卡尔之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Night",
+			"name": "午夜之子",
+			"shortName": "午夜之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"午夜之子|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|1",
+				"自私之血|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|1",
+				"夜之恐怖|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|4",
+				"飞掷匕首|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|8",
+				"无声行动|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|12",
+				"暗夜之眼|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|13",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|13",
+				"残忍反击|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|17",
+				"谋杀天赋|阿斯塔特新兵|FoxfireAstartesInitiate|午夜之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Phoenician",
+			"name": "凤凰领主之子",
+			"shortName": "凤凰领主之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"凤凰领主之子|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|1",
+				"艺术沉溺|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|1",
+				"战斗风格|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|4",
+				"武人的骄傲|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|12",
+				"额外战斗风格|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|13",
+				"可选特性：基因缺陷|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|13",
+				"迅捷反应|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|17",
+				"马鲁·斯卡拉|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|18",
+				"额外战斗风格|阿斯塔特新兵|FoxfireAstartesInitiate|凤凰领主之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Praetorian",
+			"name": "禁卫之子",
+			"shortName": "禁卫之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"禁卫之子|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|1",
+				"筑垒之艺|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|1",
+				"不动如山的火力|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|4",
+				"沉稳射手|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|10",
+				"可选特性：基因缺陷|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|12",
+				"不动如山的火力|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|13",
+				"射击操典|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|16",
+				"可选特性：基因缺陷|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|17",
+				"盾墙|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|18",
+				"沉稳射手|阿斯塔特新兵|FoxfireAstartesInitiate|禁卫之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Raven",
+			"name": "暗鸦之子",
+			"shortName": "暗鸦之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"暗鸦之子|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|1",
+				"打了就跑|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|1",
+				"静默|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|4",
+				"千刀万剐|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|12",
+				"灵敏反应|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|13",
+				"不可触及|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|15",
+				"可选特性：基因缺陷|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|16",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|17",
+				"永不再|阿斯塔特新兵|FoxfireAstartesInitiate|暗鸦之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Reaper",
+			"name": "死神之子",
+			"shortName": "死神之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"死神之子|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|1",
+				"毒素痴迷|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|1",
+				"人类收割者|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|4",
+				"所向无前|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|12",
+				"腐朽之兆|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|13",
+				"腐朽之兆|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|16",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|17",
+				"瘟疫使者|阿斯塔特新兵|FoxfireAstartesInitiate|死神之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Regent",
+			"name": "摄政之子",
+			"shortName": "摄政之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"摄政之子|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|1",
+				"战争艺术|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|1",
+				"战斗策略|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|4",
+				"而他们无所畏惧|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|10",
+				"额外战斗策略|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|12",
+				"知己知彼|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|13",
+				"而他们无所畏惧|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|13",
+				"多元训练|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|17",
+				"致命一击|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|18",
+				"额外战斗策略|阿斯塔特新兵|FoxfireAstartesInitiate|摄政之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Slaughterer",
+			"name": "屠戮者之子",
+			"shortName": "屠戮者之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"屠戮者之子|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|1",
+				"角斗血统|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|1",
+				"嗜血|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|4",
+				"杀戮狂怒|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|12",
+				"暴力化身|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|13",
+				"嗜血|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|13",
+				"势不可挡|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|17",
+				"八重之路|阿斯塔特新兵|FoxfireAstartesInitiate|屠戮者之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Wolf King",
+			"name": "狼王之子",
+			"shortName": "狼王之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"狼王之子|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|1",
+				"阿埃特之民|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|1",
+				"可选特性：成年之礼|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|1",
+				"狼之螺旋|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|4",
+				"狼亲|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|4",
+				"一往无前|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|8",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|12",
+				"环境适应|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|13",
+				"守护符文|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|13",
+				"集群战术|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|17",
+				"凛冬嚎叫|阿斯塔特新兵|FoxfireAstartesInitiate|狼王之子|FoxfireAstartesInitiate|18"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Word",
+			"name": "怀言之子",
+			"shortName": "怀言之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassFeatures": [
+				"怀言之子|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|1",
+				"神圣奉献|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|1",
+				"蛊惑家|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|4",
+				"放逐|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|8",
+				"可选特性：基因差异|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|10",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|12",
+				"狂热十字军|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|13",
+				"无畏|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|15",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|16",
+				"鼓舞名言|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|17",
+				"信仰之力|阿斯塔特新兵|FoxfireAstartesInitiate|怀言之子|FoxfireAstartesInitiate|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Genetic Heritage",
+			"name": "遗传血脉",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"在第1级，你选择一条遗传血脉，它决定你的基因种子源自哪一位始祖。共有若干血脉可供选择，它们分别在1级、4级、8级、13级、15级和18级给予你特性；所有这些特性都在职业描述的末尾详述。"
+			]
+		},
+		{
+			"ENG_name": "Optional Features",
+			"name": "可选特性",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"type": "inset",
+			"entries": [
+				"某些遗传血脉会提供可选特性，例如会引用并改动基础职业特性的\"基因差异\"与\"基因缺陷\"。虽然设计意图是让你使用这些特性，但是否将它们纳入游戏由你自行决定。"
+			]
+		},
+		{
+			"ENG_name": "Secondary Heart",
+			"name": "第二心脏",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"在第1级，你以最简单、最具自持性的植入物开始从凡人向超人的转变；它让你在另一颗心脏受损或被摧毁后依然存活，也能让你在低氧环境中生存。但这不只是备用品\u2014\u2014这颗第二心脏还会加速你全身的血液循环。",
+				"你的体质豁免检定具有优势；它还会在第1级使你的移动速度提高5尺，并在第6、11、16和20级额外提高5尺，如职业表中\"额外移动速度\"一栏所示。"
+			]
+		},
+		{
+			"ENG_name": "Conditioning",
+			"name": "淬炼",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 2,
+			"entries": [
+				"在第2级，凭借植入手术的同时所接受的严苛淬炼\u2014\u2014化学处理、思想灌输与催眠疗法\u2014\u2014你从第2级起每级都获得属性值加值，如职业表中\"属性值加值\"各栏所示。这些加值可以让你的力量与体质属性值超过20，但至多不能超过24，而你的其他属性值则不能超过20。"
+			]
+		},
+		{
+			"ENG_name": "Ossmodula",
+			"name": "骨强化器官",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 2,
+			"entries": [
+				"在第2级，你获得一个小而复杂的管状器官，它分泌的激素会影响骨骼的骨化过程，并促进骨生长的形成，以吸收掺入你饮食中的陶瓷类化学物质。这将彻底改变你骨骼生长发育的方式。此植入物初次植入后，你的骨骼将变得更粗大、更坚固，你的肋骨也将融合成一块由相互咬合的防弹骨板组成的整体。",
+				"你获得力量豁免检定的熟练项，并且你的AC获得+1加值。"
+			]
+		},
+		{
+			"ENG_name": "Biscopea",
+			"name": "肌肉强化器官",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 3,
+			"entries": [
+				"在第3级，这个小小的圆形器官被植入你的胸腔，释放出的激素会大幅促进你全身肌肉的生长。它还为后续许多植入物奠定了激素基础。",
+				"你的徒手打击命中时造成1d4+你的力量调整值的钝击伤害。此伤害在第11级提高到1d6，在第18级提高到1d8。"
+			]
+		},
+		{
+			"ENG_name": "Genetic Heritage Feature",
+			"name": "遗传血脉特性",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"entries": [
+				"在第4级，你获得一项由你的遗传血脉给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Haemastamen",
+			"name": "血液强化器官",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"entries": [
+				"在第4级，这个器官被植入你的主循环系统。这个微小的植入物不仅能提高受术者血液中的血红蛋白含量，使血液更高效地在全身输送氧气，并让受术者的血液呈鲜红色，还能监控并调节之前植入的两件器官。",
+				"你的身高和体重分别增加12英寸和195磅，如今你比常人高出一个头甚至更多。若你的体型比试图威吓的对象更高或更大，你的威吓检定便具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Training Regimen",
+			"name": "训练课程",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"entries": [
+				"在第4级，严酷的训练课程磨炼了你的战斗技艺，你获得一件自选{@filter 军用近战武器|items|source=phb|category=基础|type=军用武器;近战武器=sand}与一件自选{@filter 军用远程武器|items|source=phb|category=基础|type=军用武器;远程武器=sand}的熟练项。",
+				"在第6级，每当你在自己回合执行攻击动作时，你可以攻击两次而非一次。",
+				"在第8级，你再选择两件{@filter 军用武器|items|source=phb|category=基础|type=军用武器}获得熟练项，并获得中甲的熟练项。",
+				"在第13级，你的技艺进一步拓宽，你获得所有{@filter 军用武器|items|source=phb|category=基础|type=军用武器}的熟练项。你还学会了防御性作战，获得盾牌的熟练项。",
+				"在第15级，你获得重甲的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Larraman's Organ",
+			"name": "拉拉曼器官",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 5,
+			"entries": [
+				"在第5级，你获得一个高尔夫球大小、形似肝脏的器官，此植入物被置于胸腔中并与循环系统相连。它生成并控制\"拉拉曼细胞\"，在你受伤时将其释放入血流。这些细胞附着于血液中的白细胞上，被运送到伤口处，一接触空气便几乎瞬间形成一块疤痕组织，封住你所受的任何创伤。",
+				"在你的回合，你可以用你的动作回复等同于1d12+你的体质调整值的生命值。此数值在第10级提高到2d12，第15级提高到3d12，第20级提高到4d12。一旦你使用了此特性，你必须完成一次长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Catalepsean Node",
+			"name": "卡塔普珊神经节",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 6,
+			"entries": [
+				"在第6级，这个神经节被植入后脑。这个豌豆大小的器官影响着睡眠的昼夜节律以及身体对睡眠剥夺的反应。一旦缺乏睡眠，卡塔普珊神经节便会介入。它通过依次关闭大脑的若干区域，让你能够边睡眠边保持清醒。这一过程无法完全取代睡眠，但能让你在休息时仍感知周围环境，从而提高你的生存能力。",
+				"长休时你只需休息4小时即可获得如同休息满8小时的效果，你还能连续两周不眠。此外，两次长休之间你还可以忽略一级{@condition 力竭}。"
+			]
+		},
+		{
+			"ENG_name": "Preomnor",
+			"name": "预置胃",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 7,
+			"entries": [
+				"在第7级，你获得预置胃。它本质上是一个前置的胃，能中和有毒或难以消化的食物。预置胃中并不进行真正的消化，而是充当消化系统中位于天然胃之前的净化腔，并可与消化道的其余部分隔开，以处理特别麻烦的摄入物。",
+				"变质、腐烂和生的食物不会对你造成任何不良影响，而且你对抗所摄入毒素的豁免检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Genetic Heritage Feature",
+			"name": "遗传血脉特性",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"entries": [
+				"在第8级，你获得一项由你的遗传血脉给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Omophagea",
+			"name": "食忆器官",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"entries": [
+				"在第8级，你获得食忆器官。这一植入物又称\"铭记者\"，能让你\"以食为学\"。它位于脊髓中，但实际是大脑的一部分。四束神经被植入以连接脊柱与胃壁；食忆器官能够\"读取\"或吸收你所摄入的基因物质，并将获得的信息以一组记忆或经历的形式传送给你的大脑。",
+				"若你在一小时内摄入过某生物的基因物质，则你为获知该生物所知信息而进行的智力（历史）检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Multi-lung",
+			"name": "多肺",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 9,
+			"entries": [
+				"在第9级，这枚额外的肺被植入体内，当你需要在低氧、有毒的环境乃至水下呼吸时，它便会激活。你的天然肺会被多肺附属的括约肌封闭，由植入的器官接管呼吸。它拥有极为高效的毒素分散系统。",
+				"你对抗造成毒素伤害的空气传播效应或攻击的豁免检定具有优势；此外，你还能够在水下呼吸。"
+			]
+		},
+		{
+			"ENG_name": "Occulobe",
+			"name": "视觉控制器官",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"entries": [
+				"在第10级，你获得视觉控制器官。这一植入物位于脑底，提供激素与基因刺激，使你的眼睛能够响应视力矫正治疗。这又使药剂师得以调整眼球与感光视网膜细胞的生长模式\u2014\u2014其结果是你的视力远超常人，在低光环境下的视觉几乎与白昼无异。",
+				"你周围60尺内的微光对你而言如同亮光，黑暗则如同微光。你能够分辨30尺内的颜色与细节，如同处于亮光中；超出该范围，你在黑暗中无法分辨颜色，只能看出深浅的灰。",
+				"如果你已经拥有黑暗视觉，则你的黑暗视觉范围增加60尺。"
+			]
+		},
+		{
+			"ENG_name": "Lyman's Ear",
+			"name": "莱曼之耳",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 11,
+			"entries": [
+				"在第11级，这一植入物使你免疫眩晕与晕动症，还能让你有意识地过滤并增强特定的声音。",
+				"你在对抗{@condition 震慑}或{@condition 耳聋}时具有优势，在对抗需要聆听的效应（例如法术）时也具有优势。你依赖听觉的感知（{@skill 察觉}）检定同样具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Sus-an Membrane",
+			"name": "休眠膜",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"entries": [
+				"在第12级，你获得休眠膜。这层薄膜最初植入于大脑上方，最终会与受术者的整个大脑融为一体。若无后续的化学治疗与训练，它便不会生效；但经过充分训练后，星际战士能借此进入假死状态\u2014\u2014可以主动进入，也可以作为对极端创伤的自动反应\u2014\u2014即使身负致命伤，也能让战士存活多年。",
+				"当你被降至0生命值并陷入昏迷时，你获得等同于你的等级的四分之一（向下取整）+你的体质调整值的临时生命值。你昏迷期间所受的伤害将先从这些临时生命值中扣除。若你三次死亡豁免检定全部失败而临时生命值仍有剩余，你不会死亡，而是每回合失去2点临时生命值，直至归零，届时你才死亡。此特性每次长休只会触发一次。"
+			]
+		},
+		{
+			"ENG_name": "Genetic Heritage Feature",
+			"name": "遗传血脉特性",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"entries": [
+				"在第13级，你获得一项由你的遗传血脉给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Melanchromic Organ",
+			"name": "黑色素器官",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"entries": [
+				"在第13级，这一植入物调控你皮肤中的黑色素含量。长时间暴晒于强烈阳光下会使你的皮肤代偿性地变黑。它还能保护你免受其他形式的辐射，而依你的遗传血脉而定，它也可能让你的肤色永久地变得极度苍白，或呈现花岗岩、黑曜石般的非自然质感。",
+				"你能够改变皮肤中的色素含量，以更好地抵御强烈的阳光。"
+			]
+		},
+		{
+			"ENG_name": "Oolitic Kidney",
+			"name": "卵石肾",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 14,
+			"entries": [
+				"在第14级，你获得卵石肾。与第二心脏协同作用时，这一植入物能让你极为快速地过滤血液，使你对大多数毒素免疫。然而这并非没有代价：这种紧急排毒通常会在血液高速循环期间使你陷入{@condition 失能}。该器官的日常功能是监控整个循环系统，让其他器官得以有效运作。",
+				"你获得毒素伤害抗性，并在对抗{@condition 中毒}时具有优势。如果你已{@condition 中毒}，你可以用你的动作过滤血液以移除{@condition 中毒}状态，但你会因此{@condition 失能}、{@condition 倒地}且无法移动，直至你的下个回合结束。",
+				"此外，随着基因种子对你身体的进一步改造，你的身高增加11英寸、体重增加195磅，你的躯体愈发庞大，密度也愈发致密。"
+			]
+		},
+		{
+			"ENG_name": "Genetic Heritage Feature",
+			"name": "遗传血脉特性",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"entries": [
+				"在第15级，你获得一项由你的遗传血脉给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Neuroglottis",
+			"name": "神经味蕾",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"entries": [
+				"在第15级，你获得神经味蕾。它将你的味觉强化到极高的程度，仅凭味道你就能辨认出许多常见的化学物质。",
+				"你甚至能仅凭味道追踪生物。你为凭味道辨识物质而进行的智力（{@skill 调查}）检定，以及为凭味道追踪生物而进行的感知（{@skill 求生}）检定，都具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Mucranoid",
+			"name": "粘液腺",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"entries": [
+				"在第16级，这一植入物让你能分泌一种覆盖皮肤的物质，它能抵御极端的高温与严寒，甚至能在真空中提供一定保护。",
+				"若你在自己的回合没有移动，你可以用你的动作出汗并在皮肤上形成涂层，使你获得对寒冷或火焰伤害之一的抗性（使用动作时选择），持续1分钟。一旦使用此动作，你必须完成一次长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Betcher's Gland",
+			"name": "贝彻尔腺体",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"entries": [
+				"在第17级，你获得贝彻尔腺体。它由两个相同的腺体组成，或植入下唇、唾液腺旁，或植入硬腭。这对腺体的运作方式类似毒蛇的毒腺，能合成并储存致命毒液\u2014\u2014得益于腺体的存在，你自己对其免疫。这使你能吐出令人致盲的接触性毒液。这种毒液还具有腐蚀性，时间充足时甚至能蚀穿坚固的金属。",
+				"你可以用你的附赠动作向目标喷射酸液，使用你的体质调整值对10尺内的一名生物进行远程攻击。命中时造成{@dice 2d6}毒素伤害和{@dice 2d4}强酸伤害，且目标必须进行体质豁免，DC等于8+你的熟练加值+你的体质调整值，豁免失败则{@condition 目盲}直至其下个回合结束。此特性的使用次数等同于你的体质调整值，完成一次长休后你重获所有已耗尽的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Genetic Heritage Feature",
+			"name": "遗传血脉特性",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"entries": [
+				"在第18级，你获得一项由你的遗传血脉给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Progenoids",
+			"name": "基因种子腺",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"entries": [
+				"在第18级，你获得基因种子腺。这种腺体有两个，一个位于颈内，另一个位于胸腔中。这对腺体至关重要，代表着你的血脉的未来，因为新的植入物唯有在阿斯塔特自己的体内孕育才能产生。",
+				"当你进行攻击检定、属性检定或豁免检定时，你可以使其具有优势。一旦使用了此特性，你必须完成一次长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "The Black Carapace",
+			"name": "黑色甲壳",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 19,
+			"entries": [
+				"在第19级，你获得黑色甲壳\u2014\u2014阿斯塔特最具标志性的植入物。它宛如一层黑色陶瓷薄膜，以片状直接植入你躯干的皮下。这些甲壳片外层硬化，使你的耐久更上一层楼。",
+				"你的AC加值提高至+2。"
+			]
+		},
+		{
+			"ENG_name": "Apotheosis",
+			"name": "神化",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"level": 20,
+			"entries": [
+				"当你达到第20级时，你臻于神化，成为真正阿斯塔特的漫长历程宣告完成。你如今身高至少两米，肌肉虬结，无论有否武器都致命无比\u2014\u2014已然超脱了你曾经的凡人之躯。",
+				"你的熟练加值提高+1，使其总数达到+7。",
+				"你的身高增加12英寸，体重增加195磅。你的衰老速度也比常人慢二十倍。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Sons of the Angel",
+			"name": "大天使之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"大天使之子是高贵而凶猛的战士，却隐藏着一个黑暗而可怕的秘密。他们表面上是最为正直的血脉之一，实则被永无止境的嗜血渴望所诅咒，令那些胆敢非议他们的人议论纷纷。"
+			]
+		},
+		{
+			"ENG_name": "Rapid Strikes",
+			"name": "疾风连击",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"从第1级起，你学会以精准换取迅捷的打击。如果你在自己回合执行攻击动作，且对其中一个目标的攻击检定具有优势，你可以放弃该次检定的优势，改为对同一目标发动一次额外的武器攻击，作为同一动作的一部分。你每回合至多以此方式攻击一次。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Spirit",
+			"name": "斗战之魂",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"从第4级起，你可以在自己回合用附赠动作使你的武器攻击检定获得优势，直至当前回合结束。",
+				"你能使用此特性三次，完成一次长休后，你重获所有已耗尽的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "The Red Thirst",
+			"name": "红渴",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，近战杀死一名敌人后，你必须进行一次DC为5的感知豁免；豁免失败则嗜血之欲充斥你的身心，你必须用你的下一个动作吞食被杀者的血肉，并因此回复1d6生命值。连续三天未饮血后，该豁免的DC提高至10。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"若你确实来自那片人类曾称为地狱的国度，那么回去时，告诉你的族人：将你掷回那里的，是大天使。\"",
+				"\u2014\u2014大天使，对被击败的邪魔所言"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"英雄，是把自己的生命献给比自己更宏大之物的人。\"",
+				"\u2014\u2014约瑟夫·坎贝尔"
+			]
+		},
+		{
+			"ENG_name": "Without Relent, Without Remorse",
+			"name": "不休不悯",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，当一名敌对生物离开你的触及范围时，你可以用你的反应放弃借机攻击，改为跟随该生物移动至多等于你移动速度一半的距离，若其仍在你的攻击范围内，随后对其发动攻击。",
+				"然而在战斗中，你不能主动寻找掩护或主动{@condition 倒地}。"
+			]
+		},
+		{
+			"ENG_name": "Martial Prowess",
+			"name": "武艺精湛",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，你的近战攻击检定获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"我的利刃劈开凡人的头盔，",
+				"我的长枪穿刺必中，",
+				"我的力量十倍于常人，",
+				"只因我心纯净。\"",
+				"\u2014\u2014加拉哈德爵士，丁尼生"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"使我们超凡的，既非堕向阴影，也非升向光明，而是二者之间永无止境的抗争\u2014\u2014伟大的品格正蕴于其中。我们历经试炼，而我们绝不折断。\"",
+				"\u2014\u2014大天使"
+			]
+		},
+		{
+			"ENG_name": "Keen Edge",
+			"name": "锋锐",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "大天使之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，若你的攻击具有优势，则你的近战武器攻击在掷出18、19或20时即为重击。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Crimson King",
+			"name": "猩红君王之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"猩红君王之子是声名显赫的法师、奥艺的饱学之士与危险魔法的修习者。他们对自身奥术能力的傲慢与自负，很可能终将招致毁灭。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Academic",
+			"name": "奥术学者",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第1级，你获得{@skill 奥秘}与{@skill 历史}技能的熟练项。若你已拥有其中一项技能的熟练项，则该技能的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Guiding Tutelary",
+			"name": "引路守护灵",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你获得一位守护灵\u2014\u2014一个栖居于星界的天界生物、精类或邪魔魔宠，由DM操控。每天一次，你可以在短休期间冥想并向它提出三个问题；回答是真是假、是直白还是隐晦，以及你的守护灵是否当真知晓你所求的答案，皆由DM裁量。"
+			]
+		},
+		{
+			"ENG_name": "Spell Scrolls",
+			"name": "法术卷轴",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，你获得制造法术卷轴的能力。你可以持有数量等同于你的智力调整值（至少为1）的卷轴；如果你制造了超出上限的卷轴，则由你选择销毁既有卷轴中的哪一张。",
+				"当你发现一个法师法术时，若你能腾出时间解读并抄录它，便可将其抄录到法术卷轴上。法术每有1个环阶，该过程便耗时1小时、花费25金币。这笔花费代表你在制作卷轴时消耗的材料成分，以及记录法术本身所需的精良墨水。",
+				"当你从一张现成的法术卷轴上抄录法术时，你必须通过一次DC等于10+法术环阶的智力（{@skill 奥秘}）检定。检定成功，则法术抄录成功。无论检定成功与否，被抄录的那张法术卷轴都会损毁。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"多有智慧，就多有愁烦；加增知识的，就加增忧伤。\"",
+				"\u2014\u2014《传道书》1:18"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"诸神的心智，非为凡人所知，亦非凡人可裁。\"",
+				"\u2014\u2014猩红君王"
+			]
+		},
+		{
+			"ENG_name": "Arcane Awakening",
+			"name": "奥术觉醒",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你开始解锁真正的魔法潜能，学会将手探入亚空间，编织那无形的世界以汲取力量。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从法师法术列表中习得一个自选戏法。在第16级和第19级，你再各习得一个自选的法师戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"猩红君王之子施法表展示了你拥有多少法术位。该表还展示了这些法术位的环阶；你所有的法术位环阶相同。要施展一个1环或更高环阶的法术，你必须消耗一个法术位。完成一次短休或长休后，你重获所有已耗尽的法术位。例如，当你达到17级时，你拥有两个3环法术位。要施展1环法术雷鸣波，你必须消耗其中一个法术位，且你将其以3环法术施展。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高环阶的已知法术",
+					"entries": [
+						"在第13级，你从法师法术列表中习得一个自选的1环法术。此后你每升一级，便从法师法术列表额外习得一个法术。",
+						"你所选的法术，其环阶不得高于表中你当前等级对应的\"法术位环阶\"一栏，且{@b 必须}与你其他1环及更高环阶的法术属于同一魔法学派。例如，当你达到16级时，你习得一个新的法师法术，它可以是1环、2环或3环。",
+						"此外，每当你在本职业中提升等级，你可以选择一个已知的法师法术，用法师法术列表中的另一个法术替换它；新法术同样必须是不高于你拥有的法术位环阶，且与你其他1环及更高环阶的法术属于同一魔法学派。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"你通过研究和记忆来学习法术，因此智力是你施展法师法术的施法属性。每当法术提及你的施法属性时，均使用你的智力。此外，你为你施展的法师法术设定豁免DC以及用其进行攻击检定时，都使用你的智力调整值。",
+						{
+							"ENG_name": "Spell save DC",
+							"type": "abilityDc",
+							"name": "法术豁免DC",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"ENG_name": "Spell attack modifier",
+							"type": "abilityAttackMod",
+							"name": "法术攻击加值",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				"最后，当你施展法术时，你的魔法有失控失稳、伤及自身与周遭之虞。当你施展1环或更高环阶的法术时，进行一次DC等于5+所用法术位环阶的智力豁免。",
+				"豁免失败则法术照常施展，但你引发了一阵狂野魔法浪涌：在结算法术效果后，在狂野魔法浪涌表上掷骰以决定其效果。此外，你受到等同于法术环阶数量的{@dice d10}心灵伤害。"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"type": "inset",
+			"entries": [
+				"在第15级，你的智力属性加值提高+2，但你的体质属性加值至多+6，且你的体质属性值上限降为22。"
+			]
+		},
+		{
+			"ENG_name": "Psychic Weaponry",
+			"name": "灵能武器",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级，你可以将你手持的近战武器用作施法法器。",
+				"此外，你手持近战武器时，可以用附赠动作消耗一个法术位为其灌注魔力。该近战武器的下一次命中额外造成每个所耗法术位环阶{@dice 1d8}点心灵伤害。若1分钟内未被使用，或你一旦不再手持该近战武器，其中的魔力便会消散。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"想逗上帝发笑，就把你的计划讲给他听。\"",
+				"\u2014\u2014伍迪·艾伦"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"若说我有何罪愆，那便只是单纯地追求知识。\"",
+				"\u2014\u2014猩红君王"
+			]
+		},
+		{
+			"ENG_name": "Arcane Discipline",
+			"name": "奥术戒律",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "猩红君王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你依据为法术所选的魔法学派获得一项加值。",
+				{
+					"ENG_name": "Abjuration",
+					"type": "entries",
+					"name": "防护",
+					"entries": [
+						"你可以在自身周围编织魔法以求护佑。当你施展一个1环或更高的防护系法术时，你可以同时抽出该法术的一缕魔力，在自身上创造一个魔法守御，持续至你完成一次长休。守御的生命值等同于两倍你的法师等级+你的智力调整值。每当你受到伤害时，守御将代为承受。若该伤害将守御降至0生命值，你承受剩余的伤害。",
+						"守御为0生命值时无法吸收伤害，但其魔法依然留存。每当你施展一个1环或更高的防护系法术，守御便回复等同于该法术环阶两倍的生命值。",
+						"一旦创造了守御，你必须完成一次长休后才能再次创造。"
+					]
+				},
+				{
+					"ENG_name": "Conjuration",
+					"type": "entries",
+					"name": "咒法",
+					"entries": [
+						"当你专注维持一个咒法系法术时，你的专注不会因受到伤害而中断。"
+					]
+				},
+				{
+					"ENG_name": "Divination",
+					"type": "entries",
+					"name": "预言",
+					"entries": [
+						"未来的片断开始涌入你的知觉。当你完成一次长休时，掷两个d20并记录掷出的数字。你可以用这些预知骰之一，替换你或你可见生物所进行的任意攻击检定、豁免检定或属性检定。你必须在进行检定之前选择替换，且每回合只能以此方式替换一次。",
+						"每个预知骰只能使用一次。当你完成一次长休时，所有未使用的预知骰都将失效。"
+					]
+				},
+				{
+					"ENG_name": "Enchantment",
+					"type": "entries",
+					"name": "惑控",
+					"entries": [
+						"当一个你可见的30尺内生物对你进行攻击检定时，若该攻击的射程内还有另一个生物，你可以用你的反应转移这次攻击。攻击者必须对你的法师法术豁免DC进行一次感知豁免。豁免失败时，攻击者必须转而以离它最近的生物为目标，你与它自身除外；若有多个生物同为最近，则由攻击者选择其一。豁免成功时，直至你完成一次长休前，你无法再对同一攻击者使用此特性。",
+						"你必须在得知攻击命中与否之前选择使用此特性。无法被{@condition 魅惑}的生物免疫此效应。"
+					]
+				},
+				{
+					"ENG_name": "Evocation",
+					"type": "entries",
+					"name": "塑能",
+					"entries": [
+						"你能在塑能系法术的效应中开辟出相对安全的角落。当你施展一个会影响你可见的其他生物的塑能系法术时，你可以选择其中数量等同于1+法术环阶的生物。被选中的生物对抗该法术的豁免检定自动成功，且若其豁免成功本可减半伤害，则它们不受任何伤害。"
+					]
+				},
+				{
+					"ENG_name": "Illusion",
+					"type": "entries",
+					"name": "幻术",
+					"entries": [
+						"你能近乎本能地对危险做出反应，瞬间创造一个自己的幻影分身。当一个生物对你进行攻击检定时，你可以用你的反应将幻影分身插入攻击者与你之间。该攻击自动未命中你，随后幻影消散。",
+						"一旦使用了此特性，你必须完成一次短休或长休后才能再次使用。"
+					]
+				},
+				{
+					"ENG_name": "Necromancy",
+					"type": "entries",
+					"name": "死灵",
+					"entries": [
+						"你获得从被你法术杀死的生物身上收割生命精粹的能力。当你用一个1环或更高的法术杀死一个或多个生物时（每回合一次），你回复等同于该法术环阶两倍的生命值；若该法术属于死灵学派，则回复三倍。杀死构装体或不死生物时你无法获得此收益。"
+					]
+				},
+				{
+					"ENG_name": "Transmutation",
+					"type": "entries",
+					"name": "变化",
+					"entries": [
+						"你将变形术加入你的法术书（若它尚不在其中）。你可以施放变形术而不消耗法术位。以此方式施放时，你只能以自己为目标，变形成一个挑战等级1或更低的野兽。",
+						"一旦以此方式施放了变形术，你必须完成一次短休或长休后才能再次如此施放，但你仍可照常使用可用法术位来施展它。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sons of the Drake",
+			"name": "火龙之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"火龙之子是锻造宗师，自称血脉源自巨龙本身。他们先关心能拯救何人，而非能战胜何物；在冲突中对平民的体恤，使他们普遍备受敬重。"
+			]
+		},
+		{
+			"ENG_name": "Prodigy of the Forge",
+			"name": "锻造奇才",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条遗传血脉时，你获得{@item 铁匠工具|PHB}与{@item 修补工具|PHB}的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Draconic Bloodline",
+			"name": "龙族血脉",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你会说、会读、会写{@language 龙语|PHB}，获得火焰伤害抗性，且造成火焰伤害的武器由你持用时，其火焰伤害翻倍。",
+				"此外，你免疫{@condition 恐慌}状态，但你的先攻检定承受-2减值。"
+			]
+		},
+		{
+			"ENG_name": "Hammer and Anvil",
+			"name": "锤砧",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，当你用{@item 战锤|PHB}或{@item 巨锤|PHB}攻击一名敌人时，若该敌人被夹在你与一面墙壁、或你的一名持盾盟友之间，则你掷出的武器伤害翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Flaws",
+			"name": "可选特性：基因缺陷",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"在第10级，由于一种奇特的\"余烬般\"的生物发光，你的双眼开始发出红光。此外，在第13级，你的皮肤开始永久变黑，呈现出花岗岩或黑曜石般的非自然质感。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"纵是最温柔甜美的心，也是为极端之战而造。\"",
+				"\u2014\u2014布莱恩特·麦吉尔"
+			]
+		},
+		{
+			"ENG_name": "Helping Hand",
+			"name": "援手",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，当你手持{@item 战锤|PHB}或{@item 巨锤|PHB}时，若你用协助动作协助盟友的近战攻击，你会将目标的防御暂且荡开。除该盟友的攻击检定具有优势外，其检定还获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Forgemaster",
+			"name": "锻造大师",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，你对锻炉与锻造之艺的造诣让你得以升级自己的武器与护甲，使其更为有效。",
+				"物品每升一级，该过程耗时3小时，花费相当于该物品价值五倍的金币。这笔花费代表改良物品所需的材料；武器每升一级，其攻击检定与伤害掷骰获得+1加值；护甲每升一级，其AC获得+1加值。",
+				"你为物品升级的上限为2级；在第18级，上限提高至3级。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"血肉孱弱，功业不朽。\"",
+				"\u2014\u2014火龙，对戈尔贡所言"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"在第17级，你的力量与体质属性加值各提高+1，达到各+9，但你的感知属性加值至多+4。"
+			]
+		},
+		{
+			"ENG_name": "The Unbound Flame",
+			"name": "无拘之焰",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "火龙之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，你可以用你的附赠动作点燃你手中的一件近战武器；点燃后1分钟内，它额外造成{@dice 2d6}火焰伤害，并被视为魔法武器。",
+				"此特性生效期间，被你武器命中的生物必须在其下个回合开始时通过一次DC为8+你的熟练加值+你的体质调整值的体质豁免，否则额外受到{@dice 2d4}火焰伤害。",
+				"完成一次长休后，你重获此特性的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Gorgon",
+			"name": "戈尔贡之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"戈尔贡之子崇尚力量高于一切，甚至连自己被强化过的血肉也心怀憎恶，宁取钢铁冰冷的确凿\u2014\u2014甚至以秘银板片覆裹双手，以表其虔诚。"
+			]
+		},
+		{
+			"ENG_name": "Metallurgy Master",
+			"name": "冶金大师",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条血脉时，你获得{@item 铁匠工具|PHB}与{@item 修补工具|PHB}的熟练项，且你涉及冶金与辨别金属种类的知识（智力）检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Manus Tenet Ferrum",
+			"name": "铁手执铁",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"从第4级起，你参加\"铁手执铁\"仪式\u2014\u2014以灌注魔力的秘银节段覆裹你的双手与前臂。你的徒手打击伤害掷骰可以加上两次你的力量调整值。",
+				"在第18级，此效果同样适用于你在第4级与第8级从训练课程特性中选择获得熟练项的任何近战武器。"
+			]
+		},
+		{
+			"ENG_name": "Stand and Fight",
+			"name": "屹立而战",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"从第8级起，你在战斗中不能主动寻找掩护、不能主动{@condition 倒地}，也不能主动执行撤离动作。",
+				"此外，你对抗{@condition 恐慌}的豁免检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"莫待铁热方锤击；以锤击使铁热。\"",
+				"\u2014\u2014威廉·巴特勒·叶芝"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"我们的纯洁时而予人启迪，我们的不洁时而又将我们击落。\"",
+				"\u2014\u2014亨利·大卫·梭罗"
+			]
+		},
+		{
+			"ENG_name": "Vengeful Strike",
+			"name": "报复打击",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"从第13级起，当你用{@item 战锤|PHB}、{@item 硬头锤|PHB}或{@item 巨锤|PHB}发动借机攻击并命中时，目标必须通过一次力量豁免（DC 8+你的熟练加值+你的力量调整值），否则被击倒{@condition 倒地}。"
+			]
+		},
+		{
+			"ENG_name": "Inviolate Armour",
+			"name": "无缝之甲",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级，当你身穿重甲时，你可以抵消远程攻击的非魔法伤害。被远程攻击命中时，掷2d4并从该攻击的伤害中减去掷出的数字。此减免在任何适用的抗性或易伤生效之前结算。但你的先攻值承受-1减值。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"钢铁并不强大，孩子。血肉更强。与持剑之手相比，钢铁算得了什么？\"",
+				"\u2014\u2014图尔萨·杜姆，对野蛮人柯南所言"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"有钢铁我们更强大，但没有灵魂我们一无是处。\"",
+				"\u2014\u2014卡尔丹·斯特诺斯"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"type": "inset",
+			"entries": [
+				"在第18级，你的力量与体质属性加值各提高+1，至第20级最终达到各+9，但你的敏捷属性加值至多+4。"
+			]
+		},
+		{
+			"ENG_name": "Manus Tenet Ferrum",
+			"name": "铁手执铁",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "戈尔贡之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，此效果同样适用于你在第4级与第8级从训练课程特性中选择获得熟练项的任何近战武器。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Hydra",
+			"name": "九头蛇之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"关于九头蛇之子，世人所知甚少。纵有相反的传闻，始终有流言称同一时刻世上只有一个九头蛇之子；毫无疑问，他们沉溺于马基雅维利式的欺诈与阴谋。"
+			]
+		},
+		{
+			"ENG_name": "The Many Heads of The Hydra",
+			"name": "九头蛇之众首",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条血脉时，每当不信任的人问起你的名字，你只简单地回答：\"我是众人之一。\"或诸如此类的变体。你的真名或被严密保守，或早已被遗忘。",
+				"你获得{@skill 欺瞒}技能、{@item 易容工具|PHB|易容工具}以及{@item 文书伪造工具|PHB|文书伪造工具}的熟练项。此外，你把自己易容成与你同种族之人时进行的检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Deadly Improvisation",
+			"name": "致命即兴",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你获得临时武器的熟练项，并且可以用附赠动作擒抱一个被你的临时武器或徒手打击命中的目标。"
+			]
+		},
+		{
+			"ENG_name": "Mutable Tactics",
+			"name": "多变战术",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，你可以从下列列表中选择一项加值：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"entries": [
+								"你可以用附赠动作执行疾走。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你可以用附赠动作执行撤离。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你获得{@skill 隐匿}技能的熟练项；若你已拥有该技能熟练项，则你的熟练加值在你进行的任何相应属性检定中翻倍。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你可以用你的反应对进入你触及范围的生物发动一次攻击。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你使用拥有熟练项的近战武器进行的攻击检定与伤害掷骰获得+1加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你使用拥有熟练项的远程武器进行的攻击检定与伤害掷骰获得+1加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你的先攻检定获得+2加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"穿越非魔法困难地形不需要消耗额外的移动尺数。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你获得敏捷豁免检定的熟练项。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你获得智力豁免检定的熟练项。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你获得感知豁免检定的熟练项。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你获得魅力豁免检定的熟练项。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你在一个已拥有熟练项的技能上进行的任何属性检定，熟练加值翻倍。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"你从职业特性所列的技能中额外获得一项新的技能熟练项。"
+							]
+						}
+					]
+				},
+				"你可以在完成一次长休时更改你的选择。在第13级，你可以从列表中选择第二项加值；在第18级，可以选择第三项。同一加值不可重复选择。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"我们即我们所伪装之物，故须谨慎对待自己的伪装。\"",
+				"\u2014\u2014库尔特·冯内古特"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"黑暗在我四周聚拢，",
+				"曾照耀的太阳正在黯淡，",
+				"我们必须谈谈别的事情，",
+				"我走之后，你可成为我。\"",
+				"\u2014\u2014睡魔"
+			]
+		},
+		{
+			"ENG_name": "Mutable Tactics",
+			"name": "多变战术",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你可以从你的多变战术特性下的列表中选择第二项加值。同一加值不可重复选择。"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"type": "inset",
+			"entries": [
+				"在第15级，你的敏捷属性加值提高+1、魅力属性加值提高+2，但你的力量与体质属性加值至多+6，且两项属性值均不能超过22。"
+			]
+		},
+		{
+			"ENG_name": "Sever One Head...",
+			"name": "斩一首......",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，当你受到伤害时，你可以用你的反应施放{@spell 镜影术|PHB}。该法术生效期间，你每剩余一个分身，你的伤害掷骰便获得+1加值。",
+				"完成一次长休后，你重获此特性的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"当邪恶直面邪恶，魔鬼亦不可欺。\"",
+				"\u2014\u2014古老谚语"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"我是众人之一。\"",
+				"\u2014\u2014九头蛇之子"
+			]
+		},
+		{
+			"ENG_name": "Blood of The Primogenitor",
+			"name": "始祖之血",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，你可以用你的动作释放始祖之血。在1分钟内，你的力量与体质属性值获得+2加值，你可以在自己回合用附赠动作发动一次额外攻击，且你的武器攻击在掷出19或20时即为重击。你的体质调整值提高所带来的生命值增加，计入你的临时生命值而非生命值上限。",
+				"完成一次长休后，你重获此特性的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Mutable Tactics",
+			"name": "多变战术",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "九头蛇之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以从你的多变战术特性下的列表中选择第三项加值。同一加值不可重复选择。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Iron",
+			"name": "钢铁之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"钢铁之子被自身的憎恨与刻骨的偏执所锻造的手足情谊维系在一起。他们是远程火力与攻城战的大师，冷酷坚硬一如其名；一边吟诵着\"不破祷文\"，一边有条不紊、毫不留情地收割敌人。"
+			]
+		},
+		{
+			"ENG_name": "Siege Expert",
+			"name": "攻城专家",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第1级，你获得{@item 铁匠工具|PHB}与{@item 石匠工具|PHB}的熟练项。你涉及进攻性攻城战相关的智力检定也具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Vicious Weaponry",
+			"name": "凶残兵器",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"从第4级起，当你持用链枷、巨锤或战锤时，你可以在自己回合用附赠动作调整姿态、延长挥击弧线以荡过目标的盾牌。直至本回合结束，你用{@item 链枷|PHB}、{@item 巨锤|PHB}或{@item 战锤|PHB}对任何使用盾牌的目标发动的攻击检定获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Hammer of Iron",
+			"name": "钢铁之锤",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"从第8级起，当你用{@item 链枷|PHB}、{@item 巨锤|PHB}或{@item 战锤|PHB}进行的近战攻击检定处于劣势时，若该攻击未命中，但两枚d20中较高的一枚本可命中，则目标受到等同于你的力量调整值（至少为0）的钝击伤害。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"没有人会一步堕落到底。\"",
+				"\u2014\u2014尤维纳利斯，《讽刺诗集》"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"告诉他们，毁灭已降临他们的世界\u2014\u2014死亡、绝望与赤红之战......",
+				"告诉他们，他们的希望与骄傲已化为泡影。",
+				"告诉他们，他们空洞的低语无人理会\u2014\u2014他们的神明已死，被人类的理性所弑。",
+				"告诉他们，死亡天使已然到来。",
+				"告诉他们，如今再无任何事物能拯救他们。\"",
+				"\u2014\u2014钢铁"
+			]
+		},
+		{
+			"ENG_name": "Iron Within, Iron Without",
+			"name": "铁于内，铁于外",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你对抗{@condition 魅惑}与{@condition 恐慌}的豁免检定具有优势。",
+				"此外，在第15级，当你持用盾牌时获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"entries": [
+								"若你在自己回合执行攻击动作，你可以用附赠动作尝试用盾牌推撞你5尺内的一名生物。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"若你未处于{@condition 失能}状态，你为抵抗仅以你为目标的法术或其他有害效应而进行的任何敏捷豁免，都可以加上你盾牌的AC加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"当你受某个要求你通过敏捷豁免以将伤害减半的效应影响时，你可以用你的反应将盾牌挡在你与该效应的来源之间，豁免成功则完全不受伤害。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"type": "inset",
+			"entries": [
+				"在第15级，掷一次d20。若掷出的数字高于13，你会变得多疑偏执，你的智力属性加值提高+2，但你的魅力属性加值至多+2。"
+			]
+		},
+		{
+			"ENG_name": "Iron Within, Iron Without",
+			"name": "铁于内，铁于外",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"此外，在第15级，当你持用盾牌时获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"entries": [
+								"若你在自己回合执行攻击动作，你可以用附赠动作尝试用盾牌推撞你5尺内的一名生物。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"若你未处于{@condition 失能}状态，你为抵抗仅以你为目标的法术或其他有害效应而进行的任何敏捷豁免，都可以加上你盾牌的AC加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"当你受某个要求你通过敏捷豁免以将伤害减半的效应影响时，你可以用你的反应将盾牌挡在你与该效应的来源之间，豁免成功则完全不受伤害。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"钢铁会把人掷向城墙。敌人哪怕只是起了一道墙的念头，他也会把我们的人朝它砸过去，仿佛别无他法。\"",
+				"\u2014\u2014禁卫"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"你不知道我梦见些什么。没有人知道，从没有人在乎到想要弄清。\"",
+				"\u2014\u2014钢铁"
+			]
+		},
+		{
+			"ENG_name": "Artillery Volley",
+			"name": "炮火齐射",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "钢铁之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你攻击超出远程武器常规射程的目标时不再具有劣势。若你攻击的目标超出远程武器的常规射程，你可以用附赠动作对同一目标发动一次额外的远程攻击。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Khan",
+			"name": "可汗之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"可汗之子多从家乡草原上的游牧部落中选拔。他们以迅雷般的骑兵冲击碾杀敌人；狂野的凶性之中，淬炼着炽烈的荣誉与正义感。"
+			]
+		},
+		{
+			"ENG_name": "Skilled Rider",
+			"name": "老练骑手",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第1级，你获得{@skill 驯兽}技能与{@filter 载具 (陆运)|items|source=phb;dmg|miscellaneous=平凡的|type=载具（陆运）}的熟练项。无论徒步还是骑乘，你都能如常穿越非魔法困难地形。"
+			]
+		},
+		{
+			"ENG_name": "Born to the Saddle",
+			"name": "生而为骑",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"从第4级起，你作为骑手的高超技艺显露无遗。你为避免落马而进行的豁免检定具有优势。若你从坐骑上跌落且下降不超过10尺，只要你未处于{@condition 失能}状态，便能以双脚落地。此外，上坐骑或下坐骑只消耗你5尺移动，而非你速度的一半。"
+			]
+		},
+		{
+			"ENG_name": "Swift Action",
+			"name": "迅捷行动",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"从第8级起，你在徒步时可以用附赠动作执行疾走。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"愿力量与迅捷化作手足。\"",
+				"\u2014\u2014拉尔夫·沃尔多·爱默生"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"马上取天下易，下马治天下难。\"",
+				"\u2014\u2014相传为成吉思汗所言"
+			]
+		},
+		{
+			"ENG_name": "Mounted Superiority",
+			"name": "马上压制",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，当你骑乘坐骑时，你用{@item 弯刀|PHB|弯刀}和{@item 长柄刀|PHB|长柄刀}对任何体型小于你坐骑的非骑乘生物发动的近战攻击检定具有优势。",
+				"此外，就骑乘坐骑而言，即使你的体重超过500磅，也只按500磅计。"
+			]
+		},
+		{
+			"ENG_name": "Vigilant Defender",
+			"name": "警戒守卫",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级，你可以迫使以你坐骑为目标的攻击改为以你为目标。若你的坐骑受某个允许它通过敏捷豁免将伤害减半的效应影响，则其豁免成功时完全不受伤害，豁免失败时也只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"这正是我为之所生，我必将策马出征。\"",
+				"\u2014\u2014可汗"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"你已无处可藏，我们如今认得你了。我们将在现实的每一个位面追猎你。所以现在看着我吧，夜叉，认清你的终结者。\"",
+				"\u2014\u2014可汗"
+			]
+		},
+		{
+			"ENG_name": "Ferocious Charger",
+			"name": "冲锋陷阵",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "可汗之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，无论是否骑乘，你都能碾杀你的敌人。若你在自己回合向一名生物直线移动至少10尺并用近战攻击命中它，该目标必须通过一次力量豁免（DC 8+你的熟练加值+你的力量调整值），否则被击倒{@condition 倒地}。你的每个回合只能使用一次此特性。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Lion",
+			"name": "雄狮之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"雄狮之子来自一片幽暗密林丛生之地，那里遍布危险致命的野兽；雄狮之子组成骑士团，猎杀这些邪恶巨兽，保护城镇村庄免遭林中居民的屠戮。"
+			]
+		},
+		{
+			"ENG_name": "Knightly Hunters",
+			"name": "骑士猎手",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第1级，除起始装备外，你还获得一套专为罩在护甲外穿着的兜帽长袍。你还曾在追踪、猎杀某一类敌人方面受过大量训练。选择一种敌人类型：异怪、野兽或怪兽。你为追踪所选敌人而进行的感知（{@skill 求生}）检定、为回忆其相关信息而进行的智力检定，以及针对它们发动的攻击检定，都具有优势。在第8级和第15级，你还各选择一种额外的敌人类型。"
+			]
+		},
+		{
+			"ENG_name": "Interrogator",
+			"name": "审讯者",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你的感知（{@skill 洞悉}）检定与智力（{@skill 调查}）检定均具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Watcher in the Dark",
+			"name": "黑暗守望者",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"从第8级起，当你用长剑或巨剑发动借机攻击时，该攻击具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"心灵越强大、越独特，便越倾向于孤独的信仰。\"",
+				"\u2014\u2014阿道司·赫胥黎"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"乐于独处者，非野兽即神明。\"",
+				"\u2014\u2014亚里士多德"
+			]
+		},
+		{
+			"ENG_name": "The Unbroken Sword",
+			"name": "不折之剑",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，当你手持长剑或巨剑时，可以用你的反应格挡一次敌方近战攻击，在你持握该武器期间，你的AC获得等同于你的熟练加值的加值以对抗该攻击。"
+			]
+		},
+		{
+			"ENG_name": "Knightly Swordsmanship",
+			"name": "骑士剑术",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级，你的剑术造诣使你用长剑与巨剑进行的攻击检定与伤害掷骰获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"宁我负天下人，休天下人负我。\"",
+				"\u2014\u2014曹孟德"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"当你们开疆拓土之时，我在习剑。当你们高坐议席之时，我在猎杀巨兽。当你们埋首案牍、撰写兵法之时，我在修炼内功。\"",
+				"\u2014\u2014雄狮"
+			]
+		},
+		{
+			"ENG_name": "Precision with the Blade",
+			"name": "精准剑锋",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "雄狮之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你用巨剑与长剑进行的近战武器攻击在掷出18、19或20时即为重击，且你可以重掷掷出1或2的伤害骰，但必须采用第二次结果。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Lupercal",
+			"name": "卢佩卡尔之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"卢佩卡尔之子被视作众多同侪中的翘楚。他们是一支可畏的力量，常担当进攻大军的矛尖，蓄势直插敌人的咽喉，以迅雷一击斩其首级。"
+			]
+		},
+		{
+			"ENG_name": "Adaptable",
+			"name": "随机应变",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条遗传血脉时，你从职业特性所列的技能清单中额外获得两项技能熟练项；或者，你也可以选择你的一项技能熟练项\u2014\u2014你使用该熟练项进行的任何属性检定，熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Pile In!",
+			"name": "缠斗上去！",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，若至少一名你的盟友位于某生物5尺内且该盟友未处于{@condition 失能}状态，则你对该生物发动的近战武器攻击检定与伤害掷骰获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Merciless Fighter",
+			"name": "冷酷斗士",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，你可以用你的附赠动作发动一次徒手打击。",
+				"此外，在你触及范围内的一名生物的回合结束时，若至少一名你的盟友位于该生物5尺内且该盟友未处于{@condition 失能}状态，你可以用你的反应对该生物发动一次徒手打击。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"宁在地狱称王，不在天堂为奴。\"",
+				"\u2014\u2014撒旦，出自约翰·弥尔顿《失乐园》"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"纵然最明亮者已然堕落，天使依旧光辉。\"",
+				"\u2014\u2014威廉·莎士比亚"
+			]
+		},
+		{
+			"ENG_name": "Close Combat",
+			"name": "近身缠斗",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，处在一个敌对生物5尺范围内不再使你的远程攻击检定具有劣势。",
+				"此外，当你执行攻击动作并用单手武器攻击时，你可以用附赠动作用你手持的一件单手远程武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Tip of the Spear",
+			"name": "矛之锋尖",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，你的先攻检定具有优势。此外，你对战斗中尚未行动过的任何生物发动的攻击检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"当你走到所知一切的边缘、即将坠入未知的黑暗时，信念就是知道以下二者必居其一：要么会有坚实的立足之地，要么你会学会飞翔。\"",
+				"\u2014\u2014卢佩卡尔"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"告诉一个人他有了新主人，他只会耸耸肩。",
+				"告诉一个人新主人要抽走他五分之一的收成，他就会去拿草叉了。\"",
+				"\u2014\u2014相传为卢佩卡尔所言"
+			]
+		},
+		{
+			"ENG_name": "Bone Breaker",
+			"name": "碎骨者",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "卢佩卡尔之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，当你的近战攻击造成重击时，你可以尝试重创你的敌人。该生物必须通过一次DC为8+你的熟练加值+你的力量调整值的体质豁免，否则陷入{@condition 失能}状态，移动速度降为5尺，并被击倒{@condition 倒地}。此效果持续至其被高等复原术之类的法术治愈为止。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Night",
+			"name": "午夜之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"午夜之子选拔自当地最凶残的刺客与罪犯，是冷酷无情的杀手；他们以敌人的骸骨与剥下的皮装饰护甲，如超自然的掠食者般潜行于暗影之中。"
+			]
+		},
+		{
+			"ENG_name": "Selfish Blood",
+			"name": "自私之血",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条遗传血脉时，若你用你的动作执行了撤离，你可以用你的附赠动作执行疾走。"
+			]
+		},
+		{
+			"ENG_name": "Night Terrors",
+			"name": "夜之恐怖",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你获得{@skill 隐匿}与{@skill 威吓}技能的熟练项。若你已拥有其中一项技能的熟练项，则该技能的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Silent Movement",
+			"name": "无声行动",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，你拥有熟练项的中甲不再使你的敏捷（{@skill 隐匿}）检定具有劣势。",
+				"在第15级，此效果扩展至你拥有熟练项的重甲。"
+			]
+		},
+		{
+			"ENG_name": "Throwing Daggers",
+			"name": "飞掷匕首",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，若你的物品栏中有一把{@item 匕首|PHB}，你可以用你的附赠动作将{@item 匕首|PHB}抽出并掷向10尺内的一名生物，且该攻击检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"与怪物战斗的人，应当小心自己不要成为怪物。当你凝视深渊时，深渊也在凝视你。\"",
+				"\u2014\u2014弗里德里希·尼采"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"世上没有所谓偏执这回事。你最深的恐惧随时可能成真。\"",
+				"\u2014\u2014亨特·S·汤普森"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"type": "inset",
+			"entries": [
+				"在第13级，你的敏捷属性加值提高+1，至第20级最终达到+7；但你的力量属性加值至多+7。",
+				"此外，掷一次d20：若掷出13或更高，你的天然肤色会日渐苍白，直至死寂的惨白。"
+			]
+		},
+		{
+			"ENG_name": "Eyes of The Night",
+			"name": "暗夜之眼",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你的黑暗视觉范围增加60尺。",
+				"然而，当你自己、你的攻击目标或你试图察觉的对象处于直射阳光下时，你的攻击检定以及依赖视觉的感知（{@skill 察觉}）检定具有劣势。",
+				"此外，掷一次d20：若掷出13或更高，你的双眼变为漆黑色。"
+			]
+		},
+		{
+			"ENG_name": "Cruel Counter",
+			"name": "残忍反击",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，当你执行攻击动作且仅用{@item 长柄刀|PHB}、{@item 长戟|PHB}或{@item 长棍|PHB}攻击时，你可以用你的附赠动作以武器的另一端发动一次近战攻击。此攻击使用与主武器相同的属性调整值，其伤害骰为{@dice d6}，造成钝击伤害。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"知道我这些年是怎么活下来的吗？靠恐惧。靠令人胆寒的酷烈行径。有人偷我的东西：我砍掉他的手。有人冒犯我：我割掉他的舌头。有人背叛我：我砍下他的头，插在长矛上，高高举起，让街上所有人都看见。这就是维系秩序的东西。恐惧。\"",
+				"\u2014\u2014\"屠夫\"比尔，《纽约黑帮》"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"做恐惧的对象，远胜于做敬重的对象\u2014\u2014前者是灵魂的真相，后者是心智的幻象。\"",
+				"\u2014\u2014《九头蛇法典》"
+			]
+		},
+		{
+			"ENG_name": "A Talent for Murder",
+			"name": "谋杀天赋",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "午夜之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，若你未处于{@condition 失能}状态的盟友在某生物5尺内的数量，多于该生物未处于{@condition 失能}状态的盟友在其5尺内的数量，则你对该生物的攻击检定与伤害掷骰获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Phoenician",
+			"name": "凤凰领主之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"无论武艺还是艺术，凤凰领主之子都是彻头彻尾的完美主义者，凡经手之事必求登峰造极，造就了数一数二的决斗者与匠人。"
+			]
+		},
+		{
+			"ENG_name": "Artistic Indulgence",
+			"name": "艺术沉溺",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第1级，你从下列清单中获得两种工匠工具的熟练项：{@item 书法工具|PHB}、{@item 玻璃匠工具|PHB}、{@item 珠宝匠工具|PHB}、{@item 画家工具|PHB}、{@item 陶匠工具|PHB}、{@item 木雕工具|PHB}，或任意{@filter 乐器|items|miscellaneous=平凡的|type=乐器}。",
+				"此外，你的完美主义天性与波西米亚式的志趣使你更易沉溺成瘾，也更易放纵于享乐主义。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你从下列列表中获得一种战斗风格。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Archery",
+							"type": "entries",
+							"name": "箭术",
+							"entries": [
+								"你用远程武器进行的攻击检定获得+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Duelling",
+							"type": "entries",
+							"name": "对决",
+							"entries": [
+								"当你单手持用一把近战武器且未持用其他武器或盾牌时，你用该武器造成的伤害掷骰获得+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Great Weapon Fighting",
+							"type": "entries",
+							"name": "巨武器战斗",
+							"entries": [
+								"当你用双手持用的近战武器攻击时，若伤害骰掷出1或2，你可以重掷该骰并必须使用新结果，即使新结果仍是1或2。该武器必须具有双手或两用属性，你才能获得此收益。"
+							]
+						},
+						{
+							"ENG_name": "Two-Weapons Fighting",
+							"type": "entries",
+							"name": "双武器战斗",
+							"entries": [
+								"当你进行双武器战斗时，你可以将属性调整值加在第二次攻击的伤害上。"
+							]
+						}
+					]
+				},
+				"在第13级和第18级，你可以再各选择一种额外的战斗风格。同一种战斗风格不可重复选择。"
+			]
+		},
+		{
+			"ENG_name": "Martial Pride",
+			"name": "武人的骄傲",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，当你近战攻击挑战等级（或等级）不低于你等级的生物时，你的攻击检定获得+2加值。",
+				"然而，你对挑战等级（或等级）低于你等级四分之一的生物发动的攻击检定承受-2减值。此加值或减值可与战斗风格叠加。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"我终于想明白了，活着的唯一理由就是享受它。\"",
+				"\u2014\u2014丽塔·梅·布朗"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"恋于逸乐者，必毁于逸乐\"",
+				"\u2014\u2014克里斯托弗·马洛，《浮士德博士》"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Flaws",
+			"name": "可选特性：基因缺陷",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"type": "inset",
+			"entries": [
+				"在第13级，你的容貌可能改变：掷一次d20。若掷出15或更高，你的双眼自然呈现紫色。",
+				"此外，若掷出20，该植入物将发生故障，你失去黑色素器官特性，肤色变得苍白。"
+			]
+		},
+		{
+			"ENG_name": "Additional Fighting Style",
+			"name": "额外战斗风格",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你从列表中额外获得一种战斗风格。同一种战斗风格不可重复选择。"
+			]
+		},
+		{
+			"ENG_name": "Fast Reflexes",
+			"name": "迅捷反应",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级，你将反应磨砺得愈发敏锐，你的先攻获得+5加值。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"凡事总有个该停下的限度，我们显然早就越过了\u2014\u2014但咱们继续下去，看看会怎样。\"",
+				"\u2014\u2014佚名"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"世间确有完美存在，而我们活着的目的就是找到那份完美并将其展现。凡是束缚我们的一切，都必须抛诸一旁。\"",
+				"\u2014\u2014凤凰领主"
+			]
+		},
+		{
+			"ENG_name": "Additional Fighting Style",
+			"name": "额外战斗风格",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你从列表中额外获得一种战斗风格。同一种战斗风格不可重复选择。"
+			]
+		},
+		{
+			"ENG_name": "The Maru Skara",
+			"name": "马鲁·斯卡拉",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "凤凰领主之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你的武器攻击在掷出18、19或20时即为重击。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Praetorian",
+			"name": "禁卫之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"禁卫之子是筑垒艺术的大师，他们的匠心之作几乎固若金汤，数千年屹立不倒\u2014\u2014恰如他们自己。"
+			]
+		},
+		{
+			"ENG_name": "Fortress-Craft",
+			"name": "筑垒之艺",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第1级，你获得{@item 木匠工具|PHB}与{@item 石匠工具|PHB}的熟练项。你涉及防御性攻城战相关的智力检定也具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Unfaltering Fire",
+			"name": "不动如山的火力",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你对抗{@condition 恐慌}的豁免检定具有优势。此外，若你处于四分之三掩护中，且你在自己回合执行了攻击动作，便可以用附赠动作发动一次额外的远程攻击。",
+				"从第13级起，此效果扩展至半掩护。"
+			]
+		},
+		{
+			"ENG_name": "Steady Marksman",
+			"name": "沉稳射手",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，当你处于至少四分之三掩护中时，你的远程攻击具有优势。",
+				"在第18级，此效果扩展至半掩护。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"一想起竟有如此多的人为诚实而震惊、却极少有人为欺骗而震惊，便令人沮丧。\"",
+				"\u2014\u2014诺埃尔·科沃德"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Flaws",
+			"name": "可选特性：基因缺陷",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"当你达到第12级时，掷一次d20：若掷出1，你失去休眠膜特性的使用。",
+				"当你达到第17级时，再掷一次d20：若掷出1，你失去贝彻尔腺体特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Unfaltering Fire",
+			"name": "不动如山的火力",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"从第13级起，你的不动如山的火力特性同样适用于半掩护。"
+			]
+		},
+		{
+			"ENG_name": "Firing Drill",
+			"name": "射击操典",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，若你在自己回合移动0尺，则你用弩（轻弩、重弩、手弩等）进行的攻击检定与伤害掷骰获得+2加值，且你拥有熟练项的弩的装填属性对你无效。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"若我们耻于言之，便不该耻于思之。\"",
+				"\u2014\u2014马库斯·图利乌斯·西塞罗"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Flaws",
+			"name": "可选特性：基因缺陷",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"当你达到第17级时，掷一次d20：若掷出1，你失去贝彻尔腺体特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Phalanx",
+			"name": "盾墙",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，你可以用你的动作将盾牌插在地上，形成一片5尺宽、4尺高的半掩护区域，前提是你的盾牌足够大，能提供该尺寸的掩护（由你的DM裁定）。此掩护持续存在，直至盾牌被摧毁，或你在自己回合用附赠动作将其拔出。"
+			]
+		},
+		{
+			"ENG_name": "Steady Marksman",
+			"name": "沉稳射手",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "禁卫之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你的沉稳射手特性同样适用于半掩护。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Raven",
+			"name": "暗鸦之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"暗鸦之子举止阴郁、心事重重，沉郁的表象掩盖着他们真正的力量。他们精于迅疾而惨烈的攻击\u2014\u2014起手即终了，只留死亡于身后。"
+			]
+		},
+		{
+			"ENG_name": "Hit and Run",
+			"name": "打了就跑",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条血脉时，你已学会在攻击之间以迅速的退避躲开危险。你可以用附赠动作执行撤离。"
+			]
+		},
+		{
+			"ENG_name": "Silence",
+			"name": "静默",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你获得{@skill 隐匿}技能的熟练项，且护甲不再使你的{@skill 隐匿}检定具有劣势。若你已拥有{@skill 隐匿}的熟练项，则该技能的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Death By A Thousand Cuts",
+			"name": "千刀万剐",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"从第8级起，当你双手各持用一把具有轻型属性的近战武器时，你用这些武器进行的攻击检定获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"当你孤身一人深入敌后，没有炮火，没有空袭，没有撤离的希望\u2014\u2014你不是在打脏仗。你做的事，能让脏仗都显得光彩。\"",
+				"\u2014\u2014惩罚者"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"泪眼之中，看不见未来。\"",
+				"\u2014\u2014纳瓦霍谚语"
+			]
+		},
+		{
+			"ENG_name": "Nimble Reflexes",
+			"name": "灵敏反应",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"从第13级起，当你受某个允许你通过敏捷豁免将伤害减半的效应影响时，豁免成功则你完全不受伤害，豁免失败也只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Untouchable",
+			"name": "不可触及",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，你的闪避之技已臻化境，攻击者几乎无法在你身上占得先机。只要你未处于{@condition 失能}状态且察觉到攻击者，攻击检定对你就不具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"在第16级，你的敏捷属性加值提高+1，但你的力量属性加值至多+7，且该属性值不能超过23。"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Flaws",
+			"name": "可选特性：基因缺陷",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"在第16级，掷一次d20：若掷出1，你的植入物失效，失去粘液腺特性。在第17级再掷一次d20：若掷出1，你的贝彻尔腺体植入物失效，同样失去该特性。此外，随着时间推移，你的肤色会自然变得愈发苍白，近乎全白，你的眼睛与头发则变为深黑色。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"我们是杀戮的阴影，是无人起疑的隐匿死亡。\"",
+				"\u2014\u2014暗鸦"
+			]
+		},
+		{
+			"ENG_name": "Nevermore",
+			"name": "永不再",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "暗鸦之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"当你达到第18级时，你深谙悄然出击、乘敌不备之道。每回合一次，若你用一件具有轻型属性的武器进行的第一次攻击检定具有优势，则命中时你可以造成三倍于所掷伤害的伤害；此效果仅适用于你的第一次攻击，不适用于你该回合的后续攻击。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Reaper",
+			"name": "死神之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"死神之子是毒物与腐朽的阴森宗师。他们对连其他阿斯塔特都无法承受的毒素也甘之如饴，以带给他人的腐烂与毁灭为乐；他们坚定不移的推进，如手中挥舞的长镰一般收割猎物。"
+			]
+		},
+		{
+			"ENG_name": "Toxic Obsession",
+			"name": "毒素痴迷",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第1级，你获得{@item 毒药工具|PHB}的熟练项，并且你可以在自己回合用附赠动作为一件武器或10发弹药敷毒。只要该物品仍由你持有，所敷的毒便持续保有毒性。"
+			]
+		},
+		{
+			"ENG_name": "Manreaper",
+			"name": "人类收割者",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你获得\"人类收割者\"的熟练项\u2014\u2014这是一种大型而凶残的镰形武器。你可以花费1小时与10金币，将一把{@item 战镐|PHB}改造成人类收割者。它形似一柄巨镰，伤害类型改为挥砍而非穿刺，并获得多用（1d10）属性。",
+				"若你双手持用人类收割者，你可以让攻击具有劣势，改为以你5尺内彼此相邻的至多三个生物为目标。"
+			]
+		},
+		{
+			"ENG_name": "Implacable Advance",
+			"name": "所向无前",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，你的移动速度永远不会被降至5尺以下。但那些会令你无法移动的效应，例如{@condition 麻痹}状态，仍会阻止你移动。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"我们皆是暴君。不要自欺。我们生来便只为如此。\"",
+				"\u2014\u2014死神"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"如今，我成了死亡，世界的毁灭者。\"",
+				"\u2014\u2014罗伯特·奥本海默，引自印度教经典《薄伽梵歌》"
+			]
+		},
+		{
+			"ENG_name": "Portents of Rot",
+			"name": "腐朽之兆",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你获得毒素伤害免疫，并免疫{@condition 中毒}与{@condition 恐慌}状态。",
+				"在第15级，你还获得暗蚀伤害抗性。"
+			]
+		},
+		{
+			"ENG_name": "Portents of Rot",
+			"name": "腐朽之兆",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级，你还获得暗蚀伤害抗性。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"我不像你们。我不会沉溺于这腐朽之中。我利用它。我掌控它。我为它设下界限。\"",
+				"\u2014\u2014死神"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"在第17级，你的体质属性加值提高+1，达到+9，但你的魅力属性加值至多+3。"
+			]
+		},
+		{
+			"ENG_name": "Plaguebringer",
+			"name": "瘟疫使者",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "死神之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用你的附赠动作为武器附魔。在1分钟内，你的攻击额外造成等同于所掷伤害一半（向下取整）的暗蚀伤害。",
+				"此外，此特性生效期间，被你攻击命中的生物必须在其回合开始时通过一次体质豁免，否则陷入{@condition 中毒}状态并受到{@dice 2d8}毒素伤害；该豁免的DC为8+你的体质调整值。豁免成功则该生物不会{@condition 中毒}，且只受一半毒素伤害。",
+				"完成一次长休后，你可重获此特性的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Regent",
+			"name": "摄政之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"摄政之子个个都是开疆拓土的帝国营造者，为自己在这片土地上亲手开创的小小领地而自豪。他们受训于班组作战，并肩作战时的配合精准得近乎超自然。"
+			]
+		},
+		{
+			"ENG_name": "Art of War",
+			"name": "战争艺术",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条血脉时，你获得一种自选{@filter 工匠工具|items|miscellaneous=平凡的|type=工匠工具}的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Combat Tactics",
+			"name": "战斗策略",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"从第4级起，你可以用你的附赠动作使用下列详述的一种战斗策略。你能以此方式使用两次，完成一次短休或长休后重获已耗尽的使用次数。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"ENG_name": "With me, as one!",
+							"type": "entries",
+							"name": "随我同战！",
+							"entries": [
+								"当你用一次攻击命中某个目标后，你可以用你的附赠动作选择至多3个你可见的友方生物；直至它们各自的下个回合结束，它们对被你命中的目标发动的攻击检定均具有优势。"
+							]
+						},
+						{
+							"ENG_name": "Focus Fire!",
+							"type": "entries",
+							"name": "集火！",
+							"entries": [
+								"你对本回合已被盟友攻击命中过的目标发动的攻击检定具有优势。"
+							]
+						},
+						{
+							"ENG_name": "Rally to me brothers!",
+							"type": "entries",
+							"name": "弟兄们，向我集结！",
+							"entries": [
+								"选择至多3个你可见的友方生物，它们均获得等同于1d8+你的魅力调整值（至少为1）的临时生命值。"
+							]
+						},
+						{
+							"ENG_name": "Hold the line!",
+							"type": "entries",
+							"name": "守住阵线！",
+							"entries": [
+								"选择至多3个你可见的友方生物，可以包括你自己。若一个敌对生物进入其中某个生物的5尺内，该生物可以用其反应对该敌对生物发动一次近战攻击。"
+							]
+						}
+					]
+				},
+				"在第10级，你额外获得此特性的两次使用次数；在第18级，再获得两次。"
+			]
+		},
+		{
+			"ENG_name": "And They Shall Know No Fear",
+			"name": "而他们无所畏惧",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，你为对抗会使你{@condition 恐慌}或从敌对生物面前逃走的效应而进行的感知豁免具有优势。",
+				"在第13级，此效果扩展至魅力豁免。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"领导力不是磁石般的个人魅力\u2014\u2014那不过是三寸不烂之舌；也不是'广交友、施影响'\u2014\u2014那是阿谀奉承。领导力是让一个人的眼界升至更高的境界，让一个人的表现达到更高的标准，让一个人的品格超越其寻常的极限。\"",
+				"\u2014\u2014彼得·德鲁克"
+			]
+		},
+		{
+			"ENG_name": "Additional Combat Tactics",
+			"name": "额外战斗策略",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在第10级，你的战斗策略特性额外获得两次使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"尤利乌斯·凯撒得知亚历山大在三十二岁时便几乎完成了所有征服，却对余生该做些什么全然茫然；奥古斯都对此表示惊讶\u2014\u2014亚历山大竟不认为治理自己赢得的帝国是比赢得它更艰巨的任务。\"",
+				"\u2014\u2014普鲁塔克"
+			]
+		},
+		{
+			"ENG_name": "And They Shall Know No Fear",
+			"name": "而他们无所畏惧",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你的而他们无所畏惧特性扩展至魅力豁免。"
+			]
+		},
+		{
+			"ENG_name": "Know Your Enemy",
+			"name": "知己知彼",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你为识别敌人弱点而进行的知识（{@skill 奥秘}）与知识（{@skill 自然}）检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Diverse Training",
+			"name": "多元训练",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，对于职业特性所列技能中你未拥有熟练项的两项自选技能，你可以加上你熟练加值的一半（向下取整）。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"永远不要企盼危险。危险从不需要帮手。命运并不能被试探诱惑，但对战争的主动贪欲从不会提振士气。\"",
+				"\u2014\u2014摄政"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"杀不死我的......还不够努力。\"",
+				"\u2014\u2014摄政"
+			]
+		},
+		{
+			"ENG_name": "Additional Combat Tactics",
+			"name": "额外战斗策略",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你的战斗策略特性再获得两次使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Coup De Grâce",
+			"name": "致命一击",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "摄政之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以发动一次致命一击攻击。此攻击的目标必须长有头颅或类似的重要器官。你用你的动作用一件武器进行一次攻击检定。命中时，目标进行一次DC等于10+你的攻击检定结果与目标AC之差的体质豁免。豁免失败则它遭受致命一击（例如斩首），生命值降为0并当场死亡；豁免成功则它受到等同于该次攻击所掷伤害五倍的伤害。你只能使用此特性一次，完成一次长休后重获其使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Slaughterer",
+			"name": "屠戮者之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"屠戮者之子嗜血而野蛮，近乎彻底的癫狂。他们是原始暴力化身的角斗士，以杀戮为乐，最终被凿入脑中的屠夫之钉逼至疯狂。他们是令人生畏的对手，所过之处只留支离破碎的尸骸。"
+			]
+		},
+		{
+			"ENG_name": "Gladitorial Lineage",
+			"name": "角斗血统",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第1级，你获得一件自选{@filter 军用近战武器|items|source=phb|category=基础|type=军用武器;近战武器=sand}的熟练项，并且你可以在起始装备中用该武器替换{@item 短剑|PHB}。"
+			]
+		},
+		{
+			"ENG_name": "Bloodlust",
+			"name": "嗜血",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"从第4级起，你的近战武器攻击的伤害骰掷出1时可以重掷。",
+				"在第13级，掷出2时也可以重掷。"
+			]
+		},
+		{
+			"ENG_name": "Murderous Rage",
+			"name": "杀戮狂怒",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，被称为\"屠夫之钉\"的灌魔金属钉被植入你的大脑。当你杀死一名敌人时，你必须进行一次DC等于5+自上次完成长休以来你已降至0生命值的生物数量的感知豁免。",
+				"豁免失败则你陷入杀戮狂怒：力量检定与力量豁免具有优势，近战攻击附加1d4额外伤害（在第15级提高为2d4）。你还获得非魔法的钝击、穿刺和挥砍伤害抗性。在你的回合，你必须朝射程内最近的敌方生物移动尽可能远的距离，并用你的攻击动作攻击它。若视野中没有敌对生物，则视野内的任何生物（包括友方生物）都成为你的目标。若你用尽全部移动后仍无法攻击目标，你必须用你的动作向目标疾走；若这使你得以接近目标，你可以用附赠动作发动一次具有劣势的近战攻击。若你在自己的回合无法攻击任何目标，你受到{@dice 1d8}心灵伤害。对你的攻击检定具有优势。",
+				"你的杀戮狂怒在下列情况下结束：狂怒已持续1分钟且你在上个回合未攻击任何生物；你因任何原因陷入{@condition 昏迷}；或你在最近两个回合都未攻击过任何生物。若上述任一条件在你的某个回合结束时成立，你的杀戮狂怒结束，且你受到{@dice 2d8}心灵伤害。",
+				"杀戮狂怒一旦发生，你必须完成一次短休或长休后才会再次发生。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"我生于血，长于暗，而我将死得自由！\"",
+				"\u2014\u2014屠戮者"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"我\u2014\u2014我要成为一场风暴\u2014\u2014一团烈焰\u2014\u2014",
+				"我要独自对抗千军万马；",
+				"我有十颗心脏；我有百条臂膀；",
+				"与凡人交战，我自觉过于强大\u2014\u2014",
+				"给我带来巨人吧！\"",
+				"\u2014\u2014埃德蒙·罗斯丹，《大鼻子情圣》"
+			]
+		},
+		{
+			"ENG_name": "Bloodlust",
+			"name": "嗜血",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你的近战武器攻击的伤害骰掷出2时也可以重掷。"
+			]
+		},
+		{
+			"ENG_name": "Violence Incarnate",
+			"name": "暴力化身",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"从第13级起，当你的近战武器攻击造成重击时，你可以将该武器的一枚伤害骰额外多掷一次，并将结果加入重击的额外伤害中。"
+			]
+		},
+		{
+			"ENG_name": "Unstoppable Monster",
+			"name": "势不可挡",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，当你被降至0生命值但未被直接杀死时，你改为保留1点生命值，并获得1d12+你的体质调整值的临时生命值；若你尚未处于杀戮狂怒，则立即陷入其中。完成一次长休前你无法再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"那是因为你自由了。当你终于能不带枷锁地看它时，这世界可以很美。\"",
+				"\u2014\u2014屠戮者"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"勇气，是与奴役你的王国战斗，哪怕对方的军队以万敌一。你对勇气一无所知！荣耀，是当旁人都吮吸着暴君喂养的伪善、养得脑满肠肥时，依然反抗他。你对荣耀一无所知！\"",
+				"\u2014\u2014屠戮者"
+			]
+		},
+		{
+			"ENG_name": "The Eightfold Path",
+			"name": "八重之路",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "屠戮者之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，当你执行攻击动作且发动至少一次近战攻击时，你可以用附赠动作发动两次额外攻击。",
+				"由于屠夫之钉对你大脑的持续影响，你的攻击性进一步提升：你的杀戮狂怒不再限于发生一次，且杀死敌人时所需进行的感知豁免的DC改为10+自上次完成长休以来你已降至0生命值的敌人数量。"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Rite of Passage",
+			"name": "可选特性：成年之礼",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"type": "inset",
+			"entries": [
+				"在第1级，你开始你的成年之礼，放弃前述的训练课程特性。你失去轻甲熟练项，改为获得重甲熟练项。",
+				"在第5级，每当你在自己回合执行攻击动作时，你可以攻击两次而非一次。",
+				"在第8级，你的战斗技艺愈发精进，你获得一件自选{@filter 军用近战武器|items|source=phb|category=基础|type=军用武器;近战武器=sand}与一件自选{@filter 军用远程武器|items|source=phb|category=基础|type=军用武器;远程武器=sand}的熟练项。",
+				"在第13级，你获得盾牌的熟练项，且你用第8级选择获得熟练项的军用武器进行的攻击检定获得+1加值。",
+				"在第15级，你获得所有军用武器的熟练项；你的攻击检定+1加值仍只适用于你最初在第8级选择获得熟练项的军用武器。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Wolf King",
+			"name": "狼王之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"狼王之子来自冰封的荒野\u2014\u2014那里遍布成群的冬狼。他们外表野蛮，看上去比那些为其命名的生物好不了多少。然而在这层伪装之下，潜藏着其他阿斯塔特几乎无可匹敌的炽烈狡黠与忠义。"
+			]
+		},
+		{
+			"ENG_name": "One of the Aett",
+			"name": "阿埃特之民",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条遗传血脉时，你学会说、读、写{@language 巨人语|PHB}与{@language 冬狼语|MM}，后者没有书面文字。"
+			]
+		},
+		{
+			"ENG_name": "Canis Helix",
+			"name": "狼之螺旋",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你发觉自己的犬齿开始变长，指甲开始硬化，锋利如刀。若你的头部或双手未被护甲或衣物覆盖，你的徒手打击现在造成挥砍伤害。"
+			]
+		},
+		{
+			"ENG_name": "Wolf-kin",
+			"name": "狼亲",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你获得{@skill 驯兽}与{@skill 察觉}的熟练项；若你已拥有后者的熟练项，则改为将双倍熟练加值加于其上。此外，你对{@creature 狼|MM|狼}的魅力（{@skill 威吓}）检定具有优势；在第13级，此效果扩展至{@creature 恐狼|MM|恐狼}；在第18级，扩展至{@creature 冬狼|MM|冬狼}。"
+			]
+		},
+		{
+			"ENG_name": "Headstrong",
+			"name": "一往无前",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"从第8级起，当你向一名生物移动至少10尺并在自己回合执行攻击动作时，直至你的回合结束，你对该生物发动的近战攻击检定获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"\"我是上天的惩罚......倘若你们未曾犯下大罪，上天便不会将我这样的惩罚降于你们。\"",
+				"\u2014\u2014成吉思汗"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"狼从不会为羊有多少而烦恼。\"",
+				"\u2014\u2014维吉尔"
+			]
+		},
+		{
+			"ENG_name": "Environmental Adaptation",
+			"name": "环境适应",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你经过强化的躯体已适应严寒，体毛也变得格外浓密。你获得寒冷伤害抗性。"
+			]
+		},
+		{
+			"ENG_name": "Runes of Warding",
+			"name": "守护符文",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你用守护符文与图腾装饰护甲\u2014\u2014这是狼王故乡部落的习俗。每天一次，你可以为对抗某个法术的豁免检定获得优势，或将一次对施于你的法术攻击的伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Pack Tactics",
+			"name": "集群战术",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，若至少一名你的盟友位于某生物5尺内且该盟友未处于{@condition 失能}状态，则你对该生物发动的攻击检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"以你意志的模子，锤炼你的思想。\"",
+				"\u2014\u2014狼王"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"你将比他们更迅捷、更强壮，对腐朽的感知更敏锐，并拥有将其彻底摧毁的全权。你将披诸神之战甲，持毁灭之利刃。你将永不衰老，永不枯萎，永不疲倦。\"",
+				"\u2014\u2014狼王"
+			]
+		},
+		{
+			"ENG_name": "Howl of Winter",
+			"name": "凛冬嚎叫",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "狼王之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"当你达到第18级时，你前所未有地感觉到体内潜伏的野兽。你可以用附赠动作发出令人毛骨悚然的嚎叫，掷下手中所有武器与盾牌，释放心中的狼。",
+				"在1分钟内，你执行攻击动作时只能使用徒手打击，但攻击次数翻倍。",
+				"此外在此持续期间，你获得一次噬咬攻击，造成1d6+你的力量调整值的穿刺伤害；你可以用附赠动作发动该噬咬攻击。",
+				"一旦使用了此特性，你必须完成一次长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Sons of the Word",
+			"name": "怀言之子",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"entries": [
+				"怀言之子是狂热者与狂信徒。与其他大体世俗化的子嗣不同，怀言之子以炽热的激情拥抱信仰的两极，将他们的虔诚贯注于每一个行动。"
+			]
+		},
+		{
+			"ENG_name": "Divine Devotion",
+			"name": "神圣奉献",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当你在第1级选择这条血脉时，你获得一枚圣徽，所属神祇或为守序善良、或为混乱邪恶（由你选择）。"
+			]
+		},
+		{
+			"ENG_name": "Demagogue",
+			"name": "蛊惑家",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 4,
+			"header": 2,
+			"entries": [
+				"在第4级，你获得{@skill 游说}与{@skill 宗教}技能的熟练项。若你已拥有其中一项技能的熟练项，则该技能的熟练加值翻倍。",
+				"此外，你获得魅力豁免检定的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Banishment",
+			"name": "放逐",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"在第8级，当你用一把造成钝击伤害的{@filter 简易近战武器|items|source=phb|category=基础|type=简易武器;近战武器=sand}或一把{@item 钉头锤|PHB}的近战攻击命中某生物时，你可以尝试将该生物击退。该生物进行一次DC为8+你的熟练加值+你的力量调整值的力量豁免；豁免失败则被推离你15尺并被击倒{@condition 倒地}。",
+				"此特性的使用次数等同于你的力量调整值（至少为1）。完成一次短休或长休后，你重获所有已耗尽的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Optional Feature: Genetic Disparity",
+			"name": "可选特性：基因差异",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 10,
+			"type": "inset",
+			"entries": [
+				"在第10级、第14级与第18级，你的魅力属性加值各提高+1，最终达到+7。但你的力量与体质属性加值至多+7，两项属性值均不能超过23，且你的感知属性加值至多+5。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 12,
+			"type": "inset",
+			"entries": [
+				"\"从狂信到野蛮，只有一步之遥。\"",
+				"\u2014\u2014德尼·狄德罗"
+			]
+		},
+		{
+			"ENG_name": "Zealous Crusader",
+			"name": "狂热十字军",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你获得数量等同于你的魅力调整值（至少为1）的狂热骰，其为{@dice d4}。你可以掷一枚狂热骰，并将掷出的数字加到你进行的一次属性检定、攻击检定、伤害掷骰或豁免检定上。",
+				"或者，当有攻击检定针对你时，你可以在看到掷骰结果之后、得知命中与否之前，用你的反应掷一枚狂热骰，并将掷出的数字加到你的AC上以对抗该攻击。",
+				"狂热骰一经使用即告消耗。完成一次长休后，你重获所有已耗尽的狂热骰。在第18级，你的狂热骰改为{@dice d6}。"
+			]
+		},
+		{
+			"ENG_name": "Undaunted",
+			"name": "无畏",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级，你的坚毅与炽热信仰惠及他人：只要你保持清醒，你与你10尺内的友方生物便不会{@condition 恐慌}。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 16,
+			"type": "inset",
+			"entries": [
+				"\"神明与魔的差异，多半取决于你当下站立的位置。\"",
+				"\u2014\u2014阿尔杰·塔尔"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Quote",
+			"name": "鼓舞名言",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 17,
+			"type": "inset",
+			"entries": [
+				"\"信仰是任何军队的灵魂；无论它寄于原始的宗教，还是启蒙的真理。",
+				"它让最卑微的士兵也变得强大，让怯懦者重获尊严，凭它的抚慰，任何苦难皆可承受。",
+				"信仰为士兵的一切作为赋予荣耀\u2014\u2014哪怕它们何等卑劣\u2014\u2014并为它们注入超越性目标的金色火花。\"",
+				"\u2014\u2014怀言者"
+			]
+		},
+		{
+			"ENG_name": "The Power of Faith",
+			"name": "信仰之力",
+			"source": "FoxfireAstartesInitiate",
+			"className": "阿斯塔特新兵",
+			"classSource": "FoxfireAstartesInitiate",
+			"subclassShortName": "怀言之子",
+			"subclassSource": "FoxfireAstartesInitiate",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用你的动作向你的神祇祈求助佑。在你的回合掷一枚{@dice d20}，加上你的魅力调整值，对抗等于你魅力属性值的DC。",
+				"成功则持续1分钟：若你选择的神祇为守序善良，你的AC与豁免检定加上你的魅力调整值（至少为1）；若为混乱邪恶，则你的攻击检定与伤害掷骰加上该调整值。",
+				"你必须完成一次长休后才能再次使用此特性。"
+			]
+		}
+	]
+}
