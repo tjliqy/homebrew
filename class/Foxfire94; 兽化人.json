@@ -1,0 +1,4179 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FoxfireLycan",
+				"abbreviation": "FFLycan",
+				"full": "兽化人",
+				"url": "https://www.dmsguild.com/product/304790/Lycanthrope-Class-for-DD-5e-2022",
+				"version": "1.8",
+				"authors": [
+					"Foxfire94"
+				],
+				"convertedBy": [
+					"Foxfire94"
+				],
+				"color": "3850ca"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1584380044,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "09cd33659d"
+	},
+	"class": [
+		{
+			"ENG_name": "Lycanthrope",
+			"name": "兽化人",
+			"source": "FoxfireLycan",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"deception",
+								"intimidation",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一件{@filter 近战武器|items|type=近战武器|source=phb} 或 (b) 一把{@item 短弓|phb}和20支箭矢",
+					"(a) {@item 皮甲|phb} 或 (b) {@item 兽皮甲|phb}",
+					"(a) {@item 地城套组|phb} 或 (b) {@item 探索套组|phb}",
+					"一把{@item 匕首|phb|匕首}"
+				],
+				"goldAlternative": "{@dice 2d4×10|2d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMelee"
+							}
+						],
+						"b": [
+							"短弓|phb",
+							"箭矢 (20)|phb"
+						]
+					},
+					{
+						"a": [
+							"皮甲|phb"
+						],
+						"b": [
+							"兽皮甲|phb"
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"_": [
+							"匕首|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"requirementsSpecial": "兽化诅咒",
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"掠食打击",
+						"{@filter 图腾威能|optionalfeatures|Feature Type=图腾威能}"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				{
+					"classFeature": "兽化人起源|兽化人|FoxfireLycan|1",
+					"gainSubclassFeature": true
+				},
+				"混种形态|兽化人|FoxfireLycan|1",
+				"天生护甲|兽化人|FoxfireLycan|2",
+				"图腾威能|兽化人|FoxfireLycan|2",
+				"增强感官|兽化人|FoxfireLycan|3",
+				"属性值提升|兽化人|FoxfireLycan|4",
+				"额外攻击|兽化人|FoxfireLycan|5",
+				{
+					"classFeature": "起源特性|兽化人|FoxfireLycan|6",
+					"gainSubclassFeature": true
+				},
+				"追猎造诣|兽化人|FoxfireLycan|7",
+				"属性值提升|兽化人|FoxfireLycan|8",
+				"流血斩击|兽化人|FoxfireLycan|9",
+				{
+					"classFeature": "起源特性|兽化人|FoxfireLycan|10",
+					"gainSubclassFeature": true
+				},
+				"进阶混种形态|兽化人|FoxfireLycan|11",
+				"属性值提升|兽化人|FoxfireLycan|12",
+				"流血斩击（2d10）|兽化人|FoxfireLycan|13",
+				{
+					"classFeature": "起源特性|兽化人|FoxfireLycan|14",
+					"gainSubclassFeature": true
+				},
+				"铁意志|兽化人|FoxfireLycan|15",
+				"属性值提升|兽化人|FoxfireLycan|16",
+				"流血斩击（3d10）|兽化人|FoxfireLycan|17",
+				{
+					"classFeature": "起源特性|兽化人|FoxfireLycan|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|兽化人|FoxfireLycan|19",
+				"混种形态精通|兽化人|FoxfireLycan|20"
+			],
+			"subclassTitle": "兽化人起源",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Lycanthrope",
+			"name": "兽化人",
+			"source": "FoxfireLycan",
+			"entries": [
+				{
+					"ENG_name": "Lycanthrope",
+					"source": "FoxfireLycan",
+					"entries": [
+						"兽化症是一种古老而令人畏惧的诅咒，能将最坚毅之人变成口涎横流的凶残野兽。它们理应被众多平民所恐惧\u2014\u2014仅凭双手，它们就能将生物撕成碎片。正因如此，兽化人是一股不容小觑的力量。然而，并非所有兽化人都是受凶残本性奴役的邪恶野兽。那些肯花时间锤炼自身、凝聚心神者，能够解锁自己的野性之力并为己所用。能够变身为野兽般的混种、甩开足以撂倒凡人的创伤，走上这条道路的兽化人会成为终极掠食者。而一旦他们的专注失守，深重的危难便会降临到周围之人的头上。",
+						{
+							"ENG_name": "Creating A Lycanthrope",
+							"type": "entries",
+							"name": "创建兽化人",
+							"entries": [
+								"所有兽化人的诅咒都有其来处。你是与生俱来、经由父母血脉承袭的吗？你是在某次冒险中、或家园遇袭时被另一名兽化人咬伤的吗？你是被某个意图惩罚你的怯懦法师所诅咒的吗？又或者，这是你选择接受的人生\u2014\u2014由某位神祇授予你如此力量？",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"你可以按照以下建议快速构建一名兽化人。首先，将力量或敏捷作为你的最高属性值，其次是体质。其次，选择化外之民背景。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Lycanthrope Multiclassing",
+							"type": "entries",
+							"name": "兽化人兼职",
+							"entries": [
+								"如果你希望兼职成为兽化人，其先决条件与获得的熟练项如下所列。",
+								{
+									"ENG_name": "Lycanthrope Multiclassing Prerequisites",
+									"type": "entries",
+									"name": "兽化人兼职先决条件",
+									"entries": [
+										{
+											"ENG_name": "Ability Score Minimum",
+											"type": "entries",
+											"name": "属性值下限",
+											"entries": [
+												"力量13或敏捷13，以及兽化症"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Lycanthrope Multiclassing Proficiencies",
+									"type": "entries",
+									"name": "兽化人兼职熟练项",
+									"entries": [
+										{
+											"ENG_name": "Proficiencies Gained",
+											"type": "entries",
+											"name": "获得的熟练项",
+											"entries": [
+												"轻甲、简易武器、军用武器。"
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "兽化人",
+					"type": "section"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Lupus Virtute",
+			"name": "美德之狼",
+			"shortName": "美德之狼",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"美德之狼|兽化人|FoxfireLycan|美德之狼|FoxfireLycan|1",
+				"德性之神|兽化人|FoxfireLycan|美德之狼|FoxfireLycan|6",
+				"禀性活力|兽化人|FoxfireLycan|美德之狼|FoxfireLycan|10",
+				"亡者军团|兽化人|FoxfireLycan|美德之狼|FoxfireLycan|14",
+				"弥撒圣歌|兽化人|FoxfireLycan|美德之狼|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Were-Ape",
+			"name": "猿人",
+			"shortName": "猿人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"猿人|兽化人|FoxfireLycan|猿人|FoxfireLycan|1",
+				"猿猴神力|兽化人|FoxfireLycan|猿人|FoxfireLycan|6",
+				"猿猴形态|兽化人|FoxfireLycan|猿人|FoxfireLycan|10",
+				"凶性进击|兽化人|FoxfireLycan|猿人|FoxfireLycan|14",
+				"原始尖啸|兽化人|FoxfireLycan|猿人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Were-Chimera",
+			"name": "奇美拉人",
+			"shortName": "奇美拉人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"奇美拉人|兽化人|FoxfireLycan|奇美拉人|FoxfireLycan|1",
+				"奇美拉变异|兽化人|FoxfireLycan|奇美拉人|FoxfireLycan|6",
+				"奇美拉形态|兽化人|FoxfireLycan|奇美拉人|FoxfireLycan|10",
+				"奇美拉变异改良|兽化人|FoxfireLycan|奇美拉人|FoxfireLycan|14",
+				"奇美拉变异改良|兽化人|FoxfireLycan|奇美拉人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Were-Dragon",
+			"name": "龙人",
+			"shortName": "龙人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"龙人|兽化人|FoxfireLycan|龙人|FoxfireLycan|1",
+				"吐息武器|兽化人|FoxfireLycan|龙人|FoxfireLycan|6",
+				"龙翼|兽化人|FoxfireLycan|龙人|FoxfireLycan|10",
+				"龙鳞|兽化人|FoxfireLycan|龙人|FoxfireLycan|14",
+				"骇人威仪|兽化人|FoxfireLycan|龙人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Were-Hell Hound",
+			"name": "地狱猎犬人",
+			"shortName": "地狱猎犬人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"地狱猎犬人|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|1",
+				"炼狱燃烧|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|6",
+				"地狱猎犬形态|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|10",
+				"集群猎手|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|14",
+				"地狱狩猎|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Werebat",
+			"name": "蝙蝠人",
+			"shortName": "蝙蝠人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"蝙蝠人|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|1",
+				"回声定位|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|6",
+				"蝙蝠形态|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|10",
+				"黑暗伏击者|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|14",
+				"尖啸|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Werebear",
+			"name": "熊人",
+			"shortName": "熊人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"熊人|兽化人|FoxfireLycan|熊人|FoxfireLycan|1",
+				"惊人力气|兽化人|FoxfireLycan|熊人|FoxfireLycan|6",
+				"熊形态|兽化人|FoxfireLycan|熊人|FoxfireLycan|10",
+				"熊之坚韧|兽化人|FoxfireLycan|熊人|FoxfireLycan|14",
+				"恐怖咆哮|兽化人|FoxfireLycan|熊人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Wereboar",
+			"name": "野猪人",
+			"shortName": "野猪人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"野猪人|兽化人|FoxfireLycan|野猪人|FoxfireLycan|1",
+				"蛮横猪猡|兽化人|FoxfireLycan|野猪人|FoxfireLycan|6",
+				"野猪形态|兽化人|FoxfireLycan|野猪人|FoxfireLycan|10",
+				"冲锋|兽化人|FoxfireLycan|野猪人|FoxfireLycan|14",
+				"坚韧|兽化人|FoxfireLycan|野猪人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Werefox",
+			"name": "狐人",
+			"shortName": "狐人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"狐人|兽化人|FoxfireLycan|狐人|FoxfireLycan|1",
+				"狐媚魅力|兽化人|FoxfireLycan|狐人|FoxfireLycan|6",
+				"狐形态|兽化人|FoxfireLycan|狐人|FoxfireLycan|10",
+				"红外视觉|兽化人|FoxfireLycan|狐人|FoxfireLycan|14",
+				"遁避|兽化人|FoxfireLycan|狐人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Wererabbit",
+			"name": "兔人",
+			"shortName": "兔人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"兔人|兽化人|FoxfireLycan|兔人|FoxfireLycan|1",
+				"强力踢击|兽化人|FoxfireLycan|兔人|FoxfireLycan|6",
+				"兔形态|兽化人|FoxfireLycan|兔人|FoxfireLycan|10",
+				"艾拉费拉的祝福|兽化人|FoxfireLycan|兔人|FoxfireLycan|14",
+				"幸运兔脚|兽化人|FoxfireLycan|兔人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Wererat",
+			"name": "鼠人",
+			"shortName": "鼠人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"鼠人|兽化人|FoxfireLycan|鼠人|FoxfireLycan|1",
+				"疾窜|兽化人|FoxfireLycan|鼠人|FoxfireLycan|6",
+				"鼠形态|兽化人|FoxfireLycan|鼠人|FoxfireLycan|10",
+				"鬼祟潜行|兽化人|FoxfireLycan|鼠人|FoxfireLycan|14",
+				"突袭|兽化人|FoxfireLycan|鼠人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Wereraven",
+			"name": "鸦人",
+			"shortName": "鸦人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"鸦人|兽化人|FoxfireLycan|鸦人|FoxfireLycan|1",
+				"拟声|兽化人|FoxfireLycan|鸦人|FoxfireLycan|6",
+				"鸦形态|兽化人|FoxfireLycan|鸦人|FoxfireLycan|10",
+				"俯冲打击|兽化人|FoxfireLycan|鸦人|FoxfireLycan|14",
+				"敏锐视觉|兽化人|FoxfireLycan|鸦人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Werestag",
+			"name": "鹿人",
+			"shortName": "鹿人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"6": [
+							{
+								"all": "level=0|class=德鲁伊"
+							},
+							{
+								"all": "level=1|class=德鲁伊"
+							},
+							{
+								"all": "level=1|class=游侠"
+							}
+						],
+						"7": [
+							{
+								"all": "level=2|class=德鲁伊"
+							},
+							{
+								"all": "level=2|class=游侠"
+							}
+						],
+						"13": [
+							{
+								"all": "level=3|class=德鲁伊"
+							},
+							{
+								"all": "level=3|class=游侠"
+							}
+						],
+						"19": [
+							{
+								"all": "level=4|class=德鲁伊"
+							},
+							{
+								"all": "level=4|class=游侠"
+							}
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				{
+					"className": "德鲁伊",
+					"classSource": "PHB"
+				},
+				{
+					"className": "游侠",
+					"classSource": "PHB"
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Werestag",
+							"name": "鹿人",
+							"source": "FoxfireLycan"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|subclass=兽化人: 鹿人 (FFLycan)}",
+						"{@filter 已知法术|spells|subclass=兽化人: 鹿人 (FFLycan)}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"subclasses": [
+						{
+							"ENG_name": "Werestag",
+							"name": "鹿人",
+							"source": "FoxfireLycan"
+						}
+					],
+					"colLabels": [
+						"{@filter 1环|spells|level=1|subclass=兽化人: 鹿人 (FFLycan)}",
+						"{@filter 2环|spells|level=2|subclass=兽化人: 鹿人 (FFLycan)}",
+						"{@filter 3环|spells|level=3|subclass=兽化人: 鹿人 (FFLycan)}",
+						"{@filter 4环|spells|level=4|subclass=兽化人: 鹿人 (FFLycan)}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"鹿人|兽化人|FoxfireLycan|鹿人|FoxfireLycan|1",
+				"施法|兽化人|FoxfireLycan|鹿人|FoxfireLycan|6",
+				"鹿形态|兽化人|FoxfireLycan|鹿人|FoxfireLycan|10",
+				"冲锋|兽化人|FoxfireLycan|鹿人|FoxfireLycan|14",
+				"森林守护者|兽化人|FoxfireLycan|鹿人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Weretiger",
+			"name": "虎人",
+			"shortName": "虎人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"虎人|兽化人|FoxfireLycan|虎人|FoxfireLycan|1",
+				"猫之迅捷|兽化人|FoxfireLycan|虎人|FoxfireLycan|6",
+				"虎形态|兽化人|FoxfireLycan|虎人|FoxfireLycan|10",
+				"老虎之眼|兽化人|FoxfireLycan|虎人|FoxfireLycan|14",
+				"猛扑|兽化人|FoxfireLycan|虎人|FoxfireLycan|18"
+			]
+		},
+		{
+			"ENG_name": "Werewolf",
+			"name": "狼人",
+			"shortName": "狼人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassFeatures": [
+				"狼人|兽化人|FoxfireLycan|狼人|FoxfireLycan|1",
+				"无声追踪者|兽化人|FoxfireLycan|狼人|FoxfireLycan|6",
+				"狼形态|兽化人|FoxfireLycan|狼人|FoxfireLycan|10",
+				"集群猎手|兽化人|FoxfireLycan|狼人|FoxfireLycan|14",
+				"激励嚎叫|兽化人|FoxfireLycan|狼人|FoxfireLycan|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Hybrid Form",
+			"name": "混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"在第1级，你开始掌控如今流淌于你血液中的兽化诅咒。你可以用一个动作，变身为由你的兽化人起源特性所决定的混种形态。此形态持续10分钟。在此形态下，你可以说话、使用装备并穿着护甲。你可以在自己的回合中用一个动作，提前变回正常形态。如果你陷入{@condition 昏迷}状态、生命值降至0或死亡，则会自动变回正常形态。你可以使用此特性两次。完成一次短休或长休后，你恢复已耗用的次数。",
+				"当你处于变身状态时，你获得以下收益：",
+				{
+					"ENG_name": "Feral Might",
+					"type": "entries",
+					"name": "野性之力",
+					"entries": [
+						"你的近战伤害掷骰获得加值，数值等于你的熟练加值的一半（向下取整）。你在力量检定和力量豁免检定上也具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Resilient Hide",
+					"type": "entries",
+					"name": "坚韧兽皮",
+					"entries": [
+						"你对来自非银质武器且非魔法攻击的钝击、穿刺和挥砍伤害具有抗性。当你未穿着重甲且未持用盾牌时，你的AC获得+1加值。"
+					]
+				},
+				{
+					"ENG_name": "Predatory Strikes",
+					"type": "entries",
+					"name": "掠食打击",
+					"entries": [
+						"你的徒手打击视为一件近战武器。当你变身混种形态时，以及每当你作为{@action 攻击}动作的一部分进行徒手打击时，你可以用一个附赠动作再进行一次徒手打击。",
+						"你的徒手打击造成{@damage 1d4}点挥砍伤害。你的徒手打击伤害随你获得兽化人等级而提升，如兽化人职业表中\"掠食打击\"一栏所示。"
+					]
+				},
+				{
+					"ENG_name": "Cursed Weakness",
+					"type": "entries",
+					"name": "诅咒弱点",
+					"entries": [
+						"你对来自银质武器的伤害具有易伤。"
+					]
+				},
+				{
+					"ENG_name": "Bloodlust",
+					"type": "entries",
+					"name": "嗜血",
+					"entries": [
+						"如果你自上一个回合开始以来受到过伤害，就必须在自己的回合开始时进行一次感知豁免检定，以维持对自身人性的控制。该DC等于5，或你自上一回合开始以来所受总伤害的1/4，取两者中较高者。豁免失败时，你必须直接朝距你最近的生物移动，并对该生物使用{@action 攻击}动作。如果可能的目标多于一个，则由DM在其中选择。之后，你在本回合的余下时间内恢复对角色的控制。",
+						"如果你正处于某个阻止你专注的效果之下（如野蛮人的狂暴特性），你自动豁免失败。"
+					]
+				},
+				"本特性的收益取代《怪物图鉴》中关于兽化症的规则。"
+			]
+		},
+		{
+			"ENG_name": "Lycanthrope Origin",
+			"name": "兽化人起源",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"在第1级，你从可用列表中选择一个起源，用以描述你的兽化诅咒从何而来。你所选择的起源会在第1级以及第6、10、14和18级授予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Natural Armour",
+			"name": "天生护甲",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 2,
+			"entries": [
+				"第2级起，当你未穿着任何护甲且未持用盾牌时，你的护甲等级等于11 + 你的敏捷调整值 + 你的体质调整值。"
+			]
+		},
+		{
+			"ENG_name": "Totem Powers",
+			"name": "图腾威能",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 2,
+			"entries": [
+				"在第2级，你获得两项自选的图腾威能。可用选项列表见{@filter 可选特性|optionalfeatures|Feature Type=图腾威能}页面。当你达到特定的兽化人等级时，你会按兽化人职业表中\"图腾威能\"一栏所示，获得额外的自选威能。",
+				"此外，当你获得此职业的一个等级时，你可以选择一项已知的威能，并将其替换为你在该等级可以学习的另一项威能。",
+				"图腾威能中的等级先决条件指的是你的兽化人等级，而非角色等级。"
+			]
+		},
+		{
+			"ENG_name": "Heightened Senses",
+			"name": "增强感官",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 3,
+			"entries": [
+				"第3级起，你开始具备天然掠食者那般强化的感官。你在任何依赖听觉或嗅觉的感知（{@skill 察觉}）检定上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 4,
+			"entries": [
+				"当你达到第4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 5,
+			"entries": [
+				"第5级起，每当你在自己的回合采取攻击动作时，你可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Origin Feature",
+			"name": "起源特性",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 6,
+			"entries": [
+				"在第6级，你获得一项由你的兽化人起源授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Stalker's Prowess",
+			"name": "追猎造诣",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 7,
+			"entries": [
+				"在第7级，你的速度提升10尺。你的跳远距离还可增加10尺，跳高距离增加3尺。此外，就克服对非魔法攻击和伤害的抗性与免疫而言，你使用掠食打击特性进行的徒手打击、以及用混种形态天生武器发动的攻击均视为魔法攻击。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Bleeding Slash",
+			"name": "流血斩击",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 9,
+			"entries": [
+				"第9级起，你可以深深撕开敌人的血肉，留下豁开的伤口。当你使用掠食打击特性进行徒手打击时，可以尝试一次流血斩击。",
+				"命中时，目标受到该攻击的正常伤害，且必须通过一次DC为8 + 你的熟练加值 + 你的力量或敏捷调整值（由你选择）的体质豁免检定，否则在其下个回合开始时受到{@dice 1d10}点挥砍伤害。此伤害在第13级提升为{@dice 2d10}，并在第17级提升为{@dice 3d10}。",
+				"本特性对无机生物或物体无效。你可以使用此特性的次数等于你的力量或敏捷调整值（取较高者，最少为1）。完成一次短休或长休后，你恢复此特性已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Origin Feature",
+			"name": "起源特性",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 10,
+			"entries": [
+				"在第10级，你获得一项由你的兽化人起源授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Advanced Hybrid Form",
+			"name": "进阶混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 11,
+			"entries": [
+				"第11级起，你学会释放并掌控更多内在的野兽。你现在可以用一个附赠动作变身混种形态，且你的混种形态现在最多可持续30分钟。",
+				"此外，当你处于混种或动物形态且剩余生命值不超过一半时，在你的每个回合开始时，你会恢复等同于你的体质调整值 + 1（最少为1）的生命值。若你的生命值为0，则不会获得此收益。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Bleeding Slash (2d10)",
+			"name": "流血斩击（2d10）",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 13,
+			"entries": [
+				"在第13级，你的流血斩击造成的伤害从1d10提升为2d10。",
+				"此伤害在第17级提升为3d10。"
+			]
+		},
+		{
+			"ENG_name": "Origin Feature",
+			"name": "起源特性",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 14,
+			"entries": [
+				"在第14级，你获得一项由你的兽化人起源授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Iron Volition",
+			"name": "铁意志",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 15,
+			"entries": [
+				"第15级起，你已磨砺出更强的意志力，以抵抗兽化诅咒的暴戾冲动。每当你为维持混种形态的控制而进行感知豁免检定时，你具有优势。此外，豁免失败后，如果可能成为最近目标的对象多于一个，现在由你而非DM在这些目标中进行选择。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 16,
+			"entries": [
+				"当你达到第16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Bleeding Slash (3d10)",
+			"name": "流血斩击（3d10）",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 17,
+			"entries": [
+				"在第17级，你的流血斩击造成的伤害从2d10提升为3d10。"
+			]
+		},
+		{
+			"ENG_name": "Origin Feature",
+			"name": "起源特性",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 18,
+			"entries": [
+				"在第18级，你获得一项由你的兽化人起源授予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 19,
+			"entries": [
+				"当你达到第19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Hybrid Form Mastery",
+			"name": "混种形态精通",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"level": 20,
+			"entries": [
+				"在第20级，你已与内在的掠食者角力并将其驾驭。你现在可以使用混种形态特性三次而非两次，且你的混种形态现在最多可持续1小时。",
+				"此外，当你掷先攻时若混种形态已无剩余次数，你恢复一次使用次数。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Lupus Virtute",
+			"name": "美德之狼",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "美德之狼",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"Sacramentum. Nocturnarum. Nefarious. Oremus. Deus Sanctus, Deum Filium. Dominum. Martyrum. Oremus. Convertere Apostolicus. Cedere. Animus. Debitus. Et Catholicus. Debere. Deum Animalum. Dominum. Et imperitum. 我们在此。E Nomine. Sanctus Dominus. 哈利路亚！Christus Animus. 哈利路亚！Et Sanctus Spiritus. 在夜里呼唤我。Sanctus Dominus. 阿门。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狼裔混种形态|兽化人|FoxfireLycan|美德之狼|FoxfireLycan|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "祭司技艺|兽化人|FoxfireLycan|美德之狼|FoxfireLycan|1"
+				},
+				{
+					"ENG_name": "Bonus Origins and Totem Powers",
+					"name": "额外起源与图腾威能",
+					"type": "inset",
+					"entries": [
+						"在图腾威能的先决条件上，美德之狼起源视同\"狼人\"起源；呼唤动物盟友亦同此理。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Lupi Nothus Forma",
+			"name": "狼裔混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "美德之狼",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈狼与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d8}点穿刺伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上狼人兽化症。"
+			]
+		},
+		{
+			"ENG_name": "Sacerdotales Artes",
+			"name": "祭司技艺",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "美德之狼",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"同样在第1级，你获得{@skill 游说}技能的熟练项。如果你已熟练该技能，则你用它进行的检定加上双倍熟练加值。此外，你的起始装备之外，你还获得一个{@item 圣徽|PHB}、一本{@item 书籍|PHB|祈祷书}和一套祭衣。"
+			]
+		},
+		{
+			"ENG_name": "Deus Virtutum",
+			"name": "德性之神",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "美德之狼",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你获得将神圣怒火导入武器的力量。你可以施展{@spell 炽焰斩|PHB}（以2环施展），次数等于你的魅力调整值（最少为1）。魅力是你施展此法术的施法属性。完成一次长休后，你恢复已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Indolis Vigor",
+			"name": "禀性活力",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "美德之狼",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，当你有意识时，你以及你周围15尺内的友方生物不会陷入{@condition 魅惑}或{@condition 恐慌}。"
+			]
+		},
+		{
+			"ENG_name": "Exercitus Immortuorum",
+			"name": "亡者军团",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "美德之狼",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你可以用一个动作命令你周围30尺内至多等于你的魅力调整值（最少为1）数量的类人生物尸体或骸骨堆升起，成为受你控制的{@creature 丧尸|MM|丧尸}或{@creature 骷髅|MM|骷髅}。",
+				"这些不死生物受你控制1分钟，或直到此效应结束，届时它们将再度归于死亡。",
+				"当它们受你控制且位于你周围30尺内时，你可以延续此效应，并在你的回合用一个附赠动作命令它们。",
+				"一条命令可以下达给你任意数量的不死仆从，内容可以很具体，比如指示它们的移动和将采取的动作；也可以更宽泛，比如守卫某个人或地点。它们会继续执行你的命令，直到命令完成或此效应结束；但如果你完全不加命令，它们除了自卫抵御攻击外不会做任何事。",
+				"本特性需要专注，如同专注于一门法术；专注若被打破，效应即告结束。你必须完成一次短休或长休后才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Massa Metallum",
+			"name": "弥撒圣歌",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "美德之狼",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用你的动作朗读神圣连祷文，以鼓舞盟友、震慑敌人。选择至多等于你的魅力调整值（最少为1）数量、位于你周围30尺内的生物。被选中的生物可以在其回合中的一次属性检定、攻击掷骰、伤害掷骰或豁免检定上加上你的魅力调整值（最少为1）。{@condition 耳聋}或以其他方式无法听到你的生物不受本特性影响。如果有生物在其回合中移动到距你30尺以外，便不再获得此加值，除非在此特性仍活跃期间，其下个回合开始时再度处于你周围30尺内。",
+				"开始后，你可以在自己的每个回合用一个附赠动作延续此效应，最多1分钟。本特性的效应在1分钟后结束，或在你某个未用附赠动作延续它的回合结束时结束。",
+				"你必须完成一次长休或短休才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Were-Ape",
+			"name": "猿人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "猿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"作为一个罕见分支，这些行踪隐秘的猿人在混种形态下常被误认作瘦长的大猩猩，但其危险程度丝毫不逊于任何同类。它们能以厚重的头骨发起撞击、毫不费力地将敌人掷飞，并以骇人的速度移动。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猿人混种形态|兽化人|FoxfireLycan|猿人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ape-Hybrid Form",
+			"name": "猿人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "猿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈猿猴与人混合之形，而你的头部成为一件你在该形态下熟练使用的天生武器。",
+				"当你用头部进行近战攻击时，你的触及为5尺，命中时造成{@damage 1d10}点钝击伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的头部命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上猿人兽化症。",
+				"此外，处于混种形态时，你获得等同于你移动速度的攀爬速度，且你的掠食打击造成钝击伤害而非挥砍伤害。"
+			]
+		},
+		{
+			"ENG_name": "Simian Strength",
+			"name": "猿猴神力",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "猿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，你获得大猩猩般的力量。你的负重能力（包括最大负载和最大举起重量）翻倍，且你在为推动、拖拽、举起或破坏物体而进行的力量检定上具有优势。",
+				"此外，当你擒抱另一生物时，其速度变为0，直到其脱离擒抱。当你在自己的回合擒抱着生物并采取攻击动作时，你可以将其中一次攻击替换为将该生物掷向至多20尺外，并结束擒抱。"
+			]
+		},
+		{
+			"ENG_name": "Ape Form",
+			"name": "猿猴形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "猿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为{@creature 猿|MM}以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为中型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Aggression",
+			"name": "凶性进击",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "猿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你能以惊人的速度与凶性移动。你可以用一个附赠动作，朝你能看见的一个敌对生物移动至多等于你速度的距离。若你在如此移动后攻击该生物，你对其发动的第一次攻击造成额外的{@damage 1d10}点钝击伤害。"
+			]
+		},
+		{
+			"ENG_name": "Primal Scream",
+			"name": "原始尖啸",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "猿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用你的动作捶击胸膛，向你周围30尺内任意数量的自选生物咆哮，令其血液凝固、恐惧而逃。任何能听到你的目标生物必须通过一次DC为8 + 你的熟练加值 + 你的魅力调整值的感知豁免检定，否则对你的{@condition 恐慌}持续到你下个回合结束。",
+				"如果生物此豁免失败5点或更多，它必须立即使用其反应（如果可用）以其速度所允许的最远距离远离你。该生物不会进入明显危险的地面，如火焰或深坑。此豁免成功的生物在接下来24小时内免疫本特性。",
+				"你可以使用此特性的次数等于你的魅力调整值（最少为1），完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Were-Chimera",
+			"name": "奇美拉人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "奇美拉人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"奇美拉人是尤为罕见而怪异的兽化人变种，是其他兽化兽类的扭曲混合体，身上拼凑着错乱的肢体部件：它们可能长着一种生物的头颅、另一种生物的尾巴，躯干与四肢分属另外两种生物，或是呈现出更加奇异的构造。",
+				"每一只奇美拉人都是各种野兽特征的独特混合，但无一不是同样凶残而致命的野兽。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奇美拉混种形态|兽化人|FoxfireLycan|奇美拉人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Chimeric-Hybrid Form",
+			"name": "奇美拉混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "奇美拉人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈野兽化的人形，由数种不同的野兽特征组合而成，反映你所选择的子职业特性，并拥有一件占据主导的致命天生武器。",
+				"从\"奇美拉特性\"表中选择一个起源，你获得该起源第1级的特性。",
+				{
+					"type": "table",
+					"caption": "奇美拉特性",
+					"colLabels": [
+						"起源",
+						"第1级",
+						"第6级",
+						"第14级",
+						"第18级"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-1",
+						"col-1",
+						"col-1",
+						"col-1"
+					],
+					"rows": [
+						[
+							"猿",
+							"{@subclassFeature 猿人混种形态|兽化人|FoxfireLycan|猿人|FoxfireLycan|1}",
+							"{@subclassFeature 猿猴神力|兽化人|FoxfireLycan|猿人|FoxfireLycan|6}",
+							"{@subclassFeature 凶性进击|兽化人|FoxfireLycan|猿人|FoxfireLycan|14}",
+							"{@subclassFeature 原始尖啸|兽化人|FoxfireLycan|猿人|FoxfireLycan|18}"
+						],
+						[
+							"蝙蝠",
+							"{@subclassFeature 蝙蝠人混种形态|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|1}",
+							"{@subclassFeature 回声定位|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|6}",
+							"{@subclassFeature 黑暗伏击者|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|14}",
+							"{@subclassFeature 尖啸|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|18}"
+						],
+						[
+							"熊",
+							"{@subclassFeature 熊人混种形态|兽化人|FoxfireLycan|熊人|FoxfireLycan|1}",
+							"{@subclassFeature 惊人力气|兽化人|FoxfireLycan|熊人|FoxfireLycan|6}",
+							"{@subclassFeature 熊之坚韧|兽化人|FoxfireLycan|熊人|FoxfireLycan|14}",
+							"{@subclassFeature 恐怖咆哮|兽化人|FoxfireLycan|熊人|FoxfireLycan|18}"
+						],
+						[
+							"野猪",
+							"{@subclassFeature 野猪人混种形态|兽化人|FoxfireLycan|野猪人|FoxfireLycan|1}",
+							"{@subclassFeature 蛮横猪猡|兽化人|FoxfireLycan|野猪人|FoxfireLycan|6}",
+							"{@subclassFeature 冲锋|兽化人|FoxfireLycan|野猪人|FoxfireLycan|14}",
+							"{@subclassFeature 坚韧|兽化人|FoxfireLycan|野猪人|FoxfireLycan|18}"
+						],
+						[
+							"龙¹",
+							"{@subclassFeature 龙人混种形态|兽化人|FoxfireLycan|龙人|FoxfireLycan|1}",
+							"{@subclassFeature 吐息武器|兽化人|FoxfireLycan|龙人|FoxfireLycan|6}",
+							"{@subclassFeature 龙鳞|兽化人|FoxfireLycan|龙人|FoxfireLycan|14}",
+							"{@subclassFeature 骇人威仪|兽化人|FoxfireLycan|龙人|FoxfireLycan|18}"
+						],
+						[
+							"狐狸",
+							"{@subclassFeature 狐人混种形态|兽化人|FoxfireLycan|狐人|FoxfireLycan|1}",
+							"{@subclassFeature 狐媚魅力|兽化人|FoxfireLycan|狐人|FoxfireLycan|6}",
+							"{@subclassFeature 红外视觉|兽化人|FoxfireLycan|狐人|FoxfireLycan|14}",
+							"{@subclassFeature 遁避|兽化人|FoxfireLycan|狐人|FoxfireLycan|18}"
+						],
+						[
+							"地狱猎犬",
+							"{@subclassFeature 地狱猎犬人混种形态|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|1}",
+							"{@subclassFeature 炼狱燃烧|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|6}",
+							"{@subclassFeature 集群猎手|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|14}",
+							"{@subclassFeature 地狱狩猎|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|18}"
+						],
+						[
+							"兔子",
+							"{@subclassFeature 兔人混种形态|兽化人|FoxfireLycan|兔人|FoxfireLycan|1}",
+							"{@subclassFeature 强力踢击|兽化人|FoxfireLycan|兔人|FoxfireLycan|6}",
+							"{@subclassFeature 艾拉费拉的祝福|兽化人|FoxfireLycan|兔人|FoxfireLycan|14}",
+							"{@subclassFeature 幸运兔脚|兽化人|FoxfireLycan|兔人|FoxfireLycan|18}"
+						],
+						[
+							"老鼠",
+							"{@subclassFeature 鼠人混种形态|兽化人|FoxfireLycan|鼠人|FoxfireLycan|1}",
+							"{@subclassFeature 疾窜|兽化人|FoxfireLycan|鼠人|FoxfireLycan|6}",
+							"{@subclassFeature 鬼祟潜行|兽化人|FoxfireLycan|鼠人|FoxfireLycan|14}",
+							"{@subclassFeature 突袭|兽化人|FoxfireLycan|鼠人|FoxfireLycan|18}"
+						],
+						[
+							"渡鸦",
+							"{@subclassFeature 鸦人混种形态|兽化人|FoxfireLycan|鸦人|FoxfireLycan|1}",
+							"{@subclassFeature 拟声|兽化人|FoxfireLycan|鸦人|FoxfireLycan|6}",
+							"{@subclassFeature 俯冲打击|兽化人|FoxfireLycan|鸦人|FoxfireLycan|14}",
+							"{@subclassFeature 敏锐视觉|兽化人|FoxfireLycan|鸦人|FoxfireLycan|18}"
+						],
+						[
+							"雄鹿",
+							"{@subclassFeature 鹿人混种形态|兽化人|FoxfireLycan|鹿人|FoxfireLycan|1}",
+							"{@subclassFeature 施法|兽化人|FoxfireLycan|鹿人|FoxfireLycan|6}",
+							"{@subclassFeature 冲锋|兽化人|FoxfireLycan|鹿人|FoxfireLycan|14}",
+							"{@subclassFeature 森林守护者|兽化人|FoxfireLycan|鹿人|FoxfireLycan|18}"
+						],
+						[
+							"老虎",
+							"{@subclassFeature 虎人混种形态|兽化人|FoxfireLycan|虎人|FoxfireLycan|1}",
+							"{@subclassFeature 猫之迅捷|兽化人|FoxfireLycan|虎人|FoxfireLycan|6}",
+							"{@subclassFeature 老虎之眼|兽化人|FoxfireLycan|虎人|FoxfireLycan|14}",
+							"{@subclassFeature 猛扑|兽化人|FoxfireLycan|虎人|FoxfireLycan|18}"
+						],
+						[
+							"狼",
+							"{@subclassFeature 狼人混种形态|兽化人|FoxfireLycan|狼人|FoxfireLycan|1}",
+							"{@subclassFeature 无声追踪者|兽化人|FoxfireLycan|狼人|FoxfireLycan|6}",
+							"{@subclassFeature 集群猎手|兽化人|FoxfireLycan|狼人|FoxfireLycan|14}",
+							"{@subclassFeature 激励嚎叫|兽化人|FoxfireLycan|狼人|FoxfireLycan|18}"
+						]
+					]
+				},
+				"¹ 当你选择龙起源时，你还会获得该子职业的{@subclassFeature 龙族血统|兽化人|FoxfireLycan|龙人|FoxfireLycan|1}特性。",
+				"此外，如果某项图腾威能要求特定起源，而该起源是你作为本特性的一部分、或作为奇美拉变异特性的一部分所选择的，你便可以如同属于该起源一般选择那项图腾威能；就呼唤动物盟友而言，你可以从你已选择的任意起源中挑选一种召唤选项。"
+			]
+		},
+		{
+			"ENG_name": "Chimeric Mutation",
+			"name": "奇美拉变异",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "奇美拉人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你发展出来自另一兽化人起源的另一项特质。从\"奇美拉特性\"表中选择一项，但你不能多次选择同一起源。",
+				"在第14级，你可以从\"奇美拉特性\"表中再选择一个起源，第18级时还可以再选一个。",
+				"如果某项特性提及其起源的混种形态，你的奇美拉混种形态即视为该起源的混种形态。"
+			]
+		},
+		{
+			"ENG_name": "Chimera Form",
+			"name": "奇美拉形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "奇美拉人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为一只带翼的四足奇美拉以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的奇美拉形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"你的奇美拉形态的外貌，是你从\"奇美拉特性\"表中所选起源的混合体，其排列方式由你决定；无论具体外貌如何，除AC和体型外，你的游戏数据保持不变。",
+				"你在奇美拉形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为大型。",
+				"此外，你的背上会生出一对龙翼，使你获得等同于你移动速度的飞行速度。",
+				"以此方式变身会耗用一次混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Chimeric Mutation Improvement",
+			"name": "奇美拉变异改良",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "奇美拉人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你可以从\"奇美拉特性\"表中再选择一个起源，第18级时还可以再选一个。",
+				"但你不能多次选择同一起源。"
+			]
+		},
+		{
+			"ENG_name": "Chimeric Mutation Improvement",
+			"name": "奇美拉变异改良",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "奇美拉人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以从\"奇美拉特性\"表中再选择一个起源。",
+				"但你不能多次选择同一起源。"
+			]
+		},
+		{
+			"ENG_name": "Were-Dragon",
+			"name": "龙人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "龙人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"这种古老而罕见的兽化症变种有时会被误认作其他龙裔，其起源如今已成一桩谜团。这一特殊的诅咒变体会催生出遍披坚鳞、生有强翼、能吐致命元素气息的龙类混种。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙族血统|兽化人|FoxfireLycan|龙人|FoxfireLycan|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙人混种形态|兽化人|FoxfireLycan|龙人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Draconic Ancestry",
+			"name": "龙族血统",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "龙人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级，你选择一种龙作为你的兽化诅咒之源。从\"龙族血统\"表中选择一种龙。",
+				{
+					"type": "table",
+					"caption": "龙族血统",
+					"colLabels": [
+						"龙",
+						"伤害类型",
+						"吐息武器"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-6"
+					],
+					"rows": [
+						[
+							"黑",
+							"强酸",
+							"30尺长5尺宽，线状(敏捷豁免)"
+						],
+						[
+							"蓝",
+							"闪电",
+							"30尺长5尺宽，线状(敏捷豁免)"
+						],
+						[
+							"黄铜",
+							"火焰",
+							"30尺长5尺宽，线状(敏捷豁免)"
+						],
+						[
+							"青铜",
+							"闪电",
+							"30尺长5尺宽，线状(敏捷豁免)"
+						],
+						[
+							"赤铜",
+							"强酸",
+							"30尺长5尺宽，线状(敏捷豁免)"
+						],
+						[
+							"金",
+							"火焰",
+							"15尺，锥状（敏捷豁免）"
+						],
+						[
+							"绿",
+							"毒素",
+							"15尺，锥状（体质豁免）"
+						],
+						[
+							"红",
+							"火焰",
+							"15尺，锥状（敏捷豁免）"
+						],
+						[
+							"银",
+							"寒冷",
+							"15尺，锥状（体质豁免）"
+						],
+						[
+							"白",
+							"寒冷",
+							"15尺，锥状（体质豁免）"
+						]
+					]
+				},
+				"处于混种形态时，你获得与你龙族血统对应伤害类型的抗性。每种龙对应的伤害类型与吐息武器将用于你之后获得的特性。"
+			]
+		},
+		{
+			"ENG_name": "Dragon-Hybrid Form",
+			"name": "龙人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "龙人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈龙与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@damage 1d6}点穿刺伤害，外加{@damage 1d4}点你龙族血统对应伤害类型的伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上龙人兽化症。",
+				"此外，你可以说、读并写{@language 龙语}。"
+			]
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "龙人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，处于混种形态时，你可以用你的动作呼出毁灭性的能量。你的龙族血统决定了这吐息的尺寸、形状和伤害类型。",
+				"使用吐息时，你吐息范围内的每个生物都必须进行一次豁免，其豁免类型取决于你的龙族血统。该豁免的DC等于8 + 你的体质调整值 + 你的熟练加值。豁免失败者将受到{@damage 2d6}点伤害。豁免成功则伤害减半。其伤害值在6级时增加到{@damage 3d6}，11级增加到{@damage 4d6}，16级增加到{@damage 5d6}。",
+				"你可以使用吐息武器的次数等于你的体质调整值（最少为1），完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Dragon Wings",
+			"name": "龙翼",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "龙人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在第10级，处于混种形态时，你的背上会生出一对龙翼，使你获得等同于你当前速度的飞行速度。",
+				"当你进入混种形态时，未为容纳你的双翼而改制的护甲和衣物可能会被毁坏。"
+			]
+		},
+		{
+			"ENG_name": "Draconic Scales",
+			"name": "龙鳞",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "龙人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，当你处于混种形态且未穿着护甲时，你的AC获得+2加值（可与坚韧兽皮的加值叠加）。"
+			]
+		},
+		{
+			"ENG_name": "Frightful Presence",
+			"name": "骇人威仪",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "龙人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，处于混种形态时，你可以用你的动作迫使你周围60尺内、能察觉到你的任意数量自选生物进行一次DC为8 + 你的熟练加值 + 你的魅力调整值的感知豁免检定，失败者对你的{@condition 恐慌}持续1分钟。生物可以在其每个回合结束时重复此豁免，成功则为自己结束此效应。如果生物的豁免成功、或此效应对其结束，该生物在接下来24小时内免疫你的骇人威仪。",
+				"你可以使用此特性的次数等于你的魅力调整值（最少为1），完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Were-Hell Hound",
+			"name": "地狱猎犬人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "地狱猎犬人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"虽然乍看之下与狼人相似，但它们那长长的双角与赤红发光的双眼绝不会认错。正如其四足同类一般，这些喷火的可怖邪魔是凶猛的敌手，常有人见到它们为其炼狱主子游猎于下层位面。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "地狱猎犬人混种形态|兽化人|FoxfireLycan|地狱猎犬人|FoxfireLycan|1"
+				},
+				{
+					"ENG_name": "Bonus Origins and Totem Powers",
+					"name": "额外起源与图腾威能",
+					"type": "inset",
+					"entries": [
+						"在图腾威能的先决条件上，地狱猎犬人起源视同\"狼人\"起源；呼唤动物盟友亦同此理。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hell Hound-Hybrid Form",
+			"name": "地狱猎犬人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "地狱猎犬人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈地狱猎犬与人混合之形，你具有火焰伤害抗性，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d8}点穿刺伤害，外加{@dice 1d6}点火焰伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上地狱猎犬人兽化症。",
+				"此外，你可以说、读并写{@language 炼狱语}，且处于混种形态时能受到影响邪魔的效果之影响。"
+			]
+		},
+		{
+			"ENG_name": "Infernal Combustion",
+			"name": "炼狱燃烧",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "地狱猎犬人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，处于混种或动物形态时，你可以用一个动作呼出15尺锥形的灼热烈焰。该区域内的每个生物必须进行一次DC为8 + 你的熟练加值 + 你的体质调整值的敏捷豁免检定，失败者受到{@dice 4d6}点火焰伤害，成功则伤害减半。在第14级，此火焰伤害提升为{@dice 5d6}，并在第18级提升为{@dice 6d6}。",
+				"你可以使用此特性的次数等于你的体质调整值（最少为1），完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Hell Hound Form",
+			"name": "地狱猎犬形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "地狱猎犬人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为{@creature 地狱猎犬|MM}以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为中型。此外，在此形态下你获得的是火焰伤害免疫而非抗性。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Pack Hunter",
+			"name": "集群猎手",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "地狱猎犬人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，当你处于混种或地狱猎犬形态时，如果至少一名你的盟友位于该生物5尺内且该盟友未失能，你对一个生物的攻击掷骰具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Hell's Hunt",
+			"name": "地狱狩猎",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "地狱猎犬人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用一个动作发出一声炼狱猎号，召唤其他地狱猎犬加入战团。选择你周围30尺内你能看见的4个未被占据的空间，每个空间中出现一只{@creature 地狱猎犬|MM}。被召唤的生物在其生命值降至0时或1小时过后消失。",
+				"被召唤的生物对你和你的盟友友善。为被召唤的生物作为一个整体掷先攻。它们共用同一先攻位并同时行动。它们会服从你下达的任何并非自寻死路的口头命令。向被召唤的生物下达口头命令是免费动作。如果你不向它们下达任何命令，它们会自卫抵御敌对生物，但除此之外不采取任何动作。如果某只地狱猎犬在最近1分钟内未曾采取{@action 攻击}动作，它会对周围所有生物转为敌对，直到其生命值降至0或消失为止。",
+				"你必须完成一次长休后才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Werebat",
+			"name": "蝙蝠人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "蝙蝠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"蝙蝠人常被（不正确地）认为是仅属于类地精一族的兽化人，它们是尖叫着的致命夜行有翼生物。在人形形态下，它们通常狮子鼻、利齿尖锐，但这些差异如此细微，几乎无从分辨；这些伏击掠食者往往智慧不低，喜欢猎捕最危险的猎物。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "蝙蝠人混种形态|兽化人|FoxfireLycan|蝙蝠人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bat-Hybrid Form",
+			"name": "蝙蝠人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "蝙蝠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈蝙蝠与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d4}点穿刺伤害。你可以将你的力量或敏捷调整值加到攻击掷骰和伤害掷骰上。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上蝙蝠人兽化症。",
+				"此外，处于混种形态时，你获得等同于你移动速度的飞行速度。要使用此速度，你不能穿着中甲或重甲。你还可以用敏捷代替力量，作为你使用掠食打击特性进行的徒手打击之攻击掷骰和伤害掷骰的依据。"
+			]
+		},
+		{
+			"ENG_name": "Echolocation",
+			"name": "回声定位",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "蝙蝠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，只要你在混种形态下未耳聋，你便拥有30尺范围的盲视。",
+				"在第14级，你的盲视范围提升至60尺。"
+			]
+		},
+		{
+			"ENG_name": "Bat Form",
+			"name": "蝙蝠形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "蝙蝠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为{@creature 蝙蝠|MM}以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为微型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Dark Ambusher",
+			"name": "黑暗伏击者",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "蝙蝠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你学会以令人目盲的速度打击毫无防备者。你的先攻掷骰具有优势；此外，在战斗中你的第一个回合里，你对尚未行动的生物的攻击掷骰具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Screech",
+			"name": "尖啸",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "蝙蝠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级起，你可以用你的动作发出一声震裂耳膜的尖啸。你周围15尺内能听到尖啸的每个生物必须进行一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定。失败者受到{@damage 8d6}点雷鸣伤害并耳聋1分钟；成功者伤害减半且不耳聋。此尖啸对物体和建筑造成双倍伤害，发出300尺内可闻的可怖声响，同时也会使你自己耳聋1分钟。",
+				"一旦使用了此特性，你必须完成一次长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Werebear",
+			"name": "熊人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "熊人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"熊人是强大的兽化人，有能力节制其怪物天性、抗拒其暴力冲动。在人形形态下，他们身形高大、肌肉发达，只要能长毛发，体毛便与熊形态毛皮的颜色相称。当熊人变身时，它会膨胀到惊人的体型，以武器或爪击横扫四方，带着熊一般的凶猛战斗。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "熊人混种形态|兽化人|FoxfireLycan|熊人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bear-Hybrid Form",
+			"name": "熊人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "熊人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈熊与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 3d4}点穿刺伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上熊人兽化症。"
+			]
+		},
+		{
+			"ENG_name": "Formidable Strength",
+			"name": "惊人力气",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "熊人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你获得熊一般的力量。你的负重能力（包括最大负载和最大举起重量）翻倍，且你在为推动、拖拽、举起或破坏物体而进行的力量检定上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Bear Form",
+			"name": "熊形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "熊人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为熊以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为大型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身会耗用一次混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Ursine Toughness",
+			"name": "熊之坚韧",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "熊人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，当你处于混种或熊形态、未穿着护甲且未持用盾牌时，你的AC获得+2加值（可与坚韧兽皮的加值叠加）。"
+			]
+		},
+		{
+			"ENG_name": "Terrifying Roar",
+			"name": "恐怖咆哮",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "熊人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用你的动作向你周围30尺内任意数量的生物咆哮，令其血液凝固、因恐惧而呆滞。任何能听到你的目标生物必须通过一次DC为8 + 你的熟练加值 + 你的魅力调整值的感知豁免检定，否则对你的{@condition 恐慌}持续到你下个回合结束。",
+				"如果生物此豁免失败5点或更多，则改为{@condition 震慑}直到你下个回合结束。此豁免成功的生物在接下来24小时内免疫本特性。",
+				"你可以使用此特性的次数等于你的魅力调整值（最少为1），完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Wereboar",
+			"name": "野猪人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "野猪人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"野猪人是脾气暴躁、粗鄙不堪的蛮汉。在人形形态下，他们矮壮结实、肌肉发达，毛发短而硬。在人形和混种形态下，他们使用重型武器；而在混种或动物形态下，他们会获得致命的挑击，其诅咒正借此传播。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "野猪人混种形态|兽化人|FoxfireLycan|野猪人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Boar-Hybrid Form",
+			"name": "野猪人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "野猪人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈野猪与人混合之形，你长出的獠牙成为一件你在该形态下熟练使用的天生武器。",
+				"当你用獠牙进行近战攻击时，你的触及为5尺，命中时造成{@dice 2d6}点挥砍伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的獠牙命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上野猪人兽化症。"
+			]
+		},
+		{
+			"ENG_name": "Brutish Swine",
+			"name": "蛮横猪猡",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "野猪人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你获得临时武器的熟练项。此外，如果你的体型为小型，具有\"重型\"词条的武器不再对你的攻击掷骰施加劣势。"
+			]
+		},
+		{
+			"ENG_name": "Boar Form",
+			"name": "野猪形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "野猪人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为野猪以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为中型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Charge",
+			"name": "冲锋",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "野猪人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"第14级起，当你处于混种或野猪形态时，先向一个目标直线移动至少15尺，再在同一回合用你的獠牙对其发动攻击，则命中时目标额外受到{@dice 2d6}点穿刺伤害。如果目标是一个生物，它必须通过一次DC为8 + 你的熟练加值 + 你的力量调整值的力量豁免检定，否则应击倒地。"
+			]
+		},
+		{
+			"ENG_name": "Relentless",
+			"name": "坚韧",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "野猪人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"当你达到第18级时，如果你在混种或动物形态下生命值降至0且未立即死亡，你可以改为生命值降至1。一旦使用了此特性，你必须完成一次长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Werefox",
+			"name": "狐人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狐人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"狐人是狡黠而聪敏的兽化人，通常被认为自我中心、耽于享乐又爱慕虚荣；也有一些不过是顽皮的诡计师。在人形形态下，无论其种族为何，他们都散发着精灵般的气质；而在混种形态下，他们保持着精瘦柔韧的体格\u2014\u2014这两者都助力于他们偏好的欺诈与幻惑战术。尽管狐人绝大多数为女性，罕有的例外确实存在。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狐人混种形态|兽化人|FoxfireLycan|狐人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Fox-Hybrid Form",
+			"name": "狐人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狐人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈狐与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d6}点穿刺伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上狐人兽化症。",
+				"此外，处于混种形态时，你获得等同于你移动速度一半的掘穴速度。"
+			]
+		},
+		{
+			"ENG_name": "Vulpine Charm",
+			"name": "狐媚魅力",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狐人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，你在对抗魅惑的豁免检定上具有优势，魔法无法使你入睡，且你进行的任何魅力（{@skill 欺瞒}）或魅力（{@skill 游说}）检定均具有优势。",
+				"此外，在一次成功的魅力（{@skill 欺瞒}）或魅力（{@skill 游说}）检定后，你可以耗用一次此特性的使用次数，使该生物被你魅惑1分钟，直到你或你的同伴对其做出任何有害之事。你可以使用此特性这一部分的次数等于你的魅力调整值（最少为1）。完成一次短休或长休后，你恢复此特性已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Fox Form",
+			"name": "狐形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狐人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为{@creature 狐狸|FoxfireLycan}以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为小型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Infravision",
+			"name": "红外视觉",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狐人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，每当你处于混种或动物形态时，你都能在60尺内的微光与黑暗中正常视物。在黑暗中你无法分辨色彩，只能看出灰阶明暗。"
+			]
+		},
+		{
+			"ENG_name": "Elude",
+			"name": "遁避",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狐人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，当你采取撤离动作、或被一次借机攻击命中时，你可以耗用一次此特性的使用次数，使你的AC获得+5加值，直到你下个回合开始。",
+				"你可以使用此特性的次数等于你的敏捷调整值（最少为1）。完成一次短休或长休后，你恢复此特性已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Wererabbit",
+			"name": "兔人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "兔人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"兔人有时也被称作兔化人（werehares），是罕见的兽化人分支，在同类之中略显异数。其他兽化人多出自掠食性物种，而兔人则展现出许多常见于猎物动物的特质；然而这不过掩盖了它们致命的潜能。兔人极其敏捷，能以令人目盲的速度移动，踢出一脚便能像折断细枝般折断骨头。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兔人混种形态|兽化人|FoxfireLycan|兔人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Rabbit-Hybrid Form",
+			"name": "兔人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "兔人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈兔子与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d4}点穿刺伤害。你可以将你的力量或敏捷调整值加到攻击掷骰和伤害掷骰上。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上兔人兽化症。"
+			]
+		},
+		{
+			"ENG_name": "Powerful Kick",
+			"name": "强力踢击",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "兔人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，你能善用强壮的双腿打击敌人。处于混种形态时，你熟练使用你的踢击。",
+				"当你用踢击进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d8}点钝击伤害。你可以将你的力量或敏捷调整值（由你选择）加到攻击掷骰和伤害掷骰上。",
+				"此外，命中时该生物必须通过一次DC为8 + 你的熟练加值 + 你的力量或敏捷调整值（由你选择）的力量豁免检定，否则被推离你10尺并{@condition 失能}直到其下个回合开始。"
+			]
+		},
+		{
+			"ENG_name": "Rabbit Form",
+			"name": "兔形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "兔人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用该特性时，可以变身为兔子以取代混种形态。你保留混种形态授予的相同特性。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为微型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "El-ahrairah's Blessing",
+			"name": "艾拉费拉的祝福",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "兔人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"第14级起，如果你在自己的回合采取{@action 疾走}动作，你可以用一个附赠动作进行{@action 疾走}或{@action 回避}。",
+				"此外，处于混种形态时，你获得等同于你移动速度的掘穴速度。",
+				"最后，你的跳远距离可以增加10尺，跳高距离增加3尺。"
+			]
+		},
+		{
+			"ENG_name": "Lucky Rabbit's Foot",
+			"name": "幸运兔脚",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "兔人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你几乎能从危险中奇迹般脱身。你可以选择使一次本会命中你的近战、远程或法术攻击改为未命中。这发生在你得知自己被命中之后、伤害掷骰之前。",
+				"完成一次短休或长休后，你恢复此特性的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Wererat",
+			"name": "鼠人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鼠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"鼠人是狡猾的兽化人，具有狡诈、贪婪的个性。在人形状态下，它们身材瘦削、动作抽搐，头发稀疏，眼神闪烁。在人形和混种形态中，鼠人更喜欢使用轻型武器，并采用伏击战术而不是群体作战。尽管鼠人在鼠形态下可以进行恶毒的咬击，但它更倾向于利用这种形态进行隐秘的渗透和逃脱，而不是战斗。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "鼠人混种形态|兽化人|FoxfireLycan|鼠人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Rat-Hybrid Form",
+			"name": "鼠人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鼠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈鼠与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d4}点穿刺伤害。你可以将你的力量或敏捷调整值加到攻击掷骰和伤害掷骰上。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上鼠人兽化症。"
+			]
+		},
+		{
+			"ENG_name": "Scurry",
+			"name": "疾窜",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鼠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，如果你在自己的回合采取{@action 撤离}动作，你可以用一个附赠动作进行{@action 疾走}。此外，如果你在自己的回合采取{@action 攻击}动作，你可以用一个附赠动作进行{@action 撤离}。"
+			]
+		},
+		{
+			"ENG_name": "Rat Form",
+			"name": "鼠形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鼠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用该特性时，可以变身为巨鼠以取代混种形态。你保留混种形态授予的相同特性。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为小型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Skulk",
+			"name": "鬼祟潜行",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鼠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你为躲藏而进行的敏捷（{@skill 隐匿}）检定具有优势。你还获得等同于你移动速度的攀爬速度和游泳速度。"
+			]
+		},
+		{
+			"ENG_name": "Surprise",
+			"name": "突袭",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鼠人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，如果你在战斗中的第一个回合用攻击命中一个处于突袭状态的生物，该攻击对其造成额外的{@dice 3d6}点伤害。此额外伤害的类型与攻击本身相同。"
+			]
+		},
+		{
+			"ENG_name": "Wereraven",
+			"name": "鸦人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鸦人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"鸦人是行事隐秘、格外谨慎的兽化人，彼此信任，却对几乎所有其他人心存戒备。尽管善于融入社会，他们大多离群索居、尊重当地法律，并尽可能行善。在人形和混种形态下，鸦人偏爱轻武器。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "鸦人混种形态|兽化人|FoxfireLycan|鸦人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Raven-Hybrid Form",
+			"name": "鸦人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鸦人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈渡鸦与人混合之形，你长出的喙成为一件你在该形态下熟练使用的天生武器。",
+				"当你用喙进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d4}点穿刺伤害。你可以将你的力量或敏捷调整值加到攻击掷骰和伤害掷骰上。",
+				"被你的喙命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上鸦人兽化症。",
+				"此外，处于混种形态时，你获得等同于你移动速度的飞行速度。要使用此速度，你不能穿着中甲或重甲。"
+			]
+		},
+		{
+			"ENG_name": "Mimicry",
+			"name": "拟声",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鸦人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，你能模仿你听过的声音，包括语音。听到你发出声音的生物可以用一次成功的感知（{@skill 洞悉}）检定对抗你的魅力（{@skill 欺瞒}）检定，判明那是模仿之作。"
+			]
+		},
+		{
+			"ENG_name": "Raven Form",
+			"name": "鸦形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鸦人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为渡鸦以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为微型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Swooping Blow",
+			"name": "俯冲打击",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鸦人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，当你处于混种或鸦形态时，先向一个目标直线飞行至少15尺，再在同一回合用一次近战攻击命中它，则目标额外受到{@dice 2d6}点该攻击类型的伤害。如果目标是一个生物，且你在如此做之后移出其触及范围，该生物对你发动的借机攻击具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Keen Sight",
+			"name": "敏锐视觉",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鸦人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以毫无困难地看清1英里外的事物，连细微之处也能分辨，宛如在100尺内端详一般。",
+				"此外，微光不会对你的感知（{@skill 察觉}）检定施加劣势，且你为发现物品而进行的（{@skill 察觉}）检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Werestag",
+			"name": "鹿人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鹿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"鹿人是罕见而难以寻觅的兽化人，通常栖居于上层位面的荒野森林中，是他们本土林域的守护者。作为尽职的护卫，他们与自然有着天生的联结，能驾驭自然之力，且常是德鲁伊与游侠的盟友；然而作为战利品猎人垂涎的珍品，他们通常深自隐藏。另外，与其名称相反，雌性鹿人确实存在。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "鹿人混种形态|兽化人|FoxfireLycan|鹿人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Deer-Hybrid Form",
+			"name": "鹿人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鹿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈鹿与人混合之形，你长出的鹿角成为一件你在该形态下熟练使用的天生武器。",
+				"当你用鹿角进行近战攻击时，你的触及为5尺，命中时造成{@damage 1d6}点钝击伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的鹿角命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上鹿人兽化症。"
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鹿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你达到第6级时，你已学会如德鲁伊一般运用自然的魔法精粹来施展法术。施法的一般规则见{@book 第十章|PHB|10}，{@filter 德鲁伊法术列表|spells|class=德鲁伊}与{@filter 游侠法术列表|spells|class=游侠}见{@book 第十一章|PHB|11}。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从{@filter 德鲁伊法术列表|spells|class=德鲁伊}中习得两项自选戏法。在第10级，你再习得一项自选的德鲁伊戏法。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Spell Slots",
+							"type": "entries",
+							"name": "法术位",
+							"entries": [
+								"\"鹿人施法\"表记录了你可用以施展{@filter 德鲁伊法术|spells|class=德鲁伊}与{@filter 游侠法术|spells|class=游侠}的1环及更高环阶法术的法术位数量。施展其中一个法术时，你必须消耗其对应环阶或更高环阶的法术位。完成一次长休后，你恢复所有已消耗的法术位。",
+								"例如，如果你已经习得1环法术{@spell 疗伤术}并且有一个1环和一个2环法术位可用，你可以使用任一法术位施放{@spell 疗伤术}。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Spells Known of 1st-Level and Higher",
+							"type": "entries",
+							"name": "已知的1环及更高环阶法术",
+							"entries": [
+								"你知晓四项自选的1环法术，其中三项必须从德鲁伊与游侠法术列表中的预言系和变化系法术里选择。",
+								"\"鹿人施法\"表的\"已知法术\"一栏记录了你何时习得更多1环或更高环阶的德鲁伊与游侠法术。这些法术每一项都必须是你的自选预言系或变化系法术，且必须是你拥有对应环阶法术位的环阶。例如，当你在此职业达到第7级时，你可以习得一项新的1环或2环法术。",
+								"在第8、14和20级时，你可以学习任何学派的法术。",
+								"每当你获得此职业的一个等级时，你可以用德鲁伊或游侠法术列表中的另一项自选法术，替换一项你已知的德鲁伊或游侠法术。新法术必须是你拥有对应环阶法术位的环阶，且必须是预言系或变化系法术\u2014\u2014除非你替换的是在第6、8、14或20级获得的来自任意魔法学派的法术。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Spellcasting Ability",
+							"type": "entries",
+							"name": "施法属性",
+							"entries": [
+								"感知是你施展德鲁伊与游侠法术的施法属性，因为你的魔法源自你与自然的同调。每当法术提及你的施法属性时，均使用你的感知。此外，你为所施展的德鲁伊或游侠法术设定豁免DC、以及用其进行攻击掷骰时，均使用你的感知调整值。",
+								{
+									"ENG_name": "Spell",
+									"type": "abilityDc",
+									"name": "法术",
+									"attributes": [
+										"wis"
+									]
+								},
+								{
+									"ENG_name": "Spell",
+									"type": "abilityAttackMod",
+									"name": "法术",
+									"attributes": [
+										"wis"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Deer Form",
+			"name": "鹿形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鹿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为{@creature 鹿|MM}以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为中型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Charge",
+			"name": "冲锋",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鹿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"第14级起，当你处于混种或鹿形态时，先向一个目标直线移动至少15尺，再在同一回合用你的鹿角对其发动攻击，则命中时目标额外受到{@damage 2d6}点钝击伤害。如果目标是一个生物，它必须通过一次DC为8 + 你的熟练加值 + 你的力量调整值的力量豁免检定，否则应击倒地。"
+			]
+		},
+		{
+			"ENG_name": "Forest Protector",
+			"name": "森林守护者",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "鹿人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用你的动作指定一个你周围30尺内能看见的生物。如果该目标能看见你，它必须通过一次对抗你法术豁免DC的感知豁免检定，否则被你{@condition 魅惑}。被{@condition 魅惑}的目标会将你视为值得听从和保护的可信友人。尽管目标不受你控制，它会尽其所能以最有利的方式理解你的请求或行动。",
+				"每当你或你的同伴对目标做出任何有害之事，它都可以重复此豁免，成功则为自己结束此效应。否则，此效应持续1小时，直到你死亡、你与目标处于不同位面、或你用一个附赠动作结束此效应。此效应结束时，该生物会知道自己曾被你{@condition 魅惑}。"
+			]
+		},
+		{
+			"ENG_name": "Weretiger",
+			"name": "虎人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "虎人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"虎人是凶猛的猎人和战士，具有傲慢和挑剔的天性。在人形状态下，它们身材修长、肌肉线条流畅，比一般人高大，且总是精心打扮。虎人在动物形态和混种形态中体型巨大，但它们尽可能在更精致的人形状态下战斗。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "虎人混种形态|兽化人|FoxfireLycan|虎人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Tiger-Hybrid Form",
+			"name": "虎人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "虎人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈虎与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d10}点穿刺伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上虎人兽化症。"
+			]
+		},
+		{
+			"ENG_name": "Feline Agility",
+			"name": "猫之迅捷",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "虎人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，你的敏捷（{@skill 特技}）检定具有优势。此外，如果你在自己的回合采取{@action 回避}动作，你可以用你的附赠动作用徒手打击进行一次攻击。"
+			]
+		},
+		{
+			"ENG_name": "Tiger Form",
+			"name": "虎形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "虎人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为老虎以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为大型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Eye of the Tiger",
+			"name": "老虎之眼",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "虎人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，如果你原本没有黑暗视觉，则获得120尺黑暗视觉，且你在任何依赖视觉的感知（{@skill 察觉}）检定上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Pounce",
+			"name": "猛扑",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "虎人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级起，当你处于混种或虎形态时，先向一个生物直线移动至少15尺，再在同一回合用一次徒手打击命中它，该目标必须通过一次DC为8 + 你的熟练加值 + 你的力量调整值的力量豁免检定，否则应击倒地。如果目标应击倒地，你可以用一个附赠动作对其发动一次啃咬攻击。"
+			]
+		},
+		{
+			"ENG_name": "Werewolf",
+			"name": "狼人",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狼人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"entries": [
+				"狼人是凶残的掠食者。在人形形态下，狼人感官敏锐、脾气火爆，偏爱带血的生肉。其狼形态已是可怖的掠食者，而其混种形态则远为骇人\u2014\u2014覆毛而筋肉虬结的人形躯体，顶着一颗贪食无厌的狼首。狼人在混种形态下能够持用武器，不过它更爱用强有力的爪与咬将敌人撕成碎片。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狼人混种形态|兽化人|FoxfireLycan|狼人|FoxfireLycan|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Wolf-Hybrid Form",
+			"name": "狼人混种形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狼人",
+			"subclassSource": "FoxfireLycan",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此起源时，你的混种形态呈狼与人混合之形，而你的啃咬成为一件你在该形态下熟练使用的天生武器。",
+				"当你用啃咬进行近战攻击时，你的触及为5尺，命中时造成{@dice 1d8}点穿刺伤害。你的攻击掷骰和伤害掷骰加上你的力量调整值。",
+				"被你的啃咬命中的生物必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则将染上狼人兽化症。"
+			]
+		},
+		{
+			"ENG_name": "Silent Tracker",
+			"name": "无声追踪者",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狼人",
+			"subclassSource": "FoxfireLycan",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你获得狼一般的狩猎直觉。你可以在用快速步调旅行的同时追踪其他生物，也可以在用正常步调旅行时保持隐匿。（旅行步调规则见《玩家手册》第八章。）",
+				"此外，在每场战斗的第一个回合，如果你曾对某生物隐藏，你对该生物的所有攻击掷骰均具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Wolf Form",
+			"name": "狼形态",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狼人",
+			"subclassSource": "FoxfireLycan",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你在使用混种形态特性时，可以变身为狼以取代混种形态。你保留混种形态特性所授予的收益。你穿戴或携带的任何装备都不会随之变化，且除非护甲专为你的动物形态改制，否则你无法穿着任何护甲。在此形态下，你使用为人形生物设计的装备时具有劣势，且无法施展需要材料成分的法术。",
+				"在动物形态下，除AC和体型外，你的游戏数据保持不变。你在动物形态下的AC为12 + 你的敏捷调整值 + 你的体质调整值（在适用的情况下，你仍会获得坚韧兽皮特性提供的AC加值），且你的体型变为中型。",
+				"为辨别你并非寻常的同类动物，生物可以用其动作查验你的外貌，且必须进行一次智力（{@skill 调查}）检定，与你的魅力（{@skill 欺瞒}）检定对抗。",
+				"以此方式变身算作一次对混种形态特性的使用。"
+			]
+		},
+		{
+			"ENG_name": "Pack Hunter",
+			"name": "集群猎手",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狼人",
+			"subclassSource": "FoxfireLycan",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，当你处于混种或狼形态时，如果至少一名你的盟友位于该生物5尺内且该盟友未失能，你对一个生物的攻击掷骰具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Howl",
+			"name": "激励嚎叫",
+			"source": "FoxfireLycan",
+			"className": "兽化人",
+			"classSource": "FoxfireLycan",
+			"subclassShortName": "狼人",
+			"subclassSource": "FoxfireLycan",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用你的动作发出一声悠长而嘹亮的嚎叫，鼓舞盟友、震慑敌人。你嚎叫时，周围30尺内任何能听到你的友方生物，其下一次攻击掷骰具有优势，且不再处于{@condition 魅惑}或{@condition 恐慌}状态。你周围30尺内能听到你的敌对生物必须通过一次感知豁免检定（DC等于8 + 你的熟练加值 + 你的魅力调整值），否则其下一次攻击掷骰或豁免检定具有劣势。此豁免成功的生物在接下来24小时内免疫本特性。你需要完成一次短休或长休后才能再次使用此特性。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Adept Climber",
+			"name": "熟练攀爬者",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"熊人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你获得{@skill 运动}技能的熟练项。如果你已熟练该技能，则你进行的任何{@skill 运动}属性检定均加上双倍熟练加值。",
+				"此外，当你未穿着重甲时，你获得30尺攀爬速度。"
+			]
+		},
+		{
+			"ENG_name": "Bestial Mask",
+			"name": "野兽面具",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"处于动物形态时，你为将自己伪装成该类生物的正常个体而进行的魅力（{@skill 欺瞒}）检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Bestial Speech",
+			"name": "野兽言语",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"处于混种或动物形态时，你获得理解野兽并以言语与它们沟通的能力。",
+				"许多野兽的知识与见识受其智力所限，但至少，野兽能向你提供关于附近地点和怪物的信息，包括它们当下能感知到、或过去一天内感知到的一切。由DM裁量，你或许能说服一只野兽为你帮个小忙。"
+			]
+		},
+		{
+			"ENG_name": "Boar Rush",
+			"name": "野猪冲撞",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"野猪人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"当你在自己的回合用獠牙成功命中一个生物时，你可以用一个附赠动作尝试将该生物撞退。该生物必须通过一次DC为8 + 你的熟练加值 + 你的力量调整值的力量豁免检定，否则被推离你10尺。"
+			]
+		},
+		{
+			"ENG_name": "Boon of the Ro'we",
+			"name": "罗威的恩赐",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"鹿人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"每当你恢复生命值时，你将用以决定所恢复生命值的任何掷骰视为掷出了最大值。此外，你完成一次长休后会额外恢复一个已耗用的生命骰。"
+			]
+		},
+		{
+			"ENG_name": "Breath of the Winter Wolf",
+			"name": "冬狼之息",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"狼人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"处于混种或动物形态时，你可以用一个动作呼出30尺锥形的凛冽寒风。该区域内的每个生物必须进行一次DC为8 + 你的熟练加值 + 你的体质调整值的敏捷豁免检定，失败者受到{@damage 4d8}点寒冷伤害，成功则伤害减半。在第14级，此寒冷伤害提升为{@damage 5d8}，并在第18级提升为{@damage 6d8}。你必须完成一次长休后才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Bruin Grip",
+			"name": "熊罴之攫",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"熊人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"就决定你能擒抱哪些生物而言，你视为大一个体型。",
+				"此外，你可以用你的动作尝试压制你擒抱的生物。为此，再进行一次擒抱检定。如果你成功，该生物被{@condition 束缚}直到擒抱结束。"
+			]
+		},
+		{
+			"ENG_name": "Call Animal Allies",
+			"name": "呼唤动物盟友",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用一个附赠动作尝试呼唤动物盟友来到你身边，前提是你处于正确的环境中。由DM裁量并取决于你的兽化人起源，以下动物会出现并援助你至多1小时：",
+				"蝙蝠人：四群{@creature 蝙蝠群|MM|蝙蝠群}",
+				"熊人：两只{@creature 黑熊|MM|黑熊}",
+				"野猪人：四头{@creature 野猪|MM|野猪}",
+				"狐人：八只{@creature 狐狸|FoxfireLycan|狐狸}",
+				"兔人：十六只{@creature 兔子|FoxfireLycan|兔子}",
+				"鼠人：八只{@creature 巨鼠|MM|巨鼠}",
+				"鸦人：四群{@creature 渡鸦群|MM|渡鸦群}",
+				"鹿人：十六头{@creature 鹿|FoxfireLycan|鹿}",
+				"虎人：一只{@creature 老虎|MM}",
+				"狼人：四只{@creature 狼|MM|狼}",
+				"猿人：两只{@creature 猿|MM|猿}",
+				"龙人：八只{@creature 狗头人|MM|狗头人}",
+				"被召唤的生物对你和你的盟友友善。为被召唤的生物作为一个整体掷先攻。它们共用同一先攻位并同时行动。它们会服从你下达的任何并非自寻死路的口头命令。向被召唤的生物下达口头命令是免费动作。如果你不向它们下达任何命令，它们会自卫抵御敌对生物，但除此之外不采取任何动作。你必须完成一次长休后才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Cannibalistic Regeneration",
+			"name": "同类相食再生",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"处于混种或动物形态时，你可以用你的动作食用你5尺内一只死亡有机生物的血肉，恢复等同于{@dice 1d10} + 你的兽化人等级的生命值。",
+				"如此做之后你的回合结束。在你下个回合开始时，你必须进行一次DC 10的感知豁免检定，否则必须直接朝距你最近的生物移动，并对该生物使用{@action 攻击}动作。你必须完成一次短休或长休后才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Cat-Like Reflexes",
+			"name": "猫般反射",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"虎人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"当你处于混种或动物形态时，如果一个你能看见的攻击者以攻击命中你，你可以用你的反应使该攻击对你的伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Cloak of Nature",
+			"name": "自然斗篷",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"鹿人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"即使你仅被枝叶、大雨、落雪、薄雾及其他自然现象轻度遮蔽，你也可以尝试{@action 躲藏}；如此做时，你进行的敏捷（{@skill 隐匿}）检定获得+10加值。如果任何效应或动作使你不再隐藏，你仍会被自动察觉。"
+			]
+		},
+		{
+			"ENG_name": "Disease Carrier",
+			"name": "疾病携带者",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"鼠人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"当你用啃咬攻击成功命中一个生物时，它必须通过一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定，否则陷入{@condition 中毒}。该生物保持{@condition 中毒}直到此状态被治愈。每一分钟，该生物都必须重复此豁免，失败则其生命值上限降低{@dice 1d10}。此降低持续到{@condition 中毒}状态被治愈为止。如果本特性将其生命值上限降至0，该生物死亡。",
+				"免疫疾病或{@condition 中毒}状态的生物不受此效应影响。"
+			]
+		},
+		{
+			"ENG_name": "Disease Immunity",
+			"name": "疾病免疫",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你血液中的兽化诅咒使你免疫所有疾病、毒素伤害以及{@condition 中毒}状态。"
+			]
+		},
+		{
+			"ENG_name": "Enfeebling Fangs",
+			"name": "衰弱獠牙",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"蝙蝠人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你用啃咬命中一个生物时，你可以迫使该生物进行一次DC为8 + 你的熟练加值 + 你的体质调整值的体质豁免检定。豁免失败的目标，其使用力量的武器攻击在1分钟内只造成一半伤害。在此持续时间内，目标可以在其每个回合重复此豁免，成功则为此结束该效应。"
+			]
+		},
+		{
+			"ENG_name": "Fast-Flyer",
+			"name": "迅捷飞行者",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"鸦人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你已精于运用双翼以令人目盲的速度在空中穿梭。当你在自己的回合使用飞行速度移动时，你可以使你的飞行速度翻倍，直到你的回合结束。一旦使用了此特性，你必须在自己的某个回合移动0尺后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Fearless",
+			"name": "无畏",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你免疫{@condition 恐慌}状态以及任何会使你从生物身边逃走的效果。"
+			]
+		},
+		{
+			"ENG_name": "Feline Balance",
+			"name": "猫科平衡",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"虎人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你可以在坠落时用你的反应，使你所受的任何坠落伤害减少等同于你敏捷值的数值。"
+			]
+		},
+		{
+			"ENG_name": "Feral Lope",
+			"name": "野性疾驰",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你处于混种或动物形态且双手未持任何东西时，你的移动速度提升20尺。"
+			]
+		},
+		{
+			"ENG_name": "Hunt the Prey",
+			"name": "追猎",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用一个附赠动作选择一个你能看见的生物。在接下来的1小时内，你为寻找或追踪它而进行的感知（{@skill 察觉}）和感知（{@skill 求生}）检定具有优势。你需要完成一次短休或长休后才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Immovable Beast",
+			"name": "不动如兽",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"熊人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你不会因非魔法手段应击{@condition 倒地}。你对抗法术或其他会强迫你移动或使你{@condition 倒地}的效果的豁免检定也具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Ingenuity",
+			"name": "心灵手巧",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"猿人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你获得一项自选工具的熟练项。每当你完成一次长休，你可以将所选的工具熟练项改为另一项。",
+				"此外，你获得临时武器的熟练项，且当你在自己的回合用徒手打击或临时武器命中一个生物时，你可以用一个附赠动作尝试{@action 擒抱}该目标。"
+			]
+		},
+		{
+			"ENG_name": "Keen-Feathered",
+			"name": "锐羽",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"鸦人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你的羽毛变得如剃刀般锋利，能像匕首一样切割。处于混种形态时，你可以用一个附赠动作向一个生物掷出你的羽毛。选择你周围30尺内的一个生物并进行一次远程攻击掷骰。此远程攻击掷骰加上你的熟练加值。命中时，你对该生物造成{@damage 2d4} + 你的敏捷调整值点穿刺伤害，此伤害视为魔法伤害。你可以使用此特性的次数等于你的体质调整值（最少为1次）。完成一次短休或长休后，你恢复此特性所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Kin to Beasts",
+			"name": "野兽之亲",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"你获得{@skill 驯兽}技能的熟练项。如果你已熟练此技能，则你可以为{@skill 驯兽}技能检定加上双倍熟练加值。"
+			]
+		},
+		{
+			"ENG_name": "Leporine Escape",
+			"name": "兔遁",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"兔人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你为对抗{@condition 受擒}或{@condition 束缚}而进行的属性检定和豁免检定具有优势。",
+				"此外，如果一个敌对生物至少比你大一个体型，你可以穿过其空间，且穿过其他生物空间不再视为困难地形。"
+			]
+		},
+		{
+			"ENG_name": "Lunar Transformation",
+			"name": "月华变形",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"你能借助满月之光变身，但内在的野兽随时可能脱缰。满月期间，你可以使用混种或动物形态特性而不耗用次数；但如果你这样做，则每当你因嗜血而进行感知豁免检定时，均具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Mighty Wings",
+			"name": "强力之翼",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"龙人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你可以用一个动作振击双翼，你周围5尺内的每个生物必须通过一次DC为8 + 你的熟练加值 + 你的力量调整值的敏捷豁免检定，否则受到{@damage 2d4}点钝击伤害并应击{@condition 倒地}。随后你可以飞行至多等于你飞行速度一半的距离。"
+			]
+		},
+		{
+			"ENG_name": "Night Vision",
+			"name": "夜视",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"你获得黑暗视觉。你在60尺内的微光中视物如同亮光，在黑暗中视物如同微光。你在黑暗中无法分辨颜色，只能看出灰阶明暗。",
+				"此外，微光不会对你的感知（察觉）检定施加劣势。"
+			]
+		},
+		{
+			"ENG_name": "Nine-Tails",
+			"name": "九尾",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"狐人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你的混种与动物形态显现出沾染精类的魔法之力，每有两个兽化人等级便多长一条尾巴，最多9条。",
+				"你的混种形态每有一条尾巴，便从{@filter 德鲁伊法术列表|spells|level=1|class=德鲁伊}中选择一项1环法术。你可以用此图腾威能施展其中一项法术，次数等于你的熟练加值；完成一次长休后，你恢复此图腾威能所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Other Foot's Lucky Too",
+			"name": "另一只脚同样幸运",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 20,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"兔人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你获得幸运兔脚特性的第二次使用次数。完成一次短休或长休后，你恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Pack Master",
+			"name": "兽群首领",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"狼人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"处于混种或动物形态时，只要你未{@condition 失能}，盟友生物对任何位于你5尺内且与你敌对之生物的近战攻击掷骰具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Plague Rat",
+			"name": "鼠疫",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"鼠人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"当你用啃咬攻击成功命中一个生物时，你对目标造成额外的{@damage 2d4}点毒素伤害。"
+			]
+		},
+		{
+			"ENG_name": "Predator's Patience",
+			"name": "掠食者的耐心",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"虎人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"处于混种或动物形态时，如果你的回合中不移动，则即使你仅被枝叶、大雨、落雪、薄雾及其他自然现象轻度遮蔽，也可以尝试{@action 躲藏}。"
+			]
+		},
+		{
+			"ENG_name": "Quickrunner",
+			"name": "疾行者",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你的移动不受困难地形影响，且你对抗减速或使你{@condition 束缚}的法术与魔法效应的豁免检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Rampager",
+			"name": "肆虐者",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"当你处于混种或动物形态时，如果你在自己的回合用一次近战攻击将一个生物的生命值降至0，你可以用你的反应移动至多等于你速度一半的距离，并用一次天生武器攻击或徒手打击对付另一个生物。"
+			]
+		},
+		{
+			"ENG_name": "Rending Claws",
+			"name": "撕裂爪击",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 20,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你混种与动物形态的利爪伸长到骇人的长度。你的掠食打击伤害提升为{@damage 1d12}。然而，处于混种或动物形态时，你的双手无法持握任何物体。"
+			]
+		},
+		{
+			"ENG_name": "Shockwave Clap",
+			"name": "震荡击掌",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"猿人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"你可以用一个动作双掌相击，迸发出100尺内可闻的雷鸣巨响。你周围15尺内除你以外的每个生物必须进行一次体质豁免检定；失败者受到{@damage 4d6}点雷鸣伤害并耳聋直到其下个回合结束，成功者伤害减半且不耳聋。在第14级，此雷鸣伤害提升为{@damage 5d6}，并在第18级提升为{@damage 6d6}。",
+				"你可以使用此特性两次，完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Signs of the Curse",
+			"name": "诅咒之兆",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"即使在人形形态下，诅咒也在改变你的身体：你的牙齿和指甲变长、变利。当你未处于混种或动物形态时，也获得你的掠食打击特性的收益。"
+			]
+		},
+		{
+			"ENG_name": "Silver Tongue Trickster",
+			"name": "巧舌诡术师",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"狐人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"当你在自己的回合采取攻击动作时，你可以将其中一次攻击替换为一次欺骗尝试，对象是你周围30尺内能看见且能听到你的一个类人生物。进行一次魅力（{@skill 欺瞒}）检定，与目标的感知（{@skill 洞悉}）检定对抗。如果你的检定成功，你的移动不会引发该目标的借机攻击，且你对其的攻击掷骰具有优势；两项收益持续到你下个回合结束，或直到你将此能力用于另一个目标。如果你的检定失败，该目标在1小时内无法再以此方式被你欺骗。"
+			]
+		},
+		{
+			"ENG_name": "Spirit of the Beast",
+			"name": "野兽之灵",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 问道自然|PHB}法术，但只能以仪式方式进行。施展时，你在兽化人起源中所选动物的一个灵体化身会现身于你，传达你所寻求的信息。"
+			]
+		},
+		{
+			"ENG_name": "Terror of the Night",
+			"name": "黑夜之惧",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"处于混种或动物形态时，你对类人生物的魅力（{@skill 威吓}）检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Thrash",
+			"name": "猛砸",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"野猪人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"处于混种或动物形态时，你可以用一个动作用你的獠牙对你周围5尺内任意数量的生物进行近战攻击，并为每个目标分别进行攻击掷骰。"
+			]
+		},
+		{
+			"ENG_name": "Towering Transformation",
+			"name": "巍然变身",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 20,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"龙人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"当你使用混种形态特性时，你的体型在各维度上翻倍，体重增至八倍。这使你的体型提升一个类别，例如从中型变为大型。如果没有足够空间让你体型翻倍，你将增长到可用空间所允许的最大体型。当你进入混种形态时，未为容纳你新体型而改制的护甲和衣物可能会被毁坏。",
+				"处于混种形态时，你的吐息武器、天生武器和掠食打击的伤害骰数量翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Vampiric Bite",
+			"name": "吸血啃咬",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Lycanthrope",
+							"name": "兽化人"
+						}
+					},
+					"feature": [
+						"蝙蝠人兽化人起源"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你用啃咬命中一个生物时，你可以恢复等同于你兽化人等级的生命值。"
+			]
+		},
+		{
+			"ENG_name": "Vigorous Shifting",
+			"name": "旺盛变身",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"当你使用混种或动物形态特性时，你获得等同于你兽化人等级的临时生命值。你必须完成一次短休或长休后才能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Wounded Fury",
+			"name": "负伤狂怒",
+			"source": "FoxfireLycan",
+			"featureType": [
+				"图腾威能"
+			],
+			"entries": [
+				"当你用天生武器或徒手打击发动的攻击的伤害骰掷出1或2时，你可以重掷该骰并必须使用新的结果，即使新结果仍是1或2。",
+				"你必须剩余生命值不超过一半才能获得此收益。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Fox",
+			"name": "狐狸",
+			"shortName": true,
+			"source": "FoxfireLycan",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 0",
+				"average": 7
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 10,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"cr": "1/8",
+			"trait": [
+				{
+					"ENG_name": "Keen Hearing and Smell",
+					"name": "敏锐嗅听觉",
+					"entries": [
+						"狐狸在依赖听觉或嗅觉的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Pounce",
+					"name": "猛扑",
+					"entries": [
+						"如果狐狸向一个生物直线移动至少20尺后，在同一回合以爪击命中它，该目标必须通过一次{@dc 9}的力量豁免检定，否则应击{@condition 倒地}。如果目标处于{@condition 倒地}状态，狐狸可以用一个附赠动作对其发动一次啃咬攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 1}，触及5尺，单一目标。{@h}1（{@damage 1d4 - 1}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点挥砍伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Elude",
+					"name": "遁避",
+					"entries": [
+						"狐狸对一次本会命中它的借机攻击，使其AC获得+2。"
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pounce"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"ENG_name": "Rabbit",
+			"name": "兔子",
+			"source": "FoxfireLycan",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "1d4 - 1",
+				"average": 1
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 2,
+			"dex": 12,
+			"con": 8,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Keen Hearing",
+					"name": "敏锐听觉",
+					"entries": [
+						"兔子在依赖听觉的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 0}，触及5尺，单一目标。{@h}1点穿刺伤害。"
+					]
+				}
+			],
+			"environment": [
+				"森林",
+				"草地"
+			],
+			"familiar": true,
+			"traitTags": [
+				"Keen Senses"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
