@@ -1,0 +1,1784 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KSnowbellApothecary",
+				"abbreviation": "APO",
+				"full": "药剂师",
+				"url": "https://docs.google.com/document/d/1gYahI0lTvR2X8GJKFmElQYKinyegoLPhpYHW-9VoRTc/edit",
+				"version": "1.0",
+				"authors": [
+					"Kieru Snowbell"
+				],
+				"targetSchema": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1515780480,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "9774e8d480"
+	},
+	"class": [
+		{
+			"ENG_name": "Apothecary",
+			"name": "药剂师",
+			"source": "KSnowbellApothecary",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"con"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Magical Mixture Limit",
+					"name": "魔法调合剂上限",
+					"featureType": [
+						"Magical Mixture Limit"
+					],
+					"progression": [
+						0,
+						2,
+						2,
+						2,
+						4,
+						4,
+						4,
+						4,
+						6,
+						6,
+						6,
+						6,
+						8,
+						8,
+						8,
+						8,
+						10,
+						10,
+						10,
+						10
+					]
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易"
+				],
+				"tools": [
+					"炼金工具",
+					"酿酒工具"
+				],
+				"armor": [
+					"light",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 轻弩|phb}和{@item 弩矢(20)|phb|20支弩矢} 或 (a) 一把{@item 短弓|phb}和{@item 箭矢 (20)|phb|20支箭矢} 或 (c) 一件{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) {@item 炼金工具|phb} 或 (b) {@item 酿酒工具|phb}和一个装有10金币的{@item 小包|phb}",
+					"(a) 一件{@filter 简易武器|items|source=phb|category=基础|type=简易武器} 或 (b) 一面{@item 盾牌|phb}",
+					"一个{@item 探索套组|phb}和30个{@item 小瓶|phb|空瓶}"
+				],
+				"goldAlternative": "{@dice 3d4×10|3d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"轻弩|phb",
+							"弩矢(20)|phb"
+						],
+						"b": [
+							"短弓|phb",
+							"箭矢 (20)|phb"
+						],
+						"c": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"炼金工具|phb"
+						],
+						"b": [
+							"酿酒工具|phb",
+							{
+								"item": "小包|phb",
+								"containsValue": 1000
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						],
+						"b": [
+							"盾牌|phb"
+						]
+					},
+					{
+						"_": [
+							"探索套组|phb",
+							{
+								"item": "小瓶|phb",
+								"quantity": 30
+							}
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"调合剂环阶"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						]
+					]
+				},
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Storm Crossbow",
+							"name": "风暴弩",
+							"source": "KSnowbellApothecary"
+						}
+					],
+					"colLabels": [
+						"携带上限"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							10
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"袖珍药水|药剂师|KSnowbellApothecary|1",
+				"便携酿造坊|药剂师|KSnowbellApothecary|1",
+				"缺席调配|药剂师|KSnowbellApothecary|2",
+				"魔法调合剂|药剂师|KSnowbellApothecary|2",
+				{
+					"classFeature": "炼金武器|药剂师|KSnowbellApothecary|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|药剂师|KSnowbellApothecary|4",
+				"质心|药剂师|KSnowbellApothecary|5",
+				{
+					"classFeature": "酿造者之瓶|药剂师|KSnowbellApothecary|5",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "炼金武器特性|药剂师|KSnowbellApothecary|6",
+					"gainSubclassFeature": true
+				},
+				"袖珍药水（d6）|药剂师|KSnowbellApothecary|7",
+				"属性值提升|药剂师|KSnowbellApothecary|8",
+				"共享之饮|药剂师|KSnowbellApothecary|9",
+				{
+					"classFeature": "炼金武器特性|药剂师|KSnowbellApothecary|10",
+					"gainSubclassFeature": true
+				},
+				"精妙酿造|药剂师|KSnowbellApothecary|11",
+				"属性值提升|药剂师|KSnowbellApothecary|12",
+				"澄澈之心|药剂师|KSnowbellApothecary|13",
+				"袖珍药水（d8）|药剂师|KSnowbellApothecary|13",
+				"质心（d6）|药剂师|KSnowbellApothecary|13",
+				{
+					"classFeature": "炼金武器特性|药剂师|KSnowbellApothecary|14",
+					"gainSubclassFeature": true
+				},
+				"万灵秘药|药剂师|KSnowbellApothecary|15",
+				"属性值提升|药剂师|KSnowbellApothecary|16",
+				{
+					"classFeature": "酿造者之瓶改良|药剂师|KSnowbellApothecary|17",
+					"gainSubclassFeature": true
+				},
+				"袖珍药水（d10）|药剂师|KSnowbellApothecary|18",
+				"属性值提升|药剂师|KSnowbellApothecary|19",
+				"无双医术|药剂师|KSnowbellApothecary|20"
+			],
+			"subclassTitle": "炼金武器流派"
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Apothecary of the Burst Bow",
+			"name": "爆裂弓药剂师",
+			"shortName": "爆裂弓",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassFeatures": [
+				"爆裂弓药剂师|药剂师|KSnowbellApothecary|爆裂弓|KSnowbellApothecary|3",
+				"酿造者之瓶选项|药剂师|KSnowbellApothecary|爆裂弓|KSnowbellApothecary|5",
+				"起爆射击|药剂师|KSnowbellApothecary|爆裂弓|KSnowbellApothecary|6",
+				"标记之箭|药剂师|KSnowbellApothecary|爆裂弓|KSnowbellApothecary|10",
+				"陨星射击|药剂师|KSnowbellApothecary|爆裂弓|KSnowbellApothecary|14",
+				"酿造者之瓶改良选项|药剂师|KSnowbellApothecary|爆裂弓|KSnowbellApothecary|17"
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Dragonflame Spear",
+			"name": "龙焰矛药剂师",
+			"shortName": "龙焰矛",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassFeatures": [
+				"龙焰矛药剂师|药剂师|KSnowbellApothecary|龙焰矛|KSnowbellApothecary|3",
+				"酿造者之瓶选项|药剂师|KSnowbellApothecary|龙焰矛|KSnowbellApothecary|5",
+				"龙之舌|药剂师|KSnowbellApothecary|龙焰矛|KSnowbellApothecary|6",
+				"龙之威仪|药剂师|KSnowbellApothecary|龙焰矛|KSnowbellApothecary|10",
+				"龙之吐息|药剂师|KSnowbellApothecary|龙焰矛|KSnowbellApothecary|14",
+				"酿造者之瓶改良选项|药剂师|KSnowbellApothecary|龙焰矛|KSnowbellApothecary|17"
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Guardian Barrier",
+			"name": "守护屏障药剂师",
+			"shortName": "守护屏障",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassFeatures": [
+				"守护屏障药剂师|药剂师|KSnowbellApothecary|守护屏障|KSnowbellApothecary|3",
+				"酿造者之瓶选项|药剂师|KSnowbellApothecary|守护屏障|KSnowbellApothecary|5",
+				"炼金浸润|药剂师|KSnowbellApothecary|守护屏障|KSnowbellApothecary|6",
+				"适应表层|药剂师|KSnowbellApothecary|守护屏障|KSnowbellApothecary|10",
+				"大地之墙|药剂师|KSnowbellApothecary|守护屏障|KSnowbellApothecary|14",
+				"酿造者之瓶改良选项|药剂师|KSnowbellApothecary|守护屏障|KSnowbellApothecary|17"
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Iceshard Prick",
+			"name": "冰晶刺药剂师",
+			"shortName": "冰晶刺",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassFeatures": [
+				"冰晶刺药剂师|药剂师|KSnowbellApothecary|冰晶刺|KSnowbellApothecary|3",
+				"酿造者之瓶选项|药剂师|KSnowbellApothecary|冰晶刺|KSnowbellApothecary|5",
+				"霜晶|药剂师|KSnowbellApothecary|冰晶刺|KSnowbellApothecary|6",
+				"彻骨之寒|药剂师|KSnowbellApothecary|冰晶刺|KSnowbellApothecary|10",
+				"冰封战术|药剂师|KSnowbellApothecary|冰晶刺|KSnowbellApothecary|14",
+				"酿造者之瓶改良选项|药剂师|KSnowbellApothecary|冰晶刺|KSnowbellApothecary|17"
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Solar Beacon",
+			"name": "烈日信标药剂师",
+			"shortName": "烈日信标",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassFeatures": [
+				"烈日信标药剂师|药剂师|KSnowbellApothecary|烈日信标|KSnowbellApothecary|3",
+				"酿造者之瓶选项|药剂师|KSnowbellApothecary|烈日信标|KSnowbellApothecary|5",
+				"光耀引路|药剂师|KSnowbellApothecary|烈日信标|KSnowbellApothecary|6",
+				"信念护盾|药剂师|KSnowbellApothecary|烈日信标|KSnowbellApothecary|10",
+				"天堂信使|药剂师|KSnowbellApothecary|烈日信标|KSnowbellApothecary|14",
+				"酿造者之瓶改良选项|药剂师|KSnowbellApothecary|烈日信标|KSnowbellApothecary|17"
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Storm Crossbow",
+			"name": "风暴弩药剂师",
+			"shortName": "风暴弩",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassFeatures": [
+				"风暴弩药剂师|药剂师|KSnowbellApothecary|风暴弩|KSnowbellApothecary|3",
+				"酿造者之瓶选项|药剂师|KSnowbellApothecary|风暴弩|KSnowbellApothecary|5",
+				"魔弹客|药剂师|KSnowbellApothecary|风暴弩|KSnowbellApothecary|6",
+				"快速装填|药剂师|KSnowbellApothecary|风暴弩|KSnowbellApothecary|10",
+				"暴风射击|药剂师|KSnowbellApothecary|风暴弩|KSnowbellApothecary|14",
+				"酿造者之瓶改良选项|药剂师|KSnowbellApothecary|风暴弩|KSnowbellApothecary|17"
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Vampire's Edge",
+			"name": "吸血鬼之刃药剂师",
+			"shortName": "吸血鬼之刃",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassFeatures": [
+				"吸血鬼之刃药剂师|药剂师|KSnowbellApothecary|吸血鬼之刃|KSnowbellApothecary|3",
+				"酿造者之瓶选项|药剂师|KSnowbellApothecary|吸血鬼之刃|KSnowbellApothecary|5",
+				"双生獠牙|药剂师|KSnowbellApothecary|吸血鬼之刃|KSnowbellApothecary|6",
+				"遏制血流|药剂师|KSnowbellApothecary|吸血鬼之刃|KSnowbellApothecary|10",
+				"就杯浅啜|药剂师|KSnowbellApothecary|吸血鬼之刃|KSnowbellApothecary|14",
+				"酿造者之瓶改良选项|药剂师|KSnowbellApothecary|吸血鬼之刃|KSnowbellApothecary|17"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Pocket Potion",
+			"name": "袖珍药水",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 1,
+			"entries": [
+				"药剂师随时有备无患，身上带着数瓶自制药水，意在治愈他人的病痛。药剂师可以用一个附赠动作，给予5尺内一个生物一瓶特制药水，为其恢复{@dice d4}点生命值。",
+				"你可以使用此特性的次数等于你的智力调整值（至少一次）。当你完成一次长休后，你恢复所有已耗用的次数。",
+				"当你达到此职业的特定等级时，你的袖珍药水骰会发生变化。该骰在7级变为{@dice d6}，13级变为{@dice d8}，18级变为{@dice d10}。"
+			]
+		},
+		{
+			"ENG_name": "Portable Brewery",
+			"name": "便携酿造坊",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 1,
+			"entries": [
+				"药剂师可以制作一些较为简单的酿造物，从最普通的酒类到针对中毒和麻痹的基础解毒剂。这些制作需要2小时空闲时间以及适当的材料（由DM裁定）。",
+				"就解毒剂而言，若导致中毒或麻痹的根源并非药剂师此前分析过的东西，则还需额外2小时，且必须通过一次DC 14的感知（自然）检定。",
+				"分析一种毒物或麻痹剂需要6小时。"
+			]
+		},
+		{
+			"ENG_name": "Absent Concoction",
+			"name": "缺席调配",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 2,
+			"entries": [
+				"在2级，当药剂师进行长休时，可以架设好炼金工具或酿酒工具，在自己休息的同时制作一件来自其职业特性的物品。",
+				"药剂师以此特性制作的物品，其制作必须只需4小时或更少的空闲时间，且制作过程中无需进行技能检定，并须在长休开始时决定所要制作的物品。",
+				"直到长休结束，该物品才视为制作完成。"
+			]
+		},
+		{
+			"ENG_name": "Magical Mixture",
+			"name": "魔法调合剂",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 2,
+			"entries": [
+				"在2级，药剂师发现了一种将法术效果转化为一次性魔法药水的方法。只需4小时空闲时间，药剂师便可将记载于现有法术卷轴上的法术、或其亲眼目睹他人施展的法术的效果，注入一瓶液体之中，所需酿造材料的花费为每注入法术的一个环阶5金币。可制成调合剂的法术最高环阶列于表：药剂师。",
+				"这些药水含有取自药剂师自身不羁魔法能力的不稳定剂量，会使药水在接触到药剂师自制的其他药水时发生剧烈反应；不过随着药剂师等级提升、对这种魔法的逐步提炼，药水也会愈发稳定。然而，一旦被创造者以外的人接触，调合剂便会失效，失去所有魔法特性，包括其中蕴含的法术。药剂师可以用一个动作饮下此药水，从而在1分钟内获得一次以其最低环阶施展所注入法术的能力，且无需材料成分\u2014\u2014除非该材料成分标明了具体价格且会被法术消耗。无论由谁施展，来自魔法调合剂的法术都以该角色的智力作为施法属性。魔法调合剂每蕴含一个环阶的法术便重1磅。",
+				"此特性还使药剂师能够阅读（但不能施展）任何其可制成调合剂的法术卷轴。",
+				"药剂师携带的调合剂数量不得超过表：药剂师中携带上限所定义的数值"
+			]
+		},
+		{
+			"ENG_name": "Alchemical Weapon",
+			"name": "炼金武器",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 3,
+			"entries": [
+				"在3级，药剂师已在锻造一件为自己量身打造的武器上投入了足够的时间。当药剂师获得此特性时，他们选择一种炼金武器，并可以花费4小时空闲时间将列表中的武器升级为自己的炼金武器。他们在6级、10级和14级时会依据其炼金武器获得额外特性，并为酿造者之瓶特性获得一个额外选项。炼金武器始终视为魔法武器，可以附魔，但只能由创造它的药剂师使用。",
+				"更换一件损坏的炼金武器需要同样多的时间，并需要另一件基础武器。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle",
+			"name": "酿造者之瓶",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 5,
+			"entries": [
+				"在5级，药剂师已设计出若干能以独特方式在战斗中助其一臂之力的调配物。假设制作一件需要4小时空闲时间，药剂师可以制作以下物品之一，并可以用一个动作将其投掷到30尺内的一处空间，为此需通过一次DC 15的力量（运动）检定。若检定失败，则掷1d8决定瓶子偏移10尺的方向，1为正北，并从此起顺时针排列。",
+				"以酿造者之瓶制作的药水计入药剂师的携带上限，且与魔法调合剂一样，一经外界接触便会失效。",
+				{
+					"ENG_name": "Brewer's Bottle Options",
+					"type": "entries",
+					"name": "酿造者之瓶选项",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Fleetfoot Brew",
+									"type": "entries",
+									"name": "疾足酿剂",
+									"entries": [
+										"这瓶药剂盛有一种强化性的化学混合物，能让饮用者在战场上移动得更快。饮用此药水的生物必须通过一次DC 12的体质豁免。豁免成功则其地面移动速度提高15尺，并在5分钟内获得+1 AC。这些效果不与加速术叠加。豁免失败则其中毒直到其下回合结束。",
+										"这瓶药水可以用一个附赠动作饮用，重1磅。"
+									]
+								},
+								{
+									"ENG_name": "Guardian Brew",
+									"type": "entries",
+									"name": "守护酿剂",
+									"entries": [
+										"这瓶药水的初衷在于预防，而非治疗。饮用此药水的生物进行一次DC 12的体质豁免。其获得{@dice 2d8}点加上其体质调整值的临时生命值，持续一小时；豁免失败则只得一半。",
+										"这瓶药水可以用一个附赠动作饮用，重2磅。"
+									]
+								},
+								{
+									"ENG_name": "Acidic Brew",
+									"type": "entries",
+									"name": "酸性酿剂",
+									"entries": [
+										"瓶中装有一种接触空气即会活化的酸性物质，会灼伤所接触到的一切人与物。当你将此酿剂掷向一个生物时，若你通过运动检定，则进行一次投掷武器攻击掷骰。若命中，瓶子击中该生物；若未命中，瓶子落在其脚下地面。若瓶子击中一个生物，该生物受到{@dice 2d6}点酸伤害，且在其每个回合开始时必须通过一次DC 15的体质豁免，否则额外受到{@dice 2d4}点酸伤害。此效应持续1分钟。",
+										"若瓶子落在空处，它会形成一片直径5尺的酸液区域，持续3分钟，并对在该区域内开始其回合或在其每回合内首次穿过该区域的每个生物造成{@dice 2d6}点酸伤害。",
+										"瓶子可以用一个动作投掷，重1磅。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Centre of Mass",
+			"name": "质心",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 5,
+			"entries": [
+				"在5级，药剂师已深入研究怪物生物的解剖构造，热切地寻找驾驭其天生能力的方法。虽然这败得彻底，但至少让药剂师更明白哪些部位一旦被斩落会最痛。",
+				"当药剂师对大型或更大体型的生物进行武器攻击时，其伤害掷骰额外加上{@dice 1d4}，且目标每比大型大一个体型等级，再加{@dice 1d4}。",
+				"在13级，该骰面增大为{@dice d6}。"
+			]
+		},
+		{
+			"ENG_name": "Alchemical Weapon Feature",
+			"name": "炼金武器特性",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 6,
+			"entries": [
+				"在6级，你获得一个由你的炼金武器赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Pocket Potion (d6)",
+			"name": "袖珍药水（d6）",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 7,
+			"entries": [
+				"在7级，你的袖珍药水骰提升为{@dice d6}。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Shared Drink",
+			"name": "共享之饮",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 9,
+			"entries": [
+				"在9级，药剂师终于查明了药水在尝试分享给别人时失效的原因。药剂师以外的生物如今可以饮用和携带魔法调合剂与酿造者之瓶而不会使其失效，不过其携带数量一旦超过药剂师本人的一半，药水便会自行销毁。"
+			]
+		},
+		{
+			"ENG_name": "Alchemical Weapon Feature",
+			"name": "炼金武器特性",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 10,
+			"entries": [
+				"在10级，你获得一个由你的炼金武器赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Exquisite Brew",
+			"name": "精妙酿造",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 11,
+			"entries": [
+				"在11级，药剂师发现了一个能强化任意治疗药水的独门技巧。只需2小时空闲时间，药剂师便可强化一瓶治疗药水，为其恢复的生命值加上{@dice 1d4}点及药剂师的智力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Centre of Mass (d6)",
+			"name": "质心（d6）",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 13,
+			"entries": [
+				"在13级，你的质心伤害骰提升为{@dice d6}。"
+			]
+		},
+		{
+			"ENG_name": "Cleared Mind",
+			"name": "澄澈之心",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 13,
+			"entries": [
+				"在13级，药剂师对制作魔法调合剂的能力进行了提炼。这些药水如今蕴含着令饮用者心境澄明的固有之力，允许以任意心智属性作为药剂师获得此特性之后所制魔法调合剂的施法属性。"
+			]
+		},
+		{
+			"ENG_name": "Pocket Potion (d8)",
+			"name": "袖珍药水（d8）",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 13,
+			"entries": [
+				"在13级，你的袖珍药水骰提升为{@dice d8}。"
+			]
+		},
+		{
+			"ENG_name": "Alchemical Weapon Feature",
+			"name": "炼金武器特性",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 14,
+			"entries": [
+				"在14级，你获得一个由你的炼金武器赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Panacea",
+			"name": "万灵秘药",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 15,
+			"entries": [
+				"在15级，药剂师的技艺已臻化境，足以制作真正的万灵药。只需4小时空闲时间，药剂师便可以花费30金币的材料制作一瓶万灵秘药。此药水以一个附赠动作饮用、或以一个动作喂给另一生物时，将治愈失能、麻痹、石化与中毒状态，并在通过一次DC 21的体质豁免时，同时治愈目盲与耳聋状态。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Improvement",
+			"name": "酿造者之瓶改良",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 17,
+			"entries": [
+				"在17级，药剂师的能力真正开始超凡入圣。他们如今可以借酿造者之瓶特性制作先前调配物的强化版本，外加一种全新的调配物。",
+				{
+					"ENG_name": "New Brewer's Bottle Options",
+					"type": "entries",
+					"name": "酿造者之瓶新选项",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Hastestep Brew",
+									"type": "entries",
+									"name": "疾步酿剂",
+									"entries": [
+										"这瓶药剂盛有一种强化性的化学混合物，能让饮用者在战场上移动得更快。饮用此药水的生物必须通过一次DC 15的体质豁免。豁免成功则其地面移动速度提高25尺，并在5分钟内获得+2 AC。这些效果不与加速术叠加。豁免失败则其中毒直到其下回合结束。",
+										"这瓶药水可以用一个附赠动作饮用，重2.5磅。"
+									]
+								},
+								{
+									"ENG_name": "Vanguard Brew",
+									"type": "entries",
+									"name": "先锋酿剂",
+									"entries": [
+										"这瓶药水的初衷在于预防，而非治疗。饮用此药水的生物进行一次DC 15的体质豁免。其获得{@dice 3d10}点加上其两倍体质调整值的临时生命值，持续一小时；豁免失败则只得一半。",
+										"这瓶药水可以用一个附赠动作饮用，重4磅。"
+									]
+								},
+								{
+									"ENG_name": "Alchemic Fire Brew",
+									"type": "entries",
+									"name": "炼金火酿剂",
+									"entries": [
+										"瓶中装有一种接触空气即会活化的酸性物质，会灼伤所接触到的一切人与物。当你将此酿剂掷向一个生物时，若你通过运动检定，则进行一次简易投掷武器攻击掷骰。若命中，瓶子击中该生物；若未命中，瓶子落在其脚下地面。若瓶子击中一个生物，该生物受到{@dice 3d6}点酸伤害，且在其每个回合开始时必须通过一次DC 18的体质豁免，否则额外受到{@dice 3d4}点酸伤害。此效应持续1分钟。",
+										"若瓶子落在空处，它会形成一片直径5尺的酸液区域，持续3分钟，并对在该区域内开始其回合或在其每回合内首次穿过该区域的每个生物造成{@dice 3d6}点酸伤害。",
+										"瓶子可以用一个动作投掷，重3磅。"
+									]
+								},
+								{
+									"ENG_name": "Dragonfire Brew",
+									"type": "entries",
+									"name": "龙火酿剂",
+									"entries": [
+										"这瓶药水堪称炼金技艺的真正杰作，能赋予饮用者巨龙最具标志性的工具之一\u2014\u2014吐息武器。",
+										"此酿剂需要一枚龙鳞才能制作，并依所用龙鳞的颜色赋予饮用者相应的吐息武器。该吐息武器需要一个动作使用，豁免为DC 18的敏捷豁免，始终是使用者面前一片5乘20尺的线状区域，对区域内所有被波及的生物造成{@dice 4d10}点相应类型的伤害，豁免成功则减半。",
+										"在饮下药水后的5轮内，该吐息武器可使用三次。",
+										"这瓶药水可以用一个附赠动作饮用，重2.5磅。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Pocket Potion (d10)",
+			"name": "袖珍药水（d10）",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 18,
+			"entries": [
+				"在18级，你的袖珍药水骰提升为{@dice d10}。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以改为选择一个专长。"
+			]
+		},
+		{
+			"ENG_name": "Unmatched Medicine",
+			"name": "无双医术",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"level": 20,
+			"entries": [
+				"在20级，药剂师已找到让治疗类药水远程生效的方法。所有治疗药水如今都可以作为射程20/60的简易灵巧武器投掷，命中时恢复其全额治疗量，且不因重击而获益。",
+				"此外，袖珍药水拥有无限使用次数，且可以对20尺内的一个盟友使用，但只能用于战斗之中。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Apothecary of the Burst Bow",
+			"name": "爆裂弓药剂师",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "爆裂弓",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"entries": [
+				"爆裂弓药剂师是那些决定改造自己的短弓、以射出成串爆炸箭矢的人。爆裂弓是一把造成{@dice 1d8}点穿刺伤害、重3磅、具有弹药（射程80/320）和双手属性的{@item 短弓|phb}。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "曳光射击|药剂师|KSnowbellApothecary|爆裂弓|KSnowbellApothecary|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Flare Shot",
+			"name": "曳光射击",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "爆裂弓",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当爆裂弓药剂师以爆裂弓射出的箭矢命中一名对手时，药剂师可以进行一次DC 12的智力（奥秘）检定。若检定成功，目标及5尺内的所有角色必须通过一次敏捷豁免（DC 8 + 熟练加值 + 智力调整值），否则受到{@dice 1d6}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Option",
+			"name": "酿造者之瓶选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "爆裂弓",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"爆裂弓药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Burst Brew",
+							"type": "entries",
+							"name": "爆裂酿剂",
+							"entries": [
+								"这瓶药水极不稳定，一旦受到足够的能量作用便会爆炸。10尺半径内的所有角色必须通过一次DC 15的敏捷豁免，否则受到{@dice 3d6}点火焰伤害，豁免成功则减半。",
+								"这瓶药水可以用一个动作投掷，重1磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Detonation Shot",
+			"name": "起爆射击",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "爆裂弓",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"爆裂弓药剂师深知，一切爆炸皆是壮举，不独属于自己。当爆裂弓药剂师以爆裂弓命中一个生物时，可以引爆该生物携带的一件随机爆炸物或其他易挥发性物质。",
+				"此外，曳光射击的豁免DC提高2，且其现在造成{@dice 2d6}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Tagged Arrow",
+			"name": "标记之箭",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "爆裂弓",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"爆裂弓药剂师可以摧毁敌人的行动力，为自己与敌人之间拉开距离。当药剂师以爆裂弓命中一个生物时，可以阻碍目标的移动，使其将普通地形视为困难地形、困难地形视为不可通行，直到药剂师的下个回合。两次长休之间，其使用此特性的次数等于其熟练加值。",
+				"此外，曳光射击如今豁免成功也造成一半伤害，范围变为10尺半径，且现在造成{@dice 3d8}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Meteor Shot",
+			"name": "陨星射击",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "爆裂弓",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"爆裂弓药剂师可以让箭矢如陨石般倾泻在敌人头上。只要在160尺之内，药剂师以爆裂弓攻击一个生物时，不再因距离而具有劣势。被爆裂弓箭矢击中的生物必须通过一次DC 18的力量豁免，否则应声倒地。药剂师以爆裂弓攻击倒地目标时不再具有劣势，反而具有优势。",
+				"此外，曳光射击的豁免DC提高2，范围变为15尺半径，且现在造成{@dice 4d8}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Improvement Option",
+			"name": "酿造者之瓶改良选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "爆裂弓",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"爆裂弓药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Volcano Brew",
+							"type": "entries",
+							"name": "火山酿剂",
+							"entries": [
+								"这瓶药水极不稳定，一旦受到足够的能量作用便会爆炸。10尺半径内的所有角色必须通过一次DC 18的敏捷豁免，否则受到{@dice 4d8}点火焰伤害，豁免成功则减半。",
+								"这瓶药水可以用一个动作投掷，重3磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Dragonflame Spear",
+			"name": "龙焰矛药剂师",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "龙焰矛",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"entries": [
+				"龙焰矛药剂师是那些决定将自己的矛改造成喷吐龙焰的龙形仿制品的人。龙焰矛是一把造成{@dice 1d8}点穿刺伤害、重5磅、具有投掷（射程20/60）和多用（1d10）属性的{@item 矛|phb}。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙之爪'|药剂师|KSnowbellApothecary|龙焰矛|KSnowbellApothecary|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Dragon's Claw'",
+			"name": "龙之爪'",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "龙焰矛",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"龙焰矛覆有烈焰，会灼烧它造成的伤口。当龙焰矛药剂师以龙焰矛进行的攻击命中一个生物时，目标必须通过一次体质豁免（DC 8 + 熟练加值 + 智力调整值），否则受到{@dice 1d6}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Option",
+			"name": "酿造者之瓶选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "龙焰矛",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"龙焰矛药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Warrior's Brew",
+							"type": "entries",
+							"name": "勇士酿剂",
+							"entries": [
+								"瓶中盛有振奋人心的草药与强大魔法的混合物，用以增强饮用者在战场上的能力。饮用此药水时，饮用者必须通过一次DC 15的体质豁免。豁免成功则其在1分钟内的攻击掷骰与伤害掷骰获得+1加值。",
+								"这瓶药水可以用一个附赠动作饮用，重1磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Dragon's Tongue",
+			"name": "龙之舌",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "龙焰矛",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"流曳摇曳的烈焰绝不会只灼烧敌人一次。当龙焰矛药剂师使用攻击动作时，若其以龙焰矛进行了一次攻击，便可以在同一动作中用它进行第二次攻击。",
+				"此攻击不与额外攻击特性叠加。",
+				"此外，龙之爪额外造成{@dice 1d6}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Dragon's Splendor",
+			"name": "龙之威仪",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "龙焰矛",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"以一个动作，龙焰矛绽放出金色的璀璨火焰，随后在持用者周身向外迸发。20尺半径内的所有人（龙焰矛药剂师除外）必须通过一次DC 17的敏捷豁免检定，否则受到{@dice 3d4}点火焰伤害，且其下一次攻击掷骰具有劣势。",
+				"两次长休之间，龙焰矛药剂师使用此能力的次数等于其智力调整值。",
+				"此外，龙之爪的DC提高3。"
+			]
+		},
+		{
+			"ENG_name": "Dragon's Breath",
+			"name": "龙之吐息",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "龙焰矛",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"龙焰矛药剂师已沟通了巨龙的本源。无论攻击是否命中，其都可以从攻击目标处喷出一道10尺锥形的火焰。目标与被火焰波及的所有人必须通过一次DC 18的敏捷豁免，否则受到{@dice 2d6}点火焰伤害，豁免成功则减半。",
+				"此外，龙之爪无视火焰伤害抗性，并将火焰伤害免疫视同抗性。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Improvement Option",
+			"name": "酿造者之瓶改良选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "龙焰矛",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"龙焰矛药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Champion's Brew",
+							"type": "entries",
+							"name": "冠军酿剂",
+							"entries": [
+								"瓶中盛有振奋人心的草药与强大魔法的混合物，用以增强饮用者在战场上的能力。饮用此药水时，饮用者必须通过一次DC 18的体质豁免。豁免成功则其在1分钟内的攻击掷骰与伤害掷骰获得+2加值。",
+								"这瓶药水可以用一个附赠动作饮用，重3磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Guardian Barrier",
+			"name": "守护屏障药剂师",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "守护屏障",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"entries": [
+				"守护屏障药剂师是那些决定将自己的盾改造成近乎坚不可摧之壁的人。守护屏障是一面重5磅、为你的AC提供+3加值的{@item 盾牌|phb}。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "守护防护|药剂师|KSnowbellApothecary|守护屏障|KSnowbellApothecary|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Guardian Protection",
+			"name": "守护防护",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "守护屏障",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"守护屏障药剂师将盟友的安全置于自身之上。当一个位于药剂师5尺内的生物遭到攻击时，药剂师可以用一个反应，使该生物仅针对那次攻击获得守护屏障及其特性的AC加值。",
+				"若该生物持有盾牌，此AC加值将取代其从盾牌获得的任何AC加值。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Option",
+			"name": "酿造者之瓶选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "守护屏障",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"守护屏障药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Stoneshell Brew",
+							"type": "entries",
+							"name": "岩壳酿剂",
+							"entries": [
+								"瓶中盛有一种略显黏稠的流体，饮用后会使饮用者的身体开始硬化，宛如岩石铸就。饮用时，饮用者必须通过一次DC 15的体质豁免。豁免成功则该生物在5分钟内视为穿着一件提供4点AC、无敏捷上限的轻型盔甲，但移动速度降低10尺。豁免失败则该生物仍获得该护甲收益，但移动速度降低25尺。",
+								"这瓶药水可以用一个动作饮用，重1磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Alchemical Drench",
+			"name": "炼金浸润",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "守护屏障",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"守护屏障药剂师研发出了一种能进一步强化其盾牌的药水。药剂师可以用一个附赠动作耗用一次袖珍药水。掷袖珍药水骰，其获得等于掷骰结果的AC，直到其下个回合。"
+			]
+		},
+		{
+			"ENG_name": "Adaptive Surface",
+			"name": "适应表层",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "守护屏障",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"对守护屏障的进一步改良，使守护屏障药剂师得以将其必要的防御调整得契合敌人。当你受到一次攻击或法术的伤害时，你获得对该伤害类型的抗性，持续2轮，或直到你被另一种伤害类型命中。"
+			]
+		},
+		{
+			"ENG_name": "Earthen Wall",
+			"name": "大地之墙",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "守护屏障",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"守护屏障药剂师研发出了一种调合剂组合，足以唤醒大地本身。守护屏障药剂师可以用一个动作、并通过一次DC 18的智力（奥秘）检定，创造一面至多25尺长、5尺厚、以自身为起点的墙。",
+				"此墙拥有75点生命值和18点AC，被击穿后彻底崩塌。墙体原占据的区域随后变为困难地形，直至被清理。",
+				"守护屏障药剂师在每次长休前只能使用此特性一次。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Improvement Option",
+			"name": "酿造者之瓶改良选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "守护屏障",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"守护屏障药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Ironskin Brew",
+							"type": "entries",
+							"name": "铁肤酿剂",
+							"entries": [
+								"瓶中盛有一种略显黏稠的流体，饮用后会使饮用者的身体开始硬化，宛如金属铸就。饮用时，饮用者必须通过一次DC 18的体质豁免。豁免成功则该生物在5分钟内视为穿着一件提供5点AC、无敏捷上限的轻型盔甲，但移动速度降低10尺。豁免失败则该生物仍获得该护甲收益，但移动速度降低25尺。",
+								"这瓶药水可以用一个动作饮用，重2.5磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Iceshard Prick",
+			"name": "冰晶刺药剂师",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "冰晶刺",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"entries": [
+				"冰晶刺药剂师是那些决定将自己的匕首改造成刺骨寒冷化身的人。冰晶刺是一把造成{@dice 1d6}点穿刺伤害、重2磅、具有轻型、灵巧和投掷（射程20/60）属性的{@item 匕首|phb}。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "寒冬之握|药剂师|KSnowbellApothecary|冰晶刺|KSnowbellApothecary|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Winter's Grasp",
+			"name": "寒冬之握",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "冰晶刺",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当冰晶刺药剂师以此武器命中一个生物时，该生物必须通过一次体质豁免检定（DC 6 + 熟练加值 + 智力调整值），否则获得一点力竭。",
+				"具有寒冷伤害抗性或免疫寒冷伤害的生物不受此特性影响，且这一点力竭在武器伤害结算后才会施加。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Option",
+			"name": "酿造者之瓶选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "冰晶刺",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"冰晶刺药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Iceberg Brew",
+							"type": "entries",
+							"name": "冰山酿剂",
+							"entries": [
+								"瓶中盛满冰蓝色的液体，使容器摸上去冰冷刺骨。当瓶子破裂、内盛物暴露于空气中时，它们会迅速膨胀并凝固成一根持续3轮的冰柱。冰柱出现在一处15尺乘15尺的方形空间中，瓶子落点正位于其中心。冰柱出现时处于该范围内的任何人必须通过一次DC 15的敏捷豁免检定，否则受到{@dice 2d4}点钝击伤害和{@dice 2d4}点寒冷伤害。无论豁免是否成功，其都会被推到冰柱空间外侧。冰柱在其周围形成5尺困难地形，该地形连同冰柱原先占据的空间都会一直存在，直到冰柱消失后一轮。",
+								"这瓶药水可以用一个动作投掷，重1.5磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Frostshard",
+			"name": "霜晶",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "冰晶刺",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"冰晶刺能生出冰鞘，以向敌人射出。当你以冰晶刺进行投掷武器攻击时，你可以改为射出一柄造成{@dice 1d4}点寒冷伤害的冰之匕首，且在应用特性与武器效应时，它视为冰晶刺。",
+				"此外，具有寒冷伤害抗性的生物不再免疫寒冬之握，而是在该豁免上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Chill to the Bone",
+			"name": "彻骨之寒",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "冰晶刺",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"冰晶刺药剂师提炼了自身技巧，以利用疲惫不堪的敌人。当其对一个生物进行攻击时，其可以用冰晶刺对该生物再进行一次攻击，此攻击不与额外攻击特性叠加。",
+				"此外，被冰晶刺击中的生物受到{@dice 1d6}点寒冷伤害，且该生物每有一点力竭，此伤害再增加{@dice 1d6}。寒冬之握的DC也提高3。"
+			]
+		},
+		{
+			"ENG_name": "Freezer Tactics",
+			"name": "冰封战术",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "冰晶刺",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"冰晶刺药剂师对其特立独行的战斗风格愈发精通，刃上的钢铁也愈发寒冷。受寒冬之握影响的生物如今在其回合开始时，每有一点力竭便受到{@dice 1d6}点寒冷伤害。若其已连续3轮未获得力竭，则不再受到此伤害。",
+				"此外，具有寒冷伤害抗性的生物不再能抗衡寒冬之握，而是如常进行豁免；而免疫寒冷伤害的生物也不再免疫，改为在该豁免上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Improvement Option",
+			"name": "酿造者之瓶改良选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "冰晶刺",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"冰晶刺药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Iceshelf Brew",
+							"type": "entries",
+							"name": "冰架酿剂",
+							"entries": [
+								"瓶中盛满冰蓝色的液体，使容器摸上去冰冷刺骨。当瓶子破裂、内盛物暴露于空气中时，它们会迅速膨胀并凝固成一根持续5轮的冰柱。冰柱出现在一处25尺乘25尺的方形空间中，瓶子落点正位于其中心。冰柱出现时处于该范围内的任何人必须通过一次DC 18的敏捷豁免检定，否则受到{@dice 2d6}点钝击伤害和{@dice 2d6}点寒冷伤害。无论豁免是否成功，其都会被推到冰柱空间外侧。冰柱在其周围形成10尺困难地形，该地形连同冰柱原先占据的空间都会一直存在，直到冰柱消失后一轮。",
+								"这瓶药水可以用一个动作投掷，重4磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Solar Beacon",
+			"name": "烈日信标药剂师",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "烈日信标",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"entries": [
+				"烈日信标药剂师是那些决定将自己的硬头锤改造成神圣之光辉耀信标的人。烈日信标是一把造成{@dice 1d8}点钝击伤害、重6磅的{@item 硬头锤|phb}。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "净化辉光|药剂师|KSnowbellApothecary|烈日信标|KSnowbellApothecary|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Cleansing Radiance",
+			"name": "净化辉光",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "烈日信标",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"烈日信标药剂师可以用一个动作高举武器，使其散发出抚慰人心的光芒，涤净周身众人的伤口。药剂师10尺内的所有活物恢复{@dice 1d6}点加上药剂师体质调整值的生命值。",
+				"两次长休之间，烈日信标药剂师使用此特性的次数等于其智力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Option",
+			"name": "酿造者之瓶选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "烈日信标",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"烈日信标药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Beacon Brew",
+							"type": "entries",
+							"name": "信标酿剂",
+							"entries": [
+								"瓶中盛有一种明亮泛黄的液体，似乎散发着微光。当瓶子破裂、内盛物暴露于空气中时，它们会形成一根巨大、明亮发光却非实体的光柱，持续6轮。光柱40尺内的所有生物必须通过一次DC 15的体质豁免检定，否则在光柱存续期间进行的攻击掷骰均具有劣势。",
+								"这瓶药水可以用一个动作投掷，重1磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Light the Way",
+			"name": "光耀引路",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "烈日信标",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"烈日信标药剂师是向敌人发起冲锋的先锋。当烈日信标药剂师以烈日信标进行武器攻击时，可以耗用一次袖珍药水。若攻击命中，目标额外受到等于袖珍药水骰骰面的光耀伤害，且药剂师恢复等量于此方式所造成光耀伤害的生命值。",
+				"此外，净化辉光额外恢复{@dice 1d6}点生命值，且只影响药剂师选择的生物。"
+			]
+		},
+		{
+			"ENG_name": "Faith Shields",
+			"name": "信念护盾",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "烈日信标",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"烈日信标药剂师不仅是自己的守护者，也是周遭众人的守护者。当药剂师使用净化辉光时，所有借此恢复生命值的生物获得额外的1点AC，直到药剂师的下回合结束。已因信念护盾获得额外AC的生物不受此效应影响。",
+				"此外，净化辉光的范围变为15尺半径，骰面增大为{@dice d8}。"
+			]
+		},
+		{
+			"ENG_name": "Heaven's Messenger",
+			"name": "天堂信使",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "烈日信标",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"烈日信标药剂师宛如自天界降临的天使。当药剂师使用净化辉光时，可以获得40尺飞行速度，持续2轮。在其持有此飞行速度期间，被烈日信标击中的生物受到{@dice 3d8}点光耀伤害。",
+				"两次长休之间，药剂师可以使用此特性两次。",
+				"此外，净化辉光额外恢复{@dice 1d8}点生命值，范围变为20尺半径。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Improvement Option",
+			"name": "酿造者之瓶改良选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "烈日信标",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"烈日信标药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Heaven's Gate Brew",
+							"type": "entries",
+							"name": "天堂之门酿剂",
+							"entries": [
+								"瓶中盛有一种明亮泛黄的液体，即便在最压抑的黑暗中似乎也散发着微光。当瓶子破裂、内盛物暴露于空气中时，它们会形成一根巨大、明亮发光却非实体的光柱，持续1分钟。光柱60尺内的所有生物必须通过一次DC 18的体质豁免检定，否则在光柱存续期间进行的攻击掷骰均具有劣势。",
+								"这瓶药水可以用一个动作投掷，重2.5磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Storm Crossbow",
+			"name": "风暴弩药剂师",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "风暴弩",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"entries": [
+				"风暴弩药剂师是那些决定将自己的轻弩改造成蕴含风暴伟力的毁灭机器的人。风暴弩是一把造成{@dice 1d10}点穿刺伤害、重11磅、具有弹药（射程80/320）、重型、装填和双手属性的{@item 轻弩|phb}。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "风暴化身|药剂师|KSnowbellApothecary|风暴弩|KSnowbellApothecary|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Incarnation of Storms",
+			"name": "风暴化身",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "风暴弩",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"反复的练习会令准头日益精进，且将愈发精准。当风暴弩药剂师以风暴弩进行攻击时，若其未离开上次发射该武器的位置，便可以在攻击掷骰上具有优势，但若如此做，该攻击无法造成重击。",
+				"当你使用此特性后，你必须先移动，才能再次受益于此特性。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Option",
+			"name": "酿造者之瓶选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "风暴弩",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"风暴弩药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Tempest Brew",
+							"type": "entries",
+							"name": "暴风酿剂",
+							"entries": [
+								"瓶中封存着一股毁灭性的炼金旋风，引爆时会向四面八方迸发。爆炸10尺半径内的所有角色必须进行一次DC 18的敏捷豁免，否则受到{@dice 2d8}点钝击伤害，并被从爆心推出15尺，豁免成功则伤害减半。",
+								"这瓶药水可以用一个动作投掷，重1磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellslinger",
+			"name": "魔弹客",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "风暴弩",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"风暴弩药剂师可以用魔法调合剂中蕴含的法术为自己的重弩矢附魔。",
+				"为重弩矢附魔需要一个动作，并须通过一次DC 15的智力（奥秘）检定，法术必须为3环或更低，且此过程会消耗掉魔法调合剂。附魔弩矢在附魔消退前可维持8小时。",
+				"要使用这样的弩矢，以风暴弩对一个目标进行武器攻击。命中时，目标受到常规武器伤害，且法术被施放，视具体情况以该目标为目标或以之为中心。未命中时，弩矢被毁，法术不会被施放。"
+			]
+		},
+		{
+			"ENG_name": "Quickdraw",
+			"name": "快速装填",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "风暴弩",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"风暴弩药剂师已打磨了重新上弦的技术，能以足够快的速度复位并装填弩矢，旋即发射。当药剂师使用攻击动作时，若其以风暴弩进行了一次攻击，便可以在同一动作中用它进行第二次攻击（忽略装填属性）。",
+				"在药剂师使用此特性的回合，其不能移动。"
+			]
+		},
+		{
+			"ENG_name": "Tempest Shot",
+			"name": "暴风射击",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "风暴弩",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"风暴弩药剂师发现了一个简单的道理：少有人能扛住风暴。药剂师如今可以发射装载了暴风酿剂的弩矢，在目标位置引发暴风酿剂效应。若目标是一个生物，则对其进行一次攻击掷骰。命中时，目标受到常规武器伤害，且暴风酿剂以其为中心（但视为在其前方）。未命中时，暴风酿剂以相对攻击者的其后方5尺处为中心。",
+				"此特性并不要求药剂师持有暴风酿剂，即便持有也不会将其消耗。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Improvement Option",
+			"name": "酿造者之瓶改良选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "风暴弩",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"风暴弩药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Maelstrom Brew",
+							"type": "entries",
+							"name": "漩涡酿剂",
+							"entries": [
+								"瓶中封存着一股毁灭性的炼金旋风，引爆时会向四面八方迸发。爆炸10尺半径内的所有角色必须进行一次DC 20的敏捷豁免，否则受到{@dice 3d10}点钝击伤害，并被从爆心推出15尺，豁免成功则伤害减半。",
+								"这瓶药水可以用一个动作投掷，重2.5磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Apothecary of the Vampire's Edge",
+			"name": "吸血鬼之刃药剂师",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "吸血鬼之刃",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"entries": [
+				"吸血鬼之刃药剂师是那些决定将自己的镰刀改造成嗜血鏖战中如鱼得水的血红武器的人。吸血鬼之刃是一把造成{@dice 1d6}点挥砍伤害、重3磅、具有轻型属性的{@item 镰刀|phb}。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "血流|药剂师|KSnowbellApothecary|吸血鬼之刃|KSnowbellApothecary|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Flow",
+			"name": "血流",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "吸血鬼之刃",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当吸血鬼之刃药剂师以吸血鬼之刃命中一个生物时，会留下一道不断将目标鲜血放干的持久伤口。受影响的生物额外受到等于药剂师熟练加值的暗蚀伤害，并在其后的每个回合开始时受到等量伤害，持续轮数等于药剂师的智力调整值。",
+				"生物同一时间只能受一个血流效应影响。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Option",
+			"name": "酿造者之瓶选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "吸血鬼之刃",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"吸血鬼之刃药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Crimson Brew",
+							"type": "entries",
+							"name": "绯红酿剂",
+							"entries": [
+								"瓶中盛满了一种病态的红色液体。暴露于空气中时，它会散发出血液的铁锈腥气，饮下时味道也与之相仿。饮用此药水时，饮用者必须通过一次DC 15的体质豁免检定。豁免成功则在其后5轮内，每当饮用者的武器攻击命中，其便恢复等于其武器伤害掷骰数值的生命值。豁免失败则饮用者开始咳血，受到{@dice 2d6}点暗蚀伤害。",
+								"这瓶药水可以用一个附赠动作饮用，重1磅。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Twin Fangs",
+			"name": "双生獠牙",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "吸血鬼之刃",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第二次挥击，第二个流血的目标。当吸血鬼之刃药剂师采取攻击动作时，若其以吸血鬼之刃进行了一次攻击，便可以在该动作中用吸血鬼之刃进行一次额外攻击。此攻击针对药剂师在30尺内选择的一个生物，造成{@dice 1d4}点暗蚀伤害而非常规伤害，且不与额外攻击特性叠加。",
+				"此攻击受益于血流，也会施加血流。",
+				"此外，血流的持续时间增加2轮。"
+			]
+		},
+		{
+			"ENG_name": "Stem the Flow",
+			"name": "遏制血流",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "吸血鬼之刃",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"吸血鬼之刃药剂师可以用一个动作，猛然闭合10尺内任意数量目标身上由血流造成的伤口，结束血流对其的效应，并对其造成等于血流伤害乘以该生物剩余血流轮数的暗蚀伤害。",
+				"此外，血流额外造成等于药剂师智力调整值的伤害。"
+			]
+		},
+		{
+			"ENG_name": "Sip from the Glass",
+			"name": "就杯浅啜",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "吸血鬼之刃",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"每轮两次，当一个20尺内的生物在其回合开始时因血流受到伤害时，吸血鬼之刃药剂师可以恢复等于血流对该生物造成的暗蚀伤害数值的生命值。",
+				"此外，血流的持续时间增加3轮。"
+			]
+		},
+		{
+			"ENG_name": "Brewer's Bottle Improvement Option",
+			"name": "酿造者之瓶改良选项",
+			"source": "KSnowbellApothecary",
+			"className": "药剂师",
+			"classSource": "KSnowbellApothecary",
+			"subclassShortName": "吸血鬼之刃",
+			"subclassSource": "KSnowbellApothecary",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"吸血鬼之刃药剂师们为你的酿造者之瓶特性提供一个额外选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Vampire Brew",
+							"type": "entries",
+							"name": "吸血鬼酿剂",
+							"entries": [
+								"瓶中盛满了一种散发柔和微光的病态红色液体。暴露于空气中时，它会散发出血液的铁锈腥气，饮下时味道也与之相仿。饮用时，饮用者必须通过一次DC 18的体质豁免检定。豁免成功则在其后1分钟内，每当其武器攻击命中，其便恢复等于该武器所造成的穿刺、钝击和挥砍伤害数值的生命值（偷袭与质心等特性不适用）。豁免失败则饮用者开始咳血，受到{@dice 3d8}点暗蚀伤害。",
+								"这瓶药水可以用一个附赠动作饮用，重2.5磅。"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
