@@ -1,0 +1,2656 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "JRRTG",
+				"abbreviation": "JRRTG",
+				"full": "幽魂",
+				"url": "https://www.dmsguild.com/product/332415/The-Ghost-a-5e-Class",
+				"version": "2022.05.30",
+				"authors": [
+					"J.R. Raffles"
+				],
+				"convertedBy": [
+					"p4535992"
+				]
+			}
+		],
+		"optionalFeatureTypes": {
+			"OF:JRRTG": "幽魂特性"
+		},
+		"edition": "classic",
+		"dateAdded": 1559943252,
+		"dateLastModified": 1772404109,
+		"_dateLastModifiedHash": "4d587f1a2c"
+	},
+	"class": [
+		{
+			"ENG_name": "Ghost",
+			"name": "幽魂",
+			"source": "JRRTG",
+			"page": 3,
+			"hd": {
+				"number": 1,
+				"faces": 4
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"classSpells": [
+				"奇术|phb",
+				"卜筮术|phb",
+				"黯冰狱铠|phb",
+				"哈达之臂|phb",
+				"易容术|phb",
+				"动物交谈|phb",
+				"侦测善恶|phb",
+				"英雄气概|phb",
+				"跳跃术|phb",
+				"大步奔行|phb",
+				"防护善恶|phb",
+				"庇护术|phb",
+				"虔诚护盾|phb",
+				"激愤斩|phb",
+				"变身术|phb",
+				"朦胧术|phb",
+				"印记斩|phb",
+				"黑暗视觉|phb",
+				"强化属性|phb",
+				"次等复原术|phb",
+				"浮空术|phb",
+				"动植物定位术|phb",
+				"物件定位术|phb",
+				"镜影术|phb",
+				"涅斯图魔法灵光|phb",
+				"行动无踪|phb",
+				"识破隐形|",
+				"蛛行术|phb",
+				"致盲斩|phb",
+				"闪现术|phb",
+				"十字军披风|phb",
+				"假死术|phb",
+				"飞行术|phb",
+				"加速术|phb",
+				"回避侦测|phb",
+				"防护能量|phb",
+				"植物交谈|phb",
+				"灵体卫士|phb",
+				"移除诅咒|phb",
+				"巧言术|phb",
+				"生命灵光|phb",
+				"净化灵光|phb",
+				"防死结界|phb",
+				"火焰护盾|phb",
+				"行动自如|phb",
+				"高等隐形术|phb",
+				"生物定位术|phb",
+				"欧提路克弹力法球|phb",
+				"惊惧斩|phb",
+				"防活物护罩|phb",
+				"放逐斩|phb",
+				"原力法阵|phb",
+				"湮灭波|phb",
+				"高等复原术|phb"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Manifestations",
+					"name": "显迹",
+					"featureType": [
+						"OF:JRRTG"
+					],
+					"progression": [
+						0,
+						0,
+						1,
+						1,
+						2,
+						2,
+						3,
+						3,
+						3,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						5,
+						5,
+						6,
+						6,
+						6
+					]
+				}
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"none"
+				],
+				"tools": [
+					"none"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"insight",
+								"intimidation",
+								"nature",
+								"religion"
+							],
+							"count": 1
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"你开局不携带任何装备。你的背景所授予的任何装备要么存在于由DM指定的地方，要么已经遗失。"
+				]
+			},
+			"multiclassing": {
+				"entries": [
+					"使用《玩家手册》（第163页）中的兼职可选规则时，幽魂职业不设任何额外先决条件，且在1级之后选取时不给予任何熟练项。",
+					"没有身体会让幽魂难以运用其他职业的特性（见\"灵体形态\"）。若想为你的角色增添一分超自然色彩，同时避开灵体形态带来的阻碍，可以考虑使用本文档第12页的神秘学者职业变体。"
+				],
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"arcana",
+									"history",
+									"insight",
+									"intimidation",
+									"nature",
+									"religion"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"none"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 超自然异能|spells|class=幽魂}",
+						"{@filter 已知显迹|optionalfeatures|feature type=OF:JRRTG}"
+					],
+					"rows": [
+						[
+							1,
+							0
+						],
+						[
+							1,
+							0
+						],
+						[
+							1,
+							1
+						],
+						[
+							1,
+							1
+						],
+						[
+							2,
+							2
+						],
+						[
+							2,
+							2
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							4,
+							4
+						],
+						[
+							4,
+							5
+						],
+						[
+							4,
+							5
+						],
+						[
+							4,
+							5
+						],
+						[
+							5,
+							5
+						],
+						[
+							5,
+							6
+						],
+						[
+							5,
+							6
+						],
+						[
+							5,
+							6
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"灵体形态|幽魂|JRRTG|1",
+				"附身|幽魂|JRRTG|1",
+				{
+					"classFeature": "未竟之业|幽魂|JRRTG|1",
+					"gainSubclassFeature": true
+				},
+				"异界洞悉|幽魂|JRRTG|2",
+				"显迹|幽魂|JRRTG|3",
+				"属性值提升|幽魂|JRRTG|4",
+				"复生|幽魂|JRRTG|5",
+				{
+					"classFeature": "未竟之业|幽魂|JRRTG|6",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|幽魂|JRRTG|8",
+				"灵媒|幽魂|JRRTG|10",
+				{
+					"classFeature": "未竟之业|幽魂|JRRTG|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|幽魂|JRRTG|12",
+				"虚体移动|幽魂|JRRTG|15",
+				"属性值提升|幽魂|JRRTG|16",
+				{
+					"classFeature": "未竟之业|幽魂|JRRTG|17",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|幽魂|JRRTG|19",
+				"旅程终点|幽魂|JRRTG|20"
+			],
+			"subclassTitle": "幽魂",
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Occultist (Ghost Variant)",
+			"name": "神秘学者（幽魂变体）",
+			"source": "JRRTG",
+			"page": 3,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"classSpells": [
+				"奇术|phb",
+				"卜筮术|phb",
+				"黯冰狱铠|phb",
+				"哈达之臂|phb",
+				"易容术|phb",
+				"动物交谈|phb",
+				"侦测善恶|phb",
+				"英雄气概|phb",
+				"跳跃术|phb",
+				"大步奔行|phb",
+				"防护善恶|phb",
+				"庇护术|phb",
+				"虔诚护盾|phb",
+				"激愤斩|phb",
+				"变身术|phb",
+				"朦胧术|phb",
+				"印记斩|phb",
+				"黑暗视觉|phb",
+				"强化属性|phb",
+				"次等复原术|phb",
+				"浮空术|phb",
+				"动植物定位术|phb",
+				"物件定位术|phb",
+				"镜影术|phb",
+				"涅斯图魔法灵光|phb",
+				"行动无踪|phb",
+				"识破隐形|",
+				"蛛行术|phb",
+				"致盲斩|phb",
+				"闪现术|phb",
+				"十字军披风|phb",
+				"假死术|phb",
+				"飞行术|phb",
+				"加速术|phb",
+				"回避侦测|phb",
+				"防护能量|phb",
+				"植物交谈|phb",
+				"灵体卫士|phb",
+				"移除诅咒|phb",
+				"巧言术|phb",
+				"生命灵光|phb",
+				"净化灵光|phb",
+				"防死结界|phb",
+				"火焰护盾|phb",
+				"行动自如|phb",
+				"高等隐形术|phb",
+				"生物定位术|phb",
+				"欧提路克弹力法球|phb",
+				"惊惧斩|phb",
+				"防活物护罩|phb",
+				"放逐斩|phb",
+				"原力法阵|phb",
+				"湮灭波|phb",
+				"高等复原术|phb"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"none"
+				],
+				"tools": [
+					"任意工匠工具"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"insight",
+								"investigation",
+								"perception",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）一个{@item 学者套组|phb}，或（b）一个{@item 探索套组|phb}",
+					"（a）一副{@item 整副纸牌|phb|游玩或占卜用牌}，或（b）一件{@filter 乐器|items|miscellaneous=平凡的|type=乐器}，或（c）一套{@filter 工匠工具|items|miscellaneous=平凡的|type=工匠工具}"
+				],
+				"goldAlternative": "{@dice 3d4 × 10|3d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"学者套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						],
+						"c": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"整副纸牌|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "instrumentMusical"
+							}
+						],
+						"c": [
+							{
+								"equipmentType": "toolArtisan"
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"entries": [
+					"如果你的团使用《玩家手册》中的兼职可选规则，以下是你在选择神秘学者作为你的职业之一时需要了解的内容。"
+				],
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"arcana",
+									"history",
+									"insight",
+									"intimidation",
+									"nature",
+									"religion"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"自选一种类型的{@item 工匠工具|PHB}"
+					]
+				}
+			},
+			"classFeatures": [
+				"通灵师|神秘学者（幽魂变体）|JRRTG|1",
+				"迷失者之枢|神秘学者（幽魂变体）|JRRTG|1",
+				"个人属性值提升|神秘学者（幽魂变体）|JRRTG|4",
+				"个人属性值提升|神秘学者（幽魂变体）|JRRTG|8",
+				"高阶灵媒|神秘学者（幽魂变体）|JRRTG|10",
+				"个人属性值提升|神秘学者（幽魂变体）|JRRTG|12",
+				"个人属性值提升|神秘学者（幽魂变体）|JRRTG|16",
+				"个人属性值提升|神秘学者（幽魂变体）|JRRTG|19",
+				"迷失亡魂牧者|神秘学者（幽魂变体）|JRRTG|20"
+			],
+			"subclassTitle": "神秘学者（幽魂变体）",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Ghost",
+			"name": "幽魂",
+			"source": "JRRTG",
+			"entries": [
+				{
+					"ENG_name": "Ghost",
+					"name": "幽魂",
+					"type": "section",
+					"source": "JRRTG",
+					"page": 2,
+					"entries": [
+						"银雾笼罩之下，一名半身人避过守卫，滑入远处的地下墓穴。一个声音在她耳畔低语，警示危险，而只有她能看见的微光引着她走向一座隐秘的陵墓。",
+						"双眼中灵魂之火熊熊燃烧，一名黑暗精灵冲入近战的人群，所触之处的生灵尽数被其攫取生命。一个声音在他们耳畔低语，驱使他们愈发暴烈，似乎随着每一次杀戮愈发响亮。",
+						"一名人类双手紧握短剑，敌人扑来时他的指节泛白。就在似乎大势已去之际，耳畔的一声低语授予了他一生的战斗经验。无形的双手调整着他的姿态，他以大师般的沉静迎面扑向敌人。",
+						"幽魂并非那名半身人、卓尔或人类，而是他们耳畔的低语：那赋能并守护他们的同伴存在。幽魂作为职业的共性在于其脱离肉身的形态，而其特质则由他们在凡世的未竟之业所定义。有些幽魂满怀复仇之心，试图满足一世未能平息的恶意；另一些则温和良善，护卫着继承其志业之人。尽管这层系连有时构成阻碍，幽魂与凡世之间微弱的系连却赋予他们超自然的力量与洞见。他们的能力可以为盟友披上守护魔法，附身或支配敌人，或传承前世习得的技艺。",
+						{
+							"ENG_name": "One foot in the grave",
+							"type": "entries",
+							"name": "半脚踏入坟墓",
+							"entries": [
+								"在战场上蒙受耻辱的武士；被冷酷杀害的平民；活得比弟子更久的导师；在铁窗后谋划最后一场劫案而死的盗贼。无法安息的幽魂，是被束缚在边界以太上的迷失灵魂。有些以幽灵般的冒险者形象出现，随身带着谋生的行头；另一些则显现为动物，或以代表其个性的抽象形态示人。",
+								"幽魂返回物质位面时，也带来了几分彼界的气息。随着时间推移，他们学会驾驭维系自身的力量，不断找到扭曲现实、攻击敌人的新方式。",
+								"通过附身，幽魂得以与凡人融合并操纵其行动。尽管有些幽魂恶毒而专横，但大多数会去寻找愿意听从其忠告的同伴。若幽魂与宿主配合无间，便能跨越任何一方独自无法逾越的障碍。"
+							]
+						},
+						{
+							"ENG_name": "Undying Purpose",
+							"type": "entries",
+							"name": "不灭的执念",
+							"entries": [
+								"幽魂滞留人间，只为见到未竟之业完成，其力量显现的方式也反映着这份使命。他们大多死于非命，其出身浸透着悲剧。另一些则背负着一世无法完成的职责，比如看守一件圣物，或守护某一血脉。这样的灵魂可能会放弃安息，直到寻得合格的继任者，或者作为守护者照拂数代后裔。受其庇护之人应当庆幸，因为单凭幽魂的洞见便足以消弭灾祸。",
+								"半困于现实之外的幽魂，需要依靠盟友来追寻自己的目标。值得信赖的同伴难觅，而这样的羁绊一旦结成，便可持续数世。不受时间约束的幽魂，可能花费数十年教导这样的后辈；另一些则搜寻神器或研习神秘学识：只要能避免重蹈生前的失败，什么都愿意做。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Ghost",
+							"type": "entries",
+							"name": "创建幽魂",
+							"entries": [
+								"创建幽魂角色，需要一段由非凡事件主导的背景故事：你的死亡。也许你的死亡本身就是未竟之业的开端，你已向将你击倒的反派立誓复仇；也许你的逝去只是通往更宏大目标路途上的一道坎坷：掌握魔法、臻至武艺化境，或为一项古老使命选定合格的继任者。",
+								"你与冒险同伴的关系如何？是他们偶然发现了你所看守的圣物并带在身边，还是队伍中的某位成员是一项古老协约的受益者？也许你本来就是他们中的一员，留下来完成那场夺去你性命的冒险？是某位特定的队员是你的天选勇士，还是你将整支队伍视为你的羊群？",
+								{
+									"ENG_name": "Ghostly Encore",
+									"type": "inset",
+									"name": "幽魂返场",
+									"entries": [
+										"当玩家角色带着未竟之业死去时，DM可以允许其放弃安息，以幽魂职业等级替换一项或多项原有职业等级。可以考虑让魅力调整值较低的角色在使用幽魂职业特性时，改用其智力或感知。"
+									]
+								},
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"按照以下建议，你可以快速创建一名幽魂。首先，魅力应当是你最高的属性值，其次是体质。如果你计划选择{@i 恶戏未驯}未竟之业，则改让敏捷成为你的第二高属性值。接着，选择{@background 变体贵族：骑士|PHB}或{@background 变体特性：家仆|PHB}背景，并采用其变体特性：家仆。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Quirks and Foibles",
+							"type": "entries",
+							"name": "怪癖与弱点",
+							"entries": [
+								"不妨添些点缀，让你的幽魂角色脱颖而出。下面这一节提供了若干点子。你可以掷骰随机决定特质，挑选你喜欢的，或把这些点子当作自行设计的灵感。",
+								{
+									"ENG_name": "Signature Phenomenon",
+									"type": "entries",
+									"name": "标志性异象",
+									"entries": [
+										"每名幽魂都有一种自己无法控制的标志性显现：怪异的声响、悄然蔓延的寒意，或是深切的孤独感或眩晕的兴奋感。",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"标志性异象"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"遥远的旋律、悦耳的鸟鸣或童谣的片段，随风萦绕在我身旁。"
+												],
+												[
+													"2",
+													"附近的水池与镜子中，映出照镜者更加苍老、更加衰败的模样。"
+												],
+												[
+													"3",
+													"动物能察觉我的靠近：猫发威嘶叫，犬吠不止，虫群无故聚集。"
+												],
+												[
+													"4",
+													"阵阵寒风或夏日暖风伴我而行。我走近时，烛火摇曳熄灭。"
+												],
+												[
+													"5",
+													"当我静立不动时，白霜会悄悄爬上周围的物件。"
+												],
+												[
+													"6",
+													"花在我身边绽放，却在我离开后迅速枯萎。"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Untimely Demise",
+									"type": "entries",
+									"name": "死于非命",
+									"entries": [
+										"幽魂的出身往往浸透着悲剧。你过早离世的原因是什么？你的死状又如何影响着你的性情？",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"死亡原因"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"我的躯体与其他无数死者一起，横陈在被遗忘的战场上。"
+												],
+												[
+													"2",
+													"我在寿数将尽时于睡梦中死去，但在选定继任者之前，我永远无法安息。"
+												],
+												[
+													"3",
+													"我甚至记不起自己是怎么死的，也不确定自己是否真的想知道。"
+												],
+												[
+													"4",
+													"屠戮我族人的反派面前，连我也没能幸存，但这不会阻止我复仇。"
+												],
+												[
+													"5",
+													"死了？我没死！我要是真死了，咱们还怎么在这儿说话？！"
+												],
+												[
+													"6",
+													"我死于一场丢人的平常意外，所以每逢有人问起，我都会编个不同的故事。"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Possession Quirk",
+									"type": "entries",
+									"name": "附身怪癖",
+									"entries": [
+										"自愿的宿主帮助幽魂在凡世扎根，幽魂则以忠告与守护回报这份信任。尽管很少有人会舍弃真诚合作而选择意志的较量，但大多数幽魂仍会不由自主地影响宿主\u2014\u2014任由自己的个性漫溢而出，或无法完全控制自己的灵体。",
+										"以下怪癖可能适用于你附身的宿主。请确保其他玩家乐于使用这些特质：即便你附身的是他们，是否配合仍由他们自己决定。",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"宿主怪癖"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"囤积附身我的幽魂渴望的物件，比如钱币、骰子、魔杖或圣徽。"
+												],
+												[
+													"2",
+													"就算坐在熊熊营火旁，裹着最厚的外衣，我也从不觉得温暖。"
+												],
+												[
+													"3",
+													"在美食面前我完全把持不住：每样东西尝起来都像是从未吃过一样！"
+												],
+												[
+													"4",
+													"我对一件与附身我的幽魂之死有关的器具心怀恐惧。"
+												],
+												[
+													"5",
+													"无论做一件事是第一遍还是第一百遍，我都会涌现鲜活的既视感。"
+												],
+												[
+													"6",
+													"我有时会不由自主地说出附身我的幽魂的语言，令同伴们大惑不解。"
+												]
+											]
+										}
+									]
+								}
+							]
+						},
+						"作为一名幽魂，你获得以下职业特性。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Occultist (Ghost Variant)",
+			"name": "神秘学者（幽魂变体）",
+			"source": "JRRTG",
+			"entries": [
+				{
+					"ENG_name": "Occultist (Ghost Variant)",
+					"name": "神秘学者（幽魂变体）",
+					"type": "section",
+					"source": "JRRTG",
+					"page": 2,
+					"entries": [
+						{
+							"type": "inset",
+							"entries": [
+								"此变体代表招魂者、灵媒或超自然代言人。神秘学者引导灵魂，自身却仍然在世。神秘学者可以作为独立职业游玩，也可以与《玩家手册》的兼职规则配合使用"
+							]
+						},
+						"无论你是被早逝挚爱萦绕的平民、受骚灵侵扰的冒险者，还是潜心钻研神秘魔法的学子，你都能从边界以太中唤出灵魂，并与它们交流。",
+						{
+							"ENG_name": "Speaker for Lost Soul",
+							"type": "entries",
+							"name": "亡魂代言人",
+							"entries": [
+								"有些神秘学者治学务实，召唤灵魂以借用其专长；有些富于共情，倾听那些与自己同病相怜的灵魂的指引；有些师从自然之灵，带有萨满色彩；还有些在不知不觉间通灵亡者，自以为闹鬼，却不知那是自己的天赋。",
+								"你与你通灵的灵魂关系如何？它们是自愿为你效劳，还是被束缚于你，指望曲解你的命令好挣脱束缚？也许你与某个迷失灵魂做过交易，替它完成未竟之业以换取帮助？是否有一位特定的灵魂担任你的导师，比如阵亡的战友或图腾动物，还是你每天都向不同的灵魂寻求指引？",
+								{
+									"type": "table",
+									"colLabels": [
+										"d8",
+										"牵挂"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											"1",
+											"挚爱之人死后，我响应了冒险的召唤。如今，他的灵魂伴我踏上险途。"
+										],
+										[
+											"2",
+											"我通灵一位旧敌的灵魂，压制他的恶意，引导他走向救赎。"
+										],
+										[
+											"3",
+											"一个或多个从不与我交谈的灵魂萦绕着我。解读它们隐晦的预兆是我的全职工作，而我唯恐误读会招致它们的不悦。"
+										],
+										[
+											"4",
+											"每天夜里，都有一位当地的不同灵魂前来找我，希望我通灵它们，重访它们生前的流连之地。"
+										],
+										[
+											"5",
+											"我完全不知道守护我的灵魂的存在，把它的干预当作好运连连，或以为那是我自己的魔法力量。"
+										],
+										[
+											"6",
+											"我花数小时冥想自然世界，动物之灵便现身于我，给予指引。"
+										],
+										[
+											"7",
+											"与死亡的一次擦肩让我半脚踏入了坟墓。我突然能看见灵魂，便用这份新获得的能力帮助迷失灵魂完成它们的未竟之业。"
+										],
+										[
+											"8",
+											"我过去的一桩罪行引来了一个恶意灵魂的注意，它以力量诱惑我，要我继续它的黑暗勾当。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "One foot in the grave",
+							"type": "entries",
+							"name": "半脚踏入坟墓",
+							"entries": [
+								"在战场上蒙受耻辱的武士；被冷酷杀害的平民；活得比弟子更久的导师；在铁窗后谋划最后一场劫案而死的盗贼。无法安息的幽魂，是被束缚在边界以太上的迷失灵魂。有些以幽灵般的冒险者形象出现，随身带着谋生的行头；另一些则显现为动物，或以代表其个性的抽象形态示人。",
+								"幽魂返回物质位面时，也带来了几分彼界的气息。随着时间推移，他们学会驾驭维系自身的力量，不断找到扭曲现实、攻击敌人的新方式。",
+								"通过附身，幽魂得以与凡人融合并操纵其行动。尽管有些幽魂恶毒而专横，但大多数会去寻找愿意听从其忠告的同伴。若幽魂与宿主配合无间，便能跨越任何一方独自无法逾越的障碍。"
+							]
+						},
+						{
+							"ENG_name": "Undying Purpose",
+							"type": "entries",
+							"name": "不灭的执念",
+							"entries": [
+								"幽魂滞留人间，只为见到未竟之业完成，其力量显现的方式也反映着这份使命。他们大多死于非命，其出身浸透着悲剧。另一些则背负着一世无法完成的职责，比如看守一件圣物，或守护某一血脉。这样的灵魂可能会放弃安息，直到寻得合格的继任者，或者作为守护者照拂数代后裔。受其庇护之人应当庆幸，因为单凭幽魂的洞见便足以消弭灾祸。",
+								"半困于现实之外的幽魂，需要依靠盟友来追寻自己的目标。值得信赖的同伴难觅，而这样的羁绊一旦结成，便可持续数世。不受时间约束的幽魂，可能花费数十年教导这样的后辈；另一些则搜寻神器或研习神秘学识：只要能避免重蹈生前的失败，什么都愿意做。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Ghost",
+							"type": "entries",
+							"name": "创建幽魂",
+							"entries": [
+								"创建幽魂角色，需要一段由非凡事件主导的背景故事：你的死亡。也许你的死亡本身就是未竟之业的开端，你已向将你击倒的反派立誓复仇；也许你的逝去只是通往更宏大目标路途上的一道坎坷：掌握魔法、臻至武艺化境，或为一项古老使命选定合格的继任者。",
+								"你与冒险同伴的关系如何？是他们偶然发现了你所看守的圣物并带在身边，还是队伍中的某位成员是一项古老协约的受益者？也许你本来就是他们中的一员，留下来完成那场夺去你性命的冒险？是某位特定的队员是你的天选勇士，还是你将整支队伍视为你的羊群？",
+								{
+									"ENG_name": "Ghostly Encore",
+									"type": "inset",
+									"name": "幽魂返场",
+									"entries": [
+										"当玩家角色带着未竟之业死去时，DM可以允许其放弃安息，以幽魂职业等级替换一项或多项原有职业等级。可以考虑让魅力调整值较低的角色在使用幽魂职业特性时，改用其智力或感知。"
+									]
+								},
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"按照以下建议，你可以快速创建一名幽魂。首先，魅力应当是你最高的属性值，其次是体质。如果你计划选择{@i 恶戏未驯}未竟之业，则改让敏捷成为你的第二高属性值。接着，选择{@background 变体贵族：骑士|PHB}或{@background 变体特性：家仆|PHB}背景，并采用其变体特性：家仆。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Quirks and Foibles",
+							"type": "entries",
+							"name": "怪癖与弱点",
+							"entries": [
+								"不妨添些点缀，让你的幽魂角色脱颖而出。下面这一节提供了若干点子。你可以掷骰随机决定特质，挑选你喜欢的，或把这些点子当作自行设计的灵感。",
+								{
+									"ENG_name": "Signature Phenomenon",
+									"type": "entries",
+									"name": "标志性异象",
+									"entries": [
+										"每名幽魂都有一种自己无法控制的标志性显现：怪异的声响、悄然蔓延的寒意，或是深切的孤独感或眩晕的兴奋感。",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"标志性异象"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"遥远的旋律、悦耳的鸟鸣或童谣的片段，随风萦绕在我身旁。"
+												],
+												[
+													"2",
+													"附近的水池与镜子中，映出照镜者更加苍老、更加衰败的模样。"
+												],
+												[
+													"3",
+													"动物能察觉我的靠近：猫发威嘶叫，犬吠不止，虫群无故聚集。"
+												],
+												[
+													"4",
+													"阵阵寒风或夏日暖风伴我而行。我走近时，烛火摇曳熄灭。"
+												],
+												[
+													"5",
+													"当我静立不动时，白霜会悄悄爬上周围的物件。"
+												],
+												[
+													"6",
+													"花在我身边绽放，却在我离开后迅速枯萎。"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Untimely Demise",
+									"type": "entries",
+									"name": "死于非命",
+									"entries": [
+										"幽魂的出身往往浸透着悲剧。你过早离世的原因是什么？你的死状又如何影响着你的性情？",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"死亡原因"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"我的躯体与其他无数死者一起，横陈在被遗忘的战场上。"
+												],
+												[
+													"2",
+													"我在寿数将尽时于睡梦中死去，但在选定继任者之前，我永远无法安息。"
+												],
+												[
+													"3",
+													"我甚至记不起自己是怎么死的，也不确定自己是否真的想知道。"
+												],
+												[
+													"4",
+													"屠戮我族人的反派面前，连我也没能幸存，但这不会阻止我复仇。"
+												],
+												[
+													"5",
+													"死了？我没死！我要是真死了，咱们还怎么在这儿说话？！"
+												],
+												[
+													"6",
+													"我死于一场丢人的平常意外，所以每逢有人问起，我都会编个不同的故事。"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Possession Quirk",
+									"type": "entries",
+									"name": "附身怪癖",
+									"entries": [
+										"自愿的宿主帮助幽魂在凡世扎根，幽魂则以忠告与守护回报这份信任。尽管很少有人会舍弃真诚合作而选择意志的较量，但大多数幽魂仍会不由自主地影响宿主\u2014\u2014任由自己的个性漫溢而出，或无法完全控制自己的灵体。",
+										"以下怪癖可能适用于你附身的宿主。请确保其他玩家乐于使用这些特质：即便你附身的是他们，是否配合仍由他们自己决定。",
+										{
+											"type": "table",
+											"colLabels": [
+												"d6",
+												"宿主怪癖"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"囤积附身我的幽魂渴望的物件，比如钱币、骰子、魔杖或圣徽。"
+												],
+												[
+													"2",
+													"就算坐在熊熊营火旁，裹着最厚的外衣，我也从不觉得温暖。"
+												],
+												[
+													"3",
+													"在美食面前我完全把持不住：每样东西尝起来都像是从未吃过一样！"
+												],
+												[
+													"4",
+													"我对一件与附身我的幽魂之死有关的器具心怀恐惧。"
+												],
+												[
+													"5",
+													"无论做一件事是第一遍还是第一百遍，我都会涌现鲜活的既视感。"
+												],
+												[
+													"6",
+													"我有时会不由自主地说出附身我的幽魂的语言，令同伴们大惑不解。"
+												]
+											]
+										}
+									]
+								}
+							]
+						},
+						"作为一名神秘学者，你获得以下职业特性。"
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Duty Not Done",
+			"name": "职责未竟",
+			"shortName": "职责未竟",
+			"source": "JRRTG",
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"page": 7,
+			"additionalSpells": [
+				{
+					"ENG_name": "Augment",
+					"name": "赋能",
+					"known": {
+						"1": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"2": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"3": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"4": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"5": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"6": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"7": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"8": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"9": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"10": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"11": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"12": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"13": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"14": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"15": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"16": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"17": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"18": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"19": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						],
+						"20": [
+							{
+								"choose": "level=0;1;2;3;4;5|class=幽魂",
+								"count": 1
+							}
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"职责未竟|幽魂|JRRTG|职责未竟|JRRTG|1",
+				"神盾|幽魂|JRRTG|职责未竟|JRRTG|6",
+				"异界守护者|幽魂|JRRTG|职责未竟|JRRTG|11",
+				"不屈守护者|幽魂|JRRTG|职责未竟|JRRTG|17"
+			]
+		},
+		{
+			"ENG_name": "Malice Unsated",
+			"name": "恶意未餍",
+			"shortName": "恶意未餍",
+			"source": "JRRTG",
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"page": 7,
+			"subclassFeatures": [
+				"恶意未餍|幽魂|JRRTG|恶意未餍|JRRTG|1",
+				"冷酷操偶师|幽魂|JRRTG|恶意未餍|JRRTG|6",
+				"威压意志|幽魂|JRRTG|恶意未餍|JRRTG|11",
+				"不灭憎恨|幽魂|JRRTG|恶意未餍|JRRTG|17"
+			]
+		},
+		{
+			"ENG_name": "Mischief Not Managed",
+			"name": "恶戏未驯",
+			"shortName": "恶戏未驯",
+			"source": "JRRTG",
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"page": 8,
+			"subclassSpells": [
+				"弹射术|xge",
+				"法师之手|phb",
+				"活化物件|phb"
+			],
+			"subclassFeatures": [
+				"恶戏未驯|幽魂|JRRTG|恶戏未驯|JRRTG|1",
+				"听候差遣|幽魂|JRRTG|恶戏未驯|JRRTG|6",
+				"亡者之舞|幽魂|JRRTG|恶戏未驯|JRRTG|6",
+				"潜隐附身|幽魂|JRRTG|恶戏未驯|JRRTG|11",
+				"好戏继续|幽魂|JRRTG|恶戏未驯|JRRTG|17"
+			]
+		},
+		{
+			"ENG_name": "Restless Blade",
+			"name": "不宁之刃",
+			"shortName": "不宁之刃",
+			"source": "JRRTG",
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"page": 9,
+			"subclassSpells": [
+				"谭森变形术|xge"
+			],
+			"subclassFeatures": [
+				"不宁之刃|幽魂|JRRTG|不宁之刃|JRRTG|1",
+				"幻影武士|幽魂|JRRTG|不宁之刃|JRRTG|6",
+				"异界斗士|幽魂|JRRTG|不宁之刃|JRRTG|11",
+				"不死抗争|幽魂|JRRTG|不宁之刃|JRRTG|17"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Possession",
+			"name": "附身",
+			"source": "JRRTG",
+			"page": 5,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"以一个动作，你可以附身一名你能看见、且位于你身边5尺内的自愿类人生物。被附身的生物称为你的宿主。随后你消失，并且只能通过宿主的感官感知周围环境。",
+				"附身宿主期间，你无法被任何攻击、法术或其他效应选为目标，驱散不死生物类的效应除外。你保留自己的阵营与游戏数据（如属性值和职业特性），并保持你在先攻中的位置。宿主可以继续如常行动，而你也继续在你的回合于战斗中采取行动。",
+				"附身期间，你的宿主获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你的宿主得益于你的特殊感官（如以太视界），以及你的语言熟练项（如果有的话）。",
+						"你可以与宿主心灵感应交流，反之亦然。",
+						"每当你的宿主进行涉及技能或工具的属性检定、使用武器的攻击检定，或进行豁免检定时，如果你具有该技能、工具、武器或豁免的熟练项，便可以掷一个d4，并将结果加到其检定总数中。"
+					]
+				},
+				"附身宿主期间，你只能采取幽魂职业特性给予的动作。你还获得以下额外的动作选项：",
+				{
+					"type": "list",
+					"items": [
+						"{@i 鼓舞}：以一个动作，你给予宿主等于你魅力调整值的临时生命值（至少为1）。附身结束时这些生命值消失。",
+						"{@i 协调}：以一个动作，你使宿主在你下个回合开始前的下一次攻击检定具有优势。",
+						"{@i 投射}：以一个动作，你可以对一个新的目标使用你的附身能力。以此方式使用时，其射程为30尺，且在更换宿主后，你可以立即进行另一个动作（此动作除外）。"
+					]
+				},
+				"若某个效应要求你指定目标生物或计算距离，则视同你处于宿主所占的空间中进行。若你正专注某个法术时宿主受到伤害，你必须进行豁免以维持专注，视同你自己受到了该伤害。",
+				"附身持续至宿主生命值降为0、你附身另一生物、你以一个附赠动作结束附身，或你被驱散、被如驱逐善恶法术的效应逐出为止。除非你正附身新宿主，否则你会出现在你离开的宿主周围5尺内一处未被占据的空间。",
+				{
+					"ENG_name": "Variant: Animal Forms",
+					"type": "inset",
+					"name": "变体：动物形态",
+					"entries": [
+						"有些幽魂以动物形态出现，代表图腾兽或不寻常的魔宠。",
+						"当你在1级获得灵体形态能力时，你可以指定一只中型或更小的野兽来代表你。你以该生物的形象出现，但呈虚体。除体型类别外，你的游戏数据没有任何改变。你的生物种类仍为不死生物，而任何飞行能力都将被封存至15级，届时由虚体移动来体现。",
+						"使用附身宿主的能力时，你可以选择保持可见：蜷在口袋里、在头顶盘旋、化作灵光环绕宿主，或在其身侧奔跑。无论你如何选择，你可采取动作的限制以及能以你为目标的效应都保持不变。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spirit Form",
+			"name": "灵体形态",
+			"source": "JRRTG",
+			"page": 5,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						"在1级时，你的肉身已经消亡，但你的灵魂仍系连于物质位面。",
+						"你的生物种类是不死生物，你无法进行攻击，也无法使用其他职业的特性施放法术。你无法主动与物件和装备互动，但生物、陷阱和其他危险仍能如常伤害你。你的生命值只能通过消耗生命骰或完成一次长休来恢复，而且你死亡时不会留下躯体。"
+					]
+				},
+				"你必须遵守物理法则，也会如常被困难地形减速。尽管这摇摇欲坠的系连有时是一种阻碍，它也带来以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你对于来自非魔法攻击的钝击，穿刺和挥砍伤害得到抗性。",
+						"你免疫毒素伤害。",
+						"你免疫受擒、石化、中毒、倒地和束缚状态。",
+						"你不会受到坠落伤害。"
+					]
+				},
+				"作为一缕离体之魂，你不再需要空气、食物、饮水或睡眠。你还获得恒久的魔法能力：",
+				{
+					"type": "list",
+					"items": [
+						"{@i 以太视界}：你可以看见你身边30尺内的{@i 以太位面}。",
+						"你可以随意施放{@spell 奇术|PHB}，无需任何成分。"
+					]
+				},
+				"若某个幽魂职业特性允许你施放法术，你以其可能的最低环阶施放。你的施法属性是魅力。",
+				"你的部分幽魂职业特性要求目标进行豁免检定以抗拒其效应。该豁免DC计算如下：",
+				{
+					"ENG_name": "Ghost",
+					"type": "abilityDc",
+					"name": "幽魂",
+					"attributes": [
+						"cha"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Unfinished Business",
+			"name": "未竟之业",
+			"source": "JRRTG",
+			"page": 5,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"不同的幽魂滞留凡世的理由各不相同。你所选择的未竟之业反映了这份使命，也决定了你引导盟友与宿主所指向的目标。",
+				"在1级时，你选择一项描述你在凡世使命的未竟之业：职责未竟、恶意未餍、恶戏未驯或不宁之刃。每项未竟之业的详述见职业描述末尾。你的选择会在1级获得特性，并在6级、11级和17级获得额外的益处。"
+			]
+		},
+		{
+			"ENG_name": "Otherworldly Insight",
+			"name": "异界洞悉",
+			"source": "JRRTG",
+			"page": 5,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 2,
+			"entries": [
+				"从2级起，你神秘的预感让你能更好地引导盟友、挫败敌人。你可以施放{@spell 卜筮术|PHB}，无需任何成分。以此方式施放时，卜读的结果会直接为你所知，并伴有一阵寒风、一声远处的鸟鸣或其他超自然现象作为标志。",
+				"一旦以此方式施放{@spell 卜筮术|PHB}，你必须完成一次短休或长休后才能再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Manifestations",
+			"name": "显迹",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 3,
+			"entries": [
+				"汲取维系你存在的力量，你学会了显现恒久的魔法能力，将你的灵体扭转塑形以满足你的需要。",
+				"在3级时，你获得一项自选的显迹。你的显迹选项详述于职业描述末尾。当你在特定幽魂等级时，你会获得额外的自选显迹，如{@filter 幽魂表格|spells|class=幽魂}中\"已知{@filter 显迹|optionalfeatures|feature type=OF:JRRTG}\"一栏所示。",
+				"每当你完成一次长休，你可以选择一项已知的{@filter 显迹|optionalfeatures|feature type=OF:JRRTG}，并以另一项满足先决条件的显迹替换它。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "彻骨冻寒|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "悲恸斗篷|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "幽魂闪现|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "阴森之貌|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "恸哭哀号|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "魔网之结|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "界外之识|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "内在之识|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "与雾合一|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "异界火花|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "幻影打击|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "灵体亲和|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "灵魂视界|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "帷幕裂隙|JRRTG"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "亡者之声|JRRTG"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 4,
+			"entries": [
+				"当你达到4级、8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。"
+			]
+		},
+		{
+			"ENG_name": "Rejuvenation",
+			"name": "复生",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 5,
+			"entries": [
+				"在5级时，当你生命值降至0但未被直接杀死时，你可以用你的反应附身一名你身边30尺内的自愿类人生物。若你这样做，你陷入{@condition 昏迷|PHB}状态但伤势稳定。你的宿主不会获得{@classFeature 附身|幽魂|JRRTG|1|JRRTG}能力的任何常见益处，且附身结束时你再度失去稳定状态。占据宿主1小时后，你恢复1点生命值，转为{@condition 清醒|PHB}，附身随之结束。"
+			]
+		},
+		{
+			"ENG_name": "Unfinished Business",
+			"name": "未竟之业",
+			"source": "JRRTG",
+			"page": 5,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"不同的幽魂滞留凡世的理由各不相同。你所选择的未竟之业反映了这份使命，也决定了你引导盟友与宿主所指向的目标。",
+				"在6级时，你选择一项描述你在凡世使命的未竟之业：职责未竟、恶意未餍、恶戏未驯或不宁之刃。每项未竟之业的详述见职业描述末尾。你的选择会在1级获得特性，并在6级、11级和17级获得额外的益处。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 8,
+			"entries": [
+				"当你到达8级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Medium",
+			"name": "灵媒",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 10,
+			"entries": [
+				"正如你在物质位面上将灵体从一个宿主投射到另一个宿主，你也学会了在边界以太中织起一张{@spell 蛛网术|PHB}，成为远近盟友之间的通道。",
+				"自10级起，你可以随意施放{@spell 拉瑞心灵联结|PHB}，无需任何成分。以此方式联结的生物在为抗拒{@condition 魅惑|PHB}或{@condition 恐慌|PHB}而进行的豁免检定上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Unfinished Business",
+			"name": "未竟之业",
+			"source": "JRRTG",
+			"page": 5,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"不同的幽魂滞留凡世的理由各不相同。你所选择的未竟之业反映了这份使命，也决定了你引导盟友与宿主所指向的目标。",
+				"在11级时，你选择一项描述你在凡世使命的未竟之业：职责未竟、恶意未餍、恶戏未驯或不宁之刃。每项未竟之业的详述见职业描述末尾。你的选择会在1级获得特性，并在6级、11级和17级获得额外的益处。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 12,
+			"entries": [
+				"当你到达12级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Incorporeal Movement",
+			"name": "虚体移动",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 15,
+			"entries": [
+				"到15级时，你不仅学会了加强对物质位面的把握，也学会了放松这份把握，将自己从现实严酷的法则中解放出来。",
+				"你获得40尺飞行速度。",
+				"此外，移动时你可以穿过其他生物和物件，视同它们是困难地形。若你在物件内部结束你的回合，你受到{@damage 1d10}点力场伤害，并出现在最近的一处未被占据的空间。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 16,
+			"entries": [
+				"当你到达16级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Unfinished Business",
+			"name": "未竟之业",
+			"source": "JRRTG",
+			"page": 5,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"不同的幽魂滞留凡世的理由各不相同。你所选择的未竟之业反映了这份使命，也决定了你引导盟友与宿主所指向的目标。",
+				"在17级时，你选择一项描述你在凡世使命的未竟之业：职责未竟、恶意未餍、恶戏未驯或不宁之刃。每项未竟之业的详述见职业描述末尾。你的选择会在1级获得特性，并在6级、11级和17级获得额外的益处。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 19,
+			"entries": [
+				"当你到达19级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Deny Reality's Rule",
+			"name": "否定现实法则",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 20,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"你拒绝了命运发给你的残酷一手，将你的凡人出身、甚至未竟之业都远远抛在身后。",
+				"在20级选择此选项后，判定哪些法术与能力能以你为目标时，你不再被视为不死生物。自此以后，任何魔法，无论多么强大，都无法使你复生。",
+				"此外，你可以施放一次{@spell 祈愿术|PHB}，无需任何成分，并在7天后恢复此能力。即使你以此方式施放{@spell 祈愿术|PHB}时承受了负担，你仍然可以再次祈愿，但只能复现一个8环或更低环阶法术的效果。",
+				{
+					"ENG_name": "Second Chance",
+					"type": "inset",
+					"name": "花开二度",
+					"entries": [
+						"被{@spell 完全复生术|PHB}或{@spell 祈愿术|PHB}等魔法带回生命的幽魂角色，会立即以另一职业的等级替换其幽魂职业等级。不妨思考这段磨难如何改变了这个角色：驱动他的仍是那份未竟之业，还是重获新生让他重新排定了人生的主次？"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Embrace the End",
+			"name": "拥抱终结",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 20,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"你对这段过得充实的身后生涯心怀感激。也许还有最后一场战斗横亘在你与最终的安息之间，也许已是时候去看看下一个世界为你准备了什么。",
+				"在20级选择此选项后，你可以以一个动作前往来世（其效果由DM决定）。在此之前，你可以以一个动作汲取你的觉悟，获得如同{@spell 卜筮术|PHB}的效果，且绝无随机卜读的可能。"
+			]
+		},
+		{
+			"ENG_name": "Journey's End",
+			"name": "旅程终点",
+			"source": "JRRTG",
+			"page": 6,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"level": 20,
+			"entries": [
+				"在20级时，你必须决定是前往下一个世界，还是留驻此世。你从以下两项特性中选择一项：{@classFeature 拥抱终结|幽魂|JRRTG|20|JRRTG}或{@classFeature 否定现实法则|幽魂|JRRTG|20|JRRTG}。",
+				{
+					"type": "refClassFeature",
+					"classFeature": "拥抱终结|幽魂|JRRTG|20"
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "否定现实法则|幽魂|JRRTG|20"
+				}
+			]
+		},
+		{
+			"ENG_name": "Channeler",
+			"name": "通灵师",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"从1级起，每当你完成一次长休，你都可以从边界以太中唤出一名迷失灵魂。这具幻影使用你的属性值，基础步行速度为30尺，并在由你选择的任意三项技能、工具或语言上具有熟练项。除此之外，它使用一名没有种族和背景的幽魂角色的数据，幽魂等级与你的神秘学者等级相同。",
+				"你操控着这个灵魂，它在你的先攻中行动。你决定它的行为和移动，但除非你下达命令，它不会采取动作。若灵魂位于你身边120尺内，你可以用你的动作以心灵命令它。你这样做时，它可以在你的下个回合开始前，采取与其游戏数据相称的动作。灵魂使用其反应从不需要你的命令。在接到第一道命令之前，你通灵的这位灵魂会依{@classFeature 附身|幽魂|JRRTG|1|JRRTG}栖居于你体内。",
+				"若你死亡，灵魂消散。若你陷入{@condition 昏迷}，灵魂会失能，直到你恢复意识。若灵魂死亡，你必须对抗其幽魂豁免DC进行一次魅力豁免，失败则承受3级力竭，成功则只承受1级。每当你完成一次长休，你可以通灵另一位不同的灵魂，并遣散其他灵魂。你这样做时，可以为它的3项熟练项重新选择不同的技能、工具或语言。",
+				"若某个神秘学者职业特性\"替换\"了一个名称不同的特性，则你以通灵师召唤的灵魂不会获得该特性。从此职业3级起，你每次召唤幽魂时都可以为其选择显迹。"
+			]
+		},
+		{
+			"ENG_name": "Locus Of The Lost",
+			"name": "迷失者之枢",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"在1级时，你选择你所通灵并指挥的迷失灵魂的本质。",
+				"从幽魂职业的同名特性中选择一项{@classFeature 未竟之业|幽魂|JRRTG|1|JRRTG}：职责未竟、恶意未餍、恶戏未驯或不宁之刃。",
+				"你所选择的未竟之业适用于你的{@classFeature 通灵师|神秘学者（幽魂变体）|JRRTG|1|JRRTG}特性召唤的每一名幽魂。如果你的选择允许灵魂学习{@filter 幽魂法术列表|spells|class=幽魂}中的法术，请在获得此特性时以及此后每次获得此职业等级时选择它们。你召唤的每个灵魂都知晓同一份{@filter 幽魂法术|spells|class=幽魂}列表。"
+			]
+		},
+		{
+			"ENG_name": "Personal Ability Score Improvement",
+			"name": "个人属性值提升",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 4,
+			"entries": [
+				"当你到达4级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Personal Ability Score Improvement",
+			"name": "个人属性值提升",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 8,
+			"entries": [
+				"当你到达4级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Superior Medium",
+			"name": "高阶灵媒",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 10,
+			"entries": [
+				"到10级时，你学会通灵的不再只是不安息的亡者，还有生者翻涌的思绪。",
+				"你可以随意施放{@spell 拉瑞心灵联结|PHB}，无需任何成分。以此方式联结的生物在为抗拒{@condition 魅惑}或{@condition 恐慌}而进行的豁免检定上具有优势。只要维持着这份联结，无论你们相距多远，你都可以用你的动作命令一个灵魂。"
+			]
+		},
+		{
+			"ENG_name": "Personal Ability Score Improvement",
+			"name": "个人属性值提升",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 12,
+			"entries": [
+				"当你到达4级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Personal Ability Score Improvement",
+			"name": "个人属性值提升",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 16,
+			"entries": [
+				"当你到达4级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Personal Ability Score Improvement",
+			"name": "个人属性值提升",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 19,
+			"entries": [
+				"当你到达4级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法借助此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Shepherd Of The Lost Souls",
+			"name": "迷失亡魂牧者",
+			"source": "JRRTG",
+			"page": 14,
+			"className": "神秘学者（幽魂变体）",
+			"classSource": "JRRTG",
+			"level": 20,
+			"entries": [
+				"在20级时，你已成为彷徨之灵眼中闪耀的灯塔，能够赐予不安息的亡者以安宁。你的{@classFeature 通灵师|神秘学者（幽魂变体）|JRRTG|1|JRRTG}特性召唤的灵魂无需命令即可采取动作（仍由你决定它们采取哪些动作）。",
+				"此外，你可以尝试让滞留的灵魂安息。以一个动作，你可以安抚一名你能看见、位于你身边5尺内的不死生物，即使该生物身处{@i 以太位面}。自愿的目标会立即被摧毁，使其灵魂（如果有的话）得以前往来世。不自愿的目标则进行一次魅力豁免，DC等于其自身的魅力值：失败则生命值降为0，成功则在24小时内免疫此特性。无法被驱散的不死生物自动成功通过该豁免检定。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Augment",
+			"name": "赋能",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "职责未竟",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"在1级选择此未竟之业时，以及此后每次获得此职业等级时，你都从{@filter 幽魂法术列表|spells|class=幽魂}（印于职业描述末尾）中习得一个自选法术。",
+				{
+					"type": "list",
+					"items": [
+						"你所选的法术环阶不得高于{@filter 幽魂表格|spells|class=幽魂}中你所在等级的{@i 超自然异能}一栏所示数值。",
+						"你只能在附身宿主时施放赋能法术。",
+						"射程为自身的赋能法术影响的是你的宿主而非你。此外，此类法术无论其正常射程为何，都只能以你的宿主为目标。",
+						"赋能法术无需任何成分，且附身一旦结束，所有此类法术立即终止。",
+						"你可以施放赋能法术的次数等于你的熟练加值。",
+						"当你完成一次短休或长休时，你恢复所有已耗用的次数。"
+					]
+				},
+				"此外，当你获得此职业等级时，可以选择一项已知的赋能法术，并用{@filter 幽魂法术列表|spells|class=幽魂}中的另一个法术替换它，该法术的环阶同样不得高于你的{@i 超自然异能}数值。"
+			]
+		},
+		{
+			"ENG_name": "Duty Not Done",
+			"name": "职责未竟",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "职责未竟",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"你致力于推动一项事业、坚守一种美德，或守护一位神圣人物或一处圣地。你那不可思议的魔法护卫并强化你的盟友，期望众人合力完成你独自未能完成之事。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "赋能|幽魂|JRRTG|职责未竟|JRRTG|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Aegis",
+			"name": "神盾",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "职责未竟",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"从6级起，每当你采取鼓舞动作时，你给予的临时生命值等于你的幽魂等级（而非你的魅力调整值）。",
+				"此外，若你的宿主生命值降至0但未被直接杀死，其立即进入伤势稳定状态，随后附身如常结束。"
+			]
+		},
+		{
+			"ENG_name": "Otherworldly Guardian",
+			"name": "异界守护者",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "职责未竟",
+			"subclassSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"从11级起，被你附身的生物永远处于{@spell 防护善恶|PHB}法术的效果之下。"
+			]
+		},
+		{
+			"ENG_name": "Unyielding Protector",
+			"name": "不屈守护者",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "职责未竟",
+			"subclassSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"从17级起，你的赋能法术专注不会因宿主受到伤害而被打破。",
+				"此外，每当你掷先攻时，你恢复赋能特性的一项已耗用次数。"
+			]
+		},
+		{
+			"ENG_name": "Life Drain",
+			"name": "吸取生命",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶意未餍",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"从1级起，当你附身的生物以近战攻击命中时，你可以使该攻击造成额外的暗蚀伤害。额外伤害为若干d8，数目等于{@filter 幽魂表格|spells|class=幽魂}中所示的你的{@i 超自然异能}数值。以这种方式受到伤害的生物在它的下个回合结束前无法恢复生命值。",
+				"你可以使用此特性的次数等于你的魅力调整值（至少为1次）。当你完成一次短休或长休时，你恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Malefic Possession",
+			"name": "邪祟附身",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶意未餍",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"从你在1级选择此未竟之业起，你可以对不自愿的生物使用{@classFeature 附身|幽魂|JRRTG|1|JRRTG}能力。不自愿的目标可以是除不死生物外的任意生物种类，并可以进行一次魅力豁免以抗拒此效应。若其豁免成功，附身失败，你仍留在尝试之前所在的位置。",
+				"不自愿的宿主不会获得你的{@classFeature 附身|幽魂|JRRTG|1|JRRTG}能力的任何益处。附身不自愿的宿主时，你获得以下动作选项：",
+				{
+					"type": "list",
+					"items": [
+						"{@i 呓语}：以一个动作，你强迫宿主进行一次体质豁免。若其失败，其法术专注被打断，且在你的下个回合开始前只能胡言乱语。",
+						"{@i 疯狂低语}：以一个动作，你强迫宿主进行一次感知豁免。若其失败，其攻击检定在你的下个回合开始前具有劣势。",
+						"{@i 夺取控制}：以一个动作，你强迫宿主进行一次魅力豁免。若其失败，其表现得如同受到困惑术影响一般，直到其下个回合结束。附身结束前，你无法再次使用夺取控制。"
+					]
+				},
+				"不自愿的宿主可以用它的动作进行一次魅力豁免。若其成功，附身结束。若宿主前往另一位面，附身同样结束，而你被留在原地。一旦一次不自愿附身结束，或目标在初始豁免中成功，你必须完成一次长休后才能再次附身该生物。",
+				"当一次不自愿附身结束时，你可以用你的反应附身一名你身边30尺内的自愿类人生物。"
+			]
+		},
+		{
+			"ENG_name": "Malice Unsated",
+			"name": "恶意未餍",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶意未餍",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"你对复仇的胃口从未得到满足，你奋力加害于仇敌、在亏待过你的组织中大肆破坏，或以牙还牙地报复一次冒犯。你如同操纵傀儡般役使宿主来达成目标\u2014\u2014没有凡人相助，你便无法推行自己的图谋。你的{@i 超自然异能}能让敌人自相残杀，并将倒下者复活为卒子，供你在可憎的棋局中驱使。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "邪祟附身|幽魂|JRRTG|恶意未餍|JRRTG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "吸取生命|幽魂|JRRTG|恶意未餍|JRRTG|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Grim Puppeteer",
+			"name": "冷酷操偶师",
+			"source": "JRRTG",
+			"page": 7,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶意未餍",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"从6级起，你可以附身被杀者的尸体。未附身宿主时，你可以用你的动作隐入一具你能看见、位于你身边5尺内的完好尸体。该尸体必须为大型或更小，且属于野兽或类人生物。此时你实际上就是被附身的生物，它不会获得你的{@classFeature 附身|幽魂|JRRTG|1|JRRTG}能力的任何益处。其种类变为不死生物，但外表看来如同活物，并获得若干临时生命值，数值等于你的生命值上限。",
+				"附身尸体期间，你保留自己的阵营、智力、感知、魅力以及毒素免疫。其余方面你使用被附身目标的游戏数据，能运用其熟练项，但无法运用其职业特性（如果有的话）。",
+				"附身持续至临时生命值消失（届时躯体重新变回尸体）或你以一个附赠动作结束它。附身结束时，你重新出现在尸体周围5尺内一处未被占据的空间。",
+				"一旦你使用了这个特性，你必须完成一次长休后才能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Domineering Will",
+			"name": "威压意志",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶意未餍",
+			"subclassSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"到11级时，你已强大到足以完全掌控不自愿的宿主。附身一头不自愿的野兽或类人生物时，你获得以下动作选项：",
+				{
+					"type": "list",
+					"items": [
+						"{@i 压制}：以一个动作，你强迫宿主进行一次魅力豁免。若其成功，附身结束。若其失败，其陷入失能，而你彻底接管其身体，直到附身结束。在你的回合，你可以放弃自己的移动和动作来操纵宿主。你这样做时，可以立即使其移动并采取与其游戏数据相称的动作。你无法运用目标的知识，也无法运用其职业特性（如果有的话）。"
+					]
+				},
+				"一旦有生物在此效应的豁免检定中失败，你必须完成一次长休后才能再次使用{@i 压制}。"
+			]
+		},
+		{
+			"ENG_name": "Undying Hate",
+			"name": "不灭憎恨",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶意未餍",
+			"subclassSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"从17级起，每当你掷先攻时，你恢复吸取生命特性的所有已耗用次数。",
+				"此外，任何被你的吸取生命伤害的生物，其生命值上限也减少相同的数值。该减少持续到该生物完成一次长休为止。若此效果使其生命值上限降为0，目标即死亡。"
+			]
+		},
+		{
+			"ENG_name": "Mischief Not Managed",
+			"name": "恶戏未驯",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶戏未驯",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"游荡于两界之间的，并非尽是阴沉的死灵与忧郁的幻影。你滞留人间，是为了再体验一次刺激、再干一票大买卖，或是取悦一位你生前未能好好陪伴的挚爱。怀揣亡者中罕见的幽默感，你将盟友与宿主视为你超自然恶作剧里的共犯。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "缜密之魂|幽魂|JRRTG|恶戏未驯|JRRTG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "骚灵|幽魂|JRRTG|恶戏未驯|JRRTG|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Poltergeist",
+			"name": "骚灵",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶戏未驯",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"从1级起，你可以随意施放{@spell 弹射术|XGE}和{@spell 法师之手|PHB}，无需任何成分。以此方式施放时，{@i 法师之手|PHB}产生的手是{@condition 隐形}的，而弹射术的伤害骰改为若干{@dice 1d8}，数目等于{@filter 幽魂表格|spells|class=幽魂}中所示的你的{@i 超自然异能}数值。"
+			]
+		},
+		{
+			"ENG_name": "Soul Of Discretion",
+			"name": "缜密之魂",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶戏未驯",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"skillProficiencies": [
+				{
+					"stealth": true
+				}
+			],
+			"entries": [
+				"在1级选择此未竟之业时，你获得隐匿技能的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Beck And Call",
+			"name": "听候差遣",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶戏未驯",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得巧手技能的熟练项（熟练项的益处见{@classFeature 附身|幽魂|JRRTG|1|JRRTG}）。",
+				"此外，当你施放法师之手时，你可以用它执行以下额外任务：",
+				{
+					"type": "list",
+					"items": [
+						"你可以传递一个幽灵手持握的物件到其他生物携带或着装的容器中。",
+						"你可以取回一个其他生物携带或着装容器内的物件。"
+					]
+				},
+				"若你在一次对抗该生物感知（察觉）检定的敏捷（巧手）检定中获胜，你可以在不被该生物察觉的情况下执行其中一项任务。"
+			]
+		},
+		{
+			"ENG_name": "Dance Of The Departed",
+			"name": "亡者之舞",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶戏未驯",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"从6级起，你可以施放{@spell 活化物件|PHB}，无需任何成分。以此方式施放时，你可以活化的物件数目等于你的{@i 超自然异能}数值（而非十件），如幽魂表格中所示。",
+				"一旦以此方式施放{@spell 活化物件|PHB}，你必须完成一次短休或长休后才能再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Subtle Possession",
+			"name": "潜隐附身",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶戏未驯",
+			"subclassSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"从11级起，你可以对不自愿的生物使用你的{@classFeature 附身|幽魂|JRRTG|1|JRRTG}能力。不自愿的目标可以是除不死生物外的任意生物种类，并可以进行一次魅力豁免以抗拒此效应。若其豁免成功，附身失败，你仍留在尝试之前所在的位置。无论成败，目标必须通过一次对抗你幽魂豁免DC的感知（洞悉）检定，才能察觉有什么不对劲。",
+				"不自愿的宿主不会获得你的{@classFeature 附身|幽魂|JRRTG|1|JRRTG}能力的任何益处。附身不自愿的宿主时，你获得以下动作选项：",
+				{
+					"type": "list",
+					"items": [
+						"{@i 迷惑}：你可以施放魅影之力，无需任何成分。以此方式施放时，该法术只以你的宿主为目标，且附身提前结束时法术也随之终止。附身结束前，你无法再次使用迷惑。",
+						"{@i 呓语}：以一个动作，你强迫宿主进行一次体质豁免。若其失败，其法术专注被打断，且在你的下个回合开始前只能胡言乱语。",
+						"{@i 窃取思想}：你可以施放侦测思想，无需任何成分。以此方式施放时，该法术只侦测你的宿主，且附身提前结束时法术也随之终止。"
+					]
+				},
+				"毫无察觉的宿主可以用它的动作重复那次洞悉检定，成功便可推断出你的存在。若你强迫宿主进行豁免检定，宿主会自动察觉到你。发觉你存在的不自愿宿主可以用它的动作进行一次魅力豁免。若其成功，附身结束。若宿主前往另一位面，附身同样结束，而你被留在原地。",
+				"一旦一次不自愿附身结束，或目标在初始豁免中成功，你必须完成一次长休后才能再次附身该生物。当一次不自愿附身结束时，你可以用你的反应附身一名你身边30尺内的自愿类人生物。"
+			]
+		},
+		{
+			"ENG_name": "The Show Goes On",
+			"name": "好戏继续",
+			"source": "JRRTG",
+			"page": 8,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "恶戏未驯",
+			"subclassSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"从17级起，每当你掷先攻时，若你的{@subclassFeature 亡者之舞|幽魂|JRRTG|恶戏未驯|JRRTG|6}特性已耗用，你立即恢复其使用次数。",
+				"此外，你可以施放心灵遥控，无需任何成分。一旦以此方式施放该法术，你必须完成一次短休或长休后才能再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Ephemeral Shield",
+			"name": "须臾之盾",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "不宁之刃",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"从1级起，当你附身的生物受到伤害且该伤害低于你当前的生命值时，你可以将这一击吸入你的虚幻形态，改由自己承受该伤害。宿主的抗性和免疫如常适用，但你受到的伤害无法以任何方式减少。伤害来源附带的其他效应仍如常作用于宿主。"
+			]
+		},
+		{
+			"ENG_name": "One With Blade",
+			"name": "人剑合一",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "不宁之刃",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"weaponProficiencies": [
+				{
+					"martial": true,
+					"simple": true
+				}
+			],
+			"entries": [
+				"在1级选择此未竟之业时，你获得简易武器和军用武器的熟练项（武器熟练的益处见{@classFeature 附身|幽魂|JRRTG|1|JRRTG}）。",
+				"此外，每当你采取{@i 协调}动作时，你赋予优势的那次攻击造成额外伤害。额外伤害为若干{@dice 1d8}，数目等于幽魂表格中所示的你的{@i 超自然异能}数值。伤害类型与该攻击相同。"
+			]
+		},
+		{
+			"ENG_name": "Restless Blade",
+			"name": "不宁之刃",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "不宁之刃",
+			"subclassSource": "JRRTG",
+			"level": 1,
+			"entries": [
+				"对某些人而言，战死沙场是至高的荣誉或最后的耻辱；对另一些人而言，那是无尽纷争之路的第一步。你立志培养一位传人、将一门武艺臻至完美，或战胜一头生前无法战胜的怪物，但没有能持剑的手，你的技艺便无处施展。你指望盟友与宿主来追寻你的目标，在引导和守护他们的同时，分享他们的荣耀。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "人剑合一|幽魂|JRRTG|不宁之刃|JRRTG|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "须臾之盾|幽魂|JRRTG|不宁之刃|JRRTG|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Phantasmal Warrior",
+			"name": "幻影武士",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "不宁之刃",
+			"subclassSource": "JRRTG",
+			"level": 6,
+			"entries": [
+				"从6级起，你学会了以能量环绕自身，使你能在有限时间内影响周围的世界。这样做需要一个附赠动作，且如果你正附身宿主，会立即结束附身。",
+				"在1分钟内，你获得等于你生命值上限的临时生命值。持有这些生命值期间，你可以进行攻击，且每当你在你的回合采取攻击动作时，可以攻击两次而非一次。只要这些生命值还有剩余，你的AC便不会低于16，你也能如常与物件和装备互动。",
+				"在此状态下，你的徒手打击造成力场伤害，体现为幻影之刃、挥扫的利爪，或你虚体外貌的其他特征。你可以掷若干d6取代徒手打击的正常伤害骰，数目等于幽魂表格中所示的超自然异能数值。",
+				"1分钟结束后，或当最后的临时生命值消失而你仍清醒时，你可以用你的反应附身一名你身边30尺内的自愿类人生物。",
+				"你必须完成一次短休或长休才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "Otherworldly Champion",
+			"name": "异界斗士",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "不宁之刃",
+			"subclassSource": "JRRTG",
+			"level": 11,
+			"entries": [
+				"从11级起，你可以延展你的幻影存在，将其笼罩宿主，为他们的攻击注入力量，如铠甲般将他们裹入你噼啪作响的灵光之中。",
+				"附身生物期间，你可以施放{@spell 谭森变形术|XGE}，无需任何成分。以此方式施放时，该法术影响的是你的宿主而非你，且附身提前结束时法术也随之终止。一旦以此方式施放谭森变形术，你必须完成一次长休后才能再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Deathless Defiance",
+			"name": "不死抗争",
+			"source": "JRRTG",
+			"page": 9,
+			"className": "幽魂",
+			"classSource": "JRRTG",
+			"subclassShortName": "不宁之刃",
+			"subclassSource": "JRRTG",
+			"level": 17,
+			"entries": [
+				"到17级时，已无任何手段能阻挡你不朽的怒火。每当你掷先攻时，若你的{@subclassFeature 幻影武士|幽魂|JRRTG|不宁之刃|JRRTG|6}特性已耗用，你立即恢复其使用次数。",
+				"此外，处于幻影状态期间，你免疫{@condition 魅惑}和{@condition 恐慌}状态。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Chill Of The Grave",
+			"name": "彻骨冻寒",
+			"source": "JRRTG",
+			"page": 9,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						},
+						"subclass": {
+							"ENG_name": "Malice Unsated",
+							"name": "恶意未餍"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature 恶意未餍|幽魂|JRRTG|恶意未餍|JRRTG|1|} 未竟之业",
+						"entrySummary": "恶意未餍"
+					}
+				},
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						},
+						"subclass": {
+							"ENG_name": "Mischief Not Managed",
+							"name": "恶戏未驯"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@subclassFeature 恶戏未驯|幽魂|JRRTG|恶戏未驯|JRRTG|1|} 未竟之业",
+						"entrySummary": "恶戏未驯"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"定身怪物|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"附身生物期间，你可以施放{@spell 定身怪物|PHB}，只以你的宿主为目标。以此方式施放时，该法术无需任何成分，且附身提前结束时法术也随之终止。",
+				"一旦以此方式施放{@spell 定身怪物|PHB}，你必须完成一次短休或长休后才能再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Cloak Of Sorrows",
+			"name": "悲恸斗篷",
+			"source": "JRRTG",
+			"page": 9,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"entries": [
+				"若你的宿主持有来自你的{@i 鼓舞}动作的临时生命值时，某生物以近战攻击命中你的宿主，该生物受到{@damage 1d6}点心灵伤害，骰数等于幽魂表格中所示的你的{@i 超自然异能}数值。"
+			]
+		},
+		{
+			"ENG_name": "Ghostly Flicker",
+			"name": "幽魂闪现",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"will": [
+								"剑刃防护|phb"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"附身宿主期间，你可以随意施放{@spell 剑刃防护|PHB}，无需任何成分。以此方式施放时，该法术影响的是你的宿主而非你，且附身提前结束时法术也随之终止。"
+			]
+		},
+		{
+			"ENG_name": "Haunting Guise",
+			"name": "阴森之貌",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"entries": [
+				"以一个动作，你可以短暂显露出骇人的外貌。你身边30尺内、能看见你或你正附身之生物的每个非不死生物，必须成功通过一次感知豁免，否则对你{@condition 恐慌}1分钟。{@condition 恐慌}的目标可以在其每个回合结束时重复该豁免检定；若其位于你身边30尺内，则该检定具有劣势；成功则为自己结束此效应。你的宿主（如果有的话）免疫此效应，而受影响的生物会将宿主视为恐惧的来源。",
+				"你必须完成一次短休或长休才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "Keening Wail",
+			"name": "恸哭哀号",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"entries": [
+				"以一个动作，你可以发出一声萦绕人心的哀号。你身边10尺内能听见你的生物必须进行一次体质豁免。失败的生物受到{@damage 2d6}点心灵伤害，并在你的下个回合结束前其豁免检定具有劣势。你的宿主（如果有的话）不受影响。",
+				"一旦你使用了此特性，在你掷先攻之前无法再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Knot In The Weave",
+			"name": "魔网之结",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"entries": [
+				"附身施法者期间，你可以用你的动作补充其部分已消耗的法术位。你这样做时，你的宿主可以选择恢复若干法术位，其环阶合计不超过你幽魂等级的一半（向上取整）。恢复的法术位均不得为6环或更高。一旦你使用了此特性，你必须完成一次长休后才能再次使用。",
+				"举例来说，若你是4级幽魂，你的宿主最多可以恢复合计两环的法术位：可以恢复一个2环法术位，或两个1环法术位。"
+			]
+		},
+		{
+			"ENG_name": "Knowledge From Beyond",
+			"name": "界外之识",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"预言术|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施放{@spell 预言术|PHB}，无需任何成分，从彼界之灵处探得答案。以此方式施放该法术后，你可以选择一项技能、工具或语言。接下来的10分钟内，你与你附身的任何生物都具有所选技能、工具或语言的熟练项。",
+				"一旦以此方式施放预言术，你必须完成一次长休后才能再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Knowledge From Within",
+			"name": "内在之识",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"entries": [
+				"半脚踏入彼界，让你得以汲取远超你年岁的经验。你可以将你的{@i 魅力调整值加到你进行的任何奥秘、自然、历史或宗教}检定的结果中。"
+			]
+		},
+		{
+			"ENG_name": "One With The Mist",
+			"name": "与雾合一",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"隐形术|phb",
+							"气化形体|phb",
+							"迷踪步|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"附身生物期间，你可以施放{@spell 隐形术|PHB}或{@spell 气化形体|PHB}，只以你的宿主为目标。这些法术在附身提前结束时随之终止。或者，在未附身生物时，你可以施放{@spell 迷踪步|PHB}。以此方式施放时，这些法术均无需任何成分。",
+				"使用此显迹一次后，你必须完成一次短休或长休后才能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Otherworldly Spark",
+			"name": "异界火花",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"元素武器|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"附身自愿生物期间，你的宿主以非魔法武器进行的攻击视为魔法攻击。",
+				"此外，你可以施放{@spell 元素武器|PHB}，无需任何成分，以你的宿主穿戴或携带的一件武器为目标。附身提前结束时，该法术随之终止。",
+				"一旦以此方式施放{@spell 元素武器|PHB}，你必须完成一次长休后才能再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Phantasmal Strike",
+			"name": "幻影打击",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"will": [
+								"灵体武器|phb"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"无论是幽灵之刃、攫取的触须还是耙抓的利爪，你都已精通用以袭击敌人的{@filter 显迹|optionalfeatures|feature type=OF:JRRTG}。你可以随意施放{@spell 灵体武器|PHB}，无需任何成分，且尽管身处灵体形态，也能以它进行攻击。"
+			]
+		},
+		{
+			"ENG_name": "Spectral Affinity",
+			"name": "灵体亲和",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"entries": [
+				"你可以花费1小时，将你身边5尺内的一件魔法物品引入边界以太。随后该物品消失，或是被纳入你的虚幻形态。",
+				"此后，你被视为如常地挥持、穿戴或携带该物品。若符合条件，你可以在此过程中与该物品同调。你无法以此方式影响神器或有知觉的物品，且同一时间最多与3件魔法物品结缚。若你死亡，或你以一个动作解除与该物品的结缚，该物品会出现在你脚边。"
+			]
+		},
+		{
+			"ENG_name": "Spirit Sight",
+			"name": "灵魂视界",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"通晓语言|phb",
+							"侦测善恶|phb",
+							"侦测魔法|phb",
+							"物件定位术|phb",
+							"识破隐形|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施放{@spell 通晓语言|PHB}、{@spell 侦测善恶|PHB}、{@spell 侦测魔法|PHB}、{@spell 物件定位术|PHB}和{@spell 识破隐形|PHB}，无需任何成分。你施放这些法术的总次数等于你的魅力调整值（至少为1次），并在完成一次长休后恢复所有已耗用的次数。",
+				"附身生物期间，你与你的宿主共享这些法术给予的益处。"
+			]
+		},
+		{
+			"ENG_name": "Tear In The Veil",
+			"name": "帷幕裂隙",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							"以太化|phb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施放{@spell 以太化|PHB}，无需任何成分，以你自己、你的宿主（如果有的话）以及你身边10尺内至多三个自愿生物为目标。",
+				"一旦以此方式施放{@spell 以太化|PHB}，你必须完成一次长休后才能再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Voice Of The Departed",
+			"name": "亡者之声",
+			"source": "JRRTG",
+			"page": 10,
+			"featureType": [
+				"OF:JRRTG"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Ghost",
+							"name": "幽魂"
+						}
+					},
+					"otherSummary": {
+						"entry": "{@classFeature 显迹|幽魂|JRRTG|1|JRRTG}特性",
+						"entrySummary": "显迹"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"will": [
+								"死者交谈|phb"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"在未附身生物时，你可以随意施放{@spell 死者交谈|PHB}。以此方式施放时，该法术无需材料成分，射程为触及。",
+				"此外，你自动知晓尸体何时说谎（尽管你没有强迫它说出真相的能力）。"
+			]
+		}
+	]
+}
