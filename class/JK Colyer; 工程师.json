@@ -1,0 +1,4264 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BombsGadgetsGuns",
+				"abbreviation": "BoGaGu",
+				"full": "工程师：炸弹、装置与枪械",
+				"url": "https://drive.google.com/file/d/1pHQaZY39rDouJIP-BPIddHU_FdI0HLQW/view",
+				"version": "1.0",
+				"authors": [
+					"J.K. Colyer"
+				],
+				"convertedBy": [
+					"octahedralC"
+				],
+				"targetSchema": "1.5.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"EG": "工程师装置"
+		},
+		"edition": "classic",
+		"dateAdded": 1616455102,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "4f40658c6d"
+	},
+	"class": [
+		{
+			"ENG_name": "Engineer",
+			"name": "工程师",
+			"source": "BombsGadgetsGuns",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"perception",
+								"sleight of hand"
+							],
+							"count": 4
+						}
+					}
+				],
+				"weapons": [
+					"简易"
+				],
+				"tools": [
+					"修补工具"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"{@item 皮甲|phb}和一套{@item 机械师服装|BombsGadgetsGuns}",
+					"一把{@filter 简易近战武器|items|source=phb|category=基础|type=简易武器;近战武器=sand}",
+					"(a) 一个{@item 探索套组|phb} 或 (b) 一个{@item 学者套组|phb}",
+					"(a) 一把{@item 轻弩|phb}和{@item 弩矢(20)|phb|20支弩矢}，或 (b) 一把{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"修补工具"
+				],
+				"goldAlternative": "{@dice 5d4×10|5d4 × 10|起始金币}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"history",
+									"insight",
+									"investigation",
+									"medicine",
+									"perception",
+									"sleight of hand"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"修补工具"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"已知设计图"
+					],
+					"rows": [
+						[
+							8
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							19
+						],
+						[
+							21
+						],
+						[
+							23
+						],
+						[
+							24
+						],
+						[
+							26
+						],
+						[
+							27
+						],
+						[
+							28
+						],
+						[
+							29
+						],
+						[
+							30
+						],
+						[
+							31
+						],
+						[
+							33
+						]
+					]
+				},
+				{
+					"title": "各复杂度的装置槽位",
+					"colLabels": [
+						"琐碎",
+						"简易",
+						"高级",
+						"精密"
+					],
+					"rows": [
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							5,
+							3,
+							0,
+							0
+						],
+						[
+							5,
+							4,
+							0,
+							0
+						],
+						[
+							5,
+							4,
+							0,
+							0
+						],
+						[
+							5,
+							4,
+							1,
+							0
+						],
+						[
+							5,
+							5,
+							2,
+							0
+						],
+						[
+							6,
+							5,
+							2,
+							0
+						],
+						[
+							6,
+							5,
+							3,
+							0
+						],
+						[
+							6,
+							5,
+							3,
+							0
+						],
+						[
+							6,
+							5,
+							3,
+							0
+						],
+						[
+							6,
+							6,
+							4,
+							0
+						],
+						[
+							6,
+							6,
+							4,
+							0
+						],
+						[
+							6,
+							6,
+							4,
+							1
+						],
+						[
+							6,
+							6,
+							5,
+							1
+						],
+						[
+							6,
+							6,
+							5,
+							2
+						],
+						[
+							6,
+							6,
+							5,
+							2
+						],
+						[
+							6,
+							6,
+							5,
+							3
+						],
+						[
+							6,
+							6,
+							5,
+							3
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"装置使用|工程师|BombsGadgetsGuns|1",
+				"机械天赋|工程师|BombsGadgetsGuns|1",
+				"专精|工程师|BombsGadgetsGuns|2",
+				"工艺大师|工程师|BombsGadgetsGuns|2",
+				"废料场英雄|工程师|BombsGadgetsGuns|3",
+				{
+					"classFeature": "分支学科|工程师|BombsGadgetsGuns|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|工程师|BombsGadgetsGuns|4",
+				"快速启动|工程师|BombsGadgetsGuns|5",
+				"魔力驱动攻击|工程师|BombsGadgetsGuns|6",
+				{
+					"classFeature": "分支学科特性|工程师|BombsGadgetsGuns|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|工程师|BombsGadgetsGuns|8",
+				"快速重构|工程师|BombsGadgetsGuns|9",
+				{
+					"classFeature": "分支学科特性|工程师|BombsGadgetsGuns|10",
+					"gainSubclassFeature": true
+				},
+				"学术素养|工程师|BombsGadgetsGuns|11",
+				"属性值提升|工程师|BombsGadgetsGuns|12",
+				"快速重构（5）|工程师|BombsGadgetsGuns|13",
+				{
+					"classFeature": "分支学科特性|工程师|BombsGadgetsGuns|14",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|工程师|BombsGadgetsGuns|16",
+				"快速重构（7）|工程师|BombsGadgetsGuns|17",
+				"不屈心智|工程师|BombsGadgetsGuns|18",
+				"属性值提升|工程师|BombsGadgetsGuns|19",
+				"机械精通|工程师|BombsGadgetsGuns|20"
+			],
+			"subclassTitle": "分支学科",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Engineer",
+			"name": "工程师",
+			"source": "BombsGadgetsGuns",
+			"entries": [
+				{
+					"entries": [
+						"一枚小小的圆形物体从上方的岩架坠入洞穴，落在兽人族长脚边。兽人还没来得及弄清那是什么，它便炸开了，向他四周喷出黑烟。透过烟雾，兽人隐约看见一道黑影从上方的岩架滑翔而下。黑影落地，从腰带上抽出一个小金属物甩向族长。那物体在飞行中展开，化作一条由锋利的连锁链环编成的长鞭。兽人完全不是这道旋风般黑影的对手。族长倒下之际，黑影手腕一抖，那件武器又悄无声息地安然收回她的腰带上。好了，该去找那批宝藏了......",
+						"侏儒把护目镜拉下油腻的头发罩住眼睛，按下手甲背面的按钮。巨型紫虫贪婪地张开巨口朝他猛扑下来，他能感到那灼热刺鼻的气息。蒸汽从他靴子后侧的喷口中射出。他行头上的扳手和齿轮叮当作响，他被一股爆发的高速推着向前，安全地脱离了巨兽的掌握。他转身面向那头沙色巨兽，又敲了一下腕上的按钮，一道明亮的绿色能量射线从他指尖的发射器中射出。射线命中之处，紫虫痛吼起来。",
+						"一个风尘仆仆的半精灵拐进小巷，试图甩掉身后追来的一伙强盗，他摸了摸腰间手枪的枪柄。冰冷的金属让他心安，但他知道除了强大的火力之外，自己袖子里还真藏着几手花招。小巷的尽头是一堵高高的石墙\u2014\u2014死路一条！强盗们转过街角逼近，笃定他无路可逃。铳士在强盗靠近时扳动腰带上的一个操纵杆。电光石火间，他消失了。暴徒们僵在原地，一脸茫然，不知猎物去了哪里。身后传来枪械上膛的声音\u2014\u2014那是他们听到的最后声响。",
+						"尽管动机与战术各异，这些工程师都凭借高超的机械与科技技艺，扫清横亘在自己与目标之间的重重障碍。他们的足智多谋让自己得以发明并制作各种装置，借以增强自身能力、弥补自身短板。",
+						{
+							"type": "section",
+							"entries": [
+								{
+									"ENG_name": "Applied Sciences",
+									"type": "entries",
+									"name": "应用科学",
+									"entries": [
+										"并非每位学者或发明家都具备成为工程师所需的技能。工程师不仅是科学的学生，更是将科学原理转化为能在现实世界中实际应用的新技术的大师。",
+										"大多数工程师受过一些教育，不过对许多人而言，这种教育来自多年的实验与摆弄，而非正规学习。一位工程师可能是志同道合的工匠公会的成员，但更可能只是一个天资擅长摆弄机械、无师自通的独行侠。",
+										"工程师什么都懂一点。无论面对什么挑战，他们都能发明、制作并改装自己的装置，让它们成为解决问题的称手工具。"
+									]
+								},
+								{
+									"ENG_name": "Mechanical Affinity",
+									"type": "entries",
+									"name": "机械亲和",
+									"entries": [
+										"很少有工程师来自未开化之地，但这并不意味着他们在社交场合游刃有余。事实上，大多数工程师都觉得机械装置比人更容易理解。发条装置和蒸汽机可比普通人要好预测无数倍。因此，工程师有时显得冷漠或笨拙，有些甚至相当难以相处。"
+									]
+								},
+								{
+									"ENG_name": "Creating an Engineer",
+									"type": "entries",
+									"name": "创建工程师",
+									"entries": [
+										"创建工程师时，想一想你的角色是如何学会操作机械所需技能的。他们是自学成才？还是受教于某个公会或工程师团体？也许他们来自像矮人和侏儒那样此类技能司空见惯的文化。又或许他们只是通过反复实验自己摸索了出来。",
+										{
+											"ENG_name": "Quick Build",
+											"type": "entries",
+											"name": "快速建卡",
+											"entries": [
+												"你可以按照以下建议快速创建一名工程师。第一，智力应是你最高的属性值，其次是敏捷。第二，选择公会工匠背景。选择{@optfeature 灭火器|BombsGadgetsGuns}、{@optfeature 擒抱枪|BombsGadgetsGuns}、{@optfeature 头灯|BombsGadgetsGuns}、{@optfeature 伸缩高跷|BombsGadgetsGuns}和{@optfeature 后视镜|BombsGadgetsGuns}作为你的琐碎复杂度装置设计图，以及{@optfeature 降落伞斗篷|BombsGadgetsGuns}、{@optfeature 蒸汽喷雾|BombsGadgetsGuns}和{@optfeature 电击手套|BombsGadgetsGuns}作为你的简易复杂度设计图。"
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"page": 25,
+					"source": "BombsGadgetsGuns",
+					"type": "entries"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Demolitions",
+			"name": "爆破",
+			"shortName": "爆破",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Demolitions",
+							"name": "爆破",
+							"source": "BombsGadgetsGuns"
+						}
+					],
+					"colLabels": [
+						"伤害（溅射）",
+						"已知滴答弹类型"
+					],
+					"rows": [
+						[
+							"",
+							""
+						],
+						[
+							"",
+							""
+						],
+						[
+							"2d4（1d4）",
+							"毒气、燃烧弹"
+						],
+						[
+							"2d4（1d4）",
+							""
+						],
+						[
+							"2d6（1d6）",
+							""
+						],
+						[
+							"2d6（1d6）",
+							""
+						],
+						[
+							"2d6（1d6）",
+							"破片、寒霜"
+						],
+						[
+							"2d8（1d8）",
+							""
+						],
+						[
+							"2d8（1d8）",
+							""
+						],
+						[
+							"2d8（1d8）",
+							"震击"
+						],
+						[
+							"3d6（2d6）",
+							""
+						],
+						[
+							"3d6（2d6）",
+							""
+						],
+						[
+							"3d6（2d6）",
+							""
+						],
+						[
+							"3d8（2d8）",
+							"腐蚀、热能"
+						],
+						[
+							"3d8（2d8）",
+							""
+						],
+						[
+							"3d8（2d8）",
+							""
+						],
+						[
+							"3d10（2d10）",
+							""
+						],
+						[
+							"3d10（2d10）",
+							""
+						],
+						[
+							"3d10（2d10）",
+							""
+						],
+						[
+							"4d10（3d10）",
+							""
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"爆破|工程师|BombsGadgetsGuns|爆破|BombsGadgetsGuns|3",
+				"附赠装置|工程师|BombsGadgetsGuns|爆破|BombsGadgetsGuns|7",
+				"落点掌控|工程师|BombsGadgetsGuns|爆破|BombsGadgetsGuns|7",
+				"反射闪避|工程师|BombsGadgetsGuns|爆破|BombsGadgetsGuns|10",
+				"烈性过载|工程师|BombsGadgetsGuns|爆破|BombsGadgetsGuns|14"
+			]
+		},
+		{
+			"ENG_name": "Kinetics",
+			"name": "动力学",
+			"shortName": "动力学",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassFeatures": [
+				"动力学|工程师|BombsGadgetsGuns|动力学|BombsGadgetsGuns|3",
+				"战斗风格：箭术|工程师|BombsGadgetsGuns|动力学|BombsGadgetsGuns|7",
+				"直觉闪避|工程师|BombsGadgetsGuns|动力学|BombsGadgetsGuns|10",
+				"多重攻击|工程师|BombsGadgetsGuns|动力学|BombsGadgetsGuns|14"
+			]
+		},
+		{
+			"ENG_name": "Technomancy",
+			"name": "技术奇术",
+			"shortName": "技术奇术",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Technomancy",
+							"name": "技术奇术",
+							"source": "BombsGadgetsGuns"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|class=法师}",
+						"{@filter 已知法术|spells|class=法师}",
+						"法术位",
+						"法术位环阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							1,
+							"1环"
+						],
+						[
+							2,
+							3,
+							2,
+							"1环"
+						],
+						[
+							2,
+							3,
+							2,
+							"1环"
+						],
+						[
+							2,
+							4,
+							2,
+							"1环"
+						],
+						[
+							2,
+							4,
+							2,
+							"2环"
+						],
+						[
+							2,
+							5,
+							2,
+							"2环"
+						],
+						[
+							2,
+							5,
+							2,
+							"2环"
+						],
+						[
+							3,
+							6,
+							2,
+							"2环"
+						],
+						[
+							3,
+							6,
+							2,
+							"2环"
+						],
+						[
+							3,
+							7,
+							2,
+							"2环"
+						],
+						[
+							3,
+							7,
+							3,
+							"3环"
+						],
+						[
+							3,
+							8,
+							3,
+							"3环"
+						],
+						[
+							3,
+							8,
+							3,
+							"3环"
+						],
+						[
+							3,
+							9,
+							3,
+							"3环"
+						],
+						[
+							3,
+							9,
+							3,
+							"3环"
+						],
+						[
+							3,
+							10,
+							3,
+							"3环"
+						],
+						[
+							3,
+							10,
+							4,
+							"4环"
+						],
+						[
+							3,
+							11,
+							4,
+							"4环"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"技术奇术|工程师|BombsGadgetsGuns|技术奇术|BombsGadgetsGuns|3",
+				"发条伙伴|工程师|BombsGadgetsGuns|技术奇术|BombsGadgetsGuns|7",
+				"发条强化|工程师|BombsGadgetsGuns|技术奇术|BombsGadgetsGuns|10",
+				"使用魔法装置|工程师|BombsGadgetsGuns|技术奇术|BombsGadgetsGuns|14"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Gadget Use",
+			"name": "装置使用",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 1,
+			"entries": [
+				"你擅长制作具有各种功能的机械装置，并将它们整合进你的衣物、护甲、武器和其他装备中。",
+				{
+					"ENG_name": "Gadget Schematics",
+					"type": "entries",
+					"name": "装置设计图",
+					"entries": [
+						"装置依照{@filter 设计图|optionalfeatures|feature type=EG}来制作，设计图展示了装置的设计参数和预期的运作方式。每张设计图都有一个复杂度等级，分为琐碎、简易、高级或精密。",
+						"你从本补充材料第二部分给出的{@filter 装置设计图|optionalfeatures|feature type=EG}列表中自选5张琐碎设计图和3张简易设计图。工程师表的\"已知设计图\"栏显示了你在何时学到更多设计图。此外，每当你在工程师职业中获得一个等级，你可以从已知设计图中选择一张，用设计图列表中的另一张设计图替换它。你学习的任何新设计图，其复杂度等级都必须是你能够装备的。",
+						"学习一张设计图并将其转化为可用的装置，需要花费一定金钱和时间，具体取决于复杂度等级。这些花费包括制作装置所需的零件与组件，以及为完善装置运作而进行原型制作、测试和排障所耗的时间。学习新设计图所需的花费与时间如下：",
+						{
+							"type": "table",
+							"caption": "学习新装置的花费",
+							"colLabels": [
+								"等级",
+								"学习花费",
+								"学习时间"
+							],
+							"colStyles": [
+								"col-3",
+								"col-3",
+								"col-6"
+							],
+							"rows": [
+								[
+									"琐碎",
+									"10金币",
+									"1小时"
+								],
+								[
+									"简易",
+									"50金币",
+									"2小时"
+								],
+								[
+									"高级",
+									"250金币",
+									"8小时"
+								],
+								[
+									"精密",
+									"1,250金币",
+									"40小时"
+								]
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Equipped Gadgets",
+					"type": "entries",
+					"name": "已装备装置",
+					"entries": [
+						"要让装置保持可用状态，需要投入时间和精力进行制作与维护：必须进行修理和预防性保养，比如给链轮上油、给发条上劲、补充冷却液、给电容充电等。因此，同一时间你只能维持数量有限的已装备装置，如工程师表所示。随着等级提升，你在制作和维护这些装置方面越发熟练，同一时间能让更多装置保持可用。",
+						"每件已装备的装置都依照设计图说明，整合进你的一件衣物或装备中。使用不同设计图的多件装置可以各自整合进同一件装备。每件已装备的装置都会使其所整合的物品重量增加2磅。",
+						"你从已知设计图列表中准备你的已装备装置列表，数量上限如工程师表所示。要装备一件装置，你必须有一个可用且复杂度不低于该装置设计图等级的装置槽位。",
+						"由于操作这些装置需要专门技艺，而且每位工程师都会对自己的装置进行大量个人化改装，因此只有制作装置的工程师本人才能使用它并从其效果中获益。",
+						"每当你完成一次长休，你可以重新配置你的可用装置列表，在已知设计图中更换已装备的装置。重新配置装置时，你也可以把某件装置从一件装备上拆下，改装到另一件装备上。重新配置已装备装置时，你必须能够使用你的修补工具。"
+					]
+				},
+				{
+					"ENG_name": "Activating Gadgets",
+					"type": "entries",
+					"name": "启动装置",
+					"entries": [
+						"有些装置只要处于装备状态就能持续提供益处。另一些装置的效果则需要你花费动作来启动。启动效果所需的动作类型会在装置说明中列出。",
+						{
+							"ENG_name": "Object Interactions",
+							"type": "entries",
+							"name": "物件互动",
+							"entries": [
+								"大多数装置都易于启动，你只需拨动开关或旋转旋钮。具有此类效果的装置可以在你移动或采取其他动作（如攻击动作）的同时启动。某些可用作武器的装置可能需要你同时进行物件互动和攻击动作。",
+								"你可以用使用物件动作，在你的回合内启动第二个需要物件互动的装置效果。（关于哪些动作可以与其他动作结合的更多信息，参见PHB的{@book 190|PHB|9|你回合中的其他活动}页和{@book 193|PHB|9|战斗中的动作}页。）"
+							]
+						},
+						{
+							"ENG_name": "Actions",
+							"type": "entries",
+							"name": "动作",
+							"entries": [
+								"启动时间为1动作的装置效果要求你将注意力集中在装置上才能使用它。"
+							]
+						},
+						{
+							"ENG_name": "Reactions",
+							"type": "entries",
+							"name": "反应",
+							"entries": [
+								"某些装置效果可以作为反应来启动。这些效果是对某一事件的回应而启动的。如果一件装置可以作为反应启动，设计图说明会确切告诉你何时可以使用它。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Stacking Gadget Activations",
+					"type": "entries",
+					"name": "装置启动的叠加",
+					"entries": [
+						"同一回合内，你无法启动两个都需要1动作的装置效果。你可以把一次启动合并进同一个动作中来同时启动一件需要1动作的装置和另一件仅需物件互动的装置，或者使用你的\"快速启动\"特性所给予的附赠动作。"
+					]
+				},
+				{
+					"ENG_name": "Gadget Attack Rolls and Saving Throws",
+					"type": "entries",
+					"name": "装置攻击检定与豁免",
+					"entries": [
+						"某些装置可用作武器，让你能够进行攻击检定。加到该攻击检定上的属性调整值会在该装置的设计图文本中列出。",
+						{
+							"ENG_name": "Gadget attack modifier",
+							"type": "abilityGeneric",
+							"name": "装置攻击调整值",
+							"text": "你的熟练加值+装置说明中列出的属性调整值"
+						},
+						"",
+						"你的智力调整值决定对抗你的装置使用所产生效果的豁免DC。",
+						{
+							"ENG_name": "Gadget",
+							"type": "abilityDc",
+							"name": "装置",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Nonmagical Nature",
+					"type": "entries",
+					"name": "非魔法本质",
+					"entries": [
+						"尽管某些装置产生的效果与特定法术和魔法物品的效果相似，装置及其效果本质上都是非魔法的。装置或装置产生的效果无法被作用于魔法的能力探测或解除。{@spell 侦测魔法}、{@spell 解除魔法}、{@spell 法术反制}或{@spell 反魔法场}等法术对装置的运作没有任何影响。"
+					]
+				},
+				{
+					"ENG_name": "Making Gadgets Feel Unique",
+					"type": "inset",
+					"name": "让装置与众不同",
+					"entries": [
+						"工程师{@filter 设计图|optionalfeatures|feature type=EG}的列表及其效果的完整说明可在本补充材料的第二部分找到。虽然这些说明解释了装置的功能，但装置究竟如何实现这些效果则留给你自己决定。你应当与你的DM合作，详细描述你的每件装置如何运作，并调整这些描述以最贴合你的角色和战役世界。例如，{@optfeature 头灯|BombsGadgetsGuns}可能由化学电池供能，也可能由一种只在地下深处才能找到的稀有晶体驱动。描述你的装置有助于让你的角色独一无二、令人印象深刻，因为不会有两位工程师以完全相同的方式行事。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mechanically Inclined",
+			"name": "机械天赋",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 1,
+			"entries": [
+				"你操控机械装置的技艺让你可以使用修补工具来尝试撬开机械锁和拆除机械陷阱。"
+			]
+		},
+		{
+			"ENG_name": "Expertise",
+			"name": "专精",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 2,
+			"entries": [
+				"2级时，选择两项你的技能熟练项，或一项技能熟练项加上你的修补工具熟练项。你进行任何使用所选熟练项的能力检定时，熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Master Crafter",
+			"name": "工艺大师",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 2,
+			"entries": [
+				"你是一位工艺大师，能够在预算内按时完成出色的作品。2级起，当你使用自己拥有熟练项的工匠工具制作物品时，只需消耗相当于该物品总市价三分之一的原材料。你每制作一天，进度就增加\"5金币+你的工程师等级\"，直到达到该物品的市价为止。"
+			]
+		},
+		{
+			"ENG_name": "Junkyard Hero",
+			"name": "废料场英雄",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 3,
+			"entries": [
+				"3级起，你可以利用间歇时间搜刮备用零件、有用的化学制品和原材料，用于制作装置或打造物品。为此，你必须身处城市、废料场或其他可能找到此类物资的地点。你的DM可以根据你搜刮的地点限制某些类型材料的获取。每搜刮一小时，你可以找到价值\"5金币+你的工程师等级\"的此类材料。",
+				"你可以用搜刮时收集到的资源来支付学习新装置设计图、制作或修理发条伙伴的材料费用，或作为你用拥有熟练项的工匠工具制作物品的原材料。"
+			]
+		},
+		{
+			"ENG_name": "Sub-discipline",
+			"name": "分支学科",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 3,
+			"entries": [
+				"选择一个分支学科，它描述你的技术专长领域。此处描述了三个分支学科：爆破、动力学与技术奇术，三者的详细内容都会在本职业说明的后文给出。你在3级选择分支学科时获得额外特性，并在之后的7级、10级和14级再次获得。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Fast Activation",
+			"name": "快速启动",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 5,
+			"entries": [
+				"5级起，你在战斗中的每个回合都可以用附赠动作来采取使用物件动作，或用你的修补工具尝试拆除陷阱或撬开锁。"
+			]
+		},
+		{
+			"ENG_name": "Mana-Powered Attacks",
+			"name": "魔力驱动攻击",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 6,
+			"entries": [
+				"6级起，你使用装置、枪械或滴答弹进行的攻击，在克服非魔法攻击和伤害的抗性与免疫时视为魔法攻击。"
+			]
+		},
+		{
+			"ENG_name": "Sub-discipline feature",
+			"name": "分支学科特性",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 7,
+			"entries": [
+				"7级时，你获得一项由你的分支学科给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Rapid Reconfiguration",
+			"name": "快速重构",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 9,
+			"entries": [
+				"9级起，每当你完成一次短休，你可以重新配置最多3件已装备的装置，用已知设计图列表中的其他装置进行替换。重新配置已装备装置时，你必须能够使用你的修补工具。"
+			]
+		},
+		{
+			"ENG_name": "Sub-discipline feature",
+			"name": "分支学科特性",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 10,
+			"entries": [
+				"10级时，你获得一项由你的分支学科给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Academic Literacy",
+			"name": "学术素养",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 11,
+			"entries": [
+				"11级起，你进行的任何尚未包含熟练加值的智力检定，都可以加上你熟练加值的一半（向下取整）。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Rapid Reconfiguration (5)",
+			"name": "快速重构（5）",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 13,
+			"entries": [
+				"13级时，你能重构的已装备装置数量增加到5个。"
+			]
+		},
+		{
+			"ENG_name": "Sub-discipline feature",
+			"name": "分支学科特性",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 14,
+			"entries": [
+				"14级时，你获得一项由你的分支学科给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Rapid Reconfiguration (7)",
+			"name": "快速重构（7）",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 17,
+			"entries": [
+				" 17级时，你能重构的已装备装置数量增加到7个。"
+			]
+		},
+		{
+			"ENG_name": "Indomitable Mind",
+			"name": "不屈心智",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 18,
+			"entries": [
+				"18级起，若你一次智力检定的总值低于你的智力值，你可以用该智力值代替总值。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Machine Mastery",
+			"name": "机械精通",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"level": 20,
+			"entries": [
+				"20级时，你获得对两件装置的完全掌控。选择两张你已知的简易复杂度装置设计图。这两件装置始终处于装备状态，且不计入你的已装备装置上限。如果其中任何一件装置的效果需要短休或长休才能重新充能，你可以用附赠动作为该效果重新充能。每件装置你只能这样做一次，之后必须完成一次长休才能再次对同一件装置使用此特性。",
+				"你可以花费8小时用修补工具改装装置，把你选择的一件或两件装置替换为相同复杂度的其他装置。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Demolitions",
+			"name": "爆破",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "爆破",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"entries": [
+				"你是让东西轰然爆炸这门艺术的门徒。你的学识横跨机械领域（定时器与雷管）与炼金领域（挥发性化合物与化学链式反应）。这些知识让你得以制作并使用小巧而威力强大的爆炸装置，在战场上把它们掷向你的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|工程师|BombsGadgetsGuns|爆破|BombsGadgetsGuns|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "制弹师|工程师|BombsGadgetsGuns|爆破|BombsGadgetsGuns|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "倒计时器|工程师|BombsGadgetsGuns|爆破|BombsGadgetsGuns|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bomb Maker",
+			"name": "制弹师",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "爆破",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级起，你在爆炸化合物方面的精湛技艺让你能够制作被称为滴答弹的炼金炸弹。滴答弹是一个充满挥发性化学品的小型机械球体。当你用滴答弹进行攻击时，它会爆炸，对爆点周围的任何生物造成伤害。",
+				"由于用来制作滴答弹的化学品性质不稳定，你只能随身携带有限的数量。你能携带的组装完毕的滴答弹数量等于你的智力调整值加你工程师等级的一半。在一次长休期间，你可以制作数量最多为你可携带上限的滴答弹。制作滴答弹时，你必须能够使用你的修补工具和炼金工具。你还必须为每枚想制作的滴答弹准备一小瓶炼金催化剂。",
+				"滴答弹平时处于惰性状态，但可以在你投掷滴答弹时，把一次物件互动与攻击动作结合来激活它。一经激活，滴答弹落地撞击时就会爆炸。",
+				"就熟练项而言，滴答弹视为临时远程武器。它们具有投掷特性，射程为20/60。用滴答弹攻击时，你可以将你的力量或敏捷调整值加到攻击检定上。每枚滴答弹重1磅。",
+				"若滴答弹攻击落空，滴答弹会落在预定目标{@dice 1d4*5|1d4 × 5}尺之外，并在落点爆炸。掷{@dice 1d8}来决定偏斜的方向：",
+				{
+					"type": "table",
+					"caption": "滴答弹偏斜方向",
+					"colLabels": [
+						"d8",
+						"偏斜方向"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							1,
+							"北"
+						],
+						[
+							2,
+							"东北"
+						],
+						[
+							3,
+							"东"
+						],
+						[
+							4,
+							"东南"
+						],
+						[
+							5,
+							"南"
+						],
+						[
+							6,
+							"西南"
+						],
+						[
+							7,
+							"西"
+						],
+						[
+							8,
+							"西北"
+						]
+					]
+				},
+				"你制作的滴答弹造成的伤害取决于你的工程师等级，如下表所示。滴答弹爆炸时，5尺内的任何生物若豁免失败就受到完整的伤害骰，若豁免成功则伤害减半。距离爆炸5-10尺的目标受到残余溅射伤害，其伤害骰减少一枚。若受影响的生物豁免成功，溅射伤害再减半。对抗滴答弹伤害所进行的豁免检定类型由滴答弹的伤害类型决定。对抗你的滴答弹伤害的豁免DC等于你的装置豁免DC。",
+				"举例来说，一枚额定伤害为3d4的滴答弹对其爆点5尺内的任何目标造成3d4（8）点伤害。爆炸还对距爆心6-10尺的目标造成2d4（5）点溅射伤害。若受影响的目标豁免成功，普通伤害和溅射伤害都减半。",
+				"你在制作滴答弹时选择它将造成的伤害类型。3级时，你知道如何制作毒气（毒素伤害）与燃烧弹（火焰）滴答弹。7级时，你还获得制作破片（穿刺）与寒霜（寒冷）滴答弹的能力。10级时，你学会制作震击（雷鸣）滴答弹。最后，14级时你获得制作腐蚀（强酸）与热能滴答弹（造成光耀伤害）的能力。",
+				{
+					"type": "table",
+					"caption": "滴答弹豁免/伤害类型",
+					"colLabels": [
+						"滴答弹类型",
+						"伤害类型",
+						"豁免检定"
+					],
+					"colStyles": [
+						"col-3",
+						"col-3",
+						"col-6"
+					],
+					"rows": [
+						[
+							"毒气",
+							"毒素",
+							"体质"
+						],
+						[
+							"燃烧弹",
+							"火焰",
+							"敏捷"
+						],
+						[
+							"破片",
+							"穿刺",
+							"敏捷"
+						],
+						[
+							"寒霜",
+							"寒冷",
+							"体质"
+						],
+						[
+							"震击",
+							"雷鸣",
+							"体质"
+						],
+						[
+							"腐蚀",
+							"强酸",
+							"敏捷"
+						],
+						[
+							"热能",
+							"光耀",
+							"体质"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "爆破",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级时，若你尚无相应熟练项，你获得炼金工具和中甲的熟练项。此外，就熟练项而言，你将临时武器视为简易武器。"
+			]
+		},
+		{
+			"ENG_name": "Countdown Timer",
+			"name": "倒计时器",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "爆破",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级及以上，你获得为滴答弹设置定时引爆的能力，使其按定时器而非撞击引爆。你可以用动作激活一枚你持有的滴答弹的定时器，选择1到10之间的轮数。一经设定，滴答弹会在指定轮数流逝后你的回合结束时引爆。设置了定时器的滴答弹可以被一次成功的拆除陷阱检定拆除，其DC等于你的装置豁免DC。"
+			]
+		},
+		{
+			"ENG_name": "Bonus Gadget",
+			"name": "附赠装置",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "爆破",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"7级时，你自动获得{@optfeature 榴弹发射器|BombsGadgetsGuns}装置的设计图。学习此设计图不计入你正常的已知设计图数量。一旦你获得此设计图的使用权，它就始终处于装备状态，且不计入你的已装备装置上限。"
+			]
+		},
+		{
+			"ENG_name": "Good Command",
+			"name": "落点掌控",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "爆破",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"7级时，你对滴答弹攻击的落点掌控已臻化境，从而对偏离的攻击落点获得了一定的控制力。若你用滴答弹进行的攻击落空，照常掷骰决定偏斜的方向和距离。你可以选择重掷其中一个结果。若如此做，你必须使用第二次掷骰的结果。"
+			]
+		},
+		{
+			"ENG_name": "Evasion",
+			"name": "反射闪避",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "爆破",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级起，你能灵巧地闪避某些范围效果。当你受到一个允许你进行敏捷豁免检定以将伤害减半的效果影响时，若你豁免成功则不受任何伤害，豁免失败也只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Volatile Overload",
+			"name": "烈性过载",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "爆破",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"14级时，你获得让滴答弹过载的能力。过载滴答弹的伤害和溅射伤害都减少一枚伤害骰，但会依据滴答弹造成的伤害类型产生一项额外效果。你选择在用滴答弹进行攻击或为其激活倒计时器之前让它过载。一旦你让一枚滴答弹过载，直到你完成一次短休或长休前都无法再让另一枚过载。",
+				{
+					"ENG_name": "Gas",
+					"type": "entries",
+					"name": "毒气",
+					"entries": [
+						"任何被滴答弹伤害且豁免失败的目标中毒。在其每个回合结束时，被滴答弹中毒的生物可以再进行一次豁免检定。豁免成功则该状态终止。"
+					]
+				},
+				{
+					"ENG_name": "Incendiary",
+					"type": "entries",
+					"name": "燃烧弹",
+					"entries": [
+						"浓烈的黑烟充满滴答弹爆点周围20尺球体。烟雾阻挡视线，该区域内的所有物体都处于重度遮蔽。烟雾持续{@dice 1d4}轮，除非被和风或更强的风驱散。"
+					]
+				},
+				{
+					"ENG_name": "Frag",
+					"type": "entries",
+					"name": "破片",
+					"entries": [
+						"任何被滴答弹伤害且豁免失败的目标耳聋。在其每个回合结束时，被滴答弹震聋的生物可以再进行一次豁免检定。豁免成功则该状态终止。"
+					]
+				},
+				{
+					"ENG_name": "Frost",
+					"type": "entries",
+					"name": "寒霜",
+					"entries": [
+						"任何被滴答弹伤害且豁免失败的目标，其移动速度减半，直到你的下回合开始为止。"
+					]
+				},
+				{
+					"ENG_name": "Concussion",
+					"type": "entries",
+					"name": "震击",
+					"entries": [
+						"任何被滴答弹伤害且豁免失败的目标震慑，直到你的下回合开始为止。"
+					]
+				},
+				{
+					"ENG_name": "Corrosive",
+					"type": "entries",
+					"name": "腐蚀",
+					"entries": [
+						"任何被滴答弹伤害且豁免失败的目标，在其每个回合开始时额外受到{@damage 1d8}点强酸伤害。生物可以用它的动作，以一小瓶水或其他合适的液体冲洗身上的强酸，以终止该伤害。"
+					]
+				},
+				{
+					"ENG_name": "Thermal",
+					"type": "entries",
+					"name": "热能",
+					"entries": [
+						"任何被滴答弹伤害且豁免失败的目标目盲，直到你的下回合开始为止。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Kinetics",
+			"name": "动力学",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "动力学",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"entries": [
+				"动力工程师研究运动与能量释放的科学，并运用被称为枪械的特制武器来应用这些知识。这些异域远程武器利用小份受控的炸药，将金属弹丸（称为独头弹）以极高的速度射向目标，释放出毁灭性的动能。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|工程师|BombsGadgetsGuns|动力学|BombsGadgetsGuns|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "枪匠|工程师|BombsGadgetsGuns|动力学|BombsGadgetsGuns|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "额外装置|工程师|BombsGadgetsGuns|动力学|BombsGadgetsGuns|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Gadgets",
+			"name": "额外装置",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "动力学",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级时，若你尚未知晓该设计图，你会自动获得{@optfeature 枪声抑制器|BombsGadgetsGuns}或{@optfeature 隐藏携带|BombsGadgetsGuns}装置的设计图（由你选择）。学习此设计图不计入你正常的已知设计图数量。一旦你获得此设计图的使用权，它就始终处于装备状态，且不计入你的已装备装置上限。",
+				"7级时，你再次获得另一张自选的附赠设计图。你可以在{@optfeature 弹匣|BombsGadgetsGuns}或{@optfeature 瞄准镜|BombsGadgetsGuns}装置之间选择。学习此设计图不计入你正常的已知设计图数量。一旦你获得此设计图的使用权，它就始终处于装备状态，且不计入你的已装备装置上限。"
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "动力学",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级时，你获得枪械武器和中甲的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Gunsmith",
+			"name": "枪匠",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "动力学",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级起，你知道如何用你的修补工具制作和维护枪械与弹药。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style: Archery",
+			"name": "战斗风格：箭术",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "动力学",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"7级起，你使用远程武器进行的攻击检定获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Uncanny Dodge",
+			"name": "直觉闪避",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "动力学",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级起，当一名你可见的攻击者以攻击命中你时，你可以用你的反应使该攻击对你的伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Multiattack",
+			"name": "多重攻击",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "动力学",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"14级时，选择以下三项特性之一：",
+				{
+					"ENG_name": "Guns Akimbo",
+					"type": "entries",
+					"name": "双枪齐发",
+					"entries": [
+						"当你采取攻击动作并用单手持握的一把枪械攻击后，你可以用附赠动作用另一只手持握的另一把枪械进行攻击。除非该调整值为负值，否则你不能将属性调整值加到该附赠攻击的伤害上。"
+					]
+				},
+				{
+					"ENG_name": "Slugger",
+					"type": "entries",
+					"name": "强打者",
+					"entries": [
+						"当你用攻击动作以一把单手近战武器攻击后，你可以用附赠动作用另一只手持握的一把已装填的、具有轻型属性的枪械进行攻击。只要两次攻击都以同一目标为对象，与敌对生物相距5尺以内不会使该附赠攻击具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Rapid Fire",
+					"type": "entries",
+					"name": "速射",
+					"entries": [
+						"当你用攻击动作以一把具有双手属性的枪械攻击后，你可以用附赠动作用同一把枪械进行第二次攻击。第二次攻击可以以与第一次攻击相同的目标为对象，也可以以距第一个目标10尺内的另一个目标为对象。该枪械必须至少装填2枚弹药，因为最初的攻击动作和附赠动作都会消耗弹药。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Technomancy",
+			"name": "技术奇术",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "技术奇术",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"entries": [
+				"技术奇术师明白，魔法不过是一种尚未被完全理解的科学形式。技术奇术师致力于对魔法与科技的双重研究，并寻求将二者融合为一个强大的整体。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|工程师|BombsGadgetsGuns|技术奇术|BombsGadgetsGuns|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠已知设计图|工程师|BombsGadgetsGuns|技术奇术|BombsGadgetsGuns|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "技术魔法|工程师|BombsGadgetsGuns|技术奇术|BombsGadgetsGuns|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "魔力电池|工程师|BombsGadgetsGuns|技术奇术|BombsGadgetsGuns|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "技术奇术",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级起，若你尚无相应熟练项，你获得{@skill 奥秘}技能的熟练项"
+			]
+		},
+		{
+			"ENG_name": "Bonus Schematics Known",
+			"name": "附赠已知设计图",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "技术奇术",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级时，你在工程师表所示数量之外额外学会2张设计图。7级（+4张）、10级（+6张）和14级（+8张）时，你可以再额外选择两张设计图。这些设计图必须是你能够装备的等级。"
+			]
+		},
+		{
+			"ENG_name": "Mana Battery",
+			"name": "魔力电池",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "技术奇术",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级时，你获得将魔法直接导入装置的能力，可以消耗一个法术位来恢复一件装置的已启动效果的使用次数，该效果原本需要短休或长休才能重新充能。所消耗法术位的环阶决定了你能重新充能的装置的复杂度。1环法术位可以为琐碎复杂度装置充能，2环法术位可以为简易或更低复杂度的装置充能，3环法术位可以为高级或更低复杂度的装置充能，4环或更高的法术位可以为任意复杂度等级装置的已启动效果充能。",
+				"若你拥有另一个具备施法或魔法契约特性的职业，你可以消耗任意职业的法术位来为装置充能，而不限于从技术奇术师分支学科获得的法术位。"
+			]
+		},
+		{
+			"ENG_name": "Techno Magic",
+			"name": "技术魔法",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "技术奇术",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"3级时，你以施展法师法术的能力来增强你的技术专长。施法的通用规则参见{@book 玩家手册|PHB}的{@book 第十章|PHB|10}，法师法术列表参见{@book 第十一章|PHB|11}。",
+				"技术奇术师的魔法研究专注于两个不同的魔法学派：预言学系与变化系。预言系法术让技术奇术师能以奥术手段寻找物品和信息，作为常规研究方法的补充；变化系法术则让他们得以改变物质的状态与性质。技术奇术师学会的法术数量相对较少，他们将法术牢记于心，而不抄录在法术书上。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从法师法术列表中选择两道戏法。你在10级时额外选择一道法师戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spell slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"技术奇术师施法表显示了你有几个法术位。该表还显示了这些法术位的环阶；你所有的法术位环阶相同。要施展一个1环或更高的法师法术，你必须消耗一个法术位。当你完成一次短休或长休时，你恢复所有已消耗的技术奇术师法术位。",
+						"例如，当你7级时，你拥有两个2环法术位。要施展1环法术{@spell 鉴定术}，你必须消耗其中一个法术位，且你将它以2环法术的效能施展。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st-Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"3级时，你知道两个自选的1环法师法术，其中一个必须从法师法术列表的预言系或变化系法术中选择。另一个可以来自任何魔法学派。",
+						"技术奇术师施法表的\"已知法术\"栏显示了你何时学会更多1环或更高的法师法术。这些法术都必须是你自选的预言系或变化系法术，且环阶不得高于表中你等级对应的\"法术位环阶\"栏所示的环阶。例如，当你达到8级技术奇术师时，你可以学习一个新的1环或2环法术。",
+						"在第8、14和20级时，你可以学习任何学派的法术。",
+						"每当你在工程师职业中获得一个等级，你都可以用一个从法师法术列表中自选的新法术替换一个你已知的法师法术。新法术的环阶不得高于表中你等级对应的\"法术位环阶\"栏所示的环阶，且必须是预言系或变化系法术\u2014\u2014除非你替换的是8级、14级或20级时获得的法术。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"智力是你法师法术的施法属性，因为你通过学习和记忆来掌握法术。每当法术提及你的施法属性时，你使用智力。",
+						"此外，你在设定所施展法师法术的豁免DC，以及用其进行攻击检定时，都使用你的智力调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Clockwork Companion",
+			"name": "发条伙伴",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "技术奇术",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"7级时，你获得制作一只机械发条伙伴的能力。制作这只发条装置需要4小时，并花费150金币的原材料。你必须从下面列出的两个特性中选择其一，它决定了发条装置的形态与功能。",
+				"发条装置使用所选形态的数据，但其生物类别为构装体而非原本的类别。此外，若你的发条装置所模仿的野兽智力为5或更低，其智力改为6，并获得理解一门由你选择、你会说的语言的能力。发条装置不需要呼吸空气，不需要食物、饮水或睡眠，并免疫毒素和疾病的效果。",
+				"只要你的发条伙伴在距你1英里之内，你就可以通过无线通讯链路向它下达命令。启动这条链路需要你用一次物件互动。",
+				"若发条装置的生命值降至0，它将停止运作。不过，它可以被修复。修复一只损坏的发条伙伴需要2小时，并花费50金币的原材料。",
+				{
+					"ENG_name": "Clockwork Familiar",
+					"type": "entries",
+					"name": "发条魔宠",
+					"entries": [
+						"你的发条装置化作一只小动物，充当你的魔宠。发条装置可以呈任何小型野兽的形态，比如蝙蝠、猫、蟹、青蛙、隼、蜥蜴、猫头鹰、老鼠、渡鸦、毒蛇、蜘蛛或鼬。你的魔宠独立行动，但它始终服从你的命令。在战斗中，它自行掷先攻并在自己的回合行动。发条魔宠不能攻击，但可以正常采取其他动作。此外，当你采取攻击动作时，你可以放弃自己的一次攻击，让你的魔宠进行一次它自己的攻击。",
+						"当你启动无线链路与魔宠沟通时，若你在魔宠100尺内，你可以选择直到你的下回合开始前，透过魔宠的眼睛看、聆听它所听到的声音，并获得魔宠任何特殊感官的益处。这段时间内，你自身的感官既聋又盲。透过发条魔宠的感官感知期间，你还可以用自己的嗓音透过魔宠说话，即使你的魔宠通常无法说话。你可以在自己的回合用附赠动作提前结束这条链路。",
+						"当你施展一个接触射程的法术时，你的发条魔宠可以传递该法术，如同由它施放一般。你的魔宠必须在你100尺内，且必须在你施法时用它的反应来传递法术。若该法术需要进行攻击检定，你用你的攻击调整值进行该检定。",
+						"你可以用一次物件互动暂时关闭你的发条魔宠。发条装置会折叠成一个6寸见方、重1磅的立方体，便于随身携带。你可以再用一次物件互动重新启动发条魔宠。",
+						"你同一时间只能拥有一只发条魔宠，但你可以拆解现有的发条装置，以另一种形态重建它。重建一只发条魔宠需要1小时。"
+					]
+				},
+				{
+					"ENG_name": "Clockwork Steed",
+					"type": "entries",
+					"name": "发条坐骑",
+					"entries": [
+						"你的发条装置化作一匹乘用马、矮种马、骆驼、赤鹿、獒犬或其他四足骑兽。你的坐骑在战斗内外都充当你的坐骑。作为一匹聪明的坐骑，你的发条装置在战斗中既可以独立行动，也可以受你操控。不过，你的坐骑始终服从你的命令，即使它在独立行动时也不例外。骑乘发条坐骑期间，任何你操控的、通常只影响你自己的装置效果也同样影响你的坐骑。",
+						"你同一时间最多只能拥有一匹发条坐骑，但你可以拆解现有的坐骑，以另一种形态重建它。重建一匹发条坐骑需要2小时。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Clockwork Enhancement",
+			"name": "发条强化",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "技术奇术",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级起，你可以放弃你的动作，让你的发条伙伴施展以下法术之一，具体法术取决于你在7级时选择的是发条魔宠还是发条坐骑。若你选择了发条魔宠，你的发条装置可以施展{@spell 火球术}、{@spell 催眠图纹}或{@spell 高等幻影}。若你选择了发条坐骑，你的发条装置可以施展{@spell 恐惧术}、{@spell 飞行术}或{@spell 加速术}。",
+				"这些法术按3环法术施展。就射程和视线而言，该法术视为由你的发条装置施展。但任何豁免DC都如同你亲自施法一般决定。若该法术需要专注，你必须如同亲自施法一般维持专注。此能力使用一次后，直到你完成一次长休前都无法再次使用。你无法用你的魔力电池职业特性恢复此能力的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Use Magic Device",
+			"name": "使用魔法装置",
+			"source": "BombsGadgetsGuns",
+			"className": "工程师",
+			"classSource": "BombsGadgetsGuns",
+			"subclassShortName": "技术奇术",
+			"subclassSource": "BombsGadgetsGuns",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"到14级时，你对魔法的运作机理已了然于心，即使物品并非为你所用而设计，你也能即兴使用它们。你无视魔法物品使用上的一切职业、种族和等级要求。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "3D Sunglasses",
+			"name": "3D太阳镜",
+			"source": "BombsGadgetsGuns",
+			"page": 11,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}眼镜",
+				"{@b 启动类型：}持续（+1 反应，特殊）",
+				"装备此装置时，你以及你试图察觉的、距离你10尺以外的生物和物体，都免受直射阳光的视觉影响。",
+				{
+					"ENG_name": "Retinal Shield",
+					"type": "entries",
+					"name": "视网膜护盾",
+					"entries": [
+						"装备此装置时，每当你必须进行一次豁免检定以对抗某个可能使你目盲的效果时，你可以用反应启动此效果。若如此做，你在该豁免检定上具有优势。此效果使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "A/V Recorder",
+			"name": "视听记录仪",
+			"source": "BombsGadgetsGuns",
+			"page": 11,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}眼镜",
+				"{@b 启动类型：}1 次物件互动",
+				"此装置可以录制你60尺内能看到和听到的物体的声音和/或影像。你可以用一次物件互动启动装置开始录制，再用一次物件互动停止录制。启动记录仪时，你可以选择只录声音、只录影像，或两者都录。它最多可录制时长1分钟的信息，已存储的录制内容可以用一次物件互动来播放。"
+			]
+		},
+		{
+			"ENG_name": "Adaptive Armor",
+			"name": "适应性护甲",
+			"source": "BombsGadgetsGuns",
+			"page": 11,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}1 反应",
+				"装备此装置时，每当你成为一个造成强酸、寒冷、火焰、闪电或雷鸣伤害的攻击、法术或效果的目标，你可以用反应启动它。直到你的下回合结束，你获得与该攻击同类型伤害的抗性。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Adrenaline Infusion",
+			"name": "肾上腺素注入",
+			"source": "BombsGadgetsGuns",
+			"page": 11,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}1 次物件互动",
+				"装备此装置时，你可以用一次物件互动启动它。在装置启动的同一回合内，你可以在常规动作和可能的附赠动作之外额外采取一个动作。这个额外的动作可用于除攻击动作以外的任何动作。此装置使用后，其效果必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Advanced Opti-Visor",
+			"name": "高级光学护目镜",
+			"source": "BombsGadgetsGuns",
+			"page": 12,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}眼镜",
+				"{@b 启动类型：}1 次物件互动",
+				"你可以用一次物件互动启动此装置。接下来五分钟内，你拥有120尺范围的真实视觉，能察觉隐藏和暗门，并能看入以太位面的边界区域。此效果使用后，装置必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Ammunition Clip",
+			"name": "弹匣",
+			"source": "BombsGadgetsGuns",
+			"page": 12,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}武器（具有弹容特性的枪械）",
+				"{@b 启动类型：}持续",
+				"装备此装置时，它所整合的枪械可以容纳更多弹药，使其在需要重新装填前能射击更多次。该枪械的弹容特性额外+10发。"
+			]
+		},
+		{
+			"ENG_name": "Antigravity Boots",
+			"name": "反重力靴",
+			"source": "BombsGadgetsGuns",
+			"page": 12,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}靴子",
+				"{@b 启动类型：}1 次物件互动",
+				"装备此装置时，你可以用一次物件互动启动它。接下来3分钟内，你可以漂浮在地面上方，如同免疫重力效果一般。移动时你可以上下改变高度，最高离地20尺。漂浮在空中行走非常困难，每移动1尺需消耗2尺移动距离。效果结束时你若仍在空中，会缓缓飘落到地面。此装置使用后，其效果必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Antigravity Gloves",
+			"name": "反重力手套",
+			"source": "BombsGadgetsGuns",
+			"page": 12,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动",
+				"装备此装置时，你可以用一次物件互动启动它。接下来5分钟内，你的推/拖/举负重翻倍。此装置使用后必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Antitheft Device",
+			"name": "防盗装置",
+			"source": "BombsGadgetsGuns",
+			"page": 12,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}持续",
+				"装备此装置时，其他生物在试图偷窃你随身物品的任何敏捷（巧手）检定上都具有劣势。此外，当有人试图扒窃你但失败时，你会自动察觉。"
+			]
+		},
+		{
+			"ENG_name": "Automated Defense Turret",
+			"name": "自动防御炮塔",
+			"source": "BombsGadgetsGuns",
+			"page": 12,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作架设并启动一座使用该装置所整合武器的自动炮塔。你必须把炮塔放置在你10尺内一处未被占据的5尺空间。炮塔速度为0、AC为10、生命值为10，并对心灵伤害免疫。部署炮塔时，你从你的物品栏中为它装填最多10枚弹药。",
+				"在你的每个回合结束时，炮塔会自动瞄准最近的敌方生物并对其采取攻击动作。炮塔每发射一发都会消耗一枚装填的弹药。炮塔攻击的射程与其整合的武器相同。炮塔攻击时，你的熟练加值和智力加值都加到攻击检定上。若攻击命中，炮塔造成等于其整合武器伤害骰外加你的智力加值的伤害。",
+				"只要射程内有有效目标，炮塔每轮都会发射武器。炮塔运作十分钟，或直到其整合的武器耗尽弹药或炮塔生命值降至0。你也可以用一次物件互动提前关闭炮塔。",
+				"11级时，炮塔的AC提高3（AC 13），生命值再增加10（20生命值）。17级时AC和生命值再次提高（AC 16，30生命值）。",
+				"此装置使用后，其效果必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Ballistic Rounds",
+			"name": "弹道弹药",
+			"source": "BombsGadgetsGuns",
+			"page": 12,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}持续",
+				"此装置能提高其所附武器发射弹丸的速度。当你使用该武器命中攻击时，你掷两次该武器的伤害骰。该武器造成等于两次结果中较高值的伤害。"
+			]
+		},
+		{
+			"ENG_name": "Banish Ray",
+			"name": "放逐射线",
+			"source": "BombsGadgetsGuns",
+			"page": 12,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作向50尺内一只你能看见的目标生物射出一道能量射线。目标必须通过一次魅力豁免检定，否则会被暂时放逐到一个半位面中。放逐期间，该生物处于失能状态。在每个回合开始时，目标可以再进行一次魅力豁免检定。若豁免失败，该生物继续被放逐。此效果在目标豁免成功抵抗该效果时，或在其被放逐后的第三个回合结束时终止。效果终止时，目标重新出现在它离开的空间，若该空间已被占据则出现在最近的未被占据空间。此装置使用后，其效果必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Battering Fists",
+			"name": "破门铁拳",
+			"source": "BombsGadgetsGuns",
+			"page": 13,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}持续",
+				"装备此装置时，你在任何强行打开卡住、上锁或上了门闩的门进行的检定上获得+2加值。5级时此加值再提高2（+4）。11级起，你在这些检定上还具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Blacklight",
+			"name": "黑光",
+			"source": "BombsGadgetsGuns",
+			"page": 13,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，它会朝你面向的方向投射出一道5尺锥形的低强度紫色光。这道光让物体显得更清晰，也让目视搜索更为容易。在搜索某个区域或检视被这道光照亮的物体时，你在依赖视觉的智力（调查）检定上具有优势。这道光持续1分钟，或直到你用一次物件互动将其关闭。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Bladed Boots",
+			"name": "刃靴",
+			"source": "BombsGadgetsGuns",
+			"page": 13,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与攻击动作结合，用靴中暗藏的弹簧刀刃试图斩伤对手。对5尺内的一只生物进行一次近战攻击检定。你的敏捷调整值和熟练加值加到该检定上。若攻击命中，它造成{@damage 1d4}点穿刺伤害，且目标的速度降低10尺，直到它恢复的生命值等于此次攻击造成的伤害为止。该攻击的伤害在11级（{@damage 2d4}）和17级（{@damage 3d4}）时各提高{@damage 1d4}。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Boomerang Weapon",
+			"name": "回旋镖武器",
+			"source": "BombsGadgetsGuns",
+			"page": 13,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}武器（任意投掷武器）",
+				"{@b 启动类型：}持续",
+				"每当你使用该装置所整合的武器进行投掷攻击，该武器都会在你回合结束时自动回到你手中。"
+			]
+		},
+		{
+			"ENG_name": "Breathalyzer",
+			"name": "呼气检测仪",
+			"source": "BombsGadgetsGuns",
+			"page": 13,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"你可以用此装置鉴定正在影响某只生物的毒素或疾病的类型。患病的生物必须用一次物件互动向装置中呼气。经过{@dice 1d4}轮分析后，装置会指示出疾病或毒素的类型，或是分泌该毒液的生物的种类。",
+				{
+					"ENG_name": "Synthesize Antidote",
+					"type": "entries",
+					"name": "合成解毒剂",
+					"entries": [
+						"分析完受感染生物的呼气后，你可以用动作合成针对该毒素或疾病的解毒剂或抗毒剂。一旦开始，装置需要{@dice 1d4}轮来制成解毒剂。喝下解毒剂使受感染的生物在下次对抗同一疾病或毒素的豁免检定上具有优势。只有提供呼气样本的生物能从喝下解毒剂中获益。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Chain whip",
+			"name": "链鞭",
+			"source": "BombsGadgetsGuns",
+			"page": 13,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，一条由相互咬合的金属齿链制成的长鞭会从你的工具腰带中展开。这条长鞭视为一把简易近战武器，造成{@damage 1d8}点挥砍伤害，并具有触及和灵巧特性。若你用此武器命中一只大型或更小的生物，你可以选择将该生物向你的方向拉近最多10尺。你可以再用一次物件互动把此装置收回工具腰带。"
+			]
+		},
+		{
+			"ENG_name": "Chainsaw Sword",
+			"name": "链锯剑",
+			"source": "BombsGadgetsGuns",
+			"page": 13,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}武器（任何造成挥砍伤害的带刃武器）",
+				"{@b 启动类型：}持续",
+				"装备此装置时，它所整合的武器会装上机动化的锯齿，使刀刃更加锋利。每当你用此武器对对手造成重击时，你可以多掷一枚武器伤害骰来决定该次攻击造成的额外伤害。17级时此加值提高到多掷两枚伤害骰。"
+			]
+		},
+		{
+			"ENG_name": "Chameleon Cloak",
+			"name": "变色龙斗篷",
+			"source": "BombsGadgetsGuns",
+			"page": 13,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}斗篷",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，你的斗篷开始变色以融入你周围的环境。接下来三分钟内，你在所有敏捷（隐匿）检定上具有优势，而且只要你保持静立、不移动也不采取动作，你的敏捷（隐匿）检定还额外获得+10加值。此装置使用后必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Clockwork Messenger",
+			"name": "发条信使",
+			"source": "BombsGadgetsGuns",
+			"page": 14,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"你可以用动作启动此装置，它会化作一只能够飞行的微型机械野兽，例如蝙蝠、鸟或蜻蜓。你指定一个你去过的地点和一个人的大致外貌描述（例如：\"一位戴着高尖帽、留着长白胡子和浓密眉毛的老人\"）。你还要说一段最多二十五个词的信息。这只发条野兽会朝指定地点飞行最多24小时，时速约2英里。发条信使抵达后，会向你描述的那个人传达你的信息，并完美复现你的嗓音。信使只向符合你所给描述的生物传达信息。传达完信息后，或发条信使24小时后仍找不到预定收信者时，该发条生物便会自毁。此装置使用后，直到你在一次短休或长休中造出另一只发条生物前无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Clockwork Trap",
+			"name": "发条陷阱",
+			"source": "BombsGadgetsGuns",
+			"page": 14,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"此装置让你可以用动作在你10尺内一处未被占据的地面地点放置一个预制的机械陷阱。",
+				"放置陷阱时，你必须同时选择陷阱的伤害类型和触发机制。你可以选择强酸、钝击、寒冷、火焰、力场、闪电、暗蚀、穿刺、毒素、光耀、挥砍或雷鸣伤害。可用的触发机制如下所示。",
+				{
+					"type": "table",
+					"caption": "触发机制",
+					"colLabels": [
+						"触发",
+						"描述"
+					],
+					"colStyles": [
+						"col-2",
+						"col-10"
+					],
+					"rows": [
+						[
+							"位置",
+							"陷阱20尺内的一个5×5尺区域"
+						],
+						[
+							"邻近",
+							"陷阱周围15×15尺的区域"
+						],
+						[
+							"计时器",
+							"1到60之间的分钟数"
+						]
+					]
+				},
+				"陷阱在你放置后的第二个回合开始时启动，并一直留在原地保持激活，直到被触发、被拆除，或你用一次物件互动远程关闭它。陷阱被触发时，会对放置点周围30尺球体内的所有物体造成{@damage 2d10}点所选类型的伤害。11级时陷阱造成的伤害提高{@damage 1d10}（共计{@damage 3d10}），17级时再次提高（共计{@damage 4d10}）。",
+				"受到陷阱伤害的生物必须通过一次敏捷豁免检定，否则承受一项次级效应。次级效应因陷阱造成的伤害类型而异。",
+				{
+					"type": "table",
+					"caption": "陷阱次级效应",
+					"colLabels": [
+						"伤害类型",
+						"描述"
+					],
+					"colStyles": [
+						"col-2",
+						"col-10"
+					],
+					"rows": [
+						[
+							"强酸",
+							"在每只受影响生物的回合开始时额外造成{@damage 1d10}点伤害。受影响的生物可以用动作洗去强酸，以终止反复伤害。"
+						],
+						[
+							"钝击",
+							"造成两倍的正常伤害骰。"
+						],
+						[
+							"寒冷",
+							"受影响的生物移动速度减半，直到其下回合结束。"
+						],
+						[
+							"火焰",
+							"陷阱点燃区域内所有未被穿戴或携带的易燃物体。浓烈的黑烟充满陷阱周围15尺球体。烟雾阻挡视线，该区域内的所有物体都处于重度遮蔽。烟雾持续{@dice 1d4}轮，除非被和风或更强的风驱散。"
+						],
+						[
+							"力场",
+							"受影响的生物被推离陷阱10尺并倒地。"
+						],
+						[
+							"闪电",
+							"受影响的生物失能，直到其下回合结束。"
+						],
+						[
+							"暗蚀",
+							"在每只受影响生物的回合开始时额外造成{@damage 1d10}点伤害。受影响的生物可以在其每个回合结束时进行一次体质豁免检定，以终止反复伤害。"
+						],
+						[
+							"穿刺",
+							"受影响的生物耳聋，直到其下回合结束。"
+						],
+						[
+							"毒素",
+							"受影响的生物中毒。它们可以在其每个回合结束时进行一次体质豁免检定，以终止该效果。"
+						],
+						[
+							"光耀",
+							"受影响的生物目盲，直到其下回合结束。"
+						],
+						[
+							"挥砍",
+							"造成两倍的正常伤害骰。"
+						],
+						[
+							"雷鸣",
+							"受影响的生物震慑，直到其下回合结束。"
+						]
+					]
+				},
+				"在一次短休或长休中造出新的陷阱后，你可以再放置一个陷阱。但同一时间你只能拥有一个激活的发条陷阱。"
+			]
+		},
+		{
+			"ENG_name": "Concealed Carry",
+			"name": "隐藏携带",
+			"source": "BombsGadgetsGuns",
+			"page": 14,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}武器（轻型近战武器、手弩或不带双手属性的枪械。）",
+				"{@b 启动类型：}持续",
+				"装备此装置时，它所整合的武器变得更易于藏匿。在任何对你人身进行的搜查中，你在防止该武器被搜出的敏捷（巧手）检定上获得+2加值并具有优势。如果该武器需要弹药，最多三件额外弹药也可以随武器一同藏匿。"
+			]
+		},
+		{
+			"ENG_name": "Crossbow Autoloader",
+			"name": "弩自动装填器",
+			"source": "BombsGadgetsGuns",
+			"page": 14,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}武器（具有装填特性的弩）",
+				"{@b 启动类型：}持续",
+				"只要装备着此装置，它所整合的武器就获得弹容（6）特性，取代其装填特性。"
+			]
+		},
+		{
+			"ENG_name": "Defibrillator",
+			"name": "除颤器",
+			"source": "BombsGadgetsGuns",
+			"page": 15,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，你可以指定10尺内一只昏迷濒死的生物。该生物恢复1点生命值。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Discombobulation Ray",
+			"name": "错乱射线",
+			"source": "BombsGadgetsGuns",
+			"page": 15,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作向50尺内一个你能看见的目标射出一道能量射线。这道射线会侵袭并扭曲该生物的心智，催生妄想并引发失控的举动。目标必须进行一次感知豁免检定。若检定成功，射线没有任何效果。若豁免失败，目标无法进行反应，且必须在其每个回合开始时掷{@dice 1d10}来决定它该回合的行为。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d10",
+						"动作"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1-2",
+							"该生物语无伦次地胡言乱语，但不移动，且本回合不再采取任何其他动作。"
+						],
+						[
+							"3-4",
+							"该生物采取疾走动作，并用它所有的移动直接逃离启动此效果的工程师。"
+						],
+						[
+							"5-6",
+							"该生物用它所有的移动朝随机方向移动。它在该回合内不再采取任何其他动作。"
+						],
+						[
+							"7-8",
+							"该生物使用其动作对可触及范围内一个随机目标发动一次近战攻击。如果没有生物在其触及范围内，则该生物本回合什么都不做。"
+						],
+						[
+							"9",
+							"该生物用它的移动拉近自己与启动此效果的工程师之间的距离。然后它用动作对工程师进行一次攻击：若工程师在其触及范围内则进行近战攻击，否则进行远程攻击。"
+						],
+						[
+							"10",
+							"该生物本回合内可以正常的移动和行动。"
+						]
+					]
+				},
+				"在每个自己的回合结束时，受影响的生物可以再进行一次感知豁免检定。此效果在目标豁免检定成功时，或在其被此效果指定后的第三个回合结束时终止。此装置使用后，其效果必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Disintegration Ray",
+			"name": "解离射线",
+			"source": "BombsGadgetsGuns",
+			"page": 15,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作从手套中向60尺内的一个目标射出一道强力的力场光束。目标可以是一具生物、一个物体，或一个魔法力场的造物。",
+				"目标必须进行一次敏捷豁免检定。若豁免成功，此装置没有任何效果。若豁免失败，目标受到{@damage 5d10 + 20}点力场伤害。若该伤害将目标的生命值降至0，它将被解离。被解离的生物连同它穿戴和携带的一切（魔法物品除外）都化为一堆细灰。该生物只有借助完全复生术或祈愿术才能复活。",
+				"此效果自动解离一个大型或更小的非魔法物体，或一个魔法力场造物。若目标是巨型或更大的物体或力场造物，此效果会解离它10尺立方的一部分。魔法物品不受影响。",
+				"此效果使用后，装置必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Electromagnetic Grabber",
+			"name": "电磁抓取器",
+			"source": "BombsGadgetsGuns",
+			"page": 15,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作指定30尺内一具正挥舞武器或持有一个重量不超过5磅的金属物体的生物。目标必须进行一次力量豁免检定。豁免失败时，它掉落该物体，物体飞过空中落入你手中。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Electronic Eye",
+			"name": "电子之眼",
+			"source": "BombsGadgetsGuns",
+			"page": 15,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}眼镜",
+				"{@b 启动类型：}1 动作",
+				"你可以用动作启动此装置。选择一个你曾见过的地点，或一只与你同处一个存在位面、你熟悉的特定生物。若目标是生物，目标必须进行一次感知豁免检定。若豁免成功，此效果失败，且24小时内你无法再用此装置指定同一生物。若豁免失败，装置会创造一个隐形的探知传感器，让你能如同站在目标10尺外一样地看和听。传感器随目标移动。能看见隐形物体的生物会看到传感器是一颗拳头大小的光球。透过传感器观察目标期间，你自身感官既聋又盲。此效果持续10分钟，或直到你用再一次物件互动选择结束它。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Entropy Reducer",
+			"name": "熵减器",
+			"source": "BombsGadgetsGuns",
+			"page": 15,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}1 反应",
+				"装备此装置时，每当你在攻击检定、属性检定或豁免检定中掷出1，你可以用反应启动它。若如此做，重掷该骰。你必须使用新的结果。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Extradimensional Toolbox",
+			"name": "异次元工具箱",
+			"source": "BombsGadgetsGuns",
+			"page": 16,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}容器（背包、麻袋或小袋）",
+				"{@b 启动类型：}持续",
+				"此装置在背包或小袋之类的容器内部开辟一个异次元空间。除其正常的承载能力外，该容器还能额外容纳7磅物品，总体积不超过1⁄2立方英尺。异次元空间内物品的重量减为零。异次元空间的容量在5级时增加5磅和1⁄2立方英尺（12磅和1立方英尺），11级（17磅和11⁄2立方英尺）和17级（22磅和2立方英尺）时再次增加。将该容器放入另一个异次元空间（例如次元袋所创造的空间）会立即使两件物品湮灭，并开启一道通往星界的传送门。传送门出现在其中一件物品被放入另一件物品内的位置。传送门10尺内的任何生物都会被吸入门中，被丢置在星界的随机地点。随后传送门关闭。该传送门是单向的，无法重新开启。"
+			]
+		},
+		{
+			"ENG_name": "Fire Extinguisher",
+			"name": "灭火器",
+			"source": "BombsGadgetsGuns",
+			"page": 16,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"你可以用动作从手套中向15尺锥形范围喷出阻燃泡沫。这种泡沫会扑灭任何无遮蔽的非魔法火焰，并附着在受影响区域内的生物身上。被泡沫覆盖的生物在对抗火焰伤害的豁免检定上具有优势。泡沫在3轮后蒸发。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Firestarter",
+			"name": "纵火者",
+			"source": "BombsGadgetsGuns",
+			"page": 16,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动（1 动作，特殊）",
+				"当你用一次物件互动启动此装置时，它会产生一小簇火苗，你可以用它点燃蜡烛、火把或营火。",
+				{
+					"ENG_name": "Hot Hands",
+					"type": "entries",
+					"name": "灼热之手",
+					"entries": [
+						"你用动作从手套中喷出一蓬火焰。15尺锥形范围内的每只生物必须进行一次敏捷豁免检定。豁免失败的生物受到{@damage 2d6}点火焰伤害，豁免成功则伤害减半。火焰点燃区域内所有未被穿戴或携带的易燃物体。火焰造成的伤害在11级（{@damage 3d6}）和17级（{@damage 4d6}）时各提高{@damage 1d6}。此装置使用后必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Flaregun",
+			"name": "信号枪",
+			"source": "BombsGadgetsGuns",
+			"page": 16,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与使用该装置所整合武器的攻击动作结合，用该武器向空中发射一枚烟花信号弹。信号弹燃烧1分钟，可用作光源，或用于向远处的人发信号。在户外使用时，信号弹在120尺半径内发出微光，最远在3英里外可见。在室内，信号弹在30尺半径内发出明亮光芒，其外30尺发出微光。若用于攻击生物，信号弹造成{@damage 1d4}点火焰伤害，以取代武器的正常伤害。"
+			]
+		},
+		{
+			"ENG_name": "Floatation Device",
+			"name": "漂浮装置",
+			"source": "BombsGadgetsGuns",
+			"page": 16,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，你的工具腰带会变得有浮力并持续一小时，让你能源浮在任何平静液体的表面。你在所有游泳的力量（运动）检定上具有优势。若你在浸没于液体中时启动此装置，它会以每轮60尺的速度将你带到液体表面。你可以用第二次物件互动结束此效果。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Food Irradiator",
+			"name": "食物辐照器",
+			"source": "BombsGadgetsGuns",
+			"page": 16,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，以你为中心5尺半径球体内的所有非魔法食物和饮品都被净化，变得无毒无菌。此装置使用后必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Full Auto Conversion",
+			"name": "全自动改装",
+			"source": "BombsGadgetsGuns",
+			"page": 16,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}武器（具有弹容[10或更高]特性的枪械）",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，它所整合的枪械获得扫射属性。你可以用该武器进行正常的攻击动作，也可以将一次物件互动与攻击动作结合，向正常射程内一个10尺立方区域倾泻弹雨。区域内的每只生物必须通过一次敏捷豁免检定，否则受到该武器的正常伤害。此动作消耗十枚弹药。"
+			]
+		},
+		{
+			"ENG_name": "Ghost Anchor",
+			"name": "幽魂锚",
+			"source": "BombsGadgetsGuns",
+			"page": 16,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"当你用动作启动此装置时，选择你30尺内一处你能看见的地点。该装置会在所选地点周围投射出一个60尺半径的隐形能量球。这个能量球既存在于你当前的存在位面，也延伸至以太位面的边界区域。若球内的生物试图使用任何会让自己进入以太位面的能力、施展任何法术、或启动任何魔法物品或其他装置，该法术或效果都会失败。已处于以太位面的生物若进入该能量球或在其中结束其回合，必须通过一次感知豁免检定，否则将被逐出以太位面，进入与之重叠的存在位面。投射出的能量球持续1分钟，除非你用一次物件互动提前结束它。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Glue Gun",
+			"name": "胶水枪",
+			"source": "BombsGadgetsGuns",
+			"page": 17,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与使用该装置所整合武器的攻击动作结合，向你的目标射出一颗粘性胶球。若攻击命中，胶球会在目标脚下溅开，将其困住，并覆盖其站立位置周围10尺半径的地面。胶水持续30分钟，之后便会干涸碎裂成尘。",
+				"进入被胶水覆盖区域或在其中结束移动的生物必须通过一次敏捷豁免检定，否则会被胶水困住。被胶水困住的生物只要仍被粘着，速度就为0。被粘住的生物可以用动作进行一次力量豁免检定以挣脱。",
+				"此装置使用后必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Gnomish Militia Tool",
+			"name": "侏儒民兵工具",
+			"source": "BombsGadgetsGuns",
+			"page": 17,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"这个手持装置不用时收纳在你的工具腰带上。它由众多微型工具组成，你可以用一次物件互动将这些工具折入装置主体或从中折出。可用工具因制作它的工程师的需求而异，但通常包括锥子、开罐器、凿子、开瓶器、锉刀、指甲刀、打火石、刮鳞器、钩子、小刀、开锁器、放大镜、量勺、捣棒、钳子、直尺、剪刀、螺丝刀、活扳手、锅铲、叉勺、温度计、牙签、镊子、削皮器、剪线钳和哨子等工具。",
+				{
+					"ENG_name": "Auxiliary Tools",
+					"type": "entries",
+					"name": "辅助工具",
+					"entries": [
+						"紧急情况下，此装置可以代替你的修补工具，或代替任何你拥有熟练项的其他工匠工具。由于工具尺寸小且可折叠，任何你用此装置代替正规全尺寸工具进行的掷骰都具有劣势。",
+						"11级起，用此装置代替你的工匠工具进行的掷骰不再具有劣势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Grappling Gun",
+			"name": "擒抱枪",
+			"source": "BombsGadgetsGuns",
+			"page": 17,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作 + 1 次物件互动",
+				"此装置由一个折叠抓钩和一根50尺长的缆索组成，缆索藏在工具腰带上的一个隔层里。你可以用动作启动此装置，让抓钩向上射出，缆索随之在后面展开。你可以用一次物件互动启动绞盘，把缆索收回腰带。若抓钩已经固定，绞盘会以每轮25尺的速度把你和你携带的多达200磅装备向上拉向抓钩。"
+			]
+		},
+		{
+			"ENG_name": "Grenade Launcher",
+			"name": "榴弹发射器",
+			"source": "BombsGadgetsGuns",
+			"page": 17,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}持续",
+				"装备此装置时，你使用滴答弹进行的攻击，射程提高到40/120。"
+			]
+		},
+		{
+			"ENG_name": "Guided Munitions",
+			"name": "制导弹药",
+			"source": "BombsGadgetsGuns",
+			"page": 17,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"你可以将一次物件互动与攻击动作结合来启动此装置。用该装置所整合的武器进行一次攻击检定。只要目标在武器射程内，即使你没有目标的直接视线也可以发动此攻击。此攻击无视掩护的效果。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Gunshot Suppressor",
+			"name": "枪声抑制器",
+			"source": "BombsGadgetsGuns",
+			"page": 17,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}武器（任意枪械）",
+				"{@b 启动类型：}持续",
+				"附在枪械武器上时，此装置能大幅降低该武器射击时发出的噪音。用它所整合的枪械进行攻击不再自动暴露你的位置。"
+			]
+		},
+		{
+			"ENG_name": "Gyro Stabilizer",
+			"name": "陀螺稳定器",
+			"source": "BombsGadgetsGuns",
+			"page": 17,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，接下来3分钟内你在避免摔倒的敏捷（特技）检定上具有优势。此效果使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Headlamp",
+			"name": "头灯",
+			"source": "BombsGadgetsGuns",
+			"page": 18,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}1 次物件互动",
+				"此装置朝你面向的方向在30尺锥形范围内发出明亮光芒，其外30尺发出微光。这道光不发热，也无需燃料。你可以用一次物件互动开关这道光。"
+			]
+		},
+		{
+			"ENG_name": "Healing Infusion",
+			"name": "治疗注入",
+			"source": "BombsGadgetsGuns",
+			"page": 18,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}1 动作（1 反应，特殊）",
+				"当你用动作启动此装置时，你恢复数量等于{@dice 1d8}+你的智力调整值的生命值。治疗量在5级（{@dice 2d8}）、11级（{@dice 3d8}）和17级（{@dice 4d8}）时各提高{@dice 1d8}。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。",
+				{
+					"ENG_name": "Self Defense",
+					"type": "entries",
+					"name": "自卫",
+					"entries": [
+						"当单次攻击或效果对你造成的伤害超过你生命值上限的四分之一时，你可以用反应启动你的治疗注入。你恢复数量等于{@dice 1d4}+你的智力调整值的生命值。治疗量在5级（{@dice 2d4}）、11级（{@dice 3d4}）和17级（{@dice 4d4}）时各提高{@dice 1d4}。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hearing Booster",
+			"name": "助听增强器",
+			"source": "BombsGadgetsGuns",
+			"page": 18,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}持续",
+				"只要装备着此装置，你在依赖听觉的感知（察觉）检定上就具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Holographic Disguise",
+			"name": "全息伪装",
+			"source": "BombsGadgetsGuns",
+			"page": 18,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}持续",
+				"当你用一次物件互动启动此装置时，它会在你周围投射一幅三维全息影像，让你\u2014\u2014包括你的衣物、护甲、武器和身上的其他物品\u2014\u2014看起来判若两人。你可以显得比原来矮或高最多1尺，也可以显得偏瘦、偏胖或介于两者之间。你无法改变自己的体型，因此必须采用肢体基本排布相同的形态。除此之外，伪装的程度由你决定：你可以用全息影像添加或改动一处微小特征、让自己看起来穿着不同的衣物，或者化身为一个完全陌生的人。",
+				"此装置造成的伪装经不起身体接触的检验。例如，如果你用全息影像为行头添加一顶帽子，物体可以从帽子中穿过，任何试图触摸帽子的人都会摸个空，或摸到你的头发和头。如果你用此装置显得比实际更瘦，别人伸手碰你时，手明明看起来还悬在半空，却会撞到你身上。",
+				"为了识破你的伪装，一只生物可以用它的动作检视你的外貌，并必须通过一次对抗你装置豁免DC的智力（调查）检定。",
+				"伪装持续10分钟，或直到你用一次物件互动取消它。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Implanted Tracking Device",
+			"name": "植入式追踪器",
+			"source": "BombsGadgetsGuns",
+			"page": 18,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与攻击动作结合，向你30尺内能看见的一个目标发射一枚弹簧飞镖。你的熟练加值和敏捷调整值加到该攻击检定上。若攻击命中，目标受到{@damage 1d4}点穿刺伤害，飞镖将一个机械追踪器植入目标皮下。只要追踪器仍在运作，你就知道目标所在的方向和大致距离，最大范围为10英里。",
+				"追踪器持续运作24小时，或直到你用一次物件互动将其关闭。除非目标的被动察觉高于你的装置豁免DC，否则它不会立刻察觉追踪器的存在。知道追踪器存在的智慧生物可以选择用一把造成穿刺或挥砍伤害的带刃武器将其从皮下割除。",
+				"在一次短休或长休后，你可以选择再发射一枚飞镖，把追踪器植入另一只生物的皮下。但同一时间你只能拥有一个激活的追踪器。"
+			]
+		},
+		{
+			"ENG_name": "Inertial Dampener",
+			"name": "惯性阻尼器",
+			"source": "BombsGadgetsGuns",
+			"page": 18,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}1 反应",
+				"每当你成为某个会推、拉、滑动或以其他方式迫使你违背意愿移动的效果的目标时，你可以用反应启动此装置。惯性阻尼器让你被移动的距离减少最多10尺。11级起，你减少强迫移动的效果再增加10尺（共20尺），17级时再增加10尺（共30尺）。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Inflatable Shoes",
+			"name": "充气鞋",
+			"source": "BombsGadgetsGuns",
+			"page": 18,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}持续",
+				"装备此装置时，你获得如同在坚实地面上一般跨越任何液体（水、流沙、熔岩等）移动的能力。若该液体有害（例如强酸或熔岩），你接触它时仍会受到伤害。"
+			]
+		},
+		{
+			"ENG_name": "Invisibility Generator",
+			"name": "隐形发生器",
+			"source": "BombsGadgetsGuns",
+			"page": 19,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，它会在你周围投射出一个10尺半径的弯折光线能量球。该球体使你和球内所有其他生物对球外的任何生物隐形。球内生物穿戴或携带的装备只要还在其身上就保持隐形。球体及其效果随你移动。此效果持续1分钟，或直到你用第二次物件互动取消它。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Jetpack",
+			"name": "喷气背包",
+			"source": "BombsGadgetsGuns",
+			"page": 19,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}斗篷",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，接下来1分钟内你获得45尺飞行速度。若此效果结束时你仍在空中，你将坠落。此装置使用后必须重置，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Laser Pointer",
+			"name": "激光笔",
+			"source": "BombsGadgetsGuns",
+			"page": 19,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动（+1 动作，特殊）",
+				"此装置可以用来把一个非常强烈的光点投射到120尺内的物体上。光束本身不可见（在浓雾或浓烟中除外），不能用作光源。投射出的光点很亮，可依你的选择呈红色、绿色或蓝色。你可以用一次物件互动开关光束或改变颜色。",
+				{
+					"ENG_name": "Burned Cornea",
+					"type": "entries",
+					"name": "灼伤角膜",
+					"entries": [
+						"你可以用动作过载此装置，瞄准30尺内一只能看见你的生物的眼睛。目标必须通过一次体质豁免检定，否则目盲直到其下回合结束。此效果使用后，装置必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Lie-Detecting Compass",
+			"name": "测谎罗盘",
+			"source": "BombsGadgetsGuns",
+			"page": 19,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}持续（1 次物件互动，特殊）",
+				"装备此装置时，你始终知道哪边是北，以及你的大致海拔或地下深度。",
+				{
+					"ENG_name": "Lodestone of Truth",
+					"type": "entries",
+					"name": "真理磁石",
+					"entries": [
+						"你可以用一次物件互动启动此效果。接下来三分钟内，只要你看着此装置，你就能察觉任何正在说话的生物是在故意说谎还是在说真话。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Life Form Scanner",
+			"name": "生命形态扫描仪",
+			"source": "BombsGadgetsGuns",
+			"page": 19,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作扫描你附近的活物。你能感知100尺内有多少只小型或更大的生物。你知道生物的数量、体型以及它们与你的大致距离和方向，但不知道其他任何信息。构装体或不死生物无法以此方式被探测到。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Lightning Gun",
+			"name": "闪电枪",
+			"source": "BombsGadgetsGuns",
+			"page": 19,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与使用该装置所整合武器的攻击动作结合，向一个目标射出一道闪电。若攻击命中，目标受到{@damage 6d6}点闪电伤害（未命中则伤害减半），以取代武器的正常伤害。无论命中与否，目标10尺内的每只生物都必须进行一次敏捷豁免检定。这些生物豁免失败时受到{@damage 3d6}点闪电伤害，成功则伤害减半。此装置使用后必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Mass Protoplaser",
+			"name": "群体原生激光器",
+			"source": "BombsGadgetsGuns",
+			"page": 19,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作启动它。选择最多三只你50尺内能看见的生物。每只目标生物恢复数量等于{@dice 3d6}+你的智力调整值的生命值。治疗量在11级时提高{@dice 1d6}（{@dice 4d6}），17级时再提高{@dice 2d6}（{@dice 6d6}）。此效果对活物和构装体都有效，但对不死生物无效。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Mechanical Fan",
+			"name": "机械风扇",
+			"source": "BombsGadgetsGuns",
+			"page": 19,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"当你用动作启动此装置时，一股强风会沿你选择的方向从你的工具腰带中刮出。风吹出一条60尺长、10尺宽的直线。在线内开始其回合的每只大型或更小的生物必须通过一次力量豁免检定，否则被沿直线方向推离你10尺。线内的任何生物朝你的方向移动时，每移动1尺需消耗2尺移动距离。强风会吹灭明火，并驱散气体和蒸汽。此效果持续1分钟，或直到你用一次物件互动提前结束它。此效果使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Mechanical Parasol",
+			"name": "机械阳伞",
+			"source": "BombsGadgetsGuns",
+			"page": 20,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，一顶防水的罩篷会在你头顶展开，为你周围10尺半径的区域遮蔽小雨和直射的阳光。你可以用第二次物件互动收起罩篷。此装置无法在强风中使用。"
+			]
+		},
+		{
+			"ENG_name": "Memory Eraser",
+			"name": "记忆消除器",
+			"source": "BombsGadgetsGuns",
+			"page": 20,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作启动它，指定30尺内一只能看见你的生物。目标生物必须进行一次智力豁免检定。若豁免成功，它在接下来24小时内免疫此装置的效果。若豁免失败，它将永久遗忘最近一分钟内发生的事件。此装置不能在战斗中使用，也不能用于敌对生物。以此方式失去的记忆只有借助{@spell 次等复原术}、{@spell 高等复原术}或类似魔法才能找回。5级时，你使用此装置可以多指定一只生物，且豁免失败的生物会多遗忘一分钟的事件（2只生物，2分钟）。11级（3只生物，3分钟）和17级（4只生物，4分钟）时再次提升。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Metabolism Infusion",
+			"name": "新陈代谢注入",
+			"source": "BombsGadgetsGuns",
+			"page": 20,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}持续（+1 次物件互动，特殊）",
+				"装备此装置时，你维持自身所需的食物和水量减半。",
+				{
+					"ENG_name": "Deep Sleep",
+					"type": "entries",
+					"name": "深度睡眠",
+					"entries": [
+						"当你用一次物件互动启动此装置时，你陷入一种与死亡无异的木僵状态。接下来30分钟内，一切外在检视以及用于判断你状态的法术和其他装置效果都显示你已死亡。这段时间内你目盲且失能，速度降为0。处于此状态时，你还对除心灵伤害外的所有伤害具有抗性。若你启动此效果时已患病或中毒，或在效果期间患病或中毒，疾病和毒素在你脱离木僵状态前都不会生效。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次启动此效果。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mind Control Hat",
+			"name": "精神控制帽",
+			"source": "BombsGadgetsGuns",
+			"page": 20,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}1 动作（+1 动作，特殊）",
+				"当你用动作启动此装置时，你试图把你的意志强加于50尺内一只你能看见的生物。该生物必须通过一次感知豁免检定，否则被你魅惑。若你或与你友好的生物正在与目标生物战斗，则它在此次豁免检定上具有优势。",
+				"该生物被魅惑期间，只要你们两人处于同一存在位面，你就与它保持着一条无线心灵感应链路。你保持意识期间（无需动作），可以通过这条心灵感应链路向它下达命令，它会尽力服从。你可以指定一条简单而笼统的行动指令，比如\"攻击那只生物\"\"跑到那边去\"或\"把那个东西取来\"。若该生物完成了命令且未得到你的进一步指示，它会尽最大能力自保求生。",
+				"你也可以用动作对目标取得完全而精确的控制。直到你的下回合结束，该生物只采取你选择的动作，不做任何你不允许它做的事。这段时间内，你还可以让该生物使用反应，但这需要你同时消耗自己的反应。",
+				"目标每次受到伤害时，它都会对精神控制进行一次新的感知豁免检定。若豁免成功，此效果终止。",
+				"精神控制持续1小时，除非你用一次物件互动提前结束它。在一次短休或长休中为此装置重新充能后，你可以尝试控制另一只生物的心智。但同一时间你只能控制一只生物的心智。"
+			]
+		},
+		{
+			"ENG_name": "Mining Drill",
+			"name": "采矿钻头",
+			"source": "BombsGadgetsGuns",
+			"page": 20,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，你获得15尺挖掘速度，持续到你当前回合之后第二个回合结束时为止。你在身后留下一条5尺宽、与你等高的隧道。此装置使用后必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Nanobot Infusion",
+			"name": "纳米机器人注入",
+			"source": "BombsGadgetsGuns",
+			"page": 20,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}1 动作（1 反应，特殊）",
+				"当你用一次物件互动启动此装置时，你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"注入启动时，你恢复数量等于你的智力调整值的生命值。",
+						"在你的每个回合开始时，你恢复1点生命值。",
+						"你对除心灵伤害以外的所有伤害类型具有抗性。",
+						"你进行的所有体质检定和体质豁免检定都具有优势。",
+						"若注入生效期间你的生命值降至0，你可以进行一次DC 10的体质豁免检定。若检定成功，你的生命值改为降至1。此效果第一次触发之后每再触发一次，该豁免检定的DC提高5。"
+					]
+				},
+				"这些效果持续到注入启动后你第三个回合结束时为止。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Net Launcher",
+			"name": "撒网发射器",
+			"source": "BombsGadgetsGuns",
+			"page": 21,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}武器（网）",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与使用该装置所整合之网的攻击动作结合。网攻击的射程提高到15/30。此效果使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Neuro-Suggestive Parchment",
+			"name": "神经暗示羊皮纸",
+			"source": "BombsGadgetsGuns",
+			"page": 21,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"此装置看上去不过是一张放在结实皮夹里的空白羊皮纸。但它实际上内置了一枚神经心灵发射回路。装备此装置时，你可以用动作把羊皮纸出示给10尺内一只能看见它的生物。目标必须进行一次感知豁免检定。若豁免成功，它会看穿神经暗示羊皮纸的真面目\u2014\u2014一张普普通通的白纸，并且之后24小时内免疫此装置的效果。若豁免失败，它看到的则是一幅幻象，让它相信羊皮纸上载有证明你是一位\"大人物™\"的证件。这些证件具体呈现为何样由你的DM决定，但它们往往采取能撩动观者内心焦虑的形式。例如，一名腐败的城市卫兵可能会把它看作市长签发的委任状，证明你是一名特别调查员。",
+				"5级时，你使用此装置可以多指定一只生物（2个目标），11级（3个目标）和17级（4个目标）时各再多指定一个目标。",
+				"此装置的效果持续1小时。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Night Vision Goggles",
+			"name": "夜视镜",
+			"source": "BombsGadgetsGuns",
+			"page": 21,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}眼镜",
+				"{@b 启动类型：}持续（+1 次物件互动，特殊）",
+				"只要装备着此装置，你就拥有60尺范围的黑暗视觉。若你已有黑暗视觉，其范围增加15尺。",
+				{
+					"ENG_name": "Electroscopic Sight",
+					"type": "entries",
+					"name": "电测视觉",
+					"entries": [
+						"当你用一次物件互动启动此装置时，接下来1分钟内你获得如同可见般看见隐形生物和物体的能力。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Oil Slick Boots",
+			"name": "油渍靴",
+			"source": "BombsGadgetsGuns",
+			"page": 21,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，滑溜的油液会从你的鞋中喷出，在你身后的地面形成一条10尺长的油带。油带使受影响区域变为困难地形，持续1分钟。喷油时，站在油带中的每只生物必须通过一次敏捷豁免检定，否则倒地。进入该区域或在其中结束回合的生物也必须通过一次敏捷豁免检定，否则倒地。此装置使用后必须重置，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Parachute Cloak",
+			"name": "降落伞斗篷",
+			"source": "BombsGadgetsGuns",
+			"page": 21,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}斗篷",
+				"{@b 启动类型：}1 反应",
+				"装备此装置时，你坠落时可以用反应将受到的坠落伤害减少数量等于你工程师等级五倍的数值。此装置使用后必须重置，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Paranormal Scanner",
+			"name": "超自然扫描仪",
+			"source": "BombsGadgetsGuns",
+			"page": 21,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作扫描你附近的不死或邪魔存在。你能感知100尺内有多少只小型或更大、属于不死生物或邪魔类型的生物。你既能感知当前存在位面上的邻近生物，也能感知以太位面边界区域中的生物。你知道生物的数量、体型以及它们与你的大致距离和方向，但不知道其他任何信息。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Particle Accelerator",
+			"name": "粒子加速器",
+			"source": "BombsGadgetsGuns",
+			"page": 21,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，它会加速你的运动神经，使你在自己的回合采取攻击动作时可以攻击两次而非一次。若你已拥有额外攻击特性，则你在此特性已给予的攻击之外再进行一次额外攻击。此效果在启动后你第三个回合结束时终止。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Personal Forcefield",
+			"name": "个人力场",
+			"source": "BombsGadgetsGuns",
+			"page": 21,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}1 反应",
+				"装备此装置时，每当你成为一次近战、远程或法术攻击的目标，你可以用反应启动它。启动后，一层微光闪烁的力场会笼罩着你，其生命值等于10+你的智力调整值+两倍你的工程师等级。每当你将要受到伤害时，力场会替你承受。若该伤害将力场生命值降至0，你承受剩余的伤害。力场只要保有1点或更多生命值就持续1分钟，或直到你用一次物件互动将其关闭。此装置使用后必须重新充能，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Personal Glider",
+			"name": "个人滑翔翼",
+			"source": "BombsGadgetsGuns",
+			"page": 22,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}斗篷",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，你的斗篷会变得硬挺，让你能从高处滑翔而下。你可以以30尺的速度飞行，最大距离最多为起始点高度的三倍。（如果你从30尺高处出发，最多可以从起点滑翔90尺。）若到达最大距离时你仍在空中，你将坠落。此装置使用后必须重置，此效果直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Personal Sonar",
+			"name": "个人声呐",
+			"source": "BombsGadgetsGuns",
+			"page": 22,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}持续",
+				"装备此装置时，你拥有30尺范围的盲视。"
+			]
+		},
+		{
+			"ENG_name": "Personal Teleporter",
+			"name": "个人传送器",
+			"source": "BombsGadgetsGuns",
+			"page": 22,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"装备此装置时，你可以用一次物件互动启动它，将你自己和你携带的所有物品传送到100尺内一处你能看见的地点。在你接下来的两个回合中，你每回合可以用一次附赠动作再次启动装置，每这样做一次就再次传送自己一次。若你将抵达的地点已被物体或生物占据，你受到{@damage 4d6}点力场伤害，且装置传送失败。此装置一旦启动，就必须重新充能，直到你完成一次短休或长休后才能再次启动。"
+			]
+		},
+		{
+			"ENG_name": "Pop-Up Shield",
+			"name": "弹出式护盾",
+			"source": "BombsGadgetsGuns",
+			"page": 22,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 反应",
+				"装备此装置时，你在成为一次近战或远程攻击的目标时可以用反应展开一面由坚固而柔韧的合成材料制成的弹出式护盾。无论你是否拥有护盾熟练项，你都视为熟练于这面护盾，且护盾不占用你的双手。直到你的下回合结束，该护盾为你提供半身掩护（AC和敏捷豁免检定+2）。11级时此益处提升为四分之三掩护（AC和敏捷豁免检定+5）。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Positive Energy Projector",
+			"name": "正能量投射器",
+			"source": "BombsGadgetsGuns",
+			"page": 22,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动（+1 附赠动作，特殊）",
+				"装备此装置时，你可以用一次物件互动启动它。启动后，它在你周围投射出一个30尺半径的正能量球。在你的每个回合，你可以用附赠动作让能量球内的一只生物（包括你自己）恢复{@dice 1d8}点生命值外加你的智力调整值。此效果对活物和构装体都有效，但对不死生物无效。能量投射在启动后你第三个回合结束时停止。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Power Punch",
+			"name": "强力拳击",
+			"source": "BombsGadgetsGuns",
+			"page": 22,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与攻击动作结合，对5尺内的一只生物进行一次徒手打击。若你的攻击命中，目标受到{@damage 1d6}点钝击伤害，且必须通过一次力量豁免检定，否则被推离你最多15尺。该攻击的伤害在5级（{@damage 2d6}）、11级（{@damage 3d6}）和17级（{@damage 4d6}）时各提高{@damage 1d6}。此效果使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Powered Armor",
+			"name": "动力装甲",
+			"source": "BombsGadgetsGuns",
+			"page": 22,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}1 反应",
+				"装备此装置时，每当你成为一次攻击的目标，你都可以用反应启动它。你对该次攻击以及该回合剩余时间内对你的所有后续攻击，将你的智力调整值加到AC上。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Proton Beam",
+			"name": "质子光束",
+			"source": "BombsGadgetsGuns",
+			"page": 22,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与使用该装置所整合武器的攻击动作结合，向一只大型或更小的目标生物射出一道能量束。你的熟练加值和敏捷调整值都加到该攻击检定上。只要你看得见目标，它可以位于你当前的存在位面，也可以位于以太位面。若攻击命中，能量束会缠绕住目标，使其被束缚。",
+				"在每个自己的回合开始时，目标可以进行一次感知豁免检定。此效果在目标豁免成功时，或在其被此效果指定后的第三个回合结束时终止。只要目标仍被束缚，你可以在自己的回合用动作将该生物朝任意方向推离或拉近最多15尺。",
+				"此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Protoplaser",
+			"name": "原生激光器",
+			"source": "BombsGadgetsGuns",
+			"page": 23,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作启动它并触碰一只生物。被你触碰的生物恢复数量等于{@dice 1d6}+你的智力调整值的生命值。治疗量在5级（{@dice 3d6}）、11级（{@dice 5d6}）和17级（{@dice 7d6}）时各提高{@dice 2d6}。此效果对活物和构装体都有效，但对不死生物无效。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Proximity Detector",
+			"name": "接近感应器",
+			"source": "BombsGadgetsGuns",
+			"page": 23,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"你可以用此装置设置一道防范不速之客的警报。用动作选择一扇门、一扇窗，或你30尺内一块不大于20尺立方的区域。接下来8小时内，或直到你用一次物件互动关闭装置为止，只要你仍处于同一存在位面，每当一只微型或更大的生物接触或进入指定区域，警报都会提醒你。设置警报时，你选择警报是静音的还是可闻的。只要你在受防护区域1英里内，静音警报会悄悄提醒你防护已被触发。即使你在熟睡，这种警报也能将你唤醒。可闻警报则会在受防护区域100尺内发出10秒刺耳的警笛声。",
+				"在一次短休或长休后，你可以选择在新的区域设置警报。但同一时间你只能拥有一个激活警报的区域。"
+			]
+		},
+		{
+			"ENG_name": "Quake Machine",
+			"name": "震动机",
+			"source": "BombsGadgetsGuns",
+			"page": 23,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"装备此装置时，你可以用一次物件互动在你10尺内一处地点的地面上放置一个地震反应器。在你下个回合开始时，该装置触发，引发一场地震扰动，在你放置它的地点周围50尺半径的圆形区域内造成剧烈震动。这场震动撼动该区域内地面上的一切生物和建筑，产生以下效果：",
+				{
+					"type": "list",
+					"items": [
+						"该区域的地面变为困难地形。",
+						"地面上的每只生物必须进行一次敏捷豁免检定。豁免失败的生物倒地。",
+						"地面上每只正在维持专注的生物必须进行一次体质豁免检定。豁免失败的生物专注被打破。",
+						"震动对受影响区域内接触地面的任何建筑造成50点钝击伤害。若某座建筑生命值降至0，它会坍塌，并可能伤及附近的生物。处于距建筑高度一半距离内的生物必须进行一次敏捷豁免检定。豁免失败的生物受到{@damage 5d6}点钝击伤害、倒地并被掩埋在瓦砾中，需要用动作进行一次DC 20的力量（运动）检定才能脱身。DM可以根据瓦砾的性质将DC调高或调低。豁免成功的生物所受伤害减半，且不会倒地或被掩埋。"
+					]
+				},
+				"除非你用一次物件互动提前结束效果，否则上述效果会在你接下来两个回合的开始时重复发生。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Rearview Mirror",
+			"name": "后视镜",
+			"source": "BombsGadgetsGuns",
+			"page": 23,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}眼镜",
+				"{@b 启动类型：}持续",
+				"除正常的视野外，你还能察觉身后的物体。任何从你背后潜行的生物都无法令你措手不及。"
+			]
+		},
+		{
+			"ENG_name": "Rebreather",
+			"name": "循环呼吸器",
+			"source": "BombsGadgetsGuns",
+			"page": 23,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}持续（1 动作，特殊）",
+				"只要装备着此装置，你就可以在水下呼吸。",
+				{
+					"ENG_name": "Air Filter",
+					"type": "entries",
+					"name": "空气过滤器",
+					"entries": [
+						"只要装备着此装置，你就可以用动作启动装置内置的紧急空气过滤器。启动后1分钟内，你在对抗有害气体和蒸汽的豁免检定上具有优势。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Recovery Field",
+			"name": "恢复力场",
+			"source": "BombsGadgetsGuns",
+			"page": 23,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}持续",
+				"只要装备着此装置，若你或60尺内任何友好生物在短休结束时恢复生命值，每个这样做的生物都会额外恢复{@dice 1d4}点生命值。11级时恢复量提高到{@dice 1d6}点，17级时再次提高到{@dice 1d8}点。"
+			]
+		},
+		{
+			"ENG_name": "Regeneration Ray",
+			"name": "再生射线",
+			"source": "BombsGadgetsGuns",
+			"page": 23,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作向你40尺内能看见的一个目标射出一道正能量射线。这道射线能恢复健康，使受影响生物的伤口以大幅提高的速率再生。该生物恢复50点生命值。接下来1分钟内，目标还会在其每个回合开始时恢复1点生命值。此效果对活物和构装体都有效，但对不死生物无效。此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Reset Button",
+			"name": "重置按钮",
+			"source": "BombsGadgetsGuns",
+			"page": 24,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 反应",
+				"战斗中，你可以在任何其他生物的回合结束时用反应启动此装置。启动后，装置会改变时间之流，逆转该生物回合中发生的一切事件和动作。该生物重新进行它的回合，并可以选择采取与之前不同的动作，或相同的动作，结果可能有所不同。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Retractable Bayonet",
+			"name": "伸缩刺刀",
+			"source": "BombsGadgetsGuns",
+			"page": 24,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}1 次物件互动（+1 次攻击动作，特殊）",
+				"装备此装置的武器内藏一根可伸缩的金属尖刺刺刀，使该武器在正常远程攻击能力之外，还能充当有效的近身近战武器。你可以用一次物件互动展开刺刀或将其藏入武器中。只要刺刀处于展开状态，你就可以用该武器进行近战攻击，将你的熟练加值和你的力量或敏捷调整值（自选其一）加到攻击检定上。若攻击命中，刺刀造成{@damage 1d6}外加你的力量或敏捷调整值的穿刺伤害。若你用刺刀命中一只大型或更小的生物，你可以选择将该生物推离你最多5尺。"
+			]
+		},
+		{
+			"ENG_name": "Retractable Flippers",
+			"name": "伸缩脚蹼",
+			"source": "BombsGadgetsGuns",
+			"page": 24,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}持续",
+				"装备此装置时，你可以用一次物件互动从靴底展开机械脚蹼。脚蹼展开期间，游泳不算困难地形，行走反而算。你可以用第二次物件互动收回脚蹼。"
+			]
+		},
+		{
+			"ENG_name": "Retractable Ice Skates",
+			"name": "伸缩冰刀",
+			"source": "BombsGadgetsGuns",
+			"page": 24,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}1 次物件互动",
+				"装备此装置时，你可以用一次物件互动从靴底展开一双小冰刀。冰刀展开期间，你无视冰雪造成的困难地形，但没有冰雪的地形对你来说反而算困难地形。你可以再用一次物件互动收回冰刀以关闭此效果。",
+				"冰刀展开期间，你可以用攻击动作对5尺内的一只生物进行一次徒手打击（踢击）。该攻击命中时造成{@damage 1d4}点挥砍伤害。"
+			]
+		},
+		{
+			"ENG_name": "Retractable Stilts",
+			"name": "伸缩高跷",
+			"source": "BombsGadgetsGuns",
+			"page": 24,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}1 次物件互动",
+				"装备此装置时，你可以用一次物件互动从鞋中展开伸缩高跷，使你的有效身高增加5尺，让你够到原本够不着的物体。高跷展开期间，行走算困难地形。若你进行武器攻击或被攻击命中，你必须通过一次DC 13的敏捷（特技）检定，否则倒地。你在任何抵抗推撞的检定上都具有劣势。你可以用第二次物件互动收起高跷。"
+			]
+		},
+		{
+			"ENG_name": "Smokescreen Emitter",
+			"name": "烟幕发射器",
+			"source": "BombsGadgetsGuns",
+			"page": 24,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，浓烈的黑烟充满你周围30尺球体。烟雾阻挡视线，该区域内的所有物体都处于重度遮蔽。烟雾持续{@dice 2d4}轮，除非被和风或更强的风驱散。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Sonic Beam Module",
+			"name": "音波光束模块",
+			"source": "BombsGadgetsGuns",
+			"page": 24,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动 + 1 动作",
+				"此装置由一个强力扩音器构成，能把一个说出的词聚焦成一束压缩音波。装备此装置时，你可以将一次物件互动与攻击动作结合，对60尺内一个你能看见的目标进行一次远程攻击。你的熟练加值和敏捷调整值都加到该攻击检定上。若攻击命中，音波束对目标造成{@damage 3d6}点雷鸣伤害。此外，若目标是一具生物，它必须通过一次力量豁免检定，否则被推离你10尺并倒地。若你无法说话，则不能使用此装置。此装置使用后必须重新充能，直到你进行一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Sound Dampener",
+			"name": "声音阻尼器",
+			"source": "BombsGadgetsGuns",
+			"page": 24,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"当你用一次物件互动启动此装置时，接下来3分钟内，只要你移动不超过速度的一半，你在悄然移动的敏捷（隐匿）检定上就具有优势。此效果使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Sparkgap's Coil",
+			"name": "火花隙线圈",
+			"source": "BombsGadgetsGuns",
+			"page": 25,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"当你用动作启动此装置时，你沐浴在一片火花雨中。选择以下效果之一：",
+				{
+					"type": "list",
+					"items": [
+						"{@i 掷出闪电。}一道闪电化作一条50尺长、5尺宽的直线，沿你选择的方向从你身上轰出。直线内的每只生物必须进行一次敏捷豁免检定。豁免失败的生物受到{@damage 6d6}点闪电伤害，豁免成功则伤害减半。闪电点燃区域内所有未被穿戴或携带的易燃物体。",
+						"{@i 火花之盾。}直到你的下回合开始，每当5尺内的一只生物以近战攻击指定你为目标，该生物就受到{@damage 3d8}点闪电伤害，且直到其下回合开始前无法进行反应。",
+						"{@i 静电荷。}你30尺内穿着金属护甲的生物被直接推离你最多15尺。直到你的下回合开始，你周围60尺球体内任何穿着金属护甲的生物朝你的方向每移动1尺都必须消耗2尺移动距离。任何穿着金属护甲的生物都无法进入距你10尺以内。"
+					]
+				},
+				"在你接下来的两个回合中，你每回合都可以用附赠动作使用上述效果之一。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次启动。"
+			]
+		},
+		{
+			"ENG_name": "Spell Nullifier",
+			"name": "法术无效器",
+			"source": "BombsGadgetsGuns",
+			"page": 25,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}1 反应",
+				"装备此装置时，当你看见60尺内的一只生物正在施展法术，你可以用反应启动它。若你如此做且该生物正在施展3环或更低的法术，该法术失败且不产生任何效果。若它正在施展4环或更高的法术，则进行一次DC等于10+该法术环阶的智力检定。检定成功则该生物的法术失败且不产生任何效果。17级起，若你在此次检定中掷出20且该法术为7环或更低，则该法术对预定目标不产生效果，转而以施展它的生物为目标。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Spring Boots",
+			"name": "弹簧靴",
+			"source": "BombsGadgetsGuns",
+			"page": 25,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}持续",
+				"只要装备着此装置，你跳跃的距离可以达到正常值的两倍，不过任何一回合内你的跳跃距离都不能超过你剩余移动距离所允许的上限。"
+			]
+		},
+		{
+			"ENG_name": "Spring-Loaded Scabbard",
+			"name": "弹簧剑鞘",
+			"source": "BombsGadgetsGuns",
+			"page": 25,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}武器（任何不含双手属性的武器）",
+				"{@b 启动类型：}1 次物件互动",
+				"装备此装置时，你可以在同一次物件互动中，同时拔出该装置所整合的武器和另一件武器。"
+			]
+		},
+		{
+			"ENG_name": "Spy Bug",
+			"name": "间谍虫",
+			"source": "BombsGadgetsGuns",
+			"page": 25,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"你可以用动作启动此装置，它会化作一只甲虫、蟑螂或蟋蟀之类的微型机械昆虫。该发条装置AC为10、生命值为1、移动速度为30尺，且不能攻击。它无法自行采取任何动作，但你可以通过无线通讯链路控制这只发条昆虫。控制发条装置期间，你通过它的感官进行感知，而自身的感官则既聋又盲。若发条装置距你超过100尺，或你用一次物件互动将其关闭，无线链路即断开且装置停用。11级起，你的间谍虫在步行速度之外获得50尺飞行速度，你可控装置的距离也提升到200尺。"
+			]
+		},
+		{
+			"ENG_name": "Spyglass Eyeglass",
+			"name": "单筒望远镜镜片",
+			"source": "BombsGadgetsGuns",
+			"page": 25,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}眼镜",
+				"{@b 启动类型：}持续",
+				"装备此装置时，你在依赖视觉的感知（察觉）检定上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Steam Spray",
+			"name": "蒸汽喷雾",
+			"source": "BombsGadgetsGuns",
+			"page": 25,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 反应",
+				"装备此装置时，你可以用反应使5尺内某生物的攻击检定具有劣势。无法被目盲的攻击者免疫此效果。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Stim Infusion",
+			"name": "兴奋剂注入",
+			"source": "BombsGadgetsGuns",
+			"page": 25,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}护甲",
+				"{@b 启动类型：}持续（+1 动作，特殊）",
+				"装备此装置时，你的体能得到提升，并获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你在冒着力竭风险之前可以不进食的天数，可以加上你的智力调整值的一半。",
+						"你在对抗任何会让你产生力竭等级的效果的体质豁免检定上具有优势，例如进行强迫行军或试图在饮水过少的情况下生存时。",
+						"你每晚所需的睡眠时间减半。"
+					]
+				},
+				{
+					"ENG_name": "Stimulant Injection",
+					"type": "entries",
+					"name": "兴奋剂注射",
+					"entries": [
+						"你可以用动作启动此效果。启动后，你必须进行一次体质豁免检定。若检定成功，你的力竭等级降低一级。此效果使用后必须重新充能，直到你完成一次长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Suction Cup Climbers",
+			"name": "吸盘攀爬器",
+			"source": "BombsGadgetsGuns",
+			"page": 26,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}持续",
+				"装备此装置时，你进行的所有攀爬力量（运动）检定都具有优势。17级起，装备此装置时攀爬不再消耗额外移动距离。"
+			]
+		},
+		{
+			"ENG_name": "Targeting Scope",
+			"name": "瞄准镜",
+			"source": "BombsGadgetsGuns",
+			"page": 26,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}武器（弓、弩或枪械）",
+				"{@b 启动类型：}持续",
+				"此装置能提高你使用其所附武器进行攻击时的精度。你使用该武器攻击长程射程内的目标时不会承受劣势。"
+			]
+		},
+		{
+			"ENG_name": "Taser Gloves",
+			"name": "电击手套",
+			"source": "BombsGadgetsGuns",
+			"page": 26,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与攻击动作结合，对5尺内的一只生物进行一次徒手打击。若目标穿着金属制成的护甲，则你在该攻击检定上具有优势。命中时，目标受到你的徒手打击伤害外加{@damage 1d8}点闪电伤害，且直到其下回合开始前无法进行反应。该攻击的伤害在11级（{@damage 2d8}）和17级（{@damage 3d8}）时各提高{@damage 1d8}。此攻击成功命中后，该效果必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Thought Projector",
+			"name": "思维投射器",
+			"source": "BombsGadgetsGuns",
+			"page": 26,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}1 次物件互动",
+				"你可以用一次物件互动启动此装置。接下来五分钟内，你获得与120尺内其他生物心灵感应交流的能力。你可以通过共享文字、图像、声音及其他感官信息的心智投影，与任何智力至少为1的生物进行心灵感应交流。此效果使用后，装置必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Time-Dilation Zone",
+			"name": "时间膨胀区域",
+			"source": "BombsGadgetsGuns",
+			"page": 26,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 精密复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"当你用动作启动此装置时，选择你60尺内一处你能看见的地点。该装置会在所选地点周围投射出一个40尺的隐形能量球。球内生物的时间流速被改变。",
+				"能量球内的每只生物移动消耗加倍，其AC和敏捷豁免检定承受-2减值，且无法进行反应。在球内开始其回合的生物只能使用动作或附赠动作之一，不能两者都用。无论该生物的能力或魔法物品如何，它在自己的回合内进行的近战或远程攻击不能超过一次。如果该生物试图施展一个施法时间为1动作的法术，则掷一枚d20。结果为11或更高时，该法术直到该生物的下个回合才生效，且该生物必须在该回合用其动作完成该法术的施展。若它无法如此做，该法术浪费掉。",
+				"能量球持续1分钟，除非你用一次物件互动提前结束它。此装置使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Tin Foil Hat",
+			"name": "锡箔帽",
+			"source": "BombsGadgetsGuns",
+			"page": 26,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}持续",
+				"只要装备着此装置，你就无法成为预言系魔法的目标，也无法透过魔法或科技的探知传感器被察觉。"
+			]
+		},
+		{
+			"ENG_name": "Tranquilizer Timepiece",
+			"name": "镇静时计",
+			"source": "BombsGadgetsGuns",
+			"page": 26,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}持续（1 次物件互动 + 1 动作，特殊）",
+				"装备此装置时，你始终知道当前的时刻、日期和星期几，并能轻松追踪时间的流逝。",
+				{
+					"ENG_name": "Tranq Dart",
+					"type": "entries",
+					"name": "镇静飞镖",
+					"entries": [
+						"装备此装置时，你可以将一次物件互动与攻击动作结合，向你30尺内能看见的一个目标发射一枚弹簧压缩飞镖。你的熟练加值和敏捷调整值加到该攻击检定上。若攻击命中，目标受到{@damage 1d4}点穿刺伤害，且必须通过一次体质豁免检定，否则陷入昏迷并持续10分钟。若昏迷生物受到伤害，或有人用动作将其摇醒或拍醒，它便会苏醒。此效果使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Transmogrifying Ray",
+			"name": "变形射线",
+			"source": "BombsGadgetsGuns",
+			"page": 26,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作从指尖向60尺内一只你能看见的目标生物射出一道能量光束。目标必须通过一次魅力豁免检定，否则它以及它携带的所有装备都会变成一只小型家畜的模样，比如鸡、山羊或绵羊。变形期间适用以下规则：",
+				{
+					"type": "list",
+					"items": [
+						"目标的游戏数据被该野兽的数据取代，但它保留自己的阵营、个性、豁免熟练项、生命骰和生命值。",
+						"目标仍可移动和采取动作，但受其野兽形态能力的限制。",
+						"它不能施展任何法术。不过，变形不会打断它对已施展法术的专注，也不会阻止它进行已施展法术的一部分的动作。"
+					]
+				},
+				"在每个自己的回合结束时，目标可以再进行一次魅力豁免检定。此效果在目标豁免成功抵抗该效果时、它受到任意来源的伤害时、或变形后其第三个回合结束时终止。",
+				"此效果使用后，装置必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Treasure Detector",
+			"name": "财宝探测器",
+			"source": "BombsGadgetsGuns",
+			"page": 27,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作（1 动作，特殊）",
+				"此装置可用于探测天然矿物和加工金属物体的存在。你可以用动作使装置扫描一个不大于15立方尺的容器，例如封闭的木桶、上锁的箱子、保险柜或行李箱。装置会发出一声可闻的哨音，指示容器中是否藏有天然矿物或加工金属，包括普通金属（如青铜、铁、钢、铜、银和金）与奇异金属（如精金或秘银）。它只能探测到金属的存在，无法探测其确切种类或形态（硬币、护甲等）。哨音的强度还能让你大致判断容器中金属的数量：低强度哨音表示金属少于5磅（约与250枚硬币等重），中强度哨音表示6-19磅金属，响亮哨音表示20磅（1,000枚硬币）或更重。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Universal Translator",
+			"name": "通用翻译器",
+			"source": "BombsGadgetsGuns",
+			"page": 27,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}头部装备",
+				"{@b 启动类型：}1 次物件互动",
+				"你可以用一次物件互动启动此装置。接下来三分钟内，你能理解你听到的任何口头语言的字面含义。此效果使用后，装置必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Water Condenser",
+			"name": "水分凝结器",
+			"source": "BombsGadgetsGuns",
+			"page": 27,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 次物件互动",
+				"此装置从空气中凝结水蒸气，并将水储存在你工具腰带上的水囊里。你可以用动作倒出最多1加仑洁净的淡水。此效果使用后，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Weapon Flinger",
+			"name": "武器投掷器",
+			"source": "BombsGadgetsGuns",
+			"page": 27,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}武器（不含重型或双手属性的近战武器）",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与使用该装置所整合武器的攻击动作结合，用该武器进行一次远程攻击。就此次攻击而言，将该武器视为具有投掷（射程20/40）属性。此效果使用后，装置必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Weapon Reach",
+			"name": "武器触及",
+			"source": "BombsGadgetsGuns",
+			"page": 27,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 伸缩式简易复杂度装置设计图}",
+				"{@b 装备类型：}武器（不具有重型或双手特性的近战武器）",
+				"{@b 启动类型：}持续",
+				"此装置为所附武器加装一根伸缩握柄。将该装置所附的武器视为具有触及特性。若它已具有触及特性，则该武器的触及距离再延长5尺。"
+			]
+		},
+		{
+			"ENG_name": "Weather Rocket",
+			"name": "气象火箭",
+			"source": "BombsGadgetsGuns",
+			"page": 27,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}工具腰带",
+				"{@b 启动类型：}1 动作",
+				"当你用动作启动此装置时，你向天空发射一枚小火箭，它在高空爆炸，释放改变局部大气的化学物质，改变你所在位置周围5英里半径范围内的天气状况。你必须身处户外才能启动此效果。",
+				"你可以改变当前的天气状况，包括降水、气温和风力。新状况需要{@dice 1d4*10|1d4 x 10}分钟才会生效。此效果持续6小时，随后天气逐渐恢复正常。",
+				"在下表中查阅当前的天气状况。你可以将每项状况上下调整最多2级。你也可以把风向改为任意你想要的方向。",
+				{
+					"type": "table",
+					"caption": "降水",
+					"colLabels": [
+						"等级",
+						"状态"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"天晴"
+						],
+						[
+							"2",
+							"薄云"
+						],
+						[
+							"3",
+							"阴天或有雾"
+						],
+						[
+							"4",
+							"雨或雪"
+						],
+						[
+							"5",
+							"暴雨或暴风雪"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"colStyles": [
+						"\" style=\"width:49%\"",
+						"\" style=\"width:2%\"",
+						"\" style=\"width:49%\""
+					],
+					"rows": [
+						[],
+						[
+							{
+								"type": "table",
+								"caption": "风势",
+								"colLabels": [
+									"等级",
+									"状态"
+								],
+								"colStyles": [
+									"col-1 text-center",
+									"col-11"
+								],
+								"rows": [
+									[
+										"1",
+										"无风"
+									],
+									[
+										"2",
+										"和风"
+									],
+									[
+										"3",
+										"强风"
+									],
+									[
+										"4",
+										"狂风"
+									],
+									[
+										"5",
+										"风暴"
+									],
+									[
+										"6",
+										"暴雨或暴风雪"
+									]
+								]
+							},
+							"",
+							{
+								"type": "table",
+								"caption": "气温",
+								"colLabels": [
+									"等级",
+									"状态"
+								],
+								"colStyles": [
+									"col-1 text-center",
+									"col-11"
+								],
+								"rows": [
+									[
+										"1",
+										"酷热"
+									],
+									[
+										"2",
+										"炎热"
+									],
+									[
+										"3",
+										"暖和"
+									],
+									[
+										"4",
+										"清凉"
+									],
+									[
+										"5",
+										"寒冷"
+									],
+									[
+										"6",
+										"极寒"
+									]
+								]
+							}
+						]
+					]
+				},
+				"此装置使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Webshooter",
+			"name": "蛛网发射器",
+			"source": "BombsGadgetsGuns",
+			"page": 28,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动 + 1 次攻击动作",
+				"装备此装置时，你可以将一次物件互动与攻击动作结合，从手套内暗藏的软管中喷出一股粘性蛛网。对30尺内一只大型或更小的生物进行一次远程攻击。你的熟练加值和敏捷调整值加到该攻击检定上。若你命中，该生物被蛛网束缚。被束缚的生物可以用动作进行一次力量豁免检定以挣脱蛛网。蛛网被摧毁时效果终止。蛛网AC为10、生命值为5、对钝击伤害具有抗性，并对毒素和心灵伤害免疫。此装置使用后，其效果必须重置，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Wheeled Heels",
+			"name": "轮式鞋跟",
+			"source": "BombsGadgetsGuns",
+			"page": 28,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 高级复杂度装置设计图}",
+				"{@b 装备类型：}鞋类",
+				"{@b 启动类型：}持续",
+				"只要装备着此装置，你在自己的每个回合都可以用附赠动作采取疾走动作。",
+				{
+					"ENG_name": "Rocket Shoes",
+					"type": "entries",
+					"name": "火箭鞋",
+					"entries": [
+						"你可以用一次物件互动点燃靴子内置的火箭，使你的步行速度翻倍，且任何对你进行借机攻击的生物在该攻击检定上具有劣势。此效果持续1分钟。此效果使用后必须重新充能，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wrist Rockets",
+			"name": "腕部火箭",
+			"source": "BombsGadgetsGuns",
+			"page": 28,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 简易复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 动作",
+				"装备此装置时，你可以用动作启动它。若如此做，你从手套中射出两枚爆炸火箭。两枚火箭各命中一个你选择的、80尺内你能看见的生物。每枚火箭对其目标造成{@damage 1d4+1}点力场伤害。所有火箭同时命中，你可以指挥它们命中同一个或不同的目标。5级时你可以多发射一枚火箭（共3枚）。11级（4枚）和17级（5枚）时各再增加一枚。此装置使用后必须重新装填，直到你完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Writing Pen",
+			"name": "书写笔",
+			"source": "BombsGadgetsGuns",
+			"page": 28,
+			"featureType": [
+				"EG"
+			],
+			"entries": [
+				"{@i 琐碎复杂度装置设计图}",
+				"{@b 装备类型：}手套",
+				"{@b 启动类型：}1 次物件互动（+1 动作，特殊）",
+				"你的手套中内置了一小瓶墨水和一支可伸缩的机械书写笔。你可以用一次物件互动亮出或收起这支笔。",
+				{
+					"ENG_name": "Invisible Ink",
+					"type": "entries",
+					"name": "隐形墨水",
+					"entries": [
+						"你可以用动作以此装置的特殊消隐墨水在羊皮纸、纸张或其他合适的书写材料上写下一则信息。信息最多可长达50个词。书写一回合后墨水便隐去，此后只有能够看见隐形物体的生物才能读到它。此效果使用后必须重置，直到你完成一次短休或长休后才能再次使用。"
+					]
+				}
+			]
+		}
+	],
+	"feat": [
+		{
+			"ENG_name": "Famous Artisan",
+			"name": "知名工匠",
+			"source": "BombsGadgetsGuns",
+			"page": 29,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你获得一种工匠工具和一项自选技能的熟练项。",
+						"如果你在冒险间隙使用工匠工具进行制作来谋生，你挣得的钱足以维持富裕的生活方式，而非朴素的生活方式。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Firearm Expert",
+			"name": "枪械专家",
+			"source": "BombsGadgetsGuns",
+			"page": 29,
+			"prerequisite": [
+				{
+					"other": "枪械武器的熟练项"
+				}
+			],
+			"entries": [
+				"得益于对枪械的大量练习，你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你在敌对生物5尺范围内发动远程攻击检定时，不会因此而具有劣势。",
+						"当你使用{@action 攻击}动作并以一把单手枪械武器攻击后，你可以用附赠动作用另一只手持握的一把已装填的、具有轻型属性的枪械武器进行攻击。",
+						"当你使用具有双手属性的枪械武器进行攻击时，若伤害骰掷出1或2，你可以重掷该骰，且必须使用新的结果。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Firearm Familiarity",
+			"name": "枪械熟稔",
+			"source": "BombsGadgetsGuns",
+			"page": 29,
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				"你对各种不同的枪械进行了大量练习并学会使用它们，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得枪械武器的熟练项"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gadget Mastery",
+			"name": "装置精通",
+			"source": "BombsGadgetsGuns",
+			"page": 29,
+			"prerequisite": [
+				{
+					"other": "你必须能够使用至少一项工程师装置设计图"
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你操控的装置的伤害骰掷出1时，你可以重掷该骰。你必须使用新骰的结果。",
+						"当你使用一件影响某个区域的装置时，你可以庇护区域内的一些生物不受该装置影响。选择数量等于你的智力调整值减2（最少1个）的生物。你所选择的生物不受该装置的影响。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Homebrew Technologist",
+			"name": "自制技术专家",
+			"source": "BombsGadgetsGuns",
+			"page": 29,
+			"entries": [
+				"从工程师的设计图列表中选择两张琐碎复杂度和一张简易复杂度的装置设计图。你学会并能使用这些设计图，如同你是工程师一般。如果这些装置的启动效果需要短休或长休才能重置，你必须完成一次长休才能再次使用它。"
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Alchemical Catalysts (1 vial)",
+			"name": "炼金催化剂(1小瓶)",
+			"source": "BombsGadgetsGuns",
+			"page": 6,
+			"type": "G",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"entries": [
+				"催化剂是工程师用来制作爆炸性滴答弹的原材料，这些化学品各自单独存在时性质稳定，但一旦以正确的比例混合，就会产生剧烈的化学反应。工程师每制作一枚滴答弹，都需要相当于1小瓶的催化剂化学品。"
+			]
+		},
+		{
+			"ENG_name": "Hand-Gun",
+			"name": "手枪",
+			"source": "BombsGadgetsGuns",
+			"page": 8,
+			"type": "R",
+			"rarity": "none",
+			"weight": 4,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"property": [
+				"L",
+				"RLD",
+				"LOUD"
+			],
+			"range": "30/80",
+			"reload": 1,
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"一把发射独头弹的手枪，设计为单手使用。"
+			],
+			"ammoType": "独头弹(10)|BombsGadgetsGuns"
+		},
+		{
+			"ENG_name": "Heavy-Gun",
+			"name": "重枪",
+			"source": "BombsGadgetsGuns",
+			"page": 8,
+			"type": "R",
+			"rarity": "none",
+			"weight": 15,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"RLD",
+				"LOUD",
+				"2H"
+			],
+			"range": "30/100",
+			"reload": 2,
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"这种枪械比长管枪更短但更重，威力更强，但射程更短。"
+			],
+			"ammoType": "独头弹(10)|BombsGadgetsGuns"
+		},
+		{
+			"ENG_name": "Long-Gun",
+			"name": "长管枪",
+			"source": "BombsGadgetsGuns",
+			"page": 8,
+			"type": "R",
+			"rarity": "none",
+			"weight": 10,
+			"value": 3000,
+			"weaponCategory": "martial",
+			"property": [
+				"RLD",
+				"LOUD",
+				"2H"
+			],
+			"range": "50/150",
+			"reload": 2,
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"枪管更长的枪械，射程与弹速都更高。"
+			],
+			"ammoType": "独头弹(10)|BombsGadgetsGuns"
+		},
+		{
+			"ENG_name": "Mechanic's Clothes",
+			"name": "机械师服装",
+			"source": "BombsGadgetsGuns",
+			"page": 2,
+			"type": "G",
+			"rarity": "none",
+			"weight": 5,
+			"value": 1000,
+			"entries": [
+				"这种服装在提供极佳舒适性与实用性的同时保护穿着者免受油污脏渍之害。基本套装包括一套工装裤或一条厚围裙，配以结实的靴子、厚手套和一条工具腰带。机械师服装通常还带有其他职业安全装备，例如深色护目镜和一个可以拉起来遮住口鼻的面罩。"
+			]
+		},
+		{
+			"ENG_name": "Scatter-Gun",
+			"name": "霰弹枪",
+			"source": "BombsGadgetsGuns",
+			"page": 8,
+			"type": "R",
+			"rarity": "none",
+			"weight": 8,
+			"value": 6000,
+			"weaponCategory": "martial",
+			"property": [
+				"RLD",
+				"LOUD",
+				"SCT"
+			],
+			"range": "20/40",
+			"reload": 1,
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"一种短管枪，它会击碎独头弹，散射出弹片碎片，在近距离造成最大伤害。"
+			],
+			"ammoType": "独头弹(10)|BombsGadgetsGuns"
+		},
+		{
+			"ENG_name": "Slugs (10)",
+			"name": "独头弹(10)",
+			"source": "BombsGadgetsGuns",
+			"page": 8,
+			"type": "AF|DMG",
+			"rarity": "none",
+			"weight": 1,
+			"value": 20,
+			"entries": [
+				"一个普通的小袋最多可携带50枚独头弹。"
+			]
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "LOUD",
+			"source": "BombsGadgetsGuns",
+			"page": 0,
+			"entries": [
+				{
+					"ENG_name": "Loud",
+					"type": "entries",
+					"name": "响亮",
+					"entries": [
+						"该武器每次用于攻击时都会发出巨响。这种噪音在很远的距离外都能听到，并可能暴露持用者的位置。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "SCT",
+			"source": "BombsGadgetsGuns",
+			"page": 0,
+			"entries": [
+				{
+					"ENG_name": "Scatter",
+					"type": "entries",
+					"name": "散射",
+					"entries": [
+						"该武器命中时，若目标不在长程射程内，则额外造成{@damage 1d8}点穿刺伤害。"
+					]
+				}
+			]
+		}
+	]
+}
