@@ -1,0 +1,2551 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ktw",
+				"abbreviation": "KT:W",
+				"full": "KibblesTasty: 督军",
+				"url": "https://www.gmbinder.com/share/-LW4agTNJcbwe6kSv4H2",
+				"version": "1.4.1",
+				"authors": [
+					"KibblesTasty"
+				],
+				"convertedBy": [
+					"kerbs"
+				],
+				"color": "7f153b"
+			},
+			{
+				"json": "ktwe",
+				"abbreviation": "KT:WE",
+				"full": "KibblesTasty: 督军扩展战术",
+				"url": "https://www.gmbinder.com/share/-M5jFV5mDxXYWp46Mt5s",
+				"version": "1",
+				"authors": [
+					"KibblesTasty"
+				],
+				"convertedBy": [
+					"SasquatchBrah"
+				],
+				"color": "7f153b"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1588714562,
+		"dateLastModified": 1788101550,
+		"_dateLastModifiedHash": "5b05468383"
+	},
+	"class": [
+		{
+			"ENG_name": "Warlord",
+			"name": "督军",
+			"source": "ktw",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"deception",
+								"history",
+								"insight",
+								"intimidation",
+								"investigation",
+								"medicine",
+								"performance",
+								"persuasion"
+							],
+							"count": 3
+						}
+					}
+				],
+				"weapons": [
+					"simple"
+				],
+				"armor": [
+					"light",
+					"medium"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）一件任意{@filter 简易武器|items|source=phb|category=基础|type=简易武器}，或（b）一件任意{@filter 军用武器|items|source=phb|category=基础|type=军用武器}（如具有熟练项）",
+					"（a）一把{@item 轻弩}和{@item 弩矢(20)|phb|20支弩矢}，或（b）一面{@item 盾牌|phb}（如具有熟练项）",
+					"（a）一套{@item 皮甲|phb}，或（b）一套{@item 鳞甲|phb}，或（c）一套{@item 链甲|phb}（如具有熟练项）",
+					"（a）一个{@item 学者套组|phb}，或（b）一个{@item 探索套组|phb}"
+				],
+				"goldAlternative": "{@dice 5d4|5d4|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						]
+					},
+					{
+						"a": [
+							"轻弩",
+							"弩矢(20)|phb"
+						],
+						"b": [
+							"盾牌|phb"
+						]
+					},
+					{
+						"a": [
+							"皮甲|phb"
+						],
+						"b": [
+							"鳞甲|phb"
+						],
+						"c": [
+							"链甲|phb"
+						]
+					},
+					{
+						"a": [
+							"学者套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"cha": 13,
+							"int": 13,
+							"wis": 13
+						}
+					]
+				},
+				"requirementsSpecial": "须满足其中两项。",
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"领袖骰大小",
+						"领袖骰数值"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							11
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							12
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							13
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							14
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							15
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							16
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							17
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							18
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							19
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							20
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				{
+					"classFeature": "督军威仪|督军|ktw|1",
+					"gainSubclassFeature": true
+				},
+				"战场威仪|督军|ktw|1",
+				"领袖骰|督军|ktw|2",
+				"督军专精|督军|ktw|3",
+				{
+					"classFeature": "督军威仪特性|督军|ktw|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|督军|ktw|4",
+				"额外攻击|督军|ktw|5",
+				"临战准备|督军|ktw|6",
+				{
+					"classFeature": "督军威仪特性|督军|ktw|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|督军|ktw|8",
+				"乘势强攻|督军|ktw|9",
+				"属性值提升|督军|ktw|10",
+				{
+					"classFeature": "督军威仪特性|督军|ktw|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|督军|ktw|12",
+				"督军直觉|督军|ktw|13",
+				"战场调度|督军|ktw|14",
+				{
+					"classFeature": "督军威仪特性|督军|ktw|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|督军|ktw|16",
+				"不屈意志|督军|ktw|17",
+				{
+					"classFeature": "督军威仪特性|督军|ktw|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|督军|ktw|19",
+				"不倦领袖|督军|ktw|20"
+			],
+			"subclassTitle": "督军威仪",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Warlord",
+			"name": "督军",
+			"source": "ktw",
+			"entries": [
+				{
+					"ENG_name": "Warlord",
+					"name": "督军",
+					"source": "ktw",
+					"type": "section",
+					"entries": [
+						"两支大军在死亡的战场上对峙，恐惧攫住了每一名士兵的心。就在这时，军旗从他们的行列中被高高举起\u2014\u2014那是一面毫无畏惧的闪亮旗帜。不知不觉间，他们的双脚已在大地上踏响，恐惧被抛在身后，他们追随希望的象征奔向胜利。",
+						"一名男子瘫倒在地，被伤痛、力竭、恐惧和四周震耳欲聋的金铁交鸣所吞没。死亡正在逼近，但在它将他收割之前，一只手伸了过来，将他拉了起来。",
+						"\"起来，士兵。\"",
+						"战线即将被冲垮\u2014\u2014直到溃散的士兵行列中，一名孤身的士兵望见了他的主君。她屹立不倒，不肯退让，不肯从危险前移开半步，独自一人阻挡着敌军的洪流。撤退已不再是选项。每一击都蕴含着新生的力量，士兵们重新站起，以前所未有的姿态奋战。",
+						"\"你们是怎么做到的？\"掠夺者嘶声问道，他的剑已弃于身前以示降服。他跪在被俘的战友身旁，被一支仿佛凭空出现的小股部队团团围住。获胜的将军会心一笑，耸了耸肩。",
+						"\"运气，\"他说，\"或许再加上一点谋划。\"",
+						"督军是同伴们的战力倍增器。有些督军本人就是可怕的战士，另一些则可能从未举起过武器，但无论哪种情况，他们在战场上的威仪都会推动盟友达到新的高度，引导他们安然渡过本必将成为末日的险境。",
+						"从败局的虎口中夺取胜利的方式各有不同：或是点燃狂热的信念，或是约束一次操之过急的冲锋，或是在千钧一发之际把同伴拉出危险的前线。唯一的共通之处在于：孤身的督军不过是一介凡人，而与同伴同在的督军则是一段传奇。",
+						{
+							"ENG_name": "Purpose and Drive",
+							"type": "entries",
+							"name": "目标与动力",
+							"entries": [
+								"对于走上督军之路的人而言，使命感是共通的要素。使命感让督军超越凡俗，也让他们得以成为同伴的引路人。有些督军并不追求特定的事业，只为胜利而战\u2014\u2014或是为了向其信仰的神明献上敬意，或只是为了博取个人的荣耀。但更多时候，驱使督军的是更崇高的目标\u2014\u2014对国家或麾下将士的忠诚，保护无辜者或碾碎弱小者的动力。",
+								"对督军而言，理解自己为何而战时的使命感是一项重要的考量，因为它决定了他们如何作战。他们会尽力让同伴和追随者远离危险吗？还是只专注于推行最可能获胜的策略？"
+							]
+						},
+						{
+							"ENG_name": "Power of Presence",
+							"type": "entries",
+							"name": "威仪之力",
+							"entries": [
+								"大多数督军并没有明确的魔法力量，但他们在战场上的威仪能让人们超越自以为的极限，做到单凭自己无法企及之事。督军会让盟友觉得自己样样都变得更出色，会让难题显得可以克服，会让前路变得清晰。他们让世界不再那么黯淡，让敌人不再那么可怕。当你的身边有一位督军时，更多的事情都会走向正轨。",
+								"正如巨龙的骇人威仪会在凡人冒险者心中种下超自然的恐惧，督军的威仪也绝不仅仅是常识与战略头脑\u2014\u2014它是信念之力、战术之极，或是以冒险者之姿现身的求胜意志。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Warlord",
+							"type": "entries",
+							"name": "创造一名督军",
+							"entries": [
+								"创建督军时，你应当首先回答这个问题：这个人会为战场带来怎样的威仪？他是能以魅力鼓舞盟友、驱使他们继续奋战的感召者？是能为同伴提供指点与坚毅、充当战力倍增器的睿智老兵？还是能先敌一步看穿任何行动、始终确保盟友占据正确位置的阴谋策士？",
+								"这些道路以及其他许多可能都可以通过督军实现，而你在第1级选择的威仪将决定哪项属性对你的影响力、以及推动同伴达到更高高度最为关键。",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"你可以按照以下建议快速建卡一名督军。酋长或典范应选择力量作为最高属性，其次是魅力。指挥官应选择力量作为最高属性，其次是感知。",
+										"贵族应选择魅力作为最高属性，其次是体质；战术家应选择智力，其次是体质。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Chieftain's Presence",
+			"name": "酋长之威仪",
+			"shortName": "酋长",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassFeatures": [
+				"酋长之威仪|督军|ktw|酋长|ktw|1",
+				"战吼|督军|ktw|酋长|ktw|3",
+				"蛮荒势头|督军|ktw|酋长|ktw|3",
+				"鲁莽突袭|督军|ktw|酋长|ktw|7",
+				"狼群战术|督军|ktw|酋长|ktw|11",
+				"雷鸣咆哮|督军|ktw|酋长|ktw|15",
+				"浴血胜利|督军|ktw|酋长|ktw|18"
+			]
+		},
+		{
+			"ENG_name": "Commander's Presence",
+			"name": "指挥官之威仪",
+			"shortName": "指挥官",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassFeatures": [
+				"指挥官之威仪|督军|ktw|指挥官|ktw|1",
+				"敏锐指点|督军|ktw|指挥官|ktw|3",
+				"起身应战|督军|ktw|指挥官|ktw|7",
+				"成军优势|督军|ktw|指挥官|ktw|11",
+				"壁垒|督军|ktw|指挥官|ktw|15",
+				"不抛下任何一人|督军|ktw|指挥官|ktw|18"
+			]
+		},
+		{
+			"ENG_name": "Gifted's Presence",
+			"name": "天赋者之威仪",
+			"shortName": "天赋者",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassFeatures": [
+				"天赋者之威仪|督军|ktw|天赋者|ktwe|1",
+				"灵能学科|督军|ktw|天赋者|ktwe|3",
+				"灵能战场威仪|督军|ktw|天赋者|ktwe|7",
+				"天赋领袖|督军|ktw|天赋者|ktwe|11",
+				"战斗心智|督军|ktw|天赋者|ktwe|15",
+				"完美汇聚|督军|ktw|天赋者|ktwe|18"
+			]
+		},
+		{
+			"ENG_name": "Noble's Presence",
+			"name": "贵族之威仪",
+			"shortName": "贵族",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassFeatures": [
+				"贵族之威仪|督军|ktw|贵族|ktw|1",
+				"侍从与追随者|督军|ktw|贵族|ktw|1",
+				"君权神授|督军|ktw|贵族|ktw|3",
+				"魅力统率|督军|ktw|贵族|ktw|3",
+				"信念之言|督军|ktw|贵族|ktw|7",
+				"强制命令|督军|ktw|贵族|ktw|7",
+				"鼓舞狂热|督军|ktw|贵族|ktw|11",
+				"不可侵犯威仪|督军|ktw|贵族|ktw|15",
+				"宏大敕令|督军|ktw|贵族|ktw|18"
+			]
+		},
+		{
+			"ENG_name": "Packleader's Presence",
+			"name": "兽群领袖之威仪",
+			"shortName": "兽群领袖",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassFeatures": [
+				"兽群领袖之威仪|督军|ktw|兽群领袖|ktw|1",
+				"自然馈赠|督军|ktw|兽群领袖|ktw|3",
+				"兽群领袖的兽群|督军|ktw|兽群领袖|ktw|3",
+				"自然遮蔽|督军|ktw|兽群领袖|ktw|7",
+				"无踪小径|督军|ktw|兽群领袖|ktw|7",
+				"疾影打击者|督军|ktw|兽群领袖|ktw|11",
+				"荒野幽影|督军|ktw|兽群领袖|ktw|15",
+				"荒野督军|督军|ktw|兽群领袖|ktw|18"
+			]
+		},
+		{
+			"ENG_name": "Paragon's Presence",
+			"name": "典范之威仪",
+			"shortName": "典范",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassFeatures": [
+				"典范之威仪|督军|ktw|典范|ktw|1",
+				"战斗风格|督军|ktw|典范|ktw|3",
+				"英雄打击|督军|ktw|典范|ktw|3",
+				"屹立不倒|督军|ktw|典范|ktw|7",
+				"鼓舞战士|督军|ktw|典范|ktw|11",
+				"受鼓舞者的勇武|督军|ktw|典范|ktw|11",
+				"无畏决心|督军|ktw|典范|ktw|15",
+				"不败军团|督军|ktw|典范|ktw|18",
+				"配有死亡结界的不败军团？|督军|ktw|典范|ktw|18"
+			]
+		},
+		{
+			"ENG_name": "Spellweaver's Presence",
+			"name": "织法者之威仪",
+			"shortName": "织法者",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"spellcastingAbility": "int",
+			"subclassSpells": [
+				"奥达尔的寂静圣所|exploringeberron",
+				"剑刃防护",
+				"交友术",
+				"次级幻象",
+				"恶言相加",
+				"剑刃防护|evolvingcantrips",
+				"交友术|evolvingcantrips",
+				"次级幻象|evolvingcantrips",
+				"心灵之楔|tce",
+				"吸收元素|xge",
+				"扭曲价值|ai",
+				"圈套术|xge",
+				"警报术",
+				"七彩喷射",
+				"易容术",
+				"迷幻手稿",
+				"法师护甲",
+				"防护善恶",
+				"护盾术",
+				"无声幻影",
+				"智能壁垒|tce",
+				"幽影刃|xge",
+				"法术陷阱|kibblestasty:cc",
+				"迷向术|kibblestasty:cc",
+				"移除诅咒",
+				"防护能量",
+				"魅影驹",
+				"回避侦测",
+				"高等幻影",
+				"防护法阵",
+				"催眠图纹",
+				"守卫刻文",
+				"恐惧术",
+				"解除魔法",
+				"法术反制",
+				"魅影之力",
+				"涅斯图魔法灵光",
+				"镜影术",
+				"魔嘴术",
+				"隐形术",
+				"朦胧术",
+				"秘法锁"
+			],
+			"subclassFeatures": [
+				"织法者之威仪|督军|ktw|织法者|ktwe|1",
+				"法术操纵|督军|ktw|织法者|ktwe|3",
+				"护身与遮蔽|督军|ktw|织法者|ktwe|3",
+				"抗衡魔法|督军|ktw|织法者|ktwe|7",
+				"镜像盟友|督军|ktw|织法者|ktwe|11",
+				"自主秘法|督军|ktw|织法者|ktwe|15",
+				"镜像大军|督军|ktw|织法者|ktwe|18"
+			]
+		},
+		{
+			"ENG_name": "Tactician's Presence",
+			"name": "战术家之威仪",
+			"shortName": "战术家",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassFeatures": [
+				"战术家之威仪|督军|ktw|战术家|ktw|1",
+				"战术洞察|督军|ktw|战术家|ktw|3",
+				"规划移动......或者不。|督军|ktw|战术家|ktw|3",
+				"战术变通|督军|ktw|战术家|ktw|3",
+				"莫测心智|督军|ktw|战术家|ktw|7",
+				"掌控战场|督军|ktw|战术家|ktw|7",
+				"战术打击|督军|ktw|战术家|ktw|11",
+				"高级指令|督军|ktw|战术家|ktw|15",
+				"势不可挡的谋略|督军|ktw|战术家|ktw|18",
+				"多层战术|督军|ktw|战术家|ktw|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Battlefield Presence",
+			"name": "战场威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 1,
+			"entries": [
+				"从第1级起，当你采取{@action 攻击}动作时，你可以不进行攻击，而是使用你的战场威仪，赋予一名能看见或听见你的友好生物在其回合内下次采取{@action 攻击}动作时的一次额外攻击。",
+				"至你的下回合开始时仍未使用的额外攻击即告失效。每轮中，一名友好生物只能从此特性获得一次额外攻击。"
+			]
+		},
+		{
+			"ENG_name": "Warlord Presence",
+			"name": "督军威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 1,
+			"entries": [
+				"在第1级，你选择自己所体现的督军原型，称为威仪。你的选择会在第1级赋予你特性，并在第3、7、11、15和18级再次赋予特性。"
+			]
+		},
+		{
+			"ENG_name": "Leadership Dice",
+			"name": "领袖骰",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 2,
+			"entries": [
+				"从第2级起，你获得了领袖骰。它代表你将战场威仪凝聚为强大成效的能力。你的督军等级决定骰子的数量与面数，如督军表格中\"领袖骰大小\"与\"领袖骰数值\"两栏所示。你可以消耗这些骰子来驱动各种特性。",
+				"你起初知晓三个这样的特性：集结标记、紧急指令和协助之言。获得此特性时，你每回合可以消耗一枚领袖骰。从第6级起，你每回合可以消耗两枚领袖骰。可消耗的数量在11级提升（至三枚），并在17级再次提升（至四枚）。",
+				"领袖骰在使用时即被消耗。你完成一次短休或长休后，会恢复所有已消耗的领袖骰。",
+				{
+					"ENG_name": "Rallying Mark",
+					"type": "entries",
+					"name": "集结标记",
+					"entries": [
+						"以一个附赠动作，你可以消耗若干枚领袖骰（不超过你的每回合上限），集结你的盟友攻击你60尺内的一名敌对生物。",
+						"在你的下回合开始前，盟友生物下一次对该目标掷骰伤害时，可以将领袖骰加入伤害掷骰，且进行攻击的生物恢复等同于领袖骰掷骰结果的生命值。"
+					]
+				},
+				{
+					"ENG_name": "Urgent Orders",
+					"type": "entries",
+					"name": "紧急指令",
+					"entries": [
+						"以一个附赠动作，你可以消耗若干枚领袖骰（不超过你的每回合上限），引导你的盟友迅速行动。",
+						"指定一名你60尺内能看见或听见你的盟友生物，该生物可以立即使用其反应移动至多其移动速度（最多30尺），且不引发借机攻击。掷所消耗的领袖骰，目标获得等同于掷骰结果的临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Helpful Word",
+					"type": "entries",
+					"name": "协助之言",
+					"entries": [
+						"你可以消耗一枚领袖骰，在你的回合以一个附赠动作采取{@action 协助}动作。当你使用{@action 协助}动作帮助盟友攻击某生物时，若该攻击的目标能看见或听见你，则该目标与你的距离可以在30尺内，而无须与你相距5尺内。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Warlord Presence feature",
+			"name": "督军威仪特性",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 3,
+			"entries": [
+				"在第3级，你获得由你的督军威仪给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Warlord's Expertise",
+			"name": "督军专精",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 3,
+			"entries": [
+				"从第3级起，你获得{@skill 游说}、{@skill 威吓}、{@skill 洞悉}或{@skill 调查}其中一项的熟练项。若你选择的技能已具有熟练项，则你使用该技能进行的任何属性检定的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 4,
+			"entries": [
+				"当你到达第4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你不能以此特性将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 5,
+			"entries": [
+				"从第5级起，你在自己的回合采取{@action 攻击}动作时，可以攻击两次而非一次。",
+				"你可以用战场威仪替代其中一次或两次攻击。"
+			]
+		},
+		{
+			"ENG_name": "Prepare for Battle",
+			"name": "临战准备",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 6,
+			"entries": [
+				"从第6级起，你可以花1分钟为至多五名盟友做好战斗准备。你可以消耗不超过每回合上限的若干枚领袖骰并掷骰，使你的盟友获得等同于掷骰结果的临时生命值。受益于此能力的盟友可以消耗等同于你所耗领袖骰数量的生命骰，如同在短休中那样使用它们。以此获得的任何临时生命值持续到你完成一次短休或长休为止。"
+			]
+		},
+		{
+			"ENG_name": "Warlord Presence feature",
+			"name": "督军威仪特性",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 7,
+			"entries": [
+				"在第7级，你获得由你的督军威仪给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 8,
+			"entries": [
+				"当你到达第8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你不能以此特性将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Press the Attack",
+			"name": "乘势强攻",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 9,
+			"entries": [
+				"从第9级起，你的能力得到进一步增强：",
+				{
+					"ENG_name": "Rallying Mark: Boost Morale",
+					"type": "entries",
+					"name": "集结标记：提振士气",
+					"entries": [
+						"当某生物从集结标记获得生命值时，你可以消耗一枚领袖骰，使30尺内的另一名生物恢复等量的生命值。"
+					]
+				},
+				{
+					"ENG_name": "Urgent Orders: Coordinated Movements",
+					"type": "entries",
+					"name": "紧急指令：协同移动",
+					"entries": [
+						"当你使用紧急指令时，你可以指定等同于所耗领袖骰数量的生物，并分别为每个目标消耗领袖骰。"
+					]
+				},
+				{
+					"ENG_name": "Helpful Word: Expert Instructions",
+					"type": "entries",
+					"name": "协助之言：专业指导",
+					"entries": [
+						"当某生物受益于你的{@action 协助}动作时，你可以用你的反应消耗一枚领袖骰并将其加入该生物的掷骰。你可以在原始掷骰之后、但结果揭晓之前使用此能力。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 10,
+			"entries": [
+				"当你到达第10级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你不能以此特性将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Warlord Presence feature",
+			"name": "督军威仪特性",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 11,
+			"entries": [
+				"在第11级，你获得由你的督军威仪给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 12,
+			"entries": [
+				"当你到达第12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你不能以此特性将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Warlord's Intuition",
+			"name": "督军直觉",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 13,
+			"entries": [
+				"从第13级起，在掷一项你具有熟练项的属性检定之前，你可以启用此能力，令{@dice d20}的结果直接等于你的督军等级而无需掷骰。一旦你这样做了，在完成一次长休前你无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Shift the Field",
+			"name": "战场调度",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 14,
+			"entries": [
+				"从第14级起，你获得了重新部署友好生物的能力。以一个动作，你可以消耗一枚领袖骰，移动至多五名能看见或听见你的友好生物，各自移动至多其移动速度的一半，且不引发借机攻击。"
+			]
+		},
+		{
+			"ENG_name": "Warlord Presence feature",
+			"name": "督军威仪特性",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 15,
+			"entries": [
+				"在第15级，你获得由你的督军威仪给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 16,
+			"entries": [
+				"当你到达第16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你不能以此特性将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Unbreakable Will",
+			"name": "不屈意志",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 17,
+			"entries": [
+				"从第17级起，督军不会{@condition 恐慌}或{@condition 魅惑}，并获得对这些状态的免疫。"
+			]
+		},
+		{
+			"ENG_name": "Warlord Presence feature",
+			"name": "督军威仪特性",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 18,
+			"entries": [
+				"在第18级，你获得由你的督军威仪给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 19,
+			"entries": [
+				"当你到达第19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你不能以此特性将属性值提升到20以上。",
+				"若你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Tireless Leader",
+			"name": "不倦领袖",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"level": 20,
+			"entries": [
+				"从第20级起，你可以掷{@dice d4}并以此代替领袖骰，用于集结标记、紧急指令、协助之言或临战准备。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Chieftain's Presence",
+			"name": "酋长之威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 1,
+			"entries": [
+				"酋长是纯粹凭借人格力量进行统治的督军，其标志是洪亮的嗓音与无畏的姿态。只要你的酋长还屹立不倒，你便很容易相信自己的队伍无懈可击。",
+				"他们可以守序也可以混乱，可以善良也可以邪恶，这取决于他们如何走到今天的位置。一路杀上顶点的兽人可能偏向混乱，认为力量需要挣脱规则束缚、自由攀登至顶的空间；而承袭权柄之人则可能更倾向守序。",
+				"具有酋长威仪的督军并不需要真的统治什么，但他是那种凭借人格力量与给予身边之人的热烈鼓舞，已经走上或能够走上这条道路之人的典范。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "酋长熟练|督军|ktw|酋长|ktw|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狼群移动|督军|ktw|酋长|ktw|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Chieftain's Proficiency",
+			"name": "酋长熟练",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此威仪时，你获得盾牌、军用武器以及{@skill 威吓}技能的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Wolfpack Movement",
+			"name": "狼群移动",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从第1级起，你在掷先攻后第一次移动时，可以带上你20尺内至多等同于你魅力调整值（至少1）名自愿生物。这些生物随你移动相同的距离和方向，但移动距离不能超过其速度允许的上限。生物可以在此移动路径上的任意一点停下。",
+				"生物跟随你移动的距离不能超过其移动速度。"
+			]
+		},
+		{
+			"ENG_name": "Savage Momentum",
+			"name": "蛮荒势头",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"此外，在第3级，每当你消耗一枚领袖骰，你在回合结束前的下一次攻击检定获得优势。"
+			]
+		},
+		{
+			"ENG_name": "Warcry",
+			"name": "战吼",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，以一个动作，或在{@action 攻击}动作中以之替代一次攻击，你可以消耗若干枚领袖骰（不超过你的每回合上限），以一声雄壮的战吼鼓舞你的盟友。你和你20尺内的友好生物获得等同于领袖骰掷骰结果+你的魅力调整值（至少1）的临时生命值。",
+				"此效果影响的生物数量至多等同于你的魅力调整值（至少1）。"
+			]
+		},
+		{
+			"ENG_name": "Reckless Assault",
+			"name": "鲁莽突袭",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，当持有来自你某项能力的临时生命值的生物以武器攻击造成伤害时，它可以消耗这些临时生命值，将等同于所牺牲临时生命值一半的伤害加到其伤害掷骰上。"
+			]
+		},
+		{
+			"ENG_name": "Wolfpack Tactics",
+			"name": "狼群战术",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从第11级起，你擅长与盟友协同扑杀猎物。你命中的第一只自你上回合结束以来已受到你某名盟友伤害的生物，额外承受{@dice 1d12}点伤害。",
+				"若以战场威仪赋予的攻击被用于攻击你在自己回合内造成过伤害的生物，该攻击额外造成{@dice 1d4}点伤害。"
+			]
+		},
+		{
+			"ENG_name": "Booming Shout",
+			"name": "雷鸣咆哮",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，当你释放战吼时，你可以尝试威吓敌人。你战吼范围内的任意数量生物必须进行一次感知豁免（DC为8+你的熟练加值+你的魅力调整值），否则在直到其回合结束前对你{@condition 恐慌}。一旦你使用了雷鸣咆哮，在完成一次短休或长休前，你不能再次以这种方式使用它。",
+				"此外，你的集结标记、紧急指令、协助之言和战吼的范围翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Bloody Victory",
+			"name": "浴血胜利",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "酋长",
+			"subclassSource": "ktw",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，当你或盟友将一名曾对你造成伤害的敌对生物的生命值降至0时，你可以以一个反应释放战吼。当你以这种方式释放战吼时，你不消耗任何领袖骰，并以一枚{@dice d12}代替你的领袖骰。",
+				"你可以以等同于魅力调整值的次数使用此反应，并在长休后恢复所有使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Commander's Presence",
+			"name": "指挥官之威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 1,
+			"entries": [
+				"战场上的指挥官可以有许多面貌\u2014\u2014受信赖的中士、久经沙场的老兵，或者只是一个常识过人、对如何赢得战斗有着格外敏锐眼光的普通人。",
+				"虽然不如战场上的其他威仪那般耀眼，但这只是意味着他们更不容易被一矛戳穿。此一句精辟点拨，彼一次出手相助，他们的影响微妙而有效，不可阻挡地将战局推向对自己有利的一边。",
+				"指挥官可以出身于任何背景，但他们通常是以艰难的方式磨砺出智慧之人，已经见识过生活与战场所能给予的种种。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "军事熟练|督军|ktw|指挥官|ktw|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "列阵！|督军|ktw|指挥官|ktw|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "同步连续移动。|督军|ktw|指挥官|ktw|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Form Up!",
+			"name": "列阵！",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从第1级起，当你掷先攻且未处于措手不及状态时，你30尺内任意数量的友好生物可以移动至多等同于你感知调整值五倍的尺数（至少5尺）。"
+			]
+		},
+		{
+			"ENG_name": "Martial Proficiency",
+			"name": "军事熟练",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此威仪时，你获得重甲、盾牌和军用武器的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Sequential Movement at the Same Time.",
+			"name": "同步连续移动。",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"type": "inset",
+			"entries": [
+				"D&D通常是一个回合制游戏，因此人们通常不会同时移动；一项允许多个生物同时移动的能力会引出关于顺序的疑问。此能力表现的是指挥官的威仪使同伴们迅速进入一套配合默契的流程，建议你在此次移动中让玩家按其期望的顺序移动。",
+				"另须注意，此移动由移动的生物自行决定。督军赋予盟友移动的能力，而未必是替他们移动。"
+			]
+		},
+		{
+			"ENG_name": "Keen Pointer",
+			"name": "敏锐指点",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，若你距离你正在对其使用{@action 协助}动作的目标生物不超过5尺，你可以在不消耗领袖骰的情况下使用协助之言的附赠动作。",
+				"当你这样做时，你可以消耗一枚领袖骰，将集结标记施加于你以此{@action 协助}动作指定目标的生物。"
+			]
+		},
+		{
+			"ENG_name": "On Your Feet",
+			"name": "起身应战",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，你可以使用一个附赠动作并消耗一枚领袖骰，重燃盟友的战意。选择一名你5尺内的友好生物。该生物恢复等同于你领袖骰面值的生命值。",
+				"当你使用此特性为生命值为0的生物恢复生命值时，你可以将你的感知调整值加到恢复的生命值上。若该生物处于{@condition 倒地}状态，它可以选择立即站起来。"
+			]
+		},
+		{
+			"ENG_name": "Martial Advantage",
+			"name": "成军优势",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从第11级起，你已学会借助与盟友并肩作战的优势。每回合一次，若你以武器命中的生物处于一名未{@condition 失能}的盟友5尺内，你可以对该生物造成额外的{@dice 2d6}点伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bulwark",
+			"name": "壁垒",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，当你和你30尺内任意数量的友好生物对同一效应进行豁免检定时，若你豁免成功，你的盟友在其豁免检定上获得优势。"
+			]
+		},
+		{
+			"ENG_name": "No One Left Behind",
+			"name": "不抛下任何一人",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "指挥官",
+			"subclassSource": "ktw",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，你在使用起身应战特性时，可以移动至多你的速度，以进入某生物5尺内。在此次移动中，你获得对所有伤害的抗性，且此次移动中每有一次借机攻击命中你，目标就额外恢复{@dice 1d8}点生命值。"
+			]
+		},
+		{
+			"ENG_name": "Noble's Presence",
+			"name": "贵族之威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 1,
+			"entries": [
+				"具有贵族威仪的督军并非必然生于贵族之家\u2014\u2014尽管许多人的确如此。贵族威仪的督军以纯粹的魅力驱使其侍从与同伴攀向更高的高度，他们是并肩而立、象征着众人战斗理由的闪亮灯塔。",
+				"自远古以来，当领袖亲临战场与士卒并肩而立时，人们总会爆发出加倍的努力，为守护主君而被激发出看似不可能的高度\u2014\u2014虽然走上这条道路的冒险者未必真是他们的主君，但其魅力仍会在同伴与侍从心中唤起同样的热忱。",
+				"走上这条道路的冒险者并非必然拥有贵族背景\u2014\u2014尽管许多人确实是。在国土律法下长大的贵族通常守序，但非同寻常的境遇也可能让某位贵族萌生反骨，转而试图推翻不称职的统治者（或者推翻任何不是他们自己的统治者）。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "天命领袖|督军|ktw|贵族|ktw|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战斗号召|督军|ktw|贵族|ktw|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "鼓舞领袖|督军|ktw|贵族|ktw|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Retainers & Followers",
+			"name": "侍从与追随者",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 1,
+			"type": "inset",
+			"entries": [
+				"贵族督军能比其他督军更充分地发挥侍从或追随者的作用，但反过来也更依赖他人替其进行攻击。",
+				"不过，这并不必然意味着他们需要NPC追随者。忠诚的侍从永远是好帮手，但他们帮助一名友好的战士，与帮助一名NPC追随者一样容易。"
+			]
+		},
+		{
+			"ENG_name": "Call to Arms",
+			"name": "战斗号召",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从第1级起，当你掷先攻时，你可以向你60尺内的友好生物高声呼喊，赋予他们一股鼓舞。他们可以在其回合结束前的第一次攻击检定上加上你的魅力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Destined Leader",
+			"name": "天命领袖",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此威仪时，你获得{@item 刺剑|phb}、{@item 长剑|phb}和{@skill 游说}技能的熟练项。此外，你在第3、9和15级各额外获得一枚领袖骰。"
+			]
+		},
+		{
+			"ENG_name": "Inspiring Leader",
+			"name": "鼓舞领袖",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，在第1级，挑战等级低于你督军等级一半的生物（若生物没有挑战等级，则其职业等级须低于你的督军等级），可以选择在你的战场威仪所赋予的任何攻击上，以你的熟练加值+你的魅力调整值作为其攻击检定调整值。"
+			]
+		},
+		{
+			"ENG_name": "Charismatic Leadership",
+			"name": "魅力统率",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"此外，在第3级，你可以将你的魅力调整值加到集结标记造成的伤害、紧急指令给予的临时生命值，以及从协助之言获得优势的生物的攻击检定上。"
+			]
+		},
+		{
+			"ENG_name": "Divine Right",
+			"name": "君权神授",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你可以使用领袖骰（不超过你的每回合上限）来施放{@spell 命令术}。法术的环阶等同于所消耗的领袖骰数。",
+				"此法术的法术豁免DC为8+你的熟练加值+你的魅力调整值。",
+				"只要你未穿重甲也未使用盾牌，你还可以将你的魅力（至多2）加到你的AC上。"
+			]
+		},
+		{
+			"ENG_name": "Imperative Order",
+			"name": "强制命令",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，当你在紧急指令上对某目标消耗2枚或更多领袖骰时，你可以让目标生物以反应进行一次武器攻击，而非移动。若你在某目标上消耗3枚或更多领袖骰，目标生物可以既移动又以反应进行一次武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Words of Conviction",
+			"name": "信念之言",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，你可以使用领袖骰施放{@spell 祝福术}或{@spell 英雄气概}而无须提供材料成分。法术的环阶等同于所消耗的领袖骰数。"
+			]
+		},
+		{
+			"ENG_name": "Inspired Zeal",
+			"name": "鼓舞狂热",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从第11级起，你永远处于{@spell 十字军披风}的效果之下。此效果不需要专注，且若被移除、解除或压制，会在你的下回合开始时恢复。"
+			]
+		},
+		{
+			"ENG_name": "Untouchable Presence",
+			"name": "不可侵犯威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，你处于{@spell 庇护术}的效果之下。若你采取会打破该效果的动作，它会照常结束，但会在你的下回合开始时恢复。",
+				"此法术的法术豁免DC为8+你的熟练加值+你的魅力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Grand Decree",
+			"name": "宏大敕令",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "贵族",
+			"subclassSource": "ktw",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，你可以使用此能力施放{@spell 命令术}，而无须消耗法术位或领袖骰。当你这样做时，该法术影响范围内所有你选择且可受该法术影响的生物。",
+				"一旦你以此能力施放了{@spell 命令术}，在完成一次长休前，你不能再次以此能力施放它。"
+			]
+		},
+		{
+			"ENG_name": "Packleader's Presence",
+			"name": "兽群领袖之威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 1,
+			"entries": [
+				"尽管督军可能专精于掌控战斗，兽群领袖的目标却是在战斗成形之前就赢下这场争斗。通过侦察、准备和堆叠胜算，他们不打公平之战，他们为胜利而战，并力求只在胜局已定时才开战。",
+				"他们对战场的掌控不仅及于战场上的作战者，还延伸到扭转战场本身以应其需：用地形阻滞并迷惑敌人，同时以地形荫蔽并庇护盟友。",
+				"虽然善良与邪恶很少直接影响兽群领袖的视角（他们同样容易属于任一阵营或中立），他们往往偏向混乱，认为所谓\"交战规则\"与文明的其他传统不过是可加利用的便利弱点，而非任何他们可能真正遵循的准则。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "荒野工具|督军|ktw|兽群领袖|ktw|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "隐秘接近|督军|ktw|兽群领袖|ktw|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Concealed Approach",
+			"name": "隐秘接近",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从第1级起，若你拥有至少1分钟的准备时间，你可以将你的感知调整值加到你自己和至多五名友好生物的敏捷（{@skill 隐匿}）检定上。",
+				"你和你30尺内在隐藏状态下掷先攻的友好生物，可以在先攻结果上加上你的感知调整值。"
+			]
+		},
+		{
+			"ENG_name": "Tools of the Wild",
+			"name": "荒野工具",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此威仪时，你获得军用武器、{@skill 求生}以及{@item 草药工具|phb}或{@item 毒药工具|phb}之一的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "A Pack Leader's Pack",
+			"name": "兽群领袖的兽群",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 3,
+			"type": "inset",
+			"entries": [
+				"许多兽群领袖会选择{@spell 化兽为友}或{@spell 动物交谈}来结交动物盟友以壮大自己的兽群，但也有同样多的人并不觉得非得拥有一只动物伙伴不可。"
+			]
+		},
+		{
+			"ENG_name": "Nature's Gift",
+			"name": "自然馈赠",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你与所精通的荒野战场的联结赋予你对它们的一定掌控。你学会{@spell 塑土术|xge}法术，并可以从{@filter 德鲁伊法术列表|spells|class=德鲁伊}中额外选择一个戏法加入你已掌握的戏法。",
+				"此外，以一个动作，你可以消耗一枚领袖骰，以1环法术的形式施放{@spell 云雾术}或{@spell 圈套术|xge}，并可以从{@filter 德鲁伊法术列表|spells|class=德鲁伊}中额外选择一个1环法术以这种方式施放。",
+				"这些法术的法术豁免DC为8+你的熟练加值+你的感知调整值。"
+			]
+		},
+		{
+			"ENG_name": "Shroud of Nature",
+			"name": "自然遮蔽",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，你和你的盟友可以隐入天然的遮蔽之后。每当你施放一个使你或友好生物陷入遮蔽的法术（例如处于{@spell 云雾术}的半径内，或躲入{@spell 塑土术|xge}翻起的土方之后），被遮蔽的生物可以用其反应采取{@action 躲藏}动作。"
+			]
+		},
+		{
+			"ENG_name": "Trackless Trails",
+			"name": "无踪小径",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"此外，在第7级，你可以消耗2枚领袖骰施放{@spell 行动无踪}而无须提供材料成分。"
+			]
+		},
+		{
+			"ENG_name": "Fleeting Strikers",
+			"name": "疾影打击者",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从第11级起，若你不在上回合结束时的位置，或你因遮蔽而未被目标看见，你在自己回合内的第一次攻击额外造成{@dice 1d10}点伤害。",
+				"此外，你以战场威仪赋予攻击的生物可以改为采取{@action 疾走}动作，而不进行你赋予的攻击。"
+			]
+		},
+		{
+			"ENG_name": "Ghosts of the Wild",
+			"name": "荒野幽影",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，在处于{@spell 行动无踪}效果期间，你可以消耗一枚领袖骰，在你的回合结束时采取{@action 躲藏}动作而无须消耗动作。",
+				"若你使用战场威仪赋予某生物攻击，你可以消耗一枚领袖骰以阴影或自然现象遮蔽它，使其在你的下回合开始前的第一次攻击上获得优势。若它处于{@spell 行动无踪}的效果之下，你可以不消耗领袖骰就这么做。"
+			]
+		},
+		{
+			"ENG_name": "Warlord of the Wilds",
+			"name": "荒野督军",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "ktw",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，你可以从{@filter 德鲁伊法术列表|spells|class=德鲁伊}中额外选择五个4环或更低的法术。你可以消耗等同于法术环阶的领袖骰来施放这些法术。完成长休后，你可以更改所选的法术列表。",
+				"这些法术的法术豁免DC为8+你的熟练加值+你的感知调整值。",
+				"每当你使用领袖骰施放法术时，你可以以一个附赠动作采取{@action 攻击}动作（仅限一次武器攻击）。"
+			]
+		},
+		{
+			"ENG_name": "Paragon's Presence",
+			"name": "典范之威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 1,
+			"entries": [
+				"传说讲述着那些战斗在军团最前方的武者，讲述他们展现的勇武，以及这带给袍泽的鼓舞。立于大军之前的典范是令敌人胆寒的对手，而追随典范的大军则是一支不可阻挡的军团。",
+				"典范本身无关善良或邪恶。邪恶的军团同样可以由一位果敢而富有魅力的督军高效统率，正如正义之师一样。",
+				"由于他们往往是激励一支有组织力量之人，多数情况下他们会偏向守序，但那套个人法则的具体内涵可能千差万别。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "军事熟练|督军|ktw|典范|ktw|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "身先士卒|督军|ktw|典范|ktw|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Lead the Charge",
+			"name": "身先士卒",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从第1级起，你可以在你的先攻检定上加上等同于你魅力调整值的加值。此外，当你掷先攻时，你获得等同于你的熟练加值+魅力调整值的临时生命值。"
+			]
+		},
+		{
+			"ENG_name": "Martial Proficiency",
+			"name": "军事熟练",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此威仪时，你获得重甲、盾牌和军用武器的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你采用一种特定的战斗风格作为专长。从以下选项中选择一项。即使你日后能再次选择，也不能重复选择同一战斗风格选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Defense",
+							"type": "entries",
+							"name": "防御",
+							"entries": [
+								"当你穿着护甲时，你的AC获得+1加值。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Dueling",
+							"type": "entries",
+							"name": "对决",
+							"entries": [
+								"当你单手持用一把近战武器且未持用其他武器时，你用该武器造成的伤害掷骰获得+2加值。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Great Weapon Fighting",
+							"type": "entries",
+							"name": "巨武器战斗",
+							"entries": [
+								"当你以双手持用的近战武器进行攻击并掷伤害骰掷出1或2时，你可以重掷该骰并必须使用新的结果，即使新结果为1或2。该武器必须具有双手或多用属性，你才能获得此收益。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Two-Weapon Fighting",
+							"type": "entries",
+							"name": "双武器战斗",
+							"entries": [
+								"当你进行双武器战斗时，你可以将你的属性调整值加到第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Heroic Strike",
+			"name": "英雄打击",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"此外，在第3级，当你采取{@action 攻击}动作时，你可以消耗领袖骰（不超过你的每回合上限），作为一次近战武器攻击的一部分施加集结标记。",
+				"每当你作为攻击的一部分消耗领袖骰，你可以将所消耗的领袖骰加到该攻击的伤害掷骰上。"
+			]
+		},
+		{
+			"ENG_name": "Stand Defiant",
+			"name": "屹立不倒",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，当你的生命值降至0时，你立即恢复等同于你魅力调整值（至少1）的生命值。此外，你可以消耗等同于你60尺内友好生物数量的领袖骰。你额外恢复等同于以此方式消耗骰数的生命值。",
+				"一旦你使用了此特性，在完成一次短休或长休前你无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "The Prowess of the Inspired",
+			"name": "受鼓舞者的勇武",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 11,
+			"type": "inset",
+			"entries": [
+				"实际上在几乎所有情况下，这项能力归结起来就是：若其同伴在其30尺内四周作战，典范会在其回合内的第一次攻击上加上等同于其魅力调整值数量的{@dice d4}。",
+				"这项能力可以如此简化，但若典范率先行动或身边同伴寥寥，这将使其比预期略微更强。"
+			]
+		},
+		{
+			"ENG_name": "Inspired Warrior",
+			"name": "鼓舞战士",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从第11级起，每回合一次，当你30尺内的一名盟友受到或造成伤害时，你获得一枚{@dice d4}并将其加入一个骰池。此骰池中{@dice d4}的数量上限等同于你的魅力调整值（至少1）。",
+				"直到你的下回合结束为止，当你造成伤害时，你可以从此骰池中消耗任意数量的骰子，掷骰并造成等同于掷骰结果的额外伤害。"
+			]
+		},
+		{
+			"ENG_name": "Dauntless Resolve",
+			"name": "无畏决心",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，当你豁免检定失败时，你可以选择改为成功。一旦你这样做了，在完成一次长休前你无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Invincible Deathwarded Legions?",
+			"name": "配有死亡结界的不败军团？",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 18,
+			"type": "inset",
+			"entries": [
+				"设计意图是：不败军团可以在{@spell 防死结界}或类似效果被触发之前启动。"
+			]
+		},
+		{
+			"ENG_name": "Invincible Legion",
+			"name": "不败军团",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "典范",
+			"subclassSource": "ktw",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，只要希望的象征仍在，你的盟友就永不倒下。当你60尺内的友好生物生命值降至0但未被直接杀死时，只要它能看见或听见你，它可以改为只降到1点生命值。",
+				"一旦某生物受益于此效果，在它完成一次长休前无法再次受益。"
+			]
+		},
+		{
+			"ENG_name": "Tactician's Presence",
+			"name": "战术家之威仪",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 1,
+			"entries": [
+				"战术家很可能会告诉你，他们宁愿离战斗足够远而不被视为参战者，更喜欢在局面走到那一步之前就赢下战斗\u2014\u2014但若有人因此低估他们踏上战场后的危险性，那便是蠢材。",
+				"虽然他们的计划可能早已铺排妥当，但敏锐的头脑仍能迅速拆解敌人的应战方式，轻而易举地戳穿敌人意图加诸他们及其盟友的粗浅战术。",
+				"战术家的标志是一颗敏锐的头脑，以及详尽谋划于先的意愿。有战术家在队的冒险者几乎不可能被逼入绝境，因为他们总能找到扭转局势的办法。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战术家的狡黠|督军|ktw|战术家|ktw|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战斗计划|督军|ktw|战术家|ktw|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Battle Plans",
+			"name": "战斗计划",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从第1级起，你可以在你的先攻检定上加上等同于你智力调整值的加值。此外，你可以将你此次掷骰的总数与60尺内一名自愿的友好生物互换。"
+			]
+		},
+		{
+			"ENG_name": "Tactician's Cunning",
+			"name": "战术家的狡黠",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此威仪时，你获得{@skill 历史}和{@skill 调查}技能的熟练项。此外，若一项技能检定你能花1分钟或更久来完成，则可以将{@dice d20}掷出的4或更低的结果视为5。"
+			]
+		},
+		{
+			"ENG_name": "Planning Movement... or not.",
+			"name": "规划移动......或者不。",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 3,
+			"type": "inset",
+			"entries": [
+				"DM可以选择将战术洞察的第二条解读为仅仅使目标的移动速度减少10尺。其平衡性正是基于这一假设；预测移动只是可选的风味，未必适合所有DM的风格。"
+			]
+		},
+		{
+			"ENG_name": "Tactical Flexibility",
+			"name": "战术变通",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"此外，在第3级，你获得将战术洞察、集结标记、协助之言和紧急指令以动作或附赠动作使用的能力。"
+			]
+		},
+		{
+			"ENG_name": "Tactical Insight",
+			"name": "战术洞察",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你可以对生物的选项进行战术评估。以一个附赠动作，对60尺内你能看见的任意生物进行一次智力（{@skill 调查}）检定，对抗其魅力（{@skill 欺瞒}）检定。",
+				"检定成功时，你可以看穿其战术，获得以下效果之一：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Determine Attack",
+							"type": "entries",
+							"name": "洞悉攻击",
+							"entries": [
+								"你可以使他们的下一次攻击在攻击能看见或听见你的生物时具有劣势。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Predict Movement",
+							"type": "entries",
+							"name": "预测移动",
+							"entries": [
+								"你推断出他们下回合计划移动到哪里。他们可以选择改变计划，但若移往别处，其移动速度将因仓促应变而减少10尺。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Outwit Response",
+							"type": "entries",
+							"name": "智破反应",
+							"entries": [
+								"你可以找到他们的破绽，使其在直到其下回合结束前无法使用反应。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Expose Weakness",
+							"type": "entries",
+							"name": "暴露弱点",
+							"entries": [
+								"你可以在此附赠动作中直接使用协助之言，在不消耗领袖骰的情况下赋予对该目标的优势。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Control the Field",
+			"name": "掌控战场",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，当你使用移动盟友生物的能力（如紧急指令或战场调度）时，该能力获得以下性质：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Deceptive Movement",
+							"type": "entries",
+							"name": "欺敌移动",
+							"entries": [
+								"你可以尝试移动非盟友生物至多5尺（或其移动速度的一半，取较小者）。该生物必须进行一次DC为8+你的熟练加值+你的智力调整值的智力豁免，否则会感到不得不立即移动到新位置。以这种方式移动的目标不会获得临时生命值。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Flanking Maneuvers",
+							"type": "entries",
+							"name": "夹击机动",
+							"entries": [
+								"若你移动的两名盟友在你赋予的移动结束后处于某生物的两侧，则率先攻击该敌人的那名盟友若在该生物移动前攻击，其第一次攻击具有优势。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Coordinated Transitions",
+							"type": "entries",
+							"name": "协同转移",
+							"entries": [
+								"盟友在你赋予的移动期间可以穿过彼此的空间，且不将其视为困难地形。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Inscrutable Mind",
+			"name": "莫测心智",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，你获得智力豁免检定的熟练项。",
+				"此外，当被迫进行一次感知、智力或魅力豁免检定时，你可以以一个反应消耗一枚领袖骰，并将掷骰结果加到该豁免检定上。"
+			]
+		},
+		{
+			"ENG_name": "Tactical Strike",
+			"name": "战术打击",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从第11级起，当你对某生物的战术洞察检定成功时，在你的下回合开始前，你或友好生物对它的下一次攻击额外造成{@dice 2d6}点伤害。"
+			]
+		},
+		{
+			"ENG_name": "Advanced Orders",
+			"name": "高级指令",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级，当你在紧急指令上消耗领袖骰时，你可以让该生物以反应采取{@action 使用物件}、{@action 搜索}、{@action 躲藏}或{@action 回避}动作之一，而非移动。"
+			]
+		},
+		{
+			"ENG_name": "Multilayered Tactics",
+			"name": "多层战术",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"此外，在第18级，当你对某生物的战术洞察检定成功时，你可以选择所列效果中的两项。"
+			]
+		},
+		{
+			"ENG_name": "Unstoppable Schemes",
+			"name": "势不可挡的谋略",
+			"source": "ktw",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "战术家",
+			"subclassSource": "ktw",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，阻挡你的道路成为徒劳之举。当你以紧急指令或战场调度移动盟友时，他们可以穿过敌对生物占据的空间，只要其移动不在被占据的空间中结束。"
+			]
+		},
+		{
+			"ENG_name": "Gifted's Presence",
+			"name": "天赋者之威仪",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "天赋者",
+			"subclassSource": "ktwe",
+			"level": 1,
+			"entries": [
+				"天赋者是一类独特的督军，其威仪源自他们的灵能\"天赋\"。与任何灵能使一样，其力量根源可能各异，表现形式也多种多样，但在所有情况下，他们都借助这份独特的天赋，挥出一种神秘而高效、能给盟友带来无量助益的威仪。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "天赋|督军|ktw|天赋者|ktwe|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "The Gift",
+			"name": "天赋",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "天赋者",
+			"subclassSource": "ktwe",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此威仪时，你必须先从以下选项中选择你的灵能天赋。你的天赋将影响你的数项特性。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Enhancement",
+							"type": "entries",
+							"name": "强化",
+							"entries": [
+								"你能激发自己与他人内在的力量。你获得{@skill 运动}的熟练项，并获得{@optfeature 强化学科|ktp|强化技艺}灵能威能的使用权。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Precognition",
+							"type": "entries",
+							"name": "预知",
+							"entries": [
+								"你能窥见未来的片段。你获得{@skill 察觉}的熟练项，并获得{@optfeature 预知学科|ktp|预知}灵能威能的使用权。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Telepathy",
+							"type": "entries",
+							"name": "心灵感应",
+							"entries": [
+								"他人的心灵对你如同一本打开的书。你获得{@skill 洞悉}技能的熟练项，并获得{@optfeature 心灵感应学科|ktp|心灵沟通}灵能威能的使用权。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Psionic Discipline",
+			"name": "灵能学科",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "天赋者",
+			"subclassSource": "ktwe",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你的天赋进化为你力量的完整形态。你获得与你的天赋对应的完整学科（包括替代效应法术）的使用权（{@optfeature 强化学科|ktp|强化}、{@optfeature 预知学科|ktp|预知}或{@optfeature 心灵感应学科|ktp|心灵感应}）。",
+				"你可以将领袖骰当作灵能点使用，上限为1枚领袖骰。此上限在5级提升为2枚，9级提升为3枚，14级提升为4枚，17级提升为5枚。",
+				"你的灵能能力调整值为智力。",
+				"灵能学科的相关规则请参阅{@classFeature 灵能|灵能使|ktp|1}特性。",
+				{
+					"ENG_name": "Psionic",
+					"type": "abilityDc",
+					"name": "灵能",
+					"attributes": [
+						"int"
+					]
+				},
+				{
+					"ENG_name": "Psionic",
+					"type": "abilityAttackMod",
+					"name": "灵能",
+					"attributes": [
+						"int"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Psionic Battlefield Presence",
+			"name": "灵能战场威仪",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "天赋者",
+			"subclassSource": "ktwe",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，当你以动作使用灵能学科威能时，你可以在同一动作中用战场威仪赋予一次攻击。"
+			]
+		},
+		{
+			"ENG_name": "Gifted Leader",
+			"name": "天赋领袖",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "天赋者",
+			"subclassSource": "ktwe",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从第11级起，你的天赋与领袖才能完美协调，彼此相得益彰。当你将一枚或更多领袖骰用于灵能学科威能时，你获得一枚特殊的领袖骰，它只能用于集结标记、压倒性标记或协助之言。这枚骰若在你的下回合结束前未被使用即告失效；你同一时间只能拥有一枚这样的特殊领袖骰。",
+				"此外，当你将领袖骰用于灵能学科的威能时，你消耗的第一枚骰在计算威能消耗时视为两点灵能点。"
+			]
+		},
+		{
+			"ENG_name": "Battle Mind",
+			"name": "战斗心智",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "天赋者",
+			"subclassSource": "ktwe",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，你身边的战斗成为你的一部分，你也成为它的一部分，由你的灵能相连。你根据你的天赋获得以下收益之一。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Enhancement",
+							"type": "entries",
+							"name": "强化",
+							"entries": [
+								"你能感受到盟友内在的力量，并在其衰竭时予以巩固。当60尺内的一名盟友力量或体质豁免检定失败时，你可以让其改为通过。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Precognition",
+							"type": "entries",
+							"name": "预知",
+							"entries": [
+								"你能在灾祸降临盟友之前预见它。当60尺内的一名盟友敏捷或魅力豁免检定失败时，你可以让其改为通过。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Telepathy",
+							"type": "entries",
+							"name": "心灵感应",
+							"entries": [
+								"你在心灵中与盟友同在，给予他们第二次机会。当60尺内的一名盟友感知或智力豁免检定失败时，你可以让其改为通过。"
+							]
+						}
+					]
+				},
+				"若你正在进行豁免检定的效应与你让盟友通过的豁免相同，你的该豁免检定获得优势。一旦你使用了此特性赋予的威能，在完成一次长休前你无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Perfect Convergence",
+			"name": "完美汇聚",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "天赋者",
+			"subclassSource": "ktwe",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，你的威仪之能与灵能之力完美同步运转。即使在你施放来自灵能学科替代效应的法术时，你也可以使用战场威仪赋予一次攻击。",
+				"此外，当你将领袖骰用于灵能学科的威能时，你消耗的第一枚骰在计算威能消耗时视为三点灵能点。"
+			]
+		},
+		{
+			"ENG_name": "Spellweaver's Presence",
+			"name": "织法者之威仪",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 1,
+			"entries": [
+				"织法者是一位精通魔法之人，掌握着魔法及其战术应用的深湛机理知识，但常常缺乏\u2014\u2014或至少不专注于\u2014\u2014法师或术士可能拥有的那种原始秘法之力。他们以灵巧的手法操弄魔法，牵动并扭曲他人的法术，以防护与幻术荫蔽盟友，其手法微妙而有效。",
+				"粗心的旁观者或许会低估他们的作为，但明智者明白：论扭转战局，他们操弄的危险可能远胜一枚耀眼的火球术。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术熟练|督军|ktw|织法者|ktwe|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附魔师之幕|督军|ktw|织法者|ktwe|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Arcane Proficiency",
+			"name": "奥术熟练",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此威仪时，你获得{@skill 奥秘}技能的熟练项，并从{@filter 吟游诗人或法师法术列表中防护、惑控或幻术学派的法术|spells|level=0|class=吟游诗人;法师|school=I;A;E}中学会两个自选戏法。这些法术对你而言是督军法术。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Spellcasting Ability",
+							"type": "entries",
+							"name": "施法属性",
+							"entries": [
+								"由于你的法术是学习所得，智力是你法术的施法属性。当某法术提及你的施法属性时，你使用你的智力。此外，你在决定所施放法术的豁免DC以及以法术进行攻击检定时，使用你的智力调整值。",
+								{
+									"ENG_name": "Spell",
+									"type": "abilityDc",
+									"name": "法术",
+									"attributes": [
+										"int"
+									]
+								},
+								{
+									"ENG_name": "Spell",
+									"type": "abilityAttackMod",
+									"name": "法术",
+									"attributes": [
+										"int"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Enchanter's Shroud",
+			"name": "附魔师之幕",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，在第1级，当你掷先攻时，你以一道秘法附魔裹住一名盟友生物，使目标生物{@condition 隐形}，持续等同于你智力调整值的轮数，或直到目标生物进行攻击、掷伤害骰或迫使某人进行豁免检定为止。"
+			]
+		},
+		{
+			"ENG_name": "Shield and Shrouding",
+			"name": "护身与遮蔽",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"此外，在第3级，你对魔法的熟练赋予你施放有限范围魔法以遮蔽和保护盟友的能力。你知晓两个自选的{@filter 1环法师法术|spells|level=1|class=法师|school=I;A}，它们必须属于法师法术列表中的防护或幻术学派。这些法术对你而言是督军法术。你可以消耗等同于法术环阶的领袖骰来施放这些法术。"
+			]
+		},
+		{
+			"ENG_name": "Spell Manipulation",
+			"name": "法术操纵",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你获得以魔法微妙影响战场的能力，用你的魔法对法术与攻击加以微调修正。你从以下选项中学会三项，并在第6级和第14级再各获得一项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Arcane Surge",
+							"type": "entries",
+							"name": "秘法涌动",
+							"entries": [
+								"当一名盟友施放法术时，你可以以一个反应消耗一枚领袖骰，将其加到该法术的一次攻击检定或伤害掷骰上，或从中减去。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Illusory Distraction",
+							"type": "entries",
+							"name": "幻象扰敌",
+							"entries": [
+								"当某生物被一次攻击指定为目标时，你可以以一个反应消耗一枚领袖骰制造幻象干扰。掷该领袖骰并从攻击检定中减去其结果。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Pull Spell",
+							"type": "entries",
+							"name": "引拉法术",
+							"entries": [
+								"当一个法术以30尺内的一名盟友为目标，或其范围包含你时，你可以以一个反应使该法术改为以你为目标。若是范围效应，这将使范围的中心置于你身上。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Redirection",
+							"type": "entries",
+							"name": "攻击改向",
+							"entries": [
+								"你可以改向一次未命中目标的远程武器或法术攻击。作为对一次未命中攻击的反应，你可以消耗一枚领袖骰，对目标30尺内的另一名生物重掷该攻击；若是非戏法法术，以此方式改向法术需要消耗等同于法术环阶的领袖骰。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Tweak Area",
+							"type": "entries",
+							"name": "微调范围",
+							"entries": [
+								"当一名盟友施放带效应区域的法术时，你可以以一个反应消耗领袖骰扭曲其法术的形状。你可以将效应内的一名生物排除，或将不在效应内但紧邻该法术的一名生物纳入，每排除或纳入一名生物消耗一枚领袖骰。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Contested Magic",
+			"name": "抗衡魔法",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级起，你可以将法术操纵中原本仅对盟友法术生效的效果用于所有法术。当你将它们用于非盟友的法术时，其费用增加一枚领袖骰。"
+			]
+		},
+		{
+			"ENG_name": "Mirror Ally",
+			"name": "镜像盟友",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从第11级起，每回合一次，当你以战场威仪赋予攻击时，你可以召唤该盟友生物的幻影复制品，其效用如同{@spell 镜影术}的一个分身。此幻影复制品持续到你的下回合开始、被一次攻击破坏，或直到被复制的生物进行攻击为止。若被复制的生物造成伤害，幻影会模仿该攻击造成{@damage 1d6}点力场伤害。",
+				"当你创造幻影复制品时，你可以消耗一枚领袖骰，使其直到被破坏或你的下回合开始前都不会消失（在后续的镜像攻击中继续造成伤害）。"
+			]
+		},
+		{
+			"ENG_name": "Independent Arcana",
+			"name": "自主秘法",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级起，你可以额外选择三个自选的{@filter 3环或更低|spells|level=1;2;3|class=法师|school=I;A}法术，它们必须属于法师法术列表中的防护或幻术学派。这些法术对你而言是督军法术。你可以消耗等同于法术环阶的领袖骰来施放这些法术。",
+				"当你施放一个施法距离为自身的法术时，你可以改为以30尺内的一名盟友为目标。"
+			]
+		},
+		{
+			"ENG_name": "Mirror Army",
+			"name": "镜像大军",
+			"source": "ktwe",
+			"className": "督军",
+			"classSource": "ktw",
+			"subclassShortName": "织法者",
+			"subclassSource": "ktwe",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级起，你可以以一个动作将镜像盟友施加于60尺内至多等同于你智力调整值数量的生物。",
+				"一旦你使用了此能力，在完成一次长休前你无法再次使用。"
+			]
+		}
+	]
+}
