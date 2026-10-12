@@ -1,0 +1,1733 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "InfKore:Disciple",
+				"abbreviation": "Disc",
+				"full": "门徒职业",
+				"url": "https://www.reddit.com/r/UnearthedArcana/comments/a2h3iu/the_disciple_become_a_wandering_disciple_a/",
+				"version": "2018.12.02",
+				"authors": [
+					"InfKore"
+				],
+				"convertedBy": [
+					"Ikaguia"
+				]
+			}
+		],
+		"optionalFeatureTypes": {
+			"Disc:D": "武学"
+		},
+		"edition": "classic",
+		"dateAdded": 1556992506,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "b1586a5751"
+	},
+	"class": [
+		{
+			"ENG_name": "Disciple",
+			"name": "门徒",
+			"source": "InfKore:Disciple",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"str",
+				"wis"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"history",
+								"insight",
+								"intimidation",
+								"perception",
+								"religion",
+								"sleight of hand"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"tools": [
+					"选择一种工匠工具或一种乐器"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"heavy",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"heavy": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 链甲|phb}，(b) {@item 鳞甲|phb} 或 (c) {@item 皮甲|phb}",
+					"(a) 一把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}和一面{@item 盾牌|phb}，或 (b) 两把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}",
+					"(a) {@item 标枪|phb|2支标枪} 或 (b) {@item 匕首|phb|3把匕首}",
+					"(a) 一个{@item 地城套组|PHB} 或 (b) 一个{@item 探索套组|PHB}"
+				],
+				"goldAlternative": "{@dice 4d4×10|4d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"链甲|phb"
+						],
+						"b": [
+							"鳞甲|phb"
+						],
+						"c": [
+							"皮甲|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"盾牌|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"标枪|phb"
+						],
+						"b": [
+							"匕首|phb"
+						]
+					},
+					{
+						"a": [
+							"地城套组|PHB"
+						],
+						"b": [
+							"探索套组|PHB"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"节奏点",
+						"已知武学"
+					],
+					"rows": [
+						[
+							0,
+							1
+						],
+						[
+							2,
+							2
+						],
+						[
+							3,
+							2
+						],
+						[
+							3,
+							2
+						],
+						[
+							4,
+							3
+						],
+						[
+							4,
+							3
+						],
+						[
+							5,
+							3
+						],
+						[
+							5,
+							3
+						],
+						[
+							6,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							7,
+							4
+						],
+						[
+							7,
+							4
+						],
+						[
+							8,
+							4
+						],
+						[
+							8,
+							4
+						],
+						[
+							9,
+							4
+						],
+						[
+							9,
+							4
+						],
+						[
+							10,
+							4
+						],
+						[
+							10,
+							4
+						],
+						[
+							10,
+							4
+						],
+						[
+							10,
+							4
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"超凡武学|门徒|InfKore:Disciple|1",
+				"武学直觉|门徒|InfKore:Disciple|1",
+				"节奏|门徒|InfKore:Disciple|2",
+				"战斗风格|门徒|InfKore:Disciple|2",
+				{
+					"classFeature": "超凡之旅|门徒|InfKore:Disciple|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|门徒|InfKore:Disciple|4",
+				"额外攻击|门徒|InfKore:Disciple|5",
+				"灵敏|门徒|InfKore:Disciple|5",
+				"超常感知|门徒|InfKore:Disciple|6",
+				{
+					"classFeature": "超凡之旅特性|门徒|InfKore:Disciple|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|门徒|InfKore:Disciple|8",
+				"盲感|门徒|InfKore:Disciple|9",
+				"属性值提升|门徒|InfKore:Disciple|10",
+				{
+					"classFeature": "超凡之旅特性|门徒|InfKore:Disciple|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|门徒|InfKore:Disciple|12",
+				"铭刻成长|门徒|InfKore:Disciple|13",
+				{
+					"classFeature": "超凡之旅特性|门徒|InfKore:Disciple|14",
+					"gainSubclassFeature": true
+				},
+				"不朽身|门徒|InfKore:Disciple|15",
+				"属性值提升|门徒|InfKore:Disciple|16",
+				"节奏精通|门徒|InfKore:Disciple|17",
+				{
+					"classFeature": "超凡之旅特性|门徒|InfKore:Disciple|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|门徒|InfKore:Disciple|19",
+				"大宗师|门徒|InfKore:Disciple|20"
+			],
+			"subclassTitle": "超凡之旅",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Disciple",
+			"name": "门徒",
+			"source": "InfKore:Disciple",
+			"entries": [
+				{
+					"ENG_name": "Disciple",
+					"source": "InfKore:Disciple",
+					"page": 1,
+					"entries": [
+						"一位精灵女子从容穿过林间空地，嘴角含笑，手指悄然扣上鞘中之剑。强盗们从四周灌木中跃出时，她闭上了眼睛。不等他们喊出勒索之言，女子的剑刃已朝人群挥出一道宽阔的弧光。每名强盗都堪堪躲过她这记先发制人的打击，但就在他们拔剑的刹那，动作却骤然凝滞。各人躯干上浮现出一道巨大的伤口\u2014\u2014正是她的剑刃擦身而过之处\u2014\u2014随即他们纷纷瘫倒在地。",
+						"在一处芳草萋萋的高台上，一个孤独的人类身影立于一片悬浮的幽灵剑刃之间，全神贯注。那身影如大师级的指挥家般调度剑刃，让它们流畅地击中四周石上绘出的靶标。带着一声自豪的低语，身影唤回剑刃，随即意念一动，令它们化作尘埃，随风而逝。",
+						"一座威严的城堡俯瞰着血染的战场，战斗正在其下肆虐。战场中央，一名遍体鳞伤的提夫林正孤身奋战、以求生路。一对魁梧的幽灵手臂自他背后生出，令他能同时挥舞四柄战斧。他冲入一群士兵之中，周身裹挟烈焰，孤身凿穿敌阵。每一步都可能是他的最后一步，而这名提夫林却带着最灿烂的笑容战斗着。",
+						"尽管这些武者以千姿百态的超凡之法战斗，他们皆为门徒。门徒以其神秘的战斗风格与赋予修行意义的内省专注而立身。对门徒而言，战斗是自我精进之途，而战场则是检验理念强度的试炼之地。",
+						{
+							"ENG_name": "Masters of Tempo",
+							"type": "entries",
+							"name": "节奏大师",
+							"entries": [
+								"门徒魔法造诣的关键在于觉察与专注。生物的一举一动，都会在魔网的诸要素间激起微弱得几乎无法察觉的涟漪。门徒以自身理念为专注之锚，进入一种澄明至极的状态，从而感知并解读这些涟漪，最终运用涟漪之中蕴含的力量\u2014\u2014称为{@bold 节奏}\u2014\u2014来驱动他们的神秘技巧。随着门徒成长并稳固对理念的把握，其维持这种专注的能力也会大幅提升，武艺亦随之精进。"
+							]
+						},
+						{
+							"ENG_name": "Forged Ideals",
+							"type": "entries",
+							"name": "锻铸理念",
+							"entries": [
+								"门徒的理念经由其所修的超凡武学，体现于其战斗风格之中。有些门徒自行发现这些道路，另一些则师从此道大师。每门超凡武学都将某一理念置于至高之位，它是该武学节奏技巧的锚点。因此，以这些武学作战既是一种自我表达，也是打磨自身哲学的契机。战场的危险与严酷，为检验门徒的专注、自我认知与价值观提供了完美的情境。"
+							]
+						}
+					],
+					"name": "门徒",
+					"type": "section"
+				},
+				{
+					"source": "InfKore:Disciple",
+					"page": 2,
+					"entries": [
+						{
+							"ENG_name": "Born Wanderers",
+							"type": "entries",
+							"name": "天生流浪者",
+							"entries": [
+								"由于这种对经历与冲突的天性，你很难见到久居一地的门徒，也难以见到甘受军规枷锁驱使的门徒。他们是天生的流浪者，倾向于聚向那些可能引他们走向更大挑战与冒险的有趣之人。这样的人往往是流浪门徒值得较量的对手与毕生的挚友：正是点燃灵感之火的最佳星火。"
+							]
+						},
+						{
+							"ENG_name": "Eternal Students",
+							"type": "entries",
+							"name": "永恒学子",
+							"entries": [
+								"对门徒而言，生存往往屈居于成长之后。为此，你仍会发现门徒受雇为佣兵或卖剑人，试图寻找新的冲突来检验自己。每一场战斗都是突破自身极限的机会，考验的不仅是能力，还有意志与决心。门徒之道充满抉择。每位门徒都必须决定修习何门武学、舍弃何门武学，因为通往完美之途上，遍布破碎的哲学与软弱的心。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Disciple",
+							"type": "entries",
+							"name": "创造门徒",
+							"entries": [
+								"当你创造自己的门徒时，最需要考虑的是他们为何而战。对门徒来说，战斗是自我发现与自我肯定的手段。迄今为止，他们的战斗教会了他们什么？他们渴望成为怎样的人、怎样的武者？距离那个理想化的自己还有多远？他们是否有想要击败的特定人物或生物？抑或是在寻觅一位新的导师，以填补自己在技艺或人格上感到的缺憾？思考你的角色面对看似不可逾越的威胁时会有何感受，以及在落败或将其击败后又会有何感受。",
+								"同样重要的是，你的角色最初是何时开始注意到周身节奏之流的。这是他们一直得见、却从未领悟其意义的东西吗？也许是与生俱来？也许这股力量在情绪或身体陷入绝境的危急时刻被解锁？又或者，你终究是通过刻意修行\u2014\u2014独自一人，或师从某位大师、某个门派\u2014\u2014才得见节奏的丝丝缕缕？你最先展现的是哪门武学，为何是它？最后，你的角色如今如何看待自己的力量？你的角色初得此魔法的经历，应当影响他对这份力量、以及对拥有这份力量的自己的感受。"
+							]
+						},
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"entries": [
+								"你可以依照以下建议快速创建一名门徒。首先，让力量或敏捷成为你的最高属性值，这取决于你想专精于倚仗力量的武器还是灵巧武器。你的次高属性值应为感知，体质则作为你的第三高属性值。其次，选择{@background 平民英雄}背景。"
+							]
+						}
+					],
+					"type": "section"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Journey of the Blade Dancer",
+			"name": "剑舞者之旅",
+			"shortName": "剑舞者",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassFeatures": [
+				"剑舞者之旅|门徒|InfKore:Disciple|剑舞者|InfKore:Disciple|3",
+				"反射闪避|门徒|InfKore:Disciple|剑舞者|InfKore:Disciple|7",
+				"渐快|门徒|InfKore:Disciple|剑舞者|InfKore:Disciple|11",
+				"疾行敏捷|门徒|InfKore:Disciple|剑舞者|InfKore:Disciple|14",
+				"自由阔步|门徒|InfKore:Disciple|剑舞者|InfKore:Disciple|18"
+			]
+		},
+		{
+			"ENG_name": "Journey of the Conjurer",
+			"name": "咒法师之旅",
+			"shortName": "咒法师",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassFeatures": [
+				"咒法师之旅|门徒|InfKore:Disciple|咒法师|InfKore:Disciple|3",
+				"剑之亲和|门徒|InfKore:Disciple|咒法师|InfKore:Disciple|7",
+				"终极武库|门徒|InfKore:Disciple|咒法师|InfKore:Disciple|11",
+				"武库之躯|门徒|InfKore:Disciple|咒法师|InfKore:Disciple|14",
+				"梦境之门|门徒|InfKore:Disciple|咒法师|InfKore:Disciple|18"
+			]
+		},
+		{
+			"ENG_name": "Journey of the War God",
+			"name": "战神之旅",
+			"shortName": "战神",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassFeatures": [
+				"战神之旅|门徒|InfKore:Disciple|战神|InfKore:Disciple|3",
+				"寰宇威仪|门徒|InfKore:Disciple|战神|InfKore:Disciple|7",
+				"渐临全知|门徒|InfKore:Disciple|战神|InfKore:Disciple|11",
+				"真理透镜|门徒|InfKore:Disciple|战神|InfKore:Disciple|14",
+				"神性碎片|门徒|InfKore:Disciple|战神|InfKore:Disciple|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Martial Intuition",
+			"name": "武学直觉",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 1,
+			"entries": [
+				"你的对手的攻击散发着某种你的身体已学会解读的节奏。如果某个生物攻击你，或强迫你进行豁免检定，你的DM就会告诉你以下关于其能力的一项信息（由你选择）：",
+				{
+					"type": "list",
+					"items": [
+						"它由你指定的一项属性值是高于、低于还是等于你的同一属性值。",
+						"它的任意一种速度是高于、低于还是等于你的某一种速度（由你选择）。",
+						"它的各项数值是否正受某个法术或魔法效应的影响。",
+						"它是否至少熟练使用一种{@filter 军用武器|items|source=phb|category=基础|type=军用武器}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sublime Discipline",
+			"name": "超凡武学",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 1,
+			"entries": [
+				"门徒之道始于对超凡武学的修习。超凡武学是一种神秘的武术。每门武学都以一个理念为中心，供门徒理解并内化于心。",
+				"在第1级，选择一门{@filter 超凡武学|optionalfeatures|source=null|feature type=Disc:D}，其详述位于职业描述的末尾。当你在特定的门徒等级时，你会习得新的武学，如门徒职业表中\"已知武学\"一栏所示。",
+				"此外，当你在此职业中获得等级时，可以选择一门你已习得的武学，并以另一门武学替换它。",
+				{
+					"ENG_name": "Signature Art",
+					"type": "entries",
+					"name": "招牌绝技",
+					"entries": [
+						"每门超凡武学都对应一门招牌绝技，即该武学的基础能力。你可以使用此特性来引动你已知武学的招牌绝技的效果。同一时间你只能让一门招牌绝技的效果处于生效状态。",
+						"你可以使用该特性的次数等于你的感知调整值（至少为一次）。而你将在完成一次长休后重新恢复所有的使用次数。"
+					]
+				},
+				{
+					"ENG_name": "Tempo Techniques",
+					"type": "entries",
+					"name": "节奏技巧",
+					"entries": [
+						"每门武学都有一系列技巧\u2014\u2014即该门武学的武学技巧\u2014\u2014你在武学描述中注明的门徒等级获得这些技巧。这些技巧需要你花费节奏点才能使用，节奏点则于第2级获得。",
+						"某些技巧会对特定的一次攻击产生影响。每次攻击你只能使用一种此类技巧。"
+					]
+				},
+				{
+					"ENG_name": "Tempo Ability",
+					"type": "entries",
+					"name": "节奏能力",
+					"entries": [
+						"你运用节奏的能力与你的直觉以及感知周身魔法涟漪的能力息息相关；因此，感知是门徒的关键属性。你的部分武学特性会要求目标进行豁免检定以抵抗其效果。",
+						{
+							"ENG_name": "Saving Throws",
+							"type": "entries",
+							"name": "豁免检定",
+							"entries": [
+								"豁免DC计算如下：",
+								{
+									"ENG_name": "Tempo",
+									"type": "abilityDc",
+									"name": "节奏",
+									"attributes": [
+										"wis"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 2,
+			"entries": [
+				"你采用一种特定的战斗风格作为你的专长。选择一项{@filter 下列选项|optionalfeatures|source=null|feature type=FS:F}。即使是再次获得选择机会，你也不能重复选择同一个战斗风格选项。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Dueling",
+							"type": "entries",
+							"name": "对决",
+							"entries": [
+								"单手持用一把近战武器，且并未同时持用其他武器时，你用该武器攻击的伤害掷骰获得+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Great Weapon Fighting",
+							"type": "entries",
+							"name": "巨武器战斗",
+							"entries": [
+								"双手持用一把近战武器发动攻击时，若你的伤害掷骰掷出1或2，则可以选择重掷。不过哪怕其仍是1或2，你都必须接受重掷的数值。此外，该武器必须具有双手或两用属性。"
+							]
+						},
+						{
+							"ENG_name": "Protection",
+							"type": "entries",
+							"name": "守护",
+							"entries": [
+								"当某个你能看见的生物攻击你身边5尺内除你之外的目标时，你可以用反应迫使该攻击的攻击检定具有劣势。你必须持用盾牌以实现该效果。"
+							]
+						},
+						{
+							"ENG_name": "Two-Weapon Fighting",
+							"type": "entries",
+							"name": "双武器战斗",
+							"entries": [
+								"当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tempo",
+			"name": "节奏",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 2,
+			"entries": [
+				"从第2级起，你获得感知并运用周遭魔法涟漪中力量的能力，此力量称为节奏。你对这种神秘能量的掌握以节奏点的数量表示。你拥有的节奏点数量由你的门徒等级决定，如门徒职业表中\"节奏点\"一栏所示。",
+				"你可以花费这些点数来驱动武学授予的各种节奏技巧。节奏点一经花费便无法再次使用。当你采取回避动作时，可以用附赠动作凝神专注，恢复所有已消耗的节奏点。"
+			]
+		},
+		{
+			"ENG_name": "Sublime Journey",
+			"name": "超凡之旅",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 3,
+			"entries": [
+				"在第3级，你踏上了塑造自身技艺、并引导你趋近某些天赋魔法才能的个人之旅。选择追随剑舞者之旅、咒法师之旅或战神之旅。你所选择的超凡之旅会在第3级授予你特性，并在第7、11、14和18级再次授予。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 4,
+			"entries": [
+				"当你到达第4、8、10、12、16和19级时，你可以将一项由你选择的属性值提升2点，或将两项由你选择的属性值各提升1点。照常，使用此特性无法将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Alacrity",
+			"name": "灵敏",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 5,
+			"entries": [
+				"同样在第5级，你可以将你的感知调整值加到先攻掷骰上，且你的速度提升10尺。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 5,
+			"entries": [
+				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Preternatural Awareness",
+			"name": "超常感知",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 6,
+			"entries": [
+				"在第6级，你的身体对节奏的熟稔使它能在心念尚未反应过来时便应对冲突。只要你保持意识清醒，就不会陷入{@condition 突袭}状态。"
+			]
+		},
+		{
+			"ENG_name": "Sublime Journey Feature",
+			"name": "超凡之旅特性",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 7,
+			"entries": [
+				"在第7级，你从你的超凡之旅中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Blind Sense",
+			"name": "盲感",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 9,
+			"entries": [
+				"在第9级，你能够察觉隐藏生物的细微移动所引起的微弱魔法涟漪。你知晓你10尺内任何隐藏或{@condition 隐形}生物的位置。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 10,
+			"entries": [
+				"当你达到10级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Sublime Journey Feature",
+			"name": "超凡之旅特性",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 11,
+			"entries": [
+				"在第11级，你从你的超凡之旅中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Imprinted Growth",
+			"name": "铭刻成长",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 13,
+			"entries": [
+				"从第13级起，你获得敏捷或体质豁免检定的熟练项（由你选择）。"
+			]
+		},
+		{
+			"ENG_name": "Sublime Journey Feature",
+			"name": "超凡之旅特性",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 14,
+			"entries": [
+				"在第14级，你从你的超凡之旅中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Timeless Body",
+			"name": "不朽身",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 15,
+			"entries": [
+				"在第15级，你的身体已强健到足以抵御年岁的侵蚀。你不会承受年老带来的衰弱，也不会被魔法催老。但你仍可能寿终正寝。此外，你不再需要饮食。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Tempo Mastery",
+			"name": "节奏精通",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 17,
+			"entries": [
+				"在第17级，当你完成一次短休或长休时，你恢复所有已消耗的招牌绝技使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Sublime Journey Feature",
+			"name": "超凡之旅特性",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 18,
+			"entries": [
+				"在第18级，你从你的超凡之旅中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Great Master",
+			"name": "大宗师",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"level": 20,
+			"entries": [
+				"在第20级，你的修为臻至化境，成为一门武学的大师。选择你所修习的任意一门武学。每当你使用来自该武学的节奏技巧时，你所花费的节奏点减少1点（最低为1点）。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Journey of the Blade Dancer",
+			"name": "剑舞者之旅",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "剑舞者",
+			"subclassSource": "InfKore:Disciple",
+			"level": 3,
+			"entries": [
+				"一记挥斩往往不止于其表象，对追随剑舞者之旅的门徒而言尤其如此。剑舞者是身体几乎已与周身涟漪融为一体的门徒。新生的魔法感官驱使他们在步法与技巧的施展中追求灵动多变。他们精准而舒展的动作切入魔网本身的经纬，赋予他们超自然的、杂技般的身手与战斗中的优雅。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "剑舞|门徒|InfKore:Disciple|剑舞者|InfKore:Disciple|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "优雅|门徒|InfKore:Disciple|剑舞者|InfKore:Disciple|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Blade Dance",
+			"name": "剑舞",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "剑舞者",
+			"subclassSource": "InfKore:Disciple",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在第3级选择此之旅时，你的攻击会伴随着回应你意志的魔法涟漪。每当你对某个生物发动近战武器攻击而未命中时，你可以使该生物受到等同于你感知调整值的力场伤害。",
+				"此外，在你的回合内，如果你对某个生物发动了近战攻击，则直到你的回合结束为止，该生物都无法对你发动借机攻击。"
+			]
+		},
+		{
+			"ENG_name": "Elegance",
+			"name": "优雅",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "剑舞者",
+			"subclassSource": "InfKore:Disciple",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，如果你尚未拥有{@skill 表演}技能的熟练项，则获得之，并且可以在使用该熟练项的属性检定中加上你的感知调整值。"
+			]
+		},
+		{
+			"ENG_name": "Evasion",
+			"name": "反射闪避",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "剑舞者",
+			"subclassSource": "InfKore:Disciple",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级，你与生俱来的敏捷让你得以避开特定的范围效应，例如蓝龙的闪电吐息或火球术。当你受到某个允许你进行敏捷豁免检定以使伤害减半的效应影响时，若你豁免成功则改为不受任何伤害，豁免失败则只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Accelerando",
+			"name": "渐快",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "剑舞者",
+			"subclassSource": "InfKore:Disciple",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在第11级，你的近战武器攻击的伤害加上你的感知调整值（最低为+1）。此外，你可以用附赠动作来采取{@action 疾走}动作。"
+			]
+		},
+		{
+			"ENG_name": "Rushing Agility",
+			"name": "疾行敏捷",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "剑舞者",
+			"subclassSource": "InfKore:Disciple",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你对自身体重的掌控让你得以突破自然的限制。你可以用你的剩余移动距离来决定你的最大跳跃距离（远跳或高跳），以取代常规的计算方式。无论是否助跑，你都能跳出完整的距离。",
+				"此外，在你的回合内，你可以沿垂直表面移动并越过液体，且移动期间不会坠落。"
+			]
+		},
+		{
+			"ENG_name": "Free Stride",
+			"name": "自由阔步",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "剑舞者",
+			"subclassSource": "InfKore:Disciple",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你的移动再也无法被阻止。你的移动不受困难地形影响，法术与魔法效应也无法降低你的速度或使你陷入{@condition 麻痹}或{@condition 束缚}状态。你可以花费5尺移动距离来自动挣脱非魔法的束缚。此外，处于水下不会对你的移动或攻击造成任何减值。"
+			]
+		},
+		{
+			"ENG_name": "Journey of the Conjurer",
+			"name": "咒法师之旅",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "咒法师",
+			"subclassSource": "InfKore:Disciple",
+			"level": 3,
+			"entries": [
+				"酣战之中，为武者带来慰藉的正是手中的武器；它不只是求胜或求生的工具，更是你托付性命的盟友。正是在这般心境之下，节奏对追随咒法师之旅的门徒施展着它的影响。",
+				"咒法师之旅多半始于一个反复出现的梦：一片无垠的原野上散落着历代兵器。在这片空间中，你可以随心所欲地使用与操控、塑造与重塑其中的兵器与景物，永不停歇地追求完美的武库。这个梦一再重现，愈发清晰，直到你在一片随心而动的飞舞兵刃中醒来。自那一天起，你触碰过的每一件武器、你在梦中所做的每一处改动，都将映现在你对这支飞行武库的掌控之中。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "召唤武器|门徒|InfKore:Disciple|咒法师|InfKore:Disciple|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Conjure Weapon",
+			"name": "召唤武器",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "咒法师",
+			"subclassSource": "InfKore:Disciple",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在第3级选择此之旅时，每当你掷先攻或以附赠动作，你都可以召唤或解除一队唯你能持用的无重幽灵武器，它们悬浮于你的空间中。只要未持用盾牌，你便可以心念操纵这些武器；它们可采用任意不具备特殊属性的简易或军用近战武器的数据（具两用属性的武器由你选择单手或双手使用）。这些武器造成力场伤害而非其通常的伤害类型；若原本不具备投掷属性（射程20/60）则获得之，且无论命中与否都会自动返回你的空间。如果你陷入昏迷，这些武器随即消散。",
+				"此外，当你召唤这些武器时，以及在后续回合以附赠动作，你可以让武器结成以下阵形之一：",
+				{
+					"ENG_name": "Assault",
+					"type": "entries",
+					"name": "强袭",
+					"entries": [
+						"你的武器向外直指最近的敌人。这些武器的触及增加5尺，并且用这些武器攻击你能看见的目标时不会具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Storm",
+					"type": "entries",
+					"name": "风暴",
+					"entries": [
+						"你的武器扩张至你周围10尺内的区域，对你选择的生物而言将该区域变为困难地形。"
+					]
+				},
+				{
+					"ENG_name": "Ward",
+					"type": "entries",
+					"name": "守护",
+					"entries": [
+						"你的武器结成一道防护壁垒。从你的每个回合开始后算起，你第一次受到伤害时，该伤害减少等同于你感知调整值的数值（最低为1）。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blade Affinity",
+			"name": "剑之亲和",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "咒法师",
+			"subclassSource": "InfKore:Disciple",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级，你能够解读残留于用过的武器上的铭刻信息。你可以用1分钟时间分析一件你正触碰的武器。1分钟结束时，你获知以下信息之一（由DM决定）：",
+				{
+					"type": "list",
+					"items": [
+						"武器上一位持用者拔出它投入战斗时的清晰影像。",
+						"上一位持用者持用该武器期间所使用过的一种魔法能力的惊鸿一瞥。",
+						"上一位持用者使用该武器时的意图是恶毒、光明磊落、保护他人，还是其他何种性质。",
+						"最后一名被此武器击倒的生物的惊鸿一瞥。"
+					]
+				},
+				"一旦你使用了此特性，在完成一次短休或长休之前，你无法再次使用。这一过程会耗尽武器上残留的魔法铭印，因此一旦你对某件武器使用过此特性，在该武器再经历过实战之前，你都无法再次对它使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Ultimate Arsenal",
+			"name": "终极武库",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "咒法师",
+			"subclassSource": "InfKore:Disciple",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在第11级，你对武库的掌控与武库的品质均已提升。你以召唤武器发动的任何攻击都造成额外的1d8伤害，且你的阵形获得强化：",
+				{
+					"ENG_name": "Assault",
+					"type": "entries",
+					"name": "强袭",
+					"entries": [
+						"在你的每个回合内一次，如果你在{@action 攻击}动作中以召唤武器攻击了两个不同目标，便可以对第三个生物发动一次额外攻击。"
+					]
+				},
+				{
+					"ENG_name": "Storm",
+					"type": "entries",
+					"name": "风暴",
+					"entries": [
+						"武器改为扩张至你周围20尺内的区域。"
+					]
+				},
+				{
+					"ENG_name": "Ward",
+					"type": "entries",
+					"name": "守护",
+					"entries": [
+						"伤害改为减少你感知调整值的两倍（最低为2）。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Conjured Body",
+			"name": "武库之躯",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "咒法师",
+			"subclassSource": "InfKore:Disciple",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你已学会如何将身体与武库融合，将其灵动之姿铭于己身。只要你的武库处于召唤状态，你便获得等同于你步行速度的飞行速度，其外观或如翼状刀刃、或如御剑而行，或为其他类似效果。"
+			]
+		},
+		{
+			"ENG_name": "Dream Gate",
+			"name": "梦境之门",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "咒法师",
+			"subclassSource": "InfKore:Disciple",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你能在转瞬之间倾泻武库的全部力量。以一个动作，你在身后映出梦中原野的景象，并在周身召唤出100件武器。选择任意数量的120尺内生物，并将100枚投射物分配给它们（一个生物最多可被10枚投射物瞄准）。每个生物必须进行敏捷豁免检定，每有一枚射向它的投射物，它便受到{@dice 1d8}点力场伤害，豁免成功则伤害减半。这些武器在你的回合结束时消失。",
+				"必须完成一次长休才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "Journey of the War God",
+			"name": "战神之旅",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "战神",
+			"subclassSource": "InfKore:Disciple",
+			"level": 3,
+			"entries": [
+				"追随战神之旅的门徒在战场上绝不会被人认错\u2014\u2014他们的灵魂显现于身侧与之并肩作战，其形态常为幽灵手臂，或是隐现于其背后的巍然身影。",
+				"节奏的影响所及，远超多数人的想象；毕竟万物皆动，你的灵魂亦然。以炽烈情感自我界定、或亟欲证明自身价值的门徒，能够培养出对灵魂律动的感知。假以时日，门徒便获得在战斗中召唤并挥使这部分灵魂的能力。传说中，有些门徒达到了绝对掌控的境界，最终学会驾驭栖居于自身之中的神性火花。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战神之灵|门徒|InfKore:Disciple|战神|InfKore:Disciple|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Spirit of the War God",
+			"name": "战神之灵",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "战神",
+			"subclassSource": "InfKore:Disciple",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在第3级选择此之旅时，你的热忱可以唤出灵魂中沉醉于战斗荣光的那一部分。以一个附赠动作，或当你掷先攻时，你可以显现或解除两条与你上半身相连的幽灵手臂。手臂被召唤时，及其后的每个你的回合，每条手臂都能进行一次物件互动，例如拔出武器。你可以轻松操控这些手臂，它们的行动与你的其他手臂别无二致。",
+				"以一个动作，你可以用你与幽灵手臂所持用的每件近战武器各发动一次攻击（最多4次攻击）。这些攻击的伤害不加上你的属性调整值，除非该调整值为负值。持用双手武器时，你的幽灵手臂必须始终以双手握持该武器。",
+				"在第5级，你以双手所持武器发动的攻击（最多2次）的伤害掷骰加上你的属性调整值。在第11级，你的幽灵手臂所持武器的伤害掷骰也加上你的属性调整值。"
+			]
+		},
+		{
+			"ENG_name": "Cosmic Presence",
+			"name": "寰宇威仪",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "战神",
+			"subclassSource": "InfKore:Disciple",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级，你与内在自我的联结赋予了你更强大的气场。当你进行{@skill 威吓}或{@skill 游说}检定时，你可以改为在掷骰中加上你的感知调整值而非魅力调整值。",
+				"此外，以一个动作，你可以将你的气场放大百倍。由你选择的60尺内生物必须通过对抗你节奏豁免DC的魅力豁免检定，否则便会察觉到你的存在。在接下来的10分钟内，你对这些生物进行的所有感知与魅力检定均具有优势。",
+				"一旦你使用了此动作，必须完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Encroaching Omniscience",
+			"name": "渐临全知",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "战神",
+			"subclassSource": "InfKore:Disciple",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在第11级，你的灵魂化作你的守望，一张张面孔的轮廓可循迹于你的头颅四周。每当你作为反应的一部分发动攻击时，你可以用你的一条幽灵手臂发动一次额外攻击。",
+				"此外，在你的每个回合内一次，当你的一次武器攻击落空时，你可以用幽灵手臂所持的武器在同一动作中发动一次额外的武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Lens of Truth",
+			"name": "真理透镜",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "战神",
+			"subclassSource": "InfKore:Disciple",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在第14级，你的视觉升格为近似诸神之视。你能在120尺内的普通黑暗与魔法黑暗中视物清晰，并能望入以太位面。只要变形生物或受幻术、变化系魔法遮掩的生物处于此范围及你的视线之内，你便能得见其真身。"
+			]
+		},
+		{
+			"ENG_name": "Shard of Divinity",
+			"name": "神性碎片",
+			"source": "InfKore:Disciple",
+			"className": "门徒",
+			"classSource": "InfKore:Disciple",
+			"subclassShortName": "战神",
+			"subclassSource": "InfKore:Disciple",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你已与自己的灵魂完全重连，解锁了其中的神圣力量。你对武器攻击的伤害具有抗性，且你以武器攻击或节奏技巧造成的任何伤害都会无视抗性并穿透免疫。",
+				"你不再会因年老而死，你的灵魂无法被窃取、囚禁或毁灭，你也不会违背自身意愿被转化为亡灵，唯有神圣干预除外。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Ardent Lion",
+			"name": "热忱雄狮",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"真正的武者从不孤身作战；他们的朋友、家人与所有盟友都会追随他们踏入每一场战斗。热忱雄狮的门徒以战吼激励作战，并凭借羁绊之力在战斗中做出超越凡人的壮举。",
+				{
+					"ENG_name": "Ideal: Camaraderie",
+					"type": "entries",
+					"name": "理念：战友情谊",
+					"entries": [
+						"你的盟友即是你的家人，这份羁绊比世上任何东西都更为珍贵。珍视他们、守护他们，因为他们将成就最好的你。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Rally",
+					"type": "entries",
+					"name": "招牌绝技：集结",
+					"entries": [
+						"以一个动作，你发出一声撼动人心的战吼，令你的盟友周身为之一震。30尺内的任何友方生物都可以用其反应移动至多等同于其速度的距离，且不引发借机攻击。",
+						"当你到达第5级（60尺）、第11级（90尺）以及第17级（120尺）时，此能力的范围增加30尺。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Warding Strike (2nd Level)",
+							"type": "entries",
+							"name": "守护打击（2级）",
+							"entries": [
+								"当你以近战武器命中一个生物时，你可以用附赠动作花费1点节奏点，在其心中植入迟疑。在你的下个回合开始前，它对除你之外的目标发动的下一次攻击具有劣势。"
+							]
+						},
+						{
+							"ENG_name": "Bolstering Bond (5th Level)",
+							"type": "entries",
+							"name": "鼓舞羁绊（5级）",
+							"entries": [
+								"以一个动作，你可以花费至多5点节奏点来鼓舞你与一名盟友。你与由你选择的30尺内的一名盟友，每花费1点节奏点便获得{@dice 1d8}点临时生命值。这些临时生命值持续1分钟，直到你再次使用此技巧，或直到你凝神恢复节奏点为止。"
+							]
+						},
+						{
+							"ENG_name": "Unified Assault (11th Level)",
+							"type": "entries",
+							"name": "协同强袭（11级）",
+							"entries": [
+								"每当你以近战武器命中一个生物时，你可以用附赠动作花费3点节奏点呼叫强袭。由你选择的30尺内的一名友方生物可以用其反应对同一生物发动一次武器攻击。"
+							]
+						},
+						{
+							"ENG_name": "Fury of the Fallen (17th Level)",
+							"type": "entries",
+							"name": "陨落者之怒（17级）",
+							"entries": [
+								"每当你看到一个生物将某个友方生物的生命值降至0，你可以用反应花费4点节奏点，移动至多等同于你速度的距离，并对攻击者发动一次攻击。命中时，该攻击造成正常伤害，且该友方生物恢复等同于你等级的生命值。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Coursing Ember",
+			"name": "奔流余烬",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"活在旁观的边缘、无聊而不满，算不上真正地活过。奔流余烬武学的门徒性情如火，任凭兴致与热情引领自己踏遍天涯。奔流余烬的技巧以门徒的内心之火，赋予其惊人的机动性与存在感。",
+				{
+					"ENG_name": "Ideal: Passion",
+					"type": "entries",
+					"name": "理念：激情",
+					"entries": [
+						"你的心必须如沙漠烈日般燃烧。莫要慵懒度日、任机会从身边溜走。全情投入你选择的每一个行动，以眼中的火焰引领你走向未来。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Stance of the Searing Lash",
+					"type": "entries",
+					"name": "招牌绝技：灼热之鞭姿态",
+					"entries": [
+						"在你的回合，你可以选择让你持用的任何武器裹上火焰，持续1分钟（无需动作），或直到你失去专注为止（如同你正专注于一个法术）。此期间内，每当你在自己的回合以这些武器发动近战攻击，你的触及比通常远5尺，且你的攻击造成火焰伤害而非通常的伤害类型。",
+						"你的触及在第5级再增加5尺，并在第11级和第17级各再增加5尺。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Pyroclastic Charge (2nd Level)",
+							"type": "entries",
+							"name": "火流冲锋（2级）",
+							"entries": [
+								"当你在自己的回合采取疾走动作时，你可以花费1点或更多节奏点，乘上奔涌烈焰之浪。在你的回合结束时，你周围5尺内的每个生物必须进行敏捷豁免检定。豁免失败的生物每花费1点节奏点便受到1d8点火焰伤害，成功则伤害减半。"
+							]
+						},
+						{
+							"ENG_name": "Infernal Echo (5th Level)",
+							"type": "entries",
+							"name": "炽焰回响（5级）",
+							"entries": [
+								"当一个你能看见的敌对生物离开你的触及时，你可以用反应花费2点节奏点，短暂化为一团活焰。你可以作为此反应的一部分，移动至多等同于你速度的距离。如果你在此移动结束时处于引发此反应的生物的触及范围内，便可以对其发动一次近战武器攻击，命中时额外造成1d6点火焰伤害。"
+							]
+						},
+						{
+							"ENG_name": "Flame's Blessing Stance (11th Level)",
+							"type": "entries",
+							"name": "烈焰祝福姿态（11级）",
+							"entries": [
+								"在你的回合开始时，你可以花费2点节奏点，让自己被绚丽的火焰包裹。直到你的下个回合开始为止，你免疫火焰伤害，且每当生物对你发动近战攻击时，它便受到1d8点火焰伤害。"
+							]
+						},
+						{
+							"ENG_name": "Crossfire (17th Level)",
+							"type": "entries",
+							"name": "交叉火力（17级）",
+							"entries": [
+								"以一个动作，你可以花费至多5点节奏点（最低为3点），每花费1点便选择一个100尺内的生物。每个生物必须进行魅力豁免检定。豁免失败的生物因其灵魂被灼焰征服而受到4d6点光耀伤害。生物可以自愿在此豁免检定中失败。",
+								"随后，一道道5尺宽的火线从每个豁免失败的生物（不含其自身所占空间）喷发而出，连向其他每个豁免失败的生物。如果一个生物处于至少一条火线中，它必须进行敏捷豁免检定。豁免失败的生物受到8d6点火焰伤害。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Diamond Mind",
+			"name": "钻石心智",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"钻石心智武学的修习者以在极端危局中仍能保持冷静而闻名。战斗于他们是一道待解的方程，而钻石心智的修行正是要理解其中的全部要素。这种观念造就了一种预知式的战斗风格，修习者仿佛能在短得不可能的时间片段内行动。",
+				{
+					"ENG_name": "Ideal: Order",
+					"type": "entries",
+					"name": "理念：秩序",
+					"entries": [
+						"万事皆有因果。世界看似混乱，其下却铺着一层纯净的秩序。你对这份秩序发现和理解得越多，你就会成为越强大的武者、越充盈的人。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Quick Draw",
+					"type": "entries",
+					"name": "招牌绝技：迅捷拔击",
+					"entries": [
+						"如果你未陷入突袭状态，则在先攻掷骰完毕后、任何人行动之前，你可以移动至多等同于你速度一半的距离，并发动一次武器攻击。此攻击对物件和建筑造成双倍伤害。",
+						"如果你陷入突袭状态，则可以改为使用此招牌绝技来摆脱突袭状态。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Prescient Counter (2nd Level)",
+							"type": "entries",
+							"name": "预知反击（2级）",
+							"entries": [
+								"当你被一次攻击命中时，你可以用反应花费2点节奏点，在对抗该攻击时获得等同于你感知调整值的AC加值，从而有可能使其落空。"
+							]
+						},
+						{
+							"ENG_name": "Flicker Step (5th Level)",
+							"type": "entries",
+							"name": "闪烁步（5级）",
+							"entries": [
+								"以一个动作，你可以花费3点节奏点并指定20尺内的一个敌对生物。你可以传送到该生物5尺内一个未被占据的空间，并对从你原先位置到你新位置之间5尺宽直线内的任意一个生物发动一次近战武器攻击。",
+								"在你的回合结束时，如果被此技巧伤害的生物的生命值小于或等于你的门徒等级，其生命值降为0。"
+							]
+						},
+						{
+							"ENG_name": "Ruby Storm Stance (11th Level)",
+							"type": "entries",
+							"name": "红玉风暴姿态（11级）",
+							"entries": [
+								"当你采取回避动作时，你可以立即用附赠动作花费1点节奏点，进入缓时姿态。直到你的下个回合开始为止，你不会倒地也不会被移动，且每当5尺内的一个生物发动攻击时，你可以立即对其发动一次近战攻击。"
+							]
+						},
+						{
+							"ENG_name": "Trace (17th Level)",
+							"type": "entries",
+							"name": "追迹（17级）",
+							"entries": [
+								"以一个动作，你可以花费4点节奏点，传送至多60尺，到达某个目标触及范围内一个未被占据的空间，并对其发动一次近战武器攻击。命中时，此攻击额外造成2d8点力场伤害。你可以在同一动作中再重复此操作至多5次，只要每次攻击的目标各不相同。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hero's Charge",
+			"name": "英雄冲锋",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"世间满是怪物与觊觎弱者之人。英雄冲锋的门徒以在众目睽睽之下击倒重大威胁为己任，让自己成为希望的象征。此武学的技巧专注于磨砺不屈的意志，并将强者拉下马来。",
+				{
+					"ENG_name": "Ideal: Heroism",
+					"type": "entries",
+					"name": "理念：英勇",
+					"entries": [
+						"人们理应享有和平与幸福，因此你以成为传递它们的工具为己任。压倒性的劣势是受欢迎的挑战，因为只要还有一个灵魂等待拯救，你就必须是那座激励人心的灯塔。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Symbol of Hope",
+					"type": "entries",
+					"name": "招牌绝技：希望象征",
+					"entries": [
+						"只要你能看见至少一名盟友，当你被降至0生命值但未立即死亡时，你可以改为只降至1生命值。",
+						"每次长休后从第二次使用此特性起，你都会承受一级力竭。当你完成一次长休时，以此方式获得的所有力竭等级都会消除。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Topple (2nd Level)",
+							"type": "entries",
+							"name": "击倒（2级）",
+							"entries": [
+								"在你的回合，你可以放弃一次近战武器攻击，并花费至少1点节奏点，尝试击倒一个触及范围内的生物。目标必须进行力量豁免检定。豁免失败的目标倒地，且每花费1点节奏点便受到1d8点钝击伤害。如果目标为大型或更大，它在此豁免检定中具有劣势，且改为每花费1点节奏点受到1d10点钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Blinding Courage (5th Level)",
+							"type": "entries",
+							"name": "耀目勇气（5级）",
+							"entries": [
+								"每当一个生物试图使你或你10尺内的一个非敌对生物恐慌时，你可以用反应花费3点节奏点，使你10尺内的所有非敌对生物直到你的下个回合开始为止都不会恐慌。"
+							]
+						},
+						{
+							"ENG_name": "Revolution (11th Level)",
+							"type": "entries",
+							"name": "轮转（11级）",
+							"entries": [
+								"以一个动作，你可以花费3点节奏点，对5尺内的每个生物各发动一次近战攻击。如果其中有大型或更大的生物，它受到等同于你武器伤害骰的额外伤害。"
+							]
+						},
+						{
+							"ENG_name": "Tyrant's Downfall (17th Level)",
+							"type": "entries",
+							"name": "暴君覆灭（17级）",
+							"entries": [
+								"以一个动作，你可以花费5点节奏点，召来一柄巨型的发光武器。此武器轰然砸落在以你60尺内可见的一点为中心、60尺高、10尺半径的圆柱区域。区域内的任何生物必须进行魅力豁免检定，失败者受到5d12点光耀伤害，成功则伤害减半。如果生物为大型或更大，它额外受到2d12点伤害。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Howling Gale",
+			"name": "咆哮疾风",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"人们总是太常把自己锁在大地上，沦为一种从未真正享受过的生活的囚徒。咆哮疾风的门徒将自行决定下一步道路的能力置于一切之上。此武学的技巧专注于让敌人难以近身，并击退步步紧逼的压迫。",
+				{
+					"ENG_name": "Ideal: Freedom",
+					"type": "entries",
+					"name": "理念：自由",
+					"entries": [
+						"生命不过是一缕微风，飘忽于宇宙的混沌之风中。不要把它浪费在让你不堪重负的无谓重担上。从你自己与身边之人的肩上卸下这些重担，细细体会自由地活着是多么令人欢愉。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Gale Surge",
+					"type": "entries",
+					"name": "招牌绝技：狂风涌动",
+					"entries": [
+						"以一个附赠动作，你将一股狂乱的疾风卷绕周身，短暂化作风之形态。在接下来的1分钟内，你的敏捷豁免检定具有优势，且每当一个生物攻击你而未命中时，你可以移动5尺而不引发借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Driving Wind (2nd Level)",
+							"type": "entries",
+							"name": "劲风驱击（2级）",
+							"entries": [
+								"你可以用你的动作并花费至多5点节奏点，从你的武器释放出一股疾风锥形。锥形的大小等同于你所花费节奏点数的10倍。锥形内的每个生物必须进行力量豁免检定，失败者被向后推移，直到抵达锥形末端一个未被占据的空间为止。"
+							]
+						},
+						{
+							"ENG_name": "Wind Scar (5th Level)",
+							"type": "entries",
+							"name": "风之伤痕（5级）",
+							"entries": [
+								"你可以用你的动作并花费任意数量的节奏点，挥动武器向前斩出一道风刃。指定至多3个你能看见的60尺内的生物。如果你指定了多个目标，每个目标都必须处于至少一个其他目标的5尺内，且它们都不能得到来自你的掩护。每个目标必须通过敏捷豁免检定。豁免失败的生物每花费1点节奏点便受到1d8点魔法挥砍伤害，成功则伤害减半。"
+							]
+						},
+						{
+							"ENG_name": "The Wind That Walks (11th Level)",
+							"type": "entries",
+							"name": "行走之风（11级）",
+							"entries": [
+								"以一个附赠动作，你可以花费3点节奏点进入隐形状态，并能穿过任何生物的空间以及1寸的缝隙而无须消耗额外移动距离，直到你的下个回合开始，或直到你攻击一个生物或强迫其进行豁免检定为止。"
+							]
+						},
+						{
+							"ENG_name": "Tranquil Windstorm (17th Level)",
+							"type": "entries",
+							"name": "静谧风暴（17级）",
+							"entries": [
+								"以一个附赠动作，你可以花费3点节奏点，创造一团半径10尺、随你而动的盘旋气浪球体，持续到你的下个回合结束为止。处于球体内时，由你选择的生物可以无视困难地形，且你可以让任何以球体内生物为目标的远程攻击具有劣势。此外，如果有生物在球体内开始其回合，你可以让它的速度提升10尺，直到其回合结束为止。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mercurial Wolf",
+			"name": "诡变之狼",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"若一味恪守常规思维的条条框框，又怎能宣称自己真正活着？诡变之狼武学的门徒推崇随性与变化，因此他们的技巧便是以幻术与诡计，在战场上制造错综复杂、混沌难解的局面。",
+				{
+					"ENG_name": "Ideal: Chaos",
+					"type": "entries",
+					"name": "理念：混沌",
+					"entries": [
+						"停滞是成长之敌，因此确保世界不断变化便是你的责任。去适应你所促成的种种局面，并经由这一行为获得圆满。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Quicksilver Pack",
+					"type": "entries",
+					"name": "招牌绝技：水银狼群",
+					"entries": [
+						"以一个动作，你创造出自己的一个幻影分身。此效果持续1分钟，并且需要你维持专注，如同专注于一个法术。幻影出现在你10尺内一个你能看见的未被占据的空间中。分身具有与你相同的AC，且一旦受到任何来自攻击、法术或魔法效应的伤害便随即消失。在你的回合以一个附赠动作，你可以将此绝技创造的任意一个分身移动至多30尺，到达一个你能看见的空间。只有当你也拥有飞行速度时，分身才能以此方式飞行。或者，你可以用附赠动作摧毁一个分身并传送到其所在的空间，前提是你能看见该分身。",
+						"你在第5级时以此能力创造的分身数量增加为2个，第11级时为3个，第17级时为4个。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Mirror Step (2nd Level)",
+							"type": "entries",
+							"name": "镜影步（2级）",
+							"entries": [
+								"你令世界绕着一个生物旋转，扰乱它对你位置的感知。当一个生物移动至你5尺内时，你可以用反应花费1点节奏点，强迫该生物进行智力豁免检定。豁免失败时，你可以传送到该生物5尺内的任意空间，且在该回合结束前它对你的下一次攻击具有劣势。"
+							]
+						},
+						{
+							"ENG_name": "Inversion (5th Level)",
+							"type": "entries",
+							"name": "逆转（5级）",
+							"entries": [
+								"以一个动作，你可以花费3点节奏点，强迫一个你能看见的30尺内的生物进行魅力豁免检定。豁免失败时，你传送到该生物所在的空间，并使该生物传送到你原本的空间。如果你或该生物在对方所处之地没有容身之处，此技巧失败。"
+							]
+						},
+						{
+							"ENG_name": "Altered Perspective (11th Level)",
+							"type": "entries",
+							"name": "视角变换（11级）",
+							"entries": [
+								"当一个敌对生物以近战攻击你而未命中时，你可以用反应花费3点节奏点，强迫该生物对由你选择的另一个生物（其自身除外）重复同一攻击。"
+							]
+						},
+						{
+							"ENG_name": "Shifting Sides (17th Level)",
+							"type": "entries",
+							"name": "倒戈相向（17级）",
+							"entries": [
+								"以一个附赠动作，你可以花费4点节奏点，尝试扭曲一个生物对战场的感知。由你选择的30尺内的一个生物必须进行智力豁免检定，以识破你强加于它的幻象。豁免失败时，该生物直到其下个回合开始为止都无法进行反应，并立即对其触及范围内由你选择的一个生物发动一次近战武器攻击。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Raven's Gaze",
+			"name": "渡鸦凝视",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"以眼还眼只会让世界失明，但没有任何恶行能真正逃过渡鸦的凝视。渡鸦凝视武学的门徒不会放任任何加诸自身或同伴的冒犯逍遥法外。渡鸦凝视的技巧围绕先在施暴者心中植下恐惧，再将其击溃。",
+				{
+					"ENG_name": "Ideal: Revenge",
+					"type": "entries",
+					"name": "理念：复仇",
+					"entries": [
+						"你曾蒙受不公。若还没有，那也终会有。将怒火转向那些企图击垮你的人，取回属于你的东西，是你的使命。他们曾试图让你屈膝，而如今，复仇的黑翼将你高高托起。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Will of the Conspiracy.",
+					"type": "entries",
+					"name": "招牌绝技：鸦群之志。",
+					"entries": [
+						"以一个附赠动作，你可以强迫一个你能看见的生物进行感知豁免检定。豁免失败时，目标的视觉与听觉会被一群渡鸦占据。直到你的下个回合结束为止，它处于耳聋状态，并将其周围10尺半径以外的区域感知为魔法黑暗。如果你在自己的回合开始时处于此半径之外，便可以用附赠动作传送进入其中任意一个未被占据的空间。如果目标豁免成功，它便不会察觉你曾试图对它使用此绝技。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Gaze of the Flock (2nd Level)",
+							"type": "entries",
+							"name": "鸦群凝视（2级）",
+							"entries": [
+								"当一个你能看见的30尺内的生物伤害你或强迫你进行豁免检定时，你可以用反应花费2点节奏点，强迫其进行感知豁免检定。豁免失败的生物恐慌于你，直到你的下个回合结束为止。在你的每个回合结束时，只要有一个生物因此恐慌于你，你便可以花费1点节奏点，强迫其再进行一次感知豁免检定。豁免失败的生物继续恐慌于你，直到你的下个回合结束为止。"
+							]
+						},
+						{
+							"ENG_name": "Unkindness In Turn (5th Level)",
+							"type": "entries",
+							"name": "鸦群回敬（5级）",
+							"entries": [
+								"你可以用附赠动作花费2点节奏点，传送到30尺内一个恐慌于你的生物身边。该生物必须进行感知豁免检定。豁免失败的生物因恐惧而陷入麻痹，直到其回合开始为止。"
+							]
+						},
+						{
+							"ENG_name": "Futility (11th Level)",
+							"type": "entries",
+							"name": "徒劳（11级）",
+							"entries": [
+								"在你的每个回合内一次，当你以近战武器命中一个生物时，你可以花费1点节奏点使其进行感知豁免检定。豁免失败的生物速度减半，且直到其下个回合结束为止，它在对抗恐慌的豁免检定中具有劣势。"
+							]
+						},
+						{
+							"ENG_name": "Vengeance of the Swarm (17th Level)",
+							"type": "entries",
+							"name": "群鸦复仇（17级）",
+							"entries": [
+								"一团由灵界渡鸦组成的黑雾自你身上涌出，替你复仇。当一个生物伤害你时，你可以用反应花费4点节奏点，使该生物失去等同于你所受伤害量的生命值（最高为40点伤害）。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Stone Dragon",
+			"name": "石龙",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"正如在地表移动的板块，你给你遇见的每个人都留下持久的印痕。石龙武学的追随者深思熟虑，力求自己的每句话语、每个举动都不失之于轻率。石龙门徒的技巧专注于借大地稳住身心，并落下决定性的一击。",
+				{
+					"ENG_name": "Ideal: Stoicism",
+					"type": "entries",
+					"name": "理念：坚忍",
+					"entries": [
+						"表达是一种强大的东西，最好别轻率用之。当你的言语与行动能推进你的道路时再开口、再出手，并确保每一个字都带着巨石坠落般的分量。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Dragon Sentinel",
+					"type": "entries",
+					"name": "招牌绝技：巨龙哨卫",
+					"entries": [
+						"以一个动作，你可以在30尺内一个未被占据的空间中召唤一座中型巨龙石像，持续1分钟，或直到你失去专注为止（如同你正专注于一个法术）。该巨龙的AC为13+你的感知调整值，免疫毒素和心灵伤害，生命值等同于5+两倍你的门徒等级。",
+						"作为召唤此石像所用动作的一部分，或作为反应\u2014\u2014当一个生物移动至其5尺内或离开其触及时\u2014\u2014你可以让它对其5尺内的一个目标发动一次特殊的近战法术攻击。该巨龙的攻击掷骰加上你的熟练加值与感知调整值，命中时造成2d6点魔法穿刺伤害。任何被石像击中的生物都会被石链缠缚，其速度减半，直到其下个回合开始为止。",
+						"该巨龙的伤害在第5级提升1d6（3d6），并在第11级（4d6）和第17级（5d6）再次提升。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Roots of the Earth (2nd Level)",
+							"type": "entries",
+							"name": "大地之根（2级）",
+							"entries": [
+								"当一个效应将使你倒地或违背你的意愿移动你时，你可以花费1点节奏点，将自身如根须般锚入大地。直到你的下个回合开始为止，你不会倒地，也不会被违背意愿地移动，对原本引发此效果的效应亦然。"
+							]
+						},
+						{
+							"ENG_name": "Mountain Hammer (5th Level)",
+							"type": "entries",
+							"name": "山岳之锤（5级）",
+							"entries": [
+								"当你以近战武器命中一个生物时，你可以花费2点节奏点，将其砸入脚下的裂隙。目标必须进行力量豁免检定。豁免失败的目标倒地。如果目标已经倒地，则改为使其倒地并陷入束缚，直到其下个回合结束为止。"
+							]
+						},
+						{
+							"ENG_name": "Earthbound (11th Level)",
+							"type": "entries",
+							"name": "大地束缚（11级）",
+							"entries": [
+								"以一个动作，你可以花费3点节奏点使自身石化，直到你的下个回合开始为止。以此方式石化期间，你受到的任何伤害减半，且你的形态无法被改变。",
+								"此外，你脚边的大地会试图困住你周遭的生物。你15尺内的每个生物必须进行敏捷豁免检定。豁免失败的生物陷入束缚，直到你的下个回合结束为止。"
+							]
+						},
+						{
+							"ENG_name": "Breath of Ages (17th Level)",
+							"type": "entries",
+							"name": "万古吐息（17级）",
+							"entries": [
+								"以一个动作，你可以花费5点节奏点，从你或你的巨龙哨卫处呼出一股侵蚀之雾。60尺锥形范围内的所有生物\u2014\u2014此锥形可绕过转角扩散\u2014\u2014必须进行体质豁免检定。豁免失败的生物躯体变得沉重而迟滞，直到你的下个回合结束为止。此期间内，该生物速度减半，且无法使用反应。在其回合内，它只能使用动作或附赠动作其中之一，不能两者兼用。无论该生物的能力或魔法物品如何，它在自己的回合内进行的近战或远程攻击都不能超过一次。",
+								"每回合一次，当你以近战武器命中一个迟滞的生物时，你可以强迫其进行体质豁免检定。豁免失败的目标陷入石化，直到你的下个回合结束为止。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Titan Fury",
+			"name": "泰坦之怒",
+			"source": "InfKore:Disciple",
+			"featureType": [
+				"Disc:D"
+			],
+			"entries": [
+				"武者之途遍布对手与阻碍。泰坦之怒武学的追随者以粉碎一切竞争、昭示自身力量之绝对为目标。泰坦之怒的技巧专注于摧毁弱者与懦夫，并撕碎一切阻挡你前进的企图。",
+				{
+					"ENG_name": "Ideal: Power",
+					"type": "entries",
+					"name": "理念：力量",
+					"entries": [
+						"仅仅击败敌人并不足够；你必须压倒他们，彰显你们实力的差距。你必须向你自己和全世界证明，你的威能无可匹敌。"
+					]
+				},
+				{
+					"ENG_name": "Signature Art: Blood of the Ancients.",
+					"type": "entries",
+					"name": "招牌绝技：远古之血。",
+					"entries": [
+						"以一个附赠动作，你可以振奋你的形体。你获得等同于你的感知调整值+你门徒等级一半的临时生命值，持续1分钟（向上取整，最低",
+						"只要你还拥有这些临时生命值，每当你进行力量检定或豁免检定且在d20上掷出低于你感知值一半的数字时，你可以将该掷骰视为你感知值的一半。",
+						"从第5级起，只要你还拥有这些临时生命值，若你尚非大型或更大，你的体型便会增大为大型。这意味着你的体型在各维度上翻倍，体重变为八倍。你的装备也随之增大以匹配你的新体型。如果没有足够的空间让你的体型翻倍，你便在可用空间内增长到最大可能的体型。"
+					]
+				},
+				{
+					"ENG_name": "Techniques",
+					"type": "entries",
+					"name": "技巧",
+					"entries": [
+						{
+							"ENG_name": "Power Overwhelming (2nd Level)",
+							"type": "entries",
+							"name": "压倒之力（2级）",
+							"entries": [
+								"当你以近战武器命中一个目标时，你可以用附赠动作花费至多5点节奏点。目标每花费1点节奏点便被向后推移5尺。",
+								"如果此移动会使目标撞上某个生物、物件或建筑，则目标与其撞击之物每剩余5尺被迫移动便受到1d6点钝击伤害（最低为无伤害）。"
+							]
+						},
+						{
+							"ENG_name": "Cull the Meek (5th Level)",
+							"type": "entries",
+							"name": "剪除弱者（5级）",
+							"entries": [
+								"那些不敢与你照面却想伤害你的人，理应受到迅捷的惩罚。当一个你看不见的生物命中你，或一个生物以远程攻击命中你时，你可以用反应花费3点节奏点，使该伤害减少1d10+你的感知调整值，然后强迫该生物通过感知豁免检定，否则受到等同于你所减少量的心灵伤害。"
+							]
+						},
+						{
+							"ENG_name": "Titan's Will (11th Level)",
+							"type": "entries",
+							"name": "泰坦意志（11级）",
+							"entries": [
+								"在你的回合开始时，你可以花费4点节奏点，从你自身移除以下状态之一：目盲、魅惑、耳聋、恐慌、失能、麻痹、中毒或震慑。"
+							]
+						},
+						{
+							"ENG_name": "Arduous Wrath (17th Level)",
+							"type": "entries",
+							"name": "酣战之怒（17级）",
+							"entries": [
+								"以一个动作，你可以花费4点节奏点，对一个生物发动至多3次武器攻击。如果其中至少两次命中，你可以在同一动作中再发动2次额外攻击。"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
