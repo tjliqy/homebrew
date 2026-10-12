@@ -1,0 +1,3109 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "HA:GS",
+				"abbreviation": "HA",
+				"full": "铳士职业",
+				"url": "https://www.heavyarms.com/products/gunslinger",
+				"version": "1.1",
+				"authors": [
+					"Heavyarms"
+				],
+				"convertedBy": [
+					"CrimsonDragon10"
+				],
+				"color": "cc6600"
+			},
+			{
+				"json": "HA:GS-UAClassFeatureVariants",
+				"abbreviation": "UACFV",
+				"full": "铳士职业 - Unearthed Arcana：职业特性变体",
+				"version": "1.0",
+				"authors": [
+					"Wizards of the Coast"
+				],
+				"targetSchema": "1.0.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"RS": "符文石；",
+			"RS:C": "符文石；普通",
+			"RS:UC": "符文石；非普通",
+			"RS:R": "符文石；珍稀",
+			"RS:VR": "符文石；极珍稀",
+			"RS:L": "符文石；传说"
+		},
+		"edition": "classic",
+		"dateAdded": 1651624655,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "5abccb18c5"
+	},
+	"class": [
+		{
+			"ENG_name": "Gunslinger",
+			"name": "铳士",
+			"source": "HA:GS",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"classSpells": [
+				"神导术",
+				"光亮术",
+				"修复术",
+				"抵抗术",
+				"圣火术",
+				"维生术",
+				"奇术",
+				"亡者丧钟|xge",
+				"光耀祷词|xge"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"insight",
+								"intimidation",
+								"perception",
+								"sleight of hand",
+								"stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@filter 枪械|items|type=枪械}",
+					"{@item 鞭子|phb}"
+				],
+				"tools": [
+					"盗贼工具、修补工具或一种赌具"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"一件{@item 皮甲|phb}和一把{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"一把{@item 佩枪|HA:GS}和20发{@item 子弹|HA:GS}",
+					"(a) 一把{@item 手炮|HA:GS}和20发{@item 子弹|HA:GS}，或 (b) 一把连发步枪和20发{@item 子弹|HA:GS}，或 (c) 一把锯短霰弹枪和20发{@item 霰弹|HA:GS}",
+					"(a) 一个{@item 地城套组|phb}，或 (b) 一个{@item 探索套组|phb}"
+				],
+				"goldAlternative": "{@dice 6d4x10|6d4 x 10|起始金币}",
+				"defaultData": [
+					{
+						"_": [
+							"皮甲|phb",
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"佩枪",
+							{
+								"item": "子弹|HA:GS",
+								"quantity": 20
+							}
+						]
+					},
+					{
+						"a": [
+							"手炮",
+							{
+								"item": "子弹|HA:GS",
+								"quantity": 20
+							}
+						],
+						"b": [
+							"连发步枪",
+							{
+								"item": "子弹|HA:GS",
+								"quantity": 20
+							}
+						],
+						"c": [
+							"锯短霰弹枪",
+							{
+								"item": "霰弹|HA:GS",
+								"quantity": 20
+							}
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易武器",
+						"枪械"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"猛药"
+					],
+					"rows": [
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"死瞳|铳士|HA:GS|1",
+				"猛药|铳士|HA:GS|1",
+				"坚毅|铳士|HA:GS|2",
+				"快速拔枪|铳士|HA:GS|2",
+				{
+					"classFeature": "铳士之路|铳士|HA:GS|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|铳士|HA:GS|4",
+				"熟练项多样性|铳士|HA:GS|4|HA:GS-UAClassFeatureVariants",
+				"额外攻击|铳士|HA:GS|5",
+				"子弹上膛|铳士|HA:GS|5",
+				{
+					"classFeature": "铳士之路特性|铳士|HA:GS|6",
+					"gainSubclassFeature": true
+				},
+				"底牌|铳士|HA:GS|7",
+				"属性值提升|铳士|HA:GS|8",
+				"天生幸运|铳士|HA:GS|9",
+				{
+					"classFeature": "铳士之路特性|铳士|HA:GS|10",
+					"gainSubclassFeature": true
+				},
+				"边疆正义|铳士|HA:GS|11",
+				"属性值提升|铳士|HA:GS|12",
+				"熟练项多样性|铳士|HA:GS|12|HA:GS-UAClassFeatureVariants",
+				"碎颅|铳士|HA:GS|13",
+				"死瞳进阶|铳士|HA:GS|14",
+				"幸免于难|铳士|HA:GS|15",
+				"属性值提升|铳士|HA:GS|16",
+				"熟练项多样性|铳士|HA:GS|16|HA:GS-UAClassFeatureVariants",
+				{
+					"classFeature": "铳士之路特性|铳士|HA:GS|17",
+					"gainSubclassFeature": true
+				},
+				"真坚毅|铳士|HA:GS|18",
+				"属性值提升|铳士|HA:GS|19",
+				"熟练项多样性|铳士|HA:GS|19|HA:GS-UAClassFeatureVariants",
+				"黄金枪|铳士|HA:GS|20"
+			],
+			"subclassTitle": "铳士之路",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Gunslinger",
+			"name": "铳士",
+			"source": "HA:GS",
+			"entries": [
+				{
+					"ENG_name": "Gunslinger",
+					"name": "铳士",
+					"source": "HA:GS",
+					"type": "section",
+					"page": 1,
+					"entries": [
+						"一座老酒馆矗立在一名孤独的铳士面前，馆身弹痕累累、血迹斑斑。\"艾克·威廉姆斯，我是来找你的！\"她高声喊道，喊声穿透了馆内的喧闹欢饮。喧嚣归于沉寂，她等待着，风扯动着她的围巾，将尘土吹散在她的路上。一个魁梧的男人推门而出。\"呵，\"他冷笑着，手指摩挲着腰间的枪。\"一个小小\u2014\u2014\"他话音未起，抬手欲拔，但她更快，双拳已握满轰鸣的雷霆。",
+						"在旅店的地下室里，一位老人从铜浴缸中撑起身来，蒸汽缠绕着他疤痕累累的躯体。\"邪恶来了。\"他用嘶哑的嗓音低语。头顶传来沉重拖沓的脚步声，打断了他浴伴们的惊呼。老人从一堆散乱的衣服里取回枪带，口中喃喃念着一段简短的祷文。",
+						"一名雇佣兵透过烟雾打量着他最后的对手。她越过手中的纸牌回望他审视的目光。她等待着，咬着雪茄，随后推出一摞筹码，但她紧张的咀嚼却泄露了这场唬骗。男人回以微笑。\"全押。\"",
+						"铳士们枪法如头脑般敏锐，为着各自的缘由追逐各自的目标。他们只遵从自己的信条，只相信历经磨砺换来的判断。狂野的边疆以严酷之道孕育坚毅之民\u2014\u2014在那片危险的土地上，生死可能取决于一手牌局的胜负，或拔枪速度的快慢。",
+						{
+							"ENG_name": "Creating a Gunslinger",
+							"type": "entries",
+							"name": "创建铳士",
+							"entries": [
+								"创建铳士角色时，想一想你是如何走上以枪为生之路的。是为了正义？名望？还是为了保护你珍视的人或物？如今又是什么在驱使着你？是口袋里金币叮当的安心声响？还是铲除邪恶的正义满足感？或许过往的罪愆沉甸甸压在心头，驱使你寻求救赎？又或者，你追求的是复仇？枪后之人，究竟是谁？",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"你可以依照以下建议来创建一名铳士。首先，将敏捷作为你的最高属性值，其次是感知。其次，选择{@background 罪犯}或{@background 平民英雄}背景。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Beastrider",
+			"name": "兽骑手",
+			"shortName": "兽骑手",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassFeatures": [
+				"兽骑手|铳士|HA:GS|兽骑手|HA:GS|3",
+				"莽骑兵|铳士|HA:GS|兽骑手|HA:GS|6",
+				"骑手反射|铳士|HA:GS|兽骑手|HA:GS|6",
+				"灼热的马鞍|铳士|HA:GS|兽骑手|HA:GS|10",
+				"制空权|铳士|HA:GS|兽骑手|HA:GS|17"
+			]
+		},
+		{
+			"ENG_name": "Enforcer",
+			"name": "打手",
+			"shortName": "打手",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassFeatures": [
+				"打手|铳士|HA:GS|打手|HA:GS|3",
+				"锐眼|铳士|HA:GS|打手|HA:GS|6",
+				"硬汉|铳士|HA:GS|打手|HA:GS|10",
+				"山丘之王|铳士|HA:GS|打手|HA:GS|17"
+			]
+		},
+		{
+			"ENG_name": "Maverick",
+			"name": "浪子",
+			"shortName": "浪子",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassFeatures": [
+				"浪子|铳士|HA:GS|浪子|HA:GS|3",
+				"乱斗|铳士|HA:GS|浪子|HA:GS|6",
+				"声名狼藉|铳士|HA:GS|浪子|HA:GS|10",
+				"正午|铳士|HA:GS|浪子|HA:GS|17"
+			]
+		},
+		{
+			"ENG_name": "Preacher",
+			"name": "传教士",
+			"shortName": "传教士",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"spellcastingAbility": "wis",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2
+			],
+			"subclassFeatures": [
+				"传教士|铳士|HA:GS|传教士|HA:GS|3",
+				"精神力量|铳士|HA:GS|传教士|HA:GS|6",
+				"净化|铳士|HA:GS|传教士|HA:GS|10",
+				"复苏|铳士|HA:GS|传教士|HA:GS|17"
+			]
+		},
+		{
+			"ENG_name": "Revelator",
+			"name": "启示者",
+			"shortName": "启示者",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassFeatures": [
+				"启示者|铳士|HA:GS|启示者|HA:GS|3",
+				"亡者清算|铳士|HA:GS|启示者|HA:GS|6",
+				"灵魂镣铐|铳士|HA:GS|启示者|HA:GS|10",
+				"尘归尘|铳士|HA:GS|启示者|HA:GS|17"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Bad Medicine",
+			"name": "猛药",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 1,
+			"entries": [
+				"从第1级起，你在用火器造成重击时，决定额外伤害可以多掷一颗武器伤害骰。随着你在此职业中提升等级，额外骰子的数量也会增加，如铳士表中猛药一列所示。"
+			]
+		},
+		{
+			"ENG_name": "Deadeye",
+			"name": "死瞳",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 1,
+			"entries": [
+				"从第1级起，在战斗中，你能以致命的效率进入状态。每当你以远程武器攻击命中一个生物，你在d20上需要掷出以在随后的远程武器攻击中造成重击的最低数字便降低1。你可以多次获得此增益，但造成重击的阈值不能降低至16以下。",
+				"若你的攻击失手、你陷入失能状态，或你的回合结束时自上个回合结束以来你尚未攻击过任何生物，你便失去此增益。",
+				"从第14级起，每当你获得此增益时，你可以额外多获得一次，但造成重击的阈值仍不能降至16以下"
+			]
+		},
+		{
+			"ENG_name": "Grit",
+			"name": "坚毅",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 2,
+			"entries": [
+				"从第2级起，过往苦战为你注入了坚定的意志之泉，其以坚毅点表示。你拥有的坚毅点数等于1+你的感知调整值（最少1点）。",
+				"你可以消耗这些点数来驱动各种坚毅特性。你起始知晓四项这样的特性：振作、子弹时间、火力掩护和翻滚闪避。随着你在此职业中提升等级，你将学到更多坚毅特性。",
+				"你消耗的坚毅点在恢复前无法再次使用。每当你对敌对生物造成一次重击，你恢复1点已消耗的坚毅点；当你完成一次短休或长休时，你恢复所有已消耗的坚毅点。",
+				{
+					"ENG_name": "Buck Up",
+					"type": "entries",
+					"name": "振作",
+					"entries": [
+						"你可以以一个附赠动作消耗1点坚毅点，来消耗一颗或多颗生命骰，遵循使用生命骰恢复生命值的正常规则。你每次使用此特性时最多可消耗的生命骰数量等于你的熟练加值。"
+					]
+				},
+				{
+					"ENG_name": "Bullet Time",
+					"type": "entries",
+					"name": "子弹时间",
+					"entries": [
+						"当一个你能看见的生物对你发动远程攻击时，你可以消耗1点坚毅点，使该攻击检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Covering Fire",
+					"type": "entries",
+					"name": "火力掩护",
+					"entries": [
+						"当你持握一把火器时，若你60尺内一个你能看见的生物对除你之外的生物发动攻击，你可以消耗1点坚毅点作为反应，使该攻击检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Dodge Roll",
+					"type": "entries",
+					"name": "翻滚闪避",
+					"entries": [
+						"你可以以一个附赠动作消耗1点坚毅点，移动至多10尺而不引发借机攻击。若你的速度为0，你无法采取此附赠动作。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Quickdraw",
+			"name": "快速拔枪",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 2,
+			"entries": [
+				"从第2级起，你的先攻检定具有优势。此外，每当你拔出或收起一把火器时，你可以在同一移动或动作中拔出或收起任意数量的武器。"
+			]
+		},
+		{
+			"ENG_name": "Gunslinger Trail",
+			"name": "铳士之路",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 3,
+			"entries": [
+				"从第3级起，你选择一条要走的道路：浪子、兽骑手、打手、传教士或启示者，各道路的详情见职业描述的末尾。你的选择会在第3级以及第6、10和17级赋予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过，你不能通过此特性让属性值超过20。",
+				"如果你的DM允许使用专长，你也可以选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Proficiency Versatility",
+			"name": "熟练项多样性",
+			"source": "HA:GS-UAClassFeatureVariants",
+			"page": 1,
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 4,
+			"entries": [
+				"{@i 4级特性（增强属性值提升）}",
+				"当你从职业中获得属性值提升特性时，你还可以将你的一项技能熟练项替换为该职业在1级提供的技能熟练项（被替换的熟练项不必来自该职业）。",
+				"这一变化代表你专注于另一项技能时，一项技能逐渐荒废。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 5,
+			"entries": [
+				"从第5级起，你在自己回合内采取{@action 攻击}动作时，可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Lock N' Load",
+			"name": "子弹上膛",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 5,
+			"entries": [
+				"从第5级起，你可以将装填或重新装填你持握的火器，作为你移动或动作的一部分。"
+			]
+		},
+		{
+			"ENG_name": "Gunslinger Trail feature",
+			"name": "铳士之路特性",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 6,
+			"entries": [
+				"从第6级起，你获得一项由你的铳士之路赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ace In The Hole",
+			"name": "底牌",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 7,
+			"entries": [
+				"从第7级起，每回合一次，当你的攻击检定失手时，你可以消耗1点坚毅点，将你的感知调整值加到该检定结果上，从而可能将失手转为命中。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过，你不能通过此特性让属性值超过20。",
+				"如果你的DM允许使用专长，你也可以选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Proficiency Versatility",
+			"name": "熟练项多样性",
+			"source": "HA:GS-UAClassFeatureVariants",
+			"page": 1,
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 8,
+			"entries": [
+				"{@i 8级特性（增强属性值提升）}",
+				"当你从职业中获得属性值提升特性时，你还可以将你的一项技能熟练项替换为该职业在1级提供的技能熟练项（被替换的熟练项不必来自该职业）。",
+				"这一变化代表你专注于另一项技能时，一项技能逐渐荒废。"
+			]
+		},
+		{
+			"ENG_name": "Born Lucky",
+			"name": "天生幸运",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 9,
+			"entries": [
+				"从第9级起，当你被迫进行豁免检定时，你可以消耗1点坚毅点，使其具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Gunslinger Trail feature",
+			"name": "铳士之路特性",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 10,
+			"entries": [
+				"在第10级，你获得一项由你的铳士之路赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Frontier Justice",
+			"name": "边疆正义",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 11,
+			"entries": [
+				"从第11级起，当你持握火器时，若一个你能看见的生物自愿移入你周围10尺内的空间，你可以用你的反应对该生物进行一次远程武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过，你不能通过此特性让属性值超过20。",
+				"如果你的DM允许使用专长，你也可以选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Proficiency Versatility",
+			"name": "熟练项多样性",
+			"source": "HA:GS-UAClassFeatureVariants",
+			"page": 1,
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 12,
+			"entries": [
+				"{@i 12级特性（增强属性值提升）}",
+				"当你从职业中获得属性值提升特性时，你还可以将你的一项技能熟练项替换为该职业在1级提供的技能熟练项（被替换的熟练项不必来自该职业）。",
+				"这一变化代表你专注于另一项技能时，一项技能逐渐荒废。"
+			]
+		},
+		{
+			"ENG_name": "Skullcracker",
+			"name": "碎颅",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 13,
+			"entries": [
+				"从第13级起，当你以远程武器攻击对一个正在专注的生物造成伤害时，该目标为维持专注所做的豁免检定具有劣势。如果该攻击是重击，目标自动未通过此豁免检定。"
+			]
+		},
+		{
+			"ENG_name": "Deadeye Improvement",
+			"name": "死瞳进阶",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 14,
+			"entries": [
+				"从第14级起，在战斗中，你能以致命的效率进入状态。每当你以远程武器攻击命中一个生物，你在d20上需要掷出以在随后的远程武器攻击中造成重击的最低数字便降低1。你可以多次获得此增益，但造成重击的阈值不能降低至16以下。",
+				"若你的攻击失手、你陷入失能状态，或你的回合结束时自上个回合结束以来你尚未攻击过任何生物，你便失去此增益。",
+				"从第14级起，每当你获得此增益时，你可以额外多获得一次，但造成重击的阈值仍不能降至16以下"
+			]
+		},
+		{
+			"ENG_name": "Cheat Death",
+			"name": "幸免于难",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 15,
+			"entries": [
+				"从第15级起，当你的生命值降至0但并未立即死亡时，你可以消耗1点坚毅点，改为只剩1点生命值。你每次这样做，都会获得1级{@condition 力竭}。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 16,
+			"entries": [
+				"从第16级起，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过，你不能通过此特性让属性值超过20。",
+				"如果你的DM允许使用专长，你也可以选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Proficiency Versatility",
+			"name": "熟练项多样性",
+			"source": "HA:GS-UAClassFeatureVariants",
+			"page": 1,
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 16,
+			"entries": [
+				"{@i 16级特性（增强属性值提升）}",
+				"当你从职业中获得属性值提升特性时，你还可以将你的一项技能熟练项替换为该职业在1级提供的技能熟练项（被替换的熟练项不必来自该职业）。",
+				"这一变化代表你专注于另一项技能时，一项技能逐渐荒废。"
+			]
+		},
+		{
+			"ENG_name": "Gunslinger Trail feature",
+			"name": "铳士之路特性",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 17,
+			"entries": [
+				"在第17级，你获得一项由你的铳士之路赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "True Grit",
+			"name": "真坚毅",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 18,
+			"entries": [
+				"从第18级起，当你的回合开始且没有剩余坚毅点时，你恢复1点坚毅点。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过，你不能通过此特性让属性值超过20。",
+				"如果你的DM允许使用专长，你也可以选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Proficiency Versatility",
+			"name": "熟练项多样性",
+			"source": "HA:GS-UAClassFeatureVariants",
+			"page": 1,
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 19,
+			"entries": [
+				"{@i 19级特性（增强属性值提升）}",
+				"当你从职业中获得属性值提升特性时，你还可以将你的一项技能熟练项替换为该职业在1级提供的技能熟练项（被替换的熟练项不必来自该职业）。",
+				"这一变化代表你专注于另一项技能时，一项技能逐渐荒废。"
+			]
+		},
+		{
+			"ENG_name": "Golden Gun",
+			"name": "黄金枪",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 20,
+			"entries": [
+				"从第20级起，当造成重击的阈值为16或更低时，你的远程武器攻击检定具有优势"
+			]
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Grit",
+			"name": "坚毅",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 2,
+			"system": {
+				"uses": {
+					"value": 1,
+					"max": "1 + @abilities.wis.mod",
+					"per": "sr"
+				}
+			}
+		},
+		{
+			"ENG_name": "Quickdraw",
+			"name": "快速拔枪",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"level": 2,
+			"effects": [
+				{
+					"changes": [
+						{
+							"key": "flags.dnd5e.initiativeAdv",
+							"mode": "CUSTOM",
+							"value": "1"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Beastrider",
+			"name": "兽骑手",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "兽骑手",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"如果狗是人类最好的朋友，那么枪和马便是人类最忠实的仆人"
+					]
+				},
+				"兽骑手生于马鞍之上，能驯服任何野兽、驾驭任何坐骑。随便哪个蠢货都能跳上一匹老母马，但要驾驭一匹烈性野兽，光有缰绳和马刺可不够。兽骑手的日子过得飞快\u2014\u2014无论字面还是比喻意义上\u2014\u2014他们深知自由的滋味在疾驰中最为甘美，而忠诚的伙伴比黄金更珍贵。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "天生好手|铳士|HA:GS|兽骑手|HA:GS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "驯野马者|铳士|HA:GS|兽骑手|HA:GS|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Broncbuster",
+			"name": "驯野马者",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "兽骑手",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你可以用一个动作触碰一只体型至少比你大一级、且身体构造适合作坐骑的野兽。它必须通过一次感知豁免检定（DC等于8+你的熟练加值+你的感知调整值），否则被你魅惑，直到你解除它、你使用此特性魅惑另一个生物，或你死亡为止。以此方式被魅惑时，目标对你友善，并在你骑乘它时听从你的指挥。成功抵抗此效果的生物在24小时内免疫它，之后可再次受到影响。正在与你战斗的生物自动通过此豁免检定。",
+				"你的铳士等级决定了你能以此方式魅惑的野兽范围，如坐骑表所示。例如在第3级，你可以尝试魅惑任何挑战等级为1/2或更低、且没有飞行或游泳速度的野兽：",
+				{
+					"type": "table",
+					"caption": "坐骑",
+					"colLabels": [
+						"等级",
+						"最高CR",
+						"限制"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-5"
+					],
+					"rows": [
+						[
+							"第3级",
+							"{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+							"无飞行或游泳速度"
+						],
+						[
+							"第6级",
+							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+							"无飞行速度"
+						],
+						[
+							"第10级",
+							"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"第17级",
+							"\u2014",
+							"\u2014"
+						]
+					]
+				},
+				"此外，当你骑乘且未失能时，若你的坐骑未穿着马铠或其他护甲，它的AC和豁免检定获得等于你熟练加值的加值。"
+			]
+		},
+		{
+			"ENG_name": "To The Manor Born",
+			"name": "天生好手",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "兽骑手",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从第3级起，无论是凭刻苦努力还是天生才华，你都拥有少有人能企及的技艺水准与广度。你从铳士技能列表中选择两项技能获得熟练项，若你尚未熟练{@skill 驯兽}，其中一项应为{@skill 驯兽}。",
+				"此外，选择你的一项技能熟练项。你使用所选技能进行的任何属性检定，熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Rider's Reflexes",
+			"name": "骑手反射",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "兽骑手",
+			"subclassSource": "HA:GS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"同样在第6级，当一个你能看见的生物以{@action 攻击}命中你的坐骑时，你可以消耗1点坚毅点作为反应，使该攻击对它造成的伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "Rough Rider",
+			"name": "莽骑兵",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "兽骑手",
+			"subclassSource": "HA:GS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，每当你采取{@action 攻击}动作时，你可以放弃该动作中的一次攻击，改为命令你控制的一头坐骑用它的动作进行一次武器攻击，从其数据卡中的攻击中选择。"
+			]
+		},
+		{
+			"ENG_name": "Blazing Saddles",
+			"name": "灼热的马鞍",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "兽骑手",
+			"subclassSource": "HA:GS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，当你骑乘且未失能时，你的坐骑无视困难地形。此外，每当你的坐骑采取{@action 疾走}动作时，它获得等于你步行速度的额外移动。"
+			]
+		},
+		{
+			"ENG_name": "Air Superiority",
+			"name": "制空权",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "兽骑手",
+			"subclassSource": "HA:GS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从第17级起，跨坐坐骑，你翱翔天际，你就是那雄鹰。当你在飞行中使用火力掩护时，你可以在同一反应中对该攻击者进行一次远程武器攻击，前提是目标处于你武器的射程内。"
+			]
+		},
+		{
+			"ENG_name": "Enforcer",
+			"name": "打手",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "打手",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"钱是现在给，还是等我杀了你再给？"
+					]
+				},
+				"即便在乌合之众中，打手也以\"以牙还牙\"闻名\u2014\u2014他们扛下一记又一记重击，还以十倍的报复。然而让他们成为宝贵盟友的不只是坚韧，还有他们敏锐的洞察力；这种嗅出真相的本领，对敌人而言与他们手中的任何武器一样危险。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猎犬|铳士|HA:GS|打手|HA:GS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "皮糙肉厚|铳士|HA:GS|打手|HA:GS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "不可饶恕|铳士|HA:GS|打手|HA:GS|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bloodhound",
+			"name": "猎犬",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "打手",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从第3级起，你谙熟欺诈与搪塞的种种迹象。你获得{@skill 洞悉}技能的熟练项。若你已有此熟练项，则从铳士技能列表中另选一项技能获得熟练项。你为确定类人生物的动机或意图而使用{@skill 洞悉}进行的任何属性检定，熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Rugged Endurance",
+			"name": "皮糙肉厚",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "打手",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在第3级，可以说，你懂得如何顺势卸力。每当你在战斗中恢复生命值时，你获得等量的临时生命值。这些临时生命值持续到你下个回合开始。"
+			]
+		},
+		{
+			"ENG_name": "Unforgiven",
+			"name": "不可饶恕",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "打手",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，若你在本回合的第一次{@action 攻击}命中了一个自你上个回合结束以来攻击过你、或以法术或其他有害效果指定你为目标的生物，你可以多掷一颗武器伤害骰，并将其加到该{@action 攻击}的伤害中。"
+			]
+		},
+		{
+			"ENG_name": "Sharp Eye",
+			"name": "锐眼",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "打手",
+			"subclassSource": "HA:GS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，经验与需要磨砺出了你一眼洞悉四周环境的能力。你可以在你的回合以一个附赠动作采取{@action 搜索}动作。",
+				"此外，当你休息时，或你在旅行中从事其他活动（如觅食、导航或追踪）时，你仍对危险保持警觉。"
+			]
+		},
+		{
+			"ENG_name": "Hard Case",
+			"name": "硬汉",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "打手",
+			"subclassSource": "HA:GS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，只要你拥有临时生命值，你就不会被魅惑或恐慌。此外，当你使用振作时，你可以进行一次豁免检定，以结束你身上一个正使你魅惑或恐慌的效果。"
+			]
+		},
+		{
+			"ENG_name": "King Of The Hill",
+			"name": "山丘之王",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "打手",
+			"subclassSource": "HA:GS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从第17级起，每回合一次，你可以消耗1点坚毅点来使用你的边疆正义特性，而无需消耗你的反应。"
+			]
+		},
+		{
+			"ENG_name": "Maverick",
+			"name": "浪子",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "浪子",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"我试过讲道理\u2014\u2014我不喜欢那感觉。"
+					]
+				},
+				"浪子是破除陈规者、开路先锋，也常常是负心之人；他们是踩着刀锋起舞、活得仿佛没有明天的脱缰野马。他们机智敏捷、扣扳机更快，不惜一切代价也要扬名立万\u2014\u2014挡路者，无论是人是物，都统统见鬼去吧。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "百搭牌|铳士|HA:GS|浪子|HA:GS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "抢先射击|铳士|HA:GS|浪子|HA:GS|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Snapshot",
+			"name": "抢先射击",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "浪子",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，当你掷先攻时，你可以消耗1点坚毅点作为反应，拔出一把火器并用它对一个你能看见的生物或物件进行一次远程攻击。"
+			]
+		},
+		{
+			"ENG_name": "Wild Card",
+			"name": "百搭牌",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "浪子",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从第3级起，你高深莫测的做派掩盖了你的意图。你获得{@skill 威吓}技能的熟练项。若你已有此熟练项，则获得{@skill 游说}技能或铳士技能列表中一项自选技能的熟练项。当你携带武器时，你对聪明生物使用{@skill 威吓}进行的任何属性检定，熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Rough And Tumble",
+			"name": "乱斗",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "浪子",
+			"subclassSource": "HA:GS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，你可以用一个附赠动作{@action 疾走}，并将你持有的一件物件砸向5尺内的一个生物。目标必须通过一次体质豁免检定（DC等于8+你的熟练加值+你的敏捷调整值），否则目盲直到你的回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Notorious",
+			"name": "声名狼藉",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "浪子",
+			"subclassSource": "HA:GS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，关于你善行或恶行的传奇故事已经传得够远，为你树立了一个广为人知的化名。每当你对一个知晓你化名的生物进行魅力检定时，你可以将d20掷出的9或更低的结果视为10。"
+			]
+		},
+		{
+			"ENG_name": "High Noon",
+			"name": "正午",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "浪子",
+			"subclassSource": "HA:GS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从第17级起，你的抢先射击最多可以指定六个你能看见的生物或物件，并为每个目标分别进行攻击检定。"
+			]
+		},
+		{
+			"ENG_name": "Preacher",
+			"name": "传教士",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "传教士",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"哎呀，你看上去就像有人刚从你的坟头踩过去似的。"
+					]
+				},
+				"无论其信仰的服饰、圣徽与仪式为何，火器不过是传教士神圣武库中的神圣器具。信仰是他们最强大的武器，虔诚是他们最坚实的力量。传教士如同他们侍奉的神明一样神秘莫测，一只手赋予生命，另一只手夺走生命。",
+				"你可以自行选择使用动机表，来帮助发掘你的角色踏上传教士之路的缘由：",
+				{
+					"type": "table",
+					"caption": "动机",
+					"colLabels": [
+						"{@dice d4}",
+						"动机"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"你正追随着一位守护者或导师的足迹。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"你向你珍视的人许下过承诺。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"你亲眼见证过一场神迹。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"你为一生的酗酒与邪恶寻求救赎。"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神职者|铳士|HA:GS|传教士|HA:GS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "牺牲|铳士|HA:GS|传教士|HA:GS|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Man of the Cloth",
+			"name": "神职者",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "传教士",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从第3级起，你已证明自己有资格立下你神明的神圣誓言。你获得{@skill 宗教}技能的熟练项。若你已有此熟练项，则从铳士技能列表中另选一项技能获得熟练项。",
+				"此外，你从牧师法术列表中学习两个自选戏法。感知是你施展这些法术的施法属性。"
+			]
+		},
+		{
+			"ENG_name": "Sacrifice",
+			"name": "牺牲",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "传教士",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，凭着炽热的信仰，你可以以自身为代价治愈他人。当你使用振作时，你可以改为选择60尺内一个你能看见的其他生物来恢复生命值。每消耗一颗生命骰，掷该骰并加上你的感知调整值。目标恢复等于总值的生命值（最少1点生命值）。此特性对构装体或不死生物无效。"
+			]
+		},
+		{
+			"ENG_name": "Strength of Spirit",
+			"name": "精神力量",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "传教士",
+			"subclassSource": "HA:GS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，你坚定不移的意志是心灵的慰藉。长休结束时，你恢复所有已消耗的生命骰，而非至多其中一半。"
+			]
+		},
+		{
+			"ENG_name": "Cleanse",
+			"name": "净化",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "传教士",
+			"subclassSource": "HA:GS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，每当你使用振作或牺牲恢复一个生物的生命值时，该效果还会结束目标身上的目盲、耳聋和中毒状态，并治愈影响它的任何疾病或毒。"
+			]
+		},
+		{
+			"ENG_name": "Revitalize",
+			"name": "复苏",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "传教士",
+			"subclassSource": "HA:GS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从第17级起，你的牺牲可以指定一个死亡不超过一分钟的目标。当你如此做时，若目标的灵魂自由且愿意，它将重返生命，并正常从牺牲恢复生命值。此能力无法复活死于年老、属于构装体或不死生物的生物，也无法恢复任何缺失的身体部位。一个生物在两次长休之间最多只能以此方式复活一次。"
+			]
+		},
+		{
+			"ENG_name": "Revelator",
+			"name": "启示者",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "启示者",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"有时，得以魔制魔。"
+					]
+				},
+				"启示者是无辜者的盾、正义者的剑，致力于维护法律、惩治邪恶。有些启示者加入致力于铲除邪恶的组织，从其教团赢得阶位与头衔；有些则独行其事，进行一场更为私人的战争，为一桩大冤昭雪或击败一个可怕的邪恶。无论方式为何，无论缘由为何，他们皆为正义事业所驱使。哪里有不公，哪里有邪恶，启示者便至。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "义人之道|铳士|HA:GS|启示者|HA:GS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "祝圣武装|铳士|HA:GS|启示者|HA:GS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "烈火洗礼|铳士|HA:GS|启示者|HA:GS|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Baptism of Fire",
+			"name": "烈火洗礼",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "启示者",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你以圣火向敌人降下审判。当你在祝圣武装的增益下以远程武器{@action 攻击}命中一个生物时，你可以消耗1点坚毅点，对目标额外造成1d8光耀伤害。若目标是邪魔或不死生物，此伤害增加1d8。"
+			]
+		},
+		{
+			"ENG_name": "Consecrate Arms",
+			"name": "祝圣武装",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "启示者",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在第3级，你可以用一个动作触碰一个自愿生物并诵念祷文以祝圣它。每当该生物以武器{@action 攻击}命中时，该攻击造成光耀伤害，而非武器正常的伤害类型。此增益持续到该生物解除它（无需动作）、该生物死亡，或它完成一次短休或长休为止。",
+				"你可以使用此特性的次数等于你的感知调整值（至少一次），且当你完成一次长休时恢复所有已使用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Path of the Righteous",
+			"name": "义人之道",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "启示者",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从第3级起，你以关于邪恶及其奸诈行径的知识武装自己。你从以下技能中选择一项获得熟练项：{@skill 奥秘}、{@skill 历史}或{@skill 宗教}。你为回忆关于邪魔或不死生物的信息而进行的任何智力检定，熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Dead Reckoning",
+			"name": "亡者清算",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "启示者",
+			"subclassSource": "HA:GS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，你对异界生物与不死生物的存在或影响发展出敏锐的直觉。你永远处于{@spell 侦测善恶}法术的效果之下，且你能察觉自己何时身处异怪、天族、元素、精类、邪魔或不死生物的巢穴之中。"
+			]
+		},
+		{
+			"ENG_name": "Spirit Shackles",
+			"name": "灵魂镣铐",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "启示者",
+			"subclassSource": "HA:GS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，当一个你能看见的60尺内的生物试图以传送，或以额外维度、跨位面的方式旅行时，你可以消耗1点坚毅点作为{@action reaction}，强迫该生物进行一次魅力豁免检定（DC等于8+你的熟练加值+你的感知调整值）。豁免失败则旅行尝试失败并被浪费。"
+			]
+		},
+		{
+			"ENG_name": "Ashes to Ashes",
+			"name": "尘归尘",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "启示者",
+			"subclassSource": "HA:GS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从第17级起，当你在祝圣武装的增益下以武器{@action 攻击}命中一个邪魔或不死生物时，若该攻击使其生命值降至50点或更低，目标立即被毁灭。"
+			]
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Broncbuster",
+			"name": "驯野马者",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "兽骑手",
+			"subclassSource": "HA:GS",
+			"level": 3,
+			"system": {
+				"save": {
+					"ability": "wis",
+					"scaling": "wis"
+				},
+				"range": {
+					"value": "touch"
+				},
+				"target": {
+					"value": 1,
+					"type": "beast"
+				}
+			}
+		},
+		{
+			"ENG_name": "Rough And Tumble",
+			"name": "乱斗",
+			"source": "HA:GS",
+			"className": "铳士",
+			"classSource": "HA:GS",
+			"subclassShortName": "浪子",
+			"subclassSource": "HA:GS",
+			"level": 6,
+			"system": {
+				"save": {
+					"ability": "con",
+					"scaling": "dex"
+				},
+				"range": {
+					"value": 5,
+					"units": "ft"
+				},
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			}
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Curtain Call",
+			"name": "谢幕",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:L"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"当你用此武器造成一次重击时，目标必须通过一次体质豁免检定（DC等于10+你的熟练加值），否则生命值降为0。"
+			]
+		},
+		{
+			"ENG_name": "Death Sentence",
+			"name": "死刑判决",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:R"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"若一个未与此武器同调的生物试图用它进行{@action 攻击}，该武器会在{@action 攻击}进行前对该生物施放{@spell 解离术}法术。"
+			]
+		},
+		{
+			"ENG_name": "Fireball",
+			"name": "火球术",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:R"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"当你持握此武器时，你可以用你的动作从其中施放{@spell 火球术}法术。此属性一经使用，在次日黎明前无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Firefly",
+			"name": "萤火虫",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:VR"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"当你用此武器以一次重击杀死一个敌对生物时，目标在一场突如其来的烈焰中爆炸，如同以其为中心施放了{@spell 火球术}法术。"
+			]
+		},
+		{
+			"ENG_name": "Ghostbuster",
+			"name": "捉鬼者",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:R"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"当你持握此武器时，你可以看见你60尺内的灵界。此外，用此武器进行的攻击可以命中灵界中的目标。"
+			]
+		},
+		{
+			"ENG_name": "Hawkeye",
+			"name": "鹰眼",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:C"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"以长距离攻击不会使你用此武器进行的远程攻击检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Prism",
+			"name": "棱镜",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:UC"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"当你持握此武器时，你可以用一个附赠动作将其伤害类型改为强酸、寒冷、火焰、闪电或毒素。此效果持续到你再次使用此属性，或你以一个附赠动作将其解除。"
+			]
+		},
+		{
+			"ENG_name": "Sureshot",
+			"name": "必中射击",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:UC"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"你无视此武器的装填与弹容属性。"
+			]
+		},
+		{
+			"ENG_name": "Underdog",
+			"name": "以下克上",
+			"source": "HA:GS",
+			"page": 0,
+			"featureType": [
+				"RS:UC"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把火器"
+					]
+				}
+			],
+			"entries": [
+				"当你用此武器攻击命中一个大型或更大的生物时，目标额外受到1d6点该武器类型的伤害。"
+			]
+		}
+	],
+	"feat": [
+		{
+			"ENG_name": "Bully",
+			"name": "恶霸",
+			"source": "HA:GS",
+			"prerequisite": [
+				{
+					"other": "至少熟练一种火器"
+				}
+			],
+			"entries": [
+				"你擅长在近身缠斗中使用火器，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"处于敌对生物5尺范围内，不会使你的远程攻击检定具有劣势。",
+						"每回合一次，当你用火器以远程{@action 攻击}命中10尺内的一个生物时，你可以强迫目标进行一次力量豁免检定（DC等于8+你的熟练加值+你的敏捷调整值）。豁免失败，你将目标推离你5尺并使其{@condition 倒地}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Marksman",
+			"name": "神射手",
+			"source": "HA:GS",
+			"entries": [
+				"你是用远程武器命中目标的行家，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"处于倒地状态不会使你的远程武器攻击具有劣势。",
+						"攻击倒地目标不会使你的远程武器攻击检定具有劣势，前提是目标处于你武器的常规射程内。",
+						"若自你的回合开始以来你尚未移动，你可以用一个附赠动作稳定你的瞄准。直到你的下个回合结束，你进行的下一次远程武器攻击检定具有优势。若你移动或受到伤害，此效果提前结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Pistolero",
+			"name": "快枪客",
+			"source": "HA:GS",
+			"prerequisite": [
+				{
+					"other": "熟练手枪"
+				}
+			],
+			"entries": [
+				"你挥动六响枪的速度与技艺无可匹敌。你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"当你采取攻击动作并用一把单手武器攻击时，你可以用一个附赠动作用你另一只手持握的手枪进行一次攻击。",
+						"若你在战斗开始时处于措手不及状态且未失能，你可以在你的第一个回合正常行动，但前提是你先于该回合的其他任何行动用手枪进行一次攻击。"
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Ace Of Spaces",
+			"name": "黑桃A",
+			"source": "HA:GS",
+			"page": 0,
+			"baseItem": "手炮|HA:GS",
+			"type": "R",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"RELOAD",
+				"KI",
+				"LU",
+				"AMO",
+				"A"
+			],
+			"range": "60/180",
+			"reload": 6,
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+2",
+			"firearm": true,
+			"entries": [
+				"你用此魔法武器进行的攻击检定和伤害掷骰获得+2加值。",
+				"{@optfeature 萤火虫|HA:GS|{@b 萤火虫。}}当你用此武器以一次重击杀死一个敌对生物时，目标在一场突如其来的烈焰中爆炸，如同以其为中心施放了火球术法术。",
+				"{@i 铭刻：看牌吧，哭去吧}"
+			],
+			"ammoType": "{@item 子弹|HA:GS}",
+			"customProperties": {
+				"kick": 12
+			}
+		},
+		{
+			"ENG_name": "Heat Seekers",
+			"name": "追热弹",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "A",
+			"rarity": "none",
+			"value": 500,
+			"entries": [
+				"供所有火器使用。当你用此弹药攻击一个非构装体且非不死生物的生物时，该攻击检定获得+1加值，且目标无法从此攻击中获得任何掩护增益。"
+			],
+			"packContents": [
+				{
+					"item": "追热弹|HA:GS",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Incendiary",
+			"name": "燃烧弹",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "A",
+			"rarity": "none",
+			"value": 500,
+			"entries": [
+				"供所有火器使用。用此弹药命中目标的攻击改为造成火焰伤害，而非武器正常的伤害类型，使目标开始燃烧（1d6），并点燃未被穿戴或携带的易燃物件。"
+			],
+			"packContents": [
+				{
+					"item": "燃烧弹|HA:GS",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Lawgiver",
+			"name": "立法者",
+			"source": "HA:GS",
+			"page": 0,
+			"baseItem": "手炮|HA:GS",
+			"type": "R",
+			"rarity": "rare",
+			"reqAttune": "由守序阵营的生物",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"RELOAD",
+				"KI",
+				"LU",
+				"AMO",
+				"A"
+			],
+			"range": "60/180",
+			"reload": 6,
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"firearm": true,
+			"entries": [
+				"你用此魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+				"{@optfeature 死刑判决|HA:GS|{@b 死刑判决。}}若一个未与此武器同调的生物试图用它进行攻击，该武器会在攻击进行前对该生物施放解离术法术。"
+			],
+			"ammoType": "{@item 子弹|HA:GS}",
+			"customProperties": {
+				"kick": 12
+			}
+		},
+		{
+			"ENG_name": "Little Rascal",
+			"name": "小淘气",
+			"source": "HA:GS",
+			"page": 0,
+			"baseItem": "佩枪|HA:GS",
+			"type": "R",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 2,
+			"weaponCategory": "martial",
+			"property": [
+				"RELOAD",
+				"LU",
+				"PO",
+				"AMO",
+				"A"
+			],
+			"range": "40/120",
+			"reload": 6,
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"{@optfeature 以下克上|HA:GS|{@b 以下克上。}}当你用此武器攻击命中一个大型或更大的生物时，目标额外受到1d6点该武器类型的伤害。"
+			],
+			"ammoType": "{@item 子弹|HA:GS}"
+		},
+		{
+			"ENG_name": "Pistol, hand cannon",
+			"name": "手炮",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 3,
+			"value": 8500,
+			"weaponCategory": "martial",
+			"property": [
+				"RELOAD",
+				"KI",
+				"LU",
+				"AMO",
+				"A"
+			],
+			"range": "60/180",
+			"reload": 6,
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"firearm": true,
+			"ammoType": "{@item 子弹|HA:GS}",
+			"customProperties": {
+				"kick": 12
+			}
+		},
+		{
+			"ENG_name": "Pistol, sidearm",
+			"name": "佩枪",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 2,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"RELOAD",
+				"LU",
+				"PO",
+				"AMO",
+				"A"
+			],
+			"range": "40/120",
+			"reload": 6,
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"firearm": true,
+			"ammoType": "{@item 子弹|HA:GS}"
+		},
+		{
+			"ENG_name": "Rifle, repeating",
+			"name": "连发步枪",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 8,
+			"value": 9000,
+			"weaponCategory": "martial",
+			"property": [
+				"RELOAD",
+				"LU",
+				"2H",
+				"AMO",
+				"A"
+			],
+			"range": "150/450",
+			"reload": 6,
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"ammoType": "{@item 子弹|HA:GS}"
+		},
+		{
+			"ENG_name": "Rounds",
+			"name": "子弹",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "A",
+			"rarity": "none",
+			"value": 15,
+			"entries": [
+				"供手枪与步枪使用"
+			],
+			"packContents": [
+				{
+					"item": "子弹|HA:GS",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Shotgun, repeating",
+			"name": "连发霰弹枪",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 7,
+			"value": 14000,
+			"weaponCategory": "martial",
+			"property": [
+				"RELOAD",
+				"LU",
+				"2H",
+				"S",
+				"AMO",
+				"SHOT",
+				"A"
+			],
+			"range": "20/30",
+			"reload": 6,
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"ammoType": "{@item 霰弹|HA:GS}"
+		},
+		{
+			"ENG_name": "Shotgun, sawed-off",
+			"name": "锯短霰弹枪",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 7,
+			"value": 8500,
+			"weaponCategory": "martial",
+			"property": [
+				"RELOAD",
+				"LU",
+				"KI",
+				"S",
+				"AMO",
+				"SHOT",
+				"A"
+			],
+			"range": "10/20",
+			"reload": 2,
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"ammoType": "{@item 霰弹|HA:GS}",
+			"customProperties": {
+				"kick": 14
+			}
+		},
+		{
+			"ENG_name": "Shotshells",
+			"name": "霰弹",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "A",
+			"rarity": "none",
+			"value": 15,
+			"entries": [
+				"供霰弹枪使用"
+			],
+			"packContents": [
+				{
+					"item": "霰弹|HA:GS",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Silvered",
+			"name": "银弹",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "A",
+			"rarity": "none",
+			"value": 250,
+			"entries": [
+				"供所有火器使用。"
+			],
+			"packContents": [
+				{
+					"item": "银弹|HA:GS",
+					"quantity": 20
+				}
+			]
+		}
+	],
+	"magicvariant": [
+		{
+			"ENG_name": "Bad Juju",
+			"name": "坏兆头",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Pistol, hand cannon|HA:GS",
+					"name": "手炮|HA:GS"
+				},
+				{
+					"ENG_name": "Pistol, sidearm|HA:GS",
+					"name": "佩枪|HA:GS"
+				},
+				{
+					"ENG_name": "Rifle, repeating|HA:GS",
+					"name": "连发步枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, repeating|HA:GS",
+					"name": "连发霰弹枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, sawed-off|HA:GS",
+					"name": "锯短霰弹枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "坏兆头 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "rare",
+				"reqAttune": true,
+				"bonusWeaponAttack": "+1",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+					"{@optfeature 捉鬼者|HA:GS|{@b 捉鬼者。}}当你持握此武器时，你可以看见你60尺内的灵界。此外，用此武器进行的攻击可以命中灵界中的目标。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Boomstick",
+			"name": "轰天炮",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Shotgun, repeating|HA:GS",
+					"name": "连发霰弹枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, sawed-off|HA:GS",
+					"name": "锯短霰弹枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "轰天炮 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "rare",
+				"reqAttune": true,
+				"bonusWeaponAttack": "+1",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+					"{@optfeature 火球术|HA:GS|{@b 火球术。}}当你持握此武器时，你可以用你的动作从其中施放火球术法术。此属性一经使用，在次日黎明前无法再次使用。",
+					"{@i 铭刻：购物要精明}"
+				]
+			}
+		},
+		{
+			"ENG_name": "Borealis",
+			"name": "极光",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Rifle, repeating|HA:GS",
+					"name": "连发步枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "极光 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"bonusWeaponAttack": "+1",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+					"{@optfeature 棱镜|HA:GS|{@b 棱镜。}}当你持握此武器时，你可以用一个附赠动作将其伤害类型改为强酸、寒冷、火焰、闪电或毒素。此效果持续到你再次使用此属性，或你以一个附赠动作将其解除。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Good Medicine",
+			"name": "好药",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Pistol, hand cannon|HA:GS",
+					"name": "手炮|HA:GS"
+				},
+				{
+					"ENG_name": "Pistol, sidearm|HA:GS",
+					"name": "佩枪|HA:GS"
+				},
+				{
+					"ENG_name": "Rifle, repeating|HA:GS",
+					"name": "连发步枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, repeating|HA:GS",
+					"name": "连发霰弹枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, sawed-off|HA:GS",
+					"name": "锯短霰弹枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "好药 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "rare",
+				"reqAttune": "由铳士",
+				"bonusWeaponAttack": "+1",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+1加值。当你在战斗中用此武器造成一次重击时，你可以放弃掷任意数量的由你的猛药特性赋予的额外伤害骰。当你如此做时，选择原目标10尺内的另一个生物并掷这些被放弃的骰子。所选生物恢复等于结果+你的感知调整值的生命值（最少1点生命值）。此属性对构装体或不死生物无效。",
+					"{@i 铭刻：正是医生所嘱}"
+				]
+			}
+		},
+		{
+			"ENG_name": "Iconoclast",
+			"name": "破像者",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Pistol, hand cannon|HA:GS",
+					"name": "手炮|HA:GS"
+				},
+				{
+					"ENG_name": "Pistol, sidearm|HA:GS",
+					"name": "佩枪|HA:GS"
+				},
+				{
+					"ENG_name": "Rifle, repeating|HA:GS",
+					"name": "连发步枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, repeating|HA:GS",
+					"name": "连发霰弹枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, sawed-off|HA:GS",
+					"name": "锯短霰弹枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "破像者 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "very rare",
+				"reqAttune": true,
+				"bonusWeaponAttack": "+2",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+2加值。",
+					"{@optfeature kingslayer|HA:GS|{@b 弑君者。}}当你用此武器造成一次重击时，若目标拥有传奇抗性特性且尚有剩余使用次数，它便失去该特性的一次使用次数。",
+					"{@i 铭刻：要是没坏，就砸坏它}"
+				]
+			}
+		},
+		{
+			"ENG_name": "Old Faithful",
+			"name": "老忠实",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Pistol, hand cannon|HA:GS",
+					"name": "手炮|HA:GS"
+				},
+				{
+					"ENG_name": "Pistol, sidearm|HA:GS",
+					"name": "佩枪|HA:GS"
+				},
+				{
+					"ENG_name": "Rifle, repeating|HA:GS",
+					"name": "连发步枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, repeating|HA:GS",
+					"name": "连发霰弹枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, sawed-off|HA:GS",
+					"name": "锯短霰弹枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "老忠实 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"bonusWeaponAttack": "+1",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+					"{@optfeature 必中射击|HA:GS|{@b 必中射击。}}你无视此武器的装填与弹容属性。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Pilgrim's Path",
+			"name": "朝圣者之路",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Pistol, hand cannon|HA:GS",
+					"name": "手炮|HA:GS"
+				},
+				{
+					"ENG_name": "Pistol, sidearm|HA:GS",
+					"name": "佩枪|HA:GS"
+				},
+				{
+					"ENG_name": "Rifle, repeating|HA:GS",
+					"name": "连发步枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, repeating|HA:GS",
+					"name": "连发霰弹枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, sawed-off|HA:GS",
+					"name": "锯短霰弹枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "朝圣者之路 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "very rare",
+				"reqAttune": "由铳士",
+				"bonusWeaponAttack": "+2",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+2加值。每当你用它造成一次重击，你可以恢复2点已消耗的坚毅点，而非1点。"
+				]
+			}
+		},
+		{
+			"ENG_name": "Showstopper",
+			"name": "压轴好戏",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Shotgun, repeating|HA:GS",
+					"name": "连发霰弹枪|HA:GS"
+				},
+				{
+					"ENG_name": "Shotgun, sawed-off|HA:GS",
+					"name": "锯短霰弹枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "压轴好戏 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "legendary",
+				"reqAttune": true,
+				"bonusWeaponAttack": "+3",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+3加值。",
+					"{@optfeature 谢幕|HA:GS|{@b 谢幕。}}当你用此武器造成一次重击时，目标必须通过一次体质豁免检定，否则生命值降为0。",
+					"{@i 铭刻：演出结束了}"
+				]
+			}
+		},
+		{
+			"ENG_name": "The Long View",
+			"name": "远见",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"ENG_name": "Rifle, repeating|HA:GS",
+					"name": "连发步枪|HA:GS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "远见 ",
+				"source": "HA:GS",
+				"page": 0,
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"bonusWeaponAttack": "+1",
+				"entries": [
+					"你用此魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+					"{@optfeature 鹰眼|HA:GS|{@b 鹰眼。}}以长距离攻击不会使你用此武器进行的远程攻击检定具有劣势。"
+				]
+			}
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "AMO",
+			"source": "HA:GS",
+			"page": 0,
+			"entries": [
+				{
+					"ENG_name": "Ammunition",
+					"type": "entries",
+					"name": "弹药",
+					"entries": [
+						"只有先将相应的弹药装填入火器，你才能发射该火器。你每次发射火器，都会消耗一枚弹药。火器的弹药在使用后即被销毁。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "KI",
+			"source": "HA:GS",
+			"page": 0,
+			"template": "后坐（{{item.customProperties.kick}}）",
+			"entries": [
+				{
+					"ENG_name": "Kick",
+					"type": "entries",
+					"name": "后坐",
+					"entries": [
+						"此武器可以单手或双手使用。除非你的力量值等于或高于此武器的后坐值，否则你单手用它进行的远程攻击检定具有劣势。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "LU",
+			"source": "HA:GS",
+			"page": 0,
+			"entries": [
+				{
+					"ENG_name": "Loud",
+					"type": "entries",
+					"name": "巨响",
+					"entries": [
+						"用此武器进行的攻击会发出尖锐的爆响，300尺内可闻。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "PO",
+			"source": "HA:GS",
+			"page": 0,
+			"entries": [
+				{
+					"ENG_name": "Pocket",
+					"type": "entries",
+					"name": "袖珍",
+					"entries": [
+						"你为藏匿此武器进行的敏捷（{@skill 巧手}）检定具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "RELOAD",
+			"source": "HA:GS",
+			"page": 0,
+			"template": "弹容（{{item.reload}} 发）",
+			"entries": [
+				{
+					"ENG_name": "Reload",
+					"type": "entries",
+					"name": "弹容",
+					"entries": [
+						"此武器可以发射的次数等于其弹容值，之后必须重新装填才能再次发射。重新装填需要一个动作或附赠动作。你必须有一只空手才能装填。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "SHOT",
+			"source": "HA:GS",
+			"page": 0,
+			"entries": [
+				{
+					"ENG_name": "Shotguns",
+					"type": "entries",
+					"name": "霰弹枪",
+					"entries": [
+						"攻击你10尺内的目标时，霰弹枪的伤害提升为1d12。"
+					]
+				}
+			]
+		}
+	],
+	"variantrule": [
+		{
+			"ENG_name": "META Questions",
+			"name": "META 问答",
+			"source": "HA:GS",
+			"page": 0,
+			"ruleType": "O",
+			"entries": [
+				"巧妙伪装成提问的设计评论。",
+				{
+					"ENG_name": "My GM doesn't like guns / gunslingers",
+					"type": "entries",
+					"name": "我的GM不喜欢枪/铳士",
+					"page": 0,
+					"entries": [
+						"如果你喜欢这套机制但不喜欢枪或铳士，你可以稍加创意，把铳士重新演绎为弩手或无施法游侠，并采用以下机制改动：",
+						{
+							"type": "list",
+							"items": [
+								"将所有\"火器\"替换为\"弓或弩\"，\"手枪\"替换为\"手弩\"，\"步枪\"和\"霰弹枪\"替换为\"重弩\"。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Why a new class?",
+					"type": "entries",
+					"name": "为什么要做一个新职业？",
+					"page": 0,
+					"entries": [
+						"我们相信，这个职业对火器幻想（或火器题材）的诠释，比在更小的体量中所能做到的更独特、更刺激、也更本真。"
+					]
+				},
+				{
+					"ENG_name": "Is there a limit to the number of times I can reload a firearm with Lock n' Load?",
+					"type": "entries",
+					"name": "我用子弹上膛装填火器的次数有上限吗？",
+					"page": 0,
+					"entries": [
+						"没有。有了子弹上膛，装填实际上变得\"免费\"，但仅限你自己的回合，且你仍须有一只空手"
+					]
+				},
+				{
+					"ENG_name": "Why new firearms?",
+					"type": "entries",
+					"name": "为什么要有新火器？",
+					"page": 0,
+					"entries": [
+						"我们相信本书呈现的火器更能体现预期的美学，也比官方选项更加多样、更有趣味。"
+					]
+				},
+				{
+					"ENG_name": "Can I allow multiclassing?",
+					"type": "entries",
+					"name": "可以允许兼职吗？",
+					"page": 0,
+					"entries": [
+						"可以，兼职铳士不会让任何人头疼。我们保证。"
+					]
+				},
+				{
+					"ENG_name": "and feats?",
+					"type": "entries",
+					"name": "那专长呢？",
+					"page": 0,
+					"entries": [
+						"铳士没有任何会出问题的专长。事实上，这个职业受极限优化之害比许多其他职业都轻，因为死瞳与神射手专长相互冲突。以下是你在构建铳士角色时可能考虑的一些选项的简要介绍：",
+						{
+							"type": "list",
+							"items": [
+								"{@b 新专长。}每一项都是强力且风味十足的选择，适合不同的构筑与玩法。",
+								"{@b 精灵之准。}与神射手专长以及其他能提供稳定优势来源的效果（如黄金枪）配合极佳。",
+								"{@b 战斗学徒（箭术）。}几乎与新专长一样强力（但还差一点，而且远没有那么好玩！）",
+								"{@b 神射手。}如上所述，与死瞳相冲突。你依然可以有效地使用它，但在没有稳定优势来源的情况下会颇有挑战。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Using Alternate Ability Scores",
+					"type": "entries",
+					"name": "使用替代属性值",
+					"page": 0,
+					"entries": [
+						"感知被认为是最适合体现典型铳士形象的思维属性。不过，如果你想扮演一个有克林特·伊斯特伍德的气度或多克·霍利迪的智识的角色，可以询问你的GM能否将铳士特性中引用的感知调整值替换为你的魅力或智力调整值。"
+					]
+				},
+				{
+					"ENG_name": "A Last Request",
+					"type": "entries",
+					"name": "最后一个请求",
+					"page": 0,
+					"entries": [
+						"如果你是免费得到这份文档的，那它多半是偷来的。没关系！我们宁可人们享受我们的内容，也不愿他们错过。不过，这份产品倾注了大量的心血与开支，所以如果你有余力，请考虑购买以示支持。谢谢！"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Rules Questions",
+			"name": "规则问答",
+			"source": "HA:GS",
+			"page": 0,
+			"ruleType": "O",
+			"entries": [
+				"此处呈现对常见规则问题的解答。",
+				{
+					"ENG_name": "Is this class compatible with official firearms?",
+					"type": "entries",
+					"name": "这个职业与官方火器兼容吗？",
+					"page": 0,
+					"entries": [
+						"如果你想使用官方火器，这个职业与之兼容。"
+					]
+				},
+				{
+					"ENG_name": "Does bullet time take a reaction?",
+					"type": "entries",
+					"name": "子弹时间会消耗反应吗？",
+					"page": 0,
+					"entries": [
+						"不会，坚毅点是使用子弹时间的唯一消耗。"
+					]
+				},
+				{
+					"ENG_name": "Is there a limit to the number of times I can reload a firearm with Lock n' Load?",
+					"type": "entries",
+					"name": "我用子弹上膛装填火器的次数有上限吗？",
+					"page": 0,
+					"entries": [
+						"没有。有了子弹上膛，装填实际上变得\"免费\"，但仅限你自己的回合，且你仍须有一只空手"
+					]
+				},
+				{
+					"ENG_name": "When can I use Frontier Justice?",
+					"type": "entries",
+					"name": "我什么时候可以使用边疆正义？",
+					"page": 0,
+					"entries": [
+						"你可以用边疆正义攻击一个正在逼近你、远离你或从你身边经过的生物。"
+					]
+				},
+				{
+					"ENG_name": "Can I use snapshot if I'm surprised?",
+					"type": "entries",
+					"name": "我处于措手不及状态时可以使用抢先射击吗？",
+					"page": 0,
+					"entries": [
+						"不能，措手不及的生物在战斗中其第一个回合结束前无法采取反应。"
+					]
+				},
+				{
+					"ENG_name": "Can I pick up an object as part of the bonus action to use Rough and Tumble?",
+					"type": "entries",
+					"name": "我可以把捡起物件作为使用乱斗的附赠动作的一部分吗？",
+					"page": 0,
+					"entries": [
+						"不能。不过，你在你的回合可以免费与一件物件或一处环境要素互动。"
+					]
+				},
+				{
+					"ENG_name": "Does unforgiven stack?",
+					"type": "entries",
+					"name": "不可饶恕可以叠加吗？",
+					"page": 0,
+					"entries": [
+						"不能，不可饶恕赋予的加值只能有一次计入你攻击的伤害。这遵循游戏效果合并的一般规则。"
+					]
+				},
+				{
+					"ENG_name": "Can I swap between ammunition types?",
+					"type": "entries",
+					"name": "我可以在不同弹药类型之间切换吗？",
+					"page": 0,
+					"entries": [
+						"更换火器中已装填的弹药，被视为与重新装填相同的互动。"
+					]
+				}
+			]
+		}
+	],
+	"table": [
+		{
+			"ENG_name": "Combat Analysis: Damage Per Round",
+			"name": "战斗分析：每轮伤害",
+			"source": "HA:GS",
+			"page": 0,
+			"type": "tableGroup",
+			"tables": [
+				{
+					"ENG_name": "",
+					"name": "",
+					"source": "HA:GS",
+					"type": "table",
+					"colLabels": [
+						"",
+						"{@u 无专长}",
+						"{@u 有专长}"
+					],
+					"colStyles": [
+						"col-1-7",
+						"col-3-7 text-center",
+						"col-3-7 text-center"
+					],
+					"intro": [
+						"下表基于蒙特卡洛方法，模拟了每个等级各100,000轮攻击，对抗符合该等级的正态分布护甲等级值，呈现了铳士的平均伤害。同时按相同方法呈现了使用既有构筑的类似数据集，以作比较。"
+					],
+					"rows": [
+						[]
+					]
+				},
+				{
+					"ENG_name": "",
+					"name": "",
+					"source": "HA:GS",
+					"type": "table",
+					"colLabelRows": [
+						[
+							"",
+							"{@b 浪子}",
+							"{@b 战斗大师}",
+							"{@b 盗贼}",
+							"{@b 浪子}",
+							"{@b 战斗大师}",
+							"{@b 盗贼}"
+						],
+						[
+							"{@b 等级}",
+							"{@b （{@item 连发步枪|HA:GS}）}",
+							"{@b （{@item 长弓|PHB}）}",
+							"{@b （{@item 手弩|PHB}）}",
+							"{@b （{@feat 神射手|HA:GS|神射手}）}",
+							"{@b （{@feat 强弩专家|PHB|强弩专家}与{@feat 神射手|PHB|神射手}）}",
+							"{@b （{@feat 强弩专家|PHB|强弩专家}）}"
+						]
+					],
+					"colStyles": [
+						"col-1-8 text-center",
+						"col-1-8 text-center",
+						"col-1-8 text-center",
+						"col-1-8 text-center",
+						"col-1-8 text-center",
+						"col-1-8 text-center",
+						"col-1-8 text-center"
+					],
+					"rows": [
+						[
+							"第1级",
+							"6.4",
+							"5.6",
+							"8.1",
+							"6.4",
+							"5.6",
+							"8.1"
+						],
+						[
+							"第2级",
+							"5.9",
+							"6.4",
+							"7.7",
+							"5.9",
+							"6.4",
+							"7.7"
+						],
+						[
+							"第3级",
+							"8.6",
+							"7.9",
+							"10.5",
+							"8.6",
+							"7.9",
+							"10.5"
+						],
+						[
+							"第4级",
+							"10.2",
+							"9.4",
+							"11.8",
+							"12.6",
+							"12.4",
+							"15.3"
+						],
+						[
+							"第5级",
+							"19.8",
+							"18.8",
+							"14.7",
+							"21.9",
+							"24.8",
+							"18.6"
+						],
+						[
+							"第6级",
+							"19.8",
+							"21.9",
+							"14.7",
+							"21.9",
+							"34.8",
+							"18.6"
+						],
+						[
+							"第7级",
+							"24.4",
+							"21.9",
+							"17.7",
+							"26.0",
+							"34.8",
+							"21.9"
+						],
+						[
+							"第8级",
+							"26.3",
+							"21.0",
+							"18.4",
+							"28.0",
+							"37.0",
+							"23.2"
+						],
+						[
+							"第9级",
+							"29.8",
+							"21.8",
+							"22.4",
+							"31.9",
+							"40.1",
+							"27.7"
+						],
+						[
+							"第10级",
+							"29.8",
+							"21.9",
+							"22.4",
+							"31.9",
+							"40.5",
+							"30.3"
+						],
+						[
+							"第11级",
+							"31.8",
+							"31.7",
+							"24.2",
+							"33.6",
+							"50.8",
+							"32.5"
+						],
+						[
+							"第12级",
+							"33.8",
+							"31.7",
+							"24.2",
+							"37.6",
+							"58.0",
+							"32.5"
+						],
+						[
+							"第13级",
+							"37.9",
+							"32.7",
+							"28.5",
+							"42.2",
+							"62.3",
+							"37.3"
+						],
+						[
+							"第14级",
+							"38.5",
+							"31.6",
+							"27.1",
+							"43.7",
+							"58.0",
+							"35.8"
+						],
+						[
+							"第15级",
+							"38.5",
+							"31.6",
+							"30.0",
+							"43.7",
+							"58.0",
+							"39.2"
+						],
+						[
+							"第16级",
+							"40.5",
+							"31.6",
+							"30.0",
+							"45.6",
+							"54.8",
+							"39.2"
+						],
+						[
+							"第17级",
+							"55.1",
+							"37.1",
+							"43.9",
+							"60.9",
+							"66.2",
+							"56.7"
+						],
+						[
+							"第18级",
+							"55.1",
+							"37.3",
+							"43.9",
+							"60.9",
+							"67.0",
+							"56.7"
+						],
+						[
+							"第19级",
+							"55.1",
+							"37.3",
+							"47.8",
+							"63.4",
+							"67.0",
+							"61.3"
+						],
+						[
+							"第20级",
+							"72.5",
+							"47.6",
+							"53.9",
+							"73.8",
+							"78.3",
+							"67.2"
+						]
+					],
+					"outro": [
+						"{@b 假设：}",
+						"{@b 平均战斗时长：}战斗持续三到四轮，略偏向三轮。",
+						"{@b 平均遭遇次数：}每次短休有一到两场战斗遭遇，每次长休有两次短休。",
+						"{@b 属性值：}标准数组。",
+						"{@b 专长：}从第4级起，一有机会就选取。",
+						"{@b 敌方护甲等级：}由官方怪物创建指南推算得出。",
+						"{@b 战斗大师：}只使用精准攻击战技，且只用于差距4点以内的失手攻击。一旦神射手的选项可用，每次不具劣势的攻击检定都始终选取该选项。",
+						"{@b 浪子：}有十分之三的几率使用边疆正义。掷先攻时平均有三个生物可作为正午的目标（ó = 1）。始终使用底牌将失手转为命中。",
+						"{@b 盗贼：}有二分之一的几率以优势进行回合内的首次攻击。始终使用幸运一击将失手的偷袭转为命中。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Muzzle Devices",
+			"name": "枪口装置",
+			"source": "HA:GS",
+			"type": "table",
+			"colLabels": [
+				"枪口装置",
+				"花费",
+				"先决条件",
+				"词条"
+			],
+			"colStyles": [
+				"col-3",
+				"col-2 text-right",
+				"col-3",
+				"col-4"
+			],
+			"intro": [
+				{
+					"type": "entries",
+					"entries": [
+						"此处呈现枪口装置的使用规则。",
+						{
+							"type": "list",
+							"items": [
+								"枪口装置只能安装在具有螺纹枪管标签的火器上。",
+								"一把火器同一时间只能安装一个枪口装置。",
+								"作为一个动作，你可以用一只空手将枪口装置安装到你持握的火器上，或移除、更换现有的枪口装置。"
+							]
+						}
+					]
+				}
+			],
+			"rows": [
+				[
+					"鸭嘴扩散器",
+					"100金币",
+					"霰弹枪",
+					"用此武器攻击命中时，对目标5尺内的生物造成1d4伤害。"
+				],
+				[
+					"消焰器",
+					"100金币",
+					"步枪",
+					"当你隐藏并以用此武器进行的远程武器攻击失手时，进行该攻击不会暴露你的位置。"
+				],
+				[
+					"制退器",
+					"100金币",
+					"任何火器",
+					"你用此武器进行的攻击检定获得+1加值。"
+				],
+				[
+					"消音器",
+					"300金币",
+					"手枪或步枪",
+					"你用此武器进行的攻击检定获得+1加值。此外，此武器失去巨响属性。"
+				]
+			]
+		},
+		{
+			"ENG_name": "Weapon Upgrades",
+			"name": "武器升级",
+			"source": "HA:GS",
+			"type": "table",
+			"colLabels": [
+				"标签",
+				"先决条件",
+				"词条"
+			],
+			"colStyles": [
+				"col-3",
+				"col-4",
+				"col-5"
+			],
+			"intro": [
+				"火器可用的升级选项范围见火器改装表。"
+			],
+			"rows": [
+				[
+					"{@i 一阶（基础花费：100金币）}",
+					"",
+					""
+				],
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"全收束器",
+						"霰弹枪",
+						"此武器的常规射程与最大射程翻倍。"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"微力扳机",
+						"任何火器",
+						"你可以将你的熟练加值加到你的先攻检定上。若你赋予自己此增益，你必须在该战斗中移动或采取任何其他动作之前，先用此武器进行一次远程攻击。"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"长枪管",
+						"任何火器",
+						"你可以将你的熟练加值加到你的先攻检定上。若你赋予自己此增益，你必须在该战斗中移动或采取任何其他动作之前，先用此武器进行一次远程攻击。"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"符文",
+						"只能由符文匠施加。",
+						"此武器可以镶嵌符文石。"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"银质",
+						"任何火器",
+						"在克服非魔法攻击与伤害的抗性和免疫时，用此武器进行的攻击视为银质。"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"螺纹枪管",
+						"任何火器",
+						"此武器可以安装{@table 枪口装置|HA:GS|枪口装置}。 "
+					]
+				},
+				[
+					"{@i 二阶（基础花费：1,000金币）}",
+					"",
+					""
+				],
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"奥术瞄具",
+						"任何火器",
+						"你在d20上需要掷出以用此武器造成重击的最低数字降低1。"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"魔法",
+						"具有{@i 银质}标签的武器。只能由奥术施法者施加。",
+						"在克服非魔法攻击与伤害的抗性和免疫，以及诸如黑布丁的腐蚀形体等特性和能力时，用此武器进行的攻击视为魔法攻击。"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"膛线",
+						"具有{@i 长枪管}标签的手枪",
+						"此武器的伤害骰提升一级尺寸。"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"魔法",
+						"{@i 银质}标签。只能由奥术施法者施加",
+						"在克服非魔法攻击与伤害的抗性和免疫，以及{@creature 黑布丁}的{@i 腐蚀形体}等特性时，用此武器进行的攻击视为魔法攻击。"
+					]
+				},
+				[
+					"三阶（基础花费：10,000金币）",
+					"",
+					""
+				],
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"精工",
+						"具有{@i 奥术瞄具}标签的火器。",
+						"你用此武器进行的攻击检定和伤害掷骰额外获得+1加值。"
+					]
+				}
+			]
+		}
+	],
+	"condition": [
+		{
+			"ENG_name": "Burning",
+			"name": "燃烧",
+			"source": "HA:GS",
+			"page": 0,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"一个燃烧的生物在其每个回合开始时受到火焰伤害。该伤害以括号形式标注于触发效果中。",
+						"该生物散发出20尺半径的明亮光照和额外20尺的微光光照。",
+						"若一个生物受到来自多个来源的燃烧，则只有伤害最高的来源生效；它们不会叠加。例如，一个同时受到燃烧（1d6）和燃烧（2d6）影响的生物，在其每个回合开始时受到2d6火焰伤害。",
+						"若该生物或其触及范围内的另一个生物用一个动作扑灭火焰，或某种其他效果将其浇灭（如浸入水中），此状态结束。"
+					]
+				}
+			]
+		}
+	]
+}
