@@ -1,0 +1,6942 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ktp",
+				"abbreviation": "KT:P",
+				"full": "KibblesTasty: 灵能使",
+				"url": "https://www.kthomebrew.com/s/Psion-153-Compressed.pdf",
+				"version": "1.5.3",
+				"authors": [
+					"KibblesTasty"
+				],
+				"convertedBy": [
+					"carboardvinyl",
+					"hightouch",
+					"hyde364",
+					"Ikaguia",
+					"mechanicBovine",
+					"p4535992",
+					"Roamer",
+					"wafflepotamus"
+				]
+			}
+		],
+		"optionalFeatureTypes": {
+			"PsiD": "灵能学科",
+			"PsiP": "灵能威能",
+			"PsiT": "灵能天赋"
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1559943252,
+		"dateLastModified": 1788101816,
+		"_dateLastModifiedHash": "c6c4c9c8f4"
+	},
+	"class": [
+		{
+			"name": "灵能使",
+			"source": "ktp",
+			"page": 1,
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"wis",
+				"int"
+			],
+			"classSpells": [
+				"剑刃护壁",
+				"连锁闪电",
+				"解离术",
+				"寻路术",
+				"摄心目光",
+				"重伤术",
+				"群体暗示术",
+				"精神监狱|xge",
+				"心灵震爆|ktp",
+				"散射术|xge",
+				"众星冠冕|xge",
+				"以太化",
+				"指使术",
+				"位面转移",
+				"律令痛苦|xge",
+				"再生术",
+				"反转重力",
+				"传送术",
+				"旋风术|xge",
+				"反魔法场",
+				"半位面",
+				"支配怪物",
+				"地震术",
+				"弱智术",
+				"内在世界|ktp",
+				"疯狂之暗|xge",
+				"心灵屏障",
+				"律令震慑",
+				"星界投影",
+				"预见术",
+				"异界之门",
+				"律令死亡",
+				"心灵尖啸|xge",
+				"时间停止"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"psionics|ktp": true,
+						"choose": {
+							"from": [
+								"deception",
+								"history",
+								"insight",
+								"intimidation",
+								"investigation",
+								"medicine",
+								"perception",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）一根{@item 长棍|PHB}或（b）一把{@item 匕首|PHB}",
+					"{@item 皮甲|PHB}或（b）一件{@item 鳞甲|PHB}（如具有熟练项）",
+					"（a）一个{@item 学者套组|PHB}或（b）一个{@item 探索套组|PHB}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"长棍|phb"
+						],
+						"b": [
+							"匕首|phb"
+						]
+					},
+					{
+						"a": [
+							"皮甲|phb"
+						],
+						"b": [
+							"鳞甲|phb"
+						]
+					},
+					{
+						"a": [
+							"学者套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"psionics|ktp": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"灵能点",
+						"单次使用上限",
+						"{@filter 灵能天赋|optionalfeatures|feature type=PsiT}"
+					],
+					"rows": [
+						[
+							1,
+							1,
+							0
+						],
+						[
+							2,
+							1,
+							2
+						],
+						[
+							3,
+							2,
+							2
+						],
+						[
+							4,
+							2,
+							2
+						],
+						[
+							5,
+							3,
+							3
+						],
+						[
+							6,
+							3,
+							3
+						],
+						[
+							7,
+							4,
+							4
+						],
+						[
+							8,
+							4,
+							4
+						],
+						[
+							9,
+							5,
+							5
+						],
+						[
+							10,
+							5,
+							5
+						],
+						[
+							11,
+							6,
+							5
+						],
+						[
+							12,
+							6,
+							6
+						],
+						[
+							13,
+							7,
+							6
+						],
+						[
+							14,
+							7,
+							6
+						],
+						[
+							15,
+							8,
+							7
+						],
+						[
+							16,
+							8,
+							7
+						],
+						[
+							17,
+							9,
+							7
+						],
+						[
+							18,
+							9,
+							8
+						],
+						[
+							19,
+							10,
+							8
+						],
+						[
+							20,
+							10,
+							8
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				{
+					"classFeature": "灵能范型|灵能使|ktp|1",
+					"gainSubclassFeature": true
+				},
+				"灵能|灵能使|ktp|1",
+				"灵能天赋|灵能使|ktp|2",
+				"第二学科|灵能使|ktp|3",
+				{
+					"classFeature": "灵能范型特性|灵能使|ktp|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|灵能使|ktp|4",
+				"灵能精通（1点）|灵能使|ktp|5",
+				{
+					"classFeature": "灵能范型特性|灵能使|ktp|6",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|灵能使|ktp|8",
+				{
+					"classFeature": "灵能范型特性|灵能使|ktp|10",
+					"gainSubclassFeature": true
+				},
+				"灵能精通（2点）|灵能使|ktp|11",
+				"天生灵能（6环法术）|灵能使|ktp|11",
+				"属性值提升|灵能使|ktp|12",
+				"天生灵能（7环法术）|灵能使|ktp|13",
+				{
+					"classFeature": "灵能范型特性|灵能使|ktp|14",
+					"gainSubclassFeature": true
+				},
+				"天生灵能（8环法术）|灵能使|ktp|15",
+				"属性值提升|灵能使|ktp|16",
+				"灵能精通（3点）|灵能使|ktp|17",
+				"天生灵能（9环法术）|灵能使|ktp|17",
+				"第三学科|灵能使|ktp|18",
+				"属性值提升|灵能使|ktp|19",
+				"飞升|灵能使|ktp|20"
+			],
+			"subclassTitle": "灵能范型",
+			"ENG_name": "Psion"
+		}
+	],
+	"classFluff": [
+		{
+			"name": "灵能使",
+			"source": "ktp",
+			"entries": [
+				{
+					"entries": [
+						"一名魁梧的兽人横飞过整个房间，撞穿桌椅后轰然砸在墙上，晕头转向地瘫倒在地。一名人类女性眼中还残留着超凡之力的微光，往吧台上多丢了几枚硬币。\"抱歉弄乱了。他要是醒了，告诉他下次试试招惹和自己块头差不多的家伙。\"",
+						"审讯者没有提出任何问题，只是沉默地盯着囚犯，囚犯的表情从桀骜不驯渐渐变成困惑。当他不由自主地回忆起自己把赃物藏在哪里时，困惑又变成了不安。\"锈钩客栈后面马厩的底下。\"审讯者终于开口，而那窃贼的表情已然化为惊恐。",
+						"\"你就......不冷什么的吗？\"矮人在雪地里艰难跋涉时问身边的精灵，打量着她单薄的袍子和赤裸的双脚。\"我只要想'暖和'就行了。\"精灵心不在焉地回答。矮人嗤了一声，呼出一团寒气。典型的精灵做派。只不过......他们至今还没冻死。\"那个......你能往这边想点'暖和'吗？\"矮人满怀希望地问。令矮人惊讶的是，冰雪的寒意彻底消退了。\"还真是邪门......嘿，别停下来啊！我就是说说而已。\"",
+						"灵能使是那些接触到了一种特殊异界之力的人，他们能够将心灵的力量化为现实，完成不可能的壮举。读取思维、举起千钧重物、超越肉体的极限\u2014\u2014他们所激发的敬畏与恐惧向来不相上下。",
+						"灵能究竟为何物，这个问题在你的设定中或许已有答案，或许没有。大多数人认为灵能源于内在，但也有其他解释\u2014\u2014从彼界泄漏之力，到魔法的另一种表现形式，再到个体意志在世界上的具现，不一而足。",
+						{
+							"type": "entries",
+							"name": "强大的心智",
+							"entries": [
+								"由于灵能使的武器就是自己的心灵，一个不经意的念头就可能伤及身边的人。对灵能使而言，\"想到\"与\"做到\"之间的界线可以非常微弱，迫使他们时刻约束自己的思绪与情绪，以免力量失控横行。这使许多灵能使养成了帮助自己控制心境的怪异习惯或举止，在外人看来往往颇为古怪。",
+								"想想你的灵能使是如何约束自身力量的，这些力量又在多大程度上渗透进日常生活。读心会如何影响他们的肢体语言或习惯？他们是躺在睡袋里就能给营火添柴，还是克制自己不为琐事动用力量、以免失手？"
+							],
+							"ENG_name": "Powerful Minds"
+						},
+						{
+							"type": "entries",
+							"name": "被误解的力量",
+							"entries": [
+								"在魔法无处不在的世界里，许多人会把灵能使当成术士或法师的一类，把他们的力量误认为魔法的寻常应用。普通村民心中只有一个分类，专门装着那些随心扭曲现实的超自然怪人。但即便在施法者中间，灵能使的力量也常令人不安。",
+								"恰恰是那些真正理解魔法的人，才最能察觉灵能使能力的异样。那是一种与魔网交错而行、而非遵从魔网的力量，灵能使所执掌之力的本质，令人只能心怀不安地沉思。",
+								{
+									"type": "inset",
+									"name": "灵能与魔法",
+									"entries": [
+										"魔法与灵能在规则上的互动见\"灵能\"特性，具体可能因你的GM和设定而异。灵能依然是超自然之力的一种表达，仍可能受到压制魔法效应的效果影响，但对熟悉魔法的人而言它往往神秘而费解，因为那是心灵与魔网更为原始直接的互动。"
+									],
+									"ENG_name": "Psionics & Magic"
+								}
+							],
+							"ENG_name": "Misunderstood Power"
+						}
+					],
+					"source": "ktp",
+					"page": 5,
+					"name": "灵能使",
+					"type": "section",
+					"ENG_name": "Psion"
+				},
+				{
+					"entries": [
+						{
+							"type": "entries",
+							"name": "创造一名灵能使",
+							"entries": [
+								"创建灵能使时，想想角色的背景。你如何成为灵能使？是生来便有潜伏的力量？还是某段遭遇赋予了力量？又或是通过严苛的精神修炼刻意开发而来？思考一种稀有而神秘的力量会如何影响你与他人的交往。",
+								"想想你打算用新获得的力量达成什么，或如何运用这份力量。你是想被当作施法的法师，还是坦然承认自己属于......另一类存在？"
+							],
+							"ENG_name": "Creating a Psion"
+						},
+						{
+							"type": "entries",
+							"name": "快速建卡",
+							"entries": [
+								"你可以按照以下建议快速创建一名灵能使。首先，将智力作为你的最高属性值，其次是敏捷或体质。其次，选择一个适合智力系技能的背景。"
+							],
+							"ENG_name": "Quick Build"
+						}
+					],
+					"source": "ktp",
+					"page": 2,
+					"name": "灵能使",
+					"type": "section",
+					"ENG_name": "Psion"
+				},
+				{
+					"source": "ktp",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"我不是故意要杀他的！他惹恼了我，而我只是想象了一下把他推开的样子。"
+							],
+							"by": "阿米莉亚，8岁"
+						},
+						"灵能使体内蕴藏着一口原始不羁的力量深井。他们收束与聚焦这份力量的斗争永无止境。专注上一次微小的分神，都可能招致灾难性的后果。",
+						"灵能使无休止的内心挣扎，会让他们不自觉地养成种种古怪的癖性或习惯，以此维持力量的受控。踏上冒险的灵能使常寻找机会锻炼和磨砺自身力量，同时不给周围的人带来无谓的伤害。找不到途径宣泄部分力量的灵能使，就像一个随时可能爆炸的火药桶。",
+						"扮演灵能使角色，正是扮演一种奇特或不寻常个性的机会。为了让你的灵能使更具辨识度，请参考以下各节的选项。",
+						{
+							"type": "entries",
+							"name": "社交怪癖",
+							"entries": [
+								"你养成了怎样的怪癖来防止无意中伤害他人？它如何帮助你控制力量？",
+								{
+									"type": "table",
+									"caption": "社交怪癖",
+									"colLabels": [
+										"{@dice d6}",
+										"社交怪癖"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"易乐。你动辄发笑，能在别人毫不觉得好笑的境况中品出幽默。面对足以令大多数人崩溃的紧张局面，你也能一笑置之。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"疏离。旁人回头望去，总见你凝望远方。你其实什么都没在看，而是在向内逃离，在精神上远离外部世界的纷扰。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"痴执。你有一份异乎寻常的热爱，谈及时常挂在嘴边，闲余时间也尽数投入其中。也许是古铜币、纽扣或玉雕小人\u2014\u2014你觉得它们的迷人程度远超旁人的想象。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"骇人。你以惊吓他人为乐。你可能凑到别人耳边突然学狗狂吠，也可能勃然大怒、一分钟后又哈哈了事。不认识你的人在你身边总会心神不宁。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"妄见。你对现实的认知与众不同。也许你认为自己是一棵觉醒后暂以精灵之形显化的树，也许你觉得所有伙伴都不过是你创造出的心灵造物。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"挚爱。你喜爱遇见的每一个人，总以热烈的方式表达爱意。你活得像只小狗，旁人也不由自主地被你感染的快乐打动。"
+										]
+									]
+								}
+							],
+							"ENG_name": "Social Quirk"
+						},
+						{
+							"type": "entries",
+							"name": "起源",
+							"entries": [
+								"灵能异乎寻常而又诡异，是物质位面与远境交互的副作用。",
+								"决定你的角色如何获得灵能，并思考这一起源将如何影响角色的背景故事与成长。",
+								{
+									"type": "table",
+									"caption": "起源",
+									"colLabels": [
+										"{@dice d6}",
+										"起源"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你生来便拥有力量，无人知晓缘由。你身边没有任何人具备灵能。你的家人畏惧你的力量，你的童年都在努力控制它中度过。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你在梦中不知不觉漂入了星界，醒来时便有了这些新力量。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你研习并锻炼自己的心智，直到能将其力量施加于周遭世界。这是一条漫长而艰辛的道路，但多年之后，你的修习终于开始有所回报。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你属于一个在成长过程中自然觉醒灵能的特殊族群或种族，因此你在发展力量时得到了许多帮助。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你遭遇了某个不该遭遇的存在，但关于它的记忆已然扭曲模糊。这次遭遇赋予了灵能，也让你有了一点疯癫。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你游历到一个灵能并不罕见的地方，在那里拜于灵能大师门下，由他们训练并帮你磨砺灵能天赋。"
+										]
+									]
+								}
+							],
+							"ENG_name": "Origins"
+						}
+					],
+					"type": "section"
+				}
+			],
+			"ENG_name": "Psion"
+		}
+	],
+	"subclass": [
+		{
+			"name": "觉醒",
+			"shortName": "觉醒",
+			"source": "ktp",
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassFeatures": [
+				"觉醒心灵|灵能使|ktp|觉醒|ktp|1",
+				"读心者|灵能使|ktp|觉醒|ktp|3",
+				"强化灵能|灵能使|ktp|觉醒|ktp|6",
+				"全视之眼|灵能使|ktp|觉醒|ktp|10",
+				"完全觉醒|灵能使|ktp|觉醒|ktp|14"
+			],
+			"ENG_name": "Awakened"
+		},
+		{
+			"name": "吞噬",
+			"shortName": "吞噬",
+			"source": "ktp",
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassFeatures": [
+				"吞噬心灵|灵能使|ktp|吞噬|ktp|1",
+				"贪婪威能|灵能使|ktp|吞噬|ktp|3",
+				"强化灵能|灵能使|ktp|吞噬|ktp|6",
+				"心灵吸血鬼|灵能使|ktp|吞噬|ktp|10",
+				"破碎空壳|灵能使|ktp|吞噬|ktp|14"
+			],
+			"ENG_name": "Consuming"
+		},
+		{
+			"name": "元素",
+			"shortName": "元素",
+			"source": "ktp",
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassFeatures": [
+				"元素心灵|灵能使|ktp|元素|ktp|1",
+				"活性威能|灵能使|ktp|元素|ktp|3",
+				"强化灵能|灵能使|ktp|元素|ktp|6",
+				"完全显形|灵能使|ktp|元素|ktp|10",
+				"元素形态|灵能使|ktp|元素|ktp|14"
+			],
+			"ENG_name": "Elemental"
+		},
+		{
+			"name": "塑形者",
+			"shortName": "塑形者",
+			"source": "ktp",
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassFeatures": [
+				"塑形者心灵|灵能使|ktp|塑形者|ktp|1",
+				"星界稳态|灵能使|ktp|塑形者|ktp|3",
+				"强化构装体|灵能使|ktp|塑形者|ktp|6",
+				"星界守卫|灵能使|ktp|塑形者|ktp|10",
+				"想象军团|灵能使|ktp|塑形者|ktp|14"
+			],
+			"ENG_name": "Shaper"
+		},
+		{
+			"name": "超然",
+			"shortName": "超然",
+			"source": "ktp",
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassFeatures": [
+				"超然心灵|灵能使|ktp|超然|ktp|1",
+				"力量平衡|灵能使|ktp|超然|ktp|3",
+				"完美强化|灵能使|ktp|超然|ktp|6",
+				"心灵掌控|灵能使|ktp|超然|ktp|10",
+				"心胜于物|灵能使|ktp|超然|ktp|14"
+			],
+			"ENG_name": "Transcended"
+		},
+		{
+			"name": "解缚",
+			"shortName": "解缚",
+			"source": "ktp",
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassFeatures": [
+				"解缚心灵|灵能使|ktp|解缚|ktp|1",
+				"狂乱威能|灵能使|ktp|解缚|ktp|3",
+				"强化灵能|灵能使|ktp|解缚|ktp|6",
+				"不可控心灵|灵能使|ktp|解缚|ktp|10",
+				"不可阻挡的狂乱|灵能使|ktp|解缚|ktp|14"
+			],
+			"ENG_name": "Unleashed"
+		},
+		{
+			"name": "漫游",
+			"shortName": "漫游",
+			"source": "ktp",
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassFeatures": [
+				"漫游心灵|灵能使|ktp|漫游|ktp|1",
+				"狡诈打击|灵能使|ktp|漫游|ktp|3",
+				"求知心灵|灵能使|ktp|漫游|ktp|3",
+				"相位舞者|灵能使|ktp|漫游|ktp|6",
+				"闪烁身影|灵能使|ktp|漫游|ktp|10",
+				"位面行者|灵能使|ktp|漫游|ktp|14",
+				"蜿蜒小径|灵能使|ktp|漫游|ktp|14"
+			],
+			"ENG_name": "Wandering"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "灵能范型",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 1,
+			"entries": [
+				"在第1级，你选择自己所属的灵能范型，可从觉醒心灵、解缚心灵、超然心灵、塑形者心灵、漫游心灵、元素心灵或吞噬心灵中选择，各项详述于职业描述末尾。你的选择会在第1级以及第3、6、10和14级赋予你特性。"
+			],
+			"ENG_name": "Psionic Archetype"
+		},
+		{
+			"name": "灵能",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 1,
+			"resources": [
+				{
+					"name": "灵能点",
+					"type": "pointPool",
+					"count": "ceil(<$level$> / 2)",
+					"recharge": "restShort",
+					"ENG_name": "Psi Points"
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "灵能学科",
+					"entries": [
+						"你所选择的范型会赋予你一项{@filter 灵能学科|optionalfeatures|feature type=PsiD}（例如{@optfeature 心灵感应学科|ktp|心灵感应}或{@optfeature 心灵遥控学科|ktp|心灵遥控}）。每个灵能学科附带一个拓展角色能力的被动特性，以及一个可用灵能点修饰和增强的主动灵能威能。此外，你还可以将学科运用于更精细的场合，以再现某些法术的效应，这些法术列于学科描述末尾。在第3级你可以选择第二个学科，第18级可以选择第三个学科。",
+						"灵能威能会被{@spell 反魔法场||反魔法场}压制，也能被{@spell 解除魔法}驱散，但只有在再现法术效应时才会受{@spell 法术反制}影响。除非施法者同样具有\"灵能\"特性，否则其进行{@spell 解除魔法}、{@spell 法术反制}或辨识灵能施法的检定时均具有劣势。侦测魔法法术能侦测到灵能的使用，却无法探知其本质：它会显示为一种神秘的、无从归类的力量，即便它正在生成某个法术的效应。",
+						"当通过灵能效应再现法术（以灵能学科施展该法术）时，该法术没有材料或言语成分，但使用任何灵能能力都需要姿势成分，且会使灵能使浑身焕发出其所掌控的异界灵能的鲜活光辉。"
+					],
+					"ENG_name": "Psionic Disciplines"
+				},
+				{
+					"type": "entries",
+					"name": "灵能点",
+					"entries": [
+						"从第1级起，你获得灵能点，用于驱动{@filter 灵能学科|optionalfeatures|feature type=PsiD}的威能与效应。你的灵能点数量等于你的灵能使等级，完成短休或长休后恢复所有已消耗的灵能点。你一次最多可消耗相当于你灵能使等级一半（向上取整）的灵能点。例如，若你是5级灵能使，你可以在一个灵能威能上消耗3点灵能点，或施展一个耗费3点灵能点的法术。"
+					],
+					"ENG_name": "Psi Points"
+				},
+				{
+					"type": "entries",
+					"name": "灵能能力",
+					"entries": [
+						"灵能威能、灵能天赋，以及通过本职业获得的法术，均使用你的灵能能力。",
+						{
+							"type": "abilityDc",
+							"name": "灵能能力",
+							"attributes": [
+								"int"
+							],
+							"ENG_name": "Psionic Ability"
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "灵能能力",
+							"attributes": [
+								"int"
+							],
+							"ENG_name": "Psionic Ability"
+						}
+					],
+					"ENG_name": "Psionic Ability"
+				}
+			],
+			"ENG_name": "Psionics"
+		},
+		{
+			"name": "灵能天赋",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 2,
+			"entries": [
+				"从第2级起，你获得灵能天赋以便进一步专精。从职业描述末尾列出的{@filter 灵能天赋|optionalfeatures|feature type=PsiT}列表中选择两项。",
+				"你在第5、7、9、12、15和18级可以选择新的灵能天赋。升级时，你可以将先前选择的灵能天赋替换为另一选项。"
+			],
+			"ENG_name": "Psionic Talents"
+		},
+		{
+			"name": "灵能范型特性",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 3,
+			"entries": [
+				"在第3级，你获得一项由你的灵能范型赋予的特性。"
+			],
+			"ENG_name": "Psionic Archetype Feature"
+		},
+		{
+			"name": "第二学科",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 3,
+			"entries": [
+				"当你到达第3级时，你可以从{@filter 灵能学科|optionalfeatures|feature type=PsiD}列表中选择第二个灵能学科。你不能选择已知的学科。选择学科时，你获得该学科的全部特性。"
+			],
+			"ENG_name": "Second Discipline"
+		},
+		{
+			"name": "属性值提升",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 4,
+			"entries": [
+				"当你到达第4级，以及第8、12、16和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "灵能精通（1点）",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 5,
+			"entries": [
+				"当你到达第5级时，你初步精通了自己的灵能。在你的回合开始时，你获得1点免费灵能点。它可用于强化灵能学科，但不能用于再现法术或驱动灵能天赋。若你的回合结束时本特性赋予的免费灵能点仍有剩余，则失去这些点数。",
+				"在第11级，免费灵能点增加到2点；第17级增加到3点。这些点数可以分配给不同的能力。"
+			],
+			"ENG_name": "Psionic Mastery (1 point)"
+		},
+		{
+			"name": "灵能范型特性",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 6,
+			"entries": [
+				"在第6级，你获得一项由你的灵能范型赋予的特性。"
+			],
+			"ENG_name": "Psionic Archetype Feature"
+		},
+		{
+			"name": "属性值提升",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 8,
+			"entries": [
+				"当你到达第8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "灵能范型特性",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 10,
+			"entries": [
+				"在第10级，你获得一项由你的灵能范型赋予的特性。"
+			],
+			"ENG_name": "Psionic Archetype Feature"
+		},
+		{
+			"name": "天生灵能（6环法术）",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 11,
+			"entries": [
+				"在第11级，你获得施展伟大灵能伟业的能力。从{@filter 灵能使法术列表中的6环法术|spells|level=6|class=灵能使}中选择一个作为天生能力。你可以用该天生能力施展该法术一次，之后必须完成一次长休才能再次使用。在更高等级，你以同样的方式获得更多自选的天生能力：第13级一个7环法术、第15级一个8环法术、第17级一个9环法术。完成长休后，你恢复\"天生灵能\"的所有使用次数。",
+				"天生灵能远超你力量的常规范围，不受你所持学科的限制。与灵能学科不同，它们需要法术所要求的任何成分。"
+			],
+			"ENG_name": "Innate Psionics (6th level spell)"
+		},
+		{
+			"name": "灵能精通（2点）",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 11,
+			"entries": [
+				"当你到达第11级时，你对灵能的精通更进一步。在你的回合开始时，你现在获得2点临时灵能点。它可用于强化灵能能力，但不能用于再现法术。若你的回合结束时临时灵能点仍有剩余，则失去这些点数。",
+				"在第17级，临时灵能点增加到3点。临时灵能点可以分配给不同的能力。"
+			],
+			"ENG_name": "Psionic Mastery (2 points)"
+		},
+		{
+			"name": "属性值提升",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 12,
+			"entries": [
+				"当你到达第12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "天生灵能（7环法术）",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 13,
+			"entries": [
+				"在第13级，你为你的\"天生灵能\"选择一个{@filter 灵能使法术列表中的7环法术|spells|level=7|class=灵能使}。"
+			],
+			"ENG_name": "Innate Psionics (7th level spell)"
+		},
+		{
+			"name": "灵能范型特性",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 14,
+			"entries": [
+				"在第14级，你获得一项由你的灵能范型赋予的特性。"
+			],
+			"ENG_name": "Psionic Archetype Feature"
+		},
+		{
+			"name": "天生灵能（8环法术）",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 15,
+			"entries": [
+				"在第15级，你为你的\"天生灵能\"选择一个{@filter 灵能使法术列表中的8环法术|spells|level=8|class=灵能使}。"
+			],
+			"ENG_name": "Innate Psionics (8th level spell)"
+		},
+		{
+			"name": "属性值提升",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 16,
+			"entries": [
+				"当你到达第16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "天生灵能（9环法术）",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 17,
+			"entries": [
+				"在第17级，你为你的\"天生灵能\"选择一个{@filter 灵能使法术列表中的9环法术|spells|level=9|class=灵能使}。"
+			],
+			"ENG_name": "Innate Psionics (9th level spell)"
+		},
+		{
+			"name": "灵能精通（3点）",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 17,
+			"entries": [
+				"当你到达第17级时，你对灵能的精通更进一步。在你的回合开始时，你现在获得3点临时灵能点。它可用于强化灵能能力，但不能用于再现法术。若你的回合结束时临时灵能点仍有剩余，则失去这些点数。",
+				"临时灵能点可以分配给不同的能力。"
+			],
+			"ENG_name": "Psionic Mastery (3 points)"
+		},
+		{
+			"name": "第三学科",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 18,
+			"entries": [
+				"当你到达第18级时，你可以从{@filter 灵能学科|optionalfeatures|feature type=PsiD}列表中选择第三个灵能学科。你不能选择已知的学科。选择学科时，你获得该学科的全部特性。"
+			],
+			"ENG_name": "Third Discipline"
+		},
+		{
+			"name": "属性值提升",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 19,
+			"entries": [
+				"当你到达第19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			],
+			"ENG_name": "Ability Score Improvement"
+		},
+		{
+			"name": "飞升",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"level": 20,
+			"entries": [
+				"从第20级起，如果你死亡，你可以选择在下一个回合开始时，于你死亡的地点化为边界以太位面上的一具灵体。该灵体具有{@creature 幽魂}的物理属性值（力量、敏捷、体质）和能力，但保有你的精神属性值（智力、感知、魅力）与你的灵能使职业能力。",
+				"当你化为此形态时，你在该形态下的当前与最大生命值变为{@creature 幽魂}的数值；若你即将化为此形态时灵能点不足10点，则你拥有10点灵能点。在此形态下你无法通过休息恢复已消耗的能力。若你耗尽所有灵能点，或{@creature 幽魂}被消灭，你便如普通生物一般死亡。"
+			],
+			"ENG_name": "Ascension"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "觉醒心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "觉醒",
+			"subclassSource": "ktp",
+			"level": 1,
+			"entries": [
+				"觉醒心灵是这样一种灵能使：他们的灵能因某次遭遇、事件或境况而在体内被唤醒。也许力量一直潜伏，也许他们的宿命本是普通生物，力量却突然加身。也许他们在一场鲜活的梦中触及了彼界，也许他们漫游妖精荒野后带回了扭曲，也许他们只是在街头瞥见了一只本不该存在的生物的眼睛。",
+				"觉醒的过程往往多少带有创伤。灵能使本就不为世人所理解，而他们最先显现的力量\u2014\u2014心灵感应\u2014\u2014更是最令人畏惧和排斥的能力之一。",
+				"觉醒者可能悲悯，也可能残忍；可能善良，也可能邪恶。知晓他人心中所想会以不同的方式影响人：有人在看清社会的真面目后弃之而去，有人却因看得见唯有自己能见的问题而忍不住施以援手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "开启心智|灵能使|ktp|觉醒|ktp|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "心灵感知|灵能使|ktp|觉醒|ktp|1"
+				}
+			],
+			"ENG_name": "Awakened Mind"
+		},
+		{
+			"name": "心灵感知",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "觉醒",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，从第1级起，你对智力属性值不低于6的生物进行洞悉检定时，可以用智力代替感知。",
+				"而且，只要你曾与一名自愿生物进行过心灵感应交流，接下来1小时内你便知晓其大致方位（方向与距离的粗略估计），前提是你与它处于同一位面。"
+			],
+			"ENG_name": "Mental Awareness"
+		},
+		{
+			"name": "开启心智",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "觉醒",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此范型时，你的心智觉醒出与其他生物心灵直接相连的能力，获得灵能{@optfeature 心灵感应学科|ktp|心灵感应学科}。"
+			],
+			"ENG_name": "Opened Mind"
+		},
+		{
+			"name": "读心者",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "觉醒",
+			"subclassSource": "ktp",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，当你使用\"心灵入侵\"时，你可以强制目标对该威能进行智力豁免检定，而非感知豁免检定（在使用该能力时决定）。",
+				"当有生物豁免你的\"心灵入侵\"失败时，你获得一枚d4。直到你的下回合结束为止，若你对该生物进行攻击掷骰，或该生物对你的\"心灵入侵\"以外的灵能威能进行豁免检定，你可以在该掷骰中加上或减去这枚d4（须在掷骰攻击或使用威能前决定）。"
+			],
+			"ENG_name": "Mind Reader"
+		},
+		{
+			"name": "强化灵能",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "觉醒",
+			"subclassSource": "ktp",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，当你以灵能学科威能造成伤害时，你可以将你的智力调整值加到所造成的伤害上。"
+			],
+			"ENG_name": "Empowered Psionics"
+		},
+		{
+			"name": "全视之眼",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "觉醒",
+			"subclassSource": "ktp",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，你能以心灵视物。你获得60尺心智视觉，可以如盲视般看见范围内智力不低于6的生物。你未察觉的生物依然可以对你就此隐藏，但你在进行察觉生物的察觉检定时，可以用智力调整值代替感知调整值。"
+			],
+			"ENG_name": "All Seeing Eye"
+		},
+		{
+			"name": "完全觉醒",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "觉醒",
+			"subclassSource": "ktp",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从第14级起，你可以短暂地让拓展后的心灵完全觉醒、直达真正的了悟。在你的回合开始时，你可以消耗2点灵能点，直到你的下回合开始为止，你的所有豁免检定和攻击掷骰均获得优势。"
+			],
+			"ENG_name": "Full Awakening"
+		},
+		{
+			"name": "吞噬心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "吞噬",
+			"subclassSource": "ktp",
+			"level": 1,
+			"entries": [
+				"吞噬心灵是灵能中一支危险流派的宗师，这一流派源自从其他生物身上汲取能量的能力。这种力量能撕取思想、心灵乃至生命精气，供灵能使吞噬。这一灵能流派令人闻风丧胆，有时被认为是所有灵能的原初根源之一，因为噬心的怪物与远古的灵能太空巨鲸身上都能见到它的踪影......后者在各个设定中或许另有其名。",
+				"这条可怖却行之有效的道路，被那些出于野心或绝境而追逐更强力量的人不断打磨。行走此道的凡人例子之一便是黑暗精灵的诸家族\u2014\u2014他们的黑暗力量正是源自对野生吸血噬脑怪物的研究。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "灵能掠食者|灵能使|ktp|吞噬|ktp|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "暗伏者|灵能使|ktp|吞噬|ktp|1"
+				}
+			],
+			"ENG_name": "Consuming Mind"
+		},
+		{
+			"name": "暗伏者",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "吞噬",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，在第1级，你的力量赋予你直觉，使你作为猎心者能更好地适应与求生。你获得隐秘和欺瞒的熟练项。若你已具有其中任一技能的熟练项，则改为获得一项自选技能的熟练项。",
+				"当你使用灵能能力时，你可以进行一次智力（欺瞒）检定，与目标的感知（洞悉）检定对抗，以隐匿你对灵能的使用，压制其惯常的可见迹象。若你在该能力上消耗了灵能点，则必须从你的智力（欺瞒）掷骰结果中减去所消耗的灵能点数（隐匿更大规模的灵能使用更为困难）。"
+			],
+			"ENG_name": "Dark Lurker"
+		},
+		{
+			"name": "灵能掠食者",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "吞噬",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此范型时，你获得吞噬他人灵能的能力，获得灵能{@optfeature 吞噬学科|ktp|吞噬学科}。"
+			],
+			"ENG_name": "Psionic Predator"
+		},
+		{
+			"name": "贪婪威能",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "吞噬",
+			"subclassSource": "ktp",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你获得\"噬心者\"灵能天赋；该天赋无视正常的等级限制，不计入你已知的灵能天赋数，但升级时不可替换。",
+				"此外，当生物被你的灵能威能杀死时，你可以在30尺外获得该天赋的收益。"
+			],
+			"ENG_name": "Ravenous Powers"
+		},
+		{
+			"name": "强化灵能",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "吞噬",
+			"subclassSource": "ktp",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，当你以灵能学科威能造成伤害时，你可以将你的智力调整值加到所造成的伤害上。"
+			],
+			"ENG_name": "Empowered Psionics"
+		},
+		{
+			"name": "心灵吸血鬼",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "吞噬",
+			"subclassSource": "ktp",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，每当你对30尺内的目标造成心灵伤害时，都可以触发\"噬心者\"，无论其是否因此死亡。",
+				"而且，当你通过\"噬心者\"获得灵能点时，你可以持有超出常规上限的额外灵能点，数量等于你智力调整值的一半（向下取整）；但完成短休或长休后，这些额外灵能点即告失去。",
+				{
+					"type": "inset",
+					"name": "限制。",
+					"entries": [
+						"即使与\"心灵吸血鬼\"配合使用，\"噬心者\"仍需消耗反应才能使用，也就是说它实际上每回合仍只能触发一次。\"噬心者\"的所有常规限制依然适用（例如目标智力属性值的下限）。"
+					],
+					"ENG_name": "Limitations."
+				}
+			],
+			"ENG_name": "Mind Vampire"
+		},
+		{
+			"name": "破碎空壳",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "吞噬",
+			"subclassSource": "ktp",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从第14级起，你的\"汲心水蛭\"威能恒定附带\"碎裂\"修饰词，且添加该修饰词不需消耗灵能点。",
+				"而且，你可以注入更多力量，使其心灵愈发脆弱。你可以在\"碎裂\"修饰词上额外消耗灵能点，进一步降低其下一次感知、智力或魅力豁免检定（最多额外2点，使总降幅达到3d4）。一旦此效应已作用于某生物，你在1小时过去之前无法再对该生物的\"碎裂\"修饰词额外消耗灵能点。"
+			],
+			"ENG_name": "Shattered Husks"
+		},
+		{
+			"name": "元素心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "元素",
+			"subclassSource": "ktp",
+			"level": 1,
+			"entries": [
+				"元素心灵是能将元素作为意志的延伸来显现和操控的灵能使。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素之力|灵能使|ktp|元素|ktp|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "原初形态|灵能使|ktp|元素|ktp|1"
+				}
+			],
+			"ENG_name": "Elemental Mind"
+		},
+		{
+			"name": "元素之力",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "元素",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此范型时，你与元素之力建立起深刻的内在联结，从而获得操控它的能力，获得灵能{@optfeature discipline of Psychokinesis|discipline of ktp|心灵念动}。"
+			],
+			"ENG_name": "Elemental Power"
+		},
+		{
+			"name": "原初形态",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "元素",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，在第1级，你可以以一个动作，或在造成火焰、寒冷或闪电伤害时（无需动作），显现该元素的形态，直到你的下回合结束或你显现新的原初形态为止。",
+				{
+					"type": "list",
+					"items": [
+						"{@b 寒冷：}你获得冰霜外壳，所受的任何非魔法钝击、穿刺或挥砍伤害减少你的熟练加值。",
+						"{@b 火焰：}你获得炽焰灵光。每回合一次，5尺内以近战攻击命中你的生物受到火焰伤害，数值等于你的熟练加值。",
+						"{@b 闪电：}你周身电光闪烁。此期间你的步行速度提高5尺。"
+					]
+				},
+				"你还可以消耗1点灵能点，获得对该元素的抗性，直到你的下回合开始。若你已专精某一元素，则对你专精的元素无需消耗灵能点即可如此做。",
+				{
+					"type": "inset",
+					"name": "形态外观",
+					"entries": [
+						"形态显现的外貌因人而异：也许你的头发化作火焰、散发着灼热，也许你的皮肤泛起冰霜的光泽\u2014\u2014但无论其形貌与后果为何，旁观者都能一目了然。"
+					],
+					"ENG_name": "Aspect Appearance"
+				}
+			],
+			"ENG_name": "Primordial Aspect"
+		},
+		{
+			"name": "活性威能",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "元素",
+			"subclassSource": "ktp",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你的力量成为心灵的活性延伸，将意志的延展织入现实，使你能以更精妙的方式操弄力量。当你使用心灵念动的威能或替代效应时，可以应用以下修饰词之一：",
+				{
+					"type": "list",
+					"items": [
+						"{@b 塑形威能}当你使用进行远程法术攻击的威能或法术时，你可以将其转为近战法术攻击（例如凝成武器之形）；而当你将要进行近战法术攻击时，也可以改为将其塑形后掷向15尺内的目标，进行一次远程法术攻击。",
+						"{@b 受控威能}当你使用指定区域为目标的法术或威能时，你可以选择数量等于该法术或威能所消耗灵能点数的生物，令其不受效应区域影响。力量将无害地绕过这些生物：它们自动通过对抗该效应的豁免检定，且即便豁免成功本应受到一半伤害，它们也不会受到任何伤害。",
+						"{@b 狂怒威能}当你使用法术或威能时，可以任其狂野失控。当你为该威能或法术掷伤害时，你可以重掷至多\"1+所耗灵能点数\"枚骰子，且必须使用新的结果。"
+					]
+				}
+			],
+			"ENG_name": "Living Power"
+		},
+		{
+			"name": "强化灵能",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "元素",
+			"subclassSource": "ktp",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，当你以灵能学科威能造成伤害时，你可以将你的智力调整值加到所造成的伤害上。"
+			],
+			"ENG_name": "Empowered Psionics"
+		},
+		{
+			"name": "完全显形",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "元素",
+			"subclassSource": "ktp",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，当你显现原初形态时，可以消耗1点灵能点将该元素完全显形，以下述效应取代原初形态。若你已专精该元素，则完全显形无需消耗灵能点。",
+				{
+					"type": "list",
+					"items": [
+						"{@b 寒冷：}直到你的下回合结束，你的速度变为0，但你获得对除火焰和力场外所有伤害类型的抗性。",
+						"{@b 火焰：}烈焰充盈你周围10尺半径的区域。当生物在一回合内首次进入该区域，或在其回合开始时位于其中，它受到火焰伤害，数值等于1d4+你的熟练加值。",
+						"{@b 闪电：}此期间你可以使用你的移动，传送至多等于你速度的距离。"
+					]
+				},
+				"若你未处于原初形态，可以以一个附赠动作消耗2点灵能点完全显形一份力量（若你专精该力量，则只需1点）。"
+			],
+			"ENG_name": "Full Manifestation"
+		},
+		{
+			"name": "元素形态",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "元素",
+			"subclassSource": "ktp",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从第14级起，你可以消耗5点灵能点施展形体变化以化身为元素形态。以此方式施展形体变化时没有言语或材料成分，但你只能化身为水元素、火元素或风元素。若你已专精某一元素，消耗降为3点灵能点，但只能化身与你专精相应的形态（寒冷对应水元素、火焰对应火元素、闪电对应风元素）。以此形态化身的水元素不具有\"冻结\"特性。",
+				"一旦以此方式施展了形体变化，你在完成一次短休或长休前不能再次如此做。"
+			],
+			"ENG_name": "Elemental Form"
+		},
+		{
+			"name": "塑形者心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "塑形者",
+			"subclassSource": "ktp",
+			"level": 1,
+			"entries": [
+				"塑形者是专精于将想象物化的灵能使，能把自己的想象投射到外部世界。塑形者绝非借用其他位面之力的召唤师，而是仅凭自己的心灵凭空显化万物，通过原始灵能与想象力的挥洒，将造物编织成形。",
+				"塑形者的心灵是一件几乎无可匹敌的工具，兼具无垠的创造力与不可阻挡的意志；但倘若那意志失守，世界最好提防塑形者的梦魇。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "造物心智|灵能使|ktp|塑形者|ktp|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "无垠想象|灵能使|ktp|塑形者|ktp|1"
+				}
+			],
+			"ENG_name": "Shaper's Mind"
+		},
+		{
+			"name": "无垠想象",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "塑形者",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，在第1级，当你召出你的星界构装体时，可以为其附加以下力量之一：",
+				{
+					"type": "list",
+					"items": [
+						"{@b 毁灭武器。}你想象出更致命的武装\u2014\u2014从巨剑到狰狞的獠牙\u2014\u2014使你的星界构装体愈发危险。星界构装体的伤害变为1d12",
+						"{@b 灵能导管。}你可以通过你的星界构装体使用灵能威能、法术与天赋，如同你处于其所在空间。",
+						"{@b 鲜活存在。}你的星界构装体完全实体化，并会在你的回合开始时自动使用\"凝实\"，无需指令。"
+					]
+				},
+				"在效应持续期间，你可以以一个附赠动作更改你赋予它的增益。"
+			],
+			"ENG_name": "Boundless Imagination"
+		},
+		{
+			"name": "造物心智",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "塑形者",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此范型时，你获得以意志将心中所想呈现于世的能力，获得灵能{@optfeature 投影学科|ktp|投影学科}。"
+			],
+			"ENG_name": "Creator's Mind"
+		},
+		{
+			"name": "星界稳态",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "塑形者",
+			"subclassSource": "ktp",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，当你以灵能创造星界构装体时，无需专注即可维持，它会持续存在直到被解散；但只要你已召出一个，便不能再召出另一个。"
+			],
+			"ENG_name": "Astral Metastability"
+		},
+		{
+			"name": "强化构装体",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "塑形者",
+			"subclassSource": "ktp",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，当你以星界构装体或\"投影物品\"创造的武器造成伤害时，你可以将你的智力调整值加到所造成的伤害上。"
+			],
+			"ENG_name": "Empowered Construct"
+		},
+		{
+			"name": "星界守卫",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "塑形者",
+			"subclassSource": "ktp",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，当30尺内存在你的星界构装体而你将要受到伤害时，你可以用反应将它召至你身边（与你共用空间），并消耗1点灵能点将其\"凝实\"，使它横亘在你与伤害来源之间。它将代替你承受该伤害。若攻击伤害超过其生命值（来自\"凝实\"），你受到剩余的伤害。"
+			],
+			"ENG_name": "Astral Guardian"
+		},
+		{
+			"name": "想象军团",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "塑形者",
+			"subclassSource": "ktp",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从第14级起，你可以任由心灵狂奔，让一支星界大军涌入现实。当你使用\"复制\"时，你可以额外创造一个星界构装体，它可以用同一个动作控制（指令仍然只影响你选择的一个星界构装体）。这个额外的构装体持续到你的下回合开始，且无法被\"维持\"。",
+				"一旦额外创造了一个复制品，你在完成一次短休或长休前不能再次如此做。"
+			],
+			"ENG_name": "Imaginary Army"
+		},
+		{
+			"name": "超然心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "超然",
+			"subclassSource": "ktp",
+			"level": 1,
+			"entries": [
+				"超然灵能使多半是通过一场心灵的顿悟找到灵能之路的人：他们领悟到自己的心灵在多元宇宙中的位置及其与万物的联系，在心眼之中，世界的钥匙与杠杆尽收眼底。",
+				"这多半是经由冥想与仪式有意或无意达成的，有时甚至是一门代代相传的法门，能够稳妥地超脱纯粹物质层面的纷扰，探索其中更具认知性的领域与力量。",
+				"超然灵能使由于已然理解更宏大的宇宙，往往在控制与原理上对自己的力量把握最佳，却也缺乏其他灵能使可能有的那份不顾一切的放纵。遗憾的是，尚未超然的心灵常常无法理解他们领悟的更高真理，可能会觉得超然灵能使有点......古怪。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "开悟者|灵能使|ktp|超然|ktp|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "心境|灵能使|ktp|超然|ktp|1"
+				}
+			],
+			"ENG_name": "Transcended Mind"
+		},
+		{
+			"name": "开悟者",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "超然",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此范型时，你获得以心灵之力强化躯体的能力，获得灵能{@optfeature 强化学科|ktp|强化学科}。"
+			],
+			"ENG_name": "Enlightened"
+		},
+		{
+			"name": "心境",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "超然",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，在第1级，你可以无视极端高温或严寒的影响，闭气时间加倍，并且在承受{@condition 力竭}之前，不进食或不睡眠的耐受时间也加倍。"
+			],
+			"ENG_name": "State of Mind"
+		},
+		{
+			"name": "力量平衡",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "超然",
+			"subclassSource": "ktp",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，当你使用灵能能力（威能或法术）恢复生命值或给予临时生命值时，你可以将等量的生命值存入一个储池。储池的数值上限为你的灵能使等级，超出上限的部分即告失去。下次你进行伤害掷骰时，可以消耗该储池，将等于储存数值的伤害加到受该伤害掷骰影响的一个目标上。若1分钟内未消耗，储存的伤害即告失去。"
+			],
+			"ENG_name": "Balance of Power"
+		},
+		{
+			"name": "完美强化",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "超然",
+			"subclassSource": "ktp",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，当你以灵能威能给予临时生命值时，你可以将你的熟练加值加到其中一个生物获得的临时生命值上。"
+			],
+			"ENG_name": "Perfected Enhancement"
+		},
+		{
+			"name": "心灵掌控",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "超然",
+			"subclassSource": "ktp",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，当你必须进行体质豁免检定以免失去对{@filter 灵能学科|optionalfeatures|feature type=PsiD}效应的专注时，你可以将你的智力调整值加到该豁免检定上。"
+			],
+			"ENG_name": "Mental Control"
+		},
+		{
+			"name": "心胜于物",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "超然",
+			"subclassSource": "ktp",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从第14级起，当你将要进行力量、敏捷或体质豁免检定时，你可以消耗2点灵能点，改为进行一次智力豁免检定。",
+				"此外，当你进行死亡豁免检定时，你可以在掷骰前消耗4点灵能点，将该掷骰视为20。"
+			],
+			"ENG_name": "Mind Over Matter"
+		},
+		{
+			"name": "解缚心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "解缚",
+			"subclassSource": "ktp",
+			"level": 1,
+			"entries": [
+				"解缚心灵的力量多半是与生俱来、连他们自己也难以理解或控制的先天之力，是其心境与情绪投映到周遭世界的倒影，而结果往往是毁灭性的。解缚灵能使的一生，常常是一段驯服不羁之力的旅程......又或者，是一段彻底拥抱毁灭之力的旅程。",
+				"他们先天力量的源泉因人而异：可能生于灵能种族，可能受远方扭曲之力的影响而生，可能因精类血统而异变，也可能是某种更险恶之物拂过物质世界时的先兆。这份力量有时会以简单的方式显现，但最常为人所知、令人畏惧的，还是他们怒火中烧之时。",
+				"他们的阵营往往取决于其对待力量的态度。强调控制与克制、不让情绪狂奔、不让力量失控的解缚灵能使多为守序，恪守严格的个人信条；反之，任由力量失控横行的解缚灵能使几乎总是混乱阵营，凭冲动行事......而且是极其强烈地凭冲动行事。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "挣脱之力|灵能使|ktp|解缚|ktp|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "澎湃之力|灵能使|ktp|解缚|ktp|1"
+				}
+			],
+			"ENG_name": "Unleashed Mind"
+		},
+		{
+			"name": "澎湃之力",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "解缚",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，在第1级，你获得以灵能施展{@spell 奇术}的能力。以此方式施展时，你获得以下额外选项：",
+				{
+					"type": "list",
+					"items": [
+						"你使10尺内至多10磅的松散物体漂浮起来，持续1分钟。",
+						"你可以强制5尺内的所有目标进行力量豁免检定，失败者被推离你5尺。"
+					]
+				}
+			],
+			"ENG_name": "Overwhelming Power"
+		},
+		{
+			"name": "挣脱之力",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "解缚",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此范型时，你获得解放心灵、与周遭世界进行实体互动的能力，获得灵能{@optfeature 心灵遥控学科|ktp|心灵遥控学科}。"
+			],
+			"ENG_name": "Unshackled Power"
+		},
+		{
+			"name": "狂乱威能",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "解缚",
+			"subclassSource": "ktp",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你获得一枚d4狂乱骰。每回合一次，你在进行伤害掷骰时，可以将这枚狂乱骰加到伤害掷骰中。若你在上一回合造成过伤害，你的狂乱骰升为d6，并且你此后每连续一回合造成伤害便再升一级，最高到d12；若你上一回合未造成伤害，或你陷入失能，狂乱骰便回落为d4。若你将d12狂乱骰连续维持超过1分钟，你获得一级{@condition 力竭}。"
+			],
+			"ENG_name": "Rampaging Power"
+		},
+		{
+			"name": "强化灵能",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "解缚",
+			"subclassSource": "ktp",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，当你以灵能学科威能造成伤害时，你可以将你的智力调整值加到所造成的伤害上。"
+			],
+			"ENG_name": "Empowered Psionics"
+		},
+		{
+			"name": "不可控心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "解缚",
+			"subclassSource": "ktp",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，你狂乱心灵的强大使他人控制它的尝试皆属徒劳。当你的狂乱骰为d8或更高时，你免疫{@condition 魅惑}和{@condition 恐慌}状态，以及任何会控制你心灵的效果。"
+			],
+			"ENG_name": "Uncontrollable Mind"
+		},
+		{
+			"name": "不可阻挡的狂乱",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "解缚",
+			"subclassSource": "ktp",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从第14级起，当一次攻击将你的生命值降至0时，你可以掷你的狂乱骰。若掷骰结果加上你的体质调整值高于你所受的溢出伤害，则你改为只剩1点生命值。你可以消耗2点灵能点额外掷一枚狂乱骰，将其加到结果中。"
+			],
+			"ENG_name": "Unstoppable Rampage"
+		},
+		{
+			"name": "漫游心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 1,
+			"entries": [
+				"漫游心灵在灵能使中属于较为神秘的一类：这些个体的根基与旁人所处的现实不尽相同......在他们眼中，现实更具可塑性、更为滑溜，偶尔还会一不留神就穿身而过。",
+				"他们获得力量的途径各不相同。有的生于以太位面，有的年幼时穿过某道传送门，有的不过是心智沿着常人无法理解的轴运转罢了。无论来源为何，他们都展现出一种真正独特的能力：以寻常事物的态度对待形而上的某些层面，并且往往把自己的力量当作手臂大腿一样再自然不过的东西。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "空间操纵|灵能使|ktp|漫游|ktp|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "游牧装备|灵能使|ktp|漫游|ktp|1"
+				}
+			],
+			"ENG_name": "Wandering Mind"
+		},
+		{
+			"name": "游牧装备",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"此外，在第1级，你获得军用武器和中等护甲的熟练项。"
+			],
+			"ENG_name": "Nomad's Gear"
+		},
+		{
+			"name": "空间操纵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在第1级选择此范型时，你的心灵对空间与维度的本质形成了更宏大的认知，使你能操控空间以及你与空间的关系，获得灵能{@optfeature 易位学科|ktp|易位学科}。",
+				"此外，你与跨维度力量的联结如此紧密，以至于你可以从维度间所见的空间中滑行而过，如同旁人侧身挤过窄缝一般，无需刻意的思考或费力。对于需要易位学科的易位威能、替代效应或天赋，你在计算其DC或攻击掷骰调整值时，可以用敏捷属性值代替智力属性值。"
+			],
+			"ENG_name": "Spatial Manipulation"
+		},
+		{
+			"name": "狡诈打击",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你获得{@optfeature 裂隙打击|ktp|裂隙打击}天赋。若你已拥有\"裂隙打击\"天赋，则可以获得一项其他自选灵能天赋。\"裂隙打击\"天赋不计入你已知的灵能天赋数，但升级时不可替换。"
+			],
+			"ENG_name": "Cunning Strikes"
+		},
+		{
+			"name": "求知心灵",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级起，你漫游的心灵不断适应新的处境。每当你完成一次长休，你可以选择两项你不具有熟练项的技能。直到下一次长休结束为止，你在进行这些技能的属性检定时，可以加上你熟练加值的一半（向下取整）。"
+			],
+			"ENG_name": "Curious Mind"
+		},
+		{
+			"name": "相位舞者",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级起，每回合一次，当你使用{@optfeature 易位学科|ktp|相位裂隙}威能时，你自动依\"残影\"修饰词获得一个幻影分身。此外，使用{@optfeature 易位学科|ktp|相位裂隙}后，你在本回合结束前的第一次攻击掷骰获得优势。"
+			],
+			"ENG_name": "Phase Dancer"
+		},
+		{
+			"name": "闪烁身影",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从第10级起，你未消耗的\"灵能精通\"点数不会立即失去，而是保留到你下回合开始为止，但只能用于施展{@spell 闪烁|ktp}。",
+				"此外，当你掷{@spell 闪烁|ktp}或{@spell 闪现术}的效果时，可以消耗1点灵能点重掷该结果。你可以选择使用两次结果中的一个。"
+			],
+			"ENG_name": "Flickering Presence"
+		},
+		{
+			"name": "位面行者",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从第14级起，你对空间穿行的理解扩展到前所未有的规模。你获得施展{@spell 位面转移}和{@spell 传送术}的能力。每天你可以选择其中一个法术施展一次，而无需消耗法术位或\"天生灵能\"的使用次数。一旦如此做，你必须完成一次长休才能再次使用；或者，你也可以用第7级或更高等级的\"天生灵能\"使用次数替代该等级所选的法术，在长休前再次施展这两个法术。若你已为第7级的\"天生灵能\"选择了其中一个法术，你可以为该槽位从灵能使法术列表中另选一个新的7环法术。以此方式施展位面转移仍需材料成分。"
+			],
+			"ENG_name": "Planeswalker"
+		},
+		{
+			"name": "蜿蜒小径",
+			"source": "ktp",
+			"page": 1,
+			"className": "灵能使",
+			"classSource": "ktp",
+			"subclassShortName": "漫游",
+			"subclassSource": "ktp",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"此外，在第14级，你的{@optfeature 易位学科|ktp|相位裂隙}不再必须沿直线行进，但仍只能穿过每个生物的空间一次。"
+			],
+			"ENG_name": "Winding Paths"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "适应猎手",
+			"source": "ktp",
+			"page": 21,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"吞噬"
+					]
+				}
+			],
+			"entries": [
+				"在对一个目标使用{@optfeature 汲心水蛭|ktp}后，你可以获得该生物所具有的一项技能、工具或语言熟练项，直到你的下一次长休结束。若你再次使用此能力，你将失去上一次获得的熟练项或语言，以获取新的那项。"
+			],
+			"ENG_name": "Adaptive Hunter"
+		},
+		{
+			"name": "活化投影",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 投影学科|ktp}",
+						"entrySummary": "投影"
+					},
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你学会投影一群以太造物。你可以以一个动作投影一群以太造物，也可以消耗5点灵能点施展{@spell 活化物件}。以此方式施展时，该法术创造的是全新的以太造物，而非活化既有物体。"
+			],
+			"ENG_name": "Animated Projections"
+		},
+		{
+			"name": "星界臂膀",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"以一个附赠动作，你可以消耗1点灵能点，创造充当额外肢体的灵能构造。这些臂膀持续10分钟，其外貌由你决定，且在你失能或死亡时提前消失。你可以用星界臂膀进行徒手打击。以这些臂膀进行的徒手打击在攻击和伤害掷骰上使用你的智力调整值代替力量调整值。若你以其中一臂命中，你造成等于{@damage 1d6}+你的智力调整值的力场伤害，而非徒手打击惯常的钝击伤害。",
+				"当你创造它们时，或在它们显现期间以一个附赠动作消耗1点灵能点，你可以以一个附赠动作用这些臂膀进行一次徒手打击。你可以对此使用\"灵能精通\"点数。"
+			],
+			"ENG_name": "Astral Arms"
+		},
+		{
+			"name": "星界构装体",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 投影学科|ktp}",
+						"entrySummary": "投影"
+					}
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}60尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}专注，至多 1 分钟",
+				"你从心灵中投影出一项以太造物，其形可为中型或更小的生物、武器或其他物体。该造物显然属于以太性质。当你创造它时，以及在此后的回合中以动作用心灵控制它时，你可以使它向任意方向移动至多30尺并进行攻击；前提是它不得移出该威能的射程。以其攻击时，进行一次近战法术攻击。命中时，目标受到{@damage 1d8}力场伤害。若星界构装体移出该法术的射程，它便消散于无形，法术随之结束。",
+				"星界构装体存在期间，你可以消耗至多等于单次使用上限的灵能点，向构装体下达影响和强化它的指令。指令无需动作，但你下达的指令总消耗不得超过你的灵能点上限，且每条指令每回合只能下达一次。",
+				"{@bold 擒抱} {@italic （1灵能点）}：只能在你的构装体处于\"凝实\"状态时使用。构装体5尺内、体型不大于它一级的目标生物必须进行力量豁免检定，失败则被构装体{@condition 束缚}。被束缚的生物可以在其每个回合结束时重复该豁免检定。若构装体重回以太状态，或其体型变得比目标小一级以上，该状态结束。",
+				"{@bold 增大} {@italic （1灵能点）}：你的构装体体型增大一级，其伤害骰数增加一枚。它在你下回合开始时恢复正常体型。它只能额外获得一枚伤害骰（例如至多{@dice 2d8}）。",
+				"{@bold 迁移} {@italic （1灵能点）}：构装体消失，并重现于你60尺内的任意位置。",
+				"{@bold 复制} {@italic （3灵能点）}：你使用\"迁移\"，但原本并不消失。直到你的回合结束为止，你拥有另一个构装体，并以同一个动作控制两者（指令只影响你选择的一个）。选择一个构装体在你下回合开始时消散，或使用\"维持\"。",
+				"{@bold 凝实} {@italic （1灵能点）}：你的构装体实体化，阻挡其空间直到你的下回合开始。只有在其空间未被占据时才能下达此指令。它的护甲等级为16，生命值等于你的智力调整值+你的灵能使等级。构装体生命值降至0时重回以太状态。",
+				"{@bold 打击} {@italic （2灵能点）}：构装体进行一次攻击（即使它已经攻击过）",
+				"{@bold 维持} {@italic （1+灵能点）}：在你的回合开始时，你可以将\"凝实\"\"增大\"或\"复制\"指令的效应再维持一轮。已被复制的效应可以单次使用同时维持到所有复制的构装体上，但每个效应每回合只能维持一次（例如，你永远无法维持一个以上的复制构装体）。每维持一个效应消耗1点灵能点。维持\"凝实\"会将构装体的生命值恢复至上限。"
+			],
+			"ENG_name": "Astral Construct"
+		},
+		{
+			"name": "星界裂隙\u2014\u2014融合天赋",
+			"source": "ktp",
+			"page": 25,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"灵能融合、易位、投影、星界换位"
+					]
+				}
+			],
+			"entries": [
+				"以一个附赠动作，你可以相位裂隙移动到你的星界构装体所在处；此移动视为一次相位裂隙，你可以如常对其应用修饰词。你的星界构装体则被移至此移动沿相位裂隙的出发点；在此移动过程中，你可以指令你的星界构装体以其动作攻击它经过的一个生物。"
+			],
+			"ENG_name": "Astral Rift - Fusion Talent"
+		},
+		{
+			"name": "星界换位",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 投影学科|ktp}",
+						"entrySummary": "投影"
+					}
+				}
+			],
+			"entries": [
+				"以一个附赠动作，你可以消耗1点灵能点，与你的星界构装体互换位置。"
+			],
+			"ENG_name": "Astral Swap"
+		},
+		{
+			"name": "共鸣雄辩",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"你的心灵感应洞察能让你因人而异地调整自己的影响力。当你进行魅力检定时，在掷骰后、得知结果前，你可以选择额外掷一枚d20并取较高值。你可以如此做的次数等于你的熟练加值，完成一次长休后恢复所有使用次数。"
+			],
+			"ENG_name": "Attuned Argument"
+		},
+		{
+			"name": "灵光视觉",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"以一个动作，你可以消耗1点灵能点，以灵能看见30尺内一个你选择的生物的灵光。以此看见生物灵光时，你可以判断是否有法术或魔法效应正在影响该生物，并得知其魔法学派（若有）。你也可以判断该生物是否受灵能影响。变形者或以魔法、非魔法手段变身或伪装的生物，必须对你的灵能豁免DC进行一次魅力（欺瞒）检定。检定失败时，你可以在其灵光中看出其原本形貌。"
+			],
+			"ENG_name": "Aura Sight"
+		},
+		{
+			"name": "唤醒心智",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你获得无需消耗法术位施展{@spell 启蒙术}的能力。一旦以此方式施展了该法术，你在完成一次长休前不能再次施展。"
+			],
+			"ENG_name": "Awaken Mind"
+		},
+		{
+			"name": "湮灭光束",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature Elemental Subclass|ktp|元素子职}",
+						"entrySummary": "元素学科"
+					}
+				}
+			],
+			"entries": [
+				"你获得消耗6点灵能点施展{@spell 湮灭光束|KibblesTasty:CC}的能力。若你拥有心灵念动的专精，你只能选择与专精相关的元素伤害类型，但光束的伤害无视对该伤害类型的抗性。"
+			],
+			"ENG_name": "Beam of Annihilation"
+		},
+		{
+			"name": "躯体控制",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature 强化学科|ktp}",
+						"entrySummary": "强化"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"变身术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你获得随意使用{@spell 变身术}的能力，无需消耗灵能点。此外，你可以以正常灵能点消耗一半的代价对自己施展{@spell 变巨/缩小术}。"
+			],
+			"ENG_name": "Body Control"
+		},
+		{
+			"name": "吞噬力量",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 吞噬学科|ktp}",
+						"entrySummary": "吞噬"
+					}
+				}
+			],
+			"entries": [
+				"当你持有来自\"汲心水蛭\"的灵能充能时，你在运动检定中可以用智力调整值代替力量调整值。此外，被你擒抱的目标对你的\"汲心水蛭\"威能的豁免检定具有劣势。"
+			],
+			"ENG_name": "Consumed Strength"
+		},
+		{
+			"name": "吞噬联结",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 吞噬学科|ktp}",
+						"entrySummary": "吞噬"
+					}
+				}
+			],
+			"entries": [
+				"只要处于120尺内，你就可以以\"汲心水蛭\"指定一个被你{@condition 魅惑}或{@condition 恐慌}的生物。以此方式指定目标时你无需看见目标，且目标对\"汲心水蛭\"的豁免检定具有劣势。"
+			],
+			"ENG_name": "Consuming Link"
+		},
+		{
+			"name": "吞噬学科",
+			"source": "ktp",
+			"page": 8,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"致伤术"
+								],
+								"2": [
+									"心灵吸取|ktp"
+								],
+								"3": [
+									"吸血鬼之触"
+								],
+								"4": [
+									"枯萎术"
+								],
+								"5": [
+									"吞噬黑暗|kibblestasty:cc"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "吞噬学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Consumption Discipline"
+				}
+			],
+			"entries": [
+				"你的心灵力量属于掠食者，而你的猎物是他人的心灵。他们的思绪、他们的情感、他们维系生命的灵能，皆是你的食粮。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 适应猎手|ktp}",
+										"{@optfeature 汲心水蛭|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得吞噬灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 致伤术}"
+												],
+												[
+													"2",
+													"{@spell 心灵吸取|ktp}"
+												],
+												[
+													"3",
+													"{@spell 吸血鬼之触}"
+												],
+												[
+													"4",
+													"{@spell 枯萎术}"
+												],
+												[
+													"5",
+													"{@spell 吞噬黑暗|KibblesTasty:CC}"
+												]
+											]
+										},
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 吞噬力量|ktp}",
+										"{@optfeature 吞噬联结|ktp}",
+										"{@optfeature 技艺窃贼|ktp}",
+										"{@optfeature 不死行使者|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Consumption Discipline"
+		},
+		{
+			"name": "受控威能",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"你获得压制灵能辉光与姿势成分的能力。你可以消耗2点灵能点，使用一个不具可见迹象、不含姿势成分的威能。每次使用此天赋，其消耗都会翻倍，直到你完成一次短休或长休。"
+			],
+			"ENG_name": "Controlled Power"
+		},
+		{
+			"name": "死寂区",
+			"source": "ktp",
+			"page": 20,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature 无效化学科|ktp}",
+						"entrySummary": "无效化"
+					}
+				}
+			],
+			"entries": [
+				"你获得消耗8点灵能点施展{@spell 反魔法场}的能力。一旦以此方式施展了该法术，你在完成一次长休前不能再次施展。"
+			],
+			"ENG_name": "Deadspot"
+		},
+		{
+			"name": "拒斥",
+			"source": "ktp",
+			"page": 20,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 无效化学科|ktp}",
+						"entrySummary": "无效化"
+					}
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}30尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}瞬发",
+				"你向射程内一个可见生物释放一股原始的灵能无效化爆发。该生物必须进行魅力豁免检定，失败者因其存在受到扰乱而受到1d4力场伤害。",
+				"若目标是异怪、天界生物、构装体、元素、精类、邪魔、不死生物，或具有施法或使用灵能威能能力的生物，它额外受到{@damage 1d4}力场伤害，并陷入晕头转向；直到其下回合结束为止，它要掷一枚d4，并从其所有攻击掷骰和属性检定，以及维持专注的体质豁免检定中减去所掷数值。生物可以选择豁免失败。",
+				"你可以消耗至多等于单次使用上限的灵能点，为\"拒斥\"添加以下修饰词以改变其功能（可添加多个修饰词）。这些点数必须在为该威能指定目标时消耗。",
+				"{@bold 灵光化} {@italic （3灵能点）}：该威能不再指定生物为目标，而是化作你周围20尺半径的效应，直到你的下回合开始；任何由你选择、进入该效应区域或在其中开始回合的生物，必须对该威能进行豁免检定。",
+				"{@bold 存在性} {@italic （1+灵能点）}：豁免失败时，你对目标生物造成额外的{@damage 1d4}初始力场伤害，以及额外的加成力场伤害（如适用）。",
+				"{@bold 坚定} {@italic （2灵能点）}：目标生物对抗此能力的豁免检定具有劣势。",
+				"{@bold 滞留} {@italic （1+灵能点）}：你可以将\"扰断之触\"的效应施加给一个受影响的生物。",
+				"{@bold 超自然} {@italic （1+灵能点）}：该生物身上或施加于其的一项超自然效应结束；若该效应是法术或灵能威能，则只有当此修饰词消耗的灵能点数等于或超过该效应的法术环阶或所耗灵能点数时才会结束。",
+				"若该性质是生物的固有性质（属于目标生物自身，或正作用于该威能的目标），则只有当灵能点数超过目标生物的挑战等级（或职业等级）时才会结束，且该性质会在该生物下回合结束时恢复。该超自然效应不能是目标的存在本身，除非其生命值低于10点且原本符合条件。"
+			],
+			"ENG_name": "Denial"
+		},
+		{
+			"name": "扰断之触",
+			"source": "ktp",
+			"page": 20,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 无效化学科|ktp}",
+						"entrySummary": "无效化"
+					}
+				}
+			],
+			"entries": [
+				"获得此特性时，你能制造干涉灵光，以主张现实之真的扰断之力缠裹己身。你可以通过触碰来终止轻微的魔法或灵能效应（如戏法或0点灵能威能的结果），并对来自你所触碰之物的幻象或魔法伤害具有抗性（如适用，对抗它们的豁免检定获得优势）。",
+				"若你正擒抱或以其他方式触碰一个施法或灵能生物，在你的回合开始时，你可以消耗1点或更多灵能来干扰其能力，直到你的下回合开始。若要施放法术或使用灵能威能，该生物必须以其施法或灵能属性值进行一次对抗你灵能DC的豁免检定并成功，除非它施展的法术环阶更高，或使用的威能所耗灵能点数高于你在此特性上消耗的灵能点数。"
+			],
+			"ENG_name": "Disruptive Touch"
+		},
+		{
+			"name": "分裂心智",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你习得{@spell 分裂自身|KibblesTasty:CC}法术，可以消耗5点灵能点施展它。当你获得\"天生灵能\"特性后，你可以消耗一次\"天生灵能\"的使用次数，以所耗使用次数对应的环阶施展{@spell 分裂自身|KibblesTasty:CC}。例如，若你在第13级为\"天生灵能\"选择了{@spell 传送术}，你可以消耗一次{@spell 传送术}的施展，改为以7环施展{@spell 分裂自身|KibblesTasty:CC}，且在完成一次长休前，不能再以7环以此方式施展{@spell 传送术}或{@spell 分裂自身|KibblesTasty:CC}。",
+				"当你消耗灵能点或\"天生灵能\"使用次数施展该法术时，不需要其材料成分。"
+			],
+			"ENG_name": "Divided Mind"
+		},
+		{
+			"name": "梦境行者",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你获得施展{@spell 托梦术}的能力。你可以不消耗法术位施展该法术，但施展一次后，在完成一次长休前不能再次施展。"
+			],
+			"ENG_name": "Dreamwalker"
+		},
+		{
+			"name": "元素护佑",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵念动学科|ktp}",
+						"entrySummary": "心灵念动"
+					}
+				}
+			],
+			"entries": [
+				"以一个动作，你可以让火焰、冰霜或闪电的漩流护盾环绕自身。你获得临时生命值，数值等于你的灵能使等级+你的智力调整值。在这些临时生命值存续期间，击中你的生物受到{@damage 1d4}所选护盾类型的伤害。",
+				"一旦使用了此天赋，你在完成一次短休或长休前不能再次使用。"
+			],
+			"ENG_name": "Elemental Aegis"
+		},
+		{
+			"name": "元素爆发",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵念动学科|ktp}",
+						"entrySummary": "心灵念动"
+					}
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}30尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}1回合",
+				"你能以心灵引发元素之力的爆发，轰击射程内一个可见目标。对该目标进行一次远程法术攻击。命中时，目标受到{@damage 1d8}寒冷、火焰、力场或闪电伤害。",
+				"每造成一枚寒冷伤害骰，该生物的移动速度便降低5尺，直到其下回合结束；原攻击每造成一枚火焰伤害骰，该生物在其下回合开始时受到{@damage 1d4}火焰伤害；每造成一枚闪电伤害骰，一道电弧便击中20尺内你选择的另一个生物，造成{@damage 1d4}闪电伤害（多道电弧可以击中同一生物）。这些次要效应的伤害不加任何加值（如\"强化灵能\"）。",
+				"你可以消耗至多等于单次使用上限的灵能点，添加以下修饰词（可添加多个）。这些点数必须在为该威能指定目标时消耗。",
+				"{@bold 增幅} {@italic （1+灵能点）}：每额外消耗1点，命中时目标额外受到{@damage 1d8}寒冷、火焰、力场或闪电伤害。",
+				"{@bold 残留} {@italic （1灵能点）}：你的元素爆发在命中处留下一片5尺半径的破坏之域，直到你的下回合开始。首次进入该区域或在其中结束回合的生物，必须进行体质豁免检定，失败则如被爆发命中一般承受其次要效应（迟缓、灼烧、电弧）。",
+				"{@bold 大范围} {@italic （1-3灵能点）}：你释放一场大规模爆发；此时不再进行攻击掷骰，而是15尺锥形内的所有生物必须进行敏捷豁免检定，失败者如被元素爆发命中一般承受其效应。每消耗1点（至多3点），锥形范围翻倍（2点30尺，3点60尺）。",
+				"{@bold 超载} {@italic （0灵能点）}：你受到{@damage 1d4}力场伤害，且你的元素爆发不将熟练加值计入攻击掷骰或法术豁免DC，但其造成的伤害提高两倍你的熟练加值。"
+			],
+			"ENG_name": "Elemental Blast"
+		},
+		{
+			"name": "元素情绪",
+			"source": "ktp",
+			"page": 18,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵念动学科|ktp}",
+						"entrySummary": "心灵念动"
+					}
+				}
+			],
+			"entries": [
+				"你所驾驭的力量会影响你的心境，并依你运用它们的方式回馈于你。当你造成元素伤害时，你获得相应的精神特质，直到你的下回合开始。",
+				{
+					"type": "table",
+					"caption": "元素情绪效应",
+					"colLabels": [
+						"元素",
+						"效应"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"{@b 寒冷}",
+							"你可以将{@damage 1d4}加到感知豁免检定上"
+						],
+						[
+							"{@b 火焰}",
+							"你可以将{@damage 1d4}加到体质豁免检定上"
+						],
+						[
+							"{@b 闪电}",
+							"你可以将{@damage 1d4}加到敏捷豁免检定上"
+						]
+					]
+				},
+				"若你已专精某一元素，你可以改为将{@dice 1d6}加到相应的豁免检定上。"
+			],
+			"ENG_name": "Elemental Emotions"
+		},
+		{
+			"name": "元素贯穿",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature Elemental Discipline|ktp|元素学科}",
+						"entrySummary": "元素"
+					}
+				}
+			],
+			"entries": [
+				"当你使用造成寒冷、火焰或闪电伤害的灵能威能或法术时，你可以消耗1点灵能点，使该威能无视对该元素伤害类型的抗性。",
+				"若你拥有心灵念动的专精，而目标对所选伤害类型免疫，则此能力改为将该免疫降为抗性。",
+				"你可以将\"灵能精通\"给予的灵能点用于此能力。"
+			],
+			"ENG_name": "Elemental Penetration"
+		},
+		{
+			"name": "元素相位\u2014\u2014融合天赋",
+			"source": "ktp",
+			"page": 25,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"灵能融合、心灵念动、易位"
+					]
+				}
+			],
+			"entries": [
+				"当你穿行于位面之间时，你可以汲取元素位面之力，将其带入物质界。你可以在相位裂隙上使用心灵念动的修饰词（\"大范围\"除外）。",
+				"此外，每当你以心灵念动能力对一片区域造成伤害而该区域本会波及你自身时，你可以将自己相位移出现实，不受该效应的伤害。"
+			],
+			"ENG_name": "Elemental Phasing - Fusion Talent"
+		},
+		{
+			"name": "元素护盾",
+			"source": "ktp",
+			"page": 18,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵念动学科|ktp}",
+						"entrySummary": "心灵念动"
+					}
+				}
+			],
+			"entries": [
+				"你获得无需消耗灵能点施展{@spell 火焰护盾}的能力。一旦以此方式施展了该法术，你在完成一次长休前不能再次施展，除非消耗4点灵能点再次施展。"
+			],
+			"ENG_name": "Elemental Shield"
+		},
+		{
+			"name": "共情",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"你可以以灵能将自己与其他生物连接。当一个你能看见的生物在120尺内受到伤害时，你可以用反应给予它对该伤害的抗性，但你受到等量于它所受伤害（计算抗性后）的心灵伤害。你所受的伤害无法以任何方式减免或阻止。",
+				"若该伤害还会对目标造成任何其他负面状态效应，你可以选择由你代替目标承受该效应。",
+				"若有任何形式的心灵联结正作用于该受伤害生物、且允许远程心灵交流，则此能力的距离无限制，你也无需看见它。"
+			],
+			"ENG_name": "Empathy"
+		},
+		{
+			"name": "强化打击",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵念动学科|ktp|心灵念动}或{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵念动或心灵遥控"
+					}
+				}
+			],
+			"entries": [
+				"每回合一次，作为以攻击动作进行武器攻击的一部分，你可以以灵能强化你手中的一件近战武器。当你以武器命中一个生物时，你可以将\"元素爆发\"或\"念力冲击\"的修饰词（只能选择你已知的威能）应用到该攻击上（可以对此使用\"灵能精通\"）。这不造成该威能的基础伤害，但任何附加伤害都会引发该威能的额外效应。",
+				"当应用的修饰词会使其以效应区域为目标时，只有目标受到武器伤害，但半径内的其他生物会如常规使用该威能一般成为该攻击的目标。"
+			],
+			"ENG_name": "Empowered Strike"
+		},
+		{
+			"name": "能量操弄",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵念动学科|ktp}",
+						"entrySummary": "心灵念动"
+					}
+				}
+			],
+			"entries": [
+				"获得此特性时，你可以随意以细微的方式操弄能量。以一个动作，你可以发出照亮30尺明亮光照与30尺微光的光亮；使你触碰之物如被火柴点到般燃烧；激起小型电弧；或冻结、融化至多5尺立方的水。你创造的任何持续效应均持续1分钟。你同时可以维持的效应数量至多等于你的智力调整值，超出的新效应会使最旧的持续效应终止。"
+			],
+			"ENG_name": "Energy Manipulation"
+		},
+		{
+			"name": "强化再生",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 强化学科|ktp}",
+						"entrySummary": "强化"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"疗伤术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗1点灵能点施展{@spell 疗伤术}。你可以额外消耗灵能点以更高环阶施展它。你可以施展它的次数等于你的智力调整值，之后在完成一次长休前不能再次施展。当你对一个生物施展{@spell 疗伤术}时，你可以以一个附赠动作对该目标生物使用\"强化涌动\"。"
+			],
+			"ENG_name": "Enhanced Regrowth"
+		},
+		{
+			"name": "强化学科",
+			"source": "ktp",
+			"page": 7,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"英雄气概",
+									"大步奔行",
+									"解锁潜能|ktp"
+								],
+								"2": [
+									"变身术",
+									"黑暗视觉",
+									"变巨/缩小术",
+									"次等复原术"
+								],
+								"3": [
+									"假寐术|xge",
+									"加速术",
+									"生命转换|xge",
+									"水下呼吸"
+								],
+								"4": [
+									"行动自如",
+									"石肤术"
+								],
+								"5": [
+									"高等复原术",
+									"灌注才能|ktp"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "强化学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Enhancement Discipline"
+				}
+			],
+			"entries": [
+				"强化是以灵能干涉生物天性与能力的能力。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 强化技艺|ktp}",
+										"{@optfeature 强化涌动|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得强化灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 英雄气概}, {@spell 大步奔行}, {@spell 解锁潜能|ktp}"
+												],
+												[
+													"2",
+													"{@spell 变身术}, {@spell 黑暗视觉}, {@spell 变巨/缩小术}, {@spell 次等复原术}"
+												],
+												[
+													"3",
+													"{@spell 假寐术|XGE}, {@spell 加速术}, {@spell 生命转换|XGE}, {@spell 水下呼吸}"
+												],
+												[
+													"4",
+													"{@spell 行动自如}, {@spell 石肤术}"
+												],
+												[
+													"5",
+													"{@spell 高等复原术}, {@spell 灌注才能|ktp}"
+												]
+											]
+										},
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 强化再生|ktp}",
+										"{@optfeature 蜕变|ktp}",
+										"{@optfeature 躯体涌动|ktp}",
+										"{@optfeature 奔涌之力|ktp}",
+										"{@optfeature 超然生命|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Enhancement Discipline"
+		},
+		{
+			"name": "强化技艺",
+			"source": "ktp",
+			"page": 21,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"强化"
+					]
+				}
+			],
+			"entries": [
+				"你可以聚焦灵能来增强自身能力。每当你进行使用力量或敏捷的技能检定时，你可以将1d4加到结果上。"
+			],
+			"ENG_name": "Enhancing Skill"
+		},
+		{
+			"name": "强化涌动",
+			"source": "ktp",
+			"page": 21,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"强化"
+					]
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}60尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}1回合",
+				"你以灵能强化一个可见目标生物的躯体。该目标获得1d6临时生命值，且其下次造成伤害时，该次伤害掷骰的一次应用额外造成1d6伤害。此法术的所有剩余效应在你的下回合开始时结束。",
+				"你可以消耗至多等于单次使用上限的灵能点，为\"强化涌动\"添加以下修饰词（可添加多个）。这些点数必须在为该威能指定目标时消耗。",
+				"{@bold 筑防} {@italic （1+灵能点）}：每消耗1点，目标额外获得+1d6临时生命值。",
+				"{@bold 坚韧} {@italic （3灵能点）}：目标获得对所有伤害的抗性，直到你的下回合开始。",
+				"{@bold 凶蛮} {@italic （1+灵能点）}：每消耗1点灵能点，目标的下次武器攻击额外造成+1d6伤害。",
+				"{@bold 迅捷} {@italic （2灵能点）}：目标获得一个额外的动作。该动作只能用于疾走、撤离、躲藏或使用物品动作。"
+			],
+			"ENG_name": "Enhancing Surge"
+		},
+		{
+			"name": "闪烁步",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 易位学科|ktp}",
+						"entrySummary": "易位"
+					}
+				}
+			],
+			"entries": [
+				"在你的回合，你可以用传送取代移动，向任意方向传送5尺至一个可见空间。你可以穿过生物，但不能穿过厚度超过4寸的物体、建筑或地形。此距离在第5级提高到10尺，第11级提高到15尺，第17级变为等于你的速度。使用时这将取代你本回合的所有移动。"
+			],
+			"ENG_name": "Flicker Step"
+		},
+		{
+			"name": "闪烁脱身",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 易位学科|ktp}",
+						"entrySummary": "易位"
+					}
+				}
+			],
+			"entries": [
+				"每当你为{@spell 闪烁|ktp}掷一枚d4时，你可以在攻击结算后传送5尺。"
+			],
+			"ENG_name": "Flickering Escape"
+		},
+		{
+			"name": "窥见之未来",
+			"source": "ktp",
+			"page": 19,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 预知学科|ktp}",
+						"entrySummary": "预知"
+					}
+				}
+			],
+			"entries": [
+				"当你以自己为受益者使用\"洞视\"时，可以以一个附赠动作使用它。以此方式以附赠动作使用\"洞视\"时，它不会为攻击提供额外伤害，也不会减免被击中时所受的伤害。"
+			],
+			"ENG_name": "Glimpsed Future"
+		},
+		{
+			"name": "钢铁圣殿骑士",
+			"source": "ktp",
+			"page": 20,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 无效化学科|ktp}",
+						"entrySummary": "无效化"
+					}
+				}
+			],
+			"entries": [
+				"你获得中等护甲和盾牌的熟练项。若你已具有中等护甲熟练项，则改为获得重型护甲熟练项。你可以用持武器的手来表演灵能威能的姿势成分。",
+				"此外，当你以近战武器攻击或射程为触碰的法术攻击命中一个生物时，你可以以一个附赠动作对该生物使用你的\"拒斥\"威能。"
+			],
+			"ENG_name": "Iron Templar"
+		},
+		{
+			"name": "动能精通\u2014\u2014融合天赋",
+			"source": "ktp",
+			"page": 25,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"灵能融合、心灵念动、心灵遥控"
+					]
+				}
+			],
+			"entries": [
+				"你操弄能量的能力融为一体，可以在力场与能量的操弄之间自如切换。你可以将\"念力冲击\"的修饰词应用于动能爆发，也可以将\"元素爆发\"的修饰词应用于\"念力冲击\"（但此时无法从任何专精中获得收益）。"
+			],
+			"ENG_name": "Kinetic Mastery - Fusion Talent"
+		},
+		{
+			"name": "动能猛击",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					}
+				}
+			],
+			"entries": [
+				"当你使用\"念力冲击\"威能时，可以将它化作一道动能爆发释放。你可以将该威能用作一次远程灵能攻击（命中时施加伤害与效应）。以此方式使用时，你只能选择\"锤击\"修饰词。"
+			],
+			"ENG_name": "Kinetic Slam"
+		},
+		{
+			"name": "生命链接",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 投影学科|ktp}",
+						"entrySummary": "投影"
+					}
+				}
+			],
+			"entries": [
+				"当你使用\"念力冲击\"威能时，可以将它化作一道动能爆发释放。你可以将该威能用作一次远程灵能攻击（命中时施加伤害与效应）。以此方式使用时，你只能选择\"锤击\"修饰词。"
+			],
+			"ENG_name": "Life Link"
+		},
+		{
+			"name": "生命行使者",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 强化学科|ktp|强化}或{@optfeature 吞噬学科|ktp}",
+						"entrySummary": "强化或吞噬"
+					}
+				}
+			],
+			"entries": [
+				"你习得法术{@spell 注入生命|ktp}。你可以消耗\"灵能精通\"点数来施展该法术。"
+			],
+			"ENG_name": "Life Wielder"
+		},
+		{
+			"name": "滞留裂隙",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 易位学科|ktp}",
+						"entrySummary": "易位"
+					}
+				}
+			],
+			"entries": [
+				"当你使用相位裂隙时，可以选择在身后留下一条5尺宽的现实裂痕，在你的起点与终点之间连成一线，直到你的下回合开始。任何首次进入该区域或在其中结束回合的生物，必须如同被相位裂隙穿过一般对其效应进行豁免检定。若一个生物处于多条滞留裂隙的区域内，它只会受到影响一次。"
+			],
+			"ENG_name": "Lingering Rifts"
+		},
+		{
+			"name": "魔法克星",
+			"source": "ktp",
+			"page": 20,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 无效化学科|ktp}",
+						"entrySummary": "无效化"
+					}
+				}
+			],
+			"entries": [
+				"你获得对法术或魔法效应所造成伤害的抗性。所有魔法治疗效果（包括治疗药水）对你的效果减半。"
+			],
+			"ENG_name": "Magical Anathema"
+		},
+		{
+			"name": "魔法抗性",
+			"source": "ktp",
+			"page": 20,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature 无效化学科|ktp}",
+						"entrySummary": "无效化"
+					}
+				}
+			],
+			"entries": [
+				"你对法术及其他魔法效应的豁免检定具有优势。"
+			],
+			"ENG_name": "Magical Resistance"
+		},
+		{
+			"name": "显化情绪",
+			"source": "ktp",
+			"page": 18,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵念动学科|ktp}",
+						"entrySummary": "心灵念动"
+					},
+					"feature": [
+						"元素情绪"
+					]
+				}
+			],
+			"entries": [
+				"你可以将情绪显化为具有实体的元素之力。当你处于元素情绪中时，可以以一个附赠动作消耗2点灵能点，将该情绪显化于世；其形为一只魔蝠（寒冷对应冰魔蝠、火焰对应熔岩魔蝠、闪电对应尘魔蝠）。",
+				"作为被赋予形体的情绪，它依你的指示在你的先攻之后立即行动。若未被消灭，它至多存在1分钟，之后自然消散。你一次只能显化一种情绪，且若它被消灭，你将从反噬中受到2d6心灵伤害。这一显化并非具有自我意识的生物，而只是你情绪的显化。",
+				{
+					"type": "inset",
+					"name": "情绪的行动",
+					"entries": [
+						"显化情绪的行动没有规则上的限制，但建议你在决定其行动时，考量它所自的情绪。熔岩魔蝠会鲁莽而具攻击性地行动，尘魔蝠会躁动而容易分心，冰魔蝠则冷酷而精于算计。"
+					],
+					"ENG_name": "Emotional Actions"
+				}
+			],
+			"ENG_name": "Manifested Emotions"
+		},
+		{
+			"name": "成真造物",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 投影学科|ktp}",
+						"entrySummary": "投影"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"鬼斧神工",
+							"石墙术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你获得将部分投影凝固为真实物体的能力，你可以消耗等于法术环阶的灵能点来施展{@spell 鬼斧神工}和{@spell 石墙术}。"
+			],
+			"ENG_name": "Matter Made Real"
+		},
+		{
+			"name": "心智影像",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"你获得将{@optfeature 心灵感应学科|ktp|心灵感应}用于把影像完美清晰地投射进生物心中、并使之覆盖其现实的能力。{@spell 无声幻影}、{@spell 高等幻影}、{@spell 幻景}和{@spell 伪装术}将加入你的心灵感应学科替代效应列表，其耗费等于各自法术环阶的灵能点。"
+			],
+			"ENG_name": "Mental Image"
+		},
+		{
+			"name": "心灵感化",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"你专精于轻柔的触碰\u2014\u2014拾取零散思绪、安抚忧虑，而不公然侵入心灵。你获得游说技能的专精，但对免疫精神影响或{@condition 魅惑|魅惑}的生物（如处于{@spell 心灵屏障}效应下的生物）退为普通熟练。"
+			],
+			"ENG_name": "Mental Influence"
+		},
+		{
+			"name": "心智之力",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					},
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					}
+				}
+			],
+			"entries": [
+				"心智之力（先决条件：5级灵能使）你学会聚焦你的精神握力。当你进行运动检定时，你可以用智力调整值代替其他属性调整值。",
+				"此外，你可以以心灵尝试擒抱或推撞30尺内的一个生物。以此方式擒抱生物时，你无法移动它。维持超出你天生触及范围的擒抱需要专注，如同专注一个法术一般，专注一旦失去，擒抱即告结束。"
+			],
+			"ENG_name": "Mental Might"
+		},
+		{
+			"name": "蜕变",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 强化学科|ktp}",
+						"entrySummary": "强化"
+					}
+				}
+			],
+			"entries": [
+				"{@spell 变异|ktp}和{@spell 变形术}将加入你的强化替代效应列表。以此方式施展{@spell 变形术}时，你只能以自己为目标。"
+			],
+			"ENG_name": "Metamorphosis"
+		},
+		{
+			"name": "噬心者",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你获得消耗2点灵能点施展{@spell 心灵吸取|ktp}的能力。此外，每当10尺内一个智力值不低于6的生物死亡时，你可以消耗你的反应汲取其灵能，恢复{@damage 1d4}生命值和1点已消耗的灵能点。"
+			],
+			"ENG_name": "Mind Devourer"
+		},
+		{
+			"name": "汲心水蛭",
+			"source": "ktp",
+			"page": 0,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"吞噬"
+					]
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}30尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}瞬发",
+				"你攻击射程内一个可见目标的心灵，撕裂并吞噬其灵能。该目标必须通过魅力豁免检定，否则受到{@damage 1d6}心灵伤害。若目标处于{@condition 恐慌}、{@condition 魅惑}、{@condition 震慑}、{@condition 束缚}、{@condition 受擒}或{@condition 麻痹}状态，该心灵伤害改为{@damage 1d12}。豁免失败时，你获得一缕吞噬之力的灵能充能，直到你的下回合结束。你可以在造成伤害时消耗此充能，以造成等于你智力调整值的额外伤害；或在你的回合结束时吞噬此充能，以获得等于你智力调整值的临时生命值。你一次只能持用一份充能。",
+				"你可以以此威能指定一具新近死亡的生物尸体，前提是该目标死于过去1分钟内，且此前未被此威能汲取过。",
+				"{@bold 吞噬} {@italic （2灵能点）}：汲心水蛭的范围改为以你为中心的5尺半径。",
+				"{@bold 滋养} {@italic （1灵能点）}：豁免失败时，你额外获得一缕灵能充能。",
+				"{@bold 撕裂} {@italic （1+灵能点）}：豁免失败时，每消耗1点灵能点，目标额外受到一枚伤害骰的伤害（视其是否处于所列状态的影响，分别为{@damage 1d6}或{@damage 1d12}）。",
+				"{@bold 碎裂} {@italic （1灵能点）}：你将目标的心智与灵魂搅得粉碎，使其在你的下回合结束前的下一次豁免检定降低{@dice 1d4}。",
+				"{@bold 震慑} {@italic （3灵能点）}：豁免失败时，目标陷入{@condition 震慑}，直到你的下回合开始。若该威能影响多个目标，请为其选择一个目标。",
+				"{@bold 窃取} {@italic （1灵能点）}：豁免失败时，你可以从目标心中抽取一个它能施展的5环或更低法术（来自施法或\"灵能\"特性）。你必须知晓它会施展该法术；目标保留施展该法术的能力，而你获得通过消耗等于该法术环阶的灵能点、以你的\"灵能\"特性施展该法术的能力（受你的灵能点上限限制；你不能使用灵能精通来施展该法术）。",
+				"你一次只能以此方式习得一个法术，并保留其施展能力1分钟或直到施展为止。若该法术是恢复生命值的法术，你须将自己的生命值降低该法术所治疗的数量。"
+			],
+			"foundryImg": "icons/magic/control/fear-fright-monster-grin-purple-blue.webp",
+			"ENG_name": "Mind Leech"
+		},
+		{
+			"name": "驭心者",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"以一个动作，你可以触碰一个自愿生物，在接下来1小时内透过它的眼睛视物、以它的耳朵听声，并获得该生物任何特殊感官的收益。",
+				"在此期间，你自身的感官处于聋盲状态。你可以随时结束此效应。此效应活跃期间，该生物在智力、感知和魅力豁免检定上具有优势。"
+			],
+			"ENG_name": "Mind Rider"
+		},
+		{
+			"name": "无效化学科",
+			"source": "ktp",
+			"page": 9,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"防护善恶"
+								],
+								"2": [
+									"无效化效应|ktp"
+								],
+								"3": [
+									"法术反制",
+									"解除魔法",
+									"移除诅咒"
+								],
+								"4": [
+									"放逐术"
+								],
+								"5": [
+									"驱逐善恶"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "无效化学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Nullification Discipline"
+				}
+			],
+			"entries": [
+				"无效化是干涉世间超自然效应、将现实还原为其本来状态的能力。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 扰断之触|ktp}",
+										"{@optfeature 拒斥|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得无效化灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 防护善恶}"
+												],
+												[
+													"2",
+													"{@spell 无效化效应|ktp}"
+												],
+												[
+													"3",
+													"{@spell 法术反制}, {@spell 解除魔法}, {@spell 移除诅咒}"
+												],
+												[
+													"4",
+													"{@spell 放逐术}"
+												],
+												[
+													"5",
+													"{@spell 驱逐善恶}"
+												]
+											]
+										},
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 死寂区|ktp}",
+										"{@optfeature 钢铁圣殿骑士|ktp}",
+										"{@optfeature 魔法克星|ktp}",
+										"{@optfeature 魔法抗性|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Nullification Discipline"
+		},
+		{
+			"name": "先发制人",
+			"source": "ktp",
+			"page": 19,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 预知学科|ktp}",
+						"entrySummary": "预知"
+					}
+				}
+			],
+			"entries": [
+				"当你被迫进行豁免检定时，可以消耗1点灵能点并窥探未来。若该效应是法术或灵能效应，你如同通过了辨识它的智力（奥秘）或智力（灵能）检定一般，知道你要豁免的是什么效应。此外，无论其本质为何，你都可以将你的智力调整值加到对抗它的豁免检定上。"
+			],
+			"ENG_name": "One Step Ahead"
+		},
+		{
+			"name": "寄生梦魇\u2014\u2014融合天赋",
+			"source": "ktp",
+			"page": 25,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"灵能融合、吞噬、心灵感应"
+					]
+				}
+			],
+			"entries": [
+				"你获得将\"心灵入侵\"的修饰词添加到\"汲心水蛭\"上的能力。",
+				"此外，当你对一个{@condition 恐慌}于你的生物造成心灵伤害时，你可以使自己对该生物{@condition 隐形}，直到你的下回合开始；你可以立即（无需动作）进行一次智力（隐秘）检定，只影响因该天赋而无法看见你的生物。",
+				"若一个{@condition 恐慌}于你的生物看不见你，则在它移动时，你可以用你的反应传送到该生物5尺内一个未被占据的空间（于其移动结束时）。"
+			],
+			"ENG_name": "Parasitic Nightmare - Fusion Talent"
+		},
+		{
+			"name": "明镜止水",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以进入极度专注的状态。你的专注不再因使用第二个需要专注的能力而中断，但当你同时专注多个效应时，你的速度降为0，且你的任何维持专注的体质豁免检定承受-5减值。若你移动或维持专注的豁免失败，你专注的法术之一结束。若维持专注的豁免检定失败5点或更多，你同时失去对两个法术的专注。"
+			],
+			"ENG_name": "Perfect Focus"
+		},
+		{
+			"name": "个人真理",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"你的信念之力使你能够相信自己选择相信的东西。只要你花至少1分钟说服自己某件事\u2014\u2014无论多么荒谬\u2014\u2014判定你是否说真话的法术与效应都会显示：你确实相信自己说服自己所信的内容。",
+				"此外，你的灵能允许你在一定程度上将意志强加于现实。当你消耗1点灵能点时，你可以对现实做出一次微小的改动：",
+				{
+					"type": "list",
+					"items": [
+						"你可以召唤任何你能想到、价值1银币或以下的微型物体。这会依你的构想创造出该物体，但不会赋予你原本没有的知识（例如，除非你脑中持有正确钥匙的完美图像，否则你无法召唤出开锁的钥匙）。",
+						"以一个动作，你可以改变10尺内一件小型或更小物体的颜色或味道。此改动持续1分钟。",
+						"当30尺内的一个生物（包括你自己）受到伤害时，你可以用一个反应改变它所受的伤害类型。"
+					]
+				}
+			],
+			"ENG_name": "Personal Truth"
+		},
+		{
+			"name": "幻刃弹幕\u2014\u2014融合天赋",
+			"source": "ktp",
+			"page": 25,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"灵能融合、投影武器、念力武器"
+					]
+				}
+			],
+			"entries": [
+				"你可以在以\"念力武器\"用投影武器进行攻击的同时，用\"投影武器\"创造该武器，从而以这种方式投影与攻击次数相同的武器（无需额外动作）。当你以\"投影武器\"创造的武器作为\"念力武器\"的投射物时，掷出武器的射程加倍。",
+				"此外，若你在\"念力武器\"的\"旋舞\"修饰词上消耗6点灵能点，你可以改为施展{@spell 剑刃护壁}而非{@spell 匕首之云}，在施法的同时生成数量庞大得多的以太刀刃。"
+			],
+			"ENG_name": "Phantom Blade Barrage - Fusion Talent"
+		},
+		{
+			"name": "相位裂隙",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 易位学科|ktp}",
+						"entrySummary": "易位"
+					}
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}10尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}1回合",
+				"你踏入空间之中，沿直线移动至多10尺，身后留下一道空间裂痕。你可以穿过生物，但不能穿过厚度超过4寸的物体、建筑或地形。任何处于裂痕路径上的生物必须进行敏捷豁免检定，失败者受到{@damage 1d8}力场伤害。",
+				"你可以消耗至多等于单次使用上限的灵能点，为相位裂隙添加以下修饰词（可添加多个）。这些点数必须在为该威能指定目标时消耗。",
+				"{@bold 残影} {@italic （1-3灵能点）}：你获得一个幻影分身，如{@spell 镜影术}法术一般。每消耗1点灵能点你获得1个分身（至多3个）。每个你的回合开始时，一个剩余的影像消散。",
+				"{@bold 扰断} {@italic （1+灵能点）}：每消耗1点，豁免失败的每个目标额外受到{@damage 1d8}力场伤害。",
+				"{@bold 回响} {@italic （2灵能点）}：你以同一个动作立即再次使用相位裂隙。",
+				"{@bold 虚化} {@italic （2灵能点）}：你可以穿过实体物体、建筑和地形，前提是相位裂隙要结束于你能占据的空间。若相位裂隙将结束于你无法占据的空间，该威能失败。",
+				"{@bold 延长} {@italic （1-3灵能点）}：每消耗1点，你可以额外移动10尺。"
+			],
+			"ENG_name": "Phase Rift"
+		},
+		{
+			"name": "相位射击",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"相位射击"
+					],
+					"otherSummary": {
+						"entry": "需要{@optfeature 易位学科|ktp}",
+						"entrySummary": "易位"
+					}
+				}
+			],
+			"entries": [
+				"你可以使用{@optfeature 相位裂隙|ktp}威能改为强化一件你触碰的弹药，使其在被射出时具有以下特殊性质：",
+				{
+					"type": "list",
+					"items": [
+						"它可以射穿任何厚度不足4寸的掩体，包括全身掩体。",
+						"它额外造成{@damage 1d8}力场伤害。"
+					]
+				},
+				"此外，应用相位裂隙的修饰词会为该攻击赋予特殊效应：",
+				{
+					"type": "list",
+					"items": [
+						"{@b 扰断：}该攻击命中时额外造成{@damage 1d8}力场伤害。",
+						"{@b 残影：}每消耗1点灵能点，你可以额外掷一次攻击掷骰，并取最高值。",
+						"{@b 延长：}每消耗1点，该攻击的有效射程增加10尺。",
+						"{@b 回响：}射出时产生第二枚投射物，使用单独的攻击掷骰。（你可以以此攻击射程内的任何生物，包括同一生物）",
+						"{@b 虚化：}该攻击可以穿过至多10尺的掩体。"
+					]
+				}
+			],
+			"ENG_name": "Phase Shot"
+		},
+		{
+			"name": "相位护幕",
+			"source": "ktp",
+			"page": 17,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 易位学科|ktp}",
+						"entrySummary": "易位"
+					}
+				}
+			],
+			"entries": [
+				"使用相位裂隙后，你获得临时生命值，数值等于你的熟练加值+在该威能上消耗的灵能点数。"
+			],
+			"ENG_name": "Phase Shroud"
+		},
+		{
+			"name": "相位斩击",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"裂隙打击"
+					],
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature 易位学科|ktp}",
+						"entrySummary": "易位"
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗1点灵能点，作为同一动作的一部分，对相位裂隙穿过的任何目标进行一次近战武器攻击。以此方式每攻击一个生物，你必须消耗1点灵能点。你每回合只能对一个目标进行一次此攻击。你可以对此天赋使用\"灵能精通\"点数。"
+			],
+			"ENG_name": "Phase Slash"
+		},
+		{
+			"name": "躯体涌动",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 强化学科|ktp}",
+						"entrySummary": "强化"
+					}
+				}
+			],
+			"entries": [
+				"当你以\"强化涌动\"指定自己为目标时，你可以选择使你的力量或敏捷属性值等于你的智力属性值，直到你的下回合开始。"
+			],
+			"ENG_name": "Physical Surge"
+		},
+		{
+			"name": "实体念力\u2014\u2014融合天赋",
+			"source": "ktp",
+			"page": 25,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"灵能融合、强化、心灵遥控"
+					]
+				}
+			],
+			"entries": [
+				"当你使用\"强化涌动\"强化一个生物时，可以消耗1点灵能点，以你的心灵遥控进一步辅助它，可选赋予以下一项收益：",
+				{
+					"type": "list",
+					"items": [
+						"你可以使该生物移动10尺（此移动不会引发机会攻击）。",
+						"你可以在你的下回合开始前，以念力偏折对其的第一次武器攻击，使该攻击具有劣势。",
+						"你可以在你的下回合开始前，以念力强化其下一次力量（运动）检定或武器攻击，使该检定或攻击具有优势。"
+					]
+				},
+				"此外，在\"强化涌动\"的效应期间，借助你的念力，你举起、拖拽或携带的重量加倍，并且你可以将\"念力冲击\"的修饰词应用于你的武器攻击。"
+			],
+			"ENG_name": "Physical Telekinesis - Fusion Talent"
+		},
+		{
+			"name": "烈性灵能",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"当目标通过了伤害性灵能威能（由灵能学科赋予）的豁免检定时，它仍受到一半伤害，但不承受其他效应。"
+			],
+			"ENG_name": "Potent Psionics"
+		},
+		{
+			"name": "精准之力",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					},
+					"feature": [
+						"与失控之力互斥"
+					]
+				}
+			],
+			"entries": [
+				"{@spell 活化物件}法术将加入你的心灵遥控替代效应列表，你可以消耗5点灵能点施展它。此外，当你看见60尺内的一个目标即将受到远程武器攻击时，你可以用反应消耗1点灵能点，在该攻击掷骰中加上或减去2d4。你可以在攻击掷骰之后、得知结果之前如此做。"
+			],
+			"ENG_name": "Precise Power"
+		},
+		{
+			"name": "预知学科",
+			"source": "ktp",
+			"page": 9,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"侦测善恶",
+									"未来洞悉|ktp"
+								],
+								"2": [
+									"卜筮术",
+									"窥见未来|ktp"
+								],
+								"3": [
+									"鹰眼术"
+								],
+								"4": [
+									"防死结界",
+									"预言术"
+								],
+								"5": [
+									"探知术"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "预知学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Precognition Discipline"
+				}
+			],
+			"entries": [
+				"预知是洞见前路、穿透未来帷幕的能力。凭借看到常人所不能见之物，拥有预知能力的灵能使可以在有限程度上知晓未来；这样的未来是从当下追溯其根源而得知的，根源愈遥远，未来便愈神秘朦胧。",
+				"这样的未来可以被当下的行动改变，尤其是借助对未来的知晓以及阻止或改变它的行动。这正是预知灵能使最常运用的功能：窥探未来，以绕开他们想要阻止的走向，或驶向他们期望的可能结局。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 预知|ktp}",
+										"{@optfeature 洞视|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得预知灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 侦测善恶}, {@spell 未来洞悉|ktp}"
+												],
+												[
+													"2",
+													"{@spell 卜筮术}, {@spell 窥见未来|ktp}"
+												],
+												[
+													"3",
+													"{@spell 鹰眼术}"
+												],
+												[
+													"4",
+													"{@spell 防死结界}, {@spell 预言术}"
+												],
+												[
+													"5",
+													"{@spell 探知术}"
+												]
+											]
+										},
+										"{@spell 卜筮术}效应相同，但以此方式施展时不会求询于某个特定存在。",
+										"{@spell 防死结界}效应相同，但以此方式施展时会给予生物一个预兆，使其得以避开死亡。",
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 窥见之未来|ktp}",
+										"{@optfeature 先发制人|ktp}",
+										"{@optfeature 预知之梦|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Precognition Discipline"
+		},
+		{
+			"name": "预知之梦",
+			"source": "ktp",
+			"page": 19,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature 预知学科|ktp}",
+						"entrySummary": "预知"
+					}
+				}
+			],
+			"entries": [
+				"当你完成一次长休时，你的梦境已为即将到来的一天做足了准备。醒来之际，你向伙伴们送上宽慰的话语与忠告，助他们度过这一天，给予他们等于你智力调整值的临时生命值。在接下来的24小时内，你不会被突袭。"
+			],
+			"ENG_name": "Precognitive Dreams"
+		},
+		{
+			"name": "预知",
+			"source": "ktp",
+			"page": 19,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 预知学科|ktp}",
+						"entrySummary": "预知"
+					}
+				}
+			],
+			"entries": [
+				"你的目光会先于事件发生而游移过去。你可以将你的熟练加值加到察觉和先攻掷骰上；若你已能将熟练加值加到察觉上，则你可以加上双倍熟练加值。",
+				"若你专注于留意未来（如同专注一个法术），你在感知（察觉）检定（代替感知）和先攻掷骰（代替敏捷）中可以使用智力调整值，并以智力豁免检定代替敏捷豁免检定。你可以随时开始此专注。"
+			],
+			"ENG_name": "Prescience"
+		},
+		{
+			"name": "投影物品",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 投影学科|ktp}",
+						"entrySummary": "投影"
+					}
+				}
+			],
+			"entries": [
+				"以一个动作，你可以运用力量将你想象的一件无生命物体投影到手中。它任一边长不得超过3尺、重量不得超过10磅，且显然属于以太性质。该物品表现得如同实体物体。以此特性创造的武器造成力场伤害。",
+				"投影物品在1分钟后消散，你一次至多持有3件投影物品。"
+			],
+			"ENG_name": "Project Item"
+		},
+		{
+			"name": "投影梦魇",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature Shaper Discipline|ktp|塑形者学科}",
+						"entrySummary": "塑形者"
+					}
+				}
+			],
+			"entries": [
+				"你为\"无垠想象\"获得一个可应用于你的星界构装体的额外选项：",
+				{
+					"type": "list",
+					"items": [
+						"{@b 骇人梦魇}：由你选择、在你的星界构装体5尺内开始回合的生物，必须对你的灵能DC进行感知豁免检定，失败者恐慌于你的星界构装体，直到其下回合开始。豁免成功的生物在接下来24小时内、或直到你召唤新的星界构装体之前，免疫此效应。"
+					]
+				}
+			],
+			"ENG_name": "Projected Nightmares"
+		},
+		{
+			"name": "投影武器",
+			"source": "ktp",
+			"page": 11,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 投影学科|ktp}",
+						"entrySummary": "投影"
+					}
+				}
+			],
+			"entries": [
+				"当你以\"投影物品\"特性投影一件武器时，它获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你可以以一个附赠动作投影它，并且可以同时投影至多3件武器或弹药。",
+						"你具有任何投影武器的熟练项。",
+						"当它以武器形态出现时（对中型生物而言），不再受最长3尺的限制。",
+						"你在使用它的攻击和伤害掷骰中，可以用智力调整值代替力量或敏捷调整值。",
+						"若它具有投掷属性，其投掷射程加倍。若它不具有投掷属性，它获得投掷（10/30）属性。",
+						"你可以将星界构装体的\"增大\"和\"维持\"修饰词应用于投影武器。\"增大\"为武器的伤害骰加上1d8。你可以对这些修饰词使用\"灵能精通\"。"
+					]
+				}
+			],
+			"ENG_name": "Projected Weaponry"
+		},
+		{
+			"name": "投影学科",
+			"source": "ktp",
+			"page": 7,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"谭森浮碟术",
+									"隐形仆役"
+								],
+								"2": [
+									"镜影术"
+								],
+								"3": [
+									"魅影驹"
+								],
+								"4": [
+									"秘法眼"
+								],
+								"5": [
+									"造物术|xge"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "投影学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Projection Discipline"
+				}
+			],
+			"entries": [
+				"投影是以灵能将心中所想投射到外部世界的能力。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 投影物品|ktp}",
+										"{@optfeature 星界构装体|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得投影灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 谭森浮碟术||浮碟术}, {@spell 隐形仆役}"
+												],
+												[
+													"2",
+													"{@spell 镜影术}"
+												],
+												[
+													"3",
+													"{@spell 魅影驹}"
+												],
+												[
+													"4",
+													"{@spell 秘法眼}"
+												],
+												[
+													"5",
+													"{@spell 造物术|XGE}"
+												]
+											]
+										},
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 活化投影|ktp}",
+										"{@optfeature 星界换位|ktp}",
+										"{@optfeature 生命链接|ktp}",
+										"{@optfeature 成真造物|ktp}",
+										"{@optfeature 投影武器|ktp}",
+										"{@optfeature 无限想象|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Projection Discipline"
+		},
+		{
+			"name": "蓄力腾跃",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp|心灵遥控}或{@optfeature 心灵念动学科|ktp}",
+						"entrySummary": "心灵遥控或心灵念动"
+					}
+				}
+			],
+			"entries": [
+				"当你在你的回合移动时，你可以将移动（至多等于你的速度）化作一次蓄力腾跃，由念力或心灵念动之力推动。"
+			],
+			"ENG_name": "Propelled Bound"
+		},
+		{
+			"name": "灵能水晶",
+			"source": "ktp",
+			"page": 12,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"你获得将部分心灵注入水晶的能力。你可以消耗2点灵能点施展{@spell 寻获魔宠}法术，但你的魔宠采用{@creature 灵能水晶|ktp}的数据，且所需材料成分改为一颗价值10金币的水晶，而非原本的材料成分。{@creature 灵能水晶|ktp}获得你的智力、感知和魅力值。你可以通过你的灵能水晶使用射程大于自身的灵能学科，如同你身处其位置一般。若你的{@creature 灵能水晶|ktp}被消灭，你将它的记忆收为己有。当你的{@creature 灵能水晶|ktp}处于活跃状态时，你可以以一个附赠动作将其停用，以恢复2点已消耗的灵能点。",
+				"当你召唤{@creature 灵能水晶|ktp}时，你可以在其中封存一缕你的性格碎片，之后可通过击碎水晶将其释放。召唤灵能水晶时，选择以下一项：",
+				{
+					"type": "list",
+					"items": [
+						"{@b 勇气}：当你进行对抗{@condition 恐慌}状态的豁免检定时，你可以用你的反应击碎水晶，释放该情绪以在此豁免上获得优势。",
+						"{@b 怯懦}：当你的灵能水晶在你30尺内且有生物进入你5尺内时，你可以用你的反应击碎水晶，释放该情绪并立即远离该生物移动至多等于你速度的距离，且不引发机会攻击。",
+						"{@b 残忍}：当你的灵能水晶处于一个受到伤害的生物30尺内时，你可以用你的反应击碎水晶，释放该情绪，使该生物额外受到等于你灵能使等级的伤害。",
+						"{@b 怜悯}：当你的灵能水晶处于你与另一个生物30尺内，而该生物受到伤害时，你可以用你的反应击碎水晶，释放该情绪，给予该生物对该伤害的抗性。你受到等量于它所受的伤害。"
+					]
+				}
+			],
+			"ENG_name": "Psi Crystal"
+		},
+		{
+			"name": "灵能防御",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"你获得一种以灵能保护自己的方式。当你未穿着任何护甲且未持用盾牌时，你的护甲等级等于13+你的智力调整值。"
+			],
+			"ENG_name": "Psionic Defenses"
+		},
+		{
+			"name": "灵能武器",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"以一个附赠动作，你可以消耗1点灵能点，为你持有的一件武器注入灵能。在1分钟内，每回合一次，当你以该武器造成伤害时，你可以额外造成{@damage 1d6}心灵伤害。",
+				"在更高等级，你可以额外消耗灵能点进一步强化灵能武器：第5级2点强化为{@damage 2d6}，第11级3点强化为{@damage 3d6}，第17级4点强化为{@damage 4d6}。"
+			],
+			"ENG_name": "Psionic Weapon"
+		},
+		{
+			"name": "心灵念动学科",
+			"source": "ktp",
+			"page": 9,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"燃烧之手",
+									"闪电卷须|kibblestasty:cc"
+								],
+								"2": [
+									"炽焰法球",
+									"灼热射线"
+								],
+								"3": [
+									"升腾锐矛|kibblestasty:cc",
+									"火球术"
+								],
+								"4": [
+									"跳跃电击|kibblestasty:cc",
+									"火墙术"
+								],
+								"5": [
+									"升腾风暴|kibblestasty:cc",
+									"寒冰锥"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "心灵念动学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Psychokinesis Discipline"
+				}
+			],
+			"entries": [
+				"心灵念动是凭空创造与操控能量的心智技艺；汲取能量以冰冻万物，或凭空生热以爆出烈焰、拉出电弧。它危险而具毁灭性，提供着毁灭性的力量。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 能量操弄|ktp}",
+										"{@optfeature 元素爆发|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得心灵念动灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 燃烧之手}, {@spell 闪电卷须|KibblesTasty:CC}"
+												],
+												[
+													"2",
+													"{@spell 炽焰法球}, {@spell 灼热射线}"
+												],
+												[
+													"3",
+													"{@spell 升腾锐矛|KibblesTasty:CC}, {@spell 火球术}"
+												],
+												[
+													"4",
+													"{@spell 跳跃电击|KibblesTasty:CC}, {@spell 火墙术}"
+												],
+												[
+													"5",
+													"{@spell 升腾风暴|KibblesTasty:CC}, {@spell 寒冰锥}"
+												]
+											]
+										},
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "专精",
+									"entries": [
+										"当你获得此学科时，可以（但不必）从以下列表中选择一项专精。专精只能在获得学科之时选择，一经选定便无法更改或移除。",
+										{
+											"type": "options",
+											"count": 1,
+											"entries": [
+												{
+													"type": "entries",
+													"name": "低温动能",
+													"entries": [
+														"你的元素爆发只能造成寒冷伤害。当生物被你的元素爆发攻击命中，或对该威能豁免失败时，它陷入冻结状态，直到其下回合结束；其下一次攻击掷骰或敏捷豁免检定具有劣势，且速度额外降低5尺（总计10尺）。",
+														"若攻击掷骰为重击，或目标豁免失败5点或更多，目标在冻结期间陷入束缚。",
+														"以下法术列表取代你的替代效应列表：",
+														{
+															"type": "table",
+															"colStyles": [
+																"col-3 text-center",
+																"col-9 text-center"
+															],
+															"colLabels": [
+																"点数消耗",
+																"替代效应"
+															],
+															"rows": [
+																[
+																	"1",
+																	"{@spell 极地吐息|KibblesTasty:CC}, {@spell 埋葬|KibblesTasty:CC}"
+																],
+																[
+																	"2",
+																	"{@spell 寒冷突袭|KibblesTasty:CC}"
+																],
+																[
+																	"3",
+																	"{@spell 闪冻术|KibblesTasty:CC}, {@spell 雪雨暴}"
+																],
+																[
+																	"4",
+																	"{@spell 冰风暴}, {@spell 寒冰穿刺|KibblesTasty:CC}"
+																],
+																[
+																	"5",
+																	"{@spell 寒冰锥}"
+																]
+															]
+														}
+													],
+													"ENG_name": "Cryokinetic"
+												},
+												{
+													"type": "entries",
+													"name": "电气动能",
+													"entries": [
+														"你的元素爆发只能造成闪电伤害，但闪电伤害的骰面（初始伤害与电弧伤害皆是）提高一级（初始伤害变为{@damage 1d10}，\"增幅\"每点额外伤害变为{@damage 1d10}，每枚初始伤害骰对附近目标造成的电弧伤害变为{@damage 1d6}）。",
+														"以下法术列表取代你的替代效应列表：",
+														{
+															"type": "table",
+															"colStyles": [
+																"col-3 text-center",
+																"col-9 text-center"
+															],
+															"colLabels": [
+																"点数消耗",
+																"替代效应"
+															],
+															"rows": [
+																[
+																	"1",
+																	"{@spell 闪电卷须|KibblesTasty:CC}, {@spell 雷鸣拳|KibblesTasty:CC}"
+																],
+																[
+																	"2",
+																	"{@spell 噼啪术|KibblesTasty:CC}, {@spell 闪电充能|KibblesTasty:CC}"
+																],
+																[
+																	"3",
+																	"{@spell 电击|KibblesTasty:CC}, {@spell 闪电束}"
+																],
+																[
+																	"4",
+																	"{@spell 跳跃电击|KibblesTasty:CC}"
+																],
+																[
+																	"5",
+																	"{@spell 天际爆发|KibblesTasty:CC}"
+																]
+															]
+														}
+													],
+													"ENG_name": "Electrokinetic"
+												},
+												{
+													"type": "entries",
+													"name": "火焰动能",
+													"entries": [
+														"你的元素爆发只能造成火焰伤害，但火焰伤害的骰面（初始伤害与灼烧伤害皆是）提高一级（初始伤害变为{@damage 1d10}，\"增幅\"每点额外伤害变为{@damage 1d10}，每枚初始伤害骰在其回合开始时造成的灼烧伤害变为{@damage 1d6}）。",
+														"以下法术列表取代你的替代效应列表：",
+														{
+															"type": "table",
+															"colStyles": [
+																"col-3 text-center",
+																"col-9 text-center"
+															],
+															"colLabels": [
+																"点数消耗",
+																"替代效应"
+															],
+															"rows": [
+																[
+																	"1",
+																	"{@spell 燃烧之手}, {@spell 炼狱叱喝}"
+																],
+																[
+																	"2",
+																	"{@spell 炽焰法球}, {@spell 灼热射线}"
+																],
+																[
+																	"3",
+																	"{@spell 火球术}, {@spell 火焰气旋|KibblesTasty:CC}"
+																],
+																[
+																	"4",
+																	"{@spell 火焰护盾}, {@spell 火墙术}"
+																],
+																[
+																	"5",
+																	"{@spell 焰击术}"
+																]
+															]
+														}
+													],
+													"ENG_name": "Pyrokinetic"
+												}
+											]
+										}
+									],
+									"ENG_name": "Specializations"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 元素护佑|ktp}",
+										"{@optfeature 元素情绪|ktp}",
+										"{@optfeature 元素护盾|ktp}",
+										"{@optfeature 显化情绪|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Psychokinesis Discipline"
+		},
+		{
+			"name": "现实扭曲者\u2014\u2014融合天赋",
+			"source": "ktp",
+			"page": 26,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"灵能融合、成真造物、心智影像"
+					]
+				}
+			],
+			"entries": [
+				"你可以让人们看见的幻象活过来。当你正专注于一个幻象法术时，你可以在你的回合内以一个附赠动作消耗灵能点，将幻象的一部分带入现实。每消耗1点灵能点，你就可以将幻象的一个5尺立方部分带入现实，直到你的下回合开始，它可以产生以下效应：",
+				{
+					"type": "list",
+					"items": [
+						"若该效应会造成伤害，每个5尺立方可以伤害一个目标。该目标必须通过敏捷豁免检定，否则受到数量等于该法术环阶的d8骰的伤害。",
+						"若该效应会阻挡生物，生物便无法穿过它。若该效应会束缚生物，该生物必须通过敏捷豁免检定，否则陷入束缚，直到你的下回合开始。",
+						"每个5尺立方只能影响一个位于其中或与之相邻的生物。GM可自行裁量允许其他效应。"
+					]
+				}
+			],
+			"ENG_name": "Reality Warper - Fusion Talent"
+		},
+		{
+			"name": "反射苦痛",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"当一个你能看见的120尺内生物对你造成伤害时，你可以用你的反应消耗1点或更多灵能点（至多你的灵能点上限），把你经历的痛苦原样奉还，每消耗1点造成{@damage 1d10}心灵伤害。此伤害不得超过你从该攻击中受到的伤害。"
+			],
+			"ENG_name": "Reflected Agony"
+		},
+		{
+			"name": "裂隙打击",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 易位学科|ktp}",
+						"entrySummary": "易位"
+					}
+				}
+			],
+			"entries": [
+				"当你以动作使用你的相位裂隙威能时，你可以以一个附赠动作进行一次武器攻击。"
+			],
+			"ENG_name": "Rift Strike"
+		},
+		{
+			"name": "裂念",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗1点灵能点暂时分裂心智、一心二用，直到你的回合结束。分裂心智期间，若你以动作使用灵能学科赋予的灵能威能或法术，你可以以附赠动作使用一个通常需要动作的灵能威能。两个威能共用你的单次使用灵能点上限。"
+			],
+			"ENG_name": "Schism"
+		},
+		{
+			"name": "洞视",
+			"source": "ktp",
+			"page": 19,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 预知学科|ktp}",
+						"entrySummary": "预知"
+					}
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}自身",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}瞬发",
+				"你集中心神，凝望未来可能性的洪流，洞悉接下来将发生之事；你可以选择以下一项：",
+				{
+					"type": "list",
+					"items": [
+						"你可以给予你自己、或一个能看见或听见你的生物在其下次攻击掷骰上的优势（须在你的下回合开始前）；若因本特性获得优势的攻击命中，它额外造成1d6伤害。",
+						"你可以使针对你、或一个能看见或听见你的生物的下一次攻击掷骰（须在你的下回合开始前）具有劣势；若该攻击不顾劣势仍然命中，受击生物掷1d6并从伤害中减去该数值。",
+						"你可以消耗至多等于单次使用上限的灵能点，为\"洞视\"添加以下修饰词（可添加多个）。"
+					]
+				},
+				"{@bold 全知} {@italic （1灵能点）}：你的\"洞视\"的受益者处于{@spell 祝福术}和{@spell 神导术}的效应之下，直到你的下回合开始。",
+				"{@bold 洞穿} {@italic （1+灵能点）}：你在赋予优势时看穿目标的防御，若受益于优势的攻击命中，其伤害每消耗1点灵能点提高{@damage 1d8}。",
+				"{@bold 移位} {@italic （1+灵能点）}：你的\"洞视\"的受益者可以立即移动每消耗1点5尺的距离（至多其速度），且不引发机会攻击。",
+				"{@bold 阻挠} {@italic （2灵能点）}：你的\"洞视\"的受益者在你的下回合开始前的下一次豁免检定具有优势。",
+				"{@bold 保留} {@italic （0灵能点）}：你可以不立即赋予下次攻击掷骰优势或劣势，而是改为在攻击发生时以一个反应赋予优势或劣势，直到你的下回合开始。"
+			],
+			"ENG_name": "Seeing"
+		},
+		{
+			"name": "技艺窃贼",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 吞噬学科|ktp}",
+						"entrySummary": "吞噬"
+					}
+				}
+			],
+			"entries": [
+				"你可以通过\"适应猎手\"获得的额外技能、工具或语言熟练项的数量，提升为等于你熟练加值一半（向下取整）的数目，之后才会失去先前获得的熟练项。若超出此数再获得新的熟练项，则你最早获得的那项即告失去。"
+			],
+			"ENG_name": "Skill Thief"
+		},
+		{
+			"name": "奔涌之力",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 强化学科|ktp}",
+						"entrySummary": "强化"
+					}
+				}
+			],
+			"entries": [
+				"当你以\"强化涌动\"只指定自己为目标时，你可以以一个附赠动作而非动作使用该威能，但以此方式使用时，基础威能给予的伤害与临时生命值降为1d4。"
+			],
+			"ENG_name": "Surging Power"
+		},
+		{
+			"name": "战术破绽",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"你可以将一个生物防御上的破绽传达给你的盟友。当一个生物豁免你的\"心灵入侵\"失败时，你可以以一个附赠动作对其采取协助动作，协助一个你能与之心灵交流的生物。以此方式采取协助动作时，其距离变为30尺。"
+			],
+			"ENG_name": "Tactical Opening"
+		},
+		{
+			"name": "暴脾气",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"你的怒火在表面之下沸腾。当你掷先攻时，你可以立即使你的狂乱骰升一级（例如从d4升为d6）。此外，当你的狂乱骰为d6或更低时，若你受到伤害，你的狂乱骰升一级。"
+			],
+			"ENG_name": "Tantrum"
+		},
+		{
+			"name": "心灵遥控学科",
+			"source": "ktp",
+			"page": 8,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"跳跃术",
+									"抛掷物体|ktp",
+									"雷鸣波"
+								],
+								"2": [
+									"抛掷|kibblestasty:cc",
+									"浮空术",
+									"粉碎音波"
+								],
+								"3": [
+									"飞行术",
+									"涡旋冲击|kibblestasty:cc"
+								],
+								"4": [
+									"轨道石|kibblestasty:cc",
+									"欧提路克弹力法球"
+								],
+								"5": [
+									"心灵遥控",
+									"力场墙",
+									"冲击波|ktp"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "心灵遥控学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Telekinesis Discipline"
+				}
+			],
+			"entries": [
+				"心灵遥控是以灵能与实体物体和能量互动的能力。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 念力之手|ktp}",
+										"{@optfeature 念力冲击|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得心灵遥控灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 跳跃术}, {@spell 抛掷物体|ktp}, {@spell 雷鸣波}"
+												],
+												[
+													"2",
+													"{@spell 抛掷|KibblesTasty:CC}, {@spell 浮空术}, {@spell 粉碎音波}"
+												],
+												[
+													"3",
+													"{@spell 飞行术}, {@spell 涡旋冲击|KibblesTasty:CC}"
+												],
+												[
+													"4",
+													"{@spell 轨道石|KibblesTasty:CC} {@spell 欧提路克弹力法球||弹力法球}"
+												],
+												[
+													"5",
+													"{@spell 心灵遥控}, {@spell 力场墙}, {@spell 冲击波|ktp}"
+												]
+											]
+										},
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 动能猛击|ktp}",
+										"{@optfeature 念力屏障|ktp}",
+										"{@optfeature 念力移动|ktp}",
+										"{@optfeature 念力武器|ktp}",
+										"{@optfeature 心智之力|ktp}",
+										"{@optfeature 精准之力|ktp}",
+										"{@optfeature 失控之力|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Telekinesis Discipline"
+		},
+		{
+			"name": "念力屏障",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					}
+				}
+			],
+			"entries": [
+				"你聚焦念力，将其延展成一面巨大的屏障。以一个动作，你可以消耗2点灵能点，创造一面高15尺、最长40尺的微弱念力之墙，或以你为中心15尺半径的环形屏障。屏障内小物件悬浮飘动，清晰可见。若你以自身为中心创造屏障，它随你移动而移动。穿过屏障的远程攻击因其弹道被偏折而具有劣势。你可以通过专注（如同专注一个法术）维持此屏障，创造后至多维持1分钟。"
+			],
+			"ENG_name": "Telekinetic Barrier"
+		},
+		{
+			"name": "念力冲击",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					}
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}60尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}瞬发",
+				"你以精神之力猛击一个目标生物或物体。该目标必须通过力量豁免检定，否则受到{@damage 1d10}钝击伤害，并被推离5尺（方向由你选择）或被击倒{@condition 倒地}。",
+				"你可以消耗至多等于单次使用上限的灵能点，为\"念力冲击\"添加以下修饰词（可添加多个）。这些点数必须在为该威能指定目标时消耗。",
+				"{@bold 碾压} {@italic （2灵能点）}：目标陷入{@condition 束缚}，直到其下回合结束。",
+				"{@bold 锤击} {@italic （1+灵能点）}：若目标豁免失败，每消耗1点，它受到{@damage 1d10}钝击伤害。",
+				"{@bold 猛掷} {@italic （1-3灵能点）}：若目标豁免失败，每消耗1点，它被向你选择的方向推离10尺。",
+				"{@bold 范围化} {@italic （1-3灵能点）}：你可以指定射程内一点5尺半径内的所有生物。每消耗1点，半径翻倍（5尺、10尺、20尺）。"
+			],
+			"ENG_name": "Telekinetic Force"
+		},
+		{
+			"name": "念力之手",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					}
+				}
+			],
+			"entries": [
+				"获得此特性时，你可以以心灵操弄30尺内的小物件，如同用手与之互动。你可以用此威能操纵物体、打开未上锁的门或容器、向敞开的容器中存放或取出物品、或倒出小瓶中的东西。你不能以此方式{@action 攻击}、激活魔法物品或携带超过10磅的物品。你可以在你的回合内以此方式移动你控制的物品至多30尺。",
+				"你可以消耗1点灵能点，在1回合内将你能举起的重量提高100磅。"
+			],
+			"ENG_name": "Telekinetic Hands"
+		},
+		{
+			"name": "念力移动",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗1点灵能点，获得10尺额外移动，以及{@spell 蛛行术}、{@spell 羽落术}或{@spell 浮空术}之一的效应，直到你的下回合开始（无需动作）。在你的下回合开始时，你可以在效应结束前消耗1点灵能点维持它。"
+			],
+			"ENG_name": "Telekinetic Movement"
+		},
+		{
+			"name": "念力武器",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					}
+				}
+			],
+			"entries": [
+				"你作为心灵遥控学科的一部分（在你的其他灵能威能之外）获得{@optfeature 念力武器灵能威能|ktp}，获得依该威能掷出武器的能力。"
+			],
+			"ENG_name": "Telekinetic Weapons"
+		},
+		{
+			"name": "念力武器灵能威能",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 念力武器|ktp}灵能天赋",
+						"entrySummary": "念力武器"
+					}
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}30尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}瞬发",
+				"你以念力将一件武器掷向一个生物或物体。选择15尺内一件未被穿着或携带的武器，或选择一件受你控制的武器。进行一次远程法术攻击。命中时，目标受到等于该武器伤害骰的伤害。若武器具有重型或特殊属性，攻击射程降为15尺；若具有轻型属性，攻击射程升为60尺。",
+				"你可以对此威能使用\"灵能精通\"点数，且此威能算作心灵遥控学科的学科威能（例如就\"强化灵能\"而言）。",
+				"你可以消耗至多等于单次使用上限的灵能点，为\"念力武器\"添加以下修饰词（可添加多个）。这些点数必须在为该威能指定目标时消耗。",
+				"{@bold 多重} {@italic （1+灵能点）}：每额外消耗1点灵能点，你可以多掷一件武器，每件掷出的武器分别进行攻击与伤害掷骰。",
+				"{@bold 旋舞} {@italic （2+灵能点）}：你可以将一次掷出武器替换为施展{@spell 匕首之云}，其环阶等于所消耗的灵能点数。",
+				{
+					"type": "inset",
+					"name": "投掷魔法武器",
+					"entries": [
+						"严格按规则文本而言，大多数魔法武器属性不会适用于念力武器，但就我个人而言，我会让掷出的+1武器获得其攻击与伤害掷骰的+1。不过，若你允许这一点，便不应让它与任何提供法术攻击掷骰加值的法器或魔法物品叠加。同一次掷骰只能适用一个加值。",
+						"请记住，规则上并没有内在的方式取回你的武器，尽管你或许可以用其他灵能使能力办到（如\"念力之手\"），因此掷出魔法武器在较远距离上未必是理想的战术。"
+					],
+					"ENG_name": "Flinging Magic Weapons"
+				}
+			],
+			"ENG_name": "Telekinetic Weapons Psionic Power"
+		},
+		{
+			"name": "心灵沟通",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"获得此特性时，你可以与30尺内任何你能看见的生物进行心灵交流。该生物无需与你共通语言即可理解你的心灵话语，但它必须至少能理解一门语言。与你交流的生物可以以同样的方式回应。"
+			],
+			"ENG_name": "Telepathic Communication"
+		},
+		{
+			"name": "心灵入侵",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"{@italic 灵能威能}",
+				"{@bold 施法时间：}1 动作",
+				"{@bold 施法距离：}60尺",
+				"{@bold 成分：}姿势",
+				"{@bold 持续时间：}瞬发",
+				"你直接攻击一个你能看见的生物的心灵。该目标必须通过感知豁免检定，否则受到{@damage 1d8}心灵伤害。若目标豁免失败，它针对你的攻击具有劣势，直到你的下回合开始。你可以选择在该生物豁免失败时不对其造成伤害。",
+				"你可以消耗至多等于单次使用上限的灵能点，为\"心灵入侵\"添加以下修饰词（可添加多个）。这些点数必须在为该威能指定目标时消耗。",
+				"{@bold 干预} {@italic （2灵能点）}：若目标豁免失败，你可以使一个生物对目标生物{@condition 隐形}，或使目标生物如{@spell 次级幻象}的效应般看见并不存在之物，直到你的下回合开始。",
+				"{@bold 压倒} {@italic （3灵能点）}：若目标豁免失败，它陷入{@condition 震慑}，直到其下回合结束。",
+				"{@bold 撕裂} {@italic （1+灵能点）}：豁免失败时，每额外消耗1点，目标受到{@damage 1d8}心灵伤害。",
+				"{@bold 恐怖} {@italic （1灵能点）}：若目标豁免失败，它对你陷入{@condition 恐慌}，直到你的下回合结束。"
+			],
+			"ENG_name": "Telepathic Intrusion"
+		},
+		{
+			"name": "心灵链接",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵感应学科|ktp}",
+						"entrySummary": "心灵感应"
+					}
+				}
+			],
+			"entries": [
+				"只要你曾在过去一天内与某生物交流，且对方自愿维持链接，你的{@optfeature 心灵沟通|ktp}便没有距离限制。但若你看不见目标，你需要用一个动作集中精神才能进行远程交流（对方看不见你时亦然）。你可以以此方式与数量等于你智力调整值的人维持链接。你在一回合内能传达的信息量与正常言语相同。"
+			],
+			"ENG_name": "Telepathic Link"
+		},
+		{
+			"name": "心灵感应学科",
+			"source": "ktp",
+			"page": 8,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"强制质询|ktp",
+									"命令术",
+									"恐吓术|ktp"
+								],
+								"2": [
+									"侦测思想",
+									"暗示术"
+								],
+								"3": [
+									"掘心|ktp",
+									"恐惧术"
+								],
+								"4": [
+									"支配野兽",
+									"强迫术",
+									"困惑术"
+								],
+								"5": [
+									"支配类人",
+									"篡改记忆",
+									"拉瑞心灵联结"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "心灵感应学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Telepathy Discipline"
+				}
+			],
+			"entries": [
+				"心灵感应是以灵能与其他生物的心灵互动的能力。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 心灵沟通|ktp}",
+										"{@optfeature 心灵入侵|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得心灵感应灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 强制质询|ktp}, {@spell 命令术}, {@spell 恐吓术|ktp}"
+												],
+												[
+													"2",
+													"{@spell 侦测思想}, {@spell 暗示术}"
+												],
+												[
+													"3",
+													"{@spell 掘心|ktp}, {@spell 恐惧术}"
+												],
+												[
+													"4",
+													"{@spell 支配野兽}, {@spell 强迫术}, {@spell 困惑术}"
+												],
+												[
+													"5",
+													"{@spell 支配类人}, {@spell 篡改记忆}, {@spell 拉瑞心灵联结||心灵链接}"
+												]
+											]
+										},
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 共鸣雄辩|ktp}",
+										"{@optfeature 共情|ktp}",
+										"{@optfeature 心智影像|ktp}",
+										"{@optfeature 心灵感化|ktp}",
+										"{@optfeature 反射苦痛|ktp}",
+										"{@optfeature 战术破绽|ktp}",
+										"{@optfeature 心灵链接|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Telepathy Discipline"
+		},
+		{
+			"name": "虚空\u2014\u2014融合天赋",
+			"source": "ktp",
+			"page": 26,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"灵能融合、吞噬、无效化"
+					]
+				}
+			],
+			"entries": [
+				"你吞噬你周围的一切超自然效应。每当一个生物（包括你自己）在你5尺内受到来自魔法之源的伤害时，你可以消耗1点或更多灵能点，用你的反应使该伤害每点降低{@damage 1d8}。若多个射程内生物同时受到伤害，你可以将此减免分配给它们。",
+				"此外，每当你成功施展{@spell 法术反制}、{@spell 解除魔法}或{@spell 移除诅咒}，你恢复等于被阻挡或终结之法术环阶的生命值。"
+			],
+			"ENG_name": "The Void - Fusion Talent"
+		},
+		{
+			"name": "超然专注",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 明镜止水|ktp}天赋",
+						"entrySummary": "明镜止水"
+					}
+				}
+			],
+			"entries": [
+				"处于明镜止水状态（同时专注两个效应）时，你获得10尺魔法飞行速度。以此速度移动不会打断{@optfeature 明镜止水|ktp}。"
+			],
+			"ENG_name": "Transcendent Focus"
+		},
+		{
+			"name": "超然生命",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 强化学科|ktp}",
+						"entrySummary": "强化"
+					}
+				}
+			],
+			"entries": [
+				"{@spell 群体疗伤术}和{@spell 转生术}将加入你的强化替代效应列表。以此方式施展转生术时需要其正常的材料成分。"
+			],
+			"ENG_name": "Transcendent Life"
+		},
+		{
+			"name": "易位学科",
+			"source": "ktp",
+			"page": 9,
+			"featureType": [
+				"PsiD"
+			],
+			"additionalSpells": [
+				{
+					"name": "替代效应",
+					"resourceName": "灵能点",
+					"innate": {
+						"_": {
+							"resource": {
+								"1": [
+									"脚底抹油",
+									"闪烁|ktp"
+								],
+								"2": [
+									"迷踪步",
+									"朦胧术",
+									"行动无踪"
+								],
+								"3": [
+									"闪现术",
+									"回避侦测",
+									"湍流跃迁|ktp"
+								],
+								"4": [
+									"放逐术",
+									"维度切割|kibblestasty:cc",
+									"任意门"
+								],
+								"5": [
+									"闪烁打击|kibblestasty:cc",
+									"空间操纵|ktp"
+								]
+							}
+						}
+					},
+					"ENG_name": "Alternate Effects"
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "易位学科",
+					"featureType": [
+						"PsiP"
+					],
+					"progression": {
+						"*": 2
+					},
+					"ENG_name": "Transposition Discipline"
+				}
+			],
+			"entries": [
+				"易位是以灵能更改空间性质、操弄维度边界的能力。",
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "特性",
+									"entries": [
+										"{@optfeature 闪烁步|ktp}",
+										"{@optfeature 相位裂隙|ktp}"
+									],
+									"ENG_name": "Features"
+								},
+								{
+									"type": "entries",
+									"name": "替代效应",
+									"entries": [
+										"此外，当你习得易位灵能学科时，你可以依照该特性所定义的规则，使用你的\"灵能\"特性施展以下法术：",
+										{
+											"type": "table",
+											"colStyles": [
+												"col-3 text-center",
+												"col-9 text-center"
+											],
+											"colLabels": [
+												"点数消耗",
+												"替代效应"
+											],
+											"rows": [
+												[
+													"1",
+													"{@spell 脚底抹油}, {@spell 闪烁|ktp}"
+												],
+												[
+													"2",
+													"{@spell 迷踪步}, {@spell 朦胧术}, {@spell 行动无踪}"
+												],
+												[
+													"3",
+													"{@spell 闪现术}, {@spell 回避侦测}, {@spell 湍流跃迁|ktp}"
+												],
+												[
+													"4",
+													"{@spell 放逐术}, {@spell 维度切割|KibblesTasty:CC}, {@spell 任意门}"
+												],
+												[
+													"5",
+													"{@spell 闪烁打击|KibblesTasty:CC}, {@spell 空间操纵|ktp}"
+												]
+											]
+										},
+										"若一个法术可以更高环阶施展，你可以额外消耗灵能点，以所耗灵能点数对应的环阶来施展它。"
+									],
+									"ENG_name": "Alternate Effects"
+								},
+								{
+									"type": "entries",
+									"name": "可用天赋",
+									"entries": [
+										"{@optfeature 裂隙打击|ktp}",
+										"{@optfeature 闪烁脱身|ktp}",
+										"{@optfeature 滞留裂隙|ktp}",
+										"{@optfeature 相位射击|ktp}",
+										"{@optfeature 相位斩击|ktp}",
+										"{@optfeature 相位护幕|ktp}"
+									],
+									"ENG_name": "Available Talents"
+								}
+							]
+						}
+					]
+				}
+			],
+			"ENG_name": "Transposition Discipline"
+		},
+		{
+			"name": "失控之力",
+			"source": "ktp",
+			"page": 15,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"otherSummary": {
+						"entry": "需要{@optfeature 心灵遥控学科|ktp}",
+						"entrySummary": "心灵遥控"
+					},
+					"feature": [
+						"与精准之力互斥"
+					]
+				}
+			],
+			"entries": [
+				"{@spell 裂地术|KibblesTasty:CC}法术将加入你的心灵遥控替代效应列表。此外，当一个近战攻击正对你发动时，你可以用反应消耗1点灵能点将该生物推开。该生物必须进行力量豁免检定，否则被击退10尺。若这使攻击者超出触及范围，该攻击自动未命中。"
+			],
+			"ENG_name": "Unchecked Power"
+		},
+		{
+			"name": "不死行使者",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "需要{@optfeature 吞噬学科|ktp}",
+						"entrySummary": "吞噬"
+					}
+				}
+			],
+			"entries": [
+				"当你持有灵能充能时，你可以将其注入一具尸体，使其进入不死之境，化为{@creature 丧尸}或{@creature 骷髅}。它在你回合之后立即以自己的先攻行动。其不死之躯会在你的下回合结束时消散，除非你在下回合消耗一个灵能充能或灵能点（无需动作）使其继续活动一轮。你可以对此使用\"灵能精通\"点数。"
+			],
+			"ENG_name": "Unlife Wielder"
+		},
+		{
+			"name": "无限想象",
+			"source": "ktp",
+			"page": 16,
+			"featureType": [
+				"PsiT"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"躯体控制"
+					],
+					"otherSummary": {
+						"entry": "需要{@optfeature 投影学科|ktp}",
+						"entrySummary": "投影"
+					}
+				}
+			],
+			"entries": [
+				"每当你为{@spell 闪烁|ktp}掷一枚d4时，你可以在攻击结算后传送5尺。"
+			],
+			"ENG_name": "Unlimited Imagination"
+		},
+		{
+			"name": "先见之目",
+			"source": "ktp",
+			"page": 13,
+			"featureType": [
+				"PsiT"
+			],
+			"entries": [
+				"只要目标在射程内且你知道其所在，你便不再需要看见灵能威能的目标。攻击者无法看见你时不再因此获得优势，而你攻击看不见的目标时也不再承受劣势。"
+			],
+			"ENG_name": "Visionary Sight"
+		}
+	],
+	"feat": [
+		{
+			"name": "内在之力",
+			"source": "ktp",
+			"page": 15,
+			"prerequisite": [
+				{
+					"feature": [
+						"至少1点灵能点或气点"
+					]
+				}
+			],
+			"entries": [
+				"你的躯体由流转其内的内在之力驱动。你的灵能点或气点上限（若两者皆有，由你选择其一）提高1点。在你的回合内消耗了一点或更多灵能点或气点（不计临时或免费点数，如来自\"灵能精通\"的点数）后，在你的回合结束时，你恢复等于所消耗灵能点或气点数量的生命值。"
+			],
+			"ENG_name": "Inner Power"
+		},
+		{
+			"name": "灵能行家",
+			"source": "ktp",
+			"page": 15,
+			"entries": [
+				"你对灵能有了初步的掌握\u2014\u2014或发掘了自身的先天潜能，或接触了灵能之源，或经过了训练。你获得灵能使职业的一项{@filter 灵能学科|optionalfeatures|feature type=PsiD}，得到附带的灵能特性与灵能威能，但通过此专长获得学科时，你不会获得任何相关法术的使用权。你获得1点灵能点，可用于强化该学科。完成一次短休或长休后，你恢复这1点灵能点的使用。"
+			],
+			"ENG_name": "Psionic Adept"
+		},
+		{
+			"name": "灵能心智",
+			"source": "ktp",
+			"page": 15,
+			"prerequisite": [
+				{
+					"feature": [
+						"能够使用至少一个{@filter 灵能学科|optionalfeatures|feature type=PsiD}"
+					]
+				}
+			],
+			"entries": [
+				"你更深地发掘自己的灵能潜能，引出一项新天赋。你可以从灵能使职业的灵能天赋列表中选择一项灵能天赋。你不能选择已知的天赋，也不能选择带有等级限制的天赋\u2014\u2014即使你已达到该等级。"
+			],
+			"ENG_name": "Psionic Mind"
+		},
+		{
+			"name": "灵能融合",
+			"source": "ktp",
+			"page": 15,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "灵能使",
+							"source": "ktp",
+							"ENG_name": "Psion"
+						}
+					},
+					"feature": [
+						"已知{@filter 灵能学科|optionalfeatures|feature type=PsiD}两个或以上"
+					]
+				}
+			],
+			"entries": [
+				"你获得将灵能能力融汇一体、催生强大新效应的能力。选择此专长时，你可以免费选择一项融合天赋。只有当你具备其先决条件中的所有学科时，才能选择融合天赋。"
+			],
+			"ENG_name": "Psionic Synthesis"
+		},
+		{
+			"name": "战地灵能使",
+			"source": "ktp",
+			"page": 15,
+			"prerequisite": [
+				{
+					"feature": [
+						"能够使用至少一个{@filter 灵能学科|optionalfeatures|feature type=PsiD}"
+					]
+				}
+			],
+			"entries": [
+				"你已精通在战斗中运用灵能，习得的技术给予你以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"当你受到伤害时，你为维持对灵能能力的专注而进行的体质豁免检定具有优势。",
+						"即使你的一只手或双手持握武器或盾牌，你也能表演灵能能力的姿势成分。",
+						"当敌对生物的移动引发你的机会攻击时，你可以用你的反应改为使用一个以该生物为目标的灵能学科威能或法术，而非进行机会攻击。该法术的施法时间必须为1动作，且必须只以该生物为目标。"
+					]
+				}
+			],
+			"ENG_name": "War Psion"
+		}
+	],
+	"spell": [
+		{
+			"name": "强制质询",
+			"source": "ktp",
+			"page": 14,
+			"reprintedAs": [
+				"强制质询|KT-CLL"
+			],
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将心灵感应力聚焦于一个生物，并向它提出一个简单的问题。它必须进行智力豁免检定，否则其心中会浮现出一个简短的念头或影像，尽其所能回答你的问题，而你能以心灵感应感知到它。过去24小时内，此法术每被用于某生物一次，该生物对抗此法术的豁免检定便获得+5加值。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "心灵感应学科",
+					"source": "ktp",
+					"ENG_name": "Telepathy Discipline"
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Compelled Query"
+		},
+		{
+			"name": "掘心",
+			"source": "ktp",
+			"page": 14,
+			"reprintedAs": [
+				"掘心|KT-CLL"
+			],
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你探入一个生物的心灵，迫使其进行智力豁免检定。豁免失败时，在持续时间内或直到你结束此法术，你可以读取它过去12小时的记忆，并能如同己出般回忆起它记得的事情，但这些记忆仅包含目标生物本人记得的内容。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用4环或更高法术位施展此法术时，每比3环高一个环阶，你便可以回溯该生物记忆中额外12小时的内容。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "心灵感应学科",
+					"source": "ktp",
+					"ENG_name": "Telepathy Discipline"
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Delve Mind"
+		},
+		{
+			"name": "闪烁",
+			"source": "ktp",
+			"page": 29,
+			"reprintedAs": [
+				"闪烁|KT-CLL"
+			],
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "你将受到伤害时所使用"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你在物质位面与以太位面之间闪烁。直到你的下回合开始，每当你将要受到伤害时（包括触发此效应的攻击），掷一枚{@dice 1d4|d4}。掷出2时，你获得对该次伤害的抗性；掷出4时，你不受到任何伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "易位学科",
+					"source": "ktp",
+					"ENG_name": "Transposition Discipline"
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Flicker"
+		},
+		{
+			"name": "恐吓术",
+			"source": "ktp",
+			"page": 30,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在射程内一个可见生物心中唤起突如其来的恐惧。该目标必须通过感知豁免检定，否则在持续时间内陷入{@condition 恐慌}。处于{@condition 恐慌}的目标可以在其每个回合结束时重复该豁免检定，成功则为自己结束此效应。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用2环或更高法术位施展此法术时，每比1环高一个环阶，你便可以多指定一个目标生物。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "魔契师",
+						"source": "PHB",
+						"ENG_name": "Warlock"
+					},
+					{
+						"name": "法师",
+						"source": "PHB",
+						"ENG_name": "Wizard"
+					},
+					{
+						"name": "神秘学者",
+						"source": "KT:O",
+						"ENG_name": "Occultist"
+					},
+					{
+						"name": "神秘学者",
+						"source": "KT-CLL",
+						"ENG_name": "Occultist"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "吟游诗人",
+							"source": "PHB",
+							"ENG_name": "Bard"
+						},
+						"subclass": {
+							"name": "逸闻学院",
+							"shortName": "逸闻",
+							"source": "XPHB",
+							"ENG_name": "College of Lore"
+						}
+					},
+					{
+						"class": {
+							"name": "战士",
+							"source": "PHB",
+							"ENG_name": "Fighter"
+						},
+						"subclass": {
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "XPHB",
+							"ENG_name": "Eldritch Knight"
+						}
+					},
+					{
+						"class": {
+							"name": "浪客",
+							"source": "PHB",
+							"ENG_name": "Rogue"
+						},
+						"subclass": {
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "XPHB",
+							"ENG_name": "Arcane Trickster"
+						}
+					},
+					{
+						"class": {
+							"name": "战士",
+							"source": "PHB",
+							"ENG_name": "Fighter"
+						},
+						"subclass": {
+							"name": "奥法骑士",
+							"shortName": "奥法骑士",
+							"source": "PHB",
+							"ENG_name": "Eldritch Knight"
+						}
+					},
+					{
+						"class": {
+							"name": "浪客",
+							"source": "PHB",
+							"ENG_name": "Rogue"
+						},
+						"subclass": {
+							"name": "诡术师",
+							"shortName": "诡术师",
+							"source": "PHB",
+							"ENG_name": "Arcane Trickster"
+						}
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "心灵感应学科",
+					"source": "ktp",
+					"ENG_name": "Telepathy Discipline"
+				}
+			],
+			"feats": [
+				{
+					"name": "神圣恩赐",
+					"source": "DSotDQ",
+					"ENG_name": "Divinely Favored"
+				},
+				{
+					"name": "魔法学徒",
+					"source": "PHB",
+					"ENG_name": "Magic Initiate"
+				},
+				{
+					"name": "魔法学徒",
+					"source": "XPHB",
+					"ENG_name": "Magic Initiate"
+				},
+				{
+					"name": "影界触碰",
+					"source": "XPHB",
+					"ENG_name": "Shadow-Touched"
+				},
+				{
+					"name": "影界之触",
+					"source": "TCE",
+					"ENG_name": "Shadow Touched"
+				},
+				{
+					"name": "斯翠海文学徒",
+					"source": "SCC",
+					"ENG_name": "Strixhaven Initiate"
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Frighten"
+		},
+		{
+			"name": "未来洞悉",
+			"source": "ktp",
+			"page": 30,
+			"reprintedAs": [
+				"未来洞悉|KT-CLL"
+			],
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"你掷{@dice 3d4}或{@dice 1d12}（由你选择）并记录结果。在持续时间内，你可以消耗其中一枚骰子，将它加到60尺内一个生物进行的任何攻击掷骰、豁免检定或属性检定上，或从中减去，直到骰子耗尽或法术结束。你必须在掷骰之后、得知结果之前消耗该骰。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "预知学科",
+					"source": "ktp",
+					"ENG_name": "Precognition Discipline"
+				}
+			],
+			"ENG_name": "Future Insight"
+		},
+		{
+			"name": "窥见未来",
+			"source": "ktp",
+			"page": 30,
+			"reprintedAs": [
+				"窥见未来|KT-CLL"
+			],
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"你让射程内的一个生物窥见自己的未来。掷一枚{@dice d4}决定结果：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text-center"
+					],
+					"colLabels": [
+						"{@dice d4}",
+						"效应"
+					],
+					"rows": [
+						[
+							"1",
+							"目标预见到即将到来的一次行动。掷一枚{@dice d20}并记录其数值。直到法术持续时间结束，它可以用该数值替换自己的一次d20掷骰。"
+						],
+						[
+							"2",
+							"目标看见自己的死亡。在持续时间内，若它因一次攻击或豁免失败而被降至0生命值，则在尚未因其他原因失能的前提下，它改为避开该攻击或通过该豁免检定。"
+						],
+						[
+							"3",
+							"它看见一场未来的胜利，信心渐长。它获得10点临时生命值，并在法术持续时间内免疫{@condition 恐慌}状态。"
+						],
+						[
+							"4",
+							"目标看见一次伏击或突袭：它第一次将被突袭时不会陷入突袭，或第一次将有攻击以优势对它发动时，该攻击改为以劣势发动。"
+						]
+					]
+				},
+				{
+					"type": "inset",
+					"name": "无可避免的死亡",
+					"entries": [
+						"就结果2而言，通过豁免并不总能使其免于被降至0生命值。有时它会因坠落伤害这类没有豁免或攻击的因素而归零。人生有时就是这么无奈。"
+					],
+					"ENG_name": "The Unavoidable Death"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当以3点或更多灵能点施展时，你可以直接选择效应，而非掷{@dice d4}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "预知学科",
+					"source": "ktp",
+					"ENG_name": "Precognition Discipline"
+				}
+			],
+			"ENG_name": "Glimpse the Future"
+		},
+		{
+			"name": "内在世界",
+			"source": "ktp",
+			"page": 31,
+			"reprintedAs": [
+				"内在世界|KT-CLL"
+			],
+			"level": 8,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"以一个动作，你创造并进入一个想象世界。120尺内的所有其他生物随你一同被拉入此世界。此世界以你为中心，向四面八方延展120尺。",
+				"抵达世界边缘的生物可以进行魅力豁免检定以尝试离开：成功则消耗5尺移动回到被拉入世界前的位置，失败则在它的下回合开始前无法移出世界。世界外的生物可以移动到你施展法术的位置（该处由一道发光的灵能裂隙标示）并进行魅力豁免检定以尝试进入世界。你可以允许一个生物自动通过豁免以进入或离开世界。",
+				"创造此世界时，你可以创造自选的障碍物与地形，筑起墙壁、立柱等至多二十个5×5尺方格的障碍物（风格上，它们可以呈现为你选择的任何样貌）。它们可以连续放置，也可以按你选择的任意方式分散布置，但任何有生物占据的区域必须留有该生物能通过的路径，通向你以及世界的边缘。",
+				"你还可以在地面上创造至多五个5尺见格的危险区域。它们可以是火焰、尖刺、咬合的巨口或任何你选择之物；无论其形态为何，当生物在一回合内首次进入该效应区域，或在其回合开始时位于其中，它便受到{@damage 4d4 + 4}心灵伤害。每个危险区域必须与其他危险区域相距至少20尺。",
+				"在此内在世界中，若你豁免检定失败，你可以选择改为成功。在法术持续时间内，你至多可以如此做3次。所有法术与威能的灵能点消耗降低1点。",
+				"在法术持续期间，你可以以一个动作尝试毁灭世界内的一个生物。该目标必须进行智力豁免检定，失败者受到{@damage 8d8 + 8}心灵伤害，并被移出想象世界，回到被拉入之前所在的位置。",
+				"世界可以为明亮或昏暗光照，你掌控其中的天候。",
+				"法术结束时，你与所有仍处于世界中的生物离开世界，回到各自进入世界时所在的空间。",
+				"仓促构筑的世界",
+				"此法术的施法时间为1动作，即游戏内的6秒。建议你在选择此法术时就与GM协作，拟定世界的大致布局与所需要素，施法时至多对世界做出细微改动。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"S"
+			],
+			"ENG_name": "Inner World"
+		},
+		{
+			"name": "注入生命",
+			"source": "ktp",
+			"page": 31,
+			"reprintedAs": [
+				"注入生命|KT-CLL"
+			],
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你牺牲自己的部分生命来治愈另一个生物的创伤。你受到{@damage 4d8}黯蚀伤害，该伤害无法以任何方式减免，而射程内一个由你选择、你能看见的生物恢复等于该黯蚀伤害两倍的生命值。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用4环或更高法术位施展此法术时，每比3环高一个环阶，伤害便提高{@dice 1d8}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "生命行使者",
+					"source": "ktp",
+					"ENG_name": "Life Wielder"
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"ENG_name": "Invest Life"
+		},
+		{
+			"name": "灌注才能",
+			"source": "ktp",
+			"page": 31,
+			"level": 5,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你触碰一个自愿生物，将灵能才干灌注其中。直到法术结束，它获得一项由你选择技能的专精，将该技能的熟练加值加倍计入。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "强化学科",
+					"source": "ktp",
+					"ENG_name": "Enhancement Discipline"
+				}
+			],
+			"ENG_name": "Invested Competency"
+		},
+		{
+			"name": "抛掷物体",
+			"source": "ktp",
+			"page": 32,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择射程内一件重量在1到5磅之间、未被穿着或携带的物体。该物体沿直线向你选择的方向飞行至多90尺后落地，若撞上实体表面则提前停下。若该物体将要撞上生物，该生物必须进行敏捷豁免检定。豁免失败时，物体撞中目标并停止移动。物体撞中任何东西时，物体与被撞者各受到{@damage 3d8}钝击伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用2环或更高法术位施展此法术时，每比1环高一个环阶，你可指定物体的最大重量提高5磅，伤害提高{@dice 1d8}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "造物师",
+						"source": "KibbleInventor",
+						"ENG_name": "Inventor"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "心灵遥控学科",
+					"source": "ktp",
+					"ENG_name": "Telekinesis Discipline"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Launch Object"
+		},
+		{
+			"name": "心灵震爆",
+			"source": "ktp",
+			"page": 32,
+			"reprintedAs": [
+				"心灵震爆|KT-CLL"
+			],
+			"level": 6,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你释放出一波心灵能量爆发。60尺锥形内的每个生物必须进行智力豁免检定。豁免失败的生物受到{@damage 6d8}心灵伤害并陷入{@condition 震慑}，直到其下回合结束。豁免成功的生物受到一半伤害，且不陷入{@condition 震慑}。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"N"
+			],
+			"ENG_name": "Mind Blast"
+		},
+		{
+			"name": "无效化效应",
+			"source": "ktp",
+			"page": 33,
+			"reprintedAs": [
+				"无效化效应|KT-CLL"
+			],
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "你被迫进行智力、感知或魅力豁免检定时所使用"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"直到你的下回合开始，你在智力、感知和魅力豁免检定上具有优势（包括触发此法术的那次豁免）。你还获得对心灵和力场伤害的抗性，直到你的下回合开始。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用4环或更高法术位施展此法术时，你可以在优势掷骰中额外掷一枚{@dice d20}。若你以5环或更高环阶施展，它在持续时间内给予对心灵和力场伤害的免疫。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "无效化学科",
+					"source": "ktp",
+					"ENG_name": "Nullification Discipline"
+				}
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Nullify Effect"
+		},
+		{
+			"name": "心灵吸取",
+			"source": "ktp",
+			"page": 33,
+			"reprintedAs": [
+				"心灵吸取|KT-CLL"
+			],
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你抽取一个可见生物的心灵能量来维系自身。该目标必须进行魅力豁免检定。失败者受到{@damage 3d8}心灵伤害，你获得等于所造成心灵伤害一半的临时生命值，并恢复1点已消耗的灵能点。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用3环或更高法术位施展此法术时，此法术额外造成{@damage 1d8}心灵伤害。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "吞噬学科",
+					"source": "ktp",
+					"ENG_name": "Consumption Discipline"
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"HL",
+				"THP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Psychic Drain"
+		},
+		{
+			"name": "冲击波",
+			"source": "ktp",
+			"page": 33,
+			"reprintedAs": [
+				"冲击波|KT-CLL"
+			],
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向四面八方释放一阵念力爆发。30尺内由你选择的每个生物都被击退5尺，且必须通过力量豁免检定，否则受到{@damage 8d6}钝击伤害并被击倒{@condition 倒地}。豁免成功的生物受到一半伤害，且不会被击倒{@condition 倒地}。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "心灵遥控学科",
+					"source": "ktp",
+					"ENG_name": "Telekinesis Discipline"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"areaTags": [
+				"S"
+			],
+			"ENG_name": "Shockwave"
+		},
+		{
+			"name": "骇人幻象",
+			"source": "ktp",
+			"page": 34,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将骇人幻象植入一个可见目标的心中。该目标必须进行感知豁免检定。失败者受到{@damage 3d6}心灵伤害，并必须立即用其反应以移动速度直接远离你移动。此移动不会强迫该生物进入任何危险区域，或做出使其受到伤害的移动（如跳下悬崖或进入法术效应）。豁免成功的目标受到一半伤害，且不会被强迫移动。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用2环或更高法术位施展此法术时，每比1环高一个环阶，伤害便提高{@dice 1d6}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "吟游诗人",
+						"source": "PHB",
+						"ENG_name": "Bard"
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "精类之触",
+					"source": "TCE",
+					"ENG_name": "Fey Touched"
+				},
+				{
+					"name": "妖精触碰",
+					"source": "XPHB",
+					"ENG_name": "Fey-Touched"
+				},
+				{
+					"name": "魔法学徒",
+					"source": "PHB",
+					"ENG_name": "Magic Initiate"
+				},
+				{
+					"name": "斯翠海文学徒",
+					"source": "SCC",
+					"ENG_name": "Strixhaven Initiate"
+				},
+				{
+					"name": "吸血鬼触碰",
+					"source": "ABH",
+					"ENG_name": "Vampire Touched"
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Terrifying Visions"
+		},
+		{
+			"name": "湍流跃迁",
+			"source": "ktp",
+			"page": 34,
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将自己传送至射程内一个可见的未被占据空间，原地留下一道空间扭曲。你原先位置10尺内的每个生物必须进行魅力豁免检定。失败者受到{@damage 5d4}力场伤害，并被传送至其原位5尺内一个由你选择的空置空间。成功者受到一半伤害，且不会被传送。",
+				"你还可以传送一个与你体型相同或更小的自愿生物，其携带的装备至多为其负载上限。施放此法术时该生物必须在你5尺内，且你的目的地空间5尺内必须有一个未被占据的空间供其现身；否则该生物将被留在原地。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法",
+					"entries": [
+						"当你使用4环或更高法术位施展此法术时，每比3环高一个环阶，伤害便提高{@dice 2d4}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "易位学科",
+					"source": "ktp",
+					"ENG_name": "Transposition Discipline"
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"FMV",
+				"TP"
+			],
+			"areaTags": [
+				"S"
+			],
+			"ENG_name": "Turbulent Warp"
+		},
+		{
+			"name": "解锁潜能",
+			"source": "ktp",
+			"page": 34,
+			"reprintedAs": [
+				"解锁潜能|KT-CLL"
+			],
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你解开一个生物心智的潜能，使其能全然触及自身的极限。在持续时间内，该生物每回合一次，可以将{@dice 1d4}加到它进行的任何攻击掷骰、伤害掷骰或豁免检定上。它每加上一次额外的{@dice 1d4}，便因超越自身天然极限而受到1点心灵伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "灵能使",
+						"source": "ktp",
+						"ENG_name": "Psion"
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "强化学科",
+					"source": "ktp",
+					"ENG_name": "Enhancement Discipline"
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Unlocked Potential"
+		}
+	],
+	"monster": [
+		{
+			"name": "灵能水晶",
+			"source": "ktp",
+			"page": 12,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20
+				}
+			],
+			"hp": {
+				"average": 2,
+				"formula": "1d4"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"60尺盲视（此半径之外目盲）"
+			],
+			"passive": 14,
+			"resist": [
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"能理解其创造者的语言，但无法言语"
+			],
+			"cr": "未知",
+			"trait": [
+				{
+					"name": "灵能魔宠",
+					"entries": [
+						"灵能水晶与其召唤者拥有相同的精神属性值。"
+					],
+					"ENG_name": "Psi Familiar"
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"ENG_name": "Psi Crystal"
+		}
+	],
+	"skill": [
+		{
+			"name": "灵能",
+			"source": "ktp",
+			"ability": "int",
+			"entries": [
+				"灵能是一项新的基于智力的技能，用于理解灵能性质的事物，如同奥秘之于奥术性质的事物。它能帮助你辨识灵能性质的物品、现象与生物。"
+			],
+			"ENG_name": "Psionics"
+		}
+	]
+}
