@@ -1,0 +1,3951 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLAPal",
+				"abbreviation": "LLAPal",
+				"full": "替代圣武士",
+				"url": "https://www.gmbinder.com/share/-Nkliby-qWnFzQjiC4Pd",
+				"version": "3.0.0",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle"
+				],
+				"color": "eaab30"
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"llspell"
+			],
+			"optionalfeature": [
+				"LLStyles"
+			]
+		},
+		"edition": "classic",
+		"dateAdded": 1647980495,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "af8183c731"
+	},
+	"class": [
+		{
+			"ENG_name": "Alternate Paladin",
+			"name": "替代圣武士",
+			"source": "LLAPal",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "1/2",
+			"spellsKnownProgression": [
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11
+			],
+			"classSpells": [
+				"灾祸术",
+				"祝福术",
+				"典礼术|xge",
+				"命令术",
+				"强令对决（变体）|llspell",
+				"疗伤术",
+				"侦测善恶",
+				"侦测魔法",
+				"侦测毒性和疾病",
+				"神恩（变体）|llspell",
+				"以太之锚|llspell",
+				"英雄气概",
+				"防护善恶",
+				"庇护术",
+				"炽焰斩（变体）|llspell",
+				"虔诚护盾",
+				"雷鸣斩（变体）|llspell",
+				"激愤斩（变体）|llspell",
+				"援助术",
+				"印记斩（变体）|llspell",
+				"寻获坐骑（变体）|llspell",
+				"遗体防腐",
+				"生物定位术（变体）|llspell",
+				"魔化武器（变体）|llspell",
+				"治疗祷言",
+				"防护毒素",
+				"恢复术|llspell",
+				"守护之链",
+				"诚实之域",
+				"活力灵光",
+				"希望信标",
+				"致盲斩（变体）|llspell",
+				"造粮术",
+				"十字军披风",
+				"昼明术",
+				"解除魔法",
+				"防护法阵",
+				"移除诅咒",
+				"回生术",
+				"魂灵环绕|tce",
+				"生命灵光",
+				"净化灵光",
+				"放逐术",
+				"防死结界（变体）|llspell",
+				"行动自如",
+				"信仰守卫",
+				"惊惧斩（变体）|llspell",
+				"放逐斩（变体）|llspell",
+				"原力法阵",
+				"湮灭波",
+				"驱逐善恶",
+				"指使术",
+				"神圣武器|xge",
+				"群体疗伤术",
+				"死者复活",
+				"咒唤圣光（变体）|llspell"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"insight",
+								"intimidation",
+								"medicine",
+								"persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"heavy",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"heavy": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@filter 军用武器|items|category=基础|type=军用武器}与一个{@item 盾牌|phb}，或 (b) 两把{@filter 军用武器|items|category=基础|type=军用武器}",
+					"(a) 一件{@filter 简易武器|items|category=基础|type=简易武器}，或 (b) 五支{@item 标枪|phb|标枪}",
+					"(a) 一个{@item 祭司套组|phb}或 (b) 一个{@item 探索套组|phb}",
+					"一件{@item 链甲|phb}与一个{@item 圣徽|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"盾牌|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						],
+						"b": [
+							{
+								"item": "标枪|phb",
+								"quantity": 5
+							}
+						]
+					},
+					{
+						"a": [
+							"祭司套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"a": [
+							"链甲|phb",
+							"圣徽|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 已知法术|spells|class=替代圣武士（LLAPal）}",
+						"灵光半径"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							2,
+							0
+						],
+						[
+							2,
+							0
+						],
+						[
+							3,
+							0
+						],
+						[
+							3,
+							0
+						],
+						[
+							4,
+							"10尺"
+						],
+						[
+							4,
+							"10尺"
+						],
+						[
+							5,
+							"10尺"
+						],
+						[
+							5,
+							"15尺"
+						],
+						[
+							6,
+							"15尺"
+						],
+						[
+							6,
+							"15尺"
+						],
+						[
+							7,
+							"20尺"
+						],
+						[
+							7,
+							"20尺"
+						],
+						[
+							8,
+							"20尺"
+						],
+						[
+							8,
+							"25尺"
+						],
+						[
+							9,
+							"25尺"
+						],
+						[
+							9,
+							"25尺"
+						],
+						[
+							10,
+							"30尺"
+						],
+						[
+							10,
+							"30尺"
+						],
+						[
+							11,
+							"30尺"
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1环|spells|level=1|class=替代圣武士（LLAPal）}",
+						"{@filter 2环|spells|level=2|class=替代圣武士（LLAPal）}",
+						"{@filter 3环|spells|level=3|class=替代圣武士（LLAPal）}",
+						"{@filter 4环|spells|level=4|class=替代圣武士（LLAPal）}",
+						"{@filter 5环|spells|level=5|class=替代圣武士（LLAPal）}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"战斗风格|替代圣武士|LLAPal|1",
+				"受膏战士|替代圣武士|LLAPal|1",
+				"神圣热忱|替代圣武士|LLAPal|1",
+				"施法|替代圣武士|LLAPal|2",
+				"至圣斩|替代圣武士|LLAPal|2",
+				"神圣再生|替代圣武士|LLAPal|3",
+				{
+					"classFeature": "神圣誓言|替代圣武士|LLAPal|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代圣武士|LLAPal|4",
+				"额外攻击|替代圣武士|LLAPal|5",
+				"神圣感知|替代圣武士|LLAPal|5",
+				"守护灵光|替代圣武士|LLAPal|6",
+				{
+					"classFeature": "圣誓特性|替代圣武士|LLAPal|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代圣武士|LLAPal|8",
+				"神佑|替代圣武士|LLAPal|9",
+				"勇气灵光|替代圣武士|LLAPal|10",
+				"正义打击|替代圣武士|LLAPal|11",
+				"属性值提升|替代圣武士|LLAPal|12",
+				"净化之触|替代圣武士|LLAPal|14",
+				{
+					"classFeature": "圣誓特性|替代圣武士|LLAPal|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代圣武士|LLAPal|16",
+				"传奇信念|替代圣武士|LLAPal|18",
+				"属性值提升|替代圣武士|LLAPal|19",
+				{
+					"classFeature": "圣誓特性|替代圣武士|LLAPal|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"hasFluff": true,
+			"foundryImg": "icons/magic/holy/chalice-glowing-gold.webp"
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Alternate Paladin",
+			"name": "替代圣武士",
+			"source": "LLAPal",
+			"entries": [
+				{
+					"ENG_name": "The Paladin",
+					"type": "section",
+					"name": "圣武士",
+					"source": "LLAPal",
+					"page": 1,
+					"entries": [
+						"当邪教的勇士嘲讽仍躲在军械库中的村民时，一名年轻人许下了不惜一切代价保卫家园的绝望誓言。当他迈步出去面对那邪恶的勇士时，他感到一股神圣之力涌入体内。当他拔剑迎敌时，剑刃闪耀着纯粹阳光般的光辉。",
+						"他站在被击败的敌人上方，手中斧刃沉重地垂着。这位日渐衰老的男子回想起奴隶贩子来到他的土地之前他曾拥有的家庭。夺走他家人的凶残海盗早已被杀尽，但俯卧在他脚边的这个人犯有同样的罪孽。低声念出他的复仇之誓，他的斧头落下了。",
+						"当大地精们深入林间时，一名娇小的半身人女孩向古老森林祈求力量。被古树的远古之力灌注，她挺身而出，成为那片自她有记忆以来便是家园的林间国度的勇士。借由她，原初森林本身加入了战局",
+						"上述三位正义的战士皆是圣武士\u2014\u2014以神圣誓言束缚的勇士，只要他们仍忠于自己的誓言，就会被注入正义之力。"
+					]
+				},
+				{
+					"ENG_name": "Paragons of Virtue",
+					"type": "entries",
+					"name": "美德的典范",
+					"source": "LLAPal",
+					"page": 1,
+					"entries": [
+						"各地有许多神圣战士，但圣武士寥寥无几。真正的圣武士以对自己事业的坚定不移著称，是他们立誓恪守的美德的活化身。无论无私还是功利，无论侍奉善良还是邪恶、守序还是混乱，圣武士都是其毕生立誓恪守的美德、事业或信条的巅峰。",
+						"许多圣武士被尊为保卫无辜者、点燃希望、光荣度日的神圣骑士。然而，并非人人都是正义的典范。有些人立誓不惜一切手段对敌人降下神罚，或立誓维持荒野与文明之间的平衡。"
+					]
+				},
+				{
+					"ENG_name": "Bound by Oath",
+					"type": "entries",
+					"name": "誓言所缚",
+					"source": "LLAPal",
+					"page": 1,
+					"entries": [
+						"无论奉行怎样的事业或美德，所有圣武士都受神圣誓言束缚。无论他们是自幼被培养、在训练完成时立下誓言，还是在绝望中向上天呼喊，所有圣武士都必须立下神圣誓言，才能被注入神力。尽管这些誓言的确切字句随时代与文化而异，这些神圣誓约将所有立誓的圣武士缚于共同的事业，无论那是什么。",
+						"一旦立下这神圣誓约，圣武士便必须以坚定不移的信念恪守其誓言的信条，否则便有失去神授能力之虞。轻微的违背若作出补偿尚可宽恕，但若圣武士明知且故意地违反其神圣誓言的信条，便可能彻底破碎誓言，失去誓言注入他们体内的神力。"
+					]
+				},
+				{
+					"ENG_name": "Creating Your Alternate Paladin",
+					"type": "entries",
+					"name": "创建你的替代圣武士",
+					"source": "LLAPal",
+					"page": 1,
+					"entries": [
+						"立下神圣誓言成为圣武士的人目标专一。是什么驱使着你的圣武士？他们是否自幼被培养为其神明的勇士？他们是否被复仇的渴望吞噬？抑或，他们立誓成为荒野自然之美的守护者？",
+						"另外，决定他们于何时、以何种方式立下那使他们成为圣武士的誓言。是在多年的准备、训练与研习之后吗？他们的誓言是在一阵突发的暴怒或绝望中立下的吗？还是神明的神圣使者于梦中造访他们，将他们选为自己的勇士？",
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"source": "LLAPal",
+							"page": 2,
+							"entries": [
+								"你可以使用以下建议快速建出一名圣武士：首先，将力量作为你的最高属性值，其次是魅力。其次，选择侍僧背景。最后，选择均衡战斗风格，并选定一个神圣誓言。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Blackguard",
+			"name": "黑暗卫士",
+			"shortName": "黑暗卫士",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"造成恐惧|xge",
+							"炼狱叱喝"
+						],
+						"5": [
+							"目盲术/耳聋术",
+							"幽影刃|xge"
+						],
+						"9": [
+							"活化死尸",
+							"咒唤邪魔（变体）|llspell"
+						],
+						"13": [
+							"咒缚之触|llspell",
+							"唤起死灵（变体）|llspell"
+						],
+						"17": [
+							"灵魂裂解|llspell",
+							"斩首之刃|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"造成恐惧|xge",
+				"炼狱叱喝",
+				"目盲术/耳聋术",
+				"幽影刃|xge",
+				"活化死尸",
+				"咒唤邪魔（变体）|llspell",
+				"咒缚之触|llspell",
+				"唤起死灵（变体）|llspell",
+				"灵魂裂解|llspell",
+				"斩首之刃|llspell"
+			],
+			"subclassFeatures": [
+				"黑暗卫士|替代圣武士|LLAPal|黑暗卫士|LLAPal|3",
+				"仇恨灵光|替代圣武士|LLAPal|黑暗卫士|LLAPal|7",
+				"险恶韧性|替代圣武士|LLAPal|黑暗卫士|LLAPal|15",
+				"仇恨化身|替代圣武士|LLAPal|黑暗卫士|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Conquest",
+			"name": "征服",
+			"shortName": "征服",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"造成恐惧|xge",
+							"命令术"
+						],
+						"5": [
+							"定身类人",
+							"寻获坐骑（变体）|llspell"
+						],
+						"9": [
+							"降咒",
+							"恐惧术"
+						],
+						"13": [
+							"支配野兽",
+							"惊惧斩（变体）|llspell"
+						],
+						"17": [
+							"支配类人",
+							"斩首之刃|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"造成恐惧|xge",
+				"命令术",
+				"定身类人",
+				"寻获坐骑（变体）|llspell",
+				"降咒",
+				"恐惧术",
+				"支配野兽",
+				"惊惧斩（变体）|llspell",
+				"支配类人",
+				"斩首之刃|llspell"
+			],
+			"subclassFeatures": [
+				"征服之誓|替代圣武士|LLAPal|征服|LLAPal|3",
+				"统御灵光|替代圣武士|LLAPal|征服|LLAPal|7",
+				"无情报复|替代圣武士|LLAPal|征服|LLAPal|15",
+				"征服化身|替代圣武士|LLAPal|征服|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Oath of Devotion",
+			"name": "奉献之誓",
+			"shortName": "奉献",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"祝福术",
+							"虔诚护盾"
+						],
+						"5": [
+							"寻获坐骑（变体）|llspell",
+							"恢复术|llspell"
+						],
+						"9": [
+							"希望信标",
+							"移除诅咒"
+						],
+						"13": [
+							"防死结界（变体）|llspell",
+							"信仰守卫"
+						],
+						"17": [
+							"拂晓|xge",
+							"驱逐善恶"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"祝福术",
+				"虔诚护盾",
+				"寻获坐骑（变体）|llspell",
+				"恢复术|llspell",
+				"希望信标",
+				"移除诅咒",
+				"防死结界（变体）|llspell",
+				"信仰守卫",
+				"拂晓|xge",
+				"驱逐善恶"
+			],
+			"subclassFeatures": [
+				"奉献之誓|替代圣武士|LLAPal|奉献|LLAPal|3",
+				"奉献灵光|替代圣武士|LLAPal|奉献|LLAPal|7",
+				"纯净之魂|替代圣武士|LLAPal|奉献|LLAPal|15",
+				"奉献化身|替代圣武士|LLAPal|奉献|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Oath of Glory",
+			"name": "荣耀之誓",
+			"shortName": "荣耀",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"强令对决（变体）|llspell",
+							"跳跃术（变体）|llspell"
+						],
+						"5": [
+							"强化属性",
+							"魔化武器（变体）|llspell"
+						],
+						"9": [
+							"加速术",
+							"雷霆步|xge"
+						],
+						"13": [
+							"防死结界（变体）|llspell",
+							"行动自如"
+						],
+						"17": [
+							"放逐斩（变体）|llspell",
+							"原力法阵"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"强令对决（变体）|llspell",
+				"跳跃术（变体）|llspell",
+				"强化属性",
+				"魔化武器（变体）|llspell",
+				"加速术",
+				"雷霆步|xge",
+				"防死结界（变体）|llspell",
+				"行动自如",
+				"放逐斩（变体）|llspell",
+				"原力法阵"
+			],
+			"subclassFeatures": [
+				"荣耀之誓|替代圣武士|LLAPal|荣耀|LLAPal|3",
+				"神话迅捷|替代圣武士|LLAPal|荣耀|LLAPal|7",
+				"荣耀之盾|替代圣武士|LLAPal|荣耀|LLAPal|15",
+				"荣耀化身|替代圣武士|LLAPal|荣耀|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Oath of the Ancients",
+			"name": "古贤之誓",
+			"shortName": "古贤",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"吸收元素|xge",
+							"诱捕打击（变体）|llspell"
+						],
+						"5": [
+							"月华之光",
+							"荆棘丛生"
+						],
+						"9": [
+							"植物滋长",
+							"擒抱藤（变体）|llspell"
+						],
+						"13": [
+							"冰风暴",
+							"自然守卫|xge"
+						],
+						"17": [
+							"问道自然",
+							"树跃术"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"吸收元素|xge",
+				"诱捕打击（变体）|llspell",
+				"月华之光",
+				"荆棘丛生",
+				"植物滋长",
+				"擒抱藤（变体）|llspell",
+				"冰风暴",
+				"自然守卫|xge",
+				"问道自然",
+				"树跃术"
+			],
+			"subclassFeatures": [
+				"古贤之誓|替代圣武士|LLAPal|古贤|LLAPal|3",
+				"守御灵光|替代圣武士|LLAPal|古贤|LLAPal|7",
+				"不灭哨卫|替代圣武士|LLAPal|古贤|LLAPal|15",
+				"古贤化身|替代圣武士|LLAPal|古贤|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Oath of Vengeance",
+			"name": "复仇之誓",
+			"shortName": "复仇",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"灾祸术",
+							"强令对决（变体）|llspell"
+						],
+						"5": [
+							"定身类人",
+							"迷踪步"
+						],
+						"9": [
+							"加速术",
+							"回避侦测"
+						],
+						"13": [
+							"放逐术",
+							"任意门"
+						],
+						"17": [
+							"渺远步|xge",
+							"定身怪物"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"灾祸术",
+				"强令对决（变体）|llspell",
+				"定身类人",
+				"迷踪步",
+				"加速术",
+				"回避侦测",
+				"放逐术",
+				"任意门",
+				"渺远步|xge",
+				"定身怪物"
+			],
+			"subclassFeatures": [
+				"复仇之誓|替代圣武士|LLAPal|复仇|LLAPal|3",
+				"复仇之盾|替代圣武士|LLAPal|复仇|LLAPal|7",
+				"坚韧复仇|替代圣武士|LLAPal|复仇|LLAPal|15",
+				"复仇化身|替代圣武士|LLAPal|复仇|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Repentance",
+			"name": "忏悔",
+			"shortName": "忏悔",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"庇护术",
+							"睡眠术"
+						],
+						"5": [
+							"安定心神",
+							"定身类人"
+						],
+						"9": [
+							"法术反制（变体）|llspell",
+							"催眠图纹（变体）|llspell"
+						],
+						"13": [
+							"生命灵光",
+							"欧提路克弹力法球"
+						],
+						"17": [
+							"定身怪物",
+							"力场墙（变体）|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"庇护术",
+				"睡眠术",
+				"安定心神",
+				"定身类人",
+				"法术反制（变体）|llspell",
+				"催眠图纹（变体）|llspell",
+				"生命灵光",
+				"欧提路克弹力法球",
+				"定身怪物",
+				"力场墙（变体）|llspell"
+			],
+			"subclassFeatures": [
+				"忏悔之誓|替代圣武士|LLAPal|忏悔|LLAPal|3",
+				"赎罪灵光|替代圣武士|LLAPal|忏悔|LLAPal|7",
+				"救赎再生|替代圣武士|LLAPal|忏悔|LLAPal|15",
+				"救赎化身|替代圣武士|LLAPal|忏悔|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Splendor",
+			"name": "辉煌",
+			"shortName": "辉煌",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"吸收元素|xge",
+							"燃烧之手"
+						],
+						"5": [
+							"镜影术",
+							"灼热射线"
+						],
+						"9": [
+							"马友夫微流星|xge",
+							"咒唤元素（变体）|llspell"
+						],
+						"13": [
+							"元素灾厄|xge",
+							"冰风暴"
+						],
+						"17": [
+							"异界探知",
+							"焰击术"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"吸收元素|xge",
+				"燃烧之手",
+				"镜影术",
+				"灼热射线",
+				"马友夫微流星|xge",
+				"咒唤元素（变体）|llspell",
+				"元素灾厄|xge",
+				"冰风暴",
+				"异界探知",
+				"焰击术"
+			],
+			"subclassFeatures": [
+				"辉煌之誓|替代圣武士|LLAPal|辉煌|LLAPal|3",
+				"毁灭灵光|替代圣武士|LLAPal|辉煌|LLAPal|7",
+				"元素叱喝|替代圣武士|LLAPal|辉煌|LLAPal|15",
+				"元素化身|替代圣武士|LLAPal|辉煌|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "The Oathless",
+			"name": "无誓者",
+			"shortName": "无誓者",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"魅惑类人",
+							"虚假生命"
+						],
+						"5": [
+							"隐形术",
+							"暗示术"
+						],
+						"9": [
+							"气化形体",
+							"吸血鬼之触"
+						],
+						"13": [
+							"魅惑怪物|XGE",
+							"高等隐形术"
+						],
+						"17": [
+							"支配怪物",
+							"穿墙术"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"魅惑类人",
+				"虚假生命",
+				"隐形术",
+				"暗示术",
+				"气化形体",
+				"吸血鬼之触",
+				"魅惑怪物|XGE",
+				"高等隐形术",
+				"支配怪物",
+				"穿墙术"
+			],
+			"subclassFeatures": [
+				"无誓者|替代圣武士|LLAPal|无誓者|LLAPal|3",
+				"欺瞒灵光|替代圣武士|LLAPal|无誓者|LLAPal|7",
+				"强横意志|替代圣武士|LLAPal|无誓者|LLAPal|15",
+				"耻辱化身|替代圣武士|LLAPal|无誓者|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Throne",
+			"name": "王座",
+			"shortName": "王座",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"命令术",
+							"强令对决（变体）|llspell"
+						],
+						"5": [
+							"寻获坐骑（变体）|llspell",
+							"守护之链"
+						],
+						"9": [
+							"活力灵光",
+							"灵体卫士"
+						],
+						"13": [
+							"放逐术",
+							"信仰守卫"
+						],
+						"17": [
+							"原力法阵",
+							"指使术"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"命令术",
+				"强令对决（变体）|llspell",
+				"活力灵光",
+				"灵体卫士",
+				"放逐术",
+				"信仰守卫",
+				"原力法阵",
+				"指使术"
+			],
+			"subclassFeatures": [
+				"王座之誓|替代圣武士|LLAPal|王座|LLAPal|3",
+				"神圣庇盾|替代圣武士|LLAPal|王座|LLAPal|7",
+				"坚定骑士|替代圣武士|LLAPal|王座|LLAPal|15",
+				"忠诚化身|替代圣武士|LLAPal|王座|LLAPal|20"
+			]
+		},
+		{
+			"ENG_name": "Vigilance",
+			"name": "警惕",
+			"shortName": "警惕",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"警报术",
+							"以太之锚|llspell"
+						],
+						"5": [
+							"生物定位术（变体）|llspell",
+							"月华之光"
+						],
+						"9": [
+							"法术反制（变体）|llspell",
+							"回避侦测"
+						],
+						"13": [
+							"净化灵光",
+							"放逐术"
+						],
+						"17": [
+							"定身怪物",
+							"探知术"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"警报术",
+				"以太之锚|llspell",
+				"生物定位术（变体）|llspell",
+				"月华之光",
+				"法术反制（变体）|llspell",
+				"回避侦测",
+				"净化灵光",
+				"放逐术",
+				"定身怪物",
+				"探知术"
+			],
+			"subclassFeatures": [
+				"警惕之誓|替代圣武士|LLAPal|警惕|LLAPal|3",
+				"警惕灵光|替代圣武士|LLAPal|警惕|LLAPal|7",
+				"警惕视觉|替代圣武士|LLAPal|警惕|LLAPal|15",
+				"警惕化身|替代圣武士|LLAPal|警惕|LLAPal|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Anointed Warrior",
+			"name": "受膏战士",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"在1级时，你被祝圣为一名神圣战士，并获得下述与你阵营对应的能力。",
+				"此特性与你之后获得的其他圣武士特性，由等同于你圣武士等级的神圣热忱池供能。完成一次长休后，你恢复所有神圣热忱。",
+				{
+					"ENG_name": "Good",
+					"type": "entries",
+					"name": "善良",
+					"entries": [
+						"你的神圣之触可以治疗。你可以用一个动作触碰一个生物并消耗神圣热忱。每消耗一点，你可以选择：为其恢复等同于你魅力调整值的生命值、治愈一种正折磨它的疾病，或结束中毒状态。"
+					]
+				},
+				{
+					"ENG_name": "Neutral",
+					"type": "entries",
+					"name": "中立",
+					"entries": [
+						"在宇宙斗争中，你的触碰能强化盟友。你可以用一个动作触碰一个生物并消耗一点神圣热忱，给予其等同于你魅力调整值的临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Evil",
+					"type": "entries",
+					"name": "邪恶",
+					"entries": [
+						"你的邪恶之触汲取生命。当你以近战攻击伤害一个生物时，你可以消耗一点神圣热忱，获得等同于你魅力调整值的临时生命值。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/holy/chalice-glowing-gold.webp"
+		},
+		{
+			"ENG_name": "Divine Fervor",
+			"name": "神圣热忱",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"你神圣誓言的正义之力以神圣热忱池表示，用于为各种圣武士与誓言特性供能。你拥有的神圣热忱等同于你的圣武士等级。完成一次长休后，你恢复已消耗的神圣热忱。"
+			],
+			"foundrySystem": {
+				"uses.max": "@classes.alternate-paladin.levels + @abilities.cha.mod",
+				"per": "lr"
+			},
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"在1级时，你选择一种最能体现你训练内容的战斗风格。你不能重复选择同一种战斗风格，即使某个特性允许你选择另一种战斗风格。",
+				"每当你获得此职业的一个等级时，你可以将你的战斗风格切换为另一种你选择的战斗风格。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "均衡战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "经典剑术|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "防御战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "巨武器战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "骑乘武者|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "守护|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "多用战斗|LLStyles"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Divine Smite",
+			"name": "至圣斩",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"同样从2级开始，你可以将神圣之怒引入你的打击。每当你以近战武器攻击或徒手打击命中时，你可以消耗一个法术位造成额外伤害，其类型由你的阵营决定：",
+				{
+					"type": "table",
+					"caption": "至圣斩",
+					"colLabels": [
+						"阵营",
+						"伤害类型"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"善良",
+							"光耀"
+						],
+						[
+							"中立",
+							"雷鸣"
+						],
+						[
+							"邪恶",
+							"暗蚀"
+						]
+					]
+				},
+				"使用1环法术位时此额外伤害为2d8，每比1环高一环再增加1d8，最高为6d8伤害。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				}
+			},
+			"foundryImg": "icons/skills/targeting/crosshair-triple-strike-orange.webp"
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"在2级时，你学会汲取神圣誓言之力来施展神圣法术。你获得以下益处：",
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"圣武士职业表展示了你可用来施展1环及更高环阶法术的法术位数量。要施展一个圣武士法术，你必须消耗一个不低于该法术环阶的法术位。完成一次长休后，你恢复所有已消耗的法术位。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known Of 1st-Level And Higher",
+					"type": "entries",
+					"name": "1环及更高的已知法术",
+					"entries": [
+						"在2级时，从本职业末尾的圣武士法术列表中习得两个1环法术。圣武士职业表的已知法术列展示了你何时习得更多圣武士法术，这些法术都必须是你拥有对应环阶法术位的环阶。",
+						"当你获得一个圣武士等级时，你可以选择一个你已知的圣武士法术，用另一个你选择的法术替换它。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"你的力量源于信念之坚定，因此魅力是你圣武士法术的施法属性。当法术提及你的施法属性、你的法术豁免DC，或当你进行法术攻击掷骰时，你使用魅力。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"type": "entries",
+					"name": "法器",
+					"entries": [
+						"你使用圣徽作为圣武士法术的法器。圣徽是一件代表你立场的微型物件或徽记。若你将圣徽铭刻在盾牌上，你可以将那面盾牌作为你法术的施法法器。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Divine Regeneration",
+			"name": "神圣再生",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"同样在3级时，你学会汲取誓言之力来恢复部分神力。在一次短休期间，你可以恢复环阶总和等同于你魅力调整值的法术位，或等量的神圣热忱。",
+				"一旦你使用此特性恢复了法术位或热忱，你必须完成一次长休后才能再次使用它。"
+			],
+			"foundrySystem": {
+				"activation.condition": "短休期间"
+			},
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Sacred Oath",
+			"name": "神圣誓言",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你已赢得立下神圣誓言的荣誉，这标志着你成为一名真正的圣武士。在3级时，选择一个最能代表你信仰的神圣誓言：古贤之誓、征服、奉献、荣耀、辉煌、王座、复仇或警惕。忏悔、无誓者与黑暗卫士亦在此列。",
+				"你的神圣誓言在3级时赋予特性，并在你达到此职业的7级、15级和20级时再次赋予。",
+				{
+					"ENG_name": "Oath Spells",
+					"type": "entries",
+					"name": "圣誓法术",
+					"entries": [
+						"每个神圣誓言都包含一份圣誓法术列表，你按神圣誓言描述中的圣武士等级习得它们。它们对你而言是圣武士法术，不计入你的已知法术数量，且无法被替换。"
+					]
+				},
+				{
+					"ENG_name": "Sacred Tenets",
+					"type": "entries",
+					"name": "神圣信条",
+					"entries": [
+						"每个誓言都有三条你立誓恪守的神圣信条。若圣武士明知且故意地违反其某条神圣信条，在花费1小时作出与其誓言相称的补偿之前，其无法使用神圣誓言特性。"
+					]
+				},
+				{
+					"ENG_name": "Breaking an Oath",
+					"type": "entries",
+					"name": "破誓",
+					"entries": [
+						"持续违反神圣信条的圣武士有破碎誓言之虞。有些人改立救赎之誓，但另一些则堕落为无誓者或邪恶的黑暗卫士。与你的DM谈谈你誓言及其信条的界限。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Divine Sense",
+			"name": "神圣感知",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 5,
+			"entries": [
+				"从5级开始，你可以用一个动作唤醒你的感官，感知异界生物的存在。持续10分钟，你知晓60尺内天界生物、元素生物、精类生物、邪魔或不死生物的精确位置与生物类型，前提是它们不处于全身掩护之后，也未受预言系魔法遮蔽。",
+				"一旦你使用了神圣感知，你必须完成一次短休或长休后才能再次使用它。若你没有剩余使用次数，你可以消耗一点神圣热忱再次使用它。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-teal.webp"
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合采取攻击动作时，你可以攻击两次而非一次。此外，若你用你的动作施展一个圣武士法术，你可以在该回合用附赠动作进行一次武器攻击。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Aura of Protection",
+			"name": "守护灵光",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 6,
+			"entries": [
+				"对信条坚定不移的信念支撑着与你并肩而立之人。从6级开始，只要你未处于失能状态，你便散发着一道10尺半径的隐形灵光。你的灵光只使你与你选择的生物受益。",
+				"处于你守护灵光下的生物进行豁免检定时，可以加上你的魅力调整值（最低为+0）。",
+				"在特定等级，此灵光的半径会增加，如圣武士职业表的灵光半径列所示。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-glowing-blue.webp"
+		},
+		{
+			"ENG_name": "Sacred Oath Feature",
+			"name": "圣誓特性",
+			"source": "LLAPal",
+			"page": 4,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得一项由你的神圣誓言赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Divine Health",
+			"name": "神佑",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 9,
+			"entries": [
+				"你誓言的神力保护你免受伤害。在9级时，你获得毒素伤害抗性，并免疫所有疾病与中毒状态。"
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage.webp"
+		},
+		{
+			"ENG_name": "Aura of Courage",
+			"name": "勇气灵光",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 10,
+			"entries": [
+				"你的灵光为受其影响的生物注入面对邪恶与危险的无畏勇气。从10级开始，处于你守护灵光下的生物免疫恐慌状态。若一个恐慌状态的生物进入你的灵光，你可以在它留在灵光内期间暂停该效应。"
+			],
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp"
+		},
+		{
+			"ENG_name": "Righteous Strikes",
+			"name": "正义打击",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 11,
+			"entries": [
+				"你的超自然信念灌注你的打击。从11级开始，每当你以近战武器攻击命中一个生物，你造成额外的1d8伤害。此额外伤害的类型与你的至圣斩相同。"
+			],
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-orange.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Purifying Touch",
+			"name": "净化之触",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 14,
+			"entries": [
+				"从14级开始，你可以运用神力驱散敌方法术。你可以用一个动作，立刻结束一个正影响你的法术，或一个你触碰的自愿生物身上的一个法术。",
+				"一旦你使用此特性，你必须完成一次短休或长休后才能再次使用它。若你没有剩余使用次数，你可以消耗五点神圣热忱再次使用它。"
+			],
+			"foundryImg": "icons/magic/life/heart-hand-gold-green-light.webp"
+		},
+		{
+			"ENG_name": "Sacred Oath Feature",
+			"name": "圣誓特性",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得一项由你的神圣誓言赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Legendary Conviction",
+			"name": "传奇信念",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 18,
+			"entries": [
+				"你对誓言的传奇奉献赋予你无穷无尽的神圣热忱。从18级开始，只要你未处于失能状态，在战斗中你的每个回合开始时，你恢复一点神圣热忱。"
+			],
+			"foundryImg": "icons/equipment/head/greathelm-slotted-steel.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Sacred Oath Feature",
+			"name": "圣誓特性",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"level": 20,
+			"entries": [
+				"在20级时，你获得一项由你的神圣誓言赋予的特性。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Ancient Spells",
+			"name": "古贤法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "古贤",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术数量，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2级",
+							"{@spell 吸收元素|xge}, {@spell 诱捕打击（变体）|llspell}"
+						],
+						[
+							"5级",
+							"{@spell 月华之光}, {@spell 荆棘丛生}"
+						],
+						[
+							"9级",
+							"{@spell 植物滋长}, {@spell 擒抱藤（变体）|llspell}"
+						],
+						[
+							"13级",
+							"{@spell 冰风暴}, {@spell 自然守卫|xge}"
+						],
+						[
+							"17级",
+							"{@spell 问道自然}, {@spell 树跃术}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Elder Shield",
+			"name": "远古之盾",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "古贤",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"当你或你10尺内的另一个生物受到寒冷、火焰、闪电、毒素或雷鸣伤害时，你可以用你的反应消耗一点神圣热忱，使该伤害减少等同于你圣武士等级＋你的魅力调整值的数值。",
+				"从6级开始，你可以用此反应守护处于你守护灵光下的任何生物。"
+			],
+			"foundryImg": "icons/equipment/shield/kite-wooden-oak-glow.webp"
+		},
+		{
+			"ENG_name": "Oath of the Ancients",
+			"name": "古贤之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "古贤",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此神圣誓言的圣武士常被称为绿骑士，他们誓要守护一切形态的生命与美。他们是自然世界的守护者，出没于妖精荒野的宫廷、德鲁伊结社，或任何自然以其古老而原初的荣光主宰一切之地。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "古贤之信条|替代圣武士|LLAPal|古贤|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "远古之盾|替代圣武士|LLAPal|古贤|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "翠绿斩|替代圣武士|LLAPal|古贤|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "古贤法术|替代圣武士|LLAPal|古贤|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Tenets of the Ancients",
+			"name": "古贤之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "古贤",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此誓言的圣武士恪守以下神圣信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"美丽",
+							"保护自然之美与无辜生命，免受任何威胁它们之人的侵害。"
+						],
+						[
+							"希望",
+							"用你的行动点燃希望之光，永不向绝望屈服。"
+						],
+						[
+							"光明",
+							"纵情于歌、舞与欢笑。用你的行动传播喜悦。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Verdant Smite",
+			"name": "翠绿斩",
+			"source": "LLAPal",
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "古贤",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用至圣斩时，你可以消耗一点神圣热忱，以远古之力灌注你的打击。除伤害外，你的目标还必须对你的圣武士法术豁免DC进行敏捷豁免检定。豁免失败者被神秘藤蔓束缚1分钟。",
+				"被束缚的生物或其5尺内的另一个生物，可以用一个动作对你的圣武士法术豁免DC进行一次力量检定。检定成功则这些神秘藤蔓被摧毁，该生物不再被束缚。"
+			],
+			"foundryImg": "icons/magic/nature/hand-weapon-wood-bark-brown.webp"
+		},
+		{
+			"ENG_name": "Aura of Warding",
+			"name": "守御灵光",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "古贤",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你誓言的远古之力守护你与你的盟友免受敌对魔法伤害。处于你守护灵光下的生物获得来自法术的所有伤害的抗性。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-blue.webp"
+		},
+		{
+			"ENG_name": "Undying Sentinel",
+			"name": "不灭哨卫",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "古贤",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你的身体每经过10年才衰老1岁，且法术与魔法效应无法使你衰老。此外，每次长休一次，当你以0生命值但未死亡的状态开始你的回合时，你可以选择以1生命值站起来。"
+			],
+			"foundryImg": "icons/magic/time/day-night-sunset-sunrise.webp"
+		},
+		{
+			"ENG_name": "Avatar of the Ancients",
+			"name": "古贤化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "古贤",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为远古之力的化身。持续10分钟，你的每个回合开始时恢复10点生命值，且你的守护灵光区域对你选择的生物成为困难地形。",
+				"若你陷入昏迷状态或用附赠动作结束变形，则变形结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次使用此特性。"
+			],
+			"foundryImg": "icons/magic/nature/symbol-moon-stars-white.webp"
+		},
+		{
+			"ENG_name": "Blackguard",
+			"name": "黑暗卫士",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "黑暗卫士",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此黑暗誓约的圣武士全力投身于推进邪恶。无论他们与强大的邪魔、不死生物结盟还是独自行动，黑暗卫士都以残忍、仇恨一切美好事物以及为达成邪恶目标不惜牺牲任何事物或任何人而著称。",
+				"黑暗卫士圣武士总是属于邪恶阵营，其他行为等同于违反他们的神圣誓言。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "黑暗元帅|替代圣武士|LLAPal|黑暗卫士|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "恐怖斩|替代圣武士|LLAPal|黑暗卫士|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "黑暗卫士法术|替代圣武士|LLAPal|黑暗卫士|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Blackguard Spells",
+			"name": "黑暗卫士法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "黑暗卫士",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术总数，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 造成恐惧|xge}, {@spell 炼狱叱喝}"
+						],
+						[
+							"5级",
+							"{@spell 目盲术/耳聋术}, {@spell 幽影刃|xge}"
+						],
+						[
+							"9级",
+							"{@spell 活化死尸（变体）|llspell}, {@spell 咒唤邪魔（变体）|llspell}"
+						],
+						[
+							"13级",
+							"{@spell 咒缚之触|llspell}, {@spell 唤起死灵（变体）|llspell}"
+						],
+						[
+							"17级",
+							"{@spell 灵魂裂解|llspell}, {@spell 斩首之刃|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Dreadful Smite",
+			"name": "恐怖斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "黑暗卫士",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用至圣斩时，你可以消耗一点神圣热忱，以纯粹的仇恨灌注它。除伤害外，你的目标还必须对你的圣武士法术豁免DC进行感知豁免检定。豁免失败者对你恐慌1分钟。若其回合结束时距你超过30尺，它可以重复此豁免检定，成功则结束该效应。"
+			],
+			"foundryImg": "icons/magic/death/weapon-scythe-rune-green.webp"
+		},
+		{
+			"ENG_name": "Marshal of Darkness",
+			"name": "黑暗元帅",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "黑暗卫士",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 2
+			},
+			"entries": [
+				"你可以用一个动作，消耗两点神圣热忱，将你的意志集中于30尺内一个挑战等级不高于你圣武士等级的邪魔或不死生物。它必须通过对抗你法术豁免DC的魅力豁免检定，否则将服从你24小时，或直到你再次使用此特性。"
+			],
+			"foundryImg": "icons/sundries/flags/banner-standard-tattered-red.webp"
+		},
+		{
+			"ENG_name": "Aura of Hate",
+			"name": "仇恨灵光",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "黑暗卫士",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你对一切美好与善良之物的仇恨为黑暗势力赋能。处于你守护灵光下的邪魔与不死生物的攻击掷骰加上你的魅力调整值。"
+			],
+			"foundryImg": "icons/magic/death/skull-horned-goat-pentagram-red.webp"
+		},
+		{
+			"ENG_name": "Sinister Resilience",
+			"name": "险恶韧性",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "黑暗卫士",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你的血肉浸透着黑暗魔法。你不再需要进食、饮水或呼吸，并获得暗蚀伤害以及所有非魔法钝击、穿刺与挥砍伤害的抗性。"
+			],
+			"foundryImg": "icons/magic/death/undead-skeleton-lich-armor.webp"
+		},
+		{
+			"ENG_name": "Avatar of Hate",
+			"name": "仇恨化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "黑暗卫士",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为神圣黑暗的化身。变形期间你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你30尺内的明亮光照变为微光光照。",
+						"当一个对你恐慌的生物在你的守护灵光内开始其回合时，它受到4d10点暗蚀伤害。",
+						"当你对一个生物造成暗蚀伤害时，你获得等同于所造成伤害一半的临时生命值。"
+					]
+				},
+				"此变形持续1分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-winged-roar.webp"
+		},
+		{
+			"ENG_name": "Conquering Smite",
+			"name": "征服斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "征服",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用至圣斩时，你可以消耗一点神圣热忱，以可怖意志灌注你的打击。除伤害外，你的目标还必须对你的圣武士法术豁免DC进行感知豁免检定。",
+				"豁免失败时，你选择目标被击倒倒地、对你恐慌直到你的下回合结束，或受到{@spell 命令术}法术的效应。"
+			],
+			"foundryImg": "icons/magic/light/beam-rays-red-small.webp"
+		},
+		{
+			"ENG_name": "Conquest Spells",
+			"name": "征服法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "征服",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术数量，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 造成恐惧|xge}, {@spell 命令术}"
+						],
+						[
+							"5级",
+							"{@spell 寻获坐骑（变体）|llspell}, {@spell 定身类人}"
+						],
+						[
+							"9级",
+							"{@spell 降咒}, {@spell 恐惧术}"
+						],
+						[
+							"13级",
+							"{@spell 惊惧斩（变体）|llspell}, {@spell 支配野兽}"
+						],
+						[
+							"17级",
+							"{@spell 支配类人}, {@spell 斩首之刃|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Lethal Strike",
+			"name": "致死强袭",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "征服",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"你可以以征服与支配的欲望灌注你的打击。当你进行武器攻击掷骰时，在得知命中或失手之前，你可以消耗一点神圣热忱，在你的掷骰结果上加上两倍你的魅力调整值。"
+			],
+			"foundryImg": "icons/skills/ranged/target-bullseye-arrow-glowing.webp"
+		},
+		{
+			"ENG_name": "Oath of Conquest",
+			"name": "征服之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "征服",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下征服之誓的圣武士通过支配寻求荣耀。对这些无情的骑士而言，胜利并不足够，他们必须在肉体与精神上碾碎敌人。他们以铁一般的正义维护法治，绝不留情、绝不宽恕。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "征服之信条|替代圣武士|LLAPal|征服|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "征服斩|替代圣武士|LLAPal|征服|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "致死强袭|替代圣武士|LLAPal|征服|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "征服法术|替代圣武士|LLAPal|征服|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Tenets of Conquest",
+			"name": "征服之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "征服",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此誓言的圣武士恪守以下信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"征服",
+							"碾碎你的敌人，让他们永不敢再与你为敌。"
+						],
+						[
+							"铁律",
+							"你的话即是法律。忠诚受赏，异见则遭无情惩处。"
+						],
+						[
+							"力量",
+							"强权即公理，而你正强大。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Aura of Dominion",
+			"name": "统御灵光",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "征服",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你誓言之力自你身上散发，威慑你的敌人。你选择的处于你守护灵光内的生物将该区域视为困难地形。若一个生物对你恐慌，则它处于你灵光内时速度降为0。",
+				"此效应对处于全身掩护之后的生物无效。"
+			],
+			"foundryImg": "icons/magic/control/debuff-energy-hold-levitate-green.webp"
+		},
+		{
+			"ENG_name": "Ruthless Reprisal",
+			"name": "无情报复",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "征服",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"胆敢与你为敌者将为其傲慢付出代价。每当守护灵光内的一个生物伤害你或强迫你进行豁免检定时，它受到等同于你魅力调整值（最低为1）的伤害，类型与你的至圣斩相同。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-blades-teal.webp"
+		},
+		{
+			"ENG_name": "Avatar of Conquest",
+			"name": "征服化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "征服",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为神圣征服的化身。变形期间你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得所有伤害的抗性。",
+						"在你的每个回合，你可以用附赠动作施展{@spell 命令术}法术而不消耗法术位。守护灵光内的目标在此豁免检定上具有劣势。",
+						"每当你在你的回合采取攻击动作时，你可以作为该动作的一部分进行一次额外的武器攻击。"
+					]
+				},
+				"此变形持续1分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-winged-roar.webp"
+		},
+		{
+			"ENG_name": "Consecrated Smite",
+			"name": "圣化斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "奉献",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用至圣斩时，你可以消耗一点神圣热忱，以神圣之力灌注你的打击。除伤害外，你的目标还必须对你的法术豁免DC进行感知豁免检定。豁免失败者被你驱散1分钟，或直到其受到伤害。",
+				"被驱散期间必须尽其所能远离你移动。被驱散期间它不能自愿靠近你，也不能进行反应。",
+				"邪魔、不死生物及其他邪恶阵营的生物在此感知豁免检定上具有劣势。"
+			],
+			"foundryImg": "icons/magic/light/beam-red-orange.webp"
+		},
+		{
+			"ENG_name": "Devotion Spells",
+			"name": "奉献法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "奉献",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术数量，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2级",
+							"{@spell 祝福术}, {@spell 虔诚护盾}"
+						],
+						[
+							"5级",
+							"{@spell 寻获坐骑（变体）|llspell}, {@spell 恢复术|llspell}"
+						],
+						[
+							"9级",
+							"{@spell 希望信标}, {@spell 移除诅咒}"
+						],
+						[
+							"13级",
+							"{@spell 防死结界（变体）|llspell}, {@spell 信仰守卫}"
+						],
+						[
+							"17级",
+							"{@spell 拂晓|xge}, {@spell 驱逐善恶}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Oath of Devotion",
+			"name": "奉献之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "奉献",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此神圣誓言的圣武士被称为白骑士，是美德、荣誉与正义的典范。他们以善良与守则的最高标准要求自己，将天界天使奉为完美楷模。奉献圣武士是黑暗世界中的灯塔。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奉献之信条|替代圣武士|LLAPal|奉献|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "圣化斩|替代圣武士|LLAPal|奉献|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神圣武器|替代圣武士|LLAPal|奉献|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奉献法术|替代圣武士|LLAPal|奉献|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Sacred Weapon",
+			"name": "神圣武器",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "奉献",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 2
+			},
+			"entries": [
+				"你可以用附赠动作消耗两点神圣热忱，以神力灌注你持有的一件近战武器。持续1分钟，它散发30尺半径的明亮光照，且其攻击掷骰加上你的魅力调整值。在此期间它视为魔法武器。",
+				"若武器离手，此效应立刻结束。"
+			],
+			"foundryImg": "icons/weapons/swords/sword-gold-holy.webp"
+		},
+		{
+			"ENG_name": "Tenets of Devotion",
+			"name": "奉献之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "奉献",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此誓言的圣武士恪守以下信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"怜悯",
+							"帮助并保护弱者。对敌人展现怜悯，但以审慎调和你的怜悯。"
+						],
+						[
+							"诚实",
+							"不要为一己之利欺骗他人。永远言出必行。"
+						],
+						[
+							"荣誉",
+							"行尽可能多的善，造成尽可能少的伤害。服从拥有正当权威之人。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Aura of Devotion",
+			"name": "奉献灵光",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "奉献",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的存在保护盟友免受精神改变效应。处于你守护灵光下的生物免疫魅惑状态。若一个魅惑状态的生物进入你的灵光，你可以在它留在灵光内期间暂停该效应。"
+			],
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp"
+		},
+		{
+			"ENG_name": "Purity of Spirit",
+			"name": "纯净之魂",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "奉献",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你对他人之善的纯净奉献保护你免受强大的外界影响。你永远处于{@spell 防护善恶}法术的效应之下。"
+			],
+			"foundryImg": "icons/creatures/mammals/unicorn-horned-white.webp"
+		},
+		{
+			"ENG_name": "Avatar of Devotion",
+			"name": "奉献化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "奉献",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为神圣正义的化身。变形期间你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你显现出天使之翼，获得60尺飞行速度。",
+						"你持有的任何近战武器都成为神圣武器。",
+						"你在你的守护灵光内散发明亮的阳光。"
+					]
+				},
+				"此变形持续1分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/magic/holy/saint-glass-portrait-halo.webp"
+		},
+		{
+			"ENG_name": "Glorious Smite",
+			"name": "荣耀斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "荣耀",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 2
+			},
+			"entries": [
+				"当你至圣斩时，你可以消耗两点神圣热忱，以你的荣耀灌注你的打击。攻击结束后立即，你在你10尺内你选择的生物间分配等同于你魅力调整值＋你的圣武士等级的临时生命值。",
+				"从6级开始，你分配这些临时生命值的范围随你的灵光半径增加。"
+			],
+			"foundryImg": "icons/magic/life/heart-cross-purple-orange.webp"
+		},
+		{
+			"ENG_name": "Glory Spells",
+			"name": "荣耀法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "荣耀",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术数量，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 强令对决（变体）|llspell}, {@spell 跳跃术（变体）|llspell}"
+						],
+						[
+							"5级",
+							"{@spell 强化属性}, {@spell 魔化武器（变体）|llspell}"
+						],
+						[
+							"9级",
+							"{@spell 加速术}, {@spell 雷霆步|xge}"
+						],
+						[
+							"13级",
+							"{@spell 防死结界（变体）|llspell}, {@spell 行动自如}"
+						],
+						[
+							"17级",
+							"{@spell 放逐斩（变体）|llspell}, {@spell 原力法阵}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Mighty Deed",
+			"name": "英勇事迹",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "荣耀",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"你可以凝聚你对荣耀的渴望来提升你的身体能力，哪怕只是暂时的。每当你进行力量、敏捷或体质检定，或进行跳远或跳高时，你可以消耗一点神圣热忱，在你的检定结果或跳跃距离上加上你的圣武士等级。",
+				"你可以在进行属性检定或尝试跳跃之后使用此特性，从而可能将失败转为成功。"
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp"
+		},
+		{
+			"ENG_name": "Oath of Glory",
+			"name": "荣耀之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "荣耀",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"在伟大的故事中，只有英雄会被铭记。你已立誓成为这样的英雄。你力求建立英勇事迹、克服致命挑战，无论危险几何。你将度过一生，以求名垂传奇。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "荣耀之信条|替代圣武士|LLAPal|荣耀|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "荣耀斩|替代圣武士|LLAPal|荣耀|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "英勇事迹|替代圣武士|LLAPal|荣耀|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "荣耀法术|替代圣武士|LLAPal|荣耀|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Tenets of Glory",
+			"name": "荣耀之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "荣耀",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"所有立下此神圣誓言的圣武士都立誓在一切作为中恪守以下神圣信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"荣耀",
+							"你应当以你的英勇事迹与你克服的挑战闻名，而非你的言辞。"
+						],
+						[
+							"力量",
+							"不断追求身体、心灵与精神的完美。永不止步。"
+						],
+						[
+							"坚毅",
+							"逆境是将凡人锻造成英雄的熔炉。不要逃避值得迎接的挑战。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Mythic Alacrity",
+			"name": "神话迅捷",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "荣耀",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你随时准备行动。只要你未被突袭，你的先攻掷骰可以加上你的魅力调整值。",
+				"此外，在你的回合开始时，你可以暂停守护灵光的所有效应，转而获得等同于你灵光半径的速度加值。这些效应持续到你下个回合开始，届时两者恢复正常。"
+			],
+			"foundryImg": "icons/skills/movement/feet-winged-boots-brown.webp"
+		},
+		{
+			"ENG_name": "Glorious Shield",
+			"name": "荣耀之盾",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "荣耀",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你存在的力量可以偏转致命打击。当守护灵光下的一个生物被一次攻击命中时，你可以用反应在其针对该次攻击的护甲等级上加上你的魅力调整值，可能使其失手。",
+				"你可以使用此反应的次数等同于你的魅力调整值（最低一次），完成一次长休后你恢复所有使用次数。当你没有剩余使用次数时，你可以消耗一点神圣热忱再次使用它。"
+			],
+			"foundryImg": "icons/skills/melee/shield-block-fire-orange.webp"
+		},
+		{
+			"ENG_name": "Avatar of Glory",
+			"name": "荣耀化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "荣耀",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作，汲取你英勇事迹的传奇故事，变身为神话之力的典范。变形期间你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"每当你进行魅力检定时，你可以消耗一点神圣热忱，将你的d20掷骰结果视为20。",
+						"你可以使用英勇事迹而不消耗神圣热忱。",
+						"每回合一次，当你武器攻击失手时，你可以选择让你的攻击自动命中。"
+					]
+				},
+				"此变形持续10分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-green-gold.webp"
+		},
+		{
+			"ENG_name": "Draining Smite",
+			"name": "汲取斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "无誓者",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"每当你使用至圣斩时，你可以消耗一点神圣热忱，以自私之力灌注此打击。你的至圣斩额外伤害变为暗蚀（若原本不是），且你获得等同于你的至圣斩所造成暗蚀伤害一半的临时生命值。"
+			],
+			"foundryImg": "icons/magic/death/mouth-bite-fangs-vampire.webp"
+		},
+		{
+			"ENG_name": "Illusory Escape",
+			"name": "幻影遁逃",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "无誓者",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 2
+			},
+			"entries": [
+				"你对自身高于一切的狂热奉献让你得以逃脱伤害。每当你受到一个你可看见的来源的伤害时，你可以用你的反应消耗两点神圣热忱。你立刻隐形，并可以移动至多等同于你速度的距离。",
+				"你保持隐形直到你的下个回合开始，或直到你进行攻击或强迫一个生物进行豁免检定。"
+			],
+			"foundryImg": "icons/creatures/reptiles/chameleon-camouflage-green-brown.webp"
+		},
+		{
+			"ENG_name": "Oathless Spells",
+			"name": "无誓者法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "无誓者",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术总数，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 魅惑类人}, {@spell 虚假生命}"
+						],
+						[
+							"5级",
+							"{@spell 隐形术}, {@spell 暗示术}"
+						],
+						[
+							"9级",
+							"{@spell 气化形体}, {@spell 吸血鬼之触}"
+						],
+						[
+							"13级",
+							"{@spell 魅惑怪物|xge}, {@spell 高等隐形术}"
+						],
+						[
+							"17级",
+							"{@spell 支配类人}, {@spell 穿墙术}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Shattered Oath",
+			"name": "破碎誓言",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "无誓者",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你破碎誓言的碎裂之力自你身上散发。每当你进行属性检定以说服任何生物信任你，或与其达成任何形式的交易或协议时，你的掷骰结果减去你的圣武士等级。此效应可以多种方式显现，但总会使生物不信任你。"
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "The Oathless",
+			"name": "无誓者",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "无誓者",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"无誓者圣武士因邪恶以外的原因破碎了他们的神圣誓言，但仍保留着部分力量。这些迷失的战士常以强盗或佣兵的身份求生。有些人在寻找目标，但大多数无誓者堕入绝望。",
+				"在所有民族与文化中，背弃誓言者\u2014\u2014尤其是圣武士\u2014\u2014都遭人猜疑。在重视荣誉的文化中，无誓者甚至会遭到暴力相向。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "破碎誓言|替代圣武士|LLAPal|无誓者|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "汲取斩|替代圣武士|LLAPal|无誓者|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "幻影遁逃|替代圣武士|LLAPal|无誓者|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "无誓者法术|替代圣武士|LLAPal|无誓者|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Aura of Deception",
+			"name": "欺瞒灵光",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "无誓者",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"为求利己，你可以毫不犹豫地牺牲他人。当你使用幻影遁逃时，你可以强迫守护灵光内的一个生物对你的圣武士法术豁免DC进行魅力豁免检定。",
+				"豁免失败时，你与目标立刻交换位置。它随即成为触发你幻影遁逃的伤害的目标，而你从你重新出现的空间获得幻影遁逃的通常益处。豁免成功时，你仍获得幻影遁逃的通常益处。"
+			],
+			"foundryImg": "icons/skills/melee/shield-damaged-broken-orange.webp"
+		},
+		{
+			"ENG_name": "Forceful Will",
+			"name": "强横意志",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "无誓者",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你以你的存在支配他人，迫使其屈从于你的意志。每当你强迫守护灵光内的一个生物进行豁免检定以抵抗一个惑控系法术时，它在初次豁免检定上具有劣势。"
+			],
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp"
+		},
+		{
+			"ENG_name": "Avatar of Dishonor",
+			"name": "耻辱化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "无誓者",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作，凝聚你传奇的自利之力，变身为你本可能成为的正义圣武士的灰色阴影，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你如同受到{@spell 高等隐形术}法术影响般隐形。",
+						"你可以用附赠动作采取疾走或躲藏动作。",
+						"当一个生物以近战攻击对你失手时，你可以强迫它在该攻击的通常射程内对你选择的另一个生物重复该攻击。"
+					]
+				},
+				"此变形持续1分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/creatures/invertebrates/bug-cross-green.webp"
+		},
+		{
+			"ENG_name": "Oath of Repentance",
+			"name": "忏悔之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "忏悔",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"为了寻求对破碎誓言或家族罪孽的宽恕，忏悔圣武士立誓只在万不得已时才使用暴力。为证明他们能够寻得宽恕，他们认为即使是最邪恶的凡人也存在被救赎的可能。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "忏悔之信条|替代圣武士|LLAPal|忏悔|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "正义使者|替代圣武士|LLAPal|忏悔|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "制服斩|替代圣武士|LLAPal|忏悔|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "忏悔法术|替代圣武士|LLAPal|忏悔|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Repentance Spells",
+			"name": "忏悔法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "忏悔",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术总数，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 庇护术}, {@spell 警报术}"
+						],
+						[
+							"5级",
+							"{@spell 安定心神}, {@spell 定身类人}"
+						],
+						[
+							"9级",
+							"{@spell 法术反制（变体）|llspell}, {@spell 催眠图纹（变体）|llspell}"
+						],
+						[
+							"13级",
+							"{@spell 生命灵光}, {@spell 欧提路克弹力法球}"
+						],
+						[
+							"17级",
+							"{@spell 定身怪物}, {@spell 力场墙（变体）|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Righteous Emissary",
+			"name": "正义使者",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "忏悔",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"你可以汲取誓言之力，以和平之力灌注你的言辞。当你进行游说检定时，你可以消耗一点神圣热忱，在你的掷骰结果上加上你的圣武士等级。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp"
+		},
+		{
+			"ENG_name": "Subduing Smite",
+			"name": "制服斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "忏悔",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"每当你以至圣斩将一个生物的生命值降至0时，你可以消耗一点神圣热忱，以平定之力灌注该攻击。它不会陷入昏迷，而是只剩1生命值，并被你魅惑1分钟。",
+				"在此期间，该生物温顺听话，不会移动或采取任何动作，除非你用附赠动作命令它这么做。你不能命令它进行攻击，或强迫一个生物进行属性检定或豁免检定。",
+				"若你陷入失能状态、你再次使用此特性，或你或你的盟友对其做出任何敌对行为，该效应提前结束。"
+			],
+			"foundryImg": "icons/weapons/clubs/club-baton-blue.webp"
+		},
+		{
+			"ENG_name": "Tenets of Repentance",
+			"name": "忏悔之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "忏悔",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此誓言的圣武士恪守以下神圣信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"和平",
+							"和平是你能达成的最大善举。暴力是最后手段。"
+						],
+						[
+							"清贫",
+							"将你所有多余的财富捐给穷人、受压迫者或受苦者。"
+						],
+						[
+							"救赎",
+							"再邪恶的凡人也不会堕落到无法宽恕或救赎的地步。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Aura of Penance",
+			"name": "赎罪灵光",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "忏悔",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以将他人的重担加诸己身，作为对你罪愆的补赎。当守护灵光下的一个生物受到伤害时，你可以用你的反应代替它受到该伤害。",
+				"此伤害无法以任何方式减少，且此效应不会将任何非伤害效应转移给你。"
+			],
+			"foundryImg": "icons/skills/melee/shield-block-fire-orange.webp"
+		},
+		{
+			"ENG_name": "Redemptive Regeneration",
+			"name": "救赎再生",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "忏悔",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你对救赎的坚定信念治愈你的伤口，使你能继续疗愈你的心灵。若你以低于一半但至少1点的生命值开始你的回合，你恢复等同于你魅力调整值的生命值。"
+			],
+			"foundryImg": "icons/magic/life/cross-beam-green.webp"
+		},
+		{
+			"ENG_name": "Avatar of Redemption",
+			"name": "救赎化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "忏悔",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为神圣救赎的化身。持续1分钟，你获得所有伤害的抗性，且你可以使用赎罪灵光而不消耗反应。",
+				"但若你伤害另一个生物或强迫其进行豁免检定，你便失去此特性的益处，直到你的下个回合开始。",
+				"若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。",
+				"每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/creatures/birds/dove-pigeon-flying-white.webp"
+		},
+		{
+			"ENG_name": "Elemental Smite",
+			"name": "元素斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "辉煌",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 2
+			},
+			"entries": [
+				"当你使用至圣斩时，你可以消耗一点神圣热忱，以元素之怒灌注该打击。此至圣斩造成你的元素伤害，且目标承受由你的元素决定的额外效应：",
+				{
+					"ENG_name": "Air",
+					"type": "entries",
+					"name": "空气",
+					"entries": [
+						"它必须通过力量豁免检定，否则被沿直线击退远离你，击退距离为你在此至圣斩上消耗的法术位每环5尺。"
+					]
+				},
+				{
+					"ENG_name": "Earth",
+					"type": "entries",
+					"name": "土",
+					"entries": [
+						"它必须通过力量豁免检定，否则倒地，且其所在空间成为困难地形。"
+					]
+				},
+				{
+					"ENG_name": "Fire",
+					"type": "entries",
+					"name": "火焰",
+					"entries": [
+						"此斩的伤害骰变为d10，且目标5尺内所有易燃物体被点燃。"
+					]
+				},
+				{
+					"ENG_name": "Water",
+					"type": "entries",
+					"name": "水",
+					"entries": [
+						"目标必须进行力量豁免检定，否则被冰层包裹，速度减半。它可以用一个动作除去这层冰，使速度恢复正常。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-orange.webp"
+		},
+		{
+			"ENG_name": "Oath of Splendor",
+			"name": "辉煌之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "辉煌",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你已立下古老誓言，侍奉一个蕴藏纯粹元素之力的原初存在。无论你宣誓效忠于元素长老之一、强大的贵族巨灵，还是其他强大的原初存在，你的使命都是将其意志施行于物质位面，并以它们的元素之相重塑之。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "辉煌之信条|替代圣武士|LLAPal|辉煌|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "原初君主|替代圣武士|LLAPal|辉煌|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素斩|替代圣武士|LLAPal|辉煌|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "辉煌法术|替代圣武士|LLAPal|辉煌|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Primordial Sovereign",
+			"name": "原初君主",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "辉煌",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你已立誓侍奉一位伟大的元素存在。选择一种最能代表其原初之力的元素。一旦选定，除非使用许愿术，否则无法更改：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"空气",
+							"雷鸣"
+						],
+						[
+							"土",
+							"钝击"
+						],
+						[
+							"火焰",
+							"火焰"
+						],
+						[
+							"水",
+							"寒冷"
+						]
+					]
+				},
+				"此外，你誓言之力允许你在计算护甲等级时以魅力替代敏捷。"
+			],
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp"
+		},
+		{
+			"ENG_name": "Splendor Spells",
+			"name": "辉煌法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "辉煌",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术总数，且无法在升级时替换：",
+				"每当你施展一个辉煌法术时，它总是造成你的元素伤害类型，以取代其通常的伤害类型。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 吸收元素|xge}, {@spell 燃烧之手}"
+						],
+						[
+							"5级",
+							"{@spell 镜影术}, {@spell 灼热射线}"
+						],
+						[
+							"9级",
+							"{@spell 马友夫微流星|xge}, {@spell 咒唤元素（变体）|llspell|咒唤元素（变体，仅元素类型）}"
+						],
+						[
+							"13级",
+							"{@spell 元素灾厄|xge}, {@spell 冰风暴}"
+						],
+						[
+							"17级",
+							"{@spell 异界探知}, {@spell 焰击术}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Tenets of Splendor",
+			"name": "辉煌之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "辉煌",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此誓言的圣武士恪守以下信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"毁灭",
+							"以毁灭性的展示彰显元素的真正力量。"
+						],
+						[
+							"高贵",
+							"以配得上你庇主的美与辉煌举止。"
+						],
+						[
+							"愤怒",
+							"胆敢对抗或冒犯你者，必须被毁灭。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Aura of Destruction",
+			"name": "毁灭灵光",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "辉煌",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你誓言之力为元素注入原初之力。当守护灵光内的一个生物受到你的元素伤害时，你可以使该次伤害无视抗性，并将免疫视为抗性。"
+			],
+			"foundryImg": "icons/magic/earth/orb-lava-ball-yellow.webp"
+		},
+		{
+			"ENG_name": "Elemental Rebuke",
+			"name": "元素叱喝",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "辉煌",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"每当你受到守护灵光内一个生物的伤害时，你可以用你的反应强迫它进行敏捷豁免检定。豁免失败者受到2d8点元素伤害，随后承受你的元素斩的效应。"
+			],
+			"foundryImg": "icons/magic/earth/lava-explosion-orange.webp"
+		},
+		{
+			"ENG_name": "Avatar of the Elements",
+			"name": "元素化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "辉煌",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为远古毁灭的化身。变形期间你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你显现出元素之翼，获得60尺飞行速度。",
+						"你选择的守护灵光内的生物获得你的元素伤害的抗性，而你获得免疫。",
+						"每当你对一个建筑造成元素伤害时，你可以直接造成最大可能伤害而无需掷骰。"
+					]
+				},
+				"此变形持续1分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/magic/earth/volcano-explosion-lava-teal.webp"
+		},
+		{
+			"ENG_name": "Challenging Smite",
+			"name": "挑战斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "王座",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用至圣斩时，你可以消耗一点神圣热忱，以一道王者挑战灌注你的打击，使你的目标承受{@spell 强令对决（变体）|llspell}法术的效应。"
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-white-blue.webp"
+		},
+		{
+			"ENG_name": "Oath of Throne",
+			"name": "王座之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "王座",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你立下此神圣誓言以侍奉你的君主，誓言维护其法律、保护其领地与臣民。你作为法律本身的延伸，在你被派往的任何地方带来秩序、守护文明。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "王座之信条|替代圣武士|LLAPal|王座|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "挑战斩|替代圣武士|LLAPal|王座|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "集结号令|替代圣武士|LLAPal|王座|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "王座法术|替代圣武士|LLAPal|王座|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Rallying Command",
+			"name": "集结号令",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "王座",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 2
+			},
+			"entries": [
+				"你的言辞令盟友充满活力。你可以用附赠动作消耗两点神圣热忱，给予30尺内一个能听见并理解你的生物等同于1d6＋你的魅力调整值的临时生命值。"
+			],
+			"foundryImg": "icons/sundries/flags/banner-sword-blue.webp"
+		},
+		{
+			"ENG_name": "Tenets of the Throne",
+			"name": "王座之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "王座",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此誓言的圣武士恪守以下信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"英勇",
+							"即使面对压倒性的劣势或危险，也要执行你的命令。"
+						],
+						[
+							"忠诚",
+							"服从你君主的命令，永远以君主的最大利益行事。"
+						],
+						[
+							"秩序",
+							"法律是文明的基石。你必须维护法律与秩序。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Throne Spells",
+			"name": "王座法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "王座",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术数量，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 强令对决（变体）|llspell}, {@spell 命令术}"
+						],
+						[
+							"5级",
+							"{@spell 守护之链}, {@spell 寻获坐骑（变体）|llspell}"
+						],
+						[
+							"9级",
+							"{@spell 活力灵光}, {@spell 灵体卫士}"
+						],
+						[
+							"13级",
+							"{@spell 放逐术}, {@spell 信仰守卫}"
+						],
+						[
+							"17级",
+							"{@spell 原力法阵}, {@spell 指使术}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Divine Aegis",
+			"name": "神圣庇盾",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "王座",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你受誓言约束，必须保卫你君主的臣民。当守护灵光内的一个生物受到伤害时，你可以用你的反应代替它受到该伤害。",
+				"此伤害无法以任何方式减少，且此效应不会将任何非伤害效应转移给你。"
+			],
+			"foundryImg": "icons/skills/melee/shield-block-fire-orange.webp"
+		},
+		{
+			"ENG_name": "Unwavering Knight",
+			"name": "坚定骑士",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "王座",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"没有什么能阻止你履行你的誓言职责。当你有意识时，你为抵抗麻痹和震慑状态的豁免检定具有优势。"
+			],
+			"foundryImg": "icons/magic/control/control-influence-rally-purple.webp"
+		},
+		{
+			"ENG_name": "Avatar of Loyalty",
+			"name": "忠诚化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "王座",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为神圣忠诚的化身。变形期间你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你抵抗钝击、穿刺和挥砍伤害。",
+						"守护灵光下的生物在感知豁免检定和死亡豁免检定上具有优势。",
+						"任何受你挑战斩效应影响的生物，为结束该效应进行的感知豁免检定自动失败。"
+					]
+				},
+				"此变形持续1分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/magic/control/control-influence-crown-yellow.webp"
+		},
+		{
+			"ENG_name": "Oath of Vengeance",
+			"name": "复仇之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "复仇",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此神圣誓言的圣武士常被称为复仇者或黑暗骑士，他们立誓往往出于复仇的渴望。无论他们想摧毁单个冤枉他们的生物，还是对抗滥用权势残害无辜的腐败组织，他们都毕生致力于消灭自己的仇敌。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "复仇之信条|替代圣武士|LLAPal|复仇|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "仇敌誓言|替代圣武士|LLAPal|复仇|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "复仇斩|替代圣武士|LLAPal|复仇|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "复仇法术|替代圣武士|LLAPal|复仇|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Tenets of Vengeance",
+			"name": "复仇之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "复仇",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此誓言的圣武士恪守以下神圣信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"摧毁邪恶",
+							"抓住一切机会与你的仇敌战斗。对抗更大的邪恶。"
+						],
+						[
+							"摒弃怜悯",
+							"对你的仇敌绝不留情。不惜一切手段击败邪恶。"
+						],
+						[
+							"遇恶果，尽力补偿",
+							"为你的仇敌及其他作恶者的恶行作出偿还。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Vengeance Spells",
+			"name": "复仇法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "复仇",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术总数，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2级",
+							"{@spell 灾祸术}, {@spell 强令对决（变体）|llspell}"
+						],
+						[
+							"5级",
+							"{@spell 定身类人}, {@spell 迷踪步}"
+						],
+						[
+							"9级",
+							"{@spell 加速术}, {@spell 回避侦测}"
+						],
+						[
+							"13级",
+							"{@spell 放逐术}, {@spell 任意门}"
+						],
+						[
+							"17级",
+							"{@spell 渺远步|xge}, {@spell 定身怪物}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Vengeful Smite",
+			"name": "复仇斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "复仇",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用至圣斩时，你可以消耗一点神圣热忱，以炽烈的怒火灌注你的打击。除伤害外，你的目标还必须对你的圣武士法术豁免DC进行感知豁免检定。豁免失败者对你恐慌且速度降为0，持续1分钟。该生物受到伤害则效应提前结束。",
+				"你的仇敌在此豁免检定上具有劣势。"
+			],
+			"foundryImg": "icons/magic/fire/projectile-arrow-fire-gem-yellow.webp"
+		},
+		{
+			"ENG_name": "Vow of Enmity",
+			"name": "仇敌誓言",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "复仇",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 2
+			},
+			"entries": [
+				"你将作恶者标记以待审判。你可以用附赠动作消耗两点神圣热忱，对30尺内一个你能看见的生物念出仇敌誓言，将其标记为你的仇敌，持续1分钟或直到它死亡。你针对你的仇敌的所有攻击掷骰具有优势。",
+				"在你的仇敌存活期间，你不能再次使用此特性。"
+			],
+			"foundryImg": "icons/magic/death/skull-fire-white-yellow.webp"
+		},
+		{
+			"ENG_name": "Shield of Vengeance",
+			"name": "复仇之盾",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "复仇",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你对敌人的仇恨是盟友的盾牌。守护灵光下的生物在你的仇敌强迫其进行的任何属性检定或豁免检定上具有优势。"
+			],
+			"foundryImg": "icons/magic/symbols/runes-star-orange.webp"
+		},
+		{
+			"ENG_name": "Relentless Avenger",
+			"name": "坚韧复仇",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "复仇",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你超自然的仇恨帮助你威慑你的仇敌。若你的仇敌攻击或强迫你以外的生物进行豁免检定，你可以用你的反应向其移动至多等同于你速度的距离，并对它进行一次攻击。",
+				"若你在此反应期间被一次借机攻击命中，你的攻击掷骰可以加上你的魅力调整值。"
+			],
+			"foundryImg": "icons/skills/movement/feet-bladed-boots-fire.webp"
+		},
+		{
+			"ENG_name": "Avatar of Vengeance",
+			"name": "复仇化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "复仇",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为神圣之怒的化身。变形期间，你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以使用仇敌誓言而不消耗热忱。",
+						"在你的每个回合，你可以随意施展{@spell 迷踪步}而不消耗法术位。若你重新出现在一个生物的5尺内，你可以对它进行一次近战武器攻击。",
+						"每回合一次，当你进行一次具有优势的武器攻击掷骰时，你可以放弃攻击掷骰的优势，改为对该生物进行一次额外的武器攻击。"
+					]
+				},
+				"此变形持续1分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-evil-horned-giant.webp"
+		},
+		{
+			"ENG_name": "Abjuring Smite",
+			"name": "防护斩",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "警惕",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 1
+			},
+			"entries": [
+				"当你使用至圣斩时，你可以消耗一点神圣热忱，以一道神圣结界灌注你的打击。除伤害外，你的目标必须对你的法术豁免DC进行魅力豁免检定。豁免失败者被你驱散1分钟，或直到其受到伤害。",
+				"被驱散期间，生物必须尽其所能远离你移动。被驱散期间它不能自愿靠近你，也不能进行反应。",
+				"位面外生物（见下文）在为抵抗此特性进行的魅力豁免检定上具有劣势。"
+			],
+			"foundryImg": "icons/magic/control/debuff-chains-shackles-movement-blue.webp"
+		},
+		{
+			"ENG_name": "Divine Vigilance",
+			"name": "神圣警惕",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "警惕",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Divine Fervor",
+				"name": "神圣热忱",
+				"amount": 2
+			},
+			"entries": [
+				"你可以汲取誓言之力，以警惕启迪心灵。当你或你10尺内的一个生物在一次智力、感知或魅力豁免检定中失败时，你可以用反应消耗两点神圣热忱，使其可以重复该豁免检定，从而可能将失败转为成功。",
+				"从6级开始，你可以用此反应帮助处于你守护灵光下的任何生物。"
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-green.webp"
+		},
+		{
+			"ENG_name": "Oath of Vigilance",
+			"name": "警惕之誓",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "警惕",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你的双眼已看清威胁着你称之为家园的物质位面的异界存在。立下永不止息的警惕之誓，你发誓保护物质位面免受一切位面外影响\u2014\u2014无论善良、邪恶、异质或其他。立下此誓言的圣武士被称为守望者。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "警惕之信条|替代圣武士|LLAPal|警惕|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神圣警惕|替代圣武士|LLAPal|警惕|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "防护斩|替代圣武士|LLAPal|警惕|LLAPal|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "警惕法术|替代圣武士|LLAPal|警惕|LLAPal|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Tenets of Vigilance",
+			"name": "警惕之信条",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "警惕",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"立下此誓言的圣武士恪守以下神圣信条：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"纪律",
+							"将你的身心磨砺至极限。永远准备战斗。"
+						],
+						[
+							"纯洁",
+							"不与位面外存在交易，也不受其影响。"
+						],
+						[
+							"警惕",
+							"警惕位面外影响，一经发现便将其铲除。"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp"
+		},
+		{
+			"ENG_name": "Vigilance Spells",
+			"name": "警惕法术",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "警惕",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"你按下方表格所列的圣武士等级习得特定法术。这些法术不计入你的已知法术总数，且无法在升级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2级",
+							"{@spell 警报术}, {@spell 以太之锚|llspell}"
+						],
+						[
+							"5级",
+							"{@spell 生物定位术（变体）|llspell}, {@spell 月华之光}"
+						],
+						[
+							"9级",
+							"{@spell 法术反制（变体）|llspell}, {@spell 回避侦测}"
+						],
+						[
+							"13级",
+							"{@spell 净化灵光}, {@spell 放逐术}"
+						],
+						[
+							"17级",
+							"{@spell 探知术}, {@spell 定身怪物}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Aura of Vigilance",
+			"name": "警惕灵光",
+			"source": "LLAPal",
+			"page": 6,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "警惕",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你誓言之力灌注你的灵光。守护灵光下的生物不会被突袭，且其先攻掷骰获得等同于你魅力调整值的加值。"
+			],
+			"foundryImg": "icons/magic/perception/eye-slit-red-orange.webp"
+		},
+		{
+			"ENG_name": "Vigilant Sight",
+			"name": "警惕视觉",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "警惕",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你誓言之力刺破一切欺瞒。当你使用神圣感知时，你还在相同半径内获得真实视觉。"
+			],
+			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp"
+		},
+		{
+			"ENG_name": "Avatar of Vigilance",
+			"name": "警惕化身",
+			"source": "LLAPal",
+			"page": 7,
+			"className": "替代圣武士",
+			"classSource": "LLAPal",
+			"subclassShortName": "警惕",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作变身为神圣警惕的化身。变形期间你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你在120尺内获得神圣感知的益处。",
+						"你对真实视觉范围内位面外生物的攻击具有优势。",
+						"若一个位面外生物在你的防护斩豁免检定中失败，你可以选择将它放逐回其原生位面，以取代驱散它。"
+					]
+				},
+				"此变形持续1分钟。若你陷入昏迷状态或用附赠动作结束变形，则变形提前结束。每次长休你可免费变形一次，此后你必须消耗一个5环法术位才能再次变形。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-green.webp"
+		}
+	]
+}
