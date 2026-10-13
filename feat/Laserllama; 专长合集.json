@@ -1,0 +1,2812 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "llfeat",
+				"abbreviation": "LLCF",
+				"full": "LaserLlama 的专长合集",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"hakr14"
+				],
+				"url": "https://www.gmbinder.com/share/-Nyc8nVrY3XqX-rBslYv",
+				"color": "071c78",
+				"version": ""
+			}
+		],
+		"dependencies": {
+			"optionalfeature": [
+				"LLExploits",
+				"LLAART",
+				"LLAART:E",
+				"LLASorc",
+				"LLASorcorc:E",
+				"LLAM",
+				"LLAM:E",
+				"LLSav",
+				"LLSavE",
+				"LLAR",
+				"LLAR:E",
+				"LLSH",
+				"LLSH:E"
+			],
+			"spell": [
+				"llspell"
+			]
+		},
+		"edition": "classic",
+		"dateAdded": 1776040339,
+		"dateLastModified": 1789939048,
+		"_dateLastModifiedHash": "09b149239f"
+	},
+	"feat": [
+		{
+			"ENG_name": "Classical Artist",
+			"name": "古典艺术家",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLSavE",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你卓越的才智使你得以精通许多人眼中所谓的高雅艺术。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "科班出身",
+					"ENG_name": "Classically Trained",
+					"entries": [
+						"你获得石匠工具与画家工具的熟练项。每当你使用其中任一工具进行属性检定时，d20掷骰结果为9或更低时视为10。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "识货之眼",
+					"ENG_name": "Eye for Value",
+					"entries": [
+						"你在评估绘画、雕塑及其他艺术品价值的所有属性检定上具有优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "精美艺术品",
+					"ENG_name": "Fine Art",
+					"entries": [
+						"你可以使用石匠工具或画家工具以及适当的材料，创作一件精美艺术品。你每为其花费一个8小时工作日，该精美艺术品的价值便提高10金币。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"mason's tools": true,
+					"painter's supplies": true
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Mason & Painter's Minimum",
+					"name": "石匠与画家工具最低值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.tools.mason.roll.min",
+							"mode": "UPGRADE",
+							"value": 10
+						},
+						{
+							"key": "system.tools.painter.roll.min",
+							"mode": "UPGRADE",
+							"value": 10
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/tools/hand/brush-paint-pink.webp"
+		},
+		{
+			"ENG_name": "Crossbow Expert (Alternate)",
+			"name": "强弩专家（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 165
+				},
+				{
+					"source": "LLAR:E"
+				}
+			],
+			"entries": [
+				"你接受过大量弩术训练，使用弩的效率胜过大多数人。你在使用手弩、轻弩或重弩时获得下列收益：",
+				{
+					"type": "entries",
+					"name": "心无旁骛",
+					"ENG_name": "Focused",
+					"entries": [
+						"处于敌对生物5尺内不会使你的远程武器攻击具有劣势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "快速装填",
+					"ENG_name": "Quick Load",
+					"entries": [
+						"你无视所有弩的装填属性限制，并且即使你没有空出的手，也可以为弩装填弹药。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "快速射击",
+					"ENG_name": "Quick Shot",
+					"entries": [
+						"当你执行攻击动作并使用单手近战武器进行一次攻击时，你可以在该回合用附赠动作使用手弩进行一次攻击。"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/crossbows/crossbow-blue.webp"
+		},
+		{
+			"ENG_name": "Defensive Duelist (Alternate)",
+			"name": "防御式决斗（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 165
+				},
+				{
+					"source": "LLAF:E",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你持握一把你熟练的灵巧或轻型近战武器时，若一个你能看见的生物以近战攻击命中你，你可以用你的反应，将你的敏捷调整值加到应对该攻击的护甲等级上。",
+				"当你使用此反应且该攻击未命中时，你可以在同一反应中对该攻击者进行一次近战武器攻击。"
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你持握一把你熟练的灵巧或轻型近战武器时，一个你能看见的生物以近战攻击命中你"
+					},
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "@abilities.dex.mod"
+					}
+				}
+			],
+			"foundryImg": "icons/weapons/daggers/dagger-double-brown.webp"
+		},
+		{
+			"ENG_name": "Devious Training",
+			"name": "狡计训练",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLARoE",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你研习过卑鄙伎俩，得以施展狡计战技。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "已知狡计战技",
+					"ENG_name": "Devious Exploits Known",
+					"entries": [
+						"你从{@loader 替代游荡者|class/LaserLlama; Alternate Rogue.json}中学会两项{@filter 一阶狡计战技|optionalfeatures|feature type=ll:1de}。若其需要豁免检定，则DC等于8 + 你的熟练加值 + 你的力量或敏捷调整值（由你选择）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "战技再训练",
+					"ENG_name": "Retraining Exploits",
+					"entries": [
+						"每当你获得一个等级，你都可以用另一项你选择的一阶狡计战技，替换你通过此专长学会的一项狡计战技。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "战技骰",
+					"ENG_name": "Exploit Dice",
+					"entries": [
+						"你获得两个{@dice d4}战技骰来驱动这些战技，战技骰会在使用时消耗。你在完成一次短休或长休后恢复所有已消耗的战技骰。",
+						"若你在获得此专长时已拥有战技骰，则改为获得一枚与你其他战技骰面数相同的战技骰。"
+					]
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "狡计训练",
+					"ENG_name": "Devious Training",
+					"featureType": [
+						"LL:1DE"
+					],
+					"progression": {
+						"*": 2
+					}
+				}
+			],
+			"foundryActivities": [],
+			"foundryEffects": [
+				{
+					"ENG_name": "Devious Training Exploits",
+					"name": "狡计训练战技",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + max(@abilities.str.mod, @abilities.dex.mod)"
+						},
+						{
+							"key": "flags.ll.exploit.faces",
+							"mode": "UPGRADE",
+							"value": 4
+						},
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "UPGRADE",
+							"value": 1,
+							"priority": 1
+						},
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": 2,
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/skills/melee/maneuver-daggers-paired-orange.webp"
+		},
+		{
+			"ENG_name": "Dual Wielder (Alternate)",
+			"name": "双持客（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 165
+				},
+				{
+					"source": "LLAR:E"
+				}
+			],
+			"entries": [
+				"你接受过大量训练，学会了同时持用两把近战武器战斗。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "防御姿态",
+					"ENG_name": "Defensive Stance",
+					"entries": [
+						"当你每只手各持一把单手近战武器时，你的护甲等级获得+1加值。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "强化握持",
+					"ENG_name": "Enhanced Grip",
+					"entries": [
+						"即使你持用的单手近战武器并非轻型武器，你也可以进行双武器战斗。你还可以同时抽出或收起两把武器。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "双重打击",
+					"ENG_name": "Twin Strikes",
+					"entries": [
+						"当你在进行双武器战斗时发起借机攻击，你可以用你持用的每把近战武器各对目标进行一次攻击。"
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "+1 AC Bonus",
+					"name": "护甲等级+1加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
+		},
+		{
+			"ENG_name": "Dungeon Delver (Alternate)",
+			"name": "地城探索者（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 166
+				},
+				{
+					"source": "LLARoE",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你在探索地城与拆除致命陷阱方面的技艺已臻化境。你获得下列收益：",
+				{
+					"type": "entries",
+					"name": "地城行家",
+					"ENG_name": "Dungeoneer Adept",
+					"entries": [
+						"你获得{@skill 调查}、{@skill 察觉}或{@item 盗贼工具|PHB}的熟练项，并且每当你使用上述任一技能进行属性检定时，d20掷骰结果为7或更低时你可以将其视为8。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "审慎步伐",
+					"ENG_name": "Thoughtful Steps",
+					"entries": [
+						"在地城以快速步伐旅行，不会使你的被动察觉或被动调查值受到减值。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "陷阱感应",
+					"ENG_name": "Trap Sense",
+					"entries": [
+						"你在抵抗陷阱的所有豁免检定上具有优势，并且对陷阱造成的所有伤害具有抗性。"
+					]
+				}
+			],
+			"skillToolLanguageProficiencies": [
+				{
+					"choose": [
+						{
+							"from": [
+								"investigation",
+								"perception",
+								"thieves' tools"
+							]
+						}
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Dungeoneer Adept",
+					"name": "地城行家",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.inv.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						},
+						{
+							"key": "system.skills.prc.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						},
+						{
+							"key": "system.tools.thief.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/misc/lock-bronze-reinforced.webp"
+		},
+		{
+			"ENG_name": "Fighting Initiate (Alternate)",
+			"name": "战斗学徒（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "TCE",
+					"page": 80
+				},
+				{
+					"source": "LLAF:E",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"weapon": "martial"
+						}
+					]
+				}
+			],
+			"entries": [
+				"你投入大量时间，精通了一种特定的战斗风格。当你选择此专长时，你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "战斗风格",
+					"ENG_name": "Fighting Style",
+					"entries": [
+						"你从{@loader 替代战士|class/LaserLlama; Alternate Fighter.json}可用的{@filter 战斗风格|optionalfeatures|feature type=fs:af}中自选一项学习。你不能多次学习同一战斗风格。学习一项战斗风格时，你必须满足其任何先决条件。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con"
+						]
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "战斗学徒",
+					"ENG_name": "Fighting Initiate",
+					"featureType": [
+						"FS:AF"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"foundryImg": "icons/skills/melee/hand-grip-staff-blue.webp"
+		},
+		{
+			"ENG_name": "Great Weapon Master (Alternate)",
+			"name": "巨武器大师（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 167
+				},
+				{
+					"source": "LLAF:E",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"str": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你磨练了以巨型武器压制敌人的技艺。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "蛮力打击",
+					"ENG_name": "Forceful Strikes",
+					"entries": [
+						"每当你以重型近战武器攻击命中一个体型与你相同或更小的生物时，只要其将被推入的空间未被占据，你就可以将其沿地面直线击退5尺，使其远离你。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "无情武者",
+					"ENG_name": "Ruthless Warrior",
+					"entries": [
+						"当你以重型近战武器将一个生物的生命值降至0或造成重击时，你可以在同一回合用附赠动作以该重型武器进行一次攻击。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/hand-grip-hammer-spiked-blue.webp"
+		},
+		{
+			"ENG_name": "Hardy Physique",
+			"name": "强健体魄",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLABE"
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"con": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你锻炼出强健的体魄，以硬抗攻击而非闪避它们。你在穿着护甲计算护甲等级时，可以用体质替代敏捷。",
+				"你还在避免被违愿移动、陷入{@condition 受擒}或被击倒{@condition 倒地}的豁免检定上具有优势。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Hardy Physique (Light Armor)",
+					"name": "强健体魄（轻型护甲）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "@attributes.ac.armor + @abilities.con.mod"
+						}
+					]
+				},
+				{
+					"ENG_name": "Hardy Physique (Medium Armor)",
+					"name": "强健体魄（中型护甲）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "@attributes.ac.armor + min(2, @abilities.con.mod)"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp"
+		},
+		{
+			"ENG_name": "Helpful Insights",
+			"name": "有益洞见",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLSavE",
+					"page": 5
+				}
+			],
+			"entries": [
+				"无论何种境况，你似乎总能给出有益的建议。你获得下列收益：",
+				{
+					"type": "entries",
+					"name": "快捷建议",
+					"ENG_name": "Quick Advice",
+					"entries": [
+						"你可以在你的回合用附赠动作执行协助动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "睿智之言",
+					"ENG_name": "Words of Wisdom",
+					"entries": [
+						"当你以协助动作使某生物在一项使用你熟练的技能或工具进行的属性检定上获得优势时，该生物可以将d20掷骰中7或更低的结果视为8。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis"
+						]
+					}
+				}
+			],
+			"foundryImg": "icons/skills/social/diplomacy-handshake-gray.webp"
+		},
+		{
+			"ENG_name": "Inspiring Leader (Alternate)",
+			"name": "领袖之证（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 167
+				},
+				{
+					"source": "LLAW:E",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"wis": 13
+						},
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"若你尚未拥有领袖属性，选择感知或魅力作为你的领袖属性与领袖调整值。",
+				"你可以在10分钟内（可以是短休或长休期间）鼓舞盟友，坚定他们的战斗意志。此时，30尺内能听到你声音、数量等于1 + 你的领袖调整值的生物，获得等于你的等级 + 你的领袖调整值的临时生命值。",
+				"一个生物在完成一次短休或长休前，无法再次从此专长获得临时生命值。"
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Heal",
+					"name": "治疗",
+					"type": "heal",
+					"activation": {
+						"value": 10,
+						"type": "minute"
+					},
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"target.affects": {
+						"count": "1 + @flags.ll.leadership.mod",
+						"type": "creature"
+					},
+					"healing": {
+						"custom": {
+							"enabled": true,
+							"formula": "@details.level + @flags.ll.leadership.mod"
+						},
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Inspiring Leadership",
+					"name": "鼓舞领导力",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.leadership.mod",
+							"mode": "UPGRADE",
+							"value": "max(@abilities.wis.mod, @abilities.cha.mod)"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/flags/banner-flag-red-white.webp"
+		},
+		{
+			"ENG_name": "Intimidating Leader",
+			"name": "威吓领袖",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLABE",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "{@skill 威吓}熟练项",
+						"entrySummary": "威吓熟练"
+					}
+				}
+			],
+			"entries": [
+				"你以恐惧与威吓集结追随你之人投入战斗。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "慑人集结",
+					"ENG_name": "Fearsome Rally",
+					"entries": [
+						"当30尺内另一个能看到或听到你的生物，在抵抗{@condition 魅惑}或{@condition 恐慌}状态的豁免检定中失败时，你可以用反应进行一次对抗同一豁免DC的{@skill 威吓}检定。检定成功则该生物不受魅惑或恐慌。",
+						"你可以使用此反应的次数等于你的熟练加值，且每次完成长休后，你都会恢复此特性的所有已耗用次数。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"cha"
+						]
+					}
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Check",
+					"name": "检定",
+					"type": "check",
+					"activation": {
+						"type": "reaction",
+						"condition": "当30尺内另一个能看到或听到你的生物，在抵抗魅惑或恐慌状态的豁免检定中失败"
+					},
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"targets.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"check.associated": [
+						"itm"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/flags/banner-standard-tattered-red.webp"
+		},
+		{
+			"ENG_name": "Inventive Adept",
+			"name": "发明行家",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAART",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你花费多日摆弄各式发明、成套工具与奥术力量。你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你获得{@item 修补工具|PHB}的熟练项。若你已熟练，则每当你使用修补工具进行属性检定时，d20掷骰结果为9或更低时视为10。",
+						"你从{@loader 替代工匠|class/LaserLlama; Alternate Artificer.json}可用的{@filter 灌注|optionalfeatures|feature type=llaart:inf}中自选一项学习。每次长休结束时，你可以按照替代工匠职业中说明的灌注规则，将此灌注注入一件物品。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"tinker's tools": true
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "发明行家",
+					"ENG_name": "Inventive Adept",
+					"featureType": [
+						"LLAART:INF"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation.type": "longRest",
+					"target.affects": {
+						"count": 1,
+						"type": "object"
+					}
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Tinker's Minimum",
+					"name": "修补工具最低值",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.tools.tinker.roll.min",
+							"mode": "UPGRADE",
+							"value": 10
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/tech/coil-steel-green.webp"
+		},
+		{
+			"ENG_name": "Legendary Might",
+			"name": "传奇伟力",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLABE"
+				}
+			],
+			"entries": [
+				"你总能找到运用自身伟力换取额外收益的门道。你获得下表中对应你的力量调整值及更低各项的收益。",
+				"当你的力量调整值提升时，你从此专长获得的收益也随之提升：",
+				{
+					"type": "table",
+					"colLabels": [
+						"调整值",
+						"收益"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text-center"
+					],
+					"rows": [
+						[
+							"+1",
+							"在计算负重、你可以{@action 擒抱}的生物体型，以及你一次能推动、拖拽、举起或拖行的重量时，你视为体型大一级。"
+						],
+						[
+							"+2",
+							"你可以用力量（{@skill 威吓}）检定替代魅力（{@skill 威吓}）检定。"
+						],
+						[
+							"+3",
+							"你获得一项等于你步行速度的攀爬速度或游泳速度。"
+						],
+						[
+							"+4",
+							"每当你进行{@skill 运动}检定时，d20掷骰结果为7或更低时视为8。"
+						],
+						[
+							"+5",
+							"当你被迫进行体质豁免检定时，你可以选择改为进行力量豁免检定。"
+						]
+					]
+				}
+			],
+			"foundryActivities": [],
+			"foundryEffects": [
+				{
+					"ENG_name": "Strength (Intimidation) (+2)",
+					"name": "力量（威吓）（+2）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.itm.ability",
+							"mode": "OVERRIDE",
+							"value": "str"
+						}
+					]
+				},
+				{
+					"ENG_name": "Climbing Speed (+3)",
+					"name": "攀爬速度（+3）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.climb",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				},
+				{
+					"ENG_name": "Swimming Speed (+3)",
+					"name": "游泳速度（+3）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.swim",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				},
+				{
+					"ENG_name": "Athletics Minimum (+4)",
+					"name": "运动最低值（+4）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ath.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp"
+		},
+		{
+			"ENG_name": "Lifelong Learner",
+			"name": "终身学习者",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLSavE",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你从不停止学习。你获得下列所有对应你当前智力调整值及更低的收益。",
+				"若你的智力调整值改变，你从此专长获得的收益也随之增加（或减少）：",
+				{
+					"type": "table",
+					"colLabels": [
+						"调整值",
+						"收益"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text-center"
+					],
+					"rows": [
+						[
+							"+1",
+							"你学会一门你选择的额外语言，并能说、读、写该语言。"
+						],
+						[
+							"+2",
+							"你获得一套你选择的工匠工具的熟练项。"
+						],
+						[
+							"+3",
+							"你获得一项你选择的技能的熟练项。"
+						],
+						[
+							"+4",
+							"对你选择的一项技能熟练项，d20掷骰结果为7或更低时视为8。"
+						],
+						[
+							"+5",
+							"每当你被迫进行感知豁免检定时，你可以选择改为进行智力豁免检定。"
+						]
+					]
+				}
+			],
+			"foundryActivities": [],
+			"foundryEffects": [
+				{
+					"ENG_name": "Intelligence (Persuasion) (+2)",
+					"name": "智力（游说）（+2）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.per.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp"
+		},
+		{
+			"ENG_name": "Mage Slayer (Alternate)",
+			"name": "巫师杀手（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 168
+				},
+				{
+					"source": "LLMC:E"
+				}
+			],
+			"entries": [
+				"你接受过大量训练，以反制邪恶施法者、挫败其奥术能力。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "扰乱法术",
+					"ENG_name": "Disrupt Spell",
+					"entries": [
+						"当你看到或听到你触及范围内的一个生物施法时，你可以用你的反应对其发动{@action 借机攻击}。命中时，该生物进行一次体质豁免检定以维持专注。豁免失败则其法术无法生效，且其消耗的法术位或该能力的使用次数悉数浪费。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "扰乱专注",
+					"ENG_name": "Disrupt Concentration",
+					"entries": [
+						"当你对一个正{@status concentration||维持专注}于某法术的生物造成伤害时，其在维持该法术专注的豁免检定上具有劣势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "法术防护",
+					"ENG_name": "Spellguard",
+					"entries": [
+						"你在抵抗5尺内你能看到或听到的生物所施放法术的豁免检定上具有优势。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/strike-blade-knife-white-red.webp"
+		},
+		{
+			"ENG_name": "Martial Artist",
+			"name": "武术家",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAM:E",
+					"page": 2
+				}
+			],
+			"entries": [
+				"你接受过一些基础武术训练，在徒手战斗中略有造诣。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "强化徒手打击",
+					"ENG_name": "Improved Unarmed Strikes",
+					"entries": [
+						"你的徒手打击命中时造成{@damage 1d4}伤害，且你可以用力量或敏捷进行其攻击掷骰与伤害掷骰。此外，当你执行{@action 攻击}动作且仅进行徒手打击时，你可以在该回合用附赠动作进行一次徒手打击。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "无甲防御",
+					"ENG_name": "Unarmored Defense",
+					"entries": [
+						"只要你未穿着任何护甲且未持用盾牌，你的护甲等级便等于10 + 你的力量调整值 + 你的敏捷调整值。"
+					]
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"type": "attack",
+					"attack": {
+						"type": {
+							"value": "melee",
+							"classification": "weapon"
+						},
+						"ability": "none",
+						"bonus": "max(@abilities.str.mod, @abilities.dex.mod)"
+					},
+					"range": {
+						"value": 5,
+						"units": "ft"
+					},
+					"damage.parts": [
+						{
+							"number": 1,
+							"denomination": 4,
+							"bonus": "max(@abilities.str.mod, @abilities.dex.mod)",
+							"types": [
+								"bludgeoning"
+							]
+						}
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Unarmored Defense",
+					"name": "无甲防御",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "10 + @abilities.str.mod + @abilities.dex.mod"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist.webp"
+		},
+		{
+			"ENG_name": "Martial Training",
+			"name": "战斗训练",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAF:E",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你研习过精英武者的战斗技巧。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "已知武术战技",
+					"ENG_name": "Martial Exploits Known",
+					"entries": [
+						"你从{@loader 替代战士|class/LaserLlama; Alternate Fighter.json}可用的{@filter 一阶武术战技|optionalfeatures|feature type=ll:1me}中学会两项。若有需要，其战技豁免DC等于8 + 你的熟练加值 + 你的力量或敏捷调整值（由你选择）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "战技再训练",
+					"ENG_name": "Retraining Exploits",
+					"entries": [
+						"每当你获得一个等级，你都可以用另一项你选择的一阶武术战技，替换你通过此专长学会的一项武术战技。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "战技骰",
+					"ENG_name": "Exploit Dice",
+					"entries": [
+						"你获得两个{@dice d4}战技骰来驱动这些战技，战技骰会在使用时消耗。你在完成一次短休或长休后恢复所有已消耗的战技骰。",
+						"若你在获得此专长时已拥有战技骰，则改为获得一枚与你其他战技骰面数相同的战技骰。"
+					]
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "战斗训练",
+					"ENG_name": "Martial Training",
+					"featureType": [
+						"LL:1ME"
+					],
+					"progression": {
+						"*": 2
+					}
+				}
+			],
+			"foundryActivities": [],
+			"foundryEffects": [
+				{
+					"ENG_name": "Martial Training Exploits",
+					"name": "战斗训练战技",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + max(@abilities.str.mod, @abilities.dex.mod)"
+						},
+						{
+							"key": "flags.ll.exploit.faces",
+							"mode": "UPGRADE",
+							"value": 4
+						},
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "UPGRADE",
+							"value": 1,
+							"priority": 1
+						},
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": 2,
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp"
+		},
+		{
+			"ENG_name": "Mental Acuity",
+			"name": "思维敏锐",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLSavE",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你的头脑十分美妙，能迸发灵光洞见与精神韧性。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "博览群书",
+					"ENG_name": "Well Read",
+					"entries": [
+						"你获得以下技能中两项的熟练项：奥秘、历史、调查、医药、自然或宗教。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "惊人记忆",
+					"ENG_name": "Wondrous Memory",
+					"entries": [
+						"从上述列表中选择两项技能；它们不必是你通过此专长获得熟练项的技能。每当你使用其中任一技能进行属性检定时，d20掷骰结果为7或更低时均可视为8。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"investigation",
+							"medicine",
+							"nature",
+							"religion"
+						],
+						"count": 2
+					}
+				}
+			],
+			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp"
+		},
+		{
+			"ENG_name": "Metamagic Adept (Alternate)",
+			"name": "超魔导师（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "TCE",
+					"page": 80
+				},
+				{
+					"source": "LLASorcorc:E"
+				}
+			],
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"你练习并学会了以奇异而独特的方式操纵你的魔法。你获得下列收益：",
+				{
+					"type": "list",
+					"items": [
+						"你从{@loader 替代术士|class/LaserLlama; Alternate Sorcerer.json}可用的{@filter 超魔|optionalfeatures|feature type=as:mm}中自选一项学习。你可以不消耗术法点使用此超魔一次（如同消耗了最少术法点数一般）。你在完成一次短休或长休后恢复此能力。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"entry": "将一项你用作施法属性的属性值提升1，上限为20。",
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "超魔导师",
+					"ENG_name": "Metamagic Adept",
+					"featureType": [
+						"AS:MM"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"foundryImg": "icons/magic/unholy/orb-colllecting-energy-green.webp"
+		},
+		{
+			"ENG_name": "Mystic Warrior",
+			"name": "秘术武者",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAM:E",
+					"page": 2
+				}
+			],
+			"entries": [
+				"你已精通秘法技法，得以施展超自然壮举。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "秘术之气",
+					"ENG_name": "Mystic Ki",
+					"entries": [
+						"你获得2点气的气池，你可以消耗它们来使用你已知的秘术技法。完成一次短休或长休后，你恢复所有已消耗的气。若你已从其他来源拥有气，这些气将加入该气池。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "已知技法",
+					"ENG_name": "Techniques Known",
+					"entries": [
+						"你从{@loader 替代武僧|class/LaserLlama; Alternate Monk.json}职业学会两项{@filter 技法|optionalfeatures|feature type=llam:t}。你必须满足其任何先决条件，包括武僧等级。若一项技法使用武艺骰，则你使用{@dice d4}，除非你的武艺骰更高。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "豁免检定",
+					"ENG_name": "Saving Throws",
+					"entries": [
+						"若一项技法需要豁免检定，其DC = 8 + 你的熟练加值 + 你的感知调整值。"
+					]
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "秘术武者",
+					"ENG_name": "Mystic Warrior",
+					"featureType": [
+						"LLAM:T"
+					],
+					"progression": {
+						"*": 2
+					}
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation.type": "",
+					"roll.formula": "d4"
+				}
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": 2,
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Natural Magnetism",
+			"name": "天生魅力",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAW:E",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你的个性与仪态令他人乐于亲近。你获得下表中对应你的魅力调整值及更低各项的收益。",
+				"若你的魅力调整值提升，你从此专长获得的收益也随你的魅力调整值提升：",
+				{
+					"type": "table",
+					"colLabels": [
+						"调整值",
+						"收益"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text-center"
+					],
+					"rows": [
+						[
+							"+1",
+							"你获得一种你选择的{@item 赌具|PHB}的熟练项。"
+						],
+						[
+							"+2",
+							"你初次遇到一个类人生物时，它对你视为友善而非冷漠。"
+						],
+						[
+							"+3",
+							"你从{@skill 表演}、{@skill 游说}或{@skill 威吓}中自选一项获得熟练项。"
+						],
+						[
+							"+4",
+							"每当你进行游说检定时，d20掷骰结果为7或更低时视为8。"
+						],
+						[
+							"+5",
+							"当你进行感知豁免检定时，你可以改为进行魅力豁免检定。"
+						]
+					]
+				}
+			],
+			"foundryActivities": [],
+			"foundryEffects": [
+				{
+					"ENG_name": "Persuasion Minimum (+4)",
+					"name": "游说最低值（+4）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.per.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/social/diplomacy-handshake-yellow.webp"
+		},
+		{
+			"ENG_name": "Poisoner (Alternate)",
+			"name": "毒师（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "TCE",
+					"page": 80
+				},
+				{
+					"source": "LLARoE",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你潜心修习毒艺，能够调制烈性毒药。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "老练毒师",
+					"ENG_name": "Adept Poisoner",
+					"entries": [
+						"你获得{@item 毒药工具|PHB|毒药工具}的熟练项。若你已熟练，则你使用毒药工具进行的所有属性检定加上双倍熟练加值。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "烈性毒药",
+					"ENG_name": "Potent Poisons",
+					"entries": [
+						"每当你对一个生物造成毒素伤害时，你可以改为造成强酸或暗蚀伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "简易毒药",
+					"ENG_name": "Simple Poisons",
+					"entries": [
+						"在一次长休期间，你可以花1小时使用毒药工具，制作{@optfeature 调制简易毒药|LLExploits}战技中的简易毒药，瓶数至多等于你的智力调整值。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "快速涂抹",
+					"ENG_name": "Swift Application",
+					"entries": [
+						"你可以用附赠动作涂抹毒药。"
+					]
+				}
+			],
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Craft",
+					"name": "制作",
+					"type": "utility",
+					"activation": {
+						"value": 1,
+						"type": "hour",
+						"condition": "在一次长休期间"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": -1,
+								"scaling.mode": "amount"
+							}
+						],
+						"scaling": {
+							"allowed": true,
+							"max": "@abilities.int.mod"
+						}
+					}
+				},
+				{
+					"ENG_name": "Strike",
+					"name": "打击",
+					"type": "save",
+					"activation.type": "bonus",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc.formula": "8 + @prof + max(@abilities.str.mod, @abilities.dex.mod)"
+					}
+				}
+			],
+			"foundrySystem": {
+				"uses": {
+					"value": 0,
+					"max": "@abilities.int.mod",
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "loseAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp"
+		},
+		{
+			"ENG_name": "Roguish Initiate",
+			"name": "游荡者学徒",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLARoE",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你曾花时间磨练与罪犯黑道相关的才能。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "狡诈行家",
+					"ENG_name": "Cunning Adept",
+					"entries": [
+						"选择以下动作之一：{@action 疾走}、{@action 躲藏}或{@action 使用物件}。你在你的每个回合都可以用附赠动作执行该动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "盗贼黑话",
+					"ENG_name": "Thieves' Cant",
+					"entries": [
+						"你学会说{@language 盗贼黑话}的行话、书写其秘密符号并解读用其写成的信息。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"int"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"thieves' cant": true
+				}
+			],
+			"foundryImg": "icons/skills/melee/strike-sword-stabbed-brown.webp"
+		},
+		{
+			"ENG_name": "Savage Attacker (Alternate)",
+			"name": "凶蛮打手（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 169
+				},
+				{
+					"source": "LLABE"
+				}
+			],
+			"entries": [
+				"你的凶蛮战斗本能让你能利用最微小的破绽。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "洞穿重击",
+					"ENG_name": "Piercing Critical",
+					"entries": [
+						"每当你以近战武器攻击造成重击时，你将该武器的伤害骰掷骰三次而非两次。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "凶蛮打击",
+					"ENG_name": "Savage Strikes",
+					"entries": [
+						"每回合一次，当你以近战武器攻击命中时，你可以将本次攻击的所有伤害骰各掷两次，并使用较高的总数。"
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Extra Melee Weapon Critical Die",
+					"name": "近战武器额外重击骰",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.meleeCriticalDamageDice",
+							"mode": "UPGRADE",
+							"value": 1
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/symbols/mask-metal-silver-white.webp"
+		},
+		{
+			"ENG_name": "Savage Training",
+			"name": "凶蛮训练",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLABE"
+				}
+			],
+			"entries": [
+				"你能汲取灵魂深处的怒火来施展凶蛮战技。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "已知凶蛮战技",
+					"ENG_name": "Savage Exploits Known",
+					"entries": [
+						"你从{@loader 替代野蛮人|class/LaserLlama; Alternate Barbarian.json}可用的{@filter 一阶凶蛮战技|optionalfeatures|feature type=ll:1se}中学会两项。若有需要，其战技豁免DC等于8 + 你的熟练加值 + 你的力量或敏捷调整值（由你选择）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "战技再训练",
+					"ENG_name": "Retraining Exploits",
+					"entries": [
+						"每当你获得一个等级，你都可以用另一项你选择的一阶凶蛮战技，替换你通过此专长学会的一项凶蛮战技。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "战技骰",
+					"ENG_name": "Exploit Dice",
+					"entries": [
+						"你获得两个{@dice d4}战技骰来驱动这些战技，战技骰会在使用时消耗。你在完成一次短休或长休后恢复所有已消耗的战技骰。",
+						"若你在获得此专长时已拥有战技骰，则改为获得一枚与你其他战技骰面数相同的战技骰。"
+					]
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "凶蛮训练",
+					"ENG_name": "Savage Training",
+					"featureType": [
+						"LL:1SE"
+					],
+					"progression": {
+						"*": 2
+					}
+				}
+			],
+			"foundryActivities": [],
+			"foundryEffects": [
+				{
+					"ENG_name": "Savage Training Exploits",
+					"name": "凶蛮训练战技",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + max(@abilities.str.mod, @abilities.dex.mod)"
+						},
+						{
+							"key": "flags.ll.exploit.faces",
+							"mode": "UPGRADE",
+							"value": 4
+						},
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "UPGRADE",
+							"value": 1,
+							"priority": 1
+						},
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": 2,
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp"
+		},
+		{
+			"ENG_name": "Scholar of Lore",
+			"name": "博学学者",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLSavE",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你曾花时间学习某一特定研究领域的一切知识。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "学术追求",
+					"ENG_name": "Scholarly Pursuit",
+					"entries": [
+						"你从贤者可用的学术追求中自选一项加以精通。若该学术追求有贤者等级先决条件，只要你的人物总等级达到该学术追求的先决等级，即可学习它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "才智骰",
+					"ENG_name": "Intellect Die",
+					"entries": [
+						" 若该学术追求需要才智骰，则总是使用d4，除非你的才智骰已更高。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "博学学者",
+					"ENG_name": "Scholar of Lore",
+					"featureType": [
+						"LL:SP"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation.type": "",
+					"roll.formula": "d4"
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-rounded-blue.webp"
+		},
+		{
+			"ENG_name": "Sharpshooter (Alternate)",
+			"name": "神射手（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 170
+				},
+				{
+					"source": "LLAR:E"
+				}
+			],
+			"entries": [
+				"你接受过大量远程武器训练，成为神射高手。你获得下列收益：",
+				{
+					"type": "entries",
+					"name": "专家射手",
+					"ENG_name": "Expert Marksman",
+					"entries": [
+						"你获得箭术战斗风格。若你已知晓此战斗风格，则你的远程武器攻击获得+1加值，且你的远程武器攻击可以完全无视半身掩护与四分之三掩护。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "狙击手",
+					"ENG_name": "Sniper",
+					"entries": [
+						"攻击位于远程武器最大射程内的目标，不会使你的攻击掷骰具有劣势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "稳定瞄准",
+					"ENG_name": "Steady Aim",
+					"entries": [
+						"你可以用附赠动作集中精神，使你在本回合进行的下一次远程攻击具有优势。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/targeting/crosshair-pointed-orange.webp"
+		},
+		{
+			"ENG_name": "Signature Technique",
+			"name": "招牌战技",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAF:E",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "至少已知一项武术战技",
+						"entrySummary": "武术战技"
+					}
+				}
+			],
+			"entries": [
+				"你已将一门单独的技艺练习至炉火纯青。从{@loader 替代战士|class/LaserLlama; Alternate Fighter.json}可用的{@filter 一阶战技|optionalfeatures|feature type=ll:1me}中，选择一项你已掌握且不会恢复生命值的战技。",
+				"在战斗中，你每轮可以使用此战技一次而不消耗战技骰，其战技骰掷{@dice d4}。你在你的每个回合开始时恢复此特性。"
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation.type": "",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"roll.formula": "d4"
+				}
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": 1,
+					"recovery": [
+						{
+							"period": "turnStart",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/skills/melee/sword-winged-holy-orange.webp"
+		},
+		{
+			"ENG_name": "Skulker (Alternate)",
+			"name": "隐伏者（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 170
+				},
+				{
+					"source": "LLARoE",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你是潜行于暗影、在需要时保持隐匿的专家。你获得下列收益：",
+				{
+					"type": "entries",
+					"name": "隐伏者视觉",
+					"ENG_name": "Skuler's Sight",
+					"entries": [
+						"微光光照不会使你依赖视觉的属性检定具有劣势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "无声步伐",
+					"ENG_name": "Silent Steps",
+					"entries": [
+						"当你处于轻度遮蔽时，你可以在你的回合用附赠动作执行{@action 躲藏}动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "无声射击",
+					"ENG_name": "Silent Shots",
+					"entries": [
+						"若你已对某生物隐匿且远程攻击未命中，你不会暴露自己的位置。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp"
+		},
+		{
+			"ENG_name": "Sorcerous Spark",
+			"name": "术法火种",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLASorcorc:E"
+				}
+			],
+			"entries": [
+				"虽然你可能并非真正的术士，但你体内栖息着一小簇奥术力量的火种。你获得下列收益：",
+				{
+					"type": "list",
+					"items": [
+						"你从{@loader 替代术士|class/LaserLlama; Alternate Sorcerer.json}法术列表中，学会两个戏法和一项你选择的1环法术。魅力是你这三个法术的施法调整值，除非你已拥有施法调整值\u2014\u2014那时你使用它。",
+						"你获得2点术法点，可以如术士一般消耗它们来施放你已知的任何法术。若你已拥有术法点，这些术法点将加入你的术法点池。每次完成长休后，你恢复此特性给予的术法点。"
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=alternate sorcerer (llasorc)",
+								"count": 2
+							},
+							{
+								"choose": "level=1|class=alternate sorcerer (llasorc)"
+							}
+						]
+					}
+				}
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": 2,
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/magic/earth/projectiles-magma-stone-orange.webp"
+		},
+		{
+			"ENG_name": "Spellsword Adept",
+			"name": "法术剑士",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLMC:E"
+				}
+			],
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"weapon": "martial"
+						}
+					]
+				}
+			],
+			"entries": [
+				"你受过将小型魔法与近身武器攻击相结合的训练。你获得下列收益：",
+				{
+					"type": "entries",
+					"name": "额外戏法",
+					"ENG_name": "Bonus Cantrips",
+					"entries": [
+						"你从{@loader 魔战士|class/LaserLlama; Magus.json}法术列表中学会两个{@filter 戏法|spells|level=0|class=magus (llmag)}，其中一个必须能造成伤害。选择智力、感知或魅力之一作为其施法属性。若你的职业可以学习戏法，你可以改为选择从你的职业法术列表中额外学习两个戏法。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "法术打击",
+					"ENG_name": "Spellstrike",
+					"entries": [
+						"每回合一次，当你进行近战武器攻击时，你可以将你已知一个戏法的魔法注入此次打击。命中时，你的武器攻击造成该戏法的伤害类型，且该戏法除伤害外的任何效果都会在命中时应用于目标。"
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"name": "智力",
+					"ENG_name": "Intelligence",
+					"ability": "int",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=magus (llmag)",
+								"count": 2
+							}
+						]
+					}
+				},
+				{
+					"name": "感知",
+					"ENG_name": "Wisdom",
+					"ability": "wis",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=magus (llmag)",
+								"count": 2
+							}
+						]
+					}
+				},
+				{
+					"name": "魅力",
+					"ENG_name": "Charisma",
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=magus (llmag)",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "每回合一次，当你进行近战武器攻击时"
+					}
+				}
+			],
+			"foundryImg": "icons/skills/melee/blade-tip-smoke-green.webp"
+		},
+		{
+			"ENG_name": "Spell Scrivener",
+			"name": "法术誊写师",
+			"source": "llfeat",
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "拥有{@item 书法工具|PHB}的熟练项",
+						"entrySummary": "书法工具熟练"
+					},
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"使用{@item 书法工具|PHB|书法工具}，你可以选择一项你已知的法术，并花费下表对应的金钱与时间，制作一张该法术的{@item 法术卷轴}：",
+				{
+					"type": "table",
+					"colStyles": [
+						"text-center col-3",
+						"text-center col-4-5",
+						"text-center col-4-5"
+					],
+					"colLabels": [
+						"法术环阶",
+						"金币成本",
+						"所需时间"
+					],
+					"rows": [
+						[
+							"1\u20132环",
+							"50×环阶",
+							"1小时×环阶"
+						],
+						[
+							"3\u20135环",
+							"100×环阶",
+							"2小时×环阶"
+						],
+						[
+							"6\u20139环",
+							"1,000×环阶",
+							"24小时×环阶"
+						]
+					]
+				},
+				"这些金钱与时间的花费不必连续进行。若该法术需要施法时消耗的材料成分，你必须在此过程中将其消耗。过程结束时，你必须消耗一个环阶等于你所誊写法术环阶的法术位。"
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation.type": "special",
+					"consumption": {
+						"targets": [
+							{
+								"type": "attribute",
+								"target": "currency.gp",
+								"value": "(450 * floor(@scaling / 6) + 50) * floor((@scaling + 11) / 7) * @scaling"
+							},
+							{
+								"type": "spellSlots",
+								"target": "1",
+								"value": 1,
+								"scaling.mode": "level"
+							}
+						],
+						"scaling": {
+							"allowed": true,
+							"max": 9
+						}
+					},
+					"roll": {
+						"ENG_name": "Hours",
+						"name": "小时",
+						"formula": "(11 * floor(@scaling / 6) +1) * floor((@scaling + 11) / 7) * @scaling"
+					}
+				}
+			],
+			"foundryImg": "icons/sundries/documents/document-sealed-white-orange.webp"
+		},
+		{
+			"ENG_name": "Spiritual Awakening",
+			"name": "灵性觉醒",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLSH:E"
+				}
+			],
+			"entries": [
+				"你曾度过许多静谧时光，学习与无形的精魂世界沟通。你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你学会{@spell 法师之手}与{@spell 降灵会|llspell}两个戏法，它们不计入你的已知戏法数量。",
+						"你学会{@spell 隐形仆役}法术，并且可以随意施放它而不消耗法术位。此时你以感知作为施法调整值，且该仆役呈现为一只当地精魂的形态。你同一时间只能维持一个被召唤的隐形仆役。若你召唤另一个，第一个仆役会立即解除。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"known": {
+						"_": [
+							"法师之手",
+							"降灵会|llspell"
+						]
+					},
+					"innate": {
+						"_": [
+							"隐形仆役"
+						]
+					}
+				}
+			],
+			"foundryImg": "icons/creatures/magical/spirit-mischief-fire-blue.webp"
+		},
+		{
+			"ENG_name": "Strategic Insight",
+			"name": "战略洞见",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAW:E",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						},
+						{
+							"wis": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你天生擅长发现弱点。当你执行{@action 搜索}动作时，你可以指定30尺内一个你能看见的生物为目标（DC = 8 + 其挑战等级）。若你能观察它至少1分钟，则该次检定加上你的等级。",
+				"检定成功时，你从下表中获知一项你选择的特征。你曾对一个生物使用此特性后，在完成一次长休前无法再次指定它为目标。",
+				{
+					"type": "table",
+					"colStyles": [
+						"text-center col-6",
+						"text-center col-6"
+					],
+					"rows": [
+						[
+							"护甲等级",
+							"最高属性值"
+						],
+						[
+							"所有特殊感官",
+							"最低属性值"
+						],
+						[
+							"抗性、免疫与易伤",
+							"其数据块中的一项特性或动作"
+						]
+					]
+				}
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": "",
+					"recovery": []
+				}
+			},
+			"foundryImg": "icons/tools/scribal/magnifying-glass.webp"
+		},
+		{
+			"ENG_name": "Survivalist Training",
+			"name": "求生训练",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAR:E",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你受过在荒野中求生、追踪与探索的训练，宛如一名游侠。你获得下列收益：",
+				{
+					"type": "entries",
+					"name": "专家射手",
+					"ENG_name": "Expert Marksman",
+					"entries": [
+						"你从替代游侠可用的{@filter 诀窍|optionalfeatures|feature type=ll:sk}中自选一项学习。学习此诀窍时，你必须满足其所有先决条件。",
+						"若该诀窍需要猎物骰，则掷d4，除非你的猎物骰更高。若该诀窍强制进行豁免检定，其DC等于8 + 你的熟练加值 + 你的感知调整值。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis"
+						]
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "求生训练",
+					"ENG_name": "Survivalist Training",
+					"featureType": [
+						"LL:SK"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation.type": "",
+					"roll.formula": "d4"
+				}
+			],
+			"foundryImg": "icons/environment/wilderness/terrain-forest-gray.webp"
+		},
+		{
+			"ENG_name": "Tactical Training",
+			"name": "战术训练",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAW:E",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你研习过更高深的战斗策略，得以施展战术战技。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "已知战术战技",
+					"ENG_name": "Tactical Exploits Known",
+					"entries": [
+						"你从{@loader 督军|class/LaserLlama; Warlord.json}职业的{@filter 战术战技|optionalfeatures|feature type=ll:tte}中自选一项学习：",
+						{
+							"type": "table",
+							"colStyles": [
+								"text-center col-6",
+								"text-center col-6"
+							],
+							"rows": [
+								[
+									"{@optfeature 攻击号令|LLExploits}",
+									"{@optfeature 坚定号令|LLExploits}"
+								],
+								[
+									"{@optfeature 防御号令|LLExploits}",
+									"{@optfeature 支援号令|LLExploits}"
+								],
+								[
+									"{@optfeature 机动号令|LLExploits}",
+									"\u2014"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "发布号令",
+					"ENG_name": "Issuing an Order",
+					"entries": [
+						"每回合一次，当你执行{@action 攻击}动作时，你可以用战术战技替代其中一次攻击。除非你从除此专长以外的来源学会了战术战技，否则你不能每回合使用此战技超过一次。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "可重复",
+					"ENG_name": "Repeatable",
+					"entries": [
+						"你可以多次选择此专长。每次选择时，将上述一项属性值提升1，并从上表学会一项新的战术战技。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"wis",
+							"cha",
+							"int"
+						]
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "战术训练",
+					"ENG_name": "Tactical Training",
+					"featureType": [
+						"LL:TTE"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"foundryImg": "icons/magic/control/control-influence-crown-gold.webp"
+		},
+		{
+			"ENG_name": "Totemic Spirit",
+			"name": "图腾之灵",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLSH:E"
+				}
+			],
+			"entries": [
+				"你与一位束缚于物质世界的次要精魂建立了联结。你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你从{@loader 萨满|class/LaserLlama; Shaman.json}职业可用的{@filter 图腾之灵|optionalfeatures|feature type=ll:tts}中自选一项，并获得其收益。你必须满足所有先决条件才能学习该图腾之灵。",
+						"每当你获得一个等级，你都可以将你的图腾之灵替换为另一项你也满足其所有先决条件的图腾之灵。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"wis",
+							"cha",
+							"con"
+						]
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "图腾之灵",
+					"ENG_name": "Totemic Spirit",
+					"featureType": [
+						"LL:TTS"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"foundryImg": "icons/creatures/magical/spirit-undead-masked-blue.webp"
+		},
+		{
+			"ENG_name": "War Caster (Alternate)",
+			"name": "战地施法者（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 170
+				},
+				{
+					"source": "LLMC:E"
+				}
+			],
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"你受过在混战乱局中运用法术的训练。你获得以下收益：",
+				{
+					"type": "entries",
+					"name": "坚定专注",
+					"ENG_name": "Hardened Focus",
+					"entries": [
+						"每当你进行维持法术专注的豁免检定时，你可以用你的施法属性替代体质进行该豁免检定。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "时机魔法",
+					"ENG_name": "Opportune Magic",
+					"entries": [
+						"当你将进行借机攻击时，你可以选择改为施放一个法术。该法术的施法时间必须为一个动作，且只能以该生物为目标。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "战斗法师",
+					"ENG_name": "Warrior Mage",
+					"entries": [
+						"即使你手中持握武器或盾牌，你也可以执行法术的姿态成分。"
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Intelligence Concentration",
+					"name": "智力专注",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.concentration.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				},
+				{
+					"ENG_name": "Wisdom Concentration",
+					"name": "感知专注",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.concentration.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						}
+					]
+				},
+				{
+					"ENG_name": "Charisma Concentration",
+					"name": "魅力专注",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.concentration.ability",
+							"mode": "OVERRIDE",
+							"value": "cha"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-purple-orange.webp"
+		},
+		{
+			"ENG_name": "Weapon Adept",
+			"name": "武器行家",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAF:E",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你花费无数时光，磨练使用致命战争兵器的技艺。你获得下列收益：",
+				{
+					"type": "entries",
+					"name": "武器训练",
+					"ENG_name": "Weapon Training",
+					"entries": [
+						"你获得所有简易武器和军用武器的熟练项。"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con"
+						]
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"simple": true,
+					"martial": true
+				}
+			],
+			"foundryImg": "icons/weapons/swords/swords-short.webp"
+		},
+		{
+			"ENG_name": "Weapon Master (Alterante)",
+			"name": "武器大师（替代）",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 170
+				},
+				{
+					"source": "LLAF:E",
+					"page": 5
+				}
+			],
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"weaponGroup": "simple"
+						},
+						{
+							"weaponGroup": "martial"
+						}
+					]
+				}
+			],
+			"entries": [
+				"你使用武器的致命效率，即使对大多数训练有素的武者来说也令人惊叹。选择若干简易或军用武器，数量等于你的熟练加值。每当你使用这些武器进行攻击时，其攻击掷骰与伤害掷骰均获得+1加值。",
+				"当你的熟练加值提升时，选择更多武器来获得此收益。"
+			],
+			"foundryImg": "icons/skills/melee/hand-grip-sword-red.webp"
+		},
+		{
+			"ENG_name": "Wild Companion",
+			"name": "野生伙伴",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLAR:E"
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"wis": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你学会了与{@filter 野兽|bestiary|type=Beast|source=LLCompendiumOfBeasts}中的荒野野兽建立羁绊并加以训练，让它们与你并肩冒险。选择一只挑战等级等于（或低于）你的等级除以4的野兽。这只野兽成为一只野生伙伴。它对你友善，并遵循以下规则：",
+				{
+					"type": "entries",
+					"name": "数据块",
+					"ENG_name": "Stat Block",
+					"entries": [
+						"你的伙伴使用其常规数据块，但它会学会理解一门你会说的语言。你与你的伙伴可以通过一连串咔哒声、哨声与手势，彼此交流简单的想法。它获得短休与长休的所有常规收益。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "战斗",
+					"ENG_name": "Combat",
+					"entries": [
+						"在战斗中，你的伙伴在你的回合行动。它可以自行移动并使用其反应，但除非你用附赠动作命令它执行其数据块中的动作或其他动作，否则它只会执行回避动作。",
+						"若你失能，你的伙伴将竭尽所能自保。若你死亡，你的伙伴会竭尽所能逃离并返回家园。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "新伙伴",
+					"ENG_name": "New Companion",
+					"entries": [
+						"若你的野生伙伴死亡，或你解除这份羁绊，你可以训练一只新的野兽成为你的伙伴。为此，你必须花费8小时，如上所述追踪、亲近并与一只处于挑战等级上限内的野兽建立羁绊。在此8小时期间，必须能在你所在的地点找到一只合适的野兽。",
+						"你同一时间只能拥有一只野生伙伴。若你另寻并羁绊一只新的野生伙伴，先前的任何野生伙伴都会离开你返回家园。若你敌视你的伙伴，或鲁莽地使其身陷险境，它会弃你而去返回家园。"
+					]
+				}
+			],
+			"foundryActivities": [
+				{
+					"ENG_name": "Summon",
+					"name": "召唤",
+					"type": "summon",
+					"activation": {
+						"value": 8,
+						"type": "hour"
+					},
+					"summon.mode": "cr",
+					"profiles": [
+						{
+							"cr": "1/8",
+							"types": [
+								"beast"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/deer-movement-leap-green.webp"
+		},
+		{
+			"ENG_name": "Wise One",
+			"name": "智者",
+			"source": "llfeat",
+			"otherSources": [
+				{
+					"source": "LLSH:E",
+					"page": 5
+				}
+			],
+			"entries": [
+				"你善于从人生的每段经历中学习，智慧与日俱增。你获得下表中对应你当前感知调整值及更低各项的收益。",
+				"当你的感知调整值提升时，你从此专长获得的收益也随之提升：",
+				{
+					"type": "table",
+					"colLabels": [
+						"调整值",
+						"收益"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text-center"
+					],
+					"rows": [
+						[
+							"+1",
+							"你获得一套你选择的{@item 工匠工具|PHB}的熟练项。"
+						],
+						[
+							"+2",
+							"你可以用感知（{@skill 游说}）检定替代魅力（{@skill 游说}）检定。"
+						],
+						[
+							"+3",
+							"你从{@skill 洞悉}、{@skill 医药}或{@skill 察觉}中自选一项获得熟练项。"
+						],
+						[
+							"+4",
+							"当你进行感知（{@skill 洞悉}）检定时，d20掷骰结果为7或更低时视为8。"
+						],
+						[
+							"+5",
+							"你在抵抗惑控系与幻术系法术的豁免检定上具有优势。"
+						]
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Wisdom (Persuasion) (+2)",
+					"name": "感知（游说）（+2）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.per.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						}
+					]
+				},
+				{
+					"ENG_name": "Insight Minimum (+4)",
+					"name": "洞悉最低值（+4）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ins.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/perception/orb-crystal-ball-scrying.webp"
+		}
+	]
+}
