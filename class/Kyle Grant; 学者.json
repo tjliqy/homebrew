@@ -1,0 +1,3786 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Scholar",
+				"abbreviation": "Scholar",
+				"full": "学者（DM's Guild）",
+				"url": "https://www.dmsguild.com/product/191839/The-Scholar",
+				"version": "3.4",
+				"authors": [
+					"Kyle Grant"
+				]
+			}
+		],
+		"optionalFeatureTypes": {
+			"PR": "实践课",
+			"IN": "发明",
+			"TR": "疗法"
+		},
+		"edition": "classic",
+		"dateAdded": 1546081374,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "0f69bfa9b0"
+	},
+	"class": [
+		{
+			"ENG_name": "Scholar",
+			"name": "学者",
+			"source": "Scholar",
+			"hd": {
+				"faces": 8,
+				"number": 1
+			},
+			"proficiency": [
+				"int"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"performance",
+								"persuasion",
+								"religion",
+								"survival"
+							],
+							"count": 4
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 手弩|phb|手弩}",
+					"{@item 重弩|phb|重弩}",
+					"{@item 短剑|phb|短剑}"
+				],
+				"tools": [
+					"任意两个"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把短剑、(b) 一件任意简易武器，或 (c) 一件任意军用武器（若熟练）",
+					"(a) 一件皮甲或 (b) 一件鳞甲（若熟练）",
+					"(a) 一把轻弩和20支弩矢，或 (b) 一件任意简易武器",
+					"(a) 一个学者套组或 (b) 一个探索套组",
+					"一个医疗箱（仅限医师追求）"
+				],
+				"goldAlternative": "{@dice 5d4×10|5d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [],
+						"b": [],
+						"c": []
+					},
+					{
+						"a": [],
+						"b": []
+					},
+					{
+						"a": [],
+						"b": []
+					},
+					{
+						"a": [],
+						"b": []
+					},
+					{
+						"_": []
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"history",
+									"insight",
+									"investigation",
+									"medicine",
+									"nature",
+									"perception",
+									"performance",
+									"persuasion",
+									"religion",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"weapons": [
+						"简易"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 实践课|optionalfeatures|source=null|feature type=PR}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							9
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"敏锐才智|学者|Scholar|1",
+				{
+					"classFeature": "学术追求|学者|Scholar|1",
+					"gainSubclassFeature": true
+				},
+				"实践课|学者|Scholar|2",
+				{
+					"classFeature": "追求特性|学者|Scholar|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|学者|Scholar|4",
+				"无穷才智|学者|Scholar|5",
+				{
+					"classFeature": "追求特性|学者|Scholar|6",
+					"gainSubclassFeature": true
+				},
+				"实地研究|学者|Scholar|7",
+				"属性值提升|学者|Scholar|8",
+				"天才时刻|学者|Scholar|9",
+				"属性值提升|学者|Scholar|10",
+				"强化的敏锐才智（d10）|学者|Scholar|11",
+				"属性值提升|学者|Scholar|12",
+				{
+					"classFeature": "追求特性|学者|Scholar|13",
+					"gainSubclassFeature": true
+				},
+				"清明心智|学者|Scholar|14",
+				"分析心智|学者|Scholar|15",
+				"属性值提升|学者|Scholar|16",
+				"强化的敏锐才智（d12）|学者|Scholar|17",
+				{
+					"classFeature": "追求特性|学者|Scholar|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|学者|Scholar|19",
+				"真正的天才|学者|Scholar|20"
+			],
+			"subclassTitle": "学术追求",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Scholar",
+			"name": "学者",
+			"source": "Scholar",
+			"entries": [
+				{
+					"ENG_name": "Scholar",
+					"source": "Scholar",
+					"entries": [
+						"一位身披闪亮盔甲的人类将军，正研究着面前桌上铺开的地图，图上摆满了代表他的部队与入侵兽人的小模型。他翻阅着一本皮面日志，其中记满了他对敌方部族的风俗与战术所做的笔记，随后自信地向前推进了两枚棋子。",
+						"一位头发蓬乱的矮人站在一支长长商队的最前头。她俯瞰脚下的山谷，规划着穿越未经开垦荒野的路线。她展开一卷羊皮纸，在一张绘制精良的地图上添绘出新的地貌，随后示意商队跟上，带领他们深入未知的地域，探寻财宝与知识。",
+						"半身人的医疗箱\"啪\"地一声打开，他一边为病人检查，一边迅速取出器械和药瓶，观察她的症状后作出了诊断。他调配了一剂药酒，并将药膏涂在她的患处。她的病情已相当严重，但还难不倒他的医术。施行治疗时，他抬头一瞥，看见下一位病人正走进门来，护着一只弯成怪异角度的手腕。他一边收回装有药酒的瓶子，一边伸手到包里去取夹板。",
+						{
+							"ENG_name": "Great Minds",
+							"type": "entries",
+							"name": "伟大的头脑",
+							"entries": [
+								"许多贤者与学界人士将其伟大的头脑奉献于解开神圣或奥术的奥秘，而学者通常会把智力投入倾注于世俗之事。他们关注身边的物质世界，并对其蕴含的奇观叹为观止。",
+								"学者真正的信仰是理解。真正的知识超越琐碎的见闻，从\"是什么\"深入到\"为什么\"与\"怎么做\"。对学者而言，这一区别至关重要，正是这份好奇心定义了驱使他们学习与冒险的动因。他们中最有智慧的人明白：世上或许没有解不开的谜题，但没有任何一个凡人能指望解开所有谜题。因此，对许多人来说，学习是毕生的追求。",
+								"对真正好奇的人来说，冒险生活是拓展知识眼界、锤炼自身技艺的唯一途径。任何有真本事的学者都会承认，图书馆与实验室是绝佳的学习渠道，但那些尚待发现的知识\u2014\u2014无论在边境之外还是战斗的熔炉之中\u2014\u2014都不在任何书本或烧瓶里。学者相信，每个学生都会走到这样一个阶段：通往高等学问最有效的道路是亲身实践。这个世界充满了等待被做出的发现。",
+								"大多数学者的学术兴趣都十分广泛，但他们全都钻研着某一特定的专业领域，并在成为冒险者之前很可能已为之投入了多年的研究。这些追求五花八门，但所有学者仍共有许多特质。例如，并非所有学者都乐于获得战斗的机会，但他们都拥有敏锐的才智，使他们在战场上得以创造并利用机会。",
+								"通常，学者对冒险团队最大的贡献发生在战斗之外。他们的知识、专长与广泛的熟练项，使他们在冒险者会遇到的无数情境中都极具价值。",
+								"当你创建学者角色时，想一想你的角色最初是如何踏上治学之路的。想想他们在哪里求学、师从何人，以及为何至今仍行走在这条道路上。以下章节为你的学者提供了增添深度与背景的途径。"
+							]
+						},
+						{
+							"ENG_name": "An Education Begins",
+							"type": "entries",
+							"name": "启蒙之始",
+							"entries": [
+								"你成为学者的理由可能有无数种。以下只是一些点子，供你开始思考你的教育是如何开始的。",
+								{
+									"type": "table",
+									"colLabels": [
+										"{@dice d6}",
+										"我成为学者是因为......"
+									],
+									"rows": [
+										[
+											1,
+											"我的父母坚持让我从小接受正规教育。我证明了自己是一名出色的学生，从此从未回头。"
+										],
+										[
+											2,
+											"我一直充满好奇心。还是个孩子时，我就会探究自己不理解的事物，直到揭开它的奥秘。"
+										],
+										[
+											3,
+											"我因智力出众而被选入一所学校，接受抄写员、工程师、档案管理员或其他需要教育的行当的训练。"
+										],
+										[
+											4,
+											"当我提出一个富有洞见的问题时，一位博学的学者看出了我的潜力，并建议我进一步磨练自己的头脑。"
+										],
+										[
+											5,
+											"我一次次目睹武力和魔法令他人失望，而当我用心思考问题时，我总能找到解决方案。"
+										],
+										[
+											6,
+											"我曾遇到某种无法解释的事物。解释这一现象的需要，点燃了我更深沉的执念。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Place of Study",
+							"type": "entries",
+							"name": "求学之地",
+							"entries": [
+								"学者的旅程往往始于幼年。各地的孩童在成长过程中都要花大量时间学习世间的道理。对有些人来说，这种学习的范围可能很窄：一门手艺、所住的村庄、本地的民间传说。",
+								"大多数学者都足够幸运，得以在学习场所接受正规教育的特权，或者至少拥有那份魄力与好奇心，能把街头生活变成一场学习的经历。你的出身与背景，很可能对你最初踏上学者之路的位置有着重大影响。",
+								{
+									"type": "table",
+									"colLabels": [
+										"{@dice d6}",
+										"求学之地"
+									],
+									"rows": [
+										[
+											1,
+											"你在一座大都会的大型学府里求学，那里接待着来自已知世界各地的有趣旅人。"
+										],
+										[
+											2,
+											"你在一所建于乡间庄园的幽静学院求学，在那里没有什么会让你分心于学业。"
+										],
+										[
+											3,
+											"你在一位贵族或富商所有的藏书丰富的私人图书馆里求学。"
+										],
+										[
+											4,
+											"你在现实世界中求学，从观察他人并与他人共事中学到的东西比从书本上学到的更多。"
+										],
+										[
+											5,
+											"你在一座供奉知识之神的神庙求学，那里的重点不仅在于积累信息，更在于学习运用信息的智慧。"
+										],
+										[
+											6,
+											"你在一位强大的异界存在（例如天使、魔鬼或巨灵）的庇护下，于某个外层位面求学。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tutor",
+							"type": "entries",
+							"name": "导师",
+							"entries": [
+								"大多数学生都会师从多位老师，各人有各自擅长的科目，但往往有一位导师会凌驾于其余人之上，成为你教育经历中的核心人物。这个人很可能与你钻研同一种追求，也许正是他把你引上了这条路。",
+								"你自己的想法与导师的观念是一脉相承还是针锋相对，由你决定。要弄清这一点，问问自己：你的导师是个什么样的人？他们专攻什么领域？教学方式又是如何？",
+								{
+									"type": "table",
+									"colLabels": [
+										"{@dice d6}",
+										"导师"
+									],
+									"rows": [
+										[
+											1,
+											"你的导师质疑你曾有过的每一个想法，迫使你审视自己的臆断并打磨你的理论。"
+										],
+										[
+											2,
+											"你的导师拥有一种富有感染力的快乐好奇心。你的第一课也是最后一课，就是永远看到世界中的奇妙。"
+										],
+										[
+											3,
+											"你的导师是耐心与沉静的化身。无论你如何挣扎折腾，你的老师都静静守候，直到你准备好接受下一课。"
+										],
+										[
+											4,
+											"你的导师是学术正统的暴君。质疑更伟大头脑确立的智慧乃是最大的罪过。"
+										],
+										[
+											5,
+											"你的导师试图把自己对某个偏爱理论的执念传授给你，而该理论大多已被其他学者摒弃。"
+										],
+										[
+											6,
+											"你的导师相信真正的知识源于经验与亲身实践，认为书本与讲座都严重欠缺实际的语境。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Philosophy of Scholarship",
+							"type": "entries",
+							"name": "治学之道",
+							"entries": [
+								"你的背景或许解释了你如何成为学者、是哪些经历让你最初踏上这条路，但你为什么继续走了下去？是什么驱使你永无止境地探求知识？它又服务于什么目的？每个学者都必须亲自回答这个关乎个人哲学的问题。",
+								{
+									"type": "table",
+									"colLabels": [
+										"{@dice d6}",
+										"治学之道"
+									],
+									"rows": [
+										[
+											1,
+											{
+												"ENG_name": "Pure Research",
+												"type": "entries",
+												"name": "纯粹研究",
+												"entries": [
+													"知识本身就值得追求。谜题生来就该被解开，没有什么是不可知的。"
+												]
+											}
+										],
+										[
+											2,
+											{
+												"ENG_name": "Self-Improvement",
+												"type": "entries",
+												"name": "自我完善",
+												"entries": [
+													"治学从根本上说是在追求完美。正如运动员或战士可能将身体锤炼向某种理想的形态，我也如此锤炼我的头脑。"
+												]
+											}
+										],
+										[
+											3,
+											{
+												"ENG_name": "Progress",
+												"type": "entries",
+												"name": "进展",
+												"entries": [
+													"世界靠积累新知识、新技术与新发现而前行。而推动这些边界，正需要学者。"
+												]
+											}
+										],
+										[
+											4,
+											{
+												"ENG_name": "Common Good",
+												"type": "entries",
+												"name": "共同利益",
+												"entries": [
+													"知识理应被分享，以切实的方式改善所有人的生活，并破除毫无根据且危险的迷信。"
+												]
+											}
+										],
+										[
+											5,
+											{
+												"ENG_name": "Power",
+												"type": "entries",
+												"name": "力量",
+												"entries": [
+													"卓越的头脑与信息胜过一把好刀，甚至一支好军队。真正的力量源于知识以及运用知识的意志。"
+												]
+											}
+										],
+										[
+											6,
+											{
+												"ENG_name": "Problem Oriented",
+												"type": "entries",
+												"name": "问题导向",
+												"entries": [
+													"问题困扰着世界，一个人不可能解决所有问题，但一颗专注的头脑无论多难都能解决一个问题。"
+												]
+											}
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"entries": [
+								"你可以按照以下建议快速构建一名学者。首先，将智力设为你的最高属性值，其次是敏捷。（一些专精近战的学者会将力量置于敏捷之上。）其次，选择贤者背景。"
+							]
+						}
+					],
+					"name": "学者",
+					"type": "section"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Explorer",
+			"name": "探险家",
+			"shortName": "探险家",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassFeatures": [
+				"探险家|学者|Scholar|探险家|Scholar|1",
+				"随机应变|学者|Scholar|探险家|Scholar|3",
+				"万事通|学者|Scholar|探险家|Scholar|6",
+				"奇策：骗我一次|学者|Scholar|探险家|Scholar|13",
+				"快速调整|学者|Scholar|探险家|Scholar|18"
+			]
+		},
+		{
+			"ENG_name": "Inventor",
+			"name": "发明家",
+			"shortName": "发明家",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassFeatures": [
+				"发明家|学者|Scholar|发明家|Scholar|1",
+				"发明|学者|Scholar|发明家|Scholar|3",
+				"巧思|学者|Scholar|发明家|Scholar|6",
+				"第二发明|学者|Scholar|发明家|Scholar|6",
+				"奇策：战地维修|学者|Scholar|发明家|Scholar|13",
+				"第三发明|学者|Scholar|发明家|Scholar|13",
+				"第四发明|学者|Scholar|发明家|Scholar|18",
+				"杰作|学者|Scholar|发明家|Scholar|18"
+			]
+		},
+		{
+			"ENG_name": "Philosopher",
+			"name": "哲学家",
+			"shortName": "哲学家",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassFeatures": [
+				"哲学家|学者|Scholar|哲学家|Scholar|1",
+				"铁壁洞悉|学者|Scholar|哲学家|Scholar|3",
+				"奇策：强势气场|学者|Scholar|哲学家|Scholar|6",
+				"逻辑|学者|Scholar|哲学家|Scholar|13",
+				"无上威信|学者|Scholar|哲学家|Scholar|18"
+			]
+		},
+		{
+			"ENG_name": "Physician",
+			"name": "医师",
+			"shortName": "医师",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassFeatures": [
+				"医师|学者|Scholar|医师|Scholar|1",
+				"对症治疗|学者|Scholar|医师|Scholar|3",
+				"奇策：预防医学|学者|Scholar|医师|Scholar|6",
+				"感染溶剂|学者|Scholar|医师|Scholar|13",
+				"连值双班|学者|Scholar|医师|Scholar|18"
+			]
+		},
+		{
+			"ENG_name": "Planar Sage",
+			"name": "位面贤者",
+			"shortName": "位面贤者",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"cantripProgression": [
+				0,
+				0,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"subclassSpells": [
+				"控火术|xge",
+				"火焰箭",
+				"交友术",
+				"霜噬|xge",
+				"神导术",
+				"舞风术|xge",
+				"光亮术",
+				"法师之手",
+				"传讯术",
+				"塑土术|xge",
+				"魔法伎俩",
+				"燃火术",
+				"抵抗术",
+				"操水术|xge",
+				"奇术",
+				"鸣雷破|xge",
+				"吸收元素",
+				"警报术",
+				"繁彩球",
+				"命令术",
+				"通晓语言",
+				"疗伤术",
+				"侦测善恶",
+				"侦测魔法",
+				"易容术",
+				"寻获魔宠",
+				"云雾术",
+				"光导箭",
+				"治愈真言",
+				"炼狱叱喝",
+				"冰刃|xge",
+				"鉴定术",
+				"迷幻手稿",
+				"法师护甲",
+				"魔法飞弹",
+				"防护善恶",
+				"净化饮食",
+				"庇护术",
+				"护盾术",
+				"谭森浮碟术",
+				"隐形仆役",
+				"变身术",
+				"卜筮术",
+				"疯狂冠冕",
+				"黑暗视觉",
+				"龙卷尘暴|xge",
+				"注目术",
+				"炽焰法球",
+				"治愈之魂|xge",
+				"隐形术",
+				"次等复原术",
+				"物件定位术",
+				"魔化武器",
+				"迷踪步",
+				"涅斯图魔法灵光",
+				"魔绳术",
+				"识破隐形",
+				"暗示术",
+				"诚实之域",
+				"闪现术",
+				"鹰眼术",
+				"咒唤兽群",
+				"法术反制",
+				"昼明术",
+				"解除魔法",
+				"元素武器",
+				"气化形体",
+				"守卫刻文",
+				"李欧蒙小屋",
+				"防护法阵",
+				"融身入石",
+				"回避侦测",
+				"防护能量",
+				"移除诅咒",
+				"短讯术",
+				"召唤次级恶魔|xge",
+				"雷霆步|xge",
+				"巧言术",
+				"水下呼吸",
+				"秘法眼",
+				"放逐术",
+				"魅惑怪物|xge",
+				"困惑术",
+				"咒唤微元素群",
+				"咒唤林地卫士",
+				"防死结界",
+				"任意门",
+				"预言术",
+				"行动自如",
+				"信仰守卫",
+				"高等隐形术",
+				"生物定位术",
+				"魔邓肯私人密室",
+				"高阶恶魔召唤术|xge"
+			],
+			"subclassTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 已知戏法|spells|subclass=位面贤者（brew）|level=0}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1环|spells|subclass=位面贤者（brew）|level=1}",
+						"{@filter 2环|spells|subclass=位面贤者（brew）|level=2}",
+						"{@filter 3环|spells|subclass=位面贤者（brew）|level=3}",
+						"{@filter 4环|spells|subclass=位面贤者（brew）|level=4}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"位面贤者|学者|Scholar|位面贤者|Scholar|1",
+				"施法|学者|Scholar|位面贤者|Scholar|3",
+				"奇策：位面猎手|学者|Scholar|位面贤者|Scholar|6",
+				"进阶位面魔法|学者|Scholar|位面贤者|Scholar|13",
+				"位面游客|学者|Scholar|位面贤者|Scholar|18"
+			]
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"shortName": "战术家",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassFeatures": [
+				"战术家|学者|Scholar|战术家|Scholar|1",
+				"战斗风格|学者|Scholar|战术家|Scholar|3",
+				"奇策：研敌|学者|Scholar|战术家|Scholar|6",
+				"战力倍增器|学者|Scholar|战术家|Scholar|13",
+				"坚韧才智|学者|Scholar|战术家|Scholar|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Keen Intellect",
+			"name": "敏锐才智",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 1,
+			"entries": [
+				"在第1级，你获得在战斗内外运用敏捷思维为自己谋利的能力。你学会由称为才智骰的特殊骰子驱动的奇策。奇策让你得以将心智投入解决问题，并创造与利用他人无法看见的机会。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Gambits",
+							"type": "entries",
+							"name": "奇策",
+							"entries": [
+								"你知晓下文\"奇策\"条目下列出的所有奇策，并可在稍后的等级再学会一种你的追求独有的奇策。许多奇策会以某种方式强化一次攻击。每次攻击你只能使用一个奇策。"
+							]
+						},
+						{
+							"ENG_name": "Intellect Dice",
+							"type": "entries",
+							"name": "才智骰",
+							"entries": [
+								"你拥有数量等同于你的智力调整值的才智骰（最少为1枚），这些骰子为d8。使用奇策时会消耗一枚才智骰，完成长休后你恢复所有已消耗的才智骰。"
+							]
+						},
+						{
+							"ENG_name": "Saving Throws",
+							"type": "entries",
+							"name": "豁免检定",
+							"entries": [
+								"某些奇策要求你的目标进行一次豁免以抵抗其效应。豁免DC计算如下：",
+								{
+									"ENG_name": "Gambit",
+									"type": "abilityDc",
+									"name": "奇策",
+									"attributes": [
+										"int"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Gambits",
+					"type": "entries",
+					"name": "奇策",
+					"entries": [
+						"以下奇策按字母顺序排列。",
+						{
+							"type": "options",
+							"entries": [
+								{
+									"ENG_name": "Agitating Attack",
+									"type": "entries",
+									"name": "乱神攻击",
+									"entries": [
+										"当你以一次武器攻击命中一个生物时，你可以消耗一枚才智骰，尝试迫使该生物分神。你将才智骰加到伤害掷骰上，且目标必须进行一次感知豁免。豁免失败者，在你的下一回合结束前，其进行的下一次智力、感知或魅力豁免具有劣势。"
+									]
+								},
+								{
+									"ENG_name": "Defensive Posture",
+									"type": "entries",
+									"name": "防御姿态",
+									"entries": [
+										"你可以消耗一枚才智骰，在你的回合以一个附赠动作采取回避动作。若一个生物在你的下一回合开始前以一次攻击未命中你，且该生物在你的攻击范围内，你可以用你的反应对其进行一次武器攻击，并将才智骰加到攻击检定上。"
+									]
+								},
+								{
+									"ENG_name": "Foiling Strike",
+									"type": "entries",
+									"name": "挫敌打击",
+									"entries": [
+										"当一个你能看见的生物被迫进行一次力量、敏捷或体质豁免时，你可以消耗一枚才智骰，若该生物在你的攻击范围内，用你的反应对其进行一次武器攻击。若该攻击命中，你将才智骰加到该攻击的伤害掷骰上，且目标在该豁免上具有劣势。"
+									]
+								},
+								{
+									"ENG_name": "Sage Advice",
+									"type": "entries",
+									"name": "智者建议",
+									"entries": [
+										"当你或另一个生物准备进行一项需要属性检定的动作时，你可以消耗一枚才智骰，并用一个动作分析局势，基于你的观察与推论给出建议。在接下来的1分钟内，任何能听见并理解你、且尝试该动作的生物（包括你自己），进行该尝试时加上才智骰的掷骰结果。"
+									]
+								},
+								{
+									"ENG_name": "Unsticky the Situation",
+									"type": "entries",
+									"name": "摆脱困局",
+									"entries": [
+										"当你一次豁免失败时，你可以消耗一枚才智骰并将其加到掷骰结果上，从而有可能将其转为成功。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "ScholaryPursuit",
+			"name": "学术追求",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 1,
+			"entries": [
+				"在第1级，你选择专注钻研的学术追求。从探险家、发明家、哲学家、医师、位面贤者或战术家中选择其一，其详述见职业描述末尾。你所选的追求会在第1级赋予你特性，并在第3、6、13和18级再次赋予。"
+			]
+		},
+		{
+			"ENG_name": "Practica",
+			"name": "实践课",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 2,
+			"entries": [
+				"你的研究让你接触了无数科目的学问与理论，但要将这些知识应用于现实世界，还需要更高一层的投入。",
+				"从第2级开始，你精通三项自选的{@filter 实践课|optionalfeatures|source=null|feature type=PR}。你的实践课选项详述于职业描述末尾。当你达到特定的学者等级时，你会精通新的自选实践课，如\"学者表\"中\"实践课\"一栏所示。",
+				"此外，当你在此职业中获得等级时，你可以选择一项已知的实践课，并将其替换为另一项你满足先决条件的实践课。你无法替换让你学会一种语言的实践课。"
+			]
+		},
+		{
+			"ENG_name": "Pursuit Feature",
+			"name": "追求特性",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 3,
+			"entries": [
+				"在第3级，你从你的学术追求中获得另一个特性"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 4,
+			"entries": [
+				"在第4级，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性时你无法将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Boundless Intellect",
+			"name": "无穷才智",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 5,
+			"entries": [
+				"从你达到第5级开始，你在完成短休或长休后恢复所有已消耗的才智骰。"
+			]
+		},
+		{
+			"ENG_name": "Pursuit Feature",
+			"name": "追求特性",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 6,
+			"entries": [
+				"在第6级，你从你的学术追求中获得另一个特性"
+			]
+		},
+		{
+			"ENG_name": "Field Research",
+			"name": "实地研究",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 7,
+			"entries": [
+				"从第7级开始，若你在战斗外花费至少1分钟观察或接触另一个生物，你便可以获知其能力相关的信息。选择一个你曾见过的同类型参照生物，由DM告知你：就你自选的以下两项特征而言，你所研究的生物与该参照生物相比是相当、较强还是较弱：",
+				{
+					"type": "list",
+					"items": [
+						"力量值",
+						"敏捷值",
+						"体质值",
+						"智力值",
+						"护甲等级",
+						"最大生命值",
+						"总职业等级（如果有）"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 8,
+			"entries": [
+				"在第8级，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性时你无法将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Moment of Genius",
+			"name": "天才时刻",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 9,
+			"entries": [
+				"从第9级开始，当你使用奇策时，你可以选择直接取才智骰的最大值，而无需掷骰。才智骰仍照常消耗。",
+				"一旦你使用了此特性，在完成长休之前你无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 10,
+			"entries": [
+				"在第10级，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性时你无法将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Improved Keen intellect (d10)",
+			"name": "强化的敏锐才智（d10）",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 11,
+			"entries": [
+				"在第11级，你的才智骰从d8变为d10。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 12,
+			"entries": [
+				"在第12级，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性时你无法将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Pursuit Feature",
+			"name": "追求特性",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 13,
+			"entries": [
+				"在第13级，你从你的学术追求中获得另一个特性"
+			]
+		},
+		{
+			"ENG_name": "Clear Mind",
+			"name": "清明心智",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 14,
+			"entries": [
+				"从第14级开始，你可以用你的动作结束你自身一个正使你陷入魅惑或恐慌的效应。"
+			]
+		},
+		{
+			"ENG_name": "Analytical Mind",
+			"name": "分析心智",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 15,
+			"entries": [
+				"在第15级，进行感知属性检定与感知豁免时，你可以改用你的智力调整值而非感知调整值。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 16,
+			"entries": [
+				"在第16级，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性时你无法将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Improved Keen Intellect (d12)",
+			"name": "强化的敏锐才智（d12）",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 17,
+			"entries": [
+				"在第17级，你的才智骰从d10变为d12。"
+			]
+		},
+		{
+			"ENG_name": "Pursuit Feature",
+			"name": "追求特性",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 18,
+			"entries": [
+				"在第18级，你从你的学术追求中获得另一个特性"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 19,
+			"entries": [
+				"在第19级，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性时你无法将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "True Genius",
+			"name": "真正的天才",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"level": 20,
+			"entries": [
+				"在第20级，你对心智锤炼的投入已将你磨砺成一位真正的天才。你全部阅历的积淀赋予你无与伦比的敏锐。你的智力值提升4点，且你的智力上限提升至24。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Explorer",
+			"name": "探险家",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "探险家",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"entries": [
+				"选择探险家追求的学者是好奇心与适应力的典范。他们往往是人类学、考古学或动物学方面的专家，其研究的最前沿总在田野之间。无论是深入古代遗迹的底部、与未知的族群建立联系，还是在偏远岛屿上发现奇异的动植物，探险家总能凭丰富的世俗知识从容应对各种局面。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|学者|Scholar|探险家|Scholar|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "探险家",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"若学者是你的第一个职业，你熟练于感知豁免。",
+				"此外，当你在第1级选择此追求时，你获得额外的自选熟练项与语言。从下列选项中选择任意四项：",
+				{
+					"type": "list",
+					"items": [
+						"制图工具",
+						"载具 (陆运)",
+						"领航工具",
+						"载具(水上)",
+						"任意军用武器（可多次选择）",
+						"任意语言（可多次选择）"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Adaptable",
+			"name": "随机应变",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "探险家",
+			"subclassSource": "Scholar",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在第3级，你能通过过往的研究与自身的洞见来重新校准并聚焦你的头脑，以适应当前的任务与环境。你学会一项额外的、你满足先决条件的实践课。每当你完成短休或长休时，你都可以将这项奖励实践课替换为另一项你满足先决条件的实践课。"
+			]
+		},
+		{
+			"ENG_name": "Jack of All Trades",
+			"name": "万事通",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "探险家",
+			"subclassSource": "Scholar",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你进行的任何尚未包含熟练加值的属性检定，都可以加上你熟练加值的一半（向下取整）。"
+			]
+		},
+		{
+			"ENG_name": "Gambit: Fool Me Once",
+			"name": "奇策：骗我一次",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "探险家",
+			"subclassSource": "Scholar",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你学会骗我一次奇策。当你受到伤害时，你可以消耗一枚洞悉骰，并用你的反应将伤害降低所掷出的数值，并在1分钟内获得以下益处之一：",
+				{
+					"type": "list",
+					"items": [
+						"你获得对该类型伤害的抗性。此抗性不适用于触发它的那次伤害。",
+						"若该伤害由一次攻击造成，则攻击者此后针对你的所有攻击检定都具有劣势。",
+						"若该伤害由一个触发豁免的效应造成，则你此后针对该属性的豁免具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Rapid Adjustment",
+			"name": "快速调整",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "探险家",
+			"subclassSource": "Scholar",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以用一个动作将随机应变特性给予的奖励实践课替换为另一项你满足先决条件的实践课。在完成长休之前，你无法再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Inventor",
+			"name": "发明家",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"entries": [
+				"发明家追求由天生喜好创造的学者所选择。发明家不只是单纯的工匠，他们凭借自身的才智以及广泛的工具与学科，创造出全新的事物。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|学者|Scholar|发明家|Scholar|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"若学者是你的第一个职业，你熟练于敏捷豁免。",
+				"此外，当你在第1级选择此追求时，你获得修补工具的熟练项，并且你使用工具进行的任何尚未包含熟练加值的属性检定，都可以加上你熟练加值的一半（向下取整）。"
+			]
+		},
+		{
+			"ENG_name": "Invention",
+			"name": "发明",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在第3级，你完成你的第一件发明，并在第6、13和18级完成额外的发明。",
+				"每一件发明，都从{@optfeature 发条同伴|Scholar}、{@optfeature 战斗装置|Scholar}、{@optfeature 改良工具|Scholar}、{@optfeature 技能辅助器|Scholar}或{@optfeature 武器|Scholar}中选择其一。每种发明类型都详述于追求描述的末尾，并附有决定其能力的说明。当你在此职业中获得等级时，你可以改变你一件发明的属性，但不能改变其类型。",
+				"作为科技最前沿的造物，你的发明需要你定期维护才能保持正常运转。你可以在一次长休期间对所有发明进行维护。虽然你必须亲自维护自己的发明，但你可以在一次短休期间教会另一个智力值为7或更高的生物如何正确使用你的一件发明。",
+				"你的发明的性质与具体描述由你和你的DM决定。尽情发挥创意，但务必确保你和你的DM都理解这件造物的原理。"
+			]
+		},
+		{
+			"ENG_name": "Ingenuity",
+			"name": "巧思",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级开始，你可以花费1分钟，用附近找到的材料即兴制作一套工匠工具、一盒易容工具、一套领航工具、一套盗贼工具或一件冒险装备。以这种方式即兴制作的物品只能使用一次，随后便会损坏。",
+				"由DM裁定，某些区域可能没有足够的材料来复刻特定物品。或者，你找到的材料品质也可能足够优良，使制成的物品在使用后不会损坏，且该即兴物品可与你的发明一同维护。",
+				"你可以使用此特性的次数等同于你的智力调整值（最少1次），并在一次长休结束时恢复所有使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Second Invention",
+			"name": "第二发明",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你可以创造你的第二件发明。"
+			]
+		},
+		{
+			"ENG_name": "Gambit: Field Repair",
+			"name": "奇策：战地维修",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你学会战地维修奇策。作为一个动作，你可以消耗一枚才智骰，尝试重置或修理一件发明使其可以再次使用，或者使用你的巧思特性。",
+				"要取得成功，你必须通过一次DC 15的智力属性检定，并将才智骰加到掷骰结果上。"
+			]
+		},
+		{
+			"ENG_name": "Third Invention",
+			"name": "第三发明",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在第13级，你可以创造你的第三件发明。"
+			]
+		},
+		{
+			"ENG_name": "Fourth Invention",
+			"name": "第四发明",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，你可以创造你的第四件发明。"
+			]
+		},
+		{
+			"ENG_name": "Masterpiece",
+			"name": "杰作",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "发明家",
+			"subclassSource": "Scholar",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，选择你的一件发明成为你的杰作。你完善了它的设计，无需再在长休期间维护它。若有必需的材料，你可以花费8小时为这件发明制作一件复制品。"
+			]
+		},
+		{
+			"ENG_name": "Philosopher",
+			"name": "哲学家",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "哲学家",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"entries": [
+				"选择哲学家追求的学者走着各式各样的道路。有些是教师或顾问，有些本身就是领袖。他们的共同点在于：他们首先致力于研究自己的类人同类，尤其是他们的思维方式。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|学者|Scholar|哲学家|Scholar|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "哲学家",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"若学者是你的第一个职业，你熟练于感知豁免。",
+				"此外，在第1级你获得以下一项自选技能的熟练项：欺瞒、洞悉、威吓或游说。",
+				"你使用该技能进行的任何属性检定，其熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Ironclad Insight",
+			"name": "铁壁洞悉",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "哲学家",
+			"subclassSource": "Scholar",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第3级开始，你对有灵心智的理解为你在战斗中提供了一种本能的防御。只要你穿着轻甲或未着甲，你的AC就获得等同于你的感知调整值的加值。"
+			]
+		},
+		{
+			"ENG_name": "Gambit: Forceful Presence",
+			"name": "奇策：强势气场",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "哲学家",
+			"subclassSource": "Scholar",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你学会强势气场奇策。在与一个对你不怀敌意的生物交谈时，你可以在为与其互动而进行的{@skill 欺瞒}、{@skill 威吓}或{@skill 游说}属性检定中消耗一枚才智骰。将才智骰加到你的属性检定掷骰上，若你的结果压过该生物对抗的感知（洞悉）检定，则若你掷的是欺瞒或游说，该生物对你陷入{@condition 魅惑}状态；若你掷的是威吓，该生物对你陷入{@condition 恐慌}状态。只要你仍身处该生物近旁，此状态便持续，并在其后延续10分钟。若你或你的同伴对目标做出任何有害行为，魅惑状态提前结束。"
+			]
+		},
+		{
+			"ENG_name": "Logic",
+			"name": "逻辑",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "哲学家",
+			"subclassSource": "Scholar",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"从第13级开始，当你使用一项你熟练的技能进行魅力属性检定时，你可以改为将你的智力调整值（而非魅力调整值）加到掷骰上。"
+			]
+		},
+		{
+			"ENG_name": "Unmatched Authority",
+			"name": "无上威信",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "哲学家",
+			"subclassSource": "Scholar",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级开始，即使目标怀有敌意，你也可以用一个动作使用强势气场奇策。此外，当你使用智者建议奇策时，若才智骰掷出的数值低于你的智力调整值，你可以将其视为你的智力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Physician",
+			"name": "医师",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "医师",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"entries": [
+				"医师追求由希望将头脑应用于治疗之艺的学者所选择。他们凭借广博而专门的知识，完成通常只有魔法才能做到的治疗与复原创举。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|学者|Scholar|医师|Scholar|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "医疗箱|学者|Scholar|医师|Scholar|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "医师",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"若学者是你的第一个职业，你熟练于体质豁免。",
+				"此外，在第1级你获得{@skill 医药}技能的熟练项，且进行医药检定时你可以使用你的智力调整值而非感知调整值。"
+			]
+		},
+		{
+			"ENG_name": "Medical Kit",
+			"name": "医疗箱",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "医师",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在第1级选择此追求时，你获得使用医疗箱的能力，它增强你的医药检定，并允许你为自己和他人施行{@filter 疗法|optionalfeatures|source=null|feature type=TR}。你的医疗箱允许你通过消耗疗法点数来施行疗法，你的疗法点数数量等同于你学者等级的两倍。完成长休后你恢复所有已消耗的疗法点数。完整的{@filter 疗法|optionalfeatures|source=null|feature type=TR}列表见追求描述的末尾。",
+				"当你手持医疗箱时，你进行医药属性检定的熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Tailored Treatment",
+			"name": "对症治疗",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "医师",
+			"subclassSource": "Scholar",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在第3级，你获得根据当前情况调整疗法的能力。单次疗法你只能使用以下选项之一。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Double Dose",
+							"type": "entries",
+							"name": "剂量加倍",
+							"entries": [
+								"当你施行一项持续时间至少为1分钟的疗法时，你可以花费2点疗法点数使其持续时间翻倍。"
+							]
+						},
+						{
+							"ENG_name": "Methodical Administration",
+							"type": "entries",
+							"name": "有条不紊的施用",
+							"entries": [
+								"当你以一项疗法恢复生命值时，你可以花费2点疗法点数，重掷数量至多等同于你智力调整值（最少1枚）的治疗骰。你必须使用新的掷骰结果。"
+							]
+						},
+						{
+							"ENG_name": "Preparation",
+							"type": "entries",
+							"name": "预备",
+							"entries": [
+								"你可以提前制备一项通常需要用一个动作来施行的疗法。这需要1分钟和1点额外的疗法点数。你可以以一个附赠动作（而非动作）施行以这种方式制备的疗法。为增强疗法效力而额外花费的疗法点数，必须在制备过程中支付。制备好的疗法在8小时后失去效力。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gambit: Preventative Medicine",
+			"name": "奇策：预防医学",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "医师",
+			"subclassSource": "Scholar",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你学会预防医学奇策。当一个你能看见的盟友豁免失败时，你可以用你的反应并消耗一枚洞悉骰，将其加到该盟友的豁免结果上，从而有可能将其转为成功。",
+				"该盟友必须在你5尺内才能获得此益处，且你可以在使用反应的同时移动至多等同于你速度一半的距离，以拉近到该距离。",
+				"若该豁免由一个范围效应触发，而你的移动使你进入了受影响区域，则你将承受相应的效应，如同在豁免被触发时你正处于该区域中。"
+			]
+		},
+		{
+			"ENG_name": "Infecting Solution",
+			"name": "感染溶剂",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "医师",
+			"subclassSource": "Scholar",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"从第13级开始，你可以花费8点疗法点数并使用你的医疗箱，制造一份感染了天然疾病的溶剂。这份溶剂无色、无嗅、无味，可以倒入饮品或撒在食物上。或者，它也可以涂在一件造成穿刺或挥砍伤害的武器或弹药上。无论哪种方式，该溶剂都会在1小时后失去效力。这份溶剂足以感染一个生物。",
+				"无论因摄入还是因被涂抹的武器造成伤害而感染，该生物都会染上疫病术的非魔法等同物。抵抗该溶剂效应的豁免DC与你的奇策豁免DC相同。",
+				"当你制造该溶剂时，你从*疫病术*法术列出的疾病中选择它所引发的疾病。"
+			]
+		},
+		{
+			"ENG_name": "Double Shift",
+			"name": "连值双班",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "医师",
+			"subclassSource": "Scholar",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级，每天一次，当你完成短休时，你可以恢复数量等同于你学者等级一半的已消耗医疗点数。"
+			]
+		},
+		{
+			"ENG_name": "Planar Sage",
+			"name": "位面贤者",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "位面贤者",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"entries": [
+				"在追寻各自追求的学者当中，位面贤者所走的道路与其他人相距最远。研究主物质位面之外的诸位面，必然伴随着遭遇拥有强大力量的异界生物的危险。要在这些遭遇中存活，位面贤者必须依靠的不仅是学识，还有从奥术到神术的各种魔法。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|学者|Scholar|位面贤者|Scholar|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "位面贤者",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"若学者是你的第一个职业，你熟练于感知豁免。",
+				"此外，在第1级你获得奥秘或宗教之一的熟练项。你使用该技能进行的任何属性检定，其熟练加值翻倍。你还学会以下一种自选语言：深渊语、天界语、炼狱语、原初语或木族语。"
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "位面贤者",
+			"subclassSource": "Scholar",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到第3级时，你以施法能力来增强你的学识。施法的一般规则见《玩家手册》第10章。位面贤者的法术列表见追求描述的末尾。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从{@filter 位面贤者的法术列表|spells|subclass=位面贤者（brew）|level=0}中学会三项自选戏法。你在第6级和第13级从位面贤者的法术列表中学会额外的戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spellbook",
+					"type": "entries",
+					"name": "法术书",
+					"entries": [
+						"在第3级，一旦你获得你的第一本法术书，你可以将三个自选的1环{@filter 位面贤者法术|spells|subclass=位面贤者（brew）|level=1}抄入其中。"
+					]
+				},
+				{
+					"ENG_name": "Preparing and Casting Spells",
+					"type": "entries",
+					"name": "法术的准备与施展",
+					"entries": [
+						"位面贤者施法表显示了你可以用以施展1环及更高环阶法术的法术位数量。施展这些法术之一时，你必须消耗一个该法术环阶或更高环阶的法术位。完成长休后你恢复所有已消耗的法术位。",
+						"你准备可施展的位面贤者法术列表。为此，从你的法术书中选择数量等同于你的智力调整值+你学者等级一半（最少一个法术）的位面贤者法术。这些法术的环阶必须是你已拥有相应法术位的环阶。",
+						"例如，如果你是一名7级学者，你拥有四个1环法术位和两个2环法术位。若你的智力为16，你的准备法术列表可以包含六个1环或2环法术（任意组合），从你的法术书中选择。如果你准备了1环法术防护善恶，你可以用1环或2环法术位来施展它。施展法术不会将其从你的准备法术列表中移除。你可以在完成长休后改变你的准备法术列表。准备一份新的位面贤者法术列表需要花时间研读法术书，并记忆施展法术所需的咒语与手势：列表上每个法术每环阶至少需要1分钟。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"智力是你位面贤者法术的施法属性，因为你的法术是通过学习与记忆掌握的。每当法术提及你的施法属性时，你使用你的智力。此外，当你设定所施展位面贤者法术的豁免DC，以及用它进行攻击检定时，你使用你的智力调整值。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"type": "entries",
+					"name": "法器",
+					"entries": [
+						"你可以用奥术法器或圣徽（见《玩家手册》第5章）来施展你的位面贤者法术。"
+					]
+				},
+				{
+					"ENG_name": "Learning Spells of 1st-Level and Higher",
+					"type": "entries",
+					"name": "学习法术",
+					"entries": [
+						"每当你获得一个学者等级，你可以将一个自选的{@filter 位面贤者法术|spells|subclass=位面贤者（brew）}加入你的法术书。该法术的环阶必须是你拥有相应法术位的环阶，如位面贤者施法表所示。在冒险途中，你也可能找到其他可以加入法术书的法术。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gambit: Planes Hunter",
+			"name": "奇策：位面猎手",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "位面贤者",
+			"subclassSource": "Scholar",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你学会位面猎手奇策。当你以一次攻击指定一个天界生物、元素生物、精类生物、邪魔或不死生物时，你可以消耗一枚才智骰并将其加到攻击检定上。或者，若你施展一个法术或使用一个迫使上述类型生物进行豁免的学者特性，你可以消耗一枚才智骰并将其从该生物的豁免结果中减去。",
+				"无论哪种情况，你都必须在攻击检定或豁免掷骰之前消耗这枚才智骰。"
+			]
+		},
+		{
+			"ENG_name": "Advanced Planar Magic",
+			"name": "进阶位面魔法",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "位面贤者",
+			"subclassSource": "Scholar",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"当你达到第13级时，你将{@spell 位面转移}法术和以下列表中的另一个法术加入你的法术书。你可以不用法术位各施展这些法术一次。此后你必须完成一次长休才能再次如此做。",
+				"从以下法术中选择一项：{@spell 驱逐善恶}、{@spell 异界誓缚}、{@spell 禁制术}或{@spell 异界誓盟}。"
+			]
+		},
+		{
+			"ENG_name": "Planes Tripper",
+			"name": "位面游客",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "位面贤者",
+			"subclassSource": "Scholar",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"当你达到第18级时，你将{@spell 星界投影}或{@spell 异界之门}法术之一加入你的法术书。你可以不用法术位施展该法术一次。此后你必须完成一次长休才能再次如此做。"
+			]
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "战术家",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"entries": [
+				"战术家追求的学者将头脑专注于战斗的艺术与技艺。通过磨练技巧与研究敌人，战术家在任何战场上都是令人生畏的存在。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|学者|Scholar|战术家|Scholar|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "战术家",
+			"subclassSource": "Scholar",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"若学者是你的第一个职业，你熟练于敏捷豁免。",
+				"此外，在第1级你获得中甲、盾牌和军用武器的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "战术家",
+			"subclassSource": "Scholar",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在第3级，你采用一种特定的战斗风格作为你的专长。从以下选项中选择一项。你无法多次选择同一战斗风格选项，即使你之后可以再次选择。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Archery",
+							"type": "entries",
+							"name": "箭术",
+							"entries": [
+								"你用远程武器进行的攻击检定获得+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Defense",
+							"type": "entries",
+							"name": "防御",
+							"entries": [
+								"着装护甲时，你的AC获得 +1加值。"
+							]
+						},
+						{
+							"ENG_name": "Dueling",
+							"type": "entries",
+							"name": "对决",
+							"entries": [
+								"单手持用一把近战武器，且并未同时持用其他武器时，你用该武器攻击的伤害掷骰获得 +2加值。"
+							]
+						},
+						{
+							"ENG_name": "Great Weapon Fighting",
+							"type": "entries",
+							"name": "巨武器战斗",
+							"entries": [
+								"双手持用一把近战武器发动攻击时，若你的伤害掷骰掷出1或2，则可以选择重掷。不过哪怕其仍是1或2，你都必须接受重掷的数值。此外，该武器必须具有双手或两用属性。"
+							]
+						},
+						{
+							"ENG_name": "Protection",
+							"type": "entries",
+							"name": "守护",
+							"entries": [
+								"当某个你能看见的生物攻击你身边5尺内除你之外的目标时，你可以用反应迫使该攻击的攻击检定具有劣势。你必须持用盾牌以实现该效果。"
+							]
+						},
+						{
+							"ENG_name": "Two-Weapon Fighting",
+							"type": "entries",
+							"name": "双武器战斗",
+							"entries": [
+								"当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gambit: Study Foe",
+			"name": "奇策：研敌",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "战术家",
+			"subclassSource": "Scholar",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级，你学会研敌奇策。你可以以一个附赠动作消耗一枚才智骰，开始研究一个你能看见的生物。你分析它的动作与战斗风格，以避开它的攻击。",
+				"在1小时内，被研究的生物针对且仅针对你的攻击检定具有劣势。当该生物尝试采取一个动作时，你可以用你的反应对其进行一次武器攻击，并将你的才智骰加到攻击检定上。若该攻击命中，该生物失去它本回合的动作，包括它为被中断的动作所消耗的任何资源（例如一个法术位）。无论命中与否，你的研敌效应立即结束。",
+				"若你陷入失能状态，或你对另一个生物使用了此奇策，研敌效应也会提前结束。"
+			]
+		},
+		{
+			"ENG_name": "Force Multiplier",
+			"name": "战力倍增器",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "战术家",
+			"subclassSource": "Scholar",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"从第13级开始，你可以用一个动作进入一种洞察状态，使你得以分析战场。在持续时间内，每当你或一个能看见并听见你的盟友采取攻击动作时，你都可以指出一个破绽，使该目标得以在该动作中额外进行一次攻击。此外，在你的回合，你可以以一个附赠动作命令一个能看见并听见你的盟友用其反应攻击范围内的一个生物。由此特性赋予的攻击具有优势。",
+				"洞察状态在1分钟后结束，或在你赋予了数量等同于你的智力调整值（最少1次）的攻击后结束。一旦你使用了此特性，在完成长休之前你无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Tenacious Intellect",
+			"name": "坚韧才智",
+			"source": "Scholar",
+			"className": "学者",
+			"classSource": "Scholar",
+			"subclassShortName": "战术家",
+			"subclassSource": "Scholar",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从第18级开始，当你进行先攻检定且已没有剩余才智骰时，你恢复一枚才智骰。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Agile Eye",
+			"name": "敏锐之眼",
+			"source": "Scholar",
+			"page": 13,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"战术家追求"
+					]
+				}
+			],
+			"entries": [
+				"如果你正以研敌奇策研究一个生物，或你的研究对象生命值降至0，你可以以一个附赠动作开始研究另一个敌人，而无需再消耗一枚才智骰。这不会刷新研敌的1小时持续时间。"
+			]
+		},
+		{
+			"ENG_name": "Antidotes, Tinctures, & Cold Water",
+			"name": "解毒剂、酊剂与冷水",
+			"source": "Scholar",
+			"featureType": [
+				"TR"
+			],
+			"entries": [
+				"以一个动作，你可以花费2点疗法点数，结束一个生物所患的一种疾病或一种状态。该状态可以是{@condition 目盲}、{@condition 耳聋}、{@condition 麻痹}或{@condition 中毒}。",
+				"如果你花费8点疗法点数，并消耗价值100 gp的稀有药用材料（例如草药、蒸馏化学品和植物萃取物），你可以改为将目标的力竭等级降低一级，或结束其身上一个正使它陷入{@condition 魅惑}或{@condition 石化}状态的效应，或一个已降低目标某项属性值或生命值上限的效应。"
+			]
+		},
+		{
+			"ENG_name": "Artisan",
+			"name": "工匠",
+			"source": "Scholar",
+			"page": 13,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"发明家追求"
+					]
+				}
+			],
+			"entries": [
+				"当你用一套你熟练的工匠工具制作物品时，你可以选择优先速度或品质。你可以按两名工匠的工作量来决定制作物品所需的时间，或者将你制作物品的最终价值提高一半。"
+			]
+		},
+		{
+			"ENG_name": "Artist",
+			"name": "艺术家",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"entries": [
+				"你获得三项自选工具的熟练项。如果你已经熟练其中一项工具，则改为在使用该工具进行的属性检定中加入双倍熟练加值。"
+			]
+		},
+		{
+			"ENG_name": "Clockwork Companion",
+			"name": "发条同伴",
+			"source": "Scholar",
+			"featureType": [
+				"IN"
+			],
+			"entries": [
+				{
+					"type": "statblockInline",
+					"dataType": "monster",
+					"data": {
+						"ENG_name": "Clockwork Companion",
+						"name": "发条同伴",
+						"source": "Scholar",
+						"size": [
+							"T"
+						],
+						"type": "construct",
+						"alignment": [
+							"U"
+						],
+						"ac": [
+							{
+								"ac": 13,
+								"condition": "强化"
+							}
+						],
+						"hp": {
+							"average": 5,
+							"formula": "2d4"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"cr": "0",
+						"str": 4,
+						"dex": 12,
+						"con": 10,
+						"int": 2,
+						"wis": 2,
+						"cha": 1,
+						"conditionImmune": [
+							"charmed",
+							"exhaustion",
+							"frightened",
+							"paralyzed",
+							"petrified",
+							"poisoned"
+						],
+						"immune": [
+							"poison",
+							"psychic"
+						],
+						"passive": 13,
+						"trait": [
+							{
+								"ENG_name": "Basic Communication Protocol",
+								"name": "基础通讯协议",
+								"entries": [
+									"发条同伴可以通过各种活动部件发出信号，与它的发明者交流基本概念。反过来，其创造者可以用一个动作与之互动来下达简单的指示，发条同伴会尽力遵从。"
+								]
+							},
+							{
+								"ENG_name": "Invention Interface",
+								"name": "发明接口",
+								"entries": [
+									"只要发明是战斗装置、技能辅助器，或具有易于使用属性的改良工具，发条同伴就可以使用由其发明者创造的发明。"
+								]
+							}
+						]
+					}
+				},
+				"以上方的数据块为起点设计你的发条同伴，然后以下方的属性对其进行调整。每个类别中，各选择一个可用选项。",
+				"在战斗中，你的同伴在你的回合行动，且若你未受惊，它也不会受惊。它无法攻击，但如果你通过其基础通讯协议特性指示它，它可以如常采取其他动作。",
+				"你可以在一次长休期间用价值100 gp的材料建造你的发条同伴。若它被摧毁但零件尚可回收，你可以用价值25 gp的零件修复它。",
+				{
+					"ENG_name": "Build Dynamics",
+					"type": "entries",
+					"name": "构造类型",
+					"entries": [
+						"你的同伴可以采用轻型、重型或均衡的构造类型。",
+						{
+							"ENG_name": "Light",
+							"type": "entries",
+							"name": "轻型",
+							"entries": [
+								"轻型构造的同伴失去其+2的强化护甲加值，其敏捷值提升你的智力调整值，且其移动速度提升10尺。"
+							]
+						},
+						{
+							"ENG_name": "Heavy",
+							"type": "entries",
+							"name": "重型",
+							"entries": [
+								"重型构造的同伴的强化护甲加值提高2点至+4，其力量值与体质值各提升你的智力调整值的一半，获得2个额外的d4生命骰，且其移动速度降低10尺。"
+							]
+						},
+						{
+							"ENG_name": "Balanced",
+							"type": "entries",
+							"name": "均衡",
+							"entries": [
+								"均衡构造的同伴，其力量、敏捷与体质值各提升你的智力调整值的一半。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Locomotive Mechanism",
+					"type": "entries",
+					"name": "移动机构",
+					"entries": [
+						"你的同伴可以拥有提高的步行速度，或以下一种移动速度：挖掘、攀爬、飞行或游泳。",
+						"选择提高步行速度的同伴，其速度提高20尺。否则，同伴的新移动类型的速度等同于其步行速度。"
+					]
+				},
+				{
+					"ENG_name": "Secondary Functions",
+					"type": "entries",
+					"name": "次要功能",
+					"entries": [
+						"你的同伴精通以下两项自选技能：{@skill 运动}、{@skill 特技}、{@skill 巧手}和{@skill 隐匿}。在这些技能上，同伴使用你的熟练加值而非它自己的。"
+					]
+				},
+				{
+					"ENG_name": "Utility Feature",
+					"type": "entries",
+					"name": "实用功能",
+					"entries": [
+						"你的同伴拥有以下一项实用功能：应急传感器、损害管制或形态变换。",
+						{
+							"ENG_name": "Contingency Sensor",
+							"type": "entries",
+							"name": "应急传感器",
+							"entries": [
+								"若你的同伴拥有应急传感器功能，你可以用一个动作使其进入警戒状态。此时，选择一个同伴将等待的简单触发条件，以及它感应到该条件时要执行的简单动作。例如，它可以在感应到附近生物时敲响铃铛。在此模式下，其被动察觉提高等同于你的智力调整值两倍+你的熟练加值的数值，且其速度固定为0。"
+							]
+						},
+						{
+							"ENG_name": "Damage Control",
+							"type": "entries",
+							"name": "损害管制",
+							"entries": [
+								"若你的同伴拥有损害管制功能，当它受到一个允许其进行力量、敏捷或体质豁免以将伤害减半的效应影响时，豁免成功则它改为不受伤害，豁免失败则只受一半伤害。"
+							]
+						},
+						{
+							"ENG_name": "Transformation",
+							"type": "entries",
+							"name": "形态变换",
+							"entries": [
+								"若你的同伴拥有形态变换功能，你可以用一个动作让它重新配置自身形态。这使它可以更换由次要功能获得的技能熟练项，或由移动机构赋予的移动增强。你的同伴只能实现其中一种变换，由你选择。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Combat Assessment",
+			"name": "战斗评估",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以在战斗中使用有限形式的实地研究。在你的回合以一个附赠动作，你可以按照实地研究特性的规则，获知一个你能看见的敌人的一条信息。如果你能看见参照生物，你可以选择当前生命值作为特征。"
+			]
+		},
+		{
+			"ENG_name": "Combat Device",
+			"name": "战斗装置",
+			"source": "Scholar",
+			"featureType": [
+				"IN"
+			],
+			"entries": [
+				"通过在以下每个类别中选择属性来设计你的战斗装置。若你的战斗装置需要豁免，它使用你的奇策豁免DC。",
+				{
+					"ENG_name": "Durability",
+					"type": "entries",
+					"name": "耐久度",
+					"entries": [
+						"装置可以是消耗型或可复用型。",
+						{
+							"ENG_name": "Consumable",
+							"type": "entries",
+							"name": "消耗型",
+							"entries": [
+								"消耗型装置需要价值10 gp的材料来制造，使用一次后即损毁。你可以在一次短休期间制作一个新的，或在一次长休期间制作三个，且你同一时间最多保养三个。"
+							]
+						},
+						{
+							"ENG_name": "Reusable",
+							"type": "entries",
+							"name": "可复用型",
+							"entries": [
+								"可复用型装置需要在一整次长休期间用价值50 gp的材料制造，使用后可以复原。可复用型装置一经使用，必须在一次短休期间重置后才能再次使用。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Effect",
+					"type": "entries",
+					"name": "效应",
+					"entries": [
+						"装置可以造成伤害、施加状态，或两者兼有。若装置造成伤害，从以下选项中选择伤害类型：强酸、钝击、寒冷、火焰、闪电、穿刺、毒素、挥砍或雷鸣。装置可以施加的状态包括{@condition 目盲}、{@condition 耳聋}、{@condition 受擒}和{@condition 倒地}。",
+						"若你的装置只造成伤害，它造成数量等同于你熟练加值的d8伤害。若装置只施加状态，从可能的状态列表中选择两种。若你的装置两者兼备，选择一种状态，且装置造成数量等同于你熟练加值一半的d8伤害。"
+					]
+				},
+				{
+					"ENG_name": "Activation",
+					"type": "entries",
+					"name": "激活效应",
+					"entries": [
+						"装置可以通过攻击、动作或附赠动作来激活。",
+						{
+							"ENG_name": "Attack",
+							"type": "entries",
+							"name": "攻击",
+							"entries": [
+								"对于以攻击激活的装置，选择它是触及5尺的近战攻击，还是常规射程20尺、远距射程60尺的远程攻击。同时选择攻击检定使用力量、敏捷还是智力。以攻击造成伤害的装置，其效果不作任何修正。以攻击施加状态的装置，该状态持续到目标下一回合结束。"
+							]
+						},
+						{
+							"ENG_name": "Action",
+							"type": "entries",
+							"name": "动作",
+							"entries": [
+								"对于以动作激活的装置，选择力量、敏捷或体质作为目标被装置指定时必须进行的豁免。射程不应超过60尺。若装置造成伤害，它造成数量等同于你熟练加值的额外d8伤害。豁免成功的目标受一半伤害。若装置施加状态，目标可以进行豁免以抵抗，该状态持续1分钟。受影响的生物可以在其每个回合结束时进行豁免以结束该效应。"
+							]
+						},
+						{
+							"ENG_name": "Bonus Action",
+							"type": "entries",
+							"name": "附赠动作",
+							"entries": [
+								"对于以附赠动作激活的装置，选择力量、敏捷或体质作为目标被装置指定时必须进行的豁免。射程不应超过30尺。若装置造成伤害，它造成数量等同于你熟练加值一半的额外d8伤害。豁免成功的目标不受伤害。若装置施加状态，目标可以进行豁免以抵抗，该状态持续到你的下一回合结束。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Target",
+					"type": "entries",
+					"name": "目标",
+					"entries": [
+						"装置可以指定一个生物或一个区域。指定单一生物的装置，其效果不作任何修正。",
+						"指定区域的装置可以有5尺或15尺的半径，且必须搭配动作或附赠动作激活方式。在5尺半径内造成伤害的装置改用d6伤害骰。在15尺半径内造成伤害的装置改用d4伤害骰，且豁免DC降低3。在5尺半径内施加状态的装置，其豁免DC降低2；在15尺半径内则降低5。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Comprehensive Care",
+			"name": "全面照护",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"medicine": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 洞悉}和{@skill 医药}技能的熟练项。如果你已经熟练其中一项技能，则改为在使用该技能进行的属性检定中加入双倍熟练加值。",
+				"此外，当你进行属性检定以判断一个生物的身体或心理状态时，若你的掷骰结果超过20，则在接下来的十分钟内，你与该生物互动的下一次魅力属性检定具有优势。无论触发它的属性检定被视为成功还是失败，你都会获得此益处。"
+			]
+		},
+		{
+			"ENG_name": "Configurator",
+			"name": "灵活配置",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"发明家追求"
+					]
+				}
+			],
+			"entries": [
+				"当你学习此实践课时，选择你的一件发明及其一项属性。你可以在短休或长休期间改变该属性。例如，你可以选择只有单一属性档位的技能辅助器，在基础、强化与强力属性之间切换；或者选择战斗装置的效果属性，切换它施加的状态或造成的伤害类型。",
+				"你可以多次学习此实践课，每次选择不同的发明。当你获得等级时，若你更改了一件应用了此实践课的发明的属性，你可以改为选择另一项属性作为可配置属性。"
+			]
+		},
+		{
+			"ENG_name": "Crippling Blow",
+			"name": "致残打击",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你懂得如何将完美一击化为毁灭性的攻击。当你在一件武器的伤害骰上掷出最大值时，你对该生物的攻击伤害翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Cruel Intellect",
+			"name": "残酷才智",
+			"source": "Scholar",
+			"page": 13,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"战术家追求"
+					]
+				}
+			],
+			"entries": [
+				"当你掷一枚才智骰以加到攻击检定或伤害掷骰上时，你可以重掷该才智骰一次，但必须使用第二次的结果。"
+			]
+		},
+		{
+			"ENG_name": "Cunning Aim",
+			"name": "狡黠瞄准",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"entries": [
+				"使用轻型武器、长棍或徒手打击进行武器攻击时，攻击检定与伤害掷骰可以用智力代替力量。若你是发明家，你还可以将此益处应用于你发明的任何远程武器发明。"
+			]
+		},
+		{
+			"ENG_name": "Cynicism",
+			"name": "愤世嫉俗",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"哲学家追求"
+					]
+				}
+			],
+			"entries": [
+				"每当你或你30尺内一个友方生物必须进行豁免时，该生物的豁免获得等同于你感知调整值一半的加值（向上取整，最低为+0）。生物必须能看见或听见你才能获得此加值。",
+				"此特性与圣武士的守护灵光特性不叠加。"
+			]
+		},
+		{
+			"ENG_name": "Deft Improviser",
+			"name": "巧手即兴者",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"entries": [
+				"你获得临时武器的熟练项，且半掩护对你的作用等同于四分之三掩护。"
+			]
+		},
+		{
+			"ENG_name": "Deliberate Step",
+			"name": "从容步伐",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你的移动速度提升10尺，且非魔法的困难地形不再减慢你的移动。"
+			]
+		},
+		{
+			"ENG_name": "Dogged",
+			"name": "顽强",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"entries": [
+				"力竭时，你承受的效应相当于你的力竭等级降低一级。单一级别的力竭不会给你带来任何负面效应。此外，你不会陷入震慑状态。"
+			]
+		},
+		{
+			"ENG_name": "Exotic Physiology",
+			"name": "异种生理",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"医师追求"
+					]
+				}
+			],
+			"entries": [
+				"从以下生物类型中选择一种：天界生物、巨龙、元素生物、精类生物、邪魔、巨人、异怪或植物。你的疗法对该类型的生物有效。"
+			]
+		},
+		{
+			"ENG_name": "Expedition Mastery",
+			"name": "探险精通",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"探险家追求"
+					],
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"若你在某一特定类型的地形（极地、海岸、荒漠、丛林、草原、山地、沼泽或幽暗地域）中旅行至少一天，你将获得以下益处，直到你在另一类型的地形中旅行至少一天。",
+				{
+					"type": "list",
+					"items": [
+						"你的队伍旅行时不会因困难地形而变慢。",
+						"除非受魔法效应影响，否则你的队伍不会迷路",
+						"旅行时，即使你进行另一项活动（如觅食、导航、追踪或绘图），仍能对危险保持警觉。"
+					]
+				},
+				"如果你有所经地区的详细地图，则无需满足一天的旅行要求即可从此特性中获益。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你采取攻击动作时，你可以攻击两次，而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Extraplanar Contact",
+			"name": "异界接触",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"位面贤者追求"
+					]
+				}
+			],
+			"entries": [
+				"你将{@spell 异界探知}法术加入你的法术书。你可以如常施展它一次，此后必须完成一次长休才能再次如此做。你也可以以仪式施展它，且事后无需休息。"
+			]
+		},
+		{
+			"ENG_name": "Extraplanar Detection",
+			"name": "异界侦测",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"位面贤者追求"
+					]
+				}
+			],
+			"entries": [
+				"若你的法术书中尚无{@spell 侦测善恶}法术，则将其加入。你可以随意施展该法术，且它不计入你的准备法术数量。"
+			]
+		},
+		{
+			"ENG_name": "Extraplanar Diplomacy",
+			"name": "异界外交",
+			"source": "Scholar",
+			"page": 14,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"位面贤者追求"
+					]
+				}
+			],
+			"entries": [
+				"当你学习此实践课时，从以下异界生物类型中选择一种：天界生物、元素生物、精类生物或邪魔。你与该类型生物互动的魅力检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Extraplanar Summoning",
+			"name": "异界召唤",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"位面贤者追求"
+					]
+				}
+			],
+			"entries": [
+				"当你施展一个允许你召唤天界生物、元素生物、精类生物或邪魔的咒法系法术时，你可以如同使用了比你实际所用高两环的法术位一般施展该法术。例如，你可以用3环法术位施展{@i 咒唤兽群}法术，如同使用了5环法术位，即使你没有5环法术位。",
+				"一旦你使用了此特性，在完成长休之前你无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Fool Me Never",
+			"name": "绝不再受骗",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"探险家追求"
+					]
+				}
+			],
+			"entries": [
+				"当你使用骗我一次奇策时，你额外将触发伤害降低等同于你学者等级两倍的数值。"
+			]
+		},
+		{
+			"ENG_name": "Hardy",
+			"name": "坚韧",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以无视毒素与疾病的效果。若你已中毒或患病，而此实践课在状态被移除前遭到替换，你会立即开始承受其效果。"
+			]
+		},
+		{
+			"ENG_name": "Immersion Learning",
+			"name": "沉浸式学习",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"探险家追求"
+					]
+				}
+			],
+			"entries": [
+				"当你学习此实践课时，选择一项你不熟练的技能。当你进行使用该技能的属性检定时，你可以将你智力调整值的一半（向下取整）加到掷骰结果上。"
+			]
+		},
+		{
+			"ENG_name": "Improved Tool",
+			"name": "改良工具",
+			"source": "Scholar",
+			"featureType": [
+				"IN"
+			],
+			"entries": [
+				"设计你的改良工具时，首先从《玩家手册》的工具列表中选择你想改良的工具种类。除载具与赌具外，你可以选择任何一种工具。选定工具类型后，套用以下列表中的一种强化。",
+				"你可以在一次长休期间从零开始打造你的改良工具，所需材料的花费与该类型普通工具相同。或者，你也可以花费相当于该工具价格一半的金额，改造一件该类型的现有工具。",
+				{
+					"ENG_name": "Automation",
+					"type": "entries",
+					"name": "自动化",
+					"entries": [
+						"若你花费十分钟为眼前的任务配置该工具，它便可以自动运作。它可以使用你的智力调整值和熟练加值进行属性检定来完成其任务。"
+					]
+				},
+				{
+					"ENG_name": "Ease of Use",
+					"type": "entries",
+					"name": "易于使用",
+					"entries": [
+						"即使未经训练的人也能有效使用该工具。当一个生物用该工具进行属性检定时，若该检定尚未包含其熟练加值，它可以将你的熟练加值加到掷骰结果上。"
+					]
+				},
+				{
+					"ENG_name": "Refinement",
+					"type": "entries",
+					"name": "精益求精",
+					"entries": [
+						"该工具甚至能改进大师的作品。熟练该类型工具的生物在使用该工具进行的属性检定中，除其自身熟练或专长带来的加值外，再加上你熟练加值的一半。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Incisive Strikes",
+			"name": "锋锐打击",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你以一次武器攻击命中一个生物时，该生物受到等同于你智力调整值的额外伤害（最少为1）。"
+			]
+		},
+		{
+			"ENG_name": "Induce Catalepsy",
+			"name": "诱发僵直",
+			"source": "Scholar",
+			"featureType": [
+				"TR"
+			],
+			"entries": [
+				"你可以花费1分钟和4点疗法点数，施用药物使一个自愿目标进入一种与死亡无从分辨的僵直性昏厥状态。此状态持续1小时，或直到你施用一份你在引发此效应时一同制备的解毒剂。",
+				"在持续时间内，目标在一切外在检视以及用于判断目标状态的法术看来都已死亡。目标处于{@condition 目盲}和{@condition 失能}状态，且其速度降为0。目标对除心灵伤害外的所有伤害具有抗性。若你在施行此疗法时目标已患病或中毒，或在疗法生效期间患病或中毒，则疾病与毒素在疗法结束前不产生任何效果。"
+			]
+		},
+		{
+			"ENG_name": "Infallible Expertise",
+			"name": "绝对专精",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你进行的属性检定允许你加入熟练加值的一半或全部时，你可以将d20掷出的4或更低视为5。当你进行的属性检定允许你加入双倍熟练加值时，你可以将d20掷出的9或更低视为10。"
+			]
+		},
+		{
+			"ENG_name": "Kinaesthetics",
+			"name": "运动知觉",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"skillProficiencies": [
+				{
+					"acrobatics": true,
+					"athletics": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 特技}和{@skill 运动}技能的熟练项。如果你已经熟练其中一项技能，则改为在使用该技能进行的属性检定中加入双倍熟练加值。",
+				"此外，当你学习此实践课时，选择攀爬或游泳之一。该形式的移动不再消耗你的额外移动。"
+			]
+		},
+		{
+			"ENG_name": "Linguist",
+			"name": "语言学家",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"entries": [
+				"你学会说、读、写三种自选语言。你可以多次学习此实践课，每次选择不同的语言。此实践课不能通过探险家的随机应变特性选取。"
+			]
+		},
+		{
+			"ENG_name": "Machiavellian",
+			"name": "权谋之士",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"intimidation": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 欺瞒}和{@skill 威吓}技能的熟练项。如果你已经熟练其中一项技能，则改为在使用该技能进行的属性检定中加入双倍熟练加值。",
+				"此外，你为抵抗魅惑而进行的豁免具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Masterful Hand",
+			"name": "妙手",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"发明家追求"
+					]
+				}
+			],
+			"entries": [
+				"当你用一件已加入熟练加值的工具进行属性检定时，你可以消耗一枚才智骰并将其加到掷骰结果上。"
+			]
+		},
+		{
+			"ENG_name": "Measured Assault",
+			"name": "有度攻势",
+			"source": "Scholar",
+			"page": 15,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"战术家追求"
+					]
+				}
+			],
+			"entries": [
+				"你的战力倍增器特性现在在完成短休或长休后恢复，但只能让你赋予数量等同于你智力调整值一半（向上取整）的额外攻击。"
+			]
+		},
+		{
+			"ENG_name": "Natural Cartography",
+			"name": "天赋制图",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"探险家追求"
+					]
+				}
+			],
+			"entries": [
+				"在户外时，你可以花费10分钟研究你附近的周边环境，从而推知你周围3英里内的土地信息。在洞穴及其他天然地下环境中，半径限于300尺。从海拔较高、视野开阔的合适制高点，你只需1分钟即可完成此任务。此能力在自然已被建筑取代的地方（例如地城和城镇）不起作用。",
+				"你可以获知以下任意主题与该区域相关的至多三条信息。",
+				{
+					"type": "list",
+					"items": [
+						"地形和水体",
+						"常见的植物、矿物、动物或族群",
+						"建筑物"
+					]
+				},
+				"例如，你可以确定主要安全饮用水源的位置、附近城镇的位置，以及该区域内地精营地的位置。"
+			]
+		},
+		{
+			"ENG_name": "Naturalist",
+			"name": "博物学家",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"skillProficiencies": [
+				{
+					"animal handling": true,
+					"survival": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 驯兽}和{@skill 求生}技能的熟练项。如果你已经熟练其中一项技能，则改为在使用该技能进行的属性检定中加入双倍熟练加值。",
+				"此外，你能读懂野兽的基本情绪与意图。你可以得知它的情绪状态、它是否受任何魔法影响、它的短期需求（例如食物或安全），以及你能采取什么行动（若有）来说服它不要攻击。你不能对你在过去10分钟内攻击过的生物使用此能力。"
+			]
+		},
+		{
+			"ENG_name": "One Move Ahead",
+			"name": "先人一步",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"锋锐打击实践课"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你进行武器攻击时，你可以运用锋锐打击将你的智力调整值加到攻击检定而非伤害掷骰上。你必须在进行攻击检定前选择使用此实践课。"
+			]
+		},
+		{
+			"ENG_name": "Painkillers",
+			"name": "止痛剂",
+			"source": "Scholar",
+			"featureType": [
+				"TR"
+			],
+			"entries": [
+				"你可以花费1分钟和3点疗法点数，为至多3个自愿生物施用止痛剂。在接下来的8小时内，每个目标的生命值上限与当前生命值各提高5点。若目标已处于此疗法的效果下，或已处于援助术的效果下，则此疗法不产生效果。",
+				"施行此疗法时，你可以额外花费至多6点疗法点数。每额外花费两点，此疗法给予的当前与上限生命值提升再增加5点。"
+			]
+		},
+		{
+			"ENG_name": "Practiced Practitioner",
+			"name": "老练医师",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"医师追求"
+					]
+				}
+			],
+			"entries": [
+				"选择一项对症治疗选项。你使用它的费用减少1点疗法点数。你可以多次学习此实践课，每次选择不同的对症治疗选项。"
+			]
+		},
+		{
+			"ENG_name": "Psychological Profile",
+			"name": "心理画像",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"若你花费至少1分钟与一个生物交谈，或在社交场合观察它，你便可以分析其言语与肢体语言，判断如何与其互动最为有效。DM会告知你{@skill 欺瞒}、{@skill 威吓}、{@skill 表演}或{@skill 游说}中，哪一项最可能对该生物对你的态度产生积极影响。在接下来的1小时内，你针对该生物进行的该项技能检定具有优势。一旦你使用了此特性，在完成短休或长休之前你无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Rapid Response",
+			"name": "快速反应",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"医师追求"
+					]
+				}
+			],
+			"entries": [
+				"在你的回合，你可以以一个附赠动作采取{@action 疾走}动作。此时，你在本回合余下时间内不会引发借机攻击，但你唯一能采取的动作就是施行一项疗法。"
+			]
+		},
+		{
+			"ENG_name": "Renaissance Man",
+			"name": "通才",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"entries": [
+				"你获得一种工匠工具和一种自选乐器或赌具的熟练项。你学会说、读、写一种自选语言。你可以多次学习此实践课，每次选择不同的选项。此实践课不能通过探险家的随机应变特性选取。"
+			]
+		},
+		{
+			"ENG_name": "Rest and Mend",
+			"name": "休养治疗",
+			"source": "Scholar",
+			"featureType": [
+				"TR"
+			],
+			"entries": [
+				"在一次短休期间，你可以花费2点疗法点数，为至多六个你选择的生物（包括你自己）进行治疗。每个目标恢复等同于2d8+你的智力调整值的生命值。",
+				"施行此疗法时，你可以额外花费至多3点疗法点数。每额外花费1点，治疗量增加1d8。"
+			]
+		},
+		{
+			"ENG_name": "Resuscitate",
+			"name": "复苏",
+			"source": "Scholar",
+			"featureType": [
+				"TR"
+			],
+			"entries": [
+				"以一个动作，你可以花费5点疗法点数，并消耗价值300 gp的稀有药用材料（例如草药、蒸馏化学品与植物萃取物），复活一个在过去1分钟内死亡的生物。"
+			]
+		},
+		{
+			"ENG_name": "Rhetoric",
+			"name": "雄辩",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"skillProficiencies": [
+				{
+					"performance": true,
+					"persuasion": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 表演}和{@skill 游说}技能的熟练项。如果你已经熟练其中一项技能，则改为在使用该技能进行的属性检定中加入双倍熟练加值。",
+				"此外，若你花费至少10分钟演讲或表演，你选择的盟友（至多等同于你智力调整值两倍的数量）各获得一个d6，可以加到其进行的下一次属性检定、攻击检定或豁免上。一个生物每次短休只能从此能力中获益一次。"
+			]
+		},
+		{
+			"ENG_name": "Scholastics",
+			"name": "学术造诣",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"entries": [
+				"你获得以下两项自选技能的熟练项：{@skill 奥秘}、{@skill 历史}、{@skill 自然}和{@skill 宗教}。如果你已经熟练其中一项技能，则改为在使用该技能进行的属性检定中加入双倍熟练加值。",
+				"此外，若你使用所选技能之一的属性检定失败，你可以在下一次短休或长休期间重试该检定。",
+				"你可以学习此实践课两次，每次选择不同的技能。"
+			]
+		},
+		{
+			"ENG_name": "Skepticism",
+			"name": "怀疑论",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"哲学家追求"
+					]
+				}
+			],
+			"entries": [
+				"你对抗幻象的豁免具有优势，识破幻象的智力检定也具有优势。若你识破了某个幻象，而一个能听见你的盟友没有，你可以使其为识破该幻象进行的任何豁免或智力检定具有优势。这不需要你花费动作。"
+			]
+		},
+		{
+			"ENG_name": "Skill Aid",
+			"name": "技能辅助器",
+			"source": "Scholar",
+			"featureType": [
+				"IN"
+			],
+			"entries": [
+				"设计你的技能辅助器时，首先选择你希望发明辅助的技能。除奥秘、历史、自然和宗教外，你可以选择任何技能。选定技能后，从以下列表中为辅助器选择一种效果。",
+				"你的技能辅助器可以在一次长休期间用价值50 gp的材料制成。若一个生物使用你的技能辅助器辅助属性检定时，该检定掷出自然1，辅助器即损坏。它可以在短休或长休期间用价值25 gp的材料修复。",
+				{
+					"ENG_name": "Basic",
+					"type": "entries",
+					"name": "基础",
+					"entries": [
+						"受过此辅助器使用训练的生物，在使用它的属性检定中获得等同于你熟练加值一半（向下取整）的加值。"
+					]
+				},
+				{
+					"ENG_name": "Enhanced",
+					"type": "entries",
+					"name": "强化",
+					"entries": [
+						"受过此辅助器使用训练的生物，可以以一个附赠动作启动它，从而在其下一回合结束前的下一次相关属性检定中获得优势。此功能可使用两次，之后需要在短休或长休期间重置。"
+					]
+				},
+				{
+					"ENG_name": "Powered",
+					"type": "entries",
+					"name": "强力",
+					"entries": [
+						"受过此辅助器使用训练的生物，可以以一个附赠动作启动它，在其下一回合结束前的下一次相关属性检定中，它可以将骰面上的数值视为20。此辅助器可使用一次，之后需要在一次长休期间重置。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sophism",
+			"name": "诡辩",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"哲学家追求"
+					]
+				}
+			],
+			"entries": [
+				"你进行的任何尚未包含熟练加值的魅力检定，都可以加上你熟练加值的一半（向下取整）。"
+			]
+		},
+		{
+			"ENG_name": "Spatial Awareness",
+			"name": "空间意识",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true,
+					"investigation": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 察觉}和{@skill 调查}技能的熟练项。如果你已经熟练其中一项技能，则改为在使用该技能进行的属性检定中加入双倍熟练加值。",
+				"此外，你能完美记住自学习此实践课以来走过的任何路径。"
+			]
+		},
+		{
+			"ENG_name": "Stabilizing Concoction",
+			"name": "稳定药剂",
+			"source": "Scholar",
+			"featureType": [
+				"TR"
+			],
+			"entries": [
+				"以一个动作，你可以花费8点疗法点数，为一个自愿生物施用一份调剂，使其在8小时内获得一定程度的死亡防护。",
+				"目标第一次因受到伤害而将要生命值降至0时，改为生命值降至1点，且此疗法结束。",
+				"若此疗法仍在生效时，目标受到一个不造成伤害即会立即杀死它的效应，则该效应改为对目标无效，且此疗法结束。"
+			]
+		},
+		{
+			"ENG_name": "Stoicism",
+			"name": "坚忍",
+			"source": "Scholar",
+			"page": 16,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"哲学家追求"
+					]
+				}
+			],
+			"entries": [
+				"你可以使用你的清明心智特性，使一个你30尺内、能看见并听见你的魅惑或恐慌盟友进行一次新的豁免，以结束使其魅惑或恐慌的效应。此次豁免具有优势。若该盟友的新豁免失败，则在该盟友完成一次短休或长休之前，你无法再次使用此特性来结束同一效应。",
+				"此外，当同一范围内的一个盟友受到重击时，你可以用一个反应赋予它等同于你学者等级的临时生命值。若该重击使盟友的生命值降至0，则此效果无效。"
+			]
+		},
+		{
+			"ENG_name": "Tactical Retreat",
+			"name": "战术撤退",
+			"source": "Scholar",
+			"page": 17,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"战术家追求"
+					]
+				}
+			],
+			"entries": [
+				"在你的回合，你可以以一个附赠动作采取{@action 撤离}动作。此时，你在同一回合内以武器攻击指定的任何生物，在其下一回合开始前都无法进行借机攻击，而处于受此影响的生物攻击范围内的盟友，可以立即用其反应移动至多等同于其速度一半的距离。"
+			]
+		},
+		{
+			"ENG_name": "Tend Wounds",
+			"name": "处理伤势",
+			"source": "Scholar",
+			"featureType": [
+				"TR"
+			],
+			"entries": [
+				"你可以花费1分钟和1点疗法点数，处理一个自愿生物的伤口。该生物恢复等同于1d10+你的智力调整值的生命值。",
+				"施行此疗法时，你可以额外花费至多4点疗法点数。每额外花费1点，治疗量增加1d10。"
+			]
+		},
+		{
+			"ENG_name": "Toxicology",
+			"name": "毒理学",
+			"source": "Scholar",
+			"page": 17,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					},
+					"feature": [
+						"医师追求"
+					]
+				}
+			],
+			"entries": [
+				"你的医疗箱还可以当作毒药工具使用，且你被视为熟练使用它。你可以花费2点疗法点数，制造一份腐蚀性毒药，它可以涂抹在一件挥砍或穿刺武器或至多三枚弹药上。被涂毒武器或弹药命中的生物必须对你的奇策豁免DC进行一次体质豁免，失败则受到{@dice 1d8}毒素伤害。涂毒需要一个动作，且涂上后毒药在1分钟后干涸失效。毒药一经制备，若未涂抹，会在8小时后失去效力。"
+			]
+		},
+		{
+			"ENG_name": "Tradecraft",
+			"name": "谍报技艺",
+			"source": "Scholar",
+			"page": 17,
+			"featureType": [
+				"PR"
+			],
+			"skillProficiencies": [
+				{
+					"sleight of hand": true,
+					"stealth": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 巧手}和{@skill 隐匿}技能的熟练项。如果你已经熟练其中一项技能，则改为在使用该技能进行的属性检定中加入双倍熟练加值。",
+				"此外，你获得{@item 盗贼工具|PHB}的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Trail Medicine",
+			"name": "途中行医",
+			"source": "Scholar",
+			"page": 17,
+			"featureType": [
+				"PR"
+			],
+			"entries": [
+				"以一个动作，你可以消耗一份{@item 医疗包|PHB}的充能，或你医疗箱的1点疗法点数，赋予一个自愿生物等同于你学者等级的临时生命值。一个生物一旦从此特性获得过临时生命值，在完成长休之前无法再次获得。"
+			]
+		},
+		{
+			"ENG_name": "Triage",
+			"name": "检伤分类",
+			"source": "Scholar",
+			"featureType": [
+				"TR"
+			],
+			"entries": [
+				"以一个动作，你可以花费1点疗法点数，对一个自愿生物施行紧急医疗处理。它恢复等同于1d6+你的智力调整值的生命值。",
+				"施行此疗法时，你可以额外花费至多4点疗法点数。每额外花费1点，治疗量增加1d6。"
+			]
+		},
+		{
+			"ENG_name": "Troubleshooter",
+			"name": "排障专家",
+			"source": "Scholar",
+			"page": 17,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						},
+						"level": 14
+					},
+					"feature": [
+						"发明家追求"
+					]
+				}
+			],
+			"entries": [
+				"当你尝试战地维修而失败时，你恢复被消耗的才智骰。"
+			]
+		},
+		{
+			"ENG_name": "Universal Linguistics",
+			"name": "通用语言学",
+			"source": "Scholar",
+			"page": 17,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"即使没有共同语言，你也能与智力值为7或更高的生物交流并理解简单的想法与概念。你还能从你不认识的语言文字样本中获取基本信息。若你尝试阅读、交流或理解未知语言中更复杂的内容，DM可以要求你进行一次智力检定。由DM裁定，检定失败可能导致误解。"
+			]
+		},
+		{
+			"ENG_name": "Vigilant",
+			"name": "警觉",
+			"source": "Scholar",
+			"page": 17,
+			"featureType": [
+				"PR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Scholar",
+							"name": "学者",
+							"source": "Scholar"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你的先攻检定加上你的智力调整值，且在判断你是否受惊时，你的被动察觉获得等同于你的智力调整值的加值。"
+			]
+		},
+		{
+			"ENG_name": "Weapon",
+			"name": "武器",
+			"source": "Scholar",
+			"featureType": [
+				"IN"
+			],
+			"entries": [
+				"使用右侧的各张表格为你的武器选择属性来设计它。每项属性都有一个骰值修正。选完属性后，将各骰值修正相加，并查阅武器伤害表来决定你武器的伤害骰。若武器的骰值修正总和落在两种不同伤害骰选项的区间内，你可以选择你的武器使用哪种伤害骰。",
+				"你的发明不被视为简易或军用武器，且只有你被视为熟练使用它。由DM裁定，你或许可以在足够长的休整期里教会他人使用它。",
+				"你可以在一次长休期间用价值100 gp的材料制造你的武器。若你的武器使用弹药，选择它是使用标准弹药（例如箭矢或投石索弹丸），还是使用特制弹药。若使用特制弹药，你可以在一次短休期间制作至多10发。每发弹药需要价值2 sp的材料。",
+				{
+					"type": "table",
+					"caption": "触及或射程",
+					"colLabels": [
+						"触及（近战）",
+						"射程（远程）",
+						"骰值修正"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"5 尺",
+							"-",
+							"+6"
+						],
+						[
+							"10 尺",
+							"-",
+							"+4"
+						],
+						[
+							"-",
+							"30/90",
+							"+2"
+						],
+						[
+							"-",
+							"60/150",
+							"+1"
+						],
+						[
+							"-",
+							"80/320",
+							"+0"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "重量与体型",
+					"colLabels": [
+						"重量",
+						"骰值修正",
+						"",
+						"体型",
+						"骰值修正"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-4",
+						"col-2 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"轻型",
+							"+0",
+							"",
+							"-",
+							"+0"
+						],
+						[
+							"-",
+							"+1",
+							"",
+							"多用",
+							"+0 (+2)"
+						],
+						[
+							"重型",
+							"+2",
+							"",
+							"双手",
+							"+2"
+						]
+					]
+				},
+				"具有重型属性的武器必须同时具有双手属性。具有轻型属性的武器不能具有双手属性。远程武器不能具有多用属性。",
+				{
+					"type": "table",
+					"caption": "伤害类型",
+					"colLabels": [
+						"伤害类型",
+						"骰值修正"
+					],
+					"colStyles": [
+						"col-9",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"钝击、穿刺或挥砍",
+							"+3"
+						],
+						[
+							"强酸、寒冷、火焰、闪电、毒素或雷鸣",
+							"+0"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "其他词条",
+					"colLabels": [
+						"词条",
+						"骰值修正"
+					],
+					"colStyles": [
+						"col-9",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"弹药",
+							"+0"
+						],
+						[
+							"弹药，弹容（6）",
+							"+1"
+						],
+						[
+							"弹药，弹容（4）",
+							"+2"
+						],
+						[
+							"弹药，弹容（2）",
+							"+3"
+						],
+						[
+							"弹药，装填",
+							"+4"
+						],
+						[
+							"投掷",
+							"+0"
+						],
+						[
+							"灵巧",
+							"+0"
+						]
+					]
+				},
+				"具有弹容属性的武器在使用一定次数后，需要用一个动作或一个附赠动作装填。近战武器可以具有投掷属性、弹药属性，或两者皆无。远程武器必须具有弹药属性或投掷属性之一。远程武器只有在同时具有投掷属性时才能具有灵巧属性。",
+				{
+					"type": "table",
+					"caption": "伤害骰",
+					"colLabels": [
+						"骰值修正",
+						"伤害骰"
+					],
+					"colStyles": [
+						"text-center",
+						"text-center"
+					],
+					"rows": [
+						[
+							"0-5",
+							"1d4"
+						],
+						[
+							"6-7",
+							"1d6"
+						],
+						[
+							"8-9",
+							"1d8"
+						],
+						[
+							"9-10",
+							"2d4"
+						],
+						[
+							"10-11",
+							"1d10"
+						],
+						[
+							"12-13",
+							"1d12"
+						],
+						[
+							"13+",
+							"2d6"
+						]
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Medial Kit",
+			"name": "医疗箱",
+			"source": "Scholar",
+			"type": "G",
+			"rarity": "none",
+			"value": 5000
+		}
+	]
+}
