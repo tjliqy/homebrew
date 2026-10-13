@@ -1,0 +1,7927 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLSav",
+				"abbreviation": "LLSav",
+				"full": "LaserLlama 的博学者",
+				"url": "https://www.gmbinder.com/share/-M0ZVK6ndhFyImQPF_aJ",
+				"version": "5.6.1",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"544220340675412000",
+					"Celery",
+					"Dazzle",
+					"DrGoo282",
+					"hakr14",
+					"Jarett R.",
+					"maybejake",
+					"Patreon Reward"
+				]
+			},
+			{
+				"json": "LLSavE",
+				"abbreviation": "LLSavE",
+				"full": "LaserLlama 的博学者扩展",
+				"url": "https://www.gmbinder.com/share/-MzD8t8Wt2S232M_WBVC",
+				"version": "5.6.1",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle",
+					"hakr14"
+				],
+				"color": "eaab30"
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"llspell"
+			],
+			"monster": [
+				"LLCompendiumOfBeasts"
+			],
+			"feat": [
+				"llfeat"
+			]
+		},
+		"optionalFeatureTypes": {
+			"LL:CR": "生物食谱",
+			"LL:Runes": "符文",
+			"LL:SP": "学术追求",
+			"LL:SP:I": "调查员学术追求",
+			"LL:SP:M": "导师学术追求",
+			"LL:SP:N": "博物学家学术追求",
+			"LL:SP:O": "演说家学术追求"
+		},
+		"edition": "classic",
+		"dateAdded": 1549715846,
+		"dateLastModified": 1789939430,
+		"_dateLastModifiedHash": "0dbd131312"
+	},
+	"class": [
+		{
+			"ENG_name": "Savant",
+			"name": "博学者",
+			"source": "LLSav",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Scholarly Pursuits",
+					"name": "学术追求",
+					"featureType": [
+						"LL:SP"
+					],
+					"progression": [
+						1,
+						1,
+						1,
+						2,
+						2,
+						2,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						4,
+						4,
+						4,
+						4,
+						4,
+						5,
+						5,
+						5
+					]
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"count": 2,
+							"from": [
+								"arcana",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"persuasion",
+								"religion"
+							]
+						}
+					}
+				],
+				"weapons": [
+					"simple",
+					"{@item 刺剑|phb|刺剑}",
+					"{@item 短剑|phb|短剑}",
+					"{@item 鞭子|phb|鞭子}"
+				],
+				"tools": [
+					"一套自选的{@item 工匠工具|PHB}"
+				],
+				"toolProficiencies": [
+					{
+						"anyArtisansTool": 1
+					}
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）一件自选的{@filter 简易武器|items|source=phb|category=基础|type=简易武器}，或（b）一把{@item 短剑|PHB}。",
+					"（a）一把{@item 轻弩}和{@item 弩矢|PHB|20支弩矢}，或（b）两把{@item 匕首|PHB|匕首}。",
+					"一套{@item 工匠工具|PHB}、一副{@item 皮甲|PHB}，以及一个{@item 学者套组|PHB}。"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						],
+						"b": [
+							"短剑|phb"
+						]
+					},
+					{
+						"a": [
+							"轻弩|phb",
+							"弩矢(20)|phb"
+						],
+						"b": [
+							{
+								"item": "匕首|phb",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"_": [
+							{
+								"equipmentType": "toolArtisan"
+							},
+							"皮甲|phb",
+							"学者套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"arcana",
+									"history",
+									"insight",
+									"investigation",
+									"medicine",
+									"nature",
+									"persuasion",
+									"religion"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"一套自选的工匠工具"
+					],
+					"toolProficiencies": [
+						{
+							"anyArtisansTool": 1
+						}
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"才智骰"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							"{@dice d6}"
+						],
+						[
+							"{@dice d6}"
+						],
+						[
+							"{@dice d6}"
+						],
+						[
+							"{@dice d8}"
+						],
+						[
+							"{@dice d8}"
+						],
+						[
+							"{@dice d8}"
+						],
+						[
+							"{@dice d8}"
+						],
+						[
+							"{@dice d8}"
+						],
+						[
+							"{@dice d8}"
+						],
+						[
+							"{@dice d10}"
+						],
+						[
+							"{@dice d10}"
+						],
+						[
+							"{@dice d10}"
+						],
+						[
+							"{@dice d10}"
+						],
+						[
+							"{@dice d10}"
+						],
+						[
+							"{@dice d10}"
+						],
+						[
+							"{@dice d12}"
+						],
+						[
+							"{@dice d12}"
+						],
+						[
+							"{@dice d12}"
+						],
+						[
+							"{@dice d12}"
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"敏锐分析|博学者|LLSav|1",
+				"分析防御|博学者|LLSav|1",
+				"学术追求|博学者|LLSav|2",
+				"强化观察|博学者|LLSav|2",
+				{
+					"classFeature": "学科|博学者|LLSav|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|博学者|LLSav|4",
+				"精密应对|博学者|LLSav|5",
+				"迅捷反射|博学者|LLSav|5",
+				"敏锐心智|博学者|LLSav|6",
+				{
+					"classFeature": "学科特性|博学者|LLSav|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|博学者|LLSav|8",
+				"高度警觉|博学者|LLSav|9",
+				"无双天才|博学者|LLSav|10",
+				"属性值提升|博学者|LLSav|12",
+				{
+					"classFeature": "学科特性|博学者|LLSav|13",
+					"gainSubclassFeature": true
+				},
+				"不屈意志|博学者|LLSav|14",
+				"完美分析|博学者|LLSav|15",
+				"属性值提升|博学者|LLSav|16",
+				{
+					"classFeature": "学科特性|博学者|LLSav|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|博学者|LLSav|19",
+				"无可比拟的才智|博学者|LLSav|20"
+			],
+			"subclassTitle": "学科",
+			"hasFluff": true,
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "才智骰",
+					"configuration": {
+						"identifier": "intellect-die",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"die": 4
+							},
+							"5": {
+								"die": 6
+							},
+							"9": {
+								"die": 8
+							},
+							"13": {
+								"die": 10
+							},
+							"17": {
+								"die": 12
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "权能之言",
+					"configuration": {
+						"identifier": "wop-die",
+						"type": "dice",
+						"scale": {
+							"3": {
+								"n": 1,
+								"die": 4
+							},
+							"5": {
+								"n": 1,
+								"die": 6
+							},
+							"7": {
+								"n": 2,
+								"die": 6
+							},
+							"9": {
+								"n": 2,
+								"die": 8
+							},
+							"13": {
+								"n": 3,
+								"die": 10
+							},
+							"17": {
+								"n": 3,
+								"die": 12
+							},
+							"18": {
+								"n": 4,
+								"die": 12
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "喧闹强袭",
+					"configuration": {
+						"identifier": "raucous-die",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"n": 2,
+								"die": 4
+							},
+							"5": {
+								"n": 2,
+								"die": 6
+							},
+							"9": {
+								"n": 2,
+								"die": 8
+							},
+							"13": {
+								"n": 3,
+								"die": 10
+							},
+							"17": {
+								"n": 3,
+								"die": 12
+							},
+							"18": {
+								"n": 4,
+								"die": 12
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-yellow-teal.webp"
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Savant",
+			"name": "博学者",
+			"source": "LLSav",
+			"entries": [
+				{
+					"type": "entries",
+					"source": "LLSav",
+					"entries": [
+						"尘埃落定，一位精灵用斗篷的边角擦拭她的眼镜。皇帝付了她一大笔钱来寻找这处被遗忘之地，而在数月研读古地图之后，她终于拼凑出了太古神庙那一度失落的所在。此刻，她面临一个抉择：若把神庙的位置禀报恩主，那里将被贪婪地洗劫一空；但若将位置秘而不宣，她便能保全其中蕴藏的古老知识。对一位博学者而言，知识比任何数目的黄金都珍贵。",
+						"一位年迈的人类战士默默估量着麾下的士兵们。他们精疲力竭，补给也几近耗尽。这是一场残酷围城的第十个夜晚，这位两鬓斑白的指挥官深知不会有援军前来营救。他已太老，在战场上派不上太大用场，但只要士兵们毫不犹豫地执行他的命令，他们就还有一线生机。他站起身，极有可能是最后一次，将饱经风霜的剑从剑鞘中拔出。",
+						"战场中央，一位年轻的矮人俯身查看失去意识的战友，检查兄弟伤势时双手不住颤抖。他的氏族花了不菲的积蓄，送他到全国最好的大学求学。课堂与图书馆中的千百日，皆为此刻。他回想起所学的一切，开始为兄弟包扎伤口。",
+						"上述角色只是被称为博学者的冒险知识分子中的几例。他们仅凭机智傍身，便足以援助盟友、智取敌人。",
+						{
+							"ENG_name": "Magnificent Minds",
+							"type": "entries",
+							"name": "杰出心智",
+							"entries": [
+								"世上聪慧过人者众多，但真正的博学者寥寥无几。博学者生来便怀着学习一切的内驱渴望，并拥有天才级的智力潜质，他们毕生都在学习身边之人愿意传授的一切。博学者往往在年少时便可被辨认出来，他们对知识难以餍足的渴求，将他们引向伟大的图书馆、大学及其他高等学府。他们愿意不择手段地解开世界的秘密，因而常踏上冒险生涯。对博学者而言，为了发现的允诺，任何代价都不算高昂。"
+							]
+						},
+						{
+							"ENG_name": "Intense Focus",
+							"type": "entries",
+							"name": "极度专注",
+							"entries": [
+								"博学者高度专注于自己选定的研究领域，常痴迷于穷究其专长的一切。在探索求知的路上，博学者愿意搁置任何信念\u2014\u2014无论政治、宗教还是其他\u2014\u2014以获取他们寻求的信息。对他们而言，求知的渴望重于对任何意识形态的忠诚。",
+								"博学者常常付出巨大的个人代价，在研究领域取得革命性发现之前绝不停下脚步。在远离大学与图书馆庇护之处遇上这样一位学者，并非罕事。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Savant",
+							"type": "entries",
+							"name": "创建博学者",
+							"entries": [
+								"创建博学者时，不妨思考他们的成长背景与正规教育程度。他们是金钱能买到的最好大学里的明星学子？还是街头巷尾的孩子，为每一星半点的知识而奋力争取？又或许，他们的头脑自出生起便被培养成某个贵族家族的完美分析工具。",
+								"此外，也想想你的博学者为何只仰仗自身的智识，而不将天赋用于追寻奥术或侍奉更高的力量。他们是被诅咒永远无法施展哪怕最平凡的法术？还是曾立誓永不依赖那毁灭了他们家族的魔法？",
+								"最后，你的博学者为何选择成为冒险者，而非安度学院生涯？他们是否已超越寻常学问，向往冒险中无尽的发现？又或者，他们从来都是这个世界的门徒？"
+							]
+						},
+						{
+							"ENG_name": "",
+							"type": "entries",
+							"name": "",
+							"entries": [
+								"为你的博学者设计个性时遇到困难，或只是想要些灵感？从下列表格中选择一项执念、一项怪癖和一项非理性恐惧。",
+								{
+									"ENG_name": "Obsessions",
+									"type": "entries",
+									"name": "执念",
+									"entries": [
+										"出于解答一切问题的渴望，博学者可能养成执念。这些难以解释的问题与现象会啃噬博学者的内心，直到他们找到追寻的答案。",
+										{
+											"type": "table",
+											"colLabels": [
+												"{@dice d4}",
+												"执念"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"你在一本书的页边发现了一种奇怪的文字。最顶尖的学者也无法辨认它。"
+												],
+												[
+													"2",
+													"幼年时，你曾见过一只威严的金色巨鸟掠过天空，身后留下一道彩虹。"
+												],
+												[
+													"3",
+													"你的父亲嘱托你去寻找传说中的\u2014\u2014多半是虚构的\u2014\u2014{@deity 巴哈姆特}圣杯。"
+												],
+												[
+													"4",
+													"你总把\"不可思议\"挂在嘴边，尽管你并不确切知道它是什么意思"
+												]
+											],
+											"data": {
+												"tableInclude": true
+											}
+										}
+									]
+								},
+								{
+									"ENG_name": "Eccentricities",
+									"type": "entries",
+									"name": "怪癖",
+									"entries": [
+										"伟大的智识与高度的精神专注，往往伴随着一些奇怪的习惯。博学者的怪癖通常是他们在研究领域投入过多时间的结果。",
+										{
+											"type": "table",
+											"colLabels": [
+												"{@dice d6}",
+												"怪癖"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"你认为与你交谈的每个人都在乎你专业领域中的细枝末节。"
+												],
+												[
+													"2",
+													"你有个糟糕透顶的习惯：说话只用你领域的技术行话。"
+												],
+												[
+													"3",
+													"你搞不懂小孩子。"
+												],
+												[
+													"4",
+													"要是有人听不懂，那只是你解释的次数还不够多。"
+												],
+												[
+													"5",
+													"你勤勉地记录一切，哪怕在社交场合并不合宜。"
+												],
+												[
+													"6",
+													"你对研究领域如此投入，以至于发现自己会向敌人讲解学问。"
+												]
+											],
+											"data": {
+												"tableInclude": true
+											}
+										}
+									]
+								},
+								{
+									"ENG_name": "Good Luck Charms",
+									"type": "entries",
+									"name": "幸运符",
+									"entries": [
+										"尽管才智过人，博学者常会对他们认为带来好运的平凡护符、物件或衣物产生依恋。",
+										{
+											"type": "table",
+											"colLabels": [
+												"{@dice d6}",
+												"幸运小物"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"你拒绝将信仰寄托于单一神祇，因此随身携带许多圣徽。"
+												],
+												[
+													"2",
+													"你的父亲是一位供你读书的农夫。你戴着他的帽子以资纪念。"
+												],
+												[
+													"3",
+													"尽管它并不顶用，你还是随身带着一根{@item 鞭子|PHB}来炫耀并威慑他人。"
+												],
+												[
+													"4",
+													"你随身带着一卷疯言疯语。总有一天你{@i 会}参透它的含义。"
+												],
+												[
+													"5",
+													"尽管你视力绝佳，你还是戴着一副水晶眼镜。"
+												],
+												[
+													"6",
+													"你出门从不落下你导师那篇关于{@creature 枭熊}解剖学的论文。"
+												]
+											],
+											"data": {
+												"tableInclude": true
+											}
+										}
+									]
+								},
+								{
+									"ENG_name": "Irrational Fears",
+									"type": "entries",
+									"name": "非理性恐惧",
+									"entries": [
+										"尽管头脑出众，博学者却容易产生任何有常识之人都会觉得全然无厘头的恐惧。",
+										{
+											"type": "table",
+											"colLabels": [
+												"{@dice d6}",
+												"非理性恐惧"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													"1",
+													"你{@i 坚信}自己因幼时被狗咬过而染上了一种轻症的兽化症。"
+												],
+												[
+													"2",
+													"为了不与火焰魔法打交道，你什么事都做得出来。"
+												],
+												[
+													"3",
+													"你睡觉时总确保手握一枚银币，以防{@creature 夜鬼婆|mm|夜鬼婆}加害。"
+												],
+												[
+													"4",
+													"你憎恶蛇类与蛇形生物。"
+												],
+												[
+													"5",
+													"你对不死生物怕得要命，一见到它们就会呕吐。"
+												],
+												[
+													"6",
+													"你会给盟友分发暗号，好让他们证明自己不是{@creature 变形怪|mm|变形怪}。"
+												]
+											],
+											"data": {
+												"tableInclude": true
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"entries": [
+								"你可以使用以下建议快速创建一名博学者。首先，将智力设为你的最高属性值，其次是敏捷。其次，选择{@background 贵族}背景。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Archaeologist",
+			"name": "考古学家",
+			"shortName": "考古学家",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"spellcastingAbility": "int",
+			"subclassFeatures": [
+				"考古学家|博学者|LLSav|考古学家|LLSav|3|LLSav",
+				"冒险学者|博学者|LLSav|考古学家|LLSav|7|LLSav|",
+				"远古洞见|博学者|LLSav|考古学家|LLSav|7|LLSav|",
+				"逸闻大师|博学者|LLSav|考古学家|LLSav|13|LLSav|",
+				"发掘奥秘|博学者|LLSav|考古学家|LLSav|13|LLSav|",
+				"考古学大师|博学者|LLSav|考古学家|LLSav|18|LLSav"
+			],
+			"foundryImg": "icons/skills/trades/academics-study-archaeology-bones.webp"
+		},
+		{
+			"ENG_name": "Culinarian",
+			"name": "美食家",
+			"shortName": "美食家",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Recipes",
+					"name": "食谱",
+					"featureType": [
+						"LL:CR"
+					],
+					"progression": {
+						"3": 2
+					}
+				}
+			],
+			"subclassFeatures": [
+				"美食家|博学者|LLSav|美食家|LLSavE|3|LLSavE",
+				"略胜一筹|博学者|LLSav|美食家|LLSavE|7|LLSavE",
+				"改良食谱|博学者|LLSav|美食家|LLSavE|13|LLSavE",
+				"美食大师|博学者|LLSav|美食家|LLSavE|18|LLSavE"
+			],
+			"foundryImg": "icons/consumables/food/bowl-stew-tofu-potato-red.webp"
+		},
+		{
+			"ENG_name": "Investigator",
+			"name": "调查员",
+			"shortName": "调查员",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Illicit Contacts",
+					"name": "非法人脉",
+					"featureType": [
+						"LL:SP:I"
+					],
+					"progression": {
+						"6": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"调查员|博学者|LLSav|调查员|LLSav|3|LLSav",
+				"非法人脉|博学者|LLSav|调查员|LLSav|7|LLSav",
+				"阴招斗士|博学者|LLSav|调查员|LLSav|7|LLSav",
+				"锐利凝视|博学者|LLSav|调查员|LLSav|13|LLSav",
+				"调查大师|博学者|LLSav|调查员|LLSav|18|LLSav"
+			],
+			"foundryImg": "icons/skills/trades/academics-investigation-study-blue.webp"
+		},
+		{
+			"ENG_name": "Mentor",
+			"name": "导师",
+			"shortName": "导师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Student of Life",
+					"name": "人生学徒",
+					"featureType": [
+						"LL:SP:M"
+					],
+					"progression": {
+						"3": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"导师|博学者|LLSav|导师|LLSav|3|LLSav",
+				"沉静气度|博学者|LLSav|导师|LLSav|7|LLSav",
+				"绝妙建议|博学者|LLSav|导师|LLSav|13|LLSav",
+				"神秘直觉|博学者|LLSav|导师|LLSav|13|LLSav",
+				"大导师|博学者|LLSav|导师|LLSav|18|LLSav"
+			],
+			"foundryImg": "icons/skills/trades/academics-study-reading-book.webp"
+		},
+		{
+			"ENG_name": "Naturalist",
+			"name": "博物学家",
+			"shortName": "博物学家",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Survivalist",
+					"name": "生存专家",
+					"featureType": [
+						"LL:SP:N"
+					],
+					"progression": {
+						"6": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"博物学家|博学者|LLSav|博物学家|LLSav|3|LLSav",
+				"野性呼唤|博学者|LLSav|博物学家|LLSav|7|LLSav",
+				"深入研究|博学者|LLSav|博物学家|LLSav|13|LLSav",
+				"博物学大师|博学者|LLSav|博物学家|LLSav|18|LLSav"
+			],
+			"foundryImg": "icons/environment/wilderness/tree-ash.webp"
+		},
+		{
+			"ENG_name": "Orator",
+			"name": "演说家",
+			"shortName": "演说家",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Student of Logic",
+					"name": "逻辑学徒",
+					"featureType": [
+						"LL:SP:O"
+					],
+					"progression": {
+						"3": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"演说家|博学者|LLSav|演说家|LLSavE|3|LLSavE",
+				"钢铁逻辑|博学者|LLSav|演说家|LLSavE|7|LLSavE",
+				"无双雄辩|博学者|LLSav|演说家|LLSavE|13|LLSavE",
+				"演说大师|博学者|LLSav|演说家|LLSavE|18|LLSavE"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-writing-letter.webp"
+		},
+		{
+			"ENG_name": "Philosopher",
+			"name": "哲学家",
+			"shortName": "哲学家",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassFeatures": [
+				"哲学家|博学者|LLSav|哲学家|LLSavE|3|LLSavE",
+				"坚定焦点|博学者|LLSav|哲学家|LLSavE|7|LLSavE",
+				"至高领悟|博学者|LLSav|哲学家|LLSavE|13|LLSavE",
+				"哲学大师|博学者|LLSav|哲学家|LLSavE|18|LLSavE"
+			],
+			"foundryImg": "icons/skills/trades/academics-study-reading-book.webp"
+		},
+		{
+			"ENG_name": "Physician",
+			"name": "医师",
+			"shortName": "医师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassFeatures": [
+				"医师|博学者|LLSav|医师|LLSav|3|LLSav",
+				"战地医生|博学者|LLSav|医师|LLSav|7|LLSav",
+				"稳健双手|博学者|LLSav|医师|LLSav|7|LLSav",
+				"妙手回春|博学者|LLSav|医师|LLSav|13|LLSav",
+				"医学大师|博学者|LLSav|医师|LLSav|18|LLSav"
+			],
+			"foundryImg": "icons/consumables/potions/potion-bottle-labeled-medicine-capped-red-black.webp"
+		},
+		{
+			"ENG_name": "Rune Scribe",
+			"name": "符文抄写师",
+			"shortName": "符文抄写师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Runes of Power",
+					"name": "权能符文",
+					"featureType": [
+						"LL:Runes"
+					],
+					"progression": {
+						"3": 2,
+						"7": 3,
+						"10": 4,
+						"13": 5,
+						"18": 6
+					}
+				}
+			],
+			"subclassFeatures": [
+				"符文抄写师|博学者|LLSav|符文抄写师|LLSavE|3|LLSavE",
+				"上古魔法|博学者|LLSav|符文抄写师|LLSavE|7|LLSavE",
+				"符文守护|博学者|LLSav|符文抄写师|LLSavE|13|LLSavE",
+				"符文抄写大师|博学者|LLSav|符文抄写师|LLSavE|18|LLSavE"
+			],
+			"foundryImg": "icons/magic/symbols/runes-carved-stone-red.webp"
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"shortName": "战术家",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassFeatures": [
+				"战术家|博学者|LLSav|战术家|LLSav|3|LLSav",
+				"高级战术|博学者|LLSav|战术家|LLSav|7|LLSav",
+				"战略卓越|博学者|LLSav|战术家|LLSav|7|LLSav",
+				"战术天才|博学者|LLSav|战术家|LLSav|13|LLSav",
+				"战术大师|博学者|LLSav|战术家|LLSav|18|LLSav"
+			],
+			"foundryImg": "icons/skills/trades/academics-merchant-scribe.webp"
+		},
+		{
+			"ENG_name": "Aristocrat",
+			"name": "贵族",
+			"shortName": "贵族",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassFeatures": [
+				"贵族|博学者|LLSav|贵族|LLSavE|3|LLSavE",
+				"厌弃暴力|博学者|LLSav|贵族|LLSavE|7|LLSavE",
+				"人脉通达|博学者|LLSav|贵族|LLSavE|13|LLSavE",
+				"家族崛起|博学者|LLSav|贵族|LLSavE|18|LLSavE"
+			],
+			"foundryImg": "icons/skills/trades/academics-study-reading-book.webp"
+		},
+		{
+			"ENG_name": "Virtuoso",
+			"name": "演奏大师",
+			"shortName": "演奏大师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassFeatures": [
+				"演奏大师|博学者|LLSav|演奏大师|LLSavE|3|LLSavE",
+				"卸力旋律|博学者|LLSav|演奏大师|LLSavE|7|LLSavE",
+				"强化乐章|博学者|LLSav|演奏大师|LLSavE|13|LLSavE",
+				"尖啸强袭|博学者|LLSav|演奏大师|LLSavE|13|LLSavE",
+				"演奏宗师|博学者|LLSav|演奏大师|LLSavE|18|LLSavE"
+			],
+			"foundryImg": "icons/skills/trades/academics-study-reading-book.webp"
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Adroit Analysis",
+			"name": "敏锐分析",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 1,
+			"entries": [
+				"自1级起，你可以用你的附赠动作采取协助或搜索动作，或进行一次智力属性检定。",
+				"当你采取搜索动作时，你可以研究60尺内一个你能看见的生物，将其指定为你的焦点，并从下列特征中选择一项加以了解：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"护甲等级",
+							"最高属性值"
+						],
+						[
+							"所有特殊感官",
+							"最低属性值"
+						],
+						[
+							"抗性、免疫与易伤",
+							"其数据块中的一项特性或动作"
+						]
+					]
+				},
+				"它将保持为你的焦点1分钟，但若你失能，或你对另一个生物使用此特性，则该效果提前结束。在持续时间内，你获得下列益处与限制：",
+				{
+					"ENG_name": "Intellect Die",
+					"type": "entries",
+					"name": "才智骰",
+					"entries": [
+						"你的天才由你的才智骰\u2014\u2014一枚d4\u2014\u2014来体现。当某个特性使用你的才智骰时，总是掷该骰。如果你在某次掷骰中加入一枚以上的才智骰，则掷出你的所有才智骰，但只取最高结果应用于该掷骰。",
+						"在特定等级，你的才智骰的骰面会增大，如博学者职业表格中\"才智骰\"栏所示。"
+					]
+				},
+				{
+					"ENG_name": "Saving Throws",
+					"type": "entries",
+					"name": "豁免检定",
+					"entries": [
+						"如果你的某个特性要求你的焦点进行豁免检定，则该豁免DC依你的智力计算：",
+						{
+							"ENG_name": "Intellect",
+							"type": "abilityDc",
+							"name": "才智",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Predictive Dodge",
+					"type": "entries",
+					"name": "预判闪避",
+					"entries": [
+						"只要你能看见你的焦点，它对你发动的所有攻击\u2014\u2014包括武器攻击与法术攻击\u2014\u2014都处于劣势。"
+					]
+				},
+				{
+					"ENG_name": "Single Minded",
+					"type": "entries",
+					"name": "心无旁骛",
+					"entries": [
+						"当你拥有焦点时，你不能施放或专注法术，也不能使用其他需要专注的特性。"
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "研习打击|博学者|LLSav|1"
+				}
+			],
+			"foundryImg": "icons/skills/targeting/crosshair-bars-yellow.webp"
+		},
+		{
+			"ENG_name": "Studied Strike",
+			"name": "研习打击",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 1,
+			"entries": [
+				"每当你对焦点进行武器攻击时，你可以用你的智力进行攻击掷骰与伤害掷骰。",
+				"每回合一次，当你以攻击命中焦点时，你造成等同于你才智骰的额外伤害。你可以放弃该伤害，改为从敏锐分析表中了解另一项特征。"
+			],
+			"foundryImg": "icons/skills/trades/construction-mason-stonecutter-sculpture.webp"
+		},
+		{
+			"ENG_name": "Analytical Defense",
+			"name": "分析防御",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 1,
+			"entries": [
+				"同样在1级，你的预判能力会辅助你的防御。只要你没有穿着护甲或持用盾牌，你的护甲等级等于10+你的敏捷调整值+你的智力调整值。"
+			],
+			"foundryImg": "icons/equipment/shield/heater-steel-boss-red.webp"
+		},
+		{
+			"ENG_name": "Potent Observation",
+			"name": "强化观察",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 2,
+			"entries": [
+				"自2级起，你可以迅速把你获得的洞见告知盟友。当30尺内另一个能听见并理解你的生物对焦点造成伤害，或使用一项你具有熟练项的工具或技能进行属性检定时，你可以用你的反应将你的才智骰加入其掷骰。"
+			],
+			"foundrySystem": {
+				"formula": "1@scale.savant.intellect-die"
+			},
+			"foundryImg": "icons/skills/melee/shield-damaged-broken-brown.webp"
+		},
+		{
+			"ENG_name": "Scholarly Pursuits",
+			"name": "学术追求",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 2,
+			"entries": [
+				"你总是在不断扩展自己的知识储备。在2级，你掌握本职业末尾列出的一项学术追求。",
+				"当你在此职业达到5级、11级和17级时，你额外掌握一项自选的学术追求。"
+			],
+			"foundryImg": "icons/sundries/books/book-tooled-gold-brown.webp"
+		},
+		{
+			"ENG_name": "Academic Discipline",
+			"name": "学科",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"选择一门学科：考古学家、调查员、博物学家、医师或战术家，每一门都在本职业末尾有详细说明。你的学科会在3级授予你特性，并在你达到6级、10级和15级时再次授予。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 4,
+			"entries": [
+				"当你达到4级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常规定，你不能借此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Calculated Flourish",
+			"name": "精密应对",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 5,
+			"entries": [
+				"你随时准备躲避致命打击。自5级起，当你被一次你能看见的攻击命中时，你可以用你的反应将你的才智骰加入你对该攻击的护甲等级，从而可能将命中化为失手。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "When you are hit by an attack you can see"
+				},
+				"formula": "@scale.savant.intellect-die"
+			},
+			"foundryImg": "icons/skills/melee/swords-parry-block-blue.webp"
+		},
+		{
+			"ENG_name": "Swift Reflexes",
+			"name": "迅捷反射",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 5,
+			"entries": [
+				"你观察并应对周遭环境的速度惊人。在5级，你每轮最多可以采取两个反应，但每个触发时机仍然最多只能使用一个反应。",
+				"当你达到特定博学者等级时，你每轮可获得更多反应：11级时（3个），17级时（4个）。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp"
+		},
+		{
+			"ENG_name": "Sharp Mind",
+			"name": "敏锐心智",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 6,
+			"entries": [
+				"你的天才确实令人惊叹。自6级起，只要你没有失能，你便将你的才智骰加入你所有的智力、感知和魅力豁免检定。",
+				"此外，当该特性范围内的生物被迫进行豁免检定时，你现在也可以使用强化观察。"
+			],
+			"foundryImg": "icons/tools/fasteners/nails-worn-steel.webp"
+		},
+		{
+			"ENG_name": "Discipline Feature",
+			"name": "学科特性",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 7,
+			"entries": [
+				"在7级，你获得由你的学科授予的一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 8,
+			"entries": [
+				"你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常规定，你不能借此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Keen Awareness",
+			"name": "高度警觉",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 9,
+			"entries": [
+				"你时刻提防着危险。自9级起，只要你没有失能，你就不会处于突袭状态，并且你可以将你的智力调整值加入先攻掷骰。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-teal.webp"
+		},
+		{
+			"ENG_name": "Unrivaled Genius",
+			"name": "无双天才",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 10,
+			"entries": [
+				"你的智力已攀升至近乎超自然的境界。在10级，下列特性按如下方式获得提升：",
+				{
+					"ENG_name": "Potent Observation",
+					"type": "entries",
+					"name": "强化观察",
+					"entries": [
+						"只要范围内另一个生物对任何目标造成伤害，你就可以使用强化观察，而不仅限于你的焦点。若针对你的焦点使用，你可以将两枚才智骰加入该伤害。"
+					]
+				},
+				{
+					"ENG_name": "Calculated Flourish",
+					"type": "entries",
+					"name": "精密应对",
+					"entries": [
+						"当你使用精密应对且该攻击失手时，你可以移动至多10尺而不引发借机攻击，或对攻击者进行一次武器攻击。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null,
+					"condition": null
+				}
+			},
+			"foundryImg": "icons/magic/symbols/star-solid-gold.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 12,
+			"entries": [
+				"你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常规定，你不能借此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Discipline Feature",
+			"name": "学科特性",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 13,
+			"entries": [
+				"在13级，你获得由你的学科授予的一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Unyielding Will",
+			"name": "不屈意志",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 14,
+			"savingThrowProficiencies": [
+				{
+					"cha": true
+				}
+			],
+			"entries": [
+				"在15级，你学会完美预判焦点的下一步行动并告知盟友。你可以用一个动作强迫你的焦点进行一次智力豁免检定。豁免失败时，下列效果持续到你下回合开始：",
+				"一旦你尝试对某个焦点使用完美分析，在完成一次长休之前，你不能再对同一生物使用它。"
+			],
+			"foundryImg": "icons/magic/control/buff-flight-wings-runes-blue.webp"
+		},
+		{
+			"ENG_name": "Flawless Analysis",
+			"name": "完美分析",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 15,
+			"entries": [
+				"自17级起，你可以用你的动作完美预判{@classFeature 敏锐分析|博学者|LLSav|1||焦点}目标的下一步行动并警示盟友。直到你下回合开始，你的焦点进行的每次属性检定、攻击掷骰和豁免检定都处于劣势。此外，你指定的一些能听见你的生物，在你下回合之前对你焦点强迫其进行的任何豁免检定具有优势。",
+				{
+					"type": "list",
+					"items": [
+						"只要目标仍为你的焦点，它进行的所有属性检定、攻击掷骰和豁免检定都处于劣势。",
+						"30尺内由你指定的一些生物，对你焦点强迫其进行的任何豁免检定具有优势。"
+					]
+				},
+				"一旦你使用了此特性，你必须完成一次短休或长休后才能再次使用。"
+			],
+			"foundryImg": "icons/skills/targeting/target-strike-triple-blue.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 16,
+			"entries": [
+				"你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常规定，你不能借此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Discipline Feature",
+			"name": "学科特性",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 18,
+			"entries": [
+				"在18级，你获得由你的学科授予的一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 19,
+			"entries": [
+				"你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常规定，你不能借此特性将属性值提升到20以上。"
+			]
+		},
+		{
+			"ENG_name": "Incomparable Intellect",
+			"name": "无可比拟的才智",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 20,
+			"entries": [
+				"在20级，你认识到了自己真正的潜力。你的智力值提升4点，上限为24。此外，如果你掷一枚才智骰且结果低于你的智力调整值，你可以用你的智力调整值替换该结果。"
+			],
+			"foundryImg": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Adroit Analysis",
+			"name": "敏锐分析",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 1,
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "special"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Analytical Defense",
+			"name": "分析防御",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 1,
+			"effects": [
+				{
+					"ENG_name": "Analytical Defense",
+					"name": "分析防御",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "10 + @abilities.int.mod + @abilities.dex.mod"
+						},
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sharp Mind",
+			"name": "敏锐心智",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 6,
+			"effects": [
+				{
+					"ENG_name": "Intelligence Wisdom and Charisma Save Bonus",
+					"name": "智力、感知与魅力豁免加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.abilities.int.bonuses.save",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.abilities.wis.bonuses.save",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.abilities.cha.bonuses.save",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Keen Awareness",
+			"name": "高度警觉",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 9,
+			"effects": [
+				{
+					"ENG_name": "Initiative Bonus",
+					"name": "先攻加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.init.bonus",
+							"mode": "ADD",
+							"value": "+ @abilities.int.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Incomparable Intellect",
+			"name": "无可比拟的才智",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 20,
+			"effects": [
+				{
+					"ENG_name": "Intelligence Boost",
+					"name": "智力提升",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.abilities.int.value",
+							"mode": "ADD",
+							"value": "+4"
+						},
+						{
+							"key": "system.abilities.int.max",
+							"mode": "OVERRIDE",
+							"value": 24
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Studied Strike",
+			"name": "研习打击",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 1,
+			"activities": [
+				{
+					"ENG_name": "Studied Strike",
+					"name": "研习打击",
+					"type": "damage",
+					"activation": {
+						"type": "special"
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.intellect-die"
+								},
+								"bonus": ""
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Potent Observation",
+			"name": "强化观察",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 2,
+			"activities": [
+				{
+					"ENG_name": "Potent Observation",
+					"name": "强化观察",
+					"type": "utility",
+					"activation": {
+						"type": "reaction"
+					},
+					"roll": {
+						"formula": "+@scale.savant.intellect-die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Calculated Flourish",
+			"name": "精密应对",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"level": 5,
+			"activities": [
+				{
+					"ENG_name": "Calculated Flourish",
+					"name": "精密应对",
+					"type": "utility",
+					"activation": {
+						"type": "reaction"
+					},
+					"roll": {
+						"formula": "+@scale.savant.intellect-die"
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Archaeologist",
+			"name": "考古学家",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"考古学家专精于被遗忘的文明、未知的地域与古老场所的研究，将知识之光带入世界上黑暗而致命的角落。他们竭尽所能发掘久远年代的智慧，却常对自己所研究的文明生出一种悲哀的亲近感，因而不遗余力地不去毁坏或冒犯它们的遗存。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "考古学学徒|博学者|LLSav|考古学家|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "古物慧眼|博学者|LLSav|考古学家|LLSav|3|LLSav"
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Archaeology",
+			"name": "考古学学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"history": true,
+					"investigation": true
+				},
+				{
+					"history": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"investigation": true
+				}
+			],
+			"entries": [
+				"你获得历史与调查技能的熟练项，并将你的才智骰加入这两个技能的检定。",
+				"在古老场所中探索的经历使你深谙如何应对其中的危险，授予你下列能力：",
+				{
+					"type": "list",
+					"items": [
+						"你学会说、读、写两门额外的自选语言，通常是古老或被遗忘的语言。",
+						"每当你进行与陷阱相关的属性检定时，你将你的才智骰加入掷骰结果。",
+						"如果你花费至少1分钟检视一件物品，你便能确定其价值、来历与年代。若它具有魔法属性，你会如同借助{@spell 鉴定术}法术一般获知这些属性。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "minute"
+				}
+			},
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Eye for Antiquity",
+			"name": "古物慧眼",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"你对古代文明的了解使你能够解锁它们失落的技术。在聚落或地城进行长休期间，你可以花1小时研究古物或残骸，从中掘出一件古玩。该古玩是一件微型魔法物品，具有一件由你选择的普通魔法物品的属性。古玩总是以智力作为其施法属性，而当你施放或专注由古玩产生的法术时，你可以无视敏锐分析中心无旁骛的限制。",
+				"由于年代久远，你必须在每次长休期间花1小时保养古玩，否则它们将退化成平凡物品。如果某件古玩是一次性的（比如法术卷轴），它会在这1小时内恢复其魔力。你所能保养的古玩数量等同于你的智力调整值（最少为一件）。"
+			],
+			"foundryImg": "icons/commodities/treasure/puzzle-cube.webp"
+		},
+		{
+			"ENG_name": "Adventuring Academic",
+			"name": "冒险学者",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你穿行于致命废墟以寻求知识的本领无人能及。每当你进行豁免检定以避开陷阱效果时，你将你的才智骰加入掷骰。",
+				"你还获得等同于你步行速度的攀爬速度。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you make a saving throw related to a trap",
+					"formula": "1@scale.savant.intellect-die"
+				}
+			},
+			"foundryImg": "icons/equipment/head/hat-belted-simple-brown.webp"
+		},
+		{
+			"ENG_name": "Ancient Insights",
+			"name": "远古洞见",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你对古代技术的理解更上一层楼。你可以无视魔法物品、卷轴和药水在同调与使用上的一切职业、种族和阵营限制。",
+				"此外，当你使用古物慧眼掘出古玩时，你可以掘出具有普通或非普通魔法物品属性的古玩，其余规则不变。"
+			],
+			"foundryImg": "icons/sundries/documents/document-symbol-triangle-pink.webp"
+		},
+		{
+			"ENG_name": "Lore Master",
+			"name": "逸闻大师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你钻研你遇到的每一个神话、传说与民间故事的一切细节。当你观察一个人、一个地点或一件物品至少10分钟后，你能神秘地回想起关于它的信息，如同它是{@spell 通晓传奇}法术的目标一般。",
+				"此特性的目标并不需要具有传奇意义，你也能获得信息。但若不存在与目标相关的传说，你将一无所获。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 10,
+					"type": "minute"
+				}
+			},
+			"foundryImg": "icons/sundries/books/book-clasp-spiral-green.webp"
+		},
+		{
+			"ENG_name": "Unearthed Arcana",
+			"name": "发掘奥秘",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你是使用古代魔法装置的无双专家。你的魔法物品豁免检定可以使用你的才智豁免DC，除非该魔法物品自带的DC更高。",
+				"此外，每当你完成一次短休或长休，你可以让一件你触摸的古玩恢复已消耗的充能或次数，数量等同于你的智力调整值（最少为1）。"
+			],
+			"foundryImg": "icons/commodities/treasure/token-engraved-green-glowing.webp"
+		},
+		{
+			"ENG_name": "Master Archaeologist",
+			"name": "考古学大师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"长期接触古代世界的魔法使你对它的效果有了与生俱来的抵抗力。你获得对法术、魔法物品和魔法陷阱伤害的抗性。",
+				"最后，你可以持有一件具有珍稀魔法物品属性的古玩。"
+			],
+			"foundrySystem": {
+				"activation.condition": "When you finish a short rest",
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/commodities/treasure/puzzle-box-glowing-blue.webp"
+		},
+		{
+			"ENG_name": "Investigator",
+			"name": "调查员",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"调查员是拆解谜团、阴谋与各式秘密的大师，拥有洞察他人意图的神奇能力。他们常将自己的天才奉献于挫败那些欺骗无辜者、利用大众信任之徒。他们过人的智识与对真相的敏锐，是盗贼、易容变形者与腐败政客的拦路之石。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "真相学徒|博学者|LLSav|调查员|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "街头缠斗|博学者|LLSav|调查员|LLSav|3|LLSav"
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Truth",
+			"name": "真相学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"investigation": true
+				},
+				{
+					"insight": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"investigation": true
+				}
+			],
+			"entries": [
+				"你获得洞悉与调查技能的熟练项，并可以将你的才智骰加入这两个技能的检定。你还可以用智力代替感知进行洞悉与察觉检定，包括被动检定。",
+				"你的直觉天性还授予你下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"当你采取搜索动作时，你获得的信息如同你花了整整一分钟搜索，而非仅用一个动作。",
+						"你学会说、读并解读盗贼黑话\u2014\u2014犯罪界的密语\u2014\u2014中的讯息。",
+						"你与焦点每交谈一分钟，就可以了解它的一项理想、特质、羁绊或缺点。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-eye-purple.webp"
+		},
+		{
+			"ENG_name": "Rough & Tumble",
+			"name": "街头缠斗",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"languageProficiencies": [
+				{
+					"thieves' cant": true
+				}
+			],
+			"entries": [
+				"在文明的阴暗面谋生的经历让你学会了些上不了台面的本事。你的徒手打击在命中时造成等同于你才智骰+你的力量调整值的钝击伤害，且每当你采取攻击动作时，你可以在该回合以一个附赠动作进行一次徒手打击。",
+				"每回合一次，当你以徒手打击命中焦点时，你可以放弃研习打击的额外伤害，改为强迫它进行一次敏捷豁免检定。豁免失败时，它直到你下回合开始为止处于目盲、耳聋状态或无法说话；或者，若它为大型或更小，你可以将它击倒在地。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "Once per turn, when you hit your Focus with an unarmed strike"
+				}
+			},
+			"foundryImg": "icons/equipment/hand/glove-armored-leather-worn-brown.webp"
+		},
+		{
+			"ENG_name": "Illicit Contacts",
+			"name": "非法人脉",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你对社会上的犯罪分子了如指掌。当你用盗贼黑话交流时，你影响其他通晓盗贼黑话之人的任何属性检定都可以加入你的才智骰。",
+				"你还掌握{@optfeature 秘密与低语|LLSav}这一学术追求。如果你已经掌握了该学术追求，则可以改为掌握自选的{@optfeature 完美记忆|LLSav}或{@optfeature 传统|LLSav}。"
+			],
+			"foundryImg": "icons/environment/settlement/house-city.webp"
+		},
+		{
+			"ENG_name": "Underhanded Brawler",
+			"name": "阴招斗士",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"header": 2,
+			"level": 7,
+			"entries": [
+				"你学会了在后巷里打架\u2014\u2014在那里，唯一重要的是斗殴结束时谁还站着。你获得下列阴招益处：",
+				{
+					"ENG_name": "Cunning Flourish",
+					"type": "entries",
+					"name": "狡黠应对",
+					"entries": [
+						"当你使用精密应对且该攻击失手时，你可以在同一个反应中强迫攻击者对你的街头缠斗特性进行一次敏捷豁免检定。"
+					]
+				},
+				{
+					"ENG_name": "Discombobulate",
+					"type": "entries",
+					"name": "扰乱",
+					"entries": [
+						"如果你的焦点对街头缠斗的豁免检定失败，你可以施加两项通常效果而非一项。例如，你可以使你的焦点同时处于目盲和耳聋状态，或使其直到你下回合开始既处于目盲状态又无法说话。"
+					]
+				},
+				{
+					"ENG_name": "Slippery Combatant",
+					"type": "entries",
+					"name": "油滑斗士",
+					"entries": [
+						"当一个你能看见的生物对你进行武器或法术攻击时，你可以用你的反应将攻击者指定为你的焦点，使该攻击掷骰处于劣势。"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/fist/fist-knuckles-spiked-brown.webp"
+		},
+		{
+			"ENG_name": "Piercing Gaze",
+			"name": "锐利凝视",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你能看穿最错综复杂的欺骗与阴谋。你总能察觉你的焦点是否在说谎，并立即探知你视线范围内幻术与变形者的存在。然而，这并不能让你看穿这两类效果本身。",
+				"此外，当你的焦点对街头缠斗的豁免检定失败时，你可以放弃所有通常效果，改为使其直到你下回合开始处于震慑状态。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-small-red.webp"
+		},
+		{
+			"ENG_name": "Master Investigator",
+			"name": "调查大师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你对真相的感知可媲美不朽者。你获得30尺半径的真实视觉。在此半径内，你能探知隐秘的门与陷阱，并察觉生物是否在说谎。",
+				"最后，当你以攻击命中焦点或对焦点使用强化观察时，你可以使该攻击自动成为重击。一旦这样做，你必须完成一次短休或长休后才能再次使用。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you hit your Focus with an attack or use Potent Observation against your Focus"
+				},
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "sr"
+				}
+			},
+			"foundryImg": "icons/sundries/misc/pipe-wooden-straight-brown.webp"
+		},
+		{
+			"ENG_name": "Naturalist",
+			"name": "博物学家",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "博物学家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"博物学家的大讲堂始于文明的边缘。他们研究生态系统的自然平衡，并不惜一切代价维持这份平衡。一位真正的博物学家是荒野的守护者，精通预测天气、辨识有毒与药用植物，以及追踪野兽。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "自然学徒|博学者|LLSav|博物学家|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "博物学家日志|博学者|LLSav|博物学家|LLSav|3|LLSav"
+				}
+			]
+		},
+		{
+			"ENG_name": "Naturalist's Journal",
+			"name": "博物学家日志",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "博物学家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"你将自己对奇幻动植物的研究汇编进一本博物学家日志中。在一次短休或长休期间，你可以花1小时详录你当前的环境，或过去24小时内曾为你焦点的某只特定野兽、植物或怪物（例如狮鹫或熊）。你对记录在日志中的生物与环境获得下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"你进行相关的智力检定时具有优势。",
+						"当你对记录在日志中的焦点进行武器攻击时，你可以放弃研习打击的额外伤害，改为将你的才智骰加入攻击掷骰。",
+						"在已详录的环境中，你与同行者可以无视非魔法困难地形，且你不会迷路。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "hour"
+				},
+				"damage.parts": [
+					[
+						"1@scale.savant.intellect-die",
+						""
+					]
+				]
+			},
+			"foundryImg": "icons/sundries/books/book-symbol-tree-silver-green.webp"
+		},
+		{
+			"ENG_name": "Student of Nature",
+			"name": "自然学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "博物学家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"nature": true,
+					"survival": true
+				},
+				{
+					"nature": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"survival": true
+				}
+			],
+			"entries": [
+				"你获得驯兽与自然技能的熟练项，并可以将你的才智骰加入这两个技能的检定。你还可以用智力代替感知进行驯兽与求生检定。",
+				"你对荒野的了解使你能够通过研究生物经过的痕迹（如足迹或标记）将其标记为焦点，即使你看不见该生物本身。"
+			],
+			"foundryImg": "icons/sundries/books/book-leaves-circle.webp"
+		},
+		{
+			"ENG_name": "Call of the Wild",
+			"name": "野性呼唤",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "博物学家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"凭借亘古岁月积淀的学识，你可以使野生生物屈从于你的意志。你可以用一个动作强迫30尺内一个同样记录在你日志中的生物进行一次魅力豁免检定。挑战等级达到你博学者等级一半或更高的生物自动成功。豁免失败时，它被你魅惑，并在持续时间内适用以下规则：",
+				{
+					"ENG_name": "Control",
+					"type": "entries",
+					"name": "控制",
+					"entries": [
+						"该生物对你和你的盟友持友好态度。你可以用一个附赠动作发布一道口令，它会在其下回合尽力执行。当它没有在执行命令时，它会竭尽所能保护自己。"
+					]
+				},
+				{
+					"ENG_name": "Morale",
+					"type": "entries",
+					"name": "士气",
+					"entries": [
+						"如果该生物受到伤害，它会在其下回合开始时重复该豁免检定。豁免成功则它不再被魅惑。当它进行此豁免检定时，如果它能听见你，你可以用你的反应从其掷骰中减去一枚才智骰的结果。"
+					]
+				},
+				{
+					"ENG_name": "Duration",
+					"type": "entries",
+					"name": "持续时间",
+					"entries": [
+						"如果该生物没有更早摆脱，则当你陷入昏迷、以命令释放它，或你尝试对另一个生物使用此特性时，该效果结束。"
+					]
+				},
+				"一旦某生物对此特性的任何豁免检定成功，它在完成一次长休之前免疫此特性的效果。"
+			],
+			"foundryImg": "icons/sundries/misc/pet-collar-spiked-brown.webp"
+		},
+		{
+			"ENG_name": "Advanced Studies",
+			"name": "深入研究",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "博物学家",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你对荒野的学识并不止于凡俗之物。你可以在日志中详录巨龙、巨人、软泥怪和不死生物。你的日志还授予额外的益处：",
+				{
+					"type": "list",
+					"items": [
+						"你对所有已详录的生物获得焦点益处。",
+						"在已详录的环境中，你与同行者可以无视魔法困难地形，并且为抵抗环境效果而进行的豁免检定具有优势。"
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-fire-breath-orange.webp"
+		},
+		{
+			"ENG_name": "Master Naturalist",
+			"name": "博物学大师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "博物学家",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的博物学识超越所有同侪。你可以在日志中详录任何非类人生物，并且你对所有已详录生物的攻击掷骰具有优势。",
+				"最后，野性呼唤只会在你自愿释放该生物、你对另一个生物使用此特性，或你与被魅惑生物之一死亡时才会结束。"
+			],
+			"foundryImg": "icons/sundries/misc/pet-collar-spiked-yellow.webp"
+		},
+		{
+			"ENG_name": "Physician",
+			"name": "医师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"医师运用他们过人的智识治疗病患、照护伤者。他们毕生钻研凡人的解剖学与生物学，并运用这些知识让盟友保持最佳状态、使敌人丧失行动能力。凭借这份医学训练，他们为那些无缘享受神术魔法或其他治疗法术的人提供援助。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "医学学徒|博学者|LLSav|医师|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战地医疗|博学者|LLSav|医师|LLSav|3|LLSav"
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Medicine",
+			"name": "医学学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"medicine": true,
+					"sleight of hand": true
+				},
+				{
+					"medicine": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"sleight of hand": true
+				}
+			],
+			"entries": [
+				"你获得医药与巧手技能的熟练项，并将你的才智骰加入这两个技能的检定。你还可以用智力代替感知进行医药检定。",
+				"你的钻研还授予你下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"你每花一分钟检查焦点，就能辨认出正折磨它的一种疾病、毒素或诅咒。",
+						"当你以武器攻击命中焦点时，你可以放弃研习打击的额外伤害，改为使其速度降低10尺，持续到你下回合开始。",
+						"在1小时之内（可以是短休或长休的一部分），你可以持用一个医疗包，为其恢复数量等同于你智力调整值（最少为1）的已耗用次数。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-red-cross.webp"
+		},
+		{
+			"ENG_name": "Combat Medic",
+			"name": "战地医疗",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"你受过在战场上实施医疗援助的训练。你获得下列战地医疗动作，且只能对其他生物使用。当你使用战地医疗动作时，你可以消耗医疗包的一次使用次数，将所掷的任意才智骰取其最大可能结果：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "肾上腺素激醒|博学者|LLSav|医师|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "包扎伤口|博学者|LLSav|医师|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "治疗涌动|博学者|LLSav|医师|LLSav|3|LLSav"
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/magic/life/crosses-trio-red.webp"
+		},
+		{
+			"ENG_name": "Adrenaline Jolt",
+			"name": "肾上腺素激醒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"你触摸一个患有疾病，或处于目盲、魅惑、耳聋、恐慌或中毒状态的生物，它可以立即重复其豁免检定以结束该效果，并在掷骰中加入等同于你才智骰的加值。"
+			],
+			"foundryImg": "icons/magic/symbols/symbol-lightning-bolt.webp"
+		},
+		{
+			"ENG_name": "Dress Wounds",
+			"name": "包扎伤口",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"你触摸一个生命值低于上限的生物，它获得等同于你才智骰的临时生命值。这些临时生命值不能超过该生物所缺失的生命值。"
+			],
+			"foundryImg": "icons/commodities/cloth/cloth-roll-gold-green.webp"
+		},
+		{
+			"ENG_name": "Healing Surge",
+			"name": "治疗涌动",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"一个你触摸的生物可以立即消耗一枚其生命骰，恢复等同于该生命骰+其体质调整值+你的才智骰的生命值。",
+				"如果你对一个生命值为0的活物使用此能力，即使它不消耗生命骰，它也会立即伤势稳定。"
+			],
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp"
+		},
+		{
+			"ENG_name": "Field Doctor",
+			"name": "战地医生",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你能在战场的混乱中从容施救。每当你使用战地医疗动作时，你可以用你的附赠动作疾走、撤离，或进行一次武器攻击。"
+			],
+			"foundryImg": "icons/skills/movement/feet-winged-boots-brown.webp"
+		},
+		{
+			"ENG_name": "Steady Hands",
+			"name": "稳健双手",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你对自己医术的信心与日俱增。只要你没有处于目盲、失能、麻痹或束缚状态，你就可以对自己使用战地医疗动作。"
+			],
+			"foundryImg": "icons/skills/social/thumbsup-approval-like.webp"
+		},
+		{
+			"ENG_name": "Medical Expertise",
+			"name": "妙手回春",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的技术能把盟友推至体能极限。当你使用战地医疗动作时，你可以强化它，授予下列对应的额外效果。你能这样做的次数等同于你的智力调整值（最少为一次），并在完成一次短休或长休后恢复所有使用次数：",
+				{
+					"ENG_name": "Adrenaline Jolt",
+					"type": "entries",
+					"name": "肾上腺素激醒",
+					"entries": [
+						"你立即结束下列状态之一：目盲、魅惑、耳聋、恐慌、麻痹、石化、中毒、震慑、一级力竭、一项属性值降低，或一项生命值上限降低。"
+					]
+				},
+				{
+					"ENG_name": "Dress Wounds",
+					"type": "entries",
+					"name": "包扎伤口",
+					"entries": [
+						"你可以接回一条断肢或一根断指，或给予目标等同于其当前生命值与上限之差的临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Healing Surge",
+					"type": "entries",
+					"name": "治疗涌动",
+					"entries": [
+						"你可以对过去一分钟内死亡的生物使用此特性，它可以消耗一枚生命骰，以治疗涌动恢复的生命值复活。此特性无法恢复缺失的身体部位，也无法让因衰老而死的生物复生。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "special"
+				},
+				"uses.max": "max(1, @abilities.int.mod)"
+			},
+			"foundryImg": "icons/magic/life/cross-flared-green.webp"
+		},
+		{
+			"ENG_name": "Master Physician",
+			"name": "医学大师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的解剖学知识使你能够完成传奇级的医学壮举。当一个你正触摸的生物消耗生命骰以恢复生命值时，该生命骰视为掷出最大值。这包括短休期间消耗的生命骰，以及作为你的治疗涌动动作一部分消耗的生命骰。"
+			],
+			"foundryImg": "icons/magic/life/heart-red-blue.webp"
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"每一位成功的君主、征服者与革命家背后，都有一位为他们的胜利立下汗马功劳的战术大师。这些精明的领袖始终领先敌人一步，为每种结局都备有预案。单枪匹马的战术家并不构成威胁，但只要与强大的盟友并肩，他们便会成为一支令人生畏的战斗力量。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战争学徒|博学者|LLSav|战术家|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战术指挥官|博学者|LLSav|战术家|LLSav|3|LLSav"
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of War",
+			"name": "战争学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"history": true,
+					"persuasion": true
+				},
+				{
+					"history": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"persuasion": true
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"battleaxe|phb": true,
+					"blowgun|phb": true,
+					"double-bladed scimitar|erlw": true,
+					"flail|phb": true,
+					"hand crossbow|phb": true,
+					"lance|phb": true,
+					"longsword|phb": true,
+					"morningstar|phb": true,
+					"net|phb": true,
+					"rapier|phb": true,
+					"scimitar|phb": true,
+					"shortsword|phb": true,
+					"trident|phb": true,
+					"war pick|phb": true,
+					"warhammer|phb": true,
+					"whip|phb": true
+				}
+			],
+			"armorProficiencies": [
+				{
+					"medium": true,
+					"shield": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"gaming set": true
+				}
+			],
+			"entries": [
+				"你获得历史与游说技能以及两套自选赌具的熟练项，并可以将你的才智骰加入使用这些熟练项进行的任何属性检定。",
+				"你对战争的钻研还授予你下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得中甲、盾牌，以及所有不具备重型属性的军用武器的熟练项。",
+						"当你穿着轻甲或中甲时，你可以用智力代替敏捷来计算你的护甲等级。",
+						"你可以将强化观察用于先攻掷骰。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-symbol-axe-brown.webp"
+		},
+		{
+			"ENG_name": "Tactical Commander",
+			"name": "战术指挥官",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"你能运用战术知识在战场上指挥盟友。你学会使用下列号令。要发布一道号令，需采取攻击动作，然后放弃一次攻击，向30尺内一个能看见或听见你的其他生物发布号令。你可以放弃任意次数的攻击来发布多道号令：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "进攻号令|博学者|LLSav|战术家|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "防御号令|博学者|LLSav|战术家|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "机动号令|博学者|LLSav|战术家|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "支援号令|博学者|LLSav|战术家|LLSav|3|LLSav"
+				}
+			],
+			"foundryImg": "icons/environment/people/charge.webp"
+		},
+		{
+			"ENG_name": "Attack Order",
+			"name": "进攻号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"如果该生物在你下回合开始前采取攻击动作，它可以在该攻击动作中多进行一次攻击。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you take the Attack action"
+				}
+			},
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Defensive Order",
+			"name": "防御号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"该生物获得回避动作的益处，直到你下回合开始。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you take the Attack action"
+				}
+			},
+			"foundryImg": "icons/skills/melee/shield-block-bash-blue.webp"
+		},
+		{
+			"ENG_name": "Maneuvering Order",
+			"name": "机动号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"该生物可以用一个反应移动至多等同于其速度的距离，而不引发借机攻击。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you take the Attack action"
+				}
+			},
+			"foundryImg": "icons/skills/movement/arrows-up-trio-red.webp"
+		},
+		{
+			"ENG_name": "Support Order",
+			"name": "支援号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"该生物可以采取协助、躲藏、搜索或使用物件动作。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you take the Attack action"
+				}
+			},
+			"foundryImg": "icons/magic/control/buff-flight-wings-runes-purple.webp"
+		},
+		{
+			"ENG_name": "Advanced Tactics",
+			"name": "高级战术",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"header": 2,
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"entries": [
+				"你对战争艺术的持续钻研使你习得下列额外的号令，其使用规则与上述相同：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "振奋号令|博学者|LLSav|战术家|LLSav|7|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "焕新号令|博学者|LLSav|战术家|LLSav|7|LLSav"
+				}
+			],
+			"foundryImg": "icons/environment/people/charge.webp"
+		},
+		{
+			"ENG_name": "Enlivening Order",
+			"name": "振奋号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"entries": [
+				"在该生物的下个回合，它获得疾走动作的益处，且其力量与敏捷检定具有优势。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you take the Attack action"
+				}
+			},
+			"foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp"
+		},
+		{
+			"ENG_name": "Rejuvenating Order",
+			"name": "焕新号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"entries": [
+				"该生物可以立即重复一次豁免检定，以结束正影响它的一项状态。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you take the Attack action"
+				}
+			},
+			"foundryImg": "icons/magic/control/debuff-chains-shackle-movement-red.webp"
+		},
+		{
+			"ENG_name": "Strategic Superiority",
+			"name": "战略卓越",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				" 每当你在自己的回合采取攻击动作时，你可以攻击两次而非一次。此外，如果你用你的动作疾走、回避或撤离，你可以在该回合以一个附赠动作进行一次攻击或发布一道号令。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Tactical Genius",
+			"name": "战术天才",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的天才使你能自始掌控每场战斗的节奏。当你掷先攻时，你可以在任何其他生物行动之前，向一个生物发布一道{@subclassFeature 战术指挥官|博学者|LLSav|战术家|LLSav|3||号令}。",
+				"此外，当另一个能听见你的生物攻击你的{@classFeature 敏锐分析|博学者|LLSav|1||焦点}目标时，你可以使用{@classFeature 强化观察|博学者|LLSav|2}，将一次你才智骰的掷骰结果加入其攻击掷骰。你可以在它掷骰之后、但在你得知其攻击是否命中之前这样做。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-unity-alliance.webp"
+		},
+		{
+			"ENG_name": "Master Tactician",
+			"name": "战术大师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的话语能激发盟友的英勇之气。每当你向一个生物发布号令时，你可以给予它等同于你智力调整值（最少为1）的临时生命值。",
+				"最后，你学会下列传奇号令。这些号令在每次短休或长休期间各只能发布一次：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "英勇号令|博学者|LLSav|战术家|LLSav|18|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "复苏号令|博学者|LLSav|战术家|LLSav|18|LLSav"
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "Whenever you issue an Order to a creature"
+				},
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"max(1, @abilities.int.mod)",
+						"temphp"
+					]
+				]
+			},
+			"foundryImg": "icons/environment/people/infantry-army.webp"
+		},
+		{
+			"ENG_name": "Heroic Order",
+			"name": "英勇号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"entries": [
+				"直到你下回合开始，该生物获得对所有伤害的抗性，且其所有属性检定、攻击掷骰和豁免检定都具有优势。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-peace-alliance.webp"
+		},
+		{
+			"ENG_name": "Revitalizing Order",
+			"name": "复苏号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"entries": [
+				"你向一个在过去一分钟内死亡的生物发布此号令。它会立即站起，并恢复等同于你的等级+你的智力调整值的生命值。",
+				"此号令无法让因衰老而死的生物复生。"
+			],
+			"foundryImg": "icons/magic/life/ankh-gold-blue.webp"
+		},
+		{
+			"ENG_name": "Culinarian",
+			"name": "美食家",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "美食家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"被称为美食家的博学者将其伟大的头脑投身于饮食的科学。他们骨子里终究是冒险者，抛开自家厨房，踏上毕生寻觅新奇珍异食材的旅途。你又将发现怎样奇异而令人兴奋的食谱呢？",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "风味学徒|博学者|LLSav|美食家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "美食家食谱|博学者|LLSav|美食家|LLSavE|3|LLSavE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Culinarian's Cook Book",
+			"name": "美食家食谱",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "美食家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你正在编纂一本食谱，收录你在冒险途中发现的珍奇{@filter 食谱|optionalfeatures|feature type=LL:CR}：",
+				{
+					"ENG_name": "Recipes Known.",
+					"type": "entries",
+					"name": "已知食谱。",
+					"entries": [
+						"你知晓两道自选食谱，从本学科末尾的列表中选择。"
+					]
+				},
+				{
+					"ENG_name": "Adding a Recipe.",
+					"type": "entries",
+					"name": "添加食谱。",
+					"entries": [
+						"你可以用一个动作使用你的厨师工具，从过去一分钟内死亡的生物身上采集一份样本。",
+						"在你下一次长休结束前，你必须花1小时（可以在休整期间进行）用厨师工具和该样本进行试验，把本学科末尾对应样本生物类型的食谱加入你的食谱。"
+					]
+				},
+				{
+					"ENG_name": "Preparing a Morsel.",
+					"type": "entries",
+					"name": "烹制小食。",
+					"entries": [
+						"每次短休或长休结束时，你可以使用你的厨师工具烹制数量等同于你智力调整值的小食。你烹制的每份小食都具有你从食谱中自选的一道食谱的属性。",
+						"烹制某道食谱的小食并不需要该食谱对应生物的样本。你烹制的小食会在下一次短休或长休结束时失效，变得无法入口、味同嚼蜡。"
+					]
+				},
+				{
+					"ENG_name": "Serving Morsels.",
+					"type": "entries",
+					"name": "呈上小食。",
+					"entries": [
+						"任何生物都可以用一个动作吃下一份小食，或将其喂给它触及范围内一个自愿的生物。吃下小食的生物获得该食谱描述中详列的益处。一个生物同一时间只能受益于一份小食，再吃下另一份小食会立即结束先前小食的益处。"
+					]
+				},
+				{
+					"ENG_name": "Replacing a Cook Book.",
+					"type": "entries",
+					"name": "更换食谱。",
+					"entries": [
+						"如果你的食谱遗失或被毁，你可以花1小时凭记忆把你的旧食谱逐一添入一本新食谱。你不需要重新发现任何遗失的食谱。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": "special"
+				}
+			},
+			"foundryImg": "icons/sundries/books/book-mimic.webp"
+		},
+		{
+			"ENG_name": "Student of Flavor",
+			"name": "风味学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "美食家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"nature": true,
+					"sleight of hand": true
+				},
+				{
+					"nature": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"sleight of hand": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"cook's utensils": true
+				}
+			],
+			"entries": [
+				"你获得自然、巧手技能以及厨师工具的熟练项，并可以将你的才智骰加入使用这些熟练项进行的所有检定。",
+				"你接受的烹饪训练与发达的味觉还授予你下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"只要你备有厨师工具和可食用的食材，任何在与你共度的短休中消耗生命骰以恢复生命值的生物，都会额外恢复等同于你才智骰的生命值。",
+						"对你而言，厨师工具视为具有灵巧属性的简易近战武器。命中时，它们造成等同于你才智骰的钝击、穿刺或挥砍伤害（视具体用具而定）。",
+						"在1分钟之内，你可以使用厨师工具判断食物或饮品是否被下了毒或以任何方式（包括魔法）做过手脚，如同借助侦测毒性和疾病法术一般。你无需亲口品尝。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-embossed-clasp-gold-brown.webp"
+		},
+		{
+			"ENG_name": "Cut Above",
+			"name": "略胜一筹",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "美食家",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以用一个动作用厨师工具触碰你的一份小食，将其变更为另一道食谱的小食。",
+				"此外，当你用你的动作吃下小食或将小食喂给一个生物时，你可以用一个附赠动作进行一次武器攻击。"
+			],
+			"foundryImg": "icons/weapons/daggers/knife-green.webp"
+		},
+		{
+			"ENG_name": "Improved Recipes",
+			"name": "改良食谱",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "美食家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的食谱在正常益处之外还能振奋你的盟友。吃下你一份小食的生物还会获得等同于你博学者等级的临时生命值。"
+			],
+			"foundryImg": "icons/consumables/food/bowl-stew-tofu-potato-red.webp"
+		},
+		{
+			"ENG_name": "Master Culinarian",
+			"name": "美食大师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "美食家",
+			"subclassSource": "LLSavE",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你是一位怪物料理大师，随时随地都能就地开灶。在1小时之内（可以是短休或长休的一部分），你可以使用厨师工具与任何食材，烹制一场奇妙盛宴，供你自己加上数量等同于你博学者等级的其他生物享用。",
+				"如果一个生物花10分钟吃下它的餐食，它身上正生效的任何毒素、疾病或其他敌对状态都会立即被治愈；并且在之后的24小时内，它免疫恐慌与中毒状态，且在使用其感知或体质进行的任何属性检定或豁免检定中加入你的才智骰。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "hour"
+				},
+				"formula": "1@scale.savant.intellect-die"
+			},
+			"foundryImg": "icons/magic/nature/cornucopia-orange.webp"
+		},
+		{
+			"ENG_name": "Mentor",
+			"name": "导师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"大多数博学者将浩瀚的才智用于钻研自己选定的学科，而导师则把自己的天赋用于服务他人。他们多半已过盛年，希望将知识传承给下一代。无论是社群长者、退役冒险者，还是年少而学识渊博之人，导师们都随时准备温言指引身边的人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "人生学徒|博学者|LLSav|导师|LLSav|3|LLSav"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "精辟建议|博学者|LLSav|导师|LLSav|3|LLSav"
+				}
+			]
+		},
+		{
+			"ENG_name": "Astute Advice",
+			"name": "精辟建议",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"你总能一语中的，帮助他人从失败中学习。当30尺内另一个既能听见又能理解你的生物在一次属性检定、攻击掷骰或豁免检定中失败时，你可以用你的反应让它重掷其d20。",
+				"你可以使用此反应的次数等同于你的智力调整值（最少为一次）。你完成一次短休后恢复一次使用次数，完成一次长休后恢复所有使用次数。"
+			],
+			"foundryImg": "icons/skills/social/wave-halt-stop.webp"
+		},
+		{
+			"ENG_name": "Student of Life",
+			"name": "人生学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"entries": [
+				"你获得历史与洞悉技能以及一套自选工匠工具的熟练项，并将你的才智骰加入使用这些熟练项进行的检定。你还可以用智力代替感知进行洞悉检定。",
+				"你的亲身阅历还授予你下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"你掌握{@optfeature 教导|LLSav}这一学术追求。如果你已经掌握了该学术追求，则可以改为掌握{@optfeature 快速研习|LLSav}。",
+						"每当你在一枚才智骰上掷出1时，你可以重掷你的才智骰，但必须保留新的结果。",
+						"你可以采取协助动作，帮助你10尺内另一个生物攻击你的焦点。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-embossed-clasp-gold-brown.webp"
+		},
+		{
+			"ENG_name": "Adept Assistance",
+			"name": "熟练协助",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"每当你在自己的回合用动作采取{@action 协助}动作时，你可以以两个生物为目标，而非仅一个。"
+			],
+			"foundryImg": "icons/skills/social/peace-luck-insult.webp"
+		},
+		{
+			"ENG_name": "Calm Demeanor",
+			"name": "沉静气度",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你能在战场的混乱中保持沉着。如果你在回合结束时没有造成伤害，也没有强迫另一个生物进行豁免检定，你可以获得等同于你智力调整值（最少为1）的临时生命值。"
+			],
+			"foundrySystem": {
+				"activation.type": "null",
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				},
+				"damage.parts": [
+					[
+						"@classes.savant.levels",
+						"temphp"
+					]
+				],
+				"actionType": "heal"
+			},
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Soothing Presence",
+			"name": "抚慰气场",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你令人安心的存在能让他人真正放松下来。与你一同完成短休的生物，为恢复生命值而进行的任何生命骰掷骰都具有优势。"
+			],
+			"foundryImg": "icons/magic/life/heart-area-circle-red-green.webp"
+		},
+		{
+			"ENG_name": "Wondrous Advice",
+			"name": "绝妙建议",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你富有洞见的观察将盟友推向新的高峰。当你使用精辟建议时，你可以选择让该生物在其掷骰的新结果上加入你的才智骰，或让它获得等同于你才智骰的临时生命值。你可以在看到其新的掷骰结果后再作选择。",
+				"此外，你现在完成一次短休或长休后即恢复精辟建议的所有使用次数，且每当你掷先攻时，你会恢复一次已耗用的精辟建议使用次数。"
+			],
+			"foundryImg": "icons/magic/life/crosses-trio-red.webp"
+		},
+		{
+			"ENG_name": "Mystical Intuition",
+			"name": "神秘直觉",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的人生阅历与非凡直觉能让你对周遭世界获得神秘的洞见。你可以花1分钟冥想你心中的一个问题，或另一个生物向你提出的问题。随后你将神秘地直觉出该问题的答案，如同你施放了{@spell 通神术}法术一般。然而与通神术不同的是，只有当答案为另一位凡人所知时，你才能直觉出它。",
+				"一旦你使用此特性获得了一个问题的答案，你必须完成一次长休后才能再次这样做。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "minute"
+				},
+				"uses.per": "lr"
+			},
+			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp"
+		},
+		{
+			"ENG_name": "Master Mentor",
+			"name": "大导师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的建议已成人间传奇，你的存在本身就能帮助盟友发挥真正的潜力。15尺内由你指定（不包括你自身）且能听见你的生物，可以将你的智力调整值（最少为+1）加入其进行的任何属性检定和豁免检定。",
+				"最后，每当你完成一次短休或长休，你都会获得你的神秘直觉特性的益处。"
+			],
+			"foundryImg": "icons/magic/light/explosion-star-glow-silhouette.webp"
+		},
+		{
+			"ENG_name": "Orator",
+			"name": "演说家",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"演说家是语言学与口头表达真正的大师。这些语言大师仅凭机智与修辞造诣，便足以驳斥敌人、激励盟友。他们怀着十足的自信，昂首步入剑拔弩张的场合，坚信凭三寸不烂之舌能够说服任何人。",
+				"与那些靠魅力哄骗之徒不同，演说家仅凭合理的逻辑与令人信服的修辞，便能鼓舞盟友、感化敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "逻辑学徒|博学者|LLSav|演说家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "雄辩卓越|博学者|LLSav|演说家|LLSavE|3|LLSavE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Rhetorical Superiority",
+			"name": "雄辩卓越",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你对多种语言的掌握使你能以言辞激励、慑服与魅惑他人。你获得下列修辞能力，这些能力使用你的才智豁免DC，且能影响任何既能听见又能理解你的生物。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "令人信服的交谈|博学者|LLSav|演说家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "犀利反驳|博学者|LLSav|演说家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "激励之言|博学者|LLSav|演说家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "振奋之言|博学者|LLSav|演说家|LLSavE|3|LLSavE"
+				}
+			],
+			"foundryImg": "icons/tools/scribal/ink-quill-red.webp"
+		},
+		{
+			"ENG_name": "Convincing Conversation",
+			"name": "令人信服的交谈",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"如果你与一个对你无敌意的生物交谈至少1分钟，你可以强迫它在不知不觉中进行一次感知豁免检定。豁免失败时，它被你{@condition 魅惑}1小时，或者直到你或你的盟友对被魅惑的生物或其任何盟友做出有害行为为止。",
+				"同一时间你只能以这种方式魅惑一个生物。魅惑另一个目标会结束对其他生物的此效果。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "minute"
+				}
+			},
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp"
+		},
+		{
+			"ENG_name": "Cutting Retort",
+			"name": "犀利反驳",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"当30尺内一个你能看见的生物进行攻击时，你可以用你的反应以一句犀利的话扰乱它。它必须通过一次感知豁免检定，否则将一次你才智骰的掷骰结果从该攻击掷骰中减去。",
+				"一旦某生物在此感知豁免检定中成功，它将在24小时内免疫此能力的效果。"
+			],
+			"foundrySystem": {
+				"formula": "1@scale.savant.intellect-die"
+			},
+			"foundryImg": "icons/magic/time/arrows-circling-pink.webp"
+		},
+		{
+			"ENG_name": "Invigorating Word",
+			"name": "激励之言",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"在30尺内另一个你能看见的生物受到伤害之后，你可以立即用你的反应给予它等同于你才智骰的临时生命值。"
+			],
+			"foundrySystem": {
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"1@scale.savant.intellect-die",
+						"temphp"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/life/cross-explosion-burst-green.webp"
+		},
+		{
+			"ENG_name": "Uplifting Remark",
+			"name": "振奋之言",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"当30尺内另一个你能看见的生物在一次智力、感知或魅力豁免检定中失败时，你可以用一个反应允许它重新掷骰。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "When another creature you can see within 30 feet makes an Intelligence, Wisdom, or Charisma saving throw"
+				},
+				"formula": "1@scale.savant.intellect-die"
+			},
+			"foundryImg": "icons/magic/control/buff-luck-fortune-gold.webp"
+		},
+		{
+			"ENG_name": "Student of Logic",
+			"name": "逻辑学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"languageProficiencies": [
+				{
+					"any": 0
+				}
+			],
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"persuasion": true
+				},
+				{
+					"deception": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"persuasion": true
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						],
+						"count": 2
+					}
+				}
+			],
+			"entries": [
+				"你获得{@skill 欺瞒}与{@skill 游说}技能的熟练项，每当你使用其中一项熟练项进行检定时，你的掷骰都获得等同于一次你才智骰掷骰结果的加值。如果你已拥有其中任一技能的熟练项，则改为获得博学者技能列表中另一技能的熟练项。",
+				"你对言辞的掌控还授予你下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"每当你进行{@skill 欺瞒}或{@skill 游说}检定时，你可以用智力代替魅力。",
+						"你掌握自选的{@optfeature 教导|LLSav}、{@optfeature 谜语|LLSav}或{@optfeature 传统|LLSav}学术追求，即使你不满足该追求的正常等级先决条件。",
+						"你学会说、读、写数量等同于你智力调整值的额外语言。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-red-square.webp"
+		},
+		{
+			"ENG_name": "Iron Logic",
+			"name": "钢铁逻辑",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"conditionImmune": [
+				"charmed"
+			],
+			"header": 2,
+			"entries": [
+				"你对逻辑的精妙掌握使你能抵抗除最强大心智操控效果之外的一切。你为抵抗惑控系法术而被迫进行的任何豁免检定都具有优势，且你免疫魅惑状态。",
+				"此外，当你使用犀利反驳反应时，目标受到等同于你才智骰的心灵伤害。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1@scale.savant.intellect-die",
+						"psychic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp"
+		},
+		{
+			"ENG_name": "Peerless Rhetoric",
+			"name": "无双雄辩",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				" 你能以言辞使大众屈从于你的意志。如果你对一群能听见并理解你的生物持续讲述1分钟，你可以激励或说服其中数量等同于你博学者等级的生物，详见下文。在每次短休或长休之间，你各只能使用一次这些能力：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "激励|博学者|LLSav|演说家|LLSavE|13|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "说服|博学者|LLSav|演说家|LLSavE|13|LLSavE"
+				}
+			],
+			"foundryImg": "icons/tools/scribal/ink-quill-pink.webp"
+		},
+		{
+			"ENG_name": "Inspire",
+			"name": "激励",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"entries": [
+				"生物获得等同于你博学者等级的临时生命值；在这些临时生命值持续期间，生物为抵抗惑控系法术而进行的豁免检定具有优势，并免疫恐慌状态。"
+			],
+			"foundryImg": "icons/skills/social/wave-halt-stop.webp"
+		},
+		{
+			"ENG_name": "Persuade",
+			"name": "说服",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"entries": [
+				"生物必须进行一次感知豁免检定，失败则如同群体暗示术法术一般被你魅惑至多24小时。"
+			],
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp"
+		},
+		{
+			"ENG_name": "Master Orator",
+			"name": "演说大师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你对口头表达的绝对掌握，使你能使除最强大者之外的所有生物屈从于你的意志。当你强迫一个生物进行豁免检定以抵抗你的{@subclassFeature 雄辩卓越|博学者|LLSav|演说家|LLSavE|3}能力或{@subclassFeature 无双雄辩|博学者|LLSav|演说家|LLSavE|10}时，若其智力与感知值均低于你的智力值，则该次掷骰具有劣势。"
+			],
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp"
+		},
+		{
+			"ENG_name": "Philosopher",
+			"name": "哲学家",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"哲学被许多人视为博学者所能修习的最纯粹的学科。他们挥洒天才，思索存在的深层问题：生命的意义、多元宇宙的本质，以及凡人与诸神的关系。通过对多元宇宙的研究，哲学家力求对现实的真实本质获得完美的认知。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "思想学徒|博学者|LLSav|哲学家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "权能之言|博学者|LLSav|哲学家|LLSavE|3|LLSavE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Thought",
+			"name": "思想学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"religion": true
+				},
+				{
+					"arcana": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"religion": true
+				}
+			],
+			"entries": [
+				"你获得奥秘与宗教技能的熟练项，并将你的才智骰加入这两个技能的任何检定。",
+				"你对现实的把握还授予你下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"你与并非原生于物质位面的生物交流的所有检定，都可以加入你的才智骰。",
+						"你用敏锐分析可以了解下列特征：当前阵营、原生位面，或其施法属性及其最高环阶法术的环阶。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-purple-glyph.webp"
+		},
+		{
+			"ENG_name": "Words of Power",
+			"name": "权能之言",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"在钻研中，你学会了说出曾用于塑造多元宇宙的权能之言。如果你的焦点位于30尺内且能听见你，你可以对它道出一言权能之言：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "惑乱|博学者|LLSav|哲学家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "迷向|博学者|LLSav|哲学家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "恫惧|博学者|LLSav|哲学家|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "禁足|博学者|LLSav|哲学家|LLSavE|3|LLSavE"
+				}
+			],
+			"foundryImg": "icons/magic/symbols/runes-triangle-blue.webp"
+		},
+		{
+			"ENG_name": "Confound",
+			"name": "惑乱",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"如果你的焦点进行属性检定或攻击掷骰，你可以用你的反应强迫它进行一次智力豁免检定。豁免失败时，它受到等同于你才智骰的心灵伤害，且该次掷骰具有劣势。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1@scale.savant.intellect-die",
+						"psychic"
+					]
+				],
+				"actionType": "save",
+				"save": {
+					"ability": "int",
+					"scaling": "int"
+				}
+			},
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-swirl.webp"
+		},
+		{
+			"ENG_name": "Disorient",
+			"name": "迷向",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你可以用一个动作强迫你的焦点进行一次感知豁免检定。豁免失败时，它受到等同于你才智骰的心灵伤害，且在你下回合开始前其进行的第一次豁免检定具有劣势。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1@scale.savant.intellect-die",
+						"psychic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-eye.webp"
+		},
+		{
+			"ENG_name": "Dread",
+			"name": "恫惧",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你可以用一个动作强迫你的焦点进行一次感知豁免检定。豁免失败时，它受到等同于你才智骰的心灵伤害，并在你下回合开始前对由你选择的一个生物产生恐慌。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1@scale.savant.intellect-die",
+						"psychic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/control/fear-fright-white.webp"
+		},
+		{
+			"ENG_name": "Halt",
+			"name": "禁足",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"当你的焦点尝试移动时，你可以用你的反应强迫它进行一次力量豁免检定。豁免失败时，它受到等同于你才智骰的心灵伤害，且其速度降为0，直到你下回合开始。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "When your Focus attempts to move"
+				},
+				"damage.parts": [
+					[
+						"1@scale.savant.intellect-die",
+						"psychic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/control/debuff-energy-snare-purple-blue.webp"
+		},
+		{
+			"ENG_name": "Unwavering Focus",
+			"name": "坚定焦点",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你坚定的使命感强化了你的权能之言。你可以对30尺内任何能听见你的生物道出权能之言，而不仅限于你的焦点。",
+				"此外，当某生物对权能之言的豁免检定失败时，它受到的心灵伤害的才智骰数量提升为两枚。在特定博学者等级还会再度提升：13级时（三枚），最终在18级时（四枚）。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "If you speak a Word of Power at your Focus"
+				},
+				"damage.parts": [
+					[
+						"1@scale.savant.intellect-die",
+						"psychic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Supreme Understanding",
+			"name": "至高领悟",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你对现实本质不断加深的理解，使你通晓更为强大的权能之言。你学会下列权能之言，它们只能对你的焦点使用。在每次短休或长休之间，你各只能道出一次这些权能之言：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "逐离|博学者|LLSav|哲学家|LLSavE|13|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "虚弱|博学者|LLSav|哲学家|LLSavE|13|LLSavE"
+				}
+			],
+			"foundryImg": "icons/magic/symbols/runes-star-blue.webp"
+		},
+		{
+			"ENG_name": "Enfeeble",
+			"name": "虚弱",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"entries": [
+				"你可以用一个动作强迫你的焦点进行一次智力豁免检定，失败则受到等同于三枚才智骰的心灵伤害并陷入震慑1分钟。",
+				"它可以在其每个回合结束时选择重复此豁免检定。豁免成功则此效果结束；失败则它受到心灵伤害，如同再次未通过最初的豁免一般。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"3@scale.savant.intellect-die",
+						"psychic"
+					]
+				],
+				"actionType": "save",
+				"save": {
+					"ability": "int",
+					"scaling": "int"
+				},
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "sr"
+				}
+			},
+			"foundryImg": "icons/magic/death/hand-withered-gray.webp"
+		},
+		{
+			"ENG_name": "Shunt",
+			"name": "逐离",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"entries": [
+				"你可以用一个动作强迫你的焦点进行一次魅力豁免检定。豁免失败时，它受到等同于三枚才智骰的心灵伤害，并被逐离你当前的位面至多1分钟。如果它原生于当前位面，它将被放逐到一个无害的半位面；如果它并非原生于当前位面，它将被放逐回其原生位面。",
+				"它可以在其每个回合结束时选择重复此豁免检定。豁免成功时，它回到被逐离前所在的空间，或最近的未占据空间；失败则它受到心灵伤害，如同再次未通过最初的豁免一般。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"3@scale.savant.intellect-die",
+						"psychic"
+					]
+				],
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "sr"
+				}
+			},
+			"foundryImg": "icons/magic/control/debuff-chains-orb-movement-blue.webp"
+		},
+		{
+			"ENG_name": "Master Philosopher",
+			"name": "哲学大师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的意志力可媲美最强大的位面外存在。你永远处于{@spell 防护善恶}法术的效果之下。",
+				"最后，你学会最强大的权能之言。每次长休一次，你可以道出一句权能之言，复现{@spell 律令医疗}或{@spell 律令死亡}的效果。"
+			],
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Rune Scribe",
+			"name": "符文抄写师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "符文抄写师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"传说符文魔法是凡人掌握的最古老的奥术。毕生致力于研究这些符文的博学者被称为符文抄写师。他们竭尽所能地了解这些承载着创世根本魔法的古老印记。符文魔法鲜有人用，能驾驭其力量者更是小心提防、绝不容外人染指。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "符文学徒|博学者|LLSav|符文抄写师|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "权能符文|博学者|LLSav|符文抄写师|LLSavE|3|LLSavE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Runes of Power",
+			"name": "权能符文",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "符文抄写师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你习得了{@filter 符文|optionalfeatures|feature type=ll:runes}这门精妙而古老的魔法。",
+				{
+					"ENG_name": "Runes Known",
+					"type": "entries",
+					"name": "已知符文",
+					"entries": [
+						"你从本学科描述末尾的列表中学会两枚自选符文。如果某枚符文有博学者等级先决条件，你必须满足它才能学习。当你获得一个博学者等级时，你可以用一枚你有资格学习的其他符文替换一枚已知符文。",
+						"当你在此职业达到7级、10级、13级和18级时，你各额外学会一枚自选符文。"
+					]
+				},
+				{
+					"ENG_name": "Inscribing Runes",
+					"type": "entries",
+					"name": "铭刻符文",
+					"entries": [
+						"在1小时之内，你可以使用书法工具将一枚你知晓的符文铭刻进一件武器、一套护甲，或一件可穿戴或手持的物件中，并选择以哪种符文语言铭刻该符文。携带该符文物件的生物获得该符文的所有益处。",
+						"你知晓的每枚符文同一时间只能铭刻在一件物件上。如果你再次铭刻该符文，它先前任何一次铭刻都会被解除。"
+					]
+				},
+				{
+					"ENG_name": "Invoking Runes",
+					"type": "entries",
+					"name": "启动符文",
+					"entries": [
+						"如果符文物件的携带者会说该符文所用的铭刻语言，它便可以启动该符文。",
+						"一旦某枚符文被启动，在符文抄写师完成一次长休之前，它便不能再次被启动，即使它被铭刻在另一件物件上也是如此。"
+					]
+				},
+				{
+					"ENG_name": "Runic Casting",
+					"type": "entries",
+					"name": "符文施法",
+					"entries": [
+						"如果你施放或专注来自符文的法术，可以无视敏锐分析中心无旁骛的限制。你的符文进行法术攻击掷骰时使用如下数值：",
+						{
+							"ENG_name": "Rune",
+							"type": "abilityAttackMod",
+							"name": "符文",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "hour"
+				}
+			},
+			"foundryImg": "icons/magic/symbols/rune-sigil-black-pink.webp"
+		},
+		{
+			"ENG_name": "Student of Runes",
+			"name": "符文学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "符文抄写师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"draconic",
+							"druidic",
+							"dwarvish",
+							"giant",
+							"primordial"
+						],
+						"count": 2
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"history": true
+				},
+				{
+					"arcana": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"history": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"calligrapher's supplies": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 奥秘}、{@skill 历史}技能以及{@item 书法工具|PHB}的熟练项。每当你使用其中一项熟练项进行检定时，你的掷骰都获得等同于一次你才智骰掷骰结果的加值。如果你已经拥有奥秘技能的熟练项，则改为获得博学者技能列表中另一技能的熟练项。",
+				"你还学会说、读、写下列符文语言中的两种，它们用于铭刻你习得的符文：{@language 龙语}、{@language 德鲁伊语}、{@language 矮人语}、{@language 巨人语}或{@language 原初语}。"
+			],
+			"foundryImg": "icons/sundries/books/book-worn-blue.webp"
+		},
+		{
+			"ENG_name": "Elder Magicks",
+			"name": "上古魔法",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "符文抄写师",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"只要符文仍被铭刻，你的符文物件便视为魔法物件。此外，在一次短休期间，你可以举行一个简短的10分钟仪式，重新唤醒当日已被启动过的符文的魔力。随后，在你下一次长休结束前，它可以再被启动一次。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 10,
+					"type": "minute",
+					"condition": "During the course of a short rest"
+				}
+			},
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Runic Ward",
+			"name": "符文守护",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "符文抄写师",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的符文为其携带者提供一定程度的保护。如果一个携带你至少一件符文物件的生物被迫进行豁免检定以抵抗某个法术或其他魔法效果，其掷骰将获得等同于你智力调整值（最少为+1）的加值。",
+				"此外，每当你完成一次长休，你可以用另一枚自选符文替换一枚你知晓的符文。"
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/magic/defensive/shield-barrier-blades-teal.webp"
+		},
+		{
+			"ENG_name": "Master Rune Scribe",
+			"name": "符文抄写大师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "符文抄写师",
+			"subclassSource": "LLSavE",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你可以在危急关头汲取符文的魔法保护自己。当你被降至0生命值但并未立即死亡时，你可以汲取60尺内一件符文物件的力量，立即解除该符文及其一切效果，你的生命值将降至1点而非0点。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you are reduced to 0 hit points but not killed outright"
+				}
+			},
+			"foundryImg": "icons/magic/symbols/runes-star-pentagon-orange.webp"
+		},
+		{
+			"ENG_name": "Virtuoso",
+			"name": "演奏大师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"演奏大师将其过人的才智投向音乐研究，以他们谱写与演绎的精妙复杂的乐曲而闻名。这些作曲大师深谙如何用主题乐章操控听者的情绪\u2014\u2014只要音符的序列恰到好处，他们便能让听者心中涌起悲伤、愤怒、淡漠，或绝对的倾慕。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "音乐学徒|博学者|LLSav|演奏大师|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奇妙乐章|博学者|LLSav|演奏大师|LLSavE|3|LLSavE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Wondrous Theme",
+			"name": "奇妙乐章",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你谱写了能撩动一切闻者心弦的强大乐章。你可以用一个动作，用一件你具有熟练项的乐器开始演奏你的乐章。你的乐章持续到你下回合开始，除非你选择提前结束它（无需动作）。120尺内都能听见它，但它只影响你30尺内能听见它的生物。",
+				"在后续的回合中，你可以用你的附赠动作延续乐章，使其不间断地再持续一轮。在演奏乐章期间，你可以用你的反应以下列方式改变它的声响：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "刺耳音符|博学者|LLSav|演奏大师|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "鼓舞曲调|博学者|LLSav|演奏大师|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "喧闹强袭|博学者|LLSav|演奏大师|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "振奋旋律|博学者|LLSav|演奏大师|LLSavE|3|LLSavE"
+				}
+			],
+			"foundryImg": "icons/tools/instruments/harp-lap-brown.webp"
+		},
+		{
+			"ENG_name": "Discordant Note",
+			"name": "刺耳音符",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"当一个受你乐章影响的生物攻击另一个你能看见的目标时，你可以用一个反应奏出此音符，将你的才智骰从其攻击掷骰中减去，从而可能使其失手。"
+			],
+			"foundrySystem": {
+				"formula": "1@scale.savant.intellect-die"
+			},
+			"foundryImg": "icons/tools/instruments/drum-snare-red.webp"
+		},
+		{
+			"ENG_name": "Inspiring Tune",
+			"name": "鼓舞曲调",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"当一个受你乐章影响的生物受到一个你能看见的来源的伤害时，你可以用一个反应奏出此曲调，将该伤害降低等同于你才智骰的数值。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "When a creature under the influence of your Theme takes damage from a source you can see"
+				},
+				"formula": "1@scale.savant.intellect-die"
+			},
+			"foundryImg": "icons/tools/instruments/harp-gold-glowing.webp"
+		},
+		{
+			"ENG_name": "Raucous Assault",
+			"name": "喧闹强袭",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"当一个生物进入你乐章的影响之下，或在其影响之下开始其回合时，你可以用一个反应强迫它进行一次体质豁免检定。豁免失败时，它受到等同于两枚才智骰的雷鸣伤害。"
+			],
+			"foundryImg": "icons/magic/sonic/bell-alarm-red-purple.webp"
+		},
+		{
+			"ENG_name": "Uplifting Melody",
+			"name": "振奋旋律",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"当一个受你乐章影响的生物进行豁免检定以抵抗魅惑、恐慌、失能或震慑时，你可以用一个反应奏出此旋律，使其自动成功。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "When a creature under the influence of your Theme makes a saving throw to resist being charmed, frightened, or stunned"
+				}
+			},
+			"foundryImg": "icons/skills/trades/music-notes-sound-blue.webp"
+		},
+		{
+			"ENG_name": "Student of Music",
+			"name": "音乐学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"performance": true
+				},
+				{
+					"insight": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"performance": true
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						],
+						"count": 2
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyMusicalInstrument": 3
+				}
+			],
+			"entries": [
+				"你获得洞悉与表演技能以及三件自选乐器的熟练项。当你使用这些技能或任何乐器进行属性检定时，你可以将你的才智骰加入掷骰。你还可以用智力代替魅力进行表演检定。",
+				"此外，如果你花1小时练习一件乐器，你便获得它的熟练项。但同一时间只有一件乐器能受益于此特性。"
+			],
+			"foundryImg": "icons/sundries/books/book-embossed-clasp-gold-brown.webp"
+		},
+		{
+			"ENG_name": "Disarming Melody",
+			"name": "卸力旋律",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你将卸人心防的音线织入你的乐章。当一个受你乐章影响的生物攻击你时，它必须先进行一次感知豁免检定。豁免失败时，它必须转而攻击其射程内另一个由它选择的目标。如果没有其他目标，其攻击失手。在此豁免检定中成功的生物将在24小时内免疫此效果。",
+				"此外，每当你用你的动作开始乐章或用你的附赠动作延续乐章时，你都可以强迫一个受你乐章影响的生物进行一次对抗喧闹强袭的豁免检定。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": "special"
+				},
+				"damage.parts": [
+					[
+						"2@scale.savant.intellect-die",
+						"thunder"
+					]
+				]
+			},
+			"foundryImg": "icons/skills/melee/sword-damaged-broken-orange.webp"
+		},
+		{
+			"ENG_name": "Empowered Theme",
+			"name": "强化乐章",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的乐章的复杂度与美感都更上层楼。只要你60尺内的生物能听见你的乐章，便处于它的影响之下。",
+				"此外，当你使用奇妙乐章的反应时，你可以给予另一个受你乐章影响的生物等同于你智力调整值的临时生命值。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "Whenever you use a Wondrous Theme reaction"
+				},
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"@abilities.int.mod",
+						"temphp"
+					]
+				]
+			},
+			"foundryImg": "icons/tools/instruments/megaphone.webp"
+		},
+		{
+			"ENG_name": "Shrill Assault",
+			"name": "尖啸强袭",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你可以强化乐章的乐音，使敌人承受听觉上的痛楚。喧闹强袭造成的雷鸣伤害提升为三枚才智骰。此外，每当有生物豁免失败时，你可以将雷鸣伤害降低一枚才智骰，改为使其直到你下回合开始处于耳聋状态。",
+				"在18级时，此伤害提升为四枚才智骰。"
+			],
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp"
+		},
+		{
+			"ENG_name": "Master Virtuoso",
+			"name": "演奏宗师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的音乐天赋与作品的复杂度赋予你的乐章超自然的特质。你乐章范围内的所有生物即使听不见或处于耳聋状态，也视为受它影响。",
+				"最后，每次短休或长休一次，当你用动作开始你的乐章时，你可以强迫由你指定的一些受乐章影响的生物进行对抗喧闹强袭的豁免检定。"
+			],
+			"foundryImg": "icons/tools/instruments/harp-yellow-teal.webp"
+		},
+		{
+			"ENG_name": "Aristocrat",
+			"name": "贵族",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你的天才在贵族优渥的教育中茁壮成长。凡人所能梦想的每一位家庭教师、每一座图书馆、每一堂课，你皆触手可及，而你也善用了一切优势。如今，你将伟大的智识与你姓氏世代积累的声望相结合，凭此二者成为一位政治大师。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "上流社会学徒|博学者|LLSav|贵族|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "继承财富|博学者|LLSav|贵族|LLSavE|3|LLSavE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "维护声誉|博学者|LLSav|贵族|LLSavE|3|LLSavE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Inherited Wealth",
+			"name": "继承财富",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你的家族姓氏关联着一笔巨额财富，而随着你的地位与影响力水涨船高，你也有资格动用家族的金库。你获得300金币。这是一次性收益，你必须从一座规模相称的聚落（由DM裁定）中的银行或类似机构支取。",
+				"每当你获得一个博学者等级，你都会额外获得一笔一次性的金币，金额等同于你当前此职业等级的100倍，且必须以同样的方式支取。"
+			],
+			"foundryImg": "icons/commodities/currency/coins-plain-stack-gold.webp"
+		},
+		{
+			"ENG_name": "Uphold Reputation",
+			"name": "维护声誉",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"entries": [
+				"你的家族姓氏伴随着不容有失的期望。当你的攻击掷骰失手，或属性检定、豁免检定失败时，你可以选择将你的才智骰加入你的结果，从而可能扭转结局。",
+				"你可以使用此特性的次数等同于你的智力调整值（最少为一次）。你完成一次短休后恢复一次使用次数，完成一次长休后恢复所有使用次数。"
+			],
+			"foundryImg": "icons/commodities/treasure/crown-gold-satin-gems-red.webp"
+		},
+		{
+			"ENG_name": "Student of High Society",
+			"name": "上流社会学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"persuasion": true,
+					"history": true
+				},
+				{
+					"persuasion": true,
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"investigation",
+							"medicine",
+							"nature",
+							"persuasion",
+							"religion"
+						]
+					},
+					"history": true
+				}
+			],
+			"entries": [
+				"你获得历史与游说技能以及一套自选工匠工具的熟练项。你可以将你的才智骰加入使用这些熟练项进行的所有检定。",
+				"你的精英教育还授予你下列学术追求之一，即使你尚未满足它们的先决条件：马术、语言学、经商之道或传统。"
+			],
+			"foundryImg": "icons/sundries/books/book-worn-blue.webp"
+		},
+		{
+			"ENG_name": "Aversion to Violence",
+			"name": "厌弃暴力",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你真正的价值在于人脉与财富，而非挨打的本事。当一个你能看见的生物以攻击或法术指定你为目标时，你可以用一个反应立即与5尺内一个清醒且自愿的生物互换位置。它将代替你成为该攻击或法术的目标。",
+				"当你使用此反应时，你可以选择给予与你互换位置的生物等同于你才智骰的临时生命值。",
+				"你可以给予临时生命值的次数等同于你的智力调整值（最少为一次），并在完成一次短休或长休后恢复所有使用次数。"
+			],
+			"foundryImg": "icons/skills/melee/shield-block-fire-orange.webp"
+		},
+		{
+			"ENG_name": "Well Connected",
+			"name": "人脉通达",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你可以动用家族姓氏世代积累的声望、人脉与财力，安排强有力的帮忙。当你身处一座聚落时，你可以花1小时安排这样一次帮忙。帮忙的规模不能超过一个7环法术的效果，其金币价值也不能超过你博学者等级的500倍。",
+				"例如，你可以弄到一件法术所需的珍稀材料成分、雇下一支精英雇佣兵团、获准进入一座禁书馆，或收买敌人仆从的忠心。",
+				"一旦你安排了这样一次帮忙，在完成一次长休之前你不能再这样做。而且，在1d4天过去之前，你不能在同一座聚落再次安排帮忙。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp"
+		},
+		{
+			"ENG_name": "Ascendant House",
+			"name": "家族崛起",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的声望已凌驾于国王与皇帝之上。凡闻你之言者皆须遵从。你可以使用厌弃暴力与15尺内一个清醒且自愿的生物，或5尺内一个清醒但不情愿的生物互换位置。不情愿的生物必须进行一次感知豁免检定以抵抗此效果。你不能以你的攻击者为目标。",
+				"最后，每当你完成一次短休或长休，你都会恢复维护声誉的所有已耗用次数。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-peace-alliance.webp"
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Student of Archaeology",
+			"name": "考古学学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "History and Investigation Check Bonus",
+					"name": "历史与调查检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.his.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.inv.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Adventuring Academic",
+			"name": "冒险学者",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "考古学家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"effects": [
+				{
+					"ENG_name": "Climbing Speed",
+					"name": "攀爬速度",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.climb",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Truth",
+			"name": "真相学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Insight and Investigation Check Bonus",
+					"name": "洞悉与调查检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ins.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.inv.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.ins.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						},
+						{
+							"key": "system.skills.prc.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Rough & Tumble",
+			"name": "街头缠斗",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"subEntities": {
+				"item": [
+					{
+						"ENG_name": "Unarmed Strike",
+						"name": "徒手打击",
+						"source": "LLSav",
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"ability": "str",
+							"equipped": true,
+							"damage.parts": [
+								[
+									"@scale.savant.intellect-die + @mod",
+									"bludgeoning"
+								]
+							]
+						}
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Rough and Tumble",
+					"name": "街头缠斗",
+					"type": "save",
+					"activation": {
+						"type": "special"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Underhanded Brawler",
+			"name": "阴招斗士",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "Cunning Flourish",
+					"name": "狡黠应对",
+					"type": "save",
+					"activation": {
+						"type": "special"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Master Investigator",
+			"name": "调查大师",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "调查员",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"effects": [
+				{
+					"ENG_name": "Truesight",
+					"name": "真实视觉",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.senses.truesight",
+							"mode": "UPGRADE",
+							"value": 30
+						}
+					]
+				}
+			],
+			"system": {
+				"uses.per": "sr",
+				"uses.max": 1,
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Master Investigator",
+					"name": "调查大师",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Nature",
+			"name": "自然学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "博物学家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Nature and Survival Check Bonus",
+					"name": "自然与求生检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.nat.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.sur.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.ani.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						},
+						{
+							"key": "system.skills.sur.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Call of the Wild",
+			"name": "野性呼唤",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "博物学家",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "Call of the Wild",
+					"name": "野性呼唤",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Medicine",
+			"name": "医学学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Medicine and Sleight of Hand Check Bonus",
+					"name": "医药与巧手检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.med.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.slt.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.med.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Adrenaline Jolt",
+			"name": "肾上腺素激醒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Adrenaline Jolt",
+					"name": "肾上腺素激醒",
+					"type": "utility",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"roll": {
+						"formula": "+@scale.savant.intellect-die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Dress Wounds",
+			"name": "包扎伤口",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Dress Wounds",
+					"name": "包扎伤口",
+					"type": "heal",
+					"activation": {
+						"type": "action"
+					},
+					"healing": {
+						"bonus": "+@scale.savant.intellect-die",
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Healing Surge",
+			"name": "治疗涌动",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Healing Surge",
+					"name": "治疗涌动",
+					"type": "heal",
+					"activation": {
+						"type": "action"
+					},
+					"healing": {
+						"bonus": "+@scale.savant.intellect-die",
+						"types": [
+							"healing"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Medical Expertise",
+			"name": "妙手回春",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "医师",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "max(1, @abilities.int.mod)",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Medical Expertise",
+					"name": "妙手回春",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of War",
+			"name": "战争学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "History and Persuasion Check Bonus",
+					"name": "历史与游说检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.his.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.per.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Heroic Order",
+			"name": "英勇号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": 1,
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Heroic Order",
+					"name": "英勇号令",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Revitalizing Order",
+			"name": "复苏号令",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "战术家",
+			"subclassSource": "LLSav",
+			"level": 18,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": 1,
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Revitalizing Order",
+					"name": "复苏号令",
+					"type": "heal",
+					"activation": {
+						"type": "special"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"healing": {
+						"bonus": "@classes.savant.levels + @scale.savant.intellect-die",
+						"types": [
+							"healing"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Flavor",
+			"name": "风味学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "美食家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Nature Check Bonus",
+					"name": "自然检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.nat.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				},
+				{
+					"ENG_name": "Sleight of Hand Check Bonus",
+					"name": "巧手检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.slt.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Recipes",
+			"name": "改良食谱",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "美食家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"activities": [
+				{
+					"ENG_name": "Improved Recipes",
+					"name": "改良食谱",
+					"type": "heal",
+					"activation": {
+						"type": "special"
+					},
+					"healing": {
+						"bonus": "@classes.savant.levels",
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Life",
+			"name": "人生学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "History and Insight Check Bonus",
+					"name": "历史与洞悉检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.his.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.his.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Astute Advice",
+			"name": "精辟建议",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "max(1, @abilities.int.mod)",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					},
+					{
+						"period": "sr",
+						"type": "formula",
+						"formula": 1
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Astute Advice",
+					"name": "精辟建议",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Calm Demeanor",
+			"name": "沉静气度",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "End the turn",
+					"name": "结束回合",
+					"type": "heal",
+					"activation": {
+						"type": "special"
+					},
+					"healing": {
+						"bonus": "@abilities.int.mod",
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Wondrous Advice",
+			"name": "绝妙建议",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "导师",
+			"subclassSource": "LLSav",
+			"level": 13,
+			"activities": [
+				{
+					"ENG_name": "Add or TempHP",
+					"name": "加值或临时生命值",
+					"type": "heal",
+					"activation": {
+						"type": "special"
+					},
+					"healing": {
+						"bonus": "@scale.savant.intellect-die",
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Logic",
+			"name": "逻辑学徒",
+			"source": "LLSav",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSav",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Deception and Persuasion Check Bonus",
+					"name": "欺瞒与游说检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.dec.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.per.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.dec.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						},
+						{
+							"key": "system.skills.per.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Convincing Conversation",
+			"name": "令人信服的交谈",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Convincing Conversation",
+					"name": "令人信服的交谈",
+					"type": "save",
+					"activation": {
+						"cost": 1,
+						"type": "minute"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Cutting Retort",
+			"name": "犀利反驳",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Not actually damage until you get Iron Logic",
+					"name": "获得钢铁逻辑前并非实际伤害",
+					"type": "damage",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.intellect-die"
+								},
+								"bonus": "",
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Invigorating Word",
+			"name": "激励之言",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Invigorating Word",
+					"name": "激励之言",
+					"type": "heal",
+					"activation": {
+						"type": "reaction"
+					},
+					"healing": {
+						"bonus": "+@scale.savant.intellect-die",
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Iron Logic",
+			"name": "钢铁逻辑",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "Cutting Retort",
+					"name": "犀利反驳",
+					"type": "damage",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.intellect-die"
+								},
+								"bonus": "",
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Inspire",
+			"name": "激励",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": 1,
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Inspire",
+					"name": "激励",
+					"type": "heal",
+					"activation": {
+						"cost": 1,
+						"type": "minute"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"healing": {
+						"bonus": "+ @classes.savant.levels",
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Persuade",
+			"name": "说服",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演说家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": 1,
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Persuade",
+					"name": "说服",
+					"type": "save",
+					"activation": {
+						"cost": 1,
+						"type": "minute"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Thought",
+			"name": "思想学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Arcana and Religion Check Bonus",
+					"name": "奥秘与宗教检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.arc.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.rel.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Confound",
+			"name": "惑乱",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Confound",
+					"name": "惑乱",
+					"type": "save",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.wop-die"
+								},
+								"bonus": "",
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Disorient",
+			"name": "迷向",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Disorient",
+					"name": "迷向",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.wop-die"
+								},
+								"bonus": "",
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Dread",
+			"name": "恫惧",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Dread",
+					"name": "恫惧",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.wop-die"
+								},
+								"bonus": "",
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Halt",
+			"name": "禁足",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Halt",
+					"name": "禁足",
+					"type": "save",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.wop-die"
+								},
+								"bonus": "",
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Enfeeble",
+			"name": "虚弱",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Enfeeble",
+					"name": "虚弱",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"int"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.intellect-die + @scale.savant.intellect-die + @scale.savant.intellect-die"
+								},
+								"bonus": "",
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Shunt",
+			"name": "逐离",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Shunt",
+					"name": "逐离",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.intellect-die + @scale.savant.intellect-die + @scale.savant.intellect-die"
+								},
+								"bonus": "",
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Master Philosopher",
+			"name": "哲学大师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "哲学家",
+			"subclassSource": "LLSavE",
+			"level": 18,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Master Philosopher",
+					"name": "哲学大师",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Runes",
+			"name": "符文学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "符文抄写师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Arcana Check Bonus",
+					"name": "奥秘检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.arc.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Runic Ward",
+			"name": "符文守护",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "符文抄写师",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"activities": [
+				{
+					"ENG_name": "Runic Ward",
+					"name": "符文守护",
+					"type": "utility",
+					"activation": {
+						"type": "special"
+					},
+					"roll": {
+						"formula": "+ @abilities.int.mod"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Student of Music",
+			"name": "音乐学徒",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Insight and Performance Check Bonus",
+					"name": "洞悉与表演检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ins.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						},
+						{
+							"key": "system.skills.prf.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Discordant Note",
+			"name": "刺耳音符",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Discordant Note",
+					"name": "刺耳音符",
+					"type": "utility",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"roll": {
+						"formula": "+@scale.savant.intellect-die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Inspiring Tune",
+			"name": "鼓舞曲调",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Inspiring Tune",
+					"name": "鼓舞曲调",
+					"type": "utility",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"roll": {
+						"formula": "+@scale.savant.intellect-die"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Raucous Assault",
+			"name": "喧闹强袭",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Raucous Assault",
+					"name": "喧闹强袭",
+					"type": "save",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.savant.raucous-die"
+								},
+								"bonus": "",
+								"types": [
+									"thunder"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Uplifting Melody",
+			"name": "振奋旋律",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Uplifting Melody",
+					"name": "振奋旋律",
+					"type": "utility",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Disarming Melody",
+			"name": "卸力旋律",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "Disarming Melody",
+					"name": "卸力旋律",
+					"type": "save",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Empowered Theme",
+			"name": "强化乐章",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"activities": [
+				{
+					"ENG_name": "Wondrous Theme",
+					"name": "奇妙乐章",
+					"type": "heal",
+					"activation": {
+						"type": "special"
+					},
+					"healing": {
+						"bonus": "@abilities.int.mod",
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Master Virtuoso",
+			"name": "演奏宗师",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "演奏大师",
+			"subclassSource": "LLSavE",
+			"level": 18,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Master Virtuoso",
+					"name": "演奏宗师",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Uphold Reputation",
+			"name": "维护声誉",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 3,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "max(1, @abilities.int.mod)",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					},
+					{
+						"period": "sr",
+						"type": "formula",
+						"formula": "1"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Uphold Reputation",
+					"name": "维护声誉",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Aversion to Violence",
+			"name": "厌弃暴力",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 7,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "max(1, @abilities.int.mod)",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Grant Temp HP",
+					"name": "授予临时生命值",
+					"type": "heal",
+					"activation": {
+						"cost": 1,
+						"type": "reaction"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"healing": {
+						"bonus": "@scale.savant.intellect-die",
+						"types": [
+							"temphp"
+						]
+					}
+				},
+				{
+					"ENG_name": "Don't Grant",
+					"name": "不授予",
+					"type": "utility",
+					"activation": {
+						"cost": 1,
+						"type": "reaction"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Well Connected",
+			"name": "人脉通达",
+			"source": "LLSavE",
+			"className": "博学者",
+			"classSource": "LLSav",
+			"subclassShortName": "贵族",
+			"subclassSource": "LLSavE",
+			"level": 13,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": 1,
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Well Connected",
+					"name": "人脉通达",
+					"type": "utility",
+					"activation": {
+						"cost": 1,
+						"type": "hour"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Aerial Morsel",
+			"name": "气流小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"样本：任意挑战等级1或更高的风元素"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物每回合都可以用一个附赠动作采取{@action 疾走}动作，并且它可以无限期地屏住呼吸。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/magic/air/fog-gas-smoke-swirling-gray.webp"
+		},
+		{
+			"ENG_name": "Aqueous Morsel",
+			"name": "流水小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"样本：任意挑战等级1或更高的水元素"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物可以同时呼吸空气与水，获得等同于其步行速度的游泳速度，并可以用它的反应把一次重击化为普通命中。"
+			],
+			"foundryImg": "icons/magic/water/elemental-water.webp"
+		},
+		{
+			"ENG_name": "Astrology",
+			"name": "占星学",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true
+				}
+			],
+			"entries": [
+				"你是天体的门徒，运用这份知识扭转命运。你获得奥秘技能的熟练项，并可以将你的才智骰加入你进行的任何奥秘检定。",
+				"在每次你能看见夜空的长休期间，掷一枚{@dice d20}并记下其结果。在你下一次长休结束前的一次机会中，你可以在掷骰前选择以该结果替代一次属性检定、攻击掷骰或豁免检定的d20。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "During each long rest that you can see the night sky"
+				},
+				"formula": "d20"
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Arcana Check Bonus",
+					"name": "奥秘检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.arc.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/academics-astronomy-navigation-purple.webp"
+		},
+		{
+			"ENG_name": "Bushcraft",
+			"name": "丛林技艺",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"nature": true
+				}
+			],
+			"entries": [
+				"你能运用自然知识在荒野中蓬勃生存。你获得自然技能的熟练项，并将你的才智骰加入你进行的任何自然检定。",
+				"在10分钟之内（可以是短休或长休的一部分），你可以采集天然材料，用一把匕首或手斧制作下列物件之一：一根短棒、1d4支飞镖、一支标枪、一张捕网、10尺绳索，或一个丛林陷阱。",
+				"你可以用一个动作在相邻的一个未占据的5尺空间中布下一个丛林陷阱。第一个进入该空间的大型或更小生物必须对你的才智豁免DC进行一次敏捷豁免检定，失败则被陷阱束缚。",
+				"一个生物可以用一个动作对你的才智豁免DC进行一次力量检定，成功即可从陷阱中脱身。",
+				"当该生物脱身后，陷阱即被毁坏。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 10,
+					"type": "minute"
+				}
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Nature Check Bonus",
+					"name": "自然检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.nat.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/nature/vines-throned-entwined-glow-green.webp"
+		},
+		{
+			"ENG_name": "Deduction",
+			"name": "推理",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"investigation": true
+				}
+			],
+			"entries": [
+				"你善于把看似毫不相干的信息碎片拼合起来，发现隐藏的真相与谜底。你获得调查技能的熟练项，并将你的才智骰加入你进行的任何调查检定。",
+				"当你将一个生物指定为你的焦点时，它将一直保持为焦点，直到你选择结束，或你指定另一个焦点。",
+				"每次长休之间一次，你可以琢磨你对焦点的一个直觉猜测，并向DM提出一个与之相关、可以用\"是\"\"否\"或\"不明\"回答的问题。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Investigation Check Bonus",
+					"name": "调查检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.inv.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/tools/scribal/magnifying-glass.webp"
+		},
+		{
+			"ENG_name": "Celestial Morsel",
+			"name": "天界小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 18,
+					"feature": [
+						"样本：任意挑战等级1或更高的天界生物"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物显现出一对空灵的天使羽翼，赋予它等同于其步行速度的飞行速度。"
+			],
+			"foundryImg": "icons/magic/holy/angel-winged-humanoid-blue.webp"
+		},
+		{
+			"ENG_name": "Draconic Morsel",
+			"name": "龙类小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 7,
+					"feature": [
+						"样本：任意挑战等级1或更高的巨龙"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物获得对样本巨龙的吐息武器攻击所造成伤害类型的抗性。",
+				"你为每一种你采集过样本的巨龙，都可以在你的食谱中自创一道独特的食谱。"
+			],
+			"foundryImg": "icons/creatures/reptiles/dragon-horned-blue.webp"
+		},
+		{
+			"ENG_name": "Equestrianism",
+			"name": "马术",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"animal handling": true
+				}
+			],
+			"entries": [
+				"你学会了照料马匹及其他受过训练的坐骑。你获得驯兽技能的熟练项，并将你的才智骰加入你进行的任何驯兽检定。",
+				"当你骑乘一匹受训坐骑时，你获得下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"在战斗中，你的坐骑在你的回合行动。",
+						"当你的坐骑进行属性检定、伤害掷骰或豁免检定时，它可以将你的才智骰加入其掷骰。",
+						"你可以用一个附赠动作命令你的坐骑攻击，或使用其数据块中的另一个动作。"
+					]
+				},
+				"最后，如果你花8小时训练一只友好的四足生物，并花50金币购置必要的训练材料与食物，它便视为你的一匹受训坐骑。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Animal Handling Check Bonus",
+					"name": "驯兽检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ani.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/misc/horseshoe-iron.webp"
+		},
+		{
+			"ENG_name": "Falconry",
+			"name": "驯鹰术",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP",
+				"LL:SP:N"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"entries": [
+				"你能训练猛禽用于侦察与战斗。你获得察觉技能的熟练项，并可以将你的才智骰加入你进行的任何察觉检定。",
+				"你还获得一只受训的隼，它适用以下规则：",
+				{
+					"ENG_name": "Statistics",
+					"type": "entries",
+					"name": "数据",
+					"entries": [
+						"该隼使用{@creature 隼|LLCompendiumOfBeasts}的数据块，但其智力值为8。你们可以仅凭手势和声音相互交流简单的想法。"
+					]
+				},
+				{
+					"ENG_name": "Combat",
+					"type": "entries",
+					"name": "战斗",
+					"entries": [
+						"该隼忠贞不渝，在战斗中于你的回合行动。它可以自行移动并使用其反应，但除非你用你的附赠动作命令它使用其数据块中的动作或另一动作，否则它只采取回避动作。如果你失能，你的隼可以自行行动，并会竭尽所能保护你。"
+					]
+				},
+				{
+					"ENG_name": "Death",
+					"type": "entries",
+					"name": "死亡",
+					"entries": [
+						"如果你的隼的生命值降至0，它会像玩家角色一样进行死亡豁免检定。若它死亡，只要该地区合理存在此类生物，你的独门技艺使你能以价值5金币的饵食，在8小时内追踪并训练另一只隼。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Perception Check Bonus",
+					"name": "察觉检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/birds/raptor-hawk-flying.webp"
+		},
+		{
+			"ENG_name": "First Aid",
+			"name": "急救",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"medicine": true
+				}
+			],
+			"entries": [
+				"你学习过辅助盟友的基础医疗技术。你获得医药技能的熟练项，并将你的才智骰加入你进行的任何医药检定。",
+				"在一次长休期间，你可以花1小时用一个医疗包制作数量等同于你智力调整值（最少为1）的治疗药水。",
+				"这些治疗药水在24小时后失效。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "hour",
+					"condition": "During a long rest"
+				}
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Medicine Check Bonus",
+					"name": "医药检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.med.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/life/cross-worn-green.webp"
+		},
+		{
+			"ENG_name": "Ignan Morsel",
+			"name": "火焰小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"样本：任意挑战等级1或更高的火元素"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物获得火焰伤害抗性，并免疫{@condition 魅惑}和{@condition 恐慌}状态。"
+			],
+			"foundryImg": "icons/magic/fire/elemental-fire-humanoid.webp"
+		},
+		{
+			"ENG_name": "Infernal Morsel",
+			"name": "炼狱小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 18,
+					"feature": [
+						"样本：任意挑战等级1或更高的邪魔"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物为抵抗法术及其他魔法效果而被迫进行的任何豁免检定都具有优势。"
+			],
+			"foundryImg": "icons/creatures/unholy/demon-horned-winged-laughing.webp"
+		},
+		{
+			"ENG_name": "Instruction",
+			"name": "教导",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP",
+				"LL:SP:O",
+				"LL:SP:M"
+			],
+			"entries": [
+				"你的钻研使你成为一位出色的师长。在1小时之内（可以在休整期间进行），你可以给予数量至多等同于你博学者等级、智力为8或更高的生物：一项你具有熟练项的单项技能、工具或武器的熟练项，或说与理解一门你所知语言的能力。受你教导的生物在这1小时内必须能听见并理解你。",
+				"这份知识持续到该生物完成一次长休为止。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "hour"
+				}
+			},
+			"foundryImg": "icons/tools/scribal/ink-quill-pink.webp"
+		},
+		{
+			"ENG_name": "Invigorating Morsel",
+			"name": "滋补小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"样本：任意不具备飞行或游泳速度的野兽"
+					]
+				}
+			],
+			"entries": [
+				"吃下这份小食的生物恢复等同于你才智骰+你的智力调整值的生命值。"
+			],
+			"foundryImg": "icons/creatures/mammals/deer-antlers-blue.webp"
+		},
+		{
+			"ENG_name": "Limbering Morsel",
+			"name": "活络小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"样本：任意具备飞行速度的野兽"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物的先攻掷骰获得等同于你智力调整值（最少为+1）的加值，且其步行速度提高10尺。"
+			],
+			"foundryImg": "icons/creatures/birds/dove-pigeon-flying-white.webp"
+		},
+		{
+			"ENG_name": "Linguistics",
+			"name": "语言学",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"persuasion": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"any": 0
+				}
+			],
+			"entries": [
+				"你是语言与口头表达的学生。你获得游说技能的熟练项，并可以将你的才智骰加入你进行的任何游说检定。",
+				"你还学会说、读、写数量等同于你智力调整值（最少为1）的额外语言。当你的智力调整值提高（或降低）时，你掌握的额外语言数量也随之增加（或减少）。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Persuasion Check Bonus",
+					"name": "游说检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.per.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-runed-worn-brown.webp"
+		},
+		{
+			"ENG_name": "Marksmanship",
+			"name": "射击术",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"sleight of hand": true
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"blowgun|phb": true,
+					"hand crossbow|phb": true,
+					"heavy crossbow|phb": true,
+					"longbow|phb": true,
+					"net|phb": true,
+					"firearms": true
+				}
+			],
+			"entries": [
+				"你将智识运用于远程武器的使用。你获得巧手技能的熟练项，并可以将你的才智骰加入你进行的任何巧手检定。",
+				"你还获得所有军用远程武器的熟练项，且每当你进行远程武器攻击时，你可以用你的才智骰替代该武器的伤害骰。",
+				"最后，如果你的战役设定包含火器，且你的博学者接触过此类装置的内部构造，即视为你拥有简易与军用火器的熟练项。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Sleight of Hand Check Bonus",
+					"name": "巧手检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.slt.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/guns/gun-pistol-flintlock.webp"
+		},
+		{
+			"ENG_name": "Mercantilism",
+			"name": "经商之道",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"insight": true
+				}
+			],
+			"entries": [
+				"你是经济学、商路与市场交易的好学之士。你获得洞悉技能的熟练项，并可以将你的才智骰加入你进行的任何洞悉检定。",
+				"此外，当与一个智力与感知均低于你智力值的生物交易时，你向它购买的所有物品价格降低10%，你出售的任何物品则比通常多卖出10%。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Insight Check Bonus",
+					"name": "洞悉检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ins.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/tools/hand/scale-balances-merchant-brown.webp"
+		},
+		{
+			"ENG_name": "Monstrous Morsel",
+			"name": "怪物小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"样本：任意挑战等级1或更高的怪物"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物获得变身术法术的\"改变面容\"或\"天生武器\"益处。"
+			],
+			"foundryImg": "icons/creatures/abilities/mouth-teeth-lamprey-red.webp"
+		},
+		{
+			"ENG_name": "Musicianship",
+			"name": "音乐造诣",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillToolLanguageProficiencies": [
+				{
+					"performance": true,
+					"anyMusicalInstrument": 1
+				}
+			],
+			"entries": [
+				"你在音乐与歌谣方面颇有天分。你获得表演技能与一件乐器的熟练项，并可以将你的才智骰加入使用这些技能进行的任何检定。",
+				"此外，当你为某个生物演奏乐器或表演至少1分钟后，你在随后1小时内与该生物进行社交往来的任何属性检定都具有优势。如果你或你的盟友对该生物或其盟友做出任何有害行为，此益处立即结束。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Performance Check Bonus",
+					"name": "表演检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.prf.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/music-notes-sound-blue.webp"
+		},
+		{
+			"ENG_name": "Perfect Recall",
+			"name": "完美记忆",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP",
+				"LL:SP:I",
+				"LL:SP:N",
+				"LL:SP:M"
+			],
+			"entries": [
+				"凡是你记在脑海中的事物，你都能巨细靡遗地回想起每个细节。如果你花至少1分钟观察一件物品或一个生物，你在将来的任何时刻都能完美回忆起关于它的一切可观察信息。",
+				"例如，你可以记住一张地图、书中的一页、一段神秘的铭文，或一个生物的容貌。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "minute"
+				}
+			},
+			"foundryImg": "icons/tools/scribal/lens-blue.webp"
+		},
+		{
+			"ENG_name": "Physical Fitness",
+			"name": "体能训练",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP",
+				"LL:SP:N"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"acrobatics"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你深知健康心智的钥匙是健康的体魄。你获得运动或特技技能其一的熟练项，并可以将你的才智骰加入该技能的属性检定。你还获得等同于你步行速度的攀爬或游泳速度。",
+				"你可以两次掌握此学术追求。但每次你必须选择不同的技能与移动速度。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Climbing & Swimming Speed",
+					"name": "攀爬与游泳速度",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.climb",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						},
+						{
+							"key": "system.attributes.movement.swim",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage.webp"
+		},
+		{
+			"ENG_name": "Polymath",
+			"name": "通才",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:SP"
+			],
+			"entries": [
+				"你天生善于习得新技能，尽管未必样样精通。选择你的两项技能或工具熟练项。你可以将你的才智骰加入使用这些熟练项进行的任何检定。"
+			],
+			"foundryImg": "icons/tools/hand/hammer-and-nail.webp"
+		},
+		{
+			"ENG_name": "Psionic Morsel",
+			"name": "灵能小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 7,
+					"feature": [
+						"样本：任意挑战等级1或更高的异怪"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物可以与30尺内的任何生物进行心灵感应沟通。然而，生物若要回应你，必须会说至少一门语言。"
+			],
+			"foundryImg": "icons/creatures/magical/humanoid-silhouette-green.webp"
+		},
+		{
+			"ENG_name": "Quick Study",
+			"name": "快速研习",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP",
+				"LL:SP:M"
+			],
+			"entries": [
+				"你学得飞快。在1小时之内（可以是短休或长休的一部分），你可以获得一项技能或工具的熟练项，或学会一门语言。你必须有可供学习的范本，例如一本手册或另一个生物；这份知识持续到你下次使用此特性为止。",
+				"只要你没有处于突袭或失能状态，你还可以在掷先攻时采取搜索动作。"
+			],
+			"foundryImg": "icons/tools/hand/ruler-steel-grey.webp"
+		},
+		{
+			"ENG_name": "Riddles",
+			"name": "谜语",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP",
+				"LL:SP:O"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"deception": true
+				}
+			],
+			"entries": [
+				"你花费了许多时日学习以谜语与韵文交谈。你获得欺瞒技能的熟练项，并可以将你的才智骰加入你进行的任何欺瞒检定。",
+				"当你说话时，你可以选择以谜语方式言谈。你表面上是在正常交谈，却能在押韵的词句间编入隐秘的讯息。",
+				"在1小时之内（可以是短休或长休的一部分），你可以教会另一个智力为8（或更高）的生物理解你谜语中的隐秘讯息。若其智力为11（或更高），它还能以类似的加密谜语和韵文回应你。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "hour",
+					"condition": "Can be during a short or long rest"
+				}
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Deception Check Bonus",
+					"name": "欺瞒检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.dec.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/symbols/question-stone-yellow.webp"
+		},
+		{
+			"ENG_name": "Rune of Abjuration",
+			"name": "防护符文",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:Runes"
+			],
+			"prerequisite": [
+				{
+					"level": 7,
+					"feature": [
+						"物品：一件斗篷、长袍、盾牌或一套护甲"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，携带者可以将来自法术或魔法效果的伤害降低等同于符文抄写师智力调整值的数值。",
+				{
+					"ENG_name": "Invoking this Rune",
+					"type": "entries",
+					"name": "启动此符文",
+					"entries": [
+						"当携带者30尺内一个生物施放法术时，携带者可以用一个反应强迫该施法者进行一次体质豁免检定。豁免失败时，触发法术施展失败且不产生任何效果。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/symbols/rune-sigil-horned-blue.webp"
+		},
+		{
+			"ENG_name": "Rune of Conjuration",
+			"name": "咒法符文",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:Runes"
+			],
+			"prerequisite": [
+				{
+					"level": 7,
+					"feature": [
+						"物品：一条腰带、一件斗篷、一枚戒指或一套护甲"
+					]
+				}
+			],
+			"entries": [
+				" 携带者可以用一个动作消耗其任意数量的剩余移动速度，立即传送到该距离内一个它能看见的未占据空间。",
+				{
+					"ENG_name": "Invoking this Rune",
+					"type": "entries",
+					"name": "启动此符文",
+					"entries": [
+						"携带者可以用一个动作强迫两个它能看见的60尺内生物进行魅力豁免检定。它们可以选择豁免失败。若两者皆失败，它们互换位置。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/magic/symbols/rune-sigil-hook-white-red.webp"
+		},
+		{
+			"ENG_name": "Rune of Divination",
+			"name": "占卜符文",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:Runes"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"物品：一根魔杖、法杖、一件长袍，或一件施法法器"
+					]
+				}
+			],
+			"entries": [
+				"该符文物件的携带者可以将其作为施法法器，以仪式方式施放{@spell 通晓语言}、{@spell 侦测魔法}和{@spell 鉴定术}法术，且无需材料成分。",
+				{
+					"ENG_name": "Invoking this Rune",
+					"type": "entries",
+					"name": "启动此符文",
+					"entries": [
+						"携带者可以用一个动作强化其视觉1小时，获得120尺半径的真实视觉。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/magic/symbols/cross-circle-blue.webp"
+		},
+		{
+			"ENG_name": "Rune of Enchantment",
+			"name": "惑控符文",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:Runes"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"物品：一只手镯、一顶冠冕、一枚戒指或一条项链"
+					]
+				}
+			],
+			"entries": [
+				"生物对携带该符文物件者的态度会比正常友好一级。例如，一个冷淡的生物可能把携带者当朋友对待，或一个敌对的生物可能对携带者转持冷淡态度。如果携带者攻击该生物，此特殊待遇立即结束。",
+				{
+					"ENG_name": "Invoking this Rune",
+					"type": "entries",
+					"name": "启动此符文",
+					"entries": [
+						"携带者可以用一个动作启动符文，施放{@spell 安定心神}、{@spell 魅惑类人}或{@spell 命令术}法术，目标数量等同于符文抄写师的智力调整值（最少为1个生物）。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/magic/symbols/rune-sigil-green.webp"
+		},
+		{
+			"ENG_name": "Rune of Evocation",
+			"name": "塑能符文",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:Runes"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"物品：一件简易或军用近战武器"
+					]
+				}
+			],
+			"entries": [
+				" 铭刻时选择强酸、寒冷、火焰、毒素或闪电伤害。此武器在命中时造成等同于你才智骰的所选类型额外伤害。",
+				{
+					"ENG_name": "Invoking this Rune",
+					"type": "entries",
+					"name": "启动此符文",
+					"entries": [
+						" 当携带者以此武器造成伤害时，它使该攻击额外造成等同于三枚才智骰的所注入伤害类型的伤害。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/symbols/circled-gem-pink.webp"
+		},
+		{
+			"ENG_name": "Rune of Illusion",
+			"name": "幻术符文",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:Runes"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"物品：一件斗篷、长袍或一套护甲"
+					]
+				}
+			],
+			"entries": [
+				"携带者可以用一个动作将其外貌变为它曾见过的某个生物的容貌，只要二者肢体结构相同。携带者可以决定具体细节，包括种族、肤色、发长、性别、身高与体重，但不能改变其体型。此幻术不影响衣着、装备或游戏数据。",
+				"一次成功的对抗符文抄写师才智豁免DC的智力（调查）检定可以识破此幻术。",
+				{
+					"ENG_name": "Invoking this Rune",
+					"type": "entries",
+					"name": "启动此符文",
+					"entries": [
+						"携带者可以用一个动作启动此符文，进入{@condition 隐形}状态10分钟。此隐形在它攻击或强迫他人进行豁免检定时结束。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/magic/symbols/rune-sigil-rough-white-teal.webp"
+		},
+		{
+			"ENG_name": "Rune of Necromancy",
+			"name": "死灵符文",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:Runes"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"物品：一条腰带、一枚戒指或一套护甲"
+					]
+				}
+			],
+			"entries": [
+				"携带者可以用一个附赠动作给予自己等同于符文抄写师智力调整值的临时生命值。",
+				{
+					"ENG_name": "Invoking this Rune",
+					"type": "entries",
+					"name": "启动此符文",
+					"entries": [
+						"当携带者被降至0生命值但并未立即死亡时，其生命值改为降至1点。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/magic/symbols/rune-sigil-horned-white-purple.webp"
+		},
+		{
+			"ENG_name": "Rune of Transmutation",
+			"name": "变化符文",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:Runes"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"物品：手镯、冠冕、戒指或项链"
+					]
+				}
+			],
+			"entries": [
+				"携带者获得30尺游泳速度、30尺攀爬速度或步行速度提高10尺三者之一。携带者可以用一个附赠动作将其当前益处切换为上列中的另一项。",
+				{
+					"ENG_name": "Invoking this Rune",
+					"type": "entries",
+					"name": "启动此符文",
+					"entries": [
+						"携带者可以用一个动作变为一只挑战等级不高于符文抄写师等级的{@filter 野兽|bestiary|type=Beasts|source=LLCompendiumOfBeasts}，其余规则依{@spell 变形术（变体）|llspell}法术。但此变形不需要专注。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/magic/symbols/cog-shield-white-blue.webp"
+		},
+		{
+			"ENG_name": "Secrets & Whispers",
+			"name": "秘密与低语",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP",
+				"LL:SP:I"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"stealth": true
+				}
+			],
+			"entries": [
+				"你知道哪里适合窃听、该去哪里打探消息。你获得隐匿技能的熟练项，并可以将你的才智骰加入你进行的任何隐匿检定。",
+				"每当你在一座聚落度过长休时，你可以花1小时收集当地流言，从中得知过去一周内当地发生的一件大事，甚至是秘事。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "hour",
+					"condition": "Whenever you spend a long rest in a settlement"
+				}
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Stealth Check Bonus",
+					"name": "隐匿检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/environment/settlement/watchtower-moonlit-blue.webp"
+		},
+		{
+			"ENG_name": "Subterranean Morsel",
+			"name": "穴居小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"样本：任意具备掘地速度的野兽"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物获得60尺黑暗视觉。如果该生物已具有黑暗视觉，其范围扩大30尺。"
+			],
+			"foundryImg": "icons/creatures/mammals/bat-movement-flying-purple.webp"
+		},
+		{
+			"ENG_name": "Sylvan Morsel",
+			"name": "妖精小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 18,
+					"feature": [
+						"样本：任意挑战等级1或更高的精类生物"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物每回合都可以用一个附赠动作传送至多30尺，到达一个它能看见的未占据空间。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				}
+			},
+			"foundryImg": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp"
+		},
+		{
+			"ENG_name": "Terran Morsel",
+			"name": "大地小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"样本：任意挑战等级1或更高的土元素"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物获得15尺半径的{@sense 震颤感知|mm}，并获得对非魔法的钝击、穿刺和挥砍伤害的抗性。"
+			],
+			"foundryImg": "icons/magic/earth/construct-stone-long-arms.webp"
+		},
+		{
+			"ENG_name": "Thalassic Morsel",
+			"name": "海洋小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"样本：任意具备游泳速度的野兽"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物获得等同于其步行速度的游泳速度，并且可以屏息至多10分钟。"
+			],
+			"foundryImg": "icons/creatures/fish/fish-marlin-swordfight-blue.webp"
+		},
+		{
+			"ENG_name": "Theology",
+			"name": "神学",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillToolLanguageProficiencies": [
+				{
+					"religion": true,
+					"celestial": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"典礼术|xge",
+									"侦测善恶",
+									"祝福术",
+									"防护善恶"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你是潜心钻研各类圣典与神圣仪式的学者。你获得宗教技能的熟练项，可以说、读、写天界语，并可以将你的才智骰加入你进行的所有宗教检定。",
+				"此外，每次短休或长休之间一次，你可以运用这份知识举行一个10分钟的仪式，授予下列法术之一的益处：{@spell 祝福术}、{@spell 典礼术|xge}、{@spell 侦测善恶}或{@spell 防护善恶}。你无需消耗法术位或正常的材料成分。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Religion Check Bonus",
+					"name": "宗教检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.rel.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/holy/saint-glass-portrait-halo.webp"
+		},
+		{
+			"ENG_name": "Titanic Morsel",
+			"name": "巨型小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 7,
+					"feature": [
+						"样本：任意挑战等级1或更高的巨人"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，该生物的体型增大至样本巨人的体型。在体型增大期间，它必须如同专注法术一般{@condition 专注|PHB|专注}于此效果。此外，该生物使用其力量进行的属性检定和豁免检定获得等同于你智力调整值的加值。",
+				"你为每一位你采集过样本的巨人，都可以在你的食谱中自创一道独特的食谱。"
+			],
+			"foundryImg": "icons/creatures/magical/construct-iron-stomping-yellow.webp"
+		},
+		{
+			"ENG_name": "Traditions",
+			"name": "传统",
+			"source": "LLSav",
+			"featureType": [
+				"LL:SP",
+				"LL:SP:I",
+				"LL:SP:O"
+			],
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"skillProficiencies": [
+				{
+					"history": true
+				}
+			],
+			"entries": [
+				"你是文化、政治与传统的学生。你获得历史技能的熟练项，并可以将你的才智骰加入你进行的任何历史检定。",
+				"如果你在与当地生物交往时能融入你对当地传统、风俗或礼仪的了解，你可以用历史检定代替魅力检定。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "History Check Bonus",
+					"name": "历史检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.his.bonuses.check",
+							"mode": "ADD",
+							"value": "+@scale.savant.intellect-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/documents/document-letter-blue.webp"
+		},
+		{
+			"ENG_name": "Verdant Morsel",
+			"name": "青翠小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"样本：任意挑战等级1或更高的植物"
+					]
+				}
+			],
+			"entries": [
+				"该生物立即从下列状态中痊愈：{@condition 目盲}、{@condition 耳聋}、{@condition 麻痹}、{@condition 石化}、{@condition 中毒}、一项属性值降低，或一项生命值上限降低。"
+			],
+			"foundryImg": "icons/creatures/magical/spirit-undead-ghost-tan-teal.webp"
+		},
+		{
+			"ENG_name": "Viscous Morsel",
+			"name": "黏稠小食",
+			"source": "LLSavE",
+			"featureType": [
+				"LL:CR"
+			],
+			"prerequisite": [
+				{
+					"level": 7,
+					"feature": [
+						"样本：任意挑战等级1或更高的软泥怪"
+					]
+				}
+			],
+			"entries": [
+				"在1小时内，当该生物受到强酸、闪电、毒素或挥砍伤害时，它可以将其降低等同于你智力调整值的数值（最少降低1点伤害）。"
+			],
+			"foundryImg": "icons/creatures/slimes/slime-giant-face-eyes.webp"
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Blade of the Scribe",
+			"name": "抄写员之刃",
+			"source": "LLSavE",
+			"baseItem": "刺剑|phb",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "由博学者",
+			"reqAttuneTags": [
+				{
+					"class": "博学者|llsav"
+				}
+			],
+			"weight": 2,
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4}",
+			"charges": 4,
+			"entries": [
+				"这把优雅刺剑的剑柄由白银与精钢铸就，中空的剑身内盛着墨水。剑上镌有一段{@language 精灵语}铭文，译作：\"{@i 笔锋胜于剑锋，而此剑更胜于笔锋}\"。你用这把魔法武器进行的攻击掷骰与伤害掷骰获得+1加值。",
+				"这把魔法刺剑拥有4点充能。当你以此武器命中一个目标时，你可以消耗1点充能喷出一股墨汁。目标必须通过一次DC 15的敏捷豁免检定，否则{@condition 目盲}1分钟。该生物若用其动作擦去眼中的墨汁，此效果提前结束。",
+				"这把魔法刺剑每日黎明恢复{@dice 1d4}点充能。"
+			],
+			"foundrySystem": {
+				"save": {
+					"ability": "dex",
+					"scaling": "flat",
+					"dc": 15
+				}
+			},
+			"foundryImg": "icons/weapons/swords/sword-guard.webp"
+		},
+		{
+			"ENG_name": "Doctoral Robes",
+			"name": "博士长袍",
+			"source": "LLSavE",
+			"rarity": "legendary",
+			"reqAttune": "由博学者",
+			"reqAttuneTags": [
+				{
+					"class": "博学者|llsav"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"这套华贵的长袍出自一个久被遗忘的帝国之手，是为一座高等学府的校长所制。",
+				"在与长袍同调期间，你获得下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"只要你没有穿着任何护甲，你的护甲等级等于15+你的智力调整值。",
+						"当你被迫进行豁免检定时，你的掷骰获得等同于你智力调整值的加值。",
+						"当30尺内另一个能听见你的生物进行属性检定时，你可以用你的反应将你的智力调整值加入其掷骰结果。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "When another creature that can hear you within 30 feet makes an ability check"
+				},
+				"formula": "@abilities.int.mod"
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Armor Class",
+					"name": "护甲等级",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "15 + @abilities.int.mod"
+						},
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						}
+					]
+				},
+				{
+					"ENG_name": "Saving Throw Bonus",
+					"name": "豁免检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.bonuses.abilities.save",
+							"mode": "ADD",
+							"value": "+ @abilities.int.mod"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/equipment/chest/robe-layered-teal.webp"
+		},
+		{
+			"ENG_name": "Living Quill",
+			"name": "活体羽笔",
+			"source": "LLSavE",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"这支奇想的羽笔看似以一只来历神秘的鸟类的羽毛制成。你可以用一个动作念出羽笔的指令词，并将羽笔触及一张纸或羊皮纸。只要羽笔能听见你的声音，它便会一字不差地记录你的话语。羽笔会记录1小时，但若你再次念出其指令词，它会提前停笔。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				}
+			},
+			"foundryImg": "icons/commodities/materials/feather-colored-blue.webp"
+		},
+		{
+			"ENG_name": "Monocle of the Linguist",
+			"name": "语言学家单片眼镜",
+			"source": "LLSavE",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"这副构造优雅的单片眼镜让你能读懂并理解透过它看到的一切文字，如同那是你的母语。"
+			],
+			"foundryImg": "icons/tools/scribal/lens-grey-red.webp"
+		},
+		{
+			"ENG_name": "Ring of Lost Lore",
+			"name": "失落逸闻之戒",
+			"source": "LLSavE",
+			"type": "RG|DMG",
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": 1,
+			"charges": 3,
+			"entries": [
+				" 这枚青铜戒指上蚀刻着一个被遗忘文明的象形文字。它拥有3点充能，每日黎明恢复1点已消耗的充能。",
+				" 当你戴着这枚戒指时，你可以消耗1点充能，将思绪集中于一个你能看见的物件或生物上，立即获知关于它的一条重要、被遗忘或隐秘的知识，前提是此类信息确实存在。"
+			],
+			"foundryImg": "icons/equipment/finger/ring-band-engraved-teal.webp"
+		},
+		{
+			"ENG_name": "Ring of Remembering",
+			"name": "铭记之戒",
+			"source": "LLSavE",
+			"type": "RG|DMG",
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": 1,
+			"charges": 3,
+			"entries": [
+				"这枚青铜戒指上蚀刻着一个被遗忘文明的象形文字。它拥有3点充能，每日黎明恢复1点已消耗的充能。",
+				"当你戴着这枚戒指时，你可以消耗1点充能，将思绪集中于一个你能看见的物件或生物上，立即获知关于它的一条重要、被遗忘或隐秘的知识，前提是此类信息确实存在。"
+			],
+			"foundryImg": "icons/equipment/finger/ring-cabochon-silver-purple.webp"
+		},
+		{
+			"ENG_name": "Staff of the Headmaster",
+			"name": "校长法杖",
+			"source": "LLSavE",
+			"baseItem": "法杖|phb",
+			"rarity": "very rare",
+			"reqAttune": "由博学者",
+			"reqAttuneTags": [
+				{
+					"class": "博学者|llsav"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": 1,
+			"charges": 1,
+			"staff": true,
+			"entries": [
+				"这根法杖曾是一座帝国学院的校长权力象征。它可作为魔法长棍挥舞，以它进行的攻击掷骰与伤害掷骰获得+2加值。手持它时，你使用智力或感知的任何属性检定获得+2加值。",
+				"此外，你可以用一个动作将法杖插进地面，在该点30尺半径内产生{@spell 魔邓肯私人密室||私人密室}的效果。在法术的正常效果之外，法术区域还会显现为一间华美的书房。",
+				"一旦你以这种方式用法杖施放私人密室，直到次日黎明它都不能再次如此使用。"
+			],
+			"attachedSpells": [
+				"魔邓肯私人密室"
+			],
+			"foundrySystem": {
+				"type": {
+					"base": "quarterstaff",
+					"value": "simpleM"
+				}
+			},
+			"foundryEffects": [
+				{
+					"ENG_name": "Intelligence and Wisdom Check Bonus",
+					"name": "智力与感知检定加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.abilities.int.bonuses.check",
+							"mode": "ADD",
+							"value": "+2"
+						},
+						{
+							"key": "system.abilities.wis.bonuses.check",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/staves/staff-ornate-blue-jewel.webp"
+		},
+		{
+			"ENG_name": "Tome of Everlasting Genius",
+			"name": "永恒天才之书",
+			"source": "LLSavE",
+			"rarity": "very rare",
+			"reqAttune": "由博学者",
+			"reqAttuneTags": [
+				{
+					"class": "博学者|llsav"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"这本制作典雅、历久弥新的典籍由一代代天才薪火相传，每一代都在书页中添入更多信息。这部典籍包含{@dice 1d4 +1}条下列列表中的条目。你可以随机掷骰，或由DM来选择。",
+				"对典籍中的每一条目，你都会获得写下该条目的天才所对应技能的熟练项，并且你使用该技能进行的任何检定额外获得+5加值。",
+				{
+					"type": "table",
+					"colLabels": [
+						"天才（熟练项）",
+						"天才（熟练项）"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"演员（{@skill 表演}）",
+							"心理学家（{@skill 洞悉}）"
+						],
+						[
+							"天文学家（{@skill 自然}）",
+							"外科医生（{@skill 医药}）"
+						],
+						[
+							"邪教徒（{@skill 欺瞒}）",
+							"研究者（{@skill 调查}）"
+						],
+						[
+							"语言学家（{@skill 游说}）",
+							"仪式师（{@skill 奥秘}）"
+						],
+						[
+							"法官（{@skill 历史}）",
+							"神学家（{@skill 宗教}）"
+						]
+					]
+				},
+				"一旦你与这部典籍同调满一年零一天，你便可以在典籍中写下自己的条目，详述你的专长领域，并选择一项你拥有熟练项的技能加入其中。"
+			],
+			"foundryImg": "icons/sundries/books/book-tooled-blue-yellow.webp"
+		}
+	]
+}
