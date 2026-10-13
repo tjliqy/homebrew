@@ -1,0 +1,7047 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLAB",
+				"abbreviation": "LLAB",
+				"full": "替代野蛮人",
+				"url": "https://www.gmbinder.com/share/-N2gn3QXALCVqwAFJe5v",
+				"version": "2.3.1",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle",
+					"GoR"
+				],
+				"color": "eaab30"
+			},
+			{
+				"json": "LLABE",
+				"abbreviation": "LLABE",
+				"full": "替代野蛮人扩展",
+				"url": "https://www.gmbinder.com/share/-N7MhiHnBhzmgxFtkzBO",
+				"version": "2.3.1",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle"
+				],
+				"color": "eaab30"
+			}
+		],
+		"dependencies": {
+			"optionalfeature": [
+				"LLExploits",
+				"LLStyles"
+			],
+			"feat": [
+				"llfeat"
+			]
+		},
+		"optionalFeatureTypes": {
+			"LLAB:M": "变异"
+		},
+		"edition": "classic",
+		"dateAdded": 1657295680,
+		"dateLastModified": 1790497047,
+		"_dateLastModifiedHash": "1022330716"
+	},
+	"class": [
+		{
+			"ENG_name": "Alternate Barbarian",
+			"name": "替代野蛮人",
+			"source": "LLAB",
+			"hd": {
+				"number": 1,
+				"faces": 12
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Savage Exploits",
+					"name": "凶蛮战技",
+					"featureType": [
+						"LL:SE"
+					],
+					"progression": [
+						0,
+						2,
+						2,
+						2,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						7,
+						7,
+						8,
+						8,
+						8,
+						8
+					]
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 巨斧|phb}、(b) 一把{@item 巨剑|PHB}，或 (c) 一把{@item 巨锤|PHB}",
+					"(a) 两把{@item 手斧|PHB|手斧}，或 (b) 任意一把{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"一件{@item 兽皮甲|PHB}、一个{@item 探索套组|PHB}，以及四支{@item 标枪|PHB|标枪}"
+				],
+				"goldAlternative": "{@dice 2d4 × 10|2d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"巨斧|phb"
+						],
+						"b": [
+							"巨剑|PHB"
+						],
+						"c": [
+							"巨锤|PHB"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "手斧|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"兽皮甲|phb",
+							"探索套组|phb",
+							{
+								"item": "标枪|phb",
+								"quantity": 4
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"str": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"狂暴次数",
+						"{@filter 已知战技|optionalfeatures|feature type=LL:SE}",
+						"战技骰",
+						"战技骰数"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							2,
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							3,
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							3,
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							3,
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							3,
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							4,
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							4,
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							4,
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							4,
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							5,
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							5,
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							5,
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							5,
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							5,
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							6,
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						],
+						[
+							6,
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						],
+						[
+							6,
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						],
+						[
+							"无限制",
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"狂暴|替代野蛮人|LLAB|1|LLAB",
+				"无甲防御|替代野蛮人|LLAB|1|LLAB",
+				"鲁莽攻击|替代野蛮人|LLAB|2|LLAB",
+				"凶蛮战技|替代野蛮人|LLAB|2|LLAB",
+				{
+					"classFeature": "原初道途|替代野蛮人|LLAB|3|LLAB",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代野蛮人|LLAB|4|LLAB",
+				"额外攻击|替代野蛮人|LLAB|5|LLAB",
+				"危机感应|替代野蛮人|LLAB|5|LLAB",
+				{
+					"classFeature": "原初道途|替代野蛮人|LLAB|6|LLAB",
+					"gainSubclassFeature": true
+				},
+				"野性直觉|替代野蛮人|LLAB|7|LLAB",
+				"属性值提升|替代野蛮人|LLAB|8|LLAB",
+				"精通重击|替代野蛮人|LLAB|9|LLAB",
+				{
+					"classFeature": "原初道途|替代野蛮人|LLAB|10|LLAB",
+					"gainSubclassFeature": true
+				},
+				"致命打击|替代野蛮人|LLAB|11|LLAB",
+				"势不可挡|替代野蛮人|LLAB|11|LLAB",
+				"属性值提升|替代野蛮人|LLAB|12|LLAB",
+				{
+					"classFeature": "原初道途|替代野蛮人|LLAB|14|LLAB",
+					"gainSubclassFeature": true
+				},
+				"持久狂暴|替代野蛮人|LLAB|15|LLAB",
+				"属性值提升|替代野蛮人|LLAB|16|LLAB",
+				"不屈勇武|替代野蛮人|LLAB|18|LLAB",
+				"属性值提升|替代野蛮人|LLAB|19|LLAB",
+				"原初斗士|替代野蛮人|LLAB|20|LLAB"
+			],
+			"hasFluff": true,
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "rage",
+						"type": "number",
+						"scale": {
+							"1": {
+								"value": 2
+							},
+							"2": {
+								"value": 2
+							},
+							"3": {
+								"value": 2
+							},
+							"4": {
+								"value": 3
+							},
+							"5": {
+								"value": 3
+							},
+							"6": {
+								"value": 3
+							},
+							"7": {
+								"value": 3
+							},
+							"8": {
+								"value": 4
+							},
+							"9": {
+								"value": 4
+							},
+							"10": {
+								"value": 4
+							},
+							"11": {
+								"value": 4
+							},
+							"12": {
+								"value": 5
+							},
+							"13": {
+								"value": 5
+							},
+							"14": {
+								"value": 5
+							},
+							"15": {
+								"value": 5
+							},
+							"16": {
+								"value": 5
+							},
+							"17": {
+								"value": 6
+							},
+							"18": {
+								"value": 6
+							},
+							"19": {
+								"value": 6
+							},
+							"20": {
+								"value": 9001
+							}
+						}
+					},
+					"title": "狂暴"
+				},
+				{
+					"type": "ScaleValue",
+					"title": "战技骰",
+					"configuration": {
+						"identifier": "exploit",
+						"type": "dice",
+						"scale": {
+							"2": {
+								"n": 2,
+								"die": 4
+							},
+							"5": {
+								"n": 3,
+								"die": 6
+							},
+							"11": {
+								"n": 4,
+								"die": 8
+							},
+							"17": {
+								"n": 5,
+								"die": 10
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Alternate Barbarian",
+			"name": "替代野蛮人",
+			"source": "LLAB",
+			"entries": [
+				{
+					"ENG_name": "Barbarian",
+					"type": "section",
+					"name": "野蛮人",
+					"source": "LLAB",
+					"page": 1,
+					"entries": [
+						"当那头巨大的半兽人从屋顶一跃而起、跳上超巨型蓝龙的背脊时，他发出了一声令人血液凝固的战吼。当这头强大的敌人腾空而起时，他以近乎超自然的膂力紧攥住龙的脊刺。无论它如何翻腾扭转，都无法将这名战士甩下背来。当巨兽力竭之时，半兽人拔出巨剑，将它刺入巨兽的颈侧。待烟尘散尽，战士从那堆曾令王国胆寒的蓝色鳞甲残骸中凯旋而出。",
+						"当地精开始翻越城垛时，年轻的战士放空心灵，将自己交予战斗的嗜血渴望。她那柄沉重的巨斧斩下了第一个爬上城墙的地精的头颅，而在头颅落地之前，她已扼住了另一个地精的咽喉。当敌人哀求饶他那条贱命时，她发出一声低沉的咆哮，将他扔下了城墙。数分钟后，她回过神来，发现自己被那些胆敢进犯她先祖堡垒之人的尸骸所环绕。",
+						"一队衣衫褴褛的冒险者逃离正在崩塌的陵墓，为首的是一名魁梧的白龙裔。他能看见前方的出口，但直觉告诉他，只有自己快到能在穹顶塌陷之前逃出生天。他唤起血脉中先祖的龙怒，用肩膀扛住了门道的石楣。当最后一名同伴安全通过后，他发出一声胜利的咆哮，神庙整面前墙的重量在他身后轰然倒塌。",
+						"上述三个角色，便是被称为野蛮人的原初战士的缩影。他们凭借原初本能与狂暴之怒，一旦踏上战场，便化作不可阻挡的毁灭之力。",
+						{
+							"type": "entries",
+							"name": "原初本能",
+							"entries": [
+								"并非所有战士都从精锐军士或正规军事学堂那里习得战技。那些被称为野蛮人者，生来便在血脉中燃烧着对战斗的渴望。他们能够仅凭纯粹的本能，以致命之力挥舞战争兵器。这些狂野的战士在技艺上的欠缺，皆以纯粹的蛮力弥补。如同一头被逼入绝境的困兽，野蛮人会以近乎超自然的力量与凶性奋战。"
+							],
+							"ENG_name": "Primal Instincts"
+						},
+						{
+							"type": "entries",
+							"name": "脱缰狂暴",
+							"entries": [
+								"每一名野蛮人战场威能的源头，都是其灵魂深处那白热化的狂暴。这份狂暴如何显现，因每名原初战士而异。对某些野蛮人而言，它是一种难以遏制的嗜血渴望，唯有敌人尽陈于脚下方能平息；对另一些人而言，他们的狂暴是一种无情的恍惚状态，令他们得以无视一切会妨碍战斗的情绪、忠诚与创伤。",
+								"无论这份原初狂暴以何种形式显现，它都赋予所有野蛮人近乎超自然的力量，并让他们能够扛住足以撂倒寻常战士的打击。狂暴的野性之怒驱使野蛮人率先迎击最致命的敌人。许多野蛮人终其一生寻访更强的敌手，以试探自己狂暴的极限，唯有面对旗鼓相当者方能餍足。"
+							],
+							"ENG_name": "Unbridled Rage"
+						},
+						{
+							"type": "entries",
+							"name": "创造你的野蛮人",
+							"entries": [
+								"创造野蛮人时，你需要考虑的最重要问题，是他们的狂暴最初如何觉醒。当匪徒劫掠你的农庄时，嗜血的渴望是否曾席卷你？你的狂暴，是否源于对夺走你所爱之人的怪物的炽烈复仇之欲？抑或，你的狂暴只是对一位能与你匹敌的对手的渴望？",
+								"此外，还要考虑你的野蛮人的狂暴在战斗中如何显现。它是令你丧失自我的口吐白沫的兽性之怒？是部族长老世代相传、以保卫族人的古老恍惚？还是一种战斗中的超自然直觉，让你能预判敌人的弱点，并卸开足以杀死任何凡人的致命打击？"
+							],
+							"ENG_name": "Creating your Barbarian"
+						},
+						{
+							"type": "inset",
+							"name": "兼职与野蛮人",
+							"entries": [
+								"如果你的团体使用了{@variantrule 兼职|PHB}这一可选规则，以下便是你在选择野蛮人职业第一个等级时需要了解的内容。"
+							],
+							"ENG_name": "Multiclassing and the Barbarian"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Path of Blood & Iron",
+			"name": "血与铁道途",
+			"shortName": "血与铁",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"血与铁道途|替代野蛮人|LLAB|血与铁|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|血与铁|LLAB|5|LLAB",
+				"战斗狂热|替代野蛮人|LLAB|血与铁|LLAB|6|LLAB",
+				"神话铁匠|替代野蛮人|LLAB|血与铁|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|血与铁|LLAB|9|LLAB",
+				"狂野冲锋|替代野蛮人|LLAB|血与铁|LLAB|10|LLAB",
+				"钉刺反击|替代野蛮人|LLAB|血与铁|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of Sorcery",
+			"name": "术法道途",
+			"shortName": "术法",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"术法道途|替代野蛮人|LLAB|术法|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|术法|LLAB|5|LLAB",
+				"奥术干扰|替代野蛮人|LLAB|术法|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|术法|LLAB|9|LLAB",
+				"不稳术法|替代野蛮人|LLAB|术法|LLAB|10|LLAB",
+				"混沌化身|替代野蛮人|LLAB|术法|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of the Ancestors",
+			"name": "先祖道途",
+			"shortName": "先祖",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"先祖道途|替代野蛮人|LLAB|先祖|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|先祖|LLAB|5|LLAB",
+				"幽魂之盾|替代野蛮人|LLAB|先祖|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|先祖|LLAB|9|LLAB",
+				"先祖神谕|替代野蛮人|LLAB|先祖|LLAB|10|LLAB",
+				"仇魂先祖|替代野蛮人|LLAB|先祖|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of the Beast Heart",
+			"name": "野兽之心道途",
+			"shortName": "野兽之心",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"野兽之心道途|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|野兽之心|LLAB|5|LLAB",
+				"兽性技能|替代野蛮人|LLAB|野兽之心|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|野兽之心|LLAB|9|LLAB",
+				"兽族议会|替代野蛮人|LLAB|野兽之心|LLAB|10|LLAB",
+				"荒野觉察|替代野蛮人|LLAB|野兽之心|LLAB|10|LLAB",
+				"兽性勇士|替代野蛮人|LLAB|野兽之心|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of the Berserker",
+			"name": "狂战士道途",
+			"shortName": "狂战士",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"狂战士道途|替代野蛮人|LLAB|狂战士|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|狂战士|LLAB|5|LLAB",
+				"无我狂暴|替代野蛮人|LLAB|狂战士|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|狂战士|LLAB|9|LLAB",
+				"威慑之姿|替代野蛮人|LLAB|狂战士|LLAB|10|LLAB",
+				"无双狂怒|替代野蛮人|LLAB|狂战士|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of the Brute",
+			"name": "暴徒道途",
+			"shortName": "暴徒",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"暴徒道途|替代野蛮人|LLAB|暴徒|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|暴徒|LLAB|5|LLAB",
+				"残暴打击|替代野蛮人|LLAB|暴徒|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|暴徒|LLAB|9|LLAB",
+				"铁腕掌控|替代野蛮人|LLAB|暴徒|LLAB|10|LLAB",
+				"蛮横决心|替代野蛮人|LLAB|暴徒|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of the Champion",
+			"name": "勇士道途",
+			"shortName": "勇士",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Fighting Style",
+					"name": "战斗风格",
+					"featureType": [
+						"FS:AF"
+					],
+					"progression": {
+						"3": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"勇士道途|替代野蛮人|LLAB|勇士|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|勇士|LLAB|5|LLAB",
+				"强力打击|替代野蛮人|LLAB|勇士|LLAB|6|LLAB",
+				"武者纪律|替代野蛮人|LLAB|勇士|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|勇士|LLAB|9|LLAB",
+				"重击振奋|替代野蛮人|LLAB|勇士|LLAB|10|LLAB",
+				"战斗楷模|替代野蛮人|LLAB|勇士|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of the Deep",
+			"name": "深海道途",
+			"shortName": "深海",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"深海道途|替代野蛮人|LLAB|深海|LLABE|3|LLABE",
+				"原型战技|替代野蛮人|LLAB|深海|LLABE|5",
+				"现实扭曲|替代野蛮人|LLAB|深海|LLABE|6|LLABE",
+				"原型战技|替代野蛮人|LLAB|深海|LLABE|9",
+				"强化触须|替代野蛮人|LLAB|深海|LLABE|10|LLABE",
+				"深渊恐怖|替代野蛮人|LLAB|深海|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Elemental Chaos",
+			"name": "元素混沌道途",
+			"shortName": "元素混沌",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"元素混沌道途|替代野蛮人|LLAB|元素混沌|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|元素混沌|LLAB|5|LLAB",
+				"掌控混沌|替代野蛮人|LLAB|元素混沌|LLAB|6|LLAB",
+				"元素旋风|替代野蛮人|LLAB|元素混沌|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|元素混沌|LLAB|9|LLAB",
+				"高等旋风|替代野蛮人|LLAB|元素混沌|LLAB|10|LLAB",
+				"太古毁灭|替代野蛮人|LLAB|元素混沌|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of the Favored",
+			"name": "天眷道途",
+			"shortName": "天眷",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"天眷道途|替代野蛮人|LLAB|天眷|LLABE|3|LLABE",
+				"原型战技|替代野蛮人|LLAB|天眷|LLABE|5",
+				"荣耀事业|替代野蛮人|LLAB|天眷|LLABE|6|LLABE",
+				"不倦英雄|替代野蛮人|LLAB|天眷|LLABE|6|LLABE",
+				"原型战技|替代野蛮人|LLAB|天眷|LLABE|9",
+				"奇迹成功|替代野蛮人|LLAB|天眷|LLABE|10|LLABE",
+				"传奇之力|替代野蛮人|LLAB|天眷|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Inferno",
+			"name": "炼狱道途",
+			"shortName": "炼狱",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"炼狱道途|替代野蛮人|LLAB|炼狱|LLABE|3|LLABE",
+				"原型战技|替代野蛮人|LLAB|炼狱|LLABE|5",
+				"魔性嗜血|替代野蛮人|LLAB|炼狱|LLABE|6|LLABE",
+				"原型战技|替代野蛮人|LLAB|炼狱|LLABE|9",
+				"狱火之怒|替代野蛮人|LLAB|炼狱|LLABE|10|LLABE",
+				"混沌滔天|替代野蛮人|LLAB|炼狱|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Lycan",
+			"name": "兽化人道途",
+			"shortName": "兽化人",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"兽化人道途|替代野蛮人|LLAB|兽化人|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|兽化人|LLAB|5|LLAB",
+				"野性之力|替代野蛮人|LLAB|兽化人|LLAB|6|LLAB",
+				"凶蛮打击|替代野蛮人|LLAB|兽化人|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|兽化人|LLAB|9|LLAB",
+				"感染之怒|替代野蛮人|LLAB|兽化人|LLAB|10|LLAB",
+				"原初咆哮|替代野蛮人|LLAB|兽化人|LLAB|14|LLAB"
+			]
+		},
+		{
+			"ENG_name": "Path of the Mutant",
+			"name": "变异者道途",
+			"shortName": "变异者",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"变异者道途|替代野蛮人|LLAB|变异者|LLABE|3|LLABE",
+				"原型战技|替代野蛮人|LLAB|变异者|LLABE|5",
+				"持久变异|替代野蛮人|LLAB|变异者|LLABE|6|LLABE",
+				"原型战技|替代野蛮人|LLAB|变异者|LLABE|9",
+				"剧毒打击|替代野蛮人|LLAB|变异者|LLABE|10|LLABE",
+				"急速变异|替代野蛮人|LLAB|变异者|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Packleader",
+			"name": "兽群领袖道途",
+			"shortName": "兽群领袖",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"兽群领袖道途|替代野蛮人|LLAB|兽群领袖|LLABE|3|LLABE",
+				"原型战技|替代野蛮人|LLAB|兽群领袖|LLABE|5",
+				"野性狂怒|替代野蛮人|LLAB|兽群领袖|LLABE|6|LLABE",
+				"原型战技|替代野蛮人|LLAB|兽群领袖|LLABE|9",
+				"协同突击|替代野蛮人|LLAB|兽群领袖|LLABE|10|LLABE",
+				"太古伙伴|替代野蛮人|LLAB|兽群领袖|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Reaver",
+			"name": "掠夺者道途",
+			"shortName": "掠夺者",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"掠夺者道途|替代野蛮人|LLAB|掠夺者|LLABE|3|LLABE",
+				"原型战技|替代野蛮人|LLAB|掠夺者|LLABE|5",
+				"恢复狂暴|替代野蛮人|LLAB|掠夺者|LLABE|6|LLABE",
+				"原型战技|替代野蛮人|LLAB|掠夺者|LLABE|9",
+				"势不可挡的战士|替代野蛮人|LLAB|掠夺者|LLABE|10|LLABE",
+				"钢铁风暴|替代野蛮人|LLAB|掠夺者|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Titan",
+			"name": "泰坦道途",
+			"shortName": "泰坦",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"泰坦道途|替代野蛮人|LLAB|泰坦|LLABE|3|LLABE",
+				"原型战技|替代野蛮人|LLAB|泰坦|LLABE|5",
+				"远古活力|替代野蛮人|LLAB|泰坦|LLABE|6|LLABE",
+				"原型战技|替代野蛮人|LLAB|泰坦|LLABE|9",
+				"觉醒血统|替代野蛮人|LLAB|泰坦|LLABE|10|LLABE",
+				"泰坦之怒|替代野蛮人|LLAB|泰坦|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Warden",
+			"name": "守望者道途",
+			"shortName": "守望者",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"spellcastingAbility": "wis",
+			"subclassSpells": [
+				"召气|llspell",
+				"控火术（变体）|llspell",
+				"创造篝火|xge",
+				"德鲁伊伎俩",
+				"霜噬|xge",
+				"神导术（变体）|llspell",
+				"魔石术|xge",
+				"塑土术（变体）|llspell",
+				"原初蛮击（变体）|llspell",
+				"操水术（变体）|llspell",
+				"橡棍术",
+				"荆棘之鞭",
+				"鸣雷破|xge",
+				"吸收元素|xge",
+				"黯冰狱铠",
+				"强令对决",
+				"疗伤术",
+				"地颤|xge",
+				"诱捕打击（变体）|llspell",
+				"纠缠术",
+				"云雾术",
+				"炼狱叱喝",
+				"致伤术",
+				"炽焰斩（变体）|llspell",
+				"雷鸣斩（变体）|llspell",
+				"雷鸣波",
+				"龙卷尘暴|xge",
+				"地缚|xge",
+				"元素之刃|llspell",
+				"造风术",
+				"魔化武器（变体）|llspell",
+				"粉碎音波",
+				"荆棘丛生",
+				"守护之风|xge",
+				"元素武器",
+				"植物滋长",
+				"擒抱藤（变体）|llspell",
+				"雪雨暴",
+				"雷霆步",
+				"潮涌",
+				"沙墙术|xge",
+				"水墙术|xge",
+				"风墙术",
+				"操控水体",
+				"地之骨（变体）|llspell",
+				"火焰护盾",
+				"自然守卫|xge",
+				"冰风暴",
+				"惊惧斩（变体）|llspell",
+				"风暴法球"
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Path of the Warden",
+							"name": "守望者道途",
+							"source": "LLABE"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知法术|spells|subclass=替代野蛮人：守望者（LLABE）}",
+						"法术位",
+						"法术环阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							1,
+							"{@filter 1环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							2,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							4,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							4,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							5,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							5,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							6,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							6,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							7,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							7,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							8,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							8,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							9,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							9,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							10,
+							2,
+							"{@filter 4环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						],
+						[
+							10,
+							2,
+							"{@filter 4环|spells|level=1|subclass=替代野蛮人：守望者（LLABE）}"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"守望者道途|替代野蛮人|LLAB|守望者|LLABE|3|LLABE",
+				"鲁莽施法|替代野蛮人|LLAB|守望者|LLABE|6|LLABE",
+				"战争魔法|替代野蛮人|LLAB|守望者|LLABE|6|LLABE",
+				"上古守御|替代野蛮人|LLAB|守望者|LLABE|10|LLABE",
+				"远古守望者|替代野蛮人|LLAB|守望者|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Wyrmblood",
+			"name": "龙血道途",
+			"shortName": "龙血",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"龙血道途|替代野蛮人|LLAB|龙血|LLABE|3|LLABE",
+				"原型战技|替代野蛮人|LLAB|龙血|LLABE|5",
+				"暴君韧性|替代野蛮人|LLAB|龙血|LLABE|6|LLABE",
+				"原型战技|替代野蛮人|LLAB|龙血|LLABE|9",
+				"龙之吐息|替代野蛮人|LLAB|龙血|LLABE|10|LLABE",
+				"龙翼|替代野蛮人|LLAB|龙血|LLABE|14|LLABE"
+			]
+		},
+		{
+			"ENG_name": "Path of the Zealot",
+			"name": "狂热者道途",
+			"shortName": "狂热者",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassFeatures": [
+				"狂热者道途|替代野蛮人|LLAB|狂热者|LLAB|3|LLAB",
+				"原型战技|替代野蛮人|LLAB|狂热者|LLAB|5|LLAB",
+				"坚定信仰|替代野蛮人|LLAB|狂热者|LLAB|6|LLAB",
+				"原型战技|替代野蛮人|LLAB|狂热者|LLAB|9|LLAB",
+				"狂热激情|替代野蛮人|LLAB|狂热者|LLAB|10|LLAB",
+				"不朽狂热者|替代野蛮人|LLAB|狂热者|LLAB|14|LLAB"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Rage",
+			"name": "狂暴",
+			"source": "LLAB",
+			"page": 1,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 1,
+			"entries": [
+				"你带着不加约束的原初凶性作战。从1级起，若你未穿着重甲，你可以在自己的回合以一个附赠动作进入狂暴。处于狂暴状态时，你同时获得下列益处与缺陷：",
+				{
+					"type": "list",
+					"items": [
+						"你的力量豁免检定，以及任何使用你的力量或体质进行的属性检定具有优势。",
+						"每当你以使用力量的武器攻击命中时，你造成额外的1d4伤害。在本职业的特定等级，此额外伤害会提升，直至与上方野蛮人表格中\"战技骰\"栏一致。",
+						"你抵抗所有钝击、穿刺和挥砍伤害。",
+						"你无法施法，也无法专注法术或效应。"
+					]
+				},
+				"你的狂暴持续到你下一回合的结束，但若你陷入昏迷状态，则提前结束。若你攻击一个敌对生物、受到伤害、进行一次力量检定，或以附赠动作延长狂暴，则你的狂暴延长至你下一回合的结束。你至多能维持狂暴10分钟。",
+				"你可以依野蛮人表格中你等级对应的\"狂暴次数\"栏所示次数进入狂暴。完成一次短休后，你恢复一次狂暴使用次数；完成一次长休后，你恢复所有狂暴使用次数。"
+			],
+			"foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp"
+		},
+		{
+			"ENG_name": "Unarmored Defense",
+			"name": "无甲防御",
+			"source": "LLAB",
+			"page": 1,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 1,
+			"entries": [
+				"同样在1级，只要你不穿着任何护甲，你的AC便等于10＋你的敏捷调整值＋你的体质调整值。你可以从{@item 盾牌|PHB}与本特性同时获益。"
+			],
+			"foundryImg": "icons/equipment/chest/vest-cloth-tattered-orange.webp"
+		},
+		{
+			"ENG_name": "Exploit Dice",
+			"name": "战技骰",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 2,
+			"entries": [
+				"野蛮人表格展示了你拥有多少战技骰，用于施展你所知的战技。大多数战技需要你消耗这些骰子才能使用。每次攻击、属性检定或豁免检定你只能使用一个战技，完成一次短休或长休后，你恢复所有已消耗的战技骰。",
+				"你的战技骰起始为d4，并随你在此职业中获得等级而增大，如野蛮人表格所示。",
+				{
+					"type": "refClassFeature",
+					"classFeature": "凶蛮技能|替代野蛮人|LLAB|2"
+				}
+			],
+			"foundryImg": "icons/sundries/gaming/dice-pair-white-green.webp"
+		},
+		{
+			"ENG_name": "Reckless Attack",
+			"name": "鲁莽攻击",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 2,
+			"entries": [
+				"从2级起，每当你以力量进行攻击时，你可以将谨慎抛诸脑后，发动鲁莽攻击。若你如此做，则直至你下一回合开始前，你基于力量的攻击检定具有优势，但针对你的所有攻击也同样具有优势，直至你下一回合开始。"
+			],
+			"foundryImg": "icons/skills/melee/blade-tips-triple-bent-white.webp"
+		},
+		{
+			"ENG_name": "Savage Exploits",
+			"name": "凶蛮战技",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 2,
+			"entries": [
+				"同样在2级，你对战斗的渴望解锁了凶蛮能力，无论在战场内外都能强化你的武艺。",
+				{
+					"type": "refClassFeature",
+					"classFeature": "战技骰|替代野蛮人|LLAB|2"
+				},
+				{
+					"type": "entries",
+					"name": "已知战技",
+					"page": 3,
+					"entries": [
+						"在2级，你从本职业末尾的列表中习得两个凶蛮战技。野蛮人表格的\"已知战技\"栏展示了你何时习得更多战技。要习得一个战技，你必须满足它可能具有的任何先决条件，例如最低属性值或野蛮人等级。",
+						"你每次获得野蛮人等级时，都可以将你已知的一个凶蛮战技替换为另一个自选战技，只要你满足该战技的先决条件。"
+					],
+					"ENG_name": "Exploits Known"
+				},
+				{
+					"type": "entries",
+					"name": "豁免检定",
+					"page": 3,
+					"entries": [
+						"如果你的某个战技要求一个生物进行豁免检定，该战技的豁免DC计算如下：",
+						{
+							"type": "abilityDc",
+							"name": "战技豁免DC",
+							"attributes": [
+								"str",
+								"dex"
+							],
+							"ENG_name": "Exploit save DC"
+						}
+					],
+					"ENG_name": "Saving Throws"
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Savage Skill",
+			"name": "凶蛮技能",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 2,
+			"entries": [
+				"原初本能磨砺了你的技艺。每当你以野蛮人技能列表中的一项技能进行属性检定时，你可以消耗一枚战技骰并将其加到你的掷骰结果上。你可以在掷骰之后、但在得知成功或失败之前如此做。"
+			],
+			"foundryImg": "icons/skills/trades/smithing-tongs-metal-red.webp"
+		},
+		{
+			"ENG_name": "Primal Path",
+			"name": "原初道途",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 3,
+			"entries": [
+				"在3级，你选择最能体现你的狂暴如何显现的原初道途：狂战士道途、暴徒道途、勇士道途，或野兽之心道途。",
+				"你的原初道途在3级赐予你特性，并在你达到此职业的6级、10级和14级时再次赐予特性。",
+				{
+					"type": "entries",
+					"name": "道途战技",
+					"page": 3,
+					"entries": [
+						"每条原初道途都附有一份原初战技列表，该道途的每名战士都会在其描述所注明的野蛮人等级习得这些战技。这些战技不计入你的已知战技总数，且在你于此职业获得等级时不能被替换。即使你不满足某个原初战技的先决条件，你也会习得它。"
+					],
+					"ENG_name": "Path Exploits"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 4,
+			"entries": [
+				"当你达到4级，以及8级、12级、16级和19级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。如常，你无法借此将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Danger Sense",
+			"name": "危机感应",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你血脉中的狂怒令你警觉于危险。从5级起，你的先攻掷骰具有优势，并且每当你掷先攻时，你都可以选择进入狂暴。",
+				"此外，若你在掷先攻时处于措手不及状态，只要你在掷先攻的同时进入狂暴，便可以在战斗的第一轮正常行动。"
+			],
+			"foundryImg": "icons/environment/traps/pressure-plate.webp"
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"从5级起，每当你在自己的回合采取攻击动作时，你可以攻击两次而非一次。此外，若你在狂暴时以动作疾步或撤离，你可以以一个附赠动作进行一次武器攻击。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Primal Path",
+			"name": "原初道途",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 6,
+			"entries": [
+				"在6级，你从你的原初道途获得一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Feral Instinct",
+			"name": "野性直觉",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 7,
+			"entries": [
+				"原初本能磨锐了你的感官。从7级起，当你对一个你能看见的效应（如陷阱或法术）进行敏捷豁免检定时，你的掷骰具有优势。若你在进行该豁免检定时处于目盲、耳聋或失能状态，则无法获得此益处。",
+				"此外，除非你陷入昏迷或选择结束狂暴，你的狂暴总会持续其最大时长。"
+			],
+			"foundryImg": "icons/creatures/eyes/lizard-single-slit-green.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。如常，你无法借此将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Improved Critical",
+			"name": "精通重击",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"原初狂怒增强了你打击的威力。从9级起，你基于力量的武器攻击的攻击掷骰在d20掷出19或20时造成重击。",
+				"在特定野蛮人等级，你的重击范围会扩大：13级时，你在掷出18\u201320时造成重击；17级时，你在掷出17\u201320时造成重击。"
+			],
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp"
+		},
+		{
+			"ENG_name": "Primal Path",
+			"name": "原初道途",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 10,
+			"entries": [
+				"在10级，你从你的原初道途获得一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Critical Strike",
+			"name": "致命打击",
+			"source": "LLAB",
+			"page": 4,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 11,
+			"entries": [
+				"你无情地利用敌人的弱点。从11级起，当你在狂暴时以一次武器攻击造成重击，你可以以此攻击的一部分使用一个你已知的凶蛮战技，而无需消耗战技骰。"
+			],
+			"foundryImg": "icons/skills/melee/strike-axe-energy-pink.webp"
+		},
+		{
+			"ENG_name": "Unstoppable",
+			"name": "势不可挡",
+			"source": "LLAB",
+			"page": 4,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 11,
+			"entries": [
+				"你狂暴的白热强度愈燃愈炽。同样在11级，若你在狂暴时生命值降至0，但你并未被直接杀死，你可以选择结束狂暴，改为生命值降至1点。",
+				"此外，若你在狂暴时进行一次智力、感知或魅力豁免检定，你的掷骰获得等于你体质调整值的加值（最低＋1）。"
+			],
+			"foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。如常，你无法借此将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Primal Path",
+			"name": "原初道途",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 14,
+			"entries": [
+				"在14级，你从你的原初道途获得一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Persistent Rage",
+			"name": "持久狂暴",
+			"source": "LLAB",
+			"page": 4,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 15,
+			"entries": [
+				"你的狂暴是一团永不熄灭的闷燃之火。从15级起，你的狂暴时长增加至1小时。"
+			],
+			"foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。如常，你无法借此将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Indomitable Might",
+			"name": "不屈勇武",
+			"source": "LLAB",
+			"page": 4,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 18,
+			"entries": [
+				"你传奇般的力量与耐力足以比肩神话英雄。从18级起，若你进行一次力量或体质检定且掷骰结果低于你的力量值，你可以用你的力量值替代该结果。"
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAB",
+			"page": 3,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。如常，你无法借此将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Primal Champion",
+			"name": "原初斗士",
+			"source": "LLAB",
+			"page": 4,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 20,
+			"entries": [
+				"你体现了原初荒野的原始力量，并已超越凡人的身体极限。在20级，你的力量值和体质值各提升4点，且这两项属性值的上限变为24。"
+			],
+			"foundryImg": "icons/magic/nature/wolf-paw-glow-large-orange.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Rage",
+			"name": "狂暴",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 1,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "@scale.alternate-barbarian.rage"
+			}
+		},
+		{
+			"ENG_name": "Exploit Dice",
+			"name": "战技骰",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 2,
+			"system": {
+				"uses.max": "@flags.ll.exploit.number"
+			},
+			"activities": [
+				{
+					"ENG_name": "Roll",
+					"activation.type": "",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"roll.formula": "d@flags.ll.exploit.faces",
+					"name": "掷骰",
+					"type": "utility"
+				}
+			]
+		},
+		{
+			"ENG_name": "Savage Exploits",
+			"name": "凶蛮战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 2,
+			"effects": [
+				{
+					"ENG_name": "Barbarian Exploits",
+					"name": "野蛮人战技",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "UPGRADE",
+							"value": "@scale.alternate-barbarian.exploit.number"
+						},
+						{
+							"key": "flags.ll.exploit.faces",
+							"mode": "UPGRADE",
+							"value": "@scale.alternate-barbarian.exploit.faces"
+						},
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + max(@abilities.str.mod, @abilities.dex.mod)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Savage Skill",
+			"name": "凶蛮技能",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"level": 2,
+			"activities": [
+				{
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Exploit Dice",
+										"name": "战技骰"
+									}
+								}
+							}
+						]
+					},
+					"roll": {
+						"ENG_name": "Exploit Die",
+						"formula": "d@flags.ll.exploit.faces",
+						"name": "战技骰",
+						"visible": true
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Path of the Ancestors",
+			"name": "先祖道途",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"并非所有野蛮人都是沉溺嗜血的莽夫。有些野蛮人走上的是一条灵性联结之道。行走先祖道途者，与早已离开凡间的精魄缔结纽带。他们中有人守望先祖的陵墓，有人导引传奇战士的力量，还有人向任意一方乡土精魄敞开自身。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "先祖战技|替代野蛮人|LLAB|先祖|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "先祖智识|替代野蛮人|LLAB|先祖|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "幽魂武者|替代野蛮人|LLAB|先祖|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ancestral Exploits",
+			"name": "先祖战技",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 备战|LLExploits}, {@optfeature 英勇坚毅|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 遏制重击|LLExploits}, {@optfeature 强力打击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 神话韧劲|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "备战|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "英勇坚毅|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Ancestral Knowledge",
+			"name": "先祖智识",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"以一个动作，你可以召唤先祖的逝者精魄，借予你他们集体的知识。持续10分钟，你所有智力、感知和魅力属性检定获得等于你一枚战技骰的加值。若你进入狂暴或陷入失能状态，本特性提前结束。",
+				"每次长休之间，你可以免费以此方式召唤先祖一次。此后，你必须消耗一次狂暴使用次数才能再次使用本特性。"
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-symbol-eye-brown.webp"
+		},
+		{
+			"ENG_name": "Spectral Warriors",
+			"name": "幽魂武者",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你先祖的精魄应你召唤，前来助战。处于狂暴状态时，幽魂武者环绕于你所在的空间回旋，赐予下列益处：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "先祖打击",
+							"entry": "只要幽魂武者留在你的空间内，你的狂暴伤害加值与你的凶蛮战技所造成的伤害都变为光耀伤害。",
+							"ENG_name": "Ancestral Strikes"
+						},
+						{
+							"type": "item",
+							"name": "灵体鞭笞",
+							"entry": "当你以近战攻击命中一个生物时，你可以命令幽魂武者将其围住。围住期间，它对除你以外的生物的攻击检定具有劣势。若它以攻击命中你以外的生物，则该生物对所受伤害具有抗性。此效应持续到你下一回合开始，但若你将幽魂武者指向另一个目标，或以一个附赠动作将它们召回你的空间，则提前结束。",
+							"ENG_name": "Ethereal Scourge"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/death/weapon-sword-skull-purple.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "遏制重击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Spectral Shield",
+			"name": "幽魂之盾",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"处于狂暴状态时，你可以呼唤先祖精魄保护你的盟友。当你看见30尺内的另一个生物受到伤害时，你可以用你的反应命令幽魂武者前去拦截。幽魂武者离开当前空间飞向目标，将其将受的伤害降低三倍于你一枚战技骰的数值。",
+				"此次反应结束后，幽魂武者回到你身边。"
+			],
+			"foundryImg": "icons/magic/death/bones-crossed-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "神话韧劲|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Ancestral Oracle",
+			"name": "先祖神谕",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你与精魄世界的神秘联结，使你得以探取未见或将临之事的知识。在使用先祖智识期间，你可以施放{@spell 鹰眼术}或{@spell 通神术}，无需消耗法术位，也无需法术成分。一旦该法术结束，先祖智识的益处随之结束。",
+				"以此方式施放时，鹰眼术会召来一个隐形精魄，通神术则咨询与你缔结纽带的精魄。"
+			],
+			"foundryImg": "icons/magic/perception/orb-crystal-ball-scrying.webp"
+		},
+		{
+			"ENG_name": "Vengeful Ancestors",
+			"name": "仇魂先祖",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "先祖",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你狂暴的压倒性力量，将幽魂武者生前力量的一部分灌注其中。当你使用幽魂之盾时，攻击者受到光耀伤害，数值等于你的幽魂武者所拦截的伤害。"
+			],
+			"foundryImg": "icons/magic/death/undead-ghost-strike-white.webp"
+		},
+		{
+			"ENG_name": "Path of the Beast Heart",
+			"name": "野兽之心道途",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"追随野兽之心道途的野蛮人，寻求与强大的自然精魄相契。这些精魄以野兽之形现身，赐予野蛮人原初图腾，以灵性魔法增强他们的狂暴。作为回应，野兽之心者们以图腾兽灵的象征图案装点自己的身体、武器与护甲。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "野兽之心战技|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兽性精魄|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "荒野共情|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Beast Heart Exploits",
+			"name": "野兽之心战技",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 强力跳跃|LLExploits}, {@optfeature 强力突刺|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 遏制重击|LLExploits}, {@optfeature 不动如山|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 凶蛮抗争|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力突刺|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力跳跃|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Bestial Spirits",
+			"name": "兽性精魄",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你与下列兽性精魄之一缔结纽带。处于狂暴状态时，你获得你的兽性精魄的益处：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "熊|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "鹰|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "狼|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "老虎|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "赤鹿|替代野蛮人|LLAB|野兽之心|LLAB|3|LLAB"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wild Empathy",
+			"name": "荒野共情",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你与荒野的灵性联结，使你能够以言语与野兽交流并理解它们。不过，当你与野兽交谈时，它的认知与回忆知识的能力仍受其智力值所限。"
+			],
+			"foundryImg": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp"
+		},
+		{
+			"ENG_name": "Bear",
+			"name": "熊",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 3,
+			"entries": [
+				"熊的坚韧精魄赐予你除力场、心灵和光耀伤害之外所有伤害的抗性。"
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Eagle",
+			"name": "鹰",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 3,
+			"entries": [
+				"鹰的凶猛精魄赐予你速度。以一个附赠动作\u2014\u2014包括用于进入狂暴的那个附赠动作\u2014\u2014你可以获得疾步和撤离动作的益处。"
+			],
+			"foundryImg": "icons/creatures/birds/corvid-flying-wings-purple.webp"
+		},
+		{
+			"ENG_name": "Elk",
+			"name": "赤鹿",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 3,
+			"entries": [
+				"赤鹿的高贵精魄使你的速度提高15尺，并且你可以无视困难地形的效应。"
+			],
+			"foundryImg": "icons/creatures/mammals/elk-moose-marked-green.webp"
+		},
+		{
+			"ENG_name": "Tiger",
+			"name": "老虎",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 3,
+			"entries": [
+				"老虎的无情精魄让你可以随意使用强力跳跃战技，而无需消耗战技骰。"
+			],
+			"foundryImg": "icons/creatures/mammals/deer-movement-leap-green.webp"
+		},
+		{
+			"ENG_name": "Wolf",
+			"name": "狼",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 3,
+			"entries": [
+				"狼的狡黠精魄使你选择的生物，对距你10尺内的敌对生物进行的所有近战攻击检定具有优势。"
+			],
+			"foundryImg": "icons/creatures/abilities/wolf-howl-moon-purple.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "遏制重击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "不动如山|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Bestial Skill",
+			"name": "兽性技能",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你与下述列表中的第二个兽性精魄缔结纽带。你的两项与兽性精魄关联的技能，获得等于你的体质调整值的加值（最低＋1）：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "象|替代野蛮人|LLAB|野兽之心|LLAB|6|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "猫头鹰|替代野蛮人|LLAB|野兽之心|LLAB|6|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "豹|替代野蛮人|LLAB|野兽之心|LLAB|6|LLAB"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Elephant",
+			"name": "象",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 3,
+			"entries": [
+				"象的精魄借予你它的智慧与力量，增强你的运动和洞悉检定。"
+			],
+			"foundryImg": "icons/magic/nature/root-vine-wood-blue.webp"
+		},
+		{
+			"ENG_name": "Owl",
+			"name": "猫头鹰",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 3,
+			"entries": [
+				"猫头鹰的精魄赐予你它的目力与直觉，增强你的调查和察觉检定。"
+			],
+			"foundryImg": "icons/creatures/birds/raptor-owl-flying-moon.webp"
+		},
+		{
+			"ENG_name": "Panther",
+			"name": "豹",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 3,
+			"entries": [
+				"豹的精魄赐予你它的狡黠，增强你的隐匿和生存检定。"
+			],
+			"foundryImg": "icons/creatures/abilities/cougar-pounce-stalk-black.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "凶蛮抗争|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Council of Beasts",
+			"name": "兽族议会",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你与荒野自然精魄的联结愈发深厚。你可以进行一场1小时的仪式（可作为短休或长休的一部分进行），将你的一个兽性精魄替换为同列表中另一个自选的兽性精魄。"
+			],
+			"foundryImg": "icons/magic/time/arrows-circling-pink.webp"
+		},
+		{
+			"ENG_name": "Wild Awareness",
+			"name": "荒野觉察",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的神秘能力赐予你对周遭环境的本能认知。每当你完成一次短休或长休，你获得{@spell 问道自然}法术的益处。"
+			],
+			"foundryImg": "icons/magic/nature/leaf-juggle-humanoid-green.webp"
+		},
+		{
+			"ENG_name": "Bestial Champion",
+			"name": "兽性勇士",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你与下述选项中的最后一个兽性精魄缔结纽带。处于狂暴状态时，你获得这最终精魄的益处：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "狮子|替代野蛮人|LLAB|野兽之心|LLAB|14|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "隼|替代野蛮人|LLAB|野兽之心|LLAB|14|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "犀牛|替代野蛮人|LLAB|野兽之心|LLAB|14|LLAB"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Falcon",
+			"name": "隼",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"隼的精魄借予你它迅捷的翅膀。你获得等于你步行速度的飞行速度。"
+			],
+			"foundryImg": "icons/creatures/abilities/wings-birdlike-blue.webp"
+		},
+		{
+			"ENG_name": "Lion",
+			"name": "狮子",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"狮子的精魄赐予你它威严的气度。距你5尺内的敌对生物，对除你以外目标的所有攻击具有劣势。"
+			],
+			"foundryImg": "icons/creatures/abilities/paw-print-orange.webp"
+		},
+		{
+			"ENG_name": "Rhino",
+			"name": "犀牛",
+			"source": "LLAB",
+			"page": 7,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "野兽之心",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"犀牛的精魄借予你它的力量。当你以近战攻击命中一个与你体型相同或更小的生物时，它必须进行一次力量豁免检定，失败则倒地。"
+			],
+			"foundryImg": "icons/creatures/mammals/ox-buffalo-horned-green.webp"
+		},
+		{
+			"ENG_name": "Path of the Berserker",
+			"name": "狂战士道途",
+			"source": "LLAB",
+			"page": 4,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂战士",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"被称为狂战士的凶蛮战士，为战场的混沌而生。对这些野蛮人而言，狂暴是他们暴虐与破坏之欲的显现。狂战士常现身于战线的最前沿，唯有舍生忘死地与敌手较量力量时，他们才感到自己真正地活着。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狂战士战技|替代野蛮人|LLAB|狂战士|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狂怒|替代野蛮人|LLAB|狂战士|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Berserker Exploits",
+			"name": "狂战士战技",
+			"source": "LLAB",
+			"page": 4,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂战士",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 庄严存形|LLExploits}, {@optfeature 凶蛮反击|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 嗜血重击|LLExploits}, {@optfeature 威吓怒吼|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 胜利咆哮|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "庄严存形|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "凶蛮反击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Frenzy",
+			"name": "狂怒",
+			"source": "LLAB",
+			"page": 4,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂战士",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在战场上的狂怒甚至凌驾于其他野蛮人之上，是战场上一幅真正令人生畏的景象。在你的每个回合中，你第一次以鲁莽攻击命中一个生物时，你造成等于两倍于你一枚战技骰的额外伤害。",
+				"你对战斗之混沌与鲜血的渴望推动着你。处于狂暴状态时，你的速度提高10尺。"
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂战士",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "嗜血重击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "威吓怒吼|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Mindless Rage",
+			"name": "无我狂暴",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂战士",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的狂暴已炽烈到令你迷失于它的原初掌控之中。狂暴期间，你无法被魅惑或恐慌。若你在进入狂暴时已被魅惑或恐慌，该效应在狂暴持续期间被中止。",
+				"此外，狂暴期间你可以忽略你所带有的前五级力竭的效应。"
+			],
+			"foundryImg": "icons/magic/fire/flame-burning-skull-orange.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂战士",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "胜利咆哮|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Intimidating Presence",
+			"name": "威慑之姿",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂战士",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你内心不加约束的凶性，在敌人心中唤起原初的恐惧。你可以随意使用威吓怒吼战技，无需消耗战技骰，次数等于你的体质调整值（最低一次）；完成一次长休后，你恢复本特性的所有已耗使用次数。",
+				"此外，若你以近战武器攻击命中一个生物，直至你下一回合结束前，你迫使其进行的任何抵抗恐慌的豁免检定都具有劣势。"
+			],
+			"foundryImg": "icons/creatures/magical/construct-iron-stomping-yellow.webp"
+		},
+		{
+			"ENG_name": "Unrivaled Fury",
+			"name": "无双狂怒",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂战士",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"当你狂暴时，你已不再是你自己，任由体内翻腾的太古暴虐之旋风支配。你可以随意使用凶蛮反击战技，无需消耗战技骰。",
+				"你还可以在战斗中的每个回合（而非仅你自己的回合）应用一次你的狂怒额外伤害。"
+			],
+			"foundryImg": "icons/skills/melee/strike-axe-red.webp"
+		},
+		{
+			"ENG_name": "Path of Blood & Iron",
+			"name": "血与铁道途",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"沉醉于战场的混沌，这条原初道途的野蛮人身披标志性的钉刺甲，横冲直撞地杀入战团。他们学会在身着这身标志性护甲的同时导引狂暴，这些凶蛮战士战斗起来仿佛全然不顾自身性命，只求战斗的酣畅。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "血与铁战技|替代野蛮人|LLAB|血与铁|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战士铁匠|替代野蛮人|LLAB|血与铁|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "钉刺甲|替代野蛮人|LLAB|血与铁|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood & Iron Exploits",
+			"name": "血与铁战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 碾压之握|LLExploits}, {@optfeature 强力跳跃|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 荣誉决斗|LLExploits}, {@optfeature 嗜血重击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 凶蛮抗争|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碾压之握|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力跳跃|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Spiked Armor",
+			"name": "钉刺甲",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你以两样东西闻名：你在战场上的凶蛮，以及你标志性的钉刺甲，其规则如下：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "打造钉刺甲",
+							"entry": "在1小时的时间里（可在短休或长休期间进行），你可以使用铁匠工具为你持有的一套非魔法护甲加装尖刺，将其改造为钉刺甲，仅你本人可以使用。",
+							"ENG_name": "Crafting Spiked Armor"
+						},
+						{
+							"type": "item",
+							"name": "属性",
+							"entry": "身穿钉刺甲时，你可以用它进行特殊的徒手打击，造成等于你一枚战技骰＋你的力量调整值的穿刺伤害。",
+							"ENG_name": "Properties"
+						},
+						{
+							"type": "item",
+							"name": "擒抱",
+							"entry": "被你擒抱的生物在其回合开始时，受到等于你一枚战技骰的穿刺伤害。",
+							"ENG_name": "Grappling"
+						},
+						{
+							"type": "item",
+							"name": "狂暴",
+							"entry": "狂暴期间，若你采取攻击动作且仅以钉刺甲进行徒手打击，你可以在该回合以一个附赠动作进行一次钉刺甲攻击。",
+							"ENG_name": "Rage"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/equipment/chest/breastplate-gorget-steel-white.webp"
+		},
+		{
+			"ENG_name": "Warrior Smith",
+			"name": "战士铁匠",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你是一名技艺精湛的铁匠，能够打造并维护自己的护甲。你获得铁匠工具和重甲的熟练项。",
+				"与其他野蛮人不同，你对护甲的熟稔使你能够在身穿重甲的同时进入并维持狂暴。"
+			],
+			"foundryImg": "icons/tools/smithing/crucible-trough.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "嗜血重击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "荣誉决斗|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Battle Hysteria",
+			"name": "战斗狂热",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你将自己完全交予战场的混沌，几乎不顾自身安危。每回合一次，当你在狂暴期间发动鲁莽攻击时，你可以获得等于你的体质调整值的临时生命值（最低1点）。"
+			],
+			"foundryImg": "icons/sundries/flags/banner-flag-skull-red.webp"
+		},
+		{
+			"ENG_name": "Mythic Smith",
+			"name": "神话铁匠",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你作为制甲师的手艺已大为精进。你可以使用铁匠工具，将魔法护甲改造为一套钉刺甲。",
+				"若该护甲提供AC加值，你可以将其改为对你的钉刺甲攻击与伤害掷骰的加值。"
+			],
+			"foundryImg": "icons/tools/smithing/furnace-fire-metal-orange.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "凶蛮抗争|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Wild Charge",
+			"name": "狂野冲锋",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"狂暴期间，你可以以一个附赠动作移动至多等于你速度的距离，并以你的钉刺甲进行一次徒手打击。"
+			],
+			"foundryImg": "icons/skills/movement/feet-bladed-boots-fire.webp"
+		},
+		{
+			"ENG_name": "Spiked Retribution",
+			"name": "钉刺反击",
+			"source": "LLAB",
+			"page": 11,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "血与铁",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你的护甲渴饮鲜血。当你身穿钉刺甲时，若有生物以近战攻击命中你，它受到等于你的力量调整值的穿刺伤害。",
+				"狂暴期间，你可以用你的反应，将你一枚战技骰加到攻击者从此特性受到的伤害上。"
+			],
+			"foundryImg": "icons/magic/earth/barrier-stone-explosion-spiked.webp"
+		},
+		{
+			"ENG_name": "Path of the Brute",
+			"name": "暴徒道途",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"虽然大多数野蛮人来自世界的蛮荒之地，暴徒们却是在文明的阴暗角落里发现了自己的狂暴。他们的能力源自街头智慧与纯粹韧劲的结合。所有行走此道途者都有一点共通\u2014\u2014他们更愿意用拳头解决问题。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "蛮横战技|替代野蛮人|LLAB|暴徒|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狐朋狗友|替代野蛮人|LLAB|暴徒|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "徒手亦险|替代野蛮人|LLAB|暴徒|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Brutish Exploits",
+			"name": "蛮横战技",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 庄严存形|LLExploits}, {@optfeature 碾压之握|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 震荡打击|LLExploits}, {@optfeature 强力投掷|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 迷乱重击|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "庄严存形|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碾压之握|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "The Wrong Crowd",
+			"name": "狐朋狗友",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"无论你流落到哪座城镇，你似乎总能和当地最粗野的一伙人打成一片。你可以说、解读盗贼黑话，并用之留下密信。",
+				"此外，对你而言，花时间狂欢视同休息，前提是你没有造成或受到任何伤害。在一个聚落彻夜狂欢之后，你为搜集该聚落情报而进行的属性检定具有优势。"
+			],
+			"foundryImg": "icons/environment/settlement/city-night.webp"
+		},
+		{
+			"ENG_name": "Unarmed & Dangerous",
+			"name": "徒手亦险",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在文明暗面的生活，已将你的身体锻造成一件致命武器。你获得下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"在计算轻甲和中甲的AC时，你可以用你的体质替代敏捷。",
+						"你获得即兴武器的熟练项。",
+						"你的即兴武器与徒手打击的伤害骰等于你的战技骰，除非原本更高。",
+						"狂暴期间，当你采取攻击动作且仅进行徒手打击、擒抱、推撞或即兴武器攻击时，你可以在该回合以一个附赠动作再进行上述列表中的一种攻击。"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/fist/fist-knuckles-brass.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "震荡打击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力投掷|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Brutal Strikes",
+			"name": "残暴打击",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"狂怒为你的打击赋能。狂暴期间，你的徒手打击和即兴武器攻击视为魔法攻击。",
+				"此外，当你以徒手打击命中一个生物时，你可以使用{@optfeature 震荡打击|LLExploits}而无需消耗战技骰。你可以如此做的次数等于你的体质调整值。完成一次长休后，你恢复所有已耗使用次数。"
+			],
+			"foundryImg": "icons/weapons/fist/fist-knuckles-spiked-grey.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "迷乱重击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Iron Grip",
+			"name": "铁腕掌控",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"狂暴期间，你可以擒抱比你大两个体型的目标，擒抱时你的速度不减半，并且当你进行以擒抱或推撞为目的的运动检定时，掷骰获得等于你一枚战技骰的加值。"
+			],
+			"foundryImg": "icons/skills/melee/hand-grip-sword-red.webp"
+		},
+		{
+			"ENG_name": "Brutish Determination",
+			"name": "蛮横决心",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "暴徒",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你能扛住足以重创寻常战士的肉体打击。当你进行一次力量、敏捷、体质或死亡豁免检定时，你掷一枚d4并将其加到掷骰结果上。",
+				"若你在死亡豁免检定中掷出20或更高，你会立即恢复意识，以1生命值站起。"
+			],
+			"foundryImg": "icons/magic/life/ankh-shadow-green.webp"
+		},
+		{
+			"ENG_name": "Path of the Champion",
+			"name": "勇士道途",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"每一支伟大武装力量的最前方，都站着一名勇士。这些精英战士是战场的大师，是荣耀决斗与公平竞技的楷模。他们常常主动寻战最强的敌人，力图以荣耀的对决或竞技比试迅速终结冲突。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "勇士战技|替代野蛮人|LLAB|勇士|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战斗风格|替代野蛮人|LLAB|勇士|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战斗训练|替代野蛮人|LLAB|勇士|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Champion Exploits",
+			"name": "勇士战技",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 力量绝技|LLExploits}, {@optfeature 强力跳跃|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 强力打击|LLExploits}, {@optfeature 荣誉决斗|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 神话韧劲|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "力量绝技|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力跳跃|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你在3级选择这条原初道途时，你以武艺磨砺你的狂暴。你从下述列表中习得一项自选的战斗风格。即使你再次获得本特性，也无法重复习得同一战斗风格。",
+				"你在此职业中每获得一个等级，都可以将你的战斗风格切换为下述列表中的另一项。"
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Martial Training",
+			"name": "战斗训练",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你白热化的狂暴之怒被纪律所调和。你的战技骰总数增加一枚，并且狂暴期间，你所有的战技骰增大一级，最大为1d12。",
+				"例如，在5级时，你狂暴期间的战技骰为d8。"
+			],
+			"foundryImg": "icons/weapons/swords/sword-guard-embossed-green.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力打击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "荣誉决斗|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Mighty Blow",
+			"name": "强力打击",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级起，你可以抽取你的狂暴之力，灌注于一记强力打击。狂暴期间，当你以近战或投掷武器攻击命中一个生物时，你可以立即结束你的狂暴，并将该攻击变为一次自动重击。",
+				"一旦你使用了本特性，你必须完成一次短休或长休才能再次使用。"
+			],
+			"foundryImg": "icons/skills/melee/strike-hammer-destructive-orange.webp"
+		},
+		{
+			"ENG_name": "Warrior's Discipline",
+			"name": "武者纪律",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你已将身体能力锤炼至巅峰。你获得等于你步行速度的攀爬速度和游泳速度，并且当你狂暴时，你获得疾步动作的益处。",
+				"此外，在一次长休期间，你可以花1小时演练战斗科目，将你的战斗风格替换为战士职业中另一项自选的战斗风格。"
+			],
+			"foundryImg": "icons/skills/movement/feet-spurred-boots-brown.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "神话韧劲|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Invigorating Critical",
+			"name": "重击振奋",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"战斗的激情重新点燃你的战意。当你以武器攻击造成一次重击时，你恢复等于你一枚战技骰＋你的体质调整值的生命值。"
+			],
+			"foundryImg": "icons/magic/life/crosses-trio-red.webp"
+		},
+		{
+			"ENG_name": "Paragon of Battle",
+			"name": "战斗楷模",
+			"source": "LLAB",
+			"page": 6,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "勇士",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你已将身体锤炼至凡人能力的巅峰，几乎不可能被杀死。当你以至少1生命值开始自己的回合时，你获得等于你的体质调整值的临时生命值。"
+			],
+			"foundryImg": "icons/magic/life/cross-beam-green.webp"
+		},
+		{
+			"ENG_name": "Path of Elemental Chaos",
+			"name": "元素混沌道途",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"栖居于元素伟力之地的野蛮人，行走元素混沌道途者最终会化身为元素本身的毁灭之力。他们狂暴的原初之怒使他们成为行走的天灾：呼啸的暴风雪、毁灭的飓风、灼人的火焰风暴。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素战技|替代野蛮人|LLAB|元素混沌|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "混沌之心|替代野蛮人|LLAB|元素混沌|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Elemental Exploits",
+			"name": "元素战技",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 投掷|LLExploits}, {@optfeature 毁灭打击|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 碎裂猛击|LLExploits}, {@optfeature 强力打击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 毁灭猛击|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "投掷|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "毁灭打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Heart of Chaos",
+			"name": "混沌之心",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你与一种太古元素及其关联的伤害类型相联结：气（闪电）、火（火焰），或水（寒冷）。选择其中一种元素作为你力量的源头，狂暴期间你获得下列益处：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "伤害抗性",
+							"entry": "你抵抗你所选元素对应的伤害类型。",
+							"ENG_name": "Damage Resistance"
+						},
+						{
+							"type": "item",
+							"name": "元素打击",
+							"entry": "你的战技与你的狂暴伤害加值造成的伤害，都变为你的元素对应的伤害类型。",
+							"ENG_name": "Elemental Strikes"
+						},
+						{
+							"type": "item",
+							"name": "太古斥责",
+							"entry": "当有生物以近战攻击命中你时，你可以用你的反应使攻击者受到等于两倍于你一枚战技骰的元素伤害。",
+							"ENG_name": "Primeval Rebuke"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/lightning/barrier-shield-orb-pink.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碎裂猛击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Controlled Chaos",
+			"name": "掌控混沌",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你能驾驭体内的元素混沌。即使你未处于狂暴状态，也能获得混沌之心的益处。"
+			],
+			"foundryImg": "icons/magic/lightning/barrier-shield-orb-pink.webp"
+		},
+		{
+			"ENG_name": "Elemental Whirlwind",
+			"name": "元素旋风",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的太古狂怒释放出元素之力。狂暴期间，元素混沌以10尺半径环绕着你。你选择的范围内的生物受你的元素效应影响：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "气",
+							"entry": "生物将此区域视为困难地形，并且若在其中开始其回合，则在该回合失去它的反应。",
+							"ENG_name": "Air"
+						},
+						{
+							"type": "item",
+							"name": "火",
+							"entry": "范围内的生物被你的火焰吸引，对除你以外目标的攻击检定具有劣势。",
+							"ENG_name": "Fire"
+						},
+						{
+							"type": "item",
+							"name": "水",
+							"entry": "在此区域内开始回合的生物，速度减半，直至其下一回合开始。",
+							"ENG_name": "Water"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/lightning/bolt-strike-explosion-blue.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "毁灭猛击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Greater Whirlwind",
+			"name": "高等旋风",
+			"source": "LLAB",
+			"page": 24,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你狂暴的强度引出更多的元素混沌。你的元素旋风的半径变为15尺。",
+				"此外，你选择的在你元素旋风中开始回合的生物，受到等于你一枚战技骰＋你的体质调整值的你元素类型的伤害。"
+			],
+			"foundryImg": "icons/magic/lightning/bolt-strike-explosion-purple.webp"
+		},
+		{
+			"ENG_name": "Primeval Destruction",
+			"name": "太古毁灭",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "元素混沌",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"以一个动作，你可以消耗一次狂暴使用次数，释放一股元素毁灭的爆发。30尺内你选择的生物必须对你的战技豁免DC进行一次敏捷豁免检定。豁免失败者受到六倍于你一枚战技骰的元素伤害并倒地；豁免成功者伤害减半且不倒地。"
+			],
+			"foundryImg": "icons/magic/lightning/projectile-tendrils-teal.webp"
+		},
+		{
+			"ENG_name": "Path of the Lycan",
+			"name": "兽化人道途",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"兽化症是一种古老的诅咒，将受其折磨者变为渴望血肉的失控野兽。有些野蛮人主动追寻这份力量，而许多人则是被强加了诅咒。行走此道途者终将驾驭他们的兽性诅咒，以狂暴的野怒将其制服。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兽化人战技|替代野蛮人|LLAB|兽化人|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "野兽变身|替代野蛮人|LLAB|兽化人|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兽性狂暴|替代野蛮人|LLAB|兽化人|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Beast Transformation",
+			"name": "野兽变身",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"以一个附赠动作，你可以导引你的诅咒并变化，依此处规则变身为你的野兽形态：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "野兽形态",
+							"entry": "你的诅咒基于一个你自选的CR为1或更低的野兽。一经选定，便无法更改。",
+							"ENG_name": "Beast Form"
+						},
+						{
+							"type": "item",
+							"name": "数据",
+							"entry": "当你变化时，你的数据被该野兽的数据取代，但你保留你的生命值、阵营、性格，以及智力、感知和魅力值。你保留你的技能与豁免检定熟练项，并获得该野兽的。若你与该野兽共有某项熟练项，则使用较高的加值。",
+							"ENG_name": "Statistics"
+						},
+						{
+							"type": "item",
+							"name": "时长",
+							"entry": "你可以在野兽形态中停留1小时。你可以以一个附赠动作提前变回正常形态，但当你陷入失能状态时会立即变回。",
+							"ENG_name": "Duration"
+						},
+						{
+							"type": "item",
+							"name": "装备",
+							"entry": "当你变化时，你选择让你的装备融入你的野兽形态，或者落到地上。你只能融入你能够穿着或携带的装备。",
+							"ENG_name": "Equipment"
+						},
+						{
+							"type": "item",
+							"name": "特性",
+							"entry": "你的野兽形态保留你的职业、种族及其他来源的特性与益处（包括战技），只要该野兽在身体上能够使用它们。不过，你不保留任何特殊感官（如黑暗视觉），除非你的野兽形态同样具有该感官。",
+							"ENG_name": "Features"
+						},
+						{
+							"type": "item",
+							"name": "施法",
+							"entry": "你在野兽形态中无法施法。不过，你可以维持你在变化之前施放的法术及其他能力的专注。",
+							"ENG_name": "Casting Spells"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/abilities/wolf-howl-moon-purple.webp"
+		},
+		{
+			"ENG_name": "Bestial Rage",
+			"name": "兽性狂暴",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"狂暴期间，你的身体长出下列天生武器，你可以用它们进行徒手打击：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "啃咬",
+							"entry": "你长出獠牙，造成1d8穿刺伤害。在你的回合中一次，当你以啃咬命中一个生物时，你获得等于你的体质调整值的临时生命值。",
+							"ENG_name": "Bite"
+						},
+						{
+							"type": "item",
+							"name": "利爪",
+							"entry": "你长出利爪，造成1d6挥砍伤害。若你采取攻击动作且仅进行爪击，你可以作为该动作的一部分进行一次额外的爪击。",
+							"ENG_name": "Claws"
+						},
+						{
+							"type": "item",
+							"name": "尾巴",
+							"entry": "你长出尾巴，造成1d8钝击伤害并具有触及属性。当10尺内的一个生物攻击你时，你可以用你的反应使你的AC对抗该攻击获得等于你一枚战技骰的加值。",
+							"ENG_name": "Tail"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp"
+		},
+		{
+			"ENG_name": "Lycan Exploits",
+			"name": "兽化人战技",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 突进|LLExploits}, {@optfeature 强力跳跃|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 嗜血重击|LLExploits}, {@optfeature 威吓怒吼|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 胜利咆哮|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "突进|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力跳跃|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "威吓怒吼|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "嗜血重击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Feral Might",
+			"name": "野性之力",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你诅咒的原初本性增强了你的身体能力。你可以随意使用{@optfeature 强力跳跃|LLExploits}战技而无需消耗战技骰，并且你获得等于你步行速度的攀爬速度。"
+			],
+			"foundryImg": "icons/creatures/mammals/ox-buffalo-horned-green.webp"
+		},
+		{
+			"ENG_name": "Savage Strikes",
+			"name": "凶蛮打击",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你在正常形态和野兽形态中的天生武器攻击均视为魔法攻击。此外，处于野兽形态时，你使用你自己的熟练加值，而非该野兽的。",
+				"CR为1及以下的野兽，其熟练加值为＋2。"
+			],
+			"foundryImg": "icons/creatures/claws/claw-talons-glowing-orange.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "胜利咆哮|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Infectious Fury",
+			"name": "感染之怒",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你可以暂时将你受诅咒的凶性传染给他人。狂暴期间，当你以天生武器攻击命中一个生物时，你可以迫使其进行一次感知豁免检定。",
+				"豁免失败时，你选择令它受到等于三倍于你一枚战技骰的心灵伤害，或令它用其反应对你选择的另一个目标进行一次近战攻击。",
+				"你可以使用本特性的次数等于你的体质调整值（最低一次），并且每次完成长休后恢复所有使用次数。若你已无剩余使用次数，你可以消耗一枚战技骰再次使用本特性。"
+			],
+			"foundryImg": "icons/magic/control/modfiy-luck-fortune-red.webp"
+		},
+		{
+			"ENG_name": "Primal Roar",
+			"name": "原初咆哮",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽化人",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你的咆哮由诅咒的原初狂怒所驱动。你不再受限于每次休息之间只能使用一次{@optfeature 胜利咆哮|LLExploits}，只要你还有战技骰，就可以使用它。",
+				"若一个生物从胜利咆哮获得了临时生命值，则它在每个自身回合的第一次近战攻击具有优势。"
+			],
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp"
+		},
+		{
+			"ENG_name": "Path of Sorcery",
+			"name": "术法道途",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"对某些野蛮人而言，他们的狂暴源自未曾实现的魔法潜能。当天生携带奥术火花者未能以正确的方式导引它，这股不受控制的力量便会化作一场魔法灌注的战斗狂怒之混沌风暴，喷薄而出。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "术法战技|替代野蛮人|LLAB|术法|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "法术感知|替代野蛮人|LLAB|术法|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狂野术法|替代野蛮人|LLAB|术法|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellsense",
+			"name": "法术感知",
+			"source": "LLAB",
+			"page": 25,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你体内潜伏的术法火花潜能，使你能嗅出魔法的存在。以一个动作，你可以唤醒对60尺内魔法存在的感知，依侦测魔法法术的规则\"闻到\"魔法。此感知至多持续10分钟，但若你狂暴则提前结束。",
+				"你可以使用本特性的次数等于你的体质调整值（最低一次），完成一次长休后恢复所有已耗使用次数。"
+			],
+			"foundryImg": "icons/magic/perception/eye-tendrils-web-purple.webp"
+		},
+		{
+			"ENG_name": "Wild Sorcery",
+			"name": "狂野术法",
+			"source": "LLAB",
+			"page": 25,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的狂暴源自血脉中潜伏的魔法。每次你狂暴时，掷一枚d12，下述狂野术法表格中对应的效应随之显现。",
+				"所有狂野术法效应均使用你的战技豁免DC；若未注明时长，该效应持续至该次狂暴结束。若某法术效应原本需要专注，则它不需要专注，而是持续至该次狂暴结束。",
+				{
+					"type": "table",
+					"caption": "术法",
+					"colLabels": [
+						"d12",
+						"魔法效应"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"你的狂暴伤害加值现为暗蚀伤害。每回合一次，当你以此暗蚀伤害伤害一个生物时，你获得等于该暗蚀伤害的临时生命值。此效应对不死生物无效。"
+						],
+						[
+							"2",
+							"以一个附赠动作，你可以传送到30尺内你能看见的一个未被占据的空间。"
+						],
+						[
+							"3",
+							"以一个附赠动作，你可以使原始魔法在30尺内你能看见的一点爆发。该点5尺内的生物必须进行一次敏捷豁免检定，失败则受到等于两倍于你一枚战技骰的力场伤害。"
+						],
+						[
+							"4",
+							"你持有的一件武器被魔法灌注。它获得投掷（20/60）和轻型属性。当你以它进行远程攻击后，它在攻击后立即回到你手中。"
+						],
+						[
+							"5",
+							"当30尺内你能看见的一个生物对你造成伤害时，你可以用你的反应迫使其进行一次敏捷豁免检定。豁免失败者受到等于两倍于你一枚战技骰的力场伤害。"
+						],
+						[
+							"6",
+							"你习得{@optfeature 强力跳跃|LLExploits}战技，并可以无需消耗战技骰使用它。"
+						],
+						[
+							"7",
+							"你获得对你上一次所受伤害类型的抗性。此效应同一时间只能使你对一种伤害类型具有抗性。例如，若你被{@spell 火焰箭}命中，你便获得火焰抗性，直至你受到另一种类型的伤害。"
+						],
+						[
+							"8",
+							"你成为一个{@spell 变巨/缩小术}法术的目标。掷一枚d20：结果为偶数则你变大，为奇数则你缩小。"
+						],
+						[
+							"9",
+							"你在15尺半径内散发明亮光芒。以一个附赠动作，你可以迫使处在此明亮光芒中的一个生物进行一次体质豁免检定，失败则直至你下一回合开始前处于目盲状态。"
+						],
+						[
+							"10",
+							"你可以穿过实体的生物与物体，如同它们是困难地形。若你在实体物体或生物体内停止移动，你被排到你最后占据的未被占据的空间。"
+						],
+						[
+							"11",
+							"神秘的鲜花与藤蔓从你身上萌发，形成15尺半径并随你移动。此半径对你选择的生物视为困难地形。"
+						],
+						[
+							"12",
+							"你恢复一次已耗的狂暴使用次数，并再次在狂野术法表格上掷骰。"
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				}
+			],
+			"foundryImg": "icons/magic/symbols/runes-star-pentagon-magenta.webp"
+		},
+		{
+			"ENG_name": "Sorcerous Exploits",
+			"name": "术法战技",
+			"source": "LLAB",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 英勇坚毅|LLExploits}, {@optfeature 强力跳跃|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 不动如山|LLExploits}, {@optfeature 强力打击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 凶蛮抗争|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "英勇坚毅|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力跳跃|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "不动如山|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Arcane Disruption",
+			"name": "奥术干扰",
+			"source": "LLAB",
+			"page": 25,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从你身上喷发的失稳术法会扰乱寻常有序的魔法。你对法术造成的所有伤害具有抗性。狂暴期间，你选择的15尺内的生物同样获得对法术伤害的抗性。"
+			],
+			"foundryImg": "icons/magic/symbols/rune-sigil-black-pink.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "凶蛮抗争|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Unstable Sorcery",
+			"name": "不稳术法",
+			"source": "LLAB",
+			"page": 25,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"痛苦会助燃你不可捉摸的魔法。狂暴期间，当你受到伤害或豁免检定失败时，你可以用你的反应立即在狂野术法表格上掷骰，以新的结果取代你当前的狂野术法效应（若有）。"
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-gold.webp"
+		},
+		{
+			"ENG_name": "Chaos Incarnate",
+			"name": "混沌化身",
+			"source": "LLAB",
+			"page": 25,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "术法",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你已学会掌控你未启的奥术潜能。每当你在狂野术法表格上掷骰时，你掷骰两次并选择其一显现。",
+				"最后，你习得{@optfeature 裂解打击|LLExploits}战技，且它不可被替换。你可以通过消耗一次狂暴使用次数替代战技骰，在每次短休或长休之间多次使用它。"
+			],
+			"foundryImg": "icons/magic/symbols/star-rising-purple.webp"
+		},
+		{
+			"ENG_name": "Path of the Zealot",
+			"name": "狂热者道途",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的狂暴由天界的神圣伟力所植。无论你是强大天界的后裔，还是神祇钦选的勇士，你的体内如今都携着一簇神性之怒。行走狂热者道途者，以诸神与神圣事业的勇士之姿挺立。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狂热战技|替代野蛮人|LLAB|狂热者|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神圣使命|替代野蛮人|LLAB|狂热者|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "诸神勇士|替代野蛮人|LLAB|狂热者|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"ENG_name": "Champion of the Gods",
+			"name": "诸神勇士",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的狂暴是神明的馈赠。狂暴期间，在你的每个回合中你第一次以武器攻击命中时，你造成等于两倍于你一枚战技骰的额外伤害。此特性造成的伤害类型取决于你的阵营：",
+				{
+					"type": "table",
+					"colLabels": [
+						"阵营",
+						"伤害类型"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"善良",
+							"光耀"
+						],
+						[
+							"中立",
+							"雷鸣"
+						],
+						[
+							"邪恶",
+							"暗蚀"
+						]
+					]
+				},
+				"此外，狂暴期间，你的战技与狂暴伤害加值造成的伤害类型，变为与上方阵营表格所示一致的伤害类型。"
+			],
+			"foundryImg": "icons/magic/fire/flame-burning-fence.webp"
+		},
+		{
+			"ENG_name": "Divine Mandate",
+			"name": "神圣使命",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你为神圣的目的而被选中，在它达成之前不得死去。当你成为一个让你起死回生（而非令你变为不死生物）的法术（如死者复活）的目标时，该法术不需要材料成分。"
+			],
+			"foundryImg": "icons/magic/death/hand-dirt-undead-zombie.webp"
+		},
+		{
+			"ENG_name": "Zealous Exploits",
+			"name": "狂热战技",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 力量绝技|LLExploits}, {@optfeature 凶蛮反击|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 威吓怒吼|LLExploits}, {@optfeature 荣誉决斗|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 神话韧劲|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "力量绝技|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "凶蛮反击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "威吓怒吼|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "荣誉决斗|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Unwaivering Faith",
+			"name": "坚定信仰",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"神圣的使命使你在多数人失败之处觅得成功。狂暴期间，若你的一次豁免检定失败，你可以消耗一枚战技骰并将其加到掷骰结果上。"
+			],
+			"foundryImg": "icons/magic/holy/chalice-glowing-gold.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAB",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "神话韧劲|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Fanatical Fervor",
+			"name": "狂热激情",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"以一个附赠动作，你可以发出一声灌注了狂热激情的战吼，选择数量等于你的野蛮人等级、位于30尺内且能听见你的生物。直至你下一回合开始，被选中的生物在所有攻击掷骰和豁免检定上具有优势。",
+				"每次长休你可以免费使用本特性一次，此后必须消耗一次狂暴使用次数才能再次使用。"
+			],
+			"foundryImg": "icons/commodities/treasure/bust-pharaoh-gold-blue.webp"
+		},
+		{
+			"ENG_name": "Undying Zealot",
+			"name": "不朽狂热者",
+			"source": "LLAB",
+			"page": 12,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "狂热者",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"只要你仍在侍奉诸神，他们便不会容你死去。狂暴期间，当你的生命值降至0时，你不会陷入昏迷。在此状态下，你继续在你每个回合进行死亡豁免检定，并且每次受到伤害都会累积一次死亡豁免检定失败。",
+				"若你以此状态开始你的回合且已累积三次死亡豁免检定失败，你必须进行一次DC 10的体质豁免检定，失败则你的狂暴结束。",
+				"若你的狂暴在你生命值为0时结束，你陷入昏迷。若狂暴结束时你已累积三次死亡豁免检定失败，你立即死亡。"
+			],
+			"foundryImg": "icons/magic/life/heart-red-blue.webp"
+		},
+		{
+			"ENG_name": "Path of the Deep",
+			"name": "深海道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"与栖息于波涛之下深处的伟大而可怖之物相遇，往往会将意志薄弱者的心智击得粉碎、无可挽回。然而，一些在这类创伤性的异界体验中幸存下来的人，会带着一种物质位面上罕见的邪异狂暴醒来。",
+				"行走深海道途者，是那些在与无法解释的深渊接触后幸存、并获得了非凡（且往往令人不安的）邪异能力的凡人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "深海战技|替代野蛮人|LLAB|深海|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "深海赠礼|替代野蛮人|LLAB|深海|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "邪异触须|替代野蛮人|LLAB|深海|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Deep Exploits",
+			"name": "深海战技",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 碾压之握|LLExploits}, {@optfeature 横扫打击|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 撕裂打击|LLExploits}, {@optfeature 不动如山|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 原初恐怖|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碾压之握|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "横扫打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Eldritch Tendrils",
+			"name": "邪异触须",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"狂暴期间，你的异界之力显现为自你躯体中探出的扭动邪异触须。这些触须的外观，映照出赐予你力量的那个实体的真实本性。当你狂暴时，或狂暴期间以一个附赠动作，你可以使这些触须挥出，迫使15尺内一个与你体型相同（或更小）的目标对你的战技豁免DC进行一次力量豁免检定。豁免失败者被向你拉拽至多15尺。若它在此强制移动结束时位于你5尺内，它被你的邪异触须擒抱。挣脱DC为你的战技豁免DC。",
+				"你同一时间只能有一个生物被你的邪异触须擒抱。"
+			],
+			"foundryImg": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp"
+		},
+		{
+			"ENG_name": "Gift of the Depths",
+			"name": "深海赠礼",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"与神秘深渊的接触已无可挽回地改变了你。你获得等于你步行速度的游泳速度，并且能够呼吸空气与水。"
+			],
+			"foundryImg": "icons/creatures/fish/fish-bioluminous-blue.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "撕裂打击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "不动如山|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Reality Warp",
+			"name": "现实扭曲",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你那改换心智的体验，使你能够辨认并穿行于现实的裂缝之间。狂暴期间，你可以用你的附赠动作传送到30尺内你能看见的一个未被占据的空间。你在进入狂暴时也可以如此做。",
+				"你可以使用本特性的次数等于你的体质调整值（最低一次）。完成一次短休后，你恢复其中一次已耗使用次数；完成一次长休后，你恢复所有已耗使用次数。若你已无剩余使用次数，你可以消耗一枚战技骰再次使用它。"
+			],
+			"foundryImg": "icons/creatures/fish/fish-shark-swimming.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "原初恐怖|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Empowered Tendrils",
+			"name": "强化触须",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你狂暴的畸异之力已愈发强大。你的邪异触须赐予你等于你步行速度的攀爬速度，且攀爬时你的双手保持空闲。",
+				"此外，当你使用你的邪异触须时，你可以以两个与你体型相同（或更小）的生物为目标，或以一个至多比你大一体型的生物为目标。你的触须同一时间至多可以擒抱两个生物。"
+			],
+			"foundryImg": "icons/creatures/fish/squid-kraken-teal.webp"
+		},
+		{
+			"ENG_name": "The Horrors Below",
+			"name": "深渊恐怖",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "深海",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你可以揭示此世之外的邪异恐怖。当你使用现实扭曲时，你可以迫使你显现地点10尺内的生物对你的战技豁免DC进行一次感知豁免检定。豁免失败的生物受到等于两倍于你一枚战技骰的心灵伤害，并对你恐慌直至你下一回合开始；豁免成功者伤害减半且不因此恐慌。"
+			],
+			"foundryImg": "icons/creatures/fish/squid-kraken-orange.webp"
+		},
+		{
+			"ENG_name": "Path of the Favored",
+			"name": "天眷道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"对大多数野蛮人而言，狂暴源自他们对战斗的渴望或复仇的欲念；但对另一些人而言，狂暴是一份馈赠。行走天眷道途的战士，其狂暴来自某个外在源头。有的受命运眷宠，注定成为强大的战士；有的是神祇或至高妖精的后裔；还有的可能是传奇冒险者的子孙。",
+				"无论你超自然眷宠的源头为何，你总有本事在旁人必败之处觅得成功，把死敌化为挚友，翻越在他人眼中绝无可能逾越的障碍。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "天眷战技|替代野蛮人|LLAB|天眷|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "天眷风采|替代野蛮人|LLAB|天眷|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "命运眷顾|替代野蛮人|LLAB|天眷|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Favored Exploits",
+			"name": "天眷战技",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 英勇坚毅|LLExploits}, {@optfeature 力量绝技|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 振鸣重击|LLExploits}, {@optfeature 强力打击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 神话体魄|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "力量绝技|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "英勇坚毅|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Favored Presence",
+			"name": "天眷风采",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的气度之中有某种东西，令旁人对你青眼有加。以一个附赠动作，你可以消耗一次狂暴使用次数来增强你的存在感。持续10分钟，你所有的魅力属性检定获得你的力量调整值的加值（最低＋1）。",
+				"若你造成伤害或迫使一个生物进行豁免检定，或你进入狂暴，此加值提前结束。"
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-rainbow.webp"
+		},
+		{
+			"ENG_name": "Touched by Fate",
+			"name": "命运眷顾",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"一股外在的力量庇佑你获得成功，在战斗中尤甚。每当你在一枚战技骰上掷出1\u2014\u2014包括为你的狂暴额外伤害而掷的战技骰\u2014\u2014你可以重掷一次。不过，你必须保留新的结果，即使它又是1。",
+				"狂暴期间，你还获得下列特殊能力：",
+				{
+					"type": "list",
+					"items": [
+						"当你被一次攻击命中时，你可以用你的反应消耗一枚战技骰并将其加到你对那次攻击的AC上，或可令其未命中。",
+						"当你以基于力量的武器攻击失手时，你可以消耗一枚战技骰并将其加到你的攻击掷骰上，或可将失手转为命中。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-green.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "振鸣重击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Glorious Cause",
+			"name": "荣耀事业",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的存在感激励所有在战斗中追随你的人。当你进入狂暴时，你和数量等于你的体质调整值（最低1个）的30尺内生物，各获得等于1＋你一枚战技骰的临时生命值。"
+			],
+			"foundryImg": "icons/magic/holy/chalice-glowing-gold.webp"
+		},
+		{
+			"ENG_name": "Tireless Hero",
+			"name": "不倦英雄",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"无论你的眷宠源自何处，它都赋予你在他人失败处成功的能力。每当你以一项你具有熟练项的技能进行属性检定时，你的掷骰获得1d4加值。"
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "神话体魄|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Wondrous Success",
+			"name": "奇迹成功",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你拥抱那引导你受眷人生之路的超自然之力。每次短休或长休之间一次，当你进行一次属性检定、攻击掷骰或豁免检定时，你可以用你的野蛮人等级替代d20掷骰。",
+				"此外，狂暴期间，你每轮可以各使用一次\"命运眷顾\"能力而无需消耗战技骰，为这些能力掷一枚d4替代你的战技骰。"
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-green-gold.webp"
+		},
+		{
+			"ENG_name": "Legendary Strength",
+			"name": "传奇之力",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "天眷",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你已成为超越凡人的存在，能做出堪比神话英雄的传奇伟力之举。你习得{@optfeature 巨人之力|LLExploits}战技。你无法替换它，且它不计入你的已知战技总数。若你已习得该战技，则改为从野蛮人可用的战技中另习得一个自选战技。",
+				"每当你使用巨人之力时，你计算可推动、拖拽、拉拽或举起的重量基数时，视为额外消耗了一枚战技骰（至多6枚）。",
+				"最后，你为不倦英雄和奇迹成功特性掷的加值骰变为d6。"
+			],
+			"foundryImg": "icons/magic/earth/construct-stone-long-arms.webp"
+		},
+		{
+			"ENG_name": "Path of the Inferno",
+			"name": "炼狱道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在下层位面，秩序与混沌之间的永恒之战延烧不息。魔鬼对抗恶魔，争夺诸地狱的掌控权。有时，这场冲突会外溢到物质位面，深渊的腐蚀之毒侵染凡人的心灵；有时，大恶魔的信徒与崇拜者则主动寻求这份压倒性力量的赐染。",
+				"无论源头为何，在这场腐蚀中幸存下来的人，将以深渊士兵之姿崛起，被称为炼狱战士。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "炼狱战技|替代野蛮人|LLAB|炼狱|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "地狱威仪|替代野蛮人|LLAB|炼狱|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "深渊战士|替代野蛮人|LLAB|炼狱|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Abyssal Warrior",
+			"name": "深渊战士",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"狂暴之时，深渊的腐蚀侵占你的身躯，使你的外貌特征变得魔化。狂暴期间，你获得下列益处：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "枯萎之皮",
+							"entry": "在计算无甲防御的AC时，你可以用力量替代敏捷。",
+							"ENG_name": "Blighted Hide"
+						},
+						{
+							"type": "item",
+							"name": "魔性腾跃",
+							"entry": "你在每个回合都可以以一个附赠动作使用强力跳跃战技\u2014\u2014包括你用于进入狂暴的那个附赠动作\u2014\u2014而无需消耗战技骰。",
+							"ENG_name": "Demonic Leap"
+						},
+						{
+							"type": "item",
+							"name": "狱火打击",
+							"entry": "你可以令你的狂暴伤害加值与你的战技造成的伤害变为火焰伤害，且这特殊的狱火无视火焰伤害抗性。",
+							"ENG_name": "Hellfire Strikes"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-mask.webp"
+		},
+		{
+			"ENG_name": "Hellish Presence",
+			"name": "地狱威仪",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"选择这条原初道途时，你学会说深渊语\u2014\u2014深渊的恶魔语言。此外，每当你进行威吓检定时，你可以汲取你的深渊之力，使掷骰获得等于你一枚战技骰的加值。"
+			],
+			"foundryImg": "icons/commodities/biological/tongue-pink.webp"
+		},
+		{
+			"ENG_name": "Infernal Exploits",
+			"name": "炼狱战技",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 庄严存形|LLExploits}, {@optfeature 强力跳跃|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 嗜血重击|LLExploits}, {@optfeature 威吓怒吼|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 原初恐怖|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "庄严存形|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力跳跃|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "嗜血重击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "威吓怒吼|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Demonic Bloodlust",
+			"name": "魔性嗜血",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"流血为你的深渊狂暴助燃。狂暴期间，当你以一次鲁莽攻击命中一个生物时，你获得等于你的体质调整值的临时生命值（最低1点）。"
+			],
+			"foundryImg": "icons/sundries/flags/banner-flag-skull-red.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "原初恐怖|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Hellfire Fury",
+			"name": "狱火之怒",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"深渊的狱火在你的精魂中长燃不熄。你的深渊战士特性的益处变为永久，不过你只在狂暴时才显现出魔化的外貌。",
+				"狱火还会强化你的狂暴。狂暴期间当你使用{@optfeature 强力跳跃|LLExploits}时，它赋予你等于该战技额外跳跃距离的临时飞行速度，持续到你的回合结束。"
+			],
+			"foundryImg": "icons/creatures/unholy/demons-horned-glowing-pink.webp"
+		},
+		{
+			"ENG_name": "Chaos Overwhelming",
+			"name": "混沌滔天",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "炼狱",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你释放深渊之力的全部潜能。狂暴时，你获得下列能力之一，持续该次狂暴。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "魔性飞行",
+							"entry": "皮革般的翅膀从你背后迸出，撕裂无法容纳它们的衣物。它们赋予你等于你步行速度的飞行速度。",
+							"ENG_name": "Demonic Flight"
+						},
+						{
+							"type": "item",
+							"name": "狱火兵装",
+							"entry": "你的武器燃起狱火，使武器攻击造成火焰伤害。每当你造成火焰伤害时，你无视抗性，将免疫视作抗性，且受到此火焰伤害的生物在完成一次长休前无法恢复生命值。",
+							"ENG_name": "Hellfire Armaments"
+						},
+						{
+							"type": "item",
+							"name": "魁伟形态",
+							"entry": "你的躯体被深渊魔法胀大。你的体型增大一级，你的触及增加5尺，并且你的力量检定与豁免检定获得你的体质调整值的加值（最低＋1）。每回合一次，当你以基于力量的武器攻击命中时，你造成等于你一枚战技骰的额外伤害。",
+							"ENG_name": "Hulking Form."
+						},
+						{
+							"type": "item",
+							"name": "钢铁之肤",
+							"entry": "你受诅咒的血肉只被最英勇的打击穿透。你免疫非魔法的钝击、穿刺和挥砍伤害。镀银武器可以绕过此特殊伤害免疫。",
+							"ENG_name": "Iron Flesh"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-winged-roar.webp"
+		},
+		{
+			"ENG_name": "Path of the Mutant",
+			"name": "变异者道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"追随这条原初道途的野蛮人，借助炼金术与黑暗的嬗变魔法来变异自己的肉身。得益于血液中的试剂，他们狂暴的凶蛮狂怒会引发剧烈的生理变化。这些变异者常常在追求将身体进化为终极形态的旅途之上。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "诱变战技|替代野蛮人|LLAB|变异者|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "畸变炼金|替代野蛮人|LLAB|变异者|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "凶蛮炼金术士|替代野蛮人|LLAB|变异者|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Aberrant Alchemy",
+			"name": "畸变炼金",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你对黑暗炼金的知识，使你能够以{@filter 变异|optionalfeatures|feature type=LLAB:M}接种血液，获得下列益处：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "潜藏变异",
+							"entry": "你以本原初道途描述末尾列表中的三个自选{@filter 变异|optionalfeatures|feature type=LLAB:M}接种你的血液。直到你进入狂暴，你才获得这些潜藏变异的益处。在一次长休期间，你可以花1小时使用炼金工具进行一次炼金操作，将你血液中的一个潜藏变异替换为另一个自选变异。你在达到6级时获得两个额外的自选潜藏变异，并在10级和14级再次获得。",
+							"ENG_name": "Latent Mutagens"
+						},
+						{
+							"type": "item",
+							"name": "变异",
+							"entry": "当你狂暴时，你在该次狂暴的持续期间，获得数量等于你的体质调整值（最低1个）的潜藏变异的益处。",
+							"ENG_name": "Mutation"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/tools/laboratory/mortar-liquid-pink.webp"
+		},
+		{
+			"ENG_name": "Mutagenic Exploits",
+			"name": "诱变战技",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 碾压之握|LLExploits}, {@optfeature 力量绝技|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 撕裂打击|LLExploits}, {@optfeature 旋风打击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 迷乱重击|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碾压之握|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "力量绝技|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Savage Alchemist",
+			"name": "凶蛮炼金术士",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你阴森的研究赐予你自然技能与炼金工具的熟练项。当你以其中任一熟练项进行检定时，你获得等于一枚战技骰的加值。"
+			],
+			"foundryImg": "icons/magic/nature/elemental-plant-humanoid.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "撕裂打击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "旋风打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Enduring Mutation",
+			"name": "持久变异",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你炼金实验的效力日益增强。在一次短休或长休期间，你可以使用炼金工具（当你未狂暴时）使一个潜藏变异的效果变为永久。不过，当你狂暴时，此持久变异计入你获得益处的变异之列。"
+			],
+			"foundryImg": "icons/skills/toxins/poison-skull-herbs-bottle-pink.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "迷乱重击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Noxious Strike",
+			"name": "剧毒打击",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你可以将血液中的毒素武器化，以此侵袭他人。每回合一次，当你以近战武器攻击命中一个生物时，你可以迫使其对你的战技豁免DC进行一次体质豁免检定。豁免失败者受到等于四倍于你一枚战技骰的强酸伤害，并陷入目盲或震慑（由你选择）1分钟。豁免成功者伤害减半且不承受其他效应。",
+				"陷入目盲或震慑的生物每次受到伤害时重复该豁免检定，成功则结束此效应。",
+				"你可以使用本特性的次数等于你的体质调整值（最低一次），完成一次长休后恢复所有已耗使用次数。当你没有剩余使用次数时，你可以消耗一次狂暴使用次数再次使用它。"
+			],
+			"foundryImg": "icons/magic/acid/dissolve-drip-droplet-smoke.webp"
+		},
+		{
+			"ENG_name": "Rapid Mutation",
+			"name": "急速变异",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "变异者",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你已完全掌控自己身体的可塑性。处于变异状态时，你可以以一个附赠动作，将你一个生效中的变异切换为一个潜藏变异。"
+			],
+			"foundryImg": "icons/skills/wounds/blood-cells-vessel-blue.webp"
+		},
+		{
+			"ENG_name": "Path of the Packleader",
+			"name": "兽群领袖道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"野蛮人皆是狂野的战士，以文明士兵身上罕见的原初凶性作战。对其中一些人而言，这份野性之魂向荒野的兽群发出呼唤，一条纽带就此结成。他们被称为兽群领袖，这些原初战士与{@creature 凶蛮伙伴|LLABE|凶蛮伙伴}并肩作战，以致命的默契猎杀敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兽群领袖战技|替代野蛮人|LLAB|兽群领袖|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兽语者|替代野蛮人|LLAB|兽群领袖|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "凶蛮伙伴|替代野蛮人|LLAB|兽群领袖|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Beast Whisperer",
+			"name": "兽语者",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你有一种与荒野兽群沟通的特殊方式。你获得驯兽技能的熟练项。每当你进行与野生动物相关的驯兽检定时，掷骰获得等于你一枚战技骰的加值。"
+			],
+			"foundryImg": "icons/creatures/mammals/elk-moose-marked-green.webp"
+		},
+		{
+			"ENG_name": "Packleader Exploits",
+			"name": "兽群领袖战技",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 庄严存形|LLExploits}, {@optfeature 践踏冲锋|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 嗜血重击|LLExploits}, {@optfeature 原初感官|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 集群战术|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "庄严存形|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "践踏冲锋|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Savage Companion",
+			"name": "凶蛮伙伴",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你与一头被称为{@creature 凶蛮伙伴|LLABE|凶蛮伙伴}的野兽缔结了原初纽带。你决定它的外形，但这一选择不影响它的游戏数据。常见的凶蛮伙伴有狼、野猪、熊、山猫和鬣狗。你的凶蛮伙伴适用以下规则：",
+				{
+					"type": "entries",
+					"name": "数据",
+					"entries": [
+						"凶蛮伙伴对你和你的盟友友善，并服从你的命令。它使用下方的凶蛮伙伴数据块，其中多处使用你的熟练加值（PB）与战技豁免DC。"
+					],
+					"ENG_name": "Statistics"
+				},
+				{
+					"type": "entries",
+					"name": "战斗",
+					"entries": [
+						"战斗中，你的伙伴在你的回合行动。它可以自行移动并使用其反应，但除非你以一个附赠动作命令它采取其数据块中的动作或其他动作，否则它只采取闪避动作。此外，当你采取攻击动作时，你可以放弃一次攻击，改为命令你的伙伴进行一次攻击。若你陷入失能状态，你的伙伴将自行行动。"
+					],
+					"ENG_name": "Combat"
+				},
+				{
+					"type": "entries",
+					"name": "濒死",
+					"entries": [
+						"当伙伴的生命值降至0时，它像玩家角色一样进行死亡豁免检定。当它生命值为0时，你可以用你的动作触碰它并消耗一枚战技骰，使其自动伤势稳定。"
+					],
+					"ENG_name": "Dying"
+				},
+				{
+					"type": "inset",
+					"name": "缔结新伙伴",
+					"entries": [
+						"若你的伙伴死亡，只要你找得到合适的生物，你可以花8小时寻访并缔结一头配得上担任你新伙伴的野兽。此后它使用凶蛮伙伴数据块。"
+					],
+					"ENG_name": "Bonding a New Companion"
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "嗜血重击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "原初感官|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Wild Fury",
+			"name": "野性狂怒",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的野性狂怒感染你的凶蛮伙伴。狂暴期间，只要你的伙伴在距你30尺内，它便对钝击、穿刺和挥砍伤害具有抗性。",
+				"你的凶蛮伙伴的攻击同样视为魔法攻击，以克服非魔法伤害的抗性与免疫。"
+			],
+			"foundryImg": "icons/magic/life/cross-embers-glow-yellow-purple.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "集群战术|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Coordinated Assault",
+			"name": "协同突击",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你与你的伙伴在战斗中如同一体。若你或你的凶蛮伙伴其中一方距某目标5尺内，则你们双方对目标的近战攻击掷骰均具有优势。"
+			],
+			"foundryImg": "icons/creatures/mammals/wolf-howl-moon-gray.webp"
+		},
+		{
+			"ENG_name": "Primeval Companion",
+			"name": "太古伙伴",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "兽群领袖",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你可以将你狂暴的原初之怒灌注给你的凶蛮伙伴。以一个动作，你可以消耗一次狂暴使用次数，使你的伙伴成长为太古伙伴，持续1小时或直至其陷入失能状态。在此期间，你的伙伴使用{@creature 太古伙伴|LLABE|太古伙伴}数据块。",
+				"当你狂暴时，你可以消耗两次狂暴使用次数，使你的伙伴同时变身。"
+			],
+			"foundryImg": "icons/creatures/abilities/paw-glowing-yellow.webp"
+		},
+		{
+			"ENG_name": "Path of the Reaver",
+			"name": "掠夺者道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"大多数野蛮人以蛮力压制敌人，而被称为掠夺者的人则以武艺与战术机动强化他们可畏的力量。这些无畏的战士常被任用为先锋部队，他们的战斗技艺与坚韧，令任何在战场上与他们为敌者闻风丧胆。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "掠夺者战技|替代野蛮人|LLAB|掠夺者|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "掠夺者优势|替代野蛮人|LLAB|掠夺者|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "疾步如飞|替代野蛮人|LLAB|掠夺者|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Reaver Exploits",
+			"name": "掠夺者战技",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 凶蛮反击|LLExploits}, {@optfeature 嘲讽打击|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 擦掠打击|LLExploits}, {@optfeature 撕裂打击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 肾上腺素激增|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "嘲讽打击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "凶蛮反击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Reaver Superiority",
+			"name": "掠夺者优势",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你研习武艺以增强战场技艺。你的战技骰总数增加1，并且你另习得一个自选战技，它不计入你的已知战技总数。",
+				"此外，当你习得新战技时，你可以选择习得此职业可用的凶蛮战技，或替代战士可用的{@filter 武术战技|optionalfeatures|feature type=LL:ME}之一。",
+				"若你选择习得的武术战技带有特定战士等级的先决条件，只要你的野蛮人等级达到该先决等级，你便可以习得该战技。"
+			],
+			"foundryImg": "icons/equipment/head/helm-norman-reticulated.webp"
+		},
+		{
+			"ENG_name": "Swift Strides",
+			"name": "疾步如飞",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你不是被狂暴蒙蔽双眼，而是进入一种高度专注的状态，行动目标明确。狂暴期间，针对你的借机攻击具有劣势。"
+			],
+			"foundryImg": "icons/skills/movement/figure-running-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "擦掠打击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "撕裂打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Restorative Rage",
+			"name": "恢复狂暴",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的战斗造诣足以比肩声名显赫的英雄。每当你狂暴时，你获得下列益处之一：",
+				{
+					"type": "list",
+					"items": [
+						"你恢复一枚已消耗的战技骰。",
+						"你获得等于你一枚战技骰的临时生命值。",
+						"你当前回合的速度翻倍。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "肾上腺素激增|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Unstoppable Warrior",
+			"name": "势不可挡的战士",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"战场的混沌与凶险助燃你的战斗专注。狂暴期间，你受{@spell 行动自如}法术效应影响，但这不被视为魔法效应。",
+				"你还另习得一个自选战技，它不计入你的已知战技总数。如常，你可以从野蛮人或战士职业的战技列表中选择此战技。"
+			],
+			"foundryImg": "icons/equipment/head/greathelm-reticulated-steel.webp"
+		},
+		{
+			"ENG_name": "Storm of Steel",
+			"name": "钢铁风暴",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "掠夺者",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你的修为已臻化境，与你在战场之上为敌者，哀哉。狂暴期间每回合一次，当你以武器攻击命中时，你可以放弃该攻击的狂暴伤害加值，改为使用一个你已知的战技而无需消耗战技骰。以此方式使用的战技，必须能够作为武器攻击的一部分使用。",
+				"例如，当你以武器攻击命中一个生物时，你可以放弃通常的伤害加值，无需消耗战技骰而使用撕裂打击。"
+			],
+			"foundryImg": "icons/magic/life/cross-embers-glow-yellow-purple.webp"
+		},
+		{
+			"ENG_name": "Path of the Titan",
+			"name": "泰坦道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"有些野蛮人的狂暴源自他们的血脉。行走泰坦道途者，以流经血脉的巨人之血为狂暴助燃。一些泰坦战士是巨人的后裔，另一些则在狂暴显现之前，从未察觉自己的巨人血统。巨人之血者往往比同族更高大或更强壮，一旦你懂得辨读迹象，他们便相当显眼。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "泰坦战技|替代野蛮人|LLAB|泰坦|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "泰坦狂暴|替代野蛮人|LLAB|泰坦|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "巨人血统|替代野蛮人|LLAB|泰坦|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Bloodline",
+			"name": "巨人血统",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"无论出于魔法还是血脉，你都承负着巨人之力。从下列选项中选择最契合居于你体内之力量来源的巨人类型。此选择会影响你随后从此道途获得的特性。你获得与该巨人关联的伤害类型的抗性。此选择是永久的，除非借由祈愿术或上古巨人之魔法，否则无法更改。",
+				{
+					"type": "table",
+					"caption": "血统",
+					"colLabels": [
+						"巨人",
+						"元素"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"山丘",
+							"毒素"
+						],
+						[
+							"石",
+							"心灵"
+						],
+						[
+							"霜",
+							"寒冷"
+						],
+						[
+							"火",
+							"火焰"
+						],
+						[
+							"云",
+							"雷鸣"
+						],
+						[
+							"风暴",
+							"闪电"
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				}
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-evil-horned-giant.webp"
+		},
+		{
+			"ENG_name": "Titanic Exploits",
+			"name": "泰坦战技",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 力量绝技|LLExploits}, {@optfeature 投掷|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 强力投掷|LLExploits}, {@optfeature 碎裂猛击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 毁灭猛击|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "力量绝技|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "投掷|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Titanic Rage",
+			"name": "泰坦狂暴",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的狂怒唤出血脉中的上古伟力。当你狂暴时，只要空间允许，你可以选择增大至下表中你野蛮人等级对应的最大体型。你的狂暴伤害加值也随之提升至与你新体型类别匹配的数值，如下表所示：",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"最大体型",
+						"狂暴伤害"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"大型",
+							"1d8"
+						],
+						[
+							"10级",
+							"巨型",
+							"1d12"
+						],
+						[
+							"18级",
+							"超巨型",
+							"2d12"
+						]
+					]
+				},
+				"最后，狂暴期间你可以随意使用投掷战技而无需消耗战技骰。当你以投掷战技伤害一个目标时，将你的狂暴伤害加值加到该伤害上。",
+				"若你狂暴时体型为巨型，你可以随意使用{@optfeature 强力投掷|LLExploits}战技而无需消耗战技骰。"
+			],
+			"foundryImg": "icons/commodities/treasure/statue-carved-figurehead.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强力投掷|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碎裂猛击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Elder Vitality",
+			"name": "远古活力",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的狂暴从血脉中唤出愈来愈强的韧劲。当你狂暴时，你每比中型增大一个体型，便获得10点临时生命值：大型（10）、巨型（20），或超巨型（30）。"
+			],
+			"foundryImg": "icons/magic/life/cross-explosion-burst-green.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "毁灭猛击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Awakened Bloodline",
+			"name": "觉醒血统",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"即使不被狂暴唤出，你血脉中蛰伏的力量也显而易见。你会依你的巨人血统显现出更为具体的特质，详见下述：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "山丘",
+							"entry": "每当你受到伤害时，你可以用你的反应将其减少你的体质调整值（最低1点）。",
+							"ENG_name": "Hill"
+						},
+						{
+							"type": "item",
+							"name": "石",
+							"entry": "你获得感知豁免检定的熟练项。",
+							"ENG_name": "Stone"
+						},
+						{
+							"type": "item",
+							"name": "霜",
+							"entry": "你的狂暴伤害加值现为寒冷伤害，并且每当你对一个生物造成寒冷伤害时，其移动速度降低10尺，直至你下一回合开始。",
+							"ENG_name": "Frost"
+						},
+						{
+							"type": "item",
+							"name": "火",
+							"entry": "在计算穿着护甲时的AC，你可以用你的体质替代敏捷。当你受到伤害时，你可以用你的反应对30尺内的攻击者造成等于你一枚战技骰的火焰伤害。",
+							"ENG_name": "Fire"
+						},
+						{
+							"type": "item",
+							"name": "云",
+							"entry": "你抵抗坠落伤害，并且你可以在你的回合以一个附赠动作采取疾步或撤离动作。",
+							"ENG_name": "Cloud"
+						},
+						{
+							"type": "item",
+							"name": "风暴",
+							"entry": "当你使用{@optfeature 投掷|LLExploits}或{@optfeature 强力投掷|LLExploits}时，它们现在造成闪电伤害以替代钝击伤害，且生物为抵抗这些战技而进行的豁免检定具有劣势。",
+							"ENG_name": "Storm"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/treasure/token-engraved-blue-glowing.webp"
+		},
+		{
+			"ENG_name": "Titanic Wrath",
+			"name": "泰坦之怒",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "泰坦",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你以真正巨人之力出击。狂暴期间以一个动作，你可以进行一次压倒性的近战武器攻击。命中时，该攻击为一次自动重击。",
+				"你可以使用此能力的次数等于你的力量调整值（最低一次），完成一次长休后恢复所有已耗使用次数。"
+			],
+			"foundryImg": "icons/weapons/hammers/hammer-double-glowing-yellow.webp"
+		},
+		{
+			"ENG_name": "Path of the Warden",
+			"name": "守望者道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "守望者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"守望者来自自然伟力至高无上的世界蛮荒之地，他们是自然秩序的仆从，以狂暴的原始之力导引自然世界的精魄。他们常常担任圣林、德鲁伊结社以及其他自然力量之地的守卫者。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "原初魔法|替代野蛮人|LLAB|守望者|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "原初狂暴|替代野蛮人|LLAB|守望者|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Primal Magic",
+			"name": "原初魔法",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "守望者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你选择这条原初道途时，你学会施放强大的原初法术，一如萨满所为：",
+				{
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从守望者法术列表中习得一个自选戏法。在此职业达到10级时，你再习得一个自选的守望者戏法。"
+					],
+					"ENG_name": "Cantrips"
+				},
+				{
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"守望者施法表格展示了你拥有多少法术位以及这些法术位的环阶。你从此特性获得的所有法术位环阶相同。要施放一个你已知的1环或更高的守望者法术，你必须消耗一个法术位。完成一次短休或长休后，你恢复所有已耗法术位。",
+						"例如，当你7级时，你拥有两个2环法术位。要施放1环法术{@spell 雷鸣波}，你必须消耗其中一个法术位，并将其以2环法术施放。"
+					],
+					"ENG_name": "Spell Slots"
+				},
+				{
+					"type": "entries",
+					"name": "1环及更高的已知法术",
+					"entries": [
+						"你从守望者法术列表中习得两个自选的1环法术。守望者施法表格的\"已知法术\"栏展示了你何时习得更多1环或更高的守望者法术。你所选的法术环阶不得高于表格中你等级对应的\"法术位环阶\"栏所示。",
+						"当你获得等级时，你可以选择一个你已知的守望者法术，用守望者法术列表中的另一个法术替换它，新法术的环阶必须是你拥有对应法术位的环阶。"
+					],
+					"ENG_name": "Spells Known of 1st Level and Higher"
+				},
+				{
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"由于你的魔法源自与原初精魄的联结，体质是你守望者法术的施法属性。当某个法术提及你的施法属性时，当你设定法术的豁免DC，或以法术进行攻击掷骰时，你使用体质。",
+						{
+							"type": "abilityDc",
+							"name": "法术豁免DC",
+							"attributes": [
+								"con"
+							],
+							"ENG_name": "Spell save DC"
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "法术攻击调整值",
+							"attributes": [
+								"con"
+							],
+							"ENG_name": "Spell attack modifier"
+						}
+					],
+					"ENG_name": "Spellcasting Ability"
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-leaves-circle.webp"
+		},
+		{
+			"ENG_name": "Primal Rage",
+			"name": "原初狂暴",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "守望者",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的狂暴不会屏蔽你的原初魔法，反而会将其增强。狂暴期间你可以施放并专注守望者法术，但你为维持法术专注而进行的豁免检定总是具有劣势。",
+				"此外，施放一个守望者法术即可使你的狂暴延续至你下一回合结束，即使你不满足延长狂暴的其他条件。"
+			],
+			"foundryImg": "icons/magic/earth/barrier-lava-stone-orange.webp"
+		},
+		{
+			"ENG_name": "Reckless Spellcasting",
+			"name": "鲁莽施法",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "守望者",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你可以将原初狂怒灌注于你的法术之后。当你使用鲁莽攻击时，在持续期间内你的守望者法术的法术攻击掷骰同样具有优势。"
+			],
+			"foundryImg": "icons/magic/earth/lava-stone-fire-eye.webp"
+		},
+		{
+			"ENG_name": "War Magic",
+			"name": "战争魔法",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "守望者",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你能无情地将小型法术与武器攻击交织。当你以动作施放一个法术时，你可以在该回合以一个附赠动作进行一次武器攻击。"
+			],
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-purple-orange.webp"
+		},
+		{
+			"ENG_name": "Ward of the Ancients",
+			"name": "上古守御",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "守望者",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你可以汲取你的自然魔法，挫敗敌对魔法。当你受到来自法术的伤害时，你可以用反应消耗一个原初魔法法术位，使你受到的伤害减少每法术位环阶两倍于你一枚战技骰的数值。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-glowing-blue.webp"
+		},
+		{
+			"ENG_name": "Elder Warden",
+			"name": "远古守望者",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "守望者",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"狂暴至酣之时，你能导引灾变般的原初伟力。狂暴期间，当你采取攻击动作时，你可以以一个施法时间为1动作的守望者法术替换你的一次攻击。",
+				"最后，狂暴期间你可以如常进行维持专注的豁免检定。"
+			],
+			"foundryImg": "icons/magic/earth/lava-explosion-orange.webp"
+		},
+		{
+			"ENG_name": "Path of the Wyrmblood",
+			"name": "龙血道途",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"有些野蛮人的狂暴源自他们的血脉。行走龙血道途者，以流经血脉的巨人之血为狂暴助燃。一些龙血战士是巨人的直系后裔，另一些则在狂暴显现之前从未察觉自己的血统。巨人之血者往往比同族更高大或更强壮，一旦你懂得辨读迹象，他们便相当显眼。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙血战技|替代野蛮人|LLAB|龙血|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙族血统|替代野蛮人|LLAB|龙血|LLABE|3|LLABE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙族之怒|替代野蛮人|LLAB|龙血|LLABE|3|LLABE"
+				}
+			]
+		},
+		{
+			"ENG_name": "Draconic Ancestry",
+			"name": "龙族血统",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"无论出于仪式、血脉还是机缘巧合，你的血脉承载着龙族之力。从下列巨龙中选择最能代表居于你体内之力量来源的一条。你获得与你的巨龙关联元素的抗性。",
+				"你还学会说、读、写龙语。",
+				{
+					"type": "table",
+					"caption": "血统",
+					"colLabels": [
+						"巨龙",
+						"元素"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"紫晶",
+							"力场"
+						],
+						[
+							"黑",
+							"强酸"
+						],
+						[
+							"蓝",
+							"闪电"
+						],
+						[
+							"黄铜",
+							"火焰"
+						],
+						[
+							"青铜",
+							"闪电"
+						],
+						[
+							"赤铜",
+							"强酸"
+						],
+						[
+							"水晶",
+							"光耀"
+						],
+						[
+							"翡翠",
+							"心灵"
+						],
+						[
+							"金",
+							"火焰"
+						],
+						[
+							"绿",
+							"毒素"
+						],
+						[
+							"红",
+							"火焰"
+						],
+						[
+							"蓝宝石",
+							"雷鸣"
+						],
+						[
+							"银",
+							"寒冷"
+						],
+						[
+							"钢",
+							"强酸"
+						],
+						[
+							"黄玉",
+							"暗蚀"
+						],
+						[
+							"白",
+							"寒冷"
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				}
+			],
+			"foundryImg": "icons/environment/wilderness/cave-entrance-vulcano.webp"
+		},
+		{
+			"ENG_name": "Draconic Fury",
+			"name": "龙族之怒",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你龙族血脉的力量在狂怒中显现。狂暴期间，你获得下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"你显现出龙鳞，使你在使用无甲防御时AC获得＋2加值。",
+						"你的狂暴伤害加值与你的凶蛮战技造成的伤害，变为你的元素对应的伤害类型，以替代其正常伤害类型。",
+						"每回合一次，当你以基于力量的武器攻击命中时，你可以为你的狂暴伤害加值掷两枚骰。"
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-fire-breath-orange.webp"
+		},
+		{
+			"ENG_name": "Wyrmblood Exploits",
+			"name": "龙血战技",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你按下表所注明的野蛮人等级习得特定战技。这些战技不计入你的已知战技数，且在你获得等级时不能被替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"野蛮人等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 庄严存形|LLExploits}, {@optfeature 无情打击|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 威吓号令|LLExploits}, {@optfeature 原初感官|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 胜利咆哮|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "庄严存形|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "无情打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "威吓号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "原初感官|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Tyrannical Resilience",
+			"name": "暴君韧性",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的血液庇护你免受魔法效应。狂暴期间，当你被迫对魔法进行一次智力、感知或魅力豁免检定时，你的掷骰获得等于你一枚战技骰的加值。"
+			],
+			"foundryImg": "icons/creatures/reptiles/lizard-mouth-glowing-red.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLABE",
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得更多战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "胜利咆哮|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Breath of the Dragon",
+			"name": "龙之吐息",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你血脉中的龙族之力使你能呼出元素之力的吐息。以一个动作，你可以迫使邻接的30尺锥形范围内的所有生物对你的战技豁免DC进行一次敏捷豁免检定。豁免失败者受到8d6你的元素类型的伤害，豁免成功者伤害减半。",
+				"你可以使用本特性的次数等于你的体质调整值（最低一次），完成一次长休后恢复所有已耗使用次数。若你已无剩余使用次数，你可以消耗一次狂暴使用次数再次使用它。"
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-ice-breath-blue.webp"
+		},
+		{
+			"ENG_name": "Draconic Wings",
+			"name": "龙翼",
+			"source": "LLABE",
+			"page": 5,
+			"className": "替代野蛮人",
+			"classSource": "LLAB",
+			"subclassShortName": "龙血",
+			"subclassSource": "LLABE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你显现出龙族血脉的全部力量。以一个附赠动作，你可以显现一对龙翼。这对龙翼赋予你等于你步行速度的飞行速度，持续至你以一个附赠动作将其收起。",
+				"并非为容纳龙翼而制的衣物，会在你显现龙翼时被损毁。"
+			],
+			"foundryImg": "icons/creatures/abilities/wing-batlike-purple-blue.webp"
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Aberrant Sight",
+			"name": "畸变视觉",
+			"source": "LLABE",
+			"page": 1,
+			"featureType": [
+				"LLAB:M"
+			],
+			"entries": [
+				"你的双眼化作一片漆黑的虚空。你获得60尺半径的黑暗视觉。若你从种族或其他特性处获得黑暗视觉，其范围增加60尺。在此半径内，你还能看穿魔法黑暗。"
+			],
+			"foundryImg": "icons/creatures/eyes/humanoid-single-purple-blue.webp"
+		},
+		{
+			"ENG_name": "Acidic Bile",
+			"name": "强酸胆汁",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"additionalSpells": [
+				{
+					"ENG_name": "Acidic Bile",
+					"name": "强酸胆汁",
+					"ability": "con",
+					"known": {
+						"_": [
+							"酸液飞溅（变体）|llspell"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以从口中喷吐腐蚀性的强酸。你习得{@spell 酸液飞溅（变体）|llspell}戏法，施法属性为体质。当你施放此戏法时，其伤害掷骰获得等于你的体质调整值的加值（最低＋1）。"
+			],
+			"foundryImg": "icons/magic/acid/dissolve-vomit-green-brown.webp"
+		},
+		{
+			"ENG_name": "Alchemical Intellect",
+			"name": "炼金智能",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"奇异的化学物质强化你的心智，代价却是你的躯体。你所有智力、感知和魅力的豁免检定具有优势，但你所有力量、敏捷和体质的豁免检定具有劣势。"
+			],
+			"foundryImg": "icons/commodities/biological/organ-brain-pink-purple.webp"
+		},
+		{
+			"ENG_name": "Alchemical Resistance",
+			"name": "炼金抗性",
+			"source": "LLABE",
+			"page": 1,
+			"featureType": [
+				"LLAB:M"
+			],
+			"entries": [
+				"你的实验赐予你元素抗性。当你显现此变异时，选择强酸、寒冷、火焰、毒素或闪电其一，你获得该伤害类型的抗性。"
+			],
+			"foundryImg": "icons/tools/laboratory/vial-orange.webp"
+		},
+		{
+			"ENG_name": "Aquatic Adaptation",
+			"name": "水栖适应",
+			"source": "LLABE",
+			"page": 1,
+			"featureType": [
+				"LLAB:M"
+			],
+			"entries": [
+				"你的颈部生出鳃，或你的皮肤变得如两栖生物般可渗透。你获得等于你步行速度的游泳速度，并且能够呼吸空气与水。"
+			],
+			"foundryImg": "icons/creatures/fish/fish-marlin-swordfight-blue.webp"
+		},
+		{
+			"ENG_name": "Corrosive Blood",
+			"name": "腐蚀之血",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你的伤口会渗出腐蚀性的强酸。每当你被攻击命中且攻击者位于30尺内时，你可以用你的反应对攻击者造成等于你一枚战技骰＋你的体质调整值的强酸伤害。"
+			],
+			"foundryImg": "icons/magic/acid/projectiles-trio-salvo.webp"
+		},
+		{
+			"ENG_name": "Dislocated Reach",
+			"name": "脱臼触及",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你怪异的实验使你的关节能够非自然地伸展、爆响与扩张。你的手臂长度翻倍，你的近战攻击触及增加5尺。"
+			],
+			"foundryImg": "icons/creatures/tentacles/tentacle-earth-green.webp"
+		},
+		{
+			"ENG_name": "Engorged Physique",
+			"name": "肿胀体格",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"化学物质强行胀大你的躯体，赋予你一副骇人的体格。你的体型增大一级（例如从中型到大型），你的触及增加5尺，你的体重增至八倍，并且你的近战武器攻击命中时造成等于一枚战技骰的额外伤害。",
+				"若空间不足以让你增大体型，你增长至当前环境所允许的最大体型。"
+			],
+			"foundryImg": "icons/creatures/mammals/ox-buffalo-horned-green.webp"
+		},
+		{
+			"ENG_name": "Enhanced Movement",
+			"name": "强化移动",
+			"source": "LLABE",
+			"page": 1,
+			"featureType": [
+				"LLAB:M"
+			],
+			"entries": [
+				"你的双腿长得异常强壮，外表却变得可怖。你可以在你的每个回合以一个附赠动作采取疾步动作。"
+			],
+			"foundryImg": "icons/commodities/bones/hooves-cloven-grey.webp"
+		},
+		{
+			"ENG_name": "Grappling Appendage",
+			"name": "擒抱附肢",
+			"source": "LLABE",
+			"featureType": [
+				"LLAB:M"
+			],
+			"entries": [
+				"你的背部长出一条形似触手的额外附肢。此附肢触及10尺，可用于进行徒手打击、推撞和擒抱。命中时，它造成等于你一枚战技骰的钝击伤害。",
+				"此附肢可用于简单的事务，但它无法持握武器或盾牌，也无法操作物件或工具。"
+			],
+			"foundryImg": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp"
+		},
+		{
+			"ENG_name": "Hideous Regeneration",
+			"name": "骇人再生",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"若你以剩余生命值不足一半（但至少1点）开始你的回合，你立即恢复等于你的体质调整值的生命值（最低1点）。"
+			],
+			"foundryImg": "icons/commodities/biological/organ-heart-black.webp"
+		},
+		{
+			"ENG_name": "Inoculated Vigor",
+			"name": "接种活力",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你为自己接种了抵御万毒的疫苗。你获得强酸伤害和毒素伤害的免疫力，并获得对所有疾病与中毒状态的免疫力。"
+			],
+			"foundryImg": "icons/commodities/biological/organ-liver-red.webp"
+		},
+		{
+			"ENG_name": "Monstrous Flight",
+			"name": "怪物飞行",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你长出一对非天然的皮质或昆虫状翅膀。你获得等于你步行速度的飞行速度。"
+			],
+			"foundryImg": "icons/creatures/birds/corvid-flying-wings-purple.webp"
+		},
+		{
+			"ENG_name": "Monstrous Glide",
+			"name": "怪物滑翔",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"entries": [
+				"你长出蝙蝠般的皮膜，用以滑翔。当你坠落至少10尺且未失能时，你在计算坠落伤害时可以从坠落高度中扣除至多100尺，并且你每坠落1尺便可以水平移动2尺。"
+			],
+			"foundryImg": "icons/commodities/biological/wing-lizard-pink-purple.webp"
+		},
+		{
+			"ENG_name": "Oozing Form",
+			"name": "软泥形态",
+			"source": "LLABE",
+			"page": 1,
+			"featureType": [
+				"LLAB:M"
+			],
+			"entries": [
+				"你的躯体可以变得黏滑而柔韧。以一个附赠动作，你可以变为（或脱离）一种软泥状的状态，使你能够挤过窄至1寸的缝隙。"
+			],
+			"foundryImg": "icons/creatures/slimes/slime-face-hollow-green.webp"
+		},
+		{
+			"ENG_name": "Synthetic Carapace",
+			"name": "合成甲壳",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你的皮肤硬化，宛如某种可怕的昆虫生物。你的AC获得＋2加值，并且你对来自非魔法且非镀银攻击的钝击、穿刺和挥砍伤害具有抗性。"
+			],
+			"foundryImg": "icons/commodities/biological/shell-ridged-green.webp"
+		},
+		{
+			"ENG_name": "Toxic Symbiosis",
+			"name": "毒共生",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"当你以近战攻击命中一个生物时，你可以在该回合以一个附赠动作从其伤口吮取生命，获得等于你的体质调整值的临时生命值。",
+				"此特性无法对构装体或不死生物使用。"
+			],
+			"foundryImg": "icons/creatures/slimes/slime-movment-dripping-green.webp"
+		},
+		{
+			"ENG_name": "Unnatural Physicality",
+			"name": "非自然体能",
+			"source": "LLABE",
+			"page": 1,
+			"featureType": [
+				"LLAB:M"
+			],
+			"entries": [
+				"你的肌肉与血管因有毒的化学物质而肿胀，赋予你非自然的力量与机动性。你进行的力量（运动）与敏捷（特技）检定获得等于一枚战技骰的加值。"
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Viscous Grip",
+			"name": "黏性抓握",
+			"source": "LLABE",
+			"page": 6,
+			"featureType": [
+				"LLAB:M"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你的手脚分泌出黏性物质。你获得等于你步行速度的攀爬速度，并且你可以攀爬困难表面而无需进行属性检定。",
+				"此外，生物为挣脱你的擒抱而进行的属性检定或豁免检定具有劣势。"
+			],
+			"foundryImg": "icons/commodities/biological/suckers-green.webp"
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Primeval Companion",
+			"name": "太古伙伴",
+			"source": "LLABE",
+			"page": 3,
+			"summonedByClass": "替代野蛮人|LLAB",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"special": "13 + PB（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "5 + 5 × 你的野蛮人等级"
+			},
+			"speed": {
+				"walk": 60,
+				"swim": 40
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 20,
+			"int": 8,
+			"wis": 18,
+			"cha": 10,
+			"languages": [
+				"理解你所说的语言"
+			],
+			"trait": [
+				{
+					"name": "生命骰",
+					"entries": [
+						"该伙伴拥有的d8生命骰总数等于你的野蛮人等级。它同样获得短休与长休的全部常规益处。"
+					],
+					"ENG_name": "Hit Dice"
+				},
+				{
+					"name": "坚韧",
+					"entries": [
+						"每次长休一次，当你的伙伴生命值降至0时，它可以选择立即获得等于你野蛮人等级的生命值，而非降至0。"
+					],
+					"ENG_name": "Relentless"
+				},
+				{
+					"name": "原初羁绊",
+					"entries": [
+						"当你的熟练加值在17级提升时，该伙伴的熟练技能与豁免检定加值也随之提升相同的数值。"
+					],
+					"ENG_name": "Primal Bond"
+				},
+				{
+					"name": "凶蛮冲锋",
+					"entries": [
+						"若你的伙伴以直线移动至少20尺后以撕咬攻击命中目标，则命中时它造成等于你一枚战技骰的额外伤害。"
+					],
+					"ENG_name": "Savage Charge"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Maul",
+					"name": "撕咬",
+					"entries": [
+						"{@atk mw} 命中：4＋PB，触及 5 尺，单一目标。{@h}{@damage 2d8 + 4 + PB}点伤害，且与该伙伴体型相同或更小的目标应击{@condition 倒地}。"
+					]
+				}
+			],
+			"miscTags": [
+				"MLW"
+			]
+		},
+		{
+			"ENG_name": "Savage Companion",
+			"name": "凶蛮伙伴",
+			"source": "LLABE",
+			"page": 3,
+			"summonedByClass": "替代野蛮人|LLAB",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"special": "13 + PB（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "5 + 5 × 你的野蛮人等级"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 20
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 15,
+			"int": 8,
+			"wis": 14,
+			"cha": 8,
+			"passive": 12,
+			"languages": [
+				"理解你所说的语言"
+			],
+			"trait": [
+				{
+					"name": "生命骰",
+					"entries": [
+						"该伙伴拥有的d8生命骰总数等于你的野蛮人等级。它同样获得短休与长休的全部常规益处。"
+					],
+					"ENG_name": "Hit Dice"
+				},
+				{
+					"name": "原初羁绊",
+					"entries": [
+						"当你的熟练加值提升时，你的伙伴的熟练技能与豁免检定加值也随之提升相同的数值。"
+					],
+					"ENG_name": "Primal Bond"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Maul",
+					"name": "撕咬",
+					"entries": [
+						"{@atk mw} 命中：2＋PB，触及 5 尺，单一目标。{@h}{@damage 1d8 + 2 + PB}点伤害，且与该伙伴体型相同或更小的目标应击{@condition 倒地}。"
+					]
+				}
+			],
+			"miscTags": [
+				"MLW"
+			]
+		}
+	]
+}
