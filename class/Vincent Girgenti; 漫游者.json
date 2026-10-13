@@ -1,0 +1,1901 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "NMD",
+				"abbreviation": "NMD",
+				"full": "漫游者：位面旅者的职业",
+				"url": "https://www.gmbinder.com/share/-LBS9acGhZ4KbKb5m8hj",
+				"version": "2.1",
+				"dateReleased": "2018-09-05",
+				"authors": [
+					"Vincent Girgenti (u/SubjectiveSloth)"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"color": "d0b5ef"
+			}
+		],
+		"optionalFeatureTypes": {
+			"NMD:WA": "漫游者：武艺",
+			"NMD:EA": "漫游者：元素亲和",
+			"NMD:PC": "漫游者：位面冲撞"
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1661773477,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "3dcfef0944"
+	},
+	"class": [
+		{
+			"ENG_name": "Nomad",
+			"name": "漫游者",
+			"source": "NMD",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"str",
+				"wis"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"count": 2,
+							"from": [
+								"acrobatics",
+								"arcana",
+								"history",
+								"nature",
+								"perception",
+								"survival"
+							]
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"tools": [
+					"{@item 制图工具|PHB}"
+				],
+				"armor": [
+					"light",
+					"medium"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 鳞甲|phb} 或 (b) {@item 皮甲|phb}",
+					"(a) {@item 刺剑|phb} 或 (b) {@item 长剑|PHB}",
+					"(a) 2 {@item 匕首|PHB|匕首} 或 (b) {@filter 任意简易或军用武器|items|source=|type=!futuristic;martial weapon;!modern;!renaissance;simple weapon;!treasure|rarity=none}",
+					"(a) {@item 探索套组|phb} 或 (b) {@item 地城套组|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							"rapier|phb"
+						],
+						"b": [
+							"longsword|phb"
+						]
+					},
+					{
+						"a": [
+							"dagger|phb",
+							"dagger|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weapon"
+							}
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				"远击|漫游者|NMD|1|NMD",
+				"旅者感知|漫游者|NMD|1|NMD",
+				"传送门技艺|漫游者|NMD|2|NMD",
+				"武艺|漫游者|NMD|2|NMD",
+				{
+					"classFeature": "位面链接|漫游者|NMD|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|漫游者|NMD|4|NMD",
+				"额外攻击|漫游者|NMD|5|NMD",
+				"传送门技艺：闪烁打击|漫游者|NMD|6|NMD",
+				{
+					"classFeature": "位面链接特性|漫游者|NMD|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|漫游者|NMD|8|NMD",
+				"位面旅行|漫游者|NMD|9|NMD",
+				{
+					"classFeature": "位面链接特性|漫游者|NMD|10",
+					"gainSubclassFeature": true
+				},
+				"分裂打击|漫游者|NMD|11|NMD",
+				"远击增强|漫游者|NMD|11|NMD",
+				"属性值提升|漫游者|NMD|12|NMD",
+				"传送门技艺：坠落闪避|漫游者|NMD|13|NMD",
+				{
+					"classFeature": "位面链接特性|漫游者|NMD|14",
+					"gainSubclassFeature": true
+				},
+				"位面复苏|漫游者|NMD|15|NMD",
+				"属性值提升|漫游者|NMD|16|NMD",
+				"漫游信步|漫游者|NMD|17|NMD",
+				"远击增强|漫游者|NMD|18|NMD",
+				"属性值提升|漫游者|NMD|19|NMD",
+				"位面间门径|漫游者|NMD|20|NMD"
+			],
+			"subclassTitle": "位面链接",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Nomad",
+			"name": "漫游者",
+			"source": "NMD",
+			"entries": [
+				{
+					"ENG_name": "Nomad",
+					"type": "section",
+					"source": "NMD",
+					"name": "漫游者",
+					"page": 1,
+					"entries": [
+						"一位少女从火焰中纵身跃出，火光之下，她闪亮的银发与她赭色的肌肤相映成趣。她迅速将匕首掷向前方的邪教徒，但匕首刚一离手便在一道闪光中消失。那敌人向她逼近，随即发出一声凄厉的呻吟倒在地上。一柄小小的匕首正插在他的后背正中。",
+						"一位年迈的精灵老人伫立在一座极高悬崖的边缘，破裂的眼镜低垂在干瘪的鼻梁上。他凝望远方，那是一片明亮而美丽的原野，青翠的群山与山谷延绵不绝，两座巨大的漂浮石岛更显奇景。他对自己轻声一笑，随即一道闪光遮住了他的视野，一个色彩旋动的圆盘在他面前开启。",
+						"漫游者是位面旅者、猎手、追踪者、流浪者与探险家。他们是穿行位面的行家，其旅行欲永难餍足，其旅程永无止境。",
+						{
+							"ENG_name": "An Unending Journey",
+							"type": "entries",
+							"name": "无尽的旅程",
+							"page": 1,
+							"entries": [
+								"漫游者的一生是发现与冒险的一生，追寻着一个被称为\"漫游之旅\"的概念。这是大多数漫游者的终极目标\u2014\u2014一个体验存在之每个面向的目标。漫游者追寻的是旅途中将降临于他们身上的一切，汲取并享受生命的所有体验。",
+								"有些人选择结成大队伍一同穿越位面，寻求人际间的体验。另一些人则享受个人旅程的孤独，选择独自探索宇宙的无限可能。",
+								"漫游者通常很难在任何一个地方定居太久，即使岁月将尽也是如此。对大多数漫游者而言，在离世前终结漫游之旅这种事根本不会发生，这便是漫游者的志向。"
+							]
+						},
+						{
+							"ENG_name": "A Peculiar Attraction",
+							"type": "entries",
+							"name": "奇特的吸引",
+							"page": 1,
+							"entries": [
+								"穿行位面的人会发现自己被某个位面的某些特质所吸引。随着时间与距离的推移，这种吸引，或者说链接，会愈发强烈，以他们自己或许也无法理解的方式将漫游者的心神引回彼处。这种链接触及一个人灵魂深处的某些面向，并将其与位面维系在一起，是位面及其异界之力在旅者心中留下的一种恒久显化。",
+								"研究位面的人提出了一种理论：位面之间存在一种类似于大地板块位移的力量，会产生强大的魔法。这种魔法拥有某种近似于宏大意识的东西，能够\"看见\"它所影响的生物。由这些理论衍生出一种部分漫游者之间的崇拜，他们将自己视为巨轮这一邪异存在的低阶守护者，尽管并非所有人都相信这种说法。",
+								"漫游者形成的链接，可能是他们当场便有所预期或立即感知到的明确选择，也可能只是某个短暂途经的位面在他们心中留下的一缕微妙印记。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Nomad",
+							"type": "entries",
+							"name": "创造漫游者",
+							"page": 2,
+							"entries": [
+								"在创造你的漫游者角色时，想一想是什么让他们最初踏上漫游之旅，又是什么让他们坚持这趟追寻。是你的父亲或母亲带你踏上了旅途？你听闻过某个遥远位面的奇幻传说？还是你只是厌倦了物质位面的平淡琐碎？",
+								"你在旅途中做过什么？可曾在喧癫空隧与九层地狱间仓皇奔逃？可曾在双生天堂中悠然漫步，从而重新审视自己的动机？甚至可曾在外层位面最负盛名的酒馆间来一场旋风般的狂欢畅游？",
+								"你的位面链接对你造成了什么影响？也许你尽管自幼闭门不出，却与某个可憎的邪恶位面建立了链接，它唤起了你一度忘却的阴暗念头？又或者你真正与你的位面心意相通，常常在去留之间苦苦挣扎，最终还是离它而去？",
+								"位面与漫游者的千姿百态意味着他们可以属于任何阵营或任何位面链接，不过大多数见识过善、恶、律法与混沌之极端的人，都更愿意保持中立。"
+							]
+						},
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"page": 2,
+							"entries": [
+								"你可以依照以下建议快速创建一名漫游者。首先，力量或敏捷应是你最高的属性值，其次是感知。其次，选择{@background 化外之民}背景。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "The Astral Plane",
+			"name": "星光位面",
+			"shortName": "星光",
+			"source": "NMD",
+			"className": "漫游者",
+			"classSource": "NMD",
+			"page": 7,
+			"subclassFeatures": [
+				"星光位面|漫游者|NMD|星光|NMD|3|NMD",
+				"遥握|漫游者|NMD|星光|NMD|7|NMD",
+				"传送门技艺：偏转护盾|漫游者|NMD|星光|NMD|10|NMD",
+				"传送门大师|漫游者|NMD|星光|NMD|14|NMD"
+			]
+		},
+		{
+			"ENG_name": "The Elemental Planes",
+			"name": "元素位面",
+			"shortName": "元素",
+			"source": "NMD",
+			"className": "漫游者",
+			"classSource": "NMD",
+			"page": 5,
+			"subclassFeatures": [
+				"元素位面|漫游者|NMD|元素|NMD|3|NMD",
+				"元素亲和|漫游者|NMD|元素|NMD|7|NMD",
+				"传送门技艺：元素盟友|漫游者|NMD|元素|NMD|10|NMD",
+				"位面冲撞|漫游者|NMD|元素|NMD|14|NMD"
+			]
+		},
+		{
+			"ENG_name": "The Far Realm",
+			"name": "遥远国度",
+			"shortName": "遥远国度",
+			"source": "NMD",
+			"className": "漫游者",
+			"classSource": "NMD",
+			"page": 6,
+			"subclassFeatures": [
+				"遥远国度|漫游者|NMD|遥远国度|NMD|3|NMD",
+				"传送门技艺：无尽虚空之疯狂|漫游者|NMD|遥远国度|NMD|7|NMD",
+				"无尽饥渴|漫游者|NMD|遥远国度|NMD|10|NMD",
+				"邪异真相|漫游者|NMD|遥远国度|NMD|14|NMD"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Far Strike",
+			"name": "远击",
+			"source": "NMD",
+			"page": 2,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 1,
+			"entries": [
+				"作为一名漫游者，你是微型传送门的大师，并能以之增强你的战斗能力。在1级时，当你在自己的回合以一把不具备{@itemProperty R||触及}属性的近战武器采取{@action 攻击}动作时，你武器的触及变为10尺，持续到你回合结束，因为你会在挥击中途开启一道供武器穿行的短程传送门。以这种方式进行的攻击不会无视掩护，且要求目标可见。这一技法需要你腾出一只手来开启传送门。",
+				"当你到达11级时，你的远击距离提升到20尺；到达18级时，提升到30尺。"
+			]
+		},
+		{
+			"ENG_name": "Traveller's Sense",
+			"name": "旅者感知",
+			"source": "NMD",
+			"page": 2,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 1,
+			"entries": [
+				"无论身处哪个位面，你都是一名经验丰富的旅者。在1级时，你获得以下收益：",
+				{
+					"type": "list",
+					"page": 2,
+					"items": [
+						"你始终知道哪边是北",
+						"即使在旅行途中从事其他活动（如觅食、导航或追踪），你也对危险保持警觉。",
+						"无需地图或比例尺，你就能准确判断自己与视野内任意一点之间的距离。",
+						"旅行时，你为抵抗{@condition 力竭}而进行的体质豁免具有{@quickref 优势与劣势|PHB|2|0|优势}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Portal Arts",
+			"name": "传送门技艺",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 2,
+			"entries": [
+				"在2级时，你学会以深思熟虑且别出心裁的方式运用你的传送门。你初始掌握一项基础传送门技艺：传送门，并会随此职业的等级提升获得更多传送门技艺选项。",
+				"你在使用传送门技艺时自行选择要产生的效应。你的技艺使用次数等于你的感知调整值。所有消耗的次数都会在你完成一次{@quickref 休息|PHB|2|0|短休或长休}后恢复。",
+				"你的传送门技艺依赖于你的感知，以及你对所汲取效应之源诸位面的了解。",
+				"部分传送门技艺要求进行豁免。当你使用来自此职业的此类效应时，其豁免DC计算如下：",
+				{
+					"ENG_name": "Portal Art",
+					"type": "abilityDc",
+					"name": "传送门技艺",
+					"attributes": [
+						"wis"
+					]
+				},
+				{
+					"ENG_name": "Portal Art: Portal",
+					"type": "entries",
+					"name": "传送门技艺：传送门",
+					"page": 3,
+					"entries": [
+						"你可以在自己的回合内以一个动作消耗一次传送门技艺使用次数，创造一对相互连通的传送门。传送门最多维持1分钟，直到有4个生物或物件从中穿过，或直到你以一个附赠动作选择关闭它们。选择你能看见的地面上的两个未被占据的空间，一个在你5尺内，另一个在你30尺内。每个位置上方各开启一道传送门。这些传送门是发光的长球形，悬于地面上方数寸处并垂直于地面。充斥每道传送门的迷雾是不透明的，会阻挡视线穿透。",
+						"任何进入传送门所占空间的中型或更小的生物或物件，都会从另一道传送门离开，如同两道门是同一空间。举例而言，如果一支箭从东侧射入传送门，它会从西侧射出，仿佛穿过了任何其他空旷空间。被迫进入传送门空间的生物可以进行一次敏捷豁免以抗拒穿行，豁免成功者将出现在传送门旁边最近的未被占据的空间中。",
+						"第二道传送门的距离在11级时提升到60尺，在17级时提升到120尺。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Weapon Art",
+			"name": "武艺",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 2,
+			"entries": [
+				"在2级时，你已与某种特定类型的武器长期相伴、训练与旅行，围绕它的用法磨炼出了自己的技艺。从以下选项中选择一项：",
+				{
+					"type": "options",
+					"count": 1,
+					"style": "list-hang-notitle",
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "虫洞狙击|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "位面穿刺|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "双手折跃|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "传送门取物|NMD"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Planar Link",
+			"name": "位面链接",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 3,
+			"entries": [
+				"漫游者是旅者，一生中往往踏遍各式各样的位面与半位面。不过，正如物质位面的旅者一样，他们心中始终对某个特定位面怀有链接。在3级时，你的游历已然成熟，足以建立起一种魔法性的个人链接。多元宇宙中显然存在着为数众多的位面与地域。本职业描述末尾呈现的常见位面链接有{@class 漫游者|NMD|元素位面|元素|NMD}、{@class 漫游者|NMD|遥远国度|遥远国度|NMD}和{@class 漫游者|NMD|星光位面|星光|NMD}。",
+				"你的位面链接在3级时赋予你特性，并在7级、10级和14级时再次赋予。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 4,
+			"entries": [
+				"当你到达4级，以及8级、12级、16级和19级时，你可以选择一项属性值提升2点，或两项属性值各提升1点。与通常一样，你无法藉此将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 5,
+			"entries": [
+				"从5级开始，当你在自己的回合采取{@action 攻击}动作时，你可以攻击两次，而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Portal Art: Blink Strike",
+			"name": "传送门技艺：闪烁打击",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 6,
+			"entries": [
+				"在6级时，你的反应变得更为灵敏，使你能纵身跃入你以{@classFeature 远击|漫游者|NMD|1|NMD}创造的传送门。当你以一次{@classFeature 远击|漫游者|NMD|1|NMD}攻击命中一个生物时，你可以消耗一次传送门技艺使用次数，跃过你武器周围开启的传送门，出现在目标5尺内一个未被占据的空间中。如果该攻击以远程武器进行，你可以在攻击后朝任意方向移动至多你的{@classFeature 远击|漫游者|NMD|1|NMD}距离。"
+			]
+		},
+		{
+			"ENG_name": "Planar Link feature",
+			"name": "位面链接特性",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得一项由你的位面链接赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以选择一项属性值提升2点，或两项属性值各提升1点。与通常一样，你无法藉此将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Planar Travel",
+			"name": "位面旅行",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 9,
+			"entries": [
+				"在9级时，你不必再四处寻找位面传送门。你可以在自己的回合内以一个动作建立一条位面间链接。你开启一道通往某个你曾到过且仍记得的地点的传送门，其位于你5尺内一个未被占据的空间中。传送门的目的地必须位于你当前不在的位面，且透过传送门可以看见彼处。",
+				"这道传送门足够中型或更小的生物轻松通过。被迫进入传送门的生物可以进行一次敏捷豁免以避免穿行。豁免成功时，该生物出现在传送门旁边一个未被占据的空间中；否则，它将被送入传送门，去往目的地。传送门维持开放1分钟，或直到你在自己的回合内以一个附赠动作将其关闭。",
+				"一旦使用了此特性，在完成一次{@quickref 休息|PHB|2|0|短休或长休}之前，你不能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Planar Link feature",
+			"name": "位面链接特性",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 10,
+			"entries": [
+				"在10级时，你获得一项由你的位面链接赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Far Strike Improvement",
+			"name": "远击增强",
+			"source": "NMD",
+			"page": 2,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 11,
+			"entries": [
+				"当你到达11级时，你的{@classFeature 远击|漫游者|NMD|1|NMD}距离提升到20尺。"
+			]
+		},
+		{
+			"ENG_name": "Split Strike",
+			"name": "分裂打击",
+			"source": "NMD",
+			"page": 4,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 11,
+			"entries": [
+				"到11级时，你已学会创造拥有多个出口的特殊传送门。在你的回合内一次，当你采取{@action 攻击}动作时，你可以以你的一次{@classFeature 远击|漫游者|NMD|1|NMD}攻击指定第二个目标。该攻击的两个目标共用同一次攻击检定。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以选择一项属性值提升2点，或两项属性值各提升1点。与通常一样，你无法藉此将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Portal Art: Falling Dodge",
+			"name": "传送门技艺：坠落闪避",
+			"source": "NMD",
+			"page": 4,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 13,
+			"entries": [
+				"当你到达13级时，你学会借脚下的一道快速传送门脱离险境。作为一个反应，当你成为一个允许你进行敏捷豁免的攻击或效应的目标时，你可以消耗一次传送门技艺使用次数，传送到你15尺内一个你能看见的未被占据的空间。如果你传送到该效应的范围之外，该效应便不再以你为目标。"
+			]
+		},
+		{
+			"ENG_name": "Planar Link feature",
+			"name": "位面链接特性",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 14,
+			"entries": [
+				"在14级时，你获得一项由你的位面链接赋予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Planar Rejuvenation",
+			"name": "位面复苏",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 15,
+			"entries": [
+				"到15级时，每当危险出现，你位面之力的极限便会得到延伸。当你掷先攻且没有剩余的传送门技艺使用次数时，你恢复一次使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以选择一项属性值提升2点，或两项属性值各提升1点。与通常一样，你无法藉此将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Nomadic Jaunt",
+			"name": "漫游信步",
+			"source": "NMD",
+			"page": 4,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 17,
+			"entries": [
+				"到17级时，你几乎不再需要步行。在你的回合内一次，你可以消耗至多一半的步行速度，改为传送同样的距离，出现在一个你能看见的未被占据的空间中。"
+			]
+		},
+		{
+			"ENG_name": "Far Strike Improvement",
+			"name": "远击增强",
+			"source": "NMD",
+			"page": 2,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 18,
+			"entries": [
+				"当你到达18级时，你的{@classFeature 远击|漫游者|NMD|1|NMD}距离提升到30尺。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "NMD",
+			"page": 3,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以选择一项属性值提升2点，或两项属性值各提升1点。与通常一样，你无法藉此将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Interplanar Gateway",
+			"name": "位面间门径",
+			"source": "NMD",
+			"page": 4,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"level": 20,
+			"entries": [
+				"在20级时，你创造传送门的技艺已臻化境，足以造出经得起时间考验的稳定门户。耗费4小时的工作与400gp的材料，你可以创造一道足以让中型或更小生物通行的永久位面门径；若要供大型或更小生物通行，则将时间与花费加倍。你必须创造两道门径，才能在二者之间往来。",
+				"此特性创造的门径是木、金属或其他材料制成的圆形框架，框住一道传送门，并在创造者不在场时维持其稳定。如果框架以任何方式受损致残缺\u2014\u2014例如被烧毁、压碎或推倒\u2014\u2014传送门会立即关闭。",
+				"你同一时间最多可以维持6道门径。每道门径只能与另一道门径相连，形成一条双向通道。任何能纳入传送门的生物在接触到它时便会穿行而过。门径的传送门可以通过一个1分钟的仪式停用，从而改与其他门径相连，或单纯关闭一段时间。",
+				"使用门径时务必谨慎。一旦被不速的宇宙来客发现，它们可能会危及整个位面。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "The Astral Plane",
+			"name": "星光位面",
+			"source": "NMD",
+			"page": 7,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "星光",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"星光位面以其浩瀚环抱着整个多元宇宙，维系着平衡，并使诸位面之间的往来成为可能。所有传送门都必须经由星光位面，而与它链接的漫游者也是所有漫游者中游历最广的一群。这些漫游者运用他们对星光位面的了解，将他们的传送门铸造技艺锤炼得超越所有其他人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "传送门技艺：挪移|漫游者|NMD|星光|NMD|3|NMD"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "出其不意打击|漫游者|NMD|星光|NMD|3|NMD"
+				}
+			]
+		},
+		{
+			"ENG_name": "Portal Art: Shift",
+			"name": "传送门技艺：挪移",
+			"source": "NMD",
+			"page": 7,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "星光",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此链接时，你已将你的传送门塑形能力磨炼得能够迅速且几乎毫无预警地移动生物。作为一个附赠动作，你可以强迫你30尺内一个你能看见的大型或更小的生物进行一次敏捷豁免。豁免失败时，该生物被传送到你30尺内一个你选择的未被占据的空间。如果某生物愿意被传送，它可以自动豁免失败。此传送的目的地无须位于地面。",
+				"或者，你也可以在该友方生物的回合内以一个反应，将一名盟友传送至多此传送门技艺最大距离的一半。",
+				"此传送门技艺的最大距离在11级时提升到60尺，在17级时提升到90尺。"
+			]
+		},
+		{
+			"ENG_name": "Surprising Strike",
+			"name": "出其不意打击",
+			"source": "NMD",
+			"page": 7,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "星光",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此链接时，你已改良了你用于攻击的传送门，使其能出其不意地出现。作为一个附赠动作，你可以让你本回合的下一次{@classFeature 远击|漫游者|NMD|1|NMD}攻击从敌人的视觉死角发起。如果该攻击的目标处于另一个对其怀有敌意的生物的近战范围内，该攻击具有{@quickref 优势与劣势|PHB|2|0|优势}。"
+			]
+		},
+		{
+			"ENG_name": "Distant Grip",
+			"name": "遥握",
+			"source": "NMD",
+			"page": 7,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "星光",
+			"subclassSource": "NMD",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"你的传送门足够稳固，能够承受门内的挣扎。当你到达7级时，你可以尝试远程{@action 擒抱}生物。",
+				"你可以在自己的回合内以一个动作，在你的{@classFeature 远击|漫游者|NMD|1|NMD}距离内创造一道格外稳固的传送门，并将你的手臂探入门中，尝试{@action 擒抱}门另一端的目标，如同你与其相邻。如果你成功{@action 擒抱}了目标，你可以继续保持擒抱至多1分钟，或直到你移动到目标5尺内。同一时间你只能以此方式让一个生物处于{@condition 受擒}状态。",
+				"如果目标被迫朝任意方向移动超过5尺，它便不再处于{@condition 受擒}状态。"
+			]
+		},
+		{
+			"ENG_name": "Portal Art: Redirection Shield",
+			"name": "传送门技艺：偏转护盾",
+			"source": "NMD",
+			"page": 7,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "星光",
+			"subclassSource": "NMD",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"在10级时，你发展出一种以彼之道还施彼身的独特法门。",
+				"作为一个附赠动作，你消耗一次传送门技艺使用次数，创造一道悬于你身侧并随你移动的传送门。传送门至多维持1分钟。",
+				"当你成为一次未命中的近战武器攻击的目标时，你可以用你的反应将这次攻击经由这道传送门偏转。在你30尺内选择一个生物，包括攻击者本身。该生物必须进行一次敏捷豁免，豁免失败即被该次攻击命中。"
+			]
+		},
+		{
+			"ENG_name": "Master of Portals",
+			"name": "传送门大师",
+			"source": "NMD",
+			"page": 7,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "星光",
+			"subclassSource": "NMD",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"当你到达14级时，你能维持的传送门远多于其他任何漫游者。你的传送门技艺使用次数等于你的感知调整值+2。"
+			]
+		},
+		{
+			"ENG_name": "The Elemental Planes",
+			"name": "元素位面",
+			"source": "NMD",
+			"page": 5,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "元素",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已与一个或多个元素位面建立链接\u2014\u2014它们是多元宇宙中四股元素之力之源。也许是它们纯粹的形态呼应对你内心对质朴的渴望，也许是你如火的性灵或流变的世界观在这些位面中最如鱼得水。无论如何，你已积累起对这些位面及其最强大地点的渊博知识，并能以你的传送门汲取彼处之力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "传送门技艺：元素打击|漫游者|NMD|元素|NMD|3|NMD"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素之触|漫游者|NMD|元素|NMD|3|NMD"
+				}
+			]
+		},
+		{
+			"ENG_name": "Portal Art: Elemental Strikes",
+			"name": "传送门技艺：元素打击",
+			"source": "NMD",
+			"page": 5,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "元素",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此链接时，你开始运用你的传送门引出元素位面的力量。当你以一次{@classFeature 远击|漫游者|NMD|1|NMD}攻击命中一个生物时，你可以消耗一次传送门技艺使用次数，让你的武器或弹药在命中目标之前先穿过一个元素位面。此攻击造成额外的{@damage 3d6}寒冷、火焰、闪电或毒素伤害。",
+				"此伤害在11级时提升为{@damage 3d8}，在17级时提升为{@damage 3d10}。"
+			]
+		},
+		{
+			"ENG_name": "Touch of The Elements",
+			"name": "元素之触",
+			"source": "NMD",
+			"page": 5,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "元素",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此链接时，你学会将元素之力悄然融入你的战斗能力。当你在自己的回合以一次{@classFeature 远击|漫游者|NMD|1|NMD}攻击命中一个生物时，你可以用你的附赠动作让元素之力也透过传送门涌出，使该攻击额外造成等于你感知调整值的毒素、火焰、寒冷或闪电伤害（由你选择）。"
+			]
+		},
+		{
+			"ENG_name": "Elemental Affinity",
+			"name": "元素亲和",
+			"source": "NMD",
+			"page": 5,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "元素",
+			"subclassSource": "NMD",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"你在元素位面的岁月让你的身体适应了彼处严酷的环境。在7级时，你选择一个你已适应的位面并获得其特性。",
+				{
+					"type": "options",
+					"count": 1,
+					"style": "list-hang-notitle",
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "元素亲和：气|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "元素亲和：地|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "元素亲和：火|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "元素亲和：水|NMD"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Portal Art: Elemental Allies",
+			"name": "传送门技艺：元素盟友",
+			"source": "NMD",
+			"page": 5,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "元素",
+			"subclassSource": "NMD",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"当你到达10级时，你在元素位面中已攒下足够的交情，可以请求{@filter 魔蝠|bestiary|source=|miscellaneous=|search=魔蝠}的援助\u2014\u2014它们是代表元素两两组合的小型小鬼状元素生物。你可以在自己的回合内以一个动作消耗一次传送门技艺使用次数，召唤至多两只{@filter 魔蝠|bestiary|source=|miscellaneous=|search=魔蝠}，使其出现在你15尺内的未被占据的空间中。同一时间你以此方式召唤的{@filter 魔蝠|bestiary|source=|miscellaneous=|search=魔蝠}只能有两只。",
+				"{@filter 魔蝠|bestiary|source=|miscellaneous=|search=魔蝠}对你的同伴漠不关心，但视你为应予服从之人。它们作为一个整体掷先攻，拥有自己的回合。它们理解并服从你发出的任何言语指令（你无须消耗动作）。如果你不向它们下达指令，它们会自卫抵御敌对生物，但不会采取其他行动。DM掌握{@filter 魔蝠数据|bestiary|source=|miscellaneous=|search=魔蝠}。",
+				"{@filter 魔蝠|bestiary|source=|miscellaneous=|search=魔蝠}至多停留1小时，之后返回元素位面；你也可以在自己的回合内以一个动作遣散其中一只或全部。"
+			]
+		},
+		{
+			"ENG_name": "Planar Collision",
+			"name": "位面冲撞",
+			"source": "NMD",
+			"page": 5,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "元素",
+			"subclassSource": "NMD",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"到14级时，你操纵位面的力量更上层楼，得以召来你所联结的元素巨力的大规模显现。你可以在自己的回合内以一个动作产生以下效应之一。抵抗这些效应的豁免DC等于你的传送门技艺豁免DC。一旦你使用了其中任何一种能力，在完成一次{@quickref 休息|PHB|2|0|长休}之前，你不能再次使用此特性。",
+				{
+					"type": "options",
+					"count": 1,
+					"style": "list-hang-notitle",
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "位面冲撞：气|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "位面冲撞：地|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "位面冲撞：火|NMD"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "位面冲撞：水|NMD"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "The Far Realm",
+			"name": "遥远国度",
+			"source": "NMD",
+			"page": 6,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "遥远国度",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"星光位面之外的黑暗广域，是连漫游者也鲜少踏足之地。无数不可名状的恐怖潜伏于遥远国度，那是凡人不应得见之物。彼处的空气浓稠如铁水，味道宛如永恒。时间曲折而行，颜色尽皆错乱。你曾走到界外，见过令神明也相形见绌的存在，也见过令前者亦相形见绌者。这片无垠黑色国度的浩瀚将你的心神拽回其可怕的深渊，而不论好坏，它已经选择了你。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "传送门技艺：黑洞|漫游者|NMD|遥远国度|NMD|3|NMD"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "深渊鞭击|漫游者|NMD|遥远国度|NMD|3|NMD"
+				}
+			]
+		},
+		{
+			"ENG_name": "Deep Lash",
+			"name": "深渊鞭击",
+			"source": "NMD",
+			"page": 6,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "遥远国度",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级选择此链接时，你对栖居于遥远国度深处的可怖之物已有几分了解。当你在自己的回合以一次{@classFeature 远击|漫游者|NMD|1|NMD}攻击命中一个中型或更小的生物时，你可以用你的附赠动作从你的传送门中唤出一条病态的漆黑附肢，尝试移动你的目标。该生物必须对抗你的传送门技艺豁免DC进行一次力量豁免。豁免失败时，目标被朝任意方向拉近至多5尺。"
+			]
+		},
+		{
+			"ENG_name": "Portal Art: Black Hole",
+			"name": "传送门技艺：黑洞",
+			"source": "NMD",
+			"page": 6,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "遥远国度",
+			"subclassSource": "NMD",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"遥远国度本身就是一场无尽的饥饿。在3级选择此链接时，你可以运用这份饥饿来辅助你战斗。你可以在自己的回合内以一个动作消耗一次传送门技艺使用次数，在你60尺内一个你能看见的未被占据的空间中开启一道致密的球形传送门。除你之外，所有在传送门20尺内开始回合的大型或更小的生物，必须通过一次力量豁免，否则被朝传送门方向直接拉近至多10尺。在传送门5尺内开始回合且力量豁免失败的生物，则是速度减半，持续到其当前回合结束。",
+				"传送门在此空间中至多维持1分钟，并可以一个附赠动作将其解除。同一时间你只能让一个黑洞保持活跃。"
+			]
+		},
+		{
+			"ENG_name": "Portal Art: Madness of The Infinite Void",
+			"name": "传送门技艺：无尽虚空之疯狂",
+			"source": "NMD",
+			"page": 6,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "遥远国度",
+			"subclassSource": "NMD",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"在7级时，你重新忆起遥远国度中某个格外可怖的景象。你可以在自己的回合内以一个动作消耗一次传送门技艺使用次数，在你面前开启一道狭窄的传送门，朝向你的一侧不透明。在外侧表面上，你展现出遥远国度的某种足以令任何凡人发疯的不可理喻的恐怖。",
+				"你面前60尺锥形扩散范围内能看到该传送门的敌对生物必须进行一次感知豁免。豁免失败的生物受到{@damage 4d6}心灵伤害，并对你陷入{@condition 恐慌}，持续至多1分钟；豁免成功则伤害减半且不会{@condition 恐慌}。处于{@condition 恐慌}状态的生物可以在其每个回合结束时重复豁免，成功则结束该效应。"
+			]
+		},
+		{
+			"ENG_name": "Insatiable Hunger",
+			"name": "无尽饥渴",
+			"source": "NMD",
+			"page": 6,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "遥远国度",
+			"subclassSource": "NMD",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"在10级时，你得知遥远国度中一个更加可畏的地点，可用作你传送门技艺之力源。当你在自己的回合内以一个动作使用{@subclassFeature 传送门技艺：黑洞|漫游者|NMD|遥远国度|NMD|3|NMD|黑洞传送门技艺}时，阴影般触手状的附肢会自其中向外伸展，携着某种邪异的意识朝附近的生物蠕动而去。",
+				"在传送门5尺内开始回合且力量豁免失败的生物会被触手{@condition 束缚}。在每个被{@condition 束缚}的生物的回合开始时，触手冰冷的紧握会使该生物受到等于你熟练加值的寒冷伤害。受到此伤害后，该生物可以重复豁免，成功则结束该效应。"
+			]
+		},
+		{
+			"ENG_name": "Eldritch Truth",
+			"name": "邪异真相",
+			"source": "NMD",
+			"page": 6,
+			"className": "漫游者",
+			"classSource": "NMD",
+			"subclassShortName": "遥远国度",
+			"subclassSource": "NMD",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"遥远国度的邪异之境容纳着关乎万事万物的种种知识。有些事你记忆犹新，仿佛仍历历在目；另一些则全然无踪，仿佛被封存于意识的最深处。当你到达14级时，你可以尝试将这种知识召至你心智的最前沿。",
+				"你可以进行一个4小时的仪式，尝试从遥远国度中回溯细节。仪式结束时掷一次{@dice d20}。若掷出3或更低，你的心智被无法辨读的邪异知识淹没，受到{@damage 3d10}心灵伤害。若掷出3到16之间，仪式结束，一无所获。若掷出16或更高，你回忆起你在心中所问两个问题的答案。这些问题可以关乎多元宇宙的本质、诸神与更高的力量，以及凡人与这些概念或存在之间的重大往来。",
+				"例如，你可以得知某位大魔鬼与某位显赫凡人之间的一笔交易、物质位面上一道重要传送门的下落，或者某位半神获取其力量的缘由。",
+				"不过，你对遥远国度之知识的体验并非无穷无尽。你所问问题的答案可能是未知的，甚至可能是不可知的，这取决于其主题。",
+				"一旦进行了此仪式，在完成一次{@quickref 休息|PHB|2|0|长休}之前，你不能再次尝试。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "EA: Air",
+			"name": "元素亲和：气",
+			"source": "NMD",
+			"page": 5,
+			"featureType": [
+				"NMD:EA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD"
+						},
+						"subclass": {
+							"ENG_name": "Elemental",
+							"name": "元素",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 7
+					}
+				}
+			],
+			"resist": [
+				"lightning"
+			],
+			"entries": [
+				"你获得闪电伤害抗性。你还获得随微风轻盈飘流的能力。当你坠落时，可以选择以每轮60尺的减速下落（无须动作）。以这一速度落地时，你不会受到坠落伤害，并能以双脚着地。"
+			]
+		},
+		{
+			"ENG_name": "EA: Earth",
+			"name": "元素亲和：地",
+			"source": "NMD",
+			"page": 5,
+			"featureType": [
+				"NMD:EA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD"
+						},
+						"subclass": {
+							"ENG_name": "Elemental",
+							"name": "元素",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 7
+					}
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				"你获得毒素伤害抗性。此外，你获得30尺攀爬速度，且穿过由崎岖或松软土地造成的非魔法困难地形不会消耗额外移动力。"
+			],
+			"foundryEffects": [
+				{
+					"changes": [
+						{
+							"key": "data.attributes.movement.climb",
+							"mode": "UPGRADE",
+							"value": "30"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "EA: Fire",
+			"name": "元素亲和：火",
+			"source": "NMD",
+			"page": 5,
+			"featureType": [
+				"NMD:EA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD"
+						},
+						"subclass": {
+							"ENG_name": "Elemental",
+							"name": "元素",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 7
+					}
+				}
+			],
+			"resist": [
+				"fire"
+			],
+			"entries": [
+				"你获得火焰伤害抗性。此外，作为一个反应，当你受到火焰伤害时，你可以尝试将其完全抖落。你可以消耗生命骰并掷骰，将剩余的火焰伤害减少掷出的点数。"
+			]
+		},
+		{
+			"ENG_name": "EA: Water",
+			"name": "元素亲和：水",
+			"source": "NMD",
+			"page": 5,
+			"featureType": [
+				"NMD:EA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD"
+						},
+						"subclass": {
+							"ENG_name": "Elemental",
+							"name": "元素",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 7
+					}
+				}
+			],
+			"resist": [
+				"cold"
+			],
+			"entries": [
+				"你获得寒冷伤害抗性。此外，你获得30尺游泳速度，并能在水下闭气至多20分钟。"
+			],
+			"foundryEffects": [
+				{
+					"changes": [
+						{
+							"key": "data.attributes.movement.swim",
+							"mode": "UPGRADE",
+							"value": "30"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "PC: Air",
+			"name": "位面冲撞：气",
+			"source": "NMD",
+			"page": 5,
+			"featureType": [
+				"NMD:PC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD"
+						},
+						"subclass": {
+							"ENG_name": "Elemental",
+							"name": "元素",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 14
+					}
+				}
+			],
+			"entries": [
+				"一道巨大的传送门在你正前方开启，强风自门中涌出，雷鸣般的轰响不绝于耳。一道超乎自然的巨型闪电在你正前方劈出一条15尺宽的直线，延伸至多达600尺。处于这条直线上的生物必须进行一次敏捷豁免，豁免失败者受到{@damage 4d8}闪电伤害并{@condition 震慑}到其下个回合结束，豁免成功者伤害减半且不会被{@condition 震慑}。此能力产生的震耳爆响在1000尺外都能听见。"
+			]
+		},
+		{
+			"ENG_name": "PC: Earth",
+			"name": "位面冲撞：地",
+			"source": "NMD",
+			"page": 5,
+			"featureType": [
+				"NMD:PC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD"
+						},
+						"subclass": {
+							"ENG_name": "Elemental",
+							"name": "元素",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 14
+					}
+				}
+			],
+			"entries": [
+				"你从一道同样巨大的传送门中唤出一块庞大而嶙峋的巨石，将它射向你90尺内一个你能看见的地点。以该地点为中心20尺半径球状范围内的生物必须进行一次敏捷豁免，豁免失败者受到{@damage 8d10}钝击伤害，豁免成功者伤害减半。"
+			]
+		},
+		{
+			"ENG_name": "PC: Fire",
+			"name": "位面冲撞：火",
+			"source": "NMD",
+			"page": 5,
+			"featureType": [
+				"NMD:PC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD"
+						},
+						"subclass": {
+							"ENG_name": "Elemental",
+							"name": "元素",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 14
+					}
+				}
+			],
+			"entries": [
+				"你在你上方开启一道巨大的传送门，火元素位面燃烧的天空透过门扉清晰可见。六颗陨石自传送门中飞出。每颗陨石锁定一个你60尺内能看见的由你选择的生物。被陨石锁定的生物必须为每颗锁定它的陨石进行一次敏捷豁免，每颗豁免失败的陨石造成{@damage 4d6}火焰伤害，豁免成功则该颗伤害减半。你可以引导陨石击中一个或多个生物。"
+			]
+		},
+		{
+			"ENG_name": "PC: Water",
+			"name": "位面冲撞：水",
+			"source": "NMD",
+			"page": 5,
+			"featureType": [
+				"NMD:PC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD"
+						},
+						"subclass": {
+							"ENG_name": "Elemental",
+							"name": "元素",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 14
+					}
+				}
+			],
+			"entries": [
+				"五根巨大的冰柱从你60尺内五个你能看见的所选位置的传送门中升起。冰柱高至多15尺，底部直径10尺。冰柱生成时处于其路径上的生物必须通过一次敏捷豁免，失败者受到{@damage 3d8}寒冷伤害（成功者减半），随后被移到紧邻冰柱最近的未被占据的空间。每根冰柱有50点生命值，AC为10。你可以在自己的回合内以一个附赠动作摧毁至多5根冰柱。冰柱会一直存在，直到被摧毁。"
+			]
+		},
+		{
+			"ENG_name": "Planar Piercing",
+			"name": "位面穿刺",
+			"source": "NMD",
+			"page": 3,
+			"featureType": [
+				"NMD:WA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 2
+					}
+				}
+			],
+			"entries": [
+				"当你单手持一把近战武器且不持其他武器时，你可以用空着的手稳住你的传送门，更仔细地瞄准你的攻击。你以单手近战武器且不持其他武器进行的{@classFeature 远击|漫游者|NMD|1|NMD}攻击，伤害掷骰获得+2加值。"
+			]
+		},
+		{
+			"ENG_name": "Port Retrieving",
+			"name": "传送门取物",
+			"source": "NMD",
+			"page": 3,
+			"featureType": [
+				"NMD:WA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 2
+					}
+				}
+			],
+			"entries": [
+				"你已训练自己在投掷武器时精准地利用传送门，使投掷武器也能进行{@classFeature 远击|漫游者|NMD|1|NMD}攻击。你的投掷武器攻击距离增加你的{@classFeature 远击|漫游者|NMD|1|NMD}距离。此外，当你的投掷武器攻击未命中时，你的武器会立刻经由第二道传送门回到你手中。"
+			]
+		},
+		{
+			"ENG_name": "Two-Hand Warping",
+			"name": "双手折跃",
+			"source": "NMD",
+			"page": 3,
+			"featureType": [
+				"NMD:WA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 2
+					}
+				}
+			],
+			"entries": [
+				"你发展出了一种双手持武器也能开启传送门的技法。你在使用{@classFeature 远击|漫游者|NMD|1|NMD}能力时，可以使用具有{@itemProperty 2H||双手}属性的武器。"
+			]
+		},
+		{
+			"ENG_name": "Wormhole Sniping",
+			"name": "虫洞狙击",
+			"source": "NMD",
+			"page": 3,
+			"featureType": [
+				"NMD:WA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"source": "NMD",
+							"visible": true
+						},
+						"level": 2
+					}
+				}
+			],
+			"entries": [
+				"你已学会将你的传送门运用于{@filter 弓与弩|items|source=|type=|category=|base item=hand crossbow__phb;heavy crossbow__phb;light crossbow__phb;longbow__phb;shortbow__phb}的迅捷弹矢之上，使你能以它们进行{@classFeature 远击|漫游者|NMD|1|NMD}攻击。只要目标位于武器的常规射程内，以远程武器进行的远击攻击便无视{@quickref 掩护|PHB|3|0|半身掩护，并将四分之三掩护视作半身掩护}。这不会改变武器的射程。"
+			]
+		}
+	],
+	"table": [
+		{
+			"ENG_name": "Per Rest Abilities",
+			"name": "每休整恢复的能力",
+			"source": "NMD",
+			"page": 9,
+			"colLabels": [
+				"能力",
+				"恢复基准"
+			],
+			"colStyles": [
+				"col-6",
+				"col-6"
+			],
+			"rows": [
+				[
+					"传送门技艺",
+					"感知/短休"
+				],
+				[
+					"位面旅行",
+					"1/短休"
+				],
+				[
+					"元素：位面冲撞",
+					"1/长休"
+				],
+				[
+					"遥远国度：邪异真相",
+					"1/长休"
+				],
+				[
+					"星光：不适用",
+					"\u2014"
+				]
+			],
+			"outro": [
+				"{@b 需要记录的能力上限：3}"
+			]
+		},
+		{
+			"ENG_name": "Portal Arts by Level",
+			"name": "各等级传送门技艺",
+			"source": "NMD",
+			"page": 9,
+			"colLabels": [
+				"等级",
+				"技艺数量",
+				"传送门技艺"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-2 text-center",
+				"col-8"
+			],
+			"rows": [
+				[
+					"1",
+					"0",
+					"\u2014"
+				],
+				[
+					"2",
+					"1",
+					"传送门"
+				],
+				[
+					"3",
+					"2",
+					"传送门、链接技艺#1"
+				],
+				[
+					"6",
+					"3",
+					"传送门、链接技艺#1、闪烁打击"
+				],
+				[
+					"10",
+					"4",
+					"传送门、链接技艺#1、闪烁打击、链接技艺#2"
+				],
+				[
+					"13",
+					"5",
+					"传送门、链接技艺#1、闪烁打击、链接技艺#2、坠落闪避"
+				],
+				[
+					"20",
+					"5",
+					"传送门、链接技艺#1、闪烁打击、链接技艺#2、坠落闪避"
+				]
+			],
+			"outro": [
+				"{@b 传送门技艺选项上限：5}"
+			]
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "The Nomad: A Class for Planar Travelers",
+			"name": "漫游者：位面旅者的职业",
+			"id": "NMD",
+			"source": "NMD",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Cover.webp"
+			},
+			"published": "2018-09-05",
+			"author": "文森特·吉尔真蒂（u/SubjectiveSloth）",
+			"contents": [
+				{
+					"ENG_name": "Cover Page",
+					"name": "封面"
+				},
+				{
+					"ENG_name": "Nomad",
+					"name": "漫游者"
+				},
+				{
+					"ENG_name": "Planar Links",
+					"name": "位面链接",
+					"headers": [
+						"元素位面",
+						"遥远国度",
+						"星光位面"
+					]
+				},
+				{
+					"ENG_name": "Design Considerations",
+					"name": "设计考量"
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "致谢"
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "NMD",
+			"source": "NMD",
+			"data": [
+				{
+					"type": "section",
+					"ENG_name": "Cover Page",
+					"name": "封面",
+					"page": "cover",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Cover-Full.webp"
+							},
+							"width": 736,
+							"height": 951
+						}
+					],
+					"id": "000"
+				},
+				{
+					"type": "section",
+					"ENG_name": "Nomad",
+					"name": "漫游者",
+					"page": 1,
+					"entries": [
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Nomad.webp"
+									},
+									"width": 713,
+									"height": 2000
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Planes1.webp"
+									},
+									"width": 1536,
+									"height": 2048
+								}
+							]
+						},
+						"一位少女从火焰中纵身跃出，火光之下，她闪亮的银发与她赭色的肌肤相映成趣。她迅速将匕首掷向前方的邪教徒，但匕首刚一离手便在一道闪光中消失。那敌人向她逼近，随即发出一声凄厉的呻吟倒在地上。一柄小小的匕首正插在他的后背正中。",
+						"一位年迈的精灵老人伫立在一座极高悬崖的边缘，破裂的眼镜低垂在干瘪的鼻梁上。他凝望远方，那是一片明亮而美丽的原野，青翠的群山与山谷延绵不绝，两座巨大的漂浮石岛更显奇景。他对自己轻声一笑，随即一道闪光遮住了他的视野，一个色彩旋动的圆盘在他面前开启。",
+						"漫游者是位面旅者、猎手、追踪者、流浪者与探险家。他们是穿行位面的行家，其旅行欲永难餍足，其旅程永无止境。",
+						{
+							"ENG_name": "An Unending Journey",
+							"type": "entries",
+							"name": "无尽的旅程",
+							"page": 1,
+							"entries": [
+								"漫游者的一生是发现与冒险的一生，追寻着一个被称为\"漫游之旅\"的概念。这是大多数漫游者的终极目标\u2014\u2014一个体验存在之每个面向的目标。漫游者追寻的是旅途中将降临于他们身上的一切，汲取并享受生命的所有体验。",
+								"有些人选择结成大队伍一同穿越位面，寻求人际间的体验。另一些人则享受个人旅程的孤独，选择独自探索宇宙的无限可能。",
+								"漫游者通常很难在任何一个地方定居太久，即使岁月将尽也是如此。对大多数漫游者而言，在离世前终结漫游之旅这种事根本不会发生，这便是漫游者的志向。"
+							],
+							"id": "002"
+						},
+						{
+							"ENG_name": "A Peculiar Attraction",
+							"type": "entries",
+							"name": "奇特的吸引",
+							"page": 1,
+							"entries": [
+								"穿行位面的人会发现自己被某个位面的某些特质所吸引。随着时间与距离的推移，这种吸引，或者说链接，会愈发强烈，以他们自己或许也无法理解的方式将漫游者的心神引回彼处。这种链接触及一个人灵魂深处的某些面向，并将其与位面维系在一起，是位面及其异界之力在旅者心中留下的一种恒久显化。",
+								"研究位面的人提出了一种理论：位面之间存在一种类似于大地板块位移的力量，会产生强大的魔法。这种魔法拥有某种近似于宏大意识的东西，能够\"看见\"它所影响的生物。由这些理论衍生出一种部分漫游者之间的崇拜，他们将自己视为巨轮这一邪异存在的低阶守护者，尽管并非所有人都相信这种说法。",
+								"漫游者形成的链接，可能是他们当场便有所预期或立即感知到的明确选择，也可能只是某个短暂途经的位面在他们心中留下的一缕微妙印记。"
+							],
+							"id": "003"
+						},
+						{
+							"ENG_name": "Creating a Nomad",
+							"type": "entries",
+							"name": "创造漫游者",
+							"page": 2,
+							"entries": [
+								"在创造你的漫游者角色时，想一想是什么让他们最初踏上漫游之旅，又是什么让他们坚持这趟追寻。是你的父亲或母亲带你踏上了旅途？你听闻过某个遥远位面的奇幻传说？还是你只是厌倦了物质位面的平淡琐碎？",
+								"你在旅途中做过什么？可曾在喧癫空隧与九层地狱间仓皇奔逃？可曾在双生天堂中悠然漫步，从而重新审视自己的动机？甚至可曾在外层位面最负盛名的酒馆间来一场旋风般的狂欢畅游？",
+								"你的位面链接对你造成了什么影响？也许你尽管自幼闭门不出，却与某个可憎的邪恶位面建立了链接，它唤起了你一度忘却的阴暗念头？又或者你真正与你的位面心意相通，常常在去留之间苦苦挣扎，最终还是离它而去？",
+								"位面与漫游者的千姿百态意味着他们可以属于任何阵营或任何位面链接，不过大多数见识过善、恶、律法与混沌之极端的人，都更愿意保持中立。"
+							],
+							"id": "004"
+						},
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"page": 2,
+							"entries": [
+								"你可以依照以下建议快速创建一名漫游者。首先，力量或敏捷应是你最高的属性值，其次是感知。其次，选择{@background 化外之民}背景。"
+							],
+							"id": "005"
+						},
+						{
+							"type": "statblock",
+							"tag": "class",
+							"source": "NMD",
+							"ENG_name": "Nomad",
+							"name": "漫游者",
+							"page": 2
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Planes2.webp"
+									},
+									"width": 2048,
+									"height": 1152
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Planes3.webp"
+									},
+									"width": 1536,
+									"height": 2048
+								}
+							]
+						}
+					],
+					"id": "001"
+				},
+				{
+					"type": "section",
+					"ENG_name": "Planar Links",
+					"name": "位面链接",
+					"page": 5,
+					"entries": [
+						"尽管漫游者散居各方，他们仍通过共同的习性分享着某些相通的情致。漫游者追求尽可能多地见识与体验多元宇宙，但大多数人都会认同，自己与某一个特定之地有着特殊的联结。多元宇宙自有办法让这种联结变得切实可感，对那些常年在位面间穿梭的人而言尤其如此。",
+						{
+							"ENG_name": "The Elemental Planes",
+							"type": "entries",
+							"name": "元素位面",
+							"page": 5,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "NMD",
+									"ENG_name": "The Elemental Planes",
+									"name": "元素位面",
+									"page": 5,
+									"className": "漫游者",
+									"classSource": "NMD",
+									"shortName": "元素"
+								}
+							],
+							"id": "007"
+						},
+						{
+							"ENG_name": "The Far Realm",
+							"type": "entries",
+							"name": "遥远国度",
+							"page": 6,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "NMD",
+									"ENG_name": "The Far Realm",
+									"name": "遥远国度",
+									"page": 6,
+									"className": "漫游者",
+									"classSource": "NMD",
+									"shortName": "遥远国度"
+								},
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Eye.webp"
+											},
+											"width": 776,
+											"height": 748
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Planes4.webp"
+											},
+											"width": 1583,
+											"height": 2048
+										}
+									]
+								}
+							],
+							"id": "008"
+						},
+						{
+							"ENG_name": "The Astral Plane",
+							"type": "entries",
+							"name": "星光位面",
+							"page": 7,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "NMD",
+									"ENG_name": "The Astral Plane",
+									"name": "星光位面",
+									"page": 7,
+									"className": "漫游者",
+									"classSource": "NMD",
+									"shortName": "星光"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/NMD/Planes5.webp"
+									},
+									"width": 5800,
+									"height": 3752
+								}
+							],
+							"id": "009"
+						}
+					],
+					"id": "006"
+				},
+				{
+					"type": "section",
+					"ENG_name": "Design Considerations",
+					"name": "设计考量",
+					"page": 9,
+					"entries": [
+						{
+							"type": "statblock",
+							"tag": "table",
+							"ENG_name": "Per Rest Abilities",
+							"name": "每休整恢复的能力",
+							"source": "NMD",
+							"page": 9
+						},
+						{
+							"type": "statblock",
+							"tag": "table",
+							"ENG_name": "Portal Arts by Level",
+							"name": "各等级传送门技艺",
+							"source": "NMD",
+							"page": 9
+						}
+					],
+					"id": "00a"
+				},
+				{
+					"type": "section",
+					"ENG_name": "Credits",
+					"name": "致谢",
+					"page": 8,
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"columns": 2,
+							"page": 8,
+							"items": [
+								{
+									"type": "inset",
+									"page": 8,
+									"ENG_name": "Nomad v2.4",
+									"name": "漫游者 v2.4",
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"这一版本的漫游者仍在制作中，但已处于可游玩状态。",
+												{
+													"type": "section",
+													"entries": [
+														{
+															"ENG_name": "Art",
+															"type": "entries",
+															"name": "美术",
+															"page": 8,
+															"entries": [
+																"{@i 所有未署名的美术素材均取自DMsGuild Free Creators Resources与Arcana Games Stock Art Packs。}"
+															],
+															"id": "00e"
+														}
+													],
+													"id": "00d"
+												},
+												{
+													"type": "section",
+													"entries": [
+														{
+															"ENG_name": "Background",
+															"type": "entries",
+															"name": "创作背景",
+															"page": 8,
+															"entries": [
+																"这是我很久以来第一次尝试撰写一个完整职业，希望它能有好结果！我最近有机会在实际游戏中试用了两个有趣的自制职业：{@link 同伴|https://homebrewery.naturalcrit.com/share/HkbtsQUJGW}（/u/shadowsocks著）和{@link 贵族|https://drive.google.com/file/d/0B_fO9drMhlUealJLdFBXTHp2OG8/view}（/u/impersonater著）。两者读来都极为有趣，但一旦开始填角色卡，就会发现它们过于复杂而难以驾驭。我对它们的改进方向有些想法，这让我进入了制作职业的状态，也给了我终于回头打磨这个旧念头的动力。（顺带一提，\"同伴\"职业随时间推移已大有长进，最新版本比我当时试用的要好得多。）",
+																"这个职业的当前构想源自我正在制作的一个更大的自制项目，但在此之前我就设想过这种位面穿梭的流浪者，而它看起来正合适。不过职业的名字与独特性是个难题，因为任何冒险者当然都可以在位面间跳跃，却没有人拥有这样的力量。这促成了他们的背景传说以及\"漫游之旅\"与位面链接概念的发展，帮助确立这些角色与诸如边界行者游侠之类的角色相比，在意义上确有不同。",
+																"名字让我颇费了一番周折：它本可以直接叫\"鹏洛客\"，但那个名字已被用滥，还会招来与《万智牌》鹏洛客概念的不必要比较。于是我先后想到了\"位面寻者\"\"位面流浪者\"等衍生名，最后才想起UA秘术师及其以传送门为核心的子职业\u2014\u2014漫游者修会。",
+																"这个职业的机制定位在某些方面有意贴近/u/Layhnet的{@link 守卫者|https://drive.google.com/file/d/1_RIYUWCXLYp-tLkT5MjwOd7fN71r7r-h/view}（一个制作非常精良的职业）：一个兼具些许施法能力的武道职业，某种意义上是魔契师的镜像（魔契师是兼具些许武艺的施法职业）。",
+																"我发布的上一个版本终于收获了大量扎实的反馈。这个职业（理所应当地）因诸多不足被批得体无完肤，而我把许多这样的建设性批评铭记于心。现在，我自豪地献上漫游者2.0！"
+															],
+															"id": "010"
+														}
+													],
+													"id": "00f"
+												}
+											],
+											"by": "Reddit 用户 SubjectiveSloth",
+											"skipMarks": true,
+											"skipItalics": true
+										}
+									],
+									"id": "00c"
+								},
+								{
+									"type": "inset",
+									"page": 8,
+									"entries": [
+										{
+											"ENG_name": "My Other Works:",
+											"type": "list",
+											"name": "我的其他作品：",
+											"page": 8,
+											"items": [
+												"{@link 血脉狂暴者与旋风野蛮人道路|https://www.gmbinder.com/share/-L0gLiKABy1A9Ci7tfp4}",
+												"{@link 法术稀有度系统|https://www.gmbinder.com/share/-LAP8sDFAOprgtq5_ICk}",
+												"{@link 九层地狱领主的提夫林亚种|http://homebrewery.naturalcrit.com/share/BJH53Lvshb}",
+												"{@link 海妖与卢莎卡怪物|https://www.gmbinder.com/share/-LA-M19_X-6NaXcLKKci}",
+												"{@link 特迪姆，万物之主|http://homebrewery.naturalcrit.com/share/H1-wLakS5-}",
+												"{@link UA奇械师的机械师子职业|https://www.gmbinder.com/share/-L3co1FkjA8nFXXJNiZa}",
+												"{@link 《荣耀战魂》5e子职业|http://homebrewery.naturalcrit.com/share/H1-ehImhlW}",
+												"{@link 奈瑞斯，神话巨龙怪物|https://www.gmbinder.com/share/-LAP6KcNLa1PqOHjiiLi}",
+												"{@link 提夫林重构想|https://www.gmbinder.com/share/-L17WD8-J5K0KBQIyX3B}",
+												"{@link 陷阱师游荡者|https://www.gmbinder.com/share/-L2Y2LrVsBADYHqt78e9}",
+												"{@link 妖精触碰术士|https://www.gmbinder.com/share/-L0gMLI1UetfjZ1t633U}",
+												"{@link 内我武僧|https://www.gmbinder.com/share/-L2xX6g8AsJ2Me3RXYGS/-L2x_AtLtWdn2slR0LHE}",
+												"{@link 元素野蛮人|https://www.gmbinder.com/share/-L4nA6uzZLq-Ff_NiSJg}",
+												"{@link 门户吟游诗人学院|https://www.gmbinder.com/share/-L51sQeMktzTnuwVBSeg}",
+												"{@link 漫游者职业|https://www.gmbinder.com/share/-LBS9acGhZ4KbKb5m8hj}",
+												"{@link 边缘探寻者游荡者|https://www.gmbinder.com/share/-L8xS54A7hjWe3_XoURB}",
+												"{@link 平衡之道武僧|https://www.gmbinder.com/share/-L9h443fXFsJUalDPGQm}",
+												"{@link 非人类阿斯莫变体|https://www.gmbinder.com/share/-LAdaQQ-zP8MPXAmMVGf}",
+												"{@link 风味吟游诗人学院|https://www.gmbinder.com/share/-LB8zy5tUjFPSCtLdc3i}",
+												"{@link 游侠折跃狙击手|https://www.gmbinder.com/share/-LGmSzAOCNiAOKAfKVao}"
+											]
+										},
+										{
+											"ENG_name": "Support me on DM's Guild:",
+											"type": "list",
+											"name": "在城主公会上支持我：",
+											"page": 8,
+											"items": [
+												"{@link 提夫林重构想|http://www.dmsguild.com/product/240756/ReImagined-Tiefling-Race}",
+												"{@link 妖精触碰术士|http://www.dmsguild.com/product/240772/Sorcerous-Origin-FeyTouched}",
+												"{@link 漫游者职业|http://www.dmsguild.com/product/242632/The-Nomad-A-Class-for-Planar-Travelers}"
+											]
+										}
+									],
+									"id": "011"
+								},
+								{
+									"type": "inset",
+									"page": 8,
+									"ENG_name": "Recent Significant Changes",
+									"name": "近期重大变更",
+									"entries": [
+										{
+											"type": "list",
+											"page": 8,
+											"items": [
+												"{@b 坠落闪避}现在是传送门技艺，而非每短休一次的能力",
+												"{@b 位面间门径}调整了措辞，并补充了可摧毁此特性所造门径的相关说明",
+												"所有子职业都获得了一个额外的3级能力，用以在传送门技艺体系之外定义其玩法",
+												"{@b 元素知识}被{@b 元素亲和}取代",
+												"{@b 武艺}更新了名称，并新增一项投掷武艺{@b 传送门取物}",
+												"重新排版，以配合机制与措辞的变更"
+											]
+										}
+									],
+									"id": "012"
+								}
+							]
+						},
+						"{@note DUNGEONS & DRAGONS、D&D、Wizards of the Coast、Forgotten Realms、Ravenloft、龙形&符号（the dragon ampersand）以及Wizards of the Coast的所有其他产品名称及其各自标志，均为Wizards of the Coast在美国及其他国家/地区的商标。}",
+						"{@note 本作品包含受Wizards of the Coast和/或其他作者版权保护的材料。此类材料依据城主公会社区内容协议（Community Content Agreement for Dungeon Masters Guild）获许可使用。}",
+						"{@note 本作品中所有其他原创材料的版权[2018]归Vincent Girgenti所有，并依据城主公会社区内容协议出版。}"
+					],
+					"id": "00b"
+				}
+			]
+		}
+	]
+}
