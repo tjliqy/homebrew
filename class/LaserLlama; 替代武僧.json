@@ -1,0 +1,7586 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLAM",
+				"abbreviation": "LLAM",
+				"full": "替代武僧",
+				"url": "https://www.gmbinder.com/share/-MhGHvc1sNLoUrISINrV",
+				"version": "3.1.1",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle",
+					"DrGoo282",
+					"Lxran"
+				],
+				"color": "316167"
+			},
+			{
+				"json": "LLAM:E",
+				"abbreviation": "LLAM:E",
+				"full": "替代武僧扩展",
+				"url": "https://www.gmbinder.com/share/-MyVERQKKbawlJLVjpyo",
+				"version": "3.1.1",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle",
+					"Lxran"
+				],
+				"color": "316167"
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"llspell"
+			],
+			"optionalfeature": [
+				"LLExploits",
+				"LLStyles"
+			],
+			"feat": [
+				"llfeat"
+			]
+		},
+		"optionalFeatureTypes": {
+			"LLAM:T": "替代武僧; 秘术技法"
+		},
+		"edition": "classic",
+		"dateAdded": 1649140894,
+		"dateLastModified": 1789939048,
+		"_dateLastModifiedHash": "8695dc391b"
+	},
+	"class": [
+		{
+			"ENG_name": "Alternate Monk",
+			"name": "替代武僧",
+			"source": "LLAM",
+			"page": 1,
+			"hd": {
+				"faces": 10,
+				"number": 1
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Techniques",
+					"name": "技法",
+					"featureType": [
+						"LLAM:T"
+					],
+					"progression": [
+						0,
+						3,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						8,
+						8,
+						9,
+						9,
+						9,
+						10,
+						10,
+						10
+					]
+				}
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"{@item 短剑|phb|短剑}"
+				],
+				"tools": [
+					"一套{@item 工匠工具|phb}或一件{@item 乐器|phb}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"history",
+								"insight",
+								"nature",
+								"religion",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 短剑|phb}或 (b) 任意一件{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) 一把{@item 短弓|phb}和{@item 箭矢 (20)|phb|20支箭矢}或 (b) {@item 飞镖|phb|20支飞镖}",
+					"(a) 一个{@item 地城套组|phb}或 (b) 一个{@item 探索套组|phb}",
+					"(a) 一个{@item 圣徽|phb}或 (b) 一件{@item 乐器|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"短剑|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"短弓|phb",
+							"箭矢 (20)|phb"
+						],
+						"b": [
+							{
+								"item": "飞镖|phb",
+								"quantity": 20
+							}
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"a": [
+							"圣徽|phb"
+						],
+						"b": [
+							"乐器|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"simple",
+						"{@item 短剑|phb|短剑}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"武艺",
+						"无甲移动",
+						"已知技法"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 0
+							},
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							10
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"武艺|替代武僧|LLAM|1",
+				"无甲防御|替代武僧|LLAM|1",
+				"秘术技法|替代武僧|LLAM|2",
+				"无甲移动|替代武僧|LLAM|2",
+				{
+					"classFeature": "修行宗派|替代武僧|LLAM|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代武僧|LLAM|4",
+				"额外攻击|替代武僧|LLAM|5",
+				"启明打击|替代武僧|LLAM|6",
+				{
+					"classFeature": "宗派特性|替代武僧|LLAM|6",
+					"gainSubclassFeature": true
+				},
+				"反射闪避|替代武僧|LLAM|7",
+				"属性值提升|替代武僧|LLAM|8",
+				"宁神之魂|替代武僧|LLAM|9",
+				{
+					"classFeature": "宗派特性|替代武僧|LLAM|10",
+					"gainSubclassFeature": true
+				},
+				"武者之魂|替代武僧|LLAM|11",
+				"属性值提升|替代武僧|LLAM|12",
+				"百病不侵|替代武僧|LLAM|13",
+				"明净之心|替代武僧|LLAM|14",
+				"不朽身|替代武僧|LLAM|15",
+				"属性值提升|替代武僧|LLAM|16",
+				{
+					"classFeature": "宗派特性|替代武僧|LLAM|17",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代武僧|LLAM|19",
+				"澄澈之魂|替代武僧|LLAM|20"
+			],
+			"subclassTitle": "修行宗派",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Alternate Monk",
+			"name": "替代武僧",
+			"source": "LLAM",
+			"entries": [
+				{
+					"ENG_name": "The Monk",
+					"type": "section",
+					"name": "武僧",
+					"page": 1,
+					"source": "LLAM",
+					"entries": [
+						"食人魔朝他冲来，那人深吸一口气，让气回归平静。他回想起自己的训练，准备化解这迎面一击。当大棒砸在他片刻之前立足的尘土中时，武者已引动灵性之力，对着巨兽挥出一连串疾风骤雨般的打击。食人魔还没弄明白发生了什么，就已仰面躺在泥泞之中。",
+						"无月之夜，大地一片漆黑，霍布哥布林刺客们悄无声息地逼近敌方将领的营帐。这些武者自幼受训杀伐之技，无声无息地割杀了守卫。将领从睡梦中惊起，只见仇敌凭空自黑暗中现身，不由瞠目结舌。他欲呼救，却发不出半点声音\u2014\u2014刺客已掐灭了他的生命。刺客们来时无声，去时亦无息，转眼隐入夜色。",
+						"宗师踏步上前，封锁隘口。弟子们逃入群山之际，她凝视着即将扑至面前的大群哥布林。纵然她是巫觋之道最强大的大师之一，可即便在全盛之时，她也无望击败数量过半于此的敌人。她褪去肩上的斗篷，刺青上元素魔法的辉光流转闪烁。她凝聚起全身之气，准备让整座山岳倾覆于她与隘口之上。",
+						"上述三位武者皆是武僧\u2014\u2014身心灵魂的大师，引动神秘的气，成就精妙绝伦的武学绝技。",
+						{
+							"ENG_name": "Mastery of Body and Mind",
+							"type": "entries",
+							"name": "身心双修",
+							"page": 1,
+							"entries": [
+								"多数武者追求肉体的完美，武僧则打磨身心，使之协同如一。身与心皆臻化境后，武僧便能引动体内的灵性能量\u2014\u2014气。凭借这股力量，这些避世独修的武者得以施展超自然的绝技。",
+								"武僧总是向内求索，他们往往舍弃一切无法背负身外之物，转而追求无形的精神财富。无论追求的是开悟、喜乐、势均力敌的对手，还是对力量的试炼，所有武僧都有一个推动他们攀上灵性修行更高峰的理想或目标。"
+							]
+						},
+						{
+							"ENG_name": "Mystic Asceticism",
+							"type": "entries",
+							"name": "秘术苦行",
+							"page": 1,
+							"entries": [
+								"武僧多在隐秘的寺院或避世大师门下受训，为被宗门接纳为弟子，他们往往必须放弃一切继承权或头衔。有些宗师甚至要求弟子先为寺院苦役效力多年、矢志不渝，方肯开始传授新徒。修行一旦开始，武僧的训练至死方休。他们将全部的心、意与灵魂倾注于对完美自我的追求之中。",
+								"即便是最伟大的宗门大师，有时也会另投他寺，以初学者身份入门，哪怕年事已高。对完美的追求永无止境，纵使灵性修为精深，最伟大者也自视为初学之人，渴求迈出通往开悟的下一步。"
+							]
+						},
+						{
+							"ENG_name": "Creating Your Monk",
+							"type": "entries",
+							"name": "创造你的武僧",
+							"page": 1,
+							"entries": [
+								"创造你的武僧时，有几件事需要考虑。首先，是谁（或是什么）最初传授你武艺？你是某位宗师的关门弟子，在他身边度过多年、倾力学艺？你是某支精通身心灵主宰的精锐军旅的一员？抑或你是自学的武者，在自然的孤寂中觅得灵性开悟？",
+								"其次，你应思考是什么驱使你修持自我，你又为追求技艺牺牲了什么？你是没落贵族之后，为复仇弃绝一切、潜心修行？你是孤儿，被素未谋面的家人弃于武学大师门前？还是人生中的某个变故，驱使你追求身心灵的绝对主宰？",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"page": 2,
+									"entries": [
+										"你可以参照以下建议快速建卡。首先，将敏捷作为你的最高属性值；若你侧重身体力量，其次选择体质，若你侧重灵性开悟，则其次选择感知。其次，选择{@background 侍僧}或{@background 隐士}背景。"
+									]
+								},
+								{
+									"ENG_name": "Multiclassing and Monk",
+									"type": "inset",
+									"name": "兼职与武僧",
+									"entries": [
+										"如果你的团使用可选的兼职规则，以下是你在选择将第一个等级投入武僧职业时需要了解的内容：",
+										{
+											"ENG_name": "Ability Score Minimum",
+											"type": "entries",
+											"name": "属性值下限",
+											"entries": [
+												"作为兼职角色，你的敏捷和感知都必须至少为13，才能获得此职业的等级；若你已是武僧，要获得其他职业的等级也须满足此条件。"
+											]
+										},
+										{
+											"ENG_name": "Proficiencies",
+											"type": "entries",
+											"name": "熟练项",
+											"entries": [
+												"如果武僧并非你的初始职业，以下是你在获得第一个武僧等级时得到的熟练项：简易武器、短剑。"
+											]
+										},
+										{
+											"ENG_name": "Ki Points",
+											"type": "entries",
+											"name": "气点",
+											"entries": [
+												"若你拥有另一个允许你学习和使用技法的特性，你可以用任一特性的气来使用你已知的技法。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Way of Ferocity",
+			"name": "凶猛宗",
+			"shortName": "凶猛",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassFeatures": [
+				"凶猛宗|替代武僧|LLAM|凶猛|LLAM:E|3",
+				"招牌技法|替代武僧|LLAM|凶猛|LLAM:E|5",
+				"原初直觉|替代武僧|LLAM|凶猛|LLAM:E|6",
+				"招牌技法|替代武僧|LLAM|凶猛|LLAM:E|9",
+				"无情凶残|替代武僧|LLAM|凶猛|LLAM:E|10",
+				"凶猛大师|替代武僧|LLAM|凶猛|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of Harmony",
+			"name": "和谐宗",
+			"shortName": "和谐",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 10,
+			"subclassFeatures": [
+				"和谐宗|替代武僧|LLAM|和谐|LLAM|3",
+				"招牌技法|替代武僧|LLAM|和谐|LLAM|5",
+				"秘术操纵|替代武僧|LLAM|和谐|LLAM|6",
+				"招牌技法|替代武僧|LLAM|和谐|LLAM|9",
+				"和谐之触|替代武僧|LLAM|和谐|LLAM|10",
+				"和谐大师|替代武僧|LLAM|和谐|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of Radiance",
+			"name": "光辉宗",
+			"shortName": "光辉",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 7,
+			"subclassFeatures": [
+				"光辉宗|替代武僧|LLAM|光辉|LLAM|3",
+				"招牌技法|替代武僧|LLAM|光辉|LLAM|5",
+				"辉光之魂|替代武僧|LLAM|光辉|LLAM|6",
+				"灼热冲击|替代武僧|LLAM|光辉|LLAM|6",
+				"招牌技法|替代武僧|LLAM|光辉|LLAM|9",
+				"辉光爆发|替代武僧|LLAM|光辉|LLAM|10",
+				"光辉大师|替代武僧|LLAM|光辉|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Astral Warrior",
+			"name": "星界武者宗",
+			"shortName": "星界武者",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 10,
+			"subclassFeatures": [
+				"星界武者宗|替代武僧|LLAM|星界武者|LLAM|3",
+				"招牌技法|替代武僧|LLAM|星界武者|LLAM|5",
+				"星界之容|替代武僧|LLAM|星界武者|LLAM|6",
+				"招牌技法|替代武僧|LLAM|星界武者|LLAM|9",
+				"秘法防御|替代武僧|LLAM|星界武者|LLAM|10",
+				"星界武者大师|替代武僧|LLAM|星界武者|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Boulder",
+			"name": "巨石宗",
+			"shortName": "巨石",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassFeatures": [
+				"巨石宗|替代武僧|LLAM|巨石|LLAM:E|3",
+				"招牌技法|替代武僧|LLAM|巨石|LLAM:E|5",
+				"反弹防御|替代武僧|LLAM|巨石|LLAM:E|6",
+				"招牌技法|替代武僧|LLAM|巨石|LLAM:E|9",
+				"致密之魂|替代武僧|LLAM|巨石|LLAM:E|10",
+				"威武之躯|替代武僧|LLAM|巨石|LLAM:E|17",
+				"震地者|替代武僧|LLAM|巨石|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Brawler",
+			"name": "打手宗",
+			"shortName": "打手",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Savage Exploits",
+					"name": "凶蛮战技",
+					"featureType": [
+						"LL:1SE"
+					],
+					"progression": {
+						"3": 2,
+						"5": 3
+					}
+				},
+				{
+					"ENG_name": "Savage Exploits",
+					"name": "凶蛮战技",
+					"featureType": [
+						"LL:1SE",
+						"LL:2SE"
+					],
+					"progression": {
+						"7": 1,
+						"11": 2
+					}
+				},
+				{
+					"ENG_name": "Savage Exploits",
+					"name": "凶蛮战技",
+					"featureType": [
+						"LL:1SE",
+						"LL:2SE",
+						"LL:3SE"
+					],
+					"progression": {
+						"15": 1,
+						"19": 2
+					}
+				}
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "战技骰",
+					"configuration": {
+						"identifier": "exploit",
+						"type": "dice",
+						"scale": {
+							"3": {
+								"n": 2,
+								"die": 4
+							},
+							"7": {
+								"n": 3,
+								"die": 6
+							},
+							"16": {
+								"n": 4,
+								"die": 8
+							}
+						}
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Brawler",
+							"name": "打手",
+							"source": "LLAM:E"
+						}
+					],
+					"colLabels": [
+						"已知战技",
+						"战技骰",
+						"战技骰数",
+						"最高位阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							"{@dice d4}",
+							2,
+							"一阶"
+						],
+						[
+							2,
+							"{@dice d4}",
+							2,
+							"一阶"
+						],
+						[
+							3,
+							"{@dice d4}",
+							2,
+							"一阶"
+						],
+						[
+							3,
+							"{@dice d4}",
+							2,
+							"一阶"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							7,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							7,
+							"{@dice d8}",
+							4,
+							"三阶"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"打手宗|替代武僧|LLAM|打手|LLAM:E|3",
+				"暴力开悟|替代武僧|LLAM|打手|LLAM:E|6",
+				"臭名昭著|替代武僧|LLAM|打手|LLAM:E|10",
+				"残暴大师|替代武僧|LLAM|打手|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Drunken Fist",
+			"name": "醉拳宗",
+			"shortName": "醉拳",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 5,
+			"subclassFeatures": [
+				"醉拳宗|替代武僧|LLAM|醉拳|LLAM|3",
+				"招牌技法|替代武僧|LLAM|醉拳|LLAM|5",
+				"变幻莫测|替代武僧|LLAM|醉拳|LLAM|6",
+				"招牌技法|替代武僧|LLAM|醉拳|LLAM|9",
+				"混乱机运|替代武僧|LLAM|醉拳|LLAM|10",
+				"醉拳大师|替代武僧|LLAM|醉拳|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Flowing River",
+			"name": "流水宗",
+			"shortName": "流水",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassFeatures": [
+				"流水宗|替代武僧|LLAM|流水|LLAM:E|3",
+				"招牌技法|替代武僧|LLAM|流水|LLAM:E|5",
+				"流水反击|替代武僧|LLAM|流水|LLAM:E|6",
+				"招牌技法|替代武僧|LLAM|流水|LLAM:E|9",
+				"江海之惠|替代武僧|LLAM|流水|LLAM:E|10",
+				"流水大师|替代武僧|LLAM|流水|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Hurricane",
+			"name": "飓风宗",
+			"shortName": "飓风",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassFeatures": [
+				"飓风宗|替代武僧|LLAM|飓风|LLAM:E|3",
+				"招牌技法|替代武僧|LLAM|飓风|LLAM:E|5",
+				"碾压反击|替代武僧|LLAM|飓风|LLAM:E|6",
+				"招牌技法|替代武僧|LLAM|飓风|LLAM:E|9",
+				"狂风拍击|替代武僧|LLAM|飓风|LLAM:E|10",
+				"飓风大师|替代武僧|LLAM|飓风|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Mystic",
+			"name": "秘术宗",
+			"shortName": "秘术",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassFeatures": [
+				"秘术宗|替代武僧|LLAM|秘术|LLAM:E|3",
+				"招牌技法|替代武僧|LLAM|秘术|LLAM:E|5",
+				"灵魂冲击|替代武僧|LLAM|秘术|LLAM:E|6",
+				"招牌技法|替代武僧|LLAM|秘术|LLAM:E|9",
+				"庇护之魂|替代武僧|LLAM|秘术|LLAM:E|10",
+				"秘术大师|替代武僧|LLAM|秘术|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Open Hand",
+			"name": "散打宗",
+			"shortName": "散打",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 6,
+			"subclassFeatures": [
+				"散打宗|替代武僧|LLAM|散打|LLAM|3",
+				"招牌技法|替代武僧|LLAM|散打|LLAM|5",
+				"攻守流转|替代武僧|LLAM|散打|LLAM|6",
+				"招牌技法|替代武僧|LLAM|散打|LLAM|9",
+				"散打击|替代武僧|LLAM|散打|LLAM|10",
+				"万形大师|替代武僧|LLAM|散打|LLAM|10",
+				"散打大师|替代武僧|LLAM|散打|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Reaper",
+			"name": "收割宗",
+			"shortName": "收割",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 7,
+			"subclassFeatures": [
+				"收割宗|替代武僧|LLAM|收割|LLAM|3",
+				"招牌技法|替代武僧|LLAM|收割|LLAM|5",
+				"穿透帷幕|替代武僧|LLAM|收割|LLAM|6",
+				"邪异活力|替代武僧|LLAM|收割|LLAM|6",
+				"招牌技法|替代武僧|LLAM|收割|LLAM|9",
+				"墓穴护甲|替代武僧|LLAM|收割|LLAM|10",
+				"收割大师|替代武僧|LLAM|收割|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Rising Dragon",
+			"name": "升龙宗",
+			"shortName": "升龙",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 10,
+			"subclassFeatures": [
+				"升龙宗|替代武僧|LLAM|升龙|LLAM|3",
+				"招牌技法|替代武僧|LLAM|升龙|LLAM|5",
+				"飞升步|替代武僧|LLAM|升龙|LLAM|6",
+				"招牌技法|替代武僧|LLAM|升龙|LLAM|9",
+				"龙威庇护|替代武僧|LLAM|升龙|LLAM|10",
+				"龙威大师|替代武僧|LLAM|升龙|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Sacred Inks",
+			"name": "圣墨宗",
+			"shortName": "圣墨",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassFeatures": [
+				"圣墨宗|替代武僧|LLAM|圣墨|LLAM:E|3",
+				"招牌技法|替代武僧|LLAM|圣墨|LLAM:E|5",
+				"天界护佑|替代武僧|LLAM|圣墨|LLAM:E|6",
+				"招牌技法|替代武僧|LLAM|圣墨|LLAM:E|9",
+				"灼热之光|替代武僧|LLAM|圣墨|LLAM:E|10",
+				"圣墨大师|替代武僧|LLAM|圣墨|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Shadow Arts",
+			"name": "暗影宗",
+			"shortName": "暗影技艺",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 8,
+			"subclassFeatures": [
+				"暗影宗|替代武僧|LLAM|暗影技艺|LLAM|3",
+				"招牌技法|替代武僧|LLAM|暗影技艺|LLAM|5",
+				"暗影步|替代武僧|LLAM|暗影技艺|LLAM|6",
+				"招牌技法|替代武僧|LLAM|暗影技艺|LLAM|9",
+				"幽影斗篷|替代武僧|LLAM|暗影技艺|LLAM|10",
+				"暗影大师|替代武僧|LLAM|暗影技艺|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Shining Steel",
+			"name": "辉钢宗",
+			"shortName": "辉钢",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 10,
+			"subclassFeatures": [
+				"辉钢宗|替代武僧|LLAM|辉钢|LLAM|3",
+				"招牌技法|替代武僧|LLAM|辉钢|LLAM|5",
+				"辉钢|替代武僧|LLAM|辉钢|LLAM|6",
+				"招牌技法|替代武僧|LLAM|辉钢|LLAM|9",
+				"灵魂之刃|替代武僧|LLAM|辉钢|LLAM|10",
+				"辉钢大师|替代武僧|LLAM|辉钢|LLAM|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Vigilante",
+			"name": "义警宗",
+			"shortName": "义警",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassFeatures": [
+				"义警宗|替代武僧|LLAM|义警|LLAM:E|3",
+				"招牌技法|替代武僧|LLAM|义警|LLAM:E|5",
+				"英勇行动|替代武僧|LLAM|义警|LLAM:E|6",
+				"招牌技法|替代武僧|LLAM|义警|LLAM:E|9",
+				"鼓舞气度|替代武僧|LLAM|义警|LLAM:E|10",
+				"义警大师|替代武僧|LLAM|义警|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Void",
+			"name": "虚空宗",
+			"shortName": "虚空",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassFeatures": [
+				"虚空宗|替代武僧|LLAM|虚空|LLAM:E|3",
+				"招牌技法|替代武僧|LLAM|虚空|LLAM:E|5",
+				"斩空步|替代武僧|LLAM|虚空|LLAM:E|6",
+				"招牌技法|替代武僧|LLAM|虚空|LLAM:E|9",
+				"消解魔法|替代武僧|LLAM|虚空|LLAM:E|10",
+				"熵之大师|替代武僧|LLAM|虚空|LLAM:E|17"
+			]
+		},
+		{
+			"ENG_name": "Way of the Wu Jen",
+			"name": "巫觋宗",
+			"shortName": "巫觋",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"page": 9,
+			"spellcastingAbility": "wis",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				6,
+				7,
+				7,
+				7,
+				7
+			],
+			"subclassSpells": [
+				"召气|llspell",
+				"剑刃防护（变体）|llspell",
+				"控火术（变体）|llspell",
+				"创造篝火|XGE",
+				"德鲁伊伎俩",
+				"霜噬",
+				"光亮术",
+				"魔石术|XGE",
+				"塑土术|XGE",
+				"冷冻射线",
+				"操水术（变体）|llspell",
+				"荆棘之鞭",
+				"鸣雷破|XGE",
+				"吸收元素",
+				"黯冰狱铠",
+				"燃烧之手",
+				"造水术（变体）|llspell",
+				"地颤|XGE",
+				"诱捕打击（变体）|llspell",
+				"纠缠术",
+				"云雾术",
+				"棘雹术（变体）|llspell",
+				"炼狱叱喝",
+				"冰刃|XGE",
+				"庇护术",
+				"雷鸣波",
+				"巫术箭（变体）|llspell",
+				"树肤术（变体）|llspell",
+				"不灭明焰",
+				"龙卷尘暴|XGE",
+				"地缚|XGE",
+				"麦克斯米利安的地之攫|XGE",
+				"火焰刀",
+				"炽焰法球",
+				"造风术",
+				"定身类人",
+				"浮空术",
+				"迷踪步",
+				"灼热射线",
+				"粉碎音波",
+				"史尼洛雪球群|XGE",
+				"荆棘丛生",
+				"守护之风|XGE",
+				"召雷术",
+				"土石喷发|XGE",
+				"火球术",
+				"飞行术",
+				"气化形体",
+				"擒抱藤（变体）|llspell",
+				"闪电束",
+				"融身入石",
+				"马友夫微流星|XGE",
+				"植物滋长",
+				"雪雨暴",
+				"植物交谈",
+				"雷霆步|XGE",
+				"潮涌|XGE",
+				"沙墙术|XGE",
+				"水墙术|XGE",
+				"风墙术",
+				"操控水体",
+				"元素灾厄|XGE",
+				"火焰护盾",
+				"行动自如",
+				"自然守卫|XGE",
+				"冰风暴",
+				"大地之柱（变体）|llspell",
+				"欧提路克弹力法球",
+				"塑石术",
+				"石肤术",
+				"风暴法球|XGE",
+				"火墙术",
+				"碧水法球|XGE"
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Way of the Wu Jen",
+							"name": "巫觋宗",
+							"source": "LLAM"
+						}
+					],
+					"colLabels": [
+						"武僧等级",
+						"{@filter 已知法术|spells|subclass=替代武僧: 巫觋 (LLAM)}",
+						"法术位",
+						"法术位环阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							"3级",
+							2,
+							1,
+							"{@filter 1环|spells|level=1|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"4级",
+							2,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"5级",
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"6级",
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"7级",
+							4,
+							2,
+							"{@filter 2环|spells|level=2|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"8级",
+							4,
+							2,
+							"{@filter 2环|spells|level=2|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"9级",
+							5,
+							2,
+							"{@filter 2环|spells|level=2|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"10级",
+							5,
+							2,
+							"{@filter 2环|spells|level=2|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"11级",
+							5,
+							2,
+							"{@filter 2环|spells|level=2|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"12级",
+							5,
+							2,
+							"{@filter 2环|spells|level=2|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"13级",
+							6,
+							2,
+							"{@filter 3环|spells|level=3|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"14级",
+							6,
+							2,
+							"{@filter 3环|spells|level=3|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"15级",
+							6,
+							2,
+							"{@filter 3环|spells|level=3|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"16级",
+							6,
+							2,
+							"{@filter 3环|spells|level=3|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"17级",
+							7,
+							2,
+							"{@filter 3环|spells|level=3|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"18级",
+							7,
+							2,
+							"{@filter 3环|spells|level=3|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"19级",
+							7,
+							2,
+							"{@filter 4环|spells|level=4|subclass=替代武僧: 巫觋 (LLAM)}"
+						],
+						[
+							"20级",
+							7,
+							2,
+							"{@filter 4环|spells|level=4|subclass=替代武僧: 巫觋 (LLAM)}"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"巫觋宗|替代武僧|LLAM|巫觋|LLAM|3",
+				"元素之魂|替代武僧|LLAM|巫觋|LLAM|6",
+				"灵力流转|替代武僧|LLAM|巫觋|LLAM|10",
+				"元素大师|替代武僧|LLAM|巫觋|LLAM|17"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Martial Arts",
+			"name": "武艺",
+			"source": "LLAM",
+			"page": 2,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 1,
+			"entries": [
+				"你将身体锻造成武器，精通多种流派的武艺。就你的武僧能力而言，武艺攻击指你的徒手打击，以及使用不具有重型或特殊属性的近战武器进行的攻击。",
+				"从1级起，只要你不穿重甲、不持盾牌、也不持握具有重型属性的武器，你的训练就给予你以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你的武艺攻击在进行攻击掷骰和伤害掷骰时，可以用敏捷代替力量。",
+						"当你进行运动检定以擒抱或推撞生物时，可以用敏捷代替力量。",
+						"当你进行武艺攻击时，可以用你的武艺骰（一颗d6）代替正常的伤害骰。随着武僧等级提升，这颗骰子会逐渐增大，如\"武僧\"表中\"武艺\"一栏所示。若某特性使用这颗骰子，则总是掷武艺骰。",
+						"每当你采取攻击动作并至少进行一次武艺攻击时，你可以在该回合使用附赠动作进行一次徒手打击。"
+					]
+				},
+				"某些武艺流派会使用异国武器，如双节棍（{@item 短棒|phb|短棒}）、镰爪（{@item 镰刀|phb|镰刀}）或铁钗（{@item 匕首|phb|匕首}）。"
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist.webp"
+		},
+		{
+			"ENG_name": "Unarmored Defense",
+			"name": "无甲防御",
+			"source": "LLAM",
+			"page": 2,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 1,
+			"entries": [
+				"你受过在无甲状态下抵御致命攻击的训练。从1级起，只要你不穿任何护甲、不持盾牌，你的护甲等级便等于10＋你的敏捷调整值＋你的感知调整值。"
+			],
+			"foundryImg": "icons/equipment/chest/shirt-simple-white.webp"
+		},
+		{
+			"ENG_name": "Mystic Techniques",
+			"name": "秘术技法",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 2,
+			"entries": [
+				"2级时，你学会操控体内蕴含的灵性能量，即气。你可以引动气来施展超自然的武学绝技，称为技法：",
+				{
+					"type": "refClassFeature",
+					"classFeature": "Ki|替代武僧|LLAM|2"
+				},
+				{
+					"ENG_name": "Techniques Known",
+					"type": "entries",
+					"name": "已知技法",
+					"page": 3,
+					"entries": [
+						"2级时，你已掌握本职业末尾列表中的三门{@filter 秘术技法|optionalfeatures|feature type=LLAM:T}。要学习一门技法，你必须满足其先决条件。每当你获得武僧等级时，可以用另一门技法替换你已知的一门技法。",
+						"在特定武僧等级，你会习得额外的技法，如\"武僧\"表中\"已知技法\"一栏所示。"
+					]
+				},
+				{
+					"ENG_name": "Saving Throws",
+					"type": "entries",
+					"name": "豁免检定",
+					"page": 3,
+					"entries": [
+						"技法有赖于你对身心的掌握，并随你的自控力而增长。当一门技法需要豁免检定时，其豁免DC计算如下：",
+						{
+							"ENG_name": "Technique",
+							"type": "abilityDc",
+							"name": "技法",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "疾风连击|替代武僧|LLAM|2"
+				}
+			],
+			"foundryImg": "icons/magic/light/explosion-beam-impact-silhouette.webp"
+		},
+		{
+			"ENG_name": "Flurry of Blows",
+			"name": "疾风连击",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"无论修行为何、悟境几何，所有武僧都能引导灵性之力，以迅雷不及掩耳之势打击敌人。在你的每个回合，你可以用附赠动作消耗1点气来进行两次徒手打击。"
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp"
+		},
+		{
+			"ENG_name": "Ki",
+			"name": "Ki",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 2,
+			"entries": [
+				"你的灵性之力体现为气池，数量等于你的武僧等级＋你的感知调整值（最低为0）。气在使用时即被消耗，你在完成一次短休或长休后恢复所有已消耗的气。要恢复气，你须在休息中冥想至少30分钟。",
+				"每次攻击、属性检定、反应或豁免检定，你只能将气消耗在一个特性或技法上。"
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp"
+		},
+		{
+			"ENG_name": "Unarmored Movement",
+			"name": "无甲移动",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 2,
+			"entries": [
+				"你对身体极致的追求唤醒了体内隐藏的潜能。从2级起，当你使用无甲防御时，你的速度提升10尺。",
+				"这一速度加值会随着你的等级提升而增加，如\"武僧\"表中\"无甲移动\"一栏所示。"
+			],
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "无甲移动",
+						"changes": [
+							{
+								"key": "data.attributes.movement.walk",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.walk) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							},
+							{
+								"key": "data.attributes.movement.burrow",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.burrow) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							},
+							{
+								"key": "data.attributes.movement.climb",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							},
+							{
+								"key": "data.attributes.movement.fly",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							},
+							{
+								"key": "data.attributes.movement.swim",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							}
+						]
+					}
+				]
+			},
+			"foundryImg": "icons/magic/nature/root-vine-entangle-foot-green.webp"
+		},
+		{
+			"ENG_name": "Monastic Tradition",
+			"name": "修行宗派",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"3级时，从下列修行宗派中选择最符合你作为武僧的修行与理念的一项。",
+				"你所选择的修行宗派会在3级时给予你特性，并在你达到6级、10级和17级时再次给予。",
+				{
+					"ENG_name": "Signature Techniques",
+					"type": "entries",
+					"name": "招牌技法",
+					"page": 3,
+					"entries": [
+						"大多数宗派都有一份招牌技法列表，你会在宗派注明的武僧等级习得这些技法。它们不计入你的已知技法数。这些技法也不能替换为其他技法。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以将一项自选属性值提高2，或将两项自选属性值各提高1。如同常规，你不能以此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"达到5级后，每当你采取攻击动作时，你可以攻击两次，而非一次。",
+				"此外，若你用动作进行撤离或疾走，你可以在同一回合用附赠动作进行一次武艺攻击。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Enlightened Strikes",
+			"name": "启明打击",
+			"source": "LLAM",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 6,
+			"entries": [
+				"你将灵性之力灌注进每一次打击。从6级起，你的徒手打击所造成的伤害视为魔法伤害，且只要你还有剩余的气，你的其他武艺攻击所造成的伤害也视为魔法伤害。"
+			],
+			"foundryImg": "icons/skills/melee/sword-winged-holy-orange.webp"
+		},
+		{
+			"ENG_name": "Monastic Tradition Feature",
+			"name": "宗派特性",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 6,
+			"entries": [
+				"6级时，你获得一项由你的修行宗派给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Evasion",
+			"name": "反射闪避",
+			"source": "LLAM",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 7,
+			"entries": [
+				"你超自然的敏捷让你能避开某些范围效应，比如黑龙的酸液吐息或{@spell 闪电束}法术。从7级起，每当某项效应要求你进行敏捷豁免以将伤害减半时，你豁免成功便不受伤害，豁免失败也只受一半伤害。"
+			],
+			"foundryImg": "icons/magic/light/beam-red-orange.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将一项自选属性值提高2，或将两项自选属性值各提高1。如同常规，你不能以此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Spirit of Tranquility",
+			"name": "宁神之魂",
+			"source": "LLAM",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"从9级起，你可以引动灵性活力来巩固你的身心防御。每当你被迫进行豁免检定时，可以消耗1点气，在你的掷骰结果上加你的感知调整值（最低＋1）。"
+			],
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Monastic Tradition Feature",
+			"name": "宗派特性",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 10,
+			"entries": [
+				"10级时，你获得一项由你的修行宗派给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Warrior's Spirit",
+			"name": "武者之魂",
+			"source": "LLAM",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 11,
+			"entries": [
+				"战斗的激昂令你的精神焕发。从11级起，只要你不处于失能状态，你在战斗中每个自己回合开始时恢复1点已消耗的气。"
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将一项自选属性值提高2，或将两项自选属性值各提高1。如同常规，你不能以此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Purity of Body",
+			"name": "百病不侵",
+			"source": "LLAM",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 13,
+			"conditionImmune": [
+				"disease",
+				"poisoned"
+			],
+			"entries": [
+				"从13级起，你对肉身的掌控使你免受一切病痛，给予你以下益处：你免疫所有疾病和中毒状态，并获得体质豁免的熟练项。"
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage.webp"
+		},
+		{
+			"ENG_name": "Purity of Mind",
+			"name": "明净之心",
+			"source": "LLAM",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 14,
+			"entries": [
+				"对心灵的掌控让他人几乎无法支配你。从14级起，若你在自己回合开始时处于魅惑或恐慌状态，可以消耗1点气来终止自身的魅惑或恐慌状态。"
+			],
+			"foundryImg": "icons/commodities/biological/organ-brain-pink.webp"
+		},
+		{
+			"ENG_name": "Timeless Body",
+			"name": "不朽身",
+			"source": "LLAM",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 15,
+			"entries": [
+				"你已彻底超脱肉身的种种欲求。从15级起，你不再需要进食饮水，也不会受年老体衰之苦。每经过10年，你的身体只会衰老1岁。"
+			],
+			"foundryImg": "icons/commodities/treasure/bust-carved-stone.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将一项自选属性值提高2，或将两项自选属性值各提高1。如同常规，你不能以此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Monastic Tradition Feature",
+			"name": "宗派特性",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 17,
+			"entries": [
+				"17级时，你获得一项由你的修行宗派给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAM",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将一项自选属性值提高2，或将两项自选属性值各提高1。如同常规，你不能以此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Purity of Spirit",
+			"name": "澄澈之魂",
+			"source": "LLAM",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 20,
+			"entries": [
+				"你已修得内在灵性生命的至高境界。达到20级后，你只需1分钟的轻度活动即可完成一次短休，以代替通常的1小时。",
+				"这份灵性造诣还意味着危险来袭时你绝不会措手不及。当你先攻掷骰时，你恢复数量等于你感知调整值（最低为1）的已消耗之气，且你的武者之魂特性让你在战斗中每个自己回合开始时恢复2点气。"
+			],
+			"foundryImg": "icons/magic/holy/angel-winged-humanoid-blue.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Ki",
+			"name": "Ki",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"level": 2,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "@classes.alternate-monk.levels + @abilities.wis.mod"
+			}
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Way of the Astral Warrior",
+			"name": "星界武者宗",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "星界武者",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"此宗派的门徒几乎全然专注于灵性的发展，学会透过气将内在自我显现于世。凭借极度的专注与修行，这些奥秘武者学会显现其星界之甲\u2014\u2014一副笼罩其肉身、由气凝成的辉光投射。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "星界技法|替代武僧|LLAM|星界武者|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "星界之甲|替代武僧|LLAM|星界武者|LLAM|3|LLAM"
+				}
+			]
+		},
+		{
+			"ENG_name": "Astral Armor",
+			"name": "星界之甲",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "星界武者",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能将气显现为一副酷似你真实自我的辉光护甲。你可以用附赠动作消耗1点气显现此星界之甲。它持续10分钟，但你以附赠动作将其散除、或你陷入失能时，它会提前消散。",
+				"你的星界之甲给予你以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"当你显现星界之甲时，10尺内的生物必须对你的技法豁免DC通过敏捷豁免，否则受到等于两颗武艺骰的力场伤害。",
+						"每当你进行力量检定或力量豁免时，可以用你的感知调整值代替力量调整值。",
+						"你可以进行特殊的徒手打击，其攻击掷骰和伤害掷骰使用感知，触及比通常远5尺，且命中时造成力场伤害。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-beam-blue.webp"
+		},
+		{
+			"ENG_name": "Astral Techniques",
+			"name": "星界技法",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "星界武者",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 拨挡攻击|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 拨挡飞弹|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 灵光视觉|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拨挡攻击|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "星界武者",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拨挡飞弹|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Astral Visage",
+			"name": "星界之容",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "星界武者",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"即使星界之甲处于蛰伏状态，其力量仍会灌注于你的气度。你掌握奇术戏法，其施法调整值为你的感知。此外，每当你进行洞悉或威吓检定时，你的掷骰结果获得等于你武艺骰的加值。",
+				"当你的星界自我显现时，你能在120尺半径内的魔法黑暗与普通黑暗中正常视物。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "星界武者",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "灵光视觉|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Mystical Defense",
+			"name": "秘法防御",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "星界武者",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的星界之甲获得了异界之力的强化。当你的星界之甲显现时，你可以不消耗气使用{@optfeature 拨挡攻击|LLAM}和{@optfeature 拨挡飞弹|LLAM}。你还会提前一级获得这两门技法11级的益处。",
+				"在你使用其中一门技法之后，你的下一次徒手打击额外造成等于你武艺骰的伤害。"
+			],
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"ENG_name": "Master Astral Warrior",
+			"name": "星界武者大师",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "星界武者",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"你已与真实自我合一，并将星界之甲修至完美。现在显现你的星界之甲需消耗2点气，但在其显现期间，你可以使你受到的任何伤害减少你的感知调整值。",
+				"最后，当你的星界之甲显现时，你可以用动作向一片邻接的20尺锥状区域倾泻连环拳击，迫使区域内生物对你的技法豁免DC进行敏捷豁免。豁免失败的生物受到等于四颗武艺骰的力场伤害，成功者只受一半力场伤害。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-quintuple-orange.webp"
+		},
+		{
+			"ENG_name": "Way of the Drunken Fist",
+			"name": "醉拳宗",
+			"source": "LLAM",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"多数武僧严肃而内省，醉拳的传人却处处寻欢。他们精通模仿醉汉不可捉摸步法的流派，会用高超的技艺装疯卖傻、逗人发笑，或让傲慢之徒当众出丑。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "醉拳技法|替代武僧|LLAM|醉拳|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "痴舞愚人|替代武僧|LLAM|醉拳|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "醉拳风格|替代武僧|LLAM|醉拳|LLAM|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Dancing Fool",
+			"name": "痴舞愚人",
+			"source": "LLAM",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你以独特的武艺流派用滑稽举动带来欢乐。你获得表演的熟练项，以及酿酒工具或一件乐器的熟练项。每当你以上述任一熟练项进行属性检定时，你的掷骰结果获得等于你武艺骰的加值。"
+			],
+			"foundryImg": "icons/tools/cooking/soup-ladle.webp"
+		},
+		{
+			"ENG_name": "Drunken Fist Techniques",
+			"name": "醉拳技法",
+			"source": "LLAM",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 疾步如风|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 拨挡飞弹|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 天行步|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "疾步如风|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Drunken Style",
+			"name": "醉拳风格",
+			"source": "LLAM",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你以混乱的优雅身法游走战场。每当你以武艺攻击命中一个生物时，你的速度提升5尺，且该生物无法以借机攻击指定你，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/consumables/drinks/alcohol-beer-stein-wooden-brown.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拨挡飞弹|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Unpredictable Sway",
+			"name": "变幻莫测",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你飘忽不定的身法变得愈发繁复、更难捉摸。你获得下列益处：",
+				{
+					"ENG_name": "Dancing Leap",
+					"type": "entries",
+					"name": "醉舞跃起",
+					"entries": [
+						"当你倒地时，你可以不消耗移动就站起来，而无须消耗一半速度。"
+					]
+				},
+				{
+					"ENG_name": "Tipsy Strike",
+					"type": "entries",
+					"name": "醉拳错击",
+					"entries": [
+						"当一个你能看见的生物以近战攻击对你失手时，你可以用反应消耗1点气，使该次攻击转而指定射程内的另一个目标。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/movement/trail-streak-zigzag-yellow.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "天行步|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Chaotic Luck",
+			"name": "混乱机运",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你几乎能以滑稽的方式让降临于你的厄运彻底翻转。每当你进行具有劣势的攻击掷骰、属性检定或豁免检定时，你可以消耗1点气来抵消该次掷骰的劣势。"
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-green.webp"
+		},
+		{
+			"ENG_name": "Master of the Drunken Fist",
+			"name": "醉拳大师",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "醉拳",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你以无与伦比的混乱姿态飞旋于战场之上。当你在自己回合采取攻击动作时，你可以对你经过且处于你徒手打击射程内的每个生物各进行一次武艺攻击，即使攻击次数因此超过常规上限亦然。"
+			],
+			"foundryImg": "icons/consumables/drinks/alcohol-beer-mug-yellow.webp"
+		},
+		{
+			"ENG_name": "Way of Harmony",
+			"name": "和谐宗",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"万物平衡。这是献身于和谐之道的武僧所持的箴言。这些武僧以操控气来疗伤、祛病、乃至破除强大诅咒的秘法能力而闻名，使万物保持平衡。然而，当有生物试图以非自然手段延续生命或欺骗死亡时，这些武者便会以自身之力将其消灭，恢复平衡。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "和谐技法|替代武僧|LLAM|和谐|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "修行医者|替代武僧|LLAM|和谐|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "生命之触|替代武僧|LLAM|和谐|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "死亡之触|替代武僧|LLAM|和谐|LLAM|3|LLAM"
+				}
+			]
+		},
+		{
+			"ENG_name": "Harmony Techniques",
+			"name": "和谐技法",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 秘术再生|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 驯抚之触|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 礼仪气度|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "秘术再生|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Monastic Healer",
+			"name": "修行医者",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你研修过神秘与世俗两道的疗愈之术。你获得洞悉、医药和草药工具的熟练项。每当你以上述熟练项进行属性检定时，你的掷骰结果获得等于你武艺骰的加值。"
+			],
+			"foundryImg": "icons/magic/life/cross-flared-green.webp"
+		},
+		{
+			"ENG_name": "Touch of Death",
+			"name": "死亡之触",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你也可以攻击他人的气以造成伤害。每回合一次，当你以徒手打击命中一个生物时，你可以消耗1点气，额外造成等于你武艺骰的暗蚀伤害。此伤害对亡灵造成光耀伤害。"
+			],
+			"foundryImg": "icons/magic/death/hand-undead-skeleton-fire-green.webp"
+		},
+		{
+			"ENG_name": "Touch of Life",
+			"name": "生命之触",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以激发其他生物的气来进行秘法治疗。你的每个回合一次，你可以放弃一次徒手打击，消耗1点气并触碰另一个生物。它恢复等于你的武艺骰＋你的感知调整值的生命值。",
+				"此特性对构装体或亡灵无效。"
+			],
+			"foundryImg": "icons/magic/life/heart-hand-gold-green-light.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "驯抚之触|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Mystic Manipulation",
+			"name": "秘术操纵",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你影响他人气的能力已然精进，得以调理更为繁复的疾患。当你使用生命之触时，还可以治愈一种疾病，或终止目盲、耳聋、麻痹、中毒或震慑状态之一。",
+				"此外，每当你使用死亡之触时，你可以使该生物陷入中毒状态，直到你的下一回合结束。"
+			],
+			"foundryImg": "icons/magic/control/voodoo-doll-pain-damage-green.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "礼仪气度|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Harmonious Touch",
+			"name": "和谐之触",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你自身灵性中的和谐强化了你的秘法能力。当你使用生命之触或死亡之触时，你可以额外消耗气（最多为你的感知调整值），每额外消耗1点气，便为恢复的生命值或造成的伤害加一颗武艺骰。"
+			],
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+		},
+		{
+			"ENG_name": "Master of Harmony",
+			"name": "和谐大师",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "和谐",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"即使生命已被死亡击碎，你也能使其复归和谐。你可以用动作触碰一个在过去24小时内死去的生物，并消耗6点气使其复生。",
+				"当你如此做时，该生物还恢复等于你的武僧等级＋你的感知调整值的生命值，且其死亡时缠身的一切状态均告终止。",
+				"一旦你对某个生物使用了此特性，该生物必须完成一次长休后才能再次受益于此特性。"
+			],
+			"foundryImg": "icons/magic/holy/yin-yang-balance-symbol.webp"
+		},
+		{
+			"ENG_name": "Open Hand Techniques",
+			"name": "散打技法",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的武僧等级习得特定技法，但它们不计入你的已知技法总数。",
+				"此外，每当你获得武僧等级时，你可以用另一门满足先决条件的打击技法替换其中一门。打击技法是指当你以武艺近战攻击命中时可以使用的技法。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 强化打击|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 震慑拳|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 不屈精神|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "强化打击|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Practiced Strikes",
+			"name": "精熟打击",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"严苛的修行使你的能力如同本能。你的每个回合一次，当你以徒手打击命中时，你可以使用一门已知的打击技法而无须消耗常规的气。",
+				"你可以如此使用你的打击技法等于你感知调整值的次数（最低为一次），并在完成一次长休后恢复所有已用次数。"
+			],
+			"foundryImg": "icons/skills/melee/hand-grip-staff-blue.webp"
+		},
+		{
+			"ENG_name": "Way of the Open Hand",
+			"name": "散打宗",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"武僧皆是武者，而奉行散打之道的武僧训练从不懈怠，将身体锻造成致命武器。他们并不荒废灵性修行，但散打门徒引以为傲的是其武艺造诣，散打武僧手持拳脚以外武器的情况可谓绝无仅有。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "散打技法|替代武僧|LLAM|散打|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "精熟打击|替代武僧|LLAM|散打|LLAM|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "震慑拳|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Ebb and Flow",
+			"name": "攻守流转",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你受过借力打力的训练，能将敌人的势头反施其身。当一个你能看见的生物以近战攻击对你失手时，你可以使用以下反应之一：",
+				{
+					"ENG_name": "Toppling Blow",
+					"type": "entries",
+					"name": "掀翻一击",
+					"entries": [
+						"该生物必须对你的技法豁免DC通过敏捷豁免，否则倒地且速度为0，直到其回合结束。任何体型大于你的生物在此豁免上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Swift Reprisal",
+					"type": "entries",
+					"name": "迅捷反击",
+					"entries": [
+						"你对其进行一次徒手打击。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "不屈精神|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Master of Many Forms",
+			"name": "万形大师",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"每次长休期间，你可以花10分钟习练武艺，用另一门满足先决条件的技法替换你已知的一门技法。"
+			],
+			"foundryImg": "icons/magic/control/sihouette-hold-beam-green.webp"
+		},
+		{
+			"ENG_name": "Open Hand Strike",
+			"name": "散打击",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的打击能扰乱气的流转。若你以徒手打击造成重击，该生物在你因该次攻击而迫使其进行的任何豁免检定上均具劣势。"
+			],
+			"foundryImg": "icons/magic/earth/strike-fist-stone-gray.webp"
+		},
+		{
+			"ENG_name": "Master of the Open Hand",
+			"name": "散打大师",
+			"source": "LLAM",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "散打",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你已成为徒手武艺无出其右的大师，能以排山之势与惊鸿之速出拳。每当你使用疾风连击、迅捷反击或进行借机攻击时，你可以额外进行一次徒手打击。"
+			],
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp"
+		},
+		{
+			"ENG_name": "Way of Radiance",
+			"name": "光辉宗",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"传说中，有云游的贤者能从体内迸发出道道光芒。这些光辉的门徒对自身灵性的掌控极为精妙，能以辉煌的气浪打击他人。这些神奇的武者行走各地，在万民之间弘扬和谐与正义。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "光辉技法|替代武僧|LLAM|光辉|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "光耀箭|替代武僧|LLAM|光辉|LLAM|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Radiant Bolt",
+			"name": "光耀箭",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你能将气显现为辉煌之光，用以驱散黑暗、惩戒敌人。你掌握{@spell 光亮术}戏法，其施法调整值为你的感知。",
+				"此外，每当你能进行徒手打击时，你可以改为凝聚气发出一次光耀箭攻击。光耀箭是射程为30/60的远程法术攻击，你在其上具有熟练项，并使用如下所示的你的法术攻击调整值。命中时，它造成等于你的武艺骰＋你的感知调整值的光耀伤害，且就你的技法而言，它视为武艺近战攻击。",
+				{
+					"ENG_name": "Spell attack modifier",
+					"type": "abilityAttackMod",
+					"name": "法术攻击调整值",
+					"attributes": [
+						"wis"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/light/projectile-beam-yellow.webp"
+		},
+		{
+			"ENG_name": "Radiant Techniques",
+			"name": "光辉技法",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 疾步如风|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 拨挡飞弹|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 不屈精神|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "疾步如风|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拨挡飞弹|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Luminous Spirit",
+			"name": "辉光之魂",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"辉煌之气浸透你的灵性。当你对一个生物造成光耀伤害时，你可以消耗1点气，迫使它对你的技法豁免DC进行体质豁免。豁免失败的生物陷入目盲状态，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-red.webp"
+		},
+		{
+			"ENG_name": "Searing Blast",
+			"name": "灼热冲击",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能以辉煌之气的迸发压制敌人。你可以用附赠动作消耗1点气，迫使一片邻接15尺锥状区域内的所有生物对你的技法豁免DC进行敏捷豁免。",
+				"豁免失败的生物受到等于三颗武艺骰的光耀伤害，成功则只受一半伤害。"
+			],
+			"foundryImg": "icons/magic/light/beam-red-orange.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "不屈精神|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Luminous Burst",
+			"name": "辉光爆发",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的灵性洋溢着炽烈的光辉。你可以用动作沿一条5尺宽、100尺长的直线释放辉煌之气的爆发，迫使区域内生物对你的技法豁免DC进行敏捷豁免。豁免失败者受到等于六颗武艺骰的光耀伤害，成功者只受一半光耀伤害。",
+				"当你使用此特性时，你可以额外消耗气（最多为你的感知调整值）来强化你的辉光爆发，每消耗1点气便为其伤害加一颗武艺骰。",
+				"你可以使用此特性等于你感知调整值的次数（最低为一次）。你完成一次长休后恢复所有已用次数。当次数耗尽时，你可以消耗3点气再次使用辉光爆发。"
+			],
+			"foundryImg": "icons/magic/light/beam-rays-orange-large.webp"
+		},
+		{
+			"ENG_name": "Master of Radiance",
+			"name": "光辉大师",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "光辉",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你光辉的灵性是所有对抗邪恶之人的希望明灯。你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"只要你正在使用无甲移动，你便同时拥有等于你移动速度的飞行速度。",
+						"你被光芒环绕。你散发30尺半径的明亮阳光，以及其外30尺的微光阳光。你可以用附赠动作熄灭或复燃此光芒。",
+						"你的光耀箭、灼热冲击和辉光爆发特性造成的光耀伤害视为真正的阳光。",
+						"你获得暗蚀伤害抗性、所有光耀伤害免疫以及目盲状态免疫。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/light/explosion-beam-impact-silhouette.webp"
+		},
+		{
+			"ENG_name": "Way of the Reaper",
+			"name": "收割宗",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"多数宗门教弟子尽兴而活，奉行收割之道的武僧却痴迷于死亡与濒死的过程。收割武僧学会引动死气为自身武艺供能，并精于以恐惧等阴邪手段抽取他人生命力，以延己之寿。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "收割技法|替代武僧|LLAM|收割|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "恐慌之触|替代武僧|LLAM|收割|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "亡者武者|替代武僧|LLAM|收割|LLAM|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Frightful Touch",
+			"name": "恐慌之触",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能引动死气，让敌人沾染对死亡的恐惧。每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气迫使该生物对你的技法豁免DC进行感知豁免。豁免失败的生物对你陷入恐慌，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/magic/perception/shadow-stealth-eyes-purple.webp"
+		},
+		{
+			"ENG_name": "Reaper Techniques",
+			"name": "收割技法",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 致残打击|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 迟缓打击|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 灵光视觉|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "致残打击|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Warrior of Death",
+			"name": "亡者武者",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你与死气的亲和已彻底浸透你的身、心、灵，给予以下益处：",
+				{
+					"ENG_name": "Necrotic Body",
+					"type": "entries",
+					"name": "暗蚀之躯",
+					"entries": [
+						"你可以使你的徒手打击造成暗蚀伤害以代替钝击伤害，且你获得暗蚀伤害抗性。"
+					]
+				},
+				{
+					"ENG_name": "Necrotic Mind",
+					"type": "entries",
+					"name": "暗蚀之心",
+					"entries": [
+						"你在抵抗和终止恐慌状态的豁免检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Necrotic Spirit",
+					"type": "entries",
+					"name": "暗蚀之魂",
+					"entries": [
+						"若你死亡，你的遗体会受到{@spell 遗体防腐}法术的效应影响，天数等于你死亡时剩余的气。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/death/undead-ghost-scream-teal.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "迟缓打击|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Pierce the Veil",
+			"name": "穿透帷幕",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你对死亡的深刻了解使你能与逝者沟通。你可以用动作触碰一具遗体并消耗气（最多为你的感知调整值）。你每消耗1点气，便可以按照{@spell 死者交谈}法术的规则向该遗体提出一个问题。",
+				"但一旦你对某具遗体使用了此特性，便不能再次以该遗体为目标。与死者交谈一样，遗体并非必须回应你。"
+			],
+			"foundryImg": "icons/magic/death/skeleton-skull-soul-blue.webp"
+		},
+		{
+			"ENG_name": "Sinister Vitality",
+			"name": "邪异活力",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"死亡之痛予你生机。每回合一次，当你对一个活物造成暗蚀伤害时，你可以获得等于你感知调整值（最低为1）的临时生命值。",
+				"当你持有来自此特性的临时生命值时，你对非魔法且非银质的攻击具有钝击、穿刺和挥砍伤害抗性。"
+			],
+			"foundryImg": "icons/magic/unholy/strike-body-explode-disintegrate.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "灵光视觉|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Armor of the Grave",
+			"name": "墓穴护甲",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你与死亡的亲密使你能抵御其苍白的触碰。当你生命值降至0但并未当即死亡时，你可以消耗1点气改为生命值降至1。当你如此做时，你还可以选择陷入{@spell 假死术}法术的效应。",
+				"但在你完成一次长休前，你每多使用此能力一次，其消耗便增加1点气。"
+			],
+			"foundryImg": "icons/magic/death/skull-humanoid-worn-teal.webp"
+		},
+		{
+			"ENG_name": "Master of Reaping",
+			"name": "收割大师",
+			"source": "LLAM",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "收割",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你对死亡的认知使你能直接攻击其他生物体内赋命的气。你的每个回合一次，你可以放弃一次攻击去触碰一个生物并消耗至多10点气，迫使它对你的技法豁免DC进行体质豁免。",
+				"豁免失败的目标受到每消耗1点气便加两颗武艺骰的暗蚀伤害，成功则只受一半。",
+				"对你恐慌的生物在此豁免上具有劣势。此特性对亡灵同样无效。"
+			],
+			"foundryImg": "icons/magic/death/undead-skeleton-lich-armor.webp"
+		},
+		{
+			"ENG_name": "Way of the Rising Dragon",
+			"name": "升龙宗",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"升龙之门徒常侍奉于古龙左右，学会以气模拟龙之力。这些龙裔武者因所效仿之龙的不同而千差万别，但无论差异如何，他们个个都带着巨龙的王者气度。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "升龙技法|替代武僧|LLAM|升龙|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙之徒|替代武僧|LLAM|升龙|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素吐息|替代武僧|LLAM|升龙|LLAM|3|LLAM"
+				}
+			]
+		},
+		{
+			"ENG_name": "Draconic Disciple",
+			"name": "龙之徒",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"一头古龙或其门徒改造了你的气，为你注入了某些龙类能力：",
+				{
+					"ENG_name": "Ancient Tongue",
+					"type": "entries",
+					"name": "上古之语",
+					"entries": [
+						"你会说、读、写龙语。你还获得欺瞒、威吓或游说之一的熟练项，当你以该技能进行属性检定时，你的掷骰结果加上一颗武艺骰。"
+					]
+				},
+				{
+					"ENG_name": "Draconic Element",
+					"type": "entries",
+					"name": "龙之元素",
+					"entries": [
+						"选择强酸、寒冷、火焰、闪电或毒素之一作为你的元素。巨龙常选择与其吐息武器相同的元素，但古龙可以传授任意自选的元素。最后，你可以使你的徒手打击在命中时造成该元素伤害。"
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/reptiles/serpent-horned-green.webp"
+		},
+		{
+			"ENG_name": "Elemental Breath",
+			"name": "元素吐息",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你能如巨龙吐息般喷吐元素能量。当你采取攻击动作时，可以放弃一次攻击，以邻接的15尺锥状区域或30尺长、5尺宽的直线释放元素之气，迫使其中生物对你的技法豁免DC进行敏捷豁免。豁免失败者受到等于两颗武艺骰的元素伤害，成功则减半。",
+				"每当你使用此特性时，你还可以消耗气（最多为你的感知调整值），每消耗1点气便在伤害掷骰上额外加一颗武艺骰。"
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-ice-breath-blue.webp"
+		},
+		{
+			"ENG_name": "Rising Dragon Techniques",
+			"name": "升龙技法",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 疾步如风|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 拨挡飞弹|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 不屈精神|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "疾步如风|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拨挡飞弹|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Ascendant Step",
+			"name": "飞升步",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的技法模拟龙之力。每当你使用{@optfeature 疾步如风}时，你获得等于你步行速度的飞行速度，持续到回合结束。"
+			],
+			"foundryImg": "icons/creatures/reptiles/dragon-winged-blue.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "不屈精神|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Draconic Mantle",
+			"name": "龙威庇护",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的龙威护佑你周遭之人免受伤害。你和10尺内由你选择的生物对你的元素具有抗性，并且在抵抗魅惑或恐慌状态的所有豁免检定上具有优势。",
+				"此外，当你使用元素吐息时，你在伤害掷骰上加上你的感知调整值（最低＋1）。"
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-fire-breath-orange.webp"
+		},
+		{
+			"ENG_name": "Master of Draconic Might",
+			"name": "龙威大师",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "升龙",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你龙魂的真正潜能已然解放。你获得等于你步行速度的飞行速度，且你的龙威庇护半径增至30尺。",
+				"最后，每当你使用元素吐息时，你可以选择30尺锥状区域或60尺长、5尺宽的直线。"
+			],
+			"foundryImg": "icons/creatures/reptiles/dragon-horned-blue.webp"
+		},
+		{
+			"ENG_name": "Way of the Shadow Arts",
+			"name": "暗影宗",
+			"source": "LLAM",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"多数传统武者推崇光明正大的战术与武风，暗影技艺的门徒却会利用一切弱点，哪怕手段并不光彩。身为刺客与密探，暗影武僧只在确有胜算时方才出手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "暗影技法|替代武僧|LLAM|暗影技艺|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "黑夜明目|替代武僧|LLAM|暗影技艺|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "暗影技艺|替代武僧|LLAM|暗影技艺|LLAM|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Eyes of Night",
+			"name": "黑夜明目",
+			"source": "LLAM",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已适应在黑暗掩护下施展身手。你获得60尺半径的黑暗视觉，且你在黑暗中隐藏的隐匿检定具有优势。",
+				"若你已拥有来自种族或其他特性的黑暗视觉，其距离增加30尺。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp"
+		},
+		{
+			"ENG_name": "Shadow Arts",
+			"name": "暗影技艺",
+			"source": "LLAM",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"你能以气复现某些法术的效应：{@spell 黑暗术}、{@spell 黑暗视觉}、{@spell 行动无踪（变体）|llspell}或{@spell 沉默术}。你的身体是这些法术的施法法器，其施法属性为感知。你能看透你以这些法术创造的黑暗，视之如白昼。",
+				"每次长休之间，你可以免费施放这些法术各一次；此后，你可以消耗2点气再次施放该法术。"
+			],
+			"foundryImg": "icons/magic/unholy/orb-hands-pink.webp"
+		},
+		{
+			"ENG_name": "Shadow Techniques",
+			"name": "暗影技法",
+			"source": "LLAM",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 轻身坠|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 驯抚之触|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 天行步|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "轻身坠|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "驯抚之触|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Shadow Step",
+			"name": "暗影步",
+			"source": "LLAM",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你在黑暗中来无影去无踪，能从一个暗影踏入另一个暗影。当你处于微光或黑暗中时，你可以用附赠动作传送至多60尺，到达一个你可见且同样处于微光或黑暗中的未被占据空间。传送后，你在该回合结束前进行的第一次武艺攻击具有优势。"
+			],
+			"foundryImg": "icons/magic/movement/trail-streak-pink.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "天行步|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Cloak of Shadows",
+			"name": "幽影斗篷",
+			"source": "LLAM",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你能以气裹身，融入暗影。当你处于微光或黑暗中时，你可以用动作进入隐形，并保持隐形，直到你进行攻击、施放法术或移动到明亮光照区域。",
+				"当你隐形时，若有生物进入你的触及范围，你可以用反应对其进行一次借机攻击。这些借机攻击只有在你命中目标时才会终止你的隐形。若攻击失手，你保持隐形。"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-power.webp"
+		},
+		{
+			"ENG_name": "Master of Shadows",
+			"name": "暗影大师",
+			"source": "LLAM",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "暗影技艺",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你是暗影技艺无与伦比的大师，掌握的黑暗之力标志着你是真正的暗影大师。你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以随意施放你的暗影技艺法术，而无须消耗气。",
+						"你的暗影步距离增至120尺。",
+						"你可以用附赠动作使用你的幽影斗篷。",
+						"每次长休之间，你可以免费施放{@spell 高等隐形术}和{@spell 莫伊之影}各一次；此后，你必须消耗4点气才能再次施放该法术。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-light-fire-blue.webp"
+		},
+		{
+			"ENG_name": "Way of the Shining Steel",
+			"name": "辉钢宗",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"所有武僧都受过武器使用的训练，而行走于辉钢之道者毕生致力于精进自选的兵器。钢之武僧以极度的专注著称，他们不断挑战愈发强大的武者，将自己的灵性、技艺与意志推向终极试炼。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "辉钢技法|替代武僧|LLAM|辉钢|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "招牌武器|替代武僧|LLAM|辉钢|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "致命完美|替代武僧|LLAM|辉钢|LLAM|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Deadly Perfection",
+			"name": "致命完美",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你对完美的不懈追求使你在持握招牌武器时能使用以下特性：",
+				{
+					"ENG_name": "Masterful Aim",
+					"type": "entries",
+					"name": "精妙瞄准",
+					"entries": [
+						"你可以用附赠动作平心静气，以秘法提升准头。直到当前回合结束，你在d20上掷出7或更低的武器攻击掷骰均视为8。"
+					]
+				},
+				{
+					"ENG_name": "Masterful Parry",
+					"type": "entries",
+					"name": "精妙格挡",
+					"entries": [
+						"当一个你能看见的生物以近战攻击命中你时，你可以用反应在应对该次攻击时的护甲等级上加你的感知调整值（最低＋1）。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/maneuver-daggers-paired-orange.webp"
+		},
+		{
+			"ENG_name": "Shining Techniques",
+			"name": "辉钢技法",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 坚强防御|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 追寻打击|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 天行步|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "坚强防御|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Weapons",
+			"name": "招牌武器",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"虽然任何武器在你手中皆可致命，但你追求的是对少数精选兵器的精通。选择一件不具有重型或特殊属性的近战武器和一件远程武器作为你的招牌武器。若你原本不擅长你的招牌武器，你获得其熟练项，且你使用这些武器进行的攻击视为武艺攻击。",
+				"当你在本职业达到6级、10级和17级时，你可以额外选择一件招牌武器。"
+			],
+			"foundryImg": "icons/weapons/swords/greatsword-blue.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "追寻打击|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Shining Steel",
+			"name": "辉钢",
+			"source": "LLAM",
+			"page": 11,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"对招牌武器的精通使你的气得以流转其间，仿佛它们是你身体的延伸。你的招牌武器获得以下益处：",
+				{
+					"ENG_name": "Ki Blade",
+					"type": "entries",
+					"name": "气之刃",
+					"entries": [
+						"你可以选择使你的招牌武器造成光耀伤害，以代替其正常伤害类型。"
+					]
+				},
+				{
+					"ENG_name": "Perfect Strike",
+					"type": "entries",
+					"name": "完美打击",
+					"entries": [
+						"你的每个回合一次，当你以招牌武器攻击命中时，你可以消耗1点气，额外造成等于你武艺骰的伤害。"
+					]
+				},
+				{
+					"ENG_name": "Steel Wind",
+					"type": "entries",
+					"name": "钢铁旋风",
+					"entries": [
+						"当你使用疾风连击时，可以用一次招牌武器攻击代替一次徒手打击。"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/swords/sword-gold-holy.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "天行步|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Spirit Blade",
+			"name": "灵魂之刃",
+			"source": "LLAM",
+			"page": 11,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你能将致命之气灌注进你的招牌武器。在一次长休期间，你可以花1小时为你的招牌武器举行秘法仪式，为每件武器注入气（最多为你的感知调整值）。",
+				"你的招牌武器的重击范围依你为每件武器注入的气而定，如下所示：",
+				{
+					"type": "table",
+					"colLabels": [
+						"注入气数",
+						"重击范围"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"19或20"
+						],
+						[
+							"3",
+							"18-20"
+						],
+						[
+							"5",
+							"17-20"
+						]
+					]
+				},
+				"注入招牌武器的气会留存其中，直到你再次举行此秘法仪式方可取回，届时你可以将气取出，归还于你的灵性。"
+			],
+			"foundryImg": "icons/weapons/swords/sword-broad-serrated-blue.webp"
+		},
+		{
+			"ENG_name": "Master of Shining Steel",
+			"name": "辉钢大师",
+			"source": "LLAM",
+			"page": 11,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "辉钢",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你是招牌武器无可置疑的大师。每次短休或长休之间一次，当你以招牌武器攻击时，你可以用你的武僧等级代替你d20掷骰的结果。",
+				"若使用你的武僧等级会构成重击，该次招牌武器攻击便自动成为重击。"
+			],
+			"foundryImg": "icons/weapons/swords/sword-broad-crystal-paired.webp"
+		},
+		{
+			"ENG_name": "Way of the Wu Jen",
+			"name": "巫觋宗",
+			"source": "LLAM",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巫觋",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"有些武僧不向内求，而是让自己与自然之力相调。他们被称为巫觋，这些原初贤者以五元素\u2014\u2014气、土、火、水、木\u2014\u2014之力增益武艺。透过冥想，他们能学会将气化为元素之威。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "元素门徒|替代武僧|LLAM|巫觋|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "五行拳|替代武僧|LLAM|巫觋|LLAM|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Disciple of the Elements",
+			"name": "元素门徒",
+			"source": "LLAM",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巫觋",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的元素形态持续1分钟，但若你陷入失能或用附赠动作终止它，它会提前结束。你学会允许你施法的古老宗门武艺。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从此宗派描述末尾的巫觋法术列表中自选学习两个戏法。你在10级和17级时额外学习一个巫觋戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"巫觋施法表展示了你拥有多少法术位以及这些法术位的环阶。你的所有法术位环阶相同。要施放一门1环或更高环阶的巫觋法术，你必须消耗一个法术位。你沿用法术的施法时间及其他规则，但你的身体成为这些法术的施法法器，且你无须提供任何材料成分。你完成一次短休或长休后恢复所有已消耗的巫觋法术位。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高环阶的已知法术",
+					"entries": [
+						"你从此宗派末尾的巫觋法术列表中自选学习三门1环法术。巫觋施法表的已知法术一栏展示了你何时习得更多巫觋法术。你所选择的法术环阶不得高于表中你所在等级的法术位环阶一栏所示的环阶。",
+						"当你获得等级时，你可以选择一门已知的巫觋法术，用巫觋法术列表中的另一门法术替换它，但替换的法术环阶须是你拥有对应法术位的环阶。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"你巫觋法术的施法属性是感知，因此当法术提及你的施法属性、设定豁免DC以及进行法术攻击掷骰时，你均使用你的感知。",
+						{
+							"ENG_name": "Spell save DC",
+							"type": "abilityDc",
+							"name": "法术豁免DC",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"ENG_name": "Spell attack modifier",
+							"type": "abilityAttackMod",
+							"name": "法术攻击调整值",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fist of the Five Ways",
+			"name": "五行拳",
+			"source": "LLAM",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巫觋",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你能将五元素之力灌注于拳。每当你进行徒手打击时，你可以将其伤害变为你已知的一门巫觋法术所造成的伤害类型。",
+				"当你如此做时，该次徒手打击的触及增加5尺，因为它环绕着该元素之力。"
+			],
+			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp"
+		},
+		{
+			"ENG_name": "Elemental Spirit",
+			"name": "元素之魂",
+			"source": "LLAM",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巫觋",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的灵性是你元素魔法的导管。在你的回合，你可以用附赠动作消耗等于1＋你的法术位环阶的气，恢复一个已消耗的巫觋法术位。",
+				"此外，当你用动作施放一门巫觋法术时，你可以用附赠动作进行一次徒手打击。"
+			],
+			"foundryImg": "icons/magic/life/cross-embers-glow-yellow-purple.webp"
+		},
+		{
+			"ENG_name": "Spiritual Flow",
+			"name": "灵力流转",
+			"source": "LLAM",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巫觋",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"你将武艺与灵性魔法交织。当你施放一门施法时间为1动作的巫觋法术时，你可以消耗2点气改为用附赠动作施放它。"
+			],
+			"foundryImg": "icons/magic/water/wave-water-teal.webp"
+		},
+		{
+			"ENG_name": "Master of the Elements",
+			"name": "元素大师",
+			"source": "LLAM",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巫觋",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你可以用动作将五元素尽数纳入己身，进入元素形态，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得等于你步行速度的飞行速度。",
+						"你抵抗钝击、穿刺和挥砍伤害。",
+						"对你的重击变为普通命中。",
+						"对你的借机攻击具有劣势。",
+						"你在每个自己回合开始时可以获得等于你感知调整值（最低为1）的临时生命值。"
+					]
+				},
+				"你的元素形态持续1分钟，但若你陷入失能或用附赠动作终止它，它会提前结束。每次长休你可以免费使用此特性一次，此后你必须消耗6点气才能再次变身。"
+			],
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp"
+		},
+		{
+			"ENG_name": "Way of the Boulder",
+			"name": "巨石宗",
+			"source": "LLAM:E",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"此宗派与山岳一样古老，自文明肇始之初便师徒相承。他们将寺院建于峰巅与深窟之中，专注于使自己变得如高山般庞大而不可动摇。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "巨石技法|替代武僧|LLAM|巨石|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "磐石之躯|替代武僧|LLAM|巨石|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Boulder Techniques",
+			"name": "巨石技法",
+			"source": "LLAM:E",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 拨挡攻击|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 碾压打击|LLAM:E}"
+						],
+						[
+							"9级",
+							"{@optfeature 震地打击|LLAM:E}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拨挡攻击|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Solid Body",
+			"name": "磐石之躯",
+			"source": "LLAM:E",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你庞大的身躯同时强化了你的攻防。你的所有武艺特性以及无甲防御，都可以用体质代替敏捷。",
+				"此外，每当你进行力量属性检定或力量豁免时，你可以消耗1点气，在你的掷骰结果上加你的体质调整值。当你接触地面时，使用此特性无须消耗气。"
+			],
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "磐石之躯",
+						"changes": {
+							"key": "data.attributes.ac.base",
+							"mode": "UPGRADE",
+							"value": "10 + @abilities.con.mod + @abilities.wis.mod"
+						}
+					}
+				]
+			},
+			"foundryImg": "icons/magic/earth/strike-fist-stone.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碾压打击|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Rebounding Defense",
+			"name": "反弹防御",
+			"source": "LLAM:E",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你庞大的身躯使你能够拨挡猛烈的打击。你可以不消耗气使用{@optfeature 拨挡攻击|LLAM}技法。当你如此做时，计算来袭伤害的减免量时以体质代替敏捷。"
+			],
+			"foundryImg": "icons/magic/earth/barrier-stone-explosion-spiked.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "震地打击|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Density of Spirit",
+			"name": "致密之魂",
+			"source": "LLAM:E",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"你灵性的致密为你的身体注入极大的分量。你获得自选一项的伤害抗性：强酸、钝击、寒冷、火焰、闪电、穿刺、挥砍或雷鸣。每当你完成一次短休或长休时，可以将此抗性替换为同列表中的另一项。",
+				"你也可以用附赠动作消耗2点气，将此伤害抗性替换为上面列表中的另一项。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-blue.webp"
+		},
+		{
+			"ENG_name": "Earthshaker",
+			"name": "震地者",
+			"source": "LLAM:E",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你能以超自然的致密使大地震颤。每当你使用{@optfeature 震地打击|LLAM:E}技法时，可以选择影响你周围25尺半径的区域，以代替正常的25尺锥状土地。你可以无视此技法创造的任何困难地形。",
+				"最后，你可以不消耗气使用{@optfeature 震地打击|LLAM:E}技法，次数等于你的体质调整值（最低为一次），并在你完成一次长休后恢复所有已用次数。当你不消耗气使用它时，其效果如同你消耗了1点气，不过你仍可以照常消耗更多气来进一步强化你的技法。"
+			],
+			"foundryImg": "icons/magic/earth/explosion-lava-stone-red.webp"
+		},
+		{
+			"ENG_name": "Mighty Form",
+			"name": "威武之躯",
+			"source": "LLAM:E",
+			"page": 3,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "巨石",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在灵性的强化之下，你的身体已超越凡人密度与质量的极限。你的体质值及体质上限提高2，最高为22。"
+			],
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "威武之躯",
+						"changes": {
+							"key": "data.abilities.con.value",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					}
+				]
+			},
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp"
+		},
+		{
+			"ENG_name": "Way of the Brawler",
+			"name": "打手宗",
+			"source": "LLAM:E",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"这一非正式的宗派由未经正统训练、自学武艺的武者组成，打手们在文明社会阴暗面的后巷与格斗坑中学会战斗。他们多为白手起家的街头孤儿，为求胜利可以不择手段。对这些冷酷的角斗者而言，每一场战斗都是生死之战。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "凶蛮战技|替代武僧|LLAM|打手|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "街头智慧|替代武僧|LLAM|打手|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Streetwise",
+			"name": "街头智慧",
+			"source": "LLAM:E",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"languageProficiencies": [
+				{
+					"thieves' cant": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你已学会在街头生存的必要本领。你获得威吓的熟练项，并学会说、读、解盗贼黑话\u2014\u2014罪犯的语言。"
+			],
+			"foundryImg": "icons/environment/settlement/city-night.webp"
+		},
+		{
+			"ENG_name": "Savage Exploits",
+			"name": "凶蛮战技",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在那些不讲规矩的斗殴中，你习得了许多凶狠下作的战技。你获得以下特性：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战技骰|替代武僧|LLAM|打手|LLAM:E|3"
+				},
+				{
+					"ENG_name": "High Degree",
+					"type": "entries",
+					"name": "最高位阶",
+					"entries": [
+						"你的武僧等级限制了你能施展的战技的复杂程度。此上限体现于打手战技表的最高位阶一栏。"
+					]
+				},
+				{
+					"ENG_name": "Exploits",
+					"type": "entries",
+					"name": "战技",
+					"entries": [
+						"你从替代野蛮人可用的{@filter 凶蛮战技|optionalfeatures|feature type=ll:se}中自选两项学习。每次属性检定、攻击或豁免检定你只能使用一门战技，且不能同时使用战技与技法。",
+						"每当你获得武僧等级时，可以用另一门自选的武术战技替换你已知的一门战技。"
+					]
+				},
+				{
+					"ENG_name": "Brutal Cunning",
+					"type": "entries",
+					"name": "残暴狡诈",
+					"entries": [
+						"若某门战技有力量先决条件，只要你的感知也满足该先决条件，便可以学习它。"
+					]
+				},
+				{
+					"ENG_name": "Saving Throws",
+					"type": "entries",
+					"name": "豁免检定",
+					"entries": [
+						"若一门凶蛮战技需要生物进行豁免检定，则其使用你的技法豁免DC。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Exploit Dice",
+			"name": "战技骰",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"打手战技表展示了你拥有多少战技骰以供施展战技。要施展一门你已知的战技，你消耗一颗战技骰，并在完成一次短休或长休后恢复所有已消耗的战技骰。当你使用战技时，总是掷战技骰。"
+			]
+		},
+		{
+			"ENG_name": "Violent Enlightenment",
+			"name": "暴力开悟",
+			"source": "LLAM:E",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"战斗的暴虐与混乱为你的灵性之力提供燃料。你的武艺近战攻击在d20掷出19或20时即为重击。",
+				"此外，每当你以武艺近战攻击造成重击时，你立即恢复1点已消耗的气。"
+			],
+			"foundryImg": "icons/skills/melee/hand-grip-sword-orange.webp"
+		},
+		{
+			"ENG_name": "Infamous Reputation",
+			"name": "臭名昭著",
+			"source": "LLAM:E",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你残暴嗜斗的恶名先你而行。你可以用附赠动作消耗1点气，迫使30尺内一个能看见或听见你的生物对你的技法豁免DC进行感知豁免。豁免失败的生物对你陷入恐慌，直到你的下一回合开始。",
+				"任何对你恐慌的生物，在抵抗你的凶蛮战技效应的豁免检定上具有劣势。"
+			],
+			"foundryImg": "icons/magic/death/skeleton-worn-skull-tan.webp"
+		},
+		{
+			"ENG_name": "Master of Brutality",
+			"name": "残暴大师",
+			"source": "LLAM:E",
+			"page": 4,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你是冷酷战斗的大师。你对对你恐慌的生物进行的武艺攻击具有优势。",
+				"最后，每当你以武艺近战攻击对一个生物造成重击时，该生物抵抗你的技法或凶蛮战技的豁免检定自动失败。"
+			],
+			"foundryImg": "icons/environment/settlement/city-night-spire.webp"
+		},
+		{
+			"ENG_name": "Way of Ferocity",
+			"name": "凶猛宗",
+			"source": "LLAM:E",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"所有武僧都追求身体上的精通，将拳足打磨成武器，而生来便具有天生武器\u2014\u2014凶猛的利爪、威严的犄角或锋利的獠牙\u2014\u2014的生物则占据着天然优势。他们学会以技法强化自己的身体特征，将对气的掌握与一切野性血脉生物心中潜藏的凶猛合而为一。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "可选规则：种族限制|替代武僧|LLAM|凶猛|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "凶猛技法|替代武僧|LLAM|凶猛|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "天生掠食者|替代武僧|LLAM|凶猛|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ferocity Techniques",
+			"name": "凶猛技法",
+			"source": "LLAM:E",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 致残打击|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 震慑拳|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 兽与叶之友|LLAM:E}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "致残打击|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Natural Predator",
+			"name": "天生掠食者",
+			"source": "LLAM:E",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的武艺以下列特性之一强化你的天生能力。一经选定，便无法更改：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"ENG_name": "Bestial Rend",
+							"type": "entries",
+							"name": "兽性撕裂",
+							"page": 5,
+							"entries": [
+								"多为生有凶蛮利爪或尖牙的武僧所修。你的徒手打击可以造成挥砍伤害，且每当你如此做时，目标的速度降低5尺，直到你的下一回合开始。若你以此特性将其速度降为0，它在同一时长内的敏捷豁免也具有劣势。"
+							]
+						},
+						{
+							"ENG_name": "Natural Defense",
+							"type": "entries",
+							"name": "天生防御",
+							"page": 5,
+							"entries": [
+								"多为生有甲壳或鳞片等天然护甲的武僧所修。当你被一项你能看见的攻击命中时，你可以用反应在应对该次攻击时的护甲等级上加你的武艺骰，或可令其失手。"
+							]
+						},
+						{
+							"ENG_name": "Deadly Charge",
+							"type": "entries",
+							"name": "致命冲锋",
+							"page": 5,
+							"entries": [
+								"多为生有蹄或角的武僧所修。若你沿直线移动至少15尺后以近战徒手打击命中目标，该目标必须对你的技法豁免DC通过力量豁免，否则被击倒在地。"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Optional Rule: Race Restriction",
+			"name": "可选规则：种族限制",
+			"source": "LLAM:E",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"type": "inset",
+			"entries": [
+				"只有其玩家种族赋予天生武器的武僧\u2014\u2014如蜥蜴人、龟人、斑猫人或牛头人\u2014\u2014才能修习此修行宗派。你的DM可以解除这一限制。"
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "震慑拳|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Primal Intuition",
+			"name": "原初直觉",
+			"source": "LLAM:E",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你从以下技能中获得两项的熟练项：运动、洞悉、威吓、察觉、隐匿或求生。",
+				"从上面的列表中任选两项你已具有熟练项的技能。每当你以其中任一技能进行属性检定时，你的掷骰结果获得等于你武艺骰的加值。"
+			],
+			"foundryImg": "icons/creatures/abilities/paw-print-orange.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "兽与叶之友|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Ruthless Savagery",
+			"name": "无情凶残",
+			"source": "LLAM:E",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"荒野之中，绝无怜悯。你可以不消耗气使用{@optfeature 致残打击|LLAM}技法，次数等于你的感知调整值（最低为一次），并在你完成一次长休后恢复所有已用次数。",
+				"若自你的上一回合结束以来，你已用徒手打击命中过你{@optfeature 致残打击|LLAM}的目标，则该目标在进行体质豁免时具有劣势。"
+			],
+			"foundryImg": "icons/creatures/claws/claw-bear-paw-swipe-red.webp"
+		},
+		{
+			"ENG_name": "Master of Ferocity",
+			"name": "凶猛大师",
+			"source": "LLAM:E",
+			"page": 5,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你将原初本能与宗门修行结合，释放出真正的野性潜能。你获得下列特性之一。一经选定，便无法更改：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"ENG_name": "Bestial Fury",
+							"type": "entries",
+							"name": "兽性狂怒",
+							"page": 5,
+							"entries": [
+								"软弱激发你的原始狂怒。当你以徒手打击对一个生物造成重击时，其速度降为0，直到你的下一回合开始，且在同一时长内，你对该生物的徒手打击具有优势。"
+							]
+						},
+						{
+							"ENG_name": "Deadly Stampede",
+							"type": "entries",
+							"name": "致命狂奔",
+							"page": 5,
+							"entries": [
+								"你能引动一股太初疾速。你可以用动作沿直线移动至多你的速度，迫使任何被你穿过的生物对你的技法豁免DC进行敏捷豁免。豁免失败的目标受到等于四颗武艺骰的钝击伤害并倒地；成功的目标只受一半伤害，且不会倒地。"
+							]
+						},
+						{
+							"ENG_name": "Mystical Resilience",
+							"type": "entries",
+							"name": "秘法韧性",
+							"page": 5,
+							"entries": [
+								"秘法之力增强了你本就可观的天生防御。每当你受到任何伤害时，只要你不处于失能状态，该伤害便减少你的感知调整值（最低为1）。"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp"
+		},
+		{
+			"ENG_name": "Way of the Flowing River",
+			"name": "流水宗",
+			"source": "LLAM:E",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"修习流水之道的初学者所学的武艺流派强调非暴力，仅在必要时方才动武。此道之名源于这些武者在战斗中展现的精湛优雅与行云流水，流水之道的修习者常被称为舞武僧。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "流水技法|替代武僧|LLAM|流水|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "修行特技演员|替代武僧|LLAM|流水|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "流水架势|替代武僧|LLAM|流水|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Flowing River Stance",
+			"name": "流水架势",
+			"source": "LLAM:E",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以用附赠动作进入流水架势，此架势散发秘法灵光，将暴力导流于你身，正如河水受河岸引导。直到你的下一回合开始，你10尺内由你选择的生物对除你以外的目标发动的攻击均具劣势。",
+				"此灵光的半径会增长至与你的无甲移动加值相等，如\"武僧\"表中你所在等级一行所示。"
+			],
+			"foundryImg": "icons/magic/water/water-hand.webp"
+		},
+		{
+			"ENG_name": "Flowing River Techniques",
+			"name": "流水技法",
+			"source": "LLAM:E",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 拨挡攻击|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 拨挡飞弹|LLAM}"
+						],
+						[
+							"9级",
+							"{@optfeature 天行步|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拨挡攻击|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Monastic Acrobat",
+			"name": "修行特技演员",
+			"source": "LLAM:E",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"acrobatics": true,
+					"performance": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你举手投足间透着轻盈的优雅。你获得特技和表演两项技能的熟练项，每当你以上述任一技能进行属性检定时，你的掷骰结果获得等于你武艺骰的加值。",
+				"此外，每当你进行包含动作的表演检定时，可以用敏捷代替魅力。"
+			],
+			"foundryImg": "icons/creatures/mammals/deer-movement-leap-green.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "拨挡飞弹|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "River's Reprisal",
+			"name": "流水反击",
+			"source": "LLAM:E",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"战斗之流带来的宁静让你能将敌人的暴戾之意反施其身。当你处于流水架势时，若一个你能看见的生物以攻击对你失手，你可以用反应迫使它对你的技法豁免DC进行敏捷豁免。豁免失败者被击倒在地，且其速度降为0，直到你的下一回合开始。",
+				"此外，当你处于流水架势时，你可以不消耗气使用{@optfeature 拨挡攻击|LLAM}和{@optfeature 拨挡飞弹|LLAM}。"
+			],
+			"foundryImg": "icons/magic/water/projectiles-ice-explosion.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "天行步|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Grace of the Great Waters",
+			"name": "江海之惠",
+			"source": "LLAM:E",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你能力的秘法之力已然增长。当一个生物在你的流水架势效应影响下施放造成伤害或强制豁免检定的法术时，你必须是该法术的目标之一。",
+				"当你处于流水架势时，你获得一个特殊反应，可以在每个生物的回合使用。它只能用于流水反击、{@optfeature 拨挡攻击|LLAM}或{@optfeature 拨挡飞弹|LLAM}。"
+			],
+			"foundryImg": "icons/magic/water/elemental-water.webp"
+		},
+		{
+			"ENG_name": "Master of the Flowing River",
+			"name": "流水大师",
+			"source": "LLAM:E",
+			"page": 6,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "流水",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"即使是最猛烈的打击，你也能转而对付你的敌人。每当你使用{@optfeature 拨挡攻击|LLAM}或{@optfeature 拨挡飞弹|LLAM}时，你可以额外消耗气（最多为你的感知调整值），每消耗1点气便额外以一颗武艺骰减免伤害。",
+				"最后，当一个生物对你的流水反击豁免失败时，你还可以将其沿直线击退一定尺数，随后其倒地。你击退生物的距离取决于其体型，如下所示：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"微型",
+							"60尺",
+							"大型",
+							"20尺"
+						],
+						[
+							"小型",
+							"40尺",
+							"巨型",
+							"15尺"
+						],
+						[
+							"中型",
+							"30尺",
+							"超巨型",
+							"10尺"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/water/wave-water-blue.webp"
+		},
+		{
+			"ENG_name": "Way of the Hurricane",
+			"name": "飓风宗",
+			"source": "LLAM:E",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"多数武学传统讲求快打快移，飓风机法的门徒却专精于重型武器。飓风武僧挥舞巨型武器，破坏力惊人。在战场上，他们化身钢铁风暴，斩杀一切敢于阻挡之敌。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "飓风技法|替代武僧|LLAM|飓风|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "重械武者|替代武僧|LLAM|飓风|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "风暴打击|替代武僧|LLAM|飓风|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Heavy Warrior",
+			"name": "重械武者",
+			"source": "LLAM:E",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"weaponProficiencies": [
+				{
+					"glaive|phb": true,
+					"greataxe|phb": true,
+					"greatsword|phb": true,
+					"halberd|phb": true,
+					"maul|phb": true,
+					"pike|phb": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你的战斗风格吸纳了最强悍的武器。你获得重型近战武器的熟练项，且你使用这些武器进行的攻击视为武艺攻击。",
+				"此外，当你持握一把重型近战武器时，你在抵抗被擒抱或被违愿移动的所有属性检定和豁免检定上具有优势。"
+			],
+			"foundryImg": "icons/weapons/axes/axe-double-engraved-black.webp"
+		},
+		{
+			"ENG_name": "Hurricane Techniques",
+			"name": "飓风技法",
+			"source": "LLAM:E",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 台风打击|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 碾压打击|LLAM:E}"
+						],
+						[
+							"9级",
+							"{@optfeature 震地打击|LLAM:E}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "台风打击|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tempestuous Strike",
+			"name": "风暴打击",
+			"source": "LLAM:E",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你能以风暴之怒挥舞巨型武器。只要你持握一把重型近战武器，便可以不消耗气使用{@optfeature 台风打击|LLAM}。",
+				"当你如此做时，你可以在自己回合用附赠动作以重型武器的尾端进行一次攻击。命中时，其伤害等于一次武艺攻击。"
+			],
+			"foundryImg": "icons/weapons/axes/axe-double-blue.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碾压打击|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Crushing Counter",
+			"name": "碾压反击",
+			"source": "LLAM:E",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你以巨型武器的巨大重量回敬敌人。当你持握重型近战武器时，若一个你能看见的生物以近战攻击命中你，你可以用反应以该重型武器攻击它。",
+				"若此攻击命中，这一击之力使攻击者的速度降为0，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/skills/melee/strike-hammer-destructive-orange.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "震地打击|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Buffeting Winds",
+			"name": "狂风拍击",
+			"source": "LLAM:E",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你以狂风之势强化打击。当你以重型近战武器攻击命中一个生物，或以{@optfeature 台风打击|LLAM}伤害它时，你可以消耗1点气（每个目标）迫使它对你的技法豁免DC进行力量豁免。豁免失败者被沿直线击退等于5倍你感知调整值的尺数（最低5尺）。",
+				"此外，每当你使用{@optfeature 台风打击|LLAM}时，你可以额外消耗气（最多为你的感知调整值）来强化你的技法。若你如此做，此技法每消耗1点气便额外造成等于你武艺骰的雷鸣伤害，且生物豁免成功时也受到此技法的一半伤害。"
+			],
+			"foundryImg": "icons/magic/air/air-wave-gust-blue.webp"
+		},
+		{
+			"ENG_name": "Master of the Hurricane",
+			"name": "飓风大师",
+			"source": "LLAM:E",
+			"page": 7,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "飓风",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你驾驭巨型武器的技艺令其轻若鸿毛。当你持握重型近战武器时，你可以用动作消失不见，并对60尺内你可见的至多五个生物各进行一次近战武器攻击。",
+				"你可以在每次短休或长休之间使用此特性一次，此后你必须消耗5点气才能再次使用。"
+			],
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-blue-grey.webp"
+		},
+		{
+			"ENG_name": "Way of the Mystic",
+			"name": "秘术宗",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"秘术武僧冥思气的真正灵性潜能，逐渐舍弃身体修行，转而探究灵性深处。这些秘法贤者常被误认为法师或术士，却能引动灵性中的气来施展超凡的超自然绝技。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "秘法技法|替代武僧|LLAM|秘术|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "飞升武者|替代武僧|LLAM|秘术|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "秘术天赋|替代武僧|LLAM|秘术|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ascended Warrior",
+			"name": "飞升武者",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你飞升的灵性在战斗中驱动你的身体。你的武艺特性可以用感知代替敏捷。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-blue.webp"
+		},
+		{
+			"ENG_name": "Mystic Talents",
+			"name": "秘术天赋",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在对灵性开悟的追求中，你解锁了灵性的真正潜能。你从{@link 灵能者|https://www.gmbinder.com/share/-MPkCSxSj0OETiEd3Pyf}可用的秘术天赋中学习两项。来自此特性的天赋适用以下规则：",
+				{
+					"ENG_name": "Mystical Manifestations",
+					"type": "entries",
+					"name": "秘法显现",
+					"entries": [
+						"若一项秘术天赋有灵能者等级的先决条件，只要你的武僧等级满足该先决条件便可以学习它。你也可以用你的感知和气，分别代替其中任何提及的智力和灵能点。"
+					]
+				},
+				{
+					"ENG_name": "Learning new Talents",
+					"type": "entries",
+					"name": "学习新天赋",
+					"entries": [
+						"当你在本职业达到6级、10级和17级时，你额外学习一项自选的秘术天赋。最后，每当你获得等级时，你可以用另一项天赋替换你已知的一项天赋。但如果某项天赋是你已知另一项天赋的先决条件，则你不能替换它。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"type": "entries",
+					"name": "施法",
+					"entries": [
+						"你已知任何秘术天赋的施法属性均为感知。秘术天赋的一切豁免检定也使用你的技法豁免DC。"
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/biological/organ-brain-pink.webp"
+		},
+		{
+			"ENG_name": "Mystical Techniques",
+			"name": "秘法技法",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 灵魂护甲|LLAM:E}"
+						],
+						[
+							"5级",
+							"{@optfeature 削弱打击|LLAM:E}"
+						],
+						[
+							"9级",
+							"{@optfeature 自我通神|LLAM:E}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "灵魂护甲|LLAM:E"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "削弱打击|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Spiritual Assault",
+			"name": "灵魂冲击",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你能以灵击灵，绕过凡人血肉。你可以用附赠动作迫使15尺内一个你能看见的生物对你的技法豁免DC进行魅力豁免。",
+				"豁免失败的生物受到等于你武艺骰的心灵伤害，并在你的下一回合开始前进行的第一次智力、感知或魅力豁免检定上具有劣势。",
+				"你可以使用此特性等于你感知调整值的次数（最低为一次），并在完成一次长休后恢复所有已用次数。若次数耗尽，你可以消耗1点气再次使用你的灵魂冲击特性。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "自我通神|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Warded Soul",
+			"name": "庇护之魂",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的灵性守护你免受超自然侵袭。当你受到暗蚀、心灵或光耀伤害时，你可以消耗1点气来获得对那次伤害的抗性。"
+			],
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"ENG_name": "Master Mystic",
+			"name": "秘术大师",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "秘术",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你的灵性之力已凌驾于大多数在世凡人乃至某些不朽存在之上。每当你对一个生物造成心灵伤害时，若你尚未如此加值，便在伤害掷骰上加上你的感知调整值（最低为1）。",
+				"最后，在一次长休期间，你可以冥想1小时，用另一项自选天赋替换你已知的一项天赋。"
+			],
+			"foundryImg": "icons/magic/light/explosion-star-glow-silhouette.webp"
+		},
+		{
+			"ENG_name": "Way of the Sacred Inks",
+			"name": "圣墨宗",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"圣墨的入门者经年累月修习天界书法。一旦功成，武僧们便以日趋繁复的天界刺青铭刻己身，借此接引神力。武僧与神明的灵性联结愈深，其天界刺青也愈发瑰丽。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "圣墨技法|替代武僧|LLAM|圣墨|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "天界墨师|替代武僧|LLAM|圣墨|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神力导管|替代武僧|LLAM|圣墨|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Celestial Artist",
+			"name": "天界墨师",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"languageProficiencies": [
+				{
+					"celestial": true
+				}
+			],
+			"expertise": [
+				{
+					"calligrapher's supplies": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你已精通天界刺青的神圣技艺。你获得书法工具的熟练项，每当你进行包含书法工具的属性检定时，你的掷骰结果加上双倍熟练加值。",
+				"你还学会说、读、写天界语，即诸神之言。不过出于对神语的敬畏，多数武僧只在必要时才说天界语。"
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-plain-tan-red.webp"
+		},
+		{
+			"ENG_name": "Divine Conduit",
+			"name": "神力导管",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的天界刺青使你能引动天军的神圣之力，既能疗愈自身与盟友，也能向敌人降下审判。你获得以下特性：",
+				{
+					"ENG_name": "Divine Judgement",
+					"type": "entries",
+					"name": "神圣审判",
+					"entries": [
+						"你可以选择使你的徒手打击造成光耀伤害，以代替其正常伤害。",
+						"此外，每当你以徒手打击命中一个生物时，你可以消耗1点气，对其额外造成等于你武艺骰的光耀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Divine Regeneration",
+					"type": "entries",
+					"name": "神圣再生",
+					"entries": [
+						"每当你消耗一颗生命骰恢复生命值时，你可以消耗1点气，以该生命骰的最大值代替掷骰。"
+					]
+				},
+				{
+					"ENG_name": "Divine Touch",
+					"type": "entries",
+					"name": "神圣之触",
+					"entries": [
+						"你可以用动作触碰另一个自愿生物并消耗1点气。它恢复等于其一颗生命骰掷骰结果＋你的感知调整值的生命值。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-magical-yellow.webp"
+		},
+		{
+			"ENG_name": "Sacred Ink Techniques",
+			"name": "圣墨技法",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 神圣之光|LLAM:E}"
+						],
+						[
+							"5级",
+							"{@optfeature 削弱打击|LLAM:E}"
+						],
+						[
+							"9级",
+							"{@optfeature 自我通神|LLAM:E}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "神圣之光|LLAM:E"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "削弱打击|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Heavenly Protection",
+			"name": "天界护佑",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你与神明的联结以及天界刺青的繁复程度皆有精进，赐予你一份庇佑死亡的神恩。当你的生命值降至0时，你可以选择改为降至1。",
+				"你可以使用此特性一次，并在完成一次长休后恢复其使用次数。或者，你可以在自己回合用动作提前消耗5点气，恢复此特性的使用次数。"
+			],
+			"foundryImg": "icons/magic/holy/barrier-shield-winged-cross.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "自我通神|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Searing Light",
+			"name": "灼热之光",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作释放天界刺青中的神圣能量。在1分钟内，你散发10尺半径的明亮阳光，且当你消耗气使用神圣审判时，你的目标还必须对你的技法豁免DC进行体质豁免。豁免失败的生物陷入目盲状态，直到你的下一回合开始。",
+				"若你陷入失能，或你用附赠动作终止此特性，它便告结束。一旦你使用了此特性，你必须完成一次短休或长休后才能再次使用。"
+			],
+			"foundryImg": "icons/magic/light/explosion-glow-spiral-yellow.webp"
+		},
+		{
+			"ENG_name": "Master of the Sacred Inks",
+			"name": "圣墨大师",
+			"source": "LLAM:E",
+			"page": 8,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "圣墨",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作释放天界刺青中的神圣能量，化身神圣之美的活体圣像1分钟，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你的天界刺青显现出天使之翼。你获得等于你步行速度的飞行速度，并可以悬停。",
+						"你获得灼热之光的益处。其阳光半径增长至与你的无甲移动加值相等。"
+					]
+				},
+				"你可以在每次长休之间免费如此变身一次，此后你必须消耗5点气才能再次使用。"
+			],
+			"foundryImg": "icons/magic/light/explosion-star-glow-silhouette.webp"
+		},
+		{
+			"ENG_name": "Way of the Vigilante",
+			"name": "义警宗",
+			"source": "LLAM:E",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"修习此宗派的武僧以武艺诛伐邪恶，弘扬正义、自由与公平竞赛的美德。他们被一些人颂为英雄，也被另一些人讥为法外之徒，这些义警武者常常采用一个英雄人格\u2014\u2014一个传奇般的身份，以此对抗世间的邪恶与不公。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "义警技法|替代武僧|LLAM|义警|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "严阵以待|替代武僧|LLAM|义警|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "英雄人格|替代武僧|LLAM|义警|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Combat Ready",
+			"name": "严阵以待",
+			"source": "LLAM:E",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"intimidation",
+							"performance"
+						],
+						"count": 1
+					}
+				}
+			],
+			"armorProficiencies": [
+				{
+					"light": true,
+					"medium": true,
+					"shield": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你随时准备挺身而战、伸张正义。你获得威吓或表演之一的熟练项，每当你以该技能进行属性检定时，你的掷骰结果获得等于你武艺骰的加值。",
+				"你还获得轻甲、中甲和盾牌的熟练项，且在使用它们时仍能受益于你的武艺和无甲移动特性。"
+			],
+			"foundryImg": "icons/equipment/head/helm-barbute-horned.webp"
+		},
+		{
+			"ENG_name": "Heroic Persona",
+			"name": "英雄人格",
+			"source": "LLAM:E",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已创造出一个英雄人格，一个可以包括一套轻甲或中甲以及一面盾牌的传奇身份。只要你不被看见，便可以用附赠动作披挂你的英雄人格，获得等于你武僧等级的临时生命值，以及下列益处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以用附赠动作消耗1点气，获得等于你感知调整值（最低为1）的临时生命值。",
+						"当你以武艺攻击命中时，你可以消耗1点气，额外造成等于你武艺骰的伤害。",
+						"当你穿着轻甲或中甲计算护甲等级时，可以用感知代替敏捷。",
+						"任何试图辨识你真实身份的属性检定和占卜法术自动失败。"
+					]
+				},
+				"你的英雄人格的效应持续到你用附赠动作卸下它，或你陷入昏迷为止。你可以任意次披挂英雄人格，但每次长休中只有第一次变身时获得临时生命值；此后，你必须在变身时消耗3点气才能获得临时生命值。"
+			],
+			"foundryImg": "icons/creatures/mammals/bat-movement-flying-purple.webp"
+		},
+		{
+			"ENG_name": "Vigilante Techniques",
+			"name": "义警技法",
+			"source": "LLAM:E",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 轻身坠|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 碾压打击|LLAM:E}"
+						],
+						[
+							"9级",
+							"{@optfeature 不屈精神|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "轻身坠|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "碾压打击|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Valiant Action",
+			"name": "英勇行动",
+			"source": "LLAM:E",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"acrobatics"
+						],
+						"count": 1
+					}
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你英雄人格的秘法之力增强了你的身体能力。你获得特技或运动之一的熟练项，且当你的英雄人格披挂时，你可以每回合一次不消耗气使用{@optfeature 不屈精神|LLAM}。"
+			],
+			"foundryImg": "icons/creatures/mammals/deer-movement-leap-green.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "不屈精神|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Inspiring Presence",
+			"name": "鼓舞气度",
+			"source": "LLAM:E",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的英雄人格鼓舞着与你并肩作战之人。当你的英雄人格披挂时，你和20尺内由你选择的生物在抵抗魅惑或恐慌的豁免检定上具有优势。",
+				"随着武僧等级提升，此效应的半径增长至与你的无甲移动加值相等。"
+			],
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp"
+		},
+		{
+			"ENG_name": "Master Vigilante",
+			"name": "义警大师",
+			"source": "LLAM:E",
+			"page": 9,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "义警",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你的英雄人格是正义的传奇象征。你免疫魅惑和恐慌状态，且每当你以徒手打击命中一个体型与你相同或更小的生物时，它被沿直线击退10尺。"
+			],
+			"foundryImg": "icons/creatures/mammals/bat-giant-tattered-purple.webp"
+		},
+		{
+			"ENG_name": "Way of the Void",
+			"name": "虚空宗",
+			"source": "LLAM:E",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"所有武僧都求意志与宇宙合一，虚空武僧却经由湮灭寻求合一。此宗派的虚无主义门徒以秘法之力加速宇宙衰变的自然进程，并视自己为有意识的熵之使者。万物终将在虚空中归一。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "虚空技法|替代武僧|LLAM|虚空|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "熵之触|替代武僧|LLAM|虚空|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "虚空打击|替代武僧|LLAM|虚空|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"ENG_name": "Entropic Touch",
+			"name": "熵之触",
+			"source": "LLAM:E",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你能引动虚空的熵之力湮灭现实的碎片。你可以用动作消耗2点气，触碰一件小型或更小的非魔法物件（且未被穿戴或携带），将其瞬间化为一堆细灰。",
+				"随着达到特定武僧等级，你能引动更多熵之力以解构更大的物件，消耗的气也更多，如下表所示：",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"Ki",
+						"物件体型"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"3级",
+							"2",
+							"小型"
+						],
+						[
+							"6级",
+							"4",
+							"中型"
+						],
+						[
+							"10级",
+							"6",
+							"大型"
+						],
+						[
+							"17级",
+							"8",
+							"巨型"
+						],
+						[
+							"20级",
+							"12",
+							"超巨型"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/earth/orb-stone-smoke-teal.webp"
+		},
+		{
+			"ENG_name": "Void Strike",
+			"name": "虚空打击",
+			"source": "LLAM:E",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你挥舞虚空的熵之力，如其他武者挥舞武器。每回合一次，当你以徒手打击命中一个生物时，你可以消耗1点气，额外造成等于你武艺骰的力场伤害，且直到你的下一回合开始，该生物无法恢复生命值或获得临时生命值。",
+				"若此攻击的目标正在维持一个法术的专注，它在维持专注的豁免检定上具有劣势。"
+			],
+			"foundryImg": "icons/magic/unholy/hand-claw-fire-green.webp"
+		},
+		{
+			"ENG_name": "Void Techniques",
+			"name": "虚空技法",
+			"source": "LLAM:E",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表注明的等级习得特定技法。这些技法不计入你的已知技法数，也不能在获得等级时替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"武僧等级",
+						"技法"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 疾步如风|LLAM}"
+						],
+						[
+							"5级",
+							"{@optfeature 削弱打击|LLAM:E}"
+						],
+						[
+							"9级",
+							"{@optfeature 灵光视觉|LLAM}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "疾步如风|LLAM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "削弱打击|LLAM:E"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Vorpal Step",
+			"name": "斩空步",
+			"source": "LLAM:E",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你能引动虚空的能量使形骸消散。当你使用疾步如风时，你可以如穿越困难地形般穿过实体的非魔法物件和生物。",
+				"但若你在身处实体物件或生物体内时停止这种特殊移动，你将被立即挤送到最近的未被占据空间，并每被迫移动5尺便受到1d10力场伤害。"
+			],
+			"foundryImg": "icons/magic/movement/trail-streak-pink.webp"
+		},
+		{
+			"ENG_name": "Signature Techniques",
+			"name": "招牌技法",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型额外习得一门技法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "灵光视觉|LLAM"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Unmake Magic",
+			"name": "消解魔法",
+			"source": "LLAM:E",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你灵性的熵之力使你能扰乱并摧毁魔法。你可以消耗3点气施放3环的{@spell 法术反制（变体）|llspell}或{@spell 解除魔法}。当你如此做时，这些法术的施法属性视为感知。"
+			],
+			"foundryImg": "icons/magic/perception/orb-crystal-ball-scrying.webp"
+		},
+		{
+			"ENG_name": "Master of Entropy",
+			"name": "熵之大师",
+			"source": "LLAM:E",
+			"page": 10,
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "虚空",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你的力量即是湮灭本身。你的每个回合一次，你可以放弃一次徒手打击，改为触碰一个生物，迫使它对你的技法豁免DC进行体质豁免。豁免失败的生物受到如同6环施放的{@spell 解离术}法术的效应。",
+				"每次长休你可以免费使用此特性一次，此后你必须消耗6点气才能再次使用。"
+			],
+			"foundryImg": "icons/commodities/materials/bowl-powder-grey.webp"
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Armor of the Ascetic",
+			"name": "苦行者之甲",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 13
+					}
+				}
+			],
+			"entries": [
+				"你散发出平和的灵光。当你完成一次短休或长休后，你获得{@spell 庇护术}法术的效应，持续到你下一次休息结束，或直到你打破该法术。"
+			],
+			"foundryImg": "icons/equipment/chest/robe-layered-white.webp"
+		},
+		{
+			"ENG_name": "Arresting Strike",
+			"name": "遏制打击",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气阻碍其行动，迫使其进行敏捷豁免。豁免失败者，其速度降为0，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/magic/control/debuff-energy-snare-purple-blue.webp"
+		},
+		{
+			"ENG_name": "Ascetic Fortitude",
+			"name": "苦行者韧性",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"当你受到伤害时，你可以用反应消耗2点气，使该伤害减少相当于两次武艺骰＋你的感知调整值的数值。"
+			],
+			"foundrySystem": {
+				"activation.type": "minute",
+				"activation.condition": "When you take damage",
+				"activation.cost": 1,
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"2d(6 + (floor(@classes.alternate-monk.levels / 5) * 2)) + @abilities.wis.mod"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/defensive/armor-stone-skin.webp"
+		},
+		{
+			"ENG_name": "Aura Sight",
+			"name": "灵光视觉",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"你唤醒了感官的灵性潜能。你获得20尺半径的盲视。在此半径内，即使生物和物件隐形，你也能确知其准确位置，除非它们处于全身掩护之后。",
+				"13级时，你的盲视半径增至30尺；18级时，其半径最终增至60尺。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp"
+		},
+		{
+			"ENG_name": "Awaken the Third Eye",
+			"name": "唤醒第三眼",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"预见术"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 8
+			},
+			"entries": [
+				"你可以用动作消耗8点气，进入持续1分钟的冥想状态，获得{@spell 预见术}法术的效应。",
+				"此效应持续期间，你的气上限减少8。你可以在自己回合用动作提前结束此效应。"
+			],
+			"foundrySystem": {
+				"activation.type": "minute",
+				"activation.cost": 1
+			},
+			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp"
+		},
+		{
+			"ENG_name": "Banishing Strike",
+			"name": "放逐打击",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 3
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗3点气，以传奇之力强化这一击，迫使其进行魅力豁免。豁免失败者受3颗武艺骰的额外力场伤害，成功则受一半。",
+				"若此攻击使目标的生命值降至50点或更低，它将被移送至一个无害的半位面并陷入失能。随后在你的下一回合结束时，它重新出现在其最后所处空间最近的未被占据空间中。"
+			],
+			"foundrySystem": {
+				"activation.type": "none",
+				"activation.condition": "When you hit a creature with a melee Martial Arts attack",
+				"activation.cost": 1,
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"3d(6 + (floor(@classes.alternate-monk.levels / 5) * 2)) + @abilities.wis.mod",
+						"force"
+					]
+				],
+				"save.ability": "cha",
+				"save.scaling": "wis"
+			},
+			"foundryImg": "icons/creatures/unholy/demons-horned-glowing-pink.webp"
+		},
+		{
+			"ENG_name": "Befuddling Strike",
+			"name": "迷惑打击",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气攻击其神经系统，迫使其进行智力豁免。豁免失败者陷入失能，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/skills/melee/strike-club-red.webp"
+		},
+		{
+			"ENG_name": "Burning Blade",
+			"name": "燃焰之刃",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以用附赠动作消耗1点气，将炽烈的气注入你持握的一件武艺近战武器。接下来的1分钟内，该武器散发30尺半径的明亮光照，且只要你持续持握它，以之作的攻击便造成火焰伤害。"
+			],
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-red.webp"
+		},
+		{
+			"ENG_name": "Commune with Self",
+			"name": "自我通神",
+			"source": "LLAM:E",
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 5
+			},
+			"entries": [
+				"你已获得与前世的气沟通以获取信息的能力。你可以用动作消耗5点气，进入持续10分钟的冥想状态，求教于你的前世。冥想结束时，你获得如同施放了{@spell 通神术}一般的信息。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-green.webp"
+		},
+		{
+			"ENG_name": "Conjure Previous Life",
+			"name": "咒唤前世",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"天界召唤术|TCE"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 5
+			},
+			"entries": [
+				"你召唤前世的幽灵前来相助。你可以用动作消耗5点气，以身体作为施法法器，产生5环{@spell 天界召唤术|TCE}法术的效应，且不需要常规的材料成分。该法术有以下变化：",
+				{
+					"ENG_name": "Appearance & Statistics",
+					"type": "entries",
+					"name": "外形与数据",
+					"entries": [
+						"你必须选择守护圣灵选项，它会化作一名中体型类人生物武僧的外形，尽管其种族可能与你的不同。"
+					]
+				},
+				{
+					"ENG_name": "Ki Infusion",
+					"type": "entries",
+					"name": "注气",
+					"entries": [
+						"被咒唤时，你可以向这位天界生物注入任意数量的气并将其消耗。该天界生物随后可以使用这些气来施展你已知的任意秘术技法，但它不能再次使用咒唤前世。"
+					]
+				},
+				{
+					"ENG_name": "Radiant Strikes",
+					"type": "entries",
+					"name": "光耀打击",
+					"entries": [
+						"它的光耀硬头锤攻击替换为徒手打击，伤害使用你的武艺骰。"
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/magical/spirit-undead-masked-blue.webp"
+		},
+		{
+			"ENG_name": "Crippling Strike",
+			"name": "致残打击",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气摧残其感官，迫使其进行体质豁免。豁免失败者，由你选择它陷入目盲、耳聋或无法言语，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/skills/wounds/injury-eyes-blood-red-pink.webp"
+		},
+		{
+			"ENG_name": "Crushing Strike",
+			"name": "碾压打击",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"每回合一次，当你以徒手打击命中一个目标时，你可以消耗气（最多为你的感知调整值）以致命之力强化此击。你每消耗1点气，该攻击便额外造成等于你武艺骰的伤害。"
+			],
+			"foundryImg": "icons/skills/melee/strike-flail-spiked-pink.webp"
+		},
+		{
+			"ENG_name": "Dazing Strike",
+			"name": "茫然打击",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气击打其头部，迫使其进行感知豁免。豁免失败者，目标在其于你的下一回合开始前进行的第一次属性检定、攻击掷骰或豁免检定中必须减去1d4。"
+			],
+			"foundryImg": "icons/magic/control/modfiy-luck-fortune-red.webp"
+		},
+		{
+			"ENG_name": "Deflect Missile",
+			"name": "拨挡飞弹",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			],
+			"entries": [
+				"当你被你能看见的远程武器攻击命中时，你可以用反应使该伤害减少你的武僧等级＋你的武艺骰＋你的敏捷调整值。若你将伤害减至0，你便用空着的手接住该投掷物。",
+				"若你接住了它，你可以消耗1点气，以同一反应的一部分用该投掷物立即进行一次射程为20/60的远程武艺攻击。你在此攻击上拥有熟练项。",
+				"11级时，你可以消耗1点气，将此技法用于任何远程攻击，包括远程法术攻击。"
+			],
+			"foundryImg": "icons/skills/ranged/arrow-flying-white-blue.webp"
+		},
+		{
+			"ENG_name": "Deflect Strike",
+			"name": "拨挡攻击",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你被近战武器攻击命中时，你可以用反应消耗1点气，使该伤害减少你的武僧等级＋你的武艺骰＋你的敏捷调整值。若你将伤害减至0，你可以以同一反应的一部分对攻击者进行一次徒手打击。",
+				"11级时，你可以将此技法用于任何近战攻击，包括近战法术攻击。"
+			],
+			"foundryImg": "icons/skills/melee/swords-parry-block-blue.webp"
+		},
+		{
+			"ENG_name": "Divine Light",
+			"name": "神圣之光",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"_": [
+							{
+								"choose": "class=牧师|level=0",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"你从牧师法术列表中学习两个{@filter 自选戏法|spells|class=牧师|level=0}。这些法术的施法调整值使用你的感知，且你以身体作为它们的施法法器。"
+			],
+			"foundryImg": "icons/magic/holy/projectiles-blades-salvo-yellow.webp"
+		},
+		{
+			"ENG_name": "Empowered Strike",
+			"name": "强化打击",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气倾力一击，迫使其进行力量豁免。豁免失败者，将被沿远离你的直线水平击退等于5倍你感知调整值尺的距离，随即倒地。",
+				"体型至少比你大一级的生物在此力量豁免上具有优势。"
+			],
+			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue-green.webp"
+		},
+		{
+			"ENG_name": "Empty Body",
+			"name": "空灵体",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 18
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"18": [
+							"星界投影"
+						]
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 4
+			},
+			"entries": [
+				"你能化身为纯粹灵性的存在，哪怕只是暂时的。你可以用附赠动作消耗4点气，隐形1分钟。此期间你对除力场伤害外的所有伤害具有抗性。你可以用附赠动作结束此效应。",
+				"你也可以消耗8点气来施放{@spell 星界投影}法术，而无须常规的材料成分。但你的目标只能是自己，且不能携带其他生物同行。"
+			],
+			"foundryImg": "icons/creatures/magical/spirit-undead-ghost-blue.webp"
+		},
+		{
+			"ENG_name": "Enhanced Grip",
+			"name": "强化擒握",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"entries": [
+				"每当一个生物在你擒抱下开始其回合时，它受到等于你武艺骰的钝击伤害。你还可以拖行被你擒抱的生物，距离至多为你完整的速度。"
+			],
+			"foundryImg": "icons/skills/melee/hand-grip-staff-yellow-brown.webp"
+		},
+		{
+			"ENG_name": "Envenomed Strike",
+			"name": "淬毒打击",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气，额外造成等于你武艺骰的毒素伤害，并迫使目标进行体质豁免。豁免失败者陷入中毒状态，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/skills/melee/blade-tip-acid-poison-green.webp"
+		},
+		{
+			"ENG_name": "Friend of Beast and Leaf",
+			"name": "兽与叶之友",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 5
+			},
+			"entries": [
+				"你可以进入冥想状态，让你的气与周遭自然世界的气交融。你可以用动作消耗5点气进入此冥想状态，持续10分钟。冥想结束时，你获得如同施放了{@spell 问道自然}一般的信息。"
+			],
+			"foundryImg": "icons/magic/nature/plant-sprout-hands-vines.webp"
+		},
+		{
+			"ENG_name": "Gale Rush",
+			"name": "疾风冲刺",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用动作消耗气（最多为你的感知调整值），将其凝聚于掌心。你每消耗1点气，便沿直线移动至多10尺，并迫使移动终点的一个目标进行敏捷豁免。",
+				"豁免失败者，受到每消耗1点气便加一颗武艺骰的雷鸣伤害，并被击倒在地。豁免成功者只受一半伤害，且不会倒地。"
+			],
+			"foundryImg": "icons/magic/sonic/explosion-impact-shock-wave.webp"
+		},
+		{
+			"ENG_name": "Gentling Touch",
+			"name": "驯抚之触",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，你可以放弃一次攻击，消耗1点气触碰一个生物，操控其气使之沉眠。掷五颗武艺骰。若目标剩余生命值小于或等于掷骰总结果，它便陷入昏迷，持续10分钟。若有另一生物用其动作唤醒它，或它受到任何伤害，它便会醒来。",
+				"你可以额外消耗气（最多为你的感知调整值）来强化此技法，每额外消耗1点气便多掷一颗武艺骰并计入总结果。"
+			],
+			"foundryImg": "icons/magic/control/sleep-bubble-purple.webp"
+		},
+		{
+			"ENG_name": "Heavenly Step",
+			"name": "天行步",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"当你使用无甲移动时，你可以沿垂直表面、越过液体、乃至倒悬于天花板上移动而不会坠落。",
+				"若你停驻在这些表面之一上，你可以消耗1点气保持原位，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp"
+		},
+		{
+			"ENG_name": "Impairing Strike",
+			"name": "削弱打击",
+			"source": "LLAM:E",
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气巧妙地遏制其气流，迫使其进行魅力豁免。豁免失败者，选择目标的一项属性值。",
+				"直到你的下一回合开始，它使用该属性值进行的所有属性检定、攻击掷骰和豁免检定均具劣势，且它使用该属性发动的攻击或施放的法术只造成一半伤害。"
+			],
+			"foundryImg": "icons/skills/melee/strike-morningstar-gray.webp"
+		},
+		{
+			"ENG_name": "Improvised Strikes",
+			"name": "即兴打击",
+			"source": "LLAM",
+			"page": 1,
+			"featureType": [
+				"LLAM:T"
+			],
+			"entries": [
+				"你善于就地取材、随手应战。你获得即兴武器的熟练项，且你使用即兴武器进行的攻击视为武艺攻击。"
+			],
+			"foundryImg": "icons/tools/hand/shovel-spade-steel-grey.webp"
+		},
+		{
+			"ENG_name": "Indomitable Spirit",
+			"name": "不屈精神",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 9
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以用灵性之力强化你的身体能力。每当你进行运动检定时，可以消耗1点气，在你的掷骰结果上加你的感知调整值。你可以在掷骰之后、但尚不知晓结果成败之前如此做。"
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage.webp"
+		},
+		{
+			"ENG_name": "Mantle of Courtesy",
+			"name": "礼仪气度",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"灵性的洞见指引你的言谈。你获得游说的熟练项，且你进行任何游说检定时可以用感知代替魅力。",
+				"在你进行一次游说检定后，你可以消耗1点气，用你的武僧等级代替你的d20掷骰结果。"
+			],
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "礼仪气度",
+						"changes": [
+							{
+								"key": "data.skills.per.ability",
+								"mode": "OVERRIDE",
+								"value": "wis"
+							}
+						]
+					}
+				]
+			},
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp"
+		},
+		{
+			"ENG_name": "Mystic Regeneration",
+			"name": "秘术再生",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 2
+			},
+			"entries": [
+				"你可以引动气来激发自然痊愈。你可以用动作消耗2点气，恢复等于你的武艺骰＋你的感知调整值的生命值。"
+			],
+			"foundryImg": "icons/magic/life/cross-explosion-burst-green.webp"
+		},
+		{
+			"ENG_name": "Mystical Integrity",
+			"name": "秘法不坏",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 13
+					}
+				}
+			],
+			"entries": [
+				"你的自我认知与意志之坚定不可动摇。你免疫任何会改变你形体或传送你的法术或效应，除非你愿意受其影响。"
+			],
+			"foundryImg": "icons/creatures/magical/construct-golem-stone-blue.webp"
+		},
+		{
+			"ENG_name": "Patient Defense",
+			"name": "坚强防御",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你平心静气，摆出防御架势，以更好地抵御来袭的打击。你可以在自己回合消耗1点气，以附赠动作采取闪避动作。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp"
+		},
+		{
+			"ENG_name": "Probing Strike",
+			"name": "探查打击",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每当你以徒手打击命中一个生物时，你可以消耗1点气，从下列列表中获知一项情报：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"护甲等级",
+							"最高属性值"
+						],
+						[
+							"状态免疫",
+							"最低属性值"
+						],
+						[
+							"伤害抗性与免疫",
+							"一项特殊能力（施法、战技等）"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/perception/hand-eye-black.webp"
+		},
+		{
+			"ENG_name": "Quivering Palm",
+			"name": "渗透劲",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 18
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 5
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗5点气将致命的震荡注入其灵性，震荡持续天数等于你的武僧等级。若你与此生物处于同一位面，你可以用动作终止震荡，迫使其进行体质豁免。豁免失败者生命值降为0；成功者受到等于八颗武艺骰的暗蚀伤害。",
+				"同一时间你只能有一个生物处于此技法的秘法效应之下。对另一个生物使用此技法时，先前生物身上的效应将无害地终止。"
+			],
+			"foundryImg": "icons/skills/wounds/anatomy-organ-heart-red.webp"
+		},
+		{
+			"ENG_name": "Seeking Strike",
+			"name": "追寻打击",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"当你的身体失手时，灵性仍可指引你的打击。每当你的一次武艺攻击失手，你可以消耗1点气重新进行攻击掷骰，但必须使用新的结果。",
+				"此技法不计入每次攻击只能用一个耗气特性或技法的常规限制。"
+			],
+			"foundryImg": "icons/skills/ranged/target-bullseye-arrow-yellow.webp"
+		},
+		{
+			"ENG_name": "Severing Strike",
+			"name": "断魔打击",
+			"source": "LLAM:E",
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 3
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗3点气斩断其与奥术的联系，迫使其用其施法属性进行豁免。豁免失败者，在1分钟内无法施放法术或维持法术专注。它可以在其每个回合结束时重复此豁免，成功则终止此效应。"
+			],
+			"foundryImg": "icons/skills/melee/strike-blade-hooked-white-red.webp"
+		},
+		{
+			"ENG_name": "Slow Fall",
+			"name": "轻身坠",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"entries": [
+				"你如羽毛般轻盈地穿行于空中。只要你不处于被擒抱、失能或被束缚状态，你受到的坠落伤害减少5倍你的武僧等级。"
+			],
+			"foundryImg": "icons/commodities/materials/feather-white-glowing-fire.webp"
+		},
+		{
+			"ENG_name": "Slowing Strike",
+			"name": "迟缓打击",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气冲击其气流，迫使其进行感知豁免。豁免失败者受到{@spell 缓慢术}法术的效应，直到你的下一回合开始。",
+				"你无须为此效应维持专注。"
+			],
+			"foundryImg": "icons/magic/time/hourglass-tilted-gray.webp"
+		},
+		{
+			"ENG_name": "Spiritual Armor",
+			"name": "灵魂护甲",
+			"source": "LLAM:E",
+			"page": 1,
+			"featureType": [
+				"LLAM:T"
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以用灵性之力强健你的身体。你可以用附赠动作消耗1点气，为自己获得等于你感知调整值（最低为1）的临时生命值。",
+				"当一个生物首次伤害到这些临时生命值时，你可以用反应使其受到等于一次你武艺骰掷骰的力场伤害。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-blades-teal.webp"
+		},
+		{
+			"ENG_name": "Step of the Wind",
+			"name": "疾步如风",
+			"source": "LLAM",
+			"page": 11,
+			"featureType": [
+				"LLAM:T"
+			],
+			"entries": [
+				"你行动如风般迅捷。你可以用附赠动作采取疾走或撤离动作。如此做时，你的跳跃距离翻倍，直到当前回合结束。"
+			],
+			"foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp"
+		},
+		{
+			"ENG_name": "Stunning Strike",
+			"name": "震慑拳",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"每回合一次，当你以武艺近战攻击命中一个生物时，你可以消耗1点气直击其身、心、灵，迫使其进行体质豁免。豁免失败者陷入震慑状态，直到你的下一回合开始。"
+			],
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp"
+		},
+		{
+			"ENG_name": "Tongue of Sun & Moon",
+			"name": "天语通",
+			"source": "LLAM",
+			"page": 12,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						},
+						"level": 13
+					}
+				}
+			],
+			"entries": [
+				"你能在灵性层面沟通。当你与一个会说至少一种语言的生物交谈时，它听见你说它的母语，而你也以你的母语听见它的回应。",
+				"若你用此技法与一个不会说任何语言的生物沟通，你们只能交流和理解简单的意念，并受其智力所限。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-unity-alliance.webp"
+		},
+		{
+			"ENG_name": "Tremor Strike",
+			"name": "震地打击",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用动作消耗气（最多为你的感知调整值）击打地面，摧毁贴地的一片邻接25尺锥状土地，迫使其中生物进行力量豁免。豁免失败的目标受到每消耗1点气便加一颗武艺骰的钝击伤害，并倒地；成功者只受一半伤害，且不会倒地。",
+				"此区域内的建筑物受到最大伤害，且此技法的区域在清理之前成为困难地形。"
+			],
+			"foundryImg": "icons/skills/melee/strike-hammer-destructive-blue.webp"
+		},
+		{
+			"ENG_name": "Typhoon Strike",
+			"name": "台风打击",
+			"source": "LLAM",
+			"page": 1,
+			"featureType": [
+				"LLAM:T"
+			],
+			"entries": [
+				"你可以用动作消耗1点气，向周遭所有生物挥击。所有处于你徒手打击触及范围或你所持武艺近战武器触及范围内的生物，必须通过敏捷豁免，否则受到等于你的武艺骰＋你的敏捷调整值的该攻击类型伤害。"
+			],
+			"foundryImg": "icons/magic/sonic/explosion-shock-wave-teal.webp"
+		},
+		{
+			"ENG_name": "Warrior Adept",
+			"name": "武者行家",
+			"source": "LLAM:E",
+			"page": 1,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你受过某种专精战斗风格的训练。你从下面的列表中获得一项自选的战斗风格。作为武僧，你只能通过此技法获得一项战斗风格：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "箭术|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "盲武者|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "均衡战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "轻量战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "投掷手|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "长柄武器战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "多用战斗|LLStyles"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Word of Creation",
+			"name": "创世之言",
+			"source": "LLAM:E",
+			"page": 2,
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"ENG_name": "Alternate Monk",
+							"name": "替代武僧",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"rest": {
+								"1": [
+									"圣言术"
+								]
+							}
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"consumes": {
+				"ENG_name": "Ki",
+				"name": "Ki",
+				"amount": 7
+			},
+			"entries": [
+				"你可以凭借对流转万物的气的深切了悟，拨动创世的丝线。你可以用动作消耗7点气，以感知作为施法调整值，产生{@spell 圣言术}法术的效应。",
+				"一旦你用气施放了{@spell 圣言术}，你必须完成一次短休或长休后才能再次以此方式施放它。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1
+			},
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp"
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Savage Exploits",
+			"name": "凶蛮战技",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Brawler Exploits",
+					"name": "打手战技",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "UPGRADE",
+							"value": "@scale.way-of-the-brawler.exploit.number"
+						},
+						{
+							"key": "flags.ll.exploit.faces",
+							"mode": "UPGRADE",
+							"value": "@scale.way-of-the-brawler.exploit.faces"
+						},
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + @abilities.wis.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Exploit Dice",
+			"name": "战技骰",
+			"source": "LLAM:E",
+			"className": "替代武僧",
+			"classSource": "LLAM",
+			"subclassShortName": "打手",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Roll",
+					"name": "掷骰",
+					"type": "utility",
+					"activation.type": "",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"roll.formula": "d@flags.ll.exploit.faces"
+				}
+			],
+			"system": {
+				"uses.max": "@flags.ll.exploit.number"
+			}
+		}
+	]
+}
