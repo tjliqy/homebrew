@@ -1,0 +1,5386 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLABH",
+				"abbreviation": "LLABH",
+				"full": "替代血猎手",
+				"url": "https://www.gmbinder.com/share/-NLlETPNSzqxgQ92pnd-",
+				"version": "2.2.0",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle",
+					"hakr14"
+				],
+				"color": "940101"
+			}
+		],
+		"dependencies": {
+			"optionalfeature": [
+				"LLStyles"
+			],
+			"spell": [
+				"llspell"
+			],
+			"monster": [
+				"LLCompendiumOfBeasts"
+			]
+		},
+		"optionalFeatureTypes": {
+			"LLABH:BR": "血仪",
+			"LLABH:M": "诱变剂"
+		},
+		"edition": "classic",
+		"dateAdded": 1657295680,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "a88228940d"
+	},
+	"class": [
+		{
+			"ENG_name": "Alternate Blood Hunter",
+			"name": "替代血猎手",
+			"source": "LLABH",
+			"hd": {
+				"number": 1,
+				"faces": 12
+			},
+			"proficiency": [
+				"con",
+				"cha"
+			],
+			"additionalSpells": [
+				{
+					"ENG_name": "Grim Psychometry (Ritual Only)",
+					"name": "阴暗灵卜（仅仪式）",
+					"innate": {
+						"5": [
+							"鉴定术"
+						],
+						"9": [
+							"通晓传奇"
+						]
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Blood Rites",
+					"name": "血仪",
+					"featureType": [
+						"LLABH:BR"
+					],
+					"progression": {
+						"1": 2,
+						"5": 3,
+						"9": 4,
+						"13": 5,
+						"17": 6
+					}
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"arcana",
+								"history",
+								"insight",
+								"investigation",
+								"nature",
+								"religion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"tools": [
+					"{@item 炼金工具|phb}"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}或 (b) 两把{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) 一把{@item 轻弩|phb}和{@item 弩矢(20)|phb|20支弩矢}或 (b) 四支{@item 标枪|phb|标枪}",
+					"(a) 一件{@item 镶钉皮甲|phb}或 (b) 一件{@item 鳞甲|phb}",
+					"一套{@item 炼金工具|phb}和一个{@item 探索套组|phb}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"轻弩|phb",
+							"弩矢(20)|phb"
+						],
+						"b": [
+							{
+								"item": "标枪|phb",
+								"quantity": 4
+							}
+						]
+					},
+					{
+						"a": [
+							"镶钉皮甲|phb"
+						],
+						"b": [
+							"鳞甲|phb"
+						]
+					},
+					{
+						"_": [
+							"炼金工具|phb",
+							"探索套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"con": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"tools": [
+						"{@item 炼金工具|phb}"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"血仪骰",
+						"{@filter 已知血仪|optionalfeatures|feature type=LLABH:BR}"
+					],
+					"rows": [
+						[
+							"{@dice d4}",
+							2
+						],
+						[
+							"{@dice d4}",
+							2
+						],
+						[
+							"{@dice d4}",
+							2
+						],
+						[
+							"{@dice d4}",
+							2
+						],
+						[
+							"{@dice d6}",
+							3
+						],
+						[
+							"{@dice d6}",
+							3
+						],
+						[
+							"{@dice d6}",
+							3
+						],
+						[
+							"{@dice d6}",
+							3
+						],
+						[
+							"{@dice d6}",
+							4
+						],
+						[
+							"{@dice d6}",
+							4
+						],
+						[
+							"{@dice d8}",
+							4
+						],
+						[
+							"{@dice d8}",
+							4
+						],
+						[
+							"{@dice d8}",
+							5
+						],
+						[
+							"{@dice d8}",
+							5
+						],
+						[
+							"{@dice d8}",
+							5
+						],
+						[
+							"{@dice d8}",
+							5
+						],
+						[
+							"{@dice d10}",
+							6
+						],
+						[
+							"{@dice d10}",
+							6
+						],
+						[
+							"{@dice d10}",
+							6
+						],
+						[
+							"{@dice d10}",
+							6
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"猎人之苦|替代血猎手|LLABH|1|LLABH",
+				"战斗风格|替代血猎手|LLABH|1|LLABH",
+				"血仪|替代血猎手|LLABH|2|LLABH",
+				"猩红祭献|替代血猎手|LLABH|2|LLABH",
+				{
+					"classFeature": "秘术结社|替代血猎手|LLABH|3|LLABH",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代血猎手|LLABH|4|LLABH",
+				"额外攻击|替代血猎手|LLABH|5|LLABH",
+				"阴暗灵卜|替代血猎手|LLABH|5|LLABH",
+				"猩红烙印|替代血猎手|LLABH|6|LLABH",
+				{
+					"classFeature": "秘术结社|替代血猎手|LLABH|7|LLABH",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代血猎手|LLABH|8|LLABH",
+				"黑暗增幅|替代血猎手|LLABH|10|LLABH",
+				"强化猩红祭献|替代血猎手|LLABH|11|LLABH",
+				"生命掌控|替代血猎手|LLABH|11|LLABH",
+				"属性值提升|替代血猎手|LLABH|12|LLABH",
+				{
+					"classFeature": "秘术结社|替代血猎手|LLABH|13|LLABH",
+					"gainSubclassFeature": true
+				},
+				"猩红之锚|替代血猎手|LLABH|14|LLABH",
+				"刚毅灵魂|替代血猎手|LLABH|15|LLABH",
+				"属性值提升|替代血猎手|LLABH|16|LLABH",
+				{
+					"classFeature": "秘术结社|替代血猎手|LLABH|18|LLABH",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|替代血猎手|LLABH|19|LLABH",
+				"胸有成竹|替代血猎手|LLABH|20|LLABH"
+			],
+			"hasFluff": true,
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "血仪骰",
+					"configuration": {
+						"identifier": "rite-die",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"die": 4
+							},
+							"5": {
+								"die": 6
+							},
+							"11": {
+								"die": 8
+							},
+							"17": {
+								"die": 10
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "猩红烙印血仪骰次数",
+					"configuration": {
+						"identifier": "crimson-brand",
+						"type": "number",
+						"scale": {
+							"6": {
+								"value": 1
+							},
+							"14": {
+								"value": 2
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/skills/wounds/injury-triple-slash-bleed.webp"
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Alternate Blood Hunter",
+			"name": "替代血猎手",
+			"source": "LLABH",
+			"entries": [
+				{
+					"ENG_name": "Blood Hunter",
+					"type": "section",
+					"name": "血猎手",
+					"source": "LLABH",
+					"page": 1,
+					"entries": [
+						"当年轻人的眼罩被摘下时，他发现自己身处一间光线昏暗的房间，四周环绕着兜帽人影。他站在一座小型高台前，台上一瓶猩红液体泛着微光。数月的训练将他带至此刻。若他能饮下瓶中之物并在\"猎人之苦\"中幸存，他将再非从前。超越凡人之后，他终将获得力量，为这些年来长眠的家人复仇。",
+						"当恶魔孽裔成群向她扑来时，年迈的半精灵用细刃划过掌心，让鲜血浸染剑锋。刹那间，鲜血燃烧起来，将她的剑裹上一层惨淡的蓝色火焰。她化作一道碧火与冷钢交织的残影扑向魔群。今日，她绝不会对这些地狱孽种有丝毫怜悯。",
+						"在苍白月光下，一个近乎野性的半身人四肢伏地，嗅闻着面前的踪迹。地精的气味确凿无疑\u2014\u2014污秽的破布与腐坏的肉食。伴着一声野兽般的嚎叫，半身人的身躯骤然壮大，粗硬的灰色毛发从他的手臂和双腿迸出。快如疾风，这个半身人狼人在满月的光辉下开始了又一场狩猎。",
+						"上述所有奇异而可怖的武者皆是血猎手\u2014\u2014这些守卫者将受诅咒的力量注入并接种于自己的血脉之中，从而得以猎杀怪物。",
+						{
+							"ENG_name": "Self-Sacrificing Hunters",
+							"type": "entries",
+							"name": "自我牺牲的猎人",
+							"page": 1,
+							"entries": [
+								"血猎手没有正式的等级体系，其结社的种类与他们自愿背负的诅咒一样繁多，但有一点共通\u2014\u2014\"猎人之苦\"。在这场古老而致命的仪式中幸存下来的人，方能运用那标志着血猎手身份的血色魔法。",
+								"这场邪恶仪式的构成因结社与时代而异，每一场都融入了怪物般的诅咒与魔法，赋予血猎手其所属结社的独特能力。这一仪式会永久改变受术者，以怪物之力接种其血液，代价则是其作为普通凡人的本源。无论怪物潜伏何处，总有为此放弃平凡人生、从而得以潜行猎杀黑暗中邪恶生物的血猎手。"
+							]
+						},
+						{
+							"ENG_name": "Ancient & Sinister Rites",
+							"type": "entries",
+							"name": "古老而邪恶的血仪",
+							"page": 1,
+							"entries": [
+								"无论黑暗生物在何处游荡，与之抗衡的武者亦如影随形。许多血猎手结社的传承可追溯至远古时代。他们所用的血魔法比牧师的神圣魔法更为古老，是凡人只能自求多福的黑暗时代的遗产。尽管其血魔法本质阴森、施行起来令人不安，许多血猎手仍为其秘术结社的古老传统、仪式与血仪深感自豪。"
+							]
+						},
+						{
+							"ENG_name": "Creating your Blood Hunter",
+							"type": "entries",
+							"name": "创建你的血猎手",
+							"page": 1,
+							"entries": [
+								"创建血猎手时，最需要考量的是：他们为何会选择这种受诅咒的生活方式。他们是可怕怪物袭击的受害者，不惜一切个人代价立誓复仇？还是自幼师从一位年长的猎人，被锻造成无情的怪物杀手？抑或因出众的狩猎天赋而被某个隐秘结社招募？",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速构建",
+									"entries": [
+										"你可以按照以下建议快速创建一名血猎手。首先，将你的力量或敏捷作为最高属性值，其次是体质。其次，选择{@background 噩梦缠身|VRGR}背景。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Editor's Note",
+							"type": "inset",
+							"name": "编者注",
+							"entries": [
+								"本文呈现的替代血猎手基于{@loader 血猎手|class/Matthew Mercer; Blood Hunter (2020).json}职业，该职业由Matthew Mercer原创设计。这并非对原职业的批评，而是对血猎手概念的致敬。",
+								"这一血猎手职业的重构版本旨在使原版更贴近5e的设计理念，并降低对那些可能不习惯原版风险/回报机制的玩家的惩罚性。",
+								"官方血猎手可在{@link DMs Guild|https://www.dmsguild.com/product/301641/Blood-Hunter-Class-for-DD-5e-2020}上找到，我也鼓励本项目的任何爱好者通过上述链接购买一份原版，以示支持。",
+								{
+									"type": "quote",
+									"entries": [],
+									"by": "莱瑟拉玛"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Order of Alchemists",
+			"name": "炼金术士结社",
+			"shortName": "炼金术士",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Latent Mutagens",
+					"name": "潜伏诱变剂",
+					"featureType": [
+						"LLABH:M"
+					],
+					"progression": {
+						"3": 3,
+						"7": 5,
+						"13": 7,
+						"18": 9
+					}
+				}
+			],
+			"subclassFeatures": [
+				"炼金术士结社|替代血猎手|LLABH|炼金术士|LLABH|3|LLABH",
+				"持久突变|替代血猎手|LLABH|炼金术士|LLABH|7|LLABH",
+				"剧毒打击|替代血猎手|LLABH|炼金术士|LLABH|13|LLABH",
+				"迅捷突变|替代血猎手|LLABH|炼金术士|LLABH|18|LLABH"
+			],
+			"foundryImg": "icons/consumables/potions/round-decorated-snake-green.webp"
+		},
+		{
+			"ENG_name": "Order of Heretics",
+			"name": "异端结社",
+			"shortName": "异端",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassFeatures": [
+				"异端结社|替代血猎手|LLABH|异端|LLABH|3|LLABH",
+				"不洁复原|替代血猎手|LLABH|异端|LLABH|7|LLABH",
+				"神圣咒逐|替代血猎手|LLABH|异端|LLABH|13|LLABH",
+				"极致僭越|替代血猎手|LLABH|异端|LLABH|18|LLABH"
+			],
+			"foundryImg": "icons/magic/holy/angel-wings-gray.webp"
+		},
+		{
+			"ENG_name": "Order of Salt & Iron",
+			"name": "盐与铁结社",
+			"shortName": "盐与铁",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassFeatures": [
+				"盐与铁结社|替代血猎手|LLABH|盐与铁|LLABH|3|LLABH",
+				"诅咒专家|替代血猎手|LLABH|盐与铁|LLABH|7|LLABH",
+				"驱魔武士|替代血猎手|LLABH|盐与铁|LLABH|13|LLABH",
+				"牺牲祭献|替代血猎手|LLABH|盐与铁|LLABH|18|LLABH",
+				"灵体精通|替代血猎手|LLABH|盐与铁|LLABH|18|LLABH"
+			],
+			"foundryImg": "icons/commodities/metal/chain-silver.webp"
+		},
+		{
+			"ENG_name": "Order of the Pale Moon",
+			"name": "苍白之月结社",
+			"shortName": "苍白之月",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassFeatures": [
+				"苍白之月结社|替代血猎手|LLABH|苍白之月|LLABH|3|LLABH",
+				"兽化战士|替代血猎手|LLABH|苍白之月|LLABH|7|LLABH",
+				"野性勇武|替代血猎手|LLABH|苍白之月|LLABH|13|LLABH",
+				"兽化精通|替代血猎手|LLABH|苍白之月|LLABH|18|LLABH"
+			],
+			"foundryImg": "icons/environment/settlement/watchtower-castle-night.webp"
+		},
+		{
+			"ENG_name": "Order of Undying Thirst",
+			"name": "不朽饥渴结社",
+			"shortName": "不朽饥渴",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Blood Magic Specialist",
+					"name": "血魔法专家",
+					"featureType": [
+						"LLABH:BR"
+					],
+					"progression": {
+						"3": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"不朽饥渴结社|替代血猎手|LLABH|不朽饥渴|LLABH|3|LLABH",
+				"精华汲取|替代血猎手|LLABH|不朽饥渴|LLABH|7|LLABH",
+				"邪异韧性|替代血猎手|LLABH|不朽饥渴|LLABH|7|LLABH",
+				"雾隐遁行|替代血猎手|LLABH|不朽饥渴|LLABH|13|LLABH",
+				"猩红君王|替代血猎手|LLABH|不朽饥渴|LLABH|18|LLABH"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "血仪骰",
+					"configuration": {
+						"identifier": "blood-rite-die",
+						"type": "dice",
+						"scale": {
+							"3": {
+								"die": 6
+							},
+							"5": {
+								"die": 8
+							},
+							"11": {
+								"die": 10
+							},
+							"17": {
+								"die": 12
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/skills/wounds/bone-broken-tooth-fang-red.webp"
+		},
+		{
+			"ENG_name": "Order of Witch Knights",
+			"name": "巫骑士结社",
+			"shortName": "巫骑士",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"spellcastingAbility": "con",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				6,
+				7,
+				7,
+				7,
+				7
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							{
+								"choose": "level=1|subclass=替代血猎手: 巫骑士 (LLABH)",
+								"count": 2
+							}
+						],
+						"5": [
+							{
+								"choose": "level=1|subclass=替代血猎手: 巫骑士 (LLABH)",
+								"count": 1
+							}
+						],
+						"7": [
+							{
+								"choose": "level=1;2|subclass=替代血猎手: 巫骑士 (LLABH)",
+								"count": 1
+							}
+						],
+						"9": [
+							{
+								"choose": "level=1;2|subclass=替代血猎手: 巫骑士 (LLABH)",
+								"count": 1
+							}
+						],
+						"13": [
+							{
+								"choose": "level=1;2;3|subclass=替代血猎手: 巫骑士 (LLABH)",
+								"count": 1
+							}
+						],
+						"17": [
+							{
+								"choose": "level=1;2;3|subclass=替代血猎手: 巫骑士 (LLABH)",
+								"count": 1
+							}
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"剑刃防护（变体）|llspell",
+				"轰雷剑（变体）|llspell",
+				"颤栗之触",
+				"控火术|xge",
+				"交友术（变体）|llspell",
+				"霜噬",
+				"翠炎剑（变体）|llspell",
+				"虫群孳生|xge",
+				"闪电牵引|tce",
+				"法师之手",
+				"魔石术|xge",
+				"心灵之楔|tce",
+				"次级幻象",
+				"毒气喷涌（变体）|llspell",
+				"魔法伎俩",
+				"抵抗术（变体）|llspell",
+				"电爪",
+				"维生术",
+				"剑刃爆发（变体）|llspell",
+				"亡者丧钟|xge",
+				"克敌先击（变体）|llspell",
+				"吸收元素|xge",
+				"黯冰狱铠",
+				"哈达之臂",
+				"燃烧之手",
+				"造成恐惧|xge",
+				"魅惑类人",
+				"强令对决（变体）|llspell",
+				"侦测善恶",
+				"脚底抹油",
+				"虚假生命",
+				"炼狱叱喝",
+				"脆弱诅咒",
+				"迷幻手稿",
+				"致伤术",
+				"防护善恶",
+				"炽焰斩（变体）|llspell",
+				"护盾术（变体）|llspell",
+				"雷鸣斩（变体）|llspell",
+				"隐形仆役",
+				"巫术箭（变体）|llspell",
+				"印记斩（变体）|llspell",
+				"匕首之云",
+				"疯狂冠冕",
+				"黑暗术",
+				"地缚|xge",
+				"定身类人",
+				"隐形术",
+				"心灵尖刺|xge",
+				"镜影术",
+				"迷踪步",
+				"衰弱射线",
+				"灼热射线",
+				"幽影刃|xge",
+				"粉碎音波",
+				"蛛行术",
+				"暗示术",
+				"致盲斩（变体）|llspell",
+				"法术反制（变体）|llspell",
+				"解除魔法",
+				"敌群环绕|xge",
+				"恐惧术",
+				"哈达之欲（变体）|llspell",
+				"催眠图纹（变体）|llspell",
+				"智能壁垒|tce",
+				"防护法阵",
+				"高等幻影",
+				"移除诅咒",
+				"魂灵环绕|tce",
+				"吸血鬼之触",
+				"放逐术",
+				"枯萎术",
+				"魅惑怪物|xge",
+				"任意门",
+				"元素灾厄",
+				"幻景",
+				"魅影杀手",
+				"惊惧斩（变体）|llspell",
+				"莫伊之影|xge",
+				"致病辐射|xge"
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Order of the Witch Knights",
+							"name": "巫骑士结社",
+							"source": "LLABH"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知法术|spells|subclass=替代血猎手: 巫骑士 (LLABH)}",
+						"法术位",
+						"法术环阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							1,
+							"{@filter 1环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							2,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							4,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							4,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							5,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							5,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							5,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							5,
+							2,
+							"{@filter 2环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							6,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							6,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							6,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							6,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							7,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							7,
+							2,
+							"{@filter 3环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							7,
+							2,
+							"{@filter 4环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						],
+						[
+							7,
+							2,
+							"{@filter 4环|spells|level=1|subclass=替代血猎手: 巫骑士 (LLABH)}"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"巫骑士结社|替代血猎手|LLABH|巫骑士|LLABH|3|LLABH",
+				"血色武士|替代血猎手|LLABH|巫骑士|LLABH|7|LLABH",
+				"蛊惑打击|替代血猎手|LLABH|巫骑士|LLABH|13|LLABH",
+				"渎圣祭献|替代血猎手|LLABH|巫骑士|LLABH|18|LLABH"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "法术位环阶",
+					"configuration": {
+						"identifier": "level",
+						"type": "numeric",
+						"scale": {
+							"3": {
+								"value": 1
+							},
+							"7": {
+								"value": 2
+							},
+							"13": {
+								"value": 3
+							},
+							"19": {
+								"value": 4
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "法术位",
+					"configuration": {
+						"identifier": "slots",
+						"type": "numeric",
+						"scale": {
+							"3": {
+								"value": 1
+							},
+							"4": {
+								"value": 2
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/magic/unholy/hand-weapon-glow-black-green.webp"
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 1,
+			"entries": [
+				"第1级时，你采用一项最符合你训练经历的战斗风格。你不能重复选择同一战斗风格，即使某项特性允许你选择另一项战斗风格也是如此。",
+				"当你在此职业中获得等级时，可以用下表中的另一选项替换你的战斗风格。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "箭术|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "双持战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "均衡战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "轻量战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "巨武器战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "投掷手|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "多用战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "长柄武器战斗|LLStyles"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Hunter's Bane",
+			"name": "猎人之苦",
+			"source": "LLABH",
+			"page": 2,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 1,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"nature",
+							"religion",
+							"survival"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你在\"猎人之苦\"中幸存下来\u2014\u2014这场黑暗的炼金仪式将邪恶魔法灌注于你的血液，赋予你血猎手的能力。第1级时，你获得以下收益：",
+				{
+					"ENG_name": "Occult Lore",
+					"type": "entries",
+					"name": "秘术学识",
+					"entries": [
+						"这一仪式为你注入了关于黑暗邪恶生物的本能认知。你获得奥秘、自然或宗教其中一项技能的熟练项。若你选择的技能已属熟练，则改为在进行该技能的属性检定时加上双倍熟练加值。"
+					]
+				},
+				{
+					"ENG_name": "Sinister Insight",
+					"type": "entries",
+					"name": "邪异洞察",
+					"entries": [
+						"\"猎人之苦\"赋予了你更敏锐的邪恶感知。你可以用附赠动作运用此洞察，分析30尺内一个你能看见的生物。使用下表中对应其生物类型的技能熟练项，进行一次体质属性检定（DC等于8+其CR："
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"技能",
+						"生物类型"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"奥秘",
+							"异怪、巨龙、怪物"
+						],
+						[
+							"自然",
+							"野兽、元素、泥怪、植物"
+						],
+						[
+							"宗教",
+							"天界生物、精类、邪魔、亡灵"
+						]
+					]
+				},
+				"若检定成功，你从下表中获知一项你选择的特性。若检定失败，在完成一次长休、或以武器攻击或你的血仪对其造成伤害之前，你无法再次对同一目标使用此特性：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"护甲等级",
+							"最高属性值"
+						],
+						[
+							"所有特殊感官",
+							"最低属性值"
+						],
+						[
+							"抗性、免疫与易伤",
+							"其数据块中的一项特性或动作"
+						]
+					]
+				},
+				"若你的选择并不适用于该生物，你的DM会向你揭示另一项特性或弱点，例如巨魔的再生会被火焰伤害所制止。"
+			],
+			"foundryImg": "icons/consumables/potions/potion-tube-corked-bat-gold-red.webp"
+		},
+		{
+			"ENG_name": "Blood Rites",
+			"name": "血仪",
+			"source": "LLABH",
+			"page": 2,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 2,
+			"entries": [
+				"第2级时，你学会汲取血脉中的邪恶力量，施展{@filter 血仪|optionalfeatures|feature type=LLABH:BR}的黑暗魔法：",
+				{
+					"ENG_name": "Blood Rites Known",
+					"type": "entries",
+					"name": "已知血仪",
+					"page": 2,
+					"entries": [
+						"第2级时，你从此职业末尾的列表中选择两项你偏好的血仪。当你达到特定的血猎手等级时，你会习得更多血仪，如血猎手表格中\"已知血仪\"一栏所示。",
+						"每次短休或长休之间，你可以无偿施展你所知的每项血仪各一次。此后，你必须进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}（详见下文）才能再次使用该血仪。",
+						"血仪只能对有血生物使用。但当你进行{@classFeature 生命献祭|替代血猎手|LLABH|2}来增幅一项血仪时，你可以指定任意生物，无论其是否有血。",
+						"最后，每当你获得等级时，你可以将一项已知的血仪替换为另一项你选择的血仪。"
+					]
+				},
+				{
+					"ENG_name": "Rite Die",
+					"type": "entries",
+					"name": "血仪骰",
+					"page": 2,
+					"entries": [
+						"许多血仪和职业特性会使用你的血仪骰，其初始为d4。在特定等级，这枚骰的型号会增大，如血猎手表格中\"血仪骰\"一栏所示。",
+						"当你使用血仪骰时，始终掷骰并采用其结果。"
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "生命献祭|替代血猎手|LLABH|2|LLABH"
+				},
+				{
+					"ENG_name": "Saving Throws",
+					"type": "entries",
+					"name": "豁免检定",
+					"page": 2,
+					"entries": [
+						"若一项血仪要求生物进行豁免检定，你的血仪豁免检定DC计算如下：",
+						{
+							"ENG_name": "Rite",
+							"type": "abilityDc",
+							"name": "血仪",
+							"attributes": [
+								"con"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/magic/death/skull-horned-goat-pentagram-red.webp"
+		},
+		{
+			"ENG_name": "Crimson Offering",
+			"name": "猩红祭献",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 2,
+			"entries": [
+				"从第2级起，你可以用血液中的黑暗力量强化你的武器。你可以用附赠动作进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}，让鲜血流淌到你正在持用的一件武器上。",
+				"选择酸、冷、火、闪电或毒素伤害。1小时内，该武器被邪恶能量所强化，每当你以它造成伤害时，它额外造成等同于你血仪骰的所选类型伤害。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1@scale.alternate-blood-hunter.rite-die",
+						""
+					]
+				]
+			},
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-red.webp"
+		},
+		{
+			"ENG_name": "Vital Sacrifice",
+			"name": "生命献祭",
+			"source": "LLABH",
+			"page": 2,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 2,
+			"entries": [
+				"一些{@classFeature 血仪|替代血猎手|LLABH|2}允许你献祭自己的生命来催动邪恶效应。当你进行{@classFeature 生命献祭|替代血猎手|LLABH|2}时，你的生命值上限与当前生命值均减少你的血仪骰之值。这无法以任何方式减免。每次长休结束时，这些生命值上限的降低即告终止。",
+				"若你拥有临时生命值，可以用其抵扣以代替当前生命值的减少。但当你进行{@classFeature 生命献祭|替代血猎手|LLABH|2}时，始终必须减少生命值上限。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"damage.parts": [
+					[
+						"1@scale.alternate-blood-hunter.rite-die",
+						""
+					]
+				]
+			},
+			"foundryImg": "icons/skills/wounds/blood-drip-droplet-red.webp"
+		},
+		{
+			"ENG_name": "Occult Order",
+			"name": "秘术结社",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 3,
+			"entries": [
+				"第3级时，你选择最能体现你的血猎手训练与血魔法风格的秘术结社：炼金术士结社、苍白之月结社、盐与铁结社、不朽饥渴结社或巫骑士结社。",
+				"你的结社在第3级赋予你特性，并在此职业的第7、13和18级再次赋予。若秘术结社的特性强迫进行豁免检定，则使用你的血仪豁免DC。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 4,
+			"entries": [
+				"当你达到第4级，以及第8、12、16和19级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。照常，你无法通过此特性将任一属性值提升超过20。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 5,
+			"entries": [
+				"从第5级起，当你在自己的回合采取攻击动作时，你可以攻击两次而非一次。此外，每当你施展一项需用动作使用的血仪时，你可以在同一回合用附赠动作进行一次武器攻击。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Grim Psychometry",
+			"name": "阴暗灵卜",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 5,
+			"entries": [
+				"你对黑暗魔法的熟稔使你能感知同类邪恶诅咒的影响。从第5级起，你可以用炼金工具以仪式施展{@spell 鉴定术}。此时，炼金工具取代该法术的材料成分。你还能得知该物件是否受到诅咒，以及诅咒的性质。",
+				"当你达到第9级时，你可以用炼金工具对一件你触碰的物件或生物、或你当前所处的位置施展{@spell 通晓传奇}。目标可以拥有一段邪恶、暴力或受诅咒的过往，以代替传奇重要性。炼金工具取代该法术的材料成分，且你必须进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}以代替消耗法术位。"
+			],
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"ENG_name": "Crimson Brand",
+			"name": "猩红烙印",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 6,
+			"entries": [
+				"你与血魔法的亲和日益加深。从第6级起，每次短休或长休之间，你可以进行一次{@classFeature 猩红祭献|替代血猎手|LLABH|2}而无需进行{@classFeature 生命献祭|替代血猎手|LLABH|2}。",
+				"此外，当你以猩红祭献武器伤害一个生物时，你可以在其灵魂上烙下猩红烙印。你的猩红烙印持续至该生物死亡，或你烙印另一个生物为止。",
+				{
+					"type": "list",
+					"items": [
+						"只要你们处于同一存在位面，你便知晓它的确切方位。你也能察觉它是否身处其他位面，但不知具体是哪一位面。",
+						"你对它的邪异洞察检定具有优势。",
+						"每当它对你或你15尺内一个对你友善的生物造成伤害时，它受到等同于你血仪骰的暗蚀伤害。"
+					]
+				},
+				"一旦你将此烙印施加于一个生物，你必须完成一次短休或长休才能再次使用。当你没有剩余使用次数时，可以进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}来再次使用。"
+			],
+			"foundrySystem": {
+				"activation.condition": "当你以猩红祭献武器伤害一个生物时",
+				"damage.parts": [
+					[
+						"@scale.alternate-blood-hunter.crimson-brand@scale.alternate-blood-hunter.rite-die",
+						""
+					]
+				]
+			},
+			"foundryImg": "icons/magic/symbols/rune-sigil-hook-white-red.webp"
+		},
+		{
+			"ENG_name": "Occult Order",
+			"name": "秘术结社",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 7,
+			"entries": [
+				"第7级时，你从你的秘术结社处获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。照常，你无法通过此特性将任一属性值提升超过20。"
+			]
+		},
+		{
+			"ENG_name": "Dark Augmentation",
+			"name": "黑暗增幅",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 10,
+			"entries": [
+				"\"猎人之苦\"的黑暗魔法强化了你的身体能力。从第10级起，每当你进行使用力量、敏捷或体质的属性检定或豁免检定时，你将一次血仪骰的掷骰结果加到检定结果上。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-red.webp"
+		},
+		{
+			"ENG_name": "Improved Crimson Offering",
+			"name": "强化猩红祭献",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 11,
+			"entries": [
+				"你是将血魔法与武艺相结合的大师。从第11级起，你可以让{@classFeature 猩红祭献|替代血猎手|LLABH|2}的额外伤害改为暗蚀、心灵或雷鸣伤害。"
+			],
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-red.webp"
+		},
+		{
+			"ENG_name": "Vital Control",
+			"name": "生命掌控",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 11,
+			"entries": [
+				"你对血魔法的掌控更上一层楼。同样从第11级起，每当你进行{@classFeature 生命献祭|替代血猎手|LLABH|2}时，你可以掷两次血仪骰并选择其一作为生命值的降低值。",
+				"最后，每次长休之间一次，当你使用一项通常需要进行{@classFeature 生命献祭|替代血猎手|LLABH|2}的血猎手特性时，你可以不进行该{@classFeature 生命献祭|替代血猎手|LLABH|2}而直接使用该特性。",
+				"当使用一项特性需要两次生命献祭时（例如增幅一项你已使用过的血仪），此特性仅允许你免去其中一次生命献祭。"
+			],
+			"foundryImg": "icons/skills/wounds/blood-cells-red.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。照常，你无法通过此特性将任一属性值提升超过20。"
+			]
+		},
+		{
+			"ENG_name": "Occult Order",
+			"name": "秘术结社",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 13,
+			"entries": [
+				"第13级时，你从你的秘术结社处获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Crimson Anchor",
+			"name": "猩红之锚",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 14,
+			"entries": [
+				"从第14级起，若被你的猩红烙印标记的生物试图传送或以魔法移动，它必须先进行一次魅力豁免检定。检定失败则该能力失效，且它受到等同于四枚血仪骰的暗蚀伤害。",
+				"此外，当受烙印目标伤害你或你的盟友时，你的猩红烙印造成的伤害现在为两枚血仪骰。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "当被你的猩红烙印标记的生物试图以法术或特性传送或离开当前位面时"
+				},
+				"damage.parts": [
+					[
+						"4@scale.alternate-blood-hunter.rite-die",
+						""
+					]
+				],
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/control/debuff-chains-ropes-red.webp"
+		},
+		{
+			"ENG_name": "Hardened Soul",
+			"name": "刚毅灵魂",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 15,
+			"entries": [
+				"你的经历使你的心灵在面对除最隐秘攻击外的一切时都变得坚韧。从第15级起，每当你进行智力、感知或魅力豁免检定时，你获得等同于一次血仪骰掷骰结果的加值。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-magenta.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 16,
+			"entries": [
+				"当你达到第16级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。照常，你无法通过此特性将任一属性值提升超过20。"
+			]
+		},
+		{
+			"ENG_name": "Occult Order",
+			"name": "秘术结社",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 18,
+			"entries": [
+				"第18级时，你从你的秘术结社处获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLABH",
+			"page": 3,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 19,
+			"entries": [
+				"当你达到第19级时，你可以将一项自选属性值提升2点，或将两项属性值各提升1点。照常，你无法通过此特性将任一属性值提升超过20。"
+			]
+		},
+		{
+			"ENG_name": "Sanguine Mastery",
+			"name": "胸有成竹",
+			"source": "LLABH",
+			"page": 4,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 20,
+			"entries": [
+				"你已对血魔法的黑暗力量获得了无与伦比的精通，在将所需牺牲降到最低的同时提升其威力。第20级时，每当你为另一项血仪或血猎手能力掷血仪骰时，你掷两次血仪骰并选择其一采用。",
+				"最后，每当你进行{@classFeature 生命献祭|替代血猎手|LLABH|2}时，在减少你的生命值上限与当前生命值之前，先从你的{@classFeature 生命献祭|替代血猎手|LLABH|2}掷骰结果中减去你的体质调整值（最低为1）。这不能使你的{@classFeature 生命献祭|替代血猎手|LLABH|2}低于1。"
+			],
+			"foundryImg": "icons/skills/wounds/blood-cells-vessel-red-orange.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Crimson Offering",
+			"name": "猩红祭献",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 2,
+			"activities": [
+				{
+					"type": "damage",
+					"activation": {
+						"type": "bonus"
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "1@scale.alternate-blood-hunter.rite-die"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Vital Sacrifice",
+			"name": "生命献祭",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 2,
+			"activities": [
+				{
+					"type": "damage",
+					"activation": {
+						"type": "special"
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "1@scale.alternate-blood-hunter.rite-die"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Dark Augmentation",
+			"name": "黑暗增幅",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 10,
+			"effects": [
+				{
+					"ENG_name": "Physical Abilities Check and Save Bonus",
+					"name": "身体属性检定与豁免加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.abilities.str.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.dex.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.con.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Vital Control",
+			"name": "生命掌控",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 11,
+			"activities": [
+				{
+					"type": "damage",
+					"activation": {
+						"type": "special"
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2d(@scale.alternate-blood-hunter.rite-die)kl1"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Hardened Soul",
+			"name": "刚毅灵魂",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"level": 15,
+			"effects": [
+				{
+					"ENG_name": "Mental Abilities Check and Save Bonus",
+					"name": "心智属性检定与豁免加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.abilities.int.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.wis.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.cha.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.int.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.wis.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.cha.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Mutation",
+			"name": "突变",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "炼金术士",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"entries": [
+				"你可以用附赠动作进行突变，以获得数量等同于你体质调整值（最低为1）的潜伏诱变剂的收益。你的生理构造会发生剧变以匹配这些收益。此效应持续10分钟，你也可以用附赠动作提前结束它。",
+				"每次短休或长休你可以无偿突变一次，此后你必须进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}才能再次突变。"
+			],
+			"foundrySystem": {
+				"ability": "con",
+				"actionType": "util",
+				"duration": {
+					"value": 10,
+					"units": "minute"
+				},
+				"formula": "max(1, @mod)",
+				"range.units": "self"
+			},
+			"foundryImg": "icons/skills/wounds/injury-stapled-flesh-tan.webp"
+		},
+		{
+			"ENG_name": "Order of Alchemists",
+			"name": "炼金术士结社",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "炼金术士",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"加入此结社的血猎手运用炼金术与黑暗嬗变魔法来改变自身的形体。得益于实验性的诱变剂，他们血液中的邪恶力量引发了巨大的生理变化。这些突变体往往力求进化为终极的形体。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "异怪炼金|替代血猎手|LLABH|炼金术士|LLABH|3|LLABH"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "怪物感知|替代血猎手|LLABH|炼金术士|LLABH|3|LLABH"
+				},
+				{
+					"ENG_name": "Alchemists & Experimentation",
+					"type": "inset",
+					"name": "炼金术士与实验",
+					"entries": [
+						"下页所列的诱变剂是此结社血猎手所创造的诱变剂中最常见的例子。与你的DM商讨，基于你斩杀或研究过的怪物的能力来定制专属诱变剂吧！"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Aberrant Alchemy",
+			"name": "异怪炼金",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "炼金术士",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你对黑暗炼金术的认知使你能以{@filter 诱变剂|optionalfeatures|feature type=LLABH:M}接种你的血液，给予你以下收益：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Latent Mutagens",
+							"type": "entries",
+							"name": "潜伏诱变剂",
+							"entries": [
+								"你从此秘术结社描述末尾的列表中选择三种诱变剂接种到你的血液中。在你突变（见下文）之前，你不会从这些潜伏诱变剂获得任何收益。",
+								"每次长休期间，你可以花1小时用炼金工具进行一场黑暗操作，将你的一项潜伏诱变剂替换为另一项你选择的诱变剂。",
+								"你的潜伏诱变剂总数在第7级（5项）、第13级（7项）以及最后的第18级（9项）各增加两项。"
+							]
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "突变|替代血猎手|LLABH|炼金术士|LLABH|3|LLABH"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/toxins/bottle-open-vapors-pink.webp"
+		},
+		{
+			"ENG_name": "Monstrous Awareness",
+			"name": "怪物感知",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "炼金术士",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你血液中诱变剂的非自然之力也会强化你的血魔法。当你进行使用炼金工具的属性检定，或使用猎人之苦分析一个异怪、怪物或泥怪时，你可以将一次血仪骰的掷骰结果加到你的检定上。"
+			],
+			"foundryImg": "icons/magic/perception/hand-eye-fire-blue.webp"
+		},
+		{
+			"ENG_name": "Enduring Mutation",
+			"name": "持久突变",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "炼金术士",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你黑暗炼金实验的效力已然增强。长休期间，你可以花1小时用炼金工具使一项潜伏诱变剂的效应永久化，即使你未处于突变状态亦然。当你突变时，这项持久诱变剂始终计入你获得收益的潜伏诱变剂之中。",
+				"你可以在随后的长休期间，将这项持久诱变剂替换为你的另一项潜伏诱变剂。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp"
+		},
+		{
+			"ENG_name": "Noxious Strike",
+			"name": "剧毒打击",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "炼金术士",
+			"subclassSource": "LLABH",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你能将血液中的奇毒化为武器来折磨你的敌人。每回合一次，当你以近战攻击命中一个生物时，你可以强迫它进行一次对抗你血仪豁免DC的体质豁免检定。检定失败时，它受到等同于四次血仪骰掷骰结果的酸伤害，并陷入目盲或震慑状态（由你选择）1分钟。检定成功时，它只受一半伤害且不承受其他效应。",
+				"陷入目盲或震慑的生物每次受到伤害时重复进行此豁免检定，检定成功则结束此效应。",
+				"你可以使用此特性的次数等同于你的体质调整值（最低一次），并在完成一次长休后重获所有已耗用的次数。当你没有剩余使用次数时，可以进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}来再次使用。"
+			],
+			"foundrySystem": {
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/skills/wounds/illness-disease-glowing-green.webp"
+		},
+		{
+			"ENG_name": "Rapid Mutation",
+			"name": "迅捷突变",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "炼金术士",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你已彻底掌控了身体的可变性。当你处于{@subclassFeature 突变|替代血猎手|LLABH|炼金术士|LLABH|3||变异中}状态时，你可以用附赠动作将一项生效中的诱变剂替换为一项你的潜伏诱变剂。"
+			],
+			"foundryImg": "icons/skills/wounds/bone-broken-tooth-fang-red.webp"
+		},
+		{
+			"ENG_name": "Censure the Divine",
+			"name": "谴责神明",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "异端",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"entries": [
+				"你用一个动作念出令神圣存在痛苦的渎神之言。30尺内由你选择的天界生物、邪魔或其他能够施展神圣魔法的生物（如牧师或圣武士）必须通过一次魅力豁免检定，否则受到束缚且失能1分钟。",
+				"生物在其回合结束时以及受到伤害时重复进行此豁免检定，检定成功则结束此效应。"
+			],
+			"foundryImg": "icons/skills/wounds/injury-stapled-flesh-tan.webp"
+		},
+		{
+			"ENG_name": "Order of Heretics",
+			"name": "异端结社",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "异端",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"异端结社的创立者们曾被逐出其所属的宗教教团，这些圣职者渴望运用被禁的血仪来对抗黑暗。作为被打上异端烙印之人，他们以血魔法补充其神圣学识，充当着神圣力量的导管。如今，这个由祭司血猎手组成的结社致力于对抗善良与邪恶双方误入歧途的神圣存在。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "渎神祈祷|替代血猎手|LLABH|异端|LLABH|3|LLABH"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "异端学识|替代血猎手|LLABH|异端|LLABH|3|LLABH"
+				}
+			]
+		},
+		{
+			"ENG_name": "Blasphemous Prayer",
+			"name": "渎神祈祷",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "异端",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"尽管身具异端之名，你仍能引导神圣能量。你获得两个引导神力选项：详见下文的谴责神明，以及牧师神圣领域第2级可用的引导神力中由你选择的一项。对于后者，你以血猎手等级代替牧师等级，并使用你的血仪豁免DC。你每回合只能使用一个引导神力选项。",
+				"你可以使用每项引导神力各一次，并在完成一次长休后重获此能力。当你没有剩余使用次数时，你可以进行一次生命献祭来再次使用一项你已知的引导神力选项。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "谴责神明|替代血猎手|LLABH|异端|LLABH|3|LLABH"
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "special"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/magic/lightning/bolt-strike-smoke-yellow.webp"
+		},
+		{
+			"ENG_name": "Heretical Knowledge",
+			"name": "异端学识",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "异端",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"尽管信仰特殊，你仍通晓传统的宗教仪轨、仪式与祷文。你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你获得宗教技能的熟练项。若已熟练，则你在所有宗教检定中加上双倍熟练加值。",
+						"你从牧师法术列表中学习两项你选择的戏法。体质是你的施法属性。",
+						"若你使用猎人之苦分析一个天界生物、邪魔或亡灵，你可以将一次血仪骰的掷骰结果加到你的属性检定上。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-embossed-clasp-gold-brown.webp"
+		},
+		{
+			"ENG_name": "Unholy Restoration",
+			"name": "不洁复原",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "异端",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你能以一种对神圣的黑暗嘲弄，从一个生物身上汲取生命并转移给另一个生物。你用一个动作强迫30尺内一个你能看见的生物进行一次对抗你血仪豁免DC的体质豁免检定。检定失败时，它受到等同于四次血仪骰掷骰结果的暗蚀伤害；检定成功时伤害减半。若你作为此动作的一部分触碰它，则它的此豁免检定具有劣势。",
+				"作为此动作的一部分，30尺内一个你能看见的生物恢复等同于所造成暗蚀伤害一半的生命值。",
+				"你可以使用此特性的次数等同于你的体质调整值（最低一次），并在完成一次长休后重获所有使用次数。当你没有剩余使用次数时，可以进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}来再次使用此特性。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp"
+		},
+		{
+			"ENG_name": "Divine Anathema",
+			"name": "神圣咒逐",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "异端",
+			"subclassSource": "LLABH",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"当你使用谴责神明时，你可以用一次{@classFeature 生命献祭|替代血猎手|LLABH|2}对其增幅，舍弃其普通效应，改为强迫30尺内由你选择的生物进行一次魅力豁免检定。检定失败者的速度降低10尺。",
+				"受此效应影响的生物必须在其每个回合结束时重复此豁免检定。检定失败时，其速度再降低10尺；检定成功时，其速度恢复10尺。",
+				"此效应在生物的速度恢复正常时结束；当此特性造成的减速累积至其总速度时，该生物立即被石化。",
+				"天界生物与邪魔在抵抗此特性的豁免检定中具有劣势。一旦某生物在此特性中检定成功，它将免疫其效应直至次日黎明。"
+			],
+			"foundrySystem": {
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/earth/strike-body-stone-crumble.webp"
+		},
+		{
+			"ENG_name": "Utmost Transgression",
+			"name": "极致僭越",
+			"source": "LLABH",
+			"page": 5,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "异端",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你以秘术学识束缚天界的居民。你用一个动作施展{@spell 咒唤圣光（变体）|llspell}（5环版），并以体质作为其施法属性。该天界生物被不洁的血魔法违背意志地束缚，这使你可以忽略该法术的材料成分，但该法术的持续时间缩短为1分钟。",
+				" 每次短休或长休之间你可以无偿施展此法术一次，此后，你必须进行次数等同于你想要召唤的天界生物CR的{@classFeature 生命献祭|替代血猎手|LLABH|2}才能再次施展。"
+			],
+			"foundryImg": "icons/skills/wounds/bone-broken-tooth-fang-red.webp"
+		},
+		{
+			"ENG_name": "Order of the Pale Moon",
+			"name": "苍白之月结社",
+			"source": "LLABH",
+			"page": 7,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"兽化症是一种古老的诅咒，会使患病者化为对血肉有着无法餍足饥渴的疯狂野兽。为了对抗这些怪物，一些血猎手会刻意染上此诅咒。这些武者甘愿献出自己的生命，从而得以运用这股野兽之力，将兽化人及其他变形怪物从世间清除。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兽化诅咒|替代血猎手|LLABH|苍白之月|LLABH|3|LLABH"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "野性感官|替代血猎手|LLABH|苍白之月|LLABH|3|LLABH"
+				}
+			]
+		},
+		{
+			"ENG_name": "Beast Form",
+			"name": "野兽形态",
+			"source": "LLABH",
+			"page": 7,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你化为你的诅咒所基于的野兽形态：",
+				{
+					"ENG_name": "Statistics",
+					"type": "entries",
+					"name": "属性数据",
+					"entries": [
+						"当你变身时，你的属性数据被你所选{@filter 野兽|bestiary|type=Beast|challenge rating=[&0;&1]|source=LLCompendiumOfBeasts}的属性数据取代，但你保留你的生命值、阵营、性格，以及智力、感知和魅力值。你保留你的技能与豁免检定熟练项，并获得该野兽的熟练项。若你们共有一项熟练项，则采用较高的加值。"
+					]
+				},
+				{
+					"ENG_name": "Cursed Form",
+					"type": "entries",
+					"name": "诅咒形态",
+					"entries": [
+						"你的野兽形态的天生武器以你的血仪骰作为伤害骰，并使用你的血仪豁免DC进行豁免检定，除非其固有加值更高。"
+					]
+				},
+				{
+					"ENG_name": "Equipment",
+					"type": "entries",
+					"name": "装备",
+					"entries": [
+						"当你变身时，你自行选择让你的装备与野兽形态融合还是掉落地面。你只能与你能够穿着或携带的装备融合。"
+					]
+				},
+				{
+					"ENG_name": "Features",
+					"type": "entries",
+					"name": "特性",
+					"entries": [
+						"你的野兽形态保留你来自职业、种族及其他来源的所有特性，包括使用血仪的能力。只要该野兽在形体上也能做到，它就能使用所有这些特性。但你不保留特殊感官（如黑暗视觉），除非你的野兽形态也具有同样的特殊感官。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"actionType": "utiL",
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"duration": {
+					"value": 1,
+					"units": "hour"
+				},
+				"range.units": "self"
+			},
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Feral Senses",
+			"name": "野性感官",
+			"source": "LLABH",
+			"page": 7,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的兽化症使你的感官更为敏锐。每当你进行基于视觉、听觉或嗅觉的察觉或生存检定时，你将血仪骰加到你的检定上。",
+				"此外，若你使用邪异洞察分析一个野兽、怪物或变形生物，你将血仪骰加到你的检定上。"
+			],
+			"foundryImg": "icons/creatures/eyes/lizard-single-slit-pink.webp"
+		},
+		{
+			"ENG_name": "Hybrid Form",
+			"name": "混种形态",
+			"source": "LLABH",
+			"page": 7,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你化为你自身与诅咒之兽的融合体。你保留正常的属性数据，并获得以下收益：",
+				{
+					"ENG_name": "Bestial Physiology",
+					"type": "entries",
+					"name": "野兽体格",
+					"entries": [
+						"你的步行速度提高10尺，并获得等同于你步行速度的攀爬速度。"
+					]
+				},
+				{
+					"ENG_name": "Savage Strikes",
+					"type": "entries",
+					"name": "凶残打击",
+					"entries": [
+						"你长出骇人的獠牙与利爪。你的徒手打击获得灵巧属性。命中时，它们造成等同于你血仪骰的穿刺或挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Wild Fury",
+					"type": "entries",
+					"name": "狂野之怒",
+					"entries": [
+						"你在每个回合都可以用附赠动作进行一次徒手打击或采取疾走动作。若你疾走，则必须朝一个你能看见的敌对生物移动。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"actionType": "utiL",
+				"duration": {
+					"value": 1,
+					"units": "hour"
+				},
+				"range.units": "self"
+			},
+			"foundryImg": "icons/creatures/mammals/humanoid-fox-cat-archer.webp"
+		},
+		{
+			"ENG_name": "Lycanthropic Curse",
+			"name": "兽化诅咒",
+			"source": "LLABH",
+			"page": 7,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你感染了基于一只CR为1或更低的{@filter 野兽|bestiary|type=Beast|challenge rating=[&0;&1]|source=LLCompendiumOfBeasts}的诅咒。一经选择，该野兽便无法更改。",
+				"你可以用附赠动作变身，化为野兽形态或混种形态，两者详见下文。每次短休或长休你可以无偿变身一次，此后，你必须进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}才能再次变身。",
+				"你可以保持变身状态至多1小时，但若你陷入失能或用附赠动作主动结束，它会提前终止。你可以进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}将持续时间延长1小时。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "野兽形态|替代血猎手|LLABH|苍白之月|LLABH|3|LLABH"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "混种形态|替代血猎手|LLABH|苍白之月|LLABH|3|LLABH"
+				}
+			],
+			"foundrySystem": {
+				"actionType": "utiL",
+				"duration": {
+					"value": 1,
+					"units": "hour"
+				},
+				"range.units": "self"
+			},
+			"foundryImg": "icons/creatures/mammals/wolf-howl-moon-gray.webp"
+		},
+		{
+			"ENG_name": "Lycan Warrior",
+			"name": "兽化战士",
+			"source": "LLABH",
+			"page": 7,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你能从你的诅咒中汲取更多力量。变身状态下，你的攻击视为魔法攻击，且你获得对来自非魔法且非银质攻击的钝击、穿刺和挥砍伤害的抗性。",
+				"变身状态下，你可以使用猩红祭献来强化你的变形，将其收益应用于你所有的天生武器与徒手打击。若你在变身时持有一件猩红祭献武器，你可以将其收益转移至你的天生武器与徒手打击。"
+			],
+			"foundryImg": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp"
+		},
+		{
+			"ENG_name": "Feral Prowess",
+			"name": "野性勇武",
+			"source": "LLABH",
+			"page": 7,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的诅咒使你能无视轻伤。当你在变身状态下开始你的回合，且剩余生命值不足一半但至少为1时，你恢复等同于你体质调整值（最低为1）的生命值。"
+			],
+			"foundrySystem": {
+				"ability": "con",
+				"actionType": "heal",
+				"activation": {
+					"type": "special",
+					"condition": "当你在变身状态下开始你的回合，且剩余生命值不足一半但至少为1时"
+				},
+				"damage.parts": [
+					[
+						"max(1, @mod)",
+						"healing"
+					]
+				]
+			},
+			"foundryImg": "icons/creatures/mammals/wolf-shadow-black.webp"
+		},
+		{
+			"ENG_name": "Lycanthropic Mastery",
+			"name": "兽化精通",
+			"source": "LLABH",
+			"page": 7,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你已完全掌控你的兽化诅咒。你可以随意变身而无需进行生命献祭，并且可以无限期地保持变身形态。",
+				"最后，在变身状态下，你对被猩红烙印标记的生物的攻击掷骰具有优势，且对它强迫你进行的豁免检定具有优势。"
+			],
+			"foundryImg": "icons/magic/nature/moon-crescent.webp"
+		},
+		{
+			"ENG_name": "Order of Salt & Iron",
+			"name": "盐与铁结社",
+			"source": "LLABH",
+			"page": 8,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"自远古以来，古老的盐与铁结社便训练驱魔人来保护生者免受亡灵侵害。这些血猎手甘愿牺牲自身的一切，以灵体之力浸染自己的灵魂。他们继而以黑暗之力驱散黑暗本身，并不知疲倦地阻止亡灵的浪潮吞噬生者。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "灵体天性|替代血猎手|LLABH|盐与铁|LLABH|3|LLABH"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "破晓武士|替代血猎手|LLABH|盐与铁|LLABH|3|LLABH"
+				},
+				{
+					"ENG_name": "Exorcists, Clerics, & Gods",
+					"type": "inset",
+					"name": "驱魔人、牧师与诸神",
+					"entries": [
+						"盐与铁结社内的传统声称，他们结社的创立甚至早于诸神本身。他们自称早在最早的牧师与圣武士出现之前，便已屹立对抗亡灵。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spectral Nature",
+			"name": "灵体天性",
+			"source": "LLABH",
+			"page": 8,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你以可怖的力量玷污了自己的灵魂。你所需的睡眠、食物与饮水仅为所在种族普通成员的一半。",
+				"此外，你可以用附赠动作进入临时的灵体状态，持续至你当前回合结束。在此状态下，你具有对来自非魔法且非银质攻击的所有钝击、穿刺和挥砍伤害的抗性，并且可以穿过固体物件与生物，如同它们是困难地形。若你在生物或物件内部结束移动，你会立即被挤至最近的无人空间，且每被挤出5尺便受到1d10力场伤害。",
+				"你可以使用此特性的次数等同于你的体质调整值（最低一次），并在完成一次长休后重获所有使用次数。你可以进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}来再次使用此特性。",
+				"在此职业的特定等级，此灵体状态的持续时间会延长：第7级（1分钟）、第13级（1小时）以及第18级（无限期）。你可以用附赠动作结束此状态。"
+			],
+			"foundrySystem": {
+				"duration.units": null,
+				"range.units": "self",
+				"uses": {
+					"value": "@abilities.con.mod",
+					"max": "@abilities.con.mod",
+					"per": "lr"
+				}
+			},
+			"foundryImg": "icons/magic/light/projectile-smoke-blue.webp"
+		},
+		{
+			"ENG_name": "Warrior of the Dawn",
+			"name": "破晓武士",
+			"source": "LLABH",
+			"page": 8,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的血魔法用于对抗亡灵时格外强大。每当你使用猎人之苦分析亡灵时，你可以将一次血仪骰的掷骰结果加到你的属性检定上。",
+				"此外，当你使用{@classFeature 猩红祭献|替代血猎手|LLABH|2}时，你可以选择以你结社的招牌魔法强化你的猩红祭献，给予你以下额外收益：",
+				{
+					"type": "list",
+					"items": [
+						"猩红祭献的额外伤害为光耀伤害。",
+						"你获得对暗蚀伤害的抗性。",
+						"该武器发出30尺半径的明亮光芒，以及再向外20尺的微光。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "当你使用猩红祭献时"
+				}
+			},
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-blue-yellow.webp"
+		},
+		{
+			"ENG_name": "Curse Specialist",
+			"name": "诅咒专家",
+			"source": "LLABH",
+			"page": 8,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你对亡灵的知识与经验强化了你的血魔法。你可以以你的{@classFeature 血仪|替代血猎手|LLABH|2}指定任意生物，即使它们血管中并无血液。",
+				"此外，每次长休结束时你可以选择一项你已知的血仪。在必须进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}才能再次使用它之前，你可以额外施展该血仪一次。"
+			],
+			"foundryImg": "icons/skills/toxins/poison-skull-herbs-bottle-pink.webp"
+		},
+		{
+			"ENG_name": "Warrior Exorcist",
+			"name": "驱魔武士",
+			"source": "LLABH",
+			"page": 8,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你运用血魔法之力驱除外位面生物的影响。在你的回合，你可以用附赠动作选择30尺内一个能听见你、当前处于{@condition 魅惑}、{@condition 恐慌}或受魔法控制状态的自愿生物，并立即结束其中一个上述效应。",
+				"若对该目标施加此状态的生物同样位于你30尺内，它必须通过一次对抗你血仪豁免DC的感知豁免检定，否则受到等同于三次血仪骰掷骰结果的光耀伤害。",
+				"一旦你使用了此特性，你必须完成一次短休或长休才能再次使用。当你没有剩余使用次数时，可以进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}来再次使用此特性。"
+			],
+			"foundrySystem": {
+				"damages.parts": [
+					[
+						"3",
+						"radiant"
+					]
+				],
+				"range": {
+					"value": 30,
+					"units": "feet"
+				},
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/movement/trail-streak-impact-blue.webp"
+		},
+		{
+			"ENG_name": "Sacrificial Offering",
+			"name": "牺牲祭献",
+			"source": "LLABH",
+			"page": 8,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你可以献祭自己的生命力来抵抗死亡的掌握。当你将要降至0生命值但未被当场杀死时，你可以选择使你的生命值上限减少一次血仪骰的掷骰结果，改为只降至1生命值。"
+			],
+			"foundrySystem": {
+				"actionType": "util",
+				"activation": {
+					"type": "special",
+					"condition": "当你将要降至0生命值但未被当场杀死时"
+				},
+				"formula": "1@scale.alternate-blood-hunter.rite-die"
+			},
+			"foundryImg": "icons/skills/wounds/blood-cells-vessel-blue.webp"
+		},
+		{
+			"ENG_name": "Spectral Mastery",
+			"name": "灵体精通",
+			"source": "LLABH",
+			"page": 8,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你行走于生者与死者之界。每过10年，你只衰老1岁，且你不再需要睡眠、进食或饮水。当你花6小时只进行轻度活动时，即可获得一次长休的收益。",
+				"此外，当你处于{@subclassFeature 灵体天性|替代血猎手|LLABH|盐与铁|LLABH|3||灵体状态}时，你获得等同于你步行速度的飞行速度，并且可以悬浮。"
+			],
+			"foundryImg": "icons/creatures/magical/spirit-undead-winged-ghost.webp"
+		},
+		{
+			"ENG_name": "Order of Undying Thirst",
+			"name": "不朽饥渴结社",
+			"source": "LLABH",
+			"page": 9,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"传说中，有一位古老的吸血鬼最终悔恨了自己在饥渴驱使下犯下的诸多暴行。他召集了一群吸血鬼猎人，在他们立誓将吸血鬼化的诅咒从世上清除后，将自己的诅咒传给他们，并传授他们古老血魔法的力量。这些被称为不朽饥渴结社的血猎手不知疲倦地履行着其创立时的誓言\u2014\u2014消灭所有吸血鬼。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "血魔法专家|替代血猎手|LLABH|不朽饥渴|LLABH|3|LLABH"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "吸血鬼天性|替代血猎手|LLABH|不朽饥渴|LLABH|3|LLABH"
+				},
+				{
+					"ENG_name": "Optional Rule: True Vampirism",
+					"type": "inset",
+					"name": "可选规则：真正的吸血鬼",
+					"entries": [
+						"真正的吸血鬼之力代价高昂。如果你想扮演真正的吸血鬼，当你加入此秘术结社时，你获得下述{@b 所有}能力：",
+						{
+							"ENG_name": "Deathless Nature",
+							"type": "entries",
+							"name": "不死天性",
+							"entries": [
+								"你不需要呼吸。"
+							]
+						},
+						{
+							"ENG_name": "Spider Climb",
+							"type": "entries",
+							"name": "蛛行",
+							"entries": [
+								"你获得等同于你步行速度的攀爬速度。达到第7级后，你可以空着双手沿垂直表面移动，包括倒挂在天花板上。"
+							]
+						},
+						{
+							"ENG_name": "Superior Darkvision",
+							"type": "entries",
+							"name": "高等黑暗视觉",
+							"entries": [
+								"你在黑暗与微光环境中拥有极佳的视力。你在120尺内的微光中视物如同明亮光照，在黑暗中视物如同微光光照。在黑暗中你无法分辨颜色，只能看到灰度的深浅。"
+							]
+						},
+						{
+							"ENG_name": "Sunlight Sensitivity",
+							"type": "entries",
+							"name": "阳光敏感",
+							"entries": [
+								"处于阳光直射下时，你的所有属性检定、攻击掷骰和豁免检定均具有劣势。若你已从其他来源获得阳光敏感特性，则你改为获得光耀伤害的易伤。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Magic Specialist",
+			"name": "血魔法专家",
+			"source": "LLABH",
+			"page": 9,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的诅咒赋予你对血魔法更强的掌控。你额外习得一项血仪，但它不计入你的{@classFeature 血仪|替代血猎手|LLABH|2}已知总数。",
+				"此外，你与血魔法的亲和使你的血仪骰增至d6。在特定的血猎手等级，你的血仪骰会再次增大：第5级时变为{@dice d8}，第11级时变为{@dice d10}，最终在第17级变为{@dice d12}。",
+				"最后，每当你使用{@classFeature 猩红祭献|替代血猎手|LLABH|2}时，你可以选择让其额外伤害为暗蚀伤害。"
+			],
+			"foundryImg": "icons/skills/wounds/blood-cells-vessel-red.webp"
+		},
+		{
+			"ENG_name": "Vampiric Nature",
+			"name": "吸血鬼天性",
+			"source": "LLABH",
+			"page": 9,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你结社的古老疾病已不可逆转地改变了你的生理构造。你的牙齿化为獠牙，可用于徒手打击。命中时，你的獠牙造成等同于你的血仪骰+你的力量调整值的暗蚀伤害。",
+				"此外，每当你使用猎人之苦分析亡灵时，你可以将一次血仪骰的掷骰结果加到检定上。"
+			],
+			"foundryImg": "icons/creatures/abilities/fang-tooth-blood-red.webp"
+		},
+		{
+			"ENG_name": "Essence Drain",
+			"name": "精华汲取",
+			"source": "LLABH",
+			"page": 9,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以从敌人身上汲取生命。当你以攻击命中一个生物时，你可以用附赠动作对该生物进行一次獠牙攻击。命中时，你的生命值上限恢复等同于所造成伤害的数值。",
+				"你可以以此方式恢复生命值上限的次数等同于你的体质调整值（最低一次），并在完成一次长休后重获所有使用次数。"
+			],
+			"foundrySystem": {
+				"actionType": "heal",
+				"activation.condition": "当你以攻击命中一个生物时"
+			},
+			"foundryImg": "icons/magic/unholy/hand-light-pink.webp"
+		},
+		{
+			"ENG_name": "Sinister Resilience",
+			"name": "邪异韧性",
+			"source": "LLABH",
+			"page": 9,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你从他人身上窃取的生命使你活力充沛。每当你对一个生物造成暗蚀伤害时，你可以获得等同于所造成暗蚀伤害一半的临时生命值。",
+				"在这些临时生命值持续期间，你具有对暗蚀、毒素，以及来自所有非魔法且非银质攻击的钝击、穿刺和挥砍伤害的抗性。",
+				"但若你受到光耀伤害，此特性给予你的所有临时生命值立即消散，且全部光耀伤害作用于你的正常生命值。"
+			],
+			"foundrySystem": {
+				"actionType": "heal",
+				"activation": {
+					"type": "special",
+					"condition": "当你对一个生物造成暗蚀伤害时"
+				}
+			},
+			"foundryImg": "icons/magic/unholy/orb-swirling-pink.webp"
+		},
+		{
+			"ENG_name": "Misty Escape",
+			"name": "雾隐遁行",
+			"source": "LLABH",
+			"page": 9,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"当一个你能看见的生物以攻击命中你时，你可以用你的反应化为一团旋绕的迷雾，触发的攻击自动未命中。你立即重现于30尺内一个你能看见的无人空间中。",
+				"一旦你使用了此反应，你必须完成一次短休或长休才能再次使用。当你没有剩余使用次数时，可以进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}来再次使用此反应。"
+			],
+			"foundrySystem": {
+				"activation.condition": "当一个你能看见的生物以攻击命中你时",
+				"range": {
+					"value": 30,
+					"units": "feet"
+				}
+			},
+			"foundryImg": "icons/magic/air/wind-tornado-wall-blue.webp"
+		},
+		{
+			"ENG_name": "Crimson Lord",
+			"name": "猩红君王",
+			"source": "LLABH",
+			"page": 9,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你已完全掌控你的古老诅咒，你的能力足以匹敌真正的吸血鬼君王。你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你获得等同于你步行速度的飞行速度。",
+						"当你以獠牙攻击伤害一个生物时，直到你的下回合结束为止，它在抵抗你的{@classFeature 血仪|替代血猎手|LLABH|2}效应的豁免检定中具有劣势。",
+						"每过10年，你的身体只衰老1岁。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp"
+		},
+		{
+			"ENG_name": "Order of Witch Knights",
+			"name": "巫骑士结社",
+			"source": "LLABH",
+			"page": 10,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "巫骑士",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"加入黑暗的巫骑士结社的血猎手，被摧毁世间大恶的强烈欲望所驱使。那些格外执着之人\u2014\u2014那些愿意放弃一切之人\u2014\u2014常被伟岸奥秘之力接洽，那是来自异界的强大存在。这些恩主提供力量，以换取武者灵魂的一角或无条件的效忠。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "契约魔法|替代血猎手|LLABH|巫骑士|LLABH|3|LLABH"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猩红之刃|替代血猎手|LLABH|巫骑士|LLABH|3|LLABH"
+				}
+			]
+		},
+		{
+			"ENG_name": "Crimson Blade",
+			"name": "猩红之刃",
+			"source": "LLABH",
+			"page": 10,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "巫骑士",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"邪异的血魔法强化了你的武器。你可以以一件经猩红祭献强化的武器作为你巫骑士法术的施法法器。",
+				"此外，每当你消耗一枚契约魔法法术位时，你可以强化一件你持有的武器。该武器获得猩红祭献的收益；若它已被猩红祭献强化，则它的下次攻击额外造成等同于每级契约魔法法术位一枚血仪骰的伤害。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"consume": {
+					"amount": 1,
+					"target": "spells.pact.value",
+					"type": "attribute"
+				}
+			},
+			"foundryImg": "icons/skills/wounds/blood-spurt-spray-red.webp"
+		},
+		{
+			"ENG_name": "Pact Magic",
+			"name": "契约魔法",
+			"source": "LLABH",
+			"page": 10,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "巫骑士",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你与宗主达成的契约赋予了你施法的能力，正如魔契师一般：",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从巫骑士法术列表中学习两项你选择的戏法。在此职业中达到第13级后，你再学习一项自选的巫骑士戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"巫骑士施法表格展示了你拥有多少法术位以及这些法术位的环阶。你来自此特性的所有法术位环阶相同。要施展一项1环或更高的巫骑士法术，你必须消耗一枚法术位。你在完成一次短休或长休后重获所有已耗用的法术位。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高的已知法术",
+					"entries": [
+						"你从巫骑士法术列表中学习两项自选的1环法术。巫骑士施法表格的\"已知法术\"一栏展示了你何时习得更多1环或更高的巫骑士法术。你选择的法术环阶不得高于你等级对应的表中\"法术位环阶\"一栏的环阶。",
+						"每当你获得一个血猎手等级，你可以选择一项你已知的巫骑士法术，并以另一项你拥有对应环阶法术位的巫骑士法术替换之。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"体质是你巫骑士法术的施法属性。当法术提及你的施法属性、计算豁免检定DC以及进行法术攻击掷骰时，你均使用你的体质。",
+						{
+							"ENG_name": "Spell save DC",
+							"type": "abilityDc",
+							"name": "法术豁免DC",
+							"attributes": [
+								"con"
+							]
+						},
+						{
+							"ENG_name": "Spell attack modifier",
+							"type": "abilityAttackMod",
+							"name": "法术攻击调整值",
+							"attributes": [
+								"con"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"actionType": null,
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/sundries/books/book-face-blue.webp"
+		},
+		{
+			"ENG_name": "Sanguine Warrior",
+			"name": "血色武士",
+			"source": "LLABH",
+			"page": 11,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "巫骑士",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你将小型法术与武器攻击天衣无缝地交织。若你用你的动作施展法术，或激活一项你正在专注的法术（如巫术箭），你可以在该回合用附赠动作进行一次武器攻击。",
+				"当以一件猩红祭献武器作为施法法器时，你可以将你施展的任何法术所造成的伤害改为与你猩红祭献武器的伤害类型一致。"
+			],
+			"foundryImg": "icons/magic/unholy/projectile-helix-blood-red.webp"
+		},
+		{
+			"ENG_name": "Bewitched Strikes",
+			"name": "蛊惑打击",
+			"source": "LLABH",
+			"page": 11,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "巫骑士",
+			"subclassSource": "LLABH",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				" 你血液中的诅咒魔法渗入你的武器。当你以武器攻击命中一个生物时，直到你的下回合结束为止，该生物对你施展的血仪或法术进行的下一次豁免检定具有劣势。"
+			],
+			"foundryImg": "icons/magic/unholy/strike-beam-blood-large-red-teal.webp"
+		},
+		{
+			"ENG_name": "Profane Sacrifice",
+			"name": "渎圣祭献",
+			"source": "LLABH",
+			"page": 11,
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "巫骑士",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你可以将敌人之死献予你的奥秘之力，以换取更强的魔法。若一个敌对生物在你30尺内死亡，你可以用你的反应重获一枚契约魔法法术位，或获得等同于你的血仪骰+你的血猎手等级的临时生命值。",
+				"一旦你使用了此特性，你必须完成一次短休或长休才能再次使用。"
+			],
+			"foundrySystem": {
+				"ability": "int",
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "当一个敌对生物在你30尺内死亡时"
+				},
+				"damage.parts": [
+					[
+						"@scale.alternate-blood-hunter.rite-die + @classes.alternate-blood-hunter.levels",
+						"temphp"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/unholy/strike-body-explode-disintegrate.webp"
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Censure the Divine",
+			"name": "谴责神明",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "异端",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Blasphemous Prayer",
+										"name": "渎神祈祷"
+									}
+								}
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Hybrid Form",
+			"name": "混种形态",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Walking Speed Bonus",
+					"name": "步行速度加值",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "+10"
+						},
+						{
+							"key": "system.attributes.movement.climb",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
+			],
+			"subEntities": {
+				"item": [
+					{
+						"ENG_name": "Natural Weapons (Hybrid Form Only)",
+						"name": "天生武器（仅混种形态）",
+						"source": "LLABH",
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"property": [
+							"F"
+						],
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"@scale.alternate-blood-hunter.rite-die + @mod",
+									"slashing"
+								]
+							]
+						},
+						"foundryImg": "icons/creatures/abilities/fangs-teeth-bite.webp"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Lycan Warrior",
+			"name": "兽化战士",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "苍白之月",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"effects": [
+				{
+					"ENG_name": "Physical Resistances",
+					"name": "物理抗性",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "mgc"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "sil"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spectral Nature",
+			"name": "灵体天性",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Physical Resistances",
+					"name": "物理抗性",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "mgc"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Warrior of the Dawn",
+			"name": "破晓武士",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Necrotic Resistance",
+					"name": "暗蚀抗性",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spectral Mastery",
+			"name": "灵体精通",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "盐与铁",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"effects": [
+				{
+					"ENG_name": "Flying Speed",
+					"name": "飞行速度",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.fly",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						},
+						{
+							"key": "system.attributes.movement.hover",
+							"mode": "CUSTOM",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Vampiric Nature",
+			"name": "吸血鬼天性",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"subEntities": {
+				"item": [
+					{
+						"ENG_name": "Vampiric Fangs",
+						"name": "吸血鬼獠牙",
+						"source": "LLABH",
+						"type": "M",
+						"rarity": "none",
+						"foundrySystem": {
+							"type.value": "natural",
+							"ability": "str",
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1@scale.alternate-blood-hunter.rite-die + @mod",
+									"necrotic"
+								]
+							]
+						},
+						"foundryImg": "icons/creatures/abilities/fang-tooth-blood-red.webp"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Essence Drain",
+			"name": "精华汲取",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 6,
+			"system": {
+				"uses.max": "@abilities.con.mod"
+			},
+			"activities": [
+				{
+					"ENG_name": "Essence Drain",
+					"name": "精华汲取",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Sinister Resilience",
+			"name": "邪异韧性",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"effects": [
+				{
+					"ENG_name": "Temp HP Buffs",
+					"name": "临时生命增益",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "mgc"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "sil"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Crimson Lord",
+			"name": "猩红君王",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "不朽饥渴",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"effects": [
+				{
+					"ENG_name": "Flying Speed",
+					"name": "飞行速度",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.fly",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Pact Magic",
+			"name": "契约魔法",
+			"source": "LLABH",
+			"className": "替代血猎手",
+			"classSource": "LLABH",
+			"subclassShortName": "巫骑士",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Pact Magic",
+					"name": "契约魔法",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.spells.pact.level",
+							"mode": "OVERRIDE",
+							"value": "@scale.order-of-witch-knights.level"
+						},
+						{
+							"key": "system.spells.pact.max",
+							"mode": "OVERRIDE",
+							"value": "@scale.order-of-witch-knights.slots"
+						}
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Aberrant Sight",
+			"name": "畸变视觉",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"你的双眼化作漆黑的虚空。你获得60尺半径的黑暗视觉。若你从种族或其他特性处获得黑暗视觉，其范围增加60尺。在此半径内，你还能看穿魔法黑暗。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.senses.darkvision",
+							"mode": "ADD",
+							"value": "+60"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/environment/creatures/monster-tentacles-eye-purple.webp"
+		},
+		{
+			"ENG_name": "Accelerated Physiology",
+			"name": "加速生理",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"化学物质强化了你的身体能力并增强了你的攻击性。当你在你的回合采取攻击动作时，你可以进行三次攻击而非通常的两次。",
+				"但若你结束回合时，自你的上一回合结束以来尚未攻击过其他生物，则你受到等同于一次血仪骰掷骰结果的暗蚀伤害。"
+			],
+			"foundryImg": "icons/creatures/abilities/tail-strike-bone-orange.webp"
+		},
+		{
+			"ENG_name": "Acidic Bile",
+			"name": "强酸胆汁",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"additionalSpells": [
+				{
+					"ENG_name": "Acidic Bile",
+					"name": "强酸胆汁",
+					"ability": "con",
+					"known": {
+						"_": [
+							"酸液飞溅"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以从口中喷出腐蚀性的强酸。你习得{@spell 酸液飞溅}戏法，以体质作为你的施法属性。当你施展此戏法时，你的伤害掷骰获得等同于你体质调整值（最低为+1）的加值。"
+			],
+			"foundryImg": "icons/magic/acid/dissolve-vomit-green-brown.webp"
+		},
+		{
+			"ENG_name": "Alchemical Intellect",
+			"name": "炼金智能",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"奇异的化学物质以牺牲身体为代价强化了你的心智。你的所有智力、感知和魅力豁免检定具有优势，但你的所有力量、敏捷和体质豁免检定具有劣势。"
+			],
+			"foundryImg": "icons/commodities/biological/organ-brain-pink-purple.webp"
+		},
+		{
+			"ENG_name": "Aquatic Adaptation",
+			"name": "水栖适应",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"你的颈部生出鳃，或你的皮肤变得如两栖生物般可渗透。你获得等同于你步行速度的游泳速度，并且可以同时呼吸空气与水。",
+				"若你已有游泳速度，则在游泳时你可以用附赠动作采取疾走动作。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Swimming Speed",
+					"name": "游泳速度",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.swim",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/fish/deepsea-creature-glowing-blue.webp"
+		},
+		{
+			"ENG_name": "Corrosive Blood",
+			"name": "腐蚀之血",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				" 你的伤口会排出腐蚀性的强酸。当一个你15尺内你能看见的生物以攻击命中你时，你可以用你的反应使该攻击者受到等同于你的血仪骰+你的体质调整值的酸伤害。"
+			],
+			"foundrySystem": {
+				"ability": "con",
+				"damage.parts": [
+					[
+						"1@scale.alternate-blood-hunter.rite-die + @mod",
+						"acid"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/acid/projectiles-trio-salvo.webp"
+		},
+		{
+			"ENG_name": "Dislocated Reach",
+			"name": "脱臼触及",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你的怪异实验使你的关节能非自然地拉伸、爆响与扩张。你的手臂长度加倍，你的近战攻击触及范围增加5尺。"
+			],
+			"foundryImg": "icons/creatures/tentacles/tentacle-earth-green.webp"
+		},
+		{
+			"ENG_name": "Engorged Physique",
+			"name": "肿胀体格",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"化学物质强行撑大了你的身体，使你形貌骇人。你的体型增大一级（例如从中型变为大型），你的触及范围增加5尺，你的体重增至八倍，且你的近战武器攻击命中时额外造成等同于一次血仪骰掷骰结果的伤害。",
+				"若空间不足以让你增大体型，你会增大到当前环境所允许的最大体型。"
+			],
+			"foundryImg": "icons/creatures/mammals/ox-buffalo-horned-green.webp"
+		},
+		{
+			"ENG_name": "Enhanced Movement",
+			"name": "强化移动",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"你的双腿长得异常粗壮有力，但外观可怖。你在你的每个回合都可以用附赠动作采取疾走动作。"
+			],
+			"foundryImg": "icons/commodities/bones/hooves-cloven-grey.webp"
+		},
+		{
+			"ENG_name": "Grappling Appendage",
+			"name": "擒抱附肢",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"你的背部长出一条额外的附肢，形似触手。这条附肢的触及范围为10尺，可用于进行徒手打击、推离和擒抱。命中时，它造成等同于一次血仪骰掷骰结果的钝击伤害。",
+				"这条附肢可以用于简单的任务，但它无法持用武器或盾牌，也无法操作物件或工具。",
+				"从第13级起，此诱变剂会长出两条附肢。"
+			],
+			"foundrySystem": {
+				"actionType": "mwak",
+				"damage.parts": [
+					[
+						"1@scale.alternate-blood-hunter.rite-die",
+						"bludgeoning"
+					]
+				]
+			},
+			"foundryImg": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp"
+		},
+		{
+			"ENG_name": "Hideous Regeneration",
+			"name": "骇人再生",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"若你以不足一半（但至少1点）的剩余生命值开始你的回合，你立即恢复等同于你体质调整值（最低为1）的生命值。"
+			],
+			"foundryImg": "icons/commodities/biological/organ-heart-black.webp"
+		},
+		{
+			"ENG_name": "Inoculated Vigor",
+			"name": "接种活力",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你为自己接种了对除最恶性毒物外一切毒素的免疫。你获得对酸和毒素伤害的免疫，并获得对所有疾病以及中毒状态的免疫。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Acid and Poison Immunity",
+					"name": "酸与毒素免疫",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.di.value",
+							"mode": "ADD",
+							"value": "acid"
+						},
+						{
+							"key": "system.traits.di.value",
+							"mode": "ADD",
+							"value": "poison"
+						},
+						{
+							"key": "system.traits.ci.value",
+							"mode": "ADD",
+							"value": "poisoned"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/biological/organ-liver-red.webp"
+		},
+		{
+			"ENG_name": "Knotted Flesh",
+			"name": "结节血肉",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"你的皮肤变得如树木或巨兽般坚硬多节。当你穿戴护甲计算护甲等级时，你可以用你的体质调整值代替敏捷调整值。",
+				"此外，只要你未穿着任何护甲，你的护甲等级便等于13+你的体质调整值。"
+			],
+			"foundryImg": "icons/commodities/leather/leather-bolt-worn-tan.webp"
+		},
+		{
+			"ENG_name": "Monstrous Flight",
+			"name": "怪物飞行",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"你长出一对非自然的革质或昆虫状翅膀。你获得等同于你步行速度的飞行速度。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Flying Speed",
+					"name": "飞行速度",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.fly",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/birds/corvid-flying-wings-purple.webp"
+		},
+		{
+			"ENG_name": "Monstrous Glide",
+			"name": "怪物滑翔",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"你长出蝙蝠状的皮膜，用于滑翔。当你坠落至少10尺且未失能时，你在计算坠落伤害时可以从坠落距离中扣除至多100尺，且你每坠落1尺便可以水平移动2尺。"
+			],
+			"foundryImg": "icons/commodities/biological/wing-lizard-pink-purple.webp"
+		},
+		{
+			"ENG_name": "Oozing Form",
+			"name": "软泥形态",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"你的身体可以变得黏滑柔韧。你可以用附赠动作变为（或脱离）软泥状状态，使你能挤过窄至1寸的缝隙。",
+				"你的软泥状状态不会影响你的武器、护甲、衣物或物件，但你在该状态下无法进行攻击。"
+			],
+			"foundryImg": "icons/creatures/slimes/slime-face-hollow-green.webp"
+		},
+		{
+			"ENG_name": "Rite of Aggression",
+			"name": "好战血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				" 你用一个动作施展此血仪并触碰一个自愿生物，增强其攻击性并给予它以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"每当它采取攻击动作或使用多重攻击特性时，它可以进行一次额外攻击。",
+						"它可以用附赠动作采取疾走动作。",
+						"它的护甲等级和敏捷豁免检定获得+2加值。"
+					]
+				},
+				"若该生物结束其回合时未对其他生物造成伤害，它可以选择让此血仪结束，否则受到等同于你血仪骰的暗蚀伤害。此血仪最多可持续1分钟。每当它结束时，该生物必须通过一次体质豁免检定，否则承受一级力竭。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown-green.webp"
+		},
+		{
+			"ENG_name": "Rite of Agony",
+			"name": "苦痛血仪",
+			"source": "LLABH",
+			"page": 12,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"你用附赠动作施展此血仪，强迫30尺内一个你能看见的生物进行一次体质豁免检定。检定失败时，它的力量与敏捷属性检定和豁免检定具有劣势，且它每次进行攻击时受到等同于一次血仪骰掷骰结果的暗蚀伤害。这些效应在你的下回合结束时终止。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Agony",
+							"type": "entries",
+							"name": "增幅苦痛",
+							"entries": [
+								"此血仪的效应持续1分钟。该生物在其每个回合结束时重复此豁免检定，检定成功则提前结束此效应。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/skills/wounds/injury-hand-blood-red.webp"
+		},
+		{
+			"ENG_name": "Rite of Anxiety",
+			"name": "焦虑血仪",
+			"source": "LLABH",
+			"page": 12,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"你用附赠动作施展此血仪，诅咒30尺内一个你能看见的生物，使其易受影响。接下来的1分钟内，任何为影响该生物而进行属性检定的生物，都将你的血仪骰加到其检定上。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Anxiety",
+							"type": "entries",
+							"name": "增幅焦虑",
+							"entries": [
+								"该生物在你的下回合结束前被迫进行的第一次智力、感知或魅力豁免检定中，必须减去一枚血仪骰。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/sundries/gaming/chess-pawn-white-pink.webp"
+		},
+		{
+			"ENG_name": "Rite of Binding",
+			"name": "捆缚血仪",
+			"source": "LLABH",
+			"page": 12,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"你用附赠动作施展此血仪，强迫30尺内一个你能看见的大型或更小的生物进行一次力量豁免检定。检定失败时，其速度降为0，且直到你的下回合结束为止它无法使用反应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Binding",
+							"type": "entries",
+							"name": "增幅捆缚",
+							"entries": [
+								"你可以以此血仪指定任意体型的生物，且它持续1分钟。生物在其每个回合结束时重复此豁免检定，检定成功则结束此效应。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"save": {
+					"ability": "str"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/control/debuff-energy-snare-purple-pink.webp"
+		},
+		{
+			"ENG_name": "Rite of Blindness",
+			"name": "盲目血仪",
+			"source": "LLABH",
+			"page": 12,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"当30尺内一个生物以攻击命中，且你能同时看见攻击者与目标时，你可以用你的反应施展此血仪。攻击者必须从其攻击掷骰中减去你的血仪骰，这可能使其攻击未命中。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Blindness",
+							"type": "entries",
+							"name": "增幅盲目",
+							"entries": [
+								"直到其下一个回合结束为止，该生物的所有攻击掷骰均减去你的血仪骰。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/commodities/biological/eye-brown-red.webp"
+		},
+		{
+			"ENG_name": "Rite of Bonding",
+			"name": "羁绊血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"你用一个动作施展此血仪，将你的一滴血与一个你触碰的自愿生物的一滴血相融，铸成黑暗羁绊。只要该生物处于你60尺内，它便具有对所有伤害的抗性。但若此结绊生物受到伤害，你受到等量伤害。",
+				"此血仪的效应持续1小时，但若你或该生物之一降至0生命值，或你们相距超过60尺持续超过1分钟，它会提前结束。",
+				"你同一时间只能维持一个这样的羁绊。对另一个生物使用此血仪会立即结束先前的羁绊。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Bonding",
+							"type": "entries",
+							"name": "增幅羁绊",
+							"entries": [
+								"此血仪的效应持续8小时，仅在你们之一降至0生命值、或相距超过1英里持续超过1小时时提前结束。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/tools/fasteners/chain-steel-blue.webp"
+		},
+		{
+			"ENG_name": "Rite of Confusion",
+			"name": "混乱血仪",
+			"source": "LLABH",
+			"page": 12,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"你用附赠动作施展此血仪，诅咒30尺内一个你能看见的、正专注于一项法术的生物。它必须通过一次感知豁免检定，否则失去专注。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Confusion",
+							"type": "entries",
+							"name": "增幅混乱",
+							"entries": [
+								"该生物在抵抗此血仪的豁免检定中，必须减去一次你血仪骰的掷骰结果。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"save": {
+					"ability": "wis"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/commodities/biological/organ-brain-pink.webp"
+		},
+		{
+			"ENG_name": "Rite of Corrosion",
+			"name": "腐蚀血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"你用附赠动作施展此血仪，强迫30尺内一个你能看见的生物进行一次体质豁免检定。检定失败时，该生物中毒1分钟。它可以在其每个回合结束时重复此体质豁免检定，检定成功则结束此效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Corrosion",
+							"type": "entries",
+							"name": "增幅腐蚀",
+							"entries": [
+								"此血仪的效应持续至该生物通过体质豁免检定为止。此外，每当它未能通过此体质豁免检定，它便受到等同于两次血仪骰掷骰结果的暗蚀伤害。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"save": {
+					"ability": "con"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/acid/dissolve-bone-skull.webp"
+		},
+		{
+			"ENG_name": "Rite of Decay",
+			"name": "腐朽血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"你用一个动作施展此血仪，选择30尺内一个你能看见的生物，试图腐蚀其血液。它必须通过一次体质豁免检定，否则受到等同于你血仪骰四倍的暗蚀伤害，其速度减半，且无法进行反应。",
+				"它可以用一个动作重复此豁免检定。检定成功则此效应结束；检定失败则它受到等同于你血仪骰两倍的暗蚀伤害，并承受一级力竭。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Decay",
+							"type": "entries",
+							"name": "增幅腐朽",
+							"entries": [
+								"此血仪无视暗蚀抗性，并将暗蚀免疫视为抗性。此外，任何被此血仪杀死的生物都会化为一堆肉色尘土。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"save": {
+					"ability": "con"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/death/hand-undead-skeleton-fire-green.webp"
+		},
+		{
+			"ENG_name": "Rite of Dread",
+			"name": "惊惧血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你用附赠动作施展此血仪，强迫30尺内一个能看见或听见你的生物进行一次感知豁免检定。检定失败时，它对你陷入恐慌1分钟。",
+				"以这种方式恐慌的生物必须竭尽所能，沿其能走的最安全路线尽可能远离你移动。若它无法移动，它可以采取闪避动作。若它能使其回合结束于看不见你的位置，它便可以重复此豁免检定，检定成功则结束此血仪的效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Dread",
+							"type": "entries",
+							"name": "增幅惊惧",
+							"entries": [
+								"检定失败时，只要该生物能看见你，它便在持续时间内陷入震慑。若它受到伤害，它可以重复此豁免检定，检定成功则结束此效应。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"save": {
+					"ability": "wis"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/commodities/materials/feather-white-glowing-beams.webp"
+		},
+		{
+			"ENG_name": "Rite of Exposure",
+			"name": "暴露血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				" 你用附赠动作施展此血仪，诅咒30尺内一个你能看见的生物。在你的下回合结束前，对它造成的任何伤害均无视它具有的任何伤害抗性，并将其伤害免疫视为抗性。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Exposure",
+							"type": "entries",
+							"name": "增幅暴露",
+							"entries": [
+								"在同样的持续时间内，生物无视目标的任何状态免疫。但它在抵抗这些状态的豁免检定中具有优势。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/consumables/eggs/egg-broken-blue.webp"
+		},
+		{
+			"ENG_name": "Rite of Exsanguination",
+			"name": "放血血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"你用一个动作施展这至为强大而古老的血仪，试图抽干一个生物周身的血液，强迫30尺内一个你能看见的生物进行一次体质豁免检定。检定失败时，它受到等同于十二次血仪骰掷骰结果的暗蚀伤害；检定成功则伤害减半。",
+				"自你的上一回合开始以来，任何被你造成过伤害的生物在此豁免检定中具有劣势。",
+				"一旦你施展了此血仪，你必须完成一次短休或长休才能再次施展。你无法通过进行{@classFeature 生命献祭|替代血猎手|LLABH|2}来绕过此每次休息一次的限制。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Exsanguination",
+							"type": "entries",
+							"name": "增幅放血",
+							"entries": [
+								"此血仪无视暗蚀抗性，并将免疫视为抗性。任何被此血仪杀死的生物都会化为一堆肉色尘土。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"save": {
+					"ability": "con"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/skills/wounds/blood-cells-vessel-red.webp"
+		},
+		{
+			"ENG_name": "Rite of Knowledge",
+			"name": "知识血仪",
+			"source": "LLABH",
+			"page": 12,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"当你习得此血仪时，你获得四项仪式法术的知识。它们可以来自任何法术列表，但其环阶必须等于或低于你的熟练加值。然而，要施展这些仪式，你必须进行一次{@classFeature 生命献祭|替代血猎手|LLABH|2}。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "special"
+				}
+			},
+			"foundryImg": "icons/sundries/scrolls/scroll-plain-red.webp"
+		},
+		{
+			"ENG_name": "Rite of Marking",
+			"name": "印记血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"你用附赠动作施展此血仪，标记30尺内一个你能看见的生物。直到你的下回合结束为止，你对该目标的所有攻击掷骰具有优势。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Marking",
+							"type": "entries",
+							"name": "增幅印记",
+							"entries": [
+								"直到你的下回合结束为止，你对它的武器攻击掷骰加上一次血仪骰的掷骰结果。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/skills/targeting/crosshair-pointed-orange.webp"
+		},
+		{
+			"ENG_name": "Rite of Nightmares",
+			"name": "噩梦血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"你用一个动作施展此血仪，以噩梦般的幻影感染一个生物的心智，强迫30尺内一个你能看见的生物进行一次感知豁免检定。检定失败时，该生物受到等同于四次血仪骰掷骰结果的心灵伤害，并对你陷入恐慌1分钟。",
+				"该生物在其每个回合结束时重复此感知豁免检定。检定成功则此血仪的效应结束；检定失败则该生物额外受到等同于两次血仪骰掷骰结果的心灵伤害。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Nightmares",
+							"type": "entries",
+							"name": "增幅噩梦",
+							"entries": [
+								"在此血仪效应的持续时间内，该生物失能且速度为0。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"save": {
+					"ability": "wis"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-glow.webp"
+		},
+		{
+			"ENG_name": "Rite of Reaping",
+			"name": "收割血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"你用一个动作施展这至为强大而古老的血仪，将血液向你抽取。60尺内由你选择的生物必须进行一次体质豁免检定。检定失败时，它们受到等同于你血仪骰五倍的暗蚀伤害；检定成功则伤害减半。",
+				"自你的上一回合开始以来被你伤害过的生物，在此豁免检定中具有劣势。",
+				"每次短休或长休你只能施展此血仪一次。你无法以{@classFeature 生命献祭|替代血猎手|LLABH|2}绕过此限制。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Reaping",
+							"type": "entries",
+							"name": "增幅收割",
+							"entries": [
+								"此血仪无视暗蚀抗性，并将免疫视为抗性。任何被此血仪杀死的生物都会化为一堆肉色尘土。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"save": {
+					"ability": "con"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 60,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/death/weapon-scythe-rune-green.webp"
+		},
+		{
+			"ENG_name": "Rite of Rejuvenation",
+			"name": "复苏血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"你用一个动作施展这至为强大而古老的血仪，触碰一个存活的自愿生物，以其整体健康为代价赋予其更强的活力。它立即获得一次短休的所有收益，包括消耗其生命骰以恢复生命值的能力。但该生物的最大寿命被永久减少1年又1天，且它承受一级力竭。",
+				"一旦你施展了此血仪，你必须完成一次短休或长休才能再次施展。你无法通过进行{@classFeature 生命献祭|替代血猎手|LLABH|2}来绕过此每次休息一次的限制。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/magic/death/undead-mammal-fire-breath-pink.webp"
+		},
+		{
+			"ENG_name": "Rite of Revelation",
+			"name": "启示血仪",
+			"source": "LLABH",
+			"page": 12,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"当你使用猎人之苦分析一个你能看见的生物时，你可以施展此血仪，使你对该生物的属性检定自动成功。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Revelation",
+							"type": "entries",
+							"name": "增幅启示",
+							"entries": [
+								"选择该生物的一项伤害免疫并将其变为抗性，或选择它的一项伤害抗性并将其消解。此效应持续1分钟。",
+								"若该生物没有伤害免疫或抗性，你转而获知三项由你选择的猎人之苦特性。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "special"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/sundries/books/book-face-blue.webp"
+		},
+		{
+			"ENG_name": "Rite of Siphoning",
+			"name": "虹吸血仪",
+			"source": "LLABH",
+			"page": 12,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"你可以用一个动作施展此血仪，强迫一个你触碰的生物进行一次魅力豁免检定。检定失败时，它受到等同于你血仪骰两倍的暗蚀伤害；检定成功则伤害减半。随后你获得等同于所造成暗蚀伤害的临时生命值。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Siphoning",
+							"type": "entries",
+							"name": "增幅虹吸",
+							"entries": [
+								"此血仪造成的暗蚀伤害视为其最大可能值，无需掷骰。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"save": {
+					"ability": "cha"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/magic/death/mouth-bite-fangs-vampire.webp"
+		},
+		{
+			"ENG_name": "Rite of the Beast",
+			"name": "野兽血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"你用一个动作施展此血仪，触碰一只存活的{@filter 野兽|bestiary|type=Beasts|source=LLCompendiumOfBeasts}，将你的血液涂抹于其身。它必须通过一次魅力豁免检定，否则受你蛊惑1小时。此效应在野兽降至0生命值、或你使用此血仪蛊惑另一只野兽时提前结束。",
+				"受蛊惑的野兽对你及你的盟友友善，并完全服从你的命令。战斗中，你们共享先攻，且它在你回合中行动。它可以自行移动并使用其反应，但除非你用附赠动作命令它采取其数据块中的一项动作或其他动作，否则它只会采取闪避动作。若你能骑乘该野兽，则在此血仪的持续时间内，它视为一匹受训坐骑。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Beast",
+							"type": "entries",
+							"name": "增幅野兽",
+							"entries": [
+								"该野兽受此血仪蛊惑，直至你下一次长休结束。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"save": {
+					"ability": "cha"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp"
+		},
+		{
+			"ENG_name": "Rite of the Open Grave",
+			"name": "开墓血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你用一个动作触碰一个在过去一分钟内死亡的生物，将其灵魂从坟墓彼岸夺回，使其以1生命值复活。但被此血仪复活的生物会获得一次永久性的死亡豁免失败。此效应只能由移除诅咒法术或其他威力相当或更强的法术移除。",
+				"此血仪无法使因年老而死的生物复活，也无法复原生物缺失的身体部位。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Open Grave",
+							"type": "entries",
+							"name": "增幅开墓",
+							"entries": [
+								"该生物不会获得永久性的死亡豁免失败，而是承受一级力竭，可由一次长休治愈。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/death/hand-dirt-undead-zombie.webp"
+		},
+		{
+			"ENG_name": "Rite of the Puppet",
+			"name": "傀儡血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当30尺内一个你能看见的生物被杀死时，你可以用你的反应施展此血仪，使该生物起身，移动至多其步行速度的距离，并对其中一个你选择的、在其触及范围内的生物进行一次武器攻击。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Puppet",
+							"type": "entries",
+							"name": "增幅傀儡",
+							"entries": [
+								"该生物以此血仪进行的攻击掷骰与伤害掷骰均加上一次你血仪骰的掷骰结果。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/control/control-influence-puppet.webp"
+		},
+		{
+			"ENG_name": "Rite of the Senseless",
+			"name": "麻木血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你用附赠动作施展此血仪，选择30尺内一个你能看见的生物。它必须通过一次体质豁免检定，否则陷入目盲、耳聋，且无法说话或发出声音1分钟。它在其每个回合结束时重复此豁免检定，检定成功则结束此效应。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Senseless",
+							"type": "entries",
+							"name": "增幅麻木",
+							"entries": [
+								"除此血仪的其他效应外，该生物的速度也降为0，且在持续时间内无法进行反应。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"save": {
+					"ability": "con"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/perception/orb-crystal-ball-scrying.webp"
+		},
+		{
+			"ENG_name": "Rite of Thralldom",
+			"name": "奴役血仪",
+			"source": "LLABH",
+			"page": 13,
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"你用一个动作施展此血仪，触碰一个存活的类人生物，将一滴你的血液涂抹于其面。它必须通过一次魅力豁免检定，否则受你蛊惑至多1分钟。此效应在目标降至0生命值、或你对另一目标使用此血仪时提前结束。",
+				"受蛊惑的类人生物对你友善并完全服从你的命令。战斗中它与你们共享先攻，且在你回合中行动。它可以自行移动并使用其反应，但除非你用附赠动作命令它采取其数据块中的一项动作或其他动作，否则它在自己的回合只会采取闪避动作。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Empowered Thralldom",
+							"type": "entries",
+							"name": "增幅奴役",
+							"entries": [
+								"该类人生物受此血仪蛊惑至多1小时。"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "action"
+				},
+				"save": {
+					"ability": "cha"
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				},
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-watch.webp"
+		},
+		{
+			"ENG_name": "Synthetic Carapace",
+			"name": "合成甲壳",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"你的皮肤变得坚硬，宛如一只可怕的昆虫生物。你的护甲等级获得+2加值，且你获得对来自非魔法且非银质攻击的所有钝击、穿刺和挥砍伤害的抗性。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "AC Bonus",
+					"name": "AC加值",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "2"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "mgc"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "sil"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/biological/shell-ridged-green.webp"
+		},
+		{
+			"ENG_name": "Toxic Symbiosis",
+			"name": "毒共生",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"当你以近战攻击命中一个生物时，你可以在该回合用附赠动作从其伤口中吸取生命，获得等同于你体质调整值的临时生命值。",
+				"此特性无法用于对抗构装体或亡灵。"
+			],
+			"foundryImg": "icons/creatures/slimes/slime-movment-dripping-green.webp"
+		},
+		{
+			"ENG_name": "Unnatural Physicality",
+			"name": "非自然体能",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"你的肌肉与血管中充斥着黑暗的毒性化学物质。每当你进行力量、体质或特技检定时，你可以将血仪骰加到你的检定上。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Athletics & Acrobatics Bonus",
+					"name": "运动与特技加值",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.abilities.str.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.con.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.skills.acr.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"ENG_name": "Viscous Grip",
+			"name": "黏性抓握",
+			"source": "LLABH",
+			"page": 6,
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你的手和脚分泌出黏性物质。你获得等同于你步行速度的攀爬速度，且你可以攀爬困难表面而无需进行属性检定。",
+				"此外，生物在为挣脱你的擒抱而进行的属性检定或豁免检定中具有劣势。"
+			],
+			"foundryEffects": [
+				{
+					"ENG_name": "Climbimg Speed",
+					"name": "攀爬速度",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.climb",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/biological/suckers-green.webp"
+		}
+	],
+	"foundryOptionalfeature": [
+		{
+			"ENG_name": "Rite of Agony",
+			"name": "苦痛血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "1@scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"necrotic"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Binding",
+			"name": "捆缚血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Confusion",
+			"name": "混乱血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Corrosion",
+			"name": "腐蚀血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"ENG_name": "Rite of Corrosion",
+					"name": "腐蚀血仪",
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Empowered Corrosion",
+					"name": "增幅腐蚀",
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"necrotic"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Decay",
+			"name": "腐朽血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"ENG_name": "Rite of Decay",
+					"name": "腐朽血仪",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"necrotic"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Target attempts a save",
+					"name": "目标尝试豁免",
+					"type": "save",
+					"activation": {
+						"type": "special"
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"necrotic"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Dread",
+			"name": "惊惧血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Exsanguination",
+			"name": "放血血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"necrotic"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Nightmares",
+			"name": "噩梦血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"ENG_name": "Rite of Nightmares",
+					"name": "噩梦血仪",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Target attempts a save",
+					"name": "目标尝试豁免",
+					"type": "save",
+					"activation": {
+						"type": "special"
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Reaping",
+			"name": "收割血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"necrotic"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Revelation",
+			"name": "启示血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "special"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Siphoning",
+			"name": "虹吸血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.alternate-blood-hunter.rite-die + @scale.alternate-blood-hunter.rite-die"
+								},
+								"types": [
+									"necrotic"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of the Beast",
+			"name": "野兽血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of the Senseless",
+			"name": "麻木血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite of Thralldom",
+			"name": "奴役血仪",
+			"source": "LLABH",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			]
+		}
+	]
+}
