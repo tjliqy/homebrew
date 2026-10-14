@@ -1,0 +1,5086 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLMC",
+				"abbreviation": "LLMag",
+				"full": "LaserLlama 的魔战士",
+				"url": "https://www.gmbinder.com/share/-Mslo6ktmq1Yg5WTSjDQ",
+				"version": "4.3.2",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"ACOG_Muffin",
+					"Dazzle",
+					"hakr14",
+					"JoeyJoestar",
+					"Kachow"
+				],
+				"color": "025b79"
+			},
+			{
+				"json": "LLMC:E",
+				"abbreviation": "LLMagE",
+				"full": "LaserLlama 的魔战士扩展",
+				"url": "https://www.gmbinder.com/share/-Nvnfwvps1zOqpIGK-5B",
+				"version": "4.3.2",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"hakr14"
+				],
+				"color": "025b79"
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"llspell"
+			],
+			"optionalfeature": [
+				"LLExploits",
+				"LLStyles"
+			],
+			"feat": [
+				"llfeat"
+			]
+		},
+		"edition": "classic",
+		"dateAdded": 1647980495,
+		"dateLastModified": 1789939048,
+		"_dateLastModifiedHash": "b77442146a"
+	},
+	"class": [
+		{
+			"ENG_name": "Magus",
+			"name": "魔战士",
+			"source": "LLMC",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"con",
+				"int"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"cantripProgression": [
+				0,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11
+			],
+			"classSpells": [
+				"酸液飞溅（变体）|llspell",
+				"剑刃防护（变体）|llspell",
+				"轰雷剑（变体）|llspell",
+				"火焰箭",
+				"霜噬|xge",
+				"闪耀光束|llspell",
+				"翠炎剑（变体）|llspell",
+				"光亮术",
+				"闪电牵引|tce",
+				"法师之手",
+				"次级幻象",
+				"毒气喷涌（变体）|llspell",
+				"魔法伎俩",
+				"抵抗术（变体）|llspell",
+				"冷冻射线",
+				"电爪",
+				"剑刃爆发（变体）|llspell",
+				"风暴剑|llspell",
+				"克敌先击（变体）|llspell",
+				"吸收元素|xge",
+				"警报术",
+				"谭森浮碟术",
+				"隐形仆役",
+				"黯冰狱铠",
+				"燃烧之手",
+				"塔莎酸蚀酿|tce",
+				"繁彩球|xge",
+				"七彩喷射",
+				"侦测魔法",
+				"地颤|xge",
+				"脚底抹油",
+				"妖火",
+				"羽落术",
+				"云雾术",
+				"油腻术",
+				"冰刃|xge",
+				"鉴定术",
+				"跳跃术",
+				"魔法飞弹",
+				"致病射线",
+				"护盾术（变体）|llspell",
+				"睡眠术",
+				"雷鸣波",
+				"激流|llspell",
+				"巫术箭（变体）|llspell",
+				"西风打击|xge",
+				"马友夫强酸箭",
+				"阿迦纳萨喷火术|xge",
+				"寒霜灵光|llspell",
+				"目盲术/耳聋术",
+				"朦胧术",
+				"繁彩之刃|llspell",
+				"匕首之云",
+				"黑暗术",
+				"黑暗视觉",
+				"麦克斯米利安的地之攫|xge",
+				"强化属性",
+				"变巨/缩小术",
+				"造风术|xge",
+				"定身类人",
+				"隐形术",
+				"敲击术",
+				"浮空术",
+				"生物定位术（变体）|llspell",
+				"涅斯图魔法灵光",
+				"魔化武器（变体）|llspell",
+				"镜影术",
+				"迷踪步",
+				"衰弱射线",
+				"粉碎音波",
+				"史尼洛雪球群|xge",
+				"蛛行术",
+				"腐蚀箭|llspell",
+				"法术反制（变体）|llspell",
+				"解除魔法",
+				"元素武器",
+				"土石喷发|xge",
+				"火球术",
+				"飞行术",
+				"加速术",
+				"闪电束",
+				"防护法阵",
+				"马友夫微流星|xge",
+				"防护能量",
+				"雪雨暴",
+				"缓慢术",
+				"音波冲击|llspell",
+				"潮涌|xge",
+				"李欧蒙小屋（变体）|llspell",
+				"雷霆步|xge",
+				"沙墙术|xge",
+				"水墙术|xge",
+				"风墙术",
+				"咒缚之触|llspell",
+				"秘法眼",
+				"放逐术",
+				"预言术",
+				"任意门",
+				"元素灾厄|xge",
+				"火焰护盾",
+				"行动自如",
+				"高等隐形术",
+				"冰风暴",
+				"变形术（变体）|llspell",
+				"欧提路克弹力法球",
+				"致病辐射|xge",
+				"石肤术",
+				"浓酸球|xge",
+				"火墙术",
+				"碧水法球|xge",
+				"寒冰锥",
+				"疫病术",
+				"异界探知",
+				"拉瑞心灵联结",
+				"驱逐善恶",
+				"渺远步|xge",
+				"定身怪物",
+				"焚烧术|xge",
+				"穿墙术",
+				"探知术",
+				"授予技能|xge",
+				"钢风斩（变体）|llspell",
+				"传送法阵",
+				"力场墙（变体）|llspell",
+				"光墙术|xge",
+				"石墙术"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"count": 2,
+							"from": [
+								"acrobatics",
+								"arcana",
+								"athletics",
+								"history",
+								"investigation",
+								"nature",
+								"performance"
+							]
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一件{@filter 军用武器|items|category=基础|type=军用武器}与一面{@item 盾牌|PHB}，或 (b) 两件{@filter 军用武器|items|category=基础|type=军用武器}",
+					"(a) {@item 鳞甲|PHB} 或 (b) {@item 皮甲|PHB}",
+					"(a) 一把{@item 轻弩|PHB}与{@item 弩矢(20)|PHB|20支弩矢}，或 (b) 五支{@item 标枪|PHB|标枪}",
+					"(a) {@item 地城套组|PHB} 或 (b) {@item 探索套组|PHB}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"盾牌|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"鳞甲|phb"
+						],
+						"b": [
+							"皮甲|phb"
+						]
+					},
+					{
+						"a": [
+							"轻弩|phb",
+							"弩矢(20)|phb"
+						],
+						"b": [
+							{
+								"item": "标枪|phb",
+								"quantity": 5
+							}
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"int": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|class=魔战士（LLMC）}",
+						"{@filter 已知法术|spells|class=魔战士（LLMC）}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							2,
+							2
+						],
+						[
+							2,
+							2
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							5
+						],
+						[
+							3,
+							5
+						],
+						[
+							4,
+							6
+						],
+						[
+							4,
+							6
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							11
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1环|spells|level=1|class=魔战士（LLMC）}",
+						"{@filter 2环|spells|level=2|class=魔战士（LLMC）}",
+						"{@filter 3环|spells|level=3|class=魔战士（LLMC）}",
+						"{@filter 4环|spells|level=4|class=魔战士（LLMC）}",
+						"{@filter 5环|spells|level=5|class=魔战士（LLMC）}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"奥术武库|魔战士|LLMC|1",
+				"战斗风格|魔战士|LLMC|1",
+				"施法|魔战士|LLMC|2",
+				"法术打击|魔战士|LLMC|2",
+				"奥术再生|魔战士|LLMC|3",
+				{
+					"classFeature": "秘传结社|魔战士|LLMC|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|魔战士|LLMC|4",
+				"额外攻击|魔战士|LLMC|5",
+				"法术视觉|魔战士|LLMC|5",
+				"灵界之步|魔战士|LLMC|6",
+				{
+					"classFeature": "秘传结社特性|魔战士|LLMC|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|魔战士|LLMC|8",
+				"破法|魔战士|LLMC|9",
+				"秘术守护|魔战士|LLMC|10",
+				"奥术守恒|魔战士|LLMC|11",
+				"虹光打击|魔战士|LLMC|11",
+				"属性值提升|魔战士|LLMC|12",
+				"高效破法|魔战士|LLMC|14",
+				{
+					"classFeature": "秘传结社特性|魔战士|LLMC|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|魔战士|LLMC|16",
+				"属性值提升|魔战士|LLMC|19",
+				{
+					"classFeature": "秘传结社特性|魔战士|LLMC|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"hasFluff": true,
+			"foundryImg": "icons/magic/symbols/rune-sigil-green-purple.webp"
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Magus",
+			"name": "魔战士",
+			"source": "LLMC",
+			"entries": [
+				{
+					"ENG_name": "The Magus",
+					"type": "section",
+					"name": "魔战士",
+					"source": "LLMC",
+					"page": 1,
+					"entries": [
+						"剑客穿行于熙熙攘攘的集市，他的双眼闪过一瞬绿光。他能看见那名正选购货物的朴素矮人周身环绕着无可置疑的奥术灵光。他找到了目标。当这名武者拔剑之时，片刻前还貌似普通矮人农夫的东西恢复了真身。恶魔扑袭而来，剑客以剑锋迎向利爪。",
+						"刺客注视着公爵在一名护卫的随行下走过街道。当这名准刺客的剑锋直刺公爵暴露的脖颈时，狂喜化作了恐惧\u2014\u2014身披重甲的护卫出现在片刻之前公爵所在的位置。杀手尚未及反应，一柄翡翠烈焰之刃已贯穿了他的胸膛。",
+						"半身人跪在立于她面前的三名兜帽身影之前。她耗费了近两年光阴寻找这一秘密结社的成员，而今竟一举寻得三人。自从父亲死于一名邪恶术师之手，悲伤便吞噬着这位年轻的半身人，她发誓要不惜一切代价获得复仇之力。此刻时机已至，她向这个隐秘的结社宣誓效忠，献上自己的生命以换取力量。",
+						"上述三名武者皆是魔战士\u2014\u2014剑与法术的使用者，将二者交织成一支致命之舞。"
+					]
+				},
+				{
+					"ENG_name": "Sword & Spell",
+					"type": "entries",
+					"name": "剑与法术",
+					"source": "LLMC",
+					"page": 1,
+					"entries": [
+						"在多元宇宙中有着诸多名号、能够同时驾驭剑与法术之人，被统称为魔战士。魔战士并未将毕生献给奥术研究或武技修行，而是致力于一条中庸之道。尽管他们或许永远无法施展大法师那撼动大地的魔法，也无法与真正的剑术宗师正面争锋，但魔战士能够掌握一种唯有其结社成员才会使用的独特奥术战斗方式。",
+						"他们的标志性魔法风格使其能够将法术导入武器打击之中、感知周遭世界中奥术魔法的存在，甚至能在法术生效之前将其编织之线自空中斩落。"
+					]
+				},
+				{
+					"ENG_name": "Secret Orders",
+					"type": "entries",
+					"name": "秘密结社",
+					"source": "LLMC",
+					"page": 1,
+					"entries": [
+						"魔战士的魔法并非人人可学。随着岁月流逝，这些奥术武者自行组织成了隐秘的社团，甘愿在阴影中运作。潜在的魔战士往往自幼便被相中，只有在证明了自己的技艺与忠诚之后，才会被引入某个结社。尽管各结社的隐秘程度不一，但对绝大多数平民而言，几乎每个魔战士结社都被认为不过是个传说。",
+						"随着魔战士在其秘密社团中步步高升，他们被期望渗透进掌权者之中，并与这些人物建立关系。他们常常出任权贵、强大法师与富商的私人顾问、护卫与伴侣。尽管魔战士可以与他人缔结情谊，他们的首要忠诚永远属于其结社。"
+					]
+				},
+				{
+					"ENG_name": "Creating Your Magus",
+					"type": "entries",
+					"name": "创造你的魔战士",
+					"source": "LLMC",
+					"page": 1,
+					"entries": [
+						"追求魔战士之道的人，往往为了被一名导师接纳并传授而舍弃一切。是什么在驱使着你的魔战士？你是否始终怀有对知识与技艺无法遏止的渴望？还是你所爱之人惨死于邪恶法师之手，令你不计个人代价踏上复仇之路？又或者，你只是想让剑术与魔法齐头并进、日益精进？",
+						"另外，也请决定你是在何处接受魔战士训练的。你是某个奥术武者秘密社团的新人？还是由某个图谋掌控世界的强大魔战士结社的叛逃成员秘密栽培？又或者，你自出生起便被抚养长大，以便让战争艺术的禀赋与奥术潜能一同得到完美开发？",
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速构建",
+							"source": "LLMC",
+							"page": 2,
+							"entries": [
+								"你可以采用以下建议快速创建一名魔战士。首先，依据你想使用的武器，将力量或敏捷作为你的最高属性值，其次是智力。其次，选择{@background 智者}背景。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Order of Arcane Archers",
+			"name": "魔射手结社",
+			"shortName": "魔射手",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"诱捕打击（变体）|llspell",
+							"棘雹术（变体）|llspell"
+						],
+						"5": [
+							"马友夫强酸箭",
+							"警戒箭阵（变体）|llspell"
+						],
+						"9": [
+							"万箭齐发（变体）|llspell",
+							"闪电箭矢（变体）|llspell"
+						],
+						"13": [
+							"秘法眼",
+							"元素灾厄|xge"
+						],
+						"17": [
+							"探知术",
+							"迅捷箭袋（变体）|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"诱捕打击（变体）|llspell",
+				"棘雹术（变体）|llspell",
+				"马友夫强酸箭",
+				"警戒箭阵（变体）|llspell",
+				"万箭齐发（变体）|llspell",
+				"闪电箭矢（变体）|llspell",
+				"秘法眼",
+				"元素灾厄|xge",
+				"探知术",
+				"迅捷箭袋（变体）|llspell"
+			],
+			"subclassFeatures": [
+				"魔射手结社|魔战士|LLMC|魔射手|LLMC|3",
+				"附魔射击|魔战士|LLMC|魔射手|LLMC|7",
+				"远距换位|魔战士|LLMC|魔射手|LLMC|15",
+				"秘法神射手|魔战士|LLMC|魔射手|LLMC|20"
+			],
+			"foundryImg": "icons/weapons/bows/shortbow-recurve-yellow.webp"
+		},
+		{
+			"ENG_name": "Order of Arcanists",
+			"name": "奥术师结社",
+			"shortName": "奥术师",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"preparedSpells": "<$level$> / 2 + <$int_mod$> + <$prof_bonus$>",
+			"spellsKnownProgressionFixed": [
+				0,
+				0,
+				0,
+				0,
+				1,
+				0,
+				1,
+				0,
+				1,
+				0,
+				1,
+				0,
+				1,
+				0,
+				1,
+				0,
+				1,
+				0,
+				1,
+				0
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"3": [
+							{
+								"all": "class=法师"
+							}
+						]
+					},
+					"innate": {
+						"20": {
+							"daily": {
+								"1e": [
+									{
+										"choose": "level=6|class=法师",
+										"count": 1
+									},
+									{
+										"choose": "level=7|class=法师",
+										"count": 1
+									}
+								]
+							}
+						}
+					}
+				}
+			],
+			"subclassSpells": [
+				{
+					"className": "法师",
+					"classSource": "PHB"
+				}
+			],
+			"subclassFeatures": [
+				"奥术师结社|魔战士|LLMC|奥术师|LLMC|3",
+				"秘传视界|魔战士|LLMC|奥术师|LLMC|7",
+				"储存法术|魔战士|LLMC|奥术师|LLMC|15",
+				"大奥术师|魔战士|LLMC|奥术师|LLMC|20"
+			],
+			"foundryImg": "icons/sundries/books/book-open-purple.webp"
+		},
+		{
+			"ENG_name": "Order of Armorers",
+			"name": "装甲师结社",
+			"shortName": "装甲师",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"强令对决（变体）|llspell",
+							"棘雹术（变体）|llspell"
+						],
+						"5": [
+							"匕首之云",
+							"灼热金属"
+						],
+						"9": [
+							"万箭齐发（变体）|llspell",
+							"加速术"
+						],
+						"13": [
+							"鬼斧神工",
+							"行动自如"
+						],
+						"17": [
+							"钢风斩（变体）|llspell",
+							"斩首之刃|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"强令对决（变体）|llspell",
+				"棘雹术（变体）|llspell",
+				"匕首之云",
+				"灼热金属",
+				"万箭齐发（变体）|llspell",
+				"加速术",
+				"鬼斧神工",
+				"行动自如",
+				"钢风斩（变体）|llspell",
+				"斩首之刃|llspell"
+			],
+			"subclassFeatures": [
+				"装甲师结社|魔战士|LLMC|装甲师|LLMC:E|3",
+				"精通武库技法|魔战士|LLMC|装甲师|LLMC:E|7",
+				"飞舞招架|魔战士|LLMC|装甲师|LLMC:E|15",
+				"神话打击|魔战士|LLMC|装甲师|LLMC:E|20"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "精通武库技法伤害",
+					"configuration": {
+						"identifier": "whirlwind",
+						"type": "dice",
+						"scale": {
+							"7": {
+								"n": 2,
+								"die": 10
+							},
+							"14": {
+								"n": 3,
+								"die": 10
+							},
+							"20": {
+								"n": 4,
+								"die": 10
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/weapons/thrown/dagger-ringed-steel.webp"
+		},
+		{
+			"ENG_name": "Order of Blades",
+			"name": "剑锋结社",
+			"shortName": "剑锋",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"强令对决（变体）|llspell",
+							"西风打击|xge"
+						],
+						"5": [
+							"朦胧术",
+							"迷踪步"
+						],
+						"9": [
+							"元素武器",
+							"加速术"
+						],
+						"13": [
+							"火焰护盾",
+							"行动自如"
+						],
+						"17": [
+							"钢风斩（变体）|llspell",
+							"斩首之刃|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"强令对决（变体）|llspell",
+				"西风打击|xge",
+				"朦胧术",
+				"迷踪步",
+				"元素武器",
+				"加速术",
+				"火焰护盾",
+				"行动自如",
+				"钢风斩（变体）|llspell",
+				"斩首之刃|llspell"
+			],
+			"subclassFeatures": [
+				"剑锋结社|魔战士|LLMC|剑锋|LLMC|3",
+				"流畅步|魔战士|LLMC|剑锋|LLMC|7",
+				"致命之舞|魔战士|LLMC|剑锋|LLMC|15",
+				"剑锋大师|魔战士|LLMC|剑锋|LLMC|20"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "剑舞AC加值",
+					"configuration": {
+						"identifier": "dance-ac",
+						"type": "numeric",
+						"scale": {
+							"3": {
+								"value": 1
+							},
+							"7": {
+								"value": 2
+							},
+							"15": {
+								"value": 3
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/weapons/swords/sword-winged-pink.webp"
+		},
+		{
+			"ENG_name": "Order of Conduits",
+			"name": "导能者结社",
+			"shortName": "导能者",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"脚底抹油",
+							"雷鸣斩（变体）|llspell"
+						],
+						"5": [
+							"朦胧术",
+							"印记斩（变体）|llspell"
+						],
+						"9": [
+							"致盲斩（变体）|llspell",
+							"加速术"
+						],
+						"13": [
+							"任意门",
+							"惊惧斩（变体）|llspell"
+						],
+						"17": [
+							"放逐斩（变体）|llspell",
+							"授予技能|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"脚底抹油",
+				"雷鸣斩（变体）|llspell",
+				"朦胧术",
+				"印记斩（变体）|llspell",
+				"致盲斩（变体）|llspell",
+				"加速术",
+				"任意门",
+				"惊惧斩（变体）|llspell",
+				"放逐斩（变体）|llspell",
+				"授予技能|xge"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Arcane Conduit",
+					"name": "奥术导能",
+					"featureType": [
+						"FS:AF"
+					],
+					"progression": {
+						"3": 1
+					},
+					"required": {
+						"3": [
+							"搏击|LLStyles"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"导能者结社|魔战士|LLMC|导能者|LLMC:E|3",
+				"灵界武艺|魔战士|LLMC|导能者|LLMC:E|7",
+				"附魔体魄|魔战士|LLMC|导能者|LLMC:E|15",
+				"飞升导能者|魔战士|LLMC|导能者|LLMC:E|20"
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-red.webp"
+		},
+		{
+			"ENG_name": "Order of Dragon Knights",
+			"name": "龙骑士结社",
+			"shortName": "龙骑士",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"吸收元素|xge",
+							"命令术"
+						],
+						"5": [
+							"龙息术|xge",
+							"守护之链"
+						],
+						"9": [
+							"元素武器",
+							"恐惧术"
+						],
+						"13": [
+							"支配野兽",
+							"元素灾厄|xge"
+						],
+						"17": [
+							"启蒙术",
+							"咒唤巨龙（变体）|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"吸收元素|xge",
+				"命令术",
+				"龙息术|xge",
+				"守护之链",
+				"元素武器",
+				"恐惧术",
+				"支配野兽",
+				"元素灾厄|xge",
+				"启蒙术",
+				"咒唤巨龙（变体）|llspell"
+			],
+			"subclassFeatures": [
+				"龙骑士结社|魔战士|LLMC|龙骑士|LLMC|3",
+				"高等龙伴|魔战士|LLMC|龙骑士|LLMC|7",
+				"元素吐息|魔战士|LLMC|龙骑士|LLMC|15",
+				"神话龙伴|魔战士|LLMC|龙骑士|LLMC|15",
+				"至高龙骑士|魔战士|LLMC|龙骑士|LLMC|20"
+			],
+			"foundryImg": "icons/commodities/leather/scales-brown.webp"
+		},
+		{
+			"ENG_name": "Order of Hexblades",
+			"name": "咒剑结社",
+			"shortName": "咒剑",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"脆弱诅咒",
+							"激愤斩（变体）|llspell"
+						],
+						"5": [
+							"目盲术/耳聋术",
+							"造成恐惧|xge"
+						],
+						"9": [
+							"降咒",
+							"敌群环绕"
+						],
+						"13": [
+							"魅影杀手",
+							"咒缚之触|llspell"
+						],
+						"17": [
+							"汲能术|xge",
+							"灵魂裂解|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"脆弱诅咒",
+				"激愤斩（变体）|llspell",
+				"目盲术/耳聋术",
+				"造成恐惧|xge",
+				"降咒",
+				"敌群环绕",
+				"魅影杀手",
+				"咒缚之触|llspell",
+				"汲能术|xge",
+				"灵魂裂解|llspell"
+			],
+			"subclassFeatures": [
+				"咒剑结社|魔战士|LLMC|咒剑|LLMC:E|3",
+				"诅咒武库|魔战士|LLMC|咒剑|LLMC:E|7",
+				"阴邪意识|魔战士|LLMC|咒剑|LLMC:E|15",
+				"觉醒咒剑|魔战士|LLMC|咒剑|LLMC:E|20"
+			],
+			"foundryImg": "icons/skills/melee/blade-tip-smoke-green.webp"
+		},
+		{
+			"ENG_name": "Order of Shades",
+			"name": "暗影结社",
+			"shortName": "暗影",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"易容术",
+							"睡眠术"
+						],
+						"5": [
+							"行动无踪（变体）|llspell",
+							"目盲术/耳聋术"
+						],
+						"9": [
+							"催眠图纹（变体）|llspell",
+							"回避侦测"
+						],
+						"13": [
+							"预言术",
+							"高等隐形术"
+						],
+						"17": [
+							"假象术",
+							"篡改记忆"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"易容术",
+				"睡眠术",
+				"行动无踪（变体）|llspell",
+				"目盲术/耳聋术",
+				"催眠图纹（变体）|llspell",
+				"回避侦测",
+				"预言术",
+				"高等隐形术",
+				"假象术",
+				"篡改记忆"
+			],
+			"subclassFeatures": [
+				"暗影结社|魔战士|LLMC|暗影|LLMC:E|3",
+				"出自暗影|魔战士|LLMC|暗影|LLMC:E|7",
+				"精通裹纱|魔战士|LLMC|暗影|LLMC:E|7",
+				"蒙蔽心智|魔战士|LLMC|暗影|LLMC:E|15",
+				"与黑暗合一|魔战士|LLMC|暗影|LLMC:E|20"
+			],
+			"foundryImg": "icons/magic/unholy/orb-glowing-purple.webp"
+		},
+		{
+			"ENG_name": "Order of Spellbreakers",
+			"name": "破法者结社",
+			"shortName": "破法者",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"灾祸术",
+							"侦测善恶"
+						],
+						"5": [
+							"目盲术/耳聋术",
+							"沉默术"
+						],
+						"9": [
+							"法术反制（变体）|llspell",
+							"防护法阵"
+						],
+						"13": [
+							"放逐术",
+							"欧提路克弹力法球"
+						],
+						"17": [
+							"驱逐善恶",
+							"异界誓缚"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"灾祸术",
+				"侦测善恶",
+				"目盲术/耳聋术",
+				"沉默术",
+				"法术反制（变体）|llspell",
+				"防护法阵",
+				"放逐术",
+				"欧提路克弹力法球",
+				"驱逐善恶",
+				"异界誓缚"
+			],
+			"subclassFeatures": [
+				"破法者结社|魔战士|LLMC|破法者|LLMC|3",
+				"防御织衣|魔战士|LLMC|破法者|LLMC|7",
+				"致残烙印|魔战士|LLMC|破法者|LLMC|7",
+				"反射破法|魔战士|LLMC|破法者|LLMC|15",
+				"破法大师|魔战士|LLMC|破法者|LLMC|20"
+			],
+			"foundryImg": "icons/magic/unholy/hand-weapon-glow-black-green.webp"
+		},
+		{
+			"ENG_name": "Order of Spellswords",
+			"name": "法术剑士结社",
+			"shortName": "法术剑士",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Martial Exploits",
+					"name": "武术战技",
+					"featureType": [
+						"LL:1ME"
+					],
+					"progression": {
+						"3": 2,
+						"5": 3
+					}
+				},
+				{
+					"ENG_name": "Martial Exploits",
+					"name": "武术战技",
+					"featureType": [
+						"LL:1ME",
+						"LL:2ME"
+					],
+					"progression": {
+						"7": 1,
+						"11": 2
+					}
+				},
+				{
+					"ENG_name": "Martial Exploits",
+					"name": "武术战技",
+					"featureType": [
+						"LL:1ME",
+						"LL:2ME",
+						"LL:3ME"
+					],
+					"progression": {
+						"15": 1,
+						"19": 2
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"colLabels": [
+						"已知战技",
+						"战技骰",
+						"战技骰数",
+						"最高位阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							"{@dice d4}",
+							2,
+							"一阶"
+						],
+						[
+							2,
+							"{@dice d4}",
+							2,
+							"一阶"
+						],
+						[
+							3,
+							"{@dice d4}",
+							2,
+							"一阶"
+						],
+						[
+							3,
+							"{@dice d4}",
+							2,
+							"一阶"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"二阶"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							7,
+							"{@dice d8}",
+							4,
+							"三阶"
+						],
+						[
+							7,
+							"{@dice d8}",
+							4,
+							"三阶"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"法术剑士结社|魔战士|LLMC|法术剑士|LLMC:E|3",
+				"秘法精准|魔战士|LLMC|法术剑士|LLMC:E|7",
+				"灵界武者|魔战士|LLMC|法术剑士|LLMC:E|15",
+				"奥术剑刃大师|魔战士|LLMC|法术剑士|LLMC:E|20"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "战技骰",
+					"configuration": {
+						"identifier": "exploit",
+						"type": "dice",
+						"scale": {
+							"3": {
+								"n": 2,
+								"die": 4
+							},
+							"7": {
+								"n": 3,
+								"die": 6
+							},
+							"15": {
+								"n": 4,
+								"die": 8
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/skills/melee/sword-stuck-glowing-pink.webp"
+		},
+		{
+			"ENG_name": "Order of Travelers",
+			"name": "旅者结社",
+			"shortName": "旅者",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"脚底抹油",
+							"羽落术"
+						],
+						"5": [
+							"定身类人",
+							"朦胧术"
+						],
+						"9": [
+							"加速术",
+							"缓慢术"
+						],
+						"13": [
+							"放逐术",
+							"任意门"
+						],
+						"17": [
+							"定身怪物",
+							"篡改记忆"
+						]
+					},
+					"innate": {
+						"20": {
+							"daily": {
+								"1": [
+									"时间停止"
+								]
+							}
+						}
+					}
+				}
+			],
+			"subclassSpells": [
+				"脚底抹油",
+				"羽落术",
+				"定身类人",
+				"朦胧术",
+				"加速术",
+				"缓慢术",
+				"放逐术",
+				"任意门",
+				"定身怪物",
+				"篡改记忆"
+			],
+			"subclassFeatures": [
+				"旅者结社|魔战士|LLMC|旅者|LLMC:E|3",
+				"时流漂泊|魔战士|LLMC|旅者|LLMC:E|7",
+				"高等偏移|魔战士|LLMC|旅者|LLMC:E|7",
+				"召唤自我|魔战士|LLMC|旅者|LLMC:E|15",
+				"无羁旅者|魔战士|LLMC|旅者|LLMC:E|20"
+			],
+			"foundryImg": "icons/magic/time/clock-analog-gray.webp"
+		},
+		{
+			"ENG_name": "Order of Warders",
+			"name": "守护者结社",
+			"shortName": "守护者",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"强令对决（变体）|llspell",
+							"庇护术"
+						],
+						"5": [
+							"援助术",
+							"守护之链"
+						],
+						"9": [
+							"希望信标",
+							"生命转换|xge"
+						],
+						"13": [
+							"魔邓肯忠犬",
+							"防死结界（变体）|llspell"
+						],
+						"17": [
+							"防活物护罩",
+							"原力法阵"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"强令对决（变体）|llspell",
+				"庇护术",
+				"援助术",
+				"守护之链",
+				"希望信标",
+				"生命转换|xge",
+				"魔邓肯忠犬",
+				"防死结界（变体）|llspell",
+				"防活物护罩",
+				"原力法阵"
+			],
+			"subclassFeatures": [
+				"守护者结社|魔战士|LLMC|守护者|LLMC|3",
+				"奥术庇护|魔战士|LLMC|守护者|LLMC|7",
+				"完满之链|魔战士|LLMC|守护者|LLMC|15",
+				"至高守护者|魔战士|LLMC|守护者|LLMC|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Arcane Armory",
+			"name": "奥术武库",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 1,
+			"entries": [
+				"在1级时，你习得魔战士的标志性附魔\u2014\u2014创造你的奥术武库。它是一个唯有你能使用的额外维度空间，遵循以下规则：",
+				{
+					"ENG_name": "Enchanting Object",
+					"type": "entries",
+					"name": "附魔物件",
+					"entries": [
+						"要向你的奥术武库中添加一件物品，你必须对单件武器、盾牌、整套护甲或微型物件进行一场1小时的仪式。在此期间你必须持握它，仪式完成后，它便会消失于你的奥术武库中，直到你将其召出。",
+						"你的武库最多可容纳数量等于1+你魔战士等级的物品。其中必须始终有一件近战武器。",
+						"若你在武库已满时向其中添加新物品，则须移出一件物品，它会掉落至你脚边的地面。"
+					]
+				},
+				{
+					"ENG_name": "Accessing your Armory",
+					"type": "entries",
+					"name": "取用武库",
+					"entries": [
+						"你可以用一个附赠动作取用你的武库，从中召出任意数量的物品，立即装备或穿上你选择的物品。作为同一附赠动作的一部分，你也可以收走任意数量的这些武库物品，立即脱下并将其收纳于你的奥术武库之中。"
+					]
+				},
+				{
+					"ENG_name": "Armory Benefits",
+					"type": "entries",
+					"name": "武库益处",
+					"entries": [
+						"只要仍是你奥术武库的一部分，武库中的武器、盾牌与整套护甲便会成为魔法物品（若原本并非如此）。最后，当你穿着属于奥术武库的轻型或中型护甲计算护甲等级时，可以用智力代替敏捷。"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/thrown/daggers-kunai-purple.webp"
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 1,
+			"entries": [
+				"在1级时，你选择一种最能体现你训练方向的战斗风格。你不能重复选择同一种战斗风格，即使某项特性允许你额外选择战斗风格亦是如此。",
+				"每当你在本职业中获得等级时，你可以将你的战斗风格改为另一种由你选择的战斗风格。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "奥术武者|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "箭术|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "经典剑术|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "防御战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "双持战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "均衡战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "守护|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "盾武者|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "投掷手|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "多用战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "搏击|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "轻量战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "巨武器战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "重量战斗|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "骑乘武者|LLStyles"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "长柄武器战斗|LLStyles"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 2,
+			"entries": [
+				"在2级时，你已学会施展奥术法术，与{@class 法师}颇为相似，你以这些法术强化自己在战斗中的能力：",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从魔战士法术列表（位于本职业描述末尾）中选择学会两个戏法。如魔战士表中\"已知戏法\"一栏所示，你在4级和10级时还会学会另一个魔战士戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"type": "entries",
+					"name": "施法法器",
+					"entries": [
+						"你可以使用奥术武库中的任意武器、盾牌或奥术法器，作为你所知魔战士法术的施法法器。武库中的武器与盾牌还可用于施展你魔战士法术的姿态成分。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"魔战士表展示了你拥有的、用于施展1环及以上法术的法术位数量。要施展一个你已知的法术，你必须消耗一个该法术环阶或更高环阶的法术位。每当完成一次长休，你会恢复所有已消耗的法术位。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known Of 1st-Level And Higher",
+					"type": "entries",
+					"name": "已知的1环及以上法术",
+					"entries": [
+						"你从魔战士法术列表中选择学会两个1环法术。魔战士表的\"已知法术\"一栏展示了你何时习得更多魔战士法术。你学习的每个魔战士法术都必须是你拥有对应环阶法术位的环阶。例如，当你到达6级时，你从魔战士法术列表中学习一个1环或2环的法术。",
+						"每当获得一个魔战士等级时，你可以选择一个你已知的魔战士法术，用另一个由你选择、且你拥有对应环阶法术位的魔战士法术替换它。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"由于你将法术铭刻于记忆，智力便是你魔战士法术的施法属性。当法术提及你的施法属性、当你设定豁免DC、或当你进行法术攻击掷骰时，都使用智力。",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/magic/symbols/runes-etched-steel-blade.webp"
+		},
+		{
+			"ENG_name": "Spellstrike",
+			"name": "法术打击",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 2,
+			"entries": [
+				"同样在2级时，你习得魔战士的标志性技法：法术打击。每回合一次，当你以一件近战奥术武库武器进行攻击时，你可以同时施展一个魔战士法术，并如常消耗一个法术位。该法术经由你的武器传导，而非正常生效。",
+				"该法术的施法时间必须为一个动作，且要么需要进行一次法术攻击掷骰，要么强制至少一次豁免检定，要么影响以生命值计量的若干生物（如睡眠术）。",
+				"若未命中，则法术失败且不产生任何效果。若命中，法术在你的攻击之后立即生效，并遵循以下规则：",
+				{
+					"ENG_name": "Area of Effect",
+					"type": "entries",
+					"name": "范围效应",
+					"entries": [
+						"若该法术以大于5尺立方的区域为目标，你可以选择让法术仅影响你的目标，或是使其作为一个包含目标的15尺锥形生效，锥形自目标处直接远离你延伸。"
+					]
+				},
+				{
+					"ENG_name": "Saving Throws",
+					"type": "entries",
+					"name": "豁免检定",
+					"entries": [
+						"你的攻击目标在进行针对该法术的初次豁免检定时具有劣势。若你造成重击，其初次豁免检定自动失败。"
+					]
+				},
+				{
+					"ENG_name": "Spell Attacks",
+					"type": "entries",
+					"name": "法术攻击",
+					"entries": [
+						"若该法术需要进行法术攻击掷骰，则你的武器攻击掷骰取代之，且法术在命中时生效。"
+					]
+				},
+				{
+					"ENG_name": "Concentration",
+					"type": "entries",
+					"name": "专注",
+					"entries": [
+						"若该法术需要你的专注，你在它命中生效之后开始专注于它。"
+					]
+				},
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"若你施展的是戏法，你的攻击不会因该戏法造成额外伤害。作为替代，你的武器攻击造成该戏法的伤害类型，且该戏法中不造成伤害的效果将在命中时应用于目标。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "每回合一次，当你将要进行攻击时"
+				}
+			},
+			"foundryImg": "icons/skills/targeting/crosshair-triple-strike-orange.webp"
+		},
+		{
+			"ENG_name": "Arcane Regeneration",
+			"name": "奥术再生",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"从3级起，你可以专注于你的奥术知识来重燃魔法潜能。在一次短休期间，你可以恢复已消耗的、环阶合计等于你智力调整值的法术位（最少恢复一个1环法术位）。",
+				"一旦你以此法恢复法术位，你必须完成一次长休才能再次使用此特性。"
+			],
+			"foundrySystem": {
+				"activation.condition": "在短休期间"
+			},
+			"foundryImg": "icons/magic/life/cross-embers-glow-yellow-purple.webp"
+		},
+		{
+			"ENG_name": "Esoteric Order",
+			"name": "秘传结社",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"在3级时，选择最能体现你魔战士技艺的秘传结社：奥术师结社、魔射手结社、剑锋结社、龙骑士结社、破法者结社或守护者结社。",
+				"你的秘传结社会在3级时给予你特性，并在你到达本职业的7级、15级和20级时再次给予。",
+				{
+					"ENG_name": "Order Spells",
+					"type": "entries",
+					"name": "结社法术",
+					"entries": [
+						"大多数秘传结社都附带一份结社法术列表，你在结社描述所注明的魔战士等级习得这些法术。这些结社法术对你而言视为魔战士法术，但不计入你的魔战士已知法术数量。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 4,
+			"entries": [
+				"当你到达4级时，你可以将一项由你选择的属性值提升2点，或将两项由你选择的属性值各提升1点。如常，你不能通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 5,
+			"entries": [
+				"从5级起，每当你在自己的回合采取攻击动作时，你可以攻击两次而非一次。此外，若你用动作施展法术，你可以在同一回合用一个附赠动作进行一次武器攻击。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Mystic Spellstrike",
+			"name": "秘法法术打击",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 5,
+			"entries": [
+				"你经由武器攻击传导的法术为其注入了超乎寻常的精准。从5级起，当你使用法术打击时，你的攻击掷骰获得等同于所消耗法术位环阶的加值（戏法为+0）。",
+				"例如，消耗一个2环法术位，将为该次法术打击中的武器攻击掷骰提供+2加值。"
+			],
+			"foundrySystem": {
+				"properties.0": "concentration"
+			},
+			"foundryImg": "icons/skills/targeting/target-strike-triple-blue.webp"
+		},
+		{
+			"ENG_name": "Spellsight",
+			"name": "法术视觉",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 5,
+			"entries": [
+				"同样在5级时，你可以用一个动作唤醒你对30尺内魔法的感知，如同你施展了{@spell 侦测魔法}一般。此效果持续10分钟并需要你的专注。",
+				"你可以提前结束此感知，以获知你所触碰的一件物品的信息，如同你对它施展了{@spell 鉴定术}。",
+				"每次短休或长休你可以免费使用此特性一次，之后你必须消耗一个法术位才能再次使用。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-teal.webp"
+		},
+		{
+			"ENG_name": "Ethereal Step",
+			"name": "灵界之步",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 6,
+			"entries": [
+				"从6级起，你可以驾驭法术的残余之力，穿行于灵界。每回合一次，在你施展法术或使用法术打击之后，你可以立即传送到射程内一个你能看见的未被占据的空间。",
+				"传送距离由你消耗的法术位决定。戏法为10尺，且你所消耗法术位的每1环再增加10尺。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "每回合一次，在你施展法术或使用法术打击之后"
+				}
+			},
+			"foundryImg": "icons/magic/movement/trail-streak-pink.webp"
+		},
+		{
+			"ENG_name": "Esoteric Order Feature",
+			"name": "秘传结社特性",
+			"source": "LLMC",
+			"page": 4,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得一项由你的秘传结社给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以将一项由你选择的属性值提升2点，或将两项由你选择的属性值各提升1点。如常，你不能通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Spellsunder",
+			"name": "破法",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 9,
+			"entries": [
+				"你可以使用{@classFeature 法术打击|魔战士|LLMC|2}来斩落敌对法术。从9级起，当你看见一个生物施展将会影响到你的法术时，你可以用反应消耗一个法术位，并以一件{@classFeature 奥术武库|魔战士|LLMC|1}武器攻击正在生效的法术。",
+				"若该法术的施展环阶等于或低于你消耗的法术位环阶，则法术失败且不产生任何效果。若其施展环阶高于你消耗的法术位，则用你的武器进行一次攻击掷骰。若你的攻击掷骰超过12+该法术环阶的两倍，则法术失败且不产生任何效果。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "当你看见一个生物施展将影响你的法术时"
+				}
+			},
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-deflect-blue.webp"
+		},
+		{
+			"ENG_name": "Mystical Ward",
+			"name": "秘术守护",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 10,
+			"entries": [
+				"你能够在战斗中施展法术，同时避开其最强烈的效果。从10级起，你免疫自己所施展的任何魔战士法术的效果，除非你愿意受其影响。"
+			],
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp"
+		},
+		{
+			"ENG_name": "Arcane Conservation",
+			"name": "奥术守恒",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 11,
+			"entries": [
+				"从11级起，当你的法术打击未命中时，你可以恢复一个至少比所消耗法术位低一环的法术位。然而，若你如此做，则在此次法术打击之后你无法使用灵界之步。",
+				"在18级时，你恢复的法术位与你消耗的法术位同环阶。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "当你使用法术打击且武器攻击未命中时"
+				}
+			},
+			"foundryImg": "icons/magic/symbols/circle-ouroboros.webp"
+		},
+		{
+			"ENG_name": "Prismatic Strikes",
+			"name": "虹光打击",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 11,
+			"entries": [
+				"你的武器迸发出奥术魔法的虹光彩芒。从11级起，每当你以武库武器进行攻击时，你都可以使用法术打击施展一个魔战士戏法。当你如此做时，你的攻击还会造成1d8的额外伤害。"
+			],
+			"foundrySystem": {
+				"activation.type": "none"
+			},
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-purple.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以将一项由你选择的属性值提升2点，或将两项由你选择的属性值各提升1点。如常，你不能通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Superior Spellsunder",
+			"name": "高效破法",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 14,
+			"entries": [
+				"从14级起，若你视野内30尺内的一个生物成为某个你看得见正在施展的法术的目标，你可以用反应传送到该法术目标5尺内一个未被占据的空间，然后对那个敌对法术使用破法。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "当你可见的30尺内的生物被你看得见的法术指定为目标时"
+				}
+			},
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp"
+		},
+		{
+			"ENG_name": "Esoteric Order Feature",
+			"name": "秘传结社特性",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得一项由你的秘传结社给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以将一项由你选择的属性值提升2点，或将两项由你选择的属性值各提升1点。如常，你不能通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以将一项由你选择的属性值提升2点，或将两项由你选择的属性值各提升1点。如常，你不能通过此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Esoteric Order Feature",
+			"name": "秘传结社特性",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 20,
+			"entries": [
+				"在20级时，你获得一项由你的秘传结社给予的特性。"
+			]
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Arcane Regeneration",
+			"name": "奥术再生",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 3,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Arcane Regeneration",
+					"name": "奥术再生",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellsight",
+			"name": "法术视觉",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"level": 5,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Spellsight",
+					"properties.0": "concentration",
+					"name": "法术视觉",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Arcane Archer Spells",
+			"name": "魔射手法术",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 诱捕打击（变体）|llspell}, {@spell 棘雹术（变体）|llspell}"
+						],
+						[
+							"5级",
+							"{@spell 马友夫强酸箭||强酸箭}, {@spell 警戒箭阵（变体）|llspell}"
+						],
+						[
+							"9级",
+							"{@spell 万箭齐发（变体）|llspell}, {@spell 闪电箭矢（变体）|llspell}"
+						],
+						[
+							"13级",
+							"{@spell 秘法眼}, {@spell 元素灾厄|XGE}"
+						],
+						[
+							"17级",
+							"{@spell 探知术}, {@spell 迅捷箭袋（变体）|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/ammunition/arrow-broadhead-bent-teal.webp"
+		},
+		{
+			"ENG_name": "Arcane Quiver",
+			"name": "奥术箭袋",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"你已学会将魔战士的标志性附魔用于远程武器。你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以将装有弹药的箭袋加入你的武库。",
+						"你的武库中必须始终保有的那件武器，可以是远程武器而非近战武器。",
+						"你可以对属于你奥术武库的远程武器使用{@classFeature 法术打击|魔战士|LLMC|2}。但任何具有范围效应的法术都只能影响你的目标。"
+					]
+				}
+			],
+			"foundryImg": "icons/containers/ammunition/arrows-quiver-purple-gold.webp"
+		},
+		{
+			"ENG_name": "Eagle Eyed",
+			"name": "鹰眼锐目",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"entries": [
+				"训练已将你的目力磨砺至近乎超自然的境地。你获得察觉的熟练项，并且在你进行的任何察觉检定中，可以用智力代替感知。"
+			],
+			"foundryImg": "icons/creatures/eyes/humanoid-single-red-brown.webp"
+		},
+		{
+			"ENG_name": "Order of Arcane Archers",
+			"name": "魔射手结社",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"魔射手结社最初由一派精灵猎法师创立，这些被称为魔射手的魔战士是弓、箭与法术的大师。尽管大多数魔战士擅长近身作战，魔射手却从远处打击敌人，将魔法之箭如雨般倾泻在敌人头上。此结社的大多数成员是守护者，但也有一些魔射手外出冒险。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "魔射手法术|魔战士|LLMC|魔射手|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术箭袋|魔战士|LLMC|魔射手|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "鹰眼锐目|魔战士|LLMC|魔射手|LLMC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Enchanted Shot",
+			"name": "附魔射击",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"当你以一件远程{@classFeature 奥术武库|魔战士|LLMC|1}武器进行攻击掷骰且未命中时，你可以用反应以魔法令箭矢转向，重新对该攻击原目标60尺内、你可见的另一个目标进行该次攻击掷骰。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "当你以远程奥术武库武器进行攻击掷骰且未命中时"
+				},
+				"range": {
+					"value": 60,
+					"units": "ft"
+				}
+			},
+			"foundryImg": "icons/weapons/ammunition/arrowhead-glowing-blue.webp"
+		},
+		{
+			"ENG_name": "Ranged Transposition",
+			"name": "远距换位",
+			"source": "LLMC",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你可以用一个动作，为一件远程奥术武库武器注入咒唤魔法，并向其正常射程内你能看见的一点或一个生物发射一枚弹药。命中时，该远程攻击产生以下对应效果：",
+				{
+					"type": "list",
+					"items": [
+						"若射向一点，则在弹药命中时，你立即传送到弹药5尺内一个未被占据的空间。",
+						"若射向一个生物，目标必须进行一次魅力豁免，否则立即与你交换位置。若其没有空间取代你的位置，则此特性失败。"
+					]
+				},
+				"每次短休或长休你可以免费使用此特性一次，之后你必须消耗一个法术位才能再次使用。"
+			],
+			"foundryImg": "icons/magic/movement/trail-streak-impact-blue.webp"
+		},
+		{
+			"ENG_name": "Mystic Marksman",
+			"name": "秘法神射手",
+			"source": "LLMC",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用一个附赠动作进入高度专注的奥术凝聚状态，获得以下超自然益处：",
+				{
+					"type": "list",
+					"items": [
+						"你每进行一次远程武库攻击，都可以不使用反应地使用附魔射击，或使用灵界之步传送至多10尺。",
+						"每当你以远程奥术武库攻击命中时，你可以消耗一个法术位，造成每法术位环阶2d4的额外力场伤害。"
+					]
+				},
+				"此高度凝聚状态持续1分钟。若你陷入失能，或你用附赠动作结束它，则其提前结束。每次长休你可以免费使用此特性一次，之后你必须消耗一个5环法术位才能再次进入此状态。"
+			],
+			"foundryImg": "icons/weapons/bows/shortbow-recurve-yellow-blue.webp"
+		},
+		{
+			"ENG_name": "Arcane Library",
+			"name": "奥术书库",
+			"source": "LLMC",
+			"page": 5,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "奥术师",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"储存于你奥术武库中的任何知识都唾手可得。每当你进行智力属性检定，以回忆储存于你奥术武库中的书籍、典册或卷轴上的知识时，任何低于你魔战士等级的d20掷骰都视为等于你的魔战士等级。",
+				"此外，若你将一卷法术卷轴加入你的奥术武库，且其中含有你拥有对应环阶法术位的魔战士或法师法术，你可以将其毁去，把该法术加入你的法术书。你对法术书也可以如此处理：每当你进行武库仪式时，从该书中将一个法术加入你的法术书。"
+			],
+			"foundrySystem": {
+				"activation.type": null
+			},
+			"foundryImg": "icons/skills/trades/academics-book-study-runes.webp"
+		},
+		{
+			"ENG_name": "Arcane Spellbook",
+			"name": "奥术法术书",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "奥术师",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"与只记忆战斗用法术的其他魔战士不同，你保管着一本法术书，并可以从中准备法术：",
+				{
+					"ENG_name": "Spellbook",
+					"type": "entries",
+					"name": "法术书",
+					"entries": [
+						"你为自己精心制作了一本法术书。它的外观由你决定，但必须是一件能够存储书面信息的微型物品。其中记载着你已知的魔战士法术，外加三个来自魔战士或法师法术列表、由你选择的1环法术。",
+						"这本法术书及其中的法术取代你的已知法术。你可以忽略魔战士表中的那一栏。"
+					]
+				},
+				{
+					"ENG_name": "Preparing Spells",
+					"type": "entries",
+					"name": "准备法术",
+					"entries": [
+						"在一次长休期间，你可以花1小时研读你的法术书来准备法术。从这本法术书中选择数量等于你智力调整值+你魔战士等级一半（向下取整）的法术。准备期间，它们对你而言视为魔战士法术。"
+					]
+				},
+				{
+					"ENG_name": "Ritual Casting",
+					"type": "entries",
+					"name": "仪式施法",
+					"entries": [
+						"只要你的法术书中的法术带有仪式标签，即使你未准备该法术，也可以施展其仪式版本。"
+					]
+				},
+				{
+					"ENG_name": "Adding New Spells",
+					"type": "entries",
+					"name": "增添新法术",
+					"entries": [
+						"每当你获得一个魔战士等级，便将一个由你选择的魔战士或法师法术加入你的法术书。按照你的魔战士等级，它必须是你拥有对应环阶法术位的环阶。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-backed-silver-gold.webp"
+		},
+		{
+			"ENG_name": "Order of Arcanists",
+			"name": "奥术师结社",
+			"source": "LLMC",
+			"page": 5,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "奥术师",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"加入奥术师结社的魔战士，往往发现自己效力于法师及其他博学的奥术艺术从业者。大多数魔战士只为战斗之用研习魔法，而加入此结社者则探索奥术魔法更广泛的用途，甚至甘愿保管法术书、学习有助于其求知之旅的仪式。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术书库|魔战士|LLMC|奥术师|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术法术书|魔战士|LLMC|奥术师|LLMC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Esoteric Sight",
+			"name": "秘传视界",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "奥术师",
+			"subclassSource": "LLMC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的法术视觉已被你收集的秘传秘术所强化。当你使用法术视觉时，可在其30尺范围内获得以下由你选择的一项益处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得黑暗视觉，并能视破魔法黑暗。",
+						"你可以阅读并理解任何书面语言。",
+						"你可以看见隐形的生物与物件。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp"
+		},
+		{
+			"ENG_name": "Stored Spells",
+			"name": "储存法术",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "奥术师",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在一次长休期间，你可以进行一场1小时的仪式，以法术书中的法术填满你奥术武库中的空余槽位。每个法术占用相当于其环阶两倍的武库槽位，且你储存的所有法术的环阶总和不能超过你的智力调整值（最低为1）。",
+				"你可以以正常施法时间施展每个法术一次，而无须消耗法术位。一经施展，法术即消失。"
+			],
+			"foundryImg": "icons/equipment/wrist/bracer-ornate-gold-purple.webp"
+		},
+		{
+			"ENG_name": "Grand Arcanist",
+			"name": "大奥术师",
+			"source": "LLMC",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "奥术师",
+			"subclassSource": "LLMC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你所驾驭的奥术魔法足以与大法师比肩。你将一个6环和一个7环的法师法术（由你选择）加入你的法术书。你可以在每次长休之间各施展这些法术一次而无须消耗法术位。这些法术对你而言视为魔战士法术，并可用于法术打击。"
+			],
+			"foundryImg": "icons/equipment/head/hat-pointed-buckle-leather-purple.webp"
+		},
+		{
+			"ENG_name": "Art of the Dance",
+			"name": "舞艺",
+			"source": "LLMC",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"performance": true
+				}
+			],
+			"entries": [
+				"你结社的战斗风格是一门艺术。你获得表演的熟练项，且每当你进行表演检定时，可以用力量或敏捷代替魅力。",
+				"此外，若你未穿着任何护甲，你的护甲等级等于10+你的敏捷调整值+你的智力调整值。"
+			],
+			"foundryImg": "icons/magic/control/sihouette-hold-beam-green.webp"
+		},
+		{
+			"ENG_name": "Blade Dance",
+			"name": "剑舞",
+			"source": "LLMC",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"你能够进入你结社传奇的战斗恍惚状态\u2014\u2014剑舞。只要你未穿着重型护甲或未使用重型武器，你就可以用一个附赠动作进入剑舞。它持续1分钟，并给予你以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你的步行速度增加10尺。",
+						"你的护甲等级获得+1加值。",
+						"你将你的智力调整值（最低为+1）加到所有特技、运动和表演检定上。",
+						"每回合一次，当你以武库武器造成伤害时，你可以将其伤害骰（包括法术打击骰）掷骰两次，并使用较高的结果。"
+					]
+				},
+				"若你陷入{@condition 失能}、穿上重型护甲或使用重型武器、或你用附赠动作结束它，你的剑舞便告终止。一旦进入剑舞，你必须完成一次短休或长休才能再次进入。当此特性没有剩余使用次数时，你可以消耗一个1环或更高的法术位来再次进入剑舞。"
+			],
+			"foundryImg": "icons/skills/melee/maneuver-daggers-paired-orange.webp"
+		},
+		{
+			"ENG_name": "Blades Spells",
+			"name": "剑锋法术",
+			"source": "LLMC",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 强令对决（变体）|llspell}, {@spell 西风打击|XGE}"
+						],
+						[
+							"5级",
+							"{@spell 朦胧术}, {@spell 迷踪步}"
+						],
+						[
+							"9级",
+							"{@spell 元素武器}, {@spell 加速术}"
+						],
+						[
+							"13级",
+							"{@spell 火焰护盾}, {@spell 行动自如}"
+						],
+						[
+							"17级",
+							"{@spell 钢风斩（变体）|llspell}, {@spell 斩首之刃|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/symbols/chevron-elipse-circle-blue.webp"
+		},
+		{
+			"ENG_name": "Order of Blades",
+			"name": "剑锋结社",
+			"source": "LLMC",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"此结社的魔战士将毕生献予剑舞之艺。这种神秘的恍惚状态使魔战士涤除心中的一切情感与杂念，与剑合而为一。这种恍惚状态的大师便是魔法与钢铁交织的致命旋风。",
+				"依照传统，剑之魔战士一生只收一名弟子，将剑舞之艺倾囊相授。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "舞艺|魔战士|LLMC|剑锋|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "剑舞|魔战士|LLMC|剑锋|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "剑锋法术|魔战士|LLMC|剑锋|LLMC|3"
+				},
+				{
+					"ENG_name": "Blade Song & Dance",
+					"type": "inset",
+					"name": "剑歌与剑舞",
+					"entries": [
+						"剑锋结社的设计意图是对剑咏者概念的平衡演绎。若你允许兼职角色，魔战士的剑舞与法师的剑歌效果不会叠加。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fluid Steps",
+			"name": "流畅步",
+			"source": "LLMC",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 7,
+			"savingThrowProficiencies": [
+				{
+					"dex": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你结社对流畅与武技的重视磨砺了你的反应。你获得敏捷豁免的熟练项，并将你的熟练加值加到先攻掷骰上。",
+				"此外，你的{@subclassFeature 剑舞|魔战士|LLMC|剑锋|LLMC|3}护甲等级加值变为+2。"
+			],
+			"foundryImg": "icons/skills/movement/ball-spinning-blue.webp"
+		},
+		{
+			"ENG_name": "Deadly Dance",
+			"name": "致命之舞",
+			"source": "LLMC",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你已成为剑舞的大师，在此恍惚状态中，你获得以下额外益处：",
+				{
+					"ENG_name": "Evasion",
+					"type": "entries",
+					"name": "反射闪避",
+					"entries": [
+						"当你被迫进行一次以减半伤害为目的的敏捷豁免检定时，成功则不受伤，失败亦只受一半伤害。"
+					]
+				},
+				{
+					"ENG_name": "Greater Spellsunder",
+					"type": "entries",
+					"name": "高等破法",
+					"entries": [
+						"当你使用破法时，你将你的智力调整值（最低为+1）加到攻击掷骰上。"
+					]
+				},
+				{
+					"ENG_name": "Master of the Art",
+					"type": "entries",
+					"name": "舞艺大师",
+					"entries": [
+						"你的护甲等级加值变为+3。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp"
+		},
+		{
+			"ENG_name": "Master of Blades",
+			"name": "剑锋大师",
+			"source": "LLMC",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你已登上你结社的巅峰，被授予剑锋大师的头衔。只要你未穿着重型护甲或持握重型武器，你就永远被视为处于你的{@subclassFeature 剑舞|魔战士|LLMC|剑锋|LLMC|3}效果之下。",
+				"此外，当你在剑舞中采取{@action 攻击}动作时，你作为该动作的一部分进行一次额外攻击。"
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-purple.webp"
+		},
+		{
+			"ENG_name": "Draconic Companion",
+			"name": "龙伴",
+			"source": "LLMC",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"通过你结社的仪式，你的灵魂已与一头强大的龙伴绑定。它遵循以下规则：",
+				{
+					"ENG_name": "Draconic Essence",
+					"type": "entries",
+					"name": "龙伴精粹",
+					"entries": [
+						"选择强酸、寒冷、火焰、闪电或毒素之一，作为你龙伴的精粹。一经选定，除非借助古龙魔法，否则无法更改。此精粹决定了它的许多特性。"
+					]
+				},
+				{
+					"ENG_name": "Statistics",
+					"type": "entries",
+					"name": "数据",
+					"entries": [
+						"龙伴对你和你的盟友态度友善，并对你忠心耿耿。它使用本页的数据块，其中多处使用你的魔战士法术豁免DC、法术攻击调整值和熟练加值（PB）。尽管体型不小，它仍过于脆弱，无法承载任何生物作为骑手。"
+					]
+				},
+				{
+					"ENG_name": "Combat",
+					"type": "entries",
+					"name": "战斗",
+					"entries": [
+						"在战斗中，你的龙伴共享你的先攻，并在你的回合行动。你可以用一个附赠动作命令它采取其数据块中的一项动作或其他动作。当你采取攻击动作时，你可以放弃一次攻击来命令它进行攻击。它可以自行移动并使用其反应，但除非你下达命令，否则它只会采取回避动作。",
+						"若你陷入失能，你的龙伴将自行行动，并尽其所能保护你与它自身。"
+					]
+				},
+				{
+					"ENG_name": "Arcane Stasis",
+					"type": "entries",
+					"name": "奥术封存",
+					"entries": [
+						"只要你愿意，你可以如同附魔奥术武库中的物品一般附魔你的龙伴，从而能够将它召出与收回至你的武库。"
+					]
+				},
+				{
+					"ENG_name": "Death",
+					"type": "entries",
+					"name": "死亡",
+					"entries": [
+						"若你的龙伴的生命值降至0，它会像玩家角色一样进行死亡豁免检定。",
+						"若你的龙伴死亡，你可以进行一场1小时的仪式（可在短休或长休期间进行），以1点生命值将其复生。作为仪式的一部分，你可以消耗它的生命骰，如同进行短休一般，将这些生命值加到它恢复的生命值上。若你的龙伴死亡，你可以进行一场1小时的仪式（可在短休或长休期间进行），以1点生命值将其复生。作为仪式的一部分，你可以消耗它的生命骰，如同进行短休一般，将这些生命值加到它恢复的生命值上。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.type": null
+			},
+			"foundryImg": "icons/creatures/reptiles/serpent-horned-green.webp"
+		},
+		{
+			"ENG_name": "Dragon Knight Spells",
+			"name": "龙骑士法术",
+			"source": "LLMC",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术数量，且无法在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 吸收元素|XGE}, {@spell 命令术}"
+						],
+						[
+							"5级",
+							"{@spell 龙息术|XGE}, {@spell 守护之链}"
+						],
+						[
+							"9级",
+							"{@spell 元素武器}, {@spell 恐惧术}"
+						],
+						[
+							"13级",
+							"{@spell 支配野兽}, {@spell 元素灾厄|XGE}"
+						],
+						[
+							"17级",
+							"{@spell 启蒙术}, {@spell 咒唤巨龙（变体）|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-fire-breath-orange.webp"
+		},
+		{
+			"ENG_name": "Order of Dragon Knights",
+			"name": "龙骑士结社",
+			"source": "LLMC",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"这一传奇秘传结社的魔战士，其灵魂与一头龙伴绑定。他们运用远古魔法，为龙伴注入超越其年岁的龙族威能；而若羁绊足够深厚，他们便可以骑乘自己的龙伴，成为传说中的龙骑士。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙伴|魔战士|LLMC|龙骑士|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙魂|魔战士|LLMC|龙骑士|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙骑士法术|魔战士|LLMC|龙骑士|LLMC|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Wyrmsoul",
+			"name": "龙魂",
+			"source": "LLMC",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"你结社的秘传缚魂仪式为你的灵魂注入了一缕龙族之力。你学会说、读、写龙语\u2014\u2014巨龙的语言。",
+				"此外，当你施展一个造成强酸、寒冷、火焰、闪电或毒素伤害的法术时，你可以令其改为造成你龙伴精粹的伤害类型，而非原本的伤害类型。"
+			],
+			"foundryImg": "icons/creatures/reptiles/dragon-winged-blue.webp"
+		},
+		{
+			"ENG_name": "Greater Companion",
+			"name": "高等龙伴",
+			"source": "LLMC",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"龙伴通过你们的羁绊成长。你的龙伴体型变为中型。只要你为中型或更小，它便可承载你为骑手。不过，当有其他生物骑乘它时，它的飞行速度减半。",
+				"最后，你的龙伴的利爪攻击变为魔法攻击，且其伤害骰由d4改为d6。"
+			],
+			"foundryImg": "icons/creatures/reptiles/lizard-mouth-glowing-red.webp"
+		},
+		{
+			"ENG_name": "Elemental Breath",
+			"name": "元素吐息",
+			"source": "LLMC",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你的{@subclassFeature 龙伴|魔战士|LLMC|龙骑士|LLMC|3||龙伴}可以将其精粹凝聚为一道纯粹元素威能的爆发。它可以用一个动作呼出30尺锥形的元素吐息。该区域内的目标必须对你的魔战士法术豁免DC进行一次敏捷豁免。失败者受到{@damage 10d6}精粹伤害，成功者伤害减半。",
+				"你的龙伴可以使用其元素吐息的次数等于你的智力调整值（最低一次），并在完成一次长休后恢复所有已消耗的使用次数。",
+				"若其已无剩余次数，它可以消耗你的一个3环或更高的法术位来再次使用其元素吐息。"
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-ice-breath-blue.webp"
+		},
+		{
+			"ENG_name": "Mythic Companion",
+			"name": "神话龙伴",
+			"source": "LLMC",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你的龙族羁绊之力解放了龙伴的潜能。你的龙伴可以用一个动作改变体型，选择变为小型、中型或大型。",
+				"当它为大型时，在仅承载你一人为骑手时，其速度不再减半。",
+				"最后，每回合一次，当你命令你的龙伴攻击时，它可以进行两次利爪攻击而非一次。"
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-breath-purple.webp"
+		},
+		{
+			"ENG_name": "Grand Dragon Knight",
+			"name": "至高龙骑士",
+			"source": "LLMC",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你的传奇之力流经你们的羁绊，唤醒了龙伴的真正力量。你的龙伴改用超凡龙伴的数据块：",
+				{
+					"ENG_name": "Exalted Companion",
+					"type": "statblock",
+					"tag": "creature",
+					"name": "超凡龙伴",
+					"source": "LLMC",
+					"style": "inset"
+				}
+			],
+			"foundryImg": "icons/creatures/reptiles/dragon-horned-blue.webp"
+		},
+		{
+			"ENG_name": "Baleful Mark",
+			"name": "凶邪烙印",
+			"source": "LLMC",
+			"page": 11,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "破法者",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"在你的回合，你可以用一个附赠动作在一个你可见的生物身上放置凶邪烙印。它会一直留存，直到你烙印另一个生物、目标死亡，或被{@spell 解除魔法}、{@spell 移除诅咒}或类似法术移除。",
+				"此烙印只有你能看见，且在其存续期间，你获得以下所列益处：",
+				{
+					"type": "list",
+					"items": [
+						"只要你与你的烙印目标仍处于同一位面，你便知晓其确切方位。",
+						"你得知其施法属性，以及它所能施展的最高环阶法术的环阶（若有）。",
+						"若你的烙印目标在你的触及范围内尝试施展法术，你可以用你的反应对其进行一次借机攻击。",
+						"每当你对烙印目标造成伤害，其随后为维持{@status 专注}而进行的豁免检定均具有劣势。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.condition": null
+			},
+			"foundryImg": "icons/skills/targeting/crosshair-mark-rough-pink.webp"
+		},
+		{
+			"ENG_name": "Order of Spellbreakers",
+			"name": "破法者结社",
+			"source": "LLMC",
+			"page": 11,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "破法者",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"加入破法者结社的魔战士以达成目标时不留情面的执著而闻名。这个由奥术武者与猎法师组成的兄弟会，运用其结社的能力诛杀任何滥用魔法之力者。大多数破法者在执行裁决时有所甄别，但也有一些立誓摧毁一切使用奥术艺术之人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "凶邪烙印|魔战士|LLMC|破法者|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "破法者法术|魔战士|LLMC|破法者|LLMC|3"
+				},
+				{
+					"ENG_name": "Spellbreakers & other Mages",
+					"type": "inset",
+					"name": "破法者与其他法师",
+					"entries": [
+						"尽管大多数破法者对形形色色的法师怀有深深的不信任，但其中一些也会与其他施法者合作，追捕危险的敌人。",
+						"若你扮演的是破法者魔战士，而队伍中又有其他施法者，请务必达成某种约定，好让你们能够协作无间。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellbreaker Spells",
+			"name": "破法者法术",
+			"source": "LLMC",
+			"page": 11,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "破法者",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 灾祸术}, {@spell 侦测善恶}"
+						],
+						[
+							"5级",
+							"{@spell 目盲术/耳聋术}, {@spell 沉默术}"
+						],
+						[
+							"9级",
+							"{@spell 法术反制（变体）|llspell}, {@spell 防护法阵}"
+						],
+						[
+							"13级",
+							"{@spell 放逐术}, {@spell 欧提路克弹力法球||弹力法球}"
+						],
+						[
+							"17级",
+							"{@spell 驱逐善恶}, {@spell 异界誓缚}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/symbols/mask-metal-silver-white.webp"
+		},
+		{
+			"ENG_name": "Crippling Mark",
+			"name": "致残烙印",
+			"source": "LLMC",
+			"page": 11,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "破法者",
+			"subclassSource": "LLMC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"若你看见你的烙印目标在你30尺内进行属性检定或豁免检定，你可以用你的反应终结你的凶邪烙印，并令其该次掷骰具有劣势。",
+				"然而，当你以此方式终结凶邪烙印后，直到你完成一次长休，你都无法再烙印该生物。"
+			],
+			"foundryImg": "icons/skills/targeting/target-strike-gray.webp"
+		},
+		{
+			"ENG_name": "Mantle of Defense",
+			"name": "防御织衣",
+			"source": "LLMC",
+			"page": 11,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "破法者",
+			"subclassSource": "LLMC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你能坚定心神，以更好地抵御你所憎恨之敌的魔法。每当你的{@subclassFeature 凶邪烙印|魔战士|LLMC|破法者|LLMC|3||烙印目标}强迫你进行一次对抗法术或其他魔法效果的豁免检定时，你的该次掷骰获得等于你智力调整值（最低为+1）的加值。"
+			],
+			"foundrySystem": {
+				"actionType": "util",
+				"activation": {
+					"type": "special",
+					"condition": "每当你的烙印目标强迫你进行对抗法术或其他魔法效果的豁免检定时"
+				},
+				"formula": "max(1, @abilities.int.mod)"
+			},
+			"foundryImg": "icons/magic/defensive/shield-barrier-glowing-blue.webp"
+		},
+		{
+			"ENG_name": "Reflective Spellsunder",
+			"name": "反射破法",
+			"source": "LLMC",
+			"page": 11,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "破法者",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你可以运用结社的魔法，将敌人的魔法反射回其自身。当你使用{@classFeature 破法|魔战士|LLMC|9}并使法术失败时，你可以强迫施展该法术的生物成为其自身法术的新目标。",
+				"该法术使用施法者的法术攻击掷骰与法术豁免DC。若它需要{@status 专注}，则必须由你来专注维持。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "当你使用破法并使法术失败时"
+				}
+			},
+			"foundryImg": "icons/magic/defensive/shield-barrier-deflect-teal.webp"
+		},
+		{
+			"ENG_name": "Master Spellbreaker",
+			"name": "破法大师",
+			"source": "LLMC",
+			"page": 11,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "破法者",
+			"subclassSource": "LLMC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你已在结社中步步高升，成为无可匹敌的猎法师。你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"当你掷先攻时，只要你没有{@quickref 突袭||3||突袭}，便可以用{@subclassFeature 凶邪烙印|魔战士|LLMC|破法者|LLMC|3}烙印一个你可见的生物。",
+						"你以{@classFeature 法术打击|魔战士|LLMC|2}和{@classFeature 破法|魔战士|LLMC|9}对烙印目标进行的任何武器攻击掷骰均具有优势。",
+						"当你的法术打击攻击命中烙印目标时，你可以终结你的凶邪烙印，令你的攻击（包括法术）造成最大伤害。你如此做后，直到完成一次长休，你都无法再烙印该生物。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/targeting/target-strike-triple-blue.webp"
+		},
+		{
+			"ENG_name": "Order of Warders",
+			"name": "守护者结社",
+			"source": "LLMC",
+			"page": 12,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "守护者",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"加入守护者结社的魔战士几乎总是出于崇高的理由。他们把奥术天赋与其标志性的防御战斗风格相结合，担任法师、贵族及其他重要人物的护卫。尽管他们最终效忠于自己的结社，守护者们也是炽烈的朋友，会与盟友并肩对抗任何敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "守护者法术|魔战士|LLMC|守护者|LLMC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "守护者之链|魔战士|LLMC|守护者|LLMC|3"
+				}
+			],
+			"foundryImg": "icons/skills/melee/sword-shield-stylized-white.webp"
+		},
+		{
+			"ENG_name": "Warder Spells",
+			"name": "守护者法术",
+			"source": "LLMC",
+			"page": 12,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "守护者",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 强令对决（变体）|llspell}, {@spell 庇护术}"
+						],
+						[
+							"5级",
+							"{@spell 援助术}, {@spell 守护之链}"
+						],
+						[
+							"9级",
+							"{@spell 希望信标}, {@spell 生命转换|XGE}"
+						],
+						[
+							"13级",
+							"{@spell 魔邓肯忠犬||忠犬}, {@spell 防死结界}"
+						],
+						[
+							"17级",
+							"{@spell 防活物护罩}, {@spell 原力法阵}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-white-blue.webp"
+		},
+		{
+			"ENG_name": "Warder's Bond",
+			"name": "守护者之链",
+			"source": "LLMC",
+			"page": 12,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "守护者",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"armorProficiencies": [
+				{
+					"heavy": true
+				}
+			],
+			"entries": [
+				"你接受了你结社标志性守护风格的传授。你获得重型护甲的熟练项。此外，在一次长休结束时，你可以触碰一个自愿的生物，缔结一道神秘羁绊，将其指定为你的守护对象，直到你的下一次长休。",
+				"当你的守护对象被攻击指定为目标，或被迫进行豁免检定，而你在其10尺内时，你可以用反应立即与其交换位置，成为触发该次攻击或效果的目标。你必须能看见你的守护对象才能使用此反应。",
+				"在特定魔战士等级，此反应的距离会增加：7级（30尺）、15级（60尺），最终在20级时仅受你的视线所限。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "在一次长休结束时"
+				}
+			},
+			"foundryImg": "icons/magic/defensive/shield-barrier-blue.webp"
+		},
+		{
+			"ENG_name": "Arcane Aegis",
+			"name": "奥术庇护",
+			"source": "LLMC",
+			"page": 12,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "守护者",
+			"subclassSource": "LLMC",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以暂时将奥术之力注入你的{@subclassFeature 守护者之链|魔战士|LLMC|守护者|LLMC|3}以吸收伤害。当你使用守护者之链的反应并受到伤害时，你可以作为同一反应的一部分消耗一个法术位，使该伤害减少每法术位环阶{@scaledice 2d8|1-5|2d8}。",
+				"此外，每当你在你守护对象10尺内开始你的回合时，你可以给予你们其中一人等于你智力调整值（最低为1）的临时生命值。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"damage.parts": [
+					[
+						"max(1, @abilities.int.mod)",
+						"temphp"
+					]
+				],
+				"formula": "2d8"
+			},
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-pink.webp"
+		},
+		{
+			"ENG_name": "Bond Perfected",
+			"name": "完满之链",
+			"source": "LLMC",
+			"page": 12,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "守护者",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你羁绊的魔法已臻化境。当你使用你的{@subclassFeature 守护者之链|魔战士|LLMC|守护者|LLMC|3}反应时，你被视为对触发该次攻击或效果所受的任何伤害具有抗性。",
+				"此外，只要你处于守护对象10尺内，你们双方都免疫{@condition 魅惑}和{@condition 恐慌}状态。若你们其中一方处于魅惑或恐慌状态，且在距另一方10尺内，则该状态的效果被暂时压制，只要你们保持在10尺内。"
+			],
+			"foundryImg": "icons/magic/control/energy-stream-link-blue.webp"
+		},
+		{
+			"ENG_name": "High Warder",
+			"name": "至高守护者",
+			"source": "LLMC",
+			"page": 12,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "守护者",
+			"subclassSource": "LLMC",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你已升至守护者结社的最高阶位，成为受你保护者身后一道坚毅的奥术之盾。在每次长休结束时，你可以用{@subclassFeature 守护者之链|魔战士|LLMC|守护者|LLMC|3}将至多五个自愿的生物缔结为你的守护对象。你的守护者之链的其他所有规则对你依然适用。",
+				"此外，当你因守护对象被法术指定为目标而使用守护者之链的反应时，你可以作为同一反应的一部分使用{@classFeature 破法|魔战士|LLMC|9}。当你如此做时，你的破法攻击掷骰具有优势。若你的破法失败，你仍可以使用{@subclassFeature 奥术庇护|魔战士|LLMC|守护者|LLMC|7}来减少伤害。"
+			],
+			"foundrySystem": {
+				"activation.type": "special"
+			},
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"ENG_name": "Armorer Spells",
+			"name": "装甲师法术",
+			"source": "LLMC:E",
+			"page": 2,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "装甲师",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 强令对决（变体）|llspell}, {@spell 棘雹术（变体）|llspell}"
+						],
+						[
+							"5级",
+							"{@spell 匕首之云}, {@spell 灼热金属}"
+						],
+						[
+							"9级",
+							"{@spell 万箭齐发（变体）|llspell}, {@spell 加速术}"
+						],
+						[
+							"13级",
+							"{@spell 鬼斧神工}, {@spell 行动自如}"
+						],
+						[
+							"17级",
+							"{@spell 钢风斩（变体）|llspell}, {@spell 斩首之刃|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/tools/smithing/furnace-fire-metal-orange.webp"
+		},
+		{
+			"ENG_name": "Awakened Armory",
+			"name": "觉醒武库",
+			"source": "LLMC:E",
+			"page": 2,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "装甲师",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你可以用一个附赠动作消耗一个法术位来唤醒你的奥术武库，数量等于1+所耗法术位环阶的单手近战武器会自武库中显现，并在你所在空间中悬浮于你身周。",
+				"此效果持续1分钟，但若你用附赠动作结束它，或你陷入失能，则其提前结束。结束时，你空间中的所有武器返回你的武库。在你的武库处于觉醒状态期间，你获得以下益处与缺陷：",
+				{
+					"type": "list",
+					"items": [
+						"这些武器获得投掷（20/60）词条，且你以其进行攻击掷骰和伤害掷骰时使用智力。",
+						"悬浮的武器无法从你的战斗风格中获益，但它们可以用来进行法术打击。",
+						"你可以用一个动作，以悬浮于你空间中的每件武器各进行一次投掷武器攻击。",
+						"你可以用一个附赠动作召回任何被掷出的武库武器。它们会返回并悬浮于你的空间中。",
+						"你为维持法术专注而进行的任何豁免检定均具有劣势。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"properties.0": "concentration"
+			},
+			"foundryImg": "icons/weapons/thrown/shuriken-triple-purple.webp"
+		},
+		{
+			"ENG_name": "Mythic Swordsmith",
+			"name": "神话铸剑师",
+			"source": "LLMC:E",
+			"page": 2,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "装甲师",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"toolProficiencies": [
+				{
+					"smith's tools": true
+				}
+			],
+			"entries": [
+				"你的神话缔造者以亲手锻造战斗用剑而闻名，其学识已传承于你。你获得奥秘以及铁匠工具的熟练项。",
+				"每当你进行铁匠工具检定时，你可以将你的智力调整值（最低为+1）加到掷骰结果上。最后，你锻造任何武器所需的时间减半。"
+			],
+			"foundryImg": "icons/tools/smithing/hammer-maul-steel-grey.webp"
+		},
+		{
+			"ENG_name": "Order of Armorers",
+			"name": "装甲师结社",
+			"source": "LLMC:E",
+			"page": 2,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "装甲师",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"装甲师结社的魔战士自称是初代魔战士\u2014\u2014也就是那道日后演化为奥术武库的附魔的缔造者\u2014\u2014的门徒。尽管如今每个结社都共享这道附魔的知识，唯有装甲师能将其潜力发挥到极致。这些武者学会将奥术武库化作致命的投射武器召出，投入战斗。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神话铸剑师|魔战士|LLMC|装甲师|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "装甲师法术|魔战士|LLMC|装甲师|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "觉醒武库|魔战士|LLMC|装甲师|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Focus",
+			"name": "精通武库技法",
+			"source": "LLMC:E",
+			"page": 3,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "装甲师",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的标志性武库技法已成了你的第二天性。在使用觉醒武库时，你为维持专注而进行的豁免检定不再具有劣势。",
+				"此外，当你的觉醒武库生效期间，你的投掷武器的常规射程与最大射程变为（40/120）。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-blue.webp"
+		},
+		{
+			"ENG_name": "Dancing Parry",
+			"name": "飞舞招架",
+			"source": "LLMC:E",
+			"page": 3,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "装甲师",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在使用觉醒武库期间被攻击命中时，你可以用反应招架该打击。你对抗该攻击的护甲等级获得等于悬浮于你空间中武器数量的加值，从而可能使其错失。"
+			],
+			"foundrySystem": {
+				"ability": "int",
+				"formula": "max(1, @mod)"
+			},
+			"foundryImg": "icons/skills/melee/swords-parry-block-yellow.webp"
+		},
+		{
+			"ENG_name": "Mythic Strike",
+			"name": "神话打击",
+			"source": "LLMC:E",
+			"page": 3,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "装甲师",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以释放奥术武库中蕴藏的魔法来对付你的敌人。每回合一次，当你以一件奥术武库武器命中一个生物时，你可以终结该武器上的奥术武库附魔，使其向外爆发，掀起一阵奥术威能的爆炸。",
+				"目标20尺内由你选择的生物必须进行一次敏捷豁免，失败者受到8d6力场伤害，成功者伤害减半。"
+			],
+			"foundrySystem": {
+				"actionType": "save",
+				"activation": {
+					"type": "special",
+					"condition": "每回合一次，当你以奥术武库武器命中一个生物时"
+				},
+				"save": {
+					"ability": "dex",
+					"scaling": "spell"
+				},
+				"target": {
+					"value": 20,
+					"units": "ft",
+					"type": "sphere"
+				}
+			},
+			"foundryImg": "icons/skills/melee/blade-tip-energy-green.webp"
+		},
+		{
+			"ENG_name": "Arcane Conduit",
+			"name": "奥术导能",
+			"source": "LLMC:E",
+			"page": 3,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你放弃了魔战士惯常的武技，转而锤炼自己的肉身。当你未穿着护甲、未持握盾牌、也未持握武器时，你获得以下益处：",
+				{
+					"ENG_name": "Martial Arts",
+					"type": "entries",
+					"name": "武艺",
+					"entries": [
+						"你获得搏击战斗风格。若你已掌握它，则改为获得轻量战斗风格。此外，你的徒手打击进行攻击掷骰和伤害掷骰时，可以用敏捷代替力量。"
+					]
+				},
+				{
+					"ENG_name": "Arcane Fists",
+					"type": "entries",
+					"name": "奥术拳",
+					"entries": [
+						"你的徒手打击是魔法打击，可以用于你的法术打击攻击，并可满足你导能者法术的材料成分需求。"
+					]
+				},
+				{
+					"ENG_name": "Unarmored Defense",
+					"type": "entries",
+					"name": "无护甲防御",
+					"entries": [
+						"你的护甲等级等于10+你的敏捷与智力调整值。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue-green.webp"
+		},
+		{
+			"ENG_name": "Ascetic Resilience",
+			"name": "苦修韧性",
+			"source": "LLMC:E",
+			"page": 3,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你可以舍弃奥术武库的传统之力，转而以奥术坚韧性灌注自身。当你掷先攻时，你获得等于你奥术武库中未使用槽位数量的临时生命值。",
+				"你可以用一个附赠动作消耗一个1环或更高的法术位，以再次获得这些临时生命值。"
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Conduit Spells",
+			"name": "导能者法术",
+			"source": "LLMC:E",
+			"page": 3,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 脚底抹油}, {@spell 雷鸣斩（变体）|llspell}"
+						],
+						[
+							"5级",
+							"{@spell 朦胧术}, {@spell 印记斩（变体）|llspell}"
+						],
+						[
+							"9级",
+							"{@spell 致盲斩（变体）|llspell}, {@spell 加速术}"
+						],
+						[
+							"13级",
+							"{@spell 任意门}, {@spell 惊惧斩（变体）|llspell}"
+						],
+						[
+							"17级",
+							"{@spell 放逐斩（变体）|llspell}, {@spell 授予技能|XGE}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/unholy/hand-marked-pink.webp"
+		},
+		{
+			"ENG_name": "Order of Conduits",
+			"name": "导能者结社",
+			"source": "LLMC:E",
+			"page": 3,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"即便在魔战士之中，导能者结社也显得奇特而秘僻。这是一个将魔战士的奥术技法与武术相结合的武者教派。通过掌控自己的肉身，他们学会以奥术之力灌注自身，将魔战士的奇妙魔法直接经由肉体形态传导。其他魔战士须倚仗奥术武库，而这些被称作导能者之人，仅凭双拳与内在的奥术之力便能克敌制胜。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "导能者法术|魔战士|LLMC|导能者|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "苦修韧性|魔战士|LLMC|导能者|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术导能|魔战士|LLMC|导能者|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ethereal Arts",
+			"name": "灵界武艺",
+			"source": "LLMC:E",
+			"page": 4,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你将灵界魔法融入你标志性的武术风格。当你以徒手打击命中一个生物时，你可以将目标沿直线击退5尺（前提是其体型与你相同或更小），或立即传送到目标5尺内一个你能看见的未被占据的空间。",
+				"此外，你的徒手打击命中时现在造成1d8伤害。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "当你以徒手打击命中一个生物时"
+				},
+				"damage.parts": []
+			},
+			"foundryImg": "icons/magic/movement/trail-streak-zigzag-teal.webp"
+		},
+		{
+			"ENG_name": "Enchanted Physique",
+			"name": "附魔体魄",
+			"source": "LLMC:E",
+			"page": 4,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"header": 2,
+			"entries": [
+				"奥术魔法浸透了你的身体。当你拥有来自苦修韧性的临时生命值时，你获得对所有钝击、穿刺和挥砍伤害的抗性，且你为维持专注而进行的豁免检定具有优势。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "当你拥有来自苦修韧性的临时生命值时"
+				}
+			},
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp"
+		},
+		{
+			"ENG_name": "Ascended Conduit",
+			"name": "飞升导能者",
+			"source": "LLMC:E",
+			"page": 4,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以用一个附赠动作令奥术之力过载于你的肉身，解开你结社的真正力量。当你如此做时，你在接下来的1分钟内获得以下所列益处：",
+				{
+					"type": "list",
+					"items": [
+						"当你采取攻击动作且仅进行徒手打击时，你可以作为该攻击动作的一部分进行两次额外的徒手打击（共计四次攻击）。",
+						"你获得等同于你步行速度的飞行速度。",
+						"每当你以魔战士特性或法术传送时，你可以触碰一个体型与你相同（或更小）的生物并携其一同传送。这包括处于受擒状态的生物。"
+					]
+				},
+				"每次长休你可以免费使用此特性一次，之后你必须消耗一个5环法术位才能再次使用。"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-beam-blue.webp"
+		},
+		{
+			"ENG_name": "Hex Warrior",
+			"name": "咒剑武士",
+			"source": "LLMC:E",
+			"page": 4,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "咒剑",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你可以运用你结社的阴邪魔法唤醒一柄初生的咒剑。在一次长休期间，你可以进行一场黑暗的1小时仪式，将一件近战奥术武库武器转化为你的咒剑。直到你再次进行此仪式之前，它始终是你的咒剑，并获得以下益处：",
+				{
+					"ENG_name": "Enchanted Armament",
+					"type": "entries",
+					"name": "附魔军备",
+					"entries": [
+						"你以其进行攻击掷骰和伤害掷骰时，可以用智力代替力量或敏捷，且命中时，你可以选择使其造成暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Life Drain",
+					"type": "entries",
+					"name": "汲命",
+					"entries": [
+						"当你对一个非构装体或亡灵的敌对生物造成暗蚀伤害时，你可以汲取其生命，获得等于该伤害一半的临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Malevolent Curse",
+					"type": "entries",
+					"name": "恶毒诅咒",
+					"entries": [
+						"当你以咒剑攻击一个正处于咒剑法术效果影响下的生物时，你在d20掷出19或20即造成重击。"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/swords/greatsword-evil-green.webp"
+		},
+		{
+			"ENG_name": "Hexblade Spells",
+			"name": "咒剑法术",
+			"source": "LLMC:E",
+			"page": 4,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "咒剑",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 脆弱诅咒}, {@spell 激愤斩（变体）|llspell}"
+						],
+						[
+							"5级",
+							"{@spell 目盲术/耳聋术}, {@spell 造成恐惧|XGE}"
+						],
+						[
+							"9级",
+							"{@spell 降咒}, {@spell 敌群环绕}"
+						],
+						[
+							"13级",
+							"{@spell 咒缚之触|llspell}, {@spell 魅影杀手}"
+						],
+						[
+							"17级",
+							"{@spell 汲能术|XGE}, {@spell 灵魂裂解|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/swords/sword-flanged-lightning.webp"
+		},
+		{
+			"ENG_name": "Order of Hexblades",
+			"name": "咒剑结社",
+			"source": "LLMC:E",
+			"page": 4,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "咒剑",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"被称作咒剑的魔战士以阴邪诅咒强化自己的战斗技艺。这些武者驾驭暗影位面的黑暗之力，从敌人和怪物身上汲取生命精粹，以铸就他们自己的有意识武器。真正的咒剑为了在战场上与另一位技艺高超的武者交锋，无所不用其极。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "咒剑武士|魔战士|LLMC|咒剑|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "咒剑法术|魔战士|LLMC|咒剑|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Accursed Armory",
+			"name": "诅咒武库",
+			"source": "LLMC:E",
+			"page": 5,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "咒剑",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你储存从敌人身上汲取的生命，以此驱动你的阴邪魔法。当你使用咒剑的汲命时，你可以放弃获得临时生命值，转而将其作为生命精粹储存于你的奥术武库中。你奥术武库中的每个空置槽位可储存10点生命精粹。它们会一直留存，直到你将其用于以下能力：",
+				{
+					"ENG_name": "Sinister Spells",
+					"type": "entries",
+					"name": "阴邪法术",
+					"entries": [
+						"当你施展一个咒剑法术时，你可以消耗生命精粹而非法术位，每一环法术位消耗10点。你不能对以生命精粹施展的法术使用汲命。"
+					]
+				},
+				{
+					"ENG_name": "Vile Resilience",
+					"type": "entries",
+					"name": "邪秽韧性",
+					"entries": [
+						"若一个处于你某个咒剑法术效果影响下的生物强迫你进行豁免检定，你可以消耗10点生命精粹，令你的该次豁免掷骰具有优势。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/unholy/projectile-spear-glow-pink.webp"
+		},
+		{
+			"ENG_name": "Sinister Sentience",
+			"name": "阴邪意识",
+			"source": "LLMC:E",
+			"page": 5,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "咒剑",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你的黑暗魔法唤醒了咒剑中一缕阴邪的意识，赋予它以下所列的卑劣益处：",
+				{
+					"ENG_name": "Sentience",
+					"type": "entries",
+					"name": "灵智",
+					"entries": [
+						"你的咒剑获得10点智力、感知和魅力，拥有起初如你自身黑暗倒影般的人格，以及它自己的阵营。"
+					]
+				},
+				{
+					"ENG_name": "Telepathy",
+					"type": "entries",
+					"name": "心灵感应",
+					"entries": [
+						"你的咒剑懂得你会说的任何语言，并能听见60尺半径内的声音。它还能与该范围内的任何生物进行心灵感应交谈。"
+					]
+				},
+				{
+					"ENG_name": "Mental Bond",
+					"type": "entries",
+					"name": "精神联结",
+					"entries": [
+						"当你持握你的咒剑时，它会将其精神能力借予你。你可以同时专注两个法术，但其中一个必须是咒剑法术。然而，当你被迫进行维持专注的豁免检定时，你需要为两个法术进行同一次豁免检定，且具有劣势。"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/swords/greatsword-guard-split-eyes.webp"
+		},
+		{
+			"ENG_name": "Awakened Hexblade",
+			"name": "觉醒咒剑",
+			"source": "LLMC:E",
+			"page": 5,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "咒剑",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你已登上结社的巅峰，掌握了唤醒咒剑真正潜力的黑暗魔法。咒剑的智力、感知和魅力变为16，其听觉与心灵感应的范围也增至120尺。一旦完全成形，它便极不愿意在不同武器之间迁移，只有在更强大的宿主武器出现时才会自愿转移。",
+				"最后，你的咒剑对处于你咒剑法术效果影响下的生物获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以选择令法术打击伤害为暗蚀伤害。",
+						"其攻击无视对暗蚀伤害的抗性，并将暗蚀伤害的免疫视为抗性。"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/swords/sword-runed-glowing.webp"
+		},
+		{
+			"ENG_name": "Order of Shades",
+			"name": "暗影结社",
+			"source": "LLMC:E",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"这个由渗透者、刺客与间谍组成的隐秘结社，其魔战士运用他们的秘密能力，在冲突萌芽之前便将其终结。这些被称作暗影的武者专精幻术魔法，在阴影的掩护下如鱼得水。暗影魔战士只有在确信万无一失时才会出手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "暗影法术|魔战士|LLMC|暗影|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "黑暗裹纱|魔战士|LLMC|暗影|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "幽影视觉|魔战士|LLMC|暗影|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Shade Spells",
+			"name": "暗影法术",
+			"source": "LLMC:E",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 易容术}, {@spell 睡眠术}"
+						],
+						[
+							"5级",
+							"{@spell 行动无踪（变体）|llspell}, {@spell 目盲术/耳聋术}"
+						],
+						[
+							"9级",
+							"{@spell 催眠图纹（变体）|llspell}, {@spell 回避侦测}"
+						],
+						[
+							"13级",
+							"{@spell 预言术}, {@spell 高等隐形术}"
+						],
+						[
+							"17级",
+							"{@spell 假象术}, {@spell 篡改记忆}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/unholy/orb-swirling-teal.webp"
+		},
+		{
+			"ENG_name": "Shroud of Darkness",
+			"name": "黑暗裹纱",
+			"source": "LLMC:E",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你可以用一个动作以幻术魔法的裹纱包覆自身，持续1小时。在此裹纱存续期间，若你处于微光或黑暗区域，你可以用一个附赠动作变为{@condition 隐形}。此隐形持续至裹纱持续时间结束，但若你进行攻击、触碰、或强迫一个生物进行属性检定或豁免检定，则其提前结束。",
+				"一旦你召出裹纱，你必须完成一次短休或长休才能再次使用裹纱。当没有剩余使用次数时，你可以消耗一个1环或更高的法术位来再次召出你的黑暗裹纱。"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-power.webp"
+		},
+		{
+			"ENG_name": "Umbral Sight",
+			"name": "幽影视觉",
+			"source": "LLMC:E",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你受过黑暗中作战的训练。你获得60尺范围的{@sense 黑暗视觉}。若你已拥有来自其他特性的黑暗视觉，则你的黑暗视觉范围增加30尺。"
+			],
+			"foundryImg": "icons/magic/perception/shadow-stealth-eyes-purple.webp"
+		},
+		{
+			"ENG_name": "From the Shadows",
+			"name": "出自暗影",
+			"source": "LLMC:E",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你擅长在敌人猝不及防时将其击倒。当你以{@classFeature 法术打击|魔战士|LLMC|2}攻击命中一个{@quickref 突袭||3||突袭}的生物时，其针对该法术的豁免检定自动失败。",
+				"此外，若你在微光或黑暗中使用{@classFeature 灵界之步|魔战士|LLMC|6}，你所能传送的距离加倍。"
+			],
+			"foundryImg": "icons/skills/melee/strike-dagger-arcane-pink.webp"
+		},
+		{
+			"ENG_name": "Improved Shroud",
+			"name": "精通裹纱",
+			"source": "LLMC:E",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的魔法使你免受暗影生物的察觉。若你的{@subclassFeature 黑暗裹纱|魔战士|LLMC|暗影|LLMC:E|3}在你处于黑暗中时生效，则对任何依赖{@sense 黑暗视觉}来看你的东西而言，你都是{@condition 隐形}的。"
+			],
+			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp"
+		},
+		{
+			"ENG_name": "Cloud the Mind",
+			"name": "蒙蔽心智",
+			"source": "LLMC:E",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你能以强有力的幻术魔法渗入敌人的心智。你可以用一个动作，强迫30尺内一个你可见的生物对你的魔战士法术豁免DC进行一次智力豁免。豁免失败者将在1分钟内无法以任何方式看见、听见、嗅到或感知你。豁免成功者在24小时内免疫此效果。若你攻击、触碰、或强迫该生物进行属性检定或豁免检定，此效果立即结束。",
+				"你可以使用此特性的次数等于你的智力调整值（最低一次），并在完成一次长休后恢复所有使用次数。当没有剩余次数时，你可以消耗一个法术位来再次使用此特性。"
+			],
+			"foundryImg": "icons/magic/control/fear-fright-white.webp"
+		},
+		{
+			"ENG_name": "One with the Darkness",
+			"name": "与黑暗合一",
+			"source": "LLMC:E",
+			"page": 6,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你已登上结社的巅峰，能够与黑暗本身合而为一。你可以随意召出你的{@subclassFeature 黑暗裹纱|魔战士|LLMC|暗影|LLMC:E|3}，且在裹纱存续期间，你同时获得{@spell 隐形术}与{@spell 行动无踪（变体）|llspell|行动无踪}法术的效果，且无须{@status 专注}。",
+				"最后，你在自己的每个回合都可以用一个附赠动作传送至多60尺，到达一个你能看见、且处于微光或黑暗区域内的空间。"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-glow.webp"
+		},
+		{
+			"ENG_name": "Exploit Dice",
+			"name": "战技骰",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"法术剑士战技表展示了你拥有多少战技骰以使用你的战技。要使用一项战技，你须消耗一颗战技骰，且在完成一次短休或长休后，你恢复所有已消耗的战技骰。"
+			]
+		},
+		{
+			"ENG_name": "Martial Exploits",
+			"name": "武术战技",
+			"source": "LLMC:E",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你研习了各式武术战技，以增强你结社的魔法能力。你获得以下特性：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战技骰|魔战士|LLMC|法术剑士|LLMC:E|3"
+				},
+				{
+					"ENG_name": "High Degree",
+					"type": "entries",
+					"name": "最高位阶",
+					"entries": [
+						"你的魔战士等级限制了你能学习和使用的战技的位阶。此限制体现在法术剑士战技表的\"最高位阶\"一栏中。"
+					]
+				},
+				{
+					"ENG_name": "Exploits",
+					"type": "entries",
+					"name": "战技",
+					"entries": [
+						"你从{@class Alternate Fighter|LLAF|替代战士}可用的武术战技中由你选择学会两项。每次属性检定、攻击或豁免检定你只能使用一项战技，且你不能同时使用战技与法术打击。",
+						"每当你获得一个魔战士等级时，你可以用一个由你选择的另一项武术战技替换一项你已知的战技。"
+					]
+				},
+				{
+					"ENG_name": "Saving Throws",
+					"type": "entries",
+					"name": "豁免检定",
+					"entries": [
+						"若一项武术战技要求一个生物进行豁免检定，则使用你的魔战士法术豁免DC。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Order of Spellswords",
+			"name": "法术剑士结社",
+			"source": "LLMC:E",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"即便在魔战士之中也极为罕见，法术剑士结社的成员同时精通高超的剑术与魔法。他们将毕生奉献于对战斗卓越的追求，此外无他。结合结社的秘密魔法与高超武技，在正面交锋中鲜有武者能匹敌法术剑士的附魔之剑。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "武术战技|魔战士|LLMC|法术剑士|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "迅捷武库|魔战士|LLMC|法术剑士|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Swift Armory",
+			"name": "迅捷武库",
+			"source": "LLMC:E",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你操纵奥术武库的技艺与你操纵武器的技艺不相上下。你可以在你的每次攻击中取用武库，作为攻击的一部分召出与收走物品。"
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Mystic Precision",
+			"name": "秘法精准",
+			"source": "LLMC:E",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你将魔法与武技融于一炉。当你以武器攻击命中一个生物，并在同一回合对其发动法术打击攻击时，你的法术打击攻击掷骰获得等于所耗法术位环阶的加值（戏法为+0）。"
+			],
+			"foundryImg": "icons/skills/melee/strike-blade-knife-white-red.webp"
+		},
+		{
+			"ENG_name": "Ethereal Warrior",
+			"name": "灵界武者",
+			"source": "LLMC:E",
+			"page": 7,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"法术剑士并非靠开发新魔法，而是精通基本功的大师。每当你取用奥术武库时，你都可以使用灵界之步传送至多10尺。"
+			],
+			"foundryImg": "icons/magic/movement/trail-streak-pink.webp"
+		},
+		{
+			"ENG_name": "Arcane Blademaster",
+			"name": "奥术剑刃大师",
+			"source": "LLMC:E",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你是剑与法术双绝的神话大师。在你的每个回合一次，你可以使用一项你已知的武术战技而无须消耗战技骰，或对一项你已知的1环魔战士法术进行法术打击而无须消耗法术位。"
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-teal.webp"
+		},
+		{
+			"ENG_name": "Order of Travelers",
+			"name": "旅者结社",
+			"source": "LLMC:E",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "旅者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"许多人心目中被禁止的第九学派的修习者\u2014\u2014旅者结社的魔战士以时序魔法（即掌控时间的魔法）强化自己的技艺。随着对这些秘密魔法理解的加深，旅者逐渐脱离了自己在时间中的位置，转而成为守护时间之流的奇异漫游者。",
+				"传说中，有一些对时间魔法运用得出神入化的旅者，能召出未来的自己协助战斗，并提供来自未来的隐晦知识。你的旅者魔战士又将如何守护时间之流？",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "旅者法术|魔战士|LLMC|旅者|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "时序偏移|魔战士|LLMC|旅者|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "过去之视|魔战士|LLMC|旅者|LLMC:E|3"
+				},
+				{
+					"ENG_name": "Chronomancy: The Magic of Time",
+					"type": "inset",
+					"name": "时序魔法：掌控时间之法",
+					"entries": [
+						"将时间旅行引入任何故事\u2014\u2014尤其是结局由掷骰决定的游戏\u2014\u2014都可能带来风险。在扮演旅者魔战士之前，请与你的DM讨论这些特性的影响，尤其是DM将如何运作{@subclassFeature 召唤自我|魔战士|LLMC|旅者|LLMC:E|15}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Temporal Shift",
+			"name": "时序偏移",
+			"source": "LLMC:E",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "旅者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你可以短暂地拨动时间，挽回小小的失误或差错。当你的攻击掷骰未命中，或属性检定、豁免检定失败时，你可以用你的反应重掷你的d20。若你如此做，则必须使用新的掷骰结果。",
+				"你可以使用此反应的次数等于你的智力调整值（最低一次），并在完成一次长休后恢复所有使用次数。若没有剩余次数，你可以消耗一个法术位来再次使用此反应。"
+			],
+			"foundrySystem": {
+				"uses.max": "max(1, @abilities.int.mod)"
+			},
+			"foundryImg": "icons/magic/time/arrows-circling-pink.webp"
+		},
+		{
+			"ENG_name": "Traveler Spells",
+			"name": "旅者法术",
+			"source": "LLMC:E",
+			"page": 8,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "旅者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你在下表所注的魔战士等级习得特定法术。这些法术不计入你的已知法术总数，且不能在获得等级时替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"魔战士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3级",
+							"{@spell 脚底抹油}, {@spell 羽落术}"
+						],
+						[
+							"5级",
+							"{@spell 定身类人}, {@spell 朦胧术}"
+						],
+						[
+							"9级",
+							"{@spell 加速术}, {@spell 缓慢术}"
+						],
+						[
+							"13级",
+							"{@spell 放逐术}, {@spell 任意门}"
+						],
+						[
+							"17级",
+							"{@spell 定身怪物}, {@spell 篡改记忆}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/time/clock-stopwatch-white-blue.webp"
+		},
+		{
+			"ENG_name": "Visions of the Past",
+			"name": "过去之视",
+			"source": "LLMC:E",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "旅者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"history",
+							"investigation"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你学会了在当下看见过往事件的回响。你获得历史或调查其中之一的熟练项。",
+				"此外，若你在检定对象事件的发生地点进行历史或调查检定，则即使你原本不熟练也视为熟练。若你已熟练，则改为将双倍熟练加值加到你的属性检定结果上。"
+			],
+			"foundryImg": "icons/magic/time/day-night-sun-moon.webp"
+		},
+		{
+			"ENG_name": "Adrift in Time",
+			"name": "时流漂泊",
+			"source": "LLMC:E",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "旅者",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你已脱离了时间的流逝。你的年龄无法被法术或魔法改变，且每经过10年，你的肉身只衰老1岁。"
+			],
+			"foundryImg": "icons/magic/time/hourglass-brown-orange.webp"
+		},
+		{
+			"ENG_name": "Greater Shift",
+			"name": "高等偏移",
+			"source": "LLMC:E",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "旅者",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你对时序魔法的掌握使你能为周遭之人拨动时间。当30尺内一个你可见的生物攻击掷骰未命中，或属性检定、豁免检定失败时，你可以使用你的时序偏移反应。"
+			],
+			"foundryImg": "icons/magic/time/arrows-circling-green.webp"
+		},
+		{
+			"ENG_name": "Conjure Self",
+			"name": "召唤自我",
+			"source": "LLMC:E",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "旅者",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你可以用一个动作消耗一个3环或更高的法术位，召唤一个来自未来的自己来协助你。它在你身边期间遵循以下规则：",
+				{
+					"ENG_name": "Statistics",
+					"type": "entries",
+					"name": "数据",
+					"entries": [
+						"你的未来自我拥有与你相同的数据，包括属性值以及来自你的职业、种族或其他来源的特性。但你们共享你的法术位池。"
+					]
+				},
+				{
+					"ENG_name": "Combat",
+					"type": "entries",
+					"name": "战斗",
+					"entries": [
+						"在战斗中，你的未来自我共享你的先攻，并在你的回合行动。不过，它独立于你行动，并将竭尽所能协助你。"
+					]
+				},
+				{
+					"ENG_name": "Knowledge",
+					"type": "entries",
+					"name": "知识",
+					"entries": [
+						"你可以向你的未来自我提出一个关于未来的问题。它会依照通神术的准则作答。但其知识仅限于你在未来可能知晓之事，由DM裁定。"
+					]
+				},
+				{
+					"ENG_name": "Duration",
+					"type": "entries",
+					"name": "持续时间",
+					"entries": [
+						"1小时后，或当其生命值降至0时，你的未来自我返回属于它自己的时间。",
+						"你的当前时间中同时只能存在一个版本的你的未来自我。召唤第二个未来自我会使其他版本立即返回其所属时间。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/control/energy-stream-link-teal.webp"
+		},
+		{
+			"ENG_name": "Untethered Traveler",
+			"name": "无羁旅者",
+			"source": "LLMC:E",
+			"page": 9,
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "旅者",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你已掌握时序魔法的战斗应用。在每次长休之间一次，你可以施展{@spell 时间停止}而无须消耗法术位。若你的未来自我在射程内，它可以与你一同在法术效果期间行动。",
+				"当此特性没有剩余使用次数时，你可以消耗一个5环法术位来再次以此方式施展{@spell 时间停止}。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				},
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/magic/time/hourglass-yellow-green.webp"
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Ranged Transposition",
+			"name": "远距换位",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Ranged Transposition",
+					"name": "远距换位",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Mystic Marksman",
+			"name": "秘法神射手",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "魔射手",
+			"subclassSource": "LLMC",
+			"level": 20,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Mystic Marksman",
+					"name": "秘法神射手",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Blade Dance",
+			"name": "剑舞",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Blade Dance",
+					"name": "剑舞",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"seconds": 60
+					},
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "+10"
+						},
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+@scale.order-of-blade-dancers.dance-ac"
+						},
+						{
+							"key": "system.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "+max(1, @abilities.int.mod)"
+						},
+						{
+							"key": "system.skills.acr.bonuses.check",
+							"mode": "ADD",
+							"value": "+max(1, @abilities.int.mod)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fluid Steps",
+			"name": "流畅步",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "剑锋",
+			"subclassSource": "LLMC",
+			"level": 7,
+			"effects": [
+				{
+					"ENG_name": "Initiative Bonus",
+					"name": "先攻加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.init.bonus",
+							"mode": "ADD",
+							"value": "+@prof"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Elemental Breath",
+			"name": "元素吐息",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "龙骑士",
+			"subclassSource": "LLMC",
+			"level": 15,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "max(1, @abilities.int.mod)",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Elemental Breath",
+					"name": "元素吐息",
+					"type": "save",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"value": 30,
+						"units": "ft",
+						"type": "cone"
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "10d6"
+								}
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Umbral Sight",
+			"name": "幽影视觉",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "暗影",
+			"subclassSource": "LLMC",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.senses.darkvision",
+							"mode": "UPGRADE",
+							"priority": 19,
+							"value": 30
+						},
+						{
+							"key": "system.attributes.senses.darkvision",
+							"mode": "ADD",
+							"value": "+30"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Master Spellbreaker",
+			"name": "破法大师",
+			"source": "LLMC",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "破法者",
+			"subclassSource": "LLMC",
+			"level": 20,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Master Spellbreaker",
+					"name": "破法大师",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Arcane Conduit",
+			"name": "奥术导能",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Unarmored Defense",
+					"name": "无护甲防御",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "10 + @abilities.int.mod + @abilities.dex.mod"
+						},
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ascended Conduit",
+			"name": "飞升导能者",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "导能者",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Ascended Conduit",
+					"name": "飞升导能者",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Exploit Dice",
+			"name": "战技骰",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"system": {
+				"uses.max": "@flags.ll.exploit.number"
+			},
+			"activities": [
+				{
+					"ENG_name": "Roll",
+					"activation.type": "",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"roll.formula": "d@flags.ll.exploit.faces",
+					"name": "掷骰",
+					"type": "utility"
+				}
+			]
+		},
+		{
+			"ENG_name": "Martial Exploits",
+			"name": "武术战技",
+			"source": "LLMC:E",
+			"className": "魔战士",
+			"classSource": "LLMC",
+			"subclassShortName": "法术剑士",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Bounty Hunter Exploits",
+					"name": "赏金猎人战技",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "UPGRADE",
+							"value": "@scale.order-of-spellswords.exploit.number"
+						},
+						{
+							"key": "flags.ll.exploit.faces",
+							"mode": "UPGRADE",
+							"value": "@scale.order-of-spellswords.exploit.faces"
+						},
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + @abilities.int.mod"
+						}
+					]
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Draconic Companion",
+			"name": "龙伴",
+			"shortName": "龙伴",
+			"source": "LLMC",
+			"page": 8,
+			"summonedByClass": "魔战士（龙骑士）",
+			"size": [
+				"S"
+			],
+			"type": "dragon",
+			"alignment": [
+				"L"
+			],
+			"ac": [
+				{
+					"special": "14 + PB（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "5 + 五倍你的魔战士等级（你的龙伴拥有数量等于你魔战士等级的生命骰[d8]）"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 8,
+			"wis": 10,
+			"cha": 14,
+			"senses": [
+				"黑暗视觉60尺"
+			],
+			"passive": 10,
+			"immune": [
+				{
+					"special": "精粹类型"
+				}
+			],
+			"languages": [
+				"龙语",
+				"能听懂与其绑定的魔战士所说的任何语言"
+			],
+			"trait": [
+				{
+					"ENG_name": "Hit Dice",
+					"name": "生命骰",
+					"entries": [
+						"你的龙伴拥有数量等于你魔战士等级的{@dice d8}生命骰。它也获得短休与长休的所有正常益处。"
+					]
+				},
+				{
+					"ENG_name": "Soul Bond",
+					"name": "灵魂联结",
+					"entries": [
+						"当龙伴被迫进行属性检定或豁免检定时，它将你的PB加到其掷骰结果上。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Claw",
+					"name": "利爪",
+					"entries": [
+						"{@atk mw} {@hit +3 +PB}命中，触及5尺，单一目标。{@h}{@damage 1d4 +3 +PB}挥砍伤害，外加{@damage 1d4}精粹伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLMC/token/dc.webp"
+			},
+			"tokenCredit": "Ilse Gort",
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Exalted Companion",
+			"name": "超凡龙伴",
+			"shortName": "龙伴",
+			"source": "LLMC",
+			"page": 9,
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"alignment": [
+				"L"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 125,
+				"formula": "20d10 + 15"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 60
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 18,
+			"int": 14,
+			"wis": 10,
+			"cha": 18,
+			"senses": [
+				"盲视30尺",
+				"黑暗视觉60尺"
+			],
+			"passive": 16,
+			"immune": [
+				{
+					"special": "精粹类型"
+				}
+			],
+			"languages": [
+				"龙语",
+				"能听懂与其绑定的魔战士所说的任何语言。"
+			],
+			"trait": [
+				{
+					"ENG_name": "Hit Dice",
+					"name": "生命骰",
+					"entries": [
+						"龙伴拥有数量等于你魔战士等级的{@dice d10}生命骰。它也获得短休与长休的所有正常益处。"
+					]
+				},
+				{
+					"ENG_name": "Soul Bound",
+					"name": "灵魂之缚",
+					"entries": [
+						"你的龙伴进行的任何属性检定或豁免检定，都会加上你的PB。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"你的龙伴进行两次利爪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Change Size",
+					"name": "改变体型",
+					"entries": [
+						"你的龙伴改变体型，变为小型、中型或大型，直到它再次使用此特性。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "利爪",
+					"entries": [
+						"{@atk mw} {@hit +11}命中，触及5尺，单一目标。{@h}{@damage 2d6 +5}魔法挥砍伤害，外加{@damage 1d6}精粹伤害。"
+					]
+				},
+				{
+					"ENG_name": "Essence Breath {@recharge 5}",
+					"name": "精粹吐息 {@recharge 5}",
+					"entries": [
+						"你的龙伴可以在30尺锥形范围内呼出元素能量，迫使该区域内的所有生物进行一次敏捷豁免。失败者受到{@damage 12d6}精粹伤害，成功者伤害减半。",
+						"此特性取代你的{@subclassFeature 元素吐息|魔战士|LLMC|龙骑士|LLMC|15}特性。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLMC/token/ec.webp"
+			},
+			"tokenCredit": "Greg Rutkowski",
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"hasToken": true
+		}
+	]
+}
