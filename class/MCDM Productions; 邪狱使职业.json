@@ -1,0 +1,2476 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ILL",
+				"abbreviation": "ILL",
+				"full": "邪狱使职业",
+				"url": "https://shop.mcdmproductions.com/products/illrigger-class",
+				"version": "1.0.0",
+				"authors": [
+					"Matthew Colville",
+					"MCDM Productions"
+				],
+				"convertedBy": [
+					"Nexxom"
+				]
+			}
+		],
+		"edition": "classic",
+		"status": "deprecated",
+		"dateAdded": 1620498967,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "2af311e6cd"
+	},
+	"class": [
+		{
+			"ENG_name": "Illrigger",
+			"name": "邪狱使",
+			"source": "ILL",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"con",
+				"cha"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"athletics",
+								"deception",
+								"insight",
+								"intimidation",
+								"investigation",
+								"persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}和一面{@item 盾牌|phb}，或 (b) 两把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}",
+					"(a) 一件{@item 链甲衫|phb}或 (b) 一件{@item 皮甲|phb}、一把{@item 长弓|phb}和{@item 箭矢 (20)|phb|20支箭}",
+					"(a) 一个{@item 祭司套组|phb}或 (b) 一个{@item 地城套组|phb}",
+					"一枚{@item 圣徽|phb}、两把{@item 匕首|phb|匕首}和五支{@item 标枪|phb|标枪}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"盾牌|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"链甲衫|phb"
+						],
+						"b": [
+							"皮甲|phb",
+							"长弓|phb",
+							"箭矢 (20)|phb"
+						]
+					},
+					{
+						"a": [
+							"祭司套组|phb"
+						],
+						"b": [
+							"地城套组|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"item": "圣徽|phb",
+								"quantity": 1
+							},
+							{
+								"item": "匕首|phb",
+								"quantity": 2
+							},
+							{
+								"item": "标枪|phb",
+								"quantity": 5
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13,
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"炼狱交移骰"
+					],
+					"rows": [
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"叉舌|邪狱使|ILL|1",
+				"炼狱交移|邪狱使|ILL|1",
+				"战斗风格|邪狱使|ILL|2",
+				"极恶禁令|邪狱使|ILL|2",
+				"狱视力|邪狱使|ILL|3",
+				{
+					"classFeature": "极恶之契|邪狱使|ILL|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|邪狱使|ILL|4",
+				"额外攻击|邪狱使|ILL|5",
+				{
+					"classFeature": "极恶禁令提升|邪狱使|ILL|6",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "极恶之契提升|邪狱使|ILL|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|邪狱使|ILL|8",
+				{
+					"classFeature": "极恶之契提升|邪狱使|ILL|9",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "极恶禁令提升|邪狱使|ILL|10",
+					"gainSubclassFeature": true
+				},
+				"强化炼狱交移|邪狱使|ILL|11",
+				"属性值提升|邪狱使|ILL|12",
+				{
+					"classFeature": "极恶之契提升|邪狱使|ILL|13",
+					"gainSubclassFeature": true
+				},
+				"绝望灵光|邪狱使|ILL|14",
+				"召唤地狱|邪狱使|ILL|15",
+				"属性值提升|邪狱使|ILL|16",
+				{
+					"classFeature": "极恶之契提升|邪狱使|ILL|17",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "极恶禁令提升|邪狱使|ILL|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|邪狱使|ILL|19",
+				{
+					"classFeature": "极恶之契提升|邪狱使|ILL|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"subclassTitle": "极恶之契",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Illrigger",
+			"name": "邪狱使",
+			"source": "ILL",
+			"entries": [
+				{
+					"ENG_name": "The Illrigger",
+					"name": "邪狱使",
+					"source": "ILL",
+					"type": "section",
+					"entries": [
+						"统治着七宗城的大魔鬼们的密谋永无止息。他们每个人都策划着让其余人屈服，好登上地狱王座，统一七宗城和其中的每一个炼狱生物，然后带着无尽的魔鬼大军穿越时空，直到所有的世界都化为焦土。",
+						"他们麾下的精英突击队\u2014\u2014九狱的恐怖突击队\u2014\u2014便是{@i 邪狱使}。他们是九狱的骑士，是魅力超凡的反圣武士，驾驭魔鬼、瓦解敌方组织、统率九狱大军。",
+						{
+							"ENG_name": "The Order of Desolation",
+							"type": "entries",
+							"name": "墟寂教团",
+							"entries": [
+								"几千年前，九狱的统治者们做了一件不得了的事：合作。他们共同创建了墟寂教团\u2014\u2014骑士们发誓将以九狱为先，而将他们的宗主大魔鬼放在其次。",
+								"进入墟寂教团的人将成为所有邪狱使的战友，无论他们为哪位大魔鬼服务。每个大魔鬼都有着宏伟庙宇、地下神殿、秘密结社和邪恶教会，且这些组织的领导者们均狂热地效忠于赋予他们权力的大魔鬼们。但这个邪狱使组织自视凌驾于这些分裂七宗城的琐碎政治斗争之上。",
+								"墟寂教团的成员\u2014\u2014亦即墟寂行者，应当智力卓绝、足智多谋、善使战术、工于心计。庙宇或邪教或许会认为邪狱使出现在他们中间，是其大魔鬼认可其行径的标志，但邪狱使是独立自主的。成立该教团是为了让九狱的统治者们拥有能够横跨时空独立行动、不受宗主直接控制的能干特工。邪狱使拥有许多其宗主大魔鬼赋予的强大能力，更难能可贵的是，他们获得了宗主的信任。每个邪狱使都需要在没有指导或监督的前提下散播龃龉、痛苦、冲突、谎言和恐惧。",
+								"因此，墟寂行者在求助于任何侍奉自己宗主大魔鬼的教会、邪教或庙宇以前，先依靠教团的其他成员\u2014\u2014即便那些邪狱使侍奉的是别的大魔鬼\u2014\u2014的情况也屡见不鲜。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Architect of Ruin",
+			"name": "筑灭师",
+			"shortName": "筑灭师",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"spellcastingAbility": "cha",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				3,
+				5,
+				5,
+				8,
+				9,
+				10,
+				12,
+				14,
+				14,
+				14,
+				14,
+				15,
+				15,
+				15,
+				15,
+				16,
+				16
+			],
+			"subclassSpells": [
+				"颤栗之触",
+				"舞光术",
+				"火焰箭",
+				"光亮术",
+				"传讯术",
+				"次级幻象",
+				"冷冻射线",
+				"奇术",
+				"克敌先击",
+				"魅惑类人",
+				"七彩喷射",
+				"命令术",
+				"通晓语言",
+				"侦测魔法",
+				"易容术",
+				"炼狱叱喝",
+				"狱之笞|ill",
+				"虔诚护盾",
+				"无声幻影|ill",
+				"戕狱对决|ill",
+				"卜筮术",
+				"朦胧术",
+				"黑暗术",
+				"注目术",
+				"定身类人",
+				"隐形术",
+				"次等复原术",
+				"衰弱射线",
+				"暗示术",
+				"解除魔法",
+				"恐惧术",
+				"飞行术",
+				"高等幻影",
+				"魅影驹",
+				"移除诅咒",
+				"回生术",
+				"炼狱之尘|ill",
+				"巧言术",
+				"吸血鬼之触",
+				"放逐术",
+				"枯萎术",
+				"防死结界",
+				"任意门",
+				"预言术",
+				"高等隐形术",
+				"幻景",
+				"魅影杀手",
+				"亵渎灵光|ill",
+				"异界探知",
+				"驱逐善恶",
+				"托梦术",
+				"定身怪物",
+				"假象术",
+				"死灭墙|ill",
+				"死亡法阵",
+				"群体暗示术",
+				"异界誓盟",
+				"预置幻影"
+			],
+			"subclassTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|subclass=邪狱使：筑灭师（ILL）}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=邪狱使：筑灭师（ILL）}",
+						"{@filter 2nd|spells|level=2|subclass=邪狱使：筑灭师（ILL）}",
+						"{@filter 3rd|spells|level=3|subclass=邪狱使：筑灭师（ILL）}",
+						"{@filter 4th|spells|level=4|subclass=邪狱使：筑灭师（ILL）}",
+						"{@filter 5th|spells|level=5|subclass=邪狱使：筑灭师（ILL）}",
+						"{@filter 6th|spells|level=6|subclass=邪狱使：筑灭师（ILL）}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"筑灭师|邪狱使|ILL|筑灭师|ILL|3",
+				"九狱魔师|邪狱使|ILL|筑灭师|ILL|6",
+				"法术大师|邪狱使|ILL|筑灭师|ILL|7",
+				"瞬发幻象|邪狱使|ILL|筑灭师|ILL|9",
+				"屈服！|邪狱使|ILL|筑灭师|ILL|10",
+				"仅凭意志|邪狱使|ILL|筑灭师|ILL|13",
+				"阿斯蒙蒂斯之赐|邪狱使|ILL|筑灭师|ILL|17",
+				"魔法抗性|邪狱使|ILL|筑灭师|ILL|18",
+				"学识魔鬼|邪狱使|ILL|筑灭师|ILL|20"
+			]
+		},
+		{
+			"ENG_name": "Painkiller",
+			"name": "恐惧屠戮者",
+			"shortName": "恐惧屠戮者",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassFeatures": [
+				"恐惧屠戮者|邪狱使|ILL|恐惧屠戮者|ILL|3",
+				"吾即死亡|邪狱使|ILL|恐惧屠戮者|ILL|6",
+				"扼喉|邪狱使|ILL|恐惧屠戮者|ILL|7",
+				"念动缄印|邪狱使|ILL|恐惧屠戮者|ILL|9",
+				"狱之怒|邪狱使|ILL|恐惧屠戮者|ILL|10",
+				"吾令汝命|邪狱使|ILL|恐惧屠戮者|ILL|13",
+				"钢铁心智|邪狱使|ILL|恐惧屠戮者|ILL|17",
+				"终死击|邪狱使|ILL|恐惧屠戮者|ILL|18",
+				"痛楚魔鬼|邪狱使|ILL|恐惧屠戮者|ILL|20"
+			]
+		},
+		{
+			"ENG_name": "Shadowmaster",
+			"name": "影宗",
+			"shortName": "影宗",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassFeatures": [
+				"影宗|邪狱使|ILL|影宗|ILL|3",
+				"终亡印记|邪狱使|ILL|影宗|ILL|6",
+				"不懈|邪狱使|ILL|影宗|ILL|7",
+				"徒留追忆|邪狱使|ILL|影宗|ILL|9",
+				"他即黑暗|邪狱使|ILL|影宗|ILL|10",
+				"反射闪避|邪狱使|ILL|影宗|ILL|13",
+				"幽影杀手|邪狱使|ILL|影宗|ILL|17",
+				"狱影刺客|邪狱使|ILL|影宗|ILL|18",
+				"幽影形态|邪狱使|ILL|影宗|ILL|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Forked Tongue",
+			"name": "叉舌",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 1,
+			"entries": [
+				"你口齿伶俐，最懂如何拿捏听者的心思。每当你进行一次游说、欺瞒或威吓的属性检定时，你可以将d20掷骰结果7或更低视为8。此外，你学会炼狱语。"
+			]
+		},
+		{
+			"ENG_name": "Infernal Conduit",
+			"name": "炼狱交移",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 1,
+			"entries": [
+				"你的体内蕴藏着一池炼狱之力，在你完成长休后恢复。这一力量池以骰子表示，1级时起始于{@dice 1d10}。你的力量池随邪狱使等级提升而获得更多骰子，如邪狱使表格所示。你可以用这些骰子在你的邪狱使与其他目标之间转移生命值\u2014\u2014以自身健康为代价治疗盟友，或汲取敌人的生命之力来恢复自身活力。",
+				"作为一个动作，从你剩余的骰子池中选择任意数量的骰子并接触另一个生物。若该生物不愿意，则这是一次你具有熟练项的近战法术攻击，并以魅力作为你的施法属性。若你未命中，则无事发生\u2014\u2014你不掷骰，也不会失去池中的骰子。若你命中，或你以一个自愿生物为目标，则掷出所选择的骰子。",
+				"你的掷骰结果即你转移的生命值数量。若你接触的是盟友，其恢复等量的生命值，超出其生命值上限的部分不予计算。你失去等同于其恢复数量的生命值。若你的牺牲使你的生命值降至0，你将陷入昏迷。",
+				"若你接触的是敌人，其受到等同于你掷骰结果的暗蚀伤害，而你恢复等量的生命值。若你将获得超出生命值上限的生命值，则改为获得该数量的临时生命值。"
+			]
+		},
+		{
+			"ENG_name": "Baleful Interdict",
+			"name": "极恶禁令",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 2,
+			"entries": [
+				"当你达到2级时，你学会以九狱之力责难其他生物。以一个附赠动作，你可以将一枚缄印放置在一个位于你30尺内、你能看见的目标身上。你可以如此做的次数等于你的魅力调整值。当你完成短休或长休后，你重获所有缄印。",
+				"当你或一名盟友以任意攻击命中一个你可见的、身上带有至少一枚你缄印的目标时，你可以以自由动作焚灭缄印，使该攻击对目标额外造成每枚被焚灭缄印{@dice 2d6}点暗蚀伤害。若你位于目标30尺内，你的缄印每造成1颗伤害骰的伤害，你便恢复2点生命值。",
+				"身上带有缄印的生物是{@b 受禁生物}。",
+				"缄印若在1分钟内未被使用便会消散。只有施加缄印的邪狱使知道它的存在；在邪狱使眼中，它是该生物额头上一个发光的符文。若一个身上带有你任意缄印的生物死亡，你可以将其所有缄印移到距离内的另一个生物身上。"
+			]
+		},
+		{
+			"ENG_name": "Bravado",
+			"name": "傲慢",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 2,
+			"entries": [
+				"当你未穿着任何护甲时，你的护甲等级等于10 + 你的敏捷调整值 + 你的魅力调整值。你可以使用盾牌并仍然获得此增益。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 2,
+			"entries": [
+				"在2级，你选择一种邪狱使战斗风格：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refClassFeature",
+							"classFeature": "背信|邪狱使|ILL|2"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "傲慢|邪狱使|ILL|2"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "诡计|邪狱使|ILL|2"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "欺诈|邪狱使|ILL|2"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Lies",
+			"name": "欺诈",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 2,
+			"entries": [
+				"当你以一把双手近战武器攻击时，你的攻击检定与伤害掷骰都可以使用你的魅力调整值，而非力量调整值。"
+			]
+		},
+		{
+			"ENG_name": "Schemes",
+			"name": "诡计",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 2,
+			"entries": [
+				"当你单手持握一把近战武器且不持握其他武器时，你可以在一个邻近敌人攻击你之后，以你的反应移动到该攻击敌人5尺内任何其他未被占据的空间。此移动不会引发借机攻击。"
+			]
+		},
+		{
+			"ENG_name": "Treachery",
+			"name": "背信",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 2,
+			"entries": [
+				"当你攻击一个身边没有你任何盟友邻近的敌人时，你的伤害掷骰获得+3加值。"
+			]
+		},
+		{
+			"ENG_name": "Diabolic Contract",
+			"name": "极恶之契",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 3,
+			"entries": [
+				"当你达到3级时，你与你的大魔鬼签署一份极恶之契，受邀加入墟寂教团。你获得招引威权能力，并从恐惧屠戮者（迪斯帕特Dispater）、影宗（摩洛克Moloch）或筑灭师（阿斯蒙蒂斯Asmodeus）中选择其一作为你的大魔鬼。",
+				"此外，你名列九狱骑士册上的贵族骑士，在九狱游历的任何地方\u2014\u2014即便是由敌对大魔鬼统治的城市\u2014\u2014都将获得优待与礼遇。时空中更为国际化的都市\u2014\u2014比如合金城，即黄铜之城\u2014\u2014亦会尊重你的贵族身份。",
+				{
+					"type": "refClassFeature",
+					"classFeature": "招引威权|邪狱使|ILL|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Hellsight",
+			"name": "狱视力",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 3,
+			"entries": [
+				"当你达到3级时，你对欺瞒的精通使你轻易识破隐匿法术的使用。作为一个动作，你将你的感知向外延伸。直到你的下个回合结束，你知晓60尺内使用魔法隐藏或伪装自己的生物的位置。",
+				"你可以使用此特性的次数等于你的魅力调整值。当你完成长休后，你重获所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Invoke Authority",
+			"name": "招引威权",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 3,
+			"entries": [
+				"你招引你的大魔鬼授予你的威权，引导凶邪能量来驱动魔法效应。你的大魔鬼提供的每个招引威权选项都说明了如何使用它",
+				"当你使用招引威权时，你选择要使用的选项。一旦你使用此特性，你必须完成一次长休才能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法以此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 5,
+			"entries": [
+				"从5级开始，当你在自己的回合执行攻击动作时，你可以攻击两次，而非一次"
+			]
+		},
+		{
+			"ENG_name": "Baleful Interdict Improvement",
+			"name": "极恶禁令提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 6,
+			"entries": [
+				"在6级，由于你的契约，你的禁令携带着更强的力量。"
+			]
+		},
+		{
+			"ENG_name": "Diabolic Contract Improvement",
+			"name": "极恶之契提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 7,
+			"entries": [
+				"在7级，你从你的极恶之契中获得额外的力量。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法以此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Diabolic Contract Improvement",
+			"name": "极恶之契提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 9,
+			"entries": [
+				"在9级，你从你的极恶之契中获得额外的力量。"
+			]
+		},
+		{
+			"ENG_name": "Baleful Interdict Improvement",
+			"name": "极恶禁令提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 10,
+			"entries": [
+				"当你达到10级时，你感到你与大魔鬼的联系增强了。你的缄印额外造成{@dice 1d6}点伤害。",
+				"你的契约也为你的禁令提供了额外的力量。"
+			]
+		},
+		{
+			"ENG_name": "Improved Infernal Conduit",
+			"name": "强化炼狱交移",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 11,
+			"entries": [
+				"从11级开始，除汲取敌人的生命之力外，你还可以使其承受一层力竭。该力竭可如常恢复。若目标已承受三层或更多力竭，或你的骰子池中已没有剩余骰子，此能力无效，且你不能选择以施加力竭{@i 取代}汲取生命。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法以此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Diabolic Contract Improvement",
+			"name": "极恶之契提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 13,
+			"entries": [
+				"在13级，你从你的极恶之契中获得额外的力量。"
+			]
+		},
+		{
+			"ENG_name": "Aura of Despair",
+			"name": "绝望灵光",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 14,
+			"entries": [
+				"从14级开始，你散发着一种邪恶的魔法灵光。每当一个位于你15尺内的敌对生物进行攻击检定或豁免检定时，它必须掷{@dice 1d4}并从结果中减去所掷出的数字。"
+			]
+		},
+		{
+			"ENG_name": "Summon Hell",
+			"name": "召唤地狱",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 15,
+			"entries": [
+				"从15级开始，以一个动作，你可以召唤一只骨魔为你服务1分钟。该魔鬼出现在30尺内一处未被占据的空间中。它受你束缚，必须尽其所能服从你的命令。它与你在同一先攻顺位上行动，并且在你召唤它的那个回合即可行动和移动。若你死亡或陷入昏迷，该魔鬼返回九狱。一旦你使用此特性，你必须等待1周才能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法以此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Diabolic Contract Improvement",
+			"name": "极恶之契提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 17,
+			"entries": [
+				"在17级，你从你的极恶之契中获得额外的力量。"
+			]
+		},
+		{
+			"ENG_name": "Baleful Interdict Improvement",
+			"name": "极恶禁令提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 18,
+			"entries": [
+				"在18级，由于你的契约，你的禁令携带着更强的力量。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。如常，你无法以此特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Diabolic Contract Improvement",
+			"name": "极恶之契提升",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"level": 20,
+			"entries": [
+				"在20级，你从你的极恶之契中获得终极的力量。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Architect of Ruin",
+			"name": "筑灭师",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 3,
+			"entries": [
+				"阿斯蒙蒂斯统治着修罗场\u2014\u2014恐惧之城。他的邪狱使们在时间线中穿梭，搜罗隐秘和法术以欺骗恐吓敌人。他与其他大魔鬼的战争建立在欺瞒与宣传之上。",
+				"修罗场的邪狱使致力于让九狱的敌人显得寡不敌众、措手不及。他们的战略一半是研究与渗透，另一半是幻象与宣传。当筑灭师最终与敌人正面交锋时，敌人眼中所见的筑灭师大军强大得不可思议，而自己的盟友背叛自己、麾下军队望风而逃。",
+				{
+					"type": "entries",
+					"name": "毁灭戒律",
+					"entries": [
+						"九狱的筑灭师在加入墟寂教团时向阿斯蒙蒂斯立下誓言。誓言要求他们通过制造恐惧与散播猜疑来摧毁阿斯蒙蒂斯之敌。",
+						{
+							"type": "entries",
+							"name": "心灵的战场",
+							"entries": [
+								"待我的大军与你对阵之时，你将满心恐惧，怀疑自己的力量。我根本无需亲自动手，便能将你击败。"
+							],
+							"ENG_name": "The Battlefield of the Mind."
+						},
+						{
+							"type": "entries",
+							"name": "适当的秘密",
+							"entries": [
+								"一旦我知晓了你的秘密，我就知道你惧怕什么。"
+							],
+							"ENG_name": "The Proper Secret."
+						},
+						{
+							"type": "entries",
+							"name": "知识就是力量",
+							"entries": [
+								"学识与钢铁一样强大。我会了解敌人的每一个细节，如此一来，当我出手时，我将知晓他们的每一步行动。棋局尚未开始，他们便已被将死。"
+							],
+							"ENG_name": "Knowledge Is Power."
+						},
+						{
+							"type": "entries",
+							"name": "感知即现实",
+							"entries": [
+								"幻象{@i 同样}与钢铁一样强大。我会散播如此多关于我自身力量的谣言，你的朋友将弃你而去，你的士兵将瑟瑟发抖。就算没有一句是真的又如何？何况其中有些是真的......"
+							],
+							"ENG_name": "Perception Is Reality."
+						}
+					],
+					"ENG_name": "Tenets of Ruin"
+				},
+				{
+					"type": "entries",
+					"name": "与阿斯蒙蒂斯之契",
+					"entries": [
+						"阿斯蒙蒂斯的战斗法师必须既能挫败敌人的法术，也能挫败敌人的计划。",
+						{
+							"type": "entries",
+							"name": "招引威权：奥法老兵",
+							"entries": [
+								"当你的一次对抗法术的豁免检定失败时，你可以以反应改为检定成功。"
+							],
+							"ENG_name": "Invoke Authority: Veteran of Sorcery."
+						},
+						{
+							"type": "entries",
+							"name": "招引威权：破法者",
+							"entries": [
+								"你呼求阿斯蒙蒂斯的威权来保护你免受敌人魔法的伤害。每当你成为{@spell 魔法飞弹}法术、直线形法术或需要远程攻击检定的法术的目标时，掷一个{@dice d6}。掷出1到5时，你不受影响。掷出6时，你不受影响，且该效应如同源自你一般反射回施法者，使施法者反成目标。"
+							],
+							"ENG_name": "Invoke Authority: Spellbreaker."
+						}
+					],
+					"ENG_name": "Contract with Asmodeus"
+				},
+				{
+					"type": "entries",
+					"name": "施法",
+					"entries": [
+						"当阿斯蒙蒂斯接纳你为一名筑灭师时，你获得接触他的炼狱之力的途径，并学会引动神圣魔法来施展邪狱使法术。",
+						{
+							"type": "entries",
+							"name": "戏法",
+							"entries": [
+								"你从邪狱使法术列表中选择两个戏法。在8级时，你额外学会一个戏法。"
+							],
+							"ENG_name": "Cantrips."
+						},
+						{
+							"type": "entries",
+							"name": "法术位",
+							"entries": [
+								"筑灭师施法表格展示了你拥有的法术位数量。要施展这些法术之一，你必须消耗一个该法术环阶或更高环阶的法术位。当你完成长休后，你重获所有已耗用的法术位。"
+							],
+							"ENG_name": "Spell Slots."
+						},
+						{
+							"type": "entries",
+							"name": "1环及更高环阶的已知法术",
+							"entries": [
+								"你准备可以施展的邪狱使法术列表，从邪狱使法术列表中选择。当你如此做时，选择的邪狱使法术数量等于你的魅力调整值 + 你的邪狱使等级的一半（向下取整），至少为一个法术。这些法术的环阶必须是你拥有相应法术位的环阶。",
+								"例如，若你是一名5级邪狱使，你拥有三个1环法术位和两个2环法术位。若你的魅力为14，你的已准备法术列表可以包含四个1环或2环法术的任意组合。若你准备了1环法术狱之笞，你可以用1环或2环法术位来施展它。施展法术不会将其从你的已准备法术列表中移除。",
+								"你可以在完成长休后改变你的已准备法术列表。准备一份新的邪狱使法术列表需要花费祈祷与冥想的时间：列表上每个法术每法术环阶至少1分钟。"
+							],
+							"ENG_name": "Spells Known of 1st Level and Higher."
+						},
+						{
+							"type": "entries",
+							"name": "施法属性",
+							"entries": [
+								"魅力是你邪狱使法术的施法属性，因为你的力量源自于吸引你宗主大魔鬼注意的能力。每当一个法术提及你的施法属性时，你都使用魅力。此外，当你设定你所施展的邪狱使法术的豁免DC，以及以邪狱使法术进行攻击检定时，你使用你的魅力调整值。",
+								{
+									"type": "abilityDc",
+									"name": "法术豁免",
+									"attributes": [
+										"cha"
+									],
+									"ENG_name": "Spell save"
+								},
+								{
+									"type": "abilityAttackMod",
+									"name": "法术",
+									"attributes": [
+										"cha"
+									],
+									"ENG_name": "Spell"
+								}
+							],
+							"ENG_name": "Spellcasting Ability."
+						}
+					],
+					"ENG_name": "Spellcasting"
+				}
+			]
+		},
+		{
+			"ENG_name": "Hellmage",
+			"name": "九狱魔师",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 6,
+			"entries": [
+				"当你施展一个幻象系法术时，你可以选择消耗一枚未使用的缄印来代替法术位。"
+			]
+		},
+		{
+			"ENG_name": "Spellmaster",
+			"name": "法术大师",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 7,
+			"entries": [
+				"你为维持法术专注而进行的体质豁免检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Instant Illusion",
+			"name": "瞬发幻象",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 9,
+			"entries": [
+				"当你将一枚缄印放置在一个敌人身上时，你可以以反应施展一个施法时间通常为1动作的幻象系法术。"
+			]
+		},
+		{
+			"ENG_name": "Submit!",
+			"name": "屈服！",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 10,
+			"entries": [
+				"当你施展一个法术时，你可以以反应焚灭一个受禁生物身上的缄印，使其对抗该法术的豁免检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "By Will Alone",
+			"name": "仅凭意志",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 13,
+			"entries": [
+				"你的幻象系法术不再需要任何法术成分。施展幻象系法术时，没有任何迹象表明你正在施法。你可以在目盲、被塞住嘴以及双手被缚的情况下施展幻象系法术。"
+			]
+		},
+		{
+			"ENG_name": "Asmodeus's Blessing",
+			"name": "阿斯蒙蒂斯之赐",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 17,
+			"entries": [
+				"你可以在受到伤害时以反应施展{@spell 火焰护盾}。该护盾始终是温暖的护盾，造成火焰伤害，并造成{@dice 4d8}伤害而非{@dice 2d8}。直到你完成一次长休前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Magic Resistance",
+			"name": "魔法抗性",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 18,
+			"entries": [
+				"你对来自受禁生物的法术与魔法效应的豁免检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Lore Devil",
+			"name": "学识魔鬼",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "筑灭师",
+			"subclassSource": "ILL",
+			"level": 20,
+			"entries": [
+				"以一个动作，你可以变为一只学识魔鬼1分钟。你获得三枚额外缄印。带有你缄印的敌人对抗你的法术时豁免检定自动失败。你散发着一道干扰灵光，迫使60尺内任何试图施展法术的生物先成功通过一次DC 18的智力豁免检定，否则法术失败且其失去该法术位。",
+				"每当你使用一个法术位施展一个法术时，有25%的几率法术如常生效，但你不会失去该法术位。",
+				"在此形态下，你的生物类型变为邪魔（魔鬼），你的家园位面是九狱。直到你完成一次长休前，你不能再次使用此特性。你的DM可自行决定选择一部{@i 典籍}，并授予你该{@i 典籍}中一项能力的有限使用权。"
+			]
+		},
+		{
+			"ENG_name": "Painkiller",
+			"name": "恐惧屠戮者",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 3,
+			"entries": [
+				"迪斯帕特统治着迪斯\u2014\u2014战争之城。当九狱入侵另一个世界时，迪斯帕特的军队负责战斗与赴死。他手下的恐惧屠戮者是身先士卒的战略名家，让他们的士兵又敬又畏。他们狂傲自负，以王侯自居，常常对个人仪容有着一丝不苟的偏执。",
+				"恐惧屠戮者是邪狱使中最具骑士精神的一群，但他们的骑士精神是扭曲的。他们会接受并尊重单挑的挑战，并迅速惩罚任何试图干涉之人。但若处于下风，他们便会作弊；若稳操胜券，他们便会先玩弄敌人再将其了结。",
+				"在软弱或绝望之时，另一个世界的统治者可能会眼见自己的军队必败无疑，从而向迪斯帕特祈求。迪斯帕特看到挑起纷争与不和的机会，便可能派出一名恐惧屠戮者来统领这位绝望君主的军队。",
+				{
+					"type": "entries",
+					"name": "痛苦戒律",
+					"entries": [
+						"恐惧屠戮者在加入墟寂教团时向迪斯帕特立下誓言。誓言要求他们统领九狱大军，在时空各处与善良为敌。",
+						{
+							"type": "entries",
+							"name": "身先士卒",
+							"entries": [
+								"我总是身处每场战斗的最前线。我身先冲阵，鼓舞我的士兵，令我的敌人胆寒。我不会使用潜行，也不会遮掩我的面容。让他们亲眼见证自己的末日。"
+							],
+							"ENG_name": "Lead from the Front."
+						},
+						{
+							"type": "entries",
+							"name": "指挥官",
+							"entries": [
+								"无论我身处何方，发号施令的都是我。我下达命令，不接受命令。"
+							],
+							"ENG_name": "Commander."
+						},
+						{
+							"type": "entries",
+							"name": "不惜代价",
+							"entries": [
+								"我尊重敌人的统帅，并以礼相待。但一旦刀剑出鞘，我会用尽武库中的每一件工具与伎俩去赢得胜利，他们也理应如此。"
+							],
+							"ENG_name": "Victory at Any Cost."
+						},
+						{
+							"type": "entries",
+							"name": "卒如草芥",
+							"entries": [
+								"我不在乎士兵的性命，因为他们存在的意义就是服务于我的胜利。他们不过是可以消耗的资源。"
+							],
+							"ENG_name": "Soldiers Die."
+						}
+					],
+					"ENG_name": "Tenets of Pain"
+				},
+				{
+					"type": "entries",
+					"name": "与迪斯帕特之契",
+					"entries": [
+						"迪斯帕特的重装突击部队必须是高效的战场指挥官，并能迅速解决敌人。",
+						{
+							"type": "entries",
+							"name": "招引威权：毁灭使徒",
+							"entries": [
+								"以一个动作，你招引迪斯帕特的威权。数量等于你魅力调整值的、位于你60尺内你能看见的盟友与你，均可以用一个反应进行一次武器攻击。"
+							],
+							"ENG_name": "Invoke Authority: Devastator."
+						},
+						{
+							"type": "entries",
+							"name": "招引威权：炼狱如潮",
+							"entries": [
+								"一经招引迪斯帕特的威权，你便在你的正常动作与可能的附赠动作之外，获得一个额外动作。"
+							],
+							"ENG_name": "Invoke Authority: Infernal Surge."
+						}
+					],
+					"ENG_name": "Contract with Dispater"
+				},
+				{
+					"type": "entries",
+					"name": "附赠熟练项",
+					"entries": [
+						"当你选择迪斯帕特作为你的大魔鬼时，你获得重甲熟练项。"
+					],
+					"ENG_name": "Bonus Proficiencies"
+				}
+			]
+		},
+		{
+			"ENG_name": "I am Death",
+			"name": "吾即死亡",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 6,
+			"entries": [
+				"在一个生物身上放置缄印后，你对该生物的攻击在你的回合结束前具有优势。"
+			]
+		},
+		{
+			"ENG_name": "By The Throat",
+			"name": "扼喉",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 7,
+			"entries": [
+				"你可以以一个动作，在一个位于你30尺内的敌人身上放置一枚缄印。若目标为大型或更小，它必须进行一次感知豁免检定（DC = 8 + 你的熟练加值 + 你的魅力调整值），否则被{@condition 受擒}（逃脱DC 15），且目标在被{@condition 受擒}期间处于{@condition 束缚}状态。"
+			]
+		},
+		{
+			"ENG_name": "Telekinetic Seal",
+			"name": "念动缄印",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 9,
+			"entries": [
+				"当一个敌人移动至与你邻近的空间时，你可以以反应在其身上放置一枚缄印。若你如此做，它必须进行一次感知豁免检定（DC = 8 + 你的熟练加值 + 你的魅力调整值）。若豁免失败，它被击退30尺并应击{@condition 倒地}。"
+			]
+		},
+		{
+			"ENG_name": "Hell's Fury",
+			"name": "狱之怒",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 10,
+			"entries": [
+				"你用于在一个生物身上放置缄印的附赠动作，现在同时给予你一次对该生物的武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "You Die On My Command",
+			"name": "吾令汝命",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 13,
+			"entries": [
+				"当一个位于你30尺内、能听见你声音的盟友生命值降至0但并未被直接杀死时，你可以用你的反应对其厉声下令，使其生命值降至1点而非0点。直到你完成一次短休或长休前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Steelmind",
+			"name": "钢铁心智",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 17,
+			"entries": [
+				"你对法术与敌人能力的感知豁免检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Deathstrike",
+			"name": "终死击",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 18,
+			"entries": [
+				"当你在一次成功的攻击检定后焚灭一个受禁生物身上的缄印时，你可以用你的反应使该次攻击造成一次重击。"
+			]
+		},
+		{
+			"ENG_name": "Pain Devil",
+			"name": "痛楚魔鬼",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "恐惧屠戮者",
+			"subclassSource": "ILL",
+			"level": 20,
+			"entries": [
+				"从20级开始，你可以用你的动作变身为一只痛楚魔鬼1分钟。你的体型变为大型。你的近战武器攻击与伤害获得+3加值。你获得100点临时生命值。",
+				"你散发着一道痛苦灵光，迫使每个在你20尺内开始其回合的敌人进行一次DC 16的体质豁免检定，失败者受到{@dice 4d12}力场伤害（豁免成功则减半），其血肉之伤会自发绽开。一个生物一旦豁免成功，便在24小时内免疫此能力。",
+				"在此形态下，你的生物类型变为邪魔（魔鬼），你的家园位面是九狱。直到你完成一次长休前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Shadowmaster",
+			"name": "影宗",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 3,
+			"entries": [
+				"摩洛克统治着冥河\u2014\u2014谎言之城。他力图通过权谋、欺骗与诡计统治九狱。他的邪狱使是刺客，从阴影中出击，或以欺骗赢得接近有权势统治者的高位。许多影宗经营着间谍与刺客网络，而这些人对他们主人的炼狱出身一无所知。",
+				"影宗立誓不暴露自己的身份，并在背叛自己真正效忠对象之前先行自尽。许多影宗为自己的暗杀准备了详尽的计划，如此一来，一旦有人即将发现他们的真实身份，他们就会被自己的刺客灭口，从而保全真相。当然，这些杀手全然不知自己真正效忠的是谁......",
+				{
+					"type": "entries",
+					"name": "暗影戒律",
+					"entries": [
+						"影宗在加入墟寂教团时向摩洛克立下誓言。誓言要求他们先以盟友的身份侍奉摩洛克的仇敌，再揭示自己作为敌人的真面目。",
+						{
+							"type": "entries",
+							"name": "连环计",
+							"entries": [
+								"我的敌人绝不能发现我的真实目标。为保全我的谋划，我可以牺牲自己。"
+							],
+							"ENG_name": "Plans Within Plans."
+						},
+						{
+							"type": "entries",
+							"name": "制造混乱",
+							"entries": [
+								"失序即是我的目标。哪里有和平，我便在哪里制造冲突。哪里有笃定，我便在哪里播种疑虑。若有战争，它便永无终结。"
+							],
+							"ENG_name": "Create Chaos."
+						},
+						{
+							"type": "entries",
+							"name": "耐心的力量",
+							"entries": [
+								"我会研究我的敌人。我将准备、研究、慢慢建立信任，使我的忠诚无可置疑，令人无从想起我背叛主上的可能。"
+							],
+							"ENG_name": "Power in Patience."
+						},
+						{
+							"type": "entries",
+							"name": "犹豫就会败北",
+							"entries": [
+								"一旦需要，我完全愿意也有能力迅捷而高效地杀戮。我可以依赖代理人，但当机会出现时，我会毫不犹豫地出手。"
+							],
+							"ENG_name": "Hesitation Is Failure."
+						}
+					],
+					"ENG_name": "Tenets of Shadow"
+				},
+				{
+					"type": "entries",
+					"name": "与摩洛克之契",
+					"entries": [
+						"摩洛克的精英刺客必须能够活到接近敌人，并迅速消灭他们。",
+						{
+							"type": "entries",
+							"name": "招引威权：隐没",
+							"entries": [
+								"以一个动作，你可以变为隐形，并且作为此动作的一部分，你可以尝试执行躲藏动作。该隐形在1分钟后结束，或在你进行一次攻击或施展一个法术时结束。"
+							],
+							"ENG_name": "Invoke Authority: Fade"
+						},
+						{
+							"type": "entries",
+							"name": "招引威权：摩洛克之赐",
+							"entries": [
+								"以一个附赠动作，你可以将你剩余的所有缄印放置在一个生物身上。"
+							],
+							"ENG_name": "Invoke Authority: Moloch's Blessing"
+						}
+					],
+					"ENG_name": "Contract with Moloch"
+				},
+				{
+					"type": "entries",
+					"name": "磺色闪光",
+					"entries": [
+						"作为对在一个目标身上放置缄印的反应，你可以传送到该目标邻近一处你能看见的未被占据空间。"
+					],
+					"ENG_name": "Flash of Brimstone"
+				},
+				{
+					"type": "entries",
+					"name": "附赠熟练项",
+					"entries": [
+						"当你选择摩洛克作为你的大魔鬼时，你获得隐匿、特技与盗贼工具的熟练项。"
+					],
+					"ENG_name": "Bonus Proficiencies"
+				},
+				{
+					"type": "entries",
+					"name": "匕首行家",
+					"entries": [
+						"你的训练使你精通某些轻型武器。当你以匕首和/或镰刀进行双武器战斗时，你可以将你的属性调整值加在第二次攻击的伤害上，并且在你通常只能抽出或收起一把匕首或镰刀时，你可以抽出或收起两把。",
+						"在5级时，你的匕首与镰刀造成{@dice 1d6}伤害。在11级时，你的匕首与镰刀造成{@dice 1d8}伤害。在17级时，你的匕首与镰刀造成{@dice 1d10}伤害。"
+					],
+					"ENG_name": "Dagger Adept"
+				}
+			]
+		},
+		{
+			"ENG_name": "Marked for Death",
+			"name": "终亡印记",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 6,
+			"entries": [
+				"你与摩洛克之力的联系加深了。若你以一次近战攻击命中一个受禁生物，你可以将其标记为死亡目标。该目标在不包含你的攻击检定上具有劣势，直到其下个回合结束。在该生物受禁期间，它每次尝试离开你的触及范围时，必须进行一次感知豁免检定（DC等于8 + 你的熟练加值 + 你的魅力调整值）。豁免失败，其速度改为0，直到其下个回合开始。这些效应持续到它不再受禁、你离开其触及范围或它离开你的触及范围为止。"
+			]
+		},
+		{
+			"ENG_name": "Relentless",
+			"name": "不懈",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 7,
+			"entries": [
+				"你的移动速度增加10尺。"
+			]
+		},
+		{
+			"ENG_name": "Only A Memory",
+			"name": "徒留追忆",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 9,
+			"entries": [
+				"你对暗影的精通使你在执行躲藏动作时的敏捷（隐匿）检定具有优势，且躲藏对你而言成为一个附赠动作。"
+			]
+		},
+		{
+			"ENG_name": "He Is the Darkness",
+			"name": "他即黑暗",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 10,
+			"entries": [
+				"当你处于一个受禁敌人的10尺内时，暗影将你笼罩，你获得半身掩护的好处。"
+			]
+		},
+		{
+			"ENG_name": "Evasion",
+			"name": "反射闪避",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 13,
+			"entries": [
+				"当你被要求进行一次敏捷豁免检定以使某个效应的伤害减半时，若你豁免成功，则改为不受伤害；若你豁免失败，则只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Shadowkiller",
+			"name": "幽影杀手",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 17,
+			"entries": [
+				"你获得黑暗视觉，并能在魔法黑暗中正常视物。此外，你能看见60尺内任何使用幻象系法术混淆其位置（如朦胧术、镜影术或隐形术）的生物的确切位置。"
+			]
+		},
+		{
+			"ENG_name": "Hell's Assassin",
+			"name": "狱影刺客",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 18,
+			"entries": [
+				"你的缄印每枚造成{@dice 3d10}伤害，而非{@dice 3d6}。"
+			]
+		},
+		{
+			"ENG_name": "Shadowform",
+			"name": "幽影形态",
+			"source": "ILL",
+			"className": "邪狱使",
+			"classSource": "ILL",
+			"subclassShortName": "影宗",
+			"subclassSource": "ILL",
+			"level": 20,
+			"entries": [
+				"从20级开始，以一个动作，你可以变身为一只高等幽影1分钟。你获得对强酸、寒冷、火焰、闪电、雷鸣、钝击、穿刺与挥砍伤害的抗性。你获得虚体移动与50尺飞行速度。你可以像穿越困难地形一样穿越其他生物与物体。若你在某个物体内部结束你的回合，你受到5（{@dice 1d10}）力场伤害。你的武器攻击造成暗蚀伤害，且成功的攻击从目标身上汲取{@dice 1d4}点力量。若此汲取使目标的力量降至0，它即死亡。否则，该汲取持续到目标完成一次短休或长休。若一个非邪恶的类人生物死于此次攻击，一具新的幽影将在1d4小时后从其尸体上站起。直到你完成一次长休前，你不能再次使用此特性。"
+			]
+		}
+	],
+	"spell": [
+		{
+			"ENG_name": "Aura of Desecration",
+			"name": "亵渎灵光",
+			"source": "ILL",
+			"page": 19,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"污渎生命的能量自你辐射而出，形成一道30尺半径的灵光。直到法术结束，该灵光随你移动并以你为中心。当一个生物进入该区域或在其中开始其回合时，它受到{@damage 1d6}暗蚀伤害，而你恢复等同于所造成伤害的生命值。"
+			],
+			"damageInflict": [
+				"necrotic"
+			]
+		},
+		{
+			"ENG_name": "Hell's Lash",
+			"name": "狱之笞",
+			"source": "ILL",
+			"page": 19,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "蛇信子"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你唤出一条赤红电能之鞭，抽向施法距离内的一个生物，在你与目标之间建立起一道导流。对该生物进行一次远程法术攻击。命中时，目标受到{@damage 1d10}火焰伤害，并且在法术持续时间内你的每个回合，你都可以用你的动作自动对该目标造成{@dice 1d10}火焰伤害。若你使用你的动作做任何其他事情，法术结束。若目标处于法术距离之外，或它对你有全身掩护，法术同样结束。若目标身上带有你的一枚缄印，这条炼狱之鞭造成其最大伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"当你以2环或更高的法术位施展此法术时，法术位每比1环高一环，初始伤害便增加{@dice 1d10}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"ENG_name": "Mote of Hell",
+			"name": "炼狱之尘",
+			"source": "ILL",
+			"page": 19,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一块硫磺"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在凡俗世界上显现出一角地狱。一片由黑暗、硫磺与灼热构成的15尺半径球体，以施法距离内一点为中心降临，持续至法术持续时间结束。地狱火云中回荡着受诅之魂的哀嚎，身处云团30尺内的任何生物都能听见。",
+				"任何光照\u2014\u2014即便是魔法光照\u2014\u2014都无法照亮该区域，任何完全身处该区域内的生物都会{@condition 目盲}。火云扭曲时空，该区域是困难地形。任何在该区域内开始其回合的生物受到{@damage 2d6}火焰伤害。任何在该区域内结束其回合的生物必须成功通过一次感知豁免检定，否则将因受诅者的魔音灌脑而受到{@damage 2d6}心灵伤害。",
+				"魔鬼免疫此伤害，能看穿这片黑暗，并且若在其回合开始时身处该区域内，还会恢复{@dice 2d6}点生命值。"
+			],
+			"damageInflict": [
+				"fire",
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"ENG_name": "Single Combat",
+			"name": "戕狱对决",
+			"source": "ILL",
+			"page": 20,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"你向一个生物发出一个它可能无法抗拒的挑战。若你身边没有邻近的盟友，选择施法距离内一个能看见并听见你的生物。它必须进行一次魅力豁免检定。豁免失败时，该生物中了你的圈套，必须与你战斗。在法术持续时间内，它在不包含你的攻击上具有劣势，且每次尝试远离你时，都必须成功通过一次对抗你施法DC的魅力豁免检定。",
+				"若你攻击任何其他生物、施展一个不以此生物为目标的法术、有盟友伤害该目标或以法术指向它，或你在离该目标超过30尺处结束你的回合，此法术结束。若有你的任何盟友在你的邻近结束其回合，此法术同样结束。"
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"ENG_name": "Wall of Death",
+			"name": "死灭墙",
+			"source": "ILL",
+			"page": 20,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一小块磷"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在施法距离内一块固体表面上创造出一道暗蚀能量之墙。你可以造一面最长60尺、最高20尺、厚1尺的墙，或造一道直径最大20尺、高20尺、厚1尺的环形墙。该墙不透明，持续至法术持续时间结束。该墙出现时，每个处于其区域内的生物必须进行一次体质豁免检定。豁免失败的生物受到{@damage 5d8}暗蚀伤害，并且在接下来1分钟内其生命值首次降至0时，立即失败一次死亡豁免检定；豁免成功的生物受到一半伤害且无其他效应。你恢复等同于所造成暗蚀伤害一半数值的生命值。你在施展此法术时选择的墙的一侧，对在距该侧10尺内结束其回合或身处墙内的每个生物造成{@damage 5d8}暗蚀伤害。一个生物在一回合内首次进入该墙，或在其回合结束于墙中时，受到同样的伤害。墙的另一侧不造成伤害。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Agent (Shadowmaster)",
+			"name": "特工（影宗）",
+			"source": "ILL",
+			"page": 22,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"轻甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "生命等级等于其等级"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "（取决于血统）"
+				}
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 14,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+3",
+				"dex": "+3",
+				"int": "+3",
+				"wis": "+3",
+				"cha": "+6",
+				"con": "+6"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"deception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"与血统相符"
+			],
+			"passive": 12,
+			"languages": [
+				"与血统相符（通常是通用语）"
+			],
+			"cr": "未知",
+			"trait": [
+				{
+					"ENG_name": "Retainer",
+					"name": "助战者",
+					"entries": [
+						"该生物是一名助战者，如{@book Strongholds and Followers|SaF|8|Retainers}中所述。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Signature Attack",
+					"name": "招牌攻击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}4（{@damage 2d4 + 5}）穿刺伤害。",
+						"在7级时，助战者每轮可以发动两次招牌攻击。"
+					]
+				},
+				{
+					"ENG_name": "All Out (1/Day)",
+					"name": "全力一击（1/日）",
+					"entries": [
+						"{@i 前提：5级助战者}",
+						"特工发动一次招牌攻击，随后在其30尺内一个能看见的生物身上放置缄印。该缄印在下一次对该目标的成功攻击命中时被焚灭，目标额外受到21（{@damage 6d6}）暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Seal Fate (3/Day)",
+					"name": "命运缄印（3/日）",
+					"entries": [
+						"{@i 前提：7级助战者}",
+						"特工对一个生物发动两次招牌攻击。若至少一次攻击命中，该生物的速度降为0，且其在不包含特工的攻击检定上具有劣势，直到特工的下个回合结束。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Shadow Gate (3/Day)",
+					"name": "暗影之门（3/日）",
+					"entries": [
+						"{@i 前提：3级助战者}",
+						"当特工的首领攻击一个特工在60尺内能看见的目标时，特工传送至该目标5尺内一处未被占据的空间，并给予其首领该次攻击检定优势。"
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"ENG_name": "Deceiver (Architect of Ruin)",
+			"name": "骗徒（筑灭师）",
+			"source": "ILL",
+			"page": 22,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"中甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "生命等级等于其等级"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "（取决于血统）"
+				}
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 14,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+3",
+				"dex": "+3",
+				"int": "+3",
+				"wis": "+3",
+				"cha": "+6",
+				"con": "+6"
+			},
+			"skill": {
+				"arcana": "+5",
+				"persuasion": "+5",
+				"deception": "+5"
+			},
+			"senses": [
+				"与血统相符"
+			],
+			"passive": 12,
+			"languages": [
+				"与血统相符（通常是通用语）"
+			],
+			"cr": "未知",
+			"trait": [
+				{
+					"ENG_name": "Retainer",
+					"name": "助战者",
+					"entries": [
+						"该生物是一名助战者，如{@book Strongholds and Followers|SaF|8|Retainers}中所述。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Signature Attack",
+					"name": "招牌攻击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）穿刺伤害。",
+						"在7级时，助战者每轮可以发动两次招牌攻击。"
+					]
+				},
+				{
+					"ENG_name": "{@spell Hell's Lash|ILL} (3/day)",
+					"name": "{@spell 狱之笞|ILL}（3/日）",
+					"entries": [
+						"{@i 前提：3级助战者}"
+					]
+				},
+				{
+					"ENG_name": "Armor of Deception (1/Day)",
+					"name": "欺瞒护甲（1/日）",
+					"entries": [
+						"{@i 前提：5级助战者}",
+						"骗徒以骇人的幻象之网环绕另一个他能看见的生物，持续1分钟。在幻象持续期间对目标执行攻击动作的生物，必须进行一次感知豁免检定，否则陷入{@condition 恐慌}直到其下个回合结束。豁免成功的生物在24小时内免疫此效应。"
+					]
+				},
+				{
+					"ENG_name": "{@spell Mote of Hell|ILL} (1/Day)",
+					"name": "{@spell 炼狱之尘|ILL}（1/日）",
+					"entries": [
+						"{@i 前提：7级助战者}"
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"ENG_name": "Lady Dazran",
+			"name": "达兹兰女士",
+			"source": "ILL",
+			"page": 21,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 13,
+			"wis": 15,
+			"cha": 20,
+			"save": {
+				"con": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+5",
+				"athletics": "+9",
+				"intimidation": "+9",
+				"religion": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"炼狱语"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"ENG_name": "Aura of Despair",
+					"name": "绝望灵光",
+					"entries": [
+						"每当达兹兰指定的一个位于其15尺内的生物进行攻击检定或豁免检定时，该生物必须从攻击或豁免结果中减去{@dice 1d4}。"
+					]
+				},
+				{
+					"ENG_name": "Baleful Interdict (5/Short or Long Rest)",
+					"name": "极恶禁令（5/短休或长休）",
+					"entries": [
+						"以一个附赠动作，达兹兰在其30尺内一个她能看见的生物身上放置一枚缄印。当达兹兰或她的盟友以一次近战攻击命中一个带有至少一枚缄印的目标时，她可以焚灭缄印，每焚灭一枚便额外造成10（{@damage 3d6}）暗蚀伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"达兹兰进行三次近战武器攻击或两次远程武器攻击。"
+					]
+				},
+				{
+					"ENG_name": "Javelin",
+					"name": "标枪",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 9}，触及5尺或射程30/120尺，单一目标。{@h}8（{@damage 1d6 + 5}）穿刺伤害"
+					]
+				},
+				{
+					"ENG_name": "Steel Devil Rib Greatsword",
+					"name": "锻钢魔鬼肋骨巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}19（{@damage 4d6 + 5}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Infernal Conduit (1/Day)",
+					"name": "炼狱交移（1/日）",
+					"entries": [
+						"{@atk ms} 命中{@hit 9}，触及5尺，单一生物。{@h}44（{@damage 8d10}）暗蚀伤害，且达兹兰恢复等同于所造成伤害的生命值。若其生命值已满，达兹兰将超额部分获得为临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "By the Throat",
+					"name": "扼喉",
+					"entries": [
+						"达兹兰使用极恶禁令在一个大型或更小的生物身上放置一枚缄印。该目标必须成功通过一次{@dc 17}感知豁免检定，否则被{@condition 受擒}（逃脱{@dc 15}）。该目标在被{@condition 受擒}期间处于{@condition 束缚}状态。"
+					]
+				},
+				{
+					"ENG_name": "Hellsight (5/Day)",
+					"name": "狱视力（5/日）",
+					"entries": [
+						"直到她的下个回合结束，达兹兰知晓其60尺内任何使用魔法伪装或隐藏自己的生物的位置。"
+					]
+				},
+				{
+					"ENG_name": "Summon Hell (1/Week)",
+					"name": "召唤地狱（1/周）",
+					"entries": [
+						"达兹兰在其30尺内一处她能看见的未被占据空间召唤一只骨魔。该魔鬼听从她的命令，并在先攻顺位中紧随其后行动。该魔鬼在其生命值降至0时、在达兹兰死亡或陷入{@condition 昏迷}时，或在被召唤1分钟后消失。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Telepathic Seal",
+					"name": "心灵缄印",
+					"entries": [
+						"当一个生物移动至达兹兰5尺内时，她可以使用极恶禁令在其身上放置一枚缄印。该目标必须成功通过一次{@dc 17}感知豁免检定，否则被推离达兹兰30尺并应击{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "You Die on My Command (1/Short or Long Rest)",
+					"name": "吾令汝命（1/短休或长休）",
+					"entries": [
+						"当一个位于达兹兰30尺内、能听见她声音的生物生命值降至0时，达兹兰厉声下令，该生物的生命值降至1点而非0点。"
+					]
+				}
+			],
+			"attachedItems": [
+				"标枪|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"ENG_name": "Tyrant (Painkiller)",
+			"name": "暴君（恐惧屠戮者）",
+			"source": "ILL",
+			"page": 22,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"重甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "生命等级等于其等级"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "（取决于血统）"
+				}
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 14,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"str": "+3",
+				"dex": "+3",
+				"int": "+3",
+				"wis": "+3",
+				"cha": "+6",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+5"
+			},
+			"senses": [
+				"与血统相符"
+			],
+			"passive": 12,
+			"languages": [
+				"与血统相符（通常是通用语）"
+			],
+			"cr": "未知",
+			"trait": [
+				{
+					"ENG_name": "Retainer",
+					"name": "助战者",
+					"entries": [
+						"该生物是一名助战者，如{@book Strongholds and Followers|SaF|8|Retainers}中所述。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Signature Attack",
+					"name": "招牌攻击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}4（{@damage 2d4 + 5}）穿刺伤害。",
+						"在7级时，助战者每轮可以发动两次招牌攻击。"
+					]
+				},
+				{
+					"ENG_name": "Devastation (1/Day)",
+					"name": "蹂躏（1/日）",
+					"entries": [
+						"{@i 前提：5级助战者}",
+						"暴君发动两次招牌攻击，并允许最多三个位于其30尺内、能听见暴君声音的盟友使用其反应进行一次武器攻击。"
+					]
+				},
+				{
+					"ENG_name": "Choke (1/Day)",
+					"name": "扼窒（1/日）",
+					"entries": [
+						"{@i 前提：7级助战者}",
+						"暴君发动一次招牌攻击，并以魔法扼住一个位于其30尺内、暴君能看见的生物。被扼住的目标必须进行一次感知豁免检定，否则被{@condition 受擒}，且目标在被{@condition 受擒}期间处于{@condition 束缚}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Shift Ranks",
+					"name": "军列移转",
+					"entries": [
+						"{@i 前提：3级助战者}",
+						"暴君发动一次招牌攻击，并允许最多三个位于其30尺内、能听见暴君声音的盟友在不引发借机攻击的情况下移动至多10尺。"
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		}
+	]
+}
