@@ -1,0 +1,2456 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLShifter",
+				"abbreviation": "LLShi",
+				"full": "化兽者",
+				"url": "https://www.gmbinder.com/share/-NGPF3Q0JXpV3aCTGJCN",
+				"version": "v2.1.0",
+				"dateReleased": "2025-04-18",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Spappz"
+				],
+				"color": "4f6e56"
+			}
+		],
+		"dependencies": {
+			"monster": [
+				"LLCompendiumOfBeasts"
+			]
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1745021517,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "cd7bfe810b"
+	},
+	"class": [
+		{
+			"ENG_name": "Shifter",
+			"name": "化兽者",
+			"source": "LLShifter",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"count": 2,
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							]
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 吹箭筒|PHB|吹箭筒}",
+					"{@item 长弓|PHB|长弓}",
+					"{@item 捕网|PHB|捕网}"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）两根{@item 短棒|PHB|短棒}，（b）一根{@item 巨棒|PHB}，或（c）一根{@item 长棍|PHB}",
+					"（a）一把{@item 短弓|PHB}和20支{@item 箭|PHB|箭}，或（b）四支{@item 标枪|PHB|标枪}",
+					"{@item 皮甲|PHB}、一把{@item 匕首|PHB}和一个{@item 探索套组|PHB}"
+				],
+				"goldAlternative": "{@dice 2d4 × 10}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"item": "短棒|PHB",
+								"quantity": 2
+							}
+						],
+						"b": [
+							"巨棒|PHB"
+						],
+						"c": [
+							"长棍|PHB"
+						]
+					},
+					{
+						"a": [
+							"短弓|PHB",
+							{
+								"item": "箭|PHB",
+								"quantity": 20
+							}
+						],
+						"b": [
+							{
+								"item": "标枪|PHB",
+								"quantity": 4
+							}
+						]
+					},
+					{
+						"_": [
+							"皮甲|PHB",
+							"匕首|PHB",
+							"探索套组|PHB"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"con": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"count": 1,
+								"from": [
+									"acrobatics",
+									"animal handling",
+									"athletics",
+									"nature",
+									"perception",
+									"stealth",
+									"survival"
+								]
+							}
+						}
+					],
+					"weapons": [
+						"简易"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"最大CR"
+					],
+					"rows": [
+						[
+							"{@filter 0|bestiary|type=Beast|challenge rating=[&0;&0]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter ¼|bestiary|type=Beast|challenge rating=[&0;&1/4]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter ½|bestiary|type=Beast|challenge rating=[&0;&1/2]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 1|bestiary|type=Beast|challenge rating=[&0;&1]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 1|bestiary|type=Beast|challenge rating=[&0;&1]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 1|bestiary|type=Beast|challenge rating=[&0;&1]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 2|bestiary|type=Beast|challenge rating=[&0;&2]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 2|bestiary|type=Beast|challenge rating=[&0;&2]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 2|bestiary|type=Beast|challenge rating=[&0;&2]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 3|bestiary|type=Beast|challenge rating=[&0;&3]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 3|bestiary|type=Beast|challenge rating=[&0;&3]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 3|bestiary|type=Beast|challenge rating=[&0;&3]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 4|bestiary|type=Beast|challenge rating=[&0;&4]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 4|bestiary|type=Beast|challenge rating=[&0;&4]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 5|bestiary|type=Beast|challenge rating=[&0;&5]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 5|bestiary|type=Beast|challenge rating=[&0;&5]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 5|bestiary|type=Beast|challenge rating=[&0;&5]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 6|bestiary|type=Beast|challenge rating=[&0;&6]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 6|bestiary|type=Beast|challenge rating=[&0;&6]|source=LLCompendiumOfBeasts}"
+						],
+						[
+							"{@filter 6|bestiary|type=Beast|challenge rating=[&0;&6]|source=LLCompendiumOfBeasts}"
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				{
+					"classFeature": "血统|化兽者|LLShifter|1|LLShifter",
+					"gainSubclassFeature": true
+				},
+				"荒野形态|化兽者|LLShifter|1|LLShifter",
+				"原初羁绊|化兽者|LLShifter|2|LLShifter",
+				"兽性本能|化兽者|LLShifter|3|LLShifter",
+				"属性值提升|化兽者|LLShifter|4|LLShifter",
+				"野性战士|化兽者|LLShifter|5|LLShifter",
+				"神秘打击|化兽者|LLShifter|5|LLShifter",
+				"肾上腺素飙升|化兽者|LLShifter|6|LLShifter",
+				{
+					"classFeature": "血统特性|化兽者|LLShifter|7|LLShifter",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|化兽者|LLShifter|8|LLShifter",
+				"荒野感知|化兽者|LLShifter|9|LLShifter",
+				"原初韧性|化兽者|LLShifter|10|LLShifter",
+				"太古形态|化兽者|LLShifter|11|LLShifter",
+				"属性值提升|化兽者|LLShifter|12|LLShifter",
+				{
+					"classFeature": "血统特性|化兽者|LLShifter|13|LLShifter",
+					"gainSubclassFeature": true
+				},
+				"野性感官|化兽者|LLShifter|14|LLShifter",
+				"神话形态|化兽者|LLShifter|15|LLShifter",
+				"属性值提升|化兽者|LLShifter|16|LLShifter",
+				"太古复苏|化兽者|LLShifter|17|LLShifter",
+				{
+					"classFeature": "血统特性|化兽者|LLShifter|18|LLShifter",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|化兽者|LLShifter|19|LLShifter",
+				"自然之力|化兽者|LLShifter|20|LLShifter"
+			],
+			"subclassTitle": "血统",
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "wild-shape-max-cr",
+						"type": "number",
+						"scale": {
+							"1": {
+								"value": 0
+							},
+							"2": {
+								"value": 0.25
+							},
+							"3": {
+								"value": 0.5
+							},
+							"4": {
+								"value": 1
+							},
+							"7": {
+								"value": 2
+							},
+							"10": {
+								"value": 3
+							},
+							"13": {
+								"value": 4
+							},
+							"15": {
+								"value": 5
+							},
+							"18": {
+								"value": 6
+							}
+						}
+					},
+					"title": "荒野形态最大CR"
+				}
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Shifter",
+			"name": "化兽者",
+			"source": "LLShifter",
+			"entries": [
+				{
+					"ENG_name": "Shifter",
+					"type": "section",
+					"name": "化兽者",
+					"entries": [
+						"那位格外矮壮多毛的矮人在一团翠绿的光芒与尘土中消失了，他方才站立之处出现了一只巨大的公羊，足有矮人的两个高。这只蛮兽向前冲锋，将企图劫掠这座偏远农场的地精匪徒踩于蹄下。当这些未遂的窃贼逃入森林时，一道相似的翠绿光芒在林间亮起，那位野性的矮人走了出来，回到了自己的居所。",
+						"在战斗的混乱之中，狩猎的原初呼唤几乎难以抗拒。前一刻，她还是凶猛的母狮，撕咬着巨魔污秽的血肉；下一刻，她又化作一只卑微的啮齿动物，在混战中悄然穿梭、无人察觉。尘埃落定后，她恢复了那位野性精灵女子的形貌\u2014\u2014她知道自己真正的模样。但即便她重归镇定，内心深处的某个部分仍渴望吞噬周遭的残杀血食。",
+						"那名匪徒守卫不禁觉得，从窗口盯着他的那只鸟有几分异样。它仿佛正在注视他存放楼下牢房钥匙的位置。守卫离开后，同一只鸟化作了一个粗野原始的少年，拾起钥匙，从同一扇窗口跃了出去。当晚，男爵戒备最森严的地牢便会发生一场越狱。",
+						"这里描述的三位武者都被视为化兽者\u2014\u2014身负原初兽性之力的武者，这股力量让他们得以变换形体，化为野兽之形。",
+						{
+							"ENG_name": "Primal Companion",
+							"type": "entries",
+							"name": "原初伙伴",
+							"entries": [
+								"尽管许多人自称对自然世界有着深刻的理解，但没有人比那些被称为化兽者的存在与自然联系更深。这些罕见的武者贤士居于荒野的野兽之间，发展出属于自己的原初之力。对许多人而言，这份羁绊的神秘之力浸入他们的血脉，赋予其惊人的兽性力量，强化其感官，改变其形体。",
+								"凭借这份与荒野的原初联结，化兽者能与野兽交流，仿佛自己便是兽群中的一员。他们自身的形体也发生了变化，长出野蛮的爪或牙，皮肤变得坚韧。这份太古羁绊也是其标志性能力的源泉\u2014\u2014变化自身、化为野兽之形的力量。"
+							]
+						},
+						{
+							"ENG_name": "Many Forms",
+							"type": "entries",
+							"name": "千形万象",
+							"entries": [
+								"流淌在他们血液中的神秘能力使化兽者能够化作任何与之结下羁绊的动物。虽然每位化兽者都有自己偏好的某类野兽，并会本能地学会变身为此类野兽，但所有化兽者都能习得他们遇到的任何动物之形。",
+								"对许多化兽者而言，自身的理性心智与所化野兽的野蛮本能之间的挣扎，是其存在的核心。无视本能，神秘之力便会迟钝；而放任过度，又会有迷失自我之虞。"
+							]
+						},
+						{
+							"ENG_name": "Creating Your Shifter",
+							"type": "entries",
+							"name": "塑造你的化兽者",
+							"entries": [
+								"创造化兽者时，你需要决定的最重要一点是其神秘能力的来源。你是年长大德鲁伊或兽化人的后代，生来便拥有变换形体的本能？你曾受至高妖精或强大天界生物的祝福？还是生于荒野，独立发展出了自己的神秘天赋？",
+								"此外，虽然化兽者可以变身成任何见过的野兽，但每位化兽者都有一种与自己性格相符的偏好兽形。你偏爱强大的掠食野兽，以应和你敢于战斗的意志？是能隐藏身形、不引人注意的小型啮齿动物？还是愿意为生存做出功利抉择的冷血爬行动物？",
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速构建",
+									"entries": [
+										"你可以使用以下建议快速构建一名化兽者：先将力量或敏捷作为你的最高属性值，其次是体质。然后，选择{@background 隐士}背景。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/cover.webp"
+					},
+					"credit": "{@link Alexander Makov - Wolfkin Outcast|https://www.artofmtg.com/art/wolfkin-outcast/}"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/totallynormalbear.webp"
+					},
+					"credit": "{@link Jesper Elsing - Runeclaw Bear|https://www.artstation.com/artwork/gJkgL}"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/guy.webp"
+					},
+					"credit": "{@link Brad Rigney - Garruk Wildspeaker|https://www.artstation.com/artwork/eaBOLG}"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/lion.webp"
+					},
+					"credit": "{@link Alayna Danner - Bronzehide Lion|https://www.artofmtg.com/art/bronzehide-lion/}"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Aquatic Bloodline",
+			"name": "水栖血统",
+			"shortName": "水栖",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassFeatures": [
+				"水栖血统|化兽者|LLShifter|水栖|LLShifter|1|LLShifter",
+				"碾压之力|化兽者|LLShifter|水栖|LLShifter|7|LLShifter",
+				"神秘水域|化兽者|LLShifter|水栖|LLShifter|13|LLShifter",
+				"深海之恐|化兽者|LLShifter|水栖|LLShifter|18|LLShifter"
+			]
+		},
+		{
+			"ENG_name": "Avian Bloodline",
+			"name": "飞禽血统",
+			"shortName": "飞禽",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassFeatures": [
+				"飞禽血统|化兽者|LLShifter|飞禽|LLShifter|1|LLShifter",
+				"迅捷之翼|化兽者|LLShifter|飞禽|LLShifter|7|LLShifter",
+				"狂风驱袭|化兽者|LLShifter|飞禽|LLShifter|13|LLShifter",
+				"御风大师|化兽者|LLShifter|飞禽|LLShifter|18|LLShifter"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/avian.webp"
+						},
+						"credit": "{@link Paul Canavan - Rustwing Falcon|https://www.artstation.com/artwork/WelWN}"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Brute Bloodline",
+			"name": "蛮兽血统",
+			"shortName": "蛮兽",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassFeatures": [
+				"蛮兽血统|化兽者|LLShifter|蛮兽|LLShifter|1|LLShifter",
+				"坚韧兽皮|化兽者|LLShifter|蛮兽|LLShifter|7|LLShifter",
+				"狂奔践踏|化兽者|LLShifter|蛮兽|LLShifter|13|LLShifter",
+				"伟岸巨兽|化兽者|LLShifter|蛮兽|LLShifter|18|LLShifter"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/brute.webp"
+						},
+						"credit": "{@link Roman Kuteynikov - Makindi Ox|https://www.artofmtg.com/art/makindi-ox-variant/}"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Carnivore Bloodline",
+			"name": "食肉血统",
+			"shortName": "食肉",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassFeatures": [
+				"食肉血统|化兽者|LLShifter|食肉|LLShifter|1|LLShifter",
+				"原初嗜血|化兽者|LLShifter|食肉|LLShifter|7|LLShifter",
+				"顶级掠食者|化兽者|LLShifter|食肉|LLShifter|13|LLShifter",
+				"太古狂乱|化兽者|LLShifter|食肉|LLShifter|18|LLShifter"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/carnivore.webp"
+						},
+						"credit": "{@link Jason Engle - Dread Wolf Herald|https://www.tcgplayer.com/product/273894/magic-commander-legends-battle-for-baldurs-gate-faldorn-dread-wolf-herald-extended-art}"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Insect Bloodline",
+			"name": "昆虫血统",
+			"shortName": "昆虫",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassFeatures": [
+				"昆虫血统|化兽者|LLShifter|昆虫|LLShifter|1|LLShifter",
+				"腐蚀螫刺|化兽者|LLShifter|昆虫|LLShifter|7|LLShifter",
+				"集群形态|化兽者|LLShifter|昆虫|LLShifter|7|LLShifter",
+				"虹彩遁逃|化兽者|LLShifter|昆虫|LLShifter|13|LLShifter",
+				"致命神经毒素|化兽者|LLShifter|昆虫|LLShifter|18|LLShifter"
+			]
+		},
+		{
+			"ENG_name": "Reptilian Bloodline",
+			"name": "爬行类血统",
+			"shortName": "爬行类",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassFeatures": [
+				"爬行类血统|化兽者|LLShifter|爬行类|LLShifter|1|LLShifter",
+				"适应迷彩|化兽者|LLShifter|爬行类|LLShifter|7|LLShifter",
+				"盘绕突袭|化兽者|LLShifter|爬行类|LLShifter|7|LLShifter",
+				"绞缠之力|化兽者|LLShifter|爬行类|LLShifter|13|LLShifter",
+				"太古掠食者|化兽者|LLShifter|爬行类|LLShifter|18|LLShifter"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/reptilian.webp"
+						},
+						"credit": "{@link Simon Dominic - Hagra Constrictor|https://www.artofmtg.com/art/hagra-constrictor/}"
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Vermin Bloodline",
+			"name": "害兽血统",
+			"shortName": "害兽",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassFeatures": [
+				"害兽血统|化兽者|LLShifter|害兽|LLShifter|1|LLShifter",
+				"集群形态|化兽者|LLShifter|害兽|LLShifter|7|LLShifter",
+				"无形潜入者|化兽者|LLShifter|害兽|LLShifter|13|LLShifter",
+				"压倒兽潮|化兽者|LLShifter|害兽|LLShifter|18|LLShifter"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Bloodline",
+			"name": "血统",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 1,
+			"entries": [
+				"在第1级时，你从下述列表中选择最能体现你原初之力与偏好野兽的血统。",
+				"你的血统在第1级赋予你特性，并在你达到本职业第7、13和18级时再次给予。你的血统特性均使用你的化兽者豁免DC（见下文）。",
+				{
+					"ENG_name": "Bloodline Shapes",
+					"type": "entries",
+					"name": "血统形态",
+					"entries": [
+						"每条血统都与特定类型的野兽存在本能联结；这些野兽被称为其血统形态。{@loader Compendium of Beasts|creature/LaserLlama; Compendium of Beasts.json}中的野兽数据块会标明它们属于哪条（或哪些）血统。",
+						"至于其他野兽，请与你的DM一同决定它们分属七条血统中的哪一条（如果有的话）。 ",
+						{
+							"ENG_name": "Magical Taxonomy",
+							"type": "inset",
+							"name": "魔法分类学",
+							"entries": [
+								"虽然现实世界的动物被归入复杂的分类体系，但化兽者的神秘之力只运用六条血统：{@i 水栖}、{@i 飞禽}、{@i 蛮兽}、{@i 食肉}、{@i 昆虫}、{@i 爬行类}和{@i 害兽}。",
+								"不过，传说中提到过有化兽者唤起某种{@i 远古血统}野兽的力量......"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wild Shape",
+			"name": "荒野形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 1,
+			"entries": [
+				"同样在第1级，你获得变换形体的神秘能力，可化形为野兽形态，规则如下：",
+				{
+					"ENG_name": "Beast Shapes",
+					"type": "entries",
+					"name": "野兽形态",
+					"entries": [
+						"在第1级，你知晓一个来自你血统形态的{@filter 自选的挑战等级0或更低的野兽形态|bestiary|type=Beast|challenge rating=[&0;&0]|source=LLCompendiumOfBeasts}。你可以用附赠动作化形，化为任一你知晓的野兽形态。",
+						"当你化形时，你的数据会被野兽形态的数据取代，但你保留你的阵营、性格、{@u 生命值}以及智力、感知和魅力值。你还保留你所有的技能与豁免熟练，并同时获得该野兽的熟练项。若你与野兽形态共有一项熟练，则使用较高的加值。",
+						"若你陷入失能状态，或你用附赠动作解除化形，你便会变回正常形态。你可以从一种野兽形态直接化形为另一种。但在未变回正常形态的情况下于野兽形态中度过1小时后，你将立即变回正常形态。"
+					]
+				},
+				{
+					"ENG_name": "Diminutive Beasts",
+					"type": "entries",
+					"name": "超微型野兽",
+					"entries": [
+						"本职业提及的部分野兽形态采用了一种新的生物体型：{@u 超微型}。当你化形为超微型野兽形态时，若你受到{@u 任意}伤害或豁免失败，你将立即变回正常形态。"
+					]
+				},
+				{
+					"ENG_name": "Equipment",
+					"type": "entries",
+					"name": "装备",
+					"entries": [
+						"当你化形时，你可以选择让任何天然或未经精炼的装备\u2014\u2014例如木制、动物部位或其他未精炼材料制成的物品\u2014\u2014融入你的野兽形态。",
+						"但任何由精炼金属或其他高度加工材料制成的装备，例如金属武器或护甲，会在你化形时掉落至你所在的空间。"
+					]
+				},
+				{
+					"ENG_name": "Features & Spellcasting",
+					"type": "entries",
+					"name": "特性与施法",
+					"entries": [
+						"当你化形时，你保留来自职业、种族及其他来源的特性收益，只要该野兽在身体上能够使用，你便仍可使用它们。但你会失去所有特殊感官的收益，例如黑暗视觉，除非你的野兽形态同样具有该感官。",
+						"你在野兽形态下无法施法，但可以维持你在化形前所施展法术的专注。"
+					]
+				},
+				{
+					"ENG_name": "Mystic Empowerment",
+					"type": "entries",
+					"name": "神秘强化",
+					"entries": [
+						"你血液中的原初之力会激发野兽的全部潜能。当你化形时，你可以用化兽者豁免DC和化兽者攻击调整值取代该野兽的天生豁免DC与攻击调整值，除非野兽的加值更高。两者均使用你正常形态的体质修正值：",
+						{
+							"ENG_name": "Shifter save DC",
+							"type": "abilityDc",
+							"name": "化兽者豁免DC",
+							"attributes": [
+								"con"
+							]
+						},
+						{
+							"ENG_name": "Shifter attack modifier",
+							"type": "abilityAttackMod",
+							"name": "化兽者攻击调整值",
+							"attributes": [
+								"con"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"除非你的野兽形态的AC原本就更高，否则你在野兽形态下可以使用来自你血统的天生护甲AC。若你如此做，则使用你正常形态的属性值。"
+					]
+				},
+				{
+					"ENG_name": "Learning New Beast Shapes",
+					"type": "entries",
+					"name": "习得新野兽形态",
+					"entries": [
+						"在特定的化兽者等级，你会本能地学会化形为更强大的野兽，如化兽者表格中\"最大CR\"栏所示。每当你的最大CR提升时，你会本能地学会一个你选择的、挑战等级等于或低于该新CR的血统形态。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "bonus",
+					"cost": 1
+				}
+			},
+			"foundryImg": "icons/creatures/abilities/wolf-heads-swirl-purple.webp"
+		},
+		{
+			"ENG_name": "Primal Bond",
+			"name": "原初羁绊",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 2,
+			"entries": [
+				"在第2级，你与荒野的神秘羁绊得以加深。你可以与野兽进行言语交流并理解它们。这并不意味着野兽会自动对你友善。当你与野兽交流时，它的认知与回忆知识的能力受其智力值所限。",
+				"你也可以借助这份羁绊来习得更多野兽形态。你可以用一个动作触摸一只活的、非敌对的野兽，其挑战等级须在你最大CR的限制之内，并习得它的野兽形态。你能习得的野兽形态数量没有上限。"
+			],
+			"foundryImg": "icons/magic/nature/tree-animated-smile.webp"
+		},
+		{
+			"ENG_name": "Bestial Instincts",
+			"name": "兽性本能",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 3,
+			"entries": [
+				"你的本能使你能对危险做出快速反应。从第3级起，只要你没有失能或处于惊讶状态，你的先攻掷骰便具有优势；且当你掷先攻时，你可以化形为一种野兽形态。"
+			],
+			"foundryImg": "icons/creatures/mammals/cat-hunched-glowing-red.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 4,
+			"entries": [
+				"在第4级，你可以将一项属性值提升2点，或将两项属性值各提升1点。你不能以此特性将任何属性值提升至20以上。你在第8、12、16和19级会再次获得此特性。"
+			]
+		},
+		{
+			"ENG_name": "Feral Warrior",
+			"name": "野性战士",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 5,
+			"entries": [
+				"在第5级，你血液中的力量唤醒了蛰伏于你体内的凶性，给予你以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"每当你用动作疾走或撤离时，你可以用附赠动作进行一次天生武器攻击。",
+						"当你在正常形态下采取攻击动作时，你可以进行两次天生武器攻击而非一次。",
+						"当你处于野兽形态时，你可以使用该野兽数据块中的两个动作而非一个。若该野兽拥有多重攻击动作，你每回合只能使用一次。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Mystical Strikes",
+			"name": "神秘打击",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 5,
+			"entries": [
+				"同样在第5级，你的天生武器攻击视为魔法，用以克服对非魔法攻击和伤害的抗性与免疫。"
+			],
+			"foundryImg": "icons/commodities/claws/claw-brown-black.webp"
+		},
+		{
+			"ENG_name": "Adrenaline Surge",
+			"name": "肾上腺素飙升",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 6,
+			"entries": [
+				"从第6级起，你可以汲取自身的原初求生欲望，在战斗中坚持下去。每当你受到伤害时，你可以用反应获得等同于所受伤害的临时生命值。但这些临时生命值只能持续1分钟。",
+				"你可以使用此反应的次数等于你正常形态的体质修正值（至少一次），并在每次短休或长休结束时恢复所有已耗用的次数。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "reaction",
+					"cost": 1
+				},
+				"uses": {
+					"max": "max(1, @abilities.con.mod)",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/magic/life/crosses-trio-red.webp"
+		},
+		{
+			"ENG_name": "Bloodline Feature",
+			"name": "血统特性",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 7,
+			"entries": [
+				"你从你的血统处获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 8,
+			"entries": [
+				"在第8级，你可以将一项属性值提升2点，或将两项属性值各提升1点。你不能以此特性将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Wild Awareness",
+			"name": "荒野感知",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 9,
+			"entries": [
+				"在第9级，你的神秘能力赋予你对周遭环境的本能认知。当你结束一次短休或长休时，你获得{@spell 问道自然}的收益。"
+			],
+			"foundryImg": "icons/magic/nature/tree-animated-smile.webp"
+		},
+		{
+			"ENG_name": "Primal Resilience",
+			"name": "原初韧性",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 10,
+			"entries": [
+				"你血液中的神秘之力会在危急时刻增强你的韧性。从第10级起，若你豁免失败，你可以消耗一次肾上腺素飙升，在掷骰结果上加上你正常形态的体质修正值（至少+1），从而可能将失败转为成功。"
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-green.webp"
+		},
+		{
+			"ENG_name": "Primeval Form",
+			"name": "太古形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 11,
+			"entries": [
+				"从第11级起，当你化形为一种血统形态时，你可以为其注入太古之力。只要你维持该野兽形态，它便获得以下额外收益：",
+				{
+					"type": "list",
+					"items": [
+						"该野兽呈现出太古的外观，并在空间允许的前提下提升一个体型等级。",
+						"该野兽获得对非魔法攻击的钝击、穿刺和挥砍伤害的抗性。",
+						"该野兽在进行所有使用其力量或敏捷的属性检定和豁免检定时具有优势。"
+					]
+				},
+				"你可以变身太古形态三次。当你结束一次短休时，你恢复一次已耗用的次数；每当你结束一次长休时，你恢复所有已耗用的次数。"
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": "3",
+					"recovery": [
+						{
+							"formula": 1,
+							"period": "sr",
+							"type": "formula"
+						},
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 12,
+			"entries": [
+				"在第12级，你可以将一项属性值提升2点，或将两项属性值各提升1点。你不能以此特性将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Bloodline Feature",
+			"name": "血统特性",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 13,
+			"entries": [
+				"你从你的血统处获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Feral Senses",
+			"name": "野性感官",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 14,
+			"entries": [
+				"你如顶级掠食者般狩猎，从不丢失猎物的踪迹。从第14级起，你对你30尺内的目标进行的天生武器攻击不会具有劣势。"
+			],
+			"foundryImg": "icons/skills/targeting/crosshair-ringed-gray.webp"
+		},
+		{
+			"ENG_name": "Mythic Forms",
+			"name": "神话形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 15,
+			"entries": [
+				"在第15级，你获得化形为{@filter 挑战等级5|bestiary|type=Beast|challenge rating=[&0;&5]|source=LLCompendiumOfBeasts}的真正传奇野兽的能力。但对于你知晓的每个挑战等级5及以上的野兽形态，你每次短休或长休只能化形一次。"
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-breath-purple.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 16,
+			"entries": [
+				"在第16级，你可以将一项属性值提升2点，或将两项属性值各提升1点。你不能以此特性将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Primeval Resurgence",
+			"name": "太古复苏",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 17,
+			"entries": [
+				"你的血液中涌动着太古之力的源泉。从第17级起，每当你使用{@classFeature 荒野形态|化兽者|LLShifter|2|LLShifter}化形为一种血统形态时，你都可以获得太古形态的收益。"
+			],
+			"foundryImg": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp"
+		},
+		{
+			"ENG_name": "Bloodline Feature",
+			"name": "血统特性",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 18,
+			"entries": [
+				"你从你的血统处获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 19,
+			"entries": [
+				"在第19级，你可以将一项属性值提升2点，或将两项属性值各提升1点。你不能以此特性将任何属性值提升至20以上。"
+			]
+		},
+		{
+			"ENG_name": "Force of Nature",
+			"name": "自然之力",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 20,
+			"entries": [
+				"你的太古凶性无法被驯服。在第20级，你可以无限制地化形为{@filter 挑战等级为5或6的野兽形态|bestiary|type=Beast|challenge rating=[&5;&6]|source=LLCompendiumOfBeasts}。",
+				"此外，在战斗中你的每个回合开始时，你恢复一次{@classFeature 肾上腺素飙升|化兽者|LLShifter|6|LLShifter}的已耗用次数。"
+			],
+			"foundryImg": "icons/creatures/abilities/wolf-howl-moon-white.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Primal Resilience",
+			"name": "原初韧性",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"level": 10,
+			"activities": [
+				{
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Adrenaline Surge",
+										"name": "肾上腺素飙升"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Aquatic Bloodline",
+			"name": "水栖血统",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "水栖",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你与所有水中野兽结下了神秘羁绊。从最小的潮池到海洋那令人重压难当的深渊，你熟悉其中繁多的生灵。汲取它们的力量，你已成为波涛的野蛮武者。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "水栖形态|化兽者|LLShifter|水栖|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "水栖适应|化兽者|LLShifter|水栖|LLShifter|1|LLShifter"
+				}
+			],
+			"foundryImg": "icons/creatures/fish/fish-marlin-swordfight-blue.webp"
+		},
+		{
+			"ENG_name": "Aquatic Adaptation",
+			"name": "水栖适应",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "水栖",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你血统的力量改变了你的生理构造，在你未处于野兽形态时给予你以下水栖特质：",
+				{
+					"ENG_name": "Darkvision",
+					"type": "entries",
+					"name": "黑暗视觉",
+					"entries": [
+						"你获得60尺范围的黑暗视觉。若你处于水下，你的黑暗视觉范围翻倍。"
+					]
+				},
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"你的血肉覆盖着坚硬的鱼形甲壳，赋予你天生护甲，其护甲等级等于10 + 你的体质和敏捷修正值。"
+					]
+				},
+				{
+					"ENG_name": "Natural Weapons",
+					"type": "entries",
+					"name": "天生武器",
+					"entries": [
+						"你的双手长出阴毒的螫刺。它们是具有灵巧属性的天生武器，命中时造成1d8穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Oceanic Resilience",
+					"type": "entries",
+					"name": "海洋韧性",
+					"entries": [
+						"你获得寒冷伤害抗性，并免疫深水的负面效应。"
+					]
+				},
+				{
+					"ENG_name": "Piscine Physiology",
+					"type": "entries",
+					"name": "鱼类生理",
+					"entries": [
+						"你可以呼吸空气和水，并获得等同于你步行速度的游泳速度。"
+					]
+				}
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/7.webp"
+		},
+		{
+			"ENG_name": "Aquatic Shapes",
+			"name": "水栖形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "水栖",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 水栖血统1级特性}",
+				"你的血统赋予你对某些动物的本能认知。所有{@filter 带有水栖生物子类型的野兽|bestiary|type=Beast|tag=Aquatic}都是你的血统形态。"
+			],
+			"foundryImg": "icons/creatures/fish/fish-pirahna-tan.webp"
+		},
+		{
+			"ENG_name": "Crushing Force",
+			"name": "碾压之力",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "水栖",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你驾驭着深渊那无可抗拒的重压。每回合一次，当你以一次天生武器攻击命中一个目标时，你可以迫使其进行一次力量豁免。豁免失败者将被沿直线击退10尺，或其速度降低10尺直至其下回合开始。体型比你大的目标在此豁免中具有优势。",
+				"这两种效应的强度会随你本职业等级的提升而增强：第13级时为20尺，第18级时为30尺。"
+			],
+			"foundryImg": "icons/creatures/fish/squid-kraken-teal.webp"
+		},
+		{
+			"ENG_name": "Mystical Waters",
+			"name": "神秘水域",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "水栖",
+			"subclassSource": "LLShifter",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 水栖血统13级特性}",
+				"当你化形为一种血统形态时，你可以消耗一次肾上腺素飙升，为其注入神秘之力。在此期间，它获得等同于其游泳速度的飞行速度，且在其特性方面将空气视为水。"
+			],
+			"foundryImg": "icons/creatures/fish/fish-shark-swimming.webp"
+		},
+		{
+			"ENG_name": "Terror of the Deep",
+			"name": "深海之恐",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "水栖",
+			"subclassSource": "LLShifter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 水栖血统18级特性}",
+				"你是深渊中无可阻挡的力量。当你在水下处于血统形态时，你周围60尺的区域对你选择的生物而言是困难地形。当你使用神秘水域时，此半径减半为30尺。",
+				"最后，若有生物在水下对抗你的碾压之力时豁免失败，你可以放弃其常规效应，转而使该生物承受1级力竭。"
+			],
+			"foundryImg": "icons/creatures/fish/squid-kraken-orange.webp"
+		},
+		{
+			"ENG_name": "Avian Bloodline",
+			"name": "飞禽血统",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "飞禽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"高天与长风在召唤你，因为你血管中流淌着空中巨兽的原初之力。你对各种鸟类都有亲和力：从最小的鸣禽到天空的伟大掠食者，它们都是你的禽类眷族。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "飞禽形态|化兽者|LLShifter|飞禽|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "飞禽体构|化兽者|LLShifter|飞禽|LLShifter|1|LLShifter"
+				}
+			],
+			"foundryImg": "icons/creatures/birds/corvid-call-sound-blue.webp"
+		},
+		{
+			"ENG_name": "Avian Anatomy",
+			"name": "飞禽体构",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "飞禽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你的血统赋予你飞禽般的优雅，在你未处于野兽形态时给予你以下飞禽特质：",
+				{
+					"ENG_name": "Featherweight Frame",
+					"type": "entries",
+					"name": "轻羽体格",
+					"entries": [
+						"你可以用附赠动作采取疾走动作。每当你疾走时，针对你的借机攻击具有劣势，且在该回合余下的时间里，你进行所有特技检定时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"你轻盈的体格与羽毛使你难以被击中。你获得天生护甲，其护甲等级等于10 + 你的体质和敏捷修正值。"
+					]
+				},
+				{
+					"ENG_name": "Natural Weapons",
+					"type": "entries",
+					"name": "天生武器",
+					"entries": [
+						"你的手指化作尖锐的爪。它们是具有轻型属性的天生武器，命中时造成1d6挥砍伤害，并使用你的敏捷进行攻击掷骰和伤害掷骰。"
+					]
+				}
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/7.webp"
+		},
+		{
+			"ENG_name": "Avian Shapes",
+			"name": "飞禽形态",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "飞禽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 飞禽血统1级特性}",
+				"你的血统赋予你对某些动物的本能认知。所有{@filter 带有飞禽生物子类型的野兽|bestiary|type=Beast|tag=Avian}均视为你的血统形态。"
+			],
+			"foundryImg": "icons/creatures/birds/duck-green.webp"
+		},
+		{
+			"ENG_name": "Swift Wing",
+			"name": "迅捷之翼",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "飞禽",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 飞禽血统7级特性}",
+				"你血液中的神秘之力使你即使没有翅膀也能翱翔天际。每当你在一个没有飞行速度的形态下采取疾走动作时，你获得等同于你步行速度的临时飞行速度，直至你的回合结束。",
+				"此外，只要你拥有飞行速度，你的敏捷豁免便具有优势。"
+			],
+			"foundryImg": "icons/creatures/birds/raptor-owl-flying-moon.webp"
+		},
+		{
+			"ENG_name": "Driving Squall",
+			"name": "狂风驱袭",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "飞禽",
+			"subclassSource": "LLShifter",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 飞禽血统13级特性}",
+				"你与天空野兽的羁绊赋予你对风的掌控。在血统形态下，你可以用附赠动作以狂风袭卷敌人。选择一处相邻的20尺锥形区域、一条30尺×5尺直线，或以你为中心的10尺半径区域。",
+				"该区域内的生物必须通过一次力量豁免，否则将被沿直线掷离你20尺。生物体型每比你大一级，该距离便减半。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "bonus",
+					"cost": 1
+				}
+			},
+			"foundryImg": "icons/creatures/birds/corvid-flying-wings-purple.webp"
+		},
+		{
+			"ENG_name": "Master of the Winds",
+			"name": "御风大师",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "飞禽",
+			"subclassSource": "LLShifter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 飞禽血统18级特性}",
+				"你是驭使吹拂诸界之风的大师。你可以用附赠动作运用狂风侵袭，在你相邻的空间制造{@spell 旋风术（变体）|llspell}法术的效应。",
+				"当你如此做时，此效应使用你的化兽者豁免DC：它不需要{@status 专注}，且你免疫其效应。你可以用附赠动作运用狂风侵袭，只要你与其相邻，便可将{@spell 旋风术（变体）|llspell}移动至多30尺。",
+				"一旦你使用了此特性，你必须结束一次短休或长休，才能再召出另一道{@spell 旋风术（变体）|llspell}。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "bonus",
+					"cost": 1
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-blue-grey.webp"
+		},
+		{
+			"ENG_name": "Brute Bloodline",
+			"name": "蛮兽血统",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "蛮兽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你血管中流淌着荒野巨兽之力，赋予你原初的韧性。有些人的力量是守护野兽所赐，还有些人则被授予原初能力，以充当最微小生灵的保护者。无论起源如何，蛮兽血统者都如最伟大的巨兽般坚定不移。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "蛮兽形态|化兽者|LLShifter|蛮兽|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "蛮兽生理|化兽者|LLShifter|蛮兽|LLShifter|1|LLShifter"
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/beast-horned-scaled-glowing-orange.webp"
+		},
+		{
+			"ENG_name": "Brute Shapes",
+			"name": "蛮兽形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "蛮兽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 蛮兽血统1级特性}",
+				"你的血统赋予你对某些动物的本能认知。所有{@filter 带有蛮兽生物子类型的野兽|bestiary|type=Beast|tag=Brute}均视为你的血统形态。"
+			],
+			"foundryImg": "icons/creatures/mammals/deer-antlers-blue.webp"
+		},
+		{
+			"ENG_name": "Brutish Biology",
+			"name": "蛮兽生理",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "蛮兽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你血液中的力量使你变得坚韧，在你未处于野兽形态时给予你以下蛮兽特质：",
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"你长出蓬乱的粗毛或增厚的皮肤。你拥有天生护甲，其护甲等级等于10 + 你的体质和力量修正值。"
+					]
+				},
+				{
+					"ENG_name": "Natural Weapons",
+					"type": "entries",
+					"name": "天生武器",
+					"entries": [
+						"你的头骨增厚，或长出兽角；它们是天生武器，命中时造成1d10钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Primal Fortitude",
+					"type": "entries",
+					"name": "原初坚毅",
+					"entries": [
+						"每当你进行力量检定或力量豁免时，你可以在掷骰结果上加上你正常形态的体质修正值（至少+1）。"
+					]
+				},
+				{
+					"ENG_name": "Stout Frame",
+					"type": "entries",
+					"name": "健壮体格",
+					"entries": [
+						"你的生命值上限提升1点，且你每再获得一个化兽者等级便再提升1点。"
+					]
+				}
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/7.webp"
+		},
+		{
+			"ENG_name": "Resilient Hide",
+			"name": "坚韧兽皮",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "蛮兽",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 蛮兽血统7级特性}",
+				"你的蛮兽被注入了神秘的坚毅。每当你以血统形态开始你的回合时，你可以选择获得等同于该野兽体质修正值的临时生命值（至少为1）。",
+				"此外，只要你拥有临时生命值，你便获得对钝击、穿刺和挥砍伤害的抗性。"
+			],
+			"foundryImg": "icons/commodities/leather/fur-simple-brown.webp"
+		},
+		{
+			"ENG_name": "Stampede",
+			"name": "狂奔践踏",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "蛮兽",
+			"subclassSource": "LLShifter",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 蛮兽血统13级特性}",
+				"你血液中的原初之力驱使你陷入怒火发作。你可以用一个动作沿直线移动至多等同你速度的距离，迫使所有你穿过的生物进行一次力量豁免。",
+				"豁免失败者将依据你的体型受到下表所示的钝击伤害，且若目标体型比你小，它还会倒地。豁免成功者受到一半的钝击伤害，且不会倒地。",
+				{
+					"type": "table",
+					"colLabels": [
+						"体型",
+						"伤害"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"微型",
+							"{@damage 1d12}"
+						],
+						[
+							"小型",
+							"{@damage 2d12}"
+						],
+						[
+							"中型",
+							"{@damage 3d12}"
+						],
+						[
+							"大型",
+							"{@damage 4d12}"
+						],
+						[
+							"巨型",
+							"{@damage 5d12}"
+						],
+						[
+							"超巨型",
+							"{@damage 6d12}"
+						]
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "action",
+					"cost": 1
+				}
+			},
+			"foundryImg": "icons/creatures/mammals/ox-buffalo-horned-green.webp"
+		},
+		{
+			"ENG_name": "Great Behemoth",
+			"name": "伟岸巨兽",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "蛮兽",
+			"subclassSource": "LLShifter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 蛮兽血统18级特性}",
+				"在罕见的时刻，你可以显现血统的全部原初之力，变身为一头伟岸巨兽。当你使用{@classFeature 太古形态|化兽者|LLShifter|11|LLShifter}时，你可以选择让该野兽形态化为伟岸巨兽，获得以下额外收益：",
+				{
+					"type": "list",
+					"items": [
+						"若它尚未达到巨型，其体型变为巨型。",
+						"体型小于巨型的生物在抵抗你的{@subclassFeature 狂奔践踏|化兽者|LLShifter|蛮兽|LLShifter|13|LLShifter}特性的力量豁免上具有劣势。",
+						"它的天生武器攻击额外造成{@damage 1d12}伤害。",
+						"它抵抗除力场和心灵伤害外的所有伤害。"
+					]
+				},
+				"一旦你使用了此特性，你必须结束一次短休或长休，才能再次使用你的伟岸巨兽形态。"
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/creatures/mammals/bull-horned-blue.webp"
+		},
+		{
+			"ENG_name": "Carnivore Bloodline",
+			"name": "食肉血统",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "食肉",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你的血管中流淌着太古猎手的血液。这些兽性武者往往是强大兽化人或变形者德鲁伊的后裔，对鲜血与战斗怀有本能的渴望。食肉血统的化兽者以化作野蛮掠食野兽之形而闻名，在战斗中是令人生畏的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "食肉形态|化兽者|LLShifter|食肉|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "食肉体魄|化兽者|LLShifter|食肉|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "捕猎冲动|化兽者|LLShifter|食肉|LLShifter|1|LLShifter"
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/wolf-howl-moon-gray.webp"
+		},
+		{
+			"ENG_name": "Carnivore Shapes",
+			"name": "食肉形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "食肉",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 食肉血统1级特性}",
+				"你的血统赋予你对某些野兽的本能认知。{@filter 带有食肉生物子类型的野兽|bestiary|type=Beast|tag=Carnivore}均视为你的血统形态。"
+			],
+			"foundryImg": "icons/creatures/abilities/paw-print-tan.webp"
+		},
+		{
+			"ENG_name": "Carnivorous Physique",
+			"name": "食肉体魄",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "食肉",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"狩猎的原初驱力改变了你的生理构造，在你未处于野兽形态时给予你以下食肉特质：",
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"你的躯体经淬炼以对抗猎物，赋予你天生护甲，其护甲等级为10 + 你的力量和体质修正值。"
+					]
+				},
+				{
+					"ENG_name": "Natural Weapons",
+					"type": "entries",
+					"name": "天生武器",
+					"entries": [
+						"你长出利爪或致命的獠牙。它们是兼具轻型与灵巧属性的天生武器，命中时造成1d6挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Primal Sense",
+					"type": "entries",
+					"name": "原初感官",
+					"entries": [
+						"当你进行基于嗅觉的属性检定时，你将d20掷出的7或更低的结果视为8。"
+					]
+				}
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/7.webp"
+		},
+		{
+			"ENG_name": "Prey Drive",
+			"name": "捕猎冲动",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "食肉",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你血液中的远古本能驱使你去狩猎。当你化形为一种血统形态时，你可以将一个你可见的敌对生物标记为你的猎物。你也可以在血统形态下花费一个动作，分析某个生物经过的痕迹（如足迹等），将其标记为你的猎物。",
+				"它将持续作为你的猎物1小时，直到它被杀死、你将另一个生物标记为你的猎物，或你离开该野兽形态。在此期间，你获得以下收益与减益：",
+				{
+					"type": "list",
+					"items": [
+						"你对猎物的天生武器攻击在d20掷出19或20时造成重击，但你对所有其他目标的攻击具有劣势。",
+						"当你进行使用嗅觉来追踪猎物的属性检定时，你的掷骰具有优势。",
+						"你的步行速度增加10尺。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "action",
+					"cost": 1
+				}
+			},
+			"foundryImg": "icons/creatures/abilities/paw-print-tan.webp"
+		},
+		{
+			"ENG_name": "Primal Bloodlust",
+			"name": "原初嗜血",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "食肉",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 食肉血统7级特性}",
+				"尝到血腥味时，你便会释放凶性。当你以一次天生武器攻击命中你的猎物时，你可以消耗一次肾上腺素飙升来强化你的捕猎冲动。在其持续期间，你对猎物的天生武器攻击具有优势，且你无法被受擒、麻痹或束缚。"
+			],
+			"foundryImg": "icons/creatures/abilities/cougar-roar-rush-orange.webp"
+		},
+		{
+			"ENG_name": "Apex Predator",
+			"name": "顶级掠食者",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "食肉",
+			"subclassSource": "LLShifter",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 食肉血统13级特性}",
+				"你被驱使着追猎宿敌，直至狩猎终结。你被猎物迫使进行的任何豁免检定都具有优势，且你对猎物的天生武器攻击现在在d20掷出18-20时造成重击。",
+				"在第18级，此重击范围扩大至17-20。"
+			],
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown-green.webp"
+		},
+		{
+			"ENG_name": "Primeval Frenzy",
+			"name": "太古狂乱",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "食肉",
+			"subclassSource": "LLShifter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 食肉血统18级特性}",
+				"远古的掠食本能驱使你在死亡边缘继续战斗。若你的生命值降至0且捕猎冲动处于激活状态，你不会陷入昏迷，且可以获得临时生命值。在你恢复生命值之前，你仍须继续进行死亡豁免检定，若累计失败三次即告死亡。"
+			],
+			"foundryImg": "icons/magic/life/ankh-gold-blue.webp"
+		},
+		{
+			"ENG_name": "Insect Bloodline",
+			"name": "昆虫血统",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你的血液与所有昆虫、蛛类和节肢动物\u2014\u2014那些爬行、蠕动、螫刺的生物\u2014\u2014相联结。你是化兽者中最奇特的一支，运用你的虫态之力来困住并瘫痪敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "昆虫形态|化兽者|LLShifter|昆虫|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "虫态演化|化兽者|LLShifter|昆虫|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "螫刺打击|化兽者|LLShifter|昆虫|LLShifter|1|LLShifter"
+				}
+			],
+			"foundryImg": "icons/creatures/invertebrates/spider-web-red.webp"
+		},
+		{
+			"ENG_name": "Insect Shapes",
+			"name": "昆虫形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 昆虫血统1级特性}",
+				"你的血统赋予你对某些动物的本能认知。{@filter 带有昆虫生物子类型的野兽|bestiary|type=Beast|tag=Insect}均视为你的血统形态。"
+			],
+			"foundryImg": "icons/creatures/invertebrates/spider-dotted-green.webp"
+		},
+		{
+			"ENG_name": "Insectoid Evolution",
+			"name": "虫态演化",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你的血统赋予你虫态之力，在你未处于野兽形态时给予你以下昆虫特质：",
+				{
+					"ENG_name": "Arachnoid Grip",
+					"type": "entries",
+					"name": "蛛形攀附",
+					"entries": [
+						"你获得等同于你步行速度的攀爬速度，且你可以攀爬困难及陡峭的表面（包括倒挂），无需进行属性检定。"
+					]
+				},
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"你的血肉覆盖着坚硬的虫形甲壳，赋予你天生护甲，其护甲等级等于10 + 你的体质和敏捷修正值。"
+					]
+				},
+				{
+					"ENG_name": "Natural Weapons",
+					"type": "entries",
+					"name": "天生武器",
+					"entries": [
+						"你的双手长出阴毒的螫刺。它们是具有灵巧属性的天生武器，命中时造成1d8穿刺伤害。"
+					]
+				}
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/7.webp"
+		},
+		{
+			"ENG_name": "Stinging Strike",
+			"name": "螫刺打击",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 昆虫血统1级特性}",
+				"你血液中的力量使你的身体产生强效毒素。每回合一次，当你以一次天生武器攻击命中一个生物时，你可以迫使其进行一次体质豁免。豁免失败者受到1d8额外毒素伤害，并陷入中毒状态，直至你的下回合开始。",
+				"当你达到第7级（2d8）、第13级（3d8）和第18级（4d8）时，螫刺打击的伤害提升1d8。"
+			],
+			"foundryImg": "icons/creatures/invertebrates/spider-skull-green.webp"
+		},
+		{
+			"ENG_name": "Corrosive Stings",
+			"name": "腐蚀螫刺",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的毒素被注入了原初之力。当你的血统或野兽形态特性造成毒素伤害时，你可以选择改为造成强酸伤害。"
+			],
+			"foundryImg": "icons/magic/acid/dissolve-bone-white.webp"
+		},
+		{
+			"ENG_name": "Swarm Shape",
+			"name": "集群形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你与最微小的昆虫之间的神秘羁绊使你能加入它们的集群。只要集群属于昆虫集群，你便可以习得其野兽形态并化形为集群。当你化形为一个昆虫集群时，你适用以下规则： ",
+				{
+					"type": "list",
+					"items": [
+						"你获得等同于你化兽者等级两倍 + 你的体质修正值的临时生命值。若这些临时生命值降至0，你立即变回正常形态，然后承受任何剩余的伤害。",
+						"当你使用集群的连打攻击时，你以这些临时生命值替代你当前的生命值，来决定该连打攻击造成的伤害。 "
+					]
+				},
+				"你在每次短休或长休之间可以免费化形为昆虫集群一次，之后你必须消耗一次肾上腺素飙升才能再次化形为昆虫集群。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "bonus",
+					"cost": 1
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/creatures/invertebrates/wasp-swarm-attack.webp"
+		},
+		{
+			"ENG_name": "Iridescent Escape",
+			"name": "虹彩遁逃",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 昆虫血统13级特性}",
+				"你可以引导虫态之力逃离危险。当你消耗一次肾上腺素飙升时，你可以移动至多30尺至一个未被占据的空间，且不会引发借机攻击。作为此反应的一部分，你可以化形为一种血统形态。"
+			],
+			"foundryImg": "icons/skills/movement/figure-running-gray.webp"
+		},
+		{
+			"ENG_name": "Deadly Neurotoxin",
+			"name": "致命神经毒素",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 昆虫血统18级特性}",
+				"你的太古毒素同时折磨肉体与心智。当你迫使一个生物进行豁免以抵抗中毒时，你可以将其改为一次智力豁免；若目标以5点或更多失败，它将陷入麻痹而非中毒。"
+			],
+			"foundryImg": "icons/skills/toxins/cup-glass-poisoned-held.webp"
+		},
+		{
+			"ENG_name": "Reptilian Bloodline",
+			"name": "爬行类血统",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你的血液承载着远古鳞片与利爪的记忆。无论你是邪恶诅咒的受害者，还是爬行类邪教的选中子嗣，你的血脉如今都承载着爬行类的冷血之力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "爬行类形态|化兽者|LLShifter|爬行类|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "爬行类生理|化兽者|LLShifter|爬行类|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "蛇形潜猎者|化兽者|LLShifter|爬行类|LLShifter|1|LLShifter"
+				}
+			],
+			"foundryImg": "icons/creatures/reptiles/snake-fangs-bite-green.webp"
+		},
+		{
+			"ENG_name": "Reptilian Physiology",
+			"name": "爬行类生理",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你血统的力量在你未处于野兽形态时给予你以下爬行类特质：",
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"你全身覆盖着薄薄的鳞光；这天生护甲赋予你的护甲等级为10 + 你的敏捷和体质修正值。"
+					]
+				},
+				{
+					"ENG_name": "Natural Weapons",
+					"type": "entries",
+					"name": "天生武器",
+					"entries": [
+						"你的双手长出细长的利爪。它们是兼具轻型与灵巧属性的天生武器，命中时造成1d6挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Sticky Grip",
+					"type": "entries",
+					"name": "黏附抓握",
+					"entries": [
+						"你获得等同于你步行速度的攀爬速度，且你可以攀爬困难及陡峭的表面（包括倒挂于天花板上），无需进行属性检定。"
+					]
+				}
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/7.webp"
+		},
+		{
+			"ENG_name": "Reptilian Shapes",
+			"name": "爬行类形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 爬行类血统1级特性}",
+				"你的血统赋予你对某些动物的本能认知。{@filter 带有爬行类生物子类型的野兽|bestiary|type=Beast|tag=Reptilian}均视为你的血统形态。"
+			],
+			"foundryImg": "icons/creatures/reptiles/snake-poised-white.webp"
+		},
+		{
+			"ENG_name": "Serpentine Stalker",
+			"name": "蛇形潜猎者",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 爬行类血统1级特性}",
+				"你的行动如爬行类掠食者般流畅而无声。你获得隐匿技能熟练。若你已拥有熟练，则每当你进行隐匿检定时，你将d20掷出的7或更低的结果视为8。",
+				"此外，当你处于血统形态时，你可以用附赠动作采取撤离动作。"
+			],
+			"foundryImg": "icons/creatures/reptiles/snake-poised-white.webp"
+		},
+		{
+			"ENG_name": "Adaptive Camouflage",
+			"name": "适应迷彩",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 爬行类血统7级特性}",
+				"你的爬行类皮肤能够适应并融入任何环境。你可以用一个动作消耗一次{@classFeature 肾上腺素飙升|化兽者|LLShifter|6|LLShifter}，如{@spell 隐形术}法术般进入{@condition 隐形}状态10分钟。",
+				"与该法术不同，此能力不需要{@status 专注}。"
+			],
+			"foundryImg": "icons/creatures/reptiles/chameleon-camouflage-green-brown.webp"
+		},
+		{
+			"ENG_name": "Coiled Strike",
+			"name": "盘绕突袭",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你以太古致命的速度袭向宿敌。当你处于血统形态时，你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你的借机攻击具有优势。",
+						"在一个你能感知到的生物攻击你之后，你可以用你的反应对其进行一次借机攻击。",
+						"若你本轮已使用过反应，你可以消耗一次肾上腺素飙升来再进行一次反应。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "reaction",
+					"cost": 1
+				}
+			},
+			"foundryImg": "icons/creatures/reptiles/snake-fangs-bite-green.webp"
+		},
+		{
+			"ENG_name": "Crushing Might",
+			"name": "绞缠之力",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 爬行类血统13级特性}",
+				"你以太古之力碾碎猎物。当一个生物以被你受擒或束缚的状态开始其回合时，它必须进行一次力量豁免。豁免失败者受到等同于你等级的钝击伤害，且在该回合进行的所有属性检定、攻击掷骰和豁免检定均具有劣势。",
+				"若你处于血统形态，你可以用你的反应使这次力量豁免具有劣势。"
+			],
+			"foundryImg": "icons/skills/wounds/bone-broken-marrow-yellow.webp"
+		},
+		{
+			"ENG_name": "Primeval Predator",
+			"name": "太古掠食者",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 爬行类血统18级特性}",
+				"你掌握了爬行动物历经岁月演化出的掠食特质。你获得一种特殊的盲视，使你能察觉120尺内任何物体散发的热量。",
+				"最后，你获得第二个反应，可在每轮使用。不过，每个触发条件你只能使用一次反应。"
+			],
+			"foundryImg": "icons/creatures/reptiles/dragon-horned-blue.webp"
+		},
+		{
+			"ENG_name": "Vermin Bloodline",
+			"name": "害兽血统",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "害兽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"害兽无处不在却鲜少得见，它们在每个环境中爬行、攀爬与掘穴。你与这些最微小的生灵血脉相连，能化作它们的形态，引导它们卑微的力量，以压倒哪怕最强大的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "害兽形态|化兽者|LLShifter|害兽|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "害兽体构|化兽者|LLShifter|害兽|LLShifter|1|LLShifter"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "瘟疫携带者|化兽者|LLShifter|害兽|LLShifter|1|LLShifter"
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp"
+		},
+		{
+			"ENG_name": "Plague Bearer",
+			"name": "瘟疫携带者",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "害兽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 害兽血统1级特性}",
+				"你的血脉携带着远古的瘟疫与疾病。当你以一次天生武器攻击命中一个生物时，它无法恢复生命值，直至你的下回合开始。"
+			],
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp"
+		},
+		{
+			"ENG_name": "Vermin Shapes",
+			"name": "害兽形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "害兽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 害兽血统1级特性}",
+				"你的血统赋予你对某些动物的本能认知。{@filter 带有害兽生物子类型的野兽|bestiary|type=Beast|tag=Vermin}均视为你的血统形态。"
+			],
+			"foundryImg": "icons/creatures/mammals/rodent-rat-green.webp"
+		},
+		{
+			"ENG_name": "Verminous Anatomy",
+			"name": "害兽体构",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "害兽",
+			"subclassSource": "LLShifter",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你血统的力量在你未处于野兽形态时给予你以下害兽特质：",
+				{
+					"ENG_name": "Darkvision",
+					"type": "entries",
+					"name": "黑暗视觉",
+					"entries": [
+						"你获得60尺范围的黑暗视觉。若你已拥有黑暗视觉，其范围增加60尺。"
+					]
+				},
+				{
+					"ENG_name": "Natural Armor",
+					"type": "entries",
+					"name": "天生护甲",
+					"entries": [
+						"你的皮肤覆盖着纤细而粗硬的毛，赋予你天生护甲，其护甲等级等于10 + 你的体质和敏捷修正值。"
+					]
+				},
+				{
+					"ENG_name": "Natural Weapons",
+					"type": "entries",
+					"name": "天生武器",
+					"entries": [
+						"你的牙齿化作粗厚虬结的獠牙。它们是兼具灵巧与轻型属性的天生武器，命中时造成1d6穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Scamper",
+					"type": "entries",
+					"name": "疾窜",
+					"entries": [
+						"当你化形为一种血统形态时，你还获得撤离或躲藏动作之一的收益。"
+					]
+				}
+			],
+			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/LLShifter/7.webp"
+		},
+		{
+			"ENG_name": "Swarm Shape",
+			"name": "集群形态",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "害兽",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你与最微小的害兽之间的神秘羁绊使你能加入它们的集群。只要集群属于害兽集群，你便可以习得其野兽形态并化形为集群。你还习得一个你选择的害兽集群野兽形态。当你化形为一个害兽集群时，你适用以下规则： ",
+				{
+					"type": "list",
+					"items": [
+						"你获得等同于你化兽者等级两倍 + 你的体质修正值的临时生命值。若这些临时生命值降至0，你立即变回正常形态，然后承受任何剩余的伤害。",
+						"当你使用集群的连打攻击时，你以这些临时生命值替代你当前的生命值，来决定连打攻击造成的伤害。",
+						"对你化兽者特性和瘟疫携带者特性而言，集群的连打攻击视为天生武器攻击。"
+					]
+				},
+				"你在每次短休或长休之间可以免费化形为害兽集群一次。不过在此之后，你必须消耗一次肾上腺素飙升才能再次化形为害兽集群。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "bonus",
+					"cost": 1
+				},
+				"uses": {
+					"max": "1",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/creatures/mammals/bats-movement-flying-purple.webp"
+		},
+		{
+			"ENG_name": "Unseen Infiltrators",
+			"name": "无形潜入者",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "害兽",
+			"subclassSource": "LLShifter",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 害兽血统13级特性}",
+				"当你使用荒野感知时，你获知并理解3英里半径内所有害兽的情报。此举可在聚居地、洞穴和荒野中使用。它会揭示通路、藏身之处、危险生物的位置以及陷阱。"
+			],
+			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp"
+		},
+		{
+			"ENG_name": "Overwhelming Horde",
+			"name": "压倒兽潮",
+			"source": "LLShifter",
+			"page": 0,
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "害兽",
+			"subclassSource": "LLShifter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 害兽血统18级特性}",
+				"你可以驱使大批害兽压倒敌人。你可以用一个动作使30尺内一个你可见的生物被害兽大军侵扰，它必须进行一次敏捷豁免。",
+				"豁免失败者会被害兽覆盖，直至它受到等同于你等级两倍的伤害为止，其速度减半，且其攻击掷骰、属性检定和敏捷豁免具有劣势。豁免成功者仍会被覆盖，但只需受到等同于你等级的伤害，此效应便会结束。",
+				"一旦你使用了此特性，你必须结束一次短休或长休，才能再次唤来压倒兽潮。"
+			],
+			"foundryImg": "icons/creatures/mammals/bat-movement-flying-blue-purple.webp"
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Mystical Waters",
+			"name": "神秘水域",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "水栖",
+			"subclassSource": "LLShifter",
+			"level": 13,
+			"activities": [
+				{
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Adrenaline Surge",
+										"name": "肾上腺素飙升"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Primal Bloodlust",
+			"name": "原初嗜血",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "食肉",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"activities": [
+				{
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Adrenaline Surge",
+										"name": "肾上腺素飙升"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Swarm Shape",
+			"name": "集群形态",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "昆虫",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "Free Swarm Shape",
+					"name": "免费集群形态",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Swarm Shape",
+										"name": "集群形态"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Spend an Adrenaline Surge",
+					"name": "消耗一次肾上腺素飙升",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Adrenaline Surge",
+										"name": "肾上腺素飙升"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Adaptive Camouflage",
+			"name": "适应迷彩",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"activities": [
+				{
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Adrenaline Surge",
+										"name": "肾上腺素飙升"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Coiled Strike",
+			"name": "盘绕突袭",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "爬行类",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "First Opportunity Attack",
+					"name": "首次借机攻击",
+					"type": "utility"
+				},
+				{
+					"ENG_name": "Spend an Adrenaline Surge",
+					"name": "消耗一次肾上腺素飙升",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Adrenaline Surge",
+										"name": "肾上腺素飙升"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Swarm Shape",
+			"name": "集群形态",
+			"source": "LLShifter",
+			"className": "化兽者",
+			"classSource": "LLShifter",
+			"subclassShortName": "害兽",
+			"subclassSource": "LLShifter",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "Free Swarm Shape",
+					"name": "免费集群形态",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Swarm Shape",
+										"name": "集群形态"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Spend an Adrenaline Surge",
+					"name": "消耗一次肾上腺素飙升",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Adrenaline Surge",
+										"name": "肾上腺素飙升"
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
