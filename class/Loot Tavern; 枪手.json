@@ -1,0 +1,2201 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ZGttEoT",
+				"abbreviation": "ZGttEoT",
+				"full": "扎曼的时间尽头指南",
+				"url": "https://www.kickstarter.com/projects/saltybot/zamans-guide-to-the-end-of-times-and-how-to-fix-it",
+				"version": "0.5",
+				"authors": [
+					"Christian \"Crimser\" Bruderer",
+					"João Araújo",
+					"Max Wartelle"
+				],
+				"convertedBy": [
+					"Riften"
+				]
+			}
+		],
+		"optionalFeatureTypes": {
+			"FA:B": "火器附件：枪管",
+			"FA:M": "火器附件：近战",
+			"FA:U": "火器附件：枪口",
+			"FA:S": "火器附件：瞄具",
+			"FA:X": "火器附件：杂项"
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1744806180,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "6be1130af9"
+	},
+	"class": [
+		{
+			"ENG_name": "Gunner",
+			"name": "枪手",
+			"source": "ZGttEoT",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"intimidation",
+								"perception",
+								"persuasion",
+								"sleight of hand",
+								"stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"tools": [
+					"铁匠工具或修补工具"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@item 步枪|ZGttEoT}或 (b) 两把{@item 手枪|ZGttEoT}",
+					"(a) 一个{@item 地城套组|phb}或 (b) 一个{@item 探索套组|phb}",
+					"(a) 铁匠工具或 (b) 修补工具",
+					"{@item 皮甲|phb|皮甲}、一把{@item 匕首|phb|匕首}和20枚{@item 枪械子弹|xphb}"
+				],
+				"goldAlternative": "{@dice 4d4*10}",
+				"defaultData": [
+					{
+						"_": [
+							"皮甲|phb",
+							"匕首|phb",
+							{
+								"item": "枪械子弹|xphb",
+								"quantity": 20
+							}
+						]
+					},
+					{
+						"a": [
+							"步枪|ZGttEoT"
+						],
+						"b": [
+							"手枪|ZGttEoT",
+							"手枪|ZGttEoT"
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					},
+					{
+						"a": [
+							"铁匠工具|phb"
+						],
+						"b": [
+							"修补工具|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"{@filter 军用远程武器|items|type=军用武器;远程武器=sand}"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"锐气",
+						"附件总数",
+						"每件武器附件数"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							1
+						],
+						[
+							2,
+							2,
+							1
+						],
+						[
+							2,
+							2,
+							1
+						],
+						[
+							3,
+							3,
+							2
+						],
+						[
+							3,
+							3,
+							2
+						],
+						[
+							3,
+							3,
+							2
+						],
+						[
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							4,
+							2
+						],
+						[
+							4,
+							4,
+							2
+						],
+						[
+							4,
+							4,
+							2
+						],
+						[
+							4,
+							4,
+							2
+						],
+						[
+							5,
+							5,
+							3
+						],
+						[
+							5,
+							5,
+							3
+						],
+						[
+							5,
+							5,
+							3
+						],
+						[
+							5,
+							5,
+							3
+						],
+						[
+							6,
+							6,
+							4
+						],
+						[
+							6,
+							6,
+							4
+						],
+						[
+							6,
+							6,
+							4
+						],
+						[
+							6,
+							6,
+							4
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"锐气|枪手|ZGttEoT|1",
+				"子弹时间（×1）|枪手|ZGttEoT|2",
+				"火器附件|枪手|ZGttEoT|2",
+				"幸运技能|枪手|ZGttEoT|3",
+				"枪手信条|枪手|ZGttEoT|3",
+				"属性值提升|枪手|ZGttEoT|4",
+				"额外攻击|枪手|ZGttEoT|5",
+				"快速拔枪|枪手|ZGttEoT|6",
+				{
+					"classFeature": "枪手信条特性|枪手|ZGttEoT|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|枪手|ZGttEoT|8",
+				"进阶锐气|枪手|ZGttEoT|9",
+				"皮糙肉厚|枪手|ZGttEoT|10",
+				{
+					"classFeature": "枪手信条特性|枪手|ZGttEoT|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|枪手|ZGttEoT|12",
+				"激昂冲锋|枪手|ZGttEoT|13",
+				"双连发|枪手|ZGttEoT|14",
+				{
+					"classFeature": "枪手信条特性|枪手|ZGttEoT|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|枪手|ZGttEoT|16",
+				"子弹时间（×2）|枪手|ZGttEoT|17",
+				{
+					"classFeature": "枪手信条特性|枪手|ZGttEoT|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|枪手|ZGttEoT|19",
+				"终极武器|枪手|ZGttEoT|20"
+			],
+			"subclassTitle": "枪手信条",
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Gunner",
+			"name": "枪手",
+			"source": "ZGttEoT",
+			"entries": [
+				{
+					"ENG_name": "Gunner",
+					"name": "枪手",
+					"source": "ZGttEoT",
+					"type": "section",
+					"entries": [
+						"手稳息定，一只伪装好的蝎人埋伏在狂风呼啸的悬崖顶上，透过步枪瞄具凝视远方。尽管他花了十分钟才校准出完美的一枪，但当深红的血花溅洒在下方便被烈日灼烤的岩石上时，他的耐心得到了回报。",
+						"大地在幽影骏马的冲锋下震颤，马背上骑着一头咧嘴而笑的耳廓狐人，双枪喷吐火舌。悔之晚矣的路匪惊慌四散，试图逃离践踏而来的铁蹄......却终究倒在骤然而至的灼热弹雨之中。",
+						"烟雾、汗水与火药味在工坊中经久不散，一位鹏裔铁匠彻夜劳作，锤声每响一次，她的决心便坚定一分。黎明到来之时，她将握着那枚完美的子弹，为家人复仇。",
+						"无论是作为文明边缘边境市镇的坚定守护者，还是在身后留下一串被洗劫一空的银行金库的冷酷亡命徒，枪手们都用一声声清脆的枪响在世界上刻下自己的印记。机敏狡黠、足智多谋、快若闪电，这些致命的射手总在敌人最意想不到的时刻出手，每一次时机精妙、弹无虚发的射击都在扭转战局。一眨眼，你就会错过他们的下一颗子弹\u2014\u2014反正你也躲不开。",
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"entries": [
+								"你可以按照以下建议快速建卡一名枪手。首先，将你最高的属性值分配给敏捷，其次是体质。其次，选择平民英雄或罪犯背景。"
+							]
+						},
+						{
+							"ENG_name": "GM Tip: Blackpowder vs Magitech",
+							"type": "inset",
+							"name": "GM提示：黑火药与魔导科技",
+							"entries": [
+								"《海莲娜指南》最初引入火器时，将其设定为魔导科技武器\u2014\u2014魔法与科技的致命结合，价格不菲，但每一枚铜币都物有所值。为了让枪手们无需被高昂售价挡在门外就能获得更多选择，扎曼指南引入了黑火药火器。这些版本的功能与《海莲娜指南》中的火器类似，但经过了些许平衡性调整，使它们能以与其他武器相当的更低价格存在于游戏之中。",
+								"《海莲娜指南》中的魔导科技火器与本职业完全兼容，但请注意：如果玩家角色有钱购买它们，它们可能带来相当可观的战力提升。推荐在枪手职业中使用黑火药火器。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ZGttEoT/classes/gunner1.webp"
+					},
+					"credit": "Ognjen Sporin",
+					"width": 1005,
+					"height": 2010
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ZGttEoT/classes/gunner2.webp"
+					},
+					"credit": "Ognjen Sporin",
+					"width": 1660,
+					"height": 1245
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ZGttEoT/classes/deadeye.webp"
+					},
+					"credit": "Ognjen Sporin",
+					"width": 3320,
+					"height": 1245
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ZGttEoT/classes/slugger.webp"
+					},
+					"credit": "Ognjen Sporin",
+					"width": 1067,
+					"height": 1600
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Deadeye",
+			"name": "死瞳客",
+			"shortName": "死瞳客",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassFeatures": [
+				"死瞳客|枪手|ZGttEoT|死瞳客|ZGttEoT|3",
+				"瞄具机制|枪手|ZGttEoT|死瞳客|ZGttEoT|7",
+				"射手洞察|枪手|ZGttEoT|死瞳客|ZGttEoT|7",
+				"一枪毙命|枪手|ZGttEoT|死瞳客|ZGttEoT|11",
+				"屏息凝神|枪手|ZGttEoT|死瞳客|ZGttEoT|15",
+				"二次跳弹|枪手|ZGttEoT|死瞳客|ZGttEoT|18"
+			]
+		},
+		{
+			"ENG_name": "Slugger",
+			"name": "重炮手",
+			"shortName": "重炮手",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassFeatures": [
+				"重炮手|枪手|ZGttEoT|重炮手|ZGttEoT|3",
+				"铅弹糊脸|枪手|ZGttEoT|重炮手|ZGttEoT|7",
+				"子弹芭蕾|枪手|ZGttEoT|重炮手|ZGttEoT|7",
+				"暗藏格挡|枪手|ZGttEoT|重炮手|ZGttEoT|11",
+				"子弹风暴|枪手|ZGttEoT|重炮手|ZGttEoT|15",
+				"反击|枪手|ZGttEoT|重炮手|ZGttEoT|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Moxie",
+			"name": "锐气",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 1,
+			"entries": [
+				"你调动自己的胆气与悍勇，在敌人眨眼的瞬间果断出手。在战斗中，你可以积攒势头，以一项名为锐气的资源表示。你持有的锐气永远不能超过枪手职业表中你等级对应的数值。你在同一回合内攻击过敌对生物、或迫使敌对生物进行豁免后，可以用一个附赠动作获得{@bold 1点锐气}。",
+				"此外，每当你达成以下任一事项，你获得{@bold 1点锐气}：",
+				{
+					"type": "list",
+					"items": [
+						"在对挑战等级½或更高的敌对生物的攻击检定中掷出重击，或在敌对生物施加的豁免中掷出20。",
+						"每回合第一次将挑战等级½或更高的敌对生物的生命值降至0。"
+					]
+				},
+				"若你连续{@bold 1分钟}未获得或消耗任何锐气，你将失去所有锐气。你可以在火器打出最后一发子弹时消耗{@bold 1点锐气}为其装填（无需动作），也可以消耗锐气来采用下文所述的特殊反应，这些反应不占用你正常的反应。不过在每个回合内，你依然只能进行一次反应，无论特殊与否。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Point-Blank|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 贴身射击|ZGttEoT}",
+									"entries": [
+										"当你可见的生物离开你的触及范围时，你可以消耗{@bold 1点锐气}对该生物进行一次借机攻击。你可以选择用你所持的火器进行远程武器攻击，而非近战攻击。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Second Chance|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 花开二度|ZGttEoT}",
+									"entries": [
+										"当你属性检定失败时，你可以消耗{@bold 1点锐气}重掷该检定。你必须使用新的结果。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action True Grit|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 坚忍不拔|ZGttEoT}",
+									"entries": [
+										"当某生物结束其回合时，你可以消耗{@bold 1点锐气}，每消耗1点锐气获得{@dice 1d6}临时生命值。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "GM Tip: Turns and Rounds",
+					"type": "inset",
+					"style": "text-center",
+					"name": "GM提示：回合与轮",
+					"entries": [
+						"在D&D战斗中，一轮指的是先攻顺序中每名生物各自完成自己回合所需的时间。通常，一名生物拥有一次反应，并在其回合开始时恢复它，实际上将其限制为每轮一次反应。然而，枪手的锐气这类特性允许一名生物每轮进行多次反应。将这些限制为每回合一次反应，依然允许生物进行多次反应\u2014\u2014只是不能在同一名生物的回合内连续使用。",
+						"例如，一名枪手无法先进行普通的借机攻击打击一名逃跑的地精，再在那名地精的回合结束时使用{@action 坚忍不拔|ZGttEoT}。但对这名地精进行借机攻击，然后在下一只地精的回合结束时使用坚忍不拔，则完全可行。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Bullet Time (x1)",
+			"name": "子弹时间（×1）",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 2,
+			"entries": [
+				"你可以用一个附赠动作进入反射强化状态，直到你的下个回合开始。在此期间，你的攻击检定、属性检定和敏捷豁免具有{@bold 优势}，而生物对你发动的攻击检定具有{@bold 劣势}。此外，你每次使用需要消耗锐气的特殊反应时，第一次所消耗的锐气减少1点。",
+				"一旦你使用了这个附赠动作，在完成一次短休或长休之前，你不能再次使用。从17级起，你在每次休息前可以使用它两次。"
+			]
+		},
+		{
+			"ENG_name": "Firearm Attachments",
+			"name": "火器附件",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 2,
+			"entries": [
+				"射手的实力取决于手中的武器，而你已学会用特殊附件来强化自己的武器。当你完成一次长休时，你可以在本职业末尾的附件列表中选取任意数量的附件，将它们安装到你持有的火器上、移除或互换。你所能拥有的附件总数上限，以及单件火器同时可装载的附件数量上限，均列于枪手职业表中。你可以将同一附件安装到不同的火器上，但每件火器上的附件都会计入你的上限。",
+				"附件分为五类：{@filter 枪管|optionalfeatures|source=ZGttEoT|feature type=fa:b}、{@filter 近战|optionalfeatures|source=ZGttEoT|feature type=fa:m}、{@filter 枪口|optionalfeatures|source=ZGttEoT|feature type=fa:u}、{@filter 瞄具|optionalfeatures|source=ZGttEoT|feature type=fa:s}和{@filter 杂项|optionalfeatures|source=ZGttEoT|feature type=fa:x}。除杂项附件外，同一件火器上不能安装一件以上的同类附件。此外，部分附件带有本职业的等级需求，你必须满足相应等级才能将其安装到火器上。",
+				"其他生物可以使用装有由本特性安装的附件的火器，但这些生物无法受益于那些附件。"
+			]
+		},
+		{
+			"ENG_name": "Gunner's Creed",
+			"name": "枪手信条",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 3,
+			"entries": [
+				"枪手们与其自豪挥舞的火器一样千姿百态，但有些人会在同一种信条之下找到共鸣\u2014\u2014这门信条不仅塑造他们的战斗风格，也塑造他们枪术之中的艺术性。信条并非刻板的荣誉守则，也不左右枪手的道德或野心，而是决定他们捍卫这一切的方式。一名枪手或许会鲁莽地冲入战斗，将正义之怒倾泻于邪恶教团；另一名则可能选择潜入教团总部，在夜幕掩护下刺杀其首领。到头来，无论枪手选择追随哪一种信条，对那些不幸与上膛火器枪口对视的倒霉蠢货来说，这通常都是个坏消息。",
+				"你选择追随一种信条，它反映了你的战斗风格与射击之道。你选择的信条会在3级以及之后的7级、11级、15级和18级给予你特性。"
+			]
+		},
+		{
+			"ENG_name": "Lucky Skill",
+			"name": "幸运技能",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 3,
+			"entries": [
+				"凭借纯熟技艺与傻人傻福的独特结合，你总能在败局边缘挽回胜利。选择一项你熟练的技能或工具，它成为你的幸运技能。当你使用幸运技能进行属性检定时，你可以使用{@action 花开二度|ZGttEoT}特殊反应而无需消耗任何锐气。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 4,
+			"entries": [
+				"当你到达4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与常规规则一样，使用本特性无法将属性值提升到20以上。若采用可选的专长规则，你可以放弃本特性，改为获得一项自选专长。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 5,
+			"entries": [
+				"当你在自己的回合采取攻击动作时，你可以攻击两次，而非一次。你可以放弃其中一次攻击，改为装填一件具有弹容属性的武器。"
+			]
+		},
+		{
+			"ENG_name": "Quickdraw",
+			"name": "快速拔枪",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 6,
+			"entries": [
+				"你要让所有人都明白无误：是你先开的枪。当你掷先攻且未处于措手不及状态时，你可以用一个反应用火器进行一次武器攻击。如果该攻击命中挑战等级½或更高的敌对生物，你获得{@bold 1点锐气}。"
+			]
+		},
+		{
+			"ENG_name": "Gunner's Creed Feature",
+			"name": "枪手信条特性",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 7,
+			"entries": [
+				"7级时，你获得一项由你的枪手信条给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与常规规则一样，使用本特性无法将属性值提升到20以上。若采用可选的专长规则，你可以放弃本特性，改为获得一项自选专长。"
+			]
+		},
+		{
+			"ENG_name": "Improved Moxie",
+			"name": "进阶锐气",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 9,
+			"entries": [
+				"当你因连续1分钟未获得或消耗锐气而即将失去所有锐气时，你改为保留1点锐气，只失去其余部分。此外，你的{@action 坚忍不拔|ZGttEoT}特殊反应改为每消耗1点锐气给予你{@damage 1d8}临时生命值（而非{@dice 1d6}），并且你获得以下可以消耗锐气使用的新特殊反应：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Bullet Clash|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 子弹对撞|ZGttEoT}",
+									"entries": [
+										"当你可见的生物在你所持火器的常规射程内进行远程攻击时，你可以消耗{@bold 1点锐气}偏折该攻击。用那件火器进行一次远程攻击。如果你的攻击检定高于触发攻击的检定，则该攻击自动失手。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Close Call|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 千钧一发|ZGttEoT}",
+									"entries": [
+										"当你进行豁免时，你可以消耗{@bold 1点锐气}在你的掷骰结果上加上你的熟练加值。你可以在掷骰之后、GM判定成功或失败之前这么做。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Warning Shot|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 鸣枪示警|ZGttEoT}",
+									"entries": [
+										"当你可见的生物在你所持火器的常规射程内向你移动时，你可以消耗{@bold 1点锐气}令其止步。用那件火器进行一次远程攻击，并故意打偏，不命中该生物。该生物必须通过难度等级等于你攻击检定结果的感知豁免，否则将在你的下个回合结束前对你陷入{@condition 恐慌}。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "GM Tip: Attack Rolls as Saving Throws",
+					"type": "inset",
+					"style": "text-center",
+					"name": "GM提示：作为豁免DC的攻击检定",
+					"entries": [
+						"一些枪手特性不采用固定的豁免DC，而是以攻击检定的结果作为其施加豁免的难度等级。这体现了枪手在那一瞬间的精准与迅捷如何影响局势\u2014\u2014子弹离生物越近，鸣枪示警就越令其胆寒。此外，这也让豁免DC能够随环境或战况动态变化\u2014\u2014例如，枪手在{@condition 中毒}状态下、或有敌对生物处于其5尺内时，鸣枪示警的攻击检定将具有劣势，从而可能降低豁免DC。",
+						"即便多了一次掷骰，这也不必拖慢桌面上的回合节奏。GM可以在玩家掷攻击检定以决定豁免DC的同时，为生物掷豁免。剩下的，不过是比较两个数字而已。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tough as Nails",
+			"name": "皮糙肉厚",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 10,
+			"entries": [
+				"这个世界将你嚼碎又吐出，而你因此愈发坚韧。你获得体质豁免的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Gunner's Creed Feature",
+			"name": "枪手信条特性",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 11,
+			"entries": [
+				"11级时，你获得一项由你的枪手信条给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与常规规则一样，使用本特性无法将属性值提升到20以上。若采用可选的专长规则，你可以放弃本特性，改为获得一项自选专长。"
+			]
+		},
+		{
+			"ENG_name": "Adrenaline Rush",
+			"name": "激昂冲锋",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 13,
+			"entries": [
+				"越是艰难，你就越是强硬。当你受到伤害且生命值因此降至生命值上限的一半或以下时，你可以用你的反应立即获得等同于锐气上限数量的锐气，这可以令你超过锐气上限。此外，你的{@classFeature 子弹时间（×1）|枪手|ZGttEoT|2|ZGttEoT|子弹时间}特性立即激活且不消耗使用次数，即使你已没有剩余使用次数也是如此。",
+				"一旦你使用了本特性，在完成一次长休之前，你不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Double Tap",
+			"name": "双连发",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 14,
+			"entries": [
+				"你拥有多元宇宙中最快的双手。你在自己的每个回合可以额外进行一个附赠动作。这个附赠动作不能用来进行攻击。"
+			]
+		},
+		{
+			"ENG_name": "Gunner's Creed Feature",
+			"name": "枪手信条特性",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 15,
+			"entries": [
+				"15级时，你获得一项由你的枪手信条给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与常规规则一样，使用本特性无法将属性值提升到20以上。若采用可选的专长规则，你可以放弃本特性，改为获得一项自选专长。"
+			]
+		},
+		{
+			"ENG_name": "Bullet Time (x2)",
+			"name": "子弹时间（×2）",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 17,
+			"entries": [
+				"你可以用一个附赠动作进入反射强化状态，直到你的下个回合开始。在此期间，你的攻击检定、属性检定和敏捷豁免具有{@bold 优势}，而生物对你发动的攻击检定具有{@bold 劣势}。此外，你每次使用需要消耗锐气的特殊反应时，第一次所消耗的锐气减少1点。",
+				"从17级起，你在每次休息前可以使用它两次。"
+			]
+		},
+		{
+			"ENG_name": "Gunner's Creed Feature",
+			"name": "枪手信条特性",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 18,
+			"entries": [
+				"18级时，你获得一项由你的枪手信条给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。与常规规则一样，使用本特性无法将属性值提升到20以上。若采用可选的专长规则，你可以放弃本特性，改为获得一项自选专长。"
+			]
+		},
+		{
+			"ENG_name": "Ultimate Weapon",
+			"name": "终极武器",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"level": 20,
+			"entries": [
+				"你已抵达武器改造的巅峰。从下列特殊附件选项中选择一项，它不计入你可拥有的附件总数上限，也不计入单件武器可装载的附件上限。你只能拥有所选附件的一件实例，并可以在完成长休时将它在不同火器之间转移，但你不能将它替换为本特性的其他特殊附件。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@optfeature Arcano-Intelligent Targeting|ZGttEoT} (Miscellaneous)",
+									"type": "entries",
+									"name": "{@optfeature 奥能智能瞄准|ZGttEoT}（杂项）",
+									"entries": [
+										"当你使用装有此附件的火器对你可见的生物进行远程攻击时，你可以选择不掷骰，而是将其视为你在攻击检定中掷出了20。一旦你使用了此附件，在附件于你下次长休期间重新校准完成之前，你不能再次使用。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@optfeature Elemental Converter|ZGttEoT} (Miscellaneous)",
+									"type": "entries",
+									"name": "{@optfeature 元素转换器|ZGttEoT}（杂项）",
+									"entries": [
+										"当你使用装有此附件的火器进行远程武器攻击时，你可以选择将其伤害类型改为强酸、寒冷、火焰、闪电或雷鸣。当你受到其中一种类型的伤害时，你可以用一个反应选择获得对该触发伤害类型的{@bold 抗性}，直到该回合结束。一旦你这么做，在下个回合结束前，你下一次使用装有此附件的火器进行的攻击命中时，将造成额外的{@damage 2d6}点该触发类型的伤害。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@optfeature Megamag|ZGttEoT} (Miscellaneous)",
+									"type": "entries",
+									"name": "{@optfeature 巨型弹匣|ZGttEoT}（杂项）",
+									"entries": [
+										"此附件会从异次元空间中取出子弹，移除其所安装火器的弹容属性，使其无需弹药。你仍可手动装填该火器，以装入特殊弹药。此附件内部可容纳六发特殊弹药，你在用该火器进行远程攻击时可以选择使用其中一发。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@optfeature Omniscope|ZGttEoT} (Sights)",
+									"type": "entries",
+									"name": "{@optfeature 全视瞄具|ZGttEoT}（瞄具）",
+									"entries": [
+										"使用装有此附件的火器进行远程武器攻击检定时，远距离攻击不会带来劣势。此附件还可当作望远镜使用。持握装有此附件的火器时，你可以用一个附赠动作启动瞄准镜，选择{@sense 真实视觉}或X射线模式。若选择真实视觉，你透过瞄准镜观察时拥有{@bold 30尺}内的真实视觉。若选择X射线，你透过瞄准镜观察时可以看入并看穿{@bold 30尺}内的固体物质。任一模式持续到你启动另一模式为止。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Deadeye",
+			"name": "死瞳客",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ZGttEoT",
+			"level": 3,
+			"entries": [
+				"死瞳客们的耐心与致命程度不相上下，他们是大师级神射手，将精准与效率奉为至高。他们以鹰隼般的眼睛在心跳之间扫视战场，像呼吸一样本能地将风速、弹道下坠与目标轨迹纳入计算。然后，他们打出第一枪。鲜少需要第二枪。",
+				"最初是什么让你走上死瞳客之路？你生来就拥有圣徒般的耐心与复杂心智物理学的惊人天赋？还是你的每一颗子弹都由纯粹的偶然指引，多元宇宙通过一连串难以置信的巧合合谋将它们射进你的敌人身体\u2014\u2014哪怕你根本瞄不准？无论如何，有一件事是确定的：你从不失手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "蹲守|枪手|ZGttEoT|死瞳客|ZGttEoT|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "死瞳客风范|枪手|ZGttEoT|死瞳客|ZGttEoT|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Deadeye's Flair",
+			"name": "死瞳客风范",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ZGttEoT",
+			"level": 3,
+			"entries": [
+				"你的每一枪都经过完美计算，严谨沉稳、耐心无尽。你习得以下独门方式来获得与消耗锐气：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Careful Aim|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 精准瞄准|ZGttEoT}",
+									"entries": [
+										"在你的每个回合结束时，若你在该回合中用火器进行的远程武器攻击命中了挑战等级½或更高的敌对生物，且没有消耗任何移动距离，你获得{@bold 1点锐气}。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Calculated Ricochet|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 精算跳弹|ZGttEoT}",
+									"entries": [
+										"当你用火器进行的远程武器攻击失手时，你可以消耗{@bold 1点锐气}，以一次特殊反应对武器射程内且距原目标30尺内的另一个不同目标重掷该攻击检定。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Stakeout",
+			"name": "蹲守",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ZGttEoT",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"perception": true,
+					"stealth": true
+				}
+			],
+			"entries": [
+				"没有敌人能逃过你的耳目......不幸的是，反过来可不成立。你获得{@skill 察觉}和{@skill 隐匿}技能的熟练项。依照你的{@classFeature 幸运技能|枪手|ZGttEoT|3}特性，选择其中一项技能成为一项额外的幸运技能。"
+			]
+		},
+		{
+			"ENG_name": "Marksman's Insight",
+			"name": "射手洞察",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ZGttEoT",
+			"level": 7,
+			"entries": [
+				"你学会了仔细研究目标，寻找其护甲上的破绽。你可以用一个附赠动作，透过你所持火器上的{@filter 瞄具|optionalfeatures|source=ZGttEoT|feature type=fa:s}附件观察一名生物，进行一次智力（{@skill 调查}）检定，其难度等级为8+该生物等级或挑战等级的一半。检定成功时，选择一项状态或伤害类型。GM会告诉你该生物对所选状态或伤害类型具有易伤、抗性还是免疫。无论成败，你在{@bold 24小时}内不能再对同一生物使用本特性。"
+			]
+		},
+		{
+			"ENG_name": "Scoping Mechanism",
+			"name": "瞄具机制",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ZGttEoT",
+			"level": 7,
+			"entries": [
+				"道理很简单：瞄得越准，杀得越利落。当你在长休结束时安装附件，你可以为其中一件火器额外安装一件{@filter 瞄具|optionalfeatures|source=ZGttEoT|feature type=fa:s}附件，即使该火器已装有一件不同的瞄具附件。这件额外附件不计入你的附件总数，也不计入单件火器的附件上限。",
+				"此外，火器上每装有一件瞄具附件，你用该火器打出重击所需的{@dice d20}掷骰数值便降低1。"
+			]
+		},
+		{
+			"ENG_name": "One Shot, One Kill",
+			"name": "一枪毙命",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ZGttEoT",
+			"level": 11,
+			"entries": [
+				"你可以放弃更多的射击，把一切押在一颗子弹上\u2014\u2014押上的越多，赢面也越大。每回合一次，当你装填一件火器时，你可以选择只装入一发子弹，而非装满。若你这么做，该火器在下次装填前的下一次攻击将依据火器的{@bold 弹容值}造成额外伤害，详见下表。",
+				{
+					"type": "table",
+					"caption": "依弹容值的额外伤害",
+					"colLabels": [
+						"弹容值",
+						"额外伤害"
+					],
+					"rows": [
+						[
+							"弹容（1）",
+							"无"
+						],
+						[
+							"弹容（2）",
+							"{@dice 1d6}"
+						],
+						[
+							"弹容（3）",
+							"{@dice 2d6}"
+						],
+						[
+							"弹容（4）",
+							"{@dice 3d6}"
+						],
+						[
+							"弹容（5）",
+							"{@dice 4d6}"
+						],
+						[
+							"弹容（6）",
+							"{@dice 5d6}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Steady Breath",
+			"name": "屏息凝神",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ZGttEoT",
+			"level": 15,
+			"entries": [
+				"深吸一口气，你的身心随之安定。你可以用一个附赠动作开始屏住呼吸，并且必须如同专注法术一般对此保持专注。若你将对此效果的专注维持到你的下个回合，你在该回合进行的第一次攻击检定具有{@bold 优势}，随后你的专注结束。",
+				"此外，当你在此特性专注期间进行智力、感知或魅力豁免时，你可以选择停止专注，以使用{@action 千钧一发|ZGttEoT}特殊反应，且无需消耗锐气。"
+			]
+		},
+		{
+			"ENG_name": "Re-Ricochet",
+			"name": "二次跳弹",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "死瞳客",
+			"subclassSource": "ZGttEoT",
+			"level": 18,
+			"entries": [
+				"你可以用巧妙而精算过的计划钓出完美一击......哪怕这些计划绕得离谱又如何？当攻击即将命中目标时，你也可以使用{@action 精算跳弹|ZGttEoT}特殊反应，令其改为失手，以便你重掷该攻击检定。",
+				"此外，在你使用{@action 精算跳弹|ZGttEoT}特殊反应重掷攻击检定后，你可以消耗{@bold 1点锐气}，以{@bold 优势}对距第二个目标{@bold 30尺}内的另一名不同生物再次重掷该攻击检定\u2014\u2014那名生物可以是原目标。"
+			]
+		},
+		{
+			"ENG_name": "Close-Quarters Expert",
+			"name": "近身格斗专家",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "重炮手",
+			"subclassSource": "ZGttEoT",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"acrobatics": true
+				}
+			],
+			"entries": [
+				"任何以为你近身不如远处危险的敌人，都将迎来一次痛彻心扉的领悟。你获得{@skill 特技}技能的熟练项，依照你的{@classFeature 幸运技能|枪手|ZGttEoT|3}职业特性，它成为你的一项额外幸运技能。此外，你获得{@filter 无双手属性的军用武器|items|type=军用武器;!宝藏（宝石）;!宝藏（艺术品）;!文艺复兴;!宝藏（货币）;!现代;!贸易金属锭;!未来|property=!双手}的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Slugger",
+			"name": "重炮手",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "重炮手",
+			"subclassSource": "ZGttEoT",
+			"level": 3,
+			"entries": [
+				"比一颗打进肚子的子弹更痛的是什么？当然是一颗零距离打进肚子的子弹。重炮手们舍弃了距离与掩体带来的相对安全，投身于近身混战那令人血脉偾张的混沌，凭借超群的敏捷在敌人身边辗转腾挪，以刀刃与子弹的组合将他们放倒。批评者指责这些枪手只是在掩饰自己稀烂的枪法，但说来奇怪，他们鲜少敢在一个重炮手听得见的地方发表这种高见。",
+				"你选择成为重炮手的理由可能五花八门。也许你是个追求刺激的冒险者，醉心于高风险高回报的战术；也许你是个特立独行的发明家，不顾同事的劝阻、公然违反当地安全条例，也要将火器与近战武器合而为一；又或者你的枪法确实很烂\u2014\u2014没人需要知道！无论缘由如何，你都属于极少数敌人拼命希望其保持距离的枪手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "近身格斗专家|枪手|ZGttEoT|重炮手|ZGttEoT|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "重炮手风范|枪手|ZGttEoT|重炮手|ZGttEoT|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Slugger's Flair",
+			"name": "重炮手风范",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "重炮手",
+			"subclassSource": "ZGttEoT",
+			"level": 3,
+			"entries": [
+				"枪击与近战攻击交替不绝，你施展出毁灭性的连段。你习得以下独门方式来获得与消耗锐气：",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Blade & Bullet|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 刀与子弹|ZGttEoT}",
+									"entries": [
+										"每回合你第一次在同一回合内既以火器进行的远程武器攻击命中、又以近战武器攻击命中时，你获得{@bold 1点锐气}。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "{@action Tacticool Reload|ZGttEoT}",
+									"type": "entries",
+									"name": "{@action 战术装填|ZGttEoT}",
+									"entries": [
+										"在你装填火器后立即，你可以消耗{@bold 1点锐气}，以一次特殊反应进行一次近战武器攻击。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Bullet Ballet",
+			"name": "子弹芭蕾",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "重炮手",
+			"subclassSource": "ZGttEoT",
+			"level": 7,
+			"entries": [
+				"快腿配快指，是战场上致命的组合。当你获得或消耗1点或更多锐气时，你可以移动{@bold 5尺}而不引发借机攻击。若锐气是作为反应的一部分消耗的，你可以选择在该反应之前或之后立即移动。"
+			]
+		},
+		{
+			"ENG_name": "Lead to the Face",
+			"name": "铅弹糊脸",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "重炮手",
+			"subclassSource": "ZGttEoT",
+			"level": 7,
+			"entries": [
+				"你最爱清晨火药燃烧的气味。当你在长休结束时安装附件，你可以为其中一件火器安装{@optfeature 锯短枪管|ZGttEoT}附件，即使该火器已装有一件不同的枪管附件。这件额外附件不计入你的附件总数，也不计入单件火器的附件上限。"
+			]
+		},
+		{
+			"ENG_name": "Concealed Parry",
+			"name": "暗藏格挡",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "重炮手",
+			"subclassSource": "ZGttEoT",
+			"level": 11,
+			"entries": [
+				"你强化过的反射让你能以火器格挡攻击。当你持握火器时若有生物以近战攻击命中你，你可以用一个反应，在应对该触发攻击的AC上获得{@bold +2加值}，从而可能使其失手。"
+			]
+		},
+		{
+			"ENG_name": "Bulletstorm",
+			"name": "子弹风暴",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "重炮手",
+			"subclassSource": "ZGttEoT",
+			"level": 15,
+			"entries": [
+				"你可以用一个动作，裹挟着钢铁与火药的旋风纵横战场。直到你的回合结束，你第一次移动到某生物{@bold 5尺}范围内时，可以对它进行一次武器攻击（无需动作）。一旦你使用了本特性，在完成一次长休之前，你不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Counter-Strike",
+			"name": "反击",
+			"source": "ZGttEoT",
+			"className": "枪手",
+			"classSource": "ZGttEoT",
+			"subclassShortName": "重炮手",
+			"subclassSource": "ZGttEoT",
+			"level": 18,
+			"entries": [
+				"对手错失的每次良机，都是你的新机遇。你的{@subclassFeature 暗藏格挡|枪手|ZGttEoT|重炮手|ZGttEoT|11}特性给予的AC加值提升为{@bold +3}。若该触发攻击失手，你可以在同一反应中进行一次针对攻击者的武器攻击。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Adamantine Sights",
+			"name": "精金瞄具",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:S"
+			],
+			"entries": [
+				"使用装有此附件的火器进行远程攻击检定时，{@condition 倒地}状态或瞄准5尺外的{@condition 倒地}生物不会带来劣势。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Stabiliser",
+			"name": "奥术稳定器",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"在克服对非魔法攻击与伤害的抗性和免疫时，装有此附件的火器视为魔法武器。这同样适用于使用近战附件进行的攻击。",
+				"当你在枪手职业到达11级时，装有此附件的火器的攻击检定与伤害掷骰获得{@bold +1加值}。若该火器本就拥有攻击与伤害加值，你取两者中较高者。当你在枪手职业到达15级时，此加值提升为{@bold +2}。"
+			]
+		},
+		{
+			"ENG_name": "Arcano-Intelligent Targeting",
+			"name": "奥能智能瞄准",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 20,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用装有此附件的火器对你可见的生物进行远程攻击时，你可以选择不掷骰，而是将其视为你在攻击检定中掷出了20。一旦你使用了此附件，在附件于你下次长休期间重新校准完成之前，你不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Arcanovision Sights",
+			"name": "奥术视觉瞄具",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:S"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"透过此附件观察时，如同{@spell 侦测魔法}法术一般，你可以看见30尺内带有魔法的可见生物或物体周围的灵光。",
+				"当你在枪手职业到达15级时，你用该火器对带有灵光的生物或物体进行远程攻击检定时不会具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Auto-Targeting Sights",
+			"name": "自动瞄准瞄具",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:S"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用装有此附件的火器对你可见的生物进行远程攻击检定时，你可以选择不掷骰，而是视为你在d20上掷出了10。一旦你使用了此附件，在用一个动作重置机关之前，你不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Automatic Reloader",
+			"name": "自动装填器",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"entries": [
+				"装有此附件的火器第一次需要装填时，此附件自动为其装填（无需动作）。此附件触发后，在花费一个动作重置机关之前，它不能再次触发。"
+			]
+		},
+		{
+			"ENG_name": "Bayonet",
+			"name": "刺刀",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:M"
+			],
+			"entries": [
+				"这把小刀、尖锥或类似部件让你能将火器当作近战武器使用。装有此附件的火器同时视为一件简易近战武器。它命中时造成{@damage 1d4}穿刺伤害，你用它进行近战攻击时，攻击与伤害掷骰可以使用你的敏捷调整值而非力量。",
+				"当你在枪手职业到达5级时，此附件的伤害提升为{@damage 1d6}，到达11级时再次提升为{@damage 1d8}。"
+			]
+		},
+		{
+			"ENG_name": "Bipod",
+			"name": "两脚架",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你站在地面上并持握装有此附件的火器时，你可以用一个动作或附赠动作展开并架起两脚架以辅助瞄准。只要你停留在同一位置且两脚架保持展开，你在每个回合使用该火器进行的第一次远程攻击检定具有{@bold 优势}。你可以用一个动作或附赠动作收起两脚架。若你在收起两脚架之前移动或被移动，则直到两脚架被收起，你用该火器进行的攻击检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Buckler",
+			"name": "小圆盾",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此附件是一面安装在枪管上的小盾。你持握装有此附件的火器时，AC获得+1加值。"
+			]
+		},
+		{
+			"ENG_name": "Concentration Breaker",
+			"name": "专注中断手",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此枪口赋予穿过它的子弹破法特性。生物因受到装有此附件的火器的远程武器攻击伤害而进行维持专注的体质豁免时，具有{@bold 劣势}。"
+			]
+		},
+		{
+			"ENG_name": "Decorative Etchings",
+			"name": "装饰刻印",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"entries": [
+				"当你明持装有此附件的火器时，你的魅力（{@skill 威吓}）与魅力（{@skill 游说}）检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Double  Barrel",
+			"name": "双管",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"这根加装枪管让火器的危险翻倍。使用装有此附件的火器进行的攻击命中时，额外造成一个伤害骰。该火器的弹容值减半（在其他影响弹容的附件之后计算）。此附件不能安装在弹容（1）的火器上。"
+			]
+		},
+		{
+			"ENG_name": "Elemental Converter",
+			"name": "元素转换器",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 20,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用装有此附件的火器进行远程武器攻击时，你可以选择将其伤害类型改为强酸、寒冷、火焰、闪电或雷鸣。当你受到其中一种类型的伤害时，你可以用一个反应选择获得对该触发伤害类型的{@bold 抗性}，直到该回合结束。一旦你这么做，在下个回合结束前，你下一次使用装有此附件的火器进行的攻击命中时，将造成额外的{@damage 2d6}点该触发类型的伤害。"
+			]
+		},
+		{
+			"ENG_name": "Extended Barrel",
+			"name": "加长枪管",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:B"
+			],
+			"entries": [
+				"此枪管经过加长，以提升精度与射程。装有此附件的火器常规射程增加{@bold 20尺}，最大射程增加{@bold 60尺}。",
+				"当你在枪手职业到达11级时，常规射程改为增加{@bold 40尺}，最大射程增加{@bold 120尺}。"
+			]
+		},
+		{
+			"ENG_name": "Extended Capacity",
+			"name": "弹容扩充",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"entries": [
+				"装有此附件的火器弹容值增加{@bold 1}，上限为6。",
+				"当你在枪手职业到达5级、11级和15级时，弹容值再各增加{@bold 1}。"
+			]
+		},
+		{
+			"ENG_name": "Force Pulse",
+			"name": "力场脉冲",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"装有此附件的火器装填后，你第一次用它进行远程武器攻击时，枪口会释放一股斥力脉冲。你{@bold 5尺}内的其他中型或更小的生物被直接推离你{@bold 5尺}。",
+				"当你在枪手职业到达11级时，此效果适用于大型或更小的生物。到达15级时，此效果适用于巨型或更小的生物。"
+			]
+		},
+		{
+			"ENG_name": "Grapplehook",
+			"name": "抓钩",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此锐利铁钩以一条短链与火器相连。装有此附件的火器同时视为一件简易近战武器。它命中时造成{@damage 1d4}穿刺伤害，你用它进行近战攻击时，攻击与伤害掷骰可以使用你的敏捷调整值而非力量。被此附件近战攻击命中的中型或更小生物会被钩住，直到它或其触及范围内的一个生物用一个动作取下铁钩、直到你移离它超过{@bold 10尺}、或直到你用该火器对不同生物进行近战攻击为止，它不能远离你超过{@bold 10尺}。你可以用一个附赠动作将一名被钩住的生物向你收拉{@bold 5尺}。",
+				"当你在枪手职业到达11级时，铁钩可以钩住大型或更小的生物。"
+			]
+		},
+		{
+			"ENG_name": "Heat Sink",
+			"name": "散热器",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此附件让你可以令火器过热，以突破其极限。当你以攻击动作的一部分使用装有此附件的火器攻击时，你可以选择在同一动作中进行一次额外攻击，并因武器过热而受到{@damage 3d6}火焰伤害。若你受到了任何此火焰伤害，该攻击检定具有{@bold 劣势}。使用此效果后，在用一个动作排出多余热量之前，你不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "High-Velocity Barrel",
+			"name": "高初速枪管",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此魔导科技枪管能将弹丸加速到近乎不可能的速度。使用装有此附件的火器进行的远程攻击会贯穿其命中的第一个生物或物体，前提是它为中型或更小，且厚度不足{@bold 2尺}。若原目标正后方{@bold 5尺}内还有另一生物或物体，你也可以将攻击指向它，进行一次新的攻击检定。这次攻击检定忽略第一个生物或物体提供的任何掩护。",
+				"当你在枪手职业到达15级时，使用装有此附件的火器进行的远程攻击可以贯穿魔法屏障，例如{@spell 李欧蒙小屋||小屋}、{@spell 力场墙}和{@spell 力场监牢}所创造的屏障，并无视{@spell 护盾术}法术的效果。"
+			]
+		},
+		{
+			"ENG_name": "Megamag",
+			"name": "巨型弹匣",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 20,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此附件会从异次元空间中取出子弹，移除其所安装火器的弹容属性，使其无需弹药。你仍可手动装填该火器，以装入特殊弹药。此附件内部可容纳六发特殊弹药，你在用该火器进行远程攻击时可以选择使用其中一发。"
+			]
+		},
+		{
+			"ENG_name": "Muzzle Flash",
+			"name": "枪口焰",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"装填后，你第一次使用装有此附件的火器进行远程武器攻击时，枪口会迸出一片炫目闪光。你{@bold 5尺}内的其他生物在其下个回合结束前的下一次攻击检定具有{@bold 劣势}。对{@condition 目盲}状态免疫的生物不受此效果影响。"
+			]
+		},
+		{
+			"ENG_name": "Needle",
+			"name": "毒针",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此附件是一根注满毒液的中空毒针。装有此附件的火器同时视为一件简易近战武器。它命中时造成{@damage 1}穿刺伤害，你用它进行近战攻击时，攻击与伤害掷骰可以使用你的敏捷调整值而非力量。当你用它近战攻击命中一名生物时，该生物陷入{@condition 中毒}状态，直到其下个回合结束。此效果触发后，在用一个动作重置机关之前，它不能再次触发。",
+				"当你在枪手职业到达11级时，此附件近战命中时额外造成{@damage 1d4}毒素伤害。"
+			]
+		},
+		{
+			"ENG_name": "Night-Vision Sights",
+			"name": "夜视瞄具",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:S"
+			],
+			"entries": [
+				"透过此附件观察时，你拥有{@bold 60尺}的黑暗视觉。",
+				"当你在枪手职业到达15级时，透过此附件观察时，你还可以在{@bold 60尺}内的魔法黑暗中正常视物。"
+			]
+		},
+		{
+			"ENG_name": "Omniscope",
+			"name": "全视瞄具",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:S"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 20,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"使用装有此附件的火器进行远程武器攻击检定时，远距离攻击不会带来劣势。此附件还可当作望远镜使用。持握装有此附件的火器时，你可以用一个附赠动作启动瞄准镜，选择{@sense 真实视觉}或X射线模式。若选择真实视觉，你透过瞄准镜观察时拥有{@bold 30尺}内的真实视觉。若选择X射线，你透过瞄准镜观察时可以看入并看穿{@bold 30尺}内的固体物质。任一模式持续到你启动另一模式为止。"
+			]
+		},
+		{
+			"ENG_name": "Red Hot Muzzle",
+			"name": "炽热枪口",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:U"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此枪口被刻意留有缺陷，令其容易过热。装有此附件的火器装填后，你第一次用它进行远程武器攻击时，枪口会变得炽亮，直到该火器再次装填、或你用该火器近战攻击命中为止。使用炽亮枪口的火器进行的近战攻击命中时，额外造成{@damage 1d6}火焰伤害。",
+				"当你在枪手职业到达11级时，此伤害提升为{@damage 1d8}。"
+			]
+		},
+		{
+			"ENG_name": "Sawed-Off Barrel",
+			"name": "锯短枪管",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:B"
+			],
+			"entries": [
+				"此枪管经锯短处理，便于近身作战。与敌对生物距离5尺以内不会令火器的远程攻击检定具有劣势。该火器的常规射程与最大射程均减半（在其他影响射程的附件之后计算）。"
+			]
+		},
+		{
+			"ENG_name": "Scattershot",
+			"name": "散射",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:U"
+			],
+			"entries": [
+				"此附件会在子弹出膛时将其炸裂成一片弹片雨。装有此附件的火器失去常规与最大射程，且不能用来对生物进行远程攻击检定。取而代之，你可以用一个动作以它在{@bold 15尺锥形}范围内射出弹片，进行一次远程攻击检定。范围内的每名生物必须通过难度等级等于你攻击检定结果的敏捷豁免，否则受到该攻击的伤害。魔法弹药不能由装有此附件的火器发射，从中射出的寻常子弹都会被毁掉。",
+				"当你在枪手职业到达11级时，范围扩大为{@bold 20尺锥形}。"
+			]
+		},
+		{
+			"ENG_name": "Smart Grip",
+			"name": "智能握把",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:X"
+			],
+			"entries": [
+				"你不会被缴械，也不会被迫丢下装有此附件的火器。",
+				"当你在枪手职业到达11级时，你用装有此附件的火器进行近战攻击检定时不会具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Subaquatic Barrel",
+			"name": "水下枪管",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:B"
+			],
+			"entries": [
+				"此枪管经过改良，可在水下击发。使用装有此附件的火器进行的攻击无视水下战斗的减值。"
+			]
+		},
+		{
+			"ENG_name": "Suppressor",
+			"name": "消音器",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:U"
+			],
+			"entries": [
+				"装有此附件的火器失去响亮属性。",
+				"当你在枪手职业到达11级时，你躲藏时使用装有此附件的火器进行攻击，不会暴露给火器常规射程之外的生物。"
+			]
+		},
+		{
+			"ENG_name": "Taser",
+			"name": "电击棒",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:M"
+			],
+			"entries": [
+				"这根金属棒迸动着电弧。装有此附件的火器同时视为一件简易近战武器。它命中时造成{@damage 1}闪电伤害，你用它进行近战攻击时，攻击与伤害掷骰可以使用你的敏捷调整值而非力量。生物受到此附件的伤害后，直到其下个回合开始前不能进行反应。",
+				"当你在枪手职业到达9级时，此附件的伤害提升为{@damage 1d4}，到达15级时再次提升为{@damage 1d6}。"
+			]
+		},
+		{
+			"ENG_name": "Telescopic Sights",
+			"name": "望远瞄具",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:S"
+			],
+			"entries": [
+				"使用装有此附件的火器进行远程武器攻击检定时，远距离攻击不会带来劣势。此附件还可当作望远镜使用。"
+			]
+		},
+		{
+			"ENG_name": "Thermal Sights",
+			"name": "热成像瞄具",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:S"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"透过此附件观察时，你为侦测散发体热的生物进行的感知（{@skill 察觉}）检定具有{@bold 优势}，而且只要那些生物不在全身掩护之后，无论光照条件或遮蔽程度如何，你始终可以看见它们。部分构装体、元素生物和亡灵处于环境温度，无法借此特性看见（GM裁定）。"
+			]
+		},
+		{
+			"ENG_name": "Weighted Butt",
+			"name": "配重枪托",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:M"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此附件带着一股危险的分量。装有此附件的火器同时视为一件简易近战武器。它命中时造成{@damage 1d4}钝击伤害，你用它进行近战攻击时，攻击与伤害掷骰可以使用你的敏捷调整值而非力量。当你对某生物掷伤害骰掷出{@bold 4}时，该生物晕头转向，在其下个回合结束前的下一次攻击检定具有{@bold 劣势}。",
+				"当你在枪手职业到达15级时，此伤害提升为{@damage 1d6}，且掷出{@bold 5或更高}即可令生物晕头转向。"
+			]
+		},
+		{
+			"ENG_name": "Wide Barrel",
+			"name": "宽口枪管",
+			"source": "ZGttEoT",
+			"page": 0,
+			"featureType": [
+				"FA:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Gunner",
+							"name": "枪手",
+							"source": "ZGttEoT"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此宽口枪管可容纳更大、停止作用更强的子弹。当你使用装有此附件的火器进行远程攻击命中大型或更小的生物时，该生物被直接推离你{@bold 5尺}。若你在同一回合再次命中它，你可以选择再将其推离{@bold 5尺}，或将其击{@condition 倒地}。若你使用该火器的攻击检定掷出1，你被直接推离目标{@bold 5尺}。",
+				"当你在枪手职业到达15级时，此效果适用于巨型或更小的生物。"
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Blunderbuss",
+			"name": "喇叭铳",
+			"source": "ZGttEoT",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 5,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"2H",
+				"ZGttEoT:Rel",
+				"ZGttEoT:Loud"
+			],
+			"range": "20/60",
+			"dmg1": "3d4",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"喇叭铳是一种枪口呈喇叭状扩张的粗膛火器，能在近距离以狭窄散射发射铅弹或类似弹丸。它具有弹药（射程20/60尺）、响亮（1000）、弹容（1）和双手属性，命中时造成{@damage 3d4}穿刺伤害。"
+			],
+			"ammoType": "枪械子弹|xphb",
+			"customProperties": {
+				"loud": "1000",
+				"reload": "1"
+			}
+		},
+		{
+			"ENG_name": "Musket",
+			"name": "滑膛枪",
+			"source": "ZGttEoT",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 10,
+			"value": 3000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"2H",
+				"ZGttEoT:Rel",
+				"ZGttEoT:Loud"
+			],
+			"range": "80/240",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"滑膛枪是一种枪身修长、从枪口装填的火器，传统上每射一发便需重新装填。它具有弹药（射程80/240尺）、响亮（1000）、弹容（1）和双手属性，命中时造成{@damage 1d12}穿刺伤害。"
+			],
+			"ammoType": "枪械子弹|xphb",
+			"customProperties": {
+				"loud": "1000",
+				"reload": "1"
+			}
+		},
+		{
+			"ENG_name": "Pistol",
+			"name": "手枪",
+			"source": "ZGttEoT",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"L",
+				"ZGttEoT:Rel",
+				"ZGttEoT:Loud"
+			],
+			"range": "40/120",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"手枪是一种单手火器，小巧轻便，尤其易于操控。它具有弹药（射程40/120尺）、响亮（500）、弹容（2）和轻型属性，命中时造成{@damage 1d6}穿刺伤害。"
+			],
+			"ammoType": "枪械子弹|xphb",
+			"customProperties": {
+				"loud": "500",
+				"reload": "2"
+			}
+		},
+		{
+			"ENG_name": "Revolver",
+			"name": "左轮枪",
+			"source": "ZGttEoT",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 2,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"ZGttEoT:Rel",
+				"ZGttEoT:Loud"
+			],
+			"range": "60/240",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"左轮枪是一种单手火器，其旋转弹巢容纳多个弹膛，带来更大的容弹量。它具有弹药（射程60/240尺）、响亮（500）和弹容（6）属性，命中时造成{@damage 1d8}穿刺伤害。"
+			],
+			"ammoType": "枪械子弹|xphb",
+			"customProperties": {
+				"loud": "500",
+				"reload": "6"
+			}
+		},
+		{
+			"ENG_name": "Rifle",
+			"name": "步枪",
+			"source": "ZGttEoT",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"weight": 8,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"2H",
+				"ZGttEoT:Loud",
+				"ZGttEoT:Rel"
+			],
+			"range": "120/480",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"entries": [
+				"步枪是一种长枪管火器，枪管内壁的膛线赋予射出的弹丸旋转，令其精度出众。它具有弹药（射程120/480尺）、响亮（1,000）、弹容（2）和双手属性，命中时造成{@damage 1d10}穿刺伤害。"
+			],
+			"ammoType": "枪械子弹|xphb",
+			"customProperties": {
+				"loud": "1000",
+				"reload": "2"
+			}
+		}
+	],
+	"itemProperty": [
+		{
+			"ENG_name": "Loud",
+			"name": "响亮",
+			"abbreviation": "ZGttEoT:Loud",
+			"source": "ZGttEoT",
+			"page": 0,
+			"template": "响亮（{{item.customProperties.loud}}）",
+			"entries": [
+				{
+					"ENG_name": "Loud",
+					"type": "entries",
+					"name": "响亮",
+					"entries": [
+						"使用武器（通常是火器）进行远程攻击的声响，在响亮属性后括号内数字所示的尺数范围内可被生物听见。在洞穴系统等回声充沛的场所，以及水下等声音传播更快的地方，此范围加倍。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Reload",
+			"name": "弹容",
+			"abbreviation": "ZGttEoT:Rel",
+			"source": "ZGttEoT",
+			"page": 0,
+			"template": "弹容（{{item.customProperties.reload}} 发）",
+			"entries": [
+				{
+					"ENG_name": "Reload",
+					"type": "entries",
+					"name": "弹容",
+					"entries": [
+						"弹容属性后括号内数字所示数量的弹药可以装入这件武器。用该武器进行远程攻击会消耗其中一枚弹药。当武器弹药耗尽时，生物必须用一个动作为其装填，然后才能再次用它进行远程攻击。生物也可以在弹药耗尽前装填武器，替换或补充内部已有的弹药，直至武器可容纳的最大数量。",
+						"生物可以将已装入武器的魔法或特殊弹药用于该武器进行的任何远程攻击（每次攻击由该生物自行选择）。"
+					]
+				}
+			]
+		}
+	],
+	"action": [
+		{
+			"ENG_name": "Blade & Bullet",
+			"name": "刀与子弹",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"每回合你第一次在同一回合内既以火器进行的远程武器攻击命中、又以近战武器攻击命中时，你获得{@bold 1点锐气}。"
+			]
+		},
+		{
+			"ENG_name": "Bullet Clash",
+			"name": "子弹对撞",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"当你可见的生物在你所持火器的常规射程内进行远程攻击时，你可以消耗{@bold 1点锐气}偏折该攻击。用那件火器进行一次远程攻击。如果你的攻击检定高于触发攻击的检定，则该攻击自动失手。"
+			]
+		},
+		{
+			"ENG_name": "Calculated Ricochet",
+			"name": "精算跳弹",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"当你用火器进行的远程武器攻击失手时，你可以消耗{@bold 1点锐气}，以一次特殊反应对武器射程内且距原目标30尺内的另一个不同目标重掷该攻击检定。"
+			]
+		},
+		{
+			"ENG_name": "Careful Aim",
+			"name": "精准瞄准",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"在你的每个回合结束时，若你在该回合中用火器进行的远程武器攻击命中了挑战等级½或更高的敌对生物，且没有消耗任何移动距离，你获得{@bold 1点锐气}。"
+			]
+		},
+		{
+			"ENG_name": "Close Call",
+			"name": "千钧一发",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"当你进行豁免时，你可以消耗{@bold 1点锐气}在你的掷骰结果上加上你的熟练加值。你可以在掷骰之后、GM判定成功或失败之前这么做。"
+			]
+		},
+		{
+			"ENG_name": "Point-Blank",
+			"name": "贴身射击",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"当你可见的生物离开你的触及范围时，你可以消耗{@bold 1点锐气}对该生物进行一次借机攻击。你可以选择用你所持的火器进行远程武器攻击，而非近战攻击。"
+			]
+		},
+		{
+			"ENG_name": "Second Chance",
+			"name": "花开二度",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"当你属性检定失败时，你可以消耗{@bold 1点锐气}重掷该检定。你必须使用新的结果。"
+			]
+		},
+		{
+			"ENG_name": "Tacticool Reload",
+			"name": "战术装填",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"在你装填火器后立即，你可以消耗{@bold 1点锐气}，以一次特殊反应进行一次近战武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "True Grit",
+			"name": "坚忍不拔",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"当某生物结束其回合时，你可以消耗{@bold 1点锐气}，每消耗1点锐气获得{@dice 1d6}临时生命值。"
+			]
+		},
+		{
+			"ENG_name": "Warning Shot",
+			"name": "鸣枪示警",
+			"source": "ZGttEoT",
+			"page": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"当你可见的生物在你所持火器的常规射程内向你移动时，你可以消耗{@bold 1点锐气}令其止步。用那件火器进行一次远程攻击，并故意打偏，不命中该生物。该生物必须通过难度等级等于你攻击检定结果的感知豁免，否则将在你的下个回合结束前对你陷入{@condition 恐慌}。"
+			]
+		}
+	]
+}
