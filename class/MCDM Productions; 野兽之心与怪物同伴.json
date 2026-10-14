@@ -1,0 +1,6699 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BST",
+				"abbreviation": "BST",
+				"full": "野兽之心与怪物同伴",
+				"url": "https://shop.mcdmproductions.com/products/beastheart-companions",
+				"version": "1.0.0",
+				"authors": [
+					"MCDM Productions"
+				],
+				"convertedBy": [
+					"ForeverAlwaysGM (Billiam94)"
+				],
+				"color": "D64A21"
+			}
+		],
+		"optionalFeatureTypes": {
+			"BST:EXP": "战技",
+			"BST:MC": "秘术师联系"
+		},
+		"edition": "classic",
+		"dateAdded": 1648054627,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "dd70f61f17"
+	},
+	"class": [
+		{
+			"ENG_name": "Beastheart",
+			"name": "野兽之心",
+			"source": "BST",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"str",
+				"wis"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 战斧|phb|战斧}",
+					"{@item 巨斧|phb|巨斧}",
+					"{@item 长弓|phb|长弓}",
+					"{@item 捕网|phb|捕网}",
+					"{@item 弯刀|phb|弯刀}",
+					"{@item 短剑|phb|短剑}"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"（a）{@item 兽皮甲|phb}或（b）{@item 皮甲|phb}、{@item 长弓|phb}和{@item 箭矢 (20)|phb|20支箭}",
+					"（a）一把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}和一面{@item 盾牌|phb}，或（b）两把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}",
+					"（a）两把{@item 手斧|phb|手斧}或（b）任意一把{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"（a）一个{@item 地城套组|phb}或（b）一个{@item 探索套组|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"兽皮甲|phb"
+						],
+						"b": [
+							"皮甲|phb",
+							"长弓|phb",
+							"箭矢 (20)|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"盾牌|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "手斧|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"地城套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"wis": 13,
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"原初战技"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							7
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"同伴|野兽之心|BST|1",
+				"天生语言|野兽之心|BST|1",
+				"原初战技|野兽之心|BST|2",
+				"超凡狂怒|野兽之心|BST|2",
+				{
+					"classFeature": "同伴羁绊|野兽之心|BST|3",
+					"gainSubclassFeature": true
+				},
+				"照料大师|野兽之心|BST|3",
+				"属性值提升|野兽之心|BST|4",
+				"超越本能|野兽之心|BST|5",
+				"强化招牌攻击|野兽之心|BST|5",
+				"忠实同伴|野兽之心|BST|6",
+				"焕新狂怒|野兽之心|BST|6",
+				{
+					"classFeature": "同伴羁绊特性|野兽之心|BST|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|野兽之心|BST|8",
+				"原初打击|野兽之心|BST|8",
+				"秘术师联系|野兽之心|BST|9",
+				"原初战技|野兽之心|BST|10",
+				"超越本能提升|野兽之心|BST|10",
+				"强化招牌攻击|野兽之心|BST|11",
+				{
+					"classFeature": "同伴羁绊特性|野兽之心|BST|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|野兽之心|BST|12",
+				"忠诚到底|野兽之心|BST|13",
+				"敏锐感官|野兽之心|BST|14",
+				"原初打击提升|野兽之心|BST|14",
+				"超越本能提升|野兽之心|BST|15",
+				{
+					"classFeature": "同伴羁绊特性|野兽之心|BST|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|野兽之心|BST|16",
+				"原初战技|野兽之心|BST|17",
+				"强化招牌攻击|野兽之心|BST|17",
+				"召唤荒野|野兽之心|BST|18",
+				"属性值提升|野兽之心|BST|19",
+				"牢不可破的友谊|野兽之心|BST|20"
+			],
+			"subclassTitle": "同伴羁绊",
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"foundryImg": "icons/magic/life/heart-area-circle-red-green.webp"
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Beastheart",
+			"name": "野兽之心",
+			"source": "BST",
+			"entries": [
+				{
+					"ENG_name": "The Beastheart",
+					"name": "野兽之心",
+					"source": "BST",
+					"type": "section",
+					"entries": [
+						"一名半兽人骑着鲨蜥破沙而出，腾空跃起。她挥舞巨剑在披甲骷髅间劈开一条血路，而她的坐骑则朝相反方向冲锋，身后扬起一片骨粉尘云。",
+						"一名半身人骑在绿龙幼雏的背上飞越燃烧的森林。雏龙嗅了嗅空气，尖啸一声，用爪子指出一条安全的路径，引导惊恐的森林生物穿过烈焰。",
+						"一名半精灵与她的巨蜘蛛同伴一同倒挂着潜行，覆满蛛网的双脚将她牢牢粘在洞穴顶壁上。下方的强盗们浑然不知营地已被渗透，也不知道他们袭击当地聚落的日子到头了。",
+						"野兽之心是与野生生物缔结友谊羁绊的冒险者，并随羁绊日益加深而从中汲取力量。野兽之心与其忠实的同伴齐心协力，即使是最危险的冒险也能胜任，挑战任何怪物、跨越任何障碍。",
+						{
+							"type": "entries",
+							"name": "超自然羁绊",
+							"entries": [
+								"野兽之心与同伴之间的联结不只是爱与倾慕。它是一种神秘的羁绊，让野兽之心得以驾驭同伴的狂怒、力量与求生本能。当同伴怒火中烧时，野兽之心将那股狂怒引导为超自然的武艺壮举。作为回报，野性的同伴也能借助野兽之心的专注与指引。",
+								"这种超自然的亲密关系可能要经过漫长岁月才得以形成。有些野兽之心自孩提时期便与特立独行的宠物或野生守护者结缘，随着彼此共同成长而愈发亲密。另一些野兽之心则在荒野中长大成人，生长于野生生物之间\u2014\u2014甚至由它们抚养长大\u2014\u2014以此学会尊重并拥抱自然之力。但野兽之心的羁绊也可能在更短时间内形成，通常是在极度危难之际。一个在荒野中迷路挨饿的人，可能与一只为它提供食物与庇护、救它一命的生物心灵相通，就此成为野兽之心。又或者，一只受伤并被偷猎者围困的野生生物，会与拯救它生命的角色结为朋友，生物的感激之情铸就了野兽之心的羁绊。",
+								"并非每个人都适合成为野兽之心，正如并非每只动物都注定成为同伴。两者必须共有天生的野性与毫不动摇的信任，才能结成这份罕见的情谊。"
+							],
+							"ENG_name": "Supernatural Bond"
+						},
+						{
+							"type": "entries",
+							"name": "是同伴，而非宠物",
+							"entries": [
+								"大多数野兽之心并不想完全驯服他们的野生朋友，因为那样做会夺走心爱同伴的个性与斗志。相反，野兽之心将自己视为照料者，照看一颗与自己同样炽热而奔放的同伴之心。同伴也持相似的看法，将野兽之心视为族群的一员，把照料者当作随时准备探索、狩猎与嬉戏的手足。"
+							],
+							"ENG_name": "Companions, Not Pets"
+						},
+						{
+							"type": "entries",
+							"name": "野性之心",
+							"entries": [
+								"在外人看来，野兽之心与同伴也许平起平坐（同伴很可能就是这么想的！）但野兽之心始终清楚，同伴是一股自然之力，而非驯化的生物。因此，野兽之心接受同伴或许无法深度自省的事实\u2014\u2014大多数同伴活在当下，不念过往，也极少思虑未来。所以，替自己和野生朋友考虑这些便是野兽之心的责任，像父母照料孩子一样对同伴负责，而若那颗受其照料的野性之心就此沉寂，也会为之哀恸。"
+							],
+							"ENG_name": "Wild at Heart"
+						},
+						{
+							"type": "entries",
+							"name": "不驯的一对",
+							"entries": [
+								"与在身侧潜行和探索的同伴一样，野兽之心与自然世界之间有着奇妙的联结，使他们能够追踪猎物、在严酷环境中求生，甚至与并非同伴的野生生物和睦相处。许多野兽之心在荒野中最自在惬意，枕星而眠，尽享自然的馈赠。即使野兽之心与同伴在城镇或都市中安家，聚落之外的未驯荒野或其下的地底深处也常常萦绕在他们心头，不断呼唤他们踏上冒险。"
+							],
+							"ENG_name": "Untamed Pair"
+						},
+						{
+							"type": "entries",
+							"name": "创建野兽之心",
+							"entries": [
+								"当你创建野兽之心角色时，不妨想想你与同伴友谊的来历。你是自幼便找到这只生物并与之共同成长的吗？还是最近才与它缔结羁绊？这是你的第一只同伴吗？你也是同伴以这种方式缔结羁绊的第一人吗？回想你们成为朋友的时刻，以及已经共同经历的考验。你们也许曾在其中一人受伤时一同在荒野中求生；你也许曾把同伴从猎取战利品的猎人手中救出；又或者，同伴曾击退致命的敌人，救了你的命。",
+								"想想同伴的性格与喜好。它活泼好动还是慵懒散漫？冷漠孤僻还是友善亲和？你们能一起表演什么把戏？同伴最喜欢的食物是什么？你还应该思考你与同伴在外貌或性格上如何互补。你的外表与它相似还是反差？你们都喜欢什么活动？你如何与同伴交流？你又如何鼓励他人与你的朋友交流并尊重它？"
+							],
+							"ENG_name": "Creating a Beastheart"
+						},
+						{
+							"type": "entries",
+							"name": "快速构建",
+							"entries": [
+								"你可以按照以下建议快速创建一名野兽之心。首先，将敏捷作为你的最高属性值（如果你想使用近战武器则选力量），其次是感知。其次，选择化外之民背景。"
+							],
+							"ENG_name": "Quick Build"
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00023.webp"
+					},
+					"width": 1910,
+					"height": 1694
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Ferocious Bond",
+			"name": "凶猛羁绊",
+			"shortName": "凶猛",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassFeatures": [
+				"凶猛羁绊|野兽之心|BST|凶猛|BST|3",
+				"鼓舞横行|野兽之心|BST|凶猛|BST|7",
+				"狂怒横行|野兽之心|BST|凶猛|BST|11",
+				"振奋横行|野兽之心|BST|凶猛|BST|15"
+			],
+			"hasFluffImages": true,
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown-green.webp"
+		},
+		{
+			"ENG_name": "Hunter Bond",
+			"name": "猎手羁绊",
+			"shortName": "猎手",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassFeatures": [
+				"猎手羁绊|野兽之心|BST|猎手|BST|3",
+				"原初守护|野兽之心|BST|猎手|BST|7",
+				"同步隐匿|野兽之心|BST|猎手|BST|11",
+				"无形猎手|野兽之心|BST|猎手|BST|15"
+			],
+			"hasFluffImages": true,
+			"foundryImg": "icons/commodities/treasure/totem-wooden-glowing-green.webp"
+		},
+		{
+			"ENG_name": "Infernal Bond",
+			"name": "炼狱羁绊",
+			"shortName": "炼狱",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassFeatures": [
+				"炼狱羁绊|野兽之心|BST|炼狱|BST|3",
+				"地狱魅惑者|野兽之心|BST|炼狱|BST|7",
+				"邪魔特质|野兽之心|BST|炼狱|BST|11",
+				"炼狱战技|野兽之心|BST|炼狱|BST|11",
+				"邪魔之形|野兽之心|BST|炼狱|BST|15"
+			],
+			"hasFluffImages": true,
+			"foundryImg": "icons/creatures/mammals/beast-horned-scaled-glowing-orange.webp"
+		},
+		{
+			"ENG_name": "Primordial Bond",
+			"name": "原初羁绊",
+			"shortName": "原初",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassFeatures": [
+				"原初羁绊|野兽之心|BST|原初|BST|3",
+				"大地同盟|野兽之心|BST|原初|BST|7",
+				"自然战技|野兽之心|BST|原初|BST|11",
+				"灵魂狂奔|野兽之心|BST|原初|BST|11",
+				"天气同盟|野兽之心|BST|原初|BST|15"
+			],
+			"hasFluffImages": true,
+			"foundryImg": "icons/magic/nature/wolf-paw-glow-green.webp"
+		},
+		{
+			"ENG_name": "Protector Bond",
+			"name": "守护者羁绊",
+			"shortName": "守护者",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassFeatures": [
+				"守护者羁绊|野兽之心|BST|守护者|BST|3",
+				"厚实兽皮|野兽之心|BST|守护者|BST|7",
+				"哨卫同伴|野兽之心|BST|守护者|BST|11",
+				"不朽守护者|野兽之心|BST|守护者|BST|15"
+			],
+			"hasFluffImages": true,
+			"foundryImg": "icons/magic/nature/barrier-shield-wood-vines.webp"
+		}
+	],
+	"subclassFluff": [
+		{
+			"ENG_name": "Ferocious Bond",
+			"name": "凶猛羁绊",
+			"shortName": "凶猛",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00255.webp"
+					},
+					"width": 2301,
+					"height": 3065
+				}
+			]
+		},
+		{
+			"ENG_name": "Hunter Bond",
+			"name": "猎手羁绊",
+			"shortName": "猎手",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00263.webp"
+					},
+					"width": 2301,
+					"height": 3065
+				}
+			]
+		},
+		{
+			"ENG_name": "Infernal Bond",
+			"name": "炼狱羁绊",
+			"shortName": "炼狱",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00271.webp"
+					},
+					"width": 2301,
+					"height": 3065
+				}
+			]
+		},
+		{
+			"ENG_name": "Primordial Bond",
+			"name": "原初羁绊",
+			"shortName": "原初",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00285.webp"
+					},
+					"width": 2301,
+					"height": 3065
+				}
+			]
+		},
+		{
+			"ENG_name": "Protector Bond",
+			"name": "守护者羁绊",
+			"shortName": "守护者",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00296.webp"
+					},
+					"width": 2301,
+					"height": 3065
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Companion",
+			"name": "同伴",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 1,
+			"entries": [
+				"在1级时，你获得一只{@filter 行侣生物|bestiary|tag=Companion}，它伴随你踏上冒险，与你并肩战斗、探索和生活。你可以选择本补充书或其他MCDM补充书中的任意同伴。你也可以在{@link MCDM Reddit 社区|https://mcdm.gg/bht-reddit}和{@link MCDM Discord 服务器|https://discord.com/invite/MCDM}中找到一些很棒的同伴。\"同伴\"一节中介绍了十五种可供你的野兽之心选择的{@filter 行侣生物|bestiary|tag=Companion}，以及使用同伴的规则（包括狂怒与进入横行）。",
+				"你与同伴之间的超自然联结将彼此的生命绑定在一起，使你能帮助同伴克服即使是最严重的创伤。如果你的同伴已失去生命值或已经死亡，你可以花费1分钟冥想同伴的灵魂。随后该同伴恢复所有生命值，如果它已死亡则就此复生，而你则获得一级{@condition 力竭}。如果同伴的躯体已被摧毁，它会在你5尺内重新成形。",
+				"你在获得本职业的等级后，第一次完成长休时，可以与一只由你选择的新同伴缔结羁绊，它会以由GM决定的方式抵达你5尺内一处未被占据的空间。如果你已拥有来自本特性的同伴，在新同伴到来时，旧同伴会离开你去过自己的生活。"
+			]
+		},
+		{
+			"ENG_name": "Natural Language",
+			"name": "天生语言",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 1,
+			"entries": [
+				"从1级起，你能够理解并与你的{@filter 同伴|bestiary|tag=Companion}口头交流，也能与所有野兽和怪兽交流。此特性不允许你交流复杂的思想或问题，但你可以做出简单的陈述（例如向其他生物表明你无意伤害它们），或提出简单的问题（例如最近的水体位于何处，或某个外貌独特的特定个体最近是否经过此地）。此类生物的知识与感知受其智力所限，而由GM决定某个生物是否处于愿意交流的状态。当你使用此特性与野兽或怪兽交谈时，你可以用感知（{@skill 驯兽}）检定代替魅力检定来影响该生物。"
+			]
+		},
+		{
+			"ENG_name": "Primal Exploits",
+			"name": "原初战技",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 2,
+			"entries": [
+				"从2级起，你学会将同伴的狂怒引导为被称为原初战技的非凡举动，这些战技由同伴的狂怒驱动。",
+				"你习得三项由你选择的原初战技，详述如下。每当你在本职业中获得一个等级时，你都可以选择一项已知的原初战技，并用另一项原初战技替换它，但你必须满足相应的野兽之心等级要求。",
+				"部分战技需要用你的反应来启动。另一些战技在特定情况下可用，但无需动作。还有一些战技作为攻击动作的一部分启动，此时你每回合只能使用一项此类战技。",
+				"所有战技都必须消耗同伴的狂怒才能使用。你使用战技时，同伴必须位于你60尺内，且持有的狂怒至少等于该战技的消耗。你使用战技时，同伴失去等同于消耗量的狂怒。即使同伴{@condition 昏迷}，只要它持有足够的狂怒，你仍可以使用战技。当同伴进入横行后，你无法使用战技。",
+				"部分战技允许同伴进行一次招牌攻击。此招牌攻击不能通过额外战技进行修改，也不能作为狂怒动作的一部分使用。",
+				{
+					"type": "abilityDc",
+					"name": "战技",
+					"attributes": [
+						"wis"
+					],
+					"ENG_name": "Exploit"
+				},
+				"你在2级获得此特性时，以及在10级和17级获得新战技时，可以选取以下任意战技。",
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 3,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "帮帮我们，朋友（3狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "击落他们（4狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "拖拽他们（4狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "野性反射（2狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "飓风打击（3狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "无路可逃（1+狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "原初突袭（3狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "快速躲藏（2狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "猛烈捶打（4狂怒）|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"ENG_name": "Superior Ferocity",
+			"name": "超凡狂怒",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 2,
+			"entries": [
+				"同样在2级，每当你的同伴使用一项需要生物进行属性检定或豁免检定的狂怒动作时，同伴可以用你的原初战技豁免DC代替正常的DC。"
+			]
+		},
+		{
+			"ENG_name": "Companion Bond",
+			"name": "同伴羁绊",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你选择一种你与同伴共享的专精羁绊。从凶猛羁绊、猎手羁绊、炼狱羁绊、原初羁绊和守护者羁绊中选择其一。"
+			]
+		},
+		{
+			"ENG_name": "Master Caregiver",
+			"name": "照料大师",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"animal handling": true
+				}
+			],
+			"entries": [
+				"同样在3级，你获得{@skill 驯兽}技能的熟练项。如果你已拥有驯兽技能的熟练项，则你在使用该技能进行的任何属性检定中，熟练加值翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 4,
+			"entries": [
+				"当你到达4级时，你可以将一项由你选择的属性值提高2，或将两项由你选择的属性值各提高1。与常规一样，你不能通过此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Beyond Instinct",
+			"name": "超越本能",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 5,
+			"entries": [
+				"在5级时，得益于你的照料，同伴的坚韧与多能都得到成长。你和同伴获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"每当你的同伴在你的回合开始时获得狂怒时，它额外获得1点狂怒。",
+						"你的同伴获得一项由你选择的属性豁免检定熟练项。",
+						"你的同伴获得一项由你选择的下列技能的熟练项：{@skill 特技}、{@skill 驯兽}、{@skill 运动}、{@skill 威吓}、{@skill 调查}、{@skill 察觉}、{@skill 表演}、{@skill 巧手}、{@skill 隐匿}或{@skill 求生}。你的同伴在使用{@skill 调查}技能进行属性检定时可以用感知代替智力，在使用{@skill 威吓}或{@skill 表演}技能进行属性检定时可以用力量或敏捷代替魅力。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Signature Attack",
+			"name": "强化招牌攻击",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 5,
+			"entries": [
+				"在5级时，当你的同伴用它的招牌攻击命中时，该攻击额外掷一颗武器伤害骰。",
+				"此外，你的同伴的攻击和狂怒动作所造成的伤害在克服对非魔法攻击和伤害的抗性与免疫时视为魔法伤害。"
+			]
+		},
+		{
+			"ENG_name": "Faithful Companion",
+			"name": "忠实同伴",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 6,
+			"entries": [
+				"在6级时，你与同伴之间的超自然联结进一步加深，使你们能更快地协同行动，并与所有盟友更好地配合作战。你不再需要使用附赠动作来命令同伴。相反，只要你未{@condition 失能}，你就可以仅凭无需动作的言语或肢体示意来指挥它采取行动。",
+				"此外，当你的同伴在你未{@condition 失能}且它能看见或听见你时进入横行，它不会自动移向并攻击最近的生物。你可以改为在轮到你时选择同伴的移动位置，以及它以招牌攻击攻击哪个生物。"
+			]
+		},
+		{
+			"ENG_name": "Rejuvenating Ferocity",
+			"name": "焕新狂怒",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 6,
+			"entries": [
+				"同样在6级，你的同伴可以在战斗中汲取自身的狂怒来恢复活力。你可以用附赠动作消耗任意数量的同伴狂怒，同伴恢复等同于所耗狂怒数量的生命值。你可以使用此特性的次数等于你的感知调整值（至少一次），在完成长休后恢复所有已耗用的次数。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus",
+				"activation.cost": 1,
+				"count": "@abilities.wis.mod"
+			}
+		},
+		{
+			"ENG_name": "Companion Bond Feature",
+			"name": "同伴羁绊特性",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 7,
+			"entries": [
+				"在7级时，你从你的同伴羁绊中获得一项额外特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以将一项由你选择的属性值提高2，或将两项由你选择的属性值各提高1。与常规一样，你不能通过此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Primal Strike",
+			"name": "原初打击",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 8,
+			"entries": [
+				"在8级时，你获得将原初能量灌注进武器打击的能力。在你的每个回合中，当你以一次武器攻击命中一个生物时，你可以让该攻击对目标额外造成1d8伤害。伤害类型由你在获得此特性时从以下列表中选择决定：强酸、寒冷、火焰、闪电、毒素或雷鸣。每当你在本职业中获得一个等级时，你都可以将此特性的伤害类型改为列表中的另一种类型。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection",
+			"name": "秘术师联系",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 9,
+			"entries": [
+				"在9级时，你与同伴的联结赋予你们一种天赋异禀。你的{@filter 秘术师联系|optionalfeatures|source=|feature type=bst:mc}的好处取决于你的同伴。如果你获得了新同伴，新同伴的秘术师联系好处将取代原有的好处。"
+			]
+		},
+		{
+			"ENG_name": "Beyond Instinct Improvement",
+			"name": "超越本能提升",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 10,
+			"entries": [
+				"当你到达10级时，你的同伴获得的额外狂怒提高到3点。你的同伴获得另一项由你选择的属性豁免熟练项，并获得上列表中另一项技能的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Primal Exploits",
+			"name": "原初战技",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 10,
+			"entries": [
+				"你到达10级后可以选取以下战技：",
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 2,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "碾压冲锋（8狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "蔓延狂怒（6狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "狂怒复仇（5狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "标记猎物（4狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "原初咆哮（6狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "兽群之怒（4狂怒）|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"ENG_name": "Companion Bond Feature",
+			"name": "同伴羁绊特性",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 11,
+			"entries": [
+				"在11级时，你从你的同伴羁绊中获得一项额外特性。"
+			]
+		},
+		{
+			"ENG_name": "Improved Signature Attack",
+			"name": "强化招牌攻击",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 11,
+			"entries": [
+				"在11级时，你的同伴的招牌攻击造成的额外伤害再增加一颗骰，总计三颗伤害骰。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以将一项由你选择的属性值提高2，或将两项由你选择的属性值各提高1。与常规一样，你不能通过此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Loyal to the End",
+			"name": "忠诚到底",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 13,
+			"entries": [
+				"在13级时，即使是有害的魔法也无法动摇你与同伴之间、以及你们与朋友之间的忠诚。你和同伴都不会被{@condition 魅惑}或{@condition 恐慌}。"
+			]
+		},
+		{
+			"ENG_name": "Keen Senses",
+			"name": "敏锐感官",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 14,
+			"entries": [
+				"在14级时，你的感官变得敏锐，堪比可怕的掠食者。你在依赖听觉、视觉或嗅觉的感知（{@skill 察觉}）检定上具有优势。此外，你可以用附赠动作进行搜索动作。"
+			]
+		},
+		{
+			"ENG_name": "Primal Strike Improvement",
+			"name": "原初打击提升",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 14,
+			"entries": [
+				"当你到达14级时，你的原初打击的额外伤害提高到{@dice 2d8}。"
+			]
+		},
+		{
+			"ENG_name": "Beyond Instinct Improvement",
+			"name": "超越本能提升",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 15,
+			"entries": [
+				"当你到达15级时，你的同伴获得的额外狂怒提高到5点。你的同伴获得另一项由你选择的属性豁免熟练项，并获得上列表中另一项技能的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Companion Bond Feature",
+			"name": "同伴羁绊特性",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 15,
+			"entries": [
+				"在15级时，你从你的同伴羁绊中获得一项额外特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以将一项由你选择的属性值提高2，或将两项由你选择的属性值各提高1。与常规一样，你不能通过此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Improved Signature Attack",
+			"name": "强化招牌攻击",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 17,
+			"entries": [
+				"在17级时，你的同伴的招牌攻击造成的额外伤害再增加一颗骰，总计四颗伤害骰。"
+			]
+		},
+		{
+			"ENG_name": "Primal Exploits",
+			"name": "原初战技",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 17,
+			"entries": [
+				"你到达17级后可以选取以下战技：",
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 2,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "血腥竞技（16狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "裂土（14狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "埋葬死者（16狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "灌注投射物（14狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "撕裂（12狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "灵体形态（14狂怒）|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"ENG_name": "Summon the Wilds",
+			"name": "召唤荒野",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 18,
+			"entries": [
+				"在18级时，你可以召唤附近的生物组成一支扰敌的兽群。视你所在的地点而定，这群生物可以由鸟类、鱼类、昆虫、啮齿动物或其他由你选择的类似生物组成。你用一个动作呼唤这些生物，它们立即抵达并占据一个以你120尺内一点为中心的30尺立方空间。兽群持续存在1分钟。在你的每个回合，你可以用附赠动作将兽群向任意方向移动至多30尺。",
+				"由你选择的每个在兽群区域内开始其回合的生物必须通过一次对抗你战技豁免DC的感知豁免检定，否则在其下个回合开始前，它的属性检定、攻击检定和豁免检定都具有劣势，且被动感知（{@skill 察觉}）值受到\u22125惩罚。",
+				"在完成一次短休或长休之前，你不能再次使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以将一项由你选择的属性值提高2，或将两项由你选择的属性值各提高1。与常规一样，你不能通过此特性将属性值提高到20以上。",
+				"如果你的DM允许使用专长，你可以改为选择一项专长。"
+			]
+		},
+		{
+			"ENG_name": "Unbreakable Friendship",
+			"name": "牢不可破的友谊",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"level": 20,
+			"entries": [
+				"在20级时，你对同伴的感情与友谊将原初能量灌注进它的躯体，使其成为同类的典范。只要你拥有至少1生命值且你的同伴能看见或听见你，你和同伴就获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你为阻止同伴进入横行而进行的感知（{@skill 驯兽}）检定自动成功。（如果你想让同伴故意进入横行，可以选择不进行检定。）",
+						"如果你的同伴被降至0生命值但并未被直接杀死，它改为保留1生命值。",
+						"每当你掷先攻时，你的同伴获得{@dice 1d10}点狂怒。"
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Ferocious Bond",
+			"name": "凶猛羁绊",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "凶猛",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"有些野兽之心与同伴在抛开一切控制、任由本能指引自己一举一动时感到最为亲近。当你的同伴进入横行时，你能感受到它每一刻的狂暴，这激发出属于你自己的战斗狂怒。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狂乱冲锋|野兽之心|BST|凶猛|BST|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "智者之怒|野兽之心|BST|凶猛|BST|3"
+				},
+				{
+					"type": "table",
+					"caption": "凶猛羁绊特性",
+					"colLabels": [
+						"野兽之心等级",
+						"特性"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"狂乱冲锋、智者之怒"
+						],
+						[
+							"7级",
+							"鼓舞横行"
+						],
+						[
+							"11级",
+							"狂怒横行"
+						],
+						[
+							"15级",
+							"振奋横行"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Frenzied Charge",
+			"name": "狂乱冲锋",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "凶猛",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在你于3级选择此羁绊时，你学会追随同伴的狂怒引领。每当你的同伴进入横行时，你可以用反应移动至多等于你速度的距离，并在移动结束时对一名目标进行一次近战武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Fury of the Wise",
+			"name": "智者之怒",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "凶猛",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"同样在3级，你与同伴狂怒相伴的经历令胆敢与你为敌者心生敬畏。如果你尚未拥有{@skill 威吓}技能的熟练项，则获得之。此外，你的魅力（{@skill 威吓}）检定获得等于你感知调整值的加值。"
+			]
+		},
+		{
+			"ENG_name": "Energizing Rampage",
+			"name": "鼓舞横行",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "凶猛",
+			"subclassSource": "BST",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你的同伴在陷入疯狂之后仍能保持顽强。当你的同伴结束横行时，它的狂怒值降为4而非0。"
+			]
+		},
+		{
+			"ENG_name": "Furious Rampage",
+			"name": "狂怒横行",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "凶猛",
+			"subclassSource": "BST",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的同伴能将狂怒灌注进更强的打击之中。每当你的同伴在横行期间以招牌攻击命中你的一个敌人时，该攻击造成等于同伴狂怒值的额外伤害（而非其狂怒值的一半）。",
+				"此外，每当你的同伴在横行期间攻击距你5尺内的目标时，它进行该攻击时具有优势。如果你在使用狂乱冲锋时攻击距你同伴5尺内的生物，你进行该攻击时具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Invigorated Rampage",
+			"name": "振奋横行",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "凶猛",
+			"subclassSource": "BST",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你和同伴能将愤怒灌注进势不可挡的打击之中。当你的同伴在横行期间以招牌攻击命中另一个生物，或你以狂乱冲锋赋予你的攻击命中另一个生物时，目标在它下个回合结束前陷入{@condition 目盲}、{@condition 耳聋}或对攻击者{@condition 恐慌}的状态（由你选择其一）。"
+			]
+		},
+		{
+			"ENG_name": "Chosen Quarry",
+			"name": "选定猎物",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "猎手",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在你于3级选择此羁绊时，你和同伴可以选定一个生物作为你们的猎物。每当你的同伴在你的回合开始时获得狂怒且未进入横行时，你可以消耗4点狂怒标记一个你90尺内的生物（无需动作）。该生物成为你们的猎物，持续1分钟，或直到你使用此特性将另一个目标标记为猎物。每当你或你的同伴以武器攻击命中猎物，或以狂怒动作对它造成伤害时，猎物额外受到{@damage 1d6}伤害。"
+			]
+		},
+		{
+			"ENG_name": "Hunter Bond",
+			"name": "猎手羁绊",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "猎手",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"你和同伴共享对狩猎的热爱。你们二人是无声的潜行者，协力放倒各种体型的猎物，或是为朋友们觅食，或是消灭你们的敌人。许多拥有此羁绊的野兽之心使用远程武器从远处攻击猎物，同时由同伴逼近猎杀。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "选定猎物|野兽之心|BST|猎手|BST|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猎手本能|野兽之心|BST|猎手|BST|3"
+				},
+				{
+					"type": "table",
+					"caption": "猎手羁绊特性",
+					"colLabels": [
+						"野兽之心等级",
+						"特性"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"选定猎物、猎手本能"
+						],
+						[
+							"7级",
+							"原初守护"
+						],
+						[
+							"11级",
+							"同步隐匿"
+						],
+						[
+							"15级",
+							"无形猎手"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hunter's Instincts",
+			"name": "猎手本能",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "猎手",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你的直觉得到提升，使你成为令人生畏的追踪者，并赋予你更好的直觉。如果你尚未拥有{@skill 求生}技能的熟练项，则获得之。你使用该技能进行的任何属性检定的熟练加值翻倍，并且当你进行感知检定以读懂一个生物的意图或辨别一个生物是否说谎时，你可以用{@skill 求生}代替{@skill 洞悉}。"
+			]
+		},
+		{
+			"ENG_name": "Primal Warding",
+			"name": "原初守护",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "猎手",
+			"subclassSource": "BST",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你学会使用原初魔法布置由几乎无形的力场构成的陷阱。你用一个动作在以你30尺内一处可见点为中心的10尺方形地面区域布下陷阱，陷阱持续8小时直至被触发。布置陷阱时，你可以指定任意数量的特定生物不受其影响。找到陷阱需要成功通过一次对抗你战技豁免DC的智力（{@skill 调查}）检定。",
+				"走入陷阱区域的生物会触发陷阱，必须进行一次对抗你战技豁免DC的体质豁免检定。检定失败时，该生物受到{@damage 4d8}力场伤害并{@condition 目盲}1分钟。检定成功时，该生物只受到一半伤害，且不会{@condition 目盲}。被陷阱{@condition 目盲}的生物可以在它的每个回合结束时重复该豁免检定，成功则结束自身所受的此效应。",
+				"如果陷阱被触发时你在其1英里内，一道心灵警报会在你的脑海中响起提示。如果你正在睡眠，这道提示会将你唤醒。如果你布置了不止一个陷阱，你能知道触发的是哪一个。",
+				"你可以用此特性布置数量等于你感知调整值（至少一个）的陷阱。你在完成长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Synchronized Stealth",
+			"name": "同步隐匿",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "猎手",
+			"subclassSource": "BST",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你和同伴学会在眨眼间同时隐去身形。当你或你的同伴其中一方采取躲藏动作时，如果另一方能够躲藏，则可以用反应采取躲藏动作。此外，当你在距同伴5尺内采取躲藏动作时，你进行该动作所含的敏捷（{@skill 隐匿}）检定时具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Unseen Hunters",
+			"name": "无形猎手",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "猎手",
+			"subclassSource": "BST",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你可以用一个动作使你和同伴{@condition 隐形}10分钟。处于{@condition 隐形}状态时，除非你或你的同伴选择留下踪迹，否则你们都无法被非魔法手段追踪。你们中的任意一方都可以用附赠动作结束自身的隐形。一旦你使用了此特性，在完成长休之后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Devil's Understanding",
+			"name": "魔鬼的理解",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "炼狱",
+			"subclassSource": "BST",
+			"level": 3,
+			"languageProficiencies": [
+				{
+					"infernal": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"religion"
+						]
+					}
+				}
+			],
+			"entries": [
+				"在你于3级选择此羁绊时，你能够说、写并理解炼狱语。",
+				"此外，如果你尚未拥有{@skill 奥秘}或{@skill 宗教}技能（由你选择）的熟练项，则获得之。"
+			]
+		},
+		{
+			"ENG_name": "Infernal Bond",
+			"name": "炼狱羁绊",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "炼狱",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"你和同伴之间有着深厚的联结......与地狱七城也是如此！也许你在为一个魔鬼效力，也许你们曾一同被囚禁在地狱、又合力逃出生天，又或者你只是与一只出生于下层位面的邪魔同伴结成了羁绊。无论是何种情况，你都与七城相连，并能用同伴的狂怒来解锁炼狱魔法。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "魔鬼的理解|野兽之心|BST|炼狱|BST|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "炼狱战技|野兽之心|BST|炼狱|BST|3"
+				},
+				{
+					"type": "table",
+					"caption": "炼狱羁绊特性",
+					"colLabels": [
+						"野兽之心等级",
+						"特性"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"魔鬼的理解、炼狱战技"
+						],
+						[
+							"7级",
+							"地狱魅惑者"
+						],
+						[
+							"11级",
+							"邪魔特质、炼狱战技提升"
+						],
+						[
+							"15级",
+							"邪魔之形"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Infernal Exploits",
+			"name": "炼狱战技",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "炼狱",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你获得一项由你选择的炼狱战技，其运作方式与你的原初战技相同，并在适用时使用你的战技豁免DC。你所选择的战技必须是3级可用的战技。",
+				"每当你在本职业中获得一个等级时，你都可以选择一项已知的炼狱战技，并用另一项炼狱战技替换它，但你必须满足相应的野兽之心等级要求。",
+				{
+					"type": "table",
+					"caption": "炼狱战技：3级",
+					"colLabels": [
+						"战技",
+						"所用动作",
+						"狂怒消耗"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"{@optfeature 汲取他们（4狂怒）|BST|汲取他们}",
+							"反应",
+							"4"
+						],
+						[
+							"{@optfeature 地狱创伤（4狂怒）|BST|地狱创伤}",
+							"无需动作",
+							"4"
+						],
+						[
+							"{@optfeature 炼狱传送（4狂怒）|BST|炼狱传送}",
+							"动作",
+							"4"
+						],
+						[
+							"{@optfeature 邪恶欺诈（3狂怒）|BST|邪恶欺诈}",
+							"动作",
+							"3"
+						]
+					]
+				},
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "汲取他们（4狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "地狱创伤（4狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "炼狱传送（4狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "邪恶欺诈（3狂怒）|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"ENG_name": "Hell's Charmer",
+			"name": "地狱魅惑者",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "炼狱",
+			"subclassSource": "BST",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你的同伴可以借用魔鬼的超自然魅力对其他生物施展惑控系魔法。你用一个动作选择一个你30尺内、能同时看见你和同伴的生物。该生物必须进行一次感知豁免检定，如果你或你的盟友正在与它战斗，则此检定具有优势。检定成功时，该生物察觉你试图魅惑它，并对你和你的同伴转为敌对。检定失败时，该生物被你和你的同伴{@condition 魅惑}10分钟，或直到你或你的盟友对它做出任何在身体、精神或情感上有害的行为。被{@condition 魅惑}的生物对你友善。当此效应结束时，被{@condition 魅惑}的生物不记得自己被{@condition 魅惑}期间发生的事。",
+				"你可以使用此特性的次数等于你的感知调整值（至少一次）。你在完成长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Fiendish Traits",
+			"name": "邪魔特质",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "炼狱",
+			"subclassSource": "BST",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的同伴与地狱的联结使它变得更加邪魔化。为你的同伴选择以下特质之一：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "{@i 倒钩之皮。}",
+							"ENG_name": "{@i Barbed Hide.}",
+							"entry": "你的同伴全身长出倒钩。每当一个位于你同伴5尺内的生物擒抱它，或以近战攻击命中它时，该生物受到{@damage 1d10}穿刺伤害。"
+						},
+						{
+							"type": "item",
+							"name": "{@i 邪魔免疫。}",
+							"ENG_name": "{@i Fiendish Immunities.}",
+							"entry": "你的同伴的皮肤、毛皮或其他体色转为红色，且该同伴免疫火焰与毒素伤害，并免疫{@condition 中毒}状态。"
+						},
+						{
+							"type": "item",
+							"name": "{@i 燃焰武器。}",
+							"ENG_name": "{@i Fiery Weapons.}",
+							"entry": "你的同伴的天生武器（例如牙齿或爪子）被黑焰包裹。每当你的同伴以招牌攻击命中时，该攻击额外造成{@damage 1d6}火焰伤害。"
+						},
+						{
+							"type": "item",
+							"name": "{@i 翅膀。}",
+							"ENG_name": "{@i Wings.}",
+							"entry": "你的同伴背上长出皮质双翼，并获得40尺飞行速度。如果你的同伴原本就有翅膀，那些翅膀会呈现邪魔的外观，且其飞行速度提高至40尺。"
+						}
+					]
+				},
+				"每当你完成长休时，你可以将同伴的邪魔特质替换为本列表中的另一项。"
+			]
+		},
+		{
+			"ENG_name": "Infernal Exploits",
+			"name": "炼狱战技",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "炼狱",
+			"subclassSource": "BST",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你在11级获得新的炼狱战技时，可以选取以下战技之一：",
+				{
+					"type": "table",
+					"caption": "炼狱战技：11级",
+					"colLabels": [
+						"战技",
+						"所用动作",
+						"狂怒消耗"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"{@optfeature 硫磺传送|BST}",
+							"动作",
+							"8"
+						],
+						[
+							"{@optfeature 炼狱之锁链|BST}",
+							"动作",
+							"8"
+						],
+						[
+							"{@optfeature 地狱黑暗|BST}",
+							"动作",
+							"8"
+						],
+						[
+							"{@optfeature 炼狱之焰|BST}",
+							"动作",
+							"8"
+						],
+						[
+							"{@optfeature 毒雨|BST}",
+							"动作",
+							"8"
+						]
+					]
+				},
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "硫磺传送（8狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "炼狱之锁链（8狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "地狱黑暗（8狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "炼狱之焰（8狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "毒雨（8狂怒）|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"ENG_name": "Fiendish Form",
+			"name": "邪魔之形",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "炼狱",
+			"subclassSource": "BST",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你的同伴可以变身为覆鳞的地狱之子。你可以用附赠动作消耗6点狂怒，将你的同伴转化为邪魔之形，持续1分钟。处于此形态期间，你的同伴发生以下变化：",
+				{
+					"type": "list",
+					"items": [
+						"它的生物类型变为邪魔。",
+						"它对钝击、穿刺和挥砍伤害具有抗性。",
+						"它在对抗法术和其他魔法效应的豁免检定上具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Nature Exploits",
+			"name": "自然战技",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "原初",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你获得一项由你选择的自然战技，其运作方式与你的原初战技相同，并在适用时使用你的战技豁免DC。你所选择的战技必须是3级可用的战技。",
+				"每当你在本职业中获得一个等级时，你都可以选择一项已知的自然战技，并用另一项自然战技替换它，但你必须满足相应的野兽之心等级要求。",
+				{
+					"type": "table",
+					"caption": "自然战技：3级",
+					"colLabels": [
+						"战技",
+						"所用动作",
+						"狂怒消耗"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"{@optfeature 元素护盾（3狂怒）|BST|元素护盾}",
+							"反应",
+							"3"
+						],
+						[
+							"{@optfeature 冰寒打击（2狂怒）|BST|冰寒打击}",
+							"攻击动作",
+							"2"
+						],
+						[
+							"{@optfeature 致病打击（3狂怒）|BST|致病打击}",
+							"攻击动作",
+							"3"
+						],
+						[
+							"{@optfeature 随需之翼（5狂怒）|BST|随需之翼}",
+							"无需动作",
+							"5"
+						]
+					]
+				},
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "元素护盾（3狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "冰寒打击（2狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "致病打击（3狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "随需之翼（5狂怒）|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"ENG_name": "Primal Understanding",
+			"name": "原初理解",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "原初",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你能够说、写并理解原初语和木族语。",
+				"此外，如果你尚未拥有{@skill 自然}技能的熟练项，则获得之。"
+			]
+		},
+		{
+			"ENG_name": "Primordial Bond",
+			"name": "原初羁绊",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "原初",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"你和同伴与自然世界的魔法有着格外深厚的联结。通过驾驭同伴的狂怒，你可以对敌人挥舞元素的原初之力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "自然战技|野兽之心|BST|原初|BST|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "原初理解|野兽之心|BST|原初|BST|3"
+				},
+				{
+					"type": "table",
+					"caption": "原初羁绊特性",
+					"colLabels": [
+						"野兽之心等级",
+						"特性"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"自然战技、原初理解"
+						],
+						[
+							"7级",
+							"大地同盟"
+						],
+						[
+							"11级",
+							"自然战技提升、灵魂狂奔"
+						],
+						[
+							"15级",
+							"天气同盟"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Allied Earth",
+			"name": "大地同盟",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "原初",
+			"subclassSource": "BST",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你的同伴周围的土地生出藤蔓与植物来阻碍敌人。每当你的同伴拥有至少1点狂怒时，它10尺内的地面对其敌人而言是困难地形。"
+			]
+		},
+		{
+			"ENG_name": "Nature Exploits",
+			"name": "自然战技",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "原初",
+			"subclassSource": "BST",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你在11级获得新的自然战技时，可以选取以下战技之一：",
+				{
+					"type": "table",
+					"caption": "自然战技：11级",
+					"colLabels": [
+						"战技",
+						"所用动作",
+						"狂怒消耗"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"{@optfeature 熔岩间歇泉|BST}",
+							"动作",
+							"8"
+						],
+						[
+							"{@optfeature 闪电喷发|BST}",
+							"无需动作",
+							"8"
+						],
+						[
+							"{@optfeature 植物囚笼|BST}",
+							"动作",
+							"5"
+						],
+						[
+							"{@optfeature 蜇刺虫群|BST}",
+							"动作",
+							"6"
+						],
+						[
+							"{@optfeature 雷霆反击|BST}",
+							"反应",
+							"6"
+						]
+					]
+				},
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "熔岩间歇泉（8狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "闪电喷发（8狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "植物囚笼（5狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "蜇刺虫群（6狂怒）|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "雷霆反击（6狂怒）|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"ENG_name": "Spirit Stampede",
+			"name": "灵魂狂奔",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "原初",
+			"subclassSource": "BST",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你的同伴进入横行时，它会召唤出死去生物的无形之灵，与其一同狂奔肆虐。你同伴30尺内由你选择的每个生物受到等于该同伴狂怒值的力场伤害。"
+			]
+		},
+		{
+			"ENG_name": "Allied Weather",
+			"name": "天气同盟",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "原初",
+			"subclassSource": "BST",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你同伴周围的天气听凭你的意志，痛击伤害它的敌人。每当你的同伴拥有至少1点狂怒，且被一个距它10尺内的生物以近战攻击命中时，选择以下效应之一：",
+				{
+					"type": "list",
+					"items": [
+						"攻击者必须通过一次对抗你战技豁免DC的力量豁免检定，否则{@condition 倒地}。",
+						"攻击者必须通过一次对抗你战技豁免DC的敏捷豁免检定，否则受到等于你同伴狂怒值的闪电伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Beast Vitality",
+			"name": "野兽活力",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "守护者",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级选择此羁绊时，你与同伴的联结增强了你的自然活力。你的生命值上限提高3，并且每当你在本职业中获得一个等级时再提高1。"
+			]
+		},
+		{
+			"ENG_name": "Pack Phalanx",
+			"name": "兽群方阵",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "守护者",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你和同伴学会近身缠住敌人，使它们无法伤害你们所保护的人。每当你和同伴都未{@condition 失能}且都位于一个生物的5尺内时，该生物对除你或你同伴以外的任何目标进行的攻击检定都具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Protector Bond",
+			"name": "守护者羁绊",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "守护者",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"对你和同伴而言，没有什么比你们的族群更重要。你们共享的羁绊磨砺了你们的攻防技艺，让你们能够以血肉之躯和生命为代价，保护你的盟友和与你们同行的人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "野兽活力|野兽之心|BST|守护者|BST|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兽群方阵|野兽之心|BST|守护者|BST|3"
+				},
+				{
+					"type": "table",
+					"caption": "守护者羁绊特性",
+					"colLabels": [
+						"野兽之心等级",
+						"特性"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3级",
+							"野兽活力、兽群方阵"
+						],
+						[
+							"7级",
+							"厚实兽皮"
+						],
+						[
+							"11级",
+							"哨卫同伴"
+						],
+						[
+							"15级",
+							"不朽守护者"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Thickened Hide",
+			"name": "厚实兽皮",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "守护者",
+			"subclassSource": "BST",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你的同伴的天然防御得到改善，使它更难被伤害。你的同伴的AC提高2。"
+			]
+		},
+		{
+			"ENG_name": "Sentinel Companion",
+			"name": "哨卫同伴",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "守护者",
+			"subclassSource": "BST",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的同伴的强烈警觉驱使它攻击那些试图伤害你们族群其他成员的懦夫。当一个位于你同伴5尺内的生物攻击除你或你同伴以外的生物时，你可以消耗2点狂怒，让同伴用它的反应对攻击者进行一次招牌攻击。"
+			]
+		},
+		{
+			"ENG_name": "Undying Protector",
+			"name": "不朽守护者",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "守护者",
+			"subclassSource": "BST",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，同伴的愤怒支撑你挺过重伤与踉跄的打击。当你降至0生命值时，如果你能看见你的同伴，你可以消耗2点狂怒，改为保留1生命值。第一次使用此特性之后，每再使用一次，狂怒消耗提高2点。当你完成一次短休或长休后，狂怒消耗重置为2点。"
+			]
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Hunter's Instincts",
+			"name": "猎手本能",
+			"source": "BST",
+			"className": "野兽之心",
+			"classSource": "BST",
+			"subclassShortName": "猎手",
+			"subclassSource": "BST",
+			"level": 3,
+			"entryData": {
+				"expertise": [
+					{
+						"survival": true
+					}
+				]
+			}
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Aid Us, Friend (3 Ferocity)",
+			"name": "帮帮我们，朋友（3狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你采取攻击动作时，你都可以启动此战技。在你攻击之前或之后，你的同伴可以用附赠动作采取协助动作。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp"
+		},
+		{
+			"ENG_name": "Blood Sport (16 Ferocity)",
+			"name": "血腥竞技（16狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你以一次近战武器攻击命中一个大型或更小的生物时，你还可以将目标推离你至多30尺并使其{@condition 倒地}。如果目标在此移动结束时位于你同伴的5尺内，同伴可以对目标进行一次招牌攻击（无需动作）。命中时，该攻击造成其正常效应，且目标被推离你的同伴至多30尺。如果目标在此移动结束时位于你的5尺内，你可以对它进行一次近战武器攻击（无需动作），命中时额外造成{@damage 4d6}伤害。"
+			]
+		},
+		{
+			"ENG_name": "Break the Earth (14 Ferocity)",
+			"name": "裂土（14狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作，在你60尺内的地面、地板或其他表面上裂开一个10尺半径的深坑。视裂开处距表面的深度而定，深坑最深可达50尺。深坑裂开时站在该区域内的每个生物必须进行一次敏捷豁免检定。检定失败的生物坠入坑中，每坠落10尺受到{@damage 1d6}钝击伤害并{@condition 倒地}着地。检定成功的生物移动到坑边缘由它选择的一处未被占据的空间。生物无需属性检定即可攀爬深坑的粗糙坑壁。"
+			]
+		},
+		{
+			"ENG_name": "Brimstone Teleport (8 Ferocity)",
+			"name": "硫磺传送（8狂怒）",
+			"source": "BST",
+			"page": 38,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作传送到你30尺内一处可见的未被占据空间。你离开的空间5尺内的每个生物，以及你的目的地空间5尺内的每个生物，都必须进行一次敏捷豁免检定，检定失败者受到{@damage 4d6}火焰伤害，检定成功者只受一半伤害。你和你的同伴不会受到此效应的伤害。",
+				"当你到达17级时，此伤害提高到{@damage 5d6}。"
+			]
+		},
+		{
+			"ENG_name": "Bring Them Down (4 Ferocity)",
+			"name": "击落他们（4狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的同伴以招牌攻击命中一个生物时，你可以用你的反应命令同伴将目标猛拽倒地。目标必须通过一次力量豁免检定，否则{@condition 倒地}。"
+			]
+		},
+		{
+			"ENG_name": "Bury the Dead (16 Ferocity)",
+			"name": "埋葬死者（16狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你和你的同伴都位于一个生物的5尺内时，你可以用一个动作使一股充满碎石尘土的狂暴旋风在该生物周身腾起，它必须进行一次敏捷豁免检定。检定失败时，该生物受到{@damage 8d6}钝击伤害，被击倒{@condition 倒地}并陷入{@condition 束缚}状态。检定成功时，目标只受一半伤害，且不会被击倒{@condition 倒地}或陷入{@condition 束缚}。以这种方式被{@condition 束缚}的生物可以用一个动作进行一次对抗你战技豁免DC的力量（{@skill 运动}）检定，成功则挣脱束缚。"
+			]
+		},
+		{
+			"ENG_name": "Chains from Hell (8 Ferocity)",
+			"name": "炼狱之锁链（8狂怒）",
+			"source": "BST",
+			"page": 38,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作具现出燃烧的锁链，试图缠绕你30尺内由你选择、最多三个可见生物。每个目标必须进行一次敏捷豁免检定。检定失败的目标受到{@damage 4d6}火焰伤害，并陷入{@condition 束缚}状态直到你的下个回合结束。检定成功的目标只受一半伤害，且不会被{@condition 束缚}。",
+				"当你到达17级时，此伤害提高到{@damage 5d6}。"
+			]
+		},
+		{
+			"ENG_name": "Crushing Charge (8 Ferocity)",
+			"name": "碾压冲锋（8狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作以直线移动至多等于你速度的距离，且不会引发借机攻击。你可以穿过其他生物的空间，但必须以一处未被占据的空间结束移动。你穿过的空间中的每个生物（你的同伴除外）必须进行一次力量豁免检定。检定失败的生物受到{@damage 4d6}钝击伤害并被击倒{@condition 倒地}。检定成功的生物只受一半伤害，且不会被击倒{@condition 倒地}。",
+				"当你到达17级时，此伤害提高到{@damage 5d6}。"
+			]
+		},
+		{
+			"ENG_name": "Dark of Hell (8 Ferocity)",
+			"name": "地狱黑暗（8狂怒）",
+			"source": "BST",
+			"page": 38,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作使你的同伴散发半径10尺的魔法黑暗灵光，直到你的下个回合结束。你和你的同伴能在此黑暗中视物，黑暗随同伴移动。"
+			]
+		},
+		{
+			"ENG_name": "Drag Them (4 Ferocity)",
+			"name": "拖拽他们（4狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的同伴以招牌攻击命中一个大型或更小的生物，且同伴和目标都立于地面时，你可以用你的反应命令同伴移动目标。目标必须进行一次力量豁免检定。检定失败时，同伴向你选择的方向移动至多等于其步行速度一半的距离，并拖着目标一起移动。"
+			]
+		},
+		{
+			"ENG_name": "Drain Them (4 Ferocity)",
+			"name": "汲取他们（4狂怒）",
+			"source": "BST",
+			"page": 36,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的同伴以招牌攻击命中另一个生物时，你可以用你的反应让同伴恢复等同于该次攻击所造成伤害一半的生命值。"
+			]
+		},
+		{
+			"ENG_name": "Elemental Shield (3 Ferocity)",
+			"name": "元素护盾（3狂怒）",
+			"source": "BST",
+			"page": 39,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你30尺内一个你能看见的生物受到强酸、寒冷、火焰、闪电或雷鸣伤害时，你可以用反应给予该生物对那种伤害类型的抗性（包括对触发此效应的攻击），直到它的下个回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Expanding Fury (6 Ferocity)",
+			"name": "蔓延狂怒（6狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的同伴使用一项影响距同伴特定距离内生物的狂怒动作时，你可以用你的反应将该距离扩大10尺。"
+			]
+		},
+		{
+			"ENG_name": "Feral Reflexes (2 Ferocity)",
+			"name": "野性反射（2狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你或你的同伴被一次攻击命中时，你可以用你的反应使目标的AC在对触发此效应的攻击时提高2。"
+			]
+		},
+		{
+			"ENG_name": "Freezing Strike (2 Ferocity)",
+			"name": "冰寒打击（2狂怒）",
+			"source": "BST",
+			"page": 39,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你采取攻击动作时，你都可以启动此战技。本回合你第一次以武器攻击命中一个生物时，该攻击额外造成{@damage 1d6}寒冷伤害，且目标的速度降低10尺，直到你的下个回合开始。",
+				"你在到达5级（{@damage 2d6}）、11级（{@damage 3d6}）和17级（{@damage 4d6}）时，此额外伤害提高{@dice 1d6}。"
+			]
+		},
+		{
+			"ENG_name": "Furious Vengeance (5 Ferocity)",
+			"name": "狂怒复仇（5狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当一个生物以近战攻击命中你或你的同伴时，你可以用你的反应对攻击者造成{@damage 4d6}心灵伤害。",
+				"当你到达17级时，此伤害提高到{@damage 5d6}。"
+			]
+		},
+		{
+			"ENG_name": "Hellish Wound (4 Ferocity)",
+			"name": "地狱创伤（4狂怒）",
+			"source": "BST",
+			"page": 36,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的同伴以攻击命中构装体或不死生物以外的另一个生物时，你可以让该攻击对目标造成一处地狱创伤（无需动作）。在每个自身回合的开始，带有一处地狱创伤的目标会因其每处地狱创伤失去{@damage 1d10}生命值。如果目标接受魔法治疗，或任何生物用一个动作成功通过一次DC等于你战技豁免DC的感知（{@skill 医药}）检定为止血，目标的所有地狱创伤都会愈合。"
+			]
+		},
+		{
+			"ENG_name": "Hurricane Blow (3 Ferocity)",
+			"name": "飓风打击（3狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你采取攻击动作时，你都可以启动此战技。本回合你第一次以武器攻击命中一个生物时，该攻击造成其正常效应，且你可以将目标推离你至多10尺。"
+			]
+		},
+		{
+			"ENG_name": "Imbue Projectile (14 Ferocity)",
+			"name": "灌注投射物（14狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作进行一次远程武器攻击。无论攻击是否命中，一股能量波都会从攻击所用的武器或弹药上爆发开来，以你的目标为中心。目标20尺内的每个生物（包括目标本身，但不包括你的同伴）必须进行一次敏捷豁免检定，检定失败者受到{@damage 10d6}力场伤害，检定成功者只受一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Infernal Flames (8 Ferocity)",
+			"name": "炼狱之焰（8狂怒）",
+			"source": "BST",
+			"page": 38,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作使一股烈焰从你的同伴身上喷发。同伴20尺内的每个生物必须进行一次敏捷豁免检定，检定失败者受到{@damage 4d10}火焰伤害，检定成功者只受一半伤害。你和你的同伴不会受到此效应的伤害。",
+				"当你到达17级时，此伤害提高到{@damage 5d6}。"
+			]
+		},
+		{
+			"ENG_name": "Infernal Teleport (4 Ferocity)",
+			"name": "炼狱传送（4狂怒）",
+			"source": "BST",
+			"page": 36,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作，使你或你的同伴（由你选择）被盘旋的暗影与烟雾包围。目标传送到其起始位置90尺内一处未被占据的空间。"
+			]
+		},
+		{
+			"ENG_name": "Lava Geyser (8 Ferocity)",
+			"name": "熔岩间歇泉（8狂怒）",
+			"source": "BST",
+			"page": 39,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作，在你30尺内一处可见的地面点上召唤一股强劲的熔岩喷流。熔岩填满一片高10尺、半径5尺的圆柱区域，并迫使区域内每个生物进行一次敏捷豁免检定。检定失败的生物受到{@damage 4d6}火焰伤害并被击倒{@condition 倒地}。检定成功的生物只受一半伤害，且不会被击倒{@condition 倒地}。随后熔岩消散为炽热的雾气并消隐无踪。",
+				"当你到达17级时，此伤害提高到{@damage 5d6}。"
+			]
+		},
+		{
+			"ENG_name": "Lightning Eruption (8 Ferocity)",
+			"name": "闪电喷发（8狂怒）",
+			"source": "BST",
+			"page": 39,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你以一次武器攻击命中一个生物时，该攻击额外造成{@damage 5d6}闪电伤害，且你可以选择目标30尺内一个你能看见的其他生物。该生物必须进行一次敏捷豁免检定，检定失败者受到{@damage 5d6}闪电伤害，检定成功者只受一半伤害。",
+				"当你到达17级时，两处伤害都提高到{@damage 6d6}。"
+			]
+		},
+		{
+			"ENG_name": "Marked Prey (4 Ferocity)",
+			"name": "标记猎物（4狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的同伴使用一项要求生物进行豁免检定的狂怒动作时，你可以用你的反应使该豁免检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Basilisk",
+			"name": "秘术师联系：石化蜥蜴",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 石化蜥蜴同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个附赠动作使你的皮肤覆盖上一层柔韧的石质，持续10分钟。覆盖石质期间，你对钝击、穿刺和挥砍伤害具有抗性。在完成长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Blood Hawk",
+			"name": "秘术师联系：血鹰",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 血鹰同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个附赠动作获得等于你步行速度的飞行速度，持续1小时。在完成长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Bulette",
+			"name": "秘术师联系：鲨蜥",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 鲨蜥同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个附赠动作获得等于你步行速度的掘穴速度，持续10分钟。在完成一次短休或长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Deinonychus",
+			"name": "秘术师联系：恐爪龙",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 恐爪龙同伴|BST}"
+				}
+			],
+			"entries": [
+				"你可以用附赠动作采取躲藏动作。你可以使用此好处的次数等于你的感知调整值（至少一次），在完成长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Dragon Wyrmling",
+			"name": "秘术师联系：雏龙",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 雏龙同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个附赠动作将龙威之力注入你持有的一件武器，持续10分钟。此力量生效期间，使用该武器进行的攻击额外造成{@damage 1d10}伤害，类型与你雏龙的龙族血统特质相关联。在完成长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Earth Elemental",
+			"name": "秘术师联系：土元素",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 土元素同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个附赠动作将你的身体转化为泥土与岩石，持续10分钟。处于此形态期间，你可以穿行由泥土或岩石构成的非魔法物体。如果你在一个物体内部结束回合，你受到{@damage 1d10}力场伤害并被挤回你进入该物体时所在的空间。在完成长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Gelatinous Cube",
+			"name": "秘术师联系：凝胶方块",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 凝胶方块同伴|BST}"
+				}
+			],
+			"entries": [
+				"你的身体变得柔韧而胶状。你用一个动作或附赠动作，将你持有的一件微型物体吸收进你的体内，使其他生物无法取用它。随后你可以用一个动作或附赠动作，将一件被吸收的物体排出到你的一只空手中，或让它落在你的脚边。你一次最多可以吸收四件物体。当你死亡时，所有被吸收的物体都会从你的体内掉出。",
+				"此外，当另一个位于你5尺内的生物以近战攻击命中你时，你可以用反应对攻击者造成{@damage 3d6}强酸伤害。在完成一次短休或长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Giant Spider",
+			"name": "秘术师联系：巨蜘蛛",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 巨蜘蛛同伴|BST}"
+				}
+			],
+			"entries": [
+				"你获得一种能警示危险的第二感官。你在先攻掷骰上具有优势，且只要你未{@condition 失能}，你就不会被突袭。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Giant Toad",
+			"name": "秘术师联系：巨蟾",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 巨蟾同伴|BST}"
+				}
+			],
+			"entries": [
+				"你可以屏息1小时，并获得等于你步行速度的游泳速度。此外，即使没有助跑，你也可以进行远跳或高跳，如同你已经助跑一般。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Giant Weasel",
+			"name": "秘术师联系：巨鼬",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 巨鼬同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个附赠动作使你的牙齿在1分钟内变为尖利的鼬齿，使你可以用附赠动作对距你5尺内的目标进行啃咬攻击。此为一次天生武器攻击，造成{@damage 1d10}穿刺伤害，攻击与伤害掷骰可以使用你的力量或敏捷调整值。在完成长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Hell Hound",
+			"name": "秘术师联系：地狱猎犬",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 地狱猎犬同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个附赠动作使自身被地狱之火笼罩10分钟。被如此笼罩期间，任何在回合内第一次以近战攻击命中你或触碰你的5尺内生物都会受到{@damage 2d6}火焰伤害。在完成长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Mimic",
+			"name": "秘术师联系：拟身怪",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 拟身怪同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个附赠动作触碰一件小型或更小的非魔法物体，并将其变形为另一件大小与重量相仿、价值不超过原物体的非魔法物体。该物体保持变形状态1小时。如果你移动到距该物体超过30尺处，变形提前结束；你也可以用一个动作选择提前结束变形。将以此方式变形的任何材料用作法术的法术材料会导致该法术施放失败。在完成一次短休或长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Owlbear",
+			"name": "秘术师联系：枭熊",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 枭熊同伴|BST}"
+				}
+			],
+			"entries": [
+				"你用一个动作发出一声振奋的枭鸣。你30尺内由你选择、能听见你声音的每个生物获得等于你角色等级的临时生命值。在完成长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Sporeling",
+			"name": "秘术师联系：孢子仔",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 孢子仔同伴|BST}"
+				}
+			],
+			"entries": [
+				"当你以一次武器攻击命中另一个生物时，你将特殊孢子注入该攻击，使目标的攻击检定具有劣势，直到它的下个回合结束。在完成一次短休或长休之前，你不能再次使用此好处。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Connection: Worg",
+			"name": "秘术师联系：座狼",
+			"source": "BST",
+			"page": 31,
+			"featureType": [
+				"BST:MC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					},
+					"other": "{@creature 座狼同伴|BST}"
+				}
+			],
+			"entries": [
+				"你的步行速度提高10尺。"
+			]
+		},
+		{
+			"ENG_name": "No Escape (1+ Ferocity)",
+			"name": "无路可逃（1+狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"在你的同伴获得狂怒且未进入横行的回合开始时，你可以消耗至多等于你感知调整值的狂怒（至少1点；无需动作）。直到你的下个回合开始，你或你同伴的速度（由你选择）提高5尺×所消耗的狂怒值。"
+			],
+			"foundryImg": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp"
+		},
+		{
+			"ENG_name": "Plant Prison (5 Ferocity)",
+			"name": "植物囚笼（5狂怒）",
+			"source": "BST",
+			"page": 39,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作选择一个你30尺内可见的生物。多刺的藤蔓从目标脚下的地面迸出，目标必须进行一次敏捷豁免检定。检定失败时，目标受到{@damage 4d6}穿刺伤害，并陷入{@condition 束缚}状态直到你的下个回合开始。检定成功时，目标只受一半伤害，且不会被{@condition 束缚}。",
+				"当你到达17级时，此伤害提高到{@damage 5d6}。"
+			]
+		},
+		{
+			"ENG_name": "Poison Rain (8 Ferocity)",
+			"name": "毒雨（8狂怒）",
+			"source": "BST",
+			"page": 38,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作使剧毒的绿色降雨落在以你60尺内一点为中心的20尺立方区域内。该区域内除你和你的同伴外的每个生物必须通过一次体质豁免检定，否则陷入{@condition 中毒}状态，直到你的下个回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Primal Pounce (3 Ferocity)",
+			"name": "原初突袭（3狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的同伴以招牌攻击命中一个生物时，你可以用你的反应命令同伴擒抱目标。目标必须进行一次敏捷豁免检定。检定失败时，同伴抓住目标，目标陷入{@condition 受擒}状态（挣脱DC等于你的战技豁免DC）。如果你的同伴攻击目标以外的生物，擒抱也会结束。"
+			]
+		},
+		{
+			"ENG_name": "Primal Shout (6 Ferocity)",
+			"name": "原初咆哮（6狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作发出一声威吓的怒吼。你15尺内由你选择、能听见你声音的每个生物必须通过一次感知豁免检定，否则对你{@condition 恐慌}，直到你的下个回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Quick Hide (2 Ferocity)",
+			"name": "快速躲藏（2狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你采取攻击动作时，你都可以启动此战技。本回合你第一次以武器攻击命中一个生物时，如果你的同伴能够躲藏，它可以用反应采取躲藏动作。"
+			]
+		},
+		{
+			"ENG_name": "Rend (12 Ferocity)",
+			"name": "撕裂（12狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作选择一个位于你和同伴5尺内的可见生物。你对目标进行一次近战武器攻击，你的同伴对目标进行一次招牌攻击（无需动作）。如果你们双方都命中并对目标造成伤害，目标被击倒{@condition 倒地}，并额外受到{@damage 6d6}点两次攻击中任一攻击所造成类型的伤害（由你选择）。"
+			]
+		},
+		{
+			"ENG_name": "Sickening Strike (3 Ferocity)",
+			"name": "致病打击（3狂怒）",
+			"source": "BST",
+			"page": 39,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你采取攻击动作时，你都可以启动此战技。本回合你第一次以武器攻击命中一个生物时，目标必须通过一次体质豁免检定，否则陷入{@condition 中毒}状态，直到你的下个回合开始。"
+			]
+		},
+		{
+			"ENG_name": "Spirit Form (14 Ferocity)",
+			"name": "灵体形态（14狂怒）",
+			"source": "BST",
+			"page": 30,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个附赠动作使你和你的同伴化为灵体，直到你的下个回合结束。处于灵体状态期间，你们各自对强酸、寒冷、火焰、闪电和雷鸣伤害，以及来自非魔法攻击的钝击、穿刺和挥砍伤害具有抗性。处于灵体状态期间，你和你的同伴各自获得等于自身步行速度的飞行速度，且你们各自可以像穿越困难地形一样穿过其他生物和物体。你们中的任意一方若在物体内部结束回合，将受到{@damage 1d10}力场伤害。"
+			]
+		},
+		{
+			"ENG_name": "Stinging Swarm (6 Ferocity)",
+			"name": "蜇刺虫群（6狂怒）",
+			"source": "BST",
+			"page": 41,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作在一条5尺宽、30尺长的直线区域中召唤出一群蜇刺的飞虫。直线区域中除你的同伴外的每个生物必须进行一次体质豁免检定，检定失败者受到{@damage 4d6}穿刺伤害，检定成功者只受一半伤害。随后飞虫消散为暗影并逐渐淡去。",
+				"当你到达17级时，此伤害提高到{@damage 5d6}。"
+			]
+		},
+		{
+			"ENG_name": "Thrash (4 Ferocity)",
+			"name": "猛烈捶打（4狂怒）",
+			"source": "BST",
+			"page": 28,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的同伴以近战招牌攻击命中一个大型或更小的生物时，你可以用你的反应命令同伴将目标左右猛烈甩打，迫使它进行一次感知豁免检定。检定失败时，目标的攻击检定具有劣势，且对目标进行的攻击检定具有优势，直到你的下个回合开始。"
+			],
+			"foundryImg": "icons/magic/fire/beam-jet-stream-spiral-yellow.webp"
+		},
+		{
+			"ENG_name": "Thunderous Rebuke (6 Ferocity)",
+			"name": "雷霆反击（6狂怒）",
+			"source": "BST",
+			"page": 41,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当一个位于你或你同伴5尺内的生物以近战攻击命中你或你的同伴时，你可以用你的反应迫使攻击者进行一次体质豁免检定。检定失败时，攻击者受到{@damage 3d6}雷鸣伤害，并被推离目标10尺。检定成功时，攻击者只受一半伤害，且不会被推离。",
+				"当你到达17级时，此伤害提高到{@damage 4d6}。"
+			]
+		},
+		{
+			"ENG_name": "Wicked Deception (3 Ferocity)",
+			"name": "邪恶欺诈（3狂怒）",
+			"source": "BST",
+			"page": 36,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Infernal",
+							"name": "炼狱",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你用一个动作选择一个你30尺内可见、对你怀有敌意的生物。该生物必须通过一次感知豁免检定，否则会突然将你和你的同伴视为朋友，直到你的下个回合结束。处于此状态期间，该生物无法攻击或以其他方式伤害你或你的同伴。如果你或你的同伴攻击受影响的生物，此效应提前结束。免疫{@condition 魅惑}状态的生物不受此战技影响。"
+			]
+		},
+		{
+			"ENG_name": "Wings When I Need Them (5 Ferocity)",
+			"name": "随需之翼（5狂怒）",
+			"source": "BST",
+			"page": 39,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						},
+						"subclass": {
+							"ENG_name": "Primordial",
+							"name": "原初",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"在你的同伴获得狂怒且未进入横行的回合开始时，你可以具现一只幽影巨鹰（无需动作），将你或你的同伴（由你选择）带上天空。目标获得等于其步行速度的飞行速度，直到它的下个回合开始。"
+			]
+		},
+		{
+			"ENG_name": "Wrath of the Pack (4 Ferocity)",
+			"name": "兽群之怒（4狂怒）",
+			"source": "BST",
+			"page": 29,
+			"featureType": [
+				"BST:EXP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Beastheart",
+							"name": "野兽之心",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你以一次攻击命中一个生物，且该生物位于你同伴的5尺内时，你可以让同伴对该生物进行一次招牌攻击（无需动作）。命中时，该攻击造成其正常效应，且目标被击倒{@condition 倒地}。"
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Badge of Battle +1",
+			"name": "战斗徽章+1",
+			"source": "BST",
+			"page": 43,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"这枚青铜徽章上刻着一种特定的可怕生物（巨龙、野狼、枭熊等）跃入战团、对抗成群敌军的形象。佩戴徽章期间，你以徒手打击和天生武器进行的攻击检定和伤害掷骰获得+1加值。此类攻击视为魔法攻击。"
+			]
+		},
+		{
+			"ENG_name": "Badge of Battle +2",
+			"name": "战斗徽章+2",
+			"source": "BST",
+			"page": 43,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"这枚青铜徽章上刻着一种特定的可怕生物（巨龙、野狼、枭熊等）跃入战团、对抗成群敌军的形象。佩戴徽章期间，你以徒手打击和天生武器进行的攻击检定和伤害掷骰获得+2加值。此类攻击视为魔法攻击。"
+			]
+		},
+		{
+			"ENG_name": "Badge of Battle +3",
+			"name": "战斗徽章+3",
+			"source": "BST",
+			"page": 43,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"这枚青铜徽章上刻着一种特定的可怕生物（巨龙、野狼、枭熊等）跃入战团、对抗成群敌军的形象。佩戴徽章期间，你以徒手打击和天生武器进行的攻击检定和伤害掷骰获得+3加值。此类攻击视为魔法攻击。"
+			]
+		},
+		{
+			"ENG_name": "Badge of Ruin +1",
+			"name": "毁灭徽章+1",
+			"source": "BST",
+			"page": 43,
+			"rarity": "uncommon",
+			"reqAttune": "由野兽之心或同伴",
+			"wondrous": true,
+			"entries": [
+				"每当你的同伴在战斗中获得狂怒时，这枚黄金徽章便会发光。如果你的同伴与徽章同调，并使用一项要求另一个生物进行属性检定或豁免检定的狂怒动作，该检定或豁免的DC提高1。佩戴徽章期间，你的战技豁免DC提高1。"
+			]
+		},
+		{
+			"ENG_name": "Badge of Ruin +2",
+			"name": "毁灭徽章+2",
+			"source": "BST",
+			"page": 43,
+			"rarity": "rare",
+			"reqAttune": "由野兽之心或同伴",
+			"wondrous": true,
+			"entries": [
+				"每当你的同伴在战斗中获得狂怒时，这枚黄金徽章便会发光。如果你的同伴与徽章同调，并使用一项要求另一个生物进行属性检定或豁免检定的狂怒动作，该检定或豁免的DC提高2。佩戴徽章期间，你的战技豁免DC提高2。"
+			]
+		},
+		{
+			"ENG_name": "Badge of Ruin +3",
+			"name": "毁灭徽章+3",
+			"source": "BST",
+			"page": 43,
+			"rarity": "very rare",
+			"reqAttune": "由野兽之心或同伴",
+			"wondrous": true,
+			"entries": [
+				"每当你的同伴在战斗中获得狂怒时，这枚黄金徽章便会发光。如果你的同伴与徽章同调，并使用一项要求另一个生物进行属性检定或豁免检定的狂怒动作，该检定或豁免的DC提高3。佩戴徽章期间，你的战技豁免DC提高3。"
+			]
+		},
+		{
+			"ENG_name": "Beam Lenses",
+			"name": "光束透镜",
+			"source": "BST",
+			"page": 43,
+			"rarity": "rare",
+			"reqAttune": "由同伴",
+			"wondrous": true,
+			"range": "60",
+			"dmg1": "1d10 + @srd5e.userchar.pb",
+			"dmgType": "O",
+			"grantsProficiency": false,
+			"bonusWeaponAttack": "3 + @srd5e.userchar.pb",
+			"entries": [
+				"这副红宝石护目镜以黑色皮革束带固定在头部。当你的同伴佩戴护目镜且持有3点或更多狂怒时，你可以在你的回合消耗3点狂怒（无需动作），命令同伴用它的动作从镜片向其60尺内的一个目标射出一道魔法能量光束。同伴进行一次攻击检定，调整值等于3+你的熟练加值。命中时，该攻击造成1d10+你的熟练加值力场伤害。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"target.value": 1,
+				"target.type": "creature"
+			}
+		},
+		{
+			"ENG_name": "Bonded Bracelets",
+			"name": "羁绊手环",
+			"source": "BST",
+			"page": 43,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"这对朴素的绳编手环成对出现。当你与另一位处同一位面的生物都与手环同调时，你们始终知晓彼此的确切位置，并能以心灵感应交谈。如果另一位同调的生物不理解任何语言，你仍能理解它的情绪状态，并能向它发出简单的指令。",
+				"此外，只要你与另一位同调生物相距1英里内，你们都无需进食或饮水，并且都能在极度寒冷与极度炎热的环境中生存，不会获得{@condition 力竭}等级。只要你们相距60尺内，你便获得另一位生物所拥有的任何伤害抗性或免疫，反之亦然。"
+			]
+		},
+		{
+			"ENG_name": "Collar of Disguise",
+			"name": "伪装项圈",
+			"source": "BST",
+			"page": 43,
+			"rarity": "rare",
+			"reqAttune": "由同伴",
+			"wondrous": true,
+			"entries": [
+				"当你的同伴佩戴这条皮革项圈时，你可以用一个动作说出指令语，将同伴变形为以下生物之一：猫、青蛙、山羊、獒犬、骡、猫头鹰、老鼠或渡鸦。同伴穿着或携带的任何装备会被新形态吸收或承载（由你选择）。处于此形态期间，同伴保留除体型外的所有数据，且不能使用狂怒动作。你可以再用一个动作说出指令语，让同伴恢复原形。"
+			]
+		},
+		{
+			"ENG_name": "Companion Ball",
+			"name": "同伴球",
+			"source": "BST",
+			"page": 44,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"这颗半径3英寸的铁质圆球表面雕刻着野兽、怪兽以及其他类型行侣生物的图案。当你持有此球，且你的同伴位于你30尺内并处于横行状态之外时，你可以用一个动作说出指令语，将同伴传送进球内一处舒适安全的额外维度空间。在球中时，同伴可以进行短休或长休，且无需进食或饮水。一颗{@i 同伴球}一次只能容纳一只同伴。"
+			]
+		},
+		{
+			"ENG_name": "Emblem of Elements",
+			"name": "元素徽记",
+			"source": "BST",
+			"page": 44,
+			"rarity": "rare",
+			"reqAttune": "由同伴",
+			"wondrous": true,
+			"entries": [
+				"这枚吹制玻璃徽记形似一朵花，花瓣呈蓝、绿、红、黄四色。当你的同伴以招牌攻击或狂怒动作造成强酸、寒冷、火焰、闪电、毒素或雷鸣伤害时，你可以消耗2点狂怒（无需动作）将伤害类型改为列表中的任何其他类型。"
+			]
+		}
+	],
+	"itemGroup": [
+		{
+			"ENG_name": "Badge of Battle",
+			"name": "战斗徽章",
+			"source": "BST",
+			"page": 43,
+			"rarity": "varies",
+			"items": [
+				"战斗徽章+1|BST",
+				"战斗徽章+2|BST",
+				"战斗徽章+3|BST"
+			]
+		},
+		{
+			"ENG_name": "Badge of Ruin",
+			"name": "毁灭徽章",
+			"source": "BST",
+			"page": 43,
+			"rarity": "varies",
+			"items": [
+				"毁灭徽章+1|BST",
+				"毁灭徽章+2|BST",
+				"毁灭徽章+3|BST"
+			]
+		}
+	],
+	"magicvariant": [
+		{
+			"ENG_name": "Armor of the Caregiver",
+			"name": "照料者之甲",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": "·照料者",
+				"source": "BST",
+				"page": 43,
+				"rarity": "rare",
+				"reqAttune": true,
+				"bonusAc": "+1",
+				"entries": [
+					"当你的同伴将怒火转向你时，这套护甲会将你的痛苦化为力量。穿着这套护甲期间，你的AC获得+1加值。此外，当同伴处于横行状态时对你造成伤害，你只受一半伤害，且你在下个回合结束前进行的下一次攻击若命中，额外造成{@damage 2d6}伤害。"
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Basilisk Companion",
+			"name": "石化蜥蜴同伴",
+			"source": "BST",
+			"page": 9,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "15 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 5,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"con": "+2 加熟练加值"
+			},
+			"skill": {
+				"athletics": "+3 加熟练加值",
+				"survival": "+1 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"pbNote": "等于照料者的熟练加值",
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Poison Spittle (2 Ferocity)",
+					"name": "1环：毒唾（2狂怒）",
+					"entries": [
+						"石化蜥蜴进行一次招牌攻击。命中时，该攻击额外造成{@damage PB}伤害，且石化蜥蜴在其5尺内选择的一个目标以外的生物受到{@damage PB}毒素伤害。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Poison Gaze (5 Ferocity)",
+					"name": "3环：毒素凝视（5狂怒）",
+					"entries": [
+						"石化蜥蜴选择其15尺内最多三个可见生物。每个生物必须通过一次{@dc 10 + PB|10 加熟练加值}体质豁免检定，否则陷入{@condition 中毒}状态，直到石化蜥蜴的下个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Lesser Petrifying Gaze (8 Ferocity)",
+					"name": "5环：次级石化凝视（8狂怒）",
+					"entries": [
+						"石化蜥蜴指定其30尺内一个可见生物，该生物必须进行一次{@dc 10 + PB|10 加熟练加值}体质豁免检定。检定失败时，该生物开始被魔法变为石头，并陷入{@condition 束缚}状态。该生物必须在其下个回合结束时重复该豁免检定。成功则效应结束。失败则该生物陷入{@condition 石化}状态1小时，或直到被{@spell 次等复原术|phb}法术或类似魔法解除。（次等复原术通常不能解除{@condition 石化}状态，但同伴的次级石化凝视弱于其他形式的石化魔法。）"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Heavy Glare",
+					"name": "重型怒视",
+					"entries": [
+						"当石化蜥蜴的照料者命中一个能看见石化蜥蜴的生物时，石化蜥蜴可以迫使该生物进行一次{@dc 10 + PB|10 加熟练加值}体质豁免检定。检定失败时，目标在其下个回合开始前不能进行借机攻击，且速度降低10尺。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/jIMQ5A7.png"
+			},
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Basilisk%20Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Blood Hawk Companion",
+			"name": "血鹰同伴",
+			"source": "BST",
+			"page": 10,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "6 + 照料者等级的六倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 5,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"dex": "+3 加熟练加值",
+				"wis": "+2 加熟练加值"
+			},
+			"skill": {
+				"perception": "+2 加熟练加值"
+			},
+			"passive": "12 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Keen Senses",
+					"name": "敏锐感官",
+					"entries": [
+						"血鹰在依赖视觉的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Beak (Signature Attack)",
+					"name": "招牌攻击（喙啄）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Distracting Attack (2 Ferocity)",
+					"name": "1环：干扰攻击（2狂怒）",
+					"entries": [
+						"血鹰进行一次招牌攻击。命中时，该攻击造成其正常效应，且在血鹰的下个回合开始前，对目标进行的下一次攻击具有优势。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Swooping Attack (5 Ferocity)",
+					"name": "3环：飞扑攻击（5狂怒）",
+					"entries": [
+						"血鹰移动至多等于其速度的距离，且不会引发借机攻击。在此次移动期间或结束时，它可以对一个目标进行一次招牌攻击。命中时，该攻击造成其正常效应，且目标必须通过一次{@dc 10 + PB|10 加熟练加值}力量豁免检定，否则掉落一件它持有的物品。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Storm of Talons (8 Ferocity)",
+					"name": "5环：禽爪暴风（8狂怒）",
+					"entries": [
+						"血鹰移动至多等于其速度的距离，且不会引发借机攻击，随后可以指定其5尺内一个生物，该生物必须进行一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定。检定失败时，目标受到{@damage (PB)d10}挥砍伤害，并陷入{@condition 目盲}状态，直到血鹰的下个回合结束。检定成功时，目标只受一半伤害，且不会{@condition 目盲}。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Swoop In",
+					"name": "飞扑",
+					"entries": [
+						"当血鹰位于其照料者30尺内，且照料者被一次攻击命中时，血鹰可以移动至多等于其速度的距离，且不会引发借机攻击。如果血鹰在此移动结束时位于照料者5尺内，血鹰将代替照料者被该攻击命中，而该攻击只造成一半伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/rKDT1Ku.png"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Blood Hawk Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Bulette Companion",
+			"name": "鲨蜥同伴",
+			"source": "BST",
+			"page": 11,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "15 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 5,
+			"wis": 8,
+			"cha": 8,
+			"save": {
+				"con": "+2 加熟练加值"
+			},
+			"skill": {
+				"perception": "-1 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺",
+				"震颤感知 30 尺"
+			],
+			"passive": "9 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Plated Protection",
+					"name": "板甲防护",
+					"entries": [
+						"鲨蜥掘穴时，其照料者可以骑在鲨蜥身上。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Violent Attack (2 Ferocity)",
+					"name": "1环：暴力攻击（2狂怒）",
+					"entries": [
+						"鲨蜥进行一次招牌攻击。命中时，该攻击额外造成PB点伤害，且鲨蜥可以将目标向任意方向移动5尺。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Burrowing Trip (5 Ferocity)",
+					"name": "3环：掘穴绊摔（5狂怒）",
+					"entries": [
+						"鲨蜥移动至多等于其掘穴速度一半的距离，且不会引发借机攻击。鲨蜥从其下方经过的每个立于地面的生物必须通过一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定，否则{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Deadly Leap (8 Ferocity)",
+					"name": "5环：致命一跃（8狂怒）",
+					"entries": [
+						"鲨蜥跃起至多30尺。如果它落在一个包含一个或多个生物的空间，这些生物必须各自进行一次{@dc 10 + PB|10 加熟练加值}力量豁免检定。检定失败的生物受到{@damage (PB)d6}钝击伤害，并被击倒{@condition 倒地}。检定成功的生物只受一半伤害，不被击倒{@condition 倒地}，并被从鲨蜥的空间推出5尺，进入由其选择的一处未被占据空间。如果没有可用的未被占据空间，该生物改为在鲨蜥的空间内被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/WSgngWH.png"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Bulette Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Deinonychus Companion",
+			"name": "恐爪龙同伴",
+			"source": "BST",
+			"page": 12,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 14,
+			"int": 5,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+				"str": "+2 加熟练加值",
+				"dex": "+3 加熟练加值"
+			},
+			"skill": {
+				"perception": "+1 加熟练加值",
+				"stealth": "+3 加熟练加值"
+			},
+			"passive": "11 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Overwhelming Attack (2 Ferocity)",
+					"name": "1环：压溃攻势（2狂怒）",
+					"entries": [
+						"恐爪龙进行一次招牌攻击。命中时，该攻击额外造成PB点伤害，且在恐爪龙的下个回合开始前，目标不能进行反应。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Clever Girl (5 Ferocity)",
+					"name": "3环：聪明的姑娘（5狂怒）",
+					"entries": [
+						"恐爪龙可以采取{@action 躲藏}动作，然后进行一次招牌攻击；也可以进行一次招牌攻击，然后采取{@action 躲藏}动作。如果恐爪龙的招牌攻击命中，它还将目标击倒{@condition 倒地}。恐爪龙可以在躲藏动作与攻击之间移动，或反之，即使这种移动通常会使其藏匿尝试失效。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Keep Them Down (8 Ferocity)",
+					"name": "5环：按住不放（8狂怒）",
+					"entries": [
+						"恐爪龙扑向其5尺内另一个生物，该生物必须进行一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定。检定失败时，目标受到{@damage (PB)d12}挥砍伤害，被击倒{@condition 倒地}，并陷入{@condition 受擒}状态（挣脱{@dc 10 + PB|10 加熟练加值}）。检定成功时，目标只受一半伤害，且不会被击倒{@condition 倒地}或陷入{@condition 受擒}状态。被此特性击倒{@condition 倒地}的生物在不再{@condition 受擒}之前无法站起。如果恐爪龙攻击另一个目标，或对另一个目标使用按住不放，擒抱结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Part of the Pack (1/Long Rest)",
+					"name": "族群一员（1/长休）",
+					"entries": [
+						"当恐爪龙的照料者位于恐爪龙5尺内，并陷入{@condition 魅惑}、{@condition 恐慌}或{@condition 震慑}状态时，恐爪龙可以结束照料者身上这些状态之一。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/9Oo8bNW.png"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Deinonychus Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Dragon Wyrmling Companion",
+			"name": "雏龙同伴",
+			"source": "BST",
+			"page": 13,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "15 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 5,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"wis": "+0 加熟练加值"
+			},
+			"skill": {
+				"perception": "+0 加熟练加值"
+			},
+			"passive": "10 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Draconic Lineage",
+					"name": "龙族血统",
+					"entries": [
+						"雏龙拥有一条血脉，决定它所免疫的一种伤害类型，并适用于其喷吐息和喷吐武器动作所造成的伤害。详见龙族血统表。",
+						{
+							"type": "table",
+							"caption": "龙族血统",
+							"colLabels": [
+								"血脉",
+								"伤害类型",
+								"区域"
+							],
+							"colStyles": [
+								"col-3",
+								"col-3",
+								"col-6"
+							],
+							"rows": [
+								[
+									"黑龙、赤铜龙",
+									"强酸",
+									"5 × 30 尺直线（敏捷豁免）"
+								],
+								[
+									"银龙、白龙",
+									"寒冷",
+									"15 尺锥形（体质豁免）"
+								],
+								[
+									"黄铜龙",
+									"火焰",
+									"5 × 30 尺直线（敏捷豁免）"
+								],
+								[
+									"金龙、红龙",
+									"火焰",
+									"15 尺锥形（敏捷豁免）"
+								],
+								[
+									"蓝龙、青铜龙",
+									"闪电",
+									"5 × 30 尺直线（敏捷豁免）"
+								],
+								[
+									"绿龙",
+									"毒素",
+									"15 尺锥形（体质豁免）"
+								]
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Shared Resistance",
+					"name": "共享抗性",
+					"entries": [
+						"雏龙的照料者对与雏龙的龙族血统相关的伤害类型具有抗性，且不会受到雏龙的喷吐武器动作的伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Spit Breath (2 Ferocity)",
+					"name": "1环：喷吐息（2狂怒）",
+					"entries": [
+						"雏龙以一次远程武器攻击的形式进行招牌攻击，常规射程30尺，远程射程60尺。命中时，该攻击额外造成PB点伤害，且该攻击造成的所有伤害改为与雏龙血脉相关的类型，而非穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Frightful Presence (5 Ferocity)",
+					"name": "3环：惊惧灵光（5狂怒）",
+					"entries": [
+						"雏龙10尺内由雏龙选择、且察觉到它的每个生物必须通过一次{@dc 10 + PB|10 加熟练加值}感知豁免检定，否则对雏龙{@condition 恐慌}1分钟。生物可以在其每个回合结束时重复该豁免检定，成功则结束自身所受的此效应。如果生物的豁免检定成功，或效应对其结束，该生物在接下来24小时内免疫雏龙的惊惧灵光。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Breath Weapon (8 Ferocity)",
+					"name": "5环：喷吐武器（8狂怒）",
+					"entries": [
+						"雏龙呼出元素能量，充满一片区域。区域内的生物必须进行一次{@dc 10 + PB|10 加熟练加值}豁免检定，检定失败者受到{@damage (PB)d6}伤害，检定成功者只受一半伤害。伤害类型、区域与豁免检定类型由雏龙的龙族血统特质决定。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/narm238.png"
+			},
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"damageTags": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Dragon Wyrmling Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Earth Elemental Companion",
+			"name": "土元素同伴",
+			"source": "BST",
+			"page": 14,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "15 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 15,
+			"int": 5,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"con": "+2 加熟练加值"
+			},
+			"skill": {
+				"athletics": "+3 加熟练加值"
+			},
+			"passive": "10",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Earth Glide",
+					"name": "遁地",
+					"entries": [
+						"土元素可以穿过非魔法、未加工的泥土与岩石。在此过程中，土元素不会扰动它穿过的物质。使用遁地期间，土元素不能被用作坐骑。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam (Signature Attack)",
+					"name": "招牌攻击（猛击）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Stretch Attack (2 Ferocity)",
+					"name": "1环：延伸攻击（2狂怒）",
+					"entries": [
+						"土元素进行一次触及10尺的招牌攻击。命中时，该攻击额外造成PB点伤害，且土元素可以将目标向它拉近5尺。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Earthshaker (5 Ferocity)",
+					"name": "3环：撼地者（5狂怒）",
+					"entries": [
+						"土元素猛击地面，其10尺内的每个生物必须通过一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定，否则被击倒{@condition 倒地}。土元素的照料者自动通过此豁免检定。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Transmute Ground (8 Ferocity)",
+					"name": "5环：转化地面（8狂怒）",
+					"entries": [
+						"土元素选择其30尺内一处可见的10尺方形地面区域。站在该区域内的每个生物必须通过一次{@dc 10 + PB|10 加熟练加值}力量豁免检定，否则部分陷入地面，并陷入{@condition 束缚}状态。生物可以用其动作进行一次{@dc 10 + PB|10 加熟练加值}力量（{@skill 运动}）检定，成功则使自己或其触及范围内的另一个生物脱身，并结束脱身生物的{@condition 束缚}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Toss Me",
+					"name": "投掷我",
+					"entries": [
+						"当土元素位于其照料者5尺内时，它可以将照料者向任意方向（包括向上）掷出5倍熟练加值尺的距离。如果照料者被掷出后本将受到坠落伤害，它可以通过一次{@dc 15}敏捷豁免检定来免除伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/oJbt9uz.png"
+			},
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Earth Elemental Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Gelatinous Cube Companion",
+			"name": "凝胶方块同伴",
+			"source": "BST",
+			"page": 15,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "ooze",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "11 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "8 + 照料者等级的八倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"con": "+3 加熟练加值"
+			},
+			"skill": {
+				"stealth": "-1 加熟练加值"
+			},
+			"senses": [
+				"盲视60尺（范围外视为目盲）"
+			],
+			"passive": "10",
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"prone"
+			],
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Flowing Form",
+					"name": "流动形态",
+					"entries": [
+						"凝胶方块的照料者可以进入凝胶方块占据的空间，而不会被吞没。与凝胶方块处于同一空间时，照料者可以攻击和操纵被凝胶方块吞没的生物，而不会伤害凝胶方块或受到其伤害。"
+					]
+				},
+				{
+					"ENG_name": "Transparent",
+					"name": "透明",
+					"entries": [
+						"即使凝胶方块就在眼前，要发现一个既未移动也未攻击的凝胶方块，也需要成功通过一次{@dc 10 + PB|10 加熟练加值}感知（{@skill 察觉}）检定。一个在未察觉凝胶方块的情况下试图进入其空间的生物，会受到3（{@damage 1d6}）强酸伤害，且无法进入该空间。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Pseudopod (Signature Attack)",
+					"name": "招牌攻击（伪足）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 强酸伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Burning Acid (2 Ferocity)",
+					"name": "1环：灼热强酸（2狂怒）",
+					"entries": [
+						"凝胶方块进行一次触及10尺的招牌攻击。命中时，该攻击额外造成PB点伤害，且受到该攻击伤害的目标在凝胶方块的下个回合开始前无法恢复生命值。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Slime Shower (5 Ferocity)",
+					"name": "3环：粘液淋浴（5狂怒）",
+					"entries": [
+						"凝胶方块急速旋转，向四周淋下粘稠的酸性粘液。凝胶方块5尺内的每个生物必须通过一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定，否则受到{@damage 1d6}强酸伤害，且速度降为0，直到凝胶方块的下个回合开始。凝胶方块的照料者自动通过此豁免检定。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Engulf (8 Ferocity)",
+					"name": "5环：吞没（8狂怒）",
+					"entries": [
+						"凝胶方块尝试将其5尺内一个大型或更小的生物拉入体内。该生物必须进行一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定。检定失败时，目标进入凝胶方块的空间而不引发借机攻击，受到{@damage (PB)d6}强酸伤害，并被吞没。检定成功时，目标只受一半伤害，不移动，且不被吞没。",
+						"被吞没的生物无法呼吸，处于{@condition 束缚}状态，并在凝胶方块的每个回合开始时受到{@damage (PB)d6}强酸伤害。凝胶方块移动时，被吞没的生物随之移动。被吞没的生物可以用一个动作进行一次{@dc 10 + PB|10 加熟练加值}力量检定以尝试脱身。成功时，该生物脱身，并进入凝胶方块5尺内由其选择的空间。",
+						"凝胶方块一次最多可以吞没一个大型生物，或最多四个中型或更小的生物。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/2kaxwMY.png"
+			},
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Gelatinous Cube Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Giant Spider Companion",
+			"name": "巨蜘蛛同伴",
+			"source": "BST",
+			"page": 16,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "6 + 照料者等级的六倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 12,
+			"int": 5,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"str": "+2 加熟练加值",
+				"dex": "+3 加熟练加值"
+			},
+			"skill": {
+				"stealth": "+3 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": "10",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行",
+					"entries": [
+						"巨蜘蛛可以攀爬困难表面（包括倒挂在天花板上），无需进行属性检定。"
+					]
+				},
+				{
+					"ENG_name": "Web Sense",
+					"name": "蛛网感知",
+					"entries": [
+						"巨蜘蛛在接触蛛网时，能知晓接触同一蛛网的其他任何生物的确切位置。"
+					]
+				},
+				{
+					"ENG_name": "Web Walker",
+					"name": "蛛网行者",
+					"entries": [
+						"巨蜘蛛忽略蛛网造成的移动限制。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Destabilizing Attack (2 Ferocity)",
+					"name": "1环：破坏攻击（2狂怒）",
+					"entries": [
+						"巨蜘蛛进行一次招牌攻击。命中时，该攻击造成其正常效应，且目标在巨蜘蛛的下个回合开始前进行的下一次攻击检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Web (5 Ferocity)",
+					"name": "3环：结网（5狂怒）",
+					"entries": [
+						"巨蜘蛛向其60尺内一个可见生物射出粘性蛛网。目标必须通过一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定，否则被蛛网{@condition 束缚}。被{@condition 束缚}的目标可以用一个动作进行一次{@dc 10 + PB|10 加熟练加值}力量检定，成功则挣破蛛网，并结束自身的{@condition 束缚}状态。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Bite Frenzy (8 Ferocity)",
+					"name": "5环：啃咬狂潮（8狂怒）",
+					"entries": [
+						"巨蜘蛛对其5尺内由其选择的数个生物（数量等于熟练加值）分别进行招牌攻击。命中时，目标陷入{@condition 中毒}状态，直到其下个回合结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Sticky Stuff (1/Long Rest)",
+					"name": "粘性之物（1/长休）",
+					"entries": [
+						"当巨蜘蛛的照料者位于其5尺内时，巨蜘蛛可以在照料者的脚底或鞋底涂上一种选择性粘合剂。这使照料者能够在竖直表面上上下移动、沿天花板倒挂移动，同时双手保持自由，并使照料者获得等于其步行速度的攀爬速度。粘合剂在10分钟后失效。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/iFckhUJ.png"
+			},
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Giant Spider Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Giant Toad Companion",
+			"name": "巨蟾同伴",
+			"source": "BST",
+			"page": 17,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 5,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"str": "+3 加熟练加值",
+				"con": "+2 加熟练加值"
+			},
+			"skill": {
+				"athletics": "+3 加熟练加值",
+				"perception": "+0 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 30 尺"
+			],
+			"passive": "10 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"巨蟾可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Standing Leap",
+					"name": "立定跳远",
+					"entries": [
+						"巨蟾的远跳距离至多20尺，高跳距离至多10尺，无论是否助跑。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Stretch Attack (2 Ferocity)",
+					"name": "1环：延伸攻击（2狂怒）",
+					"entries": [
+						"巨蟾进行一次招牌攻击。命中时，该攻击额外造成PB点伤害，且巨蟾可以将目标向它拉近5尺。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Fast Food (5 Ferocity)",
+					"name": "3环：快餐（5狂怒）",
+					"entries": [
+						"巨蟾进行一次招牌攻击。命中时，该攻击造成其正常效应，且巨蟾可以向任意方向跳跃至多20尺，不会引发借机攻击。如果攻击目标为大型或更小，巨蟾会将目标一同带走。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Swallow (8 Ferocity)",
+					"name": "5环：吞咽（8狂怒）",
+					"entries": [
+						"巨蟾尝试吞咽其5尺内一个中型或更小的生物，该生物必须进行一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定。检定失败时，目标受到{@damage (PB)d6}钝击伤害，并被吞咽。检定成功时，目标只受一半伤害，且不被吞咽。",
+						"被吞咽的目标处于{@condition 目盲}和{@condition 束缚}状态，对来自巨蟾外部的攻击和其他效应具有完全掩护，并在巨蟾的每个回合开始时受到{@damage (PB)d6}强酸伤害。巨蟾一次只能吞咽一个目标。",
+						"每当巨蟾受到伤害时，它必须通过一次体质豁免检定，否则将吞咽的生物吐出，该生物在巨蟾5尺内一处空间{@condition 倒地}落下。此豁免检定的DC等于10或巨蟾所受伤害的一半（取较高者）。如果巨蟾{@condition 失能}或死亡，被吞咽的生物不再被巨蟾{@condition 束缚}，并可以用5尺移动从尸体中脱出，脱出时处于{@condition 倒地}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Psychedelic Skin (1/Long Rest)",
+					"name": "迷幻皮肤（1/长休）",
+					"entries": [
+						"当巨蟾的照料者位于巨蟾5尺内时，巨蟾可以用附赠动作，将巨蟾皮肤分泌的毒素涂在照料者持有的一件近战武器上。毒素持续1小时，或直到该武器在一次攻击中造成伤害。当一个生物受到该武器的伤害时，它必须通过一次{@dc 10 + PB|10 加熟练加值}体质豁免检定，否则陷入{@condition 中毒}状态1分钟。该生物可以在其每个回合结束时重复该豁免检定，成功则结束自身所受的此效应。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/8GAeE83.png"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant Weasel Companion",
+			"name": "巨鼬同伴",
+			"source": "BST",
+			"page": 18,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 5,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"str": "+1 加熟练加值",
+				"dex": "+3 加熟练加值"
+			},
+			"skill": {
+				"acrobatics": "+3 加熟练加值",
+				"perception": "+1 加熟练加值",
+				"stealth": "+3 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": "11 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Keen Hearing and Smell",
+					"name": "敏锐嗅听觉",
+					"entries": [
+						"巨鼬在依赖听觉或嗅觉的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Treasure Sense",
+					"name": "寻宝感应",
+					"entries": [
+						"巨鼬能凭气味精确定位其10尺内的贵金属与宝石（如硬币和宝石）的位置。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Overwhelming Attack (2 Ferocity)",
+					"name": "1环：压溃攻势（2狂怒）",
+					"entries": [
+						"巨鼬进行一次招牌攻击。命中时，该攻击额外造成PB点伤害，且在巨鼬的下个回合开始前，目标不能进行反应。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Clamp Down (5 Ferocity)",
+					"name": "3环：咬紧不放（5狂怒）",
+					"entries": [
+						"巨鼬进行一次招牌攻击。命中时，该攻击造成其正常效应，且目标陷入{@condition 受擒}状态（挣脱{@dc 10 + PB|10 加熟练加值}）。处于{@condition 受擒}状态期间，目标陷入{@condition 束缚}状态，且巨鼬不能撕咬其他目标。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Bite Frenzy (8 Ferocity)",
+					"name": "5环：啃咬狂潮（8狂怒）",
+					"entries": [
+						"巨鼬对其5尺内由其选择的数个生物（数量等于熟练加值）分别进行招牌攻击。命中时，攻击目标被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/AGoOzw2.png"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Giant Weasel Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Hell Hound Companion",
+			"name": "地狱猎犬同伴",
+			"source": "BST",
+			"page": 19,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+				"con": "+2 加熟练加值"
+			},
+			"skill": {
+				"perception": "+1 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": "11 加熟练加值",
+			"immune": [
+				"fire"
+			],
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Consult Hell",
+					"name": "咨询地狱",
+					"entries": [
+						"地狱猎犬的照料者可以与它谈论照料者计划在未来30分钟内采取的特定行动方案，借助地狱猎犬与炼狱位面的联结汲取占卜之力。1分钟后，地狱猎犬会基于自身对结果的客观预感给出回应：吠一声代表结果良好，吠两声代表结果糟糕，吠三声代表好坏参半，而不吠则代表结果既非特别好也非特别坏。"
+					]
+				},
+				{
+					"ENG_name": "Keen Hearing and Smell",
+					"name": "敏锐嗅听觉",
+					"entries": [
+						"地狱猎犬在依赖听觉或嗅觉的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Lava Spittle (2 Ferocity)",
+					"name": "1环：熔岩唾沫（2狂怒）",
+					"entries": [
+						"地狱猎犬进行一次招牌攻击。命中时，该攻击额外造成PB点伤害，且地狱猎犬在其5尺内选择的一个非目标生物受到PB点火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Brutal Charge (5 Ferocity)",
+					"name": "3环：野蛮冲锋（5狂怒）",
+					"entries": [
+						"地狱猎犬移动至多等于其速度的距离，且不会引发借机攻击。在此次移动期间或结束时，它可以对一个目标进行一次招牌攻击。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Fire Breath (8 Ferocity)",
+					"name": "5环：火焰吐息（8狂怒）",
+					"entries": [
+						"地狱猎犬在15尺锥形范围内喷出火焰。该区域内的每个生物必须进行一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定，检定失败者受到{@damage (PB)d6}火焰伤害，检定成功者只受一半伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/Ule4cDF.png"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Hell Hound Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Mimic Companion",
+			"name": "拟身怪同伴",
+			"source": "BST",
+			"page": 20,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Shapechanger",
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 5,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+				"dex": "+1 加熟练加值"
+			},
+			"skill": {
+				"stealth": "+1 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": "11",
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Shapechanger",
+					"name": "变形生物",
+					"entries": [
+						"拟身怪可以用它的动作变形为一个物体，或变回其真实的无定形形态。它在每种形态下的数据相同。它穿着或携带的任何装备不会随之变形。拟身怪死亡时恢复其真实形态。"
+					]
+				},
+				{
+					"ENG_name": "False Appearance (Object Form Only)",
+					"name": "拟形（仅物件形态）",
+					"entries": [
+						"只要拟身怪保持不动，它与普通物体毫无区别。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Distracting Attack (2 Ferocity)",
+					"name": "1环：干扰攻击（2狂怒）",
+					"entries": [
+						"拟身怪进行一次招牌攻击。命中时，该攻击造成其正常效应，且在拟身怪的下个回合开始前，对目标进行的下一次攻击具有优势。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Adhesive Pseudopods (5 Ferocity)",
+					"name": "3环：黏着伪足（5狂怒）",
+					"entries": [
+						"拟身怪尝试触碰其5尺内由其选择的每个生物。每个目标必须通过一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定，否则陷入{@condition 受擒}状态（挣脱{@dc 10 + PB|10 加熟练加值}）。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: I'm You (8 Ferocity)",
+					"name": "5环：我就是你（8狂怒）",
+					"entries": [
+						"拟身怪使用其变形生物特质，变形为其5尺内一个可见的大型或更小的生物，此形态持续到拟身怪的下个回合开始。除体型外，拟身怪的数据不变。变形后，拟身怪可以对被它夺形的生物进行一次招牌攻击，且该生物还必须进行一次{@dc 10 + PB|10 加熟练加值}感知豁免检定。检定失败时，该生物在拟身怪的下个回合开始前，攻击检定和豁免检定具有劣势，且对它进行的攻击具有优势。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Wearable Companion",
+					"name": "可穿戴同伴",
+					"entries": [
+						"当拟身怪位于其照料者5尺内时，它可以覆盖照料者的身体，呈现为衣物的外观。穿着拟身怪期间，只要照料者未{@condition 失能}，就可以随意改变自身衣物的外观（无需动作），并在敏捷（{@skill 隐匿}）检定上具有优势。任何命中照料者的攻击同样命中拟身怪，反之亦然，两者均受到该攻击的全部伤害与效应。",
+						"以这种方式被穿着时，拟身怪不能移动或采取动作，除非恢复为其最近的形态（一个附赠动作），这将结束被照料者穿着的状态。如果拟身怪进入横行，被穿着状态立即结束。当拟身怪不再被照料者穿着时，它进入由其选择的最近一处未被占据空间。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/5MMsW2m.png"
+			},
+			"traitTags": [
+				"False Appearance",
+				"Shapechanger"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Mimic Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Owlbear Companion",
+			"name": "枭熊同伴",
+			"source": "BST",
+			"page": 21,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 5,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"str": "+3 加熟练加值",
+				"con": "+2 加熟练加值"
+			},
+			"skill": {
+				"athletics": "+3 加熟练加值",
+				"perception": "+1 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": "11 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Keen Sight and Smell",
+					"name": "敏锐视嗅觉",
+					"entries": [
+						"枭熊在依赖视觉或嗅觉的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Claws (Signature Attack)",
+					"name": "招牌攻击（爪击）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Violent Attack (2 Ferocity)",
+					"name": "1环：暴力攻击（2狂怒）",
+					"entries": [
+						"枭熊进行一次招牌攻击。命中时，该攻击额外造成PB点伤害，且枭熊可以将目标向任意方向移动5尺。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Owlie Oop (5 Ferocity)",
+					"name": "3环：Owlie Oop（5狂怒）",
+					"entries": [
+						"枭熊跃起至多20尺，且不会引发借机攻击。落地时，其5尺内的每个生物必须通过一次{@dc 10 + PB|10 加熟练加值}力量豁免检定，否则被击倒{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Bear Hug (8 Ferocity)",
+					"name": "5环：熊抱（8狂怒）",
+					"entries": [
+						"枭熊尝试抓握并挤压其5尺内一个可见的生物，该生物必须进行一次{@dc 10 + PB|10 加熟练加值}敏捷豁免检定。检定失败时，目标受到{@damage (PB)d10}钝击伤害，并陷入{@condition 受擒}状态（挣脱{@dc 10 + PB|10 加熟练加值}）。检定成功时，目标只受一半伤害，且不会陷入{@condition 受擒}状态。在此擒抱结束前，目标还处于{@condition 束缚}状态。如果枭熊对另一个目标使用熊抱，擒抱结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Give a Hoot (1/Long Rest)",
+					"name": "发出鸣叫（1/长休）",
+					"entries": [
+						"枭熊发出一声独特的战吼。如果枭熊的照料者能听见这声吼叫，照料者获得5倍熟练加值的临时生命值。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/Q7We9l1.png"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Owlbear Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Sporeling Companion",
+			"name": "孢子仔同伴",
+			"source": "BST",
+			"page": 22,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "plant",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 15,
+			"int": 5,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"con": "+2 加熟练加值"
+			},
+			"skill": {
+				"perception": "+1 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": "11 加熟练加值",
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "False Appearance",
+					"name": "无定形",
+					"entries": [
+						"只要孢子仔保持不动，它与普通真菌毫无区别。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Corruption Cough (Signature Attack)",
+					"name": "招牌攻击（腐化咳嗽）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 强酸伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Destabilizing Attack (2 Ferocity)",
+					"name": "1环：破坏攻击（2狂怒）",
+					"entries": [
+						"孢子仔进行一次招牌攻击。命中时，该攻击造成其正常效应，且目标在孢子仔的下个回合开始前进行的下一次攻击检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Spore Burst (5 Ferocity)",
+					"name": "3环：孢子爆发（5狂怒）",
+					"entries": [
+						"孢子仔5尺内由其选择的每个生物必须通过一次{@dc 10 + PB|10 加熟练加值}体质豁免检定，否则陷入{@condition 中毒}状态，直到孢子仔的下个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Hallucinogenic Spores (8 Ferocity)",
+					"name": "5环：致幻孢子（8狂怒）",
+					"entries": [
+						"孢子仔10尺内的每个敌人必须进行一次{@dc 10 + PB|10 加熟练加值}感知豁免检定。检定失败时，由孢子仔选择：目标生物是用其反应，对孢子仔选择的、位于目标生物触及范围内的另一个生物进行一次近战攻击，还是{@condition 倒地}。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Invigorating Spores (1/Long Rest)",
+					"name": "振奋孢子（1/长休）",
+					"entries": [
+						"当孢子仔的照料者位于其30尺内时，孢子仔可以用附赠动作给予照料者豁免检定优势，持续1分钟。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/5LLN6tu.png"
+			},
+			"traitTags": [
+				"False Appearance"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Sporeling Companion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Worg Companion",
+			"name": "座狼同伴",
+			"source": "BST",
+			"page": 23,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 加熟练加值（天生护甲）"
+				}
+			],
+			"hp": {
+				"special": "7 + 照料者等级的七倍（d8生命骰的数量等于照料者的等级）"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 14,
+			"int": 7,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"str": "+3 加熟练加值",
+				"dex": "+2 加熟练加值"
+			},
+			"skill": {
+				"perception": "+1 加熟练加值"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": "11 加熟练加值",
+			"pbNote": "等于照料者的熟练加值",
+			"trait": [
+				{
+					"ENG_name": "Move as One",
+					"name": "协同移动",
+					"entries": [
+						"当座狼的照料者骑乘于座狼之上时，对座狼或其照料者进行的借机攻击具有劣势。座狼的照料者可以消耗5尺移动来上骑座狼，或从座狼上下来。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite (Signature Attack)",
+					"name": "招牌攻击（啃咬）",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 加熟练加值} 命中，触及5尺，单一目标。{@h}{@damage 1d6+PB|1d6 加熟练加值} 穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "1st Level: Overwhelming Attack (2 Ferocity)",
+					"name": "1环：压溃攻势（2狂怒）",
+					"entries": [
+						"座狼进行一次招牌攻击。命中时，该攻击额外造成PB点伤害，且在座狼的下个回合开始前，目标不能进行反应。"
+					]
+				},
+				{
+					"ENG_name": "3rd Level: Brutal Charge (5 Ferocity)",
+					"name": "3环：野蛮冲锋（5狂怒）",
+					"entries": [
+						"座狼移动至多等于其速度的距离，且不会引发借机攻击。在此次移动期间或结束时，它可以对一个目标进行一次招牌攻击。"
+					]
+				},
+				{
+					"ENG_name": "5th Level: Bite Frenzy (8 Ferocity)",
+					"name": "5环：啃咬狂潮（8狂怒）",
+					"entries": [
+						"座狼对其5尺内由其选择的数个生物（数量等于熟练加值）分别进行啃咬攻击。命中时，目标被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/BAQ4gXu.png"
+			},
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Worg Companion.webp"
+						}
+					}
+				]
+			}
+		}
+	],
+	"monsterFluff": [
+		{
+			"ENG_name": "Giant Toad Companion",
+			"name": "巨蟾同伴",
+			"source": "BST",
+			"entries": [
+				{
+					"ENG_name": "Psychedelic Skin?!",
+					"type": "inset",
+					"name": "迷幻皮肤？！",
+					"entries": [
+						"巨蟾同伴的迷幻皮肤附赠动作的灵感来自{@link 海蟾蜍|https://en.wikipedia.org/wiki/Cane_toad}\u2014\u2014一种真实存在的两栖动物。当这些蟾蜍受到威胁时，皮肤会分泌蟾毒素，这是一种会引起幻觉、使掠食者不敢捕食它们的毒液。将这一事实转化为巨蟾的特性，是让它从其他同伴中脱颖而出的有趣方式。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/creatures/Giant Toad Companion.webp"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Sporeling Companion",
+			"name": "孢子仔同伴",
+			"source": "BST",
+			"entries": [
+				{
+					"ENG_name": "What is a Sporeling?",
+					"type": "inset",
+					"name": "什么是孢子仔？",
+					"entries": [
+						"孢子仔是一种半身人大小的蘑菇，长着两条手臂、四条腿，鲜艳的菌盖下方的菌柄上生出一张脸。孢子仔通常是温和的生物，喜欢坐在洞穴和河岸等潮湿的地方，从脚下的地形中吸收养分。但当饥饿的掠食者威胁到这种真菌时，孢子仔会变得致命：双眼发出橙光，咳出酸性的唾液，并让菌盖下释放的致幻孢子弥漫空气。",
+						"与游戏中的其他蘑菇类生物不同，孢子仔的行事方式更像高度聪明的野兽，而非类人生物。它们没有复杂的社会，主要关心的是寻找食物和活下去。"
+					]
+				}
+			]
+		}
+	],
+	"foundryMonster": [
+		{
+			"ENG_name": "Basilisk Companion",
+			"name": "石化蜥蜴同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.sur.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Hawk Companion",
+			"name": "血鹰同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "6 + 6 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.wis.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Deinonychus Companion",
+			"name": "恐爪龙同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Dragon Wyrmling Companion",
+			"name": "雏龙同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.wis.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Earth Elemental Companion",
+			"name": "土元素同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gelatinous Cube Companion",
+			"name": "凝胶方块同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "8 + 8 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Spider Companion",
+			"name": "巨蜘蛛同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "6 + 6 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Toad Companion",
+			"name": "巨蟾同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Weasel Companion",
+			"name": "巨鼬同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.acr.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hell Hound Companion",
+			"name": "地狱猎犬同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mimic Companion",
+			"name": "拟身怪同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Owlbear Companion",
+			"name": "枭熊同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sporeling Companion",
+			"name": "孢子仔同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Worg Companion",
+			"name": "座狼同伴",
+			"source": "BST",
+			"effects": [
+				{
+					"ENG_name": "Beastheart's Companionship",
+					"name": "野兽之心的同伴情谊",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "Beastheart and Monstrous Companions",
+			"name": "野兽之心与怪物同伴",
+			"id": "BSTaMC",
+			"source": "BST",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/cover.webp"
+			},
+			"published": "2021-12-15",
+			"contents": [
+				{
+					"ENG_name": "Introduction",
+					"name": "简介"
+				},
+				{
+					"ENG_name": "Companion Creatures",
+					"name": "行侣生物",
+					"headers": [
+						"照料者",
+						{
+							"header": "魅惑照料者",
+							"depth": 1
+						},
+						{
+							"header": "新照料者",
+							"depth": 1
+						},
+						"狂怒",
+						{
+							"header": "横行",
+							"depth": 1
+						},
+						{
+							"header": "降低狂怒",
+							"depth": 1
+						},
+						"濒死的同伴",
+						"数据",
+						{
+							"header": "并非寻常",
+							"depth": 1
+						},
+						{
+							"header": "生命骰",
+							"depth": 1
+						},
+						{
+							"header": "招牌攻击与狂怒动作",
+							"depth": 1
+						},
+						{
+							"header": "语言",
+							"depth": 1
+						},
+						"遭遇平衡与同伴",
+						"同伴"
+					]
+				},
+				{
+					"ENG_name": "The Beastheart",
+					"name": "野兽之心"
+				},
+				{
+					"ENG_name": "Magic Items",
+					"name": "魔法物品",
+					"headers": [
+						"调整物品",
+						"新物品"
+					]
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "BSTaMC",
+			"source": "BST",
+			"data": [
+				{
+					"ENG_name": "Introduction",
+					"type": "section",
+					"name": "简介",
+					"page": 4,
+					"entries": [
+						"谁不想拥有一只枭熊挚友呢？玩家们到底花了多少时间，试图说服焦头烂额的GM：只要零食够多、哄劝够耐心、感知（{@skill 驯兽}）检定够成功，就应该能收养那只鲨蜥、地狱猎犬或凝胶方块？为什么我们喜欢让野兽（更别提邪魔或软泥怪了）陪伴在侧、共同冒险的幻想呢？",
+						"这大概是因为，\"英雄与不驯的伙伴相伴\"这一母题，在我们最受欢迎的许多奇幻故事中俯拾皆是。骑士与巨龙结为好友并骑乘它们；冰原狼与史塔克的孩子们并肩冲入战场；美子在《{@i 玉子}》中冒着一切风险拯救她的同名伙伴。我们也想在自家桌上讲述类似的故事！但这些并不只是英雄宠物的传奇。确切地说，这些故事讲的是选择与英雄结伴的不驯生物。它们野性太强，无法被真正控制，但每一只都像爱族群成员那样爱着英雄。英雄与同伴一同冲向危险，凶猛而自由。",
+						"《{@i 野兽之心与怪物同伴}》将\"与野生同伴一同冒险\"的幻想规则化。本补充书给出了同伴的规则：任何角色都可以与这些野生生物交好，并带它们踏上冒险。它们并不总是容易控制，但有一只石化蜥蜴好友绝对物有所值。野兽之心职业则建立在这些规则之上，让角色能与同伴最大程度地协调配合。这个新职业塑造了一位忠实朋友永不离身的英雄，他与同伴共享一种超自然的羁绊，使双方都能施展由原初之力驱动的惊人之举。",
+						"本补充书是艺术家、设计师、编辑以及众多参与测试的玩家数月辛勤工作的结晶。它甚至经历了公开测试，使内容得到了极大改进。我要向那些抽出时间提供反馈的朋友们致以无以言表的感谢。",
+						"让我们野起来。",
+						"\u2014\u2014詹姆斯·因特罗卡索",
+						"MCDM 首席设计师"
+					]
+				},
+				{
+					"ENG_name": "Companion Creatures",
+					"type": "section",
+					"name": "行侣生物",
+					"page": 5,
+					"entries": [
+						"{@i 科尔纳克穿过高草丛，朝鬣狗人战营悄声疾行，而这名地精的座狼同伴\"长吻\"嗅了嗅空气，伏低了身子。这只怪异的掠食者颈毛倒竖，尾巴抽动。}",
+						"{@i 勇敢的小地精朝长吻点了点头，长吻随即从掩体后跃出，咆哮着撕开了一名鬣狗面孔萨满的喉咙。惊愕的鬣狗人信徒连声咒骂，科尔纳克从草丛中现身，双弩射穿了两名对手的喉咙，随即跃上长吻的背。}",
+						"{@i \"好姑娘，\"地精轻声说着，拍了拍她血迹斑斑的毛皮。\"冲！\"科尔纳克拔出短剑，座狼猛冲向前，扑向咬牙切齿的敌群。}",
+						"行侣生物在本规则中简称为同伴，是与角色一同冒险的野生盟友。每只同伴都有独特的特质与动作，使它们成为强大的盟友。但要当心！这些野生生物在激战中可能难以控制，说不定还会反咬喂养之手。",
+						"野兽之心\u2014\u2014本补充书同时引入的新职业\u2014\u2014比大多数角色都能更好地控制同伴，但即使是他们也可能失去对忠实朋友的掌控。不过别太烦恼！一只凝胶方块或枭熊同伴，值得你冒偶尔野性横行的风险。",
+						{
+							"ENG_name": "The Caregiver",
+							"type": "section",
+							"name": "照料者",
+							"page": 5,
+							"entries": [
+								"每只同伴都有一名玩家角色{@b 照料者}来指挥它。游戏中大部分时间由照料者的玩家控制同伴，但当同伴与照料者分开，或照料者以某种方式虐待同伴时，GM可以介入接管控制。",
+								"在战斗中，同伴与其照料者共享一个回合，并在照料者的回合中行动。同伴可以独立移动，并独立使用自己的反应和附赠动作。但它们只能采取疾走、撤离或回避动作，除非照料者用附赠动作命令同伴采取其他动作（包括同伴数据卡中列出的任何动作）。同伴必须能看见或听见照料者才能接受命令。如果照料者失能，或同伴进入横行（见下文），同伴也可以采取其他动作。",
+								{
+									"ENG_name": "One Companion per Group",
+									"type": "inset",
+									"page": 5,
+									"name": "每组一个同伴",
+									"entries": [
+										"同伴能带来很多乐趣，但要管理多只同伴会使游戏进程变得缓慢。同伴是队伍的另一名成员，有需要追踪的数据和动作，额外的同伴很容易让战斗慢如爬行。如果每个玩家都想体验同伴的乐趣，更好的办法是让角色们轮流担任同一只生物的照料者，而不是带着一整个动物园四处冒险。",
+										"对于希望共享同伴的角色，同伴会在短休或长休结束时接受一名新照料者。由于同伴的熟练加值和生命值取决于其照料者的等级，若队伍中角色的等级不同，这些数据可能有所波动，这反映出更有经验的照料者更善于引导同伴。"
+									]
+								},
+								{
+									"ENG_name": "Charmed Caregiver",
+									"type": "entries",
+									"name": "魅惑照料者",
+									"page": 5,
+									"entries": [
+										"被魅惑的照料者仍可命令其同伴，但不能命令同伴攻击魅惑它的生物。"
+									]
+								},
+								{
+									"ENG_name": "New Caregiver",
+									"type": "entries",
+									"name": "新照料者",
+									"page": 5,
+									"entries": [
+										"在GM的裁量下，同伴可以抛弃照料者角色，转而选择另一只愿意的生物作为照料者。",
+										{
+											"ENG_name": "Companion Control",
+											"type": "inset",
+											"page": 5,
+											"name": "同伴控制",
+											"entries": [
+												"如果照料者死亡或与同伴分离，由GM决定谁控制同伴。在某些情况下（例如照料者死亡），照料者的玩家可以继续控制同伴，使其对敌人做出英勇的抗争。但在照料者与同伴被物理隔离的情况下（例如同伴被捕获），GM可能希望接管同伴的控制，让玩家对该生物的命运保持悬念。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Ferocity",
+							"type": "section",
+							"name": "狂怒",
+							"page": 6,
+							"entries": [
+								"同伴是危险的生物。尽管它们通常比野生同类更温顺，却并未被完全驯化。每只同伴的{@b 狂怒}衡量着它们的坚韧与暴怒，以及这些特质在战斗中如何累积。随着同伴的狂怒增加，它们会获得强力的新动作，但也变得更难被照料者控制。",
+								"如果同伴在其与照料者的回合开始时未{@condition 失能}，其狂怒增加{@dice 1d4}+同伴5尺内能看见或听见的敌对生物数量。为计算狂怒，共享单一数据卡的生物群（如{@creature 鼠群}）视为单个生物。狂怒在战斗中一轮又一轮地累积，同伴可获得的狂怒没有上限。",
+								{
+									"ENG_name": "Rampage",
+									"type": "entries",
+									"name": "横行",
+									"page": 6,
+									"entries": [
+										"在同伴的回合开始时掷骰增加狂怒后，如果同伴的狂怒值为10或更高且未{@condition 失能}，它们就有进入{@b 横行}的风险。同伴的照料者可以进行一次感知（{@skill 驯兽}）检定（无需动作），尝试阻止同伴进入横行。进行检定时，照料者必须未{@condition 失能}，且同伴必须能看见或听见照料者。检定的DC等于5+同伴的狂怒值。检定成功，同伴在其回合中正常行动；检定失败，或照料者不进行检定，同伴进入横行。",
+										"当同伴进入横行时，它会立即向最近的生物移动至多等于其速度的距离，并以招牌攻击（见下文）攻击该生物，攻击命中时额外造成等于其狂怒值一半的伤害。如果至少有一名盟友和一名敌人同为最近且与同伴等距，由照料者的玩家掷任意一枚骰子：掷出奇数，同伴攻击一名盟友；掷出偶数，同伴攻击一名敌人。照料者的玩家决定同伴具体与哪名盟友或敌人交战（若其愿意，也可以选择自己的角色）。",
+										"横行状态下无法触及生物进行攻击的同伴，会使用{@action 疾走}动作，尽可能地向最近的生物移动。如果同伴无法感知任何潜在目标，它会尽可能地向由GM决定的随机方向移动，并避开危险。",
+										"当进入横行的同伴处理完其动作或结束其回合时，其狂怒降为0，不再处于横行状态。"
+									]
+								},
+								{
+									"ENG_name": "Reducing Ferocity",
+									"type": "entries",
+									"name": "降低狂怒",
+									"page": 6,
+									"entries": [
+										"为防止同伴进入危险的横行，照料者有多种降低其狂怒的办法。",
+										{
+											"ENG_name": "Ferocity Actions",
+											"type": "entries",
+											"name": "狂怒动作",
+											"page": 6,
+											"entries": [
+												"每只同伴的数据卡中都有三个需要消耗狂怒才能使用的动作。要使用其中一项狂怒动作，同伴的照料者必须拥有等于该狂怒动作等级的角色等级，且同伴必须在使用该动作前消耗相应数量的狂怒。如果同伴没有足够的狂怒可消耗，就不能使用该动作。",
+												"狂怒动作总是占用同伴的动作，这意味着它们不能作为借机攻击的一部分使用。同伴处于横行状态时，不能使用狂怒动作。"
+											]
+										},
+										{
+											"ENG_name": "End of Combat",
+											"type": "entries",
+											"name": "战斗结束",
+											"page": 6,
+											"entries": [
+												"当一场有同伴参与的战斗遭遇结束，且同伴并未濒死时，同伴恢复等同于其狂怒值的生命值，其狂怒降为0。由GM决定战斗遭遇何时结束，通常是在生物停止按先攻顺序行动之时。"
+											]
+										},
+										{
+											"ENG_name": "Bag of Rats",
+											"type": "inset",
+											"page": 6,
+											"name": "老鼠袋",
+											"entries": [
+												"我们已经能预见一些狡猾的玩家正盘算着往袋子里塞满昏昏欲睡的老鼠，然后在同伴面前打开袋子，好在战斗中积累狂怒。然而，过于轻易的目标不会像求生之战中受到敌方战斗人员威胁那样激发同伴的狂怒。因此，对于什么算作激增同伴狂怒的敌对生物，由GM做最终裁定。同理，正如生物集群在计算狂怒增长时视为单个生物，GM也可以自由判定两三只极度虚弱的生物可能只算作一只生物。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Dying Companions",
+							"type": "section",
+							"name": "濒死的同伴",
+							"page": 7,
+							"entries": [
+								"当同伴的生命值降至0时，它处于濒死状态，并像角色一样进行死亡豁免检定。因此，角色总是有机会拯救它们毛茸茸（或多鳞、黏滑、披着外骨骼）的朋友的生命！如果战斗在同伴濒死时结束，其狂怒降为0，但不会恢复生命值（见上文{@b 战斗结束}）。",
+								{
+									"ENG_name": "Companion Barding",
+									"type": "inset",
+									"page": 7,
+									"name": "同伴具装",
+									"entries": [
+										"在GM的裁量下，角色可以按核心规则所述为同伴购买具装，并适用以下调整：",
+										{
+											"type": "list",
+											"items": [
+												"小型同伴的具装重量是相应人形生物护甲的一半。中型同伴的具装与人形生物护甲重量相同，而大型同伴的具装重量则是其四倍。",
+												"同伴穿着具装时，不会将照料者的熟练加值加入其AC。",
+												"属于变形生物的同伴（如拟身怪同伴）穿着具装时无法使用该能力。",
+												"身体具有腐蚀性或无定形的同伴（如凝胶方块同伴）不能穿着非魔法具装。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Statistics",
+							"type": "section",
+							"name": "数据",
+							"page": 7,
+							"entries": [
+								"除了狂怒动作外，所有同伴的数据还有其他变化。由于同伴的效能与生存力取决于照料者的训练与专长，同伴的熟练加值等于其照料者的熟练加值。此外，同伴的部分数据会引用其熟练加值，缩写为{@b PB}。其他数据使用的骰数等于同伴的熟练加值，并以PB代替骰数表示。例如，如果同伴拥有+2熟练加值，PBd6即{@dice 2d6}。",
+								"使用熟练加值，有助于同伴的伤害与防御随照料者获得等级而更好地成长。然而，只有野兽之心角色的同伴才能真正跟上照料者的步伐（这正是该职业的好处之一）。",
+								{
+									"ENG_name": "Not the Norm",
+									"type": "entries",
+									"name": "并非寻常",
+									"page": 7,
+									"entries": [
+										"同伴的数据与其野生同类有所不同。这使同伴更易于使用，并让其强度与其他同伴保持一致，同时确保同伴绝不会盖过角色。作为野生生物更具社会性的版本，同伴通常比未驯服的同类更聪明、更多才多艺。"
+									]
+								},
+								{
+									"ENG_name": "Hit Dice",
+									"type": "entries",
+									"name": "生命骰",
+									"page": 7,
+									"entries": [
+										"大多数没有角色职业的生物，其生命骰类型由体型决定（微型生物为{@dice d4}，小型生物为{@dice d6}，依此类推）。同伴是特殊的：无论体型如何，每只同伴都使用{@dice d8}作为生命骰。"
+									]
+								},
+								{
+									"ENG_name": "Signature Attack and Ferocity Actions",
+									"type": "entries",
+									"name": "招牌攻击与狂怒动作",
+									"page": 7,
+									"entries": [
+										"每只同伴都有一个被指定为招牌攻击的动作。招牌攻击总是一次近战攻击，通常是该生物最好的天生攻击。同伴在进入横行时会使用其招牌攻击，且野兽之心职业的部分特性会引用同伴的招牌攻击。",
+										"每只同伴还拥有只能在其回合内消耗狂怒才能使用的特殊动作，其中一些动作会用到同伴的招牌攻击。更多信息参见上文的{@b 狂怒动作}。"
+									]
+								},
+								{
+									"ENG_name": "Languages",
+									"type": "entries",
+									"name": "语言",
+									"page": 7,
+									"entries": [
+										"同伴与其照料者共享一种独特的羁绊，能理解照料者所说语言中的一种（由照料者选择）的基本指令。该同伴无法阅读、说出或书写该语言或任何其他语言，即使相似的生物通常可以。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter Balance and Companions",
+							"type": "section",
+							"name": "遭遇平衡与同伴",
+							"page": 8,
+							"entries": [
+								"除非照料者拥有野兽之心职业，否则在构建遭遇时，GM应将同伴视为一件强力的战斗向魔法物品。同伴为队伍带来显著的战力提升，不仅为敌人提供更多生命值目标并帮助输出更多伤害，还会制造变数，使战斗对队伍的敌人更具挑战性。GM可以将遭遇难度调整一个等级（从简单到中等、从困难到致命，依此类推），以适当挑战拥有同伴的角色队伍，尤其是当角色的平均等级为7级或更低时。",
+								"通过野兽之心职业特性获得的同伴，视为与其他任何职业特性无异。控制同伴的能力是野兽之心最大的好处之一，并已与其他职业的特性相互平衡。因此，野兽之心的同伴不影响遭遇平衡，GM不应为拥有野兽之心的队伍调整遭遇。",
+								{
+									"ENG_name": "NPCs and Companions",
+									"type": "inset",
+									"page": 8,
+									"name": "带有同伴的NPC",
+									"entries": [
+										"行侣生物旨在陪伴玩家角色进行冒险。如果一个NPC有宠物或生物仆役，建议你使用该生物的正常数据卡。例如，如果一个NPC游侠有一只与其合作的{@creature 枭熊}，该生物将使用正常的枭熊数据卡，并由GM照常操控。但如果角色们受命从反派手中救出一位堕落德鲁伊NPC的枭熊宠物，GM可以选择改为使用{@creature 枭熊同伴|BST}，让该生物加入救援者，成为后续冒险的一员。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Companions",
+							"type": "section",
+							"name": "同伴",
+							"page": 8,
+							"entries": [
+								"角色可以在冒险中的任何时刻找到同伴。它们可能把敌对的掠食者变成朋友，作为奖励获赠一只珍稀或不寻常的生物，从残忍的照料者手中解放一只同伴，或是任何对战役而言合理的情境。本节的同伴数据卡涵盖了角色们可能遇到的各种行侣生物。",
+								{
+									"ENG_name": "Companion Mounts",
+									"type": "inset",
+									"page": 8,
+									"name": "同伴坐骑",
+									"entries": [
+										"许多同伴体型足够大，可以供人骑乘，尤其是对小型照料者而言，只要为它们配备类似水生或飞行坐骑所用的异域鞍具。当照料者骑着同伴进入战斗时，实际变化不大。照料者与同伴仍在同一回合行动，且照料者必须使用附赠动作指挥同伴采取疾走、撤离或回避以外的任何动作。在某些情况下，同伴可能允许照料者以外的生物骑乘，但该生物无法对同伴下达命令。",
+										"如果载着骑手的同伴进入横行，在判定同伴攻击哪只生物时，该骑手视为处于同伴5尺内。如果同伴攻击其骑手，该攻击检定具有劣势。"
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										"{@creature 石化蜥蜴同伴|BST}",
+										"{@creature 血鹰同伴|BST}",
+										"{@creature 鲨蜥同伴|BST}",
+										"{@creature 恐爪龙同伴|BST}",
+										"{@creature 雏龙同伴|BST}",
+										{
+											"ENG_name": "Dragon Babies",
+											"type": "inset",
+											"page": 13,
+											"name": "龙之幼崽",
+											"entries": [
+												"巨龙是极度独立的生物，只有在刚出生时才是好宠物。雏龙同伴年幼到尚未发展出真正说话的能力，而学会说话的雏龙通常已大到可以独自闯荡。它们之后可能在关键时刻回来协助昔日的照料者，并在认定角色如今才是宠物之后，选择就此留下。"
+											]
+										},
+										"{@creature 土元素同伴|BST}",
+										"{@creature 凝胶方块同伴|BST}",
+										{
+											"ENG_name": "Finding More Companions",
+											"type": "inset",
+											"page": 16,
+											"name": "寻找更多同伴",
+											"entries": [
+												"如果你想在本补充书之外获得更多同伴选择，请逛逛{@link MCDM Reddit 社区|https://mcdm.gg/bht-reddit}和{@link Discord 服务器|https://discord.com/invite/MCDM}，我们的粉丝在那里制作并分享他们的作品。你还可以在《阿卡迪亚》的后续期数中找到同伴\u2014\u2014那是MCDM的月刊杂志，为第五版提供新生物、冒险、角色选项等内容，可在{@link https://mcdm.gg/bht-patreon|https://mcdm.gg/bht-patreon}和{@link MCDM 商店|https://mcdm.gg/bht-shop}获取。MCDM即将出版的{@book 怪物书|FleeMortals}中也会有更多同伴和一大群其他小生物。想了解更多，请{@link 订阅我们的新闻邮件|https://mcdm.gg/bht-newsletter}。"
+											]
+										},
+										"{@creature 巨蜘蛛同伴|BST}",
+										"{@creature 巨蟾同伴|BST}",
+										"{@creature 巨鼬同伴|BST}",
+										"{@creature 地狱猎犬同伴|BST}",
+										{
+											"ENG_name": "Companion Miniatures",
+											"type": "inset",
+											"page": 19,
+											"name": "同伴微缩模型",
+											"entries": [
+												"如果你想为同伴寻找微缩模型，可以在{@link MCDM 商店|https://mcdm.gg/bht-minis}找到恐爪龙斯派克、雏龙西克斯、地狱猎犬玛克辛、枭熊费瑟斯和孢子仔莫特。这些凶猛的朋友看起来和本补充书中的插画一模一样！"
+											]
+										},
+										"{@creature 拟身怪同伴|BST}",
+										{
+											"ENG_name": "Making Companions",
+											"type": "inset",
+											"page": 20,
+											"name": "制作同伴",
+											"entries": [
+												"与其他生物一样，制作同伴没有固定的公式。以下是打造你自己的同伴的几条准则：",
+												{
+													"type": "list",
+													"items": [
+														"同伴用于进行招牌攻击的属性拥有+3调整值。",
+														"同伴的招牌攻击造成{@damage 1d6}+PB伤害。",
+														"同伴拥有两项豁免熟练，或者若拥有伤害免疫或基础AC 15，则只有一项豁免熟练。",
+														"同伴拥有一个有益于其照料者的附赠动作、反应或特质。",
+														"将同伴的狂怒动作与其他同伴比较，确保强度大体相当。"
+													]
+												}
+											]
+										},
+										"{@creature 枭熊同伴|BST}",
+										{
+											"ENG_name": "Matt Made Mot",
+											"type": "inset",
+											"page": 22,
+											"name": "马特造出了莫特",
+											"entries": [
+												"马特·科尔维尔是第一位使用孢子仔同伴的玩家。他给这个有趣的小家伙起名叫莫特，因为无论心情如何，这只惹人喜爱、永远饥饿的蘑菇只会发出这一个声音。美术团队非常喜欢马特对莫特的描述，它直接启发了该生物的最终视觉设计，也就是你在这里看到的样子。"
+											]
+										},
+										"{@creature 孢子仔同伴|BST}",
+										"{@creature 座狼同伴|BST}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "{@class Beastheart|BST|The Beastheart}",
+					"type": "section",
+					"name": "{@class 野兽之心|BST|野兽之心}",
+					"page": 25,
+					"entries": [
+						{
+							"ENG_name": "Companion Bonds",
+							"type": "entries",
+							"name": "同伴羁绊",
+							"page": 32,
+							"entries": [
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00255.webp"
+											},
+											"title": "{@class 野兽之心|BST|凶猛羁绊|凶猛|BST}",
+											"width": 2301,
+											"height": 3065
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00263.webp"
+											},
+											"title": "{@class 野兽之心|BST|猎手羁绊|猎手|BST}",
+											"width": 2301,
+											"height": 3065
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00271.webp"
+											},
+											"title": "{@class 野兽之心|BST|炼狱羁绊|炼狱|BST}",
+											"width": 2301,
+											"height": 3065
+										}
+									]
+								},
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00285.webp"
+											},
+											"title": "{@class 野兽之心|BST|原初羁绊|原初|BST}",
+											"width": 2301,
+											"height": 3065
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00296.webp"
+											},
+											"title": "{@class 野兽之心|BST|守护者羁绊|守护者|BST}",
+											"width": 2301,
+											"height": 3065
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Magic Items",
+					"type": "section",
+					"name": "魔法物品",
+					"page": 43,
+					"entries": [
+						"行侣生物可以像角色一样装备魔法物品。然而，大多数同伴没有合适的手、也不会说话，这使它们难以使用魔法权杖、卷轴、法杖、魔杖、武器，以及需要指令语或其他言语才能生效的物品。",
+						{
+							"ENG_name": "Modifying Items",
+							"type": "entries",
+							"name": "调整物品",
+							"page": 43,
+							"entries": [
+								"根据核心规则，大多数供穿戴的魔法物品无论生物的体型和体格如何都能贴合，这类物品会魔法性地改变形状以适合使用者。然而，由于大多数同伴不具备类人生物的身体构造，给行侣生物配备核心规则中的物品时，可能需要额外的创造力。{@item 辟矢夺箭手套}可以改变形状，贴合血鹰的利爪或雏龙的爪子。但如果你想让凝胶方块同伴佩戴{@item 抗性戒指}，戒指可能需要悬浮在方块体内，或变成一条可调节大小的金属线，松紧适宜地绕在软泥怪的腰间。同样，土元素通常可以正常穿戴为大型生物尺寸的{@item 移位斗篷}，但也可以把较小的斗篷当作腰带或领巾佩戴。"
+							]
+						},
+						{
+							"ENG_name": "New Items",
+							"type": "entries",
+							"name": "新物品",
+							"page": 43,
+							"entries": [
+								"下列魔法物品供照料者和同伴使用，按字母顺序排列。",
+								"如果物品描述中提到\"你的同伴\"，指的是你被指定为其照料者的同伴。该物品对其他照料者的同伴或没有照料者的同伴无效。",
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										"{@item 照料者之甲|BST}",
+										"{@item 战斗徽章|BST}",
+										"{@item 毁灭徽章|BST}",
+										"{@item 光束透镜|BST}",
+										"{@item 羁绊手环|BST}",
+										"{@item 伪装项圈|BST}",
+										"{@item 同伴球|BST}",
+										"{@item 元素徽记|BST}"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
