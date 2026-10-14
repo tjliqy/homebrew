@@ -1,0 +1,7341 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLAW",
+				"abbreviation": "LLWar",
+				"full": "LaserLlama 的督军",
+				"url": "https://www.gmbinder.com/share/-MrUNf61qoDb0Csw8a9r",
+				"version": "3.3.1",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle",
+					"hakr"
+				],
+				"color": "eaab30"
+			},
+			{
+				"json": "LLAW:E",
+				"abbreviation": "LLAWarE",
+				"full": "LaserLlama 的督军扩展",
+				"url": "https://www.gmbinder.com/share/-NlKD02rNjo7mjeK5pj0",
+				"version": "3.3.1",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle",
+					"hakr"
+				],
+				"color": "eaab30"
+			}
+		],
+		"dependencies": {
+			"optionalfeature": [
+				"LLExploits",
+				"LLStyles"
+			],
+			"spell": [
+				"llspell"
+			],
+			"feat": [
+				"llfeat"
+			]
+		},
+		"edition": "classic",
+		"dateAdded": 1657295680,
+		"dateLastModified": 1789939048,
+		"_dateLastModifiedHash": "5cb14a5e07"
+	},
+	"class": [
+		{
+			"ENG_name": "Warlord",
+			"name": "督军",
+			"source": "LLAW",
+			"page": 1,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Tactical Exploits",
+					"name": "战术战技",
+					"featureType": [
+						"LL:1TE"
+					],
+					"progression": {
+						"2": 2,
+						"3": 3
+					}
+				},
+				{
+					"ENG_name": "Tactical Exploits",
+					"name": "战术战技",
+					"featureType": [
+						"LL:1TE",
+						"LL:2TE"
+					],
+					"progression": {
+						"5": 1,
+						"7": 2
+					}
+				},
+				{
+					"ENG_name": "Tactical Exploits",
+					"name": "战术战技",
+					"featureType": [
+						"LL:1TE",
+						"LL:2TE",
+						"LL:3TE"
+					],
+					"progression": {
+						"9": 1,
+						"11": 2
+					}
+				},
+				{
+					"ENG_name": "Tactical Exploits",
+					"name": "战术战技",
+					"featureType": [
+						"LL:1TE",
+						"LL:2TE",
+						"LL:3TE",
+						"LL:4TE"
+					],
+					"progression": {
+						"13": 1
+					}
+				},
+				{
+					"ENG_name": "Tactical Exploits",
+					"name": "战术战技",
+					"featureType": [
+						"LL:TE"
+					],
+					"progression": {
+						"17": 1
+					}
+				},
+				{
+					"ENG_name": "Fighting Style",
+					"name": "战斗风格",
+					"featureType": [
+						"FS:WD"
+					],
+					"progression": {
+						"2": 1
+					}
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"deception",
+								"history",
+								"insight",
+								"intimidation",
+								"investigation",
+								"persuasion"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"{@item 手弩|phb|手弩}",
+					"{@item 长弓|phb|长弓}",
+					"{@item 长剑|phb|长剑}",
+					"{@item 刺剑|phb|刺剑}",
+					"{@item 弯刀|phb|弯刀}",
+					"{@item 短剑|phb|短剑}"
+				],
+				"tools": [
+					"一件自选{@item 赌具|phb}。"
+				],
+				"toolProficiencies": [
+					{
+						"anyGamingSet": 1
+					}
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 鳞甲|PHB} 或 (b) 一件{@item 皮甲|PHB}",
+					"(a) 一件{@filter 简易武器|items|source=phb|category=基础|type=简易武器}，或 (b) 一把{@item 长剑|phb}，或 (c) 一把{@item 刺剑|PHB}",
+					"(a) 一把{@item 轻弩|PHB}和{@item 弩矢(20)|PHB|20支弩矢}，或 (b) 五支{@item 标枪|phb|标枪}",
+					"(a) 一个{@item 学者套组|PHB}，或 (b) 一个{@item 探索套组|PHB}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"鳞甲|phb"
+						],
+						"b": [
+							"皮甲|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						],
+						"b": [
+							"长剑|phb"
+						],
+						"c": [
+							"刺剑|phb"
+						]
+					},
+					{
+						"a": [
+							"轻弩|phb",
+							"弩矢(20)|phb"
+						],
+						"b": [
+							{
+								"item": "标枪|phb",
+								"quantity": 5
+							}
+						]
+					},
+					{
+						"a": [
+							"学者套组|phb"
+						],
+						"b": [
+							"探索套组|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						},
+						{
+							"int": 13,
+							"wis": 13,
+							"cha": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"鼓舞之词",
+						"{@filter 已知战技|optionalfeatures|feature type=LL:TE}",
+						"战技骰",
+						"战技骰数"
+					],
+					"rows": [
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							"{@dice d4}",
+							2
+						],
+						[
+							3,
+							3,
+							"{@dice d4}",
+							2
+						],
+						[
+							4,
+							3,
+							"{@dice d4}",
+							2
+						],
+						[
+							4,
+							4,
+							"{@dice d6}",
+							3
+						],
+						[
+							4,
+							4,
+							"{@dice d6}",
+							3
+						],
+						[
+							4,
+							5,
+							"{@dice d6}",
+							3
+						],
+						[
+							5,
+							5,
+							"{@dice d6}",
+							3
+						],
+						[
+							5,
+							6,
+							"{@dice d6}",
+							3
+						],
+						[
+							5,
+							6,
+							"{@dice d6}",
+							3
+						],
+						[
+							5,
+							7,
+							"{@dice d8}",
+							4
+						],
+						[
+							5,
+							7,
+							"{@dice d8}",
+							4
+						],
+						[
+							6,
+							8,
+							"{@dice d8}",
+							4
+						],
+						[
+							6,
+							8,
+							"{@dice d8}",
+							4
+						],
+						[
+							6,
+							9,
+							"{@dice d8}",
+							4
+						],
+						[
+							6,
+							9,
+							"{@dice d8}",
+							4
+						],
+						[
+							7,
+							10,
+							"{@dice d10}",
+							5
+						],
+						[
+							7,
+							10,
+							"{@dice d10}",
+							5
+						],
+						[
+							7,
+							10,
+							"{@dice d10}",
+							5
+						],
+						[
+							7,
+							10,
+							"{@dice d10}",
+							5
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"领袖风格|督军|LLAW|1",
+				"鼓舞之词|督军|LLAW|1",
+				"战斗风格|督军|LLAW|2",
+				"战术战技|督军|LLAW|2",
+				{
+					"classFeature": "战争学院|督军|LLAW|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|督军|LLAW|4",
+				"额外攻击|督军|LLAW|5",
+				{
+					"classFeature": "学院特性|督军|LLAW|6",
+					"gainSubclassFeature": true
+				},
+				"英勇领袖|督军|LLAW|7",
+				"属性值提升|督军|LLAW|8",
+				"重整姿态|督军|LLAW|9",
+				"坚定意志|督军|LLAW|10",
+				"战术卓越|督军|LLAW|11",
+				"属性值提升|督军|LLAW|12",
+				{
+					"classFeature": "学院特性|督军|LLAW|14",
+					"gainSubclassFeature": true
+				},
+				"升华领袖|督军|LLAW|15",
+				"属性值提升|督军|LLAW|16",
+				{
+					"classFeature": "学院特性|督军|LLAW|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|督军|LLAW|19",
+				"无畏|督军|LLAW|20"
+			],
+			"subclassTitle": "战争学院",
+			"hasFluff": true,
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "exploit",
+						"type": "dice",
+						"scale": {
+							"2": {
+								"n": 2,
+								"die": 4
+							},
+							"5": {
+								"n": 3,
+								"die": 6
+							},
+							"11": {
+								"n": 4,
+								"die": 8
+							},
+							"17": {
+								"n": 5,
+								"die": 10
+							}
+						}
+					},
+					"title": "战技骰"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "inspiring-word",
+						"type": "number",
+						"scale": {
+							"1": {
+								"value": 3
+							},
+							"4": {
+								"value": 4
+							},
+							"8": {
+								"value": 5
+							},
+							"13": {
+								"value": 6
+							},
+							"17": {
+								"value": 7
+							}
+						}
+					},
+					"title": "鼓舞之词"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "rallying-cry",
+						"type": "number",
+						"scale": {
+							"9": {
+								"value": 1
+							},
+							"13": {
+								"value": 2
+							},
+							"17": {
+								"value": 3
+							},
+							"20": {
+								"value": 99
+							}
+						}
+					},
+					"title": "重整姿态"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "tactical-superiority",
+						"type": "number",
+						"scale": {
+							"1": {
+								"value": 1
+							},
+							"11": {
+								"value": 2
+							}
+						}
+					},
+					"title": "战术卓越"
+				}
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Warlord",
+			"name": "督军",
+			"source": "LLAW",
+			"entries": [
+				{
+					"ENG_name": "The Warlord",
+					"source": "LLAW",
+					"type": "section",
+					"name": "督军",
+					"page": 1,
+					"entries": [
+						"当年迈的老人艰难地跟上同伴们的脚步时，他开始后悔加入这群年轻冒险者的决定。他辉煌的岁月已然逝去，但听到这些胸怀大志的英雄们拙劣的计划时，他内心深处某种他以为永远消失的东西重新燃起。他已无法像从前那样挥剑，但只要年轻的同伴们听从他的忠告，他们或许还能在危险的冒险生涯中多活几天。",
+						"当无穷无尽的恐怖大军从前方的隧道中涌出时，矮人领主命令他的士兵们列阵。他将精锐战士部署在通往氏族都邑大门前的最后一条隧道里。他的氏族挖掘得太贪婪，从地底深处释放出了{@i 某物}。他低声作了最后的祈祷，准备带领他的部下赴死，希望能为氏族其余人争取到足够的时间逃离这群怪物。",
+						"一位身姿轻盈的木精灵悄然带领她的狩猎队穿过巨林的下层灌木。她们追踪那个对手\u2014\u2014一只巨大的双头巨魔\u2014\u2014已经将近两天。当它在一块林间空地上休息时，她发出信号，猎手同伴们随即在这头野兽四周散开，与自然景致融为一体。随着她一声令下，狩猎队持长枪猛扑上前，巨魔还没来得及反应就被放倒了。",
+						"这些战士全都被视为督军\u2014\u2014运用战术与战争知识强化盟友、挫败敌人图谋的武人领袖。",
+						{
+							"ENG_name": "Decisive Leaders",
+							"type": "entries",
+							"name": "果断的领袖",
+							"page": 1,
+							"entries": [
+								"虽然督军们形形色色，一如领导风格的多样，但他们都有一个共同点：对自己的决定负责。一旦真正的督军定下行动方案，无论那是否出自他们本人的构想，他们都会把计划贯彻到底。",
+								"这些天生的领袖在危险面前屹立如磐石，能集结盟友跨越横亘在他们与目标之间的一切阻碍。尽管他们并非总是被正式任命的领导者，但督军的存在\u2014\u2014无论在战场内外\u2014\u2014都能激励追随者发挥出最好的自己。"
+							]
+						},
+						{
+							"ENG_name": "From Many, One",
+							"type": "entries",
+							"name": "合众为一",
+							"page": 1,
+							"entries": [
+								"独身一人时，督军不过是小小的威胁，但有了可供组织和指挥的忠诚同伴，最伟大的督军足以倾覆帝国。凭借敏锐的战术运用与战争学识，督军能够激发盟友的真正潜能。领袖气质刻入骨髓的督军必定会了解盟友的能力与弱点，从而帮助他们达成真正的潜力。",
+								"这些卓越的战略家懂得退居幕后，让盟友在战斗中大放异彩。尽管他们有能力在战场上独当一面，但督军真正的力量在于向盟友发出的强力号令。这些洞见将他们的战友从平凡武者推向真正的英雄。"
+							]
+						},
+						{
+							"ENG_name": "Creating Your Warlord",
+							"type": "entries",
+							"name": "创造你的督军",
+							"page": 1,
+							"entries": [
+								"创造你的督军时，想一想他们是在哪里学会领导他人的。他们曾担任举世闻名的将军的侍从吗？他们是王国军校的明星学员吗？又或者，他们是在佣兵团的血腥行列中一步步爬升，因形势所迫而学会领导？",
+								"另外，想一想你的督军为何要领导他人，而不是提升自己的个人武艺。他们是否看重团队协作与配合？他们的年龄或其他身体障碍是否使其无法独自作战？他们是否一直头脑敏锐、天生擅长领导他人，甚至从年幼时便是如此？",
+								{
+									"ENG_name": "Multiclassing and the Warlord",
+									"type": "inset",
+									"name": "兼职与督军",
+									"entries": [
+										"如果你的团使用可选的兼职规则，以下是你在选择第一个督军职业等级时需要了解的内容。",
+										{
+											"ENG_name": "Ability Score Minimum",
+											"type": "entries",
+											"name": "属性值下限",
+											"entries": [
+												"作为兼职角色，你的力量或敏捷至少有一项达到13，且智力、感知或魅力至少有一项达到13，才能获得督军等级；如果你已经是督军，这一条件同样适用于获得其他职业的等级。"
+											]
+										},
+										{
+											"ENG_name": "Proficiencies",
+											"type": "entries",
+											"name": "熟练项",
+											"entries": [
+												"如果督军并非你的初始职业，以下是你在获得第一个督军等级时得到的熟练项：轻甲、中甲、盾牌、简易武器，以及一种赌具。"
+											]
+										},
+										{
+											"ENG_name": "Exploits",
+											"type": "entries",
+											"name": "战技",
+											"entries": [
+												"如果你从不止一个来源习得战技，请使用{@link 相关链接|https://www.gmbinder.com/share/-NGUL51kfZCPlESxL1wq}的规则来确定你的战技骰总数和已知战技数。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Quick Build",
+									"type": "entries",
+									"name": "快速建卡",
+									"entries": [
+										"你可以参照以下建议快速构建一名督军。首先，让力量或敏捷成为你的最高属性值，其次是智力、感知或魅力之一。其次，选择{@background 贵族}背景。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Academy of Chivalry",
+			"name": "骑士道学院",
+			"shortName": "骑士道",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"page": 8,
+			"subclassFeatures": [
+				"骑士道学院|督军|LLAW|骑士道|LLAW|3",
+				"原型战技|督军|LLAW|骑士道|LLAW|5",
+				"领军冲锋|督军|LLAW|骑士道|LLAW|6",
+				"原型战技|督军|LLAW|骑士道|LLAW|9",
+				"希望之焰|督军|LLAW|骑士道|LLAW|14",
+				"骑士道典范|督军|LLAW|骑士道|LLAW|18"
+			]
+		},
+		{
+			"ENG_name": "Academy of Claws",
+			"name": "利爪学院",
+			"shortName": "利爪",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassFeatures": [
+				"利爪学院|督军|LLAW|利爪|LLAW:E|3",
+				"原型战技|督军|LLAW|利爪|LLAW:E|5",
+				"钢铁号令|督军|LLAW|利爪|LLAW:E|6",
+				"原型战技|督军|LLAW|利爪|LLAW:E|9",
+				"怪物兽园|督军|LLAW|利爪|LLAW:E|14",
+				"完全支配|督军|LLAW|利爪|LLAW:E|18"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "钢铁号令",
+					"configuration": {
+						"identifier": "iron-command",
+						"type": "distance",
+						"distance.units": "ft",
+						"scale": {
+							"6": {
+								"value": 15
+							},
+							"20": {
+								"value": 30
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Academy of Counsel",
+			"name": "顾问学院",
+			"shortName": "顾问",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassFeatures": [
+				"顾问学院|督军|LLAW|顾问|LLAW:E|3",
+				"原型战技|督军|LLAW|顾问|LLAW:E|5",
+				"振奋号令|督军|LLAW|顾问|LLAW:E|6",
+				"原型战技|督军|LLAW|顾问|LLAW:E|9",
+				"升华门徒|督军|LLAW|顾问|LLAW:E|14",
+				"传奇搭档|督军|LLAW|顾问|LLAW:E|18"
+			]
+		},
+		{
+			"ENG_name": "Academy of Dread",
+			"name": "恐惧学院",
+			"shortName": "恐惧",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"page": 9,
+			"subclassFeatures": [
+				"恐惧学院|督军|LLAW|恐惧|LLAW|3|LLAW",
+				"原型战技|督军|LLAW|恐惧|LLAW|5",
+				"残酷|督军|LLAW|恐惧|LLAW|6|LLAW",
+				"原型战技|督军|LLAW|恐惧|LLAW|9",
+				"无情号令|督军|LLAW|恐惧|LLAW|14|LLAW",
+				"凶厄威仪|督军|LLAW|恐惧|LLAW|18|LLAW",
+				"恐惧领主|督军|LLAW|恐惧|LLAW|18|LLAW"
+			]
+		},
+		{
+			"ENG_name": "Academy of Ferocity",
+			"name": "凶猛学院",
+			"shortName": "凶猛",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"page": 10,
+			"subclassFeatures": [
+				"凶猛学院|督军|LLAW|凶猛|LLAW|3",
+				"原型战技|督军|LLAW|凶猛|LLAW|5",
+				"静默猎手|督军|LLAW|凶猛|LLAW|6",
+				"原型战技|督军|LLAW|凶猛|LLAW|9",
+				"狩猎狂热|督军|LLAW|凶猛|LLAW|14",
+				"顶级掠食者|督军|LLAW|凶猛|LLAW|18"
+			]
+		},
+		{
+			"ENG_name": "Academy of Gallantry",
+			"name": "英武学院",
+			"shortName": "英武",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"page": 11,
+			"casterProgression": "1/3",
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12
+			],
+			"subclassSpells": [
+				"祝福术",
+				"灾祸术",
+				"造成恐惧|xge",
+				"魅惑类人",
+				"命令术",
+				"强令对决（变体）|llspell",
+				"易容术",
+				"不谐低语",
+				"妖火",
+				"英雄气概",
+				"塔莎狂笑术",
+				"大步奔行",
+				"睡眠术",
+				"雷鸣斩（变体）|llspell",
+				"雷鸣波",
+				"援助术",
+				"安定心神",
+				"强化属性",
+				"寻获坐骑（变体）|llspell",
+				"魔嘴术",
+				"魔化武器（变体）|llspell",
+				"镜影术",
+				"烟火术|xge",
+				"恢复术|llspell",
+				"粉碎音波",
+				"沉默术",
+				"暗示术",
+				"守护之链",
+				"希望信标",
+				"十字军披风",
+				"恐怖哀嚎|llspell",
+				"解除魔法",
+				"恐惧术",
+				"加速术",
+				"催眠图纹（变体）|llspell",
+				"迷舞（变体）|llspell",
+				"回避侦测",
+				"短讯术",
+				"缓慢术",
+				"音波冲击|llspell",
+				"生命灵光",
+				"净化灵光",
+				"魅惑怪物|xge",
+				"强迫术",
+				"困惑术",
+				"防死结界（变体）|llspell",
+				"行动自如"
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Gallantry",
+							"name": "英武",
+							"source": "LLAW"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知法术|spells|subclass=督军: 英武 (LLAW)}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							12
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"subclasses": [
+						{
+							"ENG_name": "Gallantry",
+							"name": "英武",
+							"source": "LLAW"
+						}
+					],
+					"colLabels": [
+						"{@filter 1环|spells|level=1|subclass=督军: 英武 (LLAW)}",
+						"{@filter 2环|spells|level=2|subclass=督军: 英武 (LLAW)}",
+						"{@filter 3环|spells|level=3|subclass=督军: 英武 (LLAW)}",
+						"{@filter 4环|spells|level=4|subclass=督军: 英武 (LLAW)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"英武学院|督军|LLAW|英武|LLAW|3",
+				"原型战技|督军|LLAW|英武|LLAW|5",
+				"英勇冲锋|督军|LLAW|英武|LLAW|6",
+				"战争与和平之歌|督军|LLAW|英武|LLAW|6",
+				"原型战技|督军|LLAW|英武|LLAW|9",
+				"战歌|督军|LLAW|英武|LLAW|14",
+				"神话之声|督军|LLAW|英武|LLAW|18"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "英勇冲锋",
+					"configuration": {
+						"identifier": "heroic-charge",
+						"type": "distance",
+						"distance.units": "ft",
+						"scale": {
+							"6": {
+								"value": 15
+							},
+							"11": {
+								"value": 30
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Academy of Liberty",
+			"name": "自由学院",
+			"shortName": "自由",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassFeatures": [
+				"自由学院|督军|LLAW|自由|LLAW:E|3",
+				"原型战技|督军|LLAW|自由|LLAW:E|5",
+				"患难与共|督军|LLAW|自由|LLAW:E|6",
+				"原型战技|督军|LLAW|自由|LLAW:E|9",
+				"人多势众|督军|LLAW|自由|LLAW:E|14",
+				"伟大革命者|督军|LLAW|自由|LLAW:E|18"
+			]
+		},
+		{
+			"ENG_name": "Academy of Navigators",
+			"name": "领航员学院",
+			"shortName": "领航员",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Seafarer",
+					"name": "海员",
+					"featureType": [
+						"FS:WD"
+					],
+					"progression": {
+						"3": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"领航员学院|督军|LLAW|领航员|LLAW:E|3",
+				"原型战技|督军|LLAW|领航员|LLAW:E|5|",
+				"领航船员|督军|LLAW|领航员|LLAW:E|6",
+				"集结船员|督军|LLAW|领航员|LLAW:E|6",
+				"原型战技|督军|LLAW|领航员|LLAW:E|9",
+				"大副|督军|LLAW|领航员|LLAW:E|14",
+				"显赫上将|督军|LLAW|领航员|LLAW:E|18"
+			]
+		},
+		{
+			"ENG_name": "Academy of Order",
+			"name": "秩序学院",
+			"shortName": "秩序",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassFeatures": [
+				"秩序学院|督军|LLAW|秩序|LLAW:E|3",
+				"原型战技|督军|LLAW|秩序|LLAW:E|5",
+				"阻拦|督军|LLAW|秩序|LLAW:E|6",
+				"坚毅防御者|督军|LLAW|秩序|LLAW:E|6",
+				"原型战技|督军|LLAW|秩序|LLAW:E|9",
+				"秩序堡垒|督军|LLAW|秩序|LLAW:E|14",
+				"火眼金睛|督军|LLAW|秩序|LLAW:E|14",
+				"至高权威|督军|LLAW|秩序|LLAW:E|18"
+			]
+		},
+		{
+			"ENG_name": "Academy of Schemes",
+			"name": "阴谋学院",
+			"shortName": "阴谋",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"page": 13,
+			"subclassFeatures": [
+				"阴谋学院|督军|LLAW|阴谋|LLAW|3",
+				"原型战技|督军|LLAW|阴谋|LLAW|5",
+				"无情专注|督军|LLAW|阴谋|LLAW|6",
+				"原型战技|督军|LLAW|阴谋|LLAW|9",
+				"狡诈战术|督军|LLAW|阴谋|LLAW|14",
+				"莫测之心|督军|LLAW|阴谋|LLAW|18",
+				"终亡印记|督军|LLAW|阴谋|LLAW|18"
+			]
+		},
+		{
+			"ENG_name": "Academy of Tactics",
+			"name": "战术学院",
+			"shortName": "战术",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"page": 14,
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Advanced Tactics",
+					"name": "进阶战术",
+					"featureType": [
+						"LL:1TE"
+					],
+					"progression": {
+						"3": 2
+					}
+				},
+				{
+					"ENG_name": "Advanced Tactics",
+					"name": "进阶战术",
+					"featureType": [
+						"LL:2TE"
+					],
+					"progression": {
+						"5": 2
+					}
+				},
+				{
+					"ENG_name": "Advanced Tactics",
+					"name": "进阶战术",
+					"featureType": [
+						"LL:3TE"
+					],
+					"progression": {
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"战术学院|督军|LLAW|战术|LLAW|3",
+				"智胜于力|督军|LLAW|战术|LLAW|6",
+				"料敌机先|督军|LLAW|战术|LLAW|6",
+				"天赋战略家|督军|LLAW|战术|LLAW|14",
+				"大师战术家|督军|LLAW|战术|LLAW|18"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "exploit",
+						"type": "dice",
+						"scale": {
+							"3": {
+								"n": 3,
+								"die": 6
+							},
+							"5": {
+								"n": 4,
+								"die": 8
+							},
+							"11": {
+								"n": 5,
+								"die": 10
+							},
+							"17": {
+								"n": 6,
+								"die": 12
+							}
+						}
+					},
+					"title": "战技骰"
+				}
+			]
+		},
+		{
+			"ENG_name": "Academy of Zeal",
+			"name": "狂热学院",
+			"shortName": "狂热",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							{
+								"choose": "level=1|subclass=督军: 狂热 (llaware)",
+								"count": 2
+							}
+						],
+						"5": [
+							{
+								"choose": "level=1|subclass=督军: 狂热 (llaware)"
+							}
+						],
+						"7": [
+							{
+								"choose": "level=1;2|subclass=督军: 狂热 (llaware)"
+							}
+						],
+						"9": [
+							{
+								"choose": "level=1;2|subclass=督军: 狂热 (llaware)"
+							}
+						],
+						"13": [
+							{
+								"choose": "level=1;2;3|subclass=督军: 狂热 (llaware)"
+							}
+						],
+						"17": [
+							{
+								"choose": "level=1;2;3|subclass=督军: 狂热 (llaware)"
+							}
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"剑刃防护（变体）|llspell",
+				"轰雷剑（变体）|llspell",
+				"翠炎剑（变体）|llspell",
+				"光亮术",
+				"传讯术",
+				"抵抗术（变体）|llspell",
+				"圣火术",
+				"维生术",
+				"剑刃爆发（变体）|llspell",
+				"奇术",
+				"亡者丧钟",
+				"克敌先击（变体）|llspell",
+				"祝福术",
+				"命令术",
+				"强令对决（变体）|llspell",
+				"疗伤术",
+				"神恩（变体）|llspell",
+				"以太之锚|llspell",
+				"光导箭",
+				"英雄气概",
+				"致伤术",
+				"跳跃术（变体）|llspell",
+				"防护善恶",
+				"庇护术",
+				"炽焰斩（变体）|llspell",
+				"虔诚护盾",
+				"雷鸣斩（变体）|llspell",
+				"激愤斩（变体）|llspell",
+				"援助术",
+				"目盲术/耳聋术",
+				"印记斩（变体）|llspell",
+				"黑暗术",
+				"寻获坐骑（变体）|llspell",
+				"魔化武器（变体）|llspell",
+				"恢复术|llspell",
+				"灵体武器",
+				"守护之链",
+				"诚实之域",
+				"活力灵光",
+				"希望信标",
+				"致盲斩（变体）|llspell",
+				"万箭齐发（变体）|llspell",
+				"十字军披风",
+				"烈焰箭矢（变体）|llspell",
+				"防护能量",
+				"移除诅咒",
+				"回生术",
+				"灵体卫士",
+				"生命灵光",
+				"净化灵光",
+				"放逐术",
+				"防死结界（变体）|llspell",
+				"信仰守卫",
+				"惊惧斩（变体）|llspell"
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Zeal",
+							"name": "狂热",
+							"source": "LLAW:E"
+						}
+					],
+					"colLabels": [
+						"已知法术",
+						"法术位",
+						"法术位环阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							1,
+							"{@filter 1环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							2,
+							2,
+							"{@filter 1环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							4,
+							2,
+							"{@filter 2环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							4,
+							2,
+							"{@filter 2环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							5,
+							2,
+							"{@filter 2环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							5,
+							2,
+							"{@filter 2环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							6,
+							2,
+							"{@filter 2环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							6,
+							2,
+							"{@filter 2环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							7,
+							2,
+							"{@filter 3环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							7,
+							2,
+							"{@filter 3环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							8,
+							2,
+							"{@filter 3环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							8,
+							2,
+							"{@filter 3环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							9,
+							2,
+							"{@filter 3环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							9,
+							2,
+							"{@filter 3环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							10,
+							2,
+							"{@filter 4环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						],
+						[
+							10,
+							2,
+							"{@filter 4环|spells|level=1|subclass=督军: 狂热 (LLAW:E)}"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"狂热学院|督军|LLAW|狂热|LLAW:E|3",
+				"引导神力|督军|LLAW|狂热|LLAW:E|6",
+				"狂热之言|督军|LLAW|狂热|LLAW:E|14",
+				"天眷仆从|督军|LLAW|狂热|LLAW:E|18"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "1环法术位",
+					"configuration": {
+						"identifier": "1",
+						"type": "number",
+						"scale": {
+							"3": {
+								"value": 1
+							},
+							"4": {
+								"value": 2
+							},
+							"7": {
+								"value": 0
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "2环法术位",
+					"configuration": {
+						"identifier": "2",
+						"type": "number",
+						"scale": {
+							"7": {
+								"value": 2
+							},
+							"13": {
+								"value": 0
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "3环法术位",
+					"configuration": {
+						"identifier": "3",
+						"type": "number",
+						"scale": {
+							"13": {
+								"value": 2
+							},
+							"19": {
+								"value": 0
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "4环法术位",
+					"configuration": {
+						"identifier": "4",
+						"type": "number",
+						"scale": {
+							"19": {
+								"value": 2
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Captain",
+			"name": "统领",
+			"source": "LLAW",
+			"page": 2,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"intimidation",
+							"persuasion"
+						]
+					}
+				}
+			],
+			"armorProficiencies": [
+				{
+					"heavy": true
+				}
+			],
+			"header": 3,
+			"entries": [
+				"你以个性、胆识与果敢领导他人。魅力即你的领袖值。你还获得重甲的熟练项，并从{@skill 威吓}或{@skill 游说}中选择其一获得熟练项。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-striped-gold-red.webp"
+		},
+		{
+			"ENG_name": "Inspiring Word",
+			"name": "鼓舞之词",
+			"source": "LLAW",
+			"page": 2,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"entries": [
+				"你的言语鼓舞他人继续战斗。1级时，你可以用附赠动作向30尺内一个能听见你的其他生物高呼。目标恢复的生命值等于其一次生命骰的掷值＋你的领袖调整值。但作为此能力的一部分，它并不会消耗生命骰。",
+				"你可以使用此特性的次数如督军表格中\"鼓舞之词\"一栏所示。完成一次短休或长休后，你恢复所有已耗用的次数。"
+			],
+			"foundryImg": "icons/magic/life/cross-worn-green.webp"
+		},
+		{
+			"ENG_name": "Leadership Style",
+			"name": "领袖风格",
+			"source": "LLAW",
+			"page": 2,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"entries": [
+				"1级时，你选择你的领袖风格。它决定你的领袖属性值，并给予额外益处：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refClassFeature",
+							"classFeature": "统领|督军|LLAW|1"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "导师|督军|LLAW|1"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "战略家|督军|LLAW|1"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-striped-gold-red.webp"
+		},
+		{
+			"ENG_name": "Mentor",
+			"name": "导师",
+			"source": "LLAW",
+			"page": 2,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"header": 3,
+			"entries": [
+				"你以睿智的指点领导他人。感知即你的领袖值。当15尺内另一个能听见你的生物攻击失手或属性检定失败时，你可以用你的反应给予其掷骰{@dice 1d4}的加值。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-striped-gold-red.webp"
+		},
+		{
+			"ENG_name": "Strategist",
+			"name": "战略家",
+			"source": "LLAW",
+			"page": 2,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"header": 3,
+			"entries": [
+				"你以狡黠的战术洞见领导他人。智力即你的领袖值。掷完先攻后，你可以与另一个自愿的生物交换先攻顺序中的位置。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-striped-gold-red.webp"
+		},
+		{
+			"ENG_name": "Exploit Dice",
+			"name": "战技骰",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 2,
+			"entries": [
+				"督军表格展示了你可用来施展已知战技的战技骰数量。你的大部分战技都需要消耗战技骰才能使用。每次攻击、属性检定或豁免检定你只能使用一个战技，完成一次短休或长休后，你恢复所有已消耗的战技骰。",
+				"你的战技骰起始为{@dice d4}，并随你在此职业中获得的等级而增大，如督军表格中\"战技骰\"一栏所示。此外，每当你将战技骰加入掷骰时，始终要掷出它并将结果加上。"
+			],
+			"foundryImg": "icons/sundries/gaming/dice-pair-white-green.webp"
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 2,
+			"entries": [
+				"2级时，你从此职业末尾的列表中学习一种{@filter 战斗风格|optionalfeatures|feature type=fs:wd}。即使某个特性允许你学习另一种战斗风格，同一种战斗风格你也只能学习一次。学习战斗风格前，你必须满足其先决条件。",
+				"当你获得等级时，你可以将此战斗风格替换为督军职业可用的另一种战斗风格。"
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"ENG_name": "Tactical Exploits",
+			"name": "战术战技",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 2,
+			"entries": [
+				"同样在2级，你习得强化战术技巧的技术。你获得以下特性：",
+				{
+					"type": "refClassFeature",
+					"classFeature": "战技骰|督军|LLAW|2"
+				},
+				{
+					"ENG_name": "Exploits Known",
+					"type": "entries",
+					"name": "已知战技",
+					"entries": [
+						"你从此职业末尾的列表中选择两个{@filter 战术战技|optionalfeatures|feature type=LL:TE}。要学习一个战术战技，你必须满足其所有的先决条件。",
+						"你在特定等级会习得额外的战技，如督军表格中\"已知战技\"一栏所示。最后，每当你获得等级时，你可以将一个已知战技替换为另一个你选择的战术战技。"
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "战术技巧|督军|LLAW|2"
+				},
+				{
+					"ENG_name": "Saving Throws",
+					"type": "entries",
+					"name": "豁免检定",
+					"entries": [
+						"如果你的某个战术战技要求一个生物进行豁免检定，你的战技豁免DC计算如下：",
+						{
+							"ENG_name": "Exploit",
+							"type": "abilityDc",
+							"name": "战技",
+							"attributes": [
+								"你的领袖调整值"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Tactical Skill",
+			"name": "战术技巧",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 2,
+			"consumes": {
+				"ENG_name": "Exploit Dice",
+				"name": "战技骰"
+			},
+			"entries": [
+				"专注的训练也磨砺了你的技艺。每当你使用自己熟练的工具或技能进行属性检定时，你可以消耗一枚战技骰并将其加入你的掷骰。你可以在掷出d20之后、得知结果之前这样做。"
+			],
+			"foundryImg": "icons/skills/trades/smithing-tongs-metal-red.webp"
+		},
+		{
+			"ENG_name": "Academy of War",
+			"name": "战争学院",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 3,
+			"entries": [
+				"3级时，从此处的列表中选择最能体现你督军所受训练与战术的战争学院：",
+				{
+					"type": "table",
+					"colStyles": [
+						"text-center col-4",
+						"text-center col-4",
+						"text-center col-4"
+					],
+					"rows": [
+						[
+							"骑士道",
+							"凶猛",
+							"阴谋"
+						],
+						[
+							"恐惧",
+							"英武",
+							"战术"
+						]
+					]
+				},
+				"你的学院在3级时给予你特性，并在该职业的6级、14级和18级再次给予。如果学院特性强制进行豁免检定，则使用你的战技豁免DC。",
+				{
+					"ENG_name": "Academy Exploits",
+					"type": "entries",
+					"name": "学院战技",
+					"entries": [
+						"部分学院拥有一份战术战技列表，你在其描述注明的等级习得这些战技。这些战技不计入你的已知战技数，且不可替换。即使你不满足其先决条件，你也会习得它们。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 4,
+			"entries": [
+				"当你到达4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 5,
+			"entries": [
+				"从5级开始，当你在自己的回合采取{@action 攻击}动作时，你可以攻击两次而非一次。此外，如果你用动作{@action 疾走}或{@action 撤离}，你可以在该回合用附赠动作进行一次武器攻击。"
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp"
+		},
+		{
+			"ENG_name": "Academy Feature",
+			"name": "学院特性",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 6,
+			"entries": [
+				"6级时，你获得由你的战争学院给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Captain",
+			"name": "统领",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 7,
+			"header": 3,
+			"entries": [
+				"你可以用鼓舞之词指定{@condition 昏迷}但并未死去的生物，即使它们听不见你。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-silver-blue.webp"
+		},
+		{
+			"ENG_name": "Mentor",
+			"name": "导师",
+			"source": "LLAW",
+			"page": 7,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 7,
+			"header": 3,
+			"entries": [
+				"你的导师反应的范围增加到30尺，且当你使用此反应时，你可以消耗一枚战技骰来代替原本掷的d4。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-silver-blue.webp"
+		},
+		{
+			"ENG_name": "Strategist",
+			"name": "战略家",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 7,
+			"header": 3,
+			"entries": [
+				"只要你没有{@status 突袭}也没有{@condition 失能}，你和你15尺内选择的生物的先攻掷骰获得等于你智力调整值的加值。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-silver-blue.webp"
+		},
+		{
+			"ENG_name": "Valiant Leader",
+			"name": "英勇领袖",
+			"source": "LLAW",
+			"page": 3,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 7,
+			"entries": [
+				"你的技艺已在战争的熔炉中千锤百炼。从7级开始，你的领袖风格给予你进一步的益处：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refClassFeature",
+							"classFeature": "统领|督军|LLAW|7"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "导师|督军|LLAW|7"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "战略家|督军|LLAW|7"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-silver-blue.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 8,
+			"entries": [
+				"当你到达8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Rallying Cry",
+			"name": "重整姿态",
+			"source": "LLAW",
+			"page": 4,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 9,
+			"entries": [
+				"你集结盟友，在它们本可能失败之处赢得成功。从9级开始，当30尺内另一个能听见你的生物豁免检定失败时，你可以用你的反应为它打气。该生物重新进行该豁免检定，并将你的领袖调整值加到新结果上。",
+				"你每次短休或长休可以使用一次此反应。13级时你获得第二次使用次数，17级时获得第三次。"
+			],
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp"
+		},
+		{
+			"ENG_name": "Unwavering Will",
+			"name": "坚定意志",
+			"source": "LLAW",
+			"page": 4,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 10,
+			"entries": [
+				"你无权沉溺于卑劣的本能。从10级开始，你在抵抗{@condition 魅惑}、{@condition 恐慌}或{@condition 震慑}状态的豁免检定上具有优势。"
+			],
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"ENG_name": "Tactical Superiority",
+			"name": "战术卓越",
+			"source": "LLAW",
+			"page": 4,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 11,
+			"entries": [
+				"你是传奇级的领袖。从11级开始，你掷先攻时恢复一次已耗用的鼓舞之词和重整姿态的使用次数。此外，你的战术战技、鼓舞之词和重整姿态的范围加倍。"
+			],
+			"foundryImg": "icons/sundries/books/book-tooled-gold-purple.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 12,
+			"entries": [
+				"当你到达12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Academy Feature",
+			"name": "学院特性",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 14,
+			"entries": [
+				"14级时，你获得由你的战争学院给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Captain",
+			"name": "统领",
+			"source": "LLAW",
+			"page": 4,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 15,
+			"header": 3,
+			"entries": [
+				"被你的鼓舞之词、重整姿态或战术战技指定的生物获得等于你魅力调整值的临时生命值。不过这些临时生命值只持续1分钟。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-gold-red.webp"
+		},
+		{
+			"ENG_name": "Exalted Leader",
+			"name": "升华领袖",
+			"source": "LLAW",
+			"page": 4,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 15,
+			"entries": [
+				"即使身处绝境，你也是毫不退缩的领袖。15级时，你的领袖风格给予你以下益处：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refClassFeature",
+							"classFeature": "统领|督军|LLAW|15"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "导师|督军|LLAW|15"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "战略家|督军|LLAW|15"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-gold-red.webp"
+		},
+		{
+			"ENG_name": "Mentor",
+			"name": "导师",
+			"source": "LLAW",
+			"page": 4,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 15,
+			"header": 3,
+			"entries": [
+				"你的鼓舞之词可以改为结束目标的以下一种状态，而非为其恢复生命值：{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 中毒}或{@condition 震慑}。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-gold-red.webp"
+		},
+		{
+			"ENG_name": "Strategist",
+			"name": "战略家",
+			"source": "LLAW",
+			"page": 4,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 15,
+			"header": 3,
+			"entries": [
+				"当你使用鼓舞之词时，目标可以选择移动至多等于其速度的距离，而不引发{@action 借机攻击||借机攻击}。"
+			],
+			"foundryImg": "icons/commodities/treasure/medal-ribbon-gold-red.webp"
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 16,
+			"entries": [
+				"当你到达16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Academy Feature",
+			"name": "学院特性",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 18,
+			"entries": [
+				"18级时，你获得由你的战争学院给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 19,
+			"entries": [
+				"当你到达19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，使用此特性不能将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Dauntless",
+			"name": "无畏",
+			"source": "LLAW",
+			"page": 4,
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 20,
+			"entries": [
+				"你足以与传奇中的伟大统帅和征服者比肩。20级时，你可以无限次使用重整姿态。此外，每当你使用鼓舞之词时，恢复的生命值视为最大可能结果。"
+			],
+			"foundryImg": "icons/commodities/treasure/crown-gold-satin-gems-red.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"ENG_name": "Captain",
+			"name": "统领",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"effects": [
+				{
+					"ENG_name": "Captain Leadership",
+					"name": "统领领导力",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.leadership.mod",
+							"mode": "UPGRADE",
+							"value": "@abilities.cha.mod"
+						},
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + @abilities.cha.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Inspiring Word",
+			"name": "鼓舞之词",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "@scale.warlord.inspiring-word"
+			},
+			"activities": [
+				{
+					"ENG_name": "Heal",
+					"activation.type": "bonus",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "治疗",
+					"type": "heal",
+					"range": {
+						"value": "30 * @scale.warlord.tactical-superiority",
+						"units": "ft"
+					},
+					"healing": {
+						"bonus": "@flags.ll.leadership.mod",
+						"types": [
+							"healing"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Mentor",
+			"name": "导师",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当范围内另一个能听见你的生物攻击失手或属性检定失败时"
+					},
+					"range": {
+						"value": "15 * floor((@classes.warlord.levels + 21) / 14)",
+						"units": "ft"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "1d4"
+					}
+				},
+				{
+					"ENG_name": "Use (Exploit Die)",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Exploit Dice",
+									"name": "战技骰"
+								}
+							},
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "使用（战技骰）",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当30尺内另一个能听见你的生物攻击失手或属性检定失败时"
+					},
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "d@flags.ll.exploit.faces"
+					},
+					"visibility": {
+						"level.min": 7,
+						"identifier": "warlord"
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Mentor Leadership",
+					"name": "导师领导力",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.leadership.mod",
+							"mode": "UPGRADE",
+							"value": "@abilities.wis.mod"
+						},
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + @abilities.wis.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Strategist",
+			"name": "战略家",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 1,
+			"effects": [
+				{
+					"ENG_name": "Strategist Leadership",
+					"name": "战略家领导力",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.leadership.mod",
+							"mode": "UPGRADE",
+							"value": "@abilities.int.mod"
+						},
+						{
+							"key": "flags.ll.exploit.dc",
+							"mode": "UPGRADE",
+							"value": "8 + @prof + @abilities.int.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Exploit Dice",
+			"name": "战技骰",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 2,
+			"system": {
+				"uses.max": "@flags.ll.exploit.number"
+			},
+			"activities": [
+				{
+					"ENG_name": "Roll",
+					"activation.type": "",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"roll.formula": "d@flags.ll.exploit.faces",
+					"name": "掷骰",
+					"type": "utility"
+				}
+			]
+		},
+		{
+			"ENG_name": "Tactical Exploits",
+			"name": "战术战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 2,
+			"effects": [
+				{
+					"ENG_name": "Warlord Exploits",
+					"name": "督军战技",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "UPGRADE",
+							"value": "@scale.warlord.exploit.number"
+						},
+						{
+							"key": "flags.ll.exploit.faces",
+							"mode": "UPGRADE",
+							"value": "@scale.warlord.exploit.faces"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tactical Skill",
+			"name": "战术技巧",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 2,
+			"activities": [
+				{
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"ENG_name": "Exploit Dice",
+										"name": "战技骰"
+									}
+								}
+							}
+						]
+					},
+					"roll": {
+						"ENG_name": "Exploit Die",
+						"formula": "d@flags.ll.exploit.faces",
+						"name": "战技骰",
+						"visible": true
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Strategist",
+			"name": "战略家",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 7,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"activation.type": "",
+					"target.affects.type": "creature",
+					"name": "使用",
+					"type": "utility",
+					"range": {
+						"value": 15,
+						"units": "ft"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "@abilities.int.mod"
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Initiative Bonus",
+					"name": "先攻加值",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.init.bonus",
+							"mode": "ADD",
+							"value": "@abilities.int.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Rallying Cry",
+			"name": "重整姿态",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 9,
+			"system": {
+				"uses": {
+					"max": "@scale.warlord.rallying-cry",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当30尺内另一个能听见你的生物豁免检定失败时"
+					},
+					"range": {
+						"value": "30 * @scale.warlord.tactical-superiority",
+						"units": "ft"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "@flags.ll.leadership.mod"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Tactical Superiority",
+			"name": "战术卓越",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 11,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"activation.type": "encounter",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": -1
+						},
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Rallying Cry",
+									"name": "重整姿态"
+								}
+							},
+							"value": -1
+						}
+					],
+					"name": "使用",
+					"type": "utility"
+				}
+			]
+		},
+		{
+			"ENG_name": "Captain",
+			"name": "统领",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"level": 15,
+			"activities": [
+				{
+					"ENG_name": "Heal",
+					"activation.type": "special",
+					"name": "治疗",
+					"type": "heal",
+					"duration": {
+						"value": 1,
+						"units": "minute"
+					},
+					"healing": {
+						"bonus": "@abilities.cha.mod",
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Academy of Chivalry",
+			"name": "骑士道学院",
+			"source": "LLAW",
+			"page": 8,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"选择骑士道学院的督军往往出身贵族阶层，而且几乎无一例外是正式受封的骑士。作为领袖，他们以崇高的行为准则要求自己和追随者。无论在战场内外，这些骑士都是公平竞赛、荣誉与正义的灯塔。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "骑士道战技|督军|LLAW|骑士道|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "鼓舞呐喊|督军|LLAW|骑士道|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "骑士身份|督军|LLAW|骑士道|LLAW|3|LLAW"
+				}
+			]
+		},
+		{
+			"ENG_name": "Chivalric Exploits",
+			"name": "骑士道战技",
+			"source": "LLAW",
+			"page": 8,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 攻击号令|LLExploits}、{@optfeature 嘲讽打击|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 坚守战线|LLExploits}、{@optfeature 复原号令|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 舍身救援|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "攻击号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "嘲讽打击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Inspiring Shout",
+			"name": "鼓舞呐喊",
+			"source": "LLAW",
+			"page": 8,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在战场上的存在能激励并肩作战的伙伴。当你掷先攻时，你可以消耗一次鼓舞之词的使用次数，选择30尺内数量等于你领袖调整值的能听见你的生物，它们获得等于你的战技骰＋你的领袖调整值的临时生命值。"
+			],
+			"foundryImg": "icons/creatures/mammals/unicorn-horned-white.webp"
+		},
+		{
+			"ENG_name": "Knighthood",
+			"name": "骑士身份",
+			"source": "LLAW",
+			"page": 8,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"history",
+							"performance",
+							"religion"
+						]
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"martial": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyMusicalInstrument": 1
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你受过骑士传统技艺的训练。你获得所有军用武器、一种乐器的熟练项，并从{@skill 历史}、{@skill 表演}或{@skill 宗教}中选择其一获得熟练项。"
+			],
+			"foundryImg": "icons/equipment/head/greathelm-slotted-steel.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "坚守战线|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "复原号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Lead the Charge",
+			"name": "领军冲锋",
+			"source": "LLAW",
+			"page": 8,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你最擅长在前线领导。当你在自己的回合采取{@action 攻击}动作并进行至少一次近战攻击时，你可以在该回合用附赠动作发出一道{@optfeature 攻击号令|LLExploits}。"
+			],
+			"foundryImg": "icons/environment/people/charge.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "舍身救援|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Flames of Hope",
+			"name": "希望之焰",
+			"source": "LLAW",
+			"page": 8,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"每次短休或长休之间你可以使用一次动作，发出点燃盟友之心、令敌人胆寒的英勇呐喊。30尺内能听见你的生物获得下述对应效果：",
+				{
+					"ENG_name": "Allies",
+					"type": "entries",
+					"name": "盟友",
+					"entries": [
+						"友好生物获得等于你的战技骰＋你的领袖调整值的临时生命值。这些临时生命值持续期间，该生物不会{@condition 魅惑}也不会{@condition 恐慌}。"
+					]
+				},
+				{
+					"ENG_name": "Enemies",
+					"type": "entries",
+					"name": "敌人",
+					"entries": [
+						"敌对生物必须进行一次感知豁免检定，否则对你{@condition 恐慌}。它们在每个自己的回合结束时以及受到伤害时重复该豁免检定，成功则结束此效果。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/fire/elemental-creature-horse.webp"
+		},
+		{
+			"ENG_name": "Paragon of Chivalry",
+			"name": "骑士道典范",
+			"source": "LLAW",
+			"page": 8,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"conditionImmune": [
+				"frightened",
+				"charmed"
+			],
+			"header": 2,
+			"entries": [
+				"你是骑士美德的典范，是追随者们的闪耀灯塔。你免疫{@condition 恐慌}和{@condition 魅惑}状态，且30尺内你所选的、能看见你的生物在抵抗或结束魅惑和恐慌状态的豁免检定上具有优势。"
+			],
+			"foundryImg": "icons/magic/symbols/fleur-de-lis-yellow.webp"
+		},
+		{
+			"ENG_name": "Academy of Dread",
+			"name": "恐惧学院",
+			"source": "LLAW",
+			"page": 9,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"entries": [
+				"大多数督军对追随自己的人怀有感激与关怀，而被称为恐惧领主者只在乎一件事\u2014\u2014胜利。这些冷酷的队长会利用一切可乘之机，常常以敌人最深的恐惧对付他们，以此扭转战局。这些黑暗队长经常统领兽人与亡灵的大军。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "黑暗统领|督军|LLAW|恐惧|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "恐惧战技|督军|LLAW|恐惧|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "恐惧威仪|督军|LLAW|恐惧|LLAW|3|LLAW"
+				}
+			]
+		},
+		{
+			"ENG_name": "Dark Captain",
+			"name": "黑暗统领",
+			"source": "LLAW",
+			"page": 9,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"martial": true
+				}
+			],
+			"entries": [
+				"你散发着威慑的气场，除最坚定的战士外，无不为之心神震颤。你获得所有军用武器和{@skill 威吓}的熟练项。",
+				"此外，每当你进行威吓检定时，你可以用领袖属性代替魅力。此时，d20掷出7或更低时视为8。"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-evil-horned-giant.webp"
+		},
+		{
+			"ENG_name": "Dread Exploits",
+			"name": "恐惧战技",
+			"source": "LLAW",
+			"page": 9,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 攻击号令|LLExploits}、{@optfeature 庄严存形|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 威吓号令|LLExploits}、{@optfeature 威吓怒吼|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 战争呐喊|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "攻击号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "庄严存形|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Dread Presence",
+			"name": "恐惧威仪",
+			"source": "LLAW",
+			"page": 9,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"entries": [
+				"你在战场上的存在会唤起敌人心中的恐惧。你可以用附赠动作消耗一次鼓舞之词的使用次数，强制30尺内一个能看见你的生物进行一次感知豁免检定。豁免失败则它对你{@condition 恐慌}1分钟。如果这个恐慌生物看见你受到伤害，此效果结束。",
+				"如果该生物逃走并脱离你的视线，它可以用它的动作自动结束此效果。"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-glow.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "威吓号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "威吓怒吼|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Merciless",
+			"name": "残酷",
+			"source": "LLAW",
+			"page": 9,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"entries": [
+				"你以可畏的意志灌注你的号令。你可以使用{@optfeature 威吓号令|LLExploits}和{@optfeature 威吓怒吼|LLExploits}而不消耗战技骰，次数等于你的领袖调整值（至少一次），完成一次长休后你恢复所有已耗用的次数。",
+				"此外，每回合一次，当你使一个生物{@condition 恐慌}时，你可以立即发出一道{@optfeature 攻击号令|LLExploits}。"
+			],
+			"foundryImg": "icons/skills/targeting/crosshair-triple-strike-orange.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "战争呐喊|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Ruthless Command",
+			"name": "无情号令",
+			"source": "LLAW",
+			"page": 9,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"entries": [
+				"你在战场上散布恐惧与荒芜。被你的鼓舞之词或战术战技指定的生物，在它的下一个回合结束前，对{@condition 恐慌}生物的所有攻击掷骰具有优势。",
+				"此外，当你使用恐惧威仪时，如果自你的上个回合结束以来，你或某个受你战技效果影响的生物曾以攻击命中过该生物，则它初次感知豁免检定具有劣势。"
+			],
+			"foundryImg": "icons/magic/death/skull-fire-white-yellow.webp"
+		},
+		{
+			"ENG_name": "Baleful Presence",
+			"name": "凶厄威仪",
+			"source": "LLAW",
+			"page": 9,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"entries": [
+				"你是行走的恐惧化身。当你强制30尺内的一个生物进行豁免检定以抵抗{@condition 恐慌}时，它的掷骰具有劣势。",
+				"此外，30尺内对你恐慌的生物只要能看见你，其速度就降为0。"
+			],
+			"foundryImg": "icons/magic/death/skull-flames-white-blue.webp"
+		},
+		{
+			"ENG_name": "Dreadlord",
+			"name": "恐惧领主",
+			"source": "LLAW",
+			"page": 9,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"conditionImmune": [
+				"frightened"
+			],
+			"entries": [
+				"你如一座阴森的纪念碑，矗立于所有试图阻挡你铁血征服却终告失败之人面前。你免疫{@condition 恐慌}状态，且你对恐惧你的生物进行攻击掷骰时，加上你的领袖调整值（至少+1）。"
+			],
+			"foundryImg": "icons/creatures/magical/construct-gargoyle-stone-gray.webp"
+		},
+		{
+			"ENG_name": "Academy of Ferocity",
+			"name": "凶猛学院",
+			"source": "LLAW",
+			"page": 10,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"出身此学院的督军很少在正规军校求学。他们的战略不以军事理论为基础，而是植根于掠食猎手的本能。这些领袖以对敌人的残酷手段著称，他们会毫不犹豫地为兽群中的任何一员献出生命。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "凶猛战技|督军|LLAW|凶猛|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "兽群领袖|督军|LLAW|凶猛|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "掠食本能|督军|LLAW|凶猛|LLAW|3|LLAW"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ferocious Exploits",
+			"name": "凶猛战技",
+			"source": "LLAW",
+			"page": 10,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 佯攻|LLExploits}、{@optfeature 机动号令|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 暴力渐强|LLExploits}、{@optfeature 狂野冲锋|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 集群战术|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "佯攻|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "机动号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Packleader",
+			"name": "兽群领袖",
+			"source": "LLAW",
+			"page": 10,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你带领兽群狩猎。你可以用附赠动作将30尺内一个你能看见的生物标记为你的猎物。它作为你的猎物持续1分钟，但如果猎物生命值降至0、你{@condition 失能}，或你将另一个生物标记为猎物，此效果提前结束。",
+				"任何被你的鼓舞之词或战术战技指定的生物，在你的下个回合开始前对猎物的第一次攻击掷骰加上你的战技骰。",
+				"你可以标记猎物的次数等于你的领袖调整值（至少一次）。完成一次短休恢复一次已耗用的次数，完成一次长休恢复全部已耗用的次数。"
+			],
+			"foundryImg": "icons/skills/targeting/crosshair-pointed-orange.webp"
+		},
+		{
+			"ENG_name": "Predatory Instinct",
+			"name": "掠食本能",
+			"source": "LLAW",
+			"page": 10,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"perception",
+							"survival"
+						]
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"martial": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你如野生掠食者般狩猎。你获得军用武器的熟练项，并从{@skill 察觉}或{@skill 求生}中选择其一获得熟练项。",
+				"此外，每当你进行基于嗅觉或听觉的察觉或求生检定时，d20掷出7或更低时视为8。"
+			],
+			"foundryImg": "icons/creatures/abilities/paw-print-orange.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "暴力渐强|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "狂野冲锋|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Silent Stalker",
+			"name": "静默猎手",
+			"source": "LLAW",
+			"page": 10,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你指挥兽群无声狩猎。你和你30尺内选择的生物在{@skill 隐匿}检定上具有优势，并且可以以正常速度旅行而不失隐匿。",
+				"此外，只要你已将一个生物标记为猎物，你就可以用附赠动作发出一道{@optfeature 机动号令|LLExploits}。"
+			],
+			"foundryImg": "icons/magic/nature/stealth-hide-beast-eyes-green.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "集群战术|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Thrill of the Hunt",
+			"name": "狩猎狂热",
+			"source": "LLAW",
+			"page": 10,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"成功的狩猎点燃你的嗜血之心。当你的猎物被杀死时，你可以用你的反应标记范围内另一个生物，然后获得以下一项益处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得等于你督军等级的临时生命值。",
+						"你恢复一次已耗用的鼓舞之词使用次数。",
+						"你恢复一枚已消耗的战技骰。"
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/rabbit-movement-glowing-green.webp"
+		},
+		{
+			"ENG_name": "Apex Predator",
+			"name": "顶级掠食者",
+			"source": "LLAW",
+			"page": 10,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的原始凶性令兽群同伴焕发活力。你的速度增加10尺，且你对猎物的武器攻击造成等于你战技骰的额外伤害。",
+				"此外，任何被你的鼓舞之词、重整姿态或某个战术战技指定的生物，在你的下个回合开始前同样获得上述益处。"
+			],
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp"
+		},
+		{
+			"ENG_name": "Academy of Gallantry",
+			"name": "英武学院",
+			"source": "LLAW",
+			"page": 11,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"entries": [
+				"英武学院的督军有时被称为斯考德，他们将音乐、战略与魔法的技艺融为一体，激励盟友、困扰敌人。凭借一种强化领导才能的独特吟游魔法，英武督军甚至能把一支不谙战阵的乌合之众变成致命的战斗力量。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "英武战技|督军|LLAW|英武|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "英武施法|督军|LLAW|英武|LLAW|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战地诗人|督军|LLAW|英武|LLAW|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Gallant Spellcasting",
+			"name": "英武施法",
+			"source": "LLAW",
+			"page": 11,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"entries": [
+				"你在诗歌与音乐上的天赋使你能够施展法术，正如吟游诗人那样。你获得以下益处：",
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"英武施法表格展示了你可用于施展1环及更高环阶法术的法术位数量。施展一个法术时，你必须消耗一个不低于该法术环阶的法术位。完成一次长休后，你恢复所有已消耗的法术位。例如，如果你已习得{@spell 雷鸣波}法术并持有一个1环和一个2环法术位，你可以用其中任意一个法术位施展雷鸣波。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st-Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"你从下页的{@filter 英武法术列表|spells|subclass=督军: 英武 (LLAW)}中选择三个1环法术作为已知法术。英武施法表格的\"已知法术\"一栏展示了你何时从这份1环及以上的列表中习得更多法术。你习得的任何法术都必须是表格所示你拥有对应法术位的环阶。",
+						"当你获得等级时，你可以将一个已知法术替换为英武法术列表中的另一个法术。该法术也必须是你拥有对应法术位的环阶。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"type": "entries",
+					"name": "法器",
+					"entries": [
+						"你可以使用任意你熟练的乐器作为你法术的施法法器。英武督军以单手持号角之类的单手乐器、另一手持武器的形象闻名。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"对于你通过此特性习得的任何英武法术，设定豁免DC或进行法术攻击掷骰时使用你的领袖调整值：",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"你的领袖调整值"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"你的领袖调整值"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Warrior Poet",
+			"name": "战地诗人",
+			"source": "LLAW",
+			"page": 11,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"performance": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyMusicalInstrument": 2
+				}
+			],
+			"entries": [
+				"你将武艺与音乐天赋相结合以激励盟友。你获得两种自选乐器的熟练项，并获得{@skill 表演}的熟练项。",
+				"此外，每当你进行同时涉及一件武器和一件乐器的表演检定时，你的掷骰获得等于你督军等级的加值。"
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-bound-tan-leather.webp"
+		},
+		{
+			"ENG_name": "Gallant Exploits",
+			"name": "英武战技",
+			"source": "LLAW",
+			"page": 11,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 攻击号令|LLExploits}、{@optfeature 坚定号令|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 激发号令|LLExploits}、{@optfeature 英勇意志|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 扶起倒下者|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "攻击号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "坚定号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "激发号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "英勇意志|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Heroic Charge",
+			"name": "英勇冲锋",
+			"source": "LLAW",
+			"page": 12,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你掷先攻时，你可以消耗一次鼓舞之词的使用次数来集结一次英勇冲锋。你以及15尺内你选择的任何能听见你的生物，在战斗中你的第一个回合内获得{@action 疾走}动作的效益。如果你{@status 突袭}或{@condition 失能}，则无法使用此特性。",
+				"11级时，此特性的范围增加到30尺。"
+			],
+			"foundryImg": "icons/tools/instruments/horn-flared-wood.webp"
+		},
+		{
+			"ENG_name": "Songs of War & Peace",
+			"name": "战争与和平之歌",
+			"source": "LLAW",
+			"page": 12,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你如指挥一部宏大的交响乐般统领战斗。当你作为动作的一部分消耗一个法术位或一枚战技骰时，你可以在该回合用附赠动作进行一次武器攻击。",
+				"此外，任何与你共度一次短休的生物，为恢复生命值而掷生命骰时具有优势。"
+			],
+			"foundryImg": "icons/tools/instruments/harp-lap-brown.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "扶起倒下者|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Warsong",
+			"name": "战歌",
+			"source": "LLAW",
+			"page": 12,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"相传传奇中的斯考德能够扭转最绝望的战局。每当你用鼓舞之词或战术战技指定一个生物时，它在你的下个回合开始前的第一次属性检定、攻击掷骰或豁免检定上具有优势。",
+				"在此期间它也不会{@condition 魅惑}或{@condition 恐慌}。"
+			],
+			"foundryImg": "icons/tools/instruments/drum-brown-red.webp"
+		},
+		{
+			"ENG_name": "Mythic Voice",
+			"name": "神话之声",
+			"source": "LLAW",
+			"page": 12,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你的嗓音本身已浸染你所引导的强大魔法。每当你施展一个1环英武法术时，你可以选择消耗一次鼓舞之词的使用次数来代替法术位。你必须用一件乐器作为该法术的施法法器。"
+			],
+			"foundryImg": "icons/tools/instruments/rattle-gourd-glowing-teal.webp"
+		},
+		{
+			"ENG_name": "Academy of Schemes",
+			"name": "阴谋学院",
+			"source": "LLAW",
+			"page": 13,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"阴谋学院的督军会不惜一切代价确保胜利。他们是彻底的功利主义者，不在乎如何达成目标。欺骗、蒙蔽、牺牲\u2014\u2014只要能成功，一切在所不惜。一旦事有不济，这些督军总备有脱身之计。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "卑鄙手段|督军|LLAW|阴谋|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "阴险才能|督军|LLAW|阴谋|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "阴谋战技|督军|LLAW|阴谋|LLAW|3|LLAW"
+				},
+				{
+					"ENG_name": "Scheming Adventurers",
+					"type": "inset",
+					"name": "诡谋冒险者",
+					"entries": [
+						"扮演一个道德与动机存疑的角色（比如阴谋学院的督军）时，重要的是记住D&D是一款讲究团队协作的游戏。",
+						"诡谋大师会利用手头的一切优势，包括盟友的能力。请务必让你的阴谋督军的任何计划都把其他玩家囊括进来。记住，没有可供指挥的盟友，督军将一事无成！"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cheap Shot",
+			"name": "卑鄙手段",
+			"source": "LLAW",
+			"page": 13,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"为锁定胜局，你不惮使用不光明的手段。每回合一次，当你以武器攻击命中一个生物时，你可以强制它随伤害一起进行一次敏捷豁免检定。",
+				"豁免失败则它无法进行反应，且速度减半直到你的下个回合开始。在它的下一个回合，它只能采取一个动作或一个附赠动作，不能两者皆取。"
+			],
+			"foundryImg": "icons/skills/wounds/injury-pain-impaled-hand-blood.webp"
+		},
+		{
+			"ENG_name": "Dastardly Talents",
+			"name": "阴险才能",
+			"source": "LLAW",
+			"page": 13,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"deception": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true,
+					"poisoner's kit": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"为实现目标你不择手段。你获得{@skill 欺瞒}的熟练项，以及{@item 易容工具|PHB|易容工具}和{@item 毒药工具|PHB|毒药工具}的熟练项。你进行欺瞒检定时，还可以用领袖属性代替魅力。"
+			],
+			"foundryImg": "icons/tools/scribal/ink-quill-red.webp"
+		},
+		{
+			"ENG_name": "Scheming Exploits",
+			"name": "阴谋战技",
+			"source": "LLAW",
+			"page": 13,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 佯攻|LLExploits}、{@optfeature 机动号令|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 暴露打击|LLExploits}、{@optfeature 洞悉号令|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 凶险奇招|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "佯攻|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "机动号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "暴露打击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "洞悉号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Ruthless Focus",
+			"name": "无情专注",
+			"source": "LLAW",
+			"page": 13,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你指挥盟友捕食弱者。当一个生物对抗你的卑鄙手段的豁免检定失败时，你可以立即发出一道{@optfeature 洞悉号令|LLExploits}，但只有当该生物攻击你卑鄙手段的目标时，它才能获得你洞悉号令的益处。",
+				"此外，如果你作为动作的一部分使用了一个战术战技，你可以用附赠动作采取{@action 撤离}或{@action 躲藏}动作。"
+			],
+			"foundryImg": "icons/skills/targeting/target-strike-triple-blue.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "凶险奇招|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Devious Tactics",
+			"name": "狡诈战术",
+			"source": "LLAW",
+			"page": 13,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你把他人置于险地毫无心理负担。当你能看见的一个生物以攻击指定你，或强制你进行豁免检定时，你可以用你的反应强制你5尺内的一个生物（攻击者除外）进行一次敏捷豁免检定。",
+				"豁免失败则你们交换位置，由它成为那次攻击或豁免检定的目标。该生物可以选择豁免失败。"
+			],
+			"foundryImg": "icons/creatures/mammals/cat-hunched-glowing-red.webp"
+		},
+		{
+			"ENG_name": "Inscrutable Mind",
+			"name": "莫测之心",
+			"source": "LLAW",
+			"page": 13,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你诡诈的心智无法被窥破。除非你允许，魔法无法读取你的思想与梦境。如果有生物试图读取你的心灵，你可以进行一次{@skill 欺瞒}检定，以虚假的念头欺骗它。"
+			],
+			"foundryImg": "icons/creatures/mammals/elk-moose-marked-green.webp"
+		},
+		{
+			"ENG_name": "Marked for Death",
+			"name": "终亡印记",
+			"source": "LLAW",
+			"page": 13,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你对敌人的毁灭穷追不舍。当一个生物对抗卑鄙手段的豁免检定失败时，你可以选择将它标记为待死。在你的下个回合开始前，命中该生物的第一次攻击成为自动的重击。",
+				"一旦你标记了一个生物为待死，你必须完成一次短休或长休才能再次使用此特性。"
+			],
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp"
+		},
+		{
+			"ENG_name": "Advanced Tactics",
+			"name": "进阶战术",
+			"source": "LLAW",
+			"page": 14,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"entries": [
+				"你在战斗中学习并执行战略的能力超越大多数其他指挥官，甚至胜过受过正规训练的督军。你的督军特性获得以下益处：",
+				{
+					"ENG_name": "Exploits",
+					"type": "entries",
+					"name": "战技",
+					"entries": [
+						"你额外习得两个自选的一阶{@filter 战术战技|optionalfeatures|feature type=LL:TE}。这些战技不计入你的已知战技数，但可以替换。",
+						"你在特定等级按同样规则习得额外的战术战技：5级时习得两个二阶战技，9级时习得一个三阶战技。"
+					]
+				},
+				{
+					"ENG_name": "Exploit Dice",
+					"type": "entries",
+					"name": "战技骰",
+					"entries": [
+						"你的战技骰总数增加1枚，且你所有的战技骰增大为{@dice d6}。",
+						"在特定督军等级你的战技骰再次增大：5级（{@dice d8}）、11级（{@dice d10}）和17级（{@dice d12}）。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Academy of Tactics",
+			"name": "战术学院",
+			"source": "LLAW",
+			"page": 14,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"此学院的督军大多出身于服务于精英阶层的正规组织。战术家是受过高等教育的指挥官，以对追随者的尽责著称。他们深谙如何最大限度发挥每位盟友的长处、规避短处，这使其在战场上成为格外致命的对手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "进阶战术|督军|LLAW|战术|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战争艺术|督军|LLAW|战术|LLAW|3|LLAW"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战略调整|督军|LLAW|战术|LLAW|3|LLAW"
+				}
+			]
+		},
+		{
+			"ENG_name": "Strategic Adjustments",
+			"name": "战略调整",
+			"source": "LLAW",
+			"page": 14,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你不断调整以应对任何挑战。在一次长休期间，你可以花费1小时检视战略与战术，将一个已知战术战技替换为同一位阶的另一个战技。",
+				"当你在此职业到达6级时，你可以在短休期间使用此特性。"
+			],
+			"foundryImg": "icons/magic/time/arrows-circling-green.webp"
+		},
+		{
+			"ENG_name": "The Art of War",
+			"name": "战争艺术",
+			"source": "LLAW",
+			"page": 14,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"expertise": [
+				{
+					"history": true,
+					"gaming set": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你研习过伟大的战争与战斗史。你获得{@skill 历史}和两种自选赌具的熟练项，并且任何使用这些熟练项的属性检定都加上双倍的熟练加值。"
+			],
+			"foundryImg": "icons/sundries/books/book-worn-blue.webp"
+		},
+		{
+			"ENG_name": "Brains over Brawn",
+			"name": "智胜于力",
+			"source": "LLAW",
+			"page": 14,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你如其他武者挥舞武器般运用你的战友。如果你将整个动作全部用于战术战技，你可以用附赠动作采取{@action 撤离}或{@action 搜索}动作，或使用一个号令类战技，例如{@optfeature 攻击号令|LLExploits}。"
+			],
+			"foundryImg": "icons/commodities/biological/organ-brain-pink.webp"
+		},
+		{
+			"ENG_name": "Know Your Enemy",
+			"name": "料敌机先",
+			"source": "LLAW",
+			"page": 14,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你天生擅长发现弱点。当你采取{@action 搜索}动作时，你可以专注于30尺内一个你能看见的生物（DC = 8 + 其挑战等级）。如果你曾见过它被攻击命中，此掷骰加上你的督军等级。",
+				"成功则你从下表中选择一项特征获知。失败则在你看见它被另一次攻击命中之前，你无法再对它使用此特性：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"护甲等级",
+							"最高属性值"
+						],
+						[
+							"所有特殊感官",
+							"最低属性值"
+						],
+						[
+							"抗性、免疫与易伤",
+							"其数据块中的一项特质或动作"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/biological/eye-lizard-green.webp"
+		},
+		{
+			"ENG_name": "Gifted Strategist",
+			"name": "天赋战略家",
+			"source": "LLAW",
+			"page": 14,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"conditionImmune": [
+				"surprised"
+			],
+			"header": 2,
+			"entries": [
+				"你总是比敌人先行一步。你在清醒时不会{@status 突袭}，且当你掷先攻时，你可以使用一个战术战技或采取{@action 预备}动作。"
+			],
+			"foundryImg": "icons/commodities/tech/bulb-vacuum.webp"
+		},
+		{
+			"ENG_name": "Master Tactician",
+			"name": "大师战术家",
+			"source": "LLAW",
+			"page": 14,
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你为一切可能都备有预案。你习得{@optfeature 应变预案|LLExploits}战技，但它不计入你的已知战技总数。在一次长休结束时，你可以不消耗战技骰使用应变预案来布下预案。同一时间你只能持有一份应变预案。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "应变预案|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/creatures/mammals/bats-movement-flying-black.webp"
+		},
+		{
+			"ENG_name": "Academy of Claws",
+			"name": "利爪学院",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你将战术知识与领导才能用于驯服异种怪物以投入战斗。利爪督军以他们的怪物仆从闻名，他们能以意志支配哪怕最狂野的生物。甚至有人说，其中最强大的督军能让神话中的怪物俯首听命，如同指挥一名普通士兵般驱策它们。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "怪物仆从|督军|LLAW|利爪|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "利爪战技|督军|LLAW|利爪|LLAW:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Claw Exploits",
+			"name": "利爪战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 攻击号令|LLExploits}、{@optfeature 庄严存形|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 撕裂打击|LLExploits}、{@optfeature 狂野冲锋|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 勘查荒野|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "攻击号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "庄严存形|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Monstrous Minion",
+			"name": "怪物仆从",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你可以施加你强大的意志来支配生物，迫使其作为仆从为你效力，规则如下：",
+				{
+					"ENG_name": "Subjugating a Minion",
+					"type": "entries",
+					"name": "降服仆从",
+					"entries": [
+						"作为一个动作，你强制10尺内一个能听见你的生物进行一次魅力豁免检定。如果该生物对你友好，则豁免自动失败。豁免失败时，该生物成为你的仆从。",
+						"如果该生物豁免成功，它在接下来的24小时内免疫此能力且无法被指定。你同一时间只能拥有一名怪物仆从。"
+					]
+				},
+				{
+					"ENG_name": "Potential Minions",
+					"type": "entries",
+					"name": "潜在仆从",
+					"entries": [
+						"你能支配的生物只受你意志的限制。你只能对挑战等级等于你的督军等级除以3（向下取整）的{@loader 野兽|creature/LaserLlama; Compendium of Beasts.json}或怪兽使用此特性。"
+					]
+				},
+				{
+					"ENG_name": "Minion Statistics",
+					"type": "entries",
+					"name": "仆从数据",
+					"entries": [
+						"你的仆从对你绝对忠诚。它继续使用其原本的数据块，并获得短休与长休的益处。"
+					]
+				},
+				{
+					"ENG_name": "Combat",
+					"type": "entries",
+					"name": "战斗",
+					"entries": [
+						"在战斗中，你的仆从在你的回合行动。它可以自行移动和使用反应，但除非你用附赠动作命令它采取其数据块中的一个动作或其他动作，否则它只会采取{@action 回避}动作。",
+						"如果你{@condition 失能}，你的仆从会回归野性状态，通常会逃回荒野中的家园。"
+					]
+				},
+				{
+					"ENG_name": "Exploits",
+					"type": "entries",
+					"name": "战技",
+					"entries": [
+						"你可以用战技指定你的仆从，且即使它不会说话，它也能理解你。"
+					]
+				},
+				{
+					"ENG_name": "Duration",
+					"type": "entries",
+					"name": "持续时间",
+					"entries": [
+						"生物作为仆从的状态持续到它死亡为止。如果它有1小时看不见也听不见你，或你试图支配另一个生物将其变为你的仆从，它会提前回归野性状态。"
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/tech/bearing-steel-green.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "撕裂打击|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "狂野冲锋|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Iron Command",
+			"name": "钢铁号令",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"每当你的仆从在你15尺内进行攻击掷骰、属性检定或豁免检定时，你可以用你的反应将你的领袖调整值加到它的掷骰结果上。"
+			],
+			"foundryImg": "icons/skills/targeting/crosshair-triple-strike-orange.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "勘查荒野|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Monstrous Menagerie",
+			"name": "怪物兽园",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 14,
+			"entries": [
+				"你强大的意志使你得以驯服可怖的怪物。只要CR在通常的挑战等级规则之内，你可以用怪物仆从指定异怪、巨龙、巨人、软泥怪、植物和亡灵。",
+				"此外，一个生物作为你的仆从至少24小时后，它会无限期地对你保持友好，除非你给它再次对你敌视的理由。"
+			],
+			"foundryImg": "icons/creatures/abilities/dragon-ice-breath-blue.webp"
+		},
+		{
+			"ENG_name": "Total Domination",
+			"name": "完全支配",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 18,
+			"entries": [
+				"你坚定不移的意志使你能完全支配受你控制的生物。钢铁号令的范围为30尺，仆从处于该范围内时，对钝击、穿刺和挥砍伤害具有抗性。"
+			],
+			"foundryImg": "icons/creatures/magical/construct-iron-stomping-yellow.webp"
+		},
+		{
+			"ENG_name": "Academy of Counsel",
+			"name": "顾问学院",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你已从战场习得良多，是时候将这些知识传给下一代英雄了。作为顾问学院的一员，你将毕生奉献于门徒的教育\u2014\u2014这位继承者将在你的训练下，接替你在战场上的位置。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "顾问的门徒|督军|LLAW|顾问|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "顾问战技|督军|LLAW|顾问|LLAW:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Counselor Exploits",
+			"name": "顾问战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 防御号令|LLExploits}、{@optfeature 支援号令|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 洞悉号令|LLExploits}、{@optfeature 抚慰之语|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 遗忘知识|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "防御号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "支援号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Counselor's Protege",
+			"name": "顾问的门徒",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你收下了一名学生，向其传授战争之道\u2014\u2014你的门徒。你决定其外貌、种族和体型（小型或中型）。门徒总是缺乏经验，往往年少，但他们渴望向你学习。你的门徒适用以下规则：",
+				{
+					"ENG_name": "Statistics",
+					"type": "entries",
+					"name": "数据",
+					"entries": [
+						"你的门徒对你和你的盟友友好。他们忠诚无比，竭尽所能服从命令，绝不擅自行动。他们使用下方{@creature 门徒|LLAW:E}的数据块，其中使用你的熟练加值（PB）、领袖调整值和战技豁免DC。"
+					]
+				},
+				{
+					"ENG_name": "Weapons & Armor",
+					"type": "entries",
+					"name": "武器与护甲",
+					"entries": [
+						"你的门徒熟练轻甲、中甲、盾牌和简易武器。他们装备皮甲、盾牌、短弓和匕首，但你可以给予他们其他装备。"
+					]
+				},
+				{
+					"ENG_name": "Combat",
+					"type": "entries",
+					"name": "战斗",
+					"entries": [
+						"在战斗中，你的门徒在你的回合行动。他们可以自行移动和使用反应，但除非你用附赠动作命令他们采取其数据块中的一个动作或其他动作，否则他们只会采取{@action 回避}动作。如果你{@condition 失能}，你的门徒会自行行动，并竭尽全力保护你。"
+					]
+				},
+				{
+					"ENG_name": "Dying",
+					"type": "entries",
+					"name": "濒死",
+					"entries": [
+						"如果你的门徒生命值降至0，他们会像玩家角色一样进行死亡豁免检定。当他们生命值为0时，你可以用你的动作触碰他们并消耗一枚战技骰，立即使其伤势稳定。"
+					]
+				},
+				{
+					"ENG_name": "Recruiting a New Protege",
+					"type": "entries",
+					"name": "招募新门徒",
+					"entries": [
+						"如果你的门徒死亡，只要能找到愿意学习的学生，你可以花费8小时寻找一个值得栽培的类人生物来担任你的新门徒。该类人生物随后使用门徒数据块。"
+					]
+				},
+				{
+					"ENG_name": "Your Protege & Other Features",
+					"type": "entries",
+					"name": "你的门徒与其他特性",
+					"entries": [
+						"你的门徒如同一张白纸，等待你以学识加以教导。若想让门徒更好地体现其血统，可以与你的DM商议，在门徒的数据块中加入种族特性、背景或其他类似特性。",
+						"但任何加诸门徒的额外特性都会增强其力量，应当谨慎行事。"
+					]
+				}
+			],
+			"foundryImg": "icons/environment/people/group.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "洞悉号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "抚慰之语|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Invigorating Orders",
+			"name": "振奋号令",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"你的言语激励门徒做出英勇之举。当你用战技指定你的门徒时，他们在下一次属性检定、攻击掷骰或豁免检定上具有优势。",
+				"你的门徒的技艺精进了。他们获得感知豁免检定、重甲和军用武器的熟练项。"
+			],
+			"foundryImg": "icons/skills/social/peace-luck-insult.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "遗忘知识|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Exalted Protege",
+			"name": "升华门徒",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 14,
+			"entries": [
+				"你的奉献与耐心终有回报。你的门徒已成为独当一面的英雄，现在使用本页的{@creature 升华门徒|LLAW:E}数据块。",
+				"你还习得{@optfeature 英勇号令|LLExploits}战技。它不计入你的已知战技数，且不可替换。每次长休一次，你可以对门徒使用此战技而不计入该战技每次休息一次的使用次数。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "英勇号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/holy/saint-glass-portrait-halo.webp"
+		},
+		{
+			"ENG_name": "Legendary Tandem",
+			"name": "传奇搭档",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 18,
+			"entries": [
+				"你对门徒的了解与门徒对你的理解，使你们在战场上如同拥有同一心智般作战。只要你和门徒彼此处于30尺内，你们双方的豁免检定都具有优势，且你们的攻击掷骰都不会具有劣势。",
+				"最后，你的门徒可以在每次短休或长休之间使用一次其英勇决心特质。20级时，以此特质替换的攻击掷骰成为自动重击。"
+			],
+			"foundryImg": "icons/creatures/mammals/bat-movement-flying-purple.webp"
+		},
+		{
+			"ENG_name": "Academy of Liberty",
+			"name": "自由学院",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"自由学院的督军常是被时势推上领导之位，他们出身平民阶层。当黑暗的暴君开始压迫弱者，当君主加征赋税，或当村庄被侵略者攻陷，领袖们便会挺身而出，带领人民反抗不义。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "协同突击|督军|LLAW|自由|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "自由战技|督军|LLAW|自由|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "社会中坚|督军|LLAW|自由|LLAW:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Coordinated Assault",
+			"name": "协同突击",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"单打独斗你或许构不成威胁，但当你与同志们同心协力时，任何敌人都可被战胜。你在自己的每个回合都可以用附赠动作发出一道{@optfeature 支援号令|LLExploits}。"
+			],
+			"foundryImg": "icons/skills/trades/academics-investigation-puzzles.webp"
+		},
+		{
+			"ENG_name": "Liberty Exploits",
+			"name": "自由战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 急救|LLExploits}、{@optfeature 支援号令|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 复原号令|LLExploits}、{@optfeature 突袭攻击|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 激励演说|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "急救|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "支援号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Salt of the Earth",
+			"name": "社会中坚",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你出身平民阶层，辛勤劳作的一生使你坚韧。你的生命值上限增加3点，且你每获得一个等级再增加1点。",
+				"此外，每当你进行与平民百姓（如农夫、劳工或步卒）打交道的属性检定时，你的掷骰获得等于你战技骰的加值。"
+			],
+			"foundryImg": "icons/consumables/food/salt-seasoning-spice-pink.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "复原号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "突袭攻击|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Band Together",
+			"name": "患难与共",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"势单力薄，众志成城！当你15尺内的一个生物受到伤害时，你可以用你的反应集结盟友到它身旁。你将该生物将要受到的伤害平均分摊给它15尺内愿意参与的生物。所有生物必须能听见你才能参与。"
+			],
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "激励演说|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Strength in Numbers",
+			"name": "人多势众",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 14,
+			"entries": [
+				"你为事业集结的同志越多，你的领导潜能就越强。当你掷先攻时，你恢复若干已消耗的战技骰，数量等于你15尺内盟友生物的数量。",
+				"你还习得{@optfeature 装备民兵|LLExploits}战技。它不计入你的已知战技数，且不可替换。你可以在短休或长休期间使用装备民兵，且每次长休一次，你可以不消耗战技骰使用它。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "装备民兵|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/lights/torch-brown-lit.webp"
+		},
+		{
+			"ENG_name": "Grand Revolutionary",
+			"name": "伟大革命者",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 18,
+			"entries": [
+				"无论你在何处肩负领导重任，都注定要打破现状。患难与共和人多势众的范围扩展到30尺内的生物。",
+				"最后，每当你使用鼓舞之词或重整姿态时，你可以指定范围内至多三个生物而非一个。就重整姿态而言，所有生物必须是同一次豁免检定失败，才能被同一次重整姿态指定。"
+			],
+			"foundryImg": "icons/sundries/flags/banner-standard-tattered-red.webp"
+		},
+		{
+			"ENG_name": "Academy of Navigators",
+			"name": "领航员学院",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你受训于远海之上领导他人，远离既有社会的规则。你运用自己的技艺维持秩序、激励船员在艰难中坚持，并驱策他们探索新知。然而，你的技艺并不局限于甲板之上，在任何战场都能大放异彩。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "领航员战技|督军|LLAW|领航员|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "谈判|督军|LLAW|领航员|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "海员|督军|LLAW|领航员|LLAW:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Navigator Exploits",
+			"name": "领航员战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 机动号令|LLExploits}、{@optfeature 无赖魅惑|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 威吓号令|LLExploits}、{@optfeature 坚韧号令|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 招募佣兵|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "机动号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "无赖魅惑|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Parley",
+			"name": "谈判",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"在海上无处求助既有权威，你练就了精明的谈判本领。作为一个动作，你可以消耗一次鼓舞之词的使用次数，与15尺内一个能看见、听见并理解你的生物交谈，使其对你的态度改善一级。例如，敌对生物变为冷漠，冷漠生物变为友好。",
+				"一旦你对一个生物使用了此特性，它在24小时内免疫其效果。你不能对过去24小时内被你或你的盟友攻击过的生物使用此特性。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp"
+		},
+		{
+			"ENG_name": "Seafarer",
+			"name": "海员",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"navigator's tools": true,
+					"vehicles (water)": true
+				}
+			],
+			"entries": [
+				"你在远海上的经验使你成为一名出色的水手。你获得{@item 领航工具|PHB}、水上载具的熟练项，以及{@skill 察觉}的熟练项。你使用这些技能进行所有属性检定时都运用领袖属性。",
+				"你还获得{@optfeature 水手|LLStyles}战斗风格，且它不可替换。如果你已经习得此战斗风格，则改为学习一种不同的督军战斗风格。"
+			],
+			"foundryImg": "icons/environment/wilderness/island.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "威吓号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "坚韧号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Navigator's Crew",
+			"name": "领航船员",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"你已在陆地与海洋上证明了自己的勇气，说服他人正式加入你的船员。在一次长休期间，你可以与数量等于你领袖调整值的生物缔结契约。生物必须自愿且能理解你，才能缔结此契约。",
+				"这些生物成为你的船员，直到你缔结新契约\u2014\u2014新契约会立即终止之前的所有契约。身处同一艘远洋船只上时，你的船员在与该船相关的所有属性检定上加上你的领袖调整值。"
+			],
+			"foundryImg": "icons/tools/nautical/steering-wheel.webp"
+		},
+		{
+			"ENG_name": "Rally the Crew",
+			"name": "集结船员",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"你的存在能激发船员的最佳状态。每当你的船员在你15尺内被强制进行豁免检定时，如果他们原本并不熟练，则其豁免检定加上熟练加值。",
+				"此外，你在自己的每个回合都可以用附赠动作向你15尺内的一名船员发出一道号令，例如{@optfeature 机动号令|LLExploits}。"
+			],
+			"foundryImg": "icons/tools/navigation/compass-brass-blue-red.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "招募佣兵|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "First Mate",
+			"name": "大副",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 14,
+			"entries": [
+				"就连最卑劣的无赖也会为你所感而效忠。当你使用{@optfeature 招募佣兵|LLExploits}时，你可以将其指定为你的大副。此时你照常恢复战技骰，该佣兵获得海员的益处并成为你的船员，且不计入你的船员总数。你同一时间只能拥有一名大副。",
+				"除了指定佣兵，你也可以指定船员中的另一名成员担任大副。其获得海员的益处，且不计入你的船员总数。"
+			],
+			"foundryImg": "icons/tools/nautical/diving-helmet.webp"
+		},
+		{
+			"ENG_name": "Illustrious Admiral",
+			"name": "显赫上将",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 18,
+			"entries": [
+				"你的技艺足以与传奇中的伟大水手和探险家比肩。集结船员的范围增加到30尺。",
+				"最后，只要你与一个能听见并理解你的生物交谈过，你就可以使其陷入谈判的效果，而无需消耗鼓舞之词的使用次数。"
+			],
+			"foundryImg": "icons/equipment/head/hat-franklin-pirate-blue.webp"
+		},
+		{
+			"ENG_name": "Academy of Order",
+			"name": "秩序学院",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"文明在法治社会的疆界内繁荣昌盛，而你正是这一信念的捍卫者。你将领导才能用于维护法律、执行秩序。你是恶徒的眼中钉，是一切生活在公正法律之下之人的坚盾。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "秩序战技|督军|LLAW|秩序|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "秩序守护者|督军|LLAW|秩序|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "法律之盾|督军|LLAW|秩序|LLAW:E|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Keeper of Order",
+			"name": "秩序守护者",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"insight",
+							"investigation"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你将战术训练用于在文明社会中维护法律与秩序。你从{@skill 洞悉}或{@skill 调查}中选择其一获得熟练项，且每当你使用其中一项技能进行属性检定时，你可以选择运用领袖属性进行该检定。",
+				"此外，当你以非致命近战攻击将一个生物的生命值降至0时，你可以在该回合用附赠动作以{@item 捕网|PHB}、绳索、{@item 镣铐|PHB}或其他类似物品将其束缚。摆脱此束缚的DC等于你的战技豁免DC，除非物品本身的逃脱DC更高。"
+			],
+			"foundryImg": "icons/sundries/survival/cuffs-shackles-steel.webp"
+		},
+		{
+			"ENG_name": "Law's Shield",
+			"name": "法律之盾",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"维护法律、保卫弱者是你的职责。当你能看见的15尺内的一个生物被攻击命中时，你可以用你的反应向它发出一道{@optfeature 防御号令|LLExploits}，使触发此效果的攻击具有劣势，或许能使命中化为失手。",
+				"你可以使用此反应的次数等于你的领袖调整值（至少一次），完成一次长休后恢复所有已耗用的次数。当次数耗尽时，你可以消耗一次鼓舞之词来再次使用它。"
+			],
+			"foundryImg": "icons/skills/melee/shield-block-gray-orange.webp"
+		},
+		{
+			"ENG_name": "Order Exploits",
+			"name": "秩序战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你在下表注明的督军等级习得特定战技。这些战技不计入你的已知战技总数，且获得等级时不可替换：",
+				{
+					"type": "table",
+					"colLabels": [
+						"督军等级",
+						"战技"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"3级",
+							"{@optfeature 防御号令|LLExploits}、{@optfeature 缴械|LLExploits}"
+						],
+						[
+							"5级",
+							"{@optfeature 坚守战线|LLExploits}、{@optfeature 抚慰之语|LLExploits}"
+						],
+						[
+							"9级",
+							"{@optfeature 勘查聚落|LLExploits}"
+						]
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "防御号令|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "缴械|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 5,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "坚守战线|LLExploits"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "抚慰之语|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Halt",
+			"name": "阻拦",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"你的言语带着法律的权威。当你能看见的30尺内的一个生物移动时，你可以用你的反应消耗一次鼓舞之词的使用次数，强制其进行一次感知豁免检定。目标必须能听见并理解你。",
+				"豁免失败则其速度降为0，直到它的下一个回合开始。一旦生物在此豁免检定中成功，它在接下来的24小时内免疫此特性。"
+			],
+			"foundryImg": "icons/magic/control/debuff-energy-snare-blue.webp"
+		},
+		{
+			"ENG_name": "Stalwart Defender",
+			"name": "坚毅防御者",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"你是阻挡无法无天与混乱之潮的坚盾。每次短休或长休一次，你可以使用{@optfeature 坚守战线|LLExploits}而不消耗战技骰。",
+				"使用坚守战线时，其范围为15尺，且你在每个回合都可以用附赠动作发出一道{@optfeature 防御号令|LLExploits}。"
+			],
+			"foundryImg": "icons/environment/people/infantry-army.webp"
+		},
+		{
+			"ENG_name": "Archetype Exploits",
+			"name": "原型战技",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 9,
+			"entries": [
+				"你为你的原型习得额外战技。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "勘查聚落|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/gaming-gambling-dice-gray.webp"
+		},
+		{
+			"ENG_name": "Bastion of Order",
+			"name": "秩序堡垒",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 14,
+			"entries": [
+				"对生活在法律疆界内的人而言，你是一面坚定不移的盾。当你使用{@optfeature 坚守战线|LLExploits}时，你可以使用法律之盾和阻拦的反应，而不消耗两者或鼓舞之词的使用次数。",
+				"此外，你在自己的回合可以移动至多10尺，而不结束坚守战线的效果。"
+			],
+			"foundryImg": "icons/magic/defensive/armor-shield-barrier-steel.webp"
+		},
+		{
+			"ENG_name": "Unerring Eye",
+			"name": "火眼金睛",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 14,
+			"entries": [
+				"你敏锐的目光能洞穿一切欺瞒。你可以自动察觉幻术魔法和变形者的存在，但无法看穿它们伪装之下的真实形态。"
+			],
+			"foundryImg": "icons/magic/perception/eye-slit-orange.webp"
+		},
+		{
+			"ENG_name": "High Authority",
+			"name": "至高权威",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 18,
+			"entries": [
+				"你是法律的最高权威，唯有君主与神明使者能凌驾于你。你始终对你15尺内选择的生物散发着{@optfeature 坚守战线|LLExploits}的效果，但你仍可如常移动和行动。",
+				"最后，当一个生物对抗阻拦的豁免检定失败时，它还会{@condition 束缚}直到它的下一个回合开始。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-pentagon-teal.webp"
+		},
+		{
+			"ENG_name": "Academy of Zeal",
+			"name": "狂热学院",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"你被选中率领你神祇的大军，与邪恶之敌作战。你以战略与信仰并施领导众人，用言语和法术激励战友。你诉诸神授的领导权，必须屹立为信仰的楷模。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "受膏魔法|督军|LLAW|狂热|LLAW:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神圣使命|督军|LLAW|狂热|LLAW:E|3"
+				},
+				{
+					"ENG_name": "Optional Rule: Divine Domain",
+					"type": "inset",
+					"name": "可选规则：神圣领域",
+					"entries": [
+						"与你的DM商议，从牧师可选的神圣领域中为你的督军选择一个。每当你习得狂热法术时，你可以选择改为习得该领域的领域法术列表中的法术。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Anointed Magic",
+			"name": "受膏魔法",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"entries": [
+				"当你加入这所战争学院时，你学会以下列规则以法术的形式呼唤神圣力量：",
+				{
+					"ENG_name": "Cantrip",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从此战争学院描述末尾的{@filter 狂热法术列表|spells|subclass=督军: 狂热 (llaware)}中选择两个戏法，并在10级时习得一个额外的狂热戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"狂热施法表格展示了你拥有多少法术位以及这些法术位的环阶。你从此特性获得的所有法术位环阶相同。要施展一个你已习得的1环及以上的狂热法术，你必须消耗其中一个法术位。每次完成短休或长休后，你恢复所有法术位。",
+						"例如，7级时你拥有两个2环法术位。要施展1环法术{@spell 命令术}，你必须消耗其中一个法术位，而命令术会以2环施放。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st-Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"你从狂热法术列表中选择两个1环法术。此处狂热施法表格的\"已知法术\"一栏展示了你何时习得额外的1环或更高环阶的狂热法术。你选择的法术环阶不得高于表格中你等级对应的\"法术位环阶\"一栏所示。",
+						"当你获得等级时，你可以选择一个已知狂热法术，将其替换为狂热法术列表中的另一个法术，该法术必须是你拥有对应法术位的环阶。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"type": "entries",
+					"name": "法器",
+					"entries": [
+						"你必须以{@item 圣徽|PHB}作为狂热法术的施法法器。如果你将圣徽铭刻在{@item 盾牌|PHB}上，则当你持用该盾牌时，可以以其作为狂热法术的施法法器。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"对于你通过此特性习得的任何狂热法术，设定豁免DC或进行法术攻击掷骰时使用你的领袖调整值：",
+						{
+							"ENG_name": "Spell",
+							"type": "abilityDc",
+							"name": "法术",
+							"attributes": [
+								"你的领袖调整值"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"type": "abilityAttackMod",
+							"name": "法术",
+							"attributes": [
+								"你的领袖调整值"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp"
+		},
+		{
+			"ENG_name": "Divine Mandate",
+			"name": "神圣使命",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"religion": true
+				}
+			],
+			"entries": [
+				"你受神任命，领导他人作战。你习得{@optfeature 攻击号令|LLExploits}战技。它不计入你的已知战技总数，且不可替换。",
+				"你还获得{@skill 宗教}的熟练项。每当你进行宗教检定时，你的掷骰加上你的领袖调整值。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "攻击号令|LLExploits"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/swords/sword-gold-holy.webp"
+		},
+		{
+			"ENG_name": "Anointed Disciple",
+			"name": "受膏弟子",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"作为一个动作，你紧握圣徽并引导神力，使神圣的临在充满自身。持续10分钟，你所有运用领袖属性的属性检定都加上你的战技骰。"
+			],
+			"foundryImg": "icons/magic/holy/saint-glass-portrait-halo.webp"
+		},
+		{
+			"ENG_name": "Mantle of Command",
+			"name": "号令光环",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"entries": [
+				"作为一个动作，高举你的圣徽，让神圣的领导力充满自身，持续1分钟。在此期间，你可以在每个回合用附赠动作进行一次武器攻击，或发出一道号令，例如{@optfeature 攻击号令|LLExploits}。"
+			],
+			"foundryImg": "icons/magic/holy/projectiles-blades-salvo-yellow.webp"
+		},
+		{
+			"ENG_name": "Channel Divinity",
+			"name": "引导神力",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"作为一个动作，你可以高举圣徽，引导你神祇的力量，产生超越法术范畴的效果。当你引导神力时，你产生以下两种效果之一：受膏弟子或号令光环。",
+				"你可以引导神力两次。完成一次短休恢复一次使用次数，完成一次长休恢复全部次数。当次数耗尽时，你可以消耗一个受膏魔法法术位来再次引导神力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "受膏弟子|督军|LLAW|狂热|LLAW:E|6"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "号令光环|督军|LLAW|狂热|LLAW:E|6"
+				}
+			],
+			"foundryImg": "icons/magic/holy/barrier-shield-winged-blue.webp"
+		},
+		{
+			"ENG_name": "Words of Zeal",
+			"name": "狂热之言",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你的嗓音已注入神圣的威权。当你使用鼓舞之词时，目标恢复的生命值取最大值，而非掷其生命骰。",
+				"此外，当你用{@optfeature 攻击号令|LLExploits}指定一个生物时，它可以选择让其在下一回合的武器攻击造成光耀伤害，以代替正常的伤害类型。"
+			],
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+		},
+		{
+			"ENG_name": "Favored Servant",
+			"name": "天眷仆从",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"你已证明对你神祇神圣事业的奉献，并因此得到回报。当你在自己的回合采取{@action 攻击}动作时，你可以以一个施法时间为1动作的狂热法术代替你的一次攻击。",
+				"最后，每当你消耗一个受膏魔法法术位时，你恢复以下一项：等于你等级的生命值、一枚战技骰，或一次鼓舞之词的使用次数。"
+			],
+			"foundryImg": "icons/magic/holy/chalice-glowing-yellow-blue.webp"
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"ENG_name": "Inspiring Shout",
+			"name": "鼓舞呐喊",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Heal",
+					"activation.type": "encounter",
+					"cosnumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": "@flags.ll.leadership.mod",
+						"type": "creature"
+					},
+					"name": "治疗",
+					"type": "heal",
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"healing": {
+						"custom": {
+							"enabled": true,
+							"formula": "d@flags.ll.exploit.faces + @flags.ll.leadership.mod"
+						},
+						"types": [
+							"temphp"
+						]
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Flames of Hope",
+			"name": "希望之焰",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "骑士道",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"system": {
+				"uses": {
+					"max": 1,
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"activities": [
+				{
+					"ENG_name": "Allies",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"target.affects.type": "ally",
+					"name": "盟友",
+					"type": "heal",
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"healing": {
+						"custom": {
+							"enabled": true,
+							"formula": "d@flags.ll.exploit.faces + @flags.ll.leadership.mod"
+						},
+						"types": [
+							"temphp"
+						]
+					}
+				},
+				{
+					"ENG_name": "Enemies",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"target.affects.type": "enemy",
+					"name": "敌人",
+					"type": "save",
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc.formula": "@flags.ll.exploit.dc"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Dark Captain",
+			"name": "黑暗统领",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Intelligence Intimidation & min8",
+					"name": "智力威吓且最低8",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.itm.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						},
+						{
+							"key": "system.skills.itm.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						}
+					]
+				},
+				{
+					"ENG_name": "Wisdom Intimidation & min8",
+					"name": "感知威吓且最低8",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.itm.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						},
+						{
+							"key": "system.skills.itm.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						}
+					]
+				},
+				{
+					"ENG_name": "Charisma Intimidation & min8",
+					"name": "魅力威吓且最低8",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.itm.ability",
+							"mode": "OVERRIDE",
+							"value": "cha"
+						},
+						{
+							"key": "system.skills.itm.roll.min",
+							"mode": "UPGRADE",
+							"value": 8
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Dread Presence",
+			"name": "恐惧威仪",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Save",
+					"activation.type": "bonus",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "豁免",
+					"type": "save",
+					"duration": {
+						"value": 1,
+						"units": "minute"
+					},
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc.formula": "@flags.ll.exploit.dc"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Merciless",
+			"name": "残酷",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"system": {
+				"uses": {
+					"max": "max(1, @flags.ll.leadership.mod)",
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"activation.type": "",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"name": "使用",
+					"type": "utility"
+				}
+			]
+		},
+		{
+			"ENG_name": "Dreadlord",
+			"name": "恐惧领主",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "恐惧",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"activation.type": "",
+					"name": "使用",
+					"type": "utility",
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "max(1, @flags.ll.leadership.mod)"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Packleader",
+			"name": "兽群领袖",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"system": {
+				"uses": {
+					"max": "max(1, @flags.ll.leadership.mod)",
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "formula",
+							"formula": 1
+						},
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Silent Stalker",
+			"name": "静默猎手",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"effects": [
+				{
+					"ENG_name": "Stealth Advantage",
+					"name": "隐匿优势",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ste.roll.mode",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Thrill of the Hunt",
+			"name": "狩猎狂热",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"activities": [
+				{
+					"ENG_name": "Temporary Hit Points",
+					"name": "临时生命值",
+					"type": "heal",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你的猎物被杀死时"
+					},
+					"healing": {
+						"bonus": "@classes.warlord.levels",
+						"types": [
+							"temphp"
+						]
+					}
+				},
+				{
+					"ENG_name": "Regain Inspiring Word",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": -1
+						}
+					],
+					"name": "恢复鼓舞之词",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你的猎物被杀死时"
+					}
+				},
+				{
+					"ENG_name": "Regain Exploit Die",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Exploit Dice",
+									"name": "战技骰"
+								}
+							},
+							"value": -1
+						}
+					],
+					"name": "恢复战技骰",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你的猎物被杀死时"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Apex Predator",
+			"name": "顶级掠食者",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "凶猛",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"activities": [
+				{
+					"ENG_name": "Extra Damage",
+					"activation.type": "",
+					"damage.parts": [
+						{
+							"custom": {
+								"enabled": true,
+								"formula": "d@flags.ll.exploit.faces"
+							}
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature",
+						"special": "你的猎物"
+					},
+					"name": "额外伤害",
+					"type": "damage"
+				},
+				{
+					"ENG_name": "Grant Extra Speed",
+					"activation.type": "",
+					"target.affects": {
+						"count": 1,
+						"type": "creature",
+						"special": "鼓舞之词、重整姿态或你的某个战术战技的目标"
+					},
+					"name": "赋予额外速度",
+					"type": "utility",
+					"effects": [
+						{
+							"foundryId": "LLAWEffectFeAP00"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Increased Speed",
+					"foundryId": "LLAWEffectFeAP00",
+					"name": "速度提升",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": 10
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gallant Spellcasting",
+			"name": "英武施法",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"system": {
+				"uses": {
+					"max": "",
+					"recovery": []
+				}
+			}
+		},
+		{
+			"ENG_name": "Warrior Poet",
+			"name": "战地诗人",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "每当你进行同时涉及一件武器和一件乐器的表演检定时"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "@classes.warlord.levels"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Heroic Charge",
+			"name": "英勇冲锋",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "英武",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"activation.type": "encounter",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": 1
+						}
+					],
+					"name": "使用",
+					"type": "utility",
+					"duration": {
+						"value": 1,
+						"units": "turn"
+					},
+					"range": {
+						"value": "@scale.academy-of-gallantry.heroic-charge",
+						"units": "ft"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Cheap Shot",
+			"name": "卑鄙手段",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Save",
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "豁免",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"condition": "每回合一次，当你以武器攻击命中一个生物时"
+					},
+					"duration": {
+						"value": 1,
+						"units": "round"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc.formula": "@flags.ll.exploit.dc"
+					},
+					"effects": [
+						{
+							"foundryId": "LLAWEffectScCS00"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Halved Speed",
+					"foundryId": "LLAWEffectScCS00",
+					"name": "速度减半",
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "MULTIPLY",
+							"value": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Dastardly Talents",
+			"name": "阴险才能",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Intelligence Deception",
+					"name": "智力欺瞒",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.dec.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				},
+				{
+					"ENG_name": "Wisdom Deception",
+					"name": "感知欺瞒",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.dec.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ruthless Focus",
+			"name": "无情专注",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Insightful Order",
+					"name": "洞悉号令",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当一个生物对抗你的卑鄙手段的豁免检定失败时"
+					}
+				},
+				{
+					"ENG_name": "Disengage or Hide",
+					"activation.type": "bonus",
+					"name": "撤离或躲藏",
+					"type": "utility"
+				}
+			]
+		},
+		{
+			"ENG_name": "Devious Tactics",
+			"name": "狡诈战术",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 14,
+			"activities": [
+				{
+					"ENG_name": "Save",
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "豁免",
+					"type": "save",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你能看见的一个生物以攻击指定你，或强制你进行豁免检定时"
+					},
+					"range": {
+						"value": 5,
+						"units": "ft"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc.formula": "@flags.ll.exploit.dc"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Marked for Death",
+			"name": "终亡印记",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "阴谋",
+			"subclassSource": "LLAW",
+			"level": 18,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当一个生物对抗卑鄙手段的豁免检定失败时"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Advanced Tactics",
+			"name": "进阶战术",
+			"source": "LLAW",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "战术",
+			"subclassSource": "LLAW",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Tactical Exploits",
+					"name": "战术战技",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.ll.exploit.number",
+							"mode": "ADD",
+							"value": 1
+						},
+						{
+							"key": "flags.ll.exploit.faces",
+							"mode": "UPGRADE",
+							"value": "@scale.academy-of-tactics.exploit.faces"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Monstrous Minion",
+			"name": "怪物仆从",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Dominate",
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "支配",
+					"type": "save",
+					"range": {
+						"value": 10,
+						"units": "ft"
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc.formula": "@flags.ll.exploit.dc"
+					}
+				},
+				{
+					"ENG_name": "Summon",
+					"activation.type": "",
+					"summon.mode": "cr",
+					"name": "召唤",
+					"type": "summon",
+					"profiles": [
+						{
+							"cr": "floor(@classes.warlord.levels / 3)",
+							"types": [
+								"beast",
+								"monstrosity"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Iron Command",
+			"name": "钢铁号令",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "利爪",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "每当你的仆从在范围内进行攻击掷骰、属性检定或豁免检定时"
+					},
+					"range": {
+						"value": "@scale.academy-of-claws.iron-command",
+						"units": "ft"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "@flags.ll.leadership.mod"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Counselor's Protege",
+			"name": "顾问的门徒",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "顾问",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Summon",
+					"bonuses.hp": "5 * @classes.alternate-fighter.levels",
+					"name": "召唤",
+					"type": "summon",
+					"activation": {
+						"value": 8,
+						"type": "hour"
+					},
+					"profiles": [
+						{
+							"uuid": "@creature[门徒|LLAW:E]",
+							"level": {
+								"max": 13
+							}
+						},
+						{
+							"uuid": "@creature[升华门徒|LLAW:E]",
+							"level": {
+								"min": 14
+							}
+						}
+					],
+					"match": {
+						"proficiency": true
+					},
+					"effects": [
+						{
+							"foundryId": "LLAWEffectCoCPHD"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Hit Dice",
+					"foundryId": "LLAWEffectCoCPHD",
+					"name": "生命骰",
+					"changes": [
+						{
+							"key": "system.attribute.hd.max",
+							"mode": "OVERRIDE",
+							"value": "@flags.dnd5e.summon.level"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Salt of the Earth",
+			"name": "社会中坚",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "每当你进行与平民百姓交流的属性检定时"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "d@flags.ll.exploit.faces"
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Bonus HP",
+					"name": "生命值加成",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.bonuses.level",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Strength in Numbers",
+			"name": "人多势众",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "自由",
+			"subclassSource": "LLAW:E",
+			"level": 14,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"activation.type": "encounter",
+					"name": "使用",
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"target": {
+									"consumes": {
+										"ENG_name": "Exploit Dice",
+										"name": "战技骰"
+									}
+								},
+								"value": -1,
+								"scaling.mode": "amount"
+							}
+						],
+						"scaling.allowed": true
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Parley",
+			"name": "谈判",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "使用",
+					"type": "utility",
+					"range": {
+						"value": 15,
+						"units": "ft"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Seafarer",
+			"name": "海员",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Seafarer Proficiencies (Intelligence)",
+					"name": "海员熟练项（智力）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.tools.navg.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						},
+						{
+							"key": "system.tools.water.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						},
+						{
+							"key": "system.skills.prc.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				},
+				{
+					"ENG_name": "Seafarer Proficiencies (Wisdom)",
+					"name": "海员熟练项（感知）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.tools.navg.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						},
+						{
+							"key": "system.tools.water.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						},
+						{
+							"key": "system.skills.prc.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						}
+					]
+				},
+				{
+					"ENG_name": "Seafarer Proficiencies (Charisma)",
+					"name": "海员熟练项（魅力）",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.tools.navg.ability",
+							"mode": "OVERRIDE",
+							"value": "cha"
+						},
+						{
+							"key": "system.tools.water.ability",
+							"mode": "OVERRIDE",
+							"value": "cha"
+						},
+						{
+							"key": "system.skills.prc.ability",
+							"mode": "OVERRIDE",
+							"value": "cha"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Navigator's Crew",
+			"name": "领航船员",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "领航员",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"target.affects": {
+						"count": "@flags.ll.leadership.mod",
+						"type": "willing"
+					},
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "在一次长休期间"
+					},
+					"roll": {
+						"ENG_name": "Bonus",
+						"name": "加值",
+						"formula": "@flags.ll.leadership.mod"
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Keeper of Order",
+			"name": "秩序守护者",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"activation.type": "bonus",
+					"name": "使用",
+					"type": "utility",
+					"roll": {
+						"ENG_name": "DC",
+						"name": "DC",
+						"formula": "@flags.ll.exploit.dc"
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Intelligence Insight and Investigation",
+					"name": "智力洞悉与调查",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ins.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						},
+						{
+							"key": "system.skills.inv.ability",
+							"mode": "OVERRIDE",
+							"value": "int"
+						}
+					]
+				},
+				{
+					"ENG_name": "Wisdom Insight and Investigation",
+					"name": "感知洞悉与调查",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ins.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						},
+						{
+							"key": "system.skills.inv.ability",
+							"mode": "OVERRIDE",
+							"value": "wis"
+						}
+					]
+				},
+				{
+					"ENG_name": "Charisma Insight and Investigation",
+					"name": "魅力洞悉与调查",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ins.ability",
+							"mode": "OVERRIDE",
+							"value": "cha"
+						},
+						{
+							"key": "system.skills.inv.ability",
+							"mode": "OVERRIDE",
+							"value": "cha"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Law's Shield",
+			"name": "法律之盾",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"system": {
+				"uses": {
+					"max": "max(1, @flags.ll.leadership.mod)",
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"foundryId": "LLAWActivityOrLS",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "使用",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你能看见的15尺内的一个生物被攻击命中时"
+					},
+					"range": {
+						"value": 15,
+						"units": "ft"
+					}
+				},
+				{
+					"ENG_name": "Use (Inspiring Word)",
+					"activity.id": "LLAWActivityOrLS",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": 1
+						}
+					],
+					"name": "使用（鼓舞之词）",
+					"type": "forward"
+				}
+			]
+		},
+		{
+			"ENG_name": "Halt",
+			"name": "阻拦",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "秩序",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Save",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": 1
+						}
+					],
+					"target.affects": {
+						"count": 1,
+						"type": "creature"
+					},
+					"name": "豁免",
+					"type": "save",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你能看见的30尺内的一个生物移动时"
+					},
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc.formula": "@flags.ll.exploit.dc"
+					},
+					"effects": [
+						{
+							"foundryId": "LLAWEffectOrHS00"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Zero Speed",
+					"foundryId": "LLAWEffectOrHS00",
+					"name": "速度归零",
+					"duration": {
+						"rounds": 1
+					},
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "OVERRIDE",
+							"value": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Anointed Magic",
+			"name": "受膏魔法",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"system": {
+				"uses": {
+					"max": "",
+					"recovery": []
+				}
+			},
+			"effects": [
+				{
+					"ENG_name": "Hact Magic",
+					"name": "受膏魔法",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.spells.spell1.override",
+							"mode": "OVERRIDE",
+							"value": "@spells.spell1.max + @scale.academy-of-zeal.1"
+						},
+						{
+							"key": "system.spells.spell2.override",
+							"mode": "OVERRIDE",
+							"value": "@spells.spell2.max + @scale.academy-of-zeal.2"
+						},
+						{
+							"key": "system.spells.spell3.override",
+							"mode": "OVERRIDE",
+							"value": "@spells.spell3.max + @scale.academy-of-zeal.3"
+						},
+						{
+							"key": "system.spells.spell4.override",
+							"mode": "OVERRIDE",
+							"value": "@spells.spell4.max + @scale.academy-of-zeal.4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Divine Mandate",
+			"name": "神圣使命",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 3,
+			"effects": [
+				{
+					"ENG_name": "Religion Bonus",
+					"name": "宗教加成",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.rel.bonuses.check",
+							"mode": "ADD",
+							"value": "@flags.ll.leadership.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Anointed Disciple",
+			"name": "受膏弟子",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"foundryId": "LLAWActivityZeAD",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Channel Divinity",
+									"name": "引导神力"
+								}
+							},
+							"value": 1
+						}
+					],
+					"name": "使用",
+					"type": "utility",
+					"duration": {
+						"value": 10,
+						"units": "minute"
+					},
+					"effects": [
+						{
+							"foundryId": "LLAWEffectZeADLI"
+						},
+						{
+							"foundryId": "LLAWEffectZeADLW"
+						},
+						{
+							"foundryId": "LLAWEffectZeADLC"
+						}
+					]
+				},
+				{
+					"ENG_name": "Use (Spell Slot)",
+					"activity.id": "LLAWActivityZeAD",
+					"consumption.targets": [
+						{
+							"type": "spellSlots",
+							"target": "1",
+							"value": 1
+						}
+					],
+					"name": "使用（法术位）",
+					"type": "forward",
+					"visibility": {
+						"level.max": 6,
+						"identifier": "warlord"
+					}
+				},
+				{
+					"ENG_name": "Use (Spell Slot)",
+					"activity.id": "LLAWActivityZeAD",
+					"consumption.targets": [
+						{
+							"type": "spellSlots",
+							"target": "2",
+							"value": 1
+						}
+					],
+					"name": "使用（法术位）",
+					"type": "forward",
+					"visibility": {
+						"level": {
+							"min": 7,
+							"max": 12
+						},
+						"identifier": "warlord"
+					}
+				},
+				{
+					"ENG_name": "Use (Spell Slot)",
+					"activity.id": "LLAWActivityZeAD",
+					"consumption.targets": [
+						{
+							"type": "spellSlots",
+							"target": "3",
+							"value": 1
+						}
+					],
+					"name": "使用（法术位）",
+					"type": "forward",
+					"visibility": {
+						"level": {
+							"min": 13,
+							"max": 18
+						},
+						"identifier": "warlord"
+					}
+				},
+				{
+					"ENG_name": "Use (Spell Slot)",
+					"activity.id": "LLAWActivityZeAD",
+					"consumption.targets": [
+						{
+							"type": "spellSlots",
+							"target": "4",
+							"value": 1
+						}
+					],
+					"name": "使用（法术位）",
+					"type": "forward",
+					"visibility": {
+						"level.min": 19,
+						"identifier": "warlord"
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Intelligence Check Bonus",
+					"foundryId": "LLAWEffectZeADLI",
+					"name": "智力检定加成",
+					"duration": {
+						"seconds": 600
+					},
+					"changes": [
+						{
+							"key": "system.abilities.int.bonuses.check",
+							"mode": "ADD",
+							"value": "d@flags.ll.exploit.faces"
+						}
+					]
+				},
+				{
+					"ENG_name": "Wisdom Check Bonus",
+					"foundryId": "LLAWEffectZeADLW",
+					"name": "感知检定加成",
+					"duration": {
+						"seconds": 600
+					},
+					"changes": [
+						{
+							"key": "system.abilities.wis.bonuses.check",
+							"mode": "ADD",
+							"value": "d@flags.ll.exploit.faces"
+						}
+					]
+				},
+				{
+					"ENG_name": "Charisma Check Bonus",
+					"foundryId": "LLAWEffectZeADLC",
+					"name": "魅力检定加成",
+					"duration": {
+						"seconds": 600
+					},
+					"changes": [
+						{
+							"key": "system.abilities.cha.bonuses.check",
+							"mode": "ADD",
+							"value": "d@flags.ll.exploit.faces"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Channel Divinity",
+			"name": "引导神力",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"system": {
+				"uses": {
+					"max": 2,
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "formula",
+							"formula": 1
+						},
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Mantle of Command",
+			"name": "号令光环",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 6,
+			"activities": [
+				{
+					"ENG_name": "Use",
+					"foundryId": "LLAWActivityZeMC",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Channel Divinity",
+									"name": "引导神力"
+								}
+							},
+							"value": 1
+						}
+					],
+					"name": "使用",
+					"type": "utility",
+					"duration": {
+						"value": 1,
+						"units": "minute"
+					}
+				},
+				{
+					"ENG_name": "Use (Spell Slot)",
+					"activity.id": "LLAWActivityZeMC",
+					"consumption.targets": [
+						{
+							"type": "spellSlots",
+							"target": "1",
+							"value": 1
+						}
+					],
+					"name": "使用（法术位）",
+					"type": "forward",
+					"visibility": {
+						"level.max": 6,
+						"identifier": "warlord"
+					}
+				},
+				{
+					"ENG_name": "Use (Spell Slot)",
+					"activity.id": "LLAWActivityZeMC",
+					"consumption.targets": [
+						{
+							"type": "spellSlots",
+							"target": "2",
+							"value": 1
+						}
+					],
+					"name": "使用（法术位）",
+					"type": "forward",
+					"visibility": {
+						"level": {
+							"min": 7,
+							"max": 12
+						},
+						"identifier": "warlord"
+					}
+				},
+				{
+					"ENG_name": "Use (Spell Slot)",
+					"activity.id": "LLAWActivityZeMC",
+					"consumption.targets": [
+						{
+							"type": "spellSlots",
+							"target": "3",
+							"value": 1
+						}
+					],
+					"name": "使用（法术位）",
+					"type": "forward",
+					"visibility": {
+						"level": {
+							"min": 13,
+							"max": 18
+						},
+						"identifier": "warlord"
+					}
+				},
+				{
+					"ENG_name": "Use (Spell Slot)",
+					"activity.id": "LLAWActivityZeMC",
+					"consumption.targets": [
+						{
+							"type": "spellSlots",
+							"target": "4",
+							"value": 1
+						}
+					],
+					"name": "使用（法术位）",
+					"type": "forward",
+					"visibility": {
+						"level.min": 19,
+						"identifier": "warlord"
+					}
+				},
+				{
+					"ENG_name": "Bonus Action",
+					"activation.type": "bonus",
+					"name": "附赠动作",
+					"type": "utility"
+				}
+			]
+		},
+		{
+			"ENG_name": "Favored Servant",
+			"name": "天眷仆从",
+			"source": "LLAW:E",
+			"className": "督军",
+			"classSource": "LLAW",
+			"subclassShortName": "狂热",
+			"subclassSource": "LLAW:E",
+			"level": 18,
+			"activities": [
+				{
+					"ENG_name": "Regain Hit Points",
+					"name": "恢复生命值",
+					"type": "heal",
+					"activation": {
+						"type": "special",
+						"condition": "每当你消耗一个受膏魔法法术位时"
+					},
+					"healing": {
+						"bonus": "@details.level",
+						"types": [
+							"healing"
+						]
+					}
+				},
+				{
+					"ENG_name": "Regain Exploit Die",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Exploit Dice",
+									"name": "战技骰"
+								}
+							},
+							"value": -1
+						}
+					],
+					"name": "恢复战技骰",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "每当你消耗一个受膏魔法法术位时"
+					}
+				},
+				{
+					"ENG_name": "Regain Inspiring Word",
+					"consumption.targets": [
+						{
+							"type": "itemUses",
+							"target": {
+								"consumes": {
+									"ENG_name": "Inspiring Word",
+									"name": "鼓舞之词"
+								}
+							},
+							"value": -1
+						}
+					],
+					"name": "恢复鼓舞之词",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "每当你消耗一个受膏魔法法术位时"
+					}
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Exalted Protege",
+			"name": "升华门徒",
+			"source": "LLAW:E",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"板甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "5 + 你的督军等级×5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 16,
+			"int": 15,
+			"wis": 11,
+			"cha": 12,
+			"save": {
+				"dex": "+8"
+			},
+			"skill": {
+				"athletics": "+9",
+				"history": "+7"
+			},
+			"languages": [
+				"通用语",
+				"和一门额外语言"
+			],
+			"trait": [
+				{
+					"ENG_name": "Heroic Determination",
+					"name": "英勇决心",
+					"entries": [
+						"每次长休一次，当你的门徒攻击掷骰失手，或属性检定、豁免检定失败时，他们可以选择以你的督军等级替换其d20的掷值，或可反败为胜。"
+					]
+				},
+				{
+					"ENG_name": "Hit Dice",
+					"name": "生命骰",
+					"entries": [
+						"你的门徒拥有数量等于你督军等级的{@dice d8}生命骰。他们也获得短休和长休的正常益处。"
+					]
+				},
+				{
+					"ENG_name": "Quick Student",
+					"name": "敏而好学",
+					"entries": [
+						"每当你的PB增加1，你的门徒的豁免检定、技能加值与攻击加值也同时增加相同数值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Extra Attack",
+					"name": "额外攻击",
+					"entries": [
+						"当你命令门徒进行武器攻击时，他们进行两次攻击而非一次。"
+					]
+				},
+				{
+					"ENG_name": "Greatsword",
+					"name": "巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}（{@damage 2d6 +4}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Longbow",
+					"name": "长弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 8}，射程150/600尺，单一目标。{@h}（{@damage 1d8 +3}）点穿刺伤害。"
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"RNG"
+			]
+		},
+		{
+			"ENG_name": "Protege",
+			"name": "门徒",
+			"source": "LLAW:E",
+			"size": [
+				"S",
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"皮甲",
+						"盾牌"
+					]
+				}
+			],
+			"hp": {
+				"special": "5 + 你的督军等级×5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 8,
+			"cha": 10,
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"athletics": "+3",
+				"history": "+3"
+			},
+			"languages": [
+				"通用语",
+				"和一门额外语言"
+			],
+			"trait": [
+				{
+					"ENG_name": "Hit Dice",
+					"name": "生命骰",
+					"entries": [
+						"你的门徒拥有数量等于你督军等级的{@dice d8}生命骰。他们也获得短休和长休的正常益处。"
+					]
+				},
+				{
+					"ENG_name": "Quick Student",
+					"name": "敏而好学",
+					"entries": [
+						"每当你的PB增加1，你的门徒的豁免检定、技能加值与攻击加值也同时增加相同数值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}（{@damage 1d4 +3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shortbow",
+					"name": "短弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程80/320尺，单一目标。{@h}（{@damage 1d6 +3}）点穿刺伤害。"
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"RNG"
+			]
+		}
+	]
+}
