@@ -1,0 +1,3357 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "vighter",
+				"abbreviation": "Vighter",
+				"full": "变体战士",
+				"url": "https://drive.google.com/file/d/0Bz74Lu7 ft.9sycGpYbi02UHk5RmM/view",
+				"version": "2017.09.24",
+				"authors": [
+					"Steve Fidler"
+				],
+				"targetSchema": "1.0.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"MV:VF": "战技，变体战士",
+			"MV:SS": "战技，法术射击"
+		},
+		"edition": "classic",
+		"dateAdded": 1545342498,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "2cd907345a"
+	},
+	"class": [
+		{
+			"ENG_name": "Fighter (Variant)",
+			"name": "战士（变体）",
+			"source": "vighter",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"history",
+								"insight",
+								"intimidation",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"heavy",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"heavy": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item 链甲|phb} 或 (b) {@item 皮甲|phb|皮革}、{@item 长弓|phb} 和 {@item 箭矢 (20)|phb|20支箭}",
+					"(a) 一把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}和一面{@item 盾牌|phb}，或 (b) 两把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}",
+					"(a) 一把{@item 轻弩|phb}和{@item 弩矢(20)|phb|20支弩箭}或者 (b) 两把{@item 手斧|phb|手斧}",
+					"(a) 一个{@item 地城套组|phb}或(b) 一个{@item 探索套组|phb}"
+				],
+				"goldAlternative": "{@dice 5d4×10|5d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"chain mail|phb"
+						],
+						"b": [
+							"leather armor|phb",
+							"longbow|phb",
+							"arrows (20)|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							{
+								"item": "handaxe|phb",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classFeatures": [
+				"战斗风格|战士（变体）|vighter|1",
+				"回气|战士（变体）|vighter|1",
+				"动作如潮|战士（变体）|vighter|2",
+				"战技|战士（变体）|vighter|2",
+				{
+					"classFeature": "武术范型|战士（变体）|vighter|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|战士（变体）|vighter|4",
+				"额外攻击|战士（变体）|vighter|5",
+				"属性值提升|战士（变体）|vighter|6",
+				{
+					"classFeature": "范型特性|战士（变体）|vighter|7",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|战士（变体）|vighter|8",
+				"不屈|战士（变体）|vighter|9",
+				{
+					"classFeature": "范型特性|战士（变体）|vighter|10",
+					"gainSubclassFeature": true
+				},
+				"额外攻击(2)|战士（变体）|vighter|11",
+				"属性值提升|战士（变体）|vighter|12",
+				"不屈(2次)|战士（变体）|vighter|13",
+				"属性值提升|战士（变体）|vighter|14",
+				{
+					"classFeature": "范型特性|战士（变体）|vighter|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|战士（变体）|vighter|16",
+				"动作如潮(2次)|战士（变体）|vighter|17",
+				"不屈(3次)|战士（变体）|vighter|17",
+				{
+					"classFeature": "范型特性|战士（变体）|vighter|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|战士（变体）|vighter|19",
+				"额外攻击(3)|战士（变体）|vighter|20"
+			],
+			"subclassTitle": "武术范型",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Fighter (Variant)",
+			"name": "战士（变体）",
+			"source": "vighter",
+			"entries": [
+				{
+					"source": "vighter",
+					"entries": [
+						"身着厚重板甲的人类持盾带头冲入地精群中。她的身后是个身穿镶嵌皮甲的精灵，用精制的良弓向敌人连珠地射出箭矢。而他们附近还有位喊着口号的半兽人，帮助两名战友在杀敌时保持优势。",
+						"身着链甲的矮人举盾站在他的伙伴和食人魔的棍棒之间，将致命一击挡到一旁。他的同伴身穿鳞甲，是个带着两把弯刀翻飞如风的半精灵，在食人魔身边缠斗，寻找其防御的破绽。",
+						"一名在竞技场中搏斗的角斗士，身为三叉戟和捕网的大师，同时还精于摔绊敌人与拖拽对方绕场移动的技巧，而这一手既为他赢得了观众的喝彩，也让他在战斗中占尽优势。他对手的剑上忽然闪出一点蓝光，而一道闪电随即向其袭来。",
+						"这些就是战士，也许是龙与地下城世界中最具多样性的职业。他们可以是四处探索的骑士、南征北战的领主、皇家勇士、精英步兵、冷酷雇佣兵或山贼头目。作为战士，他们都拥有无可比拟的武器与护甲造诣，以及全面的战斗知识。他们的生活与死亡相伴，既不害怕手上染满鲜血，也不畏惧迎接死亡。",
+						{
+							"type": "entries",
+							"ENG_name": "Well-Rounded Specialists",
+							"name": "全能武斗家",
+							"entries": [
+								"战士广泛涉猎各种战斗风格。他们使役各种武器时都有不俗的水平：斧头、刺剑、长剑、巨剑、弓箭甚至捕网，到战士手中都是信手拈来。他们甚至还同时熟习盾牌和各类护甲的用法。除掌握基本使用技巧外，每位战士还专精于某种特定的战斗风格。有些专攻箭术，有些专精双持武器战斗，有些则擅长于用魔法增强自己的武艺。泛用与专精相结合，让战士在战场和地城中都能有卓越的表现。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Trained for Danger",
+							"name": "为冒险而生",
+							"entries": [
+								"在城市哨卫、村庄民兵团或是女王的军队中，并非每个服役者都是战士。这些部队的成员大多是只有基本战斗知识而相对缺乏训练的士兵。而那些经验丰富的老兵、军官、特训保镖、专职骑士之类才更符合战士的形象。",
+								"某些战士认为在冒险中运用其能力才更有意义。冒险生活中常见的事件，如地城探索和怪物歼灭等危险作业对战士而言都再平常不过，与他们离开的生活并无太大不同。或许这样的生活风险更大，但回报却也更大\u2014\u2014毕竟，仅仅当个城市守卫可没多少机会找到一把带魔法的焰舌剑。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Trained for Danger",
+							"name": "为冒险而生",
+							"entries": [
+								"创建一个战士角色时，可以先思考与该角色背景相关的两个元素：你从哪里学到战斗的技巧，又是如何从大量普通的学武之人中脱颖而出？你是否特别冷酷无情？你是否曾因为超乎常人的努力而受到某个导师的特别照顾？为什么你最初会走上习武的道路？是故乡的安宁受威胁，是渴望复仇，还是希望证明自己？",
+								"你可能在贵族军队或本地民兵团中接受了正规训练；也可能是在一所战争学院里学到了战略战术和战史；你甚至可能自学成才，缺乏理论但实战经验丰富。你是为了逃离平庸的农耕生活而执剑，还是为着沿袭家族光荣传统？你的武器护甲从何而来？是由军队分发，还是从家族继承，又或者是你多年节衣缩食买下？这些装备如今是你最重要的财产\u2014\u2014因为只有它们能将你与死神的怀抱隔开",
+								{
+									"type": "entries",
+									"ENG_name": "Quick Build",
+									"name": "快速建卡",
+									"entries": [
+										"你可以按以下建议快速创建一名战士。首先，决定你是使用近战武器还是远程武器（或是灵巧武器），并据此将你最高属性分配给力量或敏捷。次高属性分配给体质，或者智力（计划选择奥法骑士武术范型时）。然后选择士兵背景。"
+									]
+								}
+							]
+						}
+					],
+					"ENG_name": "Fighter (Variant)",
+					"name": "战士（变体）",
+					"type": "section"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Arcane Marksman",
+			"name": "奥术神射手",
+			"shortName": "奥术神射手",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 9,
+			"subclassFeatures": [
+				"奥术神射手|战士（变体）|vighter|奥术神射手|vighter|3",
+				"实用投射|战士（变体）|vighter|奥术神射手|vighter|7",
+				"曲线射击|战士（变体）|vighter|奥术神射手|vighter|10",
+				"天界射击|战士（变体）|vighter|奥术神射手|vighter|15",
+				"永劲射击|战士（变体）|vighter|奥术神射手|vighter|18"
+			]
+		},
+		{
+			"ENG_name": "Bounty Hunter",
+			"name": "赏金猎人",
+			"shortName": "赏金猎人",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 12,
+			"subclassFeatures": [
+				"赏金猎人|战士（变体）|vighter|赏金猎人|vighter|3",
+				"有备无患|战士（变体）|vighter|赏金猎人|vighter|7",
+				"协同战术|战士（变体）|vighter|赏金猎人|vighter|10",
+				"坚忍|战士（变体）|vighter|赏金猎人|vighter|15",
+				"屠灭众敌|战士（变体）|vighter|赏金猎人|vighter|18"
+			]
+		},
+		{
+			"ENG_name": "Champion",
+			"name": "勇士",
+			"shortName": "勇士",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 5,
+			"subclassFeatures": [
+				"勇士|战士（变体）|vighter|勇士|vighter|3",
+				"运动健将|战士（变体）|vighter|勇士|vighter|7",
+				"额外战斗风格|战士（变体）|vighter|勇士|vighter|10",
+				"高效重击|战士（变体）|vighter|勇士|vighter|15",
+				"生还者|战士（变体）|vighter|勇士|vighter|18"
+			]
+		},
+		{
+			"ENG_name": "Colossal Bully",
+			"name": "庞然恶霸",
+			"shortName": "庞然恶霸",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 13,
+			"subclassFeatures": [
+				"庞然恶霸|战士（变体）|vighter|庞然恶霸|vighter|3",
+				"只要挥得够狠|战士（变体）|vighter|庞然恶霸|vighter|7",
+				"惩罚性伤害|战士（变体）|vighter|庞然恶霸|vighter|10",
+				"压倒性威胁|战士（变体）|vighter|庞然恶霸|vighter|15",
+				"猛力飞跃|战士（变体）|vighter|庞然恶霸|vighter|18"
+			]
+		},
+		{
+			"ENG_name": "Duelist",
+			"name": "决斗家",
+			"shortName": "决斗家",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 15,
+			"subclassFeatures": [
+				"决斗家|战士（变体）|vighter|决斗家|vighter|3",
+				"反唇相讥|战士（变体）|vighter|决斗家|vighter|7",
+				"精通决斗|战士（变体）|vighter|决斗家|vighter|10",
+				"傲慢狂犬|战士（变体）|vighter|决斗家|vighter|15",
+				"惩戒花式|战士（变体）|vighter|决斗家|vighter|18"
+			]
+		},
+		{
+			"ENG_name": "Eldritch Knight",
+			"name": "奥法骑士",
+			"shortName": "奥法骑士",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 6,
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"source": "PHB"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|subclass=战士;奥法骑士}",
+						"{@filter 已知法术|spells|subclass=战士;奥法骑士}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"subclasses": [
+						{
+							"ENG_name": "Eldritch Knight",
+							"name": "奥法骑士",
+							"source": "PHB"
+						}
+					],
+					"colLabels": [
+						"{@filter 1环|spells|level=1|subclass=战士;奥法骑士}",
+						"{@filter 2环|spells|level=2|subclass=战士;奥法骑士}",
+						"{@filter 3环|spells|level=3|subclass=战士;奥法骑士}",
+						"{@filter 4环|spells|level=4|subclass=战士;奥法骑士}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"奥法骑士|战士（变体）|vighter|奥法骑士|vighter|3",
+				"战争魔法|战士（变体）|vighter|奥法骑士|vighter|7",
+				"奥法打击|战士（变体）|vighter|奥法骑士|vighter|10",
+				"奥能冲锋|战士（变体）|vighter|奥法骑士|vighter|15",
+				"精通战争魔法|战士（变体）|vighter|奥法骑士|vighter|18"
+			]
+		},
+		{
+			"ENG_name": "Survivalist",
+			"name": "生存专家",
+			"shortName": "生存专家",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 16,
+			"subclassFeatures": [
+				"生存专家|战士（变体）|vighter|生存专家|vighter|3",
+				"荒野向导|战士（变体）|vighter|生存专家|vighter|7",
+				"蔽于平野|战士（变体）|vighter|生存专家|vighter|10",
+				"逆潮而立|战士（变体）|vighter|生存专家|vighter|15",
+				"第六感|战士（变体）|vighter|生存专家|vighter|18"
+			]
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"shortName": "战术家",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 5,
+			"subclassFeatures": [
+				"战术家|战士（变体）|vighter|战术家|vighter|3",
+				"料敌机先|战士（变体）|vighter|战术家|vighter|7",
+				"坚定决心|战士（变体）|vighter|战术家|vighter|10",
+				"精通卓越|战士（变体）|vighter|战术家|vighter|15",
+				"战术展演|战士（变体）|vighter|战术家|vighter|18"
+			]
+		},
+		{
+			"ENG_name": "Templar",
+			"name": "圣殿骑士",
+			"shortName": "圣殿骑士",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"page": 17,
+			"subclassFeatures": [
+				"圣殿骑士|战士（变体）|vighter|圣殿骑士|vighter|3",
+				"反制魔法|战士（变体）|vighter|圣殿骑士|vighter|7",
+				"残余防御|战士（变体）|vighter|圣殿骑士|vighter|10",
+				"狂热恩惠|战士（变体）|vighter|圣殿骑士|vighter|15",
+				"扰乱|战士（变体）|vighter|圣殿骑士|vighter|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 1,
+			"entries": [
+				"你专精于一种特定的战斗风格。从{@filter 下列选项|optionalfeatures|source=null|feature type=FS:F}中选择一项。即使你随后获得再次选择的机会，也不能多次取得同一种战斗风格选项。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"ENG_name": "Archery",
+							"name": "箭术",
+							"entries": [
+								"你使用远程武器进行的攻击检定获得+2加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Close Quarters Shooter",
+							"name": "近距离射手",
+							"entries": [
+								"当你在某个敌对生物5尺范围内进行远程攻击时，你的攻击检定不具劣势。你的远程攻击可以无视30尺内目标的半身掩护和四分之三掩护。你的远程攻击检定获得+1加值。"
+							],
+							"source": "UALightDarkUnderdark"
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Defense",
+							"name": "防御",
+							"entries": [
+								"着装护甲时，你的AC获得 +1加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Dueling",
+							"name": "对决",
+							"entries": [
+								"单手持用一把近战武器，且并未同时持用其他武器时，你用该武器攻击的伤害掷骰获得 +2加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Great Weapon Fighting",
+							"name": "巨武器战斗",
+							"entries": [
+								"双手持用一把近战武器发动攻击时，若你的伤害掷骰掷出1或2，则可以选择重掷。不过哪怕其仍是1或2，你都必须接受重掷的数值。此外，该武器必须具有双手或两用属性。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Mariner",
+							"name": "水手",
+							"entries": [
+								"只要你没有穿着重甲或使用盾牌，你的游泳速度和攀爬速度等同于你的正常速度，且你的AC获得+1加值。"
+							],
+							"source": "UAWaterborneAdventures"
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Protection",
+							"name": "守护",
+							"entries": [
+								"当某个你能看见的生物攻击你身边5尺内除你之外的目标时，你可以用反应迫使该攻击的攻击检定具有劣势。你必须持用盾牌以实现该效果。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Tunnel Fighter",
+							"name": "隧道战士",
+							"entries": [
+								"你可以用一个附赠动作进入一种持续到你下回合开始的防御架势。处于防御架势期间，你可以不消耗反应进行借机攻击，也可以使用你的反应对某个在你触及范围内移动超过5尺的生物进行一次近战攻击。"
+							],
+							"source": "UALightDarkUnderdark"
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Two-Weapon Fighting",
+							"name": "双武器战斗",
+							"entries": [
+								"当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Second Wind",
+			"name": "回气",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 1,
+			"entries": [
+				"你拥有有限的体力储备，可以抽取它来保护自己免受伤害。在你的回合内，你可以用一个附赠动作恢复等同于{@dice 1d10}+你的战士等级的生命值。",
+				"一旦使用了该特性，你必须完成一次短休或长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Action Surge",
+			"name": "动作如潮",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 2,
+			"entries": [
+				"第2级起，你可以短暂突破自身平时的极限。在你的回合内，你可以在通常的行动以及可能的附赠动作之外，再进行一个额外的动作。",
+				"一旦使用了该特性，你必须完成一次短休或长休后才能再次使用。第17级起，你在每次休息之前可以使用两次，但在同一回合内只能使用一次。"
+			]
+		},
+		{
+			"ENG_name": "Maneuvers",
+			"name": "战技",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 2,
+			"entries": [
+				"第2级起，你已经学会了若干武艺战技。你习得两项自选的{@filter 战技|optionalfeatures|source=null|feature type=MV:VF}。你的战技选项详述于职业描述末尾。许多战技会以某种方式强化一次攻击。每次攻击你只能使用一项战技。",
+				"你在第3、7、10、15和18级会再习得一项自选战技。每次习得新战技时，你还可以将一项已知的战技替换为另一项。",
+				"你的部分战技要求目标进行豁免检定以抵抗战技的效果。豁免DC的计算方式如下：",
+				{
+					"type": "abilityDc",
+					"ENG_name": "Maneuver",
+					"name": "战技",
+					"attributes": [
+						"str",
+						"dex"
+					]
+				},
+				"每当你使用一项战技时，你可以选择触发该战技中描述的卓越选项。你可以这样做两次。完成一次短休或长休后，你恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Martial Archetype",
+			"name": "武术范型",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 3,
+			"entries": [
+				"第3级时，你从可用列表中选择一种你在战斗风格与技艺上力求效仿的范型。你所选择的范型会在第3级赋予你特性，并在第7、10、15和18级再次给予特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 4,
+			"entries": [
+				"第4级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你无法用该特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 5,
+			"entries": [
+				"第5级起，你在自己的回合采取{@action 攻击}动作时，可以攻击两次而非一次。",
+				"当你在本职业达到第11级时，攻击次数增加到三次；达到第20级时，增加到四次。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 6,
+			"entries": [
+				"第6级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你无法用该特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Martial Archetype feature",
+			"name": "范型特性",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 7,
+			"entries": [
+				"第7级时，你获得由你的武术范型给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 8,
+			"entries": [
+				"第8级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你无法用该特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Indomitable (one use)",
+			"name": "不屈",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 9,
+			"entries": [
+				"第9级起，你可以重掷一次失败的豁免检定。若你这样做，则必须使用新的结果，且在完成一次长休之前你不能再次使用该特性。",
+				"从第13级起，你可以在长休之间使用该特性两次；从第17级起，可以使用三次。"
+			]
+		},
+		{
+			"ENG_name": "Martial Archetype feature",
+			"name": "范型特性",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 10,
+			"entries": [
+				"第10级时，你获得由你的武术范型给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack (2)",
+			"name": "额外攻击(2)",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 11,
+			"entries": [
+				"第11级时，你在自己的回合采取{@action 攻击}动作时可以攻击三次。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 12,
+			"entries": [
+				"第12级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你无法用该特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Indomitable (two uses)",
+			"name": "不屈(2次)",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 13,
+			"entries": [
+				"第13级时，你可以在长休之间使用两次不屈。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 14,
+			"entries": [
+				"第14级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你无法用该特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Martial Archetype feature",
+			"name": "范型特性",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 15,
+			"entries": [
+				"第15级时，你获得由你的武术范型给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 16,
+			"entries": [
+				"第16级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你无法用该特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Action Surge (two uses)",
+			"name": "动作如潮(2次)",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 17,
+			"entries": [
+				"第17级时，你可以在每次休息之前使用两次动作如潮，但在同一回合内只能使用一次。"
+			]
+		},
+		{
+			"ENG_name": "Indomitable (three uses)",
+			"name": "不屈(3次)",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 17,
+			"entries": [
+				"第17级时，你可以在长休之间使用三次不屈。"
+			]
+		},
+		{
+			"ENG_name": "Martial Archetype feature",
+			"name": "范型特性",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 18,
+			"entries": [
+				"第18级时，你获得由你的武术范型给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 19,
+			"entries": [
+				"第19级时，你可以将一项自选属性值提升2点，或将两项自选属性值各提升1点。照常，你无法用该特性将属性值提升到20以上。",
+				"如果你的DM允许使用专长，你可以改为获得一项{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack (3)",
+			"name": "额外攻击(3)",
+			"source": "vighter",
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"level": 20,
+			"entries": [
+				"第20级时，你在自己的回合采取{@action 攻击}动作时可以攻击四次。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Arcane Marksman",
+			"name": "奥术神射手",
+			"source": "vighter",
+			"page": 9,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥术神射手",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"典型的奥术神射手曾长期远离战场，潜心研习魔典与施法手册。他们并未完全舍弃自己的武艺，而是选择以远距离施加的魔法力量来增强那份才能。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "法术射击|战士（变体）|vighter|奥术神射手|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "射手学识|战士（变体）|vighter|奥术神射手|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Archer Lore",
+			"name": "射手学识",
+			"source": "vighter",
+			"page": 9,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥术神射手",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你获得以下技能中一项的自选熟练项：{@skill 奥秘}、{@skill 自然}或{@skill 察觉}。"
+			]
+		},
+		{
+			"ENG_name": "Spell Shots",
+			"name": "法术射击",
+			"source": "vighter",
+			"page": 9,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥术神射手",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级时，你习得了一套独特的奥术战技。你可以使用列出的全部{@filter 法术射击|optionalfeatures|source=null|feature type=MV:SS}，但必须花时间准备它们。准备就绪的法术射击战技可以像其他任何战技一样使用。",
+				"在一次短休或长休期间，你最多可以以此方式准备两项法术射击战技。你在第7、10、15和18级可以多准备一项法术射击战技。",
+				"你的法术射击战技的豁免检定计算方式如下：",
+				{
+					"type": "abilityDc",
+					"ENG_name": "Maneuver",
+					"name": "战技",
+					"attributes": [
+						"int"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Utility Projectile",
+			"name": "实用投射",
+			"source": "vighter",
+			"page": 9,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥术神射手",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级起，你可以运用奥术魔法灌注你的远程武器以产生效应。你获得以下射击之一：以一个动作为一件投掷武器或一枚弹药灌注魔法，当投射物命中目标时施放该魔法，即可完成射击。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"ENG_name": "Ascension Shot",
+							"name": "升空射击",
+							"entries": [
+								"当此射击命中武器射程内一个你能看见的表面上的某点时，它会萌生出强韧的筋腱状卷须，抓住表面并加固投射物。一旦嵌入，它可以在1小时的持续时间内承重最多300磅，之后魔法消散，它坠落到地面。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Silent Shot",
+							"name": "静默射击",
+							"entries": [
+								"当此射击命中30尺内一个你能看见的表面时，它会在命中处产生{@spell 次级幻象}法术的效果。该效果持续1分钟，并使用你的战技豁免DC。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Curving Shot",
+			"name": "曲线射击",
+			"source": "vighter",
+			"page": 9,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥术神射手",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级时，你学会了如何将偏离的射击导向新目标。当你通过一项法术射击战技进行攻击检定而未命中时，你可以用一个附赠动作，对原目标30尺内一个你能看见的不同目标重掷该攻击检定。"
+			]
+		},
+		{
+			"ENG_name": "Celestial Shot",
+			"name": "天界射击",
+			"source": "vighter",
+			"page": 9,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥术神射手",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"第15级起，你已将月相循环的奥术本质织入你的射击之中。你获得以下射击：以一个动作为一件投掷武器或一枚弹药灌注魔法，当投射物抵达目标时施放该魔法，即可完成射击。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"ENG_name": "Blackout Shot",
+							"name": "熄光射击",
+							"entries": [
+								"当此射击被射出后，在命中某个表面或飞行60尺后，它会迸裂为一个无害的漆黑魔法球体，以魔法黑暗充满一个30尺半径的球状区域，持续1分钟。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Flare Shot",
+							"name": "闪光射击",
+							"entries": [
+								"当此射击被射出后，在命中某个表面或飞行60尺后，它会迸裂为一个无害的光芒与火花之球，以明亮魔法光照亮一个30尺半径的球状区域，并向外再散发30尺的微光。球体缓慢下降，并在1分钟后消散。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ever-Forceful Shot",
+			"name": "永劲射击",
+			"source": "vighter",
+			"page": 9,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥术神射手",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级起，你的射击技艺随时蓄势待发。当你掷先攻时，你恢复一次卓越特性的使用次数。",
+				"此外，你的法术射击战技可以造成更凌厉的打击。被战技中包含的攻击命中的生物额外受到1d8伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bounty Hunter",
+			"name": "赏金猎人",
+			"source": "vighter",
+			"page": 12,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "赏金猎人",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"以赏金猎人为榜样的人，往往认为自己的本领价值千金。他们通常是受雇的佣兵，至少也对得罪过自己的人怀有深仇。无论哪种情况，他们都精于追踪和猎杀特定类群的生物，对他们所研究的对象出手极有成效。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "宿敌|战士（变体）|vighter|赏金猎人|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猎杀技艺|战士（变体）|vighter|赏金猎人|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Favored Enemy",
+			"name": "宿敌",
+			"source": "vighter",
+			"page": 12,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "赏金猎人",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级起，你对敌人已了然于心，足以开始将相关知识付诸击败他们的实践。从以下列表中选择两类宿敌，或选择列表中的一种以及两个人型生物种族（如豺狼人和兽人）：异怪、野兽、天界生物、构装体、巨龙、元素、精类、邪魔、巨人、怪物、软泥怪、植物或不死生物。你进行的与宿敌相关的所有感知或智力检定都具有优势，包括追踪他们、探知他们、凭直觉洞悉或回忆与他们相关的信息，以及辨别他们的动机或意图。"
+			]
+		},
+		{
+			"ENG_name": "Hunter's Prey",
+			"name": "猎杀技艺",
+			"source": "vighter",
+			"page": 12,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "赏金猎人",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，只要有足够时间，你可以将宿敌扩展到单独一个个体。在一次短休的持续时间内，你可以专注于一个你见过并打过交道的生物，或你掌握了足以了解它的充分信息。该生物也成为你的宿敌，直到你得知它已被杀死，或你选择了另一名猎物。",
+				"此外，由于你的知识使你能利用宿敌的弱点，你使用的任何影响宿敌的战技还会使其额外受到1d6伤害，伤害类型为你手中武器所能造成的一种。"
+			]
+		},
+		{
+			"ENG_name": "Prepared",
+			"name": "有备无患",
+			"source": "vighter",
+			"page": 12,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "赏金猎人",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级起，你对宿敌的预判赋予你避开伏击的超常直觉。在判断生物是否被突袭时，只要60尺内至少存在一名宿敌，你就不会被突袭。",
+				"此外，你在察觉和避开宿敌所设陷阱的检定上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Allied Tactics",
+			"name": "协同战术",
+			"source": "vighter",
+			"page": 12,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "赏金猎人",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级时，你猎杀宿敌的经验使你能向盟友指出其弱点。当你能看到的一个30尺内的盟友对宿敌进行攻击检定时，你可以用一个反应给予该盟友此次攻击检定优势。",
+				"你可以使用该特性多次，次数等于你的感知调整值（至少一次）。完成一次短休或长休后，你恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Fortitude",
+			"name": "坚忍",
+			"source": "vighter",
+			"page": 12,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "赏金猎人",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"第15级起，你对抗宿敌攻击的非魔法豁免检定与技能对抗检定具有优势。此外，你不会被宿敌魅惑、附身或恐慌，并且在处于一个与你敌对的宿敌60尺内时，你的死亡豁免检定具有优势。",
+				"如果宿敌的一击将使你的生命值降至0却又未直接杀死你，你的生命值将改为降至1。一旦使用了该特性，你必须完成一次长休后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Foe Slayer",
+			"name": "屠灭众敌",
+			"source": "vighter",
+			"page": 12,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "赏金猎人",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级时，你成为诛杀头号猎物的大师。每回合一次，当你以武器攻击命中一名宿敌时，它额外受到3d8钝击、穿刺或挥砍伤害（由你选择）。若其生命值不高于30，它立即死亡。"
+			]
+		},
+		{
+			"ENG_name": "Champion",
+			"name": "勇士",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "勇士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"典型的勇士专注于将原始的体能锤炼至致命的完美境界。以这一范型为榜样的人将严酷训练与卓越体魄相结合，发出毁灭性的打击。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "精通重击|战士（变体）|vighter|勇士|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "蛮力优势|战士（变体）|vighter|勇士|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Brute Advantage",
+			"name": "蛮力优势",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "勇士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样从第3级起，你压倒性的气势与战技的粗犷本性使你能对目标强行施加影响。你可以使一个被你战技影响的生物额外受到等同于你力量或敏捷调整值（由你选择）的伤害。在你的下回合开始前，一个生物只能受到该特性的一次影响。"
+			]
+		},
+		{
+			"ENG_name": "Improved Critical",
+			"name": "精通重击",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "勇士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从你在第3级选择此范型起，你的武器攻击在掷骰19或20时造成重击。"
+			]
+		},
+		{
+			"ENG_name": "Remarkable Athlete",
+			"name": "运动健将",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "勇士",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级起，你进行的任何力量、敏捷或体质检定都可以加上你熟练加值的一半（向上取整）。",
+				"此外，当你进行助跑跳远时，你能跳出的距离增加等同于你力量调整值的尺数。"
+			]
+		},
+		{
+			"ENG_name": "Additional Fighting Style",
+			"name": "额外战斗风格",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "勇士",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级时，你可以在战斗风格职业特性中再选择一个选项。"
+			]
+		},
+		{
+			"ENG_name": "Superior Critical",
+			"name": "高效重击",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "勇士",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"第15级起，你的武器攻击在掷骰18\u201420时造成重击。"
+			]
+		},
+		{
+			"ENG_name": "Survivor",
+			"name": "生还者",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "勇士",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级时，你达到了战斗中坚韧的巅峰。在你的每个回合开始时，若你剩余生命值不超过一半，你恢复等同于5+你的体质调整值的生命值。若你的生命值为0，则无法获得此收益。"
+			]
+		},
+		{
+			"ENG_name": "Colossal Bully",
+			"name": "庞然恶霸",
+			"source": "vighter",
+			"page": 13,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "庞然恶霸",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"以典型恶霸为榜样的人喜欢仗势欺人。他们长期以强凌弱，深谙利用体型压制弱小者之道。可以肯定的是，面对势均力敌的对手时，他们就没那么占优势了。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "限制：强力构筑种族特性|战士（变体）|vighter|庞然恶霸|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "庞然巨躯|战士（变体）|vighter|庞然恶霸|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "体格|战士（变体）|vighter|庞然恶霸|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Larger than Life",
+			"name": "庞然巨躯",
+			"source": "vighter",
+			"page": 13,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "庞然恶霸",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级时，你可以成为战场上一个威压逼人的庞然身影。在你的回合内，你可以用一个附赠动作调整身形，让自己显得比实际更大。处于变大状态期间，你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你在体型上视为大一级，但你的实际身形尺寸保持不变。",
+						"你的{@skill 威吓}检定具有优势。",
+						"你使用的影响比你小的生物的战技，对其每小一级体型就额外造成1d4钝击伤害。"
+					]
+				},
+				"你必须如同专注法术一般维持该特性。它持续1分钟。若你被打至昏迷或失去专注，它会提前结束。你也可以在自己的回合用一个附赠动作提前结束该特性。",
+				"你可以使用该特性两次。完成一次长休或短休后，你恢复已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Physique",
+			"name": "体格",
+			"source": "vighter",
+			"page": 13,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "庞然恶霸",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，若你原本不熟练运动技能，则获得其熟练项。当你擒抱、推撞或投掷一个比你小的生物时，你的运动检定可以加上双倍熟练加值。",
+				"此外，你的威吓检定可以使用你的力量调整值，而非魅力调整值。"
+			]
+		},
+		{
+			"ENG_name": "Restriction: Powerful Build racial trait",
+			"name": "限制：强力构筑种族特性",
+			"source": "vighter",
+			"page": 13,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "庞然恶霸",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"type": "inset",
+			"entries": [
+				"只有一生下来就比他人体型更大的种族，才拥有足以受益于如此仗势欺人的经验。",
+				"你的DM可以解除此限制，但极不建议这样做。更妥当的做法是让你的DM用强力构筑替换某个种族特性，以配合此范型。若你的DM认为适合其战役设定，也可以将此范型开放给任何大体型的种族。"
+			]
+		},
+		{
+			"ENG_name": "Anything Swung Hard Enough",
+			"name": "只要挥得够狠",
+			"source": "vighter",
+			"page": 13,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "庞然恶霸",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级起，几乎任何东西都能成为你的武器。你获得即兴武器的熟练项，它们在你手中至少造成1d6+力量调整值伤害。",
+				"此外，当你用推撞攻击或投掷迫使一个比你小的生物移动时，若它在完成该移动前撞上表面或其他生物，它受到1d8钝击伤害。"
+			]
+		},
+		{
+			"ENG_name": "Punitive Damages",
+			"name": "惩罚性伤害",
+			"source": "vighter",
+			"page": 13,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "庞然恶霸",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级时，你能把比你小的生物的攻击当作小麻烦掸开。在一个比你小的生物对你造成伤害后，你可以用一个反应，使该伤害因其每比你小一级体型就减少1d4。"
+			]
+		},
+		{
+			"ENG_name": "Overwhelming Threat",
+			"name": "压倒性威胁",
+			"source": "vighter",
+			"page": 13,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "庞然恶霸",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"第15级起，你如自然之力般不可阻挡，行事永不松懈。每当你对比你小的生物造成重击或将其生命值降至0时，你恢复一次庞然巨躯特性的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Forceful Leap",
+			"name": "猛力飞跃",
+			"source": "vighter",
+			"page": 13,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "庞然恶霸",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级时，你的体型使你能够毫无顾虑地闯入任何战团。在你的回合内，你可以用一个动作跃入20尺内一个无生物占据、或由比你小的生物占据的空间。你落点15尺内的每个生物都必须对你的战技豁免DC进行力量豁免检定。豁免失败者受到1d12钝击伤害并倒地；豁免成功者受到一半伤害且不倒地。5尺内比你小的生物在此豁免检定上具有劣势，而占据你跃入空间的任何生物自动失败。"
+			]
+		},
+		{
+			"ENG_name": "Duelist",
+			"name": "决斗家",
+			"source": "vighter",
+			"page": 15,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "决斗家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"典型的决斗家，其战斗技艺源于其成长经历。有时是一种文明的战斗形式，与毫不掩饰的傲慢相结合；有时又是恶言相加与声名狼藉的传奇的粗粝混合。以这一范型为榜样的人将剑术与虚张声势相结合，缠住并干扰敌人，并以最后一击终结懦夫，或为其论调画上句点。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "招牌战技|战士（变体）|vighter|决斗家|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "嘲弄|战士（变体）|vighter|决斗家|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Signature Maneuver",
+			"name": "招牌战技",
+			"source": "vighter",
+			"page": 15,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "决斗家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级时，除了其他已知的战技之外，你还知晓{@optfeature 终结技|vighter}战技。"
+			]
+		},
+		{
+			"ENG_name": "Taunt",
+			"name": "嘲弄",
+			"source": "vighter",
+			"page": 15,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "决斗家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你学会了将敌人缠入致命的打击之舞。每轮一次，在对一个生物进行武器攻击后，你可以嘲弄它。此嘲弄持续到你的下回合结束。当一个被你嘲弄的生物发动攻击、或施放一个不以你为目标的法术时，你可以用你的反应对该生物施放{@spell 恶言相加}。魅力是你施展该法术的施法属性。"
+			]
+		},
+		{
+			"ENG_name": "Quick Retort",
+			"name": "反唇相讥",
+			"source": "vighter",
+			"page": 15,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "决斗家",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级起，你的如簧巧舌既能让你陷入对峙，也能让你全身而退。当你对一个生物进行威吓或游说检定时，若你正故意侮辱或威胁该生物、或该生物正被你嘲弄，你的检定加上双倍熟练加值。"
+			]
+		},
+		{
+			"ENG_name": "Improved Duelist",
+			"name": "精通决斗",
+			"source": "vighter",
+			"page": 15,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "决斗家",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你的训练磨砺出武器与战斗技艺之间的和谐。",
+				"若你本回合已成功以武器攻击命中一个生物，在该生物的下回合开始前，它对你接下来对其使用的战技的豁免检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Insolent Cur",
+			"name": "傲慢狂犬",
+			"source": "vighter",
+			"page": 15,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "决斗家",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"到达第15级时，你的自信令敌人胆寒。",
+				"当你使用动作如潮特性时，你可以向20尺内任何能看到并听到你的任意数量生物发出威胁。每个受影响的生物必须对你的战技豁免DC进行感知豁免检定。任何未通过该豁免检定的生物会丢下手中持握的一切并陷入{@condition 恐慌}。若你已嘲弄某个生物，它自动未通过此豁免检定。",
+				"一个生物可以在它看不见你或听不到你的任何回合结束时重复此豁免检定。豁免成功后，它不再恐慌。"
+			]
+		},
+		{
+			"ENG_name": "Punishing Flourish",
+			"name": "惩戒花式",
+			"source": "vighter",
+			"page": 15,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "决斗家",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级起，你的造诣与花式技巧使对手露出破绽，遭受更沉重的打击。",
+				"在你成功以一项战技影响一个生物后，你对它的下一次攻击额外造成2d8+魅力调整值伤害。"
+			]
+		},
+		{
+			"ENG_name": "Eldritch Knight",
+			"name": "奥法骑士",
+			"source": "vighter",
+			"page": 6,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥法骑士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"典型的奥法骑士将所有战士共有的武艺造诣与对魔法的潜心研究相结合。奥法骑士使用的魔法技巧与法师所修习的相似。他们专注于八大学派中的两个\u2014\u2014防护系和塑能系。防护系法术为奥法骑士在战斗中提供额外保护，塑能系法术则能同时伤害多个敌人，延伸了战士在战斗中的触及。这些骑士习得的法术相对较少，他们将法术铭记于心，而非记录在法术书上。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "施法|战士（变体）|vighter|奥法骑士|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "武器联结|战士（变体）|vighter|奥法骑士|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "vighter",
+			"page": 6,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥法骑士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级时，你学会以武斗技术施展法术的能力。参考{@book 第十章|PHB|10}的施法规则，以及{@book 第十一章|PHB|11}的{@filter 法师法术列表|spells|class=法师}。",
+				{
+					"type": "entries",
+					"ENG_name": "Cantrips",
+					"name": "戏法",
+					"entries": [
+						"你从{@filter 法师法术列表|spells|class=法师}中选择两个戏法作为已知法术。第10级时，你再获得一个额外的自选法师戏法。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"ENG_name": "Spell Slots",
+							"name": "法术位",
+							"entries": [
+								"\"奥法骑士施法能力\"表中列出了你用以施展你的{@filter 法师法术|spells|class=法师}的1环及更高环阶法术位数量。施展这些法术时，你必须同时消耗一个不低于该法术环阶的法术位。而已消耗的法术位可以通过完成一次长休进行恢复。",
+								"例如，如果你已经习得1环法术{@spell 护盾术}，并且有一个1环和一个2环法术位可用，你可以使用任一法术位来施放{@spell 护盾术}。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"ENG_name": "Spells Known of 1st-Level and Higher",
+							"name": "已知法术",
+							"entries": [
+								"你习得三个自选的1环法师法术，其中两个必须从法师法术列表中的防护系和塑能系法术中选择。",
+								"\"奥法骑士施法能力\"表中\"已知法术\"一栏记录了你获得更多1环或更高环阶法师法术时的相应等级。你获得的每个法术都必须是自选的防护系或塑能系法术，且环阶不能超过你所拥有的最高法术位环阶。例如，如果你在本职业达到第7级，则可以学习一个新的1环法术或2环法术。",
+								"你在第8、14和20级习得的法术可以来自任何魔法学派。",
+								"你每次提升本职业等级时，可以将一个已知的法师法术替换为法师法术列表中另一个由你选择的法术。这个新法术的环阶不能超过你所拥有的最高法术位的环阶，且必须从防护系或塑能系中选择（除非你替换的是第3、第8、第14和第20级时习得的来自任何学派的法术）。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"ENG_name": "Spellcasting Ability",
+							"name": "施法属性",
+							"entries": [
+								"你通过研究和记忆学习魔法，因此智力是你施展法师法术的施法属性。每当你的法术需要参照施法属性时均指向你的智力值。而你法师法术的豁免DC和攻击检定，则使用你的智力调整值。",
+								{
+									"type": "abilityDc",
+									"ENG_name": "Spell",
+									"name": "法术",
+									"attributes": [
+										"int"
+									]
+								},
+								{
+									"type": "abilityAttackMod",
+									"ENG_name": "Spell",
+									"name": "法术",
+									"attributes": [
+										"int"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Weapon Bond",
+			"name": "武器联结",
+			"source": "vighter",
+			"page": 6,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥法骑士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级时，你学会一个在你自己与一件武器之间建立魔法联结的仪式。你花1小时来进行仪式，其可在短休期间完成。仪式全程中武器必须始终在你的触及范围内，并在仪式结束时触碰该武器以缔造联结。",
+				"一旦你与一件武器建立联结，除非你处于{@condition 失能}状态，否则你不会被缴去该武器。若它处于同一存在位面，你可以在你的回合用一个附赠动作召出该武器，使其瞬间传送至你手中。",
+				"你最多可以拥有两件联结武器，但每次只能用一个附赠动作召出其中一件。若你试图与第三件武器建立联结，则必须断开另外两件之一的联结。"
+			]
+		},
+		{
+			"ENG_name": "War Magic",
+			"name": "战争魔法",
+			"source": "vighter",
+			"page": 6,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥法骑士",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级起，当你用你的动作施放一个戏法时，你可以用一个附赠动作进行一次武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Eldritch Strike",
+			"name": "奥法打击",
+			"source": "vighter",
+			"page": 6,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥法骑士",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级时，你学会了如何用武器打击削弱生物对你法术的抗性。当你以武器攻击命中一个生物时，在你的下回合结束前，该生物对抗你施放的法术的下一次豁免检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Charge",
+			"name": "奥能冲锋",
+			"source": "vighter",
+			"page": 6,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥法骑士",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"第15级时，你获得在使用动作如潮时传送最多30尺到一个你能看见的无占据空间的能力。你可以在额外动作之前或之后传送。"
+			]
+		},
+		{
+			"ENG_name": "Improved War Magic",
+			"name": "精通战争魔法",
+			"source": "vighter",
+			"page": 6,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "奥法骑士",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级起，当你用你的动作施放一个法术时，你可以用一个附赠动作进行一次武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Survivalist",
+			"name": "生存专家",
+			"source": "vighter",
+			"page": 16,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "生存专家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"以这一范型为榜样的人磨练出了在任何环境中坚持并繁荣的技能。他们天生擅长融入环境，并利用对地形及其栖居者的了解占尽先机、赢得胜利。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "荒野游侠|战士（变体）|vighter|生存专家|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "猎物标记|战士（变体）|vighter|生存专家|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Hunter's Quarry",
+			"name": "猎物标记",
+			"source": "vighter",
+			"page": 16,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "生存专家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样从第3级起，你学会了锁定一个生物并标记它。你可以用一个附赠动作选择100尺内一个你能看见的生物，将其标记为你的猎物。你必须如同专注法术一般维持此标记，它最多持续1小时。",
+				"在此标记结束前，你使用的任何影响该生物的战技还会使其受到等同于1d4+你的感知调整值的伤害，伤害类型为你手中武器所能造成的一种。此外，你为寻找它而进行的任何感知（察觉）或感知（求生）检定都具有优势。若目标在此标记结束前生命值降至0，你可以在你后续的回合中用一个附赠动作标记一个新生物。",
+				"你可以使用该特性多次，次数等于你的感知调整值（至少一次）。完成一次长休后，你恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Ranger of the Wild",
+			"name": "荒野游侠",
+			"source": "vighter",
+			"page": 16,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "生存专家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级起，你在荒野中度过的时光磨砺了你的求生技能。你从以下特性中选择三项：",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"ENG_name": "Forager",
+							"name": "采集者",
+							"entries": [
+								"觅食时，你会发现两倍的食物。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Strider",
+							"name": "疾行者",
+							"entries": [
+								"穿越非魔法困难地形时，你不消耗额外移动。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Tracker",
+							"name": "追迹者",
+							"entries": [
+								"追踪其他生物时，你还能得知它们的确切数量、体型，以及它们多久前经过该区域。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Trapper",
+							"name": "诱陷者",
+							"entries": [
+								"你所放置的捕猎陷阱的察觉与回避DC加上你的熟练加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Trainer",
+							"name": "训练师",
+							"entries": [
+								"你的感知（{@skill 驯兽}）检定具有优势。"
+							]
+						},
+						{
+							"type": "entries",
+							"ENG_name": "Traveler",
+							"name": "旅行者",
+							"entries": [
+								"你学习一门由你选择的语言。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wilderness Guide",
+			"name": "荒野向导",
+			"source": "vighter",
+			"page": 16,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "生存专家",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级时，你在世界蛮荒未驯之域旅行与求生的娴熟本领，使你能更轻松地引领他人穿越任何环境。在荒野中旅行一小时或更久时，你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"困难地形不会减慢你队伍的旅行速度。",
+						"即使在旅行中从事其他活动（如觅食、导航或追踪），你依然对危险保持警觉。",
+						"你不会受到快速移动对被动感知（察觉）检定造成的惩罚。",
+						"你的队伍可以以正常速度隐秘行动。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hide in Plain Sight",
+			"name": "蔽于平野",
+			"source": "vighter",
+			"page": 16,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "生存专家",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你可以花1分钟为自己制作天然伪装。你必须能取得新鲜泥浆、泥土、植物、烟灰及其他天然材料来制作伪装。",
+				"一旦你以此方式完成伪装，只要你身处与天然伪装相似的地形中，你对生物的敏捷（隐匿）检定就获得+10加值。你一旦移动或进行攻击，此效果即被压制，直到你的下回合开始。",
+				"你的伪装持续1小时，或直到环境条件将其破坏（如游泳或下雨）。"
+			]
+		},
+		{
+			"ENG_name": "Stand Against the Tide",
+			"name": "逆潮而立",
+			"source": "vighter",
+			"page": 16,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "生存专家",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"第15级时，每当一个生物攻击你且不具有优势时，你可以用你的反应使该生物对你的攻击检定具有劣势。你可以在攻击检定进行之前或之后使用该特性，但必须在检定结果确定前使用。"
+			]
+		},
+		{
+			"ENG_name": "Sixth Sense",
+			"name": "第六感",
+			"source": "vighter",
+			"page": 16,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "生存专家",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级时，你获得超常的感官，帮助你与看不见的生物战斗。当你攻击一个你看不见的生物时，你看不见它这一事实不会使你对它的攻击检定具有劣势。",
+				"只要隐形生物未对你隐匿、且你没有目盲或耳聋，你还能察觉30尺内任何隐形生物的位置。"
+			]
+		},
+		{
+			"ENG_name": "Tactician",
+			"name": "战术家",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "战术家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"效仿典型战术家的人运用的是经过系统钻研的战斗知识与战场领导力。对战术家而言，战斗是一门学问，有时甚至涵盖战斗之外的科目，例如武器锻造与书法。并非每个战士都能领会战术家范型所体现的历史、理论与技艺素养，但做到这一点的战士都是技艺精湛、学识渊博的全才。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战场卓越|战士（变体）|vighter|战术家|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战争学徒|战士（变体）|vighter|战术家|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Battlefield Superioriy",
+			"name": "战场卓越",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "战术家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在第3级选择此范型时，你习得额外的战技，并能运用你的战技卓越在战场上发布号令。",
+				"你习得一项自选的额外战技。你的战技选项详述于职业描述末尾。你在第7、10、15和18级会再各习得一项自选战技。",
+				"当你使用一项战技的卓越选项时，你还可以指示一名盟友额外采取行动。选择一个能看见或听到你的友方生物。该生物可以立即用其反应进行一次武器攻击，或移动至多一半移动距离。"
+			]
+		},
+		{
+			"ENG_name": "Student of War",
+			"name": "战争学徒",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "战术家",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级时，你获得一种自选工匠工具的熟练项。"
+			]
+		},
+		{
+			"ENG_name": "Know Your Enemy",
+			"name": "料敌机先",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "战术家",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级起，如果你在战斗外花费至少1分钟观察或与另一个生物互动，你可以获知其能力与你相比的某些信息。由DM告知你，就以下两项由你选择的特点而言，该生物是与你不相上下、胜过你还是不如你：",
+				{
+					"type": "list",
+					"items": [
+						"力量值",
+						"敏捷值",
+						"体质值",
+						"护甲等级",
+						"当前生命值",
+						"总职业等级（若有）",
+						"战士职业等级（若有）"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Harden Resolve",
+			"name": "坚定决心",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "战术家",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级时，你在战场上鼓舞人心的存在能帮助同伴摆脱病痛、重返战团。当你使用一项战技的卓越选项时，你可以选择一个能看见或听到你的友方生物。该生物可以立即结束一个正影响它的状态。若你使用了该特性，就不能再让生物受益于你的战场卓越特性。"
+			]
+		},
+		{
+			"ENG_name": "Improved Superiority",
+			"name": "精通卓越",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "战术家",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"第15级时，你突破战技极限的能力已超越大多数战士。你可以额外两次使用战技的卓越选项，并在短休或长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Display of Tactics",
+			"name": "战术展演",
+			"source": "vighter",
+			"page": 5,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "战术家",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级起，当你使用一项战技的卓越选项时，你可以选择一个能看见或听到你的友方生物。该生物可以用其反应使用你所使用的原始战技。任何豁免检定都使用你的战技DC。若你使用了该特性，就不能再让生物受益于你的战场卓越特性。"
+			]
+		},
+		{
+			"ENG_name": "Templar",
+			"name": "圣殿骑士",
+			"source": "vighter",
+			"page": 17,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "圣殿骑士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"entries": [
+				"以典型圣殿骑士为榜样的人献身于唯一的神圣使命：铲除亵渎魔法，弘扬其神祇的美德。圣殿骑士的力量来自他们对某位反对奥术魔法的特定神祇的虔诚，并得其神圣允准。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "引导神力|战士（变体）|vighter|圣殿骑士|vighter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神圣指引|战士（变体）|vighter|圣殿骑士|vighter|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Blessed Direction",
+			"name": "神圣指引",
+			"source": "vighter",
+			"page": 17,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "圣殿骑士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第3级，你习得{@spell 神导术}戏法，并获得{@skill 宗教}或{@skill 历史}（由你选择）之一的熟练项。你还获得将圣徽用作你通过引导神力所施展法术的法器的能力。"
+			]
+		},
+		{
+			"ENG_name": "Channel Divinity",
+			"name": "引导神力",
+			"source": "vighter",
+			"page": 17,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "圣殿骑士",
+			"subclassSource": "vighter",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"第3级时，你获得直接从你的神祇那里引导神圣能量的能力，并以此能量产生魔法效应。你起初拥有一种此类效应：恩赐。当你使用引导神力时，你选择产生哪种效应。随后你必须完成一次短休或长休才能再次使用引导神力。部分引导神力效应需要进行豁免检定。这些法术的DC为8+你的熟练加值+你的魅力调整值。从第6级起，你可以在两次休息之间使用两次引导神力特性。当你完成一次短休或长休后，你恢复已耗用的次数。",
+				{
+					"type": "entries",
+					"ENG_name": "Channel Divinity: Gift",
+					"name": "引导神力：恩赐",
+					"entries": [
+						"你可以用一个动作展示你信仰的徽记，并诵念祈祷向你的神祇求援。当你使用该特性时，你可以施放一个不高于相应环阶的{@filter 牧师法术列表中的预言或惑控法术|spells|source=null|class=牧师|school=D;E|level=1;2;3;4}，具体见下方\"天赐魔法\"表。魅力是你施展该法术的施法属性。",
+						{
+							"type": "table",
+							"caption": "天赐魔法",
+							"colLabels": [
+								"等级",
+								"法术环阶"
+							],
+							"rows": [
+								[
+									"3级",
+									"{@filter 1环|spells|source=null|class=牧师|school=D;E|level=1}"
+								],
+								[
+									"7级",
+									"{@filter 2环|spells|source=null|class=牧师|school=D;E|level=2}"
+								],
+								[
+									"13级",
+									"{@filter 3环|spells|source=null|class=牧师|school=D;E|level=3}"
+								],
+								[
+									"19级",
+									"{@filter 4环|spells|source=null|class=牧师|school=D;E|level=4}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Countermagic",
+			"name": "反制魔法",
+			"source": "vighter",
+			"page": 17,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "圣殿骑士",
+			"subclassSource": "vighter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"第7级起，你已经能熟练预判魔法的性质并延缓其效果。如果一个你能看见或听见的60尺内生物施放法术，你可以用你的反应尝试拖延其效果并有机会将其终止。若该法术为3环或更低、且施法时间为1动作或更短，该生物必须进行一次对抗的魅力检定以抵抗你的延缓效应。若你成功，该生物被迫专注该法术直到它的下回合，且必须在其下回合开始时立即施放该法术（无需动作）。若它无法施放，该法术作废。",
+				"你可以使用该特性两次。完成一次长休后，你恢复已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Residual Defense",
+			"name": "残余防御",
+			"source": "vighter",
+			"page": 17,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "圣殿骑士",
+			"subclassSource": "vighter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你应对魔法及其效果的历练赋予了你对抗魔法的条件反射。在受到一个法术或魔法来源的伤害后，你可以用你的反应获得对该伤害类型的抗性，直到你的下回合结束。若单一法术或效应造成不止一种类型的伤害，你获得对所造成的所有类型的抗性。"
+			]
+		},
+		{
+			"ENG_name": "Boon of Fervor",
+			"name": "狂热恩惠",
+			"source": "vighter",
+			"page": 17,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "圣殿骑士",
+			"subclassSource": "vighter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"第15级时，你的神祇嘉奖了你对目标的狂热追逐。当你使用动作如潮时，你以及30尺内任何能看到或听到你的任意数量生物获得等同于你战士等级的临时生命值。"
+			]
+		},
+		{
+			"ENG_name": "Disruption",
+			"name": "扰乱",
+			"source": "vighter",
+			"page": 17,
+			"className": "战士（变体）",
+			"classSource": "vighter",
+			"subclassShortName": "圣殿骑士",
+			"subclassSource": "vighter",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"第18级起，你与施法者作战的造诣使你发展出一种打断其持续魔法恩惠的技巧。你使用的任何影响某生物的战技，都会迫使该生物进行一次体质豁免检定以维持其专注。此次检定DC等同于你的战技豁免DC。若该战技还对生物造成伤害，它仍须如常为该伤害另外进行专注检定。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Anti-Magic Aura",
+			"name": "反魔法灵光",
+			"source": "vighter",
+			"page": 18,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"圣殿骑士范型"
+					]
+				}
+			],
+			"entries": [
+				"你散发出一道环绕自身15尺半径的压制灵光。每当一个生物在此灵光内施放法术，你可以用你的反应尝试惩罚它。该生物必须进行一次感知豁免检定，失败者受到1d4心灵伤害。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"当你在你的回合采取攻击动作时，你可以放弃一次攻击来强化此灵光的效果。其范围增加到30尺，且若生物未通过感知豁免检定，伤害增加到3d4。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Arresting Strike",
+			"name": "拦阻打击",
+			"source": "vighter",
+			"page": 7,
+			"featureType": [
+				"MV:VF"
+			],
+			"entries": [
+				"当一个生物处于你手持武器的正常射程内并移动时，你可以用一个反应尝试拦阻该生物的移动。它必须进行一次力量豁免检定。豁免失败者，其剩余移动距离减半，直到其回合结束。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"若该生物未通过此豁免检定，它还会被击倒为{@condition 倒地}状态。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Banish",
+			"name": "放逐",
+			"source": "vighter",
+			"page": 10,
+			"featureType": [
+				"MV:SS"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，此射击将灌注防护魔法。命中时，你制造一个阻碍该生物攻击的守护。直到其下回合结束，该生物进行的任何非魔法武器攻击的伤害都不再加其力量或敏捷调整值。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"若此射击命中一个生物，该生物必须通过一次魅力豁免检定，否则将被放逐。以此方式被放逐期间，其速度为0且处于{@condition 失能}状态。在其下回合结束时，目标重新出现在它离开的空间，或最近的无占据空间中。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Brute Bane",
+			"name": "蛮力克星",
+			"source": "vighter",
+			"page": 11,
+			"featureType": [
+				"MV:SS"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，此射击将灌注死灵魔法。命中时，一股鬼魅能量包围目标，阻止其恢复生命值，直到其回合开始。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"若此射击命中一个生物，它额外受到1d8黯蚀伤害。此外，该生物必须通过一次体质豁免检定。豁免失败者，其武器攻击的伤害减半，直到你的下回合开始。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Bursting",
+			"name": "迸裂",
+			"source": "vighter",
+			"page": 11,
+			"featureType": [
+				"MV:SS"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，此射击将灌注塑能魔法。命中时，投射物迸裂出碎片。目标5尺内的每个其他生物必须进行一次敏捷豁免检定，失败者受到1d4穿刺伤害。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"若此射击命中一个生物，其10尺内的每个其他生物额外受到1d8力场伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Charming",
+			"name": "魅惑",
+			"source": "vighter",
+			"page": 11,
+			"featureType": [
+				"MV:SS"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，此射击将灌注惑控魔法。命中时，选择目标30尺内的一名盟友。受影响的生物对那名盟友的攻击检定具有劣势，直到其下回合结束。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"若此射击命中一个生物，它额外受到1d8心灵伤害。此外，选择目标30尺内你的一名盟友。你的目标必须通过一次感知豁免检定，否则将{@condition 魅惑}于所选盟友，直到你的下回合开始。若所选盟友对目标造成任何伤害，此效果提前结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Commander's Strike",
+			"name": "指挥官奇袭",
+			"source": "vighter",
+			"page": 7,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"战术家范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃其中一次攻击，并用一个附赠动作指挥你的一名同伴出击。此时，选择一个能看见或听到你的友方生物。该生物可以立即用其反应进行一次武器攻击。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"此攻击具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Dancing Weapons",
+			"name": "飞舞武器",
+			"source": "vighter",
+			"page": 10,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"你可以用一个附赠动作抽出不超过你智力调整值数量的投掷武器，使它们漂浮在你身前的空中。只要你正在进行远程武器攻击，你就可以在攻击的同时取出其中一件武器。在你的回合结束时，魔法消散，仍漂浮的武器落到你脚边的地面上。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"剩余武器不再在你的回合结束时消散，而是开始绕着你缓缓盘旋。生物对你进行的第一次近战攻击将使其受到等同于其中一件武器伤害骰的力场伤害。在你的下回合结束时，魔法消散，武器落到你脚边的地面上。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Disarming Attack",
+			"name": "缴械攻击",
+			"source": "vighter",
+			"page": 7,
+			"featureType": [
+				"MV:VF"
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃其中一次攻击，尝试缴械一个处于你手持武器射程内的生物，迫使它丢下一件由你选择的其持握物品。此时不进行攻击检定，目标必须进行一次力量豁免检定。豁免失败者，它丢下你选择的物品。物品落在其脚边。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以在此战技中对该目标进行一次武器攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Distracting Strike",
+			"name": "扰乱打击",
+			"source": "vighter",
+			"page": 7,
+			"featureType": [
+				"MV:VF"
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃其中一次攻击，对一个处于你手持武器射程内的生物制造破绽。你施展花式技巧、干扰目标，或以其他方式协作，使你盟友的攻击更为有效。若在你下回合前有盟友攻击该目标，其第一次攻击检定具有优势。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以在此战技中对该目标进行一次武器攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Divination Sphere",
+			"name": "预言法球",
+			"source": "vighter",
+			"page": 18,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"圣殿骑士范型"
+					]
+				}
+			],
+			"entries": [
+				"你可以用一个动作召唤一颗光球，以双手持握。你无需动作即可说出一个指令语，光球表面便会变动，生出指向30尺内魔法效应方向的尖刺。每根尖刺的长度是对其与该效应距离的粗略估计。被1尺厚石头、1寸普通金属、一薄层铅、或3尺厚木头或泥土阻挡的魔法，无法被此战技的能力探知。若你放开光球、受到伤害或采取任何其他动作，此效果立即结束。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"此效果漂浮在你身前，解放你的双手。它最多持续1分钟，但你必须如同专注法术一般维持它。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ethereal",
+			"name": "虚体",
+			"source": "vighter",
+			"page": 11,
+			"featureType": [
+				"MV:SS"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，此射击将灌注变化魔法。此攻击无视半身掩护，并将四分之三掩护视作半身掩护。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"此时不进行攻击检定，此射击沿一条1尺宽、30尺长的直线向前飞出。射击无害地穿过物体，无视掩护。该直线上的每个生物必须进行一次敏捷豁免检定。豁免失败的目标受到如同被此射击命中一般的伤害，外加1d8力场伤害；豁免成功的目标受到一半伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ethereal Edge",
+			"name": "虚体之刃",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥法骑士范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合以联结武器进行攻击时，你将武器刃缘转化为魔能。此攻击造成力场伤害，而非其常规伤害类型。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以传送最多10尺到一个你能看见的无占据空间。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Feedback Strike",
+			"name": "反馈打击",
+			"source": "vighter",
+			"page": 18,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"圣殿骑士范型"
+					]
+				}
+			],
+			"entries": [
+				"当你以武器攻击命中一个生物时，若该生物被迫为维持法术专注进行体质豁免检定而失败，它额外受到1d8心灵伤害。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"因此攻击伤害而进行的任何专注豁免检定，你都使其具有劣势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Feinting Attack",
+			"name": "诡诈攻击",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃其中一次攻击并尝试虚晃，为自己制造出击的破绽。选择5尺内一个生物作为目标。你对那个生物的下一次攻击检定具有优势。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"此外，目标无法进行任何反应，直到你的下回合结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Finisher",
+			"name": "终结技",
+			"source": "vighter",
+			"page": 15,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"决斗家范型"
+					]
+				}
+			],
+			"entries": [
+				"当你采取攻击动作、并以单手持握的一件轻型或灵巧武器进行近战武器攻击时，你可以用一个附赠动作以另一手持握的一件轻型武器进行一次远程武器攻击。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"该附赠动作的远程武器攻击检定只要掷出1以外的结果即命中，且掷骰19-20时为重击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Flourish",
+			"name": "花式",
+			"source": "vighter",
+			"page": 15,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"决斗家范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃其中一次攻击，对一个处于你手持近战武器射程内的生物尝试防御性花式。此时不进行攻击检定，目标必须进行一次敏捷豁免检定。豁免失败的生物对你的攻击检定具有劣势，直到你的下回合开始。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"此外，该生物无法自愿远离你，直到你的下回合开始。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Foe Retribution",
+			"name": "宿敌报复",
+			"source": "vighter",
+			"page": 13,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"赏金猎人范型"
+					]
+				}
+			],
+			"entries": [
+				"当一个60尺内的宿敌以攻击命中或未命中你时，只要你能够看见该生物，你就可以用你的反应在其攻击后立即攻击它。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"处于敌对生物5尺内不会使此攻击检定具有劣势，且此攻击具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Foil",
+			"name": "挫击",
+			"source": "vighter",
+			"page": 15,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"决斗家范型"
+					]
+				}
+			],
+			"entries": [
+				"当一个生物以近战攻击未命中你时，只要你有一只空手，你就可以用你的反应尝试将其缴械。你必须进行一次力量或敏捷检定，DC等同于该生物的攻击检定结果。若你成功，你缴去其武器，武器落到你脚边的地面上。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"若你成功缴械该生物，你可以选择直接持用该武器，而非任其落到地上。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Goading Attack",
+			"name": "挑衅攻击",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃其中一次攻击，尝试激将一个处于你手持武器射程内的生物来攻击你。该生物必须进行一次感知豁免检定。豁免失败的目标对除你以外的目标进行的全部攻击检定具有劣势，直到你的下回合结束。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以在此战技中对该目标进行一次近战武器攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Grounding Strike",
+			"name": "坠地打击",
+			"source": "vighter",
+			"page": 10,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"你可以用一个动作为一件投掷武器或一枚弹药灌注负重般的变化魔法。此投射物会自动寻找射程内一个由你选择的目标。该生物必须通过一次力量豁免检定，否则便被沉重的魔法压附。若该生物具有飞行速度，其飞行速度减半，直到其下回合结束。受此魔法影响的空中生物以每轮30尺的速度下降，直到落地或效果结束。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"此效果不再持续到目标的下回合结束，而是持续1分钟，且该生物的步行速度也减半。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hidden Strike",
+			"name": "隐匿打击",
+			"source": "vighter",
+			"page": 10,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"当攻击一个看不见你的生物时，你可以为攻击灌注少量幻术魔法来掩饰你的位置。攻击未命中时，你不会暴露自己的位置。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你的幻术魔法效力增强。若攻击命中，攻击目标必须通过一次感知豁免检定。豁免失败者将无法得知你的位置\u2014\u2014掷一个d8并为每个数字指定一个方向，该生物误以为攻击来自那个方向。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Infused Strike",
+			"name": "灌注打击",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥法骑士范型"
+					]
+				}
+			],
+			"entries": [
+				"在施放一个造成伤害的1环或更高环阶法术后，你的下回合结束前以联结武器进行且命中的下一次武器攻击，额外造成1d6与该法术同类型的伤害。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"当你进行被此战技灌注的攻击时，你也对攻击目标10尺内由你选择的全部生物造成该额外伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Knock Heads",
+			"name": "撞头",
+			"source": "vighter",
+			"page": 14,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"庞然恶霸范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作并擒抱一个比你小的生物时，你可以用你的附赠动作尝试再擒抱另一个比你小的生物。若你成功，作为擒抱的一部分，你将这两个生物互相撞击，使它们各自受到如同即兴武器般的伤害。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你的附赠动作擒抱尝试具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Knock-Out Strike",
+			"name": "击昏打击",
+			"source": "vighter",
+			"page": 13,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"赏金猎人范型"
+					]
+				}
+			],
+			"entries": [
+				"当你对一个生物进行攻击时，可以尝试非致命打击。若该攻击命中且伤害使该生物生命值降至0，它将陷入{@condition 昏迷}而非直接死亡。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"若该生物的剩余生命值低于你的战士等级，目标将被击至{@condition 昏迷}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Lunging Attack",
+			"name": "突刺攻击",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃其中一次攻击进行突刺。你沿一条5尺宽、长度等同你触及的直线攻击。范围内的任何生物必须进行一次敏捷豁免检定，失败者受到你的常规武器伤害。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你在此次攻击中的触及增加10尺。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Maneuvering Attack",
+			"name": "灵动攻击",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"战术家范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃其中一次攻击，并用一个附赠动作指挥你的一名同伴重新走位。此时，选择一个能看见或听到你的友方生物。该生物可以立即用其反应移动至多一半速度的距离。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"该生物可以用其反应移动至其全部移动距离，且在此过程中不引发借机攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Menacing Attack",
+			"name": "恐吓攻击",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"勇士范型"
+					]
+				}
+			],
+			"entries": [
+				"当你以武器攻击命中一个生物时，你可以尝试恐吓目标，以取代造成武器伤害。目标必须进行一次感知豁免检定。豁免失败者，它对你{@condition 恐慌}，直到你的下回合结束。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"当你进行此攻击时，15尺内所有能看到或听到你的生物也必须进行此感知豁免检定，失败者对你{@condition 恐慌}，直到你的下回合结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Parry",
+			"name": "格挡",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"entries": [
+				"当一个生物以非魔法武器对你造成伤害时，你可以用你的反应使钝击、穿刺和挥砍伤害减少等同于你敏捷调整值的数值。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"改为使所受伤害减半。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Pushing Attack",
+			"name": "推撞攻击",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"勇士范型"
+					]
+				}
+			],
+			"entries": [
+				"当你以武器攻击命中一个生物时，你可以尝试将目标击退。若目标为大型或更小，你可以将它推离你至多5尺。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以推动的目标改为超大型或更小。若目标比你小，它改为被推开20尺。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Quick Positioning",
+			"name": "迅捷走位",
+			"source": "vighter",
+			"page": 8,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"战术家范型"
+					]
+				}
+			],
+			"entries": [
+				"你可以用一个附赠动作进行{@action 疾走}动作。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你还同时获得{@action 撤离}动作的收益。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Rally",
+			"name": "重整旗鼓",
+			"source": "vighter",
+			"page": 9,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"战术家范型"
+					]
+				}
+			],
+			"entries": [
+				"在你的回合，你可以用一个附赠动作提振一名同伴的斗志。此时，选择一个能看见或听到你的友方生物。该生物获得等同于你魅力调整值的临时生命值（至少为1）。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"30尺内由你选择、且能看到或听到你的所有生物获得等同于你魅力调整值两倍的临时生命值（至少为1）。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Restraining Order",
+			"name": "限制令",
+			"source": "vighter",
+			"page": 13,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"赏金猎人范型"
+					]
+				}
+			],
+			"entries": [
+				"当一个你能看见、处于你武器正常射程内的生物即将以其移动离开你的视线时，你可以用你的反应立即对其进行一次远程武器攻击。若此攻击命中该生物，则不掷伤害，该生物被{@condition 束缚}，直到其下回合结束。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"该生物改为被{@condition 震慑}，而非被束缚。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Riposte",
+			"name": "反击",
+			"source": "vighter",
+			"page": 9,
+			"featureType": [
+				"MV:VF"
+			],
+			"entries": [
+				"当一个生物以近战攻击未命中你时，你可以用你的反应对该生物进行一次具有劣势的近战武器攻击。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以用你的反应进行一次具有优势的近战武器攻击，或施放一个指定单一目标的戏法。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadow",
+			"name": "暗影",
+			"source": "vighter",
+			"page": 11,
+			"featureType": [
+				"MV:SS"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"奥术神射手范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，此射击将灌注幻术魔法。命中时，该生物依赖视觉的属性检定具有劣势，直到其下回合开始。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"此时不进行攻击检定，改为选择你武器正常射程内的一个目标点。命中时，该点10尺内的所有生物必须进行一次感知豁免检定。未通过豁免的受影响生物受到1d8心灵伤害，并且无法看见5尺以外的任何事物，直到你的下回合开始。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sweeping Attack",
+			"name": "横扫攻击",
+			"source": "vighter",
+			"page": 9,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"勇士范型"
+					]
+				}
+			],
+			"entries": [
+				"当你以近战武器攻击命中一个生物时，你可以尝试以同一攻击伤及另一个生物。选择原目标5尺内且在你触及范围内的另一个生物。若原攻击检定足以命中第二个生物，它受到等同于你力量调整值的伤害。伤害类型与原攻击相同。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以额外选择原目标或次目标5尺内、在你触及范围内的又一个生物。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Toss",
+			"name": "投掷",
+			"source": "vighter",
+			"page": 14,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"庞然恶霸范型"
+					]
+				}
+			],
+			"entries": [
+				"当你在你的回合采取攻击动作时，你可以放弃一次攻击，投掷一个被你擒抱的生物。你进行一次力量（运动）检定，与目标的力量（运动）或敏捷（特技）检定（由目标选择使用的属性）对抗。若你成功，你将该生物朝你选择的方向投掷至多25尺。若该生物撞上物体，此移动结束，它落在离你最近的无占据空间中。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以将该生物掷向一个由与其同体型或更小生物占据的空间。若你这样做，两个生物都必须进行一次敏捷豁免检定，失败者被击倒为{@condition 倒地}状态。被你投掷的生物落在离你最近的无占据空间中。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tracer",
+			"name": "追踪弹",
+			"source": "vighter",
+			"page": 17,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"生存专家范型"
+					]
+				}
+			],
+			"entries": [
+				"当你初次对某个生物应用猎物标记特性时，你对它的下一次攻击检定具有优势。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以立即对你在本回合施加了猎物标记的生物进行一次武器攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Volley",
+			"name": "箭雨",
+			"source": "vighter",
+			"page": 17,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"生存专家范型"
+					]
+				}
+			],
+			"entries": [
+				"选择两个彼此相距5尺内、位于你武器正常射程内且你能看见的生物。你可以放弃其中一次攻击，对两个生物进行一次齐射攻击。你必须为每个目标备足弹药。对两个生物进行一次攻击检定。若此攻击命中，目标受到你的常规武器伤害，但不加你的属性调整值。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你可以指定你武器射程内能看见的某一点5尺内的任意数量生物。你必须为每个目标备足弹药。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Whirlwind",
+			"name": "旋风",
+			"source": "vighter",
+			"page": 17,
+			"featureType": [
+				"MV:VF"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"生存专家范型"
+					]
+				}
+			],
+			"entries": [
+				"选择你触及范围内任意数量的生物。你可以用你的动作对它们各自进行一次近战攻击。你对每个命中的生物造成等同于你攻击调整值的伤害。",
+				{
+					"type": "entries",
+					"ENG_name": "Superiority",
+					"name": "卓越",
+					"entries": [
+						"你对每个命中的生物造成你的常规武器伤害。"
+					]
+				}
+			]
+		}
+	]
+}
