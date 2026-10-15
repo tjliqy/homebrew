@@ -1,0 +1,1714 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "OSH2024",
+				"abbreviation": "OSH",
+				"full": "奥洛弗武士手册",
+				"url": "https://www.reddit.com/r/homebrewery/comments/1b1k9ja/comment/ksfws66/?context=3",
+				"version": "1.1.4",
+				"dateReleased": "2024-02-28",
+				"authors": [
+					"Maeglad Olofir"
+				],
+				"convertedBy": [
+					"Maeglad Olofir"
+				],
+				"color": "2292E7"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1580617082,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "8088060436"
+	},
+	"class": [
+		{
+			"ENG_name": "Samurai",
+			"name": "武士",
+			"source": "OSH2024",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"animal handling",
+								"history",
+								"insight",
+								"medicine",
+								"nature",
+								"perception"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"tools": [
+					"{@item 书法工具|phb}"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"heavy"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"heavy": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一件军用武器或 (b) 两件简易武器",
+					"(a) 一件{@item 链甲|phb}，或 (b) 一件{@item 鳞甲|phb}或 (c) 一把{@item 长弓|phb}，以及{@item 箭矢 (20)|phb|20支箭}",
+					"(a) 一个{@item 探索套组|phb}或 (b) 一个{@item 外交套组|phb}"
+				],
+				"goldAlternative": "{@dice 2d4×10|2d4 × 10|起始金币}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"tools": [
+						"{@item 书法工具|phb}"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"heavy"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"heavy": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"挑战次数"
+					],
+					"rows": [
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							6
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"挑战伤害"
+					],
+					"rows": [
+						[
+							"{@dice 1d6}"
+						],
+						[
+							"{@dice 1d6}"
+						],
+						[
+							"{@dice 1d6}"
+						],
+						[
+							"{@dice 1d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"挑战|武士|OSH2024|1",
+				"居合术|武士|OSH2024|1",
+				"战斗风格|武士|OSH2024|2",
+				"献祭涌动|武士|OSH2024|2",
+				{
+					"classFeature": "武士荣誉|武士|OSH2024|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|武士|OSH2024|4",
+				"额外攻击|武士|OSH2024|5",
+				{
+					"classFeature": "荣誉特性|武士|OSH2024|6",
+					"gainSubclassFeature": true
+				},
+				"决心|武士|OSH2024|7",
+				"属性值提升|武士|OSH2024|8",
+				"格挡|武士|OSH2024|9",
+				"传统|武士|OSH2024|10",
+				{
+					"classFeature": "荣誉特性|武士|OSH2024|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|武士|OSH2024|12",
+				"精准打击|武士|OSH2024|13",
+				"凝神|武士|OSH2024|14",
+				"利落斩击|武士|OSH2024|15",
+				"属性值提升|武士|OSH2024|16",
+				"静息冥想|武士|OSH2024|17",
+				{
+					"classFeature": "荣誉特性|武士|OSH2024|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|武士|OSH2024|19",
+				"完全挑战|武士|OSH2024|20"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Honor of the Juggernaut",
+			"name": "巨像之誉",
+			"shortName": "巨像",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"page": 8,
+			"subclassFeatures": [
+				"巨像之誉|武士|OSH2024|巨像|OSH2024|3",
+				"铁壁架势|武士|OSH2024|巨像|OSH2024|3|",
+				"巨像之智|武士|OSH2024|巨像|OSH2024|6",
+				"强力格挡|武士|OSH2024|巨像|OSH2024|11",
+				"势不可挡|武士|OSH2024|巨像|OSH2024|18"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Oni",
+			"name": "恶鬼之誉",
+			"shortName": "恶鬼",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassFeatures": [
+				"恶鬼之誉|武士|OSH2024|恶鬼|OSH2024|3",
+				"妖怪|武士|OSH2024|恶鬼|OSH2024|3",
+				"蛮横打击|武士|OSH2024|恶鬼|OSH2024|6",
+				"憎恨灵光|武士|OSH2024|恶鬼|OSH2024|11",
+				"恐惧化身|武士|OSH2024|恶鬼|OSH2024|18"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Rabbit",
+			"name": "兔之誉",
+			"shortName": "兔",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"page": 4,
+			"subclassFeatures": [
+				"兔之誉|武士|OSH2024|兔|OSH2024|3",
+				"闪避之术|武士|OSH2024|兔|OSH2024|3",
+				"旋身与单足旋转|武士|OSH2024|兔|OSH2024|6",
+				"巧妙防御|武士|OSH2024|兔|OSH2024|11",
+				"灵活动作|武士|OSH2024|兔|OSH2024|18",
+				"疾速爆发|武士|OSH2024|兔|OSH2024|18"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Revenger",
+			"name": "复仇者之誉",
+			"shortName": "复仇者",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"page": 7,
+			"subclassFeatures": [
+				"复仇者之誉|武士|OSH2024|复仇者|OSH2024|3",
+				"憎恨|武士|OSH2024|复仇者|OSH2024|3",
+				"血腥征服|武士|OSH2024|复仇者|OSH2024|6",
+				"撕裂|武士|OSH2024|复仇者|OSH2024|11",
+				"完全憎恨|武士|OSH2024|复仇者|OSH2024|18"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Slayer",
+			"name": "猎杀者之誉",
+			"shortName": "猎杀者",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"page": 5,
+			"subclassFeatures": [
+				"猎杀者之誉|武士|OSH2024|猎杀者|OSH2024|3",
+				"呼吸法|武士|OSH2024|猎杀者|OSH2024|3",
+				"奇迹佯攻|武士|OSH2024|猎杀者|OSH2024|6",
+				"专注呼吸|武士|OSH2024|猎杀者|OSH2024|11",
+				"常时呼吸法|武士|OSH2024|猎杀者|OSH2024|18"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Sparrow",
+			"name": "雀之誉",
+			"shortName": "雀",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassFeatures": [
+				"雀之誉|武士|OSH2024|雀|OSH2024|3",
+				"雀之眼|武士|OSH2024|雀|OSH2024|3",
+				"稳射|武士|OSH2024|雀|OSH2024|3",
+				"敏锐感官|武士|OSH2024|雀|OSH2024|6",
+				"射手还击|武士|OSH2024|雀|OSH2024|11",
+				"爆头|武士|OSH2024|雀|OSH2024|18"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Spellbound",
+			"name": "咒缚者之誉",
+			"shortName": "咒缚者",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"page": 9,
+			"spellcastingAbility": "cha",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				8,
+				9
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"3": [
+							{
+								"all": "level=0|class=魔契师"
+							},
+							{
+								"all": "level=1|class=魔契师"
+							}
+						],
+						"6": [
+							{
+								"all": "level=2|class=魔契师"
+							}
+						],
+						"9": [
+							{
+								"all": "level=3|class=魔契师"
+							}
+						],
+						"12": [
+							{
+								"all": "level=4|class=魔契师"
+							}
+						],
+						"16": [
+							{
+								"all": "level=5|class=魔契师"
+							}
+						]
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Spellbound",
+							"name": "咒缚者",
+							"source": "OSH2024"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|class=魔契师}",
+						"{@filter 已知法术|spells|class=魔契师}",
+						"法术位",
+						"法术位环阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							1,
+							"{@filter 1环|spells|level=1|class=魔契师}"
+						],
+						[
+							2,
+							2,
+							1,
+							"{@filter 1环|spells|level=1|class=魔契师}"
+						],
+						[
+							2,
+							3,
+							1,
+							"{@filter 1环|spells|level=1|class=魔契师}"
+						],
+						[
+							2,
+							3,
+							1,
+							"{@filter 2环|spells|level=2|class=魔契师}"
+						],
+						[
+							2,
+							3,
+							1,
+							"{@filter 2环|spells|level=2|class=魔契师}"
+						],
+						[
+							2,
+							4,
+							1,
+							"{@filter 2环|spells|level=2|class=魔契师}"
+						],
+						[
+							2,
+							4,
+							2,
+							"{@filter 3环|spells|level=3|class=魔契师}"
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 3环|spells|level=3|class=魔契师}"
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 3环|spells|level=3|class=魔契师}"
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 4环|spells|level=4|class=魔契师}"
+						],
+						[
+							3,
+							6,
+							2,
+							"{@filter 4环|spells|level=4|class=魔契师}"
+						],
+						[
+							3,
+							6,
+							2,
+							"{@filter 4环|spells|level=4|class=魔契师}"
+						],
+						[
+							3,
+							6,
+							3,
+							"{@filter 4环|spells|level=4|class=魔契师}"
+						],
+						[
+							3,
+							7,
+							3,
+							"{@filter 5环|spells|level=5|class=魔契师}"
+						],
+						[
+							3,
+							7,
+							3,
+							"{@filter 5环|spells|level=5|class=魔契师}"
+						],
+						[
+							3,
+							8,
+							3,
+							"{@filter 5环|spells|level=5|class=魔契师}"
+						],
+						[
+							3,
+							8,
+							3,
+							"{@filter 5环|spells|level=5|class=魔契师}"
+						],
+						[
+							3,
+							9,
+							3,
+							"{@filter 5环|spells|level=5|class=魔契师}"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"咒缚者之誉|武士|OSH2024|咒缚者|OSH2024|3",
+				"流转|武士|OSH2024|咒缚者|OSH2024|6",
+				"奥术格挡|武士|OSH2024|咒缚者|OSH2024|11",
+				"这就是力量|武士|OSH2024|咒缚者|OSH2024|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Challenge",
+			"name": "挑战",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 1,
+			"entries": [
+				"武士能够磨砺自己的专注，在战斗中释放出更为致命的剑技。武士可以对60尺内选定的单个生物发起挑战。在接下来的1分钟内，武士针对该生物获得以下特性：",
+				"• 对该生物的攻击检定具有优势。",
+				"• 当你以武器对该生物造成伤害时，每轮一次，额外造成{@dice 1d6}伤害。此额外伤害在5级、10级和15级时各增加1d6。",
+				"• 每轮一次，面对该生物发动的任何攻击，你可以将你的AC视为提高3点。或者，在该生物强迫你进行的任何豁免检定上获得此加值。",
+				"若你将某生物的生命值降至0，你可以用附赠动作或反应将你的挑战转移到射程内的另一个生物身上，并将你的挑战持续时间延长2轮。",
+				"你有一次该能力的使用次数，并在短休后恢复。随着你在此职业中的等级提升，你将获得额外的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Iajutsu",
+			"name": "居合术",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 1,
+			"entries": [
+				"此外，在1级时，你的先攻检定具有优势。在战斗的第一轮中，你获得以下收益：",
+				"• 你拥有一个额外的动作，可以用它进行一次武器攻击，或执行侦查、疾走或撤离动作。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 2,
+			"entries": [
+				"在2级时，你采用一种特定的战斗风格作为你的专长。从以下选项中选择一项。即使你之后能再次选择，也不能多次选择同一战斗风格选项。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Archery",
+							"type": "entries",
+							"name": "箭术",
+							"entries": [
+								"你使用远程武器进行攻击检定时具有+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Defense",
+							"type": "entries",
+							"name": "防御",
+							"entries": [
+								"着装护甲时，你的AC获得 +1加值。"
+							]
+						},
+						{
+							"ENG_name": "Dueling",
+							"type": "entries",
+							"name": "对决",
+							"entries": [
+								"单手持用一把近战武器，且并未同时持用其他武器时，你用该武器攻击的伤害掷骰获得 +2加值。"
+							]
+						},
+						{
+							"ENG_name": "Great Weapon Fighting",
+							"type": "entries",
+							"name": "巨武器战斗",
+							"entries": [
+								"双手持用一把近战武器发动攻击时，若你的伤害掷骰掷出1或2，则可以选择重掷。不过哪怕其仍是1或2，你都必须接受重掷的数值。此外，该武器必须具有双手或两用属性。"
+							]
+						},
+						{
+							"ENG_name": "Two-Weapon Fighting",
+							"type": "entries",
+							"name": "双武器战斗",
+							"entries": [
+								"当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sacrificial Surge",
+			"name": "献祭涌动",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 2,
+			"entries": [
+				"你已学会以纯粹的心志力量将身体机能逼至常人极限之外，以自身精力换取绝对的专注。你可以用附赠动作让自己在以下技能上获得优势：特技、运动、威吓、察觉或隐匿。作为代价，你受到1d4暗蚀伤害，此伤害无法以任何方式减免或无视。此伤害随你的人物等级增长，在6级、12级和18级时提升，最高为5d4。",
+				"另外，若你在挑战期间将某生物的生命值降至0，你可以动用献祭涌动将挑战转移给一个新目标，而无需使用附赠动作或反应。"
+			]
+		},
+		{
+			"ENG_name": "Samurai Honor",
+			"name": "武士荣誉",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 3,
+			"entries": [
+				"在3级时，你将自己与一条被称为\"荣誉\"的道路联系在一起。荣誉决定了你行走的道路、你获得的能力，以及你的未来。子职列于职业特性之后。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 5,
+			"entries": [
+				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Honor Feature",
+			"name": "荣誉特性",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 6,
+			"entries": [
+				"在6级时，你从你的武士荣誉中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Resolve",
+			"name": "决心",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 7,
+			"entries": [
+				"在7级时，当你在一次智力、感知或魅力豁免检定中失败时，你可以用反应重掷一次。你在短休后恢复此特性的使用次数。在14级和18级时，你各获得一次额外的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Parry",
+			"name": "格挡",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 9,
+			"entries": [
+				"在9级时，你的武器训练已足以让你招架敌人来袭的攻击。当某生物将以近战武器对你造成伤害时，只要你手中持有一件你熟练的武器，你就可以用反应使该伤害减少{@dice 1d10}+你的力量或敏捷调整值。若你将伤害减至0，你可以选择以下结果之一：",
+				"• 该生物被缴械。",
+				"• 该生物受到4点来自你武器的伤害。",
+				"若你格挡的生物体型比你大，你们之间每相差一级体型，你的格挡掷骰就受到3点减值。就此能力而言，小型体型的武士视为中型体型。"
+			]
+		},
+		{
+			"ENG_name": "Tradition",
+			"name": "传统",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 10,
+			"entries": [
+				"在10级时，你的道路已行至武技超群与心志刚毅之间的岔路口。你必须选择以下能力之一，且此后无法更改：",
+				"• 顽强精神。你获得感知豁免检定的熟练项，且在上述豁免检定上不会具有劣势。",
+				"• 威压形态。你的攻击化作连绵不断的痛击。当你以攻击命中某生物时，该生物被标记，直到你的下回合结束。当你击中一个被标记的生物时，你额外掷一颗你武器的伤害骰。你每轮只能标记一个生物一次。"
+			]
+		},
+		{
+			"ENG_name": "Honor Feature",
+			"name": "荣誉特性",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 11,
+			"entries": [
+				"在11级时，你从你的武士荣誉中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Precise Strike",
+			"name": "精准打击",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 13,
+			"entries": [
+				"在13级时，当你使用熟练的武器进行攻击检定时，你的重击范围视为19-20。"
+			]
+		},
+		{
+			"ENG_name": "Focus",
+			"name": "凝神",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 14,
+			"entries": [
+				"在14级时，你免疫恐慌和魅惑状态。"
+			]
+		},
+		{
+			"ENG_name": "Clean Cut",
+			"name": "利落斩击",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 15,
+			"entries": [
+				"在15级时，当你对被挑战的生物打出重击时，你额外造成2d6伤害，伤害类型与你的武器一致。若你重击的是一个生命值低于其上限50%的生物，此额外伤害提升为4d6。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Restful Meditation",
+			"name": "静息冥想",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 17,
+			"entries": [
+				"到17级时，你已能够静默平和地让心神得到休憩，从而更高效地休息。当你将要进行长休时，你可以改为选择冥想。一次冥想耗时4小时而非8小时\u2014\u2014对于已能进行冥想的生物（例如精灵），则缩短为2小时。",
+				"当你冥想时，你仍敏锐地察觉周遭的动静。你不会在察觉检定上具有劣势。",
+				"另外，你也可以净化心神中的侵害。通过整整8小时的冥想，你可以对自己施展高等复原术。"
+			]
+		},
+		{
+			"ENG_name": "Honor Feature",
+			"name": "荣誉特性",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 18,
+			"entries": [
+				"在18级时，你从你的武士荣誉中获得一项特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "True Challenge",
+			"name": "完全挑战",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"level": 20,
+			"entries": [
+				"在20级时，只要你的挑战处于生效状态，它便适用于所有生物，并且你获得三次额外的挑战使用次数。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Honor of the Juggernaut",
+			"name": "巨像之誉",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "巨像",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"踏上巨像之路的人，是凭借伟力与魁伟身躯摧垮敌人的强大且势不可挡的战士。他们的攻击瓦解敌人的防御，同时令自身防御固若金汤。"
+			]
+		},
+		{
+			"ENG_name": "Iron Stance",
+			"name": "铁壁架势",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "巨像",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你受训进入一种迟缓却坚固的架势，只有身着中甲或重甲时才能进入。你可以用附赠动作进入铁壁架势。铁壁架势没有持续时间，在你回合开始时以一个自由动作退出。当你处于此架势中时，获得以下特性：",
+				"• 你的AC提升3点。",
+				"• 你的力量豁免检定具有优势。",
+				"• 你的速度减半。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "破势|武士|OSH2024|巨像|OSH2024|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Posture Break",
+			"name": "破势",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "巨像",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"此外，在3级时，当你处于铁壁架势中时，你的攻击冷酷而凶残。当你以你熟练的力量型近战武器造成伤害时，目标的AC降低1点。此降低持续到其下回合结束，最多叠加2层。",
+				"在11级时，你每次造成伤害所降低的目标AC变为2点，累计降低量最多为3点。"
+			]
+		},
+		{
+			"ENG_name": "Wisdom of the Juggernaut",
+			"name": "巨像之智",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "巨像",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的教义强调对心神的绝对掌控。在6级时，在挑战期间，你将熟练加值的一半加到所有感知、魅力和智力豁免检定上。"
+			]
+		},
+		{
+			"ENG_name": "Mighty Parry",
+			"name": "强力格挡",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "巨像",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的格挡威力惊人。处于铁壁架势中时，你的格挡掷骰获得+3加值。此外，若伤害被减至5点或更低，你可以选择将该生物击退10尺或使其倒地。此效果只能用于与你体型相同或大一级的生物。"
+			]
+		},
+		{
+			"ENG_name": "Unstoppable",
+			"name": "势不可挡",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "巨像",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，就连死亡也难以带走你的躯体。当你处于铁壁架势中且生命值降至0时，你仍保持意识清醒。你仍需照常进行死亡豁免检定。若你三次全部成功，则自动稳定在1生命值。若你掷出自然20，则稳定在10生命值。"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Oni",
+			"name": "恶鬼之誉",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "恶鬼",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"行于恶鬼之道者，或生来如此，或自愿化身庞大骇人的怪物。他们常被周遭之人疏远，且多步入残忍邪恶之途\u2014\u2014大多数恶鬼武士最终都倒在同侪刀下......"
+			]
+		},
+		{
+			"ENG_name": "Oni Unleashed",
+			"name": "恶鬼解放",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "恶鬼",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级时，你能够解放自己真正的威能。当你发起挑战时，你化身为近乎真恶鬼的形貌，长出尖利的獠牙、慑人的放光双目与魁伟的躯体。直到你的挑战结束前，你获得以下收益：",
+				"• 数量等于你的人物等级×1.5的临时生命值。",
+				"• 你的体型提升一级，触及范围增加5尺。",
+				"• 当你在力量豁免检定或力量检定中掷出低于6的数值时，将其视为6。",
+				"• 你可以用附赠动作执行推撞动作。"
+			]
+		},
+		{
+			"ENG_name": "Yōkai",
+			"name": "妖怪",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "恶鬼",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你的形态发生了永久改变\u2014\u2014无论是源于你自身的内在力量，还是你所经历的某种化学过程。你的外表变得愈发近似魔性的恶鬼。你可能长出角，瞳孔可能变为竖缝，皮肤也可能生出鳞片。你获得以下特性：",
+				"• 你获得运动技能的熟练项，并且在进行威吓时可以用力量代替魅力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "恶鬼解放|武士|OSH2024|恶鬼|OSH2024|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Brutish Strike",
+			"name": "蛮横打击",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "恶鬼",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你将要进行近战攻击检定时，你可以改为发动蛮横打击。进行一次具有劣势的攻击检定，命中时额外掷一颗你武器的伤害骰，并将目标击退5尺。",
+				"若你在恶鬼解放状态下使用此能力，则每轮一次，目标还必须进行一次魅力豁免检定，失败则获得{@condition 恐慌}状态，直到其回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Aura of Hate",
+			"name": "憎恨灵光",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "恶鬼",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你处于恶鬼解放状态时，仅你的存在便会散发恐惧与惊骇。这体现为一道20尺的灵光，使其中所有生物在对抗你施加的{@condition 恐慌}状态的豁免检定上具有劣势。此外，你可以用附赠动作强迫灵光范围内的一名生物进行一次魅力豁免检定，失败则受到{@dice 2d4}心灵伤害，成功则伤害减半。对你{@condition 恐慌}的生物则改为受到{@dice 3d4}心灵伤害。这视为一次对抗恐惧的豁免检定。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "末日预兆|武士|OSH2024|恶鬼|OSH2024|11"
+				}
+			]
+		},
+		{
+			"ENG_name": "Omen of Doom",
+			"name": "末日预兆",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "恶鬼",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"每次长休一次，当你将在一次感知或魅力豁免检定中成功时，你可以强迫引发该检定的生物进行一次魅力豁免检定，失败则对你{@condition 恐慌}，直到其下回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Icon of Fear",
+			"name": "恐惧化身",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "恶鬼",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"到18级时，当你掷先攻时，你可以立即对选定的目标发起挑战。当你如此做时，你60尺内的每个生物都必须进行一次魅力豁免检定，失败则对你{@condition 恐慌}，持续1分钟。此后，它们可以在其每个回合开始时再次尝试该豁免检定。"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Rabbit",
+			"name": "兔之誉",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "兔",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"兔之誉是敏捷、速度与灵巧闪避之道。兔之武士懂得如何快速纵横战场，以迅捷的身法卸去每一次来袭攻击的全力。变幻莫测而又迅疾如风，兔之武士能够长时间存活于战场之上。"
+			]
+		},
+		{
+			"ENG_name": "Art of Evasion",
+			"name": "闪避之术",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "兔",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，当你未着任何护甲且未持用盾牌时，你的AC计算方式为13+敏捷调整值。",
+				"此外，你能够在腾挪之间将皮肉之伤化为擦伤。只要你能移动且未处于目盲状态，你受到的所有钝击、挥砍、穿刺、火焰、寒冷、闪电和酸伤害均减少2点。在7级和18级时，此减免各再增加1点。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "快步|武士|OSH2024|兔|OSH2024|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Quickstep",
+			"name": "快步",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "兔",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作执行疾走动作。"
+			]
+		},
+		{
+			"ENG_name": "Spin and Piourette",
+			"name": "旋身与单足旋转",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "兔",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的速度提升5尺，并在11级时再提升5尺。",
+				"此外，每轮一次，当你将要对某生物进行攻击检定时，你可以朝任何可行的方向移动至多10尺。"
+			]
+		},
+		{
+			"ENG_name": "Artful Defense",
+			"name": "巧妙防御",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "兔",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，每次短休两次，即使你已耗尽反应，你也可以使用格挡特性。"
+			]
+		},
+		{
+			"ENG_name": "Burst of Speed",
+			"name": "疾速爆发",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "兔",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"此外，在18级时，每次短休一次，你可以真正地一展技巧与速度的极致。当你以一个动作启动此能力时，你获得以下收益：",
+				"• 你的速度翻倍，且你不会成为借机攻击的目标。",
+				"• 你可以对你本回合移动所至15尺内的每个生物各进行一次攻击检定。这些攻击额外掷两颗你武器的伤害骰。"
+			]
+		},
+		{
+			"ENG_name": "Deft Movement",
+			"name": "灵活动作",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "兔",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，只要你能移动，你的敏捷豁免检定便具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Revenger",
+			"name": "复仇者之誉",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "复仇者",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"行于复仇之道者，会被一股由内而外缓慢侵蚀自身的炽烈憎恨所吞噬。尽管如此，几乎无人在意自身的损耗\u2014\u2014只顾将最真切的憎恨倾泻于敌人之上。"
+			]
+		},
+		{
+			"ENG_name": "Hatred",
+			"name": "憎恨",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "复仇者",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的生存意义便是铲除挡路者。在3级时，当你将要挑战某生物时，你可以选择憎恨它。若你如此做，你获得以下收益：",
+				"• 当你将要通过挑战造成伤害时，将伤害骰提升为{@dice d10}。你的挑战骰至少造成3点伤害。",
+				"但是：",
+				"• 你无法对其造成非致命伤害",
+				"• 若你在某一回合内既未对其造成伤害，也未受到来自它的伤害，你的挑战即告结束。",
+				"当你在憎恨状态下将挑战转移到另一个生物时，你可以选择停止或继续憎恨。"
+			]
+		},
+		{
+			"ENG_name": "Bloody Conquest",
+			"name": "血腥征服",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "复仇者",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你杀死一个被挑战的生物并将挑战延伸至新目标时，该新目标必须成功通过一次感知豁免检定（DC 8+熟练加值+力量或敏捷调整值），失败则对你恐慌，直到其下回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Rend",
+			"name": "撕裂",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "复仇者",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你攻击一个生命值低于50%的被憎恨生物时，你的重击范围扩大2点。此外，你的重击每颗伤害骰至少造成3点伤害"
+			]
+		},
+		{
+			"ENG_name": "True Hatred",
+			"name": "完全憎恨",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "复仇者",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，当你憎恨某生物时，你的挑战伤害骰改为d12，且至少造成4点伤害。此外，当你格挡该生物时，造成等同于你格挡掷骰结果一半的伤害。",
+				"在20级时，你可以在发起挑战时选择憎恨所有生物。"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Slayer",
+			"name": "猎杀者之誉",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "猎杀者",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"猎杀者是一个古老的武士团，曾同时对抗怪物与不死生物，阻止它们统治世界，以守护人类。尽管该武士团早已消亡，其技艺与传统仍有残余流传于世，其中最著名的便是\"呼吸法\"。\"呼吸法\"是一种强大的能力，让使用者能够将呼吸调节至极为精微的地步，从而发挥出远超同类常人极限的本领。"
+			]
+		},
+		{
+			"ENG_name": "The Breath",
+			"name": "呼吸法",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "猎杀者",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你可以用附赠动作，或在发起挑战的同时，开始呼吸法。你获得以下收益：",
+				"• 你的力量、敏捷或体质（由你选择）提升2点。",
+				"• 你的速度提升10尺。",
+				"• 你的体质豁免检定具有优势，但维持呼吸法的检定除外。",
+				"• 你的负重上限翻倍。",
+				"若你具有任何{@condition 力竭|phb}，你能够使用呼吸法的时间减半。",
+				"若你能够施法，呼吸法将占用你的专注；但它无需通过豁免检定来维持。",
+				"你可以在你的回合以一个自由动作结束呼吸法。",
+				"你可以维持呼吸法的轮数等于2+你的体质调整值（最少1轮）。一旦超过此上限，你必须在你每个回合结束时开始进行DC 8的体质豁免检定。失败则你获得1级{@condition 力竭|phb}。成功则你维持呼吸法，但该DC增加2。若你将在豁免中失败，你可以用反应动用献祭涌动再尝试一次。",
+				"使用呼吸法后，你必须等待至少一分钟才能再次使用。第一次之后每使用一次呼吸法，你可免费维持的轮数便减少1轮。此计数在长休后重置。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "呼吸进化|武士|OSH2024|猎杀者|OSH2024|6"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "呼吸进化|武士|OSH2024|猎杀者|OSH2024|11"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "呼吸进化|武士|OSH2024|猎杀者|OSH2024|18"
+				}
+			]
+		},
+		{
+			"ENG_name": "Breath Evolution",
+			"name": "呼吸进化",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "猎杀者",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，呼吸法获得强化：",
+				"• 你可以将你武器的伤害骰视为提升一阶（d4>d6>d8>d10>d12>2d6>2d8）。",
+				"• 你的速度额外提升5尺。"
+			]
+		},
+		{
+			"ENG_name": "Miraculous Feint",
+			"name": "奇迹佯攻",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "猎杀者",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你能够爆发出速度以躲避迫近的伤害。当某生物将要对你进行攻击检定，或你将被强迫进行一次力量、敏捷或体质豁免检定时，你可以用反应触发此能力。你可以令该攻击检定具有劣势，或令该豁免检定具有优势。若该攻击落空，或你的豁免成功，你可以移动至多你速度的一半。"
+			]
+		},
+		{
+			"ENG_name": "Breath Evolution",
+			"name": "呼吸进化",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "猎杀者",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，呼吸法获得强化：",
+				"• 你可以将属性提升的加值应用于其中两项属性。",
+				"• 你的力量和敏捷豁免检定获得+2加值。",
+				"• 就格挡职业特性而言，你视为大一级体型。"
+			]
+		},
+		{
+			"ENG_name": "Focused Breathing",
+			"name": "专注呼吸",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "猎杀者",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你已学会将维持呼吸法的效率发挥到极致。在11级时，呼吸法的持续时间增加2轮，且你在所有维持呼吸法的豁免检定上具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Breath Evolution",
+			"name": "呼吸进化",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "猎杀者",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，呼吸法臻至化境。",
+				"• 从力量、敏捷和体质中选择一项属性。它提升4点，上限为24。未被选择的两项属性各提升2点。"
+			]
+		},
+		{
+			"ENG_name": "Constant Breathing Technique",
+			"name": "常时呼吸法",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "猎杀者",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你已学会时刻专注于呼吸法，令力量与极限十倍增强。你永久获得呼吸法3级时的收益，但必须进入此能力的传统形态才能使用更高等级的功能。若你所具有的力竭等级超过其最大等级数的一半，或处于浴血状态，你便无法从此特性中获益。"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Sparrow",
+			"name": "雀之誉",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "雀",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"追随雀之誉的人视弓为挚友与同伴，是它送来安宁，也送来死亡。他们的射击精准无比，几乎百发百中。他们能察觉未见之物、如水晶般清晰地辨明毫末细节\u2014\u2014这正是其名号的由来。"
+			]
+		},
+		{
+			"ENG_name": "Sparrow's Eyes",
+			"name": "雀之眼",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "雀",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你获得{@skill 察觉}技能的熟练项；若你已熟练，则改为获得专精。你的视距可达3英里而非2英里。",
+				"此外，当你持用一把弓时，其常规射程与最大射程分别增加30尺和60尺。"
+			]
+		},
+		{
+			"ENG_name": "Sureshot",
+			"name": "稳射",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "雀",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"此外，你能将伤害转化为纯粹的精准。当你将要使用弓对被挑战的目标进行攻击检定时，你可以消耗至多一半的挑战骰。每消耗一颗挑战骰，改为在你的攻击检定上附加{@dice 1d4}。这会减少你的挑战造成的{@dice d6}伤害骰数量，直到你的下回合开始。",
+				"每次短休，次数等于你的熟练加值，你也可以对未被你挑战的生物使用此特性，但无法附加任何挑战伤害。"
+			]
+		},
+		{
+			"ENG_name": "Acute Senses",
+			"name": "敏锐感官",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "雀",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你的警觉性得到强化，被动察觉提升5点。你能够察觉哪怕最细微的动静，从而在微光光照下以及对抗隐形生物的察觉检定上不再具有劣势。每次长休一次，你可以借助环境线索追踪最微小的移动，并获得{@spell 识破隐形}的收益，但它不计为法术，且仅持续1分钟。"
+			]
+		},
+		{
+			"ENG_name": "Archer's Riposte",
+			"name": "射手还击",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "雀",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得了招架远程攻击的能力。当你成为弩矢或箭矢的目标时，你可以用反应使该攻击检定降低{@dice 1d8}，即使检定已经掷出亦可。若该攻击落空，作为此反应的一部分，你可以装填并将同一枚投射物射回攻击者，前提是对方在射程之内。若该攻击命中，你也可以自愿承受献祭涌动能力的伤害，无论如何都将投射物装填并射回。"
+			]
+		},
+		{
+			"ENG_name": "Headshot",
+			"name": "爆头",
+			"source": "OSH2024",
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "雀",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你的精准已臻顶峰。每次短休一次，用一把弓对被你挑战的生物进行一次攻击检定，并依你的稳射能力附加{@dice 5d4}到命中上。若你命中且总掷值高于30，你的攻击附加你的全部挑战伤害，且为一次无法被取消的重击。"
+			]
+		},
+		{
+			"ENG_name": "Honor of the Spellbound",
+			"name": "咒缚者之誉",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "咒缚者",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"信奉此誉者天生便有魔力，能够唤出魔法。他们将其与武士的自律秉性一同磨砺，以勤勉与精准兼持钢剑与法术。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "施法|武士|OSH2024|咒缚者|OSH2024|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "咒缚者",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你到达3级时，你以施法能力强化你的武艺。施法的一般规则详见{@book 第十章|PHB|10}，{@filter 魔契师法术列表|spells|class=魔契师}详见{@book 第十一章|PHB|11}。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从{@filter 魔契师法术列表|spells|class=魔契师}中学会两个自选戏法。你在10级时再学会一个自选的魔契师戏法。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Spell Slots",
+							"type": "entries",
+							"name": "法术位",
+							"entries": [
+								"咒缚者施法法术表展示了你拥有多少法术位来施放1环到4环的{@filter 魔契师法术|spells|class=魔契师}。该表还展示了这些法术位的环阶；你所有的法术位环阶相同。要施放一个1环或更高的魔契师法术，你必须消耗一个法术位。你在完成一次短休或长休后恢复所有已消耗的法术位。",
+								"例如，当你是7级时，你有一个2环法术位。要施放1环法术{@spell 哈达之臂}，你必须消耗其中一个法术位，且你将其作为2环法术施放。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Spells Known of 1st-Level and Higher",
+							"type": "entries",
+							"name": "1环及更高等级已知法术",
+							"entries": [
+								"在3级时，你知道两个来自魔契师法术列表的自选1环法术。这些法术必须属于塑能或咒法学派。",
+								"表中\"已知法术\"一栏展示了你在何时学会更多自选的1环及以上魔契师法术。你选择的法术环阶不得高于表中\"法术位环阶\"一栏对你当前等级所示的环阶。例如，当你到达10级时，你学会一个新的魔契师法术，它可以是1环、2环或3环。",
+								"此外，当你到达8级、13级和18级时，你可以选择一个任意学派的法术。",
+								"当你在此职业中提升等级时，你可以选择一个你已知的魔契师法术，并用魔契师法术列表中的另一个法术替换它，但须遵循学派限制，且替换的法术环阶必须是你拥有对应法术位的环阶。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Spellcasting Ability",
+							"type": "entries",
+							"name": "施法属性",
+							"entries": [
+								"魅力是你施放魔契师法术的施法属性，因此当法术提及你的施法属性时，你使用你的魅力。此外，当你确定所施展魔契师法术的豁免DC以及用它进行攻击检定时，你也使用你的魅力调整值。",
+								{
+									"ENG_name": "Spell",
+									"type": "abilityDc",
+									"name": "法术",
+									"attributes": [
+										"cha"
+									]
+								},
+								{
+									"ENG_name": "Spell",
+									"type": "abilityAttackMod",
+									"name": "法术",
+									"attributes": [
+										"cha"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Flow",
+			"name": "流转",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "咒缚者",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你执行攻击动作时，每轮一次，你可以将你的一次攻击替换为施放一个法术。但戏法按降低一阶的规模施放，法术按降低一环的环阶施放，最低为1环。你只能以此能力施放具有升环施法特性的法术。若该法术在升环时会增加骰数，则在低于其常规环阶施放时移除一颗骰。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Parry",
+			"name": "奥术格挡",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "咒缚者",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，凭借你的钻研，你已能斩断魔法本身。当你将要受到来自法术或魔法能力的伤害时，你可以用反应使其伤害减少{@dice 2d8}+你的魅力调整值。若你将伤害减至0，你可以向施放该法术的生物射出一道魔能爆，前提是它在射程之内。"
+			]
+		},
+		{
+			"ENG_name": "This Is Power",
+			"name": "这就是力量",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "武士",
+			"classSource": "OSH2024",
+			"subclassShortName": "咒缚者",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，每次长休一次，你可以施放任意一个{@filter 7环魔契师法术|spells|level=7|class=魔契师}。"
+			]
+		}
+	]
+}
