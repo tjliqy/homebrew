@@ -1,0 +1,3090 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BH2022",
+				"abbreviation": "BH2022",
+				"full": "血猎手（2022）",
+				"url": "https://www.dndbeyond.com/classes/blood-hunter",
+				"version": "1.1.4",
+				"dateReleased": "2022-02-14",
+				"authors": [
+					"Matthew Mercer"
+				],
+				"convertedBy": [
+					"Alcuitas",
+					"cadowtin",
+					"EldritchTiefling",
+					"MrVauxs"
+				],
+				"color": "940101"
+			}
+		],
+		"optionalFeatureTypes": {
+			"BC": "血咒",
+			"CR": "猩红仪式",
+			"MTGN": "诱变剂"
+		},
+		"edition": "classic",
+		"dateAdded": 1580617082,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "c818a2488b"
+	},
+	"class": [
+		{
+			"ENG_name": "Blood Hunter",
+			"name": "血猎手",
+			"source": "BH2022",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Blood Curse",
+					"name": "血咒",
+					"featureType": [
+						"BC"
+					],
+					"progression": [
+						1,
+						1,
+						1,
+						1,
+						1,
+						2,
+						2,
+						2,
+						2,
+						3,
+						3,
+						3,
+						3,
+						4,
+						4,
+						4,
+						4,
+						5,
+						5,
+						5
+					]
+				},
+				{
+					"ENG_name": "Crimson Rite",
+					"name": "猩红仪式",
+					"featureType": [
+						"CR"
+					],
+					"progression": {
+						"2": 1,
+						"7": 2,
+						"14": 3
+					}
+				},
+				{
+					"ENG_name": "Fighting Style",
+					"name": "战斗风格",
+					"featureType": [
+						"FS:F"
+					],
+					"progression": {
+						"2": 1
+					}
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"arcana",
+								"history",
+								"insight",
+								"investigation",
+								"religion",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				],
+				"weapons": [
+					"简易",
+					"军用"
+				],
+				"tools": [
+					"炼金工具"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一把{@filter 军用武器|items|source=phb|category=基础|type=军用武器}或 (b) 两把{@filter 简易武器|items|type=简易武器}",
+					"一把{@item 轻弩|phb}和{@item 弩矢(20)|phb|20支弩箭}",
+					"(a) {@item 镶钉皮甲|phb} 或 (b) {@item 鳞甲|phb}",
+					"一个{@item 探索套组|phb}和{@item 炼金工具|phb}"
+				],
+				"goldAlternative": "{@dice 4d4×10|4d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"_": [
+							"轻弩|phb",
+							"弩矢(20)|phb"
+						]
+					},
+					{
+						"a": [
+							"镶钉皮甲|phb"
+						],
+						"b": [
+							"鳞甲|phb"
+						]
+					},
+					{
+						"_": [
+							"探索套组|phb",
+							"炼金工具|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"int": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"athletics",
+									"acrobatics",
+									"arcana",
+									"history",
+									"insight",
+									"investigation",
+									"religion",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"weapons": [
+						"简易",
+						"军用"
+					],
+					"tools": [
+						"炼金工具"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"鲜血秘法骰",
+						"{@filter 已知血咒|optionalfeatures|Feature Type=血咒}"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							1
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							1
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							1
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							1
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							1
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"猎人之苦|血猎手|BH2022|1",
+				"鲜血恶戾|血猎手|BH2022|1",
+				"战斗风格|血猎手|BH2022|2",
+				"猩红仪式|血猎手|BH2022|2",
+				{
+					"classFeature": "血猎手结社|血猎手|BH2022|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|血猎手|BH2022|4",
+				"额外攻击|血猎手|BH2022|5",
+				"惩戒烙印|血猎手|BH2022|6",
+				"鲜血恶戾改良|血猎手|BH2022|6",
+				{
+					"classFeature": "结社特性|血猎手|BH2022|7",
+					"gainSubclassFeature": true
+				},
+				"猩红仪式改良|血猎手|BH2022|7",
+				"属性值提升|血猎手|BH2022|8",
+				"阴暗灵卜|血猎手|BH2022|9",
+				"黑暗增幅|血猎手|BH2022|10",
+				{
+					"classFeature": "结社特性|血猎手|BH2022|11",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|血猎手|BH2022|12",
+				"束缚烙印|血猎手|BH2022|13",
+				"鲜血恶戾改良|血猎手|BH2022|13",
+				"刚毅灵魂|血猎手|BH2022|14",
+				"猩红仪式改良|血猎手|BH2022|14",
+				{
+					"classFeature": "结社特性|血猎手|BH2022|15",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|血猎手|BH2022|16",
+				"鲜血恶戾改良|血猎手|BH2022|17",
+				{
+					"classFeature": "结社特性|血猎手|BH2022|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|血猎手|BH2022|19",
+				"胸有成竹|血猎手|BH2022|20"
+			],
+			"subclassTitle": "血猎手结社",
+			"hasFluff": true
+		}
+	],
+	"foundryClass": [
+		{
+			"ENG_name": "Blood Hunter",
+			"name": "血猎手",
+			"source": "BH2022",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "blood-maledict",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"number": 1,
+								"faces": 4
+							},
+							"5": {
+								"number": 1,
+								"faces": 6
+							},
+							"11": {
+								"number": 1,
+								"faces": 8
+							},
+							"17": {
+								"number": 1,
+								"faces": 10
+							}
+						}
+					},
+					"title": "鲜血恶戾"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "blood-curses",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"number": 1,
+								"faces": 4
+							},
+							"5": {
+								"number": 1,
+								"faces": 6
+							},
+							"11": {
+								"number": 1,
+								"faces": 8
+							},
+							"17": {
+								"number": 1,
+								"faces": 10
+							}
+						}
+					},
+					"title": "血咒"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "crimson-rite",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"number": 1,
+								"faces": 4
+							},
+							"5": {
+								"number": 1,
+								"faces": 6
+							},
+							"11": {
+								"number": 1,
+								"faces": 8
+							},
+							"17": {
+								"number": 1,
+								"faces": 10
+							}
+						}
+					},
+					"title": "猩红仪式"
+				}
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Blood Hunter",
+			"name": "血猎手",
+			"source": "BH2022",
+			"entries": [
+				{
+					"ENG_name": "Blood Hunter",
+					"entries": [
+						"伤痕累累却意志如铁，半兽人汗如雨下的狰狞面容上，一根手指蘸满自身伤口的鲜血，在面前血腥巨兽之间的空中勾画出一枚炽烈的红玉符记。他攥住那枚毫无重量的印记，将其扭转，释放出道道黑暗能量洪流，诅咒巨兽自身血脉中的血液，以扳回劣势。",
+						"一位身披旧斗篷、身着粗韧皮甲的神秘半精灵，仔细勘察着道路屠杀的现场；她凝想于这可怖场景的残迹之间，眼中闪过恍然之色。忽然，她一跃而起\u2014\u2014是何种生物所为、藏身何处、以及在它再度杀戮之前还剩多少时间，她已了然于胸。",
+						"半身人步入充斥着古老尘埃与萦绕低语的黑暗厅室，从附近石面上骨骸与利爪的刮擦声中察觉了迫近的危险。她将刀锋划过掌心，不由蹙眉\u2014\u2014钢铁将血液与精华转化为散发着强大魔力的灼灼符文，急欲烙灼敌人的血肉。",
+						"血猎手是由永不熄灭的除恶之志驱动的睿智战士，无论那邪恶来自远古还是当世。他们以隐秘血魔法的仪式为武装，甘愿为自己的事业牺牲活力与人性，在阴影中守护诸界\u2014\u2014同时时刻警惕自己被吞噬猎物的黑暗所同化。",
+						{
+							"ENG_name": "Sacrifice to Preserve Life",
+							"type": "entries",
+							"name": "舍身保命",
+							"entries": [
+								"远离社会的审视目光，血猎手们掌握了鲜血秘法的隐秘技艺\u2014\u2014他们发现，血魔法的奥秘本性恰能克制那些抗拒神圣斥责或奥术禁锢的邪恶。通过刻苦钻研与练习，血猎手将鲜血秘法的仪式磨砺为独特的战斗技艺：舍弃自身的一部分生命，将血咒降于敌人，或召唤元素助其打击。为了胜利甘愿承受一切代价，这些精湛的战士将自己锻造成一支致力于保护无辜者的强大力量。"
+							]
+						},
+						{
+							"ENG_name": "A Monster to Fight Monsters",
+							"type": "entries",
+							"name": "以怪物对抗怪物",
+							"entries": [
+								"无论是因为渴望有所作为、复仇的需要，还是希望在冷漠的世界里找到一个归属，每个血猎手都有自己踏上猎人之苦仪式、开启这条道路的理由。加入一个血猎手结社，也就是加入了一个以彼此扶持与共同事业相连的家族。对许多人而言，这或许是他们仅存的\u2014\u2014或唯一知晓的\u2014\u2014家庭，这使得血猎手之间的手足情谊几乎牢不可破。",
+								"然而，在结社的手足情谊之外，血猎手的生活并不轻松。猎人之苦的仪式会让人外表明显改变，且易于令周围的人不安。同样，亲眼目睹鲜血秘法，即使是最博学的学者也会生出迷信的恐惧。虽然某些文化已渐渐接受诸多血猎手结社的义举，但许多血猎手仍隐藏自己的使命，非万不得已不轻易显露。他们在世界的荒野与废土间更为自在，或游走于社会的边缘，保护穷苦无助者免受黑暗图谋与邪魔腐化之触的侵害。",
+								"选择这条道路，每个血猎手都在肉体上、情感上、有时甚至是道德上，不可逆转地将自己的一部分献给了事业。每个血猎手结社都有自己的理念与方法，其技艺往往渊源黑暗，考验着使用者的力量与意志。许多人在败给这场挣扎的恐惧中挣扎。因此，自律与警惕的生活驱策着血猎手的旅途\u2014\u2014他们游历乡野，寻觅志同道合的冒险者，追查暗中酝酿的恶行之耳语。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Blood Hunter",
+							"type": "entries",
+							"name": "创建血猎手",
+							"entries": [
+								"创建血猎手时，你的角色最重要的方面是：你为何被推向这种生活方式？又为何甘愿舍弃一切、与所猎的邪恶一同沉沦于黑暗之中？你是否痛失所爱于邪恶魔物，如今想阻止他人遭受同样的命运？你是否寻求目标感与归属感，并在收留你的结社中找到了它？你是否一直携带着一颗黑暗的种子，寻找能看顾你、防止你被其吞噬的同伴？你曾是否是背离信仰而被放逐的圣战士，却仍愿献身于保护无辜者的事业？又或者，你是个背负黑暗过往、寻求救赎的罪人，将这种生活视为忏悔之路？",
+								"你与鲜血秘法之力、以及随着你迈向其精通之境而许诺赋予你的能力，是何种关系？你是否敬重并畏惧血脉中奔涌的古老力量，只在必要时动用？你是否贪恋它赋予你的力量，欣然接纳你的天赋并随意使用？你是否担心迷信所言非虚\u2014\u2014这力量终将把你变成你所猎杀的怪物之一？还是说，你的钻研已让你怀有心智驾驭物质的笃定自信，确信能驱使这些天赋迎来更光明的黎明？",
+								"也请考虑：虽然血猎手隶属结社，但许多人独闯天下方能成就大业。是什么让你离开了结社的庇护？你是否打算回去，还是已断定外面的世界还有更多可学之处？你在其他冒险者身上寻求什么，以助你达成目标？",
+								"尽管大多数血猎手在追求中秉持善良或中立之道，但也有少数人堕入了鲜血秘法黑暗而诱人的一面，将能力用于自私与邪恶的目的。这些离经叛道者总会被逐出结社，且往往与他们曾受训诛杀的怪物一同遭到猎杀。"
+							]
+						},
+						{
+							"ENG_name": "Quick Build",
+							"type": "entries",
+							"name": "快速建卡",
+							"entries": [
+								"按照以下建议，你可以快速创建一名血猎手。首先，将力量或敏捷作为你的最高属性，取决于你想专精近战武器，还是箭术（或灵巧武器）。若你计划专攻血咒的威力与神秘之力，则将智力作为次高属性。接下来选择较高的体质，因为你需要额外的生命值来支付猩红仪式或增幅血咒的代价。随后选择{@background 流浪儿}或{@background 士兵}背景。"
+							]
+						},
+						{
+							"ENG_name": "Blood Hunter Multiclassing",
+							"type": "entries",
+							"name": "血猎手兼职",
+							"entries": [
+								"若你希望兼职成为血猎手，其先决条件与获得的熟练项如下所列。",
+								{
+									"ENG_name": "Blood Hunter Multiclassing Prerequisites",
+									"type": "entries",
+									"name": "血猎手兼职先决条件",
+									"entries": [
+										{
+											"ENG_name": "Ability Score Minimum",
+											"type": "entries",
+											"name": "最低属性值",
+											"entries": [
+												"力量13或敏捷13，以及智力13"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Blood Hunter Multiclassing Proficiencies",
+									"type": "entries",
+									"name": "血猎手兼职熟练项",
+									"entries": [
+										{
+											"ENG_name": "Proficiencies Gained",
+											"type": "entries",
+											"name": "获得熟练项",
+											"entries": [
+												"轻型护甲、中型护甲、盾牌、简易武器、军用武器、炼金工具。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Blood Hunter Multiclassing with Warlock",
+									"type": "entries",
+									"name": "血猎手与魔契师兼职",
+									"entries": [
+										{
+											"ENG_name": "Proficiencies Gained",
+											"type": "entries",
+											"name": "获得熟练项",
+											"entries": [
+												"若将渎魂结社与魔契师等级兼职，将你的血猎手等级的三分之一（向下取整）加到你的魔契师等级上，并查阅《玩家手册》中的魔契师进阶表，以确定总的法术位、已知戏法和法术位环阶。"
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "血猎手",
+					"source": "BH2022",
+					"type": "section",
+					"page": 1
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Order of the Ghostslayer",
+			"name": "弑灵结社",
+			"shortName": "弑灵",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassFeatures": [
+				"弑灵结社|血猎手|BH2022|弑灵|BH2022|3",
+				"升腾走|血猎手|BH2022|弑灵|BH2022|7",
+				"分离烙印|血猎手|BH2022|弑灵|BH2022|11",
+				"驱魔血咒|血猎手|BH2022|弑灵|BH2022|15",
+				"血仪重生|血猎手|BH2022|弑灵|BH2022|18"
+			]
+		},
+		{
+			"ENG_name": "Order of the Lycan",
+			"name": "化狼结社",
+			"shortName": "化狼",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassFeatures": [
+				"化狼结社|血猎手|BH2022|化狼|BH2022|3",
+				"追猎造诣|血猎手|BH2022|化狼|BH2022|7",
+				"高等变形|血猎手|BH2022|化狼|BH2022|11",
+				"饕餮烙印|血猎手|BH2022|化狼|BH2022|15",
+				"精通混种变形|血猎手|BH2022|化狼|BH2022|18"
+			]
+		},
+		{
+			"ENG_name": "Order of the Mutant",
+			"name": "突变结社",
+			"shortName": "突变",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassFeatures": [
+				"突变结社|血猎手|BH2022|突变|BH2022|3",
+				"奇异代谢|血猎手|BH2022|突变|BH2022|7",
+				"公理烙印|血猎手|BH2022|突变|BH2022|11",
+				"腐蚀血咒|血猎手|BH2022|突变|BH2022|15",
+				"高等突变|血猎手|BH2022|突变|BH2022|18"
+			]
+		},
+		{
+			"ENG_name": "Order of the Profane Soul",
+			"name": "渎魂结社",
+			"shortName": "渎魂",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"spellcastingAbility": "int",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				11
+			],
+			"subclassSpells": [
+				{
+					"className": "魔契师",
+					"classSource": "PHB"
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"ENG_name": "Order of the Profane Soul",
+							"name": "渎魂结社",
+							"source": "BH2022"
+						}
+					],
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|subclass=血猎手: 渎魂结社 (BH2022)}",
+						"{@filter 已知法术|spells|subclass=血猎手: 渎魂结社 (BH2022)}",
+						"法术位",
+						"法术环阶"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							1,
+							"{@filter 1环|spells|level=1|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							2,
+							2,
+							1,
+							"{@filter 1环|spells|level=1|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							2,
+							3,
+							1,
+							"{@filter 1环|spells|level=1|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							2,
+							3,
+							2,
+							"{@filter 1环|spells|level=1|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							2,
+							4,
+							2,
+							"{@filter 2环|spells|level=2|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							2,
+							4,
+							2,
+							"{@filter 2环|spells|level=2|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							2,
+							5,
+							2,
+							"{@filter 2环|spells|level=2|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 2环|spells|level=2|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							6,
+							2,
+							"{@filter 2环|spells|level=2|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							6,
+							2,
+							"{@filter 2环|spells|level=2|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							7,
+							2,
+							"{@filter 3环|spells|level=3|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							7,
+							2,
+							"{@filter 3环|spells|level=3|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							8,
+							2,
+							"{@filter 3环|spells|level=3|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							8,
+							2,
+							"{@filter 3环|spells|level=3|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							9,
+							2,
+							"{@filter 3环|spells|level=3|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							9,
+							2,
+							"{@filter 3环|spells|level=3|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							10,
+							2,
+							"{@filter 4环|spells|level=4|subclass=血猎手: 渎魂结社 (BH2022)}"
+						],
+						[
+							3,
+							11,
+							2,
+							"{@filter 4环|spells|level=4|subclass=血猎手: 渎魂结社 (BH2022)}"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"渎魂结社|血猎手|BH2022|渎魂|BH2022|3",
+				"神秘狂乱|血猎手|BH2022|渎魂|BH2022|7",
+				"奥秘揭示|血猎手|BH2022|渎魂|BH2022|7",
+				"痂痕烙印|血猎手|BH2022|渎魂|BH2022|11",
+				"奥秘展露|血猎手|BH2022|渎魂|BH2022|15",
+				"噬魂血咒|血猎手|BH2022|渎魂|BH2022|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Blood Maledict",
+			"name": "鲜血恶戾",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 1,
+			"entries": [
+				"同样在1级，你获得引导\u2014\u2014或者说献祭\u2014\u2014自身一部分生命精华的能力，借鲜血秘法魔法诅咒并操控生物。你知晓一道自选的血咒，详见职业描述末尾的\"{@filter 血咒|optionalfeatures|Feature Type=血咒}\"一节。你在6级、10级、14级和18级各再知晓一道自选血咒。每当你学会新的血咒时，你也可以选择一道已知的血咒，用另一道血咒将其替换。",
+				"每次使用你的鲜血恶戾特性时，你从已知的诅咒中选择要唤起的一道。在唤起血咒之后、其影响目标之前，你可以选择增幅该诅咒，代价是受到等于一颗鲜血秘法骰投掷结果的暗蚀伤害。此伤害无法以任何方式减少。增幅后的诅咒获得诅咒说明中注明的额外效应。没有血液的生物免疫血咒\u2014\u2014除非你已增幅该诅咒。",
+				"一旦使用了此特性，你必须完成一次短休或长休才能再次使用。从6级起，你可以在两次休息之间使用两次鲜血恶戾；从13级起三次；从17级起四次。"
+			]
+		},
+		{
+			"ENG_name": "Hunter's Bane",
+			"name": "猎人之苦",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 1,
+			"entries": [
+				"在1级，你已在猎人之苦中幸存\u2014\u2014这一凶险而世代秘传的仪式改变了你的命血，使你永远与黑暗相系，并令你的感官为之锐化。你在追踪精类、邪魔或不死生物的感知（{@skill 求生}）检定，以及回忆此类生物相关信息的智力检定上具有优势。",
+				"猎人之苦还强化了你的躯体，使你能操控并塑造鲜血秘法魔法，以自身的血液与生命精华驱动你的能力。你的部分特性要求目标进行豁免检定以抵抗其效应。豁免DC计算如下：",
+				{
+					"ENG_name": "Hemocraft",
+					"type": "abilityDc",
+					"name": "鲜血秘法",
+					"attributes": [
+						"wis",
+						"int"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Crimson Rite",
+			"name": "猩红仪式",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 2,
+			"entries": [
+				"同样在2级，你学会引动一道以元素能量灌注武器打击的鲜血秘法仪式。你可以用附赠动作在你持有的一件武器上启动你已知的任意仪式。仪式的效应持续到你完成一次短休或长休为止。启动仪式时，你受到等于一颗鲜血秘法骰投掷结果的暗蚀伤害。此伤害无法以任何方式减少。",
+				"仪式生效期间，你以此武器进行的攻击视为魔法攻击，并额外造成等于你的鲜血秘法骰、类型由所选仪式决定的伤害。一件武器同一时间只能持有一道激活的仪式。其他生物无法获得你仪式的收益。",
+				"你首次获得此特性时，从下列猩红仪式中选择一道。你在7级再学会一道额外的猩红仪式，14级再次。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Rite of the Flame",
+							"type": "entries",
+							"name": "烈焰血仪",
+							"entries": [
+								"你的血仪造成的额外伤害是火焰伤害。"
+							]
+						},
+						{
+							"ENG_name": "Rite of the Frozen",
+							"type": "entries",
+							"name": "冻结血仪",
+							"entries": [
+								"你的血仪造成的额外伤害是寒冷伤害。"
+							]
+						},
+						{
+							"ENG_name": "Rite of the Storm",
+							"type": "entries",
+							"name": "风暴血仪",
+							"entries": [
+								"猩红仪式造成的额外伤害是闪电伤害。"
+							]
+						},
+						{
+							"ENG_name": "Rite of the Dead",
+							"type": "entries",
+							"name": "死亡血仪",
+							"entries": [
+								"你的血仪造成的额外伤害为暗蚀伤害。（需14级）"
+							]
+						},
+						{
+							"ENG_name": "Rite of the Oracle",
+							"type": "entries",
+							"name": "神谕血仪",
+							"entries": [
+								"猩红仪式造成的额外伤害是心灵伤害。（需14级）"
+							]
+						},
+						{
+							"ENG_name": "Rite of the Roar",
+							"type": "entries",
+							"name": "轰鸣血仪",
+							"entries": [
+								"猩红仪式造成的额外伤害是雷鸣伤害。（需14级）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 2,
+			"entries": [
+				"第2级起，你将精进于一种战斗风格，从下列选项中选择其一。另外，即使你有多次选择战斗风格的机会，也不能重复选择同一个战斗风格。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"ENG_name": "Archery",
+							"type": "entries",
+							"name": "箭术",
+							"entries": [
+								"你使用远程武器进行攻击检定时具有+2加值。"
+							]
+						},
+						{
+							"ENG_name": "Dueling",
+							"type": "entries",
+							"name": "对决",
+							"entries": [
+								"单手持用一把近战武器，且并未同时持用其他武器时，你用该武器攻击的伤害掷骰获得 +2加值。"
+							]
+						},
+						{
+							"ENG_name": "Great Weapon Fighting",
+							"type": "entries",
+							"name": "巨武器战斗",
+							"entries": [
+								"双手持用一把近战武器发动攻击时，若你的伤害掷骰掷出1或2，则可以选择重掷。不过哪怕其仍是1或2，你都必须接受重掷的数值。此外，该武器必须具有双手或两用属性。"
+							]
+						},
+						{
+							"ENG_name": "Two-Weapon Fighting",
+							"type": "entries",
+							"name": "双武器战斗",
+							"entries": [
+								"当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Hunter Order",
+			"name": "血猎手结社",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 3,
+			"entries": [
+				"在3级，你立誓加入一个其哲学将指引你一生的血猎手结社：弑灵结社、化狼结社、突变结社或渎魂结社，各结社详述于职业描述末尾。你的选择在7级赋予你特性，并在11级、15级和18级再次给予。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 5,
+			"entries": [
+				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Blood Maledict Improvement",
+			"name": "鲜血恶戾改良",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 6,
+			"entries": [
+				"从6级起，你可以在两次休息之间使用两次你的鲜血恶戾特性。"
+			]
+		},
+		{
+			"ENG_name": "Brand of Castigation",
+			"name": "惩戒烙印",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 6,
+			"entries": [
+				"在6级，当你以一件持有激活猩红仪式的武器伤害一个生物时，你可以引导鲜血秘法魔法，将一道奥术烙印烙在该生物身上（无需动作）。只要被烙印生物与你处于同一位面，你始终知道它的方位。此外，每当被烙印生物伤害你或你能看见的你5尺内的生物时，被烙印生物受到等于你的鲜血秘法调整值（至少1）的心灵伤害。",
+				"你的烙印持续到你解除它、或你使用此特性将烙印施加于另一生物为止。你的烙印可以被{@spell 解除魔法|phb}驱散，并视为一个环阶等于你血猎手等级一半（最高9环）的法术。",
+				"你必须完成一次长休或短休后才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "Crimson Rite Improvement",
+			"name": "猩红仪式改良",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 7,
+			"entries": [
+				"在7级，你学会一道额外的猩红仪式。"
+			]
+		},
+		{
+			"ENG_name": "Order feature",
+			"name": "结社特性",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 7,
+			"entries": [
+				"在7级，你获得一项由你的血猎手结社给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Grim Psychometry",
+			"name": "阴暗灵卜",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 9,
+			"entries": [
+				"当你到达9级时，你获得洞悉神秘遗物或邪祟之地背后秘密的超自然天赋。每当你进行智力（{@skill 历史}）检定，以回忆你正触碰的物件或当前所处地点的险恶或悲惨历史时，该检定具有优势。由DM裁定，足够高的检定结果可能使你的角色经历与该物件或地点相关的短暂往昔幻象。"
+			]
+		},
+		{
+			"ENG_name": "Dark Augmentation",
+			"name": "黑暗增幅",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 10,
+			"entries": [
+				"从10级起，鲜血秘法的魔法浸透你的躯体，永久强化你的韧性。你的速度提升5尺，且你的力量、敏捷和体质豁免检定获得等于你的鲜血秘法调整值（至少+1）的加值。"
+			]
+		},
+		{
+			"ENG_name": "Order feature",
+			"name": "结社特性",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 11,
+			"entries": [
+				"在11级，你获得一项由你的血猎手结社给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Blood Maledict Improvement",
+			"name": "鲜血恶戾改良",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 13,
+			"entries": [
+				"从13级起，你可以在两次休息之间使用三次你的鲜血恶戾特性。"
+			]
+		},
+		{
+			"ENG_name": "Brand of Tethering",
+			"name": "束缚烙印",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 13,
+			"entries": [
+				"从13级起，你的惩戒烙印造成的心灵伤害提升为你的鲜血秘法调整值的两倍（至少2）。此外，被烙印生物无法采取疾走动作；若它试图以任何方式传送或离开当前位面，它受到{@dice 4d6}点心灵伤害且必须进行感知豁免，豁免失败则传送或离开位面的尝试失败。"
+			]
+		},
+		{
+			"ENG_name": "Crimson Rite Improvement",
+			"name": "猩红仪式改良",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 14,
+			"entries": [
+				"在14级，你学会一道额外的猩红仪式。"
+			]
+		},
+		{
+			"ENG_name": "Hardened Soul",
+			"name": "刚毅灵魂",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 14,
+			"entries": [
+				"当你到达14级时，你对抗被{@condition 魅惑}和{@condition 恐慌}的豁免检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Order feature",
+			"name": "结社特性",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 15,
+			"entries": [
+				"在15级，你获得一项由你的血猎手结社给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Blood Maledict Improvement",
+			"name": "鲜血恶戾改良",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 17,
+			"entries": [
+				"从17级起，你可以在两次休息之间使用四次你的鲜血恶戾特性。"
+			]
+		},
+		{
+			"ENG_name": "Order feature",
+			"name": "结社特性",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 18,
+			"entries": [
+				"在18级，你获得一项由你的血猎手结社给予的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"使用专长规则时，你可以放弃该特性，改为获得一个你选择的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Sanguine Mastery",
+			"name": "胸有成竹",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"level": 20,
+			"entries": [
+				"到达20级时，你对血魔法的掌握登峰造极，既减轻牺牲，又强化专精。每回合一次，每当一个血猎手特性要求你投掷鲜血秘法骰时，你可以重投该骰并任选其一使用。",
+				"此外，每当你以一件持有激活猩红仪式的武器造成重击时，你恢复一次已耗用的鲜血恶戾特性。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Order of the Ghostslayer",
+			"name": "弑灵结社",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "弑灵",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"entries": [
+				"弑灵结社是历史最悠久的血猎手结社，其成员最初重新发现了鲜血秘法的秘密，并将其锤炼为对抗不死灾祸的战法。弑灵者追寻并研究死亡降临的那一刻，痴迷于生命消逝之谜，以及能令死者再度起身的不洁之力。这些狂热的血猎手将彻底消灭各地的不死灾祸奉为毕生之业，将能力调校至专门应对不死生物，以及操纵死灵术制造它们的人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "破晓血仪|血猎手|BH2022|弑灵|BH2022|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "诅咒专家|血猎手|BH2022|弑灵|BH2022|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Curse Specialist",
+			"name": "诅咒专家",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "弑灵",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级起，你学会精通血咒。你的鲜血恶戾特性获得一次额外使用次数。此外，你的血咒可以指定任何生物为目标，无论其是否有血。"
+			]
+		},
+		{
+			"ENG_name": "Rite of the Dawn",
+			"name": "破晓血仪",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "弑灵",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级加入此结社时，你作为猩红仪式特性的一部分学会破晓血仪。当你启动破晓血仪时，仪式造成的额外伤害为光耀伤害。此外，当该仪式在你的武器上处于激活状态时，你获得以下收益：",
+				{
+					"type": "list",
+					"items": [
+						"你的武器在20尺范围内散发明亮光照。",
+						"你具有暗蚀伤害的抗性。",
+						"当你用激活了破晓血仪的武器命中一个亡灵生物时，你在确定来自血仪的额外伤害时额外掷一个鲜血秘法骰。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Aether Walk",
+			"name": "升腾走",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "弑灵",
+			"subclassSource": "BH2022",
+			"level": 7,
+			"entries": [
+				"到达7级时，只要你不处于失能状态，你可以在自己的回合开始时以魔法踏入位面之间的帷幕。你可以如同穿越困难地形般穿过其他生物与物件，并能看见和影响以太位面上的生物与物件。若你在物件中结束回合，你受到{@dice 1d10}点力场伤害。",
+				"此特性持续轮数等于你的鲜血秘法调整值（至少1轮）。若它结束时你正处于物件之中，你会立即被挤到最近的未被占据的空间，并受到等于你所移动尺数两倍的力场伤害。",
+				"一旦使用了此特性，你必须完成一次短休或长休才能再次使用。从15级起，你可以在两次休息之间使用两次升腾走。"
+			]
+		},
+		{
+			"ENG_name": "Brand of Sundering",
+			"name": "分离烙印",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "弑灵",
+			"subclassSource": "BH2022",
+			"level": 11,
+			"entries": [
+				"从11级起，你的惩戒烙印会暴露敌人本质的一角，使其在你的猩红仪式特性面前不堪一击。每当你以一件持有激活猩红仪式的武器命中一个生物时，你在计算仪式的额外伤害时额外投掷一颗鲜血秘法骰。此外，若被烙印生物拥有虚体移动特性或类似能力，它在被烙印期间无法穿过生物或物件。"
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Exorcist",
+			"name": "驱魔血咒",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "弑灵",
+			"subclassSource": "BH2022",
+			"level": 15,
+			"entries": [
+				"在15级，你将鲜血秘法磨砺得可以从盟友的心智与躯体中撕除腐化\u2014\u2014并惩罚始作俑者。你的鲜血恶戾特性获得驱魔血咒。这不会计入你已知的血咒数量。"
+			]
+		},
+		{
+			"ENG_name": "Rite Revival",
+			"name": "血仪重生",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "弑灵",
+			"subclassSource": "BH2022",
+			"level": 18,
+			"entries": [
+				"到达18级时，你学会通过重新吸收灌输给武器的能量来护住将熄的生命。若你持有一道或多道激活的猩红仪式，且你的生命值降至0但并未立即死亡，你可以选择让所有激活的猩红仪式结束，改为生命值降至1点。"
+			]
+		},
+		{
+			"ENG_name": "Order of the Lycan",
+			"name": "化狼结社",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "化狼",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"entries": [
+				"狼化症的古老诅咒几乎受到所有民族与文化的畏惧，它经血液传播，将恶兽的野蛮之力与嗜血暴欲植入宿主体内。化狼结社是一群自豪的血猎手，他们接受\"驯化\"\u2014\u2014由结社资深成员主持的狼化症授予仪式，适用于那些在踏上此途前尚未携带诅咒之人。此后，这些猎手以自身血液的魔法驾驭体内怪物的力量，而不迷失于其中。凭借坚韧的意志与隐秘的血魔法仪式，化狼结社的成员学会在短时间内掌控并释放自己的混种形态。强化后的体魄、超乎自然的韧性，以及剃刀般锋利的利爪，使这些战士成为任何挡道邪恶的可怖劲敌。然而没有完美的训练，稍有疏忽或分神，即使是最伟大的血猎手也可能暂时迷失于自身的饥渴之中。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "增强感官|血猎手|BH2022|化狼|BH2022|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "混种变形|血猎手|BH2022|化狼|BH2022|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "狼化之重责|血猎手|BH2022|化狼|BH2022|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Heightened Senses",
+			"name": "增强感官",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "化狼",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级选择此原型时，你获得天生掠食者般的强化感官。你依赖听觉或嗅觉的感知（{@skill 察觉}）检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Hybrid Transformation",
+			"name": "混种变形",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "化狼",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在3级，你学会掌控血脉中奔流的狼化症诅咒。你可以用附赠动作变身为特殊的混种形态，至多持续1小时。在此形态下你可以说话、使用装备并穿戴护甲，并可以用附赠动作恢复正常形态。若你陷入昏迷或死亡，你自动恢复正常形态。",
+				"此特性取代《怪物图鉴》中的狼化症规则。一旦使用了此特性，你必须完成一次短休或长休才能再次使用。变身期间，你获得以下特性：",
+				{
+					"ENG_name": "Feral Might",
+					"type": "entries",
+					"name": "野性之力",
+					"entries": [
+						"你的力量检定和力量豁免检定具有优势，且你的近战伤害掷骰获得+1加值。此加值在11级提升为+2，在18级提升为+3。"
+					]
+				},
+				{
+					"ENG_name": "Resilient Hide",
+					"type": "entries",
+					"name": "坚韧毛皮",
+					"entries": [
+						"你对非魔法且非银质武器造成的钝击、穿刺和挥砍伤害具有抗性。此外，当你未穿重甲时，你的AC获得+1加值。"
+					]
+				},
+				{
+					"ENG_name": "Predatory Strikes",
+					"type": "entries",
+					"name": "掠食打击",
+					"entries": [
+						"你可以将你的猩红仪式特性施加于徒手打击，并将其视为同一件武器。你的徒手打击的攻击与伤害掷骰可以使用敏捷而非力量，造成{@dice 1d6}点钝击或挥砍伤害（由你选择）。此伤害在11级提升为{@dice 1d8}。",
+						"此外，当你使用攻击动作进行徒手打击时，你可以用附赠动作再进行一次额外的徒手打击。"
+					]
+				},
+				{
+					"ENG_name": "Bloodlust",
+					"type": "entries",
+					"name": "嗜血",
+					"entries": [
+						"若你在回合开始时生命值低于上限的一半，你必须通过DC为8的感知豁免，否则必须直接朝最近的生物移动，并对其使用攻击动作。若你正专注于一个法术、或正处于阻止你专注的效应之下（例如野蛮人的{@classFeature 狂暴|野蛮人||1}特性），此豁免自动失败。",
+						"若你拥有额外攻击特性，你可以选择是否在这次狂化中的攻击中使用它。若有超过一个生物与你距离相等，掷骰以随机决定目标。攻击完成后，你恢复控制。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "The Onus of Lycanthropy",
+			"name": "狼化之重责",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "化狼",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"type": "inset",
+			"entries": [
+				"加入化狼结社者皆是怀着信念选择这条道路，深知它加诸自身的可怖重担与重重挑战。大多数身受狼化症诅咒者会变得邪恶、癫狂乃至嗜杀，而化狼血猎手则在接纳野兽馈赠的同时，凭借严酷的训练与血魔法的力量保持掌控。化狼结社的成员除非自愿，否则不会经血液传播诅咒；未经结社许可绝不感染其他生物，是此结社最神圣的誓言之一。",
+				"若化狼结社的成员被治愈了狼化症诅咒，这将为其名声与结社带来莫大的耻辱。违背本人意愿被净化了的成员会毅然返回结社，重新接受驯化入门礼，让诅咒重回躯体，以此挽回荣誉。",
+				"狼化症有多种形态，各与特定野兽相连，其中狼、熊、虎、野猪与鼠是最广为人知的变体。狼化症诅咒的具体株系决定了化狼血猎手混种变形时显现的形体特征，尽管诅咒赋予的收益相对一致。"
+			]
+		},
+		{
+			"ENG_name": "Stalker's Prowess",
+			"name": "追猎造诣",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "化狼",
+			"subclassSource": "BH2022",
+			"level": 7,
+			"entries": [
+				"在7级，你的速度提升10尺，跳远距离增加10尺，跳高距离增加3尺。你的混种形态还获得以下额外收益。",
+				{
+					"ENG_name": "Improved Predatory Strikes",
+					"type": "entries",
+					"name": "进阶掠食打击",
+					"entries": [
+						"你的徒手打击攻击检定获得+1加值。此加值在11级提升为+2，在18级提升为+3。此外，当你在混种形态下、且徒手打击上持有激活的猩红仪式时，你的徒手打击在克服对非魔法攻击和伤害的抗性与免疫时视为魔法攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Advanced Transformation",
+			"name": "高等变形",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "化狼",
+			"subclassSource": "BH2022",
+			"level": 11,
+			"entries": [
+				"在11级，你学会释放并掌控更多体内的野兽。你的混种变形特性可以使用两次，并在完成一次短休或长休后恢复所有已耗用的次数。你的混种形态还获得以下额外收益。",
+				{
+					"ENG_name": "Lycan Regeneration",
+					"type": "entries",
+					"name": "狼化再生",
+					"entries": [
+						"在你的每个回合开始时，若你至少有1点生命值但低于上限的一半，你获得等于1＋你的体质调整值（至少1）的生命值。若你处于混种形态，你在进行嗜血豁免之前先获得这些生命值。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Brand of the Voracious",
+			"name": "饕餮烙印",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "化狼",
+			"subclassSource": "BH2022",
+			"level": 15,
+			"entries": [
+				"从15级起，你在混种形态下的嗜血豁免具有优势。此外，你的惩戒烙印如今能将敌人缚于猎手的凶性之上。处于混种形态时，你对被你烙印的生物的攻击检定具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Hybrid Transformation Mastery",
+			"name": "精通混种变形",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "化狼",
+			"subclassSource": "BH2022",
+			"level": 18,
+			"entries": [
+				"在18级，你已完全掌控体内的掠食者。你可以无限次使用你的混种变形特性，且你的混种形态持续到你恢复正常形态、陷入昏迷或死亡为止。",
+				"你的鲜血恶戾特性还获得怒号血咒。这不会计入你已知的血咒数量。"
+			]
+		},
+		{
+			"ENG_name": "Order of the Mutant",
+			"name": "突变结社",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "突变",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"entries": [
+				"接受猎人之苦仪式的过程痛苦、留疤，有时甚至致命。幸存者会被不可逆地改变\u2014\u2014且未必变得更好。历经数代实验，一支血猎手分支部族将鲜血秘法改造躯体的法门锤炼至精，以堕落的炼金术与毒质药剂进一步改造自己的血液。随时间推移，他们调整了自己在战斗中的能力，成为了超越昔日自我的存在。这些血猎手自称突变结社，如今专精于评估敌人的强弱，并改造自身生理构造，以求为任何冲突做好万全准备。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "诱变技艺|血猎手|BH2022|突变|BH2022|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "炼金公式|血猎手|BH2022|突变|BH2022|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "诱变剂|血猎手|BH2022|突变|BH2022|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Formulas",
+			"name": "炼金公式",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "突变",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"如上方诱变技艺表所示，你完成一次休息时能调制的诱变剂数量、以及你知晓的配方数量，随你的血猎手等级提升而增加。此外，每当你学会新的诱变剂配方时，你可以用一个新配方替换一个已知配方。你从本子职业描述末尾详列的选项中选择四个诱变剂配方习得，且你完成一次短休或长休时可以调制一瓶诱变剂。"
+			]
+		},
+		{
+			"ENG_name": "Mutagencraft",
+			"name": "诱变技艺",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "突变",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级选择此原型时，你学会掌握被称为诱变剂的禁忌炼金配方\u2014\u2014它们能暂时改变你的心智与身体能力。",
+				"你可以用附赠动作饮下一瓶诱变剂，其效应与副作用持续到你完成一次短休或长休为止（另有说明除外）。当一瓶或多瓶诱变剂正影响你时，你可以用动作凝神将所有诱变剂排出体外，终止其效应与副作用。",
+				"诱变剂专为调制者的特定生理构造而设计，你的诱变剂对其他生物无效。它们本性也不稳定，会随时间失去效力\u2014\u2014若在你下次完成短休或长休前未被使用，便会失效。",
+				{
+					"type": "table",
+					"colLabels": [
+						"血猎手等级",
+						"已制诱变剂",
+						"已知配方"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-6 text-right",
+						"col-5 text-right"
+					],
+					"rows": [
+						[
+							"3级",
+							"1",
+							"4"
+						],
+						[
+							"7级",
+							"2",
+							"5"
+						],
+						[
+							"11级",
+							"2",
+							"6"
+						],
+						[
+							"15级",
+							"3",
+							"7"
+						],
+						[
+							"18级",
+							"3",
+							"8"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mutagens",
+			"name": "诱变剂",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "突变",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"这些诱变剂按字母顺序排列。你可以在满足其先决条件的同时学习诱变剂。",
+				{
+					"ENG_name": "Aether (11th Level Required)",
+					"type": "entries",
+					"name": "升腾（需11级）",
+					"entries": [
+						"在1小时内，你拥有20尺飞行速度。然而在此期间，你的力量与敏捷检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Alluring",
+					"type": "entries",
+					"name": "幻惑",
+					"entries": [
+						"你的皮肤与嗓音变得柔韧可塑，使你能美化容貌与气场。你的魅力检定具有优势。然而，你的先攻检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Celerity",
+					"type": "entries",
+					"name": "迅捷",
+					"entries": [
+						"你的敏捷提升3点，其上限亦然。然而，你的感知豁免检定具有劣势。若你在11级饮用此诱变剂，敏捷及其上限改为提升4点；18级改为5点。"
+					]
+				},
+				{
+					"ENG_name": "Conversant",
+					"type": "entries",
+					"name": "精通",
+					"entries": [
+						"你的智力检定具有优势。然而，你的感知检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Cruelty (11th level required)",
+					"type": "entries",
+					"name": "残虐（需11级）",
+					"entries": [
+						"当你使用攻击动作时，你可以用附赠动作进行一次额外的武器攻击。然而，你的智力、感知和魅力豁免检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Deftness",
+					"type": "entries",
+					"name": "灵敏",
+					"entries": [
+						"你的敏捷检定具有优势。然而，你的感知检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Embers",
+					"type": "entries",
+					"name": "余烬",
+					"entries": [
+						"你获得火焰伤害的抗性，以及寒冷伤害的易伤。"
+					]
+				},
+				{
+					"ENG_name": "Gelid",
+					"type": "entries",
+					"name": "凛冽",
+					"entries": [
+						"你获得寒冷伤害的抗性，以及火焰伤害的易伤。"
+					]
+				},
+				{
+					"ENG_name": "Impermeable",
+					"type": "entries",
+					"name": "不穿",
+					"entries": [
+						"你获得穿刺伤害的抗性，以及挥砍伤害的易伤。"
+					]
+				},
+				{
+					"ENG_name": "Mobile",
+					"type": "entries",
+					"name": "灵活移动",
+					"entries": [
+						"你免疫{@condition 受擒}和{@condition 束缚}状态。然而，你的力量检定具有劣势。在11级，你还免疫{@condition 麻痹}状态。"
+					]
+				},
+				{
+					"ENG_name": "Nighteye",
+					"type": "entries",
+					"name": "夜视",
+					"entries": [
+						"你拥有60尺范围的{@sense 黑暗视觉}。若你已拥有{@sense 黑暗视觉}，其范围增加60尺。然而，当你、你的攻击目标或你试图感知的对象处于阳光直射下时，你的攻击检定以及依赖视觉的感知（{@skill 察觉}）检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Percipient",
+					"type": "entries",
+					"name": "洞察者",
+					"entries": [
+						"你的感知检定具有优势。然而，你的魅力检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Potency",
+					"type": "entries",
+					"name": "潜能",
+					"entries": [
+						"你的力量提升3点，其上限亦然。然而，你的敏捷豁免检定具有劣势。若你在11级饮用此诱变剂，力量及其上限改为提升4点；18级改为5点。"
+					]
+				},
+				{
+					"ENG_name": "Precision (11th level required)",
+					"type": "entries",
+					"name": "精准（需11级）",
+					"entries": [
+						"你的武器攻击在投出19或20时即为重击。然而，你的力量豁免检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Rapidity",
+					"type": "entries",
+					"name": "急速",
+					"entries": [
+						"你的速度提升10尺。然而，你的智力检定具有劣势。在15级，你的速度额外再提升5尺。"
+					]
+				},
+				{
+					"ENG_name": "Reconstruction (7th level required)",
+					"type": "entries",
+					"name": "再生（需7级）",
+					"entries": [
+						"在1小时内，在你的每个回合开始时，若你至少有1点生命值但低于上限的一半，你恢复等于熟练加值的生命值。然而在此期间，你的速度降低10尺。"
+					]
+				},
+				{
+					"ENG_name": "Sagacity",
+					"type": "entries",
+					"name": "睿智",
+					"entries": [
+						"你的智力提升3点，其上限亦然。然而，你的魅力豁免检定具有劣势。若你在11级饮用此诱变剂，智力及其上限改为提升4点；18级改为5点。"
+					]
+				},
+				{
+					"ENG_name": "Shielded",
+					"type": "entries",
+					"name": "庇护",
+					"entries": [
+						"你获得挥砍伤害的抗性，以及钝击伤害的易伤。"
+					]
+				},
+				{
+					"ENG_name": "Unbreakable",
+					"type": "entries",
+					"name": "不破",
+					"entries": [
+						"你获得钝击伤害的抗性，以及穿刺伤害的易伤。"
+					]
+				},
+				{
+					"ENG_name": "Vermillion",
+					"type": "entries",
+					"name": "红莲",
+					"entries": [
+						"你的鲜血恶戾特性获得一次额外使用次数。然而，你的死亡豁免检定具有劣势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Strange Metabolism",
+			"name": "奇异代谢",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "突变",
+			"subclassSource": "BH2022",
+			"level": 7,
+			"entries": [
+				"当你到达7级时，你的躯体开始适应毒素与毒液，无视其腐蚀效应。你获得毒素伤害和{@condition 中毒}状态的免疫。",
+				"此外，你可以触发一阵肾上腺素爆发，暂时抵抗诱变剂的负面效应。你可以用附赠动作忽略一瓶正影响你的诱变剂的负面副作用，持续1分钟。一旦如此做，你直到完成一次长休前都无法再次如此做。"
+			]
+		},
+		{
+			"ENG_name": "Brand of Axiom",
+			"name": "公理烙印",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "突变",
+			"subclassSource": "BH2022",
+			"level": 11,
+			"entries": [
+				"在11级，你的突变鲜血秘法使你的惩戒烙印能揭示敌人的真实形态。你烙印生物时，其身上生效的任何幻术或隐形效应终止，且被你烙印期间无法受益于隐形或幻术效应。若被你烙印的生物处于其他形态（借由{@spell 变形术}法术、变身动作或变形者特性、荒野形态特性及类似效应），它必须通过感知豁免，否则还原为真实形态并{@condition 震慑}直到你的下个回合结束。每当被烙印生物试图改变形态时，它必须通过感知豁免，否则尝试失败，且它{@condition 震慑}直到你的下个回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of Corrosion",
+			"name": "腐蚀血咒",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "突变",
+			"subclassSource": "BH2022",
+			"level": 15,
+			"entries": [
+				"从15级起，你的血咒能将可怕的毒素注入生物躯体。你的鲜血恶戾特性获得{@optfeature 腐蚀血咒|BH2022}。这不会计入你已知的血咒数量。"
+			]
+		},
+		{
+			"ENG_name": "Exalted Mutation",
+			"name": "高等突变",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "突变",
+			"subclassSource": "BH2022",
+			"level": 18,
+			"entries": [
+				"在18级，你的躯体已适应在需要时自然生成诱变剂。你可以用附赠动作选择一瓶正影响你的诱变剂。其效应与副作用终止，且你可以立即让一瓶你知晓配方的诱变剂取代它生效。",
+				"你可以使用此特性，次数等于你的鲜血秘法调整值（至少一次）。你完成一次长休后恢复所有已耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Order of the Profane Soul",
+			"name": "渎魂结社",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"entries": [
+				"渎魂结社的血猎手将鲜血秘法的极限推向对抗世间最可怖的腐蚀者。远古邪魔与残忍的施法者向来倚仗隐入暗处、摆脱猎杀者的本事\u2014\u2014在贵族宫廷中消失得无影无踪，或仅凭一瞥便扭曲最坚定战士的心智。于是，创建此结社的血猎手们仰仗自身的韧性，潜入同一口腐化奥术知识之井，与较弱的邪恶缔结契约，以更好地对抗更大的威胁。尽管他们或许已用自身的一部分换取了力量，但此结社的成员深知：这份力量的收益远胜其代价。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "异界宗主|血猎手|BH2022|渎魂|BH2022|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "契约魔法|血猎手|BH2022|渎魂|BH2022|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "血仪法器|血猎手|BH2022|渎魂|BH2022|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Otherworldly Patron",
+			"name": "异界宗主",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你到达3级时，你与一个自选的异界存在谈成一笔交易：",
+				{
+					"type": "list",
+					"items": [
+						"至高妖精、邪魔宗主或旧日支配者宗主，详见{@book 玩家手册|PHB}",
+						"不朽者宗主，出自{@book 剑湾冒险者指南|SCAG}",
+						"天界宗主或咒剑宗主，出自{@book 珊娜萨的万事指南|XGE}",
+						"深海意志宗主或巨灵宗主，出自{@book 塔莎的万事坩埚|TCE}",
+						"死灵宗主，出自{@book 范·里希腾的鸦阁魔域指南|VRGR}"
+					]
+				},
+				"如以下所述，你的选择会强化你的部分子职业特性。"
+			]
+		},
+		{
+			"ENG_name": "Pact Magic",
+			"name": "契约魔法",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你到达3级时，你可以用施法能力强化你的战斗技艺。施法的一般规则参见《玩家手册》{@book 第十章|PHB|10}，魔契师法术列表参见《玩家手册》第十一章（{@filter 魔契师法术列表|spells|class=魔契师}）。",
+				{
+					"ENG_name": "Cantrips",
+					"type": "entries",
+					"name": "戏法",
+					"entries": [
+						"你从{@filter 魔契师法术列表|spells|class=魔契师}中习得两个自选戏法。你在10级再习得一个自选的魔契师戏法。"
+					]
+				},
+				{
+					"ENG_name": "Spell Slots",
+					"type": "entries",
+					"name": "法术位",
+					"entries": [
+						"渎魂结社施法表展示了你拥有的法术位数量。该表还展示了这些法术位的环阶；你所有的法术位环阶相同。要施放一个1环或更高环阶的{@filter 魔契师法术|spells|class=魔契师}，你必须消耗一个法术位。你完成一次短休或长休后恢复所有已消耗的法术位。",
+						"例如，当你8级时，你拥有两个2环法术位。要施放1环法术巫术箭，你必须消耗其中一个法术位，且你将其作为2环法术施放。"
+					]
+				},
+				{
+					"ENG_name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"name": "1环及更高等级已知法术",
+					"entries": [
+						"在3级，你从{@filter 魔契师法术列表|spells|class=魔契师}中知晓两个自选的1环法术。",
+						"渎魂结社表格的\"已知法术\"列展示了你何时学会更多自选的1环及更高环阶的{@filter 魔契师法术|spells|class=魔契师}。你选择的法术环阶不得高于表中你等级对应的\"法术位环阶\"列所示。例如，当你到达11级时，你学会一个新的魔契师法术，它可以是1环、2环或3环。",
+						"此外，当你在本职业与结社中提升等级时，你可以选择一个你已知的魔契师法术，用魔契师法术列表中的另一个法术替换它，新法术的环阶同样必须是你拥有对应法术位的环阶。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"type": "entries",
+					"name": "施法属性",
+					"entries": [
+						"你选择的鲜血秘法属性（智力或感知）是你的魔契师法术的施法属性，因此当法术提及你的施法属性时，使用你的鲜血秘法属性。此外，你计算所施展的魔契师法术的豁免DC，以及以其进行攻击检定时，使用你的鲜血秘法调整值。",
+						{
+							"ENG_name": "Spell save DC",
+							"type": "abilityDc",
+							"name": "法术豁免DC",
+							"attributes": [
+								"int",
+								"wis"
+							]
+						},
+						{
+							"ENG_name": "Spell attack modifier",
+							"type": "abilityAttackMod",
+							"name": "法术攻击调整值",
+							"attributes": [
+								"int",
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Rite Focus",
+			"name": "血仪法器",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级起，你的武器成为你与所选宗主契约之力的导管。当你持有激活的猩红仪式时，你可以将武器作为魔契师法术的施法法器，并依你选择的契约获得特定收益。",
+				{
+					"ENG_name": "The Archfey",
+					"type": "entries",
+					"name": "至高妖精",
+					"entries": [
+						"当你以一件持有激活猩红仪式的武器伤害一个生物时，该生物泛起微光，直到你的下个回合结束。在此期间，该生物无法从任何掩蔽或隐形状态中获得收益。"
+					]
+				},
+				{
+					"ENG_name": "The Celestial",
+					"type": "entries",
+					"name": "天界宗主",
+					"entries": [
+						"你可以用附赠动作消耗一次你的鲜血恶戾特性，治疗60尺内一个你能看见的生物。该生物恢复等于一颗鲜血秘法骰投掷结果＋你的鲜血秘法调整值（至少+1）的生命值。"
+					]
+				},
+				{
+					"ENG_name": "The Fathomless",
+					"type": "entries",
+					"name": "深海意志宗主",
+					"entries": [
+						"你可以在水下呼吸。此外，每回合一次，当你以一件持有激活猩红仪式的武器伤害一个生物时，你可以使该生物的速度降低10尺，直到你的下个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "The Fiend",
+					"type": "entries",
+					"name": "邪魔宗主",
+					"entries": [
+						"在使用烈焰血仪期间，当你投掷仪式的额外伤害骰时若某颗伤害骰投出1或2，你可以重投该骰并选择使用哪次结果。"
+					]
+				},
+				{
+					"ENG_name": "The Genie",
+					"type": "entries",
+					"name": "巨灵宗主",
+					"entries": [
+						"你可以用附赠动作消耗一次你的鲜血恶戾特性，赋予自己30尺飞行速度，持续轮数等于你的鲜血秘法调整值（至少1轮）。"
+					]
+				},
+				{
+					"ENG_name": "The Great Old One",
+					"type": "entries",
+					"name": "旧日支配者宗主",
+					"entries": [
+						"当你对一个生物造成重击时，该生物以及它10尺内由你选择的任何其他生物{@condition 恐慌}于你，直到你的下个回合结束。"
+					]
+				},
+				{
+					"ENG_name": "The Hexblade",
+					"type": "entries",
+					"name": "咒剑宗主",
+					"entries": [
+						"当你以一道血咒成功指定一个生物为目标后，在诅咒生效期间你下次以攻击命中该生物时，该攻击额外造成等于你的熟练加值的伤害。"
+					]
+				},
+				{
+					"ENG_name": "The Undead",
+					"type": "entries",
+					"name": "死灵宗主",
+					"entries": [
+						"当你受到暗蚀伤害时，你可以用反应使该伤害减半。此外，当你持有任意激活的猩红仪式时，你的外表会发生变化，映现你宗主的某些特质。"
+					]
+				},
+				{
+					"ENG_name": "The Undying",
+					"type": "entries",
+					"name": "不朽者宗主",
+					"entries": [
+						"当你将一个至少具有轻度威胁的敌对生物（由DM裁定）的生命值降至0时，你恢复等于一颗鲜血秘法骰投掷结果的生命值。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mystic Frenzy",
+			"name": "神秘狂乱",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 7,
+			"entries": [
+				"从7级起，当你用动作施放一门戏法时，你可以立即用附赠动作进行一次武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Revealed Arcana",
+			"name": "奥秘揭示",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 7,
+			"entries": [
+				"在7级，你的宗主依你的契约授予你一个特色法术的使用权。你以任意契约魔法法术位施放该法术，且直到完成一次长休前无法再次施放。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "The Archfey",
+							"type": "entries",
+							"name": "至高妖精",
+							"entries": [
+								"你可以施放{@spell 朦胧术}。"
+							]
+						},
+						{
+							"ENG_name": "The Celestial",
+							"type": "entries",
+							"name": "天界宗主",
+							"entries": [
+								"你可以施放{@spell 次等复原术}。"
+							]
+						},
+						{
+							"ENG_name": "The Fathomless",
+							"type": "entries",
+							"name": "深海意志宗主",
+							"entries": [
+								"你可以施放{@spell 造风术}。"
+							]
+						},
+						{
+							"ENG_name": "The Fiend",
+							"type": "entries",
+							"name": "邪魔宗主",
+							"entries": [
+								"你可以施放{@spell 灼热射线}。"
+							]
+						},
+						{
+							"ENG_name": "The Genie",
+							"type": "entries",
+							"name": "巨灵宗主",
+							"entries": [
+								"你可以施放{@spell 魅影之力}。"
+							]
+						},
+						{
+							"ENG_name": "The Great Old One",
+							"type": "entries",
+							"name": "旧日支配者宗主",
+							"entries": [
+								"你可以施放{@spell 侦测思想}。"
+							]
+						},
+						{
+							"ENG_name": "The Hexblade",
+							"type": "entries",
+							"name": "咒剑宗主",
+							"entries": [
+								"你可以施放{@spell 印记斩}。"
+							]
+						},
+						{
+							"ENG_name": "The Undead",
+							"type": "entries",
+							"name": "死灵宗主",
+							"entries": [
+								"你可以施放{@spell 目盲术/耳聋术}。"
+							]
+						},
+						{
+							"ENG_name": "The Undying",
+							"type": "entries",
+							"name": "不朽者宗主",
+							"entries": [
+								"你可以施放{@spell 沉默术}。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Brand of the Sapping Scar",
+			"name": "痂痕烙印",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 11,
+			"entries": [
+				"到达11级时，你的惩戒烙印特性会将黑暗的奥术伤疤凿入目标，使其在你的魔法面前不堪一击。被你烙印的生物对抗你的魔契师法术的豁免检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Unsealed Arcana",
+			"name": "奥秘展露",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 15,
+			"entries": [
+				"在15级，你的宗主依你的契约授予你另一个法术的使用权。你施放该法术无需消耗法术位，且直到完成一次长休前无法再次施放。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "The Archfey",
+							"type": "entries",
+							"name": "至高妖精",
+							"entries": [
+								"你可以施放{@spell 缓慢术}。"
+							]
+						},
+						{
+							"ENG_name": "The Celestial",
+							"type": "entries",
+							"name": "天界宗主",
+							"entries": [
+								"你可以施放{@spell 回生术}。"
+							]
+						},
+						{
+							"ENG_name": "The Fathomless",
+							"type": "entries",
+							"name": "深海意志宗主",
+							"entries": [
+								"你可以施放{@spell 闪电束}。"
+							]
+						},
+						{
+							"ENG_name": "The Fiend",
+							"type": "entries",
+							"name": "邪魔宗主",
+							"entries": [
+								"你可以施放{@spell 火球术}。"
+							]
+						},
+						{
+							"ENG_name": "The Genie",
+							"type": "entries",
+							"name": "巨灵宗主",
+							"entries": [
+								"你可以施放{@spell 防护能量}。"
+							]
+						},
+						{
+							"ENG_name": "The Great Old One",
+							"type": "entries",
+							"name": "旧日支配者宗主",
+							"entries": [
+								"你可以施放{@spell 加速术}。"
+							]
+						},
+						{
+							"ENG_name": "The Hexblade",
+							"type": "entries",
+							"name": "咒剑宗主",
+							"entries": [
+								"你可以施放{@spell 闪现术}。"
+							]
+						},
+						{
+							"ENG_name": "The Undead",
+							"type": "entries",
+							"name": "死灵宗主",
+							"entries": [
+								"你可以施放{@spell 死者交谈}。"
+							]
+						},
+						{
+							"ENG_name": "The Undying",
+							"type": "entries",
+							"name": "不朽者宗主",
+							"entries": [
+								"你可以施放{@spell 降咒}。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Souleater",
+			"name": "噬魂血咒",
+			"source": "BH2022",
+			"className": "血猎手",
+			"classSource": "BH2022",
+			"subclassShortName": "渎魂",
+			"subclassSource": "BH2022",
+			"level": 18,
+			"entries": [
+				"从18级起，你学会从倒下的猎物身上虹吸生命能量。你的鲜血恶戾特性获得{@optfeature 噬魂血咒|BH2022}。这不会计入你已知的血咒数量。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Aether",
+			"name": "升腾",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						},
+						"subclass": {
+							"ENG_name": "Order of the Mutant",
+							"name": "突变结社",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"在1小时内，你拥有20尺飞行速度。然而在此期间，你的力量与敏捷检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Alluring",
+			"name": "幻惑",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的皮肤与嗓音变得柔韧可塑，使你能美化容貌与气场。你的魅力检定具有优势。然而，你的先攻检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of Binding",
+			"name": "捆缚血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"entries": [
+				"你可以用附赠动作尝试捆缚30尺内一个你能看见的大型或更小的生物，其必须进行力量豁免。豁免失败则被诅咒生物的速度降为0，且直到你的下个回合结束无法使用反应。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"此诅咒持续1分钟，且无论体型如何都能影响任何生物。被诅咒的生物在其每个回合结束时可以重复豁免，豁免成功则诅咒自行解除。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of Bloated Agony",
+			"name": "胀痛血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"entries": [
+				"你可以用附赠动作诅咒30尺内一个你能看见的生物，使其躯体肿胀直到你的下个回合结束。在此期间，该生物的力量与敏捷检定具有劣势，且若其在自己回合内进行多次攻击，则受到{@dice 1d8}点暗蚀伤害。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"此诅咒持续1分钟。被诅咒的生物在自己的每回合结束时可以进行体质豁免检定，豁免成功时此诅咒结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of Corrosion",
+			"name": "腐蚀血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						},
+						"subclass": {
+							"ENG_name": "Order of the Mutant",
+							"name": "突变结社",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用附赠动作使30尺内一个生物{@condition 中毒}。被诅咒的生物在其每个回合结束时可以进行体质豁免，豁免成功则诅咒自行解除。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"被诅咒的生物在你施加此诅咒时受到{@dice 4d6}点暗蚀伤害，并且每当它未能通过体质豁免检定来结束诅咒时，会再次受到此伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of Exposure",
+			"name": "暴露诅咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"entries": [
+				"当30尺内一个你能看见的生物受到攻击或法术的伤害时，你可以用反应暂时削弱其韧性。直到目标下个回合结束，它失去对触发攻击或法术所造成的所有伤害类型的抗性（对该触发效应亦然）。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"目标改为失去对触发攻击或法术之伤害类型的免疫，但直到其下个回合结束前对这些伤害类型具有抗性。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Anxious",
+			"name": "焦虑血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"entries": [
+				"你可以用附赠动作袭扰30尺内一个生物的躯体或心智，使其易受强力影响。直到你的下个回合结束，对被诅咒生物进行的魅力（{@skill 威吓}）检定具有优势。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"在此诅咒结束前，被诅咒生物下次进行的感知豁免检定具有劣势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Exorcist",
+			"name": "驱魔血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						},
+						"subclass": {
+							"ENG_name": "Order of the Ghostslayer",
+							"name": "弑灵结社",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用附赠动作选择30尺内一个你能看见的、处于{@condition 魅惑}或{@condition 恐慌}状态、或受附身效应影响的生物。目标生物不再{@condition 魅惑}、{@condition 恐慌}或被附身。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"曾{@condition 魅惑}、{@condition 恐慌}或附身你诅咒目标的生物受到{@dice 3d6}点心灵伤害，且必须通过感知豁免，否则{@condition 震慑}直到你的下个回合结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Eyeless",
+			"name": "盲目血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"entries": [
+				"当30尺内一个你能看见的生物进行攻击时，你可以用反应投掷一颗鲜血秘法骰，并将投掷结果从该生物的攻击检定中减去。你可以在该生物投掷之后、但必须先于DM判定攻击命中与否之前决定是否使用此特性。免疫{@condition 目盲}状态的生物免疫此诅咒。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"你对该生物的所有攻击检定使用此诅咒，直至该生物的回合结束。你为每次受影响的攻击各掷一次骰。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Fallen Puppet",
+			"name": "傀儡血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"entries": [
+				"当30尺内一个你能看见的生物生命值降至0时，你可以用反应向该生物注入最后一击的杀意。该生物立即对其射程内一个由你选择的目标进行一次武器攻击。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"你可以先使被诅咒生物移动至多一半速度的距离，并使其攻击检定获得等于你的鲜血秘法调整值（至少+1）的加值。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Howl",
+			"name": "怒号血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						},
+						"subclass": {
+							"ENG_name": "Order of the Lycan",
+							"name": "化狼结社",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用动作发出一声令人毛骨悚然的嚎叫。30尺内每个能听见你的生物必须通过感知豁免，否则{@condition 恐慌}于你直到你的下个回合结束。若某生物豁免失败5点或更多，则它在如此{@condition 恐慌}期间处于{@condition 震慑}状态。豁免成功的生物在接下来的24小时内免疫此血咒。",
+				"你可以选择任意数量你能看见的生物不受此嚎叫影响。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"此诅咒的范围扩大到60尺。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Marked",
+			"name": "印记血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"entries": [
+				"你可以用附赠动作印记30尺内一个你能看见的生物。直到你的回合结束，每当你以一件持有激活猩红仪式的武器命中被诅咒生物时，你在计算仪式的额外伤害时额外投掷一颗鲜血秘法骰。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"直到你的回合结束前，你对目标的下一次攻击检定具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Muddled Mind",
+			"name": "乱心血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"entries": [
+				"你可以用附赠动作诅咒30尺内一个你能看见的、正专注于一个法术或使用需专注特性的生物。直到你的下个回合结束，该生物为维持专注进行的下一次体质豁免检定具有劣势。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"诅咒生物在你下回合结束前为维持专注而进行的所有体质豁免检定具有劣势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Curse of the Souleater",
+			"name": "噬魂血咒",
+			"source": "BH2022",
+			"featureType": [
+				"BC"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						},
+						"subclass": {
+							"ENG_name": "Order of the Profane Soul",
+							"name": "渎魂结社",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当一个非构装体、非不死生物在你30尺内生命值降至0时，你可以用反应将其生命能量献给你的宗主以换取力量。直到你的下个回合结束，你的攻击具有优势，且你对所有伤害具有抗性。",
+				{
+					"ENG_name": "Amplify",
+					"type": "entries",
+					"name": "增幅",
+					"entries": [
+						"此外，你恢复一个已耗用的魔契师法术位。一旦你增幅了此血咒，你必须完成一次长休才能再次增幅它。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Celerity",
+			"name": "迅捷",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的敏捷提升3点，其上限亦然。然而，你的感知豁免检定具有劣势。若你在11级饮用此诱变剂，敏捷及其上限改为提升4点；18级改为5点。"
+			]
+		},
+		{
+			"ENG_name": "Conversant",
+			"name": "精通",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的智力检定具有优势。然而，你的感知检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Cruelty",
+			"name": "残虐",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						},
+						"subclass": {
+							"ENG_name": "Order of the Mutant",
+							"name": "突变结社",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用攻击动作时，你可以用附赠动作进行一次额外的武器攻击。然而，你的智力、感知和魅力豁免检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Deftness",
+			"name": "灵敏",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的敏捷检定具有优势。然而，你的感知检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Embers",
+			"name": "余烬",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你获得火焰伤害的抗性，以及寒冷伤害的易伤。"
+			]
+		},
+		{
+			"ENG_name": "Gelid",
+			"name": "凛冽",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你获得寒冷伤害的抗性，以及火焰伤害的易伤。"
+			]
+		},
+		{
+			"ENG_name": "Impermeable",
+			"name": "不穿",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你获得穿刺伤害的抗性，以及挥砍伤害的易伤。"
+			]
+		},
+		{
+			"ENG_name": "Mobile",
+			"name": "灵活移动",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你免疫{@condition 受擒}和{@condition 束缚}状态。然而，你的力量检定具有劣势。在11级，你还免疫{@condition 麻痹}状态。"
+			]
+		},
+		{
+			"ENG_name": "Nighteye",
+			"name": "夜视",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你拥有60尺范围的{@sense 黑暗视觉}。若你已拥有{@sense 黑暗视觉}，其范围增加60尺。然而，当你、你的攻击目标或你试图感知的对象处于阳光直射下时，你的攻击检定以及依赖视觉的感知（{@skill 察觉}）检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Percipient",
+			"name": "洞察者",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的感知检定具有优势。然而，你的魅力检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Potency",
+			"name": "潜能",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的力量提升3点，其上限亦然。然而，你的敏捷豁免检定具有劣势。若你在11级饮用此诱变剂，力量及其上限改为提升4点；18级改为5点。"
+			]
+		},
+		{
+			"ENG_name": "Precision",
+			"name": "精准",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						},
+						"subclass": {
+							"ENG_name": "Order of the Mutant",
+							"name": "突变结社",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你的武器攻击在投出19或20时即为重击。然而，你的力量豁免检定具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Rapidity",
+			"name": "急速",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的速度提升10尺。然而，你的智力检定具有劣势。在15级，你的速度额外再提升5尺。"
+			]
+		},
+		{
+			"ENG_name": "Reconstruction",
+			"name": "再生",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						},
+						"subclass": {
+							"ENG_name": "Order of the Mutant",
+							"name": "突变结社",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"在1小时内，在你的每个回合开始时，若你至少有1点生命值但低于上限的一半，你恢复等于熟练加值的生命值。然而在此期间，你的速度降低10尺。"
+			]
+		},
+		{
+			"ENG_name": "Rite of the Dead",
+			"name": "死亡血仪",
+			"source": "BH2022",
+			"featureType": [
+				"CR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你的死亡血仪造成的额外伤害是暗蚀伤害。"
+			]
+		},
+		{
+			"ENG_name": "Rite of the Flame",
+			"name": "烈焰血仪",
+			"source": "BH2022",
+			"featureType": [
+				"CR"
+			],
+			"entries": [
+				"你的血仪造成的额外伤害是火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Rite of the Frozen",
+			"name": "冻结血仪",
+			"source": "BH2022",
+			"featureType": [
+				"CR"
+			],
+			"entries": [
+				"你的血仪造成的额外伤害是寒冷伤害。"
+			]
+		},
+		{
+			"ENG_name": "Rite of the Oracle",
+			"name": "神谕血仪",
+			"source": "BH2022",
+			"featureType": [
+				"CR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你的血仪造成的额外伤害是心灵伤害。"
+			]
+		},
+		{
+			"ENG_name": "Rite of the Roar",
+			"name": "轰鸣血仪",
+			"source": "BH2022",
+			"featureType": [
+				"CR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Blood Hunter",
+							"name": "血猎手"
+						}
+					}
+				}
+			],
+			"entries": [
+				"轰鸣血仪造成的额外伤害是雷鸣伤害。"
+			]
+		},
+		{
+			"ENG_name": "Rite of the Storm",
+			"name": "风暴血仪",
+			"source": "BH2022",
+			"featureType": [
+				"CR"
+			],
+			"entries": [
+				"猩红仪式造成的额外伤害是闪电伤害。"
+			]
+		},
+		{
+			"ENG_name": "Sagacity",
+			"name": "睿智",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的智力提升3点，其上限亦然。然而，你的魅力豁免检定具有劣势。若你在11级饮用此诱变剂，智力及其上限改为提升4点；18级改为5点。"
+			]
+		},
+		{
+			"ENG_name": "Shielded",
+			"name": "庇护",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你获得挥砍伤害的抗性，以及钝击伤害的易伤。"
+			]
+		},
+		{
+			"ENG_name": "Unbreakable",
+			"name": "不破",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你获得钝击伤害的抗性，以及穿刺伤害的易伤。"
+			]
+		},
+		{
+			"ENG_name": "Vermillion",
+			"name": "红莲",
+			"source": "BH2022",
+			"featureType": [
+				"MTGN"
+			],
+			"entries": [
+				"你的鲜血恶戾特性获得一次额外使用次数。然而，你的死亡豁免检定具有劣势。"
+			]
+		}
+	]
+}
