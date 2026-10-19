@@ -1,0 +1,5825 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Arcadia21",
+				"abbreviation": "Ar21",
+				"full": "阿卡迪亚 第21期",
+				"url": "https://shop.mcdmproductions.com/collections/arcadia/products/arcadia-complete-bundle-issues-1-30",
+				"version": "1.0",
+				"dateReleased": "2022-10-26",
+				"authors": [
+					"Banana Chan",
+					"Celeste Conowitch",
+					"Hannah Rose",
+					"MCDM Productions",
+					"Sharang Biswas"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"color": "ff5311"
+			}
+		],
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1725791262,
+		"dateLastModified": 1777136208,
+		"_dateLastModifiedHash": "eaa8c65b4e"
+	},
+	"_test": {
+		"references": [
+			"BST",
+			"ILL",
+			"TalPsi"
+		]
+	},
+	"reward": [
+		{
+			"ENG_name": "Mark of the Damned",
+			"name": "受咒之印",
+			"source": "Arcadia21",
+			"page": 8,
+			"type": "Blessing",
+			"rarity": "rare",
+			"entries": [
+				"这道小小的印记会显现在命运已被不可逆转地改变的生物身上。印记可以可见或不可见（由你选择），形状如同一个沙漏。",
+				{
+					"ENG_name": "Destiny bond",
+					"type": "entries",
+					"name": "命运纽带",
+					"page": 8,
+					"entries": [
+						"每天一次，你可以使用一个附赠动作引动印记的力量。选择一个你能看见的生物并投掷一颗{@dice d4}。你和目标各自获得{@condition 厄运|Arcadia21}状态以及等同于投骰点数的厄运指示物。一旦某生物成为过此特性的目标，在其继续保持{@condition 厄运|Arcadia21}期间，就无法再受到另一个{@reward 受咒之印|Arcadia21}的影响。"
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"ENG_name": "Black Cloak",
+			"name": "黑斗篷",
+			"source": "Arcadia21",
+			"page": 5,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "midnight",
+			"entries": [
+				"卷曲的暗影残迹依附在这件斗篷的黑色毛皮上。当你在{@quickref 视野与光照||2||微光光照}或黑暗中穿着这件斗篷时，你的敏捷（{@skill 隐匿}）检定具有优势。",
+				{
+					"ENG_name": "Shadow Pack",
+					"type": "entries",
+					"name": "暗影群",
+					"entries": [
+						"当你受到伤害时，你可以使用你的反应创造一个你自己的暗影副本。副本出现在你周围5尺内一个未被占据的空间中，并持续存在1分钟或直到你移动为止。当你的暗影副本处于某个生物5尺范围内时，你对那个生物的攻击检定具有优势。一旦这件斗篷被用来创造了暗影副本，直到下一个午夜前它都无法再创造另一个暗影副本。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Can of Worms",
+			"name": "蠕虫之罐",
+			"source": "Arcadia21",
+			"page": 6,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"recharge": "dawn",
+			"entries": [
+				"这件容器中盛着一片取自活体{@creature 死亡蠕虫|Arcadia21}、或取自死后一小时内死亡蠕虫的肉。如果你把水和腐坏的有机物放进容器，这片肉就会产生足以灌满容器的酸液。容器一旦被灌满，这片肉便无法再产生更多酸液，直至下一个黎明。",
+				"如果容器已装满，你可以使用一个动作将容器中的内容泼向5尺内的一生物或物件。对目标进行一次近战攻击，将酸液视为一件临时武器。命中时，目标受到{@damage 6d6}点酸伤害。",
+				"如果连续七天没有向容器补充新鲜的水和有机物，这片肉就会萎缩成尘，容器也随之失去魔力。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"ENG_name": "Birgitte Skorman",
+			"name": "碧姬特·斯科曼",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Arcadia21",
+			"page": 19,
+			"_copy": {
+				"ENG_name": "Specter",
+				"name": "恶灵",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Human",
+						"name": "人类",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "幽灵",
+						"with": "碧姬特",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "undead",
+				"tags": [
+					"人类灵魂"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Birgitte Skorman.webp"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Death Worm",
+			"name": "死亡蠕虫",
+			"alias": [
+				"奥尔戈伊-霍尔霍伊",
+				"蒙古死亡蠕虫"
+			],
+			"group": [
+				"神秘生物"
+			],
+			"source": "Arcadia21",
+			"page": 7,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 157,
+				"formula": "15d10 + 75"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 22,
+			"dex": 14,
+			"con": 20,
+			"int": 7,
+			"wis": 14,
+			"cha": 8,
+			"save": {
+				"con": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+6"
+			},
+			"senses": [
+				"盲视 30 尺",
+				"震颤感知 120 尺"
+			],
+			"passive": 16,
+			"immune": [
+				"acid",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"prone"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Corrosive Secretion",
+					"name": "腐蚀性分泌物",
+					"entries": [
+						"触碰蠕虫、或在蠕虫5尺内以近战攻击命中蠕虫的生物，受到9（{@damage 2d8}）点酸伤害。"
+					]
+				},
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"只要蠕虫仍有至少1点生命值，它就会在自己的每回合开始时恢复10点生命值。"
+					]
+				},
+				{
+					"ENG_name": "Sand Scout",
+					"name": "沙地斥候",
+					"entries": [
+						"当接触沙质地形时，蠕虫在掘穴时不会引发{@action 借机攻击|PHB|借机攻击}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"蠕虫进行两次啃咬攻击。它可以用一次冲击波使用来替换其中一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一目标。{@h}17（{@damage 2d10 + 6}）点穿刺伤害，外加9（{@damage 2d8}）点酸伤害。如果目标是大型或更小的生物，它陷入{@condition 受擒}状态（逃脱{@dc 16}）。在此擒抱结束前，蠕虫只能对被{@condition 受擒}的生物使用啃咬攻击，且其为此进行的攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Shockwave",
+					"name": "冲击波",
+					"entries": [
+						"蠕虫释放出一波静电荷。蠕虫30尺内的每个生物必须进行一次{@dc 17}的体质豁免检定。检定失败的生物受到18（{@damage 4d8}）点闪电伤害并陷入{@condition 倒地}状态；检定成功则伤害减半，且不会陷入{@condition 倒地}状态。站在地面上的生物进行此豁免检定时具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Caustic Burst {@recharge 5}",
+					"name": "腐蚀爆发 {@recharge 5}",
+					"entries": [
+						"蠕虫喷射出一道5尺宽、60尺长的酸液。该直线范围内的每个生物必须进行一次{@dc 17}的敏捷豁免检定，检定失败者受到45（{@damage 10d8}）点酸伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Death Worm.webp"
+			},
+			"tokenCredit": "Zuzanna Wuzyk",
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Doomsday Salesperson",
+			"name": "末日推销员",
+			"group": [
+				"魔鬼常客"
+			],
+			"source": "Arcadia21",
+			"page": 13,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"由废金属制成的{@item 胸甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 13,
+			"int": 15,
+			"wis": 13,
+			"cha": 16,
+			"skill": {
+				"deception": "+7",
+				"performance": "+5",
+				"persuasion": "+7",
+				"stealth": "-10"
+			},
+			"passive": 11,
+			"conditionImmune": [
+				"charmed",
+				"invisible"
+			],
+			"languages": [
+				"通用语",
+				"巨人语",
+				"地精语",
+				"半身人语",
+				"兽人语",
+				"木族语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "The Opposite of Invisible",
+					"name": "隐形的反义",
+					"entries": [
+						"末日推销员很容易被认出来，而且嗓门非常、非常大\u2014\u2014要么是在叫卖货品，要么是货品叮叮当当地作响。其敏捷（{@skill 隐匿}）检定承受-10罚值。"
+					]
+				},
+				{
+					"ENG_name": "Tool Proficiency",
+					"name": "工具熟练",
+					"entries": [
+						"末日推销员熟练使用由GM选定的两套工匠工具。但末日推销员只能用这些工具制作反末日周边商品。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"末日推销员进行两次超载背包或摇头娃娃轰炸攻击。其中一次攻击可以用一次毒奶油牛肉使用来替换。"
+					]
+				},
+				{
+					"ENG_name": "Overloaded Pack",
+					"name": "超载背包",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点钝击伤害。如果目标是生物，它必须成功通过一次{@dc 12}的力量豁免检定，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Bobblehead Blast",
+					"name": "摇头娃娃轰炸",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程15/30尺，单一目标。{@h}7（{@damage 2d4 + 2}）点钝击伤害。他们到底把摇头娃娃藏哪儿了？谁会一次带这么多摇头娃娃？为什么这些玩意儿打人这么疼？"
+					]
+				},
+				{
+					"ENG_name": "Poisoned Creamed Beef",
+					"name": "毒奶油牛肉",
+					"entries": [
+						"不尝尝这份奶油牛肉可别急着嫌弃。可等你尝过之后，也就没力气嫌弃了，因为你会疼得说不出话。末日推销员把奶油牛肉泼向自己5尺内的一生物。目标必须成功通过一次{@dc 13}的体质豁免检定，否则陷入{@condition 中毒}状态1小时。以此方式{@condition 中毒}期间，生物可以用一个动作催吐，从而提前结束自身所受的这一效应。"
+					]
+				},
+				{
+					"ENG_name": "Offer You Can't Refuse",
+					"name": "无法拒绝的提议",
+					"entries": [
+						"末日推销员向自己5尺内的一生物展开推销。如果目标能听到并听懂末日推销员的话，它就必须成功通过一次{@dc 13}的魅力豁免检定，否则被末日推销员{@condition 魅惑}直至其下回合结束。以此方式被{@condition 魅惑}期间，目标必须在自己的回合用动作把自己穿戴或携带的一件自选物品交给末日推销员，以换取一整袋帽子和末日推销员的周边商品。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Doomsday Salesperson.webp"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"GO",
+				"H",
+				"O",
+				"S"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"poisoned",
+				"prone"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"strength"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Eirik Skorman",
+			"name": "艾里克·斯科曼",
+			"shortName": "艾里克",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Arcadia21",
+			"page": 18,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Orc",
+						"name": "兽人",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "艾里克",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Eirik Skorman.webp"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Fanlord",
+			"name": "迷主",
+			"group": [
+				"魔鬼常客"
+			],
+			"source": "Arcadia21",
+			"page": 12,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"由印有统治者报道的杂志和传单制成的轻甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"history": "+5",
+				"investigation": "+3"
+			},
+			"passive": 11,
+			"languages": [
+				"通用语，外加其统治者所知的任意语言（但说得不怎么样）"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Vicious Mockery (Cantrip)",
+					"name": "恶言相加（戏法）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"迷主向其60尺内一可见生物抛出一连串暗藏微弱附魔的辱骂。如果目标能听到迷主的声音，就必须成功通过一次{@dc 12}的感知豁免检定，否则受到7（{@damage 3d4}）点心灵伤害，并在其下回合结束前进行的下一次攻击检定具有劣势。"
+					],
+					"will": [
+						{
+							"entry": "{@spell 恶言相加}",
+							"hidden": true
+						}
+					],
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Emotional Labor",
+					"name": "情绪劳动",
+					"entries": [
+						"迷主30尺内任何能听到并听懂迷主话语的其他生物获得1级{@condition 力竭}，除非迷主处于{@condition 失能}状态，或该生物已有{@condition 力竭}等级。远离迷主超过30尺，即可移除因此特性造成的任何{@condition 力竭}等级。此外，杀死迷主的生物必须成功通过一次{@dc 12}的感知豁免检定，否则受到7（{@damage 2d6}）点心灵伤害（主要来自难以承受的内疚）。"
+					]
+				},
+				{
+					"ENG_name": "Groupthink",
+					"name": "群体思维",
+					"entries": [
+						"在迷主的回合开始时，如果它能看见一个或多个其他迷主、但尚未与其中之一相距5尺内，迷主就必须成功通过一次{@dc 10}的感知豁免检定，否则立即用尽可能多的移动速度朝其中一名自选的迷主移动。迷主不会被强迫移入明显致命的危险区域（例如火焰或深坑），但朝指定方向移动时会引发{@action 借机攻击|PHB|借机攻击}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"迷主进行一次推撞或棍击攻击，并施放{@spell 恶言相加}。"
+					]
+				},
+				{
+					"ENG_name": "Shove",
+					"name": "推撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，一名中型或更小的生物。{@h}目标被推离迷主5尺。"
+					]
+				},
+				{
+					"ENG_name": "Stick",
+					"name": "棍击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点钝击伤害，外加3（{@damage 1d6}）点心灵伤害\u2014\u2014毕竟，没有什么比用一根棍子更能把对手逼到破防的了。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Projection",
+					"name": "投射",
+					"entries": [
+						"当一生物进行魅力检定、试图影响迷主去对其统治者采取某个明显的行为路线时，该检定自动失败，且该生物受到2（{@damage 1d4}）点心灵伤害，因为迷主用一句魔法侮辱回敬了他们。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Fanlord.webp"
+			},
+			"tokenCredit": "Gustavo Pelissari",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Grey Alien",
+			"name": "小灰人",
+			"alias": [
+				"泽塔网罟人",
+				"罗斯威尔灰人",
+				"灰人"
+			],
+			"group": [
+				"神秘生物"
+			],
+			"source": "Arcadia21",
+			"page": 4,
+			"size": [
+				"S"
+			],
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 31,
+				"formula": "7d6 + 7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 11,
+			"con": 12,
+			"int": 18,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"investigation": "+6",
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 13,
+			"immune": [
+				{
+					"special": "见念动力反应"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"心灵感应 120 尺"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Alien Mind",
+					"name": "异星心智",
+					"entries": [
+						"小灰人在对抗法术和其他魔法效应的智力或感知豁免检定中自动成功。"
+					]
+				},
+				{
+					"ENG_name": "Genius",
+					"name": "天才",
+					"entries": [
+						"小灰人使用其智力调整值代替力量或敏捷调整值来进行武器攻击检定和伤害掷骰。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"小灰人进行两次伽马射线攻击。"
+					]
+				},
+				{
+					"ENG_name": "Gamma Ray",
+					"name": "伽马射线",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 6}，触及5尺或射程20/60尺，单一目标。{@h}7（{@damage 1d6 + 4}）点光耀伤害，且目标必须成功通过一次{@dc 14}的体质豁免检定，否则陷入{@condition 中毒}状态直至其下回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Thought Extraction {@recharge 5}",
+					"name": "思想提取 {@recharge 5}",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一生物。{@h}22（{@damage 4d10}）点心灵伤害，且小灰人得知该生物当前的表层想法，或从其脑海中提取一段时长不超过10分钟的记忆。小灰人可以选择让此攻击不造成伤害。受到{@spell 心灵屏障}法术或类似效应影响的生物，不会因此攻击受到伤害，其信息也无法被获知或提取。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Kinesis",
+					"name": "念动力",
+					"entries": [
+						"作为受到伤害的回应，小灰人对触发此反应的伤害类型免疫，直至它再次使用此反应。如果小灰人同时受到多种类型的伤害，它自行选择其中一种所受伤害类型获得免疫。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Grey Alien.webp"
+			},
+			"tokenCredit": "Zuzanna Wuzyk",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"R",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Johann Skorman",
+			"name": "约翰·斯科曼",
+			"shortName": "约翰",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Arcadia21",
+			"page": 18,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Half-Orc",
+						"name": "半兽人",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "平民",
+						"with": "约翰",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Johann Skorman.webp"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Laxman",
+			"name": "拉克斯曼",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Arcadia21",
+			"page": 19,
+			"_copy": {
+				"ENG_name": "Acolyte",
+				"name": "侍僧",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Tiefling",
+						"name": "提夫林",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "侍僧",
+						"with": "拉克斯曼",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Laxman.webp"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Leia",
+			"name": "蕾娅",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Arcadia21",
+			"page": 19,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Mountain Dwarf",
+						"name": "山地矮人",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "平民",
+						"with": "蕾娅",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Leia.webp"
+			},
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Mothman",
+			"name": "天蛾人",
+			"group": [
+				"神秘生物"
+			],
+			"isNamedCreature": true,
+			"source": "Arcadia21",
+			"page": 9,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 212,
+				"formula": "25d8 + 100"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 18,
+			"int": 15,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+9",
+				"wis": "+7"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+7"
+			},
+			"senses": [
+				"黑暗视觉 120 尺",
+				"真实视觉 60 尺"
+			],
+			"passive": 17,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"心灵感应 120 尺"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"ENG_name": "Doom's Herald (3/Day)",
+					"name": "厄运先驱（3/日）",
+					"entries": [
+						"如果天蛾人的一次豁免检定失败，它可以移除其120尺内一可见生物的1枚厄运指示物，从而改为检定成功。如果移除此厄运指示物会使该生物的厄运指示物总数降为0，该生物的{@condition 厄运|Arcadia21}状态结束。"
+					]
+				},
+				{
+					"ENG_name": "Future Sight",
+					"name": "未来视",
+					"entries": [
+						"天蛾人对未来事件拥有超自然的感知，不会{@status 突袭}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"天蛾人进行两次不幸打击攻击。如果扭转命运可用，它可以用一次扭转命运使用来替换其中一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unlucky Strike",
+					"name": "不幸打击",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}24（{@damage 4d8 + 6}）点钝击伤害，且目标必须成功通过一次{@dc 17}的魅力豁免检定，否则获得1枚厄运指示物。如果该生物尚未处于{@condition 厄运|Arcadia21}状态，它陷入{@condition 厄运|Arcadia21}状态。"
+					]
+				},
+				{
+					"ENG_name": "Twist Fate {@recharge 5}",
+					"name": "扭转命运 {@recharge 5}",
+					"entries": [
+						"天蛾人扭曲附近生物的命运，将它们推向无可避免的灾厄。天蛾人60尺内的每个生物必须使用其最低的一项属性值进行一次{@dc 17}豁免检定（若有两项或以上属性并列最低，由该生物选择用哪一项），失败者获得1枚厄运指示物。如果该生物尚未处于{@condition 厄运|Arcadia21}状态，它陷入{@condition 厄运|Arcadia21}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Penance Gaze",
+					"name": "忏悔凝视",
+					"entries": [
+						"天蛾人凝视其60尺内一可见生物，目标的脑海中顿时涌起强烈的愧疚回忆。目标必须选择抵抗此效应，或接受这股痛苦记忆的冲击。选择抵抗的目标必须成功通过一次{@dc 17}的魅力豁免检定，否则受到33（{@damage 6d10}）点心灵伤害。选择接受记忆的目标陷入{@condition 倒地}并{@condition 失能}直至其下回合结束。选择接受记忆的目标在接下来一年内免疫天蛾人的忏悔凝视。"
+					]
+				}
+			],
+			"legendaryHeader": [
+				"天蛾人拥有三个反派动作。在一次遭遇中，它可以在每个敌方生物的回合之后各使用其中一个动作一次。它可以按任意顺序使用这些动作，但每轮只能使用一个。"
+			],
+			"legendary": [
+				{
+					"ENG_name": "1. Bad Omen",
+					"name": "1. 凶兆",
+					"entries": [
+						"一股凶兆的交汇点在天蛾人周围成形。放置数量等同于场上角色数两倍的厄运指示物，并宣布任何被指派的指示物都将由GM使用。角色们可以自行分配这些厄运指示物，也可以留下部分不予指派。任何接受指示物的{@condition 厄运|Arcadia21}角色，其厄运指示物总数增加所接受的数量。任何尚未{@condition 厄运|Arcadia21}的角色，在接受一枚或更多指示物时陷入{@condition 厄运|Arcadia21}状态。"
+					]
+				},
+				{
+					"ENG_name": "2. Creeping Doom",
+					"name": "2. 厄运渐近",
+					"entries": [
+						"天蛾人对每个{@condition 厄运|Arcadia21}生物{@condition 隐形}，直至天蛾人的下回合结束，并魔法传送至其60尺内一可见的未被占据空间。"
+					]
+				},
+				{
+					"ENG_name": "3. Induce Disaster",
+					"name": "3. 引发灾祸",
+					"entries": [
+						"灾祸找上门来。每个{@condition 厄运|Arcadia21}生物每有1枚厄运指示物，便受到11（{@damage 2d10}）点伤害。如果场上存在任何未指派的厄运指示物，天蛾人300尺内的每个生物每有1枚未指派的厄运指示物，便受到11（{@damage 2d10}）点伤害。这些效应的伤害类型对每个受影响的生物而言各不相同，且永远属于该生物无法抵抗或规避的伤害类型。例如，一道随机落雷可能对某生物造成闪电伤害，与此同时奥术能量撕裂现实，对另一生物造成力场伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Mothman",
+				"name": "天蛾人",
+				"source": "Arcadia21"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Mothman.webp"
+			},
+			"tokenCredit": "Zuzanna Wuzyk",
+			"senseTags": [
+				"SD",
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"厄运|Arcadia21"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Nimuchnimurpal",
+			"name": "尼穆克尼穆尔帕尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Arcadia21",
+			"page": 19,
+			"_copy": {
+				"ENG_name": "Berserker",
+				"name": "狂战士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狂战士",
+						"with": "尼穆克尼穆尔帕尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"action": [
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}9（{@damage 1d12 + 3}）点钝击伤害。"
+					]
+				}
+			],
+			"token": {
+				"ENG_name": "Berserker",
+				"name": "狂战士",
+				"source": "MM"
+			},
+			"damageTags": [
+				"B"
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Personal Assistant",
+			"name": "私人助理",
+			"group": [
+				"魔鬼常客"
+			],
+			"source": "Arcadia21",
+			"page": 15,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|PHB|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 15,
+			"int": 12,
+			"wis": 12,
+			"cha": 15,
+			"skill": {
+				"insight": "+5",
+				"perception": "+5",
+				"stealth": "+5",
+				"survival": "+3"
+			},
+			"passive": 15,
+			"conditionImmune": [
+				"exhaustion"
+			],
+			"languages": [
+				"通用语，外加其统治者所知的任意语言"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Calm Emotions (3/Day; 2nd-Level Spell; Concentration)",
+					"name": "安定心神（3/日；2环法术；专注）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"私人助理试图压制以其60尺内自选一点为中心、20尺半径球状范围内每个类人生物的强烈情绪。范围内的每个生物必须进行一次{@dc 12}的魅力豁免检定；生物可以自愿放弃此豁免检定。如果有生物豁免失败，私人助理从以下两种效应中选择其一。",
+						"它可以压制使目标{@condition 魅惑}或{@condition 恐慌}的任何效应，持续1分钟。此效应结束时，任何被压制的效应恢复作用，前提是其持续时间未在此期间耗尽。",
+						"或者，目标对私人助理选定的、其原本抱有敌意的生物变得无动于衷，持续1分钟。如果目标遭到攻击、被法术伤害，或亲眼目睹自己的同伴受到伤害，这种无动于衷即告结束。此效应结束时，该生物重新变得怀有敌意，除非GM另有裁定。"
+					],
+					"daily": {
+						"3e": [
+							{
+								"entry": "{@spell 安定心神}",
+								"hidden": true
+							}
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				},
+				{
+					"ENG_name": "Locate Object (3/Day; 2nd-Level Spell; Concentration)",
+					"name": "物件定位术（3/日；2环法术；专注）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"私人助理描述或命名一件它熟悉的物品。只要该物品在其1000尺内，它就能感知到该物品所在位置的方位。如果物品正在移动，它能得知其移动的方向。",
+						"此法术可以定位私人助理已知的一件特定物品，前提是它曾至少一次在30尺内近距离见过该物品。或者，此法术可以定位某类物品中最接近的一件，例如某种特定服饰、珠宝、家具、工具或武器。",
+						"如果私人助理与物品之间隔着任何厚度的铅（哪怕只是一层薄铅板），此法术便无法定位该物品。"
+					],
+					"daily": {
+						"3e": [
+							{
+								"entry": "{@spell 物件定位术}",
+								"hidden": true
+							}
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Organized to a Tee",
+					"name": "一丝不苟",
+					"entries": [
+						"私人助理可以使用一个它按月支付租金的魔法储物空间。私人助理可以用一个附赠动作为该空间创造一个10尺见方的入口，空间的容积为100立方尺。它乐于替任何盟友保管补给品。它能想出该把你的东西收在哪儿。一点也不麻烦。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"私人助理无需睡眠，但总是一副精疲力竭的样子。它偶尔会低声反复念叨：\"这只是工作的一部分。这只是工作的一部分。\""
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"私人助理进行三次匕首攻击。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}5（{@damage 1d4 + 3}）点穿刺伤害。私人助理的刀法是统治者亲手调教的，要是功夫生疏了，搞不好会在对练时送命！"
+					]
+				},
+				{
+					"ENG_name": "Read Thoughts",
+					"name": "读取思想",
+					"entries": [
+						"私人助理魔法性地读取其60尺内一生物的表层想法。此效应可以穿透屏障，但3尺厚的木头或泥土、2尺厚的石头、2寸厚的金属、或一层薄铅板可以挡住它。只要目标处于范围内，私人助理就能持续读取其思想，前提是私人助理的{@status 专注}没有中断（如同{@status 专注||专注于}一道法术）。在读取目标心灵期间，私人助理对目标的感知（{@skill 洞悉}）与魅力（{@skill 欺瞒}、{@skill 威吓}和{@skill 游说}）检定具有优势。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Personal Assistant.webp"
+			},
+			"tokenCredit": "Gustavo Pelissari",
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"traitTags": [
+				"Unusual Nature"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForced": [
+				"charisma"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shuck",
+			"name": "黑夏克",
+			"alias": [
+				"黑犬",
+				"黑夏克",
+				"老夏克",
+				"老休克",
+				"不祥"
+			],
+			"group": [
+				"神秘生物"
+			],
+			"source": "Arcadia21",
+			"page": 5,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 132,
+				"formula": "24d8 + 24"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 8,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Relentless Pursuit",
+					"name": "不懈追猎",
+					"entries": [
+						"黑夏克被创造之时，会选择世上的一生物作为其猎物。只要与目标处于同一位面，黑夏克就能感知到与目标的距离和方位。如果目标在其他位面，黑夏克知道是哪一个位面，但不知道目标的确切位置。当目标死亡时，黑夏克会知晓，并可以另选新目标。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"黑夏克进行两次啃咬攻击，且其每拥有一份暗影副本，便额外进行一次啃咬攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}13（{@damage 2d8 + 4}）点穿刺伤害，外加4（{@damage 1d8}）点暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Death Rattle {@recharge 5}",
+					"name": "死亡哀嚎 {@recharge 5}",
+					"entries": [
+						"黑夏克发出一声将灵魂拖入死亡的异界嚎叫。黑夏克90尺内由其选定的、能听到其声音的每个生物必须进行一次{@dc 15}的感知豁免检定；生命值全满的生物检定失败时受到36（{@damage 8d8}）点暗蚀伤害，生命值有所缺损的生物检定失败时受到45（{@damage 10d8}）点暗蚀伤害，检定成功则伤害减半。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Shadow Pack",
+					"name": "暗影群",
+					"entries": [
+						"当黑夏克受到伤害时，它可以创造一个自身的副本。副本出现在黑夏克或另一个副本5尺内一个未被占据的空间中，并持续存在1分钟或直到黑夏克被杀死为止。副本的AC为15。如果一次攻击命中副本，副本即被摧毁。副本只能被以它为目标的攻击摧毁，它无视所有其他伤害和效应。",
+						"在黑夏克的回合，每个副本最多可以移动60尺（无需动作）。黑夏克对副本5尺内的生物进行的攻击检定具有优势。黑夏克可以用啃咬攻击以副本5尺内的生物和物件为目标。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/Shuck.webp"
+			},
+			"tokenCredit": "Zuzanna Wuzyk",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"ENG_name": "Birgitte Skorman",
+			"name": "碧姬特·斯科曼",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i （BER-GEET-uh，她/她，无阵营人类灵魂）}",
+						{
+							"type": "quote",
+							"entries": [
+								"\"有客人来真是太好啦。蕾娅，把孩子抱来！客人们想见见他！\""
+							]
+						},
+						"这个灵魂既非真正的幽魂，也非碧姬特本人的残念。她拥有碧姬特的部分智识与记忆，却无法进行完整的对话，也无法产生原创的想法。她由尼穆克尼穆尔帕尔创造，唯一的目的就是造成情感上的痛苦。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Signature Look",
+									"type": "entries",
+									"name": "招牌外形",
+									"page": 19,
+									"entries": [
+										"碧姬特化身为一副血红色的半透明影像，形似一位健壮敦实的人类女性。"
+									]
+								},
+								{
+									"ENG_name": "Personality",
+									"type": "entries",
+									"name": "个性",
+									"page": 19,
+									"entries": [
+										"碧姬特的灵魂很容易分心，话题跳来跳去。她也许会回答问题......有时候。"
+									]
+								},
+								{
+									"ENG_name": "Game Statistics",
+									"type": "entries",
+									"name": "游戏数据",
+									"page": 19,
+									"entries": [
+										"{@creature 碧姬特·斯科曼|Arcadia21|碧姬特使用恶灵的数据块。}"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Death Worm",
+			"name": "死亡蠕虫",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i 奥尔戈伊-霍尔霍伊，蒙古死亡蠕虫}",
+						"世世代代以来，喷洒夺命酸液、操弄电流的巨型沙虫传说一直萦绕着戈壁沙漠。对这些死亡蠕虫的报道在流行文化中催生了无数想象复刻，从弗兰克·赫伯特的{@i 《沙丘》}中的沙虫，到邪典电影{@link 异形魔怪|https://www.youtube.com/watch?v=liJfZvXdiTE}。虽然其确切本质不明，但有一点很清楚：亲眼见到蠕虫破土而出的人，极少能活着把故事讲下去。",
+						"死亡蠕虫是栖居于世界上最荒凉地带的隐秘而可怖的敌手。尽管力量惊人，蠕虫仍然是一头野兽，围绕它生长出的故事往往深入探讨自然与文明之间永不停歇的角力。",
+						{
+							"ENG_name": "Plot Hooks",
+							"type": "entries",
+							"name": "情节钩子",
+							"page": 6,
+							"entries": [
+								"死亡蠕虫倾向于离文明越远越好，因此围绕它们的冒险往往要查明其行为变化的原因。以下是一些引导你的队伍走向这些翻腾蠕虫的故事点子：",
+								{
+									"ENG_name": "Bad Weather",
+									"type": "entries",
+									"name": "恶劣天气",
+									"page": 6,
+									"entries": [
+										"一处不明的奥术源头令当地天气格局陷入混乱。每当闪电击中地面，一群狰狞的怪物便从地下喷涌而出，摧毁周围的一切。当地居民迫切希望冒险者能在这些怪物毁掉整个地区之前，查明风暴与怪物之间的关联。"
+									]
+								},
+								{
+									"ENG_name": "Border Dispute",
+									"type": "entries",
+									"name": "边界争端",
+									"page": 6,
+									"entries": [
+										"一座新建立的边境城镇在发现数名矿工的遗骸后停工了\u2014\u2014尸体被某种酸液熔去了半边。镇民对能犯下如此可怖凶案的生物怕得要命，需要有人把它赶走，好尽快复工。"
+									]
+								},
+								{
+									"ENG_name": "Dirty Deal",
+									"type": "entries",
+									"name": "肮脏交易",
+									"page": 6,
+									"entries": [
+										"一位富商的运输货车接连失踪，只好求助外援。几个星期以来，商队在半路上人间蒸发，却找不到尸体或货车残片\u2014\u2014只有一座座诡异的土丘，像刚挖开的洞。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tactics",
+							"type": "entries",
+							"name": "战术",
+							"page": 6,
+							"entries": [
+								"死亡蠕虫最大的资本是机动性，这让它们能跨越遥远的距离追踪、潜伏在猎物左右。受到威胁的蠕虫会从沙下袭击目标，退回安全处，再周而复始，直到猎物毙命。死亡蠕虫最常被倒霉的团队遇上\u2014\u2014他们招惹了一头野兽的注意\u2014\u2014但也有成对出猎的。如果角色们想清剿某一地区的所有蠕虫，就必须杀入地下的巢穴，数十头神秘生物正在那里蛰伏。",
+								"死亡蠕虫会用冲击波动作和沙地斥候特性来制造带优势的攻击。只要时机安全，它们会优先消灭会飞或拥有远程能力的角色，并把腐蚀爆发留到最有利的时刻。如果蠕虫濒死，它会退入沙下再生。"
+							]
+						},
+						{
+							"ENG_name": "Rewards",
+							"type": "entries",
+							"name": "奖励",
+							"page": 6,
+							"entries": [
+								"死亡蠕虫拥有非凡的生物能力，富有创造力的冒险者若能采取其血肉，便能收获其腐蚀性体液的馈赠。",
+								{
+									"ENG_name": "Can of Worms",
+									"type": "statblock",
+									"tag": "item",
+									"source": "Arcadia21",
+									"name": "蠕虫之罐",
+									"page": 6,
+									"collapsed": true
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00020.webp"
+					},
+					"altText": "一条巨大的红色蠕虫从沙下朝着毫无防备的三人冒险小队破沙而出。",
+					"credit": "Zuzanna Wuzyk",
+					"width": 495,
+					"height": 671
+				}
+			]
+		},
+		{
+			"ENG_name": "Doomsday Salesperson",
+			"name": "末日推销员",
+			"source": "Arcadia21",
+			"entries": [
+				"{@i 你永远不知道世界什么时候完蛋，所以不妨现在就开始囤货。我们迟早都会死\u2014\u2014攥着那么多金币也没意义，对吧？}",
+				"在这个地方，每一天都可能是下一个末日。统治者不断地兴风作浪：今天对邻村开战，明天放出一罐邪恶的魔法蠕虫，要不就干脆当个老派吸血鬼。这一带流传着一句俗话：\"把每一天当成最后一天来过......因为这天真是最后一天的概率相当高。\"这句话在末日推销员中间尤其流行\u2014\u2014他们借此鼓动潜在顾客，把辛苦挣来的铜板花在花哨的反末日摇头娃娃上。",
+				"这些商贩特别擅长利用村民的不安全感。何必要赌一把对抗步步逼近的末日？不如买下这七十四双求生靴，以防前七十三双在浩劫中损坏。不过，无论他们是在蒙骗易受骗的灵魂，还是真心相信反末日打底裤的疗愈功效，大多数末日推销员并不想一辈子叫卖下去。他们真正想要的，是提早退休、攒够钱搬去别的镇子，或是终于还清债务。",
+				"英雄们可以在本地集市上找到这些商贩，或看到他们裹着塞满无用小玩意的长风衣在街头游荡。如果你恰好遇上这位NPC，而他们不知怎么觉得跟着你踏上旅途是个好主意，那请准备好领教他们全身货品发出的震耳哐当声。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Plot Hooks",
+							"type": "entries",
+							"name": "情节钩子",
+							"page": 13,
+							"entries": [
+								{
+									"ENG_name": "Doomsday Salesperson Plot Hooks",
+									"type": "statblock",
+									"tag": "table",
+									"source": "Arcadia21",
+									"name": "末日推销员情节钩子",
+									"page": 14,
+									"style": "inset"
+								}
+							]
+						},
+						{
+							"ENG_name": "Loot",
+							"type": "entries",
+							"name": "战利品",
+							"page": 13,
+							"entries": [
+								{
+									"ENG_name": "Doomsday Salesperson Loot",
+									"type": "statblock",
+									"tag": "table",
+									"source": "Arcadia21",
+									"name": "末日推销员战利品",
+									"page": 14,
+									"style": "inset"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Eirik Skorman",
+			"name": "艾里克·斯科曼",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i （EYE-rick，他/他，混乱善良{@homebrew 兽人|半兽人}）}{@note 纯正兽人，非半兽人}",
+						{
+							"type": "quote",
+							"entries": [
+								"\"总会有办法的。也许和你想的不一样，但办法总是有的！\""
+							]
+						},
+						"艾里克是一位身板结实、正值中年的纺织品商人，生意让他忙得团团转。他既深爱着自己的儿子，又为曾与魔鬼做交易而深以为耻，两种情感撕扯着他。他常去探访亡妻的幽魂寻求慰藉，却又无法回避目睹她如今这副模样时的恐惧。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Signature Look",
+									"type": "entries",
+									"name": "招牌外形",
+									"page": 18,
+									"entries": [
+										"艾里克的两只耳朵上都有多处穿孔，穿孔间编织着他自己头发的发辫。"
+									]
+								},
+								{
+									"ENG_name": "Personality",
+									"type": "entries",
+									"name": "个性",
+									"page": 18,
+									"entries": [
+										"艾里克粗鲁而务实。他非常聪明，说话简短干脆。"
+									]
+								},
+								{
+									"ENG_name": "Game Statistics",
+									"type": "entries",
+									"name": "游戏数据",
+									"page": 18,
+									"entries": [
+										"{@creature 艾里克·斯科曼|Arcadia21|艾里克使用贵族的数据块。}"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fanlord",
+			"name": "迷主",
+			"source": "Arcadia21",
+			"entries": [
+				"{@i 呃，其实你对他们的理解全错了，因为他们显然是最棒的人，而你根本不懂，因为你是个假粉丝。}",
+				"在一座雾气弥漫的小镇的角落里，伸展的手指如蜘蛛般缓缓探出，为足尖寻找落点。瞪大的眼睛泛着绿光，搜寻着下一个倒霉的路人，好用关于这个受诅咒梦魇之境的统治者的种种\"事实\"去折磨他们。迷主不仅对其位面独裁者的一切了如指掌，还是一名{@i 非常}狂热的追随者，家里堆满了签名纪念品。哪怕他们崇拜的对象是个散播谎言与不幸、把穷苦人碾在鞋跟下（如果他们穿鞋的话）的糟糕领袖，也无关紧要\u2014\u2014在迷主眼中，那位大人是绝对不会做错的。",
+				"如同邪教信徒一般，迷主会不择手段地传播统治者的福音。他们只是更惹人烦一点\u2014\u2014因为他们还非要炫耀自己那些很酷的签名收藏卡，或是从奸商手里买来的花哨摇头娃娃，而那奸商正是利用他们对统治者不变的痴心大赚一笔。",
+				"说实话，想让迷主别再来烦你几乎不可能。除非你最终接受这位主与救世主\u2014\u2014[在此填入统治者的名字]\u2014\u2014否则这位NPC注定要跟着你直到时间尽头。或者至少，直到他们找到下一个可怜虫......或者另一个迷主为止。更好的办法是：如果你找到一群迷主，就可以把手头这个也丢给他们。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Plot Hooks",
+							"type": "entries",
+							"name": "情节钩子",
+							"page": 11,
+							"entries": [
+								{
+									"ENG_name": "Fanlord Plot Hooks",
+									"type": "statblock",
+									"tag": "table",
+									"source": "Arcadia21",
+									"name": "迷主情节钩子",
+									"page": 12,
+									"style": "inset"
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00037.webp"
+					},
+					"altText": "一名身着黑色皮衣、生着魔相的女子，手持一幅名人的画像。",
+					"credit": "Gustavo Pelissari",
+					"width": 495,
+					"height": 692
+				}
+			]
+		},
+		{
+			"ENG_name": "Grey Alien",
+			"name": "小灰人",
+			"source": "Arcadia21",
+			"entries": [
+				"{@i 又称泽塔网罟人、罗斯威尔灰人、灰人}",
+				"与地外生物相遇是最常见的神秘生物遭遇之一。对这些天外来客的描述千差万别，足以归为几种不同类型。流行文化让小灰人成为了最广为人知的一类：灰色的小个子生物，大脑袋、黑眼睛、无毛的双足身躯。",
+				"外星人放进奇幻游戏里似乎有点格格不入。但话说回来，对魔法社会而言，这些来自外太空的科技先进生物难道不会同样可怕（甚至更可怕）吗？在战役中引入外星人，可以让你构建审视科学在奇幻中角色的故事，并把冒险的格局扩展到宇宙尺度。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Plot Hooks",
+							"type": "entries",
+							"name": "情节钩子",
+							"page": 3,
+							"entries": [
+								"由于小灰人主要关心观察与收集科学数据，他们会千方百计隐藏自己的存在。以小灰人为特色的冒险通常从一个原因不明的神秘事件开始，暗示有什么地方不对劲。以下是一些把角色引向一次亲密接触的故事点子：",
+								{
+									"ENG_name": "Out of Mind",
+									"type": "entries",
+									"name": "失忆",
+									"page": 3,
+									"entries": [
+										"角色们来到一座全村人记忆都被清除的村庄。聚落四周的地面上留着怪异的灼痕，人们发现了一台奇特的金属机器，还有其他古怪的工具被遗落在旁。村民需要帮忙拼凑出到底发生了什么。"
+									]
+								},
+								{
+									"ENG_name": "Shipwreck",
+									"type": "entries",
+									"name": "坠船",
+									"page": 3,
+									"entries": [
+										"一艘奇特的金属飞船在暴风雨中坠落到地面。这艘飞船与世人见过的任何东西都不同，角色们受命寻找进入其中的方法。"
+									]
+								},
+								{
+									"ENG_name": "UFO",
+									"type": "entries",
+									"name": "不明飞行物",
+									"page": 3,
+									"entries": [
+										"农夫们报告看到一个不明飞行物划过天际，第二天，一名地方政府官员失踪了。惊恐万状的民众需要冒险者调查事情的真相。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tactics",
+							"type": "entries",
+							"name": "战术",
+							"page": 3,
+							"entries": [
+								"小灰人智力超群，而且（自愿地）从不打没有胜算的仗。如果角色们主动寻衅，务必安排多名小灰人，并为他们配上易守的地形或一件强化攻城武器。如果战局对冒险者不利，请记住：小灰人寻求的是知识。掳走攻击者比杀死他们更有价值。",
+								"在战斗中操控小灰人时，优先考虑生存而非输出伤害。小灰人依靠念动力反应来快速获得对近战敌人所造成伤害的免疫，并优先使用伽马射线击倒能在多种伤害类型间切换的施法者。它们会把思想提取保留到目标已被{@condition 中毒}或以其他方式{@condition 失能}时才使用。"
+							]
+						},
+						{
+							"ENG_name": "Rewards",
+							"type": "entries",
+							"name": "奖励",
+							"page": 3,
+							"entries": [
+								"在游戏中引入外星人，可以让你创造出一大堆科技系奖励。为解决小灰人问题的队伍送上一件了不起的太空武器或科学奇幻主题的小玩意，是给玩家留下深刻印象的好办法。想不经从零设计就创造这类奖励，可以找一件你喜欢的魔法物品，修改一些描述细节让它显得未来感十足，再赋予它如下新特性：",
+								{
+									"type": "list",
+									"style": "list-hang",
+									"page": 3,
+									"items": [
+										{
+											"ENG_name": "Alien Tech",
+											"type": "item",
+											"name": "外星科技",
+											"entries": [
+												"就{@spell 反魔法场}、{@spell 解除魔法}、{@spell 法术反制}等法术和类似魔法效应而言，此物品及其特性不被视为魔法。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Johann Skorman",
+			"name": "约翰·斯科曼",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i （YO-haan，他/他，守序善良半兽人）}",
+						{
+							"type": "quote",
+							"entries": [
+								"\"嘿！跟我说说你最近都在为什么兴奋！\""
+							]
+						},
+						"约翰是个英俊的年轻半兽人，人生规划得明明白白。他想求学成为一名医者或外科医师，并与正在接受驱魔师训练的男友拉克斯曼一同旅行。只有两件心事横在他面前：他担心父亲无法接受自己的性取向，也总在好奇已故的母亲在变成幽影之前是个怎样的人。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Signature Look",
+									"type": "entries",
+									"name": "招牌外形",
+									"page": 19,
+									"entries": [
+										"约翰下唇探出的两根小獠牙上纹着鲜艳的蓝色刺青。"
+									]
+								},
+								{
+									"ENG_name": "Personality",
+									"type": "entries",
+									"name": "个性",
+									"page": 19,
+									"entries": [
+										"约翰平日自信、有创造力、对生活充满热情。在被附身的直接余波中，他会昏沉而迷乱。"
+									]
+								},
+								{
+									"ENG_name": "Game Statistics",
+									"type": "entries",
+									"name": "游戏数据",
+									"page": 19,
+									"entries": [
+										"{@creature 约翰·斯科曼|Arcadia21|约翰使用平民的数据块。}"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Laxman",
+			"name": "拉克斯曼",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i （LUKSH-mun，他/他，守序善良提夫林）}",
+						{
+							"type": "quote",
+							"entries": [
+								"\"都是我的错！对不起！主人，原谅我！\""
+							]
+						},
+						"拉克斯曼是著名驱魔师\"光明者鲁赫玛尼\"的勤勉学徒，对恩师敬若神明。他与约翰·斯科曼深深相爱，但为了约翰着想，一直对两人的关系保密。他能力不俗，却还不习惯独当一面。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Signature Look",
+									"type": "entries",
+									"name": "招牌外形",
+									"page": 19,
+									"entries": [
+										"拉克斯曼的双角间缠着银链，垂挂着其他摇曳的饰物。"
+									]
+								},
+								{
+									"ENG_name": "Personality",
+									"type": "entries",
+									"name": "个性",
+									"page": 19,
+									"entries": [
+										"拉克斯曼平日勤奋好学、对学业满怀热忱，但约翰被附身一事令他大受打击，开始怀疑自己的能力。"
+									]
+								},
+								{
+									"ENG_name": "Game Statistics",
+									"type": "entries",
+									"name": "游戏数据",
+									"page": 19,
+									"entries": [
+										"{@creature 拉克斯曼|Arcadia21|拉克斯曼使用侍僧的数据块。}"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Leia",
+			"name": "蕾娅",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i （LAY-ah，她/她，守序中立矮人）}",
+						{
+							"type": "quote",
+							"entries": [
+								"\"斯科曼一家是好人！他们没有做错任何事！\""
+							]
+						},
+						"数十年来，蕾娅一直是斯科曼家忠心耿耿、护主心切的女管家。约翰被附身一事考验着她一贯的谨言慎行。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Signature Look",
+									"type": "entries",
+									"name": "招牌外形",
+									"page": 19,
+									"entries": [
+										"蕾娅对非宝石类的石头着迷，身上戴着许多岩石首饰。"
+									]
+								},
+								{
+									"ENG_name": "Personality",
+									"type": "entries",
+									"name": "个性",
+									"page": 19,
+									"entries": [
+										"蕾娅平日羞怯内敛，说话轻声细语，不直视他人。但一旦涉及捍卫斯科曼一家，她就会变得凶悍逼人。"
+									]
+								},
+								{
+									"ENG_name": "Game Statistics",
+									"type": "entries",
+									"name": "游戏数据",
+									"page": 19,
+									"entries": [
+										"{@creature 蕾娅|Arcadia21|蕾娅使用平民的数据块。}"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mothman",
+			"name": "天蛾人",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"自20世纪60年代在西弗吉尼亚的森林中首次被报道目击以来，这只被称为天蛾人的神秘生物便通过各种{@link 电影|https://www.youtube.com/watch?v=kCanqLXcxBg}和{@link 游戏|https://www.youtube.com/watch?v=qvD20r5PTmw}俘获了大众的文化想象。这生物被描述为7尺高的有翼双足人形生物，周身覆盖深色毛发。目击者很少能在天蛾人的脸或身体细节上达成一致，但所有人都报告看到一双巨大的红色昆虫般的眼睛。而最令人不安的一点是：与天蛾人的相遇总是以悲剧收场。无论这只神秘生物在何处现身，大灾大难总会随之而来。某位目击者也许次日就会被残忍杀害，而一处多次目击的地点，可能在接下来的一周内被自然灾害夷为平地。",
+						"以天蛾人为特色的冒险有一个核心共通点：灾难倒计时。当你引入天蛾人时，先确定它的出现预示着怎样可怕的灾难事件，然后给予队伍阻止这一事件所需的工具（或者，确保事件发生的工具）。",
+						{
+							"ENG_name": "Plot Hooks",
+							"type": "entries",
+							"name": "情节钩子",
+							"page": 7,
+							"entries": [
+								"既然天蛾人的存在本身就在推动混沌的浪潮，以其为特色的冒险很少以与这只神秘生物的遭遇开场。相反，可以考虑把角色引向即将降临的灾祸之地，向他们展示某种超自然力量正在改写该地区命运的迹象。以下是一些让角色循迹追上天蛾人的种子点子：",
+								{
+									"ENG_name": "Mixed Messages",
+									"type": "entries",
+									"name": "混乱讯息",
+									"page": 7,
+									"entries": [
+										"全地区的法师、祭司、占卜师和先知在尝试使用预言魔法时都遇到了广泛的怪象。法术要么彻底失败，要么反复指向即将降临的悲剧之地。他们召集角色们调查这些异象。"
+									]
+								},
+								{
+									"ENG_name": "String of Misfortune",
+									"type": "entries",
+									"name": "祸事连绵",
+									"page": 7,
+									"entries": [
+										"数起离奇的自然灾害蹂躏了各地的城镇。最近一次悲剧过后，事件明显遵循着某种模式，仿佛循着一条踪迹行进。若模式不变，一座繁华的城市将在仅仅三天后成为下一处废墟。"
+									]
+								},
+								{
+									"ENG_name": "What Comes Around",
+									"type": "entries",
+									"name": "因果循环",
+									"page": 7,
+									"entries": [
+										"角色们遇到一位正在追踪红眼神秘生物的资深怪物猎人。数十年前，就是这样一只生物现身之后，猎人的家乡、朋友和家人被一场奥术风暴摧毁。经过多年搜寻，猎人终于再次听到了同样的生物在附近城镇出没的报告。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tactics",
+							"type": "entries",
+							"name": "战术",
+							"page": 8,
+							"entries": [
+								"天蛾人的存在本身就会造成剧烈的心理痛苦，并把命运推向最坏的结局，因此这只神秘生物往往无需一战便能带来伤害。如果冒险者试图在灾祸降临前对抗或驱离天蛾人，它会优先清除这些闯入者，再去推进它更大的目标。",
+								"天蛾人的目标是尽可能多地发放厄运指示物，同时确保自己活得够久，把三个反派动作全部用完。天蛾人一有机会命中多个生物就会使用扭转命运。它用忏悔凝视附赠动作瞄准会飞的角色，然后优先选择那些大概率豁免失败的厄运生物。"
+							]
+						},
+						{
+							"ENG_name": "Rewards",
+							"type": "entries",
+							"name": "奖励",
+							"page": 8,
+							"entries": [
+								"击败天蛾人可以阻止悲剧降临，但与厄运调情，也可能会给你的冒险者留下一枚印记\u2014\u2014如果他们愿意的话。",
+								{
+									"ENG_name": "Spiral of Doom",
+									"type": "inset",
+									"name": "厄运漩涡",
+									"page": 8,
+									"entries": [
+										"天蛾人使其他生物染上名为{@condition 厄运|Arcadia21}的新状态。正如这个戏剧性的状态名所暗示的那样，{@condition 厄运|Arcadia21}状态带来的惩罚会迅速升级，可能将生物困入死亡漩涡。这一有意为之的设计正是天蛾人不可小觑的原因。有鉴于此，一位公正的GM在角色们尚无机会了解自己面对的是什么之前，应当克制自己，先别祭出天蛾人的全部威能。也许队伍可以在天蛾人逃走前的一次短暂遭遇中先尝尝{@condition 厄运|Arcadia21}状态的滋味，或者由某位NPC提示他们在面对这只神秘生物前多备些复原系魔法。让玩家在你挥出{@condition 厄运|Arcadia21}状态前充分理解其全部后果，不会让与天蛾人的最终对决逊色分毫。事实上，这反而更可能凸显他们可能失去的一切。"
+									]
+								},
+								{
+									"ENG_name": "Mark of the Damned",
+									"type": "statblock",
+									"tag": "reward",
+									"source": "Arcadia21",
+									"name": "受咒之印",
+									"page": 8,
+									"collapsed": true
+								},
+								{
+									"ENG_name": "Doomed",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "Arcadia21",
+									"name": "厄运",
+									"page": 9,
+									"style": "inset",
+									"displayName": "新状态：厄运",
+									"collapsed": true
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00025.webp"
+					},
+					"altText": "一名手持火把的精灵被红眼的天蛾人身影卷走。",
+					"credit": "Zuzanna Wuzyk",
+					"width": 495,
+					"height": 687
+				}
+			]
+		},
+		{
+			"ENG_name": "Nimuchnimurpal",
+			"name": "尼穆克尼穆尔帕尔",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i （nim-UK-nim-UR-paal，他们/她们 [性别不明]，守序邪恶邪魔）}",
+						{
+							"type": "quote",
+							"entries": [
+								"\"把你的悲伤都淹进我的身体里吧。\""
+							]
+						},
+						"尼穆克尼穆尔帕尔又称污海之主，是一头与恶臭毒水相调的魔鬼。其权能影响深远，而这名邪魔酷爱做交易\u2014\u2014交易的结局，往往是一个个前途无量的年轻灵魂被困在九狱某一层泡水的土牢里。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Signature Look",
+									"type": "entries",
+									"name": "招牌外形",
+									"page": 19,
+									"entries": [
+										"尼穆克尼穆尔帕尔化形为一个覆满鱼鳞的瘦削人形，长发如海藻般垂落。污水不断从其身体上滴落。"
+									]
+								},
+								{
+									"ENG_name": "Personality",
+									"type": "entries",
+									"name": "个性",
+									"page": 19,
+									"entries": [
+										"对凡人而言，尼穆克尼穆尔帕尔与其他大多数邪魔一样高深莫测。说话时，他们会毫无预兆地在凶残、语无伦次和甜言蜜语之间来回切换。"
+									]
+								},
+								{
+									"ENG_name": "Game Statistics",
+									"type": "entries",
+									"name": "游戏数据",
+									"page": 19,
+									"entries": [
+										"本冒险适用于所有等级的游戏，结尾的战斗遭遇并非重点。因此，你可以任选一个挑战等级与尼穆克尼穆尔帕尔相称的魔鬼数据块，然后按你的意愿对数据块做如下调整：",
+										{
+											"type": "list",
+											"items": [
+												"该魔鬼免疫{@condition 魅惑}、{@condition 恐慌}和{@condition 麻痹}状态。",
+												"该魔鬼的攻击造成寒冷或毒素伤害，而非其原本的伤害类型。",
+												"该魔鬼可以呼吸空气与水，且游泳速度等同于其步行速度。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Personal Assistant",
+			"name": "私人助理",
+			"source": "Arcadia21",
+			"entries": [
+				"{@i 他们给我的报酬不多......好吧，根本不给钱，但我确实享受到不少好处。比如曝光度！听说这东西攒多了可是会死人的。}",
+				"担任这位独一无二的统治者的私人助理，是个令人艳羡的体面职位，但助理那张疲惫不堪的脸，正是对\"成功\"二字最令人沮丧的注解。他们随时听候统治者的差遣。这是他们职业生涯的悲惨巅峰，而他们心里清楚得很。",
+				"私人助理试图用一抹微笑掩盖多年的苦干和为爬到这一步而忍受的办公室倾轧，而只要一句刻薄话就足以让这笑容碎裂。他们始终与统治者保持联络\u2014\u2014其结果是，他们要么已经适应了身体的极度疲惫，要么被统治者魔法加持过，再也感觉不到疲惫。",
+				"私人助理可能会与角色们频繁互动，因为统治者要求他们\"让贵宾宾至如归\"，也就是说，他们的服务被暂时出借给了队伍。（角色们可以指望在冒险结束时收到一张账单。）视统治者的领导风格而定，他们也可能会通过助理对队伍的一举一动进行微观管理\u2014\u2014助理一边替上司记录打点，一边传达指令，活像一场灾难级的传话游戏。无论如何，这位胆怯的私人助理为能暂时离开那位可怕的上司而兴奋不已，热切地想帮角色们解决一切所需。",
+				"也许有一天\u2014\u2014但愿如此\u2014\u2014他们能逃离这份工作，踏上属于自己的冒险。但他们需要善良旅人的帮助才能梦想成真。他们可以成为一名工匠、一名吟游诗人，甚至一名士兵\u2014\u2014只要能克服对冲突的恐惧。无论他们决心做什么，都必定能够达成。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Plot Hooks",
+							"type": "entries",
+							"name": "情节钩子",
+							"page": 16,
+							"entries": [
+								{
+									"ENG_name": "Personal Assistant Plot Hooks",
+									"type": "statblock",
+									"tag": "table",
+									"source": "Arcadia21",
+									"name": "私人助理情节钩子",
+									"page": 16,
+									"style": "inset"
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00058.webp"
+					},
+					"altText": "一名衣着考究、带有魔相的书记官。他手持一卷流畅展开的卷轴，随时准备提供协助。",
+					"credit": "Gustavo Pelissari",
+					"width": 495,
+					"height": 693
+				}
+			]
+		},
+		{
+			"ENG_name": "Shuck",
+			"name": "黑夏克",
+			"source": "Arcadia21",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i 又称：黑犬、{@link 黑夏克|https://www.youtube.com/watch?v=jeRY-jxKuqA}、老夏克、老休克、{@note 不祥}}",
+						"黑夏克是数个世纪以来在不列颠群岛被目击的幽灵黑犬的通称。这些生物的大小在各方报告中不一而足，但所有描述都提到了黑夏克如影般的黑色躯体和燃烧着火焰的双眼。在一些传说中，黑夏克现身时会把受害者撕成碎片；在另一些传说中，这些黑犬会连续数周跟踪猎物，直到受害者不断膨胀的恐惧逼得他们自戕。无论具体情形如何，见到这只猎犬都是必死的凶兆。",
+						"以黑夏克为特色的故事围绕对死亡的恐惧展开。一旦黑夏克选定了受害者，几乎没有什么能拯救那个倒霉的目标（把他们从这只猎犬、或从他们自己手中救出来）。决定是什么（或谁）召唤出这只神秘生物并放它扑向受害者，并解开它捕猎背后的缘由，能让你深入探索内疚、报应与正义的主题。",
+						{
+							"ENG_name": "Plot Hooks",
+							"type": "entries",
+							"name": "情节钩子",
+							"page": 4,
+							"entries": [
+								"黑夏克是复仇的生物，受命追踪、骚扰并最终杀死其受害者。确定黑夏克的目标，并把那名受害者与冒险者联系起来，是把他们卷入这只神秘生物的故事的第一步。以下是一些让角色卷入黑夏克复仇循环的故事点子：",
+								{
+									"ENG_name": "Dying Breed",
+									"type": "entries",
+									"name": "濒危血脉",
+									"page": 5,
+									"entries": [
+										"一个古老贵族血脉的最后幸存者雇请角色们担任保镖，保护自己免受一头已屠戮其所有亲属的阴影巨兽的毒手。"
+									]
+								},
+								{
+									"ENG_name": "Last Words",
+									"type": "entries",
+									"name": "临终遗言",
+									"page": 5,
+									"entries": [
+										"在一名被指控的女巫被火刑处决后的几周里，一座偏远小镇连遭恶犬袭击。随着死亡人数攀升，惊慌的镇民迫切希望有人能阻止那个猎杀他们的东西。"
+									]
+								},
+								{
+									"ENG_name": "Territory",
+									"type": "entries",
+									"name": "领地",
+									"page": 5,
+									"entries": [
+										"一群无恶意的{@creature 冬狼|MM|冬狼}（或其他聪明的野兽）小心翼翼地接近角色们并提出请求。狼群需要帮助，杀死一头一直在袭击该地区类人生物的黑犬\u2014\u2014正是它逼得镇民开始成批屠狼。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tactics",
+							"type": "entries",
+							"name": "战术",
+							"page": 5,
+							"entries": [
+								"黑夏克受驱使猎杀特定的受害者；除此之外，它只会杀死那些蠢到妨碍这一目标的其他生物。与黑夏克正面对峙将是一场你死我活的战斗，猎犬会以最高效的手段击杀攻击者。如果黑夏克怀疑有人从中作梗，它会先潜行观察这些闯入者，尝试吓退他们，然后才诉诸直接暴力。",
+								"战斗中，黑夏克的首要目标是用暗影群反应制造尽可能多的暗影副本。黑夏克一次只对一名角色使用啃咬攻击以最大化效果，优先解决重火力输出角色，再对付辅助角色。它会等到多个目标都受了伤之后，才使用死亡哀嚎。"
+							]
+						},
+						{
+							"ENG_name": "Rewards",
+							"type": "entries",
+							"name": "奖励",
+							"page": 5,
+							"entries": [
+								"杀死黑夏克意味着把它的受害者从可怖的命运中解放出来，这通常会换来善意与金钱报酬。不过，有生意头脑的角色也可以用它如影般的毛皮制作一件魔法物品。",
+								{
+									"ENG_name": "Black Cloak",
+									"type": "statblock",
+									"tag": "item",
+									"source": "Arcadia21",
+									"name": "黑斗篷",
+									"page": 5,
+									"collapsed": true
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00015.webp"
+					},
+					"altText": "一只双眼赤红、牙齿染血的巨大黑犬在画中烟雾的笼罩下现身于一间乡村小屋上空。惊愕的人类和精灵侧目注视着这头巨兽。",
+					"credit": "Zuzanna Wuzyk",
+					"width": 517,
+					"height": 716
+				}
+			]
+		}
+	],
+	"legendaryGroup": [
+		{
+			"ENG_name": "Mothman",
+			"name": "天蛾人",
+			"source": "Arcadia21",
+			"page": 8,
+			"regionalEffects": [
+				"虽然天蛾人没有标准的巢穴，但其存在本身就会扭曲周围生物的命运。天蛾人10英里范围内的所有生物都会经历以下效应：",
+				{
+					"type": "list",
+					"items": [
+						"睡眠中的生物会被即将降临的灾难噩梦纠缠。在天蛾人10英里范围内尝试睡眠的生物，无法通过长休来减少{@condition 力竭}等级。",
+						"任何时候，只要天蛾人以外的生物在{@dice d20}上投出19，该结果即被视作20。此外，任何时候，只要天蛾人以外的生物在{@dice d20}上投出2，该结果即被视作1。",
+						"若一生物在天蛾人10英里范围内连续度过24小时，其就会获得名为{@condition 厄运|Arcadia21}的特殊状态。{@condition 厄运|Arcadia21}生物每在天蛾人10英里范围内额外度过24小时，便获得1枚厄运指示物。"
+					]
+				}
+			]
+		}
+	],
+	"table": [
+		{
+			"ENG_name": "Doomsday Salesperson Loot",
+			"name": "末日推销员战利品",
+			"source": "Arcadia21",
+			"page": 14,
+			"colLabels": [
+				"d6",
+				"战利品"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-11"
+			],
+			"intro": [
+				"末日推销员携带着冒险者可以购买或窃取的独特货品。末日推销员战利品表列出了末日推销员与角色们相遇时可能库存的物品。你可以用这些物品作为灵感来创造额外的存货。"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b 布拉德·邦·巴罗里奇著的自助书。}这本书里满是陈词滥调和无稽之谈，但确实能让你显得比实际上更有见识。当你手持这本书时，你对未读过此书且能看到封面的类人生物的魅力检定具有优势。{@i 售价：150 gp}"
+				],
+				[
+					"2",
+					"{@b 速食奶油牛肉。}它不是真肉，但它确实是速食的。如果你在一次短休期间吃下这份餐食，你恢复{@dice 2d4}点生命值，并在短休结束时必须成功通过一次{@dc 13}的体质豁免检定，否则陷入{@condition 中毒}状态1小时。这玩意儿放的有点久了。{@i 售价：25 gp}"
+				],
+				[
+					"3",
+					"{@b 吸盘弩。}它就是一把{@item 轻弩|PHB}，附带十支吸盘头的弩矢。被弩矢命中的生物不受伤害，但在目标下回合结束前，对目标进行的下一次攻击检定具有优势。{@i 售价：弩加十支弩矢50 gp，或仅十支弩矢25 gp}"
+				],
+				[
+					"4",
+					"{@b 魔法摇头娃娃。}当有脸的生物握着这个摇头娃娃时，娃娃的脸会变成那个生物的脸。除此之外毫无用处。{@i 售价：50 gp}"
+				],
+				[
+					"5",
+					"{@b 末日保险文书。}这份文书的大意是多花点钱买低免赔额就能省钱之类。该文书相当于一卷任何能说并读懂一种语言的生物都可以使用的{@spell 群体暗示术}的{@item 法术卷轴(6环)|DMG|法术卷轴}（法术豁免{@dc 17}）。{@i 售价：10,000 gp}"
+				],
+				[
+					"6",
+					"{@b 巴罗里奇工业出品的反末日烤面包机。}它只是一块能烤出美味吐司的营地烤盘。机身上贴着一张写着\"百分百防末日\"的贴纸。不含面包。{@i 售价：15 gp}"
+				]
+			]
+		},
+		{
+			"ENG_name": "Doomsday Salesperson Plot Hooks",
+			"name": "末日推销员情节钩子",
+			"source": "Arcadia21",
+			"page": 14,
+			"colLabels": [
+				"d6",
+				"情节钩子"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-11"
+			],
+			"intro": [
+				"在末日推销员情节钩子表上投骰或从中选择，以决定末日推销员如何被介绍给队伍。"
+			],
+			"rows": [
+				[
+					"1",
+					"一名村民恳求队伍帮忙卖掉一整箱他们愚蠢地从末日推销员那里进货的反末日打底裤。结果发现，镇上还有好几个人遇到了同样的问题。必须当面质问末日推销员，才能终结这场传销。"
+				],
+				[
+					"2",
+					"一则幻术广告在某村庄里刷屏，推销一种反末日药水。村民恳请角色们找出该为此负责的末日推销员并让他们收手。"
+				],
+				[
+					"3",
+					"这一次世界末日是真的要来了，而这全拜镇上到处兜售的一批水晶所赐。这些所谓的\"护佑\"水晶会召唤恶魔\u2014\u2014可怕的那种。要是所有人都被附身或死光了，生意可就不好做了，对吧？那么，该负责的末日推销员是谁，他们的骗局又是什么？"
+				],
+				[
+					"4",
+					"一位新店主受够了自家店铺每天被神秘破坏者捣毁。他们需要队伍帮忙查明破坏者的身份，这样就不用再从一个可疑的末日推销员那里不断购买反末日装备了。末日推销员可能就是这场混乱的幕后黑手，也可能只是乐于坐收其利。"
+				],
+				[
+					"5",
+					"一个四处兜售的末日推销员售卖新款反末日身体乳，把镇上的顾客都变成了异怪。变形起初很缓慢，但最终顾客们会长出眼柄和触手之类的玩意儿。为了挽回局面、阻止类似灾祸再度发生，角色们必须找出这个末日推销员及其供货商。"
+				],
+				[
+					"6",
+					"镇上起了新潮流\u2014\u2014内嵌各式戒指和水晶、据说能保护佩戴者的蜡烛。有些甚至值好几枚金币！然而，这些蜡烛背后的末日推销员不小心把一枚大魔鬼的戒指嵌进了其中一根蜡烛里。他们雇请角色们帮忙赶在一切真的天翻地覆之前找到那根蜡烛。"
+				]
+			]
+		},
+		{
+			"ENG_name": "Echo Mutations",
+			"name": "回声异变",
+			"source": "Arcadia21",
+			"page": 30,
+			"colLabels": [
+				"d8",
+				"回声异变"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"一只眼睛被一只微缩但完整成形的人类手掌取代。"
+				],
+				[
+					"2",
+					"回声体的胃部长出一张酷似拉克斯曼的第二张脸。"
+				],
+				[
+					"3",
+					"回声体的牙齿被指甲取代。"
+				],
+				[
+					"4",
+					"回声体的下颌骨外露如骸骨。"
+				],
+				[
+					"5",
+					"回声体的膝盖和肘部朝反方向弯曲。"
+				],
+				[
+					"6",
+					"回声体不停地流着散发恶臭的污水与眼泪。"
+				],
+				[
+					"7",
+					"回声体炫耀着一条带倒刺的长舌。"
+				],
+				[
+					"8",
+					"回声体的双眼都被发出嘶嘶声的蟑螂取代。"
+				]
+			]
+		},
+		{
+			"ENG_name": "Fanlord Plot Hooks",
+			"name": "迷主情节钩子",
+			"source": "Arcadia21",
+			"page": 12,
+			"colLabels": [
+				"d6",
+				"情节钩子"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-11"
+			],
+			"intro": [
+				"在迷主情节钩子表上投骰或从中选择，以决定迷主如何被介绍给队伍。"
+			],
+			"rows": [
+				[
+					"1",
+					"一年一度的统治者大会正在镇上举办，但贵宾（咳咳，也就是统治者）却迟迟未到！他们到底去哪儿了（或许是躲开了狂热崇拜者们施加的压力）？一名迷主请求角色们帮忙寻找统治者。"
+				],
+				[
+					"2",
+					"这个位面和邻位面正因某人说了关于对方统治者的坏话而交恶。这只是谣言机器在空转，还是证据确凿、足以引发位面战争？为了阻止冲突，角色们必须在一名迷主的向导下追查线索。"
+				],
+				[
+					"3",
+					"统治者想去度假，但在自己的地盘上，他们一露面就会被认出并被索要签名围堵。他们需要角色们帮忙，悄悄溜到一处风景胜地，避开那些爱打听的迷主们。"
+				],
+				[
+					"4",
+					"一名迷主愿意不惜一切见到统治者，包括雇一队乌合之众带路，潜入统治者戒备森严的居所。这将是危险的任务，但那笔酬劳多么诱人？"
+				],
+				[
+					"5",
+					"一名迷路的迷主在大都市里撞见了角色们，恳求他们的帮助。他们必须找到回家的路，好回到同样热爱家乡统治者的同好中间！"
+				],
+				[
+					"6",
+					"统治者驾崩了，其核心圈子乱作一团，想方设法不让消息走漏。由于担心迷主们暴动，统治者的幕僚们请求角色们在公开场合撑住统治者的身体，像提线木偶一样操纵尸体。但这撑不了多久\u2014\u2014他们会想出什么一劳永逸的办法？"
+				]
+			]
+		},
+		{
+			"ENG_name": "Personal Assistant Plot Hooks",
+			"name": "私人助理情节钩子",
+			"source": "Arcadia21",
+			"page": 16,
+			"colLabels": [
+				"d6",
+				"情节钩子"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-11"
+			],
+			"intro": [
+				"在私人助理情节钩子表上投骰或从中选择，以决定私人助理如何被介绍给队伍。"
+			],
+			"rows": [
+				[
+					"1",
+					"统治者派其私人助理跟随队伍，以确保角色们不会发现藏在地下墓穴里的丧尸大军。可那阵呻吟声是怎么回事，人们又为何不断失踪？"
+				],
+				[
+					"2",
+					"私人助理迫切需要有人去让统治者相信他们已经死了，这样他们才能逃离这个位面。他们特意用上了宝贵的10分钟午休时间来请求队伍帮忙。他们要如何伪造自己的死亡？"
+				],
+				[
+					"3",
+					"私人助理要为统治者筹办一场生日宴会，却不知从何下手。有人能帮帮他们操办这个特别的日子吗？"
+				],
+				[
+					"4",
+					"统治者想要\u2014\u2014不，{@i 需要}\u2014\u2014一道用某处险地出产的稀有食材烹制的特定菜肴。区区一名私人助理可搞不定这件事，他们迫切需要善良冒险者的援手。谁会挺身而出？"
+				],
+				[
+					"5",
+					"邻位面的统治者有一顶戴上便光彩夺目的王冠......夺目得让本位面的统治者嫉妒不已。他们想让私人助理去把王冠偷来据为己有。私人助理雇请角色们协助这场盗窃，而且真心希望他们有个好计划！"
+				],
+				[
+					"6",
+					"私人助理想组织工会，却对统治者怕得要死。（这情有可原。）私人助理请求角色们帮忙串联同事，可紧接着统治者又要求队伍上报任何工会的风声。队伍会站在哪一边？如果站在统治者一边，这场背叛又将如何收场？"
+				]
+			]
+		},
+		{
+			"ENG_name": "Ritual Actions",
+			"name": "仪式动作",
+			"source": "Arcadia21",
+			"page": 28,
+			"colLabels": [
+				"职业",
+				"仪式问题"
+			],
+			"colStyles": [
+				"col-3",
+				"col-9"
+			],
+			"rows": [
+				[
+					"{@class 野蛮人|PHB}",
+					"你专注于怎样的画面来代表魔鬼离开约翰的身体？"
+				],
+				[
+					"{@class 吟游诗人|PHB}",
+					"你发出怎样的节奏或旋律来萦绕人心？"
+				],
+				[
+					"{@class 野兽之心|BST}",
+					"你发出怎样的野性之声？"
+				],
+				[
+					"{@class 牧师|PHB}",
+					"你向诸神诵念怎样的祷词？"
+				],
+				[
+					"{@class 德鲁伊|PHB}",
+					"你做出怎样的野性手势？"
+				],
+				[
+					"{@class 战士|PHB}",
+					"你演练怎样的防御动作？"
+				],
+				[
+					"{@class 邪狱使|ILL}",
+					"你专注于怎样的恐怖景象？"
+				],
+				[
+					"{@class 武僧|PHB}",
+					"你想象怎样的安定意象？"
+				],
+				[
+					"{@class 圣武士|PHB}",
+					"你用武器做出怎样的力量姿态？"
+				],
+				[
+					"{@class 游侠|PHB}",
+					"你把怎样的自然祭品放入法阵？"
+				],
+				[
+					"{@class 游荡者|PHB}",
+					"你做出怎样的不屑或轻蔑手势？"
+				],
+				[
+					"{@class 术士|PHB}",
+					"你的双眼会瞬间发生怎样的变化？"
+				],
+				[
+					"{@class Talent|TalPsi}",
+					"你将何种难以言传的感受注入仪式？"
+				],
+				[
+					"{@class 魔契师|PHB}",
+					"有什么话不由自主地从你口中挤了出来？"
+				],
+				[
+					"{@class 法师|PHB}",
+					"你在空中描绘的发光图纹是什么样子？"
+				]
+			]
+		},
+		{
+			"ENG_name": "Unstable Magic",
+			"name": "不稳定魔法",
+			"source": "Arcadia21",
+			"page": 29,
+			"colLabels": [
+				"d6",
+				"法术"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell 酸液飞溅}"
+				],
+				[
+					"2",
+					"{@spell 燃烧之手}"
+				],
+				[
+					"3",
+					"{@spell 云雾术}"
+				],
+				[
+					"4",
+					"{@spell 油腻术}"
+				],
+				[
+					"5",
+					"{@spell 魔法飞弹}"
+				],
+				[
+					"6",
+					"{@spell 毒气喷涌}"
+				]
+			]
+		}
+	],
+	"condition": [
+		{
+			"ENG_name": "Doomed",
+			"name": "厄运",
+			"source": "Arcadia21",
+			"page": 9,
+			"entries": [
+				"当一生物受到厄运状态影响时，其会经历以下效应：",
+				{
+					"type": "list",
+					"items": [
+						"若生物在受到此状态时没有任何厄运指示物，则获得1枚厄运指示物。只要该生物处于厄运状态，其厄运指示物就不能少于1枚。",
+						"每当该生物进行一次豁免检定（包括死亡豁免检定）时，其结果会减少等同于它当前所持厄运指示物数量的数值。",
+						"若处于厄运状态的生物连续24小时没有获得新的厄运指示物，其厄运状态结束并失去所有厄运指示物。",
+						"{@spell 移除诅咒}和{@spell 高等复原术}法术会使生物的厄运指示物总数减少1枚，若该生物已没有厄运指示物，则状态结束。此外，此状态也可以用一道{@spell 祈愿术}法术来结束，并移除该生物的所有厄运指示物。"
+					]
+				}
+			]
+		}
+	],
+	"book": [
+		{
+			"ENG_name": "Arcadia Issue 21",
+			"name": "阿卡迪亚 第21期",
+			"id": "Arcadia21",
+			"source": "Arcadia21",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/cover.webp"
+			},
+			"published": "2022-10-26",
+			"author": "汉娜·罗斯、赛莱斯特·科诺维奇、芭娜娜·陈、沙朗·比斯瓦斯",
+			"contents": [
+				{
+					"ENG_name": "Cover Page & Credits",
+					"name": "封面与致谢"
+				},
+				{
+					"ENG_name": "Letter from the Editor",
+					"name": "主编来信"
+				},
+				{
+					"ENG_name": "Hunting a Myth",
+					"name": "追猎传说",
+					"headers": [
+						"构建神秘生物故事",
+						"现成神秘生物",
+						{
+							"header": "小灰人",
+							"depth": 1
+						},
+						{
+							"header": "黑夏克",
+							"depth": 1
+						},
+						{
+							"header": "死亡蠕虫",
+							"depth": 1
+						},
+						{
+							"header": "天蛾人",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"ENG_name": "The Fiendish Regulars",
+					"name": "魔鬼常客",
+					"headers": [
+						"他们为何不肯放过我？",
+						"迷主",
+						"末日推销员",
+						"私人助理"
+					]
+				},
+				{
+					"ENG_name": "Puzzling Out The Devil",
+					"name": "破解魔鬼之谜",
+					"headers": [
+						"前情提要",
+						"冒险摘要",
+						"出场人物",
+						"故事钩子",
+						"开始冒险",
+						"谜题引入",
+						"谜题一：弹射符文",
+						"谜题二：稳定符文",
+						"谜题三：锚定符文",
+						"谜题四：效能符文",
+						"线索与情报",
+						"施行驱魔仪式",
+						"对抗魔鬼",
+						"余波",
+						"调整冒险",
+						"作者注",
+						"玩家讲义"
+					]
+				},
+				{
+					"ENG_name": "Resources",
+					"name": "资源",
+					"headers": [
+						"破解魔鬼之谜",
+						"MCDM 桌上角色扮演安全工具箱"
+					]
+				},
+				{
+					"ENG_name": "Author Profiles",
+					"name": "作者简介"
+				},
+				{
+					"ENG_name": "License",
+					"name": "许可协议"
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "Arcadia21",
+			"source": "Arcadia21",
+			"data": [
+				{
+					"ENG_name": "Cover Page & Credits",
+					"type": "section",
+					"name": "封面与致谢",
+					"page": "C1",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/cover-full.webp"
+							},
+							"title": "《阿卡迪亚》第21期封面",
+							"altText": "《阿卡迪亚》第21期封面：一具生着利爪的骷髅拉开橙色的帷幕。帷幕之下，数十个南瓜头怪物龇着尖牙、亮着利爪朝观者扑来。",
+							"credit": "Nick De Spain",
+							"width": 1224,
+							"height": 1584
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"columns": 2,
+							"page": "C2",
+							"items": [
+								{
+									"ENG_name": "Design & Production",
+									"type": "list",
+									"style": "list-hang",
+									"page": "C2",
+									"name": "设计与制作",
+									"items": [
+										{
+											"ENG_name": "Managing Editor",
+											"type": "item",
+											"name": "主编",
+											"entries": [
+												"汉娜·罗斯"
+											]
+										},
+										{
+											"ENG_name": "Lead Developer",
+											"type": "item",
+											"name": "首席开发者",
+											"entries": [
+												"詹姆斯·因特罗卡索"
+											]
+										},
+										{
+											"ENG_name": "Production and Playtest Director",
+											"type": "item",
+											"name": "制作与游戏测试总监",
+											"entries": [
+												"拉斯·巴克"
+											]
+										},
+										{
+											"ENG_name": "Editors",
+											"type": "item",
+											"name": "编辑",
+											"entries": [
+												"斯科特·菲茨杰拉德·格雷、赛迪·劳里"
+											]
+										},
+										{
+											"ENG_name": "Authors",
+											"type": "item",
+											"name": "作者",
+											"entries": [
+												"沙朗·比斯瓦斯、芭娜娜·陈、赛莱斯特·科诺维奇"
+											]
+										},
+										{
+											"ENG_name": "Layout",
+											"type": "item",
+											"name": "排版",
+											"entries": [
+												"珍·麦克利里"
+											]
+										},
+										{
+											"ENG_name": "Title Logo",
+											"type": "item",
+											"name": "标题标志",
+											"entries": [
+												"托姆·施穆克"
+											]
+										},
+										{
+											"ENG_name": "Accessibility",
+											"type": "item",
+											"name": "无障碍",
+											"entries": [
+												"克里斯·霍珀"
+											]
+										},
+										{
+											"ENG_name": "Community Coordinator",
+											"type": "item",
+											"name": "社区协调员",
+											"entries": [
+												"约翰·钱皮恩"
+											]
+										},
+										{
+											"ENG_name": "Customer Support",
+											"type": "item",
+											"name": "客户支持",
+											"entries": [
+												"鲍比·麦克布莱德"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Illustration",
+									"type": "list",
+									"style": "list-hang",
+									"page": "C2",
+									"name": "插画",
+									"items": [
+										{
+											"ENG_name": "Cover Art",
+											"type": "item",
+											"name": "封面画师",
+											"entries": [
+												"尼克·德·斯佩恩"
+											]
+										},
+										{
+											"ENG_name": "Interior Illustrators",
+											"type": "item",
+											"name": "内页插画师",
+											"entries": [
+												"《追猎传说》：祖赞娜·武齐克",
+												"《魔鬼常客》：古斯塔沃·佩利萨里",
+												"《破解魔鬼之谜》：格蕾丝·张"
+											]
+										},
+										{
+											"ENG_name": "Cartographer",
+											"type": "item",
+											"name": "制图师",
+											"entries": [
+												"米斯卡·弗雷德曼"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "MCDM Contract QA",
+									"type": "list",
+									"style": "list-hang",
+									"page": "C2",
+									"name": "MCDM合同QA",
+									"items": [
+										{
+											"ENG_name": "Senior Tester",
+											"type": "item",
+											"name": "资深测试员",
+											"entries": [
+												"斯宾塞·希布尼克"
+											]
+										},
+										{
+											"ENG_name": "Testers",
+											"type": "item",
+											"name": "测试员",
+											"entries": [
+												"内森·克拉克",
+												"卡桑德拉·\"迪格\"·克里",
+												"小阿莱克森·德利马",
+												"詹姆斯·杜瓦",
+												"安娜·吉马良斯",
+												"亚历克斯·亨辛斯基"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "MCDM Team",
+									"type": "list",
+									"style": "list-hang",
+									"page": "C2",
+									"name": "MCDM团队",
+									"items": [
+										"拉斯·巴克：开发与制作",
+										"杰罗德·贝内特：技术",
+										"格蕾丝·张：美术",
+										"马特·科维尔：写作与设计",
+										"尼克·德·斯佩恩：美术与美术外包管理",
+										"杰森·哈泽瑙尔：美术与美术指导",
+										"詹姆斯·因特罗卡索：首席游戏设计师",
+										"汉娜·罗斯：主编"
+									]
+								},
+								{
+									"ENG_name": "Playtesting",
+									"type": "list",
+									"style": "list-hang",
+									"page": "C2",
+									"name": "游戏测试",
+									"items": [
+										{
+											"ENG_name": "Playtest Coordinators",
+											"type": "item",
+											"name": "游戏测试协调员",
+											"entries": [
+												"凯西·贝尔、玛德琳·布雷、约翰·布莱恩特、ItsTheITGuy、哈利·基维什、AJ·梅茨格、罗曼·佩纳、乔尔·拉斯、克莱顿·萨拉蒙、贾拉德·泰特、贝诺尼·托马斯、亚伦·弗拉维乌斯·韦斯特"
+											]
+										},
+										{
+											"ENG_name": "Playtesters",
+											"type": "item",
+											"name": "游戏测试参与者",
+											"entries": [
+												"菲利普·阿达、Alpacnologia、Bloodwerth、德尔波特·布雷克兰、贾里德·\"杰伊\"·布斯、布雷特·德科西莫、米哈乌·\"希勒\"·多拉塔、E1f、EagleRuler、Evitaitini、Robert G、费利克斯·戈捷-马拉里尔、保罗·戈尔斯基、艾里斯·戈顿、克里斯·吉永、乔恩·赫尔佐格、托马斯·希尔、丹尼尔·莱克、保罗·利戈尔斯基、黑兹尔·马加里斯、安德鲁·马奎斯、特雷·麦克莱莫尔、蒂芙妮·奥布西迪安、阿德里安·\"EvenTallerTree\"·奥兰多、尼古拉斯·伦泽蒂、托马斯·罗尔斯顿、罗伯特·萨克斯、埃里克·萨查克、Scia、蒂姆·斯基巴、TheWitherGolem"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"page": "C2",
+							"style": "text-center",
+							"entries": [
+								"来MCDM的Discord服务器加入我们吧，在那里你可以和其他人聊聊{@i 《阿卡迪亚》}以及更多话题！",
+								"{@link mcdm.gg/discord|http://mcdm.gg/discord}"
+							],
+							"id": "001"
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"page": "C2",
+							"style": "text-center",
+							"entries": [
+								"产品身份：以下内容特此依开放游戏许可1.0a版第1(e)节的定义被识别为产品身份，且非开放内容：所有未收录于5.1版系统参考文档、或未被明确指定为开放游戏内容的内容，包括《追猎传说》、《魔鬼常客》、《破解魔鬼之谜》、所有商标与注册商标、专有名称（包括角色、地名、怪物、组织、新法术、新能力等的名称）、对话、情节、故事要素、地点、角色、插图、图像、边栏以及商业外观。"
+							],
+							"id": "002"
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00003.webp"
+							},
+							"title": "《阿卡迪亚》第21期目录",
+							"width": 1229,
+							"height": 1589
+						}
+					],
+					"id": "000"
+				},
+				{
+					"ENG_name": "Letter from the Editor",
+					"type": "section",
+					"name": "主编来信",
+					"page": 1,
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"本期{@i 《阿卡迪亚》}伴随一份新资源面世：{@link 一份在游戏中使用安全工具的指南|https://mcdm.gg/SafetyToolkit}。个别{@i 《阿卡迪亚》}文章已附有安全工具的链接\u2014\u2014这些体系能帮助桌边的每个人玩得尽兴，并谨慎处理可能令人不安或不适的主题\u2014\u2014但詹姆斯和我认为，为MCDM社区准备一份我们自己的资源会是一件美事。",
+								"我们联系了{@i 《阿卡迪亚》}的顾问兼作者{@link 萨莉·塔马金|https://twitter.com/sallyt}，以及游戏与心理学专家{@link 科莱特·布朗（LMSW）|https://twitter.com/DrKowert}与{@link 萨拉·海斯（PsyD）|https://twitter.com/drhayspsyd}，共同打造了一套TTRPG安全工具\"工具包\"，并附有与你的团体一起使用它们的指引。我个人最喜欢的工具之一，是一份列出各类话题、让每个人标注自己接受程度的清单\u2014\u2014所以我们也就做了一份！你可以在本期（以及今后各期）末尾的\"资源\"部分找到这两样东西。",
+								"和我们制作的其他一切一样，我们希望这款安全工具包中的选项与建议能轻松加入你的游戏，无论你的玩伴是相交二十年的老友，还是彼此刚刚结识的新人。同样，和我们制作的其他一切一样，你并非必须使用它们，但我们希望你会看上一眼，看看有没有想尝试的东西。",
+								"说实话，当我最初考虑在休闲团的一次性冒险里使用安全工具时，我也犹豫过。\"我{@i 非得}这么麻烦吗？\"我心里想。\"玩家们会不会被吓到，或者介意我让我们唯一一次团前先填这份清单？\"最后，我尽可能轻描淡写地开了口：\"嘿，我没打算搞什么超级吓人的主题，也不会提及【特别沉重的话题】，但无论如何，先做这一步总归是个好主意。\"结果完全没事。事实上，这让我在给不太熟的人当GM时更有底气了！",
+								"更重要的是，如果你{@i 确实}打算采用惊悚主题、恐怖元素或特别沉重的话题，这些工具将极其有用，能让你的游戏以种种{@i 恰当}的方式变得吓人。人们容易把安全工具当成限制\u2014\u2014别提这个、别碰那个\u2014\u2014但正如任何优秀的框架一样，确立边界反而赋予人力量与探索的信心。而正是{@i 那种}力量、那种自由、那种信任，让我们得以讲述最紧张刺激、最阴森可怖、也最令人心碎的故事。",
+								"今年10月的这期{@i 《阿卡迪亚》}里，每篇文章都以各自的方式令人愉悦地{@s 萌恐}惊悚。{@link 赛莱斯特·科诺维奇|https://twitter.com/cconowitch}的《追猎传说》呈现四种神秘生物，并指导你如何把它们织入你的故事。死亡蠕虫？求之不得（但也完蛋了）。{@link 芭娜娜·陈|https://twitter.com/bananachangames}的《魔鬼常客》为你的游戏带来喜剧恐怖：三位\"普通\"NPC，各自与当地的统治者、暴君或幕后大反派有着独特的关系。最后同样重要的是，{@link 沙朗·比斯瓦斯|https://twitter.com/SharangBiswas}的《破解魔鬼之谜》是一个包在诅咒里、又包在四道谜题里的爱情故事\u2014\u2014没错，就是谜题！",
+								"所以，翻开书页，一头扎进这些文字吧。它们在向你招手\u2014\u2014来加入我们，来到{@i 《阿卡迪亚》}这片繁茂、幽暗而又邪恶的角落。",
+								{
+									"type": "entries",
+									"style": "text-right",
+									"entries": [
+										"自梦入终。"
+									],
+									"id": "004"
+								}
+							],
+							"by": "汉娜·罗斯",
+							"from": "主编",
+							"skipMarks": true,
+							"skipItalics": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00004.webp"
+							},
+							"width": 1227,
+							"height": 543
+						}
+					],
+					"id": "003"
+				},
+				{
+					"ENG_name": "Hunting a Myth",
+					"type": "section",
+					"name": "追猎传说",
+					"page": 2,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00006.webp"
+							},
+							"width": 1229,
+							"height": 516
+						},
+						{
+							"type": "entries",
+							"page": 2,
+							"style": "text-center",
+							"entries": [
+								"{@style 战役中的神秘生物|dnd-font;large}",
+								"作者：赛莱斯特·科诺维奇",
+								"",
+								"{@b 内容警告：本文提及自残、煤气灯式操纵、绑架及身体恐怖等内容。我们建议配合本文使用{@link MCDM 桌上角色扮演安全工具箱|https://mcdm.gg/SafetyToolkit}，确保每个人都能玩得开心！}"
+							],
+							"id": "006"
+						},
+						"神秘生物的宽泛定义，是一种有人声称存在、却从未被证实存在的生物。神秘生物属于传说生物，却不归于既定的神话体系，也不像其他奇幻生物那样遵循固定的原型。龙和独角兽这类幻想生物出现在全球各地的故事里，每种文化对它们的演绎都与其他文化有相通之处。相反，关于神秘生物遭遇的记述却因讲述者而异，目击者给同一种生物安上了不同的大小、习性和特征。此外，神秘生物与特定的族群和地点绑定。你可以在地图上指出神秘生物出没之处，比如尼斯湖、新泽西州的松林荒原、太平洋西北地区的森林，但你指不出独角兽传闻的源头。",
+						"在游戏中，神秘生物足够独特、足够罕见（或足够狡猾），足以让想为它们编目的科学家、牧师或法师束手无策。游戏世界里的平民知道龙存在，却可能怀疑{@creature 天蛾人|Arcadia21}是否存在，这让猎捕这样的生物更加刺激。神秘生物的存在本身就无从解释，迫使人们审视自己对社会组织机构的信任，因为政府、学者和其他权威都断然否认此类生物真实存在。而围绕真相、怀疑、信仰与社会规范的种种疑问，在任何题材中都有一席之地。",
+						{
+							"ENG_name": "Building Cryptid Stories",
+							"type": "section",
+							"name": "构建神秘生物故事",
+							"page": 2,
+							"entries": [
+								"你可能仍在琢磨，究竟怎样才能让一种神秘生物在标准奇幻世界里显得有意义。要让这些古怪的生物发挥作用，请牢记以下原则。",
+								{
+									"ENG_name": "Make a Mystery",
+									"type": "entries",
+									"name": "制造悬念",
+									"page": 2,
+									"entries": [
+										"人类觉得神秘生物有趣，正因为它们神秘。围绕神秘生物构建故事时，要营造悬念感，并{@b 尽可能长久地避免与这种生物正面遭遇}。发现神秘生物对环境的影响、倾听其受害者的讲述、发掘其存在的证据，才应当是一场神秘生物主题冒险的主体。"
+									],
+									"id": "008"
+								},
+								{
+									"ENG_name": "Introduce Doubt",
+									"type": "entries",
+									"name": "引入怀疑",
+									"page": 2,
+									"entries": [
+										"在超自然故事中，我们总会为那些顶着质疑者与不信者、仍继续追寻真相的调查者加油。引入一些否认神秘生物存在、并出示\"这类生物绝不可能存在\"证据的NPC，可以{@b 在角色之间播下怀疑的种子}。先证明神秘生物不可能存在，等到它就站在你面前时，才更加令人惊叹。"
+									],
+									"id": "009"
+								},
+								{
+									"ENG_name": "Get Personal",
+									"type": "entries",
+									"name": "切身牵连",
+									"page": 3,
+									"entries": [
+										"神秘生物之所以引人入胜，是因为我们对它们知之甚少。在我们这个世界，每年都有人报告在全球各地遭遇古怪生物。这些故事经久不衰，又诡异地彼此相似，而主流科学却将其斥为虚构，把目击者贬为想象力过剩或精神失常。但来自挚友或家人的神秘生物故事，就没那么容易被打发了。请为你的角色营造同样的怀疑氛围！当神秘生物盯上冒险者的亲近之人时，你便{@b 为解开谜团创造了切身的利害}。"
+									],
+									"id": "00a"
+								},
+								{
+									"ENG_name": "Know Your Motivation",
+									"type": "entries",
+									"name": "想清楚它的动机",
+									"page": 3,
+									"entries": [
+										"一个强烈的动机能为谜团奠定引人入胜的根基。从一开始就{@b 决定你的神秘生物想要什么，然后构建让角色得以一步步解开这生物图谋的遭遇}。"
+									],
+									"id": "00b"
+								},
+								{
+									"ENG_name": "Show, Don't Tell",
+									"type": "entries",
+									"name": "展示，而非言明",
+									"page": 3,
+									"entries": [
+										"神秘生物之所以可怕，是因为它们始终隐匿\u2014\u2014无论藏身阴影，还是现于梦中。让事物保持半遮半掩，心智便会放大自身的恐惧，因为想象总会不知疲倦地填补空白。{@b 给一切蒙上保密的外衣。}如果你直截了当地告诉玩家，他们面对的是大脚怪，你就毁掉了揭开真相的惊悚。"
+									],
+									"id": "00c"
+								}
+							],
+							"id": "007"
+						},
+						{
+							"ENG_name": "Ready-Made Cryptids",
+							"type": "section",
+							"name": "现成神秘生物",
+							"page": 3,
+							"entries": [
+								"本节提供运行四种出色神秘生物所需的全部数据与信息。",
+								{
+									"ENG_name": "Grey Aliens",
+									"type": "entries",
+									"name": "小灰人",
+									"page": 3,
+									"entries": [
+										"{@i 又称泽塔网罟人、罗斯威尔灰人、灰人}",
+										"与地外生物相遇是最常见的神秘生物遭遇之一。对这些天外来客的描述千差万别，足以归为几种不同类型。流行文化让小灰人成为了最广为人知的一类：灰色的小个子生物，大脑袋、黑眼睛、无毛的双足身躯。",
+										"外星人放进奇幻游戏里似乎有点格格不入。但话说回来，对魔法社会而言，这些来自外太空的科技先进生物难道不会同样可怕（甚至更可怕）吗？在战役中引入外星人，可以让你构建审视科学在奇幻中角色的故事，并把冒险的格局扩展到宇宙尺度。",
+										{
+											"ENG_name": "Plot Hooks",
+											"type": "entries",
+											"name": "情节钩子",
+											"page": 3,
+											"entries": [
+												"由于小灰人主要关心观察与收集科学数据，他们会千方百计隐藏自己的存在。以小灰人为特色的冒险通常从一个原因不明的神秘事件开始，暗示有什么地方不对劲。以下是一些把角色引向一次亲密接触的故事点子：",
+												{
+													"ENG_name": "Out of Mind",
+													"type": "entries",
+													"name": "失忆",
+													"page": 3,
+													"entries": [
+														"角色们来到一座全村人记忆都被清除的村庄。聚落四周的地面上留着怪异的灼痕，人们发现了一台奇特的金属机器，还有其他古怪的工具被遗落在旁。村民需要帮忙拼凑出到底发生了什么。"
+													],
+													"id": "010"
+												},
+												{
+													"ENG_name": "Shipwreck",
+													"type": "entries",
+													"name": "坠船",
+													"page": 3,
+													"entries": [
+														"一艘奇特的金属飞船在暴风雨中坠落到地面。这艘飞船与世人见过的任何东西都不同，角色们受命寻找进入其中的方法。"
+													],
+													"id": "011"
+												},
+												{
+													"ENG_name": "UFO",
+													"type": "entries",
+													"name": "不明飞行物",
+													"page": 3,
+													"entries": [
+														"农夫们报告看到一个不明飞行物划过天际，第二天，一名地方政府官员失踪了。惊恐万状的民众需要冒险者调查事情的真相。"
+													],
+													"id": "012"
+												}
+											],
+											"id": "00f"
+										},
+										{
+											"ENG_name": "Tactics",
+											"type": "entries",
+											"name": "战术",
+											"page": 3,
+											"entries": [
+												"小灰人智力超群，而且（自愿地）从不打没有胜算的仗。如果角色们主动寻衅，务必安排多名小灰人，并为他们配上易守的地形或一件强化攻城武器。如果战局对冒险者不利，请记住：小灰人寻求的是知识。掳走攻击者比杀死他们更有价值。",
+												"在战斗中操控小灰人时，优先考虑生存而非输出伤害。小灰人依靠念动力反应来快速获得对近战敌人所造成伤害的免疫，并优先使用伽马射线击倒能在多种伤害类型间切换的施法者。它们会把思想提取保留到目标已被{@condition 中毒}或以其他方式{@condition 失能}时才使用。"
+											],
+											"id": "013"
+										},
+										{
+											"ENG_name": "Rewards",
+											"type": "entries",
+											"name": "奖励",
+											"page": 3,
+											"entries": [
+												"在游戏中引入外星人，可以让你创造出一大堆科技系奖励。为解决小灰人问题的队伍送上一件了不起的太空武器或科学奇幻主题的小玩意，是给玩家留下深刻印象的好办法。想不经从零设计就创造这类奖励，可以找一件你喜欢的魔法物品，修改一些描述细节让它显得未来感十足，再赋予它如下新特性：",
+												{
+													"type": "list",
+													"style": "list-hang",
+													"page": 3,
+													"items": [
+														{
+															"ENG_name": "Alien Tech",
+															"type": "item",
+															"name": "外星科技",
+															"entries": [
+																"就{@spell 反魔法场}、{@spell 解除魔法}、{@spell 法术反制}等法术和类似魔法效应而言，此物品及其特性不被视为魔法。"
+															]
+														}
+													]
+												}
+											],
+											"id": "014"
+										},
+										{
+											"ENG_name": "Grey Alien",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "Arcadia21",
+											"name": "小灰人",
+											"page": 4,
+											"style": "inset"
+										}
+									],
+									"id": "00e"
+								},
+								{
+									"ENG_name": "Shuck",
+									"type": "entries",
+									"name": "黑夏克",
+									"page": 4,
+									"entries": [
+										"{@i 又称：黑犬、{@link 黑夏克|https://www.youtube.com/watch?v=jeRY-jxKuqA}、老夏克、老休克、{@note 不祥}}",
+										"黑夏克是数个世纪以来在不列颠群岛被目击的幽灵黑犬的通称。这些生物的大小在各方报告中不一而足，但所有描述都提到了黑夏克如影般的黑色躯体和燃烧着火焰的双眼。在一些传说中，黑夏克现身时会把受害者撕成碎片；在另一些传说中，这些黑犬会连续数周跟踪猎物，直到受害者不断膨胀的恐惧逼得他们自戕。无论具体情形如何，见到这只猎犬都是必死的凶兆。",
+										"以黑夏克为特色的故事围绕对死亡的恐惧展开。一旦黑夏克选定了受害者，几乎没有什么能拯救那个倒霉的目标（把他们从这只猎犬、或从他们自己手中救出来）。决定是什么（或谁）召唤出这只神秘生物并放它扑向受害者，并解开它捕猎背后的缘由，能让你深入探索内疚、报应与正义的主题。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00015.webp"
+											},
+											"altText": "一只双眼赤红、牙齿染血的巨大黑犬在画中烟雾的笼罩下现身于一间乡村小屋上空。惊愕的人类和精灵侧目注视着这头巨兽。",
+											"credit": "Zuzanna Wuzyk",
+											"width": 517,
+											"height": 716
+										},
+										{
+											"ENG_name": "Plot Hooks",
+											"type": "entries",
+											"name": "情节钩子",
+											"page": 4,
+											"entries": [
+												"黑夏克是复仇的生物，受命追踪、骚扰并最终杀死其受害者。确定黑夏克的目标，并把那名受害者与冒险者联系起来，是把他们卷入这只神秘生物的故事的第一步。以下是一些让角色卷入黑夏克复仇循环的故事点子：",
+												{
+													"ENG_name": "Dying Breed",
+													"type": "entries",
+													"name": "濒危血脉",
+													"page": 5,
+													"entries": [
+														"一个古老贵族血脉的最后幸存者雇请角色们担任保镖，保护自己免受一头已屠戮其所有亲属的阴影巨兽的毒手。"
+													],
+													"id": "017"
+												},
+												{
+													"ENG_name": "Last Words",
+													"type": "entries",
+													"name": "临终遗言",
+													"page": 5,
+													"entries": [
+														"在一名被指控的女巫被火刑处决后的几周里，一座偏远小镇连遭恶犬袭击。随着死亡人数攀升，惊慌的镇民迫切希望有人能阻止那个猎杀他们的东西。"
+													],
+													"id": "018"
+												},
+												{
+													"ENG_name": "Territory",
+													"type": "entries",
+													"name": "领地",
+													"page": 5,
+													"entries": [
+														"一群无恶意的{@creature 冬狼|MM|冬狼}（或其他聪明的野兽）小心翼翼地接近角色们并提出请求。狼群需要帮助，杀死一头一直在袭击该地区类人生物的黑犬\u2014\u2014正是它逼得镇民开始成批屠狼。"
+													],
+													"id": "019"
+												}
+											],
+											"id": "016"
+										},
+										{
+											"ENG_name": "Tactics",
+											"type": "entries",
+											"name": "战术",
+											"page": 5,
+											"entries": [
+												"黑夏克受驱使猎杀特定的受害者；除此之外，它只会杀死那些蠢到妨碍这一目标的其他生物。与黑夏克正面对峙将是一场你死我活的战斗，猎犬会以最高效的手段击杀攻击者。如果黑夏克怀疑有人从中作梗，它会先潜行观察这些闯入者，尝试吓退他们，然后才诉诸直接暴力。",
+												"战斗中，黑夏克的首要目标是用暗影群反应制造尽可能多的暗影副本。黑夏克一次只对一名角色使用啃咬攻击以最大化效果，优先解决重火力输出角色，再对付辅助角色。它会等到多个目标都受了伤之后，才使用死亡哀嚎。"
+											],
+											"id": "01a"
+										},
+										{
+											"ENG_name": "Rewards",
+											"type": "entries",
+											"name": "奖励",
+											"page": 5,
+											"entries": [
+												"杀死黑夏克意味着把它的受害者从可怖的命运中解放出来，这通常会换来善意与金钱报酬。不过，有生意头脑的角色也可以用它如影般的毛皮制作一件魔法物品。",
+												{
+													"ENG_name": "Black Cloak",
+													"type": "statblock",
+													"tag": "item",
+													"source": "Arcadia21",
+													"name": "黑斗篷",
+													"page": 5
+												}
+											],
+											"id": "01b"
+										},
+										{
+											"ENG_name": "Shuck",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "Arcadia21",
+											"name": "黑夏克",
+											"page": 5,
+											"style": "inset"
+										}
+									],
+									"id": "015"
+								},
+								{
+									"ENG_name": "Death Worm",
+									"type": "entries",
+									"name": "死亡蠕虫",
+									"page": 6,
+									"entries": [
+										"{@i 奥尔戈伊-霍尔霍伊，蒙古死亡蠕虫}",
+										"世世代代以来，喷洒夺命酸液、操弄电流的巨型沙虫传说一直萦绕着戈壁沙漠。对这些死亡蠕虫的报道在流行文化中催生了无数想象复刻，从弗兰克·赫伯特的{@i 《沙丘》}中的沙虫，到邪典电影{@link 异形魔怪|https://www.youtube.com/watch?v=liJfZvXdiTE}。虽然其确切本质不明，但有一点很清楚：亲眼见到蠕虫破土而出的人，极少能活着把故事讲下去。",
+										"死亡蠕虫是栖居于世界上最荒凉地带的隐秘而可怖的敌手。尽管力量惊人，蠕虫仍然是一头野兽，围绕它生长出的故事往往深入探讨自然与文明之间永不停歇的角力。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00020.webp"
+											},
+											"altText": "一条巨大的红色蠕虫从沙下朝着毫无防备的三人冒险小队破沙而出。",
+											"credit": "Zuzanna Wuzyk",
+											"width": 495,
+											"height": 671
+										},
+										{
+											"ENG_name": "Plot Hooks",
+											"type": "entries",
+											"name": "情节钩子",
+											"page": 6,
+											"entries": [
+												"死亡蠕虫倾向于离文明越远越好，因此围绕它们的冒险往往要查明其行为变化的原因。以下是一些引导你的队伍走向这些翻腾蠕虫的故事点子：",
+												{
+													"ENG_name": "Bad Weather",
+													"type": "entries",
+													"name": "恶劣天气",
+													"page": 6,
+													"entries": [
+														"一处不明的奥术源头令当地天气格局陷入混乱。每当闪电击中地面，一群狰狞的怪物便从地下喷涌而出，摧毁周围的一切。当地居民迫切希望冒险者能在这些怪物毁掉整个地区之前，查明风暴与怪物之间的关联。"
+													],
+													"id": "01e"
+												},
+												{
+													"ENG_name": "Border Dispute",
+													"type": "entries",
+													"name": "边界争端",
+													"page": 6,
+													"entries": [
+														"一座新建立的边境城镇在发现数名矿工的遗骸后停工了\u2014\u2014尸体被某种酸液熔去了半边。镇民对能犯下如此可怖凶案的生物怕得要命，需要有人把它赶走，好尽快复工。"
+													],
+													"id": "01f"
+												},
+												{
+													"ENG_name": "Dirty Deal",
+													"type": "entries",
+													"name": "肮脏交易",
+													"page": 6,
+													"entries": [
+														"一位富商的运输货车接连失踪，只好求助外援。几个星期以来，商队在半路上人间蒸发，却找不到尸体或货车残片\u2014\u2014只有一座座诡异的土丘，像刚挖开的洞。"
+													],
+													"id": "020"
+												}
+											],
+											"id": "01d"
+										},
+										{
+											"ENG_name": "Tactics",
+											"type": "entries",
+											"name": "战术",
+											"page": 6,
+											"entries": [
+												"死亡蠕虫最大的资本是机动性，这让它们能跨越遥远的距离追踪、潜伏在猎物左右。受到威胁的蠕虫会从沙下袭击目标，退回安全处，再周而复始，直到猎物毙命。死亡蠕虫最常被倒霉的团队遇上\u2014\u2014他们招惹了一头野兽的注意\u2014\u2014但也有成对出猎的。如果角色们想清剿某一地区的所有蠕虫，就必须杀入地下的巢穴，数十头神秘生物正在那里蛰伏。",
+												"死亡蠕虫会用冲击波动作和沙地斥候特性来制造带优势的攻击。只要时机安全，它们会优先消灭会飞或拥有远程能力的角色，并把腐蚀爆发留到最有利的时刻。如果蠕虫濒死，它会退入沙下再生。"
+											],
+											"id": "021"
+										},
+										{
+											"ENG_name": "Rewards",
+											"type": "entries",
+											"name": "奖励",
+											"page": 6,
+											"entries": [
+												"死亡蠕虫拥有非凡的生物能力，富有创造力的冒险者若能采取其血肉，便能收获其腐蚀性体液的馈赠。",
+												{
+													"ENG_name": "Can of Worms",
+													"type": "statblock",
+													"tag": "item",
+													"source": "Arcadia21",
+													"name": "蠕虫之罐",
+													"page": 6
+												}
+											],
+											"id": "022"
+										},
+										{
+											"ENG_name": "Death Worm",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "Arcadia21",
+											"name": "死亡蠕虫",
+											"page": 7,
+											"style": "inset"
+										}
+									],
+									"id": "01c"
+								},
+								{
+									"ENG_name": "Mothman",
+									"type": "entries",
+									"name": "天蛾人",
+									"page": 7,
+									"entries": [
+										"自20世纪60年代在西弗吉尼亚的森林中首次被报道目击以来，这只被称为天蛾人的神秘生物便通过各种{@link 电影|https://www.youtube.com/watch?v=kCanqLXcxBg}和{@link 游戏|https://www.youtube.com/watch?v=qvD20r5PTmw}俘获了大众的文化想象。这生物被描述为7尺高的有翼双足人形生物，周身覆盖深色毛发。目击者很少能在天蛾人的脸或身体细节上达成一致，但所有人都报告看到一双巨大的红色昆虫般的眼睛。而最令人不安的一点是：与天蛾人的相遇总是以悲剧收场。无论这只神秘生物在何处现身，大灾大难总会随之而来。某位目击者也许次日就会被残忍杀害，而一处多次目击的地点，可能在接下来的一周内被自然灾害夷为平地。",
+										"以天蛾人为特色的冒险有一个核心共通点：灾难倒计时。当你引入天蛾人时，先确定它的出现预示着怎样可怕的灾难事件，然后给予队伍阻止这一事件所需的工具（或者，确保事件发生的工具）。",
+										{
+											"ENG_name": "Plot Hooks",
+											"type": "entries",
+											"name": "情节钩子",
+											"page": 7,
+											"entries": [
+												"既然天蛾人的存在本身就在推动混沌的浪潮，以其为特色的冒险很少以与这只神秘生物的遭遇开场。相反，可以考虑把角色引向即将降临的灾祸之地，向他们展示某种超自然力量正在改写该地区命运的迹象。以下是一些让角色循迹追上天蛾人的种子点子：",
+												{
+													"ENG_name": "Mixed Messages",
+													"type": "entries",
+													"name": "混乱讯息",
+													"page": 7,
+													"entries": [
+														"全地区的法师、祭司、占卜师和先知在尝试使用预言魔法时都遇到了广泛的怪象。法术要么彻底失败，要么反复指向即将降临的悲剧之地。他们召集角色们调查这些异象。"
+													],
+													"id": "025"
+												},
+												{
+													"ENG_name": "String of Misfortune",
+													"type": "entries",
+													"name": "祸事连绵",
+													"page": 7,
+													"entries": [
+														"数起离奇的自然灾害蹂躏了各地的城镇。最近一次悲剧过后，事件明显遵循着某种模式，仿佛循着一条踪迹行进。若模式不变，一座繁华的城市将在仅仅三天后成为下一处废墟。"
+													],
+													"id": "026"
+												},
+												{
+													"ENG_name": "What Comes Around",
+													"type": "entries",
+													"name": "因果循环",
+													"page": 7,
+													"entries": [
+														"角色们遇到一位正在追踪红眼神秘生物的资深怪物猎人。数十年前，就是这样一只生物现身之后，猎人的家乡、朋友和家人被一场奥术风暴摧毁。经过多年搜寻，猎人终于再次听到了同样的生物在附近城镇出没的报告。"
+													],
+													"id": "027"
+												}
+											],
+											"id": "024"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00025.webp"
+											},
+											"altText": "一名手持火把的精灵被红眼的天蛾人身影卷走。",
+											"credit": "Zuzanna Wuzyk",
+											"width": 495,
+											"height": 687
+										},
+										{
+											"ENG_name": "Tactics",
+											"type": "entries",
+											"name": "战术",
+											"page": 8,
+											"entries": [
+												"天蛾人的存在本身就会造成剧烈的心理痛苦，并把命运推向最坏的结局，因此这只神秘生物往往无需一战便能带来伤害。如果冒险者试图在灾祸降临前对抗或驱离天蛾人，它会优先清除这些闯入者，再去推进它更大的目标。",
+												"天蛾人的目标是尽可能多地发放厄运指示物，同时确保自己活得够久，把三个反派动作全部用完。天蛾人一有机会命中多个生物就会使用扭转命运。它用忏悔凝视附赠动作瞄准会飞的角色，然后优先选择那些大概率豁免失败的厄运生物。"
+											],
+											"id": "028"
+										},
+										{
+											"ENG_name": "Rewards",
+											"type": "entries",
+											"name": "奖励",
+											"page": 8,
+											"entries": [
+												"击败天蛾人可以阻止悲剧降临，但与厄运调情，也可能会给你的冒险者留下一枚印记\u2014\u2014如果他们愿意的话。",
+												{
+													"ENG_name": "Spiral of Doom",
+													"type": "inset",
+													"name": "厄运漩涡",
+													"page": 8,
+													"entries": [
+														"天蛾人使其他生物染上名为{@condition 厄运|Arcadia21}的新状态。正如这个戏剧性的状态名所暗示的那样，{@condition 厄运|Arcadia21}状态带来的惩罚会迅速升级，可能将生物困入死亡漩涡。这一有意为之的设计正是天蛾人不可小觑的原因。有鉴于此，一位公正的GM在角色们尚无机会了解自己面对的是什么之前，应当克制自己，先别祭出天蛾人的全部威能。也许队伍可以在天蛾人逃走前的一次短暂遭遇中先尝尝{@condition 厄运|Arcadia21}状态的滋味，或者由某位NPC提示他们在面对这只神秘生物前多备些复原系魔法。让玩家在你挥出{@condition 厄运|Arcadia21}状态前充分理解其全部后果，不会让与天蛾人的最终对决逊色分毫。事实上，这反而更可能凸显他们可能失去的一切。"
+													],
+													"id": "02a"
+												},
+												{
+													"ENG_name": "Mark of the Damned",
+													"type": "statblock",
+													"tag": "reward",
+													"source": "Arcadia21",
+													"name": "受咒之印",
+													"page": 8
+												},
+												{
+													"ENG_name": "Doomed",
+													"type": "statblock",
+													"tag": "condition",
+													"source": "Arcadia21",
+													"name": "厄运",
+													"page": 9,
+													"style": "inset",
+													"displayName": "新状态：厄运"
+												}
+											],
+											"id": "029"
+										},
+										{
+											"ENG_name": "Mothman",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "Arcadia21",
+											"name": "天蛾人",
+											"page": 9
+										}
+									],
+									"id": "023"
+								}
+							],
+							"id": "00d"
+						}
+					],
+					"id": "005"
+				},
+				{
+					"ENG_name": "The Fiendish Regulars",
+					"type": "section",
+					"name": "魔鬼常客",
+					"page": 10,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00032.webp"
+							},
+							"width": 1229,
+							"height": 516
+						},
+						{
+							"type": "entries",
+							"page": 2,
+							"style": "text-center",
+							"entries": [
+								"{@style 他们在暗影里都做些什么？尽是别人不想干的脏活。|dnd-font;large}",
+								"作者：芭娜娜·陈"
+							],
+							"id": "02c"
+						},
+						{
+							"type": "inset",
+							"page": 10,
+							"entries": [
+								{
+									"type": "quote",
+									"entries": [
+										"在最阴森、最可怕、最骇人的小镇深处，住着一些最\"魔鬼\"的家伙。我说的不是恶魔领主，也不是怪物。我说的是那些为了几个快钱就肯坑你一把的人，或是那些喋喋不休吹捧镇领导有多伟大的人。呃，这才是你该提防的居民。"
+									],
+									"by": "珍娜·F.",
+									"from": "《最差旅游网站杂志》编辑",
+									"skipMarks": true,
+									"skipItalics": true
+								}
+							],
+							"id": "02d"
+						},
+						"有没有好奇过，恐怖位面的普通百姓在不受世间恐怖威胁时是什么模样？本文探讨了几位即插即用的NPC，适用于恐怖设定中以喜剧为导向的游戏，或只需一点轻松气氛来调剂恐怖的场合。来认识一下{@creature 迷主|Arcadia21}与其卷帙浩繁的反派同人文收藏；{@creature 末日推销员|Arcadia21}，收金币换求生装备（既然恐怖位面天天都是世界末日，这生意相当红火！）；还有邪恶反派们的{@creature 私人助理|Arcadia21|私人助理们}，对反派们唯命是从。",
+						"这些NPC会像开春头一天的土拨鼠一样，在整个邪恶战役设定中到处冒头。与土拨鼠不同的是，他们并不可爱，还可能跟着角色踏上冒险、纠缠不休。这种纠缠也许不由英雄掌控（尤其是{@creature 迷主|Arcadia21}和{@creature 私人助理|Arcadia21}的情况），但身边有这些NPC也可能有好处\u2014\u2014比如把他们用作诱饵、向导或战斗中的盟友。可这些NPC的目标到底是什么呢？",
+						{
+							"ENG_name": "Why Won't They Leave Me Alone?",
+							"type": "section",
+							"name": "他们为何不肯放过我？",
+							"page": 10,
+							"entries": [
+								"这些NPC出于种种原因缠上队伍。他们都在一个奇异而敌意的世界里挣扎求存，但除此之外还有这些动机：",
+								{
+									"type": "list",
+									"items": [
+										"迷主想宣扬恐怖位面的统治者有多么伟大。他们还想让统治者注意到自己\u2014\u2014虽然那大概永远不会发生。他们拼命想在社群里的其他迷主面前出风头，无论是靠分享冷知识，还是炫耀签过名的独家纪念品。",
+										"末日推销员的目标，是通过甜美可人的金币实现财务自由。他们的终极目标多半是提早退休、搬去阳光更充足的目的地（或者随便哪个至少能见着一点太阳的地方），然后余生慢慢啜饮鸡尾酒。",
+										"私人助理渴望自己的工作得到认可。遇见角色们后，这也许会改变\u2014\u2014随着时间推移，尤其在角色们的鼓励下，他们可能想逃离邪恶的家乡，走一条更有开创精神的路。说不定还能成为日后冒险中的伙伴NPC。"
+									]
+								},
+								"这些动机决定了这些NPC如何与队伍走到一起，以及他们为什么不继续去做......原本在做的事，而是留了下来。以下问题包含了把其中一位NPC介绍给角色们的点子：",
+								{
+									"type": "list",
+									"items": [
+										"这位NPC是否需要打动（或纠缠）某个角色，才能被接纳为队伍的一员？",
+										"是否有某个角色拥有这位NPC需要的东西\u2014\u2014无论是一件实物、金币，还是某种属性、信息或才能，能帮助这位NPC达成目标？",
+										"这位NPC是否有理由相信，这支队伍能改变这个位面的命运（无论变好还是变坏）？",
+										"是位面的统治者出于某种原因，要求这位NPC加入队伍的吗？如果是，他们为什么要替统治者办事（除了抗命可能坐牢之外）？"
+									]
+								},
+								{
+									"ENG_name": "The Ruler",
+									"type": "inset",
+									"name": "统治者",
+									"page": 11,
+									"entries": [
+										"这些NPC受另一位名为\"统治者\"的NPC影响。每个邪恶或被遗弃的位面都有一位。嗜杀、阴郁、执迷于某种病态之物\u2014\u2014你知道那类角色。有些地方那可能是个吸血鬼，另一些地方可能是腐化的君主或堕天使。每位NPC都与统治者有一段独特的关系，影响着他们性格的细微之处。"
+									],
+									"id": "02f"
+								}
+							],
+							"id": "02e"
+						},
+						{
+							"ENG_name": "The Fanlord",
+							"type": "section",
+							"name": "迷主",
+							"page": 11,
+							"entries": [
+								"{@i 呃，其实你对他们的理解全错了，因为他们显然是最棒的人，而你根本不懂，因为你是个假粉丝。}",
+								"在一座雾气弥漫的小镇的角落里，伸展的手指如蜘蛛般缓缓探出，为足尖寻找落点。瞪大的眼睛泛着绿光，搜寻着下一个倒霉的路人，好用关于这个受诅咒梦魇之境的统治者的种种\"事实\"去折磨他们。迷主不仅对其位面独裁者的一切了如指掌，还是一名{@i 非常}狂热的追随者，家里堆满了签名纪念品。哪怕他们崇拜的对象是个散播谎言与不幸、把穷苦人碾在鞋跟下（如果他们穿鞋的话）的糟糕领袖，也无关紧要\u2014\u2014在迷主眼中，那位大人是绝对不会做错的。",
+								"如同邪教信徒一般，迷主会不择手段地传播统治者的福音。他们只是更惹人烦一点\u2014\u2014因为他们还非要炫耀自己那些很酷的签名收藏卡，或是从奸商手里买来的花哨摇头娃娃，而那奸商正是利用他们对统治者不变的痴心大赚一笔。",
+								"说实话，想让迷主别再来烦你几乎不可能。除非你最终接受这位主与救世主\u2014\u2014[在此填入统治者的名字]\u2014\u2014否则这位NPC注定要跟着你直到时间尽头。或者至少，直到他们找到下一个可怜虫......或者另一个迷主为止。更好的办法是：如果你找到一群迷主，就可以把手头这个也丢给他们。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00037.webp"
+									},
+									"altText": "一名身着黑色皮衣、生着魔相的女子，手持一幅名人的画像。",
+									"credit": "Gustavo Pelissari",
+									"width": 495,
+									"height": 692
+								},
+								{
+									"ENG_name": "Plot Hooks",
+									"type": "entries",
+									"name": "情节钩子",
+									"page": 11,
+									"entries": [
+										{
+											"ENG_name": "Fanlord Plot Hooks",
+											"type": "statblock",
+											"tag": "table",
+											"source": "Arcadia21",
+											"name": "迷主情节钩子",
+											"page": 12,
+											"style": "inset"
+										}
+									],
+									"id": "031"
+								},
+								{
+									"ENG_name": "Fanlord",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "Arcadia21",
+									"name": "迷主",
+									"page": 12,
+									"style": "inset"
+								}
+							],
+							"id": "030"
+						},
+						{
+							"ENG_name": "Doomsday Salesperson",
+							"type": "section",
+							"name": "末日推销员",
+							"page": 13,
+							"entries": [
+								"{@i 你永远不知道世界什么时候完蛋，所以不妨现在就开始囤货。我们迟早都会死\u2014\u2014攥着那么多金币也没意义，对吧？}",
+								"在这个地方，每一天都可能是下一个末日。统治者不断地兴风作浪：今天对邻村开战，明天放出一罐邪恶的魔法蠕虫，要不就干脆当个老派吸血鬼。这一带流传着一句俗话：\"把每一天当成最后一天来过......因为这天真是最后一天的概率相当高。\"这句话在末日推销员中间尤其流行\u2014\u2014他们借此鼓动潜在顾客，把辛苦挣来的铜板花在花哨的反末日摇头娃娃上。",
+								"这些商贩特别擅长利用村民的不安全感。何必要赌一把对抗步步逼近的末日？不如买下这七十四双求生靴，以防前七十三双在浩劫中损坏。不过，无论他们是在蒙骗易受骗的灵魂，还是真心相信反末日打底裤的疗愈功效，大多数末日推销员并不想一辈子叫卖下去。他们真正想要的，是提早退休、攒够钱搬去别的镇子，或是终于还清债务。",
+								"英雄们可以在本地集市上找到这些商贩，或看到他们裹着塞满无用小玩意的长风衣在街头游荡。如果你恰好遇上这位NPC，而他们不知怎么觉得跟着你踏上旅途是个好主意，那请准备好领教他们全身货品发出的震耳哐当声。",
+								{
+									"ENG_name": "Plot Hooks",
+									"type": "entries",
+									"name": "情节钩子",
+									"page": 13,
+									"entries": [
+										{
+											"ENG_name": "Doomsday Salesperson Plot Hooks",
+											"type": "statblock",
+											"tag": "table",
+											"source": "Arcadia21",
+											"name": "末日推销员情节钩子",
+											"page": 14,
+											"style": "inset"
+										}
+									],
+									"id": "033"
+								},
+								{
+									"ENG_name": "Loot",
+									"type": "entries",
+									"name": "战利品",
+									"page": 13,
+									"entries": [
+										{
+											"ENG_name": "Doomsday Salesperson Loot",
+											"type": "statblock",
+											"tag": "table",
+											"source": "Arcadia21",
+											"name": "末日推销员战利品",
+											"page": 14,
+											"style": "inset"
+										}
+									],
+									"id": "034"
+								},
+								{
+									"ENG_name": "Doomsday Salesperson",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "Arcadia21",
+									"name": "末日推销员",
+									"page": 13,
+									"style": "inset"
+								}
+							],
+							"id": "032"
+						},
+						{
+							"ENG_name": "Personal Assistant",
+							"type": "section",
+							"name": "私人助理",
+							"page": 15,
+							"entries": [
+								"{@i 他们给我的报酬不多......好吧，根本不给钱，但我确实享受到不少好处。比如曝光度！听说这东西攒多了可是会死人的。}",
+								"担任这位独一无二的统治者的私人助理，是个令人艳羡的体面职位，但助理那张疲惫不堪的脸，正是对\"成功\"二字最令人沮丧的注解。他们随时听候统治者的差遣。这是他们职业生涯的悲惨巅峰，而他们心里清楚得很。",
+								"私人助理试图用一抹微笑掩盖多年的苦干和为爬到这一步而忍受的办公室倾轧，而只要一句刻薄话就足以让这笑容碎裂。他们始终与统治者保持联络\u2014\u2014其结果是，他们要么已经适应了身体的极度疲惫，要么被统治者魔法加持过，再也感觉不到疲惫。",
+								"私人助理可能会与角色们频繁互动，因为统治者要求他们\"让贵宾宾至如归\"，也就是说，他们的服务被暂时出借给了队伍。（角色们可以指望在冒险结束时收到一张账单。）视统治者的领导风格而定，他们也可能会通过助理对队伍的一举一动进行微观管理\u2014\u2014助理一边替上司记录打点，一边传达指令，活像一场灾难级的传话游戏。无论如何，这位胆怯的私人助理为能暂时离开那位可怕的上司而兴奋不已，热切地想帮角色们解决一切所需。",
+								"也许有一天\u2014\u2014但愿如此\u2014\u2014他们能逃离这份工作，踏上属于自己的冒险。但他们需要善良旅人的帮助才能梦想成真。他们可以成为一名工匠、一名吟游诗人，甚至一名士兵\u2014\u2014只要能克服对冲突的恐惧。无论他们决心做什么，都必定能够达成。",
+								{
+									"ENG_name": "Plot Hooks",
+									"type": "entries",
+									"name": "情节钩子",
+									"page": 16,
+									"entries": [
+										{
+											"ENG_name": "Personal Assistant Plot Hooks",
+											"type": "statblock",
+											"tag": "table",
+											"source": "Arcadia21",
+											"name": "私人助理情节钩子",
+											"page": 16,
+											"style": "inset"
+										}
+									],
+									"id": "036"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00058.webp"
+									},
+									"altText": "一名衣着考究、带有魔相的书记官。他手持一卷流畅展开的卷轴，随时准备提供协助。",
+									"credit": "Gustavo Pelissari",
+									"width": 495,
+									"height": 693
+								},
+								{
+									"ENG_name": "Personal Assistant",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "Arcadia21",
+									"name": "私人助理",
+									"page": 15,
+									"style": "inset"
+								}
+							],
+							"id": "035"
+						}
+					],
+					"id": "02b"
+				},
+				{
+					"ENG_name": "Puzzling Out The Devil",
+					"type": "section",
+					"name": "破解魔鬼之谜",
+					"page": 17,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00062.webp"
+							},
+							"width": 1229,
+							"height": 516
+						},
+						{
+							"type": "entries",
+							"page": 2,
+							"style": "text-center",
+							"entries": [
+								"{@style 适合任意等级角色的魔鬼主题谜题冒险|dnd-font;large}",
+								"作者：沙朗·比斯瓦斯",
+								"",
+								"{@b 内容须知：本冒险包含身体恐怖与魔鬼附身的场景。此外，主线剧情涉及一位死于难产的女性，以及尚未出柜的酷儿身份。如你有此需要，文中提供了修改这两处情节的建议。详情见冒险末尾的\"调整冒险\"与\"作者注\"两节。我们建议配合使用{@link MCDM 桌上角色扮演安全工具箱|https://mcdm.gg/SafetyToolkit}来运行本冒险，确保每个人都能玩得开心！}"
+							],
+							"id": "038"
+						},
+						{
+							"ENG_name": "The Story So Far",
+							"type": "section",
+							"name": "前情提要",
+							"page": 17,
+							"entries": [
+								"十九年前，碧姬特·斯科曼在家族宅邸中产子后奄奄一息。她的丈夫艾里克·斯科曼久来痴迷于神秘学、闹鬼与魔鬼契约的种种传说，便凭着这点浅薄的知识呼唤了一名叫做尼穆克尼穆尔帕尔的魔鬼，并与它做了一笔交易。\"没有妻子在身边，我和新生儿都活不下去。\"这位无助的男人哀求道。魔鬼答应帮忙，却要求斯科曼家的新生儿约翰\"熟透\"之后归它所有。艾里克以为自己有大把时间找办法脱身，便答应了。",
+								"然而出乎艾里克的意料，碧姬特还是死了，而尼穆克尼穆尔帕尔把她一缕迷茫的魂魄缚在了旧卧室里\u2014\u2014严守了契约的字面，却违背了它的精神。每隔几天，碧姬特会恢复片刻清明，让艾里克能与她交谈。这位鳏夫睡在客房，除了约翰和管家蕾娅，没有人知道碧姬特魂魄的存在。",
+								{
+									"ENG_name": "Johann's Devotion",
+									"type": "entries",
+									"name": "约翰的深情",
+									"page": 17,
+									"entries": [
+										"两年前，十七岁的约翰爱上了一位名叫拉克斯曼的年轻人\u2014\u2014著名驱魔师\"光明者鲁赫玛尼\"的学徒。两人开始了一段秘密恋情，但好景不长，鲁赫玛尼便带上学徒，踏上了归期未定的旅程。",
+										"就在昨天，鲁赫玛尼和拉克斯曼在离开近一年后归来。约翰为能再见到秘密恋人而欣喜若狂，说服父亲邀请这位年轻学徒来家晚餐，打算第一次公开这段关系。可当约翰在父亲面前对拉克斯曼说出\"我爱你\"时，尼穆克尼穆尔帕尔也在场\u2014\u2014它是一位无人得见的目击者。",
+										"魔鬼长年盘踞在斯科曼宅中，等着收取约翰灵魂的那一刻；此刻它看出约翰情感上的脆弱使他易于被附身，便抓住了机会。邪魔迅速附上约翰并袭击拉克斯曼，但这名学徒用师从鲁赫玛尼学来的知识暂时压制住了魔鬼，随即冲出门去搬请驱魔大师。"
+									],
+									"id": "03a"
+								},
+								{
+									"ENG_name": "Fiendish Revenge",
+									"type": "entries",
+									"name": "邪魔的报复",
+									"page": 17,
+									"entries": [
+										"鲁赫玛尼和拉克斯曼整夜奋战，想把邪魔从约翰身上剥离。他们先在宅子的地下室画了一座符文囚牢法阵，将被附身的约翰困于其中。随后两人开始绘制一座与囚牢法阵相连的符文法图，法图一旦完成，就能把尼穆克尼穆尔帕尔驱出约翰的身体。",
+										"然而疲惫袭来，拉克斯曼被自己随手乱放的仪式刀绊倒，一头撞上鲁赫玛尼，把她撞进了困着魔鬼的法阵。尼穆克尼穆尔帕尔扑向驱魔师，扭断了她的脖颈。悲恸欲绝的拉克斯曼把鲁赫玛尼的遗体拖出法阵，所幸没有扰动墨绘于地面的符文。他此刻呆立当场，目光在恩师的尸体与魔鬼借恋人面容摆出的狰狞面孔之间游移。",
+										"对尼穆克尼穆尔帕尔的缚束将在黎明失效。",
+										{
+											"ENG_name": "Father-Son Secrets",
+											"type": "inset",
+											"name": "父子间的秘密",
+											"page": 18,
+											"entries": [
+												"艾里克·斯科曼恐同吗？完全不。约翰担心向父亲出柜吗？绝对担心！",
+												"异性恋父母的孩子担心家人对自己的性向有所评判，这并不罕见\u2014\u2014即便慈爱的父母从未表现出在意这类问题。这是一团纠缠着家庭期望、父权制、男性被赋予的角色、内化的恐同以及许多其他因素的乱麻。",
+												"在这个故事里，约翰想守住自己的秘密，并一直在等到他觉得时机成熟，再向父亲出柜。关于角色扮演这一主题的更多讨论与指引，见冒险末尾的\"作者注\"。"
+											],
+											"id": "03c"
+										}
+									],
+									"id": "03b"
+								}
+							],
+							"id": "039"
+						},
+						{
+							"ENG_name": "Adventure Summary",
+							"type": "section",
+							"name": "冒险摘要",
+							"page": 18,
+							"entries": [
+								"借助下文\"故事钩子\"一节中的任一开场，角色们来到斯科曼宅的地下室。要拯救约翰，他们必须补全与符文囚牢法阵相连的六角形法图，完成驱魔仪式。鲁赫玛尼的笔记、拉克斯曼的协助、宅中发现的关于约翰生活与个性的线索，以及对旁人的问询，都会助他们一臂之力。角色们完成仪式后，尼穆克尼穆尔帕尔的实体将在他们面前显现，准备一战。",
+								{
+									"ENG_name": "Setting",
+									"type": "entries",
+									"name": "设定",
+									"page": 18,
+									"entries": [
+										"本冒险发生在斯科曼家族宅邸\u2014\u2014一栋两层砖房，爬满常春藤，带一间地下室，任何还算殷实的城镇里都可能有这样的宅子。由于本冒险并非逐屋探索，具体布局并不重要。你唯一需要保持不变的重要细节，是特定地点能找到的线索（见冒险后文的\"线索与情报\"）。"
+									],
+									"id": "03e"
+								},
+								{
+									"ENG_name": "Guidance",
+									"type": "entries",
+									"name": "运行指引",
+									"page": 18,
+									"entries": [
+										"本冒险适合喜爱阅读、演绎推理与逻辑思考的玩家。这些谜题需要对书面英语有扎实的把握。不过，本冒险也包含相当分量的社交互动。",
+										"除了结尾的战斗和零星几项属性检定，这并不是一场动作密集的冒险。预计玩家们会花时间研究玩家讲义，彼此讨论可能的解法。鼓励他们做笔记，也鼓励他们在需要时随时要求你复述信息。",
+										"请事先熟记各谜题的解法与推导逻辑。这不是能靠临场发挥轻松运行的冒险！为你自己也打印一份玩家讲义也会很有帮助，这样运行冒险时就不必在文本间来回翻找。这些玩家讲义，以及一份供你追踪谜题的\"GM速查表\"，都收录在本文末尾的\"玩家讲义\"一节。"
+									],
+									"id": "03f"
+								}
+							],
+							"id": "03d"
+						},
+						{
+							"ENG_name": "Dramatis Personae",
+							"type": "section",
+							"name": "出场人物",
+							"page": 18,
+							"entries": [
+								"以下NPC在冒险中扮演重要角色。关于每位NPC能提供哪些帮助角色解谜的信息，详见\"线索与情报\"一节。",
+								{
+									"ENG_name": "Eirik Skorman",
+									"type": "entries",
+									"name": "艾里克·斯科曼",
+									"page": 18,
+									"entries": [
+										"{@i （EYE-rick，他/他，混乱善良{@homebrew 兽人|半兽人}）}{@note 纯正兽人，非半兽人}",
+										{
+											"type": "quote",
+											"entries": [
+												"\"总会有办法的。也许和你想的不一样，但办法总是有的！\""
+											]
+										},
+										"艾里克是一位身板结实、正值中年的纺织品商人，生意让他忙得团团转。他既深爱着自己的儿子，又为曾与魔鬼做交易而深以为耻，两种情感撕扯着他。他常去探访亡妻的幽魂寻求慰藉，却又无法回避目睹她如今这副模样时的恐惧。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Signature Look",
+													"type": "entries",
+													"name": "招牌外形",
+													"page": 18,
+													"entries": [
+														"艾里克的两只耳朵上都有多处穿孔，穿孔间编织着他自己头发的发辫。"
+													],
+													"id": "043"
+												},
+												{
+													"ENG_name": "Personality",
+													"type": "entries",
+													"name": "个性",
+													"page": 18,
+													"entries": [
+														"艾里克粗鲁而务实。他非常聪明，说话简短干脆。"
+													],
+													"id": "044"
+												},
+												{
+													"ENG_name": "Game Statistics",
+													"type": "entries",
+													"name": "游戏数据",
+													"page": 18,
+													"entries": [
+														"{@creature 艾里克·斯科曼|Arcadia21|艾里克使用贵族的数据块。}"
+													],
+													"id": "045"
+												}
+											],
+											"id": "042"
+										}
+									],
+									"id": "041"
+								},
+								{
+									"ENG_name": "Johann Skorman",
+									"type": "entries",
+									"name": "约翰·斯科曼",
+									"page": 18,
+									"entries": [
+										"{@i （YO-haan，他/他，守序善良半兽人）}",
+										{
+											"type": "quote",
+											"entries": [
+												"\"嘿！跟我说说你最近都在为什么兴奋！\""
+											]
+										},
+										"约翰是个英俊的年轻半兽人，人生规划得明明白白。他想求学成为一名医者或外科医师，并与正在接受驱魔师训练的男友拉克斯曼一同旅行。只有两件心事横在他面前：他担心父亲无法接受自己的性取向，也总在好奇已故的母亲在变成幽影之前是个怎样的人。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Signature Look",
+													"type": "entries",
+													"name": "招牌外形",
+													"page": 19,
+													"entries": [
+														"约翰下唇探出的两根小獠牙上纹着鲜艳的蓝色刺青。"
+													],
+													"id": "048"
+												},
+												{
+													"ENG_name": "Personality",
+													"type": "entries",
+													"name": "个性",
+													"page": 19,
+													"entries": [
+														"约翰平日自信、有创造力、对生活充满热情。在被附身的直接余波中，他会昏沉而迷乱。"
+													],
+													"id": "049"
+												},
+												{
+													"ENG_name": "Game Statistics",
+													"type": "entries",
+													"name": "游戏数据",
+													"page": 19,
+													"entries": [
+														"{@creature 约翰·斯科曼|Arcadia21|约翰使用平民的数据块。}"
+													],
+													"id": "04a"
+												}
+											],
+											"id": "047"
+										}
+									],
+									"id": "046"
+								},
+								{
+									"ENG_name": "Laxman",
+									"type": "entries",
+									"name": "拉克斯曼",
+									"page": 19,
+									"entries": [
+										"{@i （LUKSH-mun，他/他，守序善良提夫林）}",
+										{
+											"type": "quote",
+											"entries": [
+												"\"都是我的错！对不起！主人，原谅我！\""
+											]
+										},
+										"拉克斯曼是著名驱魔师\"光明者鲁赫玛尼\"的勤勉学徒，对恩师敬若神明。他与约翰·斯科曼深深相爱，但为了约翰着想，一直对两人的关系保密。他能力不俗，却还不习惯独当一面。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Signature Look",
+													"type": "entries",
+													"name": "招牌外形",
+													"page": 19,
+													"entries": [
+														"拉克斯曼的双角间缠着银链，垂挂着其他摇曳的饰物。"
+													],
+													"id": "04d"
+												},
+												{
+													"ENG_name": "Personality",
+													"type": "entries",
+													"name": "个性",
+													"page": 19,
+													"entries": [
+														"拉克斯曼平日勤奋好学、对学业满怀热忱，但约翰被附身一事令他大受打击，开始怀疑自己的能力。"
+													],
+													"id": "04e"
+												},
+												{
+													"ENG_name": "Game Statistics",
+													"type": "entries",
+													"name": "游戏数据",
+													"page": 19,
+													"entries": [
+														"{@creature 拉克斯曼|Arcadia21|拉克斯曼使用侍僧的数据块。}"
+													],
+													"id": "04f"
+												}
+											],
+											"id": "04c"
+										}
+									],
+									"id": "04b"
+								},
+								{
+									"ENG_name": "Leia",
+									"type": "entries",
+									"name": "蕾娅",
+									"page": 19,
+									"entries": [
+										"{@i （LAY-ah，她/她，守序中立矮人）}",
+										{
+											"type": "quote",
+											"entries": [
+												"\"斯科曼一家是好人！他们没有做错任何事！\""
+											]
+										},
+										"数十年来，蕾娅一直是斯科曼家忠心耿耿、护主心切的女管家。约翰被附身一事考验着她一贯的谨言慎行。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Signature Look",
+													"type": "entries",
+													"name": "招牌外形",
+													"page": 19,
+													"entries": [
+														"蕾娅对非宝石类的石头着迷，身上戴着许多岩石首饰。"
+													],
+													"id": "052"
+												},
+												{
+													"ENG_name": "Personality",
+													"type": "entries",
+													"name": "个性",
+													"page": 19,
+													"entries": [
+														"蕾娅平日羞怯内敛，说话轻声细语，不直视他人。但一旦涉及捍卫斯科曼一家，她就会变得凶悍逼人。"
+													],
+													"id": "053"
+												},
+												{
+													"ENG_name": "Game Statistics",
+													"type": "entries",
+													"name": "游戏数据",
+													"page": 19,
+													"entries": [
+														"{@creature 蕾娅|Arcadia21|蕾娅使用平民的数据块。}"
+													],
+													"id": "054"
+												}
+											],
+											"id": "051"
+										}
+									],
+									"id": "050"
+								},
+								{
+									"ENG_name": "Birgitte Skorman",
+									"type": "entries",
+									"name": "碧姬特·斯科曼",
+									"page": 19,
+									"entries": [
+										"{@i （BER-GEET-uh，她/她，无阵营人类灵魂）}",
+										{
+											"type": "quote",
+											"entries": [
+												"\"有客人来真是太好啦。蕾娅，把孩子抱来！客人们想见见他！\""
+											]
+										},
+										"这个灵魂既非真正的幽魂，也非碧姬特本人的残念。她拥有碧姬特的部分智识与记忆，却无法进行完整的对话，也无法产生原创的想法。她由尼穆克尼穆尔帕尔创造，唯一的目的就是造成情感上的痛苦。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Signature Look",
+													"type": "entries",
+													"name": "招牌外形",
+													"page": 19,
+													"entries": [
+														"碧姬特化身为一副血红色的半透明影像，形似一位健壮敦实的人类女性。"
+													],
+													"id": "057"
+												},
+												{
+													"ENG_name": "Personality",
+													"type": "entries",
+													"name": "个性",
+													"page": 19,
+													"entries": [
+														"碧姬特的灵魂很容易分心，话题跳来跳去。她也许会回答问题......有时候。"
+													],
+													"id": "058"
+												},
+												{
+													"ENG_name": "Game Statistics",
+													"type": "entries",
+													"name": "游戏数据",
+													"page": 19,
+													"entries": [
+														"{@creature 碧姬特·斯科曼|Arcadia21|碧姬特使用恶灵的数据块。}"
+													],
+													"id": "059"
+												}
+											],
+											"id": "056"
+										}
+									],
+									"id": "055"
+								},
+								{
+									"ENG_name": "Nimuchnimurpal",
+									"type": "entries",
+									"name": "尼穆克尼穆尔帕尔",
+									"page": 19,
+									"entries": [
+										"{@i （nim-UK-nim-UR-paal，他们/她们 [性别不明]，守序邪恶邪魔）}",
+										{
+											"type": "quote",
+											"entries": [
+												"\"把你的悲伤都淹进我的身体里吧。\""
+											]
+										},
+										"尼穆克尼穆尔帕尔又称污海之主，是一头与恶臭毒水相调的魔鬼。其权能影响深远，而这名邪魔酷爱做交易\u2014\u2014交易的结局，往往是一个个前途无量的年轻灵魂被困在九狱某一层泡水的土牢里。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Signature Look",
+													"type": "entries",
+													"name": "招牌外形",
+													"page": 19,
+													"entries": [
+														"尼穆克尼穆尔帕尔化形为一个覆满鱼鳞的瘦削人形，长发如海藻般垂落。污水不断从其身体上滴落。"
+													],
+													"id": "05c"
+												},
+												{
+													"ENG_name": "Personality",
+													"type": "entries",
+													"name": "个性",
+													"page": 19,
+													"entries": [
+														"对凡人而言，尼穆克尼穆尔帕尔与其他大多数邪魔一样高深莫测。说话时，他们会毫无预兆地在凶残、语无伦次和甜言蜜语之间来回切换。"
+													],
+													"id": "05d"
+												},
+												{
+													"ENG_name": "Game Statistics",
+													"type": "entries",
+													"name": "游戏数据",
+													"page": 19,
+													"entries": [
+														"本冒险适用于所有等级的游戏，结尾的战斗遭遇并非重点。因此，你可以任选一个挑战等级与尼穆克尼穆尔帕尔相称的魔鬼数据块，然后按你的意愿对数据块做如下调整：",
+														{
+															"type": "list",
+															"items": [
+																"该魔鬼免疫{@condition 魅惑}、{@condition 恐慌}和{@condition 麻痹}状态。",
+																"该魔鬼的攻击造成寒冷或毒素伤害，而非其原本的伤害类型。",
+																"该魔鬼可以呼吸空气与水，且游泳速度等同于其步行速度。"
+															]
+														}
+													],
+													"id": "05e"
+												}
+											],
+											"id": "05b"
+										}
+									],
+									"id": "05a"
+								},
+								{
+									"ENG_name": "Rukhmani the Illuminated",
+									"type": "entries",
+									"name": "光明者鲁赫玛尼",
+									"page": 19,
+									"entries": [
+										"{@i （ROOKH-mun-ee，她/她，半精灵）}",
+										"鲁赫玛尼是一位高挑醒目的半精灵，曾是游历四方、扶危济困的著名驱魔师，并借此推进她对恶魔与魔鬼的研究。拉克斯曼的昔日恩师如今已经亡故，但她的笔记与影响在冒险中扮演着重要角色。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Signature Look",
+													"type": "entries",
+													"name": "招牌外形",
+													"page": 19,
+													"entries": [
+														"鲁赫玛尼身着的长袍，宛如泥金装饰手抄本上五彩斑斓的页边饰画。"
+													],
+													"id": "061"
+												}
+											],
+											"id": "060"
+										}
+									],
+									"id": "05f"
+								}
+							],
+							"id": "040"
+						},
+						{
+							"ENG_name": "Story Hooks",
+							"type": "section",
+							"name": "故事钩子",
+							"page": 20,
+							"entries": [
+								"你可以用以下钩子把角色们引入冒险，也可以从中汲取灵感，自创钩子：",
+								{
+									"type": "list",
+									"items": [
+										"鲁赫玛尼和拉克斯曼还在奋力拯救他的儿子，而黎明迫近，艾里克派蕾娅出去搬救兵。这位老矮人可以直接联络角色们，也可能有一位认识角色们的NPC熟人，代斯科曼家向他们求助。",
+										"一位祭司、法师或其他施法者察觉到斯科曼宅中一股强大邪魔的显现，请求角色们前去调查。",
+										"路过斯科曼宅时，角色们闻到熏香与硫磺的气味，还听见屋内传出尖叫、狂笑、呛咳声，以及某人吟诵咒文的声音。那是鲁赫玛尼临死前试图驱赶魔鬼的声音。"
+									]
+								},
+								{
+									"ENG_name": "Necromancy?",
+									"type": "inset",
+									"name": "死灵法术？",
+									"page": 20,
+									"entries": [
+										"光明者鲁赫玛尼树敌众多，其中随便哪一位，要困住她的灵魂或复活她的遗体，都既无顾忌也无难处。为防此类情况，这位驱魔大师经受过许多保护性的魔法程序与仪式。不幸的是，那些防护魔法无法分辨复活或联系她灵魂的尝试是善意还是恶意。",
+										"如果角色们谈起复活鲁赫玛尼或与她的灵魂沟通，拉克斯曼会告诉他们，她受魔法保护、不受此类影响，而且尝试这类做法可能招致致命后果。在检视鲁赫玛尼遗体时，成功通过{@dc 17}智力（{@skill 奥秘}）检定的角色，或使用{@spell 侦测魔法}法术的角色，将获悉以下信息：",
+										{
+											"type": "list",
+											"items": [
+												"除{@spell 祈愿术}外，任何用于与鲁赫玛尼灵魂沟通或复活其遗体的魔法均自动失败。",
+												"使用{@spell 死者复活}、{@spell 死者交谈}或类似魔法，以鲁赫玛尼的遗体或灵魂为目标的生物，受到55（{@damage 10d10}）点心灵伤害，获得三级{@condition 力竭}，且必须进行一次{@dc 20}魅力豁免。豁免失败者，施法者的灵魂会被拽出躯体，囚入一处只有鲁赫玛尼（以及拉克斯曼，由你裁量）知道的秘密地点。"
+											]
+										}
+									],
+									"id": "063"
+								}
+							],
+							"id": "062"
+						},
+						{
+							"ENG_name": "Starting the Adventure",
+							"type": "section",
+							"name": "开始冒险",
+							"page": 20,
+							"entries": [
+								"无论角色们如何来到斯科曼宅，冒险都从他们步入地下室开始：拉克斯曼站在鲁赫玛尼新遭谋杀的遗体旁，惊愕地盯着被附身的约翰。直到角色们开口或以其他方式引起他的注意，这位驱魔学徒才察觉到他们。如果他们伸出援手或询问缘由，拉克斯曼会惶恐地自我介绍，并透露以下信息：",
+								{
+									"type": "list",
+									"items": [
+										"斯科曼一家是拉克斯曼和他的恩师\"光明者鲁赫玛尼\"女士的友人。昨夜拉克斯曼登门拜访，约翰便被一个魔鬼附了身。",
+										"拉克斯曼设法暂时压制了魔鬼，随后请来了鲁赫玛尼。",
+										"两位驱魔师整夜施救。鲁赫玛尼主持驱魔，囚牢法阵中的所有符文都出自她手。拉克斯曼只是照吩咐行事。",
+										"鲁赫玛尼在绘制一座与符文囚牢法阵相连的法图时发生了意外，魔鬼杀死了她。",
+										"伤害约翰不会伤到魔鬼。杀死约翰却会让邪魔以血肉之躯进入物质位面。"
+									]
+								},
+								"拉克斯曼不知道艾里克的魔鬼契约，也不知道碧姬特的魂魄。此外，他不愿透露自己与约翰的恋人关系，因为约翰要他保密，直到自己准备好告诉父亲。",
+								{
+									"ENG_name": "Talking with Laxman",
+									"type": "entries",
+									"name": "与拉克斯曼交谈",
+									"page": 20,
+									"entries": [
+										"拉克斯曼认为鲁赫玛尼之死是自己造成的，这份愧疚让他坚信，自己参与拯救约翰只会越帮越忙。你可以视情况让他提供一些心不在焉的建议或谜题提示，但他不会主动给出完整答案，也不会采取其他行动，只因害怕\"再犯一次错、再害死一个人\"。",
+										"如果角色们即将做某件明显的蠢事\u2014\u2014比如踏入或扰动符文囚牢法阵、攻击约翰、或与死去的鲁赫玛尼交谈（见\"死灵法术？\"边栏）\u2014\u2014拉克斯曼会出言警告。而随着角色们与这位学徒展开得当的角色扮演，他还有更多可谈。见冒险后文\"线索与情报\"一节中的\"拉克斯曼所知\"。"
+									],
+									"id": "065"
+								},
+								{
+									"ENG_name": "Interacting with Nimuchnimurpal",
+									"type": "entries",
+									"name": "与尼穆克尼穆尔帕尔周旋",
+									"page": 21,
+									"entries": [
+										"如果角色们试图与约翰体内的尼穆克尼穆尔帕尔搭话，邪魔会大笑、嘶嘶作响、龇出牙齿，同时把这具年轻男子的身体拧成种种可怖的扭曲姿态。这些姿势不会伤害约翰，却令人不适。在角色们尝试驱魔期间，尼穆克尼穆尔帕尔可能会择机开口，详见\"线索与情报\"。",
+										"尼穆克尼穆尔帕尔无法离开符文囚牢法阵。被缚于法阵之内时，用{@creature 尼穆克尼穆尔帕尔|Arcadia21|邪魔使用狂战士的数据块}来表示它对约翰身体的掌控。约翰虽未持械，却受邪魔强化，拥有一项命中加值为{@hit 5}的徒手打击攻击，造成9（{@damage 1d12 + 3}）点钝击伤害。"
+									],
+									"id": "066"
+								}
+							],
+							"id": "064"
+						},
+						{
+							"ENG_name": "Introducing the Puzzles",
+							"type": "section",
+							"name": "谜题引入",
+							"page": 21,
+							"entries": [
+								"与拉克斯曼初次交谈后，这位年轻学徒把角色们引到绘于地面、以墨线连着符文囚牢法阵的六角形法图前。拉克斯曼解释说，囚牢法阵缚住了尼穆克尼穆尔帕尔。鲁赫玛尼本已开始绘制法图所需的符文\u2014\u2014法图将为一道仪式供能，把尼穆克尼穆尔帕尔驱出约翰的身体，并在一段时间内阻止邪魔附身他人。她原计划在那段时间里对抗魔鬼并将其消灭。",
+								"拉克斯曼颤声解释道，法图包含四个必须补全的要素，以便为驱魔仪式完成校准。他说，驱魔仪式会把魔鬼驱逐出来，届时无论如何都得与它一战，但法阵每正确补全一部分，魔鬼的力量就会被削弱一分。拉克斯曼知道这四个要素是什么，却不知道如何补全：",
+								{
+									"type": "list",
+									"items": [
+										"一座{@b 弹射符文}的三角阵缺了一枚符文，必须补全才能把魔鬼驱出约翰的身体。这些符文依循基础魔法原理来选择。",
+										"一圈{@b 稳定符文}缺了四枚关键符文。这些符文引导并定向那股将魔鬼与宿主剥离的魔法。符文的抉择取决于情境与环境因素。",
+										"一组{@b 锚定符文}尚未动笔。它在邪魔被驱出躯体时，帮助固定受害者的心智。这些符文的选择完全取决于受害者的个性、希望与梦想；鲁赫玛尼生前正是在研究约翰，以便选出正确的符文。",
+										"一圈{@b 效能符文}已经画好，但需要达成元素平衡才能有效运作。这些符文振作法图中的魔力，以压倒邪魔。"
+									]
+								},
+								"角色们可以按任意顺序、同时或依次处理法图谜题的不同部分。法图补全后，他们需要举行一场驱魔仪式。仪式一旦成功，尼穆克尼穆尔帕尔将以真正的邪魔之形显现，必须与之交战。",
+								{
+									"ENG_name": "Getting the Documents",
+									"type": "entries",
+									"name": "取得文献",
+									"page": 21,
+									"entries": [
+										"说明完谜题的范围后，拉克斯曼把四份文献交给角色们，说道：\"这些是我和鲁赫玛尼的部分笔记......可我觉得，光靠我自己没法把符文补完......\"这些文献已作为{@book 玩家讲义|Arcadia21|4|玩家讲义}附于本冒险末尾，应当分发给玩家：",
+										{
+											"type": "list",
+											"items": [
+												"拉克斯曼关于弹射的笔记，用于\"谜题一：弹射符文\"",
+												"一篇稳定符文专著中的一页，用于\"谜题二：稳定符文\"",
+												"鲁赫玛尼日记的一部分，用于\"谜题三：锚定符文\"",
+												"一页拉克斯曼批注过的作业，用于\"谜题四：效能符文\""
+											]
+										},
+										"各谜题小节都完整说明了交给角色们的笔记内容。",
+										"\"未完成的符文法图\"讲义中的图示也应发给玩家，尽管它并非角色们收到的文献。这张图代表的是角色们抵达地下室时，未完成法图的实际状态。玩家应当把谜题解法写在这份图上。",
+										"（\"GM速查表\"一节中的图示不是给玩家的。它是一份便利的谜题速查表，也是你做笔记的地方！）",
+										"如果玩家们一头雾水、不知从何下手，拉克斯曼会向角色们建议从弹射符文开始，因为那一部分已近乎完成，只需借助他的笔记便能想通。",
+										{
+											"ENG_name": "Documents in the Fiction",
+											"type": "inset",
+											"name": "虚构世界中的文献",
+											"page": 22,
+											"entries": [
+												"分发讲义时，告诉玩家们：角色们实际收到的是更多的一叠文件，稍加研读便能找出最相关的材料，讲义代表的正是这些材料。",
+												"此外，角色们可以放心：这些文献和法图已尽拉克斯曼与鲁赫玛尼之力做到准确。所有文献都不存在故意的错误，只有那些需要角色与玩家补全的缺漏。拉克斯曼再三强调，鲁赫玛尼是\u2014\u2014曾经是\u2014\u2014一位以不犯错误著称的知名驱魔师。"
+											],
+											"id": "069"
+										}
+									],
+									"id": "068"
+								}
+							],
+							"id": "067"
+						},
+						{
+							"ENG_name": "Puzzle 1: Ejection Runes",
+							"type": "section",
+							"name": "谜题一：弹射符文",
+							"page": 22,
+							"entries": [
+								"要补全弹射符文，角色们必须在法图的三角形右下角添上一枚符文。拉克斯曼的笔记能引导角色们走向答案。请将\"拉克斯曼的笔记\"讲义与本节的信息对照阅读。这些虽是拉克斯曼自己的笔记，但他正处于休克状态，对再犯一次错误怕得要命。他或许能给出部分见地，却无法替角色们解出答案。",
+								{
+									"ENG_name": "Puzzle 1 Solution",
+									"type": "entries",
+									"name": "谜题一解法",
+									"page": 22,
+									"entries": [
+										"bhansari符文必须绘于三角形的右下角。",
+										"本谜题的提示可在地下室和书房中找到，也可通过与拉克斯曼交谈获得（见\"线索与情报\"）。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00077.webp"
+											},
+											"expectsLightBackground": true,
+											"title": "谜题一解法",
+											"credit": "Grace Cheung",
+											"width": 495,
+											"height": 43
+										}
+									],
+									"id": "06b"
+								},
+								{
+									"ENG_name": "Reasoning",
+									"type": "entries",
+									"name": "推理解析",
+									"page": 22,
+									"entries": [
+										"借助拉克斯曼笔记中的信息，角色们可以循以下推理得出谜题的答案：",
+										{
+											"type": "list",
+											"items": [
+												"符文必须总是绘于图形的顶点上。三角形的三个角中已有两角绘有符文，因此新符文必须落在唯一空着的角上。",
+												"一角上可见strigma符文，因此尼穆克尼穆尔帕尔必是\"4\u20135型实体\"。",
+												"riktin符文清晰可见，说明魔鬼对约翰的掌控纯属心灵层面，不存在任何身体形变。"
+											]
+										},
+										"因此，对应中等型实体与纯心灵侵染的bhansari符文就是答案。"
+									],
+									"id": "06c"
+								},
+								{
+									"ENG_name": "Secret Hint",
+									"type": "entries",
+									"name": "秘密提示",
+									"page": 22,
+									"entries": [
+										"文献的右下角出现着首字母\"JS\"。这是拉克斯曼想男友想得出神时的随手涂鸦，也是关于两位年轻人关系本质的一条线索。"
+									],
+									"id": "06d"
+								},
+								{
+									"ENG_name": "Penalty for Failure",
+									"type": "entries",
+									"name": "失败惩罚",
+									"page": 22,
+									"entries": [
+										"若角色们未能在正确位置放置正确的弹射符文，那么当尼穆克尼穆尔帕尔被驱出约翰的身体时（见冒险后文\"对抗魔鬼\"），邪魔之力的束缚将不完善：",
+										{
+											"type": "list",
+											"items": [
+												"若符文放错了位置，将触发\"双向能量对冲\"事件（属\"谜题专属事件\"）。",
+												"若用错了符文，尼穆克尼穆尔帕尔将获得钻心之言动作（详见\"谜题专属特性\"）。"
+											]
+										}
+									],
+									"id": "06e"
+								}
+							],
+							"id": "06a"
+						},
+						{
+							"ENG_name": "Puzzle 2: Stabilization Runes",
+							"type": "section",
+							"name": "谜题二：稳定符文",
+							"page": 22,
+							"entries": [
+								"交给角色们的稳定符文专著，出自\"芳馨真谛秘社\"\u2014\u2014一个驱魔师教团\u2014\u2014成员之手。角色们必须借助专著中的信息，把四枚缺失的稳定符文按正确顺序放入法图，组成完整的六符文之环。请将\"稳定符文专著\"讲义与本节信息对照阅读。",
+								{
+									"ENG_name": "Puzzle 2 Solution",
+									"type": "entries",
+									"name": "谜题二解法",
+									"page": 22,
+									"entries": [
+										"以下符文应置于内环之外，从右上角起按顺时针排列：",
+										{
+											"type": "list",
+											"items": [
+												"星辰与太阳处于阈限合相：thrimsan为右上符文。",
+												"诸位面处于罗什尼对齐：kauravi为右下符文。",
+												"能量鸟类压制爬虫类：thilmtha为左下符文。",
+												"约翰的体质属星形：vavupatna为左上符文。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00080.webp"
+											},
+											"expectsLightBackground": true,
+											"title": "谜题二常规解法",
+											"credit": "Grace Cheung",
+											"width": 357,
+											"height": 310
+										}
+									],
+									"id": "070"
+								},
+								{
+									"ENG_name": "Reasoning",
+									"type": "entries",
+									"name": "推理解析",
+									"page": 23,
+									"entries": [
+										"专著要求四枚符文，而唯一能画下四枚符文的位置是沿圆周的弧线。符文须如专著所述，从I到IV按顺时针次序书写，并沿圆周均匀分布。",
+										"角色们可以通过一系列属性检定来确定正确的符文，每项检定对应一枚缺失符文。当有角色检定成功时，把相应的叙事信息告诉他，让他自行推出符文。例如，告诉玩家们观测天象显示星辰正与太阳处于阈限合相，但不要直接点明正确的符文是thrimsan。",
+										{
+											"ENG_name": "Rune I",
+											"type": "entries",
+											"name": "符文I",
+											"page": 23,
+											"entries": [
+												"成功通过{@dc 15}智力（{@skill 自然}）或感知（{@skill 求生}）检定的角色，知道星辰正与太阳处于阈限合相（一种古老的天文格局）。"
+											],
+											"id": "072"
+										},
+										{
+											"ENG_name": "Rune II",
+											"type": "entries",
+											"name": "符文II",
+											"page": 23,
+											"entries": [
+												"成功通过{@dc 15}智力（{@skill 奥秘}）或感知（{@skill 宗教}）检定的角色，回忆起关于上层位面的传说，确认诸位面当前的对齐正对应专著所说的\"罗什尼对齐\"。"
+											],
+											"id": "073"
+										},
+										{
+											"ENG_name": "Rune III",
+											"type": "entries",
+											"name": "符文III",
+											"page": 23,
+											"entries": [
+												"成功通过{@dc 15}智力（{@skill 自然}）或感知（{@skill 驯兽}）检定的角色，对当地植物群了解足够深，能判断能量鸟类比爬虫类更占优势。"
+											],
+											"id": "074"
+										},
+										{
+											"ENG_name": "Rune IV",
+											"type": "entries",
+											"name": "符文IV",
+											"page": 23,
+											"entries": [
+												"成功通过{@dc 15}智力（{@skill 医药}）或{@dc 18}感知（{@skill 求生}）检定的角色，知道\"星形\"是一种给约翰这等体格与面色分类的古老说法。"
+											],
+											"id": "075"
+										},
+										{
+											"ENG_name": "Abilities and Skills",
+											"type": "inset",
+											"name": "属性与技能",
+											"page": 23,
+											"entries": [
+												"本冒险在少数几处采用了不那么常见的属性与技能组合，比如要求进行智力（{@skill 医药}）检定，而非通常的感知（{@skill 医药}）检定。这体现了不同谜题所涉信息的特殊本质，以及角色为解谜可能动用的不同思维与观察方式。"
+											],
+											"id": "076"
+										}
+									],
+									"id": "071"
+								},
+								{
+									"ENG_name": "Alternative Solution",
+									"type": "entries",
+									"name": "替代解法",
+									"page": 23,
+									"entries": [
+										"如果角色们在一项或多项属性检定上失败，他们可以猜测该用哪枚符文，也可以使用专著中较简单符文的表格。如果角色们自己想不到这一层，就由你向一位学术或魔法背景合适的角色点破。使用较简单的字形比画错符文风险小，但也不如正确的符文有力。",
+										"角色们使用较简单符文时，请遵循以下指引：",
+										{
+											"type": "list",
+											"items": [
+												"只使用较简单字形时，按顺时针次序，解法为I：atyavasam，II：bhilma，III：riptu，IV：svangetharumna。",
+												"角色们可以混用常规符文与较简单符文。",
+												"每使用一枚较简单符文，尼穆克尼穆尔帕尔就获得一次新手错误附赠动作的使用机会（见\"对抗魔鬼\"中的\"谜题专属特性\"）。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00083.webp"
+											},
+											"expectsLightBackground": true,
+											"title": "谜题二替代解法",
+											"credit": "Grace Cheung",
+											"width": 357,
+											"height": 309
+										}
+									],
+									"id": "077"
+								},
+								{
+									"ENG_name": "Penalty for Failure",
+									"type": "entries",
+									"name": "失败惩罚",
+									"page": 23,
+									"entries": [
+										"稳定符文的安放若出任何差错，意味着最终仪式的能量会在驱魔结束时失控爆发，让尼穆克尼穆尔帕尔在\"对抗魔鬼\"一节中占得先机：",
+										{
+											"type": "list",
+											"items": [
+												"若放错了稳定符文，将触发\"不稳定魔法\"事件（属\"谜题专属事件\"）。",
+												"若任何符文的次序或位置画错，尼穆克尼穆尔帕尔将获得爆炸奥法特性（详见\"谜题专属特性\"）。"
+											]
+										}
+									],
+									"id": "078"
+								},
+								{
+									"ENG_name": "Reconfiguring Puzzle 2",
+									"type": "inset",
+									"name": "重制谜题二",
+									"page": 24,
+									"entries": [
+										"角色们从谜题二属性检定中获得的信息本是任意设定，你可以随意调换符文。例如，如果你的战役发生在爬虫类占优的沼泽环境，你可以裁定符文III的正确选择其实是shamrani符文。"
+									],
+									"id": "079"
+								}
+							],
+							"id": "06f"
+						},
+						{
+							"ENG_name": "Puzzle 3: Anchor Runes",
+							"type": "section",
+							"name": "谜题三：锚定符文",
+							"page": 24,
+							"entries": [
+								"角色们必须借助鲁赫玛尼的日记，补全法图中全部三枚缺失的锚定符文。这些锚定符文能在尼穆克尼穆尔帕尔被驱出躯体时，保护约翰的心智不受伤害。请将\"鲁赫玛尼的日记\"讲义与本节信息对照阅读。",
+								"除日记之外，角色们还需要弄清约翰人生中三项主要的希望、梦想或渴望，才能完成本谜题。他们可以搜查约翰的房间或与他的家人交谈（见\"线索与情报\"一节）。",
+								{
+									"ENG_name": "Puzzle 3 Solution",
+									"type": "entries",
+									"name": "谜题三解法",
+									"page": 24,
+									"entries": [
+										"谜题三的解法是\"陪伴的温暖\"符文、\"与家族或过往重续联系\"符文，以及\"抚平他人苦难\"符文。这三枚符文可以任意顺序放入内三角各边上的空圆圈中。",
+										"本谜题的提示可在地下室、约翰的卧室和主卧室中找到，也可通过与蕾娅、拉克斯曼和艾里克的交谈获得。关于这些地点与NPC的详情，见\"线索与情报\"一节。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00087.webp"
+											},
+											"expectsLightBackground": true,
+											"title": "谜题三解法",
+											"credit": "Grace Cheung",
+											"width": 318,
+											"height": 311
+										}
+									],
+									"id": "07b"
+								},
+								{
+									"ENG_name": "Reasoning",
+									"type": "entries",
+									"name": "推理解析",
+									"page": 24,
+									"entries": [
+										"根据在\"线索与情报\"一节的所得，并使用\"鲁赫玛尼的日记\"讲义，玩家与角色们可以做出以下推断：",
+										{
+											"type": "list",
+											"items": [
+												"据鲁赫玛尼的日记，锚定符文必须放入三角形各边的小圆圈中，次序不限。",
+												"约翰与拉克斯曼的关系对他至关重要，且他对父亲保密。从拉克斯曼处了解到这一点，应能引导角色们找到代表陪伴之温暖的符文。",
+												"约翰思念母亲，想更多地了解她。搜查约翰的卧室或与艾里克、蕾娅交谈，应能引导角色们找到代表与家族或过往重续联系的符文。",
+												"约翰热衷医学，立志成为医者或外科医师。搜查约翰的卧室或与蕾娅交谈，应能引导角色们找到代表抚平他人苦难的符文。",
+												"约翰不擅理财，也看不出财富对他有何等重要，这排除了代表财富之力的符文。角色们可从与艾里克的交谈中了解到这一点。",
+												"角色们的调查没有发现约翰追求独处的迹象，而从蕾娅处可以得知，他一生饱尝孤独。这排除了代表孤寂的符文。",
+												"角色们的调查未显示痛苦（无论承受还是施加）属于约翰的目标，这排除了代表刺痛的符文。"
+											]
+										}
+									],
+									"id": "07c"
+								},
+								{
+									"ENG_name": "Penalty for Failure",
+									"type": "entries",
+									"name": "失败惩罚",
+									"page": 24,
+									"entries": [
+										"未能以任意次序放对三枚正确符文，将让尼穆克尼穆尔帕尔在\"对抗魔鬼\"一节中占得先机。魔鬼获得约翰的回声附赠动作的一次使用机会（见冒险后文\"谜题专属特性\"），且每有一枚符文放错或缺失，该动作的威力便更增一分。"
+									],
+									"id": "07d"
+								}
+							],
+							"id": "07a"
+						},
+						{
+							"ENG_name": "Puzzle 4: Potency Runes",
+							"type": "section",
+							"name": "谜题四：效能符文",
+							"page": 25,
+							"entries": [
+								"角色们必须借助拉克斯曼批注过的作业，为法图六边形中既有的符文添上三个变音（注音）字形。这些变音符号使效能符文达成元素平衡\u2014\u2014效能符文正是用来振作法图魔力的。请将\"拉克斯曼的批注作业\"讲义与本节信息对照阅读。",
+								"你可以让拉克斯曼在本节向角色们提供一些模糊的线索，但他伤心过度，无法施以真正的援手。",
+								{
+									"ENG_name": "Puzzle 4 Solution",
+									"type": "entries",
+									"name": "谜题四解法",
+									"page": 25,
+									"entries": [
+										"角色们需要参照拉克斯曼的批注作业，在没有变音符号的符文下方添上特定的变音符号。解法如下图所示：左侧仅展示变音符号（包括法图上已有的那些），右侧展示完整解法。",
+										"本谜题的提示可通过探索地下室、书房和主卧室找到（见\"线索与情报\"）。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00091.webp"
+											},
+											"expectsLightBackground": true,
+											"title": "谜题四解法；左侧为纯变音符号，右侧为完整解法",
+											"credit": "Grace Cheung",
+											"width": 496,
+											"height": 198
+										}
+									],
+									"id": "07f"
+								},
+								{
+									"ENG_name": "Reasoning",
+									"type": "entries",
+									"name": "推理解析",
+									"page": 25,
+									"entries": [
+										"根据在\"线索与情报\"一节与\"拉克斯曼的批注作业\"讲义中的所得，玩家与角色们可获得以下信息：",
+										{
+											"type": "list",
+											"items": [
+												"效能符文对应法图的外六边形。",
+												"每枚符文都必须有一个变音符号\u2014\u2014一种帮助符文达成平衡的注记。通常，彼此相对的变音符号必须具有相反的元素属性。拉克斯曼的解法显示：土对风、火对水、虚空自对。",
+												"但当被驱魔的实体具有元素调性时，就会出现例外。通过在地下室与尼穆克尼穆尔帕尔交谈、注意到符文囚牢法阵中被毒素沾染的水、阅读书房里的小册子，或在主卧室与碧姬特的魂魄交谈，角色们可以推断这头邪魔调谐于水。",
+												"由于尼穆克尼穆尔帕尔元素调谐于水，法图必须带上主导的火性电荷。因此，不要用水的变音符号去对抗六边形左侧已有的火之变音符号，而应在法图右侧再添一个火之变音符号。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00093.webp"
+											},
+											"expectsLightBackground": true,
+											"title": "要保持整体火性电荷，请用火的变音符号而非水",
+											"credit": "Grace Cheung",
+											"width": 467,
+											"height": 101
+										}
+									],
+									"id": "080"
+								},
+								{
+									"ENG_name": "Penalty for Failure",
+									"type": "entries",
+									"name": "失败惩罚",
+									"page": 25,
+									"entries": [
+										"任何变音符号的错误或缺失都会令效能符文失衡。在\"对抗魔鬼\"一节期间，将触发\"污海之怒\"事件（属\"谜题专属事件\"）。"
+									],
+									"id": "081"
+								}
+							],
+							"id": "07e"
+						},
+						{
+							"ENG_name": "Clues and Information",
+							"type": "section",
+							"name": "线索与情报",
+							"page": 25,
+							"entries": [
+								"角色们可以从宅中的NPC处，以及通过调查特定房间获得解谜线索。如果角色们想探索此处未描述的房间，请明确表示：对其他区域的彻底搜查一无所获。",
+								{
+									"ENG_name": "Basement",
+									"type": "entries",
+									"name": "地下室",
+									"page": 25,
+									"entries": [
+										"这间昏暗地下室里寻常的杂物已被推到墙边，腾出了空地。符文囚牢法阵与符文法图绘于地面中央，尼穆克尼穆尔帕尔被困于法阵之中。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Water in the Circle",
+													"type": "entries",
+													"name": "法阵中的水",
+													"page": 25,
+													"entries": [
+														"符文囚牢法阵内有一滩液体，拍打着法阵边缘却无法流出。通过{@dc 10}感知（{@skill 自然}）检定的角色知道，这是被毒素沾染的水（见谜题四）。"
+													],
+													"id": "085"
+												},
+												{
+													"ENG_name": "Johann's Contortions",
+													"type": "entries",
+													"name": "约翰的扭曲姿态",
+													"page": 25,
+													"entries": [
+														"在约翰的身体于魔鬼操控下扭动翻绞时，通过{@dc 10}智力（{@skill 医药}）检定或{@dc 12}感知（{@skill 察觉}）检定的角色可以确认：尽管他的肌肉、韧带与肌腱都被拉到了极限，却没有任何迹象表明他经受了邪魔魔法的身体改造（见谜题一）。"
+													],
+													"id": "086"
+												},
+												{
+													"ENG_name": "Fiendish Challenge",
+													"type": "entries",
+													"name": "邪魔的挑衅",
+													"page": 25,
+													"entries": [
+														"通过{@dc 15}智力（{@skill 奥秘}）检定或{@dc 18}智力（{@skill 调查}）检定的角色，能看出这魔鬼以某种方式调谐于元素，且法图中的任何差错，都可能让邪魔在被驱魔后取得强力的元素魔法（见谜题四）。"
+													],
+													"id": "087"
+												},
+												"角色们一开始往法图上添加符文，尼穆克尼穆尔帕尔便会威胁角色们与斯科曼一家，所有威胁都与水的主题相连（见谜题四）。你可以使用以下威胁，也可以自行创作：",
+												{
+													"type": "list",
+													"items": [
+														"\"我会把你们淹死在地狱的河流里！\"",
+														"\"这男孩会沉入深渊，永远属于我！\"",
+														"\"正如潮汐与洋流，我势不可挡！\"",
+														"\"你以为你们能浇熄我的力量？\"",
+														"\"我会榨干你们甜美凡血的最后一滴，然后在血里畅游！\""
+													]
+												},
+												"尼穆克尼穆尔帕尔开口之后，若被问及任何关于约翰或其自身动机的问题，魔鬼便会谈起这年轻人脆弱的情感状态（见谜题三）。\"这男孩熟得流油，可口极了！我已经能品尝他的情绪了。他隐秘的渴望、他想与可怜亡母重聚的念想......美味至极！\"若有角色在尼穆克尼穆尔帕尔开口后谈起斯科曼一家，魔鬼会咯咯怪笑道：\"何不去问问楼上的那位母亲？\""
+											],
+											"id": "084"
+										}
+									],
+									"id": "083"
+								},
+								{
+									"ENG_name": "Study",
+									"type": "entries",
+									"name": "书房",
+									"page": 26,
+									"entries": [
+										"书房是个整洁的房间，屋内有一座大书架、一张书桌，以及一幅由许多不同织料补丁缝制而成的壁挂（那是艾里克部分布样的撷选）。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Notable Works",
+													"type": "entries",
+													"name": "名作",
+													"page": 26,
+													"entries": [
+														"搜查书架的角色们会发现一小卷收录鬼故事与闹鬼传说的卷轴，其中有一篇目击者的记述\u2014\u2014那人丧妻之后，很快便被亡妻纠缠。"
+													],
+													"id": "08a"
+												},
+												{
+													"ENG_name": "The Devil's Work",
+													"type": "entries",
+													"name": "魔鬼的著作",
+													"page": 26,
+													"entries": [
+														"书架上还有一本陈旧的手写小册子，题为{@i 《召唤地狱大公爵之仪》}。近二十年前，艾里克正是凭着这份文本与尼穆克尼穆尔帕尔立下契约。（这部作品平日被藏起来，但艾里克一直在翻查它，徒劳地寻找可能救下儿子的信息。）",
+														"虽然文风古旧，这本小册子的用途却很明确。它收录了关于魔鬼的泛泛而极不准确的信息，外加一套相当管用的召唤尼穆克尼穆尔帕尔的仪式（尽管这魔鬼绝对算不上什么地狱公爵）。仪式中频繁提及\"污水\"，为解开谜题四提供了一条有用的线索。",
+														"研读小册子的角色可以尝试一次{@dc 12}智力（{@skill 奥秘}或{@skill 宗教}）检定。检定成功者，综合小册子与\"拉克斯曼的笔记\"讲义中的信息，可知按照鲁赫玛尼的分类体系，尼穆克尼穆尔帕尔很可能是一股中等力量的实体（见谜题一）。",
+														"若检定结果为18或更高，角色可以修改驱魔仪式，在冒险后文\"对抗魔鬼\"一节中限制尼穆克尼穆尔帕尔的力量\u2014\u2014移除魔鬼因某一谜题的失误而从\"谜题专属威能\"一节获得的一项随机增益的一次使用机会。"
+													],
+													"id": "08b"
+												}
+											],
+											"id": "089"
+										}
+									],
+									"id": "088"
+								},
+								{
+									"ENG_name": "Johann's Bedroom",
+									"type": "entries",
+									"name": "约翰的卧室",
+									"page": 26,
+									"entries": [
+										"约翰凌乱的卧室里有一张素床和一张书桌，书籍、衣物与其他物件摊得到处都是。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "Art Appreciation",
+													"type": "entries",
+													"name": "艺术鉴赏",
+													"page": 26,
+													"entries": [
+														"一面墙上挂着一幅装框的山景素描。细看画框的人会发现，框背藏着另一件艺术品\u2014\u2014一幅刻画裸体男性人形的精细木刻。（这是关于约翰性向的提示，用于谜题三。）",
+														"另一面墙上是一幅小小的装框画像，画中是一位微笑的年轻女子\u2014\u2014碧姬特，约翰的母亲。保护画像的玻璃上布满指印，仿佛常被人摩挲（见谜题三）。"
+													],
+													"id": "08e"
+												},
+												{
+													"ENG_name": "Missing Mother",
+													"type": "entries",
+													"name": "缺席的母亲",
+													"page": 26,
+													"entries": [
+														"搜查约翰衣物的角色会发现一张儿童画，画着两个大人和一个孩子。其中一个大人是头顶画着一朵百合的女子，与另外两个人像分开画着。孩子一脸愁容。凭猜测或通过{@dc 10}感知（{@skill 洞悉}）检定的角色，可以辨出这幅画表达了作画者对母亲形象的哀伤（见谜题三）。"
+													],
+													"id": "08f"
+												},
+												{
+													"ENG_name": "Reading Material",
+													"type": "entries",
+													"name": "读物",
+													"page": 26,
+													"entries": [
+														"翻遍散落房间的书籍，会翻出一部题为《怀特解剖学》的医学著作，里面夹着一张手写的当地草药及其疗效清单（见谜题三）。"
+													],
+													"id": "090"
+												}
+											],
+											"id": "08d"
+										}
+									],
+									"id": "08c"
+								},
+								{
+									"ENG_name": "Master Bedroom",
+									"type": "entries",
+									"name": "主卧室",
+									"page": 26,
+									"entries": [
+										"主卧室的门锁着，只能用艾里克保管的钥匙，或以使用{@item 盗贼工具|PHB}的成功{@dc 10}敏捷检定打开。检定失败时，锁虽会打开，机关却会\"哐\"的一声永久损坏，响声足以把蕾娅从宅中别处引来。",
+										"任何角色一进入房间，碧姬特的魂魄便会化作一袭血红色的幽灵身影显形，自称宅邸的女主人。这魂魄所能提供的大多是毫无意义的记忆碎片，角色们与她互动时，她多半对问题置之不理。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "The Spirit Speaks",
+													"type": "entries",
+													"name": "魂魄之言",
+													"page": 27,
+													"entries": [
+														"向碧姬特问起尼穆克尼穆尔帕尔，会得到这样的回答：\"我不能谈论污海之主，它对我的掌控，深过最强的洋流！\"（见谜题四。）",
+														"向碧姬特问起她的儿子，她会说：\"约翰长成了多么自信的年轻人！真像他父亲......但他不是做买卖的。他有别的志向......\"（见谜题三。）"
+													],
+													"id": "093"
+												},
+												{
+													"ENG_name": "Corrupted Entity",
+													"type": "entries",
+													"name": "堕化的存在",
+													"page": 27,
+													"entries": [
+														"观察碧姬特的魂魄时，任意角色都可进行一次{@dc 10}智力（{@skill 奥秘}）检定。检定成功者可以察觉，这身影是一个奇怪的堕化实体，只持有碧姬特灵魂的一片。",
+														"如果角色们已知艾里克与尼穆克尼穆尔帕尔的交易，则通过{@dc 15}感知（{@skill 宗教}）检定可获提示：以战斗击败并驱散碧姬特的魂魄，将削弱尼穆克尼穆尔帕尔。若这魂魄（{@creature 碧姬特·斯科曼|Arcadia21|使用恶灵的数据块}）被击败，尼穆克尼穆尔帕尔被驱魔时将失去四分之一的生命值（见冒险后文\"对抗魔鬼\"）。"
+													],
+													"id": "094"
+												}
+											],
+											"id": "092"
+										}
+									],
+									"id": "091"
+								},
+								{
+									"ENG_name": "Guest Bedroom",
+									"type": "entries",
+									"name": "客房",
+									"page": 27,
+									"entries": [
+										"客房干净而简朴，但随便一瞥就能看出有人常睡在这里。床单用得很旧，枕头下藏着一只兽人战士造型的绒毛玩具。床底下散放着几个文件夹，装着与纺织品买卖相关的文件。凭猜测或通过{@dc 10}智力（{@skill 洞悉}）检定的角色，可知一直睡在这里的人是艾里克。"
+									],
+									"id": "095"
+								},
+								{
+									"ENG_name": "Leia's Secrets",
+									"type": "entries",
+									"name": "蕾娅的秘密",
+									"page": 27,
+									"entries": [
+										"管家蕾娅忠心耿耿，却有些迷信。约翰被附身之后，她为这年轻人担惊受怕\u2014\u2014她知道他与拉克斯曼有着一段秘密关系。初次与角色们交谈时，她试图守口如瓶，但只要角色扮演得当，或通过{@dc 13}魅力（{@skill 威吓}或{@skill 游说}）检定，她便会透露以下信息：",
+										{
+											"type": "list",
+											"items": [
+												"若被问及约翰，蕾娅说他从小就是个贴心的好孩子，见谁都亲，什么都想学、都想帮。八岁那年，他还捡回一只受伤的小鸟，试着给它的翅膀疗伤！（见谜题三。）",
+												"若被问及碧姬特，管家说起艾里克常年忙于生意，约翰因此时常孤单。她认为这年轻人若能有另一位亲人在身边，本会过得更好（见谜题三）。",
+												"若被问及拉克斯曼和约翰，蕾娅承认自己隐约觉得，两个年轻人的关系也许\"比大多数人以为的更进一步\"（见谜题三）。",
+												"若让蕾娅意识到约翰病情的严重与可能的命运，她会失口说出拉克斯曼一定伤心欲绝\u2014\u2014任何恋人都会如此（见谜题三）。",
+												"如果角色们说清楚，任何关于斯科曼家的信息都可能有助于救约翰，蕾娅便会提起：去主卧室看看，也许能揭示关于魔鬼的秘密；但她恳求角色们别告诉艾里克，这话是她说的。"
+											]
+										}
+									],
+									"id": "096"
+								},
+								{
+									"ENG_name": "What Laxman Knows",
+									"type": "entries",
+									"name": "拉克斯曼所知",
+									"page": 27,
+									"entries": [
+										"尽管拉克斯曼在整场冒险中都深陷恐惧与不安，但任何以得当的角色扮演帮他集中精神，或通过{@dc 14}魅力（{@skill 威吓}或{@skill 游说}）检定的角色，都可以让他道出以下内容：",
+										{
+											"type": "list",
+											"items": [
+												"若被问及约翰，拉克斯曼会滔滔不绝地细数他有多么美好，随即猛然回神，含糊嘟哝一句两人只是挚友。他说他倾慕约翰，因为约翰仿佛真的\"很了解自己\"。他坚称约翰\"连一只苍蝇都不肯伤害\"，又说眼看他以这般暴戾的方式被附身，实在令人心悸（见谜题三）。",
+												"拉克斯曼不愿透露他与约翰关系的隐秘本质。只有当约翰命悬一线、被逼问到这份上时，这位年轻驱魔师才承认二人是恋人。他说这段关系近来一直压在约翰心头\u2014\u2014不是因为他对自己心存犹疑，而是因为他担心父亲的看法。两人不久前还谈起，等拉克斯曼学徒期满，便一同远游（见谜题三）。",
+												"若被问及尼穆克尼穆尔帕尔，拉克斯曼说自己所知不多。他还从未经历过附身者对受害者的掌控完全归于心灵的驱魔（见谜题一）。",
+												"若被问及鲁赫玛尼的研究，拉克斯曼承认那远超他的理解，还说人们常常忽视鲁赫玛尼笔下重要的脚注（见谜题三）。"
+											]
+										}
+									],
+									"id": "097"
+								},
+								{
+									"ENG_name": "Eirik's Insights",
+									"type": "entries",
+									"name": "艾里克的洞见",
+									"page": 27,
+									"entries": [
+										"艾里克·斯科曼一门心思全在救儿子上，但碧姬特遭遇带给他的耻辱沉甸甸压在心头。若被角色们问起，他会分享以下信息：",
+										{
+											"type": "list",
+											"items": [
+												"艾里克对自己的妻子绝口不提，被问及时明显难过，只说：\"我不想谈过去的伤痛。\"他承认，由于自己忙于工作和其他事务，家中缺少另一位亲人，让约翰吃了不少苦。通过{@dc 12}感知（{@skill 洞悉}）检定的角色能看出，艾里克谈起碧姬特时，藏着的远不只是伤痛。",
+												"若被质问主卧室中的魂魄，艾里克会崩溃落泪。他和盘托出与尼穆克尼穆尔帕尔交易的始末（详见冒险开头的\"前情提要\"一节），并说起他书房里那本最初用来召唤魔鬼的旧小册子。",
+												"若被问及他对碧姬特魂魄的感受，艾里克承认自己不愿待在那恶灵身边，但约翰常去主卧室，徒劳地试图了解母亲（见谜题三）。",
+												"若被问及儿子，艾里克会疼爱地提起，约翰\"对钱毫无头脑\"，也不会继承家族的纺织生意。相反，他跟着当地医者学习，要学他们的手艺（见谜题三）。",
+												"艾里克知道约翰与拉克斯曼的关系，但一直不想逼儿子在准备好之前公开。如果角色们表示他们已知情，或强调他们必须了解约翰的秘密，艾里克会告诉他们：他知道拉克斯曼对约翰无比重要，尤其因为约翰同龄的朋友寥寥，又没有母亲（见谜题三）。"
+											]
+										}
+									],
+									"id": "098"
+								}
+							],
+							"id": "082"
+						},
+						{
+							"ENG_name": "Enacting the Exorcism Ritual",
+							"type": "section",
+							"name": "施行驱魔仪式",
+							"page": 28,
+							"entries": [
+								"当角色们认定法图已经补全，拉克斯曼会找回几分自信，主动提出协助举行驱魔仪式。他焚香、比划奥秘的手势、诵起长长的咒文，履行他在仪式中的职责；与此同时，每名角色也要尝试一项特定的行动，把自己的一部分献给正在施展的魔法。",
+								"角色采取的行动可以是一个手势、一种声响或祝祷、某种材料的运用，甚至是脑海中对一幅画面的观想。绕着桌面逐一问每位玩家一个与其角色职业对应的问题，如\"仪式动作\"表所示。对兼职角色，由你决定问哪个问题。每个回答奖励一次激励。",
+								{
+									"ENG_name": "Ritual Actions",
+									"type": "statblock",
+									"tag": "table",
+									"source": "Arcadia21",
+									"name": "仪式动作",
+									"page": 28,
+									"style": "inset"
+								},
+								"仪式结束时，约翰迸出一声嘶吼。腐臭的水从他眼中、耳中、鼻中和口中涌出，凝聚成魔鬼尼穆克尼穆尔帕尔的形体。随后这年轻人瘫倒在地，陷入{@condition 昏迷}。"
+							],
+							"id": "099"
+						},
+						{
+							"ENG_name": "Battling the Devil",
+							"type": "section",
+							"name": "对抗魔鬼",
+							"page": 28,
+							"entries": [
+								"尼穆克尼穆尔帕尔现出真身时，邪魔尖声咒骂着角色们并发起攻击。拉克斯曼冲向陷入{@condition 昏迷}的约翰，在战火中把他拖上楼送到安全处。它的计划已被角色们摧毁，这魔鬼不再把注意力放在两个年轻人中任何一人身上。",
+								"视角色们解谜的表现，战斗开场可能触发任意数种谜题专属事件，尼穆克尼穆尔帕尔也会同时获得谜题专属特性。",
+								{
+									"ENG_name": "Puzzle-Specific Events",
+									"type": "entries",
+									"name": "谜题专属事件",
+									"page": 29,
+									"entries": [
+										"由于解谜时犯下的失误，战斗开始时可能发生以下事件。",
+										{
+											"ENG_name": "Bidirectional Energetic Clash",
+											"type": "entries",
+											"name": "双向能量对冲",
+											"page": 29,
+											"entries": [
+												"在谜题一中把符文放错位置会触发本事件：魔鬼离开约翰身体的一瞬，一股奥术能量从尼穆克尼穆尔帕尔身上爆裂而出。地下室中除尼穆克尼穆尔帕尔与约翰外的每个生物都必须进行一次{@dc 15}力量豁免。豁免失败的生物被击{@condition 倒地}，且在其下一回合只能执行以下一项：移动、采取动作，或采取附赠动作。"
+											],
+											"id": "09c"
+										},
+										{
+											"ENG_name": "Fury of the Tainted Seas",
+											"type": "entries",
+											"name": "污海之怒",
+											"page": 29,
+											"entries": [
+												"在谜题四中犯任何失误都会触发本事件：符文囚牢法阵中的污水飞溅而出。地下室地面上在你选定的位置形成四滩5尺见方的水洼。每滩水洼均为{@quickref 困难地形||3}，且在某一回合内首次进入水洼、或回合开始时位于水洼中的生物，必须通过{@dc 15}体质豁免，否则陷入{@condition 中毒}状态直至其下一回合结束。"
+											],
+											"id": "09d"
+										},
+										{
+											"ENG_name": "Unstable Magic",
+											"type": "entries",
+											"name": "不稳定魔法",
+											"page": 29,
+											"entries": [
+												"在谜题二中放错稳定符文会触发本事件：法图使地下室中的魔法发生扭曲。战斗中每轮开始时，从\"不稳定魔法\"表中随机选择一个法术（或随机选取{@filter 法师法术列表中的任意戏法或1环法术|spells|source=|level=0;1|class=wizard}）。该法术如同源自尼穆克尼穆尔帕尔般被施放，但无需成分、不耗动作，且魔鬼在自己回合仍可施放其他法术。",
+												"范围效应法术会自动置于能影响最多角色之处，单体法术则随机作用于一名角色。法术的法术攻击加值为{@hit 5}，法术豁免DC为15。若法术通常需要{@status 专注}，则改为持续至下一轮开始。",
+												{
+													"ENG_name": "Unstable Magic",
+													"type": "statblock",
+													"tag": "table",
+													"source": "Arcadia21",
+													"name": "不稳定魔法",
+													"page": 29,
+													"style": "inset"
+												}
+											],
+											"id": "09e"
+										}
+									],
+									"id": "09b"
+								},
+								{
+									"ENG_name": "Puzzle-Specific Features",
+									"type": "entries",
+									"name": "谜题专属特性",
+									"page": 29,
+									"entries": [
+										"由于解谜时犯下的失误，尼穆克尼穆尔帕尔可能在战斗开始时获得以下特性。",
+										{
+											"ENG_name": "Burrowing Words",
+											"type": "entries",
+											"name": "钻心之言",
+											"page": 29,
+											"entries": [
+												"若在谜题一中放错符文，魔鬼获得以下动作选项：",
+												{
+													"type": "list",
+													"style": "list-hang",
+													"items": [
+														{
+															"ENG_name": "Burrowing Words",
+															"type": "item",
+															"name": "钻心之言",
+															"entries": [
+																"尼穆克尼穆尔帕尔选择120尺内一个它能看见的人形生物。该生物必须通过一次{@dc 15}魅力豁免，否则被尼穆克尼穆尔帕尔{@condition 魅惑}24小时。以此方式被{@condition 魅惑}期间，目标将尼穆克尼穆尔帕尔视为应听从与保护的挚友，并竭尽所能服从其命令，哪怕这样会令自己陷入险境。",
+																"被{@condition 魅惑}的目标每次受到伤害时，可以重复进行该豁免，成功则解除自身的该状态。若尼穆克尼穆尔帕尔被消灭、与目标身处不同位面、或以附赠动作终止此效应，该效应同样结束。",
+																"尼穆克尼穆尔帕尔同一时间只能以此方式{@condition 魅惑}一个目标。"
+															]
+														}
+													]
+												}
+											],
+											"id": "0a0"
+										},
+										{
+											"ENG_name": "Explosive Arcana",
+											"type": "entries",
+											"name": "爆炸奥法",
+											"page": 29,
+											"entries": [
+												"若角色们在解谜题二时把任何符文的次序或位置放错，尼穆克尼穆尔帕尔获得以下特性：",
+												{
+													"type": "list",
+													"style": "list-hang",
+													"items": [
+														{
+															"ENG_name": "Explosive Arcana",
+															"type": "item",
+															"name": "爆炸奥法",
+															"entries": [
+																"每当尼穆克尼穆尔帕尔在对法术的豁免检定中成功，或有法术攻击未命中它时，邪魔便会拆解法术的魔力，将其猛然轰回施法者。施放该法术的生物必须通过一次{@dc 15}敏捷豁免，否则被朝尼穆克尼穆尔帕尔选择的方向击退15尺。若该生物撞上墙壁或沉重物体，其移动立即结束，并受到{@damage 1d4}点钝击伤害。此外，豁免失败的生物在其下一回合只能执行以下一项：移动、采取动作，或采取附赠动作。"
+															]
+														}
+													]
+												}
+											],
+											"id": "0a1"
+										},
+										{
+											"ENG_name": "Novice Errors",
+											"type": "entries",
+											"name": "新手错误",
+											"page": 29,
+											"entries": [
+												"谜题二中每使用一枚较简单符文，魔鬼就获得以下附赠动作的一次使用机会：",
+												{
+													"type": "list",
+													"style": "list-hang",
+													"items": [
+														{
+															"ENG_name": "Novice Errors",
+															"type": "item",
+															"name": "新手错误",
+															"entries": [
+																"尼穆克尼穆尔帕尔利用敌手的失误，在其下一回合结束前进行的下一次攻击检定获得优势。"
+															]
+														}
+													]
+												}
+											],
+											"id": "0a2"
+										},
+										{
+											"ENG_name": "Echoes of Johann",
+											"type": "entries",
+											"name": "约翰的回声",
+											"page": 29,
+											"entries": [
+												"谜题三中每有一枚符文放错或缺失，魔鬼便获得以下附赠动作，且威力随此类符文的数量而增强：",
+												{
+													"type": "list",
+													"style": "list-hang",
+													"items": [
+														{
+															"ENG_name": "Echoes of Johann",
+															"type": "item",
+															"name": "约翰的回声",
+															"entries": [
+																"尼穆克尼穆尔帕尔为谜题三中每枚放错或缺失的符文召唤两只{@creature 劣魔|MM|劣魔}，它们出现在魔鬼60尺内的无人空间。每只{@creature 劣魔}都长得与约翰一模一样，只除了\"回声异变\"表中的一种异变。{@creature 劣魔|MM|劣魔}们每轮紧随尼穆克尼穆尔帕尔之后行动，用滑稽模仿约翰的声音乞求饶命，同时攻击尼穆克尼穆尔帕尔的敌人。",
+																{
+																	"ENG_name": "Echo Mutations",
+																	"type": "statblock",
+																	"tag": "table",
+																	"source": "Arcadia21",
+																	"name": "回声异变",
+																	"page": 30,
+																	"style": "inset"
+																}
+															]
+														}
+													]
+												}
+											],
+											"id": "0a3"
+										}
+									],
+									"id": "09f"
+								}
+							],
+							"id": "09a"
+						},
+						{
+							"ENG_name": "Aftermath",
+							"type": "section",
+							"name": "余波",
+							"page": 30,
+							"entries": [
+								"救下约翰的性命，将为角色们赢得斯科曼家永难忘怀的感激。艾里克赠予队伍一卷{@item 法术卷轴(2环)|DMG|法术卷轴}，内含{@spell 强化属性}。对于等级较高的队伍，他还会送上一件本打算卖掉的{@item 移位斗篷}。蕾娅则送给角色们一块她很久以前收藏的奇特魔法石，可用一个动作将其捏碎，产生与饮下{@item 坚不可摧药水}相同的效果。",
+								"若碧姬特的魂魄此前未被驱散，击败尼穆克尼穆尔帕尔将令魂魄永远消散。艾里克接受了让亡妻安息才是最好的结局，最终搬回了主卧室。",
+								"这场劫难过后，拉克斯曼和约翰向艾里克公开了他们的关系，艾里克完全支持。约翰的父亲欢迎拉克斯曼成为家人，并邀请他在斯科曼宅永久住下。他甚至提出请人画一幅他与两个年轻人的全家福，但很快就被不好意思的儿子劝住了。",
+								"拉克斯曼和约翰决定一同前往某座大城，计划让约翰成为医者或外科医师，拉克斯曼则继续驱魔师的学业。也许有朝一日，这对恋人还会与英雄们重逢？"
+							],
+							"id": "0a4"
+						},
+						{
+							"ENG_name": "Modifying the Adventure",
+							"type": "section",
+							"name": "调整冒险",
+							"page": 30,
+							"entries": [
+								"作为GM，你可以调整本冒险的种种要素，使其最贴合你的团体。",
+								{
+									"ENG_name": "Difficulty Level",
+									"type": "entries",
+									"name": "难度等级",
+									"page": 30,
+									"entries": [
+										"如果你想增加战斗或拉长本冒险，可以做以下一项或多项调整：",
+										{
+											"type": "list",
+											"items": [
+												"碧姬特改用{@creature 幽魂}或{@creature 邪灵}的数据块。",
+												"角色们必须先击败碧姬特，才能从她口中获得任何信息；这具破碎的魂魄会持续显形，直到把话说完。",
+												"角色们初次进入地下室时，拉克斯曼救助约翰的尝试惨烈失败，使尼穆克尼穆尔帕尔得以召唤其他魔鬼，构成开场的一场硬仗。"
+											]
+										},
+										"如果你想让谜题部分更简单或更快捷，可以考虑以下调整：",
+										{
+											"type": "list",
+											"items": [
+												"蕾娅和艾里克更健谈，更愿意给出提示与信息。",
+												"拉克斯曼从休克状态中略有恢复，能按需向角色们提供谜题提示。",
+												"若玩家们一筹莫展，某名角色可以通过一次{@dc 15}智力检定，在谜题中放对一枚符文。注意别让这种宽限超过一两次！"
+											]
+										}
+									],
+									"id": "0a6"
+								},
+								{
+									"ENG_name": "Sensitive Content",
+									"type": "entries",
+									"name": "敏感情节",
+									"page": 30,
+									"entries": [
+										"如果你的桌面不愿谈及分娩相关死亡的话题，可以把剧情改为：碧姬特在约翰出生数月后死去，死于尼穆克尼穆尔帕尔魔法所致的消耗病。在这一版本中，艾里克眼睁睁看着爱妻数月间日渐枯槁，对丧妻之痛或许感受更深\u2014\u2014这份残忍，无疑正合魔鬼的胃口。",
+										"如果你不愿在桌上引入异性恋正统与家庭秘密的主题，可以改用以下任一构思：",
+										{
+											"type": "list",
+											"items": [
+												"艾里克是位严格的家长，认为约翰还太年轻，不适合任何形式的恋情\u2014\u2014也许是因为他隐约察觉到，尼穆克尼穆尔帕尔的交易对约翰意味着什么。",
+												"鲁赫玛尼禁止拉克斯曼谈任何分心的恋情，想保密的人成了拉克斯曼。对鲁赫玛尼之死的愧疚，让拉克斯曼难以轻易向角色们坦白真相。"
+											]
+										}
+									],
+									"id": "0a7"
+								}
+							],
+							"id": "0a5"
+						},
+						{
+							"ENG_name": "Author's Note",
+							"type": "section",
+							"name": "作者注",
+							"page": 31,
+							"entries": [
+								{
+									"ENG_name": "Bias and Oppression in Fantasy Worlds",
+									"type": "entries",
+									"name": "奇幻世界中的偏见与压迫",
+									"page": 31,
+									"entries": [
+										"人们投身幻想与游戏，理由各不相同。有时，我们只是需要从眼前的现实中逃离片刻，不愿在游戏里被现实世界的压迫力量提醒。以这种方式游玩时，关键要记住：不纳入某些话题，同样是一种政治选择。试着弄清楚你在游戏里纳入了什么、排除了什么，是很好的习惯！",
+										"另一些时候，我们想在现实世界的压迫面前感受力量。对某些玩家而言，直面现实世界的不平等可以是有意义、有共鸣的体验。（我曾为{@i 《Nerve》}{@link 撰文谈过这一点|https://nerves.games/2022/06/16/power-fantasies-in-rpgs-by-sharang-biswas/}。）还有的玩家把游戏当作探索身份与社会议题的途径。有时，我们{@i 就是要}在游戏中寻找与现实的对照，以便更好地理解我们与现实议题的关系。",
+										"\"破解魔鬼之谜\"包含了酷儿者隐瞒性向真相的主题。酷儿并非本冒险的核心主题，却是重要的一环。它驱动着NPC，塑造着他们的欲望、背景与个性。我有意纳入这些主题，是为了让游戏桌上诞生的故事更有层次，让角色更加立体。此外，我本人是一名同性恋艺术家。我希望我的作品反映我认为重要的议题，也希望我的观众直面这些议题确实存在的事实。",
+										"请与你的玩家们谈明，本冒险中存在这些主题。别害怕\"说错话\"。正如我为卡姆登·赖特那部发人深省的RPG{@link 《一颗孩子的心》|https://www.drivethrurpg.com/product/320505/One-Childs-Heart}所写：扮演自身所属社群之外的角色时，人人都会犯错，而\"重要的是记住身份认同至关重要、留意自身的偏见、承认自己的错误与无知，以及最根本的\u2014\u2014把人当人来对待\"。",
+										"运行本冒险时，使用各种校准工具（有时称为\"安全工具\"）或许有所助益。除MCDM 桌上角色扮演安全工具箱外，基恩娜·肖与劳伦·布莱恩特-蒙克也编制了一份出色的热门工具合集，名为{@link 桌面角色扮演安全工具包|https://i.4pcdn.org/tg/1583202183294.pdf}。如果你的桌面不愿讨论或在游戏中纳入这类议题，那也完全没问题！我已提供调整冒险的方法，你也完全可以自由做出任何其他你认为合适的调整。"
+									],
+									"id": "0a9"
+								},
+								{
+									"ENG_name": "Extra Resources",
+									"type": "entries",
+									"name": "延伸资源",
+									"page": 31,
+									"entries": [
+										"如果你想进一步阅读本作者注中的想法，我推荐以下资源：",
+										{
+											"type": "list",
+											"items": [
+												"{@link 《酷儿罗曼史的重要性\u2014\u2014角色扮演作为性向的探索与展演》|http://widerscreen.fi/numerot/2019-1-2/on-the-importance-of-queer-romances-role-play-as-exploration-and-performance-of-sexuality/}，Tanja Sihvonen与Jaakko Stenros著",
+												"{@link 《命运化自我》|https://nordiclarp.org/2020/05/18/wyrding-the-self/}，Jonaya Kemper著",
+												"{@link 《与爱欲同游》|https://nordiclarp.org/2021/04/29/playing-with-eros-consent-calibration-and-safety-for-erotic-sex-roleplay/}，Maury Brown著"
+											]
+										},
+										{
+											"type": "quote",
+											"entries": [
+												""
+											],
+											"skipMarks": true,
+											"from": "沙朗·比斯瓦斯"
+										}
+									],
+									"id": "0aa"
+								}
+							],
+							"id": "0a8"
+						},
+						{
+							"ENG_name": "Handouts",
+							"type": "section",
+							"name": "玩家讲义",
+							"page": 32,
+							"entries": [
+								{
+									"ENG_name": "Laxman's notes",
+									"type": "entries",
+									"name": "拉克斯曼的笔记",
+									"page": 32,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00114.webp"
+											},
+											"credit": "Grace Cheung",
+											"altText": "拉克斯曼的手写笔记，讲解如何在图形中使用符文。细节包括：符文总是绘于图形的顶点，以及标注了哪些符文可置于哪些位置。",
+											"width": 1037,
+											"height": 1426
+										}
+									],
+									"id": "0ac"
+								},
+								{
+									"ENG_name": "Treatise on Stabilization Runes",
+									"type": "entries",
+									"name": "稳定符文专著",
+									"page": 33,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00118.webp"
+											},
+											"credit": "Grace Cheung",
+											"altText": "一篇讲解\"常见魔法流动模式的稳定化\"的论文，由芳馨真谛秘社记录",
+											"width": 1083,
+											"height": 1488
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00121.webp"
+											},
+											"credit": "Grace Cheung",
+											"altText": "\"常见魔法流动模式的稳定化\"的续篇，包括常用字形及其排列方式。",
+											"width": 1083,
+											"height": 1488
+										}
+									],
+									"id": "0ad"
+								},
+								{
+									"ENG_name": "Rukhmani's Journal",
+									"type": "entries",
+									"name": "鲁赫玛尼的日记",
+									"page": 35,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00124.webp"
+											},
+											"credit": "Grace Cheung",
+											"altText": "一本手写日记，概述关于心理创伤对符文影响的笔记，以及一系列与心理状态相关的符文。",
+											"width": 1083,
+											"height": 1492
+										}
+									],
+									"id": "0ae"
+								},
+								{
+									"ENG_name": "Laxman's Annotated Homework",
+									"type": "entries",
+									"name": "拉克斯曼的批注作业",
+									"page": 36,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00127.webp"
+											},
+											"credit": "Grace Cheung",
+											"altText": "一组符文图练习，由一种笔迹布置给拉克斯曼完成。底部是完成的作业，出自第二种笔迹，大概属于拉克斯曼本人",
+											"width": 1008,
+											"height": 1394
+										}
+									],
+									"id": "0af"
+								},
+								{
+									"ENG_name": "Incomplete Runic Spell Diagram",
+									"type": "entries",
+									"name": "未完成的符文法图",
+									"page": 37,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00130.webp"
+											},
+											"credit": "Grace Cheung",
+											"altText": "一幅未完成的符文法图：一个六边形，六个顶点各有一枚符号。六边形内是一个圆，上下绘有符文。圆内是一个三角形，三条边上各有一个小圆。三角形的顶角与左角也绘有符文。",
+											"width": 1026,
+											"height": 1411
+										}
+									],
+									"id": "0b0"
+								},
+								{
+									"ENG_name": "GM Cheat Sheet",
+									"type": "entries",
+									"name": "GM速查表",
+									"page": 38,
+									"entries": [
+										{
+											"ENG_name": "Complete Runic Spell Diagram",
+											"type": "entries",
+											"name": "完整的符文法图",
+											"page": 38,
+											"entries": [
+												"注意：这幅符文法图并非囚牢法阵！魔鬼被困在囚牢法阵之中，其符文并非谜题的一部分。这幅法图是后来加绘的，与囚牢法阵相连，用以举行驱魔。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00133.webp"
+													},
+													"expectsLightBackground": true,
+													"credit": "Grace Cheung",
+													"altText": "供GM参考的完整符文法图。",
+													"width": 1037,
+													"height": 937
+												}
+											],
+											"id": "0b2"
+										},
+										{
+											"ENG_name": "Puzzle Solutions",
+											"type": "entries",
+											"name": "谜题解法",
+											"page": 39,
+											"entries": [
+												{
+													"ENG_name": "Puzzle Part 1:",
+													"type": "entries",
+													"name": "谜题部分一：",
+													"page": 39,
+													"entries": [
+														"\"Bhansari\"符文绘于三角形的右下角。",
+														{
+															"type": "image",
+															"href": {
+																"type": "external",
+																"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00077.webp"
+															},
+															"expectsLightBackground": true,
+															"credit": "Grace Cheung",
+															"altText": "详解谜题解法的图片，包括符文的摆放位置。",
+															"width": 495,
+															"height": 43
+														},
+														"符文放错位置将触发\"双向能量对冲\"事件。使用错误的符文将赋予尼穆克尼穆尔帕尔钻心之言动作。"
+													],
+													"id": "0b4"
+												},
+												{
+													"ENG_name": "Puzzle Part 2:",
+													"type": "entries",
+													"name": "谜题部分二：",
+													"page": 39,
+													"entries": [
+														"以下符文须按顺时针次序放置；不计原有的字形：",
+														{
+															"type": "list",
+															"items": [
+																"thrimsan符文",
+																"kauravi符文",
+																"thilmtha符文",
+																"vavupatna符文"
+															]
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "external",
+																"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00080.webp"
+															},
+															"expectsLightBackground": true,
+															"credit": "Grace Cheung",
+															"altText": "详解谜题解法的图片，包括符文的摆放位置。",
+															"width": 357,
+															"height": 310
+														},
+														"作为替代解法，可换入以下符文：",
+														{
+															"type": "image",
+															"href": {
+																"type": "external",
+																"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00083.webp"
+															},
+															"expectsLightBackground": true,
+															"credit": "Grace Cheung",
+															"altText": "供GM参考的谜题答案续图。",
+															"width": 357,
+															"height": 309
+														},
+														"放置错误的符文将触发\"不稳定魔法\"事件。",
+														"任何符文的次序或位置画错，都将赋予尼穆克尼穆尔帕尔爆炸奥法特性。",
+														"若使用替代符文，每枚替代符文都使尼穆克尼穆尔帕尔获得一次新手错误附赠动作的使用机会。"
+													],
+													"id": "0b5"
+												},
+												{
+													"ENG_name": "Puzzle Part 3:",
+													"type": "entries",
+													"name": "谜题部分三：",
+													"page": 41,
+													"entries": [
+														"三枚正确的符文可按任意次序放置。",
+														{
+															"type": "image",
+															"href": {
+																"type": "external",
+																"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00087.webp"
+															},
+															"expectsLightBackground": true,
+															"credit": "Grace Cheung",
+															"altText": "供GM参考的谜题答案续图。",
+															"width": 318,
+															"height": 311
+														},
+														"未能放对三枚正确符文，将赋予尼穆克尼穆尔帕尔约翰的回声附赠动作，且每有一枚符文放错或缺失，该动作的威力便更增一分。"
+													],
+													"id": "0b6"
+												},
+												{
+													"ENG_name": "Puzzle Part 4:",
+													"type": "entries",
+													"name": "谜题部分四：",
+													"page": 41,
+													"entries": [
+														"正确的变音符号必须添在没有变音符号的符文下方。",
+														{
+															"type": "image",
+															"href": {
+																"type": "external",
+																"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00091.webp"
+															},
+															"expectsLightBackground": true,
+															"title": "正确的变音符号|完整解法",
+															"credit": "Grace Cheung",
+															"altText": "供GM参考的谜题答案续图。",
+															"width": 496,
+															"height": 198
+														},
+														"任何变音符号的错误或缺失都将触发\"污海之怒\"事件。"
+													],
+													"id": "0b7"
+												}
+											],
+											"id": "0b3"
+										}
+									],
+									"id": "0b1"
+								}
+							],
+							"id": "0ab"
+						}
+					],
+					"id": "037"
+				},
+				{
+					"ENG_name": "Resources",
+					"type": "section",
+					"name": "资源",
+					"page": 42,
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Puzzling Out The Devil",
+									"type": "entries",
+									"style": "text-center",
+									"name": "破解魔鬼之谜",
+									"page": 42,
+									"entries": [
+										"{@link https://mcdm.gg/Arcadia202210/PuzzlingOutTheDevilGmCheatSheets.pdf}",
+										"{@link https://mcdm.gg/Arcadia202210/PuzzlingOutTheDevilHandouts.pdf}",
+										"{@link https://mcdm.gg/Arcadia202210/PuzzlingOutTheDevilHandoutsPlainText.pdf}"
+									],
+									"id": "0ba"
+								},
+								{
+									"ENG_name": "MCDM Tabletop Safety Toolkit",
+									"type": "entries",
+									"style": "text-center",
+									"name": "MCDM 桌上角色扮演安全工具箱",
+									"page": 42,
+									"entries": [
+										"{@link https://mcdm.gg/SafetyToolkit}"
+									],
+									"id": "0bb"
+								},
+								{
+									"type": "entries",
+									"style": "text-center",
+									"page": 42,
+									"entries": [
+										"你可以在{@link Patreon|https://www.patreon.com/posts/arcadia-patron-50839035}和{@link MCDM商店|https://shop.mcdmproductions.com/collections/arcadia}找到{@i 《阿卡迪亚》}的各期内容。"
+									],
+									"id": "0bc"
+								}
+							],
+							"id": "0b9"
+						}
+					],
+					"id": "0b8"
+				},
+				{
+					"ENG_name": "Author Profiles",
+					"type": "section",
+					"name": "作者简介",
+					"page": 43,
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"page": 43,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00148.webp"
+											},
+											"altText": "赛莱斯特·科诺维奇的照片",
+											"width": 195,
+											"height": 194
+										},
+										"{@b 赛莱斯特·科诺维奇}是一位栖居西雅图的游戏设计师。她是5版实况扮演播客《Venture Maidens》的制作人、GM兼编辑。不当幕后运筹帷幄的军师时，她在Kobold Press担任高级游戏设计师，也以自由身份与威世智、2CGaming、MCDM Productions等公司合作。想关注赛莱斯特，请在Twitter上关注{@link @cconowitch|https://twitter.com/cconowitch}。"
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"page": 43,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00146.webp"
+											},
+											"altText": "芭娜娜·陈的照片",
+											"width": 195,
+											"height": 195
+										},
+										"{@b 芭娜娜·陈}是一位广东裔加拿大人，ENnie奖得主，现居美国的游戏设计师、作者与发行商。她拥有一家名为Game and a Curry的小型桌游与RPG发行公司。她近期的作品包括{@i 《迪莫斯学院》《怪物的郊区消费》《精妙罪案》《Questlings: RPG》《僵尸血溅宴客厅》}（曾获《福布斯》《赫芬顿邮报》与Critter Hug报道）、{@i 《范·里希腾的鸦阁魔域指南》}与{@i 《山间小屋的背叛：第3版》}。她讨厌星期一，喜欢千层面。"
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"page": 43,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Arcadia21/00147.webp"
+											},
+											"altText": "沙朗·比斯瓦斯的照片",
+											"width": 195,
+											"height": 197
+										},
+										"{@b 沙朗·比斯瓦斯}曾凭角色扮演游戏获IndieCade与IGDN奖项，其互动作品曾在费城当代艺术学院、布鲁克林的Pioneer Works、皇后区的动态影像博物馆等机构展出。他为{@i 《降世神通：传奇》《尖塔：城市必倾》《僵尸血溅宴客厅》《驶向母大陆》《龙与地下城直播》}等游戏撰稿。在Twitter上关注他：{@link @SharangBiswas|https://twitter.com/SharangBiswas}。"
+									]
+								}
+							],
+							"id": "0be"
+						}
+					],
+					"id": "0bd"
+				},
+				{
+					"ENG_name": "License",
+					"type": "section",
+					"name": "许可协议",
+					"page": 44,
+					"entries": [
+						"开放游戏许可（OPEN GAME LICENSE）1.0a版　以下文本为威世智（Wizards of the Coast, LLC.）所有，版权所有©2000 Wizards of the Coast, Inc.（\"威世智\"）。保留所有权利。",
+						{
+							"type": "list",
+							"style": "list-decimal",
+							"columns": 2,
+							"page": 44,
+							"items": [
+								"定义：（a）\"贡献者\"指贡献了开放游戏内容的版权和/或商标所有者；（b）\"衍生材料\"指包括演绎作品与翻译（包括翻译为其他计算机语言）、移植、修改、更正、增补、扩展、升级、改进、汇编、节选，或其他以重构、转换、改编既有作品的形式在内的受版权保护的材料；（c）\"分发\"指复制、许可、出租、出借、出售、广播、公开展示、传播或以其他方式分发；（d）\"开放游戏内容\"指游戏机制，包括此类内容中不体现产品身份的方法、程序、流程与常规、对在先技术的改进，以及贡献者明确标识为开放游戏内容的任何附加内容，且指受本许可涵盖的任何作品，包括版权法下的翻译与演绎作品，但明确排除产品身份；（e）\"产品身份\"指产品与产品线名称、标识与识别性标记（包括商业外观）；神器；生物角色；故事、故事线、情节、主题要素、对话、事件、语言、插图、符号、设计、描绘、肖像、格式、姿势、概念、主题，及图形、摄影或其他视觉或听觉呈现；角色、法术、魅惑、人格、团队、人物形象、肖像与特殊能力的名称与描述；地点、位置、环境、生物、装备、魔法或超自然能力或效应、标识、符号或图形设计；以及产品身份所有者明确标识为产品身份、且明确排除开放游戏内容的任何其他商标或注册商标；（f）\"商标\"指贡献者用以标识其自身、其产品或其对开放游戏许可所贡献之关联产品的标志、名称、标记、符号、格言、设计；（g）\"使用\"、\"已使用\"或\"正在使用\"指对开放游戏内容进行使用、分发、复制、编辑、格式化、修改、翻译，及以其他方式创作衍生材料；（h）\"你\"或\"你的\"指本协议语境下的被许可方。",
+								"许可：本许可适用于任何包含声明、表明该开放游戏内容只能在本许可及其条款下使用的开放游戏内容。你必须在你使用的任何开放游戏内容上附加此类声明。除本许可自身所述外，不得向本许可增删任何条款。不得对使用本许可分发的任何开放游戏内容附加任何其他条款或条件。",
+								"要约与承诺：使用开放游戏内容即表示你接受本许可的条款。",
+								"授权与对价：作为同意使用本许可的对价，贡献者授予你一项永久性、全球性、免版税、非独占的许可，其条款与本许可完全一致，供你使用该开放游戏内容。",
+								"贡献权利之声明：如果你将原创材料作为开放游戏内容贡献，即表示你声明你的贡献系你的原创创作，且/或你拥有授予本许可所转让权利的充分权限。",
+								"许可版权通知：你必须更新本许可的\"版权通知\"部分，以纳入你复制、修改或分发的任何开放游戏内容的\"版权通知\"的确切文本；并且对你分发的任何原创开放游戏内容，你必须将标题、版权日期和版权所有者名称加入\"版权通知\"。",
+								"产品身份的使用：你同意不使用任何产品身份，包括作为兼容性指示，除非与该产品身份各要素所有者另行签订的独立协议有明确许可。你同意不将含有开放游戏内容的作品与任何商标或注册商标共同表示兼容或共同适配，除非与该商标或注册商标所有者另行签订的独立协议有明确许可。在开放游戏内容中使用任何产品身份，不构成对该产品身份所有权的挑战。任何在开放游戏内容中使用的产品身份，其所有者应保留对该产品身份的全部权利、权属与利益。",
+								"标识：如果你分发开放游戏内容，你必须清楚标明你所分发作品中哪些部分是开放游戏内容。",
+								"许可更新：威世智或其指定代理人可发布本许可的更新版本。你可以使用本许可的任何授权版本来复制、修改和分发最初依本许可任意版本分发的任何开放游戏内容。",
+								"许可副本：你分发的每份开放游戏内容必须附有一份本许可副本。",
+								"贡献者署名的使用：除非获得贡献者的书面许可，否则你不得以任何贡献者的名义对开放游戏内容进行营销或广告宣传。",
+								"无法遵从：如因法律、司法命令或政府法规致使你无法就部分或全部开放游戏内容遵守本许可的任何条款，则你不得使用受影响的任何开放游戏材料。",
+								"终止：如果你未能遵守本许可的所有条款，且在知悉违约后30天内未能补救，本许可将自动终止。所有再许可在本许可终止后继续有效。",
+								"修正：如果本许可的任何条款被认定不可执行，该条款仅在使其可执行所需的最低限度内进行修正。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"ENG_name": "COPYRIGHT NOTICE",
+													"type": "entries",
+													"name": "版权声明",
+													"page": 44,
+													"entries": [
+														"",
+														"开放游戏许可 v 1.0a 版权所有©2000，Wizards of the Coast, LLC.",
+														"系统参考文档5.1（System Reference Document 5.1）版权所有©2016，Wizards of the Coast, LLC.；作者Mike Mearls、Jeremy Crawford、Chris Perkins、Rodney Thompson、Peter Lee、James Wyatt、Robert J. Schwalb、Bruce R. Cordell、Chris Sims与Steve Townshend，基于E. Gary Gygax与Dave Arneson的原创材料。",
+														"《阿卡迪亚》（ARCADIA）第21期。版权所有©2022，MCDM Productions, LLC.。作者：Celeste Conowitch、Banana Chan、Sharang Biswas、Hannah Rose与James Introcaso。"
+													],
+													"id": "0c2"
+												}
+											],
+											"id": "0c1"
+										}
+									],
+									"id": "0c0"
+								}
+							]
+						}
+					],
+					"id": "0bf"
+				}
+			]
+		}
+	]
+}
