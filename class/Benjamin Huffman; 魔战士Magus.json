@@ -24,8 +24,13 @@
 		},
 		"edition": "classic",
 		"dateAdded": 1683052728,
-		"dateLastModified": 1785698747,
-		"_dateLastModifiedHash": "d41ba2dcf6"
+		"dateLastModified": 1793765613,
+		"_dateLastModifiedHash": "e9eba442c4"
+	},
+	"_test": {
+		"references": [
+			"UltimateAdventurer"
+		]
 	},
 	"class": [
 		{
@@ -3442,6 +3447,18 @@
 			"entries": [
 				"持握这根魔杖时，你的法术攻击检定获得+1加值。此外，你可以用一个附赠动作使一根多彩魔法能量柱自此魔杖延伸出约4尺，使其能被当作一件近战武器使用。此武器命中时造成{@dice 1d8}力场伤害，并具有灵巧、轻型和多用（{@dice 1d10}）属性。当你用一个附赠动作使其消散、或当你失去对武器的持握时，能量柱随之消散。"
 			]
+		},
+		{
+			"ENG_name": "Embalmer's Tools",
+			"name": "防腐师工具",
+			"source": "BHMagus",
+			"page": 7,
+			"type": "G",
+			"value": 1000,
+			"weight": 4,
+			"entries": [
+				"防腐师工具包含为遗体防腐所需的一切器具、化学药剂与香料。拥有此工具的熟练项，能让你在进行防腐或保存遗体的属性检定时加上你的熟练加值。"
+			]
 		}
 	],
 	"magicvariant": [
@@ -3807,8 +3824,8 @@
 						"0": {
 							"spells": [
 								"{@spell 酸液飞溅}",
-								"{@spell 电弧箭|BHMagus}",
-								"{@spell 霜击|BHMagus}"
+								"{@spell 弧光箭|UltimateAdventurer}",
+								"{@spell 霜寒打击|UltimateAdventurer}"
 							]
 						},
 						"1": {
@@ -3924,7 +3941,7 @@
 			"skill": {
 				"deception": "+7",
 				"intimidation": "+7",
-				"special": "{@skill Embalmer's tools} {@skillCheck Embalmer's 4}"
+				"special": "{@item 防腐师工具|BHMagus} {@skillCheck Embalmer's 4}"
 			},
 			"passive": 13,
 			"languages": [
@@ -3943,8 +3960,8 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell 放血撕咬|BHMagus}",
-								"{@spell 死亡裹布|BHMagus}",
+								"{@spell 放血咬|UltimateAdventurer}",
+								"{@spell 死亡之罩|UltimateAdventurer}",
 								"{@spell 维生术}",
 								"{@spell 奇术}"
 							]
@@ -3952,7 +3969,7 @@
 						"1": {
 							"spells": [
 								"{@spell 造成恐惧|XGE}",
-								"{@spell 汲取术|BHMagus}",
+								"{@spell 汲取|UltimateAdventurer}",
 								"{@spell 脆弱诅咒}",
 								"{@spell 睡眠术}"
 							],
@@ -4084,7 +4101,7 @@
 							"spells": [
 								"{@spell 德鲁伊伎俩}",
 								"{@spell 荆棘之鞭}",
-								"{@spell 守卫惩戒|BHMagus}"
+								"{@spell 守卫者斥责|UltimateAdventurer}"
 							]
 						},
 						"1": {
@@ -4216,12 +4233,12 @@
 								"{@spell 翠炎剑|TCE}",
 								"{@spell 法师之手}",
 								"{@spell 传讯术}",
-								"{@spell 破法打击|HomebrewStuff}"
+								"{@spell 破法打击|UltimateAdventurer}"
 							]
 						},
 						"1": {
 							"spells": [
-								"{@spell 汲魔术|BHMagus}",
+								"{@spell 夺能|UltimateAdventurer}",
 								"{@spell 繁彩球}",
 								"{@spell 寻获魔宠}",
 								"{@spell 魔法飞弹}",
