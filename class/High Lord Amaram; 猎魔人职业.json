@@ -1,0 +1,8001 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "WITCHERHLA",
+				"abbreviation": "WITCHERHLA",
+				"full": "High Lord Amaram 的猎魔人职业 (2024-31-01)",
+				"url": "https://www.reddit.com/r/UnearthedArcana/comments/y5weoo/the_witcher_class_5e_slay_monsters_with_this/",
+				"version": "2.0.5",
+				"authors": [
+					"u/HighLordAmaram"
+				],
+				"convertedBy": [
+					"p4535992"
+				]
+			}
+		],
+		"dependencies": {
+			"optionalfeature": [
+				"COMFightStyle"
+			]
+		},
+		"optionalFeatureTypes": {
+			"OF:WITCHERHLA:R": "猎魔人炼金配方",
+			"OF:WITCHERHLA:P": "猎魔人魔药",
+			"OF:WITCHERHLA:PG": "强效猎魔人魔药",
+			"OF:WITCHERHLA:PS": "高等猎魔人魔药",
+			"OF:WITCHERHLA:PM": "大师级猎魔人魔药",
+			"OF:WITCHERHLA:B": "猎魔人手雷/炸弹",
+			"OF:WITCHERHLA:BG": "强效猎魔人手雷/炸弹",
+			"OF:WITCHERHLA:BS": "高等猎魔人手雷/炸弹",
+			"OF:WITCHERHLA:BM": "大师级猎魔人手雷/炸弹"
+		},
+		"edition": "classic",
+		"dateAdded": 1557168726,
+		"dateLastModified": 1785698747,
+		"_dateLastModifiedHash": "e63494480b"
+	},
+	"class": [
+		{
+			"ENG_name": "Witcher",
+			"name": "猎魔人",
+			"source": "WITCHERHLA",
+			"page": 3,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"con",
+				"int"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"spellsKnownProgression": [
+				0,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"classSpells": [
+				"控火术|XGE",
+				"交友术|PHB",
+				"霜噬|XGE",
+				"神导术|PHB",
+				"舞风术|XGE",
+				"闪电牵引|TCE",
+				"心灵之楔|TCE",
+				"魔法伎俩|PHB",
+				"燃火术|PHB",
+				"冷冻射线|PHB",
+				"阿尔德|WITCHERHLA",
+				"亚克席|WITCHERHLA",
+				"伊格尼|WITCHERHLA",
+				"昆恩|WITCHERHLA",
+				"希瑞奥托普|WITCHERHLA",
+				"苏皮雷|WITCHERHLA",
+				"冰凌|WITCHERHLA",
+				"亚登|WITCHERHLA",
+				"索姆尼|WITCHERHLA"
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"arcana",
+								"athletics",
+								"insight",
+								"intimidation",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"persuasion",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				],
+				"weapons": [
+					"{@filter 简易武器|items|category=基础|type=简易武器;!军用武器}",
+					"{@filter 军用近战武器|items|category=基础|type=军用武器;近战武器;!远程武器;!简易武器}",
+					"{@item 手弩|phb}",
+					"{@item 轻弩|phb}",
+					"{@item 重弩|phb}"
+				],
+				"tools": [
+					"{@item 炼金工具|PHB}"
+				],
+				"armor": [
+					"light"
+				],
+				"armorProficiencies": [
+					{
+						"light": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"{@item 皮甲|PHB}",
+					"(a) 一件{@filter 军用武器|items|category=基础|type=军用武器}或 (b) 两件{@filter 具有轻型属性的武器|items|category=基础|property=轻型}",
+					"{@item 镀银武器|PHB}",
+					"{@item 轻弩|PHB}和{@item 弩矢(20)|PHB|20支弩箭}",
+					"{@item 炼金工具|PHB}",
+					"一枚{@item 猎魔人学派徽章|WITCHERHLA}",
+					"一本{@item 猎魔人怪物图鉴|WITCHERHLA}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"皮甲|phb",
+							"镀银武器|phb",
+							"轻弩|phb",
+							"弩矢(20)|phb",
+							"炼金工具|phb",
+							"猎魔人学派徽章|WITCHERHLA",
+							"猎魔人怪物图鉴|WITCHERHLA"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 1
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weapon",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13,
+					"or": [
+						{
+							"dex": 13
+						},
+						{
+							"str": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"simple",
+						"martial",
+						"{@item 手弩|phb}",
+						"{@item 轻弩|phb}",
+						"{@item 重弩|phb}"
+					],
+					"armor": [
+						"light"
+					],
+					"armorProficiencies": [
+						{
+							"light": true
+						}
+					]
+				},
+				"entries": [
+					"{@b 属性值下限。}你必须力量或敏捷至少为13，且智力至少为13，才能获得此职业的等级；若你已是一名猎魔人，则须满足此条件才能获得其他职业的等级。",
+					"{@b 熟练项。}若猎魔人并非你的初始职业，你将获得轻型护甲、{@filter 简易近战武器|items|category=基础|type=简易武器;!军用武器}、{@filter 军用近战武器|items|category=基础|type=军用武器;近战武器;!远程武器;!简易武器}以及弩的熟练项。"
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"已备魔药",
+						"已备手雷"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							2
+						],
+						[
+							2,
+							2
+						],
+						[
+							3,
+							2
+						],
+						[
+							3,
+							2
+						],
+						[
+							4,
+							3
+						],
+						[
+							4,
+							3
+						],
+						[
+							5,
+							3
+						],
+						[
+							5,
+							3
+						],
+						[
+							6,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							7,
+							4
+						],
+						[
+							7,
+							4
+						],
+						[
+							8,
+							4
+						],
+						[
+							8,
+							4
+						],
+						[
+							8,
+							5
+						],
+						[
+							8,
+							5
+						],
+						[
+							8,
+							5
+						],
+						[
+							8,
+							5
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter 已知法术|spells|class=猎魔人（WITCHERHLA）}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=猎魔人（WITCHERHLA）}",
+						"{@filter 2nd|spells|level=2|class=猎魔人（WITCHERHLA）}",
+						"{@filter 3rd|spells|level=3|class=猎魔人（WITCHERHLA）}",
+						"{@filter 4th|spells|level=4|class=猎魔人（WITCHERHLA）}",
+						"{@filter 5th|spells|level=5|class=猎魔人（WITCHERHLA）}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"猎魔人的怪物图鉴|猎魔人|WITCHERHLA|1",
+				{
+					"classFeature": "猎魔人学派特性|猎魔人|WITCHERHLA|1",
+					"gainSubclassFeature": true
+				},
+				"猎魔人施法|猎魔人|WITCHERHLA|2",
+				"战斗风格|猎魔人|WITCHERHLA|2",
+				"猎魔人备战|猎魔人|WITCHERHLA|3",
+				"剑油|猎魔人|WITCHERHLA|3",
+				"属性值提升|猎魔人|WITCHERHLA|4",
+				"额外攻击|猎魔人|WITCHERHLA|5",
+				"猎怪为业|猎魔人|WITCHERHLA|5",
+				"高等剑油|猎魔人|WITCHERHLA|6",
+				{
+					"classFeature": "猎魔人学派特性|猎魔人|WITCHERHLA|6",
+					"gainSubclassFeature": true
+				},
+				"强效猎魔人备战|猎魔人|WITCHERHLA|7",
+				"属性值提升|猎魔人|WITCHERHLA|8",
+				{
+					"classFeature": "猎魔人学派特性|猎魔人|WITCHERHLA|10",
+					"gainSubclassFeature": true
+				},
+				"磨砺锋刃|猎魔人|WITCHERHLA|11",
+				"高等猎魔人备战|猎魔人|WITCHERHLA|11",
+				"属性值提升|猎魔人|WITCHERHLA|12",
+				{
+					"classFeature": "猎魔人学派特性|猎魔人|WITCHERHLA|14",
+					"gainSubclassFeature": true
+				},
+				"大师级猎魔人备战|猎魔人|WITCHERHLA|15",
+				"属性值提升|猎魔人|WITCHERHLA|16",
+				{
+					"classFeature": "猎魔人学派特性|猎魔人|WITCHERHLA|18",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|猎魔人|WITCHERHLA|19",
+				"猎魔大师|猎魔人|WITCHERHLA|20"
+			],
+			"subclassTitle": "猎魔人学派",
+			"hasFluff": true
+		}
+	],
+	"classFluff": [
+		{
+			"ENG_name": "Witcher",
+			"name": "猎魔人",
+			"source": "WITCHERHLA",
+			"entries": [
+				{
+					"ENG_name": "Witcher",
+					"name": "猎魔人",
+					"source": "WITCHERHLA",
+					"type": "section",
+					"page": 2,
+					"entries": [
+						"一名身着暗色皮甲的男子终于找到了他整夜追踪的狼人，从行囊中掏出一枚手雷。他如猫般的双眼在月光下泛着微光，让他得以将那生物看得一清二楚。他将月尘炸弹掷向那生物脚下，随即拔出双短剑，冲向那个再也无法变回野兽形态的男人。",
+						"面对蜂拥而来的食尸鬼群，一名敏捷的半身人且战且退，迅速喝下腰间的一瓶魔药，魔法的力量随之涌遍全身。片刻之后，一股强化的伊格尼烈焰从他掌中喷薄而出，吞没食尸鬼群，将它们烧成灰烬。而任何还站着的家伙，很快也会倒在他的剑下。",
+						"一名半精灵手指翻飞，迅捷结出相应的法印，在脚下猛然布下亚登陷阱，迫使袭来的邪灵凝出实体。她拔出剑刃，逼近猎物，准备致命一击。",
+						"手段各异，但他们都是各自独当一面的怪物猎人。猎魔人受训于剑术、魔法、炼金与工艺，专门猎杀那些令常人吓得仓皇逃命的怪物。",
+						{
+							"name": "受雇的怪物猎人",
+							"type": "entries",
+							"entries": [
+								"猎魔人毕生致力于猎杀怪物，研究它们的长处与弱点，以便有效地诛灭它们。虽然猎魔人也会在荒野中发现怪物，但他们的大部分工作是对付更靠近文明之地的威胁\u2014\u2014那里的人们愿意出钱消除祸患。这些委托正是猎魔人的谋生之道，他们频繁地穿梭于城镇与都市之间，寻找新的合约。",
+								"这样的生活时时刻刻充斥着荒野中种种野兽与怪物带来的危险。尽管他们刻苦训练、为每一场战斗做足准备，能活到迟暮之年的猎魔人却寥寥无几。"
+							],
+							"ENG_name": "Monster Hunters for Hire"
+						},
+						{
+							"name": "遭人猜忌的流浪者",
+							"type": "entries",
+							"entries": [
+								"许多成为猎魔人的人类都经历过青草试炼\u2014\u2014一系列旨在帮助这些猎人蜕变为顶级掠食者的突变，唯有如此方能猎杀他们面对的种种生物。或许正是这些突变带来的身体变化（比如如猫般的双眼），让许多平民对他们心存戒备。",
+								"人们不信任猎魔人的另一个可能原因，是一种普遍的看法：猎魔人是贪婪的流浪汉，专占弱者与穷困者的便宜，榨取他们的钱财来解决麻烦。即使真的雇请猎魔人，往往也是走投无路之下的最后手段，而这有时会让猎魔人陷入远为凶险的境地。",
+								"有些猎魔人独自行动，追踪并猎杀目标；但也有不少猎魔人会结伴而行，或加入一支旅行冒险者队伍，哪怕要分享合约报酬，也能更安全地面对世间无数的危险。"
+							],
+							"ENG_name": "Mistrusted Nomads"
+						},
+						{
+							"name": "创造猎魔人",
+							"type": "entries",
+							"entries": [
+								"当你创造猎魔人角色时，想想你所受训练的来由。你是被养不起你的家人送到猎魔人学派受训的吗？你是被放逐后走投无路，才投身猎魔人这门营生？又或者，你自己曾获猎魔人搭救，因此也想为他人做同样的事？",
+								"你对那些不信任你的平民抱持怎样的态度？你会对他们的无知报以疲惫的耐心，还是时常紧绷着神经，随时准备冲下一个说\"你和你受雇猎杀的怪物没两样\"的人发作？",
+								"与你的DM商量如何最妥善地将猎魔人融入你的世界。"
+							],
+							"ENG_name": "Creating a Witcher"
+						},
+						{
+							"name": "快速构建",
+							"type": "entries",
+							"entries": [
+								"依照以下建议，你可以快速创建一名猎魔人。首先，将力量或敏捷作为你的最高属性值。第二高的属性值应是体质；若你打算倚重施法和猎魔人备战，则应选择智力。其次，选择隐士或化外之民背景。"
+							],
+							"ENG_name": "Quick Build"
+						},
+						{
+							"name": "可选规则：兼职",
+							"type": "entries",
+							"entries": [
+								"如果你使用《玩家手册》中的兼职规则，以下是你在取得猎魔人等级时需要了解的内容。",
+								{
+									"name": "属性值下限",
+									"type": "entries",
+									"entries": [
+										"你必须力量或敏捷至少为13，且智力至少为13，才能获得此职业的等级；若你已是一名猎魔人，则须满足此条件才能获得其他职业的等级。"
+									],
+									"ENG_name": "Ability Score Minimum"
+								},
+								{
+									"name": "熟练项",
+									"type": "entries",
+									"entries": [
+										"若猎魔人并非你的初始职业，你将获得轻型护甲、简易与军用近战武器以及弩的熟练项。"
+									],
+									"ENG_name": "Proficiencies"
+								}
+							],
+							"ENG_name": "Optional Rule: Multiclassing"
+						},
+						{
+							"name": "可选规则：青草试炼",
+							"type": "entries",
+							"entries": [
+								"人类种族变体：青草试炼详见本职业文档末尾。"
+							],
+							"ENG_name": "Optional Rule: Trial of the Grasses"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "School of the Bear",
+			"name": "熊学派",
+			"shortName": "熊学派",
+			"source": "WITCHERHLA",
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"page": 7,
+			"subclassFeatures": [
+				"熊学派|猎魔人|WITCHERHLA|熊学派|WITCHERHLA|1",
+				"不屈不挠|猎魔人|WITCHERHLA|熊学派|WITCHERHLA|6",
+				"致命反击|猎魔人|WITCHERHLA|熊学派|WITCHERHLA|10",
+				"天生再生|猎魔人|WITCHERHLA|熊学派|WITCHERHLA|14",
+				"原初猛兽|猎魔人|WITCHERHLA|熊学派|WITCHERHLA|18"
+			]
+		},
+		{
+			"ENG_name": "School of the Cat",
+			"name": "猫学派",
+			"shortName": "猫学派",
+			"source": "WITCHERHLA",
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"page": 8,
+			"subclassFeatures": [
+				"猫学派|猎魔人|WITCHERHLA|猫学派|WITCHERHLA|1",
+				"骚扰|猎魔人|WITCHERHLA|猫学派|WITCHERHLA|6",
+				"仓促撤退|猎魔人|WITCHERHLA|猫学派|WITCHERHLA|10",
+				"追猎者连击|猎魔人|WITCHERHLA|猫学派|WITCHERHLA|14",
+				"捕食者的目标|猎魔人|WITCHERHLA|猫学派|WITCHERHLA|18"
+			]
+		},
+		{
+			"ENG_name": "School of the Griffin",
+			"name": "狮鹫学派",
+			"shortName": "狮鹫学派",
+			"source": "WITCHERHLA",
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"page": 9,
+			"subclassSpells": [
+				"魅惑类人|phb",
+				"火流|WITCHERHLA",
+				"睡眠术|phb",
+				"横扫|WITCHERHLA",
+				"目盲术/耳聋术|phb",
+				"锁链|WITCHERHLA",
+				"守护者|WITCHERHLA",
+				"凛霜|WITCHERHLA",
+				"报应|WITCHERHLA"
+			],
+			"subclassFeatures": [
+				"狮鹫学派|猎魔人|WITCHERHLA|狮鹫学派|WITCHERHLA|1",
+				"猎魔人法术变体|猎魔人|WITCHERHLA|狮鹫学派|WITCHERHLA|6",
+				"奥术还击|猎魔人|WITCHERHLA|狮鹫学派|WITCHERHLA|10",
+				"武技施法|猎魔人|WITCHERHLA|狮鹫学派|WITCHERHLA|14",
+				"双重施法|猎魔人|WITCHERHLA|狮鹫学派|WITCHERHLA|18"
+			]
+		},
+		{
+			"ENG_name": "School of the Manticore",
+			"name": "蝎尾狮学派",
+			"shortName": "蝎尾狮学派",
+			"source": "WITCHERHLA",
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"page": 10,
+			"subclassFeatures": [
+				"蝎尾狮学派|猎魔人|WITCHERHLA|蝎尾狮学派|WITCHERHLA|1",
+				"炼金行家|猎魔人|WITCHERHLA|蝎尾狮学派|WITCHERHLA|6",
+				"人肉盾牌|猎魔人|WITCHERHLA|蝎尾狮学派|WITCHERHLA|10",
+				"精通炼金行家|猎魔人|WITCHERHLA|蝎尾狮学派|WITCHERHLA|14",
+				"逆流而立|猎魔人|WITCHERHLA|蝎尾狮学派|WITCHERHLA|18"
+			]
+		},
+		{
+			"ENG_name": "School of the Viper",
+			"name": "毒蛇学派",
+			"shortName": "毒蛇学派",
+			"source": "WITCHERHLA",
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"page": 11,
+			"subclassFeatures": [
+				"毒蛇学派|猎魔人|WITCHERHLA|毒蛇学派|WITCHERHLA|1",
+				"爆炸备战|猎魔人|WITCHERHLA|毒蛇学派|WITCHERHLA|6",
+				"精通毒蛇打击|猎魔人|WITCHERHLA|毒蛇学派|WITCHERHLA|10",
+				"快速打击|猎魔人|WITCHERHLA|毒蛇学派|WITCHERHLA|14",
+				"毒蛇反射|猎魔人|WITCHERHLA|毒蛇学派|WITCHERHLA|18"
+			]
+		},
+		{
+			"ENG_name": "School of the Wolf",
+			"name": "狼学派",
+			"shortName": "狼学派",
+			"source": "WITCHERHLA",
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"page": 12,
+			"subclassFeatures": [
+				"狼学派|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|1",
+				"充分备战|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|6",
+				"精通重击|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|6",
+				"精通奥术打击|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|10",
+				"精通充分备战|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|14",
+				"顶级样本|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Witcher School Feature",
+			"name": "猎魔人学派特性",
+			"source": "WITCHERHLA",
+			"page": 4,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在1级时，你选择一个最能体现你猎魔风格的训练学派。你的猎魔人学派会给予你若干特性。"
+			]
+		},
+		{
+			"ENG_name": "Witcher's Bestiary",
+			"name": "猎魔人的怪物图鉴",
+			"source": "WITCHERHLA",
+			"page": 4,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"猎魔人的怪物图鉴是猎魔人记录无数怪物长处与弱点之处。通过长年累月研读你的怪物图鉴，你在战斗开始时有机会回想起所面对的某只非类人生物的相关知识。",
+				"当你掷先攻时，你可以选择进行一次由DM决定的基于智力的技能检定，以回想起关于某个你能看见的生物的有用信息。你必须在DM设定的DC下成功（多数情况下取15较为合适）。若你成功，则你对那生物（或与其同类型的其他生物）进行的第一次攻击动作或施法动作中的攻击检定获得优势。或者，你也可以令那生物（或与其同类型的其他生物）对抗你的一个法术或能力的第一次豁免检定具有劣势。",
+				"若你在1分钟内未使用此益处，则其失效。你可以使用此特性两次，完成一次长休后恢复所有耗用的次数。"
+			]
+		},
+		{
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
+			"source": "WITCHERHLA",
+			"page": 4,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"同样在2级时，你采用一种特定的战斗风格作为你的专长。{@filter 从以下选项中选择其一|optionalfeatures|source=COMFightStyle|feature type=FS:Witcher}。你不能多次选取同一战斗风格选项，即使你之后再次获得选择机会也一样。"
+			]
+		},
+		{
+			"ENG_name": "Witcher Spellcasting",
+			"name": "猎魔人施法",
+			"source": "WITCHERHLA",
+			"page": 4,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"在2级时，你已习得一种初阶的魔法形式，能通过快速结出手势来产生魔法效应。施放猎魔人法术需要空出一只手来完成法术的姿势成分。",
+				{
+					"name": "法术位",
+					"type": "entries",
+					"entries": [
+						"猎魔人职业表展示了你可用来施放猎魔人法术的法术位数量。施放这些猎魔人法术之一时，你必须消耗一个该法术环阶或更高环阶的法术位。如猎魔人职业表所示，你可以在更高等级习得更多自选的猎魔人法术。完成一次长休后，你恢复所有耗用的法术位。",
+						"例如，若你已知1环法术{@spell 阿尔德|WITCHERHLA}，并有一个1环和一个2环法术位可用，你可以用其中任一法术位来施放{@spell 阿尔德|WITCHERHLA}。"
+					],
+					"ENG_name": "Spell Slots"
+				},
+				{
+					"name": "1环及更高的已知法术",
+					"type": "entries",
+					"entries": [
+						"你已知两个{@filter 由你从猎魔人法术列表中自选的1环法术|spells|level=1|class=猎魔人（WITCHERHLA）}。",
+						"猎魔人职业表的\"已知法术\"栏展示了你何时能习得更多自选的猎魔人法术。每个法术的环阶都必须是你拥有对应法术位的环阶。例如，当你在此职业到达6级时，你可以习得一个新的1环或2环法术。",
+						"此外，当你在此职业提升等级时，可以选择一个你已知的猎魔人法术，用{@i 猎魔人法术列表}中的另一个法术替换它，该法术的环阶同样必须是你拥有对应法术位的环阶。"
+					],
+					"ENG_name": "Spells Known off 1st Level and Higher"
+				},
+				{
+					"name": "施法属性",
+					"type": "entries",
+					"entries": [
+						"智力是你猎魔人法术的施法属性，因为你的施法之力源自严苛的学习与练习。每当法术提及你的施法属性时，你使用智力。此外，当你设定所施放的猎魔人法术的豁免DC，以及用它进行攻击检定时，你使用你的智力调整值。",
+						"{@b 豁免检定：}某些法术需要进行一次豁免检定以抵抗其效应。豁免DC计算如下：",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								"{@b 法术豁免DC} = 8 + 你的熟练加值 + 你的智力调整值",
+								"{@b 法术攻击调整值} = 你的熟练加值 + 你的智力调整值"
+							]
+						}
+					],
+					"ENG_name": "Spellcasting Ability"
+				},
+				{
+					"name": "猎魔人法术列表",
+					"type": "entries",
+					"entries": [
+						"以下是猎魔人可以习得的法术列表。除了少数戏法外，猎魔人在训练过程中还会逐渐掌握简单的猎魔人法术",
+						{
+							"name": "戏法（0环）",
+							"type": "list",
+							"items": [
+								"{@spell 控火术|xge}",
+								"{@spell 交友术|phb}",
+								"{@spell 霜噬|xge}",
+								"{@spell 神导术|phb}",
+								"{@spell 舞风术|xge}",
+								"{@spell 闪电牵引|tce}",
+								"{@spell 心灵之楔|tce}",
+								"{@spell 魔法伎俩|phb}",
+								"{@spell 燃火术|phb}",
+								"{@spell 冷冻射线|phb}"
+							],
+							"ENG_name": "Cantrips (0 Level)"
+						},
+						{
+							"name": "1环",
+							"type": "list",
+							"items": [
+								"{@spell 阿尔德|WITCHERHLA}",
+								"{@spell 亚克席|WITCHERHLA}",
+								"{@spell 魅惑类人|phb}（先决条件：狮鹫学派，{@spell 亚克席|WITCHERHLA}）",
+								"{@spell 火流|WITCHERHLA}（先决条件：狮鹫学派，{@spell 伊格尼|WITCHERHLA}）",
+								"{@spell 伊格尼|WITCHERHLA}",
+								"{@spell 昆恩|WITCHERHLA}",
+								"{@spell 睡眠术|phb}（先决条件：狮鹫学派，{@spell 索姆尼|WITCHERHLA}）",
+								"{@spell 横扫|WITCHERHLA}（先决条件：狮鹫学派，{@spell 阿尔德|WITCHERHLA}）"
+							],
+							"ENG_name": "1st Level"
+						},
+						{
+							"name": "2环",
+							"type": "list",
+							"items": [
+								"{@spell 目盲术/耳聋术|phb}（先决条件：狮鹫学派，{@spell 苏皮雷|WITCHERHLA}）",
+								"{@spell 锁链|WITCHERHLA}（先决条件：狮鹫学派，{@spell 亚登|WITCHERHLA}）",
+								"{@spell 希瑞奥托普|WITCHERHLA}",
+								"{@spell 苏皮雷|WITCHERHLA}"
+							],
+							"ENG_name": "2nd Level"
+						},
+						{
+							"name": "3环",
+							"type": "list",
+							"items": [
+								"{@spell 冰凌|WITCHERHLA}",
+								"{@spell 守护者|WITCHERHLA}（先决条件：狮鹫学派，{@spell 希瑞奥托普|WITCHERHLA}）"
+							],
+							"ENG_name": "3rd Level"
+						},
+						{
+							"name": "4环",
+							"type": "list",
+							"items": [
+								"{@spell 凛霜|WITCHERHLA}（先决条件：狮鹫学派，{@spell 冰凌|WITCHERHLA}）",
+								"{@spell 亚登|WITCHERHLA}"
+							],
+							"ENG_name": "4th Level"
+						},
+						{
+							"name": "5环",
+							"type": "list",
+							"items": [
+								"{@spell 报应|WITCHERHLA}（先决条件：狮鹫学派，{@spell 昆恩|WITCHERHLA}）",
+								"{@spell 索姆尼|WITCHERHLA}"
+							],
+							"ENG_name": "5th Level"
+						}
+					],
+					"ENG_name": "Witcher Spell list"
+				}
+			]
+		},
+		{
+			"ENG_name": "Blade Oil",
+			"name": "剑油",
+			"source": "WITCHERHLA",
+			"page": 5,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级起，你可以用附赠动作将剑油涂在一件武器或弹药上。每回合一次，当你用该武器或弹药进行的武器攻击造成伤害时，你可以选择一个武器伤害骰并重骰它，取较高的结果。剑油的效应持续一分钟，每次长休你可以使用此特性两次。"
+			]
+		},
+		{
+			"ENG_name": "Witcher Preparation",
+			"name": "猎魔人备战",
+			"source": "WITCHERHLA",
+			"page": 5,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"猎魔人成功的要诀往往在于他们的备战\u2014\u2014既有炼金，也有制造。在他们的装备中，猎魔人素以在与怪物作战时使用特制的{@filter 魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P;OF:WITCHERHLA:PG;OF:WITCHERHLA:PS;OF:WITCHERHLA:PM}和{@filter 手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B;OF:WITCHERHLA:BG;OF:WITCHERHLA:BSOF:WITCHERHLA:BM}而闻名。",
+				"从3级起，你获得猎魔人备战特性。凭借此特性，你依你所知的配方与图纸备制若干{@filter 魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}与{@filter 手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B}，之后你可以使用它们的次数等于你的熟练加值。{@b 饮用一瓶魔药或使用一枚手雷即消耗一次猎魔人备战。}",
+				"要恢复此特性耗用的次数，你必须随身携带炼金工具，并在长休期间投入1小时进行备制。",
+				"{@b 豁免检定：}某些猎魔人备战物品需要进行一次豁免检定以抵抗其效应。豁免检定使用法术豁免DC。",
+				{
+					"name": "魔药",
+					"type": "entries",
+					"entries": [
+						"{@filter 魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}",
+						"你可以备制一定数量的魔药配方（列于\"炼金\"节下）。随着猎魔人等级提升，你能备制更多魔药，如猎魔人职业表的\"已备魔药\"栏所示。你酿造更强版本魔药的能力会在7级、11级和15级提升。",
+						"单瓶魔药的效应在其持续时间内不会与自身叠加；若在第一瓶魔药的效应消退前使用同一魔药，则第一瓶的效应消散，由第二瓶的效应取代。",
+						"猎魔人的魔药毒性极强，只有历经磨砺与训练的猎魔人才能承受其中的毒素。非猎魔人喝下猎魔人魔药时，必须通过一次对抗你法术豁免DC的体质豁免，否则中毒1分钟。即使豁免成功，他们也会受到由所饮魔药等级决定的毒素伤害，且无法获得魔药的任何益处。",
+						"{@b 饮用猎魔人魔药需要你用动作或附赠动作（任选其一）。}"
+					],
+					"ENG_name": "Potions"
+				},
+				{
+					"name": "手雷",
+					"type": "entries",
+					"entries": [
+						"{@filter 手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B}",
+						"魔药并非猎魔人猎杀怪物时唯一的备战手段。他们还可以备制手雷来为自己增添胜算（列于\"炼金\"节下）。猎魔人在3级时能够备制2种自选手雷的图纸。如猎魔人职业表的\"已备手雷\"栏所示，你可以在7级、11级和15级备制额外的图纸以及手雷的改良版本。",
+						"{@b 使用一枚手雷需要一个动作。}"
+					],
+					"ENG_name": "Handbombs"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 4,
+			"header": 1,
+			"entries": [
+				"当你达到4级，以及随后的8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Extra Attack",
+			"name": "额外攻击",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"从5级起，当你在你的回合采取{@action 攻击}动作时，你可以攻击两次，而非一次。"
+			]
+		},
+		{
+			"ENG_name": "Monsters Are My Trade",
+			"name": "猎怪为业",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"同样在5级时，你提升了在自己这一行当里挣得更高报酬的能力。在为怪物猎杀的委托价格或酬金讨价还价时，你所有基于魅力的技能检定都获得优势。"
+			]
+		},
+		{
+			"ENG_name": "Blade Oil Superior",
+			"name": "高等剑油",
+			"source": "WITCHERHLA",
+			"page": 5,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"从6级起，你可以用附赠动作将剑油涂在一件武器或弹药上。每回合一次，当你用该武器或弹药进行的武器攻击造成伤害时，你可以选择一个武器伤害骰并重骰它，取较高的结果。剑油的效应持续一分钟，每次长休你可以使用此特性两次。",
+				"在6级时，你改良了剑油，使其额外能够在一回合内阻止生物的生命值回复。"
+			]
+		},
+		{
+			"ENG_name": "Witcher School Feature",
+			"name": "猎魔人学派特性",
+			"source": "WITCHERHLA",
+			"page": 4,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"在6级时，你选择一个最能体现你猎魔风格的训练学派。你的猎魔人学派会给予你若干特性。"
+			]
+		},
+		{
+			"ENG_name": "Greater Witcher Preparation",
+			"name": "强效猎魔人备战",
+			"source": "WITCHERHLA",
+			"page": 5,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"猎魔人成功的要诀往往在于他们的备战\u2014\u2014既有炼金，也有制造。在他们的装备中，猎魔人素以在与怪物作战时使用特制的{@filter 魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P;OF:WITCHERHLA:PG;OF:WITCHERHLA:PS;OF:WITCHERHLA:PM}和{@filter 手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B;OF:WITCHERHLA:BG;OF:WITCHERHLA:BSOF:WITCHERHLA:BM}而闻名。",
+				"从7级起，你获得猎魔人备战特性。凭借此特性，你依你所知的配方与图纸备制若干{@filter 强效魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PG}与{@filter 强效手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BG}，之后你可以使用它们的次数等于你的熟练加值。{@b 饮用一瓶魔药或使用一枚手雷即消耗一次猎魔人备战。}",
+				"要恢复此特性耗用的次数，你必须随身携带炼金工具，并在长休期间投入1小时进行备制。",
+				"{@b 豁免检定：}某些猎魔人备战物品需要进行一次豁免检定以抵抗其效应。豁免检定使用法术豁免DC。",
+				{
+					"name": "强效魔药",
+					"type": "entries",
+					"entries": [
+						"{@filter 强效魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PG}",
+						"你可以备制一定数量的魔药配方（列于\"炼金\"节下）。随着猎魔人等级提升，你能备制更多魔药，如猎魔人职业表的\"已备魔药\"栏所示。你酿造更强版本魔药的能力会在7级、11级和15级提升。",
+						"单瓶魔药的效应在其持续时间内不会与自身叠加；若在第一瓶魔药的效应消退前使用同一魔药，则第一瓶的效应消散，由第二瓶的效应取代。",
+						"猎魔人的魔药毒性极强，只有历经磨砺与训练的猎魔人才能承受其中的毒素。非猎魔人喝下猎魔人魔药时，必须通过一次对抗你法术豁免DC的体质豁免，否则中毒1分钟。即使豁免成功，他们也会受到由所饮魔药等级决定的毒素伤害，且无法获得魔药的任何益处。",
+						"{@b 饮用猎魔人魔药需要你用动作或附赠动作（任选其一）。}"
+					],
+					"ENG_name": "Greater Potions"
+				},
+				{
+					"name": "强效手雷",
+					"type": "entries",
+					"entries": [
+						"{@filter 强效手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BG}",
+						"魔药并非猎魔人猎杀怪物时唯一的备战手段。他们还可以备制手雷来为自己增添胜算（列于\"炼金\"节下）。猎魔人在3级时能够备制2种自选手雷的图纸。如猎魔人职业表的\"已备手雷\"栏所示，你可以在7级、11级和15级备制额外的图纸以及手雷的改良版本。",
+						"{@b 使用一枚手雷需要一个动作。}"
+					],
+					"ENG_name": "Greater Handbombs"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 8,
+			"header": 1,
+			"entries": [
+				"当你达到4级，以及随后的8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Witcher School Feature",
+			"name": "猎魔人学派特性",
+			"source": "WITCHERHLA",
+			"page": 4,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"在10级时，你选择一个最能体现你猎魔风格的训练学派。你的猎魔人学派会给予你若干特性。"
+			]
+		},
+		{
+			"ENG_name": "Honed Edge",
+			"name": "磨砺锋刃",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 11,
+			"header": 1,
+			"entries": [
+				"从11级起，你维护武器的水平已精进到使你造成的伤害明显更强。你的武器攻击现在额外造成1d8点伤害。"
+			]
+		},
+		{
+			"ENG_name": "Superior Witcher Preparation",
+			"name": "高等猎魔人备战",
+			"source": "WITCHERHLA",
+			"page": 5,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 11,
+			"header": 1,
+			"entries": [
+				"猎魔人成功的要诀往往在于他们的备战\u2014\u2014既有炼金，也有制造。在他们的装备中，猎魔人素以在与怪物作战时使用特制的{@filter 魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P;OF:WITCHERHLA:PG;OF:WITCHERHLA:PS;OF:WITCHERHLA:PM}和{@filter 手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B;OF:WITCHERHLA:BG;OF:WITCHERHLA:BSOF:WITCHERHLA:BM}而闻名。",
+				"从11级起，你获得猎魔人备战特性。凭借此特性，你依你所知的配方与图纸备制若干{@filter 高等魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PS}与{@filter 高等手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BS}，之后你可以使用它们的次数等于你的熟练加值。{@b 饮用一瓶魔药或使用一枚手雷即消耗一次猎魔人备战。}",
+				"要恢复此特性耗用的次数，你必须随身携带炼金工具，并在长休期间投入1小时进行备制。",
+				"{@b 豁免检定：}某些猎魔人备战物品需要进行一次豁免检定以抵抗其效应。豁免检定使用法术豁免DC。",
+				{
+					"name": "高等魔药",
+					"type": "entries",
+					"entries": [
+						"{@filter 高等魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PS}",
+						"你可以备制一定数量的魔药配方（列于\"炼金\"节下）。随着猎魔人等级提升，你能备制更多魔药，如猎魔人职业表的\"已备魔药\"栏所示。你酿造更强版本魔药的能力会在7级、11级和15级提升。",
+						"单瓶魔药的效应在其持续时间内不会与自身叠加；若在第一瓶魔药的效应消退前使用同一魔药，则第一瓶的效应消散，由第二瓶的效应取代。",
+						"猎魔人的魔药毒性极强，只有历经磨砺与训练的猎魔人才能承受其中的毒素。非猎魔人喝下猎魔人魔药时，必须通过一次对抗你法术豁免DC的体质豁免，否则中毒1分钟。即使豁免成功，他们也会受到由所饮魔药等级决定的毒素伤害，且无法获得魔药的任何益处。",
+						"{@b 饮用猎魔人魔药需要你用动作或附赠动作（任选其一）。}"
+					],
+					"ENG_name": "Superior Potions"
+				},
+				{
+					"name": "高等手雷",
+					"type": "entries",
+					"entries": [
+						"{@filter 高等手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BS}",
+						"魔药并非猎魔人猎杀怪物时唯一的备战手段。他们还可以备制手雷来为自己增添胜算（列于\"炼金\"节下）。猎魔人在3级时能够备制2种自选手雷的图纸。如猎魔人职业表的\"已备手雷\"栏所示，你可以在7级、11级和15级备制额外的图纸以及手雷的改良版本。",
+						"{@b 使用一枚手雷需要一个动作。}"
+					],
+					"ENG_name": "Superior Handbombs"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 12,
+			"header": 1,
+			"entries": [
+				"当你达到4级，以及随后的8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Witcher School Feature",
+			"name": "猎魔人学派特性",
+			"source": "WITCHERHLA",
+			"page": 4,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"在14级时，你选择一个最能体现你猎魔风格的训练学派。你的猎魔人学派会给予你若干特性。"
+			]
+		},
+		{
+			"ENG_name": "Master Witcher Preparation",
+			"name": "大师级猎魔人备战",
+			"source": "WITCHERHLA",
+			"page": 5,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"猎魔人成功的要诀往往在于他们的备战\u2014\u2014既有炼金，也有制造。在他们的装备中，猎魔人素以在与怪物作战时使用特制的{@filter 魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P;OF:WITCHERHLA:PG;OF:WITCHERHLA:PS;OF:WITCHERHLA:PM}和{@filter 手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:B;OF:WITCHERHLA:BG;OF:WITCHERHLA:BSOF:WITCHERHLA:BM}而闻名。",
+				"从15级起，你获得猎魔人备战特性。凭借此特性，你依你所知的配方与图纸备制若干{@filter 大师级魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PM}与{@filter 大师级手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BM}，之后你可以使用它们的次数等于你的熟练加值。{@b 饮用一瓶魔药或使用一枚手雷即消耗一次猎魔人备战。}",
+				"要恢复此特性耗用的次数，你必须随身携带炼金工具，并在长休期间投入1小时进行备制。",
+				"{@b 豁免检定：}某些猎魔人备战物品需要进行一次豁免检定以抵抗其效应。豁免检定使用法术豁免DC。",
+				{
+					"name": "大师级魔药",
+					"type": "entries",
+					"entries": [
+						"{@filter 大师级魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:PM}",
+						"你可以备制一定数量的魔药配方（列于\"炼金\"节下）。随着猎魔人等级提升，你能备制更多魔药，如猎魔人职业表的\"已备魔药\"栏所示。你酿造更强版本魔药的能力会在7级、11级和15级提升。",
+						"单瓶魔药的效应在其持续时间内不会与自身叠加；若在第一瓶魔药的效应消退前使用同一魔药，则第一瓶的效应消散，由第二瓶的效应取代。",
+						"猎魔人的魔药毒性极强，只有历经磨砺与训练的猎魔人才能承受其中的毒素。非猎魔人喝下猎魔人魔药时，必须通过一次对抗你法术豁免DC的体质豁免，否则中毒1分钟。即使豁免成功，他们也会受到由所饮魔药等级决定的毒素伤害，且无法获得魔药的任何益处。",
+						"{@b 饮用猎魔人魔药需要你用动作或附赠动作（任选其一）。}"
+					],
+					"ENG_name": "Master Potions"
+				},
+				{
+					"name": "大师级手雷",
+					"type": "entries",
+					"entries": [
+						"{@filter 大师级手雷|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:BM}",
+						"魔药并非猎魔人猎杀怪物时唯一的备战手段。他们还可以备制手雷来为自己增添胜算（列于\"炼金\"节下）。猎魔人在3级时能够备制2种自选手雷的图纸。如猎魔人职业表的\"已备手雷\"栏所示，你可以在7级、11级和15级备制额外的图纸以及手雷的改良版本。",
+						"{@b 使用一枚手雷需要一个动作。}"
+					],
+					"ENG_name": "Master Handbombs"
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 16,
+			"header": 1,
+			"entries": [
+				"当你达到4级，以及随后的8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Witcher School Feature",
+			"name": "猎魔人学派特性",
+			"source": "WITCHERHLA",
+			"page": 4,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"在18级时，你选择一个最能体现你猎魔风格的训练学派。你的猎魔人学派会给予你若干特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 19,
+			"header": 1,
+			"entries": [
+				"当你达到4级，以及随后的8级、12级、16级和19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Master Witcher",
+			"name": "猎魔大师",
+			"source": "WITCHERHLA",
+			"page": 6,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"level": 20,
+			"header": 1,
+			"entries": [
+				"在20级时，你已跻身猎魔大师之列。你可以从以下能力中选择一项，作为你猎魔人战斗风格的一部分：",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "战斗法术大师",
+							"entries": [
+								"当你以2环或更高环阶的法术位施放法术杀死敌人时，每杀死一个生物，你就恢复一个已消耗的法术位，其环阶必须低于所施法术的环阶。被杀死的敌人必须具有等于你猎魔人等级一半或更高的挑战等级，此效应才会生效。",
+								"例如，若你施放一个4环法术并杀死一个CR等于你猎魔人等级一半或更高的生物，你可以恢复一个已消耗的1环、2环或3环法术位。若你以此方式杀死多个生物，则每杀死一个生物都可以恢复一个已消耗的法术位。"
+							],
+							"ENG_name": "Combat Spell Master"
+						},
+						{
+							"type": "entries",
+							"name": "致命猛攻",
+							"entries": [
+								"每回合一次，当你在你的回合采取攻击动作，或用附赠动作进行攻击时，你作为该动作的一部分进行一次额外的武器攻击。你所有武器攻击的重击范围也扩大1，并可与你可能已有的其他加值叠加。"
+							],
+							"ENG_name": "Deadly Onslaught"
+						},
+						{
+							"type": "entries",
+							"name": "屠群者",
+							"entries": [
+								"在群敌围攻之下你愈战愈勇，获得以下益处：",
+								{
+									"type": "list",
+									"items": [
+										"你抵消具有集群战术特性的生物通常带来的优势。",
+										"当有三个或更多敌人处于你10尺内时，你的AC和伤害掷骰获得+3加值。"
+									]
+								}
+							],
+							"ENG_name": "Swarmslayer"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Heavy Gear Training",
+			"name": "重装训练",
+			"source": "WITCHERHLA",
+			"page": 7,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "熊学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"armorProficiencies": [
+				{
+					"medium": true,
+					"heavy": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"在1级选择此学派时，你获得以下特性：",
+				{
+					"type": "list",
+					"items": [
+						"你获得中型和重型护甲的熟练项。",
+						"你可以选择将你的智力豁免熟练替换为力量豁免熟练。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "School of the Bear",
+			"name": "熊学派",
+			"source": "WITCHERHLA",
+			"page": 7,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "熊学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"熊学派猎魔人通常是猎魔人中最坚韧的一群。他们并不试图闪避敌人的攻击，反而逼得敌人近身，再以致命的打击倾泻而下。他们的训练通常着眼于在战斗中保持生存能力，坚信先倒下的一定是敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "重装训练|猎魔人|WITCHERHLA|熊学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "乌尔森坚韧|猎魔人|WITCHERHLA|熊学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "坚守阵地|猎魔人|WITCHERHLA|熊学派|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Stand Your Ground",
+			"name": "坚守阵地",
+			"source": "WITCHERHLA",
+			"page": 7,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "熊学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"同样在1级时，你能借助战斗中站稳的阵位打出更有力的打击。若你自上回合开始以来未曾移动，你的伤害掷骰获得{@dice 1d4}加值。以任何方式离开你站稳的阵位都会打断此特性。",
+				"从10级起，该伤害加值提升为{@dice 1d6}。"
+			]
+		},
+		{
+			"ENG_name": "Ursun Fortitude",
+			"name": "乌尔森坚韧",
+			"source": "WITCHERHLA",
+			"page": 7,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "熊学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从1级起，你从训练中获得增强的体质，你每个猎魔人等级额外获得2点生命值。"
+			]
+		},
+		{
+			"ENG_name": "Implacable",
+			"name": "不屈不挠",
+			"source": "WITCHERHLA",
+			"page": 7,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "熊学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你怀有在战斗中坚持下去的无穷决心。在你回合的附赠动作中，{@b 你可以恢复等于1d10 + 你的体质调整值 + 你的猎魔人等级的生命值}。",
+				"一旦使用此特性，你必须完成一次短休或长休后才能再次使用。",
+				"从14级起，你在一次休息前可以使用它两次，但每回合限一次。"
+			]
+		},
+		{
+			"ENG_name": "Deadly Counter",
+			"name": "致命反击",
+			"source": "WITCHERHLA",
+			"page": 7,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "熊学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级起，当你受到某个你能看见的生物的伤害时，你在下回合对该生物的第一次攻击检定获得优势。"
+			]
+		},
+		{
+			"ENG_name": "Innate Regeneration",
+			"name": "天生再生",
+			"source": "WITCHERHLA",
+			"page": 7,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "熊学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你获得天生的再生之力。在你的每个回合开始时，若你的生命值低于上限的一半，你恢复等于你的体质调整值（至少为1）+ 你的熟练加值一半（向下取整）的生命值。若你的生命值为0，或你处于石化或昏迷状态，则无法获得此益处。"
+			]
+		},
+		{
+			"ENG_name": "Primal Beast",
+			"name": "原初猛兽",
+			"source": "WITCHERHLA",
+			"page": 7,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "熊学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你的力量或体质值提升4点。该属性的上限现在为24。"
+			]
+		},
+		{
+			"ENG_name": "Agile Strike",
+			"name": "敏捷打击",
+			"source": "WITCHERHLA",
+			"page": 8,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "猫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从1级起，当你用动作疾走、撤离或躲藏时，你可以用附赠动作进行一次武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Cat-like Training",
+			"name": "似猫训练",
+			"source": "WITCHERHLA",
+			"page": 8,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "猫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"weaponProficiencies": [
+				{
+					"martial": true,
+					"simple": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"在1级选择此学派时，你获得以下特性：",
+				{
+					"type": "list",
+					"items": [
+						"你获得简易和军用远程武器的熟练项。",
+						"你可以选择在起始装备中以{@item 短弓|PHB}和{@item 箭矢 (20)|PHB|20支箭}替换{@item 轻弩|PHB}和{@item 弩矢(20)|PHB|20支弩箭}。",
+						"只要你双手都空着，你就拥有等于你基础移动速度的攀爬速度。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mental Fortitude",
+			"name": "精神坚韧",
+			"source": "WITCHERHLA",
+			"page": 8,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "猫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"同样在1级时，你与他人的情感疏离使你能够抵御试图在精神上影响你的生物。当某个你能看见的生物试图魅惑或恐慌你时，你的豁免检定获得优势。"
+			]
+		},
+		{
+			"ENG_name": "School of the Cat",
+			"name": "猫学派",
+			"source": "WITCHERHLA",
+			"page": 8,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "猫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"猫学派猎魔人的训练专注于灵巧或远程的战斗方式，一边造成伤害一边规避伤害。猫学派的猎魔人使用远程武器的频率明显高于其他学派的猎魔人，而且往往有着情感疏离、冷漠无情的名声。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "似猫训练|猎魔人|WITCHERHLA|猫学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "敏捷打击|猎魔人|WITCHERHLA|猫学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "精神坚韧|猎魔人|WITCHERHLA|猫学派|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Harass",
+			"name": "骚扰",
+			"source": "WITCHERHLA",
+			"page": 8,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "猫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级起，在你的回合内一次，当你以攻击命中一个生物时，该生物对除你以外的生物进行的第一次攻击具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Hasty Retreat",
+			"name": "仓促撤退",
+			"source": "WITCHERHLA",
+			"page": 8,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "猫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，当你受到某个你能看见的生物的伤害时，你可以用反应立即远离移动至多你的移动速度的距离。此次移动期间对你进行的任何借机攻击都具有劣势。"
+			]
+		},
+		{
+			"ENG_name": "Stalker's Flurry",
+			"name": "追猎者连击",
+			"source": "WITCHERHLA",
+			"page": 8,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "猫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级起，你的攻击快到能将失手化作再度出击。每回合一次，当你的一次武器攻击未命中时，你可以作为同一动作的一部分再进行一次武器攻击。"
+			]
+		},
+		{
+			"ENG_name": "Predator's Target",
+			"name": "捕食者的目标",
+			"source": "WITCHERHLA",
+			"page": 8,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "猫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从18级起，你可以将你60尺内的一个生物确立为猎物。凭借你所能回想的关于该生物的信息，你利用其弱点，获得以下效应：",
+				{
+					"type": "list",
+					"items": [
+						"你对目标的攻击检定获得+2加值。",
+						"你对目标的武器攻击额外造成1d8点伤害。",
+						"你对抗该生物的豁免检定获得优势。",
+						"在效应持续期间，每当你移动时，你都能感知自己正在靠近还是远离你的猎物。"
+					]
+				},
+				"此效应最长持续8小时，即使目标移出范围也是如此。只有当目标被杀死或被制服，或你没有任何仍在生效的已确立猎物时，你才能确立新的猎物。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Adept",
+			"name": "奥术行家",
+			"source": "WITCHERHLA",
+			"page": 9,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狮鹫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在1级选择此学派时，你获得以下特性：",
+				{
+					"type": "list",
+					"items": [
+						"你比其他学派的猎魔人习得更多法术：在2级时多习得一个法术，并在6级、11级和16级时再次多习得一个。",
+						"除猎魔人法术外，你还习得若干戏法：在1级时提前从{@filter 猎魔人法术列表|spells|class=猎魔人（WITCHERHLA）}中习得两个戏法，并在4级、7级和11级时各多习得一个。这些戏法列于{@i 猎魔人施法}一节中。",
+						"你在奥术上的广泛研究为你的猎魔人法术带来额外的法术效应。这些效应附列于{@i 猎魔人施法}一节的各个法术条目中。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Arcane Scholar",
+			"name": "奥术学者",
+			"source": "WITCHERHLA",
+			"page": 9,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狮鹫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"languageProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"history": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"同样在1级时，你与其他学者一同研习、并与贵族往来的经历给予你以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得奥秘和历史的熟练项。",
+						"你学会两种额外的自选语言。",
+						"当你与上流社会成员交往时，你的基于魅力的技能检定获得优势。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "School of the Griffin",
+			"name": "狮鹫学派",
+			"source": "WITCHERHLA",
+			"page": 9,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狮鹫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"狮鹫学派猎魔人将大部分时间用于研习他们的法艺。虽然他们并不荒废武技，但施展魔法时才最为致命。他们常与博学的学者以及求学若渴的贵族为伴、潜心钻研魔法，这往往使他们更容易赢得上层阶级的青睐。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术行家|猎魔人|WITCHERHLA|狮鹫学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术学者|猎魔人|WITCHERHLA|狮鹫学派|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Alternative Witcher Spells",
+			"name": "猎魔人法术变体",
+			"source": "WITCHERHLA",
+			"page": 9,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狮鹫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级起，你为你已知的法术习得替代的施法形态。例如，若你已知{@spell 伊格尼|WITCHERHLA}法术，你也会自动习得{@spell 火流|WITCHERHLA}法术。若你已知{@spell 希瑞奥托普|WITCHERHLA}法术，则一旦到达可习得该法术的等级，你就会自动习得{@spell 守护者|WITCHERHLA}法术。这些替代法术不计入你已知的法术数量。更多信息请参阅{@i 猎魔人施法}列表。"
+			]
+		},
+		{
+			"ENG_name": "Arcane Riposte",
+			"name": "奥术还击",
+			"source": "WITCHERHLA",
+			"page": 9,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狮鹫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你将你的智力调整值加到你以猎魔人戏法造成的伤害上。",
+				"此外，当你受到法术或魔法效应的伤害时，你可以抽取其中一部分魔法能量来强化你的法术。你施放的下一个伤害性法术对一个目标额外造成一个伤害骰的伤害。"
+			]
+		},
+		{
+			"ENG_name": "Martial Spellcasting",
+			"name": "武技施法",
+			"source": "WITCHERHLA",
+			"page": 9,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狮鹫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级起，你学会了用法术撕开生物防御的破绽。当生物受到你施放的法术伤害时，在你的下回合结束前，你对该生物进行的任何武器攻击都获得优势。"
+			]
+		},
+		{
+			"ENG_name": "Dual Casting",
+			"name": "双重施法",
+			"source": "WITCHERHLA",
+			"page": 9,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狮鹫学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，当你用动作施放法术时，你可以用附赠动作施放一个猎魔人戏法，即使其施法时间通常需要动作也一样"
+			]
+		},
+		{
+			"ENG_name": "Improved Fortitude",
+			"name": "精通坚韧",
+			"source": "WITCHERHLA",
+			"page": 10,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "蝎尾狮学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从1级起，你从训练中获得增强的体质，你每个猎魔人等级额外获得1点生命值。"
+			]
+		},
+		{
+			"ENG_name": "School of the Manticore",
+			"name": "蝎尾狮学派",
+			"source": "WITCHERHLA",
+			"page": 10,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "蝎尾狮学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"蝎尾狮学派猎魔人更重视防护与守御，而非一味造成过量伤害；他们以消耗战的思路应对战斗，躲在盾牌后方避开伤害，比敌人撑得更久。他们也精于研制猎魔人魔药，腰间或斜挎带上少有不挂数只药瓶的。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "盾牌专家|猎魔人|WITCHERHLA|蝎尾狮学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "精通坚韧|猎魔人|WITCHERHLA|蝎尾狮学派|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Shield Expert",
+			"name": "盾牌专家",
+			"source": "WITCHERHLA",
+			"page": 10,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "蝎尾狮学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"armorProficiencies": [
+				{
+					"medium": true,
+					"shield": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"在1级选择此学派时，你获得以下特性：",
+				{
+					"type": "list",
+					"items": [
+						"你获得中型护甲和盾牌的熟练项。",
+						"当你仅穿着中型护甲时，你的AC获得+1加值。",
+						"你可以用持盾的手来完成法术的姿势成分、喝魔药，或持握火把等非武器物件。",
+						"你可以用附赠动作以你的盾牌进行一次副手武器攻击。此攻击命中时造成{@dice 1d4}点钝击伤害，并具有灵巧属性。从10级起，此伤害提升为{@dice 1d6}。",
+						"你在3级、7级、11级和15级时可以各备制一个额外的自选魔药配方。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Alchemical Adept",
+			"name": "炼金行家",
+			"source": "WITCHERHLA",
+			"page": 10,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "蝎尾狮学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级起，你对{@filter 猎魔人魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}投入了更深入的研究，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"饮用任何猎魔人魔药都会给予你等于1d8 + 你的智力调整值的临时生命值。若某个魔药本身给予临时生命值，则将魔药给予的临时生命值与此能力给予的临时生命值相加。饮用燕子魔药时，你不获得临时生命值，而是在回复的第一回合额外恢复等于1d6 + 你的智力调整值的生命值。",
+						"每次长休中你饮用的第一瓶魔药不计入你的猎魔人备战次数。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Human Shield",
+			"name": "人肉盾牌",
+			"source": "WITCHERHLA",
+			"page": 10,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "蝎尾狮学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，当你5尺内的一个盟友受到非魔法攻击的伤害时，你可以用反应挡在盟友身前，由你自己承受该伤害。",
+				"此外，每次长休中你饮用的头两瓶魔药不计入你的猎魔人备战次数。"
+			]
+		},
+		{
+			"ENG_name": "Improved Alchemical Adept",
+			"name": "精通炼金行家",
+			"source": "WITCHERHLA",
+			"page": 10,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "蝎尾狮学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级起，你对{@filter 猎魔人魔药|optionalfeatures|source=WITCHERHLA|feature type=OF:WITCHERHLA:P}投入了更深入的研究，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"饮用任何猎魔人魔药都会给予你等于2d8 + 你的智力调整值的临时生命值。饮用燕子魔药时，你不获得临时生命值，而是在回复的第一回合额外恢复等于2d6 + 你的智力调整值的生命值。",
+						"每次长休中你饮用的头三瓶魔药不计入你的猎魔人备战次数。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Stand Against the Tide",
+			"name": "逆流而立",
+			"source": "WITCHERHLA",
+			"page": 10,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "蝎尾狮学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，当某个敌对生物的近战攻击未命中你时，你可以用反应迫使该生物对其近战范围内你选择的另一个生物（它自己除外）重试同一攻击。",
+				"此外，当你持用盾牌时，你受到的来自非魔法攻击的钝击、穿刺和挥砍伤害减少2点。"
+			]
+		},
+		{
+			"ENG_name": "School of the Viper",
+			"name": "毒蛇学派",
+			"source": "WITCHERHLA",
+			"page": 11,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "毒蛇学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"毒蛇学派猎魔人总是被人提防，因为他们素有承接任何委托的名声\u2014\u2014可不只是怪物。人们常看到他们双手各持一柄武器，力求尽快造成最大伤害。毕竟，死人可没法攻击你。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "毒蛇疾速|猎魔人|WITCHERHLA|毒蛇学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "毒蛇打击|猎魔人|WITCHERHLA|毒蛇学派|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Viper Strike",
+			"name": "毒蛇打击",
+			"source": "WITCHERHLA",
+			"page": 11,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "毒蛇学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"同样在1级时，若你仅持用一件具有轻型属性的武器，你可以用附赠动作进行一次武器攻击。",
+				"每回合一次，若你对一个生物的攻击未命中，而你在该回合的下一次攻击命中了该生物，你可以对其造成额外的{@dice 1d6}点伤害。",
+				"此外，若你在同一回合以至少两次近战武器攻击攻击了同一生物，你在你的回合获得一个额外的动作。该动作只能用来采取{@action 疾走}、{@action 撤离}、{@action 躲藏}或{@action 使用物件}动作。"
+			]
+		},
+		{
+			"ENG_name": "Viper's Speed",
+			"name": "毒蛇疾速",
+			"source": "WITCHERHLA",
+			"page": 11,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "毒蛇学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在1级选择此学派时，你获得以下特性：",
+				{
+					"type": "list",
+					"items": [
+						"当你仅穿着轻型护甲且未装备盾牌时，你的速度提高5尺。",
+						"持用武器时，你可以忽略法术的姿势成分要求。",
+						"你在7级、11级和15级时可以各备制一张额外的自选手雷图纸。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Explosive Preparation",
+			"name": "爆炸备战",
+			"source": "WITCHERHLA",
+			"page": 11,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "毒蛇学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级起，你对猎魔人手雷的备制投入了更深入的研究，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"手雷可以用动作或附赠动作（任选其一）投掷。",
+						"你制造的任何手雷的初始伤害额外增加等于1d6 + 你的智力调整值的伤害。",
+						"每次长休中你使用的第一枚手雷不计入你的猎魔人备战次数。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Viper Strike",
+			"name": "精通毒蛇打击",
+			"source": "WITCHERHLA",
+			"page": 11,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "毒蛇学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你对一个生物的第一次攻击之后的所有近战武器攻击都造成该额外伤害，无论第一次攻击命中与否。"
+			]
+		},
+		{
+			"ENG_name": "Rapid Strike",
+			"name": "快速打击",
+			"source": "WITCHERHLA",
+			"page": 11,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "毒蛇学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级起，你学会了以精度换取迅捷的攻击。每回合一次，若你在你的回合采取攻击动作，且对其中一个目标的攻击检定具有优势，你可以放弃该攻击检定的优势，作为同一动作的一部分对该目标进行一次额外的武器攻击。",
+				"此外，每次长休中你使用的头两枚手雷不计入你的猎魔人备战次数。"
+			]
+		},
+		{
+			"ENG_name": "Viper's Reflexes",
+			"name": "毒蛇反射",
+			"source": "WITCHERHLA",
+			"page": 11,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "毒蛇学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你已精于设伏与迅速脱离险境。你可以在任何战斗的第一轮中行动两次。你的第一次行动按你正常的先攻进行，第二次行动的先攻则减少10。当你被突袭时无法使用此特性。"
+			]
+		},
+		{
+			"ENG_name": "Adaptable Hunter",
+			"name": "全能猎人",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"armorProficiencies": [
+				{
+					"medium": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"在1级选择此学派时，你获得以下特性：",
+				{
+					"type": "list",
+					"items": [
+						"你获得中型护甲的熟练项",
+						"当你仅穿着中型护甲时，你的AC获得+1加值。",
+						"除猎魔人法术外，你还习得若干戏法：在1级时提前从猎魔人法术列表中习得一个戏法，并在4级、7级和11级时各多习得一个。这些戏法列于猎魔人法术一节中。",
+						"你在2级时多习得一个自选的猎魔人法术。它不计入你已知的法术数量。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Arcane Strike",
+			"name": "奥术打击",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"同样在1级时，当你以法术造成伤害时，在你的下回合结束前，你以攻击动作进行的任何近战武器攻击的伤害都可以额外加上1d4。"
+			]
+		},
+		{
+			"ENG_name": "Improved Fortitude",
+			"name": "精通坚韧",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从1级起，你从训练中获得增强的体质，你每个猎魔人等级额外获得1点生命值。"
+			]
+		},
+		{
+			"ENG_name": "School of the Wolf",
+			"name": "狼学派",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"狼学派猎魔人被公认为各猎魔人学派中最全能的一支，能娴熟运用施法、魔药、手雷与武艺战斗，从容应对任何局面。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "全能猎人|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "精通坚韧|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "奥术打击|猎魔人|WITCHERHLA|狼学派|WITCHERHLA|1"
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Critical",
+			"name": "精通重击",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"同样在6级时，你的武器攻击在掷出19或20时即为重击。"
+			]
+		},
+		{
+			"ENG_name": "Thorough Preparation",
+			"name": "充分备战",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级起，你进行猎魔人备战的效率更高，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以备制一个额外的魔药配方和一张额外的手雷图纸。",
+						"手雷可以用动作或附赠动作（任选其一）投掷。",
+						"每次长休中你使用的第一枚手雷或第一瓶魔药不计入你的猎魔人备战次数。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Improved Arcane Strike",
+			"name": "精通奥术打击",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你的奥术打击伤害提升为1d6，且在你的下回合结束前，你以戏法或猎魔人法术造成伤害后进行的第一次武器攻击具有优势。此外，你现在可以将你的智力调整值加到你的猎魔人戏法的伤害上。"
+			]
+		},
+		{
+			"ENG_name": "Improved Thorough Preparation",
+			"name": "精通充分备战",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级起，你的猎魔人备战的效果获得增强：",
+				{
+					"type": "list",
+					"items": [
+						"饮用任何猎魔人魔药都会给予你等于1d8 + 你的智力调整值的临时生命值。若某个魔药本身给予临时生命值，则将魔药给予的临时生命值与此能力给予的临时生命值相加。饮用燕子魔药时，你不获得临时生命值，而是在回复的第一回合额外恢复等于1d6 + 你的智力调整值的生命值。",
+						"你制造的任何手雷的初始伤害额外增加等于1d6 + 你的智力调整值的伤害。",
+						"每次长休中你使用的头两枚手雷或头两瓶魔药不计入你的猎魔人备战次数。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Prime Specimen",
+			"name": "顶级样本",
+			"source": "WITCHERHLA",
+			"page": 12,
+			"className": "猎魔人",
+			"classSource": "WITCHERHLA",
+			"subclassShortName": "狼学派",
+			"subclassSource": "WITCHERHLA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"到达18级时，你选择两项不同的属性值，各获得+2加值。这两项属性的上限现在均为22。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"ENG_name": "Bomb: Dancing Star",
+			"name": "炸弹：舞动之星",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，舞动之星炸弹在{@i 10尺半径}内爆炸，随后在猎魔人的下回合开始时，效应区域内会接连引发一连串较小的爆炸。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 2d6}点火焰伤害，成功则伤害减半。在第二轮爆炸期间仍滞留在区域内的任何生物必须重复该豁免，否则受到{@damage 2d4}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Devil's Puffball",
+			"name": "炸弹：恶魔之尘",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，恶魔之尘炸弹在{@i 10尺半径}内释放出一片毒云。毒云在该区域内滞留至其持续时间结束，或直到中等强度的风将其吹散；它迫使任何在区域内开始回合的生物进行一次体质豁免。豁免失败的生物受到{@damage 2d6}点毒素伤害，成功则伤害减半。毒云将在1分钟后消散。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Dimeritium",
+			"name": "炸弹：阻魔金",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，阻魔金炸弹在{@i 10尺半径}内炸成漫天阻魔金碎片之雾，形成一片阻魔金尘云，短暂地抑制区域内的魔法，并迫使区域内的生物进行一次敏捷豁免。豁免失败的生物受到{@damage 1d8}点穿刺伤害，成功则伤害减半。阻魔金云在该区域内滞留至其持续时间结束，或直到中等强度的非魔法之风将其吹散。",
+				"云中的生物无法施放低于{@i 2环}的法术，云内的魔法物品（包括幻象）在云中时暂时失去其魔法属性。法术产生的任何持续魔法效应都会在云中被解除，任何试图穿过云体半径施放的法术亦然。生物无法在云中进入以太状态。云在3轮后消散。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Dragon's Dream",
+			"name": "炸弹：龙之梦",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，龙之梦炸弹在{@i 10尺半径}内释放出一片爆炸性气体。气体本身对区域内的生物没有任何影响，并会在1分钟后消散，或直到中等强度的风将其吹散。若有任何火焰进入该区域，气体即行爆炸，对爆炸波及的所有生物造成{@damage 3d6}点火焰伤害。",
+				"若使用了多枚龙之梦炸弹且其效应区域重叠，重叠区域内的爆炸伤害不叠加。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Grapeshot",
+			"name": "炸弹：葡萄弹",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，葡萄弹炸弹在{@i 10尺半径}内爆炸。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 2d8}点穿刺伤害，成功则伤害减半。由石头、水晶或金属等无机材料构成的生物在此豁免上具有劣势，爆炸范围内的建筑物受到双倍伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Grapeshot",
+			"name": "炸弹：葡萄弹",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，葡萄弹炸弹在{@i 20尺半径}内爆炸。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 8d8}点穿刺伤害，成功则伤害减半。由石头、水晶或金属等无机材料构成的生物在此豁免上具有劣势，爆炸范围内的建筑物受到双倍伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Greater Dancing Star",
+			"name": "炸弹：强效舞动之星",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，舞动之星炸弹在{@i 15尺半径}内爆炸，随后在猎魔人的下回合开始时，效应区域内会接连引发一连串较小的爆炸。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 4d6}点火焰伤害，成功则伤害减半。在第二轮爆炸期间仍滞留在区域内的任何生物必须重复该豁免，否则受到{@damage 4d4}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Greater Devil's Puffball",
+			"name": "炸弹：强效恶魔之尘",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，恶魔之尘炸弹在{@i 10尺半径}内释放出一片毒云。毒云在该区域内滞留至其持续时间结束，或直到中等强度的风将其吹散；它迫使任何在区域内开始回合的生物进行一次体质豁免。豁免失败的生物受到{@damage 4d6}点毒素伤害，成功则伤害减半。毒云将在1分钟后消散。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Greater Dimeritium",
+			"name": "炸弹：强效阻魔金",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，阻魔金炸弹在{@i 10尺半径}内炸成漫天阻魔金碎片之雾，形成一片阻魔金尘云，短暂地抑制区域内的魔法，并迫使区域内的生物进行一次敏捷豁免。豁免失败的生物受到{@damage 2d8}点穿刺伤害，成功则伤害减半。阻魔金云在该区域内滞留至其持续时间结束，或直到中等强度的非魔法之风将其吹散。",
+				"云中的生物无法施放低于{@i 3环}的法术，云内的魔法物品（包括幻象）在云中时暂时失去其魔法属性。法术产生的任何持续魔法效应都会在云中被解除，任何试图穿过云体半径施放的法术亦然。生物无法在云中进入以太状态。云在3轮后消散。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Greater Dragon's Dream",
+			"name": "炸弹：强效龙之梦",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，龙之梦炸弹在{@i 10尺半径}内释放出一片爆炸性气体。气体本身对区域内的生物没有任何影响，并会在1分钟后消散，或直到中等强度的风将其吹散。若有任何火焰进入该区域，气体即行爆炸，对爆炸波及的所有生物造成{@damage 6d6}点火焰伤害。",
+				"若使用了多枚龙之梦炸弹且其效应区域重叠，重叠区域内的爆炸伤害不叠加。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Greater Grapeshot",
+			"name": "炸弹：强效葡萄弹",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，葡萄弹炸弹在{@i 15尺半径}内爆炸。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 4d8}点穿刺伤害，成功则伤害减半。由石头、水晶或金属等无机材料构成的生物在此豁免上具有劣势，爆炸范围内的建筑物受到双倍伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Greater Moondust",
+			"name": "炸弹：强效月尘",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，月尘炸弹在{@i 15尺半径}内迸散出漫天银色碎屑。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 2d8}点穿刺伤害，成功则伤害减半。",
+				"变形怪无论豁免结果如何，都会额外受到{@damage 4d6}点毒素伤害，被迫变回原形态且1分钟内无法变形，并在受到伤害后的1回合内无法再生生命值。此毒素伤害无视该生物可能具有的任何抗性。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Greater Northern Wind",
+			"name": "炸弹：强效北风",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，北风炸弹在{@i 15尺半径}内迸发出一阵刺骨严寒。区域内的每个生物必须进行一次体质豁免。豁免失败的生物移动速度降至0，直到其下回合结束，并受到{@damage 4d6}点寒冷伤害；豁免成功的生物移动速度减半，直到其下回合结束，且只受到一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Greater Samum",
+			"name": "炸弹：强效焚风",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BG"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，焚风炸弹在{@i 5尺半径}内炸开，迸发出炫目的白光与震耳欲聋的巨响。区域内的每个生物必须进行一次体质豁免。豁免失败的生物陷入震慑状态1回合，并受到{@damage 4d4}点雷鸣伤害；豁免成功的生物不受震慑影响，且只受到一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Master Dancing Star",
+			"name": "炸弹：大师级舞动之星",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，舞动之星炸弹在{@i 25尺半径}内爆炸，随后在猎魔人的下回合开始时，效应区域内会接连引发一连串较小的爆炸。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 8d6}点火焰伤害，成功则伤害减半。在第二轮爆炸期间仍滞留在区域内的任何生物必须重复该豁免，否则受到{@damage 8d4}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Master Devil's Puffball",
+			"name": "炸弹：大师级恶魔之尘",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，恶魔之尘炸弹在{@i 15尺半径}内释放出一片毒云。毒云在该区域内滞留至其持续时间结束，或直到中等强度的风将其吹散；它迫使任何在区域内开始回合的生物进行一次体质豁免。豁免失败的生物受到{@damage 8d6}点毒素伤害，成功则伤害减半。毒云将在1分钟后消散。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Master Dragon's Dream",
+			"name": "炸弹：大师级龙之梦",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，龙之梦炸弹在{@i 15尺半径}内释放出一片爆炸性气体。气体本身对区域内的生物没有任何影响，并会在1分钟后消散，或直到中等强度的风将其吹散。若有任何火焰进入该区域，气体即行爆炸，对爆炸波及的所有生物造成{@damage 12d6}点火焰伤害。",
+				"若使用了多枚龙之梦炸弹且其效应区域重叠，重叠区域内的爆炸伤害不叠加。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Master Moondust",
+			"name": "炸弹：大师级月尘",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，月尘炸弹在{@i 20尺半径}内迸散出漫天银色碎屑。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 4d8}点穿刺伤害，成功则伤害减半。",
+				"变形怪无论豁免结果如何，都会额外受到{@damage 8d6}点毒素伤害，被迫变回原形态且1分钟内无法变形，并在受到伤害后的1回合内无法再生生命值。此毒素伤害无视该生物可能具有的任何抗性。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Master Northern Wind",
+			"name": "炸弹：大师级北风",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，北风炸弹在{@i 20尺半径}内迸发出一阵刺骨严寒。区域内的每个生物必须进行一次体质豁免。豁免失败的生物移动速度降至0，直到其下回合结束，并受到{@damage 8d6}点寒冷伤害；豁免成功的生物移动速度减半，直到其下回合结束，且只受到一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Master Samum",
+			"name": "炸弹：大师级焚风",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，焚风炸弹在{@i 10尺半径}内炸开，迸发出炫目的白光与震耳欲聋的巨响。区域内的每个生物必须进行一次体质豁免。豁免失败的生物陷入震慑状态1回合，并受到{@damage 8d4}点雷鸣伤害；豁免成功的生物不受震慑影响，且只受到一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Moondust",
+			"name": "炸弹：月尘",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，月尘炸弹在{@i 10尺半径}内迸散出漫天银色碎屑。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 1d8}点穿刺伤害，成功则伤害减半。",
+				"变形怪无论豁免结果如何，都会额外受到{@damage 2d6}点毒素伤害，被迫变回原形态且1分钟内无法变形，并在受到伤害后的1回合内无法再生生命值。此毒素伤害无视该生物可能具有的任何抗性。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Northern Wind",
+			"name": "炸弹：北风",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，北风炸弹在{@i 10尺半径}内迸发出一阵刺骨严寒。区域内的每个生物必须进行一次体质豁免。豁免失败的生物移动速度降至0，直到其下回合结束，并受到{@damage 2d6}点寒冷伤害；豁免成功的生物移动速度减半，直到其下回合结束，且只受到一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Samum",
+			"name": "炸弹：焚风",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:B"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，焚风炸弹在{@i 5尺半径}内炸开，迸发出炫目的白光与震耳欲聋的巨响。区域内的每个生物必须进行一次体质豁免。豁免失败的生物陷入震慑状态1回合，并受到{@damage 2d4}点雷鸣伤害；豁免成功的生物不受震慑影响，且只受到一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Dancing Star",
+			"name": "炸弹：高等舞动之星",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，舞动之星炸弹在{@i 20尺半径}内爆炸，随后在猎魔人的下回合开始时，效应区域内会接连引发一连串较小的爆炸。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 6d6}点火焰伤害，成功则伤害减半。在第二轮爆炸期间仍滞留在区域内的任何生物必须重复该豁免，否则受到{@damage 6d4}点火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Devil's Puffball",
+			"name": "炸弹：高等恶魔之尘",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，恶魔之尘炸弹在{@i 15尺半径}内释放出一片毒云。毒云在该区域内滞留至其持续时间结束，或直到中等强度的风将其吹散；它迫使任何在区域内开始回合的生物进行一次体质豁免。豁免失败的生物受到{@damage 6d6}点毒素伤害，成功则伤害减半。毒云将在1分钟后消散。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Dimeritium",
+			"name": "炸弹：高等阻魔金",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，阻魔金炸弹在{@i 15尺半径}内炸成漫天阻魔金碎片之雾，形成一片阻魔金尘云，短暂地抑制区域内的魔法，并迫使区域内的生物进行一次敏捷豁免。豁免失败的生物受到{@damage 3d8}点穿刺伤害，成功则伤害减半。阻魔金云在该区域内滞留至其持续时间结束，或直到中等强度的非魔法之风将其吹散。",
+				"云中的生物无法施放低于{@i 4环}的法术，云内的魔法物品（包括幻象）在云中时暂时失去其魔法属性。法术产生的任何持续魔法效应都会在云中被解除，任何试图穿过云体半径施放的法术亦然。生物无法在云中进入以太状态。云在3轮后消散。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Dimeritium",
+			"name": "炸弹：高等阻魔金",
+			"source": "WITCHERHLA",
+			"page": 15,
+			"featureType": [
+				"OF:WITCHERHLA:BM"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，阻魔金炸弹在{@i 15尺半径}内炸成漫天阻魔金碎片之雾，形成一片阻魔金尘云，短暂地抑制区域内的魔法，并迫使区域内的生物进行一次敏捷豁免。豁免失败的生物受到{@damage 4d8}点穿刺伤害，成功则伤害减半。阻魔金云在该区域内滞留至其持续时间结束，或直到中等强度的非魔法之风将其吹散。",
+				"云中的生物无法施放低于{@i 5环}的法术，云内的魔法物品（包括幻象）在云中时暂时失去其魔法属性。法术产生的任何持续魔法效应都会在云中被解除，任何试图穿过云体半径施放的法术亦然。生物无法在云中进入以太状态。云在3轮后消散。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Dragon's Dream",
+			"name": "炸弹：高等龙之梦",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，龙之梦炸弹在{@i 15尺半径}内释放出一片爆炸性气体。气体本身对区域内的生物没有任何影响，并会在1分钟后消散，或直到中等强度的风将其吹散。若有任何火焰进入该区域，气体即行爆炸，对爆炸波及的所有生物造成{@damage 9d6}点火焰伤害。",
+				"若使用了多枚龙之梦炸弹且其效应区域重叠，重叠区域内的爆炸伤害不叠加。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Grapeshot",
+			"name": "炸弹：高等葡萄弹",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，葡萄弹炸弹在{@i 15尺半径}内爆炸。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 6d8}点穿刺伤害，成功则伤害减半。由石头、水晶或金属等无机材料构成的生物在此豁免上具有劣势，爆炸范围内的建筑物受到双倍伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Moondust",
+			"name": "炸弹：高等月尘",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，月尘炸弹在{@i 15尺半径}内迸散出漫天银色碎屑。区域内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 3d8}点穿刺伤害，成功则伤害减半。",
+				"变形怪无论豁免结果如何，都会额外受到{@damage 6d6}点毒素伤害，被迫变回原形态且1分钟内无法变形，并在受到伤害后的1回合内无法再生生命值。此毒素伤害无视该生物可能具有的任何抗性。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Northern Wind",
+			"name": "炸弹：高等北风",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，北风炸弹在{@i 15尺半径}内迸发出一阵刺骨严寒。区域内的每个生物必须进行一次体质豁免。豁免失败的生物移动速度降至0，直到其下回合结束，并受到{@damage 6d6}点寒冷伤害；豁免成功的生物移动速度减半，直到其下回合结束，且只受到一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bomb: Superior Samum",
+			"name": "炸弹：高等焚风",
+			"source": "WITCHERHLA",
+			"page": 16,
+			"featureType": [
+				"OF:WITCHERHLA:BS"
+			],
+			"entries": [
+				{
+					"name": "手雷/炸弹",
+					"type": "entries",
+					"entries": [
+						"猎魔人猎杀怪物的手段向来灵活多变，而其猎魔人备战武库中的第二件工具便是手雷。手雷是极为高效的范围效应武器，你可以将它掷向你60尺内可见的一点，予敌以重创。",
+						"无论是单纯用作伤害输出，还是作为战略性控制战场的手段，持有它们都能大幅提升你的生存几率。",
+						"{@b 使用1枚手雷/炸弹即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Handbombs/Bombs"
+				},
+				"撞击后，焚风炸弹在{@i 10尺半径}内炸开，迸发出炫目的白光与震耳欲聋的巨响。区域内的每个生物必须进行一次体质豁免。豁免失败的生物陷入震慑状态1回合，并受到{@damage 6d4}点雷鸣伤害；豁免成功的生物不受震慑影响，且只受到一半伤害。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Black Blood",
+			"name": "魔药：黑血",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，任何以爪、咬或喙对你发起攻击并命中的生物必须进行一次体质豁免。豁免失败的生物陷入中毒状态，并在其每回合开始时受到{@dice 1d4}点毒素伤害；此伤害无视毒素抗性与毒素免疫。该生物在其每回合结束时重复该豁免，成功则解除此状态，并在此后1小时内对黑血免疫。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Blizzard",
+			"name": "魔药：暴雪",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"一种清爽冰凉、澄澈湛蓝的液体。以附赠动作饮用时，{@i 你的生命值上限降低，数值等于你的等级}，直到你完成下一次短休或长休。",
+				"在1分钟内，只要你的生命值未降至0，你的AC便提升{@i 2}点。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Elemental Decoction",
+			"name": "魔药：元素煎药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你对某一特定伤害类型的防御得到增强，每次受到该类型伤害时，伤害降低{@i 2}点。",
+				"此魔药可在以下伤害类型中任选其一进行减免：强酸、寒冷、火焰、闪电、暗蚀、毒素。你必须在饮用魔药时选定伤害类型。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Elixir of the Bear",
+			"name": "魔药：熊之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在10分钟内，你获得{@i 10}点临时生命值，具体数值由魔药的等级决定。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Elixir of the Cat",
+			"name": "魔药：猫之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1小时内，你拥有{@sense 黑暗视觉}，距离可达{@i 30尺}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Elixir of the Griffin",
+			"name": "魔药：狮鹫之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的法术威力得到增强。施放法术时，你可以选择造成{@dice 1d6}点额外伤害，或以一时的生机灌注自身，获得{@dice 2d4}点临时生命值。",
+				"该伤害加值作用于法术的基础伤害，但不作用于任何次要效应。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Elixir of the Manticore",
+			"name": "魔药：蝎尾狮之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，每当你受到穿刺、钝击和挥砍伤害时，伤害降低{@i 1}点，同时你的AC获得{@i +0}加值。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Elixir of the Viper",
+			"name": "魔药：毒蛇之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，敌人对你发起的借机攻击具有劣势，且你的移动速度获得{@i +10尺}加值。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Elixir of the Wolf",
+			"name": "魔药：狼之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的武器攻击命中率提升{@i 1（攻击加值+1）}，重击范围亦扩大{@i +0}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Golden Oriole",
+			"name": "魔药：金莺",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"从你饮用此魔药的那一刻起，在接下来的1分钟内，若你将被施加以下任何状态：",
+				{
+					"type": "list",
+					"items": [
+						"{@condition 目盲}",
+						"{@condition 耳聋}"
+					]
+				},
+				"你对所列所有状态的豁免检定具有优势。",
+				"非猎魔人可以饮用金莺，而不受{@i 非猎魔人惩罚}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Black Blood",
+			"name": "魔药：强效黑血",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，任何以爪、咬或喙对你发起攻击并命中的生物必须进行一次体质豁免。豁免失败的生物陷入中毒状态，并在其每回合开始时受到{@dice 2d4}点毒素伤害；此伤害无视毒素抗性与毒素免疫。该生物在其每回合结束时重复该豁免，成功则解除此状态，并在此后1小时内对黑血免疫。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Blizzard",
+			"name": "魔药：强效暴雪",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"一种清爽冰凉、澄澈湛蓝的液体。以附赠动作饮用时，{@i 你的生命值上限降低，数值等于你的等级}，直到你完成下一次短休或长休。",
+				"在1分钟内，只要你的生命值未降至0，你的AC便提升{@i 3}点。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Elemental Decoction",
+			"name": "魔药：强效元素煎药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你对某一特定伤害类型的防御得到增强，每次受到该类型伤害时，伤害降低{@i 4}点。",
+				"此魔药可在以下伤害类型中任选其一进行减免：强酸、寒冷、火焰、闪电、暗蚀、毒素。你必须在饮用魔药时选定伤害类型。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Elixir of the Bear",
+			"name": "魔药：强效熊之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在10分钟内，你获得{@i 15}点临时生命值，具体数值由魔药的等级决定。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Elixir of the Cat",
+			"name": "魔药：强效猫之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1小时内，你拥有{@sense 黑暗视觉}，距离可达{@i 60尺}，并获得特殊感官{@i 看破幻象}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Elixir of the Griffin",
+			"name": "魔药：强效狮鹫之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的法术威力得到增强。施放法术时，你可以选择造成{@dice 2d6}点额外伤害，或以一时的生机灌注自身，获得{@dice 2d6}点临时生命值。",
+				"该伤害加值作用于法术的基础伤害，但不作用于任何次要效应。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Elixir of the Manticore",
+			"name": "魔药：强效蝎尾狮之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，每当你受到穿刺、钝击和挥砍伤害时，伤害降低{@i 1}点，同时你的AC获得{@i +1}加值。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Elixir of the Viper",
+			"name": "魔药：强效毒蛇之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，敌人对你发起的借机攻击具有劣势，且你的移动速度获得{@i +15尺}加值。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Elixir of the Wolf",
+			"name": "魔药：强效狼之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的武器攻击命中率提升{@i 1（攻击加值+1）}，重击范围亦扩大{@i +1}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Golden Oriole",
+			"name": "魔药：强效金莺",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"从你饮用此魔药的那一刻起，在接下来的1分钟内，若你将被施加以下任何状态：",
+				{
+					"type": "list",
+					"items": [
+						"{@condition 目盲}",
+						"{@condition 耳聋}",
+						"{@condition 魅惑}",
+						"{@condition 恐慌}",
+						"{@condition 中毒}"
+					]
+				},
+				"你对所列所有状态的豁免检定具有优势。",
+				"非猎魔人可以饮用金莺，而不受{@i 非猎魔人惩罚}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Killer Whale",
+			"name": "魔药：强效虎鲸",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1小时内，你可以在水下呼吸，并且若你原本没有游泳速度，则获得等同于你移动速度的游泳速度。你的游泳速度提高{@i 10尺}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Swallow",
+			"name": "魔药：强效燕子",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"你立即恢复{@dice 2d4}点生命值，并在接下来的三轮内，于你的每回合开始时再次恢复。若在魔药仍生效时你的生命值降至0，你将立即伤势稳定，但陷入昏迷，魔药的效应随之结束。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Sword Oil",
+			"name": "魔药：强效剑油",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"你可以炼制一种用于猎杀特定类型生物（类人生物除外）的油，并将其涂抹在你的一件武器上。直到你的下一次长休为止，当你攻击该类型的生物时，你以该武器发动的武器攻击额外造成{@dice 1d6}点该武器类型的伤害。涂抹另一种油会替换此前涂抹的任何油。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Greater Thunderbolt",
+			"name": "魔药：强效雷霆",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PG"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的近战武器攻击将造成更强伤害，你无视穿刺、挥砍和钝击伤害的抗性，且你的武器攻击伤害提高{@i 2（伤害加值+2）}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Killer Whale",
+			"name": "魔药：虎鲸",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在15分钟内，你可以在水下呼吸，并且若你原本没有游泳速度，则获得等同于你移动速度的游泳速度。你的游泳速度提高{@i 0尺}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Black Blood",
+			"name": "魔药：大师级黑血",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，任何以爪、咬或喙对你发起攻击并命中的生物必须进行一次体质豁免。豁免失败的生物陷入中毒状态，并在其每回合开始时受到{@dice 4d4}点毒素伤害；此伤害无视毒素抗性与毒素免疫。该生物在其每回合结束时重复该豁免，成功则解除此状态，并在此后1小时内对黑血免疫。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Blizzard",
+			"name": "魔药：大师级暴雪",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"一种清爽冰凉、澄澈湛蓝的液体。以附赠动作饮用时，{@i 你的生命值上限降低，数值等于你的等级}，直到你完成下一次短休或长休。",
+				"在1分钟内，只要你的生命值未降至0，你的AC便提升{@i 5}点。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Elemental Decoction",
+			"name": "魔药：大师级元素煎药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你对某一特定伤害类型的防御得到增强，每次受到该类型伤害时，伤害降低{@i 8}点。",
+				"此魔药可在以下伤害类型中任选其一进行减免：强酸、寒冷、火焰、闪电、暗蚀、毒素。你必须在饮用魔药时选定伤害类型。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Elixir of the Bear",
+			"name": "魔药：大师级熊之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在10分钟内，你获得{@i 25}点临时生命值，具体数值由魔药的等级决定。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Elixir of the Cat",
+			"name": "魔药：大师级猫之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1小时内，你拥有{@sense 黑暗视觉}，距离可达{@i 120尺}，并获得特殊感官{@i 真实视觉}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Elixir of the Griffin",
+			"name": "魔药：大师级狮鹫之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的法术威力得到增强。施放法术时，你可以选择造成{@dice 4d6}点额外伤害，或以一时的生机灌注自身，获得{@dice 2d10}点临时生命值。",
+				"该伤害加值作用于法术的基础伤害，但不作用于任何次要效应。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Elixir of the Manticore",
+			"name": "魔药：大师级蝎尾狮之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，每当你受到穿刺、钝击和挥砍伤害时，伤害降低{@i 2}点，同时你的AC获得{@i +2}加值。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Elixir of the Viper",
+			"name": "魔药：大师级毒蛇之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，敌人对你发起的借机攻击具有劣势，且你的移动速度获得{@i +30尺}加值。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Elixir of the Wolf",
+			"name": "魔药：大师级狼之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的武器攻击命中率提升{@i 2（攻击加值+1）}，重击范围亦扩大{@i +2}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Golden Oriole",
+			"name": "魔药：大师级金莺",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"从你饮用此魔药的那一刻起，在接下来的1分钟内，若你将被施加以下任何状态。",
+				{
+					"type": "list",
+					"items": [
+						"{@condition 目盲}",
+						"{@condition 耳聋}",
+						"{@condition 魅惑}",
+						"{@condition 恐慌}",
+						"{@condition 中毒}",
+						"{@condition 麻痹}",
+						"{@condition 石化}",
+						"{@condition 震慑}"
+					]
+				},
+				"你对所列所有状态免疫。",
+				"非猎魔人可以饮用金莺，而不受{@i 非猎魔人惩罚}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Killer Whale",
+			"name": "魔药：大师级虎鲸",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在16小时内，你可以在水下呼吸，并且若你原本没有游泳速度，则获得等同于你移动速度的游泳速度。你的游泳速度提高{@i 30尺}。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Swallow",
+			"name": "魔药：大师级燕子",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"你立即恢复{@dice 4d4}点生命值，并在接下来的三轮内，于你的每回合开始时再次恢复。若在魔药仍生效时你的生命值降至0，你将立即伤势稳定，但陷入昏迷，魔药的效应随之结束。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Sword Oil",
+			"name": "魔药：大师级剑油",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"你可以炼制一种用于猎杀特定类型生物（类人生物除外）的油，并将其涂抹在你的一件武器上。直到你的下一次长休为止，当你攻击该类型的生物时，你以该武器发动的武器攻击额外造成{@dice 1d10}点该武器类型的伤害。涂抹另一种油会替换此前涂抹的任何油。"
+			]
+		},
+		{
+			"ENG_name": "Potion: Master Thunderbolt",
+			"name": "魔药：大师级雷霆",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PM"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的近战武器攻击将造成更强伤害，你无视穿刺、挥砍和钝击伤害的抗性，且你的武器攻击伤害提高{@i 6（伤害加值+6）}。"
+			]
+		},
+		{
+			"name": "魔药：高等黑血",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，任何以爪、咬或喙对你发起攻击并命中的生物必须进行一次体质豁免。豁免失败的生物陷入中毒状态，并在其每回合开始时受到{@dice 3d4}点毒素伤害；此伤害无视毒素抗性与毒素免疫。该生物在其每回合结束时重复该豁免，成功则解除此状态，并在此后1小时内对黑血免疫。"
+			],
+			"ENG_name": "Potion: Superior Black Blood"
+		},
+		{
+			"name": "魔药：高等暴雪",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"一种清爽冰凉、澄澈湛蓝的液体。以附赠动作饮用时，{@i 你的生命值上限降低，数值等于你的等级}，直到你完成下一次短休或长休。",
+				"在1分钟内，只要你的生命值未降至0，你的AC便提升{@i 4}点。"
+			],
+			"ENG_name": "Potion: Superior Blizzard"
+		},
+		{
+			"name": "魔药：高等元素煎药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你对某一特定伤害类型的防御得到增强，每次受到该类型伤害时，伤害降低{@i 6}点。",
+				"此魔药可在以下伤害类型中任选其一进行减免：强酸、寒冷、火焰、闪电、暗蚀、毒素。你必须在饮用魔药时选定伤害类型。"
+			],
+			"ENG_name": "Potion: Superior Elemental Decoction"
+		},
+		{
+			"name": "魔药：高等熊之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在10分钟内，你获得{@i 20}点临时生命值，具体数值由魔药的等级决定。"
+			],
+			"ENG_name": "Potion: Superior Elixir of the Bear"
+		},
+		{
+			"name": "魔药：高等猫之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1小时内，你拥有{@sense 黑暗视觉}，距离可达{@i 90尺}，并获得特殊感官{@i 看破魔法黑暗}。"
+			],
+			"ENG_name": "Potion: Superior Elixir of the Cat"
+		},
+		{
+			"name": "魔药：高等狮鹫之灵药",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的法术威力得到增强。施放法术时，你可以选择造成{@dice 3d6}点额外伤害，或以一时的生机灌注自身，获得{@dice 2d8}点临时生命值。",
+				"该伤害加值作用于法术的基础伤害，但不作用于任何次要效应。"
+			],
+			"ENG_name": "Potion: Superior Elixir of the Griffin"
+		},
+		{
+			"name": "魔药：高等蝎尾狮之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，每当你受到穿刺、钝击和挥砍伤害时，伤害降低{@i 2}点，同时你的AC获得{@i +1}加值。"
+			],
+			"ENG_name": "Potion: Superior Elixir of the Manticore"
+		},
+		{
+			"name": "魔药：高等毒蛇之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，敌人对你发起的借机攻击具有劣势，且你的移动速度获得{@i +20尺}加值。"
+			],
+			"ENG_name": "Potion: Superior Elixir of the Viper"
+		},
+		{
+			"name": "魔药：高等狼之灵药",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的武器攻击命中率提升{@i 2（攻击加值+1）}，重击范围亦扩大{@i +1}。"
+			],
+			"ENG_name": "Potion: Superior Elixir of the Wolf"
+		},
+		{
+			"name": "魔药：高等金莺",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"从你饮用此魔药的那一刻起，在接下来的1分钟内，若你将被施加以下任何状态：",
+				{
+					"type": "list",
+					"items": [
+						"{@condition 目盲}",
+						"{@condition 耳聋}",
+						"{@condition 魅惑}",
+						"{@condition 恐慌}",
+						"{@condition 中毒}",
+						"{@condition 麻痹}",
+						"{@condition 石化}",
+						"{@condition 震慑}"
+					]
+				},
+				"你对所列所有状态的豁免检定具有优势。",
+				"非猎魔人可以饮用金莺，而不受{@i 非猎魔人惩罚}。"
+			],
+			"ENG_name": "Potion: Superior Golden Oriole"
+		},
+		{
+			"name": "魔药：高等虎鲸",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在4小时内，你可以在水下呼吸，并且若你原本没有游泳速度，则获得等同于你移动速度的游泳速度。你的游泳速度提高{@i 20尺}。"
+			],
+			"ENG_name": "Potion: Superior Killer Whale"
+		},
+		{
+			"name": "魔药：高等燕子",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"你立即恢复{@dice 3d4}点生命值，并在接下来的三轮内，于你的每回合开始时再次恢复。若在魔药仍生效时你的生命值降至0，你将立即伤势稳定，但陷入昏迷，魔药的效应随之结束。"
+			],
+			"ENG_name": "Potion: Superior Swallow"
+		},
+		{
+			"name": "魔药：高等剑油",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"你可以炼制一种用于猎杀特定类型生物（类人生物除外）的油，并将其涂抹在你的一件武器上。直到你的下一次长休为止，当你攻击该类型的生物时，你以该武器发动的武器攻击额外造成{@dice 1d8}点该武器类型的伤害。涂抹另一种油会替换此前涂抹的任何油。"
+			],
+			"ENG_name": "Potion: Superior Sword Oil"
+		},
+		{
+			"name": "魔药：高等雷霆",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:PS"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的近战武器攻击将造成更强伤害，你无视穿刺、挥砍和钝击伤害的抗性，且你的武器攻击伤害提高{@i 4（伤害加值+4）}。"
+			],
+			"ENG_name": "Potion: Superior Thunderbolt"
+		},
+		{
+			"name": "魔药：燕子",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"你立即恢复{@dice 1d4}点生命值，并在接下来的三轮内，于你的每回合开始时再次恢复。若在魔药仍生效时你的生命值降至0，你将立即伤势稳定，但陷入昏迷，魔药的效应随之结束。"
+			],
+			"ENG_name": "Potion: Swallow"
+		},
+		{
+			"name": "魔药：剑油",
+			"source": "WITCHERHLA",
+			"page": 13,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"你可以炼制一种用于猎杀特定类型生物（类人生物除外）的油，并将其涂抹在你的一件武器上。直到你的下一次长休为止，当你攻击该类型的生物时，你以该武器发动的武器攻击额外造成{@dice 1d4}点该武器类型的伤害。涂抹另一种油会替换此前涂抹的任何油。"
+			],
+			"ENG_name": "Potion: Sword Oil"
+		},
+		{
+			"name": "魔药：雷霆",
+			"source": "WITCHERHLA",
+			"page": 14,
+			"featureType": [
+				"OF:WITCHERHLA:P"
+			],
+			"entries": [
+				{
+					"name": "猎魔人魔药",
+					"type": "entries",
+					"entries": [
+						"任何对得起自己身价的猎魔人身上都会备有数瓶调制好的魔药，一旦有事便可即刻取用，让猎魔人在应对致命强敌时占得先机。",
+						"{@b 饮用1瓶魔药即消耗一次猎魔人备战。}"
+					],
+					"ENG_name": "Witcher Potion"
+				},
+				{
+					"name": "非猎魔人惩罚",
+					"type": "entries",
+					"entries": [
+						"非猎魔人饮用猎魔人魔药时，必须通过一次体质豁免，否则将中毒1分钟。即使豁免成功，其仍会依所饮用魔药的等级受到毒素伤害，也无法保留魔药的任何益处。伤害数值见下表：",
+						{
+							"type": "table",
+							"colLabels": [
+								"魔药等级",
+								"所受毒素伤害"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"基础魔药",
+									"{@dice 1d8}"
+								],
+								[
+									"强效",
+									"{@dice 2d8}"
+								],
+								[
+									"高等",
+									"{@dice 3d8}"
+								],
+								[
+									"大师级",
+									"{@dice 4d8}"
+								]
+							]
+						}
+					],
+					"ENG_name": "Non-Witcher Penalty"
+				},
+				"在1分钟内，你的近战武器攻击将造成更强伤害，你无视穿刺、挥砍和钝击伤害的抗性，且你的武器攻击伤害提高{@i 0（伤害加值+0）}。"
+			],
+			"ENG_name": "Potion: Thunderbolt"
+		}
+	],
+	"race": [
+		{
+			"name": "人类 (变体；青草试炼)",
+			"source": "WITCHERHLA",
+			"page": 22,
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 35
+			},
+			"ability": [
+				{
+					"con": 2,
+					"choose": {
+						"from": [
+							"dex",
+							"str",
+							"wis",
+							"cha",
+							"int"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"entries": [
+				"你的角色与其他经历过青草试炼的人共有多项特质。",
+				{
+					"name": "属性值提升",
+					"type": "entries",
+					"entries": [
+						"你的体质获得+2加值，另有一项自选的不同属性获得+1加值。"
+					],
+					"ENG_name": "Ability Score Increase"
+				},
+				{
+					"name": "年龄",
+					"type": "entries",
+					"entries": [
+						"突变延长了你的寿命：从你经受试炼时的年龄起，你的老化速度减缓为正常的四分之一。"
+					],
+					"ENG_name": "Age"
+				},
+				{
+					"name": "阵营",
+					"type": "entries",
+					"entries": [
+						"人类并不偏向任何特定阵营，但青草试炼往往会强化一个人的性格特质：也就是说，如果他们本就倾向于某一阵营，就会更加坚定地立足于该阵营，也更不容易作出与之相悖的行为。"
+					],
+					"ENG_name": "Alignment"
+				},
+				{
+					"name": "体型",
+					"type": "entries",
+					"entries": [
+						"人类身高体格差异悬殊，有的勉强5尺高，有的则远超6尺。无论你处于这一范围的哪个位置，你的体型皆为中型。"
+					],
+					"ENG_name": "Size"
+				},
+				{
+					"type": "entries",
+					"name": "速度",
+					"entries": [
+						"你的基础步行速度为35尺。"
+					],
+					"ENG_name": "Speed"
+				},
+				{
+					"name": "黑暗视觉",
+					"entries": [
+						"你的双眼如今呈现出猫的样貌，瞳孔细长，在黑暗中会发光（最常见的虹膜颜色是金色，但突变也可能带来其他颜色）。你拥有60尺的黑暗视觉。"
+					],
+					"type": "entries",
+					"ENG_name": "Darkvision"
+				},
+				{
+					"name": "精通活力",
+					"entries": [
+						"你不再需要睡眠来休息。取而代之，你每天进行4小时的深度冥想，并保持半清醒状态。冥想期间，你获得与人类睡眠8小时相同的益处。"
+					],
+					"type": "entries",
+					"ENG_name": "Improved Vigor"
+				},
+				{
+					"name": "精通体质",
+					"entries": [
+						"你在对抗{@damage 毒素}的豁免，以及避免陷入{@condition 中毒}或{@condition 染病}状态的豁免检定上具有优势。"
+					],
+					"type": "entries",
+					"ENG_name": "Improved Constitution"
+				},
+				{
+					"name": "身体突变",
+					"entries": [
+						"你的身体出现了若干随机的怪异变化，例如毛发与皮肤失去色素等。请与你的DM商定这些异变，你可以参考下表。无论你如何选择或掷骰，你身体经受的突变都会清楚地表明你与其他人类不同。",
+						{
+							"type": "table",
+							"caption": "d6 身体突变",
+							"colLabels": [
+								"d6",
+								"突变"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"你的毛发失去所有色素，变得全白。"
+								],
+								[
+									"2",
+									"你缺失了若干块毛发，或在反常的部位长出新的毛发，又或者失去至少一片手指甲或脚趾甲。"
+								],
+								[
+									"3",
+									"你的核心体温永久降低，皮肤变得苍白。"
+								],
+								[
+									"4",
+									"你的情绪变得麻木，很少有强烈的情绪反应，或难以产生强烈的情绪。"
+								],
+								[
+									"5",
+									"你的生殖系统受损，因而失去生育能力。"
+								],
+								[
+									"6",
+									"你全身的毛囊尽数坏死，令你失去所有毛发。"
+								]
+							]
+						}
+					],
+					"type": "entries",
+					"ENG_name": "Physical Mutations"
+				},
+				{
+					"name": "语言",
+					"entries": [
+						"你能够说、读、写{@language 通用语|PHB}和一门额外的自选语言。在与他人交流时，人类通常会主动学习对方的语言，其中也包括一些晦涩的方言。他们还喜欢在说话时夹杂从其他语言借来的词汇：兽人粗口、精灵乐调、矮人军语，等等。"
+					],
+					"type": "entries",
+					"ENG_name": "Languages"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"青草试炼造就的是一种人类变体：受试者通过种种痛苦得近乎酷刑的试验与诱变剂完成了转化。",
+					"请与你的DM商议如何在你世界的设定中最好地引入这一变体。",
+					{
+						"name": "痛苦的突变",
+						"entries": [
+							"为了做好直面怪物强敌的准备，你自愿接受了青草试炼\u2014\u2014一种使用化学药剂与灵药的残酷转化过程，存活率仅有30%。其结果是，你的身体发生了突变，赋予你诸多益处，同时也带来了让你与常人截然有别的身体异变。"
+						],
+						"type": "entries",
+						"ENG_name": "Painful Mutations"
+					}
+				]
+			},
+			"ENG_name": "Human (Variant; Trial of the Grasses)"
+		}
+	],
+	"feat": [
+		{
+			"name": "坚韧",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				"你的体魄变得更为强健，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你的体质值提升1，上限为20。",
+						"获得此专长时，你的生命值上限提高，数值等于你等级的一半（向上取整）。此后每当你获得新等级，你的生命值上限都再额外提高1点。"
+					]
+				}
+			],
+			"ENG_name": "Hardy"
+		},
+		{
+			"name": "魔法学徒（扩展）",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"entries": [
+				"指定一个职业：吟游诗人、牧师、德鲁伊、术士、魔契师、猎魔人或法师。你从该职业的法术列表中习得两个自选戏法。",
+				"此外，你从同一列表中选择一个1环法术。依靠此专长，你可以以最低环阶施展该法术一次，且你必须完成一次长休后才能再次以该方式施展它。",
+				"这些法术的施法属性取决于你所选的职业：吟游诗人、术士或魔契师为魅力；牧师或德鲁伊为感知；猎魔人或法师为智力。"
+			],
+			"ENG_name": "Magic Initiate (Expanded)"
+		},
+		{
+			"name": "怪物猎人",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"entries": [
+				"攻击非类人生物时，你对该生物的攻击检定与伤害掷骰获得+1加值。"
+			],
+			"ENG_name": "Monster Hunter"
+		},
+		{
+			"name": "法术射手（扩展）",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"prerequisite": [
+				{
+					"other": "能够施放至少一个法术"
+				}
+			],
+			"entries": [
+				"你学会如何以特定法术强化你的攻击，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"当你施展一道需要你进行攻击检定的法术时，该法术的施法距离加倍。",
+						"你的远程法术攻击无视半身掩护和四分之三掩护。",
+						"你习得一道需要进行攻击检定的戏法。该戏法从吟游诗人、牧师、德鲁伊、术士、魔契师、猎魔人或法师的法术列表中选择。你施展该戏法的施法属性取决于你所选的法术列表：吟游诗人、术士或魔契师为魅力；牧师或德鲁伊为感知；猎魔人或法师为智力。"
+					]
+				}
+			],
+			"ENG_name": "Spell Sniper (Expanded)"
+		},
+		{
+			"name": "多用武器精通",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"entries": [
+				"当你持用一件多用武器时，你获得以下益处：",
+				{
+					"name": "单手持用时",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"当你作为攻击动作的一部分使一个生物陷入受擒状态时，你可以用附赠动作以一件多用武器对该生物进行一次近战武器攻击。",
+								"在你的每个回合内一次，你可以穿戴上或卸下盾牌（无需你采取动作）。"
+							]
+						}
+					],
+					"ENG_name": "When wielding with one hand"
+				},
+				{
+					"name": "双手持用时",
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"当你以双手持握的多用武器进行攻击时，你可以用附赠动作擒抱或推撞目标，或以你的徒手打击进行一次额外攻击。"
+							]
+						}
+					],
+					"ENG_name": "When wielding with two hands"
+				}
+			],
+			"ENG_name": "Versatile Mastery"
+		},
+		{
+			"name": "猎魔人手雷行家",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你研习过猎魔人手雷的制造之法，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你学会备制一种自选的猎魔人手雷，并获得一次猎魔人备战特性的使用次数，仅供手雷使用。",
+						"你所制造手雷的等级取决于你的最高职业等级。"
+					]
+				},
+				"你可以多次选择此专长，但每次都必须选择一种不同的手雷来学习。"
+			],
+			"ENG_name": "Witcher handbomb Adept"
+		},
+		{
+			"name": "猎魔人魔药行家",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"con": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你研习过猎魔人魔药的酿制之法，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你已对猎魔人魔药的毒性产生了耐受，可以安全饮用它们。",
+						"你学会备制一种自选的猎魔人魔药，并获得一次猎魔人备战特性的使用次数，仅供魔药使用。",
+						"你所酿制魔药的等级取决于你的最高职业等级。"
+					]
+				},
+				"你可以多次选择此专长，但每次都必须选择一种不同的魔药来学习。"
+			],
+			"ENG_name": "Witcher Potion Adept"
+		},
+		{
+			"name": "猎魔人法术行家",
+			"source": "WITCHERHLA",
+			"page": 21,
+			"entries": [
+				"你研习过猎魔人法术的奥艺，获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你习得一道自选的猎魔人法术。你可以从{@i {@filter 猎魔人法术|spells|class=猎魔人（WITCHERHLA）}}基础列表，或{@i {@subclassFeature 猎魔人法术变体|猎魔人|WITCHERHLA|狮鹫学派|WITCHERHLA|6|}}列表中选择，且无视任何先决条件。",
+						"若所选法术为1环法术，你可以不消耗法术位以1环施展它一次。你必须完成一次长休后才能再次以此方式施展它；你也可以使用你拥有的任何法术位来施展该法术。"
+					]
+				}
+			],
+			"ENG_name": "Witcher spell Adept"
+		}
+	],
+	"spell": [
+		{
+			"name": "阿尔德",
+			"source": "WITCHERHLA",
+			"page": 17,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@b 目标：}自身（20尺锥形）。",
+				"你释放出一股雷鸣般的冲击波。20尺锥形范围内的每个生物必须进行一次力量豁免。豁免失败的生物受到{@damage 2d6}点雷鸣伤害，并沿远离施法者的直线被推离15尺。豁免成功则目标只受一半伤害，且不会被推动。",
+				"{@b 狮鹫学派加成：}施展阿尔德时的伤害额外提高{@dice 1d6}。豁免失败的大型或更小生物还会陷入{@condition 倒地}状态。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用2环或更高的法术位施展此法术时，其伤害每比1环高一环便提高{@dice 1d6}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"damageInflict": [
+				"thunder"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			],
+			"ENG_name": "Aard"
+		},
+		{
+			"name": "亚克席",
+			"source": "WITCHERHLA",
+			"page": 18,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@b 目标：}施法距离内一个你能看见的生物。",
+				"你尝试以心灵之力蒙蔽一个生物的心智。目标生物必须进行一次感知豁免。豁免失败的生物受到{@damage 2d6}点心灵伤害，且直到其下回合结束为止，它所作的所有攻击检定和属性检定都具有劣势。豁免成功则目标只受一半伤害，且不承受劣势。免疫{@condition 魅惑}状态的生物自动通过此豁免。",
+				"{@b 狮鹫学派加成：}即使生物豁免成功，你也对其造成全额心灵伤害。若目标豁免失败，它将陷入{@condition 震慑}状态，直到其下回合结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用2环或更高的法术位施展此法术时，其伤害每比1环高一环便提高{@dice 1d6}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Axii"
+		},
+		{
+			"name": "锁链",
+			"source": "WITCHERHLA",
+			"page": 19,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"{@b 目标：}施法距离内两个你能看见的生物。",
+				"基于你对亚登的掌握，你使幽影锁链自地面迸出，将施法距离内一个大型或更小的生物束缚在原地。目标生物必须进行一次力量豁免，以避免陷入{@condition 束缚}状态。豁免失败的生物陷入{@condition 束缚}状态，并在其回合开始时受到{@damage 2d6}点闪电伤害，直到它挣脱锁链或法术终止。它可以在其每回合用动作重复该力量豁免，以尝试挣脱锁链。豁免成功后，它不再处于{@condition 束缚}状态，也不会再受到进一步伤害。 "
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用3环或更高的法术位施展此法术时，法术位每比1环高一环，你就可以多指定一个目标生物。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "猎魔人",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "狮鹫学派",
+							"shortName": "狮鹫学派",
+							"source": "WITCHERHLA",
+							"subSubclass": "亚登"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"ENG_name": "Chains"
+		},
+		{
+			"name": "火流",
+			"source": "WITCHERHLA",
+			"page": 19,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"{@b 目标：}施法距离内一个你能看见的生物。",
+				"基于你对伊格尼的掌握，你向施法距离内一个生物喷出一道火焰洪流。对该生物进行一次远程法术攻击。命中时目标受到{@damage 3d6}点火焰伤害；并且在法术持续期间的每个你的回合，若该生物仍在你的60尺内，你可以用附赠动作继续向目标引导火焰，再进行一次远程法术攻击，命中时造成{@damage 1d4}点火焰伤害。 ",
+				"若目标获得对你而言的全身掩护，或你没有用附赠动作继续引导火焰，此法术终止。在法术持续期间，你必须始终腾出一只手专用于引导火焰。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用2环或更高的法术位施展此法术时，初始伤害每比1环高一环便提高{@dice 1d6}，而后续引导造成的伤害则提高{@dice 1d4}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "猎魔人",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "狮鹫学派",
+							"shortName": "狮鹫学派",
+							"source": "WITCHERHLA",
+							"subSubclass": "伊格尼"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Firestream"
+		},
+		{
+			"name": "冰凌",
+			"source": "WITCHERHLA",
+			"page": 18,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@b 目标：}施法距离内一个你能看见的生物。",
+				"你向施法距离内一个你能看见的生物射出一股高度凝聚的寒霜。对该生物进行一次远程法术攻击。命中时目标受到{@damage 5d8}点寒冷伤害，且大型或更小的生物必须进行一次力量豁免，否则会被封入冰中，陷入{@condition 束缚}状态1分钟。被封入冰中的生物可以用其动作进行一次力量豁免，以尝试破冰而出。豁免成功的目标只受一半伤害，且不会陷入{@condition 束缚}状态。",
+				"{@b 狮鹫学派加成：}施展冰凌时，你可以多指定1个目标生物。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用4环或更高的法术位施展此法术时，法术位每比3环高一环，伤害便提高{@dice 1d8}，且你所能指定的生物数量增加1。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"MT",
+				"ST"
+			],
+			"ENG_name": "Glacies"
+		},
+		{
+			"name": "守护者",
+			"source": "WITCHERHLA",
+			"page": 20,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "当你30尺内的一名盟友受到一次非心灵攻击的伤害时"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@b 目标：}施法距离内一个你能看见的自愿生物。",
+				"基于你对希瑞奥托普的掌握，你以反应魔法护佑那名盟友免受伤害，使一次攻击对其造成的伤害降低{@dice 4d6}点，再加上你的智力调整值。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用4环或更高的法术位施展此法术时，伤害降低量每比3环高一环便提高{@dice 1d6}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "猎魔人",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "狮鹫学派",
+							"shortName": "狮鹫学派",
+							"source": "WITCHERHLA",
+							"subSubclass": "希瑞奥托普"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Guardian"
+		},
+		{
+			"name": "希瑞奥托普",
+			"source": "WITCHERHLA",
+			"page": 18,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "当你受到一个你能看见的敌人造成的非心灵伤害时"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@b 目标：}自身。",
+				"你在自己与袭来的伤害之间张起一道魔法护盾，使一次攻击造成的伤害降低{@dice 3d8}点。",
+				"{@b 狮鹫学派加成：}你可以将你的智力调整值加到掷得的伤害降低量上。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用3环或更高的法术位施展此法术时，伤害降低量每比2环高一环便提高{@dice 1d8}。 "
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"ENG_name": "Heliotrope"
+		},
+		{
+			"name": "伊格尼",
+			"source": "WITCHERHLA",
+			"page": 18,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@b 目标：}自身（15尺锥形）。",
+				"你从手中释放出一团爆发的火焰。15尺锥形范围内的每个生物必须进行一次敏捷豁免。豁免失败的生物受到{@damage 2d8}点火焰伤害，并沿远离施法者的直线被推离5尺；豁免成功则目标只受一半伤害，且不会被推动。 ",
+				"{@b 狮鹫学派加成：}目标额外受到{@damage 1d8}点火焰伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用2环或更高的法术位施展此法术时，其伤害每比1环高一环便提高{@dice 1d8}。 "
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"N"
+			],
+			"ENG_name": "Igni"
+		},
+		{
+			"name": "昆恩",
+			"source": "WITCHERHLA",
+			"page": 18,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"{@b 目标：}自身。",
+				"你以一层魔法护罩裹住自身。在1分钟内，你的AC与豁免检定获得+2加值。 ",
+				"{@i 此法术不与索姆尼法术叠加。} ",
+				"{@b 狮鹫学派加成：}在昆恩护盾存续期间，你每次受到的非心灵伤害都减少2点。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"MAC",
+				"UBA"
+			],
+			"ENG_name": "Quen"
+		},
+		{
+			"name": "报应",
+			"source": "WITCHERHLA",
+			"page": 20,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"{@b 目标：}自身。",
+				"基于你对昆恩的掌握，你在自身周围布下一道反击法阵，对攻击你的敌人造成伤害，持续10分钟。每当一个位于你5尺内的生物以近战攻击命中你，该法阵便会反击，攻击者受到等同于{@dice 5d4}+你的智力调整值的力场伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用6环或更高的法术位施展此法术时，法阵造成的伤害每比5环高一环便提高{@dice 1d4}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "猎魔人",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "狮鹫学派",
+							"shortName": "狮鹫学派",
+							"source": "WITCHERHLA",
+							"subSubclass": "昆恩"
+						}
+					}
+				]
+			},
+			"spellAttack": [
+				"R"
+			],
+			"ENG_name": "Retribution"
+		},
+		{
+			"name": "凛霜",
+			"source": "WITCHERHLA",
+			"page": 20,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@b 目标：}自身（20尺锥形）。",
+				"基于你对冰凌的掌握，你从手中释放出一股爆发的寒霜。20尺锥形范围内的每个生物必须进行一次体质豁免。豁免失败的生物受到{@damage 8d6}点寒冷伤害，且其移动速度降低10尺，直到其下回合开始；豁免成功则伤害减半，且移动速度不降低。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用5环或更高的法术位施展此法术时，初始伤害每比4环高一环便提高{@dice 1d6}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "猎魔人",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "狮鹫学派",
+							"shortName": "狮鹫学派",
+							"source": "WITCHERHLA",
+							"subSubclass": "冰凌"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"DFT"
+			],
+			"areaTags": [
+				"N"
+			],
+			"ENG_name": "Rimefrost"
+		},
+		{
+			"name": "索姆尼",
+			"source": "WITCHERHLA",
+			"page": 19,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"{@b 目标：}施法距离内一个你能看见的自愿生物。",
+				"你为自己与施法距离内的一个目标注入蓬勃的活力。直到法术终止，你与法术目标的基础移动速度加倍、AC获得+3加值、敏捷豁免检定具有优势，并获得一个额外动作。该动作只能用于采取{@action 攻击}（仅限一次武器攻击）、{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。",
+				"{@i 此法术不与昆恩或索姆尼法术的施展叠加}",
+				"{@b 狮鹫学派加成：}你为维持此法术而作的{@status 专注}检定具有优势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"ENG_name": "Somne"
+		},
+		{
+			"name": "苏皮雷",
+			"source": "WITCHERHLA",
+			"page": 19,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"{@b 目标：}施法距离内一个你能看见的生物。",
+				"你以强化后的感官标记一个目标，心无旁骛地锁定它。直到法术终止，你对该目标的攻击检定获得+2加值，但在被未标记的敌人攻击时，你的AC承受-2减值。你对被标记目标的攻击还额外造成{@damage 1d8}点伤害；若目标逃跑，你为寻找它而作的任何感知（察觉）或感知（生存）检定都具有优势。若目标在此法术终止前生命值降至0，你可以在你随后的某个回合用附赠动作标记一个新的生物。 ",
+				"{@b 狮鹫学派加成：}施展苏皮雷时，在法术持续期间你不会承受AC减值。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用3环或更高的法术位施展此法术时，法术位每比2环高一环，你就可以多标记一个目标。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"MAC",
+				"UBA"
+			],
+			"ENG_name": "Supirre"
+		},
+		{
+			"name": "横扫",
+			"source": "WITCHERHLA",
+			"page": 20,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@b 目标：}自身（10尺半径）。",
+				"基于你对阿尔德的掌握，你向自身周围释放出一股雷鸣般的冲击波。10尺半径内的每个生物必须进行一次力量豁免。豁免失败的生物受到{@damage 2d6}点雷鸣伤害，陷入{@condition 倒地}状态，并沿远离施法者的直线被推离10尺。豁免成功则目标只受一半伤害，不会被推动，也不会陷入{@condition 倒地}状态。 "
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用2环或更高的法术位施展此法术时，其伤害每比1环高一环便提高{@dice 1d6}。"
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "猎魔人",
+							"source": "WITCHERHLA"
+						},
+						"subclass": {
+							"name": "狮鹫学派",
+							"shortName": "狮鹫学派",
+							"source": "WITCHERHLA",
+							"subSubclass": "阿尔德"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"thunder"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"ENG_name": "Sweep"
+		},
+		{
+			"name": "亚登",
+			"source": "WITCHERHLA",
+			"page": 19,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@b 目标：}施法距离内你能看见的一点。",
+				"你在施法距离内一个你能看见的点上，于地面布设一座半径15尺的魔法陷阱。在受影响区域内，对任何生物造成的每次伤害都提高{@dice 1d4}点，且敌对生物每移动1尺须消耗2尺移动距离。在效应区域内，任何存在都无法进行传送或跨位面旅行，虚体存在会被强制凝为实体。此外，若一道法术所用的法术位环阶等于或低于施展此法术所用的法术位环阶，该法术便无法在区域内施展，也无法穿过此区域。",
+				"{@i 若你在第一座陷阱仍然生效时尝试布设第二座，第一座陷阱将消失，其效应随之终止。}",
+				"{@b 狮鹫学派加成：}在受影响区域内，敌对生物每移动1尺须消耗3尺移动距离。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "升环施法效应",
+					"entries": [
+						"使用5环或更高的法术位施展此法术时，法术位每比4环高一环，陷阱对生物造成的额外伤害便提高{@dice 1d4}。 "
+					],
+					"ENG_name": "At Higher Levels"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "猎魔人",
+						"ENG_name": "Witcher",
+						"source": "WITCHERHLA"
+					}
+				]
+			},
+			"spellAttack": [
+				"R"
+			],
+			"ENG_name": "Yrden"
+		}
+	],
+	"item": [
+		{
+			"name": "猎魔人护甲",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "MA",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 40,
+			"value": 7500,
+			"ac": 15,
+			"strength": "13",
+			"stealth": false,
+			"entries": [
+				"这件精工细作的护甲专为保护猎魔人免受伤害而设计。其制法允许多枚魔法雕文嵌入其中，为配得上它的猎魔人增强护甲之力。",
+				"一旦有一枚{@b 雕文}嵌入猎魔人护甲，护甲的AC便每枚{@b 雕文}获得+1加值，同时它被视为魔法护甲。"
+			],
+			"ENG_name": "Witcher Armor"
+		},
+		{
+			"name": "猎魔人护甲（1枚雕文）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "MA",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 30,
+			"value": 15000,
+			"ac": 15,
+			"strength": "13",
+			"bonusAc": "+1",
+			"stealth": false,
+			"entries": [
+				"这件精工细作的护甲专为保护猎魔人免受伤害而设计。其制法允许多枚魔法雕文嵌入其中，为配得上它的猎魔人增强护甲之力。",
+				"一旦有一枚{@b 雕文}嵌入猎魔人护甲，护甲的AC便每枚{@b 雕文}获得+1加值，同时它被视为魔法护甲。"
+			],
+			"ENG_name": "Witcher Armor (1 Glyphs)"
+		},
+		{
+			"name": "猎魔人护甲（2枚雕文）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "MA",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 30,
+			"value": 35000,
+			"ac": 15,
+			"strength": "13",
+			"bonusAc": "+2",
+			"stealth": false,
+			"entries": [
+				"这件精工细作的护甲专为保护猎魔人免受伤害而设计。其制法允许多枚魔法雕文嵌入其中，为配得上它的猎魔人增强护甲之力。",
+				"一旦有一枚{@b 雕文}嵌入猎魔人护甲，护甲的AC便每枚{@b 雕文}获得+1加值，同时它被视为魔法护甲。"
+			],
+			"ENG_name": "Witcher Armor (2 Glyphs)"
+		},
+		{
+			"name": "猎魔人护甲（3枚雕文）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "MA",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 30,
+			"value": 75000,
+			"ac": 15,
+			"strength": "13",
+			"bonusAc": "+3",
+			"stealth": false,
+			"entries": [
+				"这件精工细作的护甲专为保护猎魔人免受伤害而设计。其制法允许多枚魔法雕文嵌入其中，为配得上它的猎魔人增强护甲之力。",
+				"一旦有一枚{@b 雕文}嵌入猎魔人护甲，护甲的AC便每枚{@b 雕文}获得+1加值，同时它被视为魔法护甲。"
+			],
+			"ENG_name": "Witcher Armor (3 Glyphs)"
+		},
+		{
+			"name": "猎魔人怪物图鉴",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"tier": "major",
+			"rarity": "very rare",
+			"weight": 5,
+			"value": 10000,
+			"entries": [
+				"猎魔人的怪物图鉴是猎魔人记录无数怪物长处与弱点之处。通过长年累月研读你的怪物图鉴，你在战斗开始时有机会回想起所面对的某只非类人生物的相关知识。",
+				"当你掷先攻时，你可以选择进行一次由DM决定的基于智力的技能检定，以回想起关于某个你能看见的生物的有用信息。你必须在DM设定的DC下成功（多数情况下取15较为合适）。若你成功，则你对那生物（或与其同类型的其他生物）进行的第一次攻击动作或施法动作中的攻击检定获得优势。或者，你也可以令那生物（或与其同类型的其他生物）对抗你的一个法术或能力的第一次豁免检定具有劣势。",
+				"若你在1分钟内未使用此益处，则其失效。你可以使用此特性两次，完成一次长休后恢复所有耗用的次数。"
+			],
+			"ENG_name": "Witcher Bestiary"
+		},
+		{
+			"name": "猎魔人雕文",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"rarity": "very rare",
+			"wondrous": true,
+			"weight": 0,
+			"value": 15000,
+			"entries": [
+				"雕文只能嵌入护甲。",
+				"在猎魔人装备中嵌入雕文是永久性的。",
+				"可以嵌入雕文的装备会带有若干雕文槽位，具体见其描述。",
+				"其他任何物品都无法以这种方式使用雕文。",
+				{
+					"type": "list",
+					"items": [
+						"阿尔德雕文。护甲：对中型或更小的生物，你的阿尔德戏法的推动距离增至10尺；或者可以推动一个大型生物5尺，但不会使其倒地。",
+						"亚克席雕文。护甲：你的亚克席戏法会影响受魅惑生物的心智，使其护卫你，并攻击与你敌对的目标，生效对象的CR最高为你猎魔人等级的四分之一。",
+						"伊格尼雕文。护甲：你的伊格尼戏法的伤害骰变为d8。",
+						"昆恩雕文。护甲：你的昆恩戏法的伤害降低骰变为d6。",
+						"亚登雕文。护甲：你的亚登戏法的伤害骰变为d6。"
+					]
+				}
+			],
+			"ENG_name": "Witcher Glyph"
+		},
+		{
+			"name": "猎魔人高级符文石",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"rarity": "very rare",
+			"wondrous": true,
+			"weight": 0,
+			"value": 15000,
+			"entries": [
+				"符文石是可以嵌入特制武器中的魔法附魔。",
+				"在猎魔人装备中嵌入符文石是永久性的。",
+				"可以嵌入符文石的装备会带有若干符文石槽位，具体见其描述。",
+				"其他任何物品都无法以这种方式使用符文石。",
+				"次级符文石造成1d4伤害，普通符文石造成1d6伤害，高级符文石造成1d8伤害。",
+				{
+					"type": "list",
+					"items": [
+						"切尔诺伯格符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d8}点力场伤害。",
+						"达日博格符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d8}点火焰伤害。",
+						"莫拉娜符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d8}点毒素伤害。",
+						"佐里亚符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d8}点寒冷伤害。"
+					]
+				}
+			],
+			"ENG_name": "Witcher Greater Runestone"
+		},
+		{
+			"name": "猎魔人次级符文石",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"rarity": "very rare",
+			"wondrous": true,
+			"weight": 0,
+			"value": 15000,
+			"entries": [
+				"符文石是可以嵌入特制武器中的魔法附魔。",
+				"在猎魔人装备中嵌入符文石是永久性的。",
+				"可以嵌入符文石的装备会带有若干符文石槽位，具体见其描述。",
+				"其他任何物品都无法以这种方式使用符文石。",
+				"次级符文石造成1d4伤害，普通符文石造成1d6伤害，高级符文石造成1d8伤害。",
+				{
+					"type": "list",
+					"items": [
+						"切尔诺伯格符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d4}点力场伤害。",
+						"达日博格符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d4}点火焰伤害。",
+						"莫拉娜符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d4}点毒素伤害。",
+						"佐里亚符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d4}点寒冷伤害。"
+					]
+				}
+			],
+			"ENG_name": "Witcher Lesser Runestone"
+		},
+		{
+			"name": "猎魔人长剑",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 3,
+			"value": 7500,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"entries": [
+				"这把工艺精湛的长剑专为镶嵌魔法符文而设计。经过恰当合金的淬炼，此剑能够承载多枚魔法符文石，为配得上它的猎魔人增强剑之威力。",
+				"一旦有一枚{@b 符文石}嵌入猎魔人钢制长剑，此剑的攻击检定与伤害掷骰便每枚{@b 符文石}获得+1加值，同时它在克服抗性时被视为魔法武器。若你在此武器中嵌入了多枚符文石，由你选择哪一枚的额外伤害生效（每回合限一枚伤害骰）。"
+			],
+			"ENG_name": "Witcher Longsword"
+		},
+		{
+			"name": "猎魔人长剑（1枚符文石）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 3,
+			"value": 15000,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"entries": [
+				"这把工艺精湛的长剑专为镶嵌魔法符文而设计。经过恰当合金的淬炼，此剑能够承载多枚魔法符文石，为配得上它的猎魔人增强剑之威力。",
+				"一旦有一枚{@b 符文石}嵌入猎魔人钢制长剑，此剑的攻击检定与伤害掷骰便每枚{@b 符文石}获得+1加值，同时它在克服抗性时被视为魔法武器。若你在此武器中嵌入了多枚符文石，由你选择哪一枚的额外伤害生效（每回合限一枚伤害骰）。"
+			],
+			"ENG_name": "Witcher Longsword (1 Runestones)"
+		},
+		{
+			"name": "猎魔人长剑（2枚符文石）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 3,
+			"value": 35000,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+2",
+			"entries": [
+				"这把工艺精湛的长剑专为镶嵌魔法符文而设计。经过恰当合金的淬炼，此剑能够承载多枚魔法符文石，为配得上它的猎魔人增强剑之威力。",
+				"一旦有一枚{@b 符文石}嵌入猎魔人钢制长剑，此剑的攻击检定与伤害掷骰便每枚{@b 符文石}获得+1加值，同时它在克服抗性时被视为魔法武器。若你在此武器中嵌入了多枚符文石，由你选择哪一枚的额外伤害生效（每回合限一枚伤害骰）。"
+			],
+			"ENG_name": "Witcher Longsword (2 Runestones)"
+		},
+		{
+			"name": "猎魔人长剑（3枚符文石）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 3,
+			"value": 75000,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+3",
+			"entries": [
+				"这把工艺精湛的长剑专为镶嵌魔法符文而设计。经过恰当合金的淬炼，此剑能够承载多枚魔法符文石，为配得上它的猎魔人增强剑之威力。",
+				"一旦有一枚{@b 符文石}嵌入猎魔人钢制长剑，此剑的攻击检定与伤害掷骰便每枚{@b 符文石}获得+1加值，同时它在克服抗性时被视为魔法武器。若你在此武器中嵌入了多枚符文石，由你选择哪一枚的额外伤害生效（每回合限一枚伤害骰）。"
+			],
+			"ENG_name": "Witcher Longsword (3 Runestones)"
+		},
+		{
+			"name": "猎魔人普通符文石",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"rarity": "very rare",
+			"wondrous": true,
+			"weight": 0,
+			"value": 15000,
+			"entries": [
+				"符文石是可以嵌入特制武器中的魔法附魔。",
+				"在猎魔人装备中嵌入符文石是永久性的。",
+				"可以嵌入符文石的装备会带有若干符文石槽位，具体见其描述。",
+				"其他任何物品都无法以这种方式使用符文石。",
+				"次级符文石造成1d4伤害，普通符文石造成1d6伤害，高级符文石造成1d8伤害。",
+				{
+					"type": "list",
+					"items": [
+						"切尔诺伯格符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d6}点力场伤害。",
+						"达日博格符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d6}点火焰伤害。",
+						"莫拉娜符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d6}点毒素伤害。",
+						"佐里亚符文石。武器：每回合一次，你首次命中一个目标时，额外造成{@damage 1d6}点寒冷伤害。"
+					]
+				}
+			],
+			"ENG_name": "Witcher Regular Runestone"
+		},
+		{
+			"name": "猎魔人学派徽章",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 1,
+			"value": 10000,
+			"entries": [
+				"这条做工精致的银项链既是猎魔人的身份象征，也是他们的护身符。徽章的外观呈现为其所隶属猎魔人学派的兽首造型。它虽可用于侦测魔法与怪物，但某些生物似乎对它的能力漠然不觉。",
+				"在与这条项链同调期间，你可以随意施展{@spell 侦测魔法}。",
+				"与此物品同调的猎魔人可以用一个动作将注意力集中于周遭环境。直到你的下回合开始，你可以看见你30尺内任何非类人生物的模糊轮廓。"
+			],
+			"attachedSpells": [
+				"侦测魔法"
+			],
+			"ENG_name": "Witcher School Medallion"
+		},
+		{
+			"name": "猎魔人银质长剑",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 3,
+			"value": 7500,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"entries": [
+				"这把工艺精湛的长剑专为镶嵌魔法符文而设计。经过恰当合金的淬炼，此剑能够承载多枚魔法符文石，为配得上它的猎魔人增强剑之威力。此武器经过镀银处理，以克服生物对非魔法武器的抗性或免疫。",
+				"一旦有一枚{@b 符文石}嵌入猎魔人银质长剑，此剑的攻击检定与伤害掷骰便每枚{@b 符文石}获得+1加值，同时它在克服抗性时被视为魔法武器。若你在此武器中嵌入了多枚符文石，由你选择哪一枚的额外伤害生效（每回合限一枚伤害骰）。"
+			],
+			"ENG_name": "Witcher Silver Longsword"
+		},
+		{
+			"name": "猎魔人银质长剑（1枚符文石）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 3,
+			"value": 15000,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"entries": [
+				"这把工艺精湛的长剑专为镶嵌魔法符文而设计。经过恰当合金的淬炼，此剑能够承载多枚魔法符文石，为配得上它的猎魔人增强剑之威力。此武器经过镀银处理，以克服生物对非魔法武器的抗性或免疫。",
+				"一旦有一枚{@b 符文石}嵌入猎魔人银质长剑，此剑的攻击检定与伤害掷骰便每枚{@b 符文石}获得+1加值，同时它在克服抗性时被视为魔法武器。若你在此武器中嵌入了多枚符文石，由你选择哪一枚的额外伤害生效（每回合限一枚伤害骰）。"
+			],
+			"ENG_name": "Witcher Silver Longsword (1 Runestones)"
+		},
+		{
+			"name": "猎魔人银质长剑（2枚符文石）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 3,
+			"value": 35000,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+2",
+			"entries": [
+				"这把工艺精湛的长剑专为镶嵌魔法符文而设计。经过恰当合金的淬炼，此剑能够承载多枚魔法符文石，为配得上它的猎魔人增强剑之威力。此武器经过镀银处理，以克服生物对非魔法武器的抗性或免疫。",
+				"一旦有一枚{@b 符文石}嵌入猎魔人银质长剑，此剑的攻击检定与伤害掷骰便每枚{@b 符文石}获得+1加值，同时它在克服抗性时被视为魔法武器。若你在此武器中嵌入了多枚符文石，由你选择哪一枚的额外伤害生效（每回合限一枚伤害骰）。"
+			],
+			"ENG_name": "Witcher Silver Longsword (2 Runestones)"
+		},
+		{
+			"name": "猎魔人银质长剑（3枚符文石）",
+			"source": "WITCHERHLA",
+			"page": 1,
+			"type": "M",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 3,
+			"value": 75000,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+3",
+			"entries": [
+				"这把工艺精湛的长剑专为镶嵌魔法符文而设计。经过恰当合金的淬炼，此剑能够承载多枚魔法符文石，为配得上它的猎魔人增强剑之威力。此武器经过镀银处理，以克服生物对非魔法武器的抗性或免疫。",
+				"一旦有一枚{@b 符文石}嵌入猎魔人银质长剑，此剑的攻击检定与伤害掷骰便每枚{@b 符文石}获得+1加值，同时它在克服抗性时被视为魔法武器。若你在此武器中嵌入了多枚符文石，由你选择哪一枚的额外伤害生效（每回合限一枚伤害骰）。"
+			],
+			"ENG_name": "Witcher Silver Longsword (3 Runestones)"
+		}
+	]
+}
