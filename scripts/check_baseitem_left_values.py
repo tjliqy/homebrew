@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Translate untranslated 5etools ``baseItem``, ``attachedSpells``, ``conditionInflict``, ``affectsCreatureType``, and ``subschools`` values.
+"""Translate untranslated 5etools ``baseItem``, ``attachedSpells``, ``attachedItems``, ``conditionInflict``, and ``subschools`` values.
 
 The script reads exact matches from the 5e-translator term table. If the table
 has no unique translation, it asks the user once per English term. For all
@@ -166,7 +166,20 @@ def find_translatable_values(root: dict) -> list[tuple[str, str, str, int, int]]
                 child_pointer = f"{pointer}/{escape_pointer_part(key)}"
                 if key == "baseItem" and child["kind"] == "string":
                     found.append((child_pointer, child["value"], "baseItem", child["start"], child["end"]))
-                elif key in {"attachedSpells", "conditionInflict", "affectsCreatureType", "subschools"}:
+                elif key == "dragonAge" and child["kind"] == "string":
+                    found.append((child_pointer, child["value"], "dragonAge", child["start"], child["end"]))
+                elif (key == "name" and child["kind"] == "string"
+                      and (pointer.endswith("/requires")
+                           or (pointer.rsplit("/", 1)[-1].isdigit()
+                               and pointer.rsplit("/", 2)[-2] == "requires"))):
+                    found.append((child_pointer, child["value"], "requires/name", child["start"], child["end"]))
+                elif key == "tags" and pointer.endswith("/type") and "/monster/" in pointer:
+                    visit(child, child_pointer, "monster/type/tags")
+                elif key == "group" and pointer.startswith("/monster/") and pointer.count("/") == 2:
+                    visit(child, child_pointer, "monster/group")
+                elif key == "treasure" and pointer.startswith("/monster/") and pointer.count("/") == 2:
+                    visit(child, child_pointer, "monster/treasure")
+                elif key in {"attachedSpells", "attachedItems", "conditionInflict", "subschools"}:
                     visit(child, child_pointer, key)
                 else:
                     visit(child, child_pointer, active_list_field)
@@ -231,9 +244,14 @@ def ask_translation(term: str, candidates: list[dict[str, str]], fields: set[str
     field_labels = {
         "baseItem": "基础物品（baseItem）",
         "attachedSpells": "法术（attachedSpells）",
+        "attachedItems": "附加物品（attachedItems）",
         "conditionInflict": "施加状态（conditionInflict）",
-        "affectsCreatureType": "影响生物类型（affectsCreatureType）",
         "subschools": "学派（subschools）",
+        "monster/type/tags": "生物类型标签（monster/type/tags）",
+        "monster/group": "生物群组（monster/group）",
+        "dragonAge": "龙年龄（dragonAge）",
+        "monster/treasure": "生物宝藏（monster/treasure）",
+        "requires/name": "需求名称（requires/name）",
     }
     context = "、".join(field_labels[field] for field in sorted(fields))
     print(f"\n{term} 〔{context}〕")
@@ -342,7 +360,7 @@ def main() -> int:
                     occurrences.setdefault(left.casefold(), []).append((path, pointer, left, field))
         terms_by_key = {key: rows[0][2] for key, rows in occurrences.items()}
         if not terms_by_key:
-            print(f"No untranslated baseItem/attachedSpells/conditionInflict/affectsCreatureType/subschools values found in {len(files)} JSON file(s).")
+            print(f"No untranslated baseItem/attachedSpells/attachedItems/conditionInflict/subschools/monster/type/tags/monster/group/dragonAge/monster/treasure/requires/name values found in {len(files)} JSON file(s).")
             return 0
         candidates = query_term_table(list(terms_by_key.values()), args.translator_root.resolve())
         translations: dict[str, str] = {}
@@ -373,7 +391,7 @@ def main() -> int:
             if count:
                 changed_files += 1
                 changed_fields += count
-                print(f"Updated {count} baseItem/attachedSpells/conditionInflict/affectsCreatureType/subschools value(s): {path}")
+                print(f"Updated {count} baseItem/attachedSpells/attachedItems/conditionInflict/subschools/monster/type/tags/monster/group/dragonAge/monster/treasure/requires/name value(s): {path}")
         print(f"Updated {changed_fields} field(s) in {changed_files} file(s).")
         if skipped:
             print("Skipped: " + ", ".join(skipped), file=sys.stderr)
