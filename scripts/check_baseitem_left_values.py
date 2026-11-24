@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Translate untranslated 5etools ``baseItem`` and ``attachedSpells`` values.
+"""Translate untranslated 5etools ``baseItem``, ``attachedSpells``, ``conditionInflict``, ``affectsCreatureType``, and ``subschools`` values.
 
 The script reads exact matches from the 5e-translator term table. If the table
-has no unique translation, it asks the user once per English term. For both
-fields, it translates the text before ``|`` and preserves the suffix. An
-``attachedSpells`` value without ``|`` is translated in full.
+has no unique translation, it asks the user once per English term. For all
+all fields, it translates the text before ``|`` and preserves the suffix.
+Values without ``|`` are translated in full.
 """
 
 from __future__ import annotations
@@ -18,10 +18,15 @@ import sys
 import tempfile
 
 
-SKIP_DIRS = {".git", ".venv", "node_modules", "__pycache__"}
+SKIP_DIRS = {".git", ".venv", ".vscode", "node_modules", "__pycache__"}
 ABILITY_VALUES = {
     "str", "dex", "con", "int", "wis", "cha",
     "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma",
+}
+CONDITION_INFLICT_VALUES = {
+    "blinded", "charmed", "deafened", "exhaustion", "frightened", "grappled",
+    "incapacitated", "invisible", "paralyzed", "petrified", "poisoned", "prone",
+    "restrained", "stunned", "unconscious", "disease",
 }
 
 
@@ -146,25 +151,25 @@ def find_translatable_values(root: dict) -> list[tuple[str, str, str, int, int]]
     """Return (pointer, value, field, start, end) for relevant string values."""
     found: list[tuple[str, str, str, int, int]] = []
 
-    def visit(node: dict, pointer: str = "", in_attached_spells: bool = False) -> None:
+    def visit(node: dict, pointer: str = "", active_list_field: str | None = None) -> None:
         kind = node["kind"]
         if kind == "string":
-            if in_attached_spells:
-                found.append((pointer, node["value"], "attachedSpells", node["start"], node["end"]))
+            if active_list_field:
+                found.append((pointer, node["value"], active_list_field, node["start"], node["end"]))
             return
         if kind == "array":
             for index, child in enumerate(node["children"]):
-                visit(child, f"{pointer}/{index}", in_attached_spells)
+                visit(child, f"{pointer}/{index}", active_list_field)
             return
         if kind == "object":
             for key, child in node["pairs"]:
                 child_pointer = f"{pointer}/{escape_pointer_part(key)}"
                 if key == "baseItem" and child["kind"] == "string":
                     found.append((child_pointer, child["value"], "baseItem", child["start"], child["end"]))
-                elif key == "attachedSpells":
-                    visit(child, child_pointer, True)
+                elif key in {"attachedSpells", "conditionInflict", "affectsCreatureType", "subschools"}:
+                    visit(child, child_pointer, key)
                 else:
-                    visit(child, child_pointer, in_attached_spells)
+                    visit(child, child_pointer, active_list_field)
 
     visit(root)
     return found
@@ -226,6 +231,9 @@ def ask_translation(term: str, candidates: list[dict[str, str]], fields: set[str
     field_labels = {
         "baseItem": "基础物品（baseItem）",
         "attachedSpells": "法术（attachedSpells）",
+        "conditionInflict": "施加状态（conditionInflict）",
+        "affectsCreatureType": "影响生物类型（affectsCreatureType）",
+        "subschools": "学派（subschools）",
     }
     context = "、".join(field_labels[field] for field in sorted(fields))
     print(f"\n{term} 〔{context}〕")
@@ -285,7 +293,10 @@ def rewrite_file(path: Path, translations: dict[str, str]) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("paths", nargs="+", help="JSON files or directories to scan recursively")
+    parser.add_argument(
+        "paths", nargs="*", help="JSON files or directories to scan recursively "
+        "(defaults to all JSON files under the current directory)"
+    )
     parser.add_argument(
         "--translator-root",
         type=Path,
@@ -302,18 +313,36 @@ def main() -> int:
         return _term_worker()
     args = build_parser().parse_args()
     try:
-        files = collect_json_files([Path(raw) for raw in args.paths])
+        paths = [Path(raw) for raw in args.paths] if args.paths else [Path.cwd()]
+        files = collect_json_files(paths)
         occurrences: dict[str, list[tuple[Path, str, str, str]]] = {}
         for path in files:
             data = json.loads(path.read_text(encoding="utf-8"))
             root = parse_json_spans(path.read_text(encoding="utf-8"))
+            metadata = data.get("_meta", {}) if isinstance(data, dict) else {}
+            spellschools = (
+                metadata.get("spellSchools", metadata.get("spellschools", {}))
+                if isinstance(metadata, dict) else {}
+            )
+            known_spellschools = {
+                str(name).strip().casefold()
+                for name in (spellschools if isinstance(spellschools, dict) else spellschools or [])
+                if isinstance(name, str) and name.strip()
+            }
             for pointer, value, field, _, _ in find_translatable_values(root):
                 left = value.partition("|")[0].strip()
-                if left and left.casefold() not in ABILITY_VALUES and not has_chinese(left):
+                if field == "subschools" and left.casefold() in known_spellschools:
+                    continue
+                is_skipped_condition = (
+                    field == "conditionInflict"
+                    and left.casefold() in CONDITION_INFLICT_VALUES
+                )
+                if (left and left.casefold() not in ABILITY_VALUES
+                        and not is_skipped_condition and not has_chinese(left)):
                     occurrences.setdefault(left.casefold(), []).append((path, pointer, left, field))
         terms_by_key = {key: rows[0][2] for key, rows in occurrences.items()}
         if not terms_by_key:
-            print(f"No untranslated baseItem/attachedSpells values found in {len(files)} JSON file(s).")
+            print(f"No untranslated baseItem/attachedSpells/conditionInflict/affectsCreatureType/subschools values found in {len(files)} JSON file(s).")
             return 0
         candidates = query_term_table(list(terms_by_key.values()), args.translator_root.resolve())
         translations: dict[str, str] = {}
@@ -344,7 +373,7 @@ def main() -> int:
             if count:
                 changed_files += 1
                 changed_fields += count
-                print(f"Updated {count} baseItem/attachedSpells value(s): {path}")
+                print(f"Updated {count} baseItem/attachedSpells/conditionInflict/affectsCreatureType/subschools value(s): {path}")
         print(f"Updated {changed_fields} field(s) in {changed_files} file(s).")
         if skipped:
             print("Skipped: " + ", ".join(skipped), file=sys.stderr)
